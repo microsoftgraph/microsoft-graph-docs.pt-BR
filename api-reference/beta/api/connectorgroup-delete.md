@@ -1,16 +1,16 @@
 ---
 title: Excluir connectorGroup
-description: Excluir um conector.
+description: Exclua um connectorGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 389f7ba94bce852328ed415b5dfa1c9476daba01
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d5ad43b789dff0abdc7cf938746e3b75dc5f4ad4
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957419"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130133"
 ---
 # <a name="delete-connectorgroup"></a>Excluir connectorGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [conector](../resources/connectorgroup.md). Todos os [conectores](../resources/connector.md) e aplicativos devem ser removidos do grupo de conectores para que um grupo de conectores possa ser excluído.
+Excluir um [connectorGroup](../resources/connectorgroup.md). Todos [os conectores](../resources/connector.md) e aplicativos devem ser removidos do grupo de conectores para que um grupo de conectores possa ser excluído.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -99,5 +99,6 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
 
 

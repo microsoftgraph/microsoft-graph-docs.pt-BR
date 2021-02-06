@@ -1,36 +1,36 @@
 ---
-title: tipo de recurso attributeMapping
-description: Define como os valores para o atributo de destino fornecido devem fluir durante a sincronização.
+title: Tipo de recurso attributeMapping
+description: Define como os valores para o atributo de destino determinado devem fluir durante a sincronização.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7573773737f4ff4380a446cf62107e8ac26642ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: b5f120075b082e50a0f94f05907b413a4c4c4ec6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078077"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128747"
 ---
-# <a name="attributemapping-resource-type"></a>tipo de recurso attributeMapping
+# <a name="attributemapping-resource-type"></a>Tipo de recurso attributeMapping
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define como os valores para o atributo de destino fornecido devem fluir durante a sincronização.
+Define como os valores para o atributo de destino determinado devem fluir durante a sincronização.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                  | Tipo                      | Descrição    |
 |:--------------------------|:--------------------------|:---------------|
-|defaultValue               | Cadeia de caracteres                    |Valor padrão a ser usado no caso de a propriedade **Source** ter sido avaliada `null` . Opcional.|
+|defaultValue               | String                    |Valor padrão a ser usado no caso de a **propriedade de origem** ter sido avaliada como `null` . Opcional.|
 |exportMissingReferences    |String                     |Apenas para uso interno.|
 |flowBehavior               |attributeFlowBehavior      |Define quando esse atributo deve ser exportado para o diretório de destino. Os valores possíveis são: `FlowWhenChanged` e `FlowAlways` . O padrão é `FlowWhenChanged`. |
-|flowtype                   |attributeFlowType          |Define quando esse atributo deve ser atualizado no diretório de destino. Os valores possíveis são: `Always` (padrão), `ObjectAddOnly` (somente quando novo objeto é criado), `MultiValueAddOnly` (somente quando a alteração está adicionando novos valores a um atributo com valores múltiplos). |
-|matchingPriority           |Int32                      |Se for maior que 0, este atributo será usado para executar uma correspondência inicial dos objetos entre os diretórios de origem e de destino. O mecanismo de sincronização tentará localizar o objeto correspondente usando o atributo com o menor valor de prioridade correspondente primeiro. Se não for encontrado, será usado o atributo com a próxima prioridade correspondente e, assim, em um até que a correspondência seja encontrada ou nenhum outro atributo de correspondência seja deixado. Somente atributos que devem ter valores exclusivos, como email, devem ser usados como atributos correspondentes.|
-|source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | Define como um valor deve ser extraído (ou transformado) a partir do objeto Source. |
-|targetAttributeName        |Cadeia de caracteres                     |Nome do atributo no objeto de destino. |
+|flowType                   |attributeFlowType          |Define quando esse atributo deve ser atualizado no diretório de destino. Os valores possíveis são: (padrão), (somente quando um novo objeto é criado) (somente quando a alteração está adicionando novos valores a um atributo `Always` `ObjectAddOnly` de vários `MultiValueAddOnly` valores). |
+|matchingPriority           |Int32                      |Se for maior que 0, esse atributo será usado para executar uma combinação inicial dos objetos entre diretórios de origem e de destino. O mecanismo de sincronização tentará encontrar o objeto correspondente usando primeiro o atributo com o menor valor de prioridade correspondente. Se não for encontrado, o atributo com a próxima prioridade correspondente será usado e assim por diante até que uma correspondência seja encontrada ou mais atributos correspondentes sejam deixados. Somente atributos que devem ter valores exclusivos, como email, devem ser usados como atributos correspondentes.|
+|source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | Define como um valor deve ser extraído (ou transformado) do objeto de origem. |
+|targetAttributeName        |String                     |Nome do atributo no objeto de destino. |
 
 ## <a name="json-representation"></a>Representação JSON
 

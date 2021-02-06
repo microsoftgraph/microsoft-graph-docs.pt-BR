@@ -1,43 +1,43 @@
 ---
-title: 'Anexo: createUploadSession'
-description: Crie uma sessão de upload para carregar de forma iterativa os intervalos de um arquivo para anexar o arquivo à mensagem especificada.
+title: 'attachment: createUploadSession'
+description: Crie uma sessão de upload para carregar iterativamente intervalos de um arquivo para anexar o arquivo à mensagem especificada.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 49472ed726656bd704b3b8c167aef9074ddf503c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a6856799c8532f3a0bf428dc7d417f9f29e921a9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961650"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128929"
 ---
-# <a name="attachment-createuploadsession"></a>Anexo: createUploadSession
+# <a name="attachment-createuploadsession"></a>attachment: createUploadSession
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar uma sessão de carregamento que permite que um aplicativo carregue intervalos de um arquivo de forma iterativa, para anexar o arquivo a um item do Outlook. O item pode ser uma [mensagem](../resources/message.md) ou um [evento](../resources/event.md).
+Crie uma sessão de upload que permita que um aplicativo carregue iterativamente intervalos de um arquivo, para anexar o arquivo a um item do Outlook. O item pode ser uma [mensagem ou](../resources/message.md) um [evento.](../resources/event.md)
 
-Use essa abordagem para anexar um arquivo se o tamanho do arquivo estiver entre 3 MB e 150 MB. Para anexar um arquivo menor que 3 MB, execute uma `POST` operação na propriedade de navegação **Attachments** do item do Outlook; Veja como fazer isso [para uma mensagem](message-post-attachments.md) ou [para um evento](event-post-attachments.md). 
+Use essa abordagem para anexar um arquivo se o tamanho do arquivo estiver entre 3 MB e 150 MB. Para anexar um arquivo menor que 3 MB, faça uma operação na propriedade de navegação de anexos do item do Outlook; veja como fazer isso para uma mensagem ou para `POST` [um evento.](event-post-attachments.md)  [](message-post-attachments.md) 
 
-Como parte da resposta, esta ação retorna uma URL de upload que você pode usar em consultas sequenciais subsequentes `PUT` . Os cabeçalhos de solicitação para cada `PUT` operação permitem que você especifique o intervalo exato de bytes a serem carregados. Isso permite que a transferência seja retomada, caso a conexão de rede seja interrompida durante o carregamento. 
+Como parte da resposta, essa ação retorna uma URL de carregamento que você pode usar em consultas `PUT` sequenciais subsequentes. Os headers de solicitação `PUT` para cada operação permitem que você especifique o intervalo exato de bytes a serem carregados. Isso permite que a transferência seja retomada, caso a conexão de rede seja retirada durante o upload. 
 
-A seguir estão as etapas para anexar um arquivo a um item do Outlook usando uma sessão de carregamento:
+Veja a seguir as etapas para anexar um arquivo a um item do Outlook usando uma sessão de upload:
 
-1. Criar uma sessão de carregamento.
-2. Dentro dessa sessão de upload, carregue de forma iterativa os intervalos de bytes (até 4 MB cada vez) até que todos os bytes do arquivo tenham sido carregados e o arquivo esteja anexado ao item especificado.
+1. Crie uma sessão de upload.
+2. Dentro dessa sessão de carregamento, carregue iterativamente intervalos de bytes (até 4 MB a cada vez) até que todos os bytes do arquivo tenham sido carregados e o arquivo seja anexado ao item especificado.
 3. Salve a ID do anexo para acesso futuro.
-4. Opcional: exclua a sessão de upload.
+4. Opcional: excluir a sessão de carregamento.
 
-Consulte [anexar arquivos grandes a mensagens ou eventos do Outlook](/graph/outlook-large-attachments) para obter um exemplo.
+Veja [anexar arquivos grandes a mensagens ou eventos do Outlook](/graph/outlook-large-attachments) para ver um exemplo.
 
 > [!TIP]
-> O Exchange Online permite que os administradores personalizem o limite de tamanho de mensagens de caixas de correio do Microsoft 365, incluindo qualquer anexo de mensagem. Por padrão, esse limite de tamanho de mensagem é de 35 MB. Descubra como [Personalizar o tamanho máximo da mensagem](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) para dar suporte a anexos maiores que o limite padrão para o seu locatário. 
+> O Exchange Online permite que os administradores personalizem o limite de tamanho de mensagens para caixas de correio do Microsoft 365, incluindo anexos de mensagens. Por padrão, esse limite de tamanho de mensagem é de 35 MB. Descubra como personalizar o [tamanho máximo da mensagem para](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) suportar anexos maiores do que o limite padrão para seu locatário. 
 
 > [!IMPORTANT] 
-> Esteja ciente de um [problema conhecido](/graph/known-issues#attaching-large-files-to-messages) se estiver anexando um arquivo grande a uma mensagem ou evento em uma caixa de correio compartilhada ou delegada.
+> Esteja ciente de um [problema](/graph/known-issues#attaching-large-files-to-messages) conhecido se estiver anexando um arquivo grande a uma mensagem ou evento em uma caixa de correio compartilhada ou delegada.
 
 
 ## <a name="permissions"></a>Permissões
@@ -52,14 +52,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para criar uma sessão de carregamento para anexar um arquivo a um **evento** : 
+Para criar uma sessão de upload para anexar um arquivo a um **evento:** 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
 ```
 
-Para criar uma sessão de carregamento para anexar um arquivo a uma **mensagem** : 
+Para criar uma sessão de upload para anexar um arquivo a uma **mensagem:** 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -79,24 +79,24 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|Representa os atributos do item a ser carregado e anexado. Especifique, no mínimo, o tipo de anexo ( `file` ), um nome e o tamanho do arquivo.|
+|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|Representa atributos do item a ser carregado e anexado. No mínimo, especifique o tipo de anexo ( `file` ), um nome e o tamanho do arquivo.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [uploadSession](../resources/uploadsession.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um novo objeto `201 Created` [uploadSession](../resources/uploadsession.md) no corpo da resposta.
 
->**Observação** : 
+>**Observação**: 
 >
->A propriedade **uploadUrl** retornada como parte do objeto de resposta **UPLOADSESSION** é uma URL opaca para consultas subsequentes `PUT` para carregar intervalos de bytes do arquivo. Ele contém o token de autenticação apropriado para `PUT` consultas subsequentes que expiram pelo **expirationDateTime**. Não Personalize esta URL.
+>A **propriedade uploadUrl** retornada como parte do objeto de resposta **uploadSession** é uma URL opaca para consultas subsequentes para carregar intervalos de `PUT` byte do arquivo. Ele contém o token de autorização apropriado para consultas `PUT` subsequentes que expiram **por expirationDateTime**. Não personalize essa URL.
 >
->A propriedade **nextExpectedRanges** especifica o próximo local de byte de arquivo para carregar, por exemplo, `"NextExpectedRanges":["2097152"]` . Você deve carregar os bytes em um arquivo na ordem.
+>A **propriedade nextExpectedRanges** especifica o próximo local de byte do arquivo a ser carregado, por exemplo, `"NextExpectedRanges":["2097152"]` . Você deve carregar os bytes em um arquivo na ordem.
 
 <!-- The **nextExpectedRanges** property specifies one or more ranges of bytes that the server is still missing for the file. These ranges are zero-indexed and of the format `{start}-{end}`, unless if the server misses the remainder of the bytes from the start of that range, in which case the format is simply `{start}`.  -->
 
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra como criar uma sessão de carregamento que você pode usar em operações de upload de arquivo subsequentes para a mensagem especificada.
+O exemplo a seguir mostra como criar uma sessão de upload que você pode usar nas operações subsequentes de carregamento de arquivo para a mensagem especificada.
 
 ### <a name="request"></a>Solicitação
 

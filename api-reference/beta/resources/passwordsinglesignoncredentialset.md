@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso passwordSingleSignOnCredentialSet
-description: Indica um conjunto de credenciais que definem completamente um fluxo de entrada para um usuário ou grupo para um aplicativo.
+title: Tipo de recurso passwordSingleSignOnCredentialSet
+description: Indica um conjunto de credenciais que definem completamente um fluxo de login de um usuário ou grupo para um aplicativo.
 localization_priority: Normal
 author: bharathramh92
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 87aafa6e21171088f9b4b5eac318f6c9551e18ee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 95526942bcedfc20d983a8873699af6902482b2c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998198"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130871"
 ---
-# <a name="passwordsinglesignoncredentialset-resource-type"></a>tipo de recurso passwordSingleSignOnCredentialSet
+# <a name="passwordsinglesignoncredentialset-resource-type"></a>Tipo de recurso passwordSingleSignOnCredentialSet
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indica um conjunto de credenciais que definem completamente um fluxo de entrada para um usuário ou grupo para um aplicativo.
+Indica um conjunto de credenciais que definem completamente um fluxo de login de um usuário ou grupo para um aplicativo.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|las|coleção [Credential](credential.md)|Uma lista de objetos de credencial que definem o fluxo de entrada completo.|
-|id|String|A ID do usuário ou grupo ao qual esse conjunto de credenciais pertence.|
+|credenciais|[coleção de](credential.md) credenciais|Uma lista de objetos de credencial que definem o fluxo de login completo.|
+|id|String|A ID do usuário ou grupo ao que esse conjunto de credenciais pertence.|
 
 ## <a name="json-representation"></a>Representação JSON
 

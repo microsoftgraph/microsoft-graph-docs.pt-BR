@@ -4,13 +4,13 @@ description: Especifica quando um fuso horário muda do horário de verão para 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 6bec52785b026fd0592ca8bdaaeb3c9c30a42448
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: a4e17da5e05afaef312e951c3cfe52a7e6ca4e69
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067108"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128817"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>Tipo de recurso standardTimeZoneOffset
 

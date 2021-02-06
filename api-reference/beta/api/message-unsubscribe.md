@@ -1,18 +1,18 @@
 ---
-title: 'mensagem: cancelar assinatura'
+title: 'message: unsubscribe'
 description: Envia uma solicitação de e-mail em nome do usuário conectado para cancelar a assinatura de uma lista de distribuição de e-mail. Usa as informações do cabeçalho `List-Unsubscribe`.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d27479b86f7c825768a11a99cd13550749116060
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7bf800fe385c75c6d472f9cee40f55ec81633640
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970524"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131093"
 ---
-# <a name="message-unsubscribe"></a>mensagem: cancelar assinatura
+# <a name="message-unsubscribe"></a>message: unsubscribe
 
 Namespace: microsoft.graph
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 Envia uma solicitação de e-mail em nome do usuário conectado para cancelar a assinatura de uma lista de distribuição de e-mail. Usa as informações do cabeçalho `List-Unsubscribe`.
 
-Os remetentes de mensagens podem usar listas de mala direta de forma amigável, incluindo uma opção para que os destinatários recusem. Eles podem fazer isso especificando o `List-Unsubscribe` cabeçalho em cada mensagem após [RFC-2369](https://www.faqs.org/rfcs/rfc2369.html).
+Os destinatários de mensagens podem usar listas de email de maneira amigável, incluindo uma opção para os destinatários a rechaem. Eles podem fazer isso especificando o `List-Unsubscribe` header em cada mensagem após [RFC-2369](https://www.faqs.org/rfcs/rfc2369.html).
 
-**Observação** Em particular, para que a ação de **cancelamento de assinatura** funcione, o remetente deve especificar `mailto:` e não informações de cancelamento de assinatura baseadas em URL.
+**Observação** Em particular, para que **a ação de** cancelamento de assinatura funcione, o remetente deve especificar, e não com base em URL, informações de cancelamento de `mailto:` assinatura.
 
-Definir esse cabeçalho também definiria a propriedade **unsubscribeEnabled** da instância da [mensagem](../resources/message.md) como `true` e a propriedade **unsubscribeData** para os dados do cabeçalho.
+Definir esse header também definiria a propriedade [](../resources/message.md) **unsubscribeEnabled** da instância da mensagem como e a propriedade `true` **unsubscribeData** para os dados do header.
 
-Se a propriedade **unsubscribeEnabled** de uma mensagem for `true` , você poderá usar a ação **cancelar assinatura** para cancelar a inscrição do usuário de mensagens semelhantes futuras, conforme gerenciado pelo remetente da mensagem.
+Se a **propriedade unsubscribeEnabled** de uma mensagem for , você pode usar a ação de cancelar a assinatura do usuário de mensagens futuras semelhantes, como gerenciadas pelo remetente `true` da mensagem. 
 
-Uma ação de **cancelamento de assinatura** bem-sucedida move a mensagem para a pasta **itens excluídos** . A exclusão do usuário dos destinatários de futuros e-mails é gerenciada pelo remetente.
+Uma ação **de cancelamento de** assinatura bem-sucedida move a mensagem para a pasta Itens **Excluídos.** A exclusão do usuário dos destinatários de futuros e-mails é gerenciada pelo remetente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

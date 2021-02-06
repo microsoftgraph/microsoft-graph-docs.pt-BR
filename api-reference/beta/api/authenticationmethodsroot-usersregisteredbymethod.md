@@ -3,14 +3,14 @@ title: 'authenticationMethodsRoot: usersRegisteredByMethod'
 description: Obter o número de usuários registrados para cada método de autenticação.
 author: danielwood95
 localization_priority: Normal
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 36b4d9ae280d34ab74a6c974710e3726ae089a1b
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 0cf2a93756cca42f33b0bdd7ad9b994fe3b0393f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092364"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129609"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbymethod"></a>authenticationMethodsRoot: usersRegisteredByMethod
 Namespace: microsoft.graph
@@ -34,7 +34,7 @@ Para acessar a API, [uma das seguintes funções](/azure/active-directory/users-
 * Leitor de segurança
 * Administrador de segurança
 * Leitor global
-* Administração global
+* Administrador global
 
 ## <a name="http-request"></a>Solicitação HTTP
 

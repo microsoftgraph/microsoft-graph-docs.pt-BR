@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso informationalUrl
+title: Tipo de recurso informationalUrl
 description: Informações de perfil básicas do aplicativo.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 23c1baa55a8cc50b77f429898614f54e02b7813c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d17ce96d1f714845d07bee3505a28d5a4e7e3978
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016486"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130238"
 ---
-# <a name="informationalurl-resource-type"></a>tipo de recurso informationalUrl
+# <a name="informationalurl-resource-type"></a>Tipo de recurso informationalUrl
 
 Namespace: microsoft.graph
 
@@ -24,7 +24,7 @@ Informações de perfil básicas do aplicativo.
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|logoUrl|String|A URL da CDN para o logotipo do aplicativo, somente leitura.|
+|logoUrl|String|URL da CDN para o logotipo do aplicativo, somente leitura.|
 |marketingUrl|String| Link para a página de marketing do aplicativo. Por exemplo, https://www.contoso.com/app/marketing |
 |privacyStatementUrl|String| Link para a política de privacidade do aplicativo. Por exemplo, https://www.contoso.com/app/privacy |
 |supportUrl|String| Link para a página de suporte do aplicativo. Por exemplo, https://www.contoso.com/app/support |

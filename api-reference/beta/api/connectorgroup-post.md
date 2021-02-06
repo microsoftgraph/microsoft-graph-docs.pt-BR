@@ -1,16 +1,16 @@
 ---
 title: Criar connectorGroup
-description: Criar um objeto de conexão.
+description: Crie um objeto connectorGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f6b551a801e44b57a905e41e20327c3286b8b5c2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0d0954ebee00cfb3e979aa3fb39676f6b927f28f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957579"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130042"
 ---
 # <a name="create-connectorgroup"></a>Criar connectorGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um objeto de [conexão](../resources/connectorgroup.md) .
+Crie um [objeto connectorGroup.](../resources/connectorgroup.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,20 +42,20 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto do objeto de [conexão](../resources/connectorgroup.md) .
-A tabela a seguir lista as propriedades disponíveis para um **conector**. A propriedade **Name** é uma propriedade necessária.
+No corpo da solicitação, fornece uma representação JSON de um [objeto connectorGroup.](../resources/connectorgroup.md)
+A tabela a seguir lista as propriedades disponíveis para um **connectorGroup**. A **propriedade** name é uma propriedade necessária.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Indica o tipo de agente híbrido. Esta propriedade é predefinida pelo sistema.|
-|id|string| Identificador exclusivo desse conector. Somente leitura. |
-|isDefault|booliano| Indica se o conector é o padrão. Somente um grupo de conectores único pode ser o grupo de conectores padrão e é predefinido pelo sistema. |
-|nome|string| O nome associado ao conector. |
-|região|string| A região à qual o conector é atribuído e otimizará o tráfego para o. Essa região só poderá ser definida se **nenhum** conector ou aplicativo for atribuído ao grupo de conectores. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|connectorGroupType|string| Indica o tipo de agente híbrido. Essa propriedade é predefinida pelo sistema.|
+|id|string| Identificador exclusivo deste connectorGroup. Somente leitura. |
+|isDefault|booliano| Indica se o connectorGroup é o padrão. Somente um único grupo de conectores pode ser o connectorGroup padrão e isso é predefinido pelo sistema. |
+|nome|string| O nome associado ao connectorGroup. |
+|region|string| A região à que o connectorGroup está atribuído e otimizará o tráfego. Essa região só poderá ser definida se **nenhum** conector ou aplicativo estiver atribuído ao connectorGroup. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta [connectorGroup](../resources/connectorgroup.md) e um objeto de um, no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -128,5 +128,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

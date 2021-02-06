@@ -3,14 +3,14 @@ title: tipo de recurso de telefone
 description: Representa um número de telefone.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: davidmu1
-ms.openlocfilehash: 0e87557a3c31ef1fb8f5ebbbdd2ff29b67d8ff8c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c6ee74a588540470ceeffcc37b51e29e7e4f597
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997897"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130862"
 ---
 # <a name="phone-resource-type"></a>tipo de recurso de telefone
 
@@ -25,7 +25,7 @@ Representa um número de telefone.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |number|string|O número de telefone.|
-|tipo|String|O tipo de número de telefone. Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|type|String|O tipo de número de telefone. Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

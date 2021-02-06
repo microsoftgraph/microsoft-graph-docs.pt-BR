@@ -1,16 +1,16 @@
 ---
 title: Listar childFolders
 description: 'Obtenha a coleção de pastas sob a pasta especificada. Você pode usar o `.../me/MailFolders` atalho para acessar o nível superior '
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3dd21285fc9437425d1b461957de12976327b0a7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2d99b33d3d9ba90b1ad19b204eb93db133c09cf0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979346"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128355"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 
@@ -59,7 +59,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-mail-folders"></a>Exemplo 1: listar pastas de email
+### <a name="example-1-list-mail-folders"></a>Exemplo 1: Listar pastas de email
 
 #### <a name="request"></a>Solicitação
 
@@ -146,7 +146,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-mail-search-folders"></a>Exemplo 2: listar pastas de pesquisa de email
+### <a name="example-2-list-mail-search-folders"></a>Exemplo 2: Listar pastas de pesquisa de email
 
 #### <a name="request"></a>Solicitação
 

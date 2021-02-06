@@ -1,16 +1,16 @@
 ---
-title: Adicionar conector ao conector
-description: Use esta API para adicionar um conector a um novo conector.
+title: Adicionar Conector ao connectorGroup
+description: Use essa API para adicionar um conector a um novo connectorGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 39822b0415c8c52944f89d86adc74d38af981020
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: d4d9b9b31eafa0906b704b7f1ff1929b1cf35055
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752983"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129598"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Adicionar conector a connectorGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar um [conector](../resources/connector.md)  a um [conector](../resources/connectorgroup.md).
+Adicione um [conector](../resources/connector.md)  a um [connectorGroup](../resources/connectorgroup.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,11 +40,11 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$re
 | Autorização  | Portador. Obrigatório|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto do [conector](../resources/connectorgroup.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto connectorGroup.](../resources/connectorgroup.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto de [teleconnector](../resources/connectorgroup.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -82,7 +82,7 @@ Content-length: 99
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto do [conector](../resources/connectorgroup.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto connectorGroup.](../resources/connectorgroup.md)
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -116,5 +116,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

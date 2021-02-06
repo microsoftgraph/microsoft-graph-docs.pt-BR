@@ -4,13 +4,13 @@ description: 'Classificação das mensagens de um usuário para possibilitar a a
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 2e051b820bdfb2edd3d75bf75d71c188164d6e79
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: b69f892a9d8223e467a10ce1c055cc470a2c171e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016532"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130252"
 ---
 # <a name="inferenceclassification-resource-type"></a>Tipo de recurso inferenceClassification
 

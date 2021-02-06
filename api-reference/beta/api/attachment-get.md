@@ -3,14 +3,14 @@ title: Obter anexo
 description: Leia as propriedades e os relacionamentos de um anexo, anexados a um evento, mensagem, tarefa do Outlook ou postagem.
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 5676615011806a5dbe07297080c06b976d945f11
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 6759953148245935e5a2dc2b0825a7c55af18dc3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092404"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128873"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -24,11 +24,11 @@ Leia as propriedades, relações ou conteúdo bruto de um anexo anexado a um eve
 
 Um anexo pode ser de um dos seguintes tipos:
 
-* Um arquivo. Programaticamente, esse é um [recurso fileAttachment.](../resources/fileattachment.md)
-* Um item do Outlook (contato, evento ou mensagem). Programaticamente, um anexo de item é um [recurso itemAttachment.](../resources/itemattachment.md) Você pode usar `$expand` para obter mais propriedades desse item. Veja um [exemplo](#request-2) abaixo.
-* Um link para um arquivo armazenado na nuvem. Programaticamente, este é um [recurso referenceAttachment.](../resources/referenceattachment.md)
+* Um arquivo. Programaticamente, este é um recurso [fileAttachment](../resources/fileattachment.md).
+* Um item do Outlook (contato, evento ou mensagem). Programaticamente, um anexo de item é um recurso [itemAttachment](../resources/itemattachment.md). Você pode usar `$expand` para obter mais propriedades desse item. Veja um [exemplo](#request-2) abaixo.
+* Um link para um arquivo armazenado na nuvem. Programaticamente, este é um recurso [referenceAttachment](../resources/referenceattachment.md).
 
-Todos esses tipos de anexos são derivados do recurso [de](../resources/attachment.md) anexo. 
+Todos esses tipos de anexos são derivados do recurso [anexo](../resources/attachment.md). 
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Obter o conteúdo bruto de um arquivo ou anexo de item
 Você pode anexar o segmento do caminho `/$value` para obter o conteúdo bruto de um arquivo ou anexo de item. 
@@ -47,7 +47,7 @@ A tentativa de obter o `$value` de um anexo de referência retorna HTTP 405.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem**) ao qual o anexo está anexado e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
+Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem**) ao qual o anexo está anexado e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|

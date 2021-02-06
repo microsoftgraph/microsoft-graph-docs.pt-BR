@@ -3,14 +3,14 @@ title: Tipo de recurso membershipRuleProcessingStatus
 description: Representa o status atual do processamento de grupo dinâmico.
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 864cbd9ea446655c2a0d5f950b28fa6421d2241c
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: f59f5f89c3aad8312504c62b29a0dbd490a37ac5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784882"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128257"
 ---
 # <a name="membershipruleprocessingstatus-resource-type"></a>Tipo de recurso membershipRuleProcessingStatus
 

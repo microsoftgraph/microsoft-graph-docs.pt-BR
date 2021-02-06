@@ -3,14 +3,14 @@ title: List overrides
 description: Obtenha as substituições da Caixa de Entrada Destaques que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: b0880959138f9d7b914c490f45fd43b8a7ad866c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 486d99db01c2efbbc0ff295730cf248aaffb643a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953100"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130715"
 ---
 # <a name="list-overrides"></a>List overrides
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as substituições de [caixa de entrada destaques](../resources/manage-focused-inbox.md) que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.
+Obter as [substituições da Caixa](../resources/manage-focused-inbox.md) de Entrada Focada que um usuário tenha definido para sempre classificar mensagens de determinados envios de maneiras específicas.
 
 Cada substituição corresponde a um endereço SMTP de um remetente. Inicialmente, um usuário não tem quaisquer substituições.
 ## <a name="permissions"></a>Permissões

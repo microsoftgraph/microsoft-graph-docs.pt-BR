@@ -1,16 +1,16 @@
 ---
 title: Listar connectorGroups
-description: Recupere uma lista de objetos de conexão.
+description: Recupere uma lista de objetos connectorgroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 53918f700233c130a4b195eb4bc604901c3560a9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7d8ad142840abba411fb6f2c3b9f0f49c55acd56
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957355"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130098"
 ---
 # <a name="list-connectorgroups"></a>Listar connectorGroups
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos de [conexão](../resources/connectorgroup.md) .
+Recupere uma lista de [objetos connectorGroup.](../resources/connectorgroup.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos do grupo de [conectores](../resources/connectorgroup.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -120,3 +120,4 @@ Content-length: 164
   "suppressions": []
 }
 -->
+

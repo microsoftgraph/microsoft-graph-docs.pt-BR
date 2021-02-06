@@ -3,14 +3,14 @@ title: Listar applicationTemplates
 description: Recupere uma lista de objetos applicationtemplate.
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0f50d8bf63b58ec5b1aad0e0318ad72314dda7ec
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3041982a4c26de4c29bf55ca672692c4dfee548f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961706"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128939"
 ---
 # <a name="list-applicationtemplates"></a>Listar applicationTemplates
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [applicationtemplate](../resources/applicationtemplate.md) da Galeria de aplicativos do Azure AD.
+Recupere uma lista de [objetos applicationTemplate](../resources/applicationtemplate.md) da galeria de aplicativos do Azure AD.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Application                            | Nenhum. |
 
-Permissões adicionais não são necessárias para chamar esta API, contanto que seu aplicativo tenha um token de acesso válido para chamar o Microsoft Graph.
+Permissões adicionais não são necessárias para chamar essa API, desde que seu aplicativo tenha um token de acesso válido para chamar o Microsoft Graph.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,8 +44,8 @@ GET /applicationTemplates
 
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. 
 
-- Você pode usar o `$filter` parâmetro de forma limitada. Você só pode filtrar por **DisplayName** ou **categorias**. Por exemplo,  `$filter=contains(displayName, 'salesf')` ou `$filter=categories/any(c:contains(c, 'myCategory'))`.
-- Você pode usar `$orderby` `$top,` e `$skip` consultar parâmetros em qualquer solicitação get.
+- Você pode usar o `$filter` parâmetro de forma limitada. Você só pode filtrar por **displayName** ou **categorias.** Por exemplo,  `$filter=contains(displayName, 'salesf')` ou `$filter=categories/any(c:contains(c, 'myCategory'))`.
+- Você pode usar `$orderby` e `$top,` consultar `$skip` parâmetros em qualquer solicitação GET.
 
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [applicationtemplate](../resources/applicationtemplate.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos applicationTemplate](../resources/applicationtemplate.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto response mostrado aqui pode ser encurtado para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -140,5 +140,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

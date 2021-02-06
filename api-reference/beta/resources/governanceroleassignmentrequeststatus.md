@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso governanceRoleAssignmentRequestStatus
-description: Representa o status do governanceRoleAssignmentRequest.
+title: Tipo de recurso governanceRoleAssignmentRequestStatus
+description: Representa o status da governanceRoleAssignmentRequest.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 9b0af5326bb9c819ded03ab9497e155cb0dab7c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 99fc5ef72c40a5eff30a5e33ed89316e56c26962
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081682"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128607"
 ---
-# <a name="governanceroleassignmentrequeststatus-resource-type"></a>tipo de recurso governanceRoleAssignmentRequestStatus
+# <a name="governanceroleassignmentrequeststatus-resource-type"></a>Tipo de recurso governanceRoleAssignmentRequestStatus
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o status do [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+Representa o status da [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 
 ## <a name="properties"></a>Propriedades
 Propriedade       | Tipo |Descrição|
 |:----|:-------------|:-----|
 |status |String| O status da solicitação de atribuição de função. O valor pode ser `InProgress` ou `Closed` .|
-|substatus |Cadeia de caracteres| O status da solicitação de atribuição de função. Os valores podem ser,,,,,,,, `Accepted` `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `PendingRevocation` `Revoked` `Canceled` `Failed` , `PendingApprovalProvisioning` ,, `PendingApproval` `FailedAsResourceIsLocked` , `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `ProvisioningStarted` ,,, e.|
+|subStatus |String| O sub status da solicitação de atribuição de função. Os valores podem `Accepted` ser , , , , , , , , `PendingEvaluation` , , , `Granted` , , , `Denied` , , `PendingProvisioning` `Provisioned` `PendingRevocation` e `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `ProvisioningStarted` .|
 |statusDetails       |Coleção [KeyValue](../resources/keyvalue.md)| Os detalhes do status da solicitação de atribuição de função. Ele representa os resultados de avaliação de regras diferentes. |
 
 ## <a name="json-representation"></a>Representação JSON

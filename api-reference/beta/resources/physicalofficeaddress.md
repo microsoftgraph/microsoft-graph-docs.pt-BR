@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso physicalOfficeAddress
-description: Representa o endereço comercial de um recurso, como um contato ou um evento.
+title: Tipo de recurso physicalOfficeAddress
+description: Representa o endereço comercial de um recurso, como um contato ou evento.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 author: dkershaw10
-ms.openlocfilehash: 46bf87af658e0dc01c0f0db888118f7ae3bcde13
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8ff1672b0960c68ef826c89b9217109bdeb7da76
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997799"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130820"
 ---
-# <a name="physicalofficeaddress-resource-type"></a>tipo de recurso physicalOfficeAddress
+# <a name="physicalofficeaddress-resource-type"></a>Tipo de recurso physicalOfficeAddress
 
 Namespace: microsoft.graph
 
@@ -24,9 +24,9 @@ Representa o endereço comercial de um recurso, como um contato organizacional.
 |:---------------|:--------|:----------|
 |city|String|A cidade.|
 |countryOrRegion|String|O país ou a região. É um valor de cadeia de caracteres de formato livre, por exemplo, "Brasil".|
-|officeLocation  | String | Local do Office, como o prédio e o número do escritório de um contato organizacional.  |
+|officeLocation  | String | Local do escritório, como prédio e número de escritório para um contato organizacional.  |
 |postalCode|String|O código de endereçamento postal, ou CEP.|
-|state|String|O estado.|
+|estado|String|O estado.|
 |street|String|O tipo de logradouro (rua, alameda, avenida, etc.).|
 
 ## <a name="json-representation"></a>Representação JSON

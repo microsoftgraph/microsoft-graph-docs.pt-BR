@@ -1,16 +1,16 @@
 ---
 title: Atualizar connectorGroups
-description: Atualize as propriedades do objeto de conexão.
+description: Atualize as propriedades do objeto connectorgroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d376327004d77277dd418556cc8caffe2da49e8e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9da1f53869d25c4623c2b2e401777d06aaa065d2
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957267"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129755"
 ---
 # <a name="update-connectorgroups"></a>Atualizar connectorGroups
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um objeto de [conexão](../resources/connectorgroup.md) .
+Atualize as propriedades de um [objeto connectorGroup.](../resources/connectorgroup.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,15 +44,15 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Indica o tipo de agente híbrido. Isso é definido pelo sistema. |
-|id|string| Identificador exclusivo desse conector. Somente leitura. |
-|isDefault|booliano| Indica se o conector de conexão é o padrão. Somente um grupo de conectores único pode ser o grupo de conectores padrão e é predefinido pelo sistema. |
-|nome|string| O nome associado ao conector. |
-|região|string| A região à qual o conector é atribuído e otimizará o tráfego para o. Essa região só poderá ser definida se **nenhum** conector ou aplicativo for atribuído ao grupo de conectores. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|connectorGroupType|string| Indica o tipo de agente híbrido. Isso é pré-definido pelo sistema. |
+|id|string| Identificador exclusivo deste connectorGroup. Somente leitura. |
+|isDefault|booliano| Indica se o connectorGroup é o connectorGroup padrão. Somente um único grupo de conectores pode ser o connectorGroup padrão e isso é pré-definido pelo sistema. |
+|nome|string| O nome associado ao connectorGroup. |
+|region|string| A região à que o connectorGroup está atribuído e otimizará o tráfego. Essa região só poderá ser definida se **nenhum** conector ou aplicativo estiver atribuído ao connectorGroup. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de [teleconnector](../resources/connectorgroup.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [connectorGroup](../resources/connectorgroup.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -123,5 +123,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

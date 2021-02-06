@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso dicas de texto
-description: 'Mensagens informativas sobre um destinatário, que são exibidas aos usuários enquanto eles compõem uma mensagem. Por exemplo, uma mensagem de ausência temporária '
+title: tipo de recurso mailTips
+description: 'Mensagens informativas sobre um destinatário, que são exibidas aos usuários enquanto eles compõem uma mensagem. Por exemplo, uma mensagem de fora do escritório '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 337d280df51d86aadb879b01fa5bfa5bf4e77e9d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 53c17a270903d69f19ee513f5d3bcbec848171af
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021424"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129839"
 ---
-# <a name="mailtips-resource-type"></a>tipo de recurso dicas de texto
+# <a name="mailtips-resource-type"></a>tipo de recurso mailTips
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mensagens informativas sobre um destinatário, que são exibidas aos usuários enquanto eles compõem uma mensagem. Por exemplo, uma mensagem de ausência temporária como uma resposta automática para um destinatário de mensagem.
+Mensagens informativas sobre um destinatário, que são exibidas aos usuários enquanto eles compõem uma mensagem. Por exemplo, uma mensagem de fora do escritório como uma resposta automática para um destinatário da mensagem.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | Dicas de email para resposta automática se tiver sido configurada pelo destinatário. |
+| automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | Dicas de email para resposta automática se ela tiver sido configurada pelo destinatário. |
 | customMailTip | String | Uma dica de email personalizada que pode ser definida na caixa de correio do destinatário. |
-| deliveryRestricted| Booliano | Se a caixa de correio do destinatário é restrita, por exemplo, aceitando mensagens de apenas uma lista predefinida de remetentes, rejeitando mensagens de uma lista predefinida de remetentes ou aceitando mensagens de somente remetentes autenticados. |
-| emailAddress | [emailAddress](../resources/emailaddress.md) | O endereço de email do destinatário para o qual obter dicas de email. |
-| erro | [mailTipsError](../resources/mailtipserror.md) | Erros que ocorrem durante a ação [comdicas](../api/user-getmailtips.md) de as. |
+| deliveryRestricted| Boolean | Se a caixa de correio do destinatário é restrita, por exemplo, aceitando mensagens de apenas uma lista predefinida de destinatários, rejeitando mensagens de uma lista predefinida de destinatários ou aceitando mensagens apenas de destinatários autenticados. |
+| emailAddress | [emailAddress](../resources/emailaddress.md) | O endereço de email do destinatário para o que obter dicas de email. |
+| erro | [mailTipsError](../resources/mailtipserror.md) | Erros que ocorrem durante a [ação getMailTips.](../api/user-getmailtips.md) |
 | externalMemberCount | Int32 | O número de membros externos se o destinatário for uma lista de distribuição. |
-| ismoderadod |Booliano  | Se o envio de mensagens para o destinatário requer aprovação. Por exemplo, se o destinatário for uma lista de distribuição grande e um moderador tiver sido configurado para aprovar as mensagens enviadas para essa lista de distribuição ou se o envio de mensagens a um destinatário exigir a aprovação do gerente do destinatário. |
-| mailboxFull | Booliano | O status completo da caixa de correio do destinatário. |
-| maxMessageSize | Int32 | O tamanho máximo da mensagem que foi configurada para a organização ou caixa de correio do destinatário. |
-| recipientScope | String | O escopo do destinatário. Os valores possíveis são: `none`, `internal`, `external`, `externalPartner`, `externalNonParther`. Por exemplo, um administrador pode definir outra organização como "parceiro". O escopo será útil se um administrador quiser que determinadas dicas de usuários fiquem acessíveis para determinados escopos. Também é útil para os remetentes informar que a mensagem pode sair da organização, ajudando-os a tomar as decisões corretas sobre o texto, o Tom e o conteúdo.|
-| recipientSuggestions | Coleção [recipient](../resources/recipient.md) | Os destinatários sugeridos com base em contextos anteriores, onde aparecem na mesma mensagem. |
+| isModerated |Boolean  | Se o envio de mensagens para o destinatário requer aprovação. Por exemplo, se o destinatário for uma lista de distribuição grande e um moderador tiver sido definido para aprovar mensagens enviadas a essa lista de distribuição, ou se o envio de mensagens para um destinatário exigir aprovação do gerente do destinatário. |
+| mailboxFull | Boolean | O status completo da caixa de correio do destinatário. |
+| maxMessageSize | Int32 | O tamanho máximo da mensagem que foi configurado para a organização ou a caixa de correio do destinatário. |
+| recipientScope | String | O escopo do destinatário. Os valores possíveis são: `none`, `internal`, `external`, `externalPartner`, `externalNonParther`. Por exemplo, um administrador pode definir outra organização como seu "parceiro". O escopo é útil se um administrador quiser que determinadas dicas de email sejam acessíveis a determinados escopos. Também é útil para os envios informá-los de que suas mensagens podem sair da organização, ajudando-os a tomar as decisões corretas sobre texto, tom e conteúdo.|
+| recipientSuggestions | Coleção [recipient](../resources/recipient.md) | Destinatários sugeridos com base em contextos anteriores em que aparecem na mesma mensagem. |
 | totalMemberCount | Int32 | O número de membros se o destinatário for uma lista de distribuição. |
 
 ## <a name="json-representation"></a>Representação JSON

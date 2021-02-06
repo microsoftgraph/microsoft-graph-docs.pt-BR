@@ -1,16 +1,16 @@
 ---
 title: Atualizar inferenceClassificationOverride
-description: 'Altere o campo **classificas** de uma substituição de caixa de entrada destaques, conforme especificado. '
+description: 'Altere **o campo classifyAs** de uma substituição da Caixa de Entrada Focada conforme especificado. '
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 8fd92198bdbcae3d1f9d48bf442bf252b73d1f8b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9195466b1ea09b9b0dde4c00a057d95548184edf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130323"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Atualizar inferenceClassificationOverride
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Altere o campo **classificas** de uma substituição de [caixa de entrada destaques](../resources/manage-focused-inbox.md) , conforme especificado.
+Altere **o campo classifyAs** de uma [substituição da Caixa de Entrada Focada](../resources/manage-focused-inbox.md) conforme especificado.
 
 Você não pode usar PATCH para alterar outros campos em uma instância de [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md).
 

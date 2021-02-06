@@ -1,41 +1,41 @@
 ---
-title: tipo de recurso conditionalAccessGrantControls
-description: Representa os controles de concessão que devem ser atendidos para passar a política.
+title: Tipo de recurso conditionalAccessGrantControls
+description: Representa controles de concessão que devem ser atendidos para passar a política.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2bcb150239e6e6a8487caa3f49f7704fbd2550a8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d8717c1ca8fcd9113b8aeacb5a4a1cefce8df8f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994271"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130470"
 ---
-# <a name="conditionalaccessgrantcontrols-resource-type"></a>tipo de recurso conditionalAccessGrantControls
+# <a name="conditionalaccessgrantcontrols-resource-type"></a>Tipo de recurso conditionalAccessGrantControls
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os controles de concessão que devem ser atendidos para passar a política.
+Representa controles de concessão que devem ser atendidos para passar a política.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| operator | String | Define o relacionamento dos controles de concessão. Valores possíveis: `AND` , `OR` . |
-| builtInControls | Coleção de cadeias de caracteres | Lista de valores de controles internos exigidos pela política. Valores possíveis: `block` ,,,,, `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` , `passwordChange` . |
-| customAuthenticationFactors | Coleção de cadeias de caracteres | Lista de IDs de controles personalizados exigidos pela política. Saiba mais sobre os controles personalizados aqui: https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
-| termsOfUse | Coleção de cadeias de caracteres | Lista de [termos de uso](agreement.md) IDs exigidos pela política. |
+| operator | String | Define a relação dos controles de concessão. Valores possíveis: `AND` , `OR` . |
+| builtInControls | Coleção de cadeias de caracteres | Lista de valores de controles internos exigidos pela política. Valores possíveis: `block` , , , , , `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` `passwordChange` . |
+| customAuthenticationFactors | Coleção de cadeias de caracteres | Lista de IDs de controles personalizados exigidas pela política. Saiba mais sobre controles personalizados aqui: https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
+| termsOfUse | Coleção de cadeias de caracteres | Lista de [IDs de](agreement.md) termos de uso exigida pela política. |
 
 ### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Considerações especiais ao usar `passwordChange` como um controle
 
 Considere o seguinte ao usar o `passwordChange` controle: 
 
-- `passwordChange` deve ser acompanhado pelo `mfa` uso de um `AND` operador. Essa combinação garante que a senha será atualizada de forma segura.
-- `passwordChange` deve ser usado em uma política que contém `userRiskLevels` . Isso é projetado para permitir cenários em que os usuários devem usar uma senha de alteração segura para redefinir o risco do usuário.
-- A política deve direcionar `all` aplicativos e não excluir nenhum aplicativo.
+- `passwordChange` deve ser acompanhado pelo `mfa` uso de um `AND` operador. Essa combinação garante que a senha seja atualizada de forma segura.
+- `passwordChange` deve ser usado em uma política que contém `userRiskLevels` . Isso foi projetado para permitir cenários em que os usuários devem usar uma senha de alteração segura para redefinir seus riscos de usuário.
+- A política deve direcionar `all` aplicativos e não excluir aplicativos.
 - A política não pode conter nenhuma outra condição.
 
 ## <a name="relationships"></a>Relações

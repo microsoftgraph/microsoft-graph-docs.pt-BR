@@ -1,24 +1,24 @@
 ---
-title: Atribuir um conector a um aplicativo
-description: Use esta API para atribuir um conector a um aplicativo
+title: Atribuir um connectorGroup a um aplicativo
+description: Usar essa API para atribuir um connectorGroup a um aplicativo
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 467320f0118743a29415a035421c4a92496aaf38
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1c117153bff6ee7864eb174c38014f4adc939dee
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752835"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129566"
 ---
-# <a name="assign-a-connectorgroup-to-an-application"></a>Atribuir um conector a um aplicativo
+# <a name="assign-a-connectorgroup-to-an-application"></a>Atribuir um connectorGroup a um aplicativo
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atribuir um [conector](../resources/connectorgroup.md) a um [aplicativo](../resources/application.md).
+Atribua [um connectorGroup](../resources/connectorgroup.md) a um [aplicativo.](../resources/application.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,7 +42,7 @@ PUT /applications/{id}/connectorGroup/$ref
 | Content-type | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto do objeto de [conexão](../resources/connectorgroup.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto connectorGroup.](../resources/connectorgroup.md)
 
 ## <a name="response"></a>Resposta
 
@@ -109,5 +109,6 @@ HTTP/1.1 204 No content
   "suppressions": []
 }
 -->
+
 
 

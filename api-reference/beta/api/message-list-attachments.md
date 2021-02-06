@@ -1,16 +1,16 @@
 ---
 title: Listar anexos
 description: Recupere uma lista de objetos anexados a uma mensagem.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 73b6bb66c96d67093f398525ab26b4c0262a8251
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 681c845f25e8bfa92749f5ec2e976b1404490b11
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979814"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131205"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Em particular, você pode usar o $expand parâmetro de consulta para incluir todos os anexos de mensagem embutidos com o restante das propriedades de mensagem. Por exemplo:
+Em particular, você pode usar o $expand de consulta para incluir todos os anexos de mensagem em linha com o restante das propriedades da mensagem. Por exemplo:
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments

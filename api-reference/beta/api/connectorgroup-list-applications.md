@@ -1,24 +1,24 @@
 ---
 title: Listar aplicativos
-description: Recupere uma lista de objetos de aplicativo associados ao objeto Connector.
+description: Recupere uma lista de objetos de aplicativo associados ao connectorGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a4c0dee137cc721cba180784e4f8d36a795a01aa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3a25be9468f43e0bcaf911980a4f5e41a1e537f7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957397"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129972"
 ---
-# <a name="list-applications-assigned-to-a-connectorgroup"></a>Listar aplicativos atribuídos a um conector
+# <a name="list-applications-assigned-to-a-connectorgroup"></a>Listar aplicativos atribuídos a um connectorGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos de [aplicativo](../resources/application.md) associados ao objeto [Connector](../resources/connectorgroup.md). Esta lista contém todos os aplicativos atribuídos ao grupo de conectores específico.
+Recupere uma lista de [objetos de](../resources/application.md) aplicativo associados ao [connectorGroup](../resources/connectorgroup.md). Essa lista contém todos os aplicativos atribuídos ao grupo de conectores específico.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Application](../resources/application.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de objetos [application](../resources/application.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -156,3 +156,4 @@ Content-length: 420
   "suppressions": []
 }
 -->
+

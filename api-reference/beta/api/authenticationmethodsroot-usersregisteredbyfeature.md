@@ -3,14 +3,14 @@ title: 'authenticationMethodsRoot: usersRegisteredByFeature'
 description: Obter o número de usuários capazes de autenticação multifa factor, redefinição de senha de autoatendado e autenticação sem senha.
 author: danielwood95
 localization_priority: Normal
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: a70832426dfc9b6fbadddd070d3531d52d515583
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: c6f0976e364e2cf4b24883bef10e7f3c6e49480f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092331"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129657"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbyfeature"></a>authenticationMethodsRoot: usersRegisteredByFeature
 Namespace: microsoft.graph
@@ -34,7 +34,7 @@ Para acessar a API, [uma das seguintes funções](/azure/active-directory/users-
 * Leitor de segurança
 * Administrador de segurança
 * Leitor global
-* Administração global
+* Administrador global
 
 ## <a name="http-request"></a>Solicitação HTTP
 

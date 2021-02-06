@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso optionalClaim
+title: Tipo de recurso optionalClaim
 description: Contém uma declaração opcional associada a um aplicativo.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: f40574cb80ab458d1675507b796b43b95e19cf41
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 5e21ab86fb3ef34edea546546211782906e04251
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128530"
 ---
-# <a name="optionalclaim-resource-type"></a>tipo de recurso optionalClaim
+# <a name="optionalclaim-resource-type"></a>Tipo de recurso optionalClaim
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém uma declaração opcional associada a um [aplicativo](application.md) <!-- or a service principal -->. As propriedades **idToken**, **accessToken**e **saml2Token** do recurso [optionalClaims](optionalclaims.md) é uma coleção de **optionalClaim**. Se houver suporte para uma declaração específica, você também poderá modificar o comportamento do optionalClaim usando a `additionalProperties` propriedade. 
+Contém uma declaração opcional associada a um [aplicativo](application.md) <!-- or a service principal -->. As **propriedades idToken**, **accessToken** e **saml2Token** do recurso [optionalClaims](optionalclaims.md) é uma coleção de **optionalClaim**. Se tiver suporte em uma declaração específica, você também poderá modificar o comportamento do optionalClaim usando a `additionalProperties` propriedade. 
 
 Confira [fornecer declarações opcionais ao aplicativo Azure AD](/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações.
 
@@ -26,10 +26,10 @@ Confira [fornecer declarações opcionais ao aplicativo Azure AD](/azure/active-
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|AdditionalProperties|Conjunto de cadeias de caracteres| Propriedades adicionais da declaração. Se uma propriedade existir nessa coleção, ela modificará o comportamento da declaração opcional especificada na propriedade Name. |
-|essencial|Boolean| Se o valor for true, a declaração especificada pelo cliente será necessária para garantir uma experiência de autorização suave para a tarefa específica solicitada pelo usuário final. O valor padrão é falso.|
-|nome|Cadeia de caracteres| O nome da declaração opcional. |
-|source|Cadeia de caracteres| A origem (objeto de diretório) da declaração. Há declarações predefinidas e declarações definidas pelo usuário das propriedades de extensão. Se o valor de origem for nulo, a declaração será uma declaração opcional predefinida. Se o valor de origem for User, o valor na propriedade Name será a Propriedade Extension do objeto user. |
+|additionalProperties|Coleção de cadeias de caracteres| Propriedades adicionais da declaração. Se houver uma propriedade nessa coleção, ela modificará o comportamento da declaração opcional especificada na propriedade name. |
+|essential|Boolean| Se o valor for verdadeiro, a declaração especificada pelo cliente será necessária para garantir uma experiência de autorização suave para a tarefa específica solicitada pelo usuário final. O valor padrão é falso.|
+|nome|String| O nome da declaração opcional. |
+|source|String| A origem (objeto de diretório) da declaração. Há declarações predefinidos e declarações definidas pelo usuário a partir de propriedades de extensão. Se o valor de origem for nulo, a declaração será uma declaração opcional predefinida. Se o valor de origem for usuário, o valor na propriedade name será a propriedade de extensão do objeto user. |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -413,7 +413,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -816,7 +816,7 @@ items:
                 items:
                   - name: Listar
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: Classificações de permissão delegadas
+              - name: Classificações de permissão delegada
                 href: resources/delegatedpermissionclassification.md
                 items:
                   - name: Listar
@@ -889,7 +889,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: Excluir de inclui
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: Listar exclusões
+                          - name: Exclusões de lista
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: Criar em exclusões
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -1105,7 +1105,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
           - name: Local
             items:
-              - name: Local
+              - name: Place
                 href: resources/place.md
               - name: Tipo de sala
                 href: resources/room.md
@@ -1164,7 +1164,7 @@ items:
                 items:
                   - name: Reproduzir prompt
                     href: api/call-playprompt.md
-                  - name: Resposta de registro
+                  - name: Resposta do registro
                     href: api/call-record.md
                   - name: Cancelar processamento de mídia
                     href: api/call-cancelmediaprocessing.md
@@ -1203,9 +1203,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter registro de chamada
                     href: api/callrecords-callrecord-get.md
-              - name: Sessão
+              - name: Session
                 items:
-                  - name: Sessão
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Listar sessões
                     href: api/callrecords-session-list.md
@@ -3868,6 +3868,8 @@ items:
                     href: api/domain-post-domains.md
                   - name: Excluir domínio
                     href: api/domain-delete.md
+                  - name: Forçar exclusão de domínio
+                    href: api/domain-forcedelete.md
                   - name: Obter domínio
                     href: api/domain-get.md
                   - name: Atualizar domínio
@@ -3972,7 +3974,7 @@ items:
                             href: api/countrynamedlocation-update.md
                           - name: Excluir
                             href: api/countrynamedlocation-delete.md
-                      - name: Local nomeado por IP
+                      - name: Local nomeado pelo IP
                         items:
                           - name: Local nomeado por IP
                             href: resources/ipnamedlocation.md
@@ -4511,11 +4513,10 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
       - name: Relatórios
         items:
-          - name: Visão Geral
-            href: resources/report.md
-          - name: Atividade do Azure AD
-            href: resources/azure-ad-auditlog-overview.md
+          - name: Relatórios de atividades do Azure AD
             items:
+              - name: Visão Geral
+                href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
                 items:
@@ -4530,203 +4531,207 @@ items:
                     href: api/signin-list.md
                   - name: Obter entrada
                     href: api/signin-get.md
-          - name: Uso do dispositivo do Microsoft Teams
-            href: resources/microsoft-teams-device-usage-reports.md
+          - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getteamsdeviceusageuserdetail.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getteamsdeviceusageusercounts.md
-              - name: Obter contagens de usuários de distribuição
-                href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
-          - name: Atividade do usuário do Microsoft Teams
-            href: resources/microsoft-teams-user-activity-reports.md
-            items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getteamsuseractivityuserdetail.md
-              - name: Obter contagens de atividades
-                href: api/reportroot-getteamsuseractivitycounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getteamsuseractivityusercounts.md
-          - name: Atividade do Outlook
-            href: resources/email-activity-reports.md
-            items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getemailactivityuserdetail.md
-              - name: Obter contagens de atividades
-                href: api/reportroot-getemailactivitycounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getemailactivityusercounts.md
-          - name: Uso do aplicativo do Outlook
-            href: resources/email-app-usage-reports.md
-            items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getemailappusageuserdetail.md
-              - name: Obter contagens de usuários do aplicativo
-                href: api/reportroot-getemailappusageappsusercounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getemailappusageusercounts.md
-              - name: Obter contagens de usuários das versões
-                href: api/reportroot-getemailappusageversionsusercounts.md
-          - name: Uso de caixas de correio do Outlook
-            href: resources/mailbox-usage-reports.md
-            items:
-              - name: Obter detalhes da caixa de correio
-                href: api/reportroot-getmailboxusagedetail.md
-              - name: Obter contagens da caixa de correio
-                href: api/reportroot-getmailboxusagemailboxcounts.md
-              - name: Obter status da cota de contagens da caixa de correio
-                href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
-              - name: Obter armazenamento
-                href: api/reportroot-getmailboxusagestorage.md
-          - name: Ativações do Microsoft 365
-            href: resources/office-365-activations-reports.md
-            items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getoffice365activationsuserdetail.md
-              - name: Obter contagens de ativações
-                href: api/reportroot-getoffice365activationcounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getoffice365activationsusercounts.md
-          - name: Usuários ativos do Microsoft 365
-            href: resources/office-365-active-users-reports.md
-            items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getoffice365activeuserdetail.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getoffice365activeusercounts.md
-              - name: Obter contagens de usuários dos serviços
-                href: api/reportroot-getoffice365servicesusercounts.md
-          - name: Atividade de grupos do Microsoft 365
-            href: resources/office-365-groups-activity-reports.md
-            items:
-              - name: Obter detalhe do grupo
-                href: api/reportroot-getoffice365groupsactivitydetail.md
-              - name: Obter contagens de atividades
-                href: api/reportroot-getoffice365groupsactivitycounts.md
-              - name: Obter contagens do grupo
-                href: api/reportroot-getoffice365groupsactivitygroupcounts.md
-              - name: Obter armazenamento
-                href: api/reportroot-getoffice365groupsactivitystorage.md
-              - name: Obter contagens do arquivo
-                href: api/reportroot-getoffice365groupsactivityfilecounts.md
-          - name: Atividade do OneDrive
-            href: resources/onedrive-activity-reports.md
-            items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getonedriveactivityuserdetail.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getonedriveactivityusercounts.md
-              - name: Obter contagens do arquivo
-                href: api/reportroot-getonedriveactivityfilecounts.md
-          - name: Uso do OneDrive
-            href: resources/onedrive-usage-reports.md
-            items:
-              - name: Obter detalhes da conta
-                href: api/reportroot-getonedriveusageaccountdetail.md
-              - name: Obter contagens de contas
-                href: api/reportroot-getonedriveusageaccountcounts.md
-              - name: Obter contagens do arquivo
-                href: api/reportroot-getonedriveusagefilecounts.md
-              - name: Obter armazenamento
-                href: api/reportroot-getonedriveusagestorage.md
-          - name: Atividade do SharePoint
-            href: resources/sharepoint-activity-reports.md
-            items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getsharepointactivityuserdetail.md
-              - name: Obter contagens do arquivo
-                href: api/reportroot-getsharepointactivityfilecounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getsharepointactivityusercounts.md
-              - name: Obter páginas
-                href: api/reportroot-getsharepointactivitypages.md
-          - name: Utilização do site do SharePoint
-            href: resources/sharepoint-site-usage-reports.md
-            items:
-              - name: Obter detalhes do site
-                href: api/reportroot-getsharepointsiteusagedetail.md
-              - name: Obter contagens do arquivo
-                href: api/reportroot-getsharepointsiteusagefilecounts.md
-              - name: Obter contagens do site
-                href: api/reportroot-getsharepointsiteusagesitecounts.md
-              - name: Obter armazenamento
-                href: api/reportroot-getsharepointsiteusagestorage.md
-              - name: Obter páginas
-                href: api/reportroot-getsharepointsiteusagepages.md
-          - name: Atividade do Skype for Business
-            href: resources/skype-for-business-activity-reports.md
-            items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getskypeforbusinessactivityuserdetail.md
-              - name: Obter contagens de atividades
-                href: api/reportroot-getskypeforbusinessactivitycounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getskypeforbusinessactivityusercounts.md
-          - name: Uso do dispositivo do Skype for Business
-            href: resources/skype-for-business-device-usage-reports.md
-            items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getskypeforbusinessdeviceusageuserdetail.md
-              - name: Obter contagens de usuários de distribuição
-                href: api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getskypeforbusinessdeviceusageusercounts.md
-          - name: Atividade do organizador do Skype for Business
-            href: resources/skype-for-business-organizer-activity-reports.md
-            items:
-              - name: Obter contagens de atividades
-                href: api/reportroot-getskypeforbusinessorganizeractivitycounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
-              - name: Obter contagens de minutos
-                href: api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
-          - name: Atividade de participantes do Skype for Business
-            href: resources/skype-for-business-participant-activity-reports.md
-            items:
-              - name: Obter contagens de atividades
-                href: api/reportroot-getskypeforbusinessparticipantactivitycounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
-              - name: Obter contagens de minutos
-                href: api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
-          - name: Atividade de colega para colega do Skype for Business
-            href: resources/skype-for-business-peer-to-peer-activity.md
-            items:
-              - name: Obter contagens de atividades
-                href: api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
-              - name: Obter contagens de minutos
-                href: api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
-          - name: Atividade do Yammer
-            href: resources/yammer-activity-reports.md
-            items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getyammeractivityuserdetail.md
-              - name: Obter contagens de atividades
-                href: api/reportroot-getyammeractivitycounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getyammeractivityusercounts.md
-          - name: Uso do dispositivo do Yammer
-            href: resources/yammer-device-usage-reports.md
-            items:
-              - name: Obter detalhes do usuário
-                href: api/reportroot-getyammerdeviceusageuserdetail.md
-              - name: Obter contagens de usuários de distribuição
-                href: api/reportroot-getyammerdeviceusagedistributionusercounts.md
-              - name: Obter contagens de usuários
-                href: api/reportroot-getyammerdeviceusageusercounts.md
-          - name: Atividade de grupos do Yammer
-            href: resources/yammer-groups-activity-reports.md
-            items:
-              - name: Obter detalhe do grupo
-                href: api/reportroot-getyammergroupsactivitydetail.md
-              - name: Obter contagens do grupo
-                href: api/reportroot-getyammergroupsactivitygroupcounts.md
-              - name: Obter contagens de atividades
-                href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+              - name: Visão Geral
+                href: resources/report.md
+              - name: Uso do dispositivo do Microsoft Teams
+                href: resources/microsoft-teams-device-usage-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getteamsdeviceusageuserdetail.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getteamsdeviceusageusercounts.md
+                  - name: Obter contagens de usuários de distribuição
+                    href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
+              - name: Atividade do usuário do Microsoft Teams
+                href: resources/microsoft-teams-user-activity-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getteamsuseractivityuserdetail.md
+                  - name: Obter contagens de atividades
+                    href: api/reportroot-getteamsuseractivitycounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getteamsuseractivityusercounts.md
+              - name: Atividade do Outlook
+                href: resources/email-activity-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getemailactivityuserdetail.md
+                  - name: Obter contagens de atividades
+                    href: api/reportroot-getemailactivitycounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getemailactivityusercounts.md
+              - name: Uso do aplicativo do Outlook
+                href: resources/email-app-usage-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getemailappusageuserdetail.md
+                  - name: Obter contagens de usuários do aplicativo
+                    href: api/reportroot-getemailappusageappsusercounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getemailappusageusercounts.md
+                  - name: Obter contagens de usuários das versões
+                    href: api/reportroot-getemailappusageversionsusercounts.md
+              - name: Uso de caixas de correio do Outlook
+                href: resources/mailbox-usage-reports.md
+                items:
+                  - name: Obter detalhes da caixa de correio
+                    href: api/reportroot-getmailboxusagedetail.md
+                  - name: Obter contagens da caixa de correio
+                    href: api/reportroot-getmailboxusagemailboxcounts.md
+                  - name: Obter status da cota de contagens da caixa de correio
+                    href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
+                  - name: Obter armazenamento
+                    href: api/reportroot-getmailboxusagestorage.md
+              - name: Ativações do Microsoft 365
+                href: resources/office-365-activations-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getoffice365activationsuserdetail.md
+                  - name: Obter contagens de ativações
+                    href: api/reportroot-getoffice365activationcounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getoffice365activationsusercounts.md
+              - name: Usuários ativos do Microsoft 365
+                href: resources/office-365-active-users-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getoffice365activeuserdetail.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getoffice365activeusercounts.md
+                  - name: Obter contagens de usuários dos serviços
+                    href: api/reportroot-getoffice365servicesusercounts.md
+              - name: Atividade de grupos do Microsoft 365
+                href: resources/office-365-groups-activity-reports.md
+                items:
+                  - name: Obter detalhe do grupo
+                    href: api/reportroot-getoffice365groupsactivitydetail.md
+                  - name: Obter contagens de atividades
+                    href: api/reportroot-getoffice365groupsactivitycounts.md
+                  - name: Obter contagens do grupo
+                    href: api/reportroot-getoffice365groupsactivitygroupcounts.md
+                  - name: Obter armazenamento
+                    href: api/reportroot-getoffice365groupsactivitystorage.md
+                  - name: Obter contagens do arquivo
+                    href: api/reportroot-getoffice365groupsactivityfilecounts.md
+              - name: Atividade do OneDrive
+                href: resources/onedrive-activity-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getonedriveactivityuserdetail.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getonedriveactivityusercounts.md
+                  - name: Obter contagens do arquivo
+                    href: api/reportroot-getonedriveactivityfilecounts.md
+              - name: Uso do OneDrive
+                href: resources/onedrive-usage-reports.md
+                items:
+                  - name: Obter detalhes da conta
+                    href: api/reportroot-getonedriveusageaccountdetail.md
+                  - name: Obter contagens de contas
+                    href: api/reportroot-getonedriveusageaccountcounts.md
+                  - name: Obter contagens do arquivo
+                    href: api/reportroot-getonedriveusagefilecounts.md
+                  - name: Obter armazenamento
+                    href: api/reportroot-getonedriveusagestorage.md
+              - name: Atividade do SharePoint
+                href: resources/sharepoint-activity-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getsharepointactivityuserdetail.md
+                  - name: Obter contagens do arquivo
+                    href: api/reportroot-getsharepointactivityfilecounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getsharepointactivityusercounts.md
+                  - name: Obter páginas
+                    href: api/reportroot-getsharepointactivitypages.md
+              - name: Utilização do site do SharePoint
+                href: resources/sharepoint-site-usage-reports.md
+                items:
+                  - name: Obter detalhes do site
+                    href: api/reportroot-getsharepointsiteusagedetail.md
+                  - name: Obter contagens do arquivo
+                    href: api/reportroot-getsharepointsiteusagefilecounts.md
+                  - name: Obter contagens do site
+                    href: api/reportroot-getsharepointsiteusagesitecounts.md
+                  - name: Obter armazenamento
+                    href: api/reportroot-getsharepointsiteusagestorage.md
+                  - name: Obter páginas
+                    href: api/reportroot-getsharepointsiteusagepages.md
+              - name: Atividade do Skype for Business
+                href: resources/skype-for-business-activity-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getskypeforbusinessactivityuserdetail.md
+                  - name: Obter contagens de atividades
+                    href: api/reportroot-getskypeforbusinessactivitycounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getskypeforbusinessactivityusercounts.md
+              - name: Uso do dispositivo do Skype for Business
+                href: resources/skype-for-business-device-usage-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getskypeforbusinessdeviceusageuserdetail.md
+                  - name: Obter contagens de usuários de distribuição
+                    href: api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getskypeforbusinessdeviceusageusercounts.md
+              - name: Atividade do organizador do Skype for Business
+                href: resources/skype-for-business-organizer-activity-reports.md
+                items:
+                  - name: Obter contagens de atividades
+                    href: api/reportroot-getskypeforbusinessorganizeractivitycounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
+                  - name: Obter contagens de minutos
+                    href: api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
+              - name: Atividade de participantes do Skype for Business
+                href: resources/skype-for-business-participant-activity-reports.md
+                items:
+                  - name: Obter contagens de atividades
+                    href: api/reportroot-getskypeforbusinessparticipantactivitycounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
+                  - name: Obter contagens de minutos
+                    href: api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
+              - name: Atividade de colega para colega do Skype for Business
+                href: resources/skype-for-business-peer-to-peer-activity.md
+                items:
+                  - name: Obter contagens de atividades
+                    href: api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
+                  - name: Obter contagens de minutos
+                    href: api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
+              - name: Atividade do Yammer
+                href: resources/yammer-activity-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getyammeractivityuserdetail.md
+                  - name: Obter contagens de atividades
+                    href: api/reportroot-getyammeractivitycounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getyammeractivityusercounts.md
+              - name: Uso do dispositivo do Yammer
+                href: resources/yammer-device-usage-reports.md
+                items:
+                  - name: Obter detalhes do usuário
+                    href: api/reportroot-getyammerdeviceusageuserdetail.md
+                  - name: Obter contagens de usuários de distribuição
+                    href: api/reportroot-getyammerdeviceusagedistributionusercounts.md
+                  - name: Obter contagens de usuários
+                    href: api/reportroot-getyammerdeviceusageusercounts.md
+              - name: Atividade de grupos do Yammer
+                href: resources/yammer-groups-activity-reports.md
+                items:
+                  - name: Obter detalhe do grupo
+                    href: api/reportroot-getyammergroupsactivitydetail.md
+                  - name: Obter contagens do grupo
+                    href: api/reportroot-getyammergroupsactivitygroupcounts.md
+                  - name: Obter contagens de atividades
+                    href: api/reportroot-getyammergroupsactivitycounts.md
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -4920,7 +4925,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -5082,7 +5087,7 @@ items:
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
-              - name: Aplicativo na equipe
+              - name: Aplicativo em equipe
                 items:
                   - name: Listar aplicativos em equipe
                     href: api/team-list-installedapps.md
@@ -5335,7 +5340,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefa
+          - name: Tarefas
             href: resources/todotask.md
             items:
               - name: Listar tarefas

@@ -1,16 +1,16 @@
 ---
 title: Obter applicationSignInSummary
-description: Recupere as propriedades e os relacionamentos de um objeto **applicationSigninSummary** .
+description: Recupere as propriedades e os relacionamentos de **um objeto applicationSigninSummary.**
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 3ac93b4e2ebba35eeb3ccc68707ca757b13cb8f6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9fad0f7122a1d82cb1f0dfc2ca7172f7f4029e85
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961776"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128962"
 ---
 # <a name="get-applicationsigninsummary"></a>Obter applicationSignInSummary
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [applicationSigninSummary](../resources/applicationsigninsummary.md) .
+Recupere as propriedades e os relacionamentos de [um objeto applicationSigninSummary.](../resources/applicationsigninsummary.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Report. Read. All |
+|Delegado (conta corporativa ou de estudante) | Report.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
-|Aplicativo | Report. Read. All | 
+|Aplicativo | Report.Read.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 
 | Parâmetro | Descrição |
 |:----------|:----------|
-| ponto | `D7`(Últimos sete dias) ou `D30` (últimos 30 dias); outros valores geram erros. |
+| ponto | (últimos `D7` sete dias) ou `D30` (últimos 30 dias); outros valores geram erros. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -50,7 +50,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [applicationSignInSummary](../resources/applicationsigninsummary.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [applicationSignInSummary](../resources/applicationsigninsummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** O objeto Response mostrado aqui mmight ser reduzido para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** O objeto response mostrado aqui pode ser reduzido para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

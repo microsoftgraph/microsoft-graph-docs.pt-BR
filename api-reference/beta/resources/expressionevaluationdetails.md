@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso expressionEvaluationDetails
-description: Representa os detalhes de propriedade, resultado e detalhes da expressão.
+title: Tipo de recurso expressionEvaluationDetails
+description: Representa os detalhes da expressão, o resultado e os detalhes da propriedade.
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f2d14d19bee60581c65d43e81b5ec69acc53df0a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01cc4aa4bd6de88541d3886efe54e5da71228448
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026968"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129485"
 ---
-# <a name="expressionevaluationdetails-resource-type"></a>tipo de recurso expressionEvaluationDetails
+# <a name="expressionevaluationdetails-resource-type"></a>Tipo de recurso expressionEvaluationDetails
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os detalhes de propriedade, resultado e detalhes da expressão.
+Representa os detalhes da expressão, o resultado e os detalhes da propriedade.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 | expressão | String | Representa a expressão que foi avaliada. |
-| expressionEvaluationDetails | coleção expressionEvaluationDetails | Representa os detalhes da avaliação da expressão. |
-| expressionResult | Booliano | Representa o valor do resultado da expressão atual. |
+| expressionEvaluationDetails | Coleção expressionEvaluationDetails | Representa os detalhes da avaliação da expressão. |
+| expressionResult | Boolean | Representa o valor do resultado da expressão atual. |
 | propertyToEvaluate | [propertyToEvaluate](propertytoevaluate.md) | Define o nome da propriedade e o valor dessa propriedade. |
 
 ## <a name="json-representation"></a>Representação JSON

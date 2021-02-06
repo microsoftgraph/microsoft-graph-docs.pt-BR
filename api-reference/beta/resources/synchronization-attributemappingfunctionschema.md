@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso attributeMappingFunctionSchema
-description: Descreve uma função que pode ser usada em um mapeamento de atributo para transformar valores durante a sincronização.
+title: Tipo de recurso attributeMappingFunctionSchema
+description: Descreve uma função que pode ser usada em um mapeamento de atributos para transformar valores durante a sincronização.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0b655d9cfac5835f6887c54c5a6bcbf79887d586
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: a62d2d635504208fc8266e98add66a8503e3e4d2
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078070"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128740"
 ---
-# <a name="attributemappingfunctionschema-resource-type"></a>tipo de recurso attributeMappingFunctionSchema
+# <a name="attributemappingfunctionschema-resource-type"></a>Tipo de recurso attributeMappingFunctionSchema
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve uma função que pode ser usada em um [mapeamento de atributo](synchronization-attributemapping.md) para transformar valores durante a sincronização.
+Descreve uma função que pode ser usada em um mapeamento [de atributos para](synchronization-attributemapping.md) transformar valores durante a sincronização.
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[List](../api/synchronization-synchronizationschema-functions.md) | coleção [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)|Listar funções de mapeamento de atributos com suporte.|
+|[List](../api/synchronization-synchronizationschema-functions.md) | [Coleção attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)|Listar funções de mapeamento de atributos com suporte.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                   | Tipo                      | Descrição    |
 |:---------------------------|:-------------------------|:---------------|
-|name                        |Cadeia de caracteres                    |Nome do operador. |
-|parameters                  |coleção [attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)  |Conjunto de parâmetros de função.|
+|nome                        |String                    |Nome do operador. |
+|parameters                  |[Coleção attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)  |Coleção de parâmetros de função.|
 
 ## <a name="json-representation"></a>Representação JSON
 

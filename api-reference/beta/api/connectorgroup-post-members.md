@@ -1,16 +1,16 @@
 ---
 title: Adicionar conector a connectorGroup
-description: Use esta API para adicionar um conector a um conector.
+description: Use essa API para adicionar um conector a um connectorGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7a64d86563456f0d5fb9152715d88657a11d6016
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 94b4f17dce85108d853cb0d3c21a4f9fc7bf573d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957300"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129804"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Adicionar conector a connectorGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar um [conector](../resources/connector.md) a um [conector](../resources/connectorgroup.md).
+Adicione um [conector](../resources/connector.md) a um [connectorGroup](../resources/connectorgroup.md).
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -41,11 +41,11 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um link para um objeto [Connector](../resources/connector.md) .
+No corpo da solicitação, fornece uma representação JSON de um link para um [objeto do](../resources/connector.md) conector.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [Connector](../resources/connector.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `201 Created` objeto [de](../resources/connector.md) conector no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -107,5 +107,6 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
 
 

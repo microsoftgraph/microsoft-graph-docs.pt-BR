@@ -1,16 +1,16 @@
 ---
 title: Criar publishedResource
-description: Criar um novo objeto **publishedResource** .
+description: Criar um novo **objeto publishedResource.**
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5385959f1018d53614b2e5aee42d9293cf9108be
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2b87c40556cb7612e6c354ddb8e5815fb4d08760
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973343"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130386"
 ---
 # <a name="create-publishedresource"></a>Criar publishedResource
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [publishedResource](../resources/publishedresource.md) .
+Criar um novo [objeto publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,18 +46,18 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [publishedResource](../resources/publishedresource.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto publishedResource.](../resources/publishedresource.md)
 
-Forneça os valores para as propriedades a seguir.
+Fornece os valores para as propriedades a seguir.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome para exibição do publishedResource.|
+|displayName|String|Nome de exibição do publishedResource.|
 |resourceName|Cadeia de caracteres|Nome do publishedResource.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `201 Created` código de resposta e um objeto [publishedResource](../resources/publishedresource.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto publishedResource](../resources/publishedresource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -131,5 +131,6 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

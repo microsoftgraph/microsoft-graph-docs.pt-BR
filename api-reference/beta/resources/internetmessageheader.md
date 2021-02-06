@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso internetMessageHeader
-description: 'Um par chave-valor que representa um cabeçalho de mensagem da Internet, conforme definido pelo RFC5322, que fornece '
+description: 'Um par chave-valor que representa um header de mensagem da Internet, conforme definido por RFC5322, que fornece '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 5f11f176eaf7d1817f58ed5f1ba25483965a5258
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 687465656844722a04c94549c4d8e6f90156f4f4
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044225"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130526"
 ---
 # <a name="internetmessageheader-resource-type"></a>Tipo de recurso internetMessageHeader
 

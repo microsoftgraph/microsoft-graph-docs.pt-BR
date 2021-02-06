@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso termsExpiration
+title: Tipo de recurso termsExpiration
 description: Fornece configurações adicionais ao definir a expiração agendada do contrato.
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
 doc_type: resourcePageType
-ms.openlocfilehash: 5acacae700bfddcfe68431e03b2a5b03e00fed8a
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 3f31489a80c87dd17a31500818c0c650c57c8a7c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777705"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128502"
 ---
-# <a name="termsexpiration-resource-type"></a>tipo de recurso termsExpiration
+# <a name="termsexpiration-resource-type"></a>Tipo de recurso termsExpiration
 
 Namespace: microsoft.graph
 
@@ -24,12 +24,12 @@ Fornece configurações adicionais ao definir a expiração agendada do contrato
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| startDateTime|DateTimeOffset | O DateTime quando o contrato é definido como expire para todos os usuários. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
-| proje| Duração | Representa a frequência na qual os termos expiram, após sua primeira expiração, conforme definido em **StartDateTime**. O valor é representado no formato ISO 8601 para durações. Por exemplo, `PT1M` representa um período de tempo de 1 mês.|
+| startDateTime|DateTimeOffset | DateTime quando o contrato está definido para expirar para todos os usuários. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
+| frequency| Duration | Representa a frequência na qual os termos expiram, após sua primeira expiração, conforme definido em **startDateTime**. O valor é representado no formato ISO 8601 por durações. Por exemplo, `PT1M` representa um período de tempo de 1 mês.|
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON desse recurso.
+A seguir está uma representação JSON desse recurso.
 
 <!-- {
   "blockType": "resource",

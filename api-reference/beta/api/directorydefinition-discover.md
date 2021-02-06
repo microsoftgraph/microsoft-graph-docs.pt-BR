@@ -1,18 +1,18 @@
 ---
-title: 'directoryDefinition: descobrir'
+title: 'directoryDefinition: discover'
 description: 'Descubra a definição de esquema mais recente para provisionamento para um aplicativo. '
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e5699bb3586ca737809aa43c7227324eb922273c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8b277d35e1cc83d5a52457cb07ddfe7129eb4cc8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963155"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130939"
 ---
-# <a name="directorydefinition-discover"></a>directoryDefinition: descobrir
+# <a name="directorydefinition-discover"></a>directoryDefinition: discover
 
 Namespace: microsoft.graph
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará uma `200 OK` resposta com um objeto [directoryDefinition](../resources/synchronization-directorydefinition.md) .
+Se bem-sucedido, este método retorna `200 OK` uma resposta com um objeto [directoryDefinition](../resources/synchronization-directorydefinition.md) .
 
 ## <a name="example"></a>Exemplo
 

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso conditionalAccessUsers
+title: Tipo de recurso conditionalAccessUsers
 description: Representa usuários, grupos e funções incluídos e excluídos do escopo da política.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d1294551fd568b9f41072d3707d64a88d4b04edc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6214c3daacf580aaffa01a93be2b2c785c03f4fd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994229"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128579"
 ---
-# <a name="conditionalaccessusers-resource-type"></a>tipo de recurso conditionalAccessUsers
+# <a name="conditionalaccessusers-resource-type"></a>Tipo de recurso conditionalAccessUsers
 
 Namespace: microsoft.graph
 
@@ -24,11 +24,11 @@ Representa usuários, grupos e funções incluídos e excluídos do escopo da po
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeUsers | Coleção de cadeias de caracteres | IDs de usuário em escopo de política, a menos que explicitamente excluído ou ou `None` `All` `GuestsOrExternalUsers` . |
+| includeUsers | Coleção de cadeias de caracteres | IDs de usuário no escopo da política, a menos que explicitamente excluídos, `None` ou `All` ou `GuestsOrExternalUsers` . |
 | excludeUsers | Coleção de cadeias de caracteres | IDs de usuário excluídas do escopo da política e/ou `GuestsOrExternalUsers` . |
-| includeGroups | Coleção de cadeias de caracteres | IDs de grupo em escopo de política, a menos que explicitamente excluído ou `All` . |
+| includeGroups | Coleção de cadeias de caracteres | IDs de grupo no escopo da política, a menos que explicitamente excluídas, ou `All` . |
 | excludeGroups | Coleção de cadeias de caracteres | IDs de grupo excluídas do escopo da política. |
-| includeRoles | Coleção de cadeias de caracteres | IDs de função em escopo de política, a menos que explicitamente excluído ou `All` . |
+| includeRoles | Coleção de cadeias de caracteres | IDs de função no escopo da política, a menos que explicitamente excluído, ou `All` . |
 | excludeRoles | Coleção de cadeias de caracteres | IDs de função excluídas do escopo da política. |
 
 ## <a name="relationships"></a>Relações

@@ -1,16 +1,16 @@
 ---
 title: Excluir publishedResource
-description: Excluir um objeto [publishedResource](../resources/publishedresource.md) .
+description: '[Exclua um objeto publishedResource.](../resources/publishedresource.md)'
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9792f8a66d4e4d5e65da8dcca74d0fb2dbff577f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 112439c71f165c31ab88282ccc2a1a135f2ec19b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973408"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130393"
 ---
 # <a name="delete-publishedresource"></a>Excluir publishedResource
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [publishedResource](../resources/publishedresource.md) .
+[Exclua um objeto publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -108,5 +108,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

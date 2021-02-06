@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso genericError
-description: Um erro de uso geral.
+title: Tipo de recurso genericError
+description: Um erro de finalidade geral.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: ee4f6a09f3baec827d5ec2627edb7de89a878945
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 611671cc6e35fa9376bff2761719c58f0255f19d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973936"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129447"
 ---
-# <a name="genericerror-resource-type"></a>tipo de recurso genericError
+# <a name="genericerror-resource-type"></a>Tipo de recurso genericError
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um erro de uso geral.
+Um erro de finalidade geral.
 
 ## <a name="properties"></a>Propriedades
 

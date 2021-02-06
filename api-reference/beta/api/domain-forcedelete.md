@@ -1,18 +1,18 @@
 ---
-title: 'domínio: forceDelete'
+title: 'domain: forceDelete'
 description: Exclui um domínio usando uma operação assíncrona.
 author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f440d9872df9ab61a86e28ea27d14aff112c1538
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fc074f3160ef8260f04fe2795a58a0ddfd1c54d7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956045"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131261"
 ---
-# <a name="domain-forcedelete"></a>domínio: forceDelete
+# <a name="domain-forcedelete"></a>domain: forceDelete
 
 Namespace: microsoft.graph
 
@@ -20,19 +20,21 @@ Namespace: microsoft.graph
 
 Exclui um domínio usando uma operação assíncrona.
 
+Antes de chamar [forceDelete,](domain-forcedelete.md)você deve atualizar ou remover quaisquer referências ao **Exchange** como o serviço de provisionamento.
+
 As ações a seguir são executadas como parte desta operação:
 
-* Renomeia o UPN, o EmailAddress e o ProxyAddress de usuários com referências para o domínio excluído.
+* Renomeia o UPN, EmailAddress e ProxyAddress de usuários com referências ao domínio excluído.
 
-* Renomeia o EmailAddress de grupos com referências para o domínio excluído.
+* Renomeia o EmailAddress de grupos com referências ao domínio excluído.
 
-* Renomeia a Identifieruris agora de aplicativos com referências para o domínio excluído.
+* Renomeia os identifierUris de aplicativos com referências ao domínio excluído.
 
-* Se o número de objetos a serem renomeados for maior que 1000, um erro será retornado.
+* Se o número de objetos a serem renomeados for maior que 1.000, um erro será retornado.
 
-* Se um dos aplicativos a ser renomeado for um aplicativo de vários locatários, um erro será retornado.
+* Se um dos aplicativos a serem renomeados for um aplicativo de vários locatários, um erro será retornado.
 
-Após a conclusão da exclusão do domínio, as operações de API para o domínio excluído retornarão um código de resposta HTTP 404. Para verificar a exclusão de um domínio, você pode executar um [domínio Get](domain-get.md). Se o domínio tiver sido excluído com êxito, um código de resposta HTTP 404 será retornado na resposta.
+Após a conclusão da exclusão do domínio, as operações de API para o domínio excluído retornarão um código de resposta HTTP 404. Para verificar a exclusão de um domínio, você pode executar um [domínio get.](domain-get.md) Se o domínio foi excluído com êxito, um código de resposta HTTP 404 será retornado na resposta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -67,14 +69,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Booliano| Opção para desabilitar contas de usuário renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não terá permissão para entrar.<br>*True* (padrão): as contas de usuário renomeadas como parte desta operação estão desabilitadas.<br>*False* -as contas de usuário renomeadas como parte dessa operação não estão desabilitadas. |
+|disableUserAccounts|Boolean| Opção para desabilitar contas de usuário renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não poderá entrar.<br>*Verdadeiro* (padrão) - As contas de usuário renomeadas como parte dessa operação estão desabilitadas.<br>*False* - As contas de usuário renomeadas como parte dessa operação não são desabilitadas. |
 
 ## <a name="response"></a>Resposta
 
 Se bem sucedido, este método retorna um código de resposta `200 OK`. 
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -109,7 +111,7 @@ Content-length: 33
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",

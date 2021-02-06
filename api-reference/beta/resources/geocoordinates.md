@@ -1,37 +1,37 @@
 ---
 author: JeremyKelley
-description: O recurso GeoCoordinates fornece coordenadas geográficas e a elevação de um local com base nos metadados contidos no arquivo.
+description: O recurso geoCoordinates fornece coordenadas geográficas e elevação de um local com base nos metadados contidos no arquivo.
 ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: d091858c4856ad133b72e757e837fb49b3c0594f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: identity-and-access-reports
+ms.openlocfilehash: e3b0ac4f616afe648b5c30dc9d15978036a7ab80
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033836"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129419"
 ---
-# <a name="geocoordinates-resource-type"></a>tipo de recurso GeoCoordinates
+# <a name="geocoordinates-resource-type"></a>Tipo de recurso geoCoordinates
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fornece coordenadas geográficas e a elevação de um local com base nos metadados contidos no arquivo.
-Se um [**driveItem**](driveitem.md) tiver uma faceta de **local** não nula, o item representará um arquivo com um local conhecido associada com ele.
+Fornece coordenadas geográficas e elevação de um local com base nos metadados contidos no arquivo.
+Se um [**driveItem**](driveitem.md) tiver  uma faceta de local não nulo, o item representará um arquivo com um local conhecido com ele.
 
 > [!NOTE]
-> Ao atualizar a latitude e a longitude de uma foto, um recurso de [foto](photo.md) (vazio ou ou outro) deve ser fornecido.
+> Ao atualizar a latitude e a longitude de uma foto, um recurso [de](photo.md) foto (vazio ou não) deve ser fornecido.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade  | Tipo   | Descrição
 |:----------|:-------|:--------------------------------------------------------
 | altitude  | Double | Opcional. A altitude (altura), em pés, acima do nível do mar para o item. Somente leitura.
-| latitude  | Double | Opcional. A latitude, em valor decimal, para o item. Gravável no OneDrive Personal.
-| longitude | Double | Opcional. A longitude, em valor decimal, para o item. Gravável no OneDrive Personal.
+| latitude  | Double | Opcional. A latitude, em valor decimal, para o item. Writable no OneDrive Personal.
+| longitude | Double | Opcional. A longitude, em valor decimal, para o item. Writable no OneDrive Personal.
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,16 +1,16 @@
 ---
 title: Adicionar anexo
 description: 'Use esta API para adicionar um anexo a uma mensagem. '
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f8ea0fe40853a9e2caf189d04539c3be4627c578
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 61776660883cdcf9ea8d6122e2e84c5b63505935
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967453"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131170"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -28,11 +28,11 @@ Um anexo pode ser de um dos seguintes tipos:
 
 Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md). 
 
-Você pode adicionar um anexo a uma [mensagem](../resources/message.md) existente postando na coleção Attachments ou em uma nova mensagem que está sendo [rascunho](../api/user-post-messages.md), ou [criada e enviada em tempo real](../api/user-sendmail.md).
+Você pode adicionar um anexo [](../resources/message.md) a uma mensagem existente postando em sua coleção de anexos ou em uma nova mensagem que está sendo redigida [ou](../api/user-post-messages.md)criada e enviada em [tempo real.](../api/user-sendmail.md)
 
->**Observação** : esta operação limita o tamanho do anexo que você pode adicionar a menos de 3 MB.
+>**Observação:** essa operação limita o tamanho do anexo que você pode adicionar a menos de 3 MB.
 >
-> No entanto, se estiver anexando a uma mensagem um arquivo entre 3 MB e 150MB, você pode [criar uma sessão de carregamento](attachment-createuploadsession.md) e carregar de forma iterativa os intervalos do arquivo para anexá-lo. Consulte [anexar arquivos grandes às mensagens do Outlook](/graph/outlook-large-attachments) para obter um exemplo.
+> No entanto, se você estiver anexando a uma mensagem um arquivo entre 3 MB e 150 MB, poderá criar uma sessão de [upload](attachment-createuploadsession.md) e carregar iterativamente intervalos do arquivo para anexá-lo. Veja [anexar arquivos grandes a mensagens do Outlook](/graph/outlook-large-attachments) para ver um exemplo.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -204,7 +204,7 @@ Content-length: 162
 ## <a name="example-reference-attachment"></a>Exemplo (anexo de referência)
 
 ##### <a name="request"></a>Solicitação
-Veja um exemplo de uma solicitação que adiciona um anexo de referência a uma mensagem existente.
+Aqui está um exemplo de uma solicitação que adiciona um anexo de referência a uma mensagem existente.
 O anexo aponta para uma pasta no OneDrive.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -248,7 +248,7 @@ Content-length: 319
 
 
 ##### <a name="response"></a>Resposta
-Veja um exemplo de resposta completa.
+Aqui está um exemplo de uma resposta completa.
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_from_message",

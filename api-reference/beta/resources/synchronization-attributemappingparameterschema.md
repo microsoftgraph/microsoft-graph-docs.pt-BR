@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso attributeMappingParameterSchema
-description: Descreve um único parâmetro usado em um attributeMappingFunctionSchema.
+title: Tipo de recurso attributeMappingParameterSchema
+description: Descreve um único parâmetro usado em um atributoMappingFunctionSchema.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 32710c5411f054ad096bdd293a2f7d46e89a6944
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: c8779211382ffcf7284c5ebf4035be6134efd8bf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078071"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128733"
 ---
-# <a name="attributemappingparameterschema-resource-type"></a>tipo de recurso attributeMappingParameterSchema
+# <a name="attributemappingparameterschema-resource-type"></a>Tipo de recurso attributeMappingParameterSchema
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve um único parâmetro usado em um [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md).
+Descreve um único parâmetro usado em um [atributoMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                   | Tipo                      | Descrição    |
 |:---------------------------|:-------------------------|:---------------|
-|allowMultipleOccurrences    |Booliano                   |O parâmetro fornecido pode ser fornecido várias vezes (por exemplo, várias cadeias de caracteres de entrada na `Concatenate(string,string,...)` função). |
-|name                        |Cadeia de caracteres                    |Nome do parâmetro. |
-|obrigatório                    |Booliano                   |`true` Se o parâmetro for necessário; caso contrário `false` . |
-|tipo                        |Cadeia de caracteres                    |Os valores possíveis são: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. O padrão é `String`.|
+|allowMultipleOccurrences    |Boolean                   |O parâmetro fornecido pode ser fornecido várias vezes (por exemplo, várias cadeias de caracteres de entrada na `Concatenate(string,string,...)` função). |
+|nome                        |String                    |Nome do parâmetro. |
+|obrigatório                    |Boolean                   |`true` se o parâmetro for necessário; Caso `false` contrário. |
+|type                        |String                    |Os valores possíveis são: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. O padrão é `String`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

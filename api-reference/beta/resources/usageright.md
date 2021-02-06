@@ -3,14 +3,14 @@ title: Tipo de recurso usageRight
 description: Contém informações sobre um usageRight que um usuário/dispositivo atribuiu
 author: jeeshnair
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: dba7f25d77379d00f48a1df820865b193cc0c084
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: d3d7ad0de7eb6929e54b7d3d692c6e562e9da76d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49943742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130407"
 ---
 # <a name="usageright-resource-type"></a>Tipo de recurso usageRight
 
@@ -24,8 +24,8 @@ Um direito de uso representa uma licença que um usuário ou dispositivo tem par
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar usageRights do usuário](../api/user-list-usagerights.md)|[coleção usageRight](../resources/usageright.md)|Obter a lista de direitos de uso de um usuário.|
-|[Listar usageRights do dispositivo](../api/device-list-usagerights.md)|[coleção usageRight](../resources/usageright.md)|Obter a lista de direitos de uso de um dispositivo.|
+|[Listar usageRights do usuário](../api/user-list-usagerights.md)|Coleção [usageRight](../resources/usageright.md)|Obter a lista de direitos de uso de um usuário.|
+|[Listar usageRights do dispositivo](../api/device-list-usagerights.md)|Coleção [usageRight](../resources/usageright.md)|Obter a lista de direitos de uso de um dispositivo.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -46,7 +46,7 @@ Um direito de uso representa uma licença que um usuário ou dispositivo tem par
 |suspended                | Indica que o direito de uso é suspenso provavelmente devido a violação de pagamento|
 |unknownFutureValue      | Valor do Sentinel para indicar valores futuros. |
 
->**Observação:** Somente os estados ativos e de aviso representam um benefício que pode ser usável. Todos os outros estados devem ser tratados como não resultando em um benefício usável.
+>**Observação:** Somente os estados ativo e de aviso representam um benefício que pode ser usável. Todos os outros estados devem ser tratados como não resultando em um benefício usável.
 
 
 

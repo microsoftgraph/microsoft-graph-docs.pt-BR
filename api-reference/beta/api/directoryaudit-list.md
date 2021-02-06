@@ -1,16 +1,16 @@
 ---
 title: Lista directoryAudits
-description: Descreve o método list do recurso directoryAudit (entidade) da API do Microsoft Graph (versão beta).
+description: Descreve o método de lista do recurso directoryAudit (entidade) da API do Microsoft Graph (versão beta).
 localization_priority: Normal
 author: SarahBar
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 62ba3a563569f9f32bcdadc2ebc614156fcdf7d3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 38e5ec2c48f6f553579b69b12c42821e459cc5b6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963165"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130953"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo o usuário, o aplicativo, o gerenciamento de dispositivos e de grupo, o gerenciamento de identidades privilegiadas, as revisões de acesso, os termos de uso, a proteção de identidade, o gerenciamento de senhas (redefinições de senha do SSPR e do administrador) e o gerenciamento de grupo de autoatendimento.
+Obter a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo usuário, aplicativo, gerenciamento de dispositivos e grupos, PIM (privileged identity management), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (redefinições de senha de administrador e SSPR) e gerenciamento de grupo de autoatend direito.
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [parâmetros de consulta OData](/graph/query_parameters).
+Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, consulte [parâmetros de consulta OData.](/graph/query_parameters)
 
 |Parâmetro     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 |[$top](/graph/query-parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/directoryAudits?$top=1`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.|`/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte pelo parâmetro $filter
+### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte $filter parâmetro
 
 |Atributo        |Operadores com suporte|
 |:----------------|:------|

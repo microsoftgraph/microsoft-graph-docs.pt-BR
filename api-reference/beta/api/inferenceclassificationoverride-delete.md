@@ -1,16 +1,16 @@
 ---
 title: Excluir inferenceClassificationOverride
-description: Excluir uma substituição de caixa de entrada destaques especificada por sua ID.
+description: Exclua uma substituição da Caixa de Entrada Focada especificada por sua ID.
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 117a5ce205f7c615300cbe42f1607af03c9ce2af
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 05d6f669faec8f701948546707d3aa7187af4a20
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130680"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Excluir inferenceClassificationOverride
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir uma substituição de [caixa de entrada destaques](../resources/manage-focused-inbox.md) especificada por sua ID.
+[Exclua uma substituição da Caixa](../resources/manage-focused-inbox.md) de Entrada Focada especificada por sua ID.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

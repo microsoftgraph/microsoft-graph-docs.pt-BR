@@ -1,16 +1,16 @@
 ---
 title: Obter mensagem
 description: Recupere as propriedades e os relacionamentos do objeto message.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: edfa35d4606b9933872762d14ab1bd2f36b34526
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 4292b5146ab426accae7d2f331047eeed287d120
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844750"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131212"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -22,7 +22,7 @@ Recupere as propriedades e os relacionamentos do objeto [message.](../resources/
 
 Por exemplo, você pode obter uma mensagem e expandir [todas](../resources/mention.md) as instâncias de menção na mensagem. Veja um [exemplo](#example-2-get-all-mentions-in-a-specific-message) abaixo.
 
-Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message). Consulte também um [exemplo](#example-5-get-mime-content) abaixo.
+Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message). Veja também um [exemplo](#example-5-get-mime-content) abaixo.
 
 Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
@@ -75,7 +75,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 
 Use o parâmetro `$value` para obter o conteúdo MIME de uma mensagem.
 
-Use o parâmetro de consulta na propriedade de navegação de menções para obter uma mensagem com os detalhes de cada `$expand` menção na mensagem expandida.  [](../resources/mention.md)
+Use o parâmetro de consulta na propriedade de navegação de menções para obter uma mensagem com os detalhes de cada `$expand` [menção](../resources/mention.md) na mensagem  expandida.
 
 
 
@@ -288,7 +288,7 @@ Content-length: 2248
 }
 ```
 
-### <a name="example-3-get-message-body-in-text-format"></a>Exemplo 3: Obter o corpo da mensagem no formato de texto
+### <a name="example-3-get-message-body-in-text-format"></a>Exemplo 3: Obter o corpo da mensagem em formato de texto
 #### <a name="request"></a>Solicitação
 
 O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e o **uniqueBody** da mensagem especificada no formato do texto.

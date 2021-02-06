@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso mailTipsError
+title: Tipo de recurso mailTipsError
 description: Um erro que ocorre durante uma ação.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5d638040f9b78bb1cca8655c1f5dfda924158094
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c456073ab1a32eb6bc236cb7047641ed967cdcf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021407"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129832"
 ---
-# <a name="mailtipserror-resource-type"></a>tipo de recurso mailTipsError
+# <a name="mailtipserror-resource-type"></a>Tipo de recurso mailTipsError
 
 Namespace: microsoft.graph
 

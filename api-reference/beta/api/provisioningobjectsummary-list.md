@@ -3,14 +3,14 @@ title: Listar provisioningObjectSummary
 description: Obter todos os eventos de provisionamento que ocorreram em seu locatário.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 458cdfa3c3575272c11cf879c8db10f8b514e34b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 035cd43487f83cc23f86b3d8b979af5052c708fc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973462"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130421"
 ---
 # <a name="list-provisioningobjectsummary"></a>Listar provisioningObjectSummary
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AuditLog. Read. All e Directory. Read. All |
+|Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All |
 
@@ -40,39 +40,39 @@ GET /auditLogs/provisioning
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Observe que os filtros são diferenciados entre maiúsculas e minúsculas, exceto o status. 
+Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Observe que todos os filtros são sensíveis a casos, exceto para status. 
 
 |Nome     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Filtra os resultados (linhas). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 |[$top](/graph/query-parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/provisioning?$top=20`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. Você deve passar o filtro superior na consulta para gerar o token. Você não pode especificar o número de resultados a serem ignorados.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. Você deve passar o filtro superior na consulta para gerar o token. Não é possível especificar o número de resultados a serem ignorados.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query_parameters).
 
-### <a name="attributes-supported-by-the-filter-parameter"></a>Atributos com suporte do parâmetro $filter
+### <a name="attributes-supported-by-the-filter-parameter"></a>Atributos suportados pelo parâmetro $filter parâmetro
 
 |Nome do atributo |Operadores com suporte|
 |:----------------|:------|
-|id| EQ, contém|
+|id| eq, contains|
 |activityDateTime| eq|
-|tenantid|EQ, contém|
-|ID|EQ, contém|
-|ChangeId|EQ, contém|
-|cycleid|EQ, contém|
-|ação|EQ, contém|
-|statusInfo/status|EQ, contém|
-|sourceSystem/displayName|EQ, contém|
-|targetSystem/displayName|EQ, contém|
-|sourceIdentity/IdentityType|EQ, contém|
-|targetIdentity/IdentityType|EQ, contém|
-|sourceIdentity/ID|EQ, contém|
-|servicePrincipalName/ID|eq|
-|servicePrincipalName/nome|eq|
-|targetIdentity/ID|EQ, contém|
-|sourceIdentity/displayName|EQ, contém|
-|targetIdentity/displayName|EQ, contém|
-|initiatedBy/displayName|EQ, contém|
+|tenantid|eq, contains|
+|jobid|eq, contains|
+|changeid|eq, contains|
+|cycleid|eq, contains|
+|ação|eq, contains|
+|statusInfo/status|eq, contains|
+|sourceSystem/displayName|eq, contains|
+|targetSystem/displayName|eq, contains|
+|sourceIdentity/identityType|eq, contains|
+|targetIdentity/identityType|eq, contains|
+|sourceIdentity/id|eq, contains|
+|servicePrincipal/id|eq|
+|servicePrincipal/name|eq|
+|targetIdentity/id|eq, contains|
+|sourceIdentity/displayName|eq, contains|
+|targetIdentity/displayName|eq, contains|
+|initiatedBy/displayName|eq, contains|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -86,11 +86,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [provisioningObjectSummary](../resources/provisioningobjectsummary.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos provisioningObjectSummary](../resources/provisioningobjectsummary.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-successful-request"></a>Exemplo 1: solicitação bem-sucedida
+### <a name="example-1-successful-request"></a>Exemplo 1: Solicitação bem-sucedida
 
 ### <a name="request"></a>Solicitação
 
@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta para um evento bem-sucedido.
+A seguir está um exemplo da resposta para um evento bem-sucedido.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
@@ -242,7 +242,7 @@ Content-type: application/json
 }
 
 ```
-### <a name="example-2-error-reponse"></a>Exemplo 2: resposta de erro
+### <a name="example-2-error-reponse"></a>Exemplo 2: Reponse de erro
 
 ### <a name="request"></a>Solicitação
 
@@ -278,7 +278,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta de um evento de provisionamento com falha.
+A seguir está um exemplo da resposta para um evento de provisionamento com falha.
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 

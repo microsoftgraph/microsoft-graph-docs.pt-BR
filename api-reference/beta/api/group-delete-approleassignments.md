@@ -1,16 +1,16 @@
 ---
 title: Excluir um appRoleAssignment de um grupo
-description: Excluir um appRoleAssignment que tenha sido concedido a um grupo.
+description: Exclua um appRoleAssignment que tenha sido concedido a um grupo.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 1cc360f607cd2c5fc82a4d4b48522864a3b516fe
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ea559919312401bec8885f162788b8b01bb0464
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954317"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130792"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-group"></a>Excluir um appRoleAssignment concedido a um grupo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um [appRoleAssignment](../resources/approleassignment.md) que um grupo foi concedido.
+Exclui um [appRoleAssignment](../resources/approleassignment.md) que um grupo recebeu.
 
 ## <a name="permissions"></a>Permissões
 
@@ -39,7 +39,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> Como prática recomendada, recomendamos a exclusão de atribuições de função de aplicativo através da `appRoleAssignedTo` relação da entidade de serviço de _recurso_ , em vez da `appRoleAssignments` relação do usuário, grupo ou entidade de serviço atribuída.
+> Como prática recomendável, recomendamos excluir atribuições de função de aplicativo por meio da relação da entidade de serviço de recurso, em vez da relação do usuário, grupo ou entidade de `appRoleAssignedTo` serviço  `appRoleAssignments` atribuído.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,7 +59,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para excluir uma atribuição de função de aplicativo.
+Aqui está um exemplo da solicitação para excluir uma atribuição de função de aplicativo.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

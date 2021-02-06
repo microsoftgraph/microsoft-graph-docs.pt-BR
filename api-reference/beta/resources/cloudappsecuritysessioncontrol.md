@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso cloudAppSecuritySessionControl
-description: Controle de sessão usado para impor verificações de segurança do aplicativo na nuvem.
+title: Tipo de recurso cloudAppSecuritySessionControl
+description: Controle de sessão usado para impor verificações de segurança de aplicativos na nuvem.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4665fc3456dbd6375ea0ef9651455427e74b732f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ba0b0b2d7c2269358bf6d6cd48d6bf6694fc10ab
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034067"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128833"
 ---
-# <a name="cloudappsecuritysessioncontrol-resource-type"></a>tipo de recurso cloudAppSecuritySessionControl
+# <a name="cloudappsecuritysessioncontrol-resource-type"></a>Tipo de recurso cloudAppSecuritySessionControl
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Controle de sessão usado para impor verificações de segurança do aplicativo na nuvem. Inehrits do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).
+Controle de sessão usado para impor verificações de segurança de aplicativos na nuvem. Inehrits do [Controle de Sessão de Acesso Condicional.](conditionalaccesssessioncontrol.md)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Especifica se o controle de sessão está habilitado. |
-|cloudAppSecurityType|String | Os valores possíveis são: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Saiba mais sobre estes valores aqui: https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
+|isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
+|cloudAppSecurityType|String | Os valores possíveis são: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Saiba mais sobre esses valores aqui: https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
 
 ## <a name="relationships"></a>Relações
 

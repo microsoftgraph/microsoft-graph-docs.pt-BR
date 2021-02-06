@@ -3,14 +3,14 @@ title: 'sincronização: acquireAccessToken'
 description: Adquirir um token de Acesso OAuth para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo
 author: ArvindHarinder1
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bef2b75abb8e985be6d9ef7742a8baeb86fd5e7f
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: da06e05145949a4001600bae87d2322a532544f0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873539"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128243"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 Namespace: microsoft.graph

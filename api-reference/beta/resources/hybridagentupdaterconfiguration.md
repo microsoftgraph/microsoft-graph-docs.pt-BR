@@ -1,39 +1,39 @@
 ---
-title: tipo de recurso hybridAgentUpdaterConfiguration
-description: tipo de recurso hybridAgentUpdaterConfiguration.
+title: Tipo de recurso hybridAgentUpdaterConfiguration
+description: Tipo de recurso hybridAgentUpdaterConfiguration.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: cf948d8404a4887770477b8e4b3e7812bd8516cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39b378397b18337c660e76b815a80c9db398f950
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013584"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128600"
 ---
-# <a name="hybridagentupdaterconfiguration-resource-type"></a>tipo de recurso hybridAgentUpdaterConfiguration
+# <a name="hybridagentupdaterconfiguration-resource-type"></a>Tipo de recurso hybridAgentUpdaterConfiguration
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um administrador de locatários pode configurar para cada onPremisesPublishingProfile a janela de tempo durante a qual os agentes podem receber atualizações ou adiar atualizações para os agentes. O hybridAgentUpdaterConfiguration especificado para um onPremisesPublishingProfile é aplicável a todos os agentes dentro desse onPremisesPublishingProfile.
 
-Por exemplo, para os agentes no onPremisesPublishingProfile do tipo "Provisioning", as etapas podem ser as seguintes:
+Por exemplo, para os agentes em onPremisesPublishingProfile do tipo "provisionamento", as etapas poderiam ser as abaixo.
 
-1) O administrador de locatários pode configurar o para não receber nenhuma atualização para os agentes de provisionamento nos próximos n dias.
-2) O administrador de locatários pode configurar uma janela de atualização (hora de início e de término) durante a qual os agentes podem recive atualizações.
-3) O administrador de locatários pode habilitar o allowUpdateConfigurationOverride que substitui o configutration atualizador de agentes de provisionamento e alows que eles recebam a próxima atualização disponível.
+1) O administrador de locatários pode configurar para não receber atualizações dos agentes de provisionamento nos próximos n dias.
+2) O administrador de locatários pode configurar uma janela de atualização (hora de início e de término) durante a qual os agentes podem recriar atualizações.
+3) O administrador de locatários pode habilitar allowUpdateConfigurationOverride, que substitui a configuração do atualizador para agentes de provisionamento e permite que eles recebam a próxima atualização disponível.
 
-As informações de data/hora especificadas na configuração do atualizador serão convertidas no fuso horário local relatado pelo agente durante a evaluvation.
+As informações de Data/Hora especificadas na configuração do atualizador serão convertidas para o zona de hora local relatada pelo agente durante a confirmação.
 
 A atualização do agente seguirá a lista de prioridades abaixo
 
-1) Se allowUpdateConfigurationOverride for definido como true, a configuração do atualizador definida pelo locatário será ignorada e o agente receberá uma atualização quando a próxima versão do agente estiver disponível (prioridade 1).
-2) Se a atualização de adiamento estiver definida, o agente não será atualizado até a data de término da atualização (prioridade 2).
-3) Se a janela de atualização for definida, o agente só será atualizado durante essa janela de tempo em um dia de 24 horas (prioridade 3).
-4) Se nenhuma configuração válida do Updater for definida pelo locatário, o agente receberá uma atualização quando a próxima versão do agente estiver disponível
+1) Se allowUpdateConfigurationOverride for definido como verdadeiro, a configuração do atualizador definida pelo locatário será ignorada e o agente receberá uma atualização quando a próxima versão do agente estiver disponível (prioridade 1).
+2) Se a atualização de adiamento estiver definida, o agente não será atualizado até a data e a hora da atualização de adiamento (prioridade 2).
+3) Se a janela de atualização estiver definida, o agente será atualizado somente durante essa janela de tempo em um dia de 24 horas (prioridade 3).
+4) Se nenhuma configuração do atualizador válida for definida pelo locatário, o agente receberá uma atualização quando a próxima versão do agente estiver disponível
 
 ## <a name="properties"></a>Propriedades
 

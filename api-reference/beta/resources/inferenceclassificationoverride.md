@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso inferenceClassificationOverride
-description: Representa a substituição de um usuário sobre como as mensagens de entrada de um remetente específico devem sempre ser classificadas como
+description: Representa a substituição de um usuário sobre como as mensagens de entrada de um remetente específico sempre devem ser classificadas como
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: b289d369c151e2f735fb992c5bd9a3347da67d17
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 63149690230f1c83ba62f60e963a64a7300d22dc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130888"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Tipo de recurso inferenceClassificationOverride
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a substituição de um usuário sobre como as mensagens de entrada de um remetente específico devem sempre ser classificadas como em uma [caixa de entrada destaques](manage-focused-inbox.md).
+Representa a substituição de um usuário sobre como as mensagens de entrada de um remetente específico sempre devem ser classificadas como em uma Caixa [de Entrada Focada.](manage-focused-inbox.md)
 
 
 ## <a name="methods"></a>Métodos
@@ -26,7 +26,7 @@ Representa a substituição de um usuário sobre como as mensagens de entrada de
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Altere o campo **ClassifyAs** de uma substituição conforme especificado. |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | Nenhum |Exclua uma substituição especificada de acordo com sua ID. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | Nenhuma |Exclua uma substituição especificada de acordo com sua ID. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

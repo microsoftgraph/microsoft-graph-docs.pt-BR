@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso attachmentItem
-description: Representa os atributos de um item a ser anexado.
+title: Tipo de recurso attachmentItem
+description: Representa atributos de um item a ser anexado.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 14213afcaf555b21816a3b3ccf2481c1555c4b90
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a469ff035b63c16b422a23d4ffad91dbc361157f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040172"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130287"
 ---
-# <a name="attachmentitem-resource-type"></a>tipo de recurso attachmentItem
+# <a name="attachmentitem-resource-type"></a>Tipo de recurso attachmentItem
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os atributos de um item a ser anexado.
+Representa atributos de um item a ser anexado.
 
 ## <a name="properties"></a>Propriedades
 
@@ -27,7 +27,7 @@ Representa os atributos de um item a ser anexado.
 |attachmentType|String| O tipo de anexo. Os valores possíveis são: `file`, `item`, `reference`. Obrigatório.|
 |contentType|String|A natureza dos dados no anexo. Opcional.|
 |isInline|Booliano|`true` se o anexo for embutido; caso contrário, `false`. Opcional.|
-|nome|Cadeia de caracteres|O nome de exibição do anexo. Pode ser uma cadeia de caracteres descritiva e não precisa ser o nome real do arquivo. Obrigatório.|
+|nome|Cadeia de caracteres|O nome de exibição do anexo. Pode ser uma cadeia de caracteres descritiva e não precisa ser o nome de arquivo real. Obrigatório.|
 |size|Int64|O comprimento do anexo em bytes. Obrigatório.|
 
 ## <a name="json-representation"></a>Representação JSON
