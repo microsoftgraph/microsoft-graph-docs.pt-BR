@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso ObjectDefinition
+title: Tipo de recurso objectDefinition
 description: Descreve um objeto e seus atributos.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0048d11a8241e8a81bf223f337493e37aebaceda
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: bb1b52f4c3bd8f0f45144d43abfbf57be642ab46
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016013"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135629"
 ---
-# <a name="objectdefinition-resource-type"></a>tipo de recurso ObjectDefinition
+# <a name="objectdefinition-resource-type"></a>Tipo de recurso objectDefinition
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve um objeto e seus atributos. As definições de objeto fazem parte do [directoryDefinition](synchronization-directorydefinition.md), que é atualizado como parte do [synchronizationSchema](synchronization-synchronizationschema.md).
+Descreve um objeto e seus atributos. As definições de objeto fazem parte [de directoryDefinition](synchronization-directorydefinition.md), que é atualizado como parte de [synchronizationSchema](synchronization-synchronizationschema.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|attributes     |coleção [attributeDefinition](synchronization-attributedefinition.md)    | Define os atributos do objeto. |
-|los       |coleção [metadataEntry](synchronization-metadataentry.md)   |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
-|nome           |String     |Nome do objeto. Deve ser exclusivo dentro de uma definição de diretório. Não anulável.|
+|attributes     |[Coleção attributeDefinition](synchronization-attributedefinition.md)    | Define atributos do objeto. |
+|metadados       |[Coleção metadataEntry](synchronization-metadataentry.md)   |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
+|nome           |String     |Nome do objeto. Deve ser exclusivo em uma definição de diretório. Não anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -48,7 +48,7 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
-## <a name="json-example"></a>Exemplo de JSON
+## <a name="json-example"></a>Exemplo JSON
 
 <!-- {
   "blockType": "resource",

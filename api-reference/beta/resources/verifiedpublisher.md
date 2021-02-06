@@ -1,16 +1,16 @@
 ---
-title: tipo de recurso verifiedPublisher
-description: Representa o fornecedor verificado do aplicativo.
+title: Tipo de recurso verifiedPublisher
+description: Representa o editor verificado do aplicativo.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: jesakowi
-ms.openlocfilehash: 0d704b42c83a853d094406c0ba62010da30ce142
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: 5acc66bd72c65b25d8301c4870fa5ff0f98a0d73
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471545"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135622"
 ---
 # <a name="verifiedpublisher-resource-type"></a>tipo de recurso verifiedPublisher
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um fornecedor verificado de um [aplicativo](application.md). Para obter mais informações, consulte [Publisher Verification](/azure/active-directory/develop/publisher-verification-overview). Os editores verificados são definidos usando o [setVerifiedPublisher](../api/application-setverifiedpublisher.md) e só podem ser removidos usando o [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md).
+Representa um editor verificado de um [aplicativo](application.md). Para obter mais informações, consulte Verificação [do Publisher.](/azure/active-directory/develop/publisher-verification-overview) Os editores verificados são definidos usando [setVerifiedPublisher](../api/application-setverifiedpublisher.md) e só podem ser removidos usando [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |displayName|String|O nome do editor verificado da conta do Microsoft Partner Network (MPN) do editor de aplicativos.|
-|verifiedPublisherId|String| A ID do editor verificado da conta do centro de parceria do fornecedor de aplicativos. |
-|addedDateTime|DateTimeOffSet| O carimbo de data/hora da primeira adição ou atualização mais recente do editor verificado. |
+|verifiedPublisherId|String| A ID do editor verificado da conta do Partner Center do editor de aplicativos. |
+|addedDateTime|DateTimeOffSet| O timestamp quando o editor verificado foi adicionado pela primeira vez ou atualizado mais recentemente. |
 
 
 ## <a name="json-representation"></a>Representação JSON

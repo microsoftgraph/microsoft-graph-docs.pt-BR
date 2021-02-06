@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso provisioningSystemDetails
-description: Representa o sistema do qual um usuário foi provisionado ou de.
+title: Tipo de recurso provisioningSystemDetails
+description: Representa o sistema de onde um usuário foi provisionado.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 6880214614047000fcc5a793faf4be3e5a88a5e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5400088c1f239bd73e093679bbc13b8034800f28
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026443"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135335"
 ---
-# <a name="provisioningsystemdetails-resource-type"></a>tipo de recurso provisioningSystemDetails
+# <a name="provisioningsystemdetails-resource-type"></a>Tipo de recurso provisioningSystemDetails
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o sistema do qual um usuário foi provisionado ou de. Por exemplo, ao provisionar um usuário do Azure Active Directory (Azure AD) para o ServiceNow, o sistema de origem é o Azure AD e o sistema de destino é o ServiceNow.
+Representa o sistema de onde um usuário foi provisionado. Por exemplo, ao provisionar um usuário do Azure Active Directory (Azure AD) para o ServiceNow, o sistema de origem é o Azure AD e o sistema de destino é o ServiceNow.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |detalhes|[detailsInfo](detailsinfo.md)|Detalhes do sistema.|
-|displayName|String|Nome do sistema no qual um usuário foi provisionado ou de.|
-|id|String|Identificador do sistema no qual um usuário foi provisionado ou de.|
+|displayName|String|Nome do sistema de onde um usuário foi provisionado.|
+|id|String|Identificador do sistema de onde um usuário foi provisionado.|
 
 ## <a name="json-representation"></a>Representação JSON
 

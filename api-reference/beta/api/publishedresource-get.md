@@ -1,16 +1,16 @@
 ---
 title: Obter publishedResource
-description: Recupere as propriedades e os relacionamentos de um objeto [publishedResource](../resources/publishedresource.md) .
+description: Recupere as propriedades e os relacionamentos de um [objeto publishedResource.](../resources/publishedresource.md)
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 685bbf85aa5b21bd46c98b6d364dd80a281ec777
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6b0f84de5dfdcde391094e71dbcde451dc4fe3b0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973392"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135531"
 ---
 # <a name="get-publishedresource"></a>Obter publishedResource
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos do objeto [publishedResource](../resources/publishedresource.md) .
+Recupere as propriedades e os relacionamentos do [objeto publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [publishedResource](../resources/publishedresource.md) solicitado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e o objeto `200 OK` [publishedResource](../resources/publishedresource.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -129,5 +129,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

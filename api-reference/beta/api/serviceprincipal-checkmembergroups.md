@@ -3,14 +3,14 @@ title: 'servicePrincipal: checkMemberGroups'
 description: Verifique se há associação na lista de grupos especificada. Retorna da lista os grupos dos quais a entidade de serviço tem uma associação direta ou transitiva.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a443719d1792e3abc0540b2ea8b26140a48a5af8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8f78f0796f4aa4fec3aaf9347732ecb463a5c958
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970889"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134831"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
 
@@ -126,5 +126,6 @@ Content-length: 39
   ]
 }
 -->
+
 
 

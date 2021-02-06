@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso conditionalAccessApplications
-description: Representa os aplicativos e as ações do usuário incluídos e excluídos do escopo da política.
+title: Tipo de recurso conditionalAccessApplications
+description: Representa aplicativos e ações do usuário incluídas e excluídas do escopo da política.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ba904fec35830bef6cc5a74daa1c4938bd99d250
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0a787a1c22209b502e4eed68790629e2e6e1b03b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49269907"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137395"
 ---
-# <a name="conditionalaccessapplications-resource-type"></a>tipo de recurso conditionalAccessApplications
+# <a name="conditionalaccessapplications-resource-type"></a>Tipo de recurso conditionalAccessApplications
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os aplicativos e as ações do usuário incluídos no e excluídos da política.
+Representa os aplicativos e as ações do usuário incluídas e excluídas da política.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| includeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativo à qual a política se aplica, a menos que explicitamente excluída (em excludeApplications). Também pode ser definido como `All` . |
-| excludeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativo explicitamente excluídas da política. |
-| includeUserActions | Coleção de cadeias de caracteres | Ações do usuário a serem incluídas. Os valores com suporte são `urn:user:registersecurityinfo` e `urn:user:registerdevice` |
+| includeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativos a que a política se aplica, a menos que explicitamente excluída (em excludeApplications). Também pode ser definido como `All` . |
+| excludeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativo explicitamente excluída da política. |
+| includeUserActions | Coleção de cadeias de caracteres | Ações do usuário a incluir. Os valores com suporte `urn:user:registersecurityinfo` são e `urn:user:registerdevice` |
 
 ## <a name="relationships"></a>Relações
 

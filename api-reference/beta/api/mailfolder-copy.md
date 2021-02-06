@@ -1,16 +1,16 @@
 ---
 title: 'mailFolder: copy'
 description: Copie uma mailFolder e seu conteúdo para outra mailFolder.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5ede2ba849770795fe8332dc93bae0984aece7a2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 879ef908599321d51e1537115fc66f2e3a38c663
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977490"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136784"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -56,7 +56,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e um recurso [mailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e um recurso [mailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

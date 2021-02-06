@@ -1,24 +1,24 @@
 ---
-title: Criar synchronizationtemplate
-description: Criar um novo modelo de sincronização para um determinado aplicativo.
+title: Criar synchronizationTemplate
+description: Crie um novo modelo de sincronização para um determinado aplicativo.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 210c781cda27ad56ed30950b9b4c37f1d3751df9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 054e5dfc672f3336e5c8d633e05c1db82e350fdd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978421"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137239"
 ---
-# <a name="create-synchronizationtemplate"></a>Criar synchronizationtemplate
+# <a name="create-synchronizationtemplate"></a>Criar synchronizationTemplate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo modelo de sincronização para um determinado aplicativo.
+Crie um novo modelo de sincronização para um determinado aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,11 +43,11 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça o objeto [synchronizationtemplate](../resources/synchronization-synchronizationtemplate.md) a ser criado. As `id` `applicationId` Propriedades, e `factoryTag` são obrigatórias. Quando o não `schema` é fornecido com o modelo, o esquema padrão associado à `factoryTag` propriedade será usado.
+No corpo da solicitação, fornece o [objeto synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) a ser criado. The `id` , and properties are `applicationId` `factoryTag` required. Quando não for fornecido nenhum com o modelo, o esquema `schema` padrão associado à propriedade será `factoryTag` usado.
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [synchronizationtemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
 
 ### <a name="example"></a>Exemplo
 

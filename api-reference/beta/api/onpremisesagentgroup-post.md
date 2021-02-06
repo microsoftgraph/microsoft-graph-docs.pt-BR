@@ -1,16 +1,16 @@
 ---
 title: Criar onPremisesAgentGroup
-description: Criar um novo objeto **onPremisesAgentGroup** .
+description: Crie um novo **objeto onPremisesAgentGroup.**
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e8217451851d12916ce8fde2d287fa68b23c48c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2486c83d9e22304f57dbd64d322029fcec201c83
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082207"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136374"
 ---
 # <a name="create-onpremisesagentgroup"></a>Criar onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
+Crie um novo [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,7 +46,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ```json
 {
@@ -56,7 +56,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [onPre
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -84,7 +84,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 ---
 
 
-No corpo da solicitação, forneça uma representação JSON do objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ```json
 {
@@ -125,5 +125,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

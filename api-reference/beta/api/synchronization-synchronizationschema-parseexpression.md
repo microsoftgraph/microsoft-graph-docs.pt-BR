@@ -1,26 +1,26 @@
 ---
-title: 'synchronizationSchema: ParseName'
-description: '(.. objeto/Resources/synchronization_attributemappingsource. MD). '
+title: 'synchronizationSchema: parseExpression'
+description: '(.. Objeto /resources/synchronization_attributemappingsource.md). '
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0ad35d176f2807b2daedc7296a2adc657a285b6f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: c53046032ea4927d5f475cbb05961253fd323939
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969155"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136357"
 ---
-# <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: ParseName
+# <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Analisar uma determinada expressão de cadeia de caracteres em um objeto [attributeMappingSource](../resources/synchronization-attributemappingsource.md) .
+Analisar uma determinada expressão de cadeia de caracteres em [um objeto attributeMappingSource.](../resources/synchronization-attributemappingsource.md)
 
-Para obter mais informações sobre expressões, consulte [Writing Expressions for Attribute Mappings in Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
+Para obter mais informações sobre expressões, consulte [Escrever expressões para mapeamentos de atributos no Azure Active Directory.](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,12 +48,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|expressão               |String               |Expressão a ser analisada.|
-|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Objeto de dados de teste para avaliar a expressão. Opcional.|
-|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Definição do atributo que será mapeado para esta expressão. Opcional.|
+|expressão               |String               |Expressão a ser analisado.|
+|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Teste o objeto de dados para avaliar a expressão. Opcional.|
+|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Definição do atributo que será mapeado para essa expressão. Opcional.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

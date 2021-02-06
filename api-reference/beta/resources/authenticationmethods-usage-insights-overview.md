@@ -1,16 +1,16 @@
 ---
 title: Trabalhando com a API do relatório de uso dos métodos de autenticação
-description: O relatório de uso de métodos de autenticação ajuda uma organização a entender como seus usuários finais estão usando os recursos do Azure Active Directory, como redefinição de senha de autoatendado e autenticação multifato (MFA).
+description: O relatório de uso dos métodos de autenticação ajuda uma organização a entender como seus usuários finais estão usando os recursos do Azure Active Directory, como redefinição de senha de autoatend do serviço e autenticação multifatória (MFA).
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: ba46366db81c2fbd754e7e7b83769af65b078294
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: 54f3b823fc1d1c62df07ac6dd9e61f5ea32a2871
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052486"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135482"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Trabalhando com a API do relatório de uso dos métodos de autenticação
 
@@ -23,7 +23,7 @@ Os relatórios de uso dos métodos de autenticação ajudam a entender como os u
 Esses relatórios fornecem informações como:
 
 - Quantos usuários estão registrados para cada método de autenticação
-- Quantos usuários estão registrados para recursos como Autenticação Multifatória (MFA), Self-Service Redefinição de Senha (SSPR) e autenticação sem senha.
+- Quantos usuários estão registrados para recursos como a Autenticação Multifatória (MFA), Self-Service redefinição de senha (SSPR) e autenticação sem senha.
 - As taxas de falha de cada método de autenticação 
 
 ## <a name="permissions"></a>Permissões
@@ -41,7 +41,7 @@ Para acessar a API, [uma das seguintes funções](/azure/active-directory/users-
 * Leitor de segurança
 * Administrador de segurança
 * Leitor global
-* Administração global
+* Administrador global
 
 ## <a name="licenses"></a>Licenças
 
@@ -51,7 +51,7 @@ Uma licença P1 ou P2 do Azure AD Premium é necessária para acessar o uso e as
 
 A tabela a seguir lista algumas solicitações comuns que você pode usar com essa API.
 
-| Operação | Experimente o Explorador do Graph | Descrição |
+| Operation | Experimente o Explorador do Graph | Descrição |
 | --------- | --- | ----------- |
 | [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Obter o número de usuários registrados para redefinição de senha de autoatendado e MFA. |
 | [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Obter o número de usuários que usam a redefinição de senha de autoatendado. |

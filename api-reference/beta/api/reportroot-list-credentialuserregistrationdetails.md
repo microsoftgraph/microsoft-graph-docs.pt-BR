@@ -3,14 +3,14 @@ title: Listar credentialUserRegistrationDetails
 description: Obter uma lista de objetos credentialUserRegistrationDetails para um determinado locatário.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d37e7f568424854ddb3dd9f96ea14f5be7a61999
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: bf6e99722c44ff0054869056be09314d6befac59
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523861"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136665"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>Listar credentialUserRegistrationDetails
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de objetos [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) para um determinado locatário.
+Obter uma lista de [objetos credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) para um determinado locatário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,17 +40,17 @@ GET /reports/credentialUserRegistrationDetails
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Essa função suporta o parâmetro de consulta OData opcional **$Filter**. Você pode aplicar **$Filter** em uma ou mais das seguintes propriedades do recurso [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) .
+Esta função dá suporte ao parâmetro opcional de consulta OData **$filter**. Você pode aplicar **$filter** em uma ou mais das seguintes propriedades do [recurso credentialUserRegistrationDetails.](../resources/credentialuserregistrationdetails.md)
 
 | Propriedades | Descrição e exemplo |
 | --------- | ----------------------- |
-| userDisplayName | Filtrar por nome de usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro suportados: `eq` , e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
-| userPrincipalName | Filtrar por nome principal do usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Operadores de filtro suportados: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
-| authMethods | Filtrar pelos métodos de autenticação usados durante o registro. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Operadores de filtro suportados: `eq` . |
-| IsRegistered | Filtro para usuários que registraram a redefinição de senha de autoatendimento (SSPR). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Operadores de filtro suportados: `eq` . |
-| isEnabled | Filtro para usuários que foram habilitados para o SSPR. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Operadores filtter com suporte: `eq` . |
-| iscapable | Filtro para usuários que estão prontos para executar redefinição de senha ou a autenticação multifator (MFA). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Operadores de filtro suportados: `eq` |
-| isMfaRegistered | Filtro para usuários registrados para MFA. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Operadores de filtro suportados: `eq` . |
+| userDisplayName | Filtrar por nome de usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| userPrincipalName | Filtrar pelo nome principal do usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| authMethods | Filtrar pelos métodos de autenticação usados durante o registro. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Operadores de filtro com suporte: `eq` . |
+| isRegistered | Filtro para usuários que se registraram para redefinição de senha de autoatendado (SSPR). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Operadores de filtro com suporte: `eq` . |
+| isEnabled | Filtro para usuários que foram habilitados para SSPR. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Operadores de filtter com suporte: `eq` . |
+| isCapable | Filtro para usuários que estão prontos para executar a redefinição de senha ou autenticação multifatória (MFA). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Operadores de filtro com suporte: `eq` |
+| isMfaRegistered | Filtro para usuários que estão registrados para MFA. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Operadores de filtro com suporte: `eq` . |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -65,7 +65,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

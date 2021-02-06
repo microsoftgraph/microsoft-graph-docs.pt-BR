@@ -1,16 +1,16 @@
 ---
 title: Atualizar onPremisesAgentGroup
-description: Atualiza as propriedades de um objeto **onPremisesAgentGroup** .
+description: Atualizar as propriedades de um **objeto onPremisesAgentGroup.**
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 08a2816e21c69ccb1b8104faef829b0d806d8cc0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1b04124a5e0cb39d59a95f2278b8ea24f9dc2366
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976897"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136371"
 ---
 # <a name="update-onpremisesagentgroup"></a>Atualizar onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
+Atualizar as propriedades de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,11 +48,11 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/agentGroups
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-Veja a seguir a lista de propriedades que você pode atualizar.
+A seguir está a lista de propriedades que você pode atualizar.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String| Representa o nome do grupo de agentes local.|
+|displayName|String| Representa o nome do grupo de agentes locais.|
 
 ## <a name="response"></a>Resposta
 
@@ -122,5 +122,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

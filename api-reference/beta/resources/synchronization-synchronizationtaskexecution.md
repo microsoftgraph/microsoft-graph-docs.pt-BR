@@ -1,42 +1,42 @@
 ---
-title: tipo de recurso synchronizationTaskExecution
-description: Resume os resultados da execução do trabalho de sincronização.
+title: Tipo de recurso synchronizationTaskExecution
+description: Resume os resultados do trabalho de sincronização executado.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5d777a575290699c2a936902614aa8ef0e8b042d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: ac42a91ec35c1d81d81efa52f4306bbd1cfb2f55
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094908"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135034"
 ---
-# <a name="synchronizationtaskexecution-resource-type"></a>tipo de recurso synchronizationTaskExecution
+# <a name="synchronizationtaskexecution-resource-type"></a>Tipo de recurso synchronizationTaskExecution
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resume os resultados da execução do trabalho de sincronização.
+Resume os resultados do trabalho de sincronização executado.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|activityIdentifier           |Cadeia de caracteres |Identificador do trabalho executado.|
+|activityIdentifier           |String |Identificador do trabalho executado.|
 |countEntitled                |Int64  |Contagem de entradas processadas que foram atribuídas para este aplicativo.|
 |countEntitledForProvisioning |Int64  |Contagem de entradas processadas que foram atribuídas para provisionamento.|
-|countEscrowed                |Int64  |Contagem de entradas que foram caução (erros).|
-|countEscrowedRaw             |Int64  |Contagem de entradas que foram caução, incluindo caução geradas pelo sistema.|
+|countEscrowed                |Int64  |Contagem de entradas que foram escrotadas (erros).|
+|countEscrowedRaw             |Int64  |Contagem de entradas que foram escrotadas, incluindo registros gerados pelo sistema.|
 |countExported                |Int64  |Contagem de entradas exportadas.|
 |countExports                 |Int64  |Contagem de entradas que devem ser exportadas.|
 |countImported                |Int64  |Contagem de entradas importadas.|
 |countImportedDeltas          |Int64  |Contagem de alterações delta importadas.|
-|countImportedReferenceDeltas |Int64  |Contagem de alterações delta importadas referentes a alterações de referência.|
-|erro                        |[synchronizationError](synchronization-synchronizationerror.md)|Se for encontrado um erro, conterá um objeto **synchronizationError** com detalhes.|
-|state                        |Cadeia de caracteres |Código que resume o resultado desta execução. Os valores possíveis são: `Succeeded`, `Failed`, `EntryLevelErrors`.|
-|timecomeçou                    |DateTimeOffset|Hora em que esta execução de trabalho começou. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|timeterminou                    |DateTimeOffset|Hora em que esse trabalho foi executado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|countImportedReferenceDeltas |Int64  |Contagem de alterações delta importadas referentes às alterações de referência.|
+|erro                        |[synchronizationError](synchronization-synchronizationerror.md)|Se um erro foi encontrado, contém um **objeto synchronizationError** com detalhes.|
+|estado                        |String |Código resumindo o resultado dessa sequência. Os valores possíveis são: `Succeeded`, `Failed`, `EntryLevelErrors`.|
+|timeBegan                    |DateTimeOffset|Hora em que a tarefa foi iniciada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|timeEnded                    |DateTimeOffset|Hora em que a tarefa foi encerrada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

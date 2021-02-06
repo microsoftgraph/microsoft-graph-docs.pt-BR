@@ -1,24 +1,24 @@
 ---
-title: 'servicePrincipalName: checkMemberObjects'
-description: Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto de princípio de serviço especificado.
+title: 'servicePrincipal: checkMemberObjects'
+description: Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto de entidade de serviço especificado.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 363ae809f4430d1219e25edb0871d8258fde2efb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0bf3389563f99b69b7e27651f85163e7f820748
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970860"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135916"
 ---
-# <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipalName: checkMemberObjects
+# <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal: checkMemberObjects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto [servicePrincipalName](../resources/serviceprincipal.md) especificado. Este método é transitivo.
+Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto [servicePrincipal](../resources/serviceprincipal.md) especificado. Esse método é transitivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|ids|Coleção de cadeias de caracteres|Uma coleção que contém as IDs de objeto dos grupos, funções de diretório, unidades administrativas ou IDs RoleTemplate de funções de diretório, para verificar a associação. Até 20 objetos podem ser especificados.|
+|ids|Coleção de cadeias de caracteres|Uma coleção que contém as IDs de objeto dos grupos, funções de diretório, unidades administrativas ou IDs de roleTemplate de funções de diretório, para verificar a associação. Até 20 objetos podem ser especificados.|
 
 ## <a name="response"></a>Resposta
 
@@ -138,5 +138,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

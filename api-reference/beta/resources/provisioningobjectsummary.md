@@ -1,50 +1,50 @@
 ---
-title: tipo de recurso provisioningObjectSummary
+title: Tipo de recurso provisioningObjectSummary
 description: Representa uma ação executada pelo serviço de provisionamento do Azure AD e suas propriedades associadas.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 8bf8813b63d1d25d09c8ee9a8ff4bb5099728b77
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e51a3a5e184fae0c5c35e01b5a0b23494f63edc7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993116"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135370"
 ---
-# <a name="provisioningobjectsummary-resource-type"></a>tipo de recurso provisioningObjectSummary
+# <a name="provisioningobjectsummary-resource-type"></a>Tipo de recurso provisioningObjectSummary
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma ação executada pelo serviço de provisionamento do Azure AD e suas propriedades associadas. 
+Representa uma ação executada pelo serviço de Provisionamento do Azure AD e suas propriedades associadas. 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método  | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Obtenha uma lista de todos os eventos de provisionamento que ocorreram em seu locatário. |
+| [Listar provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Obter uma lista de todos os eventos de provisionamento que ocorreram em seu locatário. |
 
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|ação|String|Indica o nome da atividade ou o nome da operação (por exemplo, criar usuário, Adicionar membro ao grupo). Para obter uma lista de atividades registradas, consulte lista de atividades do Azure AD.|
+|ação|String|Indica o nome da atividade ou o nome da operação (por exemplo, Criar usuário, Adicionar membro ao grupo). Para uma lista de atividades registradas, confira a lista de atividades do Azure AD.|
 |activityDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|ChangeId|String|ID exclusiva dessa alteração nesse ciclo.|
-|cycleid|String|ID exclusiva por iteração de trabalho.|
-|durationInMilliseconds|Int32|Indica quanto tempo esta ação de provisionamento levou para ser concluída. Medido em milissegundos.|
+|changeId|String|ID exclusiva dessa alteração neste ciclo.|
+|cycleId|String|ID exclusiva por iteração de trabalho.|
+|durationInMilliseconds|Int32|Indica quanto tempo essa ação de provisionamento levou para terminar. Medido em milissegundos.|
 |id|Cadeia de caracteres| Indica que a ID exclusiva para a atividade. Este é um GUID somente leitura.|
-|initiatedBy|[Iniciador](initiator.md)|Detalhes sobre quem iniciou este provisionamento.|
-|ID|String|A identificação exclusiva de todo o trabalho de provisionamento.|
-|ModifiedProperties|coleção [modifiedproperty](modifiedproperty.md)|Os detalhes de cada propriedade que foi modificada nesta ação de provisionamento neste objeto.|
-|provisioningSteps|coleção [provisioningStep](provisioningstep.md)|Detalhes de cada etapa no provisionamento.|
+|initiatedBy|[Iniciador](initiator.md)|Detalhes de quem iniciou esse provisionamento.|
+|jobId|String|A ID exclusiva para todo o trabalho de provisionamento.|
+|ModifiedProperties|[Coleção modifiedProperty](modifiedproperty.md)|Detalhes de cada propriedade que foi modificada nesta ação de provisionamento neste objeto.|
+|provisioningSteps|[Coleção provisioningStep](provisioningstep.md)|Detalhes de cada etapa no provisionamento.|
 |servicePrincipal|[servicePrincipal](serviceprincipal.md) collection|Representa a entidade de serviço usada para provisionamento.|
 |sourceIdentity|[provisionedIdentity](provisionedidentity.md)|Detalhes do objeto de origem que está sendo provisionado.|
 |sourceSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|Detalhes do sistema de origem do objeto que está sendo provisionado.|
-|statusInfo|[statusBase](statusbase.md)|Detalhes do status de provisionamento.|
+|statusInfo|[statusBase](statusbase.md)|Detalhes do status do provisionamento.|
 |targetIdentity|[provisionedIdentity](provisionedidentity.md)|Detalhes do objeto de destino que está sendo provisionado.|
 |targetSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|Detalhes do sistema de destino do objeto que está sendo provisionado.|
 |tenantId|String|ID exclusiva do locatário do Azure AD.|

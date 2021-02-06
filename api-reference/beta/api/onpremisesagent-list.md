@@ -3,14 +3,14 @@ title: Listar onPremisesAgents
 description: Recupere uma lista de onPremisesAgents.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c9690d9a3616d581e7cac64865f9a1ca45c7d064
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0699b9fddec71f312963375f25feb9d6ab669989
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975646"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136476"
 ---
 # <a name="list-onpremisesagents"></a>Listar onPremisesAgents
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [onPremisesAgent](../resources/onpremisesagent.md) .
+Recupere uma lista de [objetos onPremisesAgent.](../resources/onpremisesagent.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -134,5 +134,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

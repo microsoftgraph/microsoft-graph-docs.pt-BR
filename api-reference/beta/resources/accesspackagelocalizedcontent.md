@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso accessPackageLocalizedContent
-description: Um tipo complexo usado para representar texto em diferentes locais, juntamente com um texto padrão. *
+title: Tipo de recurso accessPackageLocalizedContent
+description: Um tipo complexo usado para representar texto em localidades diferentes, juntamente com um texto padrão.*
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 91ef87428b4171317943e9ecf1ec92e959c7a62b
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 155d0ffd8f7f705c79bd753aa26f659968b87829
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720052"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137351"
 ---
-# <a name="accesspackagelocalizedcontent-resource-type"></a>tipo de recurso accessPackageLocalizedContent
+# <a name="accesspackagelocalizedcontent-resource-type"></a>Tipo de recurso accessPackageLocalizedContent
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um tipo complexo usado para representar um texto em vários formulários do localalized. Ele inclui um texto padrão, que é usado em qualquer caso em que a localização solicitada não está disponível.
+Um tipo complexo usado para representar um texto em vários formulários localizados. Ele inclui um texto padrão, que é usado em qualquer caso em que a localização solicitada não está disponível.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|defaultText|Cadeia de caracteres|A cadeia de caracteres de fallback, que é usada quando uma localização solicitada não está disponível. Obrigatório. |
-|localizedTexts|coleção [accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md)|Conteúdo representado em um formato para uma localidade específica. |
+|defaultText|String|A cadeia de caracteres de fallback, que é usada quando uma localização solicitada não está disponível. Obrigatório. |
+|localizedTexts|[Coleção accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md)|Conteúdo representado em um formato para uma localidade específica. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,16 +1,16 @@
 ---
 title: 'message: createForward'
-description: 'Criar um rascunho de mensagem de encaminhamento para incluir um comentário ou atualizar quaisquer propriedades de mensagem  '
-author: svpsiva
+description: 'Criar um rascunho de mensagem de encaminhamento para incluir um comentário ou atualizar as propriedades da mensagem  '
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 42115aaedd5de84b0fbbdd898267a18da0d75e37
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e36487e3e25e4eac30c4c05987082b26b31601f3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981591"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136714"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um rascunho de mensagem de encaminhamento para incluir um comentário ou atualizar quaisquer propriedades de mensagem  
-tudo em uma chamada de **createforward** . Você pode então [enviar](../api/message-send.md) o rascunho da mensagem.
+Criar um rascunho de mensagem de encaminhamento para incluir um comentário ou atualizar as propriedades da mensagem  
+tudo em uma **chamada createForward.** Você pode então [enviar](../api/message-send.md) o rascunho da mensagem.
 
 **Observação**
 
-- Você pode especificar um comentário ou a propriedade **Body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Você deve especificar o `toRecipients` parâmetro ou a propriedade **ToRecipients** do `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
+- Você pode especificar um comentário ou a **propriedade do** corpo do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
+- Você deve especificar o `toRecipients` parâmetro ou a propriedade **toRecipients** do `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

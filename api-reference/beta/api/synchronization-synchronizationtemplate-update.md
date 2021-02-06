@@ -1,24 +1,24 @@
 ---
-title: Atualizar synchronizationtemplate
-description: Atualizar (substituir) o modelo de sincronização associado a um determinado aplicativo.
+title: Atualizar synchronizationTemplate
+description: Atualize (substitua) o modelo de sincronização associado a um determinado aplicativo.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 58d69d96626faff3fdaecd80e3cd1661d6b8b689
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: b388c4e63eb30f7ad9fc8cb65a3afed305f12926
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971154"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137232"
 ---
-# <a name="update-synchronizationtemplate"></a>Atualizar synchronizationtemplate
+# <a name="update-synchronizationtemplate"></a>Atualizar synchronizationTemplate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar (substituir) o modelo de sincronização associado a um determinado aplicativo.
+Atualize (substitua) o modelo de sincronização associado a um determinado aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,7 +43,7 @@ PATCH application/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça o objeto [synchronizationtemplate](../resources/synchronization-synchronizationtemplate.md) para substituir o modelo existente. Certifique-se de que todas as propriedades sejam fornecidas. As propriedades ausentes serão apagadas.
+No corpo da solicitação, fornece o [objeto synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) para substituir o modelo existente. Certifique-se de que todas as propriedades sejam fornecidas. Propriedades ausentes serão apagadas.
 
 ### <a name="response"></a>Resposta
 
@@ -54,7 +54,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ##### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação. 
 
->**Observação:** O objeto Request mostrado aqui é reduzido para legibilidade. Incluir todas as propriedades em uma chamada real.
+>**Observação:** O objeto de solicitação mostrado aqui é encurtado para leitura. Inclua todas as propriedades em uma chamada real.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

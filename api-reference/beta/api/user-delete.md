@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cd6be2db8481517f02e54cf34f0f015ddfa40096
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1c3de475fbe57143478d39dde759ecbad45abf59
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976482"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136791"
 ---
 # <a name="delete-a-user"></a>Excluir um usuário
 
@@ -31,6 +31,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.ReadWrite.All |
+
+A conta de trabalho ou de estudante deve estar em uma das seguintes funções:
++ Administrador Global
++ Administrador do Usuário
+
+Somente um Administrador Global pode excluir um usuário em uma função de Administrador Global ou _qualquer_ usuário no locatário. Um Administrador de Usuário só pode excluir usuários que não são administradores ou em funções limitadas específicas. Para obter mais detalhes, consulte [Permissões de função de administrador no Azure AD.](/azure/active-directory/roles/permissions-reference#available-roles)
 
 ## <a name="http-request"></a>Solicitação HTTP
 

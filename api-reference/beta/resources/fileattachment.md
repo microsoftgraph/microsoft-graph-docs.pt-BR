@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso fileAttachment
-description: Um arquivo (como um arquivo de texto ou documento do Word) anexado a um evento
+description: Um arquivo (como um arquivo de texto ou um documento do Word) anexado a um evento,
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: a850e05622b22bf05dfec1011cd4371cbc9e7cc4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 1ef32e91897ac322b84922012df47c168094f57d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135643"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Um arquivo (como um arquivo de texto ou documento do Word) anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md)do usuário. 
+Um arquivo (como um arquivo de texto ou documento do Word) anexado a um evento de usuário [,](../resources/event.md) [mensagem](../resources/message.md), tarefa do [Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md). 
 
 Ao criar um anexo de arquivo, inclua o seguinte no corpo da solicitação:
 
@@ -36,7 +36,7 @@ Derivado de [attachment](attachment.md).
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Leia as propriedades, relações ou conteúdo bruto de um objeto fileattachment.|
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Leia as propriedades, relações ou conteúdo bruto de um objeto fileAttachment.|
 |[Delete](../api/attachment-delete.md) | Nenhuma |Exclua um objeto fileAttachment. |
 
 ## <a name="properties"></a>Propriedades

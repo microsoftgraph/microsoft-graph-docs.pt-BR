@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso propertyToEvaluate
+title: Tipo de recurso propertyToEvaluate
 description: Define o nome e o valor da propriedade.
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: c03ef7cdbb5e40ab77e0b3ad68668263db643568
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e04a2e63cb8b3112c4e68c0195c98d0fe404ebf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078191"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135377"
 ---
-# <a name="propertytoevaluate-resource-type"></a>tipo de recurso propertyToEvaluate
+# <a name="propertytoevaluate-resource-type"></a>Tipo de recurso propertyToEvaluate
 
 Namespace: microsoft.graph
 
@@ -24,8 +24,8 @@ Define o nome e o valor da propriedade.
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| NomeDaPropriedade | Cadeia de caracteres | Fornece o nome da propriedade. |
-| propertyValue | Cadeia de caracteres | Fornece o valor da propriedade. |
+| propertyName | String | Fornece o nome da propriedade. |
+| propertyValue | String | Fornece o valor da propriedade. |
 
 ## <a name="json-representation"></a>Representação JSON
 

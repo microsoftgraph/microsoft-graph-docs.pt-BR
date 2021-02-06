@@ -4,13 +4,13 @@ description: Especifica quando um fuso horário muda do horário padrão para o 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: ea432ede399dcbb95a0d0d06fa80285b31f061bc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 31bd6c1b3e9ec50c2e922ae7868b1d39ea66e4aa
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049958"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135678"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>Tipo de recurso daylightTimeZoneOffset
 
@@ -27,13 +27,13 @@ Por exemplo, se um fuso horário estiver especificado com as seguintes proprieda
 - **dayOccurrence** como 4
 - **dayOfWeek** como "domingo"
 - **month** como 5
-- **time** como 02:00:00 _**year** como 0, significa que a hora durante o horário de verão é +300-100=200 minutos adiantada ao UTC. A transição do fuso horário de horário de verão para o horário padrão ocorre às 2 da manhã no quarto domingo de maio, todos os anos.
+- **time** como 02:00:00 _ **year** como 0, significa que a hora durante o horário de verão é +300-100=200 minutos adiantada ao UTC. A transição do fuso horário de horário de verão para o horário padrão ocorre às 2 da manhã no quarto domingo de maio, todos os anos.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| daylightBias | Edm.Int32 | A diferença de horário em relação ao UTC (Tempo Universal Coordenado) para o horário de verão. Este valor está em minutos.  |
+| daylightBias | Edm.Int32 | A diferença de horário em relação ao UTC (Tempo Universal Coordenado) para o horário de verão. Este valor está em minutos.  |
 | dayOccurrence | Edm.Int32 | Representa a enésima ocorrência do dia da semana em que a transição do horário padrão para o horário de verão acontece. |
 | dayOfWeek | string | Representa o dia da semana em que a transição do horário padrão para o horário de verão acontece. |
 | month | Edm.Int32 | Representa o mês do ano em que a transição do horário padrão para o horário de verão acontece. |

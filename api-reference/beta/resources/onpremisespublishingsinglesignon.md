@@ -1,35 +1,35 @@
 ---
-title: tipo de recurso kerberosSignOnSettings
-description: Representa as configurações de logon único para um aplicativo local publicado por meio do proxy de aplicativo.
+title: Tipo de recurso kerberosSignOnSettings
+description: Representa as configurações de acesso único para um aplicativo local publicado por meio do Proxy de Aplicativo.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 720690a5e62e39665507b80d3c126b162862b470
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 85b2b4963c077b8dcb6ded4818ecc57bce635b39
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404921"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134866"
 ---
-# <a name="onpremisespublishingsinglesignon-resource-type"></a>tipo de recurso onPremisesPublishingSingleSignOn
+# <a name="onpremisespublishingsinglesignon-resource-type"></a>Tipo de recurso onPremisesPublishingSingleSignOn
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as configurações de logon único para o recurso [onPremisesPublishing](onpremisespublishing.md) ao publicar um aplicativo local com o proxy de aplicativo do Azure AD. Este recurso é usado para configurar a autenticação integrada do Windows e a autenticação baseada em cabeçalho como o modo de logon único. Para obter mais informações, consulte [delegação restrita de Kerberos para logon único em seus aplicativos com o proxy de aplicativo](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
+Representa as configurações de login único para o recurso [onPremisesPublishing](onpremisespublishing.md) ao publicar um aplicativo local com o Proxy de aplicativo do Azure AD. Esse recurso é usado para definir a Autenticação Integrada do Windows e a autenticação baseada em header como o modo de logo único. Para obter mais informações, consulte Delegação Restrita de Kerberos para fazer o login único em [seus aplicativos com o Proxy de Aplicativo.](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd)
 
 >[!NOTE]
->Não use essa propriedade para configurar o SAML ou o logon único baseado em senha. Se você estiver configurando o SAML Single-Sign-on, isso deve ser definido no [servicePrincipalName](serviceprincipal.md).
-Se você estiver configurando o logon único baseado em senha, ele deverá ser definido usando o [createPasswordSingleSignOnCredentials](../api/serviceprincipal-createpasswordsinglesignoncredentials.md).
+>Não use essa propriedade para configurar o SAML ou o single-on baseado em senha. Se você estiver configurando o single-on saml, isso deve ser definido no [servicePrincipal](serviceprincipal.md).
+Se você estiver configurando o single-sign baseado em senha, isso deve ser definido usando [createPasswordSingleSignOnCredentials](../api/serviceprincipal-createpasswordsinglesignoncredentials.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| As configurações de delegação restritas de Kerberos para aplicativos que usam a autenticação de janela integrada. |
-|singleSignOnMode|Cadeia de caracteres| O modo preferencial de logon único para o aplicativo. Os valores possíveis são: `none`, `onPremisesKerberos`, `headerBased`.|
+|kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| As configurações de Delegação Restrita de Kerberos para aplicativos que usam a Autenticação integrada de janela. |
+|singleSignOnMode|String| O modo de login único preferencial para o aplicativo. Os valores possíveis são: `none`, `onPremisesKerberos`, `headerBased`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

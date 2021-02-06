@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso defaultUserRolePermissions
-description: Contém determinadas permissões personalizáveis de função de usuário padrão.
+title: Tipo de recurso defaultUserRolePermissions
+description: Contém determinadas permissões personalizáveis da função de usuário padrão.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8ee3df9779d5c69ec35bdc4ac9d373554cb0728e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b6ee2e8deccf73929b68079379efb0f6d93a3369
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049944"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135664"
 ---
-# <a name="defaultuserrolepermissions-resource-type"></a>tipo de recurso defaultUserRolePermissions
+# <a name="defaultuserrolepermissions-resource-type"></a>Tipo de recurso defaultUserRolePermissions
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,9 +22,9 @@ Contém determinadas permissões personalizáveis da função de usuário padrã
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| allowedToCreateApps | Booliano | Indica se a função de usuário padrão pode criar aplicativos. |  
-| allowedToCreateSecurityGroups | Booliano | Indica se a função de usuário padrão pode criar grupos de segurança. |  
-| allowedToReadOtherUsers | Booliano | Indica se a função de usuário padrão pode ler outros usuários. |  
+| allowedToCreateApps | Boolean | Indica se a função de usuário padrão pode criar aplicativos. |  
+| allowedToCreateSecurityGroups | Boolean | Indica se a função de usuário padrão pode criar grupos de segurança. |  
+| allowedToReadOtherUsers | Boolean | Indica se a função de usuário padrão pode ler outros usuários. |  
 
 ## <a name="relationships"></a>Relações
 

@@ -1,48 +1,48 @@
 ---
-title: tipo de recurso onPremisesPublishing
-description: Representa um objeto de onPremisesPublishing do proxy de aplicativo.
+title: Tipo de recurso onPremisesPublishing
+description: Representa um objeto Application Proxy onPremisesPublishing .
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: bda657d3579fab5419852df4ce9a79961aafc89d
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 74ecc94c88990b042e35a7a2701d7a1cd50b1199
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921512"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134880"
 ---
-# <a name="onpremisespublishing-resource-type"></a>tipo de recurso onPremisesPublishing
+# <a name="onpremisespublishing-resource-type"></a>Tipo de recurso onPremisesPublishing
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um aplicativo local publicado por meio [do proxy de aplicativo do Azure ad](https://aka.ms/whyappproxy) é representado por um objeto [Application](application.md) e sua propriedade **onPremisesPublishing** associada. O proxy de aplicativo fornece acesso remoto seguro a aplicativos locais.
+Um aplicativo local publicado por meio do Proxy de Aplicativo [](application.md) do [Azure AD](https://aka.ms/whyappproxy) é representado por um objeto de aplicativo e sua propriedade **onPremisesPublishing** associada. O Proxy de Aplicativo fornece acesso remoto seguro a aplicativos locais.
 
-Um objeto **onPremisesPublishing** representa o conjunto de propriedades para configurar o proxy de aplicativo para um [aplicativo](application.md)local. 
+Um **objeto onPremisesPublishing** representa o conjunto de propriedades para configurar o Proxy de Aplicativo para um aplicativo [local.](application.md) 
 
-Após [instanciar um aplicativo personalizado](../api/applicationtemplate-instantiate.md) ou [criar um aplicativo](../api/application-post-applications.md), as configurações de proxy do aplicativo para o aplicativo podem ser configuradas [atualizando as](../api/application-update.md) Propriedades de onPremisesPublishing do aplicativo.
+Depois [de inciar](../api/applicationtemplate-instantiate.md) um aplicativo personalizado ou criar um [aplicativo,](../api/application-post-applications.md)as configurações do Proxy de Aplicativo para o aplicativo podem ser configuradas atualizando as propriedades de publicação onPremises do aplicativo. [](../api/application-update.md)
 
-Para obter um tutorial sobre a configuração do proxy de aplicativo, consulte [automatizar a configuração do proxy de aplicativo usando a API do Microsoft Graph](/graph/application-proxy-configure-api).
+Para um tutorial sobre como configurar o Proxy de Aplicativo, confira Automatizar a configuração do Proxy de Aplicativo usando a [API do Microsoft Graph.](/graph/application-proxy-configure-api)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|alternateUrl|String| Se você estiver configurando um gerente de tráfego na frente de vários aplicativos de proxy de aplicativo, o alternateUrl será a URL amigável para o usuário que apontará para o Gerenciador de tráfego. |
-|applicationServerTimeout|String| A duração que o conector aguardará por uma resposta do aplicativo backend antes de fechar a conexão. Os valores possíveis são `default` : `long` . Quando definido como padrão, o tempo limite do aplicativo de back-end tem um tamanho de 85 segundos. Quando definido como Long, o tempo limite de back-end é aumentado para 180 segundos. Use `long` se o servidor levar mais de 85 segundos para responder às solicitações ou se você não conseguir acessar o aplicativo e o status de erro for "tempo limite de back-end". O valor padrão é `default`. |
-|applicationType|Cadeia de caracteres| Indica se este aplicativo é um aplicativo configurado de proxy de aplicativo. Isso é predefinido pelo sistema. Somente leitura. |
-|externalAuthenticationType|String| Detalha a configuração de pré-autenticação para o aplicativo. A pré-autenticação impõe que os usuários devem se autenticar antes de acessar o aplicativo. PassThru não requer autenticação. Os valores possíveis são: `passthru` e `aadPreAuthentication`. |
+|alternateUrl|String| Se você estiver configurando um gerenciador de tráfego na frente de vários aplicativos de Proxy de Aplicativo, a alternateUrl será a URL amigável que apontará para o gerenciador de tráfego. |
+|applicationServerTimeout|String| A duração que o conector aguardará por uma resposta do aplicativo back-end antes de fechar a conexão. Os valores possíveis `default` são , `long` . Quando definido como padrão, o tempo máximo do aplicativo back-end tem um comprimento de 85 segundos. Quando definido como longo, o tempo de tempo de back-back é aumentado para 180 segundos. Use se o servidor levar mais de 85 segundos para responder a solicitações ou se você não conseguir acessar o aplicativo e o status do erro for `long` "Backend Timeout". O valor padrão é `default`. |
+|applicationType|Cadeia de caracteres| Indica se esse aplicativo é um aplicativo configurado para Proxy de Aplicativo. Isso é pré-definido pelo sistema. Somente leitura. |
+|externalAuthenticationType|String| Detalha a configuração de pré-autenticação do aplicativo. A pré-autenticação impõe que os usuários devem autenticar antes de acessar o aplicativo. Passthru não requer autenticação. Os valores possíveis são: `passthru` e `aadPreAuthentication`. |
 |externalUrl|String| A URL externa publicada para o aplicativo. Por exemplo, https://intranet-contoso.msappproxy.net/.  |
 |internalUrl|String| A URL interna do aplicativo. Por exemplo, https://intranet/. |
-|isHttpOnlyCookieEnabled|Booliano| Indica se o sinalizador de cookie HTTPOnly deve ser definido nos cabeçalhos de resposta HTTP. Defina esse valor como `true` para que os cookies de proxy do aplicativo incluam o sinalizador HTTPOnly nos cabeçalhos de resposta http. Se estiver usando os serviços de área de trabalho remota, defina esse valor como false. O valor padrão é `false`. |
-|isOnPremPublishingEnabled|Booliano| Indica se o aplicativo está sendo publicado no momento por meio do proxy de aplicativo ou não. Isso é predefinido pelo sistema. Somente leitura. |
-|isPersistentCookieEnabled|Booliano| Indica se o sinalizador de cookie persistente deve ser definido nos cabeçalhos de resposta HTTP. Mantenha este valor definido como `false` . Use essa configuração apenas para aplicativos que não podem compartilhar cookies entre processos. Para obter mais informações sobre configurações de cookie, consulte [configurações de cookie para acessar aplicativos locais no Azure Active Directory](/azure/active-directory/manage-apps/application-proxy-configure-cookie-settings). O valor padrão é `false`. |
-|isSecureCookieEnabled|Booliano| Indica se o sinalizador de cookie seguro deve ser definido nos cabeçalhos de resposta HTTP. Defina esse valor como `true` para transmitir cookies por meio de um canal seguro, como uma solicitação HTTPS criptografada. O valor padrão é `true`.|
-|isTranslateHostHeaderEnabled|Booliano| Indica se o aplicativo deve traduzir URLs nos cabeçalhos de resposta. Mantenha esse valor como `true` a menos que seu aplicativo requerido o cabeçalho de host original na solicitação de autenticação. O valor padrão é `true`.|
-|isTranslateLinksInBodyEnabled|Booliano| Indica se o aplicativo deve traduzir URLs no corpo do aplicativo. Mantenha esse valor como `false` a menos que você tenha links HTML codificados para outros aplicativos locais e não use domínios personalizados. Para obter mais informações, consulte [conversão de link com o proxy de aplicativo](/azure/active-directory/manage-apps/application-proxy-configure-hard-coded-link-translation). O valor padrão é `false`.|
-|singleSignOnSettings|[onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md)| Representa a configuração de logon único para o aplicativo local. |
+|isHttpOnlyCookieEnabled|Boolean| Indica se o sinalizador de cookie HTTPOnly deve ser definido nos cabeçalhos de resposta HTTP. De definir esse valor para que os cookies do Proxy de Aplicativo incluam o sinalizador `true` HTTPOnly nos cabeçalhos de resposta HTTP. Se estiver usando os Serviços de Área de Trabalho Remota, de definida como False. O valor padrão é `false`. |
+|isOnPremPublishingEnabled|Boolean| Indica se o aplicativo está sendo publicado por meio do Proxy de Aplicativo ou não. Isso é pré-definido pelo sistema. Somente leitura. |
+|isPersistentCookieEnabled|Boolean| Indica se o sinalizador de cookie persistente deve ser definido nos cabeçalhos de resposta HTTP. Mantenha esse valor definido como `false` . Use essa configuração somente para aplicativos que não podem compartilhar cookies entre processos. Para obter mais informações sobre configurações de cookie, consulte Configurações de cookie para acessar aplicativos locais [no Azure Active Directory.](/azure/active-directory/manage-apps/application-proxy-configure-cookie-settings) O valor padrão é `false`. |
+|isSecureCookieEnabled|Boolean| Indica se o sinalizador de cookie seguro deve ser definido nos cabeçalhos de resposta HTTP. De configurar esse valor `true` para transmitir cookies por um canal seguro, como uma solicitação HTTPS criptografada. O valor padrão é `true`.|
+|isTranslateHostHeaderEnabled|Boolean| Indica se o aplicativo deve traduzir URLs nos títulos de reponse. Mantenha esse valor, a `true` menos que seu aplicativo tenha exigido o título de host original na solicitação de autenticação. O valor padrão é `true`.|
+|isTranslateLinksInBodyEnabled|Boolean| Indica se o aplicativo deve traduzir URLs no corpo do aplicativo. Mantenha esse valor como a menos que você tenha links HTML em código para outros aplicativos locais e não `false` use domínios personalizados. Para obter mais informações, consulte [Link translation with Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-hard-coded-link-translation). O valor padrão é `false`.|
+|singleSignOnSettings|[onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md)| Representa a configuração de login único para o aplicativo local. |
 |verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| Detalhes do certificado associado ao aplicativo quando um domínio personalizado está em uso. `null` ao usar o domínio padrão. Somente leitura.|
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| A credencial de chave associada para o domínio personalizado usado. |
 |verifiedCustomDomainPasswordCredential|[passwordCredential](passwordcredential.md)| A credencial de senha associada para o domínio personalizado usado. |

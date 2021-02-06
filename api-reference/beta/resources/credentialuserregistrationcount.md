@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso credentialUserRegistrationCount
-description: Representa o estado atual de quantos usuários da sua organização estão registrados para recursos de redefinição de senha de autoatendimento e autenticação multifator.
+title: Tipo de recurso credentialUserRegistrationCount
+description: Representa o estado atual de quantos usuários em sua organização estão registrados para redefinição de senha de autoatendado e recursos de autenticação multifa factor.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 59c7849a5145064eafbce63804b5d3415fb92b97
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: cb83bbfe4c738fd8c5c6460a27aafbbc73cad437
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523123"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136273"
 ---
-# <a name="credentialuserregistrationcount-resource-type"></a>tipo de recurso credentialUserRegistrationCount
+# <a name="credentialuserregistrationcount-resource-type"></a>Tipo de recurso credentialUserRegistrationCount
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o estado atual de quantos usuários da sua organização estão registrados para recursos de redefinição de senha de autoatendimento e autenticação multifator.
+Representa o estado atual de quantos usuários em sua organização estão registrados para redefinição de senha de autoatendado e recursos de autenticação multifa factor.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [getCredentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | coleção credentialUserRegistrationCount | Informe o estado atual de quantos usuários da sua organização estão registrados para recursos de redefinição de senha de autoatendimento e de autenticação multifator (MFA). |
+| [getCredentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | Coleção credentialUserRegistrationCount | Relatar o estado atual de quantos usuários em sua organização estão registrados para redefinição de senha de autoatendado e recursos de autenticação multifatória (MFA). |
 
 ## <a name="properties"></a>Propriedades
 
@@ -32,7 +32,7 @@ Representa o estado atual de quantos usuários da sua organização estão regis
 |:-------------|:------------|:------------|
 | id | String | O identificador exclusivo da atividade. Somente leitura. |
 | totalUserCount | Int64 | Fornece a contagem total de usuários no locatário. |
-| userRegistrationCounts | coleção [userRegistrationCount](userregistrationcount.md) | Uma coleção de informações de status e contagem de registro para usuários em seu locatário. |
+| userRegistrationCounts | [Coleção userRegistrationCount](userregistrationcount.md) | Uma coleção de informações de status e contagem de registro para usuários em seu locatário. |
 
 ## <a name="relationships"></a>Relações
 

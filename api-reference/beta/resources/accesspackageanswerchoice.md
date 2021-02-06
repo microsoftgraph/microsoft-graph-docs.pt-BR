@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso accessPackageAnswerChoice
+title: Tipo de recurso accessPackageAnswerChoice
 description: Uma opção de resposta para um accessPackageMultipleChoiceQuestion.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6f34656a72d217adec1ff46be689b283461332fb
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 7c7fc7db1c9360146c2f62fd9048ad0db3d58b80
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720083"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135475"
 ---
-# <a name="accesspackageanswerchoice-resource-type"></a>tipo de recurso accessPackageAnswerChoice
+# <a name="accesspackageanswerchoice-resource-type"></a>Tipo de recurso accessPackageAnswerChoice
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indica uma opção de resposta para um [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md). Vários accessPackageAnswerChoices podem ser adicionados a um [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md).
+Indica uma opção de resposta para um [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md). Vários accessPackageAnswerChoices podem ser adicionados a [um accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md).
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|realvalue|Cadeia de caracteres|O valor real da escolha selecionada. Normalmente, esse é um valor de cadeia de caracteres que é compreensível por aplicativos. Obrigatório. |
-|displayValue|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|Os valores de exibição localizados mostrados para o solicitante e aprovadores. Obrigatório.
+|actualValue|String|O valor real da opção selecionada. Isso geralmente é um valor de cadeia de caracteres que pode ser entendido pelos aplicativos. Obrigatório. |
+|displayValue|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|Os valores de exibição localizados mostrados para o solicitante e os aprovadores. Obrigatório.
 
 ## <a name="relationships"></a>Relações
 Nenhum

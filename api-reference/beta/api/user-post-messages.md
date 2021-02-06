@@ -2,15 +2,15 @@
 title: Criar mensagem
 description: Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualquer pasta e, opcionalmente, atualizados antes do envio. Para salvar na pasta Rascunhos, use o atalho /messages.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e775b7848c3c590db089973021b3858b707c1b38
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fcf8ad8a4b8016f972ee8844a959d0a3359a2db9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977058"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135160"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -20,10 +20,10 @@ Namespace: microsoft.graph
 
 Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualquer pasta e, opcionalmente, atualizados antes do envio. Para salvar na pasta Rascunhos, use o atalho /messages.
 
-Ao criar o rascunho na mesma chamada **post** , você pode:
+Ao criar o rascunho na mesma **chamada POST,** você pode:
 
 - Incluir um [anexo](../resources/attachment.md) 
-- Usar uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem
+- Use uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,22 +49,22 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [Message](../resources/message.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto message.](../resources/message.md)
 
-Se você quiser usar **menção** para chamar outro usuário na nova mensagem:
+Se você quiser usar a **menção** para chamar outro usuário na nova mensagem:
 
-- Inclua a propriedade Required **ToRecipients** , a propriedade **mencionas** e qualquer propriedade gravável de mensagem no corpo da solicitação.
-- Para cada menção na propriedade **menciona** , você deve especificar a propriedade **mencionado** .
+- Inclua a propriedade **required toRecipients,** a propriedade mentions e quaisquer propriedades de mensagem que podem ser **escritas** no corpo da solicitação.
+- Para cada menção na **propriedade menções,** você deve especificar a **propriedade mencionada.**
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados à mensagem ao criá-la.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [Message](../resources/message.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [de](../resources/message.md) mensagem no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
-Veja a seguir um exemplo de solicitação para criar um rascunho de uma nova mensagem.
+Aqui está um exemplo da solicitação para criar um rascunho de uma nova mensagem.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -181,7 +181,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir mostra um rascunho de email do Randi Welch para o estande de Paula. A mensagem também inclui uma menção de outro usuário, Dana Swope.
+O próximo exemplo mostra um rascunho de email de Randi Randi Ltd para Sam australiana. A mensagem também inclui uma menção de outro usuário, Dana Swope.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
 

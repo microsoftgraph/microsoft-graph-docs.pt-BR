@@ -1,49 +1,49 @@
 ---
-title: tipo de recurso onPremisesAgent
-description: tipo de recurso onPremisesAgent.
+title: Tipo de recurso onPremisesAgent
+description: Tipo de recurso onPremisesAgent.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: ec125e52eaf9eba3423f70dd47cc7dd1562716bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8269c2d2273df385c4815e2276f320a7e4f5b813
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135867"
 ---
-# <a name="onpremisesagent-resource-type"></a>tipo de recurso onPremisesAgent
+# <a name="onpremisesagent-resource-type"></a>Tipo de recurso onPremisesAgent
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o agente local. Os agentes locais instalados por um administrador de locatários podem ser configurados para acessar/lidar com solicitações de um [recurso publicado](publishedresource.md)específico.
+Representa o agente local. Agentes locais instalados por um administrador de locatários podem ser configurados para acessar/manipular solicitações para um determinado [recurso publicado.](publishedresource.md)
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar onPremisesAgents](../api/onpremisesagent-list.md) | coleção [onPremisesAgent](onpremisesagent.md) | Obtenha uma coleção de objetos **onPremisesAgents** . |
-| [Obter onPremisesAgent](../api/onpremisesagent-get.md) | [onPremisesAgent](onpremisesagent.md) | Leia as propriedades e os relacionamentos de um objeto **onPremisesAgent** . |
-| [Atribuir onPremisesAgent a onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | Nenhum | Atribua um **onPremisesAgent** a um **onPremisesAgentGroup**.|
-| [Remover o onpremisesAgent de um onPremisesAgentGroup](../api/onpremisesagent-delete-agentgroups.md) | Nenhum | Remover um **onPremisesAgent** de um **onPremisesAgentGroup**. |
+| [Listar onPremisesAgents](../api/onpremisesagent-list.md) | [Coleção onPremisesAgent](onpremisesagent.md) | Obter uma **coleção de objetos onPremisesAgents.** |
+| [Obter onPremisesAgent](../api/onpremisesagent-get.md) | [onPremisesAgent](onpremisesagent.md) | Leia as propriedades e os relacionamentos de um **objeto onPremisesAgent.** |
+| [Atribuir onPremisesAgent a onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | Nenhuma | Atribua **um onPremisesAgent** a **um onPremisesAgentGroup**.|
+| [Remover onpremisesAgent de um onPremisesAgentGroup](../api/onpremisesagent-delete-agentgroups.md) | Nenhuma | Remover um **onPremisesAgent** de **um onPremisesAgentGroup**. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|externalIp|Cadeia de caracteres|O endereço IP externo, conforme detectado pelo serviço para o computador do agente. Somente leitura|
-|id|Cadeia de caracteres| A ID de objeto do onPremisesAgent. Somente leitura.|
-|Nomecomputador|Cadeia de caracteres|O nome da máquina na qual o aggent está sendo executado. Somente leitura|
+|externalIp|String|O endereço IP externo conforme detectado pelo serviço para o computador do agente. Somente leitura|
+|id|String| A ID do objeto do onPremisesAgent. Somente leitura.|
+|machineName|String|O nome do computador em que o agregação está sendo executado. Somente leitura|
 |status|cadeia de caracteres| Os valores possíveis são: `active` e `inactive`.|
-|publishingtype|cadeia de caracteres| Os valores possíveis são: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|string| Os valores possíveis são: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|agentGroups|coleção [onPremisesAgentGroup](onpremisesagentgroup.md)| Lista de **onPremisesAgentGroups** aos quais um **onPremisesAgent** é atribuído. Somente leitura. Anulável.|
+|agentGroups|[Coleção onPremisesAgentGroup](onpremisesagentgroup.md)| Lista de **onPremisesAgentGroups** aos que um **onPremisesAgent** está atribuído. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -78,5 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

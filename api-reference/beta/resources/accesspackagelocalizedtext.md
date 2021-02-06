@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso accessPackageLocalizedText
+title: Tipo de recurso accessPackageLocalizedText
 description: Um tipo complexo usado para representar uma cadeia de caracteres em um idioma específico.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9573ae4118f02abdba5686fd94da96da71d374c2
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 8d493f0909617dcda26546ccc262d7591c6b9309
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720070"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137344"
 ---
-# <a name="accesspackagelocalizedtext-resource-type"></a>tipo de recurso accessPackageLocalizedText
+# <a name="accesspackagelocalizedtext-resource-type"></a>Tipo de recurso accessPackageLocalizedText
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ Um tipo complexo usado para representar uma cadeia de caracteres em um idioma es
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Campo|Cadeia de caracteres|O código ISO do idioma desejado. Obrigatório. |
-|texto|Cadeia de caracteres|O texto no idioma específico. Obrigatório. |
+|languageCode|String|O código ISO para o idioma pretendido. Obrigatório. |
+|texto|String|O texto no idioma específico. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -4,13 +4,13 @@ description: Especifica os tamanhos mínimo e máximo (em kilobytes) que uma men
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 223a58abf7d95761e316e39468be12f858db49dd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: af63282d3093fc0178dba6027846b2c080c3c5f9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063937"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136924"
 ---
 # <a name="sizerange-resource-type"></a>Tipo de recurso sizeRange
 

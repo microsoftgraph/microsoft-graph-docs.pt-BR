@@ -1,16 +1,16 @@
 ---
 title: Enviar email
 description: Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 62c4cc098d3cb383f0b41d0668deb1c170017bfc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1d3c8592007b98a5f5e225447a7fe163c95275c6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980033"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134971"
 ---
 # <a name="send-mail"></a>Enviar email
 
@@ -20,10 +20,10 @@ Namespace: microsoft.graph
 
 Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.
 
-Na mesma chamada de ação de **sendmail** , você pode:
+Na mesma chamada **de ação sendMail,** você pode:
 
 - Incluir um [anexo](../resources/attachment.md)
-- Usar uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem
+- Use uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -55,10 +55,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |Message|[Message](../resources/message.md)|A mensagem a enviar. Obrigatório.|
 |SaveToSentItems|Boolean|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional.|
 
-Se você quiser usar **menção** para chamar outro usuário na nova mensagem:
+Se você quiser usar a **menção** para chamar outro usuário na nova mensagem:
 
-- Inclua a propriedade Required **ToRecipients** , a propriedade **mencionas** e qualquer propriedade gravável de mensagem no corpo da solicitação.
-- Para cada menção na propriedade **menciona** , você deve especificar a propriedade **mencionado** .
+- Inclua a propriedade **required toRecipients,** a propriedade mentions e quaisquer propriedades de mensagem que podem ser **escritas** no corpo da solicitação.
+- Para cada menção na **propriedade menções,** você deve especificar a **propriedade mencionada.**
 
 ## <a name="response"></a>Resposta
 
@@ -67,7 +67,7 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ##### <a name="request-1"></a>Solicitação 1
-Aqui está um exemplo da solicitação para criar e enviar uma mensagem instantaneamente.
+Aqui está um exemplo da solicitação para criar e enviar uma mensagem em tempo real.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -135,7 +135,7 @@ HTTP/1.1 202 Accepted
 
 
 ##### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir mostra uma mensagem pelo usuário conectado ao estande de Paula. A mensagem também inclui uma menção de outro usuário, Dana Swope.
+O exemplo a seguir mostra uma mensagem do usuário que está londo para Sam auto-in. A mensagem também inclui uma menção de outro usuário, Dana Swope.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

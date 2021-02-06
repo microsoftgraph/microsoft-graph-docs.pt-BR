@@ -1,18 +1,18 @@
 ---
-title: 'servicePrincipal: List createdObjects'
+title: 'servicePrincipal: Listar createdObjects'
 description: Recuperar uma lista de objetos directoryobject.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 9d6da92a3638fd3a101898a04e1362467064615b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 52a36d4afaaee71775b0b88a690d54c30ce36cc6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980583"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134330"
 ---
-# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
+# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: Listar createdObjects
 
 Namespace: microsoft.graph
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
->Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+>Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,3 +119,4 @@ Content-length: 55
   ]
 }
 -->
+

@@ -3,14 +3,14 @@ title: Listar memberOf transitivos de servicePrincipal
 description: Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: c463f4393a405a13ee2caeb8570facf33b3d64a8
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 0ec9b45511197b2e4391665ce12a17344e40188e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082013"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134276"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>Listar memberOf transitivos de servicePrincipal
 
@@ -285,5 +285,6 @@ Content-type: application/json
   ]
 }
 -->
+
 
 

@@ -1,16 +1,16 @@
 ---
 title: Configurar a sincronização com atributos de destino personalizados
-description: Personalizar o esquema de sincronização para incluir atributos personalizados que são definidos no diretório de destino.
+description: Personalize seu esquema de sincronização para incluir atributos personalizados definidos no diretório de destino.
 localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d8b86bc4e4737fd5f1be341b6a824b963993de50
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: ecaecceed2ae45a3a8b5de66497d061227365ffe
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978469"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134691"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Configurar a sincronização com atributos de destino personalizados
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode personalizar o esquema de sincronização para incluir atributos personalizados que são definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura do Salesforce adicionando um novo campo chamado `officeCode` . Você configura a sincronização do Azure Active Directory (Azure AD) para o Salesforce e para cada usuário, você preencherá o `officeCode` campo na Salesforce com o valor do `extensionAttribute10` campo no Azure AD.
+Você pode personalizar seu esquema de sincronização para incluir atributos personalizados definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura da Salesforce adicionando um novo campo chamado `officeCode` . Você configura a sincronização do Azure Active Directory (Azure AD) para o Salesforce e, para cada usuário, você preencherá o campo na Salesforce com o valor do campo no `officeCode` `extensionAttribute10` Azure AD.
 
-Este artigo pressupõe que você já tenha adicionado um aplicativo que oferece suporte à sincronização do seu locatário através do [portal do Azure](https://portal.azure.com), que você conhece o nome de exibição do aplicativo e que você tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, confira [obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/).
+Este artigo presume que você já adicionou um aplicativo que dá suporte à sincronização com seu locatário por meio do Portal do [Azure,](https://portal.azure.com)que você sabe o nome de exibição do aplicativo e que tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, confira [Obter tokens de acesso para chamar o Microsoft Graph.](/graph/auth/)
 
-## <a name="find-the-service-principal-object-by-display-name"></a>Localizar o objeto de entidade de serviço por nome de exibição
+## <a name="find-the-service-principal-object-by-display-name"></a>Encontrar o objeto de entidade de serviço por nome de exibição
 
-O exemplo a seguir mostra como localizar um objeto de entidade de serviço com o nome de exibição Salesforce.
+O exemplo a seguir mostra como encontrar um objeto de entidade de serviço com o nome de exibição Salesforce.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -57,7 +57,7 @@ O `{servicePrincipalId}` é `167e33e9-f80e-490e-b4d8-698d4a80fb3e` .
 
 ## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Listar trabalhos de sincronização no contexto da entidade de serviço 
 
-O exemplo a seguir mostra como obter o `jobId` que você precisa para trabalhar. Geralmente, a resposta retorna apenas um trabalho.
+O exemplo a seguir mostra como obter `jobId` o que você precisa para trabalhar. Geralmente, a resposta retorna apenas um trabalho.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -211,18 +211,18 @@ Content-Type: application/json
 
 ## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>Adicionar uma definição para o atributo officeCode e um mapeamento entre atributos
 
-Use um editor de texto sem formatação de sua escolha (por exemplo, [bloco de notas + +](https://notepad-plus-plus.org/) ou [Editor JSON online](https://www.jsoneditoronline.org/)) para:
+Use um editor de texto sem texto de sua preferência (por exemplo, Bloco de [Notas++](https://notepad-plus-plus.org/) ou [Editor JSON Online](https://www.jsoneditoronline.org/)) para:
 
-1. Adicione uma [definição de atributo](synchronization-attributedefinition.md) para o `officeCode` atributo. 
+1. Adicione uma [definição de](synchronization-attributedefinition.md) atributo para o `officeCode` atributo. 
 
-    - Em diretórios, encontre o diretório com o nome salesforce.com e, na matriz do objeto, localize aquele chamado **usuário**.
+    - Em diretórios, encontre o diretório com o nome salesforce.com e, na matriz do objeto, encontre o chamado **Usuário**.
     - Adicione o novo atributo à lista, especificando o nome e o tipo, conforme mostrado no exemplo a seguir.
 
-2. Adicione um [mapeamento de atributos](synchronization-attributemapping.md) entre o `officeCode` e o `extensionAttribute10` .
+2. Adicione um [mapeamento de atributo](synchronization-attributemapping.md) entre e `officeCode` `extensionAttribute10` .
 
-    - Em [synchronizationRules](synchronization-synchronizationrule.md), localize a regra que especifica o Azure ad como o diretório de origem e Salesforce.com como o diretório de destino ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).
-    - Nos [Objectmappings](synchronization-objectmapping.md) da regra, encontre o mapeamento entre usuários ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).
-    - Na matriz [attributeMappings](synchronization-attributemapping.md) do **objectmapping** , adicione uma nova entrada, conforme mostrado no exemplo a seguir.
+    - Em [synchronizationRules](synchronization-synchronizationrule.md), encontre a regra que especifica o Azure AD como o diretório de origem e Salesforce.com como o diretório de destino ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).
+    - Nos [objectMappings](synchronization-objectmapping.md) da regra, encontre o mapeamento entre os usuários ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).
+    - Na matriz [attributeMappings](synchronization-attributemapping.md) do **objectMapping,** adicione uma nova entrada, conforme mostrado no exemplo a seguir.
 
 ```json
 {  
@@ -274,7 +274,7 @@ Use um editor de texto sem formatação de sua escolha (por exemplo, [bloco de n
 
 ## <a name="save-the-modified-synchronization-schema"></a>Salvar o esquema de sincronização modificado
 
-Ao salvar o esquema de sincronização atualizado, certifique-se de incluir o esquema inteiro, incluindo as partes não modificadas. Essa solicitação substituirá o esquema existente pelo que você fornecer.
+Ao salvar o esquema de sincronização atualizado, certifique-se de incluir todo o esquema, incluindo as partes não modificadas. Essa solicitação substituirá o esquema existente pelo que você fornecer.
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -287,7 +287,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincronização, ele começará a reprocessar todas as contas em seu Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
+Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincronização, ele começará a processar todas as contas no Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

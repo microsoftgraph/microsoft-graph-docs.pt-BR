@@ -1,46 +1,46 @@
 ---
-title: tipo de recurso conditionalAccessConditionSet
-description: Representa o tipo de condições que controlam quando a política se aplica.
+title: Tipo de recurso conditionalAccessConditionSet
+description: Representa o tipo de condições que regem quando a política se aplica.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ba88e9e5fd67bba5dd88fe323f3140bdbebff479
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e331a482fce3274463f742ceba6dc111437cd95
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994292"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137379"
 ---
-# <a name="conditionalaccessconditionset-resource-type"></a>tipo de recurso conditionalAccessConditionSet
+# <a name="conditionalaccessconditionset-resource-type"></a>Tipo de recurso conditionalAccessConditionSet
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o tipo de condições que controlam quando a política se aplica.
+Representa o tipo de condições que regem quando a política se aplica.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Emprego|[conditionalAccessApplications](conditionalaccessapplications.md)| Aplicativos e ações do usuário incluídos no e excluídos da política. Obrigatório. |
-|usuários|[conditionalAccessUsers](conditionalaccessusers.md)| Usuários, grupos e funções incluídos no e excluídos da política. Obrigatório. |
+|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Aplicativos e ações do usuário incluídos e excluídos da política. Obrigatório. |
+|usuários|[conditionalAccessUsers](conditionalaccessusers.md)| Usuários, grupos e funções incluídos e excluídos da política. Obrigatório. |
 |clientAppTypes|Coleção de cadeias de caracteres| Tipos de aplicativo cliente incluídos na política. Os possíveis valores são: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Estados do dispositivo na política. |
-|dispositivos|[conditionalAccessDevices](conditionalaccessdevices.md)| Dispositivos na política. |
-|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locais incluídos no e excluídos da política. |
-|plataformas|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
-|signInRiskLevels|Coleção de cadeias de caracteres| Níveis de risco de entrada incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
+|devices|[conditionalAccessDevices](conditionalaccessdevices.md)| Dispositivos na política. |
+|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locais incluídos e excluídos da política. |
+|platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
+|signInRiskLevels|Coleção de cadeias de caracteres| Níveis de risco de login incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
 |userRiskLevels|Coleção de cadeias de caracteres| Níveis de risco do usuário incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
 
 >**Observação:** 
 
 >**clientAppType** `modern` será preterido e substituído por `mobileAppsAndDesktopClients` . 
 
->**clientAppType** `easUnsupported` será preterido em favor do `exchangeActiveSync` que inclui EAS plataformas suportadas e não suportadas. 
+>**clientAppType** `easUnsupported` será preterido em favor do que inclui plataformas compatíveis e sem suporte `exchangeActiveSync` do EAS. 
 
->Estamos preterindo a condição **deviceStates** e ela poderá ser removida no futuro. Em frente, use a condição **dispositivos** .
+>Estamos preterindo a **condição deviceStates** e ela pode ser removida no futuro. No futuro, use a **condição de dispositivos.**
 
 ## <a name="relationships"></a>Relações
 

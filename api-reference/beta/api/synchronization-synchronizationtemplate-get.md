@@ -1,18 +1,18 @@
 ---
-title: Obter synchronizationtemplate
+title: Obter synchronizationTemplate
 description: Recupere um modelo de sincronização por seu identificador.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cbbbc56b78523b88edd1d958179f6a479aa5163f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 8887896e734a2fd1d81d9a3e9c14e36125e78a9c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969134"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136336"
 ---
-# <a name="get-synchronizationtemplate"></a>Obter synchronizationtemplate
+# <a name="get-synchronizationtemplate"></a>Obter synchronizationTemplate
 
 Namespace: microsoft.graph
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [synchronizationtemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
 
 ### <a name="example"></a>Exemplo
 

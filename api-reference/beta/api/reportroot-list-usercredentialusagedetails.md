@@ -3,14 +3,14 @@ title: Listar userCredentialUsageDetails
 description: Obter uma lista de objetos userCredentialUsageDetails para um determinado locatário.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d1420e28ae5cc176b74cb1de8ac064e480249cd1
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: e64d98318bcf9b083005f79156bc425a3b0d0fbc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523945"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134481"
 ---
 # <a name="list-usercredentialusagedetails"></a>Listar userCredentialUsageDetails
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de objetos [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) para um determinado locatário. Os detalhes incluem informações do usuário, status da redefinição e o motivo da falha.
+Obter uma lista de [objetos userCredentialUsageDetails](../resources/usercredentialusagedetails.md) para um determinado locatário. Os detalhes incluem informações do usuário, status da redefinição e o motivo da falha.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,16 +40,16 @@ GET /reports/userCredentialUsageDetails
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Essa função suporta o parâmetro de consulta OData opcional **$Filter**. Você pode aplicar **$Filter** em uma ou mais das seguintes propriedades do recurso [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) .
+Esta função dá suporte ao parâmetro opcional de consulta OData **$filter**. Você pode aplicar **$filter** em uma ou mais das seguintes propriedades do [recurso userCredentialUsageDetails.](../resources/usercredentialusagedetails.md)
 
 | Propriedades | Descrição e exemplo |
 |:--------- |:----------- |
-| apresentam | Filtra por tipo de dados de uso que você deseja (registro vs Reset). Por exemplo: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Operadores de filtro suportados: `eq` |
-| userDisplayName | Filtrar por nome de exibição do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro suportados: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
-| userPrincipalName  | Filtrar por nome principal do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`.    Operadores de filtro suportados: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
-| IsSuccess | Filtrar por status da atividade. Por exemplo: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Operadores de filtro suportados: `eq` e `orderby` . |
-| authMethod  | Filtrar pelos métodos de autenticação usando durante o registro. Por exemplo: `/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`. Operadores de filtro suportados: `eq` . |
-| failureReason | Filtrar por motivo da falha (se a atividade falhar). Por exemplo: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`. Operadores de filtro suportados: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| recurso | Filtrar por tipo de dados de uso que você deseja (registro versus redefinição). Por exemplo: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Operadores de filtro com suporte: `eq` |
+| userDisplayName | Filtrar pelo nome de exibição do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| userPrincipalName  | Filtrar pelo nome principal do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`.    Operadores de filtro com suporte: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| isSuccess | Filtrar por status da atividade. Por exemplo: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Operadores de filtro com suporte: `eq` e `orderby` . |
+| authMethod  | Filtrar pelos métodos de autenticação que usam durante o registro. Por exemplo: `/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`. Operadores de filtro com suporte: `eq` . |
+| failureReason | Filtrar por motivo de falha (se a atividade tiver falhado). Por exemplo: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`. Operadores de filtro com suporte: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -65,7 +65,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos userCredentialUsageDetails](../resources/usercredentialusagedetails.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,16 +1,16 @@
 ---
 title: 'mailFolder: move'
 description: Mova uma mailFolder e seu conteúdo para outra mailFolder.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5d238806575f1efb5b2acb85e24dbc7609b73a0d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 078e5b81a3a3696cf07e7852fa466c0586ae6d09
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979254"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136904"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -56,7 +56,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [mailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta e um `200 OK` [objeto mailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

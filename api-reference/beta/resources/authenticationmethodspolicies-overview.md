@@ -1,16 +1,16 @@
 ---
-title: Visão geral da API de métodos de autenticação do Azure AD
+title: Visão geral da API da política de métodos de autenticação do Azure AD
 description: As políticas de métodos de autenticação definem quais métodos de autenticação podem ser usados pelos usuários no Azure AD.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: d520206782301ad1edca238236d854a80d2efa21
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1d8ba37ebcd97ae93f057d30ae20fb8031b45989
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874288"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135454"
 ---
 # <a name="azure-ad-authentication-methods-policies-api-overview"></a>Visão geral da API de políticas de métodos de autenticação do Azure AD
 

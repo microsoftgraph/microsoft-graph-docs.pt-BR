@@ -1,47 +1,47 @@
 ---
-title: tipo de recurso conector
-description: Representa um conector de proxy de aplicativo.
+title: tipo de recurso do conector
+description: Representa um conector de Proxy de Aplicativo.
 author: japere
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 3e42bc42c1989e530f7b7f307da3963407ded112
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 53a5726456ce3d03ea537e87ec0dddb901623601
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027164"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136767"
 ---
-# <a name="connector-resource-type"></a>tipo de recurso conector
+# <a name="connector-resource-type"></a>tipo de recurso do conector
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Os conectores são agentes leves que ficam no local e facilitam a conexão de saída para o serviço de [proxy de aplicativo do Azure ad](https://aka.ms/whyappproxy) . Cada conector é parte de um [conector](connectorgroup.md).
+Conectores são agentes leves que ficam no local e facilitam a conexão de saída com o serviço de Proxy de Aplicativo do [Azure AD.](https://aka.ms/whyappproxy) Cada conector faz parte de um [connectorGroup](connectorgroup.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar conectores](../api/connector-list.md) | coleção [Connector](connector.md) | Recupere uma lista de objetos Connector. | 
-| [Obter conector](../api/connector-get.md) | [conector](connector.md) | Leia as propriedades e as relações do objeto Connector. |
-| [Listar memberOf](../api/connector-list-memberof.md) | coleção de [conectores](connectorgroup.md) | Lista o conjunto de objetos do grupo de conectores do qual o conector é membro. |
-| [Adicionar conector a connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Adicionar um conector a um conector. |
+| [Listar conectores](../api/connector-list.md) | [conjunto de conectores](connector.md) | Recupere uma lista de objetos de conector. | 
+| [Obter conector](../api/connector-get.md) | [connector](connector.md) | Leia as propriedades e os relacionamentos do objeto connector. |
+| [Listar memberOf](../api/connector-list-memberof.md) | [Coleção connectorGroup](connectorgroup.md) | Listar a coleção de objetos connectorGroup da que o conector é membro. |
+| [Adicionar conector a connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Adicione um conector a um connectorGroup. |
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|externalIp|String| O endereço IP externo, conforme detectado pelo servidor do conector. Somente leitura. |
+|externalIp|String| O endereço IP externo detectado pelo servidor do conector. Somente leitura. |
 |id|String| Identificador exclusivo do conector. Somente leitura. |
-|Nomecomputador|String| O nome do computador no qual o conector está instalado e em execução. |
+|machineName|String| O nome do computador em que o conector está instalado e em execução. |
 |status|cadeia de caracteres| Indica o status do conector. Os valores possíveis são: `active` e `inactive`. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|memberOf|coleção de [conectores](connectorgroup.md)| O MemberGroup do qual o conector é membro. Somente leitura. |
+|memberOf|[Coleção connectorGroup](connectorgroup.md)| O connectorGroup do que o conector é membro. Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -78,5 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
 
 

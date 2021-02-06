@@ -1,16 +1,16 @@
 ---
 title: Atualizar mailFolder
 description: Atualize as propriedades do objeto mailFolder.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 742d26144b42b5766dbab2ece4bee564f725fa70
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dd94327f83be7fba7360416ea3e76ea5fdcb9010
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981669"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136861"
 ---
 # <a name="update-mailfolder"></a>Atualizar mailFolder
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto [mailFolder](../resources/mailfolder.md) .
+Atualize as propriedades do [objeto mailFolder.](../resources/mailfolder.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

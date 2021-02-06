@@ -3,14 +3,14 @@ title: Visão geral da API de métodos de autenticação do Azure AD
 description: Os métodos de autenticação são como os usuários autenticam no Azure AD.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 98de9847ec0e50cb17c6ab64423d891bd3c5e8a3
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 314d1ab950924f1b8f315029c9a829958396d120
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874302"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135468"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Visão geral da API de métodos de autenticação do Azure AD
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 As APIs do método de autenticação são usadas para gerenciar os métodos de autenticação de um usuário. Por exemplo:
 
-* Você pode adicionar um número de telefone a um usuário. Em seguida, o usuário poderá usar esse número de telefone para autenticação por SMS e chamada de voz se estiver habilitado para usá-lo por política.
+* Você pode adicionar um número de telefone a um usuário. Em seguida, o usuário poderá usar esse número de telefone para autenticação de SMS e chamada de voz se estiver habilitado para usá-lo por política.
 * Você pode atualizar esse número ou excluí-lo do usuário.
 * Você pode habilitar ou desabilitar o número de login por SMS.
 * Você pode redefinir a senha de um usuário.

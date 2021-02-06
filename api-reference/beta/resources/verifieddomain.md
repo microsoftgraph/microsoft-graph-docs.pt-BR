@@ -3,14 +3,14 @@ title: Tipo de recurso verifiedDomain
 description: Especifica um domínio de um locatário. A propriedade **verifiedDomains** da entidade organization é uma coleção de **VerifiedDomain**.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: davidmu1
-ms.openlocfilehash: b0dd473d4358da38a09b55c7bc3ad052d2b6ce8e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2c4e833042a7bca3f3b85d3c9eb15bd7eb12925d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057749"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135842"
 ---
 # <a name="verifieddomain-resource-type"></a>Tipo de recurso verifiedDomain
 
@@ -26,9 +26,9 @@ Especifica um domínio de um locatário. A propriedade **verifiedDomains** da en
 |:---------------|:--------|:----------|
 |capabilities|Cadeia de caracteres|Por exemplo, "Email" ou "OfficeCommunicationsOnline".|
 |isDefault|Booliano|                **true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.            |
-|isinitial|Booliano|**true** se esse é o domínio inicial associado ao locatário; caso contrário, **false**|
-|name|Cadeia de caracteres|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
-|tipo|Cadeia de caracteres|Por exemplo, "Managed".|
+|isInitial|Booliano|**true** se esse é o domínio inicial associado ao locatário; caso contrário, **false**|
+|nome|String|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
+|type|String|Por exemplo, "Managed".|
 
 ## <a name="json-representation"></a>Representação JSON
 

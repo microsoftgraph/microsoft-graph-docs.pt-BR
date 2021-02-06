@@ -1,16 +1,16 @@
 ---
 title: Listar modelos de sincronização existentes
-description: Lista os modelos de sincronização associados a um determinado aplicativo ou entidade de serviço.
+description: Listar os modelos de sincronização associados a um determinado aplicativo ou entidade de serviço.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f723d3d3a7adc2fde43ae83d9381468ebe009625
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 7a012dd73b61667a020d53a6190114054d1dccd1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978169"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137262"
 ---
 # <a name="list-existing-synchronization-templates"></a>Listar modelos de sincronização existentes
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lista os modelos de sincronização associados a um determinado aplicativo ou entidade de serviço.
+Listar os modelos de sincronização associados a um determinado aplicativo ou entidade de serviço.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e acollection dos objetos [synchronizationtemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de `200 OK` resposta e uma acolleção de objetos [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
 
 ### <a name="example"></a>Exemplo
 

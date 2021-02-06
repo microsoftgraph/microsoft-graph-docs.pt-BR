@@ -1,50 +1,50 @@
 ---
-title: tipo de recurso onPremisesAgentGroup
-description: tipo de recurso onPremisesAgentGroup.
+title: Tipo de recurso onPremisesAgentGroup
+description: Tipo de recurso onPremisesAgentGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 84f0236c2c2e52742a84f19eae8eb7693f1b559b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0056f78eaecfad34a10dfb1ad2da04c15a6bc370
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052593"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136147"
 ---
-# <a name="onpremisesagentgroup-resource-type"></a>tipo de recurso onPremisesAgentGroup
+# <a name="onpremisesagentgroup-resource-type"></a>Tipo de recurso onPremisesAgentGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o grupo de agentes local. Os grupos de agentes permitem que um administrador de locatários atribua [agentes](onpremisesagent.md) específicos para atender [recursos locais publicados](publishedresource.md)específicos.
+Representa o grupo de agentes locais. Os grupos de agentes permitem que um administrador de locatários atribua [agentes](onpremisesagent.md) específicos para atender a recursos locais [publicados específicos.](publishedresource.md)
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | coleção onPremisesAgentGroups | Obtenha uma coleção de objetos **onPremisesAgentGroup** . |
-| [Obter onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Leia as propriedades e os relacionamentos de um objeto **onPremisesAgentGroup** . |
-| [Criar onPremisesAgentGroup](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Criar um novo **onPremisesAgentGroup**. |
-| [Atualizar onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Atualize um objeto **onPremisesAgentGroup** . |
-| [Excluir onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | Nenhum | Excluir um objeto **onPremisesAgentGroup** . |
+| [Listar onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | Coleção onPremisesAgentGroups | Obter uma **coleção de objetos onPremisesAgentGroup.** |
+| [Obter onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Leia as propriedades e os relacionamentos de um **objeto onPremisesAgentGroup.** |
+| [Criar onPremisesAgentGroup](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Crie um novo **onPremisesAgentGroup**. |
+| [Atualizar onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Atualize **um objeto onPremisesAgentGroup.** |
+| [Excluir onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | Nenhuma | **Exclua um objeto onPremisesAgentGroup.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|Cadeia de caracteres|Nome para exibição do **onPremisesAgentGroup**.|
-|id|Cadeia de caracteres| A ID de objeto do **onPremisesAgentGroup**. Somente leitura.|
-|isDefault|Booliano|Indica se o **onPremisesAgentGroup** é o grupo de agente padrão. Somente um único grupo de agentes pode ser o padrão **onPremisesAgentGroup** e é definido pelo sistema.|
-|publishingtype|cadeia de caracteres| Os valores possíveis são: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|displayName|String|Nome de exibição **do onPremisesAgentGroup**.|
+|id|String| A ID de objeto do **onPremisesAgentGroup**. Somente leitura.|
+|isDefault|Booliano|Indica se o **onPremisesAgentGroup é** o grupo de agentes padrão. Somente um único grupo de agentes pode ser o **onPremisesAgentGroup** padrão e é definido pelo sistema.|
+|publishingType|string| Os valores possíveis são: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|SNMP|coleção [onPremisesAgent](onpremisesagent.md)| Lista de **onPremisesAgent** que são atribuídas a um **onPremisesAgentGroup**. Somente leitura. Anulável.|
-|publishedResources|coleção [publishedResource](publishedresource.md)| Lista de **publishedResource** que são atribuídas a um **onPremisesAgentGroup**. Somente leitura. Anulável.|
+|agentes|[Coleção onPremisesAgent](onpremisesagent.md)| Lista de **onPremisesAgent** que são atribuídos a **um onPremisesAgentGroup**. Somente leitura. Anulável.|
+|publishedResources|[Coleção publishedResource](publishedresource.md)| Lista de **publishedResource** que são atribuídos a **um onPremisesAgentGroup**. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -78,5 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

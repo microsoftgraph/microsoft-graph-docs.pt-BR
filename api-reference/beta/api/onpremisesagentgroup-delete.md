@@ -1,16 +1,16 @@
 ---
 title: Excluir onPremisesAgentGroup
-description: Excluir um objeto **onPremisesAgentGroup** .
+description: '**Exclua um objeto onPremisesAgentGroup.**'
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ba173597540597314ca832d0904f2ee34eb517a3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 97a778347065783a887de1fd9877af35081e44b8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977013"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136422"
 ---
 # <a name="delete-onpremisesagentgroup"></a>Excluir onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
+[Exclua um objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -108,5 +108,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

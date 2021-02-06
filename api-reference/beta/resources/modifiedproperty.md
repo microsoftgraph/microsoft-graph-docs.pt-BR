@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso modifiedproperty
+title: Tipo de recurso modifiedProperty
 description: Descreve as alterações realizadas no sistema de destino.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d5dbf7f3ef2078baca54c03e8e67a94f5b52ee85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49c2af65022d6fddef394423b6d615dba9f20efc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021291"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136175"
 ---
-# <a name="modifiedproperty-resource-type"></a>tipo de recurso modifiedproperty
+# <a name="modifiedproperty-resource-type"></a>Tipo de recurso modifiedProperty
 
 Namespace: microsoft.graph
 
@@ -25,8 +25,8 @@ Descreve as alterações realizadas no sistema de destino.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |displayName|String|Nome da propriedade que foi modificada.|
-|newValue|Cadeia de caracteres|Novo valor da propriedade.|
-|oldValue|Cadeia de caracteres|Valor da propriedade Old.|
+|newValue|Cadeia de caracteres|Novo valor de propriedade.|
+|oldValue|Cadeia de caracteres|Valor antigo da propriedade.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -3,14 +3,14 @@ title: Listar publishedResources
 description: Recupere uma lista de objetos publishedResource.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9182d2ed5764d0f35940153c8b240466acffccc2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7d3681d9c1000a4549908b248d40cf3d3b96bd98
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973373"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135524"
 ---
 # <a name="list-publishedresources"></a>Listar publishedResources
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [publishedResource](../resources/publishedresource.md) .
+Recupere uma lista de [objetos publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [publishedResource](../resources/publishedresource.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos publishedResource](../resources/publishedresource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -134,5 +134,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

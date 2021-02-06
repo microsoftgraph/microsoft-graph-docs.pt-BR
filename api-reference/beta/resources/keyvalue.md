@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso KeyValue
-description: Fornece informações relevantes adicionais sobre a solicitação de entrada
+title: Tipo de recurso keyValue
+description: Fornece informações relevantes adicionais sobre a solicitação de login
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 78dd4f6ede6e918bb1caaae3761ef258b4e0a427
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 3459f827f35049b383e732c805d61371577b2260
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524698"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135391"
 ---
-# <a name="keyvalue-resource-type"></a>tipo de recurso KeyValue
+# <a name="keyvalue-resource-type"></a>Tipo de recurso keyValue
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fornece informações de processamento de autenticação adicionais, como o nome do servidor e a presença de dicas para entrar e domínio.
+Fornece informações adicionais de processamento de autenticação, como o nome do servidor e a presença de dicas para entrar e domínio.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|key|String|Contém o nome do campo ao qual um valor está associado. Quando uma dica de entrada ou de domínio é incluída na solicitação de entrada, os campos correspondentes são incluídos como pares de chave-valor. Chaves possíveis: `Login hint present` , `Domain hint present` .|
-|value|Cadeia de caracteres|Contém o valor correspondente para a chave especificada. O valor é `true` se uma dica de entrada foi incluída na solicitação de entrada; caso contrário `false` . O valor é `true` se uma dica de domínio foi incluída na solicitação de entrada; caso contrário `false` .|
+|key|String|Contém o nome do campo ao que um valor está associado. Quando uma dica de login ou domínio é incluída na solicitação de login, os campos correspondentes são incluídos como pares chave-valor. Chaves possíveis: `Login hint present` , `Domain hint present` .|
+|value|Cadeia de caracteres|Contém o valor correspondente para a chave especificada. O valor é `true` se uma dica de login foi incluída na solicitação de login; caso `false` contrário. O valor é `true` se uma dica de domínio foi incluída na solicitação de login; caso `false` contrário.|
 
 ## <a name="json-representation"></a>Representação JSON
 

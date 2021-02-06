@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso credentialUsageSummary
-description: Representa o estado atual de quantos usuários da sua organização estão usando recursos de redefinição de senha de autoatendimento.
+title: Tipo de recurso credentialUsageSummary
+description: Representa o estado atual de quantos usuários em sua organização estão usando recursos de redefinição de senha de autoatendado.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 9807e333fd13443462d2d3237150820afd254baa
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 43a17f91a1424d9ac8c0a388ef5404bbadf05189
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523144"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136280"
 ---
-# <a name="credentialusagesummary-resource-type"></a>tipo de recurso credentialUsageSummary
+# <a name="credentialusagesummary-resource-type"></a>Tipo de recurso credentialUsageSummary
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o estado atual de quantos usuários da sua organização estão usando recursos de redefinição de senha de autoatendimento.
+Representa o estado atual de quantos usuários em sua organização estão usando recursos de redefinição de senha de autoatendado.
 
 ## <a name="methods"></a>Métodos
 
@@ -30,11 +30,11 @@ Representa o estado atual de quantos usuários da sua organização estão usand
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| authMethod | cadeia de caracteres | Representa o método de autenticação usado pelo usuário. Os valores possíveis são: `email` , `mobileSMS` ,, `mobileCall` `officePhone` , `securityQuestion` (usado somente para redefinição de senha de autoatendimento),, `appNotification` `appCode` e  `alternateMobileCall` (somente com suporte para registro). |
-| failureActivityCount | Int64 | Fornece a contagem de redefinições ou dados de registro com falha. |
-| apresentam | cadeia de caracteres | Define o recurso a ser relatado. Os valores possíveis são: `registration` e `reset` . |
+| authMethod | string | Representa o método de autenticação que o usuário usou. Os valores possíveis são: , , , (usado somente para redefinição de senha de `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` autoatendido) `appNotification` `appCode` e  `alternateMobileCall` (somente com suporte para registro). |
+| failureActivityCount | Int64 | Fornece a contagem de redefinições com falha ou dados de registro. |
+| recurso | string | Define o recurso a ser reportdo. Os valores possíveis são: `registration` e `reset` . |
 | id | String | O identificador exclusivo da atividade. Somente leitura. |
-| successfulActivityCount | Int64 | Fornece a contagem de registros ou redefinições bem-sucedidas. |
+| successfulActivityCount | Int64 | Fornece a contagem de registros ou redefinições bem-sucedidos. |
 
 ## <a name="relationships"></a>Relações
 

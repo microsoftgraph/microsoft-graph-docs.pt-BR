@@ -1,24 +1,24 @@
 ---
-title: Remover o onpremisesAgent de um onPremisesAgentGroup
-description: Remover um onpremisesAgent de um onPremisesAgentGroup.
+title: Remover onpremisesAgent de um onPremisesAgentGroup
+description: Remova um onpremisesAgent de um onPremisesAgentGroup.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0acc8b18ce58a353640c66d55580f27f346d1d9f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 41719b5431bf04759788b56973a2dc11c5113b71
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975667"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136483"
 ---
-# <a name="remove-onpremisesagent-from-an-onpremisesagentgroup"></a>Remover o onPremisesAgent de um onPremisesAgentGroup
+# <a name="remove-onpremisesagent-from-an-onpremisesagentgroup"></a>Remover onPremisesAgent de um onPremisesAgentGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover um [onPremisesAgent](../resources/onpremisesagent.md) de um [onPremisesAgentGroup](../resources/onpremisesagentgroup.md).
+Remover um [onPremisesAgent](../resources/onpremisesagent.md) de [um onPremisesAgentGroup](../resources/onpremisesagentgroup.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -108,5 +108,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

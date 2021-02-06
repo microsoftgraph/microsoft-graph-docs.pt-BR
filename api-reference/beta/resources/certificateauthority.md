@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso certificateAuthority
+title: Tipo de recurso certificateAuthority
 description: Representa uma autoridade de certificação.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 87d439a15f9668931f0488e065cde5beef87ab2e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 64461015136129de452227cb0a8de5c7180cfb32
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042699"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135091"
 ---
-# <a name="certificateauthority-resource-type"></a>tipo de recurso certificateAuthority
+# <a name="certificateauthority-resource-type"></a>Tipo de recurso certificateAuthority
 
 Namespace: microsoft.graph
 
@@ -25,11 +25,11 @@ Representa uma autoridade de certificação.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |certificado|Binário|Obrigatório. A cadeia de caracteres codificada em base64 que representa o certificado público.|
-|certificateRevocationListUrl|Cadeia de caracteres|A URL da lista de certificados revogados.|
-|deltaCertificateRevocationListUrl|Cadeia de caracteres|A URL contém a lista de todos os certificados revogados desde a última vez que uma lista de revocaton de certificados completo foi criada.|
-|isRootAuthority|Booliano|Obrigatório. **true** se o certificado confiável é uma autoridade raiz, **false** se o certificado confiável é uma autoridade intermediária.|
-|emissor|Cadeia de caracteres|O emissor do certificado, calculado com base no valor do **certificado** . Somente leitura. |
-|issuerSki|Cadeia de caracteres|O identificador de chave de entidade do certificado, calculado com base no valor do **certificado** . Somente leitura.|
+|certificateRevocationListUrl|String|A URL da lista de certificados revogados.|
+|deltaCertificateRevocationListUrl|String|A URL contém a lista de todos os certificados revogados desde a última vez que uma lista de certificados revogados completos foi criada.|
+|isRootAuthority|Boolean|Obrigatório. **true** se o certificado confiável for uma autoridade raiz, **false** se o certificado confiável for uma autoridade intermediária.|
+|emissor|String|O emissor do certificado, calculado a partir do valor **do** certificado. Somente leitura. |
+|issuerSki|String|O identificador da chave de assunto do certificado, calculado a partir do valor **do** certificado. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,39 +1,39 @@
 ---
-title: tipo de recurso applicationSignInDetailedSummary
-description: Representa um resumo de entrada do aplicativo.
+title: Tipo de recurso applicationSignInDetailedSummary
+description: Representa um resumo de login do aplicativo.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: abe2d8524d2ef23885285bacc0c953057035f54d
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 454c4e2e9e57b61194e6f3e6970e5db1ea414369
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523809"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137407"
 ---
-# <a name="applicationsigninsummary-resource-type"></a>tipo de recurso applicationSignInSummary
+# <a name="applicationsigninsummary-resource-type"></a>Tipo de recurso applicationSignInSummary
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um resumo de entrada do aplicativo.
+Representa um resumo de login do aplicativo.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Obter applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | Leia as propriedades e os relacionamentos de um objeto **applicationSignInSummary** . |
+| [Obter applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | Leia as propriedades e os relacionamentos de **um objeto applicationSignInSummary.** |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|appDisplayName|String|Nome do aplicativo no qual o usuário entrou.|
-|appId|String|  ID do aplicativo que o usuário assinou me .\n\nPara.|
-|failedSignInCount|Int64|Contagem de entradas com falha feitas pelo aplicativo.|
-|successPercentage|Int32|Porcentagem de entradas bem-sucedidas feitas pelo aplicativo.|
-|successfulSignInCount|Int64|Contagem de entradas bem-sucedidas feitas pelo aplicativo.|
+|appDisplayName|String|Nome do aplicativo em que o usuário se inscreveu.|
+|appId|String|  ID do aplicativo que o usuário assinou i nto.|
+|failedSignInCount|Int64|Contagem de falhas de logins feitas pelo aplicativo.|
+|successPercentage|Int32|Porcentagem de logins bem-sucedidos feitos pelo aplicativo.|
+|successfulSignInCount|Int64|Contagem de logins bem-sucedidos feitos pelo aplicativo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

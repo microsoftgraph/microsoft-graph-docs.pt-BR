@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso applicationServicePrincipal
-description: Uma combinação de um aplicativo e um servicePrincipalName.
+title: Tipo de recurso applicationServicePrincipal
+description: Uma combinação de um aplicativo e um servicePrincipal.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 77d1d9beeab406896bda53e88e9043be0a99e8fe
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: d69a9942e0ef14ddb866794b46a06c02d57dec62
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777708"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134754"
 ---
-# <a name="applicationserviceprincipal-resource-type"></a>tipo de recurso applicationServicePrincipal
+# <a name="applicationserviceprincipal-resource-type"></a>Tipo de recurso applicationServicePrincipal
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Quando uma instância de um aplicativo da Galeria de aplicativos do Azure AD é adicionada, os objetos [Application](../resources/application.md) e [UserPrincipal](../resources/serviceprincipal.md) são criados no diretório. O **applicationServicePrincipal** representa a concatenação do **aplicativo** e do objeto **servicePrincipalName** .
+Quando uma instância de um aplicativo da galeria de aplicativos do Azure AD é adicionada, objetos [de](../resources/application.md) aplicativo e [servicePrincipal](../resources/serviceprincipal.md) são criados no diretório. O **applicationServicePrincipal** representa a concatenação do **aplicativo e** do objeto **servicePrincipal.**
 
 ## <a name="methods"></a>Métodos
 
-Nenhum
+Nenhuma
 
 ## <a name="properties"></a>Propriedades
 

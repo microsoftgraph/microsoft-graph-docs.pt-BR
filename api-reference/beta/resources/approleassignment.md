@@ -1,16 +1,16 @@
 ---
-title: Tipo de recurso appRoleAssignment
+title: Tipo de recurso plannerAssignment
 description: Utilizado para registro quando um usuário, grupo ou entidade de serviço é atribuído a uma função de aplicativo na entidade de serviço de um aplicativo. Você pode criar, ler e excluir as atribuições de função.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: c23c0a9d4e3f41ca21b285eb7f5484678c3d8b66
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d91393823efde4a384a2713723effa8c3f947a8b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405621"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135265"
 ---
 # <a name="approleassignment-resource-type"></a>Tipo de recurso appRoleAssignment
 

@@ -1,16 +1,16 @@
 ---
 title: Excluir delegatedPermissionClassification
-description: Excluir uma classificação de permissão delegada da entidade de serviço de uma API.
+description: Exclua uma classificação de permissão delegada da entidade de serviço de uma API.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 92d38d0559396b7a0ef2adb230a2f6ef4321bacd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: aa10fbf12e0fef1ef6b8a96ec61cbb0571d47f8b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137386"
 ---
 # <a name="delete-delegatedpermissionclassification"></a>Excluir delegatedPermissionClassification
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um [delegatedPermissionClassification](../resources/delegatedPermissionClassification.md) que tinha sido definido anteriormente para uma permissão delegada.
+Exclui um [delegatedPermissionClassification](../resources/delegatedPermissionClassification.md) que foi definido anteriormente para uma permissão delegada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | PermissionGrantPolicy. ReadWrite. All |
+|Application | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -99,3 +99,4 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+
