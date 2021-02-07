@@ -3,80 +3,80 @@ title: Criar Usuário
 description: Usar esta API para criar um novo Usuário.
 author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 44215db3fd73751c1910c8fbd6e0f34ffc82be99
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7a9564aa8c6d7d8bf966c33da2969d9071fb3f6e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523508"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137204"
 ---
-# <a name="create-user"></a><span data-ttu-id="c0cbb-103">Criar Usuário</span><span class="sxs-lookup"><span data-stu-id="c0cbb-103">Create User</span></span>
+# <a name="create-user"></a><span data-ttu-id="f5fc0-103">Criar Usuário</span><span class="sxs-lookup"><span data-stu-id="f5fc0-103">Create User</span></span>
 
-<span data-ttu-id="c0cbb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c0cbb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f5fc0-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f5fc0-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c0cbb-p101">Crie um novo [usuário](../resources/user.md). O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-p101">Create a new [user](../resources/user.md). The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.</span></span>
+<span data-ttu-id="f5fc0-p101">Crie um novo [usuário](../resources/user.md). O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-p101">Create a new [user](../resources/user.md). The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="c0cbb-109">Para criar usuários externos, use a [API de convite](invitation-post.md).</span><span class="sxs-lookup"><span data-stu-id="c0cbb-109">To create external users, use the [invitation API](invitation-post.md).</span></span>
+><span data-ttu-id="f5fc0-109">Para criar usuários externos, use a [API de convite](invitation-post.md).</span><span class="sxs-lookup"><span data-stu-id="f5fc0-109">To create external users, use the [invitation API](invitation-post.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c0cbb-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="c0cbb-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f5fc0-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="f5fc0-110">Permissions</span></span>
 
-<span data-ttu-id="c0cbb-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c0cbb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f5fc0-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f5fc0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c0cbb-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c0cbb-113">Permission type</span></span>      | <span data-ttu-id="c0cbb-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c0cbb-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f5fc0-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f5fc0-113">Permission type</span></span>      | <span data-ttu-id="f5fc0-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f5fc0-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c0cbb-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c0cbb-115">Delegated (work or school account)</span></span> | <span data-ttu-id="c0cbb-116">User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c0cbb-116">User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="c0cbb-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c0cbb-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c0cbb-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-118">Not supported.</span></span>    |
-|<span data-ttu-id="c0cbb-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c0cbb-119">Application</span></span> | <span data-ttu-id="c0cbb-120">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c0cbb-120">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f5fc0-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f5fc0-115">Delegated (work or school account)</span></span> | <span data-ttu-id="f5fc0-116">User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f5fc0-116">User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f5fc0-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f5fc0-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f5fc0-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-118">Not supported.</span></span>    |
+|<span data-ttu-id="f5fc0-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f5fc0-119">Application</span></span> | <span data-ttu-id="f5fc0-120">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f5fc0-120">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c0cbb-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c0cbb-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f5fc0-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f5fc0-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c0cbb-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c0cbb-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f5fc0-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f5fc0-122">Request headers</span></span>
 
-| <span data-ttu-id="c0cbb-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c0cbb-123">Header</span></span>       | <span data-ttu-id="c0cbb-124">Valor</span><span class="sxs-lookup"><span data-stu-id="c0cbb-124">Value</span></span> |
+| <span data-ttu-id="f5fc0-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f5fc0-123">Header</span></span>       | <span data-ttu-id="f5fc0-124">Valor</span><span class="sxs-lookup"><span data-stu-id="f5fc0-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c0cbb-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="c0cbb-125">Authorization</span></span>  | <span data-ttu-id="c0cbb-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="c0cbb-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c0cbb-128">Content-Type</span></span>  | <span data-ttu-id="c0cbb-129">application/json</span><span class="sxs-lookup"><span data-stu-id="c0cbb-129">application/json</span></span>  |
+| <span data-ttu-id="f5fc0-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="f5fc0-125">Authorization</span></span>  | <span data-ttu-id="f5fc0-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f5fc0-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f5fc0-128">Content-Type</span></span>  | <span data-ttu-id="f5fc0-129">application/json</span><span class="sxs-lookup"><span data-stu-id="f5fc0-129">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c0cbb-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c0cbb-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f5fc0-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f5fc0-130">Request body</span></span>
 
-<span data-ttu-id="c0cbb-131">No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="c0cbb-131">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
+<span data-ttu-id="f5fc0-131">No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="f5fc0-131">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
 
-<span data-ttu-id="c0cbb-132">A tabela a seguir lista as propriedades que são necessárias ao criar um usuário.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-132">The following table lists the properties that are required when you create a user.</span></span> <span data-ttu-id="c0cbb-133">Se você estiver incluindo uma propriedade de **identidades** para o usuário que está criando, nem todas as propriedades listadas serão necessárias.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-133">If you're including an **identities** property for the user you're creating, not all the properties listed are required.</span></span> <span data-ttu-id="c0cbb-134">Para obter uma [identidade de conta local B2C](../resources/objectidentity.md), só é necessário **passwordProfile** e **passwordPolicy** deve ser definido como `DisablePasswordExpiration`.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-134">For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required, and **passwordPolicy** must be set to `DisablePasswordExpiration`.</span></span> <span data-ttu-id="c0cbb-135">Para uma identidade social, nenhuma das propriedades é necessária.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-135">For a social identity, none of the properties are required.</span></span>
+<span data-ttu-id="f5fc0-132">A tabela a seguir lista as propriedades que são necessárias ao criar um usuário.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-132">The following table lists the properties that are required when you create a user.</span></span> <span data-ttu-id="f5fc0-133">Se você estiver incluindo uma propriedade de **identidades** para o usuário que está criando, nem todas as propriedades listadas serão necessárias.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-133">If you're including an **identities** property for the user you're creating, not all the properties listed are required.</span></span> <span data-ttu-id="f5fc0-134">Para obter uma [identidade de conta local B2C](../resources/objectidentity.md), só é necessário **passwordProfile** e **passwordPolicy** deve ser definido como `DisablePasswordExpiration`.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-134">For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required, and **passwordPolicy** must be set to `DisablePasswordExpiration`.</span></span> <span data-ttu-id="f5fc0-135">Para uma identidade social, nenhuma das propriedades é necessária.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-135">For a social identity, none of the properties are required.</span></span>
 
-| <span data-ttu-id="c0cbb-136">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="c0cbb-136">Parameter</span></span> | <span data-ttu-id="c0cbb-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="c0cbb-137">Type</span></span> | <span data-ttu-id="c0cbb-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="c0cbb-138">Description</span></span>|
+| <span data-ttu-id="f5fc0-136">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="f5fc0-136">Parameter</span></span> | <span data-ttu-id="f5fc0-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="f5fc0-137">Type</span></span> | <span data-ttu-id="f5fc0-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="f5fc0-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c0cbb-139">accountEnabled</span><span class="sxs-lookup"><span data-stu-id="c0cbb-139">accountEnabled</span></span> |<span data-ttu-id="c0cbb-140">booliano</span><span class="sxs-lookup"><span data-stu-id="c0cbb-140">boolean</span></span> |<span data-ttu-id="c0cbb-141">true se a conta estiver habilitada; caso contrário, false.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-141">true if the account is enabled; otherwise, false.</span></span>|
-|<span data-ttu-id="c0cbb-142">displayName</span><span class="sxs-lookup"><span data-stu-id="c0cbb-142">displayName</span></span> |<span data-ttu-id="c0cbb-143">string</span><span class="sxs-lookup"><span data-stu-id="c0cbb-143">string</span></span> |<span data-ttu-id="c0cbb-144">Nome de exibição no catálogo de endereços do usuário.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-144">The name to display in the address book for the user.</span></span>|
-|<span data-ttu-id="c0cbb-145">onPremisesImmutableId</span><span class="sxs-lookup"><span data-stu-id="c0cbb-145">onPremisesImmutableId</span></span> |<span data-ttu-id="c0cbb-146">string</span><span class="sxs-lookup"><span data-stu-id="c0cbb-146">string</span></span> |<span data-ttu-id="c0cbb-147">Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-147">Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.</span></span>|
-|<span data-ttu-id="c0cbb-148">mailNickname</span><span class="sxs-lookup"><span data-stu-id="c0cbb-148">mailNickname</span></span> |<span data-ttu-id="c0cbb-149">string</span><span class="sxs-lookup"><span data-stu-id="c0cbb-149">string</span></span> |<span data-ttu-id="c0cbb-150">O alias de email do usuário.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-150">The mail alias for the user.</span></span>|
-|<span data-ttu-id="c0cbb-151">passwordProfile</span><span class="sxs-lookup"><span data-stu-id="c0cbb-151">passwordProfile</span></span>|[<span data-ttu-id="c0cbb-152">PasswordProfile</span><span class="sxs-lookup"><span data-stu-id="c0cbb-152">PasswordProfile</span></span>](../resources/passwordprofile.md) |<span data-ttu-id="c0cbb-153">O perfil de senha do usuário.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-153">The password profile for the user.</span></span>|
-|<span data-ttu-id="c0cbb-154">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="c0cbb-154">userPrincipalName</span></span> |<span data-ttu-id="c0cbb-155">string</span><span class="sxs-lookup"><span data-stu-id="c0cbb-155">string</span></span> |<span data-ttu-id="c0cbb-156">Nome UPN (usuario@contoso.com).</span><span class="sxs-lookup"><span data-stu-id="c0cbb-156">The user principal name (someuser@contoso.com).</span></span>|
+|<span data-ttu-id="f5fc0-139">accountEnabled</span><span class="sxs-lookup"><span data-stu-id="f5fc0-139">accountEnabled</span></span> |<span data-ttu-id="f5fc0-140">booliano</span><span class="sxs-lookup"><span data-stu-id="f5fc0-140">boolean</span></span> |<span data-ttu-id="f5fc0-141">true se a conta estiver habilitada; caso contrário, false.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-141">true if the account is enabled; otherwise, false.</span></span>|
+|<span data-ttu-id="f5fc0-142">displayName</span><span class="sxs-lookup"><span data-stu-id="f5fc0-142">displayName</span></span> |<span data-ttu-id="f5fc0-143">string</span><span class="sxs-lookup"><span data-stu-id="f5fc0-143">string</span></span> |<span data-ttu-id="f5fc0-144">Nome de exibição no catálogo de endereços do usuário.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-144">The name to display in the address book for the user.</span></span>|
+|<span data-ttu-id="f5fc0-145">onPremisesImmutableId</span><span class="sxs-lookup"><span data-stu-id="f5fc0-145">onPremisesImmutableId</span></span> |<span data-ttu-id="f5fc0-146">string</span><span class="sxs-lookup"><span data-stu-id="f5fc0-146">string</span></span> |<span data-ttu-id="f5fc0-147">Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-147">Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.</span></span>|
+|<span data-ttu-id="f5fc0-148">mailNickname</span><span class="sxs-lookup"><span data-stu-id="f5fc0-148">mailNickname</span></span> |<span data-ttu-id="f5fc0-149">string</span><span class="sxs-lookup"><span data-stu-id="f5fc0-149">string</span></span> |<span data-ttu-id="f5fc0-150">O alias de email do usuário.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-150">The mail alias for the user.</span></span>|
+|<span data-ttu-id="f5fc0-151">passwordProfile</span><span class="sxs-lookup"><span data-stu-id="f5fc0-151">passwordProfile</span></span>|[<span data-ttu-id="f5fc0-152">PasswordProfile</span><span class="sxs-lookup"><span data-stu-id="f5fc0-152">PasswordProfile</span></span>](../resources/passwordprofile.md) |<span data-ttu-id="f5fc0-153">O perfil de senha do usuário.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-153">The password profile for the user.</span></span>|
+|<span data-ttu-id="f5fc0-154">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="f5fc0-154">userPrincipalName</span></span> |<span data-ttu-id="f5fc0-155">string</span><span class="sxs-lookup"><span data-stu-id="f5fc0-155">string</span></span> |<span data-ttu-id="f5fc0-156">Nome UPN (usuario@contoso.com).</span><span class="sxs-lookup"><span data-stu-id="f5fc0-156">The user principal name (someuser@contoso.com).</span></span>|
 
-<span data-ttu-id="c0cbb-157">Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-157">Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.</span></span>
+<span data-ttu-id="f5fc0-157">Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-157">Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="c0cbb-158">Os usuários federados criados usando essa API serão forçados a entrar a cada 12 horas por padrão.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-158">Federated users created using this API will be forced to sign-in every 12 hours by default.</span></span>  <span data-ttu-id="c0cbb-159">Para obter mais informações sobre como alterar isso, confira [exceções para vidas úteis de token](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).</span><span class="sxs-lookup"><span data-stu-id="c0cbb-159">For more information on how to change this, see [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).</span></span>
+><span data-ttu-id="f5fc0-158">Os usuários federados criados usando essa API serão forçados a entrar a cada 12 horas por padrão.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-158">Federated users created using this API will be forced to sign-in every 12 hours by default.</span></span>  <span data-ttu-id="f5fc0-159">Para obter mais informações sobre como alterar isso, confira [exceções para vidas úteis de token](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).</span><span class="sxs-lookup"><span data-stu-id="f5fc0-159">For more information on how to change this, see [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).</span></span>
 
-## <a name="response"></a><span data-ttu-id="c0cbb-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0cbb-160">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f5fc0-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5fc0-160">Response</span></span>
 
-<span data-ttu-id="c0cbb-161">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-161">If successful, this method returns `201 Created` response code and [user](../resources/user.md) object in the response body.</span></span>
+<span data-ttu-id="f5fc0-161">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-161">If successful, this method returns `201 Created` response code and [user](../resources/user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c0cbb-162">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c0cbb-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f5fc0-162">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f5fc0-162">Example</span></span>
 
-### <a name="example-1-create-a-user"></a><span data-ttu-id="c0cbb-163">Exemplo 1: criar um usuário</span><span class="sxs-lookup"><span data-stu-id="c0cbb-163">Example 1: Create a user</span></span>
+### <a name="example-1-create-a-user"></a><span data-ttu-id="f5fc0-163">Exemplo 1: criar um usuário</span><span class="sxs-lookup"><span data-stu-id="f5fc0-163">Example 1: Create a user</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c0cbb-164">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c0cbb-164">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f5fc0-164">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f5fc0-164">Request</span></span>
 
-<span data-ttu-id="c0cbb-165">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-165">Here is an example of the request.</span></span>
+<span data-ttu-id="f5fc0-165">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-165">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c0cbb-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="c0cbb-166">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f5fc0-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="f5fc0-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"
@@ -97,30 +97,30 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="c0cbb-167">C#</span><span class="sxs-lookup"><span data-stu-id="c0cbb-167">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f5fc0-167">C#</span><span class="sxs-lookup"><span data-stu-id="f5fc0-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c0cbb-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c0cbb-168">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f5fc0-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f5fc0-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c0cbb-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c0cbb-169">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f5fc0-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f5fc0-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c0cbb-170">Java</span><span class="sxs-lookup"><span data-stu-id="c0cbb-170">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="f5fc0-170">Java</span><span class="sxs-lookup"><span data-stu-id="f5fc0-170">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="c0cbb-171">No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="c0cbb-171">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
+<span data-ttu-id="f5fc0-171">No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="f5fc0-171">In the request body, supply a JSON representation of [user](../resources/user.md) object.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="c0cbb-172">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0cbb-172">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f5fc0-172">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5fc0-172">Response</span></span>
 
-<span data-ttu-id="c0cbb-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="f5fc0-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -147,17 +147,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a><span data-ttu-id="c0cbb-176">Exemplo 2: criar um usuário com identidades de conta social e local</span><span class="sxs-lookup"><span data-stu-id="c0cbb-176">Example 2: Create a user with social and local account identities</span></span>
+### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a><span data-ttu-id="f5fc0-176">Exemplo 2: criar um usuário com identidades de conta social e local</span><span class="sxs-lookup"><span data-stu-id="f5fc0-176">Example 2: Create a user with social and local account identities</span></span>
 
-<span data-ttu-id="c0cbb-177">Crie um novo usuário, com uma identidade de conta local, com um nome de logon, um endereço de email como logon e com uma identidade social.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-177">Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity.</span></span> <span data-ttu-id="c0cbb-178">Esse exemplo é geralmente usado para cenários de migração em locatários de B2C.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-178">This example is typically used for migration scenarios in B2C tenants.</span></span>  
+<span data-ttu-id="f5fc0-177">Crie um novo usuário, com uma identidade de conta local, com um nome de logon, um endereço de email como logon e com uma identidade social.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-177">Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity.</span></span> <span data-ttu-id="f5fc0-178">Esse exemplo é geralmente usado para cenários de migração em locatários de B2C.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-178">This example is typically used for migration scenarios in B2C tenants.</span></span>  
 
 >[!NOTE] 
-><span data-ttu-id="c0cbb-179">Para as identidades de conta local, as expirações de senha devem ser desabilitadas e forçar alteração de senha no próximo logon também deve ser desabilitado.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-179">For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.</span></span>
+><span data-ttu-id="f5fc0-179">Para as identidades de conta local, as expirações de senha devem ser desabilitadas e forçar alteração de senha no próximo logon também deve ser desabilitado.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-179">For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c0cbb-180">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c0cbb-180">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f5fc0-180">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f5fc0-180">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="c0cbb-181">HTTP</span><span class="sxs-lookup"><span data-stu-id="c0cbb-181">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f5fc0-181">HTTP</span><span class="sxs-lookup"><span data-stu-id="f5fc0-181">HTTP</span></span>](#tab/http)
 <!-- {  
   "blockType": "request",   
   "name": "create_user_from_users_identities"   
@@ -193,30 +193,30 @@ Content-type: application/json
   "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="c0cbb-182">C#</span><span class="sxs-lookup"><span data-stu-id="c0cbb-182">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f5fc0-182">C#</span><span class="sxs-lookup"><span data-stu-id="f5fc0-182">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-identities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c0cbb-183">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c0cbb-183">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f5fc0-183">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f5fc0-183">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-identities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c0cbb-184">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c0cbb-184">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f5fc0-184">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f5fc0-184">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-identities-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c0cbb-185">Java</span><span class="sxs-lookup"><span data-stu-id="c0cbb-185">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="f5fc0-185">Java</span><span class="sxs-lookup"><span data-stu-id="f5fc0-185">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-identities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="c0cbb-186">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0cbb-186">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f5fc0-186">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5fc0-186">Response</span></span>
 
-<span data-ttu-id="c0cbb-187">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-187">Here is an example of the response.</span></span> 
+<span data-ttu-id="f5fc0-187">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-187">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="c0cbb-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c0cbb-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="f5fc0-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f5fc0-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -251,10 +251,10 @@ Content-type: application/json
   "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
-## <a name="see-also"></a><span data-ttu-id="c0cbb-190">Confira também</span><span class="sxs-lookup"><span data-stu-id="c0cbb-190">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f5fc0-190">Confira também</span><span class="sxs-lookup"><span data-stu-id="f5fc0-190">See also</span></span>
 
-- [<span data-ttu-id="c0cbb-191">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="c0cbb-191">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="c0cbb-192">Adicionar dados personalizados aos usuários usando extensões abertas</span><span class="sxs-lookup"><span data-stu-id="c0cbb-192">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="f5fc0-191">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="f5fc0-191">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="f5fc0-192">Adicionar dados personalizados aos usuários usando extensões abertas</span><span class="sxs-lookup"><span data-stu-id="f5fc0-192">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

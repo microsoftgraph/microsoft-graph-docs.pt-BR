@@ -3,31 +3,31 @@ title: tipo de recurso de telefone
 description: Representa um número de telefone.
 localization_priority: Normal
 author: davidmu1
-ms.prod: ''
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a5b62fd10a26f06e983a98937e0d434674330767
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 703a24bc0b2d1453b210f739573f4b9629355a64
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022831"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135727"
 ---
-# <a name="phone-resource-type"></a><span data-ttu-id="c0fc8-103">tipo de recurso de telefone</span><span class="sxs-lookup"><span data-stu-id="c0fc8-103">phone resource type</span></span>
+# <a name="phone-resource-type"></a><span data-ttu-id="a7f9b-103">tipo de recurso de telefone</span><span class="sxs-lookup"><span data-stu-id="a7f9b-103">phone resource type</span></span>
 
-<span data-ttu-id="c0fc8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c0fc8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a7f9b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a7f9b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c0fc8-105">Representa um número de telefone.</span><span class="sxs-lookup"><span data-stu-id="c0fc8-105">Represents a phone number.</span></span>
+<span data-ttu-id="a7f9b-105">Representa um número de telefone.</span><span class="sxs-lookup"><span data-stu-id="a7f9b-105">Represents a phone number.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="c0fc8-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c0fc8-106">Properties</span></span>
-| <span data-ttu-id="c0fc8-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c0fc8-107">Property</span></span>     | <span data-ttu-id="c0fc8-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="c0fc8-108">Type</span></span>   |<span data-ttu-id="c0fc8-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="c0fc8-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a7f9b-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a7f9b-106">Properties</span></span>
+| <span data-ttu-id="a7f9b-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a7f9b-107">Property</span></span>     | <span data-ttu-id="a7f9b-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="a7f9b-108">Type</span></span>   |<span data-ttu-id="a7f9b-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="a7f9b-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c0fc8-110">number</span><span class="sxs-lookup"><span data-stu-id="c0fc8-110">number</span></span>|<span data-ttu-id="c0fc8-111">string</span><span class="sxs-lookup"><span data-stu-id="c0fc8-111">string</span></span>|<span data-ttu-id="c0fc8-112">O número de telefone.</span><span class="sxs-lookup"><span data-stu-id="c0fc8-112">The phone number.</span></span>|
-|<span data-ttu-id="c0fc8-113">tipo</span><span class="sxs-lookup"><span data-stu-id="c0fc8-113">type</span></span>|<span data-ttu-id="c0fc8-114">PhoneType</span><span class="sxs-lookup"><span data-stu-id="c0fc8-114">phoneType</span></span>|<span data-ttu-id="c0fc8-115">O tipo de número de telefone.</span><span class="sxs-lookup"><span data-stu-id="c0fc8-115">The type of phone number.</span></span> <span data-ttu-id="c0fc8-116">Os valores possíveis são `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="c0fc8-116">The possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
+|<span data-ttu-id="a7f9b-110">number</span><span class="sxs-lookup"><span data-stu-id="a7f9b-110">number</span></span>|<span data-ttu-id="a7f9b-111">string</span><span class="sxs-lookup"><span data-stu-id="a7f9b-111">string</span></span>|<span data-ttu-id="a7f9b-112">O número de telefone.</span><span class="sxs-lookup"><span data-stu-id="a7f9b-112">The phone number.</span></span>|
+|<span data-ttu-id="a7f9b-113">type</span><span class="sxs-lookup"><span data-stu-id="a7f9b-113">type</span></span>|<span data-ttu-id="a7f9b-114">phoneType</span><span class="sxs-lookup"><span data-stu-id="a7f9b-114">phoneType</span></span>|<span data-ttu-id="a7f9b-115">O tipo de número de telefone.</span><span class="sxs-lookup"><span data-stu-id="a7f9b-115">The type of phone number.</span></span> <span data-ttu-id="a7f9b-116">Os valores possíveis são `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="a7f9b-116">The possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="c0fc8-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c0fc8-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a7f9b-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a7f9b-117">JSON representation</span></span>
 
-<span data-ttu-id="c0fc8-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c0fc8-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a7f9b-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a7f9b-118">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

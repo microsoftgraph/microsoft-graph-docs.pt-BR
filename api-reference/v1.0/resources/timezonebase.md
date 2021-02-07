@@ -2,32 +2,32 @@
 title: Tipo de recurso timeZoneBase
 description: A representação básica de um fuso horário.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5399aa644d4ebc3622639f885cac3dcf7c1d772c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f904475fdd62a40a2c771a6293973fcf1db3f7b9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090729"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136638"
 ---
-# <a name="timezonebase-resource-type"></a><span data-ttu-id="40c6e-103">Tipo de recurso timeZoneBase</span><span class="sxs-lookup"><span data-stu-id="40c6e-103">timeZoneBase resource type</span></span>
+# <a name="timezonebase-resource-type"></a><span data-ttu-id="ebc4f-103">Tipo de recurso timeZoneBase</span><span class="sxs-lookup"><span data-stu-id="ebc4f-103">timeZoneBase resource type</span></span>
 
-<span data-ttu-id="40c6e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="40c6e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ebc4f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ebc4f-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="40c6e-105">A representação básica de um fuso horário.</span><span class="sxs-lookup"><span data-stu-id="40c6e-105">The basic representation of a time zone.</span></span>
+<span data-ttu-id="ebc4f-105">A representação básica de um fuso horário.</span><span class="sxs-lookup"><span data-stu-id="ebc4f-105">The basic representation of a time zone.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="40c6e-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="40c6e-106">Properties</span></span>
-| <span data-ttu-id="40c6e-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="40c6e-107">Property</span></span>     | <span data-ttu-id="40c6e-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="40c6e-108">Type</span></span>   |<span data-ttu-id="40c6e-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="40c6e-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ebc4f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ebc4f-106">Properties</span></span>
+| <span data-ttu-id="ebc4f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ebc4f-107">Property</span></span>     | <span data-ttu-id="ebc4f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="ebc4f-108">Type</span></span>   |<span data-ttu-id="ebc4f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="ebc4f-109">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="40c6e-110">nome</span><span class="sxs-lookup"><span data-stu-id="40c6e-110">name</span></span> | <span data-ttu-id="40c6e-111">string</span><span class="sxs-lookup"><span data-stu-id="40c6e-111">string</span></span> | <span data-ttu-id="40c6e-112">O nome de um fuso horário.</span><span class="sxs-lookup"><span data-stu-id="40c6e-112">The name of a time zone.</span></span> <span data-ttu-id="40c6e-113">Pode ser o nome de um fuso horário padrão como "Hora Padrão do Havaí Aleuta" ou "Fuso Horário Personalizado" para um fuso horário personalizado.</span><span class="sxs-lookup"><span data-stu-id="40c6e-113">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
+| <span data-ttu-id="ebc4f-110">nome</span><span class="sxs-lookup"><span data-stu-id="ebc4f-110">name</span></span> | <span data-ttu-id="ebc4f-111">string</span><span class="sxs-lookup"><span data-stu-id="ebc4f-111">string</span></span> | <span data-ttu-id="ebc4f-112">O nome de um fuso horário.</span><span class="sxs-lookup"><span data-stu-id="ebc4f-112">The name of a time zone.</span></span> <span data-ttu-id="ebc4f-113">Pode ser o nome de um fuso horário padrão como "Hora Padrão do Havaí Aleuta" ou "Fuso Horário Personalizado" para um fuso horário personalizado.</span><span class="sxs-lookup"><span data-stu-id="ebc4f-113">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="40c6e-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="40c6e-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ebc4f-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ebc4f-114">JSON representation</span></span>
 
-<span data-ttu-id="40c6e-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="40c6e-115">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ebc4f-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ebc4f-115">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
