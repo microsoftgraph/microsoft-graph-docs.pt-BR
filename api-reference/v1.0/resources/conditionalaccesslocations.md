@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso conditionalAccessLocations
-description: Representa os locais incluídos e excluídos do escopo da política.
+title: Tipo de recurso conditionalAccessLocations
+description: Representa locais incluídos e excluídos do escopo da política.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2b4cdf4fbd1b81d4a4376983a424c2579376a76d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 670f07e22b2027c74a79eaca505c624c04c19621
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018897"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132111"
 ---
-# <a name="conditionalaccesslocations-resource-type"></a><span data-ttu-id="4d753-103">tipo de recurso conditionalAccessLocations</span><span class="sxs-lookup"><span data-stu-id="4d753-103">conditionalAccessLocations resource type</span></span>
+# <a name="conditionalaccesslocations-resource-type"></a><span data-ttu-id="08032-103">Tipo de recurso conditionalAccessLocations</span><span class="sxs-lookup"><span data-stu-id="08032-103">conditionalAccessLocations resource type</span></span>
 
-<span data-ttu-id="4d753-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4d753-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="08032-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="08032-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4d753-105">Representa os locais incluídos e excluídos do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="4d753-105">Represents locations included in and excluded from the policy scope.</span></span>
+<span data-ttu-id="08032-105">Representa locais incluídos e excluídos do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="08032-105">Represents locations included in and excluded from the policy scope.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4d753-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4d753-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="08032-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="08032-106">Properties</span></span>
 
-| <span data-ttu-id="4d753-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4d753-107">Property</span></span>     | <span data-ttu-id="4d753-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="4d753-108">Type</span></span>        | <span data-ttu-id="4d753-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="4d753-109">Description</span></span> |
+| <span data-ttu-id="08032-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="08032-107">Property</span></span>     | <span data-ttu-id="08032-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="08032-108">Type</span></span>        | <span data-ttu-id="08032-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="08032-109">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="4d753-110">includeLocations</span><span class="sxs-lookup"><span data-stu-id="4d753-110">includeLocations</span></span> | <span data-ttu-id="4d753-111">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="4d753-111">String collection</span></span> | <span data-ttu-id="4d753-112">IDs de local em escopo de política, a menos que explicitamente excluído, `All` ou `AllTrusted` .</span><span class="sxs-lookup"><span data-stu-id="4d753-112">Location IDs in scope of policy unless explicitly excluded, `All`, or `AllTrusted`.</span></span> |
-| <span data-ttu-id="4d753-113">excludeLocations</span><span class="sxs-lookup"><span data-stu-id="4d753-113">excludeLocations</span></span> | <span data-ttu-id="4d753-114">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="4d753-114">String collection</span></span> | <span data-ttu-id="4d753-115">IDs de local excluídas do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="4d753-115">Location IDs excluded from scope of policy.</span></span> |
+| <span data-ttu-id="08032-110">includeLocations</span><span class="sxs-lookup"><span data-stu-id="08032-110">includeLocations</span></span> | <span data-ttu-id="08032-111">String collection</span><span class="sxs-lookup"><span data-stu-id="08032-111">String collection</span></span> | <span data-ttu-id="08032-112">IDs de local no escopo da política, a menos que explicitamente `All` excluído, ou `AllTrusted` .</span><span class="sxs-lookup"><span data-stu-id="08032-112">Location IDs in scope of policy unless explicitly excluded, `All`, or `AllTrusted`.</span></span> |
+| <span data-ttu-id="08032-113">excludeLocations</span><span class="sxs-lookup"><span data-stu-id="08032-113">excludeLocations</span></span> | <span data-ttu-id="08032-114">String collection</span><span class="sxs-lookup"><span data-stu-id="08032-114">String collection</span></span> | <span data-ttu-id="08032-115">IDs de local excluídas do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="08032-115">Location IDs excluded from scope of policy.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="4d753-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4d753-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="08032-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="08032-116">JSON representation</span></span>
 
-<span data-ttu-id="4d753-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4d753-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="08032-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="08032-117">The following is a JSON representation of the resource.</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="4d753-118">Relações</span><span class="sxs-lookup"><span data-stu-id="4d753-118">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="08032-118">Relações</span><span class="sxs-lookup"><span data-stu-id="08032-118">Relationships</span></span>
 
-<span data-ttu-id="4d753-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4d753-119">None.</span></span>
+<span data-ttu-id="08032-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="08032-119">None.</span></span>
 
 <!-- {
   "blockType": "resource",

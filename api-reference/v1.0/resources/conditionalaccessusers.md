@@ -1,41 +1,41 @@
 ---
-title: tipo de recurso conditionalAccessUsers
+title: Tipo de recurso conditionalAccessUsers
 description: Representa usuários, grupos e funções incluídos e excluídos do escopo da política.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 01fe92a5c317a2349776284c16ff38669e2c6c1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f75eb86ab9627b2cb9d507de9321743524203b3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056973"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129769"
 ---
-# <a name="conditionalaccessusers-resource-type"></a><span data-ttu-id="4baa2-103">tipo de recurso conditionalAccessUsers</span><span class="sxs-lookup"><span data-stu-id="4baa2-103">conditionalAccessUsers resource type</span></span>
+# <a name="conditionalaccessusers-resource-type"></a><span data-ttu-id="71fa6-103">Tipo de recurso conditionalAccessUsers</span><span class="sxs-lookup"><span data-stu-id="71fa6-103">conditionalAccessUsers resource type</span></span>
 
-<span data-ttu-id="4baa2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4baa2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="71fa6-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="71fa6-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4baa2-105">Representa usuários, grupos e funções incluídos e excluídos do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="4baa2-105">Represents users, groups, and roles included in and excluded from the policy scope.</span></span>
+<span data-ttu-id="71fa6-105">Representa usuários, grupos e funções incluídos e excluídos do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="71fa6-105">Represents users, groups, and roles included in and excluded from the policy scope.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4baa2-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4baa2-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="71fa6-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="71fa6-106">Properties</span></span>
 
-| <span data-ttu-id="4baa2-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4baa2-107">Property</span></span>     | <span data-ttu-id="4baa2-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="4baa2-108">Type</span></span>        | <span data-ttu-id="4baa2-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="4baa2-109">Description</span></span> |
+| <span data-ttu-id="71fa6-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="71fa6-107">Property</span></span>     | <span data-ttu-id="71fa6-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="71fa6-108">Type</span></span>        | <span data-ttu-id="71fa6-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="71fa6-109">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="4baa2-110">includeUsers</span><span class="sxs-lookup"><span data-stu-id="4baa2-110">includeUsers</span></span> | <span data-ttu-id="4baa2-111">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="4baa2-111">String collection</span></span> | <span data-ttu-id="4baa2-112">IDs de usuário em escopo de política, a menos que explicitamente excluído ou ou `None` `All` `GuestsOrExternalUsers` .</span><span class="sxs-lookup"><span data-stu-id="4baa2-112">User IDs in scope of policy unless explicitly excluded, or `None` or `All` or `GuestsOrExternalUsers`.</span></span> |
-| <span data-ttu-id="4baa2-113">excludeUsers</span><span class="sxs-lookup"><span data-stu-id="4baa2-113">excludeUsers</span></span> | <span data-ttu-id="4baa2-114">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="4baa2-114">String collection</span></span> | <span data-ttu-id="4baa2-115">IDs de usuário excluídas do escopo da política e/ou `GuestsOrExternalUsers` .</span><span class="sxs-lookup"><span data-stu-id="4baa2-115">User IDs excluded from scope of policy and/or `GuestsOrExternalUsers`.</span></span> |
-| <span data-ttu-id="4baa2-116">includeGroups</span><span class="sxs-lookup"><span data-stu-id="4baa2-116">includeGroups</span></span> | <span data-ttu-id="4baa2-117">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="4baa2-117">String collection</span></span> | <span data-ttu-id="4baa2-118">IDs de grupo em escopo de política, a menos que explicitamente excluído ou `All` .</span><span class="sxs-lookup"><span data-stu-id="4baa2-118">Group IDs in scope of policy unless explicitly excluded, or `All`.</span></span> |
-| <span data-ttu-id="4baa2-119">excludeGroups</span><span class="sxs-lookup"><span data-stu-id="4baa2-119">excludeGroups</span></span> | <span data-ttu-id="4baa2-120">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="4baa2-120">String collection</span></span> | <span data-ttu-id="4baa2-121">IDs de grupo excluídas do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="4baa2-121">Group IDs excluded from scope of policy.</span></span> |
-| <span data-ttu-id="4baa2-122">includeRoles</span><span class="sxs-lookup"><span data-stu-id="4baa2-122">includeRoles</span></span> | <span data-ttu-id="4baa2-123">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="4baa2-123">String collection</span></span> | <span data-ttu-id="4baa2-124">IDs de função em escopo de política, a menos que explicitamente excluído ou `All` .</span><span class="sxs-lookup"><span data-stu-id="4baa2-124">Role IDs in scope of policy unless explicitly excluded, or `All`.</span></span> |
-| <span data-ttu-id="4baa2-125">excludeRoles</span><span class="sxs-lookup"><span data-stu-id="4baa2-125">excludeRoles</span></span> | <span data-ttu-id="4baa2-126">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="4baa2-126">String collection</span></span> | <span data-ttu-id="4baa2-127">IDs de função excluídas do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="4baa2-127">Role IDs excluded from scope of policy.</span></span> |
+| <span data-ttu-id="71fa6-110">includeUsers</span><span class="sxs-lookup"><span data-stu-id="71fa6-110">includeUsers</span></span> | <span data-ttu-id="71fa6-111">String collection</span><span class="sxs-lookup"><span data-stu-id="71fa6-111">String collection</span></span> | <span data-ttu-id="71fa6-112">IDs de usuário no escopo da política, a menos que explicitamente excluídos, `None` ou `All` ou `GuestsOrExternalUsers` .</span><span class="sxs-lookup"><span data-stu-id="71fa6-112">User IDs in scope of policy unless explicitly excluded, or `None` or `All` or `GuestsOrExternalUsers`.</span></span> |
+| <span data-ttu-id="71fa6-113">excludeUsers</span><span class="sxs-lookup"><span data-stu-id="71fa6-113">excludeUsers</span></span> | <span data-ttu-id="71fa6-114">String collection</span><span class="sxs-lookup"><span data-stu-id="71fa6-114">String collection</span></span> | <span data-ttu-id="71fa6-115">IDs de usuário excluídas do escopo da política e/ou `GuestsOrExternalUsers` .</span><span class="sxs-lookup"><span data-stu-id="71fa6-115">User IDs excluded from scope of policy and/or `GuestsOrExternalUsers`.</span></span> |
+| <span data-ttu-id="71fa6-116">includeGroups</span><span class="sxs-lookup"><span data-stu-id="71fa6-116">includeGroups</span></span> | <span data-ttu-id="71fa6-117">String collection</span><span class="sxs-lookup"><span data-stu-id="71fa6-117">String collection</span></span> | <span data-ttu-id="71fa6-118">IDs de grupo no escopo da política, a menos que explicitamente excluídos, ou `All` .</span><span class="sxs-lookup"><span data-stu-id="71fa6-118">Group IDs in scope of policy unless explicitly excluded, or `All`.</span></span> |
+| <span data-ttu-id="71fa6-119">excludeGroups</span><span class="sxs-lookup"><span data-stu-id="71fa6-119">excludeGroups</span></span> | <span data-ttu-id="71fa6-120">String collection</span><span class="sxs-lookup"><span data-stu-id="71fa6-120">String collection</span></span> | <span data-ttu-id="71fa6-121">IDs de grupo excluídas do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="71fa6-121">Group IDs excluded from scope of policy.</span></span> |
+| <span data-ttu-id="71fa6-122">includeRoles</span><span class="sxs-lookup"><span data-stu-id="71fa6-122">includeRoles</span></span> | <span data-ttu-id="71fa6-123">String collection</span><span class="sxs-lookup"><span data-stu-id="71fa6-123">String collection</span></span> | <span data-ttu-id="71fa6-124">IDs de função no escopo da política, a menos que explicitamente excluídos, ou `All` .</span><span class="sxs-lookup"><span data-stu-id="71fa6-124">Role IDs in scope of policy unless explicitly excluded, or `All`.</span></span> |
+| <span data-ttu-id="71fa6-125">excludeRoles</span><span class="sxs-lookup"><span data-stu-id="71fa6-125">excludeRoles</span></span> | <span data-ttu-id="71fa6-126">String collection</span><span class="sxs-lookup"><span data-stu-id="71fa6-126">String collection</span></span> | <span data-ttu-id="71fa6-127">IDs de função excluídas do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="71fa6-127">Role IDs excluded from scope of policy.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="4baa2-128">Relações</span><span class="sxs-lookup"><span data-stu-id="4baa2-128">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="71fa6-128">Relações</span><span class="sxs-lookup"><span data-stu-id="71fa6-128">Relationships</span></span>
 
-<span data-ttu-id="4baa2-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4baa2-129">None.</span></span>
+<span data-ttu-id="71fa6-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="71fa6-129">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4baa2-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4baa2-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="71fa6-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="71fa6-130">JSON representation</span></span>
 
-<span data-ttu-id="4baa2-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4baa2-131">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="71fa6-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="71fa6-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

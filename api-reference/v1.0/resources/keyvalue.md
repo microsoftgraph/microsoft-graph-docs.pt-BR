@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso KeyValue
-description: Tipo de recurso de par chave-valor padrão.
+title: Tipo de recurso keyValue
+description: Tipo de recurso par chave-valor padrão.
 localization_priority: Normal
 author: dougeby
-ms.prod: ''
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: b9ecf552b059e60f1cc7a981d4881a83beeffb51
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ae252d03884b6d43b2ca12a4d59d2f5477dab5b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072869"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134712"
 ---
-# <a name="keyvalue-resource-type"></a><span data-ttu-id="ffd5f-103">tipo de recurso KeyValue</span><span class="sxs-lookup"><span data-stu-id="ffd5f-103">keyValue resource type</span></span>
+# <a name="keyvalue-resource-type"></a><span data-ttu-id="2f74d-103">Tipo de recurso keyValue</span><span class="sxs-lookup"><span data-stu-id="2f74d-103">keyValue resource type</span></span>
 
-<span data-ttu-id="ffd5f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ffd5f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2f74d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2f74d-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ffd5f-105">Representa um par chave-valor.</span><span class="sxs-lookup"><span data-stu-id="ffd5f-105">Represents a key-value pair.</span></span>
+<span data-ttu-id="2f74d-105">Representa um par chave-valor.</span><span class="sxs-lookup"><span data-stu-id="2f74d-105">Represents a key-value pair.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ffd5f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ffd5f-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="2f74d-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="2f74d-106">Properties</span></span>
 
-| <span data-ttu-id="ffd5f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ffd5f-107">Property</span></span>     | <span data-ttu-id="ffd5f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="ffd5f-108">Type</span></span>   |<span data-ttu-id="ffd5f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="ffd5f-109">Description</span></span>|
+| <span data-ttu-id="2f74d-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2f74d-107">Property</span></span>     | <span data-ttu-id="2f74d-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="2f74d-108">Type</span></span>   |<span data-ttu-id="2f74d-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="2f74d-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ffd5f-110">key</span><span class="sxs-lookup"><span data-stu-id="ffd5f-110">key</span></span>|<span data-ttu-id="ffd5f-111">string</span><span class="sxs-lookup"><span data-stu-id="ffd5f-111">string</span></span>| <span data-ttu-id="ffd5f-112">Chave para o par chave-valor.</span><span class="sxs-lookup"><span data-stu-id="ffd5f-112">Key for the key-value pair.</span></span> |
-|<span data-ttu-id="ffd5f-113">value</span><span class="sxs-lookup"><span data-stu-id="ffd5f-113">value</span></span>|<span data-ttu-id="ffd5f-114">string</span><span class="sxs-lookup"><span data-stu-id="ffd5f-114">string</span></span>| <span data-ttu-id="ffd5f-115">Valor para o par chave-valor.</span><span class="sxs-lookup"><span data-stu-id="ffd5f-115">Value for the key-value pair.</span></span>|
+|<span data-ttu-id="2f74d-110">key</span><span class="sxs-lookup"><span data-stu-id="2f74d-110">key</span></span>|<span data-ttu-id="2f74d-111">string</span><span class="sxs-lookup"><span data-stu-id="2f74d-111">string</span></span>| <span data-ttu-id="2f74d-112">Chave para o par chave-valor.</span><span class="sxs-lookup"><span data-stu-id="2f74d-112">Key for the key-value pair.</span></span> |
+|<span data-ttu-id="2f74d-113">value</span><span class="sxs-lookup"><span data-stu-id="2f74d-113">value</span></span>|<span data-ttu-id="2f74d-114">string</span><span class="sxs-lookup"><span data-stu-id="2f74d-114">string</span></span>| <span data-ttu-id="2f74d-115">Valor do par chave-valor.</span><span class="sxs-lookup"><span data-stu-id="2f74d-115">Value for the key-value pair.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ffd5f-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ffd5f-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2f74d-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="2f74d-116">JSON representation</span></span>
 
-<span data-ttu-id="ffd5f-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ffd5f-117">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2f74d-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="2f74d-117">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
