@@ -1,29 +1,29 @@
 ---
 title: Tipo de recurso followupFlag
-description: 'Permite definir um sinalizador em um item para que o usuário acompanhe mais tarde. '
+description: 'Permite definir um sinalizador em um item para que o usuário acompanhe posteriormente. '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ab7894c7cec99387577994a96e459765ddf2793e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9b690c86a6ccbef6f5c215e268f7b34243e3023e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018239"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130203"
 ---
 # <a name="followupflag-resource-type"></a>Tipo de recurso followupFlag
 
 Namespace: microsoft.graph
 
 
-Permite definir um sinalizador em um item para que o usuário acompanhe mais tarde.
+Permite definir um sinalizador em um item para que o usuário acompanhe posteriormente.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Data e hora em que o acompanhamento foi concluído.|
-|dueDateTime|**dateTimeTimeZone**|A data e a hora em que o acompanhamento deve ser concluído. **Observação**: para definir a data de conclusão, você também deve especificar o `startDateTime` ; caso contrário, você receberá uma `400 Bad Request` resposta.|
+|dueDateTime|**dateTimeTimeZone**|A data e a hora em que o acompanhamento deve ser concluído. **Observação:** para definir a data de vencimento, você também deve especificar o ; `startDateTime` caso contrário, você receberá uma `400 Bad Request` resposta.|
 |flagStatus|followupFlagStatus|O status de acompanhamento de um item. Os valores possíveis são: `notFlagged`, `complete` e `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Data e hora em que o acompanhamento deve começar.|
 

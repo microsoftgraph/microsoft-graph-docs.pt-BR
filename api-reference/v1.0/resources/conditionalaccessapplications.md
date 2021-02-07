@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso conditionalAccessApplications
-description: Representa os aplicativos e as ações do usuário incluídos e excluídos do escopo da política.
+title: Tipo de recurso conditionalAccessApplications
+description: Representa aplicativos e ações do usuário incluídas e excluídas do escopo da política.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5a9794a274b876ba93cc3fdbe14ea7731776daa3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 42ceafb6c786666378d1327ecd158a04559d7f0d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057042"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132157"
 ---
-# <a name="conditionalaccessapplications-resource-type"></a>tipo de recurso conditionalAccessApplications
+# <a name="conditionalaccessapplications-resource-type"></a>Tipo de recurso conditionalAccessApplications
 
 Namespace: microsoft.graph
 
-Representa os aplicativos e as ações do usuário incluídos no e excluídos da política.
+Representa os aplicativos e as ações do usuário incluídas e excluídas da política.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativo à qual a política se aplica, a menos que explicitamente excluída (em excludeApplications). Também pode ser definido como `All` . |
-| excludeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativo explicitamente excluídas da política. |
-| includeUserActions | Coleção de cadeias de caracteres | Ações do usuário a serem incluídas. Por exemplo, `urn:user:registersecurityinfo` |
+| includeApplications | String collection | A lista de IDs de aplicativos a que a política se aplica, a menos que explicitamente excluída (em excludeApplications). Também pode ser definido como `All` . |
+| excludeApplications | String collection | A lista de IDs de aplicativo explicitamente excluída da política. |
+| includeUserActions | String collection | Ações do usuário a incluir. Por exemplo, `urn:user:registersecurityinfo` |
 
 ## <a name="relationships"></a>Relações
 

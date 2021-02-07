@@ -2,22 +2,22 @@
 title: Excluir inferenceClassificationOverride
 description: Exclua uma substituição especificada de acordo com sua ID.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f9a08903a7e96f7ab06bfea66b1058b7f393b696
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c2f482ea1b7feb5db8895f4031f887500c54efa
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033353"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133848"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Excluir inferenceClassificationOverride
 
 Namespace: microsoft.graph
 
 Exclua uma substituição especificada de acordo com sua ID.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

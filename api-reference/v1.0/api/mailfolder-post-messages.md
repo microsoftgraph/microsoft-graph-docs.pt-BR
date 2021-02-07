@@ -1,23 +1,23 @@
 ---
 title: Criar mensagem
 description: Use essa API para criar uma nova mensagem em uma pasta de email.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6943331c260d4ac18718c46f39dfc870aded584f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76ea1bb97d41b79757c617d7ebaf20a81700ae68
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133291"
 ---
 # <a name="create-message"></a>Criar mensagem
 
 Namespace: microsoft.graph
 
 Use essa API para criar uma nova mensagem em uma pasta de email.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

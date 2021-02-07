@@ -3,14 +3,14 @@ title: 'application: removePassword'
 description: Remover uma senha de um aplicativo
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8975218208dc2dc7c6e23b8763d9dd796273143e
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 3a8dfe9fe72a8dae8c50e4e381d56e3f83f63150
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844755"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131744"
 ---
 # <a name="application-removepassword"></a>application: removePassword
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Remover uma senha de um [aplicativo.](../resources/application.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

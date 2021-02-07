@@ -1,16 +1,16 @@
 ---
 title: Atualizar mensagem
 description: Atualizar as propriedades do objeto mensagem.
-author: svpsiva
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 262d3e7bd9b58d4472cc7edacc98135486f586ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1a7a4bc3cb14c272d798fbf492d17b3bf2774cd6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019065"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128264"
 ---
 # <a name="update-message"></a>Atualizar mensagem
 

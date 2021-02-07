@@ -3,14 +3,14 @@ title: Listar aplicativos
 description: Obtenha a lista de applications nesta organização.
 author: sureshja
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0f27f917e2fcf2f7f7ae00738ae22a5d9c2bdd5f
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: ef095f189171122e13e3daa26200088d6c458bc9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844807"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133907"
 ---
 # <a name="list-applications"></a>Listar aplicativos
 

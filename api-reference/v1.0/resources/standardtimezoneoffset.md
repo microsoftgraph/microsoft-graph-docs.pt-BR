@@ -2,15 +2,15 @@
 title: Tipo de recurso standardTimeZoneOffset
 description: Especifica quando um fuso horário muda do horário de verão para o horário padrão.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 49cebe5997aef16758396ece509c0c7a5b3788b4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1888bf89265ff3b62fccd0e52c10c7c7b9bdb3c5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132577"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>Tipo de recurso standardTimeZoneOffset
 

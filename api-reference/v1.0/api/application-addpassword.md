@@ -3,14 +3,14 @@ title: 'application: addPassword'
 description: Adicionar uma senha forte a um aplicativo.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a9de58ceb2907ddc868a9cf866ddc501c0e0070e
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 8b5cec3e647670be037b27bcf2cae438111f04e5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844596"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131856"
 ---
 # <a name="application-addpassword"></a>application: addPassword
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Adiciona uma senha forte a um [aplicativo.](../resources/application.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça um `passwordCredential` objeto opcional com 
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | Cadeia de caracteres | Nome amigável da senha. Opcional. |
+| displayName | String | Nome amigável da senha. Opcional. |
 | endDateTime | DateTimeOffset | A data e a hora em que a senha expira é representada usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. O valor padrão é "startDateTime + 2 anos". |
 | startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional.  O valor padrão é "now". |
 

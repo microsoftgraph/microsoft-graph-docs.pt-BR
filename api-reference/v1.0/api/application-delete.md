@@ -3,14 +3,14 @@ title: Excluir aplicativo
 description: Exclua um objeto application.
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d6b3bc26a7383d21e3484b916ca20b5ee2abf06d
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: da60fd5c6a3a97a3924fc45448c00f9665748752
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844463"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131779"
 ---
 # <a name="delete-application"></a>Excluir aplicativo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Exclua [um objeto application.](../resources/application.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

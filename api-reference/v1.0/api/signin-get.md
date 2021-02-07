@@ -1,22 +1,22 @@
 ---
 title: Obter entrada
-description: Descreve o método Get do recurso de entrada (entidade) da API do Microsoft Graph.
+description: Descreve o método get do recurso signIn (entidade) da API do Microsoft Graph.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 033a700e27fb618f285ef1e4dd9bae8e9e8ece71
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: cb09d2f9fde80ba6e9d24cae80a39a74faacc3ed
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523746"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131989"
 ---
 # <a name="get-signin"></a>Obter entrada
 
 Namespace: microsoft.graph
 
-Recupere um evento específico de entrada do Azure AD para seu locatário. As entradas interativas por natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e os logins federados bem-sucedidos estão incluídos atualmente nos logs de entrada.
+Recupere um evento específico de entrada do Azure AD para seu locatário. As inserções que são interativas por natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de logom.
 
 ## <a name="permissions"></a>Permissions
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AuditLog. Read. All e Directory. Read. All |
+|Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
-|Aplicativo | AuditLog. Read. All e Directory. Read. All |
+|Aplicativo | AuditLog.Read.All e Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

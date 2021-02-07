@@ -1,16 +1,16 @@
 ---
 title: 'message: copy'
 description: Copie uma mensagem para uma pasta.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7947477e7fcf724f30b91f6c0991d13eae12ba27
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17547d8263999328191fa2d993a7694b6c5c9865
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032954"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130645"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Copie uma mensagem para uma pasta.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -103,7 +103,7 @@ Content-length: 44
 
 Veja a seguir um exemplo da resposta.
 
-> **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

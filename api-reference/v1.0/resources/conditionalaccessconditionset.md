@@ -3,14 +3,14 @@ title: Tipo de recurso conditionalAccessConditionSet
 description: Representa o tipo de condições que regem quando a política se aplica.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c3163bbefef420a878364f52f9dabc8dee1e7cae
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: ff7159c09b0afcaf223a5840584d531e99be2da6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013671"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132131"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>Tipo de recurso conditionalAccessConditionSet
 
@@ -24,11 +24,11 @@ Representa o tipo de condições que regem quando a política se aplica.
 |:-------------|:------------|:------------|
 |applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Aplicativos e ações do usuário incluídos e excluídos da política. Obrigatório. |
 |usuários|[conditionalAccessUsers](conditionalaccessusers.md)| Usuários, grupos e funções incluídos e excluídos da política. Obrigatório. |
-|clientAppTypes|Coleção String| Tipos de aplicativo cliente incluídos na política. Os possíveis valores são: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
+|clientAppTypes|String collection| Tipos de aplicativo cliente incluídos na política. Os possíveis valores são: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locais incluídos e excluídos da política. |
 |platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
-|signInRiskLevels|Coleção String| Níveis de risco de login incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
-|userRiskLevels|Coleção String| Níveis de risco do usuário incluídos na política. Os valores possíveis são: `low`, `medium`, `high`.|
+|signInRiskLevels|String collection| Níveis de risco de login incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
+|userRiskLevels|String collection| Níveis de risco do usuário incluídos na política. Os valores possíveis são: `low`, `medium`, `high`.|
 
 ## <a name="relationships"></a>Relações
 

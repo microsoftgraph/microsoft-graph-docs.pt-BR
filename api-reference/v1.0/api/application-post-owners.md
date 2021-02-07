@@ -1,31 +1,31 @@
 ---
 title: Adicionar proprietário
-description: Adicionar um proprietário a um aplicativo.
+description: Adicione um proprietário a um aplicativo.
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3b91447ae4c031df3c910dbc799740bc9b7076a5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd6af2af85c713556c7847853cd24db1013714d4
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131457"
 ---
 # <a name="add-owner"></a>Adicionar proprietário
 
 Namespace: microsoft.graph
 
-Adicione um proprietário a um [aplicativo](../resources/application.md) postando na coleção de proprietários.
+Adicione um proprietário a um [aplicativo](../resources/application.md) postando na coleção owners.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Application. ReadWrite. All e Directory. Read. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. ReadWrite. OwnedBy e Directory. Read. All, Application. ReadWrite. All e Directory. Read. All |
+|Delegada (conta corporativa ou de estudante) |  Application.ReadWrite.All e Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.ReadWrite.OwnedBy e Directory.Read.All, Application.ReadWrite.All e Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ POST /applications/{id}/owners/$ref
 | Autorização | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça o identificador do objeto de diretório a ser atribuído como proprietário.
+No corpo da solicitação, fornece o identificador do objeto de diretório a ser atribuído como proprietário.
 
 ## <a name="response"></a>Resposta
 
@@ -88,7 +88,7 @@ Content-length: 30
 
 Este é um exemplo de resposta.
 
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

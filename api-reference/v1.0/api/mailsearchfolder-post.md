@@ -1,24 +1,24 @@
 ---
 title: Criar mailSearchFolder
-description: Use esta API para criar um novo mailSearchFolder na caixa de correio do usuário especificado.
+description: Use essa API para criar uma nova mailSearchFolder na caixa de correio do usuário especificado.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7b7561b825e0449c51b7a0ce9c50bd13105c1ed6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 902e55bc3c1ab901f06591b379f636f72b04a782
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032975"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130659"
 ---
 # <a name="create-mailsearchfolder"></a>Criar mailSearchFolder
 
 Namespace: microsoft.graph
 
-Criar um novo [mailSearchFolder](../resources/mailsearchfolder.md) na caixa de correio do usuário especificado.
+Crie uma nova [mailSearchFolder](../resources/mailsearchfolder.md) na caixa de correio do usuário especificado.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -52,21 +52,21 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-| @odata.type | String | O tipo de pasta a ser criada. Defina como "Microsoft. Graph. mailSearchFolder". |
+| @odata.type | String | O tipo de pasta a ser criada. De definida como "microsoft.graph.mailSearchFolder". |
 | displayName | String | O nome de exibição da nova pasta.|
-| includeNestedFolders | Boolean | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa. `true` significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**. `false` significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**. |
-| sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
+| includeNestedFolders | Booliano | Indica como a hierarquia da pasta da caixa de correio deve ser percorrido na pesquisa. `true` significa que uma pesquisa profunda deve ser feita para incluir pastas filho na hierarquia de cada pasta explicitamente especificada em **sourceFolderIds**. `false` significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas em **sourceFolderIds**. |
+| sourceFolderIds | String collection | As pastas de caixa de correio que devem ser mineradas. |
 | filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [mailSearchFolder](../resources/mailsearchfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto mailSearchFolder](../resources/mailsearchfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de solicitação-ele cria uma pasta de pesquisa de mensagens que contêm a cadeia de caracteres "semanalmente Resumo" no assunto. A pasta de pesquisa está na mesma pasta em que a consulta de filtro especificado se aplica.
+A seguir está um exemplo da solicitação: ele cria uma pasta de pesquisa de mensagens que contêm a cadeia de caracteres "resumo semanal" no assunto. A pasta de pesquisa está na mesma pasta na qual a consulta de filtro especificada se aplica.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -111,7 +111,7 @@ Content-length: 159
 
 Este é um exemplo de resposta.
 
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

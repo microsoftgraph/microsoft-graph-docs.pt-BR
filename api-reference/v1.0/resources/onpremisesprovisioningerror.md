@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso onPremisesProvisioningError
-description: Representa erros de sincronização de diretório para o grupo de usuários e recursos de contato durante a sincronização de diretórios locais com o Azure Active Directory.
+title: Tipo de recurso onPremisesProvisioningError
+description: Representa erros de sincronização de diretório para o grupo de usuários e recursos de contato ao sincronizar diretórios locais com o Azure Active Directory.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 719bb525fad934bb92f44fb427d1214bf288ec46
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2647e32653d26793b4f875bb47ce43e83a294c4a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133327"
 ---
-# <a name="onpremisesprovisioningerror-resource-type"></a>tipo de recurso onPremisesProvisioningError
+# <a name="onpremisesprovisioningerror-resource-type"></a>Tipo de recurso onPremisesProvisioningError
 
 Namespace: microsoft.graph
 
-Representa erros de sincronização de diretório para os recursos de [usuário](user.md), [grupo](group.md) e [orgContact](orgcontact.md) ao sincronizar diretórios locais com o Azure Active Directory.
+Representa erros de sincronização de [](group.md) diretório para o [usuário,](user.md)grupo e [recursos orgContact](orgcontact.md) ao sincronizar diretórios locais com o Azure Active Directory.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|category|String| Categoria do erro de provisionamento. Observação: no momento, há apenas um valor possível. Valor possível: *PropertyConflict* -indica que um valor de propriedade não é exclusivo. Outros objetos contêm o mesmo valor para a propriedade. |
+|category|String| Categoria do erro de provisionamento. Observação: Atualmente, há apenas um valor possível. Valor possível: *PropertyConflict* – indica que um valor de propriedade não é exclusivo. Outros objetos contêm o mesmo valor para a propriedade. |
 |occurredDateTime|DateTimeOffset| A data e a hora em que o erro ocorreu. |
-|propertyCausingError|String| Nome da propriedade de diretório que está causando o erro. Valores possíveis atuais: *userPrincipalName* ou *ProxyAddress* |
-|value|Cadeia de caracteres| Valor da propriedade causando o erro. |
+|propertyCausingError|String| Nome da propriedade do diretório que está causando o erro. Valores atuais possíveis: *UserPrincipalName* ou *ProxyAddress* |
+|value|Cadeia de caracteres| Valor da propriedade que está causando o erro. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -2,15 +2,15 @@
 title: Tipo de recurso emailAddress
 description: O nome e o endereço de email de um destinatário da mensagem ou contato.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 52332c04591bc507416df325786f6f263fe7ca6e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 055f4d426e475156469f3b3cd8ba9eca87102495
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069075"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132804"
 ---
 # <a name="emailaddress-resource-type"></a>Tipo de recurso emailAddress
 
@@ -22,7 +22,7 @@ O nome e o endereço de email de um destinatário da mensagem ou contato.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |address|Cadeia de caracteres|O endereço de email da pessoa ou entidade.|
-|nome|Cadeia de caracteres|O nome de exibição da pessoa ou entidade.|
+|nome|String|O nome de exibição da pessoa ou entidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 

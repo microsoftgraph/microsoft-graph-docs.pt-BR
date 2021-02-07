@@ -2,15 +2,15 @@
 title: Criar categoria do Outlook
 description: Cria um objeto outlookCategory na lista mestra de categorias do usuário.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 58193704d8a119a0da07cfb157e8bf386adb8397
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d5c86f927c43f49bff0ae4ff60d2a91b61aa44b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089004"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132605"
 ---
 # <a name="create-outlook-category"></a>Criar categoria do Outlook
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Cria um objeto [outlookCategory](../resources/outlookcategory.md) na lista mestra de categorias do usuário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

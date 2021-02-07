@@ -3,14 +3,14 @@ title: Listar appRoleAssignments concedido a um usuário
 description: Recuperar a lista de atribuições de funções do aplicativo concedidas a um usuário.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: users
 author: psignoret
-ms.openlocfilehash: acd40fb15de7807300e056d0cf0d8311ed1ce365
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4940e8c2ab2c212dbaa104cbc266671ce85dfa36
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069509"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130941"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>Listar appRoleAssignments concedido a um usuário
 

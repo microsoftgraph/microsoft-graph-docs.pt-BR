@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso KeyValue
-description: Tipo de recurso de par chave-valor padrão.
+title: Tipo de recurso keyValue
+description: Tipo de recurso par chave-valor padrão.
 localization_priority: Normal
 author: dougeby
-ms.prod: ''
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: b9ecf552b059e60f1cc7a981d4881a83beeffb51
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ae252d03884b6d43b2ca12a4d59d2f5477dab5b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072869"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134712"
 ---
-# <a name="keyvalue-resource-type"></a>tipo de recurso KeyValue
+# <a name="keyvalue-resource-type"></a>Tipo de recurso keyValue
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ Representa um par chave-valor.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |key|string| Chave para o par chave-valor. |
-|value|string| Valor para o par chave-valor.|
+|value|string| Valor do par chave-valor.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,26 +1,26 @@
 ---
 title: Excluir mensagem
-description: Excluir uma mensagem na caixa de correio do usuário especificado ou excluir uma relação da mensagem.
+description: Exclua uma mensagem na caixa de correio do usuário especificado ou exclua uma relação da mensagem.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 014cbcbeb9d7ac34fa4ab038377363e2c3e6286c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c890d5574b60069de6ac305786e6e146d633a131
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019072"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130568"
 ---
 # <a name="delete-message"></a>Excluir mensagem
 
 Namespace: microsoft.graph
 
-Excluir uma mensagem na caixa de correio do usuário especificado ou excluir uma relação da mensagem.
+Exclua uma mensagem na caixa de correio do usuário especificado ou exclua uma relação da mensagem.
 
->**Observação** Você pode não conseguir excluir itens da pasta exclusão de itens recuperáveis (representado pelo [nome de pasta conhecido](../resources/mailfolder.md) `recoverableitemsdeletions` ). Veja [retenção de item excluído](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [limpar itens excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
+>**Observação** Talvez você não consiga excluir itens na pasta de exclusões de itens recuperáveis (representado pelo [nome de pasta conhecido).](../resources/mailfolder.md) `recoverableitemsdeletions` Consulte [Retenção de itens excluídos](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e Limpar itens [excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

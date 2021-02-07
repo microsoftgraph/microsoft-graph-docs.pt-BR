@@ -5,14 +5,14 @@ ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
 description: O recurso GeoCoordinates fornece as coordenadas geográficas e a elevação de um local com base nos metadados contidos no arquivo.
-ms.prod: ''
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: c96420fedf0a0b89dd64881417af29e6178bbdc3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 048fefc8938a789a0aae06f3dd6f50c25c305c31
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018212"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130505"
 ---
 # <a name="geocoordinates-resource-type"></a>Tipo de recurso GeoCoordinates
 

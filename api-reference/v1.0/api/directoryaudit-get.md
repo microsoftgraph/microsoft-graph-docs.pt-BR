@@ -1,30 +1,30 @@
 ---
 title: Obter directoryAudit
-description: Descreve o método Get do recurso directoryAudit (entidade) da API do Microsoft Graph.
+description: Descreve o método get do recurso directoryAudit (entidade) da API do Microsoft Graph.
 localization_priority: Normal
 author: SarahBar
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 83be228cd6826c00af42e41fca31b5d60c919ba6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d54a39393b86d3e986c1723466adaf9203378529
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052471"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131730"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
 
 Namespace: microsoft.graph
 
-Obter um item específico de log de auditoria do Azure Active Directory. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como usuários, aplicativos, gerenciamento de dispositivo e grupo, gerenciamento de identidade privilegiada (PIM), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (autoatendimento e redefinições de senha de administrador), gerenciamento de grupo de autoatendimento e assim por diante.
+Obter um item de log de auditoria específico do Azure Active Directory. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como usuário, aplicativo, gerenciamento de dispositivos e grupos, PIM (privileged identity management), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (redefinições de senha de autoatendado e administrador), gerenciamento de grupos de autoatendados e assim por diante.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AuditLog. Read. All e Directory. Read. All |
+|Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All |
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

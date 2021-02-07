@@ -1,31 +1,31 @@
 ---
-title: 'servicePrincipalName: removePassword'
-description: Remover uma senha de um servicePrincipalName
+title: 'servicePrincipal: removePassword'
+description: Remover uma senha de uma servicePrincipal
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 407bd1e2ad56ace6af783e4c83094d3ea74a5d42
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30f66a540a7a140e6381ff4f4f556b3509a04a3b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978577"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130533"
 ---
-# <a name="serviceprincipal-removepassword"></a>servicePrincipalName: removePassword
+# <a name="serviceprincipal-removepassword"></a>servicePrincipal: removePassword
 
 Namespace: microsoft.graph
 
-Remover uma senha de um objeto do [servicePrincipalName](../resources/serviceprincipal.md) .
+Remover uma senha de um [objeto servicePrincipal.](../resources/serviceprincipal.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Application. ReadWrite. All, Directory. AccessAsUser. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

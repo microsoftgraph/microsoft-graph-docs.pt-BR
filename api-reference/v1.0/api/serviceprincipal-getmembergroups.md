@@ -3,14 +3,14 @@ title: 'servicePrincipal: getMemberObjects'
 description: Obtenha a lista de grupos dos quais essa entidade de serviço é membro.  A verificação é transitiva.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 98266f8796bb90b494424fd68e3cbddd064a3b4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: df956354d20b6537562e55b41df8c466b8a0d4ae
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032863"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132255"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberObjects
 

@@ -1,24 +1,24 @@
 ---
 title: Atualizar mailSearchFolder
-description: Atualizar as propriedades graváveis de um objeto mailSearchFolder.
+description: Atualize as propriedades que podem ser escritas de um objeto mailSearchFolder.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4cee0bd483501dfa9328ad71bb9210616d55670a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 939a25a6aef69625571dd812f16c0b76ac458281
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032961"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130652"
 ---
 # <a name="update-mailsearchfolder"></a>Atualizar mailSearchFolder
 
 Namespace: microsoft.graph
 
-Atualizar as propriedades graváveis de um objeto [mailSearchFolder](../resources/mailsearchfolder.md) .
+Atualize as propriedades que podem ser escritas de [um objeto mailSearchFolder.](../resources/mailsearchfolder.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -45,17 +45,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | String | O nome de exibição do [mailFolder](../resources/mailfolder.md).|
-| includeNestedFolders | Boolean | Como a hierarquia da pasta de caixa de correio deve ser percorrida. `true` significa que uma pesquisa profunda deve ser feita enquanto `false` uma pesquisa superficial deve ser realizada. |
-| sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
+| displayName | String | O nome de exibição [da mailFolder](../resources/mailfolder.md).|
+| includeNestedFolders | Booliano | Como a hierarquia da pasta da caixa de correio deve ser percorrido. `true` significa que uma pesquisa profunda deve ser feita enquanto isso significa que uma `false` pesquisa superficial deve ser feita em vez disso. |
+| sourceFolderIds | String collection | As pastas de caixa de correio que devem ser mineradas. |
 | filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
-A seguir está um exemplo de solicitação que atualiza a propriedade **filterQuery** da pasta de pesquisa.
+A seguir está um exemplo de solicitação que atualiza **a propriedade filterQuery** da pasta de pesquisa.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -93,7 +93,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

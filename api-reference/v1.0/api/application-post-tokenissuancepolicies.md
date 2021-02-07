@@ -1,32 +1,32 @@
 ---
 title: Atribuir tokenIssuancePolicy
-description: Atribuir um tokenIssuancePolicy a um aplicativo.
+description: Atribua um tokenIssuancePolicy a um aplicativo.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 00421d37537de006f33459644e796b6cb7bbcb78
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0847fc15212fb6fe5e69e6a3fe713bbf5c119be6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019345"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131772"
 ---
 # <a name="assign-tokenissuancepolicy"></a>Atribuir tokenIssuancePolicy
 
 Namespace: microsoft.graph
 
-Atribuir um [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) a um [aplicativo](../resources/application.md).
+Atribua [um tokenIssuancePolicy](../resources/tokenissuancepolicy.md) a um [aplicativo.](../resources/application.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Application. ReadWrite. All, Policy. ReadWrite. ApplicationConfiguration e Application. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. All e Application. ReadWrite. OwnedBy, Policy. Read. All e Application. ReadWrite. All, Policy. ReadWrite. ApplicationConfiguration e Application. ReadWrite. OwnedBy, Policy. ReadWrite. ApplicationConfiguration e Application. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,7 +45,7 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça o identificador do objeto [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) (usando uma `@odata.id` Propriedade) que deve ser atribuído ao aplicativo.
+No corpo da solicitação, fornece o identificador do objeto [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) (usando uma propriedade) que deve ser atribuído `@odata.id` ao aplicativo.
 
 ## <a name="response"></a>Resposta
 

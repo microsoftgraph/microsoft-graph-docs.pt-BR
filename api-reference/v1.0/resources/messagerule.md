@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso messageRule
 description: Uma regra que se aplica a mensagens na Caixa de Entrada de um usuário.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 87f6413b3b7bb38d45a8ba30dc39c3168a2a0d97
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fb13379cbd68319ae1384f6a3b8ce2caf663c8e0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965397"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132367"
 ---
 # <a name="messagerule-resource-type"></a>Tipo de recurso messageRule
 
@@ -33,7 +33,7 @@ Programaticamente, você pode acessar regras por meio da propriedade de navegaç
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Condições de exceção para a regra. |
 | hasError | Boolean | Indica se a regra está em uma condição de erro. Somente leitura. |
 | id |String|O identificador exclusivo da regra. Somente leitura.|
-| isEnabled | Boolean | Indica se a regra está habilitada para ser aplicada a mensagens. |
+| isEnabled | Booliano | Indica se a regra está habilitada para ser aplicada a mensagens. |
 | isReadOnly | Boolean | Indica se a regra é somente leitura e não pode ser modificada ou excluída pelas regras da API REST. |
 | sequence | Int32 | Indica a ordem em que a regra é executada, entre outras regras. |
 

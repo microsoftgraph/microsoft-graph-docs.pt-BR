@@ -1,16 +1,16 @@
 ---
 title: Atualizar a categoria do Outlook
-description: 'Atualize a propriedade gravável, **color**, do objeto outlookCategory especificado. Não é possível modificar a propriedade **DisplayName** '
+description: 'Atualize a propriedade gravável, **color**, do objeto outlookCategory especificado. Você não pode modificar a **propriedade displayName** '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dd8379f0e4f76381d668399293c3947525f80131
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e18edb079cf507e350f7b9ee879141a02f27030
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087107"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128369"
 ---
 # <a name="update-outlook-category"></a>Atualizar a categoria do Outlook
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Atualize a propriedade gravável, **color**, do objeto [outlookCategory](../resources/outlookcategory.md) especificado. Não é possível modificar a propriedade **displayName** depois de criar a categoria.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

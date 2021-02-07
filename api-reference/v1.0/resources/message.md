@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de mensagem
 description: Uma mensagem em uma mailFolder.
-author: svpsiva
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e0957e7f62cacd83d6ab064dfae7fb50a3f932e5
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 30f6f042c959ae4177f1482a6222605827766b4b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563671"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132377"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 

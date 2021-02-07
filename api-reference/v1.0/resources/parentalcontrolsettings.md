@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso parentalControlSettings
+title: Tipo de recurso parentalControlSettings
 description: Especifica as configurações de controle parental de um aplicativo. Essas configurações controlam a experiência de consentimento.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a65c2734cdb82ba249fe1cc3fa0f11e1c4d27fc0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f145ecabb4eccfe15eaedc856b1349fc6ce9f5a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094187"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128495"
 ---
-# <a name="parentalcontrolsettings-resource-type"></a>tipo de recurso parentalControlSettings
+# <a name="parentalcontrolsettings-resource-type"></a>Tipo de recurso parentalControlSettings
 
 Namespace: microsoft.graph
 
@@ -22,8 +22,8 @@ Especifica as configurações de controle parental de um aplicativo. Essas confi
 
 | Propriedade | Tipo | Descrição |
 :---------------|:--------|:----------|
-|countriesBlockedForMinors|Coleção String| Especifica os [códigos de país ISO de duas letras](https://www.iso.org/iso-3166-country-codes.html). O acesso ao aplicativo será bloqueado para menores dos países especificados nesta lista.|
-|legalAgeGroupRule| Cadeia de caracteres | Especifica a regra de grupo de idades legais que se aplica aos usuários do aplicativo. Pode ser definido como um dos seguintes valores: <table><tr><th>Valor</th><th>Descrição</th></tr><tr><td>Permitir</td><td>Padrão. Impõe o mínimo legal. Isso significa que o consentimento do responsável é obrigatório para menores na União Européia e na Coréia.</td></tr><tr><td>RequireConsentForPrivacyServices</td><td>Impõe que o usuário especifique a data de nascimento para estar em conformidade com as regras do COOPA. </td></tr><tr><td>RequireConsentForMinors</td><td>Requer o consentimento dos pais para crianças abaixo de 18, independentemente das regras secundárias do país.</td></tr><tr><td>RequireConsentForKids</td><td>Requer o consentimento dos pais para crianças abaixo de 14, independentemente das regras secundárias do país.</td></tr><tr><td>BlockMinors</td><td>Bloqueia os menores de usar o aplicativo.</td></tr></table> |
+|countriesBlockedForMinors|String collection| Especifica os códigos [de país ISO de](https://www.iso.org/iso-3166-country-codes.html)duas letras. O acesso ao aplicativo será bloqueado para menores dos países especificados nesta lista.|
+|legalAgeGroupRule| String | Especifica a regra de faixa etária legal que se aplica aos usuários do aplicativo. Pode ser definido como um dos seguintes valores: <table><tr><th>Valor</th><th>Descrição</th></tr><tr><td>Permitir</td><td>Padrão. Impõe o mínimo legal. Isso significa que o consentimento dos pais é necessário para menores na União Europeia e na Coreia.</td></tr><tr><td>RequireConsentForPrivacyServices</td><td>Impõe que o usuário especifique a data de nascimento para estar em conformidade com as regras do COPPA. </td></tr><tr><td>RequireConsentForMinors</td><td>Requer o consentimento dos pais para menores de 18 anos, independentemente das regras secundárias do país.</td></tr><tr><td>RequireConsentForKids</td><td>Requer o consentimento dos pais para menores de 14 anos, independentemente das regras secundárias do país.</td></tr><tr><td>BlockMinors</td><td>Impede que menores usem o aplicativo.</td></tr></table> |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

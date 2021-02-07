@@ -1,16 +1,16 @@
 ---
 title: Excluir messageRule
 description: Exclua o objeto messageRule especificado.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cef718dc2f9ef23cc006ba61a3cde71c38d2b1c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7351a2c8942cd69d1b6369c95193d5ba4359cc4
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019037"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129993"
 ---
 # <a name="delete-messagerule"></a>Excluir messageRule
 
@@ -19,12 +19,12 @@ Namespace: microsoft.graph
 
 Exclua o objeto [messageRule](../resources/messagerule.md) especificado.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | MailboxSettings.ReadWrite    |
 |Aplicativo | MailboxSettings.ReadWrite |
 

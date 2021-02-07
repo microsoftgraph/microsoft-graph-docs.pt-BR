@@ -3,14 +3,14 @@ title: Listar extensionProperties
 description: Recupere uma lista de objetos extensionproperty.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 814c465dc0479dbe70dd23c7177a6b0bdbd0e0f2
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 4375f868d6588250c1bdd11b339565fa7f125ab8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844680"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132493"
 ---
 # <a name="list-extensionproperties"></a>Listar extensionProperties
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere a lista de [objetos extensionProperty](../resources/extensionproperty.md) em um aplicativo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
