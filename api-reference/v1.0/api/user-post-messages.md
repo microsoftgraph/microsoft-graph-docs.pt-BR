@@ -2,15 +2,15 @@
 title: Criar mensagem
 description: Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualquer pasta e, opcionalmente, atualizados antes do envio. Para salvar na pasta Rascunhos, use o atalho /messages.
 localization_priority: Priority
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0650377638e62f3ac06c02b7e0e23deffe8be056
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ce71e45763ed0c1809855b180e38cf49f1bc61f4
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972711"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137225"
 ---
 # <a name="create-message"></a>Criar mensagem
 

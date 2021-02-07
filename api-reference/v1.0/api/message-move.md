@@ -1,16 +1,16 @@
 ---
 title: 'message: move'
 description: Mover uma mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino e remove a mensagem original.
-author: svpsiva
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8ae51c3f55a09664aa8e0635e7a1a674ff911e19
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76880630d5faa0e09c4fa1efeb17dcf7c2c64615
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089081"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136077"
 ---
 # <a name="message-move"></a>message: move
 
@@ -104,7 +104,7 @@ Content-type: application/json
 
 Veja a seguir um exemplo da resposta.
 
-> **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

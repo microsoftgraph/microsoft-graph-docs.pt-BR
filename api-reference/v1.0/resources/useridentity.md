@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso UserIdentity
-description: No contexto de um log de auditoria do Azure AD, isso representa as informações do usuário que foram iniciadas ou foram afetadas por uma atividade de auditoria.
+title: Tipo de recurso userIdentity
+description: No contexto de um log de auditoria do Azure AD, isso representa as informações do usuário que iniciaram ou foram afetadas por uma atividade de auditoria.
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 32bfb6d7a92ce566d10809277f19f82e45ffc1a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1abc846321e59434053a7a33b3aa8b993a0f9edc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015383"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136959"
 ---
-# <a name="useridentity-resource-type"></a>tipo de recurso UserIdentity
+# <a name="useridentity-resource-type"></a>Tipo de recurso userIdentity
 
 Namespace: microsoft.graph
 
-No contexto de um log de auditoria do Azure AD, isso representa as informações do usuário que foram iniciadas ou foram afetadas por uma atividade de auditoria.
+No contexto de um log de auditoria do Azure AD, isso representa as informações do usuário que iniciaram ou foram afetadas por uma atividade de auditoria.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | String | Nome de exibição da identidade. Observe que isso pode não estar sempre disponível ou atualizado.    |
+| displayName | String | Nome de exibição da identidade. Observe que isso pode nem sempre estar disponível ou atualizado.    |
 | id          | String | Identificador exclusivo da identidade.  |
-| ipAddress   | Cadeia de caracteres| Indica o endereço IP do cliente usado pelo usuário que está executando a atividade (log de auditoria somente).|
+| ipAddress   | Cadeia de caracteres| Indica o endereço IP do cliente usado pelo usuário executando a atividade (somente log de auditoria).|
 | userPrincipalName | String  | O atributo userPrincipalName do usuário. |
 
 >**Observação:** Em alguns casos, o identificador exclusivo pode não estar disponível. Nesse caso, a propriedade **displayName** para a identidade será retornada, mas a propriedade **id** estará ausente do recurso.
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do tipo.
+Aqui está uma representação JSON do tipo.
 
 <!-- {
   "blockType": "resource",

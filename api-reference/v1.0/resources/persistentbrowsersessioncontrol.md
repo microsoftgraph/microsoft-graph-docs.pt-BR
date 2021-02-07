@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso persistentBrowserSessionControl
-description: Controle de sessão para definir se deseja persistir cookies ou não.
+title: Tipo de recurso persistentBrowserSessionControl
+description: Controle de sessão para definir se os cookies serão persistentes ou não.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ad25e798b2f49ab373c85ee9072b3e7990cfe67d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b418f16a69e5b97cbb42bc81994dfd87e5a3c1e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984226"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135734"
 ---
-# <a name="persistentbrowsersessioncontrol-resource-type"></a>tipo de recurso persistentBrowserSessionControl
+# <a name="persistentbrowsersessioncontrol-resource-type"></a>Tipo de recurso persistentBrowserSessionControl
 
 Namespace: microsoft.graph
 
-Controle de sessão para definir se deseja persistir cookies ou não. Herda do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).
+Controle de sessão para definir se os cookies serão persistentes ou não. Herda do [Controle de Sessão de Acesso Condicional.](conditionalaccesssessioncontrol.md)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Especifica se o controle de sessão está habilitado. |
-|Mode|String| Os valores possíveis são: `always` e `never`.|
+|isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
+|modo|String| Os valores possíveis são: `always` e `never`.|
 
 ## <a name="relationships"></a>Relações
 

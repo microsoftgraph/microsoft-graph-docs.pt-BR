@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso webApplication
+title: Tipo de recurso webApplication
 description: Especifica configurações para um aplicativo Web.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: aae3184a025757b910e0b19daa8a8d8057128506
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cd524b0692775368c6426012d1829b5cf2119827
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015257"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135486"
 ---
-# <a name="webapplication-resource-type"></a>tipo de recurso webApplication
+# <a name="webapplication-resource-type"></a>Tipo de recurso webApplication
 
 Namespace: microsoft.graph
 
@@ -22,10 +22,10 @@ Especifica configurações para um aplicativo Web.
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| homePageUrl | Cadeia de caracteres | Página inicial ou página de aterrissagem do aplicativo. |
-| implicitGrantSettings | [implicitGrantSettings](implicitgrantsettings.md)| Especifica se este aplicativo Web pode solicitar tokens usando o fluxo implícito do OAuth 2,0. |
+| homePageUrl | String | Página inicial ou página de aterrissagem do aplicativo. |
+| implicitGrantSettings | [implicitGrantSettings](implicitgrantsettings.md)| Especifica se esse aplicativo Web pode solicitar tokens usando o fluxo implícito do OAuth 2.0. |
 | logoutUrl | String | Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML. |
-| redirectUris | Coleção de cadeias de caracteres | Especifica as URLs nas quais os tokens de usuário são enviados para entrada ou os URIs de redirecionamento nos quais os códigos de autorização OAuth 2,0 e tokens de acesso são enviados. |
+| redirectUris | String collection | Especifica as URLs para onde os tokens de usuário são enviados para entrada ou os URIs de redirecionamento para os quais os códigos de autorização e tokens de acesso do OAuth 2.0 são enviados. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

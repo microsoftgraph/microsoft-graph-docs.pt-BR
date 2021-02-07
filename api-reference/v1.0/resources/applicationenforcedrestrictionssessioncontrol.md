@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso applicationEnforcedRestrictionsSessionControl
+title: Tipo de recurso applicationEnforcedRestrictionsSessionControl
 description: Controle de sessão para impor restrições de aplicativo.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0819b9133e6495bbe6691170ce0c38a2d93302d7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 130644ebf0d72b4870dc78e64455c2dfab446ae5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003364"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134964"
 ---
-# <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a>tipo de recurso applicationEnforcedRestrictionsSessionControl
+# <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a>Tipo de recurso applicationEnforcedRestrictionsSessionControl
 
 Namespace: microsoft.graph
 
-Controle de sessão para impor restrições de aplicativo. Herda do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).
+Controle de sessão para impor restrições de aplicativo. Herda do [Controle de Sessão de Acesso Condicional.](conditionalaccesssessioncontrol.md)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Especifica se o controle de sessão está habilitado ou não. |
+|isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado ou não. |
 
 ## <a name="relationships"></a>Relações
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso outlookCategory
-description: Representa uma categoria pela qual um usuário pode agrupar itens do Outlook como mensagens e eventos. O usuário define categorias em uma lista mestre e pode aplicar uma ou mais dessas definições de usuário
+description: Representa uma categoria pela qual um usuário pode agrupar itens do Outlook como mensagens e eventos. O usuário define categorias em uma lista mestra e pode aplicar uma ou mais dessas definições pelo usuário
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 299705f1ceb4e429f28d481721caafee0d7164c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9bb81a4630e19fe86435a6f4cd000a789467e7e8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066289"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137022"
 ---
 # <a name="outlookcategory-resource-type"></a>Tipo de recurso outlookCategory
 

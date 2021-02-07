@@ -3,14 +3,14 @@ title: Criar extensionProperty
 description: Crie uma nova extensionProperty.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d949a5bffa6edd1bc8b10ea4e72b3628ceacb2a9
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 7105cce50e231280d88f1cf96289fa7cbc0fca94
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844176"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135839"
 ---
 # <a name="create-extensionproperty"></a>Criar extensionProperty
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Crie uma nova [definição extensionProperty.](../resources/extensionproperty.md) Você pode usar essa operação para adicionar um valor de propriedade personalizado ao tipo de objeto de destino definido na **extensionProperty**, usando solicitações padrão de criação e atualização para o objeto de destino.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -50,8 +50,8 @@ No corpo da solicitação, forneça [um objeto extensionProperty](../resources/e
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a propriedade de extensão pode conter. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` - Máximo de 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` - Valor de 32 bits.</li><li>`LargeInteger` - Valor de 64 bits.</li><li>`String` - Máximo de 256 caracteres</li></ul>|
-|nome|Cadeia de caracteres| Nome da propriedade de extensão. Não anulável. |
-|targetObjects|Conjunto de cadeias de caracteres| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|nome|String| Nome da propriedade de extensão. Não anulável. |
+|targetObjects|String collection| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>Resposta

@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso signInLocation
-description: Fornece a cidade, o estado e o país/região de onde a entrada ocorreu.
+title: Tipo de recurso signInLocation
+description: Fornece a cidade, o estado e o país/região de onde a login aconteceu.
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 4b14f26fff4721da499d108883f57db009ec42c3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c003fda44e54bbee5957e794d02b90f008f4b8f5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970604"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137092"
 ---
-# <a name="signinlocation-resource-type"></a>tipo de recurso signInLocation
+# <a name="signinlocation-resource-type"></a>Tipo de recurso signInLocation
 
 Namespace: microsoft.graph
 
-Fornece a cidade, o estado e o país/região de onde a entrada ocorreu.
+Fornece a cidade, o estado e o país/região de onde a login aconteceu.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|city|String|Fornece a cidade onde a entrada se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
-|countryOrRegion|String|Fornece as informações do código do país (código de 2 letras) em que a entrada se originou.  Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
-|geoCoordinates|[geoCoordinates](geocoordinates.md)|Fornece a latitude, longitude e altitude onde a entrada se originou.|
-|state|String|Fornece o estado em que a entrada se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
+|city|String|Fornece a cidade de origem do login. Isso é calculado usando informações de latitude/longitude da atividade de login.|
+|countryOrRegion|String|Fornece as informações de código do país (código de 2 letras) de origem do login.  Isso é calculado usando informações de latitude/longitude da atividade de login.|
+|geoCoordinates|[geoCoordinates](geocoordinates.md)|Fornece a latitude, longitude e altitude de onde a login se originou.|
+|estado|String|Fornece o estado de origem do login. Isso é calculado usando informações de latitude/longitude da atividade de login.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -3,14 +3,14 @@ title: Criar Usuário
 description: Usar esta API para criar um novo Usuário.
 author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 44215db3fd73751c1910c8fbd6e0f34ffc82be99
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7a9564aa8c6d7d8bf966c33da2969d9071fb3f6e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523508"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137204"
 ---
 # <a name="create-user"></a>Criar Usuário
 

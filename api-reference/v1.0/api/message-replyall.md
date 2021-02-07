@@ -1,16 +1,16 @@
 ---
 title: 'message: replyAll'
 description: Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 84fc604be0bb62c5d68268d3234eb5f0b48a84e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e6509b2d580406410b4c78742b38a2019405bd2
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028599"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137575"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso conditionalAccessSessionControls
-description: Representa um tipo complexo de controles de sessão que é aplicado após a entrada.
+title: Tipo de recurso conditionalAccessSessionControls
+description: Representa um tipo complexo de controles de sessão que é imposto após a logon.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 78c9ab3c3b5a55623ba13e1f7ce6d28a9425ded5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e41def74a1654b20e1aa3618abdc6518e774045
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057007"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135930"
 ---
-# <a name="conditionalaccesssessioncontrols-resource-type"></a>tipo de recurso conditionalAccessSessionControls
+# <a name="conditionalaccesssessioncontrols-resource-type"></a>Tipo de recurso conditionalAccessSessionControls
 
 Namespace: microsoft.graph
 
-Representa os controles de sessão que são aplicados após a entrada.
-Todos os controles de sessão herdam de [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).
+Representa os controles de sessão que são aplicados após a logon.
+Todos os controles de sessão [herdam de conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| Controle de sessão para impor restrições de aplicativo. Somente o Exchange Online e o SharePoint Online dão suporte a esse controle de sessão. |
-|cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| Controle de sessão para aplicar o Cloud app Security.|
-|persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Controle de sessão para definir se deseja persistir cookies ou não. Todos os aplicativos devem ser selecionados para que esse controle de sessão funcione corretamente. |
-|signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Controle de sessão para impor a frequência de entrada.|
+|applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| Controle de sessão para impor restrições de aplicativo. Somente o Exchange Online e o SharePoint Online suportam esse controle de sessão. |
+|cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| Controle de sessão para aplicar a segurança do aplicativo na nuvem.|
+|persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Controle de sessão para definir se os cookies serão persistentes ou não. Todos os aplicativos devem ser selecionados para que esse controle de sessão funcione corretamente. |
+|signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Controle de sessão para impor a frequência de login.|
 
 ## <a name="relationships"></a>Relações
 

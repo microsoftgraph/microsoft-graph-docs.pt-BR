@@ -1,32 +1,32 @@
 ---
-title: 'Grupo: checkMemberObjects'
+title: 'group: checkMemberObjects'
 description: Verifique se há associação em uma lista de grupos ou funções de diretório para o objeto de grupo especificado.
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d8cb8324c3b812963e461d63807aa2a071ff8a63
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 35ad4cc491d0a3d8513ca070a258ecc8e6080e8f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023328"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135587"
 ---
-# <a name="group-checkmemberobjects"></a>Grupo: checkMemberObjects
+# <a name="group-checkmemberobjects"></a>group: checkMemberObjects
 
 Namespace: microsoft.graph
 
-Verifique se há associação em uma lista de grupos ou funções de diretório para o grupo especificado. Este método é transitivo.
+Verifique se há associação em uma lista de grupos ou funções de diretório para o grupo especificado. Esse método é transitivo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Group.ReadWrite.All<br>E<br><ul><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</li></ul><br>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Group.ReadWrite.All<br>E:<br><ul><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li></ul><br>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Group.Read.All, Group.ReadWrite.All<br>E<br><ul><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</ul></li><br>Directory.Read.All, Directory.ReadWrite.All |
+| Aplicativo                            | Group.Read.All, Group.ReadWrite.All<br>E:<br><ul><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</ul></li><br>Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,11 +49,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|ids|Coleção de cadeias de caracteres| Uma coleção que contém as IDs de objeto dos grupos, funções de diretório ou IDs RoleTemplate de funções de diretório, para verificar a associação. Você pode especificar até 20 objetos. |
+|ids|Coleção de cadeias de caracteres| Uma coleção que contém as IDs de objeto dos grupos, funções de diretório ou IDs de roleTemplate das funções de diretório, para verificar a associação. Você pode especificar até 20 objetos. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção String no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto da coleção de cadeias de caracteres no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

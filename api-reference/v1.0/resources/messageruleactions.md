@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso messageRuleActions
 description: Representa o conjunto de ações que estão disponíveis para uma regra.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ed2486994a9ccb496dc92e241506baa867ebeb1f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 52ed8905f3120d17bf6c9c19d76ae9a2bcf5f77c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965383"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136049"
 ---
 # <a name="messageruleactions-resource-type"></a>Tipo de recurso messageRuleActions
 

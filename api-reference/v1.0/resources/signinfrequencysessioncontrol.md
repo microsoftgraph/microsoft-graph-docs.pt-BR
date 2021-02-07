@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso signInFrequencySessionControl
-description: Controle de sessão para impor a frequência de entrada.
+title: Tipo de recurso signInFrequencySessionControl
+description: Controle de sessão para impor a frequência de login.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8c0c0eca971c6d9df8bde348787029cb5aa98320
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a89a9337bc032210873de3ceb05949f935693f1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970618"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137120"
 ---
-# <a name="signinfrequencysessioncontrol-resource-type"></a>tipo de recurso signInFrequencySessionControl
+# <a name="signinfrequencysessioncontrol-resource-type"></a>Tipo de recurso signInFrequencySessionControl
 
 Namespace: microsoft.graph
 
-Controle de sessão para impor frequência de logon. Herda do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).
+Controle de sessão para impor a frequência de login. Herda do [Controle de Sessão de Acesso Condicional.](conditionalaccesssessioncontrol.md)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Especifica se o controle de sessão está habilitado. |
-|tipo          |String       | Os valores possíveis são: `days` e `hours`.|
+|isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
+|type          |String       | Os valores possíveis são: `days` e `hours`.|
 |valor         |Int32        | O número de `days` ou `hours` .|
 
 ## <a name="relationships"></a>Relações

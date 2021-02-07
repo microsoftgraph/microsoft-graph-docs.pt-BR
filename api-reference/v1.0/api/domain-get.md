@@ -1,22 +1,22 @@
 ---
 title: Obter domínio
-description: Recupere as propriedades e os relacionamentos do objeto Domain.
+description: Recupere as propriedades e os relacionamentos do objeto domain.
 author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cf7557ecf9ff34cf0746f4267aa8461e277a9004
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: d2b777a59118160cddef98f9b2f1fbf3c7a0855c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457762"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135218"
 ---
 # <a name="get-domain"></a>Obter domínio
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos do objeto Domain.
+Recupere as propriedades e os relacionamentos do objeto domain.
 
 ## <a name="permissions"></a>Permissions
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | Directory.Read.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, Domain.ReadWrite.All |
+|Aplicativo | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [Domain](../resources/domain.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e `200 OK` [um](../resources/domain.md) objeto de domínio no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 

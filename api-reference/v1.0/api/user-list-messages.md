@@ -2,15 +2,15 @@
 title: Listar mensagens
 description: Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário).
 localization_priority: Priority
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a6086c3acf463e5fe4ffc130af3d9b95435061ba
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: a0867ea7d3637df20bf4f4f4af603e819a75d4ea
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982975"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135972"
 ---
 # <a name="list-messages"></a>Listar mensagens
 

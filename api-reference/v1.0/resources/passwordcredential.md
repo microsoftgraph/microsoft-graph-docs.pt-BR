@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso passwordCredential
-description: Contém uma credencial de senha associada a um aplicativo ou a uma entidade de serviço.
+title: Tipo de recurso passwordCredential
+description: Contém uma credencial de senha associada a um aplicativo ou entidade de serviço.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: dd63f52485e27d44681a277df26492c33a1740f3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d3b180e269b7bd7d16e910d59126c04168ba37a6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965405"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136974"
 ---
-# <a name="passwordcredential-resource-type"></a>tipo de recurso passwordCredential
+# <a name="passwordcredential-resource-type"></a>Tipo de recurso passwordCredential
 
 Namespace: microsoft.graph
 
-Representa uma credencial de senha associada a um aplicativo ou a uma entidade de serviço. A propriedade **passwordCredentials** do [aplicativo](application.md) <!--and [servicePrincipal](serviceprincipal.md) entitites--> Entity é uma coleção de objetos **passwordCredential** .
+Representa uma credencial de senha associada a um aplicativo ou entidade de serviço. A **propriedade passwordCredentials** do [aplicativo](application.md) <!--and [servicePrincipal](serviceprincipal.md) entitites--> é uma coleção de **objetos passwordCredential.**
 
 > [!IMPORTANT]
-> Não há suporte para o uso de POST ou PATCH para definir **passwordCredential** . Use os métodos addpassword e removePassword para atualizar a senha de um aplicativo ou de um servicePrincipalName:
+> Não há suporte para o uso de POST ou **PATCH para definir passwordCredential.** Use os métodos addPassword e removePassword para atualizar a senha de um aplicativo ou de um servicePrincipal:
 >
-> - [Application: addpassword](../api/application-addpassword.md)
-> - [aplicativo: removePassword](../api/application-removepassword.md)
-> - [servicePrincipalName: addpassword](../api/serviceprincipal-addpassword.md)
-> - [servicePrincipalName: removePassword](../api/serviceprincipal-removepassword.md)
+> - [application: addPassword](../api/application-addpassword.md)
+> - [application: removePassword](../api/application-removepassword.md)
+> - [servicePrincipal: addPassword](../api/serviceprincipal-addpassword.md)
+> - [servicePrincipal: removePassword](../api/serviceprincipal-removepassword.md)
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | customKeyIdentifier | Binária | Não usar. |
 | displayName | String | Nome amigável da senha. Opcional. |
-| endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. |
-| Dica | String | Contém os três primeiros caracteres da senha. Somente leitura. |
+| endDateTime | DateTimeOffset | A data e a hora em que a senha expira é representada usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. |
+| hint | String | Contém os três primeiros caracteres da senha. Somente leitura. |
 | keyId | Guid | O identificador exclusivo da senha. |
-| secretText | String | Somente leitura; Contém as senhas fortes geradas pelo Azure AD que têm 16-64 caracteres de comprimento. O valor da senha gerada só é retornado durante a solicitação POST inicial para [addpassword](../api/application-addpassword.md). Não há como recuperar essa senha no futuro. |
+| secretText | String | Somente leitura; Contém as senhas fortes geradas pelo Azure AD com 16 a 64 caracteres de comprimento. O valor de senha gerado só é retornado durante a solicitação POST inicial para [addPassword](../api/application-addpassword.md). Não há como recuperar essa senha no futuro. |
 | startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

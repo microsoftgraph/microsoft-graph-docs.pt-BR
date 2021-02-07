@@ -2,15 +2,15 @@
 title: Obter as configurações da caixa de correio do usuário
 description: 'Obtenha as configurações de caixa de correio do usuário. Isso inclui configurações para respostas automáticas (notificar pessoas automaticamente quando '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0fda1d7a60c341d6d45d04485b6cd9285ab274f6
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 933e23431e0c6655ad09c16a5c2cb3bc3fcb443d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635429"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135174"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
@@ -92,7 +92,7 @@ Se for bem-sucedido, este método retornará um código de resposta `200 OK` e u
 - Objeto [mailboxSettings](../resources/mailboxsettings.md)
 - Objeto [automaticRepliesSetting](../resources/automaticrepliessetting.md)
 - cadeia de caracteres (para **dateFormat**)
-- Cadeia de caracteres (para **delegateMeetingMessageDeliveryOptions**)
+- cadeia de **caracteres (para delegateMeetingMessageDeliveryOptions**)
 - Objeto [localeInfo](../resources/localeinfo.md)
 - cadeia de caracteres (para **timeFormat**)
 - cadeia de caracteres (para **timeZone**)

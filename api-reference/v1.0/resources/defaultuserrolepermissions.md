@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso defaultUserRolePermissions
-description: Contém determinadas permissões personalizáveis de função de usuário padrão.
+title: Tipo de recurso defaultUserRolePermissions
+description: Contém determinadas permissões personalizáveis da função de usuário padrão.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3f2b4fbc4b4a496905f8199b065ecd94e849365e
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 0e89f175a62615efe172646613897222a9ae75fa
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581179"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137554"
 ---
-# <a name="defaultuserrolepermissions-resource-type"></a>tipo de recurso defaultUserRolePermissions
+# <a name="defaultuserrolepermissions-resource-type"></a>Tipo de recurso defaultUserRolePermissions
 
-Contém determinadas permissões personalizáveis de função de usuário padrão no Azure Active Directory (AD).
+Contém determinadas permissões personalizáveis da função de usuário padrão no Azure Active Directory (AD).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| allowedToCreateApps | Boolean | Indica se a função de usuário padrão pode criar aplicativos. |  
-| allowedToCreateSecurityGroups | Boolean | Indica se a função de usuário padrão pode criar grupos de segurança. |  
-| allowedToReadOtherUsers | Boolean | Indica se a função de usuário padrão pode ler outros usuários. |
-|permissionGrantPoliciesAssigned|Conjunto de cadeias de caracteres|Indica se o consentimento do usuário para os aplicativos é permitido e, se for, qual permissão para conceder consentimento e qual política de consentimento de aplicativo (permissionGrantPolicy) governará a permissão para os usuários concederem o consentimento. O valor deve estar no formato `managePermissionGrantsForSelf.{id}` , onde `{id}` é a **ID** de uma [política de consentimento de aplicativo](/azure/active-directory/manage-apps/manage-app-consent-policies)interna ou personalizada. Uma lista vazia indica que o consentimento do usuário para os aplicativos está desabilitado. |
+| allowedToCreateApps | Booliano | Indica se a função de usuário padrão pode criar aplicativos. |  
+| allowedToCreateSecurityGroups | Booliano | Indica se a função de usuário padrão pode criar grupos de segurança. |  
+| allowedToReadOtherUsers | Booliano | Indica se a função de usuário padrão pode ler outros usuários. |
+|permissionGrantPoliciesAssigned|String collection|Indica se o consentimento do usuário para aplicativos é permitido e, se for, qual permissão para conceder consentimento e qual política de consentimento do aplicativo (permissionGrantPolicy) regem a permissão para que os usuários concedam consentimento. Value should be in the format `managePermissionGrantsForSelf.{id}` , where is the `{id}` **id** of a built-in or custom [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies). Uma lista vazia indica que o consentimento do usuário para aplicativos está desabilitado. |
 
 ## <a name="relationships"></a>Relações
 

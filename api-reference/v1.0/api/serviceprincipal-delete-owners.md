@@ -1,24 +1,24 @@
 ---
 title: Remover proprietário
-description: Remover um proprietário de um servicePrincipalName.
+description: Remova um proprietário de um servicePrincipals.
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5d3856dc2337e7bfb55ece8aee9d24e47df7f918
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 7fc09427747d42ccc37cf9074ee42f8748567033
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903503"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135986"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 
 Namespace: microsoft.graph
 
-Remover um proprietário de um objeto [servicePrincipalName](../resources/serviceprincipal.md) .
+Remover um proprietário de um [objeto servicePrincipal.](../resources/serviceprincipal.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -39,7 +39,7 @@ DELETE /servicePrincipals/{id}/owners/{id}/$ref
 | Autorização | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça o identificador do objeto de diretório a ser atribuído como proprietário.
+No corpo da solicitação, fornece o identificador do objeto de diretório a ser atribuído como proprietário.
 
 ## <a name="response"></a>Resposta
 

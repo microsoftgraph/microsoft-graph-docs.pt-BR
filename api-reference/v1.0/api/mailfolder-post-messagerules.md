@@ -1,16 +1,16 @@
 ---
 title: Criar regra
 description: 'Crie um objeto messageRule especificando um conjunto de condições e ações. '
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 311566f63476dc03d3e2139ce714dc59bacb3903
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b305bbfca7d9a61197f677db9d7e3da785f81c0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137624"
 ---
 # <a name="create-rule"></a>Criar regra
 
@@ -21,12 +21,12 @@ Crie um objeto [messageRule](../resources/messagerule.md) especificando um conju
 
 O Outlook realizará essas ações se uma mensagem recebida na Caixa de Entrada do usuário atender às condições especificadas.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | MailboxSettings.ReadWrite    |
 |Aplicativo | MailboxSettings.ReadWrite |
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça os parâmetros que são aplicáveis à sua r
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. Opcional.|
 |displayName| String  | O nome de exibição da regra. Obrigatório.|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Representa condições de exceção para a regra. Opcional. |
-|isEnabled | Boolean | Indica se a regra está habilitada para ser aplicada a mensagens. Opcional. |
+|isEnabled | Booliano | Indica se a regra está habilitada para ser aplicada a mensagens. Opcional. |
 |sequence| Int32 | Indica a ordem em que a regra é executada, entre outras regras. Obrigatório.|
 
 ## <a name="response"></a>Resposta

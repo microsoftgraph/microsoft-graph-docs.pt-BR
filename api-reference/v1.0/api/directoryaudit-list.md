@@ -1,30 +1,30 @@
 ---
 title: Lista directoryAudits
-description: Descreve o método list do recurso directoryAudit (entidade) da API do Microsoft Graph.
+description: Descreve o método de lista do recurso directoryAudit (entidade) da API do Microsoft Graph.
 localization_priority: Normal
 author: SarahBar
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9a06d02929ca194d29820cedbe4b40aea5590035
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: b53ab2d25bd577c9f6b8d56b1efd01f0d46f9844
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601593"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136679"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
 Namespace: microsoft.graph
 
-Obtenha a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo o usuário, o aplicativo, o gerenciamento de dispositivos e de grupo, o gerenciamento de identidades privilegiadas, as revisões de acesso, os termos de uso, a proteção de identidade, o gerenciamento de senhas (autoatendimento e redefinições de senha de administrador) e o gerenciamento de grupos de autoatendimento e assim por diante.
+Obter a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo usuário, aplicativo, gerenciamento de dispositivos e grupos, PIM (privileged identity management), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (redefinições de senha de autoatendados e administrador), gerenciamento de grupos de autoatendados e assim por diante.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | AuditLog. Read. All e Directory. Read. All    |
+| Delegada (conta corporativa ou de estudante)     | AuditLog.Read.All e Directory.Read.All    |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | AuditLog.Read.All                           |
 
@@ -38,15 +38,15 @@ GET /auditLogs/directoryaudits
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
+Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
 
 | Parâmetro                                                       | Descrição                                                                   | Exemplo                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [\$Filtre](/graph/query_parameters#filter-parameter)       | Filtra os resultados (linhas).                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
-| [\$Início](/graph/query_parameters#top-parameter)             | Define o tamanho de página de resultados.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
+| [\$filter](/graph/query_parameters#filter-parameter)       | Filtra os resultados (linhas).                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
+| [\$top](/graph/query_parameters#top-parameter)             | Define o tamanho de página de resultados.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
 | [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte no \$ parâmetro Filter
+### <a name="attributes-supported-by-filter-parameter"></a>Atributos suportados pelo \$ parâmetro filter
 
 | Atributo                                                    | Operadores com suporte |
 | :----------------------------------------------------------- | :------------------ |
@@ -58,9 +58,9 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 | initiatedBy/user/userPrincipalName                           | eq, startswith      |
 | initiatedBy/app/appId                                        | eq                  |
 | initiatedBy/app/displayName                                  | eq                  |
-| targetResources/Any (t: t/ID eq ' {value} ')                    | eq                  |
-| targetResources/Any (t: t/displayName EQ ' {value} ')            | eq                  |
-| targetResources/Any (x: StartsWith (x/displayName, ' {value} ')) | startswith          |
+| targetResources/any(t: t/id eq '{value}')                    | eq                  |
+| targetResources/any(t:t/displayName eq '{value}')            | eq                  |
+| targetResources/any(x: startswith(x/displayName, '{value}')) | startswith          |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -74,7 +74,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

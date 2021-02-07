@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso automaticRepliesMailTips
-description: Dicas de correio sobre as respostas automáticas que foram configuradas em uma caixa de correio.
+title: Tipo de recurso automaticRepliesMailTips
+description: Dicas de Email sobre as respostas automáticas que foram configuradas em uma caixa de correio.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 184d02a0aacd290b54f398566b667ad0ee63b807
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1cc7f65a526d4550182f1e6dc0c5ea25a12ee182
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009384"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135748"
 ---
-# <a name="automaticrepliesmailtips-resource-type"></a>tipo de recurso automaticRepliesMailTips
+# <a name="automaticrepliesmailtips-resource-type"></a>Tipo de recurso automaticRepliesMailTips
 
 Namespace: microsoft.graph
 
 
-[Dicas](../resources/mailtips.md) de correio sobre as respostas automáticas que foram configuradas em uma caixa de correio.
+[Dicas de Email](../resources/mailtips.md) sobre as respostas automáticas que foram configuradas em uma caixa de correio.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:-----|:-----|:-----|
 | mensagem | String | A mensagem de resposta automática. |
 | messageLanguage | [localeInfo](../resources/localeinfo.md) | O idioma em que a mensagem de resposta automática está. |
-| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | A data e a hora em que as respostas automáticas estão definidas para terminar. |
-| scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | A data e a hora em que as respostas automáticas estão definidas para começar. |
+| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | A data e a hora em que as respostas automáticas são definidas para terminar. |
+| scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | A data e a hora em que as respostas automáticas são definidas para começar. |
 
 ## <a name="json-representation"></a>Representação JSON
 
