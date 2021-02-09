@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4544ac21f01c7b210a61f6ce91d9880bacd4a02e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6374a1fe0d9ee0b41fed33807e00c4e0f4b75f72
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49284320"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154401"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Tipo de recurso windowsMinimumOperatingSystem
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,12 +28,14 @@ O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
 |v8_0|Booliano|Windows 8.0 ou posterior.|
 |v8_1|Booliano|Windows 8.1 ou posterior.|
 |v10_0|Booliano|Windows 10.0 ou posterior.|
-|v10_1607|Booliano|Windows 10 1607 ou posterior.|
-|v10_1703|Booliano|Windows 10 1703 ou posterior.|
-|v10_1709|Booliano|Windows 10 1709 ou posterior.|
-|v10_1803|Booliano|Windows 10 1803 ou posterior.|
-|v10_1809|Booliano|Windows 10 1809 ou posterior.|
-|v10_1903|Booliano|Windows 10 1903 ou posterior.|
+|v10_1607|Boolean|Windows 10 1607 ou posterior.|
+|v10_1703|Boolean|Windows 10 1703 ou posterior.|
+|v10_1709|Boolean|Windows 10 1709 ou posterior.|
+|v10_1803|Boolean|Windows 10 1803 ou posterior.|
+|v10_1809|Boolean|Windows 10 1809 ou posterior.|
+|v10_1903|Boolean|Windows 10 1903 ou posterior.|
+|v10_1909|Boolean|Windows 10 1909 ou posterior.|
+|v10_2004|Boolean|Windows 10 2004 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -56,7 +58,9 @@ Veja a seguir uma representação JSON do recurso.
   "v10_1709": true,
   "v10_1803": true,
   "v10_1809": true,
-  "v10_1903": true
+  "v10_1903": true,
+  "v10_1909": true,
+  "v10_2004": true
 }
 ```
 

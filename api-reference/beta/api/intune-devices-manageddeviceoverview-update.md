@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b574d3e0b1ebfa33a33dde13c827af3bc04b951
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 568cbdff57bc304b5757af6f35aed04e6195130c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49234584"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155087"
 ---
 # <a name="update-manageddeviceoverview"></a>Atualizar managedDeviceOverview
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar [managedDeviceOve
 |dualEnrolledDeviceCount|Int32|O número de dispositivos registrados no MDM e no EAS|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|Resumo do sistema operacional do dispositivo.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Distribuição do Estado de acesso do Exchange no Intune|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Modela e fabrica meatadata para dispositivos gerenciados na conta|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Models and Manufactures manufactureadata for managed devices in the account|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da visão geral do dispositivo|
 
 
@@ -74,7 +74,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1187
+Content-length: 1222
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -95,7 +95,8 @@ Content-length: 1187
     "androidWorkProfileCount": 7,
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
-    "aospUserlessCount": 1
+    "aospUserlessCount": 1,
+    "aospUserAssociatedCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -122,7 +123,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1300
+Content-Length: 1335
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -144,7 +145,8 @@ Content-Length: 1300
     "androidWorkProfileCount": 7,
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
-    "aospUserlessCount": 1
+    "aospUserlessCount": 1,
+    "aospUserAssociatedCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

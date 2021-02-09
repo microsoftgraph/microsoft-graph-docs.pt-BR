@@ -1,16 +1,16 @@
 ---
 title: Criar unifiedRoleAssignmentMultiple
-description: Criar um novo objeto unifiedRoleAssignmentMultiple.
+description: Crie um novo objeto unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: be9c7fc4d2e5df4eadcab349e6ef7e7bf1d872fd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cf393fb8a47bc797993120fc7a23865b5647fae4
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978098"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154695"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Criar unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) . Use este objeto para criar atribuições de função no Microsoft Intune. Para outros aplicativos do Micrsoft 365 (como o Azure AD), use o [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+Crie um novo [objeto unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Use este objeto para criar atribuições de função no Microsoft Intune. Para outros aplicativos do Microsoft 365 (como o Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:------------------------------------------- |
 | Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | DeviceManagementRBAC.ReadWrite.All |
+| Aplicativo | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,19 +47,20 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) . A solicitação deve ter um escopo definido no Azure AD, como `directoryScopeIds` , ou um escopo específico de aplicativo, como `appScopeId` . Exemplos de escopo do Azure AD são locatários ("/"), unidades administrativas ou aplicativos. 
+No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) A solicitação deve ter um escopo definido no Azure AD, como, ou um escopo `directoryScopeIds` específico do aplicativo, como `appScopeId` . Exemplos de escopo do Azure AD são locatário ("/"), unidades administrativas ou aplicativos. 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um novo objeto `201 Created` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-role-assignment-in-intune-over-two-scope-groups-which-are-azure-ad-objects"></a>Exemplo 1: criar uma atribuição de função no Intune em dois grupos de escopo (que são objetos do Azure AD)
+### <a name="example-1-create-a-role-assignment-in-intune-over-two-scope-groups-which-are-azure-ad-objects"></a>Exemplo 1: Criar uma atribuição de função no Intune em dois grupos de escopo (que são objetos do Azure AD)
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Observe o uso do **roleTemplateId** para **roleDefinitionId**. **roleDefinitionId** pode ser a ID de modelo de todo o serviço ou o **roleDefinitionId** específico do diretório.
+Este é um exemplo de solicitação.
+> **Observação:** o uso do **roleTemplateId** para **roleDefinitionId**. **roleDefinitionId** pode ser a ID de modelo de todo o serviço ou a **roleDefinitionId** específica do diretório.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -124,12 +125,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-role-assignment-in-intune-at-intune-specific-scope-of-all-devices"></a>Exemplo 2: criar uma atribuição de função no Intune no escopo específico do Intune de "todos os dispositivos"
+### <a name="example-2-create-a-role-assignment-in-intune-at-intune-specific-scope-of-all-devices"></a>Exemplo 2: Criar uma atribuição de função no Intune no escopo específico do Intune de "todos os dispositivos"
 
-Use as informações a seguir para criar atribuições de função do Intune:
-- Para permitir atribuições sobre todos os dispositivos do Intune, use o `AllDevices` valor em **appScopeIds**.
-- Para permitir atribuições sobre todos os usuários licenciados do Intune, use o `AllLicensedUsers` valor em **appScopeIds**.
-- Para permitir atribuições em todos os dispositivos do Intune e usuários licenciados, use o `/` valor em **directoryScopeIds**.
+Use as seguintes informações para criar atribuições de função do Intune:
+- Para permitir atribuições em todos os dispositivos Intune, use `AllDevices` o valor em **appScopeIds**.
+- Para permitir atribuições sobre todos os usuários licenciados do Intune, use `AllLicensedUsers` o valor em **appScopeIds**.
+- Para permitir atribuições em todos os dispositivos Intune e usuários licenciados, use `/` o valor em **directoryScopeIds**.
 
 #### <a name="request"></a>Solicitação
 

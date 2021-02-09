@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso educationOutcome
+title: Tipo de recurso educationOutcome
 description: O resultado da gradação de uma atribuição
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 129e48b5d1101aaf9ab6ab7eb8c89a92b41a6ac7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 788985e5e63272fea31e579c2da4472ec065dfc5
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081707"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153618"
 ---
-# <a name="educationoutcome-resource-type"></a>tipo de recurso educationOutcome
+# <a name="educationoutcome-resource-type"></a>Tipo de recurso educationOutcome
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O resultado da gradação de uma atribuição. Esta é uma classe base; os tipos derivados são [educationFeedbackOutcome](educationfeedbackoutcome.md), [educationPointsOutcome](educationpointsoutcome.md)e [educationRubricOutcome](educationrubricoutcome.md).
+O resultado da gradação de uma atribuição. Esta é uma classe base; os tipos derivados [são educationFeedbackOutcome](educationfeedbackoutcome.md), [educationPointsOutcome](educationpointsoutcome.md)e [educationRubricOutcome](educationrubricoutcome.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -40,7 +40,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.educationOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

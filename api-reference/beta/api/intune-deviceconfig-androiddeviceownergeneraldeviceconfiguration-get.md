@@ -1,26 +1,26 @@
 ---
 title: Obter androidDeviceOwnerGeneralDeviceConfiguration
-description: Leia as propriedades e as relações do objeto androidDeviceOwnerGeneralDeviceConfiguration.
+description: Ler propriedades e relações do objeto androidDeviceOwnerGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 60106d081231949c6170af91c72862178095570a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a44fe6452804794d139d330f077e72efcf9106cf
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49240912"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155262"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>Obter androidDeviceOwnerGeneralDeviceConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) .
+Ler propriedades e relações do objeto [androidDeviceOwnerGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -55,7 +55,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6890
+Content-Length: 7876
 
 {
   "value": {
@@ -173,6 +173,36 @@ Content-Length: 6890
     "kioskModeFolderIcon": "darkSquare",
     "kioskModeWifiAllowedSsids": [
       "Kiosk Mode Wifi Allowed Ssids value"
+    ],
+    "kioskModeAppOrderEnabled": true,
+    "kioskModeAppsInFolderOrderedByName": true,
+    "kioskModeGridHeight": 3,
+    "kioskModeGridWidth": 2,
+    "kioskModeLockHomeScreen": true,
+    "kioskModeManagedFolders": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+        "folderName": "Folder Name value",
+        "folderIdentifier": "Folder Identifier value",
+        "items": [
+          {
+            "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+            "label": "Label value",
+            "link": "Link value"
+          }
+        ]
+      }
+    ],
+    "kioskModeAppPositions": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+        "position": 8,
+        "item": {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+          "label": "Label value",
+          "link": "Link value"
+        }
+      }
     ],
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,

@@ -1,46 +1,46 @@
 ---
-title: tipo de recurso accessPackageAssignmentResourceRole
-description: Uma função de recurso de atribuição de pacote do Access indica a função específica do recurso que foi atribuída a um assunto por meio de uma atribuição de pacote do Access.
+title: Tipo de recurso accessPackageAssignmentResourceRole
+description: Uma função de recurso de atribuição de pacote de acesso indica a função específica do recurso à qual um assunto foi atribuído por meio de uma atribuição de pacote de acesso.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8bf839d68db3f54df5a27601a4a05463e013fbef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b4893d40db8b5ac70a2ac3093d8dfbdf55c3175
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089858"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155594"
 ---
-# <a name="accesspackageassignmentresourcerole-resource-type"></a>tipo de recurso accessPackageAssignmentResourceRole
+# <a name="accesspackageassignmentresourcerole-resource-type"></a>Tipo de recurso accessPackageAssignmentResourceRole
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma função de recurso de atribuição de pacote do Access indica a função específica do recurso que foi atribuída a um assunto por meio de uma atribuição de pacote do Access.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma função de recurso de atribuição de pacote de acesso indica a função específica do recurso à qual um assunto foi atribuído por meio de uma atribuição de pacote de acesso.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Obter accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Recupere um objeto accessPackageAssignmentResourceRole. |
-| [Listar accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | coleção [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) | Recupere uma lista de objetos accessPackageAssignmentResourceRole. |
+| [Acessar AccessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Recupere um objeto accessPackageAssignmentResourceRole. |
+| [Listar accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [Coleção accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) | Recupere uma lista de objetos accessPackageAssignmentResourceRole. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String| Somente leitura.|
-|originid|Cadeia de caracteres|Um identificador exclusivo relativo ao sistema de origem, correspondente à propriedade originid do [accessPackageResourceRole](accesspackageresourcerole.md). |
-|originSystem|Cadeia de caracteres|O sistema em que a atribuição de função deve ser criada ou criada para uma atribuição de pacote de acesso, como `SharePointOnline` , `AadGroup` ou `AadApplication` , correspondente à propriedade originSystem do [accessPackageResourceRole](accesspackageresourcerole.md).|
-|status|String|O valor é `PendingFulfillment` quando a atribuição de pacote de acesso ainda não foi entregue ao sistema de origem e `Fulfilled` quando a atribuição de pacote de acesso foi entregue ao sistema de origem.|
+|originId|String|Um identificador exclusivo relativo ao sistema de origem, correspondente à propriedade originId do [accessPackageResourceRole](accesspackageresourcerole.md). |
+|originSystem|String|O sistema no qual a atribuição de função deve ser criada ou foi criada para uma atribuição de pacote de acesso, como , ou , correspondente à propriedade originSystem do `SharePointOnline` `AadGroup` `AadApplication` [accessPackageResourceRole](accesspackageresourcerole.md).|
+|status|String|O valor é quando a atribuição do pacote de acesso ainda não foi entregue ao sistema de origem e quando a atribuição do pacote de acesso foi entregue `PendingFulfillment` `Fulfilled` ao sistema de origem.|
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackageAssignments|coleção [accessPackageAssignment](accesspackageassignment.md)| As atribuições de pacote de acesso que resultam nessa atribuição de função. Somente leitura. Anulável.|
+|accessPackageAssignments|[Coleção accessPackageAssignment](accesspackageassignment.md)| As atribuições do pacote de acesso que resultam nessa atribuição de função. Somente leitura. Anulável.|
 |accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| Somente leitura. Anulável.|
 |accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| Somente leitura. Anulável.|
 |accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| Somente leitura. Anulável.|
@@ -56,7 +56,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageAssignmentResourceRole",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

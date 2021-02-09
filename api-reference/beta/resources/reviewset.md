@@ -1,41 +1,41 @@
 ---
-title: tipo de recurso reviewset
-description: Representa o conjunto estático de informações armazenadas eletronicamente coletadas para uso em litígio, investigação ou solicitação regulatória.
+title: Tipo de recurso reviewSet
+description: Representa um conjunto estático de informações armazenadas eletronicamente coletadas para uso em uma solicitação regulamentar, investigação ou litígio.
 localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 411de013df02bcd71e851a694664ae010edaf4ab
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: b6234fafbf0d6e36d5dcbb4143956447e26d3a0f
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597259"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153491"
 ---
-# <a name="reviewset-resource-type"></a>tipo de recurso reviewset
+# <a name="reviewset-resource-type"></a>Tipo de recurso reviewSet
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o conjunto estático de informações armazenadas eletronicamente coletadas para uso em litígio, investigação ou solicitação regulatória.
+Representa um conjunto estático de informações armazenadas eletronicamente coletadas para uso em uma solicitação regulamentar, investigação ou litígio.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Reviewset de lista](../api/reviewset-list.md) | coleção [reviewset](reviewset.md) | Obter uma coleção de conjuntos de revisão. |
-| [Obter reviewset](../api/reviewset-get.md) | [reviewSet](reviewset.md) | Leia as propriedades e os relacionamentos de um objeto **reviewset** . |
-| [Criar reviewset](../api/reviewset-post.md) | [reviewSet](reviewset.md) | Criar um novo conjunto de revisão. |
-| [Listar consultas](../api/reviewsetquery-list.md)|coleção [reviewSetQuery](../resources/reviewsetquery.md)|Obtenha os recursos reviewSetQuery da propriedade de navegação queries.|
-| [Criar consultas](../api/reviewsetquery-post.md)|[reviewSetQuery](../resources/reviewsetquery.md)|Criar um novo objeto reviewSetQuery.|
+| [Listar reviewSet](../api/reviewset-list.md) | [coleção reviewSet](reviewset.md) | Obter uma coleção de conjuntos de revisão. |
+| [Obter reviewSet](../api/reviewset-get.md) | [reviewSet](reviewset.md) | Leia as propriedades e os relacionamentos de um **objeto reviewSet.** |
+| [Criar reviewSet](../api/reviewset-post.md) | [reviewSet](reviewset.md) | Criar um novo conjunto de revisão. |
+| [Listar consultas](../api/reviewsetquery-list.md)|[Coleção reviewSetQuery](../resources/reviewsetquery.md)|Obter os recursos reviewSetQuery da propriedade de navegação de consultas.|
+| [Criar consultas](../api/reviewsetquery-post.md)|[reviewSetQuery](../resources/reviewsetquery.md)|Crie um novo objeto reviewSetQuery.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |createdBy        | [identitySet](/graph/api/resources/identityset) | O usuário que criou o conjunto de revisão. Somente leitura. |
-|createdDateTime  |DateTimeOffset| O DateTime quando o conjunto de revisão foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
+|createdDateTime  |DateTimeOffset| A data e a hora em que o conjunto de revisão foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 |displayName      |String| O nome do conjunto de revisão. O nome é exclusivo com um limite máximo de 64 caracteres. |
 |id               |String| O identificador exclusivo do conjunto de revisão. Somente leitura. |
 
@@ -43,7 +43,7 @@ Representa o conjunto estático de informações armazenadas eletronicamente col
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Analisar consulta de definição |coleção [reviewSetQuery](reviewsetquery.md)| Somente leitura. Anulável.|
+| Revisar a consulta do conjunto |[Coleção reviewSetQuery](reviewsetquery.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -55,7 +55,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.reviewSet",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

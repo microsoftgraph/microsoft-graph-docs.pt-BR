@@ -1,26 +1,26 @@
 ---
 title: Listar deviceManagementConfigurationSettingGroupCollectionDefinitions
-description: Listar Propriedades e relações dos objetos deviceManagementConfigurationSettingGroupCollectionDefinition.
+description: Listar propriedades e relações dos objetos deviceManagementConfigurationSettingGroupCollectionDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9d511522047ba7e677346dbc3af1b0527fc6750
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 92b4b42a107d66eda377fae840d8553cff163385
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241347"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154541"
 ---
 # <a name="list-devicemanagementconfigurationsettinggroupcollectiondefinitions"></a>Listar deviceManagementConfigurationSettingGroupCollectionDefinitions
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [deviceManagementConfigurationSettingGroupCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupcollectiondefinition.md) .
+Listar propriedades e relações dos [objetos deviceManagementConfigurationSettingGroupCollectionDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupcollectiondefinition.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicy
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [deviceManagementConfigurationSettingGroupCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupcollectiondefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [deviceManagementConfigurationSettingGroupCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupcollectiondefinition.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1786
+Content-Length: 1819
 
 {
   "value": [
@@ -96,6 +96,7 @@ Content-Length: 1786
       "rootDefinitionId": "Root Definition Id value",
       "categoryId": "Category Id value",
       "settingUsage": "configuration",
+      "uxBehavior": "dropdown",
       "id": "739da194-a194-739d-94a1-9d7394a19d73",
       "description": "Description value",
       "helpText": "Help Text value",

@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso swapShiftsChangeRequest
-description: Representa o tipo de solicitação de turno para trocar uma mudança por outro usuário na equipe.
+title: Tipo de recurso swapShiftsChangeRequest
+description: Representa o tipo de solicitação de turno para trocar uma mudança com outro usuário na equipe.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d274c73cfcfb71bb86349dbe4cbbc7661e9e7a16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 813deba1207cc2eafee71dcdb951ba31b5526ba3
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078147"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154779"
 ---
-# <a name="swapshiftschangerequest-resource-type"></a>tipo de recurso swapShiftsChangeRequest
+# <a name="swapshiftschangerequest-resource-type"></a>Tipo de recurso swapShiftsChangeRequest
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um tipo de solicitação de mudança para trocar uma [mudança](../resources/shift.md) por outro usuário na [equipe](../resources/team.md).
+Representa um tipo de solicitação de turno para trocar uma [mudança](../resources/shift.md) com outro usuário na [equipe.](../resources/team.md)
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [List](../api/swapshiftschangerequest-list.md) | Coleção de [swapShiftsChangeRequest](swapshiftschangerequest.md) | Listar as propriedades e os relacionamentos dos objetos **swapShiftsChangeRequest** em uma equipe. |
-| [Create](../api/swapshiftschangerequest-post.md) | [swapshiftschangerequest](swapshiftschangerequest.md) | Criar uma instância de um objeto swapshiftschangerequest. |
-| [Get](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Leia as propriedades e os relacionamentos de um objeto **swapShiftsChangeRequest** . |
-|[Aprovar](../api/swapshiftschangerequest-approve.md)|Nenhum|Aprovar um **swapShiftsChangeRequest**. |
-|[Aceito](../api/swapshiftschangerequest-decline.md)|Nenhum|Recusar um **swapShiftsChangeRequest**.|
+| [List](../api/swapshiftschangerequest-list.md) | Coleção de [swapShiftsChangeRequest](swapshiftschangerequest.md) | Listar as propriedades e os relacionamentos dos **objetos swapShiftsChangeRequest** em uma equipe. |
+| [Criar](../api/swapshiftschangerequest-post.md) | [swapshiftschangerequest](swapshiftschangerequest.md) | Crie uma instância de um objeto swapshiftschangerequest. |
+| [Get](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Leia as propriedades e os relacionamentos de um **objeto swapShiftsChangeRequest.** |
+|[Aprovar](../api/swapshiftschangerequest-approve.md)|Nenhum(a)|Aprovar um **swapShiftsChangeRequest**. |
+|[Recusar](../api/swapshiftschangerequest-decline.md)|Nenhum(a)|Recusar um **swapShiftsChangeRequest**.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|recipientShiftId|Cadeia de caracteres|ID de alternância para o usuário do destinatário com o qual a solicitação deve ser trocada.|
+|recipientShiftId|String|ID do turno do usuário do destinatário com o qual a solicitação deve ser trocada.|
 
 ## <a name="relationships"></a>Relações
 
@@ -49,8 +49,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.swapShiftsChangeRequest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.swapShiftsChangeRequest"
 }-->
 
 ```json

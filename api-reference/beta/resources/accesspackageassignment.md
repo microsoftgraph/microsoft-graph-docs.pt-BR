@@ -1,47 +1,47 @@
 ---
-title: tipo de recurso accessPackageAssignment
-description: Uma atribuição de pacote do Access é uma atribuição de um pacote do Access a um assunto específico, por um período de tempo.
+title: Tipo de recurso accessPackageAssignment
+description: Uma atribuição de pacote de acesso é uma atribuição de um pacote de acesso a um assunto específico, por um período de tempo.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fd85461a4429801aad5145256c711278789c95ed
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 3a7d9a947490676b48a170130fac2bf9e776c183
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000704"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155619"
 ---
-# <a name="accesspackageassignment-resource-type"></a>tipo de recurso accessPackageAssignment
+# <a name="accesspackageassignment-resource-type"></a>Tipo de recurso accessPackageAssignment
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma atribuição de pacote de acesso é uma atribuição de um pacote do Access a um assunto específico, por um período de tempo.  Por exemplo, uma atribuição de pacote de acesso pode indicar que o usuário Alice recebeu acesso por meio do pacote de acesso vendas no período de janeiro de 2019 a 2019 de julho.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma atribuição de pacote de acesso é uma atribuição de um pacote de acesso a um assunto específico, por um período de tempo.  Por exemplo, uma atribuição de pacote de acesso pode dizer que a usuária Alice recebeu acesso por meio do pacote de acesso Vendas do período de janeiro de 2019 a julho de 2019.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar accessPackageAssignments](../api/accesspackageassignment-list.md) | coleção [accessPackageAssignment](accesspackageassignment.md) | Recupere uma lista de objetos **accesspackageassignment** . |
+| [Listar accessPackageAssignments](../api/accesspackageassignment-list.md) | [Coleção accessPackageAssignment](accesspackageassignment.md) | Recupere uma lista de **objetos accesspackageassignment.** |
 
->**Observação:** Você não pode usar um método para criar ou remover uma atribuição de pacote do Access. Em vez disso, um cliente que deseja solicitar uma atribuição de pacote do Access para um usuário ou remover uma atribuição de pacote de acesso de um usuário, pode [criar um accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
+>**Observação:** Você não pode usar um método para criar ou remover uma atribuição de pacote de acesso. Em vez disso, um cliente que deseja solicitar uma atribuição de pacote de acesso para um usuário ou remover uma atribuição de pacote de acesso de um usuário, pode criar um [accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackageId|Cadeia de caracteres|O identificador do pacote de acesso. Somente leitura.|
-|assignmentPolicyId|Cadeia de caracteres|O identificador da política de atribuição de pacote do Access. Somente leitura.|
-|assignmentstate|Cadeia de caracteres|O estado da atribuição do pacote de acesso. Os valores possíveis são `Delivering` , `Delivered` , ou `Expired` . Somente leitura.|
-|assignmentStatus|Cadeia de caracteres|Mais informações sobre o ciclo de vida da atribuição.  Os valores possíveis incluem `Delivering` ,, `Delivered` `NearExpiry1DayNotificationTriggered` ou `ExpiredNotificationTriggered` .  Somente leitura.|
-|catalogID|Cadeia de caracteres|O identificador do catálogo que contém o pacote do Access. Somente leitura.|
+|accessPackageId|String|O identificador do pacote de acesso. Somente leitura.|
+|assignmentPolicyId|String|O identificador da política de atribuição do pacote de acesso. Somente leitura.|
+|assignmentState|String|O estado da atribuição do pacote de acesso. Os valores possíveis `Delivering` `Delivered` são , ou `Expired` . Somente leitura.|
+|assignmentStatus|String|Mais informações sobre o ciclo de vida de atribuição.  Os valores possíveis `Delivering` `Delivered` incluem `NearExpiry1DayNotificationTriggered` , ou `ExpiredNotificationTriggered` .  Somente leitura.|
+|catalogId|String|O identificador do catálogo que contém o pacote de acesso. Somente leitura.|
 |expiredDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
-|Extended|Booliano|Indica se a atribuição de pacote de acesso é estendida. Somente leitura.|
-|targetId|Cadeia de caracteres| A ID do assunto com a atribuição. Somente leitura.|
-|Cronograma|[requestSchedule](requestschedule.md)| Quando a atribuição de acesso deve estar no local. Somente leitura.|
+|isExtended|Boolean|Indica se a atribuição do pacote de acesso foi estendida. Somente leitura.|
+|targetId|String| A ID do assunto com a atribuição. Somente leitura.|
+|Cronograma|[requestSchedule](requestschedule.md)| Quando a atribuição de acesso deve estar no lugar. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 
@@ -49,8 +49,8 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma atrib
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](accesspackage.md)| Somente leitura. Anulável.|
 |accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Somente leitura. Anulável.|
-|accessPackageAssignmentResourceRoles|coleção [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)| As funções de recurso entregues ao usuário de destino para esta atribuição. Somente leitura. Anulável.|
-|destino|[accessPackageSubject](accesspackagesubject.md)| O assunto da atribuição de pacote do Access. Somente leitura. Anulável.|
+|accessPackageAssignmentResourceRoles|[Coleção accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)| As funções de recurso entregues ao usuário de destino para esta atribuição. Somente leitura. Anulável.|
+|destino|[accessPackageSubject](accesspackagesubject.md)| O assunto da atribuição do pacote de acesso. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageAssignment",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

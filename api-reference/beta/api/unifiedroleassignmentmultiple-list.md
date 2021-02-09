@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 54407dcbc45d2a14011ec50aba81bc7ddd759383
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac53a5de9e2bc927e8798bda0315206bc4b19bdc
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989861"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154499"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Listar UnifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de objetos [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) . Use isso para obter uma lista de atribuições de função no Microsoft Intune. Para outros aplicativos do Micrsoft 365 (como o Azure AD), use o [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+Obter uma lista do [objeto unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Use isso para obter uma lista de atribuições de função no Microsoft Intune. Para outros aplicativos do Microsoft 365 (como o Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
+| Aplicativo | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +39,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Você pode filtrar as `roleDefinitionId` Propriedades ou `principalId` . A `roleDefinitionId` propriedade pode ser uma ID de objeto role ou uma ID de objeto de modelo de função. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Você pode filtrar as `roleDefinitionId` `principalId` propriedades. A propriedade pode ser uma ID de objeto de função `roleDefinitionId` ou uma ID de objeto de modelo de função. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -53,13 +53,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
+Veja a seguir um exemplo da solicitação:
 
 <!-- {
   "blockType": "request",
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 ### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta.
+Veja a seguir um exemplo da resposta:
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {

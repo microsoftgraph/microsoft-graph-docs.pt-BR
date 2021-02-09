@@ -1,35 +1,35 @@
 ---
 title: tipo de recurso workbookOperation
-description: Representa o status de operações de uma pasta de trabalho de execução longa.
+description: Representa o status de operações de uma longa execução de uma área de trabalho.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 957f94087fa8c11cf3a5cc794bf194e21bbba346
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 04dc2afc707c4a991f9bb638102bb7180f9b1fab
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075375"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154226"
 ---
 # <a name="workbookoperation-resource-type"></a>tipo de recurso workbookOperation
 
-Representa o status de uma operação de pasta de trabalho de execução longa.
+Representa o status de uma operação de livro de trabalho de execução longa.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Obter workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Recuperar o status de um objeto **workbookOperation** . |
+| [Obter workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Recupere o status de um **objeto workbookOperation.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| A ID da operação. somente leitura.|
+|id|String| A ID da operação. Somente leitura.|
 |status|String| O status atual da operação. Os valores possíveis são: `notStarted`, `running`, `succeeded`, `failed`.|
 |erro|[workbookOperationError](workbookoperationerror.md)| O erro retornado pela operação.|
-|resourceLocation|Cadeia de caracteres| O URI do recurso para o resultado.|
+|resourceLocation|String| O URI do recurso para o resultado.|
 
 ## <a name="relationships"></a>Relações
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.workbookOperation",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

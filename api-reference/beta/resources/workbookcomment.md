@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso workbookComment
-description: Representa um comentário na pasta de trabalho.
+title: Tipo de recurso workbookComment
+description: Representa um comentário na área de trabalho.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 11e0b1538f6d2b41a8b211e1a7cc4ac45d2703a7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 920eff7126d3628e798e10a3e1cc9985d64d6602
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079636"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154233"
 ---
-# <a name="workbookcomment-resource-type"></a>tipo de recurso workbookComment
+# <a name="workbookcomment-resource-type"></a>Tipo de recurso workbookComment
 
 Namespace: microsoft.graph
 
-Representa um comentário na pasta de trabalho.
+Representa um comentário na área de trabalho.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar workbookComments](../api/workbook-list-comments.md) | coleção [workbookComment](workbookComment.md) | Obtenha uma coleção de objetos **workbookComment** . |
-| [Obter workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Leia as propriedades e os relacionamentos de um objeto **workbookComment** . |
+| [Listar workbookComments](../api/workbook-list-comments.md) | [coleção workbookComment](workbookComment.md) | Obter uma **coleção de objetos workbookComment.** |
+| [Obter workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Leia as propriedades e os relacionamentos de um **objeto workbookComment.** |
 
 
 ## <a name="properties"></a>Propriedades
@@ -32,13 +32,13 @@ Representa um comentário na pasta de trabalho.
 |:-------------|:------------|:------------|
 |content|Cadeia de caracteres|O conteúdo do comentário.|
 |contentType|String|Indica o tipo do comentário.|
-|id|Cadeia de caracteres| Representa o identificador de comentário. Somente leitura.|
+|id|String| Representa o identificador de comentário. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Enviar|coleção [workbookCommentReply](workbookcommentreply.md)| Somente leitura. Anulável.|
+|respostas|[coleção workbookCommentReply](workbookcommentreply.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.workbookComment",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

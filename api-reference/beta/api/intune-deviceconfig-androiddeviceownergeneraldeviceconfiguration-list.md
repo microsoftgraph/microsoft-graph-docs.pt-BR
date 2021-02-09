@@ -1,26 +1,26 @@
 ---
 title: Listar androidDeviceOwnerGeneralDeviceConfigurations
-description: Listar Propriedades e relações dos objetos androidDeviceOwnerGeneralDeviceConfiguration.
+description: Listar propriedades e relações dos objetos androidDeviceOwnerGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 268c4294529c34b64d7d0cb3159a68918f5e1a27
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 14a51b7431fd23ea97edf1b19fd279115873f4e5
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49240898"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155234"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Listar androidDeviceOwnerGeneralDeviceConfigurations
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) .
+Listar propriedades e relações dos objetos [androidDeviceOwnerGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7216
+Content-Length: 8262
 
 {
   "value": [
@@ -170,6 +170,36 @@ Content-Length: 7216
       "kioskModeFolderIcon": "darkSquare",
       "kioskModeWifiAllowedSsids": [
         "Kiosk Mode Wifi Allowed Ssids value"
+      ],
+      "kioskModeAppOrderEnabled": true,
+      "kioskModeAppsInFolderOrderedByName": true,
+      "kioskModeGridHeight": 3,
+      "kioskModeGridWidth": 2,
+      "kioskModeLockHomeScreen": true,
+      "kioskModeManagedFolders": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+          "folderName": "Folder Name value",
+          "folderIdentifier": "Folder Identifier value",
+          "items": [
+            {
+              "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+              "label": "Label value",
+              "link": "Link value"
+            }
+          ]
+        }
+      ],
+      "kioskModeAppPositions": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+          "position": 8,
+          "item": {
+            "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+            "label": "Label value",
+            "link": "Link value"
+          }
+        }
       ],
       "microphoneForceMute": true,
       "networkEscapeHatchAllowed": true,

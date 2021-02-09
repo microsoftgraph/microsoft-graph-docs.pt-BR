@@ -1,22 +1,22 @@
 ---
-title: ação Update
+title: ação de atualização
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57d1bc7b6225b4b61bf884d00880e0fb50ee8492
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f43b890de04a3a5392b1daefd74f6ae47fe6cb05
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49257895"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153764"
 ---
-# <a name="update-action"></a>ação Update
+# <a name="update-action"></a>ação de atualização
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|addedPolicySetItems|coleção [policySetItem](../resources/intune-policyset-policysetitem.md)|Ainda não documentado|
-|updatedPolicySetItems|coleção [policySetItem](../resources/intune-policyset-policysetitem.md)|Ainda não documentado|
+|addedPolicySetItems|[Coleção policySetItem](../resources/intune-policyset-policysetitem.md)|Ainda não documentado|
+|updatedPolicySetItems|[Coleção policySetItem](../resources/intune-policyset-policysetitem.md)|Ainda não documentado|
 |deletedPolicySetItems|String collection|Ainda não documentado|
-|assignments|coleção [policySetAssignment](../resources/intune-policyset-policysetassignment.md)|Ainda não documentado|
+|assignments|[Coleção policySetAssignment](../resources/intune-policyset-policysetassignment.md)|Ainda não documentado|
 
 
 
@@ -71,7 +71,7 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/update
 
 Content-type: application/json
-Content-length: 1692
+Content-length: 1760
 
 {
   "addedPolicySetItems": [
@@ -115,9 +115,10 @@ Content-length: 1692
       "id": "0a8e7d40-7d40-0a8e-407d-8e0a407d8e0a",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]

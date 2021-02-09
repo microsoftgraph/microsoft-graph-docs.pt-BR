@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso educationPointsOutcome
-description: Um educationOutcome que fornece uma classificação numérica
+title: Tipo de recurso educationPointsOutcome
+description: Um educationOutcome que fornece uma nota numérica
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: eb8c95fa7d13f57cca2c2fe19d7b992e6e2cab98
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ebf9a0bf12b7c4a78f28c9d75c93469afec2c34c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049741"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153617"
 ---
-# <a name="educationpointsoutcome-resource-type"></a>tipo de recurso educationPointsOutcome
+# <a name="educationpointsoutcome-resource-type"></a>Tipo de recurso educationPointsOutcome
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um [educationOutcome](educationoutcome.md) que fornece uma classificação numérica.
+Um [educationOutcome](educationoutcome.md) que fornece uma nota numérica.
 
 ## <a name="methods"></a>Métodos
 
@@ -30,8 +30,8 @@ Um [educationOutcome](educationoutcome.md) que fornece uma classificação numé
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|A série de números que o professor forneceu ao aluno para esta atribuição.|
-|publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Uma cópia da propriedade Points que é feita quando a nota é liberada para o aluno.|
+|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|A nota numérica que o professor deu ao aluno para essa atribuição.|
+|publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Uma cópia da propriedade points que é feita quando a nota é liberada para o aluno.|
 
 ## <a name="relationships"></a>Relações
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.educationPointsOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

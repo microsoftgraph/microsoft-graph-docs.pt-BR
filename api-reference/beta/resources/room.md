@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 39e1bf097519f143bc2eeb1a825fc963d49fd359
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 1599d029987be2cac8ac33b007dab485bc1474a4
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059557"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154247"
 ---
 # <a name="room-resource-type"></a>tipo de recurso room
 
@@ -34,23 +34,23 @@ No Exchange Online, cada sala é associada a uma caixa de correio de sala. Deriv
 | Propriedade               | Tipo                                              | Descrição |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | O endereço da sala. |
-| audioDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de áudio na sala. |
-| bookingType            | [bookingType](#bookingtype-values)                | Tipo de sala. Os valores possíveis `standard` são e `reserved` . |
-| building               | Cadeia de caracteres                                            | Especifica o nome do edifício ou o número do edifício em que a sala está. |
+| audioDeviceName        | String                                            | Especifica o nome do dispositivo de áudio na sala. |
+| bookingType            | [bookingType](#bookingtype-values)                | Tipo de sala. Os valores possíveis `standard` são `reserved` e. |
+| building               | String                                            | Especifica o nome do edifício ou o número do edifício em que a sala está. |
 | capacity               | Int32                                             | Especifica a capacidade da sala. |
-| displayName            | Cadeia de caracteres                                            | O nome associado à sala. |
-| displayDeviceName      | Cadeia de caracteres                                            | Especifica o nome do dispositivo de exibição na sala. |
+| displayName            | String                                            | O nome associado à sala. |
+| displayDeviceName      | String                                            | Especifica o nome do dispositivo de exibição na sala. |
 | emailAddress           | String                                            | Endereço de email da sala. |
-| floorLabel             | Cadeia de caracteres                                            | Especifica um rótulo descritivo para o piso, por exemplo, P. |
+| floorLabel             | String                                            | Especifica um rótulo descritivo para o piso, por exemplo, P. |
 | floorNumber            | Int32                                             | Especifica o número do piso em que a sala está. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local da sala em coordenadas de latitude, longitude e, opcionalmente, altitude. |
-| id                     | Cadeia de caracteres                                            | Identificador exclusivo da sala. Somente leitura. |
-| isWheelChairAccessible | Booliano                                           | Especifica se a sala é acessível para acessibilidade. |
-| rótulo                  | Cadeia de caracteres                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
-| nickname               | Cadeia de caracteres                                            | Especifica um apelido para a sala, por exemplo, "conf room". |
+| id                     | String                                            | Identificador exclusivo da sala. Somente leitura. |
+| isWheelChairAccessible | Boolean                                           | Especifica se a sala é acessível para acessibilidade. |
+| rótulo                  | String                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
+| nickname               | String                                            | Especifica um apelido para a sala, por exemplo, "conf room". |
 | phone                  | Cadeia de caracteres                                            | O número de telefone da sala. |
 | tags                   | Coleção de cadeias de caracteres                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou o tipo de móveis. |
-| videoDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de vídeo na sala. |
+| videoDeviceName        | String                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
 ### <a name="bookingtype-values"></a>valores de bookingType
 
@@ -72,8 +72,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.room",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.room"
 }-->
 
 ```json
