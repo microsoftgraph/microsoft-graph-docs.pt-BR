@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4969afac14f7eeb24d2901946d5e5961258c8b7b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3f5bbd3147b27193d8a8e8a3e4bea3914719124c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133573"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161779"
 ---
 # <a name="accesspackagesubject-resource-type"></a>Tipo de recurso accessPackageSubject
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageSubject",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

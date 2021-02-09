@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f71ec6da3013b6d0bda0edec8d6a47b30de84546
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4f88629c1b2044cf8c5f92ff90d1d334973f5db7
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129475"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161723"
 ---
 # <a name="extensionproperty-resource-type"></a>Tipo de recurso extensionProperty
 
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.extensionProperty",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

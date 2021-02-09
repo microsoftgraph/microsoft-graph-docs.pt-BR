@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso iosHomeScreenFolder
-description: Uma pasta que contém as páginas de aplicativos na tela inicial
+description: Uma pasta que contém páginas de aplicativos e clipes da Web na tela inicial.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4571baad6e1e0967b8b38ced9b96fd977f154fd7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7ad090d7e5a01eaf3dda10c6d9edd5cfafacb1a2
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49280421"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161814"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>Tipo de recurso iosHomeScreenFolder
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Uma pasta que contém as páginas de aplicativos na tela inicial
+Uma pasta que contém páginas de aplicativos e clipes da Web na tela inicial.
 
 
 Herda de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)
@@ -29,7 +29,7 @@ Herda de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|páginas|Conjunto [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Páginas de ícones de layout da tela inicial que devem ser do tipo do aplicativo. Este conjunto pode conter um máximo de 500 elementos.|
+|páginas|Conjunto [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Páginas de Ícones de Layout de Tela Inicial que devem ser aplicativos ou clipes da Web. Esta coleção pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,7 +53,8 @@ Veja a seguir uma representação JSON do recurso.
         {
           "@odata.type": "microsoft.graph.iosHomeScreenApp",
           "displayName": "String",
-          "bundleID": "String"
+          "bundleID": "String",
+          "isWebClip": true
         }
       ]
     }
