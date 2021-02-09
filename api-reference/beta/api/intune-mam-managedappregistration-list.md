@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 865483a37891791292cd31c59b5e1528ec8d684e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 71408cd0c409633aefc74ad205b36cbef04e7ff4
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49308568"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157894"
 ---
 # <a name="list-managedappregistrations"></a>Listar managedAppRegistrations
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1063
+Content-Length: 1064
 
 {
   "value": [
@@ -88,8 +88,8 @@ Content-Length: 1063
       ],
       "userId": "User Id value",
       "appIdentifier": {
-        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-        "packageId": "Package Id value"
+        "@odata.type": "microsoft.graph.windowsAppIdentifier",
+        "windowsAppId": "Windows App Id value"
       },
       "id": "5496aa60-aa60-5496-60aa-965460aa9654",
       "version": "Version value"

@@ -1,26 +1,26 @@
 ---
 title: Criar deviceManagementConfigurationSettingDefinition
-description: Criar um novo objeto deviceManagementConfigurationSettingDefinition.
+description: Crie um novo objeto deviceManagementConfigurationSettingDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f16ae5a778df7d0398a137f86cda6dfcb3dbdb6d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8948ad0f1c4224a1febc0bbd84433c26674065b3
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241357"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161092"
 ---
 # <a name="create-devicemanagementconfigurationsettingdefinition"></a>Criar deviceManagementConfigurationSettingDefinition
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) .
+Crie um novo [objeto deviceManagementConfigurationSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,33 +48,34 @@ POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolic
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementConfigurationSettingDefinition.
+No corpo da solicitação, fornece uma representação JSON do objeto deviceManagementConfigurationSettingDefinition.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementConfigurationSettingDefinition.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|aplicabilidade|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Detalhes sobre qual configuração de dispositivo se aplica|
+|applicability|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Detalhes sobre qual configuração de dispositivo é aplicável|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Modo de acesso de leitura/gravação da configuração. Os valores possíveis são: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
-|palavras-chave|Coleção de cadeias de caracteres|Tokens para os quais as configurações de pesquisa|
-|infoUrls|Coleção de cadeias de caracteres|Lista de links mais informações para a configuração podem ser encontradas em|
-|ocorrência|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Indica se a configuração é obrigatória ou não|
-|baseUri|String|Caminho de CSP base|
-|offsetUri|String|Caminho de CSP offset da base|
-|rootDefinitionId|String|Definição da configuração raiz se a configuração for uma configuração de filho.|
-|categoryId|String|Especifica o grupo de área no qual a configuração é configurada em um provedor de serviços de configuração especificado (CSP)|
+|palavras-chave|Coleção de cadeias de caracteres|Tokens nos quais pesquisar configurações|
+|infoUrls|Coleção de cadeias de caracteres|Lista de links em que mais informações sobre a configuração podem ser encontradas em|
+|occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Indica se a configuração é necessária ou não|
+|baseUri|String|Caminho CSP Base|
+|offsetUri|String|Deslocamento do caminho do CSP da Base|
+|rootDefinitionId|String|Definição de configuração raiz se a configuração for uma configuração filha.|
+|categoryId|String|Especifica o grupo de área em que a configuração está configurada em um CSP (provedor de serviços de configuração) especificado|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Tipo de configuração, por exemplo, configuração e conformidade. Os valores possíveis são: `none` e `configuration`.|
+|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Representação do tipo de controle de configuração na UX. Os valores possíveis são: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
 |id|String|Identificador do item|
 |description|String|Descrição do item|
 |helpText|String|Texto de ajuda do item|
-|nome|String|Nome do item|
-|displayName|String|Nome para exibição do item|
-|versão|String|Versão do item|
+|name|String|Nome do item|
+|displayName|String|Nome de exibição do item|
+|versão|String|Versão do Item|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto `201 Created` [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -83,7 +84,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/configurationSettings
 Content-type: application/json
-Content-length: 977
+Content-length: 1006
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
@@ -111,6 +112,7 @@ Content-length: 977
   "rootDefinitionId": "Root Definition Id value",
   "categoryId": "Category Id value",
   "settingUsage": "configuration",
+  "uxBehavior": "dropdown",
   "description": "Description value",
   "helpText": "Help Text value",
   "name": "Name value",
@@ -124,7 +126,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1026
+Content-Length: 1055
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
@@ -152,6 +154,7 @@ Content-Length: 1026
   "rootDefinitionId": "Root Definition Id value",
   "categoryId": "Category Id value",
   "settingUsage": "configuration",
+  "uxBehavior": "dropdown",
   "id": "7af649e5-49e5-7af6-e549-f67ae549f67a",
   "description": "Description value",
   "helpText": "Help Text value",

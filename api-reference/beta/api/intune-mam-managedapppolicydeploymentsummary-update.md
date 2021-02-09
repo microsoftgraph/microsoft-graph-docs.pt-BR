@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c61c03271e199660bc16290776f2adcb7787a09f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 480f2f8621e8d85b808ee2dd08306c53483fca6b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49277530"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157950"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Atualizar managedAppPolicyDeploymentSummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -75,7 +75,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 Content-type: application/json
-Content-length: 588
+Content-length: 589
 
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
@@ -86,8 +86,8 @@ Content-length: 588
     {
       "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
       "mobileAppIdentifier": {
-        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-        "packageId": "Package Id value"
+        "@odata.type": "microsoft.graph.windowsAppIdentifier",
+        "windowsAppId": "Windows App Id value"
       },
       "configurationAppliedUserCount": 13
     }
@@ -101,7 +101,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 637
+Content-Length: 638
 
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
@@ -112,8 +112,8 @@ Content-Length: 637
     {
       "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
       "mobileAppIdentifier": {
-        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-        "packageId": "Package Id value"
+        "@odata.type": "microsoft.graph.windowsAppIdentifier",
+        "windowsAppId": "Windows App Id value"
       },
       "configurationAppliedUserCount": 13
     }

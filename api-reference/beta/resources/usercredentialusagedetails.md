@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 7ac344ae6953d1b7dc14eaaaa104116c385da8a2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3992272aa6917aa43d2ffdb4c4c980b88fc60e7e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133032"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159812"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>Tipo de recurso userCredentialUsageDetails
 
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.userCredentialUsageDetails",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

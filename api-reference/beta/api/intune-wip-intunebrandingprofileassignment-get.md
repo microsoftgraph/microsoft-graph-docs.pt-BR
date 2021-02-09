@@ -1,26 +1,26 @@
 ---
 title: Obter intuneBrandingProfileAssignment
-description: Leia as propriedades e as relações do objeto intuneBrandingProfileAssignment.
+description: Ler propriedades e relações do objeto intuneBrandingProfileAssignment.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d123540a8f5f09b2b8d56b0c9a8b5f7ed29a154
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 02d1a6a4e4d029c26c49097b8e3e54c43ca444bb
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49261619"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157733"
 ---
 # <a name="get-intunebrandingprofileassignment"></a>Obter intuneBrandingProfileAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) .
+Ler propriedades e relações do objeto [intuneBrandingProfileAssignment.](../resources/intune-wip-intunebrandingprofileassignment.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,7 +53,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -68,16 +68,17 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 408
+Content-Length: 474
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
     "id": "ee38a117-a117-ee38-17a1-38ee17a138ee",
     "target": {
-      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+      "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
       "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-      "deviceAndAppManagementAssignmentFilterType": "include"
+      "deviceAndAppManagementAssignmentFilterType": "include",
+      "collectionId": "Collection Id value"
     }
   }
 }

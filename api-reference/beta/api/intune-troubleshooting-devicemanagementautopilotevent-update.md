@@ -1,35 +1,35 @@
 ---
 title: Atualizar deviceManagementAutopilotEvent
-description: Atualiza as propriedades de um objeto deviceManagementAutopilotEvent.
+description: Atualizar as propriedades de um objeto deviceManagementAutopilotEvent.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da7d507f2e86133fc8c955ff57be22b91c3e955f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1ff3ba9a5c8f0a6544e9c853c0678ecd1be806a6
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49223574"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157768"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>Atualizar deviceManagementAutopilotEvent
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) .
+Atualizar as propriedades de um [objeto deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,14 +47,14 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto deviceManagementAutopilotEvent.](../resources/intune-troubleshooting-devicemanagementautopilotevent.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O UUID do objeto.|
-|deviceId|Cadeia de caracteres|ID de dispositivo associada ao objeto|
+|deviceId|Cadeia de caracteres|ID do dispositivo associada ao objeto|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |deviceRegisteredDateTime|DateTimeOffset|Data de registro do dispositivo.|
 |enrollmentStartDateTime|DateTimeOffset|Data de início do registro do dispositivo.|
@@ -62,26 +62,29 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |deviceSerialNumber|String|Número de série do dispositivo.|
 |managedDeviceName|String|Nome do dispositivo gerenciado.|
 |userPrincipalName|String|Nome principal do usuário usado para registrar o dispositivo.|
-|windowsAutopilotDeploymentProfileDisplayName|String|Nome do perfil do AutoPilot.|
-|enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|Estado de registro como cadastrado, falhou. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Nome do perfil da página de status do registro|
-|DeploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Estado de implantação como êxito, falha, InProgress, SuccessWithTimeout. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
+|windowsAutopilotDeploymentProfileDisplayName|String|Nome do perfil do Autopilot.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro como Registro, Falha. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Nome do perfil da Página de Status do Registro|
+|windows10EnrollmentCompletionPageConfigurationId|String|ID do perfil da Página de Status do Registro|
+|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Estado de implantação como Êxito, Falha, InProgress, SuccessWithTimeout. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação da fase de configuração do dispositivo da página de status do registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação da fase de configuração da conta da página de status do registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |osVersion|String|Versão do sistema operacional do dispositivo.|
-|deploymentDuration|Duração|Duração da implantação do piloto automático, incluindo registro.|
-|deploymentTotalDuration|Duração|Duração total da implantação na tela de registro na área de trabalho.|
-|devicePreparationDuration|Duração|Tempo gasto no registro do dispositivo.|
-|deviceSetupDuration|Duração|Tempo gasto em ESP de dispositivo.|
-|accountSetupDuration|Duração|Tempo gasto na ESP do usuário.|
+|deploymentDuration|Duration|Duração da implantação do Autopilot, incluindo o registro.|
+|deploymentTotalDuration|Duration|Duração total da implantação do registro na tela área de trabalho.|
+|devicePreparationDuration|Duration|Tempo gasto no registro do dispositivo.|
+|deviceSetupDuration|Duration|Tempo gasto no dispositivo ESP.|
+|accountSetupDuration|Duration|Tempo gasto no ESP do usuário.|
 |deploymentStartDateTime|DateTimeOffset|Hora de início da implantação.|
 |deploymentEndDateTime|DateTimeOffset|Hora de término da implantação.|
 |targetedAppCount|Int32|Contagem de aplicativos direcionados.|
 |targetedPolicyCount|Int32|Contagem de políticas direcionadas.|
-|enrollmentFailureDetails|String|Detalhes da falha de inscrição.|
+|enrollmentFailureDetails|String|Detalhes da falha do registro.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -90,7 +93,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 Content-type: application/json
-Content-length: 1357
+Content-length: 1545
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
@@ -105,7 +108,10 @@ Content-length: 1357
   "windowsAutopilotDeploymentProfileDisplayName": "Windows Autopilot Deployment Profile Display Name value",
   "enrollmentState": "enrolled",
   "windows10EnrollmentCompletionPageConfigurationDisplayName": "Windows10Enrollment Completion Page Configuration Display Name value",
+  "windows10EnrollmentCompletionPageConfigurationId": "Windows10Enrollment Completion Page Configuration Id value",
   "deploymentState": "success",
+  "deviceSetupStatus": "success",
+  "accountSetupStatus": "success",
   "osVersion": "Os Version value",
   "deploymentDuration": "PT3M21.5549443S",
   "deploymentTotalDuration": "PT1M43.5284261S",
@@ -125,7 +131,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1406
+Content-Length: 1594
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
@@ -141,7 +147,10 @@ Content-Length: 1406
   "windowsAutopilotDeploymentProfileDisplayName": "Windows Autopilot Deployment Profile Display Name value",
   "enrollmentState": "enrolled",
   "windows10EnrollmentCompletionPageConfigurationDisplayName": "Windows10Enrollment Completion Page Configuration Display Name value",
+  "windows10EnrollmentCompletionPageConfigurationId": "Windows10Enrollment Completion Page Configuration Id value",
   "deploymentState": "success",
+  "deviceSetupStatus": "success",
+  "accountSetupStatus": "success",
   "osVersion": "Os Version value",
   "deploymentDuration": "PT3M21.5549443S",
   "deploymentTotalDuration": "PT1M43.5284261S",

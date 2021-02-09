@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3b7ffba22c08381d02562916c9efee98862fb53
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2d5d77311d85e87b42c6473990abffd21e71a8de
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49304669"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159287"
 ---
 # <a name="assign-action"></a>atribuir ação
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -54,12 +54,12 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|coleção [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|Ainda não documentado|
+|assignments|[Coleção roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um `200 OK` código de resposta e uma coleção [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) no corpo da resposta.
+Se tiver êxito, esta ação retornará um código de resposta e uma `200 OK` coleção [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -69,7 +69,7 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceManagement/roleScopeTags/{roleScopeTagId}/assign
 
 Content-type: application/json
-Content-length: 437
+Content-length: 505
 
 {
   "assignments": [
@@ -77,9 +77,10 @@ Content-length: 437
       "@odata.type": "#microsoft.graph.roleScopeTagAutoAssignment",
       "id": "256e6375-6375-256e-7563-6e2575636e25",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]
@@ -91,7 +92,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 431
+Content-Length: 499
 
 {
   "value": [
@@ -99,9 +100,10 @@ Content-Length: 431
       "@odata.type": "#microsoft.graph.roleScopeTagAutoAssignment",
       "id": "256e6375-6375-256e-7563-6e2575636e25",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]

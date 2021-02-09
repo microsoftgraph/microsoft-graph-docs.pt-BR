@@ -1,70 +1,70 @@
 ---
-title: tipo de recurso responsáveis
-description: No contexto da descoberta eletrônica, representa um usuário e todos os seus ativos digitais, como emails e documentos.
+title: tipo de recurso custodian
+description: No contexto da Descoberta eDiscovery, representa um usuário e todos os seus ativos digitais, como emails e documentos.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: a2e22f711eaec4cd68cc5026e36b900d5284e71a
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 6c6b2befbb4066b851e38e6e17fd8be5aa59b031
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597531"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157677"
 ---
-# <a name="custodian-resource-type"></a>tipo de recurso responsáveis
+# <a name="custodian-resource-type"></a>tipo de recurso custodian
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No contexto da descoberta eletrônica, representa um usuário e todos os seus ativos digitais, como emails e documentos.
+No contexto da Descoberta eDiscovery, representa um usuário e todos os seus ativos digitais, como emails e documentos.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar os responsáveis](../api/ediscoverycase-list-custodians.md)|coleção [responsáveis](../resources/custodian.md)|Obter uma lista de objetos **responsáveis** e suas propriedades.|
-|[Criar responsáveis](../api/ediscoverycase-post-custodians.md)|[custódia](../resources/custodian.md)|Criar um novo objeto de **responsáveis** .|
-|[Obter os responsáveis](../api/custodian-get.md)|[custódia](../resources/custodian.md)|Leia as propriedades e os relacionamentos de um objeto de **responsáveis** .|
-|[Atualizar responsáveis](../api/custodian-update.md)|[custódia](../resources/custodian.md)|Atualizar as propriedades de um objeto de **responsáveis** .|
-|[comunicado](../api/custodian-release.md)|Nenhum|Liberar um dos casos.|
-|[ativar](../api/custodian-activate.md)|Nenhum|Reative os responsáveis que foram liberados de um caso e torne-os parte do caso novamente.|
-|[Listar siteSources](../api/custodian-list-sitesources.md)|coleção de [sites de site](../resources/sitesource.md)|Obtenha os recursos de **site** da propriedade de navegação **siteSources** .|
-|[Criar siteSources](../api/custodian-post-sitesources.md)|[site da site](../resources/sitesource.md)|Criar um novo objeto **sitery** .|
-|[Listar unifiedGroupSources](../api/custodian-list-unifiedgroupsources.md)|coleção [unifiedGroupSource](../resources/unifiedgroupsource.md)|Obtenha os recursos **unifiedGroupSource** da propriedade de navegação **unifiedGroupSources** .|
-|[Criar unifiedGroupSources](../api/custodian-post-unifiedgroupsources.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Criar um novo objeto **unifiedGroupSource** .|
-|[Listar usersources](../api/custodian-list-usersources.md)|coleção [username](../resources/usersource.md)|Obter os recursos de **username** da propriedade de navegação **usersources** .|
-|[Criar usersources](../api/custodian-post-usersources.md)|[username](../resources/usersource.md)|Criar um novo objeto **username** .|
+|[Listar custodiantes](../api/ediscoverycase-list-custodians.md)|[coleção custodian](../resources/custodian.md)|Obter uma lista de **objetos custodiantes** e suas propriedades.|
+|[Criar custodiatário](../api/ediscoverycase-post-custodians.md)|[custodian](../resources/custodian.md)|Criar um novo **objeto custodiante.**|
+|[Obter custodian](../api/custodian-get.md)|[custodian](../resources/custodian.md)|Leia as propriedades e os relacionamentos de um **objeto custodiante.**|
+|[Atualizar custodian](../api/custodian-update.md)|[custodian](../resources/custodian.md)|Atualizar as propriedades de **um objeto custodiante.**|
+|[release](../api/custodian-release.md)|Nenhum(a)|Libere um custodiante de uma ocorrência.|
+|[ativar](../api/custodian-activate.md)|Nenhum(a)|Reativar um custodiante que foi liberado de uma ocorrência e torná-lo parte do caso novamente.|
+|[Listar siteSources](../api/custodian-list-sitesources.md)|[coleção siteSource](../resources/sitesource.md)|Obter os **recursos siteSource** da **propriedade de navegação siteSources.**|
+|[Criar siteSources](../api/custodian-post-sitesources.md)|[siteSource](../resources/sitesource.md)|Criar um novo **objeto siteSource.**|
+|[Listar unifiedGroupSources](../api/custodian-list-unifiedgroupsources.md)|[Coleção unifiedGroupSource](../resources/unifiedgroupsource.md)|Obter os **recursos unifiedGroupSource** da **propriedade de navegação unifiedGroupSources.**|
+|[Criar unifiedGroupSources](../api/custodian-post-unifiedgroupsources.md)|[unifiedGroupSource](../resources/unifiedgroupsource.md)|Crie um novo **objeto unifiedGroupSource.**|
+|[Listar userSources](../api/custodian-list-usersources.md)|[Coleção userSource](../resources/usersource.md)|Obter os **recursos userSource** da **propriedade de navegação userSources.**|
+|[Criar userSources](../api/custodian-post-usersources.md)|[userSource](../resources/usersource.md)|Crie um novo **objeto userSource.**|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|acknowledgedDateTime|DateTimeOffset|Data e hora em que os responsáveis confirmaram uma notificação de bloqueio.|
-|applyHoldToSources|Boolean|Identifica se as fontes dos responsáveis foram colocadas em espera durante a criação.|
-|createdDateTime|DateTimeOffset|Data e hora em que os responsáveis foram adicionados ao caso.|
-|displayName|String|Nome de exibição do responsáveis.|
-|email|Cadeia de caracteres|Endereço de email do responsáveis.|
-|id|String|A ID dos responsáveis no caso especificado. Somente leitura.|
-|lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do objeto responsáveis|
-|releasedDateTime|DateTimeOffset|Data e hora em que os responsáveis foram liberados do caso.|
-|status|custodianStatus|Status dos responsáveis. Os valores possíveis são: `active` e `released`.|
+|acknowledgedDateTime|DateTimeOffset|Data e hora em que o custodiado reconheceu uma notificação de espera.|
+|applyHoldToSources|Boolean|Identifica se as fontes de um custodiador foram colocadas em espera durante a criação.|
+|createdDateTime|DateTimeOffset|Data e hora em que o custodiante foi adicionado à ocorrência.|
+|displayName|String|Nome de exibição do custodiado.|
+|email|Cadeia de caracteres|Endereço de email do custodiatário.|
+|id|String|A ID do custodiante no caso especificado. Somente leitura.|
+|lastModifiedDateTime|DateTimeOffset|Data e hora em que o objeto custodiante foi modificado pela última vez|
+|releasedDateTime|DateTimeOffset|Data e hora em que o custodiante foi liberado da ocorrência.|
+|status|custodianStatus|Status do custodiatário. Os valores possíveis são: `active` e `released`.|
 
 ### <a name="custodianstatus-values"></a>valores de custodianStatus
 
 |Member|Descrição|
 |:----|-----------|
-|active|O responsáveis é uma parte ativa do caso. |
-|solta|Os responsáveis são liberados do caso.|
+|ativo|Custodian é uma parte ativa da ocorrência. |
+|released|Custodian is released from the case.|
 
 ## <a name="relationships"></a>Relações
 
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|siteSources|coleção de [sites de site](../resources/sitesource.md)|Entidade de fonte de dados para sites do SharePoint associados aos responsáveis.|
-|unifiedGroupSources|coleção [unifiedGroupSource](../resources/unifiedgroupsource.md)|Entidade de fonte de dados para grupos associados aos responsáveis.|
-|usersources|coleção [username](../resources/usersource.md)|Entidade de fonte de dados para um dos responsáveis. Este é o contêiner para a caixa de correio de um dos responsáveis e o site do OneDrive for Business.|
+|siteSources|[coleção siteSource](../resources/sitesource.md)|Entidade de fonte de dados para sites do SharePoint associados ao custodiante.|
+|unifiedGroupSources|[Coleção unifiedGroupSource](../resources/unifiedgroupsource.md)|Entidade de fonte de dados para grupos associados ao custodiante.|
+|userSources|[Coleção userSource](../resources/usersource.md)|Entidade de fonte de dados para um custodiante. Esse é o contêiner da caixa de correio de um responsável e do site do OneDrive for Business.|
 
 <!--|lastIndexOperation|[caseIndexOperation](../resources/caseindexoperation.md)|**TODO: Add Description**| -->
 
@@ -75,7 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.custodian",
-  "baseType": "",
   "openType": false
 }
 -->

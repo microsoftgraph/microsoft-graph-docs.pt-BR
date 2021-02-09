@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56c3646d39e90f74fa74ea47ca982417693a7691
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b5350cba84f737a617bee608ea24fcf105126a47
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49277481"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157845"
 ---
 # <a name="update-managedmobileapp"></a>Atualizar managedMobileApp
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -72,13 +72,13 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
 Content-type: application/json
-Content-length: 226
+Content-length: 227
 
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-    "packageId": "Package Id value"
+    "@odata.type": "microsoft.graph.windowsAppIdentifier",
+    "windowsAppId": "Windows App Id value"
   },
   "version": "Version value"
 }
@@ -89,13 +89,13 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 275
+Content-Length: 276
 
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-    "packageId": "Package Id value"
+    "@odata.type": "microsoft.graph.windowsAppIdentifier",
+    "windowsAppId": "Windows App Id value"
   },
   "id": "0a129715-9715-0a12-1597-120a1597120a",
   "version": "Version value"

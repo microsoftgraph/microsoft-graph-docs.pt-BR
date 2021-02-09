@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81b9c065880dbf42dc5f86b1850c2bcf268f544f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b7c762c2477439010562c0e7e1b7ddf565d3203e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49266820"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157558"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -41,11 +41,11 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |deviceType|Cadeia de caracteres|Tipo de dispositivo do host|
 |deviceTag|String|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo do host|
-|managedDeviceId|String|O identificador de dispositivo gerenciado do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é gerenciado.|
-|azureADDeviceId|String|O identificador de dispositivo do Azure Active Directory do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é registrado no Azure Active Directory.|
+|managedDeviceId|String|O identificador de Dispositivo Gerenciado do dispositivo host. O valor pode estar vazio mesmo quando o dispositivo host é gerenciado.|
+|azureADDeviceId|String|O identificador do Dispositivo do Azure Active Directory do dispositivo host. O valor pode estar vazio mesmo quando o dispositivo host é registrado no Azure Active Directory.|
 |deviceModel|Cadeia de caracteres|O modelo de dispositivo para o registro de aplicativo atual |
-|deviceManufacturer|String|O fabricante do dispositivo para o registro de aplicativo atual |
-|flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
+|deviceManufacturer|String|O fabricante do dispositivo para o registro atual do aplicativo |
+|flaggedReasons|[Coleção managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador do pacote do aplicativo|
 |id|String|Chave da entidade.|
@@ -86,8 +86,8 @@ Veja a seguir uma representação JSON do recurso.
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-    "packageId": "String"
+    "@odata.type": "microsoft.graph.windowsAppIdentifier",
+    "windowsAppId": "String"
   },
   "id": "String (identifier)",
   "version": "String"

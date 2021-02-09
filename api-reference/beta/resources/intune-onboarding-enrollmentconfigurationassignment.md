@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01b1296cfa8656af8f75549444fb39dd82ae64d3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: dd15495d2fdedb927c623196783ad520d22c7cc0
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49307427"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158125"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Tipo de recurso enrollmentConfigurationAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -35,9 +35,9 @@ Atribuição de configuração de registro
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da atribuição de configuração de registro|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Representa uma atribuição para dispositivos gerenciados no locatário|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Tipo de recurso usado para implantação em um grupo, direto ou policyset. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|String|Identificador para o recurso usado para implantação em um grupo|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Representa uma atribuição a dispositivos gerenciados no locatário|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Tipo de recurso usado para implantação em um grupo, direct ou policySet. Os valores possíveis são: `direct` e `policySets`.|
+|sourceId|String|Identificador de recurso usado para implantação em um grupo|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -55,9 +55,10 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String"
+    "deviceAndAppManagementAssignmentFilterType": "String",
+    "collectionId": "String"
   },
   "source": "String",
   "sourceId": "String"

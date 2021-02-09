@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso openShiftChangeRequest
-description: Representa um tipo de solicitação de mudança para declarar um turno aberto em um cronograma.
+title: Tipo de recurso openShiftChangeRequest
+description: Representa um tipo de solicitação de turno para reivindicar um turno aberto em um cronograma.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 26dccf0d0e79e2f0427f07035ee31e5480c52b95
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e141dcb6657c9efc7d751b1713aa8b53d79c9264
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998555"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161415"
 ---
-# <a name="openshiftchangerequest-resource-type"></a>tipo de recurso openShiftChangeRequest
+# <a name="openshiftchangerequest-resource-type"></a>Tipo de recurso openShiftChangeRequest
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um tipo de solicitação de mudança para declarar um [openshift](../resources/openshift.md) em um [cronograma](../resources/schedule.md).
+Representa um tipo de solicitação de turno para [reivindicar uma abertura](../resources/openshift.md) em um [cronograma.](../resources/schedule.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Criar](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | Criar uma instância de um objeto openshiftchangerequest. |
-| [List](../api/openshiftchangerequest-list.md) | Coleção de [openshiftchangerequest](openshiftchangerequest.md) | Listar as propriedades e os relacionamentos dos objetos **openShiftChangeRequest** em uma equipe. |
-| [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Leia as propriedades e os relacionamentos de um objeto **openShiftChangeRequest** . |
-|[Aprovar](../api/openshiftchangerequest-approve.md)|Nenhum|Aprovar uma solicitação de alteração de turno aberta.|
-|[Aceito](../api/openshiftchangerequest-decline.md)|Nenhum| Recusar uma solicitação de alteração de turno aberto.|
+| [Criar](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | Crie uma instância de um objeto openshiftchangerequest. |
+| [Lista](../api/openshiftchangerequest-list.md) | Coleção de [openshiftchangerequest](openshiftchangerequest.md) | Listar as propriedades e os relacionamentos dos **objetos openShiftChangeRequest** em uma equipe. |
+| [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Leia as propriedades e os relacionamentos de um **objeto openShiftChangeRequest.** |
+|[Aprovar](../api/openshiftchangerequest-approve.md)|Nenhum(a)|Aprovar uma solicitação de alteração de turno aberto.|
+|[Recusar](../api/openshiftchangerequest-decline.md)|Nenhum(a)| Recusar uma solicitação de alteração de turno aberto.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|openShiftId|String| ID para o turno aberto.|
+|openShiftId|String| ID do turno aberto.|
 
 ## <a name="relationships"></a>Relações
 
@@ -49,8 +49,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.openShiftChangeRequest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.openShiftChangeRequest"
 }-->
 
 ```json

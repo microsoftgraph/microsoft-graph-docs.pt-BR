@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ceb52ef01838ad1f03c5dcc7e38ae3cc13512c7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 01965c1dfaeb04d05d2dc6293fc449c0bbc878fe
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267478"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157635"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Tipo de recurso deviceOperatingSystemSummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -32,12 +32,13 @@ Resumo do sistema operacional do dispositivo.
 |windowsCount|Int32|Número da contagem de dispositivos Windows.|
 |unknownCount|Int32|Número da contagem de dispositivos desconhecidos.|
 |androidDedicatedCount|Int32|Número de dispositivos Android dedicados.|
-|androidDeviceAdminCount|Int32|Número de dispositivos Android de administrador de dispositivos.|
+|androidDeviceAdminCount|Int32|Número de dispositivos Android de administração de dispositivos.|
 |androidFullyManagedCount|Int32|Número de dispositivos Android totalmente gerenciados.|
 |androidWorkProfileCount|Int32|Número de dispositivos Android de perfil de trabalho.|
-|androidCorporateWorkProfileCount|Int32|A contagem de dispositivos Android do perfil corporativo de trabalho. Também conhecido como pessoal de propriedade corporativa (lidar). Valores válidos-1 a 2147483647|
+|androidCorporateWorkProfileCount|Int32|A contagem de dispositivos Android de perfil de trabalho corporativo. Também conhecido como Corporate Owned Personally Enabled (COPE). Valores válidos -1 a 2147483647|
 |configMgrDeviceCount|Int32|Número de dispositivos gerenciados pelo ConfigMgr.|
-|aospUserlessCount|Int32|Número de dispositivos Android AOSP dedicados. Valores válidos de 0 a 2147483647|
+|aospUserlessCount|Int32|Número de dispositivos Android sem usuário AOSP. Valores válidos de 0 a 2147483647|
+|aospUserAssociatedCount|Int32|Número de dispositivos Android associados ao usuário AOSP. Valores válidos de 0 a 2147483647|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -64,7 +65,8 @@ Veja a seguir uma representação JSON do recurso.
   "androidWorkProfileCount": 1024,
   "androidCorporateWorkProfileCount": 1024,
   "configMgrDeviceCount": 1024,
-  "aospUserlessCount": 1024
+  "aospUserlessCount": 1024,
+  "aospUserAssociatedCount": 1024
 }
 ```
 

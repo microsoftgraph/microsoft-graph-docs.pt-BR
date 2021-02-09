@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: c78834d027720371c1d259ce596fde82cb32ca46
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 37468877721b9ac534c0118aeb93fd613fca7f88
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133207"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159175"
 ---
 # <a name="applicationtemplate-resource-type"></a>Tipo de recurso applicationTemplate
 
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.applicationTemplate",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

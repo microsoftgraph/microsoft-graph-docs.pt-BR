@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: cb83bbfe4c738fd8c5c6460a27aafbbc73cad437
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 521c8eca7c3233000bf04f2324e8990fd25c55f6
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136273"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159917"
 ---
 # <a name="credentialuserregistrationcount-resource-type"></a>Tipo de recurso credentialUserRegistrationCount
 
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.credentialUserRegistrationCount",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
