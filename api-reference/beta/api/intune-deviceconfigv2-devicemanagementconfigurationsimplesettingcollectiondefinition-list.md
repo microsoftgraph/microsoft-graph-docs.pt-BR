@@ -1,37 +1,37 @@
 ---
 title: Listar deviceManagementConfigurationSimpleSettingCollectionDefinitions
-description: Listar Propriedades e relações dos objetos deviceManagementConfigurationSimpleSettingCollectionDefinition.
+description: Listar propriedades e relações dos objetos deviceManagementConfigurationSimpleSettingCollectionDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7853e1a1c04ea716326cfe5e470f934ca3af5f99
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5ce7ff52796fc55f4ca6c6f4522545236fabfea1
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241327"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158860"
 ---
-# <a name="list-devicemanagementconfigurationsimplesettingcollectiondefinitions"></a><span data-ttu-id="84774-103">Listar deviceManagementConfigurationSimpleSettingCollectionDefinitions</span><span class="sxs-lookup"><span data-stu-id="84774-103">List deviceManagementConfigurationSimpleSettingCollectionDefinitions</span></span>
+# <a name="list-devicemanagementconfigurationsimplesettingcollectiondefinitions"></a><span data-ttu-id="d10d4-103">Listar deviceManagementConfigurationSimpleSettingCollectionDefinitions</span><span class="sxs-lookup"><span data-stu-id="d10d4-103">List deviceManagementConfigurationSimpleSettingCollectionDefinitions</span></span>
 
-<span data-ttu-id="84774-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="84774-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d10d4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d10d4-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="84774-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="84774-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="d10d4-105">**Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d10d4-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="84774-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="84774-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d10d4-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d10d4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="84774-107">Listar Propriedades e relações dos objetos [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="84774-107">List properties and relationships of the [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) objects.</span></span>
+<span data-ttu-id="d10d4-107">Listar propriedades e relações dos [objetos deviceManagementConfigurationSimpleSettingCollectionDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md)</span><span class="sxs-lookup"><span data-stu-id="d10d4-107">List properties and relationships of the [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="84774-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="84774-108">Prerequisites</span></span>
-<span data-ttu-id="84774-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="84774-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d10d4-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="d10d4-108">Prerequisites</span></span>
+<span data-ttu-id="d10d4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d10d4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="84774-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="84774-111">Permission type</span></span>|<span data-ttu-id="84774-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="84774-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d10d4-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d10d4-111">Permission type</span></span>|<span data-ttu-id="d10d4-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="d10d4-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="84774-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="84774-113">Delegated (work or school account)</span></span>|<span data-ttu-id="84774-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="84774-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="84774-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="84774-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="84774-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="84774-116">Not supported.</span></span>|
-|<span data-ttu-id="84774-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="84774-117">Application</span></span>|<span data-ttu-id="84774-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="84774-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="d10d4-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d10d4-113">Delegated (work or school account)</span></span>|<span data-ttu-id="d10d4-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="d10d4-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="d10d4-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d10d4-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d10d4-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d10d4-116">Not supported.</span></span>|
+|<span data-ttu-id="d10d4-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d10d4-117">Application</span></span>|<span data-ttu-id="d10d4-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="d10d4-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="84774-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="84774-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d10d4-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d10d4-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,32 +41,32 @@ GET /deviceManagement/configurationSettings
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="84774-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="84774-120">Request headers</span></span>
-|<span data-ttu-id="84774-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="84774-121">Header</span></span>|<span data-ttu-id="84774-122">Valor</span><span class="sxs-lookup"><span data-stu-id="84774-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d10d4-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d10d4-120">Request headers</span></span>
+|<span data-ttu-id="d10d4-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d10d4-121">Header</span></span>|<span data-ttu-id="d10d4-122">Valor</span><span class="sxs-lookup"><span data-stu-id="d10d4-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="84774-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="84774-123">Authorization</span></span>|<span data-ttu-id="84774-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="84774-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="84774-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="84774-125">Accept</span></span>|<span data-ttu-id="84774-126">application/json</span><span class="sxs-lookup"><span data-stu-id="84774-126">application/json</span></span>|
+|<span data-ttu-id="d10d4-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="d10d4-123">Authorization</span></span>|<span data-ttu-id="d10d4-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d10d4-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d10d4-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="d10d4-125">Accept</span></span>|<span data-ttu-id="d10d4-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d10d4-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="84774-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="84774-127">Request body</span></span>
-<span data-ttu-id="84774-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="84774-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d10d4-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d10d4-127">Request body</span></span>
+<span data-ttu-id="d10d4-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d10d4-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="84774-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="84774-129">Response</span></span>
-<span data-ttu-id="84774-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="84774-130">If successful, this method returns a `200 OK` response code and a collection of [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d10d4-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="d10d4-129">Response</span></span>
+<span data-ttu-id="d10d4-130">Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d10d4-130">If successful, this method returns a `200 OK` response code and a collection of [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="84774-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="84774-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d10d4-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d10d4-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="84774-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="84774-132">Request</span></span>
-<span data-ttu-id="84774-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="84774-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d10d4-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d10d4-132">Request</span></span>
+<span data-ttu-id="d10d4-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d10d4-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings
 ```
 
-### <a name="response"></a><span data-ttu-id="84774-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="84774-134">Response</span></span>
-<span data-ttu-id="84774-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="84774-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d10d4-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="d10d4-134">Response</span></span>
+<span data-ttu-id="d10d4-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d10d4-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9921
+Content-Length: 9954
 
 {
   "value": [
@@ -96,6 +96,7 @@ Content-Length: 9921
       "rootDefinitionId": "Root Definition Id value",
       "categoryId": "Category Id value",
       "settingUsage": "configuration",
+      "uxBehavior": "dropdown",
       "id": "cb4abda1-bda1-cb4a-a1bd-4acba1bd4acb",
       "description": "Description value",
       "helpText": "Help Text value",
