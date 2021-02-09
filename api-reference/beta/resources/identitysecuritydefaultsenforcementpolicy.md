@@ -1,50 +1,50 @@
 ---
-title: tipo de recurso identitySecurityDefaultsEnforcementPolicy
+title: Tipo de recurso identitySecurityDefaultsEnforcementPolicy
 description: Representa a política de padrões de segurança do Azure Active Directory. Os padrões de segurança contêm configurações de segurança pré-configuradas que protegem contra ataques comuns.
 localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d9e20693b6421573c13f696dbad837eda2f3619
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1dea4d94dfc8de8310410498fdf8d83c2a5e8f68
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401376"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154926"
 ---
-# <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a><span data-ttu-id="6e2a7-104">tipo de recurso identitySecurityDefaultsEnforcementPolicy</span><span class="sxs-lookup"><span data-stu-id="6e2a7-104">identitySecurityDefaultsEnforcementPolicy resource type</span></span>
+# <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a><span data-ttu-id="92826-104">Tipo de recurso identitySecurityDefaultsEnforcementPolicy</span><span class="sxs-lookup"><span data-stu-id="92826-104">identitySecurityDefaultsEnforcementPolicy resource type</span></span>
 
-<span data-ttu-id="6e2a7-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6e2a7-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="92826-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="92826-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6e2a7-106">Representa a política de [padrões de segurança](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="6e2a7-106">Represents the Azure Active Directory [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) policy.</span></span> <span data-ttu-id="6e2a7-107">Os padrões de segurança contêm configurações de segurança pré-configuradas que protegem contra ataques comuns.</span><span class="sxs-lookup"><span data-stu-id="6e2a7-107">Security defaults contain preconfigured security settings that protect against common attacks.</span></span>
+<span data-ttu-id="92826-106">Representa a política de padrões de [segurança](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="92826-106">Represents the Azure Active Directory [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) policy.</span></span> <span data-ttu-id="92826-107">Os padrões de segurança contêm configurações de segurança pré-configuradas que protegem contra ataques comuns.</span><span class="sxs-lookup"><span data-stu-id="92826-107">Security defaults contain preconfigured security settings that protect against common attacks.</span></span>
 
-<span data-ttu-id="6e2a7-108">Herda de [policyBase](../resources/policybase.md).</span><span class="sxs-lookup"><span data-stu-id="6e2a7-108">Inherits from [policyBase](../resources/policybase.md).</span></span>
+<span data-ttu-id="92826-108">Herda de [policyBase](../resources/policybase.md).</span><span class="sxs-lookup"><span data-stu-id="92826-108">Inherits from [policyBase](../resources/policybase.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="6e2a7-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="6e2a7-109">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="92826-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="92826-109">Methods</span></span>
 
-| <span data-ttu-id="6e2a7-110">Método</span><span class="sxs-lookup"><span data-stu-id="6e2a7-110">Method</span></span>       | <span data-ttu-id="6e2a7-111">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="6e2a7-111">Return Type</span></span> | <span data-ttu-id="6e2a7-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="6e2a7-112">Description</span></span> |
+| <span data-ttu-id="92826-110">Método</span><span class="sxs-lookup"><span data-stu-id="92826-110">Method</span></span>       | <span data-ttu-id="92826-111">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="92826-111">Return Type</span></span> | <span data-ttu-id="92826-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="92826-112">Description</span></span> |
 |:-------------|:------------|:------------|
-| [<span data-ttu-id="6e2a7-113">Get</span><span class="sxs-lookup"><span data-stu-id="6e2a7-113">Get</span></span>](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [<span data-ttu-id="6e2a7-114">identitySecurityDefaultsEnforcementPolicy</span><span class="sxs-lookup"><span data-stu-id="6e2a7-114">identitySecurityDefaultsEnforcementPolicy</span></span>](identitysecuritydefaultsenforcementpolicy.md) | <span data-ttu-id="6e2a7-115">Ler as propriedades de um objeto **identitySecurityDefaultsEnforcementPolicy** .</span><span class="sxs-lookup"><span data-stu-id="6e2a7-115">Read the properties of an **identitySecurityDefaultsEnforcementPolicy** object.</span></span> |
-| [<span data-ttu-id="6e2a7-116">Update</span><span class="sxs-lookup"><span data-stu-id="6e2a7-116">Update</span></span>](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [<span data-ttu-id="6e2a7-117">identitySecurityDefaultsEnforcementPolicy</span><span class="sxs-lookup"><span data-stu-id="6e2a7-117">identitySecurityDefaultsEnforcementPolicy</span></span>](identitysecuritydefaultsenforcementpolicy.md) | <span data-ttu-id="6e2a7-118">Atualize um objeto **identitySecurityDefaultsEnforcementPolicy** .</span><span class="sxs-lookup"><span data-stu-id="6e2a7-118">Update an **identitySecurityDefaultsEnforcementPolicy** object.</span></span> |
+| [<span data-ttu-id="92826-113">Get</span><span class="sxs-lookup"><span data-stu-id="92826-113">Get</span></span>](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [<span data-ttu-id="92826-114">identitySecurityDefaultsEnforcementPolicy</span><span class="sxs-lookup"><span data-stu-id="92826-114">identitySecurityDefaultsEnforcementPolicy</span></span>](identitysecuritydefaultsenforcementpolicy.md) | <span data-ttu-id="92826-115">Leia as propriedades de um **objeto identitySecurityDefaultsEnforcementPolicy.**</span><span class="sxs-lookup"><span data-stu-id="92826-115">Read the properties of an **identitySecurityDefaultsEnforcementPolicy** object.</span></span> |
+| [<span data-ttu-id="92826-116">Update</span><span class="sxs-lookup"><span data-stu-id="92826-116">Update</span></span>](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [<span data-ttu-id="92826-117">identitySecurityDefaultsEnforcementPolicy</span><span class="sxs-lookup"><span data-stu-id="92826-117">identitySecurityDefaultsEnforcementPolicy</span></span>](identitysecuritydefaultsenforcementpolicy.md) | <span data-ttu-id="92826-118">Atualize **um objeto identitySecurityDefaultsEnforcementPolicy.**</span><span class="sxs-lookup"><span data-stu-id="92826-118">Update an **identitySecurityDefaultsEnforcementPolicy** object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="6e2a7-119">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6e2a7-119">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="92826-119">Propriedades</span><span class="sxs-lookup"><span data-stu-id="92826-119">Properties</span></span>
 
-| <span data-ttu-id="6e2a7-120">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6e2a7-120">Property</span></span>     | <span data-ttu-id="6e2a7-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="6e2a7-121">Type</span></span>        | <span data-ttu-id="6e2a7-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="6e2a7-122">Description</span></span> |
+| <span data-ttu-id="92826-120">Propriedade</span><span class="sxs-lookup"><span data-stu-id="92826-120">Property</span></span>     | <span data-ttu-id="92826-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="92826-121">Type</span></span>        | <span data-ttu-id="92826-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="92826-122">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="6e2a7-123">description</span><span class="sxs-lookup"><span data-stu-id="6e2a7-123">description</span></span>|<span data-ttu-id="6e2a7-124">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="6e2a7-124">String</span></span>|<span data-ttu-id="6e2a7-125">Descrição da política.</span><span class="sxs-lookup"><span data-stu-id="6e2a7-125">Description for this policy.</span></span> <span data-ttu-id="6e2a7-126">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6e2a7-126">Read-only.</span></span>|
-|<span data-ttu-id="6e2a7-127">displayName</span><span class="sxs-lookup"><span data-stu-id="6e2a7-127">displayName</span></span>|<span data-ttu-id="6e2a7-128">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="6e2a7-128">String</span></span>|<span data-ttu-id="6e2a7-129">Nome para exibição dessa política.</span><span class="sxs-lookup"><span data-stu-id="6e2a7-129">Display name for this policy.</span></span> <span data-ttu-id="6e2a7-130">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6e2a7-130">Read-only.</span></span>|
-|<span data-ttu-id="6e2a7-131">id</span><span class="sxs-lookup"><span data-stu-id="6e2a7-131">id</span></span>|<span data-ttu-id="6e2a7-132">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="6e2a7-132">String</span></span>|<span data-ttu-id="6e2a7-133">Identificador para esta política.</span><span class="sxs-lookup"><span data-stu-id="6e2a7-133">Identifier for this policy.</span></span> <span data-ttu-id="6e2a7-134">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6e2a7-134">Read-only.</span></span>|
-|<span data-ttu-id="6e2a7-135">isEnabled</span><span class="sxs-lookup"><span data-stu-id="6e2a7-135">isEnabled</span></span>|<span data-ttu-id="6e2a7-136">Booliano</span><span class="sxs-lookup"><span data-stu-id="6e2a7-136">Boolean</span></span>|<span data-ttu-id="6e2a7-137">Se definido como true, os padrões de segurança do Active Directory do Azure são habilitados para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6e2a7-137">If set to true, Azure Active Directory security defaults is enabled for the tenant.</span></span>|
+|<span data-ttu-id="92826-123">description</span><span class="sxs-lookup"><span data-stu-id="92826-123">description</span></span>|<span data-ttu-id="92826-124">String</span><span class="sxs-lookup"><span data-stu-id="92826-124">String</span></span>|<span data-ttu-id="92826-125">Descrição desta política.</span><span class="sxs-lookup"><span data-stu-id="92826-125">Description for this policy.</span></span> <span data-ttu-id="92826-126">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="92826-126">Read-only.</span></span>|
+|<span data-ttu-id="92826-127">displayName</span><span class="sxs-lookup"><span data-stu-id="92826-127">displayName</span></span>|<span data-ttu-id="92826-128">String</span><span class="sxs-lookup"><span data-stu-id="92826-128">String</span></span>|<span data-ttu-id="92826-129">Nome para exibição desta política.</span><span class="sxs-lookup"><span data-stu-id="92826-129">Display name for this policy.</span></span> <span data-ttu-id="92826-130">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="92826-130">Read-only.</span></span>|
+|<span data-ttu-id="92826-131">id</span><span class="sxs-lookup"><span data-stu-id="92826-131">id</span></span>|<span data-ttu-id="92826-132">String</span><span class="sxs-lookup"><span data-stu-id="92826-132">String</span></span>|<span data-ttu-id="92826-133">Identificador desta política.</span><span class="sxs-lookup"><span data-stu-id="92826-133">Identifier for this policy.</span></span> <span data-ttu-id="92826-134">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="92826-134">Read-only.</span></span>|
+|<span data-ttu-id="92826-135">isEnabled</span><span class="sxs-lookup"><span data-stu-id="92826-135">isEnabled</span></span>|<span data-ttu-id="92826-136">Booliano</span><span class="sxs-lookup"><span data-stu-id="92826-136">Boolean</span></span>|<span data-ttu-id="92826-137">Se definido como verdadeiro, os padrões de segurança do Azure Active Directory são habilitados para o locatário.</span><span class="sxs-lookup"><span data-stu-id="92826-137">If set to true, Azure Active Directory security defaults is enabled for the tenant.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="6e2a7-138">Relações</span><span class="sxs-lookup"><span data-stu-id="6e2a7-138">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="92826-138">Relações</span><span class="sxs-lookup"><span data-stu-id="92826-138">Relationships</span></span>
 
-<span data-ttu-id="6e2a7-139">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6e2a7-139">None.</span></span>
+<span data-ttu-id="92826-139">Nenhum</span><span class="sxs-lookup"><span data-stu-id="92826-139">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6e2a7-140">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6e2a7-140">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="92826-140">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="92826-140">JSON representation</span></span>
 
-<span data-ttu-id="6e2a7-141">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6e2a7-141">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="92826-141">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="92826-141">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -52,7 +52,6 @@ ms.locfileid: "48401376"
 
   ],
   "@odata.type": "microsoft.graph.identitySecurityDefaultsEnforcementPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
