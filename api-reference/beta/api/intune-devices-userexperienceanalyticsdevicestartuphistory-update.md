@@ -1,26 +1,26 @@
 ---
 title: Atualizar userExperienceAnalyticsDeviceStartupHistory
-description: Atualiza as propriedades de um objeto userExperienceAnalyticsDeviceStartupHistory.
+description: Atualizar as propriedades de um objeto userExperienceAnalyticsDeviceStartupHistory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2ce7aab7eea93e6026d07005c6b84c562a385fe
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4bf2ddc2ad60d850ba1511c6a1a7339a48326ec2
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49263943"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159665"
 ---
 # <a name="update-userexperienceanalyticsdevicestartuphistory"></a>Atualizar userExperienceAnalyticsDeviceStartupHistory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) .
+Atualizar as propriedades de um [objeto userExperienceAnalyticsDeviceStartupHistory.](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,7 +47,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) .
+No corpo da solicitação, fornece uma representação JSON do objeto [userExperienceAnalyticsDeviceStartupHistory.](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md).
 
@@ -55,26 +55,26 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 |:---|:---|:---|
 |id|String|O identificador exclusivo do histórico de inicialização do dispositivo de análise da experiência do usuário.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo de análise da experiência do usuário.|
-|startTime|DateTimeOffset|A hora de início do dispositivo de análise da experiência do usuário.|
-|coreBootTimeInMs|Int32|O tempo de inicialização do núcleo do dispositivo de análise da experiência do usuário em milissegundos.|
-|groupPolicyBootTimeInMs|Int32|O tempo de inicialização da política de grupo do dispositivo de análise da experiência do usuário em milissegundos.|
+|startTime|DateTimeOffset|A hora de inicialização do dispositivo de análise da experiência do usuário.|
+|coreBootTimeInMs|Int32|O tempo de inicialização principal do dispositivo de análise da experiência do usuário em milissegundos.|
+|groupPolicyBootTimeInMs|Int32|A análise da experiência do usuário Tempo de inicialização da política de grupo do dispositivo em milissegundos.|
 |featureUpdateBootTimeInMs|Int32|O tempo de atualização de recursos do dispositivo de análise de experiência do usuário em milissegundos.|
-|totalBootTimeInMs|Int32|O tempo de inicialização total do dispositivo de análise da experiência do usuário, em milissegundos.|
+|totalBootTimeInMs|Int32|O tempo total de inicialização do dispositivo de análise da experiência do usuário em milissegundos.|
 |groupPolicyLoginTimeInMs|Int32|O tempo de logon da política de grupo do dispositivo de análise da experiência do usuário em milissegundos.|
-|coreLoginTimeInMs|Int32|O tempo de logon do dispositivo de análise da experiência do usuário em milissegundos.|
-|responsiveDesktopTimeInMs|Int32|O tempo de resposta da análise da experiência do usuário em milissegundos.|
+|coreLoginTimeInMs|Int32|O tempo de logon principal do dispositivo de análise da experiência do usuário em milissegundos.|
+|responsiveDesktopTimeInMs|Int32|O tempo da área de trabalho responsivo da análise da experiência do usuário em milissegundos.|
 |totalLoginTimeInMs|Int32|O tempo total de logon do dispositivo de análise da experiência do usuário em milissegundos.|
-|isFirstLogin|Booliano|O dispositivo de análise de experiência do usuário primeiro logon.|
-|isFeatureUpdate|Booliano|O registro de inicialização do dispositivo de análise da experiência do usuário é uma atualização de recurso.|
+|isFirstLogin|Boolean|O primeiro logon do dispositivo de análise da experiência do usuário.|
+|isFeatureUpdate|Boolean|O registro de inicialização do dispositivo de análise de experiência do usuário é uma atualização de recurso.|
 |operatingSystemVersion|String|A versão do sistema operacional do registro de inicialização do dispositivo de análise da experiência do usuário.|
-|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Categoria de reinício de so. Os valores possíveis são: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`.|
-|restartStopCode|String|O código de parada de reinício do so. Isso mostra o código de verificação de erros que pode ser usado para pesquisar a razão da tela azul.|
-|restartFaultBucket|String|O compartimento de reinicialização de sistema operacional. O Bucket de falhas é usado para encontrar informações adicionais sobre uma falha do sistema.|
+|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Categoria de reinicialização do sistema operacional. Os valores possíveis são: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`, `update`.|
+|restartStopCode|String|Código de parada de reinicialização do sistema operacional. Isso mostra o código de verificação de bugs que pode ser usado para procurar o motivo da tela azul.|
+|restartFaultBucket|String|Sistema operacional reinicia o bucket de falha. O bucket de falha é usado para encontrar informações adicionais sobre uma falha do sistema.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

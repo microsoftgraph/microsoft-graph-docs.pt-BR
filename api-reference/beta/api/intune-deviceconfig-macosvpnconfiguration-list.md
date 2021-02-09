@@ -1,26 +1,26 @@
 ---
 title: Listar macOSVpnConfigurations
-description: Listar Propriedades e relações dos objetos macOSVpnConfiguration.
+description: Listar propriedades e relações dos objetos macOSVpnConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 230cfb962bf7cd6d7d003b711fdbc1a06b326416
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3349454a3bc6a9d4cf5cbb8b08f4492f852ad439
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49278741"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155752"
 ---
 # <a name="list-macosvpnconfigurations"></a>Listar macOSVpnConfigurations
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) .
+Listar propriedades e relações dos [objetos macOSVpnConfiguration.](../resources/intune-deviceconfig-macosvpnconfiguration.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3342
+Content-Length: 3418
 
 {
   "value": [
@@ -154,6 +154,9 @@ Content-Length: 3342
         }
       ],
       "providerType": "appProxy",
+      "associatedDomains": [
+        "Associated Domains value"
+      ],
       "excludedDomains": [
         "Excluded Domains value"
       ],

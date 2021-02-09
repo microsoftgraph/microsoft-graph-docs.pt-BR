@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8c21e7ab3b88c2659bf055e39b931cbc6e9d2f39
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 3413ee882a7ca387d298b148b37266704558031c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844673"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158314"
 ---
 # <a name="teamworkbot-resource-type"></a>Tipo de recurso teamworkBot
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa um bot no ecossistema do Microsoft Teams.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter bot](../api/teamworkbot-get.md)|[teamworkBot](../resources/teamworkbot.md)|Leia as propriedades e os relacionamentos de um objeto [teamworkBot.](../resources/teamworkbot.md)|
@@ -28,7 +28,7 @@ Representa um bot no ecossistema do Microsoft Teams.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A id do bot associado ao [teamsAppDefinition específico.](../resources/teamsappdefinition.md) Esse valor geralmente é um GUID.|
+|id|String|A id do bot associado ao [teamsAppDefinition específico.](../resources/teamsappdefinition.md) Esse valor geralmente é um GUID.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -39,7 +39,6 @@ Veja a seguir uma representação JSON do recurso.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamworkBot",
-  "baseType": "",
   "openType": false
 }
 -->

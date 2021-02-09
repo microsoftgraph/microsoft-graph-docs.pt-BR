@@ -1,46 +1,46 @@
 ---
-title: tipo de recurso tiIndicator
-description: Os indicadores de inteligência da ameaça (TI) representam dados usados para identificar atividades mal-intencionadas.
+title: Tipo de recurso tiIndicator
+description: Os indicadores de inteligência contra ameaças (TI) representam dados usados para identificar atividades mal-intencionadas.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: d477577c941ee28b73bd9034480f6b410da2265e
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 33c14b4bc60fe492c961445cb294200555e2cc9a
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401742"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158741"
 ---
-# <a name="tiindicator-resource-type"></a>tipo de recurso tiIndicator
+# <a name="tiindicator-resource-type"></a>Tipo de recurso tiIndicator
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Os indicadores de inteligência da ameaça (TI) representam dados usados para identificar atividades mal-intencionadas. Se sua organização trabalha com indicadores de ameaça, gerando sua própria, obtendo suas próprias, o compartilhamento com organizações de parceiros ou comunidades ou comprando feeds de dados, talvez você queira usar esses indicadores em várias ferramentas de segurança para corresponder aos dados de log. A entidade **TIINDICATORS** API de segurança do Microsoft Graph permite que você carregue seus indicadores de ameaça para as ferramentas de segurança da Microsoft para as ações de permitir, bloquear ou alertar.
+Os indicadores de inteligência contra ameaças (TI) representam dados usados para identificar atividades mal-intencionadas. Se sua organização trabalha com indicadores de ameaças, seja gerando seus próprios, obtendo-os de feeds de código aberto, compartilhando com organizações ou comunidades parceiras ou comprando feeds de dados, talvez você queira usar esses indicadores em várias ferramentas de segurança para corresponder aos dados de log. A entidade **tiIndicators** da API de Segurança do Microsoft Graph permite carregar seus indicadores de ameaça para as ferramentas de segurança da Microsoft para as ações de permitir, bloquear ou alerta.
 
-Os indicadores de ameaça carregados por meio do **tiIndicators** serão usados em conjunto com o Microsoft Threat Intelligence para fornecer uma solução de segurança personalizada para sua organização. Ao usar a entidade **tiIndicators** , você especifica a solução de segurança da Microsoft para a qual deseja utilizar os indicadores por meio da propriedade **targetProduct** e especifica a ação (permitir, bloquear ou alerta) à qual a solução de segurança deve aplicar os indicadores por meio da propriedade **Action** .
+Os indicadores de ameaças carregados por **meio de tiIndicators** serão usados em conjunto com a inteligência contra ameaças da Microsoft para fornecer uma solução de segurança personalizada para sua organização. Ao usar a entidade **tiIndicators,** você especifica a solução de segurança da Microsoft para a qual deseja utilizar os indicadores por meio da propriedade  **targetProduct** e especifica a ação (permitir, bloquear ou alerta) à qual a solução de segurança deve aplicar os indicadores por meio da propriedade de ação.
 
-O suporte atual do **targetProduct** inclui o seguinte:
+O **suporte a targetProduct** atual inclui o seguinte:
 
-- **Azure Sentinel** – suporta todos os métodos **tiIndicators** documentados listados na seção a seguir.
-- **Microsoft defender ATP (proteção avançada contra ameaças do Microsoft defender)** – suporta os seguintes métodos **tiIndicators** :
+- **Azure Sentinel** – Oferece suporte a todos os **métodos tiIndicators** documentados listados na seção a seguir.
+- **Microsoft Defender ATP (Proteção Avançada contra** Ameaças do Microsoft Defender) – oferece suporte aos seguintes métodos **tiIndicators:**
      - [Obter tiIndicator](../api/tiindicator-get.md)
      - [Criar tiIndicator](../api/tiindicators-post.md)
      - [Lista tiIndicators](../api/tiindicators-list.md)
      - [Update](../api/tiindicator-update.md)
      - [Delete](../api/tiindicator-delete.md)
 
-     O suporte para os métodos em massa estará disponível em breve.
+     O suporte para os métodos em massa será em breve.
 
   > [!NOTE]
-  >Os seguintes tipos de indicador têm suporte do Microsoft defender ATP targetProduct:
+  >Os seguintes tipos de indicadores são suportados pelo Microsoft Defender ATP targetProduct:
   > - Arquivos
-  > - Endereços IP: o Microsoft defender ATP oferece suporte a IPv4/IPv6 somente de destino – Set Property nas propriedades networkDestinationIPv4 ou networkDestinationIPv6 na API de segurança do Microsoft Graph **tiIndicator**.
+  > - Endereços IP: o Microsoft Defender ATP dá suporte somente a IPv4/IPv6 de destino – definir propriedade nas propriedades networkDestinationIPv4 ou networkDestinationIPv6 na API de Segurança do Microsoft Graph **tiIndicator**.
   > - URLs/domínios
 
-   Há um limite de 15000 indicadores por locatário para o Microsoft defender ATP.
+   Há um limite de 15.000 indicadores por locatário do Microsoft Defender ATP.
 
 Para mais detalhes sobre os tipos de indicadores com suporte e limites de contagens de indicadores por locatário, confira [Gerenciar indicadores](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
@@ -50,155 +50,155 @@ Para mais detalhes sobre os tipos de indicadores com suporte e limites de contag
 |:-------------|:------------|:------------|
 | [Obter tiIndicator](../api/tiindicator-get.md) | [tiIndicator](tiindicator.md) | Leia as propriedades e os relacionamentos do objeto tiIndicator. |
 | [Criar tiIndicator](../api/tiindicators-post.md) | [tiIndicator](tiindicator.md) | Crie um novo tiIndicator postando na coleção tiIndicators. |
-| [Lista tiIndicators](../api/tiindicators-list.md) | coleção [tiIndicator](tiindicator.md) | Obtenha uma coleção de objetos tiIndicator. |
+| [Lista tiIndicators](../api/tiindicators-list.md) | [Coleção tiIndicator](tiindicator.md) | Obter uma coleção de objetos tiIndicator. |
 | [Update](../api/tiindicator-update.md) | [tiIndicator](tiindicator.md) | Atualize o objeto tiIndicator. |
-| [Delete](../api/tiindicator-delete.md) | Nenhum | Exclua o objeto tiIndicator. |
-|[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|Nenhum| Excluir vários objetos tiIndicator.|
-|[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|Nenhum| Excluir vários objetos tiIndicator pela `externalId` propriedade.|
-|[submitTiIndicators](../api/tiindicator-submittiindicators.md)|coleção [tiIndicator](tiindicator.md)|Criar novo tiIndicators postando uma coleção tiIndicators.|
-|[updateTiIndicators](../api/tiindicator-updatetiindicators.md)|coleção [tiIndicator](tiindicator.md)| Atualizar vários objetos tiIndicator.|
+| [Delete](../api/tiindicator-delete.md) | Nenhum(a) | Exclua o objeto tiIndicator. |
+|[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|Nenhum(a)| Exclua vários objetos tiIndicator.|
+|[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|Nenhum(a)| Exclua vários objetos tiIndicator pela `externalId` propriedade.|
+|[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[Coleção tiIndicator](tiindicator.md)|Crie novos tiIndicators postando uma coleção tiIndicators.|
+|[updateTiIndicators](../api/tiindicator-updatetiindicators.md)|[Coleção tiIndicator](tiindicator.md)| Atualize vários objetos tiIndicator.|
 
 ### <a name="methods-supported-by-each-target-product"></a>Métodos suportados por cada produto de destino
 
 | Método                                                          | Azure Sentinel                                                                                                                                                                                                                                                                                                                                                                      | O Microsoft Defender ATP                                                                                                                                                                                               |
 |:----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Criar tiIndicator](../api/tiindicators-post.md)               | Os campos obrigatórios são: `action` , `azureTenantId` , `description` , `expirationDateTime` , `targetProduct` , `threatType` , `tlpLevel` e pelo menos um email, rede ou arquivo observou.                                                                                                                                                                                                | Os campos obrigatórios são: `action` e um destes valores: `domainName` ,, `url` `networkDestinationIPv4` , `networkDestinationIPv6` , `fileHashValue` (deve ser fornecido `fileHashType` no caso de `fileHashValue` ). |
-| [Enviar tiIndicators](../api/tiindicator-submittiindicators.md) | Consulte o método [Create tiIndicator](../api/tiindicators-post.md) para os campos obrigatórios de cada tiIndicator. Há um limite de 100 tiIndicators por solicitação.                                                                                                                                                                                                                    | Consulte o método [Create tiIndicator](../api/tiindicators-post.md) para os campos obrigatórios de cada tiIndicator. Há um limite de 100 tiIndicators por solicitação.                                                     |
-| [Atualizar tiIndicator](../api/tiindicator-update.md)              | Os campos obrigatórios são: `id` , `expirationDateTime` , `targetProduct` . <br> Os campos editáveis são:,,,,,,,,,,,,,,,,,,,,  `action` `activityGroupNames` `additionalInformation` `confidence` `description` `diamondModel` `expirationDateTime` `externalId` `isActive` `killChain` `knownFalsePositives` `lastReportedDateTime` `malwareFamilyNames` , `passiveOnly` , `severity` , `tags` , `tlpLevel` . | Os campos obrigatórios são: `id` , `expirationDateTime` , `targetProduct` . <br> Os campos editáveis são: `expirationDateTime` , `severity` , `description` .                                                                         |
-| [Atualizar tiIndicators](../api/tiindicator-updatetiindicators.md) | Consulte o método [Update tiIndicator](../api/tiindicator-update.md) para os campos Required e editable de cada tiIndicator.                                                                                                                                                                                                                                                       | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
+| [Criar tiIndicator](../api/tiindicators-post.md)               | Os campos obrigatórios são: , , , , , e pelo menos um `action` `azureTenantId` `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` email, rede ou arquivo observável.                                                                                                                                                                                                | Os campos obrigatórios são: `action` e um destes valores: , `domainName` , , ( deve fornecer no caso de `url` `networkDestinationIPv4` `networkDestinationIPv6` `fileHashValue` `fileHashType` `fileHashValue` ). |
+| [Enviar tiIndicators](../api/tiindicator-submittiindicators.md) | Consulte o método [Create tiIndicator](../api/tiindicators-post.md) para campos obrigatórios para cada tiIndicator. Há um limite de 100 tiIndicators por solicitação.                                                                                                                                                                                                                    | Consulte o método [Create tiIndicator](../api/tiindicators-post.md) para campos obrigatórios para cada tiIndicator. Há um limite de 100 tiIndicators por solicitação.                                                     |
+| [Atualizar tiIndicator](../api/tiindicator-update.md)              | Os campos obrigatórios são: `id` , `expirationDateTime` . `targetProduct` <br> Os campos editáveis são:  `action` , , , , , , , , `activityGroupNames` , , , `additionalInformation` , , , `confidence` , `description` `diamondModel` , `expirationDateTime` `externalId` `isActive` `killChain` `knownFalsePositives` `lastReportedDateTime` `malwareFamilyNames` `passiveOnly` `severity` `tags` `tlpLevel` . | Os campos obrigatórios são: `id` , `expirationDateTime` . `targetProduct` <br> Os campos editáveis são: `expirationDateTime` , `severity` . `description`                                                                         |
+| [Atualizar tiIndicators](../api/tiindicator-updatetiindicators.md) | Consulte o método [Update tiIndicator](../api/tiindicator-update.md) para campos obrigatórios e editáveis para cada tiIndicator.                                                                                                                                                                                                                                                       | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
 | [Excluir tiIndicator](../api/tiindicator-delete.md)              | O campo obrigatório é: `id` .                                                                                                                                                                                                                                                                                                                                                            | O campo obrigatório é: `id` .                                                                                                                                                                                             |
-| [Excluir tiIndicators](../api/tiindicator-deletetiindicators.md) | Consulte o método [delete tiIndicator](../api/tiindicator-delete.md) acima para o campo obrigatório para cada tiIndicator.                                                                                                                                                                                                                                                               | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
+| [Excluir tiIndicators](../api/tiindicator-deletetiindicators.md) | Consulte o [método Delete tiIndicator](../api/tiindicator-delete.md) acima para o campo necessário para cada tiIndicator.                                                                                                                                                                                                                                                               | <p align="center">[Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|ação|string| A ação a ser aplicada se o indicador for correspondido de dentro da ferramenta de segurança do targetProduct. Os valores possíveis são: `unknown`, `allow`, `block`, `alert`. **Obrigatório.**|
-|activityGroupNames|Conjunto de cadeias de caracteres|O nome do Cyber Threat Intelligence (s) para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaças.|
-|additionalInformation|Cadeia de caracteres|Uma área catchall na qual os dados extras do indicador não cobertos pelas outras propriedades de tiIndicator podem ser colocados. Os dados colocados no additionalInformation normalmente não serão utilizados pela ferramenta de segurança do targetProduct.|
-|azureTenantId|String| Marcado pelo sistema quando o indicador está ingerido. A ID de locatário do Azure Active Directory do cliente remetente. **Obrigatório.**|
-|confidence|Int32|Um inteiro representando a confiança dos dados dentro do indicador identifica precisamente o comportamento mal-intencionado. Os valores aceitáveis são 0 – 100 com 100 sendo os mais altos.|
-|description|Cadeia de caracteres| Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador. **Obrigatório.**|
-|diamondModel|[diamondModel](#diamondmodel-values)|A área do modelo em losango em que esse indicador existe. Os valores possíveis são: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
-|expirationDateTime|DateTimeOffset| Cadeia de caracteres DateTime indicando quando o indicador expira. Todos os indicadores devem ter uma data de vencimento para evitar indicadores obsoletos persistentes no sistema. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. **Obrigatório.**|
-|externalId|Cadeia de caracteres| Um número de identificação que liga o indicador de volta para o sistema do provedor de indicadores (por exemplo, uma chave externa). |
-|id|Cadeia de caracteres|Criado pelo sistema quando o indicador é ingerido. GUID gerado/identificador exclusivo. Somente leitura.|
-|ingestedDateTime|DateTimeOffset| Marcado pelo sistema quando o indicador está ingerido. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|isActive|Boolean| Usado para desativar indicadores no sistema. Por padrão, qualquer indicador enviado é definido como ativo. No entanto, os provedores podem enviar indicadores existentes com este conjunto como ' false ' para desativar indicadores no sistema.|
-|killChain|coleção [killChain](#killchain-values)|Uma matriz JSON de cadeias de caracteres que descreve o ponto ou os pontos na cadeia de Kill que este indicador aponta. Consulte ' valores killChain ' abaixo para ver os valores exatos. |
-|knownFalsePositives|Cadeia de caracteres|Cenários nos quais o indicador pode causar falsos positivos. Isso deve ser um texto legível por pessoas.|
-|lastReportedDateTime|DateTimeOffset|A última vez que o indicador foi visto. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|malwareFamilyNames|Conjunto de cadeias de caracteres|O nome da família de malware associado a um indicador, se existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, que possa ser encontrado por meio da [enciclopédia de ameaças](https://www.microsoft.com/wdsi/threats)de inteligência de segurança do Windows Defender.|
-|passiveOnly|Boolean |Determina se o indicador deve acionar um evento que é visível para um usuário final. Quando definido como ' true ', as ferramentas de segurança não notificarão o usuário final de que um ' hit ' ocorreu. Isso geralmente é tratado como um modo de auditoria ou silencioso por produtos de segurança onde eles simplesmente farão o registro de que uma correspondência ocorreu, mas não executará a ação. O valor padrão é falso. |
-|severity|Int32| Um inteiro que representa a gravidade do comportamento mal-intencionado identificado pelos dados dentro do indicador. Os valores aceitáveis são 0 – 5, onde 5 é o mais grave e zero não é grave. O valor padrão é 3. |
-|tags|String collection|Uma matriz JSON de cadeias de caracteres que armazena marcas arbitrárias/palavras-chave. |
-|targetProduct|Cadeia de caracteres|Um valor String que representa um único produto de segurança ao qual o indicador deve ser aplicado. Os valores aceitáveis são: `Azure Sentinel` , `Microsoft Defender ATP` . **Required**|
-|threattype|[threattype](#threattype-values)| Cada indicador deve ter um tipo de ameaça de indicador válido. Os valores possíveis são: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Obrigatório.** |
-|tlpLevel|[tlpLevel](#tlplevel-values)| Valor do protocolo de luz de tráfego para o indicador. Os valores possíveis são: `unknown`, `white`, `green`, `amber`, `red`. **Obrigatório.**|
+|ação|string| A ação a ser aplicada se o indicador for corresponder de dentro da ferramenta de segurança targetProduct. Os valores possíveis são: `unknown`, `allow`, `block`, `alert`. **Obrigatório.**|
+|activityGroupNames|Coleção de cadeias de caracteres|Os nomes de inteligência contra ameaças cibernéticas para as partes responsáveis pelas atividades mal-intencionadas cobertas pelo indicador de ameaças.|
+|additionalInformation|String|Uma área catchall na qual dados extras do indicador não cobertos pelas outras propriedades tiIndicator podem ser colocados. Os dados colocados em additionalInformation normalmente não serão utilizados pela ferramenta de segurança targetProduct.|
+|azureTenantId|String| Carimbado pelo sistema quando o indicador é ingerido. A ID de locatário do Azure Active Directory do cliente de envio. **Obrigatório.**|
+|confidence|Int32|Um inteiro que representa a confiança dos dados no indicador identifica com precisão o comportamento mal-intencionado. Os valores aceitáveis são de 0 a 100, sendo 100 o maior.|
+|description|String| Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador. **Obrigatório.**|
+|diamondModel|[diamondModel](#diamondmodel-values)|A área do Modelo de Losango na qual esse indicador existe. Os valores possíveis são: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
+|expirationDateTime|DateTimeOffset| Cadeia de caracteres DateTime que indica quando o Indicador expira. Todos os indicadores devem ter uma data de expiração para evitar que os indicadores persistentes persistam no sistema. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. **Obrigatório.**|
+|externalId|Cadeia de caracteres| Um número de identificação que vincula o indicador de volta ao sistema do provedor do indicador (por exemplo, uma chave estrangeira). |
+|id|String|Criado pelo sistema quando o indicador é ingerido. Identificador GUID/exclusivo gerado. Somente leitura.|
+|ingestedDateTime|DateTimeOffset| Carimbado pelo sistema quando o indicador é ingerido. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|isActive|Boolean| Usado para desativar indicadores no sistema. Por padrão, qualquer indicador enviado é definido como ativo. No entanto, os provedores podem enviar indicadores existentes com esse conjunto como "Falso" para desativar os indicadores no sistema.|
+|killChain|[Coleção killChain](#killchain-values)|Uma matriz JSON de cadeias de caracteres que descreve qual ponto ou pontos no Kill Chain este indicador se direciona. Consulte 'valores killChain' abaixo para saber os valores exatos. |
+|knownFalsePositives|String|Cenários em que o indicador pode causar falsos positivos. Deve ser um texto acessível para humanos.|
+|lastReportedDateTime|DateTimeOffset|A última vez em que o indicador foi visto. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|malwareFamilyNames|Coleção de cadeias de caracteres|O nome da família de malware associado a um indicador, se ele existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, que pode ser encontrado por meio da ameaça de inteligência de segurança do Windows [Defender.](https://www.microsoft.com/wdsi/threats)|
+|passiveOnly|Boolean |Determina se o indicador deve disparar um evento visível para um usuário final. Quando definido como "verdadeiro", as ferramentas de segurança não notificarão o usuário final de que ocorreu um 'acerto'. Isso é tratado com mais frequência como auditoria ou modo silencioso pelos produtos de segurança, onde eles simplesmente registram que uma combinação ocorreu, mas não executarão a ação. O valor padrão é falso. |
+|severity|Int32| Um inteiro que representa a gravidade do comportamento mal-intencionado identificado pelos dados dentro do indicador. Os valores aceitáveis são de 0 a 5, onde 5 é o mais grave e zero não é grave. O valor padrão é 3. |
+|tags|Coleção de cadeias de caracteres|Uma matriz JSON de cadeias de caracteres que armazena marcas/palavras-chave arbitrárias. |
+|targetProduct|String|Um valor de cadeia de caracteres que representa um único produto de segurança ao qual o indicador deve ser aplicado. Os valores aceitáveis são: `Azure Sentinel` , `Microsoft Defender ATP` . **Required**|
+|threatType|[threatType](#threattype-values)| Cada indicador deve ter um tipo de ameaça válido. Os valores possíveis são: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Obrigatório.** |
+|tlpLevel|[tlpLevel](#tlplevel-values)| Valor do Protocolo semáforo para o indicador. Os valores possíveis são: `unknown`, `white`, `green`, `amber`, `red`. **Obrigatório.**|
 
-### <a name="indicator-observables---email"></a>Indicador observáveis-email
-
-| Propriedade     | Tipo        | Descrição |
-|:-------------|:------------|:------------|
-|emailEncoding|Cadeia de caracteres|O tipo de codificação de texto usado no email.|
-|emailLanguage|Cadeia de caracteres|O idioma do email.|
-|emailRecipient|Cadeia de caracteres|Endereço de email do destinatário.|
-|emailSenderAddress|Cadeia de caracteres|Endereço de email do invasor&#124;vítima.|
-|emailSenderName|Cadeia de caracteres|Nome exibido do atacante&#124;vítima.|
-|emailSourceDomain|Cadeia de caracteres|Domínio usado no email.|
-|emailSourceIpAddress|Cadeia de caracteres|Endereço IP de origem do email.|
-|emailSubject|Cadeia de caracteres|Linha de assunto do email.|
-|emailXMailer|Cadeia de caracteres|Valor do X-Mailer usado no email.|
-
-### <a name="indicator-observables---file"></a>Indicador observáveis-arquivo
+### <a name="indicator-observables---email"></a>Indicador observáveis - email
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|fileCompileDateTime|DateTimeOffset|DateTime quando o arquivo foi compilado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|fileCreatedDateTime|DateTimeOffset| DateTime quando o arquivo foi criado. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|fileHashType|string| O tipo de hash armazenado em filehashvalue. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`.|
-|filehashvalue|Cadeia de caracteres| O valor de hash do arquivo.|
-|filemutexname|Cadeia de caracteres| Nome mutex usado em detecções baseadas em arquivo.|
+|emailEncoding|String|O tipo de codificação de texto usado no email.|
+|emailLanguage|String|O idioma do email.|
+|emailRecipient|String|Endereço de email do destinatário.|
+|emailSenderAddress|String|Endereço de email do invasor&#124;vítima.|
+|emailSenderName|String|Nome exibido do invasor&#124;vítima.|
+|emailSourceDomain|String|Domínio usado no email.|
+|emailSourceIpAddress|String|Endereço IP de origem do email.|
+|emailSubject|String|Linha de assunto do email.|
+|emailXMailer|String|Valor X-Mailer usado no email.|
+
+### <a name="indicator-observables---file"></a>Indicador observáveis - arquivo
+
+| Propriedade     | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|fileCompileDateTime|DateTimeOffset|DateTime quando o arquivo foi compilado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|fileCreatedDateTime|DateTimeOffset| DateTime quando o arquivo foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|fileHashType|string| O tipo de hash armazenado em fileHashValue. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`.|
+|fileHashValue|String| O valor de hash do arquivo.|
+|fileMutexName|String| Nome mutex usado em detecções baseadas em arquivo.|
 |fileName|String|Nome do arquivo se o indicador for baseado em arquivo. Vários nomes de arquivo podem ser delimitados por vírgulas. |
-|filepackr|Cadeia de caracteres|O empacotador usado para criar o arquivo em questão.|
-|filePath|Cadeia de caracteres|Caminho do arquivo que indica o compromisso. Pode ser um caminho de estilo Windows ou * Nix.|
-|Tamanho|Int64|Tamanho do arquivo em bytes.|
-|fileType|Cadeia de caracteres| Descrição de texto do tipo de arquivo. Por exemplo, "documento do Word" ou "binário".|
+|filePacker|String|O filho usado para criar o arquivo em questão.|
+|filePath|String|Caminho do arquivo indicando comprometimento. Pode ser um caminho de estilo windows ou *nix.|
+|fileSize|Int64|Tamanho do arquivo em bytes.|
+|fileType|String| Descrição do texto do tipo de arquivo. Por exemplo, "Documento do Word" ou "Binário".|
 
-### <a name="indicator-observables---network"></a>Indicador observáveis-rede
+### <a name="indicator-observables---network"></a>Indicador observáveis - rede
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|domainName|Cadeia de caracteres|Nome de domínio associado a esse indicador. Deve ser do formato subdomain. domain. TopLevelDomain (por exemplo, baddomain.domain.net)|
-|networkCidrBlock|Cadeia de caracteres| Representação de notação de bloqueio CIDR da rede referenciada neste indicador. Use somente se a origem e o destino não puderem ser identificados. |
+|domainName|Cadeia de caracteres|Nome de domínio associado a esse indicador. Deve ser do formato subdomínio.domínio.topleveldomain (por exemplo, baddomain.domain.net)|
+|networkCidrBlock|String| Representação de notação de bloqueio CIDR da rede referenciada neste indicador. Use somente se a fonte e o destino não puderem ser identificados. |
 |networkDestinationAsn|Int32|O identificador de sistema autônomo de destino da rede referenciada no indicador.|
-|networkDestinationCidrBlock|Cadeia de caracteres|Representação de notação de bloqueio CIDR da rede de destino neste indicador.|
-|networkDestinationIPv4|Cadeia de caracteres|Destino do endereço IP IPv4.|
-|networkDestinationIPv6|Cadeia de caracteres|Destino do endereço IP IPv6.|
+|networkDestinationCidrBlock|String|Representação de notação de bloqueio CIDR da rede de destino neste indicador.|
+|networkDestinationIPv4|String|Destino do endereço IP IPv4.|
+|networkDestinationIPv6|String|Destino do endereço IP IPv6.|
 |networkDestinationPort|Int32|Destino da porta TCP.|
-|networkIPv4|Cadeia de caracteres| Endereço IP IPv4. Use somente se a origem e o destino não puderem ser identificados. |
-|networkIPv6|Cadeia de caracteres| Endereço IP IPv6. Use somente se a origem e o destino não puderem ser identificados. |
-|networkPort|Int32| Porta TCP. Use somente se a origem e o destino não puderem ser identificados. |
-|networkProtocol|Int32|Representação decimal do campo de protocolo no cabeçalho IPv4.|
-|networkSourceAsn|Int32|O identificador de sistema autônomo de origem da rede referenciada no indicador.|
-|networkSourceCidrBlock|Cadeia de caracteres|Representação de notação de bloqueio CIDR da rede de origem neste indicador|
-|networkSourceIPv4|Cadeia de caracteres|Origem do endereço IP IPv4.|
-|networkSourceIPv6|Cadeia de caracteres|Origem do endereço IP IPv6.|
+|networkIPv4|String| Endereço IP IPv4. Use somente se a fonte e o destino não puderem ser identificados. |
+|networkIPv6|String| Endereço IP IPv6. Use somente se a fonte e o destino não puderem ser identificados. |
+|networkPort|Int32| Porta TCP. Use somente se a fonte e o destino não puderem ser identificados. |
+|networkProtocol|Int32|Representação decimal do campo de protocolo no header IPv4.|
+|networkSourceAsn|Int32|O identificador de sistema autônomo de origem da rede referenciado no indicador.|
+|networkSourceCidrBlock|String|Representação de notação de bloqueio CIDR da rede de origem neste indicador|
+|networkSourceIPv4|String|Origem do endereço IP IPv4.|
+|networkSourceIPv6|String|Fonte de endereço IP IPv6.|
 |networkSourcePort|Int32|Origem da porta TCP.|
-|url|Cadeia de caracteres|Localizador de recursos uniforme. Esta URL deve estar em conformidade com a RFC 1738.|
-|userAgent|Cadeia de caracteres|User-Agent cadeia de caracteres de uma solicitação da Web que pode indicar comprometimento.|
+|url|Cadeia de caracteres|Localizador de Recursos Uniforme. Essa URL deve estar em conformidade com a RFC 1738.|
+|userAgent|String|User-Agent cadeia de caracteres de uma solicitação da Web que pode indicar comprometimento.|
 
 ### <a name="diamondmodel-values"></a>valores de diamondModel
 
-Para obter informações sobre esse modelo, consulte [o modelo de losango](http://diamondmodel.org).
+Para obter informações sobre esse modelo, consulte [o modelo de losango.](http://diamondmodel.org)
 
 | Membro | Valor | Descrição |
 |:-------|:----- |:------------|
-| desconhecido |  ,0    | |
+| desconhecido |  0    | |
 | adversário |  1     |O indicador descreve o adversário.|
-| função |  2    |O indicador é uma capacidade do adversário.|
-| ti | 3  |O indicador descreve a infraestrutura do adversário.|
+| capability |  2    |Indicador é um recurso do adversário.|
+| infrastructure | 3  |O indicador descreve a infraestrutura do adversário.|
 | vítima | 4  |O indicador descreve a vítima do adversário.|
 | unknownFutureValue | 127 | |
 
-### <a name="killchain-values"></a>valores de killChain
+### <a name="killchain-values"></a>Valores killChain
 
 | Member | Descrição |
 |:-------|:------------|
-|Ações|Indcates que o atacante está aproveitando o sistema comprometido para realizar ações como um ataque de negação de serviço distribuído.|
+|Ações|Indcates that the attacker is leveraging the compromised system to take actions such as a distributed denial of service attack.|
 |C2|Representa o canal de controle pelo qual um sistema comprometido é manipulado.|
-|Entrega|O processo de distribuição do código de exploração para vítimas (por exemplo, USB, email, sites).|
-|Invasão|O código de exploração que aproveita as vulnerabilidades (por exemplo, execução de código).|
-|Instalação|Instalação de malware após uma vulnerabilidade ter sido explorada.|
-|Reconhecimento|O indicador é uma evidência de um grupo de atividades que coleta informações a serem usadas em um ataque futuro.|
-|Armas|Transformar uma vulnerabilidade em código de exploração (por exemplo, malware).|
+|Entrega|O processo de distribuir o código de exploração para as vítima (por exemplo, USB, email, sites).|
+|Exploração|O código de exploração aproveitando as vulnerabilidades (por exemplo, execução de código).|
+|Instalação|Instalação de malware após uma vulnerabilidade ser explorada.|
+|Reconhecimento|Indicador é a evidência de um grupo de atividades coletando informações a serem usadas em um ataque futuro.|
+|Desorganização|Transformar uma vulnerabilidade em código de exploração (por exemplo, malware).|
 
-### <a name="threattype-values"></a>valores de threattype
+### <a name="threattype-values"></a>valores threatType
 
 | Member | Descrição |
 |:-------|:------------|
-|Botnet| O indicador é detalhando um nó/membro de botnet.|
-|C2|O indicador é detalhando um comando & nó de controle de uma botnet.|
-|CryptoMining|O tráfego que envolve esse endereço de rede/URL é uma indicação de abuso de CyrptoMining/recurso.|
-|Darknet|O indicador é o de um nó/rede do Darknet.
-|DDoS|Indicadores relacionados a uma campanha de DDoS ativa ou futura.|
-|MaliciousUrl|URL que serve de malware.|
+|Botnet| O indicador está detalhando um nó/membro de botnet.|
+|C2|O indicador está detalhando um nó command & Control de uma botnet.|
+|CryptoMining|O tráfego que envolve esse endereço de rede/URL é uma indicação de CyrptoMining /Abuso de recursos.|
+|Darknet|Indicador é o de um nó/rede Darknet.
+|DDos|Indicadores relacionados a uma campanha DDoS ativa ou futura.|
+|MaliciousUrl|URL que está servindo malware.|
 |Malware|Indicador que descreve um arquivo ou arquivos mal-intencionados.|
 |Phishing|Indicadores relacionados a uma campanha de phishing.|
-|Acionista|O indicador é o de um serviço de proxy.|
+|Proxy|Indicador é o de um serviço de proxy.|
 |PUA|Aplicativo potencialmente indesejado.|
-|Watchlist|Este é o Bucket genérico no qual os indicadores são colocados quando não é possível determinar exatamente qual é a ameaça ou será necessária a interpretação manual. Normalmente, isso não deve ser usado pelos parceiros que enviam dados para o sistema.|
+|WatchList|Esse é o bucket genérico no qual os indicadores são colocados quando não podem ser determinados exatamente qual é a ameaça ou exigirão interpretação manual. Isso normalmente não deve ser usado por parceiros que estão enviando dados para o sistema.|
 
-### <a name="tlplevel-values"></a>valores de tlpLevel
+### <a name="tlplevel-values"></a>Valores tlpLevel
 
-Cada indicador também deve ter um valor de protocolo de luz de tráfego quando ele é enviado. Esse valor representa a sensibilidade e o escopo de compartilhamento de um determinado indicador.
+Cada indicador também deve ter um valor do Protocolo semáforo quando enviado. Esse valor representa o escopo de sensibilidade e compartilhamento de um determinado indicador.
 
 | Member | Descrição |
 |:-------|:------------|
-|Branco| Escopo de compartilhamento: ilimitado. Os indicadores podem ser compartilhados livremente, sem restrição.|
+|Branco| Escopo de compartilhamento: Ilimitado. Os indicadores podem ser compartilhados livremente, sem restrições.|
 |Verde| Escopo de compartilhamento: Comunidade. Os indicadores podem ser compartilhados com a comunidade de segurança.|
-|Âmbar| Escopo de compartilhamento: limitado. Essa é a configuração padrão para indicadores e restringe o compartilhamento apenas àqueles com os serviços e operadores de serviço "necessário para saber", que implementam a inteligência da ameaça 2) clientes cujos sistemas de exposição de sistema (es) são consistentes com o indicador.|
-|Vermelho| Escopo de compartilhamento: pessoal. Esses indicadores devem ser compartilhados apenas diretamente e, preferencialmente, em pessoa. Normalmente, os indicadores vermelhos do TLP não são incluídos devido às restrições predefinidas. Se TLP indicadores vermelhos forem enviados, a propriedade "PassiveOnly" também deverá ser definida `True` . |
+|Colore| Escopo de compartilhamento: Limitado. Essa é a configuração padrão para indicadores e restringe o compartilhamento apenas àqueles com um "precisa-saber" sendo 1) Serviços e operadores de serviço que implementam inteligência de ameaça 2) Clientes cujo(s) sistema(s) exibem comportamento consistente com o indicador.|
+|Vermelho| Escopo de compartilhamento: Pessoal. Esses indicadores devem ser compartilhados apenas diretamente e, preferencialmente, pessoalmente. Normalmente, os indicadores TLP Red não são ingeridos devido às restrições pré-definidas. Se os indicadores TLP Red são enviados, a propriedade "PassiveOnly" deve ser definida `True` como também. |
 
 ## <a name="relationships"></a>Relações
 
@@ -214,7 +214,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.tiIndicator",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

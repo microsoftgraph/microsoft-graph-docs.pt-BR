@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1d7f97410c924b804ef4002932ca75182a461989
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 188504dc96628ba0047f9feb2489e94b8f138874
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133599"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158573"
 ---
 # <a name="accesspackageresourcerole-resource-type"></a>Tipo de recurso accessPackageResourceRole
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma função de recurso do pacote de acesso é uma referência a uma função definida em um recurso. Essa referência pode ser usada após a criação de um pacote de acesso para especificar as funções de cada um dos recursos do catálogo nos quais um pacote de acesso deve ser entregue, criando um escopo de função de recurso do pacote de [acesso.](../api/accesspackage-post-accesspackageresourcerolescopes.md)
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma função de recurso do pacote de acesso é uma referência a uma função definida em um recurso. Essa referência pode ser usada após a criação de um pacote de acesso para especificar as funções de cada um dos recursos do catálogo para os quais um pacote de acesso deve ser entregue, criando um escopo de função de recurso do pacote de [acesso.](../api/accesspackage-post-accesspackageresourcerolescopes.md)
 
 ## <a name="methods"></a>Métodos
 
@@ -52,7 +52,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceRole",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

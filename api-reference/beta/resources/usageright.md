@@ -5,12 +5,12 @@ author: jeeshnair
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d3d7ad0de7eb6929e54b7d3d692c6e562e9da76d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3f54fb6b54f08d28ab63bf2ec70180c5e0daf490
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130407"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159815"
 ---
 # <a name="usageright-resource-type"></a>Tipo de recurso usageRight
 
@@ -46,7 +46,7 @@ Um direito de uso representa uma licença que um usuário ou dispositivo tem par
 |suspended                | Indica que o direito de uso é suspenso provavelmente devido a violação de pagamento|
 |unknownFutureValue      | Valor do Sentinel para indicar valores futuros. |
 
->**Observação:** Somente os estados ativo e de aviso representam um benefício que pode ser usável. Todos os outros estados devem ser tratados como não resultando em um benefício usável.
+>**Observação:** Somente os estados ativos e de aviso representam um benefício que pode ser usável. Todos os outros estados devem ser tratados como não resultando em um benefício usável.
 
 
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.usageRight",
-  "baseType": "",
   "openType": false
 }
 -->

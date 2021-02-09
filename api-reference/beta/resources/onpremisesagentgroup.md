@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 0056f78eaecfad34a10dfb1ad2da04c15a6bc370
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: da089ba198b5056bdecdceba96be572366618a23
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136147"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158342"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>Tipo de recurso onPremisesAgentGroup
 
@@ -28,7 +28,7 @@ Representa o grupo de agentes locais. Os grupos de agentes permitem que um admin
 | [Obter onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Leia as propriedades e os relacionamentos de um **objeto onPremisesAgentGroup.** |
 | [Criar onPremisesAgentGroup](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Crie um novo **onPremisesAgentGroup**. |
 | [Atualizar onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Atualize **um objeto onPremisesAgentGroup.** |
-| [Excluir onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | Nenhuma | **Exclua um objeto onPremisesAgentGroup.** |
+| [Excluir onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | Nenhum(a) | **Exclua um objeto onPremisesAgentGroup.** |
 
 ## <a name="properties"></a>Propriedades
 
@@ -56,7 +56,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.onPremisesAgentGroup",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

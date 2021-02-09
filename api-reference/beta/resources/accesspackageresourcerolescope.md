@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso accessPackageResourceRoleScope
-description: Um escopo de função de recurso de pacote do Access é uma referência a um escopo dentro de um recurso e uma função nesse recurso.
+title: Tipo de recurso accessPackageResourceRoleScope
+description: Um escopo de função de recurso do pacote de acesso é uma referência a um escopo dentro de um recurso e a uma função nesse recurso.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c96d5a0499ae269c7ce67bae2252c6521d66eb7b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f6b68ad23505458a40be54ed073e0c01a81f06e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024644"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158550"
 ---
-# <a name="accesspackageresourcerolescope-resource-type"></a>tipo de recurso accessPackageResourceRoleScope
+# <a name="accesspackageresourcerolescope-resource-type"></a>Tipo de recurso accessPackageResourceRoleScope
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](entitlementmanagement-root.md), um escopo de função de recurso de pacote de acesso é uma referência a um escopo dentro de um recurso e uma função nesse recurso para esse escopo.  Um pacote de acesso terá escopos de função de recurso pacote de acesso para os recursos em seu catálogo que são relevantes para esse pacote de acesso.  Quando um assunto recebe uma atribuição de pacote do Access, o assunto será provisionado com a função nesse escopo de cada escopo de função de recurso de pacote de acesso.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um escopo de função de recurso do pacote de acesso é uma referência a um escopo dentro de um recurso e a uma função nesse recurso para esse escopo.  Um pacote de acesso terá escopos de função de recurso do pacote de acesso para os recursos em seu catálogo que são relevantes para esse pacote de acesso.  Quando um assunto recebe uma atribuição de pacote de acesso, o assunto será provisionado com a função nesse escopo de cada escopo de função de recurso do pacote de acesso.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | coleção [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Recupere uma lista de objetos **accessPackageResourceRoleScope** para um pacote do Access. |
-| [Criar accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Criar um novo objeto **accessPackageResourceRoleScope** para um pacote do Access. |
+| [Listar accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [Coleção accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Recupere uma lista de **objetos accessPackageResourceRoleScope** para um pacote de acesso. |
+| [Criar accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Crie um novo **objeto accessPackageResourceRoleScope** para um pacote de acesso. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceRoleScope",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

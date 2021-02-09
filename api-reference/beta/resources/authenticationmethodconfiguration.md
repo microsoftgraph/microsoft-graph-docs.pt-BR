@@ -1,18 +1,18 @@
 ---
 title: authenticationMethodConfigurations
-description: objeto authenticationMethodConfigurations.
+description: Objeto authenticationMethodConfigurations.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 856db11063c3f766f07ff725fe172270449d272d
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: cda2cda7756bb795c93e10dddbd344e5a4a92ed2
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418217"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159133"
 ---
-# <a name="authenticationmethodconfiguration-resource-type"></a>tipo de recurso authenticationMethodConfiguration
+# <a name="authenticationmethodconfiguration-resource-type"></a>Tipo de recurso authenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,7 +22,7 @@ Representa uma política de método de autenticação.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O nome da política.|
+|id|String|O nome da política.|
 |estado|authenticationMethodState|O estado da política. Os valores possíveis são: `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Relações
@@ -34,7 +34,6 @@ Veja a seguir uma representação JSON do recurso.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationMethodConfiguration",
-  "baseType": "",
   "openType": false
 }
 -->

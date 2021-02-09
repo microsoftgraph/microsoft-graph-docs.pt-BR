@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ddddea13ceb2840c61ec31238c03e7ab6e43d2d4
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 16198df73c51b1b5f7cb7f8c7748da4816800890
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934798"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158579"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>Tipo de recurso accessPackageResourceRequest
 
@@ -25,20 +25,20 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma so
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Listar accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [Coleção accessPackageResourceRequest](accesspackageresourcerequest.md) | Recupere uma lista de **objetos accessPackageResourceRequest.** |
-| [Criar accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Criar um novo **objeto accessPackageResourceRequest.** |
+| [Criar accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Crie um novo **objeto accessPackageResourceRequest.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|catalogId|Cadeia de caracteres|A ID exclusiva do catálogo de pacotes de acesso.|
+|catalogId|String|A ID exclusiva do catálogo de pacotes de acesso.|
 |expirationDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
-|isValidationOnly|Booliano|Se definido, não adiciona o recurso.|
-|justification|Cadeia de caracteres|A justificativa do solicitante para adicionar ou remover o recurso.|
-|requestState|Cadeia de caracteres| O resultado se o serviço foi capaz de adicionar o recurso ao catálogo.  O valor é `Delivered` se o recurso foi adicionado ou removido. Somente Leitura.|
+|isValidationOnly|Boolean|Se definido, não adiciona o recurso.|
+|justification|String|A justificativa do solicitante para adicionar ou remover o recurso.|
+|requestState|String| O resultado se o serviço foi capaz de adicionar o recurso ao catálogo.  O valor é `Delivered` se o recurso foi adicionado ou removido. Somente Leitura.|
 |requestStatus|String|Somente leitura.|
-|requestType|Cadeia de caracteres|Use `AdminAdd` para adicionar um recurso, se o chamador for um administrador ou proprietário do recurso, ou para remover um `AdminRemove` recurso. |
+|requestType|String|Use `AdminAdd` para adicionar um recurso, se o chamador for um administrador ou proprietário do recurso, ou para remover um `AdminRemove` recurso. |
 
 ## <a name="relationships"></a>Relações
 
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceRequest",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

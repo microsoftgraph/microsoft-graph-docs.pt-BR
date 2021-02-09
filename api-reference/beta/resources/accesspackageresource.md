@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 31499fda1d2d12f1e9868da6cf9e09fde38298cd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2137d5452ddef86580504577614a042398a1b9ad
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137463"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158594"
 ---
 # <a name="accesspackageresource-resource-type"></a>Tipo de recurso accessPackageResource
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No Gerenciamento de Direitos do [Azure AD,](entitlementmanagement-root.md)um recurso de pacote de acesso é uma referência a um recurso associado a um catálogo de pacotes de acesso. As funções para o recurso do pacote de acesso podem ser usadas em um ou mais pacotes de acesso.  Para solicitar a associação de um recurso a um catálogo de pacotes de acesso ou remover um recurso de um catálogo, crie [um accessPackageResourceRequest](accesspackageresourcerequest.md).
+No Gerenciamento de Direitos do [Azure AD,](entitlementmanagement-root.md)um recurso do pacote de acesso é uma referência a um recurso associado a um catálogo de pacotes de acesso. As funções para o recurso do pacote de acesso podem ser usadas em um ou mais pacotes de acesso.  Para solicitar a associação de um recurso a um catálogo de pacotes de acesso ou remover um recurso de um catálogo, crie um [accessPackageResourceRequest](accesspackageresourcerequest.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -60,7 +60,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResource",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

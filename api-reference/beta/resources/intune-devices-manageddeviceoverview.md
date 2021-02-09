@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aafcb3813dd1a11c05613ac3819a7f5b5d4fdcbc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e2a0345b19c2c2954b0bce231ca05d1bc2d2adcb
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49292979"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158489"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Tipo de recurso managedDeviceOverview
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -37,7 +37,7 @@ Dados de resumo de dispositivos gerenciados
 |dualEnrolledDeviceCount|Int32|O número de dispositivos registrados no MDM e no EAS|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|Resumo do sistema operacional do dispositivo.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Distribuição do Estado de acesso do Exchange no Intune|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Modela e fabrica meatadata para dispositivos gerenciados na conta|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Models and Manufactures manufactureadata for managed devices in the account|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da visão geral do dispositivo|
 
 ## <a name="relationships"></a>Relações
@@ -72,7 +72,8 @@ Veja a seguir uma representação JSON do recurso.
     "androidWorkProfileCount": 1024,
     "androidCorporateWorkProfileCount": 1024,
     "configMgrDeviceCount": 1024,
-    "aospUserlessCount": 1024
+    "aospUserlessCount": 1024,
+    "aospUserAssociatedCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

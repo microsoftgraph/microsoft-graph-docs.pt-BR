@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso workbookCommentReply
+title: Tipo de recurso workbookCommentReply
 description: Definição do tipo de recurso workbookCommentReply
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8206f2cef7996bd0abc64a1f99493b701c4730e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc25b02005e0f419fbb878005006f155f1f99e72
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079637"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159427"
 ---
-# <a name="workbookcommentreply-resource-type"></a>tipo de recurso workbookCommentReply
+# <a name="workbookcommentreply-resource-type"></a>Tipo de recurso workbookCommentReply
 
 Namespace: microsoft.graph
 
@@ -22,9 +22,9 @@ Representa uma resposta a um comentário do Excel.
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar workbookCommentReplies](../api/workbookcomment-list-replies.md) | coleção [workbookCommentReply](workbookcommentreply.md) | Recupere uma lista de objetos workbookcommentreply. |
-| [Obter workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Leia as propriedades e os relacionamentos do objeto workbookCommentReply. |
-| [Criar workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Criar um novo workbookCommentReply. |
+| [Listar workbookCommentReplies](../api/workbookcomment-list-replies.md) | [coleção workbookCommentReply](workbookcommentreply.md) | Recupere uma lista de objetos workbookcommentreply. |
+| [Obter workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Leia as propriedades e as relações do objeto workbookCommentReply. |
+| [Criar workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Crie uma nova workbookCommentReply. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -32,7 +32,7 @@ Representa uma resposta a um comentário do Excel.
 |:-------------|:------------|:------------|
 |content|Cadeia de caracteres|O conteúdo do comentário respondido.|
 |contentType|String|Indica o tipo do comentário respondido.|
-|id|Cadeia de caracteres|Representa o identificador de comentário. Somente leitura.|
+|id|String|Representa o identificador de comentário. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.workbookCommentReply",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

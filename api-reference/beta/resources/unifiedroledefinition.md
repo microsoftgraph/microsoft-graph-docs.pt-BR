@@ -1,49 +1,49 @@
 ---
-title: tipo de recurso unifiedRoleDefinition
-description: Uma definição de função unificada é uma coleção de permissões
+title: Tipo de recurso unifiedRoleDefinition
+description: Uma definição de função unificada é um conjunto de permissões
 localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b2ff58263a6fb28d41c79eaca721a791dab37992
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d146f215586533b9564d267c686a437f1314d54b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988750"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159826"
 ---
-# <a name="unifiedroledefinition-resource-type"></a>tipo de recurso unifiedRoleDefinition
+# <a name="unifiedroledefinition-resource-type"></a>Tipo de recurso unifiedRoleDefinition
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um unifiedRoleDefinition é uma coleção de permissões que lista as operações que podem ser executadas, como leitura, gravação e exclusão.
+Um unifiedRoleDefinition é uma coleção de permissões listando as operações que podem ser executadas, como ler, gravar e excluir.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar unifiedRoleDefinition](../api/rbacapplication-list-roledefinitions.md) | coleção [unifiedRoleDefinition](unifiedroledefinition.md) | Leia uma lista de objetos unifiedRoleDefinition e suas propriedades. |
-| [Obter unifiedRoleDefinition](../api/unifiedroledefinition-get.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Ler as propriedades de um objeto unifiedRoleDefinition. |
-| [Criar unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Criar um objeto unifiedRoleDefinition. |
-| [Atualizar unifiedRoleDefinition](../api/unifiedroledefinition-update.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Atualizar um objeto unifiedRoleDefinition. |
-| [Excluir unifiedRoleDefinition](../api/unifiedroledefinition-delete.md) | Nenhum | Excluir um objeto unifiedRoleDefinition. |
+| [Listar unifiedRoleDefinition](../api/rbacapplication-list-roledefinitions.md) | [Coleção unifiedRoleDefinition](unifiedroledefinition.md) | Leia uma lista de objetos unifiedRoleDefinition e suas propriedades. |
+| [Obter unifiedRoleDefinition](../api/unifiedroledefinition-get.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Leia as propriedades de um objeto unifiedRoleDefinition. |
+| [Criar unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Crie um objeto unifiedRoleDefinition. |
+| [Atualizar unifiedRoleDefinition](../api/unifiedroledefinition-update.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Atualize um objeto unifiedRoleDefinition. |
+| [Excluir unifiedRoleDefinition](../api/unifiedroledefinition-delete.md) | Nenhum(a) | Exclua um objeto unifiedRoleDefinition. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|String| A descrição para o unifiedRoleDefinition. Somente leitura quando isbuiltem for true. |
-|displayName|String| O nome de exibição do unifiedRoleDefinition. Somente leitura quando isbuiltem for true. Obrigatório.|
-|id|String| O identificador exclusivo para o unifiedRoleDefinition. Chave, não anulável, somente leitura. |
-|isBuiltIn|Booliano| Sinalizador que indica se o unifiedRoleDefinition é parte do conjunto padrão incluído no produto ou personalizado. Somente leitura. |
-|isEnabled|Boolean| Sinalizador que indica se a função está habilitada para atribuição. Se false, a função não estará disponível para atribuição. Somente leitura quando isbuiltem for true. |
-|resourceScopes|Coleção de cadeias de caracteres| Lista de escopos permissões concedidas pela definição de função aplicam-se ao. No momento, só há suporte para "/". Somente leitura quando isbuiltem for true. **NÃO USE. Isso será preterido em breve. Anexar escopo à atribuição de função** | 
-|rolePermissions|coleção [unifiedRolePermission](unifiedrolepermission.md)| Lista de permissões incluídas na função. Somente leitura quando isbuiltem for true. Obrigatório. |
-|templateId|String| Identificador de modelo personalizado que pode ser definido quando isbuiltem é falso. Esse identificador geralmente é usado se um precisa de um identificador para ser o mesmo em diferentes diretórios. Somente leitura quando isbuiltem for true. |
-|inheritsPermissionsFrom| coleção [unifiedRoleDefinition](unifiedroledefinition.md)| Coleção somente leitura de definições de função que a definição de função fornecida herda. Somente as funções internas do Azure AD dão suporte a esse atributo. |
-|versão|String| Indica a versão do unifiedRoleDefinition. Somente leitura quando isbuiltem for true.|
+|description|String| A descrição da unifiedRoleDefinition. Somente leitura quando isBuiltIn for verdadeiro. |
+|displayName|String| O nome de exibição para unifiedRoleDefinition. Somente leitura quando isBuiltIn for verdadeiro. Obrigatório.|
+|id|String| O identificador exclusivo da unifiedRoleDefinition. Chave, não anulada, Somente leitura. |
+|isBuiltIn|Booliano| Sinalizador indicando se unifiedRoleDefinition faz parte do conjunto padrão incluído no produto ou personalizado. Somente leitura. |
+|isEnabled|Booliano| Sinalizador indicando se a função está habilitada para atribuição. Se for falso, a função não estará disponível para atribuição. Somente leitura quando isBuiltIn for verdadeiro. |
+|resourceScopes|Coleção de cadeias de caracteres| A lista de permissões de escopos concedidas pela definição de função se aplica. Atualmente, só há suporte para "/". Somente leitura quando isBuiltIn for verdadeiro. **NÃO USE. Isso será preterido em breve. Anexar escopo à atribuição de função** | 
+|rolePermissions|[Coleção unifiedRolePermission](unifiedrolepermission.md)| Lista de permissões incluídas na função. Somente leitura quando isBuiltIn for verdadeiro. Obrigatório. |
+|templateId|String| Identificador de modelo personalizado que pode ser definido quando isBuiltIn é falso. Esse identificador é geralmente usado se um identificador precisa ser o mesmo em diretórios diferentes. Somente leitura quando isBuiltIn for verdadeiro. |
+|inheritsPermissionsFrom| [Coleção unifiedRoleDefinition](unifiedroledefinition.md)| Coleção somente leitura de definições de função que a definição de função determinada herda. Somente funções do Azure AD integrados suportam esse atributo. |
+|versão|String| Indica a versão do unifiedRoleDefinition. Somente leitura quando isBuiltIn for verdadeiro.|
 
 ## <a name="relationships"></a>Relações
 
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.unifiedRoleDefinition",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

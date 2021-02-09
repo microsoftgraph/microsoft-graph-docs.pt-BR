@@ -1,51 +1,51 @@
 ---
-title: tipo de recurso accessPackageCatalog
-description: Um catálogo de pacotes do Access é um contêiner para pacotes do Access.
+title: Tipo de recurso accessPackageCatalog
+description: Um catálogo de pacotes de acesso é um contêiner para pacotes de acesso.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3d8c93defc8d76fbee1efbc162677f21b4e7f827
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 97c683ca47f453efdcd267839b3a2239a400db66
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089851"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158622"
 ---
-# <a name="accesspackagecatalog-resource-type"></a>tipo de recurso accessPackageCatalog
+# <a name="accesspackagecatalog-resource-type"></a>Tipo de recurso accessPackageCatalog
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](entitlementmanagement-root.md), um catálogo de pacotes do Access é um contêiner para zero ou mais pacotes de acesso.  Um catálogo de pacotes do Access também pode ter recursos vinculados que são usados nesses pacotes de acesso para fornecer acesso.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um catálogo de pacotes de acesso é um contêiner para zero ou mais pacotes de acesso.  Um catálogo de pacotes de acesso também pode ter recursos vinculados que são usados nesses pacotes de acesso para fornecer acesso.
 
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar accessPackageCatalogs](../api/accesspackagecatalog-list.md) | coleção [accessPackageCatalog](accesspackagecatalog.md) | Recupere uma lista de objetos accesspackagecatalog. |
+| [Listar accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [coleção accessPackageCatalog](accesspackagecatalog.md) | Recupere uma lista de objetos accesspackagecatalog. |
 | [Criar accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Criar um novo objeto accessPackageCatalog. |
 | [Obter accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Ler propriedades e relações de um objeto accessPackageCatalog. |
-| [Atualizar accessPackageCatalog](../api/accesspackagecatalog-update.md)|Nenhum | Atualiza as propriedades de um objeto accessPackageCatalog. |
+| [Atualizar accessPackageCatalog](../api/accesspackagecatalog-update.md)|Nenhum(a) | Atualizar as propriedades de um objeto accessPackageCatalog. |
 | [Excluir accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Exclua accessPackageCatalog. |
-| [Listar recursos do accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresources.md) | coleção [accessPackageResource](accesspackageresource.md) | Recupere uma lista de objetos accessPackageResource em um catálogo. |
-| [Listar funções de recurso accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | coleção [accessPackageResourceRole](accesspackageresourcerole.md) | Recupere uma lista de objetos accessPackageResourceRole para recursos em um catálogo. |
+| [Listar recursos accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresources.md) | [Coleção accessPackageResource](accesspackageresource.md) | Recupere uma lista de objetos accessPackageResource em um catálogo. |
+| [Listar funções de recurso accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [Coleção accessPackageResourceRole](accesspackageresourcerole.md) | Recupere uma lista de objetos accessPackageResourceRole para recursos em um catálogo. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|catalogStatus|Cadeia de caracteres|Tem o valor `Published` se os pacotes de acesso estiverem disponíveis para gerenciamento.|
-|CatalogType|Cadeia de caracteres|Um `UserManaged` ou `ServiceDefault` . |
-|createdBy|Cadeia de caracteres|UPN do usuário que criou este recurso. Somente leitura.|
+|catalogStatus|String|Tem o valor `Published` se os pacotes de acesso estão disponíveis para gerenciamento.|
+|catalogType|String|Um ou `UserManaged` `ServiceDefault` . |
+|createdBy|Cadeia de caracteres|UPN do usuário que criou esse recurso. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|description|Cadeia de caracteres|A descrição do catálogo de pacotes do Access.|
-|displayName|Cadeia de caracteres|O nome de exibição do catálogo de pacotes do Access.|
+|description|String|A descrição do catálogo de pacotes de acesso.|
+|displayName|String|O nome de exibição do catálogo de pacotes de acesso.|
 |id|String| Somente leitura.|
 |isExternallyVisible|Boolean|Se os pacotes de acesso neste catálogo podem ser solicitados por usuários fora do locatário.|
-|modifiedBy|Cadeia de caracteres|O UPN do usuário que modificou este recurso pela última vez. Somente leitura.|
+|modifiedBy|String|O UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 
 
@@ -53,8 +53,8 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), um catál
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackages|coleção [accessPackage](accesspackage.md)| Os pacotes de acesso neste catálogo. Somente leitura. Anulável.|
-|accessPackageResources|coleção [accessPackageResource](accesspackageresource.md)| Somente leitura. Anulável.|
+|accessPackages|[coleção accessPackage](accesspackage.md)| Os pacotes de acesso neste catálogo. Somente leitura. Anulável.|
+|accessPackageResources|[Coleção accessPackageResource](accesspackageresource.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -66,7 +66,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageCatalog",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

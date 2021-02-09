@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 77cd878eb0861990dadf790f91fff774b0862bee
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c7e45b186e1ef7a3a96115f408cb5a0992e538fe
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136259"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159903"
 ---
 # <a name="credentialuserregistrationdetails-resource-type"></a>Tipo de recurso credentialUserRegistrationDetails
 
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.credentialUserRegistrationDetails",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

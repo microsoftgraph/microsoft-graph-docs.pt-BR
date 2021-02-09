@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso organizationSettings
-description: Contém configurações que se aplicam à organização ou aos objetos de usuário dentro dela.
+title: Tipo de recurso organizationSettings
+description: Contém configurações que são aplicáveis à organização ou aos objetos do usuário dentro dela.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: e95bae902b444735b87fa7b29e061bf9bf2629ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 105a57c7cb5827e9017df7494d32802ef7ac6fa5
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998471"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158321"
 ---
-# <a name="organizationsettings-resource-type"></a>tipo de recurso organizationSettings
+# <a name="organizationsettings-resource-type"></a>Tipo de recurso organizationSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém configurações que se aplicam à [organização](organization.md) ou que devem ser aplicadas a objetos de [usuário](user.md) em uma organização.
+Contém configurações que são aplicáveis à organização [ou](organization.md) que devem ser aplicadas a objetos [de](user.md) usuário dentro de uma organização.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Obter configurações da organização](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Leia o objeto de configurações da organização. |
-| [Criar profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Crie um novo **profileCardProperty** postando na coleção de objetos **profileCardProperty** . |
-| [Listar profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | coleção [profileCardProperty](profilecardproperty.md) | Obtenha uma coleção de objetos **profileCardProperty** . |
-| [Obter itemInsightsSettings](../api/iteminsightssettings-get.md) | [itemInsightsSettings](iteminsightssettings.md) | Obter as propriedades de um objeto **itemInsightsSettings** . |
-| [Atualizar itemInsightsSettings](../api/iteminsightssettings-update.md) | [itemInsightsSettings](iteminsightssettings.md) | Atualiza as propriedades do recurso **itemInsightsSettings** especificado. |
+| [Criar profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Crie um novo **profileCardProperty** postando na coleção de objetos **profileCardProperty.** |
+| [Listar profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | [Coleção profileCardProperty](profilecardproperty.md) | Obter uma **coleção de objetos profileCardProperty.** |
+| [Obter itemInsightsSettings](../api/iteminsightssettings-get.md) | [itemInsightsSettings](iteminsightssettings.md) | Obter as propriedades de um **objeto itemInsightsSettings** . |
+| [Atualizar itemInsightsSettings](../api/iteminsightssettings-update.md) | [itemInsightsSettings](iteminsightssettings.md) | Atualizar as propriedades do recurso **itemInsightsSettings** especificado. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -37,8 +37,8 @@ Nenhum.
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id |String| ID do objeto de configurações da organização. |
-|profileCardProperties|coleção [profileCardProperty](profilecardproperty.md)| Contém uma coleção de propriedades que um administrador definiu como visível no cartão de perfil do Microsoft 365. [Obter configurações da organização](../api/organizationsettings-get.md) retorna as propriedades configuradas para cartões de perfil para a organização.|
-|itemInsights|[itemInsightsSettings](iteminsightssettings.md)| Contém as propriedades que são configuradas por um administrador para a visibilidade das ideias derivadas do Microsoft Graph, entre um usuário e outros itens no Microsoft 365, como documentos ou sites. [Obtenha itemInsightsSettings](../api/iteminsightssettings-get.md) por meio dessa propriedade de navegação.|
+|profileCardProperties|[Coleção profileCardProperty](profilecardproperty.md)| Contém uma coleção das propriedades que um administrador definiu como visíveis no cartão de perfil do Microsoft 365. [Obter as configurações da organização](../api/organizationsettings-get.md) retorna as propriedades configuradas para cartões de perfil da organização.|
+|itemInsights|[itemInsightsSettings](iteminsightssettings.md)| Contém as propriedades configuradas por um administrador para a visibilidade das informações derivadas do Microsoft Graph, entre um usuário e outros itens no Microsoft 365, como documentos ou sites. [Obter itemInsightsSettings](../api/iteminsightssettings-get.md) por meio desta propriedade de navegação.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.organizationSettings",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
