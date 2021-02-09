@@ -413,7 +413,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -889,7 +889,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: Excluir de inclui
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: Exclusões de lista
+                          - name: Listar exclusões
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: Criar em exclusões
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -1103,7 +1103,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Obter uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-get.md
-          - name: Local
+          - name: Place
             items:
               - name: Place
                 href: resources/place.md
@@ -1164,7 +1164,7 @@ items:
                 items:
                   - name: Reproduzir prompt
                     href: api/call-playprompt.md
-                  - name: Resposta do registro
+                  - name: Resposta de registro
                     href: api/call-record.md
                   - name: Cancelar processamento de mídia
                     href: api/call-cancelmediaprocessing.md
@@ -3974,7 +3974,7 @@ items:
                             href: api/countrynamedlocation-update.md
                           - name: Excluir
                             href: api/countrynamedlocation-delete.md
-                      - name: Local nomeado pelo IP
+                      - name: Local nomeado por IP
                         items:
                           - name: Local nomeado por IP
                             href: resources/ipnamedlocation.md
@@ -4054,7 +4054,7 @@ items:
               - name: Política
                 href: resources/policy-overview.md
                 items:
-                  - name: Política de tempo de vida baseada em atividade
+                  - name: Política de tempo de tempo de atividade baseada em
                     href: resources/activitybasedtimeoutpolicy.md
                     items:
                       - name: Listar
@@ -4141,7 +4141,7 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
                       - name: Atualizar
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
-      - name: Email
+      - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -4820,6 +4820,19 @@ items:
                 href: api/site-unfollow.md
               - name: Listar sites seguidos
                 href: api/sites-list-followed.md
+              - name: Permissões
+                href: resources/permission.md
+                items:
+                  - name: Obter permissão de site
+                    href: api/site-get-permission.md
+                  - name: Listar permissões de site
+                    href: api/site-list-permissions.md
+                  - name: Criar permissões de site
+                    href: api/site-post-permissions.md
+                  - name: Atualizar permissão do site
+                    href: api/site-update-permission.md
+                  - name: Excluir permissão de site
+                    href: api/site-delete-permission.md
           - name: Listas
             href: resources/list.md
             items:
@@ -4925,7 +4938,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -5087,7 +5100,7 @@ items:
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
-              - name: Aplicativo em equipe
+              - name: Aplicativo na equipe
                 items:
                   - name: Listar aplicativos em equipe
                     href: api/team-list-installedapps.md
