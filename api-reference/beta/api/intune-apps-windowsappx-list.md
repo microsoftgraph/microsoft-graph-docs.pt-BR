@@ -1,26 +1,26 @@
 ---
 title: Listar windowsAppXs
-description: Listar Propriedades e relações dos objetos windowsAppX.
+description: Listar propriedades e relações dos objetos windowsAppX.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d1e5e7f5a3c65cf1e7698b77602f6a020e9a6b0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2aa4c0a00f6b7387fa1d869bd96f75b9ec561354
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49247213"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157096"
 ---
 # <a name="list-windowsappxs"></a>Listar windowsAppXs
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [windowsAppX](../resources/intune-apps-windowsappx.md) .
+Listar propriedades e relações dos [objetos windowsAppX.](../resources/intune-apps-windowsappx.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windowsAppX](../resources/intune-apps-windowsappx.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos windowsAppX](../resources/intune-apps-windowsappx.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1867
+Content-Length: 1921
 
 {
   "value": [
@@ -115,7 +115,9 @@ Content-Length: 1867
         "v10_1709": true,
         "v10_1803": true,
         "v10_1809": true,
-        "v10_1903": true
+        "v10_1903": true,
+        "v10_1909": true,
+        "v10_2004": true
       },
       "identityVersion": "Identity Version value"
     }

@@ -1,41 +1,41 @@
 ---
-title: tipo de recurso offerShiftRequest
-description: Representa o tipo de solicitação de mudança para oferecer uma mudança para outro usuário na equipe.
+title: Tipo de recurso offerShiftRequest
+description: Representa o tipo de solicitação de turno para oferecer uma mudança para outro usuário na equipe.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e7c41461848fab45f3d291b175e6c584f98326fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d1b26d7801a3eb4570104ff68b9037fd9c553a68
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021270"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156705"
 ---
-# <a name="offershiftrequest-resource-type"></a>tipo de recurso offerShiftRequest
+# <a name="offershiftrequest-resource-type"></a>Tipo de recurso offerShiftRequest
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o tipo de solicitação de mudança para oferecer uma mudança para outro usuário na equipe.
+Representa o tipo de solicitação de turno para oferecer uma mudança para outro usuário na equipe.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Criar](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Criar uma instância de um objeto offerShiftRequest. |
+| [Criar](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Crie uma instância de um objeto offerShiftRequest. |
 | [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e os relacionamentos do objeto offerShiftRequest. |
-| [Lista](../api/offershiftrequest-list.md) | Coleção de [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e as relações de todos os objetos offerShiftRequest de uma equipe. |
-|[Aprovar](../api/offershiftrequest-approve.md)|Nenhum|Aprovar um offerShiftRequest. |
-|[Aceito](../api/offershiftrequest-decline.md)|Nenhum|Recusar um offerShiftRequest. |
+| [Lista](../api/offershiftrequest-list.md) | Coleção de [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e as relações de todos os objetos offerShiftRequest em uma equipe. |
+|[Aprovar](../api/offershiftrequest-approve.md)|Nenhum(a)|Aprove uma ofertaShiftRequest. |
+|[Recusar](../api/offershiftrequest-decline.md)|Nenhum(a)|Recusar uma ofertaShiftRequest. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |recipientActionDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|recipientActionMessage|String| Mensagem personalizada enviada pelo destinatário da solicitação de mudança de oferta. |
+|recipientActionMessage|String| Mensagem personalizada enviada pelo destinatário da solicitação de turno de oferta. |
 |recipientUserId|String| ID de usuário do destinatário da solicitação de mudança de oferta.|
 |senderShiftId|String| ID de usuário do remetente da solicitação de mudança de oferta.|
 
@@ -52,8 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.offerShiftRequest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.offerShiftRequest"
 }-->
 
 ```json

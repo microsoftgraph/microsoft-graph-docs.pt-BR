@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso provisioningObjectSummary
-description: Representa uma ação executada pelo serviço de provisionamento do Azure AD e suas propriedades associadas.
+description: Representa uma ação executada pelo serviço de Provisionamento do Azure AD e suas propriedades associadas.
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: e51a3a5e184fae0c5c35e01b5a0b23494f63edc7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2b1add3f614fd05060df2dfc45b84a46f19dd134
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135370"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156347"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>Tipo de recurso provisioningObjectSummary
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.provisioningObjectSummary",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

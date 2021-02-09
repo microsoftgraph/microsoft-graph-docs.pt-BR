@@ -1,18 +1,18 @@
 ---
-title: atribuir ação
+title: Ação getComplianceSettingNonComplianceReport
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8c2332c0e0f69ef66dec0d945e8c9f3bb33f7f5
+ms.openlocfilehash: f0412c297209e004a99cb43af02955a0f43848fd
 ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156417"
+ms.locfileid: "50160171"
 ---
-# <a name="assign-action"></a>atribuir ação
+# <a name="getcompliancesettingnoncompliancereport-action"></a>Ação getComplianceSettingNonComplianceReport
 
 Namespace: microsoft.graph
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/deviceShellScripts/{deviceShellScriptId}/assign
+POST /deviceManagement/reports/getComplianceSettingNonComplianceReport
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,51 +53,60 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceManagementScriptGroupAssignments|[Coleção deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Ainda não documentado|
-|deviceManagementScriptAssignments|[Coleção deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Ainda não documentado|
+|name|String|Ainda não documentado|
+|select|String collection|Ainda não documentado|
+|search|String|Ainda não documentado|
+|groupBy|String collection|Ainda não documentado|
+|orderBy|String collection|Ainda não documentado|
+|skip|Int32|Ainda não documentado|
+|top|Int32|Ainda não documentado|
+|sessionId|String|Ainda não documentado|
+|filter|String|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, essa ação retornará `200 OK` um código de resposta e um Stream no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/assign
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getComplianceSettingNonComplianceReport
 
 Content-type: application/json
-Content-length: 781
+Content-length: 278
 
 {
-  "deviceManagementScriptGroupAssignments": [
-    {
-      "@odata.type": "#microsoft.graph.deviceManagementScriptGroupAssignment",
-      "id": "ecd2357d-357d-ecd2-7d35-d2ec7d35d2ec",
-      "targetGroupId": "Target Group Id value"
-    }
+  "name": "Name value",
+  "select": [
+    "Select value"
   ],
-  "deviceManagementScriptAssignments": [
-    {
-      "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
-      "id": "a87a601e-601e-a87a-1e60-7aa81e607aa8",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
-      }
-    }
-  ]
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
 }
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 111
+
+{
+  "value": "Z2V0Q29tcGxpYW5jZVNldHRpbmdOb25Db21wbGlhbmNlUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDU0NDgzMTA0NQ=="
+}
 ```
 
 

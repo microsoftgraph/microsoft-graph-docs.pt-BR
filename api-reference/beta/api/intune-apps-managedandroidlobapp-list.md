@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f555d00e2948f83d687fc95ec26054b9111d527a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7954b7b7204de0690de4415a21dec83a3836bc76
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49250867"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157299"
 ---
 # <a name="list-managedandroidlobapps"></a>Listar managedAndroidLobApps
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1969
+Content-Length: 2017
 
 {
   "value": [
@@ -119,7 +119,9 @@ Content-Length: 1969
         "v7_1": true,
         "v8_0": true,
         "v8_1": true,
-        "v9_0": true
+        "v9_0": true,
+        "v10_0": true,
+        "v11_0": true
       },
       "versionName": "Version Name value",
       "versionCode": "Version Code value",

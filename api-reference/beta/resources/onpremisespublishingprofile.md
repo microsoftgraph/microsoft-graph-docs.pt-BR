@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8e74374baa397c292d323dc0520833a7318cbe79
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a7dc65f0640d2bfde9a46595b04fc24fc7512475
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134894"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156704"
 ---
 # <a name="onpremisespublishingprofile-resource-type"></a>Tipo de recurso onPremisesPublishingProfile
 
@@ -28,7 +28,7 @@ Vários serviços do Azure (por exemplo, a Autenticação de Passagem do Azure A
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Obter onPremisesPublishingProfile](../api/onpremisespublishingprofile-get.md) | [onPremisesPublishingProfile](onpremisespublishingprofile.md) | Leia as propriedades e os relacionamentos de um **objeto onPremisesPublishingProfile.** |
-| [Atualizar onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | Nenhuma | Atualize [um objeto onPremisesPublishingProfile.](onpremisespublishingprofile.md) |
+| [Atualizar onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | Nenhum(a) | Atualize [um objeto onPremisesPublishingProfile.](onpremisespublishingprofile.md) |
 
 ## <a name="properties"></a>Propriedades
 
@@ -58,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.onPremisesPublishingProfile",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

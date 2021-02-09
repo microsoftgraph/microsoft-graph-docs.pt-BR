@@ -1,18 +1,18 @@
 ---
-title: Listar mobileAppDependencies
-description: Listar propriedades e relações dos objetos mobileAppDependency.
+title: Listar unmanagedDeviceDiscoveryTasks
+description: Listar propriedades e relações dos objetos unmanagedDeviceDiscoveryTask.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef3b75c8d3e30fda7483eaee77ac58630d49c5d7
+ms.openlocfilehash: 32eacd5203b4033f4c38b4253ef1bb4f8d1084ce
 ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157201"
+ms.locfileid: "50160138"
 ---
-# <a name="list-mobileappdependencies"></a>Listar mobileAppDependencies
+# <a name="list-unmanageddevicediscoverytasks"></a>Listar unmanagedDeviceDiscoveryTasks
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos objetos [mobileAppDependency.](../resources/intune-apps-mobileappdependency.md)
+Listar propriedades e relações dos [objetos unmanagedDeviceDiscoveryTask.](../resources/intune-partnerintegration-unmanageddevicediscoverytask.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships
+GET /deviceAppManagement/deviceAppManagementTasks
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -50,14 +50,14 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos mobileAppDependency](../resources/intune-apps-mobileappdependency.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [unmanagedDeviceDiscoveryTask](../resources/intune-partnerintegration-unmanageddevicediscoverytask.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships
+GET https://graph.microsoft.com/beta/deviceAppManagement/deviceAppManagementTasks
 ```
 
 ### <a name="response"></a>Resposta
@@ -65,21 +65,39 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 494
+Content-Length: 1214
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.mobileAppDependency",
-      "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
-      "targetId": "Target Id value",
-      "targetDisplayName": "Target Display Name value",
-      "targetDisplayVersion": "Target Display Version value",
-      "targetPublisher": "Target Publisher value",
-      "targetType": "parent",
-      "dependencyType": "autoInstall",
-      "dependentAppCount": 1,
-      "dependsOnAppCount": 1
+      "@odata.type": "#microsoft.graph.unmanagedDeviceDiscoveryTask",
+      "id": "6caa2ba0-2ba0-6caa-a02b-aa6ca02baa6c",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "dueDateTime": "2017-01-01T00:02:18.1994089-08:00",
+      "category": "advancedThreatProtection",
+      "priority": "high",
+      "creator": "Creator value",
+      "creatorNotes": "Creator Notes value",
+      "assignedTo": "Assigned To value",
+      "status": "pending",
+      "unmanagedDevices": [
+        {
+          "@odata.type": "microsoft.graph.unmanagedDevice",
+          "os": "Os value",
+          "osVersion": "Os Version value",
+          "ipAddress": "Ip Address value",
+          "deviceName": "Device Name value",
+          "macAddress": "Mac Address value",
+          "domain": "Domain value",
+          "manufacturer": "Manufacturer value",
+          "model": "Model value",
+          "location": "Location value",
+          "lastLoggedOnUser": "Last Logged On User value",
+          "lastSeenDateTime": "2017-01-01T00:02:00.1006212-08:00"
+        }
+      ]
     }
   ]
 }

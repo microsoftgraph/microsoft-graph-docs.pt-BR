@@ -1,15 +1,15 @@
 ---
-title: Gerenciar aplicativos móveis com o Microsoft Intune-API do Microsoft Graph
-description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) relacionadas ao gerenciamento de aplicativo móvel (MAM) para uma organização de locatário.
+title: Gerenciar aplicativos móveis com o Microsoft Intune - API do Microsoft Graph
+description: Lista a API do Microsoft Graph para pontos de extremidade do Intune (REST) relacionadas ao gerenciamento de aplicativo móvel (MAM) para uma organização locatária.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 62a3b0e9751acaa552dc1deed037bb3356cfce0b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9ccf992c534e26b9f24e3fd0f3e56d08b3603f90
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702387"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155913"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -21,14 +21,14 @@ Namespace: microsoft.graph
 
 As políticas de proteção de aplicativos do Microsoft Intune ajudam a proteger os dados da empresa e evitar a perda de dados.
 
-Use as políticas de proteção de aplicativos do Intune para ajudar a proteger os dados da sua empresa. Como as políticas de proteção de aplicativos do Intune podem ser usadas independentemente de qualquer solução de gerenciamento de dispositivo móvel (MDM), você pode usá-la para proteger os dados da sua empresa com ou sem o registro de dispositivos em uma solução de gerenciamento de dispositivo. Implementando as políticas de nível de aplicativo, é possível restringir o acesso aos recursos da empresa e manter os dados dentro do âmbito do seu departamento de TI.
+Use as políticas de proteção de aplicativos do Intune para ajudar a proteger os dados da sua empresa. Como as políticas de proteção de aplicativo do Intune podem ser usadas independentemente de qualquer solução de gerenciamento de dispositivo móvel (MDM), você pode usá-la para proteger os dados da empresa com ou sem registrar dispositivos em uma solução de gerenciamento de dispositivos. Implementando as políticas de nível de aplicativo, é possível restringir o acesso aos recursos da empresa e manter os dados dentro do âmbito do seu departamento de TI.
 
 Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de proteção de aplicativos no Intune:
 
 - [Registro de aplicativo gerenciado Android](intune-mam-androidmanagedappregistration.md)
 - [Tipo de verificação de aplicativos de rede de segurança em aplicativo gerenciado para Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Tipo de atestado de dispositivo de rede de segurança do aplicativo gerenciado para Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
-- [Tipo de avaliação net de segurança de aplicativos gerenciados por Android](intune-mam-androidmanagedappsafetynetevaluationtype.md)
+- [Tipo de avaliação da rede de segurança do aplicativo gerenciado Android](intune-mam-androidmanagedappsafetynetevaluationtype.md)
 - [Identificador de aplicativo móvel Android](intune-mam-androidmobileappidentifier.md)
 - [Nível de gerenciamento de aplicativo](intune-mam-appmanagementlevel.md)
 - [Tipo de aplicativo](intune-wip-applicationtype.md)
@@ -38,10 +38,11 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Registro de aplicativo gerenciado iOS](intune-mam-iosmanagedappregistration.md)
 - [Identificador de aplicativo móvel iOS](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
+- [Identificador de aplicativo do Mac](intune-mam-macappidentifier.md)
 - [Nível de compartilhamento de área de transferência do aplicativo gerenciado](intune-mam-managedappclipboardsharinglevel.md)
 - [Configuração de aplicativo gerenciado](intune-mam-managedappconfiguration.md)
 - [Tipo de criptografia de dados do aplicativo gerenciado](intune-mam-managedappdataencryptiontype.md)
-- [Localização da inclusão de dados do aplicativo gerenciado](intune-mam-managedappdataingestionlocation.md)
+- [Local de ingestão de dados de aplicativo gerenciado](intune-mam-managedappdataingestionlocation.md)
 - [Local de armazenamento de dados do aplicativo gerenciado](intune-mam-managedappdatastoragelocation.md)
 - [Nível de transferência de dados do aplicativo gerenciado](intune-mam-managedappdatatransferlevel.md)
 - [Nível de ameaça do dispositivo de aplicativo gerenciado](intune-mam-managedappdevicethreatlevel.md)
@@ -64,6 +65,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Identificador de aplicativo móvel](intune-mam-mobileappidentifier.md)
 - [Atribuição de política de proteção de aplicativo gerenciado direcionado](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Proteção de aplicativo gerenciado direcionado](intune-mam-targetedmanagedappprotection.md)
+- [Identificador de aplicativo do Windows](intune-mam-windowsappidentifier.md)
 - [Proteção de informações do Windows](intune-mam-windowsinformationprotection.md)
 - [Arquivo de proteção de informações do Windows](intune-mam-windowsinformationprotectionapp.md)
 - [Resumo de aprendizagem de aplicativos da proteção de informações do Windows](intune-wip-windowsinformationprotectionapplearningsummary.md)

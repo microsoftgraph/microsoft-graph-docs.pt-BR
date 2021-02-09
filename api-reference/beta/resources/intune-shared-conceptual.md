@@ -1,15 +1,15 @@
 ---
-title: Recursos compartilhados no Microsoft Intune-API do Microsoft Graph
-description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que dão suporte a vários fluxos de trabalho para uma organização de locatário.
+title: Recursos compartilhados no Microsoft Intune - API do Microsoft Graph
+description: Lista a API do Microsoft Graph para pontos de extremidade do Intune (REST) que suportam vários fluxos de trabalho para uma organização locatária.
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 80528f0ad7ab587e6945543e03225d112d958604
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 07f408cfc4157dd4ad415a71b19367ce0ce6ddfa
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49271930"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156732"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
@@ -19,23 +19,25 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Esses pontos de extremidade são usados em vários fluxos de trabalho do Microsoft Graph API para o Intune.  A intenção, finalidade e permissões necessárias para usar um determinado recurso varia de acordo com o fluxo de trabalho específico e o contexto da chamada subjacente.  Além disso, determinados métodos, propriedades e ações têm suporte apenas para fluxos de trabalho específicos.
+Esses pontos de extremidade são usados em várias APIs do Microsoft Graph para fluxos de trabalho do Intune.  A intenção, a finalidade e as permissões necessárias para usar um determinado recurso variam de acordo com o fluxo de trabalho específico e o contexto da chamada subjacente.  Além disso, determinados métodos, propriedades e ações são suportados apenas para fluxos de trabalho específicos.
 
-Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho do Intune:
+Os seguintes recursos do Graph são compartilhados entre fluxos de trabalho do Intune:
 
 - [Estado da ação](intune-shared-actionstate.md)
 - [Destino de atribuição de todos os dispositivos](intune-shared-alldevicesassignmenttarget.md)
 - [Destino de atribuição de todos os usuários licenciados](intune-shared-alllicensedusersassignmenttarget.md)
+- [Tipo de pacote VPN always on enterprise do Android](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
 - [Proteção de aplicativo gerenciado Android](intune-shared-androidmanagedappprotection.md)
-- [Configurações de atribuição de aplicativo repositório gerenciado do Android](intune-shared-androidmanagedstoreappassignmentsettings.md)
+- [Configurações de atribuição de aplicativo do armazenamento gerenciado Android](intune-shared-androidmanagedstoreappassignmentsettings.md)
 - [Armazenamento de destino de certificados](intune-shared-certificatedestinationstore.md)
 - [Repositório de certificados](intune-shared-certificatestore.md)
 - [Escala de período de validade do certificado](intune-shared-certificatevalidityperiodscale.md)
 - [Ação do portal da empresa](intune-shared-companyportalaction.md)
 - [Ação bloqueada do portal da empresa](intune-shared-companyportalblockedaction.md)
 - [Status de conformidade](intune-shared-compliancestatus.md)
+- [Destino de atribuição de coleção do Gerenciador de Configurações](intune-shared-configurationmanagercollectionassignmenttarget.md)
 - [Tipo de filtro de atribuição de gerenciamento de dispositivos e aplicativos](intune-shared-deviceandappmanagementassignmentfiltertype.md)
-- [Origem da atribuição de gerenciamento de dispositivos e aplicativos](intune-shared-deviceandappmanagementassignmentsource.md)
+- [Fonte de atribuição de gerenciamento de dispositivos e aplicativos](intune-shared-deviceandappmanagementassignmentsource.md)
 - [Destino de atribuição de gerenciamento de aplicativo e dispositivo](intune-shared-deviceandappmanagementassignmenttarget.md)
 - [Gerenciamento de aplicativos de dispositivo](intune-shared-deviceappmanagement.md)
 - [Categoria do dispositivo](intune-shared-devicecategory.md)
@@ -44,13 +46,13 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Configuração de registro do dispositivo](intune-shared-deviceenrollmentconfiguration.md)
 - [Tipo de registro de dispositivo](intune-shared-deviceenrollmenttype.md)
 - [Gerenciamento de dispositivos](intune-shared-devicemanagement.md)
-- [Configurações de credenciais derivadas de gerenciamento de dispositivos](intune-shared-devicemanagementderivedcredentialsettings.md)
+- [Configurações de credencial derivadas de gerenciamento de dispositivos](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Relatórios de gerenciamento de dispositivos](intune-shared-devicemanagementreports.md)
 - [Script de gerenciamento de dispositivo](intune-shared-devicemanagementscript.md)
 - [Tipo de plataforma do dispositivo](intune-shared-deviceplatformtype.md)
 - [Tipo de dispositivo](intune-shared-devicetype.md)
 - [Habilitação](intune-shared-enablement.md)
-- [Opções de disponibilidade do registro](intune-shared-enrollmentavailabilityoptions.md)
+- [Opções de disponibilidade de registro](intune-shared-enrollmentavailabilityoptions.md)
 - [Estado de registro](intune-shared-enrollmentstate.md)
 - [Destino de atribuição de grupos de exclusão](intune-shared-exclusiongroupassignmenttarget.md)
 - [Uso estendido de chave](intune-shared-extendedkeyusage.md)
@@ -69,7 +71,9 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Opção de provedor de armazenamento de chaves](intune-shared-keystorageprovideroption.md)
 - [Usos de chave](intune-shared-keyusages.md)
 - [Par chave/valor](intune-shared-keyvaluepair.md)
+- [Configurações de atribuição do aplicativo LOB do macOS](intune-shared-macoslobappassignmentsettings.md)
 - [Configurações de atribuição do aplicativo VPP do macOS](intune-shared-macosvppappassignmentsettings.md)
+- [Dispositivo gerenciado](intune-shared-manageddevice.md)
 - [Tipo de proprietário do dispositivo gerenciado](intune-shared-manageddeviceownertype.md)
 - [Tipo de agente de gerenciamento](intune-shared-managementagenttype.md)
 - [Política de proteção de informações do Windows MDM](intune-shared-mdmwindowsinformationprotectionpolicy.md)
@@ -89,7 +93,7 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Executar como tipo de conta](intune-shared-runasaccounttype.md)
 - [Estado da execução](intune-shared-runstate.md)
 - [Opções de geração do estado da interface do usuário salvas](intune-shared-saveduistategenerationoptions.md)
-- [Tipo de fonte de configuração](intune-shared-settingsourcetype.md)
+- [Configurando o tipo de fonte](intune-shared-settingsourcetype.md)
 - [Tipo de nome alternativo da entidade](intune-shared-subjectalternativenametype.md)
 - [Configuração direcionada de aplicativo gerenciado](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
@@ -97,9 +101,9 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Tipo de conta do token VPP](intune-shared-vpptokenaccounttype.md)
 - [Causa da falha da ação do token VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Configurações de atribuição do aplicativo LOB do Win32](intune-shared-win32lobappassignmentsettings.md)
-- [Prioridade de otimização de entrega do aplicativo LOB Win32](intune-shared-win32lobappdeliveryoptimizationpriority.md)
+- [Prioridade de otimização de entrega de aplicativo LOB do Win32](intune-shared-win32lobappdeliveryoptimizationpriority.md)
 - [Notificação de aplicativo LOB do Win32](intune-shared-win32lobappnotification.md)
-- [Configurações de reinicialização de aplicativos LOB do Win32](intune-shared-win32lobapprestartsettings.md)
+- [Configurações de reinicialização do aplicativo LOB do Win32](intune-shared-win32lobapprestartsettings.md)
 - [Configurações de atribuição do aplicativo Windows AppX](intune-shared-windowsappxappassignmentsettings.md)
 - [Perfil de implantação do Windows Autopilot](intune-shared-windowsautopilotdeploymentprofile.md)
 - [Configuração de ingresso no domínio do Windows](intune-shared-windowsdomainjoinconfiguration.md)

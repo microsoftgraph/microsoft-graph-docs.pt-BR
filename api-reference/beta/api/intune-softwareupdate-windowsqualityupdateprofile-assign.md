@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 932480f87b1680b57d9fb5448eee5aff3aaafb06
+ms.openlocfilehash: 536e2066c0f3abe54376c404b8189b3324e32229
 ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155990"
+ms.locfileid: "50160118"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/assign
+POST /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfileId}/assign
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,34 +53,32 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|[Coleção groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|Ainda não documentado|
+|assignments|[Coleção windowsQualityUpdateProfileAssignment](../resources/intune-softwareupdate-windowsqualityupdateprofileassignment.md)|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um código de resposta e uma `200 OK` [coleção groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) no corpo da resposta.
+Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/assign
+POST https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfileId}/assign
 
 Content-type: application/json
-Content-length: 581
+Content-length: 460
 
 {
   "assignments": [
     {
-      "@odata.type": "#microsoft.graph.groupPolicyConfigurationAssignment",
-      "id": "2a4161e9-61e9-2a41-e961-412ae961412a",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "@odata.type": "#microsoft.graph.windowsQualityUpdateProfileAssignment",
+      "id": "0c3a8422-8422-0c3a-2284-3a0c22843a0c",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "deviceAndAppManagementAssignmentFilterType": "include"
       }
     }
   ]
@@ -90,25 +88,7 @@ Content-length: 581
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 575
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.groupPolicyConfigurationAssignment",
-      "id": "2a4161e9-61e9-2a41-e961-412ae961412a",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
-      }
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 
