@@ -1,22 +1,21 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 468bc1b79b4f4d6b22cbcb58b50f3f3b3f7d6bdc
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 2c2bbd8a979c9322adc5f1e5613ab45b7fdb7b19
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523944"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50179440"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-OrganizationalBrandingLocalization organizationalBrandingLocalization = new OrganizationalBrandingLocalization();
-organizationalBrandingLocalization.backgroundColor = "#00000F";
-organizationalBrandingLocalization.signInPageText = "fr";
+OrganizationalBranding organizationalBranding = new OrganizationalBranding();
+organizationalBranding.backgroundColor = "#FFFF33";
 
-graphClient.organization("d69179bf-f4a4-41a9-a9de-249c0f2efb1d").branding().localizations("fr")
+graphClient.organization("d69179bf-f4a4-41a9-a9de-249c0f2efb1d").branding()
     .buildRequest()
-    .put(organizationalBrandingLocalization);
+    .put(organizationalBranding);
 
 ```
