@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 21e08be70c3836aa6ffcf60bfc1b174618ee27ba
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: e2cabd6f6c68b7574fbce785bc4ccb08884084f6
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41496801"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50179269"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/drive/items/{id}/workbook/names"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/profile/names"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
@@ -20,7 +20,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
         NSError *jsonError = nil;
         MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphWorkbookNamedItem *workbookNamedItem = [[MSGraphWorkbookNamedItem alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphPersonName *personName = [[MSGraphPersonName alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 
