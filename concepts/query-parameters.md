@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 630348d75f566cbfe82dee987a9d20d4f59f0190
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: 0f50886cb9fffe1dee51be3a751bda5936011cb7
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364114"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176630"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -54,7 +54,7 @@ Os seguintes recursos OData 4.0 são segmentos de URL, não parâmetros de consu
 
 | Nome                     | Descrição | Exemplo 
 |:-------------------------|:------------|:---------|
-| [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | Atualiza a associação de entidades a uma coleção. | `POST /groups/{id}/members/$ref` |
+| [$ref](/graph/api/group-post-members) | Atualiza a associação de entidades a uma coleção. | `POST /groups/{id}/members/$ref` |
 | [$value](/graph/api/profilephoto-get) | Recupera ou atualiza o valor binário de um item. | `GET /me/photo/$value` |
 
 ## <a name="encoding-query-parameters"></a>Codificação de parâmetros da consulta
@@ -94,13 +94,13 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [Experimente o Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
-O parâmetro de consulta `$count` é compatível com esses conjuntos de recursos e suas relações, derivadas do [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
-- [application](/graph/api/resources/application?view=graph-rest-beta)
-- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
-- [device](/graph/api/resources/device?view=graph-rest-beta)
-- [group](/graph/api/resources/group?view=graph-rest-beta)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
-- [users](/graph/api/resources/user?view=graph-rest-beta).
+O parâmetro de consulta `$count` é compatível com esses conjuntos de recursos e suas relações, derivadas do [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta&preserve-view=true):
+- [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)
+- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
+- [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true)
+- [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)
+- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
+- [users](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="expand-parameter"></a>parâmetro expand
 
@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 > **Observação:** nem todas as relações e recursos dão suporte ao parâmetro de consulta `$expand`. Por exemplo, você pode expandir as relações **directReports**, **manager** e **memberOf** em um usuário, mas não pode expandir suas relações **events**, **messages** ou **photo**. Nem todos os recursos ou relações dão suporte ao uso de `$select` em itens expandidos. 
 > 
-> Com recursos do Azure AD derivados de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), como [user](/graph/api/resources/user?view=graph-rest-1.0) e [group](/graph/api/resources/group?view=graph-rest-1.0), `$expand` só há suporte para `beta`, e normalmente são retornados no máximo 20 itens para a relação expandida.
+> Com recursos do Azure AD derivados de [directoryObject](/graph/api/resources/directoryobject), como [user](/graph/api/resources/user) e [group](/graph/api/resources/group), `$expand` só há suporte para `beta`, e normalmente são retornados no máximo 20 itens para a relação expandida.
 
 ## <a name="filter-parameter"></a>parâmetro filter
 
@@ -215,7 +215,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 [Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
-> **Observação:** quando você especifica $filter, o servidor deduz uma ordem de classificação para os resultados. Se você usar `$orderby` e `$filter` juntos para receber mensagens, como o servidor sempre infere uma ordem de classificação para os resultados de `$filter`, você deve [especificar propriedades de determinadas maneiras](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query).
+> **Observação:** quando você especifica $filter, o servidor deduz uma ordem de classificação para os resultados. Se você usar `$orderby` e `$filter` juntos para receber mensagens, como o servidor sempre infere uma ordem de classificação para os resultados de `$filter`, você deve [especificar propriedades de determinadas maneiras](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query).
 
 
 O exemplo a seguir mostra uma consulta filtrada pelas propriedades **subject** e **priority** e classificadas pelas propriedades **subject**, **priority** e **receivedDateTime** em ordem decrescente.
@@ -226,21 +226,21 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 [Experimente o Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
-> **Observação:** Combinar `$orderby` e parâmetros de consulta `$filter` é suportado no ponto de extremidade beta para os seguintes recursos do Microsoft Azure Active Directory e suas relações que derivam de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
+> **Observação:** Combinar `$orderby` e parâmetros de consulta `$filter` é suportado no ponto de extremidade beta para os seguintes recursos do Microsoft Azure Active Directory e suas relações que derivam de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta&preserve-view=true):
 >
->- [aplicativo](/graph/api/resources/application?view=graph-rest-beta)
->- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
->- [device](/graph/api/resources/device?view=graph-rest-beta)
->- [group](/graph/api/resources/group?view=graph-rest-beta)
->- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
->- [user](/graph/api/resources/user?view=graph-rest-beta)
+>- [aplicativo](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)
+>- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
+>- [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true)
+>- [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)
+>- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
+>- [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)
 >
 > Para usar o `$orderby` e o `$filter` em conjunto, você precisa:
 >
 > - Adicionar `$count=true` aos parâmetros de consulta
 > - Adicionar `ConsistencyLevel: eventual` ao cabeçalho de solicitação
 >
-> Confira [parâmetros opcionais de consulta de usuário](/graph/api/user-list?view=graph-rest-beta&tabs=http#optional-query-parameters) para obter mais informações.
+> Confira [parâmetros opcionais de consulta de usuário](/graph/api/user-list?view=graph-rest-beta&preserve-view=true#optional-query-parameters) para obter mais informações.
 
 ## <a name="search-parameter"></a>parâmetro search
 
@@ -294,7 +294,7 @@ Para saber mais sobre as propriedades de email pesquisáveis, KQL como a sintaxe
 
 Você pode usar a API de Pessoas do Microsoft Graph para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. A API de Pessoas é compatível com o parâmetro de consulta `$search`. Uma solicitação de `$search` retorna até 250 resultados.
 
-As pesquisas de pessoas ocorrem nas propriedades **displayName** e **emailAddress** do recurso [person](/graph/api/resources/person?view=graph-rest-1.0).
+As pesquisas de pessoas ocorrem nas propriedades **displayName** e **emailAddress** do recurso [person](/graph/api/resources/person).
 
 A seguinte solicitação faz uma pesquisa por uma pessoa chamada "Clara Barbosa" nas propriedades **displayName** e **emailAddress** em todos os indivíduos no conjunto de **Pessoas** do usuário conectado. Como uma pessoa denominada "Clara Barbosa" é relevante para o usuário conectado, as informações para "Clara Barbosa" são retornadas.
 
@@ -355,12 +355,12 @@ Saiba mais sobre a API de Pessoas em [Obter informações sobre pessoas relevant
 
 Você pode usar um parâmetro de consulta de `$search` para filtrar resultados usando a geração de tokens. A pesquisa tokenizada funciona extraindo palavras da cadeia de caracteres de entrada e de saída, usando espaços, números, uso de maiúsculas/minúsculas e símbolos para separar as palavras, da seguinte maneira:
 
-* **Espaços**: `hello world` => `hello`, `world`
-* **Uso de maiúsculas/minúsculas**⁽¹⁾: `HelloWorld` ou `helloWORLD` => `hello`, `world`
-* **Símbolos**⁽²⁾: `hello.world` => `hello`, `.`, `world`, `helloworld`
-* **Números**: `hello123world` => `hello`, `123`, `world`
+* **Espaços**: `hello world` => `hello`, `world`
+* **Caixa diferente**⁽¹⁾: `HelloWorld` ou `helloWORLD` => `hello`, `world`
+* **Símbolos**⁽²⁾: `hello.world` => `hello`, `.`,`world`, `helloworld`
+* **Números**: `hello123world` => `hello`,`123`, `world`
 
-⁽¹⁾ Atualmente, a geração de tokens só funciona quando a letra está mudando de minúscula para maiúscula, portanto  `HELLOworld`, é considerada um único token:  `helloworld`e `HelloWORld` são dois tokens: `hello`, `world`. ⁽²⁾ A lógica da geração de tokens também combina palavras que são separadas somente por símbolos; por exemplo, pesquisar por `helloworld`  encontrará `hello-world` e `hello.world`.
+⁽¹⁾ Atualmente, a tokenização só funciona quando a caixa está mudando de minúsculas para maiúsculas, portanto, `HELLOworld` é considerada um único token: `helloworld`, e `HelloWORld` tem dois tokens: `hello`, `world`. ⁽²⁾ A lógica de tokenização também combina palavras que são separadas apenas por símbolos; por exemplo, pesquisar por `helloworld` irá localizar `hello-world` e `hello.world`.
 
 > **Observação**: após a geração de tokens, os tokens são combinados independentemente da capitalização original e são combinados em qualquer ordem.
 > O parâmetro de consulta de `$search` em coleções de objetos de diretório **requer** um cabeçalho de solicitação especial: `ConsistencyLevel: eventual`.
@@ -410,7 +410,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 > **Importante:** Em geral, recomendamos que você use `$select` para limitar as propriedades retornadas por uma consulta àqueles exigidas pelo aplicativo. Isso se aplica particularmente a consultas com o potencial de retornar um conjunto de resultados amplo. Limitar as propriedades retornadas em cada linha reduzirá a carga de rede e ajudará a melhorar o desempenho do aplicativo.
 >
-> No `v1.0`, alguns recursos do Azure AD que derivam de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), como [usuário](/graph/api/resources/user?view=graph-rest-1.0) e [grupo](/graph/api/resources/group?view=graph-rest-1.0), retornam um subconjunto limitado padrão de propriedades em leituras. Para esses recursos, você deve usar `$select` para retornar propriedades fora do conjunto padrão.  
+> No `v1.0`, alguns recursos do Azure AD que derivam de [directoryObject](/graph/api/resources/directoryobject), como [usuário](/graph/api/resources/user) e [grupo](/graph/api/resources/group), retornam um subconjunto limitado padrão de propriedades em leituras. Para esses recursos, você deve usar `$select` para retornar propriedades fora do conjunto padrão.  
 
 ## <a name="skip-parameter"></a>parâmetro skip
 
@@ -435,9 +435,9 @@ Use o parâmetro de consulta `$top` para especificar o tamanho de página do con
 
 Se restarem mais itens no conjunto de resultados, o corpo da resposta conterá um parâmetro `@odata.nextLink`. Esse parâmetro contém uma URL que você pode usar para obter a próxima página de resultados. Para saber mais, confira [Paginação](./paging.md). 
 
-O $top aceita um valor mínimo de 1 e um valor máximo de 999 (inclusive).  
+O valor mínimo de $top é 1 e o máximo depende da API correspondente.  
 
-Por exemplo, a solicitação a seguir retorna as primeiras cinco mensagens na caixa de correio do usuário:
+Por exemplo, a seguinte solicitação de [lista de mensagens](/graph/api/user-list-messages) retorna as cinco primeiras mensagens na caixa de correio do usuário:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5

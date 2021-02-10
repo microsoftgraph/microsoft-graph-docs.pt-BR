@@ -6,12 +6,12 @@ description: O recurso do site fornece metadados e relações para um site do Sh
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 43e321ef3b04124095257a6bf6b9d218ac080a3d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f351ee2a9fe107ede3317a46789810ae2bf24b33
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086442"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161366"
 ---
 # <a name="site-resource"></a>Recurso do site
 
@@ -33,6 +33,11 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Seguir site][]          | coleção de sites | Seguir um ou vários sites de usuário.
 | [Deixar de seguir site][]        | coleção de sites | Seguir um ou vários sites de usuário.
 | [Listar sites seguidos][]  | coleção de sites | Liste os sites que foram seguidos pelo usuário conectado.
+| [Obter permissão][]             | Obter /sites/{site-id}/permissions/{permission-id}
+| [Listar permissões][]           | Obter /sites/{site-id}/permissions
+| [Criar permissões][]         | Postar /sites/{site-id}/permissions
+| [Excluir permissão][]         | Excluir /sites/{site-id}/permissions/{permission-id}
+| [Atualizar permissão][]         | PATCH /sites/{site-id}/permissions/{permission-id}
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -45,6 +50,11 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 [Seguir site]: ../api/site-follow.md
 [Deixar de seguir site]: ../api/site-unfollow.md
 [Listar sites seguidos]: ../api/sites-list-followed.md
+[Obter permissão]: ../api/site-get-permission.md
+[Listar permissões]: ../api/site-list-permissions.md
+[Criar permissões]: ../api/site-post-permissions.md
+[Excluir permissão]: ../api/site-delete-permission.md
+[Atualizar permissão]: ../api/site-update-permission.md
 
 ## <a name="properties"></a>Propriedades
 
@@ -84,6 +94,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 | **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
 | **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
 | **lists**         | Collection([list][])             | O conjunto de listas neste site.
+| **Permissões**   | Coleção ([permissão][])         | As permissões associadas ao site. Anulável.
 | **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
 | **onenote**       | [onenote][]                      | Chama o serviço OneNote para operações relacionadas ao bloco de anotações.
 
@@ -94,6 +105,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
 [list]: list.md
+[permissão]: permission.md
 [site]: site.md
 [onenote]: onenote.md
 
@@ -111,6 +123,7 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
     "siteCollection",
     "drive",
     "drives",
+    "permissions",
     "sites"
   ],
   "keyProperty": "id",
@@ -133,6 +146,7 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
+  "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": { "@odata.type": "microsoft.graph.onenote"},
@@ -155,4 +169,3 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "tocPath": "Sites",
   "tocBookmarks": { "Resources/Site": "#" }
 } -->
-

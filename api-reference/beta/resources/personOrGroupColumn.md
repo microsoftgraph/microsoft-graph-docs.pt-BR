@@ -6,12 +6,12 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 51a6f8653becc78d8bd95f3bc5a18d9ac342bda8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 261ed729bc865b6679bf6dc9d08060148f32006a
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998030"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176406"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Tipo de recurso PersonOrGroupColumn
 
@@ -42,9 +42,9 @@ Aqui está uma representação JSON de um recurso **personOrGroupColumn**.
 | **displayAs**              | string  | Como exibir as informações sobre a pessoa ou grupo escolhido. Veja a seguir.
 | **chooseFromType**         | string  | Se permite somente a seleção de pessoas, ou de pessoas e grupos. Deve ser `peopleAndGroups` ou `peopleOnly`.
 
-## <a name="displayas-values"></a>Valores de displayAs
+## <a name="displayas-values"></a>Valores displayAs
 
-| Valor de displayAs               | Descrição                                                                                                 |
+| Valor               | Descrição                                                                                                 |
 |:------------------------------|:------------------------------------------------------------------------------------------------------------|
 | **account**                   | A cadeia de caracteres de declaração codificada bruta do SharePoint para a pessoa ou grupo (por exemplo. `i:0#.f|membership|jane@contoso.com`). |
 | **department**                | O departamento da pessoa ou grupo.                                                                           |

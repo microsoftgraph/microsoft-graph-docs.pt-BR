@@ -1,43 +1,43 @@
 ---
-title: tipo de recurso workforceIntegration
-description: Uma instância de uma integração de força de funcionários com turnos.
+title: Tipo de recurso workforceIntegration
+description: Uma instância de uma integração da força de trabalho com turnos.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 715c78e8cb412f11b7b336680e3c433369c9e608
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 637e18d2751ee528331771f11f41fc893770ad09
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015096"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158930"
 ---
-# <a name="workforceintegration-resource-type"></a>tipo de recurso workforceIntegration
+# <a name="workforceintegration-resource-type"></a>Tipo de recurso workforceIntegration
 
 Namespace: microsoft.graph
 
-Uma instância de uma integração de força de funcionários com turnos.
+Uma instância de uma integração da força de trabalho com turnos.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Criar](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | Criar um novo objeto **workforceIntegration** .|
-| [List](../api/workforceintegration-list.md) | coleção [workforceIntegration](workforceintegration.md) | Obtenha a lista de objetos **workforceIntegration** associados a esse cronograma.|
-| [Get](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | Leia as propriedades e os relacionamentos de um objeto **workforceIntegration** . |
-| [Atualização](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | Atualizar um objeto **workforceIntegration** . |
-| [Delete](../api/workforceintegration-delete.md) | Nenhum | Excluir um objeto **workforceIntegration** . |
+| [Criar](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | Crie um novo **objeto workforceIntegration.**|
+| [Lista](../api/workforceintegration-list.md) | [coleção workforceIntegration](workforceintegration.md) | Obter a lista de **objetos workforceIntegration** associados a este cronograma.|
+| [Get](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | Leia as propriedades e os relacionamentos de um **objeto workforceIntegration.** |
+| [Update](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | Atualize **um objeto workforceIntegration.** |
+| [Delete](../api/workforceintegration-delete.md) | Nenhum | Exclua **um objeto workforceIntegration.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|Versão da API para a URL de retorno de chamada. Comece com 1.|
-|displayName|String|Nome da integração da força de funcionários.|
-|encripta|[workforceIntegrationEncryption](workforceintegrationencryption.md)|O recurso de criptografia de integração da força de funcionários.|
-|isActive|Boolean|Indica se a integração da força de trabalho está ativa e disponível atualmente.|
-|supportedEntities|string| As entidades de alternância têm suporte para notificações de alteração síncrona. Os turnos farão uma chamada de volta para a URL fornecida nas alterações de cliente nas entidades adicionadas aqui. Por padrão, nenhuma entidade tem suporte para notificações de alteração. Os valores possíveis são: `none` , `shift` , `swapRequest` , `openshift` , `openShiftRequest` , `userShiftPreferences`|
-|url|Cadeia de caracteres| URL de integração de força de obra para retornos de chamada do serviço de turnos.|
+|displayName|Cadeia de caracteres|Nome da integração da força de trabalho.|
+|criptografia|[workforceIntegrationEncryption](workforceintegrationencryption.md)|O recurso de criptografia de integração da força de trabalho.|
+|isActive|Booliano|Indica se essa integração de força de trabalho está ativa e disponível no momento.|
+|supportedEntities|string| As entidades Shifts com suporte para notificações de alteração síncrona. Os turnos fazem uma chamada de volta para a URL fornecida nas alterações do cliente nessas entidades adicionadas aqui. Por padrão, nenhuma entidade tem suporte para notificações de alteração. Os valores possíveis `none` são: `shift` , , , `swapRequest` `openshift` , `openShiftRequest``userShiftPreferences`|
+|url|Cadeia de caracteres| URL de integração da força de trabalho para retornos de chamada do serviço Shifts.|
 
 ## <a name="relationships"></a>Relações
 
@@ -52,8 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workforceIntegration",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.workforceIntegration"
 }-->
 
 ```json

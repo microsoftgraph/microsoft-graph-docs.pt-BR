@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d7c2691809728c7f7a5fee8ebf154b0c35624c10
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: ff8c3a7cb78479ff8a49be89c25f1013140a7dbd
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784781"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177246"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -158,7 +158,7 @@ Esse recurso permite:
 |unseenConversationsCount|Int32|Contagem de conversas que receberam uma ou mais novas postagens desde a última visita do usuário conectado ao grupo. Essa propriedade é igual a **unseenCount**. <br><br>Retornado apenas em $select.|
 |unseenCount|Int32|Contagem das conversas que receberam novas postagens desde que o usuário conectado visitou o grupo pela última vez. Essa propriedade é igual a **unseenConversationsCount**.<br><br>Retornado apenas em $select. |
 |unseenMessagesCount|Int32|Contagem de novas postagens que foram entregues às conversas do grupo desde a última visita do usuário conectado ao grupo. <br><br>Retornado apenas em $select.|
-|visibility|Cadeia de caracteres| Especifica a visibilidade de um grupo do Microsoft 365. Valores possíveis são: `Private`, `Public`, ou `Hiddenmembership`; valores em branco são tratados como públicos.  Saiba mais em [Opções de visibilidade do grupo](#group-visibility-options).<br>A visibilidade só pode ser configurada quando um grupo é criado, ela não é editável.<br>A visibilidade tem suporte apenas para grupos unificados; Não há suporte para grupos de segurança. <br><br>Retornado por padrão.|
+|visibility|Cadeia de caracteres| Especifica a política de associação ao grupo e a visibilidade do conteúdo do grupo para grupos. Os valores possíveis são: `Private`, `Public` ou `Hiddenmembership`. `Hiddenmembership` pode ser definido apenas para grupos do Microsoft 365, quando os grupos são criados. Não pode ser atualizado posteriormente. Outros valores de visibilidade podem ser atualizados após a criação do grupo.<br> Se o valor de visibilidade não for especificado durante a criação do grupo no Microsoft Graph, um grupo de segurança é criado como `Private` por padrão e o grupo Microsoft 365 é `Public`. Saiba mais em [Opções de visibilidade do grupo](#group-visibility-options). <br><br>Retornado por padrão.|
 
 ### <a name="group-visibility-options"></a>Opções de visibilidade do grupo
 

@@ -5,12 +5,12 @@ description: Obter uma lista de logins do usuário em um locatário do Azure Act
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: d850fdf92f88c2c6cd3290dfe9479df8e09834be
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b0662b88d8f6cca9ea8d602ee67073883f8504ef
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132123"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177029"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -101,11 +101,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos de [logon](../resources/signin.md) no corpo da resposta.
+Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos de [logon](../resources/signin.md) no corpo da resposta. A coleção de objetos é listada em ordem decrescente com base em **createdDateTime**.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>Exemplo 1: o usuário faz o acesso usando a MFA, que é acionada por uma política de acesso condicional. A autenticação principal é por meio do FIDO.
+### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>Exemplo 1: o usuário faz o acesso usando a MFA, que é disparada por uma política de acesso condicional. A autenticação principal é por meio do FIDO.
 
 #### <a name="request"></a>Solicitação
 

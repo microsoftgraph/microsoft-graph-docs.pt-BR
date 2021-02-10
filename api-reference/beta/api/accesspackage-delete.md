@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 018491e47b1c780d3640d749f7f98fbfd1d3002b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b48b132bc12bd35b248be0efe33b038fcd884a35
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952371"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176399"
 ---
 # <a name="delete-accesspackage"></a>Excluir accessPackage
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [accessPackage](../resources/accesspackage.md) .
+[Exclua um objeto accessPackage.](../resources/accesspackage.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -36,7 +36,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 DELETE /identityGovernance/entitlementManagement/accessPackages/{id}
-
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

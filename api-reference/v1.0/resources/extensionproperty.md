@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a9e16eaed46cb23609d437b09f25eb59a3ce9616
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0b3c462353997dafc01c2d9d52be70f15af3447e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131275"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154744"
 ---
 # <a name="extensionproperty-resource-type"></a>Tipo de recurso extensionProperty
 
@@ -25,7 +25,7 @@ As extensões podem ser adicionadas ao [usuário,](user.md) [grupo,](group.md) [
 > Ele permite que você use o Microsoft Graph para continuar a gerenciar as propriedades de extensão adicionadas por meio do Azure AD Graph ou [do Azure AD Connect.](/azure/active-directory/hybrid/whatis-azure-ad-connect)
 > Para novas extensões personalizadas, recomendamos que você use extensões de esquema do Microsoft Graph para [adicionar dados personalizados aos recursos.](/graph/extensibility-overview)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -37,11 +37,11 @@ As extensões podem ser adicionadas ao [usuário,](user.md) [grupo,](group.md) [
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|appDisplayName|String| Nome de exibição do objeto de aplicativo no qual essa propriedade de extensão está definida. Somente leitura. |
+|appDisplayName|Cadeia de caracteres| Nome de exibição do objeto de aplicativo no qual essa propriedade de extensão está definida. Somente leitura. |
 |dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a propriedade de extensão pode conter. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` - Máximo de 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` - Valor de 32 bits.</li><li>`LargeInteger` - Valor de 64 bits.</li><li>`String` - Máximo de 256 caracteres</li></ul>|
 |isSyncedFromOnPremises|Booliano| Indica se essa propriedade de extensão foi sycned do diretório onpremises usando o Azure AD Connect. Somente leitura. |
-|name|String| Nome da propriedade de extensão. Não anulável. |
-|targetObjects|String collection| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|name|Cadeia de caracteres| Nome da propriedade de extensão. Não anulável. |
+|targetObjects|Coleção de cadeias de caracteres| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>Relações
 
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.extensionProperty",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

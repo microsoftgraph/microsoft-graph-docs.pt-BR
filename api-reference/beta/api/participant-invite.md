@@ -1,18 +1,18 @@
 ---
-title: 'participante: convidar'
+title: 'participante: invite'
 description: Convide participantes para a chamada ativa.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c814b44b73fcd7f3f6b6ec48b524218185ca49b3
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: fd261e0d94a23e32c661bf7bf70e3fd16935928c
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720004"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177218"
 ---
-# <a name="participant-invite"></a>participante: convidar
+# <a name="participant-invite"></a>participante: invite
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Convide participantes para a chamada ativa.
 
-Para obter mais informações sobre como lidar com as operações, consulte [commsoperation](../resources/commsoperation.md).
+Para obter mais informações sobre como lidar com operações, consulte [commsoperation](../resources/commsoperation.md).
 
 >**Observação:** Essa API só é suportada para chamadas de grupo.
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :-------------- | :--------------------------------------------------------- |
 | Delegada (conta corporativa ou de estudante)     | Sem suporte                       |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                       |
-| Aplicativo     | Calls.InitiateGroupCalls. All                               |
+| Aplicativo     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -52,21 +52,21 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes que serão convidados.|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
+|participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes a serem convidados.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se succsessful, este método retornará um `200 OK` código de resposta e um cabeçalho de local com um URI para o [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. O corpo da resposta contém o [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado.
+Se tiver sucesso, este método retornará um código de resposta e um header Location com um URI para `200 OK` [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. O corpo da resposta contém [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado.
 
->**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
+>**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização da lista de participação.
 
 
 ## <a name="examples"></a>Exemplos
 Os exemplos a seguir mostram como chamar essa API.
 
-> **Observação:** Os objetos Response podem ser reduzidos para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** Os objetos de resposta podem ser reduzidos para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
 
-### <a name="example-1-invite-one-participant-to-an-existing-group-call"></a>Exemplo 1: convidar um participante para uma chamada de grupo existente
+### <a name="example-1-invite-one-participant-to-an-existing-group-call"></a>Exemplo 1: Convidar um participante para uma chamada de grupo existente
 
 #### <a name="request"></a>Solicitação
 
@@ -152,7 +152,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---operation-completed"></a>Notificação-operação concluída
+#### <a name="notification---operation-completed"></a>Notificação - operação concluída
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -197,7 +197,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>Notificação-lista atualizada com o participante adicionado
+#### <a name="notification---roster-updated-with-participant-added"></a>Notificação - lista atualizada com o participante adicionado
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -252,9 +252,9 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>Exemplo 2: convidar vários participantes para uma chamada de grupo existente
+### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>Exemplo 2: Convidar vários participantes para uma chamada de grupo existente
 
-> **Observação**: a chamada de grupo existente deve ter um [chatInfo](../resources/chatInfo.md)válido. É suportado o convite para até 5 participantes.
+> **Observação:** a chamada de grupo existente deve ter um [chatInfo válido.](../resources/chatInfo.md) Há suporte para até cinco participantes.
 
 #### <a name="request"></a>Solicitação
 
@@ -366,7 +366,7 @@ Content-Type: application/json
 }
 
 ```
-#### <a name="notification---operation-completed"></a>Notificação-operação concluída
+#### <a name="notification---operation-completed"></a>Notificação - operação concluída
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
@@ -420,7 +420,7 @@ Content-Type: application/json
 }
 
 ```
-#### <a name="notification---roster-updated-with-participants-added"></a>Lista de notificação atualizada com os participantes adicionados
+#### <a name="notification---roster-updated-with-participants-added"></a>Notificação - lista atualizada com participantes adicionados
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
@@ -504,14 +504,14 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Exemplo 3: convidar participantes para uma chamada de grupo existente, substituindo uma chamada ponto a ponto existente
+### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Exemplo 3: Convidar participantes para uma chamada de grupo existente, substituindo uma chamada ponto a ponto existente
 
 
-A API INVITE suporta apenas um participante ao substituir uma chamada ponto a ponto existente. Quando vários participantes são fornecidos no corpo da solicitação, apenas o primeiro participante será lido e o restante dos participantes será ignorado.
+A API de convite dá suporte a apenas um participante ao substituir uma chamada ponto a ponto existente. Quando vários participantes são fornecidos no corpo da solicitação, somente o primeiro participante será lido e o restante dos participantes será ignorado.
 
 
-> **Observação:** A API INVITE oferece suporte somente a um participante quando `replacesCallId` é fornecido. 
-> Para obter detalhes sobre como usar `replacesCallId` o para substituir uma chamada ponto a ponto existente, consulte [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
+> **Observação:** A API de convite dá suporte a apenas um participante `replacesCallId` quando fornecido. 
+> Para obter detalhes sobre como usar para substituir uma chamada ponto a ponto existente, consulte `replacesCallId` [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
 
 #### <a name="request"></a>Solicitação
 
@@ -597,7 +597,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---operation-completed"></a>Notificação-operação concluída
+#### <a name="notification---operation-completed"></a>Notificação - operação concluída
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -643,7 +643,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>Notificação-lista atualizada com o participante adicionado
+#### <a name="notification---roster-updated-with-participant-added"></a>Notificação - lista atualizada com o participante adicionado
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -699,33 +699,32 @@ Content-Type: application/json
 }
 ```
 
->**Observação:** Com um status de "concluído", você pode esperar receber notificações sobre como sua chamada ponto a ponto original foi terminada e excluída.
+>**Observação:** Com um status "concluído", você pode esperar receber notificações sobre como sua chamada ponto a ponto original foi encerrada e excluída.
 
-### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Exemplo 4: convidar um participante PSTN para uma chamada de grupo existente
+### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Exemplo 4: Convidar um participante PSTN para uma chamada de grupo existente
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído.
 
-#### <a name="step-1-create-application-instance"></a>Etapa 1: criar instância de aplicativo
-Usando credenciais de administrador de locatário, chame os seguintes cmdlets no PowerShell remoto do locatário para criar a instância do aplicativo. Para obter mais informações, consulte [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+#### <a name="step-1-create-application-instance"></a>Etapa 1: Criar instância de aplicativo
+Usando credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para criar a instância do aplicativo. Para obter mais informações, [consulte New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
 ```
 PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-#### <a name="step-2-assign-microsoft-365-licenses"></a>Etapa 2: atribuir licenças do Microsoft 365
-1. Use as credenciais de administrador de locatário para entrar https://admin.microsoft.com/ e acessar a guia **usuários-> ativos** .
-2. Selecione a instância do aplicativo, atribua o **plano de chamadas domésticas e internacionais da microsoft 365** e **o Microsoft 365 Phone System-licenças de usuário virtual** e clique em **salvar alterações**. Se as licenças necessárias não estiverem disponíveis no locatário, você poderá obtê-las na guia **serviços de compra de > de cobrança** .
-#### <a name="step-3-acquire-pstn-number"></a>Etapa 3: adquirir o número PSTN
-1. Use as credenciais de administrador de locatário para entrar no https://admin.teams.microsoft.com/ e clique na guia **portal herdado** no painel esquerdo.
-2. Na nova página, vá para a guia **números de telefone de > de voz** .
-3. Clique no **+** botão, selecione **novos números de serviço** e vá para a página **Adicionar novos números de serviço** .
-4. Selecione **país/região**, **estado/região**, **cidade**, **quantidade** de entrada e clique em **Adicionar** para pesquisar. Clique em **adquirir números**. O número adquirido recentemente será exibido na guia **números de telefone** .
-#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Etapa 4: atribuir o número PSTN à instância do aplicativo
-Com as credenciais de administrador de locatário, chame os seguintes cmdlets no PowerShell remoto do locatário para atribuir o número PSTN à instância do aplicativo. Para obter mais informações, consulte [set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+#### <a name="step-2-assign-microsoft-365-licenses"></a>Etapa 2: Atribuir licenças do Microsoft 365
+1. Use as credenciais de administrador de locatários para entrar e acessar a guia https://admin.microsoft.com/ **Usuários -> Usuários ativos.**
+2. Selecione a instância do aplicativo, atribua o Plano de Chamadas Domésticas e Internacionais do **Microsoft 365** e o Sistema de Telefonia do **Microsoft 365 -** Licenças de Usuário Virtual e clique em Salvar **alterações.** Se as licenças necessárias não estão disponíveis no locatário, você pode obter-as na guia Cobrança **-> serviços de** compra.
+#### <a name="step-3-acquire-pstn-number"></a>Etapa 3: Adquirir número PSTN
+1. Use as credenciais de administrador de locatários para entrar e clique na guia https://admin.teams.microsoft.com/ **Portal** herddo no painel esquerdo.
+2. Na nova página, vá para a **guia de números de telefone > voz.**
+3. Clique no botão, selecione Novos Números de Serviço e vá para a página Adicionar **+** **novos números de** serviço. 
+4. Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search. Clique **em adquirir números.** O número recém-adquirido será aparecer na guia **números de** telefone.
+#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Etapa 4: Atribuir número PSTN à instância do aplicativo
+Com credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para atribuir o número PSTN à instância do aplicativo. Para obter mais informações, consulte [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
 ```
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-> **Observação:** Se um locatário tem números PSTN australianos atribuídos a qualquer instância de aplicativo, essa chamada pode falhar. Se um locatário é recém-criado, pode levar alguns dias para que esse recurso esteja disponível.
 
 #### <a name="request"></a>Solicitação
 
@@ -797,7 +796,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---operation-completed"></a>Notificação-operação concluída
+#### <a name="notification---operation-completed"></a>Notificação - operação concluída
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -840,7 +839,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>Notificação-lista atualizada com o participante adicionado
+#### <a name="notification---roster-updated-with-participant-added"></a>Notificação - lista atualizada com o participante adicionado
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -894,7 +893,7 @@ Content-Type: application/json
 
 ```
 
->**Observação:** Com um `completed` status, você pode esperar receber notificações sobre como sua chamada ponto a ponto original foi terminada e excluída.
+>**Observação:** Com um status, você pode esperar receber notificações sobre como sua chamada ponto a ponto original foi encerrada `completed` e excluída.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

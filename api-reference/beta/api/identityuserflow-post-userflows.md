@@ -1,24 +1,24 @@
 ---
-title: Criar userflow
-description: Use esta API para criar um novo userflow.
+title: Criar userFlow
+description: Use essa API para criar um novo userFlow.
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02ae410aaef61dfb2e2de6bf03227b9b2ddc2eb2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 36ccf24fb65a0098ebccb8774c36af804aece41f
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953204"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176525"
 ---
-# <a name="create-userflow"></a>Criar userflow
+# <a name="create-userflow"></a>Criar userFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [userflow](../resources/identityuserflow.md) .
+Criar um novo [objeto userFlow.](../resources/identityuserflow.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | IdentityUserFlow.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | IdentityUserFlow.ReadWrite.All |
+| Aplicativo                            | IdentityUserFlow.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,11 +47,11 @@ POST /identity/userFlows
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [userflow](../resources/identityuserflow.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto userFlow.](../resources/identityuserflow.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [userflow](../resources/identityuserflow.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de resposta e um novo objeto [userFlow](../resources/identityuserflow.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -70,6 +70,7 @@ POST https://graph.microsoft.com/beta/identity/userFlows
 Content-type: application/json
 
 {
+  "id": "Pol1",
   "userFlowType": "signUpOrSignIn",
   "userFlowTypeVersion": 1
 }

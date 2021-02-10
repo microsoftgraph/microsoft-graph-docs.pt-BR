@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso ipRange
-description: Classe base do intervalo de IP para representar os intervalos de endereços IPV4 e IPV6.
+description: Classe base do intervalo IP para representar intervalos de endereços IPV4 e IPV6.
 localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 984a4cec88f8bea6e88be04dfe04807ab15f591d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43be17079a7b67b02cf0355fd3261d204e5fda0b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967461"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158986"
 ---
 # <a name="iprange-resource-type"></a>Tipo de recurso ipRange
 
 Namespace: microsoft.graph
 
-Classe base do intervalo de IP para representar os intervalos de endereços IPV4 e IPV6.
+Classe base do intervalo IP para representar intervalos de endereços IPV4 e IPV6.
 
 ## <a name="properties"></a>Propriedades
 
-Nenhum.
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -31,8 +31,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ipRange",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.ipRange"
 }-->
 
 ```json

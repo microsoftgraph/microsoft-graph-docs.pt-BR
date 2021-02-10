@@ -1,35 +1,35 @@
 ---
-title: valores de enumeração termos
-description: Valores de enumeração termos do Microsoft Graph
+title: valores de enum de repositório de termos
+description: Valores de enumeração do repositório de termos do Microsoft Graph
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: Sharepoint
 author: mohitpcad
-ms.openlocfilehash: b64f262dec0f2384b36b522bfb2edae887498096
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b8724e0bccf806f99c8a3cbb28f1d1216381530
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989497"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176644"
 ---
-# <a name="microsoft-graph-termstore-enumeration-values"></a>Valores de enumeração termos do Microsoft Graph
+# <a name="microsoft-graph-termstore-enumeration-values"></a>Valores de enumeração do repositório de termos do Microsoft Graph
 
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termstore
 
-### <a name="relationtype-values"></a>valores relationtype
+### <a name="relationtype-values"></a>Valores relationType
 
-Especifica as relações de tipos de valor que podem ser executadas em um termos
+Especifica os tipos de valor que as relações podem levar em um repositório de termos
 
-|Members|
+|Member|
 |:---|
-|pessoal|
-|usar|
+|pin|
+|reutilização|
 
-### <a name="termgroupscope-values"></a>valores de termGroupScope
+### <a name="termgroupscope-values"></a>Valores de termGroupScope
 
-Especifica os valores que diferentes tipos de grupo podem assumir dentro do termos
+Especifica os valores que diferentes tipos de grupo podem ter no repositório de termos
 
-|Members|
+|Member|
 |:---|
 |global|
 |sistema|

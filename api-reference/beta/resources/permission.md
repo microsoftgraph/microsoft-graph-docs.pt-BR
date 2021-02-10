@@ -1,30 +1,30 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-title: tipo de recurso Permission
-description: recurso Permission representando uma permissão de compartilhamento concedida para um driveItem
+title: tipo de recurso permission
+description: recurso de permissão que representa uma permissão de compartilhamento concedida para um driveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 29b4c7aaccc62afa16057388758e1a62f05db41e
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: c372436fc4c4e65f583ca95d7a208e0fe9a5df14
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582349"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177225"
 ---
-# <a name="permission-resource-type"></a>tipo de recurso Permission
+# <a name="permission-resource-type"></a>tipo de recurso permission
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **Permission** fornece informações sobre uma permissão de compartilhamento concedida para um recurso [driveItem](driveitem.md) .
+O **recurso de** permissão fornece informações sobre uma permissão de compartilhamento concedida para um recurso [driveItem.](driveitem.md)
 
 As permissões de compartilhamento têm várias formas diferentes.
-O recurso **Permission** representa esses diferentes formatos através de facetas no recurso.
+O **recurso** de permissão representa esses diferentes formulários por meio de facetas no recurso.
 
->**Observação:** As bibliotecas de documentos do OneDrive for Business e do SharePoint não retornam a propriedade **inheritedFrom** .
+>**Observação:** As bibliotecas de documentos do OneDrive for Business e do SharePoint não retornam **a propriedade inheritedFrom.**
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -79,7 +79,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ### <a name="roles-property-values"></a>Valores de propriedades Roles
 
-| Função              | Detalhes                                                                        |
+| Valor              | Descrição                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
 | leitura            | Oferece a capacidade de ler os metadados e o conteúdo do item.            |
 | gravação           | Oferece a capacidade de ler e modificar os metadados e o conteúdo do item. |
@@ -102,7 +102,7 @@ Você pode usar a API [invite][] para criar um link que funcione apenas para pes
 
 Aqui estão alguns exemplos de links de compartilhamento.
 
-### <a name="view-link"></a>Link de exibição
+### <a name="view-link"></a>Link exibir
 
 Este link de exibição fornece acesso somente leitura a qualquer pessoa com o link.
 
@@ -196,9 +196,9 @@ Este link fornece acesso de leitura e gravação para as pessoas específicas na
 }
 ```
 
-## <a name="sharing-invitations"></a>Compartilhar convites
+## <a name="sharing-invitations"></a>Convites de compartilhamento
 
-As permissões enviadas pelo [convite][] ou pela API de [concessão][] podem ter informações adicionais na faceta[SharingInvitation] do [convite]para endereços de email que não correspondem a uma conta conhecida. Nesses casos, a propriedade **concedidoto** pode não ser definida até que o link do convite seja resgatado, que ocorre na primeira vez que o usuário clica no link e entrar.
+As permissões enviadas [][] pela [API][] de convite ou []concessão podem ter informações adicionais na faceta[SharingInvitation] do convite para endereços de email que não corresponderem a uma conta conhecida. Nesses casos, a propriedade **grantedTo** pode não ser definida até que o link do convite seja resgatado, o que ocorre na primeira vez que o usuário clica no link e se conectar.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -252,7 +252,7 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
 | [Revogar concessões](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
 
 [createLink]: ../api/driveitem-createlink.md
-[conceder]: ../api/permission-grant.md
+[grant]: ../api/permission-grant.md
 [IdentitySet]: identityset.md
 [invite]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md

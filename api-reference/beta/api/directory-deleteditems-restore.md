@@ -3,14 +3,14 @@ title: Restaurar item excluído
 description: 'Restaura um item recentemente excluído de itens excluídos. '
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c00e117bd31960dfe1a0874c7cd5986f368b218b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e263d8693b277156d96dc6668945699466979fa0
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963281"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176546"
 ---
 # <a name="restore-deleted-item"></a>Restaurar item excluído
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Restaura um item recentemente excluído de [itens excluídos](../resources/directory.md). 
 
-Atualmente, a funcionalidade de itens excluídos só é suportada para o [aplicativo](../resources/application.md), [grupo](../resources/group.md) e recursos do [usuário](../resources/user.md) . Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente.
+Atualmente, a funcionalidade de restaurar itens excluídos só tem suporte para os recursos [de](../resources/application.md) [aplicativo,](../resources/group.md)grupo [e](../resources/user.md) usuário. Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente. Isso não é aplicável a grupos de segurança que são excluídos permanentemente.
 
 Um item recentemente excluído permanecerá disponível por até 30 dias. Após 30 dias, esse item será excluído permanentemente.
 
@@ -61,7 +61,7 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Token de portador &lt; &gt; *necessário*|
+| Autorização  | Token de &lt; portador &gt; *obrigatório*|
 | Content-type | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação

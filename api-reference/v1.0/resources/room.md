@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1a297888d8b469944b5fdbebaa9948db0ba59c97
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 3936338aee39eb0c10a179e5d1970b3e18493214
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059662"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156326"
 ---
 # <a name="room-resource-type"></a>tipo de recurso room
 
@@ -33,7 +33,7 @@ No Exchange Online, cada sala é associada a uma caixa de correio de sala. Deriv
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | O endereço da sala. |
 | audioDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de áudio na sala. |
-| bookingType            | [bookingType](#bookingtype-values)                | Tipo de sala. Os valores possíveis `standard` são e `reserved` . |
+| bookingType            | [bookingType](#bookingtype-values)                | Tipo de sala. Os valores possíveis `standard` são `reserved` e. |
 | building               | Cadeia de caracteres                                            | Especifica o nome do edifício ou o número do edifício em que a sala está. |
 | capacity               | Int32                                             | Especifica a capacidade da sala. |
 | displayName            | Cadeia de caracteres                                            | O nome associado à sala. |
@@ -55,7 +55,7 @@ No Exchange Online, cada sala é associada a uma caixa de correio de sala. Deriv
 | Valor    | Descrição                                               |
 |:---------|:----------------------------------------------------------|
 | padrão | A sala está disponível e pode ser reservada. Esse é o valor padrão. |
-| reservado | A sala só está disponível por vir, primeiro a ser servido. Ele não pode ser reservado.|
+| reservado | A sala está disponível somente na primeira vez que for servido pela primeira vez. Ele não pode ser reservado.|
 
 ## <a name="relationships"></a>Relações
 
@@ -70,8 +70,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.room",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.room"
 }-->
 
 ```json

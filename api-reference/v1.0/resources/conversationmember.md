@@ -5,19 +5,19 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2d2e44349f7896dfed0d0dff455e9afd0ac65772
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 1629b46b12d91fd96dca72577027f0031ab0102a
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714274"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161786"
 ---
 # <a name="conversationmember-resource-type"></a>tipo de recurso conversationMember
 
 Namespace: microsoft.graph
 
-Representa um usuário em uma [equipe](team.md), um [canal](channel.md)ou um [chat](chat.md).
-Confira também [aadUserConversationMember](aaduserconversationmember.md).
+Representa um usuário em uma [equipe,](team.md)um [canal](channel.md)ou um [chat.](chat.md)
+Consulte também [aadUserConversationMember](aaduserconversationmember.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -52,7 +52,6 @@ Veja a seguir uma representação JSON do recurso.
 
   ],
   "@odata.type": "microsoft.graph.conversationMember",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

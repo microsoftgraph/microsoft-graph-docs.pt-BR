@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso calendarPermission
+title: Tipo de recurso calendarPermission
 description: As permissões de um usuário com quem o calendário é compartilhado.
 localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5ba8b0021a815f6c1ae329523741b7d536994ca1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c8cf612827819370a43b02dbb7064d03530a5d1
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071609"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177092"
 ---
-# <a name="calendarpermission-resource-type"></a>tipo de recurso calendarPermission
+# <a name="calendarpermission-resource-type"></a>Tipo de recurso calendarPermission
 
 Namespace: microsoft.graph
 
-As permissões de um usuário com o qual o calendário foi compartilhado ou delegado em um cliente do Outlook.
+As permissões de um usuário com quem o calendário foi compartilhado ou delegado em um cliente do Outlook.
 
-Obter, atualizar e excluir permissões de calendário é suportada em nome apenas do proprietário do calendário.
+Obter, atualizar e excluir permissões de calendário é suportado em nome apenas do proprietário do calendário.
 
 Obter as permissões de calendário de um calendário em nome de um compartilhamento ou representante retorna uma coleção de permissões de calendário vazia.
 
-Depois que um compartilhamento ou representante tiver sido configurado para um calendário, você poderá [Atualizar](../api/calendarpermission-update.md) somente a propriedade **role** para alterar as permissões de um compartilhamento ou representante. Não é possível **Atualizar** a propriedade **allowedRoles**, **EmailAddress**, **isInsideOrganization**ou **isRemovable** . Para alterar essas propriedades, você deve [excluir](../api/calendarpermission-delete.md) o objeto **calendarPermission** correspondente e criar outro compartilhamento ou representante em um cliente do Outlook.
+Depois que um compartilhamento ou representante tiver sido [](../api/calendarpermission-update.md) definido  para um calendário, você poderá atualizar apenas a propriedade de função para alterar as permissões de um compartilhamento ou representante. Você não **pode atualizar** a **propriedade allowedRoles**, **emailAddress**, **isInsideOrganization** ou **isRemovable.** Para alterar essas propriedades, você deve [excluir](../api/calendarpermission-delete.md) o objeto **calendarPermission** correspondente e criar outro compartilhamento ou representante em um cliente do Outlook.
 
 ## <a name="methods"></a>Métodos
 
@@ -36,25 +36,25 @@ Depois que um compartilhamento ou representante tiver sido configurado para um c
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|allowedRoles|coleção [calendarRoleType](#calendarroletype-values)| Lista de níveis de permissão de compartilhamento ou de delegação permitidos para o calendário. Os valores possíveis são: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
-|emailAddress|[emailAddress](emailaddress.md)| Representa um compartilhamento ou representante que tem acesso ao calendário. Para o compartilhamento "minha organização", a propriedade **Address** é NULL. Somente leitura. |
-|id|Cadeia de caracteres| O identificador exclusivo do usuário (compartilhamento ou representante) com o qual o calendário foi compartilhado. Somente leitura.|
-|isInsideOrganization|Booliano| True se o usuário em contexto (compartilhamento ou representante) estiver dentro da mesma organização que o proprietário do calendário.|
-|isRemovable|Booliano| `True` Se o usuário puder ser removido da lista de compartilhamentos ou representantes do calendário especificado, `false` caso contrário. O usuário "minha organização" determina as permissões que outras pessoas dentro da sua organização têm para o calendário especificado. Não é possível remover "minha organização" como um compartilhamento para um calendário.|
-|role|[calendarRoleType](#calendarroletype-values)| Nível de permissão atual do compartilhamento ou representante do calendário. |
+|allowedRoles|[Coleção calendarRoleType](#calendarroletype-values)| Lista de níveis de permissão de compartilhamento ou delegação permitidos para o calendário. Os valores possíveis são: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
+|emailAddress|[emailAddress](emailaddress.md)| Representa um compartilhamento ou representante que tem acesso ao calendário. Para o compartilhamento "Minha Organização", a propriedade **de** endereço é nula. Somente leitura. |
+|id|Cadeia de caracteres| O identificador exclusivo do usuário (compartilhar ou delegar) com quem o calendário foi compartilhado. Somente leitura.|
+|isInsideOrganization|Booliano| True se o usuário no contexto (compartilhar ou delegar) estiver dentro da mesma organização que o proprietário do calendário.|
+|isRemovable|Booliano| `True` se o usuário puder ser removido da lista de compartilhamentos ou representantes do calendário especificado, `false` caso contrário. O usuário "Minha organização" determina as permissões que outras pessoas em sua organização têm para o calendário determinado. Não é possível remover "Minha organização" como um compartilhamento de um calendário.|
+|role|[calendarRoleType](#calendarroletype-values)| Nível de permissão atual do compartilhamento de calendário ou representante. |
 
-### <a name="calendarroletype-values"></a>valores de calendarRoleType
+### <a name="calendarroletype-values"></a>Valores de calendarRoleType
 
-| Valores        | Descrição |
+| Member        | Descrição |
 |:--------------|:------------|
-| Nenhuma | O calendário não é compartilhado com o usuário. |
-| freeBusyRead | O usuário é um compartilhamento que pode exibir o status de disponibilidade do proprietário no calendário. |
-| limitedRead | O usuário é um compartilhamento que pode exibir o status de disponibilidade e os títulos e locais dos eventos no calendário. |
-| leitura | O usuário é um compartilhamento que pode exibir todos os detalhes dos eventos no calendário, exceto os eventos privados do proprietário. |
+| nenhum | O calendário não é compartilhado com o usuário. |
+| freeBusyRead | O usuário é um compartilhamento que pode exibir o status de livre/ocupado do proprietário no calendário. |
+| limitedRead | O usuário é um compartilhamento que pode exibir o status de livre/ocupado e títulos e locais dos eventos no calendário. |
+| leitura | O usuário é um compartilhamento que pode exibir todos os detalhes dos eventos no calendário, exceto os eventos particulares do proprietário. |
 | gravação | O usuário é um compartilhamento que pode exibir todos os detalhes (exceto eventos privados) e editar eventos no calendário. |
-| delegateWithoutPrivateEventAccess | O usuário é um representante que tem acesso de gravação, mas não pode exibir informações dos eventos privados do proprietário no calendário. |
-| delegateWithPrivateEventAccess | O usuário é um representante que tem acesso de gravação e pode exibir informações dos eventos privados do proprietário no calendário. |
-| cliente | O usuário tem permissões personalizadas para o calendário. |
+| delegateWithoutPrivateEventAccess | O usuário é um representante que tem acesso de gravação, mas não pode exibir informações dos eventos particulares do proprietário no calendário. |
+| delegateWithPrivateEventAccess | O usuário é um representante que tem acesso de gravação e pode exibir informações dos eventos particulares do proprietário no calendário. |
+| custom | O usuário tem permissões personalizadas para o calendário. |
 
 
 ## <a name="json-representation"></a>Representação JSON

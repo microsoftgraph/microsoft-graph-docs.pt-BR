@@ -1,55 +1,55 @@
 ---
-title: inserir tipo de recurso
-description: Representa um local. Este é o tipo base de uma sala ou sala de salas.
+title: tipo de recurso place
+description: Representa um local. Esse é o tipo de base para uma sala ou roomList.
 localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d7554463870556791f7f422928c17aa25819ebc8
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 0897cf9105ae0260803fa81291ab879bd7876b86
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581712"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156340"
 ---
-# <a name="place-resource-type"></a>inserir tipo de recurso
+# <a name="place-resource-type"></a>tipo de recurso place
 
 Namespace: microsoft.graph
 
-Representa os atributos de local básicos, como nome, endereço físico e coordenadas geográficas. Este é o tipo base para tipos de local mais avançados, como [sala](room.md) e [sala de salas](roomlist.md).
+Representa atributos básicos de localização, como nome, endereço físico e coordenadas geográficas. Esse é o tipo base para tipos de localização mais ricos, [como sala](room.md) e [roomList](roomlist.md).
 
-### <a name="using-the-places-api"></a>Usando a API Places
-Os administradores do Exchange Online podem organizar as salas de reunião em um locatário em listas de salas. Usando a API de locais, você pode obter todas as listas de salas ou salas no locatário ou obter todas as salas em uma lista de salas específica.
+### <a name="using-the-places-api"></a>Usando a API de locais
+Os administradores do Exchange Online podem organizar salas de reunião em um locatário em listas de salas. Usando a API de locais, você pode obter todas as listas de salas ou salas no locatário ou obter todas as salas em uma lista de salas específica.
 
-Lugares como [sala](room.md) e [sala de salas](roomlist.md) contêm a **ID**básica, o nome para exibição e o endereço de email. Além disso, eles contêm informações de navegação, como endereço físico e coordenadas geográficas, e, no caso de salas, outras informações relevantes, como recursos AV, número de chão e capacidade.
+Locais como [sala e](room.md) [roomList](roomlist.md) contêm a **ID** básica, o nome para exibição e o endereço de email. Além disso, eles contêm informações de navegação, como endereço físico e coordenadas geográficas, e no caso de salas, outras informações relevantes, como recursos de AV, número do piso e capacidade.
 
-As funções [findRooms](/graph/api/user-findrooms) e [findRoomLists](/graph/api/user-findroomlists) oferecem suporte à pesquisa semelhante para salas e listas de salas em um locatário. Veja a seguir uma comparação entre a API de locais e essas funções.  Se você estiver criando um aplicativo de produção, escolha a API de lugares como a API está agora disponível em v 1.0. Planeje a atualização de qualquer código existente que use o **findRooms** ou o **findRoomLists** para usar a API de locais, pois o **findRooms** ou o **findRoomLists** será preterido e uma linha do tempo será anunciada.
+As [funções findRooms](/graph/api/user-findrooms) e [findRoomLists](/graph/api/user-findroomlists) suportam uma busca semelhante para salas e listas de salas em um locatário. A seguir está uma comparação entre a API de locais e essas funções.  Se você estiver criando um aplicativo de produção, escolha a API de locais, pois a API agora está geralmente disponível na v1.0. Planeje atualizar qualquer código existente que use **findRooms** ou **findRoomLists** para usar a API de locais, porque **findRooms** ou **findRoomLists** será preterido e uma linha do tempo será anunciada.
 
-|API de locais |funções findRooms e findRoomLists|
+|Places API |Funções findRooms e findRoomLists|
 |:------------------------------------|:-----------------------------|
-|Suporte para obter todas as listas de salas ou salas em um locatário e todas as salas em uma lista de salas | Suporte semelhante-obtenha todas as salas ou listas de salas em um locatário e todas as salas em uma lista de salas|
-|Os [locais de lista](../api/place-list.md) podem retornar mais de 100 salas em um locatário | [findRooms](/graph/api/user-findrooms) retorna até as primeiras salas de 100 em um locatário |
-|Suporte para [obter uma lista de salas ou salas individuais](../api/place-get.md) em um locatário | Não oferece suporte para obter uma lista de salas ou salas individuais em um locatário
-|Define as entidades específicas da [sala](room.md) e da [salalist](roomlist.md) que especificam um conjunto de propriedades mais avançado, além do nome para exibição e endereço SMTP. | Cada sala e lista de salas é de um tipo de endereço de email de espessura [mais leve que](emailaddress.md) especifica somente o nome para exibição e o endereço SMTP|
-|Oferece suporte somente a cenários organizacionais com permissões delegadas (contas corporativas ou de estudante) ou de aplicativo | Suporte semelhante somente para cenários organizacionais com permissões delegadas ou de aplicativo|
-|Oferece suporte à [atualização de uma lista de salas ou salas individuais](../api/place-update.md) em um locatário | Não oferece suporte à atualização de uma lista de salas ou salas individuais em um locatário
+|Oferece suporte para obter todas as salas ou listas de salas em um locatário e todas as salas em uma lista de salas | Suporte semelhante - obter todas as salas ou listas de salas em um locatário e todas as salas em uma lista de salas|
+|[Os locais de](../api/place-list.md) lista podem retornar mais de 100 salas em um locatário | [findRooms](/graph/api/user-findrooms) retorna até as primeiras 100 salas em um locatário |
+|Dá [suporte a obter uma lista individual de sala ou sala](../api/place-get.md) em um locatário | Não dá suporte a obter uma lista individual de sala ou sala em um locatário
+|Define as entidades específicas de [room](room.md) e [roomList](roomlist.md) que especificam um conjunto de propriedades mais rico, além do nome para exibição e endereço SMTP. | Cada sala e lista de sala é de um tipo [emailAddress](emailaddress.md) de peso mais claro que especifica apenas o nome de exibição e o endereço SMTP|
+|Dá suporte somente a cenários organizacionais com permissões delegadas (contas de trabalho ou de estudante) ou permissões de aplicativo | Suporte semelhante apenas para cenários organizacionais com permissões delegadas ou de aplicativo|
+|Dá [suporte à atualização de uma sala individual ou lista de sala](../api/place-update.md) em um locatário | Não dá suporte à atualização de uma lista individual de sala ou sala em um locatário
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                              | Tipo de retorno                  | Descrição |
 |:------------------------------------|:-----------------------------|:--------|
-| [Locais de lista](../api/place-list.md) | Uma coleção do tipo de [local](place.md) solicitado e derivado | Obtém uma coleção do tipo especificado de objetos **Place** definidos no locatário. |
-| [Obter local](../api/place-get.md)    | O tipo de [local](place.md) solicitado e derivado            | Obtenha as propriedades e os relacionamentos de um objeto **local** especificado. |
-| [Local de atualização](../api/place-update.md)    | O tipo de [local](place.md) solicitado e derivado            | Atualizar as propriedades e os relacionamentos de um objeto **local** especificado. |
+| [Listar locais](../api/place-list.md) | Uma coleção do tipo de local [](place.md) solicitado derivado | Obter uma coleção do tipo especificado de objetos **de local** definidos no locatário. |
+| [Obter local](../api/place-get.md)    | O tipo de local [](place.md) solicitado derivado            | Obter as propriedades e os relacionamentos de um objeto **de local** especificado. |
+| [Local de atualização](../api/place-update.md)    | O tipo de local [](place.md) solicitado derivado            | Atualize as propriedades e os relacionamentos de um objeto **de local** especificado. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade       | Tipo                                              | Descrição |
 |:---------------|:--------------------------------------------------|:--------|
-| address        | [physicalAddress](physicaladdress.md)             | O endereço da rua do local. |
-| displayName    | String                                            | O nome associado ao local. |
-| geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local do local no latitude, longitude e (opcionalmente) as coordenadas de altitude. |
-| id             | String                                            | Identificador exclusivo do local. Apenas leitura. |
+| address        | [physicalAddress](physicaladdress.md)             | O endereço do local. |
+| displayName    | Cadeia de caracteres                                            | O nome associado ao local. |
+| geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local em coordenadas de altitude de latitude, longitude e (opcionalmente). |
+| id             | Cadeia de caracteres                                            | Identificador exclusivo do local. Somente leitura. |
 | phone          | Cadeia de caracteres                                            | O número de telefone do local. |
 
 ## <a name="relationships"></a>Relações
@@ -65,8 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.place",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.place"
 }-->
 
 ```json
@@ -80,8 +79,8 @@ Veja a seguir uma representação JSON do recurso.
 ```
 
 ## <a name="see-also"></a>Confira também
-- Para que os administradores criem uma lista de salas, use o [novo](/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)grupo de distribuição do cmdlet do Exchange PowerShell.
-- Para que os administradores adicionem uma sala a uma lista de salas, use o cmdlet do Exchange PowerShell [Add-DistributionGroupMember](/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps).
+- Para que os administradores criem uma lista de sala, use o cmdlet Do Exchange PowerShell [New-DistributionGroup](/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps).
+- Para que os administradores adicionem uma sala a uma lista de sala, use o cmdlet Do Exchange Powershell [Add-DistributionGroupMember](/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps).
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7817557e09bbfba9cf04e1e226c8a96a9616ddc6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4bdb22f649cc0fd30734b5762106c959c34e3cf6
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134908"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176973"
 ---
 # <a name="user-translateexchangeids"></a>user: translateExchangeIds
 
@@ -55,7 +55,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ### <a name="exchangeidformat-values"></a>Valores de exchangeIdFormat
 
-| Valores | Descrição |
+| Member | Descrição |
 |:-------|:------------|
 | entryId | O formato de ID de entrada binária usado por clientes MAPI. |
 | ewsId | O formato de ID usado pelos clientes dos Serviços Web do Exchange. |
@@ -67,7 +67,7 @@ Os formatos binários ( `entryId` e `immutableEntryId` ) são codificados como b
 
 - Substituir `+` por `-`
 - Substituir `/` por `_`
-- Remover quaisquer caracteres de preenchimento à sua parte ( `=` )
+- Remover todos os caracteres de preenchimento à sua parte ( `=` )
 - Adicione um inteiro ao final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam no original ( `0` , `1` ou `2` )
 
 ## <a name="response"></a>Resposta

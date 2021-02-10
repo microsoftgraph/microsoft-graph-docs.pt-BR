@@ -1,18 +1,18 @@
 ---
-title: 'Call: transferência'
+title: 'call: transfer'
 description: Transferir uma chamada ponto a ponto ativa.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7c23ea17f1bc68b88490d8a54a68e50fe0604a78
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 1d7f38e5fc128d176ff5c954ae0dae7113f18285
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719773"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176579"
 ---
-# <a name="call-transfer"></a>Call: transferência
+# <a name="call-transfer"></a>call: transfer
 
 Namespace: microsoft.graph
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 Transferir uma chamada ponto a ponto ativa.
 
-> **Observação:** Só haverá suporte se o destino transfere e Transfer for usuários do Microsoft Teams que pertencem ao mesmo locatário. A transferência para o número PSTN é suportada apenas para a instância do aplicativo. Para saber mais sobre o transferer, o transfere e o destino de transferência, consulte [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
+> **Observação:** Isso só será suportado se os destinos de transferência e transferência são usuários do Microsoft Teams que pertencem ao mesmo locatário. A transferência para o número PSTN é suportada apenas para a instância do aplicativo. Para saber mais sobre o destino de transferência, transferência e transferência, consulte [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
 
-Uma transferência consultiva significa que o transferidar pode informar a pessoa para a qual deseja transferir a chamada (o transfere), antes da transferência ser feita. Em vez de transferir a chamada diretamente.
+Uma transferência consultiva significa que o transferor pode informar a pessoa para a quem ele deseja transferir a chamada (o transferidor), antes que a transferência seja feita. Isso não é transferir a chamada diretamente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,15 +53,15 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|O participante que é o destino da transferência.|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `202 Accepted`.
 
 ## <a name="examples"></a>Exemplos
-Estes exemplos mostram o fluxo de uma chamada de entrada todo o caminho para os diferentes tipos de notificações de transferência.
+Esses exemplos mostram o fluxo de uma chamada de entrada até os diferentes tipos de notificações de transferência.
 
-### <a name="example-1-call-transfer"></a>Exemplo 1: transferência de chamadas
+### <a name="example-1-call-transfer"></a>Exemplo 1: Transferência de chamada
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -121,7 +121,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-#### <a name="notification---transferring"></a>Notificação-Transferindo
+#### <a name="notification---transferring"></a>Notificação - transferência
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -149,9 +149,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-accepted"></a>Notificação-transferência aceita
+#### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode ocorrer após ou antes do áudio de estado de mídia inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes do estado de mídia de áudio inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -179,7 +179,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-completed"></a>Notificação-transferência concluída
+#### <a name="notification---transfer-completed"></a>Notificação - transferência concluída
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -213,9 +213,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-failed"></a>Notificação-falha na transferência
+#### <a name="notification---transfer-failed"></a>Notificação - falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falha, o estado de chamada será `established` .
+> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -249,7 +249,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-consultative-transfer"></a>Exemplo 2: transferência consultiva
+### <a name="example-2-consultative-transfer"></a>Exemplo 2: Transferência consultiva
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -297,7 +297,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-#### <a name="notification---transferring"></a>Notificação-Transferindo
+#### <a name="notification---transferring"></a>Notificação - transferência
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -325,9 +325,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-accepted"></a>Notificação-transferência aceita
+#### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode ocorrer após ou antes do áudio de estado de mídia inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes que o áudio do estado da mídia seja inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -355,7 +355,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-completed"></a>Notificação-transferência concluída
+#### <a name="notification---transfer-completed"></a>Notificação - transferência concluída
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -384,9 +384,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-failed"></a>Notificação-falha na transferência
+#### <a name="notification---transfer-failed"></a>Notificação - falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falha, o estado de chamada será `established` .
+> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -421,31 +421,30 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-call-transfer-to-pstn-number"></a>Exemplo 3: transferência de chamada para o número PSTN
+### <a name="example-3-call-transfer-to-pstn-number"></a>Exemplo 3: Transferência de chamada para número PSTN
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído.
 
-#### <a name="step-1-create-application-instance"></a>Etapa 1: criar instância de aplicativo
-Usando credenciais de administrador de locatário, chame os seguintes cmdlets no PowerShell remoto do locatário para criar a instância do aplicativo. Para obter mais informações, consulte [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+#### <a name="step-1-create-application-instance"></a>Etapa 1: Criar instância de aplicativo
+Usando credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para criar a instância do aplicativo. Para obter mais informações, [consulte New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
 ```
 PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-#### <a name="step-2-assign-microsoft-365-licenses"></a>Etapa 2: atribuir licenças do Microsoft 365
-1. Use as credenciais de administrador de locatário para entrar https://admin.microsoft.com/ e acessar a guia **usuários-> ativos** .
-2. Selecione a instância do aplicativo, atribua o **plano de chamadas domésticas e internacionais da microsoft 365** e **o Microsoft 365 Phone System-licenças de usuário virtual** e clique em **salvar alterações**. Se as licenças necessárias não estiverem disponíveis no locatário, você poderá obtê-las na guia **serviços de compra de > de cobrança** .
-#### <a name="step-3-acquire-pstn-number"></a>Etapa 3: adquirir o número PSTN
-1. Use as credenciais de administrador de locatário para entrar no https://admin.teams.microsoft.com/ e clique na guia **portal herdado** no painel esquerdo.
-2. Na nova página, vá para a guia **números de telefone de > de voz** .
-3. Clique no **+** botão, selecione **novos números de serviço** e vá para a página **Adicionar novos números de serviço** .
-4. Selecione **país/região**, **estado/região**, **cidade**, **quantidade** de entrada e clique em **Adicionar** para pesquisar. Clique em **adquirir números**. O número adquirido recentemente será exibido na guia **números de telefone** .
-#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Etapa 4: atribuir o número PSTN à instância do aplicativo
-Com as credenciais de administrador de locatário, chame os seguintes cmdlets no PowerShell remoto do locatário para atribuir o número PSTN à instância do aplicativo. Para obter mais informações, consulte [set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+#### <a name="step-2-assign-microsoft-365-licenses"></a>Etapa 2: Atribuir licenças do Microsoft 365
+1. Use as credenciais de administrador de locatários para entrar e acessar a guia https://admin.microsoft.com/ **Usuários -> Usuários ativos.**
+2. Selecione a instância do aplicativo, atribua o Plano de Chamadas Domésticas e Internacionais do **Microsoft 365** e o Sistema de Telefonia do **Microsoft 365 -** Licenças de Usuário Virtual e clique em Salvar **alterações.** Se as licenças necessárias não estão disponíveis no locatário, você pode obter-as na guia Cobrança **-> serviços de** compra.
+#### <a name="step-3-acquire-pstn-number"></a>Etapa 3: Adquirir número PSTN
+1. Use as credenciais de administrador de locatários para entrar e clique na guia https://admin.teams.microsoft.com/ **Portal** herddo no painel esquerdo.
+2. Na nova página, vá para a **guia de números de telefone > voz.**
+3. Clique no botão, selecione Novos Números de Serviço e vá para a página Adicionar **+** **novos números de** serviço. 
+4. Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search. Clique **em adquirir números.** O número recém-adquirido será aparecer na guia **números de** telefone.
+#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Etapa 4: Atribuir número PSTN à instância do aplicativo
+Com credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para atribuir o número PSTN à instância do aplicativo. Para obter mais informações, consulte [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
 ```
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-> **Observação:** Se um locatário tem números PSTN australianos atribuídos a qualquer instância de aplicativo, essa chamada pode falhar. Se um locatário é recém-criado, pode levar alguns dias para que esse recurso esteja disponível.
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -488,7 +487,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-#### <a name="notification---transferring"></a>Notificação-Transferindo
+#### <a name="notification---transferring"></a>Notificação - transferência
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -516,9 +515,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-accepted"></a>Notificação-transferência aceita
+#### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode ocorrer após ou antes do áudio de estado de mídia inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes do estado de mídia de áudio inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -546,7 +545,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-completed"></a>Notificação-transferência concluída
+#### <a name="notification---transfer-completed"></a>Notificação - transferência concluída
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -579,9 +578,9 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="notification---transfer-failed"></a>Notificação-falha na transferência
+### <a name="notification---transfer-failed"></a>Notificação - falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falha, o estado de chamada será `established` .
+> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -615,12 +614,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-consultative-transfer-to-pstn-number"></a>Exemplo 4: transferência consultiva para o número PSTN
+### <a name="example-4-consultative-transfer-to-pstn-number"></a>Exemplo 4: Transferência consultiva para número PSTN
 
-Essa chamada requer uma instância de aplicativo com o número PSTN atribuído, conforme descrito no exemplo 3.
-
-> **Observação:** Essa chamada pode falhar se um locatário tem números PSTN australianos atribuídos a qualquer instância de aplicativo. Se um locatário é recém-criado, pode levar alguns dias para que esse recurso esteja disponível.
-
+Essa chamada requer uma instância de aplicativo com o número PSTN atribuído, conforme descrito no Exemplo 3.
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -666,7 +662,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-#### <a name="notification---transferring"></a>Notificação-Transferindo
+#### <a name="notification---transferring"></a>Notificação - transferência
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -694,9 +690,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-accepted"></a>Notificação-transferência aceita
+#### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode ocorrer após ou antes do áudio de estado de mídia inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes que o áudio do estado da mídia seja inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -724,7 +720,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-completed"></a>Notificação-transferência concluída
+#### <a name="notification---transfer-completed"></a>Notificação - transferência concluída
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -753,9 +749,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-failed"></a>Notificação-falha na transferência
+#### <a name="notification---transfer-failed"></a>Notificação - falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falha, o estado de chamada será `established` .
+> **Observação:** Quando uma transferência de chamada falhar, o estado da chamada será `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls

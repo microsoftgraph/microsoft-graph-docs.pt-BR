@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: e7eda13ab86c65ed2cfc8243a88d462a4348ee9c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 87a5fc5f29d23b6c9a7fbbe48b059066001d5419
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130368"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176988"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -20,11 +20,15 @@ Namespace: microsoft.graph
 
 Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). 
 
-Dependendo do tamanho da página e dos dados da caixa de correio, a obtenção de mensagens de uma caixa de correio pode incorrer em várias solicitações. O tamanho de página padrão é 10 mensagens. Para obter a próxima página de mensagens, basta aplicar a URL inteira retornada em `@odata.nextLink` à próxima solicitação de obtenção de mensagens. Esta URL inclui todos os parâmetros de consulta que você especificou na solicitação inicial. 
+Dependendo do tamanho da página e dos dados da caixa de correio, a obtenção de mensagens de uma caixa de correio pode incorrer em várias solicitações. O tamanho de página padrão é 10 mensagens. Use `$top` para personalizar o tamanho da página, dentro do intervalo de 1 e 1000.
+
+Para melhorar o tempo de resposta da operação, use para especificar as propriedades exatas de que você `$select` precisa; consulte [o exemplo 1](#example-1-list-all-messages) abaixo. Ajuste os valores para e, especialmente quando você deve usar um tamanho de página maior, pois retornar uma página com centenas de mensagens cada uma com uma carga de resposta completa pode disparar o tempo de vida do `$select` `$top` [gateway](/graph/errors#http-status-codes) (HTTP 504).
+
+Para obter a próxima página de mensagens, basta aplicar a URL inteira retornada em `@odata.nextLink` à próxima solicitação de obtenção de mensagens. Esta URL inclui todos os parâmetros de consulta que você especificou na solicitação inicial. 
 
 Não tente extrair o valor `$skip` da URL `@odata.nextLink` para manipular respostas. Essa API usa o valor `$skip` para manter a contagem de todos os itens pelos quais passou na caixa de correio do usuário para retornar uma página de itens do tipo mensagem. Portanto, é possível que, mesmo na resposta inicial, o valor `$skip` seja maior que o tamanho da página. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
-Você pode filtrar as mensagens e obter apenas aquelas que incluem uma [menção](../resources/mention.md) do usuário assinado. Veja um [exemplo](#request-2) abaixo. Por padrão, a `GET /me/messages` operação não retorna a propriedade **menções.** Use o `$expand` parâmetro de consulta para encontrar detalhes de cada [menção em uma mensagem.](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message)
+Você pode filtrar as mensagens e obter apenas aquelas que incluem [uma](../resources/mention.md) menção do usuário entrar. Veja um [exemplo](#request-2) abaixo. Por padrão, a `GET /me/messages` operação não retorna a propriedade **menções.** Use o `$expand` parâmetro de consulta para encontrar detalhes de cada [menção em uma mensagem.](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message)
 
 Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
@@ -98,8 +102,9 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de objetos [message](../resources/message.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request-1"></a>Solicitação 1
+## <a name="examples"></a>Exemplos
+### <a name="example-1-list-all-messages"></a>Exemplo 1: Listar todas as mensagens
+#### <a name="request"></a>Solicitação
 O primeiro exemplo obtém as 10 principais mensagens padrão na caixa de correio do usuário. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -128,7 +133,7 @@ GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 
 ---
 
-##### <a name="response-1"></a>Resposta 1
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Para obter a próxima página de mensagens, aplique a URL retornada em `@odata.nextLink` a uma solicitação GET subsequente.
 
 <!-- {
@@ -238,8 +243,8 @@ Content-type: application/json
 }
 ```
 
-
-##### <a name="request-2"></a>Solicitação 2
+### <a name="example-2-use-filter-to-get-all-messages-satisfying-a-specific-condition"></a>Exemplo 2: Use $filter para obter todas as mensagens que satisfazem uma condição específica
+#### <a name="request"></a>Solicitação
 O próximo exemplo filtra todas as mensagens na caixa de correio do usuário que o mencionam. Ele também usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
 
 O exemplo também incorpora a codificação de URL para os caracteres de espaço na cadeia de caracteres do parâmetro de consulta.
@@ -270,7 +275,7 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMenti
 
 ---
 
-##### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -322,7 +327,8 @@ Content-length: 987
 }
 ```
 
-##### <a name="request-3"></a>Solicitação 3
+### <a name="example-3-use-prefer-header-to-get-the-message-body-and-uniquebody-is-text-format"></a>Exemplo 3: Usar o header prefer para obter o corpo da mensagem e uniqueBody é o formato de texto
+#### <a name="request"></a>Solicitação
 O terceiro exemplo mostra como usar um header para obter o corpo e as propriedades `Prefer: outlook.body-content-type="text"` **uniqueBody** de cada mensagem no formato de texto. 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -352,7 +358,7 @@ Prefer: outlook.body-content-type="text"
 
 ---
 
-##### <a name="response-3"></a>Resposta 3
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
 <!--

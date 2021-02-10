@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a3c6ae4419a09f14c5a1374250ad7d1208aebf4d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 76b5cb609ca5661e0d9592897723e1fccaa8a0e8
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970315"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177253"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | User. ReadBasic. All e GroupMember. Read. All, User. Read e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All, User. Read e Group. Read. All, User. Read. All e Group. Read. All, Directory. Read. All, Directory.. All, Directory. AccessAsUser. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadBasic.All, User.Read, User.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                                                                       |
-| Aplicativo                            | User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All            |
+| Aplicativo                            | User.Read.All, Directory.Read.All, Directory.ReadWrite.All            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
