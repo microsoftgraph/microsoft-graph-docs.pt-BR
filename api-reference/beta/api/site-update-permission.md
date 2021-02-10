@@ -5,28 +5,28 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0bf32370cf83176d79c1766d74036e5afb273297
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 609013d8150cec5ff1be6f95b7bb254536a68acc
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160149"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177260"
 ---
-# <a name="update-permission"></a><span data-ttu-id="f7992-103">Atualizar permissão</span><span class="sxs-lookup"><span data-stu-id="f7992-103">Update permission</span></span>
-<span data-ttu-id="f7992-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f7992-104">Namespace: microsoft.graph</span></span>
+# <a name="update-permission"></a><span data-ttu-id="9cc11-103">Atualizar permissão</span><span class="sxs-lookup"><span data-stu-id="9cc11-103">Update permission</span></span>
+<span data-ttu-id="9cc11-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9cc11-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f7992-105">Atualize [o objeto](../resources/permission.md) permission em um site.</span><span class="sxs-lookup"><span data-stu-id="f7992-105">Update the [permission](../resources/permission.md) object on a site.</span></span>
+<span data-ttu-id="9cc11-105">Atualize [o objeto](../resources/permission.md) permission em um site.</span><span class="sxs-lookup"><span data-stu-id="9cc11-105">Update the [permission](../resources/permission.md) object on a site.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f7992-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f7992-106">Permissions</span></span>
-<span data-ttu-id="f7992-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7992-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9cc11-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="9cc11-106">Permissions</span></span>
+<span data-ttu-id="9cc11-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9cc11-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f7992-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f7992-109">Permission type</span></span>                        | <span data-ttu-id="f7992-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f7992-110">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="9cc11-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9cc11-109">Permission type</span></span>                        | <span data-ttu-id="9cc11-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9cc11-110">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="f7992-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f7992-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f7992-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f7992-112">Not supported.</span></span>
-|<span data-ttu-id="f7992-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f7992-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7992-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f7992-114">Not supported.</span></span>
-|<span data-ttu-id="f7992-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f7992-115">Application</span></span>                            | <span data-ttu-id="f7992-116">Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="f7992-116">Sites.FullControl.All</span></span>
+|<span data-ttu-id="9cc11-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9cc11-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="9cc11-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9cc11-112">Not supported.</span></span>
+|<span data-ttu-id="9cc11-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9cc11-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9cc11-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9cc11-114">Not supported.</span></span>
+|<span data-ttu-id="9cc11-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9cc11-115">Application</span></span>                            | <span data-ttu-id="9cc11-116">Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="9cc11-116">Sites.FullControl.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f7992-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f7992-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9cc11-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9cc11-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -36,22 +36,24 @@ ms.locfileid: "50160149"
 PATCH /sites/{sitesId}/permissions/{permissionId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f7992-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f7992-118">Request headers</span></span>
-|<span data-ttu-id="f7992-119">Nome</span><span class="sxs-lookup"><span data-stu-id="f7992-119">Name</span></span>|<span data-ttu-id="f7992-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="f7992-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9cc11-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9cc11-118">Request headers</span></span>
+|<span data-ttu-id="9cc11-119">Nome</span><span class="sxs-lookup"><span data-stu-id="9cc11-119">Name</span></span>|<span data-ttu-id="9cc11-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="9cc11-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="f7992-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="f7992-121">Authorization</span></span>|<span data-ttu-id="f7992-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f7992-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="f7992-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f7992-124">Content-Type</span></span>|<span data-ttu-id="f7992-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f7992-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="9cc11-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="9cc11-121">Authorization</span></span>|<span data-ttu-id="9cc11-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9cc11-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="9cc11-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9cc11-124">Content-Type</span></span>|<span data-ttu-id="9cc11-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9cc11-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f7992-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f7992-127">Request body</span></span>
-<span data-ttu-id="f7992-128">No corpo da solicitação, fornece uma representação JSON do [objeto permission.](../resources/permission.md)</span><span class="sxs-lookup"><span data-stu-id="f7992-128">In the request body, supply a JSON representation of the [permission](../resources/permission.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9cc11-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9cc11-127">Request body</span></span>
+<span data-ttu-id="9cc11-128">No corpo da solicitação, fornece uma representação JSON do [objeto permission.](../resources/permission.md)</span><span class="sxs-lookup"><span data-stu-id="9cc11-128">In the request body, supply a JSON representation of the [permission](../resources/permission.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f7992-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="f7992-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9cc11-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="9cc11-129">Response</span></span>
 
-<span data-ttu-id="f7992-130">Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [de](../resources/permission.md) permissão no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f7992-130">If successful, this method returns a `200 OK` response code and a [permission](../resources/permission.md) object in the response body.</span></span>
+<span data-ttu-id="9cc11-130">Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [de](../resources/permission.md) permissão no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9cc11-130">If successful, this method returns a `200 OK` response code and a [permission](../resources/permission.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f7992-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f7992-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="9cc11-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="9cc11-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="f7992-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f7992-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9cc11-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9cc11-132">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="9cc11-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="9cc11-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_permission_from_"
@@ -65,9 +67,27 @@ Content-Type: application/json
   "roles": ["read"]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="9cc11-134">C#</span><span class="sxs-lookup"><span data-stu-id="9cc11-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="9cc11-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9cc11-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="9cc11-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9cc11-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-permission-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="9cc11-137">Java</span><span class="sxs-lookup"><span data-stu-id="9cc11-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-permission-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-### <a name="response"></a><span data-ttu-id="f7992-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="f7992-133">Response</span></span>
+
+### <a name="response"></a><span data-ttu-id="9cc11-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="9cc11-138">Response</span></span>
 
 <!-- {
   "blockType": "response",
