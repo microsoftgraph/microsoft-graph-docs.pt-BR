@@ -1,35 +1,35 @@
 ---
-title: 'participante: convidar'
+title: 'participante: invite'
 description: Convide participantes para a chamada ativa.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 35a886fa40beb85a636dcbbf0895d35e204e4675
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d4702e7257a5c49a8ef1232391dc923589bd2808
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079351"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177099"
 ---
-# <a name="participant-invite"></a>participante: convidar
+# <a name="participant-invite"></a>participante: invite
 
 Namespace: microsoft.graph
 
 Convide participantes para a chamada ativa.
 
-Para obter mais informações sobre como lidar com as operações, consulte [commsoperation](../resources/commsoperation.md).
+Para obter mais informações sobre como lidar com operações, consulte [commsoperation](../resources/commsoperation.md).
 
 >**Observação:** Essa API só é suportada para chamadas de grupo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
 | :-------------- | :--------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Incompatível                       |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte                       |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                       |
-| Aplicativo     | Calls.InitiateGroupCalls. All                               |
+| Aplicativo     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -48,23 +48,23 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes que serão convidados.|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
+|participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes a serem convidados.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se succsessful, este método retornará um `200 OK` código de resposta e um cabeçalho de local com um URI para o [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. 
+Se tiver sucesso, este método retornará um código de resposta e um header de local com um URI para `200 OK` [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. 
 
-O corpo da resposta contém o [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)criado.
+O corpo da resposta contém o [inviteParticipantsOperation criado.](../resources/inviteparticipantsoperation.md)
 
->**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
+>**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização da lista de participação.
 
 
 ## <a name="examples"></a>Exemplos
 Os exemplos a seguir mostram como chamar essa API.
 
-> **Observação:** Os objetos Response podem ser reduzidos para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** Os objetos de resposta podem ser reduzidos para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
 
-### <a name="example-1-invite-one-participant-to-an-existing-group-call"></a>Exemplo 1: convidar um participante para uma chamada de grupo existente
+### <a name="example-1-invite-one-participant-to-an-existing-group-call"></a>Exemplo 1: Convidar um participante para uma chamada de grupo existente
 
 ##### <a name="request"></a>Solicitação
 
@@ -152,7 +152,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação-operação concluída
+##### <a name="notification---operation-completed"></a>Notificação - operação concluída
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -196,7 +196,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>Notificação-lista atualizada com o participante adicionado
+##### <a name="notification---roster-updated-with-participant-added"></a>Notificação - lista atualizada com o participante adicionado
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -250,9 +250,9 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>Exemplo 2: convidar vários participantes para uma chamada de grupo existente
+### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>Exemplo 2: Convidar vários participantes para uma chamada de grupo existente
 
-> **Observação**: a chamada de grupo existente deve ter um [chatInfo](../resources/chatInfo.md)válido. É suportado o convite para até 5 participantes.
+> **Observação:** a chamada de grupo existente deve ter um [chatInfo válido.](../resources/chatInfo.md) Há suporte para até cinco participantes.
 
 ##### <a name="request"></a>Solicitação
 
@@ -366,7 +366,7 @@ Content-Type: application/json
 }
 
 ```
-##### <a name="notification---operation-completed"></a>Notificação-operação concluída
+##### <a name="notification---operation-completed"></a>Notificação - operação concluída
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
@@ -420,7 +420,7 @@ Content-Type: application/json
 }
 
 ```
-##### <a name="notification---roster-updated-with-participants-added"></a>Lista de notificação atualizada com os participantes adicionados
+##### <a name="notification---roster-updated-with-participants-added"></a>Notificação - lista atualizada com participantes adicionados
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
@@ -503,14 +503,14 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Exemplo 3: convidar participantes para uma chamada de grupo existente, substituindo uma chamada ponto a ponto existente
+### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Exemplo 3: Convidar participantes para uma chamada de grupo existente, substituindo uma chamada ponto a ponto existente
 
 
-A API INVITE suporta apenas um participante ao substituir uma chamada ponto a ponto existente. Quando vários participantes são fornecidos no corpo da solicitação, apenas o primeiro participante será lido e o restante dos participantes será ignorado.
+A API de convite dá suporte a apenas um participante ao substituir uma chamada ponto a ponto existente. Quando vários participantes são fornecidos no corpo da solicitação, somente o primeiro participante será lido e o restante dos participantes será ignorado.
 
 
-> **Observação:** A API INVITE oferece suporte somente a um participante quando `replacesCallId` é fornecido. 
-> Para obter detalhes sobre como usar `replacesCallId` o para substituir uma chamada ponto a ponto existente, consulte [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
+> **Observação:** A API de convite dá suporte a apenas um participante `replacesCallId` quando fornecido. 
+> Para obter detalhes sobre como usar para substituir uma chamada ponto a ponto existente, consulte `replacesCallId` [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
 
 ##### <a name="request"></a>Solicitação
 
@@ -598,7 +598,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação-operação concluída
+##### <a name="notification---operation-completed"></a>Notificação - operação concluída
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -643,7 +643,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>Notificação-lista atualizada com o participante adicionado
+##### <a name="notification---roster-updated-with-participant-added"></a>Notificação - lista atualizada com o participante adicionado
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -698,7 +698,201 @@ Content-Type: application/json
 }
 ```
 
->**Observação:** Com um status de "concluído", você pode esperar receber notificações sobre como sua chamada ponto a ponto original foi terminada e excluída.
+>**Observação:** Com um status "concluído", você pode esperar receber notificações sobre como sua chamada ponto a ponto original foi encerrada e excluída.
+
+### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Exemplo 4: Convidar um participante PSTN para uma chamada de grupo existente
+
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído.
+
+#### <a name="step-1-create-application-instance"></a>Etapa 1: Criar instância de aplicativo
+Usando credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para criar a instância do aplicativo. Para obter mais informações, [consulte New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+```
+PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+#### <a name="step-2-assign-microsoft-365-licenses"></a>Etapa 2: Atribuir licenças do Microsoft 365
+1. Use as credenciais de administrador de locatários para entrar e acessar a guia https://admin.microsoft.com/ **Usuários -> Usuários ativos.**
+2. Selecione a instância do aplicativo, atribua o Plano de Chamadas Domésticas e Internacionais do **Microsoft 365** e o Sistema de Telefonia do **Microsoft 365 -** Licenças de Usuário Virtual e clique em Salvar **alterações.** Se as licenças necessárias não estão disponíveis no locatário, você pode obter-as na guia Cobrança **-> serviços de** compra.
+#### <a name="step-3-acquire-pstn-number"></a>Etapa 3: Adquirir número PSTN
+1. Use as credenciais de administrador de locatários para entrar e clique na guia https://admin.teams.microsoft.com/ **Portal** herddo no painel esquerdo.
+2. Na nova página, vá para a **guia de números de telefone > voz.**
+3. Clique no botão, selecione Novos Números de Serviço e vá para a página Adicionar **+** **novos números de** serviço. 
+4. Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search. Clique **em adquirir números.** O número recém-adquirido será aparecer na guia **números de** telefone.
+#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Etapa 4: Atribuir número PSTN à instância do aplicativo
+Com credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para atribuir o número PSTN à instância do aplicativo. Para obter mais informações, consulte [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+```
+PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "participant-invite"
+}-->
+```http
+POST /communications/calls/{id}/participants/invite
+Content-Type: application/json
+Content-Length: 464
+
+{
+  "participants": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
+  "id": "eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+  "status": "Running",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
+  "participants": [
+    {
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": null,
+      "identity": {
+        "user": null,
+        "guest": null,
+        "encrypted": null,
+        "onPremises": null,
+        "applicationInstance": null,
+        "application": null,
+        "device": null,
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ]
+}
+```
+
+#### <a name="notification---operation-completed"></a>Notificação - operação concluída
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{ 
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[ 
+      { 
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"deleted",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+         "resourceData":{ 
+            "@odata.type":"#microsoft.graph.inviteParticipantsOperation",
+            "participants":[ 
+               { 
+                  "@odata.type":"#microsoft.graph.invitationParticipantInfo",
+                  "identity":{ 
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "phone": {
+                        "@odata.type": "#microsoft.graph.identity",
+                        "id": "+12345678901"
+                     }
+                  }
+               }
+            ],
+            "status":"completed",
+            "clientContext":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+            "id":"eec3812a-fdc3-4fb4-825c-a06c9f35414e"
+         }
+      }
+   ]
+}
+```
+
+#### <a name="notification---roster-updated-with-participant-added"></a>Notificação - lista atualizada com o participante adicionado
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"updated",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceData":[
+            {
+               "@odata.type":"#microsoft.graph.participant",
+               "info":{
+                  "@odata.type":"#microsoft.graph.participantInfo",
+                  "identity":{
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "phone": {
+                        "@odata.type": "#microsoft.graph.identity",
+                        "id": "+12345678901"
+                     }
+                  },
+                  "endpointType":"default"
+               },
+               "mediaStreams":[
+                  {
+                     "@odata.type":"#microsoft.graph.mediaStream",
+                     "mediaType":"audio",
+                     "sourceId":"1",
+                     "direction":"sendReceive",
+                     "serverMuted":false
+                  }
+               ],
+               "isMuted":false,
+               "isInLobby":false,
+               "id":null
+            }
+         ]
+      }
+   ]
+}
+
+```
+
+>**Observação:** Com um status, você pode esperar receber notificações sobre como sua chamada ponto a ponto original foi encerrada `completed` e excluída.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

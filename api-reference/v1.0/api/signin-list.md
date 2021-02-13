@@ -5,18 +5,18 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: b9df6954a07925c49cfcdf539270ed6a2757678e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 90e48837976afedd8b5da14febff47bb99d615ea
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131982"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177078"
 ---
 # <a name="list-signins"></a>Listar logons
 
 Namespace: microsoft.graph
 
-Recupera os logons de usuário do Azure AD para seu locatário. Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
+Recupera os logons de usuário do Azure AD para seu locatário. As inserções que são interativas por natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de logom.
 
 ## <a name="permissions"></a>Permissões
 
@@ -72,7 +72,7 @@ Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos de [logon](../resources/signin.md) no corpo da resposta.
+Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos de [logon](../resources/signin.md) no corpo da resposta. A coleção de objetos é listada em ordem decrescente com base em **createdDateTime**.
 
 ## <a name="example"></a>Exemplo
 

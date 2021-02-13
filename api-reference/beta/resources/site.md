@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 625017970be66b64ffa593e726b6aaf647fe05d6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 152100311e85dc905e14ca6f434a9a9fbe1d87fe
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092283"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155836"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -37,6 +37,11 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Seguir site][]                | POST /users/{user-id}/followedSites/add
 | [Deixar de seguir site][]              | POST /users/{user-id}/followedSites/remove
 | [Listar sites seguidos][]        | GET /me/followedSites
+| [Obter permissão][]             | GET /sites/{site-id}/permissions/{permission-id}
+| [Listar permissões][]           | GET /sites/{site-id}/permissions
+| [Criar permissões][]         | POST /sites/{site-id}/permissions
+| [Excluir permissão][]         | DELETE /sites/{site-id}/permissions/{permission-id}
+| [Atualizar permissão][]         | PATCH /sites/{site-id}/permissions/{permission-id}
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -50,6 +55,11 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 [Seguir site]: ../api/site-follow.md
 [Deixar de seguir site]: ../api/site-unfollow.md
 [Listar sites seguidos]: ../api/sites-list-followed.md
+[Obter permissão]: ../api/site-get-permission.md
+[Listar permissões]: ../api/site-list-permissions.md
+[Criar permissões]: ../api/site-post-permissions.md
+[Excluir permissão]: ../api/site-delete-permission.md
+[Atualizar permissão]: ../api/site-update-permission.md
 
 
 ## <a name="properties"></a>Propriedades
@@ -79,7 +89,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 * `/sites/root`: O site raiz do locatário.
 * `/groups/{group-id}/sites/root`: O site da equipe do grupo.
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 
 | Nome da relação | Tipo                             | Descrição
 |:------------------|:---------------------------------|:----------------------
@@ -91,6 +101,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 | **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
 | **lists**         | Collection([list][])             | O conjunto de listas neste site.
 | **pages**         | Collection([sitePage][])         | O conjunto de páginas na lista SitePages no site.
+| **permissões**   | Coleção([permissão][])         | As permissões associadas ao site. Anulável.
 | **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
 
 [columnDefinition]: columndefinition.md
@@ -100,6 +111,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
 [list]: list.md
+[permissão]: permission.md
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
@@ -120,6 +132,7 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
     "siteCollection",
     "drive",
     "drives",
+    "permissions",
     "sites"
   ],
   "keyProperty": "id",
@@ -142,6 +155,7 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
+  "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
 
@@ -168,5 +182,3 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "suppressions": []
 }
 -->
-
-

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e839d9936409a954fe8ca307b0d0310000076d64
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ebfa1907cd6234770a02809202a0cd738e1d207d
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133893"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177064"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -20,24 +20,24 @@ Leia as propriedades, os relacionamentos ou o conteúdo bruto de um anexo que es
 
 Um anexo pode ser de um dos seguintes tipos:
 
-* Um arquivo. Programaticamente, este é um recurso [fileAttachment](../resources/fileattachment.md).
-* Um item do Outlook (contato, evento ou mensagem). Programaticamente, um anexo de item é um recurso [itemAttachment](../resources/itemattachment.md). Você pode usar `$expand` para obter mais propriedades desse item. Veja um [exemplo](#request-2) abaixo.
-* Um link para um arquivo armazenado na nuvem. Programaticamente, este é um recurso [referenceAttachment](../resources/referenceattachment.md).
+* Um arquivo. Programaticamente, este é um recurso [fileAttachment](../resources/fileattachment.md). Veja [exemplo 1](#example-1-get-the-properties-of-a-file-attachment).
+* Um item do Outlook (contato, evento ou mensagem). Programaticamente, um anexo de item é um recurso [itemAttachment](../resources/itemattachment.md). Você pode usar `$expand` para obter ainda mais as propriedades desse item, incluindo quaisquer anexos aninhados em até 30 níveis. Veja o [exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) e o [exemplo 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
+* Um link para um arquivo armazenado na nuvem. Programaticamente, este é um recurso [referenceAttachment](../resources/referenceattachment.md). Veja o[exemplo 5](#example-5-get-the-properties-of-a-reference-attachment).
 
 Todos esses tipos de anexos são derivados do recurso [anexo](../resources/attachment.md). 
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Obter o conteúdo bruto de um arquivo ou anexo de item
 Você pode anexar o segmento do caminho `/$value` para obter o conteúdo bruto de um arquivo ou anexo de item. 
 
-Para um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original. Veja um [exemplo](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) abaixo.
+Para um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original. Veja o[exemplo 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message).
 
 Para um anexo de item que é um [contato](../resources/contact.md), [evento](../resources/event.md) ou [mensagem](../resources/message.md), o conteúdo bruto retornado está no formato MIME.
 
 | Tipo de anexo do item  | Conteúdo bruto retornado |
 |:-----------|:----------|
-| **contato** | Formato [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME. Confira um [exemplo](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
-| **event** | Formato iCal MIME. Confira um [exemplo](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
-| **message** | Formato MIME. Confira um [exemplo](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
+| **contato** | Formato [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME. Confira um [exemplo](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **event** | Formato iCal MIME. Confira um [exemplo](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
+| **message** | Formato MIME. Confira um [exemplo](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
 
 A tentativa de obter o `$value` de um anexo de referência retorna HTTP 405.
 
@@ -145,7 +145,10 @@ GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método também dá suporte a alguns [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Use `$expand` para obter as propriedades de um anexo de item (contato, evento ou mensagem). Veja o [exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) e o [exemplo 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
@@ -344,6 +347,7 @@ Content-type: application/json
     "hasAttachments":false,
     "internetMessageId":"<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
     "subject":"Reminder - please bring laptop",
+    "bodyPreview": "PFA\r\n\r\nThanks,\r\nRob",
     "importance":"normal",
     "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
     "conversationIndex":"AQHTAbcSwb41IIwGp0qstrYSZH+U7Q==",
@@ -352,6 +356,7 @@ Content-type: application/json
     "isRead":false,
     "isDraft":false,
     "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "internetMessageHeaders": [ ],
     "body":{
       "contentType":"html",
       "content":"<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
@@ -383,14 +388,117 @@ Content-type: application/json
           "address":"AdeleV@contoso.onmicrosoft.com"
         }
       }
-    ]
+    ],
+    "flag":{
+      "flagStatus":"notFlagged"
+    }
   }
 }
 ```
 
+### <a name="example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item"></a>Exemplo 4: Expanda e obtenha as propriedades de um item anexado a uma mensagem, incluindo qualquer anexo do item
+#### <a name="request"></a>Solicitação
+O próximo exemplo usa a mesma solicitação do [exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) para obter as propriedades de um anexo de item em uma mensagem usando `$expand`. Nesse caso, como o item anexado também contém um anexo de arquivo, a resposta também inclui as propriedades do anexo de arquivo. 
 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
+  "name": "get_and_expand_nested_item_attachment"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item 
+```
 
-### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>Exemplo 4: Obter as propriedades de um anexo de referência
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "name": "get_and_expand_nested_item_attachment",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.itemAttachment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments(microsoft.graph.itemAttachment/item())/$entity",
+    "@odata.type": "#microsoft.graph.itemAttachment",
+    "id": "AAMkADA1MCJKtzmnlcqVgqI=",
+    "lastModifiedDateTime": "2021-01-06T13:28:11Z",
+    "name": "Nested Message With Attachment",
+    "contentType": null,
+    "size": 465916,
+    "isInline": false,
+    "item@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
+    "item": {
+        "@odata.type": "#microsoft.graph.message",
+        "id": "",
+        "createdDateTime": "2021-01-06T13:28:30Z",
+        "lastModifiedDateTime": "2021-01-06T13:27:40Z",
+        "receivedDateTime": "2021-01-06T13:27:25Z",
+        "sentDateTime": "2021-01-06T13:27:04Z",
+        "hasAttachments": true,
+        "internetMessageId": "<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
+        "subject": "Nested Message With Attachment",
+        "bodyPreview": "PFAThanks,Adele",
+        "importance": "normal",
+        "conversationId": "AAQkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWQyZjg2YWQwMTNkZAAQAO6hkp84oMdGm6ZBsSH72sE=",
+        "conversationIndex": "AQHW5C+U7qGSnzigx0abpkGxIfvawQ==",
+        "isDeliveryReceiptRequested": false,
+        "isReadReceiptRequested": false,
+        "isRead": true,
+        "isDraft": false,
+        "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ItemAttachment",
+        "internetMessageHeaders": [],
+        "body": {
+            "contentType": "html",
+            "content": "<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
+        },
+        "sender": {
+            "emailAddress": {
+                "name": "Adele Vance",
+                "address": "Adele.Vance@microsoft.com"
+            }
+        },
+        "from": {
+            "emailAddress": {
+                "name": "Adele Vance",
+                "address": "Adele.Vance@microsoft.com"
+            }
+        },
+        "toRecipients": [
+            {
+                "emailAddress": {
+                    "name": "Adele Vance",
+                    "address": "Adele.Vance@microsoft.com"
+                }
+            }
+        ],
+        "flag": {
+            "flagStatus": "notFlagged"
+        },
+        "attachments@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/microsoft.graph.itemAttachment/item/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/attachments",
+        "attachments": [
+            {
+                "@odata.type": "#microsoft.graph.fileAttachment",
+                "@odata.mediaContentType": "application/pdf",
+                "id": "AAMkADg3NTYULmbsDYNg==",
+                "lastModifiedDateTime": "2021-01-21T14:56:18Z",
+                "name": "Info.pdf",
+                "contentType": "application/pdf",
+                "size": 417351,
+                "isInline": false,
+                "contentId": null,
+                "contentLocation": null,
+                "contentBytes": "JVBERi0xLjUNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMiAwIFIvTGFuZyhlbi1JTikgL1N0cnVjdFRyZWVSb29"
+            }
+        ]
+    }
+}
+```
+
+### <a name="example-5-get-the-properties-of-a-reference-attachment"></a>Exemplo 5: Obtenha as propriedades de um anexo de referência
 
 #### <a name="request"></a>Solicitação
 Aqui está um exemplo da solicitação para obter um anexo de referência de uma mensagem.
@@ -446,7 +554,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Exemplo 5: Obter o conteúdo bruto de um anexo de arquivo em uma mensagem
+### <a name="example-6-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Exemplo 6: Obtenha o conteúdo bruto de um anexo de arquivo em uma mensagem
 
 #### <a name="request"></a>Solicitação
 
@@ -477,7 +585,7 @@ HTTP/1.1 200 OK
 ```
 
 
-### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Exemplo 6: obter o conteúdo bruto MIME de um anexo de contato em uma mensagem
+### <a name="example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Exemplo 7: Obtenha o conteúdo bruto MIME de um anexo de contato em uma mensagem
 
 #### <a name="request"></a>Solicitação
 
@@ -526,7 +634,7 @@ END:VCARD
 ```
 
 
-### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Exemplo 7: Obter o conteúdo bruto MIME de um anexo de evento em uma mensagem
+### <a name="example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Exemplo 8: Obtenha o conteúdo bruto MIME de um anexo de evento em uma mensagem
 
 #### <a name="request"></a>Solicitação
 
@@ -606,7 +714,7 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Exemplo 8: Obter o conteúdo bruto MIME de um anexo de item de convite de reunião em uma mensagem
+### <a name="example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Exemplo 9: Obtenha o conteúdo bruto MIME de um anexo de item de convite de reunião em uma mensagem
 
 #### <a name="request"></a>Solicitação
 

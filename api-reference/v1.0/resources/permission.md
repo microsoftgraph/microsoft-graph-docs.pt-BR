@@ -7,12 +7,12 @@ localization_priority: Priority
 description: O recurso Permission fornece informações sobre uma permissão de compartilhamento concedida a um recurso DriveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0736268bfa2670a3afd05874a44a9a72f81621e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aaea9aa9ac1bbb6368b2303973aa461c89f3f720
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074878"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177057"
 ---
 # <a name="permission-resource-type"></a>Tipo de recurso permission
 
@@ -84,7 +84,7 @@ Permissões com uma faceta [**invitation**][SharingInvitation] representam permi
 
 ### <a name="roles-property-values"></a>Valores de propriedades Roles
 
-| Função              | Detalhes                                                                        |
+| Valor              | Descrição                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
 | leitura            | Oferece a capacidade de ler os metadados e o conteúdo do item.            |
 | gravação           | Oferece a capacidade de ler e modificar os metadados e o conteúdo do item. |

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0bcacfa2d17b6105b943cb2391da0db423d120c0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 030594006de62bb4c146cad4cae70fcb4c51485c
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137197"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176392"
 ---
 # <a name="user-translateexchangeids"></a>user: translateExchangeIds
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:----------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | User.ReadBasic.All, User.Read, User.ReadWrite |
+| Delegado (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadBasic.All, User.Read, User.ReadWrite |
 | Aplicativo | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,13 +47,13 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-| inputIds | String collection | Uma coleção de identificadores a converter. Todos os identificadores na coleção DEVEM ter o mesmo tipo de ID de origem e DEVEM ser para itens na mesma caixa de correio. O tamanho máximo dessa coleção é de 1000 cadeias de caracteres. |
+| inputIds | Conjunto de cadeias de caracteres | Uma coleção de identificadores a converter. Todos os identificadores na coleção DEVEM ter o mesmo tipo de ID de origem e DEVEM ser para itens na mesma caixa de correio. O tamanho máximo dessa coleção é de 1000 cadeias de caracteres. |
 | sourceIdType | exchangeIdFormat | O tipo de identificação dos identificadores no `InputIds` parâmetro. |
 | targetIdType | exchangeIdFormat | O tipo de ID solicitado para o qual converter. |
 
 ### <a name="exchangeidformat-values"></a>Valores de exchangeIdFormat
 
-| Valores | Descrição |
+| Member | Descrição |
 |:-------|:------------|
 | entryId | O formato de ID de entrada binária usado por clientes MAPI. |
 | ewsId | O formato de ID usado pelos clientes dos Serviços Web do Exchange. |

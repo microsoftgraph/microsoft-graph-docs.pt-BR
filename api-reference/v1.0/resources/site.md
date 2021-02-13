@@ -33,10 +33,10 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Seguir site][]          | coleção de sites | Seguir um ou vários sites de usuário.
 | [Deixar de seguir site][]        | coleção de sites | Seguir um ou vários sites de usuário.
 | [Listar sites seguidos][]  | coleção de sites | Liste os sites que foram seguidos pelo usuário conectado.
-| [Obter permissão][]             | Obter /sites/{site-id}/permissions/{permission-id}
-| [Listar permissões][]           | Obter /sites/{site-id}/permissions
-| [Criar permissões][]         | Postar /sites/{site-id}/permissions
-| [Excluir permissão][]         | Excluir /sites/{site-id}/permissions/{permission-id}
+| [Obter permissão][]             | GET /sites/{site-id}/permissions/{permission-id}
+| [Listar permissões][]           | GET /sites/{site-id}/permissions
+| [Criar permissões][]         | POST /sites/{site-id}/permissions
+| [Excluir permissão][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Atualizar permissão][]         | PATCH /sites/{site-id}/permissions/{permission-id}
 
 [Obter site]: ../api/site-get.md
@@ -94,7 +94,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 | **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
 | **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
 | **lists**         | Collection([list][])             | O conjunto de listas neste site.
-| **Permissões**   | Coleção ([permissão][])         | As permissões associadas ao site. Anulável.
+| **permissions**   | Coleção ([permissão][])         | As permissões associadas ao site. Anulável.
 | **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
 | **onenote**       | [onenote][]                      | Chama o serviço OneNote para operações relacionadas ao bloco de anotações.
 
@@ -105,7 +105,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
 [list]: list.md
-[permissão]: permission.md
+[permission]: permission.md
 [site]: site.md
 [onenote]: onenote.md
 

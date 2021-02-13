@@ -1,16 +1,16 @@
 ---
 title: Verificar grupos de membros
-description: Verificar se há associação em uma lista de grupos especificada e retorna dessa lista esses grupos
+description: Verifique se há associação em uma lista de grupos especificada e retorna dessa lista esses grupos
 localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 299636d25e80224867d07661d652d7df972141e3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1daa0e3abe6badb8349806bd8af66adeafd02c7
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026086"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176211"
 ---
 # <a name="check-member-groups"></a>Verificar grupos de membros
 
@@ -18,20 +18,20 @@ Namespace: microsoft.graph
 
 Verifica se há associação em uma lista de grupos especificada e retorna dessa lista os grupos dos quais o usuário, grupo ou objeto de diretório especificado é membro. Esta função é transitiva.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User. ReadBasic. All e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All, User. adread. All e Group. Read. All, Directory. Read. All    |
+|Delegado (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read.All, Directory.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User. Read. All e GroupMember. Read. All, User. Read. All e Group. Read. All, Directory. Read. All |
+|Aplicativo | User.Read.All, Directory.Read.All |
 
-Use as orientações de cenário a seguir para ajudar a determinar quais tipos de permissão usar:
-- Use as permissões User. Read e GroupMember. Read. All ou User. Read e Group. Read. All para obter associações de grupo para o usuário conectado.
-- Use User. ReadBasic. All e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All ou User.. All e Group. Read. All para obter associações de grupo para qualquer usuário.
-- Use a permissão GroupMember. Read. All ou Group. Read. All para obter associações de grupo para um grupo.
-- Use a permissão Directory. Read. All para verificar as associações de grupo para um objeto de diretório.
+Use as diretrizes do cenário a seguir para ajudar a determinar quais tipos de permissão usar:
+- Use as permissões User.Read e GroupMember.Read.All ou User.Read e Group.Read.All para obter associações de grupo para o usuário associado.
+- Use User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to get group memberships for any user.
+- Use a permissão GroupMember.Read.All ou Group.Read.All para obter associações de grupo para um grupo.
+- Use a permissão Directory.Read.All para verificar associações de grupo para um objeto de diretório.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

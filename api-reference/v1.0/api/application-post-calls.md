@@ -1,24 +1,24 @@
 ---
 title: Criar chamada
-description: Criar uma nova chamada.
+description: Crie uma nova chamada.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ef2505caf61a9b80de4ac53be9bbb334aad00ad9
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 3b2cc1c228c767e99e33ca585c3c0869eff1bd95
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458469"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177211"
 ---
 # <a name="create-call"></a>Criar chamada
 
 Namespace: microsoft.graph
 
-Criar [chamada](../resources/call.md) permite que o bot crie uma nova chamada ponto a ponto ou de saída de grupo, ou ingresse em uma reunião existente. Você precisará [registrar o bot de chamada](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) e passar pela lista de permissões necessárias, conforme mencionado abaixo.
+Criar [chamada](../resources/call.md) permite que seu bot crie uma nova chamada ponto a ponto ou de grupo de saída ou participe de uma reunião existente. Você precisará registrar [o bot de](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) chamada e passar pela lista de permissões necessárias, conforme mencionado abaixo.
 
-> **Observação:** No momento, só há suporte para chamadas VoIP. 
+> **Observação:** Atualmente, somente chamadas VoIP são suportadas. 
 
 ## <a name="permissions"></a>Permissions
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                                                                           |
 | Delegado (conta pessoal da Microsoft) | Não suportado                                                                           |
-| Aplicativo                            | Calls. JoinGroupCallsasGuest. All, calls. JoinGroupCalls. All, Calls.Initiate. All, Calls.InitiateGroupCalls. All |
+| Aplicativo                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate. All, Calls.InitiateGroupCalls.All |
 
-> **Observação:** Para uma chamada com mídia hospedada em aplicativos, você precisará da permissão calls. AccessMedia. All além de uma das permissões listadas na tabela acima.
+> **Observação:** Para uma chamada com mídia hospedada pelo aplicativo, você precisa da permissão Calls.AccessMedia.All, além de uma das permissões listadas na tabela acima.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,19 +45,19 @@ POST /communications/calls
 | Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [Call](../resources/call.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto de](../resources/call.md) chamada.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [de](../resources/call.md) chamada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>Exemplo 1: criar uma chamada VoIP ponto a ponto com mídia hospedada pelo serviço
+### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>Exemplo 1: Criar chamada VoIP ponto a ponto com mídia hospedada pelo serviço
 
 > **Observação:** Essa chamada precisa do Calls.Initiate. Todas as permissões.
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada pelo serviço. Os valores do token de autorização, a URL de retorno de chamada, a ID do aplicativo, o nome do aplicativo, a ID do usuário, o nome do usuário e a ID do locatário devem ser substituídos por valores reais para que o exemplo funcione.
+O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome de aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para que o exemplo funcione.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -194,7 +194,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a>Notificação-estabelecimento
+##### <a name="notification---establishing"></a>Notificação - estabelecimento
 
 ```http
 POST https://bot.contoso.com/callback
@@ -223,7 +223,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---established"></a>Estabelecido em notificação
+##### <a name="notification---established"></a>Notificação - estabelecido
 
 ```http
 POST https://bot.contoso.com/callback
@@ -254,12 +254,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Exemplo 2: criar uma chamada VoIP ponto a ponto com mídia hospedada no aplicativo
+### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Exemplo 2: Criar chamada VoIP ponto a ponto com mídia hospedada pelo aplicativo
 
-> **Observação**: Este exemplo precisa de Calls.Initiate. Todas as permissões e calls. AccessMedia. All.
+> **Observação:** este exemplo precisa Calls.Initiate. Permissões All e Calls.AccessMedia.All.
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID de aplicativo, nome de aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para que o exemplo funcione.
+O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, url de retorno de chamada, id do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para que o exemplo funcione.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -398,9 +398,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>Exemplo 3: criar uma chamada de grupo com mídia hospedada pelo serviço
+### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>Exemplo 3: Criar uma chamada de grupo com mídia hospedada pelo serviço
 
-Isso oferece suporte a até 5 usuários de VoIP. O exemplo mostra como criar uma chamada de grupo com dois usuários de VoIP.
+Isso dá suporte a até 5 usuários VoIP. O exemplo mostra como criar uma chamada de grupo com dois usuários VoIP.
 > **Observação:** Esta chamada de exemplo precisa da `Calls.InitiateGroupCalls.All` permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
 
 ##### <a name="request"></a>Solicitação
@@ -465,9 +465,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Exemplo 4: criar uma chamada de grupo com mídia hospedada por aplicativo
+### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Exemplo 4: Criar uma chamada de grupo com mídia hospedada pelo aplicativo
 
-Isso oferece suporte a até 5 usuários de VoIP. O exemplo mostra como criar uma chamada de grupo com dois usuários de VoIP.
+Isso dá suporte a até 5 usuários VoIP. O exemplo mostra como criar uma chamada de grupo com dois usuários VoIP.
 > **Observação:** Esta chamada de exemplo precisa da `Calls.InitiateGroupCalls.All` permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
 
 ##### <a name="request"></a>Solicitação
@@ -532,11 +532,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>Exemplo 5: ingressar na reunião agendada com mídia hospedada pelo serviço
-Para participar da reunião agendada, precisaremos obter a ID do thread, a ID da mensagem, a ID do organizador e a ID do locatário em que a reunião está agendada.
-Essas informações podem ser obtidas na [API de reuniões online](../api/onlinemeeting-get.md) (somente em reuniões do VTC).
+### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>Exemplo 5: Ingressar em uma reunião agendada com mídia hospedada pelo serviço
+Para participar da reunião agendada, precisamos obter a ID do thread, a ID da mensagem, a ID do organizador e a ID do locatário em que a reunião está agendada.
+Essas informações podem ser obtidas da [API Obter Reuniões Online](../api/onlinemeeting-get.md) (somente reuniões baseadas em VTC).
 
-Os valores do token de autorização, a URL de retorno de chamada, a ID do aplicativo, o nome do aplicativo, a ID do usuário, o nome do usuário e a ID do locatário devem ser substituídos juntamente com os detalhes obtidos da  [API de reunião online](../api/onlinemeeting-get.md) (somente em reuniões do VTC) com valores reais para que o exemplo funcione.
+Os valores de token de autorização, url de retorno de chamada, ID do aplicativo, nome de aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos junto com os detalhes obtidos da  [API Obter](../api/onlinemeeting-get.md) Reuniões Online (somente reuniões baseadas em VTC) com valores reais para que o exemplo funcione.
 > **Observação:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão.
 
 ##### <a name="request"></a>Solicitação
@@ -669,7 +669,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a>Notificação-estabelecimento
+##### <a name="notification---establishing"></a>Notificação - estabelecimento
 
 ```http
 POST https://bot.contoso.com/callback
@@ -716,7 +716,7 @@ Content-Type: application/json
 }
 
 ```
-##### <a name="notification---established"></a>Estabelecido em notificação
+##### <a name="notification---established"></a>Notificação - estabelecido
 
 ```http
 POST https://bot.contoso.com/callback
@@ -762,7 +762,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---roster"></a>Lista de notificação
+##### <a name="notification---roster"></a>Notificação - lista de lista
 
 ```http
 POST https://bot.contoso.com/callback
@@ -857,10 +857,10 @@ Content-Type: application/json
 }
 ```
 
->**Observação:** Para entrar em cenários de reunião distantes de notificações de estado de chamada, recebemos notificações de lista.
+>**Observação:** Para ingressar em cenários de reunião além das notificações de estado de chamada, recebemos notificações de lista de participantes.
 
-### <a name="example-6-join-scheduled-meeting-with-application-hosted-media"></a>Exemplo 6: ingressar na reunião agendada com mídia hospedada de aplicativo
-Atualize a configuração de mídia com o [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) , como mostrado abaixo.
+### <a name="example-6-join-scheduled-meeting-with-application-hosted-media"></a>Exemplo 6: Ingressar em uma reunião agendada com a mídia hospedada do aplicativo
+Atualize a configuração de mídia com [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) conforme mostrado abaixo.
 
 <!-- {
   "blockType": "example",
@@ -898,6 +898,309 @@ Content-Type: application/json
     },
     "allowConversationWithoutHost": true
   }
+}
+```
+
+### <a name="example-7-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>Exemplo 7: Criar chamada PSTN ponto a ponto com mídia hospedada pelo serviço
+
+> **Observação:** Essa chamada requer o Calls.Initiate. Todas as permissões.
+
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído.
+
+#### <a name="step-1-create-application-instance"></a>Etapa 1: Criar instância de aplicativo
+Usando credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para criar a instância do aplicativo. Para obter mais informações, [consulte New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+```
+PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+#### <a name="step-2-assign-microsoft-365-licenses"></a>Etapa 2: Atribuir licenças do Microsoft 365
+1. Use as credenciais de administrador de locatários para entrar e acessar a guia https://admin.microsoft.com/ **Usuários -> Usuários ativos.**
+2. Selecione a instância do aplicativo, atribua o Plano de Chamadas Domésticas e Internacionais do **Microsoft 365** e o Sistema de Telefonia do **Microsoft 365 -** Licenças de Usuário Virtual e clique em Salvar **alterações.** Se as licenças necessárias não estão disponíveis no locatário, você pode obter-as na guia Cobrança **-> serviços de** compra.
+#### <a name="step-3-acquire-pstn-number"></a>Etapa 3: Adquirir número PSTN
+1. Use as credenciais de administrador de locatários para entrar e clique na guia https://admin.teams.microsoft.com/ **Portal** herddo no painel esquerdo.
+2. Na nova página, vá para a **guia de números de telefone > voz.**
+3. Clique no botão, selecione Novos Números de Serviço e vá para a página Adicionar **+** **novos números de** serviço. 
+4. Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search. Clique **em adquirir números.** O número recém-adquirido será aparecer na guia **números de** telefone.
+#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Etapa 4: Atribuir número PSTN à instância do aplicativo
+Com credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para atribuir o número PSTN à instância do aplicativo. Para obter mais informações, consulte [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+```
+PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+
+#### <a name="request"></a>Solicitação
+O exemplo a seguir mostra a solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome de aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para que o exemplo funcione.
+
+<!-- {
+  "blockType": "request",
+  "name": "create-call-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
+  }
+}
+```
+
+#### <a name="response"></a>Resposta
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      },
+      "endpointType": null,
+      "region": null,
+      "replacesCallId": null,
+      "languageId": null
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "transcription": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### <a name="example-8-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>Exemplo 8: Criar chamada PSTN ponto a ponto com mídia hospedada pelo aplicativo
+
+> **Observação:** este exemplo requer Calls.Initiate. Permissões All e Calls.AccessMedia.All.
+
+Essa chamada precisa de instância de aplicativo com o número PSTN atribuído, conforme descrito no Exemplo 7.
+
+#### <a name="request"></a>Solicitação
+O exemplo a seguir mostra uma solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Substitua os valores para token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário para que o exemplo funcione.
+
+<!-- {
+  "blockType": "request",
+  "name": "create-call-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>"
+  }
+}
+```
+
+#### <a name="response"></a>Resposta
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      },
+      "endpointType": null,
+      "region": null,
+      "replacesCallId": null,
+      "languageId": null
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "transcription": null,
+  "meetingCapability": null,
+  "toneInfo": null
 }
 ```
 
