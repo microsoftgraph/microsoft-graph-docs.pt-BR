@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4a1c672444ead1fa83d93a2355d87375e2356988
+ms.openlocfilehash: 6c096e87c07ef175837198b8e9a559fca72e67b0
 ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/10/2021
-ms.locfileid: "50179033"
+ms.locfileid: "50176729"
 ---
 ```javascript
 
@@ -15,7 +15,11 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/schools/{school-id}/classes')
-    .get();
+const permission = {
+  roles: ["read"]
+};
+
+let res = await client.api('/sites/{sitesId}/permissions/{permissionId}')
+    .update(permission);
 
 ```
