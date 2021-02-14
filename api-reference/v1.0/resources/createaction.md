@@ -1,27 +1,26 @@
 ---
 author: daspek
-ms.author: dspektor
-title: tipo de recurso CreateAction
-description: O objeto CreateAction fornece informações sobre a criação de um item.
+title: Tipo de recurso createAction
+description: O objeto createAction fornece informações sobre a criação de um item.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c00996168c5075527fed91661f4c3f384fd47c8d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d722953dbef726c054136a9a7beb225a31f93241
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091856"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238390"
 ---
-# <a name="createaction-resource-type"></a>tipo de recurso CreateAction
+# <a name="createaction-resource-type"></a>Tipo de recurso createAction
 
 Namespace: microsoft.graph
 
-A presença do recurso **CreateAction** em uma [**myactivity**][activity] indica que a atividade criou um item.
+A presença do recurso **createAction** em um [**itemActivity**][activity] indica que a atividade criou um item.
 
-**Observação:** Este recurso está vazio no momento. No futuro, ele pode ser preenchido com propriedades adicionais.
+**Observação:** No momento, esse recurso está vazio. No futuro, ele pode ser preenchido com propriedades adicionais.
 
->**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
 
 [activity]: itemactivity.md
 

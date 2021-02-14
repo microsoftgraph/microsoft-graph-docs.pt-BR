@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Listar arquivos recentes
+title: Listar Arquivos Recentes
 localization_priority: Normal
 ms.prod: sharepoint
 description: Liste um conjunto de itens que foram usados recentemente pelo usuário conectado.
 doc_type: apiPageType
-ms.openlocfilehash: 355c40d3997831e1ef15f5b9e3645f3c91993738
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2d7d1f67353301889f50ae6ead03e70d574ee386
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971243"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239867"
 ---
 # <a name="list-recent-files"></a>Liste arquivos recentes
 

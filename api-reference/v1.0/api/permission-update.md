@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Alterar permissões de compartilhamento
 localization_priority: Normal
 description: Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a282219ec10ff1201618815ad5425e9f6fb786c3
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 1c3b8c4fdd9b0306aef909525c87facde6bdc6de
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790752"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240378"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 

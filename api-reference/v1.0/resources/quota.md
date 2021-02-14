@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Cota
 localization_priority: Normal
 description: O recurso quota fornece detalhes sobre restrições de espaço em um recurso Drive.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 833093569de75af450f325384f29d001e50da000
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 145d145e764128c719e757c213b8d7b2266e0b68
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037099"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238894"
 ---
 # <a name="quota-resource-type"></a>Tipo de recurso Quota
 
@@ -52,7 +51,7 @@ Veja a seguir uma representação JSON do recurso.
 | remaining     | Int64  | Espaço total restante antes de atingir o limite de cota, em bytes. Somente leitura. |
 | deleted       | Int64  | Espaço total consumido por arquivos na Lixeira, em bytes. Somente leitura.      |
 | estado         | string | Valor de enumeração que indica o estado do espaço de armazenamento. Somente leitura. |
-| Adicionadostorageplaninformation  | [Adicionadostorageplaninformation](storageplaninformation.md) | Informações sobre os planos de cota de armazenamento da unidade. Somente no OneDrive pessoal.|
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Informações sobre os planos de cota de armazenamento da unidade. Somente no OneDrive Pessoal.|
 
 ## <a name="state-enumeration"></a>Enumeração de Estado
 

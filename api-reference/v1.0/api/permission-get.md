@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Obter permissões
 localization_priority: Normal
 description: Retornar a permissão de compartilhamento eficaz de um recurso de permissão específico.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f2f3072ff2244112d70b1a6ef3e3423191808230
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: a63a84a7c9d78d0a17ae3dc21d72f90c2b1e111f
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634568"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239797"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Obter permissão de compartilhamento para um arquivo ou pasta
 

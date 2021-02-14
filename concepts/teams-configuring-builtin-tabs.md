@@ -4,16 +4,16 @@ description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 80a790c19cffcd7ec95afb84f5e6cd6bad885b56
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 13f0719a63cc604a8ffb9b77540e346837f1a031
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086589"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239440"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
-Para [criar](/graph/api/teamstab-add?view=graph-rest-beta) ou [configurar](/graph/api/teamstab-update?view=graph-rest-beta) uma guia do Microsoft Teams usando as APIs REST do Microsoft Graph, você precisa saber a `teamsAppId` do aplicativo e `entityId`, `contentUrl`, `removeUrl` e `websiteUrl` a fornecer para esse tipo de aplicativo.
+Para [criar](/graph/api/channel-post-tabs?view=graph-rest-1.0) ou [configurar](/graph/api/channel-patch-tabs?view=graph-rest-1.0) uma guia do Microsoft Teams usando as APIs REST do Microsoft Graph, você precisa saber a `teamsAppId` do aplicativo e `entityId`, `contentUrl`, `removeUrl` e `websiteUrl` a fornecer para esse tipo de aplicativo.
 Este artigo explica como obter esses valores para os tipos internos de guia.
 
 ## <a name="custom-tabs"></a>Guias personalizadas
@@ -78,13 +78,13 @@ Para as guias de biblioteca de documentos, o `teamsAppId` é `com.microsoft.team
 | Propriedade   | Tipo        | Descrição                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | Cadeia de caracteres vazia ("")                                        |
-| contentUrl | string      | A URL da pasta raiz da biblioteca de documentos. Você pode encontrar essa URL abrindo a pasta do SharePoint em seu navegador, copiando a URL e excluindo o "/Forms/AllItems.aspx" e tudo o que quiser. |
+| contentUrl | string      | A URL da pasta raiz da biblioteca de documentos. Você pode encontrar essa URL abrindo a pasta do SharePoint no navegador, copiando a URL e excluindo "/Forms/AllItems.aspx" e tudo depois disso. |
 | removeUrl  | string      | Nulo                                                     |
 | websiteUrl | string      | Nulo                                                     |
 
-### <a name="example-create-a-configured-document-library-tab"></a>Exemplo: criar uma guia de biblioteca de documentos configurada
+### <a name="example-create-a-configured-document-library-tab"></a>Exemplo: Criar uma guia configurada da biblioteca de documentos
 
-O exemplo a seguir cria uma guia de biblioteca de documentos configurada.
+O exemplo a seguir cria uma guia configurada da biblioteca de documentos.
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
@@ -103,12 +103,12 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 ## <a name="wiki-tabs"></a>Guias da wiki
 
 Para as guias da wiki, o `teamsAppId` é `com.microsoft.teamspace.tab.wiki`.
-As guias wiki não oferecem suporte à configuração pelo Microsoft Graph.
-Observe, no entanto, que não há muito a configurar-em uma guia wiki não configurada, o primeiro usuário precisa apenas selecionar a **guia Configurar** para configurá-la.
+As guias Wiki não são suportadas pela configuração por meio do Microsoft Graph.
+Observe, no entanto, que não há muito para configurar – em uma guia wiki  não configurada, o primeiro usuário só precisa selecionar a guia Configurar para configurá-la.
 
 ## <a name="planner-tabs"></a>Guias do Planner
 
-Para guias do Planner, o `teamsAppId` é `com.microsoft.teamspace.tab.planner` . Essa configuração não é compatível.
+Para guias do Planner, `teamsAppId` o valor é `com.microsoft.teamspace.tab.planner` . Essa configuração não é compatível.
 
 ## <a name="microsoft-stream-tabs"></a>Guias do Microsoft Stream
 

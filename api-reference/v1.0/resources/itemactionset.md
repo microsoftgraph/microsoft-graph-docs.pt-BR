@@ -1,31 +1,30 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Tipo de recurso ItemActionSet
-description: O objeto doactionset fornece informações sobre as ações que foram realizadas como parte de uma atividade em um item.
+description: O objeto itemActionSet fornece informações sobre as ações que ocorreram como parte de uma atividade em um item.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9563f138c5074e1317927e8e9636eeba42beed35
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6dcc630b76adcbec3c719a43280e4b28d1d933e5
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967447"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239251"
 ---
-# <a name="itemactionset-resource-type"></a>tipo de recurso doactionset
+# <a name="itemactionset-resource-type"></a>Tipo de recurso itemActionSet
 
 Namespace: microsoft.graph
 
-O recurso **Doactionset** fornece informações sobre as ações que compõem uma [atividade][itemActivity] em um item.
+O **recurso itemActionSet** fornece informações sobre as ações que comviam uma [atividade][itemActivity] em um item.
 
->**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
 
 [itemActivity]: itemactivity.md
 
 ## <a name="properties"></a>Propriedades
 
-As ações a seguir estão disponíveis no momento. Como novas ações podem ser adicionadas no futuro, certifique-se de que seu aplicativo possa lidar **com um ItemAdded** que inclui ações desconhecidas.
+As ações a seguir estão disponíveis no momento. Como novas ações podem ser adicionadas no futuro, certifique-se de que seu aplicativo possa manipular um **itemActionSet** que inclui ações desconhecidas.
 
 | Nome da propriedade | Tipo              | Descrição
 |:--------------|:------------------|:-----------------------------------------

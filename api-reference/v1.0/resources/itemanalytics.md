@@ -1,37 +1,36 @@
 ---
 author: daspek
-ms.author: dspektor
-title: tipo de recurso do multianalytics
-description: O objeto PostItem fornece análises sobre as atividades que ocorreram em um item.
+title: Tipo de recurso itemAnalytics
+description: O objeto ItemAnalytics fornece análises sobre atividades que ocorreram em um item.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 879fad9ae77f065a7235a6adbfde5f742a1970f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96ad65ef5cc8907663a9ca67e5ea2b7546b8fa03
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009293"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238656"
 ---
-# <a name="itemanalytics-resource-type"></a>tipo de recurso do multianalytics
+# <a name="itemanalytics-resource-type"></a>Tipo de recurso itemAnalytics
 
 Namespace: microsoft.graph
 
-O recurso do Microsoft **Analytics** oferece análise sobre as atividades que ocorreram em um item. No momento, esse recurso só está disponível no SharePoint e no OneDrive for Business.
+O **recurso itemAnalytics** fornece análises sobre atividades que ocorreram em um item. No momento, esse recurso só está disponível no SharePoint e no OneDrive for Business.
 
-Você também pode usar a API [funçãogetactivitiesbyinterval][] para recuperar a análise por um intervalo ou intervalo de tempo personalizado.
+Você também pode usar a API [getActivitiesByInterval][] para recuperar a análise em um intervalo de tempo ou intervalo personalizado.
 
->**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
+>**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais.](/graph/deployments)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo                 | Descrição
 |:--------------|:---------------------|:--------------------------------------
-| Época       | [itemActivityStat][] | Análise sobre o ciclo de vida do item.
+| allTime       | [itemActivityStat][] | Análise sobre o tempo de vida do item.
 | lastSevenDays | [itemActivityStat][] | Análise dos últimos sete dias.
 
 [itemActivityStat]: itemactivitystat.md
-[Funçãogetactivitiesbyinterval]: ../api/itemactivitystat-getactivitybyinterval.md
+[getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md
 
 ## <a name="json-representation"></a>Representação JSON
 

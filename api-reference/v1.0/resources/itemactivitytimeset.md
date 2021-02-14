@@ -1,25 +1,24 @@
 ---
 author: daspek
-ms.author: dspektor
-title: tipo de recurso itemActivityTimeSet
-description: O objeto doactionset fornece informações sobre uma atividade que ocorreu em um item.
+title: Tipo de recurso itemActivityTimeSet
+description: O objeto itemActionSet fornece informações sobre uma atividade que ocorreu em um item.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 30372027d90c8ae4472c6cf66a164b5dbaff08ee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f614c597efdb95b04c4079bd68240aa865d66dd
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009314"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238670"
 ---
-# <a name="itemactivitytimeset-resource-type"></a>tipo de recurso itemActivityTimeSet
+# <a name="itemactivitytimeset-resource-type"></a>Tipo de recurso itemActivityTimeSet
 
 Namespace: microsoft.graph
 
-O recurso **itemActivityTimeSet** fornece informações sobre quando uma [atividade][activity] em um item ocorreu.
+O **recurso itemActivityTimeSet** fornece informações sobre quando [ocorreu uma atividade][activity] em um item.
 
->**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
 
 [activity]: itemactivity.md
 

@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Recuperar miniaturas de um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
 description: Recupere uma coleção de recursos ThumbnailSet para um recurso DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 12a461764e48e0b17f2842bf6e725ed26edfa7f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69095159ca155be1dff624f92b5f2a26d323b44a
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089228"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240294"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Listar miniaturas para um DriveItem
 
@@ -58,7 +57,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 Este método oferece suporte ao [Parâmetro de consulta OData](/graph/query-parameters) `$select` para personalizar a resposta.
 
-Além disso, esse método dá suporte à recuperação da miniatura com o valor de EXIF da orientação original e sem a rotação aplicada acrescentando o `originalOrientation=true` parâmetro de consulta.
+Além disso, esse método dá suporte à recuperação da miniatura com o valor EXIF de orientação original e sem a rotação aplicada, adicionando o parâmetro `originalOrientation=true` de consulta.
 No momento, só há suporte para isso no OneDrive pessoal.
 
 ## <a name="response"></a>Resposta

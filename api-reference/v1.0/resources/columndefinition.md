@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
 description: Aqui está uma representação JSON de um recurso ColumnDefinition.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: aae4b71055c7a6574cc4abbaa506fad8961991d9
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 83f278123a8153629593c54604ce1285a48439a7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581223"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239237"
 ---
 # <a name="columndefinition-resource"></a>Recurso ColumnDefinition
 
@@ -64,10 +63,10 @@ O recurso **columnDefinition** tem as seguintes propriedades.
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | Para colunas de site, o nome do grupo ao qual esta coluna pertence. Ajuda a organizar as colunas relacionadas.
 | **description**         | string  | A descrição voltado para o usuário da coluna.
-| **displayName**         | cadeia de caracteres  | O nome voltado para o usuário da coluna.
+| **displayName**         | string  | O nome voltado para o usuário da coluna.
 | **enforceUniqueValues** | booliano | Se for verdadeiro, esse mesmo valor não constará em dois itens de lista nessa coluna.
 | **hidden**              | booliano | Especifica se a coluna é exibida na interface do usuário.
-| **id**                  | cadeia de caracteres  | O identificador exclusivo da coluna.
+| **id**                  | string  | O identificador exclusivo da coluna.
 | **indexed**             | booliano | Especifica se os valores da coluna podem ser usados para classificação e pesquisa.
 | **name**                | string  | O nome voltado para a API da coluna, conforme ele aparece nos [campos][] em uma [listItem][]. Para o nome voltado ao usuário, consulte **displayName**.
 | **readOnly**            | bool    | Especifica se os valores da coluna podem ser modificados.
@@ -85,7 +84,7 @@ Essas propriedades são mutuamente exclusivas: uma coluna só pode ter uma delas
 | **currency**      | [currencyColumn][]      | Esta coluna armazena valores monetários.
 | **dateTime**      | [dateTimeColumn][]      | Esta coluna armazena valores de datetime.
 | **defaultValue**  | [defaultColumnValue][]  | O valor padrão dessa coluna.
-| **localização geográfica**   | [geolocationColumn][]   | Esta coluna armazena uma localização geográfica.
+| **geolocalização**   | [geolocationColumn][]   | Essa coluna armazena uma localização geográfica.
 | **lookup**        | [lookupColumn][]        | Os dados dessa coluna são procurados por outra fonte no site.
 | **number**        | [numberColumn][]        | Esta coluna armazena valores numéricos.
 | **personOrGroup** | [personOrGroupColumn][] | Esta coluna armazena valores de Pessoa ou Grupo.

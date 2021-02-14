@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Obter pastas especiais
+title: Obter Pastas Especiais
 localization_priority: Normal
 ms.prod: sharepoint
 description: Use a coleção especial para acessar uma pasta especial pelo nome.
 doc_type: apiPageType
-ms.openlocfilehash: b915a39f61505adb01a20b3e08a08916c32a0938
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bf75cc4355f205fee58ec30291b5f71d7d590df7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052317"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239734"
 ---
 # <a name="get-a-special-folder-by-name"></a>Obtenha uma pasta especial por nome
 

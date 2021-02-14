@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Identidade
 localization_priority: Normal
 description: O recurso Identity representa uma identidade de um actor.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3ff4be5b9e606144fe300e6ba3811adddbbda56a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db2b2d020b01dd3f112b6179a019ca3b390dca0d
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086701"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239979"
 ---
 # <a name="identity-resource-type"></a>Tipo de recurso Identity
 

@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
 description: A lookupColumn em um recurso columnDefinition indica que os valores da coluna são buscados em outra origem do site.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9bd1d9040316404c6f0b494914d0c1f1f016e016
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec7da70a6f79793dbf12dbfea6c9fbfef53aaea9
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079113"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239342"
 ---
 # <a name="lookupcolumn-resource-type"></a>Tipo de recurso LookupColumn
 

@@ -1,23 +1,22 @@
 ---
 author: learafa
-ms.author: learafa
 title: Conceder permissão
-description: Conceder a uma lista de usuários acesso para usar o link especificado
+description: Conceder uma lista de usuários acesso para usar o link especificado
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fd8409a7aa168580e34f533292b54bf5b6cc314f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a2ce74ff01293f6546c34d91a0545e2a228bc96
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984800"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238642"
 ---
-# <a name="permission-grant"></a>permissão: Grant
+# <a name="permission-grant"></a>permission: grant
 
 Namespace: microsoft.graph
 
-Conceder aos usuários acesso a um link representado por uma [permissão][].
+Conceda aos usuários acesso a um link representado por uma [permissão.][]
 
 ## <a name="permissions"></a>Permissões
 
@@ -60,18 +59,18 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro          | Tipo                           | Descrição
 |:-------------------|:-------------------------------|:-------------------------
-| destinatários         | Coleção ([driveRecipient][]) | Uma coleção de destinatários que receberão acesso.
-| funções              | Collection(String)             | Se o link for um link "acesso existente", especifica as funções a serem concedidas aos usuários. Caso contrário, deve corresponder à função do link.
+| destinatários         | Collection([driveRecipient][]) | Uma coleção de destinatários que receberão acesso.
+| funções              | Collection(String)             | Se o link for um link de "acesso existente", especifica as funções a serem concedidas aos usuários. Caso contrário, deve corresponder à função do link.
 
-Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).
+Para uma lista de funções disponíveis, consulte valores [de propriedade de funções.](../resources/permission.md#roles-property-values)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [permissões][] no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção [de][] permissões no corpo da resposta.
 
-Uma [permissão][] que representa o link atualizado sempre será retornada no conjunto de resultados no êxito. O link updated pode ser identificado pela presença de uma faceta ' link ' que contém a propriedade ' Scope '. Em alguns casos, pode ser possível que o link atualizado tenha uma URL diferente da conexão original, caso em que a nova URL deve ser usada.
+Uma [permissão][] que representa o link atualizado sempre será retornada no conjunto de resultados de sucesso. O link atualizado pode ser identificado pela presença de uma faceta 'link' contendo a propriedade 'scope'. Em alguns casos, pode ser possível que o link atualizado tenha uma URL diferente do link original, caso em que a nova URL deve ser usada.
 
-Leia o tópico [respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
+Leia o tópico [Respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 
 ## <a name="example"></a>Exemplo
@@ -148,10 +147,10 @@ Content-type: application/json
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
-Se o link for um link de [acesso existente](../resources/permission.md) , serão retornadas permissões adicionais representando o seguinte:
+Se o link for um link [de acesso](../resources/permission.md) existente, permissões adicionais serão retornadas representando o seguinte:
 
-- Permissões de tipo de usuário que representam destinatários que receberam o acesso com êxito. Eles podem ser identificados por presença da propriedade **concedidoto** .
-- Permissões de tipo de link que representam convites que precisam ser enviados a usuários externos não reconhecidos para que eles tenham acesso. Eles podem ser identificados pela presença de uma faceta de [convite](../resources/sharinginvitation.md) . Essas entradas conterá um [link][sharing-link] com a URL do convite, e a coleção grantedToIdentities indicará os usuários para os quais o link deve ser enviado.
+- Permissões de tipo de usuário que representam destinatários que tiveram acesso concedido com êxito. Eles podem ser identificados pela presença da **propriedade grantedTo.**
+- Permissões de tipo de link que representam convites que precisam ser enviados a usuários externos não reconhecedos para que eles tenham acesso. Eles podem ser identificados pela presença de uma [faceta](../resources/sharinginvitation.md) de convite. Essas entradas conterão um [link][sharing-link] com a URL do convite, e a coleção grantedToIdentities indicará os usuários para os quais o link deve ser enviado.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
@@ -217,7 +216,7 @@ Content-type: application/json
 
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
-[permissão]: ../resources/permission.md
+[permission]: ../resources/permission.md
 [sharing-link]: ../resources/sharinglink.md
 
 <!-- {

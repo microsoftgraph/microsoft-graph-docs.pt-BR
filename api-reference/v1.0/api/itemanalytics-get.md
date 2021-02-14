@@ -1,30 +1,29 @@
 ---
 author: daspek
-ms.author: dspektor
-title: Obter o naanalytics
-description: Obtenha o naanalytics sobre os modos de exibição que foram colocados sob esse recurso.
+title: Obter itemAnalytics
+description: Obter itemAnalytics sobre as exibições que ocorreram sob esse recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 311d7eea81ba3001af6cb94e2a3f837824a67fde
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2307df47b5c914a1b9257e30d39c3fe2b539bf32
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038470"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238824"
 ---
-# <a name="get-itemanalytics"></a>Obter o naanalytics
+# <a name="get-itemanalytics"></a>Obter itemAnalytics
 
 Namespace: microsoft.graph
 
-Obtenha o [naanalytics][] sobre os modos de exibição que foram colocados sob esse recurso.
-O recurso do Microsoft **Analytics** é uma maneira conveniente de obter estatísticas de atividades para `allTime` o e o `lastSevenDays` .
-Para um intervalo ou intervalo de tempo personalizado, use a API [funçãogetactivitiesbyinterval][] .
+Obter [itemAnalytics][] sobre as exibições que ocorreram sob esse recurso.
+O **recurso itemAnalytics** é uma maneira conveniente de obter estatísticas de atividade para `allTime` e o `lastSevenDays` .
+Para um intervalo de tempo ou intervalo personalizado, use a API [getActivitiesByInterval.][]
 
->**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
+>**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais.](/graph/deployments)
 
 [itemAnalytics]: ../resources/itemanalytics.md
-[Funçãogetactivitiesbyinterval]: ../api/itemactivitystat-getactivitybyinterval.md
+[getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md
 
 ## <a name="permissions"></a>Permissões
 
@@ -60,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta 
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objeto do [objectanalytics][] no corpo da resposta. 
+Se bem-sucedido, este método retorna um código de resposta e uma coleção `200 OK` de [objetos itemAnalytics][] no corpo da resposta. 
 
 ## <a name="example"></a>Exemplo
 

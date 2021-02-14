@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CalculatedColumn
 localization_priority: Normal
 description: calculatedColumn em um recurso columnDefinition indica que os dados da coluna são calculados com base em outras colunas do site.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 29699b5f220f4b9e46258a42c3b353cc9712ac6d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a75db3ea7a3973d57a3d09aa6cba2cb85a66ce11
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066528"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239076"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Tipo de recurso CalculatedColumn
 

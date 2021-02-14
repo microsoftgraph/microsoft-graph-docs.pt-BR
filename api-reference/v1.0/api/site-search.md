@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Procurar sites
 description: Pesquise num locatário do SharePoint por sites que correspondam a palavras-chave fornecidas.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0174031ed72a1c4833fcec411ebfba578aec1aa2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 52c3fe2489b994c826506e8e4425ed508873ecbd
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038106"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238481"
 ---
 # <a name="search-for-sites"></a>Procurar sites
 
 Namespace: microsoft.graph
 
-Pesquisar em um locatário do SharePoint para [sites][] que correspondam a palavras-chave fornecidas.
+Pesquise em um locatário do SharePoint [sites que][] corresponderem a palavras-chave fornecidas.
 
 [sites]: ../resources/site.md
 
@@ -29,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
 |:--------------------------------------|:-------------------------------------
 |Delegado (conta corporativa ou de estudante)     | Sites.Read.All, Sites.ReadWrite.All
-|Delegado (conta pessoal da Microsoft) | Sem suporte.
+|Delegada (conta pessoal da Microsoft) | Sem suporte.
 |Aplicativo                            | Sites.Read.All, Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP

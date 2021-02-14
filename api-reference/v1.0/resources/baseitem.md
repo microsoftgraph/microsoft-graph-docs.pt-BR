@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
 description: O recurso baseItem é um recurso abstrato que contém um conjunto comum de propriedades compartilhado entre vários outros tipos de recursos.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6c247891afed001977174f3de232a8b2385e0841
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 717426f29b8c466af5799871fcc12cf4cd8bdf65
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075081"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239090"
 ---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
@@ -77,7 +76,7 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
 
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[Usuário]: user.md
+[user]: user.md
 
 ## <a name="remarks"></a>Comentários
 

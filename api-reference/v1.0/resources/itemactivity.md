@@ -1,28 +1,27 @@
 ---
 author: daspek
-ms.author: dspektor
-title: tipo de recurso de multiatividade
-description: O objeto myactivity fornece informações sobre uma atividade que ocorreu em um item.
+title: Tipo de recurso itemActivity
+description: O objeto itemActivity fornece informações sobre uma atividade que ocorreu em um item.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4ae71056fccebcb372891124b01999004b1957c2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef213dd50e5a6be8a96880ccd1a64f15f183f54b
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009328"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238684"
 ---
-# <a name="itemactivity-resource-type"></a>tipo de recurso de multiatividade
+# <a name="itemactivity-resource-type"></a>Tipo de recurso itemActivity
 
 Namespace: microsoft.graph
 
-O recurso **doactivity** fornece informações sobre as atividades que ocorreram em um item ou em um contêiner.
+O **recurso itemActivity** fornece informações sobre atividades que ocorreram em um item ou em um contêiner.
 Disponível atualmente só no SharePoint e no OneDrive for Business.
 
-As ações que ocorreram em um ItemProperty são detalhadas [na propriedade][] itempropertyset.
+As ações que ocorreram em um itemActivity são detalhadas na [propriedade itemActionSet.][]
 
->**Observação:** o **myactivity** atualmente só está disponível no SharePoint e no onedrive for Business.
+>**Observação:** **itemActivity** só está disponível atualmente no SharePoint e no OneDrive for Business.
 
 [itemActionSet]: itemactionset.md#properties
 
@@ -31,11 +30,11 @@ As ações que ocorreram em um ItemProperty são detalhadas [na propriedade][] i
 | Propriedade | Tipo                    | Descrição
 |:---------|:------------------------|:----------------------------------------
 | id       | string                  | O identificador exclusivo da atividade. Somente leitura.
-| Access   | [accessaction][]        | Um item foi acessado.
+| access   | [accessAction][]        | Um item foi acessado.
 | actor    | [identitySet][]         | Identidade de quem executou a ação. Somente leitura.
 | activityDateTime    | DateTimeOffset | Detalhes sobre quando ocorreu a atividade. Somente leitura.
 
-[accessaction]: accessaction.md
+[accessAction]: accessaction.md
 [identitySet]: identityset.md
 
 ## <a name="relationships"></a>Relações

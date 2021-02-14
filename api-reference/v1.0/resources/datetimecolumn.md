@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: DateTimeColumn
 localization_priority: Normal
 description: dateTimeColumn em um recurso columnDefinition indica que os valores da coluna são datas ou horas.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 37ae27f2ae9b74612895784e69752d37ef976b04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 28639277416b4bcea3caf641413078e355ff9de7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091835"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239643"
 ---
 # <a name="datetimecolumn-resource-type"></a>Tipo de recurso DateTimeColumn
 
@@ -39,7 +38,7 @@ Aqui está uma representação JSON de um recurso **dateTimeColumn**.
 | **displayAs**      | string             | Como o valor deve ser apresentado na experiência do usuário. Deve ser `default`, `friendly` ou `standard`. Consulte abaixo para ver mais detalhes. Se não for especificado, é tratado como `default`.
 | **format**         | string             | Indica se o valor deve ser apresentado como apenas uma data ou uma data e hora. Deve ser `dateOnly` ou `dateTime`
 
-## <a name="displayas-options"></a>Opções de displayas
+## <a name="displayas-options"></a>Opções de DisplayAs
 
 | Valor        | Descrição
 |:-------------|:--------------------------------------------------------------

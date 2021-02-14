@@ -1,18 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: DefaultColumnValue
 localization_priority: Normal
 description: defaultColumnValue em um recurso columnDefinition especifica o valor padrão dessa coluna.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: bcd2a59c18623c2c7c6d41d7a01fac72d3e9e324
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 881927bdbd53936d7780fa7517b2d2428c524e78
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018722"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239636"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Tipo de recurso DefaultColumnValue
 

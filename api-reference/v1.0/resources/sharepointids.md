@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
 description: O recurso SharePointIds agrupa os vários identificadores de um item armazenado em um site do SharePoint ou no OneDrive for Business em uma única estrutura.
 doc_type: resourcePageType
-ms.openlocfilehash: 4289f2b4785ca06588722ee12c0e6620b092ddce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38a186772ebdd4bf1bf0a35dc9789e96fdbd2ed2
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094166"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240084"
 ---
 # <a name="sharepointids-resource-type"></a>Tipo de recurso SharePointIds
 
@@ -53,7 +52,7 @@ Veja a seguir uma representação JSON do recurso
 | listItemUniqueId | string       | O identificador exclusivo (guid) do item dentro do OneDrive for Business ou de um site do SharePoint.
 | siteId           | string       | O identificador exclusivo (guid) do conjunto de sites do item (SPSite).
 | siteUrl          | string (url) | A URL do SharePoint do site que contém o item.
-| tenantId         | cadeia de caracteres       | O identificador exclusivo (GUID) da locação.
+| tenantId         | cadeia de caracteres       | O identificador exclusivo (guid) daena.
 | webId            | string       | O identificador exclusivo (guid) do site do item (SPWeb).
 
 ## <a name="remarks"></a>Comentários

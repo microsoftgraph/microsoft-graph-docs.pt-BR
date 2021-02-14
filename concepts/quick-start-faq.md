@@ -2,14 +2,13 @@
 title: Perguntas frequentes do início rápido do Microsoft Graph
 description: Estas perguntas frequentes respondem dúvidas relacionadas aos Inícios Rápidos do Microsoft Graph.
 author: jasonjoh
-ms.author: jasonjoh
 localization_priority: Normal
-ms.openlocfilehash: b13961ed13b0b52a951ce20a3381b1db85096da8
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 71cd53990d76456d20bdcf21fcf7a92cbde16ff2
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897705"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239601"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Perguntas frequentes do início rápido do Microsoft Graph
 
@@ -30,10 +29,10 @@ Quando você completar o início rápido, você possui um aplicativo pronto para
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Todos os exemplos de início rápido exigem o acesso a uma conta pessoal da Microsoft com uma caixa de correio no Outlook.com ou uma conta corporativa ou de estudante da Microsoft com uma caixa de correio do Exchange Online. Se você não tem uma conta da Microsoft, há algumas opções para obter uma conta gratuita:
+Todos os exemplos de início rápido exigem acesso a uma conta pessoal da Microsoft com uma caixa de correio no Outlook.com ou a uma conta de trabalho ou de estudante da Microsoft com uma caixa de correio do Exchange Online. Se você não tiver uma conta da Microsoft, há algumas opções para obter uma conta gratuita:
 
-- Você pode [se inscrever para uma nova conta pessoal da Microsoft](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1).
-- Você pode [se inscrever no programa para desenvolvedores do microsoft 365](https://developer.microsoft.com/office/dev-program) para obter uma assinatura gratuita do Microsoft 365.
+- Você pode [se inscrever para uma nova conta pessoal da Microsoft.](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1)
+- Você pode [se inscrever no Programa para Desenvolvedores do Microsoft 365](https://developer.microsoft.com/office/dev-program) para obter uma assinatura gratuita do Microsoft 365.
 
 ## <a name="general-quick-start-sample-questions"></a>Exemplos de perguntas do início rápido gerais
 
@@ -89,11 +88,11 @@ Isso é causado por um [problema com o Visual Studio e o compilador Roslyn](http
 
 Isso indica um problema com o registro do aplicativo para o início rápido. Quando você faz o download de um início rápido da página [Início Rápido do Microsoft Graph](https://developer.microsoft.com/graph/quick-start), nós criamos o registro do aplicativo para você e configuramos um URL de resposta (também conhecido como URL de redirecionamento) que corresponde ao URL padrão usado pelo projeto de amostra. Se você alterar o URL, o registro do aplicativo não mais corresponderá e poderá causar esse erro. Para resolver esse erro, consulte o arquivo README.md incluído no projeto de início rápido para obter instruções sobre como criar um registro de aplicativo e configurá-lo no código de amostra.
 
-### <a name="after-signing-in-im-told-i-need-admin-approval"></a>Após entrar, eu disse que preciso de aprovação do administrador.
+### <a name="after-signing-in-im-told-i-need-admin-approval"></a>Depois de entrar, estou informado de que preciso da aprovação do administrador.
 
-Após entrar em um dos exemplos de início rápido, você pode ver uma mensagem que diz que a **aprovação do administrador** "XXX tutorial precisa ter permissão para acessar recursos em sua organização que apenas um administrador pode conceder. Peça a um administrador para conceder permissão a este aplicativo para que você possa usá-lo. " Isso não é um bug com o exemplo! Nenhum dos escopos de início rápido solicitam qualquer escopo de permissão de gráfico que *, por padrão,* exija o consentimento do administrador. Os administradores de locatários podem desabilitar sua capacidade de consentimento para os escopos de permissões de gráfico para todos os aplicativos que não foram aprovados. Nesse caso, você verá esse erro.
+Depois de entrar em um dos exemplos de início rápido, você poderá ver uma mensagem informando que precisa de aprovação do administrador **"Xxx** Tutorial precisa de permissão para acessar recursos em sua organização que somente um administrador pode conceder. Peça ao administrador para conceder permissão a este aplicativo antes de usá-lo." Isso não é um bug com o exemplo! Nenhum dos inícios rápidos solicita escopos de permissão do Graph *que, por padrão,* exigem consentimento do administrador. Os administradores de locatários podem desabilitar sua capacidade de consentir com escopos de permissões do Graph para todos os aplicativos que eles não aprovaram. Nesse caso, você verá esse erro.
 
-Você precisará trabalhar com seus administradores para obter aprovação, usar uma conta pessoal da Microsoft (Outlook.com) ou usar um locatário de teste do Microsoft 365 com o Exchange Online.
+Você precisará trabalhar com seus administradores para obter aprovação, usar uma conta pessoal da Microsoft (Outlook.com) ou usar um locatário do Microsoft 365 de teste com o Exchange Online.
 
 ## <a name="didnt-find-what-you-need"></a>Não consegue encontrar o que precisa?
 

@@ -4,12 +4,12 @@ description: Descubra como configurar aplicativos para acessar reuniões online 
 author: frankpeng7
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 856ca755d9eb48aed95139e37a53e2ad420f4250
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 46a91349a6a19b0caab62c6ea9712a3b5d798ac3
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882497"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239286"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Permitir que os aplicativos acessem reuniões online em nome de um usuário
 
@@ -28,9 +28,9 @@ Para configurar uma política de acesso a aplicativos e permitir que os aplicati
     - Identifique o ID do aplicativo (cliente) do aplicativo no [portal de registro de aplicativos do Azure](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Identificar a ID de usuário (objeto) do usuário no portal de gerenciamento [de usuários do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
 
-2. Conecte-se ao PowerShell do Skype for Business com a conta de administrador. Para obter detalhes, [consulte Gerenciar o Skype for Business Online com o PowerShell.](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)
+2. Conecte-se ao PowerShell do Skype for Business com uma conta de administrador. Para obter detalhes, [consulte Gerenciar o Skype for Business Online com o PowerShell.](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)
 
-3. Crie uma política de acesso a aplicativos contendo uma lista de IDs de aplicativos.
+3. Crie uma política de acesso a aplicativos contendo uma lista de IDs de aplicativo.
 
     Execute o cmdlet a seguir, substituindo os argumentos **Identity**, **AppIds** e **Description** (opcional).
 
@@ -62,7 +62,7 @@ Para obter mais informações sobre como configurar a política de acesso a apli
 
 ## <a name="errors"></a>Erros
 
-Você pode encontrar o seguinte erro quando uma chamada à API tem acesso negado devido a um aplicativo tentando acessar uma reunião online quando a política de acesso a aplicativos não está configurada.
+Você pode encontrar o seguinte erro quando uma chamada à API tem acesso negado devido a um aplicativo tentando acessar uma reunião online quando a política de acesso ao aplicativo não está configurada.
 
 ```json
 {

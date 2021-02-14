@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Pacote
 localization_priority: Normal
-description: " ou uma coleção de itens que deve ser tratada como uma coleção em vez de itens individuais."
+description: " ou uma coleção de itens que devem ser tratados como uma coleção em vez de itens individuais."
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d263d8c37b624a8a8b60c1a0fbaf6aa7ed7e0755
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e248c74add209690dbd7c3cc11d8056c5ca30dcc
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066247"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239811"
 ---
 # <a name="package-resource-type"></a>Tipo de recurso Package
 

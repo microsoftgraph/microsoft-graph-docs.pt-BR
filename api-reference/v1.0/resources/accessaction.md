@@ -1,25 +1,24 @@
 ---
 author: daspek
-ms.author: dspektor
-title: tipo de recurso accessaction
-description: O objeto accessaction fornece informações sobre acessos de um item.
+title: Tipo de recurso accessAction
+description: O objeto accessAction fornece informações sobre os acessos de um item.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 45d369b55aabb5fe2df5883d5b04bf1e73f46c65
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22c859eec8ffeb065b6b134f4925b7612372465b
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028375"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239069"
 ---
-# <a name="accessaction-resource-type"></a>tipo de recurso accessaction
+# <a name="accessaction-resource-type"></a>Tipo de recurso accessAction
 
 Namespace: microsoft.graph
 
-A presença do recurso **accessaction** em uma [**myactivity**][activity] indica que a atividade acessou um item.
+A presença do recurso **accessAction** em um [**itemActivity**][activity] indica que a atividade acessou um item.
 
->**Observação:** Os registros de atividade do Access atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividades do Access só estão disponíveis no SharePoint e no OneDrive for Business.
 
 [activity]: itemactivity.md
 

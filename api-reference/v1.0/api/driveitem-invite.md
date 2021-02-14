@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
 description: Envia um convite de compartilhamento para um driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 0ef9d44623dd27f8172aeaaf07d4ce0d129eae7f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e514fbd3b8f79d3696f894a6b15ad55055137b70
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042144"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240287"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
 Namespace: microsoft.graph
 
-Envia um convite de compartilhamento para um **driveItem**.
+Envia um convite de compartilhamento para **um driveItem**.
 Um convite de compartilhamento fornece permissões para os destinatários e, opcionalmente, envia um email com um [link de compartilhamento][].
 
 ## <a name="permissions"></a>Permissões
@@ -69,8 +68,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | requireSignIn    | Booleano                        | Especifica se o destinatário do convite precisa fazer logon para visualizar o item compartilhado.
 | sendInvitation   | Booliano                        | Se verdadeiro, um [link de compartilhamento][] será enviado ao destinatário. Caso contrário, uma permissão é concedida diretamente sem enviar uma notificação.
 | funções            | Collection(String)             | Especifique as funções que devem ser concedidas aos destinatários do convite de compartilhamento.
-| expirationDateTime | DateTimeOffset                       | Especifique o DateTime após o qual a permissão expira. Disponível em contas pessoais do OneDrive para o OneDrive for Business, SharePoint e Premium.
-| password           | String                         | A senha definida no convite pelo criador. Opcional e o OneDrive somente pessoal.
+| expirationDateTime | DateTimeOffset                       | Especifique a Data e Hora após a qual a permissão expira. Disponível nas contas do OneDrive for Business, SharePoint e premium personal do OneDrive.
+| password           | String                         | A senha definida no convite pelo criador. Opcional e somente OneDrive Personal.
 
 ## <a name="example"></a>Exemplo
 
@@ -157,7 +156,7 @@ Content-type: application/json
 ## <a name="remarks"></a>Comentários
 
 * [Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.
-* Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).
+* Para uma lista de funções disponíveis, consulte valores [de propriedade de funções.](../resources/permission.md#roles-property-values)
 
 ## <a name="error-responses"></a>Respostas de erros
 

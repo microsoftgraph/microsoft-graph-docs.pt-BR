@@ -1,27 +1,26 @@
 ---
 author: daspek
-ms.author: dspektor
-title: Obter estatísticas de atividade de item por intervalo
-description: Obter itemAnalyticyStats para as atividades que foram realizadas nesse recurso dentro do intervalo de tempo especificado.
+title: Obter estatísticas de atividade do item por intervalo
+description: Obter itemAnalyticyStats para as atividades que ocorreram nesse recurso dentro do intervalo de tempo especificado.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a26892aac83aa28b7a4769f2ad678643a3c417ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a0ce73166603831c5cf870a6b969f1844c81ffb4
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087219"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238579"
 ---
-# <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item por intervalo
+# <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade do item por intervalo
 
 Namespace: microsoft.graph
 
-Obtenha uma coleção de recursos [itemActivityStats][] para as atividades que foram realizadas nesse recurso dentro do intervalo de tempo especificado.
+Obter uma coleção de [recursos itemActivityStats][] para as atividades que ocorreram nesse recurso dentro do intervalo de tempo especificado.
 
->**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments). 
+>**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais.](/graph/deployments) 
 
-As agregações de análise podem não estar disponíveis para todos os tipos de ação.
+Os agregados de análise podem não estar disponíveis para todos os tipos de ação.
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,11 +46,11 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | Parâmetro      | Tipo               | Descrição
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  | Cadeia de caracteres (timestamp) | A hora de início em que as atividades serão agregadas.
-| endDateTime    | Cadeia de caracteres (timestamp) | A hora de término sobre a qual agregar atividades.
+| startDateTime  | cadeia de caracteres (timestamp) | A hora de início sobre a qual agregar atividades.
+| endDateTime    | cadeia de caracteres (timestamp) | A hora de término na qual agregar atividades.
 | interval       | string             | O intervalo de agregação.
 
->**Observação:** Essa API só oferece suporte a um intervalo de tempo de 90 dias para contagens diárias. O valor dos `startDateTime` parâmetros e `endDateTime` deve representar um intervalo de tempo menor que 90 dias.
+>**Observação:** Essa API só dá suporte a um intervalo de tempo de 90 dias para contagens diárias. O valor e os parâmetros devem representar um intervalo de tempo `startDateTime` `endDateTime` inferior a 90 dias.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.
@@ -68,7 +67,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta 
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [itemActivityStats][] no corpo da resposta. 
+Se bem-sucedido, este método retorna um código de resposta e uma coleção `200 OK` do [objeto itemActivityStats][] no corpo da resposta. 
 
 ## <a name="example"></a>Exemplo
 

@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
 description: O recurso SharingLink agrupa itens de dados relacionados ao link em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 679e1f749a8e6be3ed0be055118c25a6d585b5d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: def93edc26d90d40b480243431316c60a7f34e37
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037049"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239804"
 ---
 # <a name="sharinglink-resource-type"></a>Tipo de recurso SharingLink
 
@@ -48,9 +47,9 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade    | Tipo          | Descrição
 |:------------|:--------------|:-------------------------------------
 | aplicativo | [identity][]  | O aplicativo ao qual o link está associado.
-| tipo        | String        | O tipo do link criado.
+| type        | Cadeia de caracteres        | O tipo do link criado.
 | scope       | String        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
-| preventsDownload | Boolean       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
+| preventsDownload | Booliano       | Se verdadeiro, o usuário só pode usar esse link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
 | webHtml     | String        | Para links `embed`, essa propriedade contém o código HTML para um elemento `<iframe>` que inserirá o item em uma página da Web.
 | webUrl      | String        | Uma URL que abre o item no navegador no site do OneDrive.
 
@@ -60,7 +59,7 @@ Veja a seguir uma representação JSON do recurso.
 
 Esta tabela define os valores possíveis para a propriedade **type**:
 
-| Valor   | Role    | Descrição
+| Valor   | Função    | Descrição
 |:--------|:--------|:---------------------------------------------------------
 | `view`  | `read`  | Um link somente de compartilhamento para exibição, permitindo o acesso somente leitura.
 | `edit`  | `write` | Um link de compartilhamento de edição, permitindo o acesso de leitura e gravação.

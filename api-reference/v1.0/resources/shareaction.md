@@ -1,25 +1,24 @@
 ---
 author: daspek
-ms.author: dspektor
-title: tipo de recurso shareaction
-description: O objeto shareaction fornece informações sobre quem um item foi compartilhado em uma ação de compartilhamento.
+title: Tipo de recurso shareAction
+description: O objeto shareAction fornece informações sobre com quem um item foi compartilhado em uma ação de compartilhamento.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 90d1d05a16130109dcef200938640e88e63e393a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 81292f302667123c0d22f78b655e4ef555329e52
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009202"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238887"
 ---
-# <a name="shareaction-resource-type"></a>tipo de recurso shareaction
+# <a name="shareaction-resource-type"></a>Tipo de recurso shareAction
 
 Namespace: microsoft.graph
 
-O recurso **shareaction** fornece informações sobre uma [atividade][activity] que compartilhou um item.
+O **recurso shareAction** fornece informações sobre uma [atividade que][activity] compartilhou um item.
 
->**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
 
 [activity]: itemactivity.md
 

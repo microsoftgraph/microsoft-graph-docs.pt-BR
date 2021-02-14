@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b8186913aa54afc02266216666d82bce28568fc4
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 17597fd1dc7411da0d828af32feeba05433d5f2d
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177232"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238971"
 ---
 # <a name="call-transfer"></a>call: transfer
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 Transferir uma chamada ponto a ponto ativa.
 
-> **Observação:** Isso só será suportado se os destinos de transferência e transferência são usuários do Microsoft Teams que pertencem ao mesmo locatário. A transferência para o número PSTN não é suportada. Para saber mais sobre o destino de transferência, transferência e transferência, consulte [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
+> **Observação:** Isso só será suportado se os destinos de transferência e transferência são usuários do Microsoft Teams que pertencem ao mesmo locatário. A transferência para o número PSTN é suportada apenas para a instância do aplicativo. Para saber mais sobre o destino de transferência, transferência e transferência, consulte [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
 
-Uma transferência consultiva significa que o transferor pode informar a pessoa para a quem ele deseja transferir a chamada (o transferidor), antes que a transferência seja feita. Isso não é transferir a chamada diretamente.
+Uma transferência consultiva significa que o transferidor pode informar a pessoa para a quem ele deseja transferir a chamada (o transferidor), antes que a transferência seja feita. Isso não é transferir a chamada diretamente.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)         |
@@ -149,7 +149,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode acontecer após ou antes que o áudio do estado da mídia seja inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes do estado de mídia de áudio inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -323,7 +323,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode acontecer após ou antes que o áudio do estado da mídia seja inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes do estado de mídia de áudio inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -432,7 +432,7 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 2. Selecione a instância do aplicativo, atribua o Plano de Chamadas Domésticas e Internacionais do **Microsoft 365** e o Sistema de Telefonia do **Microsoft 365 -** Licenças de Usuário Virtual e clique em Salvar **alterações.** Se as licenças necessárias não estão disponíveis no locatário, você pode obter-as na guia Cobrança **-> serviços de** compra.
 #### <a name="step-3-acquire-pstn-number"></a>Etapa 3: Adquirir número PSTN
 1. Use as credenciais de administrador de locatários para entrar e clique na guia https://admin.teams.microsoft.com/ **Portal** herddo no painel esquerdo.
-2. Na nova página, vá para a **guia de números de telefone > voz.**
+2. Na nova página, vá para a guia **de números de > de** voz.
 3. Clique no botão, selecione Novos Números de Serviço e vá para a página Adicionar **+** **novos números de** serviço. 
 4. Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search. Clique **em adquirir números.** O número recém-adquirido será aparecer na guia **números de** telefone.
 #### <a name="step-4-assign-pstn-number-to-application-instance"></a>Etapa 4: Atribuir número PSTN à instância do aplicativo
@@ -513,7 +513,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode acontecer após ou antes que o áudio do estado da mídia seja inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes do estado de mídia de áudio inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -688,7 +688,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode acontecer após ou antes que o áudio do estado da mídia seja inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes do estado de mídia de áudio inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls

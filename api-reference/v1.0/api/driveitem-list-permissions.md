@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar quem tem acesso a um arquivo
 localization_priority: Normal
 ms.prod: sharepoint
-description: Listar as permissões de compartilhamento efetivas de em um driveItem.
+description: Listar as permissões efetivas de compartilhamento de um driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 1aa566d42a65d3e3c168759d3b76ce175895af3f
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: a89dc20289ee86933d4eee0c217f769b9fbd426e
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634498"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240273"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um driveItem
 
 Namespace: microsoft.graph
 
-Listar as permissões de compartilhamento efetivas em um [driveItem](../resources/driveitem.md).
+Listar as permissões efetivas de compartilhamento em [um driveItem](../resources/driveitem.md).
 
 ## <a name="access-to-sharing-permissions"></a>Acessar permissões de compartilhamento
 

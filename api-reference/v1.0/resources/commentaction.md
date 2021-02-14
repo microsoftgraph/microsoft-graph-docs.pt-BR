@@ -1,25 +1,24 @@
 ---
 author: daspek
-ms.author: dspektor
-title: tipo de recurso commentaction
-description: O objeto commentaction fornece informações sobre um comentário que foi feito em um item.
+title: Tipo de recurso commentAction
+description: O objeto commentAction fornece informações sobre um comentário que foi feito em um item.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f1632847461b1aa0cde429edfc4d8c5cff11ee3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f2f3ab7f0798ee1020b107c38262a912fdae53ef
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988328"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238411"
 ---
-# <a name="commentaction-resource-type"></a>tipo de recurso commentaction
+# <a name="commentaction-resource-type"></a>Tipo de recurso commentAction
 
 Namespace: microsoft.graph
 
-O recurso **commentaction** fornece informações sobre uma [atividade][] de comentário feita em um item.
+O **recurso commentAction** fornece informações sobre uma atividade [de comentário][] feita em um item.
 
->**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
+>**Observação:** No momento, os registros de atividades do item só estão disponíveis no SharePoint e no OneDrive for Business.
 
 [atividade]: itemactivity.md
 
