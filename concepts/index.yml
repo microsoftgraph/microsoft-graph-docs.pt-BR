@@ -7,16 +7,15 @@ metadata:
   ms.topic: hub-page
   ms.prod: ms-graph
   author: CelesteDG
-  ms.author: celested
   ms.date: 02/28/2020
   featureFlags:
   - clicktale
-  ms.openlocfilehash: 5683fcb0ab57d1541a53a547c815341ca8fcfb71
-  ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+  ms.openlocfilehash: a015eb68954a7c08c4cbe618cb0af4943734cfb5
+  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/26/2020
-  ms.locfileid: "48289117"
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "50239909"
 highlightedContent:
   items:
   - title: Visão Geral do Microsoft Graph
@@ -46,7 +45,7 @@ conceptualContent:
       text: Usuários que você pode alcançar
     - url: ./data-connect-overview.md
       itemType: concept
-      text: Microsoft Graph Data Connect
+      text: Conexão de dados do Microsoft Graph
     - url: https://developer.microsoft.com/graph/quick-start
       itemType: quickstart
       text: Guias de início rápido
@@ -69,7 +68,7 @@ conceptualContent:
       text: Calendário
     - url: ./outlook-mail-concept-overview.md
       itemType: overview
-      text: Email
+      text: Correio
     - url: ./azuread-identity-access-management-concept-overview.md
       itemType: overview
       text: Identidade e acesso
@@ -86,7 +85,7 @@ conceptualContent:
       text: Migrar
     - url: ./sdks/sdks-overview.md
       itemType: overview
-      text: Usar os SDKs
+      text: Use os SDKs
     - url: ./toolkit/overview.md
       itemType: overview
       text: Usar o kit de ferramentas
@@ -101,13 +100,13 @@ additionalContent:
       summary: Problemas conhecidos com o Microsoft Graph.
       url: ./known-issues.md
     - title: Suporte
-      summary: Faça uma pergunta ou forneça comentários sobre nossas APIs ou documentos.
+      summary: Faça uma pergunta ou faça comentários sobre nossas APIs ou documentos.
       url: https://developer.microsoft.com/graph/support
     - title: Blog do Microsoft Graph
       summary: Leia o blog para obter as últimas notícias sobre novas APIs, alterações significativas e muito mais.
       url: https://developer.microsoft.com/graph/blogs/
     - title: Chamadas de comunidade mensais
-      summary: Ingressar nas chamadas mensais ou acompanhar as gravações anteriores.
+      summary: Participe de chamadas mensais ou acompanhe as gravações anteriores.
       url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
     - title: Vídeos e podcasts
       summary: Confira nossa série de vídeos e podcasts para saber mais sobre as APIs do Microsoft Graph.

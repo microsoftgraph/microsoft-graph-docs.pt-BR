@@ -6,14 +6,13 @@ metadata:
   description: Os tutoriais do Microsoft Graph são exercícios de treinamento passo a passo que orientam você na criação de um aplicativo básico que acessa dados por meio do Microsoft Graph.
   ms.topic: landing-page
   author: jasonjoh
-  ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: c064f803856c8d290e8c88a6399de6a806349aad
-  ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
+  ms.openlocfilehash: 15a26f4ebffbcd3518db742f216b4f6a57cac98f
+  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/15/2020
-  ms.locfileid: "49675846"
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "50240476"
 landingContent:
 - title: Criar seu primeiro aplicativo do lado do servidor
   linkLists:
@@ -73,7 +72,7 @@ landingContent:
       url: /graph/tutorials/bot-framework
     - text: Suplemento do Office
       url: /graph/tutorials/office-addin
-    - text: Power Automate
+    - text: Ligar/Desligar Automação
       url: /graph/tutorials/power-automate
     - text: Estrutura do SharePoint
       url: /graph/tutorials/spfx

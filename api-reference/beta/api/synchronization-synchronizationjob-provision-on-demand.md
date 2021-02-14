@@ -5,12 +5,12 @@ author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: fa7acf4aa4ced807098d40f473aa4104593ed40a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3e1007dfd7bce9ff64f54651104de943348c10dc
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133844"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240560"
 ---
 # <a name="synchronizationjob-provisionondemand"></a>synchronizationJob: provisionOnDemand
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) |Sem suporte. |
-|Aplicativo                            |Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) |Sem suporte. |
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
