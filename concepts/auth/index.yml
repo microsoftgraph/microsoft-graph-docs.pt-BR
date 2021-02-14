@@ -1,22 +1,21 @@
 ### YamlMime:Landing
-title: Visão geral da autenticação do Microsoft Graph
-summary: Saiba como autenticar e trabalhar com permissões para acessar dados com segurança através do Microsoft Graph. Explore a documentação abaixo para saber mais sobre o registro de aplicativos, bibliotecas de autenticação, autorização e outras partes da plataforma de identidade da Microsoft que dão suporte ao desenvolvimento do Microsoft Graph.
+title: Visão geral de auth do Microsoft Graph
+summary: Saiba como autenticar e trabalhar com permissões para acessar dados com segurança por meio do Microsoft Graph. Explore a documentação abaixo para saber mais sobre o registro de aplicativos, bibliotecas de autenticação, autorização e outras partes da plataforma de identidade da Microsoft que suportam o desenvolvimento do Microsoft Graph.
 metadata:
   ms.topic: landing-page
   ms.date: 05/07/2020
   author: CelesteDG
-  ms.author: celested
   services: active-directory
   ms.service: active-directory
   ms.workload: identity
   ms.reviewer: jawoods
   ms.custom: graphiamtop20
-  ms.openlocfilehash: 2ca582bb8f4a4eb836a9a2cc0d9177144071c070
-  ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+  ms.openlocfilehash: 154ba4be69f0e07a5d6dec46a146a7a6a66b2c5c
+  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/26/2020
-  ms.locfileid: "48288123"
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "50240364"
 landingContent:
 - title: Introdução
   linkLists:
@@ -28,7 +27,7 @@ landingContent:
       url: ../auth-register-app-v2.md
   - linkListType: video
     links:
-    - text: Registro do Microsoft Graph e do aplicativo (7:29)
+    - text: Registro de aplicativos e do Microsoft Graph (7:29)
       url: https://www.youtube.com/watch?v=93j0MmRruFo
 - title: Aprimorar seu aplicativo
   linkLists:
@@ -46,7 +45,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Gerenciar o acesso do aplicativo
+    - text: Gerenciar o acesso ao aplicativo
       url: ../auth-cloudsolutionprovider.md
     - text: Acesso à caixa de correio limitado
       url: ../auth-limit-mailbox-access.md
@@ -54,7 +53,7 @@ landingContent:
     links:
     - text: Erros de autorização
       url: ../resolve-auth-errors.md
-- title: SDKs de autenticação-MSAL
+- title: Auth SDKs - MSAL
   linkLists:
   - linkListType: download
     links:
@@ -74,7 +73,7 @@ landingContent:
       url: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
     - text: Xamarin
       url: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
-- title: SDKs de autenticação-fonte aberta
+- title: SDKs de Auth - Código aberto
   linkLists:
   - linkListType: download
     links:
