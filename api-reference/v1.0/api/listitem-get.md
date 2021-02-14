@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: Obter listItem
 description: Retorna os metadados de um item em uma lista do SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0eda1b3af89bbb885b2a58e2651323627846d143
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 22e7ea8cf90cb1677ddcfa653d9e2c67ce3786c7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48374361"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238768"
 ---
 # <a name="get-listitem"></a>Obter listItem
 

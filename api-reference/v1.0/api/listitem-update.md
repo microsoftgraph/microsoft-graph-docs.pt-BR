@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: Atualizar o listItem
 description: Atualize as propriedades em um **[listItem][]**.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5584ab4bde08ad0386c545f9041b2a8500c72cb1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a7c2d6eb8fe01315c977648d8cf43318be6eb4e
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057238"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238754"
 ---
 # <a name="update-listitem"></a>Atualizar o listItem
 

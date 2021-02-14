@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Upload de arquivos retomável
 localization_priority: Priority
 ms.prod: sharepoint
 description: Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
 doc_type: apiPageType
-ms.openlocfilehash: 65c768e053175925c8f25b0d5bf603a8d15fa7b8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e4a048f9c2c1db4aabc41a9e11171b759961803
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009867"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239902"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 

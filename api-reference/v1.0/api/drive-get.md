@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Obter Unidade
 localization_priority: Priority
 ms.prod: sharepoint
 description: Recupere as propriedades e as relações de um recurso Drive.
 doc_type: apiPageType
-ms.openlocfilehash: 345370b8662a50ddbc141308806d98aca5ed6f3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 06abce44a87e13d4e4266ddd9974761bad8491c3
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042286"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239888"
 ---
 # <a name="get-drive"></a>Obter Unidade
 

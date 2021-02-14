@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar o conteúdo de uma pasta
 localization_priority: Priority
 ms.prod: sharepoint
 description: Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 6afe3475b0e213ba0906a46838ae09ec95ebc9b6
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 8938cccdb0a8b2f1de76327d968aaceba1aedee0
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634491"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240280"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 

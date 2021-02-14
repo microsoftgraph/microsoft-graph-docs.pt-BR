@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Listar
 localization_priority: Priority
 ms.prod: sharepoint
 description: O recurso de lista representa uma lista em um site.
 doc_type: resourcePageType
-ms.openlocfilehash: c84ae2e54e0b319467951ad6fb65a419b65c013d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4079320ef785dbdb3c1367fad92cda46eab0b4fa
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967440"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239363"
 ---
 # <a name="list-resource"></a>Recurso List
 

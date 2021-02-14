@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Lista as listas do SharePoint em um site
 localization_priority: Priority
 ms.prod: sharepoint
 description: Obter a coleção de listas de um site.
 doc_type: apiPageType
-ms.openlocfilehash: 99ced7bd4819f5097a683652e206962c8ab49f6a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ffafff7ed35f8e88d32ccd5f0e6daf3f9861e1a7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033150"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238796"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 

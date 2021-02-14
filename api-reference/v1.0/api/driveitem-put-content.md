@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Carregar arquivos pequenos
 localization_priority: Priority
 ms.prod: sharepoint
 description: 'A API de upload simples permite que você forneça o conteúdo de um novo arquivo ou atualize o conteúdo de um arquivo existente em uma única chamada à API. '
 doc_type: apiPageType
-ms.openlocfilehash: fbaa34ad2669a565f87074408dea49179063d878
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f28105b493c88dacead70291cae8ad88d5d75b8a
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982032"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240203"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Carregar ou substituir o conteúdo de um DriveItem
 

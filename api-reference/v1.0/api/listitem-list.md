@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Recuperar itens de uma lista do SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
 description: Obter a coleção de itens em uma lista.
 doc_type: apiPageType
-ms.openlocfilehash: 6f6034e0cff0a5af4034c1abbd0190111bb6f513
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d554e92d6118fdb590f17d78d0d05ef712814546
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057242"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238761"
 ---
 # <a name="enumerate-items-in-a-list"></a>Enumerar itens em uma lista
 

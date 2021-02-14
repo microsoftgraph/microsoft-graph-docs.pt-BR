@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: obter um arquivo ou uma pasta
 localization_priority: Priority
 ms.prod: sharepoint
 description: Recupere os metadados de um DriveItem em um Drive por ID ou por caminho do sistema de arquivos.
 doc_type: apiPageType
-ms.openlocfilehash: a3b797ed5a967c24af1e14ed38046305a2e388c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7fb47cd473114d5ecd376c092584b7166d6801eb
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042139"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240301"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
 
@@ -52,7 +51,7 @@ GET /users/{user-id}/drive/root:/{item-path}
 
 Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) `$expand` e `$select` para personalizar a resposta.
 
-É possível usar o parâmetro de cadeia de caracteres de consulta [`$expand` ](/graph/query-parameters) para incluir os filhos de um item na mesma chamada de recuperação de metadados de um item se item tiver um relacionamento **children**.
+É possível usar o parâmetro de cadeia de caracteres de consulta [`$expand`](/graph/query-parameters) para incluir os filhos de um item na mesma chamada de recuperação de metadados de um item se item tiver um relacionamento **children**.
 
 Você também pode usar o parâmetro de consulta `includeDeletedItems=true` para retornar os itens excluídos.
 Esse parâmetro de consulta só é válido quando direcionamos um [driveItem](../resources/driveitem.md) por ID e, caso contrário, serão ignorados.
