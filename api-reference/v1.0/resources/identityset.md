@@ -1,28 +1,27 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
 description: O recurso IdentitySet é uma coleção de chaves dos recursos identity.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 09a0a48ca46f0d3a429705e5becf18f37832e5a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e6f7aef915596e39173f286a3433e0114656e707
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086666"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239958"
 ---
-# <a name="identityset-resource-type"></a><span data-ttu-id="410e9-103">Tipo de recurso IdentitySet</span><span class="sxs-lookup"><span data-stu-id="410e9-103">IdentitySet resource type</span></span>
+# <a name="identityset-resource-type"></a><span data-ttu-id="60355-103">Tipo de recurso IdentitySet</span><span class="sxs-lookup"><span data-stu-id="60355-103">IdentitySet resource type</span></span>
 
-<span data-ttu-id="410e9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="410e9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="60355-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="60355-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="410e9-p101">O recurso **IdentitySet** é uma coleção de chaves dos recursos [identity](identity.md). É usado para representar uma coleção de identidades associada a vários eventos de um item, como _created by_ ou _last modified by_.</span><span class="sxs-lookup"><span data-stu-id="410e9-p101">The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources. It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.</span></span>
+<span data-ttu-id="60355-p101">O recurso **IdentitySet** é uma coleção de chaves dos recursos [identity](identity.md). É usado para representar uma coleção de identidades associada a vários eventos de um item, como _created by_ ou _last modified by_.</span><span class="sxs-lookup"><span data-stu-id="60355-p101">The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources. It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="410e9-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="410e9-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="60355-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="60355-107">JSON representation</span></span>
 
-<span data-ttu-id="410e9-108">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="410e9-108">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="60355-108">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="60355-108">Here is a JSON representation of the resource.</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identitySet",
        "optionalProperties": ["user", "application", "device"],
@@ -35,17 +34,17 @@ ms.locfileid: "48086666"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="410e9-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="410e9-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="60355-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="60355-109">Properties</span></span>
 
-| <span data-ttu-id="410e9-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="410e9-110">Property</span></span>    | <span data-ttu-id="410e9-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="410e9-111">Type</span></span>                    | <span data-ttu-id="410e9-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="410e9-112">Description</span></span>                                            |
+| <span data-ttu-id="60355-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="60355-110">Property</span></span>    | <span data-ttu-id="60355-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="60355-111">Type</span></span>                    | <span data-ttu-id="60355-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="60355-112">Description</span></span>                                            |
 |:------------|:------------------------|:-------------------------------------------------------|
-| <span data-ttu-id="410e9-113">application</span><span class="sxs-lookup"><span data-stu-id="410e9-113">application</span></span> | [<span data-ttu-id="410e9-114">Identity</span><span class="sxs-lookup"><span data-stu-id="410e9-114">Identity</span></span>](identity.md) | <span data-ttu-id="410e9-p102">Opcional. O aplicativo associado a essa ação.</span><span class="sxs-lookup"><span data-stu-id="410e9-p102">Optional. The application associated with this action.</span></span> |
-| <span data-ttu-id="410e9-117">device</span><span class="sxs-lookup"><span data-stu-id="410e9-117">device</span></span>      | [<span data-ttu-id="410e9-118">Identity</span><span class="sxs-lookup"><span data-stu-id="410e9-118">Identity</span></span>](identity.md) | <span data-ttu-id="410e9-p103">Opcional. O dispositivo associado a essa ação.</span><span class="sxs-lookup"><span data-stu-id="410e9-p103">Optional. The device associated with this action.</span></span>      |
-| <span data-ttu-id="410e9-121">user</span><span class="sxs-lookup"><span data-stu-id="410e9-121">user</span></span>        | [<span data-ttu-id="410e9-122">Identity</span><span class="sxs-lookup"><span data-stu-id="410e9-122">Identity</span></span>](identity.md) | <span data-ttu-id="410e9-p104">Opcional. O usuário associado a essa ação.</span><span class="sxs-lookup"><span data-stu-id="410e9-p104">Optional. The user associated with this action.</span></span>        |
+| <span data-ttu-id="60355-113">application</span><span class="sxs-lookup"><span data-stu-id="60355-113">application</span></span> | [<span data-ttu-id="60355-114">Identity</span><span class="sxs-lookup"><span data-stu-id="60355-114">Identity</span></span>](identity.md) | <span data-ttu-id="60355-p102">Opcional. O aplicativo associado a essa ação.</span><span class="sxs-lookup"><span data-stu-id="60355-p102">Optional. The application associated with this action.</span></span> |
+| <span data-ttu-id="60355-117">device</span><span class="sxs-lookup"><span data-stu-id="60355-117">device</span></span>      | [<span data-ttu-id="60355-118">Identity</span><span class="sxs-lookup"><span data-stu-id="60355-118">Identity</span></span>](identity.md) | <span data-ttu-id="60355-p103">Opcional. O dispositivo associado a essa ação.</span><span class="sxs-lookup"><span data-stu-id="60355-p103">Optional. The device associated with this action.</span></span>      |
+| <span data-ttu-id="60355-121">user</span><span class="sxs-lookup"><span data-stu-id="60355-121">user</span></span>        | [<span data-ttu-id="60355-122">Identity</span><span class="sxs-lookup"><span data-stu-id="60355-122">Identity</span></span>](identity.md) | <span data-ttu-id="60355-p104">Opcional. O usuário associado a essa ação.</span><span class="sxs-lookup"><span data-stu-id="60355-p104">Optional. The user associated with this action.</span></span>        |
 
-## <a name="remarks"></a><span data-ttu-id="410e9-125">Comentários</span><span class="sxs-lookup"><span data-stu-id="410e9-125">Remarks</span></span> 
+## <a name="remarks"></a><span data-ttu-id="60355-125">Comentários</span><span class="sxs-lookup"><span data-stu-id="60355-125">Remarks</span></span> 
 
-<span data-ttu-id="410e9-126">Consulte [DriveItem](driveitem.md) para saber mais sobre o uso de recursos **IdentitySet**.</span><span class="sxs-lookup"><span data-stu-id="410e9-126">See [DriveItem](driveitem.md) for usage of **IdentitySet** resources.</span></span>
+<span data-ttu-id="60355-126">Consulte [DriveItem](driveitem.md) para saber mais sobre o uso de recursos **IdentitySet**.</span><span class="sxs-lookup"><span data-stu-id="60355-126">See [DriveItem](driveitem.md) for usage of **IdentitySet** resources.</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
