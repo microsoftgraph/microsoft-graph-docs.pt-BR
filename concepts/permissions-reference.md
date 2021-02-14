@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: bd8df895ea23ac2e34efbd4a62ffb47d9d0f05f8
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 8fe86fd58ed708cd56ca8834df139b91552898fc
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092663"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239713"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -753,6 +753,13 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |_EntitlementManagement.ReadWrite.All_|Ler e gravar os recursos de gerenciamento de direitos|Permite ao aplicativo solicitar acesso para ler e gerenciar pacotes de acesso e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.|Sim|
 |_EntitlementManagement.Read.All_|Ler os recursos de gerenciamento de direitos|Permite ao aplicativo solicitar acesso para ler pacotes de acesso e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.|Sim|
 
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|Permissão|Exibir Cadeia de Caracteres|Descrição|Consentimento Obrigatório do Administrador|
+|:----------|:--------------|:-----------|:-------|
+|_EntitlementManagement.ReadWrite.All_|Ler e gravar os recursos de gerenciamento de direitos|Permite que o aplicativo leia e gerencie pacotes de acesso e recursos de gerenciamento de direitos relacionados.|Sim|
+|_EntitlementManagement.Read.All_|Ler os recursos de gerenciamento de direitos|Permite que o aplicativo leia pacotes de acesso e recursos de gerenciamento de direitos relacionados.|Sim|
+
 ## <a name="files-permissions"></a>Permissões de arquivos
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -1219,7 +1226,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -2250,8 +2257,8 @@ A restrição *CreatedByApp* associada a essa permissão indica que o serviço a
 
 |Permissão                              |Exibir Cadeia de Caracteres                        |Descrição        |Consentimento Obrigatório do Administrador |
 |:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
-|_UserAuthenticationMethod.Read.All_ (visualização privada)   |Ler os métodos de autenticação dos usuários    |Permite que o aplicativo leia os métodos de autenticação de todos os usuários em sua organização sem um usuário conectado. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|
-|_UserAuthenticationMethod.ReadWrite.All_ (visualização privada)|Gerenciar os métodos de autenticação dos usuários  |Permite que o aplicativo leia e grave os métodos de autenticação de todos os usuários em sua organização sem um usuário conectado. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|
+|_UserAuthenticationMethod.Read.All_ (visualização)   |Ler os métodos de autenticação dos usuários    |Permite que o aplicativo leia os métodos de autenticação de todos os usuários em sua organização sem um usuário conectado. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|
+|_UserAuthenticationMethod.ReadWrite.All_ (visualização)|Gerenciar os métodos de autenticação dos usuários  |Permite que o aplicativo leia e grave os métodos de autenticação de todos os usuários em sua organização sem um usuário conectado. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|
 
 ### <a name="remarks"></a>Comentários
 

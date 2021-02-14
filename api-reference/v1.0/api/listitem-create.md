@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Criar uma nova entrada em uma lista do SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
 description: Criar um novo listItem em uma lista.
 doc_type: apiPageType
-ms.openlocfilehash: 1a51af48b8349eb0b505b7ded88721caa53bb68c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a5d58dc1c3a37aaa540843c990c399809cfc8f5
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057336"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238789"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Criar um novo item em uma lista
 

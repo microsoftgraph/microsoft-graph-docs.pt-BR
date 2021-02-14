@@ -4,12 +4,12 @@ description: 'Este artigo apresenta um exemplo para demonstrar como usar *extens
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: f26f58343acb417daedf22563132a67f5c3dc8a3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 86295c9ebebb763effa1cb19aa1a2388163f295b
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289166"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240357"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>Adicionar dados personalizados a grupos usando as extensões do esquema 
 
@@ -70,7 +70,7 @@ Ao criar uma definição de extensão de esquema, você deve fornecer uma cadeia
 
 Então especifique também uma descrição (para habilitar a capacidade de descoberta), tipos de destino (definindo a quais recursos essa extensão se aplica) e as propriedades personalizadas que compõem o esquema.  Neste exemplo, especifique as propriedades `courseId`, `courseName` e `courseType` personalizadas e seus tipos.
 
-Veja um [exemplo de outra maneira de atribuir a **id** na solicitação](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0#request-2), que exige que você forneça apenas um nome de esquema.
+Veja um [exemplo de outra maneira de atribuir a **id** na solicitação](/graph/api/schemaextension-post-schemaextensions#request-2), que exige que você forneça apenas um nome de esquema.
 
 Observe que, quando você cria uma extensão de esquema inicialmente, seu status é **InDevelopment**. Ao desenvolver a extensão, você pode mantê-la com esse status. Enquanto isso, apenas seu aplicativo que a criou pode atualizá-la com alterações aditivas ou excluí-la. Quando estiver pronto para compartilhar a extensão para uso por outros aplicativos, defina o **status** como **Disponível**.
 
@@ -242,10 +242,10 @@ Content-length: 326
 - [Adicionar dados personalizados a recursos usando extensões](extensibility-overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](extensibility-open-users.md)
 - [Domínios do Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/domains)
-- [Adicionando e verificando um domínio para o NOVO Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
-- [Tipo de recurso schemaExtension](/graph/api/resources/schemaextension?view=graph-rest-1.0)
-- [List schemaExtensions](/graph/api/schemaextension-list?view=graph-rest-1.0)
-- [Create schemaExtension](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)
-- [Get schemaExtension](/graph/api/schemaextension-get?view=graph-rest-1.0)
-- [Update schemaExtension](/graph/api/schemaextension-update?view=graph-rest-1.0)
-- [Delete schemaExtension](/graph/api/schemaextension-delete?view=graph-rest-1.0)
+- [Adicionar e verificar um domínio para Microsoft 365](/microsoft-365/admin/setup/add-domain)
+- [Tipo de recurso schemaExtension](/graph/api/resources/schemaextension)
+- [List schemaExtensions](/graph/api/schemaextension-list)
+- [Create schemaExtension](/graph/api/schemaextension-post-schemaextensions)
+- [Get schemaExtension](/graph/api/schemaextension-get)
+- [Update schemaExtension](/graph/api/schemaextension-update)
+- [Delete schemaExtension](/graph/api/schemaextension-delete)

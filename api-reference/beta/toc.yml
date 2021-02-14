@@ -494,7 +494,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -966,7 +966,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: Listar memberOf transitivos
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -2257,7 +2257,7 @@ items:
                         href: api/intune-apps-macosmdatpapp-delete.md
                       - name: Atualizar
                         href: api/intune-apps-macosmdatpapp-update.md
-                  - name: Aplicativo microsoft edge do macOS
+                  - name: aplicativo microsoft edge do macOS
                     href: resources/intune-apps-macosmicrosoftedgeapp.md
                     items:
                       - name: Listar
@@ -2568,7 +2568,7 @@ items:
                         href: api/intune-apps-mobileappcontentfile-renewupload.md
                   - name: Estado de carregamento do arquivo de conteúdo do aplicativo móvel
                     href: resources/intune-apps-mobileappcontentfileuploadstate.md
-                  - name: Dependência de aplicativos móveis
+                  - name: Dependência de aplicativo móvel
                     href: resources/intune-apps-mobileappdependency.md
                     items:
                       - name: Listar
@@ -3570,7 +3570,7 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-update.md
-                  - name: Tipo de botão página principal virtual do proprietário do dispositivo Android
+                  - name: Tipo de botão home virtual do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md
                   - name: Configuração de VPN do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md
@@ -4341,7 +4341,7 @@ items:
                         href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-update.md
                   - name: Erro de script de conformidade do dispositivo
                     href: resources/intune-deviceconfig-devicecompliancescripterror.md
-                  - name: Operador de script de conformidade do dispositivo
+                  - name: Operador rul de script de conformidade do dispositivo
                     href: resources/intune-deviceconfig-devicecompliancescriptruloperator.md
                   - name: Regra de script de conformidade do dispositivo
                     href: resources/intune-deviceconfig-devicecompliancescriptrule.md
@@ -5344,7 +5344,7 @@ items:
                     href: resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md
                   - name: Tipo de cache de conteúdo do macOS
                     href: resources/intune-deviceconfig-macoscontentcachingtype.md
-                  - name: Extensão de single sign on da credencial do macOS
+                  - name: Extensão de login único de credencial do macOS
                     href: resources/intune-deviceconfig-macoscredentialsinglesignonextension.md
                   - name: Configuração de aplicativo personalizado do macOS
                     href: resources/intune-deviceconfig-macoscustomappconfiguration.md
@@ -7997,7 +7997,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
                       - name: Atualizar
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-update.md
-                  - name: Categoria de reinicialização do sistema operacional de análise de experiência do usuário
+                  - name: Categoria de reinicialização do sistema operacional de análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md
                   - name: Visão geral da análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsoverview.md
@@ -9471,6 +9471,8 @@ items:
                 href: api/educationclass-post-assignments.md
               - name: Obter configurações de atribuição
                 href: api/educationassignmentsettings-get.md
+              - name: Obter padrões de atribuição
+                href: api/educationassignmentdefaults-get.md
               - name: Listar categorias
                 href: api/educationclass-list-categories.md
               - name: Criar categoria
@@ -9540,6 +9542,13 @@ items:
                 href: api/educationassignmentsettings-get.md
               - name: Atualizar configurações de atribuição
                 href: api/educationassignmentsettings-update.md
+          - name: Padrões de atribuição
+            href: resources/educationassignmentdefaults.md
+            items:
+              - name: Obter padrões de atribuição
+                href: api/educationassignmentdefaults-get.md
+              - name: Atualizar padrões de atribuição
+                href: api/educationassignmentdefaults-update.md
           - name: Categoria
             href: resources/educationcategory.md
             items:
@@ -10422,6 +10431,15 @@ items:
                         href: api/emailauthenticationmethodconfiguration-update.md
                       - name: Excluir
                         href: api/emailauthenticationmethodconfiguration-delete.md
+                  - name: Política de mensagem de texto
+                    href: resources/smsAuthenticationMethodConfiguration.md
+                    items:
+                      - name: Obter
+                        href: api/smsAuthenticationMethodConfiguration-get.md
+                      - name: Atualizar
+                        href: api/smsAuthenticationMethodConfiguration-update.md
+                      - name: Excluir
+                        href: api/smsAuthenticationMethodConfiguration-delete.md
               - name: Política de métodos de autenticação B2C
                 href: resources/b2cauthenticationmethodspolicy.md
                 items:
@@ -10640,7 +10658,7 @@ items:
               - name: Política
                 href: resources/policy-overview.md
                 items:
-                  - name: Política de tempo de tempo de atividade baseada em
+                  - name: Política de tempo de vida baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
                     items:
                       - name: Criar
@@ -11670,7 +11688,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Excluir
                     href: api/educationalactivity-delete.md
-              - name: Endereço de email
+              - name: Email
                 items:
                   - name: Email do item
                     href: resources/itememail.md
@@ -12569,7 +12587,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -12715,7 +12733,24 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+          - name: Lista de participantes do Planner
+            href: resources/plannerroster.md
+            items:
+              - name: Criar lista de lista
+                href: api/planner-post-rosters.md
+              - name: Excluir lista de lista
+                href: api/plannerroster-delete.md
+              - name: Listar membros da lista
+                href: api/plannerroster-list-members.md
+              - name: Adicionar um membro à lista de membros
+                href: api/plannerroster-post-members.md
+              - name: Remover um membro da lista de membros
+                href: api/plannerrostermember-delete.md
+              - name: Listar planos na lista de lista
+                href: api/plannerroster-list-plans.md
+              - name: Listar planos do usuário em listas de participantes
+                href: api/planneruser-list-rosterplans.md
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral

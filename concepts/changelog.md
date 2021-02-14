@@ -3,18 +3,47 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 71858bee79e22afe70757fa7339d83795cfe02dd
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: d02bf283696460123420ee4d9270a1e7bd331f97
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052521"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239238"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Este log de alterações inclui alterações específicas no nível da API no Microsoft Graph v 1.0 e beta.
 
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
+
+## <a name="february-2021"></a>Fevereiro de 2021
+
+### <a name="tasks-and-plans"></a>Tarefas e planos
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+|Adição|beta|Adicionada a relação **rosterPlans** ao recurso [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta)|
+|Adição|beta|Adicionada a relação **rosters** ao recurso [planner](https://docs.microsoft.com/en-us/graph/api/resources/planner?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **isCreationContext** ao recurso [plannerPlanContext](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContext?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **customLinkText** ao recurso [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **displayLinkType** ao recurso [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta)|
+|Adição|beta|Adicionado o tipo de recurso [plannerRoster](https://docs.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta)|
+|Adição|beta|Adicionado o tipo de recurso [plannerRosterMember](https://docs.microsoft.com/en-us/graph/api/resources/plannerRosterMember?view=graph-rest-beta)|
+|Adição|beta|Adicionado o membro `roster` à enumeração **plannerContainerType**|
+|Adição|beta|Adicionado o tipo de enumeração **plannerPlanContextType**|
+
+### <a name="identity-and-access--devices"></a>Identidade e acesso | Dispositivos
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+| Adição | beta | Adicionada a propriedade **deviceCategory** ao recurso [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionada a propriedade **deviceOwnership** ao recurso [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionada a propriedade **domainName** ao recurso [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionada a propriedade **enrollmentProfileName** ao recurso [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionada a propriedade **enrollmentType** ao recurso [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionada a propriedade **isRooted** ao recurso [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionada a propriedade **managementType** ao recurso [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionada a propriedade **registrationDateTime** ao recurso [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
 
 ## <a name="january-2021"></a>Janeiro de 2021
 
@@ -225,8 +254,6 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionado o tipo de recurso [channelModerationSettings](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionado o tipo de enumeração **replyRestriction**. |
 | Adição | beta | Adicionado o tipo de enumeração **userNewMessageRestriction**. |
-
-
 
 ## <a name="november-2020"></a>Novembro de 2020
 
@@ -916,7 +943,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | A função [delta](/graph/api/event-delta?view=graph-rest-beta&preserve-view=true) suporta um cenário adicional para obter alterações incrementais (novo, atualizado ou removido) de eventos em um calendário de usuário sem necessidade de estarem limitados por um intervalo de data. |
 
-### <a name="change-notifications"></a>Alterar notificações
+### <a name="change-notifications"></a>Notificações de alteração
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
