@@ -1,16 +1,16 @@
 ---
 title: Listar membros transitivos de grupo
-description: Obtenha uma lista dos membros do grupo.
+description: Obter uma lista dos membros do grupo.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b713b3fcddbe4d3a7e0b1931847f94c0f1f60692
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 9b7f5a95498ca9a7e5bd502d5a1d9f40479d0cf3
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082045"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50271957"
 ---
 # <a name="list-group-transitive-members"></a>Listar membros transitivos de grupo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista dos membros do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação é transitiva e também retornará uma lista simples de todos os membros aninhados.
+Obter uma lista dos membros do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação é transitiva e também retornará uma lista simples de todos os membros aninhados.
 
 ## <a name="permissions"></a>Permissions
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | Directory. Read. All, Directory. AccessAsUser. All, User. ReadBasic. All, User. Read. All    |
+| Delegado (conta corporativa ou de estudante) | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All    |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | Directory. Read. All, User. Read. All |
+| Application | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
-> **Observação:** Para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.
+> **Observação:** Para listar os membros de um grupo de associação oculto, a permissão Member.Read.Hidden é necessária.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -63,7 +63,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-transitive-membership-of-a-group"></a>Exemplo 1: obter a associação transitiva de um grupo
+### <a name="example-1-get-the-transitive-membership-of-a-group"></a>Exemplo 1: Obter a associação transitiva de um grupo
 
 #### <a name="request"></a>Solicitação
 
@@ -125,7 +125,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-transitive-membership"></a>Exemplo 2: obter apenas uma contagem de associação transitiva
+### <a name="example-2-get-only-a-count-of-transitive-membership"></a>Exemplo 2: Obter apenas uma contagem de associação transitiva
 
 #### <a name="request"></a>Solicitação
 
@@ -160,7 +160,7 @@ Content-type: text/plain
 893
 
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Exemplo 3: usar a conversão OData e $search para obter associação em grupos com nomes de exibição que contenham as letras de ' camada ', incluindo uma contagem de objetos retornados
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Exemplo 3: Usar a base de OData e a $search para obter associação em grupos com nomes de exibição que contenham as letras 'camada', incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
@@ -202,7 +202,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 4: usar o $filter e o elenco OData para obter a associação do usuário em grupos com um nome de exibição que começa com ' A ', incluindo uma contagem de objetos retornados
+### <a name="example-4-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 4: Usar a base de OData e a $filter para obter a associação do usuário em grupos com um nome de exibição que começa com "A", incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 

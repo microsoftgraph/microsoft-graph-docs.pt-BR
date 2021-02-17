@@ -1,26 +1,26 @@
 ---
-title: Localizar os componentes do Microsoft Graph Toolkit
-description: Use o LocalizationHelper para localizar os componentes do Microsoft Graph Toolkit.
+title: Localizando os componentes do Microsoft Graph Toolkit
+description: Use LocalizationHelper para localização dos componentes do Kit de Ferramentas do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 3ac9f3fe5dedeb4e1793a589778242486f3b0070
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: a2bd44330e3b5e9476b86c9e9cd69aadcab43467
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660090"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272521"
 ---
-# <a name="localizing-the-microsoft-graph-toolkit-components"></a>Localizar os componentes do Microsoft Graph Toolkit
+# <a name="localizing-the-microsoft-graph-toolkit-components"></a>Localizando os componentes do Microsoft Graph Toolkit
 
 A localização é um aspecto importante do desenvolvimento de aplicativos para dar suporte a usuários com vários requisitos de idioma globalmente.
 
-Você pode localizar os componentes do kit de ferramentas do Microsoft Graph para garantir que a interface do usuário reflita o idioma de destino.
+Você pode localizado os componentes do Microsoft Graph Toolkit para garantir que a interface do usuário reflita o idioma de destino.
 
 ## <a name="use-localizationhelper-to-add-localized-strings"></a>Usar LocalizationHelper para adicionar cadeias de caracteres localizadas
 
-Todas as cadeias de caracteres no kit de ferramentas não são localizadas, mas você pode fornecer suas próprias cadeias de caracteres localizadas e gerenciar idiomas diferentes pelo mesmo processo que você usa para localizar seu aplicativo. Para facilitar a localização, o kit de ferramentas expõe a `LocalizationHelper` classe estática.
+Nenhuma das cadeias de caracteres no kit de ferramentas está localizada, mas você pode fornecer suas próprias cadeias de caracteres localizadas e gerenciar idiomas diferentes por meio do mesmo processo usado para localização do aplicativo. Para facilitar a localização, o kit de ferramentas expõe a `LocalizationHelper` classe estática.
 
-O exemplo a seguir mostra como localizar vários componentes.
+O exemplo a seguir mostra como localização de vários componentes.
 
 ```ts
 import { LocalizationHelper } from "@microsoft/mgt";
@@ -34,7 +34,7 @@ LocalizationHelper.strings = {
     },
     "people-picker": {
       inputPlaceholderText: "ابدأ في كتابة الاسم",
-      noResultsFound: "لم نجد أي قنوات", //collision with global defined noResultsFound will overwrite with local result
+      noResultsFound: "لم نجد أي قنوات", // will overwrite globally defined noResultsFound in people-picker component
       loadingMessage: "...جار التحميل",
     },
     "teams-channel-picker": {
@@ -67,134 +67,134 @@ LocalizationHelper.strings = {
 };
 ```
 
-Quando a `strings` propriedade for atribuída, todos os componentes selecionarão automaticamente as novas cadeias de caracteres e serão renderizados novamente, permitindo que você altere as cadeias de caracteres dinamicamente. 
+Quando a propriedade for atribuída, todos os componentes pegarão automaticamente as novas cadeias de caracteres e renderizarão outra vez, permitindo que você altere as `strings` `LocalizationHelper` cadeias de caracteres dinamicamente. 
 
-As cadeias de caracteres podem ser definidas em um nível global ou por componente (com a `_components:` Propriedade).
+As cadeias de caracteres podem ser definidas em nível global ou por componente (com a `_components:` propriedade).
 
 ## <a name="strings"></a>Cadeias de caracteres
 
 ### <a name="login"></a>Logon
 
 ```ts
-{
-  signInLinkSubtitle: 'Sign In',
-  signOutLinkSubtitle: 'Sign Out'
+"login": {
+  signInLinkSubtitle: "Sign In",
+  signOutLinkSubtitle: "Sign Out"
 }
 ```
 
 ### <a name="people-picker"></a>Seletor de Pessoas
 
 ```ts
-{
-  inputPlaceholderText: 'Start typing a name',
+"people-picker": {
+  inputPlaceholderText: "Start typing a name",
   noResultsFound: `We didn't find any matches.`,
-  loadingMessage: 'Loading...'
+  loadingMessage: "Loading..."
 }
 ```
 
-### <a name="teams-channel-picker"></a>Teams – seletor de canal
+### <a name="teams-channel-picker"></a>Teams-Channel-Picker
 
 ```ts
-{
-  inputPlaceholderText: 'Select a channel',
+"teams-channel-picker": {
+  inputPlaceholderText: "Select a channel",
   noResultsFound: `We didn't find any matches.`,
-  loadingMessage: 'Loading...'
+  loadingMessage: "Loading..."
 }
 ```
 
 ### <a name="tasks"></a>Tarefas
 
 ```ts
-{
-  removeTaskSubtitle: 'Delete Task',
-  cancelNewTaskSubtitle: 'cancel',
-  newTaskPlaceholder: 'Task...',
-  addTaskButtonSubtitle: 'Add'
+"tasks": {
+  removeTaskSubtitle: "Delete Task",
+  cancelNewTaskSubtitle: "cancel",
+  newTaskPlaceholder: "Task...",
+  addTaskButtonSubtitle: "Add"
 }
 ```
 
 ### <a name="tasks-base"></a>Tasks-Base
 
 ```ts
-{
-  removeTaskSubtitle: 'Delete Task',
-  cancelNewTaskSubtitle: 'cancel',
-  newTaskPlaceholder: 'Task...',
-  addTaskButtonSubtitle: 'Add'
+"tasks-base": {
+  removeTaskSubtitle: "Delete Task",
+  cancelNewTaskSubtitle: "cancel",
+  newTaskPlaceholder: "Task...",
+  addTaskButtonSubtitle: "Add"
 }
 ```
 
-### <a name="todo"></a>Fazer
+### <a name="todo"></a>Todo
 
 ```ts
-{
-  removeTaskSubtitle: 'Delete Task',
-  cancelNewTaskSubtitle: 'cancel',
-  newTaskPlaceholder: 'Task...',
-  addTaskButtonSubtitle: 'Add'
+"todo": {
+  removeTaskSubtitle: "Delete Task",
+  cancelNewTaskSubtitle: "cancel",
+  newTaskPlaceholder: "Task...",
+  addTaskButtonSubtitle: "Add"
 }
 ```
 
 ### <a name="person-card"></a>Cartão de pessoa
 
 ```ts
-{
-  sendEmailLinkSubtitle: 'Send email',
-  startChatLinkSubtitle: 'Start chat',
-  showMoreSectionButton: 'Show more'
+"person-card": {
+  sendEmailLinkSubtitle: "Send email",
+  startChatLinkSubtitle: "Start chat",
+  showMoreSectionButton: "Show more"
 }
 ```
 
-### <a name="person-card-contact"></a>Pessoa-cartão-contato
+### <a name="person-card-contact"></a>Person-Card-Contact
 
 ```ts
-{
-  contactSectionTitle: "Contact";
+"person-card-contact": {
+  contactSectionTitle: "Contact"
 }
 ```
 
-### <a name="person-card-organization"></a>Pessoa-cartão-organização
+### <a name="person-card-organization"></a>Person-Card-Organization
 
 ```ts
-{
-  reportsToSectionTitle: 'Reports to',
-  directReportsSectionTitle: 'Direct reports',
-  organizationSectionTitle: 'Organization',
-  youWorkWithSubSectionTitle: 'You work with',
-  userWorksWithSubSectionTitle: 'works with'
+"person-card-organization": {
+  reportsToSectionTitle: "Reports to",
+  directReportsSectionTitle: "Direct reports",
+  organizationSectionTitle: "Organization",
+  youWorkWithSubSectionTitle: "You work with",
+  userWorksWithSubSectionTitle: "works with"
 }
 ```
 
-### <a name="person-card-messages"></a>Pessoa-cartão-mensagens
+### <a name="person-card-messages"></a>Person-Card-Messages
 
 ```ts
-{
-  emailsSectionTitle: "Emails";
+"person-card-messages": {
+  emailsSectionTitle: "Emails"
 }
 ```
 
-### <a name="person-card-files"></a>Pessoa-cartão-arquivos
+### <a name="person-card-files"></a>Person-Card-Files
 
 ```ts
-{
-  filesSectionTitle: 'Files',
-  sharedTextSubtitle: 'Shared'
+"person-card-files": {
+  filesSectionTitle: "Files",
+  sharedTextSubtitle: "Shared"
 }
 ```
 
 ### <a name="person-card-profile"></a>Person-Card-Profile
 
 ```ts
-{
-  SkillsAndExperienceSectionTitle: 'Skills & Experience',
-  AboutCompactSectionTitle: 'About',
-  SkillsSubSectionTitle: 'Skills',
-  LanguagesSubSectionTitle: 'Languages',
-  WorkExperienceSubSectionTitle: 'Work Experience',
-  EducationSubSectionTitle: 'Education',
-  professionalInterestsSubSectionTitle: 'Professional Interests',
-  personalInterestsSubSectionTitle: 'Personal Interests',
-  birthdaySubSectionTitle: 'Birthday',
-  currentYearSubtitle: 'Current'
+"person-card-profile": {
+  SkillsAndExperienceSectionTitle: "Skills & Experience",
+  AboutCompactSectionTitle: "About",
+  SkillsSubSectionTitle: "Skills",
+  LanguagesSubSectionTitle: "Languages",
+  WorkExperienceSubSectionTitle: "Work Experience",
+  EducationSubSectionTitle: "Education",
+  professionalInterestsSubSectionTitle: "Professional Interests",
+  personalInterestsSubSectionTitle: "Personal Interests",
+  birthdaySubSectionTitle: "Birthday",
+  currentYearSubtitle: "Current"
 }
 ```

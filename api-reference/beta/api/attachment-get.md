@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: abe9ef81f8b00fdbac85cc9ff44cde1fffb4c10e
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 0c4126ae9396c8afab1ee77a36cf35a1c91c8708
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176938"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272167"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Leia as propriedades, relações ou conteúdo bruto de um anexo anexado a um evento de usuário [,](../resources/event.md)mensagem [,](../resources/message.md)tarefa do [Outlook](../resources/outlooktask.md)ou postagem de [grupo.](../resources/post.md) 
+Leia as propriedades, relações ou conteúdo bruto de um anexo anexado a um evento de [usuário,](../resources/event.md) [mensagem,](../resources/message.md)tarefa do [Outlook](../resources/outlooktask.md)ou postagem de [grupo.](../resources/post.md) 
 
 Um anexo pode ser de um dos seguintes tipos:
 
-* Um arquivo. Programaticamente, este é um recurso [fileAttachment](../resources/fileattachment.md). Veja [o exemplo 1](#example-1-get-the-properties-of-a-file-attachment).
-* Um item do Outlook (contato, evento ou mensagem). Programaticamente, um anexo de item é um recurso [itemAttachment](../resources/itemattachment.md). Você pode usar `$expand` para obter ainda mais as propriedades desse item, incluindo todos os anexos aninhados até 30 níveis. Veja [o exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) e [o exemplo 4.](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)
-* Um link para um arquivo armazenado na nuvem. Programaticamente, este é um recurso [referenceAttachment](../resources/referenceattachment.md). Veja [o exemplo 5](#example-5-get-the-properties-of-a-reference-attachment).
+* Um arquivo. Programaticamente, este é um recurso [fileAttachment](../resources/fileattachment.md). Veja [exemplo 1](#example-1-get-the-properties-of-a-file-attachment).
+* Um item do Outlook (contato, evento ou mensagem). Programaticamente, um anexo de item é um recurso [itemAttachment](../resources/itemattachment.md). Você pode usar `$expand` para obter ainda mais as propriedades desse item, incluindo quaisquer anexos aninhados em até 30 níveis. Veja o [exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) e o [exemplo 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
+* Um link para um arquivo armazenado na nuvem. Programaticamente, este é um recurso [referenceAttachment](../resources/referenceattachment.md). Veja o[exemplo 5](#example-5-get-the-properties-of-a-reference-attachment).
 
 Todos esses tipos de anexos são derivados do recurso [anexo](../resources/attachment.md). 
 
@@ -139,7 +139,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 
 Este método também dá suporte a alguns [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Use `$expand` para obter as propriedades de um anexo de item (contato, evento ou mensagem). Veja [o exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) e [o exemplo 4.](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)
+Use `$expand` para obter as propriedades de um anexo de item (contato, evento ou mensagem). Veja o [exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) e o [exemplo 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -402,9 +402,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item"></a>Exemplo 4: Expandir e obter as propriedades de um item anexado a uma mensagem, incluindo qualquer anexo ao item
+### <a name="example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item"></a>Exemplo 4: Expanda e obtenha as propriedades de um item anexado a uma mensagem, incluindo qualquer anexo do item
 #### <a name="request"></a>Solicitação
-O próximo exemplo usa a mesma solicitação que no [exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) para obter as propriedades de um anexo de item em uma mensagem usando `$expand` . Nesse caso, como o item anexado também tem um anexo de arquivo, a resposta também inclui as propriedades do anexo de arquivo. 
+O próximo exemplo usa a mesma solicitação do [exemplo 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) para obter as propriedades de um anexo de item em uma mensagem usando `$expand`. Nesse caso, como o item anexado também contém um anexo de arquivo, a resposta também inclui as propriedades do anexo de arquivo. 
 
 <!-- {
   "blockType": "request",
@@ -412,7 +412,7 @@ O próximo exemplo usa a mesma solicitação que no [exemplo 3](#example-3-expan
   "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 
@@ -505,7 +505,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-get-the-properties-of-a-reference-attachment"></a>Exemplo 5: Obter as propriedades de um anexo de referência
+### <a name="example-5-get-the-properties-of-a-reference-attachment"></a>Exemplo 5: Obtenha as propriedades de um anexo de referência
 
 #### <a name="request"></a>Solicitação
 
@@ -572,7 +572,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-6-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Exemplo 6: Obter o conteúdo bruto de um anexo de arquivo em uma mensagem
+### <a name="example-6-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Exemplo 6: Obtenha o conteúdo bruto de um anexo de arquivo em uma mensagem
 
 #### <a name="request"></a>Solicitação
 
@@ -603,7 +603,7 @@ HTTP/1.1 200 OK
 ```
 
 
-### <a name="example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Exemplo 7: Obter o conteúdo bruto MIME de um anexo de contato em uma mensagem
+### <a name="example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Exemplo 7: Obtenha o conteúdo bruto MIME de um anexo de contato em uma mensagem
 
 #### <a name="request"></a>Solicitação
 
@@ -652,7 +652,7 @@ END:VCARD
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Exemplo 8: Obter o conteúdo bruto MIME de um anexo de evento em uma mensagem
+### <a name="example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Exemplo 8: Obtenha o conteúdo bruto MIME de um anexo de evento em uma mensagem
 
 #### <a name="request"></a>Solicitação
 
@@ -732,7 +732,7 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Exemplo 9: Obter o conteúdo bruto MIME de um anexo de item de convite de reunião em uma mensagem
+### <a name="example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Exemplo 9: Obtenha o conteúdo bruto MIME de um anexo de item de convite de reunião em uma mensagem
 
 #### <a name="request"></a>Solicitação
 

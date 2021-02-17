@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 314d1ab950924f1b8f315029c9a829958396d120
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bc29aeecee72dc72c6e460b64420c5fd64d76afb
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135468"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50271831"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Visão geral da API de métodos de autenticação do Azure AD
 
@@ -42,6 +42,8 @@ As APIs do método de autenticação são usadas para gerenciar os métodos de a
 |[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (preterido)|O Acesso por Telefone sem Senha do Microsoft Authenticator pode ser usado por um usuário para entrar no Azure AD|Exclua um método de autenticação de login de telefone sem senha.|
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|Um endereço de email pode ser usuário por um usuário como parte do processo Self-Service redefinição de senha (SSPR).|Consulte o endereço de email de autenticação de um usuário. Adicionar, atualizar ou remover um endereço de email para um usuário.|
 |[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|O Windows Hello para Empresas é um método de entrada sem senha em dispositivos Windows.|Ver dispositivos em que um usuário habilitar a entrada do Windows Hello para Empresas. Exclua uma credencial do Windows Hello para Empresas.|
+|[temporaryaccesspassauthenticationmethod](temporaryaccesspassauthenticationmethod.md)|O Acesso Temporário é uma senha com tempo limitado que serve como uma credencial forte e permite a integração de credenciais sem senha. | Definir uma nova Passagem de Acesso Temporário em um usuário.|
+
 
 ## <a name="next-steps"></a>Próximas etapas
 

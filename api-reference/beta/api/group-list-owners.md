@@ -1,16 +1,16 @@
 ---
 title: Listar proprietários
-description: Recupere uma lista dos proprietários do grupo.
+description: Recupere uma lista de proprietários do grupo.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0f3e76c321cd6732a0a2a0c3944e1df02cba92fb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 29352a52e6e50c788bd1457f3038c6389356303f
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953981"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50271959"
 ---
 # <a name="list-owners"></a>Listar proprietários
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista dos proprietários do grupo. Os proprietários são um conjunto de usuários que têm permissão para modificar o objeto de grupo. Os proprietários não estão atualmente disponíveis no Microsoft Graph para os grupos que foram criados no Exchange ou grupos que são sincronizados a partir de um ambiente no local. 
+Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que têm permissão para modificar o objeto de grupo. Os proprietários atualmente não estão disponíveis no Microsoft Graph para grupos que foram criados no Exchange ou grupos que são sincronizados de um ambiente local. 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Group.Read.All and User.ReadBasic.All, Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All, Group.Read.All and User.Read.All and Application.Read.All  |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All, Group.Read.All and User.Read.All and Application.Read.All |
+|Delegado (conta corporativa ou de estudante) | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All  |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

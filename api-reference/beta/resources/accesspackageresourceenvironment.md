@@ -5,12 +5,12 @@ author: hanki-microsoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 814e77cb8122773bc425180c7e78a2794c9e0784
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2f03e2c754ea09cdc797b71d4ef59372ac47ff9b
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137691"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272515"
 ---
 # <a name="accesspackageresourceenvironment-resource-type"></a>Tipo de recurso accessPackageResourceEnvironment
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No Gerenciamento de Direitos do [Azure AD,](entitlementmanagement-root.md)um ambiente de recursos do pacote de acesso é uma referência ao ambiente de geolocalização no qual um recurso está localizado. Esse ambiente é fornecido automaticamente como parte do Gerenciamento de Entilement do Azure AD. A API só é aplicável a sites multi-geo do SharePoint Online.
+No Gerenciamento de Direitos do [Azure AD,](entitlementmanagement-root.md)um ambiente de recursos do pacote de acesso é uma referência ao ambiente de geolocalização no qual um recurso está localizado. Esse ambiente é fornecido automaticamente como parte do Gerenciamento de Direitos do Azure AD. A API só é aplicável a sites multi-geo do SharePoint Online.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar accessPackageResourceEnvironments](../api/accesspackageresourceenvironment-list.md)|[Coleção accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Recupere uma lista de [objetos accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)|
@@ -35,7 +35,7 @@ No Gerenciamento de Direitos do [Azure AD,](entitlementmanagement-root.md)um amb
 |description|String|A descrição deste *objeto accessPackageResourceEnvironment.*|
 |displayName|String|O nome de exibição deste objeto.|
 |id|String|O identificador exclusivo atribuído pelo sistema do objeto.|
-|isDefaultEnvironment|Boolean|Determina se esse é o ambiente padrão ou não. Ele é definido para todos os sistemas de origem estáticos, como grupos do `true` Azure AD e aplicativos do Azure AD.|
+|isDefaultEnvironment|Booliano|Determina se esse é o ambiente padrão ou não. Ele é definido para todos os sistemas de origem estáticos, como grupos do `true` Azure AD e aplicativos do Azure AD.|
 |modifiedBy|String|O nome de exibição da entidade que modificou esse objeto pela última vez.|
 |modifiedDateTime|DateTimeOffset|A data e a hora em que esse objeto foi modificado pela última vez. <br>O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 `'2014-01-01T00:00:00Z'` será. |
 |originId|String|O identificador exclusivo deste ambiente no sistema de origem.|
@@ -52,7 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.accessPackageResourceEnvironment",
-  "baseType": "",
   "openType": false
 }
 -->

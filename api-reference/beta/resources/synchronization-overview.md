@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: a08be511c3752e27f2e86415aee62d112d2c5262
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2c0cbfae55ca02743d1b8e10777580e431529103
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133158"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272505"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Visão geral da API de sincronização do Azure AD
 
@@ -60,7 +60,7 @@ O modelo de sincronização fornece configurações de sincronização pré-conf
 
 Para obter mais informações, consulte [o modelo de sincronização.](synchronization-synchronizationtemplate.md)
 
-## <a name="working-with-the-synchronization-api"></a>Trabalhando com a API de sincronização
+## <a name="working-with-the-synchronization-api"></a>Trabalhar com a API de sincronização
 
 Trabalhar com a API de sincronização envolve principalmente o acesso aos recursos [synchronizationJob](synchronization-synchronizationjob.md) e [synchronizationSchema.](synchronization-synchronizationschema.md) Para encontrar o [recurso synchronizationJob,](synchronization-synchronizationjob.md) você precisa saber a ID do objeto de entidade de serviço ao qual o trabalho de sincronização pertence. Os exemplos a seguir mostram como trabalhar com os recursos **synchronizationJob** e **synchronizationSchema.**
 
@@ -84,23 +84,24 @@ GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayN
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
-    "value": [
-    {
-        "id": "bc0dc311-87df-48ac-91b1-259bd2c3a31c",
-        "appId": "f7808c5e-cb57-4e37-8094-406d302c0f8d",
-        "displayName": "Salesforce"
-    },
-    {
-        "id": "d813d7d7-0f41-4edc-b284-d0dfaf399d15",
-        "appId": "219561ee-1480-4c67-9aa6-63d861fae3ef",
-        "displayName": "salesforce 3"
-    }
-    ]
+   "value":[
+      {
+         "id":"bc0dc311-87df-48ac-91b1-259bd2c3a31c",
+         "appId":"f7808c5e-cb57-4e37-8094-406d302c0f8d",
+         "displayName":"Salesforce"
+      },
+      {
+         "id":"d813d7d7-0f41-4edc-b284-d0dfaf399d15",
+         "appId":"219561ee-1480-4c67-9aa6-63d861fae3ef",
+         "displayName":"salesforce 3"
+      }
+   ]
 }
 ```
 
-### <a name="find-the-service-principal-object-by-app-id"></a>Encontre o objeto da entidade de serviço por ID do aplicativo
+### <a name="find-the-service-principal-object-by-app-id"></a>Encontrar o objeto da entidade de serviço por ID do aplicativo
 
 O exemplo a seguir mostra como encontrar o objeto de entidade de serviço por ID do aplicativo.
 
@@ -114,6 +115,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayN
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "value": [
         {
@@ -140,6 +142,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "value": [
         {
@@ -170,17 +173,18 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 **Response**
 <!-- { "blockType": "ignored" } -->
 ```http
-    HTTP/1.1 200 OK
-    {
-        "id": "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa",
-        "templateId": "SfSandboxOutDelta",
-        "schedule": {
-            "expiration": null,
-            "interval": "PT20M",
-            "state": "Active"
-        },
-        "status": {}
-    }
+HTTP/1.1 200 OK
+
+{
+    "id": "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa",
+    "templateId": "SfSandboxOutDelta",
+    "schedule": {
+        "expiration": null,
+        "interval": "PT20M",
+        "state": "Active"
+    },
+    "status": {}
+}
 ```
 
 ### <a name="get-synchronization-schema"></a>Obter esquema de sincronização
@@ -196,6 +200,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "directories": [],
     "synchronizationRules": []

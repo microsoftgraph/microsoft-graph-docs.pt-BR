@@ -3,14 +3,15 @@ title: Visão geral da API da política de métodos de autenticação do Azure A
 description: As políticas de métodos de autenticação definem quais métodos de autenticação podem ser usados pelos usuários no Azure AD.
 localization_priority: Normal
 author: mmcla
+ms.author: michmcla
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 1d8ba37ebcd97ae93f057d30ae20fb8031b45989
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 593cbea196edcbe1c868a337b1dcfa8a1de2afc9
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135454"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50271824"
 ---
 # <a name="azure-ad-authentication-methods-policies-api-overview"></a>Visão geral da API de políticas de métodos de autenticação do Azure AD
 
@@ -29,10 +30,12 @@ As APIs de políticas de método de autenticação são usadas para gerenciar co
 
 |Política de método de autenticação       | Descrição |
 |:---------------------------|:------------|:------------|
+|[smsAuthenticationMethodConfiguration](smsAuthenticationMethodConfiguration.md)| Defina os usuários que podem usar a Mensagem de Texto no locatário do Azure AD.|
 |[fido2authenticationmethodconfiguration](fido2authenticationmethodconfiguration.md)| Defina restrições de chave de segurança FIDO2 e usuários que podem usá-las para entrar no Azure AD.|
 |[microsoftauthenticatorauthenticationmethodconfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)|Defina os usuários que podem usar o Microsoft Authenticator no locatário do Azure AD.|
 |[emailauthenticationmethodconfiguration](emailauthenticationmethodconfiguration.md)|Defina os usuários que podem usar o OTP de email no locatário do Azure AD.|
 |[passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) (preterido)|Defina os usuários que podem usar a Assinatura de Telefone Sem Senha para entrar no Azure AD.|
+|[temporaryaccesspassauthenticationmethodconfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)|Defina os usuários que podem usar o Acesso Temporário para entrar no Azure AD.|
 
 ## <a name="next-steps"></a>Próximas etapas
 

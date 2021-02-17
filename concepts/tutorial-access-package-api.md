@@ -1,55 +1,55 @@
 ---
-title: 'Tutorial: criar um pacote de acesso usando as APIs do Microsoft Graph'
-description: Saiba como criar um pacote do Access e solicitar acesso a ele usando as APIs do Microsoft Graph.
+title: 'Tutorial: Gerenciar o acesso a recursos no gerenciamento de direitos do Active Directory usando as APIs do Microsoft Graph'
+description: Saiba como gerenciar o acesso a recursos no gerenciamento de direitos do Active Directory (Azure AD) usando as APIs do Microsoft Graph.
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c276289b4e71c96386afd7e2502021249025965b
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: ae9dfec7ae5db453ff6962ffd5684dd3bd9ee7d1
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288837"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50271859"
 ---
-# <a name="tutorial-create-an-access-package-using-microsoft-graph-apis"></a>Tutorial: criar um pacote de acesso usando as APIs do Microsoft Graph
+# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Tutorial: Gerenciar o acesso a recursos no gerenciamento de direitos do Active Directory usando as APIs do Microsoft Graph
 
-Gerenciar o acesso a todos os recursos necessários para os funcionários, como grupos, aplicativos e sites, é uma função importante para as organizações. Você deseja conceder aos funcionários o nível certo de acesso de que eles precisam para serem produtivos e remover o acesso quando ele não for mais necessário. [Azure Active Directory (Azure AD) o gerenciamento de direitos](/azure/active-directory/governance/entitlement-management-overview) usando as APIs do Microsoft Graph permite que você gerencie esse tipo de acesso.
+Gerenciar o acesso a todos os recursos de que os funcionários precisam, como grupos, aplicativos e sites, é uma função importante para as organizações. Você deseja conceder aos funcionários o nível certo de acesso que eles precisam para serem produtivos e remover o acesso quando não for mais necessário. O gerenciamento de direitos do [Azure Active Directory (Azure AD)](/azure/active-directory/governance/entitlement-management-overview) usando AS APIs do Microsoft Graph permite gerenciar esse tipo de acesso.
 
-Neste tutorial, você foi solicitado a desenvolver o código para criar um pacote de recursos para uma campanha de marketing que os usuários internos podem solicitar. As solicitações não exigem aprovação e o acesso do usuário expira após 30 dias. Para este tutorial, os recursos de campanha de marketing são apenas associados em um único grupo, mas pode ser uma coleção de grupos, aplicativos ou sites do SharePoint Online.
+Neste tutorial, você foi solicitado a desenvolver código para criar um pacote de recursos para uma campanha de marketing que os usuários internos podem solicitar por autoatendigo. As solicitações não exigem aprovação e o acesso do usuário expira após 30 dias. Para este tutorial, os recursos da campanha de marketing são apenas membros de um único grupo, mas pode ser um conjunto de grupos, aplicativos ou sites do SharePoint Online.
 
->**Observação:** Os objetos de resposta mostrados neste tutorial podem ser reduzidos para facilitar a leitura. 
+>**Observação:** Os objetos de resposta mostrados neste tutorial podem ser reduzidos para maior leitura. 
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para concluir com êxito este tutorial, verifique se você tem os pré-requisitos necessários:
-- O gerenciamento de direitos do Azure AD requer licenças específicas. Para obter mais informações, consulte [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). As seguintes licenças são necessárias em seu locatário:
+Para concluir com êxito este tutorial, certifique-se de que você tem os pré-requisitos necessários:
+- O gerenciamento de direitos do Azure AD requer licenças específicas. Para obter mais informações, consulte [Requisitos de licença.](/azure/active-directory/governance/entitlement-management-overview#license-requirements) As seguintes licenças são necessárias em seu locatário:
     - Azure AD Premium P2
-    - Licença Enterprise Mobility + Security (EMS) e5
-- Este tutorial pressupõe que você está usando o Microsoft Graph Explorer, mas você pode usar o postmaster ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Para este tutorial, as `User.ReadWrite.All` `Group.ReadWrite.All` permissões, e `EntitlementManagement.ReadWrite.All` delegadas, são necessárias. Conclua as seguintes etapas para definir permissões no Microsoft Graph Explorer:
+    - Licença enterprise Mobility + Security (EMS) E5
+- Este tutorial assume que você está usando o Microsoft Graph Explorer, mas você pode usar o Postman ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Para este tutorial, as permissões , e `User.ReadWrite.All` `Group.ReadWrite.All` `EntitlementManagement.ReadWrite.All` delegadas são necessárias. Conclua as seguintes etapas para definir permissões no Microsoft Graph Explorer:
     1. Iniciar [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-    2. Selecione **entrar com a Microsoft** e entre usando uma conta de administrador global do Azure AD. Após entrar com êxito, você poderá ver os detalhes da conta de usuário no painel esquerdo.
-    3. Selecione o ícone de configurações à direita dos detalhes da conta de usuário e selecione **permissões**.
+    2. Selecione **Entrar com a Microsoft** e entre usando uma conta de administrador global do Azure AD. Depois de entrar com êxito, você poderá ver os detalhes da conta de usuário no painel esquerdo.
+    3. Selecione o ícone de configurações à direita dos detalhes da conta do usuário e selecione **Selecionar permissões.**
 
         ![Selecionar as permissões do Microsoft Graph](./images/tutorial-access-package-api/set-permissions.png)
         
-    4. Role a lista de permissões para as `Group` permissões, expanda **Group (2)**, selecione a permissão **Group. ReadWrite. All** . Role mais adiante na lista de permissões para as `User` permissões, expanda **usuário (8)** e selecione a permissão **User. ReadWrite. All** .
+    4. Role pela lista de permissões para as `Group` permissões, expanda **Grupo (2),** selecione a **permissão Group.ReadWrite.All.** Role mais para baixo a lista de permissões para as `User` permissões, expanda **Usuário (8)** e selecione a **permissão User.ReadWrite.All.**
 
-        ![Procurar as permissões de usuário, grupo e entitlementmanagement](./images/tutorial-access-package-api/set-user-permission.png)
+        ![Pesquisar as permissões de usuário, grupo e direito](./images/tutorial-access-package-api/set-user-permission.png)
     
-    5. Selecione **consentimento**e, em seguida, selecione **aceitar** para aceitar o consentimento das permissões. Você não precisa consentir em nome da sua organização para essas permissões.
-    6. Procure as `EntitlementManagement` permissões, expanda **EntitlementManagement (2)**, selecione a permissão de **qualificação. ReadWrite. All** e, em seguida, selecione o **consentimento**. Como essa permissão requer o consentimento do administrador e é necessária para uma conta de usuário que você cria neste tutorial, você deve selecionar **consentimento em nome da sua organização**.
+    5. Selecione **Consentimento** e, em **seguida, selecione Aceitar** para aceitar o consentimento das permissões. Você não precisa consentir em nome de sua organização para essas permissões.
+    6. Pesquise as `EntitlementManagement` permissões, expanda **EntitlementManagement (2)**, selecione a permissão **Entitlement.ReadWrite.All** e selecione **Consent**. Como essa permissão requer consentimento do administrador e é necessária por uma conta de usuário que você cria neste tutorial, você deve selecionar Consentimento **em nome da sua organização.**
 
         ![Consentimento para a organização](./images/tutorial-access-package-api/consent-for-organization.png)
 
-    7. Selecione **aceitar** para aceitar o consentimento das permissões.
+    7. Selecione **Aceitar** para aceitar o consentimento das permissões.
 
-## <a name="step-1-create-a-user-account-and-a-group"></a>Etapa 1: criar uma conta de usuário e um grupo
+## <a name="step-1-create-a-user-account-and-a-group"></a>Etapa 1: Criar uma conta de usuário e um grupo
 
-Nesta etapa, você cria um grupo chamado **recursos de marketing** no diretório que é o recurso de destino para o gerenciamento de direitos. Você também cria uma conta de usuário que é configurada como um solicitante interno.
+Nesta etapa, você cria um grupo chamado Recursos de **Marketing** no diretório que é o recurso de destino para o gerenciamento de direitos. Você também cria uma conta de usuário que está configurada como um solicitante interno.
 
 ### <a name="create-a-user-account"></a>Criar uma conta de usuário
 
-Para este tutorial, você cria uma conta de usuário que é usada para solicitar acesso aos recursos no pacote do Access. Ao fazer essas chamadas, mude `contoso.onmicrosoft.com` para o nome de domínio do seu locatário. Você pode encontrar informações sobre o locatário na página Visão geral do Azure Active Directory. Registre o valor da propriedade **ID** que será retornado para ser usado posteriormente no tutorial.
+Para este tutorial, você cria uma conta de usuário que é usada para solicitar acesso aos recursos no pacote de acesso. Ao fazer essas chamadas, mude para `contoso.onmicrosoft.com` o nome de domínio do seu locatário. Você pode encontrar informações de locatário na página de visão geral do Azure Active Directory. Grave o valor da **propriedade de id** que será usada posteriormente no tutorial.
 
 #### <a name="request"></a>Solicitação
 
@@ -102,7 +102,7 @@ Content-type: application/json
 
 ### <a name="create-a-group"></a>Criar um grupo
 
-Neste tutorial, você cria um grupo chamado **marketing Resources** , que é o recurso de destino para gerenciamento de direitos. Você pode usar um grupo existente se já tiver um. Registre o valor da propriedade **ID** que será retornado para uso posteriormente neste tutorial. 
+Neste tutorial, você cria um grupo chamado Recursos de **Marketing** que é o recurso de destino para o gerenciamento de direitos. Você pode usar um grupo existente se já tiver um. Grave o valor da **propriedade de ID** que será retornada para uso posteriormente neste tutorial. 
 
 #### <a name="request"></a>Solicitação
 
@@ -141,13 +141,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-add-resources-to-a-catalog-and-create-an-access-package"></a>Etapa 2: adicionar recursos a um catálogo e criar um pacote de acesso
+## <a name="step-2-add-resources-to-a-catalog-and-create-an-access-package"></a>Etapa 2: Adicionar recursos a um catálogo e criar um pacote de acesso
 
-Um *pacote de acesso* é um pacote de recursos que uma equipe ou projeto precisa e é regido por políticas. Os pacotes de acesso são definidos em contêineres chamados catálogos. Os catálogos podem fazer referência a recursos, como grupos, aplicativos e sites, que são usados no pacote do Access. Nesta etapa, você cria um pacote de acesso de **campanha de marketing** no catálogo geral. Se você tiver um catálogo diferente, use seu nome na próxima seção.
+Um *pacote de acesso* é um pacote de recursos que uma equipe ou projeto precisa e é governado por políticas. Os pacotes de acesso são definidos em contêineres chamados catálogos. Os catálogos podem fazer referência a recursos, como grupos, aplicativos e sites, que são usados no pacote de acesso. Nesta etapa, você cria um pacote **de acesso** à Campanha de Marketing no catálogo Geral. Se você tiver um catálogo diferente, use seu nome na próxima seção.
 
 ### <a name="get-the-catalog-identifier"></a>Obter o identificador de catálogo
 
-Para adicionar recursos ao catálogo, primeiro você deve obter o identificador dele. Se você estiver usando o catálogo geral, execute a solicitação a seguir para obter seu identificador. Se você estiver usando um calalog diferente, altere o valor do filtro na solicitação para o nome do seu catálogo. Registre o valor da propriedade **ID** que será retornado para uso posteriormente neste tutorial.
+Para adicionar recursos ao catálogo, primeiro você deve obter o identificador dele. Se você estiver usando o catálogo Geral, execute a solicitação a seguir para obter seu identificador. Se você estiver usando umlog diferente, altere o valor do filtro na solicitação para o nome do seu catálogo. Grave o valor da **propriedade de id** que será retornada para uso posteriormente neste tutorial.
 
 #### <a name="request"></a>Solicitação
 
@@ -177,15 +177,15 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 }
 ```
 
-A resposta só deve conter o catálogo cujo nome você forneceu na solicitação. Se não houver valores retornados, verifique se o nome do catálogo está correto antes de prosseguir.
+A resposta deve conter apenas o catálogo cujo nome você forneceu na solicitação. Se não houver valores retornados, verifique se o nome do catálogo está correto antes de prosseguir.
 
 ### <a name="add-the-group-to-the-catalog"></a>Adicionar o grupo ao catálogo
 
 Para adicionar o grupo que você criou ao catálogo, forneça os seguintes valores de propriedade:
-- **catalogID** -a **ID** do catálogo que você está usando
-- **DisplayName** -o nome do grupo
-- **Descrição** -a descrição do grupo
-- **originid** -a **ID** do grupo que você criou
+- **catalogId** - **a id** do catálogo que você está usando
+- **displayName** - o nome do grupo
+- **description** - a descrição do grupo
+- **originId** - **a id** do grupo que você criou
 
 #### <a name="request"></a>Solicitação
 
@@ -226,9 +226,9 @@ Content-type: application/json
 
 ### <a name="get-catalog-resources"></a>Obter recursos de catálogo
 
-Nas etapas posteriores deste tutorial, você precisará da **ID** que foi atribuída ao recurso de grupo no catálogo. Esse identificador, que representa o grupo como um recurso no catálogo, é diferente do identificador do próprio grupo no Microsoft Graph. Isso ocorre porque um catálogo pode ter recursos que não são representados no Microsoft Graph.
+Nas etapas posteriores deste tutorial, você precisará da **id** que foi atribuída ao recurso de grupo no catálogo. Esse identificador, que representa o grupo como um recurso no catálogo, é diferente do identificador do próprio grupo no Microsoft Graph. Isso porque um catálogo pode ter recursos que não são representados no Microsoft Graph.
 
-Na solicitação, forneça a **ID** do catálogo que você está usando. Registre o valor da propriedade **ID** do recurso de catálogo de grupo.
+Na solicitação, forneça **a id** do catálogo que você está usando. Registrar o valor da propriedade **de ID** para o recurso de catálogo de grupo.
 
 #### <a name="request"></a>Solicitação
 
@@ -260,9 +260,9 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### <a name="get-resources-roles"></a>Obter funções de recursos
 
-O pacote de acesso atribui usuários às funções de um recurso. A função típica de um grupo é a função de membro. Outros recursos, como sites e aplicativos do SharePoint Online, podem ter muitas funções. A função típica de um grupo usado em um pacote do Access é a função de membro. Você precisará da função de membro ao adicionar uma função de recurso ao pacote de acesso posteriormente neste tutorial. 
+O pacote de acesso atribui usuários às funções de um recurso. A função típica de um grupo é a função de membro. Outros recursos, como sites e aplicativos do SharePoint Online, podem ter muitas funções. A função típica de um grupo usado em um pacote de acesso é a função de membro. Você precisará da função de membro ao adicionar uma função de recurso ao pacote de acesso posteriormente neste tutorial. 
 
-Na solicitação, use a **ID** do catálogo e a **ID** do recurso de grupo no catálogo que você gravou para obter o **originador** da função de recurso member. Registre o valor da propriedade **originid** a ser usado posteriormente neste tutorial.
+Na solicitação, use a **id** do catálogo e a **id** do recurso de grupo no catálogo que você gravou para obter **a originId** da função de recurso Membro. Grave o valor da **propriedade originId** a ser usada posteriormente neste tutorial.
 
 #### <a name="request"></a>Solicitação
 
@@ -302,11 +302,11 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 }
 ```
 
-Se bem-sucedido, um valor único é retornado, que representa a função de membro desse grupo. Se nenhuma função for retornada, verifique os valores de **ID** do catálogo e o recurso de pacote do Access.
+Se bem-sucedido, um único valor é retornado, que representa a função membro desse grupo. Se nenhuma função for retornada, verifique os **valores de ID** do catálogo e o recurso do pacote de acesso.
 
 ### <a name="create-the-access-package"></a>Criar o pacote de acesso
 
-Neste ponto, você tem um catálogo com um recurso de grupo e sabe que usará a função de recurso do membro do grupo no pacote do Access. A próxima etapa é criar o pacote de acesso. Depois de ter o pacote do Access, você pode adicionar a função de recurso a ele e criar uma política para o modo como os usuários podem solicitar acesso a essa função de recurso. Você usa a **ID** do catálogo que gravou anteriormente para criar o pacote de acesso. Registre a **ID** do pacote do Access a ser usado posteriormente neste tutorial.
+Neste ponto, você tem um catálogo com um recurso de grupo e sabe que usará a função de recurso do membro do grupo no pacote de acesso. A próxima etapa é criar o pacote de acesso. Depois de ter o pacote de acesso, você pode adicionar a função de recurso a ele e criar uma política de como os usuários podem solicitar acesso a essa função de recurso. Use a **id do** catálogo que você gravou anteriormente para criar o pacote de acesso. Grave a **id** do pacote de acesso para usar mais adiante neste tutorial.
 
 #### <a name="request"></a>Solicitação
 
@@ -341,7 +341,7 @@ Content-type: application/json
 
 ### <a name="add-a-resource-role-to-the-access-package"></a>Adicionar uma função de recurso ao pacote de acesso
 
-Adicione a função de membro do recurso de grupo ao pacote de acesso. Na solicitação, forneça a **ID** do pacote de acesso. No corpo da solicitação, forneça a **ID** do recurso de catálogo de grupo para accessPackageResource e forneça a **originid** da função de membro gravada anteriormente.
+Adicione a função Membro do recurso de grupo ao pacote de acesso. Na solicitação, forneça a **id** do pacote de acesso. No corpo da solicitação, forneça a **id** do recurso do catálogo de grupos para accessPackageResource e forneça a **originId** da função Membro que você gravou anteriormente.
 
 #### <a name="request"></a>Solicitação
 
@@ -378,15 +378,15 @@ Content-type: application/json
 }
 ```
 
-O pacote do Access agora tem uma função de recurso, que é a associação ao grupo. A função é atribuída a qualquer usuário que tenha o pacote de acesso.
+O pacote de acesso agora tem uma função de recurso, que é a associação de grupo. A função é atribuída a qualquer usuário que tenha o pacote de acesso.
 
-### <a name="create-an-access-package-policy"></a>Criar uma política de pacote do Access
+### <a name="create-an-access-package-policy"></a>Criar uma política de pacote de acesso
 
-Agora que você criou o pacote do Access e adicionou recursos e funções, é possível decidir quem pode acessá-lo criando uma política de pacote do Access. Neste tutorial, você habilita a conta do **Requestor1** que você criou para solicitar acesso aos recursos no pacote do Access. Para esta tarefa, você precisará destes valores:
-- **ID** do pacote de acesso para o valor da propriedade **accessPackageId**
-- **ID** da conta de usuário **Requestor1** para o valor da propriedade **ID** em **allowedRequestors**
+Agora que você criou o pacote de acesso e adicionou recursos e funções, pode decidir quem pode acessá-lo criando uma política de pacote de acesso. Neste tutorial, você habilita a **conta Solicitante1** que você criou para solicitar acesso aos recursos no pacote de acesso. Para essa tarefa, você precisa destes valores:
+- **id** do pacote de acesso para o valor da **propriedade accessPackageId**
+- **id** da conta **de usuário Solicitante1** para o valor da **propriedade de id** em **allowedRequestors**
  
-O valor da propriedade **durationInDays** permite que a conta **Requestor1** acesse os recursos no pacote do Access por até 30 dias. Registre o valor da propriedade **ID** que será retornado para uso posteriormente neste tutorial. 
+O valor da propriedade **durationInDays** permite que a conta **Solicitante1** acesse os recursos no pacote de acesso por até 30 dias. Grave o valor da **propriedade de ID** que será retornada para uso posteriormente neste tutorial. 
 
 #### <a name="request"></a>Solicitação
 
@@ -461,18 +461,18 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-3-request-access"></a>Etapa 3: solicitar acesso
+## <a name="step-3-request-access"></a>Etapa 3: Solicitar acesso
 
-Nesta etapa, a conta de usuário do **Requestor1** solicita acesso aos recursos no pacote do Access.
+Nesta etapa, a conta **de usuário Solicitante1** solicita acesso aos recursos no pacote de acesso.
 
-Para solicitar acesso a recursos no pacote do Access, você precisa fornecer estes valores:
-- **ID** da conta de usuário do **Requestor1** que você criou para o valor da propriedade **TargetId**
-- **ID** da política de atribuição para o valor da propriedade **assignmentPolicyId**
-- **ID** do pacote de acesso para o valor da propriedade **accessPackageId**
+Para solicitar acesso aos recursos no pacote de acesso, você precisa fornecer estes valores:
+- **id** da conta **de usuário Solicitante1** que você criou para o valor da **propriedade targetId**
+- **id** da diretiva de atribuição para o valor da **propriedade assignmentPolicyId**
+- **id** do pacote de acesso para o valor da **propriedade accessPackageId**
 
-Na resposta, você pode ver o status de **aceito** e um estado de **enviado**. Registre o valor da propriedade **ID** que é retornado para obter o status da solicitação mais tarde.
+Na resposta, você pode ver o status **de Aceito e** um estado de **Enviado.** Registrar o valor da **propriedade de ID** retornada para obter o status da solicitação mais tarde.
 
-Caso ainda não tenha feito isso, saia da conta de administrador que você estava usando no Microsoft Graph Explorer. Entre na conta de usuário do **Requestor1** que você criou. Você será solicitado a alterar a senha se esta for a primeira vez que você está entrando.
+Se você ainda não fez isso, saia da conta de administrador que estava usando no Microsoft Graph Explorer. Entre na conta **de usuário Solicitante1** que você criou. Você será solicitado a alterar a senha se for a primeira vez que você estiver fazendo login.
 
 #### <a name="request"></a>Solicitação
 
@@ -507,15 +507,15 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-4-validate-that-access-has-been-assigned"></a>Etapa 4: validar o acesso atribuído
+## <a name="step-4-validate-that-access-has-been-assigned"></a>Etapa 4: Validar se o acesso foi atribuído
 
-Nesta etapa, você confirma que a conta de usuário **Requestor1** recebeu o pacote de acesso e que agora é membro do grupo recursos de **marketing** .
+Nesta etapa, confirme se a conta de usuário **Solicitante1** foi atribuída ao pacote de acesso e que agora ele é membro do grupo de recursos **marketing.**
 
-Saia da conta Requestor1 e entre novamente na conta de administrador para ver o status da solicitação.
+Saia da conta solicitante1 e entre novamente na conta de administrador para ver o status da solicitação.
 
 ### <a name="get-the-status-of-the-request"></a>Obter o status da solicitação
 
-Use o valor da propriedade **ID** da solicitação para obter o status atual dele. Na resposta, você pode ver o status alterado para **atendida** e o estado alterado para **entregue**.
+Use o valor da **propriedade de ID** da solicitação para obter o status atual dela. Na resposta, você pode ver o status alterado para **Fulfilled** e o estado alterado para **Entregue.**
 
 #### <a name="request"></a>Solicitação
 
@@ -542,7 +542,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### <a name="get-access-package-assignments"></a>Obter atribuições de pacote de acesso
 
-Você também pode usar a **ID** da política de pacote do Access que você criou para ver que os recursos foram atribuídos à conta de usuário do **Requestor1** .
+Você também pode usar a **id** da política de pacote de acesso que você criou para ver se os recursos foram atribuídos à conta de usuário **Solicitante1.**
 
 #### <a name="request"></a>Solicitação
 
@@ -573,7 +573,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### <a name="get-the-members-of-the-group"></a>Obter os membros do grupo
 
-Depois que a solicitação tiver sido concedida, você poderá usar a **ID** registrada para o grupo de **recursos de marketing** para ver que a conta de usuário do **Requestor1** foi adicionada a ela.
+Depois que a solicitação for concedida, você poderá usar a **id** registrada para o grupo de recursos **marketing** para ver se a conta de usuário **Solicitante1** foi adicionada a ela.
 
 #### <a name="request"></a>Solicitação
 
@@ -617,13 +617,13 @@ GET https://graph.microsoft.com/v1.0/groups/e93e24d1-2b65-4a6c-a1dd-654a12225487
 }
 ```
 
-## <a name="step-5-clean-up-resources"></a>Etapa 5: limpar recursos
+## <a name="step-5-clean-up-resources"></a>Etapa 5: Limpar recursos
 
-Nesta etapa, você removerá as alterações feitas e excluirá o pacote de acesso de **campanha de marketing** .
+Nesta etapa, remova as alterações feitas e exclua o pacote de acesso da Campanha de **Marketing.**
 
 ### <a name="remove-an-access-package-assignment"></a>Remover uma atribuição de pacote de acesso
 
-Você deve remover todas as atribuições do pacote do Access antes de excluí-lo. Use a **ID** da solicitação de atribuição que você gravou anteriormente para excluí-la.
+Você deve remover todas as atribuições do pacote de acesso antes de excluí-lo. Use a **id da** solicitação de atribuição que você gravou anteriormente para excluí-la.
 
 #### <a name="request"></a>Solicitação
 
@@ -656,9 +656,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="delete-the-access-package-assignment-policy"></a>Excluir a política de atribuição de pacote do Access
+### <a name="delete-the-access-package-assignment-policy"></a>Excluir a política de atribuição do pacote de acesso
 
-Use a **ID** da política de atribuição que você gravou anteriormente para excluí-la. Verifique se todas as atribuições foram removidas primeiro.
+Use a **id da** diretiva de atribuição que você gravou anteriormente para excluí-la. Certifique-se de que todas as atribuições foram removidas primeiro.
 
 #### <a name="request"></a>Solicitação
 
@@ -674,7 +674,7 @@ No Content - 204
 
 ### <a name="delete-the-access-package"></a>Excluir o pacote de acesso
 
-Use a **ID** do pacote do Access que você gravou anteriormente para excluí-lo.
+Use a **id do** pacote de acesso que você gravou anteriormente para excluí-lo.
 
 #### <a name="request"></a>Solicitação
 
@@ -690,7 +690,7 @@ No Content - 204
 
 ### <a name="delete-the-user-account"></a>Excluir a conta de usuário
 
-Exclua a conta de usuário do **Requestor1** .
+Exclua **a conta de usuário Solicitante1.**
 
 #### <a name="request"></a>Solicitação
 
@@ -706,7 +706,7 @@ No Content - 204
 
 ### <a name="delete-the-group"></a>Adicionar ou remover membros do grupo
 
-Exclua o grupo **recursos de marketing** .
+Exclua o **grupo de recursos marketing.**
 
 #### <a name="request"></a>Solicitação
 
@@ -725,12 +725,12 @@ No Content - 204
 Neste tutorial, você usou muitas APIs para realizar tarefas. Explore a referência de API para essas APIs para saber mais sobre o que as APIs podem fazer.
 
 
-- [Trabalhar com a API de gerenciamento de qualificação do Azure AD](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
+- [Trabalhar com a API de gerenciamento de direitos do Azure AD](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
 - [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
 - [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
 - [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta)
 - [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
 - [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
 - [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
-- [grupo](/graph/api/resources/group?view=graph-rest-1.0)
-- [Usuário](/graph/api/resources/user?view=graph-rest-1.0)
+- [group](/graph/api/resources/group?view=graph-rest-1.0)
+- [user](/graph/api/resources/user?view=graph-rest-1.0)
