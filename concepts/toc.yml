@@ -224,7 +224,7 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: Governança
             items:
-              - name: Criar um pacote de acesso
+              - name: Gerenciar acesso aos recursos
                 href: tutorial-access-package-api.md
       - name: Email
         displayName: 'Outlook, Outlook mail'
