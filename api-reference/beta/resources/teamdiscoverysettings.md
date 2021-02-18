@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso teamDiscoverySettings
+title: Tipo de recurso teamDiscoverySettings
 description: Configurações de capacidade de descoberta da equipe por outras pessoas.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f26c47b2e1863c3108bc23f7c388179bd8006156
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edc3c6cc446e35f2f5a97212d3c0b6f69b81ce30
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046656"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292880"
 ---
-# <a name="teamdiscoverysettings-resource-type"></a><span data-ttu-id="4c6a4-103">tipo de recurso teamDiscoverySettings</span><span class="sxs-lookup"><span data-stu-id="4c6a4-103">teamDiscoverySettings resource type</span></span>
+# <a name="teamdiscoverysettings-resource-type"></a><span data-ttu-id="12b64-103">Tipo de recurso teamDiscoverySettings</span><span class="sxs-lookup"><span data-stu-id="12b64-103">teamDiscoverySettings resource type</span></span>
 
-<span data-ttu-id="4c6a4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4c6a4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="12b64-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="12b64-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4c6a4-105">Fornece configurações para permitir que outras pessoas configurem a descoberta da [equipe](team.md) .</span><span class="sxs-lookup"><span data-stu-id="4c6a4-105">Provides settings to enable others to configure [team](team.md) discoverability.</span></span> <span data-ttu-id="4c6a4-106">Você só pode modificar as configurações de descoberta para equipes privadas.</span><span class="sxs-lookup"><span data-stu-id="4c6a4-106">You can only modify discovery settings for private teams.</span></span>
+<span data-ttu-id="12b64-105">Fornece configurações para permitir que outras pessoas configurem a [capacidade de descoberta](team.md) da equipe.</span><span class="sxs-lookup"><span data-stu-id="12b64-105">Provides settings to enable others to configure [team](team.md) discoverability.</span></span> <span data-ttu-id="12b64-106">Você só pode modificar as configurações de descoberta para equipes privadas.</span><span class="sxs-lookup"><span data-stu-id="12b64-106">You can only modify discovery settings for private teams.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4c6a4-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4c6a4-107">Properties</span></span>
-| <span data-ttu-id="4c6a4-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4c6a4-108">Property</span></span>     | <span data-ttu-id="4c6a4-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="4c6a4-109">Type</span></span>   |<span data-ttu-id="4c6a4-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="4c6a4-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="12b64-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="12b64-107">Properties</span></span>
+| <span data-ttu-id="12b64-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="12b64-108">Property</span></span>     | <span data-ttu-id="12b64-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="12b64-109">Type</span></span>   |<span data-ttu-id="12b64-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="12b64-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4c6a4-111">showInTeamsSearchAndSuggestions</span><span class="sxs-lookup"><span data-stu-id="4c6a4-111">showInTeamsSearchAndSuggestions</span></span>|<span data-ttu-id="4c6a4-112">Booliano</span><span class="sxs-lookup"><span data-stu-id="4c6a4-112">Boolean</span></span>|<span data-ttu-id="4c6a4-113">Se for definido como true, a equipe ficará visível via pesquisa e sugestões do cliente do teams.</span><span class="sxs-lookup"><span data-stu-id="4c6a4-113">If set to true, the team is visible via search and suggestions from the Teams client.</span></span>|
+|<span data-ttu-id="12b64-111">showInTeamsSearchAndSuggestions</span><span class="sxs-lookup"><span data-stu-id="12b64-111">showInTeamsSearchAndSuggestions</span></span>|<span data-ttu-id="12b64-112">Booliano</span><span class="sxs-lookup"><span data-stu-id="12b64-112">Boolean</span></span>|<span data-ttu-id="12b64-113">Se definido como verdadeiro, a equipe é visível por meio de pesquisa e sugestões do cliente do Teams.</span><span class="sxs-lookup"><span data-stu-id="12b64-113">If set to true, the team is visible via search and suggestions from the Teams client.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="4c6a4-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4c6a4-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="12b64-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="12b64-114">JSON representation</span></span>
 
-<span data-ttu-id="4c6a4-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4c6a4-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="12b64-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="12b64-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,7 +49,6 @@ ms.locfileid: "48046656"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/teamdiscoverysettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }-->
 
