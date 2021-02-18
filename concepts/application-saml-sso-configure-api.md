@@ -5,139 +5,222 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2596edb4e88638e18b67a0a95137743ea38b290c
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 3ab54e4726635262579f3ef54625197f0191c5ae
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563937"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272133"
 ---
-# <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>Automação da configuração do aplicativo de SSO baseado em SAML com o Microsoft Graph API
+# <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>Configure o logon único baseado em SAML para seu aplicativo usando a API do Microsoft Graph
 
-Neste artigo, você aprenderá a criar e configurar um aplicativo da galeria do Azure Active Directory (Azure AD). Esse artigo usa o AWS como um exemplo, mas você pode usar as etapas neste artigo para qualquer aplicativo baseado em SAML na galeria do Azure AD.
+Neste artigo, você aprenderá como criar e configurar um SSO (logon único) baseado em SAML para seu aplicativo no Azure AD (Azure Active Directory) usando a API do Microsoft Graph. A configuração do aplicativo inclui URLs básicas de SAML, uma política de mapeamento de declarações e o uso de um certificado para adicionar uma chave de assinatura personalizada. Após o aplicativo ser criado, atribua a ele um usuário como administrador. Em seguida, você pode usar uma URL para obter metadados SAML do Azure AD para configuração adicional do aplicativo. 
 
-**Etapas para usar as APIs do Microsoft Graph para automatizar a configuração de logon único baseado em SAML**
-
-| Etapa  | Detalhes  |
-|---------|---------|
-| [1. Criar o aplicativo galeria](#step-1-create-the-gallery-application) | Entrar no cliente da API <br> Recuperar o aplicativo galeria <br> Criar o aplicativo galeria|
-| [2. Configurar o logon único](#step-2-configure-single-sign-on) | Recuperar ID de objeto do aplicativo e ID do objeto da entidade de serviço <br> Definir o modo de logon único <br> Definir URLs SAML básicas, como identificador, URL de resposta, URL de logon <br> Adicionar funções de aplicativo (opcional)|
-| [3. Configurar mapeamento de declarações](#step-3-configure-claims-mapping) | Criar política de mapeamento de declarações <br> Atribuir política de mapeamento de declarações à entidade de serviço|
-| [4. Configurar o certificado de autenticação](#step-4-configure-signing-certificate) | Criar um certificado <BR> Adicionar uma chave de assinatura personalizada <br> Adicionar a chave de assinatura personalizada|
-| [5. Atribuir usuários](#step-5-assign-users) | Atribuir usuários e grupos ao aplicativo
-| [6. Configurar o lado do aplicativo](#step-6-configure-the-application-side)| Obter os metadados do SAML do Azure AD
-
-**Lista de todas as APIs usadas no artigo**
-
-Verifique se você tem as permissões correspondentes para chamar as seguintes APIs.
-
-|Tipo de recurso |Método |
-|---------|---------|
-|[applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[Lista applicationTemplate](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) <br>[Instanciar o applicationtemplate](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)|
-|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Atualizar servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Criar appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?tabs=http&view=graph-rest-1.0) <br> [Atribuir claimsMappingPolicy](/graph/api/serviceprincipal-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)|
-|[aplicativos](/graph/api/resources/application?view=graph-rest-1.0)|[Atualizar aplicativo](/graph/api/application-update?tabs=http&view=graph-rest-1.0)|
-|[claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Criar claimsMappingPolicy](/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)
+Este artigo usa um modelo de aplicativo Azure AD da AWS como exemplo, mas você pode usar as etapas deste artigo para qualquer aplicativo baseado em SAML na Galeria do Azure AD.
 
 >[!NOTE]
->Os objetos de resposta mostrados neste artigo poderiam ser reduzidos para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
+>As chaves e os objetos de resposta mostrados neste artigo poderiam ser reduzidos para facilitar a leitura.
 
-## <a name="step-1-create-the-gallery-application"></a>Etapa 1: Criar o aplicativo galeria
+## <a name="prerequisites"></a>Pré-requisitos
 
-### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Entrar no Microsoft Graph Explorer (recomendado), no Postman ou em qualquer outro cliente de API que você usa
+- Neste tutorial, você precisa de um certificado autoassinado que o Azure AD pode usar para assinar uma resposta SAML. Você pode usar seu próprio certificado ou usar algo como o seguinte código C# para criar um certificado de teste:
 
-1. Iniciar [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Selecione **Entrar com a Microsoft** e entre usando as credenciais de administrador global do Azure AD ou de Administrador do Aplicativo.
-3. Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.
+    > **Observação** Este código é **APENAS** para aprendizado e referência, e não deve ser usado como está na produção.
 
-### <a name="retrieve-the-gallery-application-template-identifier"></a>Recuperar o identificador de modelos de aplicativo de galeria
+    ```C#
+    using System;
+    using System.Security.Cryptography;
+    using System.Security.Cryptography.X509Certificates;
+    using System.Text;
 
-Os aplicativos na galeria do aplicativo do Azure AD têm um [modelo de aplicativo](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) cada um, que descreve os metadados para esse aplicativo. Usando esse modelo, você pode criar uma instância do aplicativo e da entidade de serviço no locatário para gerenciamento.
+    /* CONSOLE APP - PROOF OF CONCEPT CODE ONLY!!
+     * This code uses a self-signed certificate and should not be used 
+     * in production. This code is for reference and learning ONLY.
+     */
+    namespace Self_signed_cert
+    {
+      class Program
+      {
+        static void Main(string[] args)
+        {
+          // Generate a guid to use as a password and then create the cert.
+          string password = Guid.NewGuid().ToString();
+          var selfsignedCert = buildSelfSignedServerCertificate(password);
+
+          // Print values so we can copy paste into the JSON fields.
+          // Print out the private key in base64 format.
+          Console.WriteLine("Private Key: {0}{1}", Convert.ToBase64String(selfsignedCert.Export(X509ContentType.Pfx, password)), Environment.NewLine);
+
+          // Print out the start date in ISO 8601 format.
+          DateTime startDate = DateTime.Parse(selfsignedCert.GetEffectiveDateString()).ToUniversalTime();
+          Console.WriteLine("startDateTime: " + startDate.ToString("o"));
+
+          // Print out the end date in ISO 8601 format.
+          DateTime endDate = DateTime.Parse(selfsignedCert.GetExpirationDateString()).ToUniversalTime();
+          Console.WriteLine("endDateTime: " + endDate.ToString("o"));
+
+          // Print the GUID used for keyId
+          string signAndPasswordGuid = Guid.NewGuid().ToString();
+          string verifyGuid = Guid.NewGuid().ToString();
+          Console.WriteLine("keyId GUID for Sign and passwordCredentials: " + signAndPasswordGuid);
+          Console.WriteLine("keyId GUID for Verify: " + verifyGuid);
+
+          // Print out the password.
+          Console.WriteLine("Password: {0}", password);
+
+          // Print out a displayName to use as an example.
+          Console.WriteLine("displayName: CN=Example");
+          Console.WriteLine();
+
+          // Print out the public key.
+          Console.WriteLine("Public Key: {0}{1}", Convert.ToBase64String(selfsignedCert.Export(X509ContentType.Cert)), Environment.NewLine);
+          Console.WriteLine();
+
+          // Generate the customKeyIdentifier using hash of thumbprint.
+          Console.WriteLine("Cert thumprint: {0}{1}", selfsignedCert.Thumbprint, Environment.NewLine);
+          Console.WriteLine("customKeyIdentifier:");
+          string keyIdentifier = GetSha256FromThumbprint(selfsignedCert.Thumbprint);
+          Console.WriteLine(keyIdentifier);
+        }
+
+        // Generate a self-signed certificate.
+        private static X509Certificate2 buildSelfSignedServerCertificate(string password)
+        {
+          const string CertificateName = @"Microsoft Azure Federated SSO Certificate TEST";
+          DateTime certificateStartDate = DateTime.UtcNow;
+          DateTime certificateEndDate = certificateStartDate.AddYears(2).ToUniversalTime();
+
+          X500DistinguishedName distinguishedName = new X500DistinguishedName($"CN={CertificateName}");
+
+          using (RSA rsa = RSA.Create(2048))
+          {
+            var request = new CertificateRequest(distinguishedName, rsa, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
+
+            request.CertificateExtensions.Add (
+              new X509KeyUsageExtension(X509KeyUsageFlags.DataEncipherment | X509KeyUsageFlags.KeyEncipherment | X509KeyUsageFlags.DigitalSignature, false)
+            );
+
+            var certificate = request.CreateSelfSigned(new DateTimeOffset(certificateStartDate), new DateTimeOffset(certificateEndDate));
+                certificate.FriendlyName = CertificateName;
+
+            return new X509Certificate2(certificate.Export(X509ContentType.Pfx, password), password, X509KeyStorageFlags.Exportable);
+          }
+        }
+
+        // Generate hash from thumbprint.
+        public static string GetSha256FromThumbprint(string thumbprint)
+        {
+          var message = Encoding.ASCII.GetBytes(thumbprint);
+          SHA256Managed hashString = new SHA256Managed();
+          return Convert.ToBase64String(hashString.ComputeHash(message));
+        }
+      }
+    }
+    ```
+
+    Para concluir este tutorial, registre os seguintes valores do seu certificado:
+
+    - Chave privada
+    - Data e hora de início
+    - Data e hora de término
+    - Senha do certificado
+    - Nome de exibição
+    - Chave pública
+    - Hash da impressão digital
+    - Identificador de chave
+
+    Além dos valores do certificado, também serão necessários dois novos GUIDS para os keyIds usados. O exemplo a seguir mostra a saída do código listado anteriormente:
+
+    ```
+    Private Key: MIIKW...AIBAzTVKCAgfQ
+
+    startDateTime: 2020-12-17T20:33:07.0000000Z
+    endDateTime: 2022-12-17T20:33:07.0000000Z
+    keyId GUID for Sign and passwordCredentials: ed4f28e8-a502-4440-bfba-6038cb8506aa
+    keyId GUID for Verify: e7b8c96e-dec3-4023-9c8b-ff40fa7faa3a
+    Password: 74a7e867-e4f1-49a5-82fe-2087bf53e7df
+    displayName: CN=Example
+
+    Public Key: MIIDAz...pJTZg==
+
+    Cert thumprint: 14B73D02E5094675063DF66A42B914DAD71633D7
+
+    customKeyIdentifier:
+    dD5ft4q5qrAQVusP6dDI7qKPnvZQbhkCxl1uNXQXwX0=
+    ```
+
+- Este tutorial assume que você está usando o Microsoft Graph Explorer, mas você pode usar o Postman ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Para este tutorial, serão necessárias as permissões delegadas `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All` e`Policy.ReadWrite.ApplicationConfiguration`. Conclua as seguintes etapas para definir as permissões no Microsoft Graph Explorer:
+
+    1. Inicie o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+    2. Selecione **Entrar com a conta da Microsoft** e entre usando uma conta de administrador global do Azure AD. Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.
+    3. Selecione o ícone de configurações à direita dos detalhes da conta do usuário e, em seguida, selecione **Selecionar permissões**.
+
+        ![Selecionar as permissões do Microsoft Graph](./images/application-saml-sso-configure-api/set-permissions.png)
+        
+    4. Role pela lista de permissões até permissões de `AppRoleAssignment`, expanda **AppRoleAssignment (1)** e selecione a permissão **AppRoleAssignment.ReadWrite.All**. Role ainda mais para baixo pela lista de permissões de `Application`, expanda **Application (2)** e selecione a permissão **Application.ReadWrite.All**. Continue até permissões de `Policy`, expanda **Policy (13)**, e selecione as permissões **Policy.Read.All** e **Policy.ReadWrite.ApplicationConfiguration**.
+
+        ![Rolar e selecionar as permissões approleassignment, application e policy ](./images/application-saml-sso-configure-api/select-permissions.png)
+
+    5. Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões. Você não precisa consentir em nome da organização para essas permissões.
+
+        ![Aceitar o consentimento das permissões](./images/application-saml-sso-configure-api/accept-permissions.png)
+
+## <a name="step-1-create-the-application"></a>Etapa 1: Criar o aplicativo
+
+O Azure AD tem uma galeria que contém milhares de aplicativos pré-integrados que você pode usar como modelo para seu aplicativo. O modelo de aplicativo descreve os metadados para o aplicativo. Usando esse modelo, você pode criar uma instância do aplicativo e da entidade de serviço no locatário para gerenciamento. 
+
+Para criar o aplicativo a partir da galeria, primeiro obtenha o identificador do modelo de aplicativo e, em seguida, use esse identificador para criar o aplicativo.
+
+### <a name="retrieve-the-gallery-application-template-identifier"></a>Recuperar o identificador do modelo de aplicativo da galeria
+
+ Neste tutorial, recupere o identificador do modelo de aplicativo para `Amazon Web Services (AWS)`. Registre o valor da propriedade **id** para usar posteriormente neste tutorial.
 
 #### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_applicationtemplates"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/applicationTemplates
+```http
+GET https://graph.microsoft.com/beta/applicationTemplates?$filter=displayName eq 'Amazon Web Services (AWS)'
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.applicationTemplate",
-  "isCollection": true
-} -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates",
   "value": [
-  {
-    "id": "8b1025e4-1dd2-430b-a150-2ef79cd700f5",
-        "displayName": "Amazon Web Services (AWS)",
-        "homePageUrl": "http://aws.amazon.com/",
-        "supportedSingleSignOnModes": [
-             "password",
-             "saml",
-             "external"
-         ],
-         "supportedProvisioningTypes": [
-             "sync"
-         ],
-         "logoUrl": "https://az495088.vo.msecnd.net/app-logo/aws_215.png",
-         "categories": [
-             "developerServices"
-         ],
-         "publisher": "Amazon",
-         "description": null    
-  
+    {
+      "id": "8b1025e4-1dd2-430b-a150-2ef79cd700f5",
+      "displayName": "Amazon Web Services (AWS)",
+      "homePageUrl": "http://aws.amazon.com/",
+      "supportedSingleSignOnModes": [
+        "password",
+        "saml",
+        "external"
+      ],
+      "supportedProvisioningTypes": [
+        "sync"
+      ],
+      "logoUrl": "https://az495088.vo.msecnd.net/app-logo/aws_215.png",
+      "categories": [
+        "developerServices",
+        "topApps"
+      ],
+      "publisher": "Amazon",
+      "description": null
+    }
+  ]
 }
 ```
 
-### <a name="create-the-gallery-application"></a>Criar o aplicativo galeria
+### <a name="create-the-application"></a>Criar o aplicativo
 
-Usando a ID do modelo que você recuperou para o aplicativo na última etapa, [criar uma instância](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) do aplicativo e da entidade de serviço em seu locatário.
-
-> [!NOTE] 
-> Você pode usar a API applicationTemplate para criar uma instância [aplicativos Não-Galeria](/azure/active-directory/manage-apps/view-applications-portal). Usar o applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
-
-> [!NOTE]
-> Aguarde algum tempo para que o aplicativo seja provisionado em seu locatário do Azure AD. Não é instantâneo. Uma estratégia é fazer uma consulta GET sobre o objeto do aplicativo/entidade de serviço a cada 5-10 segundos até que a consulta seja bem-sucedida.
-
+Usando o valor **id** registrado para o modelo de aplicativo, crie uma instância do aplicativo e da entidade de serviço no locatário. Registre o valor da propriedade **objectId** do aplicativo e o valor da propriedade **objectId** para que a entidade de serviço possa usar posteriormente neste tutorial.
 
 #### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "applicationtemplate_instantiate"
-}-->
-
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/applicationTemplates/8b1025e4-1dd2-430b-a150-2ef79cd700f5/instantiate
 Content-type: application/json
 
@@ -145,280 +228,177 @@ Content-type: application/json
   "displayName": "AWS Contoso"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/applicationtemplate-instantiate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/applicationtemplate-instantiate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+> [!NOTE]
+> Aguarde algum tempo para que o aplicativo seja provisionado em seu locatário do Azure AD. Não é instantâneo. Uma estratégia é fazer uma consulta GET sobre o objeto de aplicativo e a entidade de serviço a cada 5-10 segundos até que a consulta seja bem-sucedida.
 
 #### <a name="response"></a>Resposta
-
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.applicationServicePrincipal"
-} -->
 
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
 
-
 {
-    "application": {
-        "objectId": "cbc071a6-0fa5-4859-8g55-e983ef63df63",
-        "appId": "92653dd4-aa3a-3323-80cf-e8cfefcc8d5d",
-        "applicationTemplateId": "8b1025e4-1dd2-430b-a150-2ef79cd700f5",
-        "displayName": "AWS Contoso",
-        "homepage": "https://signin.aws.amazon.com/saml?metadata=aws|ISV9.1|primary|z",
-        "replyUrls": [
-            "https://signin.aws.amazon.com/saml"
-        ],
-        "logoutUrl": null,
-        "samlMetadataUrl": null,
-    },
-    "servicePrincipal": {
-        "objectId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e",
-        "appDisplayName": "AWS Contoso",
-        "applicationTemplateId": "8b1025e4-1dd2-430b-a150-2ef79cd700f5",
-        "appRoleAssignmentRequired": true,
-        "displayName": "My custom name",
-        "homepage": "https://signin.aws.amazon.com/saml?metadata=aws|ISV9.1|primary|z",
-        "replyUrls": [
-            "https://signin.aws.amazon.com/saml"
-        ],
-        "servicePrincipalNames": [
-            "93653dd4-aa3a-4323-80cf-e8cfefcc8d7d"
-        ],
-        "tags": [
-            "WindowsAzureActiveDirectoryIntegratedApp"
-        ],
-    }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.applicationServicePrincipal",
+  "application": {
+    "objectId": "8f558912-0ca3-4f1e-ab6e-66ad7fa4e7bb",
+    "appId": "536c33dc-dc28-42c8-ba1d-406524d83ec3",
+    "applicationTemplateId": "8b1025e4-1dd2-430b-a150-2ef79cd700f5",
+    "displayName": "AWS Contoso",
+    "homepage": "https://signin.aws.amazon.com/saml?metadata=aws|ISV9.1|primary|z",
+    "identifierUris": [],
+    "publicClient": null,
+    "replyUrls": [
+      "https://signin.aws.amazon.com/saml"
+    ],
+    "logoutUrl": null,
+    "samlMetadataUrl": null,
+    "errorUrl": null,
+    "groupMembershipClaims": null,
+    "availableToOtherTenants": false
+  },
+  "servicePrincipal": {
+    "objectId": "3161ab85-8f57-4ae0-82d3-7a1f71680b27",
+    "deletionTimestamp": null,
+    "accountEnabled": true,
+    "appId": "536c33dc-dc28-42c8-ba1d-406524d83ec3",
+    "appDisplayName": "AWS Contoso",
+    "applicationTemplateId": "8b1025e4-1dd2-430b-a150-2ef79cd700f5",
+    "appRoleAssignmentRequired": true,
+    "displayName": "AWS Contoso",
+    "errorUrl": null,
+    "logoutUrl": null,
+    "homepage": "https://signin.aws.amazon.com/saml?metadata=aws|ISV9.1|primary|z",
+    "samlMetadataUrl": null,
+    "microsoftFirstParty": null,
+    "publisherName": "Contoso",
+    "preferredTokenSigningKeyThumbprint": null,
+    "replyUrls": [
+      "https://signin.aws.amazon.com/saml"
+    ],
+    "servicePrincipalNames": [
+      "536c33dc-dc28-42c8-ba1d-406524d83ec3"
+    ],
+    "tags": [
+      "WindowsAzureActiveDirectoryIntegratedApp"
+    ],
+    "notificationEmailAddresses": [],
+    "keyCredentials": [],
+    "passwordCredentials": []
+  }
 }
 ```
 
 ## <a name="step-2-configure-single-sign-on"></a>2. Configurar o logon único
 
-### <a name="retrieve-app-object-id-and-service-principal-object-id"></a>Recuperar ID de objeto do aplicativo e ID do objeto da entidade de serviço
-
-Use a resposta da chamada anterior para recuperar e salvar a ID de objeto do aplicativo e a ID do objeto da entidade de serviço.
-
-```json
-"application":{
-  "objectId":"cbc071a6-0fa5-4859-8g55-e983ef63df63"
-},
-"servicePrincipal":{
-  "objectId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
-}
-```
-### <a name="set-single-sign-on-mode"></a>Definir o modo de logon único
-
-Neste exemplo, você definirá o `saml` como o modo de logon único na [tipo de recurso de servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Outras propriedades de SSO do SAML que você pode configurar são: `notificationEmailAddresses`, `loginUrl`e `samlSingleSignOnSettings.relayState`.
-
-Antes dessa consulta funcionar, você precisará fornecer consentimento na guia **Modificar permissões** no Graph Explorer. Além disso, certifique-se de que você está usando a ID do **servicePrincipal** que você obteve anteriormente.
+Neste tutorial, defina `saml` como modo de logon único na entidade de serviço. Use o **objectId** para a entidade de serviço gravada anteriormente.
 
 #### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "servicePrincipals"
-}-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-Content-type: application/json
+```http
+PATCH https://graph.microsoft.com/beta/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27
+Content-type: servicePrincipal/json
 
 {
-    "preferredSingleSignOnMode": "saml"
+  "preferredSingleSignOnMode": "saml"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 
 ```http
 HTTP/1.1 204
 ```
 
-### <a name="set-basic-saml-urls-such-as-identifier-reply-url-sign-on-url"></a>Definir URLs SAML básicas, como identificador, URL de resposta, URL de logon
+### <a name="set-basic-saml-urls"></a>Definir URLs básicas de SAML
 
-Defina o identificador e as URLs de resposta para AWS no objeto do aplicativo.
-
- Verifique se você está usando a ID de **aplicativo** obtida anteriormente.
+Usando o **objetoId** para o aplicativo registrado anteriormente, defina o URI do identificador e redirecione o URI para a AWS no objeto de aplicativo.
 
 #### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "servicePrincipals"
-}-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/applications/cbc071a6-0fa5-4859-8g55-e983ef63df63
+```http
+PATCH https://graph.microsoft.com/beta/applications/8f558912-0ca3-4f1e-ab6e-66ad7fa4e7bb
 Content-type: applications/json
 
 {
-    "web": {
-        "redirectUris": [
-            "https://signin.aws.amazon.com/saml"
-        ] 
-    },
-    "identifierUris": [
-        "https://signin.aws.amazon.com/saml"
-    ]    
+  "web": {
+    "redirectUris": [
+      "https://signin.aws.amazon.com/saml"
+    ] 
+  },
+  "identifierUris": [
+    "https://signin.aws.amazon.com/saml"
+  ]    
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 
 ```http
 HTTP/1.1 204
 ```
+
 ### <a name="add-app-roles-optional"></a>Adicionar funções de aplicativo (opcional)
 
-Se o aplicativo exigir as informações da função no token, adicione a definição das funções no objeto do aplicativo. No AWS, você pode [habilitar o provisionamento de usuário](/azure/active-directory/app-provisioning/application-provisioning-configure-api) para buscar todas as funções dessa conta do AWS. 
-
-Para saber mais, confira [Configurar a declaração de função emitida no token SAML](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
+Se o aplicativo exigir as informações da função no token, adicione a definição das funções no objeto do aplicativo. 
 
 > [!NOTE] 
-> Ao adicionar funções de aplicativo, não modifique as funções de aplicativo padrão msiam_access. 
+> Ao adicionar funções de aplicativo, não modifique as funções de aplicativo padrão `msiam_access`. 
+
+Use o **objectId** para a entidade de serviço gravada anteriormente.
 
 #### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "servicePrincipals"
-}-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/serviceprincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-Content-type: application/json
+```http
+PATCH https://graph.microsoft.com/beta/serviceprincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27
+Content-type: serviceprincipals/json
 
 {
-"appRoles": [
-        {
-            "allowedMemberTypes": [
-                "User"
-            ],
-            "description": "msiam_access",
-            "displayName": "msiam_access",
-            "id": "7dfd756e-8c27-4472-b2b7-38c17fc5de5e",
-            "isEnabled": true,
-            "origin": "Application",
-            "value": null
-        },
-        {
-            "allowedMemberTypes": [
-                "User"
-            ],
-            "description": "Admin,WAAD",
-            "displayName": "Admin,WAAD",
-            "id": "454dc4c2-8176-498e-99df-8c4efcde41ef",
-            "isEnabled": true,
-            "value": "arn:aws:iam::212743507312:role/accountname-aws-admin,arn:aws:iam::212743507312:saml-provider/WAAD"
-        },
-        {
-            "allowedMemberTypes": [
-                "User"
-            ],
-            "description": "Finance,WAAD",
-            "displayName": "Finance,WAAD",
-            "id": "8642d5fa-18a3-4245-ab8c-a96000c1a217",
-            "isEnabled": true,
-            "value": "arn:aws:iam::212743507312:role/accountname-aws-finance,arn:aws:iam::212743507312:saml-provider/WAAD"
-        }
-    ]
-
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "msiam_access",
+      "displayName": "msiam_access",
+      "id": "7dfd756e-8c27-4472-b2b7-38c17fc5de5e",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": null
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Admin,WAAD",
+      "displayName": "Admin,WAAD",
+      "id": "454dc4c2-8176-498e-99df-8c4efcde41ef",
+      "isEnabled": true,
+      "value": "arn:aws:iam::212743507312:role/accountname-aws-admin,arn:aws:iam::212743507312:saml-provider/WAAD"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Finance,WAAD",
+      "displayName": "Finance,WAAD",
+      "id": "8642d5fa-18a3-4245-ab8c-a96000c1a217",
+      "isEnabled": true,
+      "value": "arn:aws:iam::212743507312:role/accountname-aws-finance,arn:aws:iam::212743507312:saml-provider/WAAD"
+    }
+  ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 ```http
 HTTP/1.1 204
 ```
 
 ## <a name="step-3-configure-claims-mapping"></a>3. Configurar mapeamento de declarações
 
-### <a name="create-claims-mapping-policy"></a>Criar política de mapeamento de declarações
+### <a name="create-a-claims-mapping-policy"></a>Criar uma política de mapeamento de declarações
 
 Além das declarações básicas, configure as seguintes declarações para o Azure AD emitir no token SAML:
 
@@ -430,401 +410,336 @@ Além das declarações básicas, configure as seguintes declarações para o Az
 | funções | assignedroles |
 | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | userprincipalname |
 
-Para obter mais informações, confira [Personalizar as declarações emitidas no token](/azure/active-directory/develop/active-directory-claims-mapping).
-
 > [!NOTE]
 > Algumas chaves na política de mapeamento de declarações são sensíveis a letras maiúsculas e minúsculas (por exemplo, "Version"). Se você receber uma mensagem de erro como "A propriedade tem um valor inválido", isso poderia ser um problema de diferenciação de maiúsculas e minúsculas.
 
+Crie a política de mapeamento de declarações e registre o valor da propriedade **id** para usar posteriormente neste tutorial.
+
 #### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "servicePrincipals"
-}-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
-Content-type: application/json
+```http
+POST https://graph.microsoft.com/beta/policies/claimsMappingPolicies
+Content-type: claimsMappingPolicies/json
 
 {
-    "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
+  "definition": [
+    "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Source\":\"user\",\"ID\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
     ],
-    "displayName": "AWS Claims Policy",
-    "isOrganizationDefault": false
+  "displayName": "AWS Claims Policy",
+  "isOrganizationDefault": false
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.claimsMappingPolicies",
-  "isCollection": true
-} -->
 
 ```http
 HTTP/1.1 201 OK
-Content-type: application/json
+Content-type: claimsMappingPolicies/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
-    "id": "a7b19e62-9adb-4edb-8521-cd35305f095d",
-    "deletedDateTime": null,
-    "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/claimsMappingPolicies/$entity",
+  "id": "218e7879-5330-4ca6-8bca-ddb1f2402e73",
+  "deletedDateTime": null,
+  "definition": [
+    "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Source\":\"user\",\"ID\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
     ],
-    "displayName": "AWS Claims Policy",
-    "isOrganizationDefault": false
+  "displayName": "AWS Claims Policy",
+  "isOrganizationDefault": false
 }
 ```
 
-### <a name="assign-claims-mapping-policy-to-service-principal"></a>Atribuir política de mapeamento de declarações à entidade de serviço
+### <a name="assign-a-claims-mapping-policy-to-a-service-principal"></a>Atribuir uma política de mapeamento de declarações a uma entidade de serviço
+
+Use o **objectId** para a entidade de serviço gravada anteriormente, para atribuir uma política de mapeamento de declarações a ela. Use o valor da propriedade **id** para a política de mapeamento de declarações no corpo da solicitação.
 
 #### <a name="request"></a>Solicitação
 
-<!-- {
-  "blockType": "ignored",
-  "name": "servicePrincipals"
-}-->
-```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/claimsMappingPolicies/$ref
-
-Content-type: application/json
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27/claimsMappingPolicies/$ref
+Content-type: claimsMappingPolicies/json
 
 {
-  "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/6b33aa8e-51f3-41a6-a0fd-d660d276197a"
+  "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/218e7879-5330-4ca6-8bca-ddb1f2402e73"
 }
 ```
 
-
 #### <a name="response"></a>Resposta
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 ```http
 HTTP/1.1 204
 ```
 
-## <a name="step-4-configure-signing-certificate"></a>Etapa 4. Configurar o certificado de autenticação
+## <a name="step-4-configure-a-signing-certificate"></a>Etapa 4. Configurar um certificado de autenticação
 
-Usar a API [applicationtemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) não cria um certificado de autenticação por padrão. Crie seu certificado de assinatura personalizado e atribua-o ao aplicativo. 
-
-### <a name="create-a-custom-signing-certificate"></a>Criar um certificado de autenticação personalizado
-
-Para testar, use o seguinte comando do Windows PowerShell para obter um certificado autoassinado. Você precisará manipular e extrair os valores necessários manualmente usando outras ferramentas. Use a prática recomendada de segurança da sua empresa para criar um certificado de autenticação para produção.
-
-```powershell
-Param(
-    [Parameter(Mandatory=$true)]
-    [string]$fqdn,
-    [Parameter(Mandatory=$true)]
-    [string]$pwd,
-    [Parameter(Mandatory=$true)]
-    [string]$location
-) 
-
-if (!$PSBoundParameters.ContainsKey('location'))
-{
-    $location = "."
-} 
-
-$cert = New-SelfSignedCertificate -certstorelocation cert:\currentuser\my -DnsName $fqdn
-$pwdSecure = ConvertTo-SecureString -String $pwd -Force -AsPlainText
-$path = 'cert:\currentuser\my\' + $cert.Thumbprint
-$cerFile = $location + "\\" + $fqdn + ".cer"
-$pfxFile = $location + "\\" + $fqdn + ".pfx" 
-
-Export-PfxCertificate -cert $path -FilePath $pfxFile -Password $pwdSecure
-Export-Certificate -cert $path -FilePath $cerFile
-```
-
-Como alternativa, o seguinte aplicativo de console C# pode ser usado como Prova de Conceito para entender como os valores necessários podem ser obtidos. Observe que este código é para **aprendizado e referência APENAS** e não devem ser usados como estão na produção.
-
-```csharp
-using System;
-using System.Security.Cryptography;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-
-
-/* CONSOLE APP - PROOF OF CONCEPT CODE ONLY!!
- * This code uses a self signed certificate and should not be used 
- * in production. This code is for reference and learning ONLY.
- */
-namespace Self_signed_cert
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // Generate a guid to use as a password and then create the cert.
-            string password = Guid.NewGuid().ToString();
-            var selfsignedCert = buildSelfSignedServerCertificate(password);
-
-            // Print values so we can copy paste into the JSON fields.
-            // Print out the private key in base64 format.
-            Console.WriteLine("Private Key: {0}{1}", Convert.ToBase64String(selfsignedCert.Export(X509ContentType.Pfx, password)), Environment.NewLine);
-
-            // Print out the start date in ISO 8601 format.
-            DateTime startDate = DateTime.Parse(selfsignedCert.GetEffectiveDateString()).ToUniversalTime();
-            Console.WriteLine("For All startDateTime: " + startDate.ToString("o"));
-
-            // Print out the end date in ISO 8601 format.
-            DateTime endDate = DateTime.Parse(selfsignedCert.GetExpirationDateString()).ToUniversalTime();
-            Console.WriteLine("For All endDateTime: " + endDate.ToString("o"));
-
-            // Print the GUID used for keyId
-            string signAndPasswordGuid = Guid.NewGuid().ToString();
-            string verifyGuid = Guid.NewGuid().ToString();
-            Console.WriteLine("GUID to use for keyId for keyCredentials->Usage == Sign and passwordCredentials: " + signAndPasswordGuid);
-            Console.WriteLine("GUID to use for keyId for keyCredentials->Usage == Verify: " + verifyGuid);
-
-            // Print out the password.
-            Console.WriteLine("Password is: {0}", password);
-
-            // Print out a displayName to use as an example.
-            Console.WriteLine("displayName to use: CN=Example");
-            Console.WriteLine();
-
-            // Print out the public key.
-            Console.WriteLine("Public Key: {0}{1}", Convert.ToBase64String(selfsignedCert.Export(X509ContentType.Cert)), Environment.NewLine);
-            Console.WriteLine();
-
-            // Generate the customKeyIdentifier using hash of thumbprint.
-            Console.WriteLine("You can generate the customKeyIdentifier by getting the SHA256 hash of the certs thumprint.\nThe certs thumbprint is: {0}{1}", selfsignedCert.Thumbprint, Environment.NewLine);
-            Console.WriteLine("The hash of the thumbprint that we will use for customeKeyIdentifier is:");
-            string keyIdentifier = GetSha256FromThumbprint(selfsignedCert.Thumbprint);
-            Console.WriteLine(keyIdentifier);
-        }
-
-        // Generate a self-signed certificate.
-        private static X509Certificate2 buildSelfSignedServerCertificate(string password)
-        {
-            const string CertificateName = @"Microsoft Azure Federated SSO Certificate TEST";
-            DateTime certificateStartDate = DateTime.UtcNow;
-            DateTime certificateEndDate = certificateStartDate.AddYears(2).ToUniversalTime();
-
-            X500DistinguishedName distinguishedName = new X500DistinguishedName($"CN={CertificateName}");
-
-            using (RSA rsa = RSA.Create(2048))
-            {
-                var request = new CertificateRequest(distinguishedName, rsa, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
-
-                request.CertificateExtensions.Add(
-                    new X509KeyUsageExtension(X509KeyUsageFlags.DataEncipherment | X509KeyUsageFlags.KeyEncipherment | X509KeyUsageFlags.DigitalSignature, false));
-
-                var certificate = request.CreateSelfSigned(new DateTimeOffset(certificateStartDate), new DateTimeOffset(certificateEndDate));
-                certificate.FriendlyName = CertificateName;
-
-                return new X509Certificate2(certificate.Export(X509ContentType.Pfx, password), password, X509KeyStorageFlags.Exportable);
-            }
-        }
-
-        // Generate hash from thumbprint.
-        public static string GetSha256FromThumbprint(string thumbprint)
-        {
-            var message = Encoding.ASCII.GetBytes(thumbprint);
-            SHA256Managed hashString = new SHA256Managed();
-            return Convert.ToBase64String(hashString.ComputeHash(message));
-        }
-    }
-}
-```
-
-### <a name="add-a-custom-signing-key"></a>Adicionar uma chave de assinatura personalizada
-
-Adicione as seguintes informações à entidade de serviço:
-
-* Chave privada
-* Senha
-* Chave pública 
-
-Extraia a chave pública e privada Base64 do arquivo PFX. Para saber mais sobre as propriedades, confira [tipo de recurso de keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0).
-
-Certifique-se de que a keyId da keyCredential usada para "Assinar" corresponda à keyId da passwordCredential. Você pode gerar o `customkeyIdentifier` ao obter o hash da impressão digital do certificado. Consulte o C# código de referência anterior.
+Atribua seu certificado ao aplicativo. 
 
 #### <a name="request"></a>Solicitação
 
-> [!NOTE]
-> O valor "chave" na propriedade keyCredentials é reduzido para facilitar a leitura. O valor é base 64 codificado. Para a chave particular, a propriedade `usage` é "Assinar". Para a chave pública, a propriedade `usage` é "Verificar".
+No corpo da solicitação, forneça estes valores:
 
-<!-- {
-  "blockType": "request",
-  "name": "servicePrincipals"
-}-->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
+**keyCredentials – Assinar**
 
-Content-type: application/json
+- **customKeyIdentifier** – O hash da impressão digital de certificado.
+- **endDateTime** – A data e hora de término do certificado.
+- **keyId** – O identificador da credencial. Igual à keyId para a **passwordCredentials**.
+- **startDateTime** – A data de início do certificado.
+- **key** – A chave privada codificada como base 64 do certificado.
+- **displayName** – O nome de exibição das credenciais.
+
+**keyCredentials – Verificar**
+
+- **customKeyIdentifier** – O hash da impressão digital de certificado.
+- **endDateTime** – A data e hora de término do certificado.
+- **keyId** – O identificador da credencial.
+- **startDateTime** – A data de início do certificado.
+- **key** – A chave pública codificada como base 64 do certificado.
+- **displayName** – O nome de exibição das credenciais.
+
+**passwordCredentials**
+
+- **customKeyIdentifier** – O hash da impressão digital de certificado.
+- **keyId** – O identificador da credencial. Igual à keyId para a **keyCredentials – Assinar**.
+- **endDateTime** – A data e hora de término do certificado.
+- **startDateTime** – A data de início do certificado.
+- **secretText** – A senha para o certificado.
+
+```http
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27
+Content-type: servicePrincipals/json
 
 {
-    "keyCredentials":[
-        {
-            "customKeyIdentifier": "lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=",
-            "endDateTime": "2021-04-22T22:10:13Z",
-            "keyId": "4c266507-3e74-4b91-aeba-18a25b450f6e",
-            "startDateTime": "2020-04-22T21:50:13Z",
-            "type": "X509CertAndPassword",
-            "usage": "Sign",
-            "key":"MIIKIAIBAz.....HBgUrDgMCERE20nuTptI9MEFCh2Ih2jaaLZBZGeZBRFVNXeZmAAgIH0A==",
-            "displayName": "CN=awsAPI"
-        },
-        {
-            "customKeyIdentifier": "lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=",
-            "endDateTime": "2021-04-22T22:10:13Z",
-            "keyId": "e35a7d11-fef0-49ad-9f3e-aacbe0a42c42",
-            "startDateTime": "2020-04-22T21:50:13Z",
-            "type": "AsymmetricX509Cert",
-            "usage": "Verify",
-            "key": "MIIDJzCCAg+gAw......CTxQvJ/zN3bafeesMSueR83hlCSyg==",
-            "displayName": "CN=awsAPI"
-        }
-
-    ],
-    "passwordCredentials": [
-        {
-            "customKeyIdentifier": "lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=",
-            "keyId": "4c266507-3e74-4b91-aeba-18a25b450f6e",
-            "endDateTime": "2022-01-27T19:40:33Z",
-            "startDateTime": "2020-04-20T19:40:33Z",
-            "secretText": "61891f4ee44d"
-        }
-    ]
+  "keyCredentials":[
+    {
+      "customKeyIdentifier": "dD5ft4q5qrAQVusP6dDI7qKPnvZQbhkCxl1uNXQXwX0=",
+      "endDateTime": 2022-12-17T20:33:07.0000000Z",
+      "keyId": "ed4f28e8-a502-4440-bfba-6038cb8506aa",
+      "startDateTime": "2020-12-17T20:33:07.0000000Z",
+      "type": "X509CertAndPassword",
+      "usage": "Sign",
+      "key":"MIIKIAIBAz.....HBgUrDgMCERE20nuTptI9MEFCh2Ih2jaaLZBZGeZBRFVNXeZmAAgIH0A==",
+      "displayName": "CN=Example"
+    },
+    {
+      "customKeyIdentifier": "dD5ft4q5qrAQVusP6dDI7qKPnvZQbhkCxl1uNXQXwX0=",
+      "endDateTime": "2022-12-17T20:33:07.0000000Z",
+      "keyId": "e35a7d11-fef0-49ad-9f3e-aacbe0a42c42",
+      "startDateTime": "2020-12-17T20:33:07.0000000Z",
+      "type": "AsymmetricX509Cert",
+      "usage": "Verify",
+      "key": "MIIDJzCCAg+gAw......CTxQvJ/zN3bafeesMSueR83hlCSyg==",
+      "displayName": "CN=Example"
+    }
+  ],
+  "passwordCredentials": [
+    {
+      "customKeyIdentifier": "dD5ft4q5qrAQVusP6dDI7qKPnvZQbhkCxl1uNXQXwX0=",
+      "keyId": "ed4f28e8-a502-4440-bfba-6038cb8506aa",
+      "endDateTime": "2022-01-27T19:40:33Z",
+      "startDateTime": "2020-04-20T19:40:33Z",
+      "secretText": "74a7e867-e4f1-49a5-82fe-2087bf53e7df"
+    }
+  ]
 }
 ```
 
 #### <a name="response"></a>Resposta
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 ```http
 HTTP/1.1 204
 ```
 
 ### <a name="activate-the-custom-signing-key"></a>Adicionar a chave de assinatura personalizada
 
-É necessário definir a propriedade `preferredTokenSigningKeyThumbprint` como a impressão digital do certificado que você deseja que o Azure AD use para assinar a resposta SAML. 
+É necessário definir a propriedade **preferredTokenSigningKeyThumbprint** da entidade de serviço para a impressão digital do certificado que você deseja que o Azure AD use para assinar a resposta SAML. 
 
 #### <a name="request"></a>Solicitação
 
-<!-- {
-  "blockType": "request",
-  "name": "servicePrincipals"
-}-->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
+```http
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27
 
-Content-type: application/json
+Content-type: servicePrincipals/json
 
 {
-    "preferredTokenSigningKeyThumbprint": "AC09FEF18DDE6983EE2A164FBA3C4DD7518BD787"
+    "preferredTokenSigningKeyThumbprint": "14B73D02E5094675063DF66A42B914DAD71633D7"
 }
 ```
 
 #### <a name="response"></a>Resposta
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 ```http
 HTTP/1.1 204
 ```
+
 ## <a name="step-5-assign-users"></a>Etapa 5. Atribuir usuários
 
-### <a name="assign-users-and-groups-to-the-application"></a>Atribuir usuários e grupos ao aplicativo
+### <a name="create-a-user-account"></a>Criar uma conta de usuário
 
-Atribua o seguinte usuário à entidade de serviço e atribua o AWS_Role1. 
-
-| Nome  | ID  |
-|---------|---------|
-| ID de usuário (principalId) | 6cad4079-4e79-4a3f-9efb-ea30a14bdb26 |
-| Type (principalType) | Usuário |
-| ID da função do aplicativo (appRoleId) | 454dc4c2-8176-498e-99df-8c4efcde41ef |
-| servicePrincipalID (resourceId) | f47a6776-bca7-4f2e-bc6c-eec59d058e3e |
+Para este tutorial, crie uma conta de usuário que será adicionada ao aplicativo. No corpo da solicitação, altere contoso.com para o nome de domínio do seu locatário. Encontre informações sobre locatários na página de visão geral do Azure Active Directory. Registre o **id** do usuário a ser usado posteriormente neste tutorial.
 
 #### <a name="request"></a>Solicitação
 
-<!-- {
-  "blockType": "ignored",
-  "name": "servicePrincipals"
-}-->
-```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/appRoleAssignments
-
+```http
+POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
 
 {
-  "principalId": "6cad4079-4e79-4a3f-9efb-ea30a14bdb26",
-  "principalType": "User",
-  "appRoleId":"454dc4c2-8176-498e-99df-8c4efcde41ef",
-  "resourceId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
+  "accountEnabled":true,
+  "displayName":"MyTestUser1",
+  "mailNickname":"MyTestUser1",
+  "userPrincipalName":"MyTestUser1@contoso.com",
+  "passwordProfile": {
+    "forceChangePasswordNextSignIn":true,
+    "password":"Contoso1234"
+  }
 }
 ```
 
 #### <a name="response"></a>Resposta
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 ```http
-HTTP/1.1 201 
-Content-type: application/json
-
 {
-    "id": "rq7hyzl4yECaNZleMrTpDV-OCe5TEl5Ao_o76XMrRFU",
-    "creationTimestamp": "2020-04-23T17:38:13.2508567Z",
-    "appRoleId": "454dc4c2-8176-498e-99df-8c4efcde41ef",
-    "principalDisplayName": "User 1",
-    "principalId": "6cad4079-4e79-4a3f-9efb-ea30a14bdb26",
-    "principalType": "User",
-    "resourceDisplayName": "AWS API Created",
-    "resourceId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "id": "3ee91cc2-8edc-4f1a-8d71-7dd61348f8c4",
+  "businessPhones": [],
+  "displayName": "MyTestUser1",
+  "givenName": null,
+  "jobTitle": null,
+  "mail": null,
+  "mobilePhone": null,
+  "officeLocation": null,
+  "preferredLanguage": null,
+  "surname": null,
+  "userPrincipalName": "mytestuser1@contoso.com"
 }
 ```
 
-Para saber mais, confira o [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).
+### <a name="assign-a-user-to-the-application"></a>Atribuir um usuário ao aplicativo
 
-## <a name="step-6-configure-the-application-side"></a>Etapa 6. Configurar o lado do aplicativo
+Atribua o usuário que você criou à entidade de serviço e atribua a função de aplicativo `Admin,WAAD`. 
 
-### <a name="get-azure-ad-saml-metadata"></a>Obter os metadados do SAML do Azure AD
+No corpo da solicitação, forneça estes valores:
+
+- **principalId** – O **id** da conta de usuário que você criou.
+- **appRoleId** – O **id** da função de apĺicativo `Admin,WAAD` que você adicionou.
+- **resourceId** – A **id** da entidade de serviço.
+
+#### <a name="request"></a>Solicitação
+
+```http
+POST https://graph.microsoft.com/v1.0/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27/appRoleAssignments
+Content-type: appRoleAssignments/json
+
+{
+  "principalId": "3ee91cc2-8edc-4f1a-8d71-7dd61348f8c4",
+  "principalType": "User",
+  "appRoleId":"454dc4c2-8176-498e-99df-8c4efcde41ef",
+  "resourceId":"3161ab85-8f57-4ae0-82d3-7a1f71680b27"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+HTTP/1.1 201 
+Content-type: appRoleAssignments/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('39406665-d521-40b7-9218-55070cae56b5')/appRoleAssignments/$entity",
+  "id": "jKL4BeO2yUag4xULULSkza2HXRq_atpHrViBM89X55s",
+  "deletedDateTime": null,
+  "appRoleId": "454dc4c2-8176-498e-99df-8c4efcde41ef",
+  "createdDateTime": "2021-02-11T22:51:36.8978032Z",
+  "principalDisplayName": "MyTestUser1",
+  "principalId": "05f8a28c-b6e3-46c9-a0e3-150b50b4a4cd",
+  "principalType": "User",
+  "resourceDisplayName": "AWS Contoso",
+  "resourceId": "39406665-d521-40b7-9218-55070cae56b5"
+}
+```
+
+## <a name="step-6-get-azure-ad-saml-metadata"></a>Etapa 6: Obter metadados SAML do Azure AD
 
 Use a URL a seguir para obter os metadados do SAML do Azure AD para o aplicativo específico configurado. Os metadados contêm informações como o certificado de assinatura, o Azure AD entityID e o Azure AD SingleSignOnService, entre outras.
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
-> [!NOTE]
-> O aplicativo deve ser capaz de analisar a marca de ordem de byte presente nos dados XML de metadados de federação renderizados usando `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`. A marca de ordem de byte é representada como um caractere ASCII `»¿` e em Hex é representada como `EF BB BF` ao revisar os dados XML.
+A seguir, é possível ver um exemplo do que você pode ver no aplicativo:
 
- 
+```
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" ID="_05fbbf53-e892-43c9-9300-1f6738ace02c" entityID="https://sts.windows.net/2f82f566-5953-43f4-9251-79c6009bdf24/">
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
 
-## <a name="next-steps"></a>Próximas etapas
-- [Use as APIs do Microsoft Graph para configurar o provisionamento de usuário](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-- [Use o relatório de atividade do aplicativo AD FS para migrar aplicativos para o Azure AD](/azure/active-directory/manage-apps/migrate-adfs-application-activity)
+...
+
+<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://login.microsoftonline.com/2f82f566-5953-43f4-9251-79c6009bdf24/saml2"/>
+<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://login.microsoftonline.com/2f82f566-5953-43f4-9251-79c6009bdf24/saml2"/>
+<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.microsoftonline.com/2f82f566-5953-43f4-9251-79c6009bdf24/saml2"/>
+</IDPSSODescriptor>
+</EntityDescriptor>
+```
+
+## <a name="step-7-clean-up-resources"></a>Etapa 7: Limpar recursos
+
+Nessa etapa, remova os recursos que criou.
+
+
+### <a name="delete-the-application"></a>Excluir o aplicativo
+
+Exclua o aplicativo que você criou.
+
+#### <a name="request"></a>Solicitação
+
+```http
+DELETE https://graph.microsoft.com/beta/applications/4b01f51f-079b-4634-b767-7e19ad502cdb
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+No Content - 204
+```
+
+### <a name="delete-the-user-account"></a>Excluir a conta de usuário
+
+Exclua a conta de usuário MyTestUser1.
+
+#### <a name="request"></a>Solicitação
+
+```http
+DELETE https://graph.microsoft.com/v1.0/users/3ee91cc2-8edc-4f1a-8d71-7dd61348f8c4
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+No Content - 204
+```
+
+### <a name="delete-the-claims-mapping-policy"></a>Excluir a política de mapeamento de declarações
+
+Exclua a política de mapeamento de declarações.
+
+#### <a name="request"></a>Solicitação
+
+```http
+DELETE https://graph.microsoft.com/beta/policies/claimsMappingPolicies/218e7879-5330-4ca6-8bca-ddb1f2402e73
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+No Content - 204
+```
+
+## <a name="see-also"></a>Confira também
+
+- No AWS, você pode [habilitar o provisionamento de usuário](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api) para buscar todas as funções dessa conta do AWS. Para saber mais, confira [Configurar a declaração de função emitida no token SAML](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
+- [Personalizar as declarações emitidas em tokens para um aplicativo específico em um locatário](/azure/active-directory/develop/active-directory-claims-mapping).
+- Você pode usar a API applicationTemplate para criar uma instância [Aplicativos inexistentes na galeria](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+- [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps)
+- [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)
+- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)
+- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
+- [application](/graph/api/resources/application?view=graph-rest-1.0)
+- [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)
+- [keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0)
