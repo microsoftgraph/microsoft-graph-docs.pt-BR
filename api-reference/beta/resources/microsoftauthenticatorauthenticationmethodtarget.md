@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f2107ff1bde5fb34b541565e828ca91247803598
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a8eb9959faaf5f4a6bcaecceb165384be737623d
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131317"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292270"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodtarget-resource-type"></a>Tipo de recurso microsoftAuthenticatorAuthenticationMethodTarget
 Namespace: microsoft.graph
@@ -23,10 +23,10 @@ Uma coleção de usuários ou grupos habilitados para usar a política de métod
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|ID do objeto de um usuário ou grupo do Azure AD.|
-|isNumberMatchingRequired (Visualização Privada)|Boolean|Exigir que o usuário corresponder ao número exibido na página de login para aprovar a notificação MFA.|
-|isRegistrationRequired|Boolean|Determina se o usuário é imposto a registrar o método de autenticação. *Sem suporte.* |
+|isNumberMatchingRequired (Visualização Privada)|Booliano|Exigir que o usuário corresponder ao número exibido na página de login para aprovar a notificação MFA.|
+|isRegistrationRequired|Booliano|Determina se o usuário é imposto a registrar o método de autenticação. *Sem suporte.* |
 |shownContext (Visualização Privada)|authenticatorAppContextType|Determina quais tipos de contexto sobre a entrar devem ser mostrados para o usuário no corpo da notificação. Os valores possíveis são: `location` e `app`.|
-|targetType|authenticationMethodTargetType| Os valores possíveis são: `user`, `group`.|
+|targetType|authenticationMethodTargetType| Os valores possíveis são: `null`, `user`, `group`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

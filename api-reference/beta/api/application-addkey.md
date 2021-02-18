@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 184608404cfff5eda297a184373fc71f88869c4f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9a6dcc39a529f3f2b84070dc0e6d2a0699b988cc
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129538"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292032"
 ---
 # <a name="application-addkey"></a>application: addKey
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Adicione uma credencial de chave a um [aplicativo.](../resources/application.md) Esse método, juntamente com [removeKey](application-removekey.md), pode ser usado por um aplicativo para automatizar a rolagem de suas chaves expiradas.
 
 > [!NOTE]
-> Você pode continuar [](../api/application-post-applications.md) a usar [](../api/application-update.md) as operações Criar aplicativo e Atualizar aplicativo para adicionar e atualizar credenciais de chave para qualquer aplicativo com ou sem o contexto de um usuário. 
+> Você pode continuar [](../api/application-post-applications.md) a usar [](../api/application-update.md) as operações Criar aplicativo e Atualizar aplicativo para adicionar e atualizar credenciais importantes para qualquer aplicativo com ou sem o contexto de um usuário. 
 
 Como parte da validação da solicitação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada. 
 
@@ -60,7 +60,7 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | keyCredential | [keyCredential](../resources/keycredential.md) | A nova credencial de chave de aplicativo a ser acrescentada. O __tipo__, __uso__ __e chave__ são propriedades necessárias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: o uso deve `Verify` ser.</li><li>`X509CertAndPassword`: o uso deve ser `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Somente __secretText__ é necessário para ser definido que deve conter a senha da chave. Essa propriedade é necessária somente para chaves do tipo `X509CertAndPassword` . De definida como `null` caso contrário.|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Somente __secretText__ é necessário para ser definido, o que deve conter a senha da chave. Essa propriedade é necessária somente para chaves do tipo `X509CertAndPassword` . De definida como `null` caso contrário.|
 | proof | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token de JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor deve ser o __ID__ do aplicativo que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar esse token de comprovação de posse.|
 
 ## <a name="response"></a>Resposta
@@ -168,7 +168,8 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.keyCredential"
 } -->
 
 ```http
@@ -189,8 +190,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: application_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
-    ]
+  ]
 }-->
 
 

@@ -1,35 +1,35 @@
 ---
-title: tipo de recurso statusDetails
+title: Tipo de recurso statusDetails
 description: Descreve o status do evento de provisionamento e os erros associados.
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 16f014ebc3a188644784434a69e13917f05beaae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 81ea4a75970e37a360c402aced66f01ccb9e7c47
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029019"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292606"
 ---
-# <a name="statusdetails-resource-type"></a>tipo de recurso statusDetails
+# <a name="statusdetails-resource-type"></a>Tipo de recurso statusDetails
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve o status do evento de provisionamento e os erros associados. Ela é herdada de [statusBase](/graph/api/resources/statusbase?view=graph-rest-beta) e usada apenas quando status é definido como ' Failure '.  
+Descreve o status do evento de provisionamento e os erros associados. Ele é herdado de [statusBase](/graph/api/resources/statusbase) e usado somente quando o status é definido como `failure` .  
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|status|String|Os valores possíveis são: `success`, `failure`, `skipped`, `unknownFutureValue`. Herdado de statusBase.|
+|status|String|Os valores possíveis são: `success`, `failure`, `skipped`, `unknownFutureValue`. Herdado do statusBase.|
 |additionalDetails|String|Detalhes adicionais em caso de erro.|
-|errorCategory|String|Categoriza o código de erro.|
-|errorCode|Cadeia de caracteres|Código de erro exclusivo, caso algum tenha ocorrido.|
-|motivo|String|Resume o status e descreve por que o status ocorreu.|
-|recomendado|String|Fornece a resolução para o erro correspondente.|
+|errorCategory|String|Categoriza o código de erro. Os valores possíveis são `Failure`, `NonServiceFailure`, `Success`.|
+|errorCode|Cadeia de caracteres|Código de erro exclusivo se ocorreu. [Saiba Mais](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|motivo|String|Resume o status e descreve por que o status aconteceu.|
+|recommendedAction|String|Fornece a resolução do erro correspondente.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a0db330c3bf6bbf182e1b3242a31c5df2c48527e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6699071afe0fb8b7e6ec2183e29785558a2c5d48
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980100"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292165"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades **StartDateTime** , **EndDateTime** , **participantes** e **Subject** da [onlineMeeting](../resources/onlinemeeting.md)especificada.
+Atualize **startDateTime**, **endDateTime**,  **participantes** e propriedades de assunto do [onlineMeeting especificado.](../resources/onlinemeeting.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,26 +29,24 @@ Atualize as propriedades **StartDateTime** , **EndDateTime** , **participantes**
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy) e concedê-la a um usuário, autorizando o aplicativo configurado na política a atualizar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
+> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política a atualizar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
-
-Solicitação usando um token delegado:
+Para atualizar o onlineMeeting especificado pela ID de reunião com o token delegado:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
+PATCH /me/onlineMeetings/{meetingId}
 ```
 
-Solicitação usando um token de aplicativo:
+Para atualizar o onlineMeeting especificado pela ID de reunião com o token de aplicativo:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > **Observações:**
->
-> - `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para mais detalhes, consulte [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
-> - `meetingId` é a **ID** de uma [entidade onlineMeeting](../resources/onlinemeeting.md).
+> - `userId`é a ID de objeto de um usuário no portal de gerenciamento de usuários [do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte política [de acesso ao aplicativo.](/graph/cloud-communication-online-meeting-application-access-policy)
+> - `meetingId`é a **id de** um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição                 |
@@ -57,7 +55,7 @@ PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 | Content-type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [onlineMeeting](../resources/onlinemeeting.md). Somente as propriedades **StartDateTime** , **EndDateTime** , **participantes** e **Subject** podem ser modificadas. O **StartDateTime** e **EndDateTime** devem aparecer em pares.
+No corpo da solicitação, forneça uma representação JSON do objeto [onlineMeeting](../resources/onlinemeeting.md). Somente as **propriedades startDateTime**, **endDateTime**, **participantes** e **assunto** podem ser modificadas. **StartDateTime e** **endDateTime** devem aparecer em pares.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.

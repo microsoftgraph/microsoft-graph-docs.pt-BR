@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c6beab8c5c5caff07778765e13e1836944238a4f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d7c2849b1db35213993838a5098def2ee0f43f43
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131866"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292949"
 ---
 # <a name="application-addkey"></a>application: addKey
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Adicione uma credencial de chave a um [aplicativo.](../resources/application.md) Esse método, juntamente com [removeKey,](application-removekey.md) pode ser usado por um aplicativo para automatizar a rolagem de suas chaves expiradas.
 
 > [!NOTE]
-> [Criar operações de](../api/application-post-applications.md) [aplicativos](../api/application-update.md) e de atualização de aplicativos podem continuar a ser usadas para adicionar e atualizar credenciais de chave para qualquer aplicativo com ou sem o contexto de um usuário.
+> [Criar operações de](../api/application-post-applications.md) [aplicativos](../api/application-update.md) e atualizar aplicativos podem continuar a ser usadas para adicionar e atualizar credenciais de chave para qualquer aplicativo com ou sem o contexto de um usuário.
 
 Como parte da validação da solicitação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada. 
 
@@ -29,8 +29,8 @@ Os aplicativos que não têm certificados válidos existentes (nenhum certificad
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Nenhum.  |
-|Delegada (conta pessoal da Microsoft) | Nenhum.    |
+|Delegado (conta corporativa ou de estudante) | Nenhum.  |
+|Delegado (conta pessoal da Microsoft) | Nenhum.    |
 |Aplicativo | Nenhum. |
 
 > [!NOTE] 
@@ -57,13 +57,13 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | A nova credencial de chave de aplicativo a ser acrescentada. O __tipo__, __uso__ __e chave__ são propriedades necessárias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: o uso deve ser `Verify` .</li><li>`X509CertAndPassword`: o uso deve ser `Sign`</li></ul>|
+| keyCredential | [keyCredential](../resources/keycredential.md) | A nova credencial de chave de aplicativo a ser acrescentada. O __tipo__, __uso__ __e chave__ são propriedades necessárias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: o uso deve `Verify` ser.</li><li>`X509CertAndPassword`: o uso deve ser `Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Somente __secretText__ é necessário para ser definido que deve conter a senha da chave. Essa propriedade é necessária somente para chaves do tipo `X509CertAndPassword` . De definida como `null` caso contrário.|
 | proof | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token de JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor deve ser o __ID__ do aplicativo que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar esse token de comprovação de posse.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `200 OK` novo [objeto keyCredential](../resources/keycredential.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um novo objeto [keyCredential](../resources/keycredential.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -166,7 +166,8 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true, 
+  "@odata.type": "microsoft.graph.keyCredential"
 } -->
 
 ```http
@@ -187,7 +188,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: application_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
-    ]
+  ]
 }-->
 

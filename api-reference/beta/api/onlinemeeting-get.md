@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6c607a0c46d021de0e72d64601a6f01e6f0ef604
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 13a03b462626464fd5b8ea933f7f7bc67f815a67
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910876"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292515"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -46,18 +46,23 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para obter a onlineMeeting especificada usando a ID da reunião:
+Para obter a onlineMeeting especificada usando a ID da reunião com permissão delegada:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
+```
+
+Para obter a onlineMeeting especificada usando a ID de reunião com permissão de aplicativo:
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 Para obter o onlineMeeting especificado usando **videoTeleconferenceId**:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
-GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
 Para obter o onlineMeeting especificado usando **joinWebUrl**:
@@ -81,9 +86,9 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 >**Observações:**
 >- O caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
->- `id`nas duas primeiras rotas refere-se à [ID de conferência VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
->- `userId`é a ID de objeto de um usuário no portal de gerenciamento de usuários do [Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte política [de acesso ao aplicativo.](/graph/cloud-communication-online-meeting-application-access-policy)
->- `meetingId` é a **id de** uma [entidade onlineMeeting](../resources/onlinemeeting.md).
+>- `userId`é a ID de objeto de um usuário no portal de gerenciamento de usuários [do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte política [de acesso ao aplicativo.](/graph/cloud-communication-online-meeting-application-access-policy)
+>- `meetingId`é a **id de** um [objeto onlineMeeting.](../resources/onlinemeeting.md)
+> - **videoTeleconferenceId** é gerado para usuários licenciados Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting](../resources/onlinemeeting.md) . Consulte a [ID de conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) para obter mais detalhes.
 >- `joinWebUrl` deve ser codificado por URL e essa rota só pode ser usada para recuperar reuniões criadas por `userId` .
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -221,20 +226,22 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Exemplo 2: Recuperar uma reunião online por ID de reunião
-Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou de aplicativo. A ID da reunião é fornecida no objeto de resposta ao criar [um onlineMeeting](../resources/onlinemeeting.md). Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião pela primeira vez e recupera as informações da reunião posteriormente como uma ação separada.
+Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou de aplicativo. A ID da reunião é fornecida no objeto de resposta ao criar [um onlineMeeting](../resources/onlinemeeting.md). Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião online pela primeira vez usando a API do Graph e depois recupera as informações da reunião posteriormente como uma ação separada.
 
 #### <a name="request"></a>Solicitação
+
+> **Observação:** A ID da reunião foi truncada para maior leitura.
 
 A solicitação a seguir usa um token de usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 
 A solicitação a seguir usa um token de aplicativo.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 
 #### <a name="response"></a>Resposta
@@ -243,7 +250,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 ```json
 {
-    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
     "startDateTime": "2020-09-29T22:35:31.389759Z",
     "endDateTime": "2020-09-29T23:35:31.389759Z",

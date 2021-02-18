@@ -1,22 +1,22 @@
 ---
-title: Obter openShiftChangeRequest
+title: Get openShiftChangeRequest
 description: Recupere as propriedades e os relacionamentos de um objeto openShiftChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 98e3ec9e0340bb40262fd766a109cd84be4a4502
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cb69d55bf7a0197f2cb06f4a97776a035f58a03
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059303"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292592"
 ---
-# <a name="get-openshiftchangerequest"></a>Obter openShiftChangeRequest
+# <a name="get-openshiftchangerequest"></a>Get openShiftChangeRequest
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) .
+Recupere as propriedades e os relacionamentos de um [objeto openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,18 +24,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Schedule. Read. All, Schedule. ReadWrite. All |
+| Aplicativo                            | Schedule.Read.All, Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
+GET /teams/{id}/schedule/openShiftChangeRequests/{openShiftsChangeRequestId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) solicitado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e o objeto `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -67,7 +67,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftsChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
+GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
 ```
 
 ### <a name="response"></a>Resposta

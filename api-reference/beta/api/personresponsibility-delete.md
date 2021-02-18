@@ -1,21 +1,21 @@
 ---
 title: Excluir personResponsibility
-description: Exclui um objeto personResponsibility.
+description: Exclui um objeto personResponsibility .
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8e5ae2fecc8c1845712b1d15161694da9c215ae1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17ce90f05b52cb05c3030ceff0fb3312f71466ef
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986235"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292718"
 ---
 # <a name="delete-personresponsibility"></a>Excluir personResponsibility
 Namespace: microsoft.graph
 
-Exclui um objeto [personResponsibility](../resources/personresponsibility.md) do [perfil](../resources/profile.md)de um usuário.
+Exclui um [objeto personResponsibility](../resources/personresponsibility.md) do perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
+| Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -34,8 +34,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /me/profile/responsibilities/{id}
-DELETE /users/{id | userPrincipalName}/profile/responsibilities/{id}
+DELETE /me/responsibilities/{id}
+DELETE /users/{id | userPrincipalName}/responsibilities/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -60,7 +60,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/profile/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
+DELETE https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 ```
 
 ### <a name="response"></a>Resposta

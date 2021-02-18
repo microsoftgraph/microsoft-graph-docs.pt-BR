@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: b2978179dbe581a1013d34e848e9a4c3614d9761
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0c616b20ac6c3dfc00ffdae319978a6bce60db5f
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133459"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292025"
 ---
 # <a name="azure-ad-access-reviews-for-resources-excluding-groups"></a>Revisões de acesso do Azure AD (para recursos excluindo grupos)
 
@@ -18,8 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
->As APIs de revisão de acesso nesta seção se aplicam a todos os tipos de recursos com _suporte, exceto grupos._ Para apIs de revisão de acesso que se aplicam a associações de grupo, consulte [Revisões do Access para grupos.](accessreviewsv2-root.md) 
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 Você pode usar as revisões de acesso do [Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) para configurar revisões de acesso única ou recorrentes para atestado dos direitos de acesso do usuário.
 
@@ -27,9 +26,9 @@ Cenários típicos de clientes para revisões de acesso de associações de grup
 
 - Os clientes podem revisar e certificar o acesso de usuários convidados usando revisões de acesso de seu acesso a aplicativos e associações de grupos. Os revisadores podem usar as ideias fornecidas para decidir com eficiência se os convidados devem ter acesso contínuo.
 
-- Os clientes podem revisar e certificar o acesso dos funcionários a aplicativos e associações de grupo com revisões de acesso.
+- Os clientes podem revisar e certificar o acesso de funcionários a aplicativos e associações de grupo com revisões de acesso.
 
-- Os clientes podem coletar controles de revisão de acesso em programas que são relevantes para sua organização rastrear análises de aplicativos de conformidade ou de risco.
+- Os clientes podem coletar controles de revisão de acesso em programas relevantes para a sua organização para rastrear análises de aplicativos de conformidade ou de risco.
 
 Há também um recurso relacionado para que os clientes revisem e certifiquem as atribuições de função de usuários administrativos que estão atribuídos a funções do Azure AD, como Administrador Global ou funções de assinatura do Azure.  Esse recurso está incluído no [Azure AD Privileged Identity Management](privilegedidentitymanagement-root.md).
 
@@ -59,9 +58,9 @@ A tabela a seguir lista os métodos que você pode usar para interagir com os re
 |[Aplicar decisões de accessReview](../api/accessreview-apply.md) |     Nenhum.   |   Aplicar as decisões de um accessReview concluído.|
 |[Listar businessFlowTemplates](../api/businessflowtemplate-list.md) | [Coleção businessFlowTemplate](businessflowtemplate.md)| Obter os modelos de fluxo de negócios apropriados para acessar revisões.|
 |[Criar programa](../api/program-create.md) |   [programa](program.md)   |   Crie um novo programa.|
-|[Excluir programa](../api/program-delete.md) |   Nenhum.   |   Exclua um programa.|
+|[Excluir programa](../api/program-delete.md) |   Nenhum.   |   Excluir um programa.|
 |[Listar programas](../api/program-list.md) |  [coleção de](program.md) programas|   Obter uma coleção de todos os programas.|
-|[Listar programControls de um programa](../api/program-listcontrols.md) |      [coleção programControl](programcontrol.md)| Obter uma coleção de controles de um programa.|
+|[Listar programControls de um programa](../api/program-listcontrols.md) |      [coleção programControl](programcontrol.md)| Obter uma coleção dos controles de um programa.|
 |[Atualizar programa](../api/program-update.md) |   [programa](program.md)|  Atualizar um programa.|
 |[Criar programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Adicione um programControl a um programa.|
 |[Excluir programControl](../api/programcontrol-delete.md) |     Nenhum.   |   Remover um programControl de um programa.|
@@ -79,9 +78,9 @@ As funções de diretório a seguir são necessárias para que um usuário chama
 |[accessReview](accessreview.md) de um grupo ou aplicativo | Ler | AccessReview.Read.All, AccessReview.ReadWrite.Membership ou AccessReview.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Segurança, Leitor de Segurança ou Administrador do Usuário |
 |[accessReview](accessreview.md) de um grupo ou aplicativo | Criar, Atualizar ou Excluir | AccessReview.ReadWrite.Membership ou AccessReview.ReadWrite.All | Administrador Global ou Administrador de Usuário |
 | [program](program.md) and [programControl](programcontrol.md)| Ler | ProgramControl.Read.All ou ProgramControl.ReadWrite.All |  Administrador Global, Leitor Global, Administrador de Segurança, Leitor de Segurança ou Administrador do Usuário |
-| [program](program.md) and [programControl](programcontrol.md) | Criar, Atualizar ou Excluir | ProgramControl.ReadWrite.All | Administrador Global ou Administrador de Usuário |
+| [program](program.md) and [programControl](programcontrol.md) | Criar, Atualizar ou Excluir | ProgramControl.ReadWrite.All | Administrador Global ou Administrador do Usuário |
 
-Além disso, um usuário que é um revistor atribuído de uma revisão de acesso pode gerenciar suas decisões, sem precisar estar em uma função de diretório.
+Além disso, um usuário que é um revisador atribuído de uma revisão de acesso pode gerenciar suas decisões, sem precisar estar em uma função de diretório.
 
 ## <a name="see-also"></a>Confira também
 

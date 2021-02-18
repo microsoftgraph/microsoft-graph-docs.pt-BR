@@ -5,12 +5,12 @@ localization_priority: Priority
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0abf0f44ec5ace58192ae61238c3ea5843198bc9
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 869a8b3319d1ba2459f3dc7c190f913b4fd61551
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581278"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50293054"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -49,7 +49,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | isMultipleDataLocationsForServicesEnabled | Boolean | **verdadeiro** se a organização estiver habilitada no Multi-Geo; **falso** se a organização não estiver habilitada no Multi-Geo, **nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
 | onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
-| onPremisesSyncEnabled | Boolean | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
+| onPremisesSyncEnabled | Booliano | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
 | postalCode | Cadeia de caracteres | CEP do endereço da organização. |
 | preferredLanguage | String | O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en". |
 | privacyProfile | [privacyProfile](privacyprofile.md) | O perfil de privacidade de uma organização. |
@@ -124,16 +124,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'businessPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'onPremisesLastSyncDateTime' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'onPremisesSyncEnabled' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'securityComplianceNotificationMails' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'securityComplianceNotificationPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table."
   ],
   "tocPath": ""
 }-->

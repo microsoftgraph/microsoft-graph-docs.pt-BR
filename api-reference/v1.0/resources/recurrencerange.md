@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 69583a52ae62fad62708256b1eecba1ab8955517
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 337187058c923adec27de26e6e5a25d850487d04
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028221"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292452"
 ---
 # <a name="recurrencerange-resource-type"></a>Tipo de recurso recurrenceRange
 
@@ -32,7 +32,7 @@ Descreve um intervalo de datas sobre o qual um [event](event.md) recorrente se r
 
 Use a propriedade **type** para especificar os diferentes tipos de **recorrenceRange**. Observe as propriedades necessárias para cada tipo, conforme descrito na tabela a seguir.
 
-| Propriedade Type  | Tipo de intervalo de recorrência | Descrição | Exemplo | Propriedades necessárias |
+| propriedade type  | Tipo de intervalo de recorrência | Descrição | Exemplo | Propriedades necessárias |
 |:-------|:---------------|:--------|:--------|:--------|
 |`endDate` |Intervalo com data final | O evento se repete em todos os dias que se encaixam no padrão de recorrência correspondente entre **startDate** e **endDate**, incluindo essas datas. | Repita o evento no período entre 1º de junho de 2017 e 15 de junho de 2017. | **type**, **startDate**, **endDate** |
 |`noEnd`  |Intervalo sem uma data final | O evento se repete em todos os dias que se encaixam no padrão de recorrência correspondente começando em **startDate**. | Repita o evento no intervalo de datas que começa em 1º de junho de 2017, indefinidamente. | **type**, **startDate** |
@@ -70,8 +70,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-      "Warning: /api-reference/v1.0/resources/recurrencerange.md:
-      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |"
   ],
   "tocPath": ""
 }-->

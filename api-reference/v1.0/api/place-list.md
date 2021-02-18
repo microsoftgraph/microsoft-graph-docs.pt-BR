@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9c640930e29be9ba8912c1c8572ed16b37c8333e
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 45758c03893d5ec4737bee0b88bb4215df44104c
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059550"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292480"
 ---
 # <a name="list-places"></a>Listar locais
 
@@ -36,7 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Place.Read.All |
+| Delegado (conta corporativa ou de estudante)     | Place.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo                            | Place.Read.All |
 
@@ -405,6 +405,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->

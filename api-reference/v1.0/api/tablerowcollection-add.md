@@ -1,22 +1,22 @@
 ---
 title: 'TableRowCollection: add'
-description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. A adição de uma linha por vez pode levar à degradação de desempenho. A abordagem recomendada seria colocar as linhas em lote em uma única chamada em vez de fazer uma única inserção de linha. Para obter melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma operação de adição de linhas únicas. Experimente o número de linhas para determinar o número ideal de linhas a serem usadas em uma única chamada de API. '
+description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. Adicionar uma linha por vez pode levar à degradação do desempenho. A abordagem recomendada seria reunir as linhas em lote em uma única chamada em vez de fazer a inserção de uma única linha. Para melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma única operação de aplicação de linhas. Experimente o número de linhas para determinar o número ideal de linhas a ser usado em uma única chamada à API. '
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a9b0eedadf4ff3b509444f01896c6f74c30f0815
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b0a77be9106d62d35624020b9c007e911ae4ff26
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012828"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292473"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
 Namespace: microsoft.graph
 
-Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. A adição de uma linha por vez pode levar à degradação de desempenho. A abordagem recomendada seria colocar as linhas em lote em uma única chamada em vez de fazer uma única inserção de linha. Para obter melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma operação de adição de linhas únicas. Experimente o número de linhas para determinar o número ideal de linhas a serem usadas em uma única chamada de API. 
+Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. Adicionar uma linha por vez pode levar à degradação do desempenho. A abordagem recomendada seria reunir as linhas em lote em uma única chamada em vez de fazer a inserção de uma única linha. Para melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma única operação de aplicação de linhas. Experimente o número de linhas para determinar o número ideal de linhas a ser usado em uma única chamada à API. 
 
 ## <a name="error-handling"></a>Tratamento de erros
 
@@ -54,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [WorkbookTableRow](../resources/tablerow.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [WorkbookTableRow](../resources/tablerow.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Neste exemplo, duas linhas de dados são inseridas no final da tabela. 
@@ -117,10 +117,6 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Warning: /api-reference/v1.0/api/tablerowcollection-add.md/tablerowcollection_add/values:
-      Inconsistent types between parameter (Collection) and table (None)",
-    "Error: /api-reference/v1.0/api/tablerowcollection-add.md/tablerowcollection_add/values:
-      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
   ],
   "tocPath": ""
 }-->

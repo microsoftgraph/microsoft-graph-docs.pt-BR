@@ -1,24 +1,23 @@
 ---
 title: Obter onlineMeeting
-description: Recupere as propriedades e os relacionamentos de um objeto de **reunião online** .
+description: Recupere as propriedades e os relacionamentos de um objeto de reunião online.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 22b3884dff4f2d3b7a69b80f82bab0afa9e2d6c3
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 18f4d06e106bb7413054d2ab62f93d02885a90a0
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742080"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292935"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto [onlineMeeting](../resources/onlinemeeting.md) .
+Recupere as propriedades e os relacionamentos de um [objeto onlineMeeting.](../resources/onlinemeeting.md) Você pode obter detalhes de uma onlineMeeting usando [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) ou [a ID da reunião.](#example-2-retrieve-an-online-meeting-by-meeting-id)
 
-> **Observação:** Atualmente, o `GET` método só tem suporte para uma [ID de conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para usuários licenciados de Cloud-Video-Interop e este método é usado para obter os detalhes para ingressar na reunião.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,15 +25,37 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                                        |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                        |
-| Application                            | OnlineMeetings.Read.All |
+| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
+| Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
+
+> [!IMPORTANT]
+> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para recuperar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
+Para obter o onlineMeeting especificado usando a ID de reunião com o token delegado:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /me/onlineMeetings/{meetingId}
 ```
+
+Para obter a onlineMeeting especificada usando a ID de reunião com o token de aplicativo:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}
+```
+
+Para obter o onlineMeeting especificado usando **videoTeleconferenceId***:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+```
+
+> **Observação:**
+> - `userId`é a ID de objeto de um usuário no portal de gerenciamento de usuários do [Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte política [de acesso ao aplicativo.](/graph/cloud-communication-online-meeting-application-access-policy)
+> - `meetingId`é a **id de** um [objeto onlineMeeting.](../resources/onlinemeeting.md)
+> - **videoTeleconferenceId** é gerado para usuários licenciados Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting](../resources/onlinemeeting.md) . Consulte a [ID de conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) para obter mais detalhes.
+> - \* Este cenário só dá suporte ao token de aplicativo e não oferece suporte à política de acesso a aplicativos.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -55,7 +76,9 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Exemplo 1: Recuperar uma reunião online por VideoTeleconferenceId
+
+#### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
 
 
@@ -93,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
     }  
 ```
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
@@ -161,6 +184,65 @@ Content-Length: 1574
   },
   "isEntryExitAnnounced": true,
   "allowedPresenters": "everyone"
+}
+```
+
+### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Exemplo 2: Recuperar uma reunião online por ID de reunião
+Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou de aplicativo. A ID da reunião é fornecida no objeto de resposta ao criar [um onlineMeeting](../resources/onlinemeeting.md). Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião online pela primeira vez usando a API do Graph e depois recupera as informações da reunião posteriormente como uma ação separada.
+
+#### <a name="request"></a>Solicitação
+
+> **Observação:** A ID da reunião foi truncada para maior leitura.
+
+A solicitação a seguir usa um token de usuário.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
+```
+
+A solicitação a seguir usa um token de aplicativo.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
+```
+
+#### <a name="response"></a>Resposta
+
+> **Observação:** O objeto de resposta mostrado aqui foi reduzido para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
+
+```json
+{
+    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
+    "creationDateTime": "2020-09-29T22:35:33.1594516Z",
+    "startDateTime": "2020-09-29T22:35:31.389759Z",
+    "endDateTime": "2020-09-29T23:35:31.389759Z",
+    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+    "subject": null,
+    "autoAdmittedUsers": "EveryoneInCompany",
+    "isEntryExitAnnounced": true,
+    "allowedPresenters": "everyone",
+    "videoTeleconferenceId": "(redacted)",
+    "participants": {
+        "organizer": {
+            "upn": "(redacted)",
+            "role": "presenter",
+            "identity": {
+                "user": {
+                    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                    "displayName": null,
+                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                    "identityProvider": "AAD"
+                }
+            }
+        },
+        "attendees": [],
+        "producers": [],
+        "contributors": []
+    },
+    "lobbyBypassSettings": {
+        "scope": "organization",
+        "isDialInBypassEnabled": false
+    }
 }
 ```
 

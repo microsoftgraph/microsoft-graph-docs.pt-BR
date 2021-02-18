@@ -5,18 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b6f24316e3ad45197b1630fdcdc4e249655ae19b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: da155d49eedf03cdc935eeefc6b6808847176a41
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133564"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292711"
 ---
 # <a name="accessreview-resource-type"></a>Tipo de recurso accessReview
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 Representa uma revisão de acesso do Azure [AD.](accessreviews-root.md)  
 
@@ -53,16 +55,16 @@ Representa uma revisão de acesso do Azure [AD.](accessreviews-root.md)
 | reviewerType | String | O tipo de relação do revistor para o objeto de destino, um dos `self` ou `delegated` `entityOwners` . Obrigatório durante a criação. | 
 | createdBy | [userIdentity](useridentity.md) | O usuário que criou essa análise. |
 | reviewedEntity | [identity](identity.md) | O objeto para o qual o acesso revisa está revendo as atribuições de direitos de acesso. Pode ser o grupo para revisão de associações de usuários em um grupo ou o aplicativo para uma revisão das atribuições de usuários para um aplicativo. Obrigatório durante a criação. | 
-| configurações | [accessReviewSettings](accessreviewsettings.md) | As configurações de um accessReview, consulte a definição de tipo abaixo. |
+| settings | [accessReviewSettings](accessreviewsettings.md) | As configurações de um accessReview, consulte a definição de tipo abaixo. |
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo   | Descrição |
 |:------------ |:---- |:----------- |
 | reviewers | [coleção userIdentity](useridentity.md) | A coleção de revisadores para uma revisão de acesso, se o reviewerType de acesso for do tipo `delegated` . |
-| decisões | [coleção accessReviewDecision](accessreviewdecision.md) | A coleção de decisões para esta revisão de acesso. |
+| decisões | [coleção accessReviewDecision](accessreviewdecision.md) | O conjunto de decisões para esta revisão de acesso. |
 | myDecisions | [coleção accessReviewDecision](accessreviewdecision.md) | A coleção de decisões para o chamador, se o chamador for um revistor. |
-| instances | [coleção accessReview](accessreview.md) | A coleção de instâncias de acesso revisões passadas, atuais e futuras, se esse objeto for uma revisão de acesso recorrente. |
+| instances | [coleção accessReview](accessreview.md) | A coleção de instâncias de revisões de acesso passadas, atuais e futuras, se esse objeto for uma revisão de acesso recorrente. |
 
 Se essas relações estão presentes em um objeto, depende se o objeto é uma revisão de acesso única, a série de uma revisão de acesso recorrente ou uma instância de uma revisão de acesso recorrente.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9bb81a4630e19fe86435a6f4cd000a789467e7e8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a2adf42417c6c5c61f5e161d3f93bd4c58fd850d
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137022"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50293005"
 ---
 # <a name="outlookcategory-resource-type"></a>Tipo de recurso outlookCategory
 
@@ -81,7 +81,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Listar categorias](../api/outlookuser-list-mastercategories.md) | Coleção [outlookCategory](../resources/outlookcategory.md) |Obtém todas as categorias que foram definidas para o usuário.|
@@ -99,8 +99,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-      "Warning: /api-reference/v1.0/resources/outlookcategory.md:
-      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|"
   ],
   "tocPath": ""
 }-->

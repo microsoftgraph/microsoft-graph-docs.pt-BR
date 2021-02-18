@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9ca45981d2825769f540048a94488dda4ba91c00
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: b641e60fec03fc862f166dfe14240392817441e3
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115189"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292844"
 ---
 # <a name="educationuser-resource-type"></a>Tipo de recurso educationUser
 
@@ -28,13 +28,13 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 | [Listar escolas](../api/educationuser-list-schools.md) | Coleção [educationSchool] | Obtenha a coleção de objetos **educationSchool** da qual o usuário é um membro. |
 | [Obter usuário](../api/educationuser-get-user.md)         | [user]                       | Obtenha o **user** do diretório simples que corresponde a esse **educationUser**. |
 | [Atualizar](../api/educationuser-update.md)             | [educationUser]              | Atualize um objeto **educationUser**.                                           |
-| [Delete](../api/educationuser-delete.md)             | Nenhuma                         | Exclua um objeto **educationUser**.                                           |
+| [Delete](../api/educationuser-delete.md)             | Nenhum                         | Exclua um objeto **educationUser**.                                           |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade          | Tipo                         | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | :---------------- | :--------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| accountEnabled    | Boolean                      | **True** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| accountEnabled    | Booliano                      | **True** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.                                                                                                                                                                                                                                                                                                                                                                                                    |
 | assignedLicenses  | Coleção [assignedLicense] | As licenças que são atribuídas ao usuário. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | assignedPlans     | Coleção [assignedPlan]    | Os planos que são atribuídos ao usuário. Somente leitura. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | businessPhones    | Coleção de cadeias de caracteres            | Números de telefone para o usuário. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -69,7 +69,7 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 | classes      | Coleção [educationClass]  | Aulas às quais o usuário pertence. Anulável.   |
 | schools      | Coleção [educationSchool] | Escolas às quais o usuário pertence. Anulável.   |
 | assignments  | [educationAssignment]        | Lista de atribuições para o usuário. Anulável.    |
-| user         | [usuário]                       | O usuário do diretório correspondente a esse usuário. |
+| user         | [user]                       | O usuário do diretório correspondente a esse usuário. |
 
 >[!IMPORTANT]
 >O **[recurso educationAssignment]** é um recurso de versão /beta. Se for usar esse recurso, não se esqueça de revisar o [log de alterações](/graph/changelog) periodicamente. Quando os recursos da API do Microsoft Graph são lançados para o ponto de extremidade /v1.0, a versão é notada no log de alterações. Se seu aplicativo consumir o **recurso educationAssignment,** você precisará declarar URLs de solicitação base, conforme mostrado no seguinte bloco de código:  
@@ -133,9 +133,7 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "suppressions": [
     "Error: microsoft.graph.educationUser/assignments:
-      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN",
-    "Warning: /api-reference/v1.0/resources/educationuser.md/microsoft.graph.educationUser:
-      Property 'relatedContacts' found in markdown table but not in resource definition."
+      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
   ],
   "tocPath": ""
 }-->
@@ -153,6 +151,6 @@ Veja a seguir uma representação JSON do recurso.
 [identityset]: identityset.md
 [assignedplan]: assignedplan.md
 [assignedlicense]: assignedlicense.md
-[usuário]: user.md
+[user]: user.md
 [directoryobject]: directoryobject.md
 

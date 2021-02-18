@@ -1,56 +1,56 @@
 ---
-title: tipo de recurso fornecedores
-description: Um objeto fornecedor no Dynamics 365 Business central.
+title: tipo de recurso vendors
+description: Um objeto de fornecedor no Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: a2102a77748ebef8267792a887a522fa716619ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0848b6fbb67964faa9565f2ed95120f563c71f53
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040035"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50293068"
 ---
-# <a name="vendors-resource-type"></a>tipo de recurso fornecedores
+# <a name="vendors-resource-type"></a>tipo de recurso vendors
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um fornecedor no Dynamics 365 Business central.
+Representa um fornecedor no Dynamics 365 Business Central.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Obter fornecedores](../api/dynamics-vendor-get.md)|fornecedor|Obtém um objeto fornecedor.|
-|[Lançar fornecedores](../api/dynamics-create-vendor.md)|fornecedor|Cria um objeto fornecedor.|
-|[Fornecedores de patch](../api/dynamics-vendor-update.md)|fornecedor|Atualiza um objeto fornecedor.|
-|[Excluir fornecedor](../api/dynamics-vendor-delete.md)|Nenhuma|Exclui um objeto fornecedor.|
+|[Obter fornecedores](../api/dynamics-vendor-get.md)|vendors|Obtém um objeto de fornecedor.|
+|[Post vendors](../api/dynamics-create-vendor.md)|vendors|Cria um objeto de fornecedor.|
+|[Fornecedores de patch](../api/dynamics-vendor-update.md)|vendors|Atualiza um objeto de fornecedor.|
+|[Excluir fornecedor](../api/dynamics-vendor-delete.md)|nenhum|Exclui um objeto de fornecedor.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|GUID|A ID exclusiva do fornecedor. Não editável.|
-|number|string|O número do fornecedor.|
-|displayName|string|O nome de exibição do fornecedor.|
-|address|[Extra. Address](../resources/dynamics-complextypes.md)|O endereço do fornecedor.|
-|phoneNumber|string|O número de telefone do fornecedor.|
+|number|cadeia de caracteres|O número do fornecedor.|
+|displayName|cadeia de caracteres|O nome de exibição do fornecedor.|
+|address|[NAV. PostalAddress](../resources/dynamics-complextypes.md)|O endereço do fornecedor.|
+|phoneNumber|cadeia de caracteres|O número de telefone do fornecedor.|
 |email|cadeia de caracteres|O endereço de email do fornecedor.|
-|site|string|O endereço do site do fornecedor.|
-|taxRegistrationNumber|string|O número de registro de imposto do fornecedor.|
-|CurrencyID|GUID|A ID do código de moeda padrão do fornecedor.|
-|currencyCode|string|O código de moeda padrão do fornecedor.|
-|irs1099Code|string|Especifica um código 1099 para o fornecedor. Somente EUA.|
-|paymentTermsId|GUID|A ID padrão dos termos de pagamento do fornecedor.|
+|site|cadeia de caracteres|O endereço do site do fornecedor.|
+|taxRegistrationNumber|cadeia de caracteres|O número de registro fiscal do fornecedor.|
+|currencyId|GUID|A ID de código de moeda padrão para o fornecedor.|
+|currencyCode|cadeia de caracteres|O código de moeda padrão para o fornecedor.|
+|irs1099Code|cadeia de caracteres|Especifica um código 1099 para o fornecedor. Somente eua.|
+|paymentTermsId|GUID|A ID de termos de pagamento padrão para o fornecedor.|
 |paymentMethodId|GUID|A ID de método de pagamento padrão para o fornecedor.|
-|taxLiable|booliano|Especifica se o fornecedor é responsável por impostos.|
-|bloqueou|string|Especifica quais transações com o fornecedor que não podem ser lançados. Os valores aceitos estão em branco, pagamento ou todos|
-|carga|dígitos|O saldo do fornecedor. Somente Leitura.|
-|lastModifiedDateTime|datetime|O último DateTime que o fornecedor foi modificado. Somente leitura.|  
+|taxLiable|booliano|Especifica se o fornecedor é responsável pelo imposto.|
+|bloqueado|cadeia de caracteres|Especifica quais transações com o fornecedor não podem ser publicadas. Os valores aceitos estão em branco, Pagamento ou Tudo|
+|balance|decimal|O saldo do fornecedor. Somente Leitura.|
+|lastModifiedDateTime|datetime|A última data em que o fornecedor foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações
@@ -58,7 +58,14 @@ Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do fornecedor.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.vendor"
+}-->
+
+Aqui está uma representação JSON do fornecedor.
 
 ```json
 {
@@ -80,7 +87,6 @@ Veja a seguir uma representação JSON do fornecedor.
   "balance": "decimal",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
 
 

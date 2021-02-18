@@ -1,29 +1,29 @@
 ---
-title: Excluir allowedUser do printerShare
-description: Revoga o acesso do usuário especificado para enviar trabalhos de impressão ao compartilhamento de impressora associado.
+title: Excluir allowedUser de printerShare
+description: Revogar o acesso do usuário especificado para enviar trabalhos de impressão ao compartilhamento de impressora associado.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 51a6cc5a5d33ede34cc6f8f9fd2c55f25ced5aee
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 71158b0c29d8c30fe5ad007e42ca56b61cea0dcb
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314416"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292067"
 ---
-# <a name="delete-alloweduser-from-printershare"></a>Excluir allowedUser do printerShare
+# <a name="delete-alloweduser-from-printershare"></a>Excluir allowedUser de printerShare
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Revoga o acesso do usuário especificado para enviar trabalhos de impressão para o [printerShare](../resources/printershare.md)associado.
+Revogar o acesso do usuário especificado para enviar trabalhos de impressão para a [printerShare associada.](../resources/printershare.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário assinado deve ser um Administrador [de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -34,7 +34,7 @@ Para usar o serviço de impressão universal, o usuário ou o locatário do apli
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/printerShare/{id}/allowedUsers/{id}/$ref
+DELETE /print/printerShares/{id}/allowedUsers/{id}/$ref
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
@@ -56,7 +56,7 @@ Este é um exemplo de solicitação.
   "name": "delete_alloweduser"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/printerShare/{id}/allowedUsers/{id}/$ref
+DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers/{id}/$ref
 ```
 
 ### <a name="response"></a>Resposta

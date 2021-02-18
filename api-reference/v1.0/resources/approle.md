@@ -4,13 +4,13 @@ description: Representa uma função de aplicativo que pode ser solicitada por u
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: f61eca3971baeb426f4a20697a1e7ffca74e5071
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: psignoret
+ms.openlocfilehash: ee38168920dee5c836be6801a7f63181df565eb5
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132472"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272496"
 ---
 # <a name="approle-resource-type"></a>Tipo de recurso appRole
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa uma função de aplicativo que pode ser solicitada (e concedida a) um aplicativo cliente ou que pode ser usada para atribuir um aplicativo a usuários ou grupos em uma função especificada. 
 
-A **propriedade appRoles** do [aplicativo e](application.md) [entidades servicePrincipal](serviceprincipal.md) são uma coleção de **appRole**. 
+Para adicionar, atualizar ou remover funções de aplicativo para um aplicativo, [atualize o aplicativo](../api/application-update.md) para o aplicativo ou serviço. As funções do aplicativo na entidade do aplicativo estarão disponíveis em todos os locatários em que o aplicativo for usado. Para definir funções de aplicativo que só são aplicáveis em seu locatário (por exemplo, funções [](../api/serviceprincipal-update.md) de aplicativo que representam funções personalizadas em sua instância de um aplicativo multilocatário), você também pode atualizar a entidade de serviço para o aplicativo, para adicionar ou atualizar funções de aplicativo para a coleção **appRoles.**
 
 Com [appRoleAssignments,](approleassignment.md)as funções de aplicativo podem ser atribuídas a usuários, grupos ou entidades de serviço de outros aplicativos.
 
@@ -26,7 +26,7 @@ Com [appRoleAssignments,](approleassignment.md)as funções de aplicativo podem 
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String collection|Especifica se essa função de aplicativo pode ser atribuída a usuários e grupos (configurando como ), para outro aplicativo (configurando para , ou `["User"]` `["Application"]` ambos (definindo como `["User", "Application"]` ). Funções de aplicativo que suportam a atribuição a entidades de serviço de outros aplicativos também são conhecidas como [permissões de aplicativo.](/graph/auth/auth-concepts#microsoft-graph-permissions) O valor "Aplicativo" só tem suporte para funções de aplicativo definidas em **entidades** de aplicativo.|
+|allowedMemberTypes|Coleção de cadeias de caracteres|Especifica se essa função de aplicativo pode ser atribuída a usuários e grupos (configurando como ), para outro aplicativo (configurando para , ou `["User"]` `["Application"]` ambos (definindo como `["User", "Application"]` ). Funções de aplicativo que suportam a atribuição a entidades de serviço de outros aplicativos também são conhecidas como [permissões de aplicativo.](/graph/auth/auth-concepts#microsoft-graph-permissions) O valor "Aplicativo" só tem suporte para funções de aplicativo definidas em **entidades** de aplicativo.|
 |description|String|A descrição da função do aplicativo. Isso é exibido quando a função de aplicativo está sendo atribuída e, se a função de aplicativo funciona como uma permissão de aplicativo, durante experiências de consentimento.|
 |displayName|String|Nome de exibição da permissão que aparece na atribuição de função de aplicativo e experiências de consentimento.|
 |id|Guid|Identificador de função exclusivo dentro da **coleção appRoles.** Ao criar uma nova função de aplicativo, um novo identificador Guid deve ser fornecido. |

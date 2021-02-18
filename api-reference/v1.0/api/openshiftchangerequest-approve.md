@@ -1,22 +1,22 @@
 ---
 title: 'openShiftChangeRequest: aprovar'
-description: Aprovar uma solicitação de openShiftChangeRequest.
+description: Aprovar uma solicitação openShiftChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 86ee81554c030eb0d4306866af386bba9e45a6cf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b6adfeb7cd69ba90b79aea5c1ec3108c3fd6085
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025666"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292396"
 ---
 # <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest: aprovar
 
 Namespace: microsoft.graph
 
-Aprovar um objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) .
+Aprovar um [objeto openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,18 +24,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -70,7 +70,7 @@ Veja a seguir um exemplo de uma solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve
 Content-type: application/json
 
 {

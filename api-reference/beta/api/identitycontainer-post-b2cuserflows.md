@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0537eaf5baea543ee4cf9dbbd24b8cb80fc4d48d
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 88595851390bdfefb6db3e8246da92940084de92
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844213"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292011"
 ---
 # <a name="create-b2cidentityuserflow"></a>Criar b2cIdentityUserFlow
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -57,10 +57,10 @@ No corpo da solicitação, forneça uma representação JSON de [um b2cIdentityU
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|String|Obrigatório. O nome do fluxo de usuário. O nome será pré-canetado após `B2C_1` a criação.|
-|userFlowType|Cadeia de caracteres|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowType|String|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Flutuação|Obrigatório. A versão do fluxo de usuário.|
 |isLanguageCustomizationEnabled|Booliano|Opcional. Determina se a personalização de idioma está habilitada no fluxo de usuário do Azure AD B2C. A personalização de idioma não está habilitada por padrão para fluxos de usuário do Azure AD B2C.|
-|defaultLanguageTag|Cadeia de caracteres|Opcional.  Especifica o idioma padrão do b2cIdentityUserFlow que é usado quando nenhuma `ui_locale` marca é especificada na solicitação. Esse campo é [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível.|
+|defaultLanguageTag|String|Opcional.  Especifica o idioma padrão do b2cIdentityUserFlow que é usado quando nenhuma `ui_locale` marca é especificada na solicitação. Esse campo é [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível.|
 |identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo do usuário.|
 
 ## <a name="response"></a>Resposta
@@ -313,8 +313,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: create_b2cUserFlow_from_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: create_b2cUserFlow_from_b2cUserFlows_identityProviders/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
     "Error: create_b2cUserFlow_from_b2cuserflows_apiconnectors/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->

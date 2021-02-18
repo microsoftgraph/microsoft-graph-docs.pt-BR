@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a4771862325c211b342e9985d586fbe50c29ba58
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 40eef8348138f974a1a9f6c6d7f5dea180477307
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059310"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292347"
 ---
 # <a name="list-openshiftchangerequests"></a>Listar openShiftChangeRequests
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos [openShiftChangeRequest](../resources/openshiftchangerequest.md) em uma equipe.
+Recupere uma lista de [objetos openShiftChangeRequest](../resources/openshiftchangerequest.md) em uma equipe.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,18 +24,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Schedule. Read. All, Schedule. ReadWrite. All |
+| Aplicativo                            | Schedule.Read.All, Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests
+GET /teams/{id}/schedule/openShiftChangeRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a lista de objetos [openShiftChangeRequest](../resources/openshiftchangerequest.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e a lista de `200 OK` [objetos openShiftChangeRequest](../resources/openshiftchangerequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -67,7 +67,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftsChangeRequests
+GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftChangeRequests
 ```
 
 ### <a name="response"></a>Resposta

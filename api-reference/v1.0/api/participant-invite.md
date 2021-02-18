@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d4702e7257a5c49a8ef1232391dc923589bd2808
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 9a0a6bb439a54703ab952e046ebb71486baaf31c
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177099"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272566"
 ---
 # <a name="participant-invite"></a>participante: invite
 
@@ -22,7 +22,7 @@ Para obter mais informações sobre como lidar com operações, consulte [commso
 
 >**Observação:** Essa API só é suportada para chamadas de grupo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes a serem convidados.|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é de 256 caracteres.|
+|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver sucesso, este método retornará um código de resposta e um header de local com um URI para `200 OK` [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. 
@@ -727,6 +727,8 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-invite"
@@ -752,6 +754,16 @@ Content-Length: 464
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

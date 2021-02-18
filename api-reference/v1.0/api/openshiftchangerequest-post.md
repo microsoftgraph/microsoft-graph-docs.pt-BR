@@ -1,22 +1,22 @@
 ---
 title: Criar openShiftChangeRequest
-description: Criar uma instância de um objeto openShiftChangeRequest.
+description: Crie uma instância de um objeto openShiftChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5da8ba38351e6681447a3ed3dee17caf6c328898
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e861dc2e5da1c175f419fdf47c76a4fac3b877bd
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059289"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292179"
 ---
 # <a name="create-openshiftchangerequest"></a>Criar openShiftChangeRequest
 
 Namespace: microsoft.graph
 
-Criar uma instância de um objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) .
+Crie uma instância de [um objeto openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,18 +24,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests
+POST /teams/{id}/schedule/openShiftChangeRequests
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -46,11 +46,11 @@ POST /teams/{id}/schedule/openShiftsChangeRequests
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um novo objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) .
+No corpo da solicitação, forneça uma representação JSON de um novo [objeto openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) criado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e o objeto `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) criado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -62,7 +62,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShiftsChangeRequests
+POST https://graph.microsoft.com/v1.0/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShiftChangeRequests
 Authorization: Bearer {token}
 Content-type: application/json
 Content-length: 244

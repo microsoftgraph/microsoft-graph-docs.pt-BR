@@ -1,31 +1,31 @@
 ---
 title: Obter atividades recentes do usuário
-description: " API. O serviço consultará o historyItems mais recente e, em seguida, extrairá as atividades relacionadas. As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**. Isso significa que as atividades sem **historyItems** não serão incluídas na resposta. A permissão UserActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar."
+description: " API. O serviço consultará os historyItems mais recentes e, em seguida, puxará essas atividades relacionadas. As atividades serão ordenadas de acordo com o **últimoModified mais** recente no **historyItem**. Isso significa que as atividades **sem historyItems** não serão incluídas na resposta. A permissão UserActivity.ReadWrite.CreatedByApp também aplicará filtragem extra à resposta, para que somente as atividades criadas por seu aplicativo sejam retornadas. Essa filtragem do lado do servidor poderá resultar em páginas vazias se o usuário estiver particularmente ativo e outros aplicativos criarem atividades mais recentes. Para obter as atividades do aplicativo, use a **propriedade nextLink** para paginar."
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 00e0ff641af173d75301d7f9b52586f17c3993bc
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 8a6b72fbe2041faf909dc3a2429d8891c5859261
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458938"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292326"
 ---
 # <a name="get-recent-user-activities"></a>Obter atividades recentes do usuário
 
 Namespace: microsoft.graph
 
-Obter atividades recentes para um determinado usuário. Essa função OData tem alguns comportamentos padrão incluídos para que funcionem como uma API "mais recentemente usada". O serviço consultará o [historyItems](../resources/projectrome-historyitem.md)mais recente e, em seguida, extrairá as atividades relacionadas. As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**. Isso significa que as atividades sem **historyItems** não serão incluídas na resposta. A permissão UserActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
+Obter atividades recentes para um determinado usuário. Essa função OData tem alguns comportamentos padrão incluídos para fazê-la funcionar como uma API "usada mais recentemente". O serviço consultará os [historyItems](../resources/projectrome-historyitem.md)mais recentes e, em seguida, puxará essas atividades relacionadas. As atividades serão ordenadas de acordo com o **últimoModified mais** recente no **historyItem**. Isso significa que as atividades **sem historyItems** não serão incluídas na resposta. A permissão UserActivity.ReadWrite.CreatedByApp também aplicará filtragem extra à resposta, para que somente as atividades criadas por seu aplicativo sejam retornadas. Essa filtragem do lado do servidor poderá resultar em páginas vazias se o usuário estiver particularmente ativo e outros aplicativos criarem atividades mais recentes. Para obter as atividades do aplicativo, use a **propriedade nextLink** para paginar.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegada (conta Microsoft pessoal) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -38,13 +38,13 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
+Esse método dá suporte a alguns [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
 
-- $expand da propriedade de navegação **historyItems** .
-- $top limitar o número máximo de itens nas páginas.
-- $filter na propriedade **lastModifiedDateTime** para **atividades** ou **historyItems**, se expandida.
+- $expand para a **propriedade de navegação historyItems.**
+- $top limitar o número máximo de itens entre páginas.
+- $filter na propriedade **lastModifiedDateTime** para **atividades** ou **historyItems**, se expandido.
 
-Veja a seguir alguns exemplos de consultas suportadas com codificação de URL.
+A seguir estão alguns exemplos de consultas com suporte com codificação de URL.
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -66,7 +66,7 @@ Não especifique um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta com as atividades recentes do usuário para seu aplicativo.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta com as atividades recentes do usuário para seu aplicativo.
 
 ## <a name="example"></a>Exemplo
 
@@ -171,18 +171,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: get_recent_activities/container/contentInfo:
-      Property 'contentInfo' is of type Custom but has no custom members.",
-
-    "Warning: get_recent_activities/container/visualElements/content/$schema:
-      Undocumented property '$schema' [String] was not expected on resource microsoft.graph.Json.",
-
-    "Warning: get_recent_activities/container/visualElements/content/body:
-      Undocumented property 'body' [Collection(Object)] was not expected on resource microsoft.graph.Json.",
-
-    "Warning: get_recent_activities/container/visualElements/content/type:
-      Undocumented property 'type' [String] was not expected on resource microsoft.graph.Json."
-
   ],
   "tocPath": ""
 }-->

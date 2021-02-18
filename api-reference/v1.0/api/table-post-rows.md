@@ -1,22 +1,22 @@
 ---
 title: Criar TableRow
-description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. A adição de uma linha por vez pode levar à degradação de desempenho. A abordagem recomendada seria colocar as linhas em lote em uma única chamada em vez de fazer uma única inserção de linha. Para obter melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma operação de adição de linhas únicas. Experimente o número de linhas para determinar o número ideal de linhas a serem usadas em uma única chamada de API. '
+description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. Adicionar uma linha por vez pode levar à degradação do desempenho. A abordagem recomendada seria reunir as linhas em lote em uma única chamada em vez de fazer a inserção de uma única linha. Para melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma única operação de aplicação de linhas. Experimente o número de linhas para determinar o número ideal de linhas a ser usado em uma única chamada à API. '
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 826ed85f0efdedc8a13a75e2a92a4f4986de88d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69f80f8b0391102d6501d2481c3377d899003e6b
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092080"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292298"
 ---
 # <a name="create-tablerow"></a>Criar TableRow
 
 Namespace: microsoft.graph
 
-Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. A adição de uma linha por vez pode levar à degradação de desempenho. A abordagem recomendada seria colocar as linhas em lote em uma única chamada em vez de fazer uma única inserção de linha. Para obter melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma operação de adição de linhas únicas. Experimente o número de linhas para determinar o número ideal de linhas a serem usadas em uma única chamada de API. 
+Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. Adicionar uma linha por vez pode levar à degradação do desempenho. A abordagem recomendada seria reunir as linhas em lote em uma única chamada em vez de fazer a inserção de uma única linha. Para melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma única operação de aplicação de linhas. Experimente o número de linhas para determinar o número ideal de linhas a ser usado em uma única chamada à API. 
 
 ## <a name="error-handling"></a>Tratamento de erros
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |index|number|Opcional. Especifica a posição relativa da nova linha. Se for nulo, a adição ocorre no final. Todas as linhas abaixo da linha inserida serão deslocadas para baixo. Indexado com zero.|
-|values|Json|Uma matriz bidimensional de valores não formatados das linhas da tabela (Boolean ou String ou número).|
+|values|Json|Uma matriz bidimensional de valores não formatados das linhas da tabela (booliana, cadeia de caracteres ou número).|
 
 ## <a name="response"></a>Resposta
 
@@ -115,10 +115,6 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:
-      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
-    "Warning: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:
-      Inconsistent types between parameter (Collection) and table (None)"
   ],
   "tocPath": ""
 }-->

@@ -1,24 +1,24 @@
 ---
-title: 'openShiftChangeRequest: recusar'
-description: Recusar uma solicitação de openshift.
+title: 'openShiftChangeRequest: decline'
+description: Recusar uma solicitação openshift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 60135908638b6cb3e956ca864e4b0a53da352489
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 766faedd7fb46fb3cd6cf8434c2987e26a0ba96b
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019898"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292438"
 ---
-# <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest: recusar
+# <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest: decline
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recusar um objeto [openshiftchangerequest](../resources/openshiftchangerequest.md) .
+Recusar um [objeto openshiftchangerequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
+POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/decline
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -69,7 +69,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/decline
 Content-type: application/json
 
 {

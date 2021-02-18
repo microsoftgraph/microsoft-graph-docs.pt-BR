@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
 doc_type: apiPageType
-ms.openlocfilehash: 0e4a048f9c2c1db4aabc41a9e11171b759961803
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4a70e038838366b656a4d38d4d118f255794660e
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239902"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292186"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -89,7 +89,7 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já estiver sen
 
 ## <a name="parameters"></a>Parâmetros
 
-| Parâmetro	            | Tipo                          | Descrição
+| Parâmetro            | Tipo                          | Descrição
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Dados sobre o arquivo sendo carregado
 | deferCommit          | Booliano                       | Se definido como verdadeiro, a criação final do arquivo no destino exigirá uma solicitação explícita. Somente no OneDrive for Business.
@@ -413,8 +413,6 @@ Confira o tópico [Respostas de Erro][error-response] para saber detalhes sobre 
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
-    "Warning: /api-reference/v1.0/api/driveitem-createuploadsession.md:
-      Found potential enums in resource example that weren't defined in a table:(rename,fail,replace) are in resource, but () are in table"
   ],
   "section": "documentation"
 } -->

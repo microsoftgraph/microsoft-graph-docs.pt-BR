@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c33849920a06154f0c2a0ac781dcd5cdf64fa51f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 52d4e2a262d3a90010cc0e254e11f2d723a5e550
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133508"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292690"
 ---
 # <a name="accessreviewdecision-resource-type"></a>Tipo de recurso accessReviewDecision
 
@@ -18,12 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
 No recurso de revisões de acesso do Azure [AD,](accessreviews-root.md) ele representa uma decisão de revisão de acesso do `accessReviewDecision` Azure AD do acesso de uma entidade específica.  Em uma revisão de acesso ou em uma instância de uma revisão de acesso recorrente, há um `accessReviewDecision` por usuário revisado.  Por exemplo, se um grupo tiver dois convidados e um não convidado como membros e uma revisão de acesso dos convidados for executada para esse grupo, haverá dois objetos de decisão de revisão de acesso.  Se um revisador alterar sua decisão ou outro revisá-los, a `accessReviewDecision` atualização será atualizada.
 
 
 ## <a name="methods"></a>Métodos
 
-Nenhum.  Objetos desse tipo são criados automaticamente pelo recurso quando uma revisão de acesso é inicializada e não podem ser excluídos.  Eles podem ser recuperados de uma revisão de acesso usando [as decisões](../api/accessreview-listdecisions.md) e as relações de [mydecisions.](../api/accessreview-listmydecisions.md)
+Nenhum.  Os objetos desse tipo são criados automaticamente pelo recurso quando uma revisão de acesso é inicializada e não podem ser excluídos.  Eles podem ser recuperados de uma revisão de acesso usando [as decisões](../api/accessreview-listdecisions.md) e as relações de [mydecisions.](../api/accessreview-listmydecisions.md)
 
 ## <a name="properties"></a>Propriedades
 
@@ -55,7 +57,7 @@ Além disso, propriedades adicionais podem estar presentes dependendo do tipo de
 
 ## <a name="relationships"></a>Relações
 
-Nenhum  Objetos desse tipo podem ser recuperados de [](../api/accessreview-listdecisions.md) uma revisão de acesso usando as decisões e as relações [mydecisions](../api/accessreview-listmydecisions.md) do [objeto accessReview](accessreview.md) .
+Nenhum  Objetos desse tipo podem ser recuperados de [](../api/accessreview-listdecisions.md) uma revisão de acesso usando as decisões e as relações de [mydecisions](../api/accessreview-listmydecisions.md) do [objeto accessReview](accessreview.md) .
 
 ## <a name="see-also"></a>Confira também
 

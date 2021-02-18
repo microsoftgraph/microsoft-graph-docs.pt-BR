@@ -1,16 +1,16 @@
 ---
 title: Criar educationalActivity
-description: Criar um novo educationalActivity.
+description: Crie uma nova educationalActivity.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 39805d864a81289fc74391db17f765b40299e3df
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 43bd9ca20cf7fb151b92108b16a021aa65a1cd03
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972938"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292088"
 ---
 # <a name="create-educationalactivity"></a>Criar educationalActivity
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [educationalActivity](../resources/educationalactivity.md) no [perfil](../resources/profile.md)de um usuário.
+Crie uma nova [educationalActivity](../resources/educationalactivity.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /user/profile/educationalActivities
+POST /me/profile/educationalActivities
 POST /users/{id | userPrincipalName}/profile/educationalActivities
 ```
 
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [educationalActivity](../resources/educationalactivity.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto educationalActivity.](../resources/educationalactivity.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo objeto [educationalActivity](../resources/educationalactivity.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis definir ao criar um novo objeto [educationalActivity](../resources/educationalactivity.md) no perfil de um [usuário.](../resources/profile.md)
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|completionMonthYear|Data|O mês e o ano em que o usuário formou ou concluiu a atividade. |
+|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|completionMonthYear|Data|O mês e o ano em que o usuário concluiu ou concluiu a atividade. |
 |endMonthYear|Data|O mês e o ano em que o usuário concluiu a atividade educacional referenciada.|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|instituição|[institutionData](../resources/institutiondata.md)|Contém detalhes da instituição estudada em. |
-|programa|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contém informações estendidas sobre o programa ou o curso.|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|startMonthYear|Data|O mês e o ano em que o usuário tiver iniciado a atividade referenciada.|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pela criação ou modificação do aplicativo. Herdado de [itemFacet](../resources/itemfacet.md).|
+|institution|[institutionData](../resources/institutiondata.md)|Contém detalhes da instituição de ensino. |
+|programa|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contém informações estendidas sobre o programa ou curso.|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado de [itemFacet](../resources/itemfacet.md).|
+|startMonthYear|Data|O mês e o ano em que o usuário iniciou a atividade referenciada.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [educationalActivity](../resources/educationalactivity.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um novo objeto `201 Created` [educationalActivity](../resources/educationalactivity.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

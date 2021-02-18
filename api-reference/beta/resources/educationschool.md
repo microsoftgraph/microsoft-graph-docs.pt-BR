@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationSchool
-description: 'Uma escola. O recurso **educationSchool** atualmente corresponde a um recurso administrativeUnit e compartilha a mesma ID.  '
+description: 'Uma escola. O **recurso educationSchool** atualmente corresponde a um recurso administrativeUnit e compartilha a mesma ID.  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f18b5d9906063a542ee76e7d69f66d01a5178f18
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8481ad876cd5c4c9a2f1bc8ca67297c647475ba
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049727"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292634"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma escola. O recurso **educationSchool** atualmente corresponde a um recurso [administrativeUnit](administrativeunit.md) e compartilha a mesma ID.
+Uma escola. O **recurso educationSchool** atualmente corresponde a um [recurso administrativeUnit](administrativeunit.md) e compartilha a mesma ID.
 
 Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 
@@ -33,24 +33,24 @@ Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 | [Adicionar usuário](../api/educationschool-post-users.md)                           | [educationUser](educationuser.md)                | Adicione um novo **educationUser** para a escola postando na propriedade de navegação de **usuários**. |
 | [Listar usuários](../api/educationschool-list-users.md)                         | Coleção [educationUser](educationuser.md)     | Obtenha a coleção de objetos **educationUser**.                                                |
 | [Remover usuário](../api/educationschool-delete-users.md)                      | [educationUser](educationuser.md)                | Remova um **educationUser** da escola por meio da propriedade de navegação **users**.      |
-| [Obter administrativeUnit](../api/educationschool-get-administrativeunit.md) | [administrativeUnit](administrativeunit.md)      | Obtenha o **administrativeUnit** que corresponde a esse **educationSchool**.                |
+| [Obter administrativeUnit](../api/educationschool-get-administrativeunit.md) | [administrativeUnit](administrativeunit.md)      | Get the **administrativeUnit** that corresponds to this **educationSchool**.                |
 | [Atualizar](../api/educationschool-update.md)                                 | [educationSchool](educationschool.md)            | Atualize um objeto **educationSchool**.                                                       |
-| [Excluir](../api/educationschool-delete.md)                                 | Nenhum(a)                                             | Exclua um objeto **educationSchool**.                                                       |
-| [Delta](../api/educationschool-delta.md)                                   | Coleção [educationSchool](educationschool.md) | Obter alterações incrementais para o **educationSchools**                                            |
+| [Delete](../api/educationschool-delete.md)                                 | Nenhum                                             | Exclua um objeto **educationSchool**.                                                       |
+| [Delta](../api/educationschool-delta.md)                                   | Coleção [educationSchool](educationschool.md) | Obter alterações incrementais **para educationSchools**                                            |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade             | Tipo                                  | Descrição                                                                                                                                                          |
 | :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                   | Cadeia de caracteres                                | GUID desta escola.                                                                                                                                                 |
+| id                   | String                                | GUID desta escola.                                                                                                                                                 |
 | address              | [physicalAddress](physicaladdress.md) | Endereço da escola.                                                                                                                                               |
 | createdBy            | [identitySet](identityset.md)         | Entidade que criou a escola.                                                                                                                                       |
 | description          | String                                | Descrição da escola.                                                                                                                                           |
-| displayName          | Cadeia de caracteres                                | Nome de exibição da escola.                                                                                                                                          |
+| displayName          | String                                | Nome de exibição da escola.                                                                                                                                          |
 | externalId           | Cadeia de caracteres                                | ID da escola no sistema de sincronização.                                                                                                                                      |
 | externalPrincipalId  | Cadeia de caracteres                                | ID da entidade de segurança no sistema de sincronização.                                                                                                                                   |
-| externalSource       | Cadeia de caracteres                                | O tipo de fonte externa de que este recurso foi gerado (determinado automaticamente de `externalSourceDetail` ). Os valores possíveis são: `sis` , `lms` , ou `manual` . |
-| externalSourceDetail | Cadeia de caracteres                                | O nome da fonte externa da qual esses recursos foram gerados.                                                                                                   |
+| externalSource       | String                                | O tipo de fonte externa a partir da qual esse recurso foi gerado (determinado automaticamente a partir de `externalSourceDetail` ). Os valores possíveis são: `sis`, `lms` ou `manual`. |
+| externalSourceDetail | String                                | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                   |
 | highestGrade         | Cadeia de caracteres                                | Ensino de nível mais alto.                                                                                                                                                |
 | lowestGrade          | Cadeia de caracteres                                | Ensino de nível mais baixo.                                                                                                                                                 |
 | phone                | Cadeia de caracteres                                | Número de telefone da escola.                                                                                                                                              |
@@ -106,7 +106,6 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!"
   ]
 }-->
 

@@ -1,16 +1,16 @@
 ---
 title: Excluir userAccountInformation
-description: Excluir um objeto userAccountInformation.
+description: Exclua um objeto userAccountInformation.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b7df1498260be758fd7c945fe013b09d09e1aed0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30e9a3e098a26e4e490a5f1c1799eca2124edd73
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050294"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50291951"
 ---
 # <a name="delete-useraccountinformation"></a>Excluir userAccountInformation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [userAccountInformation](../resources/useraccountinformation.md) do [perfil](../resources/profile.md)de um usuário.
+[Exclua um objeto userAccountInformation](../resources/useraccountinformation.md) do perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,8 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/profile/accounts/{id}
-DELETE /users/{id | userPrincipalName}/profile/accounts/{id}
+DELETE /me/profile/account/{id}
+DELETE /users/{id | userPrincipalName}/profile/account/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -64,7 +64,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/profile/accounts/{id}
+DELETE https://graph.microsoft.com/beta/me/profile/account/{id}
 ```
 
 ### <a name="response"></a>Resposta
