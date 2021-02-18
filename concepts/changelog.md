@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d02bf283696460123420ee4d9270a1e7bd331f97
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 9653153d8dc7dd2ae9c13f027191c9cfe7da620c
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239238"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292837"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -88,6 +88,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
 | Adição | beta | Adicionadas novas [Permissões delegadas](./permissions-reference.md#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li><li>PrintConnector.Read.All</li><li>PrintConnector.ReadWrite.All</li><li>PrintSettings.Read.All</li><li>PrintSettings.ReadWrite.All</li><li>Reports.Read.All</li></ul> |
+|Adição|beta|Adicionada a propriedade **inputBin** ao recurso [printerDefaults](/graph/api/resources/printerDefaults?view=graph-rest-beta)|
 
 ### <a name="tasks-and-plans"></a>Tarefas e planos
 
