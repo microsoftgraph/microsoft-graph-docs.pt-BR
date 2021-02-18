@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 208d3e8f8c73c8de98a34aadbd616dc9f268925c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9a39881a7675598d12de79f2738a1e14d1c759b3
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136637"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292913"
 ---
 # <a name="accessreviewrecurrencesettings-resource-type"></a>Tipo de recurso accessReviewRecurrenceSettings
 
@@ -18,14 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
 O tipo de recurso **accessReviewRecurrenceSettings** é usado no recurso [accessReviewSettings](accessreviewsettings.md) e especifica que a revisão de acesso recorre a intervalos regulares.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 | :------- | :--- | :---------- |
-| recurrenceType | String | O intervalo de recorrência. Vaules possíveis: `onetime` `weekly` , , ou `monthly` `quarterly` `halfyearly` `annual` .                                                                   |
-| recurrenceEndType | String | Como termina a recorrência. Valores possíveis: `never` `endBy` , , ou `occurrences` `recurrenceCount` . Se `never` for, não haverá fim explícito da série de recorrência. Se `endBy` for, a recorrência terminará em uma determinada data. Se `occurrences` for, a série terminará `recurrenceCount` após a conclusão das instâncias da revisão. |
+| recurrenceType | String | O intervalo de recorrência. Vaules possíveis: `onetime` , , , ou `weekly` `monthly` `quarterly` `halfyearly` `annual` .                                                                   |
+| recurrenceEndType | String | Como a recorrência termina. Valores possíveis: `never` `endBy` , , ou `occurrences` `recurrenceCount` . Se `never` for, não haverá fim explícito da série de recorrência. Se `endBy` for, a recorrência terminará em uma determinada data. Se `occurrences` for, a série terminará `recurrenceCount` após a conclusão das instâncias da revisão. |
 | durationInDays | Int32 | A duração em dias para recorrência. |
 | recurrenceCount | Int32 | A contagem de recorrências, se o valor de **recurrenceEndType** for , ou 0 caso `occurrences` contrário. |
 

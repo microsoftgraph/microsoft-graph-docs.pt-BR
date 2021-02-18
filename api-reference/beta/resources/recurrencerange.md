@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: harini84
-ms.openlocfilehash: 472518b6fdc250cfc2fe2c4223d1854eae9b9124
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5f09f430ddb23bbd58ab6f98e5d42c560ca11ef4
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136547"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292886"
 ---
 # <a name="recurrencerange-resource-type"></a>Tipo de recurso recurrenceRange
 
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Warning: /api-reference/beta/resources/recurrencerange.md:\r\n      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |"
   ]
 }
 -->

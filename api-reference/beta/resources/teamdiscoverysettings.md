@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso teamDiscoverySettings
+title: Tipo de recurso teamDiscoverySettings
 description: Configurações de capacidade de descoberta da equipe por outras pessoas.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f26c47b2e1863c3108bc23f7c388179bd8006156
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edc3c6cc446e35f2f5a97212d3c0b6f69b81ce30
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046656"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292880"
 ---
-# <a name="teamdiscoverysettings-resource-type"></a>tipo de recurso teamDiscoverySettings
+# <a name="teamdiscoverysettings-resource-type"></a>Tipo de recurso teamDiscoverySettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fornece configurações para permitir que outras pessoas configurem a descoberta da [equipe](team.md) . Você só pode modificar as configurações de descoberta para equipes privadas.
+Fornece configurações para permitir que outras pessoas configurem a [capacidade de descoberta](team.md) da equipe. Você só pode modificar as configurações de descoberta para equipes privadas.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|showInTeamsSearchAndSuggestions|Booliano|Se for definido como true, a equipe ficará visível via pesquisa e sugestões do cliente do teams.|
+|showInTeamsSearchAndSuggestions|Booliano|Se definido como verdadeiro, a equipe é visível por meio de pesquisa e sugestões do cliente do Teams.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/teamdiscoverysettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }-->
 
