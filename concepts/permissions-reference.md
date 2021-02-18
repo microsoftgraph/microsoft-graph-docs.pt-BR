@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8fe86fd58ed708cd56ca8834df139b91552898fc
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1a53fb8b996a3bb432e57791db273104de657f65
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239713"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272272"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1226,7 +1226,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1741,7 +1741,7 @@ As permissões de segurança só são válidas para contas corporativas ou de es
 | _Sites.ReadWrite.All_   | Ler e gravar itens em todos os conjuntos de sites | Permite ao aplicativo criar, ler, atualizar e excluir documentos e listar itens em todos os conjuntos de sites sem um usuário conectado. | Sim |
 | _Sites.Manage.All_      | Criar, editar e excluir itens e listas em todos os conjuntos de sites | Permite ao aplicativo gerenciar e criar listas, documentos e listar itens em todos os conjuntos de sites sem um usuário conectado.  | Sim  |
 | _Sites.FullControl.All_ | Ter controle total de todos os conjuntos de sites | Permite ao aplicativo ter controle total nos sites do SharePoint em todos os conjuntos de sites sem um usuário conectado.  | Sim  |
-| _Sites.Selecionados_ | Acessar conjuntos de sites selecionados (visualização) | _Essa permissão se trata de um recurso futuro que ainda não foi lançado. Não use._ | Sim  |
+| _Sites.Selecionados_ | Acessar conjuntos de sites selecionados (visualização) | Permitir que o aplicativo acesse um subconjunto de conjuntos de sites sem um usuário conectado.  Os conjuntos de sites específicos e as permissões concedidas serão configurados no SharePoint Online. | Sim  |
 
 
 ### <a name="remarks"></a>Comentários
