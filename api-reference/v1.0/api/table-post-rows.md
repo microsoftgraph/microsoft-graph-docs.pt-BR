@@ -1,68 +1,68 @@
 ---
 title: Criar TableRow
-description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. A adição de uma linha por vez pode levar à degradação de desempenho. A abordagem recomendada seria colocar as linhas em lote em uma única chamada em vez de fazer uma única inserção de linha. Para obter melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma operação de adição de linhas únicas. Experimente o número de linhas para determinar o número ideal de linhas a serem usadas em uma única chamada de API. '
+description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. Adicionar uma linha por vez pode levar à degradação do desempenho. A abordagem recomendada seria reunir as linhas em lote em uma única chamada em vez de fazer a inserção de uma única linha. Para melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma única operação de aplicação de linhas. Experimente o número de linhas para determinar o número ideal de linhas a ser usado em uma única chamada à API. '
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 826ed85f0efdedc8a13a75e2a92a4f4986de88d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69f80f8b0391102d6501d2481c3377d899003e6b
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092080"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292298"
 ---
-# <a name="create-tablerow"></a><span data-ttu-id="384a6-108">Criar TableRow</span><span class="sxs-lookup"><span data-stu-id="384a6-108">Create TableRow</span></span>
+# <a name="create-tablerow"></a><span data-ttu-id="00db9-108">Criar TableRow</span><span class="sxs-lookup"><span data-stu-id="00db9-108">Create TableRow</span></span>
 
-<span data-ttu-id="384a6-109">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="384a6-109">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="00db9-109">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="00db9-109">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="384a6-110">Adiciona linhas ao final da tabela.</span><span class="sxs-lookup"><span data-stu-id="384a6-110">Adds rows to the end of the table.</span></span> <span data-ttu-id="384a6-111">Observe que a API pode aceitar vários dados de linhas usando essa API.</span><span class="sxs-lookup"><span data-stu-id="384a6-111">Note that the API can accept multiple rows data using this API.</span></span> <span data-ttu-id="384a6-112">A adição de uma linha por vez pode levar à degradação de desempenho.</span><span class="sxs-lookup"><span data-stu-id="384a6-112">Adding one row at a time could lead to performance degradation.</span></span> <span data-ttu-id="384a6-113">A abordagem recomendada seria colocar as linhas em lote em uma única chamada em vez de fazer uma única inserção de linha.</span><span class="sxs-lookup"><span data-stu-id="384a6-113">The recommended approach would be to batch the rows together in a single call rather than doing single row insertion.</span></span> <span data-ttu-id="384a6-114">Para obter melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma operação de adição de linhas únicas.</span><span class="sxs-lookup"><span data-stu-id="384a6-114">For best results, collect the rows to be inserted on the application side and perform single rows add operation.</span></span> <span data-ttu-id="384a6-115">Experimente o número de linhas para determinar o número ideal de linhas a serem usadas em uma única chamada de API.</span><span class="sxs-lookup"><span data-stu-id="384a6-115">Experiment with the number of rows to determine the ideal number of rows to use in single API call.</span></span> 
+<span data-ttu-id="00db9-110">Adiciona linhas ao final da tabela.</span><span class="sxs-lookup"><span data-stu-id="00db9-110">Adds rows to the end of the table.</span></span> <span data-ttu-id="00db9-111">Observe que a API pode aceitar vários dados de linhas usando essa API.</span><span class="sxs-lookup"><span data-stu-id="00db9-111">Note that the API can accept multiple rows data using this API.</span></span> <span data-ttu-id="00db9-112">Adicionar uma linha por vez pode levar à degradação do desempenho.</span><span class="sxs-lookup"><span data-stu-id="00db9-112">Adding one row at a time could lead to performance degradation.</span></span> <span data-ttu-id="00db9-113">A abordagem recomendada seria reunir as linhas em lote em uma única chamada em vez de fazer a inserção de uma única linha.</span><span class="sxs-lookup"><span data-stu-id="00db9-113">The recommended approach would be to batch the rows together in a single call rather than doing single row insertion.</span></span> <span data-ttu-id="00db9-114">Para melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma única operação de aplicação de linhas.</span><span class="sxs-lookup"><span data-stu-id="00db9-114">For best results, collect the rows to be inserted on the application side and perform single rows add operation.</span></span> <span data-ttu-id="00db9-115">Experimente o número de linhas para determinar o número ideal de linhas a ser usado em uma única chamada à API.</span><span class="sxs-lookup"><span data-stu-id="00db9-115">Experiment with the number of rows to determine the ideal number of rows to use in single API call.</span></span> 
 
-## <a name="error-handling"></a><span data-ttu-id="384a6-116">Tratamento de erros</span><span class="sxs-lookup"><span data-stu-id="384a6-116">Error Handling</span></span>
+## <a name="error-handling"></a><span data-ttu-id="00db9-116">Tratamento de erros</span><span class="sxs-lookup"><span data-stu-id="00db9-116">Error Handling</span></span>
 
-<span data-ttu-id="384a6-117">Essa solicitação poderá, ocasionalmente, receber uma mensagem de erro HTTP 504.</span><span class="sxs-lookup"><span data-stu-id="384a6-117">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="384a6-118">A resposta apropriada para esta mensagem de erro é repetir a solicitação.</span><span class="sxs-lookup"><span data-stu-id="384a6-118">The appropriate response to this error is to repeat the request.</span></span>
+<span data-ttu-id="00db9-117">Essa solicitação poderá, ocasionalmente, receber uma mensagem de erro HTTP 504.</span><span class="sxs-lookup"><span data-stu-id="00db9-117">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="00db9-118">A resposta apropriada para esta mensagem de erro é repetir a solicitação.</span><span class="sxs-lookup"><span data-stu-id="00db9-118">The appropriate response to this error is to repeat the request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="384a6-119">Permissões</span><span class="sxs-lookup"><span data-stu-id="384a6-119">Permissions</span></span>
-<span data-ttu-id="384a6-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="384a6-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="00db9-119">Permissões</span><span class="sxs-lookup"><span data-stu-id="00db9-119">Permissions</span></span>
+<span data-ttu-id="00db9-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="00db9-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="384a6-122">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="384a6-122">Permission type</span></span>      | <span data-ttu-id="384a6-123">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="384a6-123">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="00db9-122">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="00db9-122">Permission type</span></span>      | <span data-ttu-id="00db9-123">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="00db9-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="384a6-124">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="384a6-124">Delegated (work or school account)</span></span> | <span data-ttu-id="384a6-125">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="384a6-125">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="384a6-126">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="384a6-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="384a6-127">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="384a6-127">Not supported.</span></span>    |
-|<span data-ttu-id="384a6-128">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="384a6-128">Application</span></span> | <span data-ttu-id="384a6-129">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="384a6-129">Not supported.</span></span> |
+|<span data-ttu-id="00db9-124">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="00db9-124">Delegated (work or school account)</span></span> | <span data-ttu-id="00db9-125">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="00db9-125">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="00db9-126">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="00db9-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="00db9-127">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="00db9-127">Not supported.</span></span>    |
+|<span data-ttu-id="00db9-128">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="00db9-128">Application</span></span> | <span data-ttu-id="00db9-129">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="00db9-129">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="384a6-130">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="384a6-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="00db9-130">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="00db9-130">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/rows/add
 POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="384a6-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="384a6-131">Request headers</span></span>
-| <span data-ttu-id="384a6-132">Nome</span><span class="sxs-lookup"><span data-stu-id="384a6-132">Name</span></span>       | <span data-ttu-id="384a6-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="384a6-133">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="00db9-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="00db9-131">Request headers</span></span>
+| <span data-ttu-id="00db9-132">Nome</span><span class="sxs-lookup"><span data-stu-id="00db9-132">Name</span></span>       | <span data-ttu-id="00db9-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="00db9-133">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="384a6-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="384a6-134">Authorization</span></span>  | <span data-ttu-id="384a6-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="384a6-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="384a6-137">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="384a6-137">Workbook-Session-Id</span></span>  | <span data-ttu-id="384a6-p106">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="384a6-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="00db9-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="00db9-134">Authorization</span></span>  | <span data-ttu-id="00db9-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="00db9-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="00db9-137">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="00db9-137">Workbook-Session-Id</span></span>  | <span data-ttu-id="00db9-p106">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="00db9-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="384a6-140">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="384a6-140">Request body</span></span>
-<span data-ttu-id="384a6-141">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="384a6-141">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="00db9-140">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="00db9-140">Request body</span></span>
+<span data-ttu-id="00db9-141">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="00db9-141">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="384a6-142">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="384a6-142">Parameter</span></span>    | <span data-ttu-id="384a6-143">Tipo</span><span class="sxs-lookup"><span data-stu-id="384a6-143">Type</span></span>   |<span data-ttu-id="384a6-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="384a6-144">Description</span></span>|
+| <span data-ttu-id="00db9-142">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="00db9-142">Parameter</span></span>    | <span data-ttu-id="00db9-143">Tipo</span><span class="sxs-lookup"><span data-stu-id="00db9-143">Type</span></span>   |<span data-ttu-id="00db9-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="00db9-144">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="384a6-145">index</span><span class="sxs-lookup"><span data-stu-id="384a6-145">index</span></span>|<span data-ttu-id="384a6-146">number</span><span class="sxs-lookup"><span data-stu-id="384a6-146">number</span></span>|<span data-ttu-id="384a6-p107">Opcional. Especifica a posição relativa da nova linha. Se for nulo, a adição ocorre no final. Todas as linhas abaixo da linha inserida serão deslocadas para baixo. Indexado com zero.</span><span class="sxs-lookup"><span data-stu-id="384a6-p107">Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.</span></span>|
-|<span data-ttu-id="384a6-152">values</span><span class="sxs-lookup"><span data-stu-id="384a6-152">values</span></span>|<span data-ttu-id="384a6-153">Json</span><span class="sxs-lookup"><span data-stu-id="384a6-153">Json</span></span>|<span data-ttu-id="384a6-154">Uma matriz bidimensional de valores não formatados das linhas da tabela (Boolean ou String ou número).</span><span class="sxs-lookup"><span data-stu-id="384a6-154">A 2-dimensional array of unformatted values of the table rows (boolean or string or number).</span></span>|
+|<span data-ttu-id="00db9-145">index</span><span class="sxs-lookup"><span data-stu-id="00db9-145">index</span></span>|<span data-ttu-id="00db9-146">number</span><span class="sxs-lookup"><span data-stu-id="00db9-146">number</span></span>|<span data-ttu-id="00db9-p107">Opcional. Especifica a posição relativa da nova linha. Se for nulo, a adição ocorre no final. Todas as linhas abaixo da linha inserida serão deslocadas para baixo. Indexado com zero.</span><span class="sxs-lookup"><span data-stu-id="00db9-p107">Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.</span></span>|
+|<span data-ttu-id="00db9-152">values</span><span class="sxs-lookup"><span data-stu-id="00db9-152">values</span></span>|<span data-ttu-id="00db9-153">Json</span><span class="sxs-lookup"><span data-stu-id="00db9-153">Json</span></span>|<span data-ttu-id="00db9-154">Uma matriz bidimensional de valores não formatados das linhas da tabela (booliana, cadeia de caracteres ou número).</span><span class="sxs-lookup"><span data-stu-id="00db9-154">A 2-dimensional array of unformatted values of the table rows (boolean or string or number).</span></span>|
 
-## <a name="response"></a><span data-ttu-id="384a6-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="384a6-155">Response</span></span>
+## <a name="response"></a><span data-ttu-id="00db9-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="00db9-155">Response</span></span>
 
-<span data-ttu-id="384a6-156">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [TableRow](../resources/tablerow.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="384a6-156">If successful, this method returns `200 OK` response code and [TableRow](../resources/tablerow.md) object in the response body.</span></span>
+<span data-ttu-id="00db9-156">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [TableRow](../resources/tablerow.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="00db9-156">If successful, this method returns `200 OK` response code and [TableRow](../resources/tablerow.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="384a6-157">Exemplo</span><span class="sxs-lookup"><span data-stu-id="384a6-157">Example</span></span>
-<span data-ttu-id="384a6-158">Neste exemplo, duas linhas de dados são inseridas no final da tabela.</span><span class="sxs-lookup"><span data-stu-id="384a6-158">In this example two rows of data are inserted at the end of the table.</span></span> 
+## <a name="example"></a><span data-ttu-id="00db9-157">Exemplo</span><span class="sxs-lookup"><span data-stu-id="00db9-157">Example</span></span>
+<span data-ttu-id="00db9-158">Neste exemplo, duas linhas de dados são inseridas no final da tabela.</span><span class="sxs-lookup"><span data-stu-id="00db9-158">In this example two rows of data are inserted at the end of the table.</span></span> 
 
-##### <a name="request"></a><span data-ttu-id="384a6-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="384a6-159">Request</span></span>
-<span data-ttu-id="384a6-160">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="384a6-160">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="00db9-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="00db9-159">Request</span></span>
+<span data-ttu-id="00db9-160">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="00db9-160">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="384a6-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="384a6-161">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="00db9-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="00db9-161">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tablerowcollection_add"
@@ -79,18 +79,18 @@ Content-length: 51
   ]
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="384a6-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="384a6-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="00db9-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="00db9-162">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="384a6-163">C#</span><span class="sxs-lookup"><span data-stu-id="384a6-163">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="00db9-163">C#</span><span class="sxs-lookup"><span data-stu-id="00db9-163">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablerowcollection-add-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="384a6-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="384a6-164">Response</span></span>
-<span data-ttu-id="384a6-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="384a6-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="00db9-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="00db9-164">Response</span></span>
+<span data-ttu-id="00db9-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="00db9-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,10 +115,6 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:
-      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
-    "Warning: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:
-      Inconsistent types between parameter (Collection) and table (None)"
   ],
   "tocPath": ""
 }-->

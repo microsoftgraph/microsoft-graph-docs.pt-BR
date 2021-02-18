@@ -5,114 +5,119 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6c607a0c46d021de0e72d64601a6f01e6f0ef604
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 13a03b462626464fd5b8ea933f7f7bc67f815a67
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910876"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292515"
 ---
-# <a name="get-onlinemeeting"></a><span data-ttu-id="e603d-103">Obter onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="e603d-103">Get onlineMeeting</span></span>
+# <a name="get-onlinemeeting"></a><span data-ttu-id="2d59e-103">Obter onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="2d59e-103">Get onlineMeeting</span></span>
 
-<span data-ttu-id="e603d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e603d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2d59e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2d59e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e603d-105">Recupere as propriedades e os relacionamentos de um [objeto onlineMeeting.](../resources/onlinemeeting.md)</span><span class="sxs-lookup"><span data-stu-id="e603d-105">Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+<span data-ttu-id="2d59e-105">Recupere as propriedades e os relacionamentos de um [objeto onlineMeeting.](../resources/onlinemeeting.md)</span><span class="sxs-lookup"><span data-stu-id="2d59e-105">Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-<span data-ttu-id="e603d-106">Por exemplo, você pode:</span><span class="sxs-lookup"><span data-stu-id="e603d-106">For example, you can:</span></span>
-- <span data-ttu-id="e603d-107">Obter detalhes de uma onlineMeeting usando [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [id](#example-2-retrieve-an-online-meeting-by-meeting-id)da reunião ou [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).</span><span class="sxs-lookup"><span data-stu-id="e603d-107">Get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).</span></span>
-- <span data-ttu-id="e603d-108">Use o caminho para obter um relatório de participante de um evento `/attendeeReport` ao vivo, conforme mostrado no [exemplo 4](#example-4-retrieve-the-attendee-report-of-a-live-event).</span><span class="sxs-lookup"><span data-stu-id="e603d-108">Use the `/attendeeReport` path to get an attendee report of a live event, as shown in [example 4](#example-4-retrieve-the-attendee-report-of-a-live-event).</span></span>
-- <span data-ttu-id="e603d-109">Use o e os caminhos para obter as gravações de um evento ao `/recording` `/alternativeRecording` vivo, conforme mostrado no [exemplo 5](#example-5-retrieve-the-recording-of-a-live-event).</span><span class="sxs-lookup"><span data-stu-id="e603d-109">Use the `/recording` and `/alternativeRecording` paths to get the recordings of a live event, as shown in [example 5](#example-5-retrieve-the-recording-of-a-live-event).</span></span>
+<span data-ttu-id="2d59e-106">Por exemplo, você pode:</span><span class="sxs-lookup"><span data-stu-id="2d59e-106">For example, you can:</span></span>
+- <span data-ttu-id="2d59e-107">Obter detalhes de uma onlineMeeting usando [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [id](#example-2-retrieve-an-online-meeting-by-meeting-id)da reunião ou [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).</span><span class="sxs-lookup"><span data-stu-id="2d59e-107">Get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).</span></span>
+- <span data-ttu-id="2d59e-108">Use o caminho para obter um relatório de participante de um evento `/attendeeReport` ao vivo, conforme mostrado no [exemplo 4](#example-4-retrieve-the-attendee-report-of-a-live-event).</span><span class="sxs-lookup"><span data-stu-id="2d59e-108">Use the `/attendeeReport` path to get an attendee report of a live event, as shown in [example 4](#example-4-retrieve-the-attendee-report-of-a-live-event).</span></span>
+- <span data-ttu-id="2d59e-109">Use o e os caminhos para obter as gravações de um evento ao `/recording` `/alternativeRecording` vivo, conforme mostrado no [exemplo 5](#example-5-retrieve-the-recording-of-a-live-event).</span><span class="sxs-lookup"><span data-stu-id="2d59e-109">Use the `/recording` and `/alternativeRecording` paths to get the recordings of a live event, as shown in [example 5](#example-5-retrieve-the-recording-of-a-live-event).</span></span>
 
-><span data-ttu-id="e603d-110">**Observações:**</span><span class="sxs-lookup"><span data-stu-id="e603d-110">**Notes:**</span></span> 
->- <span data-ttu-id="e603d-111">Atualmente, os relatórios e gravações dos participantes estão disponíveis apenas para eventos ao vivo.</span><span class="sxs-lookup"><span data-stu-id="e603d-111">Currently, attendee reports and recordings are available only to live events.</span></span>
->- <span data-ttu-id="e603d-112">Somente o organizador do evento pode acessar relatórios e gravações dos participantes.</span><span class="sxs-lookup"><span data-stu-id="e603d-112">Only the event organizer can access attendee reports and recordings.</span></span>
->- <span data-ttu-id="e603d-113">Os relatórios e gravações dos participantes só estarão disponíveis quando o evento ao vivo for concluído.</span><span class="sxs-lookup"><span data-stu-id="e603d-113">Attendee reports and recordings are only available when the live event has concluded.</span></span>
->- <span data-ttu-id="e603d-114">O link de download `302 Found` [na resposta](#example-4-retrieve-the-attendee-report-of-a-live-event) expira em **60** segundos.</span><span class="sxs-lookup"><span data-stu-id="e603d-114">The download link in the `302 Found` [response](#example-4-retrieve-the-attendee-report-of-a-live-event) expires in **60** seconds.</span></span>
+><span data-ttu-id="2d59e-110">**Observações:**</span><span class="sxs-lookup"><span data-stu-id="2d59e-110">**Notes:**</span></span> 
+>- <span data-ttu-id="2d59e-111">Atualmente, os relatórios e gravações dos participantes estão disponíveis apenas para eventos ao vivo.</span><span class="sxs-lookup"><span data-stu-id="2d59e-111">Currently, attendee reports and recordings are available only to live events.</span></span>
+>- <span data-ttu-id="2d59e-112">Somente o organizador do evento pode acessar relatórios e gravações dos participantes.</span><span class="sxs-lookup"><span data-stu-id="2d59e-112">Only the event organizer can access attendee reports and recordings.</span></span>
+>- <span data-ttu-id="2d59e-113">Os relatórios e gravações dos participantes só estarão disponíveis quando o evento ao vivo for concluído.</span><span class="sxs-lookup"><span data-stu-id="2d59e-113">Attendee reports and recordings are only available when the live event has concluded.</span></span>
+>- <span data-ttu-id="2d59e-114">O link de download `302 Found` [na resposta](#example-4-retrieve-the-attendee-report-of-a-live-event) expira em **60** segundos.</span><span class="sxs-lookup"><span data-stu-id="2d59e-114">The download link in the `302 Found` [response](#example-4-retrieve-the-attendee-report-of-a-live-event) expires in **60** seconds.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e603d-115">Permissões</span><span class="sxs-lookup"><span data-stu-id="e603d-115">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2d59e-115">Permissões</span><span class="sxs-lookup"><span data-stu-id="2d59e-115">Permissions</span></span>
 
-<span data-ttu-id="e603d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e603d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2d59e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d59e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e603d-118">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e603d-118">Permission type</span></span>                        | <span data-ttu-id="e603d-119">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e603d-119">Permissions (from least to most privileged)</span></span>           |
+| <span data-ttu-id="2d59e-118">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2d59e-118">Permission type</span></span>                        | <span data-ttu-id="2d59e-119">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2d59e-119">Permissions (from least to most privileged)</span></span>           |
 | :------------------------------------- | :---------------------------------------------------- |
-| <span data-ttu-id="e603d-120">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e603d-120">Delegated (work or school account)</span></span>     | <span data-ttu-id="e603d-121">OnlineMeetings.Read, OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e603d-121">OnlineMeetings.Read, OnlineMeetings.ReadWrite</span></span>         |
-| <span data-ttu-id="e603d-122">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e603d-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e603d-123">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e603d-123">Not Supported.</span></span>                                        |
-| <span data-ttu-id="e603d-124">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e603d-124">Application</span></span>                            | <span data-ttu-id="e603d-125">OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All\*</span><span class="sxs-lookup"><span data-stu-id="e603d-125">OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All\*</span></span> |
+| <span data-ttu-id="2d59e-120">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2d59e-120">Delegated (work or school account)</span></span>     | <span data-ttu-id="2d59e-121">OnlineMeetings.Read, OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2d59e-121">OnlineMeetings.Read, OnlineMeetings.ReadWrite</span></span>         |
+| <span data-ttu-id="2d59e-122">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2d59e-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d59e-123">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2d59e-123">Not Supported.</span></span>                                        |
+| <span data-ttu-id="2d59e-124">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2d59e-124">Application</span></span>                            | <span data-ttu-id="2d59e-125">OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All\*</span><span class="sxs-lookup"><span data-stu-id="2d59e-125">OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All\*</span></span> |
 
 > [!IMPORTANT]
-> <span data-ttu-id="e603d-126">\*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para recuperar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).</span><span class="sxs-lookup"><span data-stu-id="e603d-126">\* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the request path).</span></span>
+> <span data-ttu-id="2d59e-126">\*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para recuperar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).</span><span class="sxs-lookup"><span data-stu-id="2d59e-126">\* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the request path).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e603d-127">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e603d-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2d59e-127">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2d59e-127">HTTP request</span></span>
 
-<span data-ttu-id="e603d-128">Para obter a onlineMeeting especificada usando a ID da reunião:</span><span class="sxs-lookup"><span data-stu-id="e603d-128">To get the specified onlineMeeting using meeting ID:</span></span>
+<span data-ttu-id="2d59e-128">Para obter a onlineMeeting especificada usando a ID da reunião com permissão delegada:</span><span class="sxs-lookup"><span data-stu-id="2d59e-128">To get the specified onlineMeeting using meeting ID with delegated permission:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
+```
+
+<span data-ttu-id="2d59e-129">Para obter a onlineMeeting especificada usando a ID de reunião com permissão de aplicativo:</span><span class="sxs-lookup"><span data-stu-id="2d59e-129">To get the specified onlineMeeting using meeting ID with application permission:</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-<span data-ttu-id="e603d-129">Para obter o onlineMeeting especificado usando **videoTeleconferenceId**:</span><span class="sxs-lookup"><span data-stu-id="e603d-129">To get the specified onlineMeeting using **videoTeleconferenceId**:</span></span>
+<span data-ttu-id="2d59e-130">Para obter o onlineMeeting especificado usando **videoTeleconferenceId**:</span><span class="sxs-lookup"><span data-stu-id="2d59e-130">To get the specified onlineMeeting using **videoTeleconferenceId**:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
-GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-<span data-ttu-id="e603d-130">Para obter o onlineMeeting especificado usando **joinWebUrl**:</span><span class="sxs-lookup"><span data-stu-id="e603d-130">To get the specified onlineMeeting using **joinWebUrl**:</span></span>
+<span data-ttu-id="2d59e-131">Para obter o onlineMeeting especificado usando **joinWebUrl**:</span><span class="sxs-lookup"><span data-stu-id="2d59e-131">To get the specified onlineMeeting using **joinWebUrl**:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-<span data-ttu-id="e603d-131">Para obter o relatório de participantes de um evento ao vivo:</span><span class="sxs-lookup"><span data-stu-id="e603d-131">To get the attendee report of a live event:</span></span>
+<span data-ttu-id="2d59e-132">Para obter o relatório de participantes de um evento ao vivo:</span><span class="sxs-lookup"><span data-stu-id="2d59e-132">To get the attendee report of a live event:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-<span data-ttu-id="e603d-132">Para obter as gravações de um evento ao vivo:</span><span class="sxs-lookup"><span data-stu-id="e603d-132">To get the recordings of a live event:</span></span>
+<span data-ttu-id="2d59e-133">Para obter as gravações de um evento ao vivo:</span><span class="sxs-lookup"><span data-stu-id="2d59e-133">To get the recordings of a live event:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
 
-><span data-ttu-id="e603d-133">**Observações:**</span><span class="sxs-lookup"><span data-stu-id="e603d-133">**Notes:**</span></span>
->- <span data-ttu-id="e603d-134">O caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="e603d-134">The `/app` path is deprecated.</span></span> <span data-ttu-id="e603d-135">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="e603d-135">Going forward, use the `/communications` path.</span></span>
->- <span data-ttu-id="e603d-136">`id`nas duas primeiras rotas refere-se à [ID de conferência VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)</span><span class="sxs-lookup"><span data-stu-id="e603d-136">`id` in the first two routes refers to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).</span></span>
->- <span data-ttu-id="e603d-137">`userId`é a ID de objeto de um usuário no portal de gerenciamento de usuários do [Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)</span><span class="sxs-lookup"><span data-stu-id="e603d-137">`userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span></span> <span data-ttu-id="e603d-138">Para obter mais detalhes, consulte política [de acesso ao aplicativo.](/graph/cloud-communication-online-meeting-application-access-policy)</span><span class="sxs-lookup"><span data-stu-id="e603d-138">For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).</span></span>
->- <span data-ttu-id="e603d-139">`meetingId` é a **id de** uma [entidade onlineMeeting](../resources/onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="e603d-139">`meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).</span></span>
->- <span data-ttu-id="e603d-140">`joinWebUrl` deve ser codificado por URL e essa rota só pode ser usada para recuperar reuniões criadas por `userId` .</span><span class="sxs-lookup"><span data-stu-id="e603d-140">`joinWebUrl` must be URL encoded and this route can only be used to retrieve meetings created by `userId`.</span></span>
+><span data-ttu-id="2d59e-134">**Observações:**</span><span class="sxs-lookup"><span data-stu-id="2d59e-134">**Notes:**</span></span>
+>- <span data-ttu-id="2d59e-135">O caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="2d59e-135">The `/app` path is deprecated.</span></span> <span data-ttu-id="2d59e-136">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="2d59e-136">Going forward, use the `/communications` path.</span></span>
+>- <span data-ttu-id="2d59e-137">`userId`é a ID de objeto de um usuário no portal de gerenciamento de usuários [do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)</span><span class="sxs-lookup"><span data-stu-id="2d59e-137">`userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span></span> <span data-ttu-id="2d59e-138">Para obter mais detalhes, consulte política [de acesso ao aplicativo.](/graph/cloud-communication-online-meeting-application-access-policy)</span><span class="sxs-lookup"><span data-stu-id="2d59e-138">For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).</span></span>
+>- <span data-ttu-id="2d59e-139">`meetingId`é a **id de** um [objeto onlineMeeting.](../resources/onlinemeeting.md)</span><span class="sxs-lookup"><span data-stu-id="2d59e-139">`meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+> - <span data-ttu-id="2d59e-140">**videoTeleconferenceId** é gerado para usuários licenciados Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting](../resources/onlinemeeting.md) .</span><span class="sxs-lookup"><span data-stu-id="2d59e-140">**videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span> <span data-ttu-id="2d59e-141">Consulte a [ID de conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) para obter mais detalhes.</span><span class="sxs-lookup"><span data-stu-id="2d59e-141">Refer to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up) for more details.</span></span>
+>- <span data-ttu-id="2d59e-142">`joinWebUrl` deve ser codificado por URL e essa rota só pode ser usada para recuperar reuniões criadas por `userId` .</span><span class="sxs-lookup"><span data-stu-id="2d59e-142">`joinWebUrl` must be URL encoded and this route can only be used to retrieve meetings created by `userId`.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e603d-141">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="e603d-141">Optional query parameters</span></span>
-<span data-ttu-id="e603d-142">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e603d-142">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2d59e-143">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="2d59e-143">Optional query parameters</span></span>
+<span data-ttu-id="2d59e-144">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="2d59e-144">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e603d-143">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e603d-143">Request headers</span></span>
-| <span data-ttu-id="e603d-144">Nome</span><span class="sxs-lookup"><span data-stu-id="e603d-144">Name</span></span>            | <span data-ttu-id="e603d-145">Descrição</span><span class="sxs-lookup"><span data-stu-id="e603d-145">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="2d59e-145">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2d59e-145">Request headers</span></span>
+| <span data-ttu-id="2d59e-146">Nome</span><span class="sxs-lookup"><span data-stu-id="2d59e-146">Name</span></span>            | <span data-ttu-id="2d59e-147">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d59e-147">Description</span></span>               |
 | :-------------- | :------------------------ |
-| <span data-ttu-id="e603d-146">Autorização</span><span class="sxs-lookup"><span data-stu-id="e603d-146">Authorization</span></span>   | <span data-ttu-id="e603d-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e603d-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e603d-149">Accept-Language</span><span class="sxs-lookup"><span data-stu-id="e603d-149">Accept-Language</span></span> | <span data-ttu-id="e603d-150">Idioma.</span><span class="sxs-lookup"><span data-stu-id="e603d-150">Language.</span></span> <span data-ttu-id="e603d-151">Opcional.</span><span class="sxs-lookup"><span data-stu-id="e603d-151">Optional.</span></span>       |
+| <span data-ttu-id="2d59e-148">Autorização</span><span class="sxs-lookup"><span data-stu-id="2d59e-148">Authorization</span></span>   | <span data-ttu-id="2d59e-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2d59e-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2d59e-151">Accept-Language</span><span class="sxs-lookup"><span data-stu-id="2d59e-151">Accept-Language</span></span> | <span data-ttu-id="2d59e-152">Idioma.</span><span class="sxs-lookup"><span data-stu-id="2d59e-152">Language.</span></span> <span data-ttu-id="2d59e-153">Opcional.</span><span class="sxs-lookup"><span data-stu-id="2d59e-153">Optional.</span></span>       |
 
-<span data-ttu-id="e603d-152">Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de `joinInformation` estará na variante de idioma e código de idioma especificada `Accept-Language` no cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="e603d-152">If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header.</span></span> <span data-ttu-id="e603d-153">O conteúdo padrão será em inglês.</span><span class="sxs-lookup"><span data-stu-id="e603d-153">The default content will be in English.</span></span>
+<span data-ttu-id="2d59e-154">Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de `joinInformation` estará na variante de idioma e código de idioma especificada `Accept-Language` no cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="2d59e-154">If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header.</span></span> <span data-ttu-id="2d59e-155">O conteúdo padrão será em inglês.</span><span class="sxs-lookup"><span data-stu-id="2d59e-155">The default content will be in English.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="e603d-154">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e603d-154">Request body</span></span>
-<span data-ttu-id="e603d-155">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e603d-155">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2d59e-156">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2d59e-156">Request body</span></span>
+<span data-ttu-id="2d59e-157">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="2d59e-157">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e603d-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="e603d-156">Response</span></span>
-<span data-ttu-id="e603d-157">Se tiver êxito, este método retornará um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="e603d-157">If successful, this method returns a `200 OK` response code.</span></span> <span data-ttu-id="e603d-158">O método também inclui um dos seguintes:</span><span class="sxs-lookup"><span data-stu-id="e603d-158">The method also includes one of the following:</span></span>
+## <a name="response"></a><span data-ttu-id="2d59e-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d59e-158">Response</span></span>
+<span data-ttu-id="2d59e-159">Se tiver êxito, este método retornará um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="2d59e-159">If successful, this method returns a `200 OK` response code.</span></span> <span data-ttu-id="2d59e-160">O método também inclui um dos seguintes:</span><span class="sxs-lookup"><span data-stu-id="2d59e-160">The method also includes one of the following:</span></span>
 
-- <span data-ttu-id="e603d-159">Se você estiver recebendo uma reunião online com base na ID da reunião, **videoTeleconferenceId** ou **joinWebUrl**, esse método também retorna um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e603d-159">If you're getting an online meeting based on meeting ID, **videoTeleconferenceId** or **joinWebUrl**, this method also returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
-- <span data-ttu-id="e603d-160">Se você estiver recebendo o relatório ou a gravação de uma reunião ao vivo online, esse método também retorna um header que indica o URI para o relatório ou gravação do `Location` participante, respectivamente.</span><span class="sxs-lookup"><span data-stu-id="e603d-160">If you're getting the attendee report or recording of a live online meeting, this method also returns a `Location` header that indicates the URI to the attendee report or recording, respectively.</span></span>
+- <span data-ttu-id="2d59e-161">Se você estiver recebendo uma reunião online com base na ID da reunião, **videoTeleconferenceId** ou **joinWebUrl**, esse método também retorna um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2d59e-161">If you're getting an online meeting based on meeting ID, **videoTeleconferenceId** or **joinWebUrl**, this method also returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+- <span data-ttu-id="2d59e-162">Se você estiver recebendo o relatório ou a gravação de uma reunião ao vivo online, esse método também retorna um header que indica o URI para o relatório ou gravação do `Location` participante, respectivamente.</span><span class="sxs-lookup"><span data-stu-id="2d59e-162">If you're getting the attendee report or recording of a live online meeting, this method also returns a `Location` header that indicates the URI to the attendee report or recording, respectively.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e603d-161">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e603d-161">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2d59e-163">Exemplos</span><span class="sxs-lookup"><span data-stu-id="2d59e-163">Examples</span></span>
 
-### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a><span data-ttu-id="e603d-162">Exemplo 1: Recuperar uma reunião online por VideoTeleconferenceId</span><span class="sxs-lookup"><span data-stu-id="e603d-162">Example 1: Retrieve an online meeting by VideoTeleconferenceId</span></span>
+### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a><span data-ttu-id="2d59e-164">Exemplo 1: Recuperar uma reunião online por VideoTeleconferenceId</span><span class="sxs-lookup"><span data-stu-id="2d59e-164">Example 1: Retrieve an online meeting by VideoTeleconferenceId</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e603d-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e603d-163">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2d59e-165">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d59e-165">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e603d-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="e603d-164">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2d59e-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="2d59e-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-onlineMeeting"
@@ -120,27 +125,27 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'123456789'
 ```
-# <a name="c"></a>[<span data-ttu-id="e603d-165">C#</span><span class="sxs-lookup"><span data-stu-id="e603d-165">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2d59e-167">C#</span><span class="sxs-lookup"><span data-stu-id="2d59e-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onlinemeeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e603d-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e603d-166">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2d59e-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d59e-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-onlinemeeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e603d-167">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e603d-167">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2d59e-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2d59e-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onlinemeeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e603d-168">Java</span><span class="sxs-lookup"><span data-stu-id="e603d-168">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2d59e-170">Java</span><span class="sxs-lookup"><span data-stu-id="2d59e-170">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="e603d-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="e603d-169">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2d59e-171">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d59e-171">Response</span></span>
 
-> <span data-ttu-id="e603d-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e603d-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="2d59e-p109">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2d59e-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -211,7 +216,7 @@ Content-Length: 1574
   "allowedPresenters": "everyone"
 }
 ```
-><span data-ttu-id="e603d-172">**Observação:** Se 'Accept-Language: ja' for especificado para indicar japonês, por exemplo, a resposta incluirá o seguinte.</span><span class="sxs-lookup"><span data-stu-id="e603d-172">**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.</span></span>
+><span data-ttu-id="2d59e-174">**Observação:** Se 'Accept-Language: ja' for especificado para indicar japonês, por exemplo, a resposta incluirá o seguinte.</span><span class="sxs-lookup"><span data-stu-id="2d59e-174">**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.</span></span>
 
 ```json
     "joinInformation": {
@@ -220,30 +225,32 @@ Content-Length: 1574
     }  
 ```
 
-### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a><span data-ttu-id="e603d-173">Exemplo 2: Recuperar uma reunião online por ID de reunião</span><span class="sxs-lookup"><span data-stu-id="e603d-173">Example 2: Retrieve an online meeting by meeting ID</span></span>
-<span data-ttu-id="e603d-174">Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e603d-174">You can retrieve meeting information via meeting ID with either a user or application token.</span></span> <span data-ttu-id="e603d-175">A ID da reunião é fornecida no objeto de resposta ao criar [um onlineMeeting](../resources/onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="e603d-175">The meeting ID is provided in the response object when creating an [onlineMeeting](../resources/onlinemeeting.md).</span></span> <span data-ttu-id="e603d-176">Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião pela primeira vez e recupera as informações da reunião posteriormente como uma ação separada.</span><span class="sxs-lookup"><span data-stu-id="e603d-176">This option is available to support use cases where the meeting ID is known, such as when an application first creates the meeting, then retrieves meeting information later as a seperate action.</span></span>
+### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a><span data-ttu-id="2d59e-175">Exemplo 2: Recuperar uma reunião online por ID de reunião</span><span class="sxs-lookup"><span data-stu-id="2d59e-175">Example 2: Retrieve an online meeting by meeting ID</span></span>
+<span data-ttu-id="2d59e-176">Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="2d59e-176">You can retrieve meeting information via meeting ID with either a user or application token.</span></span> <span data-ttu-id="2d59e-177">A ID da reunião é fornecida no objeto de resposta ao criar [um onlineMeeting](../resources/onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="2d59e-177">The meeting ID is provided in the response object when creating an [onlineMeeting](../resources/onlinemeeting.md).</span></span> <span data-ttu-id="2d59e-178">Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião online pela primeira vez usando a API do Graph e depois recupera as informações da reunião posteriormente como uma ação separada.</span><span class="sxs-lookup"><span data-stu-id="2d59e-178">This option is available to support use cases where the meeting ID is known, such as when an application first creates the online meeting using Graph API first then retrieves meeting information later as a separate action.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e603d-177">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e603d-177">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2d59e-179">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d59e-179">Request</span></span>
 
-<span data-ttu-id="e603d-178">A solicitação a seguir usa um token de usuário.</span><span class="sxs-lookup"><span data-stu-id="e603d-178">The following request uses a user token.</span></span>
+> <span data-ttu-id="2d59e-180">**Observação:** A ID da reunião foi truncada para maior leitura.</span><span class="sxs-lookup"><span data-stu-id="2d59e-180">**Note:** The meeting ID has been truncated for readability.</span></span>
+
+<span data-ttu-id="2d59e-181">A solicitação a seguir usa um token de usuário.</span><span class="sxs-lookup"><span data-stu-id="2d59e-181">The following request uses a user token.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 
-<span data-ttu-id="e603d-179">A solicitação a seguir usa um token de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e603d-179">The following request uses an app token.</span></span>
+<span data-ttu-id="2d59e-182">A solicitação a seguir usa um token de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="2d59e-182">The following request uses an app token.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 
-#### <a name="response"></a><span data-ttu-id="e603d-180">Resposta</span><span class="sxs-lookup"><span data-stu-id="e603d-180">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2d59e-183">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d59e-183">Response</span></span>
 
-> <span data-ttu-id="e603d-181">**Observação:** O objeto de resposta mostrado aqui foi reduzido para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="e603d-181">**Note:** The response object shown here has been shortened for readability.</span></span> <span data-ttu-id="e603d-182">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e603d-182">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="2d59e-184">**Observação:** O objeto de resposta mostrado aqui foi reduzido para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="2d59e-184">**Note:** The response object shown here has been shortened for readability.</span></span> <span data-ttu-id="2d59e-185">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2d59e-185">All the properties will be returned from an actual call.</span></span>
 
 ```json
 {
-    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
     "startDateTime": "2020-09-29T22:35:31.389759Z",
     "endDateTime": "2020-09-29T23:35:31.389759Z",
@@ -277,26 +284,26 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a><span data-ttu-id="e603d-183">Exemplo 3: Recuperar uma reunião online por JoinWebUrl</span><span class="sxs-lookup"><span data-stu-id="e603d-183">Example 3: Retrieve an online meeting by JoinWebUrl</span></span>
-<span data-ttu-id="e603d-184">Você pode recuperar informações de reunião por meio de JoinWebUrl usando um token de usuário ou de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e603d-184">You can retrieve meeting information via JoinWebUrl by using either a user or application token.</span></span> <span data-ttu-id="e603d-185">Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião não é conhecida, mas JoinWebUrl é, como quando um usuário cria uma reunião (por exemplo, no cliente microsoft Teams) e um aplicativo separado precisa recuperar detalhes da reunião como uma ação de acompanhamento.</span><span class="sxs-lookup"><span data-stu-id="e603d-185">This option is available to support use cases where the meeting ID is not known but the JoinWebUrl is, such as when a user creates a meeting (for example in the Microsoft Teams client), and a seperate application needs to retrieve meeting details as a followup action.</span></span>
+### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a><span data-ttu-id="2d59e-186">Exemplo 3: Recuperar uma reunião online por JoinWebUrl</span><span class="sxs-lookup"><span data-stu-id="2d59e-186">Example 3: Retrieve an online meeting by JoinWebUrl</span></span>
+<span data-ttu-id="2d59e-187">Você pode recuperar informações de reunião por meio de JoinWebUrl usando um token de usuário ou de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="2d59e-187">You can retrieve meeting information via JoinWebUrl by using either a user or application token.</span></span> <span data-ttu-id="2d59e-188">Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião não é conhecida, mas JoinWebUrl é, como quando um usuário cria uma reunião (por exemplo, no cliente microsoft Teams) e um aplicativo separado precisa recuperar detalhes da reunião como uma ação de acompanhamento.</span><span class="sxs-lookup"><span data-stu-id="2d59e-188">This option is available to support use cases where the meeting ID is not known but the JoinWebUrl is, such as when a user creates a meeting (for example in the Microsoft Teams client), and a seperate application needs to retrieve meeting details as a followup action.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e603d-186">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e603d-186">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2d59e-189">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d59e-189">Request</span></span>
 
-<span data-ttu-id="e603d-187">A solicitação a seguir usa um token de usuário.</span><span class="sxs-lookup"><span data-stu-id="e603d-187">The following request uses a user token.</span></span>
+<span data-ttu-id="2d59e-190">A solicitação a seguir usa um token de usuário.</span><span class="sxs-lookup"><span data-stu-id="2d59e-190">The following request uses a user token.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
 ```
 
-<span data-ttu-id="e603d-188">A solicitação a seguir usa um token de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e603d-188">The following request uses an app token.</span></span>
+<span data-ttu-id="2d59e-191">A solicitação a seguir usa um token de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="2d59e-191">The following request uses an app token.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
 ```
 
-#### <a name="response"></a><span data-ttu-id="e603d-189">Resposta</span><span class="sxs-lookup"><span data-stu-id="e603d-189">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2d59e-192">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d59e-192">Response</span></span>
 
-> <span data-ttu-id="e603d-190">**Observação:** O objeto de resposta mostrado aqui foi reduzido para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="e603d-190">**Note:** The response object shown here has been shortened for readability.</span></span> <span data-ttu-id="e603d-191">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e603d-191">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="2d59e-193">**Observação:** O objeto de resposta mostrado aqui foi reduzido para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="2d59e-193">**Note:** The response object shown here has been shortened for readability.</span></span> <span data-ttu-id="2d59e-194">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2d59e-194">All the properties will be returned from an actual call.</span></span>
 
 ```json
 {
@@ -338,12 +345,12 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-4-retrieve-the-attendee-report-of-a-live-event"></a><span data-ttu-id="e603d-192">Exemplo 4: Recuperar o relatório de participantes de um evento ao vivo</span><span class="sxs-lookup"><span data-stu-id="e603d-192">Example 4: Retrieve the attendee report of a live event</span></span>
-<span data-ttu-id="e603d-193">O exemplo a seguir mostra uma solicitação para baixar um relatório de participantes.</span><span class="sxs-lookup"><span data-stu-id="e603d-193">The following example shows a request to download an attendee report.</span></span>
+### <a name="example-4-retrieve-the-attendee-report-of-a-live-event"></a><span data-ttu-id="2d59e-195">Exemplo 4: Recuperar o relatório de participantes de um evento ao vivo</span><span class="sxs-lookup"><span data-stu-id="2d59e-195">Example 4: Retrieve the attendee report of a live event</span></span>
+<span data-ttu-id="2d59e-196">O exemplo a seguir mostra uma solicitação para baixar um relatório de participantes.</span><span class="sxs-lookup"><span data-stu-id="2d59e-196">The following example shows a request to download an attendee report.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e603d-194">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e603d-194">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2d59e-197">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d59e-197">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e603d-195">HTTP</span><span class="sxs-lookup"><span data-stu-id="e603d-195">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2d59e-198">HTTP</span><span class="sxs-lookup"><span data-stu-id="2d59e-198">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-attendeeReport"
@@ -351,26 +358,26 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
 ```
-# <a name="c"></a>[<span data-ttu-id="e603d-196">C#</span><span class="sxs-lookup"><span data-stu-id="e603d-196">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2d59e-199">C#</span><span class="sxs-lookup"><span data-stu-id="2d59e-199">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-attendeereport-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e603d-197">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e603d-197">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2d59e-200">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d59e-200">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-attendeereport-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e603d-198">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e603d-198">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2d59e-201">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2d59e-201">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-attendeereport-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e603d-199">Java</span><span class="sxs-lookup"><span data-stu-id="e603d-199">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2d59e-202">Java</span><span class="sxs-lookup"><span data-stu-id="2d59e-202">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendeereport-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="e603d-200">Resposta</span><span class="sxs-lookup"><span data-stu-id="e603d-200">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2d59e-203">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d59e-203">Response</span></span>
 <!-- {
   "blockType": "response"
 } -->
@@ -379,12 +386,12 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
-### <a name="example-5-retrieve-the-recording-of-a-live-event"></a><span data-ttu-id="e603d-201">Exemplo 5: Recuperar a gravação de um evento ao vivo</span><span class="sxs-lookup"><span data-stu-id="e603d-201">Example 5: Retrieve the recording of a live event</span></span>
-<span data-ttu-id="e603d-202">O exemplo a seguir mostra uma solicitação para baixar uma gravação.</span><span class="sxs-lookup"><span data-stu-id="e603d-202">The following example shows a request to download a recording.</span></span>
+### <a name="example-5-retrieve-the-recording-of-a-live-event"></a><span data-ttu-id="2d59e-204">Exemplo 5: Recuperar a gravação de um evento ao vivo</span><span class="sxs-lookup"><span data-stu-id="2d59e-204">Example 5: Retrieve the recording of a live event</span></span>
+<span data-ttu-id="2d59e-205">O exemplo a seguir mostra uma solicitação para baixar uma gravação.</span><span class="sxs-lookup"><span data-stu-id="2d59e-205">The following example shows a request to download a recording.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e603d-203">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e603d-203">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2d59e-206">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d59e-206">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e603d-204">HTTP</span><span class="sxs-lookup"><span data-stu-id="e603d-204">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2d59e-207">HTTP</span><span class="sxs-lookup"><span data-stu-id="2d59e-207">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-recording"
@@ -392,26 +399,26 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
 ```
-# <a name="c"></a>[<span data-ttu-id="e603d-205">C#</span><span class="sxs-lookup"><span data-stu-id="e603d-205">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2d59e-208">C#</span><span class="sxs-lookup"><span data-stu-id="2d59e-208">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-recording-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e603d-206">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e603d-206">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2d59e-209">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d59e-209">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-recording-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e603d-207">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e603d-207">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2d59e-210">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2d59e-210">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-recording-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e603d-208">Java</span><span class="sxs-lookup"><span data-stu-id="e603d-208">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2d59e-211">Java</span><span class="sxs-lookup"><span data-stu-id="2d59e-211">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-recording-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="e603d-209">Resposta</span><span class="sxs-lookup"><span data-stu-id="e603d-209">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2d59e-212">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d59e-212">Response</span></span>
 <!-- {
   "blockType": "response"
 } -->
