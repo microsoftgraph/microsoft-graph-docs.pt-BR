@@ -1,56 +1,56 @@
 ---
 title: Listar programControls
-description: No recurso de revisões do Azure AD Access, liste todos os objetos programControl em todos os programas no locatário.
+description: No recurso de revisões de acesso do Azure AD, liste todos os objetos programControl, em todos os programas no locatário.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 153e52b77524f6503d86519ecd79008f36455c76
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7e689be520d337916774e28d8204e99ca412b65d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981722"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442191"
 ---
-# <a name="list-programcontrols"></a><span data-ttu-id="2f8d8-103">Listar programControls</span><span class="sxs-lookup"><span data-stu-id="2f8d8-103">List programControls</span></span>
+# <a name="list-programcontrols"></a><span data-ttu-id="65c82-103">Listar programControls</span><span class="sxs-lookup"><span data-stu-id="65c82-103">List programControls</span></span>
 
-<span data-ttu-id="2f8d8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2f8d8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="65c82-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="65c82-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2f8d8-105">No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , liste todos os objetos [programControl](../resources/programcontrol.md) em todos os programas no locatário.</span><span class="sxs-lookup"><span data-stu-id="2f8d8-105">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [programControl](../resources/programcontrol.md) objects, across all programs in the tenant.</span></span>
-## <a name="permissions"></a><span data-ttu-id="2f8d8-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="2f8d8-106">Permissions</span></span>
-<span data-ttu-id="2f8d8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2f8d8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="65c82-105">No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) liste todos os objetos [programControl,](../resources/programcontrol.md) em todos os programas no locatário.</span><span class="sxs-lookup"><span data-stu-id="65c82-105">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [programControl](../resources/programcontrol.md) objects, across all programs in the tenant.</span></span>
+## <a name="permissions"></a><span data-ttu-id="65c82-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="65c82-106">Permissions</span></span>
+<span data-ttu-id="65c82-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="65c82-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2f8d8-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2f8d8-109">Permission type</span></span>                        | <span data-ttu-id="2f8d8-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2f8d8-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="65c82-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="65c82-109">Permission type</span></span>                        | <span data-ttu-id="65c82-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="65c82-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2f8d8-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2f8d8-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="2f8d8-112">ProgramControl. Read. All, ProgramControl. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="2f8d8-112">ProgramControl.Read.All, ProgramControl.ReadWrite.All</span></span>   |
-|<span data-ttu-id="2f8d8-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2f8d8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2f8d8-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2f8d8-114">Not supported.</span></span> |
-|<span data-ttu-id="2f8d8-115">Application</span><span class="sxs-lookup"><span data-stu-id="2f8d8-115">Application</span></span>                            | <span data-ttu-id="2f8d8-116">ProgramControl. Read. All, ProgramControl. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="2f8d8-116">ProgramControl.Read.All, ProgramControl.ReadWrite.All</span></span>  |
+|<span data-ttu-id="65c82-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="65c82-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="65c82-112">ProgramControl.Read.All, ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65c82-112">ProgramControl.Read.All, ProgramControl.ReadWrite.All</span></span>   |
+|<span data-ttu-id="65c82-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="65c82-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="65c82-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="65c82-114">Not supported.</span></span> |
+|<span data-ttu-id="65c82-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="65c82-115">Application</span></span>                            | <span data-ttu-id="65c82-116">ProgramControl.Read.All, ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65c82-116">ProgramControl.Read.All, ProgramControl.ReadWrite.All</span></span>  |
 
-<span data-ttu-id="2f8d8-117">O usuário conectado também deve estar em uma função de diretório que permite que ele leia um programa.</span><span class="sxs-lookup"><span data-stu-id="2f8d8-117">The signed in user must also be in a directory role that permits them to read a program.</span></span>
+<span data-ttu-id="65c82-117">O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia um programa.</span><span class="sxs-lookup"><span data-stu-id="65c82-117">The signed in user must also be in a directory role that permits them to read a program.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="2f8d8-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2f8d8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="65c82-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="65c82-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /programControls
 ```
-## <a name="request-headers"></a><span data-ttu-id="2f8d8-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2f8d8-119">Request headers</span></span>
-| <span data-ttu-id="2f8d8-120">Nome</span><span class="sxs-lookup"><span data-stu-id="2f8d8-120">Name</span></span>         | <span data-ttu-id="2f8d8-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="2f8d8-121">Type</span></span>        | <span data-ttu-id="2f8d8-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="2f8d8-122">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="65c82-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="65c82-119">Request headers</span></span>
+| <span data-ttu-id="65c82-120">Nome</span><span class="sxs-lookup"><span data-stu-id="65c82-120">Name</span></span>         | <span data-ttu-id="65c82-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="65c82-121">Type</span></span>        | <span data-ttu-id="65c82-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="65c82-122">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="2f8d8-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="2f8d8-123">Authorization</span></span> | <span data-ttu-id="2f8d8-124">string</span><span class="sxs-lookup"><span data-stu-id="2f8d8-124">string</span></span> | <span data-ttu-id="2f8d8-p102">\{token\} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2f8d8-p102">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="65c82-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="65c82-123">Authorization</span></span> | <span data-ttu-id="65c82-124">string</span><span class="sxs-lookup"><span data-stu-id="65c82-124">string</span></span> | <span data-ttu-id="65c82-p102">\{token\} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="65c82-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2f8d8-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2f8d8-127">Request body</span></span>
-<span data-ttu-id="2f8d8-128">Nenhum corpo de solicitação deve ser fornecido.</span><span class="sxs-lookup"><span data-stu-id="2f8d8-128">No request body should be supplied.</span></span>
+## <a name="request-body"></a><span data-ttu-id="65c82-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="65c82-127">Request body</span></span>
+<span data-ttu-id="65c82-128">Nenhum corpo de solicitação deve ser fornecido.</span><span class="sxs-lookup"><span data-stu-id="65c82-128">No request body should be supplied.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2f8d8-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="2f8d8-129">Response</span></span>
-<span data-ttu-id="2f8d8-130">Se tiver êxito, este método retornará um `200, OK` código de resposta e uma matriz de objetos [programControl](../resources/programcontrol.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2f8d8-130">If successful, this method returns a `200, OK` response code and an array of [programControl](../resources/programcontrol.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="65c82-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="65c82-129">Response</span></span>
+<span data-ttu-id="65c82-130">Se tiver êxito, este método retornará um código de resposta e uma `200, OK` matriz de [objetos programControl](../resources/programcontrol.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="65c82-130">If successful, this method returns a `200, OK` response code and an array of [programControl](../resources/programcontrol.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2f8d8-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2f8d8-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2f8d8-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2f8d8-132">Request</span></span>
+## <a name="example"></a><span data-ttu-id="65c82-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="65c82-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="65c82-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="65c82-132">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2f8d8-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f8d8-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="65c82-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="65c82-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_programControl"
@@ -58,27 +58,27 @@ GET /programControls
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/programControls
 ```
-# <a name="c"></a>[<span data-ttu-id="2f8d8-134">C#</span><span class="sxs-lookup"><span data-stu-id="2f8d8-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="65c82-134">C#</span><span class="sxs-lookup"><span data-stu-id="65c82-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-programcontrol-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f8d8-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f8d8-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="65c82-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="65c82-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-programcontrol-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f8d8-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f8d8-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="65c82-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="65c82-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-programcontrol-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2f8d8-137">Java</span><span class="sxs-lookup"><span data-stu-id="2f8d8-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="65c82-137">Java</span><span class="sxs-lookup"><span data-stu-id="65c82-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-programcontrol-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="2f8d8-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="2f8d8-138">Response</span></span>
-><span data-ttu-id="2f8d8-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2f8d8-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="65c82-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="65c82-138">Response</span></span>
+><span data-ttu-id="65c82-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="65c82-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,11 +106,11 @@ Content-type: application/json
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="2f8d8-141">Confira também</span><span class="sxs-lookup"><span data-stu-id="2f8d8-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="65c82-141">Confira também</span><span class="sxs-lookup"><span data-stu-id="65c82-141">See also</span></span>
 
-| <span data-ttu-id="2f8d8-142">Método</span><span class="sxs-lookup"><span data-stu-id="2f8d8-142">Method</span></span>           | <span data-ttu-id="2f8d8-143">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="2f8d8-143">Return Type</span></span>    |<span data-ttu-id="2f8d8-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="2f8d8-144">Description</span></span>|
+| <span data-ttu-id="65c82-142">Método</span><span class="sxs-lookup"><span data-stu-id="65c82-142">Method</span></span>           | <span data-ttu-id="65c82-143">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="65c82-143">Return Type</span></span>    |<span data-ttu-id="65c82-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="65c82-144">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="2f8d8-145">Listar programControls de um programa</span><span class="sxs-lookup"><span data-stu-id="2f8d8-145">List programControls of a program</span></span>](program-listcontrols.md) |     <span data-ttu-id="2f8d8-146">coleção [programControl](../resources/programcontrol.md)</span><span class="sxs-lookup"><span data-stu-id="2f8d8-146">[programControl](../resources/programcontrol.md) collection</span></span>|    <span data-ttu-id="2f8d8-147">Obter uma coleção de controles de um programa.</span><span class="sxs-lookup"><span data-stu-id="2f8d8-147">Get a collection of the controls of a program.</span></span>|
+|[<span data-ttu-id="65c82-145">Listar programControls de um programa</span><span class="sxs-lookup"><span data-stu-id="65c82-145">List programControls of a program</span></span>](program-listcontrols.md) |     <span data-ttu-id="65c82-146">[Coleção programControl](../resources/programcontrol.md)</span><span class="sxs-lookup"><span data-stu-id="65c82-146">[programControl](../resources/programcontrol.md) collection</span></span>|    <span data-ttu-id="65c82-147">Obter uma coleção dos controles de um programa.</span><span class="sxs-lookup"><span data-stu-id="65c82-147">Get a collection of the controls of a program.</span></span>|
 
 
 <!--
