@@ -1,36 +1,36 @@
 ---
 title: Criar trustFrameworkKeySet
-description: Criar um novo objeto **trustFrameworkKeySet** .
+description: Crie um novo **objeto trustFrameworkKeySet.**
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c00701e2a6f1e370f2f646c225c2154a83441aa9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c4295de0e6a6e361a28932fa4755b35aca80b64b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971826"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444977"
 ---
-# <a name="create-trustframeworkkeyset"></a><span data-ttu-id="96813-103">Criar trustFrameworkKeySet</span><span class="sxs-lookup"><span data-stu-id="96813-103">Create trustFrameworkKeySet</span></span>
+# <a name="create-trustframeworkkeyset"></a><span data-ttu-id="63f1b-103">Criar trustFrameworkKeySet</span><span class="sxs-lookup"><span data-stu-id="63f1b-103">Create trustFrameworkKeySet</span></span>
 
-<span data-ttu-id="96813-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="96813-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="63f1b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="63f1b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="96813-105">Criar um novo [trustFrameworkKeySet](../resources/trustframeworkkeyset.md).</span><span class="sxs-lookup"><span data-stu-id="96813-105">Create a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md).</span></span> <span data-ttu-id="96813-106">A ID do **trustFrameworkKeySet** é esperada na solicitação Create; no entanto, ele pode ser modificado pelo serviço.</span><span class="sxs-lookup"><span data-stu-id="96813-106">The ID of the **trustFrameworkKeySet** is expected in the create request; however, it can be modified by the service.</span></span> <span data-ttu-id="96813-107">O ID modificado estará disponível na resposta e no cabeçalho do local.</span><span class="sxs-lookup"><span data-stu-id="96813-107">The modified ID will be available in the response and in the location header.</span></span>
+<span data-ttu-id="63f1b-105">Crie um novo [trustFrameworkKeySet](../resources/trustframeworkkeyset.md).</span><span class="sxs-lookup"><span data-stu-id="63f1b-105">Create a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md).</span></span> <span data-ttu-id="63f1b-106">A ID do **trustFrameworkKeySet** é esperada na solicitação de criação; no entanto, ele pode ser modificado pelo serviço.</span><span class="sxs-lookup"><span data-stu-id="63f1b-106">The ID of the **trustFrameworkKeySet** is expected in the create request; however, it can be modified by the service.</span></span> <span data-ttu-id="63f1b-107">A ID modificada estará disponível na resposta e no header de local.</span><span class="sxs-lookup"><span data-stu-id="63f1b-107">The modified ID will be available in the response and in the location header.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="96813-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="96813-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="63f1b-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="63f1b-108">Permissions</span></span>
 
-<span data-ttu-id="96813-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="96813-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="63f1b-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="63f1b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="96813-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="96813-111">Permission type</span></span>                        | <span data-ttu-id="96813-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="96813-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="63f1b-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="63f1b-111">Permission type</span></span>                        | <span data-ttu-id="63f1b-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="63f1b-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="96813-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="96813-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="96813-114">TrustFrameworkKeySet. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="96813-114">TrustFrameworkKeySet.ReadWrite.All</span></span>   |
-| <span data-ttu-id="96813-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="96813-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="96813-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="96813-116">Not supported.</span></span> |
-| <span data-ttu-id="96813-117">Application</span><span class="sxs-lookup"><span data-stu-id="96813-117">Application</span></span>                            | <span data-ttu-id="96813-118">TrustFrameworkKeySet. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="96813-118">TrustFrameworkKeySet.ReadWrite.All</span></span>    |
+| <span data-ttu-id="63f1b-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="63f1b-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="63f1b-114">TrustFrameworkKeySet.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63f1b-114">TrustFrameworkKeySet.ReadWrite.All</span></span>   |
+| <span data-ttu-id="63f1b-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="63f1b-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="63f1b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="63f1b-116">Not supported.</span></span> |
+| <span data-ttu-id="63f1b-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="63f1b-117">Application</span></span>                            | <span data-ttu-id="63f1b-118">TrustFrameworkKeySet.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63f1b-118">TrustFrameworkKeySet.ReadWrite.All</span></span>    |
 
-## <a name="http-request"></a><span data-ttu-id="96813-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="96813-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="63f1b-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="63f1b-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,31 +38,31 @@ ms.locfileid: "48971826"
 POST /trustFramework/keySets
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="96813-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="96813-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="63f1b-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="63f1b-120">Request headers</span></span>
 
-| <span data-ttu-id="96813-121">Nome</span><span class="sxs-lookup"><span data-stu-id="96813-121">Name</span></span>          | <span data-ttu-id="96813-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="96813-122">Description</span></span>   |
+| <span data-ttu-id="63f1b-121">Nome</span><span class="sxs-lookup"><span data-stu-id="63f1b-121">Name</span></span>          | <span data-ttu-id="63f1b-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="63f1b-122">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="96813-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="96813-123">Authorization</span></span> | <span data-ttu-id="96813-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="96813-p103">Bearer {token}. Required.</span></span> |
-|<span data-ttu-id="96813-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="96813-126">Content-type</span></span> | <span data-ttu-id="96813-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="96813-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="63f1b-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="63f1b-123">Authorization</span></span> | <span data-ttu-id="63f1b-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="63f1b-p103">Bearer {token}. Required.</span></span> |
+|<span data-ttu-id="63f1b-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="63f1b-126">Content-type</span></span> | <span data-ttu-id="63f1b-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="63f1b-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="96813-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="96813-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="63f1b-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="63f1b-129">Request body</span></span>
 
-<span data-ttu-id="96813-130">No corpo da solicitação, forneça uma representação JSON de um objeto [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) .</span><span class="sxs-lookup"><span data-stu-id="96813-130">In the request body, supply a JSON representation of a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.</span></span>
+<span data-ttu-id="63f1b-130">No corpo da solicitação, fornece uma representação JSON de um [objeto trustFrameworkKeySet.](../resources/trustframeworkkeyset.md)</span><span class="sxs-lookup"><span data-stu-id="63f1b-130">In the request body, supply a JSON representation of a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="96813-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="96813-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="63f1b-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="63f1b-131">Response</span></span>
 
-<span data-ttu-id="96813-132">Se tiver êxito, este método retornará um `201 Created` código de resposta, um cabeçalho de local para o objeto recém-criado e um novo objeto [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="96813-132">If successful, this method returns a `201 Created` response code, a location header for the newly created object, and a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object in the response body.</span></span>
+<span data-ttu-id="63f1b-132">Se tiver êxito, este método retornará um código de resposta, um header de local para o objeto recém-criado e um novo `201 Created` [objeto trustFrameworkKeySet](../resources/trustframeworkkeyset.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="63f1b-132">If successful, this method returns a `201 Created` response code, a location header for the newly created object, and a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="96813-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="96813-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="63f1b-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="63f1b-133">Examples</span></span>
 
-### <a name="example-1-create-an-empty-keyset"></a><span data-ttu-id="96813-134">Exemplo 1: criar um conjunto de chaves vazio</span><span class="sxs-lookup"><span data-stu-id="96813-134">Example 1: Create an empty keyset</span></span>
-<span data-ttu-id="96813-135">Essa é uma das operações mais úteis.</span><span class="sxs-lookup"><span data-stu-id="96813-135">This is one of the most useful operations.</span></span> <span data-ttu-id="96813-136">Primeiro, você cria um conjunto de chaves vazio.</span><span class="sxs-lookup"><span data-stu-id="96813-136">First, you create an empty keyset.</span></span> <span data-ttu-id="96813-137">Em seguida, no novo conjunto de chaves, você pode gerar uma chave, carregar um segredo manual e carregar um certificado ou uma chave PKCS12.</span><span class="sxs-lookup"><span data-stu-id="96813-137">Then, in the new keyset, you can generate a key, upload a manual secret, and upload a certificate or a PKCS12 key.</span></span> 
+### <a name="example-1-create-an-empty-keyset"></a><span data-ttu-id="63f1b-134">Exemplo 1: Criar um keyset vazio</span><span class="sxs-lookup"><span data-stu-id="63f1b-134">Example 1: Create an empty keyset</span></span>
+<span data-ttu-id="63f1b-135">Esta é uma das operações mais úteis.</span><span class="sxs-lookup"><span data-stu-id="63f1b-135">This is one of the most useful operations.</span></span> <span data-ttu-id="63f1b-136">Primeiro, você cria um keyset vazio.</span><span class="sxs-lookup"><span data-stu-id="63f1b-136">First, you create an empty keyset.</span></span> <span data-ttu-id="63f1b-137">Em seguida, no novo keyset, você pode gerar uma chave, carregar um segredo manual e carregar um certificado ou uma tecla PKCS12.</span><span class="sxs-lookup"><span data-stu-id="63f1b-137">Then, in the new keyset, you can generate a key, upload a manual secret, and upload a certificate or a PKCS12 key.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="96813-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="96813-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="63f1b-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="63f1b-138">Request</span></span>
 
-<span data-ttu-id="96813-139">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="96813-139">The following example shows the request.</span></span>
+<span data-ttu-id="63f1b-139">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="63f1b-139">The following example shows the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="96813-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="96813-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="63f1b-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="63f1b-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework1"
@@ -76,30 +76,30 @@ Content-type: application/json
   "id": "keyset1"  
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="96813-141">C#</span><span class="sxs-lookup"><span data-stu-id="96813-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="63f1b-141">C#</span><span class="sxs-lookup"><span data-stu-id="63f1b-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-trustframeworkkeyset-from-trustframework-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="96813-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="96813-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="63f1b-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="63f1b-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-trustframeworkkeyset-from-trustframework-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="96813-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="96813-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="63f1b-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="63f1b-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-trustframeworkkeyset-from-trustframework-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="96813-144">Java</span><span class="sxs-lookup"><span data-stu-id="96813-144">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="63f1b-144">Java</span><span class="sxs-lookup"><span data-stu-id="63f1b-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-trustframeworkkeyset-from-trustframework-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="96813-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="96813-145">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="63f1b-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="63f1b-145">Response</span></span>
 
-<span data-ttu-id="96813-146">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="96813-146">The following example shows the response.</span></span>
+<span data-ttu-id="63f1b-146">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="63f1b-146">The following example shows the response.</span></span>
 
-> <span data-ttu-id="96813-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="96813-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="63f1b-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="63f1b-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -118,13 +118,13 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
 }
 ```
 
-### <a name="example-2-create-a-keyset-with-a-key"></a><span data-ttu-id="96813-149">Exemplo 2: criar um conjunto de chaves com uma chave</span><span class="sxs-lookup"><span data-stu-id="96813-149">Example 2: Create a keyset with a key</span></span>
+### <a name="example-2-create-a-keyset-with-a-key"></a><span data-ttu-id="63f1b-149">Exemplo 2: Criar um keyset com uma chave</span><span class="sxs-lookup"><span data-stu-id="63f1b-149">Example 2: Create a keyset with a key</span></span>
 
-<span data-ttu-id="96813-150">Este é um cenário avançado onde você precisa saber o formato de chave da Web JSON compatível com [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) da chave.</span><span class="sxs-lookup"><span data-stu-id="96813-150">This is an advanced scenario where you need to know the [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) compliant JSON Web Key format of the key.</span></span>
+<span data-ttu-id="63f1b-150">Este é um cenário avançado em que você precisa saber o formato JSON Web Key compatível com [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) da chave.</span><span class="sxs-lookup"><span data-stu-id="63f1b-150">This is an advanced scenario where you need to know the [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) compliant JSON Web Key format of the key.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="96813-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="96813-151">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="63f1b-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="63f1b-151">Request</span></span>
 
-<span data-ttu-id="96813-152">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="96813-152">The following example shows the request.</span></span>
+<span data-ttu-id="63f1b-152">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="63f1b-152">The following example shows the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework"
@@ -161,11 +161,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="96813-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="96813-153">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="63f1b-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="63f1b-153">Response</span></span>
 
-<span data-ttu-id="96813-154">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="96813-154">The following example shows the response.</span></span>
+<span data-ttu-id="63f1b-154">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="63f1b-154">The following example shows the response.</span></span>
 
-> <span data-ttu-id="96813-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="96813-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="63f1b-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="63f1b-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
