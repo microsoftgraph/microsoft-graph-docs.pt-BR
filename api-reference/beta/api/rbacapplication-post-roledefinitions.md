@@ -1,16 +1,16 @@
 ---
 title: Criar unifiedRoleDefinition
-description: Criar um novo objeto unifiedRoleDefinition.
+description: Crie um novo objeto unifiedRoleDefinition.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 37ce4feaf55848fb213ce64d9de0f33dec0b8c2c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2485652b97a015797ddd519d2009243a8a85902e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981080"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440868"
 ---
 # <a name="create-unifiedroledefinition"></a>Criar unifiedRoleDefinition
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [unifiedRoleDefinition](../resources/unifiedroledefinition.md) .
+Crie um novo [objeto unifiedRoleDefinition.](../resources/unifiedroledefinition.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+| Aplicativo                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,25 +46,25 @@ POST /roleManagement/directory/roleDefinitions
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [unifiedRoleDefinition](../resources/unifiedroledefinition.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleDefinition.](../resources/unifiedroledefinition.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar roleDefinition.
+A tabela a seguir mostra as propriedades que são necessárias ao criar uma roleDefinition.
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
 |displayName |string |O nome de exibição da definição de função.|
-|isEnabled |Booliano |Sinalizador que indica se a função está habilitada para atribuição. Se false, a função não estará disponível para atribuição.|
-|rolePermissions |coleção [unifiedRolePermission](../resources/unifiedrolepermission.md) |Lista de permissões incluídas na função.|
+|isEnabled |Booliano |Sinalizador indicando se a função está habilitada para atribuição. Se for false, a função não estará disponível para atribuição.|
+|rolePermissions |[Coleção unifiedRolePermission](../resources/unifiedrolepermission.md) |Lista de permissões incluídas na função.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um novo objeto [unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo objeto [unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de criação de uma função personalizada.
+A seguir, um exemplo de criação de uma função personalizada.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

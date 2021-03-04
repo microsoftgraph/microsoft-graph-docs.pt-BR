@@ -1,16 +1,16 @@
 ---
 title: Criar unifiedRoleAssignment
-description: Criar um novo objeto unifiedRoleAssignment.
+description: Crie um novo objeto unifiedRoleAssignment.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ef1fbbf7c23e7ee79582d1b1c949b0f013f15713
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d654b852358c94e4b762c794c6da114f19b091af
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975145"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440882"
 ---
 # <a name="create-unifiedroleassignment"></a>Criar unifiedRoleAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
+Crie um novo [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+| Aplicativo                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,19 +46,19 @@ POST /roleManagement/directory/roleAssignments
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) . A solicitação deve ter um escopo definido no Azure AD, como `directoryScopeId` , ou um escopo específico de aplicativo, como `appScopeId` . Exemplos de escopo do Azure AD são locatários ("/"), unidades administrativas ou aplicativos. Para obter mais informações, consulte [appScope](../resources/appscope.md).
+No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.md) A solicitação deve ter um escopo definido no Azure AD, como , ou um `directoryScopeId` escopo específico do aplicativo, como `appScopeId` . Exemplos de escopo do Azure AD são locatários ("/"), unidades administrativas ou aplicativos. Para obter mais informações, consulte [appScope](../resources/appscope.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-role-assignment-at-tenant-scope"></a>Exemplo 1: criar uma atribuição de função no escopo do locatário
+### <a name="example-1-create-a-role-assignment-at-tenant-scope"></a>Exemplo 1: Criar uma atribuição de função no escopo do locatário
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Observe o uso do roleTemplateId para roleDefinitionId. roleDefinitionId pode ser a ID de modelo de todo o serviço ou o roleDefinitionId específico do diretório.
+Este é um exemplo de solicitação. Observe o uso do roleTemplateId para roleDefinitionId. roleDefinitionId pode ser a ID do modelo de todo o serviço ou a função específica do diretórioDefinitionId.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -122,11 +122,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--create-a-role-assignment-over-an-administrative-unit-scope"></a>Exemplo 2: criar uma atribuição de função em um escopo de unidade administrativa
+### <a name="example-2--create-a-role-assignment-over-an-administrative-unit-scope"></a>Exemplo 2: Criar uma atribuição de função em um escopo de unidade administrativa
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir atribui uma função de administrador de usuário principal em uma unidade administrativa.
+O exemplo a seguir atribui uma função de Administrador de Usuário principal sobre uma unidade administrativa.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

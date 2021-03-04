@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso roleManagement
-description: Recurso de gerenciamento de função RBAC
+title: Tipo de recurso roleManagement
+description: Recurso de gerenciamento de função do RBAC
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 531412e826d730b634ff7506386963e0e465127b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 241de0b72a9ffad507975fca408fe49f0b0a90f0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400597"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440120"
 ---
-# <a name="rolemanagement-resource-type"></a>tipo de recurso roleManagement
+# <a name="rolemanagement-resource-type"></a>Tipo de recurso roleManagement
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma entidade de gerenciamento de função RBAC da Microsoft 365. Fornece acesso a definições de função e atribuições de função provenientes de provedores de RBAC. Os provedores de diretório atualmente (Azure AD) e deviceManagement (Intune) têm suporte. 
+Representa uma entidade de gerenciamento de função do Microsoft 365 RBAC. Fornece acesso a definições de função e atribuições de função que surgiram de provedores RBAC. Atualmente, há suporte para provedores de diretório (Azure AD) e deviceManagement (Intune). 
 
 Para saber mais, confira: 
 * [Permissões da função de administrador no Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 * [Controle de acesso baseado em função (RBAC) com o Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 Nenhum.
 
@@ -36,7 +36,7 @@ Nenhum.
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Directory|[rbacApplication](rbacapplication.md)| Somente leitura. Anulável.|
+|directory|[rbacApplication](rbacapplication.md)| Somente leitura. Anulável.|
 |deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

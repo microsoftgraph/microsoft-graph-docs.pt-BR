@@ -3,14 +3,14 @@ title: Criar accessPackageResourceRequest
 description: Crie um novo accessPackageResourceRequest.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 70699361c862a2c372eca68649db516b111533f0
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 82b84110f7936ea8a5bfef7e7d479ecc6c4aaeea
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176324"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439461"
 ---
 # <a name="create-accesspackageresourcerequest"></a>Criar accessPackageResourceRequest
 
@@ -49,18 +49,18 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageResourceRequest.](../resources/accesspackageresourcerequest.md) Inclua a `accessPackageResource` relação com um objeto [accessPackageResource](../resources/accesspackageresource.md) como parte da solicitação.
 
-Para adicionar um grupo do Azure AD como um recurso a um catálogo, de definida **a catalogId** como sendo da ID do catálogo, **requestType** como e uma representa o `AdminAdd` `accessPackageResource` recurso. O valor da **propriedade originSystem** dentro do deve ser e o valor de `accessPackageResource` `AadGroup` **originId** é o identificador do grupo.
+Para adicionar um grupo do Azure AD como um recurso a um catálogo, de definir a **catalogId** como da ID do catálogo, **requestType** como e representando o `AdminAdd` `accessPackageResource` recurso. O valor da **propriedade originSystem** dentro do deve ser e `accessPackageResource` o valor da `AadGroup` **originId** é o identificador do grupo.
 
-Para remover um aplicativo do Azure AD de um catálogo, de definida **a catalogId** como sendo da ID do catálogo, **requestType** como e o objeto de recurso a ser `AdminRemove` `accessPackageResource` removido.  O objeto de recurso pode ser recuperado usando [list accessPackageResources](accesspackagecatalog-list-accesspackageresources.md).
+Para remover um aplicativo do Azure AD de um catálogo, de definir **a catalogId** como da ID do catálogo, **requestType** como e o objeto de recurso a ser `AdminRemove` `accessPackageResource` removido.  O objeto resource pode ser recuperado usando [accessPackageResources](accesspackagecatalog-list-accesspackageresources.md)de lista.
 
-Para atribuir o ambiente de localização geográfica para um recurso multilocação do Sharepoint Online, inclua a relação **accessPackageResourceEnvironment** no `accessPackageResource` objeto. Isso pode ser feito de duas maneiras:
-+ Use `@odata.bind` a anotação para atribuir `id` o do a um `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` objeto.
+Para atribuir o ambiente de localização geográfica a um recurso do Sharepoint Online multilocação geográfica, inclua a relação **accessPackageResourceEnvironment** no `accessPackageResource` objeto. Isso pode ser feito de duas maneiras:
++ Use `@odata.bind` anotação para atribuir `id` o do a um `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` objeto.
 + `originId`Especifique o parâmetro do em um `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` objeto.
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um novo `201 Created` [objeto accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -140,11 +140,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-accesspackageresourcerequest-for-a-resource-and-assign-an-accesspackageresourceenvironment-using-odatabind"></a>Exemplo 2: Criar um accessPackageResourceRequest para um recurso e atribuir um accessPackageResourceEnvironment usando @odata.bind
+### <a name="example-2-create-an-accesspackageresourcerequest-for-a-resource-and-assign-an-accesspackageresourceenvironment-using-odatabind"></a>Exemplo 2: crie um accessPackageResourceRequest para um recurso e atribua um accessPackageResourceEnvironment usando @odata.bind
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Neste exemplo, a `@odata.bind` anotação é usada para atribuir `id` a anotação `accessPackageResourceEnvironment` a um `accessPackageResourceEnvironment` objeto.
+Este é um exemplo de solicitação. Neste exemplo, a `@odata.bind` anotação é usada para atribuir o `id` do a um `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` objeto.
 
 
 
@@ -218,7 +218,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-an-accesspackageresourcerequest-for-a-resource-and-assign-an-accesspackageresourceenvironment-using-originid"></a>Exemplo 3: Criar um accessPackageResourceRequest para um recurso e atribuir um accessPackageResourceEnvironment usando originId
+### <a name="example-3-create-an-accesspackageresourcerequest-for-a-resource-and-assign-an-accesspackageresourceenvironment-using-originid"></a>Exemplo 3: criar um accessPackageResourceRequest para um recurso e atribuir um accessPackageResourceEnvironment usando originId
 
 #### <a name="request"></a>Solicitação
 

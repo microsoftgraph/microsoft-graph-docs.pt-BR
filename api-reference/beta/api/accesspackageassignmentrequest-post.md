@@ -1,16 +1,16 @@
 ---
 title: Criar accessPackageAssignmentRequest
-description: Criar um novo accessPackageAssignmentRequest.
+description: Crie um novo accessPackageAssignmentRequest.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 75388c02cf63113c28475b77b194a67c76d588b8
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 0e5daf6473e3e5da652c73f317c7d3a559f4dd67
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719542"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439636"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Criar accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Em [Gerenciamento de qualificação do Azure ad](../resources/entitlementmanagement-root.md), crie um novo objeto [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) .  Essa operação é usada para atribuir um usuário a um pacote do Access ou para remover uma atribuição de pacote do Access.
+No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-root.md)crie um novo [objeto accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Essa operação é usada para atribuir um usuário a um pacote de acesso ou para remover uma atribuição de pacote de acesso.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,25 +47,25 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) .
+No corpo da solicitação, fornece uma representação JSON [do objeto accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
 
-Para que um administrador solicite a criação de uma atribuição para um usuário, o valor da propriedade **RequestType** é `AdminAdd` , e a propriedade **accessPackageAssignment** contém o `targetId` do usuário que está sendo atribuído, a propriedade **assignmentPolicyId** que identifica o [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)e a propriedade **accessPackageId** identificando o [accessPackage](../resources/accesspackage.md).
+Para que um administrador solicite a criação de uma atribuição para um usuário, o valor da propriedade **requestType** é , e a propriedade accessPackageAssignment contém o do usuário que está sendo atribuído, a propriedade `AdminAdd`  `targetId` **assignmentPolicyId** que identifica [o accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)e a propriedade **accessPackageId** que identifica [o accessPackage](../resources/accesspackage.md).
 
-Para que um administrador solicite a remoção de uma atribuição, o valor da propriedade **RequestType** é `AdminRemove` , e a propriedade **accessPackageAssignment** contém a propriedade **ID** que identifica o [accessPackageAssignment](../resources/accesspackageassignment.md) que está sendo removido.
+Para que um administrador solicite a remoção de uma atribuição, o valor da propriedade **requestType** é , e a propriedade `AdminRemove` **accessPackageAssignment** contém a propriedade **id** que identifica [o accessPackageAssignment](../resources/accesspackageassignment.md) sendo removido.
 
-Para que um usuário não administrador solicite a criação de uma atribuição para si mesmo, o valor da propriedade **RequestType** é `UserAdd` , e a propriedade **accessPackageAssignment** contém o `targetId` com a ID dos próprios usuários, a propriedade **assignmentPolicyId** que identifica o [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)e a propriedade **accessPackageId** que identifica o [accessPackage](../resources/accesspackage.md).  O usuário que está fazendo a solicitação já deve existir no diretório.
+Para um usuário que não seja administrador solicitar a criação de uma atribuição por conta própria, o valor da propriedade **requestType** é , e a propriedade accessPackageAssignment contém a com a ID dos próprios usuários, a propriedade `UserAdd`  `targetId` **assignmentPolicyId** que identifica [o accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)e a propriedade **accessPackageId** identificando [o accessPackage](../resources/accesspackage.md).  O usuário que faz a solicitação já deve existir no diretório.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta de série 200 e um novo objeto [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) no corpo da resposta.  
+Se tiver êxito, este método retornará um código de resposta de 200 séries e um novo [objeto accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) no corpo da resposta.  
 
-Se esta for uma `AdminAdd` solicitação, posteriormente, um [accessPackageAssignment](../resources/accesspackageassignment.md) e, se necessário, um [accessPackageSubject](../resources/accesspackagesubject.md) também será criado. Você pode localizar aqueles usando os parâmetros de consulta ao [listar accessPackageAssignments](accesspackageassignment-list.md).
+Se isso for uma solicitação, em seguida, um `AdminAdd` [accessPackageAssignment](../resources/accesspackageassignment.md) e, se necessário, um [accessPackageSubject](../resources/accesspackagesubject.md) também serão criados. Você pode localizá-los usando os parâmetros de consulta ao [listar accessPackageAssignments](accesspackageassignment-list.md).
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-admin-requests-a-direct-assignment-for-a-user"></a>Exemplo 1: o administrador solicita uma atribuição direta para um usuário
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação de uma atribuição direta, na qual o administrador está solicitando a criação de uma atribuição para o usuário. Como o [accessPackageSubject](../resources/accesspackagesubject.md) pode ainda não existir, o valor de **TargetId** é a ID de objeto do usuário que está sendo atribuído, o valor do **accessPackageId** é o pacote de acesso desejado para esse usuário, e o valor de **assignmentPolicyId** é uma política de atribuição direta no pacote de acesso.
+A seguir está um exemplo da solicitação de uma atribuição direta, na qual o administrador está solicitando a criação de uma atribuição para o usuário. Como o [accessPackageSubject](../resources/accesspackagesubject.md) pode ainda não existir, o valor do **targetID** é a ID do objeto do usuário que está sendo atribuído, o valor do **accessPackageId** é o pacote de acesso desejado para esse usuário, e o valor de **assignmentPolicyId** é uma política de atribuição direta nesse pacote de acesso.
  
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -132,10 +132,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>Exemplo 2: o usuário solicita um pacote e responde a perguntas de aprovação
+### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>Exemplo 2: o usuário solicita um pacote e responde perguntas para aprovação
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de uma solicitação em que o solicitante forneceu respostas ao aprovador para ajudá-lo a tomar decisões.
+A seguir, um exemplo de uma solicitação em que o solicitante forneceu respostas ao aprovador para ajudá-lo a tomar sua decisão.
  
 
 

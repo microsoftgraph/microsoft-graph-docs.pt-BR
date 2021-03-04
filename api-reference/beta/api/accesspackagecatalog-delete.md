@@ -3,14 +3,14 @@ title: Excluir accessPackageCatalog
 description: Exclua accessPackageCatalog.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 75889298f67ca7e751ef400d13902b588afafa04
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ad2dd60c9e2f104987edeef0bac46dcf940a14cd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951979"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439601"
 ---
 # <a name="delete-accesspackagecatalog"></a>Excluir accessPackageCatalog
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta da série 200. Não retorna nada no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta de 200 séries. Não retorna nada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

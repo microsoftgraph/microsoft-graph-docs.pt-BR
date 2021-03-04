@@ -1,16 +1,16 @@
 ---
 title: Listar riskyUsers
-description: Recupere as propriedades e os relacionamentos de uma coleção de objetos **riskyUser** .
+description: Recupere as propriedades e as relações de uma coleção de **objetos riskyUser.**
 localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d3b7f0e41525d1847ba3217f6e35ffc72028e888
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: d0ab9e55f6274f048d6fe25dd9f731c91dd182ad
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979169"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440771"
 ---
 # <a name="list-riskyusers"></a>Listar riskyUsers
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de uma coleção de objetos **riskyUser** .
+Recupere as propriedades e as relações de uma coleção de **objetos riskyUser.**
 
->**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | IdentityRiskyUser.Read.All |
+|Aplicativo | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,22 +38,22 @@ GET /riskyUsers
 GET /identityProtection/riskyUsers
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte `$filter` para personalizar a resposta de consulta. Consulte o exemplo mais adiante neste tópico. 
+Este método oferece `$filter` suporte para personalizar a resposta de consulta. Consulte o exemplo mais adiante neste tópico. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Workbook-Session-Id  | ID da sessão da pasta de trabalho que determina se as alterações são persistentes. Opcional.|
+| Workbook-Session-Id  | ID da sessão da workbook que determina se as alterações são persistentes. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [riskyUser](../resources/riskyuser.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [riskyUser](../resources/riskyuser.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-list-risky-users"></a>Exemplo 1: listar usuários arriscados
+### <a name="example-1-list-risky-users"></a>Exemplo 1: Listar usuários arriscados
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
@@ -114,7 +114,7 @@ Content-type: application/json
 
 ### <a name="example-2-list-risky-users-and-filter-the-results"></a>Exemplo 2: listar usuários arriscados e filtrar os resultados
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra como usar `$filter` o para obter a coleção de riskyUser cujo nível de risco agregado é médio.
+O exemplo a seguir mostra como usar para `$filter` obter a coleção de riskyUser cujo nível de risco agregado é Médio.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

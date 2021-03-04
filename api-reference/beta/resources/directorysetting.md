@@ -1,44 +1,44 @@
 ---
-title: tipo de recurso directorySetting
+title: Tipo de recurso directorySetting
 description: As configurações de diretório podem ser criadas com base no directorySettingTemplates disponível e alteradas de seus padrões predefinidos.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c3626d2e63fcea6a536d6dbd18845ea5331b428d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 50c73e9c68cd3d2fa3f4aed6c7eba84141443d1a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027073"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440448"
 ---
-# <a name="directorysetting-resource-type"></a>tipo de recurso directorySetting
+# <a name="directorysetting-resource-type"></a>Tipo de recurso directorySetting
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As configurações de diretório podem ser criadas com base no [directorySettingTemplates](directorysettingtemplate.md)disponível e alteradas de seus padrões predefinidos. Essas configurações podem controlar comportamentos de entidade ou de recurso, tanto em um nível de locatário quanto em um nível de entidade específico. Quando a mesma configuração é definida no nível de entidade de todo o locatário e específico, a configuração de nível de entidade específica pode ser recusada a partir da configuração de todo o locatário.  Por exemplo, a configuração de todos os locatários pode permitir que convidados sejam convidados por membros existentes de grupos, mas uma configuração de grupo específico pode recusar e não permitir que convidados sejam convidados por membros do grupo. As configurações definidas pelo sistema atualmente são controlar o comportamento de grupos do Office.
+As configurações de diretório podem ser criadas com base no [directorySettingTemplates](directorysettingtemplate.md)disponível e alteradas de seus padrões predefinidos. Essas configurações podem reger comportamentos de entidade ou recurso, tanto em um nível de locatário quanto em um nível específico de entidade. Quando a mesma configuração é definida no nível de entidade específica e em todo o locatário, a configuração de nível de entidade específica pode optar pela configuração de todo o locatário.  Por exemplo, a configuração de todo o locatário pode permitir que os convidados sejam convidados por membros existentes de grupos, mas uma configuração de grupo específica pode optar por não permitir que os convidados sejam convidados pelos membros do grupo. Atualmente, as configurações definidas pelo sistema são apenas o comportamento de grupos do Office.
 
-> **Observação**: a versão do/beta do tipo de recurso directorySetting só se aplica a grupos. A versão do/v1.0 foi renomeada como groupSetting.
+> **Observação**: a versão /beta do tipo de recurso directorySetting só se aplica a grupos. A versão /v1.0 foi renomeada para groupSetting.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criar configuração](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Criar um objeto Setting com base em um directorySettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo.|
+|[Criar configuração](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Crie um objeto de configuração com base em um directorySettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo.|
 |[Obter configuração](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Ler propriedades de um objeto de configuração específico.|
 |[Listar configurações](../api/directorysetting-list.md) | conjunto [directorySetting](directorysetting.md) |Lista propriedades de todos os objetos de configuração.|
 |[Atualizar configuração](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)  |Atualizar um objeto setting. Somente settingValues pode ser alterado em uma atualização.|
-|[Excluir configuração](../api/directorysetting-delete.md) | None |Excluir um objeto de configuração. |
+|[Excluir configuração](../api/directorysetting-delete.md) | Nenhum |Excluir um objeto de configuração. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|string|Exibe o nome deste grupo de configurações, que vem do modelo associado. Somente leitura.|
-|id|string| Identificador exclusivo dessas configurações. Somente leitura.|
-|templateId|string| Identificador exclusivo para o modelo usado para criar esse grupo de configurações. Somente leitura.|
-|values|coleção [SettingValue](settingvalue.md)| Coleção de pares de valor de nome. Deve conter e definir todas as configurações definidas no modelo.|
+|displayName|string|Nome de exibição desse grupo de configurações, que vem do modelo associado. Somente leitura.|
+|id|string| Identificador exclusivo para essas configurações. Somente leitura.|
+|templateId|string| Identificador exclusivo do modelo usado para criar esse grupo de configurações. Somente leitura.|
+|values|[coleção settingValue](settingvalue.md)| Coleção de pares de valores de nome. Deve conter e definir todas as configurações definidas no modelo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

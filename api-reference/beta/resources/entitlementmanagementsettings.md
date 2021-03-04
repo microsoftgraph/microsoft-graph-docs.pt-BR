@@ -3,14 +3,14 @@ title: Tipo de recurso entitlementManagementSettings
 description: Representa as configurações de todo o locatário para o gerenciamento de direitos do Azure AD.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9d5cc340837f173924802196bf12c9a63f26949a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: b4b6ee584e671e070955eb7c065c59cb8481c375
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159119"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440350"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>Tipo de recurso entitlementManagementSettings
 
@@ -20,19 +20,19 @@ Namespace: microsoft.graph
 
 Representa configurações que controlam o comportamento do gerenciamento de direitos do [Azure AD.](entitlementmanagement-root.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Leia as propriedades de um **objeto entitlementManagementSettings.** |
-| [Update](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualizar as propriedades de um **objeto entitlementManagementSettings.** |
+| [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Leia as propriedades de **um objeto entitlementManagementSettings.** |
+| [Atualização](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualize as propriedades de **um objeto entitlementManagementSettings.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |externalUserLifecycleAction|String|Um dos `None` , `BlockSignIn` ou `BlockSignInAndDelete` . |
-|daysUntilExternalUserDeletedAfterBlocked|Int64|Se for , o número de dias após um usuário externo ser impedido `externalUserLifecycleAction` de entrar antes de sua conta ser `BlockSignInAndDelete` excluída.|
+|daysUntilExternalUserDeletedAfterBlocked|Int64|Se for , o número de dias após um usuário externo ser bloqueado de `externalUserLifecycleAction` entrar antes que sua conta seja `BlockSignInAndDelete` excluída.|
 
 ## <a name="relationships"></a>Relações
 

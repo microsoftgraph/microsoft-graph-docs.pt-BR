@@ -1,16 +1,16 @@
 ---
 title: Excluir accessPackageAssignmentPolicy
-description: Excluir um accessPackageAssignmentPolicy.
+description: Exclua um accessPackageAssignmentPolicy.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 042a0389308e1f68171bea3586daf6ced7a7a090
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fa2ca4ac595beaf917a76c20d88d148ddf02516f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952200"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439741"
 ---
 # <a name="delete-accesspackageassignmentpolicy"></a>Excluir accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Em [Gerenciamento de qualificação do Azure ad](../resources/entitlementmanagement-root.md), exclua um [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-root.md)exclua [um accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta de conteúdo de 204. Não retorna nada no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta 204 No Content. Não retorna nada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

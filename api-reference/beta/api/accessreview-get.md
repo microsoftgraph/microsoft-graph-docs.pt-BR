@@ -1,16 +1,16 @@
 ---
 title: Obter accessReview
-description: No recurso de revisões do Azure AD Access, recupere um objeto accessReview.
+description: No recurso de revisões de acesso do Azure AD, recupere um objeto accessReview.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bc47fa2d371f2ab0dbcd150aa0005a3cbc82cdac
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c77a64b5cc125791b08a4d860a781c7ce40ae16d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951700"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439398"
 ---
 # <a name="get-accessreview"></a>Obter accessReview
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , recupere um objeto [accessReview](../resources/accessreview.md) .  
+No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) recupere um [objeto accessReview.](../resources/accessreview.md)  
 
-Para recuperar os revisores da revisão do Access, use a API [list accessReview reviewers](accessreview-listreviewers.md) . Para recuperar as decisões da revisão de acesso, use a API de [accessReview decisions](accessreview-listdecisions.md) ou a API [list My accessReview decisions](accessreview-listmydecisions.md) .
+Para recuperar os revisores da revisão de acesso, use a API de revisores [de acesso à](accessreview-listreviewers.md) lista. Para recuperar as decisões da revisão de acesso, use a API de decisões do [accessReview](accessreview-listdecisions.md) de lista ou a API de decisões [do meu accessReview.](accessreview-listmydecisions.md)
 
-Se esta for uma revisão de acesso recorrente, nenhuma decisão será associada à série de análise de acesso recorrente. Em vez disso, use a `instances` relação dessa série para recuperar uma coleção [accessReview](../resources/accessreview.md) das instâncias passadas, atual e futuras da revisão do Access. Cada instância passada e atual terá decisões.
+Se for uma revisão de acesso recorrente, nenhuma decisão será associada à série de revisão de acesso recorrente. Em vez disso, use a relação dessa série para recuperar uma coleção `instances` [accessReview](../resources/accessreview.md) das instâncias passadas, atuais e futuras da revisão de acesso. Cada instância passada e atual terá decisões.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All  |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview. Read. All, AccessReview. ReadWrite. Membership  |
+|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
-Para chamar essa API, o usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access ou que o usuário possa ser atribuído como um revisor na revisão do Access.  Para obter mais detalhes, consulte a função e os requisitos de permissão para [revisões do Access](../resources/accessreviews-root.md).
+Para chamar essa API, o usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso, ou o usuário pode ser atribuído como revistor na revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviews-root.md)
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /accessReviews/{reviewId}
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto accessReview](../resources/accessreview.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -130,7 +130,7 @@ Content-type: application/json
 - [Listar accessReviews](accessreview-list.md)
 - [Listar programControls](programcontrol-list.md)
 - [Listar revisores do accessReview](accessreview-listreviewers.md)
-- [Listar decisões accessReview](accessreview-listdecisions.md)
+- [Listar decisões do accessReview](accessreview-listdecisions.md)
 - [Listar minhas decisões do accessReview](accessreview-listmydecisions.md)
 
 

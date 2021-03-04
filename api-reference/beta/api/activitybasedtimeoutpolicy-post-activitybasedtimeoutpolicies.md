@@ -1,16 +1,16 @@
 ---
 title: Criar activityBasedTimeoutPolicy
-description: Criar um novo activityBasedTimeoutPolicy.
+description: Crie uma nova activityBasedTimeoutPolicy.
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: be48befe6c5d5f4e63945e885b8fef89a7605164
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 40ca870f0ca8f65578723a2bc613077d735700e7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952523"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438978"
 ---
 # <a name="create-activitybasedtimeoutpolicy"></a>Criar activityBasedTimeoutPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) .
+Crie um novo [objeto activityBasedTimeoutPolicy.](../resources/activitybasedtimeoutpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,11 +47,11 @@ POST policies/activityBasedTimeoutPolicies
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto activityBasedTimeoutPolicy.](../resources/activitybasedtimeoutpolicy.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de `201 Created` resposta e um novo objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

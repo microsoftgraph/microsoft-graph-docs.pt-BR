@@ -1,16 +1,16 @@
 ---
 title: Obter accessPackageAssignmentResourceRole
-description: Recupere as propriedades e os relacionamentos de um objeto accessPackageAssignmentResourceRole.
+description: Recupere as propriedades e as relações de um objeto accessPackageAssignmentResourceRole.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 09b07814df1331438fdb5150c7aa6dcc94310909
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 781dca31d93ff7f36c18bbfa625cf1da489ab088
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952028"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439629"
 ---
 # <a name="get-accesspackageassignmentresourcerole"></a>Obter accessPackageAssignmentResourceRole
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) .
+Recupere as propriedades e as relações de um [objeto accessPackageAssignmentResourceRole.](../resources/accesspackageassignmentresourcerole.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EntitlementManagement. Read. All, EntitlementManagement. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e o `200 OK` [objeto accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

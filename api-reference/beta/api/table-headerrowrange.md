@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4cda389c29a28cd27414bf2ba597dd92bd9aeac1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 08f96d3b33d612d1498694fdb5db7a547a05e861
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979121"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440693"
 ---
 # <a name="table-headerrowrange"></a>Table: HeaderRowRange
 
@@ -31,8 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/HeaderRowRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/HeaderRowRange
+GET /workbook/tables/{id|name}/HeaderRowRange
+GET /workbook/worksheets/{id|name}/tables/{id|name}/HeaderRowRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -57,8 +57,8 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "table_headerrowrange"
 }-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/HeaderRowRange
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/HeaderRowRange
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/table-headerrowrange-csharp-snippets.md)]

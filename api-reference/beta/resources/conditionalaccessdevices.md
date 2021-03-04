@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso conditionalAccessDevices
+title: Tipo de recurso conditionalAccessDevices
 description: Representa dispositivos no escopo da política.
 localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f0610fb376b265a261b8a88ab4181dd89bb9f6c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a42e6023ace493c5efb230ffd53eb9c4caee7d16
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040067"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440525"
 ---
-# <a name="conditionalaccessdevices-resource-type"></a>tipo de recurso conditionalAccessDevices
+# <a name="conditionalaccessdevices-resource-type"></a>Tipo de recurso conditionalAccessDevices
 
 Namespace: microsoft.graph
 
@@ -24,8 +24,10 @@ Representa dispositivos no escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeDeviceStates | Coleção String | Estados no escopo da política. `All` é o único valor permitido. |
-| excludeDeviceStates | Coleção String | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
+| includeDevices | Coleção de cadeias de caracteres | Estados no escopo da política. `All` é o único valor permitido. |
+| excludeDevices | Coleção de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
+| includeDeviceStates (preterido)| Coleção de cadeias de caracteres | Estados no escopo da política. `All` é o único valor permitido. |
+| excludeDeviceStates (preterido)| Coleção de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
 
 ## <a name="relationships"></a>Relações
 
@@ -38,8 +40,8 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "includeDeviceStates",
-    "excludeDeviceStates"
+    "includeDevices",
+    "excludeDevices"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessDevices",
   "baseType": null
@@ -47,8 +49,8 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "includeDeviceStates": [ "String" ],
-  "excludeDeviceStates": [ "String" ]
+  "includeDevices": [ "String" ],
+  "excludeDevices": [ "String" ]
 }
 ```
 
@@ -56,7 +58,7 @@ Veja a seguir uma representação JSON do recurso.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "conditionalAccessDeviceStates resource",
+  "description": "conditionalAccessDevices resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

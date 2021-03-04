@@ -1,24 +1,24 @@
 ---
-title: 'administrativeUnit: Delta'
-description: Obter unidades administrativas recém-criadas, atualizadas ou excluídas sem ter que executar uma leitura completa de toda a coleção de recursos.
+title: 'administrativeUnit: delta'
+description: Obter unidades administrativas recém-criadas, atualizadas ou excluídas sem precisar executar uma leitura completa de toda a coleção de recursos.
 localization_priority: Normal
 author: anandyadavMSFT
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 65362e1342480c334191db2958e60b442ee92d17
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b3056615a09a027911fd98c0636c6e313a2cad2c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962650"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438887"
 ---
-# <a name="administrativeunit-delta"></a>administrativeUnit: Delta
+# <a name="administrativeunit-delta"></a>administrativeUnit: delta
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter **administrativeunits dos quais** recém criados, atualizados ou excluídos sem ter que realizar uma leitura completa de toda a coleção de recursos. Para obter detalhes, consulte [usando a consulta Delta](/graph/delta-query-overview).
+Get newly created, updated, or **deleted administrativeUnits** without having to perform a full read of the entire resource collection. Para obter detalhes, consulte [Using delta query](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,13 +27,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit. Read. All, Directory. Read. All, AdministrativeUnit. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|administrativeunit | AdministrativeUnit. Read. All, Directory. Read. All, AdministrativeUnit. ReadWrite. All, Directory. ReadWrite. All |
+|administrativeunit | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para começar a controlar as alterações, faça uma solicitação que inclua a função Delta no recurso **administrativeUnit** .
+Para começar a controlar as alterações, você faz uma solicitação que inclui a função delta no **recurso administrativeUnit.**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -42,12 +42,12 @@ GET /administrativeUnits/delta
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-As alterações de controle provocam uma rodada de uma ou mais chamadas de função **Delta** . Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar qualquer parâmetro de consulta uma vez na frente. Em solicitações subsequentes, copie e aplique `nextLink` a `deltaLink` URL ou à resposta anterior. Essa URL já inclui os parâmetros codificados.
+O controle de alterações incorre em uma rodada de uma ou mais chamadas **de função delta.** Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar os parâmetros de consulta uma vez na frente. Em solicitações subsequentes, copie e aplique `nextLink` a URL ou da resposta `deltaLink` anterior. Essa URL já inclui os parâmetros codificados.
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
-| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **Delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção de recursos. |
+| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL da chamada de função delta anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de `deltaLink` alterações.  Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
+| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL da chamada de função delta anterior, indicando que há outras alterações a serem controladas na mesma coleção de `nextLink` recursos.  |
 
 ### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -56,7 +56,7 @@ Este método suporta os seguintes parâmetros de consulta OData para ajudar a pe
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade **id** sempre será retornada. 
 
 - Há suporte limitado para `$filter`:
-  * A única expressão suportada `$filter` é para controlar alterações de recursos específicos, por sua ID:  `$filter=id+eq+{value}` ou `$filter=id+eq+{value1}+or+id+eq+{value2}` . O número de IDs que você pode especificar é limitado pelo tamanho máximo de URL.
+  * A única expressão `$filter` com suporte é para controlar alterações para recursos específicos, por sua ID: ou  `$filter=id+eq+{value}` `$filter=id+eq+{value1}+or+id+eq+{value2}` . O número de IDs que você pode especificar é limitado pelo tamanho máximo da URL.
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -69,13 +69,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e um objeto da coleção [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`. 
+Se tiver êxito, este método retornará o código de resposta e um objeto de coleção `200 OK` [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`. 
 
-- Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O **administrativeUnit** continua fazendo solicitações usando a `nextLink` URL até que uma `deltaLink` URL seja incluída na resposta.
+- Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. A **administrativeUnit continua** fazendo solicitações usando `nextLink` a URL até que uma URL seja incluída na `deltaLink` resposta.
 
-- Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Persista e use a `deltaLink` URL para saber mais sobre as alterações no recurso no futuro.
+- Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Persista e use `deltaLink` a URL para saber mais sobre as alterações no recurso no futuro.
 
-Para obter detalhes e um exemplo, consulte [usando a consulta Delta](/graph/delta-query-overview) e [obter as alterações incrementais para usuários](/graph/delta-query-users).
+Para obter detalhes e um exemplo, consulte [Using delta query](/graph/delta-query-overview) and [Get incremental changes for users](/graph/delta-query-users).
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação

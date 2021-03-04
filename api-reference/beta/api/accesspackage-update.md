@@ -1,16 +1,16 @@
 ---
 title: Atualizar accessPackage
-description: Atualizar as propriedades de um objeto accessPackage.
+description: Atualize as propriedades de um objeto accessPackage.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3f0c0f5878cbd2176854685b82b8becf6ab88173
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 40f299edcca636a6f2041a36e10b0dc3963d8422
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872195"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439762"
 ---
 # <a name="update-accesspackage"></a>Atualizar accessPackage
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Sem suporte. |
+|Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -46,12 +46,12 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON dos parâmetros de um [objeto accessPackage.](../resources/accesspackage.md)
 
-A tabela a seguir mostra as propriedades que podem ser fornecidas quando você atualiza um [accessPackage](../resources/accesspackage.md).
+A tabela a seguir mostra as propriedades que podem ser fornecidas quando você atualiza [um accessPackage](../resources/accesspackage.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome do pacote de acesso.|
-|description|Cadeia de caracteres|A descrição do pacote de acesso.|
+|displayName|String|O nome do pacote de acesso.|
+|descrição|String|A descrição do pacote de acesso.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
@@ -105,7 +105,6 @@ Content-length: 38
 ``` http
 HTTP/1.1 204 No Content
 Content-Type: application/json
-
 ```
 
 <!--

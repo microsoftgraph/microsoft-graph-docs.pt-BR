@@ -1,16 +1,16 @@
 ---
 title: Criar accessPackageAssignmentPolicy
-description: Use esta API para criar um novo accessPackageAssignmentPolicy.
+description: Use essa API para criar um novo accessPackageAssignmentPolicy.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a56baffd8f15997180569c89c550ccd2e093b176
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 6868c48fd2fdfba309a0af5849451a039bae1769
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753026"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439699"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>Criar accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Em [Gerenciamento de qualificação do Azure ad](../resources/entitlementmanagement-root.md), crie um novo objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .
+No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-root.md)crie um novo [objeto accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,21 +47,21 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta de série 200 e um novo objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta de 200 séries e um novo [objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-direct-assignment-policy"></a>Exemplo 1: criar uma política de atribuição direta
+### <a name="example-1-create-a-direct-assignment-policy"></a>Exemplo 1: Criar uma política de atribuição direta
 
-Uma política de atribuição direta é útil quando as solicitações de atribuição de pacote de acesso só serão criadas por um administrador, e não pelos próprios usuários.
+Uma política de atribuição direta é útil quando as solicitações de atribuição de pacote de acesso só serão criadas por um administrador, não pelos próprios usuários.
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação para criar uma política de atribuição de pacote do Access. Nesta política, nenhum usuário pode solicitar, nenhuma aprovação é necessária e não há nenhuma revisão do Access.
+O exemplo a seguir mostra uma solicitação para criar uma política de atribuição de pacote de acesso. Nesta política, nenhum usuário pode solicitar, nenhuma aprovação é necessária e não há críticas de acesso.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -136,11 +136,11 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>Exemplo 2: criar uma política para usuários de outras organizações solicitarem
 
-O exemplo a seguir mostra uma política mais complexa com aprovações de dois estágios e revisões de acesso.
+O exemplo a seguir mostra uma política mais complexa com aprovações de dois estágios e avaliações de acesso.
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de solicitação para criar uma política de atribuição de pacote do Access. 
+A seguir, um exemplo da solicitação para criar uma política de atribuição de pacote de acesso. 
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -279,13 +279,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-assignment-policy-with-questions"></a>Exemplo 3: criar política de atribuição com perguntas
+### <a name="example-3-create-assignment-policy-with-questions"></a>Exemplo 3: Criar política de atribuição com perguntas
 
-As perguntas configuradas em uma política de atribuição serão solicitadas aos solicitantes no escopo da política. Suas respostas serão exibidas para seus aprovadores. As IDs de pergunta são somente leitura e são incluídas na resposta por padrão.
+Perguntas configuradas em uma política de atribuição serão feitas aos solicitadores no escopo da política. Suas respostas serão mostradas aos aprovadores. As IDs de perguntas são somente leitura e são incluídas na resposta por padrão.
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação para criar uma política de atribuição de pacote do Access. 
+O exemplo a seguir mostra uma solicitação para criar uma política de atribuição de pacote de acesso. 
 
 
 

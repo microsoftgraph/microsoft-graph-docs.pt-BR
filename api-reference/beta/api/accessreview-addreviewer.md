@@ -1,24 +1,24 @@
 ---
-title: Adicionar revisor accessReview
-description: 'No recurso de revisões do Azure AD Access, atualize um objeto accessReview existente para adicionar outro usuário como um revisor.  Essa operação só é permitida para uma revisão do Access que ainda não foi concluída e somente para uma revisão do Access em que os revisores são explicitamente especificados. Essa operação não é permitida para uma revisão do Access na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão do Access na qual os proprietários do grupo são atribuídos como os revisores. '
+title: Adicionar o revisor accessReview
+description: 'No recurso de revisões de acesso do Azure AD, atualize um objeto accessReview existente para adicionar outro usuário como revisor.  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e somente para uma revisão de acesso em que os revisadores são explicitamente especificados. Essa operação não é permitida para uma revisão de acesso na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão de acesso na qual os proprietários do grupo são atribuídos como revistores. '
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 423fd326ffa2d577d24265931deb5ad84027ecc4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 86ea5525745933e40121a2906cd4a90fdb7f3179
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951720"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439447"
 ---
-# <a name="add-accessreview-reviewer"></a>Adicionar revisor accessReview
+# <a name="add-accessreview-reviewer"></a>Adicionar o revisor accessReview
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , atualize um objeto [accessReview](../resources/accessreview.md) existente para adicionar outro usuário como um revisor.  Essa operação só é permitida para uma revisão do Access que ainda não foi concluída e somente para uma revisão do Access em que os revisores são explicitamente especificados. Essa operação não é permitida para uma revisão do Access na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão do Access na qual os proprietários do grupo são atribuídos como os revisores. 
+No recurso de revisões de acesso do Azure AD, atualize um objeto [accessReview](../resources/accessreview.md) existente para adicionar outro usuário como [revisor.](../resources/accessreviews-root.md)  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e somente para uma revisão de acesso em que os revisadores são explicitamente especificados. Essa operação não é permitida para uma revisão de acesso na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão de acesso na qual os proprietários do grupo são atribuídos como revistores. 
 
 
 ## <a name="permissions"></a>Permissões
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview.ReadWrite.Membership |
+|Aplicativo                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,9 +41,9 @@ POST /accessReviews/{reviewId}/reviewers
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON da ID de um usuário que será um revisor.
+No corpo da solicitação, fornece uma representação JSON da ID de um usuário que será um revistor.
 
-A tabela a seguir mostra as propriedades que podem ser fornecidas ao atualizar um accessReview.
+A tabela a seguir mostra as propriedades que podem ser fornecidas quando você atualiza um accessReview.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -51,14 +51,14 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas ao atualizar u
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201, Created` código de resposta.
+Se tiver êxito, este método retornará um `201, Created` código de resposta .
 
 ## <a name="example"></a>Exemplo
 
-Este é um exemplo de atualização de uma revisão de acesso de um único tempo (sem refazê-las) com um revisor adicional.
+Este é um exemplo de atualização de uma revisão de acesso única (não recorrente) com um revistor adicional.
 
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, forneça uma representação JSON da ID do objeto do usuário.
+No corpo da solicitação, fornece uma representação JSON da id do objeto do usuário.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

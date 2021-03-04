@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c3e00f4371b62e81c84985cce03de0c2a6ba8350
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4da9f394df7f050d2ecb480639d593630d3ccb9e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980367"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440655"
 ---
 # <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
 
@@ -31,8 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/DataBodyRange
+GET /workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
+GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/DataBodyRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -57,8 +57,8 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "tablecolumn_databodyrange"
 }-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablecolumn-databodyrange-csharp-snippets.md)]

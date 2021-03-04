@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: acceptRecommendations'
-description: "Permite a aceitação de recomendações em todas as decisões não revisadas em uma instância de revisão do Access ' de que eles são o revisor. "
+description: 'Permite a aceitação de recomendações em todas as decisões não revisadas em uma instância de revisão de acesso em que elas são revisadas. '
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a9dee9f65d4070860c2826b64b602984d7d324a1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2ed7a78287acd725955220cfaca426faf0739556
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222160"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439244"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permite a aceitação de recomendações em todos os [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) não revisados em um [accessReviewInstance](../resources/accessreviewinstance.md) em que eles são o revisor.
+Permite a aceitação de recomendações em todos os [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) não revisados em um [accessReviewInstance](../resources/accessreviewinstance.md) em que eles são os revisores.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft)| Sem suporte. |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft)| Sem suporte. |
 
-O usuário conectado também deve ser um revisor no accessReviewInstance.
+O usuário de entrada também deve ser um revisor no accessReviewInstance.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

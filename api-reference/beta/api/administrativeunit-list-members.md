@@ -1,16 +1,16 @@
 ---
 title: Listar membros
-description: Use essa API para obter a lista de Membros (usuário e grupo) em uma unidade administrativa.
+description: Use essa API para obter a lista de membros (usuário e grupo) em uma unidade administrativa.
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bcb61938d42ac38a04b90c542d3ea1ac207e034d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 873bf5b812be584725b515aa6f23505bd85cea42
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997243"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438831"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para obter a lista de Membros (usuário e grupo) em uma unidade administrativa.
+Use essa API para obter a lista de membros (usuário e grupo) em uma unidade administrativa.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit. Read. All, Directory. Read. All, AdministrativeUnit. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | AdministrativeUnit. Read. All, Directory. Read. All, AdministrativeUnit. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
-> Observação: para listar os membros de uma associação oculta em uma unidade administrativa, a permissão member. Read. Hidden é necessária.
+> Observação: para listar os membros de uma associação oculta em uma unidade administrativa, a permissão Member.Read.Hidden é necessária.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -49,11 +49,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [User](../resources/user.md) e/ou [Group](../resources/group.md) no corpo da resposta.  Em vez disso, se você colocar `$ref` no final da solicitação, a resposta conterá uma coleção de `@odata.id` links/URLs para os membros.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` de usuário [](../resources/user.md) e/ou grupo no corpo da resposta. [](../resources/group.md)  Em vez disso, se você colocar no final da solicitação, a resposta conterá uma coleção de `$ref` `@odata.id` links/URLs para os membros.
 
 ## <a name="examples"></a>Exemplos
-##### <a name="list-member-objects"></a>Listar objetos member
-A solicitação a seguir listará os membros da unidade administrativa, retornando um conjunto de usuários e/ou grupos.
+##### <a name="list-member-objects"></a>Listar objetos membros
+A solicitação a seguir lista os membros da unidade administrativa, retornando uma coleção de usuários e/ou grupos.
 
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
@@ -86,8 +86,8 @@ Content-length: 100
 }
 ```
 
-##### <a name="list-member-references"></a>Listar referências de membros
-A solicitação a seguir listará as referências de membro da unidade administrativa, retornando uma coleção de `@odata.id` referências para os membros.
+##### <a name="list-member-references"></a>Listar referências de membro
+A solicitação a seguir lista as referências de membro da unidade administrativa, retornando uma coleção de `@odata.id` referências aos membros.
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```

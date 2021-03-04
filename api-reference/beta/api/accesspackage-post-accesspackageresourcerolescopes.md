@@ -1,16 +1,16 @@
 ---
 title: Criar accessPackageResourceRoleScope
-description: Crie um novo accessPackageResourceRoleScope para adicionar uma função de recurso a um pacote do Access.
+description: Crie um novo accessPackageResourceRoleScope para adicionar uma função de recurso a um pacote de acesso.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 21111e91d87d3ff70f8edb8de826c87310b99007
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ffaedc45cc512b554fda3ce4dd06794fba716b16
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952315"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439804"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>Criar accessPackageResourceRoleScope
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) para adicionar uma função de recurso a um pacote do Access.  O recurso de pacote de acesso já deve existir no catálogo de pacotes do Access.  Todas as solicitações subsequentes de atribuição de pacote de acesso a esse pacote de acesso incluirão essa função de recurso.  
+Crie um novo [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) para adicionar uma função de recurso a um pacote de acesso.  O recurso do pacote de acesso já deve existir no catálogo de pacotes de acesso.  Qualquer solicitação de atribuição de pacote de acesso subsequente a esse pacote de acesso incluirá essa função de recurso.  
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,11 +47,11 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) .  Inclua no objeto as relações com um [accessPackageResourceRole](../resources/accesspackageresourcerole.md) e [accessPackageResourceScope](../resources/accesspackageresourcescope.md).  
+No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageResourceRoleScope.](../resources/accesspackageresourcerolescope.md)  Inclua no objeto as relações com [um accessPackageResourceRole](../resources/accesspackageresourcerole.md) e [accessPackageResourceScope](../resources/accesspackageresourcescope.md).  
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta de série 200 e um novo objeto [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta de 200 séries e um novo [objeto accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

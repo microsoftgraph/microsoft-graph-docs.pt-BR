@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: pendingAccessReviewInstances'
-description: Recupere objetos accessReviewInstance com aprovação pendente chamando o usuário.
+description: Recupere os objetos accessReviewInstance aguardando aprovação chamando o usuário.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 793192a647865d524754f20be7d1deb664821d44
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 82ae31f82b9c9609403221bc7a0e82c0e220941d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221997"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439151"
 ---
 # <a name="accessreviewinstance-pendingaccessreviewinstances"></a>accessReviewInstance: pendingAccessReviewInstances
 
@@ -18,21 +18,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os objetos [accessReviewInstance](../resources/accessreviewinstance.md) com aprovação pendente pelo usuário de chamada. Uma lista de zero ou mais objetos accessReviewInstance é retornada, da qual o usuário de chamada é um revisor atribuído.
+Recupere os [objetos accessReviewInstance](../resources/accessreviewinstance.md) pendentes aprovação pelo usuário de chamada. Uma lista de zero ou mais objetos accessReviewInstance são retornados, dos quais o usuário de chamada é um revisor atribuído.
 
 >[!NOTE]
->Se muitos **accessReviewInstances** forem retornados, para melhorar a eficiência e evitar tempos limite, recupere o conjunto de resultados nas páginas, incluindo o parâmetro de consulta $Top com um tamanho de página de no máximo 100, e o parâmetro de consulta $Skip = 0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata. nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata. nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito em paginação de dados do Microsoft Graph em seu aplicativo.
+>Se muitos **accessReviewInstances são retornados,** para melhorar a eficiência e evitar tempos-extra, recupere o resultado definido em páginas, incluindo o parâmetro de consulta $top com um tamanho de página de no máximo 100 e o parâmetro de consulta $skip=0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata.nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata.nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito na paja de dados do Microsoft Graph em seu aplicativo.
 >
->Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph pausará automaticamente os resultados a 100 resultados por página.
+>Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph paginará automaticamente os resultados em 100 resultados por página.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. All  |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 
- O usuário conectado só vê instâncias das quais eles estão atribuídos revisor no accessReviewScheduleDefinition da instância.
+ O usuário in-loco só vê instâncias das quais são atribuídas revisores no accessReviewScheduleDefinition da instância.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,14 +43,14 @@ GET /me/pendingAccessReviewInstances
 Nenhum.
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação.
+Não fornecer um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma matriz de objetos [accessReviewInstance](../resources/accessreviewinstance.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma matriz de `200 OK` [objetos accessReviewInstance](../resources/accessreviewinstance.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão do Access em um locatário.
+O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão de acesso em um locatário.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -166,7 +166,7 @@ Content-type: application/json
 ## <a name="see-also"></a>Confira também
 
 - [Obter accessReviewInstance](accessreviewinstance-get.md)
-- [Obter aprovação pendente accessReviewInstanceDecisionItems](accessreviewinstancedecisionitem-listpendingapproval.md)
+- [Obter a aprovação pendente accessReviewInstanceDecisionItems](accessreviewinstancedecisionitem-listpendingapproval.md)
 
 
 <!--

@@ -1,16 +1,16 @@
 ---
 title: Atualizar accessReview
-description: No recurso de revisões do Azure AD Access, atualize um objeto accessReview existente para alterar uma ou mais de suas propriedades.
+description: No recurso de análises de acesso do Azure AD, atualize um objeto accessReview existente para alterar uma ou mais de suas propriedades.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1229729f2d3d149bf06d5a6308fa659ed56dcca7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6de1862411d20f1e1fc68fc202a5e59aa888f165
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952603"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439258"
 ---
 # <a name="update-accessreview"></a>Atualizar accessReview
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , atualize um objeto [accessReview](../resources/accessreview.md) existente para alterar uma ou mais de suas propriedades.
+No recurso de análises de acesso do Azure [AD,](../resources/accessreviews-root.md) atualize um objeto [accessReview](../resources/accessreview.md) existente para alterar uma ou mais de suas propriedades.
 
-Esta API não se destina a alterar os revisores ou as decisões de uma revisão.  Para alterar os revisores, use as APIs [revisar](accessreview-addreviewer.md) ou [removeReviewer](accessreview-removereviewer.md) .  Para interromper uma revisão única já iniciada ou uma instância já iniciada de uma revisão recorrente, antes, use a API de [parada](accessreview-stop.md) . Para aplicar as decisões ao grupo de destino ou aos direitos de acesso do aplicativo, use a API [aplicar](accessreview-apply.md) . 
+Essa API não se destina a alterar os revisadores ou decisões de uma revisão.  Para alterar os revisores, use [as APIs addReviewer](accessreview-addreviewer.md) [ou removeReviewer.](accessreview-removereviewer.md)  Para interromper uma revisão já iniciada uma vez ou uma instância já iniciada de uma revisão recorrente, antes, use a API [stop.](accessreview-stop.md) Para aplicar as decisões ao grupo de destino ou aos direitos de acesso ao aplicativo, use a API [de aplicação.](accessreview-apply.md) 
 
 
 ## <a name="permissions"></a>Permissões
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview.ReadWrite.Membership |
+|Aplicativo                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,28 +43,28 @@ PATCH /accessReviews/{reviewId}
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON dos parâmetros de um objeto [accessReview](../resources/accessreview.md) .
+No corpo da solicitação, fornece uma representação JSON dos parâmetros de um [objeto accessReview.](../resources/accessreview.md)
 
-A tabela a seguir mostra as propriedades que podem ser fornecidas ao atualizar um accessReview.
+A tabela a seguir mostra as propriedades que podem ser fornecidas quando você atualiza um accessReview.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | O nome de revisão do acesso.  |
-| `startDateTime`           |`DateTimeOffset`                                                | O DateTime quando a revisão está agendada para ser iniciada.  Isso deve ser uma data no futuro.   |
-| `endDateTime`             |`DateTimeOffset`                                                | O DateTime quando a revisão é agendada para terminar. Este deve ser pelo menos um dia depois da data de início.   |
-| `description`             |`String`                                                        | A descrição, para mostrar aos revisores. |
+| `displayName`             |`String`                                                        | O nome da revisão de acesso.  |
+| `startDateTime`           |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para ser inicial.  Essa deve ser uma data no futuro.   |
+| `endDateTime`             |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para terminar. Isso deve ser pelo menos um dia depois da data de início.   |
+| `description`             |`String`                                                        | A descrição, para mostrar aos revisadores. |
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `204, Accepted` código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `204, Accepted` [objeto accessReview](../resources/accessreview.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-Este é um exemplo de atualização de uma revisão de acesso de uma única vez (sem refazêvel).
+Este é um exemplo de atualização de uma revisão de acesso única (não recorrente).
 
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, forneça uma representação JSON das novas propriedades do objeto [accessReview](../resources/accessreview.md) .
+No corpo da solicitação, fornece uma representação JSON das novas propriedades do [objeto accessReview.](../resources/accessreview.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)

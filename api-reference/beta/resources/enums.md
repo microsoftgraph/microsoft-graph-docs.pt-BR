@@ -1,29 +1,29 @@
 ---
-title: Valores de enum
+title: Valores denum
 description: Valores de enumeração do Microsoft Graph
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: a38f82743e7520fda7b13fa76f6f9192cd44167c
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 413c29c56b3f5b741ac83c50560c25d21d33016d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238222"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440326"
 ---
-# <a name="enum-values"></a>Valores de enum
+# <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
 
-### <a name="appliedconditionalaccesspolicyresult-values"></a>Valores appliedConditionalAccessPolicyResult 
+### <a name="appliedconditionalaccesspolicyresult-values"></a>valores appliedConditionalAccessPolicyResult 
 
 
 
 |Member|
 |:---|
 |sucesso|
-|falha|
+|failure|
 |notApplied|
 |notEnabled|
 |desconhecido|
@@ -33,7 +33,7 @@ Namespace: microsoft.graph
 |reportOnlyNotApplied|
 |reportOnlyInterrupted|
 
-### <a name="authenticationmethodfeature-values"></a>Valores de authenticationMethodFeature 
+### <a name="authenticationmethodfeature-values"></a>authenticationMethodFeature values 
 
 
 
@@ -45,7 +45,7 @@ Namespace: microsoft.graph
 |passwordlessCapable|
 |mfaCapable|
 
-### <a name="authmethodstype-values"></a>Valores de authMethodsType 
+### <a name="authmethodstype-values"></a>valores authMethodsType 
 
 
 
@@ -65,20 +65,20 @@ Namespace: microsoft.graph
 |mobilePhoneAndSMS|
 |unknownFutureValue|
 
-### <a name="azureadlicensetype-values"></a>Valores de azureADLicenseType 
+### <a name="azureadlicensetype-values"></a>Valores do azureADLicenseType 
 
 
 
 |Member|
 |:---|
 |nenhum|
-|free|
-|básico|
+|gratuito|
+|basic|
 |premiumP1|
 |premiumP2|
 |unknownFutureValue|
 
-### <a name="conditionalaccessconditions-values"></a>Valores conditionalAccessConditions 
+### <a name="conditionalaccessconditions-values"></a>conditionalAccessConditions values 
 
 
 
@@ -96,18 +96,18 @@ Namespace: microsoft.graph
 |deviceState|
 |client|
 
-### <a name="conditionalaccessstatus-values"></a>Valores conditionalAccessStatus 
+### <a name="conditionalaccessstatus-values"></a>conditionalAccessStatus values 
 
 
 
 |Member|
 |:---|
 |sucesso|
-|falha|
+|failure|
 |notApplied|
 |unknownFutureValue|
 
-### <a name="featuretype-values"></a>valores de featureType 
+### <a name="featuretype-values"></a>valores featureType 
 
 
 
@@ -117,7 +117,7 @@ Namespace: microsoft.graph
 |redefinir|
 |unknownFutureValue|
 
-### <a name="grouptype-values"></a>Valores de groupType 
+### <a name="grouptype-values"></a>valores groupType 
 
 
 
@@ -127,7 +127,7 @@ Namespace: microsoft.graph
 |azureAD|
 |unknownFutureValue|
 
-### <a name="includeduserroles-values"></a>Valores includedUserRoles 
+### <a name="includeduserroles-values"></a>includedUserRoles values 
 
 
 
@@ -139,7 +139,7 @@ Namespace: microsoft.graph
 |user|
 |unknownFutureValue|
 
-### <a name="includedusertypes-values"></a>Valores includedUserTypes 
+### <a name="includedusertypes-values"></a>valores includedUserTypes 
 
 
 
@@ -147,10 +147,10 @@ Namespace: microsoft.graph
 |:---|
 |all|
 |Membro|
-|convidado|
+|guest|
 |unknownFutureValue|
 
-### <a name="initiatortype-values"></a>valores initiatorType 
+### <a name="initiatortype-values"></a>valores de initiatorType 
 
 
 
@@ -161,13 +161,13 @@ Namespace: microsoft.graph
 |sistema|
 |unknownFutureValue|
 
-### <a name="migrationstatus-values"></a>Valores migrationStatus 
+### <a name="migrationstatus-values"></a>migrationStatus values 
 
 
 
 |Member|
 |:---|
-|pronto|
+|ready|
 |needsReview|
 |additionalStepsRequired|
 |unknownFutureValue|
@@ -184,29 +184,29 @@ Namespace: microsoft.graph
 |trusted|
 |unknownFutureValue|
 
-### <a name="operationresult-values"></a>Valores de operationResult 
+### <a name="operationresult-values"></a>valores operationResult 
 
 
 
 |Member|
 |:---|
 |sucesso|
-|falha|
+|failure|
 |timeout|
 |unknownFutureValue|
 
-### <a name="provisioningresult-values"></a>Valores de provisioningResult 
+### <a name="provisioningresult-values"></a>valores provisioningResult 
 
 
 
 |Member|
 |:---|
 |sucesso|
-|falha|
+|failure|
 |ignorado|
 |unknownFutureValue|
 
-### <a name="provisioningsteptype-values"></a>Valores de provisioningStepType 
+### <a name="provisioningsteptype-values"></a>valores provisioningStepType 
 
 
 
@@ -217,10 +217,10 @@ Namespace: microsoft.graph
 |matching|
 |processamento|
 |referenceResolution|
-|exportar|
+|export|
 |unknownFutureValue|
 
-### <a name="registrationauthmethod-values"></a>Valores de registrationAuthMethod 
+### <a name="registrationauthmethod-values"></a>registrationAuthMethod values 
 
 
 
@@ -237,7 +237,7 @@ Namespace: microsoft.graph
 |appPassword|
 |unknownFutureValue|
 
-### <a name="registrationstatustype-values"></a>valores de registrationStatusType 
+### <a name="registrationstatustype-values"></a>valores registrationStatusType 
 
 
 
@@ -249,7 +249,7 @@ Namespace: microsoft.graph
 |mfaRegistered|
 |unknownFutureValue|
 
-### <a name="requirementprovider-values"></a>Valores de requirementProvider 
+### <a name="requirementprovider-values"></a>valores de requirementProvider 
 
 
 
@@ -259,7 +259,7 @@ Namespace: microsoft.graph
 |CA|
 |unknownFutureValue|
 
-### <a name="riskdetail-values"></a>Valores de riskDetail 
+### <a name="riskdetail-values"></a>valores riskDetail 
 
 
 
@@ -278,7 +278,7 @@ Namespace: microsoft.graph
 |adminConfirmedUserCompromised|
 |unknownFutureValue|
 
-### <a name="riskeventtype-values"></a>Valores riskEventType 
+### <a name="riskeventtype-values"></a>valores riskEventType 
 
 
 
@@ -292,15 +292,15 @@ Namespace: microsoft.graph
 |suspiciousIPAddress|
 |leakedCredentials|
 |investigationsThreatIntelligence|
-|genérico|
+|generic|
 |adminConfirmedUserCompromised|
-|mcasImp feirableTravel|
+|mcasImpossibleTravel|
 |mcasSuspiciousInboxManipulationRules|
 |investigationsThreatIntelligenceSigninLinked|
 |maliciousIPAddressValidCredentialsBlockedIP|
 |unknownFutureValue|
 
-### <a name="risklevel-values"></a>Valores riskLevel 
+### <a name="risklevel-values"></a>valores riskLevel 
 
 
 
@@ -313,7 +313,7 @@ Namespace: microsoft.graph
 |nenhum|
 |unknownFutureValue|
 
-### <a name="riskstate-values"></a>Valores de riskState 
+### <a name="riskstate-values"></a>valores riskState 
 
 
 
@@ -327,7 +327,7 @@ Namespace: microsoft.graph
 |confirmedCompromised|
 |unknownFutureValue|
 
-### <a name="tokenissuertype-values"></a>Valores de tokenIssuerType 
+### <a name="tokenissuertype-values"></a>Valores tokenIssuerType 
 
 
 
@@ -337,7 +337,7 @@ Namespace: microsoft.graph
 |ADFederationServices|
 |UnknownFutureValue|
 
-### <a name="usageauthmethod-values"></a>Valores usageAuthMethod 
+### <a name="usageauthmethod-values"></a>usageAuthMethod values 
 
 
 
@@ -355,15 +355,15 @@ Namespace: microsoft.graph
 |appPassword|
 |unknownFutureValue|
 
-### <a name="authenticationmethodkeystrength-values"></a>Valores authenticationMethodKeyStrength
+### <a name="authenticationmethodkeystrength-values"></a>authenticationMethodKeyStrength values
 
 |Member|
 |:---|
 |normal|
-|fraca|
+|fraco|
 |desconhecido|
 
-### <a name="educationaddedstudentaction-values"></a>Valores de educationAddedStudentAction
+### <a name="educationaddedstudentaction-values"></a>valores educationAddedStudentAction
 
 |Member|
 |:---|
@@ -371,7 +371,7 @@ Namespace: microsoft.graph
 |assignIfOpen|
 |unknownFutureValue|
 
-### <a name="externalemailotpstate-values"></a>Valores de externalEmailOtpState
+### <a name="externalemailotpstate-values"></a>valores externalEmailOtpState
 
 |Member|
 |:---|
@@ -380,7 +380,7 @@ Namespace: microsoft.graph
 |desabilitadas|
 |unknownFutureValue|
 
-### <a name="replyrestriction-values"></a>Valores de replyRestriction
+### <a name="replyrestriction-values"></a>valores replyRestriction
 
 | Member
 |:--------------
@@ -388,7 +388,7 @@ Namespace: microsoft.graph
 | authorAndModerators
 | unknownFutureValue
 
-### <a name="usernewmessagerestriction-values"></a>Valores de userNewMessageRestriction
+### <a name="usernewmessagerestriction-values"></a>valores userNewMessageRestriction
 
 | Member
 |:--------------
@@ -397,7 +397,7 @@ Namespace: microsoft.graph
 |moderadores
 |unknownFutureValue
 
-### <a name="volumetype-values"></a>valores de volumeType
+### <a name="volumetype-values"></a>valores volumeType
 
 | Member
 |:--------------
@@ -426,7 +426,7 @@ Namespace: microsoft.graph
 |atestado|
 |notAttested|
 
-### <a name="emailtype-values"></a>valores de emailType
+### <a name="emailtype-values"></a>valores emailType
 
 |Member|
 |:---|
@@ -434,30 +434,30 @@ Namespace: microsoft.graph
 |trabalho|
 |pessoal|
 |main|
-|outros|
+|other|
 
-### <a name="authenticationmethodtargettype-values"></a>Valores de authenticationMethodTargetType
+### <a name="authenticationmethodtargettype-values"></a>authenticationMethodTargetType values
 
 |Member|
 |:---|
 |user|
 |group|
 
-### <a name="authenticationmethodstate-values"></a>Valores de authenticationMethodState
+### <a name="authenticationmethodstate-values"></a>authenticationMethodState values
 
 |Member|
 |:---|
 |habilitadas|
 |desabilitadas|
 
-### <a name="fido2restrictionenforcementtype-values"></a>Valores fido2RestrictionEnforcementType
+### <a name="fido2restrictionenforcementtype-values"></a>valores fido2RestrictionEnforcementType
 
 |Member|
 |:---|
-|permitir|
+|allow|
 |block|
 
-### <a name="authenticatorappcontexttype-values"></a>Valores de authenticatorAppContextType
+### <a name="authenticatorappcontexttype-values"></a>Valores authenticatorAppContextType
 
 |Member|
 |:---|
@@ -469,14 +469,14 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |birthday|
-|olm|
+|wedding|
 |unknownFutureValue|
 
-### <a name="skillproficiencylevel-values"></a>Valores de skillProficiencyLevel
+### <a name="skillproficiencylevel-values"></a>Valores skillProficiencyLevel
 
 |Member|
 |:---|
-|aaa|
+|elementar|
 |limitedWorking|
 |generalProfessional|
 |advancedProfessional|
@@ -487,7 +487,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|aaa|
+|elementar|
 |conversational|
 |limitedWorking|
 |professionalWorking|
@@ -495,7 +495,7 @@ Namespace: microsoft.graph
 |nativeOrBilingual|
 |unknownFutureValue|
 
-### <a name="personrelationship-values"></a>Valores personRelationship
+### <a name="personrelationship-values"></a>valores personRelationship
 
 |Member|
 |:---|
@@ -508,15 +508,15 @@ Namespace: microsoft.graph
 |alternateContact|
 |friend|
 |spouse|
-|sibling|
+|irmão|
 |filho|
 |primário|
-|patrocinador|
+|sponsor|
 |emergencyContact|
-|outros|
+|other|
 |unknownFutureValue|
 
-### <a name="attachmenttype-values"></a>Valores de attachmentType
+### <a name="attachmenttype-values"></a>valores attachmentType
 
 | Member
 |:--------------
@@ -524,7 +524,7 @@ Namespace: microsoft.graph
 | item
 | referência
 
-### <a name="analyticsactivitytype-values"></a>Valores de analyticsActivityType
+### <a name="analyticsactivitytype-values"></a>valores analyticsActivityType
 
 | Member
 |:--------------
@@ -534,7 +534,7 @@ Namespace: microsoft.graph
 | foco
 | meeting
 
-### <a name="registrationauthmethod-values"></a>Valores de registrationAuthMethod
+### <a name="registrationauthmethod-values"></a>registrationAuthMethod values
 
 |Member|
 |:---|
@@ -546,20 +546,20 @@ Namespace: microsoft.graph
 |appCode|
 |alternateMobilePhone|
 
-### <a name="entitytypes-values"></a>Valores de entityTypes
+### <a name="entitytypes-values"></a>valores entityTypes
 
 |Member|
 |:---|
 |event|
-|mensagem|
+|message|
 |driveItem|
 |externalItem|
 |site|
 |list|
 |listItem|
-|Unidade|
+|drive|
 
-### <a name="bucketaggregationsortproperty-values"></a>Valores bucketAggregationSortProperty
+### <a name="bucketaggregationsortproperty-values"></a>valores bucketAggregationSortProperty
 
 |Member|
 |:---|
@@ -572,20 +572,20 @@ Namespace: microsoft.graph
 | Membro             | Valor | Descrição                              |
 | :----------------- | :---- | :--------------------------------------- |
 | primário             | 0     | O pai do usuário.                       |
-| relativo           | 1      | Relativo do usuário.                     |
+| relative           | 1      | O usuário é relativo.                     |
 | aide               | 2      | O assistente do usuário.                         |
-| ol             | 3      | O nome do usuário.                       |
-| guardian           | 4      | O guardião do usuário.                     |
+| dr             | 3      | O médico do usuário.                       |
+| guardian           | 4      | O tutor do usuário.                     |
 | filho              | 5      | O filho do usuário.                        |
-| outros              | 6      | Uma relação não especificada com o usuário. |
+| other              | 6      | Uma relação não especificada com o usuário. |
 | unknownFutureValue | 7      | Valor do marcador para compatibilidade futura.   |
 
-### <a name="scheduleentitytheme-values"></a>Valores de scheduleEntityTheme
+### <a name="scheduleentitytheme-values"></a>valores scheduleEntityTheme
 
 | Member
 |:-------------------------
 | branco
-| azul
+| blue
 | verde
 | roxo
 | rosa
@@ -599,17 +599,17 @@ Namespace: microsoft.graph
 | unknownFutureValue
 
 
-### <a name="timeoffreasonicontype-values"></a>Valores timeOffReasonIconType
+### <a name="timeoffreasonicontype-values"></a>valores timeOffReasonIconType
 
 |Member|
 |:---|
 |nenhum|
 |car|
-|calendário|
-|executando|
-|plano|
+|calendar|
+|running|
+|plane|
 |firstAid|
-|ol|
+|dr|
 |notWorking|
 |clock|
 |juryDuty|
@@ -618,15 +618,15 @@ Namespace: microsoft.graph
 |phone|
 |clima|
 |umbrella|
-|bank|
+|piggyBank|
 |dog|
-|olh|
+|cake|
 |trafficCone|
 |pin|
-|olh|
+|sunny|
 |unknownFutureValue|
 
-### <a name="schedulechangestate-values"></a>Valores de scheduleChangeState
+### <a name="schedulechangestate-values"></a>valores scheduleChangeState
 
 | Member
 |:----------------------------
@@ -635,7 +635,7 @@ Namespace: microsoft.graph
 |recusado
 |unknownFutureValue
 
-### <a name="schedulechangerequestactor-values"></a>Valores de scheduleChangeRequestActor
+### <a name="schedulechangerequestactor-values"></a>valores scheduleChangeRequestActor
 
 | Member
 |:----------------------------
@@ -645,14 +645,14 @@ Namespace: microsoft.graph
 |sistema
 |unknownFutureValue
 
-### <a name="workforceintegrationencryptionprotocol-values"></a>Valores workforceIntegrationEncryptionProtocol
+### <a name="workforceintegrationencryptionprotocol-values"></a>workforceIntegrationEncryptionProtocol values
 
 | Member
 |:----------------------------
 |sharedSecret
 |unknownFutureValue
 
-### <a name="workforceintegrationsupportedentities-values"></a>Valores workforceIntegrationSupportedEntities
+### <a name="workforceintegrationsupportedentities-values"></a>workforceIntegrationSupportedEntities values
 
 | Member
 |:----------------------------
@@ -663,7 +663,7 @@ Namespace: microsoft.graph
 |openShiftRequest
 |userShiftPreferences
 
-### <a name="timezonestandard-values"></a>Valores timeZoneStandard
+### <a name="timezonestandard-values"></a>valores timeZoneStandard
 
 | Member
 |:-----------------
@@ -675,25 +675,25 @@ Namespace: microsoft.graph
 
 | Membro           | Valor |
 | :--------------- | :---- |
-| free             | 0     |
-| provisório        | 1      |
+| gratuito             | 0     |
+| tentativo        | 1      |
 | ocupado             | 2      |
 | oof              | 3      |
 | workingElsewhere | 4      |
 | desconhecido          | -1    |
 
 
-### <a name="physicaladdresstype-values"></a>Valores de physicalAddressType
+### <a name="physicaladdresstype-values"></a>valores physicalAddressType
 
 | Member
 |:-------------------------
 | desconhecido
-| home
+| Casa
 | business
-| outros
+| other
 
 
-### <a name="attendeetype-values"></a>Valores de attendeeType
+### <a name="attendeetype-values"></a>Valores attendeeType
 
 | Member
 |:-------------------------
@@ -702,7 +702,7 @@ Namespace: microsoft.graph
 | recurso
 
 
-### <a name="externalaudiencescope-values"></a>Valores de externalAudienceScope
+### <a name="externalaudiencescope-values"></a>Valores externalAudienceScope
 
 | Member
 |:-------------------------
@@ -711,7 +711,7 @@ Namespace: microsoft.graph
 | all
 
 
-### <a name="automaticrepliesstatus-values"></a>Valores automaticRepliesStatus
+### <a name="automaticrepliesstatus-values"></a>valores automaticRepliesStatus
 
 | Member
 |:-------------------------
@@ -720,11 +720,11 @@ Namespace: microsoft.graph
 | agendado
 
 
-### <a name="calendarcolor-values"></a>Valores de calendarColor
+### <a name="calendarcolor-values"></a>valores calendarColor
 
 | Membro      | Valor |
 | :---------- | :---- |
-| auto        | -1    |
+| Automático        | -1    |
 | lightBlue   | 0     |
 | lightGreen  | 1      |
 | lightOrange | 2      |
@@ -737,7 +737,7 @@ Namespace: microsoft.graph
 | maxColor    | 9      |
 
 
-### <a name="educationsynchronizationprofilestate-values"></a>valores de educationSynchronizationProfileState
+### <a name="educationsynchronizationprofilestate-values"></a>valores educationSynchronizationProfileState
 
 | Membro             | Valor |
 | :----------------- | :---- |
@@ -749,7 +749,7 @@ Namespace: microsoft.graph
 | unknownFutureValue | 8      |
 
 
-### <a name="educationsynchronizationstatus-values"></a>Valores de educationSynchronizationStatus
+### <a name="educationsynchronizationstatus-values"></a>valores educationSynchronizationStatus
 
 | Membro             | Valor |
 | :----------------- | :---- |
@@ -761,22 +761,22 @@ Namespace: microsoft.graph
 | em quarentena        | 5      |
 | unknownFutureValue | 6      |
 
-### <a name="educationexternalsource-values"></a>Valores de educationExternalSource
+### <a name="educationexternalsource-values"></a>valores educationExternalSource
 
 | Member
 |:-------------------------
 | sis
 | lms
-| manual
+| Manual
 | unknownFutureValue
 
-### <a name="educationgender-values"></a>valores de educationGender
+### <a name="educationgender-values"></a>valores educationGender
 
 | Member
 |:-------------------------
 | female
-| male
-| outros
+| macho
+| other
 | unknownFutureValue
 
 
@@ -809,7 +809,7 @@ Namespace: microsoft.graph
 | high
 
 
-### <a name="educationuserrole-values"></a>Valores de educationUserRole
+### <a name="educationuserrole-values"></a>valores educationUserRole
 | Member
 |:---------------------
 | student
@@ -817,7 +817,7 @@ Namespace: microsoft.graph
 | faculty
 
 
-### <a name="meetingmessagetype-values"></a>Valores de meetingMessageType
+### <a name="meetingmessagetype-values"></a>valores meetingMessageType
 
 | Member
 |:-----------------
@@ -829,7 +829,7 @@ Namespace: microsoft.graph
 | meetingDeclined
 
 
-### <a name="followupflagstatus-values"></a>Valores followupFlagStatus
+### <a name="followupflagstatus-values"></a>valores followupFlagStatus
 
 | Member
 |:-------------------------
@@ -843,10 +843,10 @@ Namespace: microsoft.graph
 | Member
 |:-----------------
 | focused
-| outros
+| other
 
 
-### <a name="iosnotificationalerttype-values"></a>Valores de iosNotificationAlertType
+### <a name="iosnotificationalerttype-values"></a>Valores iosNotificationAlertType
 
 | Member
 |:-------------------------
@@ -860,7 +860,7 @@ Namespace: microsoft.graph
 | Member
 |:-------------
 | desconhecido
-| autenticação
+| authentication
 | authorization
 | accountValidation
 | userValidation
@@ -890,11 +890,11 @@ Namespace: microsoft.graph
 | geoCoordinates
 | streetAddress
 | hotel
-| restaurante
+| restaurant
 | localBusiness
 | postalAddress
 
-### <a name="locationuniqueidtype-values"></a>Valores de locationUniqueIdType
+### <a name="locationuniqueidtype-values"></a>valores locationUniqueIdType
 
 | Member
 |:-------------------------
@@ -922,7 +922,7 @@ Namespace: microsoft.graph
 | review
 
 
-### <a name="onenoteuserrole-values"></a>Valores de onenoteUserRole
+### <a name="onenoteuserrole-values"></a>valores do onenoteUserRole
 
 | Membro      | Valor |
 | :---------- | :---- |
@@ -932,7 +932,7 @@ Namespace: microsoft.graph
 | Nenhum        | -1    |
 
 
-### <a name="operationstatus-values"></a>Valores operationStatus
+### <a name="operationstatus-values"></a>valores operationStatus
 
 | Member
 |:-----------------
@@ -942,7 +942,7 @@ Namespace: microsoft.graph
 | Falhou
 
 
-### <a name="onenotepatchactiontype-values"></a>valores de onenotePatchActionType
+### <a name="onenotepatchactiontype-values"></a>valores do onenotePatchActionType
 
 | Member
 |:-------------------------
@@ -952,7 +952,7 @@ Namespace: microsoft.graph
 | Inserir
 | Prepend
 
-### <a name="onenotepatchinsertposition-values"></a>valores de onenotePatchInsertPosition
+### <a name="onenotepatchinsertposition-values"></a>valores do onenotePatchInsertPosition
 
 | Member
 |:-------------------------
@@ -960,14 +960,14 @@ Namespace: microsoft.graph
 | Before
 
 
-### <a name="phonetype-values"></a>Valores de phoneType
+### <a name="phonetype-values"></a>valores phoneType
 
 | Member
 |:-------------------------
-| home
+| Casa
 | business
 | móvel
-| outros
+| other
 | assistant
 | homeFax
 | businessFax
@@ -976,14 +976,14 @@ Namespace: microsoft.graph
 | radio
 
 
-### <a name="plannerpreviewtype-values"></a>Valores de plannerPreviewType
+### <a name="plannerpreviewtype-values"></a>Valores plannerPreviewType
 
 | Member
 |:-------------------------
-| automático
+| Automático
 | noPreview
-| lista de verificação
-| description
+| checklist
+| descrição
 | referência
 
 
@@ -991,8 +991,8 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| ativo
-| atualizado
+| active
+| updated
 | deleted
 | ignorado
 | unknownFutureValue
@@ -1002,14 +1002,14 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| primeiro
-| segundo
+| first
+| second
 | third
 | fourth
 | last
 
 
-### <a name="dayofweek-values"></a>Valores de dayOfWeek
+### <a name="dayofweek-values"></a>valores dayOfWeek
 
 | Member
 |:-------------------------
@@ -1017,23 +1017,23 @@ Namespace: microsoft.graph
 | segunda-feira
 | terça-feira
 | quarta-feira
-| quinta-feira
+| thursday
 | sexta-feira
 | saturday
 
-### <a name="recurrencepatterntype-values"></a>Valores de recurrencePatternType
+### <a name="recurrencepatterntype-values"></a>valores recurrencePatternType
 
 | Member
 |:-------------------------
 | daily
-| semanalmente
+| weekly
 | absoluteMonthly
 | relativeMonthly
 | absoluteYearly
 | relativeYearly
 
 
-### <a name="recurrencerangetype-values"></a>Valores de recurrenceRangeType
+### <a name="recurrencerangetype-values"></a>valores recurrenceRangeType
 
 | Member
 |:-------------------------
@@ -1058,12 +1058,12 @@ Namespace: microsoft.graph
 | nenhum
 | organizer
 | tentativelyAccepted
-| accepted
+| aceito
 | recusado
 | notResponded
 
 
-### <a name="activitydomain-values"></a>valores activityDomain
+### <a name="activitydomain-values"></a>activityDomain values
 
 | Member
 |:-------------------------
@@ -1073,18 +1073,18 @@ Namespace: microsoft.graph
 | irrestrito
 
 
-### <a name="websitetype-values"></a>valores de websiteType
+### <a name="websitetype-values"></a>valores websiteType
 
 | Member
 |:-------------------------
-| outros
-| home
+| other
+| Casa
 | trabalho
 | blog
 | perfil
 
 
-### <a name="categorycolor-values"></a>valores categoryColor
+### <a name="categorycolor-values"></a>categoryColor values
 
 | Membro   | Valor |
 | :------- | :---- |
@@ -1100,7 +1100,7 @@ Namespace: microsoft.graph
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11     |
+| preset11 | 11    |
 | preset12 | 12     |
 | preset13 | 13     |
 | preset14 | 14     |
@@ -1115,7 +1115,7 @@ Namespace: microsoft.graph
 | preset23 | 23    |
 | preset24 | 24    |
 
-### <a name="alertfeedback-values"></a>Valores de alertFeedback
+### <a name="alertfeedback-values"></a>valores alertFeedback
 
 Possíveis valores de comentários sobre o alerta fornecido por um analista.
 
@@ -1126,7 +1126,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 | falsePositive  | 2      | O alerta é falso positivo.  |
 | benignPositive | 3      | O alerta é benigno positivo. |
 
-### <a name="filehashtype-values"></a>Valores de fileHashType
+### <a name="filehashtype-values"></a>valores fileHashType
 
 | Membro              | Valor | Descrição                    |
 | :------------------ | :---- | :----------------------------- |
@@ -1140,22 +1140,22 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 | peSha1              | 7      | Tipo de hash PESHA1.              |
 | peSha256            | 8      | Tipo de hash PESHA256.            |
 
-### <a name="connectiondirection-values"></a>Valores de connectionDirection
+### <a name="connectiondirection-values"></a>Valores connectionDirection
 
 | Membro   | Valor | Descrição          |
 | :------- | :---- | :------------------- |
 | desconhecido  | 0     | Conexão desconhecida.  |
 | entrada  | 1      | Conexão de entrada.  |
-| saída | 2      | Conexão de saída. |
+| outbound | 2      | Conexão de saída. |
 
-### <a name="connectionstatus-values"></a>Valores connectionStatus
+### <a name="connectionstatus-values"></a>valores connectionStatus
 
 | Membro    | Valor | Descrição                |
 | :-------- | :---- | :------------------------- |
 | desconhecido   | 0     | Status de conexão desconhecido. |
 | tentativa | 1      | Tentativa de conexão.      |
-| succeeded | 2      | Conexão bem-sucedida.      |
-| bloqueado   | 3      | Conexão bloqueada.        |
+| bem-sucedido | 2      | Conexão bem-sucedida.      |
+| blocked   | 3      | Conexão bloqueada.        |
 | failed    | 4      | Falha na conexão.         |
 
 ### <a name="processintegritylevel-values"></a>Valores processIntegrityLevel
@@ -1163,11 +1163,11 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 | Membro    | Valor | Descrição                   |
 | :-------- | :---- | :---------------------------- |
 | desconhecido   | 0     | Desconhecido.                      |
-| untrusted | 10     | O nível de integridade é Não é Falso. |
+| untrusted | 10     | O nível de integridade não é falso. |
 | low       | 20    | O nível de integridade é Baixo.       |
 | medium    | 30    | O nível de integridade é Médio.    |
 | high      | 40    | O nível de integridade é Alto.      |
-| sistema    | 50    | O nível de integridade é o Sistema.    |
+| sistema    | 50    | O nível de integridade é System.    |
 
 ### <a name="registryhive-values"></a>valores registryHive
 
@@ -1183,49 +1183,49 @@ Enum para hives do Registro conforme definido por [https://docs.microsoft.com/wi
 | localMachineSystem      | 5      | HKEY_LOCAL_MACHINE\System hive.   |
 | usersDefault            | 6      | HKEY_USERS \\ . Hive PADRÃO.        |
 
-### <a name="registryoperation-values"></a>valores de registryOperation
+### <a name="registryoperation-values"></a>valores registryOperation
 
-Operação que alterou o nome e/ou valor da chave do Registro.
+Operação que alterou o nome e/ou o valor da chave do Registro.
 
 | Membro  | Valor | Descrição                  |
 | :------ | :---- | :--------------------------- |
-| desconhecido | 0     | Tipo de valor do Registro desconhecido. |
-| create  | 1      | Crie o Registro.             |
+| desconhecido | 0     | Tipo de valor desconhecido do Registro. |
+| create  | 1      | Criar registro.             |
 | modify  | 2      | Modificar o Registro.             |
-| delete  | 3      | Exclua o Registro.             |
+| delete  | 3      | Excluir registro.             |
 
-### <a name="registryvaluetype-values"></a>Valores de registryValueType
+### <a name="registryvaluetype-values"></a>valores registryValueType
 
 Enum para tipos de valor do Registro conforme definido pelos [tipos de valor do Registro.](/windows/desktop/sysinfo/registry-value-types)
 
 | Membro            | Valor | Descrição                                  |
 | :---------------- | :---- | :------------------------------------------- |
-| desconhecido           | 0     | Tipo de valor do Registro desconhecido.                 |
-| binário            | 1      | REG_BINARY de valor do Registro.              |
-| dword             | 2      | REG_DWORD de valor do Registro.               |
-| dwordWordWordEndian | 3      | REG_DWORD_LITTLE_ENDIAN de valor do Registro. |
-| dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN de valor do Registro.    |
+| desconhecido           | 0     | Tipo de valor desconhecido do Registro.                 |
+| binário            | 1      | REG_BINARY tipo de valor do Registro.              |
+| dword             | 2      | REG_DWORD tipo de valor do Registro.               |
+| dwordLittleEndian | 3      | REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro. |
+| dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN tipo de valor do Registro.    |
 | expandSz          | 5      | REG_EXPAND_SZ tipo de valor do Registro.           |
-| vínculo              | 6      | REG_LINK de valor do Registro.                |
-| multiSz           | 7      | REG_MULTI_SZ de valor do Registro.            |
-| nenhum              | 8      | REG_NONE de valor do Registro.                |
-| qword             | 9      | REG_QWORD de valor do Registro.               |
-| qwordwordwordEndian | 10     | REG_QWORD_LITTLE_ENDIAN de valor do Registro. |
-| sz                | 11     | REG_SZ de valor do Registro.                  |
+| vínculo              | 6      | REG_LINK tipo de valor do Registro.                |
+| multiSz           | 7      | REG_MULTI_SZ tipo de valor do Registro.            |
+| nenhum              | 8      | REG_NONE tipo de valor do Registro.                |
+| qword             | 9      | REG_QWORD tipo de valor do Registro.               |
+| qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro. |
+| sz                | 11    | REG_SZ tipo de valor do Registro.                  |
 
-### <a name="alertseverity-values"></a>Valores de alertSeverity
+### <a name="alertseverity-values"></a>valores alertSeverity
 
-Enum for severity of alerts.
+Enum para gravidade dos alertas.
 
 | Membro        | Valor | Descrição                       |
 | :------------ | :---- | :-------------------------------- |
 | desconhecido       | 0     | A gravidade é desconhecida.              |
-| informacional | 1      | A gravidade é apenas para informações. |
+| informational | 1      | Severidade é apenas para informações. |
 | low           | 2      | A gravidade é baixa.                  |
 | medium        | 3      | A gravidade é média.               |
 | high          | 4      | A gravidade é alta.                 |
 
-### <a name="alertstatus-values"></a>valores de alertStatus
+### <a name="alertstatus-values"></a>valores alertStatus
 
 Valores possíveis de um status de ciclo de vida de alerta (estágio).
 
@@ -1236,41 +1236,41 @@ Valores possíveis de um status de ciclo de vida de alerta (estágio).
 | inProgress | 20    | O alerta está em andamento. |
 | resolvido   | 30    | O alerta foi resolvido.    |
 
-### <a name="emailrole-values"></a>valores de emailRole
+### <a name="emailrole-values"></a>valores emailRole
 
 Valores possíveis para funções de email.
 
 | Membro    | Valor | Descrição             |
 | :-------- | :---- | :---------------------- |
-| desconhecido   | 0     | Função desconhecida.           |
+| desconhecido   | 0     | Função Desconhecida.           |
 | sender    | 1      | Remetente do email.    |
 | destinatário | 2      | Destinatário do email. |
 
-### <a name="logontype-values"></a>valores de logonType
+### <a name="logontype-values"></a>valores logonType
 
 Valores possíveis para o método de login do usuário.
 
 | Membro            | Valor | Descrição                  |
 | :---------------- | :---- | :--------------------------- |
 | desconhecido           | -1    | Desconhecido.                     |
-| interactive       | 0     | O logon é interativo.        |
-| remoteInteractive | 1      | O logon é interativo remoto. |
-| rede           | 2      | Logon é rede.            |
-| batch             | 3      | O logon é em lote.              |
+| interactive       | 0     | Logon é interativo.        |
+| remoteInteractive | 1      | Logon é interativo remoto. |
+| network           | 2      | Logon é rede.            |
+| batch             | 3      | Logon é lote.              |
 | serviço           | 4      | Logon é serviço.            |
 
-### <a name="useraccountsecuritytype-values"></a>Valores de userAccountSecurityType
+### <a name="useraccountsecuritytype-values"></a>valores userAccountSecurityType
 
-Valores possíveis para tipos de conta de usuário (associação de grupo), por definição do Windows.
+Valores possíveis para tipos de conta de usuário (associação ao grupo), por definição do Windows.
 
 | Membro        | Valor | Descrição                     |
 | :------------ | :---- | :------------------------------ |
 | desconhecido       | -1    | Desconhecido.                        |
-| padrão      | 0     | Membro do grupo Usuários Padrão. |
-| power         | 1      | Membro do grupo Usuários Do Power.    |
-| administrador | 2      | Membro do grupo Administradores. |
+| standard      | 0     | Membro do grupo Usuários Padrão. |
+| power         | 1      | Membro do grupo Usuários do Power.    |
+| administrator | 2      | Membro do grupo Administradores. |
 
-### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>Valores de chatMessagePolicyViolationDlpActionType
+### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>valores chatMessagePolicyViolationDlpActionType
 
 | Valor |
 |:-----------------|
@@ -1279,14 +1279,14 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | BlockAccess |
 | BlockAccessExternal |
 
-### <a name="scopeoperatormultivaluedcomparisontype-values"></a>Valores de scopeOperatorMultiValuedComparisonType
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a>valores scopeOperatorMultiValuedComparisonType
 
 |Member|
 |:---|
 |all|
 |qualquer|
 
-### <a name="risklevel-values"></a>Valores riskLevel
+### <a name="risklevel-values"></a>valores riskLevel
 
 |Member|
 |:---|
@@ -1297,7 +1297,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |nenhum|
 |unknownFutureValue|
 
-### <a name="riskstate-values"></a>Valores de riskState
+### <a name="riskstate-values"></a>valores riskState
 
 |Member|
 |:---|
@@ -1309,7 +1309,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |confirmedCompromised|
 |unknownFutureValue|
 
-### <a name="riskdetail-values"></a>Valores de riskDetail
+### <a name="riskdetail-values"></a>valores riskDetail
 
 |Member|
 |:---|
@@ -1326,11 +1326,11 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |hidden|
 |unknownFutureValue|
 
-### <a name="referenceattachmentpermission-values"></a>Valores de referenceAttachmentPermission
+### <a name="referenceattachmentpermission-values"></a>referenceAttachmentPermission values
 
 |Member|
 |:---|
-|outros|
+|other|
 |modo de exibição|
 |edit|
 |anonymousView|
@@ -1338,16 +1338,16 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |organizationView|
 |organizationEdit|
 
-### <a name="referenceattachmentprovider-values"></a>Valores de referenceAttachmentProvider
+### <a name="referenceattachmentprovider-values"></a>referenceAttachmentProvider values
 
 |Member|
 |:---|
-|outros|
+|other|
 |oneDriveBusiness|
 |oneDriveConsumer|
 |dropbox|
 
-### <a name="riskeventtype-values"></a>Valores riskEventType
+### <a name="riskeventtype-values"></a>valores riskEventType
 
 |Member|
 |:---|
@@ -1359,9 +1359,9 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |suspiciousIPAddress|
 |leakedCredentials|
 |investigationsThreatIntelligence|
-|genérico|
+|generic|
 |adminConfirmedUserCompromised|
-|mcasImp feirableTravel|
+|mcasImpossibleTravel|
 |mcasSuspiciousInboxManipulationRules|
 |investigationsThreatIntelligenceSigninLinked|
 |maliciousIPAddressValidCredentialsBlockedIP|
@@ -1377,7 +1377,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |trusted|
 |unknownFutureValue|
 
-### <a name="exchangeidformat-values"></a>Valores de exchangeIdFormat
+### <a name="exchangeidformat-values"></a>Valores exchangeIdFormat
 
 |Member|
 |:---|
@@ -1387,23 +1387,23 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |restId|
 |restImmutableEntryId|
 
-### <a name="attributeflowbehavior-values"></a>Valores attributeFlowBehavior
+### <a name="attributeflowbehavior-values"></a>valores attributeFlowBehavior
 
 |Member|
 |:---|
 |flowWhenChanged|
 |flowAlways|
 
-### <a name="attributeflowtype-values"></a>Valores de attributeFlowType
+### <a name="attributeflowtype-values"></a>valores attributeFlowType
 
 |Member|
 |:---|
-|sempre|
+|always|
 |objectAddOnly|
 |multiValueAddOnly|
 |restId|
 
-### <a name="objectflowtypes-values"></a>Valores de objectFlowTypes
+### <a name="objectflowtypes-values"></a>valores objectFlowTypes
 
 | Membro | Valor |
 | :----- | :---- |
@@ -1412,37 +1412,37 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | Atualizar | 2      |
 | Excluir | 4      |
 
-### <a name="chatmessagetype-values"></a>Valores de chatMessageType
+### <a name="chatmessagetype-values"></a>valores chatMessageType
 
 |Member|
 |:---|
-|mensagem|
+|message|
 
-### <a name="chatmessageimportance-values"></a>Valores de chatMessageImportance
+### <a name="chatmessageimportance-values"></a>valores chatMessageImportance
 
 |Member|
 |:---|
 |normal|
 |high|
-|urgente|
+|urgent|
 
 ### <a name="channelmembershiptype-values"></a>Valores channelMembershipType
 
 | Membro             | Valor |
 | :----------------- | :---- |
-| padrão           | 0     |
+| standard           | 0     |
 | private            | 1      |
 | unknownFutureValue | 2      |
 
-### <a name="stagedfeaturename-values"></a>Valores de stagedFeatureName
+### <a name="stagedfeaturename-values"></a>valores stagedFeatureName
 
 | Member                    | Descrição                   |
 | :------------------------ | :---------------------------- |
-| passthroughAuthentication | Autenticação de passagem    |
-| seamlessSso               | Single Sign-on Contínuo       |
-| passwordHashSync          | Sincronização de hash de senha |
+| passthroughAuthentication | Autenticação passo a passo    |
+| seamlessSso               | Login único sem interrupção       |
+| passwordHashSync          | Sincronização de Hash de Senha |
 
-### <a name="tokenissuertype-values"></a>Valores de tokenIssuerType
+### <a name="tokenissuertype-values"></a>Valores tokenIssuerType
 
 |Member|
 |:---|
@@ -1450,12 +1450,12 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |ADFederationServices|
 |unknownFutureValue|
 
-### <a name="riskdetectiontimingtype-values"></a>Valores de riskDetectionTimingType
+### <a name="riskdetectiontimingtype-values"></a>valores riskDetectionTimingType
 
 |Member|
 |:---|
 |notDefined|
-|em tempo real|
+|realtime|
 |nearRealtime|
 |offline|
 |unknownFutureValue|
@@ -1468,34 +1468,34 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |user|
 |unknownFutureValue|
 
-### <a name="chatmessagepolicyviolationuseractiontype-values"></a>Valores de chatMessagePolicyViolationUserActionType
+### <a name="chatmessagepolicyviolationuseractiontype-values"></a>valores chatMessagePolicyViolationUserActionType
 
 | Member   | Valor int |  Descrição |
 |:---------------|:--------|:----------|
-| Nenhum | 0 | Valor padrão. Esse é o valor de uma mensagem quando o usuário não tiver feito uma ação sobre a mensagem bloqueada pela DLP. |
-| Override | 1  | O remetente substituiu o veredito da mensagem e enviou a mensagem mesmo assim.|
-| ReportFalsePositive | 2  | O remetente relatou o veredito da mensagem aos administradores como falso positivo.|
+| Nenhum | 0 | Valor padrão. Esse é o valor em uma mensagem quando o usuário não fez uma ação na mensagem bloqueada pela DLP. |
+| Override | 1  | O remetente substituiu o veredito da mensagem e enviou a mensagem de qualquer maneira.|
+| ReportFalsePositive | 2  | O remetente relatou o veredito da mensagem aos administradores como um falso positivo.|
 
-### <a name="chatmessagepolicyviolationverdictdetailstype-values"></a>Valores de chatMessagePolicyViolationVerdictDetailsType
+### <a name="chatmessagepolicyviolationverdictdetailstype-values"></a>valores chatMessagePolicyViolationVerdictDetailsType
 
 | Member   | Valor int |  Descrição |
 |:---------------|:--------|:----------|
-| Nenhum | 0 |  O usuário não tem permissão para substituir a mensagem. O usuário não tem permissão para relatar uma mensagem como falso positivo se a dica de política não for fornecida. Em todos os outros cenários, o usuário pode relatar uma mensagem como falso positivo.|
-| AllowFalsePositiveOverride | 1  |  O usuário não tem permissão para substituir explicitamente o bloco, a menos que isso seja combinado com `AllowOverrideWithoutJustification` ou `AllowOverrideWithJustification` sinalizadores. Relatar um falso positivo sobre a violação substitui automaticamente o bloco e envia a mensagem. |
-| AllowOverrideWithoutJustification | 2  | O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto da justificativa não é necessário. Exclusivo para `AllowOverrideWithJustification` . |
-| AllowOverrideWithJustification | 4  |  O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto da justificativa é necessário. Exclusivo para `AllowOverrideWithoutJustification` .|
+| Nenhum | 0 |  O usuário não tem permissão para substituir a mensagem. O usuário não tem permissão para relatar uma mensagem como falso positivo se policyTip não for fornecida. Em todos os outros cenários, o usuário pode relatar uma mensagem como falso positivo.|
+| AllowFalsePositiveOverride | 1  |  O usuário não tem permissão para substituir explicitamente o bloco, a menos que isso seja combinado `AllowOverrideWithoutJustification` com ou `AllowOverrideWithJustification` sinalizadores. Relatar um falso positivo na violação substitui automaticamente o bloco e envia a mensagem. |
+| AllowOverrideWithoutJustification | 2  | O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa não é necessário. Exclusivo para `AllowOverrideWithJustification` . |
+| AllowOverrideWithJustification | 4  |  O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa é necessário. Exclusivo para `AllowOverrideWithoutJustification` .|
 
-### <a name="entitytype-values"></a>Valores de entityType
+### <a name="entitytype-values"></a>valores entityType
 
 | Member       |
 |:--------------|
 |event|
-|mensagem|
+|message|
 |driveItem|
 |externalFile|
 |externalItem|
 
-### <a name="onlinemeetingprovidertype-values"></a>Valores onlineMeetingProviderType
+### <a name="onlinemeetingprovidertype-values"></a>valores onlineMeetingProviderType
 
 |Member|
 |:---|
@@ -1504,7 +1504,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |skypeForConsumer|
 |teamsForBusiness|
 
-### <a name="delegatemeetingmessagedeliveryoptions-values"></a>Valores de delegateMeetingMessageDeliveryOptions
+### <a name="delegatemeetingmessagedeliveryoptions-values"></a>Valores delegateMeetingMessageDeliveryOptions
 
 |Member|
 |:---|
@@ -1512,7 +1512,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |sendToDelegateAndPrincipal|
 |sendToDelegateOnly|
 
-### <a name="calendarroletype-values"></a>Valores de calendarRoleType
+### <a name="calendarroletype-values"></a>Valores calendarRoleType
 
 |Member|
 |:---|
@@ -1525,48 +1525,48 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |delegateWithPrivateEventAccess|
 |custom|
 
-### <a name="contentformat-values"></a>Valores contentFormat
+### <a name="contentformat-values"></a>valores contentFormat
 
 | Membro  | Valor | Descrição                          |
 | :------ | :---- | :----------------------------------- |
 | Padrão. | 0     | O conteúdo é um arquivo ou um tipo que não é de email. |
-| email   | 1      | O conteúdo é um email.                 |
+| email   | 1      | Conteúdo é um email.                 |
 
-### <a name="contentstate-values"></a>Valores contentState
+### <a name="contentstate-values"></a>valores contentState
 
 | Membro | Valor | Descrição                                                                      |
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | Os dados estão em repouso; Um arquivo em um compartilhamento, por exemplo.                                 |
 | motion | 1      | Os dados estão em movimento. Um arquivo interceptado por um dispositivo de rede em trânsito.         |
-| use    | 2      | Os dados estão em uso. Um arquivo é aberto em um aplicativo cliente, como o Microsoft Office. |
+| use    | 2      | Os dados estão em uso. Um arquivo é aberto em um aplicativo cliente, como Microsoft Office. |
 
-### <a name="assignmentmethod-values"></a>Valores assignmentMethod
+### <a name="assignmentmethod-values"></a>assignmentMethod values
 
 | Membro     | Valor | Descrição                                                                                                                      |
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
-| padrão   | 0     | O rótulo foi definido por um serviço ou condição de política.                                                                              |
+| standard   | 0     | O rótulo foi definido por uma condição de serviço ou política.                                                                              |
 | privileged | 1      | O rótulo foi definido explicitamente por um usuário.                                                                                          |
-| auto       | 2      | Permite a substituição de qualquer rótulo existente. Justificativa necessária no downgrade. Resulta no `standard` método de atribuição em metadados. |
+| Automático       | 2      | Permite a substituição de qualquer rótulo existente. Justification required on downgrade. Resulta no `standard` método de atribuição em metadados. |
 
-### <a name="actionsource-values"></a>Valores de actionSource
+### <a name="actionsource-values"></a>valores actionSource
 
 | Membro        | Valor | Descrição                                                  |
 | :------------ | :---- | :----------------------------------------------------------- |
-| manual        | 0     | Um usuário selecionou manualmente o rótulo.                          |
-| automático     | 1      | O rótulo foi escolhido como resultado das condições da política.       |
+| Manual        | 0     | Um usuário selecionou manualmente o rótulo.                          |
+| Automático     | 1      | O rótulo foi escolhido como resultado das condições de política.       |
 | recomendado   | 2      | O escolhido para aplicar um rótulo recomendado.                    |
-| policyDefault | 3      | O usuário nenhuma ação e o rótulo padrão da política foram aplicados. |
+| policyDefault | 3      | O usuário não ação e o rótulo padrão de política foi aplicado. |
 | obrigatório     | 4      | O usuário escolheu um rótulo após ser forçado a escolher.         |
 
-### <a name="contentalignment-values"></a>Valores contentAlignment
+### <a name="contentalignment-values"></a>valores contentAlignment
 
 | Membro | Valor | Descrição                         |
 | :----- | :---- | :---------------------------------- |
 | left   | 0     | Alinhe a marcação de conteúdo à esquerda.  |
-| right  | 1      | Alinhe a marcação de conteúdo à direita. |
-| center | 2      | Centralização de marcação de conteúdo.             |
+| Certo  | 1      | Alinhar a marcação de conteúdo à direita. |
+| center | 2      | Marcação de conteúdo central.             |
 
-### <a name="watermarklayout-values"></a>valores de watermarkLayout
+### <a name="watermarklayout-values"></a>Valores watermarkLayout
 
 | Membro     | Valor | Descrição                 |
 | :--------- | :---- | :-------------------------- |
@@ -1584,11 +1584,11 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Member       |
 |:--------------|
-|browser|
+|Navegador|
 |moderno|
 |easSupported|
 |easUnsupported|
-|outros|
+|other|
 
 ### <a name="conditionalaccessgrantcontrol"></a>conditionalAccessGrantControl
 
@@ -1613,14 +1613,14 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Member       |
 |:--------------|
-|dias|
-|horas|
+|days|
+|hours|
 
 ### <a name="persistentbrowsersessionmode"></a>persistentBrowserSessionMode
 
 | Member       |
 |:--------------|
-|sempre|
+|always|
 |never|
 
 ### <a name="conditionalaccessdeviceplatform"></a>conditionalAccessDevicePlatform
@@ -1642,82 +1642,82 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |Alta|1 |
 |Baixo|2 |
 
-### <a name="threatassessmentcontenttype-values"></a>Valores de threatAssessmentContentType
+### <a name="threatassessmentcontenttype-values"></a>valores threatAssessmentContentType
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
 | email   | 1      | Ameaça de email.            |
 | url    | 2      | Ameaça de URL.             |
-| file   | 3      | Ameaça de arquivo anexo. |
+| file   | 3      | Ameaça de arquivo de anexo. |
 
-### <a name="threatexpectedassessment-values"></a>Valores threatExpectedAssessment
+### <a name="threatexpectedassessment-values"></a>valores threatExpectedAssessment
 
 | Membro  | Valor | Descrição                       |
 |:--------|:------|:----------------------------------|
 | block   | 1      | A ameaça deve ser bloqueada.     |
 | desbloquear | 2      | A ameaça não deve ser bloqueada. |
 
-### <a name="threatcategory-values"></a>Valores de threatCategory
+### <a name="threatcategory-values"></a>valores threatCategory
 
 | Membro             | Valor | Descrição        |
 |:-------------------|:------|:-------------------|
 | spam               | 1      | Ameaça de spam.       |
 | phishing           | 2      | Ameaça de phishing.   |
 | malware            | 3      | Ameaça de malware.    |
-| unknownFutureValue | 4      | Um membro sentinel. |
+| unknownFutureValue | 4      | Um membro do sentinel. |
 
-### <a name="threatassessmentstatus-values"></a>Valores de threatAssessmentStatus
+### <a name="threatassessmentstatus-values"></a>valores threatAssessmentStatus
 
 | Membro    | Valor | Descrição                              |
 |:----------|:------|:-----------------------------------------|
-| pendente   | 1      | A avaliação de ameaças ainda está em andamento. |
-| completed | 2      | A avaliação de ameaças foi concluída.         |
+| pendente   | 1      | A avaliação de ameaça ainda está em andamento. |
+| completed | 2      | A avaliação de ameaça concluída.         |
 
-### <a name="threatassessmentrequestsource-values"></a>Valores de threatAssessmentRequestSource
+### <a name="threatassessmentrequestsource-values"></a>valores threatAssessmentRequestSource
 
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
-| indefinido     | 0     | Ainda não sabe.            |
-| user          | 1      | Envio de usuário.         |
-| administrador | 2      | Envio de administrador de locatários. |
+| indefinido     | 0     | Ainda não sabemos.            |
+| user          | 1      | Envio do usuário.         |
+| administrator | 2      | Envio de administrador de locatário. |
 
-### <a name="threatassessmentresulttype-values"></a>Valores de threatAssessmentResultType
+### <a name="threatassessmentresulttype-values"></a>valores threatAssessmentResultType
 
 | Membro             | Valor | Descrição                                          |
 |:-------------------|:------|:-----------------------------------------------------|
-| checkPolicy        | 1      | O resultado da verificação da política, somente para `mail` avaliação. |
-| rescan             | 2      | O resultado da verificação novamente.                                   |
-| unknownFutureValue | 3      | Um membro sentinel.                                   |
+| checkPolicy        | 1      | O resultado da verificação de política, somente para `mail` avaliação. |
+| rescan             | 2      | O resultado da varredura novamente.                                   |
+| unknownFutureValue | 3      | Um membro do sentinel.                                   |
 
-### <a name="maildestinationroutingreason-values"></a>valores de mailDestinationRoutingReason
+### <a name="maildestinationroutingreason-values"></a>valores mailDestinationRoutingReason
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
-| nenhum                  | 0     | Ainda não sabe.                       |
+| nenhum                  | 0     | Ainda não sabemos.                       |
 | mailFlowRule          | 1      | Regra de transporte do Exchange.            |
 | safeSender            | 2      | Lista de remetentes seguros.                   |
 | blockedSender         | 3      | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4      | Opção avançada de filtragem de spam.     |
-| domainAllowList       | 5      | Lista de autorização do domínio do remetente.           |
-| domainBlockList       | 6      | Lista de bloqueio de domínios do remetente.           |
-| notInAddressBook      | 7      | Exclua o remetente que não está no livro de endereços. |
-| firstTimeSender       | 8      | Bloqueado devido ao remetente pela primeira vez.   |
-| autoPurgeToInbox      | 9      | TimeTravel move message to inbox.   |
-| autoPurgeToJunk       | 10     | TimeTravel move mensagem para lixo eletrônico.    |
-| autoPurgeToDeleted    | 11     | TimeTravel move message to deleted. |
-| saída              | 12     | Email de saída.                      |
-| notJunk               | 13     | Permitir devido a não ser lixo eletrônico.              |
+| domainAllowList       | 5      | Lista de permitir domínio de remetente.           |
+| domainBlockList       | 6      | Lista de bloqueios de domínio do remetente.           |
+| notInAddressBook      | 7      | Excluir remetente que não está no livro de endereços. |
+| firstTimeSender       | 8      | Bloqueado devido ao remetente da primeira vez.   |
+| autoPurgeToInbox      | 9      | TimeTravel mover mensagem para a caixa de entrada.   |
+| autoPurgeToJunk       | 10     | TimeTravel mover mensagem para lixo eletrônico.    |
+| autoPurgeToDeleted    | 11    | TimeTravel move a mensagem para excluída. |
+| outbound              | 12     | Email de saída.                      |
+| notJunk               | 13     | Permitir devido a não lixo eletrônico.              |
 | junk                  | 14     | Bloqueado devido a lixo eletrônico.                |
-| unknownFutureValue    | 15     | Um membro sentinel.                  |
+| unknownFutureValue    | 15     | Um membro do sentinel.                  |
 
-### <a name="threatassessmentrequestpivotproperty-values"></a>Valores de threatAssessmentRequestPivotProperty
+### <a name="threatassessmentrequestpivotproperty-values"></a>valores threatAssessmentRequestPivotProperty
 
 | Membro                       | Valor | Descrição                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
 | threatCategory               | 1      | Agregação de solicitação de avaliação de ameaças por `threatCategory` .               |
 | mailDestinationRoutingReason | 2      | Agregação de solicitação de avaliação de ameaças por `mailDestinationRoutingReason` . |
 
-### <a name="riskeventtypes-values"></a>Valores de riskEventTypes
+### <a name="riskeventtypes-values"></a>valores riskEventTypes
 
 | Member
 |:-------------------------
@@ -1729,10 +1729,10 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | suspiciousIPAddress
 | leakedCredentials
 | investigationsThreatIntelligence
-| genérico
+| generic
 | unknownFutureValue
 
-### <a name="userflowtype-values"></a>Valores de userFlowType
+### <a name="userflowtype-values"></a>valores userFlowType
 
 |Member
 |:----------------------
@@ -1744,7 +1744,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | resourceOwner
 | unknownFutureValue
 
-### <a name="openidconnectresponsemode-values"></a>Valores de openIdConnectResponseMode
+### <a name="openidconnectresponsemode-values"></a>Valores openIdConnectResponseMode
 
 | Member
 |:----------------------
@@ -1753,7 +1753,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | consulta
 | unknownFutureValue
 
-### <a name="openidconnectresponsetypes-values"></a>Valores de openIdConnectResponseTypes
+### <a name="openidconnectresponsetypes-values"></a>Valores openIdConnectResponseTypes
 
 | Member
 |:----------------------
@@ -1771,7 +1771,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | flaggedEmails
 | unknownFutureValue
 
-### <a name="taskstatus-values"></a>Valores taskStatus
+### <a name="taskstatus-values"></a>valores taskStatus
 
 | Member
 |:----------------------
@@ -1779,64 +1779,88 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | inProgress
 | completed
 | waitingOnOthers
-| adiada
+| adiado
 
-### <a name="connectedorganizationstate-values"></a>Valores connectedOrganizationState
+### <a name="columntypes-values"></a>valores columnTypes
+
+|Member|Descrição|
+|:-------|:------
+|observação| texto multiline. |
+|texto | texto de linha única. |
+|choice | coluna de escolha |
+|multichoice | coluna multichoice. |
+|number | coluna de números. |
+|currency | coluna de moeda. |
+|dateTime | coluna dateTime. |
+|lookup | coluna de lookup. |
+|booliano | Coluna Sim/Não. |
+|user | coluna de pessoa ou grupo. |
+|url | hyperlink ou coluna de imagem. |
+|calculado | coluna calculada. |
+|localização | coluna de local. |
+|geolocalização | coluna de localização geográfica. |
+|term | coluna de metadados gerenciados. |
+|multiterm | coluna de metadados gerenciados aceitando vários valores. |
+|miniatura | Coluna de imagem. |
+|approvalStatus | Coluna de status de aprovação de conteúdo. |
+|unknownFutureValue | unknownFuturevalue |
+
+### <a name="connectedorganizationstate-values"></a>valores connectedOrganizationState
 
 | Membro                | Valor | Descrição                                                                                                                                                                                                        |
 |:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| configurado            | 0     | Organizações conectadas com esse valor de estado são incluídas em políticas de atribuição com o tipo de escopo do `AllConfiguredConnectedOrganizationSubjects` solicitante.                                                          |
-| proposto              | 1      | As organizações conectadas criadas automaticamente pelo sistema têm esse valor de estado. Eles não são incluídos em políticas de atribuição com o tipo de escopo do `AllConfiguredConnectedOrganizationSubjects` solicitante.   |
-| unknownFutureValue    | 2      | Um membro sentinel.                                                                                                                                                                                                 |
+| configurado            | 0     | As organizações conectadas com esse valor de estado são incluídas em políticas de atribuição com o tipo de escopo do `AllConfiguredConnectedOrganizationSubjects` solicitante.                                                          |
+| proposta              | 1      | As organizações conectadas que são criadas automaticamente pelo sistema têm esse valor de estado. Eles não são incluídos em políticas de atribuição com o tipo de escopo do `AllConfiguredConnectedOrganizationSubjects` solicitante.   |
+| unknownFutureValue    | 2      | Um membro do sentinel.                                                                                                                                                                                                 |
 
-### <a name="identitysourcetype-values"></a>Valores de identitySourceType
+### <a name="identitysourcetype-values"></a>valores identitySourceType
 
 |Member|
 |:---|
 |azureActiveDirectory|
-|externo|
+|external|
 
-### <a name="externalgroupmembertype-values"></a>Valores de externalGroupMemberType
+### <a name="externalgroupmembertype-values"></a>valores externalGroupMemberType
 
 |Member|
 |:---|
 |user|
 |group|
 
-### <a name="identityuserflowattributedatatype-values"></a>Valores de identityUserFlowAttributeDataType
+### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType values
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
 | string                | 1      | Tipo de dados de cadeias de caracteres                    |
 | booliano               | 2      | Tipo de dados Booliano                   |
-| int64                 | 3      | Tipo de dados Int                       |
-| stringCollection      | 4      | Tipo de dados de coleção de cadeias de caracteres         |
-| unknownFutureValue    | 5      | Um membro sentinel.                  |
+| int64                 | 3      | Tipo de dados de int                       |
+| stringCollection      | 4      | Tipo de dados da coleção String         |
+| unknownFutureValue    | 5      | Um membro do sentinel.                  |
 
-### <a name="identityuserflowattributetype-values"></a>Valores de identityUserFlowAttributeType
+### <a name="identityuserflowattributetype-values"></a>identityUserFlowAttributeType values
 
 | Membro                | Valor | Descrição                                                        |
 |:----------------------|:------|:-------------------------------------------------------------------|
-| builtIn               | 1      | Esse tipo de atributo de fluxo de usuário indica que foi criado pelo sistema |
-| custom                | 2      | Esse tipo de atributo de fluxo de usuário indica que foi criado pelo usuário   |
-| unknownFutureValue    | 3      | Um membro sentinel.                                                 |
+| builtIn               | 1      | Esse tipo de atributo de fluxo de usuário indica que ele foi criado pelo sistema |
+| custom                | 2      | Esse tipo de atributo de fluxo de usuário indica que ele foi criado pelo usuário   |
+| unknownFutureValue    | 3      | Um membro do sentinel.                                                 |
 
-### <a name="connectionstate-values"></a>Valores de connectionState
+### <a name="connectionstate-values"></a>valores connectionState
 
 |Member|
 |:---|
-|rascunho|
-|pronto|
+|draft|
+|ready|
 |obsoleto|
 |limitExceeded|
 
-### <a name="permissionclassificationtype-values"></a>Valores de permissionClassificationType
+### <a name="permissionclassificationtype-values"></a>valores permissionClassificationType
 
 | Member
 |:-------
 | low
 
-### <a name="permissiontype-values"></a>Valores de permissionType
+### <a name="permissiontype-values"></a>valores permissionType
 
 | Member
 |:-------------------------
@@ -1844,7 +1868,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | delegado
 | delegatedUserConsentable
 
-### <a name="identityuserflowattributeinputtype-values"></a>Valores de identityUserFlowAttributeInputType
+### <a name="identityuserflowattributeinputtype-values"></a>identityUserFlowAttributeInputType values
 
 | Member                |
 |:----------------------|
@@ -1855,30 +1879,30 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | emailBox              |
 | checkboxMultiSelect   |
 
-### <a name="teamworkactivitytopicsource-values"></a>Valores de teamworkActivityTopicSource
+### <a name="teamworkactivitytopicsource-values"></a>valores de teamworkActivityTopicSource
 
 | Member
 |:---
 | entityUrl
 | texto
 
-### <a name="cloudpcprovisioningpolicyimagetype-values"></a>Valores de cloudPcProvisioningPolicyImageType
+### <a name="cloudpcprovisioningpolicyimagetype-values"></a>valores cloudPcProvisioningPolicyImageType
 
 |Member|
 |:---|
 |custom|
-|gallery|
+|galeria|
 
-### <a name="chattype-values"></a>valores de chatType 
+### <a name="chattype-values"></a>valores chatType 
 
 | Membro             | Valor | Descrição               |
 | :----------------- | :---- | :------------------------ |
-|oneOnOne            | 0     | Indica que o chat é um chat 1:1. O tamanho da lista é fixo para esse tipo de chat, o membro não pode ser removido/adicionado.                  |
-|group               | 1      | Indica que o chat é um chat de Grupo. O tamanho da lista de lista (de pelo menos 2 pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.   |
+|oneOnOne            | 0     | Indica que o chat é um chat 1:1. O tamanho da lista é fixo para esse tipo de chat, o membro não pode ser removido / adicionado.                  |
+|group               | 1      | Indica que o chat é um chat de grupo. O tamanho da lista (de pelo menos 2 pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos / adicionados posteriormente.   |
 |meeting             | 2      | Indica que o chat é um chat de reunião, que é criado como um efeito colateral da criação de um OnlineMeeting.  |
-|unknownFutureValue  | 3      | Valor do Sentinel para indicar valores futuros. |
+|unknownFutureValue  | 3      | Valor sentinel para indicar valores futuros. |
 
-### <a name="singlesignonmode-values"></a>Valores de singleSignOnMode
+### <a name="singlesignonmode-values"></a>valores singleSignOnMode
 
 |Member|
 |:---|
@@ -1887,20 +1911,20 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |aadHeaderBased|
 |pingHeaderBased|
 
-### <a name="plannercontainertype-values"></a>Valores de plannerContainerType 
+### <a name="plannercontainertype-values"></a>valores plannerContainerType 
 
 |Member|
 |:---|
 |group|
 |unknownFutureValue|
 
-### <a name="plannerplancontexttype-values"></a>Valores de plannerPlanContextType 
+### <a name="plannerplancontexttype-values"></a>Valores plannerPlanContextType 
 
 |Member|
 |:---|
 |teamsTab|
 |sharePointPage|
 |meetingNotes|
-|outros|
+|other|
 |unknownFutureValue|
 

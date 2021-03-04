@@ -1,16 +1,16 @@
 ---
 title: Listar programControls de um programa
-description: No recurso de revisões do Azure AD Access, liste todos os objetos programControl vinculados a um programa específico.
+description: No recurso de revisões de acesso do Azure AD, liste todos os objetos programControl, vinculados a um determinado programa.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 994c040dddc7ce0962fd606c37dedeeaca725299
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4fbf23ec1b0f0d25d412cb80389001b15be8de50
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969475"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440975"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Listar programControls de um programa
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , liste todos os objetos [programControl](../resources/programcontrol.md) vinculados a um programa específico.
+No recurso de revisões de acesso do Azure AD, liste todos os objetos [programControl,](../resources/programcontrol.md) [vinculados](../resources/accessreviews-root.md) a um determinado programa.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl. Read. All, ProgramControl. ReadWrite. All  |
+|Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | ProgramControl. Read. All, ProgramControl. ReadWrite. All  |
+|Aplicativo                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
- O usuário conectado também deve estar em uma função de diretório que permite que ele leia um programa.
+ O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /programs('{programId}')/controls
 Nenhum corpo de solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200, OK` código de resposta e uma matriz de objetos [programControl](../resources/programcontrol.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200, OK` matriz de [objetos programControl](../resources/programcontrol.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

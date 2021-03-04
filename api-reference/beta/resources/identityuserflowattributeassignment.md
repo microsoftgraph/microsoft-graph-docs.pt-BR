@@ -1,49 +1,49 @@
 ---
-title: Tipo de recurso identityUserFlowAttributeAssignment
-description: identityUserFlowAttributeAssignments são usadas para coletar identityUserFlowAttributes específicas em um fluxo de usuário.
+title: tipo de recurso identityUserFlowAttributeAssignment
+description: identityUserFlowAttributeAssignments são usados para coletar identidade específicaUserFlowAttributes em um fluxo de usuário.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 65859cb0d235454577e236761064f4597f5c68d8
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 0b1b0addc48b96eeb3f19c9acf2a8b01e8891efb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158783"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440224"
 ---
-# <a name="identityuserflowattributeassignment-resource-type"></a>Tipo de recurso identityUserFlowAttributeAssignment
+# <a name="identityuserflowattributeassignment-resource-type"></a>tipo de recurso identityUserFlowAttributeAssignment
 
 Namespace: microsoft.graph
 
-identityUserFlowAttributeAssignments são usadas para coletar identityUserFlowAttributes específicas em um fluxo de usuário. Isso permite o controle sobre os atributos que são coletados em um fluxo de usuário e fornece opções de personalização sobre como coletar o atributo dentro do fluxo do usuário. Você pode ter vários identityUserFlowAttributeAssignments dentro de um único fluxo de usuário que cria a experiência que o usuário final vê durante a assinatura quando solicitado a fornecer as informações necessárias pelo fluxo do usuário para concluir a assinatura.
+identityUserFlowAttributeAssignments são usados para coletar identidade específicaUserFlowAttributes em um fluxo de usuário. Isso permite o controle sobre os atributos coletados em um fluxo de usuários e fornece opções de personalização sobre como coletar o atributo dentro do fluxo do usuário. Você pode ter várias identidadesUserFlowAttributeAssignments em um único fluxo de usuários que cria a experiência que o usuário final vê durante a assinatura quando solicitado a fornecer as informações necessárias pelo fluxo do usuário para concluir a assinatura.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Obter identityUserFlowAttributeAssignment](../api/identityuserflowattributeassignment-get.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Leia as propriedades e os relacionamentos de um objeto identityUserFlowAttributeAssignment.|
-|[Atualizar identityUserFlowAttributeAssignment](../api/identityuserflowattributeassignment-update.md)|Nenhum(a)|Atualizar as propriedades de um objeto identityUserFlowAttributeAssignment.|
+|[Obter identityUserFlowAttributeAssignment](../api/identityuserflowattributeassignment-get.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Leia as propriedades e as relações de um objeto identityUserFlowAttributeAssignment.|
+|[Atualizar identityUserFlowAttributeAssignment](../api/identityuserflowattributeassignment-update.md)|Nenhum(a)|Atualize as propriedades de um objeto identityUserFlowAttributeAssignment.|
 |[Excluir identityUserFlowAttributeAssignment](../api/identityuserflowattributeassignment-delete.md)|Nenhum(a)|Exclua um objeto identityUserFlowAttributeAssignment específico.|
-|[getOrder](../api/identityuserflowattributeassignment-getorder.md)|[assignmentOrder](../resources/assignmentorder.md)|Obtém a ordem dos identityUserFlowAttributes que estão sendo coletados em um fluxo de usuário.|
-|[setOrder](../api/identityuserflowattributeassignment-setorder.md)|Nenhum(a)|Define a ordem dos identityUserFlowAttributes que estão sendo coletados em um fluxo de usuário.|
+|[getOrder](../api/identityuserflowattributeassignment-getorder.md)|[assignmentOrder](../resources/assignmentorder.md)|Obtém a ordem da identityUserFlowAttributes sendo coletada dentro de um fluxo de usuário.|
+|[setOrder](../api/identityuserflowattributeassignment-setorder.md)|Nenhum(a)|Define a ordem da identidadeUserFlowAttributes sendo coletada dentro de um fluxo de usuários.|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador do identityUserFlowAttributeAssignment. Esse identificador é imutável depois de criado. Esta é uma propriedade somente leitura.|
-|displayName|String|O nome de exibição do identityUserFlowAttribute dentro de um fluxo de usuário.|
-|isOptional|Boolean|Determina se a identityUserFlowAttribute é opcional. `true` significa que o usuário não precisa fornecer um valor. `false` significa que o usuário não pode concluir a assinatura sem fornecer um valor.|
-|requiresVerification|Boolean|Determina se a identityUserFlowAttribute exige verificação. Isso é usado somente para verificar o número de telefone ou endereço de email do usuário.|
-|userAttributeValues|[Coleção userAttributeValuesItem](../resources/userattributevaluesitem.md)|As opções de entrada para o atributo de fluxo do usuário. Aplicável somente quando userInputType for `radioSingleSelect` `dropdownSingleSelect` , ou `checkboxMultiSelect` .|
+|id|String|O identificador da identityUserFlowAttributeAssignment. Esse identificador é imutável depois de criado. Esta é uma propriedade somente leitura.|
+|displayName|String|O nome de exibição da identityUserFlowAttribute em um fluxo de usuário.|
+|isOptional|Booliano|Determina se identityUserFlowAttribute é opcional. `true` significa que o usuário não precisa fornecer um valor. `false` significa que o usuário não pode concluir a assinatura sem fornecer um valor.|
+|requiresVerification|Booliano|Determina se identityUserFlowAttribute requer verificação. Isso só é usado para verificar o número de telefone ou o endereço de email do usuário.|
+|userAttributeValues|[Coleção userAttributeValuesItem](../resources/userattributevaluesitem.md)|As opções de entrada para o atributo de fluxo do usuário. Aplicável somente quando o userInputType `radioSingleSelect` for `dropdownSingleSelect` , ou `checkboxMultiSelect` .|
 |userInputType|identityUserFlowAttributeInputType|O tipo de entrada do atributo de fluxo do usuário. Os possíveis valores são: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
 
 ## <a name="relationships"></a>Relações
 
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|O atributo de usuário que você deseja adicionar ao seu fluxo de usuário.|
+|userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|O atributo do usuário que você deseja adicionar ao seu fluxo de usuários.|
 
 ## <a name="json-representation"></a>Representação JSON
 

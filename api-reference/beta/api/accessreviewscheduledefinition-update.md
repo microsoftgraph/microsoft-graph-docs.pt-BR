@@ -3,14 +3,14 @@ title: Atualizar accessReviewScheduleDefinition
 description: Atualize um objeto accessReviewScheduleDefinition existente para alterar uma ou mais de suas propriedades.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 57d1be0916331e342c5d37a29daf2785afe3c644
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 6d03271d78dea64edf1c410a4bf30886c3e13603
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49943588"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439013"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Atualizar accessReviewScheduleDefinition
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize um objeto [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) existente para alterar uma ou mais de suas propriedades.
+Atualize um [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) existente para alterar uma ou mais de suas propriedades.
 
 >[!NOTE]
->Todas as atualizações feitas em um accessReviewScheduleDefinition só se aplicam a instâncias futuras. No momento, as instâncias em execução não podem ser atualizadas.
->Além disso, essa API não se destina a atualizar propriedades, incluindo decisões, no nível accessReviewInstance. Consulte [accessReviewInstance](../resources/accessreviewinstance.md) para obter mais informações sobre instâncias.
+>Todas as atualizações feitas em um accessReviewScheduleDefinition só se aplicam a instâncias futuras. As instâncias em execução no momento não podem ser atualizadas.
+>Além disso, essa API não se destina a atualizar propriedades, incluindo decisões, no nível accessReviewInstance. Consulte [accessReviewInstance para](../resources/accessreviewinstance.md) obter mais informações sobre instâncias.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -45,7 +45,7 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+No corpo da solicitação, fornece uma representação JSON de [um objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
 
 A tabela a seguir mostra as propriedades aceitas para atualizar um accessReviewScheduleDefinition.
 
@@ -55,12 +55,12 @@ A tabela a seguir mostra as propriedades aceitas para atualizar um accessReviewS
 | descriptionForAdmins | String | Contexto da revisão fornecida aos administradores. |
 | descriptionForReviewers | String | Contexto da revisão fornecida aos revisadores. |
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | As configurações de uma série de revisão de acesso. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
-| reviewers | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|  Define quem são os revisadores. Se nenhuma for especificada, a revisão será uma autoavaliação (os usuários revisaram seu próprio acesso). A propriedade Reviewers só será atualizável se usuários individuais atribuídos são revisadores. Consulte [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). | 
+| revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|  Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisados analisam seu próprio acesso). A propriedade Reviewers só será atualizável se usuários individuais atribuídos são revistores. Consulte [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). | 
 
-Observe que uma solicitação PUT espera que o objeto completo seja passado, no qual todas as propriedades que podem ser escritas são incluídas, não apenas as propriedades que estão sendo atualizadas.
+Observe que uma solicitação PUT espera que o objeto completo seja passado, no qual todas as propriedades writable estão incluídas, e não apenas as propriedades que estão sendo atualizadas.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `204, Accepted` um código de resposta e nenhum corpo de resposta.
+Se tiver êxito, este método retornará um `204, Accepted` código de resposta e nenhum corpo de resposta.
 
 ## <a name="examples"></a>Exemplos
 

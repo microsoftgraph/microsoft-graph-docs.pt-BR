@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 219c2fd89fe8d5f39a8792f8932b6fb5fc22bbef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f72017881e1072033f4e6f222bd8725d8d3c2a06
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967494"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440619"
 ---
 # <a name="tablecolumn-totalrowrange"></a>TableColumn: TotalRowRange
 
@@ -31,8 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/TotalRowRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/TotalRowRange
+GET /workbook/tables/{id|name}/columns/{id|name}/TotalRowRange
+GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/TotalRowRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -57,8 +57,8 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "tablecolumn_totalrowrange"
 }-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/TotalRowRange
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/TotalRowRange
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablecolumn-totalrowrange-csharp-snippets.md)]

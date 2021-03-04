@@ -1,43 +1,43 @@
 ---
-title: tipo de recurso fido2AuthenticationMethod
-description: Uma representação de uma chave de segurança do FIDO2 registrada para um usuário. FIDO2 é um método de autenticação de entrada.
+title: Tipo de recurso fido2AuthenticationMethod
+description: Uma representação de uma chave de segurança FIDO2 registrada em um usuário. FIDO2 é um método de autenticação de login.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c4d10252201781d1339e6baa26aea248429ae462
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: a6cfed32f6e657608b70c799d348c6818e56a8c7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418173"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440322"
 ---
-# <a name="fido2authenticationmethod-resource-type"></a>tipo de recurso fido2AuthenticationMethod
+# <a name="fido2authenticationmethod-resource-type"></a>Tipo de recurso fido2AuthenticationMethod
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma representação de uma chave de segurança do FIDO2 registrada para um usuário. FIDO2 é um método de autenticação de entrada.
+Uma representação de uma chave de segurança FIDO2 registrada em um usuário. FIDO2 é um método de autenticação de login.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[List](../api/fido2authenticationmethod-list.md)|coleção [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Recupere uma lista de objetos fido2AuthenticationMethod de um usuário e suas propriedades.|
-|[Obter](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Leia as propriedades e os relacionamentos do objeto fido2AuthenticationMethod de um usuário.|
-|[Excluir](../api/fido2authenticationmethod-delete.md)|Nenhum|Exclui o objeto fido2AuthenticationMethod de um usuário.|
+|[List](../api/fido2authenticationmethod-list.md)|[coleção fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Recupere uma lista dos objetos fido2AuthenticationMethod de um usuário e suas propriedades.|
+|[Get](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Leia as propriedades e as relações do objeto fido2AuthenticationMethod de um usuário.|
+|[Delete](../api/fido2authenticationmethod-delete.md)|Nenhum(a)|Exclui o objeto fido2AuthenticationMethod de um usuário.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador do método de autenticação.|
-|displayName|Cadeia de caracteres|O nome de exibição da chave, conforme fornecido pelo usuário.|
-|creationDatetime|DateTimeOffset|O carimbo de data/hora em que essa chave foi registrada para o usuário.|
-|aaGuid|Cadeia de caracteres|GUID de atestado de autenticador, um identificador que indica o tipo (por exemplo, Make e Model) do autenticador.|
+|id|String|O identificador do método de autenticação.|
+|displayName|String|O nome de exibição da chave conforme dado pelo usuário.|
+|creationDateTime|DateTimeOffset|O timestamp quando essa chave foi registrada para o usuário.|
+|aaGuid|String|GUID de Atestado de Autenticador, um identificador que indica o tipo (por exemplo, make e model) do autenticador.|
 |modelo|String|O modelo atribuído pelo fabricante da chave de segurança FIDO2.|
-|attestationCertificates|Conjunto de cadeias de caracteres|Os certificados de atestado anexados a essa chave de segurança.|
-|attestationLevel|attestationLevel|O nível de atestado dessa chave de segurança do FIDO2. Os valores possíveis são: `attested` , ou `notAttested` .|
+|attestationCertificates|Coleção de cadeias de caracteres|Os certificados de atestado anexados a essa chave de segurança.|
+|attestationLevel|attestationLevel|O nível de atestado dessa chave de segurança FIDO2. Os valores possíveis são: `attested` , ou `notAttested` .|
 
 
 ## <a name="relationships"></a>Relações

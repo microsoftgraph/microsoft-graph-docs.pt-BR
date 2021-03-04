@@ -1,16 +1,16 @@
 ---
 title: Obter riskDetection
-description: Recupere as propriedades de um objeto **riskdetection** .
+description: Recupere as propriedades de um **objeto riskdetection.**
 localization_priority: Normal
 author: cloudhandler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3e241563f310c251f6077758856092c4a08bee50
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ab2778e33a0d26b63f54cc87156fe0cca647e8e8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977672"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440854"
 ---
 # <a name="get-riskdetection"></a>Obter riskDetection
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades de um objeto **riskDetection** .
+Recupere as propriedades de um **objeto riskDetection.**
 
 >[!NOTE]
->Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de risco.
+>Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de riscos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | IdentityRiskEvent.Read.All |
+|Aplicativo | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -50,10 +50,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [riskDetection](../resources/riskdetection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [riskDetection](../resources/riskdetection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-get-risk-detections"></a>Exemplo 1: obter detecções de risco
+### <a name="example-1-get-risk-detections"></a>Exemplo 1: Obter detecções de risco
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
@@ -123,7 +123,7 @@ Content-type: application/json
     "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
 }
 ```
-### <a name="example-2-get-risk-detections-for-specific-user"></a>Exemplo 2: obter detecções de risco para um usuário específico
+### <a name="example-2-get-risk-detections-for-specific-user"></a>Exemplo 2: Obter detecções de risco para um usuário específico
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 

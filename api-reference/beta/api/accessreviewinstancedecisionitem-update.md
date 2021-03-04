@@ -1,16 +1,16 @@
 ---
 title: Atualizar accessReviewInstanceDecisionItem
-description: Atualize um objeto accessReviewInstanceDecisionItem existente que chama o usuário é o revisor de.
+description: Atualize um objeto accessReviewInstanceDecisionItem existente de que chamar o usuário é o revisor.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2f14ed26169c659354af16963e03e449f246421c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4322009b4f574e9a32958c25bf65320d4e535435
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214328"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439111"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Atualizar accessReviewInstanceDecisionItem
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as decisões de acesso, conhecidas como [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md), para as quais o usuário é o revisor.
+Atualizar decisões de acesso, conhecidas como [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md), para as quais o usuário é o revisor.
 
 >[!NOTE]
->Todas as atualizações feitas em um **accessReviewInstanceDecisionItem** só podem ser feitas chamando usuários que estão listados como revisor para o [accessReviewInstance](../resources/accessreviewinstance.md)pai.
+>Todas as atualizações feitas em **um accessReviewInstanceDecisionItem** só podem ser feitas chamando usuários listados como revisores do [accessReviewInstance pai.](../resources/accessreviewinstance.md)
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar esta API. Permissões delegadas para contas pessoais da Microsoft não são suportadas. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é necessária para chamar essa API. Não há suporte para permissões delegadas para contas pessoais da Microsoft. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,8 +47,8 @@ A tabela a seguir mostra as propriedades aceitas para atualizar um `accessReview
 
 | Propriedade     | Tipo       | Descrição |
 |:-------------|:------------|:------------|
-| sobre  | String | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve` `Deny` `NotReviewed` `DontKnow` . Obrigatório.  |
-|  elabora | String | Contexto da revisão fornecida aos administradores. Obrigatório se justificationRequiredOnApproval for true no accessReviewScheduleDefinition.  |
+| decision  | String | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve` `Deny` `NotReviewed` `DontKnow` . Obrigatório.  |
+|  justification | String | Contexto da revisão fornecida aos administradores. Obrigatório se justificationRequiredOnApproval for True no accessReviewScheduleDefinition.  |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `204, NoContent` código de resposta e nenhum corpo de resposta.
@@ -56,7 +56,7 @@ Se tiver êxito, este método retornará um `204, NoContent` código de resposta
 ### <a name="request"></a>Solicitação
 ## <a name="examples"></a>Exemplos
 
-Este é um exemplo de aprovação de acesso de um usuário representado por um `accessReviewInstanceDecisionItem` .
+Este é um exemplo de aprovação do acesso a um usuário representado por `accessReviewInstanceDecisionItem` um .
 
 
 # <a name="http"></a>[HTTP](#tab/http)

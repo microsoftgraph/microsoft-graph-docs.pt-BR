@@ -3,14 +3,14 @@ title: Listar accessReviewScheduleDefinitions
 description: Recupere objetos accessReviewScheduleDefinition.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 71eaf61e43a145b809da34854fc33975eb459c81
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 983ecadb7bf60258ee531ad252c4c67325e97802
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981001"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439034"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>Listar accessReviewScheduleDefinition
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os [objetos accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Uma lista de zero ou mais objetos accessReviewScheduleDefinition são retornados, incluindo todas as suas propriedades aninhadas, para cada série de revisão de acesso criada. Isso não inclui accessReviewInstances associados.
+Recupere os [objetos accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Uma lista de zero ou mais objetos accessReviewScheduleDefinition são retornados, incluindo todas as suas propriedades aninhadas, para cada série de revisão de acesso criada. Isso não inclui accessReviewInstances associado.
 
 >[!NOTE]
->Se muitos **accessReviewScheduleDefinitions** são retornados, para melhorar a eficiência e evitar tempos-tempos, recupere o conjunto de resultados em páginas, incluindo o parâmetro de consulta $top com um tamanho de página de no máximo 100 e o parâmetro de consulta $skip=0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata.nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata.nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito na paagem de dados do Microsoft Graph em seu aplicativo.
+>Se muitos **accessReviewScheduleDefinitions** são retornados, para melhorar a eficiência e evitar tempos-extra, recupere o conjunto de resultados em páginas, incluindo o parâmetro de consulta $top com um tamanho de página de no máximo 100 e o parâmetro $skip=0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata.nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata.nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito na paja de dados do Microsoft Graph em seu aplicativo.
 >
 >Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph paginará automaticamente os resultados em 100 resultados por página.
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- O usuário assinado também deve estar em uma função de diretório que permita ler uma revisão de acesso.
+ O usuário interno também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Nenhum.
 Não fornecer um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma matriz de objetos `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` matriz [de objetos accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação
@@ -162,7 +162,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Acessar AccessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+- [Obter accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
 
 
 <!--

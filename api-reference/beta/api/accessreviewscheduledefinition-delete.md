@@ -1,16 +1,16 @@
 ---
 title: Excluir accessReviewScheduleDefinition
-description: Excluir um objeto accessReviewScheduleDefinition.
+description: Exclua um objeto accessReviewScheduleDefinition.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 93d61dd2b903014ee92f41929e1cb4ad13f05b50
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9bf7197643ca0b445e11d59e97693c80a9627913
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214181"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439076"
 ---
 # <a name="delete-accessreviewscheduledefinition"></a>Excluir accessReviewScheduleDefinition
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
+[Exclua um objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

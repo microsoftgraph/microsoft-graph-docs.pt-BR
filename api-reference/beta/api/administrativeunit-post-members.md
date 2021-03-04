@@ -1,16 +1,16 @@
 ---
 title: Adicionar um membro
-description: Use esta API para adicionar um membro (usuário ou grupo) a uma unidade administrativa.
+description: Use essa API para adicionar um membro (usuário ou grupo) a uma unidade administrativa.
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ef1ff3e00de98a248fbe6a3b059b2de739d7df7b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6df32e3023752d3edf32163b3e99a377df8a5de1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997211"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438733"
 ---
 # <a name="add-a-member"></a>Adicionar um membro
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para adicionar um membro (usuário ou grupo) a uma unidade administrativa.
+Use essa API para adicionar um membro (usuário ou grupo) a uma unidade administrativa.
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
 
@@ -43,7 +43,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça o `id` de um [usuário](../resources/user.md),  [grupo](../resources/group.md) ou [directoryobject](../resources/directoryobject.md) a ser adicionado.
+No corpo da solicitação, forneça o de um usuário , grupo ou `id` [directoryObject](../resources/directoryobject.md) a ser adicionado. [](../resources/user.md) [](../resources/group.md)
 
 ## <a name="response"></a>Resposta
 
@@ -63,7 +63,7 @@ Content-length: 109
 }
 
 ```
-No corpo da solicitação, forneça o `id` do objeto [User](../resources/user.md) ou [Group](../resources/group.md) que você deseja adicionar.
+No corpo da solicitação, forneça o `id` objeto [do usuário](../resources/user.md) ou grupo que você deseja adicionar. [](../resources/group.md)
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.

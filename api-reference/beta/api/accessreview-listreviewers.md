@@ -1,16 +1,16 @@
 ---
 title: Listar revisores do accessReview
-description: No recurso de revisões do Azure AD Access, recupere os revisores de um objeto accessReview.
+description: No recurso de revisões de acesso do Azure AD, recupere os revisores de um objeto accessReview.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8b1acf9a196551c0f2f170ca9df507d902558744
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7d77ac50435a9923ec8e504a135e36c6b406f764
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951496"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439296"
 ---
 # <a name="list-accessreview-reviewers"></a>Listar revisores do accessReview
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , recupere os revisores de um objeto [accessReview](../resources/accessreview.md) .
+No recurso de revisões de acesso do Azure AD, recupere os [revisores](../resources/accessreviews-root.md) de um [objeto accessReview.](../resources/accessreview.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview. Read. All, AccessReview. ReadWrite. Membership  |
+|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
 
- O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access.
+ O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /accessReviews/{reviewId}/reviewers
 Nenhum corpo de solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200, OK` código de resposta e uma matriz de objetos [UserIdentity](../resources/useridentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200, OK` matriz de [objetos userIdentity](../resources/useridentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -104,9 +104,9 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recupere uma revisão do Access. |
-|[Adicionar revisor accessReview](accessreview-addreviewer.md) |     Nenhum.   |   Adicionar um revisor a um accessReview. |
-|[Remover revisor accessReview](accessreview-removereviewer.md) | Nenhum. |   Remover um revisor de um accessReview. |
+|[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recupere uma revisão de acesso. |
+|[Adicionar o revisor accessReview](accessreview-addreviewer.md) |     Nenhum.   |   Adicione um revisor a um accessReview. |
+|[Remover o revisor accessReview](accessreview-removereviewer.md) | Nenhum. |   Remova um revisor de um accessReview. |
 
 
 <!--

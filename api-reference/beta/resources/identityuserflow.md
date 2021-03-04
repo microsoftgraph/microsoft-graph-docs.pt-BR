@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso UserFlow
-description: Os fluxos de identidade do usuário são jornadas de autenticação internas
+description: Fluxos de usuários de identidade são jornadas de autenticação internas
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: fa6829d346fc1e2520fb5eab28f5ce5fd9c72ae4
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 3a5cb0bfd61e9b99e9837c36484feefc0ff3a635
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176966"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440243"
 ---
 # <a name="userflow-resource-type"></a>Tipo de recurso UserFlow
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Os Fluxos de Usuário permitem definir políticas predefinidas e configuráveis para entrar, inscrever-se, se inscrever e entrar combinados, redefinição de senha e atualização de perfil.
+Fluxos de usuário permitem definir políticas predefinidas e configuráveis para entrar, se inscrever, se inscrever e entrar combinados, redefinir senha e atualizar o perfil.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [List](../api/identityuserflow-list.md) | [Coleção UserFlow](identityuserflow.md) | Listar UserFlows. |
-| [Criar](../api/identityuserflow-post-userflows.md) | [UserFlow](identityuserflow.md) | Crie um objeto UserFlow. |
-| [Get](../api/identityuserflow-get.md) | [UserFlow](identityuserflow.md) | Leia as propriedades e os relacionamentos do objeto UserFlow. |
-| [Delete](../api/identityuserflow-delete.md) | Nenhum | Exclua o objeto UserFlow. |
+| [Create](../api/identityuserflow-post-userflows.md) | [UserFlow](identityuserflow.md) | Criar objeto UserFlow. |
+| [Get](../api/identityuserflow-get.md) | [UserFlow](identityuserflow.md) | Ler propriedades e relações do objeto UserFlow. |
+| [Delete](../api/identityuserflow-delete.md) | Nenhum(a) | Excluir objeto UserFlow. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| O identificador do fluxo do usuário. O prefixo **B2C_1_** é adicionado ao valor que você fornece.|
+|id|String| O identificador do fluxo do usuário. O prefixo **de B2C_1_** é adicionado ao valor que você fornece.|
 |userFlowType|string| Os valores possíveis são: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`, `unknownFutureValue`.|
 |userFlowTypeVersion|Único| Esta é a versão do tipo de fluxo do usuário. Cada tipo de fluxo de usuário pode ter diferentes versões possíveis, como 1, 1.1 ou 2.  |
 

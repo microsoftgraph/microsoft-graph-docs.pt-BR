@@ -1,16 +1,16 @@
 ---
 title: Criar accessPackageCatalog
-description: Criar um novo accessPackageCatalog.
+description: Crie um novo accessPackageCatalog.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cdf414490d10445574cb3b0442e6fa4496f7dec5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 783744f3e2cfc59f20e2105468b5f2cdc2d7ee7d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951796"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439524"
 ---
 # <a name="create-accesspackagecatalog"></a>Criar accessPackageCatalog
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [accessPackageCatalog](../resources/accesspackagecatalog.md) .
+Crie um novo [objeto accessPackageCatalog.](../resources/accesspackagecatalog.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,11 +47,11 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [accessPackageCatalog](../resources/accesspackagecatalog.md) .  Inclua as propriedades **DisplayName** , **Description** e **isExternallyVisible** .
+No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageCatalog.](../resources/accesspackagecatalog.md)  Inclua as **propriedades displayname**, **description** e **isExternallyVisible.**
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta de série 200 e um novo objeto [accessPackageCatalog](../resources/accesspackagecatalog.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta de 200 séries e um novo [objeto accessPackageCatalog](../resources/accesspackagecatalog.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

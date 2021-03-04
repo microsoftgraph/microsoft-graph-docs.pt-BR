@@ -1,16 +1,16 @@
 ---
 title: Listar accessReviews
-description: Recuperar objetos accessReview para um businessFlowTemplate.
+description: Recupere objetos accessReview para um businessFlowTemplate.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c76dc3a245e003838290f3d233941e6535347b72
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cd4e161551d0be682c6c883eab628e3422122899
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951637"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439370"
 ---
 # <a name="list-accessreviews"></a>Listar accessReviews
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os objetos [accessReview](../resources/accessreview.md) para um determinado [businessFlowTemplate](../resources/businessflowtemplate.md). Uma lista de zero ou mais objetos **accessReview** são retornadas para cada revisão de acesso único e recorrente que foi criada com esse modelo de fluxo de negócios.  Observe que as IDs do modelo de fluxo de negócios diferenciam maiúsculas de minúsculas.
+Recupere os [objetos accessReview](../resources/accessreview.md) para um [determinado businessFlowTemplate](../resources/businessflowtemplate.md). Uma lista de zero ou mais objetos **accessReview** são retornados, para cada revisão de acesso única e recorrente que foi criada com esse modelo de fluxo de negócios.  Observe que as IDs do modelo de fluxo de negócios são sensíveis a minúsculas.
 
 >[!NOTE]
-> Se qualquer uma das revisões do Access que corresponderem ao filtro for uma análise de acesso recorrente, um objeto **accessReview** será retornado para representar cada série recorrente como um todo, além de qualquer atual, passado e a próxima instância futura. Por exemplo, se houver uma revisão de acesso recorrente mensal de membros convidados do grupo A, uma revisão trimestral de acesso recorrente de membros convidados do grupo B e uma revisão de acesso de um único tempo de membros convidados do grupo C, cada uma dessas recorrências foram iniciadas e o chamador consulta as revisões de acesso com um modelo de fluxo de negócios de revisões de membros convidados de grupos , três objetos serão retornados representando as três séries, bem como três objetos para as instâncias atuais de revisão do Access e, potencialmente, três objetos para as próximas instâncias futuras. Para recuperar as instâncias de uma revisão de acesso recorrente ou a instância de revisão do Access agendada para um mês ou trimestre específico, o chamador pode, subsequentemente, navegar na relação de **instância** do objeto **accessReview** recorrente. A relação de **instância** vincula aos objetos **accessReview** para uma instância atual ou passada da revisão recorrente do acesso.
+> Se qualquer uma das avaliações de acesso que correspondem ao filtro for uma revisão de acesso recorrente, um objeto **accessReview** será retornado para representar cada série recorrente como um todo, além de qualquer instância atual, passada e próxima. Por exemplo, se houver uma revisão de acesso recorrente mensal de membros convidados do grupo A, uma revisão de acesso recorrente trimestral de membros convidados do grupo B e uma revisão de acesso único de membros convidados do grupo C, cada uma dessas recorrências acabou de ser iniciada e o chamador consulta para análises de acesso com um modelo de fluxo de negócios de avaliações de membros convidados de grupos , três objetos serão retornados representando as três séries, bem como três objetos para as instâncias de revisão de acesso atuais e, potencialmente, três objetos para as próximas instâncias. Para recuperar as instâncias de uma revisão de acesso recorrente ou a instância de revisão de  acesso agendada para um determinado mês ou trimestre, o chamador pode navegar subsequentemente pela relação de instância do objeto **accessReview** recorrente. A **relação** de instância se vincula aos **objetos accessReview** para uma instância atual ou anterior da revisão de acesso recorrente.
 
-Se muitas revisões de acesso corresponderem ao filtro, para melhorar a eficiência e evitar tempos limite, recupere o conjunto de resultados nas páginas, incluindo o `$top` parâmetro de consulta com um tamanho de página, por exemplo, 100, e o `$skip=0` parâmetro de consulta na solicitação. Esses parâmetros podem ser incluídos, mesmo quando você não prevê que a solicitação vai estender várias páginas. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma `@odata.nextLink` Propriedade na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com o `@odata.nextLink` URL em cada resposta, até que todos os resultados sejam retornados, conforme descrito em [paginação de dados do Microsoft Graph no aplicativo](/graph/paging.md).
+Se muitas análises de acesso corresponderem ao filtro, para melhorar a eficiência e evitar tempos-de-tempo, recupere o resultado definido em páginas, incluindo o parâmetro de consulta com um tamanho de página, por exemplo, 100 e o parâmetro de consulta na `$top` `$skip=0` solicitação. Esses parâmetros podem ser incluídos mesmo quando você não previu que a solicitação abrange várias páginas. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade na resposta que contém uma URL para `@odata.nextLink` a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com o `@odata.nextLink` URL em cada resposta, até que todos os resultados sejam retornados, conforme descrito em [paginação de dados do Microsoft Graph no aplicativo](/graph/paging.md).
 
-Os objetos **accessReview** retornados por essa API não incluirão Propriedades de estrutura aninhadas, como **configurações** ou relações.  Para recuperar as configurações ou relações de revisão do Access, use a API [Get accessReview](accessreview-get.md) .
+Os **objetos accessReview** retornados por essa API não incluirão propriedades de estrutura aninhadas, como **configurações** ou relações.  Para recuperar as configurações ou as relações de revisão de acesso, use a API [get accessReview.](accessreview-get.md)
 
 
 ## <a name="permissions"></a>Permissões
@@ -33,11 +33,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All  |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview. Read. All, AccessReview. ReadWrite. Membership |
+|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
- O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access.
+ O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -50,14 +50,14 @@ GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}&$
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação.
+Não fornecer um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma matriz de objetos [accessReview](../resources/accessreview.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma matriz de `200 OK` [objetos accessReview](../resources/accessreview.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para recuperar todas as revisões de acesso único e recorrentes de um modelo de fluxo de negócios ' 6e4f3d20-c5c3-407F-9695-8460952bcc68 '.
+O exemplo a seguir mostra uma solicitação para recuperar todas as análises de acesso único e recorrente para um modelo de fluxo de negócios '6e4f3d20-c5c3-407f-9695-8460952bcc68'.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

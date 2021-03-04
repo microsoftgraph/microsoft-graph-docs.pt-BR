@@ -5,18 +5,18 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af2682655d3f5b76e7b99af7ceced20059deb8ff
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 189933eb8bd339dd80568b53e93bc7d7347826f3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154800"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440154"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,13 +25,13 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Configurações do Android for Work
 - Eventos de auditoria
 - Termos e condições corporativos 
-- Perfis de registro corporativos
-- Definições de configuração do dispositivo
-- Configurações de intenção do dispositivo
+- Perfis de registro corporativo
+- Configurações de dispositivo
+- Configurações de intenção de dispositivo
 - Gerenciamento de dispositivo
-- ESIM (Electronic SIM)
-- Fencing
-- Análise da Política de Grupo
+- SIM Eletrônico (ESIM)
+- Esgrima
+- Análise de Política de Grupo
 - Notificações
 - Políticas, configurações e detalhes de integração
 - Conjunto de Políticas
@@ -44,7 +44,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Solução de problemas de eventos
 - Resumos da Proteção de Informações do Windows
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter deviceManagement](../api/intune-shared-devicemanagement-get.md)|Leia as propriedades e as relações do objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).|
@@ -67,59 +67,59 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |id|String|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
-|legacyPcManangementEnabled|Boolean|A propriedade para habilitar o gerenciamento de computador herdado gerenciado não MDM para essa conta. Essa propriedade é somente leitura.|
+|legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não-MDM gerenciado para essa conta. Essa propriedade é somente leitura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitidos por locatário.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
-|accountMoveCompletionDateTime|DateTimeOffset|A data & a hora em que os dados do locatário foram movidos entre as scaleunits.|
+|accountMoveCompletionDateTime|DateTimeOffset|A data & hora em que os dados do locatário foram movidos entre as unidades de escala.|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Informações de consentimento do administrador.|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Visão geral da proteção do dispositivo.|
-|managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|Regra de limpeza do dispositivo|
+|managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|Regra de limpeza de dispositivo|
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Estado de assinatura de gerenciamento de dispositivo móvel do locatário. Os valores possíveis são: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |assinaturas|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|Assinatura do locatário. Os possíveis valores são: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
-|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Visão geral de malware para dispositivos Windows.|
-|**Análise da Política de Grupo**|
-|groupPolicyObjectFiles|[Coleção groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|Uma lista de arquivos de Objeto de Política de Grupo carregados.|
+|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Visão geral do malware para dispositivos windows.|
+|**Análise de Política de Grupo**|
+|groupPolicyObjectFiles|[coleção groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|Uma lista de arquivos de Objeto de Política de Grupo carregados.|
 |**Integração**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.|
 |**Odj**|
-|domainJoinConnectors|[Coleção deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)|Uma lista de objetos de conector.|
+|domainJoinConnectors|[Coleção deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)|Uma lista de objetos do conector.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:---|:---|:---|
 |**Android for Work**|
-|androidDeviceOwnerEnrollmentProfiles|[Coleção androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Entidades de perfil de registro do proprietário do dispositivo Android.|
+|androidDeviceOwnerEnrollmentProfiles|[coleção androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Entidades de perfil de registro do proprietário do dispositivo Android.|
 |androidForWorkAppConfigurationSchemas|Coleção [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md)|Entidades do esquema de configuração do aplicativo Android for Work.|
 |androidForWorkEnrollmentProfiles|Coleção [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Entidades do perfil de registro do Android for Work.|
 |androidForWorkSettings|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|A entidade singleton de configurações do Android for Work.|
-|androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|A entidade de configurações corporativas da conta do armazenamento gerenciado Android singleton.|
-|androidManagedStoreAppConfigurationSchemas|[Coleção androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Entidades de esquema de configuração do aplicativo Android Enterprise.|
+|androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|A entidade de configurações corporativas de conta gerenciada do Android singleton.|
+|androidManagedStoreAppConfigurationSchemas|[coleção androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Entidades de esquema de configuração do aplicativo Android Enterprise.|
 |**Auditoria**|
 |auditEvents|Conjunto [auditEvent](../resources/intune-auditing-auditevent.md)|Eventos de auditoria|
 |**Termos da empresa**|
 |termsAndConditions|Conjunto [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Os termos e condições associados ao gerenciamento do dispositivo da empresa.|
 |**Registro corporativo**|
 |enrollmentProfiles|[Coleção enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Os perfis de registro.|
-|importedAppleDeviceIdentities|[Coleção importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|As identidades importadas do dispositivo Apple.|
+|importedAppleDeviceIdentities|[Coleção importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|As identidades de dispositivo Apple importadas.|
 |importedDeviceIdentities|[Coleção importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|As identidades dos dispositivos importados.|
 |**Configuração do dispositivo**|
-|advancedThreatProtectionOnboardingStateSummary|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|O estado de resumo do estado de integração da ATP para esta conta.|
-|cartToClassAssociations|[Coleção cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|As associações de carrinho para classe.|
+|advancedThreatProtectionOnboardingStateSummary|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|O estado de resumo do estado de integração da ATP para essa conta.|
+|cartToClassAssociations|[Coleção cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Associações de carrinho para classe.|
 |deviceCompliancePolicies|Coleção [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|As políticas de conformidade do dispositivo.|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)|O resumo do estado de conformidade dos dispositivos para esta conta.|
 |deviceCompliancePolicySettingStateSummaries|Coleção [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)|Os estados resumidos das configurações da política de conformidade para esta conta.|
-|deviceConfigurationConflictSummary|[Coleção deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|Resumo das políticas em estado de conflito para esta conta.|
+|deviceConfigurationConflictSummary|[Coleção deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|Resumo das políticas em estado de conflito para essa conta.|
 |deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md)|O resumo do estado de configuração de dispositivos para esta conta.|
-|deviceConfigurationRestrictedAppsViolations|[Coleção restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Violações de aplicativos restritos para esta conta.|
+|deviceConfigurationRestrictedAppsViolations|[Coleção restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Violações de aplicativos restritos para essa conta.|
 |deviceConfigurations|Coleção [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|As configurações de dispositivos.|
 |deviceConfigurationUserStateSummaries|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|O resumo do estado do usuário de configuração do dispositivo para essa conta.|
 |iosUpdateStatuses|Coleção [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md)|Os status de instalação de atualizações de software do iOS para esta conta.|
-|ndesConnectors|[Coleção ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|A coleção de conectores Ndes para esta conta.|
+|ndesConnectors|[Coleção ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|A coleção de conectores Ndes para essa conta.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|O resumo do status de atualização do software.|
 |**Intenção do dispositivo**|
-|intents|[Coleção deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|As intenções de gerenciamento de dispositivos|
-|settingDefinitions|[Coleção deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|As definições de configuração de intenção de gerenciamento de dispositivos|
+|intents|[Coleção deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|As intenções de gerenciamento de dispositivo|
+|settingDefinitions|[Coleção deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|Definições de configuração de intenção de gerenciamento de dispositivos|
 |templates|[Coleção deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Os modelos disponíveis|
 |categories|[Coleção deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|As categorias disponíveis|
 |**Gerenciamento de dispositivos**|
@@ -131,31 +131,31 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |deviceHealthScripts|[Coleção deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|A lista de scripts de saúde do dispositivo associados ao locatário.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Visão geral do dispositivo|
 |managedDevices|Conjunto [managedDevice](../resources/intune-shared-manageddevice.md)|A lista de dispositivos gerenciados.|
-|remoteActionAudits|[Coleção remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|A lista de auditorias de ações remotas do dispositivo com o locatário.|
+|remoteActionAudits|[Coleção remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|A lista de auditorias de ação remota do dispositivo com o locatário.|
 |windowsMalwareInformation|[Coleção windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)|A lista de malware afetados no locatário.|
-|mobileAppTroubleshootingEvents|[Coleção mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|A propriedade da coleção de MobileAppTroubleshootingEvent.|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|Visão geral da análise da experiência do usuário|
-|userExperienceAnalyticsBaselines|[Coleção userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)|Linhas de base da análise da experiência do usuário|
-|userExperienceAnalyticsCategories|[Coleção userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|Categorias de análise da experiência do usuário|
-|userExperienceAnalyticsDevicePerformance|[Coleção userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Desempenho do dispositivo de análise da experiência do usuário|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|Resumo da regressão da análise da experiência do usuário|
-|userExperienceAnalyticsDeviceStartupHistory|[Coleção userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Histórico de inicialização do dispositivo de análise da experiência do usuário|
-|userExperienceAnalyticsDeviceStartupProcesses|[Coleção userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)|Processos de inicialização do dispositivo de análise da experiência do usuário|
-|userExperienceAnalyticsDeviceStartupProcessPerformance|[Coleção userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|Desempenho do processo de inicialização do dispositivo de análise da experiência do usuário|
-|**Registro**|
+|mobileAppTroubleshootingEvents|[Coleção mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|A propriedade collection de MobileAppTroubleshootingEvent.|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/userExperienceAnalyticsOverview.md)|Visão geral da análise da experiência do usuário|
+|userExperienceAnalyticsBaselines|[Coleção userExperienceAnalyticsBaseline](../resources/userExperienceAnalyticsBaseline.md)|Linhas de base de análise de experiência do usuário|
+|userExperienceAnalyticsCategories|[coleção userExperienceAnalyticsCategory](../resources/userExperienceAnalyticsCategory.md)|Categorias de análise de experiência do usuário|
+|userExperienceAnalyticsDevicePerformance|[coleção userExperienceAnalyticsDevicePerformance](../resources/userExperienceAnalyticsDevicePerformance.md)|Desempenho do dispositivo de análise de experiência do usuário|
+|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/userExperienceAnalyticsRegressionSummary.md)|Resumo de regressão de análise de experiência do usuário|
+|userExperienceAnalyticsDeviceStartupHistory|[coleção userExperienceAnalyticsDeviceStartupHistory](../resources/userExperienceAnalyticsDeviceStartupHistory.md)|Histórico de inicialização do dispositivo de análise de experiência do usuário|
+|userExperienceAnalyticsDeviceStartupProcesses|[Coleção userExperienceAnalyticsDeviceStartupProcess](../resources/userExperienceAnalyticsDeviceStartupProcess.md)|Processos de inicialização do dispositivo de análise de experiência do usuário|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|[coleção userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/userExperienceAnalyticsDeviceStartupProcessPerformance.md)|Desempenho do processo de inicialização do dispositivo de análise de experiência do usuário|
+|**Inscrição**|
 |depOnboardingSettings|[Coleção depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Essas coleções de vários tokens DEP por locatário.|
 |importedDeviceIdentities|[Coleção importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|As identidades dos dispositivos importados.|
 |importedWindowsAutopilotDeviceIdentities|Coleção [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Coleção de dispositivos do Windows AutoPilot importados.|
 |windowsAutopilotDeploymentProfiles|[Coleção windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Perfis de implantação piloto automático do Windows|
-|windowsAutopilotDeviceIdentities|[Coleção windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|As identidades dos dispositivos do Windows Autopilot continham a coleção.|
-|windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|As configurações da conta do Windows Autopilot.|
+|windowsAutopilotDeviceIdentities|[Coleção windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|As identidades do dispositivo do Windows autopilot continham coleção.|
+|windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|As configurações da conta do Windows autopilot.|
 |**SIM incorporado**|
-|embeddedSIMActivationCodePools|[Coleção embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|Os pools de código de ativação do SIM incorporados criados por essa conta.|
-|**Fencing**|
+|embeddedSIMActivationCodePools|[Coleção embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|Os pools de código de ativação de SIM incorporados criados por essa conta.|
+|**Esgrima**|
 |managementConditions|[coleção managementCondition](../resources/intune-fencing-managementcondition.md)|As condições de gerenciamento associadas ao gerenciamento de dispositivos da empresa.|
-|managementConditionStatements|[Coleção managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|As instruções de condição de gerenciamento associadas ao gerenciamento de dispositivos da empresa.|
-|**Análise da Política de Grupo**|
-|groupPolicyMigrationReports|[Coleção groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|Uma lista de relatórios de migração da Política de Grupo.|
+|managementConditionStatements|[coleção managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|As instruções de condição de gerenciamento associadas ao gerenciamento de dispositivos da empresa.|
+|**Análise de Política de Grupo**|
+|groupPolicyMigrationReports|[coleção groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|Uma lista de relatórios de migração da Política de Grupo.|
 |**Notificações**|
 |notificationMessageTemplates|Conjunto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md)|Os modelos de mensagens de notificação.|
 |**Integração**|
@@ -164,13 +164,13 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |deviceEnrollmentConfigurations|Coleção [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|A lista de configurações de registro de dispositivos|
 |deviceManagementPartners|Coleção [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|A lista de Parceiros de gerenciamento de dispositivos configurados pelo locatário.|
 |exchangeConnectors|Coleção [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)|A lista dos Conectores do Exchange configurados pelo locatário.|
-|exchangeOnPremisesPolicies|[Coleção deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|A lista de políticas do Exchange on Quesis configuradas pelo locatário.|
-|exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|A política que controla o acesso de dispositivo móvel ao Exchange No Local|
+|exchangeOnPremisesPolicies|[Coleção deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|A lista de políticas do Exchange On Premisis configuradas pelo locatário.|
+|exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|A política que controla o acesso de dispositivo móvel ao Exchange Local|
 |mobileThreatDefenseConnectors|Coleção [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md)|A lista dos conectores de defesa contra ameaças móveis configurados pelo locatário.|
 |**Conjunto de Políticas**|
 |deviceManagementScripts|[Coleção deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|A lista de scripts de gerenciamento de dispositivos associados ao locatário.|
-|deviceConfigurations|Coleção [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|A lista de configurações de dispositivo associada ao locatário.|
-|deviceCompliancePolicies|Coleção [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|A lista de políticas de conformidade do dispositivo associada ao locatário.|
+|deviceConfigurations|Coleção [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|A lista de configurações de dispositivos associadas ao locatário.|
+|deviceCompliancePolicies|Coleção [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|A lista de políticas de conformidade de dispositivos associadas ao locatário.|
 |windowsAutopilotDeploymentProfiles|[Coleção windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Perfis de implantação piloto automático do Windows|
 |deviceEnrollmentConfigurations|Coleção [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|A lista de configurações de registro de dispositivos|
 |**Política de Acesso a Recursos**|
@@ -185,10 +185,10 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |roleDefinitions|Conjunto [roleDefinition](../resources/intune-rbac-roledefinition.md)|As definições da função.|
 |roleScopeTags|[Coleção roleScopeTag](../resources/intune-rbac-rolescopetag.md)|As Marcas de Escopo de Função.|
 |**Relatórios**|
-|relatórios|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Singleton de relatórios|
+|reports|[deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)|Singleton de relatórios|
 |**Atualização de Software**|
 |windowsFeatureUpdateProfiles|[Coleção windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Uma coleção de perfis de atualização de recursos do Windows|
-|**Gerenciamento de despesas com telecomunicações (TEM)**|
+|**Gerenciamento de despesas de telecomunicações (TEM)**|
 |telecomExpenseManagementPartners|Conjunto [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md)|Os parceiros de gerenciamento de despesas de telecomunicações.|
 |**Solução de Problemas**|
 |troubleshootingEvents|Conjunto [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|A lista de eventos de solução de problemas para o locatário.|

@@ -1,16 +1,16 @@
 ---
 title: Criar accessPackage
-description: Criar um novo accessPackage.
+description: Crie um novo accessPackage.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3657d5ba4e3fbe120ec5bf92ebf3ddd25c43c13e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1a415978968b4fa03133de156702ead1c473f1a1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952270"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439769"
 ---
 # <a name="create-accesspackage"></a>Criar accessPackage
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [accessPackage](../resources/accesspackage.md) .
+Crie um novo [objeto accessPackage.](../resources/accesspackage.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,11 +47,11 @@ POST /identityGovernance/entitlementManagement/accessPackages
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [accessPackage](../resources/accesspackage.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto accessPackage.](../resources/accesspackage.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta criado 201 e um novo objeto [accessPackage](../resources/accesspackage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta Criado 201 e um novo [objeto accessPackage](../resources/accesspackage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5a198658a0c052b0596152b7b3661b2a9b2c82bc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7fe71bf10a935994f24a5e3c59cff8ef97a6cfe5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978631"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440581"
 ---
 # <a name="tablerow-range"></a>TableRow: Range
 
@@ -31,8 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows/{index}/Range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/Range
+GET /workbook/tables/{id|name}/rows/{index}/Range
+GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/Range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -57,8 +57,8 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "tablerow_range"
 }-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/Range
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/Range
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablerow-range-csharp-snippets.md)]

@@ -1,27 +1,27 @@
 ---
-title: Listar aprovação pendente de accessReviewInstanceDecisionItem
-description: Recupere os objetos accessReviewInstanceDecisionItem com aprovação pendente pelo usuário chamador.
+title: Listar a aprovação pendente accessReviewInstanceDecisionItem
+description: Recupere os objetos accessReviewInstanceDecisionItem aguardando aprovação do usuário chamador.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 22c47613ef2017ee226d55cac08df68d718686bd
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 426abc674df2b14b19dee6ef838d3b7d5fe31a3c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981085"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439125"
 ---
-# <a name="list-accessreviewinstancedecisionitems-pending-approval"></a>Listar aprovação pendente de accessReviewInstanceDecisionItems
+# <a name="list-accessreviewinstancedecisionitems-pending-approval"></a>Listar accessReviewInstanceDecisionItems aguardando aprovação
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) para uma aprovação [pendente accessReviewInstance](../resources/accessreviewscheduledefinition.md) específica pelo usuário de chamada. Uma lista de zero ou mais objetos accessReviewInstanceDecisionItem são retornados, incluindo todas as suas propriedades aninhadas.
+Recupere os [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) para uma aprovação pendente [accessReviewInstance](../resources/accessreviewscheduledefinition.md) específica pelo usuário chamador. Uma lista de zero ou mais objetos accessReviewInstanceDecisionItem é retornada, incluindo todas as suas propriedades aninhadas.
 
 >[!NOTE]
->Se muitos **accessReviewInstanceDecisionItems são retornados,** para melhorar a eficiência e evitar tempos-tempos, recupere o conjunto de resultados em páginas, incluindo o parâmetro de consulta $top com um tamanho de página de no máximo 100 e o parâmetro de consulta $skip=0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata.nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata.nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito na paagem de dados do Microsoft Graph em seu aplicativo.
+>Se muitos **accessReviewInstanceDecisionItems são retornados,** para melhorar a eficiência e evitar tempos-de-tempo, recupere o conjunto de resultados definido em páginas, incluindo o parâmetro de consulta $top com um tamanho de página de no máximo 100 e o parâmetro de consulta $skip=0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata.nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata.nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito na paja de dados do Microsoft Graph em seu aplicativo.
 >
 >Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph paginará automaticamente os resultados em 100 resultados por página.
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 
-O usuário assinado também verá apenas as decisões das quais o revisor é atribuído a ele no accessReviewScheduleDefinition da instância dessa decisão.
+O usuário interno também verá apenas as decisões das quais o revisor é atribuído no accessReviewScheduleDefinition da instância dessa decisão.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ Nenhum.
 Não fornecer um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e uma matriz de objetos `200 OK` [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma matriz de `200 OK` [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação
@@ -157,8 +157,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Acessar AccessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
-- [Acessar AccessReviewInstance](accessreviewinstance-get.md)
+- [Obter accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+- [Obter accessReviewInstance](accessreviewinstance-get.md)
 
 
 <!--

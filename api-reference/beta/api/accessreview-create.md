@@ -1,16 +1,16 @@
 ---
 title: Criar accessReview
-description: No recurso de revisões do Azure AD Access, crie um novo objeto accessReview.
+description: No recurso de análises de acesso do Azure AD, crie um novo objeto accessReview.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d094b51e6aab68a069709b3914caf4aa0892e657
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d53f0335ed9b130be65611d049645aba6a7abe44
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983603"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439405"
 ---
 # <a name="create-accessreview"></a>Criar accessReview
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , crie um novo objeto [accessReview](../resources/accessreview.md) .
+No recurso de análises de acesso do Azure [AD,](../resources/accessreviews-root.md) crie um novo [objeto accessReview.](../resources/accessreview.md)
 
-Antes de fazer essa solicitação, o chamador deve ter [recuperado previamente a lista de modelos de fluxo de negócios](businessflowtemplate-list.md), para que o valor de `businessFlowTemplateId` seja incluído na solicitação.
+Antes de fazer essa solicitação, o chamador deve ter recuperado anteriormente a lista de modelos de fluxo de [negócios,](businessflowtemplate-list.md)para ter o valor de incluir `businessFlowTemplateId` na solicitação.
 
-Depois de fazer essa solicitação, o chamador deve [criar um programControl](programcontrol-create.md)para vincular a revisão do Access a um programa.  
+Depois de fazer essa solicitação, o chamador deve [criar um programControl](programcontrol-create.md), para vincular a revisão de acesso a um programa.  
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,12 +30,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | AccessReview.ReadWrite.Membership |
 
-O chamador também deve ter a permissão ProgramControl. ReadWrite. All, de modo que depois de criar uma revisão do Access, o chamador possa criar um [ProgramControl](../resources/programcontrol.md).
-Além disso, o usuário conectado também deve estar em uma função de diretório que permite que eles criem uma revisão do Access.  Para obter mais detalhes, consulte a função e os requisitos de permissão para [revisões do Access](../resources/accessreviews-root.md).
+O chamador também deve ter permissão ProgramControl.ReadWrite.All, para que depois de criar uma revisão de acesso, o chamador possa criar um [programControl](../resources/programcontrol.md).
+Além disso, o usuário inscreveu também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviews-root.md)
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,37 +49,37 @@ POST /accessReviews
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [accessReview](../resources/accessreview.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto accessReview.](../resources/accessreview.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar um accessReview.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | O nome de revisão do acesso.  |
-| `startDateTime`           |`DateTimeOffset`                                                | O DateTime quando a revisão está agendada para ser iniciada.  Isso deve ser uma data no futuro.   |
-| `endDateTime`             |`DateTimeOffset`                                                | O DateTime quando a revisão é agendada para terminar. Este deve ser pelo menos um dia depois da data de início.   |
-| `description`             |`String`                                                        | A descrição, para mostrar aos revisores. |
-| `businessFlowTemplateId`  |`String`                                                        | O identificador do modelo de fluxo de negócios obtido de um [businessFlowTemplate](../resources/businessflowtemplate.md).  |
-| `reviewerType`            |`String`                                                        | O tipo de relação de revisor para os direitos de acesso do objeto revisado, um de `self` , `delegated` ou `entityOwners` . | 
+| `displayName`             |`String`                                                        | O nome da revisão de acesso.  |
+| `startDateTime`           |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para ser inicial.  Essa deve ser uma data no futuro.   |
+| `endDateTime`             |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para terminar. Isso deve ser pelo menos um dia depois da data de início.   |
+| `description`             |`String`                                                        | A descrição, para mostrar aos revisadores. |
+| `businessFlowTemplateId`  |`String`                                                        | O identificador do modelo de fluxo de negócios, obtido de um [businessFlowTemplate](../resources/businessflowtemplate.md).  |
+| `reviewerType`            |`String`                                                        | O tipo de relação do revistor para os direitos de acesso do objeto revisado, um `self` de `delegated` , ou `entityOwners` . | 
 | `reviewedEntity`          |`microsoft.graph.identity`                                      | O objeto para o qual uma revisão de acesso é criada, como a associação de um grupo ou as atribuições de usuários a um aplicativo. | 
 
 
-Se o revisortype que está sendo fornecido tiver o valor `delegated` , o chamador também deverá incluir a `reviewers` propriedade, com uma coleção de [UserIdentity](../resources/useridentity.md) dos revisores.
+Se o reviewerType fornecido tiver o valor , o chamador também deverá incluir a propriedade, com uma coleção de `delegated` `reviewers` [userIdentity](../resources/useridentity.md) dos revisadores.
 
-Se seu aplicativo estiver chamando esta API sem um usuário conectado, o chamador também deverá incluir a propriedade **createdBy** , o valor para o qual é um [UserIdentity](../resources/useridentity.md) do usuário que será identificado como criador da revisão.
+Se seu aplicativo estiver chamando essa API sem um usuário ligado, o chamador também deverá incluir a propriedade **createdBy,** o valor para o qual é uma [userIdentity](../resources/useridentity.md) do usuário que será identificado como o criador da revisão.
 
-Além disso, o chamador pode incluir configurações, para criar uma série de análise recorrente ou para alterar o comportamento de revisão padrão. Em particular, para criar uma revisão recorrente, o chamador deve incluir as `accessReviewRecurrenceSettings` configurações de revisão do Access,
+Além disso, o chamador pode incluir configurações, para criar uma série de revisão recorrente ou para alterar do comportamento de revisão padrão. Em particular, para criar uma revisão recorrente, o chamador deve incluir as configurações de revisão `accessReviewRecurrenceSettings` de acesso,
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201, Created` código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201, Created` [objeto accessReview](../resources/accessreview.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-Este é um exemplo de criação de uma revisão de acesso de uma única vez (não recorrente), especificando explicitamente dois usuários como os revisores.
+Este é um exemplo de criação de uma revisão de acesso única (não recorrente), especificando explicitamente dois usuários como revistores.
 
 ### <a name="request"></a>Solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [accessReview](../resources/accessreview.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto accessReview.](../resources/accessreview.md)
 
 <!-- {
   "blockType": "ignored",

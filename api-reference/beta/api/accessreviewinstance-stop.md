@@ -1,16 +1,16 @@
 ---
 title: Parar accessReviewInstance
-description: Parar um accessReviewInstance ativo no momento.
+description: Pare um accessReviewInstance ativo no momento.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7e2ab7d5dddfbc1b5903f4a4379e8133278dc6bc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4f9a7dde832cc4d8dcf8353df65789d38d201a7a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221972"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439139"
 ---
 # <a name="stop-accessreviewinstance"></a>Parar accessReviewInstance
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Parar um [accessReviewInstance](../resources/accessreviewinstance.md)ativo no momento. Para impedir que uma revisão de acesso recorrente inicie instâncias futuras, [atualize-](accessreviewscheduledefinition-update.md) a para alterar sua data de término agendada.  Depois que a revisão do Access for interrompida, os revisores não poderão mais fornecer entradas e as decisões de revisão do Access poderão ser aplicadas.
+Pare um [accessReviewInstance](../resources/accessreviewinstance.md)ativo no momento. Para impedir que uma revisão de acesso recorrente inseja instâncias futuras, [atualize-a](accessreviewscheduledefinition-update.md) para alterar sua data de término agendada.  Depois que a revisão de acesso parar, os revisadores não poderão mais dar entrada e as decisões de revisão de acesso podem ser aplicadas.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

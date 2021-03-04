@@ -3,14 +3,14 @@ title: 'accessReviewInstance: applyDecisions'
 description: Aplicar decisões em um accessReviewInstance.
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0af1ae1291a95145041a3e92bedf948c766bd1c0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cb3d91137753ae3383bdaea2700a6664f8b48356
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214716"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439223"
 ---
 # <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance: applyDecisions
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aplicar decisões de revisão em um [accessReviewInstance](../resources/accessreviewinstance.md).
+Aplicar decisões de revisão em [um accessReviewInstance](../resources/accessreviewinstance.md).
 
-Observe que as decisões serão aplicadas automaticamente se o parâmetro autoApplyDecisionsEnabled for true no [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)da revisão.
+Observe que as decisões serão aplicadas automaticamente se o parâmetro autoApplyDecisionsEnabled for True no [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)da revisão.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

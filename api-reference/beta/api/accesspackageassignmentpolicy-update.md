@@ -1,16 +1,16 @@
 ---
 title: Atualizar accessPackageAssignmentPolicy
-description: Atualizar as propriedades de um objeto accessPackageAssignmentPolicy.
+description: Atualize as propriedades de um objeto accessPackageAssignmentPolicy.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2a82476a61fbc775e894f5c5baf0444468041ab5
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 6e0c691ce754d0c024dd4a639823f91a7e168035
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872111"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439692"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Atualizar accessPackageAssignmentPolicy
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Sem suporte. |
+|Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -50,18 +50,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [um 
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição da política.|
-|description|Cadeia de caracteres|A descrição da política.|
+|displayName|String|O nome de exibição da política.|
+|descrição|String|A descrição da política.|
 |canExtend|Booliano|Indica se um usuário pode estender a duração da atribuição do pacote de acesso após a aprovação.|
 |durationInDays|Int32|O número de dias em que as atribuições dessa política duram até expirar.|
 |expirationDateTime|DateTimeOffset|A data de expiração das atribuições criadas nesta política. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Quem pode solicitar esse pacote de acesso a partir dessa política.|
-|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Quem deve aprovar solicitações para o pacote de acesso nesta política.|
-|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Quem deve revisar e com que frequência as atribuições para o pacote de acesso desta política. Essa propriedade será nula se as análises não são necessárias.|
+|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Quem deve aprovar solicitações de pacote de acesso nesta política.|
+|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Quem deve revisar e com que frequência as atribuições para o pacote de acesso desta política. Essa propriedade será nula se as avaliações não são necessárias.|
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) atualizado no corpo da resposta.
 
 
 

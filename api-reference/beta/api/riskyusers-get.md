@@ -1,16 +1,16 @@
 ---
 title: Obter riskyUser
-description: Recupere as propriedades e os relacionamentos de um objeto **riskyUser** .
+description: Recupere as propriedades e as relações de um **objeto riskyUser.**
 localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d3b255bbcf6f0de516b004513c98e08f05420b1f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 8b5a249d6baaac5fe1234888832633317e049cb3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979155"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440833"
 ---
 # <a name="get-riskyuser"></a>Obter riskyUser
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto **riskyUser** .
+Recupere as propriedades e as relações de um **objeto riskyUser.**
 
->**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | IdentityRiskyUser.Read.All |
+|Aplicativo | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,16 +43,16 @@ GET /identityProtection/riskyUsers/{id}
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Workbook-Session-Id  | ID da sessão da pasta de trabalho que determina se as alterações são persistentes. Opcional.|
+| Workbook-Session-Id  | ID da sessão da workbook que determina se as alterações são persistentes. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [riskyUser](../resources/riskyuser.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [riskyUser](../resources/riskyuser.md) no corpo da resposta.
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-get-a-risky-user"></a>Exemplo 1: obter um usuário arriscado
+### <a name="example-1-get-a-risky-user"></a>Exemplo 1: Obter um usuário arriscado
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
@@ -106,7 +106,7 @@ Content-type: application/json
   "userPrincipalName": "alexw@contoso.com"
 }
 ```
-### <a name="example-2-get-risky-users"></a>Exemplo 2: obter usuários arriscados
+### <a name="example-2-get-risky-users"></a>Exemplo 2: Obter usuários arriscados
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 

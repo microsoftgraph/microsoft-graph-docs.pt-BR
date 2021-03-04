@@ -3,14 +3,14 @@ title: Criar accessReviewScheduleDefinition
 description: Crie um novo objeto accessReviewScheduleDefinition.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0a3b9d7f9f4513bb92d7f5ba2de66a83fee8e233
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b82980e053a50b7562cf94d0a5224badfd1d2a8a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981169"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439097"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Criar accessReviewScheduleDefinition
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo                            | AccessReview.ReadWrite.All |
 
-O usuário assinado também deve estar em uma função de diretório que permita criar uma revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [revisões de acesso.](../resources/accessreviewsv2-root.md)
+O usuário interno também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-root.md)
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -50,21 +50,21 @@ A tabela a seguir mostra as propriedades aceitas para criar um accessReview.
 
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
-| displayName | Cadeia de caracteres | Nome da série de revisão de acesso. Obrigatório.|
+| displayName | String | Nome da série de revisão de acesso. Obrigatório.|
 | descriptionForAdmins | string | Contexto da revisão fornecida aos administradores. Obrigatório. |
   descriptionForReviewers | string | Contexto da revisão fornecida aos revisadores. Obrigatório. |
-| escopo | [accessReviewScope](../resources/accessreviewscope.md) | Define o escopo dos usuários analisados em um grupo. Consulte  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Obrigatório.| 
+| escopo | [accessReviewScope](../resources/accessreviewscope.md) | Define o escopo dos usuários revisados em um grupo. Consulte  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Obrigatório.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | No caso de uma revisão de todos os grupos, isso determina o escopo de quais grupos serão revisados. Consulte [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
-| reviewers | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Define quem são os revisadores. Se nenhuma for especificada, a revisão será uma autoavaliação (os usuários revisaram seu próprio acesso). Consulte [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
+| revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisados analisam seu próprio acesso). Consulte [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201, Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201, Created` [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-Este é um exemplo de criação de uma série de revisão de acesso com um usuário específico, cuja ID de objeto de usuário é 7eae4444-d425-48b2-adf2-3c777f6256f3, como revisador. A revisão analisa todos os membros de um grupo específico, cuja ID de objeto de grupo é b7a059cb-038a-4802-8fc9-b9d1ed0c4444. Ele recorre semanalmente.
+Este é um exemplo de criação de uma série de revisão de acesso com um usuário específico, cuja id de objeto de usuário é 7eae4444-d425-48b2-adf2-3c777f6256f3, como revistor. A revisão revisa todos os membros de um grupo específico, cuja id de objeto de grupo é b7a059cb-038a-4802-8fc9-b9d1ed0c4444. Ela se recorre semanalmente.
 
 ### <a name="request"></a>Solicitação
 No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)

@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: sendReminder'
-description: Envia um lembrete para os revisores de um accessReviewInstance ativo no momento.
+description: Envia um lembrete aos revisores de um accessReviewInstance ativo no momento.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 63f746e463a9aa9c073d1acf9ac648e3ac55b927
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ff136fc640ffb622310e97601d8222c9c9e103bd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49521247"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439146"
 ---
 # <a name="accessreviewinstance-sendreminder"></a>accessReviewInstance: sendReminder
 
@@ -20,12 +20,12 @@ Namespace: microsoft.graph
 
 Envie um lembrete aos revisores de um [accessReviewInstance](../resources/accessreviewinstance.md)ativo no momento.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo                            | AccessReview.ReadWrite.All |
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /identityGovernance/accessReviews/definitions/{definitionId}/instances/{instanceId}/sendReminder
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-Nenhum
+Nenhum.
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
