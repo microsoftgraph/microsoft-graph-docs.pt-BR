@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 17a12a1f401a63042dd41f1e0e0f7f89c3d94bb2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 72c552f4c57eb7745f583707e4b9f768cabbab0d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134402"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433811"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>Listar appRoleAssignments concedidos para uma entidade de serviço
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -73,7 +73,7 @@ Veja a seguir um exemplo da solicitação para recuperar as atribuições das fu
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo
+GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/appRoleAssignedTo
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-approleassignedto-csharp-snippets.md)]
@@ -110,17 +110,19 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments",
   "value": [
     {
-      "creationTimestamp": "2016-10-19T10:37:00Z",
-      "id": "id-value",
-      "principalDisplayName": "principalDisplayName-value",
-      "principalId": "principalId-value",
-      "principalType": "principalType-value",
-      "resourceDisplayName": "resourceDisplayName-value"
+      "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
+      "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "principalDisplayName": "MOD Administrator",
+      "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
+      "principalType": "User",
+      "resourceDisplayName": "dxprovisioning-graphapi-client",
+      "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
     }
   ]
 }

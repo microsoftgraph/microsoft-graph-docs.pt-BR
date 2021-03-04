@@ -1,30 +1,30 @@
 ---
-title: Atualizar organizationalbrandingproperties localizado
+title: Atualizar organizacionais localizadasproperties
 description: Atualize as propriedades do objeto organizationalbrandingproperties para uma localização específica.
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 78e6ae581b1a4c0cbfd5fbff2f3814532c7491bb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 42f55715cdb43abec4da9142953c6ccb74722bd2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49523942"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434031"
 ---
-# <a name="update-localized-organizationalbrandingproperties"></a>Atualizar organizationalbrandingproperties localizado
+# <a name="update-localized-organizationalbrandingproperties"></a>Atualizar organizacionais de marca organizacional localizadas
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) para uma localização específica.
+Atualize as propriedades do [objeto organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) para uma localização específica.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -33,8 +33,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization/{id}/branding/localizations/{locale}/{property name}
-PUT /organization/{id}/branding/localizations/{locale}/{property name}
+PATCH /organization/{id}/branding/localizations/{locale}
+PUT /organization/{id}/branding/localizations/{locale}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -43,7 +43,7 @@ PUT /organization/{id}/branding/localizations/{locale}/{property name}
 |:-----------|:-----------|
 | Autorização | {token} de portador. Obrigatório. |
 | Content-Type  | application/json. Obrigatório.  |
-| Conteúdo-idioma  | LCID. Opcional.  |
+| Content-Language  | Localidade. Opcional.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -51,13 +51,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|CorDoFundo|String|Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. É recomendável usar a cor principal do logotipo de faixa ou a cor da sua organização aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF).|
-|backgroundImage|Stream|Imagem que aparece como plano de fundo da página de entrada. . png ou. jpg não é maior do que 1920 x 1080 e menor do que 300kb. Uma imagem menor reduzirá os requisitos de largura de banda e fará com que as cargas de página mais tenham mais desempenho.|
-|bannerLogo|Stream|Uma versão de banner do logotipo da empresa que aparece aparece na página de entrada. . png ou. jpg não maior do que 36x245px. Recomendamos usar uma imagem transparente sem preenchimento em torno do logotipo.|
-|signInPageText|String|Texto que aparece na parte inferior da caixa de entrada. Você pode usá-lo para comunicar informações adicionais, como o número de telefone para o suporte técnico ou uma instrução legal. Este texto deve ser Unicode e não exceder 1024 caracteres.|
-|squareLogo|Stream|Versão quadrada do logotipo da sua empresa. Isso aparece nas experiências de uso (OOBE) do Windows 10 e quando o Windows AutoPilot está habilitado para implantação. . png ou. jpg não maior do que 240x240px e não mais do que 10 KB em tamanho. Recomendamos usar uma imagem transparente sem preenchimento em torno do logotipo.|
-|usernameHintText|String|Cadeia de caracteres que mostra como a dica na caixa de texto username na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres.|
-|id|String|Local para atualizar a identidade visual do|
+|backgroundColor|String|Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. A cor primária do logotipo da faixa ou da cor da sua organização é recomendada para ser usada aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF).|
+|backgroundImage|Stream|Imagem que aparece como o plano de fundo da página de logom. .png ou .jpg não maior que 1920x1080 e menor que 300kb. Uma imagem menor reduzirá os requisitos de largura de banda e tornará as cargas de página mais performant.|
+|bannerLogo|Stream|Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. .png ou .jpg não maior que 36x245px. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
+|signInPageText|String|Texto que aparece na parte inferior da caixa de login. Você pode usar isso para comunicar informações adicionais, como o número de telefone para o seu help desk ou uma declaração legal. Este texto deve ser Unicode e não exceder 1024 caracteres.|
+|squareLogo|Stream|Versão quadrada do logotipo da sua empresa. Isso aparece nas experiências OOBE (windows 10 out-of-box) e quando o Windows Autopilot está habilitado para implantação. .png ou .jpg não maior do que 240x240px e no máximo 10kb de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
+|usernameHintText|String|Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres.|
+|id|String|Localidade para atualizar a identidade visual para|
 
 
 ## <a name="response"></a>Resposta
@@ -66,9 +66,9 @@ Se tiver êxito, este método retornará um código de resposta `204 OK`.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-setting-bannerlogo-for-the-fr-localization-using-put"></a>Exemplo 1: Configurando **bannerLogo** para a localização fr usando put
+### <a name="example-1-setting-bannerlogo-for-the-fr-localization-using-put"></a>Exemplo 1: **Configurando bannerLogo** para a localização fr usando PUT
 
-A solicitação a seguir atualiza o logotipo do banner para a localização fr. Usando PUT, se a localização fr não existir, "404 não encontrado" será retornado. Se a carga contiver uma propriedade ID ou cabeçalho de linguagem de conteúdo e não corresponder à ID na URL, uma solicitação inválida será retornada.
+A solicitação a seguir atualiza o logotipo da faixa para a localização fr. Usando PUT, se a localização fr não existir, "404 não encontrado" será retornado. Se a carga contiver uma propriedade id ou um header content-Language e eles não corresponderem à ID na URL, uma Solicitação Ruim será retornada.
 
 #### <a name="request"></a>Solicitação
 
@@ -119,9 +119,9 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 NO CONTENT
 ```
 
-### <a name="example-2-update-bannerlogo-for-the-fr-localization-using-patch"></a>Exemplo 2: atualizar **bannerLogo** para a localização fr usando patch
+### <a name="example-2-update-bannerlogo-for-the-fr-localization-using-patch"></a>Exemplo 2: Atualizar **bannerLogo** para a localização fr usando PATCH
 
-A solicitação a seguir atualiza o logotipo do banner para a localização fr.  Usando PATCH, se a localização especificada ainda não existir, ela será criada e a propriedade será gravada nela.
+A solicitação a seguir atualiza o logotipo da faixa para a localização fr.  Usando PATCH, se a localização especificada ainda não existir, ela será criada e a propriedade será escrita nele.
 
 #### <a name="request"></a>Solicitação
 
@@ -176,9 +176,9 @@ HTTP/1.1 204 No Content
 
 
 
-### <a name="example-3-override-default-branding-value-with-a-blank-string"></a>Exemplo 3: substituir o valor padrão de identidade visual por uma cadeia de caracteres em branco
+### <a name="example-3-override-default-branding-value-with-a-blank-string"></a>Exemplo 3: Substituir o valor de identidade visual padrão por uma cadeia de caracteres em branco
 
-Se o valor de uma propriedade em uma localização for nulo, o valor será herdado da identidade visual padrão. Para evitar que isso aconteça, defina uma cadeia de caracteres vazia ou uma cadeia de caracteres contendo apenas espaços em branco na identidade visual localizada.
+Se o valor de uma propriedade em uma localização for nulo, o valor será herdado da identidade visual padrão. Para impedir que isso aconteça, de definir uma cadeia de caracteres ou cadeia de caracteres vazia que contenha apenas o espaço em branco na identidade visual localizada.
 
 #### <a name="request"></a>Solicitação
 
@@ -212,13 +212,13 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-Após essa solicitação, usernameHintText para a localização fr estará vazia em vez de herdar o valor da identidade visual padrão.
+Após essa solicitação, usernameHintText para a localização fr estará vazio em vez de herdar o valor da identidade visual padrão.
 
-### <a name="example-4-replace-french-localization-with-put"></a>Exemplo 4: substituir a localização em francês por PUT
+### <a name="example-4-replace-french-localization-with-put"></a>Exemplo 4: Substitua a localização francesa por PUT
 
-Para fazer uma atualização na localização usando PUT, devemos adicionar todas as propriedades no corpo junto com a propriedade que precisa ser atualizada conforme PUT substitui o objeto existente pelo novo. As outras propriedades que não estão no corpo de carga de PUT serão definidas como NULL. Aqui, no exemplo abaixo, somente a propriedade backgroundColor é mantida e o signInPageText é atualizado enquanto outros são definidos como NULL.
-Se a localização especificada ainda não existir, coloque na URL especificando que a localização a cria.
-Se a carga contiver uma propriedade ID ou um cabeçalho de idioma de conteúdo e não corresponder à ID na URL, lançamos uma solicitação incorreta.
+Para fazer uma atualização sobre a localização usando PUT, devemos adicionar todas as propriedades no corpo juntamente com a propriedade que precisa ser atualizada à medida que PUT substitui o objeto existente pelo novo. As outras propriedades que não estão no corpo da carga de PUT serão definidas como NULL. Aqui no exemplo abaixo, somente a propriedade backgroundColor é mantida e signInPageText é atualizada enquanto outras são definidas como nulas.
+Se a localização especificada ainda não existir, PUT para a URL especificando que a localização a cria.
+Se a carga contiver uma propriedade ID ou um header content-Language e eles não corresponderem à ID na URL, lançaremos a solicitação Desa resposta.
 
 #### <a name="request"></a>Solicitação
 

@@ -3,14 +3,14 @@ title: Listar permissionGrantPolicies
 description: Recupere uma lista de objetos permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: fc877e5f29c0e896dd18dd063e15a68a325dd8b3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3bb3377100559583f7e9511ac009dba18f36f16
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967918"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433914"
 ---
 # <a name="list-permissiongrantpolicies"></a>Listar permissionGrantPolicies
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de objetos [permissionGrantPolicy](../resources/permissiongrantpolicy.md) .
+Recupere a lista de [objetos permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. PermissionGrant, Policy. ReadWrite. PermissionGrant |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy. Read. PermissionGrant, Policy. ReadWrite. PermissionGrant |
+| Aplicativo                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [permissionGrantPolicy](../resources/permissiongrantpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos permissionGrantPolicy](../resources/permissiongrantpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

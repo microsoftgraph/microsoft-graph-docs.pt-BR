@@ -1,24 +1,24 @@
 ---
-title: List inclui coleção de permissionGrantPolicy
-description: Recupere uma lista dos conjuntos de condição que descrevem as condições sob as quais um evento de concessão de permissão está incluído em uma política de concessão de permissão.
+title: Lista inclui coleção de permissionGrantPolicy
+description: Recupere uma lista dos conjuntos de condições que descrevem as condições nas quais um evento de concessão de permissão está incluído em uma política de concessão de permissão.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8507ad6f43e507b7f4a975f21c32ac47bff0a3fe
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1d82b31dc657a05233cc41a068bad205bb6a6e14
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967935"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433933"
 ---
-# <a name="list-includes-collection-of-permissiongrantpolicy"></a>List inclui coleção de permissionGrantPolicy
+# <a name="list-includes-collection-of-permissiongrantpolicy"></a>Lista inclui coleção de permissionGrantPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os conjuntos de condições que estão *incluídos* em um [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
+Recupere os conjuntos de condições *incluídos em* [uma permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Policy. Read. PermissionGrant, Directory. Read. All |
+|Delegado (conta corporativa ou de estudante) | Policy.Read.PermissionGrant, Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Policy. Read. PermissionGrant, Directory. Read. All |
+|Aplicativo | Policy.Read.PermissionGrant, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos permissionGrantConditionSet](../resources/permissiongrantconditionset.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

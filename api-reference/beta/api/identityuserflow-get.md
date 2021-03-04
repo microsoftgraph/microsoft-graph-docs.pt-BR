@@ -1,24 +1,24 @@
 ---
-title: Obter userflow
-description: Recupere as propriedades e os relacionamentos do objeto userflow.
+title: Obter userFlow
+description: Recupere as propriedades e as relações do objeto userflow.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 54c510d8db3468aa20d2bd1f28a0ac99866f992d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 143b86109eb0f7cfd14d3366a66fd712f6406262
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953253"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435312"
 ---
-# <a name="get-userflow"></a>Obter userflow
+# <a name="get-userflow"></a>Obter userFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e associações de um objeto [userflow](../resources/identityuserflow.md) .
+Recupere as propriedades e associações de um [objeto userFlow.](../resources/identityuserflow.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All |
+| Aplicativo                            | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [userflow](../resources/identityuserflow.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [userFlow](../resources/identityuserflow.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

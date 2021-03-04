@@ -1,18 +1,18 @@
 ---
-title: Obter governanceRoleAssignmentRequest
-description: 'Obter um governanceRoleAssignmentRequest. '
+title: Obter governançaRoleAssignmentRequest
+description: 'Obter uma governançaRoleAssignmentRequest. '
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 1e52cf77c9dd2be0a059f7c119c416f69b109715
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 63d7e1e494d2195f5622dfa6b0c2e6403975b8da
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635009"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435867"
 ---
-# <a name="get-governanceroleassignmentrequest"></a>Obter governanceRoleAssignmentRequest
+# <a name="get-governanceroleassignmentrequest"></a>Obter governançaRoleAssignmentRequest
 
 Namespace: microsoft.graph
 
@@ -29,26 +29,26 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureResources |
+| Aplicativo | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureAD |
+| Aplicativo | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
 |Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureADGroups |
+| Aplicativo | PrivilegedAccess.Read.AzureADGroups |
 
 Além do escopo de permissão, ele requer o solicitante 
-*   para ter pelo menos uma atribuição de função no recurso; ou
+*   ter pelo menos uma atribuição de função no recurso; ou
 *   é o assunto do [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -68,7 +68,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Obter uma solicitação de atribuição de função

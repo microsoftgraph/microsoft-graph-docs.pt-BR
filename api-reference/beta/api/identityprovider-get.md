@@ -1,16 +1,16 @@
 ---
 title: Obter identityProvider
-description: Recupere as propriedades e os relacionamentos de um objeto identityprovider.
+description: Recupere as propriedades e as relações de um objeto identityProvider.
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 69615bbe83d3d93f09120a39277f8c18415ca745
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 803a684ef8a1432ffedc43a87b2af5c258a394d1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953429"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435473"
 ---
 # <a name="get-identityprovider"></a>Obter identityProvider
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um [identityprovider](../resources/identityprovider.md).
+Recupere as propriedades e as relações de [um identityProvider](../resources/identityprovider.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,9 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 * Administrador global
-* Administrador do provedor de identidade externa
+* Administrador do Provedor de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,11 +53,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma representação JSON do [identityprovider](../resources/identityprovider.md) ou [openIdConnectProvider](../resources/openidconnectprovider.md) (somente para o Azure ad B2C) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma representação JSON do `200 OK` [identityProvider](../resources/identityprovider.md) ou [openIdConnectProvider](../resources/openidconnectprovider.md) (somente para o Azure AD B2C) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-retrieve-a-specific-identityprovider"></a>Exemplo 1: recuperar um identityprovider específico
+### <a name="example-1-retrieve-a-specific-identityprovider"></a>Exemplo 1: Recuperar uma identidade específicaProvider
 
 #### <a name="request"></a>Solicitação
 
@@ -115,7 +115,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>Exemplo 2: recuperar um determinado openIDConnectProvider (somente para o Azure AD B2C)
+### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>Exemplo 2: Recuperar um openIDConnectProvider específico (somente para o Azure AD B2C)
 
 #### <a name="request"></a>Solicitação
 

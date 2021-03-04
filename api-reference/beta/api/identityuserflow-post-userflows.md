@@ -3,14 +3,14 @@ title: Criar userFlow
 description: Use essa API para criar um novo userFlow.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 36ccf24fb65a0098ebccb8774c36af804aece41f
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 3ed41278c913361f22d8df3f2ac34ce50c69d2ed
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176525"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435298"
 ---
 # <a name="create-userflow"></a>Criar userFlow
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [objeto userFlow.](../resources/identityuserflow.md)
+Crie um novo [objeto userFlow.](../resources/identityuserflow.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,7 +51,7 @@ No corpo da solicitação, fornece uma representação JSON do [objeto userFlow.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um novo objeto [userFlow](../resources/identityuserflow.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto userFlow](../resources/identityuserflow.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

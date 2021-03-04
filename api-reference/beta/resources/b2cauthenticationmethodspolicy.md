@@ -3,14 +3,14 @@ title: Tipo de recurso b2cAuthenticationMethodsPolicy
 description: Representa um método de autenticação de conta local registrado para um usuário configurado em um locatário Azure Active Directory (Azure AD) B2C.
 localization_priority: Priority
 author: namkedia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 74b18a2a0bc6d0ace2062f07d44eb175f7ad39e9
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3a7a7e5218e58891649a0caae7d7de43e5629288
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161758"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433163"
 ---
 # <a name="b2cauthenticationmethodspolicy-resource-type"></a>Tipo de recurso b2cAuthenticationMethodsPolicy
 

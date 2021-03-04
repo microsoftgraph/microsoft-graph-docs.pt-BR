@@ -1,16 +1,16 @@
 ---
 title: Criar identityApiConnector
-description: Criar um novo objeto identityApiConnector.
+description: Crie um novo objeto identityApiConnector.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: baa7890717b74a690ee2b225ab4e6e869ec034f4
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: e2ff03ae081a1d406a56c5a826664bb402983a4f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873693"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435607"
 ---
 # <a name="create-identityapiconnector"></a>Criar identityApiConnector
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [objeto identityApiConnector.](../resources/identityapiconnector.md)
+Crie um novo [objeto identityApiConnector.](../resources/identityapiconnector.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -61,13 +61,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [identit
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres| O nome do conector da API. |
-|targetUrl|Cadeia de caracteres| A URL do ponto de extremidade da API a ser chamada. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. Somente [a autenticação Básica](../resources/basicauthentication.md) é suportada.|
+|displayName|String| O nome do conector da API. |
+|targetUrl|String| A URL do ponto de extremidade da API a ser chamada. |
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. Somente [a autenticação básica](../resources/basicauthentication.md) é suportada.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto identityApiConnector](../resources/identityapiconnector.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto identityApiConnector](../resources/identityapiconnector.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

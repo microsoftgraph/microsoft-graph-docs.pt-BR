@@ -1,18 +1,18 @@
 ---
-title: Listar governanceRoleAssignmentRequests
+title: Listar governançaRoleAssignmentRequests
 description: 'Recupere uma coleção de governanceRoleAssignmentRequests. '
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: f7b35d88167a608d2a25ae5a76a1fed8ed539d58
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: a084967a7d0daa20a71992dad102c6a0d46b302e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634911"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435865"
 ---
-# <a name="list-governanceroleassignmentrequests"></a>Listar governanceRoleAssignmentRequests
+# <a name="list-governanceroleassignmentrequests"></a>Listar governançaRoleAssignmentRequests
 
 Namespace: microsoft.graph
 
@@ -29,27 +29,27 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureResources |
+| Aplicativo | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureAD |
+| Aplicativo | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
 |Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureADGroups |
+| Aplicativo | PrivilegedAccess.Read.AzureADGroups |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
-Lista uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) em um recurso.
+Listar uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) em um recurso.
     
 >**Observação:** Além do escopo de permissão, a solicitação exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 
@@ -57,15 +57,15 @@ Lista uma coleção de [governanceRoleAssignmentRequests](../resources/governanc
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-Liste uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) de meus.
+Listar uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) minha.
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-Liste uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão com decisões de administrador pendentes.
+Listar uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão pendentes de decisões de administrador.
     
->**Observação:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos uma `Active` atribuição de função de administrador ( `owner` ou `user access administrator` ) no recurso.
+>**Observação:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos uma atribuição de função de administrador `Active` ( ou ) no `owner` `user access administrator` recurso.
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
@@ -83,14 +83,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequests"
 }-->
-Administradores consultam solicitações pendentes de atribuição de função para a assinatura Wingtip Toys-prod.
+Os administradores consultam solicitações pendentes de atribuição de função para a assinatura Wingtip Toys - Prod.
 ##### <a name="request"></a>Solicitação
 
 ```http

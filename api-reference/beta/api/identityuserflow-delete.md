@@ -1,24 +1,24 @@
 ---
-title: Excluir userflow
-description: Excluir userflow.
+title: Excluir userFlow
+description: Excluir userFlow.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6f864005497b90111a499a2733c83c33142a39e1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6185c79777772b461c562f831d1bb135f2a00aa0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953303"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435340"
 ---
-# <a name="delete-userflow"></a>Excluir userflow
+# <a name="delete-userflow"></a>Excluir userFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [userflow](../resources/identityuserflow.md) existente.
+Exclua um [objeto userFlow](../resources/identityuserflow.md) existente.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | IdentityUserFlow.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | IdentityUserFlow.ReadWrite.All |
+| Aplicativo                            | IdentityUserFlow.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -1,30 +1,30 @@
 ---
 title: Excluir organizationalBrandingProperties
-description: Exclua organizationalBrandingProperties.
+description: Excluir organizationalBrandingProperties.
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 87a588fd4a44f89cbbc5364e26c5a91b1a6b3289
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d21a5752521e84e352b9239d42a8a1454c879a3c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524509"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434094"
 ---
 # <a name="delete-organizationalbrandingproperties"></a>Excluir organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) .
+[Exclua um objeto organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 

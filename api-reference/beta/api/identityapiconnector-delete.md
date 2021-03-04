@@ -3,14 +3,14 @@ title: Excluir identityApiConnector
 description: Exclui um objeto identityApiConnector.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3f021afd1285d00e71ef9ddab25210f00c8ac2be
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 74d8b44e73b6343efd55240e51bb22896e78ce6e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873679"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435606"
 ---
 # <a name="delete-identityapiconnector"></a>Excluir identityApiConnector
 

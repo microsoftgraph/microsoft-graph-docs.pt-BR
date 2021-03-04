@@ -1,16 +1,16 @@
 ---
 title: Criar identityUserFlowAttribute
-description: Criar um novo objeto identityUserFlowAttribute.
+description: Crie um novo objeto identityUserFlowAttribute.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 816b9e94ca95ec61f7a9628de7ede6617cebb7fd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: f6cdbf3d22e7b51e656e3dbe3d44180232a1467b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953134"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435250"
 ---
 # <a name="create-identityuserflowattribute"></a>Criar identityUserFlowAttribute
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [identityUserFlowAttribute](../resources/identityuserflowattribute.md) .
+Crie um novo [objeto identityUserFlowAttribute.](../resources/identityuserflowattribute.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application|IdentityUserFlow.ReadWrite.All|
+|Aplicativo|IdentityUserFlow.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador do atributo de fluxo do usuário de identidade externa
+* Administrador de Atributo de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,15 +56,15 @@ No corpo da solicitação, forneça uma representação JSON de [identityUserFlo
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|id|String|O identificador do atributo de fluxo do usuário. Esse é um atributo somente leitura criado automaticamente.|
+|id|String|O identificador do atributo de fluxo do usuário. Este é um atributo somente leitura que é criado automaticamente.|
 |displayName|String|O nome de exibição do atributo de fluxo do usuário.|
-|description|String|A descrição do atributo de fluxo do usuário. Ele é mostrado ao usuário no momento da inscrição.|
-|userFlowAttributeType|String|O tipo do atributo de fluxo do usuário. Esse é um atributo somente leitura que é definido automaticamente. Dependendo do tipo de atributo, os valores dessa propriedade serão `builtIn` ou `custom`.|
-|dataType|String|O tipo de dados do atributo de fluxo do usuário. Isso não pode ser modificado depois que o atributo de fluxo do usuário personalizado é criado. Os valores com suporte para **tipo de dados** são:<br/><ul><li>`string` : indica que o tipo de dados de identityUserFlowAttribute é uma cadeia de caracteres. </li><li>`boolean` : indica que o tipo de dados de identityUserFlowAttribute é um Boolean.</li><li>`int64` : indica que o tipo de dados de identityUserFlowAttribute é um inteiro.</li></ul>|
+|descrição|String|A descrição do atributo de fluxo do usuário. Ele é mostrado para o usuário no momento da assinatura.|
+|userFlowAttributeType|String|O tipo do atributo de fluxo do usuário. Este é um atributo somente leitura que é definido automaticamente. Dependendo do tipo de atributo, os valores dessa propriedade serão `builtIn` ou `custom` .|
+|dataType|Cadeia de caracteres|O tipo de dados do atributo de fluxo do usuário. Isso não pode ser modificado depois que o atributo de fluxo de usuário personalizado é criado. Os valores com suporte para **dataType** são:<br/><ul><li>`string` : indica que o dataType para identityUserFlowAttribute é uma cadeia de caracteres. </li><li>`boolean` : indica que o dataType para identityUserFlowAttribute é um booleano.</li><li>`int64` : indica que o dataType para identityUserFlowAttribute é um inteiro.</li></ul>|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `201 Created` código de resposta e um objeto [identityUserFlowAttribute](../resources/identityuserflowattribute.md) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
+Se tiver êxito, este método retornará um código de resposta e `201 Created` [um objeto identityUserFlowAttribute](../resources/identityuserflowattribute.md) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="examples"></a>Exemplos
 

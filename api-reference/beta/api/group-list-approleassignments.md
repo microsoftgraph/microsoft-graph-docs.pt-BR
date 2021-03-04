@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 1c5274b49b8062ea111ff3a2f10d39351760e26b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: cd5afbbd17669eab5e8db9461626f50c75a5e976
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130794"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435784"
 ---
 # <a name="list-approleassignments-granted-to-a-group"></a>Listar appRoleAssignments concedido a um grupo
 
@@ -69,7 +69,7 @@ Veja a seguir um exemplo de uma solicitação para recuperar as funções de apl
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/{id}/appRoleAssignments
+GET https://graph.microsoft.com/beta/groups/7679d9a4-2323-44cd-b5c2-673ec88d8b12/appRoleAssignments
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-approleassignments-csharp-snippets.md)]
@@ -106,17 +106,20 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('7679d9a4-2323-44cd-b5c2-673ec88d8b12')/appRoleAssignments",
   "value": [
     {
-      "creationTimestamp": "2016-10-19T10:37:00Z",
-      "id": "id-value",
-      "principalDisplayName": "principalDisplayName-value",
-      "principalId": "principalId-value",
-      "principalType": "principalType-value",
-      "resourceDisplayName": "resourceDisplayName-value"
+      "id": "pNl5diMjzUS1wmc-yI2LEkGgWqFFrFdLhG2Ly2CysL4",
+      "deletedDateTime": null,
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "createdDateTime": "2021-02-19T17:55:08.3369542Z",
+      "principalDisplayName": "Young techmakers",
+      "principalId": "7679d9a4-2323-44cd-b5c2-673ec88d8b12",
+      "principalType": "Group",
+      "resourceDisplayName": "Yammer",
+      "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055"
     }
   ]
 }

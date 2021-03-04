@@ -1,24 +1,24 @@
 ---
-title: Criar permissionGrantConditionSet na coleção Excludes de permissionGrantPolicy
-description: Adicionar condições sob as quais um evento de concessão de permissão é excluído em uma política de concessão de permissão.
+title: Criar permissionGrantConditionSet em exclui coleção de permissionGrantPolicy
+description: Adicione condições nas quais um evento de concessão de permissão é excluído em uma política de concessão de permissão.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 39fcd797f61be5bf8468edc2a5153d08b29f32c5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a15b82fdc595da0a032b2d6962cdcf02b57843fc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969292"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433912"
 ---
-# <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>Criar permissionGrantConditionSet na coleção Excludes de permissionGrantPolicy
+# <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>Criar permissionGrantConditionSet em exclui coleção de permissionGrantPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar condições sob as quais um evento de concessão de permissão é *excluído* em uma política de concessão de permissão. Para fazer isso, adicione um [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) à coleção **Excludes** de um  [permissionGrantPolicy](../resources/permissionGrantPolicy.md).
+Adicione condições nas quais um evento de concessão de permissão *é excluído* em uma política de concessão de permissão. Você faz isso adicionando [uma permissionGrantConditionSet](../resources/permissiongrantconditionset.md) à coleção **excludes** de  [uma permissionGrantPolicy](../resources/permissionGrantPolicy.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Policy.ReadWrite.PermissionGrant |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Policy.ReadWrite.PermissionGrant |
+|Aplicativo | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,17 +47,17 @@ POST /policies/permissionGrantPolicies/{id}/excludes
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) .
+No corpo da solicitação, fornece uma representação JSON de [um objeto permissionGrantConditionSet.](../resources/permissiongrantconditionset.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de `201 Created` resposta e um objeto [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
-Neste exemplo, *todas* as permissões delegadas para o Microsoft Graph ( **AppID** 00000003-0000-0000-C000-000000000000) são excluídas da política de concessão de permissão.
+Neste *exemplo,* todas as permissões delegadas para o Microsoft Graph (**appId** 000000003-0000-0000-c000-000000000000) são excluídas da política de concessão de permissão.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -3,14 +3,14 @@ title: Obter identityApiConnector
 description: Leia as propriedades de um conector de API.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: faadb04acd2768905a3ecdd8a3d3723cb55b9d11
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 3dbf991dc10d1f7d13c25b7b4e7b4c9d26505045
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873672"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435596"
 ---
 # <a name="get-identityapiconnector"></a>Obter identityApiConnector
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades de um [objeto identityApiConnector.](../resources/identityapiconnector.md)
+Leia as propriedades de [um objeto identityApiConnector.](../resources/identityapiconnector.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto identityApiConnector](../resources/identityapiconnector.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto identityApiConnector](../resources/identityapiconnector.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

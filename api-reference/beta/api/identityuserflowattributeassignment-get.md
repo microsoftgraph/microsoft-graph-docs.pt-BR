@@ -1,32 +1,32 @@
 ---
 title: Obter userAttributeAssignments
-description: Leia as propriedades e os relacionamentos de um objeto identityUserFlowAttributeAssignment.
+description: Leia as propriedades e as relações de um objeto identityUserFlowAttributeAssignment.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c134e5e101080c007a0927fd18887262b8e10539
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: ec932b01dfae55dd9958063fccc57e99be9b3958
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581299"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435155"
 ---
 # <a name="get-identityuserflowattributeassignment"></a>Obter identityUserFlowAttributeAssignment
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
-Leia as propriedades e os relacionamentos de um objeto [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) .
+Leia as propriedades e as relações de [um objeto identityUserFlowAttributeAssignment.](../resources/identityuserflowattributeassignment.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Aplicativo|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -42,7 +42,7 @@ GET /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$select` aos `$expand` parâmetros de consulta e para obter os detalhes do atributo de fluxo do usuário. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte `$select` aos `$expand` parâmetros e de consulta para obter os detalhes do atributo de fluxo do usuário. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -56,14 +56,16 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-details-of-an-identityuserflowattributeassignment"></a>Exemplo 1: obter os detalhes de um identityUserFlowAttributeAssignment
+### <a name="example-1-get-the-details-of-an-identityuserflowattributeassignment"></a>Exemplo 1: Obter os detalhes de uma identityUserFlowAttributeAssignment
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityuserflowattributeassignment"
@@ -73,6 +75,24 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityuserflowattributeassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityuserflowattributeassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityuserflowattributeassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityuserflowattributeassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -105,10 +125,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-details-of-an-identityuserflowattributeassignment-and-expand-userattribute"></a>Exemplo 2: obter os detalhes de um identityUserFlowAttributeAssignment e expandir userattribute
+### <a name="example-2-get-the-details-of-an-identityuserflowattributeassignment-and-expand-userattribute"></a>Exemplo 2: obter os detalhes de uma identityUserFlowAttributeAssignment e expandir userAttribute
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityuserflowattributeassignment_expand"
@@ -118,6 +140,24 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/{id}?$expand=userAttribute
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityuserflowattributeassignment-expand-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityuserflowattributeassignment-expand-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityuserflowattributeassignment-expand-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityuserflowattributeassignment-expand-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

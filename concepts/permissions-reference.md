@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 1a53fb8b996a3bb432e57791db273104de657f65
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: cc4bac61d92517e3b6f75133b700b36d84cad2c5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272272"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432883"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -349,25 +349,6 @@ Nenhuma.
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
-## <a name="channel-permissions"></a>Permissões de canal
-
-#### <a name="delegated-permissions"></a>Permissões delegadas
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | Ler os nomes e descrições dos canais. | Ler os nomes e as descrições dos canais, em nome do usuário conectado.    | Não | Não |
-| _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, em nome do usuário conectado.   | Sim | Não |
-| _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, em nome do usuário conectado.   | Sim | Não |
-
-#### <a name="application-permissions"></a>Permissões de aplicativos 
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | Ler os nomes e as descrições de todos os canais. | Ler todos os nomes e descrições do canal, sem um usuário conectado.  | Sim | Não |
-| _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, sem um usuário conectado.  | Sim | Não |
-| _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, sem um usuário conectado.  | Sim | Não |
-|_Teamwork.Migrate.All_|Gerenciar a migração do Microsoft Teams|Criar e gerenciar recursos de migração do Microsoft Teams|Sim|Sim|
-
 ## <a name="calls-permissions"></a>Permissões de chamadas
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -701,6 +682,29 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Domain.ReadWrite.All_ | Ler e registrar domínios | Permite que o aplicativo leia e escreva domínios sem um usuário conectado. | Sim |
 
+## <a name="ediscovery-permissions"></a>Permissões de eDiscovery
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_eDiscovery.Read.All_ |Ler dados de casos de eDiscovery do usuário |Permite que o aplicativo leia objetos de eDiscovery, como casos, custodiantes, conjuntos de revisão e outros objetos relacionados em nome do usuário conectado.. |Sim | Não |
+|_eDiscovery.ReadWrite.All_ | Ler e gravar dados de casos de eDiscovery |Permite que o aplicativo leia e grave objetos de descoberta eletrônica, como casos, custodiantes, conjuntos de revisão e outros objetos relacionados em nome do usuário conectado. |Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+Nenhum
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _eDiscovery.Read.All_: Obtenha a lista de casos disponíveis para o (`GET /compliance/ediscovery/cases`)
+* _eDiscovery.ReadWrite.All_: Criar uma consulta de conjunto de revisões em um conjunto de revisões (`POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries`)
+
+Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
 
 ## <a name="education-permissions"></a>Permissões de educação
 

@@ -1,16 +1,16 @@
 ---
 title: Obter fido2AuthenticationMethodConfiguration
-description: Leia as propriedades e os relacionamentos de um objeto fido2AuthenticationMethodConfiguration.
+description: Leia as propriedades e as relações de um objeto fido2AuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 19e751bab6f076f7269ca895abc35f40a1160423
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c394bf0d75e9115f3cfe7ec44ff4978f716401d0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872993"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435989"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>Obter fido2AuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

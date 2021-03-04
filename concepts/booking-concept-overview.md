@@ -5,16 +5,16 @@ author: arvindmicrosoft
 localization_priority: Priority
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3197c2eccc6d4f8db12bfc15e40f3ecd692c95a1
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 5dfd34bb7defd6f525a5869221ce2c0215826da6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44892138"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432862"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Visão geral da API do Microsoft Bookings (versão prévia)
 
-O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer organização que forneça serviços mediante agendamento, como empresas de grande porte, oficinas de automóveis, salões de beleza e escritórios de advocacia, pode se beneficiar com o gerenciamento de seus agendamentos, e assim liberar tempo para a tarefa mais importante de expandir os negócios. O Microsoft Bookings está disponível para organizações empresariais e empresas que têm uma assinatura do Microsoft 365 Business Premium.
+O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer organização que forneça serviços mediante agendamento, como empresas de grande porte, oficinas de automóveis, salões de beleza e escritórios de advocacia, pode se beneficiar com o gerenciamento de seus agendamentos, e assim liberar tempo para a tarefa mais importante de expandir os negócios. O Microsoft Bookings está disponível para organizações empresariais e empresas que possuem uma assinatura do Microsoft 365 Business Premium.
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>Por que se integrar ao Microsoft Bookings usando o Microsoft Graph?
 

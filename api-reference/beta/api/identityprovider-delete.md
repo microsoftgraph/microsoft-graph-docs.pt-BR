@@ -1,16 +1,16 @@
 ---
 title: Excluir identityProvider
-description: Excluir um identityprovider.
+description: Exclua um identityProvider.
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 53950e1c839b70e84c924d39c0943c8d2ffe34a1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: f09503674cf3f340ef6b7ebe7a918c7c061368c9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953438"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435487"
 ---
 # <a name="delete-identityprovider"></a>Excluir identityProvider
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [identityprovider](../resources/identityprovider.md).
+Excluir um [identityProvider](../resources/identityprovider.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,9 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityProvider.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 * Administrador global
-* Administrador do provedor de identidade externa
+* Administrador do Provedor de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 

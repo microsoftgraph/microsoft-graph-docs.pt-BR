@@ -1,24 +1,24 @@
 ---
-title: A lista exclui coleção de permissionGrantPolicy
-description: Recupere uma lista de conjuntos de condição que descrevem condições sob as quais um evento de concessão de permissão é excluído em uma política de concessão de permissão.
+title: Lista exclui coleção de permissionGrantPolicy
+description: Recupere uma lista dos conjuntos de condições que descrevem as condições nas quais um evento de concessão de permissão é excluído em uma política de concessão de permissão.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9d79489d047e51ae765ddb15f04850b13aa51122
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 97d069280460020da48ee2327c624911925d5b50
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979904"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433961"
 ---
-# <a name="list-excludes-collection-of-permissiongrantpolicy"></a>A lista exclui coleção de permissionGrantPolicy
+# <a name="list-excludes-collection-of-permissiongrantpolicy"></a>Lista exclui coleção de permissionGrantPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os conjuntos de condição que são *excluídos* em um [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
+Recupere os conjuntos de condição *excluídos* em [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Policy. Read. PermissionGrant, Directory. Read. All |
+|Delegado (conta corporativa ou de estudante) | Policy.Read.PermissionGrant, Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Policy. Read. PermissionGrant, Directory. Read. All |
+|Aplicativo | Policy.Read.PermissionGrant, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,13 +53,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos permissionGrantConditionSet](../resources/permissiongrantconditionset.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para recuperar os conjuntos de condições de **exclusão** da política de concessão de permissão interna `microsoft-application-admin` . Essa política de concessão de permissão inclui todas as permissões delegadas e todas as permissões de aplicativo, excluindo permissões de aplicativo para o Microsoft Graph e permissões de aplicativo do Azure AD Graph.
+A seguir, um exemplo da solicitação para recuperar os conjuntos de condições **de exclusão** da política de concessão de permissão interna `microsoft-application-admin` . Essa política de concessão de permissão inclui todas as permissões delegadas e todas as permissões de aplicativo excluindo permissões de aplicativo para o Microsoft Graph e permissões de aplicativo para o Azure AD Graph.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

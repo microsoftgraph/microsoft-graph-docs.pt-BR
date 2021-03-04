@@ -1,24 +1,24 @@
 ---
-title: 'Entidadegovernanceresource: Register'
-description: Registrar um objeto Entidadegovernanceresource no PIM.
+title: 'governanceResource: register'
+description: Registre um objeto governanceResource no PIM.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: df5e9a2d63c6a49a8eb7b8ab9b5ed88b4f50c577
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: fed82587a1132b6c39e6e27e09546906792486b0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635055"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435939"
 ---
-# <a name="governanceresource-register"></a>Entidadegovernanceresource: Register
+# <a name="governanceresource-register"></a>governanceResource: register
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Registre um objeto [entidadegovernanceresource](../resources/governanceresource.md) no gerenciamento de identidade privilegiado.
+Registre um [objeto governanceResource](../resources/governanceresource.md) no Privileged Identity Management.
 
 ## <a name="permissions"></a>Permissões
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
@@ -46,7 +46,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
@@ -59,7 +59,7 @@ POST /privilegedAccess/azureResources/resources/register
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método **só** oferece suporte `$select` a `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método **só dá** suporte aos `$select` `$expand` [parâmetros de consulta e OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -72,7 +72,7 @@ Este método **só** oferece suporte `$select` a `$expand` [parâmetros de consu
 
 | Propriedades | Tipo | Descrição |
 |:---------- |:---- |:----------- |
-| externalId | Cadeia de caracteres | O identificador externo do recurso a ser registrado no PIM. Se estiver registrando uma assinatura, o identificador será o identificador de assinatura precedida por `/subscriptions/` . Por exemplo, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
+| externalId | Cadeia de caracteres | O identificador externo do recurso a ser registrado no PIM. Se registrar uma assinatura, o identificador será o identificador de assinatura pré-anexado por `/subscriptions/` . Por exemplo, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
 
 ## <a name="response"></a>Resposta
 

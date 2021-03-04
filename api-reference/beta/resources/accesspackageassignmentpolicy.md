@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessPackageAssignmentPolicy
-description: Uma política de atribuição de pacote de acesso especifica a política pela qual os titulares podem solicitar ou ser atribuídos a um pacote de acesso por meio de uma atribuição de pacote de acesso.
+description: Uma política de atribuição de pacote de acesso especifica a política pela qual os titulares podem solicitar ou ser atribuídos um pacote de acesso por meio de uma atribuição de pacote de acesso.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 34716752715399d1e16f7edeb609eace4c9b9b0b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 269a3a27d83951c82d50dcaf0ba52c6ce7a5a1bb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155608"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433263"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>Tipo de recurso accessPackageAssignmentPolicy
 
@@ -18,19 +18,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma política de atribuição de pacote de acesso especifica a política pela qual os titulares podem solicitar ou ser atribuídos a um pacote de acesso por meio de uma atribuição de pacote de acesso. Um pacote de acesso pode ter zero ou mais políticas. Quando uma solicitação de um assunto é recebida, o assunto é corresponder a cada política para encontrar a política (se alguma) com requestorSettings que incluem esse assunto. Em seguida, a política determina se a solicitação exige aprovação, a duração da atribuição do pacote de acesso e se a atribuição precisa ser revisada regularmente.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma política de atribuição de pacote de acesso especifica a política pela qual os titulares podem solicitar ou ter um pacote de acesso atribuído por meio de uma atribuição de pacote de acesso. Um pacote de acesso pode ter zero ou mais políticas. Quando uma solicitação de um assunto é recebida, o assunto é corresponder a cada política para encontrar a política (se alguma) com requestorSettings que incluem esse assunto. Em seguida, a política determina se a solicitação requer aprovação, a duração da atribuição do pacote de acesso e se a atribuição precisa ser revisada regularmente.
 
-Para atribuir um usuário a um pacote de acesso, crie [um accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) que faz referência ao pacote de acesso e à política de atribuição do pacote de acesso.
+Para atribuir um usuário a um pacote de acesso, [crie um accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) que faz referência ao pacote de acesso e à política de atribuição de pacote de acesso.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Listar accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [coleção accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Recupere uma lista de objetos accessPackageAssignmentPolicy. |
-| [Criar accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Criar um novo objeto accessPackageAssignmentPolicy. |
-| [Acessar AccessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Ler propriedades e relações de um objeto accessPackageAssignmentPolicy. |
-| [Atualizar accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Atualizar as propriedades de um objeto accessPackageAssignmentPolicy. |
+| [Criar accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Crie um novo objeto accessPackageAssignmentPolicy. |
+| [Obter accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Ler propriedades e relações de um objeto accessPackageAssignmentPolicy. |
+| [Atualizar accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Atualize as propriedades de um objeto accessPackageAssignmentPolicy. |
 | [Excluir accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md) | | Exclua um accessPackageAssignmentPolicy. |
 
 ## <a name="properties"></a>Propriedades
@@ -38,27 +38,27 @@ Para atribuir um usuário a um pacote de acesso, crie [um accessPackageAssignmen
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |accessPackageId|String|ID do pacote de acesso.|
-|accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|Quem deve revisar e com que frequência as atribuições para o pacote de acesso desta política. Essa propriedade será nula se as análises não são necessárias.|
-|canExtend|Boolean|Indica se um usuário pode estender a duração da atribuição do pacote de acesso após a aprovação.|
+|accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|Quem deve revisar e com que frequência as atribuições para o pacote de acesso desta política. Essa propriedade será nula se as avaliações não são necessárias.|
+|canExtend|Booliano|Indica se um usuário pode estender a duração da atribuição do pacote de acesso após a aprovação.|
 |createdBy|String|Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|description|String|A descrição da política.|
+|descrição|String|A descrição da política.|
 |displayName|String|O nome de exibição da política.|
 |durationInDays|Int32|O número de dias em que as atribuições dessa política duram até expirar.|
 |expirationDateTime|DateTimeOffset|A data de expiração das atribuições criadas nesta política. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
 |modifiedBy|String|Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|requestApprovalSettings|[approvalSettings](approvalsettings.md)|Quem deve aprovar solicitações para o pacote de acesso nesta política.|
+|requestApprovalSettings|[approvalSettings](approvalsettings.md)|Quem deve aprovar solicitações de pacote de acesso nesta política.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Quem pode solicitar esse pacote de acesso a partir dessa política.|
-|questions|[coleção accessPackageQuestion](accesspackagequestion.md)|Perguntas que são colocadas ao solicitante.|
+|questions|[Coleção accessPackageQuestion](accesspackagequestion.md)|Perguntas que são colocadas ao solicitante.|
 
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](accesspackage.md)| O pacote de acesso com esta política. Somente leitura. Anulável.|
+|accessPackage|[accessPackage](accesspackage.md)| O pacote de acesso com essa política. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

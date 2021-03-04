@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso subscribedSku
-description: Representa o tipo de SKU inscrito.
+description: Representa o tipo SKU inscrito.
 localization_priority: Normal
 author: SumitParikh
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9d9ccb4bd30a3b14bdfd2527dedde0a0030cb2bd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff7170a8058be986c7af6b7c2ebd53f47b7ffb82
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997512"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433114"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 
@@ -24,7 +24,7 @@ Somente a operação de leitura tem nos SKUs inscritos; criar, atualizar e exclu
 ## <a name="methods"></a>Métodos
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Obtenha uma assinatura comercial específica que uma organização adquiriu.|
+|[Get subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Obter uma assinatura comercial específica que uma organização adquiriu.|
 |[Listar subscribedsku](../api/subscribedsku-list.md) | Coleção [subscribedSku](subscribedsku.md) |Obtenha a lista de assinaturas comerciais que uma organização adquiriu.|
 
 ## <a name="properties"></a>Propriedades
@@ -33,11 +33,11 @@ Somente a operação de leitura tem nos SKUs inscritos; criar, atualizar e exclu
 |appliesTo|Cadeia de caracteres| Por exemplo, “Usuário” ou “Empresa”. |
 |capabilityStatus|Cadeia de caracteres| Os valores possíveis são: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 |consumedUnits|Int32| O número de licenças que foram atribuídas. |
-|id|String| O identificador exclusivo do objeto SKU assinado. Chave, não anulável. |
+|id|String| O identificador exclusivo do objeto SKU assinado. Chave, não anulada. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informações sobre o número e o status das licenças pré-pagas. |
-|onplans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos do serviço que estão disponíveis com o SKU. Não anulável |
+|servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos do serviço que estão disponíveis com o SKU. Não anulada |
 |skuId|Guid| O identificador exclusivo (GUID) do SKU do serviço. |
-|skuPartNumber|Cadeia de caracteres| O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC". Para obter uma lista de assinaturas comerciais que uma organização adquiriu, consulte [list subscribedSkus](../api/subscribedsku-list.md). |
+|skuPartNumber|Cadeia de caracteres| O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC". Para obter uma lista de assinaturas comerciais que uma organização adquiriu, consulte [List subscribedSkus](../api/subscribedsku-list.md). |
 
 ## <a name="relationships"></a>Relações
 Nenhum

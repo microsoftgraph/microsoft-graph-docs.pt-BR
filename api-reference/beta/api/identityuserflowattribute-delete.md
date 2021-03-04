@@ -1,16 +1,16 @@
 ---
 title: Excluir identityUserFlowAttribute
-description: Excluir um identityUserFlowAttribute.
+description: Exclua uma identityUserFlowAttribute.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 32758c748e532d7a8b778a5e19437f1bb6ae8c84
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 1a8cfd2849f79d4489503d7fe715ef6eeb16f03c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953205"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435291"
 ---
 # <a name="delete-identityuserflowattribute"></a>Excluir identityUserFlowAttribute
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Somente atributos de fluxo de usuário personalizados podem ser excluídos.
+Excluir uma [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Somente atributos de fluxo de usuário personalizados podem ser excluídos.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application|IdentityUserFlow.ReadWrite.All|
+|Aplicativo|IdentityUserFlow.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador do atributo de fluxo do usuário de identidade externa
+* Administrador de Atributo de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -1,29 +1,29 @@
 ---
-title: Atualizar governanceRoleAssignmentRequests
-description: Permitir que os administradores atualizem suas decisões ( `AdminApproved` ou `AdminDenied` ) no governanceRoleAssignmentRequests que estão no status de `PendingAdminDecision` .
+title: Atualizar governançaRoleAssignmentRequests
+description: Permitir que os administradores atualizem suas decisões ( ou ) sobre `AdminApproved` `AdminDenied` governançaRoleAssignmentRequests que estão em status de `PendingAdminDecision` .
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 869755946b1e2abe3b2a332899408519da013c07
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 59080cf19cf96d82f029d3ba9513cd16a042157a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965441"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435851"
 ---
-# <a name="update-governanceroleassignmentrequests"></a>Atualizar governanceRoleAssignmentRequests
+# <a name="update-governanceroleassignmentrequests"></a>Atualizar governançaRoleAssignmentRequests
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permitir que os administradores atualizem suas decisões ( `AdminApproved` ou `AdminDenied` ) no [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão no status de `PendingAdminDecision` .
+Permitir que os administradores atualizem suas decisões ( ou ) sobre `AdminApproved` `AdminDenied` [governançaRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão em status de `PendingAdminDecision` .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
->**Observação:** Essa API também exige que o solicitante tenha pelo menos uma `Active` atribuição de função de administrador ( `owner` ou `user access administrator` ) no recurso ao qual o [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) pertence. 
+>**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função de administrador ( ou ) no recurso ao qual a `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) pertence. 
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
@@ -66,11 +66,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 |Parâmetros      |Tipo                   |Obrigatório |Descrição|
 |:-------------|:----------------------|:--------|:----------|
 |motivo        |String                 |✓        |O motivo fornecido pelo administrador para sua decisão.|
-|sobre        |String                 |✓        |A decisão de administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied` .|
-|Cronograma      |[governanceSchedule](../resources/governanceschedule.md)|        | O agendamento da solicitação de atribuição de função. Para o status de `AdminApproved` , é necessário.|
-|assignmentstate      |String|         | O estado da atribuição e os valores podem ser `Eligible` ou `Active` . Para a decisão de `AdminApproved` , é necessário. |
+|decision        |String                 |✓        |A decisão do administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied` .|
+|Cronograma      |[governanceSchedule](../resources/governanceschedule.md)|        | O cronograma da solicitação de atribuição de função. Para o status `AdminApproved` de , é necessário.|
+|assignmentState      |String|         | O estado da atribuição e os valores podem `Eligible` ser ou `Active` . Para a decisão `AdminApproved` de , é necessário. |
 ### <a name="response"></a>Resposta
-Este método só pode ser aplicado a solicitações que estão no status de `PendingAdminDecision` .
+Esse método só pode ser aplicado a solicitações que estão em status de `PendingAdminDecision` .
 
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 

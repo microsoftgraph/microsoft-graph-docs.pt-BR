@@ -4,13 +4,13 @@ description: Crie um novo objeto b2cIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 88595851390bdfefb6db3e8246da92940084de92
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: edb0a8eab1406c3bcdd3856c158b4fb936228eb5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292011"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435536"
 ---
 # <a name="create-b2cidentityuserflow"></a>Criar b2cIdentityUserFlow
 
@@ -59,13 +59,13 @@ No corpo da solicitação, forneça uma representação JSON de [um b2cIdentityU
 |id|String|Obrigatório. O nome do fluxo de usuário. O nome será pré-canetado após `B2C_1` a criação.|
 |userFlowType|String|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Flutuação|Obrigatório. A versão do fluxo de usuário.|
-|isLanguageCustomizationEnabled|Booliano|Opcional. Determina se a personalização de idioma está habilitada no fluxo de usuário do Azure AD B2C. A personalização de idioma não está habilitada por padrão para fluxos de usuário do Azure AD B2C.|
-|defaultLanguageTag|String|Opcional.  Especifica o idioma padrão do b2cIdentityUserFlow que é usado quando nenhuma `ui_locale` marca é especificada na solicitação. Esse campo é [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível.|
-|identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo do usuário.|
+|isLanguageCustomizationEnabled|Booliano|Opcional. Determina se a personalização de idioma está habilitada no fluxo de usuários do Azure AD B2C. A personalização de idioma não está habilitada por padrão para fluxos de usuários do Azure AD B2C.|
+|defaultLanguageTag|String|Opcional.  Especifica o idioma padrão do b2cIdentityUserFlow que é usado quando nenhuma marca é `ui_locale` especificada na solicitação. Esse campo é [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível.|
+|identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo de usuários.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um título de local com um URI para o objeto `201 Created` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) criado para essa solicitação, com o prefixo adicionado ao `B2C_1` nome. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
+Se tiver êxito, este método retornará um código de resposta e um header Location com um URI para o `201 Created` [objeto b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) criado para essa solicitação, com o prefixo adicionado ao `B2C_1` nome. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="examples"></a>Exemplos
 
@@ -226,7 +226,7 @@ Content-type: application/json
   ]
 }-->
 
-### <a name="example-3-create-a-user-flow-with-the-default-values-and-configuration-for-api-connectors"></a>Exemplo 3: Criar um fluxo de usuário com os valores padrão e a configuração para conectores de API
+### <a name="example-3-create-a-user-flow-with-the-default-values-and-configuration-for-api-connectors"></a>Exemplo 3: Criar um fluxo de usuário com os valores padrão e configuração para conectores de API
 
 #### <a name="request"></a>Solicitação
 
@@ -284,7 +284,7 @@ Este é um exemplo de resposta.
 
 **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
-**Observação:** A `apiConnectorConfiguration` propriedade sempre retorna um valor ' {} '. Para ver o valor completo com as propriedades de navegação, use [esta](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md) API.
+**Observação:** A `apiConnectorConfiguration` propriedade sempre retorna um valor ' {} . Para ver o valor completo com as propriedades de navegação, use [esta](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md) API.
 
 <!-- {
   "blockType": "response",

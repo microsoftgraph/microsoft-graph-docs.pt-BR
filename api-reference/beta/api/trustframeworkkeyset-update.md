@@ -1,16 +1,16 @@
 ---
 title: Atualizar trustFrameworkKeySet
-description: Atualiza as propriedades de um objeto **trustFrameworkKeySet** .
+description: Atualize as propriedades de um **objeto trustFrameworkKeySet.**
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c8ff863eb72fef990ac76e10a2a448edfd9120f2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c86b9e64e06434f5c669b53e8303248ed42c521b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980914"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433625"
 ---
 # <a name="update-trustframeworkkeyset"></a>Atualizar trustFrameworkKeySet
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Essa operação substituirá o conteúdo de um conjunto de chaves existente. A especificação da ID na carga de solicitação é opcional.
+Atualize as propriedades de [um trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Essa operação substituirá o conteúdo de um teclado existente. A especificação da ID na carga de solicitação é opcional.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet. ReadWrite. All |
+| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,11 +50,11 @@ PUT /trustFramework/keySets/{id}
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|as|coleção [trustFrameworkKey](../resources/trustframeworkkey.md)| atualiza uma coleção de Trustframeworkkeys|
+|keys|[Coleção trustFrameworkKey](../resources/trustframeworkkey.md)| atualiza uma coleção de Trustframeworkkeys|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto trustFrameworkKeySet](../resources/trustframeworkkeyset.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

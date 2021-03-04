@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: uploadCertificate'
-description: Carregar um certificado em um conjunto de chaves.
+description: Carregue um certificado em um keyset.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 11e307ac3c876bc9a57daac99bfc3dd031cab3d5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 279794743f6f6b4cbd80fd9b3793195a73ff0e18
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980904"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433611"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet: uploadCertificate
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Carregar um certificado em um [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). A entrada é um valor codificado em base 64 do conteúdo do certificado. Este método retorna [trustFrameworkKey](../resources/trustframeworkkey.md).
+Carregue um certificado em [um trustFrameworkKeyset](../resources/trustframeworkkeyset.md). A entrada é um valor codificado de base 64 do conteúdo do certificado. Este método retorna [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet. ReadWrite. All |
+| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,11 +51,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|key|String| Este é o campo para enviar conteúdo de certificado. O valor deve ser uma versão de codificação de base 64 do conteúdo de certificado real. |
+|key|String| Este é o campo para envio de conteúdo de certificado. O valor deve ser uma versão codificada de base 64 do conteúdo real do certificado. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

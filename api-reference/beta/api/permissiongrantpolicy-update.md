@@ -1,16 +1,16 @@
 ---
 title: Atualizar permissionGrantPolicy
-description: Atualizar um objeto permissionGrantPolicy.
+description: Atualize um objeto permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 75c84a1bff24ece3c44a67a5986dbb76c1b8816b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 28e8fdd96bcbdc5b9542d42d8a24d8f5cf4e4da3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968516"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433856"
 ---
 # <a name="update-permissiongrantpolicy"></a>Atualizar permissionGrantPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar propriedades de um  [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
+Atualizar propriedades de  [uma permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.PermissionGrant |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.ReadWrite.PermissionGrant |
+| Aplicativo                            | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,11 +51,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo |Descrição|
 |:---------------|:--------|:----------|
 | displayName | String |O nome de exibição da política de concessão de permissão.|
-| description |String| A descrição da política de concessão de permissão.|
+| descrição |String| A descrição da política de concessão de permissão.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `204 No Content` código de resposta e não retornará nada no corpo da resposta.
+Se tiver êxito, este método retornará um código `204 No Content` de resposta e não retornará nada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -3,14 +3,14 @@ title: Atualizar unifiedRoleAssignmentMultiple
 description: Atualize um novo objeto unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: af1749b0def974fab47bfe3403f4e53e83f65b52
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1f24bf6b9464ec878f47d68553bf36db6dc48866
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978882"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433506"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>Atualizar unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize um objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) existente. Use esta atualização para atualizar as atribuições de função no Microsoft Intune. Observe que o [unifiedRoleAssignment](../resources/unifiedroleassignment.md) não é compatível com a atualização.
+Atualize um [objeto unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) existente. Use isso para atualizar atribuições de função no Microsoft Intune. Observe que [unifiedRoleAssignment](../resources/unifiedroleassignment.md) não dá suporte à atualização.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:------------------------------------------- |
 | Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | DeviceManagementRBAC.ReadWrite.All |
+| Aplicativo | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [unifiedAssignmentMultiple](../resources/unifiedroleassignmentMultiple.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto unifiedAssignmentMultiple](../resources/unifiedroleassignmentMultiple.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

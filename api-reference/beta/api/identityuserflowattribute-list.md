@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos identityUserFlowAttribute.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b22fa576d6aa918bf6b61ab05a75b2f103a89b02
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: af97b488cbc571c53363e088f6507d8c48593f42
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953148"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435249"
 ---
 # <a name="list-identityuserflowattributes"></a>Listar identityUserFlowAttributes
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [identityUserFlowAttribute](../resources/identityuserflowattribute.md) .
+Recupere uma lista de [objetos identityUserFlowAttribute.](../resources/identityuserflowattribute.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,14 +26,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|IdentityUserFlow. Read. All, IdentityUserflow. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.Read.All, IdentityUserflow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Aplicativo|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador do atributo de fluxo do usuário de identidade externa
+* Administrador de Atributo de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [identityUserFlowAttribute](../resources/identityuserflowattribute.md)  no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos identityUserFlowAttribute](../resources/identityuserflowattribute.md)  no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -1,30 +1,30 @@
 ---
-title: Excluir organizationalBrandingProperties localizado
-description: Excluir organizationalBrandingProperties para uma localização específica.
+title: Excluir organizacional localizadaBrandingProperties
+description: Exclua organizationalBrandingProperties para uma localização específica.
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8136325ce1e81728951165475d49944f048dd1a5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 946868fb22c3d2b5ba0a54e764214c3453c39d56
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524621"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434087"
 ---
-# <a name="delete-localized-organizationalbrandingproperties"></a>Excluir organizationalBrandingProperties localizado
+# <a name="delete-localized-organizationalbrandingproperties"></a>Excluir organizacional localizadaBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) .
+[Exclua um objeto organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 

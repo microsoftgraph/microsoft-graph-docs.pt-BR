@@ -1,24 +1,24 @@
 ---
-title: Exportar governanceRoleAssignmentRequests
-description: Recupere uma coleção de governanceRoleAssignmentRequests no formato `application/octet-stream` , que pode ser analisado como um arquivo. csv no navegador.
+title: Exportar governançaRoleAssignmentRequests
+description: Recupere uma coleção de governanceRoleAssignmentRequests no formato , que pode ser analisado como um `application/octet-stream` arquivo .csv no navegador.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: d37ef5fb09e937835dfe496717b58b3934ee606b
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 49a555a690ce23af43af4359d6894b440df7e90e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635051"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435935"
 ---
-# <a name="export-governanceroleassignmentrequests"></a>Exportar governanceRoleAssignmentRequests
+# <a name="export-governanceroleassignmentrequests"></a>Exportar governançaRoleAssignmentRequests
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) no formato `application/octet-stream` , que pode ser analisado como um arquivo. csv no navegador.
+Recupere uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) no formato , que pode ser analisado como um `application/octet-stream` arquivo .csv no navegador.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
@@ -29,23 +29,23 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureResources |
+| Aplicativo | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureAD |
+| Aplicativo | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
 |Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureADGroups |
+| Aplicativo | PrivilegedAccess.Read.AzureADGroups |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,7 +58,7 @@ Exportar uma coleção de [governanceRoleAssignmentRequests](../resources/govern
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
 ```
 
-Exportar uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) de meus
+Exportar uma coleção [de governançaRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) de minha
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq+'{myId}'
 ```
@@ -74,10 +74,10 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o conteúdo do tipo `application/octet-stream` .
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um conteúdo do tipo `application/octet-stream` .
 
 ## <a name="example"></a>Exemplo
-Este exemplo salva todas as atribuições de função como um arquivo. csv na assinatura Wingtip Toys-prod. 
+Este exemplo salva todas as atribuições de função como um arquivo .csv na assinatura Wingtip Toys - Prod. 
 
 ##### <a name="request"></a>Solicitação
 ```http

@@ -1,24 +1,24 @@
 ---
 title: Excluir userAttributeAssignment
-description: Excluir um objeto identityUserFlowAttributeAssignment.
+description: Exclua um objeto identityUserFlowAttributeAssignment.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c7b83e264c05c3636f21237529c85b567a5eea8d
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 9c4e54cdc248e88833d50d89ef6051925d3391db
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689533"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435144"
 ---
 # <a name="delete-userattributeassignment"></a>Excluir userAttributeAssignment
 
 Namespace: microsoft.graph
 
-Excluir um objeto [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) .
+[Exclua um objeto identityUserFlowAttributeAssignment.](../resources/identityuserflowattributeassignment.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

@@ -1,23 +1,24 @@
 ---
-title: Usar a API de pesquisa da Microsoft no Microsoft Graph para pesquisar arquivos
-description: Você pode usar a API de pesquisa da Microsoft para pesquisar arquivos armazenados no OneDrive ou no SharePoint.
+ms.author: yiwenwang
+title: Usar a API de Pesquisa da Microsoft no Microsoft Graph para pesquisar arquivos
+description: Você pode usar a API de Pesquisa da Microsoft para pesquisar arquivos armazenados no OneDrive ou no SharePoint.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 37021df3124b1ff24cb0edde9a8253cf0c980fda
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: f8da8b173762ce3630466ffe08de7b459bfd6f56
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597295"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432680"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Usar a API de pesquisa da Microsoft para pesquisar conteúdo no OneDrive e no SharePoint
+# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Usar a API de Pesquisa da Microsoft para pesquisar conteúdo no OneDrive e no SharePoint
 
-Use a API de pesquisa da Microsoft para pesquisar conteúdo armazenado no OneDrive ou no SharePoint: arquivos, pastas, listas, itens de lista ou sites.
+Use a API de Pesquisa da Microsoft para pesquisar conteúdo armazenado no OneDrive ou SharePoint: arquivos, pastas, listas, itens de lista ou sites.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-A API de pesquisa permite que você escopo os tipos de conteúdo a serem recuperados no OneDrive ou no SharePoint especificando a propriedade **EntityTypes** no [searchRequest](/graph/api/resources/searchRequest). Este artigo descreve alguns exemplos.
+A API de Pesquisa permite que você escopo os tipos de conteúdo a ser recuperado no OneDrive ou no SharePoint especificando a propriedade **entityTypes** no [searchRequest](/graph/api/resources/searchRequest). Este artigo descreve alguns exemplos.
 
 ## <a name="example-1-search-files"></a>Exemplo 1: Arquivos de pesquisa
 
@@ -102,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-search-list-items"></a>Exemplo 2: itens de lista de pesquisa
+## <a name="example-2-search-list-items"></a>Exemplo 2: Itens de lista de pesquisa
 
 ### <a name="request"></a>Solicitação
 
@@ -182,7 +183,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3-search-sites"></a>Exemplo 3: sites de pesquisa
+## <a name="example-3-search-sites"></a>Exemplo 3: Sites de pesquisa
 
 ### <a name="request"></a>Solicitação
 
@@ -245,7 +246,7 @@ Content-type: application/json
 
 ## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>Exemplo 4: Pesquisar todo o conteúdo no OneDrive e no SharePoint
 
-Este exemplo consulta todo o conteúdo de sites do OneDrive e do SharePoint aos quais o usuário conectado tem acesso de leitura. A propriedade **Resource** na resposta retorna correspondências que são arquivos e pastas como objetos **driveItem** , correspondências que são contêineres (listas do SharePoint) como **lista** e todas as outras correspondências como **ListItem**.
+Este exemplo consulta todo o conteúdo nos sites do OneDrive e do SharePoint aos quais o usuário interno tem acesso de leitura. A **propriedade resource** na resposta retorna corresponde a arquivos e pastas como objetos **driveItem,** corresponde a contêineres (listas do SharePoint) como **lista** e todas as outras corresponde como **listItem**.
 
 ### <a name="request"></a>Solicitação
 
@@ -347,24 +348,25 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-5-use-filters-in-search-queries"></a>Exemplo 5: usar filtros em consultas de pesquisa
+## <a name="example-5-use-filters-in-search-queries"></a>Exemplo 5: Usar filtros em consultas de pesquisa
 
-Você pode usar o KQL em termos de pesquisa de consultas do OneDrive e do SharePoint. Por exemplo:
+Você pode usar KQL em termos de pesquisa de consultas para OneDrive e SharePoint. Por exemplo:
 
-- `"query": "contoso filetype:docx OR filetype:doc"` escopo a consulta em documentos do Word.
-- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` escopo a consulta para uma determinada pasta dentro de um site.
-- `"query": "contoso AND isDocument=true"` escopos a consulta para retornar apenas os documentos. Qualquer contêiner (pasta, biblioteca de documentos) não será retornado.
-- `"query": "contoso contentclass:STS_List_Events"` escopos a consulta para eventos de calendário armazenados no SharePoint.
+- `"query": "contoso filetype:docx OR filetype:doc"` escopos da consulta para documentos do Word.
+- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` escopos da consulta para uma pasta específica dentro de um site.
+- `"query": "contoso AND isDocument=true"` escopos da consulta para retornar apenas documentos. Qualquer contêiner (pasta, biblioteca de documentos) não será retornado.
+- `"query": "contoso contentclass:STS_List_Events"` escopos da consulta a eventos calendar armazenados no SharePoint.
+- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"` escopos da consulta para filtrar itens do SharePoint e do OneDrive por data
 
-Para ser válido, a restrição de propriedades deve especificar um nome de propriedade gerenciada válido e consultável na condição.
+Para ser válida, a restrição de propriedades deve especificar um nome de propriedade gerenciada válido e queryable na condição.
 
-## <a name="example-6-specify-select-properties"></a>Exemplo 6: especificar propriedades de seleção
+## <a name="example-6-specify-select-properties"></a>Exemplo 6: Especificar propriedades de seleção
 
-Você pode especificar os campos que deseja de volta na resposta, como parte da subpropriedade **Fields** de um objeto [searchHit](/graph/api/resources/searchhit) na resposta. Essa é uma maneira de aparar a resposta sobre o fio ou para solicitar algumas propriedades específicas que não fazem parte do esquema pronto para uso.
+Você pode especificar os campos que deseja retornar na resposta, como parte da sub-propriedade **fields** de um [objeto searchHit](/graph/api/resources/searchhit) na resposta. Essa é uma maneira de cortar a resposta sobre o fio ou solicitar algumas propriedades específicas que não fazem parte do esquema fora da caixa.
 
-Observe que a seleção de propriedade só está disponível para **ListItem** , pois esta é a única entidade do SharePoint no Microsoft Graph que oferece suporte a propriedades personalizadas.
+Observe que a seleção de propriedades só está disponível para **listItem,** pois essa é a única entidade do SharePoint no Microsoft Graph que dá suporte a propriedades personalizadas.
 
-Para recuperar uma propriedade personalizada de um **driveItem**, procure **ListItem** .
+Para recuperar uma propriedade personalizada para **um driveItem**, **listItem de** consulta.
 
 ### <a name="request"></a>Solicitação
 
@@ -439,7 +441,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-Ao procurar **drive**, você precisa incluir no termo **QueryString** a contido no nome da biblioteca de documentos. A consulta `*` não é suportada e não retorna todas as unidades disponíveis.
+Ao pesquisar a **unidade,** você precisa incluir na **consultaString** um termo contido no nome da biblioteca de documentos. A consulta `*` não é suportada e não retorna todas as unidades disponíveis.
 
 ## <a name="next-steps"></a>Próximas etapas
 

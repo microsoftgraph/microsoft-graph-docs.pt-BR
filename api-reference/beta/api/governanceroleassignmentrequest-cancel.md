@@ -1,24 +1,24 @@
 ---
-title: Cancelar governanceRoleAssignmentRequest
-description: Cancelar uma governanceRoleAssignmentRequest.
+title: Cancelar governançaRoleAssignmentRequest
+description: Cancele uma governançaRoleAssignmentRequest.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: b707621c6ab6423cdffa910d9c6f7e5cb86d57ce
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 1fad0311a688a2093e216a8b8d53405260d1fa19
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981358"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435928"
 ---
-# <a name="cancel-governanceroleassignmentrequest"></a>Cancelar governanceRoleAssignmentRequest
+# <a name="cancel-governanceroleassignmentrequest"></a>Cancelar governançaRoleAssignmentRequest
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancelar uma [governançaRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+Cancele [um governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
@@ -48,7 +48,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo | Sem suporte. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método não **dá suporte** a [parâmetros de consulta OData.](/graph/query-parameters)
+Este método não **dá suporte** a [Parâmetros de Consulta OData.](/graph/query-parameters)
 
 ### <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -69,11 +69,11 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 NoContent`. Não retorna nada no corpo da resposta. 
 
 ## <a name="error-codes"></a>Códigos de erro
-Essa API segue o padrão de códigos HTTP. Além disso, os códigos de erro personalizados são mostrados abaixo.
+Esta API segue o padrão de códigos HTTP. Além disso, os códigos de erro personalizados são mostrados abaixo.
 
 | Código de erro | Mensagem de erro | Detalhes |
 |:---------- |:------------- |:------- |
-| 400 BadRequest | RoleAssignmentRequestNotFound | A governanceRoleAssignmentRequest não existe no sistema. |
+| 400 BadRequest | RoleAssignmentRequestNotFound | O governanceRoleAssignmentRequest não existe no sistema. |
 | 400 BadRequest | RequestCannotBeCancelled | Somente solicitações no status `Granted` de , e podem ser `PendingApproval` `PendingApprovalProvisioning` `PendingAdminDecision` canceladas. |
 
 ## <a name="example"></a>Exemplo

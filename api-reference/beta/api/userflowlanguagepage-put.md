@@ -3,22 +3,22 @@ title: Atualizar userFlowLanguagePage
 description: Atualize os valores em um objeto userFlowLanguagePage.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4e6d1488851e4d76fc1771296ef0661f81da1b33
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 2d9a38a94dfc5fe8f801a246ff4bcab2bc41eab7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844792"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433443"
 ---
 # <a name="update-userflowlanguagepage"></a>Atualizar userFlowLanguagePage
 
 Namespace: microsoft.graph
 
-Atualize os valores em um objeto userFlowLanguagePage. Você só pode atualizar os valores em uma overridesPage, que é usada para personalizar os valores mostrados para um usuário durante uma jornada do usuário definida por um fluxo de usuário.
+Atualize os valores em um objeto userFlowLanguagePage. Você só pode atualizar os valores em um overridesPage, que é usado para personalizar os valores mostrados a um usuário durante uma jornada do usuário definida por um fluxo de usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -35,7 +35,7 @@ A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funç�
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para fazer referência ao conteúdo dentro do objeto, você deve usar `$value` . Isso retorna o conteúdo dentro do objeto e permite que você o consulte diretamente.
+Para fazer referência ao conteúdo dentro do objeto, você deve usar `$value` . Isso retorna o conteúdo dentro do objeto e permite que você o referencia diretamente.
 
 <!-- {
   "blockType": "ignored"
@@ -56,7 +56,7 @@ PUT /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON dos valores contidos em [um userFlowLanguagePage](../resources/userflowlanguagepage.md).
+No corpo da solicitação, fornece uma representação JSON para os valores contidos em [um userFlowLanguagePage](../resources/userflowlanguagepage.md).
 
 ## <a name="response"></a>Resposta
 

@@ -1,35 +1,35 @@
 ---
 title: Criar windows10VpnConfiguration
-description: Criar um novo objeto windows10VpnConfiguration.
+description: Crie um novo objeto windows10VpnConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b08d631797691b97d0301fea2b13130b1db7da0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 007f2c90d63ec2e3b6e9139a27fdc2c19bd44591
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49204681"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435011"
 ---
 # <a name="create-windows10vpnconfiguration"></a>Criar windows10VpnConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) .
+Crie um novo [objeto windows10VpnConfiguration.](../resources/intune-deviceconfig-windows10vpnconfiguration.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -48,54 +48,54 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto windows10VpnConfiguration.
+No corpo da solicitação, fornece uma representação JSON para o objeto windows10VpnConfiguration.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar windows10VpnConfiguration.
+A tabela a seguir mostra as propriedades necessárias ao criar o windows10VpnConfiguration.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|ConnectionName|String|Nome da conexão exibido para o usuário. Herdado de [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
-|servidores|coleção [vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Lista de servidores VPN na rede. Verifique se os usuários finais podem acessar esses locais de rede. Esta coleção pode conter um máximo de 500 elementos. Herdado de [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
-|customXml|Binária|Comandos XML personalizados que configura a conexão VPN. (Matriz de bytes codificados por UTF8) Herdado de [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
-|profileTarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|Tipo de destino do perfil. Os valores possíveis são: `user`, `device`, `autoPilotDevice`.|
-|Connection|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Tipo de conexão. Os valores possíveis são: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`.|
-|enableSplitTunneling|Booliano|Habilitar o túnel de divisão.|
-|enableAlwaysOn|Booliano|Habilitar o modo Always on.|
-|enableDeviceTunnel|Booliano|Habilitar o túnel de dispositivo.|
+|connectionName|String|Nome da conexão exibido ao usuário. Herdado do [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|servers|[Coleção vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Lista de servidores VPN na rede. Certifique-se de que os usuários finais possam acessar esses locais de rede. Esta coleção pode conter um máximo de 500 elementos. Herdado do [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|customXml|Binária|Comandos XML personalizados que configuram a conexão VPN. (Matriz de byte codificado UTF8) Herdado do [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|profileTarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|Tipo de destino de perfil. Os valores possíveis são: `user`, `device`, `autoPilotDevice`.|
+|connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Tipo de conexão. Os valores possíveis são: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`, `ciscoAnyConnect`.|
+|enableSplitTunneling|Booliano|Habilitar o túnel dividido.|
+|enableAlwaysOn|Booliano|Habilita o modo Always On.|
+|enableDeviceTunnel|Booliano|Habilitar o túnel do dispositivo.|
 |enableDnsRegistration|Booliano|Habilitar o registro de endereço IP com DNS interno.|
-|dnsSuffixes|Coleção de cadeias de caracteres|Especifique sufixos DNS para adicionar à lista de pesquisa de DNS para rotear corretamente nomes curtos.|
+|dnsSuffixes|Coleção de cadeias de caracteres|Especifique sufixos DNS para adicionar à lista de pesquisa DNS para roteá-los corretamente.|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Método de autenticação. Os valores possíveis são: `certificate`, `usernameAndPassword`, `customEapXml`, `derivedCredential`.|
-|rememberUserCredentials|Booliano|Lembrar as credenciais do usuário.|
+|rememberUserCredentials|Booliano|Lembre-se das credenciais do usuário.|
 |enableConditionalAccess|Booliano|Habilitar o acesso condicional.|
-|enableSingleSignOnWithAlternateCertificate|Booliano|Habilitar o logon único (SSO) com certificado alternativo.|
-|singleSignOnEku|[extendedKeyUsage](../resources/intune-shared-extendedkeyusage.md)|Uso de chave estendida (EKU) de logon único.|
-|singleSignOnIssuerHash|String|Hash do emissor de logon único.|
-|eapXml|Binária|XML EAP (Extensible Authentication Protocol). (Matriz de bytes codificados em UTF8)|
-|proxyServer|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Servidor proxy.|
-|associatedApps|coleção [windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md)|Aplicativos associados. Essa coleção pode conter um máximo de 10.000 elementos.|
-|onlyAssociatedAppsCanUseConnection|Booliano|Somente os aplicativos associados podem usar Connection (VPN por aplicativo).|
-|windowsInformationProtectionDomain|String|Domínio de proteção de informações do Windows (WIP) a ser associado a essa conexão.|
-|trafficRules|coleção [vpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md)|Regras de tráfego. Essa coleção pode conter um máximo de 1.000 elementos.|
-|roteie|coleção [vpnRoute](../resources/intune-deviceconfig-vpnroute.md)|Rotas (opcionais para provedores de terceiros). Essa coleção pode conter um máximo de 1.000 elementos.|
-|dnsRules|coleção [vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md)|Regras de DNS. Essa coleção pode conter um máximo de 1.000 elementos.|
+|enableSingleSignOnWithAlternateCertificate|Booliano|Habilitar o SSO (login único) com certificado alternativo.|
+|singleSignOnEku|[extendedKeyUsage](../resources/intune-shared-extendedkeyusage.md)|EKU (Uso estendido de chave estendida) de login único.|
+|singleSignOnIssuerHash|String|Hash do emissor de login único.|
+|eapXml|Binária|XML do Protocolo de Autenticação Extensível (EAP). (Matriz de bytes codificados em UTF8)|
+|proxyServer|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Servidor Proxy.|
+|associatedApps|[Coleção windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md)|Aplicativos associados. Essa coleção pode conter um máximo de 10.000 elementos.|
+|onlyAssociatedAppsCanUseConnection|Booliano|Somente aplicativos associados podem usar conexão (VPN por aplicativo).|
+|windowsInformationProtectionDomain|String|Domínio wip (Proteção de Informações do Windows) para associar a essa conexão.|
+|trafficRules|[Coleção vpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md)|Regras de tráfego. Essa coleção pode conter um máximo de 1.000 elementos.|
+|routes|[Coleção vpnRoute](../resources/intune-deviceconfig-vpnroute.md)|Rotas (opcional para provedores de terceiros). Essa coleção pode conter um máximo de 1.000 elementos.|
+|dnsRules|[Coleção vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md)|Regras DNS. Essa coleção pode conter um máximo de 1.000 elementos.|
 |trustedNetworkDomains|Coleção de cadeias de caracteres|Domínios de rede confiáveis|
-|cryptographySuite|[cryptographySuite](../resources/intune-deviceconfig-cryptographysuite.md)|Configurações de segurança do pacote de criptografia para VPN IKEv2 no Windows10 e superior |
+|cryptographySuite|[cryptographySuite](../resources/intune-deviceconfig-cryptographysuite.md)|Configurações de segurança do Pacote de Criptografia para VPN IKEv2 no Windows10 e acima |
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

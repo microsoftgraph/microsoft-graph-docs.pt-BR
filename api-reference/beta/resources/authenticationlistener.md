@@ -3,14 +3,14 @@ title: Tipo de recurso authenticationListener
 description: Define o ouvinte a ser avaliada durante um evento de autenticação.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 41114f69bb169922b5594ee5cbbcdb236edfb0d0
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a7feeabaa9caf0246a53aded7ac1c15236fdf8af
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159161"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433177"
 ---
 # <a name="authenticationlistener-resource-type"></a>Tipo de recurso authenticationListener
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define um ouvinte a ser avaliada quando um evento de autenticação ocorre em uma experiência de autenticação. Um authenticationListener é abstrato e é a classe base dos vários tipos de ouvintes que você pode avaliar durante um evento de autenticação. 
+Define um ouvinte a ser avaliada quando um evento de autenticação acontece em uma experiência de autenticação. Um authenticationListener é abstrato e é a classe base dos vários tipos de ouvintes que você pode avaliar durante um evento de autenticação. 
 
-Você pode criar [um invokeUserFlowListener para](../resources/invokeuserflowlistener.md) o evento onSignUpStart. Isso associa um aplicativo a um fluxo de usuário, habilitando um processo de inscrição [de autoatendenciamento.](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) Depois que um aplicativo é associado a um fluxo de usuário, os usuários que vão para esse aplicativo poderão iniciar um fluxo de inscrição que provisiona uma conta de convidado.
+Você pode criar [um invokeUserFlowListener](../resources/invokeuserflowlistener.md) para o evento onSignUpStart.. Isso associa um aplicativo a um fluxo de usuário, portanto, habilitando um processo de [inscrição de autoatendenciamento.](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) Depois que um aplicativo é associado a um fluxo de usuários, os usuários que vão para esse aplicativo poderão iniciar um fluxo de inscrição que provisiona uma conta de convidado.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -39,7 +39,7 @@ Você pode criar [um invokeUserFlowListener para](../resources/invokeuserflowlis
 |:---|:---|:---|
 |id|String|O identificador da ação.|
 |prioridade|Int32|A prioridade do ouvinte. Determina a ordem de avaliação quando um evento tem vários ouvintes. A prioridade é avaliada de baixo para alto.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtrar com base na origem da autenticação usada para determinar se o ouvinte é avaliado. Atualmente, isso está limitado a avaliações baseadas no aplicativo ao usuário que está autenticando.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtrar com base na origem da autenticação usada para determinar se o ouvinte é avaliado. No momento, isso está limitado a avaliações com base no aplicativo ao que o usuário está autenticando.|
 
 ## <a name="relationships"></a>Relações
 

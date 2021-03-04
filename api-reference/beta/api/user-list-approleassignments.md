@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 6fa31fd31c8c898b508b9b0d02c602047eea58c5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 43f1119f83d0865319462e7ffb65c263eb67f06f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136210"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433493"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>Listar appRoleAssignments concedido a um usuário
 
@@ -55,9 +55,11 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-list-approleassignments-granted-to-a-user"></a>Exemplo 1: listar atribuições de função de aplicativo concedidas a um usuário
+
+#### <a name="request"></a>Solicitação
 
 Veja a seguir um exemplo de uma solicitação para recuperar as funções de aplicativo que foram atribuídas a um usuário.
 
@@ -69,7 +71,7 @@ Veja a seguir um exemplo de uma solicitação para recuperar as funções de apl
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/appRoleAssignments
+GET https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/appRoleAssignments
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-approleassignments-csharp-snippets.md)]
@@ -90,11 +92,11 @@ GET https://graph.microsoft.com/beta/users/{id}/appRoleAssignments
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta. 
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -106,17 +108,68 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
 
 {
   "value": [
     {
-      "creationTimestamp": "2016-10-19T10:37:00Z",
-      "id": "id-value",
-      "principalDisplayName": "principalDisplayName-value",
-      "principalId": "principalId-value",
-      "principalType": "principalType-value",
-      "resourceDisplayName": "resourceDisplayName-value"
+      "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
+      "deletedDateTime": null,
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+      "principalDisplayName": "Alex Wilber",
+      "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
+      "principalType": "User",
+      "resourceDisplayName": "dxprovisioning-graphapi-client",
+      "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
+    }
+  ]
+}
+```
+
+### <a name="example-2-list-approleassignments-granted-to-a-user-filtered-by-resourceid"></a>Exemplo 2: Listar atribuições de função de aplicativo concedidas a um usuário, filtradas por ID de recurso
+
+#### <a name="request"></a>Solicitação
+
+Aqui está um exemplo da solicitação para recuperar as funções do aplicativo que foram atribuídas a um usuário, filtrando por um `resourceId`, que é um tipo de GUID.
+
+<!-- {
+  "blockType": "request",
+  "name": "user_get_approleassignments_filterby_resourceId"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/appRoleAssignments?$filter=resourceId eq 8e881353-1735-45af-af21-ee1344582a4d
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments",
+  "value": [
+    {
+      "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
+      "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "principalDisplayName": "MOD Administrator",
+      "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
+      "principalType": "User",
+      "resourceDisplayName": "dxprovisioning-graphapi-client",
+      "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
     }
   ]
 }

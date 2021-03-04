@@ -1,24 +1,24 @@
 ---
-title: Listar governanceRoleAssignments
+title: Listar governançaRoleAssignments
 description: Recupere uma coleção de governanceRoleAssignments.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 338fb9c4d02b87e940fbb0fc867edbb374e9d42b
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 9961aaf1b76f38d7f54afcb168bd81cf47ec883d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635023"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435914"
 ---
-# <a name="list-governanceroleassignments"></a>Listar governanceRoleAssignments
+# <a name="list-governanceroleassignments"></a>Listar governançaRoleAssignments
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma coleção de [governanceRoleAssignments](../resources/governanceroleassignment.md).
+Recuperar uma coleção de [governanceRoleAssignments](../resources/governanceroleassignment.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
@@ -29,35 +29,35 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureResources |
+| Aplicativo | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureAD |
+| Aplicativo | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
 |Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureADGroups |
+| Aplicativo | PrivilegedAccess.Read.AzureADGroups |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 
-Lista uma coleção de [governanceRoleAssignments](../resources/governanceroleassignment.md) em um recurso.
+Listar uma coleção [de governanceRoleAssignments](../resources/governanceroleassignment.md) em um recurso.
 
 >**Observação:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos uma atribuição de função no recurso. 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-Liste uma coleção de [governanceRoleAssignments](../resources/governanceroleassignment.md) de meus.
+Listar uma coleção [de governançaRoleAssignments](../resources/governanceroleassignment.md) minhas.
 ```http
 GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
 ```
@@ -73,10 +73,10 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [governanceRoleAssignment](../resources/governanceroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos governanceRoleAssignment](../resources/governanceroleassignment.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 
-Este exemplo mostra como obter minhas atribuições de função na assinatura Wingtip Toys-prod.
+Este exemplo mostra como obter minhas atribuições de função na assinatura Wingtip Toys - Prod.
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignments"

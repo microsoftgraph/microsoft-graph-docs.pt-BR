@@ -1,16 +1,16 @@
 ---
 title: Obter governanceRoleSetting
-description: Recupere as propriedades e os relacionamentos de uma governanceRoleSetting.
+description: Recupere as propriedades e as relações de um governanceRoleSetting.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 26fcb5363118f74665a7bf319f8ab65a4df10c50
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 76600ce851c0319a47bfbf4450c52a895a1b7ee5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983367"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435802"
 ---
 # <a name="get-governancerolesetting"></a>Obter governanceRoleSetting
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de uma [governanceRoleSetting](../resources/governancerolesetting.md).
+Recupere as propriedades e as relações de um [governanceRoleSetting](../resources/governancerolesetting.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-#privileged-access-permissions).
@@ -65,7 +65,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e um objeto [governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 

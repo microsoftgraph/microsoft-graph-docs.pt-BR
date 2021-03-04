@@ -1,16 +1,16 @@
 ---
 title: Atualizar identityUserFlowAttribute
-description: Atualizar propriedades de um identityUserFlowAttribute.
+description: Atualizar propriedades de uma identityUserFlowAttribute.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c3bce3e4af9ddef293ae172193b868c4b5e59cf8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: c53781dba635e583531682f755b5c76be6dfac5e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953120"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435235"
 ---
 # <a name="update-identityuserflowattribute"></a>Atualizar identityUserFlowAttribute
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [identityUserFlowAttribute](../resources/identityuserflowattribute.md) . Somente atributos de fluxo de usuário personalizados podem ser atualizados.
+Atualize as propriedades de [um objeto identityUserFlowAttribute.](../resources/identityuserflowattribute.md) Somente atributos de fluxo de usuário personalizados podem ser atualizados.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application| IdentityUserFlow.ReadWrite.All|
+|Aplicativo| IdentityUserFlow.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de atributos de fluxo do usuário de identidade externa
+* Administrador de Atributos de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,13 +52,13 @@ PATCH /userFlowAttributes/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça um objeto JSON com uma ou mais propriedades que precisam ser atualizadas para um objeto [identityUserFlowAttribute](../resources/identityuserflowattribute.md) .
+No corpo da solicitação, forneça um objeto JSON com uma ou mais propriedades que precisam ser atualizadas para um [objeto identityUserFlowAttribute.](../resources/identityuserflowattribute.md)
 
->**Observação:** Somente a propriedade **Description** pode ser atualizada.
+>**Observação:** Somente a **propriedade description** pode ser atualizada.
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|description|String|A descrição do atributo de fluxo do usuário. Ele é exibido para o usuário no momento da inscrição.|
+|description|String|A descrição do atributo de fluxo do usuário. Ele é mostrado ao usuário no momento da assinatura.|
 
 ## <a name="response"></a>Resposta
 

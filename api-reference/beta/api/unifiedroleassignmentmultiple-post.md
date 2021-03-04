@@ -3,14 +3,14 @@ title: Criar unifiedRoleAssignmentMultiple
 description: Crie um novo objeto unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cf393fb8a47bc797993120fc7a23865b5647fae4
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 9cebc9c5eb4a182a909c5a098f75122911c0c890
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154695"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433590"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Criar unifiedRoleAssignmentMultiple
 
@@ -47,20 +47,20 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) A solicitação deve ter um escopo definido no Azure AD, como, ou um escopo `directoryScopeIds` específico do aplicativo, como `appScopeId` . Exemplos de escopo do Azure AD são locatário ("/"), unidades administrativas ou aplicativos. 
+No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) A solicitação deve ter um escopo definido no Azure AD, como , ou um `directoryScopeIds` escopo específico do aplicativo, como `appScopeId` . Exemplos de escopo do Azure AD são locatários ("/"), unidades administrativas ou aplicativos. 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um novo objeto `201 Created` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-role-assignment-in-intune-over-two-scope-groups-which-are-azure-ad-objects"></a>Exemplo 1: Criar uma atribuição de função no Intune em dois grupos de escopo (que são objetos do Azure AD)
+### <a name="example-1-create-a-role-assignment-in-intune-over-two-scope-groups-which-are-azure-ad-objects"></a>Exemplo 1: Criar uma atribuição de função no Intune sobre dois grupos de escopo (que são objetos do Azure AD)
 
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
-> **Observação:** o uso do **roleTemplateId** para **roleDefinitionId**. **roleDefinitionId** pode ser a ID de modelo de todo o serviço ou a **roleDefinitionId** específica do diretório.
+> **Observação:** o uso do **roleTemplateId** para **roleDefinitionId**. **roleDefinitionId** pode ser a ID do modelo de todo o serviço ou a função específica do **diretórioDefinitionId**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -130,7 +130,7 @@ Content-type: application/json
 Use as seguintes informações para criar atribuições de função do Intune:
 - Para permitir atribuições em todos os dispositivos Intune, use `AllDevices` o valor em **appScopeIds**.
 - Para permitir atribuições sobre todos os usuários licenciados do Intune, use `AllLicensedUsers` o valor em **appScopeIds**.
-- Para permitir atribuições em todos os dispositivos Intune e usuários licenciados, use `/` o valor em **directoryScopeIds**.
+- Para permitir atribuições em todos os dispositivos do Intune e usuários licenciados, use o `/` valor em **directoryScopeIds**.
 
 #### <a name="request"></a>Solicitação
 

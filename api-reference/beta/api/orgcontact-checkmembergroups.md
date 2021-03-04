@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: checkMemberGroups'
-description: Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
+description: Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira Permissões.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 05f1f220c66eddd19b99a2b32a7648209c8e9390
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e5218d27e8f0ba12ac7db48bd2dd3a58963ab38c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972127"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434017"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact: checkMemberGroups
 

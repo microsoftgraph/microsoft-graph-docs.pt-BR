@@ -1,16 +1,16 @@
 ---
 title: Listar availableProviderTypes
-description: Recupere todos os tipos de provedor de identidade disponíveis no diretório.
+description: Recupere todos os tipos de provedores de identidade disponíveis no diretório.
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f0297edc48e413865fc03ffe6d8f7bd5642f7b8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: ef78aea89344c480e9a0bc9a89e19144b7726ea0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953415"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435466"
 ---
 # <a name="list-availableprovidertypes"></a>Listar availableProviderTypes
 
@@ -28,11 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 * Administrador global
-* Administrador do provedor de identidade externa
+* Administrador do Provedor de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 

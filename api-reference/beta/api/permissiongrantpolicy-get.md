@@ -3,14 +3,14 @@ title: Obter permissionGrantPolicy
 description: Recupere um único objeto permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 20d22030d16d99fc1bba22dd173d76b83ca96d2c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7065399613ceb1eaa2c797afadb511a5bf2b62e5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977931"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433968"
 ---
 # <a name="get-permissiongrantpolicy"></a>Obter permissionGrantPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere um único objeto [permissionGrantPolicy](../resources/permissiongrantpolicy.md) .
+Recupere um único [objeto permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. PermissionGrant, Policy. ReadWrite. PermissionGrant |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy. Read. PermissionGrant, Policy. ReadWrite. PermissionGrant |
+| Aplicativo                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,13 +54,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [permissionGrantPolicy](../resources/permissiongrantpolicy.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [permissionGrantPolicy](../resources/permissiongrantpolicy.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Neste exemplo, a política solicitada é a política de concessão de permissão interna `microsoft-user-default-low` , que inclui as permissões delegadas baixas, para aplicativos de editores ou aplicativos verificados registrados neste locatário.
+Este é um exemplo de solicitação. Neste exemplo, a política solicitada é a política interna de concessão de permissão , que inclui permissões delegadas classificadas como baixas, para aplicativos de editores verificados ou aplicativos registrados `microsoft-user-default-low` neste locatário.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 ### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. A política tem dois `includes` conjuntos de condição, um que corresponde a permissões delegadas classificadas `low` para aplicativos clientes registrados neste locatário e as outras que correspondem a permissões delegadas classificadas `low` para aplicativos de editores verificados (independentemente de qual locatário o aplicativo está registrado).
+Este é um exemplo de resposta. A política tem dois conjuntos de condições, um que corresponde à permissão delegada classificada para aplicativos cliente registrados nesse locatário e o outro que corresponde a permissões delegadas classificadas para aplicativos de editores verificados (independentemente de qual locatário o aplicativo está `includes` `low` `low` registrado).
 
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 

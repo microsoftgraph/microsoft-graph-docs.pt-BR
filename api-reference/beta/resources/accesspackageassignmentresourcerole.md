@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessPackageAssignmentResourceRole
-description: Uma função de recurso de atribuição de pacote de acesso indica a função específica do recurso à qual um assunto foi atribuído por meio de uma atribuição de pacote de acesso.
+description: Uma função de recurso de atribuição de pacote de acesso indica a função específica do recurso que um assunto foi atribuído por meio de uma atribuição de pacote de acesso.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2b4893d40db8b5ac70a2ac3093d8dfbdf55c3175
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 4473c303a74cbf9e8e0c17d6c9060960590a3405
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155594"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433262"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>Tipo de recurso accessPackageAssignmentResourceRole
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma função de recurso de atribuição de pacote de acesso indica a função específica do recurso à qual um assunto foi atribuído por meio de uma atribuição de pacote de acesso.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma função de recurso de atribuição de pacote de acesso indica a função específica do recurso que um assunto foi atribuído por meio de uma atribuição de pacote de acesso.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Acessar AccessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Recupere um objeto accessPackageAssignmentResourceRole. |
+| [Obter accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Recupere um objeto accessPackageAssignmentResourceRole. |
 | [Listar accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [Coleção accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) | Recupere uma lista de objetos accessPackageAssignmentResourceRole. |
 
 ## <a name="properties"></a>Propriedades
@@ -32,15 +32,15 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma fu
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String| Somente leitura.|
-|originId|String|Um identificador exclusivo relativo ao sistema de origem, correspondente à propriedade originId do [accessPackageResourceRole](accesspackageresourcerole.md). |
-|originSystem|String|O sistema no qual a atribuição de função deve ser criada ou foi criada para uma atribuição de pacote de acesso, como , ou , correspondente à propriedade originSystem do `SharePointOnline` `AadGroup` `AadApplication` [accessPackageResourceRole](accesspackageresourcerole.md).|
+|originId|String|Um identificador exclusivo em relação ao sistema de origem, correspondente à propriedade originId do [accessPackageResourceRole](accesspackageresourcerole.md). |
+|originSystem|String|O sistema onde a atribuição de função deve ser criada ou foi criada para uma atribuição de pacote de acesso, como , ou , correspondente à propriedade originSystem do `SharePointOnline` `AadGroup` `AadApplication` [accessPackageResourceRole](accesspackageresourcerole.md).|
 |status|String|O valor é quando a atribuição do pacote de acesso ainda não foi entregue ao sistema de origem e quando a atribuição do pacote de acesso foi entregue `PendingFulfillment` `Fulfilled` ao sistema de origem.|
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackageAssignments|[Coleção accessPackageAssignment](accesspackageassignment.md)| As atribuições do pacote de acesso que resultam nessa atribuição de função. Somente leitura. Anulável.|
+|accessPackageAssignments|[Coleção accessPackageAssignment](accesspackageassignment.md)| As atribuições do pacote de acesso resultantes dessa atribuição de função. Somente leitura. Anulável.|
 |accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| Somente leitura. Anulável.|
 |accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| Somente leitura. Anulável.|
 |accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| Somente leitura. Anulável.|

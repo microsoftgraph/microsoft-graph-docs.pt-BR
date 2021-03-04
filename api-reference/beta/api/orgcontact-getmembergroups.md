@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: getMemberGroups'
-description: Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
+description: Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira Permissões.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 83c17963db08bc0cc479ee94a4d4dc6859b0d86f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e27ab176eb819d6a81b4a99962202d4fe7dd96a6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979030"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433989"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 

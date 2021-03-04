@@ -1,24 +1,24 @@
 ---
 title: Obter userFlowLanguagePage
-description: Ler os valores em um objeto userFlowLanguagePage para um idioma em um fluxo de usuário.
+description: Leia os valores em um objeto userFlowLanguagePage para um idioma em um fluxo de usuário.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f4f95eb22b709a9cf87481da54bfd697237bf8ac
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 0848078f889b5d959cadb2ec5c403d1d1edf3cb9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844821"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433457"
 ---
 # <a name="get-userflowlanguagepage"></a>Obter userFlowLanguagePage
 
 Namespace: microsoft.graph
 
-Ler os valores em [um objeto userFlowLanguagePage](../resources/userflowlanguagepage.md) para um idioma em um fluxo de usuário. Esses valores são mostrados para um usuário durante uma jornada do usuário definida por um fluxo de usuário.
+Leia os valores em [um objeto userFlowLanguagePage](../resources/userflowlanguagepage.md) para um idioma em um fluxo de usuário. Esses valores são mostrados a um usuário durante uma jornada do usuário definida por um fluxo de usuários.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -35,7 +35,7 @@ A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funç�
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para fazer referência ao conteúdo dentro do objeto, você deve usar `$value` . Isso retorna o conteúdo dentro do objeto e permite que você o consulte diretamente.
+Para fazer referência ao conteúdo dentro do objeto, você deve usar `$value` . Isso retorna o conteúdo dentro do objeto e permite que você o referencia diretamente.
 
 <!-- {
   "blockType": "ignored"
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto userFlowLanguagePage](../resources/userflowlanguagepage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto userFlowLanguagePage](../resources/userflowlanguagepage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

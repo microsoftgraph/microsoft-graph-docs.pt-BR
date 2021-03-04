@@ -1,24 +1,24 @@
 ---
-title: Listar governanceResources
-description: Recupere uma coleção de Entidadegovernanceresource à qual o solicitante tem acesso.
+title: Listar governançaResources
+description: Recupere uma coleção de governanceResource à que o solicitante tem acesso.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: a2414c02c2526ffccb1aab6bd75101047e5bbe6c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b386e00506055c38a6f330f08c5722de8f6e015c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954388"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435963"
 ---
-# <a name="list-governanceresources"></a>Listar governanceResources
+# <a name="list-governanceresources"></a>Listar governançaResources
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma coleção de [entidadegovernanceresource](../resources/governanceresource.md) à qual o solicitante tem acesso.
+Recupere uma coleção [de governanceResource](../resources/governanceresource.md) à que o solicitante tem acesso.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
@@ -29,15 +29,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | PrivilegedAccess. Read. AzureResources |
+| Aplicativo | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | PrivilegedAccess.Read.AzureAD |
+| Aplicativo | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
@@ -45,7 +45,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | PrivilegedAccess.Read.AzureADGroups |
+| Aplicativo | PrivilegedAccess.Read.AzureADGroups |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -63,10 +63,10 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [entidadegovernanceresource](../resources/governanceresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos governanceResource](../resources/governanceresource.md) no corpo da resposta.
 ## <a name="examples"></a>Exemplos
 
-Este exemplo lista todos os recursos que eu posso acessar no momento.
+Este exemplo lista todos os recursos que posso acessar no momento.
 ##### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)

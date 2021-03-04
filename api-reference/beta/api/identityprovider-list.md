@@ -1,16 +1,16 @@
 ---
 title: Lista identityProviders
-description: Recupere uma lista de objetos identityprovider.
+description: Recupere uma lista de objetos identityProvider.
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f799120afed05ad698691822dfe8c247291e09a2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 80f44a6fd00d6bc9720911e96f45e68950177ab7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953453"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435431"
 ---
 # <a name="list-identityproviders"></a>Lista identityProviders
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [identityProviders](../resources/identityprovider.md) .
+Recupere uma lista de [objetos identityProviders.](../resources/identityprovider.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,9 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 * Administrador global
-* Administrador do provedor de identidade externa
+* Administrador do Provedor de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de [identityprovider](../resources/identityprovider.md) e [openIdConnectProvider](../resources/openIdConnectProvider.md) (somente para objetos do Azure ad B2C) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [identityProvider](../resources/identityprovider.md) e [openIdConnectProvider](../resources/openIdConnectProvider.md) (somente para objetos do Azure AD B2C) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

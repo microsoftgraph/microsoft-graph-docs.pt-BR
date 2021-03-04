@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: getMemberObjects'
-description: Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
+description: Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira Permissões.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1080529c52e007f74b39f26259533ba0fdf3db3e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6a2c14280c80d24fdc5219bd66d8977cbeb7509d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964492"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433978"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact: getMemberObjects
 

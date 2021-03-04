@@ -1,30 +1,30 @@
 ---
-title: Obter organizationalBrandingProperties localizado
+title: Obter organizationalBrandingProperties localizadas
 description: Recupere o objeto organizationalbrandingproperties para uma localidade específica.
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9ca1f3459910a41b38632acafdab79be61025da3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 00a37f3b888e1e5dde0449c13102b9646da11e1a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49523907"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434080"
 ---
-# <a name="get-localized-organizationalbrandingproperties"></a>Obter organizationalBrandingProperties localizado
+# <a name="get-localized-organizationalbrandingproperties"></a>Get Localized organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades do objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) .
+Recupere as propriedades do [objeto organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Organization. Read. All, User. Read, User. Read. All, User. ReadBasic. All |
+| Delegado (conta corporativa ou de estudante)     | Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{id}/branding/localizations/{locale}/{property name}
+GET /organization/{id}/branding/localizations/{locale}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,11 +53,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) solicitado no corpo da resposta. O valor de "ID" corresponde à localização solicitada.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) solicitado no corpo da resposta. O valor de "id" corresponde à localização solicitada.
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr"></a>Exemplo 1: obter a identidade visual localizada para uma localidade específica (FR)
-Uma solicitação GET para uma determinada localização retorna apenas os valores dessa localização. Valores nulos não serão substituídos por aqueles da identidade visual padrão.
+### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr"></a>Exemplo 1: Obter a identidade visual localizada para uma localidade específica (fr)
+Uma solicitação GET para uma localização específica retorna apenas os valores dessa localização. Os valores nulos não serão substituídos por aqueles da identidade visual padrão.
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
@@ -123,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-all-language-specific-localizations-that-have-been-configured"></a>Exemplo 2: obter todas as localizações específicas de idioma que foram configuradas
+### <a name="example-2-get-all-language-specific-localizations-that-have-been-configured"></a>Exemplo 2: Obter todas as localizações específicas do idioma que foram configuradas
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
@@ -208,8 +208,8 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-get-the-value-of-signinpagetext-for-a-specific-locale"></a>Exemplo 3: obter o valor de signInPageText para uma localidade específica
-A solicitação de uma propriedade de uma localização retorna o valor ou 204 se o valor for NULL.
+### <a name="example-3-get-the-value-of-signinpagetext-for-a-specific-locale"></a>Exemplo 3: Obter o valor de signInPageText para uma localidade específica
+Solicitar uma propriedade de uma localização retorna esse valor ou 204 se o valor for nulo.
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.

@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos b2cIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 454422c09649b97ffbab96c313201ebef0cad23e
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 6dfcdb67de89b298d98268b20c68b4d10dbef7b3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705843"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435550"
 ---
 # <a name="list-b2cidentityuserflows"></a>Listar b2cIdentityUserFlows
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) .
+Recupere uma lista de [objetos b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,14 +26,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Aplicativo|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de fluxo de usuário de identidade externa
+* Administrador de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,7 +45,7 @@ GET /identity/b2cUserFlows
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Você pode usar o `$expand` para expandir Propriedades de fluxo de usuário específicas que não são expandidas por padrão.
+Você pode usar para expandir propriedades de fluxo de usuário `$expand` específicas que não são expandidas por padrão.
 
 Para obter mais informações, consulte [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -61,11 +61,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)  no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)  no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-b2cidentityuserflow-objects"></a>Exemplo 1: listar todos os objetos b2cIdentityUserFlow
+### <a name="example-1-list-all-b2cidentityuserflow-objects"></a>Exemplo 1: Listar todos os objetos b2cIdentityUserFlow
 
 #### <a name="request"></a>Solicitação
 

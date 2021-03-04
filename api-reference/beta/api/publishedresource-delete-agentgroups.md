@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f7ac461d17ac14f97c0043381ad565614c4c09d1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6c852ae5f49ddc928e83c08d91be7c4d1be86265
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132458"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433839"
 ---
 # <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a>Remover publishedResource de um onPremisesAgentGroup
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/agentGroups{id2}/$ref
+DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/agentGroups/{id2}/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -1,16 +1,16 @@
 ---
 title: Atualizar identityApiConnector
-description: Atualizar as propriedades de um objeto identityApiConnector.
+description: Atualize as propriedades de um objeto identityApiConnector.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9037a6bfcd53af0ee009f232909a964a8b0e6a86
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 179507abb9da8637919b2679fdc1d8ed0267eaba
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873665"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435592"
 ---
 # <a name="update-identityapiconnector"></a>Atualizar identityApiConnector
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [objeto identityApiConnector.](../resources/identityapiconnector.md)
+Atualize as propriedades de [um objeto identityApiConnector.](../resources/identityapiconnector.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -60,9 +60,9 @@ A tabela a seguir mostra as propriedades do [identityApiConnector](../resources/
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres| O nome do conector da API. |
-|targetUrl|Cadeia de caracteres| A URL do ponto de extremidade da API a ser chamada. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. Somente [a autenticação](../resources/basicauthentication.md) Básica é suportada no momento. Todas as propriedades do apiAuthenticationConfigurationBase devem ser definidas ao mesmo tempo, como nome de usuário e senha.|
+|displayName|String| O nome do conector da API. |
+|targetUrl|String| A URL do ponto de extremidade da API a ser chamada. |
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. Somente [a autenticação básica](../resources/basicauthentication.md) é suportada no momento. Todas as propriedades do apiAuthenticationConfigurationBase devem ser definidas ao mesmo tempo, como nome de usuário e senha.|
 
 ## <a name="response"></a>Resposta
 

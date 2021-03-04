@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 070c34b225ab49eb7625c313544a785d7cc3e518
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: b00b9b7f790bc07073b9b5ec448427259ceb8309
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155052"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434983"
 ---
 # <a name="create-userexperienceanalyticsmetrichistory"></a>Criar userExperienceAnalyticsMetricHistory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -38,6 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 POST /deviceManagement/userExperienceAnalyticsMetricHistory
+POST /deviceManagement/userExperienceAnalyticsDeviceMetricHistory
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,20 +48,21 @@ POST /deviceManagement/userExperienceAnalyticsMetricHistory
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto userExperienceAnalyticsMetricHistory.
+No corpo da solicitação, fornece uma representação JSON para o objeto userExperienceAnalyticsMetricHistory.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar userExperienceAnalyticsMetricHistory.
+A tabela a seguir mostra as propriedades necessárias ao criar o userExperienceAnalyticsMetricHistory.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do histórico de métricas da análise da experiência do usuário.|
-|metricDateTime|DateTimeOffset|A data e a hora da métrica da análise da experiência do usuário.|
-|metricType|String|O tipo de métrica de análise da experiência do usuário.|
+|id|String|O identificador exclusivo do histórico métrico de análise da experiência do usuário.|
+|deviceId|Cadeia de caracteres|A ID do dispositivo de análise de experiência do usuário.|
+|metricDateTime|DateTimeOffset|A data de data métrica da análise da experiência do usuário.|
+|metricType|String|O tipo métrico de análise de experiência do usuário.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um objeto `201 Created` [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -69,10 +71,11 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMetricHistory
 Content-type: application/json
-Content-length: 174
+Content-length: 208
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
+  "deviceId": "Device Id value",
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
   "metricType": "Metric Type value"
 }
@@ -83,11 +86,12 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 223
+Content-Length: 257
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
   "id": "2b6d6456-6456-2b6d-5664-6d2b56646d2b",
+  "deviceId": "Device Id value",
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
   "metricType": "Metric Type value"
 }

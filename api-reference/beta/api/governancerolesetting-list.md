@@ -1,18 +1,18 @@
 ---
-title: Listar governanceRoleSettings
+title: Listar governançaRoleSettings
 description: Recupere uma coleção de governanceRoleSettings em um recurso.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: e4469debdaaa2d6d18fdef6630f3987ba4b2bbab
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 753ffc488c67091ae1364a8cd898b294261a7b41
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981344"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435767"
 ---
-# <a name="list-governancerolesettings"></a>Listar governanceRoleSettings
+# <a name="list-governancerolesettings"></a>Listar governançaRoleSettings
 
 Namespace: microsoft.graph
 
@@ -66,10 +66,10 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Este exemplo mostra como um administrador lista as configurações de função para o recurso Wingtip Toys - Prod. 
+Este exemplo mostra como um administrador lista configurações de função para o recurso Wingtip Toys - Prod. 
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"

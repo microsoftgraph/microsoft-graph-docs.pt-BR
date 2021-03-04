@@ -3,32 +3,32 @@ title: Listar fido2AuthenticationMethod
 description: Recupere uma lista dos objetos fido2AuthenticationMethod e suas propriedades.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a3a9cd40a5c4896a281d5c7e3a2157b577d34412
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 57e63c083e75a84eff13ffc5094041224bdd43d7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872104"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436054"
 ---
 # <a name="list-fido2authenticationmethod"></a>Listar fido2AuthenticationMethod
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos do Método de Autenticação de Chave de Segurança [FIDO2](../resources/fido2authenticationmethod.md) de um usuário e suas propriedades.
+Recupere uma lista dos objetos [fido2 security key authentication method](../resources/fido2authenticationmethod.md) de um usuário e suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões atuando por si mesmo (do menos para o mais privilegiado)|Permissões atuando em outras pessoas (de menos para mais privilegiados)|
+|Tipo de permissão|Permissões agindo por si mesmo (do mínimo para o mais privilegiado)|Permissões atuando em outras pessoas (do mínimo ao mais privilegiado)|
 |:---|:---|:--|
 | Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Não aplicável. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes [funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma das seguintes [funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Administrador global
 * Leitor global
@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2Methods
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
