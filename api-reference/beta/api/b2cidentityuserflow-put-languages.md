@@ -3,14 +3,14 @@ title: Criar idiomas
 description: Crie um idioma personalizado em um fluxo de usuário do Azure AD B2C.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1edc89a4de37805bc150e2d0fc9f0a2c74b262da
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: e24841cebf0385563a1445a576cda8e8609f40c7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843900"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438187"
 ---
 # <a name="create-languages"></a>Criar idiomas
 
@@ -20,7 +20,7 @@ Esse método é usado para criar ou atualizar um idioma personalizado em um flux
 
 **Observação:** Você deve habilitar a personalização de idioma no fluxo de usuários do Azure AD B2C antes de criar um idioma personalizado. Para obter mais informações, [consulte Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -57,16 +57,16 @@ PUT /identity/b2cUserFlows/{id}/languages/{id}
 
 No corpo da solicitação, fornece uma representação JSON do [objeto userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md)
 
-A tabela a seguir mostra as propriedades que podem ser fornecidas opcionalmente ao criar [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md).
+A tabela a seguir mostra as propriedades que podem ser fornecidas opcionalmente quando você cria [o userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador do idioma. Esse campo é compatível com a marca de identificação de idioma [RFC 5646](https://tools.ietf.org/html/rfc5646) e deve ser uma ID de idioma documentada. Se fornecido no corpo da solicitação, ele deve corresponder ao identificador fornecido na URL da solicitação.|
-|isEnabled|Booliano|Indica se o idioma está habilitado dentro do fluxo do usuário. Se isso não for fornecido na solicitação, isEnabled será definido como "true".|
+|id|String|O identificador do idioma. Este campo é a marca de identificação de idioma [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível e deve ser uma ID de idioma documentada. Se fornecido no corpo da solicitação, ele deve corresponder ao identifer fornecido na URL da solicitação.|
+|isEnabled|Booliano|Indica se o idioma está habilitado no fluxo do usuário. Se isso não for fornecido na solicitação, isEnabled será definido como "true".|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um objeto `201 Created` [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -136,7 +136,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-update-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>Exemplo 2: Atualizar um idioma personalizado em um fluxo de usuário do Azure AD B2C
+### <a name="example-2-update-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>Exemplo 2: atualizar um idioma personalizado em um fluxo de usuário do Azure AD B2C
 
 #### <a name="request"></a>Solicitação
 

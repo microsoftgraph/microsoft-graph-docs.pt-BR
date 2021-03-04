@@ -3,14 +3,14 @@ title: Obter userFlowApiConnectorConfiguration
 description: Obter a propriedade userFlowApiConnectorConfiguration de um b2xIdentityUserFlow.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 986737621f5b98226c64124f69ac5522c9f5bf69
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 937e102e05b4b7e2a1b03538a0b023ae583ef3c6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843673"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438138"
 ---
 # <a name="get-userflowapiconnectorconfiguration"></a>Obter userFlowApiConnectorConfiguration
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter a [propriedade apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) em [um b2xIdentityUserFlow](../resources/userFlowApiConnectorConfiguration.md) para detalhar os conectores de API habilitados para o fluxo do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -48,7 +48,7 @@ GET identity/b2xUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte ao `$expand` parâmetro de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o conector de API e `postFederationSignup` as `postAttributeCollection` etapas, adicione `$expand=postFederationSignup,postAttributeCollection` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao `$expand` parâmetro de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o conector de API para as `postFederationSignup` etapas `postAttributeCollection` e, adicione `$expand=postFederationSignup,postAttributeCollection` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -62,7 +62,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [apiConnectorConfiguration.](../resources/userflowapiconnectorconfiguration.md)
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [apiConnectorConfiguration.](../resources/userflowapiconnectorconfiguration.md)
 
 ## <a name="examples"></a>Exemplos
 

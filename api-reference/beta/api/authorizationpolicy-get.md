@@ -1,16 +1,16 @@
 ---
 title: Obter authorizationPolicy
-description: Recupere as propriedades e os relacionamentos do objeto authorizationPolicy.
+description: Recupere as propriedades e as relações do objeto authorizationPolicy.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ef827c1b8a0fec8ff676eeeef10c2d20dca50377
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4725d6f8b868852efc282982cd00a2f7208bf53a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401873"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438418"
 ---
 # <a name="get-authorizationpolicy"></a>Obter authorizationPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades de um objeto [authorizationPolicy](../resources/authorizationpolicy.md) .
+Recupere as propriedades de um [objeto authorizationPolicy.](../resources/authorizationpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. Authorization |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.Authorization |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. All, Policy. ReadWrite. Authorization |
+| Aplicativo                            | Policy.Read.All, Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o único objeto [authorizationPolicy](../resources/authorizationpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [authorizationPolicy](../resources/authorizationpolicy.md) único no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

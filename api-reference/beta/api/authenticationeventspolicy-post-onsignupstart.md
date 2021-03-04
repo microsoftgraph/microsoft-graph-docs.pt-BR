@@ -3,14 +3,14 @@ title: Criar authenticationListener
 description: Crie um novo objeto authenticationListener para o evento onSignUpStart.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 098a8679f09c7f766b361146abddc0d01a5aa20e
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c24ceff80c873181799ea38fbe23c6054f876bc7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872356"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438530"
 ---
 # <a name="create-authenticationlistener"></a>Criar authenticationListener
 
@@ -52,17 +52,17 @@ POST /identity/events/onSignupStart
 
 No corpo da solicitação, fornece uma representação JSON do [objeto authenticationListener.](../resources/authenticationlistener.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [invokeUserFlowListener](../resources/invokeuserflowlistener.md) authenticationListener.
+A tabela a seguir mostra as propriedades que são necessárias ao criar [a autenticação invokeUserFlowListenerListener.](../resources/invokeuserflowlistener.md)
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |Prioridade|Int32|A prioridade do ouvinte. Determina a ordem de avaliação quando um evento tem vários ouvintes. A prioridade é avaliada de baixo para alto.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtrar com base na origem da autenticação usada para determinar se o ouvinte é avaliado. Atualmente, isso está limitado a avaliações baseadas no aplicativo ao usuário que está autenticando.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtrar com base na origem da autenticação usada para determinar se o ouvinte é avaliado. No momento, isso está limitado a avaliações com base no aplicativo ao que o usuário está autenticando.|
 |userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|O [objeto b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) que será invocado quando essa ação for avaliada.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [authenticationListener](../resources/authenticationlistener.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [authenticationListener](../resources/authenticationlistener.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

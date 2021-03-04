@@ -3,14 +3,14 @@ title: Atualizar authenticationListener
 description: Atualize o ouvinte definido para um evento no pipeline de autenticação.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d5acb660843bf0b7a60fd66886841ab4c490f396
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 65e5fa8252bdb4b25c1992282f655f532f66e1f3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872391"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438425"
 ---
 # <a name="update-authenticationlistener"></a>Atualizar authenticationListener
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize [o authenticationListener definido](../resources/authenticationlistener.md) para um evento no pipeline de autenticação.
+Atualize [a authenticationListener definida](../resources/authenticationlistener.md) para um evento no pipeline de autenticação.
 
 ## <a name="permissions"></a>Permissões
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [inv
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |Prioridade|Int32|A prioridade do ouvinte. Determina a ordem de avaliação quando um evento tem vários ouvintes. A prioridade é avaliada de baixo para alto.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtrar com base na origem da autenticação que é usada para determinar se o ouvinte é avaliado. Atualmente, isso está limitado a avaliações baseadas no aplicativo ao usuário que está autenticando.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtrar com base na origem da autenticação usada para determinar se o ouvinte é avaliado. No momento, isso está limitado a avaliações com base no aplicativo ao que o usuário está autenticando.|
 
 ## <a name="response"></a>Resposta
 

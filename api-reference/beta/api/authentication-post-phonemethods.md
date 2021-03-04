@@ -3,14 +3,14 @@ title: Criar phoneAuthenticationMethod
 description: Adicione um novo método de autenticação de telefone.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 41a419425d9d4368aae34a5af0ed3c2b778165d8
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 541feb0aee2f0ea76b92b097b1a2a794111dff2f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796456"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438572"
 ---
 # <a name="create-phoneauthenticationmethod"></a>Criar phoneAuthenticationMethod
 
@@ -18,25 +18,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um novo método [de autenticação de telefone.](../resources/phoneauthenticationmethod.md) Um usuário pode ter apenas um telefone de cada tipo, capturado na **propriedade phoneType.** Isso significa que, por exemplo, a adição de um telefone a um usuário com um telefone `mobile` `mobile` pré-clássico falhará. Além disso, um usuário sempre deve ter `mobile` um telefone antes de adicionar um `alternateMobile` telefone.
+Adicione um novo [método de autenticação de telefone](../resources/phoneauthenticationmethod.md). Um usuário pode ter apenas um telefone de cada tipo, capturado na **propriedade phoneType.** Isso significa, por exemplo, que a adição de um telefone a um usuário com um telefone `mobile` `mobile` pré-existing falhará. Além disso, um usuário sempre deve ter um `mobile` telefone antes de adicionar um `alternateMobile` telefone.
 
-A adição de um número de telefone o disponibiliza para uso na autenticação multifatória do Azure (MFA) e na redefinição de senha de autoatendado (SSPR), se habilitada.
+A adição de um número de telefone o disponibiliza para uso na MFA (autenticação multifatória) do Azure e na redefinição de senha de autoatendados (SSPR), se habilitada.
 
-Além disso, se um usuário for habilitado pela política para usar a inscrição em SMS e um número for adicionado, o sistema tentará registrar o número para uso `mobile` no sistema.
+Além disso, se um usuário estiver habilitado pela política para usar a assinatura SMS e um número for adicionado, o sistema tentará registrar o número para uso `mobile` nesse sistema.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões atuando por si mesmo (do menos para o mais privilegiado) | Permissões atuando em outras pessoas (de menos para mais privilegiados)|
+| Tipo de permissão                        | Permissões agindo por si mesmo (do mínimo para o mais privilegiado) | Permissões atuando em outras pessoas (do mínimo ao mais privilegiado)|
 |:---------------------------------------|:-------------------------|:-----------------|
 | Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Não aplicável. | UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-* Administração global
+* Administrador global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 
@@ -58,16 +58,16 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto phoneAuthenticationMethod.](../resources/phoneauthenticationmethod.md) O JSON deve `phoneNumber` incluir `phoneType` e, mas não `smsSignInState` (que é somente leitura).
+No corpo da solicitação, fornece uma representação JSON de [um objeto phoneAuthenticationMethod.](../resources/phoneauthenticationmethod.md) O JSON deve `phoneNumber` incluir e , mas não `phoneType` `smsSignInState` (que é somente leitura).
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato "+ \<country code\> \<number\> \<extension\> x", com extensão opcional. Por exemplo, +1 5555551234 ou +1 5555551234x123 são válidos. Os números serão rejeitados ao criar/atualizar se não corresponderem ao formato necessário.|
-|phoneType|Cadeia de caracteres|Os valores possíveis `mobile` são: `alternateMobile` , e `office` .|
+|phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato "+ \<country code\> \<number\> \<extension\> x", com a extensão opcional. Por exemplo, +1 5555551234 ou +1 5555551234x123 são válidos. Os números são rejeitados ao criar/atualizar se não corresponderem ao formato necessário.|
+|phoneType|String|Os valores possíveis são: `mobile` `alternateMobile` , e `office` .|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um novo `201 Created` [objeto phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

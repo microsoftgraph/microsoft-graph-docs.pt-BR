@@ -1,24 +1,24 @@
 ---
-title: Adicionar identityprovider a um b2cIdentityUserFlow
-description: Adicionar identityprovider a um b2cIdentityUserFlow.
+title: Adicionar identityProvider a um b2cIdentityUserFlow
+description: Adicione identityProvider a um b2cIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3eb44d5cdfddb44bb4738e31d4bc20e584db2858
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: deb2d5bc6984865dcb665404fca9e897899a2df5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961146"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438257"
 ---
-# <a name="add-identityprovider-to-a-b2cidentityuserflow"></a>Adicionar identityprovider a um b2cIdentityUserFlow
+# <a name="add-identityprovider-to-a-b2cidentityuserflow"></a>Adicionar identityProvider a um b2cIdentityUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar provedores de identidade em um objeto [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) .
+Adicione provedores de identidade em um [objeto b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application| IdentityUserFlow.ReadWrite.All|
+|Aplicativo| IdentityUserFlow.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de fluxo de usuário de identidade externa
+* Administrador de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ PATCH /b2cUserFlows/{id}/identityProviders/$ref
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do `id` [identityprovider](../resources/identityprovider.md) que você deseja adicionar. Para obter mais informações sobre provedores de identidade disponíveis para fluxos de usuário, consulte a referência da API [identityProviders](../resources/identityprovider.md) .
+No corpo da solicitação, forneça uma representação JSON da `id` [identidadeProvider](../resources/identityprovider.md) que você deseja adicionar. Para obter mais informações sobre provedores de identidade disponíveis para fluxos de usuários, consulte a referência da API [identityProviders.](../resources/identityprovider.md)
 
 ## <a name="response"></a>Resposta
 

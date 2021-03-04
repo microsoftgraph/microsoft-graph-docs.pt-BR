@@ -1,16 +1,16 @@
 ---
 title: Excluir contrato
-description: Exclua um objeto de contrato.
+description: Excluir um objeto agreement.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: e954c23f6fb44b6258f468808370dc73a4af440c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 526edb64838435c1b83c4ae25b6d7c4cc604a868
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962482"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438740"
 ---
 # <a name="delete-agreement"></a>Excluir contrato
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua um objeto de [contrato](../resources/agreement.md) .
+Excluir um [objeto agreement.](../resources/agreement.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

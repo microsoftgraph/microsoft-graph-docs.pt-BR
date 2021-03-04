@@ -1,24 +1,24 @@
 ---
-title: Excluir identityprovider de b2xIdentityUserFlow
-description: Excluir um identityprovider de um b2xIdentityUserFlow.
+title: Excluir identityProvider de b2xIdentityUserFlow
+description: Exclua um identityProvider de um b2xIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 25db32f3f84a705f167fe1216b2a68554d9e3e9e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 4359ded92c7bfa54a07f487554be83e17ee3c064
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961113"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438171"
 ---
-# <a name="delete-identityprovider-from-b2xidentityuserflow"></a>Excluir identityprovider de b2xIdentityUserFlow
+# <a name="delete-identityprovider-from-b2xidentityuserflow"></a>Excluir identityProvider de b2xIdentityUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um provedor de identidade de um objeto [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) . Para os fluxos de usuário de inscrição de autoatendimento, os valores podem ser `Google-OAUTH` ou `Facebook-OAUTH` .
+Exclua um provedor de identidade de um [objeto b2xIdentityUserFlow.](../resources/b2xidentityuserflow.md) Para fluxos de usuários de autoatendados, os valores podem ser `Google-OAUTH` ou `Facebook-OAUTH` .
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application| IdentityUserFlow.ReadWrite.All|
+|Aplicativo| IdentityUserFlow.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de fluxo de usuário de identidade externa
+* Administrador de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 

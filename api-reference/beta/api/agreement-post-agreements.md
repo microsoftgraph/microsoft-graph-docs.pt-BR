@@ -1,16 +1,16 @@
 ---
 title: Criar contrato
-description: Criar um novo objeto de contrato.
+description: Crie um novo objeto de contrato.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: aa5d2ce647667ea6de338256e4e80bc28eb81793
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 606b35ac01fdf62ab10a2dc9cc97368fc90cf83e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962441"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438684"
 ---
 # <a name="create-agreement"></a>Criar contrato
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto de [contrato](../resources/agreement.md) .
+Crie um novo [objeto de](../resources/agreement.md) contrato.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -39,25 +39,25 @@ POST /agreements
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [Agreement](../resources/agreement.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto agreement.](../resources/agreement.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar um usuário.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome para exibição do contrato.|
-|isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário tem que expandir e exibir o contrato antes de aceitar.|
-|arquivos/nome de arquivo|String|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
-|arquivos/IsDefault|Booliano|Indica se este é o arquivo de contrato padrão se nenhuma das culturas corresponder à preferência do cliente. Se nenhum dos arquivos estiver marcado como padrão, o primeiro será tratado como padrão.|
-|arquivos/idioma|String|Cultura do arquivo de contrato no formato languagecode2-Country/regioncode2. languagecode2 é um código de duas letras em minúsculas derivado de ISO 639-1. Country/regioncode2 é derivado de ISO 3166 e geralmente consiste em duas letras maiúsculas ou uma marca de idioma BCP-47 (por exemplo, en-US).|
-|arquivos/fileData/dados|Binária|Dados que representam os termos de uso do documento PDF.|
+|displayName|String|Nome de exibição do contrato.|
+|isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário precisa expandir e exibir o contrato antes de aceitar.|
+|files/fileName|String|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
+|files/isDefault|Booliano|Indica se esse é o arquivo de contrato padrão se nenhuma cultura corresponde à preferência do cliente. Se nenhum arquivo for marcado como padrão, o primeiro será tratado como padrão.|
+|files/language|String|Cultura do arquivo de contrato no formato languagecode2-country/regioncode2. languagecode2 é um código de duas letras minúsculo derivado da ISO 639-1. country/regioncode2 é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47 (por exemplo, en-US).|
+|files/fileData/data|Binária|Dados que representam os termos de uso do documento PDF.|
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `201, Created` código de resposta e um objeto [Agreement](../resources/agreement.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201, Created` um código de resposta e um objeto [agreement](../resources/agreement.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [Agreement](../resources/agreement.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto agreement.](../resources/agreement.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -3,22 +3,22 @@ title: Idiomas da lista
 description: Recupere uma lista de idiomas com suporte para personalização em um fluxo de usuário B2X.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 523b9c09b879e6d9938e08d96714dd9a709a3a85
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: b6f629f8abe4691e0f8f688e4640d2b56f0dce27
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843613"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438075"
 ---
 # <a name="list-languages"></a>Idiomas da lista
 
 Namespace: microsoft.graph
 
-Recupere uma lista de idiomas com suporte para personalização em um fluxo de usuário B2X.
+Recupere uma lista de idiomas com suporte para personalização em um fluxo de usuários B2X.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

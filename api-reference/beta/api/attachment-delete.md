@@ -1,16 +1,16 @@
 ---
 title: Excluir anexo
-description: Excluir um anexo de um evento de calendário, mensagem, tarefa do Outlook ou postagem.
+description: Exclua um anexo de um evento de calendário, mensagem, tarefa do Outlook ou postagem.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: 4df50de17e1926407545cb5e6b18ae6aa56af018
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 08f07b7c572f2874eefc636de9c35d8961039341
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128866"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438614"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
@@ -20,17 +20,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Excluir um anexo de um evento de calendário [do usuário,](../resources/event.md) [mensagem,](../resources/message.md) [tarefa do Outlook](../resources/outlooktask.md)ou [postagem.](../resources/post.md)
+Excluir um anexo de um evento de calendário [do usuário,](../resources/event.md) [mensagem,](../resources/message.md) [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem**) ao qual o anexo está anexado e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
+Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem**) ao qual o anexo está anexado e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 | [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
-| [outlookTask](../resources/outlooktask.md) |  Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
+| [outlookTask](../resources/outlooktask.md) |  Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 | [postagem](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
 
 
@@ -50,7 +50,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-Anexos de [um evento](../resources/event.md) no calendário [especificado](../resources/calendar.md) que pertence ao usuário.
+Anexos de [um evento](../resources/event.md) no calendário [especificado](../resources/calendar.md) pertencente ao usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -67,9 +67,6 @@ Anexos de um [event](../resources/event.md) em um [calendar](../resources/calend
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
-
-DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
 Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence a um [calendarGroup](../resources/calendargroup.md) de um usuário.
 <!-- { "blockType": "ignored" } -->

@@ -1,22 +1,22 @@
 ---
 title: Atualizar b2cIdentityUserFlow
-description: Atualizar as propriedades de um objeto b2cIdentityUserFlow.
+description: Atualize as propriedades de um objeto b2cIdentityUserFlow.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7450c226f80908a08b81fec13eee61ea7aaa7e14
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 4ec3217af72d08d8dda103ec9304b25218344398
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50291954"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438180"
 ---
 # <a name="update-b2cidentityuserflow"></a>Atualizar b2cIdentityUserFlow
 
 Namespace: microsoft.graph
 
-Atualizar as propriedades de um [objeto b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
+Atualize as propriedades de um [objeto b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -55,7 +55,7 @@ PATCH /identity/b2cUserFlows/{id}
 
 No corpo da solicitação, fornece uma representação JSON do [objeto b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
-A tabela a seguir mostra as propriedades que podem ser atualizadas após a criação de [um b2cIdentityUserFlow](../resources/b2cidentityuserflow.md).
+A tabela a seguir mostra as propriedades que podem ser atualizadas depois de criar um [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que podem ser atualizadas após a cria�
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,16 +1,16 @@
 ---
 title: Obter authenticationListener
-description: Leia as propriedades e os relacionamentos de um objeto authenticationListener.
+description: Leia as propriedades e as relações de um objeto authenticationListener.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c3e6f07ac59e143ab7e9723c5a5b81a4c8489e54
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: e6cacb31a31963457c2e37fd9a63d1c0eeea2c6c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872419"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438481"
 ---
 # <a name="get-authenticationlistener"></a>Obter authenticationListener
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o [authenticationListener especificado definido](../resources/authenticationlistener.md) para o evento onSignupStart no pipeline de autenticação.
+Obter a autenticação [especificadaListener definida](../resources/authenticationlistener.md) para o evento onSignupStart no pipeline de autenticação.
 
 ## <a name="permissions"></a>Permissões
 
@@ -43,7 +43,7 @@ GET /identity/events/onSignupStart/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte `$expand` ao parâmetro de consulta OData para expandir os detalhes de um invokeUserFlowListener. Veja abaixo um exemplo. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao parâmetro de consulta OData para expandir os detalhes `$expand` de um invokeUserFlowListener. Confira abaixo um exemplo. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [authenticationListener](../resources/authenticationlistener.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [authenticationListener](../resources/authenticationlistener.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -106,9 +106,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-expand-invokeuserflowlistener-for-a-specific-authenticationlistener"></a>Exemplo 2: Expandir invokeUserFlowListener para uma authenticationListener específica
+### <a name="example-2-expand-invokeuserflowlistener-for-a-specific-authenticationlistener"></a>Exemplo 2: Expanda invokeUserFlowListener para uma autenticação específicaListener
 
-O exemplo a seguir obtém o ouvinte pela id do evento onSignupStart e expande o fluxo de usuário que é invocado.
+O exemplo a seguir obtém o ouvinte por id do evento onSignupStart e expande o fluxo de usuário invocado.
 
 #### <a name="request"></a>Solicitação
 

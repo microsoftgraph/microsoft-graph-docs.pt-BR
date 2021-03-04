@@ -1,26 +1,26 @@
 ---
 title: Idiomas da lista
-description: Recupere uma lista de idiomas com suporte para personalização em um fluxo de usuário B2C.
+description: Recupere uma lista de idiomas com suporte para personalização em um fluxo de usuários B2C.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a2fa354f9ab828beeca716fa04472d717f8045a1
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: e3b04b25796b7864d6dda74eaa7b2edc14b30c93
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844089"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438292"
 ---
 # <a name="list-languages"></a>Idiomas da lista
 
 Namespace: microsoft.graph
 
-Recupere uma lista de idiomas com suporte para personalização em um fluxo de usuário do Azure AD B2C.
+Recupere uma lista de idiomas com suporte para personalização em um fluxo de usuários do Azure AD B2C.
 
 **Observação:** Para recuperar uma lista de idiomas com suporte para personalização, você deve primeiro habilitar a personalização de idioma no fluxo de usuários do Azure AD B2C. Para obter mais informações, [consulte Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -48,7 +48,7 @@ GET /identity/b2cUserFlows/{id}/languages
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte `$filter` ao parâmetro de consulta para mostrar apenas os idiomas habilitados. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte `$filter` ao parâmetro de consulta para mostrar apenas os idiomas habilitados. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -135,7 +135,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-a-list-of-only-enabled-languages"></a>Exemplo 2: Recuperar uma lista de apenas idiomas habilitados
+### <a name="example-2-retrieve-a-list-of-only-enabled-languages"></a>Exemplo 2: Recuperar uma lista de idiomas habilitados somente
 
 #### <a name="request"></a>Solicitação
 

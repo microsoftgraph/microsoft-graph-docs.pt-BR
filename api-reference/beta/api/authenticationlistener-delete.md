@@ -1,16 +1,16 @@
 ---
 title: Excluir authenticationListener
-description: Exclui um authenticationListener de um evento suportado por um authenticationEventsPolicy.
+description: Exclui um authenticationListener de um evento suportado por uma authenticationEventsPolicy.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3db702f80e92ce475d0b3699236096d7d7b79392
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c808aa161bacb2612c90a53f58b7163f663e4150
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872321"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438488"
 ---
 # <a name="remove-authenticationlistener"></a>Remover authenticationListener
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua a [authenticationListener especificada](../resources/authenticationlistener.md) definida para o evento onSignupStart no pipeline de autenticação.
+Exclua a [autenticação especificadaListener definida](../resources/authenticationlistener.md) para o evento onSignupStart no pipeline de autenticação.
 
 ## <a name="permissions"></a>Permissões
 

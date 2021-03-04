@@ -3,14 +3,14 @@ title: Colocar authenticationListener
 description: Substitua um objeto authenticationListener.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4f5b5e1ea73a9f3df1899f92f3675152e04822a3
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 6e41dde2a8c22394fd28fe3730ac44655c7eb310
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872307"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438446"
 ---
 # <a name="put-authenticationlistener"></a>Colocar authenticationListener
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [invokeU
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |Prioridade|Int32|A prioridade do ouvinte. Determina a ordem de avaliação quando um evento tem vários ouvintes. A prioridade é avaliada de baixo para alto.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtrar com base na origem da autenticação usada para determinar se o ouvinte é avaliado. Atualmente, isso está limitado a avaliações baseadas no aplicativo ao usuário que está autenticando.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtrar com base na origem da autenticação usada para determinar se o ouvinte é avaliado. No momento, isso está limitado a avaliações com base no aplicativo ao que o usuário está autenticando.|
 |userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|A referência ao objeto de fluxo do usuário que é invocado nesta ação.|
 
 ## <a name="response"></a>Resposta

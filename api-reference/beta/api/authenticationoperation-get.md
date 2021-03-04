@@ -1,16 +1,16 @@
 ---
 title: Obter operação de autenticação
-description: Recupere as propriedades e os relacionamentos de um objeto Operation.
+description: Recupere as propriedades e as relações de um objeto operation.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 920439ce54ba5fb547a51d968be90ab46bd82858
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 800eb549222fda99592701ba28a85021289fee95
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961321"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438439"
 ---
 # <a name="get-authentication-operation"></a>Obter operação de autenticação
 
@@ -18,26 +18,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [Operation](../resources/operation.md) . Atualmente, essas operações são geradas iniciando uma redefinição de senha usando o método [Reset password](passwordauthenticationmethod-resetpassword.md) . Um objeto Operation informa ao chamador sobre o estado atual da operação de redefinição de senha. Os Estados possíveis incluem:
+Recupere as propriedades e as relações de um [objeto operation.](../resources/operation.md) Atualmente, essas operações são geradas iniciando uma redefinição de senha usando o [método redefinir senha.](passwordauthenticationmethod-resetpassword.md) Um objeto operation informa ao chamador sobre o estado atual dessa operação de redefinição de senha. Os estados possíveis incluem:
 
 * NotStarted
 * Em execução
 * Succeeded
 * Falhou
 
-`Succeeded` e `Failed` são Estados de terminal.
+`Succeeded` e `Failed` são estados terminais.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões que atuam em si (de menos para mais privilégios) | Permissões que atuam em outros (de menos para mais privilégios)|
+| Tipo de permissão                        | Permissões agindo por si mesmo (do mínimo para o mais privilegiado) | Permissões atuando em outras pessoas (do mínimo ao mais privilegiado)|
 |:---------------------------------------|:-------------------------|:-----------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod. Read, UserAuthenticationMethod. Read. All, UserAuthenticationMethod. ReadWrite, UserAuthenticationMethod. ReadWrite. All | UserAuthenticationMethod. Read. All, UserAuthenticationMethod. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Sem suporte. | Sem suporte. |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Administrador global
 * Leitor global
@@ -54,7 +54,7 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte a parâmetros de consulta opcionais para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -68,7 +68,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [Operation](../resources/operation.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e o objeto de operação `200 OK` solicitado no corpo da resposta. [](../resources/operation.md)
 
 ## <a name="examples"></a>Exemplos
 

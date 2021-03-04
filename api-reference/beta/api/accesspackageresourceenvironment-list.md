@@ -5,15 +5,17 @@ author: hanki-microsoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2843300c166cf064c3cd79c79551ae6c7b764ecf
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 0c8319198ae13894f6f5498bc4c018a26615ce59
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176231"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50439485"
 ---
 # <a name="list-accesspackageresourceenvironments"></a>Listar accessPackageResourceEnvironments
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de [objetos accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) e suas propriedades.
 

@@ -3,14 +3,14 @@ title: Atualizar b2cAuthenticationMethodsPolicy
 description: Atualize as propriedades de um objeto b2cAuthenticationMethodsPolicy.
 localization_priority: Priority
 author: namkedia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aed20c26bab07cb6778b80d10e3becf33e998409
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e8cf8ba0d1f0af33b726d9df9fdc31045e6c4f97
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961265"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438376"
 ---
 # <a name="update-b2cauthenticationmethodspolicy"></a>Atualizar b2cAuthenticationMethodsPolicy
 
@@ -24,7 +24,7 @@ Atualize as propriedades de um objeto [b2cAuthenticationMethodsPolicy](../resour
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissions|
+| Tipo de permissão                        | Permissões|
 |:---------------------------------------|:---------------|
 | Delegada (conta corporativa ou de estudante)     | Policy.ReadWrite.AuthenticationMethod|
 | Delegada (conta Microsoft pessoal) | Policy.ReadWrite.AuthenticationMethod|
