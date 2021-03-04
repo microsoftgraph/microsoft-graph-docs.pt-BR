@@ -3,14 +3,14 @@ title: Criar um oAuth2PermissionGrant
 description: Crie um objeto oAuth2PermissionGrant, representando uma concessão de permissão delegada.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8c0154daddfc4947b0f9fa1035efcbc8816e2cd4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e97cadee5e116104beb158a9977ab02c159eb43b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967536"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447912"
 ---
 # <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>Criar uma concessão de permissão delegada (oAuth2PermissionGrant)
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar uma concessão de permissão delegada. Uma concessão de permissão delegada é representada por um objeto [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
+Crie uma concessão de permissão delegada. Uma concessão de permissão delegada é representada por um [objeto oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
 
-Uma concessão de permissão delegada autoriza uma entidade de serviço de cliente (representando um aplicativo cliente) para acessar uma entidade de serviço de recurso (representando uma API), em nome de um usuário conectado, para o nível de acesso limitado pelas permissões delegadas que foram concedidas.
+Uma concessão de permissão delegada autoriza uma entidade de serviço de cliente (representando um aplicativo cliente) a acessar uma entidade de serviço de recursos (representando uma API), em nome de um usuário assinado, para o nível de acesso limitado pelas permissões delegadas que foram concedidas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.ReadWrite.All |
+|Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,11 +48,11 @@ POST /oauth2PermissionGrants
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
+No corpo da solicitação, fornece uma representação JSON de [um objeto oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta de série 200 e um novo objeto [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta de 200 séries e um novo [objeto oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

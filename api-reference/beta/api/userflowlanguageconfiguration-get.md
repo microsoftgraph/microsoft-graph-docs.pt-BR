@@ -1,26 +1,26 @@
 ---
 title: Obter userFlowLanguageConfiguration
-description: Leia as propriedades e os relacionamentos de um [objeto userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md)
+description: Leia as propriedades e as relações de um [objeto userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md)
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 50af91b7a225e08c2e5543d34ef9e97e2eae2c78
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: f96a74fb1209aedba27677088be7af271baac7c8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844981"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444704"
 ---
 # <a name="get-userflowlanguageconfiguration"></a>Obter userFlowLanguageConfiguration
 
 Namespace: microsoft.graph
 
-Leia as propriedades e os relacionamentos de um [objeto userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md) Esses objetos representam um idioma disponível em um fluxo de usuário.
+Leia as propriedades e as relações de um [objeto userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md) Esses objetos representam um idioma disponível em um fluxo de usuários.
 
-**Observação:** Para recuperar um idioma com suporte para personalização, você deve primeiro habilitar a personalização de idioma no fluxo de usuários do Azure AD B2C. Para obter mais informações, [consulte Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md). A personalização de idioma é habilitada por padrão nos fluxos de usuário do [Azure Active Directory.](../resources/b2xidentityuserflow.md)
+**Observação:** Para recuperar um idioma com suporte para personalização, você deve primeiro habilitar a personalização de idioma no fluxo de usuários do Azure AD B2C. Para obter mais informações, [consulte Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md). A personalização de idioma é habilitada por padrão nos fluxos de [usuários do Azure Active Directory.](../resources/b2xidentityuserflow.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

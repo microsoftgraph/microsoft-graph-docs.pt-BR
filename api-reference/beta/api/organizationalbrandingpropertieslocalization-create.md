@@ -1,36 +1,36 @@
 ---
-title: Criar organizationalBrandingProperties localizado
-description: Crie uma identidade visual da organização para uma localidade específica.
+title: Criar organizationalBrandingProperties localizados
+description: Crie a identidade visual da organização para uma localidade específica.
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4c293085887eb0e8c2d49c4e01c567dbeea32699
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7e3108da9ed5251b9f041dc710c16bff674c8a01
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524418"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447808"
 ---
-# <a name="create-localized-organizationalbrandingproperties"></a>Criar organizationalBrandingProperties localizado
+# <a name="create-localized-organizationalbrandingproperties"></a>Criar organizationalBrandingProperties localizados
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) para uma localidade específica.
+Crie um [objeto organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) para uma localidade específica.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-POSTAR na identidade visual/localizações para criar uma nova localização. A ID especificada no corpo é a localidade para a localização. Se nenhuma ID for especificada, o valor do cabeçalho de idioma de conteúdo, se especificado, será usado como a ID. Se não houver nenhuma ID e cabeçalho de idioma de conteúdo especificado, um erro será retornado.
+POST para identidade visual/localizações para criar uma nova localização. A id especificada no corpo é a localidade da localização. Se nenhuma id for especificada, o valor do header Content-Language, se especificado, será usado como id. Se nenhuma id e nenhum header content-Language for especificado, um erro será retornado.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -47,7 +47,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 |:----------|:----------|
 | Autorização | {token} de portador. Obrigatório. |
 | Content-Type  | application/json. Obrigatório.  |
-| Conteúdo-idioma  | LCID. Opcional.  |
+| Content-Language  | Localidade. Opcional.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -55,21 +55,21 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|CorDoFundo|String|Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. É recomendável usar a cor principal do logotipo de faixa ou a cor da sua organização aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF).|
-|backgroundImage|Stream|Imagem que aparece como plano de fundo da página de entrada. . png ou. jpg não é maior do que 1920 x 1080 e menor do que 300kb. Uma imagem menor reduzirá os requisitos de largura de banda e fará com que as cargas de página mais tenham mais desempenho.|
-|bannerLogo|Stream|Uma versão de banner do logotipo da empresa que aparece aparece na página de entrada. . png ou. jpg não maior do que 36x245px. Recomendamos usar uma imagem transparente sem preenchimento em torno do logotipo.|
-|signInPageText|String|Texto que aparece na parte inferior da caixa de entrada. Você pode usá-lo para comunicar informações adicionais, como o número de telefone para o suporte técnico ou uma instrução legal. Este texto deve ser Unicode e não exceder 1024 caracteres.|
-|squareLogo|Stream|Versão quadrada do logotipo da sua empresa. Isso aparece nas experiências de uso (OOBE) do Windows 10 e quando o Windows AutoPilot está habilitado para implantação. . png ou. jpg não maior do que 240x240px e não mais do que 10 KB em tamanho. Recomendamos usar uma imagem transparente sem preenchimento em torno do logotipo.|
-|usernameHintText|String|Cadeia de caracteres que mostra como a dica na caixa de texto username na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres.|
-|id|String|Local para criar identidade visual para|
+|backgroundColor|String|Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. A cor primária do logotipo da faixa ou da cor da sua organização é recomendada para ser usada aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF).|
+|backgroundImage|Stream|Imagem que aparece como o plano de fundo da página de logom. .png ou .jpg não maior que 1920x1080 e menor que 300kb. Uma imagem menor reduzirá os requisitos de largura de banda e tornará as cargas de página mais performant.|
+|bannerLogo|Stream|Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. .png ou .jpg não maior que 36x245px. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
+|signInPageText|String|Texto que aparece na parte inferior da caixa de login. Você pode usar isso para comunicar informações adicionais, como o número de telefone para o seu help desk ou uma declaração legal. Este texto deve ser Unicode e não exceder 1024 caracteres.|
+|squareLogo|Stream|Versão quadrada do logotipo da sua empresa. Isso aparece nas experiências OOBE (windows 10 out-of-box) e quando o Windows Autopilot está habilitado para implantação. .png ou .jpg não maior do que 240x240px e no máximo 10kb de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
+|usernameHintText|String|Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres.|
+|id|String|Localidade para criar identidade visual para|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 CREATED` código de resposta e o objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) criado no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 CREATED` de resposta e o objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) criado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir cria uma localização de identidade visual para francês (FR).
+O exemplo a seguir cria uma localização de identidade visual para francês (fr).
 
 ### <a name="request"></a>Solicitação
 
@@ -137,7 +137,7 @@ Content-Type: application/json
     "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/squareLogo"
 }
 ```
-O **mediaEditLink** especifica onde a mídia localizada foi gravada. O mediaReadLink é NULL porque nenhuma mídia foi definida para a localização.
+O **mediaEditLink** especifica onde a mídia localizada é escrita. O mediaReadLink é nulo porque nenhuma mídia foi definida para a localização.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

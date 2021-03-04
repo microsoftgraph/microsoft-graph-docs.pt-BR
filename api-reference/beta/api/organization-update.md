@@ -3,14 +3,14 @@ title: Atualize a organização
 description: Atualize as propriedades da organização autenticada no momento.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4968a1f686df8acfda23b283e99e42b56f90cb0a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d137f9e519247c61a1b38d547c15f0eb3e68b859
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975502"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447868"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades da organização autenticada no momento. Nesse caso, `organization` é definido como uma coleção de exatamente um registro e, portanto, sua **ID** deve ser especificada na solicitação.  O **ID** também é conhecido como **tenantid** da organização.
+Atualize as propriedades da organização autenticada no momento. Nesse caso, é definido como uma coleção de exatamente um registro e, portanto, sua ID deve ser `organization` especificada na  solicitação.  A **ID** também é conhecida como **tenantId** da organização.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Organization. ReadWrite. All, Directory. AccessAsUser. All |
+|Delegado (conta corporativa ou de estudante) | Organization.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application | Organization.ReadWrite.All |
+|Aplicativo | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,13 +52,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade  | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Coleção de cadeias de caracteres|                                        **Anotações** : não anulável.            |
+|marketingNotificationEmails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|O perfil de privacidade de uma organização (definir statementUrl e contactEmail).            |
 |securityComplianceNotificationMails|Coleção de cadeias de caracteres||
 |securityComplianceNotificationPhones|Coleção de cadeias de caracteres||
-|technicalNotificationMails|Coleção de cadeias de caracteres|                                        **Anotações** : não anulável.            |
+|technicalNotificationMails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
 
-Como o recurso de **organização** oferece suporte a [extensões](/graph/extensibility-overview), você pode usar a `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **organização** existente.
+Como o **recurso da** organização dá suporte a extensões, você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview)de uma extensão em uma instância `PATCH` da **organização** existente.
 
 ## <a name="response"></a>Resposta
 

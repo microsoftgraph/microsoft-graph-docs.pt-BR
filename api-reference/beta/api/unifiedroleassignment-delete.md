@@ -1,16 +1,16 @@
 ---
 title: Excluir unifiedRoleAssignment
-description: Excluir um objeto unifiedRoleAssignment.
+description: Exclua um objeto unifiedRoleAssignment.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f11d0017c9dc7ac403f40ee8e913b489bf3969e7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 865d18f0278084ecf884ead909374eeccaaace54
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978154"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444880"
 ---
 # <a name="delete-unifiedroleassignment"></a>Excluir unifiedRoleAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) .
+[Exclua um objeto unifiedRoleAssignment.](../resources/unifiedRoleAssignment.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+| Aplicativo                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

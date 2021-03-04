@@ -1,16 +1,16 @@
 ---
 title: Excluir unifiedRoleAssignmentMultiple
-description: Excluir um objeto unifiedRoleAssignmentMultiple.
+description: Exclua um objeto unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 89c81e4dd63a892553d59f715c62620db5ae0895
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 85d721888b3f64f77533e6c83c53c84c943ec824
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978120"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444851"
 ---
 # <a name="delete-unifiedroleassignmentmultiple"></a>Excluir unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) . Isso se aplica a um aplicativo RBAC que oferece suporte a várias entidades de segurança e escopos. O Microsoft Intune é um aplicativo desse tipo.
+[Exclua um objeto unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Isso é aplicável a um aplicativo RBAC que oferece suporte a várias entidades e escopos. O Microsoft Intune é um aplicativo assim.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:------------------------------------------- |
 | Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | DeviceManagementRBAC.ReadWrite.All |
+| Aplicativo | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

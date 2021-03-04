@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso programControlType
-description: 'No recurso de revisões do Azure AD Access, o tipo de controle do programa é usado ao associar um controle a um programa, para indicar o tipo de revisão do Access para o qual o controle é.  '
+title: Tipo de recurso programControlType
+description: 'No recurso de revisões de acesso do Azure AD, o tipo de controle de programa é usado ao associar um controle a um programa, para indicar o tipo de revisão de acesso para o qual o controle se trata.  '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: ddf5ee29c01770d06c9725413f362bd0f0e18bee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 593d8a8fa36c03515dbad9a1ee1dd0b267f98577
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029055"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443941"
 ---
-# <a name="programcontroltype-resource-type"></a>tipo de recurso programControlType
+# <a name="programcontroltype-resource-type"></a>Tipo de recurso programControlType
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](accessreviews-root.md) , o tipo de controle do programa é usado ao associar um controle a um programa, para indicar o tipo de revisão do Access para o qual o controle é.  
+No recurso de revisões de acesso do Azure [AD,](accessreviews-root.md) o tipo de controle de programa é usado ao associar um controle a um programa, para indicar o tipo de revisão de acesso para o qual o controle se trata.  
 
-Os objetos de tipo de controle do programa são gerados automaticamente quando o administrador global embuti o locatário para usar o recurso de revisões do Access.  Nenhum tipo de controle de programa adicional pode ser criado.
+Os objetos do tipo de controle do programa são gerados automaticamente quando o administrador global inscarda o locatário para usar o recurso de críticas de acesso.  Nenhum tipo de controle de programa adicional pode ser criado.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar programControlTypes](../api/programcontroltype-list.md) | coleção [programControlType](programcontroltype.md)| Listar tipos de controle de programa. |
+|[Listar programControlTypes](../api/programcontroltype-list.md) | [Coleção programControlType](programcontroltype.md)| Listar tipos de controle de programa. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -45,7 +45,7 @@ Nenhum
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criar programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Adicionar um programControl a um programa.|
+|[Criar programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Adicione um programControl a um programa.|
 
 
 ## <a name="json-representation"></a>Representação JSON

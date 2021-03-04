@@ -1,16 +1,16 @@
 ---
 title: Obter unifiedRoleAssignmentMultiple
-description: Recupere as propriedades e os relacionamentos de um objeto unifiedRoleAssignmentMultiple.
+description: Recupere as propriedades e as relações de um objeto unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cf276a23ebae48160d386ddbcaaa89fe5c9a5ce7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04c485d6f9c493514f82f8787b3f9ab5c9f1c2c2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978127"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444830"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>Obter unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) . Use este objeto para obter atribuições de função no Microsoft Intune. Para outros aplicativos do Microsoft 365 (como o Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+Recupere as propriedades e as relações de [um objeto unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Use este objeto para obter atribuições de função no Microsoft Intune. Para outros aplicativos do Microsoft 365 (como o Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
+| Aplicativo | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,11 +53,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-a-directory-scoped-roleassignmentmultiple-in-intune"></a>Exemplo 1: obter um roleAssignmentMultiple com escopo de diretório no Intune
+### <a name="example-1-get-a-directory-scoped-roleassignmentmultiple-in-intune"></a>Exemplo 1: Obter uma função com escopo de diretórioAssignmentMultiple no Intune
 
 #### <a name="request"></a>Solicitação
 
@@ -117,7 +117,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-roleassignmentmultiple-in-intune-assigned-to-a-group"></a>Exemplo 2: obter um roleAssignmentMultiple no Intune atribuído a um grupo
+### <a name="example-2-get-a-roleassignmentmultiple-in-intune-assigned-to-a-group"></a>Exemplo 2: Obter uma roleAssignmentMultiple no Intune atribuída a um grupo
 
 #### <a name="request"></a>Solicitação
 
@@ -190,11 +190,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>Exemplo 3: obter um roleAssignmentMultiple com escopo de diretório com `$expand`
+### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>Exemplo 3: Obter uma função com escopo de diretórioAssignmentMultiple com `$expand`
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação com o `$expand` parâmetro de consulta.
+A seguir, um exemplo da solicitação com o `$expand` parâmetro de consulta.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

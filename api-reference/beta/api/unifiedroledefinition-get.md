@@ -1,16 +1,16 @@
 ---
 title: Obter unifiedRoleDefinition
-description: Recupere as propriedades e os relacionamentos de um objeto unifiedRoleDefinition.
+description: Recupere as propriedades e as relações de um objeto unifiedRoleDefinition.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dd5660c8fd5c748748d137e9773130fd7856c380
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ac38b1c6b131c22f8b3197500640cf36ef2f691
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976670"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444809"
 ---
 # <a name="get-unifiedroledefinition"></a>Obter unifiedRoleDefinition
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) . Atualmente, "Directory" é o único aplicativo RBAC compatível.
+Recupere as propriedades e as relações de um [objeto unifiedRoleDefinition.](../resources/unifiedRoleDefinition.md) Atualmente, o "diretório" é o único aplicativo RBAC com suporte.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
+|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,11 +54,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [unifiedRoleDefinition](../resources/unifiedroledefinition.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [unifiedRoleDefinition](../resources/unifiedroledefinition.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-definition-of-a-custom-role"></a>Exemplo 1: obter a definição de uma função personalizada
+### <a name="example-1-get-the-definition-of-a-custom-role"></a>Exemplo 1: Obter a definição de uma função personalizada
 
 #### <a name="request"></a>Solicitação
 
@@ -132,7 +132,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-built-in-role"></a>Exemplo 2: obter a definição de uma função interna
+### <a name="example-2-get-the-definition-of-a-built-in-role"></a>Exemplo 2: Obter a definição de uma função integrado
 
 #### <a name="request"></a>Solicitação
 
@@ -232,7 +232,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Exemplo 3: obter a definição de uma função interna do Azure AD e $expand na função herdada de
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Exemplo 3: Obter a definição de uma função do Azure AD e $expand na função herdada de
 
 #### <a name="request"></a>Solicitação
 

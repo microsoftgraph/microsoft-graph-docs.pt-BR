@@ -3,30 +3,30 @@ title: Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethod
 description: Exclui um objetoMicrosoftAuthenticatorAuthenticationMethod sem senha.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6e894cd8332969e708c8a7d8d1a53ca7c17be2dc
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 132f847f11d9fff5886337334a43896f54bc179c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796560"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447781"
 ---
 # <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethod (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui o objeto do método de login de telefone sem senha do [Microsoft Authenticator de um](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) usuário.
+Exclui o objeto do método de Login de Telefone Sem Senha do [Microsoft Authenticator de um](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) usuário.
 
 > [!CAUTION]
-> A API do método de login de telefone sem senha do Microsoft Authenticator foi preterida e interromperá o retorno dos resultados em 31 de dezembro de 2020. Use o novo Método [de Autenticação do Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
+> A API do método de login sem senha do Microsoft Authenticator Phone está preterida e interromperá o retorno dos resultados em 31 de dezembro de 2020. Use o novo [Método de Autenticação do Autenticador microsoft](../resources/microsoftAuthenticatorAuthenticationMethod.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="permissions-acting-on-self"></a>Permissões agindo por si só
+### <a name="permissions-acting-on-self"></a>Permissões agindo em si mesmo
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
@@ -42,8 +42,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administração global
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+* Administrador global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar ipnamedlocation
-description: Atualiza as propriedades de um objeto ipNamedLocation.
+description: Atualize as propriedades de um objeto ipNamedLocation.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 614042524529f83040b59201f82740091e8e0953
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 32e87ab0312e4f1f1ea64744325775b56ed5645a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952449"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447994"
 ---
 # <a name="update-ipnamedlocation"></a>Atualizar ipNamedlocation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [ipNamedLocation](../resources/ipNamedLocation.md) .
+Atualize as propriedades de um [objeto ipNamedLocation.](../resources/ipNamedLocation.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,8 +51,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome legível do local.|
-|Intervalos|Coleção [ipRange](../resources/iprange.md)|Lista de intervalos de endereços IP no formato CIDR do IPv4 (1.2.3.4/32) ou qualquer formato IPv6 permitido da IETF RFC5962.|
+|displayName|String|Nome acessível para humanos do local.|
+|ipRanges|Coleção [ipRange](../resources/iprange.md)|Lista de intervalos de endereços IP no formato CIDR IPv4 (1.2.3.4/32) ou qualquer formato IPv6 aceitável do IETF RFC5962.|
 |isTrusted|Booliano|O valor é `true` se esse local for explicitamente confiável.|
 
 ## <a name="response"></a>Resposta

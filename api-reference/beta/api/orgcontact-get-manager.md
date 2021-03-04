@@ -1,18 +1,18 @@
 ---
-title: 'orgContact: obter gerente'
+title: 'orgContact: Obter gerente'
 description: Obter o gerente do contato
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 20ba81b13ab70a952909ea1b1218e2397d490bef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6df291504286729737765d375a74fdfd1a725b2e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964526"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447798"
 ---
-# <a name="orgcontact-get-manager"></a>orgContact: obter gerente
+# <a name="orgcontact-get-manager"></a>orgContact: Obter gerente
 
 Namespace: microsoft.graph
 

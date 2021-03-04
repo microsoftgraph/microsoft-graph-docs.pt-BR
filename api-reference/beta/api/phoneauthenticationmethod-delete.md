@@ -3,14 +3,14 @@ title: Excluir phoneAuthenticationMethod
 description: Exclua o método de autenticação de telefone de um usuário.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b506851ec693b5fe9cba2216910ba635c7d648af
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: b10f0e6e89b891c41cc226a378b6b0fddf82a990
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796595"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447679"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>Excluir phoneAuthenticationMethod
 
@@ -18,19 +18,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua o método de [autenticação de telefone de um usuário.](../resources/phoneauthenticationmethod.md) 
+Excluir o método de autenticação [de telefone de um usuário.](../resources/phoneauthenticationmethod.md) 
 
 >**Observação:** Isso remove o número de telefone do usuário e ele não poderá mais usar o número para autenticação, seja via SMS ou chamadas de voz.
 
-Lembre-se de que um usuário não pode `alternateMobile` ter um número sem um `mobile` número. Se você quiser remover um número de um usuário que também tenha um número, primeiro atualize o número para o novo número `mobile` `alternateMobile` e [](phoneauthenticationmethod-update.md) `mobile` `alternateMobile` exclua-o.
+Lembre-se de que um usuário não pode ter `alternateMobile` um número sem um `mobile` número. Se você quiser remover um número de um usuário que também tenha um número, primeiro atualize o número para o novo número `mobile` `alternateMobile` e [](phoneauthenticationmethod-update.md) `mobile` exclua o `alternateMobile` número.
 
-Se o número de telefone for o método de autenticação padrão do Azure multifa factor authentication (MFA), ele não poderá ser excluído. Fazer com que o usuário altere o método de autenticação padrão e exclua o número.
+Se o número de telefone for o método padrão de autenticação multifato do Azure (MFA), ele não poderá ser excluído. Fazer com que o usuário altere seu método de autenticação padrão e exclua o número.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="permissions-acting-on-self"></a>Permissões agindo por si só
+### <a name="permissions-acting-on-self"></a>Permissões agindo em si mesmo
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
@@ -46,8 +46,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administração global
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+* Administrador global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 

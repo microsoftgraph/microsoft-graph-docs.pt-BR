@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso plannerPlan
-description: O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pertencer a um grupo e conter um conjunto de plannerTasks. Ele também pode ter uma coleção de plannerBuckets. Cada objeto de plano tem um objeto de detalhes que pode conter mais informações sobre o plano. Para saber mais sobre as relações entre grupos, planos e tarefas, confira o Planner.
+description: O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pertencer a um grupo e conter um conjunto de plannerTasks. Ele também pode ter uma coleção de plannerBuckets. Cada objeto plan tem um objeto de detalhes que pode conter mais informações sobre o plano. Para saber mais sobre as relações entre grupos, planos e tarefas, confira o Planner.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: e79b84bc77b81b02a408035acb34f89d2f990cc8
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: f5820ecc8f4e29f5876b0fbbf9ca9f1acc93c0cb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883030"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444022"
 ---
 # <a name="plannerplan-resource-type"></a>Tipo de recurso plannerPlan
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pertencer a um [grupo](group.md) e conter uma coleção de [plannerTasks](plannertask.md). Ele também pode ter uma coleção de [plannerBuckets](plannerbucket.md). Cada objeto de plano tem [um objeto](plannerplandetails.md) de detalhes que pode conter mais informações sobre o plano. Para saber mais sobre as relações entre grupos, planos e tarefas, confira o [Planner](planner-overview.md).
+O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pertencer a um [grupo](group.md) e conter uma coleção de [plannerTasks](plannertask.md). Ele também pode ter uma coleção de [plannerBuckets](plannerbucket.md). Cada objeto plan tem um [objeto de](plannerplandetails.md) detalhes que pode conter mais informações sobre o plano. Para saber mais sobre as relações entre grupos, planos e tarefas, confira o [Planner](planner-overview.md).
 
 
 
@@ -39,8 +39,8 @@ O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pe
 |id|String| Somente leitura. A ID do plano. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
 |title|String|Obrigatório. Título do plano.|
 |createdBy|[identitySet](identityset.md)|Somente leitura. O usuário que criou o plano.|
-|contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Somente leitura. Experiências adicionais do usuário nas quais esse plano é usado, representadas como entradas [de plannerPlanContext.](plannerplancontext.md)|
-|proprietário (preterido) |String| Use a **propriedade de** contêiner em vez disso. ID do [grupo proprietário](group.md) do plano. Depois de definida, essa propriedade não pode ser atualizada. Essa propriedade não retornará uma ID de grupo válida se o contêiner do plano não for um grupo.|
+|contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Somente leitura. Experiências adicionais de usuário nas quais esse plano é usado, representadas como entradas [plannerPlanContext.](plannerplancontext.md)|
+|owner (preterido) |String| Use a **propriedade container** em vez disso. ID do [grupo](group.md) que possui o plano. Depois de definida, essa propriedade não pode ser atualizada. Essa propriedade não retornará uma ID de grupo válida se o contêiner do plano não for um grupo.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -88,7 +88,6 @@ Veja a seguir uma representação JSON do recurso.
   },
   "title": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,25 +5,25 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7c762c2477439010562c0e7e1b7ddf565d3203e
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2d527b4d0a6da5a54a6e167db063b8c4e06a6062
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157558"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444179"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos.
 O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedAppRegistrations](../api/intune-mam-managedappregistration-list.md)|Coleção [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|Listar propriedades e relações dos objetos de [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
@@ -43,8 +43,8 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |deviceName|Cadeia de caracteres|Nome do dispositivo do host|
 |managedDeviceId|String|O identificador de Dispositivo Gerenciado do dispositivo host. O valor pode estar vazio mesmo quando o dispositivo host é gerenciado.|
 |azureADDeviceId|String|O identificador do Dispositivo do Azure Active Directory do dispositivo host. O valor pode estar vazio mesmo quando o dispositivo host é registrado no Azure Active Directory.|
-|deviceModel|Cadeia de caracteres|O modelo de dispositivo para o registro de aplicativo atual |
-|deviceManufacturer|String|O fabricante do dispositivo para o registro atual do aplicativo |
+|deviceModel|Cadeia de caracteres|O modelo de dispositivo para o registro do aplicativo atual |
+|deviceManufacturer|String|O fabricante do dispositivo para o registro do aplicativo atual |
 |flaggedReasons|[Coleção managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador do pacote do aplicativo|
@@ -54,7 +54,7 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|appliedPolicies|Coleção [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais políticas já aplicadas no aplicativo registrado quando este foi sincronizado pela última vez com o serviço de gerenciamento.|
+|appliedPolicies|Coleção [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais políticas já aplicadas no aplicativo registrado quando ele foi sincronizado pela última vez com o serviço de gerenciamento.|
 |intendedPolicies|Coleção [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais administradores de políticas destinados ao aplicativo a partir de agora.|
 |operations|Coleção [managedAppOperation](../resources/intune-mam-managedappoperation.md)|Zero ou mais operações de longa execução desencadeadas no registro do aplicativo.|
 

@@ -1,22 +1,22 @@
 ---
-title: Tipo de enum windowsQualityUpdateClassification
+title: Tipo de número windowsQualityUpdateClassification
 description: Classificação de atualização de qualidade do Windows
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 92888fac9b2afab49685d4e0998e513a0927548b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: be15e1488adcb58272f6b4c51d30e75579acfe00
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162167"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444172"
 ---
-# <a name="windowsqualityupdateclassification-enum-type"></a>Tipo de enum windowsQualityUpdateClassification
+# <a name="windowsqualityupdateclassification-enum-type"></a>Tipo de número windowsQualityUpdateClassification
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,9 +25,9 @@ Classificação de atualização de qualidade do Windows
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|all|0|Modelo de linha da base de segurança|
-|segurança|1 |Modelo de dispositivos especializados|
-|nonSecurity|2 |Modelo de linha de base de segurança da Proteção Avançada contra Ameaças|
+|all|0|Todo o tipo de atualização|
+|security|1 |Tipo de atualização somente de segurança|
+|nonSecurity|2 |Tipo de atualização somente não segurança|
 
 
 

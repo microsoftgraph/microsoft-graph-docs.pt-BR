@@ -1,40 +1,40 @@
 ---
-title: 'impressora: GetCapabilities'
-description: Obtenha uma lista de recursos para a impressora.
+title: 'printer: getCapabilities'
+description: Obter uma lista de recursos para a impressora.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 6a7c8029dba6cd86e71bb1f090b18e7fb682b047
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a9d9b1e21d26e39ea50020f56f48f496c83b609c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972416"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447672"
 ---
-# <a name="printer-getcapabilities"></a>impressora: GetCapabilities
+# <a name="printer-getcapabilities"></a>printer: getCapabilities
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de recursos para a [impressora](../resources/printer.md).
+Obter uma lista de recursos para a [impressora](../resources/printer.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Printer. Read. All, Printer. ReadWrite. All, Printer. FullControl. All |
+|Delegado (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Sem suporte. |
+|Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/printers/{id}/getCapabilities
+GET /print/printers/{id}/getCapabilities
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
@@ -44,7 +44,7 @@ POST /print/printers/{id}/getCapabilities
 ## <a name="request-body"></a>Corpo da solicitação
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [printerCapabilities](../resources/printercapabilities.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printerCapabilities](../resources/printercapabilities.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -56,8 +56,8 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "printer-getCapabilities"
 }-->
-```http
-POST https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/printer-getcapabilities-csharp-snippets.md)]

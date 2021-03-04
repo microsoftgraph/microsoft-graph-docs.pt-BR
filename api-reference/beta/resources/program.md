@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de programa
-description: 'No recurso de revisões do Azure AD Access, um programa é um contêiner, contendo controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão do Access a um programa, para facilitar a localização de revisões relacionadas do Access.  '
+description: 'No recurso de revisões de acesso do Azure AD, um programa é um contêiner, mantendo controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão de acesso a um programa, para facilitar a localização de avaliações de acesso relacionadas.  '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 31fb07478ab7f53e59cb93e9fd076a1271e998de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f10ee2a54a310018d87500e5dd4f939d1fe38a0e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029069"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443983"
 ---
 # <a name="program-resource-type"></a>tipo de recurso de programa
 
@@ -18,26 +18,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](accessreviews-root.md) , um programa é um contêiner, contendo controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão do Access a um programa, para facilitar a localização de revisões relacionadas do Access.  
+No recurso de revisões de acesso do Azure AD, um programa é um contêiner, mantendo [controles](accessreviews-root.md) de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão de acesso a um programa, para facilitar a localização de avaliações de acesso relacionadas.  
 
-Cada locatário que tem revisões de acesso do Azure AD integradas tem um programa, `Default program` .  Um administrador global pode criar programas adicionais, por exemplo, para representar iniciativas de conformidade. 
+Cada locatário que tenha avaliações de acesso do Azure AD no Azure tem um programa, `Default program` .  Um administrador global pode criar programas adicionais, por exemplo, para representar iniciativas de conformidade. 
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criar programa](../api/program-create.md) |   [programa](program.md)   |   Criar um novo programa.|
+|[Criar programa](../api/program-create.md) |   [program](program.md)   |   Crie um novo programa.|
 |[Excluir programa](../api/program-delete.md) |   Nenhum.   |   Excluir um programa.|
-|[Listar programas](../api/program-list.md) |  coleção [Program](program.md)|   Obtenha uma coleção de todos os programas.|
-|[Listar programControls de um programa](../api/program-listcontrols.md) |      coleção [programControl](programcontrol.md)| Obter uma coleção de controles de um programa.|
-|[Programa de atualização](../api/program-update.md) |   [programa](program.md)|  Atualizar um programa.|
+|[Listar programas](../api/program-list.md) |  [conjunto de](program.md) programas|   Obter uma coleção de todos os programas.|
+|[Listar programControls de um programa](../api/program-listcontrols.md) |      [Coleção programControl](programcontrol.md)| Obter uma coleção dos controles de um programa.|
+|[Atualizar programa](../api/program-update.md) |   [program](program.md)|  Atualize um programa.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| `id`                        |`String`                              |  O identificador do programa atribuído ao recurso.                    |
-| `displayName`               |`String`                              |  O nome do programa.  Obrigatório ao criar.                  |
+| `id`                        |`String`                              |  O identificador atribuído ao recurso do programa.                    |
+| `displayName`               |`String`                              |  O nome do programa.  Obrigatório durante a criação.                  |
 | `description`               |`String`                              |  A descrição do programa.           |
 
 ## <a name="relationships"></a>Relações

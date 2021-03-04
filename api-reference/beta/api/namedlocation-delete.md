@@ -1,16 +1,16 @@
 ---
 title: Excluir namedLocation
-description: Excluir um objeto namedLocation.
+description: Exclua um objeto namedLocation.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 29355bd98401536cbf28f36fc28c6b0e4f864029
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6785a3d6e80d19372bf5d935e300fea0e19497e1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978945"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443657"
 ---
 # <a name="delete-namedlocation"></a>Excluir namedLocation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [namedLocation](../resources/namedlocation.md) .
+Exclua [um objeto namedLocation.](../resources/namedlocation.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

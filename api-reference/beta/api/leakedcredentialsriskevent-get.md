@@ -1,16 +1,16 @@
 ---
 title: Obter leakedCredentialsRiskEvent
-description: Recupere as propriedades e os relacionamentos de um objeto leakedcredentialsriskevent.
+description: Recupere as propriedades e as relações de um objeto leakedcredentialsriskevent.
 localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a615edb24485d96e36e706f3c41f2b34da305be3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: c76eab673cc93f31dfa4f95cb2847c91a427d2f2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999207"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443780"
 ---
 # <a name="get-leakedcredentialsriskevent-deprecated"></a>Obter leakedCredentialsRiskEvent (preterido)
 
@@ -19,9 +19,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+>A **API identityRiskEvents** está preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, [consulte Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Recupere as propriedades e os relacionamentos de um objeto leakedcredentialsriskevent.
+Recupere as propriedades e as relações de um objeto leakedcredentialsriskevent.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [leakedCredentialsRiskEvent](../resources/leakedcredentialsriskevent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [leakedCredentialsRiskEvent](../resources/leakedcredentialsriskevent.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

@@ -3,14 +3,14 @@ title: tipo de recurso claimsMappingPolicy
 description: Representa uma política que pode controlar o tempo de vida de um token de acesso emitido pelo Azure Active Directory (Azure AD).
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 09d68f6c9561ba0bf433c56abbba640b485a6fba
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: e15a99b5cc8d5f8a144cfc0cf438d146d442fd3a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405600"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444336"
 ---
 # <a name="claimsmappingpolicy-resource-type"></a>tipo de recurso claimsMappingPolicy
 
@@ -18,45 +18,45 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as políticas de mapeamento de declaração para protocolos WS-Alimentad, SAML, OAuth 2,0 e OpenID Connect, para tokens emitidos para um aplicativo específico. Você pode usar políticas de mapeamento de declarações para:
+Representa as políticas de mapeamento de declaração para protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Connect para tokens emitidos para um aplicativo específico. Você pode usar políticas de mapeamento de declarações para:
 
-- Selecionar quais declarações são incluídas nos tokens
+- Selecione quais declarações estão incluídas em tokens
 - Criar tipos de declaração que ainda não existem
-- Escolha ou altere a fonte de dados emitidos em declarações específicas  
+- Escolher ou alterar a fonte de dados emitidos em declarações específicas  
 
-Para obter mais detalhes de cenário e configuração, consulte [como: Personalizar declarações emitidas em tokens para um aplicativo específico em um locatário](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
+Para obter mais detalhes de cenário e configuração, consulte [How to: Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
 
 Herda de [stsPolicy](stsPolicy.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Criar claimsMappingPolicy](../api/claimsmappingpolicy-post-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Criar um objeto claimsMappingPolicy. |
-| [Obter claimsMappingPolicy](../api/claimsmappingpolicy-get.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Ler propriedades e relações de um objeto claimsMappingPolicy. |
+| [Criar claimsMappingPolicy](../api/claimsmappingpolicy-post-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Crie um objeto claimsMappingPolicy. |
+| [Obter claimsMappingPolicy](../api/claimsmappingpolicy-get.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Leia propriedades e relações de um objeto claimsMappingPolicy. |
 | [Listar claimsMappingPolicies](../api/claimsmappingpolicy-list.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Ler propriedades e relações de objetos claimsMappingPolicies. |
-| [Atualizar claimsMappingPolicy](../api/claimsmappingpolicy-update.md) | Nenhum | Atualizar um objeto claimsMappingPolicy. |
-| [Excluir claimsMappingPolicy](../api/claimsmappingpolicy-delete.md) | Nenhum | Excluir um objeto claimsMappingPolicy. |
-| [Listar se aplica](../api/claimsmappingpolicy-list-appliesto.md) | Coleção [directoryObject](directoryobject.md) | Obtenha a lista de directoryObjects à qual essa política foi aplicada. |
-| [Atribuir claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md) | Nenhum | Atribuir um claimsMappingPolicy a um objeto [servicePrincipalName](serviceprincipal.md) . |
-| [Lista atribuída claimsMappingPolicy](../api/serviceprincipal-list-claimsmappingpolicies.md) | Conjunto [claimsMappingPolicy](claimsmappingpolicy.md) | Lista os objetos claimsMappingPolicy que são atribuídos a um objeto [servicePrincipalName](serviceprincipal.md) . |
-| [Remover claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md) | Nenhum | Remover um claimsMappingPolicy de um objeto [servicePrincipalName](serviceprincipal.md) . |
+| [Update claimsMappingPolicy](../api/claimsmappingpolicy-update.md) | Nenhum(a) | Atualize um objeto claimsMappingPolicy. |
+| [Excluir claimsMappingPolicy](../api/claimsmappingpolicy-delete.md) | Nenhum(a) | Exclua um objeto claimsMappingPolicy. |
+| [Lista appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | Coleção [directoryObject](directoryobject.md) | Obter a lista de directoryObjects aos qual essa política foi aplicada. |
+| [Atribuir claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md) | Nenhum(a) | Atribua um claimsMappingPolicy a um [objeto servicePrincipal.](serviceprincipal.md) |
+| [Listar declarações atribuídasMappingPolicy](../api/serviceprincipal-list-claimsmappingpolicies.md) | Conjunto [claimsMappingPolicy](claimsmappingpolicy.md) | Listar os objetos claimsMappingPolicy atribuídos a um [objeto servicePrincipal.](serviceprincipal.md) |
+| [Remover claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md) | Nenhum(a) | Remova um claimsMappingPolicy de um [objeto servicePrincipal.](serviceprincipal.md) |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| Identificador exclusivo da política. Somente leitura.|
-|definir|Conjunto de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
-|description|Cadeia de caracteres| Descrição da política.|
-|displayName|Cadeia de caracteres| Nome para exibição dessa política. Obrigatório.|
-|isOrganizationDefault|Boolean|Ignore essa propriedade. A política de mapeamento de declarações só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
+|id|String| Identificador exclusivo dessa política. Somente leitura.|
+|definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|description|String| Descrição dessa política.|
+|displayName|String| Nome de exibição para esta política. Obrigatório.|
+|isOrganizationDefault|Booliano|Ignore essa propriedade. A política de mapeamento de declarações só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
 
 ### <a name="properties-of-a-claims-mapping-policy-definition"></a>Propriedades de uma definição de política de mapeamento de declarações
 
-As propriedades abaixo formam o objeto JSON que representa uma política de mapeamento de declarações. Este objeto JSON deve ser **convertido em uma cadeia de caracteres com aspas de escape** a ser inserido na propriedade **Definition** . Alguns exemplos de definição são mostrados abaixo:
+As propriedades abaixo formam o objeto JSON que representa uma política de mapeamento de declarações. Esse objeto JSON deve ser **convertido em uma cadeia de caracteres com** aspas que escapam para serem inseridas na propriedade **definition.** Alguns exemplos de definição são mostrados abaixo:
 
-#### <a name="example-definition-to-include-the-employeeid-and-tenantcountry-as-claims-in-tokens"></a>Exemplo: **definição** para incluir o EmployeeID e TenantCountry como declarações em tokens
+#### <a name="example-definition-to-include-the-employeeid-and-tenantcountry-as-claims-in-tokens"></a>Exemplo: **definição** para incluir EmployeeID e TenantCountry como declarações em tokens
 <!-- {
   "blockType": "ignored"
 }-->
@@ -99,17 +99,17 @@ As propriedades abaixo formam o objeto JSON que representa uma política de mape
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Versão|Inteiro|Defina o valor 1. Obrigatório.|
-|IncludeBasicClaimSet|Boolean|Se for definido como true, todas as declarações no conjunto de declarações básicas serão emitidas em tokens afetados pela política. Se definido como false, as declarações no conjunto de declarações básicas não estão nos tokens, a menos que sejam individualmente adicionadas à propriedade ClaimsSchema da mesma política.|
-|ClaimsSchema|Objeto JSON|Define quais declarações estão presentes nos tokens afetados pela política, além do conjunto de declarações básico e o conjunto de declarações principal. Para cada entrada de esquema de declaração definida nessa propriedade, determinadas informações são necessárias. Especifique onde os dados vêm vindo (par de valor ou código-fonte/ID) e quais declarações os dados são emitidos como (tipo de declaração). Mais detalhes estão disponíveis na [definição ClaimsSchema](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
-|ClaimsTransformation|Objeto JSON| Define transformações comuns que podem ser aplicadas aos dados de origem, para gerar os dados de saída para declarações especificadas no ClaimsSchema. Mais detalhes estão disponíveis na [definição ClaimsTransformation](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation).|
+|Versão|Inteiro|Definir o valor de 1. Obrigatório.|
+|IncludeBasicClaimSet|Booliano|Se definido como true, todas as declarações no conjunto de declarações básico são emitidas em tokens afetados pela política. Se definido como false, as declarações no conjunto de declarações básicas não estão nos tokens, a menos que sejam adicionadas individualmente na propriedade ClaimsSchema da mesma política.|
+|ClaimsSchema|Objeto JSON|Define quais declarações estão presentes nos tokens afetados pela política, além do conjunto de declarações básico e do conjunto de declarações principais. Para cada entrada de esquema de declaração definida nesta propriedade, determinadas informações são necessárias. Especifique de onde os dados estão vindo (par Valor ou Fonte/ID) e que dizem que os dados são emitidos como (Tipo de Declaração). Mais detalhes estão disponíveis na definição [ClaimsSchema](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
+|ClaimsTransformation|Objeto JSON| Define transformações comuns que podem ser aplicadas aos dados de origem, para gerar os dados de saída para declarações especificadas no ClaimsSchema. Mais detalhes estão disponíveis na definição [ClaimsTransformation](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation).|
 
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|appliesTo|Coleção [directoryObject](directoryobject.md)| A coleção [directoryobject](directoryObject.md) à qual essa política foi aplicada. Somente leitura.|
+|appliesTo|Coleção [directoryObject](directoryobject.md)| A [coleção directoryObject](directoryObject.md) à qual essa política foi aplicada. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

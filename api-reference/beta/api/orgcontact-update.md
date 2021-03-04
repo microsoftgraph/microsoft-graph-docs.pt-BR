@@ -3,14 +3,14 @@ title: Atualizar orgcontact
 description: Atualize as propriedades do objeto orgcontact.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c425af3a39a2a9f13a46792d8482d59804c8d37f
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 85b08d815b742a0b4117c7dd0ae786da979f92dc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352148"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447818"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
 

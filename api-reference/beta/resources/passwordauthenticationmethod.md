@@ -1,31 +1,31 @@
 ---
-title: Tipo de recurso passwordAuthenticationMethod
+title: tipo de recurso passwordAuthenticationMethod
 description: Uma representação de uma senha registrada para um usuário.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 92e135b74bc68662749376298b4be44155b577b2
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2982b79df70b65bf09dff8f9b906ed85a8854b52
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156690"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444081"
 ---
-# <a name="passwordauthenticationmethod-resource-type"></a>Tipo de recurso passwordAuthenticationMethod
+# <a name="passwordauthenticationmethod-resource-type"></a>tipo de recurso passwordAuthenticationMethod
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma representação da senha de um usuário. Por segurança, a senha em si nunca será retornada no objeto, mas é possível fazer uma ação para redefinir uma senha.
+Uma representação da senha de um usuário. Por segurança, a senha em si nunca será retornada no objeto, mas pode ser tomada uma ação para redefinir uma senha.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-|[Listar passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [Coleção passwordAuthenticationMethod](passwordauthenticationmethod.md) | Leia as propriedades e os relacionamentos de todos os objetos **passwordAuthenticationMethod** desse usuário. |
-|[Obter passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Leia as propriedades e os relacionamentos de um **objeto passwordAuthenticationMethod.** |
+|[Listar passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [coleção passwordAuthenticationMethod](passwordauthenticationmethod.md) | Leia as propriedades e as relações de todos os objetos **passwordAuthenticationMethod** deste usuário. |
+|[Obter passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Leia as propriedades e as relações de um **objeto PasswordAuthenticationMethod.** |
 |[Redefinir senha](../api/passwordauthenticationmethod-resetpassword.md)|Nenhum(a)|Redefinir a senha de um usuário na nuvem e, se sincronizado, no local.|
 
 ## <a name="properties"></a>Propriedades

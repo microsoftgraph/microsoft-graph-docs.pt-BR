@@ -1,26 +1,26 @@
 ---
 title: Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: Exclua um objetoMicrosoftAuthenticatorAuthenticationMethodConfiguration sem senha.
+description: Exclua um objetoMicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7b7cb8cc0eca09dde9e4ecb56a570bf1faf92b05
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 7961f575265ef4fc8ddae23b9e36cd7352a0ae85
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873448"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447763"
 ---
 # <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova as alterações feitas na política de método de autenticação de Entrada de Telefone do [Microsoft Authenticator](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) revertendo a política para sua configuração padrão.
+Remova as alterações feitas na [política do método de autenticação](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) de Entrada de Telefone do Microsoft Authenticator revertendo a política para sua configuração padrão.
 
 > [!CAUTION]
-> A API do método de autenticação de autenticação de telefone sem senha do Microsoft Authenticator foi preterida e parou de retornar resultados em 31 de dezembro de 2020. Use a nova política [de método de autenticação do Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
+> A API de política de autenticação do método de autenticação de telefone sem senha do Microsoft Authenticator é preterida e parou de retornar resultados em 31 de dezembro de 2020. Use a nova política de método de autenticação do [Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

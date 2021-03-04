@@ -1,24 +1,24 @@
 ---
 title: Excluir userFlowLanguagePage
-description: Exclui os valores em um objeto userFlowLanguagePage .
+description: Exclui os valores em um objeto userFlowLanguagePage.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 041151af6dfe03728578bfc42b47bbfe5c422c5f
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: ce15fce0565a7e7fdeb704d645a177342c7ad17d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844897"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444613"
 ---
 # <a name="delete-userflowlanguagepage"></a>Excluir userFlowLanguagePage
 
 Namespace: microsoft.graph
 
-Exclui os valores em um [objeto userFlowLanguagePage](../resources/userflowlanguagepage.md) . Você só pode excluir os valores em uma overridesPage, que é usada para personalizar os valores mostrados para um usuário durante uma jornada do usuário definida por um fluxo de usuário.
+Exclui os valores em um [objeto userFlowLanguagePage.](../resources/userflowlanguagepage.md) Você só pode excluir os valores em um overridesPage, que é usado para personalizar os valores mostrados a um usuário durante uma jornada do usuário definida por um fluxo de usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -35,7 +35,7 @@ A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funç�
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para fazer referência ao conteúdo dentro do objeto, você deve usar `$value` . Isso retorna o conteúdo dentro do objeto e permite que você o consulte diretamente.
+Para fazer referência ao conteúdo dentro do objeto, você deve usar `$value` . Isso retorna o conteúdo dentro do objeto e permite que você o referencia diretamente.
 
 <!-- {
   "blockType": "ignored"

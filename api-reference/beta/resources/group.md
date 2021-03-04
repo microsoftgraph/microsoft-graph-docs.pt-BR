@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: ff8c3a7cb78479ff8a49be89c25f1013140a7dbd
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 8e30a69fb2345c2269286302f18d5d19776ea5aa
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177246"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443045"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -175,7 +175,8 @@ Veja o que cada valor da propriedade de **visibilidade** significa:
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |acceptedSenders|Coleção [directoryObject](directoryobject.md)|A lista de usuários ou grupos que têm permissão para criar eventos de calendário ou postagens nesse grupo. Se essa lista não estiver vazia, somente os usuários ou grupos listados aqui poderão fazer postagens.|
-|calendário|[calendar](calendar.md)|O calendário do grupo. Somente leitura.|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Representa as funções de aplicativo que um grupo recebeu para um aplicativo. |
+|calendar|[calendar](calendar.md)|O calendário do grupo. Somente leitura.|
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura.|
 |conversations|Coleção [conversation](conversation.md)|As conversas do grupo.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| O usuário (ou aplicativo) que criou o grupo. **Observação:** não definido se o usuário for um administrador. Apenas leitura.|

@@ -1,16 +1,16 @@
 ---
-title: Atualizar as ideias
+title: Atualizar itemInsights
 description: Atualizar propriedades do objeto itemInsightsSettings
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 9678cf4b389c4e0794fecd1616d9055dd2c9941a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bf7a661663779b618d1de191386294cdab5b915f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981711"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443815"
 ---
 # <a name="update-iteminsightssettings"></a>Atualizar itemInsightsSettings
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do recurso [itemInsightsSettings](../resources/iteminsightssettings.md) especificado.
+Atualizar propriedades do recurso [itemInsightsSettings](../resources/iteminsightssettings.md) especificado.
 
-Para saber como personalizar a privacidade do item insights para sua organização, confira [Personalizar a privacidade do insights](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0). 
+Para saber como personalizar a privacidade de insights de item para sua organização, consulte [personalizar a privacidade de insights.](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0) 
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,11 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadWrite |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
->**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha uma função de administrador global.
+>**Observação:** O uso de permissões delegadas para essa operação exige que o usuário inscreveu tenha uma função de administrador global.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -54,20 +54,20 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Booliano| `true` Se o item de organização insights estiver habilitado; `false` se o item de organização insights estiver desabilitado para todos os usuários sem exceções. O padrão é `true`. Opcional.|
-|disabledForGroup|String| A ID de um grupo do Azure AD, do qual as insights do item dos membros estão desabilitadas. O padrão é `empty`. Opcional.|
+|isEnabledInOrganization|Booliano| `true` se as percepções do item da organização estão habilitadas; `false` se as percepções do item da organização estão desabilitadas para todos os usuários sem exceções. O padrão é `true`. Opcional.|
+|disabledForGroup|String| A ID de um grupo do Azure AD, do qual as informações do item dos membros estão desabilitadas. O padrão é `empty`. Opcional.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [itemInsightsSettings](../resources/iteminsightssettings.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [itemInsightsSettings](../resources/iteminsightssettings.md) no corpo da resposta.
 
->**Observação:** Essa operação verifica a validade dos valores de Propriedade do recurso **itemInsightsSettings** especificado. Se a propriedade **disabledForGroup** estiver definida, essa operação não verifica a existência do grupo do Azure ad correspondente. Isso significa que, se você definir **disabledForGroup** como um grupo do Azure AD que não existe ou foi excluído posteriormente, essa operação não será capaz de identificar qualquer associação de grupo e desabilitar insights de item para qualquer usuário específico. Se **isEnabledInOrganization** estiver definido como `true` , a operação habilitará o insights para todos os usuários da organização. 
+>**Observação:** Esta operação verifica a validade dos valores de propriedade do **recurso itemInsightsSettings** especificado. Se a **propriedade disabledForGroup** estiver definida, essa operação não verificará a existência do Grupo do Azure AD correspondente. Isso significa que, se você definir **disabledForGroup** para um grupo do Azure AD que não existia ou foi excluído posteriormente, essa operação não poderá identificar nenhuma associação de grupo e desabilitar informações de item para usuários específicos. Se **isEnabledInOrganization** estiver definido como , a operação permitirá insights `true` para todos os usuários na organização. 
 
 ## <a name="example"></a>Exemplo 
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de solicitação de como o administrador atualiza a configuração de privacidade " **disabledForGroup** " para proibir a exibição de insights de item de usuários de um grupo específico do Azure AD.
+Aqui está um exemplo de solicitação sobre como o administrador atualiza a configuração de privacidade "**disabledForGroup**" para proibir a exibição de informações de item dos usuários de um grupo específico do Azure AD.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

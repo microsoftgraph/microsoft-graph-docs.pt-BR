@@ -1,16 +1,16 @@
 ---
 title: Listar UnifiedRoleAssignmentMultiple
-description: Recupere as propriedades e os relacionamentos do objeto unifiedRoleAssignmentMultiple.
+description: Recupere as propriedades e as relações do objeto unifiedRoleAssignmentMultiple.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ac53a5de9e2bc927e8798bda0315206bc4b19bdc
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 968e90bc659cdbdf2c654bb62c58e64ab250627f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154499"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444795"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Listar UnifiedRoleAssignmentMultiple
 
@@ -39,7 +39,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Você pode filtrar as `roleDefinitionId` `principalId` propriedades. A propriedade pode ser uma ID de objeto de função `roleDefinitionId` ou uma ID de objeto de modelo de função. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Você pode filtrar as `roleDefinitionId` propriedades `principalId` ou. A propriedade pode ser uma ID de objeto de função ou uma ID de objeto `roleDefinitionId` de modelo de função. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

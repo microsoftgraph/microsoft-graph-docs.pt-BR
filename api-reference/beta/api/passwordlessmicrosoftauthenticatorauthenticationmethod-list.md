@@ -1,32 +1,32 @@
 ---
 title: Listar passwordlessMicrosoftAuthenticatorAuthenticationMethods
-description: Recupere uma lista dos objetosMicrosoftAuthenticatorAuthenticationMethod sem senha e suas propriedades.
+description: Recupere uma lista dos objetosMicrosoftAuthenticatorAuthenticationMethod e suas propriedades.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e4947304335ff59839dda00b9da554961c266fbc
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 18a0e9e6961e97f2b6d9c709eff61676242417ab
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796665"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447770"
 ---
 # <a name="list-passwordlessmicrosoftauthenticatorauthenticationmethods-deprecated"></a>Listar passwordlessMicrosoftAuthenticatorAuthenticationMethods (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista dos objetos do método de login de telefone sem senha do [Microsoft Authenticator do](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) usuário e suas propriedades.
+Recupere uma lista dos objetos do método de Login de Telefone sem Senha do [Microsoft Authenticator e](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) suas propriedades.
 
 > [!CAUTION]
-> A API do método de login de telefone sem senha do Microsoft Authenticator foi preterida e interromperá o retorno dos resultados em 31 de dezembro de 2020. Use o novo Método [de Autenticação do Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
+> A API do método de login sem senha do Microsoft Authenticator Phone está preterida e interromperá o retorno dos resultados em 31 de dezembro de 2020. Use o novo [Método de Autenticação do Autenticador microsoft](../resources/microsoftAuthenticatorAuthenticationMethod.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="permissions-acting-on-self"></a>Permissões agindo por si só
+### <a name="permissions-acting-on-self"></a>Permissões agindo em si mesmo
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
@@ -42,11 +42,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administração global
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+* Administrador global
 * Leitor global
 * Administrador de autenticação privilegiada
-* Administrador de autenticação (vê apenas números de telefone com máscara)
+* Administrador de autenticação (apenas vê números de telefone mascarados)
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -60,7 +60,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenti
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -72,7 +72,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetosMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) sem senha no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetosMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

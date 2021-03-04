@@ -3,38 +3,38 @@ title: Criar organizationalBrandingProperties
 description: Criar identidade visual da organização.
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: adf9a1e6b3f0bb01cbe028b27822b139d736d42e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 824f8344666f07376120c84877f35aacbe225b79
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524614"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447840"
 ---
 # <a name="create-organizationalbrandingproperties"></a>Criar organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) . Isso cria a identidade visual padrão e, opcionalmente, uma identidade visual localizada ao mesmo tempo. A identidade visual padrão é carregada quando um conjunto de identidade visual localizado não é configurado para o idioma do navegador do usuário.
+Crie um [objeto organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md) Isso cria a identidade visual padrão e, opcionalmente, uma identidade visual localizada ao mesmo tempo. A identidade visual padrão é carregada quando um conjunto de identidade visual localizado não é configurado para o idioma do navegador do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Uma identidade visual é criada para uma organização, se ainda não existir uma, usando PUT ou PATCH.
+Uma identidade visual é criada para uma organização, se ainda não existir, usando PUT ou PATCH.
 
-Se a identidade visual já estiver configurada, PUT substituirá todos os valores existentes, independentemente do que está no corpo da solicitação. O PATCH só overite os valores que estão incluídos no corpo da solicitação, deixando os valores não incluídos inalterados.
+Se a identidade visual já estiver configurada, PUT substituirá todos os valores existentes independentemente do que está no corpo da solicitação. PATCH só sobressá os valores incluídos no corpo da solicitação, deixando os valores não incluídos inalterados.
 
-A propriedade **ID** é ignorada em Put/patch para o singleton/branding. Se Content-Language não for especificado, a identidade visual padrão será criada, o que corresponde a uma **ID** de `und` . Se o idioma de conteúdo for especificado, a identidade visual será criada para essa localidade.
+A **propriedade id** é ignorada em PUT/PATCH no singleton /branding. Se Content-Language não for especificado, a identidade visual padrão será criada, o que corresponde a **uma id** de `und` . Se Content-Language for especificado, a identidade visual será criada para essa localidade.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -52,22 +52,22 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 |:----------|:----------|
 | Autorização | {token} de portador. Obrigatório. |
 | Content-Type  | application/json. Obrigatório.  |
-| Conteúdo-idioma  | LCID. Opcional.  |
+| Content-Language  | Localidade. Opcional.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|CorDoFundo|String|Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. É recomendável usar a cor principal do logotipo de faixa ou a cor da sua organização aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF).|
-|backgroundImage|Stream|Imagem que aparece como plano de fundo da página de entrada. . png ou. jpg não é maior do que 1920 x 1080 e menor do que 300kb. Uma imagem menor reduzirá os requisitos de largura de banda e fará com que as cargas de página mais tenham mais desempenho.|
-|bannerLogo|Stream|Uma versão de banner do logotipo da empresa que aparece aparece na página de entrada. . png ou. jpg não maior do que 36x245px. Recomendamos usar uma imagem transparente sem preenchimento em torno do logotipo.|
-|signInPageText|String|Texto que aparece na parte inferior da caixa de entrada. Você pode usá-lo para comunicar informações adicionais, como o número de telefone para o suporte técnico ou uma instrução legal. Este texto deve ser Unicode e não exceder 1024 caracteres.|
-|squareLogo|Stream|Versão quadrada do logotipo da sua empresa. Isso aparece nas experiências de uso (OOBE) do Windows 10 e quando o Windows AutoPilot está habilitado para implantação. . png ou. jpg não maior do que 240x240px e não mais do que 10 KB em tamanho. Recomendamos usar uma imagem transparente sem preenchimento em torno do logotipo.|
-|usernameHintText|String|Cadeia de caracteres que mostra como a dica na caixa de texto username na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres.|
+|backgroundColor|String|Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. A cor primária do logotipo da faixa ou da cor da sua organização é recomendada para ser usada aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF).|
+|backgroundImage|Stream|Imagem que aparece como o plano de fundo da página de logom. .png ou .jpg não maior que 1920x1080 e menor que 300kb. Uma imagem menor reduzirá os requisitos de largura de banda e tornará as cargas de página mais performant.|
+|bannerLogo|Stream|Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. .png ou .jpg não maior que 36x245px. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
+|signInPageText|String|Texto que aparece na parte inferior da caixa de login. Você pode usar isso para comunicar informações adicionais, como o número de telefone para o seu help desk ou uma declaração legal. Este texto deve ser Unicode e não exceder 1024 caracteres.|
+|squareLogo|Stream|Versão quadrada do logotipo da sua empresa. Isso aparece nas experiências OOBE (windows 10 out-of-box) e quando o Windows Autopilot está habilitado para implantação. .png ou .jpg não maior do que 240x240px e no máximo 10kb de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
+|usernameHintText|String|Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e o objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) criado no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e o objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) criado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -145,7 +145,7 @@ Content-Language: en-US
 }
 ```
 
-Nesse caso, o objeto de identidade visual padrão é definido. A identidade visual localizada para en-US também é definida devido ao idioma do conteúdo no cabeçalho, mesmo que o conjunto de marcas en-US não seja retornado na resposta. Observe que o idioma de conteúdo na solicitação é opcional e, se não estiver presente, só definirá a identidade visual padrão.
+Nesse caso, o objeto de identidade visual padrão é definido. A identidade visual localizada para en-US também é definida devido ao Content-Language no header, mesmo que o conjunto de identidade visual en-US não seja retornado na resposta. Observe que Content-Language na solicitação é opcional e, se não estiver presente, definirá apenas a identidade visual padrão.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

@@ -1,16 +1,16 @@
 ---
 title: Obter unifiedRoleAssignment
-description: Recupere as propriedades e os relacionamentos de um objeto unifiedRoleAssignment.
+description: Recupere as propriedades e as relações de um objeto unifiedRoleAssignment.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dda763b8b50a0a02e1bd826739095a81e9d85b22
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d3900e716926ca200a82ae56eee19819b8c2e80b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978910"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444872"
 ---
 # <a name="get-unifiedroleassignment"></a>Obter unifiedRoleAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
+Recupere as propriedades e as relações de um [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
+|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,11 +54,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1--get-details-of-a-role-assignment"></a>Exemplo 1: obter detalhes de uma atribuição de função
+### <a name="example-1--get-details-of-a-role-assignment"></a>Exemplo 1 : Obter detalhes de uma atribuição de função
 
 #### <a name="request"></a>Solicitação
 
@@ -118,11 +118,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-details-of-a-role-assignment-with-expand"></a>Exemplo 2: obter detalhes de uma atribuição de função com `$expand`
+### <a name="example-2-get-details-of-a-role-assignment-with-expand"></a>Exemplo 2: Obter detalhes de uma atribuição de função com `$expand`
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação com o `$expand` parâmetro de consulta.
+A seguir, um exemplo da solicitação com o `$expand` parâmetro de consulta.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

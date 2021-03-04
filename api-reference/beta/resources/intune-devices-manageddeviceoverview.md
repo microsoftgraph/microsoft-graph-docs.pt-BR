@@ -5,24 +5,24 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e2a0345b19c2c2954b0bce231ca05d1bc2d2adcb
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2e519f3fd5653e1e3512da8ee58d369df03cc69c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158489"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444186"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Tipo de recurso managedDeviceOverview
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Dados de resumo de dispositivos gerenciados
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Ler propriedades e relações de objetos de [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).|
@@ -37,8 +37,8 @@ Dados de resumo de dispositivos gerenciados
 |dualEnrolledDeviceCount|Int32|O número de dispositivos registrados no MDM e no EAS|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|Resumo do sistema operacional do dispositivo.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Distribuição do Estado de acesso do Exchange no Intune|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Models and Manufactures manufactureadata for managed devices in the account|
-|lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da visão geral do dispositivo|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Modelos e Manufaturas de carmadata para dispositivos gerenciados na conta|
+|lastModifiedDateTime|DateTimeOffset|Última data de modificação da visão geral do dispositivo|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -73,7 +73,8 @@ Veja a seguir uma representação JSON do recurso.
     "androidCorporateWorkProfileCount": 1024,
     "configMgrDeviceCount": 1024,
     "aospUserlessCount": 1024,
-    "aospUserAssociatedCount": 1024
+    "aospUserAssociatedCount": 1024,
+    "linuxCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

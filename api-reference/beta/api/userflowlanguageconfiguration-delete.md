@@ -3,24 +3,24 @@ title: Excluir userFlowLanguageConfiguration
 description: Exclui um objeto userFlowLanguageConfiguration de um fluxo de usuário B2C.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4b9a59c8786fa27b458fd6f1236a30e33f1fb355
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: d148db0712ffbfb9ca41ba1c62e13c90c852cbc6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844946"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444746"
 ---
 # <a name="delete-userflowlanguageconfiguration"></a>Excluir userFlowLanguageConfiguration
 
 Namespace: microsoft.graph
 
-Exclui um [objeto userFlowLanguageConfiguration de](../resources/userflowlanguageconfiguration.md) um fluxo de usuário do [Azure AD B2C.](../resources/b2cidentityuserflow.md)
+Exclui um [objeto userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) de um fluxo de [usuário do Azure AD B2C.](../resources/b2cidentityuserflow.md)
 
-**Observação:** Você não pode excluir idiomas de um fluxo de usuário do [Azure Active Directory.](../resources/b2xidentityuserflow.md)
+**Observação:** Não é possível excluir idiomas de um fluxo de usuário do [Azure Active Directory.](../resources/b2xidentityuserflow.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

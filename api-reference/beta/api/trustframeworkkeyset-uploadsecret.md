@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: uploadSecret'
-description: Carregar um segredo em um conjunto de chaves.
+description: Carregue um segredo em um keyset.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 037792b26464fe0ce5644b33d38e41d1f44de596
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b008e1ae41d61fb14dbd80e5a820208355bb670d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972170"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444970"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet: uploadSecret
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Carregar um segredo de texto sem formatação em um [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Exemplos de segredos são segredos do aplicativo no Azure Active Directory, Google, Facebook ou qualquer outro provedor de identidade. o método his retorna [trustFrameworkKey](../resources/trustframeworkkey.md).
+Carregue um segredo de texto simples em [um trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Exemplos de segredos são segredos de aplicativos no Azure Active Directory, Google, Facebook ou qualquer outro provedor de identidade. seu método retorna [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet. ReadWrite. All |
+| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,14 +51,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Use|String|Semelhante à propriedade **use** de **trustFrameworkKey**.|
-|f|String|Semelhante à propriedade **k** de **trustFrameworkKey**. Este é o campo que é usado para enviar o segredo.|
-|nbf|Int64|Semelhante à propriedade **NBF** de **trustFrameworkKey**.|
+|use|String|Semelhante à propriedade **use** de **trustFrameworkKey**.|
+|k|String|Semelhante à propriedade **k** de **trustFrameworkKey**. Este é o campo usado para enviar o segredo.|
+|nbf|Int64|Semelhante à propriedade **nbf** de **trustFrameworkKey**.|
 |exp|Int64|Semelhante à propriedade **exp** de **trustFrameworkKey**.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

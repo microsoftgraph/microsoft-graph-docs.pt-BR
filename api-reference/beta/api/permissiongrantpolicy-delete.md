@@ -1,16 +1,16 @@
 ---
 title: Excluir permissionGrantPolicy
-description: Excluir um objeto permissionGrantPolicy.
+description: Exclua um objeto permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3a554e5e8a68e30937911159ec8c0498ade41dcc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a2e6791392330b8b2d2b59a61e2e5d84098dc9d8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977939"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447681"
 ---
 # <a name="delete-permissiongrantpolicy"></a>Excluir permissionGrantPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [permissionGrantPolicy](../resources/permissiongrantpolicy.md) .
+[Exclua um objeto permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.PermissionGrant |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.ReadWrite.PermissionGrant |
+| Aplicativo                            | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

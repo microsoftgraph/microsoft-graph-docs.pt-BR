@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: e386f225f8b44bc5365598845694c9c4eb4aafe3
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 99452fa19be003bbd4edf02dbb814a8f685169a9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461171"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444762"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -41,9 +41,6 @@ Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../
 ```http
 GET /me/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-
-GET /me/calendarGroup/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.

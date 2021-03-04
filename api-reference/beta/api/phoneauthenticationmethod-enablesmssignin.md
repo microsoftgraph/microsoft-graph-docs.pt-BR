@@ -1,16 +1,16 @@
 ---
 title: 'phoneAuthenticationMethod: enableSmsSignIn'
-description: Habilitar a login sms para um telefone celular.
+description: Habilitar a assinatura SMS para um telefone celular.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e2c8087005f65ac74a202ea43d90767172267a46
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 149ea3f8975ce281f2c5059df46cee761576bb4f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796602"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443633"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod: enableSmsSignIn
 
@@ -21,14 +21,14 @@ Namespace: microsoft.graph
 Habilitar a login sms para um número `mobile` de telefone existente. Para ser habilitado com êxito:
 
 * O telefone deve ter `"phoneType": "mobile"` .
-* O telefone deve ser exclusivo no sistema de login SMS (ninguém mais pode usar esse número).
-* O usuário deve estar habilitado para entrar por SMS na política [de métodos de autenticação.](/azure/active-directory/authentication/concept-authentication-methods)
+* O telefone deve ser exclusivo no sistema de login SMS (ninguém mais também pode usar esse número).
+* O usuário deve estar habilitado para entrar SMS na política [de métodos de](/azure/active-directory/authentication/concept-authentication-methods) autenticação.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="permissions-acting-on-self"></a>Permissões agindo por si só
+### <a name="permissions-acting-on-self"></a>Permissões agindo em si mesmo
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
@@ -44,8 +44,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administração global
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+* Administrador global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 

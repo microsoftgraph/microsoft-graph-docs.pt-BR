@@ -1,24 +1,24 @@
 ---
-title: 'orgContact: listar memberOf'
-description: Recupere a lista de grupos e unidades administrativas dos quais o contato é membro.
+title: 'orgContact: List memberOf'
+description: Recupere a lista de grupos e unidades administrativas de que o contato é membro.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2bbc70c849be34eb1be6b8c09a3f4d6c84c95b50
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 59de08584d0f516bb7e9b4a031b3a2bceb23ddf9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979009"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447783"
 ---
-# <a name="orgcontact-list-memberof"></a>orgContact: listar memberOf
+# <a name="orgcontact-list-memberof"></a>orgContact: List memberOf
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de grupos e unidades administrativas dos quais o contato é membro.
+Recupere a lista de grupos e unidades administrativas de que o contato é membro.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

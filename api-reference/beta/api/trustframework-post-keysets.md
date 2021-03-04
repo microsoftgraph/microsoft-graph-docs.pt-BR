@@ -1,16 +1,16 @@
 ---
 title: Criar trustFrameworkKeySet
-description: Criar um novo objeto **trustFrameworkKeySet** .
+description: Crie um novo **objeto trustFrameworkKeySet.**
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c00701e2a6f1e370f2f646c225c2154a83441aa9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c4295de0e6a6e361a28932fa4755b35aca80b64b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971826"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444977"
 ---
 # <a name="create-trustframeworkkeyset"></a>Criar trustFrameworkKeySet
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). A ID do **trustFrameworkKeySet** é esperada na solicitação Create; no entanto, ele pode ser modificado pelo serviço. O ID modificado estará disponível na resposta e no cabeçalho do local.
+Crie um novo [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). A ID do **trustFrameworkKeySet** é esperada na solicitação de criação; no entanto, ele pode ser modificado pelo serviço. A ID modificada estará disponível na resposta e no header de local.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All   |
+| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All   |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet. ReadWrite. All    |
+| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All    |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,16 +47,16 @@ POST /trustFramework/keySets
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto trustFrameworkKeySet.](../resources/trustframeworkkeyset.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta, um cabeçalho de local para o objeto recém-criado e um novo objeto [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta, um header de local para o objeto recém-criado e um novo `201 Created` [objeto trustFrameworkKeySet](../resources/trustframeworkkeyset.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-an-empty-keyset"></a>Exemplo 1: criar um conjunto de chaves vazio
-Essa é uma das operações mais úteis. Primeiro, você cria um conjunto de chaves vazio. Em seguida, no novo conjunto de chaves, você pode gerar uma chave, carregar um segredo manual e carregar um certificado ou uma chave PKCS12. 
+### <a name="example-1-create-an-empty-keyset"></a>Exemplo 1: Criar um keyset vazio
+Esta é uma das operações mais úteis. Primeiro, você cria um keyset vazio. Em seguida, no novo keyset, você pode gerar uma chave, carregar um segredo manual e carregar um certificado ou uma tecla PKCS12. 
 
 #### <a name="request"></a>Solicitação
 
@@ -118,9 +118,9 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
 }
 ```
 
-### <a name="example-2-create-a-keyset-with-a-key"></a>Exemplo 2: criar um conjunto de chaves com uma chave
+### <a name="example-2-create-a-keyset-with-a-key"></a>Exemplo 2: Criar um keyset com uma chave
 
-Este é um cenário avançado onde você precisa saber o formato de chave da Web JSON compatível com [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) da chave.
+Este é um cenário avançado em que você precisa saber o formato JSON Web Key compatível com [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) da chave.
 
 #### <a name="request"></a>Solicitação
 

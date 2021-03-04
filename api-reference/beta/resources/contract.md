@@ -1,41 +1,41 @@
 ---
-title: Tipo de recurso Contract
-description: Representa uma parceria existente que o locatário do parceiro tem com um locatário do cliente.
+title: Tipo de recurso de contrato
+description: Representa uma parceria existente que o locatário parceiro tem com um locatário do cliente.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 7727309f146d434f817d1797a782813f136311c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b09d773a740a82b8424a7699f959ddb38d78e1cf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016811"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444252"
 ---
-# <a name="contract-resource-type"></a>Tipo de recurso Contract
+# <a name="contract-resource-type"></a>Tipo de recurso de contrato
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma parceria existente que o locatário do parceiro tem com um locatário do cliente.
+Representa uma parceria existente que o locatário parceiro tem com um locatário do cliente.
 
-> **Importante:** Existe somente nos locatários do parceiro. Os locatários de parceiros são locatários do Azure AD que pertencem a parceiros da Microsoft que fazem parte do [provedor de soluções de nuvem da Microsoft](https://partnercenter.microsoft.com/en-us/partner/programs), da distribuição do Office 365 ou dos programas de parceria do Microsoft Advisor.
+> **Importante:** Existe apenas em locatários parceiros. Os locatários de parceiros são locatários do Azure AD que pertencem aos parceiros da Microsoft que fazem parte do [Microsoft Cloud Solution Provider](https://partnercenter.microsoft.com/en-us/partner/programs), do Office 365 Syndication ou dos programas de parceiros do Microsoft Advisor.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método   | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Obter contrato](../api/contract-get.md) | Contrato |Ler as propriedades de um objeto Contract específico. |
+|[Obter contrato](../api/contract-get.md) | Contrato |Ler propriedades de um objeto de contrato específico. |
 |[Listar contratos](../api/contract-list.md) | Coleção Contract | Lista de contratos no locatário do parceiro. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|ContractType|String|Tipo de contrato.<br><br>Os valores possíveis são:<br> *SyndicationPartner* -parceiro que revende exclusivamente e gerencia o O365 e o Intune para este cliente. Eles revendem e dão suporte a seus clientes.<br> *BreadthPartner* -o parceiro tem a capacidade de fornecer suporte administrativo para esse cliente. No entanto, o parceiro não tem permissão para revender para o cliente.<br>*ResellerPartner* -Partner que é semelhante a um parceiro de distribuição, exceto pelo fato de que o parceiro não tem acesso exclusivo a um locatário. No caso de distribuição, o cliente não pode comprar assinaturas diretas adicionais da Microsoft ou de outros parceiros.|
-|Box|Guid|O identificador exclusivo do locatário do cliente referido por esta parceria. Corresponde à propriedade ID do recurso de organização do locatário do cliente. |
-|DefaultDomainName|String|Uma cópia do nome de domínio padrão do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de domínio padrão do locatário do cliente for alterado.|
-|displayName|String|Uma cópia do nome de exibição do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de exibição do locatário do cliente for alterado.|
+|contractType|String|Tipo de contrato.<br><br>Os valores possíveis são:<br> *SyndicationPartner* - Parceiro que revende e gerencia exclusivamente o O365 e o Intune para esse cliente. Eles revendem e suportam seus clientes.<br> *BreadthPartner* - O parceiro tem a capacidade de fornecer suporte administrativo para esse cliente. No entanto, o parceiro não tem permissão para revender para o cliente.<br>*ResellerPartner* - Parceiro semelhante a um parceiro de sindicalidade, exceto que o parceiro não tem acesso exclusivo a um locatário. No caso de sindicalização, o cliente não pode comprar assinaturas diretas adicionais da Microsoft ou de outros parceiros.|
+|customerId|Guid|O identificador exclusivo do locatário do cliente referenciado por essa parceria. Corresponde à propriedade id do recurso de organização do locatário do cliente. |
+|defaultDomainName|String|Uma cópia do nome de domínio padrão do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de domínio padrão do locatário do cliente mudar.|
+|displayName|String|Uma cópia do nome de exibição do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de exibição do locatário do cliente mudar.|
 |id|String| O identificador exclusivo da parceria. Chave, somente leitura |
 
 ## <a name="relationships"></a>Relações

@@ -1,24 +1,24 @@
 ---
-title: Listar overridesPages
+title: Lista substituiPages
 description: Obter os recursos userFlowLanguagePage da propriedade de navegação overridesPages.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1b642f412cd02bd387b8d63c61d19721882ad6f2
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 130710b0c1be9ad2b46a73aeeb80f319c5d4adde
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844932"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444655"
 ---
-# <a name="list-overridespages"></a>Listar overridesPages
+# <a name="list-overridespages"></a>Lista substituiPages
 
 Namespace: microsoft.graph
 
-Obter os recursos userFlowLanguagePage da propriedade de navegação overridesPages. Essas páginas são usadas para personalizar os valores mostrados para o usuário durante uma jornada do usuário em um fluxo de usuário.
+Obter os recursos userFlowLanguagePage da propriedade de navegação overridesPages. Essas páginas são usadas para personalizar os valores mostrados ao usuário durante uma jornada do usuário em um fluxo de usuários.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

@@ -1,16 +1,16 @@
 ---
 title: 'phoneAuthenticationMethod: disableSmsSignIn'
-description: Desabilitar a login sms para um telefone celular
+description: Desabilitar a login do SMS para um telefone celular
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5e4440c5fac4a774b264b068a6e1e17d3d7c7d83
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 235257c4df9c24dec33aad15e11b2318e0fb8e30
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796630"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447682"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod: disableSmsSignIn
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Desabilite a login sms para um número `mobile` de telefone existente. 
+Desabilite a login do SMS para um número `mobile` de telefone existente. 
 
->**Observação:** O número não estará mais disponível para a inscrição por SMS, o que pode impedir que o usuário entre.
+>**Observação:** O número não estará mais disponível para a assinatura sms, o que pode impedir que o usuário entre.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="permissions-acting-on-self"></a>Permissões agindo por si só
+### <a name="permissions-acting-on-self"></a>Permissões agindo em si mesmo
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
@@ -42,8 +42,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administração global
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+* Administrador global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 

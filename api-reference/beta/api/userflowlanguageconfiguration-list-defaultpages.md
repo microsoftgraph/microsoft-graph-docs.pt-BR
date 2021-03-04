@@ -3,14 +3,14 @@ title: Listar defaultPages
 description: Obter os recursos userFlowLanguagePage da propriedade de navegação defaultPages.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5339bebc87223fb6ca055fa0c1801bdffbd3edc1
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: f57df2bb3a1ff5b16517b291ea756c0ee420dc7a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844939"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444669"
 ---
 # <a name="list-defaultpages"></a>Listar defaultPages
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obter os recursos userFlowLanguagePage da propriedade de navegação defaultPages. Eles contêm os valores mostrados para o usuário em uma jornada de usuário padrão de um fluxo de usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

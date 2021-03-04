@@ -1,16 +1,16 @@
 ---
 title: Excluir trustFrameworkPolicy
-description: Esta operação exclui um objeto trustFrameworkPolicy existente de um locatário do Azure AD B2C.
+description: Essa operação exclui um objeto trustFrameworkPolicy existente de um locatário do Azure AD B2C.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bfb69093b6ace4009285d26ef8b6df2e763c3ccf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ebca87f50af1d4db6c4b6053bcabcaf9aa672d3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968579"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444949"
 ---
 # <a name="delete-trustframeworkpolicy"></a>Excluir trustFrameworkPolicy
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application|Policy.ReadWrite.TrustFramework|
+|Aplicativo|Policy.ReadWrite.TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
@@ -55,7 +55,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir exclui um **trustFrameworkPolicy**.
+O exemplo a seguir exclui **um trustFrameworkPolicy**.
 
 ##### <a name="request"></a>Solicitação
 

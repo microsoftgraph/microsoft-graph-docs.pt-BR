@@ -4,14 +4,14 @@ description: O recurso site fornece metadados e relações para um site do Share
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 152100311e85dc905e14ca6f434a9a9fbe1d87fe
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 587014aa0c9dbe4c05c0e3b946c3f6e44b7cb821
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155836"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442784"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -101,8 +101,9 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 | **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
 | **lists**         | Collection([list][])             | O conjunto de listas neste site.
 | **pages**         | Collection([sitePage][])         | O conjunto de páginas na lista SitePages no site.
-| **permissões**   | Coleção([permissão][])         | As permissões associadas ao site. Anulável.
+| **permissões**   | Coleção ([permissão][])         | As permissões associadas ao site. Anulável.
 | **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
+| **externalColumns**     | Collection([columnDefinition][])  | A coleção de definições de coluna disponíveis no site que são referenciadas nos sites na hierarquia pai do site atual.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -158,7 +159,7 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-
+  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   /* inherited from baseItem */
   "name": "string",
   "createdDateTime": "datetime",

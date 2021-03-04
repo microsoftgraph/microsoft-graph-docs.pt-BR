@@ -1,24 +1,24 @@
 ---
-title: 'orgContact: list directReports'
-description: Obter os subordinados diretos do contato.
+title: 'orgContact: listar directReports'
+description: Obter os relatórios diretos do contato.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b5c06596c273807c53f49bd36f273f62fc96e833
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0a8de1f8b16ccac69a865d3c09f3d5eebdcc46c5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975166"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447782"
 ---
-# <a name="orgcontact-list-directreports"></a>orgContact: list directReports
+# <a name="orgcontact-list-directreports"></a>orgContact: listar directReports
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter os subordinados diretos do contato.
+Obter os relatórios diretos do contato.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

@@ -1,16 +1,16 @@
 ---
-title: Obter o item de histórico de riskyUser
+title: Obter item de histórico de riskyUser
 description: Obter um item de histórico de um objeto riskyUser.
 localization_priority: Normal
 author: cloudhandler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9f2d1f7d652b16066f42e3145021036d3855a72c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 78eb02bb7667625ef71aba1a5ad5f3d2e3fc252f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977609"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443563"
 ---
 # <a name="get-riskyuserhistoryitem"></a>Obter riskyUserHistoryItem
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter um objeto [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) de um [riskyUser](../resources/riskyuser.md).
+Obter um [objeto riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) de [um riskyUser](../resources/riskyuser.md).
 
->**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Identityriskuser. Read. All, IdentityRiskUser. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Identityriskuser. Read. All, IdentityRiskUser. ReadWrite. All |
+|Aplicativo | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,10 +49,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-get-history-of-a-risky-user"></a>Exemplo 1: obter o histórico de um usuário arriscado
+### <a name="example-1-get-history-of-a-risky-user"></a>Exemplo 1: obter histórico de um usuário arriscado
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
@@ -114,7 +114,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-history-of-a-risky-user"></a>Exemplo 2: obter o histórico de um usuário arriscado
+### <a name="example-2-get-history-of-a-risky-user"></a>Exemplo 2: Obter histórico de um usuário arriscado
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
