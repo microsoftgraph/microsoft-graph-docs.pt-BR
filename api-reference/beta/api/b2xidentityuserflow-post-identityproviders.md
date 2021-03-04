@@ -1,41 +1,41 @@
 ---
-title: Adicionar identityprovider a um b2xIdentityUserFlow
-description: Adicionar identityprovider em um b2xIdentityUserFlow.
+title: Adicionar identityProvider a um b2xIdentityUserFlow
+description: Adicione identityProvider em um b2xIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ec56d34d2068ce30a856d740144a744df0446ab2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: a1d9e3da3610497e5cb7b85bccb34fdc7f0ab21a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961040"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438047"
 ---
-# <a name="add-identityprovider-to-a-b2xidentityuserflow"></a><span data-ttu-id="87ac7-103">Adicionar identityprovider a um b2xIdentityUserFlow</span><span class="sxs-lookup"><span data-stu-id="87ac7-103">Add identityProvider to a b2xIdentityUserFlow</span></span>
+# <a name="add-identityprovider-to-a-b2xidentityuserflow"></a><span data-ttu-id="90d96-103">Adicionar identityProvider a um b2xIdentityUserFlow</span><span class="sxs-lookup"><span data-stu-id="90d96-103">Add identityProvider to a b2xIdentityUserFlow</span></span>
 
-<span data-ttu-id="87ac7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="87ac7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="90d96-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="90d96-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="87ac7-105">Atualize os provedores de identidade em um objeto [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) .</span><span class="sxs-lookup"><span data-stu-id="87ac7-105">Update the identity providers in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.</span></span>
+<span data-ttu-id="90d96-105">Atualize os provedores de identidade em um [objeto b2xIdentityUserFlow.](../resources/b2xidentityuserflow.md)</span><span class="sxs-lookup"><span data-stu-id="90d96-105">Update the identity providers in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="87ac7-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="87ac7-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="90d96-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="90d96-106">Permissions</span></span>
 
-<span data-ttu-id="87ac7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="87ac7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="90d96-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="90d96-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="87ac7-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="87ac7-109">Permission type</span></span>      | <span data-ttu-id="87ac7-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="87ac7-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="90d96-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="90d96-109">Permission type</span></span>      | <span data-ttu-id="90d96-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="90d96-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="87ac7-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="87ac7-111">Delegated (work or school account)</span></span>|<span data-ttu-id="87ac7-112">IdentityUserFlow.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87ac7-112">IdentityUserFlow.ReadWrite.All</span></span>|
-|<span data-ttu-id="87ac7-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="87ac7-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="87ac7-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="87ac7-114">Not supported.</span></span>|
-|<span data-ttu-id="87ac7-115">Application</span><span class="sxs-lookup"><span data-stu-id="87ac7-115">Application</span></span>| <span data-ttu-id="87ac7-116">IdentityUserFlow.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87ac7-116">IdentityUserFlow.ReadWrite.All</span></span>|
+|<span data-ttu-id="90d96-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="90d96-111">Delegated (work or school account)</span></span>|<span data-ttu-id="90d96-112">IdentityUserFlow.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="90d96-112">IdentityUserFlow.ReadWrite.All</span></span>|
+|<span data-ttu-id="90d96-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="90d96-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="90d96-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="90d96-114">Not supported.</span></span>|
+|<span data-ttu-id="90d96-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="90d96-115">Application</span></span>| <span data-ttu-id="90d96-116">IdentityUserFlow.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="90d96-116">IdentityUserFlow.ReadWrite.All</span></span>|
 
-<span data-ttu-id="87ac7-117">A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:</span><span class="sxs-lookup"><span data-stu-id="87ac7-117">The work or school account needs to belong to one of the following roles:</span></span>
+<span data-ttu-id="90d96-117">A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:</span><span class="sxs-lookup"><span data-stu-id="90d96-117">The work or school account needs to belong to one of the following roles:</span></span>
 
-* <span data-ttu-id="87ac7-118">Administrador global</span><span class="sxs-lookup"><span data-stu-id="87ac7-118">Global administrator</span></span>
-* <span data-ttu-id="87ac7-119">Administrador de fluxo de usuário de identidade externa</span><span class="sxs-lookup"><span data-stu-id="87ac7-119">External Identity User Flow administrator</span></span>
+* <span data-ttu-id="90d96-118">Administrador global</span><span class="sxs-lookup"><span data-stu-id="90d96-118">Global administrator</span></span>
+* <span data-ttu-id="90d96-119">Administrador de Fluxo de Usuário de Identidade Externa</span><span class="sxs-lookup"><span data-stu-id="90d96-119">External Identity User Flow administrator</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="87ac7-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="87ac7-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="90d96-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="90d96-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,29 +43,29 @@ ms.locfileid: "48961040"
 PATCH /b2xUserFlows/{id}/identityProviders/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="87ac7-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="87ac7-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="90d96-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="90d96-121">Request headers</span></span>
 
-|<span data-ttu-id="87ac7-122">Nome</span><span class="sxs-lookup"><span data-stu-id="87ac7-122">Name</span></span>|<span data-ttu-id="87ac7-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="87ac7-123">Description</span></span>|
+|<span data-ttu-id="90d96-122">Nome</span><span class="sxs-lookup"><span data-stu-id="90d96-122">Name</span></span>|<span data-ttu-id="90d96-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="90d96-123">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="87ac7-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="87ac7-124">Authorization</span></span>|<span data-ttu-id="87ac7-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="87ac7-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="87ac7-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="87ac7-127">Content-Type</span></span>|<span data-ttu-id="87ac7-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="87ac7-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="90d96-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="90d96-124">Authorization</span></span>|<span data-ttu-id="90d96-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="90d96-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="90d96-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="90d96-127">Content-Type</span></span>|<span data-ttu-id="90d96-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="90d96-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="87ac7-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="87ac7-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="90d96-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="90d96-130">Request body</span></span>
 
-<span data-ttu-id="87ac7-131">No corpo da solicitação, forneça uma representação JSON do `id` [identityprovider](../resources/identityprovider.md) que você deseja adicionar.</span><span class="sxs-lookup"><span data-stu-id="87ac7-131">In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) you want to add.</span></span> <span data-ttu-id="87ac7-132">Para os fluxos de usuário de inscrição de autoatendimento, os valores podem ser `Google-OAUTH` ou `Facebook-OAUTH` .</span><span class="sxs-lookup"><span data-stu-id="87ac7-132">For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.</span></span>
+<span data-ttu-id="90d96-131">No corpo da solicitação, forneça uma representação JSON da `id` [identidadeProvider](../resources/identityprovider.md) que você deseja adicionar.</span><span class="sxs-lookup"><span data-stu-id="90d96-131">In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) you want to add.</span></span> <span data-ttu-id="90d96-132">Para fluxos de usuários de autoatendados, os valores podem ser `Google-OAUTH` ou `Facebook-OAUTH` .</span><span class="sxs-lookup"><span data-stu-id="90d96-132">For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="87ac7-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="87ac7-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="90d96-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="90d96-133">Response</span></span>
 
-<span data-ttu-id="87ac7-134">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="87ac7-134">If successful, this method returns a `204 No Content` response code.</span></span> <span data-ttu-id="87ac7-135">Caso não consiga, um `4xx` erro será retornado com detalhes específicos.</span><span class="sxs-lookup"><span data-stu-id="87ac7-135">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
+<span data-ttu-id="90d96-134">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="90d96-134">If successful, this method returns a `204 No Content` response code.</span></span> <span data-ttu-id="90d96-135">Caso não consiga, um `4xx` erro será retornado com detalhes específicos.</span><span class="sxs-lookup"><span data-stu-id="90d96-135">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
 
-## <a name="example"></a><span data-ttu-id="87ac7-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="87ac7-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="90d96-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="90d96-136">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="87ac7-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="87ac7-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="90d96-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="90d96-137">Request</span></span>
 
-<span data-ttu-id="87ac7-138">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="87ac7-138">The following is an example of the request.</span></span>
+<span data-ttu-id="90d96-138">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="90d96-138">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="87ac7-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="87ac7-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="90d96-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="90d96-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_b2xuserflows_identityprovider"
@@ -81,28 +81,28 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="87ac7-140">C#</span><span class="sxs-lookup"><span data-stu-id="87ac7-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="90d96-140">C#</span><span class="sxs-lookup"><span data-stu-id="90d96-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-b2xuserflows-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="87ac7-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="87ac7-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="90d96-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="90d96-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-b2xuserflows-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="87ac7-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="87ac7-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="90d96-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="90d96-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-b2xuserflows-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="87ac7-143">Java</span><span class="sxs-lookup"><span data-stu-id="87ac7-143">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="90d96-143">Java</span><span class="sxs-lookup"><span data-stu-id="90d96-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-b2xuserflows-identityprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="87ac7-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="87ac7-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="90d96-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="90d96-144">Response</span></span>
 
-<span data-ttu-id="87ac7-145">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="87ac7-145">The following is an example of the response.</span></span>
+<span data-ttu-id="90d96-145">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="90d96-145">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

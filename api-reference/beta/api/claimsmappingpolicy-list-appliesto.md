@@ -1,36 +1,36 @@
 ---
-title: Listar se aplica
-description: Obtenha uma lista de objetos directoryobject aos quais um objeto claimsMappingPolicy foi aplicado.
+title: Lista appliesTo
+description: Obter uma lista de objetos directoryObject aos qual um objeto claimsMappingPolicy foi aplicado.
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f749b040da90537ad362fe1d372ae6d090327039
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9eb488b931cb5ff89796526f1285fa5454a5bae8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982525"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437685"
 ---
-# <a name="list-appliesto"></a><span data-ttu-id="85244-103">Listar se aplica</span><span class="sxs-lookup"><span data-stu-id="85244-103">List appliesTo</span></span>
+# <a name="list-appliesto"></a><span data-ttu-id="7e3ac-103">Lista appliesTo</span><span class="sxs-lookup"><span data-stu-id="7e3ac-103">List appliesTo</span></span>
 
-<span data-ttu-id="85244-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="85244-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7e3ac-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7e3ac-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="85244-105">Obtenha uma lista de objetos [directoryobject](../resources/directoryObject.md) aos quais um objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) foi aplicado.</span><span class="sxs-lookup"><span data-stu-id="85244-105">Get a list of [directoryObject](../resources/directoryObject.md) objects that a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object has been applied to.</span></span> <span data-ttu-id="85244-106">O claimsMappingPolicy só pode ser aplicado aos recursos [Application](../resources/application.md) e [servicePrincipalName](../resources/serviceprincipal.md) .</span><span class="sxs-lookup"><span data-stu-id="85244-106">The claimsMappingPolicy can only be applied to [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) resources.</span></span>
+<span data-ttu-id="7e3ac-105">Obter uma lista de [objetos directoryObject](../resources/directoryObject.md) aos qual um [objeto claimsMappingPolicy](../resources/claimsmappingpolicy.md) foi aplicado.</span><span class="sxs-lookup"><span data-stu-id="7e3ac-105">Get a list of [directoryObject](../resources/directoryObject.md) objects that a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object has been applied to.</span></span> <span data-ttu-id="7e3ac-106">As declaraçõesMappingPolicy só podem ser aplicadas aos recursos [application](../resources/application.md) e [servicePrincipal.](../resources/serviceprincipal.md)</span><span class="sxs-lookup"><span data-stu-id="7e3ac-106">The claimsMappingPolicy can only be applied to [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) resources.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="85244-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="85244-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7e3ac-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="7e3ac-107">Permissions</span></span>
 
-<span data-ttu-id="85244-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="85244-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7e3ac-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7e3ac-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="85244-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="85244-110">Permission type</span></span>                        | <span data-ttu-id="85244-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="85244-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7e3ac-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7e3ac-110">Permission type</span></span>                        | <span data-ttu-id="7e3ac-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7e3ac-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="85244-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="85244-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="85244-113">Policy. Read. All e Application. Read. All, Policy. ReadWrite. ApplicationConfiguration e Application. Read. All, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="85244-113">Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All</span></span> |
-| <span data-ttu-id="85244-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="85244-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="85244-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="85244-115">Not supported.</span></span> |
-| <span data-ttu-id="85244-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="85244-116">Application</span></span>                            | <span data-ttu-id="85244-117">Policy. Read. All e Application. Read. All, Policy. ReadWrite. ApplicationConfiguration e Application. Read. All, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="85244-117">Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All</span></span> |
+| <span data-ttu-id="7e3ac-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7e3ac-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="7e3ac-113">Policy.Read.All e Application.Read.All, Policy.ReadWrite.ApplicationConfiguration e Application.Read.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="7e3ac-113">Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All</span></span> |
+| <span data-ttu-id="7e3ac-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7e3ac-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7e3ac-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7e3ac-115">Not supported.</span></span> |
+| <span data-ttu-id="7e3ac-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7e3ac-116">Application</span></span>                            | <span data-ttu-id="7e3ac-117">Policy.Read.All e Application.Read.All, Policy.ReadWrite.ApplicationConfiguration e Application.Read.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="7e3ac-117">Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="85244-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="85244-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7e3ac-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7e3ac-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,29 +38,29 @@ ms.locfileid: "47982525"
 GET /policies/claimsMappingPolicies/{id}/appliesTo
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="85244-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="85244-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7e3ac-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7e3ac-119">Optional query parameters</span></span>
 
-<span data-ttu-id="85244-120">Este método oferece suporte `$expand` ao `$select` e `$top` aos parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="85244-120">This method supports the `$expand`, `$select` and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="85244-121">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="85244-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span> <span data-ttu-id="85244-122">Ao usar `$expand` certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.</span><span class="sxs-lookup"><span data-stu-id="85244-122">When using `$expand` make sure your app requests permissions to read the expanded objects.</span></span>
+<span data-ttu-id="7e3ac-120">Este método dá suporte aos `$expand` parâmetros de consulta , `$select` e `$top` OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7e3ac-120">This method supports the `$expand`, `$select` and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="7e3ac-121">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="7e3ac-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span> <span data-ttu-id="7e3ac-122">Ao `$expand` usar, certifique-se de que seu aplicativo solicita permissões para ler os objetos expandidos.</span><span class="sxs-lookup"><span data-stu-id="7e3ac-122">When using `$expand` make sure your app requests permissions to read the expanded objects.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="85244-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="85244-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7e3ac-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7e3ac-123">Request headers</span></span>
 
-| <span data-ttu-id="85244-124">Nome</span><span class="sxs-lookup"><span data-stu-id="85244-124">Name</span></span>      |<span data-ttu-id="85244-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="85244-125">Description</span></span>|
+| <span data-ttu-id="7e3ac-124">Nome</span><span class="sxs-lookup"><span data-stu-id="7e3ac-124">Name</span></span>      |<span data-ttu-id="7e3ac-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="7e3ac-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="85244-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="85244-126">Authorization</span></span> | <span data-ttu-id="85244-127">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="85244-127">Bearer {token}</span></span> |
+| <span data-ttu-id="7e3ac-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="7e3ac-126">Authorization</span></span> | <span data-ttu-id="7e3ac-127">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="7e3ac-127">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="85244-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="85244-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7e3ac-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7e3ac-128">Request body</span></span>
 
-<span data-ttu-id="85244-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="85244-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="7e3ac-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7e3ac-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="85244-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="85244-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7e3ac-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="7e3ac-130">Response</span></span>
 
-<span data-ttu-id="85244-131">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="85244-131">If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+<span data-ttu-id="7e3ac-131">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7e3ac-131">If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="85244-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="85244-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7e3ac-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7e3ac-132">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="85244-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="85244-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7e3ac-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7e3ac-133">Request</span></span>
 
-<span data-ttu-id="85244-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="85244-134">The following is an example of the request.</span></span>
+<span data-ttu-id="7e3ac-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7e3ac-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_appliesto"
@@ -70,11 +70,11 @@ GET /policies/claimsMappingPolicies/{id}/appliesTo
 GET https://graph.microsoft.com/beta/claimsMappingPolicies/{id}/appliesTo
 ```
 
-### <a name="response"></a><span data-ttu-id="85244-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="85244-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7e3ac-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="7e3ac-135">Response</span></span>
 
-<span data-ttu-id="85244-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="85244-136">The following is an example of the response.</span></span>
+<span data-ttu-id="7e3ac-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7e3ac-136">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="85244-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="85244-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="7e3ac-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7e3ac-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

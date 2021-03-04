@@ -1,66 +1,66 @@
 ---
 title: Atualizar domínio
-description: Atualize as propriedades do objeto Domain.
+description: Atualize as propriedades do objeto domain.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9099dc74de85755c0268e4eb7e96fc9b7f523a1e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4a4b026aa4bcf9875e615a71ce38b60c76b51e2d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963919"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436467"
 ---
-# <a name="update-domain"></a><span data-ttu-id="54022-103">Atualizar domínio</span><span class="sxs-lookup"><span data-stu-id="54022-103">Update domain</span></span>
+# <a name="update-domain"></a><span data-ttu-id="5a19c-103">Atualizar domínio</span><span class="sxs-lookup"><span data-stu-id="5a19c-103">Update domain</span></span>
 
-<span data-ttu-id="54022-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="54022-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5a19c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5a19c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="54022-105">Atualize as propriedades do objeto Domain.</span><span class="sxs-lookup"><span data-stu-id="54022-105">Update the properties of domain object.</span></span>
+<span data-ttu-id="5a19c-105">Atualize as propriedades do objeto domain.</span><span class="sxs-lookup"><span data-stu-id="5a19c-105">Update the properties of domain object.</span></span>
 
-> <span data-ttu-id="54022-106">**Importante:** Somente os domínios verificados podem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="54022-106">**Important:** Only verified domains can be updated.</span></span>
+> <span data-ttu-id="5a19c-106">**Importante:** Somente domínios verificados podem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="5a19c-106">**Important:** Only verified domains can be updated.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="54022-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="54022-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5a19c-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="5a19c-107">Permissions</span></span>
 
-<span data-ttu-id="54022-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="54022-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5a19c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5a19c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="54022-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="54022-110">Permission type</span></span>      | <span data-ttu-id="54022-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="54022-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5a19c-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5a19c-110">Permission type</span></span>      | <span data-ttu-id="5a19c-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5a19c-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="54022-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="54022-112">Delegated (work or school account)</span></span> | <span data-ttu-id="54022-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="54022-113">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="54022-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="54022-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="54022-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="54022-115">Not supported.</span></span>    |
-|<span data-ttu-id="54022-116">Application</span><span class="sxs-lookup"><span data-stu-id="54022-116">Application</span></span> | <span data-ttu-id="54022-117">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="54022-117">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="5a19c-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5a19c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="5a19c-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="5a19c-113">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="5a19c-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5a19c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5a19c-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5a19c-115">Not supported.</span></span>    |
+|<span data-ttu-id="5a19c-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5a19c-116">Application</span></span> | <span data-ttu-id="5a19c-117">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5a19c-117">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="54022-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="54022-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5a19c-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5a19c-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /domains/{id}
 ```
 
-> <span data-ttu-id="54022-119">Para {id}, especifique o domínio com seu nome de domínio totalmente qualificado.</span><span class="sxs-lookup"><span data-stu-id="54022-119">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="5a19c-119">Para {id}, especifique o domínio com seu nome de domínio totalmente qualificado.</span><span class="sxs-lookup"><span data-stu-id="5a19c-119">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="54022-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="54022-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5a19c-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5a19c-120">Request headers</span></span>
 
-| <span data-ttu-id="54022-121">Nome</span><span class="sxs-lookup"><span data-stu-id="54022-121">Name</span></span>       | <span data-ttu-id="54022-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="54022-122">Description</span></span>|
+| <span data-ttu-id="5a19c-121">Nome</span><span class="sxs-lookup"><span data-stu-id="5a19c-121">Name</span></span>       | <span data-ttu-id="5a19c-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="5a19c-122">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="54022-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="54022-123">Authorization</span></span>  | <span data-ttu-id="54022-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="54022-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="54022-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="54022-126">Content-Type</span></span>  | <span data-ttu-id="54022-127">application/json</span><span class="sxs-lookup"><span data-stu-id="54022-127">application/json</span></span> |
+| <span data-ttu-id="5a19c-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="5a19c-123">Authorization</span></span>  | <span data-ttu-id="5a19c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5a19c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5a19c-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5a19c-126">Content-Type</span></span>  | <span data-ttu-id="5a19c-127">application/json</span><span class="sxs-lookup"><span data-stu-id="5a19c-127">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="54022-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="54022-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5a19c-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5a19c-128">Request body</span></span>
 
-<span data-ttu-id="54022-129">No corpo da solicitação, forneça os valores de campos relevantes a serem atualizados.</span><span class="sxs-lookup"><span data-stu-id="54022-129">In the request body, supply the values for relevant fields to be updated.</span></span> <span data-ttu-id="54022-130">As propriedades existentes não incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações feitas em outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="54022-130">Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="54022-131">Para obter o melhor desempenho, inclua somente valores alterados.</span><span class="sxs-lookup"><span data-stu-id="54022-131">For best performance, only include changed values.</span></span>
+<span data-ttu-id="5a19c-129">No corpo da solicitação, fornece os valores para campos relevantes a serem atualizados.</span><span class="sxs-lookup"><span data-stu-id="5a19c-129">In the request body, supply the values for relevant fields to be updated.</span></span> <span data-ttu-id="5a19c-130">As propriedades existentes não incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base em alterações em outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="5a19c-130">Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="5a19c-131">Para melhor desempenho, inclua apenas valores alterados.</span><span class="sxs-lookup"><span data-stu-id="5a19c-131">For best performance, only include changed values.</span></span>
 
-## <a name="response"></a><span data-ttu-id="54022-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="54022-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5a19c-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="5a19c-132">Response</span></span>
 
-<span data-ttu-id="54022-133">Se tiver êxito, este método retornará um `204 No Content` código de resposta e nenhum corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="54022-133">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
+<span data-ttu-id="5a19c-133">Se tiver êxito, este método retornará um `204 No Content` código de resposta e nenhum corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="5a19c-133">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="54022-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="54022-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="54022-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="54022-135">Request</span></span>
+## <a name="example"></a><span data-ttu-id="5a19c-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5a19c-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5a19c-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5a19c-135">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="54022-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="54022-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5a19c-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="5a19c-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_domain"
@@ -77,26 +77,26 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="54022-137">C#</span><span class="sxs-lookup"><span data-stu-id="54022-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5a19c-137">C#</span><span class="sxs-lookup"><span data-stu-id="5a19c-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-domain-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="54022-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="54022-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5a19c-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5a19c-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-domain-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="54022-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="54022-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5a19c-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5a19c-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-domain-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="54022-140">Java</span><span class="sxs-lookup"><span data-stu-id="54022-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="5a19c-140">Java</span><span class="sxs-lookup"><span data-stu-id="5a19c-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-domain-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="54022-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="54022-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="5a19c-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="5a19c-141">Response</span></span>
 
 <!-- {
   "blockType": "response",
