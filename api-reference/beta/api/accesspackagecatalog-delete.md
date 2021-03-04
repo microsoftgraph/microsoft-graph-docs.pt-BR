@@ -3,34 +3,34 @@ title: Excluir accessPackageCatalog
 description: Exclua accessPackageCatalog.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 75889298f67ca7e751ef400d13902b588afafa04
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ad2dd60c9e2f104987edeef0bac46dcf940a14cd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951979"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439601"
 ---
-# <a name="delete-accesspackagecatalog"></a><span data-ttu-id="4f69b-103">Excluir accessPackageCatalog</span><span class="sxs-lookup"><span data-stu-id="4f69b-103">Delete accessPackageCatalog</span></span>
+# <a name="delete-accesspackagecatalog"></a><span data-ttu-id="ca423-103">Excluir accessPackageCatalog</span><span class="sxs-lookup"><span data-stu-id="ca423-103">Delete accessPackageCatalog</span></span>
 
-<span data-ttu-id="4f69b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4f69b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ca423-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ca423-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4f69b-105">Excluir um [accessPackageCatalog](../resources/accesspackagecatalog.md).</span><span class="sxs-lookup"><span data-stu-id="4f69b-105">Delete an [accessPackageCatalog](../resources/accesspackagecatalog.md).</span></span>
+<span data-ttu-id="ca423-105">Excluir um [accessPackageCatalog](../resources/accesspackagecatalog.md).</span><span class="sxs-lookup"><span data-stu-id="ca423-105">Delete an [accessPackageCatalog](../resources/accesspackagecatalog.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4f69b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4f69b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ca423-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ca423-106">Permissions</span></span>
 
-<span data-ttu-id="4f69b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4f69b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ca423-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ca423-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4f69b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4f69b-109">Permission type</span></span>                        | <span data-ttu-id="4f69b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4f69b-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ca423-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ca423-109">Permission type</span></span>                        | <span data-ttu-id="ca423-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ca423-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="4f69b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4f69b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4f69b-112">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f69b-112">EntitlementManagement.ReadWrite.All</span></span> |
-| <span data-ttu-id="4f69b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4f69b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4f69b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4f69b-114">Not supported.</span></span> |
-| <span data-ttu-id="4f69b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4f69b-115">Application</span></span>                            | <span data-ttu-id="4f69b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4f69b-116">Not supported.</span></span> |
+| <span data-ttu-id="ca423-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ca423-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ca423-112">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ca423-112">EntitlementManagement.ReadWrite.All</span></span> |
+| <span data-ttu-id="ca423-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ca423-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ca423-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ca423-114">Not supported.</span></span> |
+| <span data-ttu-id="ca423-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ca423-115">Application</span></span>                            | <span data-ttu-id="ca423-116">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ca423-116">EntitlementManagement.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4f69b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4f69b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ca423-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ca423-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,27 +38,27 @@ ms.locfileid: "48951979"
 DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4f69b-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4f69b-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ca423-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ca423-118">Request headers</span></span>
 
-| <span data-ttu-id="4f69b-119">Nome</span><span class="sxs-lookup"><span data-stu-id="4f69b-119">Name</span></span>          | <span data-ttu-id="4f69b-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="4f69b-120">Description</span></span>   |
+| <span data-ttu-id="ca423-119">Nome</span><span class="sxs-lookup"><span data-stu-id="ca423-119">Name</span></span>          | <span data-ttu-id="ca423-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ca423-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="4f69b-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="4f69b-121">Authorization</span></span> | <span data-ttu-id="4f69b-122">\{token\} de portador.</span><span class="sxs-lookup"><span data-stu-id="4f69b-122">Bearer \{token\}.</span></span> <span data-ttu-id="4f69b-123">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4f69b-123">Required.</span></span> |
+| <span data-ttu-id="ca423-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="ca423-121">Authorization</span></span> | <span data-ttu-id="ca423-122">\{token\} de portador.</span><span class="sxs-lookup"><span data-stu-id="ca423-122">Bearer \{token\}.</span></span> <span data-ttu-id="ca423-123">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ca423-123">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4f69b-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4f69b-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ca423-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ca423-124">Request body</span></span>
 
-<span data-ttu-id="4f69b-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4f69b-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="ca423-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ca423-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4f69b-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f69b-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ca423-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="ca423-126">Response</span></span>
 
-<span data-ttu-id="4f69b-127">Se tiver êxito, este método retornará um código de resposta da série 200.</span><span class="sxs-lookup"><span data-stu-id="4f69b-127">If successful, this method returns a 200-series response code.</span></span> <span data-ttu-id="4f69b-128">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4f69b-128">It does not return anything in the response body.</span></span>
+<span data-ttu-id="ca423-127">Se tiver êxito, este método retornará um código de resposta de 200 séries.</span><span class="sxs-lookup"><span data-stu-id="ca423-127">If successful, this method returns a 200-series response code.</span></span> <span data-ttu-id="ca423-128">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ca423-128">It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4f69b-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="4f69b-129">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ca423-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ca423-129">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="4f69b-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4f69b-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ca423-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ca423-130">Request</span></span>
 
-<span data-ttu-id="4f69b-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="4f69b-131">The following is an example of the request.</span></span>
+<span data-ttu-id="ca423-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="ca423-131">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="4f69b-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="4f69b-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ca423-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="ca423-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_accesspackagecatalog"
@@ -67,28 +67,28 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="4f69b-133">C#</span><span class="sxs-lookup"><span data-stu-id="4f69b-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ca423-133">C#</span><span class="sxs-lookup"><span data-stu-id="ca423-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-accesspackagecatalog-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4f69b-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4f69b-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ca423-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ca423-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-accesspackagecatalog-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4f69b-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4f69b-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ca423-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ca423-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-accesspackagecatalog-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4f69b-136">Java</span><span class="sxs-lookup"><span data-stu-id="4f69b-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ca423-136">Java</span><span class="sxs-lookup"><span data-stu-id="ca423-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackagecatalog-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="4f69b-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f69b-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ca423-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="ca423-137">Response</span></span>
 
-<span data-ttu-id="4f69b-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4f69b-138">The following is an example of the response.</span></span>
+<span data-ttu-id="ca423-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ca423-138">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
