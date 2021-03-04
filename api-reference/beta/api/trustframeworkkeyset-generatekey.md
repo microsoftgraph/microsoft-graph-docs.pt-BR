@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: generateKey'
-description: Gerar uma chave e um segredo automaticamente no conjunto de chaves.
+description: Gere uma chave e um segredo automaticamente no keyset.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5915bcf514c96ddea2c7e3ce2df2653e38b4cb7d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ffcb8beb1744d8ca702ed1d9fd550721b6e7747
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981683"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433642"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet: generateKey
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gere um [trustFrameworkKey](../resources/trustFrameworkKey.md) e um segredo automaticamente no [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). O chamador não precisa fornecer um segredo.
+Gere [um trustFrameworkKey](../resources/trustFrameworkKey.md) e um segredo automaticamente [no trustFrameworkKeyset](../resources/trustframeworkkeyset.md). O chamador não precisa fornecer um segredo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,14 +51,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Use | string | Semelhante à propriedade **use** de **trustFrameworkKey**. |
-| kty | string | Semelhante à propriedade **KTY** de **trustFrameworkKey**. |
-| nbf | int | Semelhante à propriedade **NBF** de **trustFrameworkKey**. |
-| exp | int | Semelhante à propriedade **exp** de **trustFrameworkKey**. |
+| use | string | Semelhante à propriedade **use** de **trustFrameworkKey**. |
+| kty | string | Semelhante à **propriedade kty** **de trustFrameworkKey**. |
+| nbf | int | Semelhante à **propriedade nbf** **de trustFrameworkKey**. |
+| exp | int | Semelhante à **propriedade exp** **de trustFrameworkKey**. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

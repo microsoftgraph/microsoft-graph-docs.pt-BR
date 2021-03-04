@@ -1,16 +1,16 @@
 ---
 title: Excluir trustFrameworkKeySet
-description: Excluir um objeto **trustFrameworkKeySet** .
+description: '**Exclua um objeto trustFrameworkKeySet.**'
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 309caf8eaa92f10ffdec9a1430a4a01fcd31d195
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04527223a407724146b26b3319b527c7f7f97ba6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981687"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433652"
 ---
 # <a name="delete-trustframeworkkeyset"></a>Excluir trustFrameworkKeySet
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

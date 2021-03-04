@@ -1,24 +1,24 @@
 ---
-title: Listar tokenIssuancePolicy
-description: Obtenha uma lista de objetos tokenIssuancePolicy.
+title: Token de listaIssuancePolicy
+description: Obter uma lista de objetos tokenIssuancePolicy.
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7677ecef709e9e57691df58929ee2905b6603811
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0cb61b322454f8044c42f624922cabfe5ba67745
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973580"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433737"
 ---
-# <a name="list-tokenissuancepolicy"></a>Listar tokenIssuancePolicy
+# <a name="list-tokenissuancepolicy"></a>Token de listaIssuancePolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de objetos [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) .
+Obter uma lista de [objetos tokenIssuancePolicy.](../resources/tokenIssuancePolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET policies/tokenIssuancePolicies
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$expand` aos `$filter` parâmetros de `$select` consulta OData,, e `$top` OData, para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Ao usar o `$expand` , certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.
+Este método dá suporte `$expand` aos `$filter` parâmetros de consulta , , e OData para ajudar a `$select` personalizar a `$top` resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Ao usar `$expand` , certifique-se de que seu aplicativo solicita permissões para ler os objetos expandidos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
