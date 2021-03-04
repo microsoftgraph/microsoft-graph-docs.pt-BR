@@ -1,16 +1,16 @@
 ---
 title: Listar businessFlowTemplates
-description: No recurso de revisões do Azure AD Access, liste todos os objetos businessFlowTemplate.
+description: No recurso de análises de acesso do Azure AD, liste todos os objetos businessFlowTemplate.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 3ea42f9d287aa255390fec357708643058c4c6b5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1ecb7dac1020bf243f6f58e0f6a80afc0724bfdc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960135"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437986"
 ---
 # <a name="list-businessflowtemplates"></a>Listar businessFlowTemplates
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , liste todos os objetos [businessFlowTemplate](../resources/businessflowtemplate.md) .
+No recurso de análises de acesso do Azure [AD,](../resources/accessreviews-root.md) liste todos os [objetos businessFlowTemplate.](../resources/businessflowtemplate.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All  |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | AccessReview. Read. All, AccessReview. ReadWrite. Membership |
+|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
-O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access.
+O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /businessFlowTemplates
 Nenhum corpo de solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200, OK` código de resposta e uma matriz de objetos [businessFlowTemplate](../resources/businessflowtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200, OK` matriz de [objetos businessFlowTemplate](../resources/businessflowtemplate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -120,7 +120,7 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criar accessReview](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  Criar um novo accessReview. |
+|[Criar accessReview](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  Crie um novo accessReview. |
 
 
 

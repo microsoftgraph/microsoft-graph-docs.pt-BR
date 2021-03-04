@@ -1,35 +1,35 @@
 ---
 title: Atualizar continuousAccessEvaluationPolicy
-description: Atualiza as propriedades de um objeto continuousAccessEvaluationPolicy.
+description: Atualize as propriedades de um objeto continuousAccessEvaluationPolicy.
 author: jerrysai
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 990428fc0022bca7d27f6eaac7978071f49381cb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 80c08c4b711daa2e79600c20ce11f30cd7879af4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956933"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437279"
 ---
 # <a name="update-continuousaccessevaluationpolicy"></a>Atualizar continuousAccessEvaluationPolicy
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) .
+Atualize as propriedades de [um objeto continuousAccessEvaluationPolicy.](../resources/continuousaccessevaluationpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
+|Delegado (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
+|Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 
 > [!NOTE]
-> Essa API tem um [problema conhecido](/graph/known-issues#permissions) relacionado às permissões.
+> Essa API tem um [problema conhecido relacionado](/graph/known-issues#permissions) a permissões.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |grupos|Coleção de cadeias de caracteres|A coleção de identificadores de grupo no escopo para avaliação. Todos os grupos estão no escopo quando a coleção está vazia.|
-|isEnabled|Booliano| `true` para indicar se a avaliação de acesso contínuo deve ser executada; caso contrário `false` . |
+|isEnabled|Booliano| `true` para indicar se a avaliação de acesso contínuo deve ser realizada; caso `false` contrário. |
 |usuários|Coleção de cadeias de caracteres|A coleção de identificadores de usuário no escopo para avaliação. Todos os usuários estão no escopo quando a coleção está vazia.|
 
 

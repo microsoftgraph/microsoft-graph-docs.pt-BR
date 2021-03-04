@@ -3,14 +3,14 @@ title: Listar internalSponsors
 description: Recupere uma lista de internalSponsors de connectedOrganization.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e80c5afdf644ea7b488b107cfb67454add6f3855
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 25e9ae33d18175ffde49c3822303ec254a0a2e92
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872692"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437447"
 ---
 # <a name="list-internalsponsors"></a>Listar internalSponsors
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de [patrocinadores internos](../resources/connectedorganization.md)de uma organização conectada.  Os patrocinadores internos são um conjunto de usuários que podem aprovar solicitações em nome de outros usuários dessa organização conectada.
+Recupere uma lista dos patrocinadores internos de [uma connectedOrganization.](../resources/connectedorganization.md)  Os patrocinadores internos são um conjunto de usuários que podem aprovar solicitações em nome de outros usuários dessa organização conectada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

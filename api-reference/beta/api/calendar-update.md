@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ed82886c3a5b6b8bff90b32b09361fb92ecfe091
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 18720d55ee57fbe50ee14f77d43e36e6d0c29764
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960008"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437864"
 ---
 # <a name="update-calendar"></a>Atualizar calendário
 
@@ -40,9 +40,6 @@ Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../
 ```http
 PATCH /me/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}
-
-PATCH /me/calendarGroup/calendars/{id}
-PATCH /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.
 ```http
@@ -69,7 +66,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [calendar](../resources/calendar.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir atualiza o nome do calendário padrão do usuário conectado.
+O exemplo a seguir atualiza o nome do calendário padrão do usuário inscreveu.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

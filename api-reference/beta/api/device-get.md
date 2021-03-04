@@ -3,14 +3,14 @@ title: Obter dispositivo
 description: Obtém as propriedades e os relacionamentos de um objeto device.
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 762d26f8f339037a6a6031f44efe3cf219a03998
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 8c1c70578ed95ead160895e5d471a8c4ba56e6c8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752973"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437202"
 ---
 # <a name="get-device"></a>Obter dispositivo
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtém as propriedades e os relacionamentos de um objeto device.
 
-Como o recurso de **dispositivo** suporta [extensões](/graph/extensibility-overview), você também pode usar a `GET` operação para obter propriedades personalizadas e dados de extensão em uma instância de **dispositivo** .
+Como o **recurso de dispositivo** dá suporte a [extensões,](/graph/extensibility-overview)você também pode usar a operação para obter propriedades personalizadas e dados de extensão em uma `GET` instância **do** dispositivo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -81,10 +81,10 @@ GET https://graph.microsoft.com/beta/devices/{id}
 ---
 
 
-> **Observação:** O `id` na solicitação é a propriedade **ID** do dispositivo, não a propriedade **DeviceID** .
+> **Observação:** A `id` na solicitação é a **propriedade id** do dispositivo, não a **propriedade deviceId.**
 
 ### <a name="response"></a>Resposta
-O exemplo a seguir mostra uma resposta para um dispositivo sem **nomes de host**. 
+O exemplo a seguir mostra uma resposta para um dispositivo sem **hostNames**. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
@@ -107,7 +107,7 @@ Content-length: 322
 }
 ```
 
-O exemplo a seguir mostra uma resposta para um dispositivo com **nomes de host**. 
+O exemplo a seguir mostra uma resposta para um dispositivo com **hostNames**. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 97c578f1887a1cfa933d1a3f3fd9ed72fb380722
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3d8e0b7749d08fc7d0d58c3bfc3adc4f4d9f6110
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960116"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437972"
 ---
 # <a name="delete-calendar"></a>Excluir calendário
 
@@ -34,9 +34,6 @@ Um [calendar](../resources/calendar.md) de usuário, que não seja o padrão, no
 ```http
 DELETE /me/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}
-
-DELETE /me/calendarGroup/calendars/{id}
-DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 Um [calendar](../resources/calendar.md), que não seja o padrão, em um [calendarGroup](../resources/calendargroup.md) específico.
 ```http

@@ -1,34 +1,34 @@
 ---
 title: Obter emailAuthenticationMethod
-description: Leia as propriedades e os relacionamentos de um objeto emailAuthenticationMethod.
+description: Leia as propriedades e as relações de um objeto emailAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f4cf44accf9d67da2475079813545bc3a3ce21bf
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 46189eb8bb465ea0e436e71fa3c9129094d3ece0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872174"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436336"
 ---
 # <a name="get-emailauthenticationmethod"></a>Obter emailAuthenticationMethod
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere um único objeto de método de [autenticação de email de um](../resources/emailauthenticationmethod.md) usuário.
+Recupere o objeto método de [autenticação](../resources/emailauthenticationmethod.md) de email único de um usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões atuando por si mesmo (do menos para o mais privilegiado)|Permissões atuando em outras pessoas (de menos para mais privilegiados)|
+|Tipo de permissão|Permissões agindo por si mesmo (do mínimo para o mais privilegiado)|Permissões atuando em outras pessoas (do mínimo ao mais privilegiado)|
 |:---|:---|:--|
 | Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Não aplicável. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes [funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma das seguintes [funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Administrador global
 * Leitor global
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e o `200 OK` [objeto emailAuthenticationMethod](../resources/emailauthenticationmethod.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` o [objeto emailAuthenticationMethod](../resources/emailauthenticationmethod.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

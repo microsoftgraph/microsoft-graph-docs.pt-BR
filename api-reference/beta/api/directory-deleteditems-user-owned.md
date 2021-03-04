@@ -3,14 +3,14 @@ title: Listar itens excluídos pertencentes a um usuário
 description: 'Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  '
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e3b001b7928cfcc008a1e1605d4effcd0cbd8e3b
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 31a85be8a5c6b1dc09889ea77cf619060f702789
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48311935"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436978"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Listar itens excluídos pertencentes a um usuário
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  
 
-Atualmente, a funcionalidade Listar itens excluídos é suportada apenas para recursos de [aplicativo](../resources/application.md) e de [grupo](../resources/group.md) pertencentes ao usuário.
+Atualmente, a funcionalidade de itens excluídos de [](../resources/group.md) lista tem suporte apenas para [recursos](../resources/application.md) de aplicativo e grupo pertencentes ao usuário.
 
-Esta é uma ação de serviço, o que significa que ele não oferece suporte à paginação.  A API retorna até 1.000 objetos excluídos pertencentes ao usuário, classificados por ID.
+Esta é uma ação de serviço, o que significa que ela não dá suporte à paginação.  A API retorna até 1.000 objetos excluídos pertencentes ao usuário, classificação por ID.
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,12 +51,12 @@ O corpo da solicitação requer os seguintes parâmetros:
 | Parâmetro    | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |userId|Cadeia de caracteres|ID do proprietário.|
-|tipo|String|Tipo de objetos de propriedade a ser retornado; `group` no momento, o único valor com suporte.|
+|type|String|Tipo de objetos de propriedade a retornar; `group` atualmente é o único valor com suporte.|
 
 
 ## <a name="response"></a>Resposta
 
-Solicitações bem-sucedidas retornam `200 OK` códigos de resposta; o objeto Response inclui as propriedades [Directory (Deleted Items)](../resources/directory.md) .
+Solicitações `200 OK` bem-sucedidas retornam códigos de resposta; o objeto de resposta inclui propriedades [de diretório (itens excluídos).](../resources/directory.md)
 
 ## <a name="example"></a>Exemplo
 
@@ -76,7 +76,7 @@ Content-type: application/json
 
 ###### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: esse objeto de resposta pode ser truncado por brevidade. Todas as propriedades com suporte são retornadas de chamadas reais.
+Veja a seguir um exemplo da resposta. Observação: esse objeto de resposta pode ser truncado para brevidade. Todas as propriedades com suporte são retornadas de chamadas reais.
 
 ``` http
 HTTP/1.1 200

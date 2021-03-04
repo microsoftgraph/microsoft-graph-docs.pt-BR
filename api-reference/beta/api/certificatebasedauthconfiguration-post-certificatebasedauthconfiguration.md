@@ -1,16 +1,16 @@
 ---
 title: Criar certificateBasedAuthConfiguration
-description: Use esta API para criar um novo certificateBasedAuthConfiguration.
+description: Use essa API para criar um novo certificateBasedAuthConfiguration.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f424ec111fb7551232bdf102b8debcb9dc248394
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6556ef064287b7378e5929983ebb951571c7e8a0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959357"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437783"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>Criar certificateBasedAuthConfiguration
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .
+Crie um novo [objeto certificateBasedAuthConfiguration.](../resources/certificateBasedAuthConfiguration.md)
 
 > [!NOTE]
-> Só é possível criar uma única instância de um **certificateBasedAuthConfiguration** (a coleção só pode ter um membro). Ele sempre tem uma ID fixa com um valor de ' 29728ade-6ae4-4ee9-9103-412912537da5 '.
+> Somente uma única instância de **um certificateBasedAuthConfiguration** pode ser criada (a coleção só pode ter um membro). Ele sempre tem uma ID fixa com um valor '29728ade-6ae4-4ee9-9103-412912537da5'.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application    | Organization.ReadWrite.All |
+| Aplicativo    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,15 +50,15 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-As propriedades a seguir são necessárias para criar o objeto [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) .
+As propriedades a seguir são necessárias para criar o [objeto certificateBasedAuthConfiguration.](../resources/certificatebasedauthconfiguration.md)
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|certificateAuthorities| coleção [certificateAuthority](../resources/certificateauthority.md) |Coleção de autoridades de certificação que cria uma cadeia de certificado confiável.  Cada membro da coleção deve conter Propriedades de **certificado** e **isRootAuthority** . |
+|certificateAuthorities| [Coleção certificateAuthority](../resources/certificateauthority.md) |Coleção de autoridades de certificados que cria uma cadeia de certificados confiável.  Cada membro da coleção deve conter **propriedades certificate** e **isRootAuthority.** |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um novo objeto [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e `201 Created` um novo [objeto certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

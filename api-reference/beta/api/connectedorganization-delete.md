@@ -1,16 +1,16 @@
 ---
 title: Excluir connectedOrganization
-description: Exclua connectedOrganization.
+description: Excluir connectedOrganization.
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8ce2aed28aaa4d1b97767e7ebb46e9b206d32d75
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: a14207407d3810e53a1b6be871060e8e6f609c8c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872713"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437503"
 ---
 # <a name="delete-connectedorganization"></a>Excluir connectedOrganization
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

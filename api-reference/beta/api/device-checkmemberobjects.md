@@ -1,24 +1,24 @@
 ---
-title: 'dispositivo: checkMemberObjects'
+title: 'device: checkMemberObjects'
 description: Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto de dispositivo especificado.
 localization_priority: Normal
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2c419eee8856ff257f236259c923d2ab0980049e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ea5fffe49079388cac3d9d18daab5a13d7a05f0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956467"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437226"
 ---
-# <a name="device-checkmemberobjects"></a>dispositivo: checkMemberObjects
+# <a name="device-checkmemberobjects"></a>device: checkMemberObjects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifique se há associação em uma lista de grupos ou unidades administrativas para o objeto de dispositivo especificado. Este método é transitivo.
+Verifique se há associação em uma lista de grupos ou unidades administrativas para o objeto de dispositivo especificado. Esse método é transitivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| ids | Coleção de cadeias de caracteres | Uma coleção que contém as IDs de objeto dos grupos, funções de diretório, unidades administrativas ou IDs RoleTemplate de funções de diretório, para verificar a associação. Até 20 objetos podem ser especificados. |
+| ids | Coleção de cadeias de caracteres | Uma coleção que contém as IDs de objeto dos grupos, funções de diretório, unidades administrativas ou IDs de roleTemplate de funções de diretório, na qual verificar a associação. Até 20 objetos podem ser especificados. |
 
 ## <a name="response"></a>Resposta
 

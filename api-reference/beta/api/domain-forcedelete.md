@@ -3,14 +3,14 @@ title: 'domain: forceDelete'
 description: Exclui um domínio usando uma operação assíncrona.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc074f3160ef8260f04fe2795a58a0ddfd1c54d7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: efa4cca2c8413abb2a3ae65995973f4d3d5bc4db
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131261"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436565"
 ---
 # <a name="domain-forcedelete"></a>domain: forceDelete
 
@@ -22,19 +22,19 @@ Exclui um domínio usando uma operação assíncrona.
 
 Antes de chamar [forceDelete,](domain-forcedelete.md)você deve atualizar ou remover quaisquer referências ao **Exchange** como o serviço de provisionamento.
 
-As ações a seguir são executadas como parte desta operação:
+As seguintes ações são executadas como parte desta operação:
 
 * Renomeia o UPN, EmailAddress e ProxyAddress de usuários com referências ao domínio excluído.
 
 * Renomeia o EmailAddress de grupos com referências ao domínio excluído.
 
-* Renomeia os identifierUris de aplicativos com referências ao domínio excluído.
+* Renomeia os identificadores de aplicativos com referências ao domínio excluído.
 
 * Se o número de objetos a serem renomeados for maior que 1.000, um erro será retornado.
 
-* Se um dos aplicativos a serem renomeados for um aplicativo de vários locatários, um erro será retornado.
+* Se um dos aplicativos a ser renomeado for um aplicativo de vários locatários, um erro será retornado.
 
-Após a conclusão da exclusão do domínio, as operações de API para o domínio excluído retornarão um código de resposta HTTP 404. Para verificar a exclusão de um domínio, você pode executar um [domínio get.](domain-get.md) Se o domínio foi excluído com êxito, um código de resposta HTTP 404 será retornado na resposta.
+Depois que a exclusão de domínio for concluída, as operações de API do domínio excluído retornarão um código de resposta HTTP 404. Para verificar a exclusão de um domínio, você pode executar um [domínio get](domain-get.md). Se o domínio foi excluído com êxito, um código de resposta HTTP 404 será retornado na resposta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -45,7 +45,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Domain.ReadWrite.All |
+|Aplicativo | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -69,7 +69,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean| Opção para desabilitar contas de usuário renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não poderá entrar.<br>*Verdadeiro* (padrão) - As contas de usuário renomeadas como parte dessa operação estão desabilitadas.<br>*False* - As contas de usuário renomeadas como parte dessa operação não são desabilitadas. |
+|disableUserAccounts|Booliano| Opção para desabilitar contas de usuário renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não poderá entrar.<br>*True* (padrão) - As contas de usuário renomeadas como parte dessa operação estão desabilitadas.<br>*False* - As contas de usuário renomeadas como parte dessa operação não estão desabilitadas. |
 
 ## <a name="response"></a>Resposta
 

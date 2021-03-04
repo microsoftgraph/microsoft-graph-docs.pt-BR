@@ -3,14 +3,14 @@ title: Excluir certificateBasedAuthConfiguration
 description: Exclua certificateBasedAuthConfiguration.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7baac52887e83b431bd76029849cb8c24207dac7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b404a68afd042e20a5c0b43ebd4ca1faf0287685
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959442"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437850"
 ---
 # <a name="delete-certificatebasedauthconfiguration"></a>Excluir certificateBasedAuthConfiguration
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .
+[Exclua um objeto certificateBasedAuthConfiguration.](../resources/certificateBasedAuthConfiguration.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Organization.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application    | Organization.ReadWrite.All |
+| Aplicativo    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

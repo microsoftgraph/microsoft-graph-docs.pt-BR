@@ -3,14 +3,14 @@ title: Obter continuousAccessEvaluationPolicy
 description: Leia as propriedades de um objeto continuousAccessEvaluationPolicy.
 author: jerrysai
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8dcafa080167facb1a692af8634fb6d1f4f345b5
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 0f0aac891c40e84266ebb48fb3e196bbdfd13d03
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872650"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437286"
 ---
 # <a name="get-continuousaccessevaluationpolicy"></a>Obter continuousAccessEvaluationPolicy
 Namespace: microsoft.graph
@@ -36,7 +36,7 @@ GET /identity/continuousAccessEvaluationPolicy
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método dá suporte ao parâmetro de consulta OData "$select" para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao parâmetro de consulta OData $select "$select" para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

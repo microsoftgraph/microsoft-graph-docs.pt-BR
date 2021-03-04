@@ -1,24 +1,24 @@
 ---
-title: 'directoryobject: Delta'
-description: 'Obter objetos de diretório recém-criados, atualizados ou excluídos dos seguintes tipos: usuário, grupo e contato organizacional, em uma única consulta Delta. Confira Controlar alterações para saber mais.'
+title: 'directoryObject: delta'
+description: 'Obter objetos de diretório recém-criados, atualizados ou excluídos dos seguintes tipos: usuário, grupo e contato organizacional, em uma única consulta delta. Confira Controlar alterações para saber mais.'
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0ea4f695bb27ebb77c26691e3a73a9edf9a021e2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 172c3bc6667987252d21859d43225777f0e5b889
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963135"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436922"
 ---
-# <a name="directoryobject-delta"></a>directoryobject: Delta
+# <a name="directoryobject-delta"></a>directoryObject: delta
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter objetos de diretório recém-criados, atualizados ou excluídos dos seguintes tipos: [usuário](../resources/user.md), [grupo](../resources/group.md) e [contato organizacional](../resources/orgcontact.md), em uma única consulta Delta. Confira [controle de alterações](/graph/delta-query-overview) para obter detalhes.
+Obter objetos de diretório recém-criados, atualizados ou [](../resources/group.md) excluídos dos seguintes tipos: [usuário,](../resources/user.md)grupo e contato organizacional [,](../resources/orgcontact.md)em uma única consulta delta. Confira [controle de alterações](/graph/delta-query-overview) para obter detalhes.
 
 ## <a name="permissions"></a>Permissões
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para começar a controlar as alterações, faça uma solicitação incluindo a função Delta no recurso directoryObjects.
+Para começar a controlar as alterações, você faz uma solicitação incluindo a função delta no recurso directoryObjects.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,7 +42,7 @@ GET /directoryObjects/delta
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-As alterações de controle provocam uma rodada de uma ou mais chamadas de função **Delta** . Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta.
+O controle de alterações incorre em uma rodada de uma ou mais chamadas **de função delta.** Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta.
 
 Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente.
 
@@ -57,8 +57,8 @@ Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` 
 
 Este método fornece suporte opcional a Parâmetros de Consulta OData para ajudar a personalizar a resposta.
 
-- Você pode usar `$filter` com o `isOf` operador especial para filtrar um subconjunto de tipos derivados de directoryobject.
-  - Você pode combinar várias expressões usando um `or` , que permite que você tenha uma única consulta Delta de acompanhamento de vários tipos. Confira o [terceiro exemplo](#request-3) para obter detalhes.
+- Você pode usar `$filter` com o operador especial para `isOf` filtrar um subconjunto de tipos derivados de directoryObject.
+  - Você pode combinar várias expressões usando um , que permite que você tenha uma `or` única consulta delta monitorando vários tipos. Consulte o [terceiro exemplo para](#request-3) obter detalhes.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -93,7 +93,7 @@ Por padrão, as solicitações usando `deltaLink` ou `nextLink` retornam as mesm
 - Se a propriedade nunca foi definida anteriormente, de nenhuma forma será incluída na resposta.
 
 
-> **Observação:** com esse comportamento, ao verificar a resposta, não será possível dizer se uma propriedade foi alterada ou não. Além disso, as respostas Delta tendem a ser grandes porque contêm todos os valores de propriedade.
+> **Observação:** com esse comportamento, ao verificar a resposta, não será possível dizer se uma propriedade foi alterada ou não. Além disso, as respostas delta tendem a ser grandes porque contêm todos os valores de propriedade.
 
 #### <a name="alternative-return-only-the-changed-properties"></a>Alternativa: retornar somente as propriedades alteradas
 
@@ -140,7 +140,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 ### <a name="response-1"></a>Resposta 1
 
-A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Nenhum `isOf` filtro foi usado, portanto, todos os tipos derivados de directoryobject são retornados.
+A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Nenhum filtro foi usado, portanto, todos os `isOf` tipos derivados de directoryObject são retornados.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
@@ -202,7 +202,7 @@ Content-type: application/json
 
 ### <a name="request-2"></a>Solicitação 2
 
-O exemplo a seguir mostra o uso do comportamento de resposta mínimo alternativo:
+O próximo exemplo mostra o uso do comportamento de resposta mínimo alternativo:
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -235,7 +235,7 @@ Prefer: return=minimal
 
 ### <a name="response-2"></a>Resposta 2
 
-A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Observação apenas as propriedades que realmente foram alteradas são retornadas.
+A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Observe que apenas as propriedades que realmente foram alteradas são retornadas.
 
 <!-- {
   "blockType": "response",
@@ -274,7 +274,7 @@ Content-type: application/json
 
 ### <a name="request-3"></a>Solicitação 3
 
-O próximo exemplo mostra a solicitação inicial usando o `isOf` operador para filtrar somente entidades de usuário e de Grupo:
+O próximo exemplo mostra a solicitação inicial usando o operador `isOf` para filtrar somente entidades de usuário e grupo:
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -306,7 +306,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Micros
 
 ### <a name="response-3"></a>Resposta 3
 
-A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Observe que somente objetos de usuário e de grupo são retornados:
+A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Observe que somente objetos de usuário e grupo são retornados:
 
 <!-- {
   "blockType": "response",

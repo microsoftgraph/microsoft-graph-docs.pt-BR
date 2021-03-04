@@ -1,26 +1,26 @@
 ---
-title: 'evento: forward'
-description: 'Esta ação permite que o organizador ou participante de um evento de reunião encaminhe o '
+title: 'event: forward'
+description: 'Essa ação permite que o organizador ou participante de um evento de reunião encaminhe o '
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b4d46bad4f7252e1c387a968102f5dc1c0ef9a1a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 75f294c456969dbd7f8ffccfc941451d4c611b03
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954849"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436208"
 ---
-# <a name="event-forward"></a>evento: forward
+# <a name="event-forward"></a>event: forward
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Esta ação permite que o organizador ou o participante de um [evento](../resources/event.md) de reunião encaminhe a solicitação de reunião para um novo destinatário. 
+Essa ação permite que o organizador ou participante de um evento de [reunião](../resources/event.md) encaminhe a solicitação de reunião para um novo destinatário. 
 
-Se o evento de reunião for encaminhado da caixa de correio do Microsoft 365 de um participante para outro destinatário, essa ação também enviará uma mensagem para notificar o organizador sobre o encaminhamento e adiciona o destinatário à cópia do evento de reunião do organizador. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
+Se o evento de reunião for encaminhado da caixa de correio do Microsoft 365 de um participante para outro destinatário, essa ação também enviará uma mensagem para notificar o organizador do encaminhamento e adiciona o destinatário à cópia do evento de reunião do organizador. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
 
 
 ## <a name="permissions"></a>Permissões
@@ -45,9 +45,6 @@ POST /groups/{id}/calendar/events/{id}/forward
 
 POST /me/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/forward
-
-POST /me/calendargroup/calendars/{id}/events/{id}/forward
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/forward
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward

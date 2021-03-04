@@ -3,14 +3,14 @@ title: Listar configurações de diretório
 description: Recupere uma lista de objetos de configuração de diretório.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dc1c3b075c4686ad3211f9565efd6540a583e478
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a460a86f94adae7dd482491fb92241f27555fb6e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956202"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436640"
 ---
 # <a name="list-directory-settings"></a>Listar configurações de diretório
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere uma lista de objetos de configuração de diretório.
 
-> **Observação** : a versão do/beta dessa API só se aplica aos grupos. A versão/v1.0 dessa API foi renomeada para *listar groupSettings*.
+> **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 dessa API foi renomeada para *List groupSettings*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
-Listar configurações de todo o locatário ou grupo
+Listar configurações de grupo ou de locatário
 ```http
 GET /settings
 GET /group/{id}/settings
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [directorySetting](../resources/directorysetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [directorySetting](../resources/directorysetting.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

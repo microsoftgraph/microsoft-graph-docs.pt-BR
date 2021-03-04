@@ -3,32 +3,32 @@ title: Excluir emailAuthenticationMethod
 description: Exclui um objeto emailAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7fbb2f6af414da2c44ca6d68dc688973e9d34bce
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: a06a31d41a2cd1564f83f056dcfc4bd6c21e7614
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873497"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436339"
 ---
 # <a name="delete-emailauthenticationmethod"></a>Excluir emailAuthenticationMethod
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um objeto do método de autenticação [de email de um](../resources/emailauthenticationmethod.md) usuário.
+Exclui o objeto método de autenticação [de email de um](../resources/emailauthenticationmethod.md) usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões atuando por si mesmo (do menos para o mais privilegiado)|Permissões atuando em outras pessoas (de menos para mais privilegiados)|
+|Tipo de permissão|Permissões agindo por si mesmo (do mínimo para o mais privilegiado)|Permissões atuando em outras pessoas (do mínimo ao mais privilegiado)|
 |:---|:---|:--|
 | Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Não aplicável. | UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Administrador global
 * Administrador de autenticação privilegiada

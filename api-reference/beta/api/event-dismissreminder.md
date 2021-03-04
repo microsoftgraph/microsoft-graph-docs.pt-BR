@@ -1,16 +1,16 @@
 ---
 title: 'evento: dismissReminder'
-description: Ignorar um lembrete que foi disparado para um evento em um calendário do usuário.
+description: Descartar um lembrete que foi disparado para um evento em um calendário do usuário.
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05102f7d8382dbb97ce4d394cd597c0d58e4220c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fb0b85a804013f4b282de3d2fae33bcc3f7f67ef
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954848"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436215"
 ---
 # <a name="event-dismissreminder"></a>evento: dismissReminder
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ignorar um lembrete que foi disparado para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md)do usuário.
+Descartar um lembrete que foi disparado para um [evento](../resources/event.md) em um calendário do [usuário.](../resources/calendar.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -41,9 +41,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
 
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
-
-POST /me/calendargroup/calendars/{id}/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/dismissReminder
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder

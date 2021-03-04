@@ -1,16 +1,16 @@
 ---
 title: Listar directorySettingTemplates
-description: Esta operação recupera a lista de objetos directorySettingTemplates disponíveis.
+description: Essa operação recupera a lista de objetos directorySettingTemplates disponíveis.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cc0a52f8d53ea867171459ee92e9ec512c757e19
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 13462b4a4d980d42667fee1252c8ded94b0a7ea8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956076"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436600"
 ---
 # <a name="list-directorysettingtemplates"></a>Listar directorySettingTemplates
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Modelos de configuração de diretório representa um conjunto de modelos de configurações de diretório, de onde as configurações de diretório podem ser criadas e usadas dentro de um locatário.  Esta operação recupera a lista de objetos **directorySettingTemplates** disponíveis.
+Os modelos de configuração de diretório representam um conjunto de modelos de configurações de diretório, a partir dos quais as configurações de diretório podem ser criadas e usadas em um locatário.  Essa operação recupera a lista de objetos **directorySettingTemplates** disponíveis.
 
-> **Observação** : a versão do/beta dessa API só se aplica aos grupos. A versão/v1.0 dessa API foi renomeada para *listar groupSettingTemplate*.
+> **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 desta API foi renomeada para *List groupSettingTemplate*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [directorySettingTemplate](../resources/directorysettingtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [directorySettingTemplate](../resources/directorysettingtemplate.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

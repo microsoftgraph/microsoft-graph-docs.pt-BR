@@ -3,14 +3,14 @@ title: Listar registeredOwners
 description: Recupera uma lista de usuários que são proprietários registrados do dispositivo.
 localization_priority: Normal
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a11bb38224de9caf11ca47199df4bf05cbc777f9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 192c618de517dbcc076c8bbd95205075bc7cd81a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956370"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437174"
 ---
 # <a name="list-registeredowners"></a>Listar registeredOwners
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.Read.All ou Directory.ReadWrite.All |
+|Aplicativo | Directory.Read.All ou Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

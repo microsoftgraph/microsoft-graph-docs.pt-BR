@@ -1,16 +1,16 @@
 ---
 title: Obter objetos de membros
-description: " Retorna todos os grupos, unidades administrativas e funções de diretório de que um usuário, grupo, entidades de serviço ou objeto de diretório é membro. Esta função é transitiva. "
+description: " Retorna todos os grupos, unidades administrativas e funções de diretório das quais um usuário, grupo, entidades de serviço ou objeto de diretório é membro. Esta função é transitiva. "
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7fc793e19d27bfb12061b9c63885a344dabb9a13
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 47ad4aa86e41ace7edc9e5b5eb0351557a94a7ae
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963036"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436852"
 ---
 # <a name="get-member-objects"></a>Obter objetos de membros
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- Retorna todos os grupos, unidades administrativas e funções de diretório de que um usuário, grupo, entidades de serviço ou objeto de diretório é membro. Esta função é transitiva. 
+ Retorna todos os grupos, unidades administrativas e funções de diretório das quais um usuário, grupo, entidades de serviço ou objeto de diretório é membro. Esta função é transitiva. 
  > Observação: Somente usuários podem ser membros de funções de diretório.
 
 ## <a name="permissions"></a>Permissões
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Booliano| **true** para especificar que somente grupos de segurança dos quais a entidade é membro devem ser retornados; **false** para especificar que todos os grupos e funções de diretório dos quais a entidade é membro devem ser retornados. **Observação** : a função só pode ser chamada em um usuário se o parâmetro for **true**. |
+|securityEnabledOnly|Booliano| **true** para especificar que somente grupos de segurança dos quais a entidade é membro devem ser retornados; **false** para especificar que todos os grupos e funções de diretório dos quais a entidade é membro devem ser retornados. **Observação**: a função só pode ser chamada em um usuário se o parâmetro for **true**. |
 
 ## <a name="response"></a>Resposta
 

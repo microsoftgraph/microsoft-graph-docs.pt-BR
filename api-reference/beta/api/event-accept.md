@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eb5d068998c1a3ff30d33b8a942c7edaf0f54ea3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4176dcffa8f8ffcbc2d0e1892647742720307ba6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954982"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436271"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aceite o [evento](../resources/event.md) especificado em um [calendário](../resources/calendar.md)do usuário.
+Aceite o evento [especificado](../resources/event.md) em um calendário do [usuário.](../resources/calendar.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -40,9 +40,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/accept
 
 POST /me/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/accept
-
-POST /me/calendargroup/calendars/{id}/events/{id}/accept
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/accept
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/accept

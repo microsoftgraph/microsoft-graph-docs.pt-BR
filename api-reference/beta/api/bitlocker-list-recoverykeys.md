@@ -1,46 +1,46 @@
 ---
 title: Listar recoveryKeys
-description: Obtenha uma lista dos objetos bitlockerRecoveryKey e suas propriedades.
+description: Obter uma lista dos objetos bitlockerRecoveryKey e suas propriedades.
 author: hafowler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 865e44cf6c8d696ed4da549bad05d50229e29601
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b3090c352c009eb071a148fbbd8203752e56aab7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961299"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438229"
 ---
 # <a name="list-recoverykeys"></a>Listar recoveryKeys
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista dos objetos [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) e suas propriedades. 
+Obter uma lista dos [objetos bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) e suas propriedades. 
 
-Essa operação não retorna a propriedade **Key** . Para obter informações sobre como ler a propriedade **Key** , consulte [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
+Esta operação não retorna a **propriedade key.** Para obter informações sobre como ler a **propriedade key,** consulte [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|BitLocker. ReadBasic. All, BitLocker. Read. All|
+|Delegado (conta corporativa ou de estudante)|BitLocker.ReadBasic.All, BitLocker.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
->**Observação** : para permissões delegadas para permitir que os aplicativos obtenham recursos do BitLockerRecoveryKey em nome do usuário conectado, o administrador do locatário deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo para o qual a chave de recuperação do BitLocker foi originalmente com backup: 
+>**Observação**: para permissões delegadas permitirem que os aplicativos recebam recursos do BitLockerRecoveryKey em nome do usuário conectado, o administrador de locatários deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual a chave de recuperação do BitLocker foi originalmente respaldada: 
 * Administrador global
-* Administrador do dispositivo de nuvem
-* Administrador da assistência técnica
+* Administrador de dispositivos de nuvem
+* Administrador do Helpdesk
 * Administrador de Serviço do Intune
 * Administrador de segurança
 * Leitor de segurança
 * Leitor global
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para obter uma lista de chaves do BitLocker dentro do locatário:
+Para obter uma lista de chaves do BitLocker no locatário:
 
 <!-- {
   "blockType": "ignored"
@@ -50,7 +50,7 @@ Para obter uma lista de chaves do BitLocker dentro do locatário:
 GET /bitlocker/recoveryKeys
 ```
 
-Para obter uma lista de chaves do BitLocker dentro do locatário filtrado pela **ID do dispositivo** :
+Para obter uma lista de chaves do BitLocker dentro do locatário filtrada pela **id do dispositivo**:
 
 <!-- {
   "blockType": "ignored"
@@ -61,23 +61,23 @@ GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao `$filter` parâmetro de consulta OData para filtrar os resultados pela **ID do dispositivo** em que o backup foi feito mais recentemente. Para obter detalhes, consulte o [exemplo 2](#example-2). Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao parâmetro de consulta OData para filtrar os resultados pela id do dispositivo em que a chave foi `$filter` mais recente.  Para obter detalhes, consulte [o Exemplo 2](#example-2). Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-A resposta também pode conter um `odata.nextLink` , que você pode usar para percorrer o conjunto de resultados. Para obter detalhes, consulte [paginação de dados do Microsoft Graph](/graph/paging).
+A resposta também pode conter `odata.nextLink` um , que você pode usar para página através do conjunto de resultados. Para obter detalhes, [consulte Paging Microsoft Graph data](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
-|OCP-Client-Name|Nome do aplicativo cliente executando a chamada à API. Obrigatório.|
-|OCP-Client-Version|Versão do aplicativo cliente executando a chamada à API. Obrigatório.|
+|ocp-client-name|Nome do aplicativo cliente que executa a chamada da API. Obrigatório.|
+|ocp-client-version|Versão do aplicativo cliente executando a chamada da API. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -152,7 +152,7 @@ Content-Type: application/json
 }
 ```
 ### <a name="example-2"></a>Exemplo 2
-Recupere uma lista de chaves do BitLocker filtradas por **ID de dispositivo**.
+Recuperar uma lista de chaves BitLocker filtradas por **id de dispositivo.**
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

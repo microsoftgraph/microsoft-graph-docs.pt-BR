@@ -1,16 +1,16 @@
 ---
 title: Excluir claimsMappingPolicy
-description: Exclua claimsMappingPolicy.
+description: Excluir claimsMappingPolicy.
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9818874d247fc958292a91ce490172d8ff8b3296
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 648ec58817caa99518625c83bfd24e8fbef4a9aa
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958083"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437741"
 ---
 # <a name="delete-claimsmappingpolicy"></a>Excluir claimsMappingPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) .
+[Exclua um objeto claimsMappingPolicy.](../resources/claimsmappingpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

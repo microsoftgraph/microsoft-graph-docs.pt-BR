@@ -1,24 +1,24 @@
 ---
-title: Atribuir aplica-se
-description: Atribua um directoryobject à distribuição de recursos.
+title: Atribuir appliesTo
+description: Atribua um directoryObject à atribuição de recursos.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dfde14bace860b847449a3d530103e52e8abc27d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7f8842d554f5cb6f949f0f7f528b3b1f506936f8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954520"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436082"
 ---
-# <a name="assign-appliesto"></a>Atribuir aplica-se
+# <a name="assign-appliesto"></a>Atribuir appliesTo
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um aplica-se a um objeto [featureRolloutPolicy](../resources/featurerolloutpolicy.md) para especificar o [directoryobject](../resources/directoryobject.md) ao qual o [featureRolloutPolicy](../resources/featurerolloutpolicy.md) deve ser aplicado.
+Adicione um appliesTo a [um objeto featureRolloutPolicy](../resources/featurerolloutpolicy.md) para especificar o [directoryObject](../resources/directoryobject.md) ao qual [o featureRolloutPolicy](../resources/featurerolloutpolicy.md) deve ser aplicado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,7 +50,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [direc
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [directoryobject](../resources/directoryobject.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

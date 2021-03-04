@@ -1,16 +1,16 @@
 ---
 title: Excluir permanentemente item
-description: Excluir permanentemente um item de itens excluídos.
+description: Exclua permanentemente um item de itens excluídos.
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 91d39f790e49c725c04830f14e879fb7303c4454
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5fe36d8a129a42dcd139b36577f0ae7fab45a6f6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963337"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437055"
 ---
 # <a name="permanently-delete-item"></a>Excluir permanentemente item
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir permanentemente um item de [itens excluídos](../resources/directory.md).
+Exclua permanentemente um item [de itens excluídos](../resources/directory.md).
 
-Atualmente, a funcionalidade de itens excluídos só é suportada para o [aplicativo](../resources/application.md), [grupo](../resources/group.md) e recursos do [usuário](../resources/user.md) . É possível excluir permanentemente um item de itens excluídos. Mas, uma vez que um item é excluído permanentemente, ele **não pode** ser restaurado.
+Atualmente, a funcionalidade de itens excluídos só tem suporte para os recursos [de](../resources/application.md)aplicativo, [grupo](../resources/group.md) [e](../resources/user.md) usuário. É possível excluir permanentemente um item de itens excluídos. Mas, uma vez que um item é excluído permanentemente, ele **não pode** ser restaurado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,7 +39,7 @@ Para usuários:
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | User.ReadWrite.All |
+|Aplicativo | Sem suporte. |
 
 Para grupos:
 
@@ -47,7 +47,7 @@ Para grupos:
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

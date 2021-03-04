@@ -3,14 +3,14 @@ title: Listar itens excluídos
 description: Recupere uma lista de itens recentemente excluídos em itens excluídos.
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 74e2a55199718265a60bdbfa707ad7af3ae27a68
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8156edca6bc81e7d587ed034d051acf4ca698f99
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963302"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437013"
 ---
 # <a name="list-deleted-items"></a>Listar itens excluídos
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere uma lista de itens recentemente excluídos em [itens excluídos](../resources/directory.md).
 
-Atualmente, a funcionalidade de itens excluídos só é suportada para o [aplicativo](../resources/application.md), [grupo](../resources/group.md) e recursos do [usuário](../resources/user.md) .
+Atualmente, a funcionalidade de itens excluídos só tem suporte para os recursos [de](../resources/application.md)aplicativo, [grupo](../resources/group.md) [e](../resources/user.md) usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ### <a name="for-users"></a>Para usuários:
@@ -48,7 +48,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
+|Aplicativo | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-Atualmente, essa API oferece suporte à recuperação de tipos de objeto de aplicativos (Microsoft. Graph. Application), grupos (Microsoft. Graph. Group) ou usuários (Microsoft. Graph. User) dos itens excluídos. O tipo é especificado como uma parte obrigatória do URI. Não há suporte para a chamada de GET /directory/deleteditems sem um tipo.
+Atualmente, essa API dá suporte à recuperação de tipos de objeto de aplicativos (microsoft.graph.application), grupos (microsoft.graph.group) ou usuários (microsoft.graph.user) de itens excluídos. O tipo é especificado como uma parte obrigatória do URI. Não há suporte para a chamada de GET /directory/deleteditems sem um tipo.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.

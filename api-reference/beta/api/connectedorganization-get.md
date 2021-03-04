@@ -1,16 +1,16 @@
 ---
 title: Obter connectedOrganization
-description: Recupere as propriedades e os relacionamentos de um objeto connectedorganization.
+description: Recupere as propriedades e as relações de um objeto connectedorganization.
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 27b0765bf16f4fabf5057b35ad4d1b0992ba79de
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: ec4bfa06754f9381c19154e886691f7657e0ab18
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872706"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437482"
 ---
 # <a name="get-connectedorganization"></a>Obter connectedOrganization
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um [objeto connectedOrganization.](../resources/connectedorganization.md)
+Recupere as propriedades e as relações de um [objeto connectedOrganization.](../resources/connectedorganization.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto connectedOrganization](../resources/connectedorganization.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [connectedOrganization](../resources/connectedorganization.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

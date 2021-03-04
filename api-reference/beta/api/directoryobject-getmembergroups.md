@@ -1,16 +1,16 @@
 ---
 title: Obter grupos de membros
-description: Retornar todos os grupos dos quais o usuário, grupo, entidade de serviço ou objeto de diretório especificado é um membro. Esta função é transitiva.
+description: Retorne todos os grupos dos qual o usuário, grupo, entidade de serviço ou objeto de diretório especificado é membro. Esta função é transitiva.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 14b9c670c2a01a72ca27ab20c187f1efd7572b84
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 64efc112f50cf28c0f73e896bec1ffa859a62024
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963064"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436866"
 ---
 # <a name="get-member-groups"></a>Obter grupos de membros
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retornar todos os grupos dos quais o usuário, grupo, entidade de serviço ou objeto de diretório especificado é um membro. Esta função é transitiva.
+Retorne todos os grupos dos qual o usuário, grupo, entidade de serviço ou objeto de diretório especificado é membro. Esta função é transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,16 +26,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User. ReadBasic. All e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All, User. adread. All e Group. Read. All, Directory. Read. All    |
+|Delegado (conta corporativa ou de estudante) | User.ReadBasic.All e GroupMember.Read.All, User.Read.All e GroupMember.Read.All, User.ReadBasic.All e Group.Read.All, User.Read.All e Group.Read.All, Directory.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | User. Read. All e GroupMember. Read. All, User. Read. All e Group. Read. All, Directory. Read. All |
+|Aplicativo | User.Read.All e GroupMember.Read.All, User.Read.All e Group.Read.All, Directory.Read.All |
 
-Use as orientações de cenário a seguir para ajudar a determinar quais tipos de permissão usar:
-- Use as permissões User. Read e GroupMember. Read. All ou User. Read e Group. Read. All para obter associações de grupo para o usuário conectado.
-- Use User. ReadBasic. All e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All ou User.. All e Group. Read. All para obter associações de grupo para qualquer usuário.
-- Use a permissão GroupMember. Read. All ou Group. Read. All para obter associações de grupo para um grupo.
-- Use as permissões Application. ReadWrite. All e GroupMember. Read. All ou Application. ReadWrite. All e Group. Read. All para obter associações de grupo para uma entidade de serviço.
-- Use a permissão Directory. Read. All para obter associações de grupo para um objeto de diretório.
+Use as diretrizes de cenário a seguir para ajudar a determinar quais tipos de permissão usar:
+- Use as permissões User.Read e GroupMember.Read.All ou User.Read e Group.Read.All para obter associações de grupo para o usuário associado.
+- Use User.ReadBasic.All e GroupMember.Read.All, User.Read.All e GroupMember.Read.All, User.ReadBasic.All e Group.Read.All ou User.Read.All e Group.Read.All para obter associações de grupo para qualquer usuário.
+- Use a permissão GroupMember.Read.All ou Group.Read.All para obter associações de grupo para um grupo.
+- Use as permissões Application.ReadWrite.All e GroupMember.Read.All ou Application.ReadWrite.All e Group.Read.All para obter associações de grupo para uma entidade de serviço.
+- Use a permissão Directory.Read.All para obter associações de grupo para um objeto de diretório.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +57,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Booliano| **true** para especificar que somente grupos de segurança dos quais a entidade é membro devem ser retornados; **false** para especificar que todos os grupos e funções de diretório dos quais a entidade é membro devem ser retornados. **Observação** : a função só pode ser chamada em um usuário se o parâmetro for **true**. |
+|securityEnabledOnly|Booliano| **true** para especificar que somente grupos de segurança dos quais a entidade é membro devem ser retornados; **false** para especificar que todos os grupos e funções de diretório dos quais a entidade é membro devem ser retornados. **Observação**: a função só pode ser chamada em um usuário se o parâmetro for **true**. |
 
 ## <a name="response"></a>Resposta
 

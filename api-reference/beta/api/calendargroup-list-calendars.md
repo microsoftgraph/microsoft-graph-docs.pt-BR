@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ca691978670f086d2cced8985ea01a7a4f68f448
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8508b9b72cb79a3825608cfd0a837f4dc1dbdbc1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959918"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437852"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
@@ -37,8 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 Um [calendarGroup](../resources/calendargroup.md) padrão do usuário.
 
 ```http
-GET /me/calendarGroup/calendars
-GET /users/{id | userPrincipalName}/calendarGroup/calendars
+GET /me/calendars
+GET /users/{id | userPrincipalName}/calendars
 ```
 
 Qualquer [calendarGroup](../resources/calendargroup.md) de um usuário.

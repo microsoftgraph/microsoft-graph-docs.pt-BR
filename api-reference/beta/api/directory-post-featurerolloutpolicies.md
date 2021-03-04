@@ -1,16 +1,16 @@
 ---
 title: Criar featureRolloutPolicy
-description: Criar um novo objeto featureRolloutPolicy.
+description: Crie um novo objeto featureRolloutPolicy.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8d7d670303748893fdb7e5825369861dea502178
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1ec54a67867ecbf62da04fc87c6f1e7b9d043755
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963203"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436964"
 ---
 # <a name="create-featurerolloutpolicy"></a>Criar featureRolloutPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [featureRolloutPolicy](../resources/featurerolloutpolicy.md) .
+Crie um novo [objeto featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,19 +46,19 @@ POST /directory/featureRolloutPolicies
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [featureRolloutPolicy](../resources/featurerolloutpolicy.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [featureRolloutPolicy](../resources/featurerolloutpolicy.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [um featureRolloutPolicy](../resources/featurerolloutpolicy.md).
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|displayName |string |O nome de exibição desta política de distribuição de recursos.|
-|apresentam |stagedFeatureName |O recurso que seria implantado usando esta política.|
-|isEnabled |string |Indica se a distribuição de recursos está habilitada.|
+|displayName |string |O nome de exibição dessa política de lançamento de recursos.|
+|feature |stagedFeatureName |O recurso que seria lançado usando essa política.|
+|isEnabled |string |Indica se a adoção de recursos está habilitada.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [featureRolloutPolicy](../resources/featurerolloutpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto featureRolloutPolicy](../resources/featurerolloutpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

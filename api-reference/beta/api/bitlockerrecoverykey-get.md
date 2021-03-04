@@ -1,46 +1,46 @@
 ---
 title: Obter bitlockerRecoveryKey
-description: Recupere as propriedades e os relacionamentos de um objeto bitlockerRecoveryKey.
+description: Recupere as propriedades e as relações de um objeto bitlockerRecoveryKey.
 author: hafowler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 72e55c0602463dcea8178935372c7f66255d98a9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 97af35852d19211bde53717b12fcdff2f1981cb8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960992"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437989"
 ---
 # <a name="get-bitlockerrecoverykey"></a>Obter bitlockerRecoveryKey
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) . 
+Recupere as propriedades e as relações de um [objeto bitlockerRecoveryKey.](../resources/bitlockerrecoverykey.md) 
 
-Por padrão, essa operação não retorna a propriedade **Key** que representa a chave de recuperação real. Para incluir a propriedade **Key** na resposta, use o `$select` parâmetro de consulta OData. Incluindo o `$select` parâmetro de consulta dispara uma auditoria do Azure ad da operação e gera um log de auditoria. Você pode encontrar o log nos [logs de auditoria do Azure ad](/azure/active-directory/reports-monitoring/concept-audit-logs) na categoria gerenciamento de Keymanagement.
+Por padrão, essa operação não retorna a propriedade **key** que representa a chave de recuperação real. Para incluir a **propriedade key** na resposta, use o parâmetro de `$select` consulta OData. Incluir o parâmetro de consulta dispara uma auditoria do Azure AD da operação `$select` e gera um log de auditoria. Você pode encontrar o log nos logs de auditoria [do Azure AD](/azure/active-directory/reports-monitoring/concept-audit-logs) na categoria KeyManagement.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|BitLocker. ReadBasic. All, BitLocker. Read. All|
+|Delegado (conta corporativa ou de estudante)|BitLocker.ReadBasic.All, BitLocker.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
->**Observação:** Para permissões delegadas para permitir que os aplicativos obtenham recursos do BitLockerRecoveryKey em nome do usuário conectado, o administrador do locatário deve ter atribuído o usuário uma das seguintes funções ou o usuário deve ser o **proprietário registrado** do dispositivo do qual a chave do BitLocker foi originalmente cofileirada: 
+>**Observação:** Para permissões delegadas permitirem que os aplicativos recebam recursos bitLockerRecoveryKey em nome do usuário conectado, o administrador de locatários deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual a chave BitLocker foi originalmente backup:  
 * Administrador global
-* Administrador do dispositivo de nuvem
-* Administrador da assistência técnica
+* Administrador de dispositivos de nuvem
+* Administrador do Helpdesk
 * Administrador de Serviço do Intune
 * Administrador de segurança
 * Leitor de segurança
 * Leitor global
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para obter a chave BitLocker especificada sem retornar a propriedade **Key** :
+Para obter a chave BitLocker especificada sem retornar a **propriedade key:**
 <!-- {
   "blockType": "ignored"
 }
@@ -49,7 +49,7 @@ Para obter a chave BitLocker especificada sem retornar a propriedade **Key** :
 GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 ```
 
-Para obter a chave BitLocker especificada, incluindo sua propriedade **Key** :
+Para obter a chave BitLocker especificada, incluindo sua **propriedade chave:**
 <!-- {
   "blockType": "ignored"
 }
@@ -59,26 +59,26 @@ GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao `$select` parâmetro de consulta OData para retornar a propriedade **Key** . Para obter detalhes, consulte o [exemplo 2](#example-2). Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao `$select` parâmetro de consulta OData para retornar a **propriedade key.** Para obter detalhes, consulte [o Exemplo 2](#example-2). Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
-|OCP-Client-Name|Nome do aplicativo cliente executando a chamada à API. Obrigatório.|
-|OCP-Client-Version|Versão do aplicativo cliente executando a chamada à API. Obrigatório.|
+|ocp-client-name|Nome do aplicativo cliente que executa a chamada da API. Obrigatório.|
+|ocp-client-version|Versão do aplicativo cliente executando a chamada da API. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1"></a>Exemplo 1
-Obtenha a chave do BitLocker especificando a **ID da chave**. Este exemplo não retorna a propriedade **Key** .
+Obter a chave BitLocker especificando a **id da chave**. Este exemplo não retorna a **propriedade key.**
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -141,7 +141,7 @@ Content-type: application/json
 ```
 
 ### <a name="example-2"></a>Exemplo 2
-Obtenha a chave do BitLocker com a propriedade **Key** , especificando o **ID da chave**.
+Obter a chave BitLocker com a **propriedade key** especificando a **id da chave**.
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

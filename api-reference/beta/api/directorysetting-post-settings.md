@@ -1,16 +1,16 @@
 ---
 title: Criar uma configuração de diretório
-description: Use essa API para criar uma nova configuração, com base nos modelos disponíveis no directorySettingTemplates.
+description: Use essa API para criar uma nova configuração, com base nos modelos disponíveis em directorySettingTemplates.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d2a94361ee3d92ae6662751a633176ff236819ca
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a4dec36d0932870b7d8601223b71aa4340175c47
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956174"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436635"
 ---
 # <a name="create-a-directory-setting"></a>Criar uma configuração de diretório
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar uma nova configuração, com base nos modelos disponíveis no directorySettingTemplates. Essas configurações podem ser no nível do locatário ou em um nível de objeto (atualmente somente para grupos). A solicitação de criação deve fornecer settingValues para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que determina se os membros de um grupo podem convidar usuários convidados podem ser definidos. Isso irá controlar esse comportamento assim que a capacidade de adicionar usuários convidados a um grupo estiver disponível.
+Use essa API para criar uma nova configuração, com base nos modelos disponíveis em directorySettingTemplates. Essas configurações podem estar no nível do locatário ou em um nível de objeto (atualmente apenas para grupos). A solicitação de criação deve fornecer settingValues para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que rege se membros de um grupo podem convidar usuários convidados podem ser definidos. Isso regerá esse comportamento quando a capacidade de adicionar usuários convidados a um grupo geralmente está disponível.
 
-> **Observação** : a versão do/beta desta API só se aplica aos grupos. A versão/v1.0 dessa API foi renomeada para *criar groupSettings*.
+> **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 desta API foi renomeada para *Create groupSettings*.
 
-Para obter uma lista de modelos e as propriedades que eles dão suporte na versão beta, use uma [consulta directorySettingTemplate](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta). (Para pontos de extremidade de v 1.0, chame [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)
+Para uma lista de modelos e as propriedades que eles suportam em beta, use uma [consulta directorySettingTemplate](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta). (Para pontos de extremidade v1.0, chame [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)
 
 
 ## <a name="permissions"></a>Permissões
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.ReadWrite.All |
+|Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -46,11 +46,11 @@ POST /groups/{id}/settings
 | Autorização  | {token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .  No entanto, o nome de exibição da configuração será definido com base no nome do modelo de configurações referenciado.
+No corpo da solicitação, fornece uma representação JSON do [objeto directorySetting.](../resources/directorysetting.md)  No entanto, o nome de exibição da configuração será definido com base no nome do modelo de configurações referenciado.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [directorySetting](../resources/directorysetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e `201 Created` [o objeto directorySetting](../resources/directorysetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -94,7 +94,7 @@ Content-length: 222
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto directorySetting.](../resources/directorysetting.md)
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a81b4ac8d5e404785a290923fb270f439aa6ed38
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6609a4990af3f38338fd5c1f52e0c0966ca6cb23
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960037"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437902"
 ---
 # <a name="list-events"></a>Listar eventos
 
@@ -43,9 +43,6 @@ Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../
 ```http
 GET /me/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendars/{id}/events
-
-GET /me/calendarGroup/calendars/{id}/events
-GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
 Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.
 ```http

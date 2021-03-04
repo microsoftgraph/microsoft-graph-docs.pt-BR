@@ -1,24 +1,24 @@
 ---
-title: Remover aplica-se
-description: Remover um directoryobject da distribuição de recursos.
+title: Remover appliesTo
+description: Remover um directoryObject da adoção de recursos.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 89a94dfd896310bb5f941730ebe8f8be0f686538
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4bd3ce83f81a040583fdc3400e8ce808e1a3c8f8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954534"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436121"
 ---
-# <a name="remove-appliesto"></a>Remover aplica-se
+# <a name="remove-appliesto"></a>Remover appliesTo
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova um aplicato em um objeto [featureRolloutPolicy](../resources/featurerolloutpolicy.md) para remover o [directoryobject](../resources/directoryobject.md) da distribuição de recursos.
+Remova um appliesTo em um [objeto featureRolloutPolicy](../resources/featurerolloutpolicy.md) para remover [o directoryObject](../resources/directoryobject.md) da rolagem de recursos.
 
 ## <a name="permissions"></a>Permissões
 

@@ -1,34 +1,34 @@
 ---
 title: Criar emailAuthenticationMethod
-description: Criar um novo objeto emailAuthenticationMethod.
+description: Crie um novo objeto emailAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 451b49ddcabb72736a67cbcb08391fb0bd45cf27
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: b9ec2d40253faa72fd1f8d354de2649c4487e47e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872167"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436320"
 ---
 # <a name="create-emailauthenticationmethod"></a>Criar emailAuthenticationMethod
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Definir o objeto [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) de um usuário. A autenticação de email é um método de redefinição de senha de autoatendado. Um usuário pode ter apenas um método de autenticação de email.
+Definir o objeto [emailAuthenticationMethod de](../resources/emailauthenticationmethod.md) um usuário. A autenticação de email é um método de redefinição de senha de autoatendados. Um usuário pode ter apenas um método de autenticação de email.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões atuando por si mesmo (do menos para o mais privilegiado)|Permissões atuando em outras pessoas (de menos para mais privilegiados)|
+|Tipo de permissão|Permissões agindo por si mesmo (do mínimo para o mais privilegiado)|Permissões atuando em outras pessoas (do mínimo ao mais privilegiado)|
 |:---|:---|:--|
 | Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Não aplicável. | UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes [funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma das seguintes [funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Administrador global
 * Administrador de autenticação privilegiada
@@ -53,17 +53,17 @@ POST /users/{id | userPrincipalName}/authentication/emailMethods
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON do [objeto emailAuthenticationMethod](../resources/emailauthenticationmethod.md) com o endereço de email desejado.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [emailAuthenticationMethod](../resources/emailauthenticationmethod.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o emailAuthenticationMethod](../resources/emailauthenticationmethod.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|emailAddress|String|Email|
+|emailAddress|String|Endereço de email|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um novo `201 Created` [objeto emailAuthenticationMethod](../resources/emailauthenticationmethod.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto emailAuthenticationMethod](../resources/emailauthenticationmethod.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

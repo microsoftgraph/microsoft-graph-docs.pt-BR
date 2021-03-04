@@ -1,16 +1,16 @@
 ---
 title: Criar conditionalAccessPolicy
-description: Criar um novo conditionalAccessPolicy.
+description: Crie um novo conditionalAccessPolicy.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 791aad23890344dd0aef2bcfb40c32010f13ec22
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 667e704b98752446232af343b7e73f43e3693512
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957817"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437536"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Criar conditionalAccessPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
+Crie um novo [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
+|Delegado (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
+|Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 
 > [!NOTE]
-> Essa API tem um [problema conhecido](/graph/known-issues#permissions) relacionado às permissões.
+> Essa API tem um [problema conhecido relacionado](/graph/known-issues#permissions) a permissões.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,20 +50,20 @@ POST /identity/conditionalAccess/policies
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) .
+No corpo da solicitação, fornece uma representação JSON de [um objeto conditionalAccessPolicy.](../resources/conditionalaccesspolicy.md)
 
-Uma política válida deve conter pelo menos uma regra de [aplicativo](../resources/conditionalaccessapplications.md) -por exemplo, `'includeApplications': 'none'` uma regra de [usuário](../resources/conditionalaccessusers.md) , por exemplo, `'includeUsers': 'none'` e pelo menos um controle de sessão de [concessão](../resources/conditionalaccessgrantcontrols.md) / [session](../resources/conditionalaccesssessioncontrols.md) .
+Uma política válida deve [](../resources/conditionalaccessapplications.md) conter pelo menos uma regra de aplicativo - por exemplo, uma regra de usuário - por exemplo, e pelo menos um controle de sessão `'includeApplications': 'none'` de [](../resources/conditionalaccessusers.md) `'includeUsers': 'none'` [](../resources/conditionalaccessgrantcontrols.md) / [](../resources/conditionalaccesssessioncontrols.md) concessão.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um novo `201 Created` [objeto conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Exemplo 1: exigir a MFA para acessar o Exchange Online fora de locais confiáveis
+### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Exemplo 1: Exigir que o MFA acesse o Exchange Online fora de locais confiáveis
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação comum para exigir a autenticação multifator para acessar o Exchange Online de clientes de autenticação modernos fora de locais confiáveis para um grupo específico.
+O exemplo a seguir mostra uma solicitação comum para exigir autenticação multifa factor para acesso ao Exchange Online de clientes de autenticação modernos fora de locais confiáveis para um determinado grupo.
 
 >**Observação:** Você deve configurar seus locais confiáveis antes de usar essa operação.
 
@@ -197,11 +197,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>Exemplo 2: bloquear o acesso ao Exchange Online de regiões não confiáveis
+### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>Exemplo 2: Bloquear o acesso ao Exchange Online de regiões não confiáveis
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra uma solicitação para bloquear o acesso ao Exchange Online de regiões não confiáveis/desconhecidas.
-Este exemplo pressupõe que o local nomeado com ID = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponde a uma lista de regiões não confiáveis/desconhecidas.
+Este exemplo supõe que o local nomeado com id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponde a uma lista de regiões não confiáveis/desconhecidas.
 
 <!-- {
   "blockType": "request",
@@ -306,10 +306,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-use-all-conditionscontrols"></a>Exemplo 3: usar todas as condições/controles
+### <a name="example-3-use-all-conditionscontrols"></a>Exemplo 3: Usar todas as condições/controles
 
 #### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação para usar todas as condições/controles.
+A seguir, um exemplo da solicitação para usar todas as condições/controles.
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -547,12 +547,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>Exemplo 4: exigir a MFA para o Exchange Online a partir de dispositivos que não são de reclamação
+### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>Exemplo 4: Exigir MFA para o Exchange Online de dispositivos que não são de reclamação
 
->**Observação:** Estamos preterindo a condição **deviceStates** e ela poderá ser removida no futuro. Em frente, use a condição **dispositivos** .
+>**Observação:** Estamos preterindo a condição **deviceStates** e ela pode ser removida no futuro. Em frente, use a **condição de** dispositivos.
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para exigir a MFA para o Exchange Online a partir de dispositivos que não são de reclamações.
+O exemplo a seguir mostra uma solicitação para exigir MFA para o Exchange Online de dispositivos que não são de reclamação.
 
 <!-- {
   "blockType": "request",
@@ -576,10 +576,10 @@ Content-type: application/json
             "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }
@@ -644,10 +644,10 @@ Content-type: application/json
             "excludeRoles": []
         },
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }

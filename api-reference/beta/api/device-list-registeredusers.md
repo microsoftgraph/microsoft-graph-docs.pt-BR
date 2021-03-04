@@ -3,14 +3,14 @@ title: Listar registeredUsers
 description: Recupera uma lista de usuários que são usuários registrados do dispositivo.
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9ebeb558e4c969d9249bbfbca7779b4a0213765e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1cf352b1ba3fcf8c5e76cf200fdfdaa9ef7cc46c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962854"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437167"
 ---
 # <a name="list-registeredusers"></a>Listar registeredUsers
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory. Read. All ou Directory. ReadWrite. All ou Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All ou Directory.ReadWrite.All ou Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application | Directory.Read.All ou Directory.ReadWrite.All |
+|Aplicativo | Directory.Read.All ou Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

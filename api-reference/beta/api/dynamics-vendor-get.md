@@ -1,18 +1,18 @@
 ---
 title: Obter fornecedores
-description: Obtém um objeto fornecedor no Dynamics 365 Business central.
+description: Obtém um objeto vendor no Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 291fbd0cb4956069935f495fd83f844fbbdd75ef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 036454a27b2d363a328fca73ce54c9ce112b566d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008033"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436418"
 ---
 # <a name="get-vendors"></a>Obter fornecedores
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto fornecedor para o Dynamics 365 Business central.
+Recupere as propriedades e as relações de um objeto de fornecedor para o Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-```
+```http
 GET /financials/companies/{id}/vendors/{id}
 ```
 
@@ -49,7 +49,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto **fornecedores** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto **vendors** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -60,7 +60,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
 ```
 
-**Resposta**
+**Response**
 
 Veja a seguir um exemplo da resposta. 
 

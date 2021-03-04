@@ -1,16 +1,16 @@
 ---
 title: Atualizar domínio
-description: Atualize as propriedades do objeto Domain.
+description: Atualize as propriedades do objeto domain.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9099dc74de85755c0268e4eb7e96fc9b7f523a1e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4a4b026aa4bcf9875e615a71ce38b60c76b51e2d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963919"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436467"
 ---
 # <a name="update-domain"></a>Atualizar domínio
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto Domain.
+Atualize as propriedades do objeto domain.
 
-> **Importante:** Somente os domínios verificados podem ser atualizados.
+> **Importante:** Somente domínios verificados podem ser atualizados.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Domain.ReadWrite.All |
+|Aplicativo | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ PATCH /domains/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores de campos relevantes a serem atualizados. As propriedades existentes não incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações feitas em outros valores de propriedade. Para obter o melhor desempenho, inclua somente valores alterados.
+No corpo da solicitação, fornece os valores para campos relevantes a serem atualizados. As propriedades existentes não incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base em alterações em outros valores de propriedade. Para melhor desempenho, inclua apenas valores alterados.
 
 ## <a name="response"></a>Resposta
 

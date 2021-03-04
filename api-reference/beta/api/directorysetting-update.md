@@ -1,16 +1,16 @@
 ---
 title: Atualizar uma configuração de diretório
-description: Atualiza as propriedades de um objeto de configuração de diretório específico.
+description: Atualize as propriedades de um objeto de configuração de diretório específico.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5ecf6d6fbaa3b4d491356924b965bb1ac8b9facb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 805ad8068418d50e6cfc4a6e395a150782cb1aab
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956139"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436621"
 ---
 # <a name="update-a-directory-setting"></a>Atualizar uma configuração de diretório
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto de configuração de diretório específico.
+Atualize as propriedades de um objeto de configuração de diretório específico.
 
-> **Observação** : a versão do/beta desta API só se aplica aos grupos. A versão/v1.0 dessa API foi renomeada para atualizar o *groupSettings*.
+> **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 desta API foi renomeada para *Update groupSettings*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.ReadWrite.All |
+|Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| values | coleção [SettingValue](../resources/settingvalue.md) | O conjunto atualizado de valores.  OBSERVAÇÃO: Você deve fornecer o conjunto inteiro. Você não pode atualizar um único conjunto de valores. |
+| values | [coleção settingValue](../resources/settingvalue.md) | O conjunto atualizado de valores.  OBSERVAÇÃO: Você deve fornecer o conjunto inteiro. Você não pode atualizar um único conjunto de valores. |
 
 ## <a name="response"></a>Resposta
 

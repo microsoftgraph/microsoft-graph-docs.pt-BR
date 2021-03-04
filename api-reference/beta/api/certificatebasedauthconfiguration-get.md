@@ -3,14 +3,14 @@ title: Obter certificateBasedAuthConfiguration
 description: Obter as propriedades de um objeto certificatebasedauthconfiguration.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a00e2638050c5a648e98e9e2edf297fa6662cc46
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d34cf7d4e412490e827c1d8a865e09c6a39e5569
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959407"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437825"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>Obter certificateBasedAuthConfiguration
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as propriedades de um objeto [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .
+Obter as propriedades de [um objeto certificateBasedAuthConfiguration.](../resources/certificateBasedAuthConfiguration.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Organization. Read. All, Organization. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Organization.Read.All, Organization.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application    | Organization. Read. All, Organization. ReadWrite. All |
+| Aplicativo    | Organization.Read.All, Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

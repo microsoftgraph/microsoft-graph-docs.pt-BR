@@ -1,18 +1,18 @@
 ---
-title: Atualizar entitlementManagementSettings
+title: Update entitlementManagementSettings
 description: Atualize um objeto entitlementManagementSettings para alterar uma ou mais de suas propriedades.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 43859025dd98e93d029813d627487e78dca5fd69
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8799edcb1eba5d88837916bc086b7238002889e7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955023"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436285"
 ---
-# <a name="update-entitlementmanagementsettings"></a>Atualizar entitlementManagementSettings
+# <a name="update-entitlementmanagementsettings"></a>Update entitlementManagementSettings
 
 Namespace: microsoft.graph
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Sem suporte. |
+|Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ PATCH /identityGovernance/entitlementManagement/settings
 | Content-Type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON dos parâmetros de um objeto [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) .
+No corpo da solicitação, fornece uma representação JSON dos parâmetros de [um objeto entitlementManagementSettings.](../resources/entitlementmanagementsettings.md)
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.

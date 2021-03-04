@@ -3,14 +3,14 @@ title: Listar verificationDnsRecords
 description: Recupere uma lista de objetos domainDnsRecord.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 924abf24db60a6bab2f229d82f5fb2af1b57e68a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6338f9c6f61594d9485a2241da85e9add7e6efb0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955914"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436495"
 ---
 # <a name="list-verificationdnsrecords"></a>Listar verificationDnsRecords
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [domainDnsRecord](../resources/domaindnsrecord.md) .
+Recupere uma lista de [objetos domainDnsRecord.](../resources/domaindnsrecord.md)
 
-Você não pode usar um domínio associado com seu locatário do Azure AD até que a propriedade seja verificada. Para verificar a propriedade do domínio, recupere os registros de verificação de domínio e adicione os detalhes ao arquivo de zona do domínio. Isso pode ser feito por meio do registrador de domínio ou configuração do servidor DNS.
+Não é possível usar um domínio associado ao locatário do Azure AD até que a propriedade seja verificada. Para verificar a propriedade do domínio, recupere os registros de verificação de domínio e adicione os detalhes ao arquivo de zona do domínio. Isso pode ser feito por meio do registrador de domínio ou da configuração do servidor DNS.
 
-Os domínios raiz precisam de verificação. Por exemplo, contoso.com requer verificação. Se um domínio raiz é verificado, os subdomínios do domínio raiz são verificados automaticamente. Por exemplo, subdomain.contoso.com será verificada automaticamente se contoso.com tiver sido verificada.
+Domínios raiz exigem verificação. Por exemplo, contoso.com requer verificação. Se um domínio raiz for verificado, subdomas do domínio raiz serão verificados automaticamente. Por exemplo, subdomain.contoso.com será verificado automaticamente se contoso.com tiver sido verificado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.Read.All, Domain.ReadWrite.All |
+|Aplicativo | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +60,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [domainDnsRecord](../resources/domaindnsrecord.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [domainDnsRecord](../resources/domaindnsrecord.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

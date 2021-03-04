@@ -3,14 +3,14 @@ title: Excluir uma configuração de diretório
 description: Excluir uma configuração de diretório.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6b64e3d5a4e00ac829f12f3d07446a8da895171d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0d1459e7ace8a2de6bae4fc696ac308cffca6392
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956230"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436691"
 ---
 # <a name="delete-a-directory-setting"></a>Excluir uma configuração de diretório
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Excluir uma configuração de diretório.
 
-> **Observação** : a versão do/beta desta API só se aplica aos grupos. A versão/v1.0 dessa API foi renomeada para *excluir groupSettings*.
+> **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 desta API foi renomeada para *Excluir groupSettings*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,11 +29,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.ReadWrite.All |
+|Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
-Excluir uma configuração específica de todo o locatário ou grupo
+Excluir uma configuração específica de grupo ou de locatário
 ```http
 DELETE /settings/{id}
 DELETE /groups/{id}/settings/{id}

@@ -1,24 +1,24 @@
 ---
-title: Adicionar patrocinador interno da organização conectada
-description: Adicionar um usuário ou grupo aos patrocinadores internos da organização conectada.
+title: Adicionar patrocinador interno da organização conectado
+description: Adicione um usuário ou grupo aos patrocinadores internos da organização conectada.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c63c25d3c08b717977c2c75ce7b4fe737cf2eef0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ebdc00ed51ed63e4e22794c98b916fd22db9b2a2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957621"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437426"
 ---
-# <a name="add-connected-organization-internal-sponsor"></a>Adicionar patrocinador interno da organização conectada
+# <a name="add-connected-organization-internal-sponsor"></a>Adicionar patrocinador interno da organização conectado
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um usuário ou um grupo aos patrocinadores internos da organização conectada. Os patrocinadores internos são um conjunto de usuários que podem aprovar solicitações em nome de outros usuários da organização conectada.
+Adicione um usuário ou um grupo aos patrocinadores internos da organização conectada. Os patrocinadores internos são um conjunto de usuários que podem aprovar solicitações em nome de outros usuários dessa organização conectada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/inter
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON da referência ao objeto [User](../resources/user.md) ou [Group](../resources/group.md) a ser adicionado, como uma `@odata.id` propriedade com o URI completo do usuário ou grupo.
+No corpo da solicitação, fornece uma representação [](../resources/user.md) JSON da referência ao objeto do usuário ou grupo a ser adicionado, como uma propriedade com o URI completo do usuário ou [](../resources/group.md) `@odata.id` grupo.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.

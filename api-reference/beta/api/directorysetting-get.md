@@ -3,14 +3,14 @@ title: Obter uma configuração de diretório
 description: Recupere as propriedades de um objeto de configuração de diretório específico.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a31a3d647bf00a5a827ea43f6ecda1950f5221f0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d548aa51a7412d9a07076ee9c5de846a8c5a751b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956216"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436663"
 ---
 # <a name="get-a-directory-setting"></a>Obter uma configuração de diretório
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades de um objeto de configuração de diretório específico.
 
-> **Observação** : a versão do/beta desta API só se aplica aos grupos. A versão do/v1.0 dessa API foi renomeada para *obter groupSettings*.
+> **Observação**: a versão /beta dessa API só se aplica a grupos. A versão /v1.0 dessa API foi renomeada para *Get groupSettings*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
-Obter uma configuração específica de todo o locatário ou grupo
+Obter uma configuração específica de locatário ou grupo
 ```http
 GET /settings/{id}
 GET /groups/{id}/settings/{id}
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [directorySetting](../resources/directorysetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [directorySetting](../resources/directorysetting.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

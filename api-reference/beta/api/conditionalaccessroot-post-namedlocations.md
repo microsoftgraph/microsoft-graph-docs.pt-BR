@@ -1,16 +1,16 @@
 ---
 title: Criar namedLocation
-description: Criar um novo namedLocation.
+description: Crie um novo namedLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 890beaddcfcea426828da8176a5b84f574d8ea0e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8a6bab90f795259fd2e52610008744434e7f6247
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957820"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437545"
 ---
 # <a name="create-namedlocation"></a>Criar namedLocation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [namedLocation](../resources/namedlocation.md) .
+Crie um novo [objeto namedLocation.](../resources/namedlocation.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,15 +47,15 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [ipNamedLocation](../resources/ipnamedlocation.md) ou [countryNamedLocation](../resources/countrynamedlocation.md) .
+No corpo da solicitação, fornece uma representação JSON de [um objeto ipNamedLocation](../resources/ipnamedlocation.md) [ou countryNamedLocation.](../resources/countrynamedlocation.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [IpNamedLocation](../resources/ipnamedlocation.md) ou [countryNamedLocation](../resources/countrynamedlocation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto ipNamedLocation](../resources/ipnamedlocation.md) ou [countryNamedLocation](../resources/countrynamedlocation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-an-ipnamedlocation"></a>Exemplo 1: criar um ipNamedLocation
+### <a name="example-1-create-an-ipnamedlocation"></a>Exemplo 1: Criar um ipNamedLocation
 
 #### <a name="request"></a>Solicitação
 
@@ -142,7 +142,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-create-a-countrynamedlocation"></a>Exemplo 2: criar um countryNamedLocation
+### <a name="example-2-create-a-countrynamedlocation"></a>Exemplo 2: Criar um countryNamedLocation
 
 #### <a name="request"></a>Solicitação
 

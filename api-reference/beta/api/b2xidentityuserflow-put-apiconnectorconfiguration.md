@@ -1,16 +1,16 @@
 ---
 title: Configurar um conector de API em um fluxo de usuários
-description: Habilita ou desabilita um conector de API para uma etapa específica em um fluxo de usuário atualizando a propriedade apiConnectorConfiguration.
+description: Habilita ou desabilite um conector de API para uma etapa específica em um fluxo de usuário atualizando a propriedade apiConnectorConfiguration.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 703c1ddd94b5c1de92e606d735b98425c9c99568
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 52ac5ec8d2ec2cd2522576c5956acc003b265314
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843814"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438026"
 ---
 # <a name="configure-userflowapiconnectorconfiguration"></a>Configurar userFlowApiConnectorConfiguration
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize a [propriedade apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) em [um b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) para habilitar ou desabilitar um conector de API em um fluxo de usuário. Cada relação do [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponde a uma etapa específica no fluxo do usuário que pode ser configurada para chamar um conector de API. Você configura um conector de API para uma etapa específica, uma de cada vez, conforme mostrado abaixo.
+Atualize a [propriedade apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) em [um b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) para habilitar ou desabilitar um conector de API em um fluxo de usuário. Cada relação da [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponde a uma etapa específica no fluxo do usuário que pode ser configurada para chamar um conector de API. Você configura um conector de API para uma etapa específica de cada vez, conforme mostrado abaixo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -55,7 +55,7 @@ PUT /identity/b2xUserFlows/{b2xUserFlowId}/apiConnectorConfiguration/{step}/$ref
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do `id` [identityApiConnector](../resources/identityapiconnector.md) que você deseja usar na etapa específica. Para desabilitar um conector de API, o valor pode ser {} .
+No corpo da solicitação, forneça uma representação JSON da `id` [identidadeApiConnector](../resources/identityapiconnector.md) que você deseja usar a etapa específica. Para desabilitar um conector de API, o valor pode ser {} .
 
 ## <a name="response"></a>Resposta
 
@@ -63,7 +63,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-enable-api-connector-for-post-idp-federation-on-sign-up"></a>Exemplo 1: Habilitar conector de API para Federação Pós-IDP ao se inscrever
+### <a name="example-1-enable-api-connector-for-post-idp-federation-on-sign-up"></a>Exemplo 1: Habilitar o conector de API para Federação pós-IDP ao se inscrever
 
 #### <a name="request"></a>Solicitação
 
@@ -119,7 +119,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-enable-api-connector-for-post-attribute-collection-on-sign-up"></a>Exemplo 2: Habilitar o conector de API para a Coleta de Atributos Post ao se inscrever
+### <a name="example-2-enable-api-connector-for-post-attribute-collection-on-sign-up"></a>Exemplo 2: Habilitar o conector de API para a coleção Post Attribute ao se inscrever
 
 #### <a name="request"></a>Solicitação 
 
@@ -173,7 +173,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-disable-an-api-connector-for-post-attribute-collection-on-sign-up"></a>Exemplo 3: Desabilitar um conector de API para Coleta de Atributos Post ao se inscrever
+### <a name="example-3-disable-an-api-connector-for-post-attribute-collection-on-sign-up"></a>Exemplo 3: Desabilitar um conector de API para a coleção Post Attribute ao se inscrever
 
 #### <a name="request"></a>Solicitação 
 

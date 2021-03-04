@@ -1,16 +1,16 @@
 ---
 title: Obter directoryObject
-description: Recupere as propriedades e os relacionamentos do objeto directoryobject.
+description: Recupere as propriedades e as relações do objeto directoryobject.
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e616e0aa4955173917cd0dcfadf54f8b5229ba56
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7303cefc9779f4080ddccd3fbe6b55ec6a4404c3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963099"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436908"
 ---
 # <a name="get-directoryobject"></a>Obter directoryObject
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos do objeto directoryobject.
+Recupere as propriedades e as relações do objeto directoryobject.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

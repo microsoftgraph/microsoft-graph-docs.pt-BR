@@ -1,18 +1,18 @@
 ---
 title: Criar fornecedores
-description: Cria um objeto fornecedor no Dynamics 365 Business central.
+description: Cria um objeto vendor no Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b0a85dd1d177f5a6ac3caea8054e6bc0aa5aeb0d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 24e0137e4d4979133ac03f98a0b58d599b018d9e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981545"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436432"
 ---
 # <a name="create-vendors"></a>Criar fornecedores
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um objeto fornecedor no Dynamics 365 Business central.
+Crie um objeto vendor no Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,11 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
-```
+```http
 POST /financials/companies/{id}/vendors
 ```
 
@@ -46,16 +46,16 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 |Content-Type  |application/json   |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto **fornecedores** .
+No corpo da solicitação, fornece uma representação JSON de **um objeto vendors.**
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna ```201 Created``` um código de resposta e um objeto **fornecedores** no corpo da resposta.
+Se tiver êxito, este método retornará ```201 Created``` o código de resposta e um objeto **vendors** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 **Solicitação**
 
-Veja a seguir um exemplo de uma solicitação.
+Aqui está um exemplo de uma solicitação.
 
 ```json
 POST https://graph.microsoft.com/beta/financials/companies/{id}/vendors
@@ -82,7 +82,7 @@ Content-type: application/json
 }
 ```
 
-**Resposta**
+**Response**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -98,7 +98,6 @@ Content-type: application/json
   "displayName": "Wide World Importers",
   "lastModifiedDateTime": "2015-11-09T02:14:32Z"
 }
-
 ```
 
 

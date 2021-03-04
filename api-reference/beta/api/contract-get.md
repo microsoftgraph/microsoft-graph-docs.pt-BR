@@ -1,24 +1,24 @@
 ---
-title: Obter contrato
-description: Recupere as propriedades e os relacionamentos do objeto Contract.
+title: Obter Contrato
+description: Recupere as propriedades e as relações do objeto contract.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 60739a6c12494feab5d61d4aa7563f84cd0ec273
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9e88686b3772fcd5f9c43ddd64e1c9eda865b518
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957213"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437270"
 ---
-# <a name="get-contract"></a>Obter contrato
+# <a name="get-contract"></a>Obter Contrato
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos do objeto [Contract](../resources/contract.md) .
+Recupere as propriedades e as relações do [objeto contract.](../resources/contract.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [Contract](../resources/contract.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` [um objeto Contract](../resources/contract.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

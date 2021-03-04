@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5532a950a44b2524501d387c249c88e5d4f4efd4
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 744149e76a074427def4bf84f25b902ba15fbb73
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719668"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436117"
 ---
 # <a name="update-event"></a>Atualizar evento
 
@@ -45,9 +45,6 @@ PATCH /groups/{id}/calendar/events/{id}
 PATCH /me/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-PATCH /me/calendargroup/calendars/{id}/events/{id}
-PATCH /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
 PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
@@ -65,19 +62,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | corpo|ItemBody|O corpo da mensagem associada ao evento.|
 | categories|Coleção de cadeias de caracteres|As categorias associadas ao evento.|
 | end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina. |
-|hideAttendees|Booliano|Quando definido como `true` , cada participante se vê apenas na lista de reunião e no **acompanhamento** da reunião. O padrão é false.|
-| importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|hideAttendees|Booliano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é falso.|
+| importance|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 | isAllDay|Booliano|Defina como true se o evento durar o dia inteiro. Se estiver definido como true, independentemente de ser um evento de um ou de vários dias, a hora de início e término deve ser definida como meia-noite e estar no mesmo fuso horário.|
 |isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
 | isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
-| location|Local|O local do evento.|
+| location|Localização|O local do evento.|
 |locations|[location](../resources/location.md) collection|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
 |onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Os valores possíveis são `teamsForBusiness`, `skypeForBusiness` e `skypeForConsumer`. Opcional. |
 | recurrence|PatternedRecurrence|O padrão de recorrência do evento.|
 | reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
 | responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
 | sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
-| showAs|String|O status a ser exibido. Os valores possíveis são: `free` , `tentative` , `busy` , `oof` , `workingElsewhere` , `unknown` .|
+| showAs|String|O status a ser exibido. Os valores possíveis `free` são: `tentative` , , , , , `busy` `oof` `workingElsewhere` `unknown` .|
 | iniciar|DateTimeTimeZone|A data, a hora e o fuso horário do evento. |
 | assunto|String|O texto da linha de assunto do evento.|
 

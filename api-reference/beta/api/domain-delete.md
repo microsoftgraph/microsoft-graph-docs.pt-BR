@@ -3,14 +3,14 @@ title: Excluir domínio
 description: Exclui um domínio de um locatário.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1f881ca2ac99745d98b90dfb6ca3ed6c45ee4b46
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4f27b6a7b9ef437f2187cb4b522fc84f40d33670
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956062"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436570"
 ---
 # <a name="delete-domain"></a>Excluir domínio
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Exclui um domínio de um locatário.
 
-> **Importante:** Os domínios excluídos não são recuperáveis.
+> **Importante:** Domínios excluídos não podem ser recuperados.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Domain.ReadWrite.All |
+|Aplicativo | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

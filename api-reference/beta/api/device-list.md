@@ -3,14 +3,14 @@ title: Listar dispositivos
 description: 'Recupere uma lista de dispositivos registrados no diretório. '
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: eeb80864abfd8e198093d839930bc37065c5fd4d
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 0766814c56315c63f60ade129443d8586016e90a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752770"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437104"
 ---
 # <a name="list-devices"></a>Listar dispositivos
 
@@ -59,7 +59,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-a-list-of-devices"></a>Exemplo 1: obter uma lista de dispositivos
+### <a name="example-1-get-a-list-of-devices"></a>Exemplo 1: Obter uma lista de dispositivos
 
 #### <a name="request"></a>Solicitação
 
@@ -121,7 +121,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-devices"></a>Exemplo 2: obter apenas uma contagem de dispositivos
+### <a name="example-2-get-only-a-count-of-devices"></a>Exemplo 2: Obter apenas uma contagem de dispositivos
 
 #### <a name="request"></a>Solicitação
 
@@ -153,7 +153,7 @@ Content-type: text/plain
 
 294
 
-### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 3: use $filter e $top para obter um dispositivo com um nome de exibição que comece com ' a ', incluindo uma contagem de objetos retornados
+### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 3: use $filter e $top para obter um dispositivo com um nome de exibição que comece com "a" incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
@@ -211,7 +211,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>Exemplo 4: Use $search para obter dispositivos com nomes de exibição que contenham as letras "Android", incluindo uma contagem de objetos retornados
+### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>Exemplo 4: use $search para obter dispositivos com nomes de exibição que contenham as letras "Android", incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 

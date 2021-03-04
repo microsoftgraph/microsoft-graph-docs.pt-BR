@@ -1,16 +1,16 @@
 ---
 title: 'event: snoozeReminder'
-description: Adiar um lembrete para um evento em um calendário de usuário até um novo horário.
+description: Adie um lembrete para um evento em um calendário do usuário até uma nova hora.
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 597fa4009c4d2cc3f714b149e1d2196221fc15ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 835219be8d6cd286c8ed54edac9363800b0cc6f5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954744"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436194"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adiar um lembrete para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md) de usuário até um novo horário.
+Adie um lembrete para [um evento](../resources/event.md) em um calendário do [usuário](../resources/calendar.md) até uma nova hora.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -40,9 +40,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/snoozeReminder
 
 POST /me/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/snoozeReminder
-
-POST /me/calendargroup/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/snoozeReminder
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder

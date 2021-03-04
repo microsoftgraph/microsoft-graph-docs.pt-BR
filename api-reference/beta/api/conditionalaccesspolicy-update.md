@@ -1,16 +1,16 @@
 ---
 title: Atualizar conditionalAccessPolicy
-description: Atualiza as propriedades de um objeto conditionalAccessPolicy.
+description: Atualize as propriedades de um objeto conditionalAccessPolicy.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 28db2e1b2e366604536bfa72e465f5f56d80f4b6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 92c11d7577656b3cea62bf627209f2cb5c9aa351
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957915"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437594"
 ---
 # <a name="update-conditionalaccesspolicy"></a>Atualizar conditionalAccessPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) .
+Atualize as propriedades de [um objeto conditionalAccessPolicy.](../resources/conditionalaccesspolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
+|Delegado (conta corporativa ou de estudante)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
+|Aplicativo                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess e Application.Read.All |
 
 > [!NOTE]
-> Essa API tem um [problema conhecido](/graph/known-issues#permissions) relacionado às permissões.
+> Essa API tem um [problema conhecido relacionado](/graph/known-issues#permissions) a permissões.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ PATCH /identity/conditionalAccess/policies/{id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-Para obter a lista de propriedades, consulte [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
+Para ver a lista de propriedades, [consulte conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
 
 ## <a name="response"></a>Resposta
 

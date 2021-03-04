@@ -1,16 +1,16 @@
 ---
 title: Listar contratos
-description: Recupere uma lista de objetos Contract associados a um locatário do parceiro.
+description: Recupere uma lista de objetos de contrato associados a um locatário parceiro.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2eb3ba9b0ef11e1845da968c4041abb87cfb9a9f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 88048c2ff6b2bf734c81baa2085b07673460a266
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956909"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437265"
 ---
 # <a name="list-contracts"></a>Listar contratos
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [Contract](../resources/contract.md) associados a um locatário do parceiro.
+Recupere uma lista de [objetos de](../resources/contract.md) contrato associados a um locatário parceiro.
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,7 +42,7 @@ GET /contracts
 
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. 
 
-> Há suporte para filtragem para customerId, DefaultDomainName e displayName.
+> A filtragem é suportada para customerId, defaultDomainName e displayName.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Contract](../resources/contract.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [Contract](../resources/contract.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

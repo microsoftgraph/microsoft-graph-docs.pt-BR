@@ -1,16 +1,16 @@
 ---
 title: Excluir directoryObject
-description: Excluir directoryobject.
+description: Excluir directoryObject.
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6bb655c26e91891eda9ac59236f5c08e8960bd4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cef22c9deb67d9e1ac7c083fc9e3152bf6c78fa5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008908"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436929"
 ---
 # <a name="delete-directoryobject"></a>Excluir directoryObject
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir directoryobject.
+Excluir directoryObject.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
-**OBSERVAÇÃO:** usuários, grupos e contatos são tipos de objeto de diretório. Como resultado, se você precisar excluir usuários, a permissão a seguir poderá e deve ser usada: user. ReadWrite. All
+**OBSERVAÇÃO:** usuários, grupos e contatos são tipos de objeto de diretório. Como resultado, se você precisar excluir usuários, a seguinte permissão pode e deve ser usada: User.ReadWrite.All
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

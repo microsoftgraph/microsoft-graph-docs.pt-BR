@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c760cdb6f4963c90edd479a0f84b5fd6d37eda5
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: baf3bca6650afc44781866ea6b5d176b80424480
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719731"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437916"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -41,9 +41,6 @@ Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../
 ```http
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
-
-POST /me/calendarGroup/calendars/{id}/events
-POST /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
 Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.
 ```http
@@ -232,7 +229,7 @@ Content-type: application/json
 ### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a>Exemplo 2: criar e habilitar um evento como uma reunião online
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir cria um evento no calendário especificado do usuário conectado e o habilita como uma reunião online.
+O exemplo a seguir cria um evento no calendário especificado do usuário assinado e o habilita como uma reunião online.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 

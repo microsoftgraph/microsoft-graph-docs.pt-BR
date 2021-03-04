@@ -3,14 +3,14 @@ title: Obter dataPolicyOperation
 description: Recupere as propriedades do objeto dataPolicyOperation.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fb356740aa79a1980bfbe0b0305a362a4a0db7df
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ec3a59b236cdb7cf833332f7c79d1cf35e5e693c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956488"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437216"
 ---
 # <a name="get-datapolicyoperation"></a>Obter dataPolicyOperation
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  User. Export. All e User. Read. All  |
+|Delegado (conta corporativa ou de estudante) |  User.Export.All e User.Read.All  |
 |Delegado (conta pessoal da Microsoft) |  Não aplicável  |
-|Application | User. Export. All e User. Read. All | 
+|Aplicativo | User.Export.All e User.Read.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /dataPolicyOperations/{id}
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [dataPolicyOperation](../resources/datapolicyoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto dataPolicyOperation](../resources/datapolicyoperation.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 

@@ -1,16 +1,16 @@
 ---
 title: Adicionar membro da função de diretório
-description: Criar um novo membro de função de diretório.
+description: Crie um novo membro de função de diretório.
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dd7554c41816e54240e081fd1265861f24fa7d56
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0385ad02b854753e9b88e103a14b68aebd290497
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956292"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436719"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo membro de função de diretório.
+Crie um novo membro de função de diretório.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement.ReadWrite.Directory |
+|Aplicativo | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ Se bem-sucedido, este método retorna um código de resposta `201 Created` e um 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-assign-a-built-in-role-to-a-user"></a>Exemplo 1: atribuir uma função interna a um usuário
+### <a name="example-1-assign-a-built-in-role-to-a-user"></a>Exemplo 1: Atribuir uma função interna a um usuário
 #### <a name="request"></a>Solicitação
 O exemplo a seguir atribui uma função interna a um usuário.
 
@@ -96,9 +96,9 @@ O exemplo a seguir mostra a resposta.
 HTTP/1.1 204 No content
 ```
 
-### <a name="example-2-assign-a-built-in-role-to-a-group"></a>Exemplo 2: atribuir uma função interna a um grupo
+### <a name="example-2-assign-a-built-in-role-to-a-group"></a>Exemplo 2: Atribuir uma função embutida a um grupo
 #### <a name="request"></a>Solicitação
-Você pode usar um conjunto de recursos específico como usuários ou grupos no corpo da solicitação ou pode usar o **directoryObjects** genérico. Este exemplo mostra como você pode usar o **directoryObjects**.
+Você pode usar um conjunto de recursos específico como usuários ou grupos no corpo da solicitação ou pode usar **directoryObjects genéricos.** Este exemplo mostra como você pode usar **directoryObjects**.
 
 <!-- {
   "blockType": "request",

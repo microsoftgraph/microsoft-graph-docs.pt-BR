@@ -1,24 +1,24 @@
 ---
-title: Remover patrocinador interno da organização conectada
-description: Remover um usuário ou grupo dos patrocinadores internos da organização conectada.
+title: Remover o patrocinador interno da organização conectado
+description: Remova um usuário ou grupo dos patrocinadores internos da organização conectada.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: de860ed2e5bc087ec14b1ee0765cc1a863724e93
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 35450f6b409543d7b56f27b6b682f4184b5b33b1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957769"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437510"
 ---
-# <a name="remove-connected-organization-internal-sponsor"></a>Remover patrocinador interno da organização conectada
+# <a name="remove-connected-organization-internal-sponsor"></a>Remover o patrocinador interno da organização conectado
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover um usuário ou grupo dos patrocinadores internos da organização conectada. Os patrocinadores internos são um conjunto de usuários que podem aprovar solicitações em nome de outros usuários da organização conectada.
+Remova um usuário ou um grupo dos patrocinadores internos da organização conectada. Os patrocinadores internos são um conjunto de usuários que podem aprovar solicitações em nome de outros usuários dessa organização conectada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

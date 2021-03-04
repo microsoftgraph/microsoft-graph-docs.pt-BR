@@ -1,16 +1,16 @@
 ---
-title: Excluir registeredowners
-description: Remover um usuário como proprietário registrado do dispositivo.
+title: Excluir proprietários registrados
+description: Remova um usuário como proprietário registrado do dispositivo.
 localization_priority: Normal
 author: michaelrm97
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: eb4da89260b91ae96ecfd21bbf9f3266b0228084
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 094c7aa46102d10cd61267b0056654d3e463a335
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956453"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437229"
 ---
 # <a name="delete-registeredowner"></a>Excluir registeredOwner
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover um usuário como proprietário registrado do dispositivo.
+Remova um usuário como proprietário registrado do dispositivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.ReadWrite.All |
+|Aplicativo | Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

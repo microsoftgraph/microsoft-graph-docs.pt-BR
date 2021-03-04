@@ -1,16 +1,16 @@
 ---
 title: Listar certificateBasedAuthConfigurations
-description: Obtenha uma lista de objetos certificatebasedauthconfiguration.
+description: Obter uma lista de objetos certificatebasedauthconfiguration.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4637e53148f03969a04c687622f1d071211d93f3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6bc1c504ba9acc7f9afeacdf733e572de65f9fca
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959371"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437790"
 ---
 # <a name="list-certificatebasedauthconfigurations"></a>Listar certificateBasedAuthConfigurations
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de objetos [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .
+Obter uma lista de [objetos certificateBasedAuthConfiguration.](../resources/certificateBasedAuthConfiguration.md)
 
 > [!NOTE]
-> Apenas uma única instância do certificateBasedAuthConfiguration pode existir na coleção. Ele sempre tem uma ID fixa com um valor de ' 29728ade-6ae4-4ee9-9103-412912537da5 '.
+> Somente uma única instância de certificateBasedAuthConfiguration pode existir na coleção. Ele sempre tem uma ID fixa com um valor '29728ade-6ae4-4ee9-9103-412912537da5'.
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Organization. Read. All, Organization. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Organization.Read.All, Organization.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application    | Organization. Read. All, Organization. ReadWrite. All |
+| Aplicativo    | Organization.Read.All, Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
