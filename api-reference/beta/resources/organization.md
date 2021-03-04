@@ -3,14 +3,14 @@ title: tipo de recurso organization
 description: 'Representa um locatário do Azure Active Directory. '
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b8190a189c473c9758ef06078d8cab09fc75ce1d
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 02fb9079ed8ecec9bab8ad8833ce36ff3569813b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030232"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442926"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -27,14 +27,14 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Obter organização](../api/organization-get.md) | Coleção [organization](organization.md)|Leia as propriedades e as relações do objeto de organização.|
-|[Atualizar a organização](../api/organization-update.md) | [organization](organization.md)  |Atualize o objeto organization. As únicas propriedades que podem ser atualizadas são: **marketingNotificationMails** , **technicalNotificationMails** , **securityComplianceNotificationMails** , **securityComplianceNotificationPhones** e **privacyProfile**. |
+|[Atualizar a organização](../api/organization-update.md) | [organization](organization.md)  |Atualize o objeto organization. As únicas propriedades que podem ser atualizadas são: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** e **privacyProfile**. |
 | [Obter configurações da organização](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Leia o objeto de configurações da organização. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
 |**Extensões de esquema**| | |
-|[Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) || Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.| [Criar organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Crie um novo organizationalBrandingProperties postando na coleção branding. |
-| [Obter identidade visual](../api/organizationalbrandingproperties-get.md) | coleção [organizationalBrandingProperties](organizationalbrandingproperties.md) | Obtenha uma coleção de objetos organizationalBrandingProperties. |
+|[Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) || Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.| [Criar organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Crie uma nova organizationalBrandingProperties postando na coleção de identidade visual. |
+| [Obter identidade visual](../api/organizationalbrandingproperties-get.md) | [Coleção organizationalBrandingProperties](organizationalbrandingproperties.md) | Obter uma coleção de objetos organizationalBrandingProperties. |
 
 ## <a name="properties"></a>Propriedades 
 | Propriedade | Tipo   | Descrição |
@@ -46,7 +46,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | countryLetterCode | Cadeia de caracteres | Abreviação do país/região da organização. |
 | createdDateTime | DateTimeOffset | Carimbo de hora de criação da organização. Não é possível modificar o valor e ele é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 | deletedDateTime | DateTimeOffset | Representa a data e a hora que o locatário do Azure AD foi excluído usando o formato ISO 8601 e está sempre no horário do UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
-| directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | As informações de cota de tamanho de diretório de uma organização. |
+| directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | As informações de cota de tamanho do diretório de uma organização. |
 | displayName | String | O nome de exibição do locatário. |
 | id | Cadeia de caracteres | A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | **verdadeiro** se a organização estiver habilitada no Multi-Geo; **falso** se a organização não estiver habilitada no Multi-Geo, **nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
@@ -63,16 +63,16 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | state | Cadeia de caracteres | Nome do estado do endereço da organização. |
 | street | Cadeia de caracteres | Nome da rua do endereço da organização. |
 | technicalNotificationMails |Coleção de cadeias de caracteres | Não anulável. |
-| verifiedDomains | coleção [verifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável. |
+| verifiedDomains | [coleção verifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável. |
 
 ## <a name="relationships"></a>Relações
 
 | Relação  | Tipo  |Descrição|
 |:---------------|:--------|:----------|
-|certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
-|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o recurso de organização. Anulável.| 
-|organizationalBranding|coleção [organizationalBrandingProperties](organizationalbrandingproperties.md)| Identidade visual da organização. Anulável.|
-|settings|[organizationSettings](organizationsettings.md) | Recupere as propriedades e os relacionamentos do objeto organizationSettings. Anulável.|
+|certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade navigation para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
+|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o recurso da organização. Anulável.| 
+|organizationalBranding|[Coleção organizationalBrandingProperties](organizationalbrandingproperties.md)| Identidade visual para a organização. Anulável.|
+|settings|[organizationSettings](organizationsettings.md) | Recupere as propriedades e as relações do objeto organizationSettings. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

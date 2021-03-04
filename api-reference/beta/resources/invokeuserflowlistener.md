@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso invokeUserFlowListener
+title: Tipo de recurso invokeUserFlowListener
 description: Um ouvinte usado para invocar um fluxo de usuário durante um evento de autenticação.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0ca1c61d830a2ff98f2d72839129d75cc6287c36
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 7eee91460c623be982cb316edae1c3c2f0734b07
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720089"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442989"
 ---
-# <a name="invokeuserflowlistener-resource-type"></a>tipo de recurso invokeUserFlowListener
+# <a name="invokeuserflowlistener-resource-type"></a>Tipo de recurso invokeUserFlowListener
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode criar um [invokeUserFlowListener](../resources/invokeuserflowlistener.md) para o evento onSignUpStart. Isso associa um aplicativo a um fluxo de usuário, que permite a [inscrição de autoatendimento de identidade externa](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) para o aplicativo. Depois que um aplicativo é associado a um fluxo de usuário, os usuários que acessam esse aplicativo poderão iniciar um fluxo de inscrição que Provisione uma conta de convidado.
+Você pode criar [um invokeUserFlowListener](../resources/invokeuserflowlistener.md) para o evento onSignUpStart. Isso associa um aplicativo a um fluxo de usuário, que permite que identidades externas [se inscrevam](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) no aplicativo. Depois que um aplicativo é associado a um fluxo de usuários, os usuários que vão para esse aplicativo poderão iniciar um fluxo de inscrição que provisiona uma conta de convidado.
 
-Herda do tipo de base abstrato [authenticationListener](../resources/authenticationlistener.md).
+Herda da autenticação de tipo base [abstrataListener](../resources/authenticationlistener.md).
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador da ação. Herdado de [authenticationListener](../resources/authenticationlistener.md).|
-|prioridade|Int32|A prioridade da ação que é usada para determinar uma de várias ações aplicáveis. Herdado de [authenticationListener](../resources/authenticationlistener.md).|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtro com base na origem da autenticação que é usada para determinar se o ouvinte é executado. Herdado de [authenticationListener](../resources/authenticationlistener.md).|
+|id|String|O identificador da ação. Herdado de [authenticationListener](../resources/authenticationlistener.md).|
+|prioridade|Int32|A prioridade da ação usada para determinar uma de várias ações aplicáveis. Herdado de [authenticationListener](../resources/authenticationlistener.md).|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtrar com base na origem da autenticação usada para determinar se o ouvinte é executado. Herdado de [authenticationListener](../resources/authenticationlistener.md).|
 
 ## <a name="relationships"></a>Relações
 
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|userflow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|O fluxo do usuário que é chamado quando esta ação é executada.|
+|userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|O fluxo do usuário que é invocado quando essa ação é executada.|
 
 ## <a name="json-representation"></a>Representação JSON
 

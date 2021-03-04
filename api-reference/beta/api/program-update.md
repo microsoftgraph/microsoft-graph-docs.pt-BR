@@ -1,24 +1,24 @@
 ---
-title: Programa de atualização
-description: No recurso de revisões do Azure AD Access, atualize um objeto Program existente.
+title: Atualizar programa
+description: No recurso de revisões de acesso do Azure AD, atualize um objeto de programa existente.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: f8651a867ae53fb191983731aa1dff29735ee535
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b1e601908a8f12523f9e02549e3fd24903e77bda
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963505"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442219"
 ---
-# <a name="update-program"></a>Programa de atualização
+# <a name="update-program"></a>Atualizar programa
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , atualize um objeto [Program](../resources/program.md) existente.
+No recurso de [revisões](../resources/accessreviews-root.md) de acesso do Azure AD, atualize um objeto [de programa](../resources/program.md) existente.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
-O usuário conectado também deve estar em uma função de diretório que permite a atualização de um programa.
+O usuário inscreveu também deve estar em uma função de diretório que permita que ele atualize um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ PATCH /programs('{programId}')
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [Program](../resources/program.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto program.](../resources/program.md)
 
 A tabela a seguir mostra as propriedades que podem ser fornecidas quando você atualiza um programa.
 
@@ -52,11 +52,11 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas quando você a
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `204, Accepted` código de resposta e um objeto [Program](../resources/program.md) no corpo da resposta.
+Se tiver êxito, este método retornará `204, Accepted` um código de resposta e um objeto [program](../resources/program.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, forneça uma representação JSON dos parâmetros do objeto [Program](../resources/program.md) a ser alterado.
+No corpo da solicitação, fornece uma representação JSON dos parâmetros de objeto do [programa](../resources/program.md) a ser alterado.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -113,8 +113,8 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar programControls de um programa](program-listcontrols.md) |     coleção [programControl](../resources/programcontrol.md)|    Obter uma coleção de controles de um programa.|
-|[Criar programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   Adicionar um programControl a um programa.|
+|[Listar programControls de um programa](program-listcontrols.md) |     [Coleção programControl](../resources/programcontrol.md)|    Obter uma coleção dos controles de um programa.|
+|[Criar programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   Adicione um programControl a um programa.|
 
 <!--
 {

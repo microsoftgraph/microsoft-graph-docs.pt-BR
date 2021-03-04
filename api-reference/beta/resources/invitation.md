@@ -3,14 +3,14 @@ title: tipo de recurso convite
 description: Representa um convite usado para adicionar usuários externos a uma organização.
 localization_priority: Normal
 author: elisolMS
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0e210def9b58a6ff5a9abe295ec869bb6ab88051
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f132f1fb79c9f74df636b4684f6d42cdbe5bdc7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989070"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443003"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -30,7 +30,7 @@ O processo de convite usa o fluxo a seguir:
 A criação de um convite retornará uma URL de resgate na resposta (*inviteRedeemUrl*). A API de criação de convite pode enviar automaticamente um email que contém a URL de resgate ao usuário convidado, definindo-se *sendInvitationMessage* como true. Você também pode personalizar a mensagem será enviada ao usuário convidado. Em vez disso, se você desejar enviar a URL de resgate por outros meios, poderá definir *sendInvitationMessage* como false e usar a URL de resgate da resposta para criar sua própria comunicação. Atualmente, não há qualquer API para execução do processo de resgate. O usuário convidado tem que clicar no link *inviteRedeemUrl* enviado na comunicação na etapa anterior e passar pelo processo de resgate interativo em um navegador. Após a conclusão, o usuário convidado torna-se um usuário externo na organização.
 
 >[!NOTE]
->O status do convite é rastreado usando as propriedades **externalUserState** e **externalUserStateChangeDateTime** no recurso de [usuário](user.md) externo criado como parte da solicitação de convite.
+>O status do convite é rastreado usando **as propriedades externalUserState** e [](user.md) **externalUserStateChangeDateTime** no recurso de usuário externo criado como parte da solicitação de convite.
 
 ## <a name="methods"></a>Methods
 | Método       | Tipo de retorno  |Descrição|
@@ -45,8 +45,8 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
 |sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
 |inviteRedirectUrl|String|A URL para a qual o usuário deve ser redirecionado após o resgate do convite. Obrigatório.|
-|inviteRedeemUrl|String|A URL que o usuário pode usar para resgatar o convite. Somente leitura.|
-|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você pode convidar como um membro se você for administrador da empresa. |
+|inviteRedeemUrl|String|A URL que o usuário pode usar para resgatar seu convite. Somente leitura.|
+|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você pode convidar como Membro se for administrador da empresa. |
 |status|String|O status do convite. Valores possíveis: PendingAcceptance, Completed, InProgress, e Error|
 
 ## <a name="relationships"></a>Relações

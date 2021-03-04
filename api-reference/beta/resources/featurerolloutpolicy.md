@@ -3,14 +3,14 @@ title: Tipo de recurso featureRolloutPolicy
 description: Representa uma política de lançamento de recursos associada a um objeto de diretório.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fa572cf9140a00d28b9db9d0e6a8e58fe6bb8969
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 8c223f377941f0a897810de20aadeb4b86804d9f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161667"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443109"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>Tipo de recurso featureRolloutPolicy
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma política de lançamento de recursos associada a um objeto de diretório. A criação de uma política de lançamento de recursos ajuda os administradores de locatários a controlar recursos do Azure AD com um grupo específico antes de ativar recursos para toda a organização. Isso minimiza o impacto e ajuda os administradores a testar e lançar gradualmente os recursos relacionados à autenticação.
+Representa uma política de lançamento de recursos associada a um objeto de diretório. A criação de uma política de lançamento de recursos ajuda os administradores de locatários a criar recursos piloto do Azure AD com um grupo específico antes de habilenciar recursos para toda a organização. Isso minimiza o impacto e ajuda os administradores a testar e lançar gradualmente os recursos relacionados à autenticação.
 
-A seguir estão as limitações da lançamento de recursos:
+Veja a seguir as limitações da adoção de recursos:
 
 - Cada recurso oferece suporte a no máximo 10 grupos.
-- O **campo appliesTo** só oferece suporte a grupos.
-- Grupos dinâmicos e grupos aninhados não são suportados.
+- O **campo appliesTo só** dá suporte a grupos.
+- Não há suporte para grupos dinâmicos e grupos aninhados.
 
-A seguir estão os pré-requisitos para cada um dos recursos atualmente com suporte para a lançamento usando essa política de lançamento.
+A seguir estão os pré-requisitos para cada um dos recursos atualmente com suporte para a adoção usando essa política de lançamento.
 
-### <a name="passthrough-authentication"></a>Autenticação de passagem
+### <a name="passthrough-authentication"></a>Autenticação passo a passo
 
-* Identifique um servidor executando o Windows Server 2012 R2 ou posterior onde você deseja que o [Agente PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) seja executado.Verifique se o servidor está ingressado no domínio, se pode autenticar usuários selecionados no Active Directory e se pode se comunicar com o Azure AD em portas de saída/URLs.
+* Identifique um servidor executando o Windows Server 2012 R2 ou posterior onde você deseja que o [Agente PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) seja executado.Verifique se o servidor está ingressado no domínio, pode autenticar usuários selecionados com o Active Directory e pode se comunicar com o Azure AD em portas de saída/URLs.
 * [Baixe](https://aka.ms/getauthagent) & instalar o Agente de Autenticação do Microsoft Azure AD Connect no servidor.
-* Para habilitar a alta disponibilidade, instale agentes de autenticação adicionais em outros servidores, conforme descrito [aqui.](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)
-* Verifique se você definiu as [configurações de Bloqueio](/azure/active-directory/authentication/howto-password-smart-lockout) Inteligente adequadamente. Isso é para garantir que as contas do Active Directory local dos usuários não recebam o bloqueado por atores ruins.
+* Para habilitar alta disponibilidade, instale agentes de autenticação adicionais em outros servidores conforme descrito [aqui](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability).
+* Verifique se você configurou suas [configurações de Bloqueio](/azure/active-directory/authentication/howto-password-smart-lockout) Inteligente adequadamente. Isso é para garantir que as contas locais do Active Directory de seus usuários não são bloqueadas por atores ruins.
 
 ### <a name="seamlesssso"></a>SeamlessSso
 
@@ -41,23 +41,23 @@ A seguir estão os pré-requisitos para cada um dos recursos atualmente com supo
 
 ### <a name="passwordhashsync"></a>PasswordHashSync
 
-*  [Habilita PasswordHashSync](/azure/active-directory/hybrid/whatis-phs)na página   "Recursos opcionais" no Azure AD Connect.
+*  [Habilitar PasswordHashSync](/azure/active-directory/hybrid/whatis-phs)na página   "Recursos opcionais" no Azure AD Connect.
 
 ### <a name="emailasalternateid"></a>EmailAsAlternateId
 
-* Associar email alternativo a contas de usuário.
+* Associe emails alternativos a contas de usuário.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                                         | Tipo de retorno                                     | Descrição                                                               |
 |:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
 | [Listar featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere uma lista de objetos featureRolloutPolicy.                          |
-| [Obter featureRolloutPolicy](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere as propriedades e os relacionamentos do objeto featurerolloutpolicy. |
-| [Criar featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Criar um novo objeto featureRolloutPolicy.                                 |
-| [Atualizar featureRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Atualizar as propriedades do objeto featurerolloutpolicy.                     |
+| [Obter featureRolloutPolicy](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere as propriedades e as relações do objeto featurerolloutpolicy. |
+| [Criar featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Crie um novo objeto featureRolloutPolicy.                                 |
+| [Atualizar featureRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Atualize as propriedades do objeto featurerolloutpolicy.                     |
 | [Excluir featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | Nenhum(a)                                            | Exclua um objeto featureRolloutPolicy.                                     |
-| [Assign appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Atribua um directoryObject ao lançamento de recursos.                              |
-| [Remover appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Nenhum(a)                                            | Remova um directoryObject do lançamento de recursos.                            |
+| [Atribuir appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Atribua um directoryObject à atribuição de recursos.                              |
+| [Remover appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Nenhum(a)                                            | Remover um directoryObject da adoção de recursos.                            |
 
 ## <a name="properties"></a>Propriedades
 
@@ -65,10 +65,10 @@ A seguir estão os pré-requisitos para cada um dos recursos atualmente com supo
 |:-------------|:------------|:------------|
 |description|String|Uma descrição para essa política de lançamento de recursos.|
 |displayName|String|O nome de exibição dessa política de lançamento de recursos.|
-|recurso|stagedFeatureName| Os valores possíveis são: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
+|feature|stagedFeatureName| Os valores possíveis são: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
 |id|String| Somente leitura.|
-|isAppliedToOrganization|Boolean|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
-|isEnabled|Booliano|Indica se a lançamento de recursos está habilitada.|
+|isAppliedToOrganization|Booliano|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
+|isEnabled|Booliano|Indica se a adoção de recursos está habilitada.|
 
 ## <a name="relationships"></a>Relações
 

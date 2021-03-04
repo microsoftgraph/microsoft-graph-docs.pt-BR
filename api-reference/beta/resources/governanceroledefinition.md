@@ -1,44 +1,44 @@
 ---
-title: tipo de recurso governanceRoleDefinition
-description: Representa as definições de função. Para os recursos do Azure, ele pode representar as funções do Azure RBAC, como proprietário, leitor, colaborador, etc.
+title: Tipo de recurso governanceRoleDefinition
+description: Representa as definições de função. Para recursos do Azure, ele pode representar funções do Azure RBAC, como Proprietário, Leitor, Colaborador, etc.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: b45a52734af115a872e7ff5f31c58ef5ed95b944
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd4a9fc90d3c12669464a5e9b931b968d4526640
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081668"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443052"
 ---
-# <a name="governanceroledefinition-resource-type"></a>tipo de recurso governanceRoleDefinition
+# <a name="governanceroledefinition-resource-type"></a>Tipo de recurso governanceRoleDefinition
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Representa as definições de função. Para os recursos do Azure, ele pode representar as funções do Azure RBAC, como proprietário, leitor, colaborador, etc.
+Representa as definições de função. Para recursos do Azure, ele pode representar funções do Azure RBAC, como Proprietário, Leitor, Colaborador, etc.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método          | Tipo de retorno |Descrição|
 |:---------------|:--------|:--------|
-|[List](../api/governanceroledefinition-list.md) | coleção [governanceRoleDefinition](../resources/governanceroledefinition.md) |Lista uma coleção de definições de função em um recurso.|
-|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Ler propriedades e relações de uma entidade de definição de função especificado por ID.|
+|[List](../api/governanceroledefinition-list.md) | [Coleção governanceRoleDefinition](../resources/governanceroledefinition.md) |Listar uma coleção de definições de função em um recurso.|
+|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Ler propriedades e relações de uma entidade de definição de função especificada pela id.|
 
-Não `POST` , `PUT` , `PATCH` , `DELETE` tem suporte no `roleDefinitions` conjunto de entidades por enquanto.
+Não `POST` , , é suportado no conjunto de `PUT` `PATCH` `DELETE` `roleDefinitions` entidades por enquanto.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade    | Tipo   | Descrição                                                           |
 |:------------|:-------|:----------------------------------------------------------------------|
-| id          | Cadeia de caracteres | A ID da definição de função.                                        |
-| resourceId  | Cadeia de caracteres | Obrigatório. A ID do recurso associada à definição de função. |
-| externalId  | Cadeia de caracteres | A ID externa da definição de função.                               |
-| displayName | Cadeia de caracteres | O nome de exibição da definição de função.                              |
-| templateId  | Cadeia de caracteres |                                                                       |
+| id          | String | A id da definição de função.                                        |
+| resourceId  | String | Obrigatório. A id do recurso associado à definição de função. |
+| externalId  | Cadeia de caracteres | A id externa da definição de função.                               |
+| displayName | String | O nome de exibição da definição de função.                              |
+| templateId  | String |                                                                       |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

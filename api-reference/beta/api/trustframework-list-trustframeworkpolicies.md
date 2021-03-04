@@ -1,16 +1,16 @@
 ---
 title: Listar trustFrameworkPolicies
-description: Essa operação lista todos os objetos trustFrameworkPolicy em um locatário do Azure AD B2C.
+description: Esta operação lista todos os objetos trustFrameworkPolicy em um locatário do Azure AD B2C.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ae99ff718b16e97797132261329ac4a0b29ae81e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 872c26dd3b129fd47bb779ee3c10faf1419670af
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971838"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443311"
 ---
 # <a name="list-trustframeworkpolicies"></a>Listar trustFrameworkPolicies
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Policy. Read. All, Policy. ReadWrite. TrustFramework|
+|Delegado (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application|Policy. Read. All, Policy. ReadWrite. TrustFramework|
+|Aplicativo|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
@@ -40,7 +40,7 @@ GET /trustFramework/policies/
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$select` aos `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte aos parâmetros de consulta `$select` e `$expand`[OData](/graph/query-parameters)para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,11 +54,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) em uma representação JSON no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos trustFrameworkPolicy](../resources/trustframeworkpolicy.md) em uma representação JSON no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir recupera todos os **trustFrameworkPolicies**.
+O exemplo a seguir recupera todos **os trustFrameworkPolicies**.
 
 ##### <a name="request"></a>Solicitação
 

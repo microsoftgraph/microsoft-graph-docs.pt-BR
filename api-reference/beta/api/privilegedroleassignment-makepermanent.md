@@ -3,14 +3,14 @@ title: 'privilegedRoleAssignment: makePermanent'
 description: Tornar a atribuição de função permanente.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: e9acf97c13fcba15bf197253ee1aeb521c0a94bf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c457cc3c70e1a3f7cafec9a929c68ed3b7fddcea
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981983"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441197"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
@@ -23,9 +23,9 @@ Tornar a atribuição de função permanente.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O locatário precisa ser registrado no PIM. Caso contrário, o erro HTTP 403 proibido será retornado.
+O locatário precisa ser registrado no PIM. Caso contrário, o erro HTTP 403 Forbidden será retornado.
 
-O solicitante precisa ter função de _administrador de função privilegiada_ . 
+O solicitante precisa ter função _de Administrador de Função_ Privilegiada. 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -49,12 +49,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |motivo|string|Opcional. O motivo para fazer essa chamada.|
-|ticketNumber|string|Opcional. O número do tíquete associado a esta ação.|
-|ticketSystem|string|Opcional. O sistema de permissão.|
+|ticketNumber|string|Opcional. O número do tíquete associado a essa ação.|
+|ticketSystem|string|Opcional. O sistema de tíquetes.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

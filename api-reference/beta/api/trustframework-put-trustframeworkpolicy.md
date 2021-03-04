@@ -1,16 +1,16 @@
 ---
 title: Atualizar trustFrameworkPolicy
-description: 'Esta operação atualiza um objeto trustFrameworkPolicy existente ou, se houver algum, ele cria um. '
+description: 'Essa operação atualiza um objeto trustFrameworkPolicy existente ou, se não existir, ele cria um. '
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9807802d426fc5069a83014e52f0ed2210e05102
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2305c7dfde39d742ce1694c030f395f59f6fb7bb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027346"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443283"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>Atualizar ou criar trustFrameworkPolicy
 
@@ -45,24 +45,24 @@ PUT /trustFramework/policies/{id}/$value
 |Nome|Descrição|
 |:---------------|:----------|
 |Autorização|{token} de portador. Obrigatório.|
-|Content-Type|Application/XML. Obrigatório.|
+|Content-Type|application/xml. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação XML do objeto [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) . 
+No corpo da solicitação, forneça uma representação XML do [objeto trustFrameworkPolicy.](../resources/trustframeworkpolicy.md) 
 
 >**Observação:** o tipo de conteúdo deve ser `application/xml` .
 
 ## <a name="response"></a>Resposta
 
 A resposta será uma das seguintes:
-- Se existir um [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) , uma solicitação bem-sucedida retornará um `200 OK` código de resposta.
-- Se não existir um [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) , uma solicitação com êxito retornará um `201 Created` código de resposta.
+- Se existir [um trustFrameworkPolicy,](../resources/trustframeworkpolicy.md) uma solicitação bem-sucedida retornará um `200 OK` código de resposta.
+- Se um [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) não existir, uma solicitação bem-sucedida retornará um `201 Created` código de resposta.
 - Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir atualiza um **trustFrameworkPolicy**.
+O exemplo a seguir atualiza **um trustFrameworkPolicy**.
 
 ##### <a name="request"></a>Solicitação
 

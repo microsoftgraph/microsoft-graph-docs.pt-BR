@@ -3,14 +3,14 @@ title: Tipo de recurso tokenIssuancePolicy
 description: Representa a política para especificar as características dos tokens SAML emitidos pelo Azure AD.
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: aae5bd4c252549f92d784b45eaf2d5af15a32db6
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3a135376fef5d5a422a22bd862cffa8ef4f3ff9a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159875"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442788"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>Tipo de recurso tokenIssuancePolicy
 
@@ -26,13 +26,13 @@ Representa a política para especificar as características dos tokens SAML emit
 
 Herda de [stsPolicy](stsPolicy.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Criar tokenIssuancePolicy](../api/tokenissuancepolicy-post-tokenissuancepolicy.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Crie um objeto tokenIssuancePolicy. |
-| [Obter tokenIssuancePolicy](../api/tokenissuancepolicy-get.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Ler propriedades e relações de um objeto tokenIssuancePolicy. |
-| [Listar tokenIssuancePolicy](../api/tokenissuancepolicy-list.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Leia as propriedades e os relacionamentos dos objetos tokenIssuancePolicy. |
+| [Obter tokenIssuancePolicy](../api/tokenissuancepolicy-get.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Leia propriedades e relações de um objeto tokenIssuancePolicy. |
+| [Token de listaIssuancePolicy](../api/tokenissuancepolicy-list.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Leia propriedades e relações de objetos tokenIssuancePolicy. |
 | [Atualizar tokenIssuancePolicy](../api/tokenissuancepolicy-update.md) | Nenhum(a) | Atualize um objeto tokenIssuancePolicy. |
 | [Excluir tokenIssuancePolicy](../api/tokenissuancepolicy-delete.md) | Nenhum(a) | Exclua um objeto tokenIssuancePolicy. |
 | [Lista appliesTo](../api/tokenissuancepolicy-list-appliesto.md) | Coleção [directoryObject](directoryobject.md) | Obter a lista de directoryObjects aos qual essa política foi aplicada. |
@@ -41,15 +41,15 @@ Herda de [stsPolicy](stsPolicy.md).
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| Identificador exclusivo desta política. Somente leitura.|
-|definição|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Veja abaixo para obter mais detalhes sobre o esquema JSON para essa propriedade. Obrigatório.|
-|description|String| Descrição desta política.|
-|displayName|String| Nome para exibição desta política. Obrigatório.|
-|isOrganizationDefault|Boolean|Ignore essa propriedade. A política de emissão de tokens só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
+|id|String| Identificador exclusivo dessa política. Somente leitura.|
+|definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|description|String| Descrição dessa política.|
+|displayName|String| Nome de exibição para esta política. Obrigatório.|
+|isOrganizationDefault|Booliano|Ignore essa propriedade. A política de emissão de token só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
 
 
 ### <a name="properties-of-a-token-issuance-policy-definition"></a>Propriedades de uma definição de política de emissão de token
-As propriedades formam o objeto JSON que representa uma política de emissão de token. Esse objeto JSON deve ser **convertido em uma cadeia de caracteres** com aspas que não devem ser inseridas na propriedade de **definição.** Veja a seguir um exemplo no formato JSON:
+As propriedades formam o objeto JSON que representa uma política de emissão de token. Esse objeto JSON deve ser **convertido em uma cadeia de caracteres com** aspas que escapam para serem inseridas na propriedade **definition.** Veja a seguir um exemplo no formato JSON:
 
 <!-- {
   "blockType": "ignored"
@@ -63,10 +63,10 @@ As propriedades formam o objeto JSON que representa uma política de emissão de
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|TokenResponseSigningPolicy|String|Representa as opções de assinatura de certificado disponíveis no Azure AD. Os valores com suporte são: `ResponseOnly` , `TokenOnly` . `ResponseAndToken`  |
-|SamlTokenVersion|String|Versão do token SAML. Os valores com suporte são: `1.1` , `2.0` . |
-|SigningAlgorithm|String|Algoritmo de assinatura usado pelo Azure AD para assinar o token SAML. Os valores com suporte são: `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` , `http://www.w3.org/2000/09/xmldsig#rsa-sha1` .|
-|Versão|Inteiro|Valor definido de 1. Obrigatório.|
+|TokenResponseSigningPolicy|String|Representa as opções de assinatura de certificado disponíveis no Azure AD. Os valores suportados são: `ResponseOnly` , `TokenOnly` , `ResponseAndToken` .  |
+|SamlTokenVersion|String|Versão do token SAML. Os valores suportados são: `1.1` , `2.0` . |
+|SigningAlgorithm|String|O algoritmo de assinatura é usado pelo Azure AD para assinar o token SAML. Os valores suportados são: `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` , `http://www.w3.org/2000/09/xmldsig#rsa-sha1` .|
+|Versão|Inteiro|Definir o valor de 1. Obrigatório.|
 
 
 ## <a name="relationships"></a>Relações

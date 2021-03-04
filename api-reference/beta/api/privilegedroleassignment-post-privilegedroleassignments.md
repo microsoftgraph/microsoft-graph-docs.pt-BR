@@ -1,16 +1,16 @@
 ---
 title: Create privilegedRoleAssignment
-description: Use esta API para criar um novo privilegedRoleAssignment.
+description: Use essa API para criar um novo privilegedRoleAssignment.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 3bb20ddcc8d1746ce1e567f6ce951d9e4c57ed62
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 796b4de4ade4c9a59d7aeade843f8acad5bc31be
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981955"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441175"
 ---
 # <a name="create-privilegedroleassignment"></a>Create privilegedRoleAssignment
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo  [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
+Use essa API para criar um  [novo privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante precisa ter função de _administrador de função privilegiada_ . 
+O solicitante precisa ter função _de Administrador de Função_ Privilegiada. 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,13 +41,13 @@ POST /privilegedRoleAssignments
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto privilegedRoleAssignment.](../resources/privilegedroleassignment.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e o objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -85,7 +85,7 @@ Content-length: 164
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto privilegedRoleAssignment.](../resources/privilegedroleassignment.md)
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

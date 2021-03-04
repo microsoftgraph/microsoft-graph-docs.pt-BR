@@ -1,35 +1,35 @@
 ---
 title: Atualizar deviceManagementConfigurationCategory
-description: Atualiza as propriedades de um objeto deviceManagementConfigurationCategory.
+description: Atualize as propriedades de um objeto deviceManagementConfigurationCategory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e695f9935905d781d7d6ca3e8a8e36f1cfc36c74
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 40d253fdfd0756a7bca7045a758be95404bde594
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241125"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441569"
 ---
 # <a name="update-devicemanagementconfigurationcategory"></a>Atualizar deviceManagementConfigurationCategory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) .
+Atualize as propriedades de [um objeto deviceManagementConfigurationCategory.](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,24 +47,28 @@ PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCa
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto deviceManagementConfigurationCategory.](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador do item|
-|description|String|Descrição do item|
+|id|String|Identificador de item|
+|descrição|String|Descrição do item|
 |helpText|String|Texto de ajuda do item|
 |nome|String|Nome do item|
-|displayName|String|Nome para exibição do item|
-|plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Tipos de plataformas, quais configurações na categoria têm. Os valores possíveis são: `none`, `macOS`, `windows10X`, `windows10`.|
-|tecnologias|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tipos de tecnologias, as configurações na categoria têm. Os valores possíveis são: `none`, `mdm`, `windows10XManagement`, `configManager`.|
+|displayName|String|Nome de exibição do item|
+|plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Tipos de plataformas, que configurações na categoria têm. Os valores possíveis são: `none`, `macOS`, `windows10X`, `windows10`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tipos de tecnologias, que configurações na categoria têm. Os valores possíveis são: `none`, `mdm`, `windows10XManagement`, `configManager`.|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indica que a categoria contém configurações usadas para Conformidade ou Configuração. Os valores possíveis são: `none` e `configuration`.|
+|parentCategoryId|String|ID pai da categoria.|
+|rootCategoryId|String|ID raiz da categoria.|
+|childCategoryIds|Coleção de cadeias de caracteres|Lista de IDs filho da categoria.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -73,7 +77,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 Content-type: application/json
-Content-length: 268
+Content-length: 465
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -82,7 +86,13 @@ Content-length: 268
   "name": "Name value",
   "displayName": "Display Name value",
   "platforms": "macOS",
-  "technologies": "mdm"
+  "technologies": "mdm",
+  "settingUsage": "configuration",
+  "parentCategoryId": "Parent Category Id value",
+  "rootCategoryId": "Root Category Id value",
+  "childCategoryIds": [
+    "Child Category Ids value"
+  ]
 }
 ```
 
@@ -91,7 +101,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 514
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -101,7 +111,13 @@ Content-Length: 317
   "name": "Name value",
   "displayName": "Display Name value",
   "platforms": "macOS",
-  "technologies": "mdm"
+  "technologies": "mdm",
+  "settingUsage": "configuration",
+  "parentCategoryId": "Parent Category Id value",
+  "rootCategoryId": "Root Category Id value",
+  "childCategoryIds": [
+    "Child Category Ids value"
+  ]
 }
 ```
 

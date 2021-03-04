@@ -1,16 +1,16 @@
 ---
 title: Listar riskDetection
-description: Recupere as propriedades de uma coleção do objeto **riskDetection** .
+description: Recupere as propriedades de uma coleção de **objeto riskDetection.**
 localization_priority: Normal
 author: cloudhandler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: da19ac0afc940b1a204940157cac3b8f78bcd17b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d6308ba07530d8fd3c13e3d9e9e6e089c008176c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977687"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443612"
 ---
 # <a name="list-riskdetection"></a>Listar riskDetection
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades de uma coleção de objetos **riskDetection** .
+Recupere as propriedades de uma coleção de **objetos riskDetection.**
 
 >[!NOTE]
->Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de risco.
+>Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de riscos.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | IdentityRiskEvent.Read.All |
+|Aplicativo | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /identityProtection/riskDetections
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$filter` e `$select` para personalizar a resposta de consulta. Consulte o exemplo mais adiante neste tópico. 
+Este método oferece `$filter` suporte e para personalizar a resposta de `$select` consulta. Consulte o exemplo mais adiante neste tópico. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -57,12 +57,12 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [riskDetection](../resources/riskdetection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos riskDetection](../resources/riskdetection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 
-### <a name="example-1-list-risk-detections"></a>Exemplo 1: listar detecções de risco
+### <a name="example-1-list-risk-detections"></a>Exemplo 1: Listar detecções de risco
 
 #### <a name="request"></a>Solicitação
 
@@ -143,7 +143,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-risk-detections-for-a-specific-user"></a>Exemplo 2: listar detecções de risco para um usuário específico
+### <a name="example-2-list-risk-detections-for-a-specific-user"></a>Exemplo 2: Listar detecções de risco para um usuário específico
 
 #### <a name="request"></a>Solicitação
 
@@ -224,11 +224,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-risk-detections-and-filter-the-results"></a>Exemplo 3: listar detecções de risco e filtrar os resultados
+### <a name="example-3-list-risk-detections-and-filter-the-results"></a>Exemplo 3: Listar detecções de risco e filtrar os resultados
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como usar `$filter` o para obter a coleção de detecções de risco onde o nível de risco é médio ou o tipo de evento de risco é unfamilarFeatures, que indica que a entrada estava em um local não familiarizado ou anormal.
+O exemplo a seguir mostra como usar para obter a coleção de detecções de risco onde o nível de risco é médio ou o tipo de evento de risco é unfamilarFeatures, o que indica que a entrar estava em um local desconhecido ou `$filter` anômalo.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

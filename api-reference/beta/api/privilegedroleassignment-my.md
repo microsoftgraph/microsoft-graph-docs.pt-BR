@@ -1,24 +1,24 @@
 ---
-title: 'privilegedRoleAssignment: My'
-description: Obtenha as atribuições de função privilegiada do solicitante.
+title: 'privilegedRoleAssignment: my'
+description: Obter as atribuições de função privilegiada do solicitante.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: d837972a8f44112f6aa154592901a03707b17780
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 71d683092ead996daff5cb86eba8ca02abe80192
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981961"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441190"
 ---
-# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: My
+# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: my
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as atribuições de função privilegiada do solicitante.
+Obter as atribuições de função privilegiada do solicitante.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto da coleção [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o objeto da coleção `200 OK` [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

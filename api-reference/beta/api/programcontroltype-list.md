@@ -1,16 +1,16 @@
 ---
 title: Listar programControlTypes
-description: No recurso de revisões do Azure AD Access, liste todos os objetos programControlType.
+description: No recurso de revisões de acesso do Azure AD, liste todos os objetos programControlType.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: cb7427b6070feb4526a6fb68a9cfbc76b48fee08
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b693b47f716c9f89a49bee9c76baf5025fa0bd61
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975424"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442184"
 ---
 # <a name="list-programcontroltypes"></a>Listar programControlTypes
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , liste todos os objetos [programControlType](../resources/programcontroltype.md) .
+No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) liste todos os [objetos programControlType.](../resources/programcontroltype.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl. Read. All, ProgramControl. ReadWrite. All   |
+|Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | ProgramControl. Read. All ', ProgramControl. ReadWrite. All  |
+|Aplicativo                            | ProgramControl.Read.All', ProgramControl.ReadWrite.All  |
 
-O usuário conectado também deve estar em uma função de diretório que permite que ele leia um programa.
+O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /programControlTypes
 Nenhum corpo de solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200, OK` código de resposta e uma matriz de objetos [programControlType](../resources/programcontroltype.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200, OK` matriz de [objetos programControlType](../resources/programcontroltype.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -116,7 +116,7 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar programControls de um programa](program-listcontrols.md) |     coleção [programControl](../resources/programcontrol.md)|    Obter uma coleção de controles de um programa.|
+|[Listar programControls de um programa](program-listcontrols.md) |     [Coleção programControl](../resources/programcontrol.md)|    Obter uma coleção dos controles de um programa.|
 
 
 <!--

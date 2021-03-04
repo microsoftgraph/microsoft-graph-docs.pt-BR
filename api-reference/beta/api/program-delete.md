@@ -1,16 +1,16 @@
 ---
 title: Excluir programa
-description: No recurso de revisões do Azure AD Access, exclua um objeto Program.
+description: No recurso de revisões de acesso do Azure AD, exclua um objeto program.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 6949a3fd6d925296711c915d7934f3e0855d0f1d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a80b84aa0835fe0c8fa3e21cf1f8da37e851b394
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977889"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440982"
 ---
 # <a name="delete-program"></a>Excluir programa
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , exclua um objeto [Program](../resources/program.md) .
+No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) exclua um [objeto program.](../resources/program.md)
 
-Não exclua um programa que ainda esteja `programControl` vinculado a ele, essas revisões de acesso devem primeiro ser excluídas ou desvinculadas do programa e vinculadas a um programa diferente.  Além disso, observe que o programa padrão interno não pode ser excluído.
+Não exclua um programa que ainda tenha sido vinculado a ele, essas avaliações de acesso devem primeiro ser excluídas ou `programControl` desvinculadas do programa e vinculadas a um programa diferente.  Além disso, observe que o programa padrão integrado não pode ser excluído.
 
 
 ## <a name="permissions"></a>Permissões
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
-O usuário conectado também deve estar em uma função de diretório que permite que eles criem um programa.
+O usuário inscreveu também deve estar em uma função de diretório que permita que ele crie um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

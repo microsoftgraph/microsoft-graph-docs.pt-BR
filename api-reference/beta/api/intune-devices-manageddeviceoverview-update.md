@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 568cbdff57bc304b5757af6f35aed04e6195130c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 811f36570e58dffa921190557a45f5459b487ca6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155087"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441547"
 ---
 # <a name="update-manageddeviceoverview"></a>Atualizar managedDeviceOverview
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -59,8 +59,8 @@ A tabela a seguir mostra as propriedades necessárias ao criar [managedDeviceOve
 |dualEnrolledDeviceCount|Int32|O número de dispositivos registrados no MDM e no EAS|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|Resumo do sistema operacional do dispositivo.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Distribuição do Estado de acesso do Exchange no Intune|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Models and Manufactures manufactureadata for managed devices in the account|
-|lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da visão geral do dispositivo|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Modelos e Manufaturas de carmadata para dispositivos gerenciados na conta|
+|lastModifiedDateTime|DateTimeOffset|Última data de modificação da visão geral do dispositivo|
 
 
 
@@ -74,7 +74,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1222
+Content-length: 1245
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -96,7 +96,8 @@ Content-length: 1222
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
     "aospUserlessCount": 1,
-    "aospUserAssociatedCount": 7
+    "aospUserAssociatedCount": 7,
+    "linuxCount": 10
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -123,7 +124,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1335
+Content-Length: 1358
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -146,7 +147,8 @@ Content-Length: 1335
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
     "aospUserlessCount": 1,
-    "aospUserAssociatedCount": 7
+    "aospUserAssociatedCount": 7,
+    "linuxCount": 10
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

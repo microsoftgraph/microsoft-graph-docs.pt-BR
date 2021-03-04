@@ -3,14 +3,14 @@ title: tipo de recurso b2cIdentityUserFlow
 description: Representa um fluxo de usuário em um locatário do Azure Active Directory B2C.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 3783f28dc3b5883b2f58f0c866e2dac852391fa5
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 6acc6f575e874836629742456130f212d3af9a04
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719978"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443157"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>tipo de recurso b2cIdentityUserFlow
 
@@ -56,7 +56,7 @@ Para ajudar você a configurar as tarefas de identidade mais comuns para seus ap
 |userFlowTypeVersion|Único|A versão do fluxo de usuário.|
 |isLanguageCustomizationEnabled|Booliano|A propriedade que determina se a personalização de idioma é habilitada dentro do fluxo do usuário do B2C. A personalização de idioma não é habilitada por padrão para os fluxos de usuário do B2C.|
 |defaultLanguageTag|Cadeia de caracteres|Indica o idioma padrão do b2cIdentityUserFlow que será usado quando nenhuma `ui_locale` marca for especificada na solicitação. Esse campo é [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível.|
-|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Configuração para habilitar um conector de API para uso como parte do fluxo do usuário. Você somente pode obter o valor deste objeto usando [Obter a userFlowApiConnectorConfiguration](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md).|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Configuração para habilitar um conector de API para uso como parte do fluxo do usuário. Você somente pode obter o valor deste objeto usando [ Obter a userFlowApiConnectorConfiguration ](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md).|
 
 ## <a name="relationships"></a>Relações
 

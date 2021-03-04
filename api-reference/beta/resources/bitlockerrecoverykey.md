@@ -1,41 +1,41 @@
 ---
-title: tipo de recurso bitlockerRecoveryKey
+title: Tipo de recurso bitlockerRecoveryKey
 description: Recurso de chave de recuperação do BitLocker
 author: hafowler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 038feb77f7ca57d426a44c04b3d9c93ae29e5aa4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 466a5d907b3deb589ec1b70351903e24aba0ab32
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081943"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443150"
 ---
-# <a name="bitlockerrecoverykey-resource-type"></a>tipo de recurso bitlockerRecoveryKey
+# <a name="bitlockerrecoverykey-resource-type"></a>Tipo de recurso bitlockerRecoveryKey
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma chave BitLocker armazenada que contém a chave de recuperação real por meio da propriedade **Key** .
+Representa uma chave BitLocker armazenada que contém a chave de recuperação real por meio da **propriedade key.**
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar recoveryKeys](../api/bitlocker-list-recoverykeys.md)|coleção [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|Obtenha uma lista dos objetos [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) e suas propriedades.|
-|[Obter bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|Recupere as propriedades e os relacionamentos de um objeto [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) . Observação: a propriedade **Key** não é retornada por padrão.|
+|[Listar recoveryKeys](../api/bitlocker-list-recoverykeys.md)|[Coleção bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|Obter uma lista dos [objetos bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) e suas propriedades.|
+|[Obter bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|Recupere as propriedades e as relações de um [objeto bitlockerRecoveryKey.](../resources/bitlockerrecoverykey.md) Observação: a **propriedade key** não é retornada por padrão.|
 
 > **Observação**: apenas algumas funções têm as permissões para chamar essas APIs.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|A data e a hora em que a chave foi originalmente convertida no Azure Active Directory.|
-|deviceId|Cadeia de caracteres|ID do dispositivo do qual é feito o backup da chave BitLocker originalmente.|
-|id|Cadeia de caracteres|O identificador exclusivo da chave do BitLocker.|
-|chave|Cadeia de caracteres|A chave de recuperação do BitLocker.|
-|volumetype|volumetype|Indica o tipo de volume ao qual a chave BitLocker está associada. Os valores possíveis são: `operatingSystemVolume`, `fixedDataVolume`, `removableDataVolume`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|A data e a hora em que a chave foi originalmente respaldada no Azure Active Directory.|
+|deviceId|Cadeia de caracteres|ID do dispositivo de onde a chave BitLocker é originalmente respaldada.|
+|id|String|O identificador exclusivo da chave BitLocker.|
+|chave|String|A chave de recuperação BitLocker.|
+|volumeType|volumeType|Indica o tipo de volume ao qual a chave BitLocker está associada. Os valores possíveis são: `operatingSystemVolume`, `fixedDataVolume`, `removableDataVolume`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

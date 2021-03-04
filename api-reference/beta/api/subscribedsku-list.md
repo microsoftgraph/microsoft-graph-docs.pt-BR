@@ -3,14 +3,14 @@ title: Listar subscribedSkus
 description: Recupere a lista de assinaturas comerciais que uma organização adquiriu.
 localization_priority: Normal
 author: SumitParikh
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2075d75e431443a38dbe68116723678e0f234954
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a317ee834ffffde249d25cc238ef589f623c4f04
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982061"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443528"
 ---
 # <a name="list-subscribedskus"></a>Listar subscribedSkus
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Organization. Read. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | Organization.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -37,7 +37,7 @@ GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte aos [parâmetros de consulta OData](/graph//query-parameters) para ajudar a personalizar a resposta ( `$filter` não tem suporte).
+Esse método não dá suporte aos [parâmetros de consulta OData](/graph//query-parameters) para ajudar a personalizar a resposta ( `$filter` não há suporte).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

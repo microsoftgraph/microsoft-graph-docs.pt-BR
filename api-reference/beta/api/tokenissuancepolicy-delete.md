@@ -1,16 +1,16 @@
 ---
 title: Excluir tokenIssuancePolicy
-description: Exclua tokenIssuancePolicy.
+description: Excluir tokenIssuancePolicy.
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9380f94bae5c6df48c7e9d2db7ecf1a291acd5fa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a8020602a721752c1f123e4a1b8f437109ca4cbf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968886"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443451"
 ---
 # <a name="delete-tokenissuancepolicy"></a>Excluir tokenIssuancePolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) .
+[Exclua um objeto tokenIssuancePolicy.](../resources/tokenissuancepolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

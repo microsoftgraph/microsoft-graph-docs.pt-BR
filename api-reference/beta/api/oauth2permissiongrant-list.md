@@ -1,16 +1,16 @@
 ---
 title: Listar oAuth2PermissionGrants
-description: Recupere uma lista de objetos oauth2PermissionGrant, representando as autorizações de permissão delegadas.
+description: Recupere uma lista de objetos oauth2PermissionGrant, representando concessões de permissão delegadas.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 2e31122ca135b0009a4632fb8981768c482bcf29
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dfd7348e674c3cb2ec9e57f1d6bb304473907674
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967550"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442366"
 ---
 # <a name="list-oauth2permissiongrants"></a>Lista oauth2PermissionGrants
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , representando as permissões delegadas que foram concedidas para que os aplicativos clientes acessem APIs em nome de usuários conectados.
+Recupere uma lista de objetos [oAuth2PermissionGrant,](../resources/oauth2permissiongrant.md) representando permissões delegadas que foram concedidas aos aplicativos cliente para acessar APIs em nome de usuários assinados.
 
 ## <a name="permissions"></a>Permissões
 

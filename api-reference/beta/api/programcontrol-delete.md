@@ -1,16 +1,16 @@
 ---
 title: Excluir programControl
-description: No recurso de revisões do Azure AD Access, exclua um objeto programControl.  Isso desvincula uma revisão do Access de um programa.
+description: No recurso de revisões de acesso do Azure AD, exclua um objeto programControl.  Isso desvincula uma revisão de acesso de um programa.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: a6b6d52e7699517555db22dee92a116af1f37c58
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c80aed58daa58cb12d8366761580327450300dfb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969428"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442194"
 ---
 # <a name="delete-programcontrol"></a>Excluir programControl
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , exclua um objeto [programControl](../resources/programcontrol.md) .  Isso desvincula uma revisão do Access de um programa.
+No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) exclua um [objeto programControl.](../resources/programcontrol.md)  Isso desvincula uma revisão de acesso de um programa.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | ProgramControl.ReadWrite.All  |
+|Aplicativo                            | ProgramControl.ReadWrite.All  |
 
-O usuário conectado também deve estar em uma função de diretório que permite excluir um `programControl` .
+O usuário inscreveu também deve estar em uma função de diretório que permita que ele exclua um `programControl` .
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

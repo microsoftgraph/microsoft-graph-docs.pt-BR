@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9db50378ef965f17695162b636463d70a0479ea8
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2659de7bceaf6c1daa4286faf07eb549287a42ec
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154520"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441554"
 ---
 # <a name="get-manageddeviceoverview"></a>Get managedDeviceOverview
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1434
+Content-Length: 1459
 
 {
   "value": {
@@ -92,7 +92,8 @@ Content-Length: 1434
       "androidCorporateWorkProfileCount": 0,
       "configMgrDeviceCount": 4,
       "aospUserlessCount": 1,
-      "aospUserAssociatedCount": 7
+      "aospUserAssociatedCount": 7,
+      "linuxCount": 10
     },
     "deviceExchangeAccessStateSummary": {
       "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

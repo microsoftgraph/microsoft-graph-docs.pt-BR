@@ -3,14 +3,14 @@ title: Tipo de recurso accessPackageResourceRoleScope
 description: Um escopo de função de recurso do pacote de acesso é uma referência a um escopo dentro de um recurso e a uma função nesse recurso.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5c1446816f5487a579395f75dba521ba53f136fe
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: f899203fd58174fdb2d7935da3de4105576338d2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272118"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443199"
 ---
 # <a name="accesspackageresourcerolescope-resource-type"></a>Tipo de recurso accessPackageResourceRoleScope
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um escopo de função de recurso do pacote de acesso é uma referência a um escopo dentro de um recurso e a uma função nesse recurso para esse escopo.  Um pacote de acesso terá escopos de função de recurso do pacote de acesso para os recursos em seu catálogo que são relevantes para esse pacote de acesso.  Quando um assunto recebe uma atribuição de pacote de acesso, o assunto será provisionado com a função nesse escopo de cada escopo de função de recurso do pacote de acesso.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um escopo de função de recurso do pacote de acesso é uma referência a um escopo dentro de um recurso e uma função nesse recurso para esse escopo.  Um pacote de acesso terá escopos de função de recurso de pacote de acesso para os recursos em seu catálogo que são relevantes para esse pacote de acesso.  Quando um assunto recebe uma atribuição de pacote de acesso, o assunto será provisionado com a função nesse escopo de cada escopo de função de recurso do pacote de acesso.
 
 ## <a name="methods"></a>Methods
 

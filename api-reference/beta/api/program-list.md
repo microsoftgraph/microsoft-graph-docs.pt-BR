@@ -1,16 +1,16 @@
 ---
 title: Listar programas
-description: No recurso de revisões do Azure AD Access, liste todos os objetos de programa.
+description: No recurso de revisões de acesso do Azure AD, liste todos os objetos do programa.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: f16532566f27498f837ec54d4f55b4c40248a507
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ea0dcf1b053b66e3532d7774f0052d523386068
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966864"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440973"
 ---
 # <a name="list-programs"></a>Listar programas
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , liste todos os objetos de [programa](../resources/program.md) .
+No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) liste todos os [objetos do](../resources/program.md) programa.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl. Read. All, ProgramControl. ReadWrite. All  |
+|Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | ProgramControl. Read. All, ProgramControl. ReadWrite. All  |
+|Aplicativo                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
- O usuário conectado também deve estar em uma função de diretório que permite que ele leia um programa.
+ O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /programs
 Nenhum corpo de solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200, OK` código de resposta e uma matriz de objetos de [programa](../resources/program.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma matriz de objetos `200, OK` [de](../resources/program.md) programa no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -110,7 +110,7 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar programControls de um programa](program-listcontrols.md) |     coleção [programControl](../resources/programcontrol.md)|    Obter uma coleção de controles de um programa.|
+|[Listar programControls de um programa](program-listcontrols.md) |     [Coleção programControl](../resources/programcontrol.md)|    Obter uma coleção dos controles de um programa.|
 
 
 <!--

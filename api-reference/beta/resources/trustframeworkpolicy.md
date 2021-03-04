@@ -1,47 +1,47 @@
 ---
 title: trustFrameworkPolicy
-description: Na política de estrutura de confiança do Azure AD B2C é chamada de políticas personalizadas. Isso descreve as operações disponíveis em um objeto trustFrameworkPolicy para o locatário.
+description: Na política de estrutura de confiança do Azure AD B2C é conhecida como políticas personalizadas. Isso descreve as operações disponíveis em um objeto trustFrameworkPolicy para o locatário.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: bad5d8cfa6d9b53c4023bb89eabd74436ab7dacd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a8bb9fc598613d48ac6b9bb34aa02d24872e6300
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057945"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442737"
 ---
-# <a name="trustframeworkpolicy-resource-type"></a>tipo de recurso trustFrameworkPolicy
+# <a name="trustframeworkpolicy-resource-type"></a>Tipo de recurso trustFrameworkPolicy
 
 Namespace: microsoft.graph
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-Representa uma diretiva de [estrutura de confiança](/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom) (também chamada de [política personalizada](/azure/active-directory-b2c/active-directory-b2c-overview-custom)) no [Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview). Uma política de estrutura de confiança fornece controle total sobre as viagens do usuário. Use-o para:
+Representa uma [política da Estrutura de Confiança](/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom) (também chamada de política [personalizada](/azure/active-directory-b2c/active-directory-b2c-overview-custom)) no [Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview). Uma política da Estrutura de Confiança dá controle total sobre as jornadas do usuário. Use-o para:
 
-* Personalize as experiências de inscrição e inscrição totalmente.
-* Federar para qualquer provedor SAML, Open ID Connect ou OAuth2 Identity Provider.
-* Integre-se com outros sistemas ou armazenamentos de dados do usuário chamando pontos de extremidade REST.
-* Transforme declarações e personalize tokens emitidos para o aplicativo de terceira parte confiável.
+* Personalize totalmente as experiências de assinatura e de login.
+* Federar para qualquer provedor de identidade SAML, Open ID Connect ou OAuth2.
+* Integre-se a outros sistemas ou armazenamentos de dados do usuário chamando pontos de extremidade REST.
+* Transforme declarações e personalize tokens emitidos para o aplicativo de terceiros de confiança.
 
-Para obter mais informações, consulte [Custom Policies in Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview-custom).
+Para obter mais informações, consulte [Políticas personalizadas no Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview-custom).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Criar trustFrameworkPolicy](../api/trustframework-post-trustframeworkpolicy.md)|trustFrameworkPolicy|Criar um novo trustFrameworkPolicy.|
-|[Obter trustFrameworkPolicy](../api/trustframeworkpolicy-get.md) |trustFrameworkPolicy|Ler as propriedades de um trustFrameworkPolicy existente.|
-|[Listar trustFrameworkPolicies](../api/trustframework-list-trustframeworkpolicies.md)|coleção trustFrameworkPolicy|Listar todos os trustFrameworkPolicies configurados em um locatário.|
-|[Atualizar ou criar trustFrameworkPolicy](../api/trustframework-put-trustframeworkpolicy.md)|Nenhum|Atualize um trustFrameworkPolicy existente.|
-|[Excluir trustFrameworkPolicy](../api/trustframeworkpolicy-delete.md)|Nenhum|Excluir um trustFrameworkPolicy existente.|
+|[Criar trustFrameworkPolicy](../api/trustframework-post-trustframeworkpolicy.md)|trustFrameworkPolicy|Crie um novo trustFrameworkPolicy.|
+|[Obter trustFrameworkPolicy](../api/trustframeworkpolicy-get.md) |trustFrameworkPolicy|Ler propriedades de um trustFrameworkPolicy existente.|
+|[Listar trustFrameworkPolicies](../api/trustframework-list-trustframeworkpolicies.md)|Coleção trustFrameworkPolicy|Listar todos os trustFrameworkPolicies configurados em um locatário.|
+|[Atualizar ou criar trustFrameworkPolicy](../api/trustframework-put-trustframeworkpolicy.md)|Nenhum(a)|Atualize um trustFrameworkPolicy existente.|
+|[Excluir trustFrameworkPolicy](../api/trustframeworkpolicy-delete.md)|Nenhum(a)|Exclua um trustFrameworkPolicy existente.|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres|A ID da política.|
+|id|String|A ID da política.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -64,7 +64,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="see-also"></a>Confira também
 
-- [trustFrameworkPolicy esquema](/azure/active-directory-b2c/trustframeworkpolicy) para obter informações sobre os elementos do esquema.
-- [trustFrameworkPolicy. xsd](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/blob/master/TrustFrameworkPolicy_0.3.0.0.xsd)
+- [esquema trustFrameworkPolicy](/azure/active-directory-b2c/trustframeworkpolicy) para obter informações sobre os elementos de esquema.
+- [trustFrameworkPolicy.xsd](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/blob/master/TrustFrameworkPolicy_0.3.0.0.xsd)
 
 

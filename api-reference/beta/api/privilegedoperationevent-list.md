@@ -1,16 +1,16 @@
 ---
 title: Listar privilegedOperationEvents
-description: expressão ' ' do filtro.
+description: expressão filter''.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 31be3e6b9cba0e3daa759906b1508be2d4d0c1b5
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 8d6554ee2207d91d10045a74a6b92ec42e4323d3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315046"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441302"
 ---
 # <a name="list-privilegedoperationevents"></a>Listar privilegedOperationEvents
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [privilegedOperationEvent](../resources/privilegedoperationevent.md) , que representam os eventos de auditoria gerados pelo gerenciamento de identidade privilegiado para as operações de função. Para obter detalhes sobre o evento de auditoria, consulte [privilegedOperationEvent](../resources/privilegedoperationevent.md). Para filtrar os resultados da consulta, use a expressão OData padrão ``$filter`` .
+Recupere uma lista de objetos [privilegedOperationEvent,](../resources/privilegedoperationevent.md) que representam os eventos de auditoria gerados pelo Privileged Identity Management para as operações de função. Para obter os detalhes sobre o evento de auditoria, consulte [privilegedOperationEvent](../resources/privilegedoperationevent.md). Para filtrar os resultados da consulta, use a expressão OData ``$filter`` padrão.
 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante precisa ter uma das seguintes funções: administrador de _função privilegiada_, _administrador global_, _administrador de segurança_ou _leitor de segurança_.
+O solicitante precisa ter uma das seguintes funções: Administrador de Função _Privilegiada,_ _Administrador Global,_ Administrador de Segurança _ou_ Leitor de _Segurança._
 
  
 
@@ -52,14 +52,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [privilegedOperationEvent](../resources/privilegedoperationevent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [privilegedOperationEvent](../resources/privilegedoperationevent.md) no corpo da resposta.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
 ## <a name="examples"></a>Exemplos
 
 ### <a name="get-audit-events-for-role-assignment-operations"></a>Obter eventos de auditoria para operações de atribuição de função
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de atribuição de função. Nesse caso, ``requestType`` Value é ``Assign`` .
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de atribuição de função. Nesse caso, o ``requestType`` valor é ``Assign`` .
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -119,7 +119,7 @@ Content-length: 547
 ```
 ### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>Obter eventos de auditoria para as operações de ativação de auto-função e makePermanent
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de ativação de auto-função e makePermanent. Nesse caso, ``requestType`` Value é ``Activate`` .
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de ativação de auto-função e makePermanent. Nesse caso, o ``requestType`` valor é ``Activate`` .
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -180,7 +180,7 @@ Content-length: 547
 
 ### <a name="get-audit-events-for-role-assignment-deactivation"></a>Obter eventos de auditoria para desativação de atribuição de função
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para a desativação da atribuição de função. Nesse caso, ``requestType`` Value é ``Deactivate`` .
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para desativação da atribuição de função. Nesse caso, o ``requestType`` valor é ``Deactivate`` .
 
 <!-- { "blockType": "request" } -->
 ```http

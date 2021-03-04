@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: c7a3d91f7b46b155557709041d39542df1117ccc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b61baa7046e683977744ce4426dbfade60b1c4a0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952785"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442437"
 ---
 # <a name="nameditem-range"></a>NamedItem: Range
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/Range
+GET /workbook/names/{name}/Range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -56,8 +56,8 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "nameditem_range"
 }-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/Range
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/Range
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditem-range-csharp-snippets.md)]

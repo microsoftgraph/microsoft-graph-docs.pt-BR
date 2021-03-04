@@ -3,14 +3,14 @@ title: Criar trustFrameworkPolicy
 description: Essa operação cria um novo objeto trustFrameworkPolicy em um locatário do Azure AD B2C.
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7975d6834b162a4ced71ced6886faa8cee797159
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9027c578acecbf5e78f52dfcd0026721330a6f4b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027360"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443290"
 ---
 # <a name="create-trustframeworkpolicy"></a>Criar trustFrameworkPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-Criar novo objeto [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) .
+Crie novo [objeto trustFrameworkPolicy.](../resources/trustframeworkpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,19 +44,19 @@ POST /trustFramework/policies
 |Nome|Descrição|
 |:---------------|:----------|
 |Autorização|{token} de portador. Obrigatório.|
-|Content-Type|Application/XML. Obrigatório.|
+|Content-Type|application/xml. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação XML do objeto [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) . O tipo de conteúdo deve ser `application/xml`.
+No corpo da solicitação, forneça uma representação XML do [objeto trustFrameworkPolicy.](../resources/trustframeworkpolicy.md) O tipo de conteúdo deve ser `application/xml`.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `201 Created` código de resposta e um objeto [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir cria um **trustFrameworkPolicy**.
+O exemplo a seguir cria **um trustFrameworkPolicy**.
 
 ##### <a name="request"></a>Solicitação
 

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso riskUserActivity
+title: Tipo de recurso riskUserActivity
 description: autor
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ecfe618a8db9f03bbf088ea053476fe6e51bcbf7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7772bde328004ffd26133421cc97a9f296ae9370
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988937"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442870"
 ---
-# <a name="riskuseractivity-resource-type"></a>tipo de recurso riskUserActivity
+# <a name="riskuseractivity-resource-type"></a>Tipo de recurso riskUserActivity
 
 Namespace: microsoft.graph
 
@@ -22,9 +22,9 @@ Namespace: microsoft.graph
 
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-| eventType | coleção riskEventType |Lista de tipos de eventos de risco. Depreciado. Use **riskEventType** em vez disso. |
-|riskEventType|string|O tipo de evento de risco detectado. Os valores possíveis são:,,,,,,,,,,, `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` e `unknownFutureValue` . |
-| detalhada     | riskDetail  | Os valores possíveis são:,,,,,,,,, `none` `adminGeneratedTemporaryPassword` `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden` `adminConfirmedUserCompromised` , `unknownFutureValue` .  |
+| eventTypes | Coleção riskEventType |Lista de tipos de eventos de risco. Depreciado. Use **riskEventType** em vez disso. |
+|riskEventType|string|O tipo de evento de risco detectado. Os valores possíveis `unlikelyTravel` são , , , , , , , `anonymizedIPAddress` , , , , `maliciousIPAddress` , , `unfamiliarFeatures` , , `malwareInfectedIPAddress` e `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue` . |
+| detail     | riskDetail  | Os valores possíveis `none` são , , , , , , , `adminGeneratedTemporaryPassword` , , , `userPerformedSecuredPasswordChange` , , `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden` `adminConfirmedUserCompromised` `unknownFutureValue` .  |
 
 ## <a name="json-representation"></a>Representação JSON
 
