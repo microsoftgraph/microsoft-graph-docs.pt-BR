@@ -1,68 +1,88 @@
 ---
 title: Obter um educationSynchronizationProfile
-description: Recupere um perfil de sincronização de dados da escola no locatário com base no identificador.
+description: Recupere um perfil de sincronização de dados escolares no locatário com base no identificador.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b11993f73422e7b5c64ac59b1c5277fb507deb57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b3dd16ba86e455e63f21132cc67a1c33b055a1d6
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991233"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470380"
 ---
-# <a name="get-an-educationsynchronizationprofile"></a><span data-ttu-id="59bb9-103">Obter um educationSynchronizationProfile</span><span class="sxs-lookup"><span data-stu-id="59bb9-103">Get an educationSynchronizationProfile</span></span>
+# <a name="get-an-educationsynchronizationprofile"></a><span data-ttu-id="730de-103">Obter um educationSynchronizationProfile</span><span class="sxs-lookup"><span data-stu-id="730de-103">Get an educationSynchronizationProfile</span></span>
 
-<span data-ttu-id="59bb9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="59bb9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="730de-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="730de-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="59bb9-105">Recupere um perfil de [sincronização](../resources/educationsynchronizationprofile.md) de dados da escola no locatário com base no identificador.</span><span class="sxs-lookup"><span data-stu-id="59bb9-105">Retrieve a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.</span></span>
+<span data-ttu-id="730de-105">Recupere um perfil de [sincronização de dados escolares](../resources/educationsynchronizationprofile.md) no locatário com base no identificador.</span><span class="sxs-lookup"><span data-stu-id="730de-105">Retrieve a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="59bb9-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="59bb9-106">Permissions</span></span>
-<span data-ttu-id="59bb9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="59bb9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="730de-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="730de-106">Permissions</span></span>
+<span data-ttu-id="730de-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="730de-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="59bb9-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="59bb9-109">Permission type</span></span> | <span data-ttu-id="59bb9-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="59bb9-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="730de-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="730de-109">Permission type</span></span> | <span data-ttu-id="730de-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="730de-110">Permissions (from least to most privileged)</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="59bb9-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="59bb9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="59bb9-112">EduAdministration. Read, EduAdministration. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="59bb9-112">EduAdministration.Read, EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="59bb9-113">Delegado (conta pessoal da Microsoft</span><span class="sxs-lookup"><span data-stu-id="59bb9-113">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="59bb9-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="59bb9-114">Not supported.</span></span>|
-|<span data-ttu-id="59bb9-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="59bb9-115">Application</span></span>| <span data-ttu-id="59bb9-116">EduAdministration. Read. All, EduAdministration. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="59bb9-116">EduAdministration.Read.All, EduAdministration.ReadWrite.All</span></span> |
+| <span data-ttu-id="730de-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="730de-111">Delegated (work or school account)</span></span> | <span data-ttu-id="730de-112">EduAdministration.Read, EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="730de-112">EduAdministration.Read, EduAdministration.ReadWrite</span></span> |
+|<span data-ttu-id="730de-113">Delegada (conta pessoal da Microsoft</span><span class="sxs-lookup"><span data-stu-id="730de-113">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="730de-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="730de-114">Not supported.</span></span>|
+|<span data-ttu-id="730de-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="730de-115">Application</span></span>| <span data-ttu-id="730de-116">EduAdministration.Read.All, EduAdministration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="730de-116">EduAdministration.Read.All, EduAdministration.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="59bb9-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="59bb9-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="730de-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="730de-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /synchronizationProfiles/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="59bb9-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="59bb9-118">Request headers</span></span>
-| <span data-ttu-id="59bb9-119">Nome</span><span class="sxs-lookup"><span data-stu-id="59bb9-119">Name</span></span>       | <span data-ttu-id="59bb9-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="59bb9-120">Type</span></span> | <span data-ttu-id="59bb9-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="59bb9-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="730de-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="730de-118">Request headers</span></span>
+| <span data-ttu-id="730de-119">Nome</span><span class="sxs-lookup"><span data-stu-id="730de-119">Name</span></span>       | <span data-ttu-id="730de-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="730de-120">Type</span></span> | <span data-ttu-id="730de-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="730de-121">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="59bb9-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="59bb9-122">Authorization</span></span>  | <span data-ttu-id="59bb9-123">string</span><span class="sxs-lookup"><span data-stu-id="59bb9-123">string</span></span>  | <span data-ttu-id="59bb9-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="59bb9-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="730de-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="730de-122">Authorization</span></span>  | <span data-ttu-id="730de-123">string</span><span class="sxs-lookup"><span data-stu-id="730de-123">string</span></span>  | <span data-ttu-id="730de-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="730de-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="59bb9-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="59bb9-126">Request body</span></span>
-<span data-ttu-id="59bb9-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="59bb9-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="59bb9-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="59bb9-128">Response</span></span>
-<span data-ttu-id="59bb9-129">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="59bb9-129">If successful, this method returns a `200 OK` response code and an [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="730de-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="730de-126">Request body</span></span>
+<span data-ttu-id="730de-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="730de-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="730de-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="730de-128">Response</span></span>
+<span data-ttu-id="730de-129">Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="730de-129">If successful, this method returns a `200 OK` response code and an [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="59bb9-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="59bb9-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="59bb9-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="59bb9-131">Request</span></span>
-<span data-ttu-id="59bb9-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="59bb9-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="730de-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="730de-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="730de-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="730de-131">Request</span></span>
+<span data-ttu-id="730de-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="730de-132">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="730de-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="730de-133">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_educationSynchronizationProfile"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```
+# <a name="c"></a>[<span data-ttu-id="730de-134">C#</span><span class="sxs-lookup"><span data-stu-id="730de-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationsynchronizationprofile-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="59bb9-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="59bb9-133">Response</span></span>
-<span data-ttu-id="59bb9-134">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="59bb9-134">The following is an example of the response.</span></span> 
+# <a name="javascript"></a>[<span data-ttu-id="730de-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="730de-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationsynchronizationprofile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="59bb9-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="59bb9-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="730de-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="730de-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="730de-137">Java</span><span class="sxs-lookup"><span data-stu-id="730de-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="730de-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="730de-138">Response</span></span>
+<span data-ttu-id="730de-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="730de-139">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="730de-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="730de-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->

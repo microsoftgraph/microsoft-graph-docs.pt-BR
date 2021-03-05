@@ -5,29 +5,29 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e0f1fa81923bb0deeecd7de01b1cb014f5f0b22a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 8c135e600c0e057b63700716577a47af890b5e6e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459764"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448295"
 ---
-# <a name="list-attachments"></a><span data-ttu-id="5b607-103">Listar anexos</span><span class="sxs-lookup"><span data-stu-id="5b607-103">List attachments</span></span>
+# <a name="list-attachments"></a><span data-ttu-id="89aea-103">Listar anexos</span><span class="sxs-lookup"><span data-stu-id="89aea-103">List attachments</span></span>
 
-<span data-ttu-id="5b607-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5b607-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="89aea-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="89aea-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="5b607-105">Recupera uma lista de objetos [attachment](../resources/attachment.md) anexados a um evento.</span><span class="sxs-lookup"><span data-stu-id="5b607-105">Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5b607-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="5b607-106">Permissions</span></span>
-<span data-ttu-id="5b607-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b607-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="89aea-105">Recupera uma lista de objetos [attachment](../resources/attachment.md) anexados a um evento.</span><span class="sxs-lookup"><span data-stu-id="89aea-105">Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.</span></span>
+## <a name="permissions"></a><span data-ttu-id="89aea-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="89aea-106">Permissions</span></span>
+<span data-ttu-id="89aea-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="89aea-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5b607-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5b607-109">Permission type</span></span>      | <span data-ttu-id="5b607-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5b607-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="89aea-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="89aea-109">Permission type</span></span>      | <span data-ttu-id="89aea-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="89aea-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5b607-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5b607-111">Delegated (work or school account)</span></span> | <span data-ttu-id="5b607-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="5b607-112">Calendars.Read</span></span>    |
-|<span data-ttu-id="5b607-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5b607-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5b607-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="5b607-114">Calendars.Read</span></span>    |
-|<span data-ttu-id="5b607-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5b607-115">Application</span></span> | <span data-ttu-id="5b607-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="5b607-116">Calendars.Read</span></span> |
+|<span data-ttu-id="89aea-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="89aea-111">Delegated (work or school account)</span></span> | <span data-ttu-id="89aea-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="89aea-112">Calendars.Read</span></span>    |
+|<span data-ttu-id="89aea-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="89aea-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="89aea-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="89aea-114">Calendars.Read</span></span>    |
+|<span data-ttu-id="89aea-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="89aea-115">Application</span></span> | <span data-ttu-id="89aea-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="89aea-116">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5b607-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5b607-117">HTTP request</span></span>
-<span data-ttu-id="5b607-118">Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário.</span><span class="sxs-lookup"><span data-stu-id="5b607-118">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
+## <a name="http-request"></a><span data-ttu-id="89aea-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="89aea-117">HTTP request</span></span>
+<span data-ttu-id="89aea-118">Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário.</span><span class="sxs-lookup"><span data-stu-id="89aea-118">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -47,41 +47,38 @@ GET /groups/{id}/events/{id}/attachments
 GET /groups/{id}/calendar/events/{id}/attachments
 -->
 
-<span data-ttu-id="5b607-119">Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence ao [calendarGroup](../resources/calendargroup.md) padrão do usuário.</span><span class="sxs-lookup"><span data-stu-id="5b607-119">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="89aea-119">Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence ao [calendarGroup](../resources/calendargroup.md) padrão do usuário.</span><span class="sxs-lookup"><span data-stu-id="89aea-119">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
-<span data-ttu-id="5b607-120">Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence a um [calendarGroup](../resources/calendargroup.md) de um usuário.</span><span class="sxs-lookup"><span data-stu-id="5b607-120">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="89aea-120">Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence a um [calendarGroup](../resources/calendargroup.md) de um usuário.</span><span class="sxs-lookup"><span data-stu-id="89aea-120">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="5b607-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="5b607-121">Optional query parameters</span></span>
-<span data-ttu-id="5b607-122">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="5b607-122">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="5b607-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5b607-123">Request headers</span></span>
-| <span data-ttu-id="5b607-124">Nome</span><span class="sxs-lookup"><span data-stu-id="5b607-124">Name</span></span>       | <span data-ttu-id="5b607-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="5b607-125">Type</span></span> | <span data-ttu-id="5b607-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="5b607-126">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="89aea-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="89aea-121">Optional query parameters</span></span>
+<span data-ttu-id="89aea-122">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="89aea-122">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="89aea-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="89aea-123">Request headers</span></span>
+| <span data-ttu-id="89aea-124">Nome</span><span class="sxs-lookup"><span data-stu-id="89aea-124">Name</span></span>       | <span data-ttu-id="89aea-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="89aea-125">Type</span></span> | <span data-ttu-id="89aea-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="89aea-126">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="5b607-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="5b607-127">Authorization</span></span>  | <span data-ttu-id="5b607-128">string</span><span class="sxs-lookup"><span data-stu-id="5b607-128">string</span></span>  | <span data-ttu-id="5b607-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5b607-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="89aea-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="89aea-127">Authorization</span></span>  | <span data-ttu-id="89aea-128">string</span><span class="sxs-lookup"><span data-stu-id="89aea-128">string</span></span>  | <span data-ttu-id="89aea-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="89aea-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5b607-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5b607-131">Request body</span></span>
-<span data-ttu-id="5b607-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5b607-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="89aea-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="89aea-131">Request body</span></span>
+<span data-ttu-id="89aea-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="89aea-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5b607-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b607-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="89aea-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="89aea-133">Response</span></span>
 
-<span data-ttu-id="5b607-134">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5b607-134">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="5b607-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5b607-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5b607-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5b607-136">Request</span></span>
-<span data-ttu-id="5b607-137">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5b607-137">Here is an example of the request.</span></span>
+<span data-ttu-id="89aea-134">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="89aea-134">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="89aea-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="89aea-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="89aea-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="89aea-136">Request</span></span>
+<span data-ttu-id="89aea-137">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="89aea-137">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5b607-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="5b607-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="89aea-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="89aea-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_get_attachments_v1"
@@ -89,26 +86,26 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 ```
-# <a name="c"></a>[<span data-ttu-id="5b607-139">C#</span><span class="sxs-lookup"><span data-stu-id="5b607-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="89aea-139">C#</span><span class="sxs-lookup"><span data-stu-id="89aea-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-get-attachments-v1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5b607-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5b607-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="89aea-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="89aea-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-get-attachments-v1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5b607-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5b607-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="89aea-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="89aea-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-get-attachments-v1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5b607-142">Java</span><span class="sxs-lookup"><span data-stu-id="5b607-142">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="89aea-142">Java</span><span class="sxs-lookup"><span data-stu-id="89aea-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-get-attachments-v1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="5b607-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b607-143">Response</span></span>
-<span data-ttu-id="5b607-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5b607-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="89aea-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="89aea-143">Response</span></span>
+<span data-ttu-id="89aea-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="89aea-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "event_get_attachments_v1",
