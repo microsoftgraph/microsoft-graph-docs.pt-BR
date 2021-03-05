@@ -1,15 +1,15 @@
 ---
 title: Crie eventos do Outlook em um calendário compartilhado ou delegado
 description: No Outlook, os clientes podem compartilhar um calendário com outros usuários e permitir que eles exibam ou modifiquem eventos nesse calendário. Os clientes também podem permitir que um representante aja em nome deles, para receber ou responder a solicitações de reunião ou então para criar ou alterar itens no calendário.
-author: angelgolfer-ms
+author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 006b4bf1e9a3729979e523e16d95bf0affc02e89
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: fd231521a36ba761297042bc41f3ee60ef438a01
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229504"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475531"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>Crie eventos do Outlook em um calendário compartilhado ou delegado
 
@@ -172,8 +172,8 @@ Observe que uma resposta bem-sucedida inclui HTTP 201 e as seguintes propriedade
 
 - **isOrganizer** é definido como verdadeiro. Em geral, essa propriedade é verdadeira se o proprietário do calendário (Alex) é o organizador da reunião. Isso também se aplica se um representante (Adele) organizou o evento em nome do proprietário.
 - A coleção **attendees** especifica Sara e Clara.
-- A propriedade**organizer** está definido como Alex, uma vez que o convite foi enviado pela representante de Alex (Adele) no calendário principal de Alex.
-- Nem a instância **participantes** nem a**organizer** especifica o representante (Adele).
+- A propriedade **organizer** está definido como Alex, uma vez que o convite foi enviado pela representante de Alex (Adele) no calendário principal de Alex.
+- Nem a instância **participantes** nem a **organizer** especifica o representante (Adele).
 
 <!-- {
   "blockType": "response",
@@ -312,7 +312,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADADVj3fyAABZ5hYdAAA=?$expa
 ---
 
 
-Observe que uma resposta bem-sucedida inclui o código de resposta HTTP 200 e as seguintes propriedades do[eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0):
+Observe que uma resposta bem-sucedida inclui HTTP 200 e as seguintes propriedades do[eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0):
 
 - **meetingMessageType** especifica se essa mensagem é `meetingRequest`.
 - **sender** é Adele.
@@ -324,7 +324,7 @@ E as seguintes propriedades da instância [event](/graph/api/resources/event?vie
 - **attendees** incluem Alex, Sara e Clara.
 - **organizer** é Alex.
 
-A identidade de Adele é exibida somente na propriedade**sender**, da **eventMessage** e não no **evento** associado.
+A identidade de Adele é exibida somente na propriedade **sender**, da **eventMessage** e não no **evento** associado.
 
 <!-- {
   "blockType": "response",

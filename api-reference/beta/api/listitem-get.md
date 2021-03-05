@@ -6,12 +6,12 @@ title: Obter uma entrada de uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e66d74493cfb07c0b8ed0071f971037b77f30cf1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d3d2e431bfa73e92fd99a146ad9820b46d21b4dc
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971358"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475847"
 ---
 # <a name="get-an-item-in-a-list"></a>Obter um item em uma lista
 
@@ -31,10 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All |
 
-> **Observação** : a permissão do aplicativo Sites.Manage.All será necessária se a lista do SharePoint tiver as configurações de aprovação de conteúdo ativadas. Caso contrário, o Microsoft Graph não recuperará itens de lista que têm um status de aprovação diferente de aprovado.
+> **Observação**: a permissão do aplicativo Sites.Manage.All será necessária se a lista do SharePoint tiver as configurações de aprovação de conteúdo ativadas. Caso contrário, o Microsoft Graph não recuperará itens de lista que tenham um status de aprovação diferente de Aprovado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

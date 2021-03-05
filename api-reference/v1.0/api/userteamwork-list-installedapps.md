@@ -1,22 +1,22 @@
 ---
-title: Listar aplicativos instalados para o usuário
+title: Lista de aplicativos instalados para o usuário
 description: Recupere a lista de aplicativos instalados no escopo pessoal do usuário especificado.
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 619b01917a74f0819abd340e9b3109ec518a8c12
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 50de6c02fdfcb13d5a07d6b01c0b6ca3a4be249f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690953"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475538"
 ---
-# <a name="list-apps-installed-for-user"></a>Listar aplicativos instalados para o usuário
+# <a name="list-apps-installed-for-user"></a>Lista de aplicativos instalados para o usuário
 
 Namespace: microsoft.graph
 
-Recupere a lista de [aplicativos](../resources/teamsappinstallation.md) instalados no escopo pessoal do [usuário](../resources/user.md)especificado.
+Recupere a lista de [aplicativos](../resources/teamsappinstallation.md) instalados no escopo pessoal do usuário [especificado](../resources/user.md).
 
 > [!NOTE]
 > O `id` de um recurso **teamsAppInstallation** não é o mesmo valor que o `id` do recurso **teamsApp** associado.
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | TeamsAppInstallation. ReadForUser. All, TeamsAppInstallation. ReadWriteSelfForUser. All, TeamsAppInstallation. ReadWriteForUser. All |
+|Aplicativo | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -59,7 +59,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-apps-installed-for-the-specified-user"></a>Exemplo 1: listar aplicativos instalados para o usuário especificado
+### <a name="example-1-list-apps-installed-for-the-specified-user"></a>Exemplo 1: Listar aplicativos instalados para o usuário especificado
 
 #### <a name="request"></a>Solicitação
 
@@ -118,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a>Exemplo 2: obter os nomes e outros detalhes dos aplicativos instalados para o usuário
+### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a>Exemplo 2: Obter os nomes e outros detalhes dos aplicativos instalados para o usuário
 
 #### <a name="request"></a>Solicitação
 
@@ -202,7 +202,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Exemplo 3: obter o recurso de instalação de aplicativo com base na ID de manifesto do aplicativo associado
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Exemplo 3: Obter o recurso de instalação do aplicativo com base na ID de manifesto do aplicativo associado
 
 #### <a name="request"></a>Solicitação
 
@@ -272,7 +272,7 @@ Content-type: application/json
                 "requiredResourceSpecificApplicationPermissions": [
                 ],
                 "publishingState": "published",
-                "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
                 "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
                 "lastModifiedDateTime": null,
                 "createdBy": null

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9c6ce7ba32eac41bd41b0467843331ad9cb4e74f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2d0d0e30af1f65413c3bda786eb2aabac712876f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979137"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473851"
 ---
 # <a name="get-contact"></a>Obter contato
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos do objeto contact.
 
-Há dois cenários em que um aplicativo pode obter um contato na pasta de contatos de outro usuário:
+Há dois cenários em que um aplicativo pode obter um contato na pasta de contato de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
 * Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 Um [contact](../resources/contact.md) incluso em uma pasta filha de uma [contactFolder](../resources/mailfolder.md). O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho, e assim por diante.
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

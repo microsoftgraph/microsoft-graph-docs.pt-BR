@@ -1,22 +1,22 @@
 ---
-title: Listar sessões do callRecord
+title: Listar sessões callRecord
 description: Recupere a lista de objetos de sessão para um callRecord.
 localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 01a198ce760ea410e0c6c28c5fa7bef3e206d4b5
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 409d9b480df81741fc79591a8179426b832942b7
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48329980"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473873"
 ---
-# <a name="list-callrecord-sessions"></a>Listar sessões do callRecord
+# <a name="list-callrecord-sessions"></a>Listar sessões callRecord
 
 Namespace: microsoft.graph.callRecords
 
-Recupere a lista de [sessões](../resources/callrecords-session.md) associadas a um objeto [callRecord](../resources/callrecords-callrecord.md) .
+Recupere a lista [de sessões associadas](../resources/callrecords-session.md) a um [objeto callRecord.](../resources/callrecords-callrecord.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -52,24 +52,44 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e os objetos de [sessão](../resources/callrecords-session.md) solicitados no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e os objetos de [sessão](../resources/callrecords-session.md) solicitados no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-session-list"></a>Exemplo 1: obter lista de sessão
+### <a name="example-1-get-session-list"></a>Exemplo 1: Obter lista de sessões
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para obter a lista de [sessões](../resources/callrecords-session.md) de um [callRecord](../resources/callrecords-callrecord.md).
+Veja a seguir um exemplo da solicitação para obter a lista de [sessões](../resources/callrecords-session.md) de [um callRecord](../resources/callrecords-callrecord.md).
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord_sessions"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-sessions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-sessions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-callrecord-sessions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -78,7 +98,7 @@ Este é um exemplo de resposta.
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.session",
   "isCollection": true
@@ -150,20 +170,40 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-session-list-with-segments"></a>Exemplo 2: obter a lista de sessão com segmentos
+### <a name="example-2-get-session-list-with-segments"></a>Exemplo 2: Obter lista de sessões com segmentos
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para obter a lista de [sessões](../resources/callrecords-session.md) para um [callRecord](../resources/callrecords-callrecord.md) com [segmentos](../resources/callrecords-segment.md) incluídos.
+Veja a seguir um exemplo da solicitação para obter a lista de sessões de [um callRecord](../resources/callrecords-callrecord.md) com [](../resources/callrecords-session.md) [segmentos incluídos.](../resources/callrecords-segment.md)
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord_sessions_expanded"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions?$expand=segments
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-sessions-expanded-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-sessions-expanded-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-callrecord-sessions-expanded-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-expanded-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -172,7 +212,7 @@ Este é um exemplo de resposta.
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.session",
   "isCollection": true

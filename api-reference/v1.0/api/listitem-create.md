@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Criar um novo listItem em uma lista.
 doc_type: apiPageType
-ms.openlocfilehash: 4a5d58dc1c3a37aaa540843c990c399809cfc8f5
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 968e7e9b9e68ad90c31be50def27ee60b3a9a4b4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238789"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473746"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Criar um novo item em uma lista
 
@@ -49,7 +49,7 @@ Aqui está um exemplo de como criar um novo item de lista genérica.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
@@ -86,7 +86,7 @@ Se for bem-sucedido, esse método retornará um [listItem][] no corpo da respost
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

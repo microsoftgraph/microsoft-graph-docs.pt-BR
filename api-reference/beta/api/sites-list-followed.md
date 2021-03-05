@@ -5,12 +5,12 @@ title: Listar sites seguidos
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: 19306301577afa7954f7586f09077eb6a40e343f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d852f71ff2a228976efdc84c438f9529e2f5c6f1
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973185"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475713"
 ---
 # <a name="list-followed-sites"></a>Listar sites seguidos
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar os [sites](../resources/site.md) que foram seguidos pelo usuário conectado.
+Listar [os sites](../resources/site.md) que foram seguidos pelo usuário assinado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,19 +27,19 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Este método é acessível apenas por meio do OneDrive for Business.
+Esse método só pode ser acessado por meio do OneDrive for Business.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/followedSites
 ```
-Obter uma lista dos sites seguidos por um usuário de destino com base em sua ID.
+Obter uma lista dos sites seguidos por um usuário de destino, com base em sua ID.
 
 ```http
 GET /users/{user-id}/followedSites
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Este método retorna uma coleção de recursos do [site](../resources/site.md) que o usuário está seguindo.
+Este método retorna um conjunto de [recursos de site](../resources/site.md) que o usuário está seguindo.
 Se nenhum site for encontrado, uma coleção vazia será retornada.
 
 ## <a name="example"></a>Exemplo
@@ -96,7 +96,7 @@ GET /me/followedSites
 ### <a name="response"></a>Resposta
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

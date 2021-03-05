@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso meetingTimeSuggestion
-description: 'Uma sugestão de reunião que inclui informações como o horário da reunião, a probabilidade de presença, individual '
+description: 'Uma sugestão de reunião que inclui informações como hora da reunião, probabilidade de participação, individual '
 localization_priority: Normal
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6e07fd47e110e4f64fba64cf369d7dc6d37c2779
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d0324b6510b752ffdd21223dc19357ec8392ee24
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971619"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474012"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Tipo de recurso meetingTimeSuggestion
 
@@ -51,7 +51,7 @@ Veja a seguir uma representação JSON do recurso
 |confidence|Double|Uma porcentagem que representa a probabilidade de todos os participantes comparecerem.|
 |locations|Coleção [location](location.md)|Uma matriz que especifica o nome e a localização geográfica de cada local da reunião para esta sugestão de reunião.|
 |meetingTimeSlot|[timeSlot](timeslot.md)|Um período de tempo sugerido para a reunião.|
-|Ordene|Int32|Ordem das sugestões de horário de reunião classificadas pelo valor de confiança computado de alto para baixo e, em seguida, por cronologia, se houver sugestões com a mesma confiança. |
+|order|Int32|Sugestões de hora de reunião, ordenadas por seu valor de confiança calculado de alto para baixo, em seguida, por cronologia, se houver sugestões com a mesma confiança. |
 |organizerAvailability|freeBusyStatus| Disponibilidade do organizador da reunião para essa sugestão de reunião. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |suggestionReason|Cadeia de caracteres|Razão da sugestão de horário da reunião.|
 

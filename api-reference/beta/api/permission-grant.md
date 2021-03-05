@@ -1,25 +1,24 @@
 ---
 author: kevklam
-ms.author: kevinlam
 title: Conceder permissão
-description: Conceder a uma lista de usuários acesso para usar o link especificado
+description: Conceder uma lista de usuários acesso para usar o link especificado
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 307fcf8850666960265986a48ee96140d1c5d28f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4dedd3614c043a622ba659bf1986f7d216ac7ac1
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979947"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475174"
 ---
-# <a name="permission-grant"></a>permissão: Grant
+# <a name="permission-grant"></a>permission: grant
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Conceder aos usuários acesso a um link representado por uma [permissão][].
+Conceda aos usuários acesso a um link representado por uma [permissão][].
 
 ## <a name="permissions"></a>Permissões
 
@@ -62,18 +61,18 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro          | Tipo                           | Descrição
 |:-------------------|:-------------------------------|:-------------------------
-| destinatários         | Coleção ([driveRecipient][]) | Uma coleção de destinatários que receberão acesso.
-| funções              | Collection(String)             | Se o link for um link "acesso existente", especifica as funções a serem concedidas aos usuários. Caso contrário, deve corresponder à função do link.
+| destinatários         | Coleção([driveRecipient][]) | Uma coleção de destinatários que receberão acesso.
+| funções              | Collection(String)             | Se o link for um link de "acesso existente", especificará funções a serem concedidas aos usuários. Caso contrário, deverá corresponder à função do link.
 
-Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).
+Para ver uma lista de funções disponíveis, consulte [roles property values](../resources/permission.md#roles-property-values).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [permissões][] no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção [de][] permissões no corpo da resposta.
 
-Uma [permissão][] que representa o link atualizado sempre será retornada no conjunto de resultados no êxito. O link updated pode ser identificado pela presença de uma faceta ' link ' que contém a propriedade ' Scope '. Em alguns casos, pode ser possível que o link atualizado tenha uma URL diferente da conexão original, caso em que a nova URL deve ser usada.
+Uma [permissão][] que representa o link atualizado sempre será retornada no conjunto de resultados sobre o sucesso. O link atualizado pode ser identificado pela presença de uma faceta 'link' contendo a propriedade 'escopo'. Em alguns casos, pode ser possível que o link atualizado tenha uma URL diferente do link original, nesse caso, a nova URL deve ser usada.
 
-Leia o tópico [respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
+Leia o tópico [Respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 
 ## <a name="example"></a>Exemplo
@@ -86,7 +85,7 @@ Este exemplo concede aos usuários john@contoso.com e ryan@external.com acesso a
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "permission-grant", "scopes": "files.readwrite", "target": "action" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/beta/shares/{encoded-sharing-url}/permission/grant
 Content-type: application/json
 
@@ -125,7 +124,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -150,14 +149,14 @@ Content-type: application/json
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
-Se o link for um link de [acesso existente](../resources/permission.md#existing-access-link) , serão retornadas permissões adicionais representando o seguinte:
+Se o link for um link [de acesso](../resources/permission.md#existing-access-link) existente, permissões adicionais serão retornadas representando o seguinte:
 
-- Permissões de tipo de usuário que representam destinatários que receberam o acesso com êxito. Eles podem ser identificados por presença da propriedade **concedidoto** .
-- Permissões de tipo de link que representam convites que precisam ser enviados a usuários externos não reconhecidos para que eles tenham acesso. Eles podem ser identificados pela presença de uma faceta de [convite](../resources/sharinginvitation.md) . Essas entradas conterá um [link][sharing-link] com a URL do convite, e a coleção grantedToIdentities indicará os usuários para os quais o link deve ser enviado.
+- Permissões de tipo de usuário que representam destinatários que tiveram acesso concedido com êxito. Eles podem ser identificados pela presença da **propriedade grantedTo.**
+- Permissões de tipo de link que representam convites que precisam ser enviados a usuários externos não reconhecedos para que eles obtenham acesso. Eles podem ser identificados pela presença de uma faceta [de](../resources/sharinginvitation.md) convite. Essas entradas conterão um [link][sharing-link] com a URL do convite e a coleção grantedToIdentities indicará os usuários aos quais o link deve ser enviado.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

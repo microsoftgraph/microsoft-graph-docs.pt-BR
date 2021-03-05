@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Envia um convite de compartilhamento para um driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: e514fbd3b8f79d3696f894a6b15ad55055137b70
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bbd7d4226cd4c289019dd5bcc6abd863f2be7688
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240287"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473844"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
@@ -68,8 +68,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | requireSignIn    | Booleano                        | Especifica se o destinatário do convite precisa fazer logon para visualizar o item compartilhado.
 | sendInvitation   | Booliano                        | Se verdadeiro, um [link de compartilhamento][] será enviado ao destinatário. Caso contrário, uma permissão é concedida diretamente sem enviar uma notificação.
 | funções            | Collection(String)             | Especifique as funções que devem ser concedidas aos destinatários do convite de compartilhamento.
-| expirationDateTime | DateTimeOffset                       | Especifique a Data e Hora após a qual a permissão expira. Disponível nas contas do OneDrive for Business, SharePoint e premium personal do OneDrive.
-| password           | String                         | A senha definida no convite pelo criador. Opcional e somente OneDrive Personal.
+| expirationDateTime | DateTimeOffset                       | Especifique o DateTime após o qual a permissão expira. Disponível em contas pessoais do OneDrive for Business, SharePoint e premium do OneDrive.
+| password           | String                         | A senha definida no convite pelo criador. Opcional e Somente OneDrive Personal.
 
 ## <a name="example"></a>Exemplo
 
@@ -84,7 +84,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
-```json
+```http
 POST /me/drive/items/{item-id}/invite
 Content-type: application/json
 
@@ -127,7 +127,7 @@ Veja a seguir um exemplo da resposta.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -156,7 +156,7 @@ Content-type: application/json
 ## <a name="remarks"></a>Comentários
 
 * [Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.
-* Para uma lista de funções disponíveis, consulte valores [de propriedade de funções.](../resources/permission.md#roles-property-values)
+* Para ver uma lista de funções disponíveis, consulte [roles property values](../resources/permission.md#roles-property-values).
 
 ## <a name="error-responses"></a>Respostas de erros
 

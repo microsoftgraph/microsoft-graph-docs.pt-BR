@@ -1,15 +1,15 @@
 ---
 title: Obter mensagens do Outlook em uma pasta compartilhada ou delegada
 description: O Outlook permite que os clientes compartilhem pastas de e-mail entre si e forneçam acesso de "leitura", "criação", "modificação" ou "exclusão" a pastas individuais. O Outlook também permite que um cliente representante a outro usuário agir em nome do cliente.
-author: angelgolfer-ms
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6de4ee7ca1ed179bc538bb7aa1f2a3dacb8adb80
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: f6c1ece4dddc8e8da25a03b76da0f8be303fe557
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013440"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474390"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Obtenha mensagens do Outlook em uma pasta compartilhada ou delegada
 

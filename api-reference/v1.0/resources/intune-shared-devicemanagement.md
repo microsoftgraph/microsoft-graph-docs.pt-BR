@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a709c1c4ef47273f9495fc3582bb27e7de7ddbb1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 83d3f3cda24c5961a34cb5c38de3ee43d6f5fe44
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967517"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475769"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -22,19 +22,19 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 
 - Eventos de auditoria  
 - Termos e condições corporativos   
-- Definições de configuração do dispositivo  
+- Configurações de dispositivo  
 - Gerenciamento de dispositivo  
 - Proteção de pontos de extremidade  
 - Perfis de registro  
 - Notificações  
-- Políticas de integração, configurações e detalhes  
+- Políticas, configurações e detalhes de integração  
 - Políticas de controle de acesso baseado em função (RBAC)  
 - Parceiros de assistência remota  
-- Parceiros de gerenciamento do expanse de telecomunicações  
-- Solucionando problemas de eventos  
-- Resumos da proteção de informações do Windows  
+- Parceiros de gerenciamento de expansão de telecomunicações  
+- Solução de problemas de eventos  
+- Resumos da Proteção de Informações do Windows  
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter deviceManagement](../api/intune-shared-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Leia as propriedades e as relações do objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).|
@@ -42,12 +42,12 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |**Integração**|
 |[Função verifyWindowsEnrollmentAutoDiscovery](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|Booliano|Ainda não documentado|
 |**RBAC**|
-|[Função getEffectivePermissions](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|coleção [rolePermission](../resources/intune-rbac-rolepermission.md) ou coleção String|Recupera permissões efetivas de usuário autenticado no momento|
+|[Função getEffectivePermissions](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|[Coleção rolePermission](../resources/intune-rbac-rolepermission.md) ou coleção de cadeias de caracteres|Recupera permissões efetivas de usuário autenticado no momento|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do dispositivo|
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo|
 |**Configuração do dispositivo**|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
@@ -58,8 +58,6 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|**Auditoria**|
-|auditEvents|Conjunto [auditEvent](../resources/intune-auditing-auditevent.md)|Eventos de auditoria|
 |**Termos e condições corporativos**|
 |termsAndConditions|Conjunto [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Os termos e condições associados ao gerenciamento do dispositivo da empresa.|
 |**Configuração do dispositivo**|
@@ -76,9 +74,6 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |detectedApps|Conjunto [detectedApp](../resources/intune-devices-detectedapp.md)|A lista de aplicativos detectados associados a um dispositivo.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Visão geral do dispositivo|
 |managedDevices|Conjunto [managedDevice](../resources/intune-devices-manageddevice.md)|A lista de dispositivos gerenciados.|
-|**Enrollmentid**|
-|importedWindowsAutopilotDeviceIdentities|Coleção [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Coleção de dispositivos do Windows AutoPilot importados.|
-|importedWindowsAutopilotDeviceIdentityUploads|coleção [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|Conjunto de carregamento de dispositivos do Windows AutoPilot.|
 |**Notificações**|
 |notificationMessageTemplates|Conjunto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md)|Os modelos de mensagens de notificação.|
 |**Integração**|
@@ -86,7 +81,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |deviceCategories|Coleção [deviceCategory](../resources/intune-shared-devicecategory.md)|A lista de categorias de dispositivo com o locatário.|
 |deviceEnrollmentConfigurations|Coleção [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|A lista de configurações de registro de dispositivos|
 |deviceManagementPartners|Coleção [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|A lista de Parceiros de gerenciamento de dispositivos configurados pelo locatário.|
-|complianceManagementPartners|coleção [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|A lista de parceiros de gerenciamento de conformidade configurados pelo locatário.|
+|complianceManagementPartners|[coleção complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|A lista de Parceiros de Gerenciamento de Conformidade configurados pelo locatário.|
 |exchangeConnectors|Coleção [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)|A lista dos Conectores do Exchange configurados pelo locatário.|
 |mobileThreatDefenseConnectors|Coleção [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md)|A lista dos conectores de defesa contra ameaças móveis configurados pelo locatário.|
 |**RBAC**|

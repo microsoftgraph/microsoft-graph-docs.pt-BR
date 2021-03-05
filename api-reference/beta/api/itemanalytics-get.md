@@ -1,17 +1,17 @@
 ---
 author: daspek
-description: Obtenha o naanalytics sobre os modos de exibição que foram colocados sob esse recurso.
+description: Obter itemAnalytics sobre os exibições que ocorreram sob esse recurso.
 ms.date: 10/06/2017
 title: Obter análises
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: bb733e8c146d054d88a0b2d24c2f7f114c68522b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6366106097b4f6b9b43d8fe0eacddeaeab53826d
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975402"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475797"
 ---
 # <a name="get-analytics"></a>Obter análises
 
@@ -19,14 +19,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha o [naanalytics][] sobre os modos de exibição que foram colocados sob esse recurso.
-O recurso do Microsoft **Analytics** é uma maneira conveniente de obter estatísticas de atividades para `allTime` o e o `lastSevenDays` .
-Para um intervalo ou intervalo de tempo personalizado, use a API [funçãogetactivitiesbyinterval][] .
+Obter [itemAnalytics][] sobre os exibições que ocorreram sob esse recurso.
+O **recurso itemAnalytics** é uma maneira conveniente de obter estatísticas de atividade para `allTime` e para o `lastSevenDays` .
+Para um intervalo ou intervalo de tempo personalizado, use a API [getActivitiesByInterval.][]
 
->**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
+>**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais.](/graph/deployments)
 
 [itemAnalytics]: ../resources/itemanalytics.md
-[Funçãogetactivitiesbyinterval]: ../api/itemactivity-getbyinterval.md
+[getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
 ## <a name="permissions"></a>Permissões
 
@@ -82,7 +82,7 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

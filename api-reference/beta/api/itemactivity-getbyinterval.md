@@ -1,17 +1,17 @@
 ---
 author: daspek
-description: Obter itemActivityStats para as atividades que foram realizadas sob esse recurso dentro do intervalo de tempo especificado.
+description: Obter itemActivityStats para as atividades que ocorreram sob esse recurso dentro do intervalo de tempo especificado.
 ms.date: 10/06/2017
 title: Obter estatísticas de atividade de item por intervalo
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 7f34f626c6fe24110c827424cdb53e1dc8c73c99
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c56169132d43843f60a9c53417271faf30f4afb1
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970014"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474691"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item por intervalo
 
@@ -19,11 +19,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter [itemActivityStats][] para as atividades que foram realizadas sob esse recurso dentro do intervalo de tempo especificado.
+Obter [itemActivityStats][] para as atividades que ocorreram sob esse recurso dentro do intervalo de tempo especificado.
 
->**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
+>**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais.](/graph/deployments)
 
-As agregações de análise podem não estar disponíveis para todos os tipos de ação.
+Os agregados de análise podem não estar disponíveis para todos os tipos de ação.
 
 [itemActivityStats]: ../resources/itemactivitystat.md
 
@@ -51,8 +51,8 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | Parâmetro      | Tipo               | Descrição
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  | Cadeia de caracteres (timestamp) | A hora de início em que as atividades serão agregadas.
-| endDateTime    | Cadeia de caracteres (timestamp) | A hora de término sobre a qual agregar atividades.
+| startDateTime  | string (timestamp) | O tempo de início sobre o qual agregar atividades.
+| endDateTime    | string (timestamp) | O tempo final sobre o qual agregar atividades.
 | interval       | string             | O intervalo de agregação.
 
 ## <a name="example"></a>Exemplo
@@ -89,7 +89,7 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

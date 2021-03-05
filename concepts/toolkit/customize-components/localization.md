@@ -1,26 +1,26 @@
 ---
-title: Localizando os componentes do Microsoft Graph Toolkit
-description: Use LocalizationHelper para localização dos componentes do Kit de Ferramentas do Microsoft Graph.
+title: Localizando os componentes de Toolkit do Microsoft Graph
+description: Use LocalizationHelper para localização do Microsoft Graph Toolkit componentes.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: a2bd44330e3b5e9476b86c9e9cd69aadcab43467
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 3fafc71f20079f5320d07a62b06a2a18f97c5831
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272521"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475412"
 ---
-# <a name="localizing-the-microsoft-graph-toolkit-components"></a>Localizando os componentes do Microsoft Graph Toolkit
+# <a name="localizing-the-microsoft-graph-toolkit-components"></a>Localizando os componentes de Toolkit do Microsoft Graph
 
 A localização é um aspecto importante do desenvolvimento de aplicativos para dar suporte a usuários com vários requisitos de idioma globalmente.
 
-Você pode localizado os componentes do Microsoft Graph Toolkit para garantir que a interface do usuário reflita o idioma de destino.
+Você pode localizar os componentes do Microsoft Graph Toolkit para garantir que a interface do usuário reflita o idioma de destino.
 
-## <a name="use-localizationhelper-to-add-localized-strings"></a>Usar LocalizationHelper para adicionar cadeias de caracteres localizadas
+## <a name="use-localizationhelper-to-add-localized-strings"></a>Use LocalizationHelper para adicionar cadeias de caracteres localizadas
 
-Nenhuma das cadeias de caracteres no kit de ferramentas está localizada, mas você pode fornecer suas próprias cadeias de caracteres localizadas e gerenciar idiomas diferentes por meio do mesmo processo usado para localização do aplicativo. Para facilitar a localização, o kit de ferramentas expõe a `LocalizationHelper` classe estática.
+Nenhuma das cadeias de caracteres no kit de ferramentas está localizada, mas você pode fornecer suas próprias cadeias de caracteres localizadas e gerenciar idiomas diferentes por meio do mesmo processo usado para a localização do aplicativo. Para facilitar a localização, o kit de ferramentas expõe a `LocalizationHelper` classe estática.
 
-O exemplo a seguir mostra como localização de vários componentes.
+O exemplo a seguir mostra como localizar vários componentes.
 
 ```ts
 import { LocalizationHelper } from "@microsoft/mgt";
@@ -51,6 +51,7 @@ LocalizationHelper.strings = {
     "person-card": {
       sendEmailLinkSubtitle: "ارسل بريد الكتروني",
       startChatLinkSubtitle: "ابدأ الدردشة",
+      showExpandedDetailsButton: 'Show expanded details',
       showMoreSectionButton: "أظهر المزيد", // global declaration
     },
     "person-card-contact": {
@@ -67,7 +68,7 @@ LocalizationHelper.strings = {
 };
 ```
 
-Quando a propriedade for atribuída, todos os componentes pegarão automaticamente as novas cadeias de caracteres e renderizarão outra vez, permitindo que você altere as `strings` `LocalizationHelper` cadeias de caracteres dinamicamente. 
+Quando a propriedade de é atribuída, todos os componentes automaticamente pegarão as novas cadeias de caracteres e renderizarão, permitindo que você `strings` `LocalizationHelper` altere cadeias de caracteres dinamicamente. 
 
 As cadeias de caracteres podem ser definidas em nível global ou por componente (com a `_components:` propriedade).
 

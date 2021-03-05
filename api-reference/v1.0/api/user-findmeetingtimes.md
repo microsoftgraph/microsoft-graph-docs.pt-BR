@@ -2,15 +2,15 @@
 title: 'user: findMeetingTimes'
 description: Localize as sugestões de hora da reunião com base no organizador e na disponibilidade dos participantes, assim como nas restrições de horário ou local especificadas como parâmetros.
 localization_priority: Priority
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 64149cc41235a1eafa2ac763b1ee676787f7d28b
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: f17661dd3f65266633413cf9dcbcb76ecd37e861
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292305"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475545"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 

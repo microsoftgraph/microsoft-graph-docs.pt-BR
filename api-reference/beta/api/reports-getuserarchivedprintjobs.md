@@ -1,18 +1,18 @@
 ---
-title: 'relatórios: getUserArchivedPrintJobs'
+title: 'reports: getUserArchivedPrintJobs'
 description: Obter uma lista de trabalhos de impressão arquivados para um usuário específico.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: dfd038b70c42396d1ce2a932ca20d0929acef90f
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 9ec8ecc5fb8453a8219660cd47486c762fbfebd6
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848224"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475272"
 ---
-# <a name="reports-getuserarchivedprintjobs"></a>relatórios: getUserArchivedPrintJobs
+# <a name="reports-getuserarchivedprintjobs"></a>reports: getUserArchivedPrintJobs
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ Obter uma lista de trabalhos de impressão arquivados para um usuário específi
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura de Impressão Universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -34,8 +34,8 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/reports/getUserArchivedPrintJobs
-GET /reports/getUserArchivedPrintJobs
+GET /print/reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET /reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
@@ -46,12 +46,12 @@ GET /reports/getUserArchivedPrintJobs
 
 | Parâmetro     | Tipo                 | Obrigatório? | Descrição                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `userId`      | `Edm.String`         | Sim       | A ID do usuário para o qual retornar os dados.                               |
-| `periodStart` | `Edm.DateTimeOffset` | Não        | A data de início (inclusive) para o período de tempo para incluir dados. |
-| `periodEnd`   | `Edm.DateTimeOffset` | Não        | A data de término (inclusive) para o período de tempo para incluir dados.   |
+| `userId`      | `Edm.String`         | Sim       | A ID do usuário para o que retornar dados.                               |
+| `startDateTime` | `Edm.DateTimeOffset` | Não        | A data de início (inclusive) do período de tempo a ser incluído. |
+| `endDateTime`   | `Edm.DateTimeOffset` | Não        | A data de término (inclusive) do período de tempo a ser incluído.   |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [archivedPrintJob](../resources/archivedprintjob.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [archivedPrintJob](../resources/archivedprintjob.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -62,7 +62,7 @@ Este é um exemplo de solicitação.
   "name": "reports-getuserarchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId={id},periodStart=<timestamp>,periodEnd=<timestamp>)
+GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId='{id}',startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ##### <a name="response"></a>Resposta

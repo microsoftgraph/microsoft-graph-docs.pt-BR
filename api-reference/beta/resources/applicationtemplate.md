@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 37468877721b9ac534c0118aeb93fd613fca7f88
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 6f541d27a8ee701dadf4d1ec260d7fdc810d70fb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159175"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474642"
 ---
 # <a name="applicationtemplate-resource-type"></a>Tipo de recurso applicationTemplate
 
@@ -18,30 +18,30 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um aplicativo na galeria [de aplicativos do Azure AD.](/azure/active-directory/saas-apps/tutorial-list)
+Representa um aplicativo na galeria de [aplicativos do Azure AD.](/azure/active-directory/saas-apps/tutorial-list)
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 |[Lista applicationTemplate](../api/applicationtemplate-list.md)|[applicationTemplate](applicationtemplate.md)|Recupere uma lista de objetos applicationTemplate.|
-| [Obter applicationTemplate](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Leia as propriedades e os relacionamentos do objeto applicationTemplate. |
-|[Instanciar o applicationtemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Adicione uma instância de um aplicativo da galeria de aplicativos do Azure AD ao seu diretório.|
+| [Obter applicationTemplate](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Ler propriedades e relações do objeto applicationTemplate. |
+|[Instanciar o applicationtemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Adicione uma instância de um aplicativo da galeria de aplicativos do Azure AD ao diretório.|
 
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|categories|Coleção de cadeias de caracteres|A lista de categorias do aplicativo. Os valores com suporte podem ser: `Collaboration` , , , , , , , , , , , `Business Management` , `Consumer` , `Content management` , `CRM` , , `Data services` , `Developer services` `E-commerce` `Education` `ERP` `Finance` `Health` `Human resources` e `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel` `Web design & hosting` .|
-|description|String|Uma descrição do aplicativo.|
-|displayName|String|O nome do aplicativo.|
-|homePageUrl|String|A URL da página inicial do aplicativo.|
-|id|String| Identificador exclusivo do aplicativo. Somente leitura.|
-|logoUrl|String|A URL para obter o logotipo deste aplicativo.|
+|categories|String collection|A lista de categorias do aplicativo. Os valores suportados podem ser: `Collaboration` , , , , , , , `Business Management` , , `Consumer` , , `Content management` , `CRM` `Data services` `Developer services` `E-commerce` `Education` `ERP` `Finance` `Health` `Human resources` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` , `Telecommunications` `Tools, Travel` `Web design & hosting`|
+|description|Cadeia de caracteres|Uma descrição do aplicativo.|
+|displayName|Cadeia de caracteres|O nome do aplicativo.|
+|homePageUrl|Cadeia de caracteres|A URL da home page do aplicativo.|
+|id|Cadeia de caracteres| Identificador exclusivo do aplicativo. Somente leitura.|
+|logoUrl|Cadeia de caracteres|A URL para obter o logotipo desse aplicativo.|
 |publicador|String|O nome do editor deste aplicativo.|
-|supportedProvisioningTypes|Coleção de cadeias de caracteres|A lista de modos de provisionamento suportados por esse aplicativo. O único valor válido é `sync` .|
-|supportedSingleSignOnModes|Coleção de cadeias de caracteres|A lista de modos de login único suportados por esse aplicativo. Os valores com suporte são: `password`, `saml`, `external`, e `oidc`.|
+|supportedProvisioningTypes|Conjunto de cadeias de caracteres|A lista de modos de provisionamento suportados por esse aplicativo. O único valor válido é `sync` .|
+|supportedSingleSignOnModes|Conjunto de cadeias de caracteres|A lista de modos de login único suportados por este aplicativo. Os valores com suporte são: `oidc`, `password`, `saml`, e `notSupported`.|
 
 ## <a name="relationships"></a>Relações
 

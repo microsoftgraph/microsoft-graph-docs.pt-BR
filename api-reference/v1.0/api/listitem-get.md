@@ -5,12 +5,12 @@ description: Retorna os metadados de um item em uma lista do SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 22e7ea8cf90cb1677ddcfa653d9e2c67ce3786c7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 9700f6b18271cc73b0a51d06dc7f8fccdebecb10
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238768"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473739"
 ---
 # <a name="get-listitem"></a>Obter listItem
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

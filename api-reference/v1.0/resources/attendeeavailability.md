@@ -2,15 +2,15 @@
 title: Tipo de recurso attendeeAvailability
 description: A disponibilidade de um participante.
 localization_priority: Normal
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c893b8c14cdb321d435f08c71c50fe43893c76f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c69925ee64dd3c39b7edb59a6416d0ddc5b533c
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003252"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474460"
 ---
 # <a name="attendeeavailability-resource-type"></a>Tipo de recurso attendeeAvailability
 
@@ -40,7 +40,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attendee|[attendeeBase](attendeebase.md)|O endereço de email e o tipo de participante, se é uma pessoa ou um recurso, e se é obrigatório ou opcional se for uma pessoa.|
+|attendee|[attendeeBase](attendeebase.md)|O endereço de email e o tipo de participante - se é uma pessoa ou um recurso e se é obrigatório ou opcional se for uma pessoa.|
 |availability|freeBusyStatus| O status de disponibilidade do participante. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

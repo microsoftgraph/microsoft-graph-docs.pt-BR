@@ -1,16 +1,16 @@
 ---
 title: Atualizar as configurações de caixa de correio do usuário
-description: Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui configurações para respostas automáticas (notificar as pessoas automaticamente ao receber seus emails), localidade (idioma e país/região), fuso horário e horário de trabalho.
+description: Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui configurações para respostas automáticas (notificar as pessoas automaticamente após o recebimento de seus emails), localidade (idioma e país/região), fuso horário e horário comercial.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1f759ab104e56bc4fe6cc4d7a81adb74bdbdc560
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 34c52abdd59b5b9384b2e21f02af13cffc8cf5bb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134824"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475018"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Habilitar, configurar ou desabilitar uma ou mais das seguintes configurações como parte de [mailboxSettings](../resources/mailboxsettings.md)de um usuário:
+Habilitar, configurar ou desabilitar uma ou mais das seguintes configurações como parte das caixas de correio de um [usuárioConfigurações](../resources/mailboxsettings.md):
 
 - [respostas automáticas](../resources/automaticrepliessetting.md) (notificar pessoas automaticamente ao receber seus emails)
 - dateFormat
@@ -28,19 +28,19 @@ Habilitar, configurar ou desabilitar uma ou mais das seguintes configurações c
 - fuso horário
 - [horário de trabalho](../resources/workinghours.md)
 
-Ao atualizar o formato de data ou hora preferido para um usuário, especifique-o, respectivamente, no formato [de data ou](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) hora curta. [](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) 
+Ao atualizar o formato de data ou hora preferencial para um usuário, especifique-o, respectivamente, no formato de [data curta](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou [de curto](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) período. 
 
-Ao atualizar o fuso horário preferido de um usuário, especifique-o no formato windows ou [IANA (autoridade](https://www.iana.org/time-zones) de números atribuídos à Internet) (também conhecido como fuso horário de Olson). Você também pode personalizar ainda mais o fuso horário, conforme mostrado no [exemplo 2](#example-2) abaixo.
+Ao atualizar o fuso horário preferencial para um usuário, especifique-o no formato [IANA (Autoridade](https://www.iana.org/time-zones) de Números Atribuídos) do Windows ou internet (também conhecido como fuso horário Olson). Você também pode personalizar ainda mais o fuso horário, conforme mostrado no [exemplo 2](#example-2) abaixo.
 
 > [!TIP] 
-> Você não pode criar ou excluir configurações de caixa de correio.
+> Não é possível criar ou excluir configurações de caixa de correio.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | MailboxSettings.ReadWrite    |
 |Aplicativo | MailboxSettings.ReadWrite |
 
@@ -63,16 +63,16 @@ No corpo da solicitação, forneça os valores para as propriedades relevantes q
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado. Você pode definir essas notificações apenas para um intervalo de datas futuro.|
-|dateFormat|string|O formato de data da caixa de correio do usuário.|
-|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Se o usuário tiver um representante de calendário, isso especificará se o representante, o proprietário da caixa de correio ou ambos receberão mensagens de reunião e respostas de reunião. Os valores possíveis são: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
+|dateFormat|string|O formato de data para a caixa de correio do usuário.|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Se o usuário tiver um representante de calendário, isso especifica se o representante, o proprietário da caixa de correio ou ambos recebem mensagens de reunião e respostas de reunião. Os valores possíveis são: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |idioma|[localeInfo](../resources/localeinfo.md)|Informações sobre a localidade do usuário, incluindo o idioma preferencial e o país/região.|
-|timeFormat|string|O formato de hora para a caixa de correio do usuário.|
+|timeFormat|string|O formato de hora da caixa de correio do usuário.|
 |timeZone|string|O fuso horário padrão para a caixa de correio do usuário.|
 |workingHours|[workingHours](../resources/workinghours.md)|As horas, os dias de uma semana e o fuso horário em que o usuário trabalha.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e as propriedades atualizadas de um `200 OK` [objeto mailboxSettings](../resources/mailboxsettings.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e as propriedades `200 OK` atualizadas de um [objeto mailboxSettings](../resources/mailboxsettings.md) no corpo da resposta.
 
 ## <a name="errors"></a>Erros
 
@@ -169,8 +169,10 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 O segundo exemplo personaliza o fuso horário das horas de trabalho do usuário conectado definindo a propriedade **timeZone** para um [fuso horário personalizado](../resources/customtimezone.md).
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "update_mailboxsettings_2"
 }-->
 ```http
@@ -211,10 +213,28 @@ Content-Type: application/json
   }
 } 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-mailboxsettings-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxsettings-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-mailboxsettings-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mailboxsettings-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "name": "update_mailboxsettings_2",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailboxSettings"

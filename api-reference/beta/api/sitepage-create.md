@@ -6,12 +6,12 @@ title: Criar uma nova página em um site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1a326b83055cf25d3741976981fc499f0fdd8788
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc9b7a997602252aa58f94178b30fa719bc9ee11
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044498"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475748"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Criar uma página na lista de páginas do site de um site
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [sitePage][] na [lista][] de páginas do site em um [site][].
+Criar um novo [sitePage][] na lista de páginas [do][] site em um [site][].
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,7 +41,7 @@ POST /sites/{site-id}/pages
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do recurso [sitePage][] a ser criado.
+No corpo da solicitação, fornece uma representação JSON do [recurso sitePage][] a ser criado.
 
 ## <a name="example"></a>Exemplo
 
@@ -51,7 +51,7 @@ O exemplo a seguir mostra como criar uma nova página.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 POST /sites/{site-id}/pages
 Content-Type: application/json
 
@@ -116,11 +116,11 @@ Content-Type: application/json
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um [sitePage][] no corpo da resposta para a página criada.
+Se tiver êxito, este método retornará [um sitePage][] no corpo da resposta para a página criada.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

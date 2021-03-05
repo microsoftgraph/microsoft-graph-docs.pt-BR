@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 036454a27b2d363a328fca73ce54c9ce112b566d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2d281b9d35dc4b0672aea09a1e65578cdc2401f3
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436418"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474047"
 ---
 # <a name="get-vendors"></a>Obter fornecedores
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Financials.ReadWrite.All|
 
@@ -56,7 +56,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` ob
 **Solicitação**
 
 Este é um exemplo da solicitação.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
 ```
 

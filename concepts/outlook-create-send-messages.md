@@ -1,15 +1,15 @@
 ---
 title: Automatizar a criação, o envio e o processamento de mensagens
 description: Emails são representados pelo recurso de mensagem no Microsoft Graph.
-author: angelgolfer-ms
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 050807fb13f91c506268aadde6757c2de1c4d30c
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: b64c06d86cc4228a3254840103496dbe89890788
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036078"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474439"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Automatizar a criação, o envio e o processamento de mensagens
 

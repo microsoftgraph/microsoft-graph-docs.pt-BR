@@ -5,18 +5,18 @@ description: Siga o site/sites de um usuário.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1be47783c02f6093aaf2696d1d204657c6f8c185
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 18044f2a6459fa7d145d29bbf2a66d8b2eee7f5f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969818"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475778"
 ---
 # <a name="follow-site"></a>Seguir site 
 
 Namespace: microsoft.graph
 
-Siga o [site](../resources/site.md) de um usuário ou vários sites.
+Siga o site de um [usuário ou](../resources/site.md) vários sites.
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,7 +38,7 @@ POST /users/{user-id}/followedSites/add
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma matriz de objetos JSON com o parâmetro ID mencionado na tabela abaixo. 
+No corpo da solicitação, fornece uma matriz de objetos JSON com o parâmetro id mencionado na tabela abaixo. 
 
 
 | Nome                 | Valor  | Descrição                                                            |
@@ -48,8 +48,8 @@ No corpo da solicitação, forneça uma matriz de objetos JSON com o parâmetro 
 
 ## <a name="response"></a>Resposta 
 
-* Se a solicitação for bem-sucedida, este método retornará uma matriz de sites que foram visitados.  
-* Se ocorreu um erro ao seguir qualquer um dos sites especificados, este método retornará um `207` código de status e o corpo da resposta conterá uma matriz de entradas contendo objetos [Error](/graph/errors) e siteIds indicando quais sites não puderam ser seguidos.
+* Se a solicitação for bem-sucedida, este método retornará uma matriz de sites que foram seguidos.  
+* Se ocorrer um erro ao seguir qualquer um dos sites especificados, este método retornará um código de status e o corpo da resposta conterá uma matriz de entradas contendo objetos de erro e siteIds indicando quais sites não puderam ser `207` seguidos. [](/graph/errors)
 
 ## <a name="example"></a>Exemplo
 
@@ -101,7 +101,7 @@ Se tiver êxito, retornará a seguinte resposta JSON.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -137,11 +137,11 @@ Content-type: application/json
 }
 ```
 
-Se ocorreu um erro, ele retornará a seguinte resposta JSON 
+Se ocorrer um erro, ele retornará a seguinte resposta JSON 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
 {

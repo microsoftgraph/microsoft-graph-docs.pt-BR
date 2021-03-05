@@ -2,15 +2,15 @@
 title: 'user: findMeetingTimes'
 description: Localize as sugestões de hora da reunião com base no organizador e na disponibilidade dos participantes, assim como nas restrições de horário ou local especificadas como parâmetros.
 localization_priority: Normal
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a4dfbd9507b8753ad357f8a32c13aadb94d4ff2d
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: a7cbf2803c65f3159cd7cbd3aafaa147114983e0
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292097"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475426"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -52,11 +52,11 @@ Todos os parâmetros suportados estão listados abaixo. Dependendo do cenário, 
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attendees|Coleção [attendeeBase](../resources/attendeebase.md)|Uma coleção de participantes ou recursos da reunião. Na propriedade de **tipo** correspondente, `required` especifique ou `optional` para uma pessoa e para um recurso como sala de `resource` reunião. Se não for especificado, **findMeetingTimes** assumirá `required` a propriedade **de** tipo. Uma coleção vazia faz com que **findMeetingTimes** procure gratuitamente alocações de tempo somente para o organizador. Opcional.|
+|attendees|Coleção [attendeeBase](../resources/attendeebase.md)|Uma coleção de participantes ou recursos da reunião. Na propriedade **tipo correspondente,** especifique `required` ou para uma pessoa e para um recurso como sala de `optional` `resource` reunião. Se não for especificado, **findMeetingTimes** assume `required` a propriedade **type.** Uma coleção vazia faz com que **findMeetingTimes** procure gratuitamente alocações de tempo somente para o organizador. Opcional.|
 |isOrganizerOptional|Edm.Boolean|Especifique `True` se o organizador não tiver necessariamente que participar. O padrão é `false`. Opcional.|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|Os requisitos do organizador sobre o local da reunião, tal como se é necessário sugerir de um local de encontro, ou há locais específicos apenas onde a reunião pode ocorrer. Opcional.|
 |maxCandidates|Edm.Int32|O número máximo de sugestões de horários de reunião a ser retornados. Opcional.|
-|meetingDuration|Edm.Duration|A duração da reunião, denotado no [formato ISO 8601.](https://www.iso.org/iso/iso8601) Por exemplo, 1 hora é denobado como "PT1H", onde "P" é o designador de duração, 'T' é o designador de hora e 'H' é o designador de hora. Use M para indicar minutos para a duração; por exemplo, 2 horas e 30 minutos seriam 'PT2H30M'. Se a duração da reunião não for especificada, **findMeetingTimes** usará o padrão de 30 minutos. Opcional.|
+|meetingDuration|Edm.Duration|O tamanho da reunião, denotado no [formato ISO 8601.](https://www.iso.org/iso/iso8601) Por exemplo, 1 hora é denotada como 'PT1H', onde 'P' é o designador de duração, 'T' é o designador de hora e 'H' é o designador de hora. Use M para indicar minutos para a duração; por exemplo, 2 horas e 30 minutos seria 'PT2H30M'. Se a duração da reunião não for especificada, **findMeetingTimes** usará o padrão de 30 minutos. Opcional.|
 |minimumAttendeePercentage|Edm.Double| O mínimo necessário de [confiança](#the-confidence-of-a-meeting-suggestion) para um intervalo de tempo a ser retornado na resposta. É um valor de % variando de 0 a 100. Opcional.|
 |returnSuggestionReasons|Edm.Boolean|Especifique `True` para retornar um motivo para cada sugestão de reunião na propriedade **suggestionReason**. O padrão é `false` para não retornar essa propriedade. Opcional.|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Qualquer restrição de tempo para uma reunião, o que pode incluir a natureza da reunião (propriedade **activityDomain**) e possíveis intervalos de tempo da reunião (propriedade **timeSlots**). **findMeetingTimes** pressupõe **activityDomain** como `work` se você não especificar este parâmetro. Opcional.|

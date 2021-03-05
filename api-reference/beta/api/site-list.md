@@ -1,16 +1,16 @@
 ---
 title: Enumerar sites
-description: Liste [sites] [] em uma organização que corresponda aos critérios de filtro e opções de consulta fornecidos.
+description: Listar os [sites] disponíveis em uma organização que corresponderam aos critérios de filtro e às opções de consulta fornecidas.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: ec9a9608a688e39ce6766672abd59ed21c273590
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c1b8af50227346e4440e4ca98873b20160ecd81b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969713"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475776"
 ---
 # <a name="enumerate-sites"></a>Enumerar sites
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar os [sites][] disponíveis em uma organização que correspondam aos critérios de filtro e opções de consulta fornecidos.
+Listar os [sites][] disponíveis em uma organização que corresponderem aos critérios de filtro e às opções de consulta fornecidas.
 
-Há suporte apenas para as seguintes opções de consulta:
+No momento, há suporte apenas para as seguintes opções de consulta:
 
-| Instrução Filter             | Instrução SELECT        | Descrição
+| Instrução Filter             | Instrução Select        | Descrição
 |:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | Lista todos os conjuntos de sites de nível de raiz na organização. Útil para descobrir o site de casa de cada geografia.
+|`siteCollection/root ne null` | `siteCollection,webUrl` | Lista todos os conjunto de sites de nível raiz na organização. Útil para descobrir o site de cada geografia.
 
-Além disso, você pode usar uma consulta **[$Search][]** em relação à coleção '/sites ' para localizar sites que correspondem a palavras-chave dadas.
+Além disso, você pode usar uma $search **[em][]** relação ao conjunto '/sites' para encontrar sites correspondentes a determinadas palavras-chave.
 
 [$search]: site-search.md
 [sites]: ../resources/site.md
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
 |:--------------------------------------|:-------------------------------------
 |Delegado (conta corporativa ou de estudante)     | Sites.Read.All, Sites.ReadWrite.All
-|Delegado (conta pessoal da Microsoft) | Sem suporte.
+|Delegada (conta pessoal da Microsoft) | Sem suporte.
 |Aplicativo                            | Sites.Read.All, Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
