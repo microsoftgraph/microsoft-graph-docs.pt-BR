@@ -5,38 +5,38 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7961f575265ef4fc8ddae23b9e36cd7352a0ae85
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 01c95eabb3d888b03b1024d25364b3bd6474deef
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447763"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472458"
 ---
-# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a><span data-ttu-id="3349e-103">Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (preterido)</span><span class="sxs-lookup"><span data-stu-id="3349e-103">Delete passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (deprecated)</span></span>
-<span data-ttu-id="3349e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3349e-104">Namespace: microsoft.graph</span></span>
+# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a><span data-ttu-id="88860-103">Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (preterido)</span><span class="sxs-lookup"><span data-stu-id="88860-103">Delete passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (deprecated)</span></span>
+<span data-ttu-id="88860-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="88860-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3349e-105">Remova as alterações feitas na [política do método de autenticação](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) de Entrada de Telefone do Microsoft Authenticator revertendo a política para sua configuração padrão.</span><span class="sxs-lookup"><span data-stu-id="3349e-105">Remove changes made to the [Microsoft Authenticator Phone Sign-in authentication method policy](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.</span></span>
+<span data-ttu-id="88860-105">Remova as alterações feitas na [política do método de autenticação](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) de Entrada de Telefone do Microsoft Authenticator revertendo a política para sua configuração padrão.</span><span class="sxs-lookup"><span data-stu-id="88860-105">Remove changes made to the [Microsoft Authenticator Phone Sign-in authentication method policy](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.</span></span>
 
 > [!CAUTION]
-> <span data-ttu-id="3349e-106">A API de política de autenticação do método de autenticação de telefone sem senha do Microsoft Authenticator é preterida e parou de retornar resultados em 31 de dezembro de 2020.</span><span class="sxs-lookup"><span data-stu-id="3349e-106">The Microsoft Authenticator Passwordless Phone Sign-in authentication method policy API is deprecated and stopped returning results on December 31, 2020.</span></span> <span data-ttu-id="3349e-107">Use a nova política de método de autenticação do [Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="3349e-107">Please use the new [Microsoft Authenticator authentication method policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).</span></span>
+> <span data-ttu-id="88860-106">A API de política de autenticação do método de autenticação de telefone sem senha do Microsoft Authenticator é preterida e parou de retornar resultados em 31 de dezembro de 2020.</span><span class="sxs-lookup"><span data-stu-id="88860-106">The Microsoft Authenticator Passwordless Phone Sign-in authentication method policy API is deprecated and stopped returning results on December 31, 2020.</span></span> <span data-ttu-id="88860-107">Use a nova política de método de autenticação do [Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="88860-107">Please use the new [Microsoft Authenticator authentication method policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3349e-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="3349e-108">Permissions</span></span>
-<span data-ttu-id="3349e-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3349e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="88860-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="88860-108">Permissions</span></span>
+<span data-ttu-id="88860-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="88860-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3349e-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3349e-111">Permission type</span></span>|<span data-ttu-id="3349e-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3349e-112">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="88860-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="88860-111">Permission type</span></span>|<span data-ttu-id="88860-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="88860-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3349e-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3349e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="3349e-114">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="3349e-114">Policy.ReadWrite.AuthenticationMethod</span></span>|
-|<span data-ttu-id="3349e-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3349e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3349e-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3349e-116">Not supported.</span></span>|
-|<span data-ttu-id="3349e-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3349e-117">Application</span></span>|<span data-ttu-id="3349e-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3349e-118">Not supported.</span></span>|
+|<span data-ttu-id="88860-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="88860-113">Delegated (work or school account)</span></span>|<span data-ttu-id="88860-114">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="88860-114">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="88860-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="88860-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="88860-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="88860-116">Not supported.</span></span>|
+|<span data-ttu-id="88860-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="88860-117">Application</span></span>|<span data-ttu-id="88860-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="88860-118">Not supported.</span></span>|
 
-<span data-ttu-id="3349e-119">Para cenários delegados, o administrador precisa da seguinte [função:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)</span><span class="sxs-lookup"><span data-stu-id="3349e-119">For delegated scenarios, the administrator needs the following [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+<span data-ttu-id="88860-119">Para cenários delegados, o administrador precisa da seguinte [função:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)</span><span class="sxs-lookup"><span data-stu-id="88860-119">For delegated scenarios, the administrator needs the following [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
 
-* <span data-ttu-id="3349e-120">Administrador global</span><span class="sxs-lookup"><span data-stu-id="3349e-120">Global admin</span></span>
+* <span data-ttu-id="88860-120">Administrador global</span><span class="sxs-lookup"><span data-stu-id="88860-120">Global admin</span></span>
 
 
-## <a name="http-request"></a><span data-ttu-id="3349e-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3349e-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="88860-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="88860-121">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -46,21 +46,23 @@ ms.locfileid: "50447763"
 DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/passwordlessMicrosoftAuthenticator
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3349e-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3349e-122">Request headers</span></span>
-|<span data-ttu-id="3349e-123">Nome</span><span class="sxs-lookup"><span data-stu-id="3349e-123">Name</span></span>|<span data-ttu-id="3349e-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="3349e-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="88860-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="88860-122">Request headers</span></span>
+|<span data-ttu-id="88860-123">Nome</span><span class="sxs-lookup"><span data-stu-id="88860-123">Name</span></span>|<span data-ttu-id="88860-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="88860-124">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="3349e-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="3349e-125">Authorization</span></span>|<span data-ttu-id="3349e-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3349e-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="88860-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="88860-125">Authorization</span></span>|<span data-ttu-id="88860-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="88860-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3349e-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3349e-128">Request body</span></span>
-<span data-ttu-id="3349e-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3349e-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="88860-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="88860-128">Request body</span></span>
+<span data-ttu-id="88860-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="88860-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3349e-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="3349e-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="88860-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="88860-130">Response</span></span>
 
-<span data-ttu-id="3349e-131">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="3349e-131">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="88860-131">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="88860-131">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3349e-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="3349e-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="88860-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="88860-132">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="3349e-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3349e-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="88860-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88860-133">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="88860-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="88860-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration"
@@ -69,9 +71,27 @@ DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
 ``` http
 DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/passwordlessMicrosoftAuthenticator
 ```
+# <a name="c"></a>[<span data-ttu-id="88860-135">C#</span><span class="sxs-lookup"><span data-stu-id="88860-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="88860-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="88860-136">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="88860-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="88860-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="88860-138">Java</span><span class="sxs-lookup"><span data-stu-id="88860-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-### <a name="response"></a><span data-ttu-id="3349e-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="3349e-134">Response</span></span>
+
+### <a name="response"></a><span data-ttu-id="88860-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="88860-139">Response</span></span>
 
 <!-- {
   "blockType": "response",

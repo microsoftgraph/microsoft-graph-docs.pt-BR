@@ -1,36 +1,36 @@
 ---
-title: Listar sessões do callRecord
+title: Listar sessões callRecord
 description: Recupere a lista de objetos de sessão para um callRecord.
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e3b23a131bf049e10d514a428b473bfc1df8e60a
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 923aba3d4cdc489ff6c716df2b55f59c82233752
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601094"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472579"
 ---
-# <a name="list-callrecord-sessions"></a><span data-ttu-id="f5173-103">Listar sessões do callRecord</span><span class="sxs-lookup"><span data-stu-id="f5173-103">List callRecord sessions</span></span>
+# <a name="list-callrecord-sessions"></a><span data-ttu-id="97799-103">Listar sessões callRecord</span><span class="sxs-lookup"><span data-stu-id="97799-103">List callRecord sessions</span></span>
 
-<span data-ttu-id="f5173-104">Namespace: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="f5173-104">Namespace: microsoft.graph.callRecords</span></span>
+<span data-ttu-id="97799-104">Namespace: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="97799-104">Namespace: microsoft.graph.callRecords</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f5173-105">Recupere a lista de [sessões](../resources/callrecords-session.md) associadas a um objeto [callRecord](../resources/callrecords-callrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="f5173-105">Retrieve the list of [sessions](../resources/callrecords-session.md) associated with a [callRecord](../resources/callrecords-callrecord.md) object.</span></span>
+<span data-ttu-id="97799-105">Recupere a lista [de sessões associadas](../resources/callrecords-session.md) a um [objeto callRecord.](../resources/callrecords-callrecord.md)</span><span class="sxs-lookup"><span data-stu-id="97799-105">Retrieve the list of [sessions](../resources/callrecords-session.md) associated with a [callRecord](../resources/callrecords-callrecord.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f5173-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f5173-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="97799-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="97799-106">Permissions</span></span>
 
-<span data-ttu-id="f5173-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f5173-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="97799-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97799-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f5173-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f5173-109">Permission type</span></span>                        | <span data-ttu-id="f5173-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f5173-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="97799-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="97799-109">Permission type</span></span>                        | <span data-ttu-id="97799-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="97799-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="f5173-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f5173-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f5173-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f5173-112">Not supported.</span></span> |
-| <span data-ttu-id="f5173-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f5173-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f5173-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f5173-114">Not supported.</span></span> |
-| <span data-ttu-id="f5173-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f5173-115">Application</span></span>                            | <span data-ttu-id="f5173-116">CallRecords.Read.All</span><span class="sxs-lookup"><span data-stu-id="f5173-116">CallRecords.Read.All</span></span> |
+| <span data-ttu-id="97799-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="97799-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="97799-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="97799-112">Not supported.</span></span> |
+| <span data-ttu-id="97799-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="97799-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97799-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="97799-114">Not supported.</span></span> |
+| <span data-ttu-id="97799-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="97799-115">Application</span></span>                            | <span data-ttu-id="97799-116">CallRecords.Read.All</span><span class="sxs-lookup"><span data-stu-id="97799-116">CallRecords.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f5173-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f5173-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="97799-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="97799-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,49 +38,69 @@ ms.locfileid: "48601094"
 GET /communications/callRecords/{id}/sessions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f5173-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="f5173-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="97799-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="97799-118">Optional query parameters</span></span>
 
-<span data-ttu-id="f5173-119">Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="f5173-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="f5173-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="f5173-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="97799-119">Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="97799-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="97799-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="97799-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f5173-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f5173-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="97799-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="97799-121">Request headers</span></span>
 
-| <span data-ttu-id="f5173-122">Nome</span><span class="sxs-lookup"><span data-stu-id="f5173-122">Name</span></span>      |<span data-ttu-id="f5173-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="f5173-123">Description</span></span>|
+| <span data-ttu-id="97799-122">Nome</span><span class="sxs-lookup"><span data-stu-id="97799-122">Name</span></span>      |<span data-ttu-id="97799-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="97799-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="f5173-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="f5173-124">Authorization</span></span> | <span data-ttu-id="f5173-125">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="f5173-125">Bearer {token}</span></span> |
+| <span data-ttu-id="97799-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="97799-124">Authorization</span></span> | <span data-ttu-id="97799-125">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="97799-125">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f5173-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f5173-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="97799-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="97799-126">Request body</span></span>
 
-<span data-ttu-id="f5173-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f5173-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="97799-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="97799-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f5173-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5173-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="97799-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="97799-128">Response</span></span>
 
-<span data-ttu-id="f5173-129">Se tiver êxito, este método retornará um `200 OK` código de resposta e os objetos de [sessão](../resources/callrecords-session.md) solicitados no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f5173-129">If successful, this method returns a `200 OK` response code and the requested [session](../resources/callrecords-session.md) objects in the response body.</span></span>
+<span data-ttu-id="97799-129">Se tiver êxito, este método retornará um código `200 OK` de resposta e os objetos de [sessão](../resources/callrecords-session.md) solicitados no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="97799-129">If successful, this method returns a `200 OK` response code and the requested [session](../resources/callrecords-session.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f5173-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f5173-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="97799-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="97799-130">Examples</span></span>
 
-### <a name="example-1-get-session-list"></a><span data-ttu-id="f5173-131">Exemplo 1: obter lista de sessão</span><span class="sxs-lookup"><span data-stu-id="f5173-131">Example 1: Get session list</span></span>
+### <a name="example-1-get-session-list"></a><span data-ttu-id="97799-131">Exemplo 1: Obter lista de sessões</span><span class="sxs-lookup"><span data-stu-id="97799-131">Example 1: Get session list</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f5173-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f5173-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="97799-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="97799-132">Request</span></span>
 
-<span data-ttu-id="f5173-133">Veja a seguir um exemplo da solicitação para obter a lista de [sessões](../resources/callrecords-session.md) de um [callRecord](../resources/callrecords-callrecord.md).</span><span class="sxs-lookup"><span data-stu-id="f5173-133">The following is an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md).</span></span>
+<span data-ttu-id="97799-133">Veja a seguir um exemplo da solicitação para obter a lista de [sessões](../resources/callrecords-session.md) de [um callRecord](../resources/callrecords-callrecord.md).</span><span class="sxs-lookup"><span data-stu-id="97799-133">The following is an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md).</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="97799-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="97799-134">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord_sessions"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
 ```
+# <a name="c"></a>[<span data-ttu-id="97799-135">C#</span><span class="sxs-lookup"><span data-stu-id="97799-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-sessions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="f5173-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5173-134">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="97799-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="97799-136">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-sessions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="f5173-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f5173-135">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="97799-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="97799-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-callrecord-sessions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="f5173-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f5173-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="97799-138">Java</span><span class="sxs-lookup"><span data-stu-id="97799-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="97799-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="97799-139">Response</span></span>
+
+<span data-ttu-id="97799-140">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="97799-140">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="97799-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="97799-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.session",
   "isCollection": true
@@ -152,29 +172,49 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-session-list-with-segments"></a><span data-ttu-id="f5173-138">Exemplo 2: obter a lista de sessão com segmentos</span><span class="sxs-lookup"><span data-stu-id="f5173-138">Example 2: Get session list with segments</span></span>
+### <a name="example-2-get-session-list-with-segments"></a><span data-ttu-id="97799-143">Exemplo 2: Obter lista de sessões com segmentos</span><span class="sxs-lookup"><span data-stu-id="97799-143">Example 2: Get session list with segments</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f5173-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f5173-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="97799-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="97799-144">Request</span></span>
 
-<span data-ttu-id="f5173-140">Veja a seguir um exemplo da solicitação para obter a lista de [sessões](../resources/callrecords-session.md) para um [callRecord](../resources/callrecords-callrecord.md) com [segmentos](../resources/callrecords-segment.md) incluídos.</span><span class="sxs-lookup"><span data-stu-id="f5173-140">The following is an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md) with [segments](../resources/callrecords-segment.md) included.</span></span>
+<span data-ttu-id="97799-145">Veja a seguir um exemplo da solicitação para obter a lista de sessões de [um callRecord](../resources/callrecords-callrecord.md) com [](../resources/callrecords-session.md) [segmentos incluídos.](../resources/callrecords-segment.md)</span><span class="sxs-lookup"><span data-stu-id="97799-145">The following is an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md) with [segments](../resources/callrecords-segment.md) included.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="97799-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="97799-146">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord_sessions_expanded"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$expand=segments
 ```
+# <a name="c"></a>[<span data-ttu-id="97799-147">C#</span><span class="sxs-lookup"><span data-stu-id="97799-147">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-sessions-expanded-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="f5173-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5173-141">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="97799-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="97799-148">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-sessions-expanded-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="f5173-142">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f5173-142">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="97799-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="97799-149">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-callrecord-sessions-expanded-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="f5173-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f5173-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="97799-150">Java</span><span class="sxs-lookup"><span data-stu-id="97799-150">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-expanded-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="97799-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="97799-151">Response</span></span>
+
+<span data-ttu-id="97799-152">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="97799-152">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="97799-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="97799-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.session",
   "isCollection": true

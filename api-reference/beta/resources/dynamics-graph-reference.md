@@ -1,5 +1,5 @@
 ---
-title: Trabalhar com a API do Dynamics 365 Business central no Microsoft Graph
+title: Trabalhando com a API Central de Negócios do Dynamics 365 no Microsoft Graph
 description: Documentação da API para integração com o Microsoft Graph
 services: project-madeira
 documentationcenter: ''
@@ -7,33 +7,33 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: conceptualPageType
-ms.openlocfilehash: cb4cc183df82ebd743aa424592ff6c1c36e062e3
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b1fdc91d884c4c0869b97f2068d005407158d6a5
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402552"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473565"
 ---
-# <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a><span data-ttu-id="bef93-103">Trabalhar com a API do Dynamics 365 Business central no Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="bef93-103">Working with the Dynamics 365 Business Central API in Microsoft Graph</span></span>
+# <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a><span data-ttu-id="c5de5-103">Trabalhando com a API Central de Negócios do Dynamics 365 no Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="c5de5-103">Working with the Dynamics 365 Business Central API in Microsoft Graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bef93-104">Você pode usar o Microsoft Graph para conectar e integrar seu serviço Web ou solução SaaS com o Microsoft Dynamics 365 Business central.</span><span class="sxs-lookup"><span data-stu-id="bef93-104">You can use Microsoft Graph to connect and integrate your web service or SaaS solution with Microsoft Dynamics 365 Business Central.</span></span> <span data-ttu-id="bef93-105">Com o Microsoft Graph, você pode criar aplicativos que obtêm acesso autorizado e se integram perfeitamente com os dados do Microsoft Dynamics 365 Business central.</span><span class="sxs-lookup"><span data-stu-id="bef93-105">With Microsoft Graph, you can build apps that get authorized access to and integrate seamlessly with Microsoft Dynamics 365 Business Central data.</span></span>
+<span data-ttu-id="c5de5-104">Você pode usar o Microsoft Graph para conectar e integrar seu serviço Web ou solução SaaS com o Microsoft Dynamics 365 Business Central.</span><span class="sxs-lookup"><span data-stu-id="c5de5-104">You can use Microsoft Graph to connect and integrate your web service or SaaS solution with Microsoft Dynamics 365 Business Central.</span></span> <span data-ttu-id="c5de5-105">Com o Microsoft Graph, você pode criar aplicativos que tenham acesso autorizado e se integrem perfeitamente aos dados do Microsoft Dynamics 365 Business Central.</span><span class="sxs-lookup"><span data-stu-id="c5de5-105">With Microsoft Graph, you can build apps that get authorized access to and integrate seamlessly with Microsoft Dynamics 365 Business Central data.</span></span>
 
-## <a name="authorization"></a><span data-ttu-id="bef93-106">Autorização</span><span class="sxs-lookup"><span data-stu-id="bef93-106">Authorization</span></span>
-<span data-ttu-id="bef93-107">Use o ponto de extremidade do Azure AD v 2.0 para autenticar as APIs do Dynamics 365 Business central.</span><span class="sxs-lookup"><span data-stu-id="bef93-107">Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs.</span></span> <span data-ttu-id="bef93-108">Todas as APIs exigem o `Authorization: Bearer {access-token}` cabeçalho da solicitação.</span><span class="sxs-lookup"><span data-stu-id="bef93-108">All APIs require the `Authorization: Bearer {access-token}` request header.</span></span> <span data-ttu-id="bef93-109">Para obter mais informações sobre autorização, consulte [obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/).</span><span class="sxs-lookup"><span data-stu-id="bef93-109">For more information about authorization, see [Get access tokens to call Microsoft Graph](/graph/auth/).</span></span>
+## <a name="authorization"></a><span data-ttu-id="c5de5-106">Autorização</span><span class="sxs-lookup"><span data-stu-id="c5de5-106">Authorization</span></span>
+<span data-ttu-id="c5de5-107">Use o ponto de extremidade do Azure AD v2.0 para autenticar as APIs da Central de Negócios do Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="c5de5-107">Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs.</span></span> <span data-ttu-id="c5de5-108">Todas as APIs exigem `Authorization: Bearer {access-token}` o header de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c5de5-108">All APIs require the `Authorization: Bearer {access-token}` request header.</span></span> <span data-ttu-id="c5de5-109">Para obter mais informações sobre autorização, consulte [Obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/).</span><span class="sxs-lookup"><span data-stu-id="c5de5-109">For more information about authorization, see [Get access tokens to call Microsoft Graph](/graph/auth/).</span></span>
 
-## <a name="common-dynamics-365-business-central-scenarios"></a><span data-ttu-id="bef93-110">Cenários do Common Business central do Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="bef93-110">Common Dynamics 365 Business Central scenarios</span></span>
-<span data-ttu-id="bef93-111">A API do Dynamics 365 Business central permite que você leia e modifique dados corporativos por meio de aplicativos conectados e integrados por meio de um único ponto de extremidade.</span><span class="sxs-lookup"><span data-stu-id="bef93-111">The Dynamics 365 Business Central API allows you to read and modify business data through apps that are connected and integrated through a single endpoint.</span></span> <span data-ttu-id="bef93-112">Use a API para, por exemplo, obter acesso a informações de [cliente](../resources/dynamics-customer.md) e de [fornecedor](../resources/dynamics-vendor.md) ou [Exibir pagamentos vencidos](../resources/dynamics-agedaccountspayable.md).</span><span class="sxs-lookup"><span data-stu-id="bef93-112">Use the API to, for example, get access to [customer](../resources/dynamics-customer.md) and [vendor](../resources/dynamics-vendor.md) information, or [view overdue payments](../resources/dynamics-agedaccountspayable.md).</span></span>
+## <a name="common-dynamics-365-business-central-scenarios"></a><span data-ttu-id="c5de5-110">Cenários comuns do Dynamics 365 Business Central</span><span class="sxs-lookup"><span data-stu-id="c5de5-110">Common Dynamics 365 Business Central scenarios</span></span>
+<span data-ttu-id="c5de5-111">A API Central de Negócios do Dynamics 365 permite que você leia e modifique dados de negócios por meio de aplicativos conectados e integrados por meio de um único ponto de extremidade.</span><span class="sxs-lookup"><span data-stu-id="c5de5-111">The Dynamics 365 Business Central API allows you to read and modify business data through apps that are connected and integrated through a single endpoint.</span></span> <span data-ttu-id="c5de5-112">Use a API para, por exemplo, obter acesso às informações do [cliente](../resources/dynamics-customer.md) e [do](../resources/dynamics-vendor.md) fornecedor ou exibir pagamentos [atrasados.](../resources/dynamics-agedaccountspayable.md)</span><span class="sxs-lookup"><span data-stu-id="c5de5-112">Use the API to, for example, get access to [customer](../resources/dynamics-customer.md) and [vendor](../resources/dynamics-vendor.md) information, or [view overdue payments](../resources/dynamics-agedaccountspayable.md).</span></span>
 
-## <a name="whats-new"></a><span data-ttu-id="bef93-113">O que há de novo</span><span class="sxs-lookup"><span data-stu-id="bef93-113">What's new</span></span>
-<span data-ttu-id="bef93-114">Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.</span><span class="sxs-lookup"><span data-stu-id="bef93-114">Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.</span></span>
+## <a name="whats-new"></a><span data-ttu-id="c5de5-113">Novidades</span><span class="sxs-lookup"><span data-stu-id="c5de5-113">What's new</span></span>
+<span data-ttu-id="c5de5-114">Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.</span><span class="sxs-lookup"><span data-stu-id="c5de5-114">Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="bef93-115">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="bef93-115">Next steps</span></span>
-<span data-ttu-id="bef93-116">A API do Dynamics 365 Business central pode abrir novas maneiras de contato com os usuários.</span><span class="sxs-lookup"><span data-stu-id="bef93-116">The Dynamics 365 Business Central API can open up new ways for you to engage with users.</span></span> <span data-ttu-id="bef93-117">Para saber mais, consulte o seguinte:</span><span class="sxs-lookup"><span data-stu-id="bef93-117">To learn more, see the following:</span></span>
+## <a name="next-steps"></a><span data-ttu-id="c5de5-115">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="c5de5-115">Next steps</span></span>
+<span data-ttu-id="c5de5-116">A API Central de Negócios do Dynamics 365 pode abrir novas maneiras de você se envolver com os usuários.</span><span class="sxs-lookup"><span data-stu-id="c5de5-116">The Dynamics 365 Business Central API can open up new ways for you to engage with users.</span></span> <span data-ttu-id="c5de5-117">Para saber mais, consulte o seguinte:</span><span class="sxs-lookup"><span data-stu-id="c5de5-117">To learn more, see the following:</span></span>
 
-+ [<span data-ttu-id="bef93-118">Visão geral do Dynamics 365 Business central</span><span class="sxs-lookup"><span data-stu-id="bef93-118">Dynamics 365 Business Central Overview</span></span>](/graph/dynamics-business-central-concept-overview)
-+ <span data-ttu-id="bef93-119">Experimente o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="bef93-119">Try [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
++ [<span data-ttu-id="c5de5-118">Visão geral central do Dynamics 365 Business</span><span class="sxs-lookup"><span data-stu-id="c5de5-118">Dynamics 365 Business Central Overview</span></span>](/graph/dynamics-business-central-concept-overview)
++ <span data-ttu-id="c5de5-119">Experimente [o Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="c5de5-119">Try [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
 
 <!--
 |For Resource Type |See                                                 |
@@ -65,7 +65,6 @@ ms.locfileid: "48402552"
 |shipmentMethods resource type|[shipmentMethods](../resources/dynamics-shipmentmethods.md)|
 |taxGroups resource type|[taxGroups](../resources/dynamics-taxgroups.md)|
 |taxArea resource type|[taxAreas](..resources/dynamics-taxarea.md)|
-|trial balance resource type|[trialBalance](../resources/dynamics-trialbalance.md)|
 |unitsOfMeasure resource type|[unitsOfMeasure](../resources/dynamics-unitsofmeasure.md)|
 |vendor resource type|[vendor](../resources/dynamics-vendor.md)|
 -->
