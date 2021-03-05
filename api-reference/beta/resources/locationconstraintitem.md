@@ -2,15 +2,15 @@
 title: Tipo de recurso locationConstraintItem
 description: As condições indicadas por um cliente para o local de uma reunião.
 localization_priority: Normal
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 58c05dadf30399ef704980b3bbbf24ac74330f6e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 00aa2852744904a57fe3e90303cf562346c478a3
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058092"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472038"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Tipo de recurso locationConstraintItem
 

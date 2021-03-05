@@ -1,15 +1,15 @@
 ---
 title: Propor novos horários de reunião no Outlook
 description: No Outlook, o organizador da reunião pode permitir que os convidados proponham horários alternativos.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: d1273c967f9ea1476e83e7f2905c7ed4c29808d6
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: a09c7bec65c69cd1f5058cae5eddc1b99a22e694
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427477"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472311"
 ---
 # <a name="propose-new-meeting-times-in-outlook"></a>Propor novos horários de reunião no Outlook
 
@@ -151,7 +151,7 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
     }
     ```
 
-2. Adele recebe o convite na caixa de entrada como um [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0). Ela observa que a propriedade **allowNewTimeProposals** está definida. [Ao usar o **evento ** associado](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2) a esse **eventMessageRequest **, ela responde provisoriamente e propõe o dia seguinte no mesmo horário, no parâmetro de corpo **proposedNewTime**. Ela também define o parâmetro **sendResponse** como verdadeiro.
+2. Adele recebe o convite na caixa de entrada como um [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0). Ela observa que a propriedade **allowNewTimeProposals** está definida. [Ao usar o **evento** associado](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2) a esse **eventMessageRequest**, ela responde provisoriamente e propõe o dia seguinte no mesmo horário, no parâmetro de corpo **proposedNewTime**. Ela também define o parâmetro **sendResponse** como verdadeiro.
 
     <!-- {
       "blockType": "request",

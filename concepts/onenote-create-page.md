@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 1f8f6e5ec1dd0825f10d0bb9a406b55c5822934e
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 815c42257449dde122958cc4ab3f9293387c0cb3
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288396"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472787"
 ---
 # <a name="create-onenote-pages"></a>Criar páginas do OneNote
 
@@ -276,5 +276,5 @@ Para saber mais sobre escopos de permissão e como eles funcionam, confira [Refe
 - [Usar marcas de anotação](onenote-note-tags.md)
 - [Integrar com o OneNote](integrate-with-onenote.md)
 - [Blog de desenvolvedor do OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Perguntas sobre desenvolvimento do OneNote no Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Perguntas de desenvolvimento do OneNote no Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)

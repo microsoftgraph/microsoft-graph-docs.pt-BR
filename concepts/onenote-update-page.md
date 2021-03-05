@@ -4,16 +4,16 @@ description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: c37418332a484223b82154c13e73801db525cbc3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 9a30197744cb3d03255ea3d215ff0774546ae023
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289074"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472332"
 ---
 # <a name="update-onenote-page-content"></a>Atualizar o conteúdo da página do OneNote
 
-**Aplica-se a** Blocos de anotações do consumidor no OneDrive | Blocos de anotações empresariais no Microsoft 365
+**Aplica-se a** notebooks do consumidor no OneDrive | Notebooks empresariais no Microsoft 365
 
 
 Para atualizar o conteúdo de uma página do OneNote, envie uma solicitação de PATCH para o ponto de extremidade do *conteúdo* da página:
@@ -59,7 +59,7 @@ Suas alterações serão enviadas no corpo da mensagem como uma matriz de objeto
 A matriz a seguir define duas alterações. A primeira insere uma imagem acima de um parágrafo como um irmão, e a segunda acrescenta um item em uma lista como um último filho.
 
 > [!NOTE]
-> Ao atualizar uma imagem em uma página do OneNote, você não pode usar links da www. O serviço não tentará baixar recursos aleatórios. Em vez disso, a imagem deve fazer parte da solicitação, seja por uma URL de dados de imagem ou um nome de parte de uma solicitação com diversas partes.
+> Ao atualizar uma imagem em uma página do OneNote, não é possível usar links de www. O serviço não tentará baixar recursos aleatórios. Em vez disso, a imagem deve fazer parte da solicitação, seja por uma imagem-data-url ou um nome de parte de uma solicitação de várias partes.
 
 ```json
 [
@@ -447,7 +447,7 @@ Content-Type: image/png
 
 <br/> 
 
-| Dado de resposta | Descrição |  
+| Dados de resposta | Descrição |  
 |------|------|  
 | Código de êxito | Um código de status de HTTP 204. Nenhum dado JSON é retornado para uma solicitação PATCH. |  
 | Erros | Leia [Códigos de erro para APIs do OneNote no Microsoft Graph](onenote-error-codes.md) para saber mais sobre erros do OneNote que poderão ser retornados pelo Microsoft Graph. |  
@@ -490,5 +490,5 @@ Para saber mais sobre escopos de permissão e como eles funcionam, confira [Esco
 - [Adicionar imagens e arquivos](onenote-images-files.md)
 - [Integrar com o OneNote](integrate-with-onenote.md)
 - [Blog de desenvolvedor do OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Perguntas sobre desenvolvimento do OneNote no Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Perguntas sobre desenvolvimento do OneNote no Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)

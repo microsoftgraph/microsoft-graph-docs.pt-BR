@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 55fd373fd59f79abdfca8b3e066ca496daf8770b
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 2ffa5b3f5562e83d1e1e1ef64629e39a1da41cd4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706000"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472857"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
@@ -28,6 +28,7 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 |[Carregar aplicativo no catálogo](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Faça upload de um aplicativo para o catálogo de aplicativos da sua organização.|
 |[Atualizar aplicativo no catálogo](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Atualize um aplicativo publicado no catálogo de aplicativos da sua organização.|
 |[Remover aplicativo do catálogo](../api/teamsapp-delete.md) | Nenhum(a) | Remova um aplicativo do catálogo de aplicativos da sua organização.|
+|[Obter um bot associado ao aplicativo no catálogo](../api/teamworkbot-get.md) | [teamworkbot](teamworkbot.md) | Obter o bot associado ao aplicativo no Teams.|
 
 ## <a name="properties"></a>Propriedades
 
