@@ -1,29 +1,28 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Atualizar um pacote
 description: Atualizar um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: af14454f660761a6e8fc6304d23870d5216540fc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5c27690f146924db2ade4baf8539a4973aa01ce2
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960177"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471515"
 ---
-# <a name="update-bundle"></a>Pacote de atualização
+# <a name="update-bundle"></a>Pacote de atualizações
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize os metadados de um [pacote][] de [DRIVEITEMS][driveItem] por ID.
+Atualize os metadados [para um pacote][] de [driveItems][driveItem] por ID.
 Você só pode atualizar os seguintes metadados:
 
 * Nome do pacote
-* Álbum `coverImageItemId` (se aplicável)
+* Album `coverImageItemId` (se aplicável)
 
 Quaisquer outras solicitações de alteração serão ignoradas.
 
@@ -50,7 +49,7 @@ PATCH /drive/items/{bundle-id}
 | Nome          | Descrição  |
 |:------------- |:------------ |
 | Autorização | \{token\} de portador. Obrigatório. |
-| if-match      | ETag. Opcional. Se este cabeçalho de solicitação estiver incluso e a eTag fornecida não corresponder à eTag atual no buncle, uma `412 Precondition Failed` resposta será retornada.
+| if-match      | eTag. Opcional. Se esse header de solicitação estiver incluído e a eTag fornecida não corresponder à eTag atual no buncle, uma `412 Precondition Failed` resposta será retornada.
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -58,9 +57,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um recurso [driveItem][] que representa o pacote atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um [recurso driveItem][] que representa o pacote atualizado no corpo da resposta.
 
-Leia o tópico [respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
+Leia o tópico [Respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 ## <a name="example"></a>Exemplo
 
@@ -72,7 +71,7 @@ Este exemplo renomeia um pacote.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
-```json
+```http
 PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
 Content-Type: application/json
 
@@ -103,7 +102,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -116,7 +115,7 @@ Content-Type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 
 [pacote]: ../resources/bundle.md

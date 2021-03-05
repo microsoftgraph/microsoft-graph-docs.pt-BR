@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eeb93101b06596c1ff651d7d1aa85763d3b7830e
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: 38abec6b54b92c98ebee2166a9539c70f6c40750
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720685"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448888"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
@@ -37,8 +37,8 @@ GET /users/{id | userPrincipalName}/calendars
 
 Os calendários do usuário no [calendarGroup](../resources/calendargroup.md) padrão.
 ```http
-GET /me/calendargroups/{calendar_group_id}/calendars
-GET /users/{id | userPrincipalName}/calendarGroup/calendars
+GET /me/calendars
+GET /users/{id | userPrincipalName}/calendars
 ```
 
 Os calendários do usuário em um [calendarGroup](../resources/calendargroup.md) específico.

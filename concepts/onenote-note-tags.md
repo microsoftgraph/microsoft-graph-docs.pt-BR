@@ -4,12 +4,12 @@ description: " Notebooks empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: c238f51ccce57b51fa3e17340c2d92321c3b6185
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: HT
+ms.openlocfilehash: be9d85811842939be0931416970bb5b7e800938a
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895479"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470526"
 ---
 # <a name="use-note-tags-in-onenote-pages"></a>Usar marcas de notas nas páginas do OneNote
 
@@ -78,7 +78,7 @@ Veja uma lista simples de tarefas pendentes com o primeiro item marcado como con
 
 Observe que as `<p>` marcas acima incluem cada uma o atributo `data-id`. Isso facilita a atualização das marcas de anotação da caixa de seleção. Por exemplo, a seguinte solicitação marca o item “plantio da primavera” como concluído.
 
-```json
+```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
@@ -364,7 +364,7 @@ Para saber mais sobre escopos de permissão e como eles funcionam, confira [Esco
 - [Atualizar o conteúdo da página do OneNote](onenote-update-page.md)
 - [Integrar com o OneNote](integrate-with-onenote.md)
 - [Blog de desenvolvedor do OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Perguntas sobre desenvolvimento do OneNote no Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Perguntas sobre desenvolvimento do OneNote no Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)
 
 

@@ -5,19 +5,19 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e0f1fa81923bb0deeecd7de01b1cb014f5f0b22a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 8c135e600c0e057b63700716577a47af890b5e6e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459764"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448295"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
 Namespace: microsoft.graph
 
 Recupera uma lista de objetos [attachment](../resources/attachment.md) anexados a um evento.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -53,9 +53,6 @@ Anexos de um [event](../resources/event.md) em um [calendar](../resources/calend
 ```http
 GET /me/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence a um [calendarGroup](../resources/calendargroup.md) de um usuário.
 

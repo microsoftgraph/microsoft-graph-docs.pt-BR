@@ -1,22 +1,22 @@
 ---
-title: 'dispositivo: checkMemberObjects'
+title: 'device: checkMemberObjects'
 description: Verifique se há associação em uma lista de grupos ou funções de diretório para o objeto de dispositivo especificado.
 localization_priority: Normal
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6d10d0f2e1be05e42ecdb5f97b2b7c1cd0810507
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3abeb1822efb34af9d46a9d0b4577885f2f82c96
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044092"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448860"
 ---
-# <a name="device-checkmemberobjects"></a>dispositivo: checkMemberObjects
+# <a name="device-checkmemberobjects"></a>device: checkMemberObjects
 
 Namespace: microsoft.graph
 
-Verifique se há associação em uma lista de grupos ou funções de diretório para o objeto de dispositivo especificado. Este método é transitivo.
+Verifique se há associação em uma lista de grupos ou funções de diretório para o objeto de dispositivo especificado. Esse método é transitivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,11 +49,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| ids | Coleção de cadeias de caracteres | Uma coleção que contém as IDs de objeto dos grupos, funções de diretório ou IDs RoleTemplate de funções de diretório, para verificar a associação. Você pode especificar até 20 objetos. |
+| ids | Coleção de cadeias de caracteres | Uma coleção que contém as IDs de objeto dos grupos, funções de diretório ou IDs de roleTemplate de funções de diretório, na qual verificar a associação. Você pode especificar até 20 objetos. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção String no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto da coleção de cadeias de caracteres no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

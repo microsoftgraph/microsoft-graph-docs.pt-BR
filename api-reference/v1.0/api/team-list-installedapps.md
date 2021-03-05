@@ -5,18 +5,18 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4f796b05cb5b315841dde43c9a18f29cba9a6927
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 24c3de7479de6f4d380b50a5c917f99b5495f9bb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691178"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470701"
 ---
 # <a name="list-apps-in-team"></a>Listar aplicativos em equipe
 
 Namespace: microsoft.graph
 
-Recupere uma lista de [aplicativos instalados](../resources/teamsappinstallation.md) na [equipe](../resources/team.md)especificada.
+Recupere uma lista de [aplicativos instalados](../resources/teamsappinstallation.md) na equipe [especificada.](../resources/team.md)
 
 
 > [!NOTE]
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation. ReadForTeam, TeamsAppInstallation. ReadWriteForTeam, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | TeamsAppInstallation. Read. Group *, TeamsAppInstallation. ReadForTeam. All, TeamsAppInstallation. ReadWriteForTeam. All, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Aplicativo | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
@@ -44,7 +44,7 @@ GET /teams/{team-id}/installedApps
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a `$filter` , `$select` e a parâmetros de `$expand` [consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte `$filter` aos `$select` parâmetros , e `$expand` [OData Query para](/graph/query-parameters) ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -58,11 +58,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-installed-apps"></a>Exemplo 1: listar aplicativos instalados
+### <a name="example-1-list-installed-apps"></a>Exemplo 1: Listar aplicativos instalados
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
@@ -129,7 +129,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-names-and-other-details-of-installed-apps"></a>Exemplo 2: obter os nomes e outros detalhes dos aplicativos instalados
+### <a name="example-2-get-the-names-and-other-details-of-installed-apps"></a>Exemplo 2: Obter os nomes e outros detalhes de aplicativos instalados
 
 #### <a name="request"></a>Solicitação
 
@@ -195,7 +195,7 @@ Content-type: application/json
                 "version": "1.0.2",
                 "requiredResourceSpecificApplicationPermissions": [],
                 "publishingState": "published",
-                "shortdescription": "Be more productive with Microsoft Flow",
+                "shortDescription": "Be more productive with Microsoft Flow",
                 "description": "Automate time-consuming and repetitive tasks by integrating your favorite apps and services with Microsoft Power Automate.",
                 "lastModifiedDateTime": null,
                 "createdBy": null
@@ -211,7 +211,7 @@ Content-type: application/json
                 "version": "1.2",
                 "requiredResourceSpecificApplicationPermissions": [],
                 "publishingState": "published",
-                "shortdescription": "Add a tab for a SharePoint news article or page.",
+                "shortDescription": "Add a tab for a SharePoint news article or page.",
                 "description": "This app allows you to tab intranet pages from any SharePoint site so that they can be viewed by your team inside Teams channels.",
                 "lastModifiedDateTime": null,
                 "createdBy": null
@@ -227,7 +227,7 @@ Content-type: application/json
                 "version": "1.0.0",
                 "requiredResourceSpecificApplicationPermissions": [],
                 "publishingState": "published",
-                "shortdescription": "Capture and share ideas, to-do lists and other notes with your team.",
+                "shortDescription": "Capture and share ideas, to-do lists and other notes with your team.",
                 "description": "Capture and share ideas, to-do lists and other thoughts with your team. You can also co-author anytime.",
                 "lastModifiedDateTime": null,
                 "createdBy": null
@@ -237,7 +237,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Exemplo 3: obter o recurso de instalação de aplicativo com base na ID de manifesto do aplicativo associado
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Exemplo 3: Obter o recurso de instalação do aplicativo com base na ID de manifesto do aplicativo associado
 
 #### <a name="request"></a>Solicitação
 
@@ -307,7 +307,7 @@ Content-type: application/json
                 "requiredResourceSpecificApplicationPermissions": [
                 ],
                 "publishingState": "published",
-                "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                "shortDescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
                 "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
                 "lastModifiedDateTime": null,
                 "createdBy": null

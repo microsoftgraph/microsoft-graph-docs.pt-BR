@@ -1,32 +1,32 @@
 ---
-title: Criar permissionGrantConditionSet na coleção de inclusões de permissionGrantPolicy
-description: Adicionar condições sob as quais um evento de concessão de permissão é incluído em uma política de concessão de permissão.
+title: Criar permissionGrantConditionSet em inclui coleção de permissionGrantPolicy
+description: Adicione condições em que um evento de concessão de permissão está incluído em uma política de concessão de permissão.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 432ba5f4bc6ec42a54b9aa6ac59ad9176e48feb6
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 1300319e2411a7e5e39b7cf9d1fd5ad365a2f363
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524119"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448072"
 ---
-# <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Criar permissionGrantConditionSet na coleção de inclusões de permissionGrantPolicy
+# <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Criar permissionGrantConditionSet em inclui coleção de permissionGrantPolicy
 
 Namespace: microsoft.graph
 
-Adicionar condições sob as quais um evento de concessão de permissão é *incluído* em uma política de concessão de permissão. Para fazer isso, adicione um [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) à coleção de **inclusões** de um  [permissionGrantPolicy](../resources/permissionGrantPolicy.md).
+Adicione condições em que um evento de concessão de permissão *está incluído* em uma política de concessão de permissão. Você faz isso adicionando [uma permissionGrantConditionSet](../resources/permissiongrantconditionset.md) à coleção **includes** de  [uma permissionGrantPolicy](../resources/permissionGrantPolicy.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Policy. ReadWrite. PermissionGrant |
+|Delegado (conta corporativa ou de estudante) | Policy.ReadWrite.PermissionGrant |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Policy. ReadWrite. PermissionGrant |
+|Aplicativo | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,17 +45,17 @@ POST /policies/permissionGrantPolicies/{id}/includes
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) .
+No corpo da solicitação, fornece uma representação JSON de [um objeto permissionGrantConditionSet.](../resources/permissiongrantconditionset.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de `201 Created` resposta e um objeto [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
-Neste exemplo, *todas* as permissões delegadas para aplicativos clientes de editores verificados estão incluídas na política de concessão de permissão. Como todas as outras condições do [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) foram omitidas, elas terão seus valores padrão, o que, em cada caso, é o mais inclusivo.
+Neste exemplo, *todas as* permissões delegadas para aplicativos cliente de editores verificados são incluídas na política de concessão de permissão. Como todas as outras condições do [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) foram omitidas, elas aceitarão seus valores padrão, que, em cada caso, são os mais inclusivos.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

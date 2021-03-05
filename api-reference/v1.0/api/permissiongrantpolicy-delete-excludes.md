@@ -1,32 +1,32 @@
 ---
-title: Excluir permissionGrantConditionSet da coleção Excludes de permissionGrantPolicy
-description: Exclui um conjunto de condições excluídas da política de concessão de permissão.
+title: Excluir permissionGrantConditionSet de exclui coleção de permissionGrantPolicy
+description: Exclui um conjunto de condições excluído da política de concessão de permissão.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 745e42b4d236177febe3486ba1dfcbf427fe27bd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7cdcf9cb5a4888d9700202fd719afb8a8f8eb073
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524377"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448113"
 ---
-# <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>Excluir permissionGrantConditionSet da coleção Excludes de permissionGrantPolicy
+# <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>Excluir permissionGrantConditionSet de exclui coleção de permissionGrantPolicy
 
 Namespace: microsoft.graph
 
-Exclui [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) da coleção **Excludes** de um [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
+Exclui um [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) da coleção **excludes** de [uma permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante) | PermissionGrantPolicy. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-| Aplicativo | PermissionGrantPolicy. ReadWrite. All |
+| Aplicativo | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

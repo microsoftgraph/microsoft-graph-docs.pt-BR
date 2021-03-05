@@ -3,14 +3,14 @@ title: Ativar directoryRole
 description: Ative uma função de diretório.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f48fb24b5f7c4889faf3ebba0b5147a8de14b877
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be7793024e9b8eb0f7ca9bec5a57d2b4ec1248db
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052387"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448545"
 ---
 # <a name="activate-directoryrole"></a>Ativar directoryRole
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 

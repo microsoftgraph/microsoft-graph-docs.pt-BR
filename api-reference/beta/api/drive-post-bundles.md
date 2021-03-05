@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Criar pacote
 description: Criar um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a586617ed783d737386c3487502e9af14f2348e6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8883006a6aa1daf86e4d3b8a6efac31e0ae25376
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955768"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471380"
 ---
 # <a name="create-bundle"></a>Criar pacote
 
@@ -49,21 +48,21 @@ POST /drive/bundles
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do pacote a ser criado.
+No corpo da solicitação, fornece uma representação JSON do pacote a ser criado.
 
 ## <a name="response"></a>Resposta
 
-Se a solicitação for bem-sucedida, o [driveItem](../resources/driveitem.md) que representa o novo pacote recém-criado será retornado.
+Se a solicitação for bem-sucedida, [o driveItem](../resources/driveitem.md) que representa o pacote recém-criado será retornado.
 
-Leia o tópico [respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
+Leia o tópico [Respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-bundle"></a>Exemplo 1: criar um pacote
+### <a name="example-1-create-a-bundle"></a>Exemplo 1: Criar um pacote
 
 O exemplo a seguir mostra como criar um novo pacote básico.
-Essa solicitação criará um novo pacote chamado `Just some files` e adicionará dois itens existentes ao pacote.
-Este pacote pode ser usado para compartilhar uma coleção de arquivos com outros usuários sem compartilhar a pasta em que os itens estão armazenados.
+Essa solicitação criará um novo pacote chamado e adicionará dois `Just some files` itens existentes ao pacote.
+Esse pacote pode ser usado para compartilhar uma coleção de arquivos com outros usuários sem compartilhar a pasta em que esses itens são armazenados.
 
 #### <a name="request"></a>Solicitação
 
@@ -71,7 +70,7 @@ Este pacote pode ser usado para compartilhar uma coleção de arquivos com outro
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-bundle" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/beta/drive/bundles
 Content-Type: application/json
 
@@ -108,7 +107,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -121,11 +120,11 @@ Content-Type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
-### <a name="example-2-create-an-album"></a>Exemplo 2: criar um álbum
+### <a name="example-2-create-an-album"></a>Exemplo 2: Criar um álbum
 
-A solicitação para criar um novo álbum de fotografias é semelhante, embora dentro da faceta de pacote, a propriedade Album é definida como um valor não nulo.
+A solicitação para criar um novo álbum de fotos é semelhante, embora dentro da faceta do pacote, a propriedade do álbum seja definida como um valor não nulo.
 
 #### <a name="request"></a>Solicitação
 
@@ -133,7 +132,7 @@ A solicitação para criar um novo álbum de fotografias é semelhante, embora d
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-album" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/beta/drive/bundles
 Content-Type: application/json
 
@@ -169,7 +168,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -183,13 +182,13 @@ Content-Type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
-Se _@microsoft. Graph. conflictBehavior_ for definido como **Rename** e um pacote com o mesmo nome já existir, o novo nome do pacote será atualizado para ser exclusivo.
-O OneDrive acrescentará um número ao final do nome do pacote.
+Se _@microsoft.graph.conflictBehavior_ estiver definido para **renomear** e um pacote com o mesmo nome já existir, o novo nome do pacote será atualizado para ser exclusivo.
+O OneDrive anexa um número ao final do nome do pacote.
 
 Por exemplo, `My Day at the Beach` poderia ser renomeado `My Day at the Beach 1`.
-Se `My Day at the Beach 1` for executado, o número será incrementado novamente até que um nome de pacote exclusivo seja descoberto.
+Se `My Day at the Beach 1` for tomada, o número será incrementado novamente até que um nome de pacote exclusivo seja descoberto.
 
 
 [error-response]: /graph/errors

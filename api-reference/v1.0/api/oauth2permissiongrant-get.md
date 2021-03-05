@@ -1,24 +1,24 @@
 ---
 title: Obter um oAuth2PermissionGrant
-description: Recupere as propriedades e os relacionamentos de um único oAuth2PermissionGrant, representando uma concessão de permissão delegada.
+description: Recupere as propriedades e as relações de oAuth2PermissionGrant único, representando uma concessão de permissão delegada.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: b9b3f1c196b60bf2c4b04a9a2a6a04f254f16b2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5a268a5801ee5202bd6621b4f7f05aac39a0fb86
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971052"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448211"
 ---
 # <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>Obter uma concessão de permissão delegada (oAuth2PermissionGrant)
 
 Namespace: microsoft.graph
 
-Recupere as propriedades de um único [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+Recupere as propriedades de um [único oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
-Um **oAuth2PermissionGrant** representa permissões delegadas que foram concedidas para um aplicativo cliente acessar uma API em nome de um usuário conectado.
+Um **oAuth2PermissionGrant** representa permissões delegadas que foram concedidas a um aplicativo cliente para acessar uma API em nome de um usuário interno.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory. Read. All, DelegatedPermissionGrant. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

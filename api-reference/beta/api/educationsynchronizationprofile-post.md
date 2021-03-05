@@ -1,16 +1,16 @@
 ---
 title: Criar um educationSynchronizationProfile
-description: 'Criar uma solicitação para um novo perfil de sincronização de dados da escola no locatário. Consultar o status para obter o status do perfil. '
+description: 'Crie uma solicitação para um novo perfil de sincronização de dados escolares no locatário. Consulte o status para obter o status do perfil. '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7f8b7eb8ccbbb0df4fd0b32a434582f7e07e9ec4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f84d4f66036d3f767182c5e7abf12c231699073f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007193"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470226"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Criar um educationSynchronizationProfile
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar uma solicitação para um novo perfil de [sincronização](../resources/educationsynchronizationprofile.md) de dados da escola no locatário. [Consultar o status](educationsynchronizationprofilestatus-get.md) para obter o status do perfil. 
+Crie uma solicitação para um novo perfil de [sincronização](../resources/educationsynchronizationprofile.md) de dados escolares no locatário. [Consulte o status para](educationsynchronizationprofilestatus-get.md) obter o status do perfil. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
-| Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+| Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -39,13 +39,13 @@ POST /synchronizationProfiles
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório.  |
-| Content-Type | string | Application/JSON. Obrigatório. |
+| Content-Type | string | Application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto educationSynchronizationProfile.](../resources/educationsynchronizationprofile.md)
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `202, Accepted` código de resposta e um objeto [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `202, Accepted` [objeto educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -107,7 +107,7 @@ Este é um exemplo de resposta.
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->

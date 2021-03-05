@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1422ca46a587f8ffd1987b34e3635364e82a5a3f
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 4c9db9213b6245cc3a0c07c0bb590f0543055cb9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719584"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448260"
 ---
 # <a name="update-event"></a>Atualizar evento
 
@@ -43,9 +43,6 @@ PATCH /groups/{id}/calendar/events/{id}
 PATCH /me/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-PATCH /me/calendargroup/calendars/{id}/events/{id}
-PATCH /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
 PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
@@ -63,7 +60,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |corpo|[ItemBody](../resources/itembody.md)|O corpo da mensagem associada ao evento.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas ao evento.|
 | end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina.|
-|hideAttendees|Booleano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é falso.|
+|hideAttendees|Booliano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é falso.|
 |importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|

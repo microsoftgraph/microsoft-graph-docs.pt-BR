@@ -1,16 +1,16 @@
 ---
 title: Atualizar tokenIssuancePolicy
-description: Atualizar as propriedades do objeto tokenIssuancePolicy.
+description: Atualize as propriedades do objeto tokenIssuancePolicy.
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c4ef332acef3e99cc1236c3e4e1015a0c32dd05a
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 6779f7db60278cbd6df4c08007af5c0d527e80a8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910283"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448902"
 ---
 # <a name="update-tokenissuancepolicy"></a>Atualizar tokenIssuancePolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 
 
-Atualizar as propriedades de um [objeto tokenIssuancePolicy.](../resources/tokenIssuancePolicy.md)
+Atualize as propriedades de um [objeto tokenIssuancePolicy.](../resources/tokenIssuancePolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,10 +51,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|definição|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
-|description|Cadeia de caracteres| Descrição desta política.|
-|displayName|Cadeia de caracteres| Nome para exibição desta política. Obrigatório.|
-|isOrganizationDefault|Booliano|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como padrão da organização. Opcional, o valor padrão é false.|
+|definition|Conjunto de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
+|description|Cadeia de caracteres| Descrição dessa política.|
+|displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
+|isOrganizationDefault|Boolean|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
 
 ## <a name="response"></a>Resposta
 

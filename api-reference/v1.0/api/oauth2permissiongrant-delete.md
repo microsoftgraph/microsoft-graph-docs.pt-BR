@@ -1,16 +1,16 @@
 ---
 title: Excluir um oAuth2PermissionGrant
-description: Excluir um oAuth2PermissionGrant, representando uma concessão de permissão delegada.
+description: Exclua um oAuth2PermissionGrant, representando uma concessão de permissão delegada.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8297ee242ed6f25ed3dbba7aa0a8e19053ee0237
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a03e9c50463e5cbd50e65966228237fc9784c22f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028501"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448218"
 ---
 # <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>Excluir uma concessão de permissão delegada (oAuth2PermissionGrant)
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 Excluir um [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
-Quando uma concessão de permissão delegada é excluída, o acesso concedido é revogado. Os tokens de acesso existentes continuarão válidos por seu tempo de vida, mas novos tokens de acesso não serão concedidos para as permissões delegadas identificadas no **oAuth2PermissionGrant**excluído.
+Quando uma concessão de permissão delegada é excluída, o acesso concedido é revogado. Tokens de acesso existentes continuarão a ser válidos para sua vida útil, mas novos tokens de acesso não serão concedidos para as permissões delegadas identificadas no **oAuth2PermissionGrant** excluído .
 
 > [!NOTE]
-> Pode haver duas permissões delegadas que autorizam um aplicativo a atuar em nome de um usuário ao chamar uma API. Isso pode acontecer quando um usuário concorda com o aplicativo em seu próprio nome (criando um **oAuth2PermissionGrant** com o **consenttype** *principal*, identificando o usuário) e, em seguida, um administrador concede consentimento de administrador em todo o locatário em nome de todos os usuários (criando um segundo **oAuth2PermissionGrant** com **consenttype** de *servicePrincipalName*).
+> Pode haver duas concessões de permissão delegadas autorizando um aplicativo a agir em nome de um usuário ao chamar uma API. Isso pode acontecer quando um usuário consente para o aplicativo em seu próprio nome (criando um **oAuth2PermissionGrant** com **consentType** *Principal*, identificando o usuário) e, em seguida, um administrador concede consentimento de administrador em todo o locatário em nome de todos os usuários (criando um segundo **oAuth2PermissionGrant** com **consentType** de *AllPrincipals*).
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 

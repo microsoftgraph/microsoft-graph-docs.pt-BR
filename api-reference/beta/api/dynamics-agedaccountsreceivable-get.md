@@ -1,19 +1,18 @@
 ---
 title: Obter agedAccountsReceivable
-description: Obtém um objeto de contas a receber antiga no Dynamics 365 Business central.
+description: Obtém um objeto de contas a receber de contas envelhecidas no Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
-ms.author: solsen
 doc_type: apiPageType
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: e4ce922a2e7880b868855f16cbe7b8bc2694bfbe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 88f095439d159826aec1edebf9caf7baf2a66454
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981748"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471366"
 ---
 # <a name="get-agedaccountsreceivable"></a>Obter agedAccountsReceivable
 
@@ -21,19 +20,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto de relatório de contas a receber antigo para o Dynamics 365 Business central.
+Recupere as propriedades e as relações de um objeto de relatório de contas a receber do Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
-```
+```http
 GET /financials/companies/{id}/agedAccountsReceivable
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -48,7 +47,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **agedAccountsReceivable** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **objeto agedAccountsReceivable** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -56,11 +55,11 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 
 Este é um exemplo da solicitação.
 
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsReceivable?$filter=periodLengthFilter eq '3M'
 ```
 
-**Resposta**
+**Response**
 
 Veja a seguir um exemplo da resposta. 
 

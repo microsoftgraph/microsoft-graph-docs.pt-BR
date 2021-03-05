@@ -1,18 +1,18 @@
 ---
 title: Obter customerPayments
-description: Obtém um objeto de pagamento de cliente no Dynamics 365 Business central.
+description: Obtém um objeto de pagamento do cliente no Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 45f302e5637ae843d96bb806a532dc9a12e7d09c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a84aaf47f96da3eebdcad830846eb3cfc81b52a
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981447"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471303"
 ---
 # <a name="get-customerpayments"></a>Obter customerPayments
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto de pagamento de cliente para o Dynamics 365 Business central.
+Recupere as propriedades e as relações de um objeto de pagamento do cliente para o Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,18 +49,18 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **customerPayments** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **objeto customerPayments** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 **Solicitação**
 
 Este é um exemplo da solicitação.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
-**Resposta**
+**Response**
 
 Veja a seguir um exemplo da resposta. 
 

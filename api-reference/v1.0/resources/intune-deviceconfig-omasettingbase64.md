@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72c7bdd9eda67d9bdebc2452ad778d4ad653d7df
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6288803dd87afa7fe45525c20258bdded34482ea
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079274"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470750"
 ---
 # <a name="omasettingbase64-resource-type"></a>Tipo de recurso omaSettingBase64
 
@@ -29,7 +29,7 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|Cadeia de caracteres|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|Cadeia de caracteres|Nome de arquivo associado com a propriedade do valor (*.cer | *. CRT | *. p7b | *. bin).|
+|fileName|String|Nome do arquivo associado à propriedade Value (*.cer \| *.crt \| *.p7b \| *.bin).|
 |value|Cadeia de caracteres|Valor. (Cadeia de caracteres codificada em Base64)|
 
 ## <a name="relationships"></a>Relações

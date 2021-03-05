@@ -1,16 +1,16 @@
 ---
 title: Listar educationSynchronizationProfiles
-description: Recupere o conjunto de perfis de sincronização de dados da escola no locatário.
+description: Recupere a coleção de perfis de sincronização de dados escolares no locatário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 594627b402c386b86958c76cd4f2d67a93e6edec
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ad8249c01bee946deca4e380eb359903f5be7b6f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403294"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470494"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Listar educationSynchronizationProfiles
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o conjunto de perfis de [sincronização](../resources/educationsynchronizationprofile.md) de dados da escola no locatário.
+Recupere a coleção de perfis de [sincronização de](../resources/educationsynchronizationprofile.md) dados escolares no locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:-----------|:----------|
-| Delegado (conta corporativa ou de estudante) | EduAdministration. Read, EduAdministration. ReadWrite |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+| Delegada (conta corporativa ou de estudante) | EduAdministration.Read, EduAdministration.ReadWrite |
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,7 +36,7 @@ GET /synchronizationProfiles
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta: $filter, $orderby, $top, $skip e $Count.
+Este método oferece suporte aos seguintes Parâmetros de Consulta [OData](/graph/query-parameters) para ajudar a personalizar a resposta: $filter, $orderby, $top, $skip e $count.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -46,18 +46,38 @@ Este método dá suporte aos seguintes [parâmetros de consulta OData](/graph/qu
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "list_synchronizationProfile"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-synchronizationprofile-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-synchronizationprofile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-synchronizationprofile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-synchronizationprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -65,7 +85,7 @@ Este é um exemplo de resposta.
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSynchronizationProfile",
   "isCollection": true

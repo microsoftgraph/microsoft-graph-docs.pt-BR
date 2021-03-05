@@ -3,14 +3,14 @@ title: 'domain: verify'
 description: Valida a propriedade do domínio.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6705d1d39ca3582eb71f570f47b1802b94649c50
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2bd581094dc4b3b4d90c51f26f53954b2eddf7b2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042251"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448337"
 ---
 # <a name="domain-verify"></a>domain: verify
 

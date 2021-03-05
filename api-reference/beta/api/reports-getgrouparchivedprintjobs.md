@@ -1,18 +1,18 @@
 ---
-title: 'relatórios: getGroupArchivedPrintJobs'
+title: 'reports: getGroupArchivedPrintJobs'
 description: Obter uma lista de trabalhos de impressão arquivados para um grupo específico.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1242a7cfa4789a5c35138d3bbe53e73d456566e5
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 98e208816a2415f176407d1d76194046c0284250
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848308"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470806"
 ---
-# <a name="reports-getgrouparchivedprintjobs"></a>relatórios: getGroupArchivedPrintJobs
+# <a name="reports-getgrouparchivedprintjobs"></a>reports: getGroupArchivedPrintJobs
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ Obter uma lista de trabalhos de impressão arquivados para um grupo específico.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura de Impressão Universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -34,8 +34,8 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/reports/getGroupArchivedPrintJobs
-GET /reports/getGroupArchivedPrintJobs
+GET /print/reports/getGroupArchivedPrintJobs(groupId=groupId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET /reports/getGroupArchivedPrintJobs(groupId=groupId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
@@ -46,12 +46,12 @@ GET /reports/getGroupArchivedPrintJobs
 
 | Parâmetro     | Tipo                 | Obrigatório? | Descrição                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `groupId`     | `Edm.String`         | Sim       | A ID do grupo para o qual retornar os dados.                              |
-| `periodStart` | `Edm.DateTimeOffset` | Não        | A data de início (inclusive) para o período de tempo para incluir dados. |
-| `periodEnd`   | `Edm.DateTimeOffset` | Não        | A data de término (inclusive) para o período de tempo para incluir dados.   |
+| `groupId`     | `Edm.String`         | Sim       | A ID do grupo para o que retornar dados.                              |
+| `startDateTime` | `Edm.DateTimeOffset` | Não        | A data de início (inclusive) do período de tempo a ser incluído. |
+| `endDateTime`   | `Edm.DateTimeOffset` | Não        | A data de término (inclusive) do período de tempo a ser incluído.   |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [archivedPrintJob](../resources/archivedprintjob.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [archivedPrintJob](../resources/archivedprintjob.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -62,7 +62,7 @@ Este é um exemplo de solicitação.
   "name": "reports-getgrouparchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(groupId='{id}',periodStart=<timestamp>,periodEnd=<timestamp>)
+GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(groupId='{id}',startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ##### <a name="response"></a>Resposta

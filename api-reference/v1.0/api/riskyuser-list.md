@@ -3,14 +3,14 @@ title: Listar riskyUsers
 description: Obter uma lista dos objetos riskyUser e suas propriedades.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 075f135afe075450197ff8b3ed1d8e1c5bbde36d
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: cc72c174b81a5d2442b264026305e28cbb03afdf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874344"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448057"
 ---
 # <a name="list-riskyusers"></a>Listar riskyUsers
 Namespace: microsoft.graph
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos riskyUser](../resources/riskyuser.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [riskyUser](../resources/riskyuser.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

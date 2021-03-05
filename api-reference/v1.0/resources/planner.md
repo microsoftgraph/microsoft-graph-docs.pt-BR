@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso Planner
-description: O recurso **Planner** é o ponto de entrada para o modelo de objeto do Planner. Ele retorna um recurso **planejador** singleton.  Ele não contém propriedades utilizáveis.
+title: Tipo de recurso do planner
+description: O **recurso** planner é o ponto de entrada para o modelo de objeto do Planner. Ele retorna um recurso de **planejador de singleton.**  Ele não contém propriedades usáveis.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f8333596ee93a42db8eded49815059e8633bf3db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8fc5f91dd8da85b259dd792a0926311d57098ee9
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037630"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470673"
 ---
-# <a name="planner-resource-type"></a>tipo de recurso Planner
+# <a name="planner-resource-type"></a>Tipo de recurso do planner
 
 Namespace: microsoft.graph
 
-O recurso **Planner** é o ponto de entrada para o modelo de objeto do Planner. Ele retorna um recurso **planejador** singleton.  Ele não contém propriedades utilizáveis.
+O **recurso** planner é o ponto de entrada para o modelo de objeto do Planner. Ele retorna um recurso de **planejador de singleton.**  Ele não contém propriedades usáveis.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Criar plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md)| Crie um novo **plannerBucket** postando na coleção buckets.|
-|[Criar plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| Crie um novo **plannerPlan** postando na coleção Plans.|
-|[Criar plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| Crie um novo **plannerTask** postando na coleção Tasks.|
+|[Criar plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| Crie um novo **plannerPlan** postando na coleção plans.|
+|[Criar plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| Crie um novo **plannerTask** postando na coleção de tarefas.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |buckets|Coleção [plannerBucket](plannerbucket.md)| Somente leitura. Anulável. Retorna uma coleção dos buckets especificados|
-|Planeje|coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna uma coleção de planos especificados|
+|plans|Coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna uma coleção dos planos especificados|
 |tarefas|Coleção [plannerTask](plannertask.md)| Somente leitura. Anulável. Retorna uma coleção das tarefas especificadas|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -50,7 +50,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="example"></a>Exemplo
 
-O recurso **Planner** está disponível na raiz do gráfico.
+O **recurso** planner está disponível na raiz do gráfico.
 
 <!--{
   "blockType": "request"
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/planner
   "truncated": true,
   "@odata.type": "microsoft.graph.planner"
 }-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

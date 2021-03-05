@@ -3,14 +3,14 @@ title: Remover membro da função de diretório
 description: Remove um membro de um directoryRole.
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 72491fbc37dfbb77411178e9cfdfe2147d5119b7
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: c5f074b99260154db0d5e9f725a2082c4980af91
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522789"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448559"
 ---
 # <a name="remove-directory-role-member"></a>Remover membro da função de diretório
 
@@ -19,16 +19,16 @@ Namespace: microsoft.graph
 Remover um membro de um [directoryRole](../resources/directoryrole.md).
 
 > [!Note]
-> Você pode usar a ID de objeto e a ID de modelo do **directoryRole** com essa API. A ID de modelo de uma função interna é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+> Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 
@@ -56,7 +56,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>Exemplo 1: remover membro da função de diretório usando objectId de função
+### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>Exemplo 1: Remover membro da função de diretório usando objectId de função
 
 ##### <a name="request"></a>Solicitação
 
@@ -102,7 +102,7 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>Exemplo 2: remover o membro de função de diretório usando o TemplateID de função
+### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>Exemplo 2: Remover membro da função de diretório usando modelo de funçãoId
 
 ##### <a name="request"></a>Solicitação
 

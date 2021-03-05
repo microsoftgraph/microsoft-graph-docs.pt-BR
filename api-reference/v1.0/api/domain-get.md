@@ -1,32 +1,32 @@
 ---
 title: Obter domínio
-description: Recupere as propriedades e os relacionamentos do objeto domain.
+description: Recupere as propriedades e as relações do objeto domain.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d2b777a59118160cddef98f9b2f1fbf3c7a0855c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e7118d376aa403d43eeeef1d8888984fea6c9ca0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135218"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448531"
 ---
 # <a name="get-domain"></a>Obter domínio
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos do objeto domain.
+Recupere as propriedades e as relações do objeto domain.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e `200 OK` [um](../resources/domain.md) objeto de domínio no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` [um](../resources/domain.md) objeto de domínio no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 

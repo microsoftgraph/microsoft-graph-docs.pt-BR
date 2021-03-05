@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso ipNamedLocation
-description: Representa um local nomeado pelo Azure Active Directory definido por intervalos de IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
+description: Representa um local nomeado pelo Azure Active Directory definido por intervalos IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5f76d5bb27a17ec0cc642479f3808dfbc8a45f66
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 9e5a8f75be26e46bd24da0ff1f5aa1618cd8c8b4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159392"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448817"
 ---
 # <a name="ipnamedlocation-resource-type"></a>Tipo de recurso ipNamedLocation
 
 Namespace: microsoft.graph
 
-Representa um local nomeado pelo Azure Active Directory definido por intervalos de IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
+Representa um local nomeado pelo Azure Active Directory definido por intervalos IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
 
 Herda de [namedLocation](../resources/namedLocation.md)
 
@@ -24,22 +24,22 @@ Herda de [namedLocation](../resources/namedLocation.md)
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar ipNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [coleção ipNamedLocation](ipNamedLocation.md) | Obter todos os **objetos ipNamedLocation** na organização. |
-| [Criar ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Criar um novo **objeto ipNamedLocation.** |
-| [Get ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Leia as propriedades e os relacionamentos de um **objeto ipNamedLocation.** |
-| [Atualizar ipNamedLocation](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Atualize **um objeto ipNamedLocation.** |
+| [Listar ipNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [Coleção ipNamedLocation](ipNamedLocation.md) | Obter todos os **objetos ipNamedLocation** na organização. |
+| [Criar ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Crie um novo **objeto ipNamedLocation.** |
+| [Obter ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Leia as propriedades e as relações de um **objeto ipNamedLocation.** |
+| [Atualizar ipNamedLocation](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Atualize um **objeto ipNamedLocation.** |
 | [Excluir ipNamedLocation](../api/ipnamedlocation-delete.md) | Nenhum | **Exclua um objeto ipNamedLocation.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 |displayName|Cadeia de caracteres|Nome acessível para humanos do local.|
 |id|Cadeia de caracteres|Identificador de um objeto namedLocation. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 |ipRanges|Coleção [ipRange](iprange.md)|Lista de intervalos de endereços IP no formato CIDR IPv4 (por exemplo, 1.2.3.4/32) ou qualquer formato IPv6 acessível do IETF RFC596.|
-|isTrusted|Booliano|True se esse local for explicitamente confiável.|
-|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora da última modificação do local usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
+|isTrusted|Boolean|True se esse local for explicitamente confiável.|
+|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa a última data e hora modificadas do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 
 ## <a name="relationships"></a>Relações
 

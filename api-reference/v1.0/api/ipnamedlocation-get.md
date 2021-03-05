@@ -1,22 +1,22 @@
 ---
 title: Obter ipNamedLocation
-description: Recupere as propriedades e os relacionamentos de um objeto ipnamedlocation.
+description: Recupere as propriedades e as relações de um objeto ipnamedlocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3ca0aaafe1dd9a18507e8c20b7bffa941c0a71e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a75950c8d462b924f33518a385ab7e57556af74
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025715"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448246"
 ---
 # <a name="get-ipnamedlocation"></a>Obter ipNamedLocation
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto [ipNamedLocation](../resources/ipNamedLocation.md) .
+Recupere as propriedades e as relações de um [objeto ipNamedLocation.](../resources/ipNamedLocation.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All |
 
@@ -38,7 +38,7 @@ GET /identity/conditionalAccess/namedLocations/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte ao `select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao `select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [ipNamedLocation](../resources/ipnamedlocation.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [ipNamedLocation](../resources/ipnamedlocation.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

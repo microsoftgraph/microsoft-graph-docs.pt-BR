@@ -3,20 +3,20 @@ title: Atualize a organização
 description: Atualize as propriedades da organização autenticada no momento.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9df86cb8b32b087952ce50bbd5e8c18aac6d3f1c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4179ee12cd0941f1976a2c5136a47e55a8504f4c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063020"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448118"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
 Namespace: microsoft.graph
 
-Atualize as propriedades da organização autenticada no momento. Nesse caso, `organization` é definido como uma coleção de exatamente um registro e, portanto, sua **ID** deve ser especificada na solicitação.  O **ID** também é conhecido como **tenantid** da organização.
+Atualize as propriedades da organização autenticada no momento. Nesse caso, é definido como uma coleção de exatamente um registro e, portanto, sua ID deve ser `organization` especificada na  solicitação.  A **ID** também é conhecida como **tenantId** da organização.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Organization. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | Organization.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Organization.ReadWrite.All |
 

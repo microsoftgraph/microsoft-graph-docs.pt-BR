@@ -1,35 +1,35 @@
 ---
 title: Listar membros de uma função de diretório
-description: Recupere a lista de entidades de segurança atribuídas à função de diretório.
+description: Recupere a lista de entidades que são atribuídas à função de diretório.
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 357333bb1f15828e8dd4ee0d37233539ce47edbd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 2860e1c0d6293f13fa07df26e7b9493501ac8185
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524559"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448552"
 ---
 # <a name="list-members-of-a-directory-role"></a>Listar membros de uma função de diretório
 
 Namespace: microsoft.graph
 
-Recupere a lista de entidades de segurança atribuídas à função de diretório. 
+Recupere a lista de entidades que são atribuídas à função de diretório. 
 
 > [!Note]
-> Você pode usar a ID de objeto e a ID de modelo do **directoryRole** com essa API. A ID de modelo de uma função interna é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+> Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
+|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-members-of-a-directory-role-using-objectid"></a>Exemplo 1: obter os membros de uma função de diretório usando objectId
+### <a name="example-1-get-the-members-of-a-directory-role-using-objectid"></a>Exemplo 1: Obter os membros de uma função de diretório usando objectId
 
 ##### <a name="request"></a>Solicitação
 
@@ -112,7 +112,7 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-2-get-the-members-of-a-directory-role-using-templateid"></a>Exemplo 2: obter os membros de uma função de diretório usando TemplateID
+### <a name="example-2-get-the-members-of-a-directory-role-using-templateid"></a>Exemplo 2: Obter os membros de uma função de diretório usando templateId
 
 ##### <a name="request"></a>Solicitação
 

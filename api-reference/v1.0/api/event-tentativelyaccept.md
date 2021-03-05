@@ -5,20 +5,20 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7db2e42538bdec3032e68c9a67920bc49b7d3ca4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17d7261c55af1290c1e67efe8f422f1f75c25d51
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038771"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448267"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
 Namespace: microsoft.graph
 
-Aceitar provisoriamente o [evento](../resources/event.md) especificado em um [calendário](../resources/calendar.md)do usuário.
+Aceite provisamente o evento [especificado](../resources/event.md) em um calendário do [usuário.](../resources/calendar.md)
 
-Se o evento permitir propostas para novas horas, em resposta provisória ao evento, um convidado poderá optar por sugerir um tempo alternativo, incluindo o parâmetro **proposedNewTime** . Para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de tempo, confira [propor novos horários da reunião](/graph/outlook-calendar-meeting-proposals).
+Se o evento permitir propostas para novos horários, ao responder provisão ao evento, um convidado pode optar por sugerir uma hora alternativa incluindo o parâmetro **proposedNewTime.** Para obter mais informações sobre como propor uma hora e como receber e aceitar uma nova proposta de hora, consulte [Propor novos horários de reunião.](/graph/outlook-calendar-meeting-proposals)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -41,9 +41,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/tentativelyAccept
 POST /me/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/tentativelyAccept
 
-POST /me/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 ```
@@ -59,22 +56,22 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Texto incluído na resposta. Opcional.|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa propostas por um convidado para uma solicitação de reunião para iniciar e finalizar. Válido somente para eventos que permitem novas propostas de horários. A definição desse parâmetro requer a definição de **sendResponse** como `true` . Opcional.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa proposta por um convidado para que uma solicitação de reunião seja inicial e final. Válido somente para eventos que permitem novas propostas de tempo. A configuração desse parâmetro requer **a definição de sendResponse** como `true` . Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
-Esta ação retornará HTTP 400 se ocorrer uma das seguintes ações:
+Essa ação retornará HTTP 400 se ocorrer um ou ambos os seguintes:
 
-- O parâmetro **proposedNewTime** está incluído, mas a propriedade **allowNewTimeProposals** do **evento** é `false` . 
-- O parâmetro **proposedNewTime** está incluído, mas o parâmetro **sendResponse** está definido como `false` .
+- O **parâmetro proposedNewTime** está incluído, **mas a propriedade allowNewTimeProposals** do **evento** é `false` . 
+- O **parâmetro proposedNewTime** está incluído, mas o **parâmetro sendResponse** é definido como `false` .
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ### <a name="request"></a>Solicitação
-No exemplo a seguir, o usuário conectado responde provisoriamente ao evento especificado, define o parâmetro **sendResponse** como true e inclui um tempo alternativo no parâmetro **proposedNewTime** .
+No exemplo a seguir, o usuário in-loco responde provisivo ao evento especificado, define o parâmetro **sendResponse** como true e inclui uma hora alternativa no parâmetro **proposedNewTime.**
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

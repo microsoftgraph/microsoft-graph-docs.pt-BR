@@ -1,21 +1,21 @@
 ---
-title: Histórico da lista
-description: Obter o riskyUserHistoryItems da propriedade de navegação do histórico.
+title: Histórico de listas
+description: Obter os riskyUserHistoryItems da propriedade de navegação histórico.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: eddb74f1bc6aacc12f9a2a73df6df44b2684a5c6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4115251bbc9644e4f3beb5fdf0ddea0437f6d594
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874351"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448064"
 ---
-# <a name="list-history"></a>Histórico da lista
+# <a name="list-history"></a>Histórico de listas
 Namespace: microsoft.graph
 
-Obter o riskyUserHistoryItems da propriedade de navegação do histórico.
+Obter os riskyUserHistoryItems da propriedade de navegação histórico.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma coleção `200 OK` de [objetos riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

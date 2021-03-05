@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 87a56bd0728f069748da23edfbf71f8ebd1dec76
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: e32fc9a5a37453bfe77a2fa4a8539d69ebedef6f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092439"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470708"
 ---
 # <a name="update-open-extension"></a>Atualizar extensão aberta
 
@@ -23,11 +23,11 @@ Atualize uma extensão aberta[(objeto openTypeExtension)](../resources/opentypee
 
 Os dados em uma extensão podem ser tipos primitivos ou matrizes de tipos primitivos.
 
-Consulte a tabela na seção [Permissões para](#permissions) ver a lista de recursos que suportam extensões abertas.
+Consulte a tabela na seção [Permissões](#permissions) para a lista de recursos que suportam extensões abertas.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
+Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
@@ -40,7 +40,7 @@ Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (de
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tarefa](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,7 +61,7 @@ PATCH /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extension
 PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
->**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso, para atualizar uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias de recursos suportam a atualização de extensões abertas neles de maneira semelhante.
+>**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso, a fim de atualizar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos suportam a atualização de extensões abertas neles de maneira semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo de solicitação dados personalizados para alterar ou adicionar a essa extensão.
 
@@ -69,7 +69,7 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo d
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|id|cadeia de caracteres|Um identificador exclusivo para uma instância da coleção correspondente. Obrigatório.|
+|id|string|Um identificador exclusivo para uma instância da coleção correspondente. Obrigatório.|
 |extensionId|string|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -194,8 +194,10 @@ O segundo exemplo mostra como atualizar uma extensão em uma postagem de grupo. 
 
 A seguir estão a solicitação e o corpo da solicitação para alterar o `expirationDate` para `2016-07-30T11:00:00Z`:
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "sampleKeys": ["Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"],
   "name": "update_opentypeextension"
 }-->
@@ -216,13 +218,27 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-opentypeextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-opentypeextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-opentypeextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response-2"></a>Resposta 2
 
 Aqui está a resposta do segundo exemplo, que mostra o `expirationDate` atualizado na extensão.
 
 <!-- {  
-  "blockType": "ignored",  
+  "blockType": "response",  
   "truncated": true,  
   "@odata.type": "microsoft.graph.openTypeExtension"  
 } --> 

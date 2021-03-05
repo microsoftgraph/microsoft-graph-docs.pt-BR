@@ -5,20 +5,20 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7fad61b7dde22df382f92d8306bd5bc15b758bf6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac8f69d790b19e7569b60fc5d16559aa0c36eb76
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971262"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448323"
 ---
 # <a name="event-decline"></a>event: decline
 
 Namespace: microsoft.graph
 
-Recusar o convite para o [evento](../resources/event.md) especificado em um [calendário](../resources/calendar.md)do usuário.
+Recusar convite para o evento [especificado](../resources/event.md) em um calendário do [usuário](../resources/calendar.md).
 
-Se o evento permitir propostas para novos horários, ao recusar o evento, um convidado poderá optar por sugerir um tempo alternativo, incluindo o parâmetro **proposedNewTime** . Para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de tempo, confira [propor novos horários da reunião](/graph/outlook-calendar-meeting-proposals).
+Se o evento permitir propostas para novos horários, ao declinar o evento, um convidado poderá optar por sugerir uma hora alternativa incluindo o parâmetro **proposedNewTime.** Para obter mais informações sobre como propor uma hora e como receber e aceitar uma nova proposta de hora, consulte [Propor novos horários de reunião.](/graph/outlook-calendar-meeting-proposals)
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,9 +44,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
 
-POST /me/calendargroup/calendars/{id}/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/decline
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/decline
 ```
@@ -67,17 +64,17 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Texto incluído na resposta. Opcional.|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa propostas por um convidado para uma solicitação de reunião para iniciar e finalizar. Válido somente para eventos que permitem novas propostas de horários. A definição desse parâmetro requer a definição de **sendResponse** como `true` . Opcional.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa proposta por um convidado para que uma solicitação de reunião seja inicial e final. Válido somente para eventos que permitem novas propostas de tempo. A configuração desse parâmetro requer **a definição de sendResponse** como `true` . Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
-Esta ação retornará HTTP 400 se ocorrer uma das seguintes ações:
+Essa ação retornará HTTP 400 se ocorrer um ou ambos os seguintes:
 
-- O parâmetro **proposedNewTime** está incluído, mas a propriedade **allowNewTimeProposals** do **evento** é `false` . 
-- O parâmetro **proposedNewTime** está incluído, mas o parâmetro **sendResponse** está definido como `false` .
+- O **parâmetro proposedNewTime** está incluído, **mas a propriedade allowNewTimeProposals** do **evento** é `false` . 
+- O **parâmetro proposedNewTime** está incluído, mas o **parâmetro sendResponse** é definido como `false` .
 
 
 ## <a name="example"></a>Exemplo

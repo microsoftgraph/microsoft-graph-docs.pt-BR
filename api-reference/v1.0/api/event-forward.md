@@ -1,24 +1,24 @@
 ---
-title: 'evento: forward'
-description: 'Esta ação permite que o organizador ou participante de um evento de reunião encaminhe o '
+title: 'event: forward'
+description: 'Essa ação permite que o organizador ou participante de um evento de reunião encaminhe o '
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 90d9925f329b00a5aa1a4bf9e5faad9a11fbe9e2
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 02a01fb75b17941dd4bcb8e3703eec0e0dcece61
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754141"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448302"
 ---
-# <a name="event-forward"></a>evento: forward
+# <a name="event-forward"></a>event: forward
 
 Namespace: microsoft.graph
 
-Esta ação permite que o organizador ou o participante de um [evento](../resources/event.md) de reunião encaminhe a solicitação de reunião para um novo destinatário. 
+Essa ação permite que o organizador ou participante de um evento de [reunião](../resources/event.md) encaminhe a solicitação de reunião para um novo destinatário. 
 
-Se o evento de reunião for encaminhado da caixa de correio do Microsoft 365 de um participante para outro destinatário, essa ação também enviará uma mensagem para notificar o organizador sobre o encaminhamento e adiciona o destinatário à cópia do evento de reunião do organizador. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
+Se o evento de reunião for encaminhado da caixa de correio do Microsoft 365 de um participante para outro destinatário, essa ação também enviará uma mensagem para notificar o organizador do encaminhamento e adiciona o destinatário à cópia do evento de reunião do organizador. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,9 +42,6 @@ POST /groups/{id}/calendar/events/{id}/forward
 
 POST /me/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/forward
-
-POST /me/calendargroup/calendars/{id}/events/{id}/forward
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/forward
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward

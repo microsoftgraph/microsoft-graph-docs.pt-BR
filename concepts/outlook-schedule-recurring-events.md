@@ -1,15 +1,15 @@
 ---
 title: Agendar compromissos repetidos como eventos recorrentes no Outlook
 description: Eventos recorrentes são uma parte importante do calendário do Outlook. Seja uma reunião semanal individual com seu gerente ou uma reunião de revisão de toda a divisão que ocorre na segunda terça-feira de cada mês, eventos recorrentes permitem que o evento seja criado uma fez e que o servidor preencha o restante da série.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 8730ca8ad7694782afafcabbc7d02f138f8fbb22
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 67736178c0f1987b85bbf1004ed41df8110f512f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162523"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470078"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Agendar compromissos repetidos como eventos recorrentes no Outlook
 

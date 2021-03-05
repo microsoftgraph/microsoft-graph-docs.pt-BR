@@ -1,49 +1,50 @@
 ---
-title: Provedores de kit de ferramentas do Microsoft Graph
-description: Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para todos os componentes.
+title: Microsoft Graph Toolkit provedores
+description: Os provedores de Toolkit do Microsoft Graph permitem autenticação e acesso ao Microsoft Graph para todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e130e6d56123f847d9c92e16de0e0449c208c7b6
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: c6fa59632464d0cfa801b07a30d6a5cf94ae5c76
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720018"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470281"
 ---
-# <a name="microsoft-graph-toolkit-providers"></a>Provedores de kit de ferramentas do Microsoft Graph
+# <a name="microsoft-graph-toolkit-providers"></a>Microsoft Graph Toolkit provedores
 
-Os provedores do Microsoft Graph Toolkit permitem que seu aplicativo seja autenticado com a identidade da Microsoft e acesse o Microsoft Graph somente em algumas linhas de código. Cada provedor trata a autenticação do usuário e a aquisição dos tokens de acesso para chamar as APIs do Microsoft Graph, para que você não precise escrever esse código por conta própria. 
+Os provedores de Toolkit do Microsoft Graph permitem que seu aplicativo se autenture com a Microsoft Identity e acesse o Microsoft Graph em apenas algumas linhas de código. Cada provedor lida com a autenticação do usuário e a aquisição dos tokens de acesso para chamar APIs do Microsoft Graph, para que você não tenha que escrever esse código por conta própria. 
 
-Você pode usar os provedores sozinhos, sem componentes, para implementar rapidamente a autenticação para seu aplicativo e fazer chamadas para o Microsoft Graph por meio do SDK do cliente JavaScript.
+Você pode usar os provedores por conta própria, sem componentes, para implementar rapidamente a autenticação para seu aplicativo e fazer chamadas para o Microsoft Graph por meio do SDK do cliente JavaScript.
 
-Os provedores são necessários ao usar os componentes do Microsoft Graph Toolkit à medida que os componentes os usam para acessar o Microsoft Graph. Se você já tiver sua própria autenticação e quiser usar os componentes, poderá usar um [provedor personalizado](./custom.md) .
+Os provedores são necessários ao usar os componentes do Microsoft Graph Toolkit como os componentes os usam para acessar o Microsoft Graph. Se você já tiver sua própria autenticação e quiser usar os componentes, poderá usar um [provedor personalizado.](./custom.md)
 
-O kit de ferramentas inclui os provedores a seguir.
+O Toolkit inclui os seguintes provedores.
 
 |Provedores|Descrição|
 |---------|-----------|
-|[MSAL](./msal.md)|Usa MSAL.js para entrar em usuários e adquirir tokens para uso com o Microsoft Graph em um aplicativo Web.|
-|[SharePoint](./sharepoint.md)|Autentica e fornece acesso do Microsoft Graph aos componentes dentro de Web Parts do SharePoint.|
-|[Teams](./teams.md)|Autentica e fornece acesso do Microsoft Graph aos componentes dentro de guias do Microsoft Teams.|
-|[Acionista](./proxy.md)|Permite o uso da autenticação de backend ao rotear todas as chamadas para o Microsoft Graph por meio do seu back-end.|
-|[Personalizados](./custom.md)|Crie um provedor personalizado para habilitar a autenticação e o acesso ao Microsoft Graph com o código de autenticação existente do seu aplicativo.|
+|[Msal](./msal.md)|Usa MSAL.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph em um aplicativo Web.|
+|[Tron](./electron.md)|Autentica e fornece acesso do Microsoft Graph a componentes dentro dos aplicativos Dols.|
+|[SharePoint](./sharepoint.md)|Autentica e fornece acesso do Microsoft Graph a componentes dentro das Web Parts do SharePoint.|
+|[Teams](./teams.md)|Autentica e fornece acesso do Microsoft Graph a componentes dentro das guias do Microsoft Teams.|
+|[Proxy](./proxy.md)|Permite o uso da autenticação de back-end roteamento de todas as chamadas para o Microsoft Graph por meio do back-end.|
+|[Personalizados](./custom.md)|Crie um provedor personalizado para habilitar a autenticação e o acesso ao Microsoft Graph com o código de autenticação existente do aplicativo.|
 
 ## <a name="initializing-a-provider"></a>Inicializando um provedor
 
-Para usar um provedor em seu aplicativo, você precisa inicializar um novo provedor e, em seguida, defini-lo como o provedor global no namespace de provedores. É recomendável fazer isso antes de começar a usar qualquer um dos componentes. Você pode fazer isso de duas maneiras:
+Para usar um provedor em seu aplicativo, você precisa inicializar um novo provedor e defini-lo como o provedor global no namespace Provedores. Recomendamos fazer isso antes de começar a usar qualquer um dos componentes. Você pode fazer isso de duas maneiras:
 
-**Opção 1: usar o componente do provedor**
+**Opção 1: Usar o componente do provedor**
 
-Você pode usar a versão do componente do provedor diretamente no HTML. Nos bastidores, um novo provedor é inicializado e definido como o provedor global. O exemplo a seguir mostra como usar o MsalProvider.
+Você pode usar a versão do componente do provedor diretamente em seu HTML. Nos bastidores, um novo provedor é inicializado e definido como o provedor global. O exemplo a seguir mostra como usar o MsalProvider.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 <mgt-msal-provider client-id="YOUR_CLIENT_ID"></mgt-msal-provider>
 ```
 
-**Opção 2: inicializar no código**
+**Opção 2: Inicializar no código**
 
-Inicializar seu provedor em seu código JavaScript permite que você forneça mais opções. Para fazer isso, crie uma nova instância de provedor e defina o valor da `Providers.globalProvider` propriedade para o provedor que você gostaria de usar. O exemplo a seguir mostra como usar o MsalProvider.
+Inicializar seu provedor em seu código JavaScript permite que você forneça mais opções. Para fazer isso, crie uma nova instância de provedor e de definir o valor da propriedade para o `Providers.globalProvider` provedor que você gostaria de usar. O exemplo a seguir mostra como usar o MsalProvider.
 
 ```js
 import {Providers, MsalProvider } from "@microsoft/mgt";
@@ -51,11 +52,11 @@ Providers.globalProvider = new MsalProvider({
   clientId: 'YOUR_CLIENT_ID'
 });
 ```
-> **Observação:** Para obter detalhes sobre como registrar seu aplicativo e obter uma ID de cliente, consulte [criar um aplicativo do Azure Active Directory](../get-started/add-aad-app-registration.md).
+> **Observação:** Para obter detalhes sobre como registrar seu aplicativo e obter uma ID do cliente, consulte [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
 
 ## <a name="permission-scopes"></a>Escopos de permissão
 
-Recomendamos adicionar todos os escopos de permissão que seu aplicativo precisa ao `scopes` atributo ou à propriedade ao inicializar o provedor (isso não se aplica ao [provedor do SharePoint](../providers/sharepoint.md)). Isso é opcional, mas melhorará a experiência do usuário apresentando uma única tela de consentimento para o usuário com uma lista agregada de permissões solicitadas por todos os componentes em seu aplicativo, em vez de apresentar telas separadas para cada componente. Os exemplos a seguir mostram como fazer isso com o MsalProvider.
+Recomendamos adicionar todos os escopos de permissão que seu aplicativo precisa ao atributo ou propriedade ao inicializar seu provedor (isso não se aplica `scopes` ao provedor [do SharePoint](../providers/sharepoint.md)). Isso é opcional, mas melhorará a experiência do usuário apresentando uma única tela de consentimento para o usuário com uma lista agregada de permissões solicitadas por todos os componentes em seu aplicativo, em vez de apresentar telas separadas para cada componente. Os exemplos a seguir mostram como fazer isso com o MsalProvider.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -64,7 +65,7 @@ Recomendamos adicionar todos os escopos de permissão que seu aplicativo precisa
                    ></mgt-msal-provider>
 ```
 
-Se você estiver inicializando o provedor no código, forneça os escopos de permissão em uma matriz na `scopes` propriedade.
+Se você estiver inicializando o provedor em código, forneça os escopos de permissão em uma matriz na `scopes` propriedade.
 
 ```js
 import {Providers, MsalProvider } from "@microsoft/mgt";
@@ -74,11 +75,11 @@ Providers.globalProvider = new MsalProvider({
 });
 ```
 
-Você pode encontrar a lista de escopos de permissão exigido por cada componente na seção **permissões do Microsoft Graph** da página de documentação de cada componente.
+Você pode encontrar a lista de escopos de permissão exigidos por cada componente na seção permissões do **Microsoft Graph** da página de documentação de cada componente.
 
 ## <a name="provider-state"></a>Estado do provedor
 
-O provedor mantém o controle do estado de autenticação do usuário e o comunica com os componentes. Por exemplo, quando um usuário faz o logon com êxito, o `ProviderState` é atualizado para `SignedIn` , sinalizando para os componentes que agora eles podem fazer chamadas para o Microsoft Graph. A `ProviderState` enumeração define três Estados, conforme mostrado.
+O provedor mantém o controle do estado de autenticação do usuário e o comunica aos componentes. Por exemplo, quando um usuário faz entrada com êxito, o é atualizado para , sinalizando para os componentes que agora são capazes de fazer chamadas `ProviderState` `SignedIn` para o Microsoft Graph. O `ProviderState` número define três estados, conforme mostrado.
 
 ```ts
 export enum ProviderState {
@@ -88,7 +89,7 @@ export enum ProviderState {
 }
 ```
 
-Em alguns cenários, você vai querer mostrar determinada funcionalidade ou executar uma ação somente após um usuário ter entrado com êxito. Você pode acessar e verificar o estado do provedor, conforme mostrado no exemplo a seguir.
+Em alguns cenários, você vai querer mostrar determinada funcionalidade ou executar uma ação somente depois que um usuário tiver se assinado com êxito. Você pode acessar e verificar o estado do provedor, conforme mostrado no exemplo a seguir.
 
 ```js
 import { Providers, ProviderState } from '@microsoft/mgt'
@@ -99,7 +100,7 @@ if (Providers.globalProvider.state === ProviderState.SignedIn) {
   //your code here
 }
 ```
-Você também pode usar o `Providers.onProviderUpdated` método para ser notificado sempre que o estado do provedor for alterado.
+Você também pode usar o `Providers.onProviderUpdated` método para ser notificado sempre que o estado do provedor mudar.
 
 ```js
 import { Providers, ProviderState } from "@microsoft/mgt";
@@ -121,7 +122,7 @@ Providers.removeProviderUpdatedListener(providerStateChanged);
 
 ## <a name="getting-an-access-token"></a>Como obter um token de acesso
 
-Cada provedor expõe uma função chamada `getAccessToken` que pode recuperar o token de acesso atual ou recuperar um novo token de acesso para os escopos fornecidos. O exemplo a seguir mostra como obter um novo token de acesso com o `User.Read` escopo de permissão.
+Cada provedor expõe uma função chamada que pode recuperar o token de acesso atual ou recuperar um novo token de `getAccessToken` acesso para os escopos fornecidos. O exemplo a seguir mostra como obter um novo token de acesso com o `User.Read` escopo de permissão.
 
 ```js
 import { Providers, ProviderState } from "@microsoft/mgt";
@@ -135,7 +136,7 @@ if (Providers.globalProvider.state === ProviderState.SignedIn) {
 
 ## <a name="making-your-own-calls-to-microsoft-graph"></a>Fazendo suas próprias chamadas para o Microsoft Graph
 
-Todos os componentes podem acessar o Microsoft Graph sem qualquer personalização necessária, desde que você inicialize um provedor (conforme descrito nas seções anteriores). Se quiser fazer suas próprias chamadas para o Microsoft Graph, você pode fazer isso obtendo uma referência para o mesmo SDK do Microsoft Graph usado pelos componentes. Primeiro, obtenha uma referência para o global `IProvider` e use o `graph` objeto conforme mostrado:
+Todos os componentes podem acessar o Microsoft Graph sem qualquer personalização necessária desde que você inicialize um provedor (conforme descrito nas seções anteriores). Se quiser fazer suas próprias chamadas para o Microsoft Graph, faça isso fazendo referência ao mesmo SDK do Microsoft Graph usado pelos componentes. Primeiro, obter uma referência para o global `IProvider` e, em seguida, usar o `graph` objeto conforme mostrado:
 
 ```js
 import { Providers } from '@microsoft/mgt';
@@ -159,7 +160,7 @@ graphClient
 
 ## <a name="using-multiple-providers"></a>Usando vários provedores
 
-Em alguns cenários, o aplicativo será executado em diferentes ambientes e exigirá um provedor diferente para cada um. Por exemplo, o aplicativo pode ser executado como um aplicativo Web e uma guia do Microsoft Teams, o que significa que você pode precisar usar o MsalProvider e o Teamprovider. Para este cenário, todos os componentes do provedor têm o `depends-on` atributo para criar uma cadeia de fallback, conforme mostrado no exemplo a seguir.
+Em alguns cenários, seu aplicativo será executado em ambientes diferentes e exigirá um provedor diferente para cada um. Por exemplo, o aplicativo pode ser executado como um aplicativo Web e uma guia do Microsoft Teams, o que significa que talvez seja necessário usar o MsalProvider e o TeamsProvider. Para esse cenário, todos os componentes do provedor têm o atributo para criar uma cadeia `depends-on` de fallback, conforme mostrado no exemplo a seguir.
 
 ```html
 <mgt-teams-provider
@@ -171,7 +172,7 @@ Em alguns cenários, o aplicativo será executado em diferentes ambientes e exig
   depends-on="mgt-teams-provider" ></mgt-msal-provider>
 ```
 
-Neste cenário, o MsalProvider será usado somente se seu aplicativo estiver sendo executado como um aplicativo Web e o Teams não estiver disponível no ambiente atual.
+Nesse cenário, o MsalProvider só será usado se seu aplicativo estiver sendo executado como um aplicativo Web e o TeamsProvider não estiver disponível no ambiente atual.
 
 Para fazer o mesmo no código, você pode usar a `isAvailable` propriedade no provedor, conforme mostrado.
 
@@ -182,9 +183,9 @@ if (TeamsProvider.isAvailable) {
     Providers.globalProvider = new MsalProvider(msalConfig)
 }
 ```
-## <a name="user-loginlogout"></a>Login/logoff de usuário
+## <a name="user-loginlogout"></a>Logout/Logout do Usuário
 
-Quando você tem os provedores adequados inicializados para seu aplicativo, você pode adicionar o [componente de login](../components/login.md) do kit de ferramentas para implementar de forma fácil e rápida o login e o logoff do usuário. O componente funciona com o provedor para lidar com toda a lógica de autenticação e a funcionalidade de logon/logout. O exemplo a seguir usa o MsalProvider e o componente de logon.
+Quando você tem os provedores corretos inicializados para seu aplicativo, você pode adicionar o componente [de Logon](../components/login.md) do Toolkit para implementar logon e logout do usuário de forma fácil e rápida. O componente funciona com o provedor para lidar com toda a lógica de autenticação e a funcionalidade de logout/logout. O exemplo a seguir usa o MsalProvider e o componente Logon.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -192,13 +193,13 @@ Quando você tem os provedores adequados inicializados para seu aplicativo, voc�
 <mgt-login></mgt-login>
 ```
 
-Em cenários em que você deseja implementar isso sozinho, em vez de usar o componente de login do kit de ferramentas, você pode fazer isso usando os `login` `logout` métodos e do provedor.
+Em cenários em que você deseja implementar isso por conta própria, em vez de usar o componente de Logon do Toolkit, você pode fazer isso usando os métodos e `login` `logout` do provedor.
 
 ## <a name="implement-your-own-provider"></a>Implementar seu próprio provedor
 
-Em cenários em que você deseja adicionar componentes de kit de ferramentas a um aplicativo com código de autenticação pré-existente, você pode criar um provedor personalizado que se conecta ao seu mecanismo de autenticação, em vez de usar nossos provedores predefinidos. O kit de ferramentas fornece duas maneiras de criar novos provedores:
+Em cenários em que você deseja adicionar Toolkit componentes a um aplicativo com código de autenticação pré-existente, você pode criar um provedor personalizado que se ligue ao mecanismo de autenticação, em vez de usar nossos provedores predefinidos. O kit de ferramentas fornece duas maneiras de criar novos provedores:
 
-- Crie um novo `SimpleProvider` que retorne um token de acesso do seu código de autenticação passando uma função.
-- Estenda a `IProvider` classe abstract.
+- Crie um novo que retorna um token de acesso do código de `SimpleProvider` autenticação passando uma função.
+- Estender a `IProvider` classe abstrata.
 
-Para obter mais detalhes sobre cada um, consulte [Custom Providers](../providers/custom.md).
+Para obter mais detalhes sobre cada um, consulte [provedores personalizados.](../providers/custom.md)
