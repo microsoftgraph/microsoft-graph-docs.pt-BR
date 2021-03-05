@@ -3,14 +3,14 @@ title: Criar domínio
 description: Adiciona um domínio ao inquilino.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d1fe0bd5d5de9d7eaaf86482cefd4a4696348b22
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fd4f9ffe35ff7c04b2a5aefb3bd27042229304c6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042244"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441939"
 ---
 # <a name="create-domain"></a>Criar domínio
 

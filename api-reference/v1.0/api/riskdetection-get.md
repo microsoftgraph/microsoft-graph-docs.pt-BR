@@ -1,24 +1,24 @@
 ---
 title: Obter riskDetection
-description: Leia as propriedades e os relacionamentos de um objeto riskDetection.
+description: Leia as propriedades e as relações de um objeto riskDetection.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dda9daf89bd320defaed2886281d9fb044bad5b9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ded8ac4a0b55d189e4695b6f458adc78b5faf7b9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025526"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440105"
 ---
 # <a name="get-riskdetection"></a>Obter riskDetection
 Namespace: microsoft.graph
 
-Leia as propriedades e os relacionamentos de um objeto [riskDetection](../resources/riskdetection.md) .
+Leia as propriedades e as relações de um [objeto riskDetection.](../resources/riskdetection.md)
 
 >[!NOTE]
->Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de risco.
+>Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de riscos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [riskDetection](../resources/riskdetection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [riskDetection](../resources/riskdetection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

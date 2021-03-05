@@ -1,30 +1,30 @@
 ---
-title: 'riskyUser: fechar'
-description: Ignorar um usuário arriscado
+title: 'riskyUser: dismiss'
+description: Descartar um usuário arriscado
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f0b1d2b7b911ef4c946a6d3a3603465d6495de73
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: d03d2199d11b2b9f285d8a425e01c70a6a49da35
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719969"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440084"
 ---
-# <a name="riskyuser-dismiss"></a>riskyUser: fechar
+# <a name="riskyuser-dismiss"></a>riskyUser: dismiss
 Namespace: microsoft.graph
 
->**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
 
-Descarte o risco de um ou mais objetos [riskyUser](../resources/riskyuser.md) . Esta ação define o nível de risco do usuário de destino como nenhum.
+Descartar o risco de um ou mais [objetos riskyUser.](../resources/riskyuser.md) Essa ação define o nível de risco do usuário direcionado como nenhum.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | IdentityRiskyUser.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | IdentityRiskyUser.ReadWrite.All |
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|userIds|Coleção de cadeias de caracteres|Especifique as userIds a serem descartadas no corpo da solicitação.|
+|userIds|Conjunto de cadeias de caracteres|Especifique os userIds a descartar no corpo da solicitação.|
 
 
 

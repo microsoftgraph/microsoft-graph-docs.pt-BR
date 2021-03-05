@@ -3,14 +3,14 @@ title: Listar directoryRoles
 description: Lista as funções de diretório ativadas no locatário.
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4e2919c242bb8ee50387daac2f3ce52f1e58018f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 998646fc16119ad7aaccf468fff5b9156cf7a3d2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458588"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434402"
 ---
 # <a name="list-directoryroles"></a>Listar directoryRoles
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 Lista as funções de diretório ativadas no locatário.
 
-Essa operação retorna apenas as funções que foram ativadas. Uma função é ativada quando um administrador ativa a função usando a API [Activate directoryRole](directoryrole-post-directoryroles.md) . Nem todas as funções internas são ativadas inicialmente. 
+Essa operação retorna apenas funções que foram ativadas. Uma função é ativada quando um administrador ativa a função usando a API [Activate directoryRole.](directoryrole-post-directoryroles.md) Nem todas as funções in-iciais são ativadas inicialmente. 
 
-Ao atribuir uma função usando o portal do Azure, a etapa de ativação de função é feita implicitamente no nome do administrador. Para obter a lista completa de funções disponíveis no Azure AD, use [list directoryRoleTemplates](directoryroletemplate-list.md).
+Ao atribuir uma função usando o portal do Azure, a etapa de ativação de função é feita implicitamente em nome do administrador. Para obter a lista completa de funções disponíveis no Azure AD, use [List directoryRoleTemplates](directoryroletemplate-list.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [directoryRole](../resources/directoryrole.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos directoryRole](../resources/directoryrole.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 

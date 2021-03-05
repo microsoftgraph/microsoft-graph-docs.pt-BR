@@ -1,18 +1,18 @@
 ---
-title: Forçar exclusão de domínio
+title: Forçar a exclusão de domínio
 description: Exclui um domínio usando uma operação de longa execução assíncrona.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9b2e4381ee99cbd8a9e2a234328546de8b3fe4ef
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a4376961ea843c5c512d5bdf59449a7e765399f0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135601"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441974"
 ---
-# <a name="force-domain-deletion"></a>Forçar exclusão de domínio
+# <a name="force-domain-deletion"></a>Forçar a exclusão de domínio
 
 Namespace: microsoft.graph
 
@@ -20,21 +20,21 @@ Exclui um domínio usando uma operação de longa execução assíncrona.
 
 Antes de chamar [forceDelete,](domain-forcedelete.md)você deve atualizar ou remover quaisquer referências ao **Exchange** como o serviço de provisionamento.
 
-As ações a seguir são executadas como parte desta operação:
+As seguintes ações são executadas como parte desta operação:
 
-* Atualiza o , e as propriedades com referências ao domínio excluído para usar o domínio `userPrincipalName` `mail` de onmicrosoft.com `proxyAddresses` `users` inicial.
+* Atualiza as propriedades , e de com referências ao domínio excluído para usar o `userPrincipalName` `mail` domínio onmicrosoft.com `proxyAddresses` `users` inicial.
 
-* Atualiza a propriedade com referências ao domínio excluído para usar o domínio `mail` `groups` onmicrosoft.com domínio inicial.
+* Atualiza a propriedade de com referências ao domínio excluído para usar o `mail` `groups` domínio onmicrosoft.com inicial.
 
-* Atualiza a propriedade com referências ao domínio excluído para usar o domínio `identifierUris` `applications` onmicrosoft.com domínio inicial.
+* Atualiza a propriedade de com referências ao domínio excluído para usar o `identifierUris` `applications` domínio onmicrosoft.com inicial.
 
-* Se o número de objetos a serem renomeados for maior que 1000, um erro será retornado.
+* Se o número de objetos a serem renomeados for maior do que 1000, um erro será retornado.
 
-* Se um dos aplicativos `applications` a ser renomeado for um aplicativo de vários locatários, um erro será retornado.
+* Se um dos a `applications` ser renomeado for um aplicativo de vários locatários, um erro será retornado.
 
-Após a conclusão da exclusão do domínio, as operações de API para o domínio excluído retornarão um código de status HTTP 404. Para verificar a exclusão de um domínio, você pode executar uma [operação obter domínio.](domain-get.md)
+Após a conclusão da exclusão de domínio, as operações de API para o domínio excluído retornarão um código de status HTTP 404. Para verificar a exclusão de um domínio, você pode executar uma [operação obter domínio.](domain-get.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -67,11 +67,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| Opção para desabilitar contas de usuário que foram renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não poderá entrar. Se definido como **true,** `users` a atualização como parte dessa operação será desabilitada.  O valor padrão é **true**. |
+|`disableUserAccounts`|`Boolean`| Opção para desabilitar contas de usuário renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não poderá entrar. Se definido como **true,** `users` a atualização como parte dessa operação será desabilitada.  O valor padrão é **true**. |
 
 ## <a name="response-body"></a>Corpo da resposta
 
-Se tiver êxito, este método retornará o `HTTP/1.1 204 OK` código de status.
+Se tiver êxito, este método retornará `HTTP/1.1 204 OK` o código de status.
 
 ## <a name="example"></a>Exemplo
 

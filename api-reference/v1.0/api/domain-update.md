@@ -1,24 +1,24 @@
 ---
 title: Atualizar domínio
-description: Atualize as propriedades do objeto Domain.
+description: Atualize as propriedades do objeto domain.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 12818d1eb152315774b7de90b691ea410ce2bc71
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee201a5dbd60e68c9e3e53e5c7dba340fe1ef06b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052282"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441953"
 ---
 # <a name="update-domain"></a>Atualizar domínio
 
 Namespace: microsoft.graph
 
-Atualize as propriedades do objeto Domain.
+Atualize as propriedades do objeto domain.
 
-> **Importante:** Somente os domínios verificados podem ser atualizados.
+> **Importante:** Somente domínios verificados podem ser atualizados.
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,7 +48,7 @@ PATCH /domains/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores de campos relevantes a serem atualizados. As propriedades existentes não incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações feitas em outros valores de propriedade. Para obter o melhor desempenho, inclua somente valores alterados.
+No corpo da solicitação, fornece os valores para campos relevantes a serem atualizados. As propriedades existentes não incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base em alterações em outros valores de propriedade. Para melhor desempenho, inclua apenas valores alterados.
 
 ## <a name="response"></a>Resposta
 

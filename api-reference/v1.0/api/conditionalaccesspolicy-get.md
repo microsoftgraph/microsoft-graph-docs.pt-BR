@@ -1,22 +1,22 @@
 ---
 title: Obter conditionalAccessPolicy
-description: Recupere as propriedades e os relacionamentos de um objeto conditionalAccessPolicy.
+description: Recupere as propriedades e as relações de um objeto conditionalAccessPolicy.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dec8d9a5e064be9507b4de680c824bfff06f4887
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30432a8c70253f092366782f5d8ff537905894da
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067073"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442121"
 ---
 # <a name="get-conditionalaccesspolicy"></a>Obter conditionalAccessPolicy
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) .
+Recupere as propriedades e as relações de [um objeto conditionalAccessPolicy.](../resources/conditionalaccesspolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegada (conta corporativa ou de estudante)     | Policy.Read.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -38,7 +38,7 @@ GET /identity/conditionalAccess/policies/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) solicitado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

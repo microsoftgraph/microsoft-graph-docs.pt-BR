@@ -3,28 +3,28 @@ title: 'riskyUser: confirmCompromised'
 description: Confirmar um usuário como comprometido
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dbf80b5642616f9c48fbd3e3b80121ed77566a15
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 193baf4a8e450f0fc05812da8cb48440ebfccab1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719990"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440091"
 ---
 # <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 Namespace: microsoft.graph
 
 >**Observação:** A API riskyUsers requer uma licença do Azure AD Premium P2.
 
-Confirme um ou mais objetos [riskyUser](../resources/riskyuser.md) como comprometidos. Esta ação define o nível de risco do usuário de destino como alto.
+Confirme um ou mais [objetos riskyUser](../resources/riskyuser.md) como comprometidos. Essa ação define o nível de risco do usuário direcionado como alto.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | IdentityRiskyUser.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | IdentityRiskyUser.ReadWrite.All |
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|userIds|Coleção de cadeias de caracteres|Especifique as IDs de usuário arriscadas a serem descartadas no corpo da solicitação.|
+|userIds|Conjunto de cadeias de caracteres|Especifique as IDs de usuário arriscadas para descartar no corpo da solicitação.|
 
 
 

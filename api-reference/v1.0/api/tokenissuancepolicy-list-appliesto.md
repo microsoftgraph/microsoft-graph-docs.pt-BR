@@ -1,24 +1,24 @@
 ---
-title: Listar se aplica
-description: Obtenha uma lista de objetos directoryobject aos quais um objeto tokenIssuancePolicy foi aplicado.
+title: Lista appliesTo
+description: Obter uma lista de objetos directoryObject aos qual um objeto tokenIssuancePolicy foi aplicado.
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d76026a13d1bae3f74cda5192691e2ef6c3d55ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f9345d63ee604b731d3e6ca490789c96a15b923
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043966"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440056"
 ---
-# <a name="list-appliesto"></a>Listar se aplica
+# <a name="list-appliesto"></a>Lista appliesTo
 
 Namespace: microsoft.graph
 
 
 
-Obtenha uma lista de objetos [directoryobject](../resources/directoryObject.md) aos quais um objeto [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) foi aplicado. O tokenIssuancePolicy só pode ser aplicado ao [aplicativo](../resources/application.md).
+Obter uma lista de [objetos directoryObject](../resources/directoryObject.md) aos qual [um objeto tokenIssuancePolicy](../resources/tokenissuancepolicy.md) foi aplicado. O tokenIssuancePolicy só pode ser aplicado ao [aplicativo](../resources/application.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Application. Read. All, Policy. ReadWrite. ApplicationConfiguration e Application. Read. All, Directory. Read. All |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Application.Read.All, Policy.ReadWrite.ApplicationConfiguration e Application.Read.All, Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. All e Application. Read. All, Policy. ReadWrite. ApplicationConfiguration e Application. Read. All, Directory. Read. All |
+| Aplicativo                            | Policy.Read.All e Application.Read.All, Policy.ReadWrite.ApplicationConfiguration e Application.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET /policies/tokenIssuancePolicies/{id}/appliesTo
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a `$expand` , `$select` e a parâmetros de `$top` consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Ao usar o `$expand` , certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.
+Este método dá suporte `$expand` aos `$select` parâmetros de consulta , e OData para ajudar a personalizar `$top` a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Ao usar `$expand` , certifique-se de que seu aplicativo solicita permissões para ler os objetos expandidos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

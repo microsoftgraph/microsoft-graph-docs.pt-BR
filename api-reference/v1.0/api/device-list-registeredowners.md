@@ -3,14 +3,14 @@ title: Listar registeredOwners
 description: Recupera uma lista de usuários que são proprietários registrados do dispositivo.
 localization_priority: Normal
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c7f86a1c2038cd9d6ff477d3c18cbf00b829624a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 198655463c227fa5f0b7b547e59c9f11b08b7571
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457860"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434584"
 ---
 # <a name="list-registeredowners"></a>Listar registeredOwners
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupera uma lista de usuários que são proprietários registrados do dispositivo. Um proprietário registrado é o usuário que se associou ao dispositivo na nuvem ou que registrou o dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

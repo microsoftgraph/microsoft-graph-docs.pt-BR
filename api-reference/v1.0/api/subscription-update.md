@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 22855084a97d4c45199766b1928be04e2318148e
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 3d8bc3154e0ed2556f319bba78f03ee4703dc8b1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092418"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441666"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 Renove uma assinatura ampliando seu tempo de validade.
 
-A tabela na seção [Permissões lista os](#permissions) recursos que suportam a assinatura para alterar notificações.
+A tabela na seção [Permissões](#permissions) lista os recursos que suportam a assinatura para alterar notificações.
 
-As assinaturas expiram após um período que varia de acordo com o tipo de recurso. Para evitar notificações de alteração ausentes, um aplicativo deve renovar suas assinaturas bem antes da data de vencimento. Consulte [a assinatura](../resources/subscription.md) para a duração máxima de uma assinatura para cada tipo de recurso.
+As assinaturas expiram após um período de tempo que varia de acordo com o tipo de recurso. Para evitar notificações de alteração ausentes, um aplicativo deve renovar suas assinaturas bem antes da data de expiração. Consulte [assinatura](../resources/subscription.md) para o tamanho máximo de uma assinatura para cada tipo de recurso.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
+Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|

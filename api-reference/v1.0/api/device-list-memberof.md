@@ -1,22 +1,22 @@
 ---
 title: Listar grupos de dispositivos
-description: Obter grupos dos quais este dispositivo é membro direto. Essa operação não é transitiva.
+description: Obter grupos dos que esse dispositivo é um membro direto. Essa operação não é transitiva.
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 69e33afef9dba54785dd7b5ea3af5285f4aa37ad
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 7c8bd0c9df919e69987443ca472b9485c1ffc0fe
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082073"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434591"
 ---
 # <a name="list-device-groups"></a>Listar grupos de dispositivos
 
 Namespace: microsoft.graph
 
-Obter grupos dos quais este dispositivo é membro direto. Essa operação não é transitiva.
+Obter grupos dos que esse dispositivo é um membro direto. Essa operação não é transitiva.
 
 ## <a name="permissions"></a>Permissões
 
@@ -55,7 +55,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-groups-that-the-device-is-a-direct-member-of"></a>Exemplo 1: obter grupos dos quais o dispositivo é membro direto
+### <a name="example-1-get-groups-that-the-device-is-a-direct-member-of"></a>Exemplo 1: Obter grupos de que o dispositivo é um membro direto
 
 #### <a name="request"></a>Solicitação
 
@@ -148,7 +148,7 @@ Content-type: text/plain
 
 `394`
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Exemplo 3: usar a conversão OData e $search para obter associação com nomes de exibição que contenham as letras "vídeo" incluindo uma contagem de objetos retornados
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Exemplo 3: Use o OData cast e $search para obter associação com nomes de exibição que contêm as letras "Vídeo", incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
@@ -192,7 +192,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Exemplo 4: usar a conversão OData e $filter para obter associação com um nome de exibição que comece com a letra "A", incluindo uma contagem de objetos retornados
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Exemplo 4: Use o OData cast e $filter para obter associação com um nome de exibição que começa com a letra 'A' incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 

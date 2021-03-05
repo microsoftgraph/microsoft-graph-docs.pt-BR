@@ -1,32 +1,32 @@
 ---
 title: Listar riskDetections
-description: Obtenha uma lista dos objetos riskDetection e suas propriedades.
+description: Obter uma lista dos objetos riskDetection e suas propriedades.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b6d1a57d0f83608169b412b520f1342662b592d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 92e521575e18c51874dc954cd61db18b5c8d5808
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079344"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440098"
 ---
 # <a name="list-riskdetections"></a>Listar riskDetections
 Namespace: microsoft.graph
 
-Obtenha uma lista dos objetos [riskDetection](../resources/riskdetection.md) e suas propriedades.
+Obter uma lista dos [objetos riskDetection](../resources/riskdetection.md) e suas propriedades.
 
 >[!NOTE]
->Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de risco.
+>Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de riscos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [riskDetection](../resources/riskdetection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos riskDetection](../resources/riskdetection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

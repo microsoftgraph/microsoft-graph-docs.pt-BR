@@ -3,14 +3,14 @@ title: Obter organização
 description: Recupere as propriedades e os relacionamentos da organização autenticada no momento.
 localization_priority: Priority
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a224d2e166939fcbe7e50a59fce692c9f72209ad
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: ded6854e4bc6a46290ce1d0d73a0845ddd280370
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461192"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441757"
 ---
 # <a name="get-organization"></a>Obter organização
 

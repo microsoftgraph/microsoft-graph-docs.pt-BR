@@ -1,18 +1,18 @@
 ---
-title: 'evento: cancelar'
+title: 'event: cancel'
 description: 'Esta ação permite que o organizador de uma reunião envie uma mensagem de cancelamento e cancele o evento. '
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 549d5f4e30f288b82d5637da50241c895373f8fe
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: e50fe07c186be9099c2a1f34f6a91982e0ee6436
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754228"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441946"
 ---
-# <a name="event-cancel"></a>evento: cancelar
+# <a name="event-cancel"></a>event: cancel
 
 Namespace: microsoft.graph
 
@@ -46,9 +46,6 @@ POST /groups/{id}/calendar/events/{id}/cancel
 
 POST /me/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/cancel
-
-POST /me/calendargroup/calendars/{id}/events/{id}/cancel
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/cancel
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel

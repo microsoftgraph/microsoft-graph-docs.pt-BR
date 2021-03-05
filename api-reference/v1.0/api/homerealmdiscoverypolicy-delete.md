@@ -3,14 +3,14 @@ title: Excluir homeRealmDiscoveryPolicy
 description: Exclua homeRealmDiscoveryPolicy.
 localization_priority: Normal
 author: hpsin
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bae41290ca2395e60cf611c96ccdc46e3e3ff85b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 803b770daa1a1e8f4aa073a83fc6214e2a862991
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973321"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434353"
 ---
 # <a name="delete-homerealmdiscoverypolicy"></a>Excluir homeRealmDiscoveryPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 
 
-Excluir um objeto [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) .
+[Exclua um objeto homeRealmDiscoveryPolicy.](../resources/homerealmdiscoverypolicy.md)
 
 ## <a name="permissions"></a>Permissões
 

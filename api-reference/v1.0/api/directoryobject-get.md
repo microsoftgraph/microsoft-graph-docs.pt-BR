@@ -3,14 +3,14 @@ title: Obter directoryObject
 description: Recupere as propriedades e os relacionamentos do objeto directoryObject.
 author: keylimesoda
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f81623deaf1146fc44b14b5302415d641e7369d3
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: bf1e017e6fd69168b41e83b8adc19f9bd4d5f216
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457832"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434423"
 ---
 # <a name="get-directoryobject"></a>Obter directoryObject
 

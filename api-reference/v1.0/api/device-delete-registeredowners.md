@@ -1,22 +1,22 @@
 ---
 title: Excluir registeredOwners
-description: Remover um usuário como proprietário registrado do dispositivo.
+description: Remova um usuário como proprietário registrado do dispositivo.
 localization_priority: Normal
 author: michaelrm97
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: afad1b2c93d552cbb3dfe2f63dc0509fd3faf5d6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9fdb783adfe599c52cd6772ebf80a3b3c4bfa0c6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013402"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434654"
 ---
 # <a name="delete-registeredowner"></a>Excluir registeredOwner
 
 Namespace: microsoft.graph
 
-Remover um usuário como proprietário registrado do dispositivo.
+Remova um usuário como proprietário registrado do dispositivo.
 
 ## <a name="permissions"></a>Permissões
 

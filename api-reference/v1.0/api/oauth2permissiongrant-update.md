@@ -1,25 +1,25 @@
 ---
 title: Atualizar um oAuth2PermissionGrant
-description: Atualizar as propriedades de um oAuth2PermissionGrant, representando uma concessão de permissão delegada.
+description: Atualize as propriedades de um oAuth2PermissionGrant, representando uma concessão de permissão delegada.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 2737f9a983cbf7536d861244c8efdb64865eb579
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fd75e020e69888c81cf4a9c53c180585ace73c7e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087198"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441771"
 ---
 # <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>Atualizar uma concessão de permissão delegada (oAuth2PermissionGrant)
 
 Namespace: microsoft.graph
 
 
-Atualize as propriedades do objeto [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , representando uma concessão de permissão delegada.
+Atualize as propriedades do [objeto oAuth2PermissionGrant,](../resources/oauth2permissiongrant.md) representando uma concessão de permissão delegada.
 
-Um **oAuth2PermissionGrant** pode ser atualizado para alterar quais permissões delegadas são concedidas, adicionando ou removendo itens da lista em **escopos**.
+Um **oAuth2PermissionGrant** pode ser atualizado para alterar quais permissões delegadas são **concedidas,** adicionando ou removendo itens da lista em escopos .
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | DelegatedPermissionGrant. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|scope|String| Especifica o valor da declaração do escopo que o aplicativo de recursos deve esperar no token de acesso do OAuth 2,0. |
+|scope|String| Especifica o valor da declaração de escopo que o aplicativo de recurso deve esperar no token de acesso OAuth 2.0. |
 
 ## <a name="response"></a>Resposta
 

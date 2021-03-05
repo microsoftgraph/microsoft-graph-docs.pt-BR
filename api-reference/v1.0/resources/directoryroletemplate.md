@@ -3,14 +3,14 @@ title: tipo de recurso directoryRoleTemplate
 description: Representa um modelo de função de diretório.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4b4c99bcba706b0634179a47109feb80960571ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b13fa5eada7202ed240fe748f0fc92bc15ba8648
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091758"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439888"
 ---
 # <a name="directoryroletemplate-resource-type"></a>tipo de recurso directoryRoleTemplate
 

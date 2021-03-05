@@ -1,24 +1,24 @@
 ---
-title: Atualizar AuthorizationPolicy
+title: Atualizar a política de autorização
 description: Atualize as propriedades do objeto authorizationPolicy.
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e8ae872ad6a78f7faee94802d7d93f8775900903
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: e3b8cee408b25b19d0fe36b57ce445e4dcbb13ff
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691357"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434955"
 ---
 # <a name="update-authorizationpolicy"></a>Atualizar authorizationPolicy
 
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto [authorizationPolicy](../resources/authorizationpolicy.md) .
+Atualize as propriedades de [um objeto authorizationPolicy.](../resources/authorizationpolicy.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.Authorization|
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.ReadWrite.Authorization|
+| Aplicativo                            | Policy.ReadWrite.Authorization|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,14 +49,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String| Nome para exibição dessa política. |
-|description|String| Descrição da política.|
-|blockMsolPowerShell|Boolean| Para desabilitar o uso do MSOL PowerShell defina essa propriedade como true. A configuração como true também desabilitará o acesso baseado no usuário ao ponto de extremidade de serviço herdado usado pelo MSOL PowerShell. Isso não afeta o Azure AD Connect ou o Microsoft Graph. |
+|displayName|Cadeia de caracteres| Nome de exibição para esta política. |
+|description|Cadeia de caracteres| Descrição dessa política.|
+|blockMsolPowerShell|Boolean| Para desabilitar o uso do MSOL PowerShell, de definir essa propriedade como true. A configuração como true também desabilitará o acesso baseado no usuário ao ponto de extremidade de serviço herdado usado pelo MSOL PowerShell. Isso não afeta o Azure AD Connect ou o Microsoft Graph. |
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultuserrolepermissions.md)| Especifica determinadas permissões personalizáveis para a função de usuário padrão. |
-|allowedToUseSSPR|Boolean| Indica se o Self-Serve recurso de redefinição de senha pode ser usado por usuários no locatário. |
+|allowedToUseSSPR|Boolean| Indica se o recurso Self-Serve redefinição de senha pode ser usado pelos usuários no locatário. |
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indica se os usuários podem se inscrever para assinaturas baseadas em email. |
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| Indica se um usuário pode ingressar no locatário por validação de email. |
-|allowInvitesFrom|Cadeia de Caracteres|Indica quem pode convidar usuários externos para a organização. Os valores possíveis são:<ul><li>`none` – Impedir que todos, incluindo administradores, convidarem usuários externos. Configuração padrão para o governo dos EUA.</li><li>`adminsAndGuestInviters` – Permitir que membros de administradores globais, administradores de usuários e funções do convidado de convidados convidarem usuários externos.</li><li>`adminsGuestInvitersAndAllMembers` – Permitir que as funções de administrador acima e todos os outros membros da função de usuário convidem usuários externos.</li><li>`everyone` – Permitir que todos na organização, incluindo usuários convidados, convidem usuários externos. Configuração padrão para todos os ambientes de nuvem, exceto o governo dos EUA.</li></ul> |
+|allowInvitesFrom|Cadeia de caracteres|Indica quem pode convidar usuários externos para a organização. Os valores possíveis são:<ul><li>`none` - Impedir que todos, incluindo administradores, convidam usuários externos. Configuração padrão para o Governo dos EUA.</li><li>`adminsAndGuestInviters` - Permitir que os membros das funções Administradores Globais, Administradores de Usuários e Convidados convidem usuários externos.</li><li>`adminsGuestInvitersAndAllMembers` - Permitir que as funções de administrador acima e todos os outros membros da função de usuário convidem usuários externos.</li><li>`everyone` - Permitir que todos na organização, incluindo usuários convidados, convidem usuários externos. Configuração padrão para todos os ambientes de nuvem, exceto o Governo dos EUA.</li></ul> |
 
 ## <a name="response"></a>Resposta
 
@@ -68,7 +68,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Neste exemplo, o nível de acesso de convidado é modificado para o usuário convidado restrito.
+Este é um exemplo de solicitação. Neste exemplo, o nível de acesso de convidado é modificado para Usuário Convidado Restrito.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -117,7 +117,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-block-msol-powershell-in-tenant"></a>Exemplo 2: bloquear o MSOL PowerShell no locatário
+### <a name="example-2-block-msol-powershell-in-tenant"></a>Exemplo 2: Bloquear o MSOL PowerShell no locatário
 
 #### <a name="request"></a>Solicitação
 
@@ -170,7 +170,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-disable-default-user-roles-permission-to-create-applications"></a>Exemplo 3: desabilitar a permissão de função de usuário padrão para criar aplicativos
+### <a name="example-3-disable-default-user-roles-permission-to-create-applications"></a>Exemplo 3: Desabilitar a permissão da função de usuário padrão para criar aplicativos
 
 #### <a name="request"></a>Solicitação
 
@@ -225,7 +225,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-4-enable-default-user-role-to-use-self-serve-password-reset-feature"></a>Exemplo 4: habilitar a função de usuário padrão para usar Self-Serve recurso de redefinição de senha
+### <a name="example-4-enable-default-user-role-to-use-self-serve-password-reset-feature"></a>Exemplo 4: Habilitar a função de usuário padrão para usar Self-Serve redefinição de senha
 
 #### <a name="request"></a>Solicitação
 
@@ -278,7 +278,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-5-disable-user-consent-to-apps-for-default-user-role"></a>Exemplo 5: desabilitar o consentimento do usuário para os aplicativos para a função de usuário padrão
+### <a name="example-5-disable-user-consent-to-apps-for-default-user-role"></a>Exemplo 5: Desabilitar o consentimento do usuário para aplicativos para a função de usuário padrão
 
 #### <a name="request"></a>Solicitação
 
@@ -333,11 +333,11 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-6-enable-user-consent-to-apps-subject-to-app-consent-policy"></a>Exemplo 6: habilitar o consentimento do usuário para aplicativos, sujeito à política de consentimento do aplicativo
+### <a name="example-6-enable-user-consent-to-apps-subject-to-app-consent-policy"></a>Exemplo 6: Habilitar o consentimento do usuário para aplicativos, sujeito à política de consentimento do aplicativo
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação que permite o consentimento do usuário para os aplicativos, sujeito à política de [consentimento de aplicativo](/azure/active-directory/manage-apps/manage-app-consent-policies) interna `microsoft-user-default-low` , que permite as permissões delegadas "baixa", para aplicativos clientes de editores verificados ou registrados no mesmo locatário.
+A seguir, um exemplo da solicitação que permite o consentimento [](/azure/active-directory/manage-apps/manage-app-consent-policies) do usuário para aplicativos, sujeito à política de consentimento de aplicativo interna , que permite permissões delegadas `microsoft-user-default-low` classificadas como "baixas", para aplicativos cliente de editores verificados ou registrados no mesmo locatário.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

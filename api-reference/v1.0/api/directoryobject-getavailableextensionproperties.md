@@ -3,19 +3,19 @@ title: 'directoryObject: getAvailableExtensionProperties'
 description: Obtenha todas as listas ou uma lista filtrada das propriedades de extensão do diretório que foram registradas em um diretório.
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ed4650a03955d4952a8c90845734ae07d53f13dc
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 0464228669013360ad71eb24d214c4810bdb4c43
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873021"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434409"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: getAvailableExtensionProperties
 Namespace: microsoft.graph
 
-Retornar todas ou uma lista filtrada das propriedades de extensão de diretório que foram registradas em um diretório. As entidades a seguir suportam propriedades de extensão: **usuário**, **grupo**, **organização**, **dispositivo**, **aplicativo** e **servicePrincipal**.
+Retorne todas ou uma lista filtrada das propriedades de extensão de diretório que foram registradas em um diretório. As entidades a seguir suportam propriedades de extensão: **usuário**, **grupo** **,** organização , **dispositivo,** **aplicativo** e **servicePrincipal**.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,12 +49,12 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Booliano|`true` para especificar que apenas as propriedades de extensão sincronizadas do diretório local devem ser retornadas; para especificar que somente as propriedades de extensão que não são sincronizadas do diretório `false` local devem ser retornadas. Se o parâmetro for omitido, todas as propriedades de extensão (sincronizadas e não sincronizadas) serão retornadas.|
+|isSyncedFromOnPremises|Boolean|`true` para especificar que apenas as propriedades de extensão sincronizadas do diretório local devem ser retornadas; para especificar que apenas as propriedades de extensão que não são sincronizadas do diretório `false` local devem ser retornadas. Se o parâmetro for omitido, todas as propriedades de extensão (sincronizadas e não sincronizadas) serão retornadas.|
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedida, esta ação retorna `200 OK` um código de resposta e uma coleção [extensionProperty](../resources/extensionproperty.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará um código de resposta e uma coleção `200 OK` [extensionProperty](../resources/extensionproperty.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

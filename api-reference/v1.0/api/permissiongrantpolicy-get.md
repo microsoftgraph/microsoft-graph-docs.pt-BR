@@ -3,30 +3,30 @@ title: Obter permissionGrantPolicy
 description: Recupere um único objeto permissionGrantPolicy.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9bcd99c04c0bc6149ac5f14d2587776540fe24a6
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 47771f8ad5cac3e2abd5191ae6651509c575ef13
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524469"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441690"
 ---
 # <a name="get-permissiongrantpolicy"></a>Obter permissionGrantPolicy
 
 Namespace: microsoft.graph
 
-Recupere um único objeto [permissionGrantPolicy](../resources/permissiongrantpolicy.md) .
+Recupere um único [objeto permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Policy. Read. PermissionGrant, Policy. ReadWrite. PermissionGrant |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. PermissionGrant, Policy. ReadWrite. PermissionGrant |
+| Aplicativo                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,14 +52,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [permissionGrantPolicy](../resources/permissiongrantpolicy.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [permissionGrantPolicy](../resources/permissiongrantpolicy.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
-Neste exemplo, a política solicitada é a política de concessão de permissão interna `microsoft-user-default-low` , que inclui as permissões delegadas baixas, para aplicativos de editores ou aplicativos verificados registrados neste locatário.
+Neste exemplo, a política solicitada é a política interna de concessão de permissão , que inclui permissões delegadas classificadas como baixas, para aplicativos de editores verificados ou aplicativos registrados `microsoft-user-default-low` neste locatário.
 
 
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 
 ### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. A política tem dois `includes` conjuntos de condição, um que corresponde a permissões delegadas classificadas `low` para aplicativos clientes registrados neste locatário e as outras que correspondem a permissões delegadas classificadas `low` para aplicativos de editores verificados (independentemente de qual locatário o aplicativo está registrado).
+Este é um exemplo de resposta. A política tem dois conjuntos de condições, um que corresponde à permissão delegada classificada para aplicativos cliente registrados nesse locatário e o outro que corresponde a permissões delegadas classificadas para aplicativos de editores verificados (independentemente de qual locatário o aplicativo está `includes` `low` `low` registrado).
 
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 

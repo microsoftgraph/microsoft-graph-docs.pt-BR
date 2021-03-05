@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a66058dd7af69a9e85e241dbc8f35f5b123a9598
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: 7af1c3679ab9c6d4d75e8618acf17d653619b869
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720684"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434894"
 ---
 # <a name="get-calendar"></a>Obter calendário
 
@@ -44,9 +44,6 @@ Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../
 ```http
 GET /me/calendars/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}
-
-GET /me/calendarGroup/calendars/{id}
-GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.
 ```http

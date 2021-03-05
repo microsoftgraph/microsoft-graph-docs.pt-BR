@@ -1,22 +1,22 @@
 ---
 title: Excluir conditionalAccessPolicy
-description: Excluir um conditionalAccessPolicy.
+description: Exclua um conditionalAccessPolicy.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 02cb3b0b561df1059ffabe0a6821a436b5ec2c0f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d08e279ad3203b8161f7387054e01e421d4b5357
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067087"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434752"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>Excluir conditionalAccessPolicy
 
 Namespace: microsoft.graph
 
-Excluir um objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) .
+[Exclua um objeto conditionalAccessPolicy.](../resources/conditionalaccesspolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

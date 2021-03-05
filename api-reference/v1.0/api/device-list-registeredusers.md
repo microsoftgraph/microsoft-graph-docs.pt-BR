@@ -3,14 +3,14 @@ title: Listar registeredUsers
 description: Recupera uma lista de usuários que são usuários registrados do dispositivo.
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b49ef34bd3accb659f01718436bb1a26e264fb58
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: e679baba5dcdac47fb2a14d45555707afadddc7b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461675"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434549"
 ---
 # <a name="list-registeredusers"></a>Listar registeredUsers
 
@@ -20,7 +20,7 @@ Recupera uma lista de usuários que são usuários registrados do dispositivo.
 
 Para dispositivos associados em nuvem e dispositivos pessoais registrados, os usuários registrados são definidos para o mesmo valor que proprietários registrados no momento do registro.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

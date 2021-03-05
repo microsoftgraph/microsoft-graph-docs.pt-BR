@@ -3,14 +3,14 @@ title: Tipo de recurso identitySecurityDefaultsEnforcementPolicy
 description: Representa a política de padrões de segurança do Azure Active Directory. Os padrões de segurança contêm configurações de segurança pré-configuradas que protegem contra ataques comuns.
 localization_priority: Normal
 author: rohinigoyal1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 924eda550472436332d4829bdd436723e0fa9678
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 21b012338e6ca168e932a8aaf2560ce825304ae9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153449"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439839"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>Tipo de recurso identitySecurityDefaultsEnforcementPolicy
 
@@ -24,17 +24,17 @@ Herda de [policyBase](../resources/policybase.md).
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Get](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Leia as propriedades de um **objeto identitySecurityDefaultsEnforcementPolicy.** |
-| [Update](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Atualize **um objeto identitySecurityDefaultsEnforcementPolicy.** |
+| [Get](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Leia as propriedades de **um objeto identitySecurityDefaultsEnforcementPolicy.** |
+| [Atualizar](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Atualize **um objeto identitySecurityDefaultsEnforcementPolicy.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|Cadeia de caracteres|Descrição desta política. Somente leitura.|
-|displayName|Cadeia de caracteres|Nome para exibição desta política. Somente leitura.|
-|id|Cadeia de caracteres|Identificador desta política. Somente leitura.|
-|isEnabled|Booliano|Se definido como verdadeiro, os padrões de segurança do Azure Active Directory são habilitados para o locatário.|
+|description|Cadeia de caracteres|Descrição dessa política. Somente leitura.|
+|displayName|Cadeia de caracteres|Nome de exibição para esta política. Somente leitura.|
+|id|Cadeia de caracteres|Identificador dessa política. Somente leitura.|
+|isEnabled|Booliano|Se definido como true, os padrões de segurança do Azure Active Directory são habilitados para o locatário.|
 
 ## <a name="relationships"></a>Relações
 

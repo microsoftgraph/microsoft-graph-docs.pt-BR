@@ -3,14 +3,14 @@ title: tipo de recurso permissionGrantPolicy
 description: Especifica as condições em que o consentimento pode ser autorizado.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: cd5911f46dfaad1279b2c21f2f5e1646796edf7f
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 5d599c6035d2afd3371f86ec35b955577a419d3e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377137"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432876"
 ---
 # <a name="permissiongrantpolicy-resource-type"></a>tipo de recurso permissionGrantPolicy
 
@@ -20,7 +20,7 @@ Uma política de concessão de permissão é usada para especificar as condiçõ
 
 Uma política de concessão de permissão consiste em uma lista de conjuntos de condições **inclusos** e uma lista de conjuntos de condições **exclusos**. Para que um evento corresponda a uma política de concessão de permissão, ele deve corresponder a *pelo menos um* do conjunto de condições **incluso** e *nenhum* do conjuntos de condições **excluso**.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
@@ -43,7 +43,7 @@ Uma política de concessão de permissão consiste em uma lista de conjuntos de 
 |:---------------|:--------|:----------|
 | id | String | O identificador exclusivo da política de concessão de permissão. O prefixo de **identificação**`microsoft-` está reservado para políticas de concessão de permissão interna e não pode ser usado em uma política de concessão de permissão personalizada. Somente letras, números, hifens (`-`) e sublinhados (`_`) são permitidos. Chave. Não anulável. Obrigatório durante a criação. Imutável. |
 | displayName | String |O nome de exibição da política de concessão de permissão.|
-| description |String| A descrição da política de concessão de permissão.|
+| descrição |String| A descrição da política de concessão de permissão.|
 | inclui | conjunto de [permissionGrantConditionSet](permissiongrantconditionset.md)| Os conjuntos de condições *incluídos* nesta política de concessão de permissão. Expandida automaticamente no `GET`.|
 | exclui |conjunto de [permissionGrantConditionSet](permissiongrantconditionset.md)| Conjuntos de condições *excluídos* nesta política de concessão de permissão. Expandida automaticamente no `GET`.|
 

@@ -3,20 +3,20 @@ title: Listar políticas
 description: Recupere uma lista de objetos conditionalaccesspolicy.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f95c91a3f900a21345a2ae6b37c4c2e0ef526131
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fb27b0c074c46f419b96b721c104c2094a6366ad
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033493"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442107"
 ---
 # <a name="list-policies"></a>Listar políticas
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) .
+Recupere uma lista [de objetos conditionalAccessPolicy.](../resources/conditionalaccesspolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All |
 
@@ -38,7 +38,7 @@ GET /identity/conditionalAccess/policies
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos parâmetros de consulta do,,, `$skip` `$top` `$count` `$filter` , `$orderBy` e `$select` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos parâmetros de consulta , , , , e OData para `$skip` ajudar a personalizar a `$top` `$count` `$filter` `$orderBy` `$select` resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

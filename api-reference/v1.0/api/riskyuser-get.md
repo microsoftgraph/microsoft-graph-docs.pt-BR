@@ -1,23 +1,23 @@
 ---
 title: Obter riskyUser
-description: Leia as propriedades e os relacionamentos de um objeto riskyUser.
+description: Leia as propriedades e as relações de um objeto riskyUser.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f50406077053976ae0e1af349dfd22f6f69fd424
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc7b7758b7d368ffe248cbfe57c29c98955b3ef6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051302"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440028"
 ---
 # <a name="get-riskyuser"></a>Obter riskyUser
 Namespace: microsoft.graph
 
-Leia as propriedades e os relacionamentos de um objeto [riskyUser](../resources/riskyuser.md) .
+Leia as propriedades e as relações de um [objeto riskyUser.](../resources/riskyuser.md)
 
->**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [riskyUser](../resources/riskyuser.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [riskyUser](../resources/riskyuser.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

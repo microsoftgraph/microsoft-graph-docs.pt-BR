@@ -1,30 +1,30 @@
 ---
 title: Atualizar administrativeunit
-description: Atualiza as propriedades de um objeto administrativeUnit.
+description: Atualize as propriedades de um objeto administrativeUnit.
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 00e82bed212b992abeda19d49a9aa7645a88371a
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 195ae89d8f32659f975be172fcf586f0cc7a02eb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223679"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442569"
 ---
 # <a name="update-administrativeunit"></a>Atualizar administrativeunit
 
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto [administrativeUnit](../resources/administrativeunit.md) .
+Atualize as propriedades de [um objeto administrativeUnit.](../resources/administrativeunit.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AdministrativeUnit. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,10 +46,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Descrição da unidade administrativa.|
-|displayName|string|Nome de exibição para a unidade administrativa.|
-|visibilidade|string|Visibilidade para a unidade administrativa. Se não for definido, o padrão será "Public". Pode ser definido como "HiddenMembership", que oculta a associação de não membros.|
+|displayName|string|Nome de exibição da unidade administrativa.|
+|visibilidade|string|Visibilidade da unidade administrativa. Se não for definido, o padrão será "público". Pode ser definido como "HiddenMembership", que oculta a associação de não membros.|
 
-Como o recurso **administrativeUnit** oferece suporte a [extensões](/graph/extensibility-overview), você pode usar a `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância existente do **administrativeUnit** .
+Como o **recurso administrativeUnit** dá suporte a extensões, você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview)de uma extensão em uma instância `PATCH` **administrativeUnit** existente.
 
 ## <a name="response"></a>Resposta
 

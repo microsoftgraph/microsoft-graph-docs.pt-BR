@@ -1,16 +1,16 @@
 ---
 title: Atualizar activitybasedtimeoutpolicy
-description: Atualizar as propriedades de um objeto activityBasedTimeoutPolicy.
+description: Atualize as propriedades de um objeto activityBasedTimeoutPolicy.
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 01cb29858af77410f6845c997f38ac963a6624f8
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: f97cc3ebc2e85c8774780ba7e661bfa94a4c6c4c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910359"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442590"
 ---
 # <a name="update-activitybasedtimeoutpolicy"></a>Atualizar activitybasedtimeoutpolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 
 
-Atualizar as propriedades de um [objeto activityBasedTimeoutPolicy.](../resources/activitybasedtimeoutpolicy.md)
+Atualize as propriedades de [um objeto activityBasedTimeoutPolicy.](../resources/activitybasedtimeoutpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,10 +51,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|definição|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
-|description|Cadeia de caracteres| Descrição desta política.|
-|displayName|Cadeia de caracteres| Nome para exibição desta política. Obrigatório.|
-|isOrganizationDefault|Booliano|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como padrão da organização. Opcional, o valor padrão é false.|
+|definition|Conjunto de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
+|description|Cadeia de caracteres| Descrição dessa política.|
+|displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
+|isOrganizationDefault|Boolean|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
 
 ## <a name="response"></a>Resposta
 

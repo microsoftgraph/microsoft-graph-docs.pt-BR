@@ -3,32 +3,32 @@ title: Criar permissionGrantPolicy
 description: Cria um objeto permissionGrantPolicy que descreve as condições sob as quais as permissões podem ser concedidas.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 210294ab470c0a0697ab701a74b26d94edb05e49
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 0e08d51d13d23a74907e91f41972be75b90a555b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524110"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441680"
 ---
 # <a name="create-permissiongrantpolicy"></a>Criar permissionGrantPolicy
 
 Namespace: microsoft.graph
 
-Cria um [permissionGrantPolicy](../resources/permissiongrantpolicy.md). Uma política de concessão de permissão é usada para descrever as condições sob as quais podem ser concedidas permissões (por exemplo, durante o consentimento do aplicativo).
+Cria uma [permissionGrantPolicy](../resources/permissiongrantpolicy.md). Uma política de concessão de permissão é usada para descrever as condições em que as permissões podem ser concedidas (por exemplo, durante o consentimento do aplicativo).
 
-Após criar a política de concessão de permissão, você pode [Adicionar conjuntos de condições de inclusão](permissiongrantpolicy-post-includes.md) para adicionar regras de correspondência e [Adicionar conjuntos de condições](permissiongrantpolicy-post-excludes.md) de exclusão para adicionar regras de exclusão.
+Depois de criar a política de concessão de permissão, você pode adicionar [conjuntos](permissiongrantpolicy-post-includes.md) de condições para adicionar regras correspondentes e adicionar conjuntos de condições [de](permissiongrantpolicy-post-excludes.md) exclusão para adicionar regras de exclusão.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PermissionGrantPolicy. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PermissionGrantPolicy. ReadWrite. All |
+|Aplicativo | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,11 +46,11 @@ POST /policies/permissionGrantPolicies
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [permissionGrantPolicy](../resources/permissiongrantpolicy.md) .
+No corpo da solicitação, fornece uma representação JSON de [um objeto permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [permissionGrantPolicy](../resources/permissiongrantpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto permissionGrantPolicy](../resources/permissiongrantpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

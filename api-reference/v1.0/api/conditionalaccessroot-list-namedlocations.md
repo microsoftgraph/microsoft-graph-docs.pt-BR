@@ -1,22 +1,22 @@
 ---
 title: Listar namedLocations
-description: Obtenha uma lista de objetos namedLocation.
+description: Obter uma lista de objetos namedLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 54c7c25b058c380363e86d4aab3b4f90b80b700b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b75cd74e3c015fa8d8e1b02370991e5c17b31588
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033494"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434724"
 ---
 # <a name="list-namedlocations"></a>Listar namedLocations
 
 Namespace: microsoft.graph
 
-Obtenha uma lista de objetos [namedLocation](../resources/namedlocation.md) .
+Obter uma lista de [objetos namedLocation.](../resources/namedlocation.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.Read.All |
 
@@ -38,7 +38,7 @@ GET /identity/conditionalAccess/namedLocations
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos parâmetros de consulta do,,, `$count` `$filter` `$orderBy` `$select` , `$skip` e `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos parâmetros de consulta , , , , e OData para `$count` ajudar a personalizar a `$filter` `$orderBy` `$select` `$skip` `$top` resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -52,11 +52,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [namedLocation](../resources/namedlocation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos namedLocation](../resources/namedlocation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-namedlocations"></a>Exemplo 1: listar todos os namedLocations
+### <a name="example-1-list-all-namedlocations"></a>Exemplo 1: Listar todos os namedLocations
 
 #### <a name="request"></a>Solicitação
 
@@ -163,7 +163,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-list-all-ipnamedlocations"></a>Exemplo 2: listar todos os ipNamedLocations
+### <a name="example-2-list-all-ipnamedlocations"></a>Exemplo 2: Listar todos os ipNamedLocations
 
 #### <a name="request"></a>Solicitação
 
@@ -258,7 +258,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a>Exemplo 3: listar todos os namedLocations criados após uma determinada data
+### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a>Exemplo 3: Listar todos os namedLocations criados após uma determinada data
 
 #### <a name="request"></a>Solicitação
 
@@ -335,7 +335,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a>Exemplo 4: listar todos os countryNamedLocations contendo um determinado país ou região
+### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a>Exemplo 4: listar todos os countryNamedLocations que contêm um determinado país ou região
 
 #### <a name="request"></a>Solicitação
 

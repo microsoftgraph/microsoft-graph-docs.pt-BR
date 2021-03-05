@@ -3,32 +3,32 @@ title: Listar serviceConfigurationRecords
 description: Recupera uma lista de objetos domainDnsRecord necessários para habilitar serviços para o domínio.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7af31ad2a9ad70d6c71c9665a8c375b6664fc604
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 045edf23635e6bd5c692095093e2d33f954d14bd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461024"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441967"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Listar serviceConfigurationRecords
 
 Namespace: microsoft.graph
 
-Recupera uma lista de objetos [domainDnsRecord](../resources/domaindnsrecord.md) necessários para habilitar serviços para o domínio.
+Recupera uma lista de [objetos domainDnsRecord](../resources/domaindnsrecord.md) necessários para habilitar serviços para o domínio.
 
-Use a lista retornada para adicionar registros ao arquivo de zona do domínio. Isso pode ser feito por meio do registrador de domínio ou configuração do servidor DNS.
+Use a lista retornada para adicionar registros ao arquivo de zona do domínio. Isso pode ser feito por meio do registrador de domínio ou da configuração do servidor DNS.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [domainDnsRecord](../resources/domaindnsrecord.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [domainDnsRecord](../resources/domaindnsrecord.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

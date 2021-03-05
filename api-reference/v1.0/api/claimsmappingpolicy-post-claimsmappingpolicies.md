@@ -1,22 +1,22 @@
 ---
 title: Criar claimsMappingPolicy
-description: Criar um novo claimsMappingPolicy.
+description: Crie uma nova claimsMappingPolicy.
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e4d7b95680877ed16e0366f526b3b16b1f61c7b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20aa2b84085fde1b2a68b8d6781313e60b448e74
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083873"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434794"
 ---
 # <a name="create-claimsmappingpolicy"></a>Criar claimsMappingPolicy
 
 Namespace: microsoft.graph
 
-Criar um novo objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) .
+Crie um novo [objeto claimsMappingPolicy.](../resources/claimsmappingpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,11 +45,11 @@ POST policies/claimsMappingPolicies
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto claimsMappingPolicy.](../resources/claimsmappingpolicy.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto claimsMappingPolicy](../resources/claimsmappingpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

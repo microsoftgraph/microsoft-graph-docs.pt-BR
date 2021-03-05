@@ -3,29 +3,29 @@ title: Obter subscribedSku
 description: Recupere uma assinatura comercial específica que uma organização adquiriu.
 localization_priority: Normal
 author: SumitParikh
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ce01c108380a47933f697411b3f1540a405c28c3
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a24383651264a66cc36f61bc87c021892b7401df
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460310"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441673"
 ---
 # <a name="get-subscribedsku"></a>Obter subscribedSku
 
 Namespace: microsoft.graph
 
-Obtenha uma assinatura comercial específica que uma organização adquiriu.
+Obter uma assinatura comercial específica que uma organização adquiriu.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Organization. Read. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Organization.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

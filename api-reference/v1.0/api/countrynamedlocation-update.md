@@ -1,22 +1,22 @@
 ---
 title: Atualizar countryNamedlocation
-description: Atualiza as propriedades de um objeto countryNamedLocation.
+description: Atualize as propriedades de um objeto countryNamedLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 814dfc073707ef99c1a97635884cabe822b00003
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fa684d1dc42887f636217056e30e5a0807507bef
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009902"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434671"
 ---
 # <a name="update-countrynamedlocation"></a>Atualizar countryNamedLocation
 
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto [countryNamedLocation](../resources/countryNamedLocation.md) .
+Atualize as propriedades de um [objeto countryNamedLocation.](../resources/countryNamedLocation.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,8 +49,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Coleção de cadeias de caracteres|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
-|displayName|String|Nome legível do local.|
+|countriesAndRegions|Conjunto de cadeias de caracteres|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
+|displayName|Cadeia de caracteres|Nome acessível para humanos do local.|
 |includeUnknownCountriesAndRegions|Boolean|O valor é `true` se os endereços IP que não mapeiam para um país ou região devem ser incluídos no local nomeado.|
 
 ## <a name="response"></a>Resposta

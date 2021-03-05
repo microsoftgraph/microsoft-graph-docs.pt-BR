@@ -1,24 +1,24 @@
 ---
 title: Listar contratos
-description: Recupere uma lista de objetos Contract associados a um locatário do parceiro.
+description: Recupere uma lista de objetos de contrato associados a um locatário parceiro.
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: eae592ff532291af45d21248b101988b3e1627aa
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: da5c6e1d6e4b3bffc6be502eb901ed4ada1c1a9f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460611"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434717"
 ---
 # <a name="list-contracts"></a>Listar contratos
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos [Contract](../resources/contract.md) associados a um locatário do parceiro.
+Recupere uma lista de [objetos de](../resources/contract.md) contrato associados a um locatário parceiro.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,7 +40,7 @@ GET /contracts
 
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. 
 
-> Há suporte para filtragem para customerId, DefaultDomainName e displayName.
+> A filtragem é suportada para customerId, defaultDomainName e displayName.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Contract](../resources/contract.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [Contract](../resources/contract.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

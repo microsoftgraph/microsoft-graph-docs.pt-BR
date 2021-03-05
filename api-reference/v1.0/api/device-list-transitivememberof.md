@@ -1,24 +1,24 @@
 ---
 title: Listar grupos transitivos de dispositivos
-description: Obter grupos dos quais o dispositivo é membro.
+description: Obter grupos dos que o dispositivo é membro.
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 16b89dd6c67e32b6f172bb2a877b9e9ce731d5cb
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: e6fa162d5c72c33fe0322d11e7549a1f809b3498
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082276"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434542"
 ---
 # <a name="list-device-transitive-groups"></a>Listar grupos transitivos de dispositivos
 
 Namespace: microsoft.graph
 
-Obter grupos dos quais o dispositivo é membro. Essa solicitação de API é transitiva e também retorna todos os grupos dos quais o dispositivo é um membro aninhado.
+Obter grupos dos que o dispositivo é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o dispositivo é membro aninhado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -59,7 +59,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-groups-that-the-device-is-a-transitive-member-of"></a>Exemplo 1: obter grupos dos quais o dispositivo é um membro transitiva
+### <a name="example-1-get-groups-that-the-device-is-a-transitive-member-of"></a>Exemplo 1: Obter grupos de que o dispositivo é um membro transitivo
 
 #### <a name="request"></a>Solicitação
 
@@ -152,7 +152,7 @@ Content-type: text/plain
 
 `294`
 
-### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Exemplo 3: usar a conversão OData e $search para obter a associação de grupo com nomes de exibição que contenham as letras "vídeo" incluindo uma contagem de objetos retornados
+### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Exemplo 3: use o OData cast e $search para obter a associação de grupo com nomes de exibição que contêm as letras "Vídeo", incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
@@ -195,7 +195,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 4: usar a conversão OData e $filter para obter associação com um nome de exibição que comece com ' A ', incluindo uma contagem de objetos retornados
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 4: use o OData cast e $filter para obter associação com um nome de exibição que começa com "A", incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 

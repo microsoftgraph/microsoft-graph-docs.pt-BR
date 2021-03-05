@@ -5,21 +5,21 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f97441b7b258c16ae38c46019cc070810c9ba1ad
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: db7f6282644443d459bba1655ecd01bce1955382
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137051"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434927"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
 Namespace: microsoft.graph
 
-Exclua um anexo de um evento de calendário de usuário, mensagem de email ou postagem de grupo.
-## <a name="permissions"></a>Permissions
+Exclua um anexo de um evento de calendário do usuário, mensagem de email ou postagem de grupo.
+## <a name="permissions"></a>Permissões
 
-Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem**) ao qual o anexo está anexado e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
+Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem**) ao qual o anexo está anexado e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
@@ -43,7 +43,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-Anexos de [um evento](../resources/event.md) no calendário [especificado](../resources/calendar.md) que pertence ao usuário.
+Anexos de [um evento](../resources/event.md) no calendário [especificado](../resources/calendar.md) pertencente ao usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -60,9 +60,6 @@ Anexos de um [event](../resources/event.md) em um [calendar](../resources/calend
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
-
-DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
 Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence a um [calendarGroup](../resources/calendargroup.md) de um usuário.
 <!-- { "blockType": "ignored" } -->

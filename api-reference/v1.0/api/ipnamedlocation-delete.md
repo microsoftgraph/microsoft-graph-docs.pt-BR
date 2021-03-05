@@ -1,22 +1,22 @@
 ---
 title: Excluir ipNamedLocation
-description: Excluir um objeto ipNamedLocation.
+description: Exclua um objeto ipNamedLocation.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d73fac55ac26110ea2dd12b06dbe490798827e78
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e7f3034e2c4134805ed86082a9b696690aa4e5a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972837"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441806"
 ---
 # <a name="delete-ipnamedlocation"></a>Excluir ipNamedLocation
 
 Namespace: microsoft.graph
 
-Excluir um objeto [ipNamedLocation](../resources/ipNamedLocation.md) .
+[Exclua um objeto ipNamedLocation.](../resources/ipNamedLocation.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

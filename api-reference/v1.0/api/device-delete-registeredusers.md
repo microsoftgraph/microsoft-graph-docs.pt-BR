@@ -1,22 +1,22 @@
 ---
 title: Excluir registeredUsers
-description: Remover um usuário como um usuário registrado do dispositivo.
+description: Remova um usuário como um usuário registrado do dispositivo.
 localization_priority: Normal
 author: michaelrm97
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c0c5c7464a7e10e75f6eefda353e46c39aee7bd3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 78f5755e249a6a83f040cb6ad31aaccde8b010f6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070302"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434647"
 ---
 # <a name="delete-registereduser"></a>Excluir registeredUser
 
 Namespace: microsoft.graph
 
-Remover um usuário como um usuário registrado do dispositivo.
+Remova um usuário como um usuário registrado do dispositivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) |Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]

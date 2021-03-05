@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b6a0ded965830ea0b23c7035015fcd82c659b9af
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 9d3fb83f4c5b23b25de4a9d67ab77e63788ace4a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293096"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434941"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -94,11 +94,11 @@ GET /groups/{id}/calendar/events/{id}/attachments/{id}
 Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence ao [calendarGroup](../resources/calendargroup.md) padrão do usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
+GET /me/calendars/{id}/events/{id}/attachments/{id}
+GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
 
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}/$value
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}/$value
+GET /me/calendars/{id}/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}/$value
 ```
 Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence a um [calendarGroup](../resources/calendargroup.md) de um usuário.
 <!-- { "blockType": "ignored" } -->

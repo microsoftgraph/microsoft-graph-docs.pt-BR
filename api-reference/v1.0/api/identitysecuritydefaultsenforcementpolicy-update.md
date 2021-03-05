@@ -1,22 +1,22 @@
 ---
 title: Atualizar identitySecurityDefaultsEnforcementPolicy
-description: Atualiza as propriedades de um objeto identitySecurityDefaultsEnforcementPolicy.
+description: Atualize as propriedades de um objeto identitySecurityDefaultsEnforcementPolicy.
 localization_priority: Normal
 author: rohinigoyal1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 95d18774bbed04a8559c5c607f76233e12c5afd5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac9cf9e456f5a4bb00450ca0a7f90801c64c444b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033395"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441820"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>Atualizar identitySecurityDefaultsEnforcementPolicy
 
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) .
+Atualize as propriedades de [um objeto identitySecurityDefaultsEnforcementPolicy.](../resources/identitysecuritydefaultsenforcementpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Aplicativo                            | Policy.Read.All e Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|isEnabled|Boolean|Se definido como true, os padrões de segurança do Active Directory do Azure são habilitados para o locatário.|
+|isEnabled|Booliano|Se definido como true, os padrões de segurança do Azure Active Directory são habilitados para o locatário.|
 
 ## <a name="response"></a>Resposta
 

@@ -3,29 +3,29 @@ title: Obter dataPolicyOperation
 description: Recupere as propriedades do objeto dataPolicyOperation.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 13b2668d71dbf4bf1e1a708f46594caeacd7b8f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74c53210114525ef04201ffb2eea649c8423dbe6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973384"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434668"
 ---
 # <a name="get-datapolicyoperation"></a>Obter dataPolicyOperation
 
 Namespace: microsoft.graph
 
-Recupere as propriedades de um objeto **dataPolicyOperation** .
+Recupere as propriedades de um **objeto dataPolicyOperation.**
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  User. Export. All, User. Read. All  |
+|Delegado (conta corporativa ou de estudante) |  User.Export.All, User.Read.All  |
 |Delegado (conta pessoal da Microsoft) |  Não aplicável  |
-|Aplicativo | User. Export. All, User. Read. All | 
+|Aplicativo | User.Export.All, User.Read.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /dataPolicyOperations/{id}
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [dataPolicyOperation](../resources/datapolicyoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto dataPolicyOperation](../resources/datapolicyoperation.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
