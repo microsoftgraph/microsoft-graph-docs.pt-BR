@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: cc4bac61d92517e3b6f75133b700b36d84cad2c5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d63fb6e6446cfb1a5b53c79cd81c4d6fefbfd9e7
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432883"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472197"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -599,7 +599,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |_Device.ReadWrite.All_ |Ler e registrar dispositivos |Permite que o aplicativo leia e registre todas as propriedades dos dispositivos sem um usuário conectado. Não permite a criação de dispositivos, exclusão de dispositivos ou atualização de identificadores de segurança de dispositivo alternativo. |Sim |
 
 > [!NOTE]
-> No momento, quando a permissão de aplicativo *Device.ReadWrite.All* é concedida, a função de diretório preterida, [Gerenciadores de Dispositivo](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles), será concedida à entidade de serviço do aplicativo. Essa atribuição de função de diretório não é removida automaticamente quando as permissões de aplicativo associadas são revogadas. Para garantir que o acesso de um aplicativo a leitura ou gravação nos dispositivos seja removido, os clientes também devem remover as funções de diretório que foram concedidas ao aplicativo.
+> Antes de 3 de dezembro de 2020, quando a permissão do aplicativo *Device.Read.All* foi concedido, o [Gestores de Dispositivos](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) a função de diretório também foi atribuída ao principal de serviço do aplicativo.  Essa atribuição de função de diretório não é removida automaticamente quando as permissões de aplicativo associadas são revogadas. Para garantir que o acesso de um aplicativo a leitura ou gravação nos dispositivos seja removido, os clientes também devem remover as funções de diretório que foram concedidas ao aplicativo.
+> 
+> Uma atualização de serviço desativando esse comportamento começou a ser lançada em 3 de dezembro de 2020. Implantação para todos os clientes concluída em 11 de janeiro de 2021. As funções de diretório não são mais atribuídas automaticamente quando as permissões do aplicativo são concedidas.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -637,7 +639,9 @@ As permissões de diretório fornecem o nível mais alto de privilégio para ace
 Elas também controlam exclusivamente o acesso a outros recursos de diretório como: [contatos organizacionais](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true), [APIs de extensão de esquema](/graph/api/resources/schemaextension?view=graph-rest-beta&preserve-view=true), [APIs de PIM (Privileged Identity Management)](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) e muitos dos recursos e APIs listados no nó **Azure Active Directory** na documentação de referência da API beta e v1.0. Isso inclui unidades administrativas, funções de diretório, configurações de diretório, política e muito mais.
 
 > [!NOTE]
-> No momento, quando a permissão de aplicativo *Directory.Read.All* é concedida, a função de diretório [Leitores de Diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-readers-permissions) será concedida à entidade de serviço do aplicativo. Quando *Directory.ReadWrite.All* é concedida, a função de diretório [Gravadores de Diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions) também é concedida. Essas funções de diretório não são removidas automaticamente quando as permissões de aplicativo associadas são revogadas. Para remover o acesso de um aplicativo para ler ou gravar no diretório, os clientes também deve remover as funções de diretório que foram concedidas ao aplicativo.
+> Antes de 3 de dezembro de 2020, quando a permissão do aplicativo *Directory.Read.All* foi concedido, o [Leitores de diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-readers-permissions) a função de diretório também foi atribuída ao principal de serviço do aplicativo.  Quando *Directory.ReadWrite.All* foi concedido, o [Escritores de diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions)a função de diretório também foi atribuída. Essas funções de diretório não são removidas automaticamente quando as permissões de aplicativo associadas são revogadas. Para remover o acesso de um aplicativo para ler ou gravar no diretório, os clientes também deve remover as funções de diretório que foram concedidas ao aplicativo.
+> 
+> Uma atualização de serviço desativando esse comportamento começou a ser lançada em 3 de dezembro de 2020. Implantação para todos os clientes concluída em 11 de janeiro de 2021. As funções de diretório não são mais atribuídas automaticamente quando as permissões do aplicativo são concedidas.
 
 A permissão _Directory.ReadWrite.All_ concede os seguintes privilégios:
 
