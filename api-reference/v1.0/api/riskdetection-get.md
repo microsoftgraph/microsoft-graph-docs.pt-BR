@@ -1,35 +1,35 @@
 ---
 title: Obter riskDetection
-description: Leia as propriedades e os relacionamentos de um objeto riskDetection.
+description: Leia as propriedades e as relações de um objeto riskDetection.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dda9daf89bd320defaed2886281d9fb044bad5b9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ded8ac4a0b55d189e4695b6f458adc78b5faf7b9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025526"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440105"
 ---
-# <a name="get-riskdetection"></a><span data-ttu-id="fd8bc-103">Obter riskDetection</span><span class="sxs-lookup"><span data-stu-id="fd8bc-103">Get riskDetection</span></span>
-<span data-ttu-id="fd8bc-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fd8bc-104">Namespace: microsoft.graph</span></span>
+# <a name="get-riskdetection"></a><span data-ttu-id="880fe-103">Obter riskDetection</span><span class="sxs-lookup"><span data-stu-id="880fe-103">Get riskDetection</span></span>
+<span data-ttu-id="880fe-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="880fe-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="fd8bc-105">Leia as propriedades e os relacionamentos de um objeto [riskDetection](../resources/riskdetection.md) .</span><span class="sxs-lookup"><span data-stu-id="fd8bc-105">Read the properties and relationships of a [riskDetection](../resources/riskdetection.md) object.</span></span>
+<span data-ttu-id="880fe-105">Leia as propriedades e as relações de um [objeto riskDetection.](../resources/riskdetection.md)</span><span class="sxs-lookup"><span data-stu-id="880fe-105">Read the properties and relationships of a [riskDetection](../resources/riskdetection.md) object.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="fd8bc-106">Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de risco.</span><span class="sxs-lookup"><span data-stu-id="fd8bc-106">You must have an Azure AD Premium P1 or P2 license to use the risk detection API.</span></span>
+><span data-ttu-id="880fe-106">Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de riscos.</span><span class="sxs-lookup"><span data-stu-id="880fe-106">You must have an Azure AD Premium P1 or P2 license to use the risk detection API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fd8bc-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="fd8bc-107">Permissions</span></span>
-<span data-ttu-id="fd8bc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="fd8bc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="880fe-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="880fe-107">Permissions</span></span>
+<span data-ttu-id="880fe-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="880fe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
 
-|<span data-ttu-id="fd8bc-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fd8bc-110">Permission type</span></span>      | <span data-ttu-id="fd8bc-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fd8bc-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="880fe-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="880fe-110">Permission type</span></span>      | <span data-ttu-id="880fe-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="880fe-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fd8bc-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fd8bc-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fd8bc-113">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="fd8bc-113">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="fd8bc-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fd8bc-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fd8bc-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fd8bc-115">Not supported.</span></span>    |
-|<span data-ttu-id="fd8bc-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fd8bc-116">Application</span></span> | <span data-ttu-id="fd8bc-117">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="fd8bc-117">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="880fe-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="880fe-112">Delegated (work or school account)</span></span> | <span data-ttu-id="880fe-113">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="880fe-113">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="880fe-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="880fe-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="880fe-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="880fe-115">Not supported.</span></span>    |
+|<span data-ttu-id="880fe-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="880fe-116">Application</span></span> | <span data-ttu-id="880fe-117">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="880fe-117">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fd8bc-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fd8bc-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="880fe-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="880fe-118">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,24 +39,24 @@ ms.locfileid: "48025526"
 GET /identityProtection/riskDetections/{riskDetectionId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="fd8bc-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="fd8bc-119">Optional query parameters</span></span>
-<span data-ttu-id="fd8bc-120">Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="fd8bc-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="fd8bc-121">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="fd8bc-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="880fe-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="880fe-119">Optional query parameters</span></span>
+<span data-ttu-id="880fe-120">Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="880fe-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="880fe-121">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="880fe-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="fd8bc-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fd8bc-122">Request headers</span></span>
-|<span data-ttu-id="fd8bc-123">Nome</span><span class="sxs-lookup"><span data-stu-id="fd8bc-123">Name</span></span>|<span data-ttu-id="fd8bc-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="fd8bc-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="880fe-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="880fe-122">Request headers</span></span>
+|<span data-ttu-id="880fe-123">Nome</span><span class="sxs-lookup"><span data-stu-id="880fe-123">Name</span></span>|<span data-ttu-id="880fe-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="880fe-124">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="fd8bc-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="fd8bc-125">Authorization</span></span>|<span data-ttu-id="fd8bc-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fd8bc-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="880fe-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="880fe-125">Authorization</span></span>|<span data-ttu-id="880fe-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="880fe-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fd8bc-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fd8bc-128">Request body</span></span>
-<span data-ttu-id="fd8bc-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="fd8bc-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="880fe-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="880fe-128">Request body</span></span>
+<span data-ttu-id="880fe-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="880fe-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fd8bc-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="fd8bc-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="880fe-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="880fe-130">Response</span></span>
 
-<span data-ttu-id="fd8bc-131">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [riskDetection](../resources/riskdetection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fd8bc-131">If successful, this method returns a `200 OK` response code and a [riskDetection](../resources/riskdetection.md) object in the response body.</span></span>
+<span data-ttu-id="880fe-131">Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [riskDetection](../resources/riskdetection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="880fe-131">If successful, this method returns a `200 OK` response code and a [riskDetection](../resources/riskdetection.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="fd8bc-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="fd8bc-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="880fe-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="880fe-132">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="fd8bc-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fd8bc-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="880fe-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="880fe-133">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_riskdetection"
@@ -67,8 +67,8 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections/c2b6c2b9-
 ```
 
 
-### <a name="response"></a><span data-ttu-id="fd8bc-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="fd8bc-134">Response</span></span>
-<span data-ttu-id="fd8bc-135">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="fd8bc-135">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="880fe-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="880fe-134">Response</span></span>
+<span data-ttu-id="880fe-135">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="880fe-135">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
