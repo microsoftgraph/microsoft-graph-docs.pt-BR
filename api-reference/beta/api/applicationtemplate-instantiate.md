@@ -1,24 +1,24 @@
 ---
-title: 'applicationTemplate: instantiate'
-description: Use esta API para criar um novo applicationTemplate
+title: 'applicationTemplate: instaurá-lo'
+description: Use essa API para criar um novo applicationTemplate
 localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 22ac7a5cb179f5675e6222d6886b54211e4d1f93
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bc94c8abe1de8d45324fc6ad65e44e7c1329c3f5
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128938"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471527"
 ---
-# <a name="applicationtemplate-instantiate"></a>applicationTemplate: instantiate
+# <a name="applicationtemplate-instantiate"></a>applicationTemplate: instaurá-lo
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione uma instância de um aplicativo da galeria de aplicativos do Azure AD ao seu diretório.
+Adicione uma instância de um aplicativo da galeria de aplicativos do Azure AD ao diretório.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Application.ReadWrite.All, Directory.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Application.ReadWrite.All, Directory.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | Application.ReadWrite.All, Directory.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,11 +50,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome personalizado do aplicativo|
+|displayName|Cadeia de caracteres|Nome personalizado do aplicativo|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `201 OK` novo [objeto applicationServicePrincipal](../resources/applicationserviceprincipal.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 OK` novo [objeto applicationServicePrincipal](../resources/applicationserviceprincipal.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -63,9 +63,8 @@ O exemplo a seguir mostra como chamar essa API.
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
-
-> [!NOTE] 
-> Você pode usar essa API para inciar aplicativos [que não são da galeria.](/azure/active-directory/manage-apps/add-non-gallery-app) Use a seguinte ID para **applicationTemplate:** `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
+ 
+> Você pode usar essa API para insinuar [aplicativos que não são da galeria.](/azure/active-directory/manage-apps/add-non-gallery-app) Use a ID a seguir para **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -104,8 +103,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> [!NOTE]
-> O objeto response mostrado aqui pode ser encurtado para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
 <!-- {
   "blockType": "response",

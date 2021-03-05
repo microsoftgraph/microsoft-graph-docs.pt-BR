@@ -1,5 +1,5 @@
 ---
-title: Trabalhar com a API do Dynamics 365 Business central no Microsoft Graph
+title: Trabalhando com a API Central de Negócios do Dynamics 365 no Microsoft Graph
 description: Documentação da API para integração com o Microsoft Graph
 services: project-madeira
 documentationcenter: ''
@@ -7,33 +7,33 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: conceptualPageType
-ms.openlocfilehash: cb4cc183df82ebd743aa424592ff6c1c36e062e3
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b1fdc91d884c4c0869b97f2068d005407158d6a5
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402552"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473565"
 ---
-# <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>Trabalhar com a API do Dynamics 365 Business central no Microsoft Graph
+# <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>Trabalhando com a API Central de Negócios do Dynamics 365 no Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode usar o Microsoft Graph para conectar e integrar seu serviço Web ou solução SaaS com o Microsoft Dynamics 365 Business central. Com o Microsoft Graph, você pode criar aplicativos que obtêm acesso autorizado e se integram perfeitamente com os dados do Microsoft Dynamics 365 Business central.
+Você pode usar o Microsoft Graph para conectar e integrar seu serviço Web ou solução SaaS com o Microsoft Dynamics 365 Business Central. Com o Microsoft Graph, você pode criar aplicativos que tenham acesso autorizado e se integrem perfeitamente aos dados do Microsoft Dynamics 365 Business Central.
 
 ## <a name="authorization"></a>Autorização
-Use o ponto de extremidade do Azure AD v 2.0 para autenticar as APIs do Dynamics 365 Business central. Todas as APIs exigem o `Authorization: Bearer {access-token}` cabeçalho da solicitação. Para obter mais informações sobre autorização, consulte [obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/).
+Use o ponto de extremidade do Azure AD v2.0 para autenticar as APIs da Central de Negócios do Dynamics 365. Todas as APIs exigem `Authorization: Bearer {access-token}` o header de solicitação. Para obter mais informações sobre autorização, consulte [Obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/).
 
-## <a name="common-dynamics-365-business-central-scenarios"></a>Cenários do Common Business central do Dynamics 365
-A API do Dynamics 365 Business central permite que você leia e modifique dados corporativos por meio de aplicativos conectados e integrados por meio de um único ponto de extremidade. Use a API para, por exemplo, obter acesso a informações de [cliente](../resources/dynamics-customer.md) e de [fornecedor](../resources/dynamics-vendor.md) ou [Exibir pagamentos vencidos](../resources/dynamics-agedaccountspayable.md).
+## <a name="common-dynamics-365-business-central-scenarios"></a>Cenários comuns do Dynamics 365 Business Central
+A API Central de Negócios do Dynamics 365 permite que você leia e modifique dados de negócios por meio de aplicativos conectados e integrados por meio de um único ponto de extremidade. Use a API para, por exemplo, obter acesso às informações do [cliente](../resources/dynamics-customer.md) e [do](../resources/dynamics-vendor.md) fornecedor ou exibir pagamentos [atrasados.](../resources/dynamics-agedaccountspayable.md)
 
-## <a name="whats-new"></a>O que há de novo
+## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 ## <a name="next-steps"></a>Próximas etapas
-A API do Dynamics 365 Business central pode abrir novas maneiras de contato com os usuários. Para saber mais, consulte o seguinte:
+A API Central de Negócios do Dynamics 365 pode abrir novas maneiras de você se envolver com os usuários. Para saber mais, consulte o seguinte:
 
-+ [Visão geral do Dynamics 365 Business central](/graph/dynamics-business-central-concept-overview)
-+ Experimente o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
++ [Visão geral central do Dynamics 365 Business](/graph/dynamics-business-central-concept-overview)
++ Experimente [o Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 <!--
 |For Resource Type |See                                                 |
@@ -65,7 +65,6 @@ A API do Dynamics 365 Business central pode abrir novas maneiras de contato com 
 |shipmentMethods resource type|[shipmentMethods](../resources/dynamics-shipmentmethods.md)|
 |taxGroups resource type|[taxGroups](../resources/dynamics-taxgroups.md)|
 |taxArea resource type|[taxAreas](..resources/dynamics-taxarea.md)|
-|trial balance resource type|[trialBalance](../resources/dynamics-trialbalance.md)|
 |unitsOfMeasure resource type|[unitsOfMeasure](../resources/dynamics-unitsofmeasure.md)|
 |vendor resource type|[vendor](../resources/dynamics-vendor.md)|
 -->

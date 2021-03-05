@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: aad0c41f54c62fff3448c5684b21af5bac2711e5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 13bc5308f12ce83e03177f79df1264cca9b35bf1
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438698"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471572"
 ---
 # <a name="list-agreements"></a>Listar contratos
 
@@ -24,14 +24,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Agreement.Read.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | Agreement.Read.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /agreements
+GET /identityGovernance/termsOfUse/agreements
 ```
 <!--
 ## Optional query parameters
@@ -50,31 +50,13 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agreements"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/agreements
+GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-agreements-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-agreements-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-agreements-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-agreements-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### <a name="response"></a>Resposta
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.

@@ -1,16 +1,16 @@
 ---
 title: Criar outlookTaskFolder
-description: Criar uma pasta de tarefas do Outlook em um outlookTaskGroup especificado.
+description: Crie uma pasta de tarefas do Outlook em um outlookTaskGroup especificado.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 80edcfc4af9e79b2c38fdf0b82084e3d450ee4f5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 285178adb4f0df591e1d1270d60b572f346d57e1
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081934"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472892"
 ---
 # <a name="create-outlooktaskfolder-deprecated"></a>Criar outlookTaskFolder (preterido)
 
@@ -21,14 +21,14 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Criar uma pasta de tarefas do Outlook em um [outlookTaskGroup](../resources/outlooktaskgroup.md)especificado.
+Criar uma pasta de tarefas do Outlook em um [outlookTaskGroup especificado.](../resources/outlooktaskgroup.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Tasks.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -43,23 +43,22 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto outlookTaskFolder.](../resources/outlooktaskfolder.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o `201 Created` [objeto outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir cria uma pasta de tarefas chamada `Cooking` no grupo de tarefas especificado.
+O exemplo a seguir cria uma pasta de tarefas `Cooking` chamada no grupo de tarefas especificado.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskfolder_from_outlooktaskgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/taskgroups/AAMkADIyAAAhrbe-AAA'/taskfolders
+POST https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=/taskfolders
 Content-type: application/json
 Content-length: 131
 
@@ -67,13 +66,8 @@ Content-length: 131
   "name": "Cooking"
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-outlooktaskfolder-from-outlooktaskgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
-
-No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto outlookTaskFolder.](../resources/outlooktaskfolder.md)
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

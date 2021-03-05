@@ -1,18 +1,18 @@
 ---
 title: Criar moedas
-description: Cria um objeto Currency no Dynamics 365 Business central.
+description: Cria um objeto currency no Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: eb78fef62cb2d17e622c11cbd575905b60656f79
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a0b374c85cded81b4547c576537f79036fa8427f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981727"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473403"
 ---
 # <a name="create-currencies"></a>Criar moedas
 
@@ -20,19 +20,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um objeto Currency no Dynamics 365 Business central.
+Crie um objeto currency no Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
-```
+```http
 POST /financials/companies/{id}/currencies
 ```
 
@@ -46,18 +46,18 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 |Content-Type   |application/json         |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto **moedas** .
+No corpo da solicitação, fornece uma representação JSON do **objeto currencies.**
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna ```201 Created``` o código de resposta e um objeto de **moedas** no corpo da resposta.
+Se tiver êxito, este método retornará ```201 Created``` o código de resposta e um objeto de **moedas** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 **Solicitação**
 
-Veja a seguir um exemplo de uma solicitação.
+Aqui está um exemplo de uma solicitação.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/currencies
 Content-type: application/json
 
@@ -70,13 +70,13 @@ Content-type: application/json
 }
 ```
 
-**Resposta**
+**Response**
 
 Veja a seguir um exemplo da resposta. 
 
 > **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

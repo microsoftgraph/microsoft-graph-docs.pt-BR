@@ -5,12 +5,12 @@ description: Você pode usar a API de Pesquisa da Microsoft para importar dados 
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: a7e6a537e53a89f91f18b074940840ce4fd48db1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c4e0b158356d3f26d8a0f36a7d7e86faeba96649
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432687"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471835"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Use a API de Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores do Microsoft Graph (visualização) 
 
@@ -110,7 +110,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
                   "businessEntityID": 20704,
-                  "shortdescription": "Contoso maintenance guidelines",
+                  "shortDescription": "Contoso maintenance guidelines",
                   "firstName": "Amy",
                   "lastName": "Yang"
                 }

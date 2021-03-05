@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 933e23431e0c6655ad09c16a5c2cb3bc3fcb443d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4af7f5da0af494ee56128a0fe2bbeb6126c72738
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135174"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473518"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
@@ -92,7 +92,7 @@ Se for bem-sucedido, este método retornará um código de resposta `200 OK` e u
 - Objeto [mailboxSettings](../resources/mailboxsettings.md)
 - Objeto [automaticRepliesSetting](../resources/automaticrepliessetting.md)
 - cadeia de caracteres (para **dateFormat**)
-- cadeia de **caracteres (para delegateMeetingMessageDeliveryOptions**)
+- string (para **delegateMeetingMessageDeliveryOptions**)
 - Objeto [localeInfo](../resources/localeinfo.md)
 - cadeia de caracteres (para **timeFormat**)
 - cadeia de caracteres (para **timeZone**)
@@ -228,18 +228,38 @@ Content-type: application/json
 ### <a name="example-3"></a>Exemplo 3
 #### <a name="request"></a>Solicitação
 O terceiro exemplo obtém especificamente as configurações de horário de trabalho da caixa de correio do usuário conectado.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_mailboxsettings_3"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Resposta
 A resposta inclui apenas as configurações de horário de trabalho. As horas de trabalho do usuário estão em um [fuso horário personalizado](../resources/customtimezone.md).
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "name": "get_mailboxsettings_3",
   "truncated": true,
   "@odata.type": "microsoft.graph.workingHours"

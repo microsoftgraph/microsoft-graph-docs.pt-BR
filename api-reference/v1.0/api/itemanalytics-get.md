@@ -1,24 +1,24 @@
 ---
 author: daspek
 title: Obter itemAnalytics
-description: Obter itemAnalytics sobre as exibições que ocorreram sob esse recurso.
+description: Obter itemAnalytics sobre os exibições que ocorreram sob esse recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2307df47b5c914a1b9257e30d39c3fe2b539bf32
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 25965acd48ca69b68f0715d9e075a5e71d5d1529
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238824"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471681"
 ---
 # <a name="get-itemanalytics"></a>Obter itemAnalytics
 
 Namespace: microsoft.graph
 
-Obter [itemAnalytics][] sobre as exibições que ocorreram sob esse recurso.
-O **recurso itemAnalytics** é uma maneira conveniente de obter estatísticas de atividade para `allTime` e o `lastSevenDays` .
-Para um intervalo de tempo ou intervalo personalizado, use a API [getActivitiesByInterval.][]
+Obter [itemAnalytics][] sobre os exibições que ocorreram sob esse recurso.
+O **recurso itemAnalytics** é uma maneira conveniente de obter estatísticas de atividade para `allTime` e para o `lastSevenDays` .
+Para um intervalo ou intervalo de tempo personalizado, use a API [getActivitiesByInterval.][]
 
 >**Observação:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais.](/graph/deployments)
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta 
 
-Se bem-sucedido, este método retorna um código de resposta e uma coleção `200 OK` de [objetos itemAnalytics][] no corpo da resposta. 
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objeto itemAnalytics][] no corpo da resposta. 
 
 ## <a name="example"></a>Exemplo
 
@@ -95,7 +95,7 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso timeConstraint
-description: Restringe as sugestões de horário de reunião a determinadas horas e dias da semana de acordo com a natureza especificada da atividade e os intervalos de tempo abertos.
+description: Restringe sugestões de hora de reunião a determinados horários e dias da semana de acordo com a natureza especificada da atividade e os intervalos de tempo de abertura.
 localization_priority: Normal
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4215b4350236956bfcad3bdf6f787b7f6c77f5dd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d79fc1630522c30abea6ac5ec6f51d0f5a15e437
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075515"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472101"
 ---
 # <a name="timeconstraint-resource-type"></a>Tipo de recurso timeConstraint
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restringe as sugestões de horário de reunião a determinadas horas e dias da semana de acordo com a natureza especificada da atividade e os intervalos de tempo abertos.
+Restringe sugestões de hora de reunião a determinados horários e dias da semana de acordo com a natureza especificada da atividade e os intervalos de tempo de abertura.
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -42,7 +42,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|activityDomain|activityDomain|A natureza da atividade, opcional. Os valores possíveis são: `work` , `personal` , `unrestricted` , ou `unknown` .|
+|activityDomain|activityDomain|A natureza da atividade, opcional. Os valores possíveis são: `work` `personal` , , ou `unrestricted` `unknown` .|
 |intervalos de tempo|Coleção [timeSlot](timeslot.md)|Uma matriz de períodos de tempo.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

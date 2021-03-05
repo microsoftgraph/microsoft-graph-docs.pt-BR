@@ -1,18 +1,18 @@
 ---
 title: Criar outlookTask
-description: Criar uma tarefa do Outlook na pasta de tarefas especificada.
+description: Crie uma tarefa do Outlook na pasta de tarefas especificada.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dceaffdbf5cea3166b20b98dca06c71fc456bb98
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7278347dce74138b6eb38281f32dc7b968a9aacb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979746"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472451"
 ---
-# <a name="create-outlooktask-deprecated"></a>Criar outlookTask (preterido)
+# <a name="create-outlooktask-deprecated"></a>Criar outlookTask(obsoleto)
 
 Namespace: microsoft.graph
 
@@ -21,17 +21,17 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Criar uma tarefa do Outlook na pasta de tarefas especificada.
+Crie uma tarefa do Outlook na pasta de tarefas especificada.
 
-O método POST sempre ignora a parte de hora de **StartDateTime** e **dueDateTime** no corpo da solicitação e pressupõe que o tempo seja sempre meia-noite no fuso horário especificado.
+O método POST sempre ignora a parte de tempo de **startDateTime** e **dueDateTime** no corpo da solicitação e assume o tempo para ser sempre meia-noite no fuso horário especificado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Tasks.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,14 +46,14 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de hora na resposta, que seria no UTC se esse cabeçalho não for especificado. Opcional.|
+| Prefira: outlook.timezone | Especifica o fuso horário para propriedades de tempo na resposta, que estaria em UTC se esse header não for especificado. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [outlookTask](../resources/outlooktask.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto outlookTask.](../resources/outlooktask.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -63,7 +63,7 @@ Este é um exemplo da solicitação.
   "name": "create_outlooktask_from_outlooktaskfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
+POST https://graph.microsoft.com/beta/me/outlook/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
 Content-type: application/json
 Content-length: 376
 
@@ -79,11 +79,11 @@ Content-length: 376
   }
 }
 ```
-No corpo da solicitação, forneça uma representação JSON do objeto [outlookTask](../resources/outlooktask.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto outlookTask.](../resources/outlooktask.md)
 ##### <a name="response"></a>Resposta
 O método POST ignora a parte da hora no corpo da solicitação e assume que a hora seja sempre meia-noite no fuso horário especificado (PST). Em seguida, por padrão, o método POST converte e mostra todas as propriedades relacionadas à data em UTC na resposta.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

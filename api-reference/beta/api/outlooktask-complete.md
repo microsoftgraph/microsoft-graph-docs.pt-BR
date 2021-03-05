@@ -1,18 +1,18 @@
 ---
-title: 'outlookTask: concluir'
-description: 'Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** para a data atual, '
+title: 'outlookTask: concluído'
+description: 'Conclua uma tarefa do Outlook que define a **propriedade completedDateTime** como a data atual, '
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba271ddb112769187a4944dbee0df324fe8ea1f5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edf7f24efc2a3c208a1aed4c4a03e41ad596c4c4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017406"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471842"
 ---
-# <a name="outlooktask-complete-deprecated"></a>outlookTask: concluído (preterido)
+# <a name="outlooktask-complete-deprecated"></a>outlookTask: completo (preterido)
 
 Namespace: microsoft.graph
 
@@ -21,13 +21,13 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** como a data atual e a propriedade **status** como `completed` .
+Conclua uma tarefa do Outlook que define a **propriedade completedDateTime** como a data atual e a **propriedade status** como `completed` .
 
-Se você estiver realizando uma tarefa em uma série recorrente, na resposta, a coleção de tarefas conterá a tarefa concluída na série e a próxima tarefa na série.
+Se você estiver concluindo uma tarefa em uma série recorrente, na resposta, a coleção de tarefas conterá a tarefa concluída na série e a próxima tarefa na série.
 
-A propriedade **completedDateTime** representa a data em que a tarefa foi concluída. A parte de hora de **completedDateTime** é definida como meia-noite UTC por padrão.
+A **propriedade completedDateTime** representa a data em que a tarefa é concluída. A parte de tempo **de completedDateTime** é definida como UTC meia-noite por padrão.
 
-Por padrão, essa operação (e as operações de tarefa POST, GET e PATCH) retorna as propriedades relacionadas à data no UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
+Por padrão, essa operação (e as operações de tarefa POST, GET e PATCH) retorna propriedades relacionadas à data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
 ## <a name="permissions"></a>Permissões
 
@@ -35,8 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Tasks.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de hora na resposta, que seria no UTC se esse cabeçalho não for especificado. Opcional.|
+| Prefira: outlook.timezone | Especifica o fuso horário para propriedades de tempo na resposta, que estaria em UTC se esse header não for especificado. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -61,11 +61,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir marca a tarefa especificada como concluída. Ele especifica o horário padrão do Pacífico (PST) no `Prefer: outlook.timezone` cabeçalho.
+O exemplo a seguir marca a tarefa especificada como concluída. Especifica o Horário Padrão do Pacífico (PST) no `Prefer: outlook.timezone` header.
 
 ### <a name="request"></a>Solicitação
 
@@ -76,13 +76,13 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/tasks('AAMkADA1MT15rfAAA=')/complete
+POST https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MT15rfAAA=')/complete
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. A **completedDateTime** e outras propriedades relacionadas à data na resposta são expressas em PST.
+Veja a seguir um exemplo da resposta. As **propriedades completedDateTime** e outras relacionadas à data na resposta são expressas em PST.
 
 > **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

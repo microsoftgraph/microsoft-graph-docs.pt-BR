@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: f8535c9553bfc6bdcf353b9341237e5d7ba27b7a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 80c643d4d1c75c27df35a85a576f93838dd03554
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041593"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472339"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -20,10 +20,6 @@ Namespace: microsoft.graph
 
 - [Estado da ação](intune-devices-actionstate.md)
 - [Certificado de notificação por push da Apple](intune-devices-applepushnotificationcertificate.md)
-- [Ator de auditoria](intune-auditing-auditactor.md)
-- [Evento de auditoria](intune-auditing-auditevent.md)
-- [Propriedade de auditoria](intune-auditing-auditproperty.md)
-- [Recurso de auditoria](intune-auditing-auditresource.md)
 - [Estado de conformidade](intune-devices-compliancestate.md)
 - [Recursos habilitados pelo cliente do Gerenciador de Configurações](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [Resultado da ação de excluir o usuário do dispositivo compartilhado da Apple](intune-devices-deleteuserfromsharedappledeviceactionresult.md)

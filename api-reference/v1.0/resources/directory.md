@@ -3,14 +3,14 @@ title: Tipo de recurso directory (itens excluídos)
 description: . Itens excluídos permanecerão disponíveis para restauração por até 30 dias. Após 30 dias, esses itens serão excluídos permanentemente.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 45ec089f181ea90238423cfedea76e5b7b2f8609
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c46e671f707a8e31c172e4a078647cd7d103d48
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984527"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472731"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 Representa um item excluído no diretório. Quando um item é excluído, ele é adicionado ao "contêiner" de itens excluídos. Itens excluídos permanecerão disponíveis para restauração por até 30 dias. Após 30 dias, esses itens serão excluídos permanentemente.
 
-Atualmente, a funcionalidade de itens excluídos só é suportada para o [aplicativo](application.md), [grupo](group.md) e recursos do [usuário](user.md) .
+Atualmente, a funcionalidade de itens excluídos só tem suporte para os recursos [de](application.md)aplicativo, [grupo](group.md) [e](user.md) usuário.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método         | Tipo de retorno | Descrição |
 |:---------------|:------------|:------------|
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/directory
 ```
 
 <!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.directory"}-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

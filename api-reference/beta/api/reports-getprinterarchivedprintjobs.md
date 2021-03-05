@@ -1,29 +1,29 @@
 ---
-title: 'relatórios: getPrinterArchivedPrintJobs'
-description: Obtenha uma lista de trabalhos de impressão arquivados que foram enfileirados para determinada impressora.
+title: 'reports: getPrinterArchivedPrintJobs'
+description: Obter uma lista de trabalhos de impressão arquivados que foram enluados para uma impressora específica.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a06f20d8de1fc6f1be72e382beaf01158529f260
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: daf0acf2ab9bc285d05aae9f3b875ffc6f329b03
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848237"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472399"
 ---
-# <a name="reports-getprinterarchivedprintjobs"></a>relatórios: getPrinterArchivedPrintJobs
+# <a name="reports-getprinterarchivedprintjobs"></a>reports: getPrinterArchivedPrintJobs
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de trabalhos de impressão arquivados que foram enfileirados para determinada [impressora](../resources/printer.md).
+Obter uma lista de trabalhos de impressão arquivados que foram enluados para uma impressora [específica.](../resources/printer.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura de Impressão Universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -34,8 +34,8 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/reports/getPrinterArchivedPrintJobs
-GET /reports/getPrinterArchivedPrintJobs
+GET /print/reports/getPrinterArchivedPrintJobs(printerId=printerId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET /reports/getPrinterArchivedPrintJobs(printerId=printerId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
@@ -46,12 +46,12 @@ GET /reports/getPrinterArchivedPrintJobs
 
 | Parâmetro     | Tipo                 | Obrigatório? | Descrição                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `printerId`   | `Edm.String`         | Sim       | A ID da impressora para a qual retornar os dados.                            |
-| `periodStart` | `Edm.DateTimeOffset` | Não        | A data de início (inclusive) para o período de tempo para incluir dados. |
-| `periodEnd`   | `Edm.DateTimeOffset` | Não        | A data de término (inclusive) para o período de tempo para incluir dados.   |
+| `printerId`   | `Edm.String`         | Sim       | A ID da impressora para a que retornar dados.                            |
+| `startDateTime` | `Edm.DateTimeOffset` | Não        | A data de início (inclusive) do período de tempo a ser incluído. |
+| `endDateTime`   | `Edm.DateTimeOffset` | Não        | A data de término (inclusive) do período de tempo a ser incluído.   |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [archivedPrintJob](../resources/archivedprintjob.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [archivedPrintJob](../resources/archivedprintjob.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -62,7 +62,7 @@ Este é um exemplo de solicitação.
   "name": "reports-getprinterarchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',periodStart=<timestamp>,periodEnd=<timestamp>)
+GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ##### <a name="response"></a>Resposta

@@ -1,38 +1,38 @@
 ---
 title: Obter empresas
-description: Obtém um objeto Company no Dynamics 365 Business central.
+description: Obtém um objeto da empresa no Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cbf7abae89c7cc7c212920807b190b2072ef815d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1c663f86e696d6fd26a9294ca8e0afa0ca3dda8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008453"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473414"
 ---
 # <a name="get-companies"></a>Obter empresas
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto de empresas para o Dynamics 365 Business central.
+Recupere as propriedades e as relações de um objeto de empresa para o Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
-```
+```http
 GET /financials/companies
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -47,18 +47,18 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto de **empresas** no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto **companies** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 **Solicitação**
 
 Este é um exemplo da solicitação.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies
 ```
 
-**Resposta**
+**Response**
 
 Veja a seguir um exemplo da resposta. 
 

@@ -1,37 +1,37 @@
 ---
 title: Excluir teamsApp
-description: 'Excluir um aplicativo do teams do catálogo de aplicativos de uma organização (o catálogo de aplicativos do locatário). '
+description: 'Exclua um aplicativo do Teams do catálogo de aplicativos de uma organização (o catálogo de aplicativos de locatário). '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 53f18e0bfcdde3280629bf5ca6b6217119739d3c
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: bbaf69d70a73626a550356e0ca235d693be7f3a6
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49606794"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471660"
 ---
 # <a name="delete-teamsapp"></a>Excluir teamsApp
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 <!-- markdownlint-disable MD001 -->
 ### <a name="delete-an-app-from-your-organizations-app-catalog"></a>Excluir um aplicativo do catálogo de aplicativos da sua organização
 
-Excluir um [aplicativo](../resources/teamsapp.md) do catálogo de aplicativos de uma organização (o catálogo de aplicativos do locatário). Para excluir um aplicativo, a propriedade **distributionMethod** para o aplicativo deve ser definida como `organization` .
+[Exclua um aplicativo](../resources/teamsapp.md) do catálogo de aplicativos de uma organização (o catálogo de aplicativos do locatário). Para excluir um aplicativo, a **propriedade distributionMethod** para o aplicativo deve ser definida como `organization` .
 
 Você também pode usar essa API para remover um aplicativo enviado do processo de revisão.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
->**Observação:** Somente os administradores globais podem chamar esta API.
+>**Observação:** Somente administradores globais podem chamar essa API.
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
 |:----------------------------------     |:-------------|
-| Delegada (conta corporativa ou de estudante) | AppCatalog. Submit, AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
 | Aplicativo                            | Sem suporte. |
 
@@ -44,7 +44,7 @@ Para excluir um aplicativo do catálogo de aplicativos:
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-Para excluir um aplicativo que foi enviado, mas que não foi aprovado:
+Para excluir um aplicativo que foi enviado, mas não foi aprovado:
 
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
@@ -60,7 +60,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 Não forneça um corpo de solicitação para esse método.
 
->**Observação:** Use a ID retornada da chamada [lista de aplicativos publicados](./appcatalogs-list-teamsapps.md) para fazer referência ao aplicativo que você deseja atualizar. Não use a ID do manifesto do pacote de aplicativos zip.
+>**Observação:** Use a ID retornada da chamada Lista [de](./appcatalogs-list-teamsapps.md) aplicativos publicados para fazer referência ao aplicativo que você gostaria de excluir. Não use a ID do manifesto do pacote do aplicativo zip.
 
 ## <a name="response"></a>Resposta
 

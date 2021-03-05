@@ -1,18 +1,18 @@
 ---
 title: Criar journalLines
-description: Cria uma linha de diário no Dynamics 365 Business central.
+description: Cria uma linha de diário no Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cb188423bbbdcc90a71442f6a0e80ba70dcbc42d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38feb577f11f482fe00c5d44d883e1b0995ff562
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981659"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473263"
 ---
 # <a name="create-journallines"></a>Criar journalLines
 
@@ -20,20 +20,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cria um objeto de linha de diário no Dynamics 365 Business central.
+Cria um objeto de linha de diário no Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-```
+```http
 POST /financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
@@ -47,18 +47,18 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 |Content-Type  |application/json         |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto **journalLines** .
+No corpo da solicitação, fornece uma representação JSON do **objeto journalLines.**
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o ```201 Created``` código de resposta e o objeto **journalLines** no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o ```201 Created``` **objeto journalLines** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 **Solicitação**
 
-Veja a seguir um exemplo de uma solicitação.
+Aqui está um exemplo de uma solicitação.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines
 Content-type: application/json
 
@@ -74,9 +74,9 @@ Content-type: application/json
   "comment": ""
 }
 ```
-**Resposta**
+**Response**
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

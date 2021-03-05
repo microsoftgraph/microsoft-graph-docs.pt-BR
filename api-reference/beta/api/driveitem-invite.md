@@ -6,12 +6,12 @@ title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b7103ec9b99115d69148240a405b62e99ec96141
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 00252b35b786d467848ed417d9a80dab2b165bc7
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963673"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473445"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
@@ -69,8 +69,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | requireSignIn    | Booleano                                         | Especifica onde o destinatário do convite precisa entrar para exibir o item compartilhado.            |
 | sendInvitation   | Booliano                                         | Especifica se um email ou uma postagem é gerado (false) ou se a permissão é recém-criada (true).            |
 | funções            | Collection(String)                              | Especifique as funções que são concedidas aos destinatários do convite de compartilhamento.                         |
-| expirationDateTime | DateTimeOffset                       | Especifique o DateTime após o qual a permissão expira. Disponível em contas pessoais do OneDrive para o OneDrive for Business, SharePoint e Premium.
-| password           | String                         | A senha definida no convite pelo criador. Opcional e o OneDrive somente pessoal
+| expirationDateTime | DateTimeOffset                       | Especifique o DateTime após o qual a permissão expira. Disponível em contas pessoais do OneDrive for Business, SharePoint e premium do OneDrive.
+| password           | String                         | A senha definida no convite pelo criador. Opcional e Somente OneDrive Personal
 
 ## <a name="example"></a>Exemplo
 
@@ -128,7 +128,7 @@ Veja a seguir um exemplo da resposta.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -153,17 +153,17 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="partial-success-response"></a>Resposta parcial com êxito
+### <a name="partial-success-response"></a>Resposta de sucesso parcial
 
-Ao convidar vários destinatários, é possível que a notificação tenha êxito em alguns e falha para outras pessoas.
-Nesse caso, o serviço retorna uma resposta de êxito parcial com um código de status HTTP 207.
-Quando o sucesso parcial for retornado, a resposta para cada destinatário com falha conterá um `error` objeto com informações sobre o que deu errado e como corrigi-lo.
+Ao convidar vários destinatários, é possível que a notificação tenha êxito para alguns e falhe para outros.
+Nesse caso, o serviço retorna uma resposta parcial de sucesso com um código de status HTTP de 207.
+Quando o sucesso parcial é retornado, a resposta para cada destinatário com falha conterá um objeto com informações sobre o que deu errado e `error` como corrigi-lo.
 
-Veja um exemplo da resposta parcial.  
+Aqui está um exemplo da resposta parcial.  
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
 
@@ -210,25 +210,25 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="sendnotification-errors"></a>Erros do SendNotification
-A seguir estão alguns erros adicionais que seu aplicativo pode encontrar nos objetos aninhados `innererror` ao enviar uma notificação falha. Os aplicativos não são necessários para lidar com eles.
+### <a name="sendnotification-errors"></a>Erros de SendNotification
+A seguir estão alguns erros adicionais que seu aplicativo pode encontrar dentro dos objetos `innererror` aninhados ao enviar a notificação falhar. Os aplicativos não são necessários para lidar com eles.
 
 | Código                           | Descrição
 |:-------------------------------|:--------------------------------------------------------------------------------------
 | accountVerificationRequired    | A verificação da conta é necessária para desbloquear o envio de notificações.
-| hipCheckRequired               | É necessário resolver a verificação HIP (Host Intrusion Prevention) para desbloquear o envio de notificações.
+| hipCheckRequired               | Precisa resolver a verificação HIP (Prevenção contra Intrusão de Host) para desbloquear o envio de notificações.
 | exchangeInvalidUser            | A caixa de correio do usuário atual não foi encontrada.
 | exchangeOutOfMailboxQuota      | Fora da cota.
-| exchangeMaxRecipients          | Foi excedido o número máximo de destinatários que podem receber notificações ao mesmo tempo.
+| exchangeMaxRecipients          | Número máximo excedido de destinatários que podem ser enviados notificações ao mesmo tempo.
 
 >**Observação:** O serviço pode adicionar novos códigos de erro ou parar de retornar os antigos a qualquer momento.
 
 ## <a name="remarks"></a>Comentários
 
 * [Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.
-* Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).
+* Para ver uma lista de funções disponíveis, consulte [roles property values](../resources/permission.md#roles-property-values).
 
-## <a name="error-responses"></a>Respostas de erro
+## <a name="error-responses"></a>Respostas de erros
 
 Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14a01366288c4b6107942b32ff136a5f14e8425f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2cea6bfeebc6143648163c110b5c6ee1dbe48eb2
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951488"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471860"
 ---
 # <a name="list-contacts"></a>Listar contatos
 
@@ -52,7 +52,7 @@ Para obter os contatos em uma pasta específica na caixa de correio do usuário:
 GET /me/contactfolders/{Id}/contacts
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts
 
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -63,7 +63,7 @@ Você pode usar o `$filter`parâmetro de consulta para filtrar contatos com base
 GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-Observe que você pode usar `$filter`, `any`, e o `eq` operador apenas na subpropriedade de **endereço** das instâncias em uma coleção **emailAddresses**. Ou seja, você não pode filtrar o **nome** ou qualquer outra subpropriedade de uma instância de **emailAddresses** , nem pode aplicar qualquer outro operador ou função com `filter`, como `ne`, `le` e `startswith()`.
+Observe que você pode usar `$filter`, `any`, e o `eq` operador apenas na subpropriedade de **endereço** das instâncias em uma coleção **emailAddresses**. Ou seja, você não pode filtrar o **nome** ou qualquer outra subpropriedade de uma instância de **emailAddresses**, nem pode aplicar qualquer outro operador ou função com `filter`, como `ne`, `le` e `startswith()`.
 
 Para obter informações gerais sobre o `$filter`parâmetro de consulta, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -77,10 +77,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de objetos [Contact](../resources/contact.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` de contato no corpo da resposta. [](../resources/contact.md)
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir obtém as propriedades **DisplayName** e **EmailAddresses** dos contatos do usuário conectado.
+O exemplo a seguir obtém as **propriedades displayName** e **emailAddresses** dos contatos do usuário assinado.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

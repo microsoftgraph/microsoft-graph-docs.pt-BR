@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Obter metadados de uma lista
-description: Retornar os metadados de uma lista.
+description: Retorne os metadados de uma lista.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1cce486364a0b630cf79f20a7a63aba7c6592f57
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6225e85c751e47cd6c0e499eba2aff4e892fb3f0
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969746"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472906"
 ---
 # <a name="get-metadata-for-a-list"></a>Obter metadados de uma lista
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Sites.Read.All, Sites.ReadWrite.All         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -78,7 +78,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -128,7 +128,7 @@ GET /sites/{site-id}/lists/{list-title}
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -178,7 +178,7 @@ GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=col
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -231,8 +231,8 @@ Content-type: application/json
 
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
-O exemplo a seguir mostra como obter metadados para uma lista que contém três colunas: Name, Quantity e Category.
-Colunas de [metadados gerenciados](/sharepoint/managed-metadata) como ```Category``` valores de retorno como um par de ID de termo e nome de termo.
+O exemplo a seguir mostra como obter metadados para uma lista que contém três colunas: Nome, Quantidade e Categoria.
+[Colunas de Metadados](/sharepoint/managed-metadata) Gerenciados, como ```Category``` valores de retorno como ID do termo e par de nomes de termos.
 ```http
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Quantity,Category))
 ```
@@ -241,7 +241,7 @@ GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=col
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -1,16 +1,16 @@
 ---
 title: Obter contato
-description: Recupere as propriedades e os relacionamentos do objeto de contato.
+description: Recupere as propriedades e as relações do objeto de contato.
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 06977c974bde533de8f18b992ef63e15c55c07a7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: accc9f8f8b089a5c4dc8a46bd3129806a9795bd8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957193"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472535"
 ---
 # <a name="get-contact"></a>Obter contato
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos do objeto de contato.
+Recupere as propriedades e as relações do objeto de contato.
 
-Há dois cenários em que um aplicativo pode obter um contato na pasta de contatos de outro usuário:
+Há dois cenários em que um aplicativo pode obter um contato na pasta de contato de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
 * Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
@@ -49,13 +49,13 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 Um [contact](../resources/contact.md) incluso em uma pasta filha de uma [contactFolder](../resources/mailfolder.md).  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho e assim por diante.
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 |Nome|Valor|Descrição|
 |:---------------|:--------|:-------|
-|$expand|string|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte tabela de relações de objeto de [contato](../resources/contact.md) para nomes compatíveis. |
+|$expand|string|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte relationships table of [contact](../resources/contact.md) object for supported names. |
 |$select|string|Lista separada por vírgulas de propriedades para incluir na resposta.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

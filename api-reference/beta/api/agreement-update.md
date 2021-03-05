@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 143031ad9e9123c650557a09401695387495ed18
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a134e26f6e2b8d2994d960759d389525a80673e4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438677"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471562"
 ---
 # <a name="update-agreement"></a>Atualizar contrato
 
@@ -24,14 +24,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Agreement.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | Agreement.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /agreements/{id}
+PATCH /identityGovernance/termsOfUse/agreements/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
@@ -43,21 +43,20 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome de exibição do contrato.|
-|isViewingBeforeAcceptanceRequired|Booliano|Se o usuário precisa expandir e exibir o contrato antes de aceitar.|
+|displayName|Cadeia de caracteres|Nome de exibição do contrato.|
+|isViewingBeforeAcceptanceRequired|Boolean|Se o usuário precisa expandir e exibir o contrato antes de aceitar.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto de [contrato](../resources/agreement.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_agreement"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/agreements/{id}
+PATCH https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}
 Content-type: application/json
 Content-length: 85
 
@@ -66,23 +65,6 @@ Content-length: 85
   "isViewingBeforeAcceptanceRequired": true
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-agreement-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-agreement-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-agreement-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-agreement-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### <a name="response"></a>Resposta
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.

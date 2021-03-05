@@ -2,15 +2,15 @@
 title: Usar a API REST de Email do Outlook
 description: O Microsoft Graph permite que o seu aplicativo obtenha acesso autorizado aos dados de email do Outlook do usuário em uma conta pessoal ou da organização.
 localization_priority: Priority
-author: angelgolfer-ms
+author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 2b60f8adb623bddfa46e05e3038ffd2eef370bcb
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: b72f7997d6c60910f60b96a47792b7f6be0e35d8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034309"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472780"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Usar a API REST de Email do Outlook
 

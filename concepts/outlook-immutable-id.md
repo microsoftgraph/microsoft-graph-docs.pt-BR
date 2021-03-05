@@ -1,15 +1,15 @@
 ---
 title: Obter identificadores imutáveis para recursos do Outlook
 description: Os identificadores imutáveis permitem que seu aplicativo obtenha uma ID para itens do Outlook que não muda durante a vida útil do item.
-author: angelgolfer-ms
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e5b92760e3de8d36190c83a57997f70b55b34ed1
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 572804950148e0cf2b5dcbb35842195123698c49
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160293"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473655"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>Obter identificadores imutáveis para recursos do Outlook
 

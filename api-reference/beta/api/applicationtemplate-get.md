@@ -1,16 +1,16 @@
 ---
 title: Obter applicationTemplate
-description: Recupere as propriedades e os relacionamentos do objeto applicationtemplate.
+description: Recupere as propriedades e as relações do objeto applicationtemplate.
 localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 07f6f68d3150031963b1beae89d690a95bf503e1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4ae3d9f451785ef44f36df75667968bc271065dc
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128957"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471588"
 ---
 # <a name="get-applicationtemplate"></a>Obter applicationTemplate
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Nenhum. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Nenhum. |
+| Delegada (conta corporativa ou de estudante)     | Nenhum. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Nenhum. |
 
 Permissões adicionais não são necessárias para chamar essa API, desde que seu aplicativo tenha um token de acesso válido para chamar o Microsoft Graph.
 
@@ -42,7 +42,7 @@ GET /applicationTemplates/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Você pode usar um `$select` parâmetro de consulta para especificar apenas as propriedades de que precisa para melhorar o desempenho. A propriedade **id** sempre será retornada. 
+Você pode usar um `$select` parâmetro de consulta para especificar apenas as propriedades de que precisa para o melhor desempenho. A propriedade **id** sempre será retornada. 
 
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código `200 OK` de resposta e o objeto [applicationTemplate](../resources/applicationtemplate.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [applicationTemplate](../resources/applicationtemplate.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -98,8 +98,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 
 Este é um exemplo de resposta.
 
-> [!NOTE]
-> O objeto response mostrado aqui pode ser encurtado para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
 <!-- {
   "blockType": "response",

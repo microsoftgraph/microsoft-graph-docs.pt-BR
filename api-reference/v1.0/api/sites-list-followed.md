@@ -5,18 +5,18 @@ title: Listar sites seguidos
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: d52b91fa9b24394f92169a74c46d12278c779784
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4520d428511601ad2fa17c4d993a6ab373566eb0
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038076"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473676"
 ---
 # <a name="list-followed-sites"></a>Listar sites seguidos
 
 Namespace: microsoft.graph
 
-Listar os [sites](../resources/site.md) que foram seguidos pelo usuário conectado.
+Listar [os sites](../resources/site.md) que foram seguidos pelo usuário assinado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,14 +30,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Este método é acessível apenas por meio do OneDrive for Business.
+Esse método só pode ser acessado por meio do OneDrive for Business.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/followedSites
 ```
-Obter uma lista dos sites seguidos por um usuário de destino com base em sua ID.
+Obter uma lista dos sites seguidos por um usuário de destino, com base em sua ID.
 
 ```http
 GET /users/{user-id}/followedSites
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Este método retorna uma coleção de recursos do [site](../resources/site.md) que o usuário está seguindo.
+Este método retorna um conjunto de [recursos de site](../resources/site.md) que o usuário está seguindo.
 Se nenhum site for encontrado, uma coleção vazia será retornada.
 
 ## <a name="example"></a>Exemplo
@@ -95,7 +95,7 @@ GET /me/followedSites
 ### <a name="response"></a>Resposta
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

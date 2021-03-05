@@ -1,28 +1,28 @@
 ---
 title: tipo de recurso de segurança
-description: O recurso de segurança é o ponto de entrada para o modelo de objeto de segurança. Ele retorna um recurso de segurança singleton. Ele não contém propriedades utilizáveis.
+description: O recurso de segurança é o ponto de entrada para o modelo de objeto Security. Ele retorna um recurso de segurança singleton. Ele não contém propriedades usáveis.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0c120bccd3defa4cb56966c8cee26119472b3876
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 345e3e81b86fe42d16f4110450120c9f225c22dd
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984002"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473662"
 ---
 # <a name="security-resource-type"></a>tipo de recurso de segurança
 
 Namespace: microsoft.graph
 
-O recurso de segurança é o ponto de entrada para o modelo de objeto de segurança. Ele retorna um recurso de segurança singleton. Ele não contém propriedades utilizáveis.
+O recurso de segurança é o ponto de entrada para o modelo de objeto Security. Ele retorna um recurso de segurança singleton. Ele não contém propriedades usáveis.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar alertas](../api/alert-list.md) | conjunto [alerta](alert.md)  | Obtenha uma coleção de objetos de alerta. |
+| [Listar alertas](../api/alert-list.md) | conjunto [alerta](alert.md)  | Obter uma coleção de objetos de alerta. |
 | [obter alertas](../api/alert-get.md) | conjunto [alerta](alert.md)  | Obter um objeto de alerta. |
 | [Atualizar alertas](../api/alert-update.md) | conjunto [alerta](alert.md)  | Obter um objeto de alerta. |
 
@@ -51,7 +51,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="example"></a>Exemplo
 
-O recurso de **segurança** está disponível na raiz do gráfico.
+O **recurso** de segurança está disponível na raiz do gráfico.
 
 <!--{
   "blockType": "request"
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/security
   "truncated": true,
   "@odata.type": "microsoft.graph.security"
 }-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

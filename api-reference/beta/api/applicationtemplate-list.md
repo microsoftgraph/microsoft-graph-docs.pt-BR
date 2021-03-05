@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3041982a4c26de4c29bf55ca672692c4dfee548f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ebd1b178ad1a6ea0e178ab582439ace433951ffb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128939"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471530"
 ---
 # <a name="list-applicationtemplates"></a>Listar applicationTemplates
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Nenhum. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Nenhum. |
+| Delegada (conta corporativa ou de estudante)     | Nenhum. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Nenhum. |
 
 Permissões adicionais não são necessárias para chamar essa API, desde que seu aplicativo tenha um token de acesso válido para chamar o Microsoft Graph.
 
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos applicationTemplate](../resources/applicationtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos applicationTemplate](../resources/applicationtemplate.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -101,8 +101,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 Este é um exemplo de resposta.
 
-> [!NOTE]
-> O objeto response mostrado aqui pode ser encurtado para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

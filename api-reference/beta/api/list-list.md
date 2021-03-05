@@ -6,12 +6,12 @@ title: Lista as listas do SharePoint em um site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 41bc280ebaa342c01b772adc3041a44924252552
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: eb532dd8146383df49d52211a7ba5eebe0dc9863
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980283"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473123"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

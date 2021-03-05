@@ -1,22 +1,22 @@
 ---
 author: learafa
 title: Deixar de seguir site
-description: Não acompanhar o site de um usuário
+description: Desa seguir o site de um usuário
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ef22d57c9b4cbf3ad808b1ba5dab73fd1b735050
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 229c22d25087846e3c67a103ca48384171385e35
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038092"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473684"
 ---
 # <a name="unfollow-site"></a>Deixar de seguir site 
 
 Namespace: microsoft.graph
 
-Não acompanhar o [site](../resources/site.md) de um usuário ou vários sites.
+Desa siga o site de um [usuário ou](../resources/site.md) vários sites.
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,7 +38,7 @@ POST /users/{user-id}/followedSites/remove
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma matriz de objetos JSON com o parâmetro ID mencionado na tabela abaixo. 
+No corpo da solicitação, fornece uma matriz de objetos JSON com o parâmetro id mencionado na tabela abaixo. 
 
 
 | Nome                 | Valor  | Descrição                                                            |
@@ -48,11 +48,11 @@ No corpo da solicitação, forneça uma matriz de objetos JSON com o parâmetro 
 ## <a name="response"></a>Resposta
 
 * Se a solicitação for bem-sucedida, este método retornará um `204` código de status sem conteúdo.  
-* Se ocorreu um erro durante a despróximação de qualquer um dos sites especificados, este método retornará um `207` código de status e o corpo da resposta conterá uma matriz de entradas contendo objetos [Error](/graph/errors) e siteIds indicando quais sites não podem ser seguidos.
+* Se ocorreu um erro ao não seguir nenhum dos sites especificados, este método retornará um código de status e o corpo da resposta conterá uma matriz de entradas contendo objetos de erro e siteIds indicando quais sites não podem ser `207` seguidos. [](/graph/errors)
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra como desacompanhar vários sites.
+O exemplo a seguir mostra como desa seguir vários sites.
 
 ### <a name="request"></a>Solicitação
 
@@ -101,15 +101,15 @@ Se tiver êxito, retornará a seguinte resposta JSON.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 
-Se ocorreu um erro, ele retornará a seguinte resposta JSON 
+Se ocorrer um erro, ele retornará a seguinte resposta JSON 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
 

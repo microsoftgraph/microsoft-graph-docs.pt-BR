@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f8a87cd915a9e6c7bf3c57b4bc9f0cabbd0b6b56
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5b045a8377a8e7ce26d70e98be1852b828723c4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979151"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471709"
 ---
 # <a name="delete-contact"></a>Excluir contato
 
@@ -40,7 +40,7 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
 Um [contact](../resources/contact.md) incluso em uma pasta filha de uma [contactFolder](../resources/mailfolder.md). O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho, e assim por diante.
 ```http
-DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+DELETE /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

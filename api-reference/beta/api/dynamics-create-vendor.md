@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 24e0137e4d4979133ac03f98a0b58d599b018d9e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0074567f6e7d197aaf4948838bc1137735ce768f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436432"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473186"
 ---
 # <a name="create-vendors"></a>Criar fornecedores
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Financials.ReadWrite.All|
 
@@ -57,7 +57,7 @@ Se tiver êxito, este método retornará ```201 Created``` o código de resposta
 
 Aqui está um exemplo de uma solicitação.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/vendors
 Content-type: application/json
 
@@ -88,7 +88,7 @@ Veja a seguir um exemplo da resposta.
 
 > **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

@@ -1,16 +1,16 @@
 ---
 title: Obter onPremisesPublishingProfile
-description: Recupere as propriedades e os relacionamentos de um [objeto onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
+description: Recupere as propriedades e as relações de um [objeto onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b7eec602f502f1501b8cfab96a5cc0de0c2faa8c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3c2b3c6010970290a7416f3080e8d60d51799ff3
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136364"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471884"
 ---
 # <a name="get-onpremisespublishingprofile"></a>Obter onPremisesPublishingProfile
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um [objeto onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
+Recupere as propriedades e as relações de um [objeto onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:--------------------------------------|:---------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | OnPremisesPublishingProfiles.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -102,7 +102,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.onPremisesPublishingProfile"
 } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 
 {

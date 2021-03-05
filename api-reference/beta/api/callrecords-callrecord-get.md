@@ -1,16 +1,16 @@
 ---
 title: Obter callRecord
-description: Recupere as propriedades e os relacionamentos do objeto callrecord.
+description: Recupere as propriedades e as relações do objeto callrecord.
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7660af536659ad6c2baf1e2ad12938ee10a46c9d
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: d32c462a9aeebaefcce4a712748d2b2402f385de
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601115"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472591"
 ---
 # <a name="get-callrecord"></a>Obter callRecord
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [callRecord](../resources/callrecords-callrecord.md) .
+Recupere as propriedades e as relações de um [objeto callRecord.](../resources/callrecords-callrecord.md)
 
-Há duas maneiras de obter o **ID** de um **callRecord**:
+Há duas maneiras de obter a **id** de um **callRecord**:
 
-* Assine as [notificações de alteração](/graph/api/resources/webhooks?view=graph-rest-beta) para o `/communications/callRecords` ponto de extremidade.
-* Use a propriedade **callChainId** de uma [chamada](../resources/call.md). O registro de chamadas estará disponível somente após a conclusão da chamada associada.
+* [Inscreva-se para alterar notificações](/graph/api/resources/webhooks?view=graph-rest-beta) no ponto de `/communications/callRecords` extremidade.
+* Use a **propriedade callChainId** de uma [chamada](../resources/call.md). O registro de chamada só estará disponível depois que a chamada associada for concluída.
 
 ## <a name="permissions"></a>Permissões
 
@@ -59,24 +59,44 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [Microsoft. Graph. CallRecords. callRecord](../resources/callrecords-callrecord.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e o `200 OK` objeto [microsoft.graph.callRecords.callRecords](../resources/callrecords-callrecord.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-basic-details"></a>Exemplo 1: obter detalhes básicos
+### <a name="example-1-get-basic-details"></a>Exemplo 1: Obter detalhes básicos
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para obter os detalhes básicos de um [callRecord](../resources/callrecords-callrecord.md).
+Veja a seguir um exemplo da solicitação para obter os detalhes básicos de [um callRecord](../resources/callrecords-callrecord.md).
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-callrecord-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -85,7 +105,7 @@ Este é um exemplo de resposta.
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->
@@ -135,25 +155,45 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para obter os detalhes completos de um [callRecord](../resources/callrecords-callrecord.md), incluindo componentes de sessão e de segmento.
+Veja a seguir um exemplo da solicitação para obter os detalhes completos de [um callRecord](../resources/callrecords-callrecord.md), incluindo componentes de sessão e segmento.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord_expanded"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=sessions($expand=segments)
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-expanded-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-expanded-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-callrecord-expanded-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-expanded-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. Se a lista de sessões estiver truncada, `sessions@odata.nextLink` será fornecido um valor para recuperar a próxima página de sessões.
+Este é um exemplo de resposta. Se a lista de sessões estiver truncada, será fornecido um valor para recuperar a `sessions@odata.nextLink` próxima página de sessões.
 
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->

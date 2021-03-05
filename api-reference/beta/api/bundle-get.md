@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Obter pacote
 description: Obter um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f9deca81a99d36e91247ddd042fc875d0ffc1cad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8a3d74c5f4b746d6232bc39a9be7e82c5119d497
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960288"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472738"
 ---
 # <a name="get-bundle"></a>Obter pacote
 
@@ -19,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os metadados de um [pacote][] com base na ID exclusiva do pacote.
+Recupere os metadados de [um pacote][] com base na ID exclusiva do pacote.
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,8 +37,8 @@ GET /drive/bundles/{bundle-id}
 GET /drive/items/{bundle-id}
 ```
 
-Como os pacotes são itens, você pode usar a coleção **Items** para retornar metadados sobre um pacote.
-Você também pode usar a coleção de **pacotes** como uma conveniência para garantir que você esteja obtendo um pacote em resposta.
+Como os pacotes são itens, você pode usar a coleção **items** para retornar metadados sobre um pacote.
+Você também pode usar a coleção **bundles** como uma conveniência para garantir que você está recebendo um pacote em resposta.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -49,7 +48,7 @@ Você pode usar os [parâmetros de consulta OData][odata-parameters] para restri
 | Nome          | Descrição  |
 |:------------- |:------------ |
 | Autorização | \{token\} de portador. Obrigatório. |
-| if-none-match | ETag. Opcional. Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será retornada.
+| if-none-match | eTag. Opcional. Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será retornada.
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -57,13 +56,13 @@ Não forneça um corpo de solicitação com esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um [driveItem][driveItem] resource with the [bundle][bundle] no corpo da resposta.
+Se tiver êxito, este método retornará [um driveItem][driveItem] resource with the [bundle][bundle] no corpo da resposta.
 
-Leia o tópico [respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
+Leia o tópico [Respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-a-bundle"></a>Exemplo 1: obter um pacote
+### <a name="example-1-get-a-bundle"></a>Exemplo 1: Obter um pacote
 
 #### <a name="request"></a>Solicitação
 
@@ -97,7 +96,7 @@ GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -119,11 +118,11 @@ Content-type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
-### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>Exemplo 2: obter um pacote e seus filhos em uma única chamada
+### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>Exemplo 2: Obter um pacote e seus filhos em uma única chamada
 
-Você pode usar o [`expand`](/graph/query-parameters) parâmetro de cadeia de caracteres de consulta para incluir os filhos de um pacote na mesma chamada que recupera os metadados de um pacote.
+Você pode usar o parâmetro de cadeia de caracteres de consulta para incluir os filhos de um pacote na mesma chamada que recuperar os [`expand`](/graph/query-parameters) metadados de um pacote.
 
 #### <a name="request"></a>Solicitação
 
@@ -156,13 +155,13 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 #### <a name="response"></a>Resposta
 
 Essa chamada retornará os metadados do pacote e uma lista de filhos do pacote.
-Se o pacote não tiver filhos, retornará uma coleção vazia.
+Se o pacote não tiver filhos, ele retornará uma coleção vazia.
 
-Se o número de filhos no pacote for maior que o tamanho de página padrão, a propriedade **Children@odata. nextLink** será retornada com uma URL que pode ser usada para solicitar a próxima página de filhos no pacote.
+Se o número de filhos no pacote for maior do que o tamanho padrão da página, a propriedade **children@odata.nextLink** será retornada com uma URL que pode ser usada para solicitar a próxima página de filhos no pacote.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -177,7 +176,7 @@ Content-Type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 
 [pacote]: ../resources/bundle.md

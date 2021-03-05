@@ -4,13 +4,13 @@ description: Representa os dias da semana e as horas de um fuso horário especí
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: angelgolfer-ms
-ms.openlocfilehash: c6904a5aaa63932597bbb0b921406112d49165af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 5e86df6eae7d1ae399cb764321e8fc2af1815409
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019387"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472395"
 ---
 # <a name="workinghours-resource-type"></a>Tipo de recurso workingHours
 
@@ -30,7 +30,7 @@ Quando outras pessoas solicitarem reuniões de trabalho com você no seu local h
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| daysOfWeek | coleção dayOfWeek | Os dias da semana em que o usuário trabalha. |
+| daysOfWeek | Coleção dayOfWeek | Os dias da semana em que o usuário trabalha. |
 | startTime | Edm.TimeOfDay | A hora do dia em que o usuário começa a trabalhar. |
 | endTime | Edm.TimeOfDay | A hora do dia em que o usuário para de trabalhar. |
 | timeZone | [timeZoneBase](timezonebase.md) | O fuso horário ao qual o horário de trabalho se aplica. |

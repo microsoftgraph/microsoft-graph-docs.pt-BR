@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Criar uma nova lista em um site.
 doc_type: apiPageType
-ms.openlocfilehash: fab24561aa8e0202b5033c9f7b31ed46ba05ea05
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f8abd6311f1b9fa98ed4a1a99cb36ac3b1a77812
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238817"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471683"
 ---
 # <a name="create-a-new-list"></a>Crie uma nova lista
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |            Tipo de permissão             | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | Sites.Manage.All                            |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegado (conta corporativa ou de estudante)     | Sites.Manage.All                            |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sites.ReadWrite.All                         |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -100,7 +100,7 @@ Se for bem-sucedido, esse método retornará uma [lista][] no corpo da resposta 
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

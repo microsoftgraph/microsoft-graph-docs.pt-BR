@@ -1,16 +1,16 @@
 ---
 title: Excluir contato
-description: Exclua o contato.
+description: Excluir contato.
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 200e3eac817f0d95df872420951f8e5d471d38b7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4404b6b7137d7526d8352b2807cff0c0add7b27c
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957263"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472542"
 ---
 # <a name="delete-contact"></a>Excluir contato
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua o contato.
+Excluir contato.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -42,7 +42,7 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
 Um [contact](../resources/contact.md) incluso em uma pasta filha de uma [contactFolder](../resources/mailfolder.md).  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho e assim por diante.
 ```http
-DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+DELETE /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -1,18 +1,18 @@
 ---
 title: Obter funcionários
-description: Obtém um objeto Employee no Dynamics 365 Business central.
+description: Obtém um objeto de funcionário no Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 2309889f58575f2e8b50a6fe3d31c98700d5fb9d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bf72c6b40eec557897a250772640869d8236ea5a
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981319"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473102"
 ---
 # <a name="get-employees"></a>Obter funcionários
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto Employee para o Dynamics 365 Business central.
+Recupere as propriedades e as relações de um objeto de funcionário para o Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,17 +48,17 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **Employees** no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto **employees** no corpo da resposta.
 
 **Solicitação**
 
 Este é um exemplo da solicitação.
 
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 ```
 
-**Resposta**
+**Response**
 
 Veja a seguir um exemplo da resposta. 
 

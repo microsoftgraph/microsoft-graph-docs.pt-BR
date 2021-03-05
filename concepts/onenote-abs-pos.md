@@ -4,12 +4,12 @@ description: O corpo de uma página do OneNote pode conter vários elementos fil
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 70c68699df88f53cfc70bbbc5a97ed41acd97b60
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: e21ad3fb97b807bc91ecf6a993483f3bb83c82b8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969337"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472836"
 ---
 # <a name="create-absolute-positioned-elements-in-onenote-pages"></a>Criar elementos posicionados absolutos nas páginas do OneNote
 
@@ -129,7 +129,7 @@ Outros atributos de posição, como `z-index`, são ignorados. As imagens posici
 
 A API do OneNote retorna as seguintes informações na resposta.
 
-| Dado de resposta | Descrição |  
+| Dados de resposta | Descrição |  
 |:------|:------|  
 | Código de êxito | Um código de status HTTP 201 para uma solicitação POST bem-sucedida e um código de status HTTP 204 para uma solicitação PATCH bem-sucedida. |  
 | Erros | Leia [Códigos de erro para APIs do OneNote no Microsoft Graph](onenote-error-codes.md) para saber mais sobre erros do OneNote que poderão ser retornados pelo Microsoft Graph. |  
@@ -165,6 +165,6 @@ Para saber mais sobre escopos de permissão e como eles funcionam, confira [Esco
 - [Atualizar o conteúdo da página do OneNote](onenote-update-page.md)
 - [Integrar com o OneNote](integrate-with-onenote.md)
 - [Blog de desenvolvedor do OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Perguntas sobre desenvolvimento do OneNote no Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Perguntas sobre desenvolvimento do OneNote no Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)  
 

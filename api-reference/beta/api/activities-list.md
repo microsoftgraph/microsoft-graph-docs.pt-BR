@@ -1,18 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/10/2017
 title: Atividades de arquivo
 description: Lista as atividades recentes que foram realizadas em um item ou em uma hierarquia.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: f012ae840bcf66c42d9d4e06703cd8f63593cc9e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f345551f4685023581eea58fa2615e9c723303f5
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952581"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472255"
 ---
 # <a name="enumerate-activities-preview"></a>Enumerar atividades (prévia)
 
@@ -81,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

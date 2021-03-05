@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Listar pacotes
 description: Listar os pacotes na unidade de um usuário
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4704017f135f4ed30928d6c7b2736e51190819e3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fafafbdef4f2fa8b6c2ba01f8544fa5f814f7672
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960241"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472717"
 ---
 # <a name="list-bundles"></a>Listar pacotes
 
@@ -19,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de todos os pacotes de [pacote][na unidade] de um usuário.
+Obter uma lista de todos os [pacotes de][pacotes] na unidade de um usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -43,7 +42,7 @@ GET /drive/bundles
 
 Esse método dá suporte a [Parâmetros de consulta OData][] para filtrar e dar forma à resposta.
 
-Você não pode usar o `expand=children` parâmetro de consulta ao enumerar os pacotes.
+Não é possível usar o `expand=children` parâmetro de consulta ao enumerar pacotes.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,13 +58,13 @@ Não forneça um corpo de solicitação com esse método.
 
 Se tiver êxito, essa solicitação retornará a lista de itens de pacote definidos para a unidade.
 
-Leia o tópico [respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
+Leia o tópico [Respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-bundles-in-a-drive"></a>Exemplo 1: listar todos os pacotes em uma unidade
+### <a name="example-1-list-all-bundles-in-a-drive"></a>Exemplo 1: Listar todos os pacotes em uma unidade
 
-Para solicitar uma enumeração de todos os pacotes definidos na unidade, você pode fazer uma solicitação para a coleção de **pacotes** sem qualquer parâmetro.
+Para solicitar uma enumeração de todos os pacotes definidos na unidade, você pode fazer uma solicitação à coleção **bundles** sem parâmetros.
 
 #### <a name="request"></a>Solicitação
 
@@ -125,12 +124,12 @@ Content-type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 
-### <a name="example-2-list-all-photo-albums-in-a-drive"></a>Exemplo 2: listar todos os álbuns de fotos em uma unidade
+### <a name="example-2-list-all-photo-albums-in-a-drive"></a>Exemplo 2: Listar todos os álbuns de fotos em uma unidade
 
-Para filtrar a lista de pacotes retornados de uma solicitação para a coleção de pacotes, você pode usar o `filter` parâmetro de cadeia de caracteres de consulta para especificar o tipo de pacote a ser retornado verificando a existência de uma faceta no pacote:
+Para filtrar a lista de pacotes retornados de uma solicitação para a coleção bundles, você pode usar o parâmetro de cadeia de caracteres de consulta para especificar o tipo de pacote a ser retornado verificando a existência de uma faceta no `filter` pacote:
 
 #### <a name="request"></a>Solicitação
 
@@ -162,12 +161,12 @@ GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20nu
 
 #### <a name="response"></a>Resposta
 
-A resposta para um GET para o ponto de extremidade de pacotes é uma matriz de recursos do [driveItem][] com o [pacote][].
+A resposta a um GET para o ponto de extremidade de pacotes é uma matriz de [recursos driveItem][] com o [pacote][].
 Como todos os pacotes são itens, você pode usar todas as operações de item padrão neles.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -199,7 +198,7 @@ Content-type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 
 [pacote]: ../resources/bundle.md
