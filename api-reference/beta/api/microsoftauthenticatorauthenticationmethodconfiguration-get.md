@@ -5,32 +5,32 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 32470fb4ebce664fadce95982adb0d2d61bf6f03
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a0420289c1fc8191c30433d1d4c797b24e349405
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443689"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475297"
 ---
-# <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a><span data-ttu-id="68cb8-103">Obter microsoftAuthenticatorAuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="68cb8-103">Get microsoftAuthenticatorAuthenticationMethodConfiguration</span></span>
-<span data-ttu-id="68cb8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="68cb8-104">Namespace: microsoft.graph</span></span>
+# <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a><span data-ttu-id="a56c2-103">Obter microsoftAuthenticatorAuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="a56c2-103">Get microsoftAuthenticatorAuthenticationMethodConfiguration</span></span>
+<span data-ttu-id="a56c2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a56c2-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="68cb8-105">Recupere as propriedades e as relações do [objeto microsoftAuthenticatorAuthenticationMethodConfiguration,](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) que representa a política de método de autenticação do Microsoft Authenticator para o locatário do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="68cb8-105">Retrieve the properties and relationships of the [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object, which represents the Microsoft Authenticator authentication method policy for the Azure AD tenant.</span></span>
+<span data-ttu-id="a56c2-105">Recupere as propriedades e as relações do [objeto microsoftAuthenticatorAuthenticationMethodConfiguration,](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) que representa a política de método de autenticação do Microsoft Authenticator para o locatário do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="a56c2-105">Retrieve the properties and relationships of the [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object, which represents the Microsoft Authenticator authentication method policy for the Azure AD tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="68cb8-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="68cb8-106">Permissions</span></span>
-<span data-ttu-id="68cb8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="68cb8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a56c2-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a56c2-106">Permissions</span></span>
+<span data-ttu-id="a56c2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a56c2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="68cb8-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="68cb8-109">Permission type</span></span>|<span data-ttu-id="68cb8-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="68cb8-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="a56c2-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a56c2-109">Permission type</span></span>|<span data-ttu-id="a56c2-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a56c2-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="68cb8-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="68cb8-111">Delegated (work or school account)</span></span>|<span data-ttu-id="68cb8-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="68cb8-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
-|<span data-ttu-id="68cb8-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="68cb8-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="68cb8-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="68cb8-114">Not supported.</span></span>|
-|<span data-ttu-id="68cb8-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="68cb8-115">Application</span></span>|<span data-ttu-id="68cb8-116">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="68cb8-116">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="a56c2-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a56c2-111">Delegated (work or school account)</span></span>|<span data-ttu-id="a56c2-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="a56c2-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="a56c2-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a56c2-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a56c2-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a56c2-114">Not supported.</span></span>|
+|<span data-ttu-id="a56c2-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a56c2-115">Application</span></span>|<span data-ttu-id="a56c2-116">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="a56c2-116">Policy.ReadWrite.AuthenticationMethod</span></span>|
 
-<span data-ttu-id="68cb8-117">Para cenários delegados, o administrador precisa da função de administrador global.</span><span class="sxs-lookup"><span data-stu-id="68cb8-117">For delegated scenarios, the administrator needs the Global admin role.</span></span> <span data-ttu-id="68cb8-118">Para obter mais informações, consulte [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span><span class="sxs-lookup"><span data-stu-id="68cb8-118">For more information, see [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span></span>
+<span data-ttu-id="a56c2-117">Para cenários delegados, o administrador precisa da função de administrador global.</span><span class="sxs-lookup"><span data-stu-id="a56c2-117">For delegated scenarios, the administrator needs the Global admin role.</span></span> <span data-ttu-id="a56c2-118">Para obter mais informações, consulte [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span><span class="sxs-lookup"><span data-stu-id="a56c2-118">For more information, see [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="68cb8-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="68cb8-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a56c2-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a56c2-119">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -40,21 +40,23 @@ ms.locfileid: "50443689"
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/microsoftAuthenticator
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="68cb8-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="68cb8-120">Request headers</span></span>
-|<span data-ttu-id="68cb8-121">Nome</span><span class="sxs-lookup"><span data-stu-id="68cb8-121">Name</span></span>|<span data-ttu-id="68cb8-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="68cb8-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a56c2-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a56c2-120">Request headers</span></span>
+|<span data-ttu-id="a56c2-121">Nome</span><span class="sxs-lookup"><span data-stu-id="a56c2-121">Name</span></span>|<span data-ttu-id="a56c2-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="a56c2-122">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="68cb8-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="68cb8-123">Authorization</span></span>|<span data-ttu-id="68cb8-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="68cb8-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="a56c2-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="a56c2-123">Authorization</span></span>|<span data-ttu-id="a56c2-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a56c2-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="68cb8-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="68cb8-126">Request body</span></span>
-<span data-ttu-id="68cb8-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="68cb8-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a56c2-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a56c2-126">Request body</span></span>
+<span data-ttu-id="a56c2-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a56c2-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="68cb8-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="68cb8-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a56c2-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="a56c2-128">Response</span></span>
 
-<span data-ttu-id="68cb8-129">Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="68cb8-129">If successful, this method returns a `200 OK` response code and a [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object in the response body.</span></span>
+<span data-ttu-id="a56c2-129">Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a56c2-129">If successful, this method returns a `200 OK` response code and a [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="68cb8-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="68cb8-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a56c2-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a56c2-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="68cb8-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="68cb8-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a56c2-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a56c2-131">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="a56c2-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="a56c2-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_microsoftauthenticatorauthenticationmethodconfiguration"
@@ -63,10 +65,28 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/mic
 ``` http
 GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/microsoftAuthenticator
 ```
+# <a name="c"></a>[<span data-ttu-id="a56c2-133">C#</span><span class="sxs-lookup"><span data-stu-id="a56c2-133">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-microsoftauthenticatorauthenticationmethodconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="a56c2-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a56c2-134">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-microsoftauthenticatorauthenticationmethodconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="a56c2-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a56c2-135">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-microsoftauthenticatorauthenticationmethodconfiguration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="a56c2-136">Java</span><span class="sxs-lookup"><span data-stu-id="a56c2-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-microsoftauthenticatorauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-### <a name="response"></a><span data-ttu-id="68cb8-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="68cb8-132">Response</span></span>
-<span data-ttu-id="68cb8-133">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="68cb8-133">**Note:** The response object shown here might be shortened for readability.</span></span>
+
+### <a name="response"></a><span data-ttu-id="a56c2-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="a56c2-137">Response</span></span>
+<span data-ttu-id="a56c2-138">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a56c2-138">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,50 +1,50 @@
 ---
 author: rahmit
-description: Obter a coleção de objetos sitePage das páginas do site [list] em um site. Todas as páginas no site são retornadas (com paginação).
+description: Obter o conjunto de objetos sitePage das páginas do site [lista] em um site. Todas as páginas no site são retornadas (com paginação).
 ms.date: 03/15/2018
 title: Listar as páginas em um site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1f3a77b7f6d70d79cc1f44635266144f9d8ceb2d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c8559fdc469823b3218a8af93ccda0d10ec357b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044428"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475706"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="9ef0c-104">Listar as páginas na lista de páginas do site de um site</span><span class="sxs-lookup"><span data-stu-id="9ef0c-104">List the pages in the site pages list of a site</span></span>
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="a8bd2-104">Listar as páginas na lista de páginas de site de um site</span><span class="sxs-lookup"><span data-stu-id="a8bd2-104">List the pages in the site pages list of a site</span></span>
 
-<span data-ttu-id="9ef0c-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9ef0c-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a8bd2-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a8bd2-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9ef0c-106">Obtenha a coleção de objetos [sitePage][] da [lista][] de páginas do site em um [site][]do site.</span><span class="sxs-lookup"><span data-stu-id="9ef0c-106">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="9ef0c-107">Todas as páginas no site são retornadas (com paginação).</span><span class="sxs-lookup"><span data-stu-id="9ef0c-107">All pages in the site are returned (with pagination).</span></span>
+<span data-ttu-id="a8bd2-106">Obter o conjunto de [objetos sitePage][] da lista de páginas [do][] site em um [site][].</span><span class="sxs-lookup"><span data-stu-id="a8bd2-106">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="a8bd2-107">Todas as páginas no site são retornadas (com paginação).</span><span class="sxs-lookup"><span data-stu-id="a8bd2-107">All pages in the site are returned (with pagination).</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="9ef0c-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="9ef0c-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a8bd2-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="a8bd2-111">Permissions</span></span>
 
-<span data-ttu-id="9ef0c-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9ef0c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a8bd2-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a8bd2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9ef0c-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9ef0c-114">Permission type</span></span>      | <span data-ttu-id="9ef0c-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9ef0c-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a8bd2-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a8bd2-114">Permission type</span></span>      | <span data-ttu-id="a8bd2-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a8bd2-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9ef0c-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9ef0c-116">Delegated (work or school account)</span></span> | <span data-ttu-id="9ef0c-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ef0c-117">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9ef0c-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9ef0c-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9ef0c-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9ef0c-119">Not supported.</span></span>    |
-|<span data-ttu-id="9ef0c-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9ef0c-120">Application</span></span> | <span data-ttu-id="9ef0c-121">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ef0c-121">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a8bd2-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a8bd2-116">Delegated (work or school account)</span></span> | <span data-ttu-id="a8bd2-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8bd2-117">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a8bd2-118">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a8bd2-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8bd2-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-119">Not supported.</span></span>    |
+|<span data-ttu-id="a8bd2-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a8bd2-120">Application</span></span> | <span data-ttu-id="a8bd2-121">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8bd2-121">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9ef0c-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9ef0c-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a8bd2-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a8bd2-122">HTTP request</span></span>
 
 ```msgraph-interactive
 GET /sites/{site-id}/pages
 
 ```
 
-## <a name="example"></a><span data-ttu-id="9ef0c-123">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9ef0c-123">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a8bd2-123">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a8bd2-123">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9ef0c-124">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9ef0c-124">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a8bd2-124">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a8bd2-124">Request</span></span>
 
 <!-- 
 { 
@@ -59,7 +59,7 @@ GET /sites/{site-id}/pages
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a><span data-ttu-id="9ef0c-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="9ef0c-125">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a8bd2-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="a8bd2-125">Response</span></span>
 
 <!-- 
 { 
@@ -70,7 +70,7 @@ GET /sites/{site-id}/pages
 } 
 -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -114,37 +114,37 @@ Content-type: application/json
                 {
                     "type": "daf0b71c-6de8-4ef7-b511-faae7c388708",
                     "data": {
-                        "id": "daf0b71c-6de8-4ef7-b511-faae7c388708",
-                        "instanceId": "b646d2e4-2b9c-41c7-a567-0c05c2909d5a",
-                        "title": "Registration",
-                        "description": "...",
-                        "serverProcessedContent": {
-                            "htmlStrings": {},
-                            "searchablePlainTexts": {
-                                "title": ""
-                            },
-                            "imageSources": {},
-                            "links": {
-                                "baseUrl": "/teams/SPClientTest"
-                            },
-                            "componentDependencies": {
-                                "layoutComponentId": "62680648-d047-46ec-81e0-475ee78e482d"
-                            }
-                        },
-                        "dataVersion": "2.1",
-                        "properties": {
-                            "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
-                            "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": {  },
-                            "templateId": 1,
-                            "maxItemsPerPage": 10,
-                            "hideWebPartWhenEmpty": false,
-                            "kqlQueryTemplate": "...",
-                            "displayMaps": {  },
-                            "sites": [],
-                            "layoutId": "Card",
-                            "dataProviderId": "Search"
-                        }
+                        "id": "daf0b71c-6de8-4ef7-b511-faae7c388708",
+                        "instanceId": "b646d2e4-2b9c-41c7-a567-0c05c2909d5a",
+                        "title": "Registration",
+                        "description": "...",
+                        "serverProcessedContent": {
+                            "htmlStrings": {},
+                            "searchablePlainTexts": {
+                                "title": ""
+                            },
+                            "imageSources": {},
+                            "links": {
+                                "baseUrl": "/teams/SPClientTest"
+                            },
+                            "componentDependencies": {
+                                "layoutComponentId": "62680648-d047-46ec-81e0-475ee78e482d"
+                            }
+                        },
+                        "dataVersion": "2.1",
+                        "properties": {
+                            "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
+                            "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
+                            "query": {  },
+                            "templateId": 1,
+                            "maxItemsPerPage": 10,
+                            "hideWebPartWhenEmpty": false,
+                            "kqlQueryTemplate": "...",
+                            "displayMaps": {  },
+                            "sites": [],
+                            "layoutId": "Card",
+                            "dataProviderId": "Search"
+                        }
                     }
                 }
             ]

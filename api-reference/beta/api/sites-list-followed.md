@@ -5,98 +5,98 @@ title: Listar sites seguidos
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: 19306301577afa7954f7586f09077eb6a40e343f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d852f71ff2a228976efdc84c438f9529e2f5c6f1
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973185"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475713"
 ---
-# <a name="list-followed-sites"></a><span data-ttu-id="b5fb4-103">Listar sites seguidos</span><span class="sxs-lookup"><span data-stu-id="b5fb4-103">List followed sites</span></span>
+# <a name="list-followed-sites"></a><span data-ttu-id="fdc1b-103">Listar sites seguidos</span><span class="sxs-lookup"><span data-stu-id="fdc1b-103">List followed sites</span></span>
 
-<span data-ttu-id="b5fb4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b5fb4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fdc1b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fdc1b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b5fb4-105">Listar os [sites](../resources/site.md) que foram seguidos pelo usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="b5fb4-105">List the [sites](../resources/site.md) that have been followed by the signed in user.</span></span>
+<span data-ttu-id="fdc1b-105">Listar [os sites](../resources/site.md) que foram seguidos pelo usuário assinado.</span><span class="sxs-lookup"><span data-stu-id="fdc1b-105">List the [sites](../resources/site.md) that have been followed by the signed in user.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b5fb4-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="b5fb4-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fdc1b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="fdc1b-106">Permissions</span></span>
 
-<span data-ttu-id="b5fb4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b5fb4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fdc1b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fdc1b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b5fb4-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b5fb4-109">Permission type</span></span>      | <span data-ttu-id="b5fb4-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b5fb4-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fdc1b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fdc1b-109">Permission type</span></span>      | <span data-ttu-id="fdc1b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fdc1b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b5fb4-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b5fb4-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b5fb4-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5fb4-112">Sites.Read.All, Sites.ReadWrite.All</span></span>  |
-|<span data-ttu-id="b5fb4-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b5fb4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b5fb4-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b5fb4-114">Not supported.</span></span>    |
-|<span data-ttu-id="b5fb4-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b5fb4-115">Application</span></span> | <span data-ttu-id="b5fb4-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5fb4-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="fdc1b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fdc1b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="fdc1b-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fdc1b-112">Sites.Read.All, Sites.ReadWrite.All</span></span>  |
+|<span data-ttu-id="fdc1b-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fdc1b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fdc1b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fdc1b-114">Not supported.</span></span>    |
+|<span data-ttu-id="fdc1b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fdc1b-115">Application</span></span> | <span data-ttu-id="fdc1b-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fdc1b-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b5fb4-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b5fb4-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fdc1b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fdc1b-117">HTTP request</span></span>
 
-<span data-ttu-id="b5fb4-118">Este método é acessível apenas por meio do OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="b5fb4-118">This method is accessible only through OneDrive for Business.</span></span>
+<span data-ttu-id="fdc1b-118">Esse método só pode ser acessado por meio do OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="fdc1b-118">This method is accessible only through OneDrive for Business.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/followedSites
 ```
-<span data-ttu-id="b5fb4-119">Obter uma lista dos sites seguidos por um usuário de destino com base em sua ID.</span><span class="sxs-lookup"><span data-stu-id="b5fb4-119">Get a list of the sites followed by a target user, based on its ID.</span></span>
+<span data-ttu-id="fdc1b-119">Obter uma lista dos sites seguidos por um usuário de destino, com base em sua ID.</span><span class="sxs-lookup"><span data-stu-id="fdc1b-119">Get a list of the sites followed by a target user, based on its ID.</span></span>
 
 ```http
 GET /users/{user-id}/followedSites
 ```
-<span data-ttu-id="b5fb4-120">**Observação:** Para acessar a lista de sites seguidos de outro usuário direcionado, você precisa de permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="b5fb4-120">**Note:** To access another targeted user's list of followed sites, you need application permissions.</span></span>
+<span data-ttu-id="fdc1b-120">**Observação:** Para acessar a lista de sites seguidos de outro usuário direcionado, você precisa de permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="fdc1b-120">**Note:** To access another targeted user's list of followed sites, you need application permissions.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b5fb4-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b5fb4-121">Optional query parameters</span></span>
-<span data-ttu-id="b5fb4-122">Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="b5fb4-122">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fdc1b-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="fdc1b-121">Optional query parameters</span></span>
+<span data-ttu-id="fdc1b-122">Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="fdc1b-122">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b5fb4-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b5fb4-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fdc1b-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fdc1b-123">Request headers</span></span>
 
-| <span data-ttu-id="b5fb4-124">Nome</span><span class="sxs-lookup"><span data-stu-id="b5fb4-124">Name</span></span>      |<span data-ttu-id="b5fb4-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="b5fb4-125">Description</span></span>|
+| <span data-ttu-id="fdc1b-124">Nome</span><span class="sxs-lookup"><span data-stu-id="fdc1b-124">Name</span></span>      |<span data-ttu-id="fdc1b-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="fdc1b-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b5fb4-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="b5fb4-126">Authorization</span></span>  | <span data-ttu-id="b5fb4-127">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="b5fb4-127">Bearer {code}.</span></span> <span data-ttu-id="b5fb4-128">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b5fb4-128">Required.</span></span>|
+| <span data-ttu-id="fdc1b-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="fdc1b-126">Authorization</span></span>  | <span data-ttu-id="fdc1b-127">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="fdc1b-127">Bearer {code}.</span></span> <span data-ttu-id="fdc1b-128">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fdc1b-128">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b5fb4-129">Corpo da Solicitação</span><span class="sxs-lookup"><span data-stu-id="b5fb4-129">Request Body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fdc1b-129">Corpo da Solicitação</span><span class="sxs-lookup"><span data-stu-id="fdc1b-129">Request Body</span></span>
 
-<span data-ttu-id="b5fb4-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b5fb4-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="fdc1b-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="fdc1b-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b5fb4-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="b5fb4-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fdc1b-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="fdc1b-131">Response</span></span>
 
-<span data-ttu-id="b5fb4-132">Este método retorna uma coleção de recursos do [site](../resources/site.md) que o usuário está seguindo.</span><span class="sxs-lookup"><span data-stu-id="b5fb4-132">This method returns a collection of [site](../resources/site.md) resources that the user is following.</span></span>
-<span data-ttu-id="b5fb4-133">Se nenhum site for encontrado, uma coleção vazia será retornada.</span><span class="sxs-lookup"><span data-stu-id="b5fb4-133">If no sites were found, an empty collection is returned.</span></span>
+<span data-ttu-id="fdc1b-132">Este método retorna um conjunto de [recursos de site](../resources/site.md) que o usuário está seguindo.</span><span class="sxs-lookup"><span data-stu-id="fdc1b-132">This method returns a collection of [site](../resources/site.md) resources that the user is following.</span></span>
+<span data-ttu-id="fdc1b-133">Se nenhum site for encontrado, uma coleção vazia será retornada.</span><span class="sxs-lookup"><span data-stu-id="fdc1b-133">If no sites were found, an empty collection is returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b5fb4-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b5fb4-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fdc1b-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fdc1b-134">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5fb4-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b5fb4-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="fdc1b-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fdc1b-135">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b5fb4-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="b5fb4-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fdc1b-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="fdc1b-136">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "sites-list-followed", "scopes": "sites.readwrite.all" } -->
 
 ```msgraph-interactive
 GET /me/followedSites
 ```
-# <a name="javascript"></a>[<span data-ttu-id="b5fb4-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b5fb4-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fdc1b-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fdc1b-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/sites-list-followed-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b5fb4-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b5fb4-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fdc1b-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fdc1b-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/sites-list-followed-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="b5fb4-139">C#</span><span class="sxs-lookup"><span data-stu-id="b5fb4-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fdc1b-139">C#</span><span class="sxs-lookup"><span data-stu-id="fdc1b-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/sites-list-followed-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="b5fb4-140">Java</span><span class="sxs-lookup"><span data-stu-id="b5fb4-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="fdc1b-140">Java</span><span class="sxs-lookup"><span data-stu-id="fdc1b-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/sites-list-followed-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="b5fb4-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="b5fb4-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="fdc1b-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="fdc1b-141">Response</span></span>
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

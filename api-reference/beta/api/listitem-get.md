@@ -6,38 +6,38 @@ title: Obter uma entrada de uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e66d74493cfb07c0b8ed0071f971037b77f30cf1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d3d2e431bfa73e92fd99a146ad9820b46d21b4dc
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971358"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475847"
 ---
-# <a name="get-an-item-in-a-list"></a><span data-ttu-id="5a8c1-103">Obter um item em uma lista</span><span class="sxs-lookup"><span data-stu-id="5a8c1-103">Get an item in a list</span></span>
+# <a name="get-an-item-in-a-list"></a><span data-ttu-id="a89b1-103">Obter um item em uma lista</span><span class="sxs-lookup"><span data-stu-id="a89b1-103">Get an item in a list</span></span>
 
-<span data-ttu-id="5a8c1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5a8c1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a89b1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a89b1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5a8c1-105">Retorna os metadados de um [item][] em uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="5a8c1-105">Returns the metadata for an [item][] in a [list][].</span></span>
+<span data-ttu-id="a89b1-105">Retorna os metadados de um [item][] em uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="a89b1-105">Returns the metadata for an [item][] in a [list][].</span></span>
 
 [lista]: ../resources/list.md
 [list]: ../resources/list.md
 [item]: ../resources/listitem.md
 
-## <a name="permissions"></a><span data-ttu-id="5a8c1-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="5a8c1-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a89b1-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="a89b1-108">Permissions</span></span>
 
-<span data-ttu-id="5a8c1-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5a8c1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a89b1-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a89b1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5a8c1-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5a8c1-111">Permission type</span></span>      | <span data-ttu-id="5a8c1-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5a8c1-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a89b1-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a89b1-111">Permission type</span></span>      | <span data-ttu-id="a89b1-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a89b1-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5a8c1-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5a8c1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="5a8c1-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5a8c1-114">Sites.Read.All, Sites.ReadWrite.All</span></span> |
-|<span data-ttu-id="5a8c1-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5a8c1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5a8c1-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5a8c1-116">Not supported.</span></span>    |
-|<span data-ttu-id="5a8c1-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5a8c1-117">Application</span></span> | <span data-ttu-id="5a8c1-118">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="5a8c1-118">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All</span></span> |
+|<span data-ttu-id="a89b1-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a89b1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="a89b1-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a89b1-114">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a89b1-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a89b1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a89b1-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a89b1-116">Not supported.</span></span>    |
+|<span data-ttu-id="a89b1-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a89b1-117">Application</span></span> | <span data-ttu-id="a89b1-118">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="a89b1-118">Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All</span></span> |
 
-> <span data-ttu-id="5a8c1-119">**Observação** : a permissão do aplicativo Sites.Manage.All será necessária se a lista do SharePoint tiver as configurações de aprovação de conteúdo ativadas.</span><span class="sxs-lookup"><span data-stu-id="5a8c1-119">**Note** : The application permission Sites.Manage.All is required if the SharePoint list has content approval settings turned on.</span></span> <span data-ttu-id="5a8c1-120">Caso contrário, o Microsoft Graph não recuperará itens de lista que têm um status de aprovação diferente de aprovado.</span><span class="sxs-lookup"><span data-stu-id="5a8c1-120">Otherwise, Microsoft Graph won't retrieve list items that have an approval status other than Approved.</span></span>
+> <span data-ttu-id="a89b1-119">**Observação**: a permissão do aplicativo Sites.Manage.All será necessária se a lista do SharePoint tiver as configurações de aprovação de conteúdo ativadas.</span><span class="sxs-lookup"><span data-stu-id="a89b1-119">**Note**: The application permission Sites.Manage.All is required if the SharePoint list has content approval settings turned on.</span></span> <span data-ttu-id="a89b1-120">Caso contrário, o Microsoft Graph não recuperará itens de lista que tenham um status de aprovação diferente de Aprovado.</span><span class="sxs-lookup"><span data-stu-id="a89b1-120">Otherwise, Microsoft Graph won't retrieve list items that have an approval status other than Approved.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="5a8c1-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5a8c1-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a89b1-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a89b1-121">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}
@@ -45,41 +45,41 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 ```
 
-## <a name="example"></a><span data-ttu-id="5a8c1-122">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5a8c1-122">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a89b1-122">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a89b1-122">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="5a8c1-123">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5a8c1-123">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="a89b1-123">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a89b1-123">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="5a8c1-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="5a8c1-124">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a89b1-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="a89b1-124">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-item" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
-# <a name="c"></a>[<span data-ttu-id="5a8c1-125">C#</span><span class="sxs-lookup"><span data-stu-id="5a8c1-125">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a89b1-125">C#</span><span class="sxs-lookup"><span data-stu-id="a89b1-125">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5a8c1-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5a8c1-126">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a89b1-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a89b1-126">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5a8c1-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5a8c1-127">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a89b1-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a89b1-127">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5a8c1-128">Java</span><span class="sxs-lookup"><span data-stu-id="5a8c1-128">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a89b1-128">Java</span><span class="sxs-lookup"><span data-stu-id="a89b1-128">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="5a8c1-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="5a8c1-129">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="a89b1-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="a89b1-129">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

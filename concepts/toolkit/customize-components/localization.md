@@ -1,26 +1,26 @@
 ---
-title: Localizando os componentes do Microsoft Graph Toolkit
-description: Use LocalizationHelper para localização dos componentes do Kit de Ferramentas do Microsoft Graph.
+title: Localizando os componentes de Toolkit do Microsoft Graph
+description: Use LocalizationHelper para localização do Microsoft Graph Toolkit componentes.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: a2bd44330e3b5e9476b86c9e9cd69aadcab43467
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 3fafc71f20079f5320d07a62b06a2a18f97c5831
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272521"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475412"
 ---
-# <a name="localizing-the-microsoft-graph-toolkit-components"></a><span data-ttu-id="f791c-103">Localizando os componentes do Microsoft Graph Toolkit</span><span class="sxs-lookup"><span data-stu-id="f791c-103">Localizing the Microsoft Graph Toolkit components</span></span>
+# <a name="localizing-the-microsoft-graph-toolkit-components"></a><span data-ttu-id="4cf6d-103">Localizando os componentes de Toolkit do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="4cf6d-103">Localizing the Microsoft Graph Toolkit components</span></span>
 
-<span data-ttu-id="f791c-104">A localização é um aspecto importante do desenvolvimento de aplicativos para dar suporte a usuários com vários requisitos de idioma globalmente.</span><span class="sxs-lookup"><span data-stu-id="f791c-104">Localization is an important aspect of application development to support users with various language requirements globally.</span></span>
+<span data-ttu-id="4cf6d-104">A localização é um aspecto importante do desenvolvimento de aplicativos para dar suporte a usuários com vários requisitos de idioma globalmente.</span><span class="sxs-lookup"><span data-stu-id="4cf6d-104">Localization is an important aspect of application development to support users with various language requirements globally.</span></span>
 
-<span data-ttu-id="f791c-105">Você pode localizado os componentes do Microsoft Graph Toolkit para garantir que a interface do usuário reflita o idioma de destino.</span><span class="sxs-lookup"><span data-stu-id="f791c-105">You can localize the Microsoft Graph Toolkit components to ensure that the UI reflects the target language.</span></span>
+<span data-ttu-id="4cf6d-105">Você pode localizar os componentes do Microsoft Graph Toolkit para garantir que a interface do usuário reflita o idioma de destino.</span><span class="sxs-lookup"><span data-stu-id="4cf6d-105">You can localize the Microsoft Graph Toolkit components to ensure that the UI reflects the target language.</span></span>
 
-## <a name="use-localizationhelper-to-add-localized-strings"></a><span data-ttu-id="f791c-106">Usar LocalizationHelper para adicionar cadeias de caracteres localizadas</span><span class="sxs-lookup"><span data-stu-id="f791c-106">Use LocalizationHelper to add localized strings</span></span>
+## <a name="use-localizationhelper-to-add-localized-strings"></a><span data-ttu-id="4cf6d-106">Use LocalizationHelper para adicionar cadeias de caracteres localizadas</span><span class="sxs-lookup"><span data-stu-id="4cf6d-106">Use LocalizationHelper to add localized strings</span></span>
 
-<span data-ttu-id="f791c-107">Nenhuma das cadeias de caracteres no kit de ferramentas está localizada, mas você pode fornecer suas próprias cadeias de caracteres localizadas e gerenciar idiomas diferentes por meio do mesmo processo usado para localização do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f791c-107">None of the strings in the toolkit are localized, but you can provide your own localized strings and manage different languages through the same process you use for localizing your app.</span></span> <span data-ttu-id="f791c-108">Para facilitar a localização, o kit de ferramentas expõe a `LocalizationHelper` classe estática.</span><span class="sxs-lookup"><span data-stu-id="f791c-108">To facilitate localization, the toolkit exposes the `LocalizationHelper` static class.</span></span>
+<span data-ttu-id="4cf6d-107">Nenhuma das cadeias de caracteres no kit de ferramentas está localizada, mas você pode fornecer suas próprias cadeias de caracteres localizadas e gerenciar idiomas diferentes por meio do mesmo processo usado para a localização do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="4cf6d-107">None of the strings in the toolkit are localized, but you can provide your own localized strings and manage different languages through the same process you use for localizing your app.</span></span> <span data-ttu-id="4cf6d-108">Para facilitar a localização, o kit de ferramentas expõe a `LocalizationHelper` classe estática.</span><span class="sxs-lookup"><span data-stu-id="4cf6d-108">To facilitate localization, the toolkit exposes the `LocalizationHelper` static class.</span></span>
 
-<span data-ttu-id="f791c-109">O exemplo a seguir mostra como localização de vários componentes.</span><span class="sxs-lookup"><span data-stu-id="f791c-109">The following example shows how to localize several components.</span></span>
+<span data-ttu-id="4cf6d-109">O exemplo a seguir mostra como localizar vários componentes.</span><span class="sxs-lookup"><span data-stu-id="4cf6d-109">The following example shows how to localize several components.</span></span>
 
 ```ts
 import { LocalizationHelper } from "@microsoft/mgt";
@@ -51,6 +51,7 @@ LocalizationHelper.strings = {
     "person-card": {
       sendEmailLinkSubtitle: "ارسل بريد الكتروني",
       startChatLinkSubtitle: "ابدأ الدردشة",
+      showExpandedDetailsButton: 'Show expanded details',
       showMoreSectionButton: "أظهر المزيد", // global declaration
     },
     "person-card-contact": {
@@ -67,13 +68,13 @@ LocalizationHelper.strings = {
 };
 ```
 
-<span data-ttu-id="f791c-110">Quando a propriedade for atribuída, todos os componentes pegarão automaticamente as novas cadeias de caracteres e renderizarão outra vez, permitindo que você altere as `strings` `LocalizationHelper` cadeias de caracteres dinamicamente.</span><span class="sxs-lookup"><span data-stu-id="f791c-110">When the `strings` property of `LocalizationHelper` is assigned, all components will automatically pick up the new strings and re-render, allowing you to change strings dynamically.</span></span> 
+<span data-ttu-id="4cf6d-110">Quando a propriedade de é atribuída, todos os componentes automaticamente pegarão as novas cadeias de caracteres e renderizarão, permitindo que você `strings` `LocalizationHelper` altere cadeias de caracteres dinamicamente.</span><span class="sxs-lookup"><span data-stu-id="4cf6d-110">When the `strings` property of `LocalizationHelper` is assigned, all components will automatically pick up the new strings and re-render, allowing you to change strings dynamically.</span></span> 
 
-<span data-ttu-id="f791c-111">As cadeias de caracteres podem ser definidas em nível global ou por componente (com a `_components:` propriedade).</span><span class="sxs-lookup"><span data-stu-id="f791c-111">The strings can be set at a global level or per component (with the `_components:` property).</span></span>
+<span data-ttu-id="4cf6d-111">As cadeias de caracteres podem ser definidas em nível global ou por componente (com a `_components:` propriedade).</span><span class="sxs-lookup"><span data-stu-id="4cf6d-111">The strings can be set at a global level or per component (with the `_components:` property).</span></span>
 
-## <a name="strings"></a><span data-ttu-id="f791c-112">Cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="f791c-112">Strings</span></span>
+## <a name="strings"></a><span data-ttu-id="4cf6d-112">Cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="4cf6d-112">Strings</span></span>
 
-### <a name="login"></a><span data-ttu-id="f791c-113">Logon</span><span class="sxs-lookup"><span data-stu-id="f791c-113">Login</span></span>
+### <a name="login"></a><span data-ttu-id="4cf6d-113">Logon</span><span class="sxs-lookup"><span data-stu-id="4cf6d-113">Login</span></span>
 
 ```ts
 "login": {
@@ -82,7 +83,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="people-picker"></a><span data-ttu-id="f791c-114">Seletor de Pessoas</span><span class="sxs-lookup"><span data-stu-id="f791c-114">People-Picker</span></span>
+### <a name="people-picker"></a><span data-ttu-id="4cf6d-114">Seletor de Pessoas</span><span class="sxs-lookup"><span data-stu-id="4cf6d-114">People-Picker</span></span>
 
 ```ts
 "people-picker": {
@@ -92,7 +93,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="teams-channel-picker"></a><span data-ttu-id="f791c-115">Teams-Channel-Picker</span><span class="sxs-lookup"><span data-stu-id="f791c-115">Teams-Channel-Picker</span></span>
+### <a name="teams-channel-picker"></a><span data-ttu-id="4cf6d-115">Teams-Channel-Picker</span><span class="sxs-lookup"><span data-stu-id="4cf6d-115">Teams-Channel-Picker</span></span>
 
 ```ts
 "teams-channel-picker": {
@@ -102,7 +103,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="tasks"></a><span data-ttu-id="f791c-116">Tarefas</span><span class="sxs-lookup"><span data-stu-id="f791c-116">Tasks</span></span>
+### <a name="tasks"></a><span data-ttu-id="4cf6d-116">Tarefas</span><span class="sxs-lookup"><span data-stu-id="4cf6d-116">Tasks</span></span>
 
 ```ts
 "tasks": {
@@ -113,7 +114,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="tasks-base"></a><span data-ttu-id="f791c-117">Tasks-Base</span><span class="sxs-lookup"><span data-stu-id="f791c-117">Tasks-Base</span></span>
+### <a name="tasks-base"></a><span data-ttu-id="4cf6d-117">Tasks-Base</span><span class="sxs-lookup"><span data-stu-id="4cf6d-117">Tasks-Base</span></span>
 
 ```ts
 "tasks-base": {
@@ -124,7 +125,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="todo"></a><span data-ttu-id="f791c-118">Todo</span><span class="sxs-lookup"><span data-stu-id="f791c-118">Todo</span></span>
+### <a name="todo"></a><span data-ttu-id="4cf6d-118">Todo</span><span class="sxs-lookup"><span data-stu-id="4cf6d-118">Todo</span></span>
 
 ```ts
 "todo": {
@@ -135,7 +136,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card"></a><span data-ttu-id="f791c-119">Cartão de pessoa</span><span class="sxs-lookup"><span data-stu-id="f791c-119">Person-Card</span></span>
+### <a name="person-card"></a><span data-ttu-id="4cf6d-119">Cartão de pessoa</span><span class="sxs-lookup"><span data-stu-id="4cf6d-119">Person-Card</span></span>
 
 ```ts
 "person-card": {
@@ -145,7 +146,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-contact"></a><span data-ttu-id="f791c-120">Person-Card-Contact</span><span class="sxs-lookup"><span data-stu-id="f791c-120">Person-Card-Contact</span></span>
+### <a name="person-card-contact"></a><span data-ttu-id="4cf6d-120">Person-Card-Contact</span><span class="sxs-lookup"><span data-stu-id="4cf6d-120">Person-Card-Contact</span></span>
 
 ```ts
 "person-card-contact": {
@@ -153,7 +154,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-organization"></a><span data-ttu-id="f791c-121">Person-Card-Organization</span><span class="sxs-lookup"><span data-stu-id="f791c-121">Person-Card-Organization</span></span>
+### <a name="person-card-organization"></a><span data-ttu-id="4cf6d-121">Person-Card-Organization</span><span class="sxs-lookup"><span data-stu-id="4cf6d-121">Person-Card-Organization</span></span>
 
 ```ts
 "person-card-organization": {
@@ -165,7 +166,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-messages"></a><span data-ttu-id="f791c-122">Person-Card-Messages</span><span class="sxs-lookup"><span data-stu-id="f791c-122">Person-Card-Messages</span></span>
+### <a name="person-card-messages"></a><span data-ttu-id="4cf6d-122">Person-Card-Messages</span><span class="sxs-lookup"><span data-stu-id="4cf6d-122">Person-Card-Messages</span></span>
 
 ```ts
 "person-card-messages": {
@@ -173,7 +174,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-files"></a><span data-ttu-id="f791c-123">Person-Card-Files</span><span class="sxs-lookup"><span data-stu-id="f791c-123">Person-Card-Files</span></span>
+### <a name="person-card-files"></a><span data-ttu-id="4cf6d-123">Person-Card-Files</span><span class="sxs-lookup"><span data-stu-id="4cf6d-123">Person-Card-Files</span></span>
 
 ```ts
 "person-card-files": {
@@ -182,7 +183,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-profile"></a><span data-ttu-id="f791c-124">Person-Card-Profile</span><span class="sxs-lookup"><span data-stu-id="f791c-124">Person-Card-Profile</span></span>
+### <a name="person-card-profile"></a><span data-ttu-id="4cf6d-124">Person-Card-Profile</span><span class="sxs-lookup"><span data-stu-id="4cf6d-124">Person-Card-Profile</span></span>
 
 ```ts
 "person-card-profile": {

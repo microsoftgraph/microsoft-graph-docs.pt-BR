@@ -6,30 +6,30 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Criar um novo listItem em uma lista.
 doc_type: apiPageType
-ms.openlocfilehash: 4a5d58dc1c3a37aaa540843c990c399809cfc8f5
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 968e7e9b9e68ad90c31be50def27ee60b3a9a4b4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238789"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473746"
 ---
-# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="4a92d-103">Criar um novo item em uma lista</span><span class="sxs-lookup"><span data-stu-id="4a92d-103">Create a new item in a list</span></span>
+# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="3b55a-103">Criar um novo item em uma lista</span><span class="sxs-lookup"><span data-stu-id="3b55a-103">Create a new item in a list</span></span>
 
-<span data-ttu-id="4a92d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4a92d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3b55a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3b55a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4a92d-105">Criar um novo [listItem][] em uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="4a92d-105">Create a new [listItem][] in a [list][].</span></span>
+<span data-ttu-id="3b55a-105">Criar um novo [listItem][] em uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="3b55a-105">Create a new [listItem][] in a [list][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4a92d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4a92d-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3b55a-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3b55a-106">Permissions</span></span>
 
-<span data-ttu-id="4a92d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4a92d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3b55a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3b55a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4a92d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4a92d-109">Permission type</span></span>      | <span data-ttu-id="4a92d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4a92d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3b55a-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3b55a-109">Permission type</span></span>      | <span data-ttu-id="3b55a-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3b55a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4a92d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4a92d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4a92d-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a92d-112">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4a92d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4a92d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4a92d-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4a92d-114">Not supported.</span></span>    |
-|<span data-ttu-id="4a92d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4a92d-115">Application</span></span> | <span data-ttu-id="4a92d-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a92d-116">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="3b55a-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3b55a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3b55a-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b55a-112">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="3b55a-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3b55a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b55a-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3b55a-114">Not supported.</span></span>    |
+|<span data-ttu-id="3b55a-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3b55a-115">Application</span></span> | <span data-ttu-id="3b55a-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b55a-116">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4a92d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4a92d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3b55a-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3b55a-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,19 +37,19 @@ ms.locfileid: "50238789"
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 ```
 
-## <a name="request-body"></a><span data-ttu-id="4a92d-118">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4a92d-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3b55a-118">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3b55a-118">Request body</span></span>
 
-<span data-ttu-id="4a92d-119">No corpo da solicitação, forneça uma representação JSON do recurso [listItem][] a criar.</span><span class="sxs-lookup"><span data-stu-id="4a92d-119">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
+<span data-ttu-id="3b55a-119">No corpo da solicitação, forneça uma representação JSON do recurso [listItem][] a criar.</span><span class="sxs-lookup"><span data-stu-id="3b55a-119">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4a92d-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4a92d-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3b55a-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3b55a-120">Example</span></span>
 
-<span data-ttu-id="4a92d-121">Aqui está um exemplo de como criar um novo item de lista genérica.</span><span class="sxs-lookup"><span data-stu-id="4a92d-121">Here is an example of how to create a new generic list item.</span></span>
+<span data-ttu-id="3b55a-121">Aqui está um exemplo de como criar um novo item de lista genérica.</span><span class="sxs-lookup"><span data-stu-id="3b55a-121">Here is an example of how to create a new generic list item.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4a92d-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="4a92d-122">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3b55a-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="3b55a-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
@@ -61,32 +61,32 @@ Content-Type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="4a92d-123">C#</span><span class="sxs-lookup"><span data-stu-id="4a92d-123">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3b55a-123">C#</span><span class="sxs-lookup"><span data-stu-id="3b55a-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4a92d-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4a92d-124">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3b55a-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3b55a-124">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4a92d-125">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4a92d-125">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3b55a-125">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3b55a-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4a92d-126">Java</span><span class="sxs-lookup"><span data-stu-id="4a92d-126">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3b55a-126">Java</span><span class="sxs-lookup"><span data-stu-id="3b55a-126">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="4a92d-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="4a92d-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3b55a-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b55a-127">Response</span></span>
 
-<span data-ttu-id="4a92d-128">Se for bem-sucedido, esse método retornará um [listItem][] no corpo da resposta da lista criada.</span><span class="sxs-lookup"><span data-stu-id="4a92d-128">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
+<span data-ttu-id="3b55a-128">Se for bem-sucedido, esse método retornará um [listItem][] no corpo da resposta da lista criada.</span><span class="sxs-lookup"><span data-stu-id="3b55a-128">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -109,7 +109,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="4a92d-129">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="4a92d-129">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="4a92d-130">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="4a92d-130">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="3b55a-129">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="3b55a-129">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="3b55a-130">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="3b55a-130">Default properties will be returned from the actual call.</span></span>
 
 [lista]: ../resources/list.md
 [list]: ../resources/list.md
