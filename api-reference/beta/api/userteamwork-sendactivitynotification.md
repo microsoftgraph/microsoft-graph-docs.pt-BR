@@ -1,23 +1,23 @@
 ---
 title: 'userTeamwork: sendActivityNotification'
-description: Envie uma notificação de feed de atividades para um usuário.
+description: Envie uma notificação de feed de atividade para um usuário.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6a772894e46dd553048ae3d429a9af782173be7f
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 97d623906a54c7fc6f4cd44435d9edd4b52ce6ab
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910714"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516315"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork: sendActivityNotification
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Envie uma notificação de feed de atividades para um usuário. Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, confira [o envio de notificações de atividades do Teams.](/graph/teams-send-activityfeednotifications)
+Envie uma notificação de feed de atividade para um usuário. Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, consulte [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -52,12 +52,12 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Tópico da notificação. Especifica o recurso que está sendo falado.|
-|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto do [aplicativo Teams.](/microsoftteams/platform/overview)|
+|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto do [aplicativo teams.](/microsoftteams/platform/overview)|
 |chainId|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo `chainId` em solicitações subsequentes para substituir a notificação anterior.|
-|previewText|[itemBody](../resources/itembody.md)|Texto de visualização para a notificação. O Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
-|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidos na entrada do feed de atividades correspondente no `activityType` manifesto do aplicativo do [Teams.](/microsoftteams/platform/overview)|
+|previewText|[itemBody](../resources/itembody.md)|Visualizar texto para a notificação. O Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
+|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade correspondente `activityType` ao manifesto do aplicativo do [Teams.](/microsoftteams/platform/overview)|
 
-Os seguintes recursos são suportados ao definir `source` o valor da propriedade **de** tópico `entityUrl` como:
+Os seguintes recursos são suportados ao definir o `source` valor da propriedade **topic** como `entityUrl` :
 
 - [teamsAppInstallation](../resources/teamsappinstallation.md)
 - [teamsCatalogApp](../resources/teamscatalogapp.md)
@@ -98,7 +98,6 @@ Content-Type: application/json
         }
     ]
 }
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/userteamwork-sendactivitynotification-csharp-snippets.md)]
@@ -129,7 +128,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 2: Notificar um usuário sobre um evento usando um tópico personalizado
+### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 2: Notificar um usuário sobre um evento usando tópico personalizado
 
 Se você deseja vincular um aspecto que não é representado pelo Microsoft Graph ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado `topic` `text` para ele. `webUrl` é necessário ao usar a `topic` fonte como `text` .
 
