@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso regionalFormatOverrides
-description: Um recurso representando substituições regionais de formatação para calendários, datas e horas.
+title: Tipo de recurso regionalFormatOverrides
+description: Um recurso que representa substituições de formatação regional para calendários, datas e horários.
 localization_priority: Normal
 author: jasonbro
-ms.prod: settings
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 437b67f6a99017bb20096dbd20451b7662145cbd
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 2b4046ad8ec6b2d646d1dc2d93cbe7bed205cbad
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777593"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516063"
 ---
-# <a name="regionalformatoverrides-resource-type"></a>tipo de recurso regionalFormatOverrides
+# <a name="regionalformatoverrides-resource-type"></a>Tipo de recurso regionalFormatOverrides
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma coleção de cadeias de caracteres que representam substituições de formatação para calendários, datas e horas. 
+Uma coleção de cadeias de caracteres que representa substituições de formatação para calendários, datas e horários. 
 
 ## <a name="properties"></a>Propriedades
 
-|Propriedade             |Tipo                 |Descrição                                                    |
-|---------------------|---------------------|---------------------------------------------------------------|
-|calendar             |Cadeia de caracteres               |O calendário a ser usado, por exemplo, calendário gregoriano.<br><br>Retornado por padrão.|                   
-|firstDayOfWeek       |String               |O primeiro dia da semana a ser usado, por exemplo, domingo.<br><br>Retornado por padrão.|
-|shortDateFormat      |Cadeia de caracteres               |O formato de data de curto prazo a ser usado para exibir datas.<br><br>Retornado por padrão.|
-|longDateFormat       |Cadeia de caracteres               |O formato de data e hora por extenso a ser usado para exibir datas.<br><br>Retornado por padrão.|
-|shortTimeFormat      |Cadeia de caracteres               |O formato de tempo curto a ser usado para exibir o tempo.<br><br>Retornado por padrão.|
-|longTimeFormat       |Cadeia de caracteres               |O formato de hora longa a ser usado para exibir o tempo.<br><br>Retornado por padrão.|
-|timeZone             |Cadeia de caracteres               |O fuso horário a ser usado para exibir o tempo.<br><br>Retornado por padrão.|
+|Propriedade             |Tipo                     |Descrição                                                    |
+|---------------------|-------------------------|---------------------------------------------------------------|
+|calendar             |String                   |O calendário a ser usado, por exemplo, Calendário Gregoriano.<br><br>Retornado por padrão.|                   
+|firstDayOfWeek       |microsoft.graph.dayOfWeek|O primeiro dia da semana a ser usado, por exemplo, domingo.<br><br>Retornado por padrão.|
+|shortDateFormat      |String                   |O formato de tempo curto a ser usado para exibição de datas.<br><br>Retornado por padrão.|
+|longDateFormat       |String                   |O formato de data longa a ser usado para exibição de datas.<br><br>Retornado por padrão.|
+|shortTimeFormat      |String                   |O formato de tempo curto a ser usado para exibição de tempo.<br><br>Retornado por padrão.|
+|longTimeFormat       |String                   |O formato de longo tempo a ser usado para exibição de tempo.<br><br>Retornado por padrão.|
+|timeZone             |Cadeia de caracteres                   |O timezone a ser usado para exibição de tempo.<br><br>Retornado por padrão.|
 
 ## <a name="json-representation"></a>Representação JSON
 
-A seguir está uma definição de JSON do recurso.
+A seguir está uma definição JSON do recurso.
 
 <!--{
   "blockType": "resource",

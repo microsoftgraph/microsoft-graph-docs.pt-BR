@@ -1,16 +1,16 @@
 ---
 title: Atualizar onlineMeeting
-description: Atualizar as propriedades de uma reunião online.
+description: Atualize as propriedades de uma reunião online.
 author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6699071afe0fb8b7e6ec2183e29785558a2c5d48
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: e2abb74cee9e57682b1f37ace3bd3f0d7c33c72f
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292165"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516084"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize **startDateTime**, **endDateTime**,  **participantes** e propriedades de assunto do [onlineMeeting especificado.](../resources/onlinemeeting.md)
+Atualize as propriedades do objeto [onlineMeeting](../resources/onlinemeeting.md) especificado.
+
+Consulte [a seção Solicitar corpo](#request-body) para a lista de propriedades que suportam a atualização.
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,10 +31,10 @@ Atualize **startDateTime**, **endDateTime**,  **participantes** e propriedades d
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política a atualizar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
+> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para atualizar uma reunião online em nome desse usuário (ID do usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para atualizar o onlineMeeting especificado pela ID de reunião com o token delegado:
+Para atualizar o onlineMeeting especificado por meio da ID de reunião com o token delegado:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/onlineMeetings/{meetingId}
@@ -45,8 +47,8 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > **Observações:**
-> - `userId`é a ID de objeto de um usuário no portal de gerenciamento de usuários [do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte política [de acesso ao aplicativo.](/graph/cloud-communication-online-meeting-application-access-policy)
-> - `meetingId`é a **id de** um [objeto onlineMeeting.](../resources/onlinemeeting.md)
+> - `userId`é a ID do objeto de um usuário no portal de gerenciamento [de usuários do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
+> - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição                 |
@@ -55,22 +57,39 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | Content-type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [onlineMeeting](../resources/onlinemeeting.md). Somente as **propriedades startDateTime**, **endDateTime**, **participantes** e **assunto** podem ser modificadas. **StartDateTime e** **endDateTime** devem aparecer em pares.
+A tabela abaixo lista as propriedades que podem ser atualizadas. No corpo da solicitação, inclua apenas as propriedades que precisam ser atualizadas, com as seguintes exceções:
+
+- Ajustar a data/hora inicial ou final de uma reunião online sempre requer as propriedades **startDateTime** e **endDateTime** no corpo da solicitação.
+- Ajustar o **campo de** participantes  da propriedade participantes, como adicionar ou remover um participante à reunião, sempre requer a lista completa de participantes no corpo da solicitação.
+
+| Propriedade             | Tipo                                                         | Descrição                                                                                                                                    |
+|----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| startDateTime        | DateTime                                                     | O horário de início da reunião em UTC.                                                                                                                 |
+| endDateTime          | DateTime                                                     | A hora de término da reunião em UTC.                                                                                                                   |
+| assunto              | String                                                       | O assunto da reunião online.                                                                                                             |
+| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Os participantes associados à reunião online. Isso inclui o organizador e os participantes.                                            |
+| isEntryExitAnnounced | Booliano                                                      | Se os chamadores ingressarão ou sairão.                                                                                         |
+| lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Especifica quais participantes podem ignorar o lobby da reunião.                                                                                     |
+| allowedPresenters    | onlineMeetingPresenters                                      | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis são todos, organização, roleIsPresenter, organizador e unknownFutureValue. |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-update-the-startdatetime-enddatetime-and-subject"></a>Exemplo 1: atualizar o startDateTime, endDateTime e assunto
 
-# <a name="http"></a>[HTTP](#tab/http)
+#### <a name="request"></a>Solicitação
+
+> **Observação:** A ID da reunião foi truncada para capacidade de leitura.
+
 <!-- {
   "blockType": "request",
-  "name": "patch_onlinemeeting_request"
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
+  "name": "update_start_end_subject"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{id}
+PATCH https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
 Content-Type: application/json 
 
 {
@@ -79,33 +98,15 @@ Content-Type: application/json
   "subject": "Patch Meeting Subject"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/patch-onlinemeeting-request-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/patch-onlinemeeting-request-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>Resposta
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/patch-onlinemeeting-request-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/patch-onlinemeeting-request-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### <a name="response"></a>Resposta
-
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
 
 ```http
@@ -113,7 +114,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "id":"{id}",
+   "id":"MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi",
    "creationDateTime":"2020-07-03T00:23:39.444642Z",
    "startDateTime":"2020-09-09T21:33:30.8546353Z",
    "endDateTime":"2020-09-09T22:03:30.8566356Z",
@@ -142,10 +143,74 @@ Content-Type: application/json
    },
    "audioConferencing":{
       "conferenceId":"id",
-      "tollNumber":"number",
-      "tollFreeNumber":null,
+      "tollNumber":"+1-900-555-0100",
+      "tollFreeNumber":"+1-800-555-0100",
       "dialinUrl":"url"
    }
+}
+```
+
+#### <a name="example-2-update-the-lobbybypasssettings"></a>Exemplo 2: atualizar o lobbyBypassSettings
+> **Observação:** A ID da reunião foi truncada para capacidade de leitura.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
+  "name": "update_lobbyBypassSettings"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi
+Content-Type: application/json 
+
+{
+  "lobbyBypassSettings": {
+      "isDialInBypassEnabled": true
+  }
+}
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi",
+    "creationDateTime":"2020-07-03T00:23:39.444642Z",
+    "startDateTime":"2020-09-09T21:33:30.8546353Z",
+    "endDateTime":"2020-09-09T22:03:30.8566356Z",
+    "joinWebUrl":"(redacted)",
+    "subject":"Patch Meeting Subject",
+    "autoAdmittedUsers": "EveryoneInCompany",
+    "isEntryExitAnnounced": true,
+    "allowedPresenters": "everyone",
+    "videoTeleconferenceId": "(redacted)",
+    "participants": {
+        "organizer": {
+            "upn": "(redacted)",
+            "role": "presenter",
+            "identity": {
+                "user": {
+                    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                    "displayName": null,
+                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                    "identityProvider": "AAD"
+                }
+            }
+        },
+        "attendees": [],
+    },
+    "lobbyBypassSettings": {
+        "scope": "organization",
+        "isDialInBypassEnabled": true
+    }
 }
 ```
 

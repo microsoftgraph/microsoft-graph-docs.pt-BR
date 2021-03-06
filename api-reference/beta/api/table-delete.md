@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 234e9833a2f18b2060129958b59109fa025e9822
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 23ad82f1f3341550b3e3a4e37b7d451774b5b2d0
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087800"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516245"
 ---
 # <a name="table-delete"></a>Table: delete
 
@@ -31,8 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/delete
-POST /workbook/worksheets/{id|name}/tables/{id|name}/delete
+DELETE /workbook/tables/{id|name}
+DELETE /workbook/worksheets/{id|name}/tables/{id|name}
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -56,7 +56,7 @@ Este é um exemplo da solicitação.
   "name": "table_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/delete
+DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}
 ```
 
 ##### <a name="response"></a>Resposta
