@@ -588,6 +588,8 @@ items:
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Criar uma guia do Microsoft Teams
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Criar um aplicativo Electron
+                href: toolkit/get-started/build-an-electron-app.md
           - name: Provedores
             items:
               - name: Usando os provedores
@@ -598,6 +600,8 @@ items:
                 href: toolkit/providers/sharepoint.md
               - name: Provedor do Microsoft Teams
                 href: toolkit/providers/teams.md
+              - name: Provedor de Electron
+                href: toolkit/providers/electron.md
               - name: Provedor de proxy
                 href: toolkit/providers/proxy.md
               - name: Provedor personalizado
