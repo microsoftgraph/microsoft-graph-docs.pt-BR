@@ -1,16 +1,16 @@
 ---
 title: Obter shiftPreferences
-description: Obtenha uma preferência de mudança por ID.
+description: Obter uma preferência de turno por ID.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b5c6d26eb62a97a2c90e0d376435e9e524523110
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 247e4626c35eb9b0d9d3cf82d5ebc32621922755
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969159"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516798"
 ---
 # <a name="get-shiftpreferences"></a>Obter shiftPreferences
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [shiftPreferences](../resources/shiftpreferences.md) por ID.
+Recupere as propriedades e as relações de um [objeto shiftPreferences](../resources/shiftpreferences.md) por ID.
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,7 +40,7 @@ GET /users/{userId}/settings/shiftPreferences
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte a parâmetros de consulta OData para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta OData para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [shiftPreferences](../resources/shiftpreferences.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto shiftPreferences](../resources/shiftpreferences.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -67,7 +67,7 @@ Este é um exemplo de solicitação.
   "name": "shift-get"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/shiftPreferences
+GET https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: 4373bd4dcc911f08504e9716b1cc19d8d177df16
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: de3a4fa33e44788442d0a2ccf1abb4df80e0ea0d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092670"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516694"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -37,8 +37,8 @@ As extensões abertas têm suporte nos recursos a seguir nas versões correspond
 | [Organização](organization.md) | GA |
 | [Contato pessoal](contact.md) | GA |
 | [Usuário](user.md) | GA |
-| [Tarefa](todotask.md)  | GA ||
-| [Lista de tarefas](todotasklist.md)  | GA ||
+| [Tarefa](todotask.md)  | GA |
+| [Lista de tarefas](todotasklist.md)  | GA |
 
 ## <a name="outlook-specific-considerations"></a>Considerações específicas do Outlook
 
@@ -87,7 +87,8 @@ Nenhuma
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Criar](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(em uma instância de recurso existente) ou um novo contato [,](contact.md) [evento](event.md) [,](message.md)mensagem , [postagem](post.md), [todoTask](todotask.md)ou [todoTaskList](todotasklist.md) que contém um objeto openTypeExtension . | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.||[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Leia propriedades e relações do objeto openTypeExtension.|
+|[Criar](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(em uma instância de recurso existente), ou um novo contato [,](contact.md)evento [,](event.md)mensagem [,](message.md) [postagem,](post.md) [todoTask](todotask.md)ou [todoTaskList](todotasklist.md) que contém um objeto openTypeExtension. | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.|
+|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Leia propriedades e relações do objeto openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Atualize o objeto openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Nenhuma |Exclua um objeto openTypeExtension. |
 

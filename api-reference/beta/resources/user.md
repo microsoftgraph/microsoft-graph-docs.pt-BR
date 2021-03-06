@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 797d90c7242b27e7734f5c0f4729e410c3ac3c2a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7192fcfca0b6f8305965d052bb565a15f6f820db
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442660"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516476"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -165,7 +165,7 @@ Esse recurso permite:
 | assignedLicenses | Coleção [assignedLicense](assignedlicense.md) | As licenças que são atribuídas ao usuário. <br><br>Retornado apenas em `$select`. Não anulável. |
 | assignedPlans | Coleção [assignedPlan](assignedplan.md) | Os planos que são atribuídos ao usuário. <br><br>Retornado apenas em `$select`. Somente leitura. Não anulável. |
 | birthday | DateTimeOffset | O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `'2014-01-01T00:00:00Z'` <br><br>Retornado apenas em `$select`. |
-| businessPhones | Coleção de cadeias de caracteres | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade. <br><br>Retornado por padrão. Somente leitura para usuários sincronizados do diretório local. |
+| businessPhones | String collection | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade. <br><br>Retornado por padrão. Somente leitura para usuários sincronizados do diretório local. |
 | city | String | A cidade em que o usuário está localizado. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
 | companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O tamanho máximo do nome da empresa é 64 caracteres.<br><br>Retornado apenas em `$select`. |
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
@@ -219,7 +219,7 @@ Esse recurso permite:
 | preferredLanguage | String | O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US". <br><br>Retornado por padrão. |
 | preferredName | String | O nome preferencial do usuário. <br><br>Retornado apenas em `$select`. |
 | provisionedPlans | coleção [provisionedPlan](provisionedplan.md) | Os planos que estão provisionados para o usuário. <br><br>Retornado apenas em `$select`. Somente leitura. Não anulável. |
-| proxyAddresses | Coleção de cadeias de caracteres | Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado apenas em `$select`. Somente leitura, Não anulável. Oferece suporte para `$filter`. |
+| proxyAddresses | String collection | Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado apenas em `$select`. Somente leitura, Não anulável. Oferece suporte para `$filter`. |
 | refreshTokensValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em `$select`. Somente leitura. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) para redefinir. |
 | responsibilities | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas responsabilidades. <br><br>Retornado apenas em `$select`. |
 | schools | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar as escolas que frequentou. <br><br>Retornado apenas em `$select`. |
@@ -260,7 +260,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 #### <a name="agegroup-values"></a>ageGroup values
 
 | Member    | Descrição|
-|:---------------|:--------|:----------|
+|:---------------|:--------|
 |null|Valor padrão, nenhum **ageGroup** foi definido para o usuário.|
 |menor|O usuário é considerado um menor.|
 |notAdult|O usuário é de um país que tem regulamentos estatutários (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior que o limite superior de idade infantil (por país) e menor do que o limite inferior de idade adulta (estipulado com base em cada país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
@@ -292,7 +292,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |drive|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
 |events|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
-|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Anulável.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o usuário. Anulável.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
 |insights|[itemInsights](iteminsights.md) | Somente leitura. Anulável.|
 |joinedGroups|Coleção [group](group.md)| Somente leitura. Anulável.|

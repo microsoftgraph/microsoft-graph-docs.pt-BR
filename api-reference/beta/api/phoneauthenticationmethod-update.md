@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 23f3bad117f22ab56a28443238b75bf7e0b0498b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: af68131407948d1986a74e6f6d97540891f617b4
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447676"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516805"
 ---
 # <a name="update-phoneauthenticationmethod"></a>Atualizar phoneAuthenticationMethod
 
@@ -32,16 +32,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|:---------------------------------------|:-------------------------|
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e3e2fd05c8d4f2d3f3036c55a6f9c817e2ba9c91
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 006fd4ae3bb69157e18235a6dd31d1d090533205
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436306"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515874"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>Obter emailAuthenticationMethodConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 Para cenários delegados, o administrador precisa de uma das seguintes [funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
@@ -42,7 +42,7 @@ Para cenários delegados, o administrador precisa de uma das seguintes [funçõe
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfiguration/email
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -69,7 +69,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 -->
 
 ```http
-GET /policies/authenticationMethodsPolicy/email
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ### <a name="response"></a>Resposta

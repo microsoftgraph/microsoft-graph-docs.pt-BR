@@ -6,12 +6,12 @@ ms.author: inbarc
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a7a0b7af4cd5a7040f7cef3360ef153a5af7da60
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 11faa81c2d7b9e1183f0c84c0917e9db6b94c55b
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475804"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516399"
 ---
 # <a name="list-temporaryaccesspassauthenticationmethods"></a>Listar temporaryAccessPassAuthenticationMethods
 Namespace: microsoft.graph
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |

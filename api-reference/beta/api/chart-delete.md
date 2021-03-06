@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 035ecc67d35caa719524de710c684c50dca340cd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cdd0c5987ce7ee73b3185030d72d97e616c9eebf
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987033"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515790"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
@@ -24,14 +24,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Files.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/delete
+DELETE /workbook/worksheets/{id|name}/charts/{name}
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -55,7 +55,7 @@ Este é um exemplo da solicitação.
   "name": "chart_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/delete
+DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
 ```
 
 ##### <a name="response"></a>Resposta

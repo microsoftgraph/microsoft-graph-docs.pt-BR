@@ -5,12 +5,12 @@ author: jahsu
 localization_priority: Priority
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 03049f27b367d4842f80f63e142752c5816039e9
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 0d4cbaabb6fc05df3d9a58d1ced467bee0b8ef04
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934916"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515727"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>Assine para alterar notificações de APIs de impressão na nuvem usando o Microsoft Graph
 
@@ -208,4 +208,3 @@ Para obter detalhes sobre como recuperar uma lista de assinaturas de webhook, co
 
 - Para saber mais sobre a API de impressão na nuvem do Microsoft Graph, confira [Visão geral da API de impressão na nuvem da Impressão Universal](/graph/universal-print-concept-overview). 
 - Para ver sugestões ou comentários sobre a API de impressão na nuvem do Microsoft Graph, visite a [Comunidade de tecnologia da Impressão Universal](https://aka.ms/community/UniversalPrint).
-

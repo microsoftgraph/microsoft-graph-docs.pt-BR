@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 56d5e5223480f09bb9d2626a48938a783fbaa2bc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5089bc5920cd01fff5f159c919142223640a0b32
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447777"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516714"
 ---
 # <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>Obter passwordlessMicrosoftAuthenticatorAuthenticationMethod (preterido)
 Namespace: microsoft.graph
@@ -30,16 +30,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|:---------------------------------------|:-------------------------|
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)

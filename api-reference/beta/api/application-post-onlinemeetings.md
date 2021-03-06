@@ -1,16 +1,16 @@
 ---
 title: Criar ReuniãoOnline
 description: Crie uma reunião online em nome de um usuário específico no corpo da solicitação.
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c41ffb69bcc539e27f6febdce38cd232338579f9
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 255c7e02b601b05b54b80ed7dbb3bd15df8925d9
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50291948"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515587"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 

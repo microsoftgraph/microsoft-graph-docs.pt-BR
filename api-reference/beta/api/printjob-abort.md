@@ -1,16 +1,16 @@
 ---
 title: 'printJob: abort'
-description: Anula um trabalho de impressão.
+description: Aborte um trabalho de impressão.
 author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: c92786af585eed2ba2b405fb9c6042c96b415a7b
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: cfd82c356463f3e642d5817ff0203c2bec8627db
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784835"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515447"
 ---
 # <a name="printjob-abort"></a>printJob: abort
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Anula um trabalho de impressão. Somente aplicativos que usam permissões de aplicativo podem anular um trabalho de impressão.
+Aborte um trabalho de impressão. Somente aplicativos que usam permissões de aplicativo podem cancelar um trabalho de impressão.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter a permissão de aplicativo Printer.Read.All ou Printer.ReadWrite.All.
+Além das permissões a seguir, o locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter a permissão Printer.Read.All ou Printer.ReadWrite.All.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Não suportado |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Aplicativo| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,11 +42,11 @@ POST /print/printers/{id}/jobs/{id}/abort
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, opcionalmente, você pode fornecer o motivo pelo qual o trabalho está sendo anulado.
+No corpo da solicitação, opcionalmente, você pode fornecer o motivo pelo qual o trabalho está sendo abortado.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|motivo|String|Motivo pelo qual o trabalho está sendo anulado.|
+|motivo|Cadeia de caracteres|Motivo pelo qual o trabalho está sendo abortado.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.

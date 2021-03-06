@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 235257c4df9c24dec33aad15e11b2318e0fb8e30
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: eb8933a141dcd343ab26a5d5809844ee79c39697
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447682"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516490"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod: disableSmsSignIn
 
@@ -30,16 +30,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|:---------------------------------------|:-------------------------|
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)

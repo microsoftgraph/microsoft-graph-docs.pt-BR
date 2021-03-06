@@ -1,16 +1,16 @@
 ---
 title: Obter passwordAuthenticationMethod
-description: Recupere as propriedades e os relacionamentos do objeto passwordauthenticationmethod.
+description: Recupere as propriedades e as relações do objeto passwordauthenticationmethod.
 localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cf24e7b30a2cd38830a4291bf4a698b728a7b0cf
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 2112788ce5127326e0e82ef91c1068b5b56ec14a
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796651"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515588"
 ---
 # <a name="get-passwordauthenticationmethod"></a>Obter passwordAuthenticationMethod
 
@@ -18,33 +18,33 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto de método [de autenticação de](../resources/passwordauthenticationmethod.md) senha. 
+Recupere as propriedades e as relações de um objeto de método [de autenticação de](../resources/passwordauthenticationmethod.md) senha. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="permissions-acting-on-self"></a>Permissões agindo por si só
+### <a name="permissions-acting-on-self"></a>Permissões agindo em si mesmo
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|:---------------------------------------|:-------------------------|
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administração global
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+* Administrador global
 * Leitor global
 * Administrador de autenticação privilegiada
-* Administrador de autenticação (vê apenas números de telefone com máscara)
+* Administrador de autenticação (apenas vê números de telefone mascarados)
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,7 +57,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -71,7 +71,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e o objeto `200 OK` [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

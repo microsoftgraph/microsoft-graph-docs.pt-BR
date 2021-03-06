@@ -6,12 +6,12 @@ title: Mover um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cca9334e8e9504a81a978c9e7673cc8c4bc44f9b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 29c68df5ed2ff96953ae4a17085cc4e0e0cb774e
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963605"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515532"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Mover um DriveItem para uma nova pasta
 
@@ -41,7 +41,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 PATCH /drives/{drive-id}/items/{item-id}
-PATCH /groups/{group-id}/drive/{item-id}
+PATCH /groups/{group-id}/drive/items/{item-id}
 PATCH /me/drive/items/{item-id}
 PATCH /sites/{site-id}/drive/items/{item-id}
 PATCH /users/{user-id}/drive/items/{item-id}
@@ -124,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a>Respostas de erro
+## <a name="error-responses"></a>Respostas de erros
 
 Confira mais informações sobre como os erros são retornados em [Respostas de Erros][error-response].
 

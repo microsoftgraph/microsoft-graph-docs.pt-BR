@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: d83530ab3da1b105bc49dce41fb8878607a8c094
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 863a64bd0182d43c32756b6b214753a498d400df
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445763"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515755"
 ---
 # <a name="update-reviewsetquery"></a>Atualizar reviewSetQuery
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,8 +50,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| displayName | String | Nome de exibição para eles revisarem a consulta de conjunto. |
-| consulta | String | A cadeia de caracteres de consulta na consulta KQL (Keyword Query Language). Para obter detalhes, consulte [Campos de metadados de documento](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). |
+| displayName | Cadeia de caracteres | Nome de exibição para eles revisarem a consulta de conjunto. |
+| consulta | Cadeia de caracteres | A cadeia de caracteres de consulta na consulta KQL (Keyword Query Language). Para obter detalhes, consulte [Campos de metadados de documento](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). |
 
 ## <a name="response"></a>Resposta
 
@@ -68,7 +68,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-42f4-89fe-84d5198ddedf/reviewSets('b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8/queries/6b5358b0-2ce2-4369-b9cf-65392fe56807
+PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-42f4-89fe-84d5198ddedf/reviewSets/b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8/queries/6b5358b0-2ce2-4369-b9cf-65392fe56807
 Content-type: application/json
 
 {

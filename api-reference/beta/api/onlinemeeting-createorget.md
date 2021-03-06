@@ -1,16 +1,16 @@
 ---
 title: 'onlineMeeting: createOrGet'
 description: Crie uma reunião online com uma ID externa especificada personalizada. Se a ID externa já existir, essa API retornará o objeto onlineMeeting com essa ID externa.
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b87e7c0360302bc181811d5550834e9f8d4ca99e
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 3794fd019831d1fb89c41237136772f8c74cf1e0
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293026"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516383"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -32,16 +32,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para criar ou obter uma reunião online com ID externa em nome desse usuário (ID de usuário especificada no caminho da solicitação).
+> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para criar ou obter uma reunião online com a ID externa em nome desse usuário (ID do usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para chamar a API **createOrGet** com o token delegado:
+Para chamar a API **createOrGet** com token delegado:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
-Para chamar a API **createOrGet** com o token de aplicativo:
+Para chamar a API **createOrGet** com token de aplicativo:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/createOrGet
@@ -60,29 +60,29 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro     | Tipo                                                       | Descrição                                                                                          |
 | :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
-| chatInfo      | [chatInfo](../resources/chatinfo.md)                       | As informações de chat associadas a esta reunião online.                                            |
+| chatInfo      | [chatInfo](../resources/chatinfo.md)                       | As informações de chat associadas a essa reunião online.                                            |
 | endDateTime   | DateTime                                                   | A hora de término da reunião em UTC.                                                                         |
 | externalId    | Cadeia de caracteres                                                     | A ID externa. Uma ID personalizada. (Obrigatório)                                                             |
 | participants  | [meetingParticipants](../resources/meetingparticipants.md) | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
-| startDateTime | DateTime                                                   | A hora de início da reunião em UTC.                                                                       |
-| assunto       | String                                                     | O assunto da reunião online.                                                                   |
+| startDateTime | DateTime                                                   | O horário de início da reunião em UTC.                                                                       |
+| assunto       | Cadeia de caracteres                                                     | O assunto da reunião online.                                                                   |
 
 > **Observações:**
 >
-> - Se **startDateTime** e **endDateTime** não são fornecidos, **startDateTime** será padrão para o valor dateTime atual e o valor **de endDateTime** será igual a **startDateTime** + 1 hora.
+> - Se **o startDateTime** e **endDateTime** não são fornecidos, o **startDateTime** será padrão para o valor dateTime atual e o valor **endDateTime** será igual ao **startDateTime** + 1 hora.
 >
-> - Se **startDateTime for** fornecido, mas **endDateTime** não for, o valor **de endDateTime** será igual a **startDateTime** + 1 hora.
+> - Se o **startDateTime** for fornecido, mas **endDateTime** não for, o valor **endDateTime** será igual ao **startDateTime** + 1 hora.
 >
-> - Um erro será lançado se **endDateTime for** fornecido sem **startDateTime** ou se **endDateTime** for anterior a **startDateTime**.
+> - Um erro será lançado se **endDateTime** for fornecido sem **o startDateTime** ou se **endDateTime** for anterior ao **startDateTime**.
 >
 > - Atualmente, **o chatInfo** só tem suporte na versão beta.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta se uma nova reunião for criada ou um código de resposta se uma `201 Created` `200 OK` reunião existente for recuperada. Em ambos os casos, um [objeto onlineMeeting](../resources/onlinemeeting.md) é retornado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta se uma nova reunião for criada ou um código de resposta se uma reunião existente `201 Created` `200 OK` for recuperada. Em ambos os casos, um [objeto onlineMeeting](../resources/onlinemeeting.md) é retornado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-or-get-an-online-meeting-with-an-external-id"></a>Exemplo 1: Criar ou obter uma reunião online com uma ID externa
+### <a name="example-1-create-or-get-an-online-meeting-with-an-external-id"></a>Exemplo 1: criar ou obter uma reunião online com uma ID externa
 
 #### <a name="request"></a>Solicitação
 

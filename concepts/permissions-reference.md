@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: d63fb6e6446cfb1a5b53c79cd81c4d6fefbfd9e7
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: af9f49b88ca8be02dc4efd414826a09583e699f0
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472197"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516413"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1488,8 +1488,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:----------------------------|
 | _Policy.Read.All_ | Leia as políticas da sua organização | Permite que o aplicativo leia todas as políticas da sua organização sem um usuário conectado. | Sim |
 | _Policy.Read.PermissionGrant_ | Ler políticas de concessão de consentimento e permissão | Permite que o aplicativo leia políticas relacionadas a concessões de consentimento e permissão para aplicativos, sem um usuário conectado. | Sim |
 | _Policy.Read.ApplicationConfiguration_ | Leia as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia todas as políticas de configuração dos aplicativos da sua organização sem um usuário conectado. | Sim |

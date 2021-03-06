@@ -1,16 +1,16 @@
 ---
 title: Obter recurso regionalAndLanguageSettings
-description: Recuperar as propriedades do regionalAndLanguageSettings de um usuário
+description: Recuperar as propriedades de regionalAndLanguageSettings de um usuário
 author: jasonbro
 localization_priority: Normal
-ms.prod: settings
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 39b7f0afb8f7abd8bf1838465c4f51bb5336862e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6bd4f758a2e7b0113ba6da5eb04b1823171986b8
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981073"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516630"
 ---
 # <a name="get-regionalandlanguagesettings"></a>Obter regionalAndLanguageSettings
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as propriedades de um objeto [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .
+Obter as propriedades de um [objeto regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão                   |Permissão (de menos para mais privilégios)     |
+|Tipo de permissão                   |Permissão (do mínimo para o mais privilegiado)     |
 |----------------------------------|---------------------------------------------- |
-|Delegado (conta corporativa ou de estudante)|User. Read, User. Read. All                        |
-|Delegado (conta pessoal)      |User. Read, User. Read. All              |
-|Application                       |User. Read, User. Read. All              |
+|Delegada (conta corporativa ou de estudante)|User.Read, User.Read.All                        |
+|Delegada (conta pessoal)      |User.Read, User.Read.All              |
+|Aplicativo                       |User.Read, User.Read.All              |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /settings/regionalAndLanguageSettings
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Você pode usar o `$select` para obter propriedades específicas do regionalAndLanguageSettings, incluindo aquelas que não são retornadas por padrão.
+Você pode usar `$select` para obter propriedades regionaisAndLanguageSettings específicas, incluindo aquelas que não são retornadas por padrão.
 
 Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -43,18 +43,17 @@ Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de 
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.|
-| Content-Type   | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir obtém as propriedades do usuário conectado.
+O exemplo a seguir obtém as propriedades do usuário que está assinado.
 
 ### <a name="request"></a>Solicitação
 
@@ -134,7 +133,17 @@ Content-type: application/json
         "shortTimeFormat": "HH:mm",
         "longTimeFormat": "h:mm:ss tt",
         "timeZone": "Pacific Standard Time"
-    }
+    },
+    "translationPreferences": {
+        "translationBehavior": "Yes",
+        "languageOverrides": [
+            {
+                "languageTag": "fr",
+                "translationBehavior": "Yes" 
+            }
+        ],
+        "untranslatedLanguages": ["de"]
+     }
 }
 ```
 

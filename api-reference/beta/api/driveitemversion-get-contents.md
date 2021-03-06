@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: 'Recuperar o conteúdo de uma versão específica de um driveItem. '
+description: 'Recupere o conteúdo de uma versão específica de um driveItem. '
 ms.date: 09/10/2017
 title: Baixar uma versão anterior
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 670909b87afe96b237ce90d51af7e13b16b27546
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c521c3ad4c4776e67747d9f6b09deb5e39fcac82
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964134"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515524"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>Baixar o conteúdo de um recurso de DriveItemVersion (prévia)
 
@@ -19,9 +19,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recuperar o conteúdo de uma versão específica de um [driveItem](../resources/driveitem.md). 
+Recupere o conteúdo de uma versão específica de [um driveItem](../resources/driveitem.md). 
 
->**Observação:** Não há suporte para obter o conteúdo da versão atual. Em vez disso, use o [ponto de extremidade de conteúdo driveItem](driveitem-get-content.md).
+>**Observação:** Não há suporte para obter o conteúdo da versão atual. Em vez disso, use o ponto de extremidade [de conteúdo driveItem](driveitem-get-content.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/versions/{version-id}/content
-GET /groups/{group-id}/drive/{item-id}/versions/{version-id}/content
+GET /groups/{group-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
@@ -102,7 +102,7 @@ Location: https://onedrive.com/34FF49D6...
 
 O OneDrive não preserva os metadados completos de versões anteriores de um arquivo.
 
-Quando o aplicativo recupera a lista de versões disponíveis para um arquivo, um recurso [driveItemVersion](../resources/driveitemversion.md) é retornado que fornece as informações disponíveis sobre a versão específica.
+Quando seu aplicativo recupera a lista de versões disponíveis para um arquivo, um [recurso driveItemVersion](../resources/driveitemversion.md) é retornado que fornece as informações disponíveis sobre a versão específica.
 
 <!--
 {

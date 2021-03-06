@@ -1,18 +1,18 @@
 ---
-title: Listando versões de um DriveItem
+title: Listar versões de um DriveItem
 description: O OneDrive e o SharePoint podem ser configurados para manter o histórico de arquivos.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: 5b7fba3a2fbf81bc9d373b41d95fe2feeb599cea
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3f3c2135f84d5c4b5a71a7a2e003528a72edb8b0
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963624"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515531"
 ---
-# <a name="listing-versions-of-a-driveitem"></a>Listando versões de um DriveItem
+# <a name="listing-versions-of-a-driveitem"></a>Listar versões de um DriveItem
 
 Namespace: microsoft.graph
 
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/versions
-GET /groups/{group-id}/drive/{item-id}/versions
+GET /groups/{group-id}/drive/items/{item-id}/versions
 GET /me/drive/items/{item-id}/versions
 GET /sites/{site-id}/drive/items/{item-id}/versions
 GET /users/{user-id}/drive/items/{item-id}/versions

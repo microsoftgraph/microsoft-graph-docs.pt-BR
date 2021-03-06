@@ -5,25 +5,27 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 6e5a8a06f21d338703db7ca557e9911c96b87bbb
-ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
+ms.openlocfilehash: 448c0525a318cac64bb5d381b986c238f563025d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816158"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515693"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Faça o upload de documentos utilizando a API de Impressão Universal do Microsoft Graph
 
-Para imprimir um documento utilizando a API de Impressão Universal no Microsoft Graph, você [cria um trabalho de impressão](/graph/api/printershare-post-jobs?view=graph-rest-beta), faz o upload do documento e, em seguida, [inicia o trabalho de impressão](/graph/api/printjob-start?view=graph-rest-beta). Este artigo descreve como fazer o upload de um documento, que começa com [ a criação de uma sessão de upload ](/graph/api/printdocument-createuploadsession?view=graph-rest-beta).
+[!INCLUDE [cloudprinting-pricing-disclaimer](../api-reference/includes/cloudprinting-pricing-disclaimer.md)]
 
-Para fazer o upload de um arquivo, ou de parte de um arquivo, seu aplicativo faz uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession** .
+Para imprimir um documento utilizando a API de Impressão Universal no Microsoft Graph, você [cria um trabalho de impressão](/graph/api/printershare-post-jobs), faz o upload do documento e, em seguida, [inicia o trabalho de impressão](/graph/api/printjob-start). Este artigo descreve como fazer o upload de um documento, que começa com [ a criação de uma sessão de upload ](/graph/api/printdocument-createuploadsession).
+
+Para fazer o upload de um arquivo, ou de parte de um arquivo, seu aplicativo faz uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession**.
 Você pode fazer o upload de todo o arquivo ou dividi-lo em vários intervalos de bytes, desde que o máximo de bytes em qualquer solicitação seja inferior a 10 MB.
 
-É possível fazer o upload dos segmentos do arquivo em qualquer ordem e o upload pode ser feito em paralelo, com até quatro solicitações simultâneas. Quando todos os segmentos binários do documento são carregados, o arquivo binário é vinculado ao **printDocument** .
+É possível fazer o upload dos segmentos do arquivo em qualquer ordem e o upload pode ser feito em paralelo, com até quatro solicitações simultâneas. Quando todos os segmentos binários do documento são carregados, o arquivo binário é vinculado ao **printDocument**.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Faça uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession** .
+Faça uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession**.
 
 ### <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
@@ -142,7 +144,7 @@ Content-Type: application/json
 
 Para cancelar uma sessão de upload, envie uma solicitação DELETE para o URL de upload. Isso deve ser usado em cenários em que o upload é interrompido, por exemplo, se o usuário cancelar a transferência.
 
-Os arquivos temporários e a sessão de upload que os acompanha são automaticamente limpos decorrido o valor de **expirationDateTime** .
+Os arquivos temporários e a sessão de carregamento que os acompanha são automaticamente limpos decorrido o valor de **expirationDateTime**.
 
 ### <a name="request"></a>Solicitação
 

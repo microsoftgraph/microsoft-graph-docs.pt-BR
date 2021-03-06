@@ -1,16 +1,16 @@
 ---
 title: Atualizar regionalAndLanguageSettings
-description: Atualizar as configurações regionais e de idioma de um usuário
+description: Atualize as configurações regionais e de idioma de um usuário.
 author: jasonbro
 localization_priority: Normal
-ms.prod: settings
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d5d9d10adc73f37906c8cf07073e97e8b81bfe1f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 82f33ae2b4165586ccb4a3d55873e1e6ff6c1765
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966821"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516616"
 ---
 # <a name="update-regionalandlanguagesettings"></a>Atualizar regionalAndLanguageSettings
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar algumas ou todas as propriedades de um objeto [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .
+Atualize algumas ou todas as propriedades de um [objeto regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão                   |Permissão (de menos para mais privilégios)     |
+|Tipo de permissão                   |Permissão (do mínimo para o mais privilegiado)     |
 |----------------------------------|---------------------------------------------- |
-|Delegado (conta corporativa ou de estudante)|User. ReadWrite, User. ReadWrite. All             |
-|Delegado (conta pessoal)      |User. ReadWrite, User. ReadWrite. All             |
-|Application                       |User. ReadWrite, User. ReadWrite. All             |
+|Delegada (conta corporativa ou de estudante)|User.ReadWrite, User.ReadWrite.All             |
+|Delegada (conta pessoal)      |User.ReadWrite, User.ReadWrite.All             |
+|Aplicativo                       |User.ReadWrite, User.ReadWrite.All             |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,17 +50,17 @@ PATCH /settings/regionalAndLanguageSettings
 | Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
- **Put** : no corpo da solicitação, forneça um objeto [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .
+ **PUT**: No corpo da solicitação, fornece um [objeto regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
  
- **Patch** : forneça apenas os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.
+ **PATCH**: fornece somente os valores para campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.
  
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta 200 e o objeto regionalAndLanguageSettings atualizado.
+Se tiver êxito, este método retornará um código de resposta 200 e o **objeto regionalAndLanguageSettings** atualizado.
 
 ## <a name="example"></a>Exemplo
 
-### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a>Exemplo 1: atualizar todo o objeto regionalAndLanguageSettings do usuário conectado
+### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a>Exemplo 1: Atualizar todo o objeto regionalAndLanguageSettings do usuário in-loca
 
 #### <a name="request"></a>Solicitação
 
@@ -104,7 +104,16 @@ Content-type: application/json
         "shortTimeFormat": "HH:mm",
         "longTimeFormat": "h:mm:ss tt",
         "timeZone": "Pacific Standard Time"
-    }
+    },
+    "translationPreferences": {
+        "translationBehavior": "Yes",
+        "languageOverrides": [
+            {
+                "languageTag": "fr",
+                "translationBehavior": "Yes" 
+            }
+        ]
+     }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -141,7 +150,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a>Exemplo 2: atualizar propriedades selecionadas do usuário conectado
+### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a>Exemplo 2: Atualizar propriedades selecionadas do usuário in-locar
 
 #### <a name="request"></a>Solicitação
 

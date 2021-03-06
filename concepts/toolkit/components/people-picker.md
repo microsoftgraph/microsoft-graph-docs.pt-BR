@@ -3,12 +3,12 @@ title: People-Picker componente
 description: Você pode usar o componente web do se picker mgt-people para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: c9541130abe8f520b41a0bd4d52de9a167e18c24
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 138c87a004838ae4f1f431e1f553d75ea3a57401
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475181"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516658"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft graph Toolkit
 
@@ -139,7 +139,7 @@ Esse componente usa as seguintes APIs e permissões do Microsoft Graph.
 | [/me/people](/graph/api/user-list-people)                    | People.Read        |
 | [/users](/graph/api/user-list)  | User.ReadBasic.All |
 | [/groups](/group-list)  | Group.Read.All |
-| [/groups/ \$ {groupId}/members](/graph/api/group-list-members) | User.ReadBasic.All        |
+| [/groups/ \$ {groupId}/members](/graph/api/group-list-members) | GroupMember.Read.All        |
 | [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
 
 ## <a name="authentication"></a>Autenticação

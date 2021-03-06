@@ -1,16 +1,16 @@
 ---
 title: Obter o status de comando do dispositivo
-description: Obter o status de um comando em um dispositivo. Para obter a lista completa de códigos de status, confira lista de actionStatus.
+description: Obter o status de um comando em um dispositivo. Para ver a lista completa de códigos de status, consulte Lista de actionStatus.
 localization_priority: Normal
 doc_type: apiPageType
 author: ailae
 ms.prod: ''
-ms.openlocfilehash: 96098db1cf0e630c46a838b7712141ea4182779e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c0747438a9921f2ed6f3ccf1ee551f4aced70fcb
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991212"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515961"
 ---
 # <a name="get-device-command-status"></a>Obter o status de comando do dispositivo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o status de um comando em um dispositivo. Para obter a lista completa de códigos de status, confira [lista de actionStatus](#list-of-actionstatus).
+Obter o status de um comando em um dispositivo. Para ver a lista completa de códigos de status, consulte [Lista de actionStatus](#list-of-actionstatus).
 
 ## <a name="permissions"></a>Permissões
 
@@ -70,24 +70,24 @@ HTTP/1.1 200 OK
 
 ## <a name="list-of-actionstatus"></a>Lista de actionStatus
 
-- a solicitação,//comando foi criada e está aguardando processamento
-- o comando sentToTarget,//foi enviado para o dispositivo de destino
-- executando,//dispositivo de destino confirmado o recebimento do comando e o está executando
-- conclusão da execução do comando//concluída
-- failedToSend,//Service falhou ao enviar comando para o dispositivo de destino
-- falha na execução do comando executionFailed,//
-- commandDropped,//comando Descartado pelo cliente se o dispositivo estiver no estado ConnectedStandby
-- cancelar,//cancelar o comando
-- Cancelando,//cancelando o comando
-- o comando cancelado,//foi cancelado
-- repetir,//o serviço está tentando enviar novamente o comando para o destino
-- expirado,//o processamento de comando excedeu o tempo de expiração
-- erro,//erro interno ao processar o comando
-- status personalizado//personalizado
+- solicitando, // O comando foi criado e está aguardando para ser processado
+- sentToTarget, // Command foi enviado para o dispositivo de destino
+- executing, // Target device acknowledged receipt of the command and is executing it
+- concluída, // Execução de comando concluída
+- failedToSend, // Service failed to send command to target device
+- executionFailed, // Falha na execução do comando
+- commandDropped, // Command dropped by client if device is in ConnectedStandby state
+- cancel, // Cancel the command
+- cancelando, // Cancelando o comando
+- cancelado, // Command foi cancelado
+- repetir, // O serviço está tentando novamente enviar o comando para o destino
+- expirado, // Processamento de comando excedeu o tempo de expiração
+- erro, // Erro interno durante o processamento do comando
+- status personalizado // Personalizado
 
 ## <a name="example"></a>Exemplo
 
-Neste exemplo, você precisará da ID do dispositivo e da ID do comando que foi emitido para um dispositivo. A ID do dispositivo é retornada ao emitir uma chamada GET para `/me/devices` , e a ID do comando é retornada ao realizar uma chamada post em `/me/devices/{id}/command` .
+Neste exemplo, você precisará da ID do dispositivo e da ID do comando que foi emitido para um dispositivo. A ID do dispositivo é retornada ao emissão de uma chamada GET para , e a ID de comando é retornada ao fazer uma `/me/devices` chamada POST em `/me/devices/{id}/command` .
 
 #### <a name="request"></a>Solicitação
 
@@ -132,9 +132,9 @@ HTTP/1.1 200 OK
 ```
 
 
-## <a name="get-command-payload"></a>Obter conteúdo do comando
+## <a name="get-command-payload"></a>Obter carga de comando
 
-Obter uma carga de resposta para uma ação específica em um dispositivo. A carga de resposta é usada ao consultar um serviço de aplicativo para transportar dados de volta.
+Obter uma carga de resposta para uma ação específica em um dispositivo. A carga de resposta é usada ao consultar um serviço de aplicativo para carregar dados de volta.
 
 
 ### <a name="permissions"></a>Permissões
@@ -152,7 +152,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET me/devices/{id}/command/{id}/responsePayload
+GET me/devices/{id}/commands/{id}/responsePayload
 ```
 
 ### <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -181,7 +181,7 @@ HTTP/1.1 200 OK
 
 ### <a name="example"></a>Exemplo
 
-Neste exemplo, você precisará da ID do dispositivo e da ID do comando que foi emitido para um dispositivo. A ID do dispositivo é retornada ao emitir uma chamada GET em `/me/devices` e a ID do comando é retornada ao executar uma chamada post em `/me/devices/{id}/command` .
+Neste exemplo, você precisará da ID do dispositivo e da ID do comando que foi emitido para um dispositivo. A ID do dispositivo é retornada quando uma chamada GET é em emissão e a ID do comando é retornada ao fazer uma `/me/devices` chamada POST em `/me/devices/{id}/command` .
 
 #### <a name="request"></a>Solicitação
 

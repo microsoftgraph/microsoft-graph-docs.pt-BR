@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: bace39481de10040a58a84e1aafdfa58f00335b7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 67ec3e6400e007e5c0638bea92097e9e4945e85e
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981723"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515706"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou o contato especificado. Como há no momento um limite de 8MB no tamanho total de cada solicitação REST, o tamanho da foto que você pode adicionar está limitado em 8 MB.
+Atualize a foto para qualquer usuário no locatário, incluindo o usuário ou o grupo ou contato especificado. Como atualmente há um limite de 8 MB no tamanho total de cada solicitação REST, o tamanho da foto que você pode adicionar é limitado a menos de 8 MB.
 
-Use PUT somente para esta operação.
+Use SOMENTE PUT para essa operação.
 
-> **Observação** : ao atualizar a foto do **usuário** , essa operação primeiro tenta atualizar a foto no Microsoft 365. Se isso falhar (porque o usuário não tem uma caixa de correio), essa API tentará atualizar a foto no Azure Active Directory.
+> **Observação**: ao atualizar a foto **do usuário,** essa operação tenta primeiro atualizar a foto no Microsoft 365. Se isso falhar (devido ao usuário não ter uma caixa de correio), essa API tentará atualizar a foto no Azure Active Directory.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Foto de perfil do **usuário** conectado:<br/>User. ReadWrite, User. ReadWrite. All<br /><br />Para recurso de **grupo** :<br />Group.ReadWrite.All<br /><br />Para recurso de **contato** :<br />Contacts.ReadWrite |
+|Delegada (conta corporativa ou de estudante)     | Foto de perfil do usuário **de entrada**:<br/>User.ReadWrite, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Para recurso de **usuário** :<br/>User.ReadWrite.All<br /><br />Para recurso de **grupo** :<br />Group.ReadWrite.All<br /><br />Para recurso de **contato** :<br />Contacts.ReadWrite |
+|Aplicativo                            | Para recurso de **usuário**:<br/>User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
 
-> **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão do aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service). A atualização da foto do usuário conectado requer apenas a permissão User. ReadWrite.
+> **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão do aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service). A atualização da foto do usuário in-loco requer apenas a permissão User.ReadWrite.
 
 > **Observação:** Há um [problema conhecido](/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 
@@ -53,7 +53,7 @@ Para atualizar a foto de uma equipe:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /groups/{teamId}/photo/$value`
+PUT /groups/{teamId}/photo/$value
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

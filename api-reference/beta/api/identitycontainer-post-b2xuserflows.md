@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: c6e65a9f3edaa5e3be984db518067def60a394ba
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: af73dffdebe41d41e33b463c9c347d36f542985d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435515"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515888"
 ---
 # <a name="create-b2xidentityuserflow"></a>Criar b2xIdentityUserFlow
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
@@ -40,7 +40,7 @@ A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funç�
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /identity/b2xUserFlow
+POST /identity/b2xUserFlows
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça uma representação JSON de [um b2xIdentityU
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|String|Obrigatório. O nome do fluxo de usuário. O nome será pré-canetado após `B2X_1` a criação.|
-|userFlowType|String|Obrigatório. O tipo de fluxo de usuário que você está criando. Esse valor sempre será `signUpOrSignIn` .|
+|userFlowType|Cadeia de caracteres|Obrigatório. O tipo de fluxo de usuário que você está criando. Esse valor sempre será `signUpOrSignIn` .|
 |userFlowTypeVersion|Flutuação|Obrigatório. A versão do fluxo de usuário. Esse valor sempre será 1.|
 |identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo de usuários.|
 |apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Opcional. Configuração para habilitar um conector de API para uso como parte do fluxo do usuário.|

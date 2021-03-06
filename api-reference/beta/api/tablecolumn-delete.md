@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 54677953cbad7be5e0f7221dc82e23f0593c31dc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 18c32c719916159aef9080d983f80bc6f7e5d378
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042958"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515666"
 ---
 # <a name="tablecolumn-delete"></a>TableColumn: delete
 
@@ -24,15 +24,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Files.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/delete
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/delete
+DELETE /workbook/tables/{id|name}/columns/{id|name}
+DELETE /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -56,7 +56,7 @@ Este é um exemplo da solicitação.
   "name": "tablecolumn_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/delete
+DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
 ```
 
 ##### <a name="response"></a>Resposta
