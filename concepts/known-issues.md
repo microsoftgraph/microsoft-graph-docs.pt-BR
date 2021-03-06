@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 66171b50560b5cfc31ad04757a4acc93f7aa9751
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c868f7162f171cbb552c216139cc6afdc3aea988
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470652"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516238"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -376,7 +376,7 @@ A solicitação de objetos usando a opção de [Obter objetos de diretório de u
 ## <a name="query-parameter-limitations"></a>Limitações de parâmetro de consulta
 
 * Não há suporte para vários namespaces.
-* Não há suporte para GETs em `$ref` e conversão em usuários, grupos, dispositivos, entidades de serviço e aplicativos.
+* Não há suporte para GETs no `$ref` e também para transmissão em usuários, grupos, dispositivos, entidades de serviço e aplicativos.
 * `@odata.bind` não é compatível. Isso significa que os desenvolvedores não poderão definir corretamente a propriedade de navegação **acceptedSenders** ou **rejectedSenders** em um grupo.
 * `@odata.id` não está presente na navegação sem confinamento (como mensagens) quando há o uso de metadados mínimos.
 * `$expand`:
