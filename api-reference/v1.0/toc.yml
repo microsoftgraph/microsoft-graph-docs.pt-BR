@@ -445,7 +445,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1225,6 +1225,8 @@ items:
                 href: api/application-post-onlinemeetings.md
               - name: Obter
                 href: api/onlinemeeting-get.md
+              - name: Atualizar
+                href: api/onlinemeeting-update.md
               - name: Excluir
                 href: api/onlinemeeting-delete.md
               - name: Criar ou obter
@@ -1265,6 +1267,177 @@ items:
       - name: Dispositivos e aplicativos
         expanded: true
         items:
+          - name: Impressão em nuvem
+            items:
+              - name: Imprimir
+                href: resources/print.md
+                displayName: Universal Print
+              - name: Conector de impressão
+                href: resources/printconnector.md
+                items:
+                  - name: Listar
+                    href: api/print-list-connectors.md
+                  - name: Obter
+                    href: api/printconnector-get.md
+                  - name: Atualizar
+                    href: api/printconnector-update.md
+                  - name: Excluir
+                    href: api/printconnector-delete.md
+              - name: Imprimir documento
+                href: resources/printdocument.md
+                items:
+                  - name: Criar sessão de carregamento
+                    href: api/printdocument-createuploadsession.md
+                  - name: Baixar arquivo binário
+                    href: api/printdocument-get-file.md
+              - name: Trabalho de impressão
+                href: resources/printjob.md
+                items:
+                  - name: Criar trabalho para uma impressora
+                    href: api/printer-post-jobs.md
+                  - name: Criar trabalho para um compartilhamento de impressora
+                    href: api/printershare-post-jobs.md
+                  - name: Listar trabalhos para uma impressora
+                    href: api/printer-list-jobs.md
+                  - name: Listar trabalhos para um compartilhamento de impressora
+                    href: api/printershare-list-jobs.md
+                  - name: Obter
+                    href: api/printjob-get.md
+                  - name: Início
+                    href: api/printjob-start.md
+                  - name: Atualizar
+                    href: api/printjob-update.md
+                  - name: Cancelar
+                    href: api/printjob-cancel.md
+                  - name: Anular**
+                    href: api/printjob-abort.md
+                  - name: Redirecionamento
+                    href: api/printjob-redirect.md
+              - name: Operação de impressão
+                href: resources/printoperation.md
+                items:
+                  - name: Obter
+                    href: api/printoperation-get.md
+              - name: Impressora
+                href: resources/printer.md
+                items:
+                  - name: Listar
+                    href: api/print-list-printers.md
+                  - name: Criar
+                    href: api/printer-create.md
+                  - name: Obter
+                    href: api/printer-get.md
+                  - name: Atualizar
+                    href: api/printer-update.md
+                  - name: Excluir
+                    href: api/printer-delete.md
+                  - name: Obter gatilho de tarefa
+                    href: api/printtasktrigger-get.md
+                  - name: Listar conectores
+                    href: api/printer-list-connectors.md
+                  - name: Listar trabalhos de impressão
+                    href: api/printer-list-jobs.md
+                  - name: Listar printerShares
+                    href: api/printer-list-shares.md
+                  - name: Criar trabalho de impressão
+                    href: api/printer-post-jobs.md
+                  - name: Listar gatilhos de tarefas
+                    href: api/printer-list-tasktriggers.md
+                  - name: Criar gatilho de tarefa
+                    href: api/printer-post-tasktriggers.md
+                  - name: Excluir gatilho de tarefa
+                    href: api/printer-delete-tasktrigger.md
+                  - name: Restaurar padrões de fábrica
+                    href: api/printer-restorefactorydefaults.md
+              - name: Compartilhamento de impressora
+                href: resources/printershare.md
+                items:
+                  - name: Listar
+                    href: api/print-list-shares.md
+                  - name: Criar
+                    href: api/print-post-shares.md
+                  - name: Obter
+                    href: api/printershare-get.md
+                  - name: Atualizar
+                    href: api/printershare-update.md
+                  - name: Excluir
+                    href: api/printershare-delete.md
+                  - name: Listar usuários permitidos
+                    href: api/printershare-list-allowedusers.md
+                  - name: Criar usuário permitido
+                    href: api/printershare-post-allowedusers.md
+                  - name: Excluir usuário permitido
+                    href: api/printershare-delete-alloweduser.md
+                  - name: Listar grupos permitidos
+                    href: api/printershare-list-allowedgroups.md
+                  - name: Criar grupo permitido
+                    href: api/printershare-post-allowedgroups.md
+                  - name: Excluir grupo permitido
+                    href: api/printershare-delete-allowedgroup.md
+              - name: Definição de tarefa de impressão
+                href: resources/printtaskdefinition.md
+                items:
+                  - name: Listar
+                    href: api/print-list-taskdefinitions.md
+                  - name: Criar
+                    href: api/print-post-taskdefinitions.md
+                  - name: Obter
+                    href: api/printtaskdefinition-get.md
+                  - name: Atualizar
+                    href: api/print-update-taskdefinition.md
+                  - name: Excluir
+                    href: api/print-delete-taskdefinition.md
+                  - name: Listar tarefas
+                    href: api/printtaskdefinition-list-tasks.md
+                  - name: Obter tarefa
+                    href: api/printtask-get.md
+                  - name: Atualizar tarefa
+                    href: api/printtaskdefinition-update-task.md
+              - name: Relatórios
+                items:
+                  - name: Organizado por impressora
+                    items:
+                      - name: Obter
+                        href: api/printusagebyprinter-get.md
+                      - name: Listar trabalhos de impressão arquivados de uma impressora
+                        href: api/reports-getprinterarchivedprintjobs.md
+                      - name: Listar relatórios diários por impressora
+                        href: api/reportroot-list-dailyprintusagebyprinter.md
+                      - name: Listar relatórios mensais por impressora
+                        href: api/reportroot-list-monthlyprintusagebyprinter.md
+                  - name: Organizado por usuário ou grupo
+                    items:
+                      - name: Obter
+                        href: api/printusagebyuser-get.md
+                      - name: Listar trabalhos de impressão arquivados de um usuário
+                        href: api/reports-getuserarchivedprintjobs.md
+                      - name: Listar trabalhos de impressão arquivados de um grupo
+                        href: api/reports-getgrouparchivedprintjobs.md
+                      - name: Listar relatórios diários por usuário
+                        href: api/reportroot-list-dailyprintusagebyuser.md
+                      - name: Listar relatórios mensais por usuário
+                        href: api/reportroot-list-monthlyprintusagebyuser.md
+              - name: Serviço de impressão
+                href: resources/printservice.md
+                items:
+                  - name: Listar
+                    href: api/print-list-services.md
+                  - name: Obter
+                    href: api/printservice-get.md
+                  - name: Ponto de extremidade
+                    href: resources/printserviceendpoint.md
+                    items:
+                      - name: Obter o ponto de extremidade
+                        href: api/printserviceendpoint-get.md
+                      - name: Listar pontos de extremidade de um serviço
+                        href: api/printservice-list-endpoints.md
+              - name: Configurações de impressão
+                href: resources/printsettings.md
+                items:
+                  - name: Obter
+                    href: api/print-get-settings.md
+                  - name: Atualizar
+                    href: api/print-update-settings.md
           - name: Gerenciamento corporativo
             href: resources/intune-graph-overview.md
             displayName: Intune

@@ -440,8 +440,9 @@ items:
               - name: Atualizar configurações
                 href: api/planneruser-update.md
           - name: Idiomas preferenciais e formatos regionais (visualização)
-            href: resources/regionalandlanguagesettings.md
             items:
+              - name: Configurações regionais e de idioma
+                href: resources/regionalandlanguagesettings.md
               - name: Obter
                 href: api/regionalandlanguagesettings-get.md
               - name: Atualizar
@@ -494,7 +495,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -966,7 +967,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: Listar memberOf transitivos
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1422,12 +1423,12 @@ items:
                 href: api/application-post-onlinemeetings.md
               - name: Obter
                 href: api/onlinemeeting-get.md
-              - name: Criar ou obter
-                href: api/onlinemeeting-createorget.md
               - name: Atualizar
                 href: api/onlinemeeting-update.md
               - name: Excluir
                 href: api/onlinemeeting-delete.md
+              - name: Criar ou obter
+                href: api/onlinemeeting-createorget.md
           - name: Presença
             href: resources/presence.md
             items:
@@ -1440,7 +1441,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/complianceapioverview.md
-          - name: Descoberta Eletrônica
+          - name: Descoberta eletrônica
             items:
               - name: Visão Geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
@@ -1679,7 +1680,7 @@ items:
       - name: Dispositivos e aplicativos
         expanded: true
         items:
-          - name: Impressão na nuvem (visualização)
+          - name: Impressão em nuvem
             items:
               - name: Imprimir
                 href: resources/print.md
@@ -1714,7 +1715,7 @@ items:
                   - name: Início
                     href: api/printjob-start.md
                   - name: Atualizar
-                    href: api/printjob-update-configuration.md
+                    href: api/printjob-update.md
                   - name: Cancelar
                     href: api/printjob-cancel.md
                   - name: Anular**
@@ -10858,7 +10859,7 @@ items:
                         href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
                   - name: Fluxos de usuário de assinatura de autoatend
                     items:
-                      - name: Fluxo de usuários B2X
+                      - name: Autoatendindo inscrever o fluxo de usuários
                         href: resources/b2xidentityuserflow.md
                       - name: Listar
                         href: api/identitycontainer-list-b2xuserflows.md
@@ -12583,7 +12584,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
