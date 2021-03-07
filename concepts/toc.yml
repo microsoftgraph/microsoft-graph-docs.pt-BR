@@ -184,8 +184,7 @@ items:
       - name: Dispositivos e aplicativos
         expanded: true
         items:
-          - name: Impressão na nuvem (visualização)
-            expanded: true
+          - name: Impressão na nuvem
             items:
               - name: Visão Geral
                 href: universal-print-concept-overview.md
