@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 139cd4a20a6097691189d1bd1f843850ba911a21
-ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
+ms.openlocfilehash: 8ded2e79f8a9a2004f2ffa412b6d42e3275556b8
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49866106"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516091"
 ---
 # <a name="onlinemeeting-resource-type"></a>Tipo de recurso onlineMeeting
 
@@ -18,40 +18,41 @@ Namespace: microsoft.graph
 
 Contém informações sobre uma reunião, incluindo a URL usada para ingressar em uma reunião, a lista de participantes e a descrição.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                             | Tipo de retorno                       | Descrição                                                                                                  |
 | :----------------------------------------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------- |
 | [Criar ReuniãoOnline](../api/application-post-onlineMeetings.md)  | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online.                                                                                    |
-| [Obter onlineMeeting](../api/onlinemeeting-get.md)                   | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e os relacionamentos de um **objeto onlineMeeting.**                                        |
-| [Excluir onlineMeeting](../api/onlinemeeting-delete.md)             | Nenhum                              | Excluir uma reunião online.                                                                                    |
-| [Criar ou obter onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Crie uma reunião online com uma ID externa personalizada. Se a reunião já existir, recupere suas propriedades. |
+| [Obter onlineMeeting](../api/onlinemeeting-get.md)                   | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e as relações de um **objeto onlineMeeting.**                                        |
+| [Update](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Atualize as propriedades de um **objeto onlineMeeting.** |
+| [Excluir onlineMeeting](../api/onlinemeeting-delete.md)             | Nenhum                              | Excluir um **objeto onlineMeeting.**                                                                                    |
+| [Criar ou obter OnlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Crie um **objeto onlineMeeting** com uma ID externa personalizada. Se a reunião já existir, recupere suas propriedades. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade              | Tipo                                          | Descrição                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| audioConferencing     | [audioConferencing](audioconferencing.md)     | As informações de acesso telefônico (discagem) de uma reunião online. Apenas leitura.                                                   |
-| chatInfo              | [chatInfo](chatinfo.md)                       | As informações de chat associadas a esta reunião online.                                                                  |
-| creationDateTime      | DateTime                                      | A hora de criação da reunião em UTC. Somente leitura.                                                                               |
-| startDateTime         | DateTime                                      | A hora de início da reunião em UTC.                                                                                             |
+| allowedPresenters     | onlineMeetingPresenters                       | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis são listados na tabela a seguir.                          |
+| audioConferencing     | [audioConferencing](audioconferencing.md)     | As informações de acesso por telefone (discagem) para uma reunião online. Apenas leitura.                                                   |
+| chatInfo              | [chatInfo](chatinfo.md)                       | As informações de chat associadas a essa reunião online.                                                                  |
+| creationDateTime      | DateTime                                      | O tempo de criação da reunião em UTC. Somente leitura.                                                                               |
 | endDateTime           | DateTime                                      | A hora de término da reunião em UTC.                                                                                               |
 | id                    | Cadeia de caracteres                                        | A ID padrão associada à reunião online. Somente leitura.                                                              |
+| isEntryExitAnnounced  | Booliano                                       | Se os chamadores ingressarão ou sairão.                                                                     |
+| joinInformation       | [itemBody](itembody.md)                       | As informações de junção no idioma e na variante de localidade especificadas no `Accept-Language` cabeçalho HTTP da solicitação. Somente leitura. |
 | joinWebUrl            | Cadeia de caracteres                                        | A URL de junção da reunião online. Somente leitura.                                                                             |
+| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes.                       |
+| startDateTime         | DateTime                                      | O horário de início da reunião em UTC.                                                                                             |
 | assunto               | Cadeia de caracteres                                        | O assunto da reunião online.                                                                                         |
 | videoTeleconferenceId | Cadeia de caracteres                                        | A ID de teleconferência de vídeo. Somente leitura.                                                                                  |
-| joinInformation       | [itemBody](itembody.md)                       | As informações de junção na variante de idioma e localidade especificadas no cabeçalho `Accept-Language` HTTP da solicitação. Somente leitura. |
-| isEntryExitAnentry  | Boolean                                       | Se será ou não anunciar quando os chamadores ingressarem ou saírem.                                                                     |
-| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                                                               |
-| allowedPresenters     | onlineMeetingPresenters                       | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis estão listados na tabela a seguir.                          |
 
-### <a name="onlinemeetingpresenters-values"></a>Valores de onlineMeetingPresenters
+### <a name="onlinemeetingpresenters-values"></a>valores onlineMeetingPresenters
 
 | Valor              | Descrição                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | everyone           | Todos são apresentadores (essa é a opção padrão).             |
-| organization       | Todos na organização do organizador são apresentadores.          |
+| organização       | Todos na organização do organizador são apresentadores.          |
 | roleIsPresenter    | Somente os participantes cuja função é apresentador são apresentadores. |
 | organizer          | Somente o organizador é um apresentador.                           |
 | unknownFutureValue | Valor futuro desconhecido.                                          |
@@ -67,18 +68,18 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 }-->
 ```json
 {
-  "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
-  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "joinWebUrl": "String",
-  "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
+  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
-  "lobbyBypassSettings": {"@odata.type": "#microsoft.graph.lobbyBypassSettings"},
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "allowedPresenters": "String"
 }
 ```

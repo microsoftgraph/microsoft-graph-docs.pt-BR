@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso audioConferencing
-description: Representa informações de acesso de telefone de uma reunião online.
+title: Tipo de recurso audioConferencing
+description: Representa as informações de acesso ao telefone para uma reunião online.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 40bc05ac8aba51e78180256c39bd7a20132c4900
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9462971d1c2694b3443c9b3a4e799a24362eee80
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988518"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515636"
 ---
-# <a name="audioconferencing-resource-type"></a>tipo de recurso audioConferencing
+# <a name="audioconferencing-resource-type"></a>Tipo de recurso audioConferencing
 
 Namespace: microsoft.graph
 
-Representa as informações de acesso de telefone de um [onlineMeeting](onlinemeeting.md).
+Representa as informações de acesso ao telefone para [um onlineMeeting](onlinemeeting.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade            | Tipo    | Descrição                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | Uma URL para a página da Web acessível externamente que contém informações de discagem. |
-| ID        | String  | A ID de conferência da reunião online.      |
-| tollFreeNumber      | String  | O número de chamada gratuita que se conecta ao provedor de conferência de áudio.              |
-| tollNumber          | String  | O número de chamada tarifada que se conecta ao provedor de conferência de áudio.                   |
+| dialinUrl           | Cadeia de caracteres  | Uma URL para a página da Web externamente acessível que contém informações de discagem. |
+| conferenceId        | Cadeia de caracteres  | A ID da conferência da reunião online.      |
+| tollFreeNumber      | Cadeia de caracteres  | O número gratuito que se conecta ao Provedor de Conferência de Áudio.              |
+| tollNumber          | Cadeia de caracteres  | O número de telefone que se conecta ao Provedor de Conferência de Áudio.                   |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -41,7 +41,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "dialinUrl": "String",
-  "ConferenceId": "String",
+  "conferenceId": "String",
   "tollFreeNumber": "String",
   "tollNumber": "String"
 }

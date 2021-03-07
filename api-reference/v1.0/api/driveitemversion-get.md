@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 5149e4b383f062137b450d2a110c3578b8f9fa97
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74076a044dcab00fc25dfe829eaee582d9a0d6b6
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063707"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516777"
 ---
 # <a name="get-a-driveitemversion-resource"></a>Obter um recurso DriveItemVersion
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/versions/{version-id}
-GET /groups/{group-id}/drive/{item-id}/versions/{version-id}
+GET /groups/{group-id}/drive/items/{item-id}/versions/{version-id}
 GET /me/drive/items/{item-id}/versions/{version-id}
 GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}

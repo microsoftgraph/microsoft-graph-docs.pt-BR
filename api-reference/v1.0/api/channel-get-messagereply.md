@@ -1,22 +1,22 @@
 ---
 title: Obter uma resposta para uma mensagem de canal
-description: Obter uma única resposta para uma mensagem em um canal de uma equipe.
+description: Obter uma única resposta a uma mensagem em um canal de uma equipe.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 846038341b167f5276d8be4d7a343c17bd70c867
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: bd88daee5ac2bf02ddeece28399e4cc852a3925b
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115168"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515917"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>Obter uma resposta para uma mensagem de canal
 
 Namespace: microsoft.graph
 
-Obter uma única resposta a [uma mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) de uma equipe.
+Obter uma única resposta a [uma mensagem](../resources/chatmessage.md) em [um canal](../resources/channel.md) de uma equipe.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| ChannelMessage.Read.Group* |
+|Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 

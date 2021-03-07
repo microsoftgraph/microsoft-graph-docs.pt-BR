@@ -1,22 +1,22 @@
 ---
 title: Obter shiftPreferences
-description: Obtenha uma preferência de mudança por ID.
+description: Obter uma preferência de turno por ID.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a0cda56aa25c6fac2c0abf009af3fc97ddaa7729
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b5949168ca90236fdad51968159d64074cda669
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012909"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516294"
 ---
 # <a name="get-shiftpreferences"></a>Obter shiftPreferences
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto [shiftPreferences](../resources/shiftpreferences.md) por ID.
+Recupere as propriedades e as relações de um [objeto shiftPreferences](../resources/shiftpreferences.md) por ID.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | User.Read.All, User.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | UserShiftPreferences. Read. All, UserShiftPreferences. ReadWrite. All |
+|Aplicativo | UserShiftPreferences.Read.All, UserShiftPreferences.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET /users/{userId}/settings/shiftPreferences
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte a parâmetros de consulta OData para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta OData para personalizar a resposta.
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [shiftPreferences](../resources/shiftpreferences.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto shiftPreferences](../resources/shiftpreferences.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -62,35 +62,13 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 
 Este é um exemplo de solicitação.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "get_shiftpreferences"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/shiftPreferences
+```http
+GET https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
----
-
 
 ### <a name="response"></a>Resposta
 

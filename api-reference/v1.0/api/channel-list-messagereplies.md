@@ -1,24 +1,24 @@
 ---
-title: Listar respostas de mensagens de canal
-description: Lista todas as respostas de uma mensagem em um canal de uma equipe.
+title: Listar respostas de mensagem de canal
+description: Listar todas as respostas de uma mensagem em um canal de uma equipe.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 98bda1fb8c86d0d3d6bc4c5a803e9f169b798dee
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: 616b4b3b228bf95858652dc55e0ab3e7924ee621
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115161"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516007"
 ---
-# <a name="list-channel-message-replies"></a>Listar respostas de mensagens de canal
+# <a name="list-channel-message-replies"></a>Listar respostas de mensagem de canal
 
 Namespace: microsoft.graph
 
-Lista todas as respostas de uma [mensagem em](../resources/chatmessage.md) um [canal](../resources/channel.md) de uma equipe.
+Listar todas as respostas de uma [mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) de uma equipe.
 
-Este método lista somente as respostas da mensagem especificada, se alguma. Para receber a mensagem em si, basta chamar [a mensagem de get do canal.](channel-get-message.md)
+Este método lista apenas as respostas da mensagem especificada, se alguma. Para obter a mensagem em si, basta chamar [get channel message](channel-get-message.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| ChannelMessage.Read.Group* |
+|Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 

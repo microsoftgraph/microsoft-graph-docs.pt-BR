@@ -1,22 +1,22 @@
 ---
 title: Obter onlineMeeting
-description: Recupere as propriedades e os relacionamentos de um objeto de reunião online.
-author: ananmishr
+description: Recupere as propriedades e as relações de um objeto de reunião online.
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 18f4d06e106bb7413054d2ab62f93d02885a90a0
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 81ef5019ad98af32cd2a393b1f531ee6b5b0ba87
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292935"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515878"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um [objeto onlineMeeting.](../resources/onlinemeeting.md) Você pode obter detalhes de uma onlineMeeting usando [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) ou [a ID da reunião.](#example-2-retrieve-an-online-meeting-by-meeting-id)
+Recupere as propriedades e as relações de um [objeto onlineMeeting.](../resources/onlinemeeting.md) Você pode obter detalhes de um onlineMeeting usando [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) ou [iD de reunião.](#example-2-retrieve-an-online-meeting-by-meeting-id)
 
 
 ## <a name="permissions"></a>Permissões
@@ -30,16 +30,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para recuperar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
+> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para recuperar uma reunião online em nome desse usuário (ID do usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para obter o onlineMeeting especificado usando a ID de reunião com o token delegado:
+Para obter o onlineMeeting especificado usando a ID da reunião com o token delegado:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 ```
 
-Para obter a onlineMeeting especificada usando a ID de reunião com o token de aplicativo:
+Para obter o onlineMeeting especificado usando a ID da reunião com o token de aplicativo:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings/{meetingId}
@@ -52,10 +52,10 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 ```
 
 > **Observação:**
-> - `userId`é a ID de objeto de um usuário no portal de gerenciamento de usuários do [Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte política [de acesso ao aplicativo.](/graph/cloud-communication-online-meeting-application-access-policy)
-> - `meetingId`é a **id de** um [objeto onlineMeeting.](../resources/onlinemeeting.md)
-> - **videoTeleconferenceId** é gerado para usuários licenciados Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting](../resources/onlinemeeting.md) . Consulte a [ID de conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) para obter mais detalhes.
-> - \* Este cenário só dá suporte ao token de aplicativo e não oferece suporte à política de acesso a aplicativos.
+> - `userId`é a ID do objeto de um usuário no portal de gerenciamento [de usuários do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
+> - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
+> - **videoTeleconferenceId** é gerado para usuários licenciados do Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting.](../resources/onlinemeeting.md) Consulte a [ID da conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) para obter mais detalhes.
+> - \* Esse cenário só dá suporte ao token de aplicativo e não dá suporte à política de acesso a aplicativos.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -85,6 +85,7 @@ O exemplo a seguir mostra a solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["123456789"],
   "name": "get-onlineMeeting"
 }-->
 ```msgraph-interactive
@@ -188,11 +189,11 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Exemplo 2: Recuperar uma reunião online por ID de reunião
-Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou de aplicativo. A ID da reunião é fornecida no objeto de resposta ao criar [um onlineMeeting](../resources/onlinemeeting.md). Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião online pela primeira vez usando a API do Graph e depois recupera as informações da reunião posteriormente como uma ação separada.
+Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou aplicativo. A ID da reunião é fornecida no objeto de resposta ao criar [um onlineMeeting](../resources/onlinemeeting.md). Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria primeiro a reunião online usando a API graph primeiro e recupera informações de reunião posteriormente como uma ação separada.
 
 #### <a name="request"></a>Solicitação
 
-> **Observação:** A ID da reunião foi truncada para maior leitura.
+> **Observação:** A ID da reunião foi truncada para capacidade de leitura.
 
 A solicitação a seguir usa um token de usuário.
 <!-- { "blockType": "ignored" } -->

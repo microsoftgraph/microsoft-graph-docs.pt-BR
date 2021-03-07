@@ -1,16 +1,16 @@
 ---
 title: 'onlineMeeting: createOrGet'
 description: Crie uma reunião online com uma ID externa especificada personalizada. Se a ID externa já existir, essa API retornará o **objeto onlineMeeting** com essa ID externa.
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 883741901f3031300ea6fe8073e2560b50b53eac
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 27e68b078b22380638047d9a0827459f90e3c5da
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292212"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516161"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -30,16 +30,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*Os administradores [](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para criar ou obter uma reunião online com ID externa em nome desse usuário (ID de usuário especificada no caminho da solicitação).
+> \*Os administradores [](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para criar ou obter uma reunião online com a ID externa em nome desse usuário (ID do usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para chamar a API **createOrGet** com o token delegado:
+Para chamar a API **createOrGet** com token delegado:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
-Para chamar a API **createOrGet** com o token de aplicativo:
+Para chamar a API **createOrGet** com token de aplicativo:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/createOrGet
@@ -61,19 +61,19 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | endDateTime      | DateTime                                 | A hora de término da reunião em UTC. |
 | externalId       | Cadeia de caracteres                                   | A ID externa. Uma ID personalizada. (Obrigatório) |
 | participants     | [meetingParticipants](../resources/meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
-| startDateTime    | DateTime                                 | A hora de início da reunião em UTC. |
-| assunto          | String                                   | O assunto da reunião online. |
+| startDateTime    | DateTime                                 | O horário de início da reunião em UTC. |
+| assunto          | Cadeia de caracteres                                   | O assunto da reunião online. |
 
 > **Observações:**
 >
-> - Se **startDateTime** e **endDateTime** não são fornecidos, **startDateTime** será padrão para o valor dateTime atual e o valor **de endDateTime** será igual a **startDateTime** + 1 hora.
+> - Se **o startDateTime** e **endDateTime** não são fornecidos, o **startDateTime** será padrão para o valor dateTime atual e o valor **endDateTime** será igual ao **startDateTime** + 1 hora.
 >
-> - Se **startDateTime for** fornecido, mas **endDateTime** não for, o valor **de endDateTime** será igual a **startDateTime** + 1 hora.
+> - Se o **startDateTime** for fornecido, mas **endDateTime** não for, o valor **endDateTime** será igual ao **startDateTime** + 1 hora.
 >
-> - Um erro será lançado se **endDateTime for** fornecido sem **startDateTime** ou se **endDateTime** for anterior a **startDateTime**.
+> - Um erro será lançado se **endDateTime** for fornecido sem **o startDateTime** ou se **endDateTime** for anterior ao **startDateTime**.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta se uma nova reunião for criada ou um código de resposta se uma `201 Created` `200 OK` reunião existente for recuperada. Em ambos os casos, um [objeto onlineMeeting](../resources/onlinemeeting.md) é retornado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta se uma nova reunião for criada ou um código de resposta se uma reunião existente `201 Created` `200 OK` for recuperada. Em ambos os casos, um [objeto onlineMeeting](../resources/onlinemeeting.md) é retornado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

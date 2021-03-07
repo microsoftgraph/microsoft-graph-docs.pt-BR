@@ -1,0 +1,115 @@
+---
+title: Listar printJobs para uma impressora
+description: Recupere uma lista de trabalhos de impressão associados à impressora.
+author: nilakhan
+localization_priority: Normal
+ms.prod: cloud-printing
+doc_type: apiPageType
+ms.openlocfilehash: 064d95da16c80449a054006807a203a494e139d6
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516926"
+---
+# <a name="list-printjobs-for-a-printer"></a>Listar printJobs para uma impressora
+Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+
+Recupere uma lista de trabalhos de impressão associados à [impressora](../resources/printer.md).
+
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve [](printer-get.md) ter uma assinatura de Impressão Universal ativa, uma permissão que concede acesso a Obter impressora e uma das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+
+Para ler trabalhos de impressão de outro usuário, o usuário inscreveu precisa ser um administrador de impressão e ter a permissão PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All ou PrintJob.ReadWrite.All.
+
+|Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
+|:---------------|:--------------------------------------------|
+|Delegado (conta corporativa ou de estudante)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /print/printers/{printerId}/jobs
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+* A **propriedade documents** é omitida da resposta por padrão. Para também retornar uma lista de [printDocuments](../resources/printdocument.md) para cada trabalho de impressão, use `$expand=documents` .
+* Este método dá suporte à filtragem de trabalhos de impressão pelo usuário que os criou. Use `$filter=createdBy/userPrincipalName eq '{upn}'` , onde **{upn}** é [o nome principal do](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) usuário do usuário associado.
+
+### <a name="exceptions"></a>Exceptions
+Alguns operadores não têm suporte: `$count` , `$search` .
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos printJob](../resources/printjob.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "list_printjob"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs
+```
+
+
+### <a name="response"></a>Resposta
+**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.printJob)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('2f3453b7-4686-4b5b-9575-4f1e5b909ba7')/jobs",
+  "value": [
+    {
+      "id": "103",
+      "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+      "createdBy": {        
+      },
+      "status": {
+        "state": "completed",
+        "description": "The print job has completed successfully and no further processing will take place.",
+        "details": [          
+        ],
+        "isAcquiredByPrinter": true
+      },
+      "configuration": {        
+      },
+      "redirectedTo": null,
+      "redirectedFrom": null,
+      "isFetchable": false     
+    }
+  ]
+}
+```
+
