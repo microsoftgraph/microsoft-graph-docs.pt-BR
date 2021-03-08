@@ -3,20 +3,50 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9653153d8dc7dd2ae9c13f027191c9cfe7da620c
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 2a6fe540d280b7db44f9c3c2488f0ea4ab652175
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292837"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516217"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Este log de alterações inclui alterações específicas no nível da API no Microsoft Graph v 1.0 e beta.
 
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
+## <a name="march-2021"></a>Março de 2021
+
+### <a name="users"></a>Usuários
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionado o recurso [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true).|
+| Adição | beta | Adicionado o recurso [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true).|
+| Adição | beta | Adicionada a propriedade **translationPreferences** ao recurso [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true).|
+
+## <a name="march-2021"></a>Março de 2021
+
+### <a name="identity-and-access"></a>Identidade e acesso
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+| Adição        | v1.0        | Apresentação do novo tipo de recurso [applicationTemplate](/graph/api/resources/applicationtemplate.md). Esse tipo de recurso dá suporte a [instanciar](/graph/api/applicationtemplate-instantiate.md), [listar](/graph/api/applicationtemplate-instantiate.md) e [obter](/graph/api/applicationtemplate-get.md) aplicativos da galeria do aplicativo Azure AD.
 
 ## <a name="february-2021"></a>Fevereiro de 2021
+
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+| **Tipo de alteração** | **Versão**   | **Descrição**                                                                                              |
+| :-------------- | :------------ | :---------------------------------------                                                                     |
+| Adição        | beta          | Adicionada a opção **participantCapacity** para [responder](https://docs.microsoft.com/en-us/graph/api/call-answer?view=graph-rest-beta) à operação.|
+| Adição        | beta          | Adicionado o tipo de recurso [participantJoiningNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-beta).|
+| Adição        | beta          | Adicionado o tipo de recurso [participantLeftNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-beta).|
+| Adição        | beta          | Adicionado o tipo de recurso [participantJoiningResponse](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-beta).|
+| Adição        | beta          | Adicionado o tipo de recurso [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-beta).|
+| Adição        | beta          | Adicionado o tipo de recurso [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta).|
+| Adição        | beta          | Adicionado o tipo de recurso [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta).|
+
 
 ### <a name="tasks-and-plans"></a>Tarefas e planos
 
@@ -173,7 +203,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionada a propriedade opcional **notificationChannelUrl** ao recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). | 
+| Adição | beta | Adicionada a propriedade opcional **notificationChannelUrl** ao recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionada a propriedade opcional **addedStudentAction** ao recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionado o tipo de enumeração **educationAddedStudentAction**. |
 
@@ -204,6 +234,10 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionou métodos para listar e criar atribuições de atributo de usuário para o recurso [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionou métodos para listar e criar atribuições de atributo de usuário para o recurso [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true).|
 | Adição | v1.0 | Adicionado o tipo de recurso [AuthorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true).  |
+| Adição | beta | Adicionada a propriedade **includeDevices** ao recurso [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta).|
+| Adição | beta | Adicionada a propriedade **excludeDevices** ao recurso [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta).|
+| Alteração | beta | A propriedade **includeDeviceStates** no recurso [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) foi descontinuada.|
+| Alteração | beta | A propriedade **excludeDeviceStates** no recurso [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) foi descontinuada.|
 | Adição | beta | Adicionado o tipo de recurso [authenticationEventsPolicy](/graph/api/resources/authenticationeventspolicy?preserve-view=true&view=graph-rest-beta). |
 | Adição | beta | Adicionado o tipo de recurso [authenticationListener](/graph/api/resources/authenticationlistener?preserve-view=true&view=graph-rest-beta). |
 | Adição | beta | Adicionado o tipo de recurso [invokeUserFlowListener](/graph/api/resources/invokeUserFlowListener?preserve-view=true&view=graph-rest-beta). |
@@ -409,9 +443,9 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Alteração | beta | A propriedade **feedDirections** está obsoleta no recurso [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true). |
 | Alteração | beta | Adicionada a propriedade **detalhes** ao recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true). |
 | Alteração | beta | A propriedade **processingStateReasons** está obsoleta no recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true). |
-| Alteração | beta | Propriedades renomeadas no recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true): <br/><ul><li>processingState -> estado</li><li>processingStateDescription -> descrição</li></ul> |  
+| Alteração | beta | Propriedades renomeadas no recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true): <br/><ul><li>processingState -> estado</li><li>processingStateDescription -> descrição</li></ul> |
 | Alteração | beta | Adicionada a propriedade **detalhes** ao recurso [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true). |
-| Alteração | beta | Propriedades renomeadas no recurso [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true): <br/><ul><li>processingState -> estado</li><li>processingStateDescription -> descrição</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |  
+| Alteração | beta | Propriedades renomeadas no recurso [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true): <br/><ul><li>processingState -> estado</li><li>processingStateDescription -> descrição</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
 

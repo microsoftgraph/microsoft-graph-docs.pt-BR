@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: fcb4ed8a5bd73563f344c539b15639131d29858e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c1282d71fbd0ae51f4ce1a24549ca2721c77a260
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49278937"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515657"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -41,7 +41,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------------------------------------|---------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Sem suporte. |
+|Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 

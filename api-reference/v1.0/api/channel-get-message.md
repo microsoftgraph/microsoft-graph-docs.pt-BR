@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3363d252bb58302e8446c01212b7bd2178d43fa9
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: 7f8d0266688c0347e0b21e2bc793e13fbeaac82d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115169"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515909"
 ---
 # <a name="get-channel-message"></a>Obter mensagens do canal
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMessage.Read.Group* |
+|Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 

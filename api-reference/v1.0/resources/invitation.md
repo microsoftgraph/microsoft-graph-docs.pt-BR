@@ -5,12 +5,12 @@ localization_priority: Priority
 author: elisolMS
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ed0dd07a0460ef35b2e1be567d1de1b12294e68c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 484ac459d36d98353038fa68af4a2c8c9312ac56
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444354"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516609"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -41,7 +41,7 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
 |sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
 |inviteRedirectUrl|Cadeia de caracteres|O URL para a qual o usuário deve ser redirecionado uma vez que o convite seja resgatado. Obrigatório.|
-|inviteRedeemUrl|Cadeia de caracteres|O URL que o usuário pode usar para resgatar seus convites. Somente leitura|.
+|inviteRedeemUrl|Cadeia de caracteres|O URL que o usuário pode usar para resgatar o convite dele. Somente leitura.|
 |invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você poderá convidar como Membro se não for administrador da empresa. |
 |status|String|O status do convite. Valores possíveis: PendingAcceptance, Completed, InProgress, e Error|
 
