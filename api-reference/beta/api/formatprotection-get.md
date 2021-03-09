@@ -5,55 +5,58 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 0e3072458d01ab7986a428752ebfe33285383a24
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8cc761fd685895f1ca509ae0586d9eadcca90c9e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954411"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574052"
 ---
-# <a name="get-formatprotection"></a><span data-ttu-id="c6404-103">Get FormatProtection</span><span class="sxs-lookup"><span data-stu-id="c6404-103">Get FormatProtection</span></span>
+# <a name="get-formatprotection"></a><span data-ttu-id="b9d04-103">Get FormatProtection</span><span class="sxs-lookup"><span data-stu-id="b9d04-103">Get FormatProtection</span></span>
 
-<span data-ttu-id="c6404-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c6404-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b9d04-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b9d04-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c6404-105">Recupere as propriedades e os relacionamentos do objeto formatprotection.</span><span class="sxs-lookup"><span data-stu-id="c6404-105">Retrieve the properties and relationships of formatprotection object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c6404-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="c6404-106">Permissions</span></span>
-<span data-ttu-id="c6404-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c6404-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b9d04-105">Recupere as propriedades e os relacionamentos do objeto formatprotection.</span><span class="sxs-lookup"><span data-stu-id="b9d04-105">Retrieve the properties and relationships of formatprotection object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b9d04-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="b9d04-106">Permissions</span></span>
+<span data-ttu-id="b9d04-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b9d04-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c6404-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c6404-109">Permission type</span></span>      | <span data-ttu-id="c6404-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c6404-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b9d04-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b9d04-109">Permission type</span></span>      | <span data-ttu-id="b9d04-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b9d04-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c6404-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c6404-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c6404-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6404-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c6404-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c6404-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c6404-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6404-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c6404-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c6404-115">Application</span></span> | <span data-ttu-id="c6404-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c6404-116">Not supported.</span></span> |
+|<span data-ttu-id="b9d04-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b9d04-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b9d04-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b9d04-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b9d04-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b9d04-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b9d04-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b9d04-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b9d04-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b9d04-115">Application</span></span> | <span data-ttu-id="b9d04-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b9d04-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c6404-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c6404-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b9d04-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b9d04-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format/protection
-GET /workbook/worksheets/{id|name}/range(<address>)/format/protection
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
+GET /me/drive/items/{id}/workbook/names/{name}/range/format/protection
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/protection
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(<address>)/format/protection
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(<address>)/format/protection
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/protection
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c6404-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="c6404-118">Optional query parameters</span></span>
-<span data-ttu-id="c6404-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="c6404-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b9d04-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b9d04-118">Optional query parameters</span></span>
+<span data-ttu-id="b9d04-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="b9d04-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c6404-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c6404-120">Request headers</span></span>
-| <span data-ttu-id="c6404-121">Nome</span><span class="sxs-lookup"><span data-stu-id="c6404-121">Name</span></span>      |<span data-ttu-id="c6404-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="c6404-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b9d04-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b9d04-120">Request headers</span></span>
+| <span data-ttu-id="b9d04-121">Nome</span><span class="sxs-lookup"><span data-stu-id="b9d04-121">Name</span></span>      |<span data-ttu-id="b9d04-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="b9d04-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c6404-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="c6404-123">Authorization</span></span>  | <span data-ttu-id="c6404-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c6404-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b9d04-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="b9d04-123">Authorization</span></span>  | <span data-ttu-id="b9d04-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b9d04-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c6404-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c6404-126">Request body</span></span>
-<span data-ttu-id="c6404-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c6404-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b9d04-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b9d04-126">Request body</span></span>
+<span data-ttu-id="b9d04-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b9d04-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c6404-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="c6404-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b9d04-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="b9d04-128">Response</span></span>
 
-<span data-ttu-id="c6404-129">Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [FormatProtection](../resources/formatprotection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c6404-129">If successful, this method returns a `200 OK` response code and [FormatProtection](../resources/formatprotection.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c6404-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c6404-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c6404-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c6404-131">Request</span></span>
-<span data-ttu-id="c6404-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c6404-132">Here is an example of the request.</span></span>
+<span data-ttu-id="b9d04-129">Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [FormatProtection](../resources/formatprotection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b9d04-129">If successful, this method returns a `200 OK` response code and [FormatProtection](../resources/formatprotection.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b9d04-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b9d04-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b9d04-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b9d04-131">Request</span></span>
+<span data-ttu-id="b9d04-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b9d04-132">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c6404-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="c6404-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b9d04-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="b9d04-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_formatprotection"
@@ -61,26 +64,26 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 ```
-# <a name="c"></a>[<span data-ttu-id="c6404-134">C#</span><span class="sxs-lookup"><span data-stu-id="c6404-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b9d04-134">C#</span><span class="sxs-lookup"><span data-stu-id="b9d04-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-formatprotection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c6404-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c6404-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b9d04-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9d04-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-formatprotection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c6404-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c6404-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b9d04-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b9d04-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-formatprotection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c6404-137">Java</span><span class="sxs-lookup"><span data-stu-id="c6404-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b9d04-137">Java</span><span class="sxs-lookup"><span data-stu-id="b9d04-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-formatprotection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="c6404-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="c6404-138">Response</span></span>
-<span data-ttu-id="c6404-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c6404-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b9d04-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="b9d04-138">Response</span></span>
+<span data-ttu-id="b9d04-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b9d04-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
