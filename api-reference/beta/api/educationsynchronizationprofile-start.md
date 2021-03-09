@@ -1,26 +1,26 @@
 ---
-title: Iniciar sincronização após carregar arquivos em um educationSynchronizationProfile
-description: Verifique se os arquivos foram carregados em um perfil de sincronização de dados escolar específico no locatário. Se a verificação for bem-sucedida, a sincronização será iniciada no perfil. Caso contrário, a resposta conterá erros e avisos. Se a resposta contiver erros, a sincronização não será iniciada. Se a resposta contiver apenas avisos, a sincronização será iniciada.
+title: Iniciar a sincronização depois de carregar arquivos em um educationSynchronizationProfile
+description: Verifique os arquivos carregados em um perfil específico de sincronização de dados escolares no locatário. Se a verificação for bem-sucedida, a sincronização começará no perfil. Caso contrário, a resposta conterá erros e avisos. Se a resposta contiver erros, a sincronização não será iniciar. Se a resposta contiver apenas avisos, a sincronização será iniciar.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7953171f90c5b9297bca1122cfe21b3ad854287a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04f8f9e96422c262ea816a5f24796d4059b0809c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965794"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574141"
 ---
-# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Iniciar sincronização após carregar arquivos em um educationSynchronizationProfile
+# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Iniciar a sincronização depois de carregar arquivos em um educationSynchronizationProfile
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifique se os arquivos foram carregados em um [perfil de sincronização](../resources/educationsynchronizationprofile.md) de dados escolar específico no locatário. Se a verificação for bem-sucedida, a sincronização será iniciada no perfil. Caso contrário, a resposta conterá erros e avisos. Se a resposta contiver erros, a sincronização não será iniciada. Se a resposta contiver apenas avisos, a sincronização será iniciada.
+Verifique os arquivos carregados em um perfil específico de [sincronização](../resources/educationsynchronizationprofile.md) de dados escolares no locatário. Se a verificação for bem-sucedida, a sincronização começará no perfil. Caso contrário, a resposta conterá erros e avisos. Se a resposta contiver erros, a sincronização não será iniciar. Se a resposta contiver apenas avisos, a sincronização será iniciar.
 
-> **Observação:** Use este método somente quando o provedor de dados for do tipo [educationcsvdataprovider](../resources/educationcsvdataprovider.md). Além disso, a propriedade State do perfil precisa ser provisionada para que possa ser iniciada. Sondar o objeto de perfil para verificar sua propriedade State.
+> **Observação:** Use esse método somente quando o provedor de dados for do tipo [educationcsvdataprovider](../resources/educationcsvdataprovider.md). Além disso, a propriedade de estado do perfil precisa ser provisionada antes que ela possa ser iniciada. Sondar o objeto profile para verificar sua propriedade de estado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,13 +28,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/start
+POST /education/synchronizationProfiles/{id}/start
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -45,7 +45,7 @@ POST /synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK`. Se não tiver êxito, retornará um `400 Bad Request` . A resposta contém uma coleção de objetos [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) como parte do corpo da resposta se forem encontrados erros ou avisos.
+Se tiver êxito, este método retornará um código de resposta `200 OK`. Se não tiver êxito, retornará `400 Bad Request` um . A resposta contém uma coleção de objetos [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) como parte do corpo da resposta se quaisquer erros ou avisos foram encontrados.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

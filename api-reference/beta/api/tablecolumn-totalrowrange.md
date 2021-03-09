@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f72017881e1072033f4e6f222bd8725d8d3c2a06
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3ebb0915c42051b40ada61016e97164f4e417b0e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440619"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576332"
 ---
 # <a name="tablecolumn-totalrowrange"></a>TableColumn: TotalRowRange
 
@@ -31,8 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/columns/{id|name}/TotalRowRange
-GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/TotalRowRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/TotalRowRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/TotalRowRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/TotalRowRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/TotalRowRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

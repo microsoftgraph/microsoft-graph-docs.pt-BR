@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 81e4b6c51ce136192e0abb8ff1661fb9e0993b6b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: da8a4027e0122aaf1b21b8b0d278851db34897c4
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971722"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575011"
 ---
 # <a name="add-named-item"></a>Adicionar Item nomeado
 
@@ -32,8 +32,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/add
-POST /workbook/worksheets/{id|name}/names/add
+POST /me/drive/items/{id}/workbook/names/add
+POST /me/drive/root:/{item-path}:/workbook/names/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/names/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [workbookNamedItem](../resources/workbooknameditem.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [workbookNamedItem](../resources/workbooknameditem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

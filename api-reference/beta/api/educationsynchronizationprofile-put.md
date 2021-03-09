@@ -1,16 +1,16 @@
 ---
 title: Atualizar um educationSynchronizationProfile
-description: Atualize as propriedades de um perfil de sincronização de dados da escola existente no locatário.
+description: Atualize as propriedades para um perfil de sincronização de dados escolares existente no locatário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2145db383d919b218a6d86115dba79d9b9e9875b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 27210f444228e3feb5bde98b0b048f26612f4493
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007081"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574108"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>Atualizar um educationSynchronizationProfile
 
@@ -18,21 +18,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um perfil de [sincronização](../resources/educationsynchronizationprofile.md) de dados da escola existente no locatário.
+Atualize as propriedades para um perfil de sincronização de dados escolares [existente](../resources/educationsynchronizationprofile.md) no locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
-| Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+| Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /synchronizationProfiles
+PUT /education/synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -42,10 +42,10 @@ PUT /synchronizationProfiles
 | Content-Type | string | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [synchronizationProfile](../resources/educationsynchronizationprofile.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto synchronizationProfile.](../resources/educationsynchronizationprofile.md)
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `202, Accepted` código de resposta e um objeto [synchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `202, Accepted` de resposta e um objeto [synchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

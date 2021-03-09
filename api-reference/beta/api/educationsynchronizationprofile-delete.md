@@ -1,16 +1,16 @@
 ---
 title: Excluir um educationSynchronizationProfile
-description: Excluir um perfil de sincronização de dados da escola no locatário com base no identificador.
+description: Exclua um perfil de sincronização de dados escolares no locatário com base no identificador.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2dc90964e7637a9b80e56d09618d83878aaaecbf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2cc7d03b406888022fc8bab935af2b5118357c0c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955348"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574276"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Excluir um educationSynchronizationProfile
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um perfil de [sincronização](../resources/educationsynchronizationprofile.md) de dados da escola no locatário com base no identificador.
+Exclua um perfil [de sincronização de](../resources/educationsynchronizationprofile.md) dados escolares no locatário com base no identificador.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,14 +30,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /synchronizationProfiles/{id}
+DELETE /education/synchronizationProfiles/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório.  |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="request-body"></a>Corpo da solicitação

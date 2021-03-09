@@ -1,16 +1,16 @@
 ---
 title: Obter o status de um educationSynchronizationProfile
-description: Obter o status de um perfil de sincronização de dados escolar específico no locatário. A resposta indicará o status da sincronização.
+description: Obter o status de um perfil de sincronização de dados escolares específico no locatário. A resposta indicará o status da sincronização.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 30cde845220ecf2619516ddee1dcc5c58d3740c1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fef6a53f112f9c7f5922e9242761e5365e9f15a5
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955325"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574119"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Obter o status de um educationSynchronizationProfile
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o status de um [perfil de sincronização](../resources/educationsynchronizationprofile.md) de dados escolar específico no locatário. A resposta indicará o status da sincronização.
+Obter o status de um perfil de [sincronização](../resources/educationsynchronizationprofile.md) de dados escolares específico no locatário. A resposta indicará o status da sincronização.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,15 +26,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                       | Permissões (da com menos para a com mais privilégios)                 |
 | :------------------------------------ | :---------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)    | EduAdministration. Read, EduAdministration. ReadWrite         |
-| Delegado (conta pessoal da Microsoft | Sem suporte.                                              |
-| Application                           | EduAdministration. Read. All, EduAdministration. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)    | EduAdministration.Read, EduAdministration.ReadWrite         |
+| Delegada (conta pessoal da Microsoft | Sem suporte.                                              |
+| Aplicativo                           | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /synchronizationProfiles/{id}/profileStatus
+GET /education/synchronizationProfiles/{id}/profileStatus
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationsynchronizationprofilestatus](../resources/educationsynchronizationprofilestatus.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationsynchronizationprofilestatus](../resources/educationsynchronizationprofilestatus.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

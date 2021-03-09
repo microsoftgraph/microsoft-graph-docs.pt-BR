@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: eafbbdef90484d9fabba731ec6a7a4c0055b8a6c
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 9933dab8bd6d064806d14ea590b410ac9e448ea7
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034202"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576565"
 ---
 # <a name="list-columns"></a>Listar colunas
 
@@ -31,8 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/columns
-GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Para resultados confiáveis, use os parâmetros de consulta [$top](/graph/query-parameters#top) e [$skip](/graph/query-parameters#skip-parameter) para navegar pelos resultados. Isso ajudará a evitar problemas de desempenho relacionados a grandes conjuntos de resultados.
@@ -48,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [workbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

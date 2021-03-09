@@ -1,16 +1,16 @@
 ---
 title: Redefinir a sincronização em um educationSynchronizationProfile
-description: Redefinir a sincronização de um perfil de sincronização de dados escolar específico no locatário.
+description: Redefina a sincronização de um perfil específico de sincronização de dados escolares no locatário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 517dc5e2fddf0c959215fb69621e0bb99bad75e5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2afd14b647b02897c140287e96f8bd1f5fdd89fe
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965827"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574159"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Redefinir a sincronização em um educationSynchronizationProfile
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Redefinir a sincronização de um [perfil de sincronização](../resources/educationsynchronizationprofile.md) de dados escolar específico no locatário.
+Redefina a sincronização de um perfil específico de [sincronização](../resources/educationsynchronizationprofile.md) de dados escolares no locatário.
 
-> **Observação:** Essa operação causará a reinicialização da sincronização. Os erros encontrados serão excluídos. Nenhum dado será excluído do Azure Active Directory (Azure AD). 
+> **Observação:** Essa operação fará com que a sincronização seja reiniciada. Quaisquer erros encontrados serão excluídos. Nenhum dado será excluído do Azure Active Directory (Azure AD). 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,13 +28,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/reset
+POST /education/synchronizationProfiles/{id}/reset
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

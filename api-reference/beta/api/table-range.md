@@ -1,18 +1,18 @@
 ---
-title: 'workbooktable: Range'
+title: 'workbookTable: range'
 description: Obtém o objeto de intervalo associado a toda a tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e46269033c06a3dd01b867e76aced48a76c7e1a3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ba01f948a6b21dc2b53c52682f92f428bb2df95
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980422"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576518"
 ---
-# <a name="workbooktable-range"></a>workbooktable: Range
+# <a name="workbooktable-range"></a>workbookTable: range
 
 Namespace: microsoft.graph
 
@@ -31,8 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/Range
-GET /workbook/worksheets/{id|name}/tables/{id|name}/Range
+GET /me/drive/items/{id}/workbook/tables/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/Range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -45,7 +47,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/Range
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [workbookRange](../resources/workbookrange.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [workbookRange](../resources/workbookrange.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

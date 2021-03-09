@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 00faf3bb2523ed4cfdd4467dcd1a1d1ce0fa2856
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 323babcfeeb407f7dcfb94445c7cfa65102fde53
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034251"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576544"
 ---
 # <a name="create-tablecolumn"></a>Criar TableColumn
 
@@ -31,8 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -42,11 +44,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto workbookTableColumn.](../resources/workbooktablecolumn.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto WorkbookTableColumn.](../resources/workbooktablecolumn.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta e o objeto `201 Created` [workbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o objeto `201 Created` [workbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -87,7 +89,7 @@ Content-length: 81
 
 ---
 
-No corpo da solicitação, fornece uma representação JSON do [objeto workbookTableColumn.](../resources/workbooktablecolumn.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto WorkbookTableColumn.](../resources/workbooktablecolumn.md)
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

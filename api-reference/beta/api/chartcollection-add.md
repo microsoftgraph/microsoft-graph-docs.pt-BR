@@ -1,18 +1,18 @@
 ---
-title: 'workbookChartCollection: Adicionar'
-description: Cria um novo workbookChart.
+title: 'workbookChartCollection: add'
+description: Cria uma nova workbookChart.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c7d5911190fe41e0afa7a4d158ba7a81bd955d68
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a456a9770421d42310a5b6f0784bf1621da94a22
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958847"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574668"
 ---
-# <a name="workbookchartcollection-add"></a>workbookChartCollection: Adicionar
+# <a name="workbookchartcollection-add"></a>workbookChartCollection: add
 
 Namespace: microsoft.graph
 
@@ -31,7 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/add
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -45,13 +46,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|type|string|Representa o tipo de um gráfico.  Os valores possíveis são: `ColumnClustered` , `ColumnStacked` , `ColumnStacked100` , `BarClustered` , `BarStacked` , `BarStacked100` , `LineStacked` , `LineStacked100` , `LineMarkers` , `LineMarkersStacked` , `LineMarkersStacked100` , `PieOfPie` , `etc.` .|
+|type|string|Representa o tipo de um gráfico.  Os valores possíveis são: `ColumnClustered` , , , , , , , , , `ColumnStacked` , , `ColumnStacked100` , , , `BarClustered` , `BarStacked` `BarStacked100` `LineStacked` `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.` .|
 |sourceData|Json|O objeto Range correspondente aos dados de origem.|
 |seriesBy|string|Opcional. Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico.  Os valores possíveis são: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [workbookChart](../resources/workbookchart.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [workbookChart](../resources/workbookchart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

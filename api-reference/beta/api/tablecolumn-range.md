@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 03c8ca5be5429fe0d42d24a596ed468a86becbf3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 131cd75e3f9e0183ed2013b824e5963979422f16
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443461"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576362"
 ---
 # <a name="tablecolumn-range"></a>TableColumn: Range
 
@@ -31,8 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/columns/{id|name}/Range
-GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/Range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

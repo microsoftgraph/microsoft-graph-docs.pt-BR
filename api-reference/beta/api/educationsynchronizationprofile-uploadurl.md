@@ -1,16 +1,16 @@
 ---
 title: 'educationSynchronizationProfile: uploadUrl'
-description: Recupere uma assinatura de acesso compartilhado (SAS) para carregar arquivos de origem para o armazenamento de blob do Azure para um perfil de sincronização de dados escolar específico no locatário. O token SAS tem uma validade de uma hora.
+description: Recupere uma assinatura de acesso compartilhado (SAS) para carregar arquivos de origem no armazenamento de blob do Azure para um perfil específico de sincronização de dados escolares no locatário. O token SAS tem uma validade de uma hora.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8c85147b5280dbfa623a17e10cfe36463e3c1e1b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e7fe3af888582fc38d617c1445e0e7c5473c528b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965773"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574142"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma assinatura de acesso compartilhado (SAS) para carregar arquivos de origem para o armazenamento de blob do Azure para um [perfil de sincronização](../resources/educationsynchronizationprofile.md) de dados escolar específico no locatário. O token SAS tem uma validade de uma hora.
+Recupere uma assinatura de acesso compartilhado (SAS) para carregar arquivos de origem no armazenamento de blob do Azure para um perfil específico de sincronização de dados escolares no locatário. [](../resources/educationsynchronizationprofile.md) O token SAS tem uma validade de uma hora.
 
-A URL de upload é fornecida somente para o [provedor de dados CSV](../resources/educationcsvdataprovider.md).
+A URL de carregamento é fornecida apenas para o provedor de dados [CSV.](../resources/educationcsvdataprovider.md)
 
-> **Observação:** Para acessar o armazenamento de blob com o token SAS, use os [SDKs de armazenamento do Azure](https://github.com/search?q=org%3AAzure+azure-storage) ou o [AzCopy](/azure/storage/storage-use-azcopy).
+> **Observação:** Para acessar o armazenamento de blob com o token SAS, use os [SDKs](https://github.com/search?q=org%3AAzure+azure-storage) de armazenamento do Azure ou [o AzCopy](/azure/storage/storage-use-azcopy).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,13 +30,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /synchronizationProfiles/{id}/uploadUrl
+GET /education/synchronizationProfiles/{id}/uploadUrl
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,9 +47,9 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma URL SAS para o [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma URL SAS para `200 OK` [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
 
-Se uma solicitação anterior ainda estiver sendo processada, este método retornará um `409 Conflict` indicando que o carregamento está bloqueado atualmente para o [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).
+Se uma solicitação anterior ainda estiver sendo processada, este método retornará um indicando que o carregamento está bloqueado no momento para `409 Conflict` [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

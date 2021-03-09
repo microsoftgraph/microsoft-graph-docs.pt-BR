@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bdbaea1b6ae81dacbf63b6a86abe11b562821986
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 750d7b56b4263fabb871eadb39054e6692ad99e2
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882954"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575162"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtém um determinado número de colunas à esquerda do intervalo especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -32,7 +32,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/columnsBefore(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ```
 

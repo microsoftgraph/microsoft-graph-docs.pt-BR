@@ -1,90 +1,102 @@
 ---
 title: Gerenciar números de telefone para bots
-description: Este artigo descreve como criar um bot alcançável por meio de um número de telefone.
+description: Este artigo descreve como criar um bot que é acessível por meio de um número de telefone.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 679ee5ac5da1a8754d7517dfb9f35bd9e0a071db
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: d6b71d2db1be951137ca33026f243dae6055c93f
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289369"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573569"
 ---
 # <a name="manage-phone-numbers-for-bots"></a>Gerenciar números de telefone para bots 
 
-Este artigo descreve como criar um bot alcançável por meio de um número de telefone. Ao criar o bot, será útil estar familiarizado com os seguintes termos:
+Este artigo descreve como criar um bot que é acessível por meio de um número de telefone. À medida que você cria seu bot, será útil estar familiarizado com os seguintes termos:
 
-- **Aplicativo** – um aplicativo hospedado no Azure, também chamado de **bot**.
+- **Aplicativo** – Um aplicativo hospedado no Azure, também conhecido como **bot**.
 
-- **Instância de aplicativo** – um objeto de usuário desabilitado que pode ser atribuído a um número de telefone que pode ser usado por um bot. Isso também é conhecido como uma [conta de recurso](/microsoftteams/manage-resource-accounts). Essa é a única maneira de atribuir um número de telefone a um bot.
+- **Instância do** aplicativo – Um objeto de usuário desabilitado que pode ser atribuído a um número de telefone que pode ser usado por um bot. Isso também é conhecido como uma [conta de recurso](/microsoftteams/manage-resource-accounts). Essa é a única maneira de um número de telefone ser atribuído a um bot.
 
-Um aplicativo pode ter várias instâncias de aplicativo, e cada locatário pode ter várias instâncias de aplicativo, conforme mostrado na imagem a seguir.
+Um aplicativo pode ter várias instâncias de aplicativo e cada locatário pode ter várias instâncias de aplicativo, conforme mostrado na imagem a seguir.
 
 ![Imagem mostrando um número de telefone com locatários com uma ou mais instâncias de aplicativo](images/communications-app-tenant.PNG)
 
-## <a name="prerequisite---register-a-bot"></a>Pré-requisitos-registrar um bot
-Para começar, siga as instruções para [registrar um bot de chamada](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). Você precisará de valores de configuração como ID do bot, ID do aplicativo da Microsoft e senha do Microsoft App para usar no seu código.
+## <a name="prerequisite---register-a-bot"></a>Pré-requisito - Registrar um bot
+Para começar, siga as instruções para registrar [um bot de chamada](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). Você precisará de valores de configuração, como ID de bot, ID de aplicativo da Microsoft e senha de aplicativo da Microsoft para usar em seu código.
 
-Adicione as seguintes permissões ao bot. Um administrador de locatários também precisa concordar com essas permissões:
+Adicione as seguintes permissões ao bot. Um administrador de locatário também precisa concordar com essas permissões:
 
 - Calls.AccessMedia.All
 - Calls.Initiate.All
 - Calls.JoinGroupCall.All
-- Calls. JoinGroupCallAsGuest. All
+- Calls.JoinGroupCallAsGuest.All
 
-Para obter mais informações sobre permissões relacionadas a chamadas, consulte a [referência de permissões](permissions-reference.md#calls-permissions).
+Para obter mais informações sobre permissões relacionadas a chamada, consulte [a referência Permissões](permissions-reference.md#calls-permissions).
 
 
 ## <a name="assign-a-phone-number-to-your-bot"></a>Atribuir um número de telefone ao bot
 
 Atribuir um número de telefone ao bot envolve três etapas:
 
-1.  Criar uma instância de aplicativo.
-2.  Atribua uma licença de usuário virtual à sua instância de aplicativo.
-3.  Atribuir um número de telefone à instância do aplicativo (somente administrador de locatário).
+1.  Crie uma instância de aplicativo.
+2.  Atribua licenças do Microsoft 365 à instância do aplicativo.
+3.  Atribua um número de telefone à instância do aplicativo (somente administrador de locatário).
 
 ### <a name="create-an-application-instance"></a>Criar uma instância de aplicativo
 
-Se ainda não tiver sido instalado, um administrador de locatários precisará instalar o [módulo do Skype for Business online](https://www.microsoft.com/download/details.aspx?id=39366) para o PowerShell. O administrador de locatários deve entrar usando suas credenciais antes de executar o cmdlet.
+Se ainda não tiver sido instalado, um administrador de locatário precisará instalar o [Módulo do Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366) para o PowerShell. O administrador do locatário deve entrar usando suas credenciais antes de executar o cmdlet.
 
-Para criar uma nova instância de aplicativo, o administrador de locatários executa o cmdlet a seguir.
+Para criar uma nova instância de aplicativo, o administrador de locatário executa o cmdlet a seguir.
 
-`PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <user@contoso.com> -ApplicationId “<app_id>” -DisplayName "<bot_display_name>"`
+`PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <user@contoso.com> -ApplicationId <app_id> -DisplayName <bot_display_name>`
 
-Quando a instância do aplicativo for criada, use o cmdlet Sync.
+Quando a instância do aplicativo for criada, use o cmdlet de sincronização.
 
 `PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <application_instance_id>`
 
-### <a name="assign-a-virtual-user-license-to-your-application-instance"></a>Atribuir uma licença de usuário virtual à sua instância de aplicativo
+Para obter mais informações, consulte [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
 
-Atribua uma licença de usuário virtual à sua instância de aplicativo. Para obter detalhes, consulte [licença de usuário virtual do sistema de telefonia](/microsoftteams/teams-add-on-licensing/virtual-user).
+### <a name="assign-microsoft-365-licenses-to-your-application-instance"></a>Atribuir licenças do Microsoft 365 à instância do aplicativo
+
+Atribua uma licença de usuário virtual à instância do aplicativo. Para obter detalhes, consulte [Phone system virtual user license](/microsoftteams/teams-add-on-licensing/virtual-user).
+
+Atribua um plano de chamada à instância do aplicativo. Para obter detalhes, consulte [Planos de chamada para o Microsoft 365](/microsoftteams/calling-plans-for-office-365).
 
 ### <a name="assign-a-phone-number-to-the-application-instance-only-tenant-admin"></a>Atribuir um número de telefone à instância do aplicativo (somente administrador de locatário)
 
+Antes de poder configurar os usuários em sua organização para fazer e receber chamadas telefônicas, você deve obter números de telefone para eles. Para obter detalhes, consulte [Obter números de telefone para seus usuários](/microsoftteams/getting-phone-numbers-for-your-users#get-new-phone-numbers-for-your-users).
+
 Para atribuir o número de telefone à instância do aplicativo, o administrador do locatário:
 
-1. Entra no centro de administração do Microsoft Teams como um administrador de locatários.
-2. Vai para os números de telefone de voz do **centro de administração do teams**  >  **Voice**  >  **Phone Numbers**.
-3. Atribui um número de telefone de serviço (+ formato 11D) usando o cmdlet a seguir.
+1. Entre no centro de administração do Teams como administrador de locatário.
+2. Vai para o **Centro de Administração do Teams** Números de  >  **Telefone** de  >  **Voz**.
+3. Atribui um número de telefone de serviço (formato+11D) usando o cmdlet a seguir.
 
   `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <phone_number>`
+  
+Quando o número de telefone de serviço for atribuído, use o cmdlet de sincronização.
 
-## <a name="unassign-a-bot-phone-number"></a>Cancelar a atribuição de um número de telefone de bot
+`PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <application_instance_id>`
 
-Use o cmdlet a seguir para cancelar a atribuição de um número de telefone.
+Para obter mais informações, consulte [Set-CsOnlineVoiceApplicationInstance](/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+
+## <a name="unassign-a-bot-phone-number"></a>Unassign a bot phone number
+
+Use o cmdlet a seguir para desemplacar um número de telefone.
 
 `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber $null`
 
->**Observação:** Atualmente, isso só funciona com números online e não para os números de roteamento direto (DR). Este é um problema conhecido.
+>**Observação:** Atualmente, isso só funciona com números online e não números de roteamento direto (DR). Este é um problema conhecido.
 
-## <a name="update-a-bot-phone-number"></a>Atualizar um número de telefone de bot
+## <a name="update-a-bot-phone-number"></a>Atualizar um número de telefone bot
 
-Depois de cancelar a atribuição do número, você pode atribuir um número diferente ao bot usando o cmdlet a seguir.
+Depois de desatribuição do número, você pode atribuir um número diferente ao bot usando o cmdlet a seguir.
 
 `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <new phone_number>`
 
 ## <a name="see-also"></a>Confira também
 
-- [Exemplo de bot de incidentes](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples/IncidentBot). 
- - Para obter detalhes sobre como implantar o, consulte [Deploying The Sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/BetaSamples/RemoteMediaSamples/README.md#deploying-the-sample).
+- [Exemplo de bot de incidente](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples/IncidentBot). 
+ - Para obter detalhes sobre como implantar, consulte [Deploying the sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/BetaSamples/RemoteMediaSamples/README.md#deploying-the-sample).

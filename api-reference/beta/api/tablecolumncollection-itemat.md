@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f1c03853330fcffe216c0aaf5e3a30372373aa94
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 3a937ecbf523c68adc3b8068a06c775c6a0c9449
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034083"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576292"
 ---
 # <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 
@@ -31,8 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/ItemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/ItemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -50,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta e o objeto `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o objeto `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

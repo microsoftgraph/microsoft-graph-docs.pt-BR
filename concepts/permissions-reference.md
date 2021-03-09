@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: af9f49b88ca8be02dc4efd414826a09583e699f0
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: f7f5dee15a8111af1a925c1ece328b41e9b538c9
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516413"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573849"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -576,7 +576,7 @@ Nenhum
 #### <a name="application"></a>Aplicativo
 
 * _Contacts.Read_: Ler contatos a parir de uma das pastas de contatos de nível superior de qualquer usuário da organização (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`).
-* _Contacts.ReadWrite_: Atualizar a foto de qualquer contato de qualquer usuário em uma organização (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
+* _Contacts.ReadWrite_: Atualizar a foto de qualquer contato de qualquer usuário em uma organização (`PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
 * _Contacts.ReadWrite_: Adicionar contatos à pasta raiz de qualquer usuário da organização (`POST /users/{id | userPrincipalName}/contacts`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
@@ -2214,12 +2214,12 @@ Com o _User.ManageIdentities.All_ delegado ou as permissões de aplicativo, é p
 * _User.Read_: Ler o perfil completo para o usuário conectado (`GET /me`).
 * _User.ReadWrite_: Atualizar a foto do usuário conectado (`PUT /me/photo/$value`).
 * _User.ReadBasic.All_: Localizar todos os usuários cujos nomes começam com "Davi" (`GET /users?$filter=startswith(displayName,'David')`).
-* _User.Read.All_: Ler o gerente de um usuário (`GET /user/{id | userPrincipalName}/manager`).
+* _User.Read.All_: Ler o gerente de um usuário (`GET /users/{id | userPrincipalName}/manager`).
 
 #### <a name="application"></a>Aplicativo
 
 * _User.Read.All_: Ler todos os usuários e relações usando a consulta delta (`GET /beta/users/delta?$select=displayName,givenName,surname`).
-* _User.ReadWrite.All_: Atualizar a foto de qualquer usuário na organização (`PUT /user/{id | userPrincipalName}/photo/$value`).
+* _User.ReadWrite.All_: Atualizar a foto de qualquer usuário na organização (`PUT /users/{id | userPrincipalName}/photo/$value`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 

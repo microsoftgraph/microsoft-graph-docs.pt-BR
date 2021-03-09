@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5438355c910a4826261b2267b65b86cdbbcebc69
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2c2c1c8ee36b5f9a397ac333f0a2478b483301ec
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976390"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576859"
 ---
 # <a name="tablesort-reapply"></a>TableSort: reapply
 
@@ -31,8 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/sort/reapply
-POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/reapply
+POST /me/drive/items/{id}/workbook/tables/{id|name}/sort/reapply
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/reapply
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/reapply
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/reapply
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

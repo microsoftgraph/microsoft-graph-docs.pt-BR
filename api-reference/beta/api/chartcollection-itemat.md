@@ -1,16 +1,16 @@
 ---
 title: 'workbookChartCollection: ItemAt'
-description: Obtém um workbookchart com base em sua posição na coleção.
+description: Obtém uma workbookchart com base em sua posição na coleção.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bb3dfa39d16859068307dde8c744e40b7ab5ad81
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac0d7b125bf4b511dc837bbae220ee8f36e52f28
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983050"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574654"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -31,7 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/ItemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/ItemAt
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -49,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [workbookChart](../resources/workbookchart.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [workbookChart](../resources/workbookchart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b3dd16ba86e455e63f21132cc67a1c33b055a1d6
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f6a8dd354a93ec2a99c739585c4562e17552bb47
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470380"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574241"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>Obter um educationSynchronizationProfile
 
@@ -25,14 +25,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:-----------|:----------|
-| Delegada (conta corporativa ou de estudante) | EduAdministration.Read, EduAdministration.ReadWrite |
+| Delegado (conta corporativa ou de estudante) | EduAdministration.Read, EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo| EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /synchronizationProfiles/{id}
+GET /education/synchronizationProfiles/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

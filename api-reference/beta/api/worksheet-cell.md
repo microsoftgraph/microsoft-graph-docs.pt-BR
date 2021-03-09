@@ -5,14 +5,14 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 577b7d4c2d92e8af60bf5ab26476915edc4c3cbc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be5b461af5a5c8d3586f6af2819d5497a0d0b473
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092886"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576831"
 ---
-# <a name="worksheet-cell"></a>Planilha: célula
+# <a name="worksheet-cell"></a>Planilha: Célula
 
 Namespace: microsoft.graph
 
@@ -24,19 +24,20 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Files.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/Cell(row={row},column={column})
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/Cell(row={row},column={column})
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/Cell(row={row},column={column})
 
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
-No caminho da solicitação, forneça os seguintes parâmetros.
+No caminho da solicitação, forneça os parâmetros a seguir.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|

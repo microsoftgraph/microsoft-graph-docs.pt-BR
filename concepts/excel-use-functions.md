@@ -1,19 +1,19 @@
 ---
 title: Usar funções de pasta de trabalho do Excel com o Microsoft Graph
-description: 'Você pode usar qualquer função de pasta de trabalho com a seguinte sintaxe: `POST /workbook/functions/{function-name}`. Forneça o(s) argumento(s) de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado da função. O valor `error` de `null` indica a execução bem-sucedida da função.'
+description: 'Você pode usar qualquer função de pasta de trabalho com a seguinte sintaxe: `POST /me/drive/root/workbook/functions/{function-name}`. Forneça o(s) argumento(s) de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado da função. O valor `error` de `null` indica a execução bem-sucedida da função.'
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 38acd639e5364c28292d71aab54de6a89b0058ac
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 0f475b8a1f2a0efece607ea5281504942e0034ea
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37969770"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573555"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>Usar funções de pasta de trabalho do Excel com o Microsoft Graph
 
-Você pode usar qualquer função de pasta de trabalho com a seguinte sintaxe: `POST /workbook/functions/{function-name}`. Forneça o(s) argumento(s) de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado da função. O valor `error` de `null` indica a execução bem-sucedida da função.
+Você pode usar qualquer função de pasta de trabalho com a seguinte sintaxe: `POST /me/drive/root/workbook/functions/{function-name}`. Forneça o(s) argumento(s) de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado da função. O valor `error` de `null` indica a execução bem-sucedida da função.
 
 A lista completa de funções com suporte está listada [aqui](https://support.office.com/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
 

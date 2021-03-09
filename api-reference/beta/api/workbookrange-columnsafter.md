@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e577b691f1ebf746f4fb90b736924149fa8af770
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 42a6e79e72cd10d17dcfa725cdd29ea7ada798bc
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882878"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575179"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtém um determinado número de colunas à direita do intervalo especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -32,7 +32,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/columnsAfter(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ```
 ## <a name="function-parameters"></a>Parâmetros de função

@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso da pasta de trabalho
-description: Contém objetos Workbook relacionados, como planilhas, tabelas, intervalos e assim por diante.
+description: Contém objetos de pasta de trabalho relacionados, como planilhas, tabelas, intervalos e assim por diante.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a2940b4b873630f21ceb3c7db21456e81e8c859a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69d04f6ccd5e537c97854abcb1cf2a9c24820a87
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039185"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575704"
 ---
 # <a name="workbook-resource-type"></a>tipo de recurso da pasta de trabalho
 
 Namespace: microsoft.graph
 
-Contém objetos Workbook relacionados, como planilhas, tabelas, intervalos e assim por diante.
+Contém objetos de pasta de trabalho relacionados, como planilhas, tabelas, intervalos e assim por diante.
 
 ## <a name="methods"></a>Métodos
 
@@ -35,12 +35,12 @@ Nenhum.
 |names|coleção [workbookNamedItem](workbooknameditem.md) |Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.|
 |tables|coleção [WorkbookTable](workbooktable.md) |Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
 |worksheets|coleção [WorkbookWorksheet](workbookworksheet.md) |Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
-|workbbookApplication|[workbookApplication](workbookapplication.md) |Representa o workbookApplication do Excel que gerencia a pasta de trabalho.|
-|operações|coleção [workbookOperation](workbookoperation.md)|O status das operações da pasta de trabalho. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status de uma operação de longa execução se o cabeçalho `Location` retornar na resposta. Somente leitura. Anulável.|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |Representa a workbookApplication do Excel que gerencia a planilha.|
+|operações|coleção [workbookOperation](workbookoperation.md)|O status das operações da Workbook. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status de uma operação de longa execução se o cabeçalho `Location` retornar na resposta. Somente leitura. Anulável.|
 
 ## <a name="functions"></a>Funções
 
-[Funções do Excel](#functions): Invoque uma função de pasta de trabalho usando a sintaxe `POST /workbook/functions/{function-name}` e fornecendo os argumentos de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado de função. O valor `error` de `null` indica a execução bem-sucedida da função. 
+[Funções do Excel](#functions): Invoque uma função de pasta de trabalho usando a sintaxe `POST /me/drive/root/workbook/functions/{function-name}` e fornecendo os argumentos de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado de função. O valor `error` de `null` indica a execução bem-sucedida da função. 
 
 A lista completa de funções com suporte está listada [aqui](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
 

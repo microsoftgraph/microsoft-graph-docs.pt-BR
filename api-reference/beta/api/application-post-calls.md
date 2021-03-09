@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2ad6842c4956c10b46421a99c9647f313eec20cd
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 888fb523ad54f840b5ecbc807b5ed46c8f798efb
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472270"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574899"
 ---
 # <a name="create-call"></a>Criar chamada
 
@@ -1142,28 +1142,7 @@ Content-Type: application/json
 
 > **Observação:** Essa chamada requer o Calls.Initiate. Todas as permissões.
 
-Essa chamada requer uma instância de aplicativo com um número PSTN atribuído.
-
-#### <a name="step-1-create-application-instance"></a>Etapa 1: Criar instância do aplicativo
-Usando credenciais de administrador de locatário, chame os cmdlets a seguir no PowerShell remoto do locatário para criar a instância do aplicativo. Para obter mais informações, consulte [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
-```
-PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
-#### <a name="step-2-assign-microsoft-365-licenses"></a>Etapa 2: Atribuir licenças do Microsoft 365
-1. Use credenciais de administrador de locatários para entrar e ir para a guia https://admin.microsoft.com/ **Usuários -> Usuários ativos.**
-2. Selecione a instância do aplicativo, atribua o Plano de Chamadas Domésticas e Internacionais do **Microsoft 365** e o Sistema de Telefonia do **Microsoft 365 -** Licenças de usuário virtual e clique em Salvar **alterações**. Se as licenças necessárias não estão disponíveis no locatário, você pode obter-as na guia **Cobrança -> Serviços de** Compra.
-#### <a name="step-3-acquire-pstn-number"></a>Etapa 3: Adquirir número PSTN
-1. Use credenciais de administrador de locatários para entrar e clique na guia https://admin.teams.microsoft.com/ **Portal Herdário** no painel esquerdo.
-2. Na nova página, vá para a guia **voz -> números de** telefone.
-3. Clique no botão, selecione Novos Números de Serviço e vá para a página **+** Adicionar novos números  **de** serviço.
-4. Selecione **País/Região,** **Estado/Região,** **Cidade,** **Quantidade** de entrada e clique **em adicionar** à pesquisa. Clique **em adquirir números**. O número recém-adquirido será mostrar na guia **números de** telefone.
-#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Etapa 4: Atribuir número PSTN à instância do aplicativo
-Com credenciais de administrador de locatário, chame os seguintes cmdlets no PowerShell remoto do locatário para atribuir o número PSTN à instância do aplicativo. Para obter mais informações, consulte [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
-```
-PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
@@ -1308,7 +1287,7 @@ Content-Type: application/json
 
 > **Observação**: este exemplo requer Calls.Initiate. Permissões All e Calls.AccessMedia.All.
 
-Essa chamada precisa de instância de aplicativo com o número PSTN atribuído, conforme descrito no Exemplo 9.
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra uma solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Substitua os valores para token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário para fazer o exemplo funcionar.

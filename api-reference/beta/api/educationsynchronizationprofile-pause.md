@@ -1,16 +1,16 @@
 ---
 title: Pausar a sincronização em um educationSynchronizationProfile
-description: Pausar a sincronização de um perfil de sincronização de dados escolar específico no locatário.
+description: Pause a sincronização de um perfil específico de sincronização de dados escolares no locatário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c0dd8f15ea3cccc6abecb8d4293a8bf9d3a4ce35
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 44477aae7799922008b0a7623fd7e4c91c09e0aa
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965856"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574213"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Pausar a sincronização em um educationSynchronizationProfile
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Pausar a sincronização de um perfil de [sincronização](../resources/educationsynchronizationprofile.md) de dados escolar específico no locatário.
+Pause a sincronização de um perfil específico de [sincronização](../resources/educationsynchronizationprofile.md) de dados escolares no locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,13 +26,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
-|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/pause
+POST /education/synchronizationProfiles/{id}/pause
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

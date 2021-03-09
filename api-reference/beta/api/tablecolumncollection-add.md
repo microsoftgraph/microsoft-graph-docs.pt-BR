@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c560b6f3d326555e514b9bd73f2aef08a665606e
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 85836f056ef755e7fafe1889765544c0cca2599b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034307"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576313"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -31,8 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/add
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/add
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,11 +49,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |index|number|Especifica a posição relativa da nova coluna. A coluna anterior nessa posição é deslocada para a direita. O valor do índice deve ser igual ou menor que o valor do índice da última coluna, portanto não pode ser usado para acrescentar uma coluna ao final da tabela. Indexado com zero.|
-|values|Coleção (booliana, cadeia de caracteres ou número)|Opcional. Uma matriz bidimensional de valores não formatados da coluna da tabela.|
+|values|(booleano ou cadeia de caracteres ou número) coleção|Opcional. Uma matriz bidimensional de valores não formatados da coluna da tabela.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta e o objeto `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o objeto `200 OK` [workbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

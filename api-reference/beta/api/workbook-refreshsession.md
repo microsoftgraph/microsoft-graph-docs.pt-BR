@@ -1,22 +1,22 @@
 ---
-title: Atualizar sessão
-description: 'Use esta API para atualizar uma sessão de pasta de trabalho existente. '
+title: Atualizar Sessão
+description: 'Use essa API para atualizar uma sessão de workbook existente. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b630db7ab96ae8c5d8b87e92222bd1034bb9380b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d5036d74ebbfa9759daa440a2b1de5a07873a5bf
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977560"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575263"
 ---
-# <a name="refresh-session"></a>Atualizar sessão
+# <a name="refresh-session"></a>Atualizar Sessão
 
 Namespace: microsoft.graph
 
-Use esta API para atualizar uma sessão de pasta de trabalho existente. 
+Use essa API para atualizar uma sessão de workbook existente. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,17 +30,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/refreshSession
+POST /me/drive/items/{id}/workbook/refreshSession
+POST /me/drive/root:/{item-path}:/workbook/refreshSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Workbook-session-ID | ID da sessão da pasta de trabalho a ser atualizada |
+| workbook-session-id | ID da sessão de workbook a ser atualizada |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Essa API não requer nenhum corpo de solicitação.
+Essa API não exige nenhum corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
@@ -84,7 +85,7 @@ Content-length: 0
 ---
 
 
-Observe que o cabeçalho Workbook-session-ID é necessário. 
+Observe que o header workbook-session-id é necessário. 
 
 
 ##### <a name="response"></a>Resposta

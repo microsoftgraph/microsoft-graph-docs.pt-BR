@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 367e7a0642b9da493b0b83d20f368175c0ab7f9e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 25c887a1c827852c47baac5ce055e55296d564c8
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081847"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576985"
 ---
 # <a name="range-row"></a>Range: Row
 
@@ -31,9 +31,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/Row
-POST /workbook/worksheets/{id|name}/range(address='<address>')/Row
-POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
+POST /me/drive/items/{id}/workbook/names/{name}/range/Row
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/Row
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/Row
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/Row
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/Row
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/Row
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b047f9f6d9203b11ad4306a20fa26b8056af0405
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dec0364db914f9c834b8507de52c7809f44c3fba
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978617"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575347"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -31,8 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/sort/apply
-POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
+POST /me/drive/items/{id}/workbook/tables/{id|name}/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/apply
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -46,7 +48,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|campos|coleção workbookSortField|A lista de condições para a classificação.|
+|campos|workbookSortField collection|A lista de condições para a classificação.|
 |matchCase|booliano|Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.|
 |method|cadeia de caracteres|Opcional. O método de ordenação usado pelos caracteres chineses.  Os valores possíveis são: `PinYin` e `StrokeCount`.|
 

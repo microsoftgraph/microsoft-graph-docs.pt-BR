@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: b61baa7046e683977744ce4426dbfade60b1c4a0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d2681c588fd28a2ca4cfbcba00b39893da963a9
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442437"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576700"
 ---
 # <a name="nameditem-range"></a>NamedItem: Range
 
@@ -31,7 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/Range
+GET /me/drive/items/{id}/workbook/names/{name}/Range
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/Range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f4ae70f180520e312fcf7f08847d319db260b85c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e54b6a88cda3fa673ba9ce73ed5ce6954d910b5e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440675"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576460"
 ---
 # <a name="update-table"></a>Atualizar tabela
 
@@ -31,8 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|

@@ -1,22 +1,22 @@
 ---
 title: Atualizar personAward
-description: Atualiza as propriedades de um objeto personAward.
+description: Atualize as propriedades de um objeto personAward.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1338c1990ad76611295ac34e13b30b53651839d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 821293e804b5ec56cdde33464695ad0dcec7a103
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969316"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50574019"
 ---
 # <a name="update-personaward"></a>Atualizar personAward
 
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto [personAward](../resources/personAward.md) a partir de um [perfil](../resources/profile.md)de usuário.
+Atualize as propriedades de [um objeto personAward](../resources/personAward.md) do perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,18 +51,18 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Descpription do prêmio ou honra. |
-|displayName|String|Nome do prêmio ou honra. |
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|issuedDate|Data|A data em que o prêmio ou honra foi concedido. |
-|issuingAuthority|String|Autoridade que concedeu o prêmio ou honra.  |
-|thumbnailUrl|String|URL que faz referência a uma miniatura do prêmio ou honra.  |
-|webUrl|String|URL que faz referência ao prêmio ou honra. |
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Descpription of the award or honor. |
+|displayName|String|Nome do prêmio ou da honra. |
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|issuedDate|Data|A data em que o prêmio ou a honra foi concedido. |
+|issuingAuthority|String|Autoridade que concedeu o prêmio ou a honra.  |
+|thumbnailUrl|String|URL fazendo referência a uma miniatura do prêmio ou da honra.  |
+|webUrl|String|URL referenciando o prêmio ou a honra. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [personAward](../resources/personaward.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto personAward](../resources/personaward.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -74,7 +74,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/awards/{personAwardId}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 Content-Type: application/json
 Content-length: 497
 
