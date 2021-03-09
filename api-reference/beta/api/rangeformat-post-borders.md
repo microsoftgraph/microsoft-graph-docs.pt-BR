@@ -5,55 +5,58 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 35fb2b20127678a6815b5eb36fccad3d70d0c5b3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1c9d7eb22a11710b41d64c3284e4fd72789d8e4b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963477"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577350"
 ---
-# <a name="create-rangeborder"></a><span data-ttu-id="f2816-103">Criar RangeBorder</span><span class="sxs-lookup"><span data-stu-id="f2816-103">Create RangeBorder</span></span>
+# <a name="create-rangeborder"></a><span data-ttu-id="6b769-103">Criar RangeBorder</span><span class="sxs-lookup"><span data-stu-id="6b769-103">Create RangeBorder</span></span>
 
-<span data-ttu-id="f2816-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f2816-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6b769-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6b769-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f2816-105">Use essa API para criar uma nova RangeBorder.</span><span class="sxs-lookup"><span data-stu-id="f2816-105">Use this API to create a new RangeBorder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f2816-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f2816-106">Permissions</span></span>
-<span data-ttu-id="f2816-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f2816-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6b769-105">Use essa API para criar uma nova RangeBorder.</span><span class="sxs-lookup"><span data-stu-id="6b769-105">Use this API to create a new RangeBorder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="6b769-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="6b769-106">Permissions</span></span>
+<span data-ttu-id="6b769-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6b769-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f2816-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f2816-109">Permission type</span></span>      | <span data-ttu-id="f2816-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f2816-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6b769-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6b769-109">Permission type</span></span>      | <span data-ttu-id="6b769-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6b769-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f2816-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f2816-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f2816-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f2816-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="f2816-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f2816-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2816-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f2816-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="f2816-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f2816-115">Application</span></span> | <span data-ttu-id="f2816-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f2816-116">Not supported.</span></span> |
+|<span data-ttu-id="6b769-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6b769-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6b769-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6b769-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="6b769-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6b769-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6b769-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6b769-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="6b769-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6b769-115">Application</span></span> | <span data-ttu-id="6b769-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6b769-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f2816-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f2816-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6b769-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6b769-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/borders
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/borders
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/borders
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/borders
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/borders
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/borders
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="f2816-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f2816-118">Request headers</span></span>
-| <span data-ttu-id="f2816-119">Nome</span><span class="sxs-lookup"><span data-stu-id="f2816-119">Name</span></span>       | <span data-ttu-id="f2816-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="f2816-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6b769-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6b769-118">Request headers</span></span>
+| <span data-ttu-id="6b769-119">Nome</span><span class="sxs-lookup"><span data-stu-id="6b769-119">Name</span></span>       | <span data-ttu-id="6b769-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="6b769-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f2816-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="f2816-121">Authorization</span></span>  | <span data-ttu-id="f2816-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f2816-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f2816-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f2816-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="f2816-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="f2816-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="6b769-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="6b769-121">Authorization</span></span>  | <span data-ttu-id="6b769-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6b769-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6b769-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6b769-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="6b769-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="6b769-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f2816-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f2816-127">Request body</span></span>
-<span data-ttu-id="f2816-128">No corpo da solicitação, forneça uma representação JSON do objeto [workbookRangeBorder](../resources/workbookrangeborder.md) .</span><span class="sxs-lookup"><span data-stu-id="f2816-128">In the request body, supply a JSON representation of [workbookRangeBorder](../resources/workbookrangeborder.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6b769-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6b769-127">Request body</span></span>
+<span data-ttu-id="6b769-128">No corpo da solicitação, fornece uma representação JSON do [objeto workbookRangeBorder.](../resources/workbookrangeborder.md)</span><span class="sxs-lookup"><span data-stu-id="6b769-128">In the request body, supply a JSON representation of [workbookRangeBorder](../resources/workbookrangeborder.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f2816-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2816-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6b769-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="6b769-129">Response</span></span>
 
-<span data-ttu-id="f2816-130">Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [workbookRangeBorder](../resources/workbookrangeborder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f2816-130">If successful, this method returns `201 Created` response code and [workbookRangeBorder](../resources/workbookrangeborder.md) object in the response body.</span></span>
+<span data-ttu-id="6b769-130">Se tiver êxito, este método retornará `201 Created` o código de resposta e o objeto [workbookRangeBorder](../resources/workbookrangeborder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6b769-130">If successful, this method returns `201 Created` response code and [workbookRangeBorder](../resources/workbookrangeborder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f2816-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f2816-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f2816-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f2816-132">Request</span></span>
-<span data-ttu-id="f2816-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f2816-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6b769-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6b769-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6b769-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6b769-132">Request</span></span>
+<span data-ttu-id="6b769-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6b769-133">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f2816-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="f2816-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6b769-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="6b769-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_rangeborder_from_rangeformat"
@@ -71,27 +74,27 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f2816-135">C#</span><span class="sxs-lookup"><span data-stu-id="f2816-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6b769-135">C#</span><span class="sxs-lookup"><span data-stu-id="6b769-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-rangeborder-from-rangeformat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f2816-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2816-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6b769-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6b769-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-rangeborder-from-rangeformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f2816-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f2816-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6b769-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6b769-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-rangeborder-from-rangeformat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f2816-138">Java</span><span class="sxs-lookup"><span data-stu-id="f2816-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="6b769-138">Java</span><span class="sxs-lookup"><span data-stu-id="6b769-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-rangeborder-from-rangeformat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="f2816-139">No corpo da solicitação, forneça uma representação JSON do objeto [workbookRangeBorder](../resources/workbookrangeborder.md) .</span><span class="sxs-lookup"><span data-stu-id="f2816-139">In the request body, supply a JSON representation of [workbookRangeBorder](../resources/workbookrangeborder.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="f2816-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2816-140">Response</span></span>
-<span data-ttu-id="f2816-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f2816-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="6b769-139">No corpo da solicitação, fornece uma representação JSON do [objeto workbookRangeBorder.](../resources/workbookrangeborder.md)</span><span class="sxs-lookup"><span data-stu-id="6b769-139">In the request body, supply a JSON representation of [workbookRangeBorder](../resources/workbookrangeborder.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="6b769-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="6b769-140">Response</span></span>
+<span data-ttu-id="6b769-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6b769-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
