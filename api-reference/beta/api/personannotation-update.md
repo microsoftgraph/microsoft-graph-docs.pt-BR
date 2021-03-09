@@ -1,21 +1,21 @@
 ---
 title: Atualizar personAnnotation
-description: Atualiza as propriedades de um objeto personAnnotation.
+description: Atualize as propriedades de um objeto personAnnotation.
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1685d6ef406af3adb1bb73f1974f3ddcbe45e97b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5d9c6503c3aeb5fb52ad0982eabfc29729cc23e6
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969393"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576054"
 ---
 # <a name="update-personannotation"></a>Atualizar personAnnotation
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto [personAnnotation](../resources/personannotation.md) no [perfil](../resources/profile.md)de um usuário.
+Atualize as propriedades de [um objeto personAnnotation](../resources/personannotation.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
+| Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,18 +48,18 @@ PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-A tabela a seguir mostra as propriedades que são possíveis de atualizar em um objeto [personAnnotation](../resources/personannotation.md) existente no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de atualizar dentro de um [objeto personAnnotation](../resources/personannotation.md) existente no perfil de um [usuário](../resources/profile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|detalhada|[itemBody](../resources/itembody.md)|Contém os detalhes da anotação propriamente dita.|
-|displayName|String|Contém um nome amigável para a anotação.|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|detail|[itemBody](../resources/itembody.md)|Contém os detalhes da própria nota.|
+|displayName|String|Contém um nome amigável para a nota.|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [personAnnotation](../resources/personannotation.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto personAnnotation](../resources/personannotation.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -71,7 +71,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/notes/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/notes/{id}
 Content-Type: application/json
 Content-length: 413
 

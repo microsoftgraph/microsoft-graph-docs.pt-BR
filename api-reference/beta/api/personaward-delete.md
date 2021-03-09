@@ -5,18 +5,18 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ec8358fb1015e2816818b28a887a6e7a8c2f9a48
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 83f1c3ee61d20edd25af9b66e40b91b62551efde
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969344"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576024"
 ---
 # <a name="delete-personaward"></a>Excluir personAward
 
 Namespace: microsoft.graph
 
-Exclui um objeto [personAward](../resources/personaward.md) do [perfil](../resources/profile.md)de um usuário.
+Exclui um [objeto personAward](../resources/personaward.md) do perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,7 +61,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/awards/{personAwardId}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
