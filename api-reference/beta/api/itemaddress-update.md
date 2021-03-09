@@ -1,21 +1,21 @@
 ---
-title: Atualizar endereço
-description: Atualizar as propriedades de um objeto item.
+title: Atualizar itemAddress
+description: Atualize as propriedades de um objeto itemAddress.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: df7f695a1aab9343ec8d15d7d0976e3260511ac1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f53f5ad68919898dc337ed9b7c0f106ed3fa6c41
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979999"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578693"
 ---
-# <a name="update-itemaddress"></a>Atualizar endereço
+# <a name="update-itemaddress"></a>Atualizar itemAddress
 Namespace: microsoft.graph
 
-Atualizar as propriedades [de um objeto](../resources/itemaddress.md) item.
+Atualize as propriedades de um [objeto itemAddress.](../resources/itemaddress.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,16 +50,16 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|detalhada|[physicalAddress](../resources/physicaladdress.md)|Detalhes sobre o próprio endereço.|
-|displayName|String|Nome amigável que o usuário atribuiu a este endereço. |
-|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|As geocoordenas do endereço.|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|detail|[physicalAddress](../resources/physicaladdress.md)|Detalhes sobre o endereço em si.|
+|displayName|String|Nome amigável que o usuário atribuiu a esse endereço. |
+|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|As geocoordinações do endereço.|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [myAddress](../resources/itemaddress.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto itemAddress](../resources/itemaddress.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -71,7 +71,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/addresses/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/addresses/{id}
 Content-Type: application/json
 Content-length: 497
 

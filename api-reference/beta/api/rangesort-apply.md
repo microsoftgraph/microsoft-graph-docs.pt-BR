@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a81c799df7a1f161bfa1718e32d72ad9f415cdf3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6e2b2f9dcf1a7bda077ef3f5386d5010a3368ff5
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981130"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577342"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -31,9 +31,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/sort/apply
-POST /workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
-POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
+POST /me/drive/items/{id}/workbook/names/{name}/range/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/sort/apply
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|campos|coleção workbookSortField|A lista de condições para a classificação.|
+|campos|workbookSortField collection|A lista de condições para a classificação.|
 |matchCase|booliano|Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.|
 |hasHeaders|booliano|Opcional. Se o intervalo tem um cabeçalho.|
 |orientation|string|Opcional. Se a operação classifica linhas ou colunas.  Os valores possíveis são: `Rows` e `Columns`.|

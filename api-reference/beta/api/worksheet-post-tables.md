@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f4bb3dfd7433a5bced3e105ac63b7865984c52a5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d399b86863fcf7ae95dd1bd9f65f72c45abbf4fe
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977245"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578189"
 ---
 # <a name="create-table"></a>Criar tabela
 
@@ -31,7 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/tables/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/add
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -45,12 +46,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro       | Tipo|Descrição|
 |:---------------|:----------|:----------|
-| Endereço  | string| Endereço do intervalo. Se você estiver chamando esta API fora do `worksheets/{id|name}/tables/add` caminho, não há necessidade de suporte para o prefixo do nome da planilha no endereço. No entanto, se você estiver ligando para fora do `workbook/tables/add` caminho, forneça o nome da planilha na qual a tabela precisa ser criada (exemplo: `sheet1!A1:D4` )|
-| hasHeaders  | booliano|Valor booliano que indica se o intervalo tem rótulos de coluna. Se a fonte não contiver cabeçalhos (ou seja,. Quando essa propriedade for definida como false, o Excel gerará automaticamente o cabeçalho deslocando os dados de uma linha para baixo.|
+| Endereço  | string| Endereço de intervalo. Se você estiver chamando essa API fora do caminho, não há necessidade de dar suporte ao prefixo de nome da `worksheets/{id|name}/tables/add` planilha no endereço. No entanto, se você estiver chamando isso fora do caminho, então fornece o nome da planilha no qual a tabela precisa `workbook/tables/add` ser criada (exemplo: `sheet1!A1:D4` )|
+| hasHeaders  | booliano|Valor booleano que indica se o intervalo tem rótulos de coluna. Se a origem não contém os headers (ou seja, quando essa propriedade for definida como false), o Excel gerará automaticamente o header deslocando os dados para baixo por uma linha.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [workbooktable](../resources/workbooktable.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e o objeto [workbookTable](../resources/workbooktable.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

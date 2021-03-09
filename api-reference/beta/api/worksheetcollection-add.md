@@ -1,16 +1,16 @@
 ---
 title: 'WorksheetCollection: add'
-description: . Activate () nele.
+description: .activate() nele.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d3162d29d94e5903f85e8f1ea4b5ea6527daa78b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a4c587117beeb6e06e7a683dd119d8199c3e940c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979961"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578154"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -31,7 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/
+POST /me/drive/items/{id}/workbook/worksheets/
+POST /me/drive/root:/{item-path}:/workbook/worksheets/
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -49,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [workbookWorksheet](../resources/workbookworksheet.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [workbookWorksheet](../resources/workbookworksheet.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

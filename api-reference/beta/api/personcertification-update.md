@@ -1,21 +1,21 @@
 ---
 title: Atualizar personCertification
-description: Atualiza as propriedades de um objeto personCertification.
+description: Atualize as propriedades de um objeto personCertification.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 66c6db323684d9530913e0f6675052ffca78739a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ce03e7499cd79f1616c26ea53444a443e39b6f68
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022263"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577346"
 ---
 # <a name="update-personcertification"></a>Atualizar personCertification
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto [personCertification](../resources/personcertification.md) a partir de um [perfil](../resources/profile.md)de usuário.
+Atualize as propriedades de [um objeto personCertification](../resources/personcertification.md) do perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,22 +50,22 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|Certification  |String      |O identificador de referência para a certificação. |
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|certificationId  |String      |O identificador referencial para a certificação. |
 |description      |String      |Descrição da certificação.                   |
 |displayName      |String      |Título da certificação.                         |
 |endDate          |Data        |A data em que a certificação expira.            |
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |issuedDate       |Data        |A data em que a certificação foi emitida.         |
-|issuingAuthority |String      |Autoridade que atribuiu a certificação.          |
-|issuingCompany   |String      |Autoridade que atribuiu a certificação.          |
+|issuingAuthority |String      |Autoridade que concedeu a certificação.          |
+|emissãoCompany   |String      |Autoridade que concedeu a certificação.          |
 |startDate        |Data        |A data em que a certificação se tornou válida.       |
-|thumbnailUrl     |String      |URL que faz referência a uma miniatura da certificação.   |
-|webUrl           |String      |URL que faz referência à certificação.                  |
+|thumbnailUrl     |String      |URL fazendo referência a uma miniatura da certificação.   |
+|webUrl           |String      |URL fazendo referência à certificação.                  |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [personCertification](../resources/personcertification.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto personCertification](../resources/personcertification.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -77,7 +77,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/certifications/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{id}
 Content-Type: application/json
 Content-length: 497
 

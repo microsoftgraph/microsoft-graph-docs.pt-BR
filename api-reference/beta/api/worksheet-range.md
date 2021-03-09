@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 586225916b97bf07a3a3897edf6820a68d7cad74
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bacde9f1157533fc749fc6031b771f4973a307d0
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444566"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578168"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 
@@ -31,7 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/Range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

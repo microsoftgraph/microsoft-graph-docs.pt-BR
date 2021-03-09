@@ -1,22 +1,22 @@
 ---
-title: Fechar sessão
-description: 'Use esta API para fechar uma sessão de pasta de trabalho existente. '
+title: Fechar Sessão
+description: 'Use essa API para fechar uma sessão de workbook existente. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 98ba1cab9b1dc633bc85896e7f0f09fb9295fa33
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 82093330409b856f2c893436279260f273c02b5a
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973933"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578826"
 ---
-# <a name="close-session"></a>Fechar sessão
+# <a name="close-session"></a>Fechar Sessão
 
 Namespace: microsoft.graph
 
-Use esta API para fechar uma sessão de pasta de trabalho existente. 
+Use essa API para fechar uma sessão de workbook existente. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,17 +30,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/closeSession
+POST /me/drive/items/{id}/workbook/closeSession
+POST /me/drive/root:/{item-path}:/workbook/closeSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Workbook-session-ID | ID da sessão da pasta de trabalho a ser fechada |
+| workbook-session-id | ID da sessão de workbook a ser fechada |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Essa API não requer nenhum corpo de solicitação.
+Essa API não exige nenhum corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
@@ -84,7 +85,7 @@ Content-length: 0
 ---
 
 
-Observe que o cabeçalho Workbook-session-ID é necessário. 
+Observe que o header workbook-session-id é necessário. 
 
 
 ##### <a name="response"></a>Resposta

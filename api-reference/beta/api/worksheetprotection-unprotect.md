@@ -1,18 +1,18 @@
 ---
-title: 'workbookWorksheetProtection: desproteger'
+title: 'workbookWorksheetProtection: unprotect'
 description: Desprotege uma planilha.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 71e00a1a3816ec43a252eb265e73efbc8941b3ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3201961496da64d917f59d8305cee98a0ab9ebfc
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089865"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578084"
 ---
-# <a name="workbookworksheetprotection-unprotect"></a>workbookWorksheetProtection: desproteger
+# <a name="workbookworksheetprotection-unprotect"></a>workbookWorksheetProtection: unprotect
 
 Namespace: microsoft.graph
 
@@ -31,7 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/protection/unprotect
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/unprotect
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -1,16 +1,16 @@
 ---
-title: Excluir o número de telefone
-description: Excluir um objeto MyPhone do perfil de um usuário.
+title: Excluir itemPhone
+description: Exclua um objeto itemPhone do perfil de um usuário.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f66130b9c898865926acf728e0dfc79447530d83
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b947a7674f73a4351cdb6742587812acd66d253
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999347"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577412"
 ---
 # <a name="delete-itemphonenumber"></a>Excluir itemPhoneNumber
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua um objeto [MyPhone](../resources/itemphone.md) do [perfil](../resources/profile.md)do usuário.
+Excluir um [objeto itemPhone](../resources/itemphone.md) do perfil do [usuário](../resources/profile.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 DELETE /me/profile/phones/{itemPhoneId}
-DELETE /user/{userId}/profile/phones/{itemPhoneId}
+DELETE /users/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -65,7 +65,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/phones/{itemPhoneId}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ### <a name="response"></a>Resposta

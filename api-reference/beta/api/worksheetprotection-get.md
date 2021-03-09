@@ -1,16 +1,16 @@
 ---
 title: Obter workbookWorksheetProtection
-description: Recupere as propriedades e os relacionamentos do objeto workbookworksheetprotection.
+description: Recupere as propriedades e as relações do objeto workbookworksheetprotection.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 188ca823194e9d895dde498444a2a824ac7fac64
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5741a9ed6e24519f704d0c2df13d62945e36d13b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973093"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578140"
 ---
 # <a name="get-workbookworksheetprotection"></a>Obter workbookWorksheetProtection
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos do objeto workbookWorksheetProtection.
+Recupere as propriedades e as relações do objeto workbookWorksheetProtection.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,7 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/protection
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/protection
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -47,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbookWorksheetProtection](../resources/workbookworksheetprotection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto workbookWorksheetProtection](../resources/workbookworksheetprotection.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

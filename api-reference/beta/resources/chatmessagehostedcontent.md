@@ -2,15 +2,15 @@
 title: Tipo de recurso chatMessageHostedContent
 description: Um conteúdo hospedado em uma mensagem de chat
 localization_priority: Normal
-author: clearab
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cc4f61fb0b0e6c174be50c988d1cbb22576c4f27
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3519caeade4c50514fb2d725f21b10ff6efcada3
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159616"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578805"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>Tipo de recurso chatMessageHostedContent
 
@@ -26,15 +26,17 @@ Representa o conteúdo do Teams hospedado em uma mensagem de chat, como imagens 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Listar chatMessageHostedContent](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Recupere a lista de **chatMessageHostedContent** para uma mensagem. |
-| [Obter chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Leia as propriedades e os relacionamentos de um **objeto chatMessageHostedContent.** |
+| [Obter chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Leia as propriedades e as relações de um **objeto chatMessageHostedContent.** |
 
 ## <a name="properties"></a>Propriedades
+
+chatMessageHostedContent deriva do trabalho em [equipeHostedContent](teamworkhostedcontent.md)
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id            |String       | Somente leitura. Representa o identificador de conteúdo hospedado da mensagem de chat.|
-|contentBytes  |Edm.Binary   | Somente gravação. Ao postar conteúdo hospedado na nova mensagem de chat, representa os bytes da carga. Eles são representados como uma cadeia de caracteres base64Encoded.|
-|contentType   |String       | Somente gravação. Ao postar novo conteúdo hospedado de mensagem de chat, representa o tipo de conteúdo, como imagem/png.|
+|contentBytes  |Edm.Binary   | Somente gravação. Ao postar o conteúdo hospedado da nova mensagem de chat, representa os bytes da carga. Eles são representados como uma cadeia de caracteres base64Encoded.|
+|contentType   |String       | Somente gravação. Ao postar conteúdo hospedado na nova mensagem de chat, representa o tipo de conteúdo, como image/png.|
 
 ### <a name="instance-attributes"></a>Atributos de instância
 
@@ -43,7 +45,7 @@ Essas propriedades são temporárias e definem o comportamento que o serviço de
 
 | Nome da propriedade                     | Tipo   | Descrição
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.temporaryId      | string | Somente gravação. Representa a temporaryId do conteúdo hospedado enquanto publica uma mensagem para se referir ao conteúdo hospedado no recurso **chatMessage** que está sendo enviado.|
+| @microsoft.graph.temporaryId      | string | Somente gravação. Representa a temporaryId do conteúdo hospedado ao postar uma mensagem para se referir ao conteúdo hospedado no **recurso chatMessage** que está sendo enviado.|
 
 ## <a name="relationships"></a>Relações
 

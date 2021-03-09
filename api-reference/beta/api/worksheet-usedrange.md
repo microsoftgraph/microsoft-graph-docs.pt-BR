@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cc587a9a18193dd18756809f7865afd4e809be28
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3da9ece84c8c6fedd36a08bb6f489eaa89bb8b7c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980139"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578145"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -29,16 +29,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/UsedRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/UsedRange
 
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
-Na URL da solicitação, forneça um parâmetro de consulta opcional.
+Na URL de solicitação, forneça um parâmetro de consulta opcional.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|valuesOnly|Booliano|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
+|valuesOnly|Boolean|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -54,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [workbookRange](../resources/workbookrange.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Veja a seguir um exemplo que mostra como chamar essa API.
+Aqui está um exemplo que mostra como chamar essa API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 

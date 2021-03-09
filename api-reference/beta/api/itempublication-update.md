@@ -1,22 +1,22 @@
 ---
-title: Atualizar a multipública
-description: Atualizar as propriedades de um objeto de multipúblico.
+title: Atualizar itemPublication
+description: Atualize as propriedades de um objeto itemPublication.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 407e110d3d2f0da3a130b973c2382849b1db40bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ae5e659048db6cd8a46c964fd02860f204c66116
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999318"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577377"
 ---
-# <a name="update-itempublication"></a>Atualizar a multipública
+# <a name="update-itempublication"></a>Atualizar itemPublication
 
 Namespace: microsoft.graph
 
-Atualizar as propriedades de um objeto de [multipública](../resources/itempublication.md) em um [perfil](../resources/profile.md)de usuário.
+Atualize as propriedades de [um objeto itemPublication](../resources/itempublication.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,19 +51,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description    |String      |Descrição da publicação.                   |
 |displayName    |String      |Título da publicação.                         |
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |publishedDate  |Data        |A data em que a publicação foi publicada.      |
-|publicador      |String      |Publicação ou editor para a publicação.     |
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|thumbnailUrl   |String      |URL que faz referência a uma miniatura da publicação.   |
-|webUrl         |String      |URL que faz referência à publicação.                  |
+|publicador      |String      |Publicação ou Editor para a publicação.     |
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|thumbnailUrl   |String      |URL fazendo referência a uma miniatura da publicação.   |
+|webUrl         |String      |URL fazendo referência à publicação.                  |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [dopublication](../resources/itemPublication.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto itemPublication](../resources/itemPublication.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -75,7 +75,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/publications/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/publications/{id}
 Content-Type: application/json
 Content-length: 497
 

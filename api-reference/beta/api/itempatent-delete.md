@@ -1,22 +1,22 @@
 ---
-title: Excluir a ispatente
-description: Exclui um objeto ispatente.
+title: Excluir itemPatent
+description: Exclui um objeto itemPatent.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1721797203410eab2fee7ff46970e1da36d8047f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6a5045c4c9c2cd95bee5534b86e99c2d4fba5202
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089993"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577433"
 ---
-# <a name="delete-itempatent"></a>Excluir a ispatente
+# <a name="delete-itempatent"></a>Excluir itemPatent
 
 Namespace: microsoft.graph
 
-Exclui um objeto [ispatente](../resources/itempatent.md) .
+Exclui um [objeto itemPatent.](../resources/itempatent.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,7 +61,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/patents/{id}
+DELETE https://graph.microsoft.com/beta/users/{userId}/profile/patents/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]

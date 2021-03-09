@@ -1,22 +1,22 @@
 ---
 title: Criar sessão
-description: 'Crie uma nova sessão de pasta de trabalho. '
+description: 'Crie uma nova sessão de workbook. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 097dd199e12a94ceb11514818665db5053c6c344
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0a93a602d5f10e3b99b18ed310bdf4c933dcf8aa
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973920"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578813"
 ---
 # <a name="create-session"></a>Criar sessão
 
 Namespace: microsoft.graph
 
-Crie uma nova sessão de pasta de trabalho. 
+Crie uma nova sessão de workbook. 
 
 As APIs do Excel podem ser chamadas em um destes dois modos: 
 
@@ -27,11 +27,11 @@ Para representar a sessão na API, use o cabeçalho `workbook-session-id: {sessi
 
 >**Observação:** o cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.  
 
-Em alguns casos, a criação de uma nova sessão requer um tempo indeterminado para ser concluída. O Microsoft Graph também fornece um padrão de operações de longa duração. Este padrão oferece uma maneira de Pesquisar as atualizações de status de criação, sem esperar que a criação seja concluída. As etapas são as seguintes:
+Em alguns casos, criar uma nova sessão requer um tempo indeterminado para ser concluído. O Microsoft Graph também fornece um padrão de operações em execução longa. Esse padrão fornece uma maneira de sondar atualizações de status de criação, sem aguardar a conclusão da criação. Veja a seguir as etapas:
 
-1. Um `Prefer: respond-async` cabeçalho é adicionado à solicitação para indicar que se trata de uma operação de execução demorada.
-2. A resposta retorna um `Location` cabeçalho para especificar a URL para sondar o status da operação de criação. Você pode obter o status da operação acessando a URL especificada. O status será um dos seguintes: `notStarted` , `running` , `succeeded` ou `failed` .
-3. Após a conclusão da operação, você pode solicitar o status novamente e a resposta mostrará `succeeded` ou `failed` .
+1. Um `Prefer: respond-async` header é adicionado à solicitação para indicar que é uma operação de longa duração.
+2. A resposta retorna um `Location` header para especificar a URL para sondar o status da operação de criação. Você pode obter o status da operação acessando a URL especificada. O status será um dos seguintes: `notStarted` , `running` , ou `succeeded` `failed` .
+3. Depois que a operação é concluída, você pode solicitar o status novamente e a resposta mostrará ou `succeeded` `failed` .
 
 ### <a name="error-handling"></a>Tratamento de erros
 
@@ -49,7 +49,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/createSession
+POST /me/drive/items/{id}/workbook/createSession
+POST /me/drive/root:/{item-path}:/workbook/createSession
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -57,15 +58,15 @@ POST /workbook/createSession
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto WorkbookSessionInfo.](../resources/workbooksessioninfo.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [workbookSessionInfo](../resources/workbooksessioninfo.md) no corpo da resposta. Para uma operação de execução longa, ele retorna um `202 Accepted ` código de resposta e um `Location` cabeçalho com um corpo vazio na resposta.
+Se tiver êxito, este método retornará um código de `201 Created` resposta e um objeto [workbookSessionInfo](../resources/workbooksessioninfo.md) no corpo da resposta. Para uma operação de longa duração, ele retorna um código de resposta e um `202 Accepted ` `Location` header com um corpo vazio na resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-basic-session-creation"></a>Exemplo 1: criação de sessão básica
+### <a name="example-1-basic-session-creation"></a>Exemplo 1: Criação de sessão básica
 #### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -118,7 +119,7 @@ Content-length: 52
   "persistChanges": true
 }
 ```
-### <a name="example-2-session-creation-with-long-running-operation-pattern"></a>Exemplo 2: criação de sessão com um padrão de operação de execução longa
+### <a name="example-2-session-creation-with-long-running-operation-pattern"></a>Exemplo 2: Criação de sessão com padrão de operação de longa duração
 
 #### <a name="request"></a>Solicitação
 

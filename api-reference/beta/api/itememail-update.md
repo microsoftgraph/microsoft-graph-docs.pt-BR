@@ -1,24 +1,24 @@
 ---
-title: Atualizar email
-description: Atualizar as propriedades de um objeto item de email no perfil de um usuário.
+title: Atualizar itememail
+description: Atualize as propriedades de um objeto itemEmail no perfil de um usuário.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9a98ecd8e8024cf624de39d31ad9d371ab6f4ba1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e37adabbb0fc9ce8e355d2ab6e8d6a302fe14918
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064798"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577491"
 ---
-# <a name="update-itememail"></a>Atualizar email
+# <a name="update-itememail"></a>Atualizar itememail
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um objeto item de [email](../resources/itememail.md) no [perfil](../resources/profile.md)de um usuário.
+Atualize as propriedades de [um objeto itemEmail](../resources/itememail.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,20 +51,20 @@ PATCH /users/{id | userPrincipalName}/profile/emails/{id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-A tabela a seguir mostra as propriedades que são possíveis de atualizar dentro de um objeto de item de [email](../resources/itememail.md) existente no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de atualizar dentro de um [objeto itemEmail](../resources/itememail.md) existente no perfil de um [usuário.](../resources/profile.md)
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|address|Cadeia de caracteres|O próprio endereço de email.|
-|allowedAudiences|Cadeia de caracteres|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|Cadeia de caracteres|O nome ou rótulo que um usuário associou a um endereço de email específico.|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|tipo|emailtype|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
+|address|Cadeia de caracteres|O endereço de email em si.|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|O nome ou o rótulo que um usuário associou a um endereço de email específico.|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|tipo|emailType|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [MyEmail](../resources/itememail.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto itemEmail](../resources/itememail.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -76,7 +76,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/emails/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/emails/{id}
 Content-Type: application/json
 Content-length: 383
 

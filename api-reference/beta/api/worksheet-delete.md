@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c47b6c66eac284cc3ca0c2157c524001cca36048
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: a4c9313f77b1905ee855ce5643ade3988c1ad548
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516021"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578196"
 ---
 # <a name="worksheet-delete"></a>Worksheet: delete
 
@@ -24,14 +24,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Files.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /workbook/worksheets/{id|name}
+DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}
+DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

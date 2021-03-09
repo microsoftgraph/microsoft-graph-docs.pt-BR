@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0d447ea586a17e6d4b589fd60ec23e9c9cdbf90c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 745eeb59d12ad3a779a8769095a5a3125cada813
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976070"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577440"
 ---
 # <a name="update-rangeformat"></a>Atualizar rangeformat
 
@@ -31,9 +31,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range/format
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
+PATCH /me/drive/items/{id}/workbook/names/{name}/range/format
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range/format
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
@@ -54,12 +57,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbookRangeFormat](../resources/workbookrangeformat.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` um objeto [workbookRangeFormat](../resources/workbookrangeformat.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 
 ### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a>Atualizar as propriedades de fonte, formatação e preenchimento em três células de tabela
 
-Os exemplos a seguir demonstram como atualizar as propriedades das propriedades [workbookRangeFormat](../resources/workbookrangeformat.md), [workbookRangeFill](../resources/workbookrangefill.md)e [workbookRangeFont](../resources/workbookrangefont.md) de um intervalo especificado.
+Os exemplos a seguir demonstram como atualizar propriedades das propriedades [workbookRangeFormat,](../resources/workbookrangeformat.md) [workbookRangeFill](../resources/workbookrangefill.md)e [workbookRangeFont](../resources/workbookrangefont.md) de um intervalo especificado.
 
 O resultado desse conjunto de solicitações é uma tabela com três células formatadas como as três células principais na imagem abaixo.
 

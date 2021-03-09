@@ -1,22 +1,22 @@
 ---
-title: Atualizar a ispatente
-description: Atualiza as propriedades de um objeto dopatente.
+title: Atualizar itemPatent
+description: Atualize as propriedades de um objeto itemPatent.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b480f7ba45b0b3ea6cea7625af373650ac279414
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 442c5360438755f8d48b156b9ca7911380add017
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999409"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577423"
 ---
-# <a name="update-itempatent"></a>Atualizar a ispatente
+# <a name="update-itempatent"></a>Atualizar itemPatent
 
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto [dopatente](../resources/itempatent.md) .
+Atualize as propriedades de um [objeto itemPatent.](../resources/itempatent.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,20 +51,20 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Descpription da patente ou do arquivamento. |
-|displayName|String|Título da patente ou do arquivamento. |
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|ispending        |Boolean     |Indica que a patente está pendente.        |
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Descpription of the patent or filing. |
+|displayName|String|Título da patente ou arquivamento. |
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|isPending        |Boolean     |Indica que a patente está pendente.        |
 |issuedDate       |Data        |A data em que a patente foi concedida.   |
 |issuingAuthority |String      |Autoridade que concedeu a patente.     |
-|number           |String      |O número de patente.                      |
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|webUrl           |String      |URL que faz referência à patente ou ao arquivamento. |
+|number           |String      |O número da patente.                      |
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|webUrl           |String      |URL fazendo referência à patente ou ao arquivamento. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de [multipatente](../resources/itempatent.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto itemPatent](../resources/itempatent.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -76,7 +76,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/patents/{id}
+PATCH https://graph.microsoft.com/beta/users/{userId}/profile/patents/{id}
 Content-Type: application/json
 Content-length: 497
 

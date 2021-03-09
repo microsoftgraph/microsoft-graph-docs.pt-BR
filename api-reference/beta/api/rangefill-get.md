@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f8d07c101ecda5cba5c4fe99bdaa752c7143c3e3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04f1bd31358ab03d34a2a15a8b68fe0c28be17cb
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974234"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577832"
 ---
 # <a name="get-rangefill"></a>Obter RangeFill
 
@@ -31,9 +31,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format/fill
-GET /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
+GET /me/drive/items/{id}/workbook/names/{name}/range/format/fill
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/fill
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/fill
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/fill
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/fill
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -49,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbookRangeFill](../resources/workbookrangefill.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto workbookRangeFill](../resources/workbookrangefill.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

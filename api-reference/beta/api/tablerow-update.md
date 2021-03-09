@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6e38cedb5820daeb1c63971d21ec56e44fdd1c38
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c9851fc18da74a9867b7985c81dde4c7cdbf527d
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967977"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578238"
 ---
 # <a name="update-tablerow"></a>Atualizar tablerow
 
@@ -31,8 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}/rows/{index}
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
@@ -49,7 +51,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbookTableRow](../resources/workbooktablerow.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [workbookTableRow](../resources/workbooktablerow.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

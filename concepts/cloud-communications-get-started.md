@@ -1,64 +1,68 @@
 ---
-title: Introdução às comunicações em nuvem
-description: Saiba como você pode usar bots para responder às necessidades dos clientes e facilitar a colaboração.
+title: Começar a trabalhar com comunicações na nuvem
+description: Saiba como você pode usar bots para responder às necessidades de seus clientes e facilitar a colaboração.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 4a5decb1b9415e2e57297d253bc56236b357080a
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: f5e94e2c3b2685fef0dc801735b761807428c741
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289376"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577818"
 ---
-# <a name="get-started-with-cloud-communications"></a>Introdução às comunicações em nuvem
+# <a name="get-started-with-cloud-communications"></a>Começar a trabalhar com comunicações na nuvem
 
-As APIs de comunicação em nuvem no Microsoft Graph adicionam uma nova dimensão a como seus aplicativos e serviços interagem com os usuários por meio de vários recursos relacionados a comunicações, como chamadas e reuniões online. Este artigo descreve como você pode usar os bots para responder às necessidades dos clientes e facilitar a colaboração.
+As APIs de comunicações na nuvem no Microsoft Graph adicionam uma nova dimensão à forma como seus aplicativos e serviços interagem com os usuários por meio de vários recursos relacionados à comunicação, como chamada e reuniões online. Este artigo descreve como você pode usar bots para responder às necessidades de seus clientes e facilitar a colaboração.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Beore você começar, será útil se familiarizar com o seguinte:
+Se você começar, será útil se familiarizar com o seguinte:
 
-- [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) e como o serviço ajuda os funcionários a entrar e acessar recursos.
-- O [serviço do Azure bot](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0) e seus recursos.
+- [O Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) e como o serviço ajuda os funcionários a entrar e acessar recursos.
+- O [Serviço bot do Azure](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0) e seus recursos.
 
 ## <a name="register-a-bot"></a>Registrar um bot
 
-Os termos "aplicativo de serviço" e "bot" podem ser usados de forma intercambiável. Você pode criar um bot através do [portal do Azure](https://azure.microsoft.com/features/azure-portal/) diretamente ou registrar um bot que não está hospedado no Azure. Para obter mais detalhes sobre o processo de registro de bot, consulte [registro de um bot de chamada](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). 
+Os termos "aplicativo de serviço" e "bot" podem ser usados de forma intercambiável. Você pode criar um bot por meio do [portal do Azure](https://azure.microsoft.com/features/azure-portal/) diretamente ou registrar um bot que não está hospedado no Azure. Para obter mais detalhes sobre o processo de registro do bot, consulte [Registrando um bot de chamada.](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html) 
 
-Para facilitar as coisas mais tarde, é útil entender os diferentes [tipos de permissões](/azure/active-directory/develop/v1-permissions-and-consent#types-of-permissions) no Azure AD. Aplicativos com permissões delegadas exigem um usuário conectado. As permissões baseadas em aplicativo não precisam de um usuário conectado e geralmente podem ser executadas como um serviço em segundo plano.
+Para facilitar as coisas mais tarde, é útil entender os diferentes tipos de [permissões](/azure/active-directory/develop/v1-permissions-and-consent#types-of-permissions) no Azure AD. Os aplicativos com permissões delegadas exigem um usuário in-locar. As permissões baseadas em aplicativos não precisam de um usuário in-locado e geralmente podem ser executados como um serviço em segundo plano.
 
-Depois de registrar seu bot, se você quiser [Adicionar seu bot ao Microsoft Teams](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot), não deixe de entender como usar o [app Studio](/microsoftteams/platform/get-started/get-started-app-studio) e definir os metadados necessários.
+Depois de registrar seu bot, se quiser adicionar seu bot ao [Microsoft Teams,](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot)entenda como usar o app [studio](/microsoftteams/platform/get-started/get-started-app-studio) e defina os metadados necessários.
 
 ## <a name="manage-the-state-of-the-bot"></a>Gerenciar o estado do bot
 
-Depois de registrar seu bot, decida se deseja que sua mídia baseada em áudio e vídeo seja [hospedada no aplicativo ou no serviço](cloud-communications-media.md). Em um nível alto, isso envolve decidir se você deseja ou não acessar um fluxo de mídia brutos ao vivo.
+Depois de registrar seu bot, decida se deseja que sua mídia baseada em áudio e vídeo seja hospedada pelo aplicativo ou [pelo serviço.](cloud-communications-media.md) Em um nível alto, isso envolve decidir se você deseja ou não acessar um fluxo ao vivo de mídia bruta.
 
-Em seguida, você pode decidir se é melhor para o bot ter estado [ou sem estado](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/StateManagement.html).
+Em seguida, você pode decidir se é melhor para o bot ser [stateful ou stateless](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/StateManagement.html).
 
 ### <a name="stateless-bots"></a>Bots sem estado
 
-Qualquer máquina virtual pode lidar com qualquer instância de bot, o que significa que, se uma máquina for desativada, outra poderá cuidar dela. Isso torna uma solução resiliente.
+Qualquer máquina virtual pode manipular qualquer instância de bot, o que significa que, se uma máquina cair, outra poderá cuidar dela. Isso torna uma solução resiliente.
 
-Por outro lado, um cache compartilhado, como o REDIS, precisa estar acessível a todas as máquinas virtuais.
+Por outro lado, um cache compartilhado, como REDIS, precisa estar acessível a todas as máquinas virtuais.
 
-### <a name="stateful-bots"></a>Bots com estado
+### <a name="stateful-bots"></a>Bots stateful
 
-Uma máquina virtual pode manipular apenas uma instância de bot por vez. Como todos os Estados estão em uma máquina, não há verificações de memória extra ou verificações de cache do REDIS.
+Uma máquina virtual pode manipular apenas uma instância de bot por vez. Como todos os estados estão em um computador, não há nenhuma verificação de memória extra ou verificações de cache REDIS.
 
-A desvantagem é que, como a instância de bot está apenas em uma máquina, ela não é tão resiliente.
+A desvantagem é que, como a instância do bot está apenas em um computador, ela não é tão resiliente.
 
->**Observação:** Os bots de mídia hospedados pelo serviço podem ter estado ou sem estado. Os bots de mídia hospedados por aplicativos devem ter estado para usar o [SDK de mídia do bot](https://www.nuget.org/packages/Microsoft.Skype.Bots.Media).
+>**Observação:** Os bots de mídia hospedados pelo serviço podem ser stateful ou stateless. Os bots de mídia hospedados pelo aplicativo devem ter estado para usar o [SDK](https://www.nuget.org/packages/Microsoft.Skype.Bots.Media)de Mídia bot .
 
-## <a name="use-the-sdks"></a>Usar os SDKs
+## <a name="use-the-sdks"></a>Use os SDKs
 
-Os seguintes SDKs estão disponíveis em C#. Forneceremos suporte para outros idiomas no futuro.
+Os SDKs a seguir estão disponíveis no C#. Forneceremos suporte para outros idiomas no futuro.
 
-- Se você estiver usando bots **sem estado** , instale o [SDK de núcleo de comunicações do Graph](https://www.nuget.org/packages/Microsoft.Graph.Communications.Core).
-- Se você estiver usando bots com **estado** , instale o [SDK de chamada de comunicações de gráfico](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls).
+- Se você estiver usando bots **sem** estado, instale o [SDK do Graph Communications Core](https://www.nuget.org/packages/Microsoft.Graph.Communications.Core).
+- Se você estiver usando bots **de** estado, instale o [SDK de](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls)Chamada de Comunicações do Graph.
 
 ## <a name="examples"></a>Exemplos
 
-Saiba como implementar diferentes cenários usando bots stateful, como [atender a uma chamada de entrada](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/index.html#example-incoming-calls) com mídia hospedada por aplicativos ou por serviço.
+Saiba como implementar diferentes cenários usando bots de estado, como atender [uma](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/index.html#example-incoming-calls) chamada de entrada com mídia hospedada por aplicativo ou hospedada pelo serviço.
 
-Para obter mais exemplos, consulte o [repositório de exemplos de comunicação](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/index.html).
+Para obter mais exemplos, consulte o repositório [de exemplos de comunicações](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/index.html).
+
+## <a name="privacy-and-compliance"></a>Privacidade e conformidade
+
+Nas solicitações para nossas APIs, os dados confidenciais não devem ser enviados em IDs geradas no lado do cliente (como IDs de cenário, IDs de solicitação ou outras IDs de correlação) nos headers ou no corpo da solicitação. Essas IDs serão registradas no lado do servidor para diagnóstico.

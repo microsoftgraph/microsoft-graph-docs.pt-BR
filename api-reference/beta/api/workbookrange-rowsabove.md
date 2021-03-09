@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 508994ff0d5e71368d6f6aed04d2718d941bb5df
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: c9a11841788dc73124c9145852ba94c16802f10f
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882942"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578602"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtém um determinado número de linhas acima de um determinado intervalo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -32,7 +32,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/rowsAbove(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ```
 
