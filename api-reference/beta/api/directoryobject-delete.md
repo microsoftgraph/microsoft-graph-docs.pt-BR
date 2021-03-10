@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cef22c9deb67d9e1ac7c083fc9e3152bf6c78fa5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e47bb98a5445bc8c1a72557ec5affad7e058647b
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436929"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625750"
 ---
 # <a name="delete-directoryobject"></a>Excluir directoryObject
 
@@ -56,7 +56,7 @@ Este é um exemplo da solicitação.
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/directoryObject/ffab4dce-9b82-49a6-b7c7-1a143106598c
+DELETE https://graph.microsoft.com/beta/directoryObjects/ffab4dce-9b82-49a6-b7c7-1a143106598c
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 

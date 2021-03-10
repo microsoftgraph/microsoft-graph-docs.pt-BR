@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 8887896e734a2fd1d81d9a3e9c14e36125e78a9c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6d4663d4b6ed7275c00f61f0e1a93f13f2b1e0bf
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136336"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625925"
 ---
 # <a name="get-synchronizationtemplate"></a>Obter synchronizationTemplate
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante)     |Directory.Read.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.|
-|Aplicativo                            |Sem suporte.| 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>Solicitação HTTP
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
 
 ### <a name="example"></a>Exemplo
 

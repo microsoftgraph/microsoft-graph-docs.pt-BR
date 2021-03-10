@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7f8babcffd4829669f0bb5827d7c2caf5aa1b158
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8dd30fc559ab8e4fe7bed4067d7e234c0406baea
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059933"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578518"
 ---
 # <a name="update-chartaxis"></a>Atualizar chartaxis
 
@@ -29,9 +29,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
@@ -51,7 +54,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [WorkbookChartAxis](../resources/chartaxis.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` um [objeto WorkbookChartAxis](../resources/chartaxis.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

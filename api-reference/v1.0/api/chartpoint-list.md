@@ -5,31 +5,32 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: efa51a497a3b74ebe972aba47d2631362a992918
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: c2e374ea2f7faadb852b3ff0a0f8b06cc77d9846
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459323"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578784"
 ---
 # <a name="list-chartpointscollection"></a>Listar ChartPointsCollection
 
 Namespace: microsoft.graph
 
 Recupera uma lista de objetos chartpoint.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -45,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [WorkbookChartPoint](../resources/chartpoint.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e uma coleção de objetos [WorkbookChartPoint](../resources/chartpoint.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

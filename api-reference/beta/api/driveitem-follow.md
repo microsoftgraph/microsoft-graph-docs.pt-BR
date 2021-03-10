@@ -1,18 +1,18 @@
 ---
 author: chackman
 description: Seguir um driveItem.
-title: Seguir item de unidade
+title: Siga o item da unidade
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1c54d52760882ae35838ebadc11717a76c3b5fc8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8294ded183dcd6dfea7d2b3c9f16b18c5412d316
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963771"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625832"
 ---
-# <a name="follow-drive-item"></a>Seguir item de unidade
+# <a name="follow-drive-item"></a>Siga o item da unidade
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Siga um [driveItem](../resources/driveitem.md).
 
->**Observação:** Para desacompanhar um item, confira [inseguir item](driveitem-unfollow.md).
+>**Observação:** Para desa seguir um item, consulte [Unfollow item](driveitem-unfollow.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 POST /drives/{drive-id}/items/{item-id}/follow
-POST /groups/{group-id/drive/items/{item-id}/follow
+POST /groups/{group-id}/drive/items/{item-id}/follow
 POST /me/drive/items/{item-id}/follow
 POST /sites/{site-id}/drive/items/{item-id}/follow
 POST /users/{user-id}/drive/items/{item-id}/follow

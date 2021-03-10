@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: a1d9e3da3610497e5cb7b85bccb34fdc7f0ab21a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: db326c4fe3ed63b4387d7fb5414312d683f26322
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438047"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625719"
 ---
 # <a name="add-identityprovider-to-a-b2xidentityuserflow"></a>Adicionar identityProvider a um b2xIdentityUserFlow
 
@@ -40,7 +40,7 @@ A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funç�
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /b2xUserFlows/{id}/identityProviders/$ref
+PATCH /identity/b2xUserFlows/{id}/identityProviders/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

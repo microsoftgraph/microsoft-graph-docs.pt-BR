@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: b5a676d3509cd0a2511fb64704ef9b72d3aa15ff
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 64d5b801b7529b94cbc6a02bf20315cf4374eff4
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137505"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625980"
 ---
 # <a name="get-synchronizationjob"></a>Obter synchronizationJob
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante)     |Directory.Read.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.  |
-|Aplicativo                            |Sem suporte. | 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, retorna `200 OK` uma resposta com um [synchronizationJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
+Se tiver êxito, retornará `200 OK` uma resposta com uma [sincronizaçãoJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

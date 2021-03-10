@@ -1,26 +1,26 @@
 ---
 title: Atualizar managedDeviceCertificateState
-description: Atualiza as propriedades de um objeto managedDeviceCertificateState.
+description: Atualize as propriedades de um objeto managedDeviceCertificateState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d6b0570bc40f2da868a81a08969471bb3f63fa7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b2634415308c24de1d0ac3b6723fa0547e82422c
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49287288"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626001"
 ---
 # <a name="update-manageddevicecertificatestate"></a>Atualizar managedDeviceCertificateState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) .
+Atualize as propriedades de [um objeto managedDeviceCertificateState.](../resources/intune-deviceconfig-manageddevicecertificatestate.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,8 +49,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidWorkProfileScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidForWorkImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/microsoft.graph.androidForWorkPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/microsoft.graph.androidForWorkScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidForWorkPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidForWorkScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/microsoft.graph.windowsPhone81SCEPCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/identityCertificateForClientAuthentication/microsoft.graph.macOSPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/identityCertificateForClientAuthentication/microsoft.graph.macOSScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
@@ -68,42 +68,42 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) .
+No corpo da solicitação, fornece uma representação JSON para [o objeto managedDeviceCertificateState.](../resources/intune-deviceconfig-manageddevicecertificatestate.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma de dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|certificateKeyUsage|[usos de](../resources/intune-shared-keyusages.md)|Uso de chave. Os valores possíveis são: `keyEncipherment` e `digitalSignature`.|
+|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|certificateKeyUsage|[keyUsages](../resources/intune-shared-keyusages.md)|Uso de chave. Os valores possíveis são: `keyEncipherment` e `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Unidades de período de validade. Os valores possíveis são: `days`, `months`, `years`.|
-|certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|Estado de emissão. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `unknown` `challengeIssued` `challengeIssueFailed` `requestCreationFailed` `requestSubmitFailed` `challengeValidationSucceeded` `challengeValidationFailed` `issueFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending` `enrollmentSucceeded` , `enrollmentNotNeeded` , `revoked` ,, `removedFromCollection` `renewVerified` , `installFailed` `installed` `deleteFailed` `deleted` `renewalRequested` `requested` ,,,,,.|
-|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-shared-keystorageprovideroption.md)|Provedor de armazenamento de chave. Os valores possíveis são: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
-|certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato do nome da entidade. Os valores possíveis são: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
-|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Formato de nome alternativo da entidade. Os possíveis valores são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
+|certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|Estado de emissão. Os valores possíveis são: `unknown` , , , , , , , , `challengeIssued` `challengeIssueFailed` , `requestCreationFailed` `requestSubmitFailed` , `challengeValidationSucceeded` `challengeValidationFailed` `issueFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending` `enrollmentSucceeded` `enrollmentNotNeeded` `revoked` , `removedFromCollection` `renewVerified` `installFailed` `installed` `deleteFailed` `deleted` `renewalRequested` `requested`|
+|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-shared-keystorageprovideroption.md)|Provedor de Armazenamento de Chaves. Os valores possíveis são: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
+|certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato de nome do assunto. Os valores possíveis são: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
+|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Formato de nome alternativo do assunto. Os possíveis valores são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|String|Nome de exibição do perfil do certificado|
+|certificateProfileDisplayName|String|Nome de exibição de perfil de certificado|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário|
-|certificateExpirationDateTime|DateTimeOffset|Data de vencimento do certificado|
-|certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Última alteração no estado de emissão de certificado|
-|lastCertificateStateChangeDateTime|DateTimeOffset|Última alteração no estado de emissão de certificado|
+|certificateExpirationDateTime|DateTimeOffset|Data de expiração do certificado|
+|certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
+|lastCertificateStateChangeDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
 |certificateIssuer|String|Emissor|
 |certificateThumbprint|String|Impressão Digital|
 |certificateSerialNumber|String|Número de série|
 |certificateKeyLength|Int32|Comprimento de chave|
 |certificateEnhancedKeyUsage|String|Uso estendido de chave|
 |certificateValidityPeriod|Int32|Período de validade|
-|certificateSubjectNameFormatString|String|Cadeia de caracteres de formato de nome de entidade para formatos de nome de entidade personalizados|
-|certificateSubjectAlternativeNameFormatString|String|Cadeia de caracteres de formato de nome alternativo da entidade para formatos personalizados|
+|certificateSubjectNameFormatString|String|Cadeia de caracteres de formato de nome de assunto para formatos de nome de assunto personalizados|
+|certificateSubjectAlternativeNameFormatString|String|Cadeia de caracteres de formato de nome alternativo de assunto para formatos personalizados|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 |certificateErrorCode|Int32|Código de erro|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

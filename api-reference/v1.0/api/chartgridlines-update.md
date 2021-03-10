@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d74a86b3493ff66beb9dbdc6f0bf04dd12546eb4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7a3635403231e9ffa9c679ef96fe68d70b29392
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059786"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578441"
 ---
 # <a name="update-chartgridlines"></a>Atualizar chartgridlines
 
@@ -29,9 +29,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/minorGridlines
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/majorGridlines
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorGridlines
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/minorGridlines
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/minorGridlines
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/majorGridlines
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/majorGridlines
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorGridlines
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorGridlines
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -48,7 +51,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [WorkbookChartGridlines](../resources/chartgridlines.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [WorkbookChartGridlines](../resources/chartgridlines.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

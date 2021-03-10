@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 35ac6c45bd49b0d48a7cfca04620fd354eeea111
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f994f3e07c4c5388ee1ead4861bf0a1c97fb7ac
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051702"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578427"
 ---
 # <a name="range-cell"></a>Range: Cell
 
@@ -30,9 +30,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/cell
-GET /workbook/worksheets/{id|name}/range(address='<address>')/cell
-GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
+GET /me/drive/items/{id}/workbook/names/{name}/range/cell
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/cell
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/cell
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/cell
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/cell
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/cell
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

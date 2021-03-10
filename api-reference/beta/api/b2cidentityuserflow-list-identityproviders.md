@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: e908159c657016f7b36d1886e3d3b501503b295b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f0d0dbf0cedb1ea267da23301614bd8944da7cdf
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438299"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625793"
 ---
 # <a name="list-all-identityproviders-in-a-b2cidentityuserflow"></a>Listar todos os identityProviders em um b2cIdentityUserFlow
 
@@ -40,7 +40,7 @@ A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funç�
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /b2cUserFlows/{id}/identityProviders
+GET /identity/b2cUserFlows/{id}/identityProviders
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -1,16 +1,16 @@
 ---
 title: 'synchronizationSchema: filterOperators'
-description: Lista todos os operadores com suporte nos filtros de seleção.
+description: Listar todos os operadores com suporte nos filtros de scoping.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 9d790707aa11642499924dd93f75e2cec3945bb3
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0f2274490bba86653e6c1423fa832db265394526
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133823"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625641"
 ---
 # <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar todos os operadores com suporte nos [filtros de seleção.](../resources/synchronization-filter.md)
+Listar todos os operadores com suporte nos [filtros de scoping](../resources/synchronization-filter.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante)     |Directory.Read.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.|
-|Aplicativo                            |Sem suporte. | 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto da coleção `200, OK` [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto da coleção `200, OK` [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

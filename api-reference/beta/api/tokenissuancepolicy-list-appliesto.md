@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 95e31f704a41250c73f5dc13b5a0e06abc6c47f9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d3d007b0f137e03df1401f00c23a636eccfec9d9
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443437"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626220"
 ---
 # <a name="list-appliesto"></a>Lista appliesTo
 
@@ -67,7 +67,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/tokenIssuancePolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/{id}/appliesTo
 ```
 
 ### <a name="response"></a>Resposta

@@ -1,22 +1,22 @@
 ---
 title: Obter workbookCommentReply
-description: Recupere as propriedades e os relacionamentos do objeto workbookcommentreply.
+description: Recupere as propriedades e as relações do objeto workbookcommentreply.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9042936934ef9d8fc8451b071fff852c1da2ac69
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 13f02538049744bdb12bb117ff1ba19b65b54374
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968999"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626192"
 ---
 # <a name="get-workbookcommentreply"></a>Obter workbookCommentReply
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos do objeto [workbookCommentReply](../resources/workbookcommentreply.md) .
+Recupere as propriedades e as relações do [objeto workbookCommentReply.](../resources/workbookcommentreply.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /comments/{id}/replies/{id}
+GET /drive/items/{id}/workbook/comments/{id}/replies/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [workbookCommentReply](../resources/workbookcommentreply.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [workbookCommentReply](../resources/workbookcommentreply.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

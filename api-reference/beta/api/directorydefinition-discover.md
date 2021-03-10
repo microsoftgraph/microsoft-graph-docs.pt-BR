@@ -1,18 +1,18 @@
 ---
-title: 'directoryDefinition: discover'
+title: 'directoryDefinition: descobrir'
 description: 'Descubra a definição de esquema mais recente para provisionamento para um aplicativo. '
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8b277d35e1cc83d5a52457cb07ddfe7129eb4cc8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4b83168464b8f8ab563ffa549d601e35929684bb
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130939"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625882"
 ---
-# <a name="directorydefinition-discover"></a>directoryDefinition: discover
+# <a name="directorydefinition-discover"></a>directoryDefinition: descobrir
 
 Namespace: microsoft.graph
 
@@ -24,11 +24,11 @@ Descubra a definição de esquema mais recente para provisionamento para um apli
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Somente aplicativo                            | Nenhum. |
+|Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft) |Sem suporte.|
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` uma resposta com um objeto [directoryDefinition](../resources/synchronization-directorydefinition.md) .
+Se tiver êxito, este método retornará `200 OK` uma resposta com um objeto [directoryDefinition.](../resources/synchronization-directorydefinition.md)
 
 ## <a name="example"></a>Exemplo
 

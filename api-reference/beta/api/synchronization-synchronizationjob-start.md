@@ -1,24 +1,24 @@
 ---
-title: Iniciar synchronizationJob
-description: Inicie um trabalho de sincronização existente. Se o trabalho estiver em um estado pausado, ele continuará a processar as alterações do ponto em que foi pausado. Se o trabalho estiver em quarentena, o status da quarentena será limpo.
+title: Iniciar sincronizaçãoJob
+description: Inicie um trabalho de sincronização existente. Se o trabalho estiver em um estado pausado, ele continuará processamento de alterações do ponto em que foi pausado. Se o trabalho estiver em quarentena, o status de quarentena será limpo.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 1fae704446d35c7a93d850f25f31355f50d332e0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fc70f816dfc1e564d27fe5c9be60580eded415e6
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132756"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626248"
 ---
-# <a name="start-synchronizationjob"></a>Iniciar synchronizationJob
+# <a name="start-synchronizationjob"></a>Iniciar sincronizaçãoJob
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inicie um trabalho de sincronização existente. Se o trabalho estiver em um estado pausado, ele continuará a processar as alterações do ponto em que foi pausado. Se o trabalho estiver em quarentena, o status da quarentena será limpo.
+Inicie um trabalho de sincronização existente. Se o trabalho estiver em um estado pausado, ele continuará processamento de alterações do ponto em que foi pausado. Se o trabalho estiver em quarentena, o status de quarentena será limpo. Não crie scripts para chamar o trabalho inicial continuamente enquanto ele estiver em execução porque isso pode fazer com que o serviço pare de ser executado. Use o trabalho inicial somente quando o trabalho estiver pausado ou em quarentena. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte. |
-|Aplicativo                            |Sem suporte. | 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

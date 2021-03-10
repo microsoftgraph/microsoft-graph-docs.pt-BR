@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a8203aae8e73417c90dd92a57465238e043d42db
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 64cbfffb5652e4c17303e6dd5385c06c53a58575
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134320"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626234"
 ---
 # <a name="list-serviceprincipal-memberof"></a>Listar memberOf de servicePrincipal
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -152,9 +152,9 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 394
+```
 
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>Exemplo 3: Usar a conversão OData para obter apenas uma contagem de associação de grupo
 
@@ -184,9 +184,9 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 394
+```
 
 ### <a name="example-4-use-search-and-odata-cast-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Exemplo 4: Utilizar $search e conversão OData para obter associação de grupo com nomes de exibição que contenham as letras 'Vídeo', incluindo uma contagem de objetos retornados
 
@@ -199,7 +199,7 @@ Este é um exemplo de solicitação.
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
-GET iv. https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video" 
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video" 
 ConsistencyLevel: eventual
 ```
 

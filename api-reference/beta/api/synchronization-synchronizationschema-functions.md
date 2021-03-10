@@ -1,33 +1,33 @@
 ---
-title: 'synchronizationSchema: functions'
-description: Lista todas as funções atualmente com suporte no atributoMappingSource.
+title: 'synchronizationSchema: funções'
+description: Listar todas as funções atualmente suportadas no atributoMappingSource.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 626ab146bf928691d846b4ffab209720be5b8f66
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ff6d231f8f20d96262530230304028368554e41b
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132745"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625959"
 ---
-# <a name="synchronizationschema-functions"></a>synchronizationSchema: functions
+# <a name="synchronizationschema-functions"></a>synchronizationSchema: funções
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar todas as funções atualmente com suporte no [atributoMappingSource](../resources/synchronization-attributemappingsource.md).
+Listar todas as funções atualmente suportadas no [atributoMappingSource](../resources/synchronization-attributemappingsource.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante)     |Directory.Read.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.|
-|Aplicativo                            |Sem suporte. | 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

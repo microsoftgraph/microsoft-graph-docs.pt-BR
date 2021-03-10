@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 7192fcfca0b6f8305965d052bb565a15f6f820db
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 13554af29edc085392684f0600e40975e17e1fb5
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516476"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578798"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -63,6 +63,7 @@ Esse recurso permite:
 | [Listar contatos](../api/user-list-contacts.md) | Coleção [Contact](contact.md) | Obter uma coleção de contatos da pasta padrão de contatos do usuário conectado. |
 | [Listar contactFolders](../api/user-list-contactfolders.md) | Coleção [ContactFolder](contactfolder.md) | Obtenha a coleção de pastas de contatos na pasta de contatos padrão do usuário conectado. |
 | **Objetos de diretório**|||
+| [activateServicePlan](../api/user-activateserviceplan.md) | Nenhum | Ative um serviço com um determinado`servicePlanId` e `skuId`para um determinado[ usuário](user.md). |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
 | [checkMemberGroups](../api/user-checkmembergroups.md) | Coleção de cadeias de caracteres | Verifique se há uma associação em uma lista de grupos. A verificação é transitiva. |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique a associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. A verificação é transitiva. |
@@ -165,7 +166,7 @@ Esse recurso permite:
 | assignedLicenses | Coleção [assignedLicense](assignedlicense.md) | As licenças que são atribuídas ao usuário. <br><br>Retornado apenas em `$select`. Não anulável. |
 | assignedPlans | Coleção [assignedPlan](assignedplan.md) | Os planos que são atribuídos ao usuário. <br><br>Retornado apenas em `$select`. Somente leitura. Não anulável. |
 | birthday | DateTimeOffset | O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `'2014-01-01T00:00:00Z'` <br><br>Retornado apenas em `$select`. |
-| businessPhones | String collection | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade. <br><br>Retornado por padrão. Somente leitura para usuários sincronizados do diretório local. |
+| businessPhones | Coleção de cadeias de caracteres | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade. <br><br>Retornado por padrão. Somente leitura para usuários sincronizados do diretório local. |
 | city | String | A cidade em que o usuário está localizado. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
 | companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O tamanho máximo do nome da empresa é 64 caracteres.<br><br>Retornado apenas em `$select`. |
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
@@ -219,7 +220,7 @@ Esse recurso permite:
 | preferredLanguage | String | O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US". <br><br>Retornado por padrão. |
 | preferredName | String | O nome preferencial do usuário. <br><br>Retornado apenas em `$select`. |
 | provisionedPlans | coleção [provisionedPlan](provisionedplan.md) | Os planos que estão provisionados para o usuário. <br><br>Retornado apenas em `$select`. Somente leitura. Não anulável. |
-| proxyAddresses | String collection | Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado apenas em `$select`. Somente leitura, Não anulável. Oferece suporte para `$filter`. |
+| proxyAddresses | Coleção de cadeias de caracteres | Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado apenas em `$select`. Somente leitura, Não anulável. Oferece suporte para `$filter`. |
 | refreshTokensValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em `$select`. Somente leitura. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) para redefinir. |
 | responsibilities | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas responsabilidades. <br><br>Retornado apenas em `$select`. |
 | schools | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar as escolas que frequentou. <br><br>Retornado apenas em `$select`. |
@@ -292,7 +293,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |drive|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
 |events|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
-|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o usuário. Anulável.|
+|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Anulável.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
 |insights|[itemInsights](iteminsights.md) | Somente leitura. Anulável.|
 |joinedGroups|Coleção [group](group.md)| Somente leitura. Anulável.|

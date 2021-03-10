@@ -1,22 +1,22 @@
 ---
 title: Obter workbookApplication
-description: Recupere as propriedades e os relacionamentos de um objeto workbookApplication.
+description: Recupere as propriedades e as relações de um objeto workbookApplication.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 743ebaaf60c76b5191fca1b17b70dbfdca3fcf8c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: af4273496a44b91bff1aab9c8d583933173667b4
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970772"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578721"
 ---
 # <a name="get-workbookapplication"></a>Obter workbookApplication
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto [workbookApplication](../resources/workbookapplication.md) .
+Recupere as propriedades e as relações de um [objeto workbookApplication.](../resources/workbookapplication.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,7 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/application
+GET /me/drive/items/{id}/workbook/application
+GET /me/drive/root:/{item-path}:/workbook/application
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -43,11 +44,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [workbookApplication](../resources/workbookapplication.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto workbookApplication](../resources/workbookapplication.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação.
+Aqui está um exemplo de uma solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

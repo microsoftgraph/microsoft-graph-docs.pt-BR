@@ -1,16 +1,16 @@
 ---
 title: Obter synchronizationSchema
-description: Recupere o esquema de um determinado trabalho ou modelo de sincronização.
+description: Recupere o esquema para um determinado trabalho ou modelo de sincronização.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 9e91c0697c39c031f149477d7dbcac5a35679040
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 84c1dc9112851330be721f425a01228d278d014b
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132710"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625961"
 ---
 # <a name="get-synchronizationschema"></a>Obter synchronizationSchema
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o esquema de um determinado trabalho ou modelo de sincronização.
+Recupere o esquema para um determinado trabalho ou modelo de sincronização.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegado (conta corporativa ou de estudante)     |Directory.Read.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte. |
-|Aplicativo                            |Sem suporte. | 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [synchronizationSchema](../resources/synchronization-synchronizationschema.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto synchronizationSchema](../resources/synchronization-synchronizationschema.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

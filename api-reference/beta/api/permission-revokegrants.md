@@ -1,25 +1,25 @@
 ---
 title: 'permission: revokeGrants'
-description: Atualizar as permissões de compartilhamento de um item
+description: Atualizar permissões de compartilhamento de um item
 author: learafa
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 42a0a3f61349e5ed2741e26a2cb9817f45b4848c
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 8a60aa04b999009ad279b0715ed97cbc045e268a
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873455"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625499"
 ---
 # <a name="permission-revokegrants"></a>permission: revokeGrants
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Revogar o acesso a [um listItem][] ou [driveItem][] concedido por meio de um link de compartilhamento removendo o destinatário [especificado][] do link.
+Revogar o acesso a [um listItem][] ou [driveItem][] concedido por meio de um link de compartilhamento removendo o [destinatário][] especificado do link.
 
->**Observação:** Essa funcionalidade só está disponível para compartilhamento de links com escopo para os usuários.
+>**Observação:** Essa funcionalidade só está disponível para compartilhamento de links com escopo para usuários.
 
 [listItem]: ../resources/listitem.md
 [driveItem]: ../resources/driveitem.md
@@ -45,7 +45,7 @@ POST /drives/{drive-id}/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
-POST /sites/{site-id}/lists/{list-id}/items/{listItem-id}/permissions/{perm-id}/revokeGrants
+POST /sites/{site-id}/lists/{list-id}/items/{listItem-id}/driveItem/permissions/{perm-id}/revokeGrants
 POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 ```
 
@@ -62,11 +62,11 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|grantees|[coleção driveRecipient](../resources/driverecipient.md)|Uma coleção de destinatários que serão revogados do acesso ao link de compartilhamento.|
+|grantees|[Coleção driveRecipient](../resources/driverecipient.md)|Uma coleção de destinatários que serão revogados acesso ao link de compartilhamento.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedida, esta ação retorna `200 OK` um código de resposta e uma [permissão](../resources/permission.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará `200 OK` um código de resposta e uma [permissão](../resources/permission.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -113,7 +113,7 @@ Content-length: 95
 
 ### <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna [um recurso Permission](../resources/permission.md) no corpo da resposta que representa o estado atualizado do link de compartilhamento.
+Se tiver êxito, este método retornará [um recurso Permission](../resources/permission.md) no corpo da resposta que representa o estado atualizado do link de compartilhamento.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 

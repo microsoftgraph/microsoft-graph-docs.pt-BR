@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: c53781dba635e583531682f755b5c76be6dfac5e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7f9f5589069e6b96115f73edb653d7262efe445a
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435235"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625811"
 ---
 # <a name="update-identityuserflowattribute"></a>Atualizar identityUserFlowAttribute
 
@@ -40,7 +40,7 @@ A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funç�
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /userFlowAttributes/{id}
+PATCH /identity/userFlowAttributes/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

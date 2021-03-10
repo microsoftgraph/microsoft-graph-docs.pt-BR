@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1e55d93db6b47d437ec2c7b062e10bfd93852bf3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e36ef7d95da25b216237f4abb4f5848199f51cd4
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059863"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578443"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -30,7 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/itemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/itemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/itemAt
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -48,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [WorkbookChart](../resources/chart.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [WorkbookChart](../resources/chart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
