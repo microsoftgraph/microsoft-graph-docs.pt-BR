@@ -5,51 +5,52 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9643ad87deea9425ebdf3edb4a74d71dba7a5038
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7430fcbd8c3ebdb270abcadf62047d69054c3a8e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984555"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577531"
 ---
-# <a name="workbookpivottable-refreshall"></a><span data-ttu-id="65c14-103">workbookPivotTable: refreshAll</span><span class="sxs-lookup"><span data-stu-id="65c14-103">workbookPivotTable: refreshAll</span></span>
+# <a name="workbookpivottable-refreshall"></a><span data-ttu-id="95aee-103">workbookPivotTable: refreshAll</span><span class="sxs-lookup"><span data-stu-id="95aee-103">workbookPivotTable: refreshAll</span></span>
 
-<span data-ttu-id="65c14-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="65c14-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="95aee-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="95aee-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="65c14-105">Atualiza a tabela dinâmica dentro de uma determinada planilha.</span><span class="sxs-lookup"><span data-stu-id="65c14-105">Refreshes the PivotTable within a given worksheet.</span></span>
+<span data-ttu-id="95aee-105">Atualiza a tabela dinâmica dentro de uma determinada planilha.</span><span class="sxs-lookup"><span data-stu-id="95aee-105">Refreshes the PivotTable within a given worksheet.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="65c14-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="65c14-106">Permissions</span></span>
-<span data-ttu-id="65c14-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="65c14-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="95aee-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="95aee-106">Permissions</span></span>
+<span data-ttu-id="95aee-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="95aee-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="65c14-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="65c14-109">Permission type</span></span>      | <span data-ttu-id="65c14-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="65c14-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="95aee-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="95aee-109">Permission type</span></span>      | <span data-ttu-id="95aee-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="95aee-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="65c14-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="65c14-111">Delegated (work or school account)</span></span> | <span data-ttu-id="65c14-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="65c14-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="65c14-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="65c14-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="65c14-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="65c14-114">Not supported.</span></span>    |
-|<span data-ttu-id="65c14-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="65c14-115">Application</span></span> | <span data-ttu-id="65c14-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="65c14-116">Not supported.</span></span> |
+|<span data-ttu-id="95aee-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="95aee-111">Delegated (work or school account)</span></span> | <span data-ttu-id="95aee-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="95aee-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="95aee-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="95aee-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="95aee-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="95aee-114">Not supported.</span></span>    |
+|<span data-ttu-id="95aee-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="95aee-115">Application</span></span> | <span data-ttu-id="95aee-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="95aee-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="65c14-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="65c14-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="95aee-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="95aee-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
+POST /me/drive/items/{id}/workbook/worksheets/{id}/pivotTables/refreshAll
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/refreshAll
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="65c14-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="65c14-118">Request headers</span></span>
-| <span data-ttu-id="65c14-119">Nome</span><span class="sxs-lookup"><span data-stu-id="65c14-119">Name</span></span>       | <span data-ttu-id="65c14-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="65c14-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="95aee-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="95aee-118">Request headers</span></span>
+| <span data-ttu-id="95aee-119">Nome</span><span class="sxs-lookup"><span data-stu-id="95aee-119">Name</span></span>       | <span data-ttu-id="95aee-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="95aee-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="65c14-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="65c14-121">Authorization</span></span>  | <span data-ttu-id="65c14-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="65c14-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="65c14-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="65c14-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="65c14-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="65c14-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="95aee-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="95aee-121">Authorization</span></span>  | <span data-ttu-id="95aee-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="95aee-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="95aee-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="95aee-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="95aee-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="95aee-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="65c14-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="65c14-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="95aee-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="95aee-127">Request body</span></span>
 
-### <a name="response"></a><span data-ttu-id="65c14-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="65c14-128">Response</span></span>
-<span data-ttu-id="65c14-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="65c14-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+### <a name="response"></a><span data-ttu-id="95aee-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="95aee-128">Response</span></span>
+<span data-ttu-id="95aee-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="95aee-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="65c14-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="65c14-131">Example</span></span>
-<span data-ttu-id="65c14-132">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="65c14-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="65c14-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="65c14-133">Request</span></span>
-<span data-ttu-id="65c14-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="65c14-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="95aee-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="95aee-131">Example</span></span>
+<span data-ttu-id="95aee-132">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="95aee-132">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="95aee-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="95aee-133">Request</span></span>
+<span data-ttu-id="95aee-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="95aee-134">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="65c14-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="65c14-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="95aee-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="95aee-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workbookpivottable_refreshall"
@@ -57,27 +58,27 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ```
-# <a name="c"></a>[<span data-ttu-id="65c14-136">C#</span><span class="sxs-lookup"><span data-stu-id="65c14-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="95aee-136">C#</span><span class="sxs-lookup"><span data-stu-id="95aee-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookpivottable-refreshall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="65c14-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="65c14-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="95aee-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="95aee-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookpivottable-refreshall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="65c14-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="65c14-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="95aee-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="95aee-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/workbookpivottable-refreshall-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="65c14-139">Java</span><span class="sxs-lookup"><span data-stu-id="65c14-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="95aee-139">Java</span><span class="sxs-lookup"><span data-stu-id="95aee-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/workbookpivottable-refreshall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="65c14-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="65c14-140">Response</span></span>
-<span data-ttu-id="65c14-141">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="65c14-141">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="95aee-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="95aee-140">Response</span></span>
+<span data-ttu-id="95aee-141">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="95aee-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
