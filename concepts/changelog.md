@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 2a6fe540d280b7db44f9c3c2488f0ea4ab652175
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 5b6dd45622371277deb40b28763edd0dc2c6275b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516217"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575816"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -487,6 +487,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | v1.0 | Adicionado suporte para `$count`, `$search`, e `$filter` parâmetros de consulta para melhorar as capacidades de consulta: <br><ul><li>[Listar aplicativos](/graph/api/application-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar dispositivos](/graph/api/device-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Lista de grupos de dispositivos](/graph/api/device-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar grupos transitivos de dispositivos](/graph/api/device-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar grupos](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar grupo memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar membros de grupo](/graph/api/group-list-members?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar transitivo de grupo memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar membros transitivos de grupo](/graph/api/group-list-transitivemembers?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar orgContacts](/graph/api/orgcontact-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar memberOf de servicePrincipal](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar memberOf transitivos de servicePrincipal](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar usuários](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar usuário memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar usuário transitivo memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li></ul><br>Exemplos adicionados para usar OData para: <ul><li>[Listar grupo memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar membros de grupo](/graph/api/group-list-members?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar transitivo de grupo memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar memberOf de servicePrincipal](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar memberOf transitivos de servicePrincipal](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar usuário memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[Listar usuário transitivo memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li></ul> |
+| Adição | beta | Adicionou o [ativar plano de serviço](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) método para o [usar](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) recurso |
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 
@@ -978,7 +979,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | A função [delta](/graph/api/event-delta?view=graph-rest-beta&preserve-view=true) suporta um cenário adicional para obter alterações incrementais (novo, atualizado ou removido) de eventos em um calendário de usuário sem necessidade de estarem limitados por um intervalo de data. |
 
-### <a name="change-notifications"></a>Notificações de alteração
+### <a name="change-notifications"></a>Alterar notificações
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
