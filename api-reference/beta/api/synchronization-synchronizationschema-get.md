@@ -1,35 +1,35 @@
 ---
 title: Obter synchronizationSchema
-description: Recupere o esquema de um determinado trabalho ou modelo de sincronização.
+description: Recupere o esquema para um determinado trabalho ou modelo de sincronização.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 9e91c0697c39c031f149477d7dbcac5a35679040
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 84c1dc9112851330be721f425a01228d278d014b
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132710"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625961"
 ---
-# <a name="get-synchronizationschema"></a><span data-ttu-id="cb7b9-103">Obter synchronizationSchema</span><span class="sxs-lookup"><span data-stu-id="cb7b9-103">Get synchronizationSchema</span></span>
+# <a name="get-synchronizationschema"></a><span data-ttu-id="c2c2a-103">Obter synchronizationSchema</span><span class="sxs-lookup"><span data-stu-id="c2c2a-103">Get synchronizationSchema</span></span>
 
-<span data-ttu-id="cb7b9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cb7b9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c2c2a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c2c2a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cb7b9-105">Recupere o esquema de um determinado trabalho ou modelo de sincronização.</span><span class="sxs-lookup"><span data-stu-id="cb7b9-105">Retrieve the schema for a given synchronization job or template.</span></span>
+<span data-ttu-id="c2c2a-105">Recupere o esquema para um determinado trabalho ou modelo de sincronização.</span><span class="sxs-lookup"><span data-stu-id="c2c2a-105">Retrieve the schema for a given synchronization job or template.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cb7b9-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="cb7b9-106">Permissions</span></span>
-<span data-ttu-id="cb7b9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cb7b9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c2c2a-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="c2c2a-106">Permissions</span></span>
+<span data-ttu-id="c2c2a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c2c2a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cb7b9-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cb7b9-109">Permission type</span></span>                        | <span data-ttu-id="cb7b9-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cb7b9-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c2c2a-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c2c2a-109">Permission type</span></span>                        | <span data-ttu-id="c2c2a-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c2c2a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cb7b9-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cb7b9-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="cb7b9-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb7b9-112">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="cb7b9-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cb7b9-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="cb7b9-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cb7b9-114">Not supported.</span></span> |
-|<span data-ttu-id="cb7b9-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cb7b9-115">Application</span></span>                            |<span data-ttu-id="cb7b9-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cb7b9-116">Not supported.</span></span> | 
+|<span data-ttu-id="c2c2a-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c2c2a-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="c2c2a-112">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="c2c2a-112">Directory.Read.All</span></span>  |
+|<span data-ttu-id="c2c2a-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c2c2a-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="c2c2a-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c2c2a-114">Not supported.</span></span> |
+|<span data-ttu-id="c2c2a-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c2c2a-115">Application</span></span>                            |<span data-ttu-id="c2c2a-116">Application.ReadWrite.OwnedBy, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c2c2a-116">Application.ReadWrite.OwnedBy, Directory.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="cb7b9-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cb7b9-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c2c2a-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c2c2a-117">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
@@ -37,26 +37,26 @@ GET /servicePrincipals/{id}/synchronization/templates/{templateId}/schema
 GET /applications/{id}/synchronization/templates/{templateId}/schema
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cb7b9-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cb7b9-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c2c2a-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c2c2a-118">Request headers</span></span>
 
-| <span data-ttu-id="cb7b9-119">Nome</span><span class="sxs-lookup"><span data-stu-id="cb7b9-119">Name</span></span>           | <span data-ttu-id="cb7b9-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="cb7b9-120">Type</span></span>    | <span data-ttu-id="cb7b9-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="cb7b9-121">Description</span></span>|
+| <span data-ttu-id="c2c2a-119">Nome</span><span class="sxs-lookup"><span data-stu-id="c2c2a-119">Name</span></span>           | <span data-ttu-id="c2c2a-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="c2c2a-120">Type</span></span>    | <span data-ttu-id="c2c2a-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="c2c2a-121">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="cb7b9-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="cb7b9-122">Authorization</span></span>  | <span data-ttu-id="cb7b9-123">string</span><span class="sxs-lookup"><span data-stu-id="cb7b9-123">string</span></span>  | <span data-ttu-id="cb7b9-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cb7b9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c2c2a-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="c2c2a-122">Authorization</span></span>  | <span data-ttu-id="c2c2a-123">string</span><span class="sxs-lookup"><span data-stu-id="c2c2a-123">string</span></span>  | <span data-ttu-id="c2c2a-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c2c2a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cb7b9-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cb7b9-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c2c2a-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c2c2a-126">Request body</span></span>
 
-<span data-ttu-id="cb7b9-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cb7b9-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="c2c2a-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c2c2a-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cb7b9-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb7b9-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c2c2a-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="c2c2a-128">Response</span></span>
 
-<span data-ttu-id="cb7b9-129">Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [synchronizationSchema](../resources/synchronization-synchronizationschema.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cb7b9-129">If successful, this method returns a `200 OK` response code and a [synchronizationSchema](../resources/synchronization-synchronizationschema.md) object in the response body.</span></span>
+<span data-ttu-id="c2c2a-129">Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto synchronizationSchema](../resources/synchronization-synchronizationschema.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c2c2a-129">If successful, this method returns a `200 OK` response code and a [synchronizationSchema](../resources/synchronization-synchronizationschema.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cb7b9-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cb7b9-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c2c2a-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c2c2a-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="cb7b9-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cb7b9-131">Request</span></span>
-<span data-ttu-id="cb7b9-132">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="cb7b9-132">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="c2c2a-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c2c2a-131">Request</span></span>
+<span data-ttu-id="c2c2a-132">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="c2c2a-132">The following is an example of a request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="cb7b9-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="cb7b9-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c2c2a-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="c2c2a-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationschema"
@@ -64,29 +64,29 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
-# <a name="c"></a>[<span data-ttu-id="cb7b9-134">C#</span><span class="sxs-lookup"><span data-stu-id="cb7b9-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c2c2a-134">C#</span><span class="sxs-lookup"><span data-stu-id="c2c2a-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cb7b9-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cb7b9-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c2c2a-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c2c2a-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cb7b9-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cb7b9-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c2c2a-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c2c2a-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="cb7b9-137">Java</span><span class="sxs-lookup"><span data-stu-id="cb7b9-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c2c2a-137">Java</span><span class="sxs-lookup"><span data-stu-id="c2c2a-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="cb7b9-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb7b9-138">Response</span></span>
-<span data-ttu-id="cb7b9-139">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="cb7b9-139">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="c2c2a-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="c2c2a-138">Response</span></span>
+<span data-ttu-id="c2c2a-139">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="c2c2a-139">The following is an example of a response.</span></span>
 
-><span data-ttu-id="cb7b9-140">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="cb7b9-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="cb7b9-141">Todas as propriedades serão retornadas em uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cb7b9-141">All the properties will be returned in an actual call.</span></span>
+><span data-ttu-id="c2c2a-140">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c2c2a-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="c2c2a-141">Todas as propriedades serão retornadas em uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c2c2a-141">All the properties will be returned in an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

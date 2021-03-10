@@ -5,56 +5,59 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4a8624031ce1acb51485729d6d5b79bdccd06637
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 40bd2588646648907e0107b91a13a162f8d2a0c7
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059898"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578498"
 ---
-# <a name="update-chartaxistitle"></a><span data-ttu-id="59d77-103">Atualizar chartaxistitle</span><span class="sxs-lookup"><span data-stu-id="59d77-103">Update chartaxistitle</span></span>
+# <a name="update-chartaxistitle"></a><span data-ttu-id="041b2-103">Atualizar chartaxistitle</span><span class="sxs-lookup"><span data-stu-id="041b2-103">Update chartaxistitle</span></span>
 
-<span data-ttu-id="59d77-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="59d77-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="041b2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="041b2-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="59d77-105">Atualiza as propriedades do objeto chartaxistitle.</span><span class="sxs-lookup"><span data-stu-id="59d77-105">Update the properties of chartaxistitle object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="59d77-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="59d77-106">Permissions</span></span>
-<span data-ttu-id="59d77-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="59d77-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="041b2-105">Atualiza as propriedades do objeto chartaxistitle.</span><span class="sxs-lookup"><span data-stu-id="041b2-105">Update the properties of chartaxistitle object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="041b2-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="041b2-106">Permissions</span></span>
+<span data-ttu-id="041b2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="041b2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="59d77-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="59d77-109">Permission type</span></span>      | <span data-ttu-id="59d77-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="59d77-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="041b2-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="041b2-109">Permission type</span></span>      | <span data-ttu-id="041b2-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="041b2-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="59d77-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="59d77-111">Delegated (work or school account)</span></span> | <span data-ttu-id="59d77-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="59d77-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="59d77-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="59d77-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="59d77-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="59d77-114">Not supported.</span></span>    |
-|<span data-ttu-id="59d77-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="59d77-115">Application</span></span> | <span data-ttu-id="59d77-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="59d77-116">Not supported.</span></span> |
+|<span data-ttu-id="041b2-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="041b2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="041b2-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="041b2-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="041b2-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="041b2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="041b2-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="041b2-114">Not supported.</span></span>    |
+|<span data-ttu-id="041b2-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="041b2-115">Application</span></span> | <span data-ttu-id="041b2-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="041b2-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="59d77-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="59d77-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="041b2-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="041b2-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/title
-PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/title
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/title
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="59d77-118">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="59d77-118">Optional request headers</span></span>
-| <span data-ttu-id="59d77-119">Nome</span><span class="sxs-lookup"><span data-stu-id="59d77-119">Name</span></span>       | <span data-ttu-id="59d77-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="59d77-120">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="041b2-118">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="041b2-118">Optional request headers</span></span>
+| <span data-ttu-id="041b2-119">Nome</span><span class="sxs-lookup"><span data-stu-id="041b2-119">Name</span></span>       | <span data-ttu-id="041b2-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="041b2-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="59d77-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="59d77-121">Authorization</span></span>  | <span data-ttu-id="59d77-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="59d77-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="59d77-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="59d77-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="59d77-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="59d77-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="041b2-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="041b2-121">Authorization</span></span>  | <span data-ttu-id="041b2-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="041b2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="041b2-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="041b2-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="041b2-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="041b2-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="59d77-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="59d77-127">Request body</span></span>
-<span data-ttu-id="59d77-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="59d77-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="041b2-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="041b2-127">Request body</span></span>
+<span data-ttu-id="041b2-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="041b2-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="59d77-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="59d77-131">Property</span></span>     | <span data-ttu-id="59d77-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="59d77-132">Type</span></span>   |<span data-ttu-id="59d77-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="59d77-133">Description</span></span>|
+| <span data-ttu-id="041b2-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="041b2-131">Property</span></span>     | <span data-ttu-id="041b2-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="041b2-132">Type</span></span>   |<span data-ttu-id="041b2-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="041b2-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="59d77-134">texto</span><span class="sxs-lookup"><span data-stu-id="59d77-134">text</span></span>|<span data-ttu-id="59d77-135">string</span><span class="sxs-lookup"><span data-stu-id="59d77-135">string</span></span>|<span data-ttu-id="59d77-136">Representa o título do eixo.</span><span class="sxs-lookup"><span data-stu-id="59d77-136">Represents the axis title.</span></span>|
-|<span data-ttu-id="59d77-137">visible</span><span class="sxs-lookup"><span data-stu-id="59d77-137">visible</span></span>|<span data-ttu-id="59d77-138">booliano</span><span class="sxs-lookup"><span data-stu-id="59d77-138">boolean</span></span>|<span data-ttu-id="59d77-139">Um booliano que especifica a visibilidade de um título do eixo.</span><span class="sxs-lookup"><span data-stu-id="59d77-139">A boolean that specifies the visibility of an axis title.</span></span>|
+|<span data-ttu-id="041b2-134">texto</span><span class="sxs-lookup"><span data-stu-id="041b2-134">text</span></span>|<span data-ttu-id="041b2-135">string</span><span class="sxs-lookup"><span data-stu-id="041b2-135">string</span></span>|<span data-ttu-id="041b2-136">Representa o título do eixo.</span><span class="sxs-lookup"><span data-stu-id="041b2-136">Represents the axis title.</span></span>|
+|<span data-ttu-id="041b2-137">visible</span><span class="sxs-lookup"><span data-stu-id="041b2-137">visible</span></span>|<span data-ttu-id="041b2-138">booliano</span><span class="sxs-lookup"><span data-stu-id="041b2-138">boolean</span></span>|<span data-ttu-id="041b2-139">Um booliano que especifica a visibilidade de um título do eixo.</span><span class="sxs-lookup"><span data-stu-id="041b2-139">A boolean that specifies the visibility of an axis title.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="59d77-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="59d77-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="041b2-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="041b2-140">Response</span></span>
 
-<span data-ttu-id="59d77-141">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [WorkbookChartAxisTitle](../resources/chartaxistitle.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="59d77-141">If successful, this method returns a `200 OK` response code and updated [WorkbookChartAxisTitle](../resources/chartaxistitle.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="59d77-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="59d77-142">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="59d77-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="59d77-143">Request</span></span>
-<span data-ttu-id="59d77-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="59d77-144">Here is an example of the request.</span></span>
+<span data-ttu-id="041b2-141">Se tiver êxito, este método retornará um código de resposta e `200 OK` o [objeto WorkbookChartAxisTitle](../resources/chartaxistitle.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="041b2-141">If successful, this method returns a `200 OK` response code and updated [WorkbookChartAxisTitle](../resources/chartaxistitle.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="041b2-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="041b2-142">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="041b2-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="041b2-143">Request</span></span>
+<span data-ttu-id="041b2-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="041b2-144">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="59d77-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="59d77-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="041b2-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="041b2-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_chartaxistitle"
@@ -69,26 +72,26 @@ Content-length: 45
   "visible": true
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="59d77-146">C#</span><span class="sxs-lookup"><span data-stu-id="59d77-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="041b2-146">C#</span><span class="sxs-lookup"><span data-stu-id="041b2-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-chartaxistitle-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="59d77-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="59d77-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="041b2-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="041b2-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-chartaxistitle-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="59d77-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="59d77-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="041b2-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="041b2-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-chartaxistitle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="59d77-149">Java</span><span class="sxs-lookup"><span data-stu-id="59d77-149">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="041b2-149">Java</span><span class="sxs-lookup"><span data-stu-id="041b2-149">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-chartaxistitle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="59d77-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="59d77-150">Response</span></span>
-<span data-ttu-id="59d77-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="59d77-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="041b2-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="041b2-150">Response</span></span>
+<span data-ttu-id="041b2-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="041b2-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
