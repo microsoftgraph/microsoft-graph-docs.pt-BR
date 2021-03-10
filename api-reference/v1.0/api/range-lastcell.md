@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 56a70415a9a5432ca248e0b982d75c097f939300
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a9f87a1d0546736530102e37fd8f74d792e48bd1
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051638"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577727"
 ---
 # <a name="range-lastcell"></a>Range: LastCell
 
@@ -30,9 +30,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/lastCell
-GET /workbook/worksheets/{id|name}/range(address='<address>')/lastCell
-GET /workbook/tables/{id|name}/columns/{id|name}/range/lastCell
+GET /me/drive/items/{id}/workbook/names/{name}/range/lastCell
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/lastCell
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/lastCell
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/lastCell
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/lastCell
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/lastCell
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

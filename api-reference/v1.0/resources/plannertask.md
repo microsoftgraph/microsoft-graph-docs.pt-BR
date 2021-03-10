@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 62efdd9c76aecde9367e36d5d688313a10aa69d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b2f92d1dc16d2b30dc2a16af6854ed5fccc50a57
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037372"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577094"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 
@@ -96,7 +96,6 @@ Veja a seguir uma representação JSON do recurso.
   "startDateTime": "String (timestamp)",
   "title": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

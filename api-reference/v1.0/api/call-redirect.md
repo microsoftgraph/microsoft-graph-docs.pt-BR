@@ -5,22 +5,22 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4c15a05fab91d453d1ab1bb78decbf93dc6bf380
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 2f1fce44d9f6aa4ac299497d6d0c6de11cc062c8
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176210"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576803"
 ---
 # <a name="call-redirect"></a>call: redirect
 
 Namespace: microsoft.graph
 
-Redirecione uma chamada de entrada que ainda não [foi atendida](./call-answer.md) ou [rejeitada.](./call-reject.md) Os termos "redirecionamento" e "encaminhamento" de uma chamada são usados de forma intercambiável.
+Redirecionar uma chamada de entrada que ainda não foi [atendida](./call-answer.md) [ou rejeitada.](./call-reject.md) Os termos "redirecionamento" e "encaminhamento" de uma chamada são usados de forma intercambiável.
 
-Espera-se que o bot redirecione a chamada antes do tempo de espera da chamada. O valor atual do tempo de vida é de 15 segundos.
+Espera-se que o bot redirecione a chamada antes do tempo de chamada. O valor de tempo decoro atual é 15 segundos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -50,9 +50,9 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|targets|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada simulring. Isso significa que todos os destinos serão variados ao mesmo tempo e somente o primeiro destino que escolher será conectado. Suportamos até 25 destinos para simulação.
-|timeout|Int32|O tempo de vida (em segundos) para a operação de redirecionamento. O intervalo do valor do tempo decor entre 15 e 90 segundos, inclusive. O valor de tempo de vida padrão é de 55 segundos para um destino e 60 segundos para vários destinos (sujeitos a alterações). |
-|callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado. Deve `https` ser.|
+|targets|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada simulring. Isso significa que todos os destinos serão tordos ao mesmo tempo e somente o primeiro destino que escolher será conectado. Suportamos até 25 destinos para simulação.
+|timeout|Int32|O tempo decoro (em segundos) para a operação de redirecionamento. O intervalo do valor de tempo decor entre 15 e 90 segundos, inclusive. O valor de tempo decoro padrão é 55 segundos para um destino e 60 segundos para vários destinos (sujeitos a alterações). |
+|callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` .|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `202 Accepted`.
@@ -60,9 +60,9 @@ Se tiver êxito, este método retornará um código de resposta `202 Accepted`.
 ## <a name="examples"></a>Exemplos
 Esses exemplos abrangem um fluxo de trabalho de uma notificação de chamada de entrada e como essa chamada será redirecionada.
 
-> **Observação:** Os objetos de resposta mostrados aqui podem ser reduzidos para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** Os objetos de resposta mostrados aqui podem ser reduzidos para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
-### <a name="example-1-forward-a-call-to-a-target"></a>Exemplo 1: Encaminhar uma chamada para um destino
+### <a name="example-1-forward-a-call-to-a-target"></a>Exemplo 1: encaminhar uma chamada para um destino
 
 ##### <a name="notification---incoming"></a>Notificação - entrada
 <!-- {
@@ -229,7 +229,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a>Exemplo 2: Encaminhar uma chamada para vários destinos com toque simultâneo
+### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a>Exemplo 2: encaminhar uma chamada para vários destinos com toque simultâneo
 
 ##### <a name="notification---incoming"></a>Notificação - entrada
 
@@ -400,30 +400,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-forward-a-call-to-a-pstn-number"></a>Exemplo 3: Encaminhar uma chamada para um número PSTN
+### <a name="example-3-forward-a-call-to-a-pstn-number"></a>Exemplo 3: encaminhar uma chamada para um número PSTN
 
-Essa chamada requer uma instância de aplicativo com um número PSTN atribuído.
-
-#### <a name="step-1-create-application-instance"></a>Etapa 1: Criar instância de aplicativo
-Usando credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para criar a instância do aplicativo. Para obter mais informações, [consulte New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
-```
-PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
-#### <a name="step-2-assign-microsoft-365-licenses"></a>Etapa 2: Atribuir licenças do Microsoft 365
-1. Use as credenciais de administrador de locatários para entrar e acessar a guia https://admin.microsoft.com/ **Usuários -> Usuários ativos.**
-2. Selecione a instância do aplicativo, atribua o Plano de Chamadas Domésticas e Internacionais do **Microsoft 365** e o Sistema de Telefonia do **Microsoft 365 -** Licenças de Usuário Virtual e clique em Salvar **alterações.** Se as licenças necessárias não estão disponíveis no locatário, você pode obter-as na guia Cobrança **-> serviços de** compra.
-#### <a name="step-3-acquire-pstn-number"></a>Etapa 3: Adquirir número PSTN
-1. Use as credenciais de administrador de locatários para entrar e clique na guia https://admin.teams.microsoft.com/ **Portal** herddo no painel esquerdo.
-2. Na nova página, vá para a **guia de números de telefone > voz.**
-3. Clique no botão, selecione Novos Números de Serviço e vá para a página Adicionar **+** **novos números de** serviço. 
-4. Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search. Clique **em adquirir números.** O número recém-adquirido será aparecer na guia **números de** telefone.
-#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Etapa 4: Atribuir número PSTN à instância do aplicativo
-Com credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para atribuir o número PSTN à instância do aplicativo. Para obter mais informações, consulte [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
-```
-PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="notification---incoming"></a>Notificação - entrada
 <!-- {

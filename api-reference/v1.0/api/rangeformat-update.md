@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3a9efc1fbbb2649ce6d0f183e8fc1aeb0fc7d813
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2eb4daf605bdebcf1885def6d2a66ced878ef81c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984779"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577783"
 ---
 # <a name="update-rangeformat"></a>Atualizar rangeformat
 
@@ -29,9 +29,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range/format
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
+PATCH /me/drive/items/{id}/workbook/names/{name}/range/format
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range/format
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -45,19 +48,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columnWidth|duplo|Obtém ou define a largura de todas as colunas dentro do intervalo. Se as larguras das colunas não forem uniformes, será retornado null.|
-|horizontalAlignment|string|Representa o alinhamento horizontal do objeto especificado. Os valores possíveis são: `General` , `Left` , `Center` , `Right` , `Fill` , `Justify` , `CenterAcrossSelection` , `Distributed` .|
+|horizontalAlignment|string|Representa o alinhamento horizontal do objeto especificado. Os valores possíveis são: `General` , , , , , , , , `Left` `Center` `Right` `Fill` `Justify` `CenterAcrossSelection` `Distributed` .|
 |rowHeight|duplo|Obtém ou define a altura de todas as linhas do intervalo. Se as alturas das linhas não forem uniformes, será retornado null.|
 |verticalAlignment|string|Representa o alinhamento vertical do objeto especificado. Os valores possíveis são: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|booliano|Indica se o Excel quebra automaticamente a linha de texto no objeto. Um valor nulo indica que o intervalo inteiro não tem configuração de quebra de linha automática uniforme.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [WorkbookRangeFormat](../resources/rangeformat.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [WorkbookRangeFormat](../resources/rangeformat.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 
 ### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a>Atualizar as propriedades de fonte, formatação e preenchimento em três células de tabela
 
-Os exemplos a seguir demonstram como atualizar as propriedades das propriedades [WorkbookRangeFormat](../resources/rangeformat.md), [WorkbookRangeFill](../resources/rangefill.md)e [WorkbookRangeFont](../resources/rangefont.md) de um intervalo especificado.
+Os exemplos a seguir demonstram como atualizar propriedades das propriedades [WorkbookRangeFormat,](../resources/rangeformat.md) [WorkbookRangeFill](../resources/rangefill.md)e [WorkbookRangeFont](../resources/rangefont.md) de um intervalo especificado.
 
 O resultado desse conjunto de solicitações é uma tabela com três células formatadas como as três células principais na imagem abaixo.
 

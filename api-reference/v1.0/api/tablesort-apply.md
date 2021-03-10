@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6fb2cff67ca14baca6dfb9f4bebbb7a79bfe8d3c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a2e78b444ed73abea1997d98f39218355bbb2f11
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012765"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577874"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -29,8 +29,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/sort/apply
-POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
+POST /me/drive/items/{id}/workbook/tables/{id|name}/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/apply
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

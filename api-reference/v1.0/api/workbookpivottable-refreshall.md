@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9643ad87deea9425ebdf3edb4a74d71dba7a5038
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7430fcbd8c3ebdb270abcadf62047d69054c3a8e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984555"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577531"
 ---
 # <a name="workbookpivottable-refreshall"></a>workbookPivotTable: refreshAll
 
@@ -30,7 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
+POST /me/drive/items/{id}/workbook/worksheets/{id}/pivotTables/refreshAll
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/refreshAll
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

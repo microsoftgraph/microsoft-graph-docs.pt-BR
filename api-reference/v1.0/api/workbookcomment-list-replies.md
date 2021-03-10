@@ -5,18 +5,18 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0c1dc01ed5e424297821a985422b9e2ce9855163
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: faa089c24e6e332ad6da285400ffa11be2c6b2cd
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970759"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577657"
 ---
 # <a name="list-workbookcommentreplies"></a>Listar workbookCommentReplies
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos [workbookCommentReply](../resources/workbookcommentreply.md) .
+Recupere uma lista [de objetos workbookCommentReply.](../resources/workbookcommentreply.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,7 +33,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /workbook/comments/{id}/replies
+GET /me/drive/items/{id}/workbook/comments/{id}/replies
+GET /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -48,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

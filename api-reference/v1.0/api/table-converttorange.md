@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6a4fb6cc26cc4652aa3b16b815829b9c6b7c13be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c02778c51c82d9e7089ccc605ef242c68d95d954
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045478"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575963"
 ---
 # <a name="table-converttorange"></a>Table: convertToRange
 
@@ -29,8 +29,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/convertToRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
+POST /me/drive/items/{id}/workbook/tables/{id|name}/convertToRange
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/convertToRange
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

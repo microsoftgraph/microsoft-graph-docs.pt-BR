@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ca1505a9d6d619595b0b87057501ed8b389d959a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5fd63973a74b9ee7f283b1c526f819aac463a859
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971045"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577776"
 ---
 # <a name="range-column"></a>Range: Column
 
@@ -30,9 +30,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/column
-GET /workbook/worksheets/{id|name}/range(address='<address>')/column
-GET /workbook/tables/{id|name}/columns/{id|name}/range/column
+GET /me/drive/items/{id}/workbook/names/{name}/range/column
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/column
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/column
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/column
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/column
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/column
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -42,7 +45,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="path-parameters"></a>Parâmetros do caminho
-No caminho da solicitação, forneça os seguintes parâmetros.
+No caminho da solicitação, forneça os parâmetros a seguir.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|

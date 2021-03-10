@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bcda7c036c7f0f7fc37214af2d340fe0ed888e48
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c9a3eb3c23e7222a083eb6e34f5e08be44424250
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013423"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575697"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -29,10 +29,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "samples" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/image
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640)
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -47,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |height|Int32|A altura desejada da imagem resultante. Opcional.|
 |width|Int32|A largura desejada da imagem resultante. Opcional.|
-|fittingMode|string|O método usado para dimensionar o gráfico para as dimensões especificadas (se a altura e a largura forem definidas). "  Os valores possíveis são: `Fit`, `FitAndCenter`, `Fill`.|
+|fittingMode|string|O método usado para dimensionar o gráfico para as dimensões especificadas (se a altura e a largura estão definidas)."  Os valores possíveis são: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Resposta
 

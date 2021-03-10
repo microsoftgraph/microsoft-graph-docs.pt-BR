@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cccaa780902a914187e360a856e9fe29faab170e
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 714743d68d31439afaa8aa648dfdf0f305f758ae
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882781"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575495"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtém um determinado número de linhas abaixo de um determinado intervalo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -31,7 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/rowsBelow(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ```
 
@@ -110,7 +111,7 @@ Content-length: 157
 }
 ```
 
-Se chamado sem `count` o parâmetro, essa função assume como padrão uma linha.
+Se chamada sem `count` o parâmetro, essa função é padrão para uma linha.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

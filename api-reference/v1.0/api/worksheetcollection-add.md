@@ -1,22 +1,22 @@
 ---
 title: 'WorksheetCollection: add'
-description: . Activate () nele.
+description: .activate() nele.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4eb8b914d44bf9f92fa3951d4e935ba1afa58ed2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: afb5f118ad467c769df2ae59b082e95e2d8a9ce2
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041726"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573590"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
 Namespace: microsoft.graph
 
-Adiciona uma nova planilha à pasta de trabalho. A planilha será adicionada ao final das planilhas existentes. Se você deseja ativar a planilha recém-adicionada, chame. Activate () nele.
+Adiciona uma nova planilha à pasta de trabalho. A planilha será adicionada ao final das planilhas existentes. Se desejar ativar a planilha recém-adicionada, chame .activate() nele.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -29,7 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/
+POST /me/drive/items/{id}/workbook/worksheets/
+POST /me/drive/root:/{item-path}:/workbook/worksheets/
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,7 +48,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [WorkbookWorksheet](../resources/worksheet.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [WorkbookWorksheet](../resources/worksheet.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

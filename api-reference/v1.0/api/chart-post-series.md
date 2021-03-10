@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 47f68ad0222abbcca48e57fdbd87036a26a0276b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a329a9ec6f2966460213308a44e8da35011fe1b4
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060003"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575634"
 ---
 # <a name="create-chartseries"></a>Criar ChartSeries
 
@@ -29,7 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/series
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/series
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -39,11 +40,11 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookChartSeries](../resources/chartseries.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto WorkbookChartSeries.](../resources/chartseries.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [WorkbookChartSeries](../resources/chartseries.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o `201 Created` [objeto WorkbookChartSeries](../resources/chartseries.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -81,7 +82,7 @@ Content-length: 26
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookChartSeries](../resources/chartseries.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto WorkbookChartSeries.](../resources/chartseries.md)
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

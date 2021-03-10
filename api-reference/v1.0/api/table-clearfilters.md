@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1fac7be05afcb5aefd877282d99fb6ae2bc5e7f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: afc4d28c713ad77b1531d0f30f0956be6e8b4423
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045492"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575977"
 ---
 # <a name="table-clearfilters"></a>Table: clearFilters
 
@@ -29,8 +29,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/clearFilters
-POST /workbook/worksheets/{id|name}/tables/{id|name}/clearFilters
+POST /me/drive/items/{id}/workbook/tables/{id|name}/clearFilters
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/clearFilters
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/clearFilters
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/clearFilters
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

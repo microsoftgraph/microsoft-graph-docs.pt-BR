@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 49a29f78963758ffad5ffe5bd7236429b52a0d37
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43bc6bc3646dadde3b8438977daa5f1b41682582
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988664"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575865"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -30,16 +30,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/usedRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/usedRange
 
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
-Na URL da solicitação, você pode fornecer parâmetros opcionais.
+Na URL de solicitação, você pode fornecer parâmetros opcionais.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|valuesOnly|Boolean|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
+|valuesOnly|Booliano|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -55,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Veja a seguir um exemplo que mostra como chamar essa API.
+Aqui está um exemplo que mostra como chamar essa API.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -107,7 +108,7 @@ Content-length: 169
 }
 ```
 
-Como alternativa, essa função pode ser chamada com o `valuesOnly` parâmetro opcional.
+Como alternativa, essa função pode ser chamada com o parâmetro `valuesOnly` opcional.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

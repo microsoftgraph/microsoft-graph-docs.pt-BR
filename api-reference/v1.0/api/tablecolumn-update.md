@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0e20ce96e1004f6b16e34b33f5e6b016da6059f8
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 634861ae08d2ed85593e46fa56f31ce6c5b23b21
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034237"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575494"
 ---
 # <a name="update-tablecolumn"></a>Atualizar tablecolumn
 
@@ -29,8 +29,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}/columns/{id|name}
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
@@ -47,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` um [objeto WorkbookTableColumn](../resources/workbooktablecolumn.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -86,7 +88,7 @@ Content-length: 81
 
 ---
 > [!NOTE]
-> Se você quiser atualizar vários campos de uma coluna, faça dos valores uma **matriz** de cadeia de caracteres na solicitação. Por exemplo: `"values": [["a"], [1], [2], [3]]`.
+> Se você quiser atualizar vários campos de uma coluna, faça **dos valores uma** matriz de cadeia de caracteres na solicitação. Por exemplo: `"values": [["a"], [1], [2], [3]]`.
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

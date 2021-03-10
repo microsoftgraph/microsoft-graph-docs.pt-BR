@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 17597fd1dc7411da0d828af32feeba05433d5f2d
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 2feec9b37375da3b76191ec84869346c07af36f3
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238971"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573765"
 ---
 # <a name="call-transfer"></a>call: transfer
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 Transferir uma chamada ponto a ponto ativa.
 
-> **Observação:** Isso só será suportado se os destinos de transferência e transferência são usuários do Microsoft Teams que pertencem ao mesmo locatário. A transferência para o número PSTN é suportada apenas para a instância do aplicativo. Para saber mais sobre o destino de transferência, transferência e transferência, consulte [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
+> **Observação:** Isso só será suportado se o destino de transferência e transferência for usuários do Microsoft Teams que pertencem ao mesmo locatário. Transfer to PSTN number is supported only for application instance. Para saber mais sobre o destino de transferência, transferência e transferência, consulte [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
 
-Uma transferência consultiva significa que o transferidor pode informar a pessoa para a quem ele deseja transferir a chamada (o transferidor), antes que a transferência seja feita. Isso não é transferir a chamada diretamente.
+Uma transferência consultiva significa que o transferidor pode informar a pessoa para a quem deseja transferir a chamada (o transferidor), antes que a transferência seja feita. Isso se opõe a transferir a chamada diretamente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|O participante que é o destino da transferência.|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é de 256 caracteres.|
+|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `202 Accepted`.
@@ -57,7 +57,7 @@ Se tiver êxito, este método retornará um código de resposta `202 Accepted`.
 ## <a name="examples"></a>Exemplos
 Esses exemplos mostram o fluxo de uma chamada de entrada até os diferentes tipos de notificações de transferência.
 
-### <a name="example-1-call-transfer"></a>Exemplo 1: Transferência de chamada
+### <a name="example-1-call-transfer"></a>Exemplo 1: transferência de chamada
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -149,7 +149,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode acontecer após ou antes do estado de mídia de áudio inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes que o áudio do estado de mídia seja inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -248,7 +248,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-consultative-transfer"></a>Exemplo 2: Transferência consultiva
+### <a name="example-2-consultative-transfer"></a>Exemplo 2: transferência consultiva
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -323,7 +323,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode acontecer após ou antes do estado de mídia de áudio inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes que o áudio do estado de mídia seja inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -419,28 +419,7 @@ Content-Type: application/json
 
 ### <a name="example-3-call-transfer-to-pstn-number"></a>Exemplo 3: Transferência de chamada para número PSTN
 
-Essa chamada requer uma instância de aplicativo com um número PSTN atribuído.
-
-#### <a name="step-1-create-application-instance"></a>Etapa 1: Criar instância de aplicativo
-Usando credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para criar a instância do aplicativo. Para obter mais informações, [consulte New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
-```
-PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
-#### <a name="step-2-assign-microsoft-365-licenses"></a>Etapa 2: Atribuir licenças do Microsoft 365
-1. Use as credenciais de administrador de locatários para entrar e acessar a guia https://admin.microsoft.com/ **Usuários -> Usuários ativos.**
-2. Selecione a instância do aplicativo, atribua o Plano de Chamadas Domésticas e Internacionais do **Microsoft 365** e o Sistema de Telefonia do **Microsoft 365 -** Licenças de Usuário Virtual e clique em Salvar **alterações.** Se as licenças necessárias não estão disponíveis no locatário, você pode obter-as na guia Cobrança **-> serviços de** compra.
-#### <a name="step-3-acquire-pstn-number"></a>Etapa 3: Adquirir número PSTN
-1. Use as credenciais de administrador de locatários para entrar e clique na guia https://admin.teams.microsoft.com/ **Portal** herddo no painel esquerdo.
-2. Na nova página, vá para a guia **de números de > de** voz.
-3. Clique no botão, selecione Novos Números de Serviço e vá para a página Adicionar **+** **novos números de** serviço. 
-4. Select **Country/Region**, **State/Region**, **City**, input **Quantity**, and click **add** to search. Clique **em adquirir números.** O número recém-adquirido será aparecer na guia **números de** telefone.
-#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Etapa 4: Atribuir número PSTN à instância do aplicativo
-Com credenciais de administrador de locatários, chame os cmdlets a seguir no PowerShell remoto do locatário para atribuir o número PSTN à instância do aplicativo. Para obter mais informações, consulte [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
-```
-PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
-PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
-```
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -513,7 +492,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode acontecer após ou antes do estado de mídia de áudio inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes que o áudio do estado de mídia seja inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -610,9 +589,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-consultative-transfer-to-pstn-number"></a>Exemplo 4: Transferência consultiva para número PSTN
+### <a name="example-4-consultative-transfer-to-pstn-number"></a>Exemplo 4: transferência consultiva para número PSTN
 
-Essa chamada requer uma instância de aplicativo com o número PSTN atribuído, conforme descrito no Exemplo 3.
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao seu bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -688,7 +667,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-accepted"></a>Notificação - transferência aceita
 
-> **Observação:** A transferência aceita pode acontecer após ou antes do estado de mídia de áudio inativo.
+> **Observação:** A transferência aceita pode acontecer após ou antes que o áudio do estado de mídia seja inativo.
 
 ```http
 POST https://bot.contoso.com/api/calls

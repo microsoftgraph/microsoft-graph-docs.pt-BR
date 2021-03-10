@@ -1,22 +1,22 @@
 ---
 title: Fechar Sessão
-description: 'Use essa API para fechar uma sessão de livro de trabalho existente. '
+description: 'Use essa API para fechar uma sessão de workbook existente. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 71e46ef8ec6fde1a1586516b885bdb146bc203ea
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 749d6115936875482728777e9df7c801262eef01
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292550"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575060"
 ---
 # <a name="close-session"></a>Fechar Sessão
 
 Namespace: microsoft.graph
 
-Use essa API para fechar uma sessão de livro de trabalho existente.
+Use essa API para fechar uma sessão de workbook existente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,14 +30,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/closeSession
+POST /me/drive/items/{id}/workbook/closeSession
+POST /me/drive/root:/{item-path}:/workbook/closeSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome                | Descrição                      |
 |:--------------------|:---------------------------------|
 | Autorização       | {token} de portador. Obrigatório.        |
-| workbook-session-id | ID da sessão da workbook a ser fechada |
+| workbook-session-id | ID da sessão de workbook a ser fechada |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Essa API não exige nenhum corpo de solicitação.

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7fcc975891dca549f52cc8611107ef94655e6032
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 804ce9a4caa19d427e47599a7be0a8f49b6fba5f
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094544"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575046"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 
@@ -22,14 +22,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -102,7 +103,7 @@ Content-length: 169
 }
 ```
 
-Se o `address` parâmetro Optional não for especificado, essa função retornará todo o intervalo de planilha.
+Se o parâmetro `address` opcional não for especificado, essa função retornará todo o intervalo de planilhas.
 
 ##### <a name="request"></a>Solicitação
 

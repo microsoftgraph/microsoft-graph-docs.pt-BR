@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ee46051e611866c3e18d72396762276eb22f52e7
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: baa6b565e86de889385f39d898f0143c20670def
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515776"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575382"
 ---
 # <a name="worksheet-delete"></a>Worksheet: delete
 
@@ -29,7 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /workbook/worksheets/{id|name}
+DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}
+DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

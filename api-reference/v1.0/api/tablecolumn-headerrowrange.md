@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 95d448ed3ec447916a2998242f29c2031c3d66f9
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 3295ef6c140d0f6d3b47ca208ec58eba3086f3e2
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904636"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577699"
 ---
 # <a name="tablecolumn-headerrowrange"></a>TableColumn: HeaderRowRange
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -30,8 +30,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/columns/{id|name}/headerRowRange
-GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/headerRowRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/headerRowRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/headerRowRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/headerRowRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/headerRowRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

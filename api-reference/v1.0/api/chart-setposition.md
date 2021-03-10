@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a98b7e528074fe0ad234b330222ca01f8ce17691
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b528b58986466479c96c6808df69c2e8b328523c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059996"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575613"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
@@ -29,7 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/setPosition
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setPosition
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/setPosition
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

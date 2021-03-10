@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f5761a90cafafc00abb00ec40318a3fac176b5c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a56aec44618ef160853d058263a31a0d335d8442
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051561"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576145"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 
@@ -30,9 +30,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/usedRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/usedRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
+GET /me/drive/items/{id}/workbook/names/{name}/range/usedRange
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/usedRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/usedRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/usedRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/usedRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -106,7 +109,7 @@ Content-length: 169
 }
 ```
 
-Veja um exemplo que especifica o `valuesOnly` parâmetro opcional.
+Aqui está um exemplo especificando o parâmetro `valuesOnly` opcional.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

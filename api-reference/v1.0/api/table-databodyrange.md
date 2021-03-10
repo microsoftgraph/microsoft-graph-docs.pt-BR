@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c1263e79e88cfeffaca12fcfb86c6c446f80f13c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 36a7b3f625ebf5571b55465b179e2549cdea6f5d
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045471"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575949"
 ---
 # <a name="table-databodyrange"></a>Table: DataBodyRange
 
@@ -30,8 +30,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/dataBodyRange
-GET /workbook/worksheets/{id|name}/tables/{id|name}/dataBodyRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/dataBodyRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/dataBodyRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/dataBodyRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/dataBodyRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -1,22 +1,22 @@
 ---
-title: Atualizar sessão
-description: 'Use essa API para atualizar uma sessão de livro de trabalho existente. '
+title: Atualizar Sessão
+description: 'Use essa API para atualizar uma sessão de workbook existente. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 228eb4a122e2c8ab20569047fff811b72a1eac22
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 5e4aaad295abc4ce83b8669f3d4053edafb1ad5d
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292896"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575837"
 ---
-# <a name="refresh-session"></a>Atualizar sessão
+# <a name="refresh-session"></a>Atualizar Sessão
 
 Namespace: microsoft.graph
 
-Use essa API para atualizar uma sessão de livro de trabalho existente. 
+Use essa API para atualizar uma sessão de workbook existente. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,14 +30,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/refreshSession
+POST /me/drive/items/{id}/workbook/refreshSession
+POST /me/drive/root:/{item-path}:/workbook/refreshSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| workbook-session-id | ID da sessão da workbook a ser atualizada |
+| workbook-session-id | ID da sessão de workbook a ser atualizada |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Essa API não exige nenhum corpo de solicitação.

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 46d0bdb44f47ba799f08aa8eee00ccad752d4505
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 2154bbb7a28d34b08ec1e8cbfa0f6ca3fa14f1ef
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516301"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578336"
 ---
 # <a name="tablecolumn-delete"></a>TableColumn: delete
 
@@ -29,8 +29,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /workbook/tables/{id|name}/columns/{id|name}
-DELETE /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
+DELETE /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
+DELETE /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}
+DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
+DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

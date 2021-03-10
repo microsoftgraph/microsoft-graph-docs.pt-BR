@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8c43a64c71fbd21276ac56e8ea273fd37cffb676
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43b04b3404cbebdc893919710f0da3b402bfe8ef
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038372"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577937"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -29,9 +29,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/clear
-POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
-POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
+POST /me/drive/items/{id}/workbook/names/{name}/range/clear
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/clear
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/clear
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

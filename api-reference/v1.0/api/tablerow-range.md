@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3e0ca5a191c3889d784d9c7cb592e50dba5b8c6a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 218233d61ceb79e950fdb3c796ce16afad85e582
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012882"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575083"
 ---
 # <a name="tablerow-range"></a>TableRow: Range
 
@@ -30,8 +30,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/rows/{index}/range
-GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
+GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}/range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

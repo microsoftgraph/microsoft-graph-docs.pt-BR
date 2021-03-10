@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 5ec408c33a318126057b42d2ecc1116d6b13b4ee
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 8db8facb302863ec96107c333b8e17f59f2b27a4
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517062"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573856"
 ---
 # <a name="create-allowedgroup-for-printershare"></a>Criar allowedGroup para printerShare
 Namespace: microsoft.graph
@@ -37,7 +37,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 }
 -->
 ``` http
-POST /print/printers/{printerShareId}/allowedGroups/$ref
+POST /print/printers/{printerId}/shares/{printerShareId}/allowedGroups/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

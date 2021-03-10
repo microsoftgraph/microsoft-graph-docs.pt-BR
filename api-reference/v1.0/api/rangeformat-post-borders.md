@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 740db5b32d091c0b0d08fe71e936eb68a477ec33
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a96efc8519e8e3a2247c06234ff389c818712bd8
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023118"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577209"
 ---
 # <a name="create-rangeborder"></a>Criar RangeBorder
 
@@ -29,9 +29,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/borders
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/borders
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/borders
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/borders
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/borders
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/borders
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -41,11 +44,11 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookRangeBorder](../resources/rangeborder.md) .
+No corpo da solicitação, fornece uma representação JSON [do objeto WorkbookRangeBorder.](../resources/rangeborder.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [WorkbookRangeBorder](../resources/rangeborder.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e o objeto [WorkbookRangeBorder](../resources/rangeborder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -87,7 +90,7 @@ Content-length: 136
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookRangeBorder](../resources/rangeborder.md) .
+No corpo da solicitação, fornece uma representação JSON [do objeto WorkbookRangeBorder.](../resources/rangeborder.md)
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

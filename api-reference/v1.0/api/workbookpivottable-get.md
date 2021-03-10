@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4b8c6bac04e7ca0ae1c280a57f5c49414b0badcf
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 5b8abef9b3ab9843d8de5bf372d1ab7323b76b88
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634962"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578315"
 ---
 # <a name="get-workbookpivottable"></a>Get workbookPivotTable
 
@@ -31,7 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
+GET /me/drive/items/{id}/workbook/worksheets/{id}/pivotTables/{id}
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.

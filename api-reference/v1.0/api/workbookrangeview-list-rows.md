@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1a0c94508b54da03d13c92aa49e84dbc75a016cf
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 6eee10e07a30033100c605b22e24749d000154e7
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634589"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575459"
 ---
 # <a name="list-rangeview-rows"></a>Linhas da lista rangeView
 
@@ -30,7 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/rows
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range(address={address})/visibleView/rows
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address})/visibleView/rows
 
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

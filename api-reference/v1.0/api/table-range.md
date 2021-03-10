@@ -1,37 +1,39 @@
 ---
-title: 'workbooktable: Range'
+title: 'workbookTable: range'
 description: Obtém o objeto de intervalo associado a toda a tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 086ec5dc0ded09aed75ece8285e69d7ba73be806
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 23112ea6e9bd594dc12db2b4e68faf5826587460
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092045"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575081"
 ---
-# <a name="workbooktable-range"></a>workbooktable: Range
+# <a name="workbooktable-range"></a>workbookTable: range
 
 Namespace: microsoft.graph
 
-Obter o objeto de intervalo associado a toda a tabela.
+Obter o objeto range associado à tabela inteira.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/range
-GET /workbook/worksheets/{id|name}/tables/{id|name}/range
+GET /me/drive/items/{id}/workbook/tables/{id|name}/range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -44,7 +46,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/range
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [workbookRange](../resources/range.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [workbookRange](../resources/range.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

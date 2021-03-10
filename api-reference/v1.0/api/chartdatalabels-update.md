@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: eb45ef827102cea2a43435af4d7f5b7925843729
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 91efcaf38191b4f975ce27d1219fc3ba7c862b91
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059870"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573905"
 ---
 # <a name="update-chartdatalabels"></a>Atualizar chartdatalabels
 
@@ -29,7 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/dataLabels
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
@@ -42,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|position|string|Valor de DataLabelPosition que representa a posição do rótulo de dados. Os valores possíveis são: `None` , `Center` , `InsideEnd` , `InsideBase` , `OutsideEnd` , `Left` , `Right` , `Top` , `Bottom` , `BestFit` , `Callout` .|
+|position|string|Valor de DataLabelPosition que representa a posição do rótulo de dados. Os valores possíveis são: `None` , , , , , , , , , `Center` , , , `InsideEnd` `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom` `BestFit` `Callout` .|
 |separator|string|Cadeia de caracteres que representa o separador usado para os rótulos de dados em um gráfico.|
 |showBubbleSize|booliano|Valor booliano que determina se o tamanho da bolha do rótulo de dados fica visível ou não.|
 |showCategoryName|booliano|Valor booliano que determina se o nome da categoria do rótulo de dados fica visível ou não.|
@@ -53,7 +54,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [WorkbookChartDataLabels](../resources/chartdatalabels.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` um [objeto WorkbookChartDataLabels](../resources/chartdatalabels.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

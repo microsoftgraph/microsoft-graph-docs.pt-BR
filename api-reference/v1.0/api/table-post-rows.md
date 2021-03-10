@@ -1,22 +1,22 @@
 ---
 title: Criar TableRow
-description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. Adicionar uma linha por vez pode levar à degradação do desempenho. A abordagem recomendada seria reunir as linhas em lote em uma única chamada em vez de fazer a inserção de uma única linha. Para melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma única operação de aplicação de linhas. Experimente o número de linhas para determinar o número ideal de linhas a ser usado em uma única chamada à API. '
+description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar dados de várias linhas usando essa API. Adicionar uma linha por vez pode levar à degradação do desempenho. A abordagem recomendada seria reunir as linhas em lotes em uma única chamada em vez de fazer a inserção de linha única. Para melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute a operação de adicionar linhas simples. Experimente o número de linhas para determinar o número ideal de linhas a ser usado em uma única chamada de API. '
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 69f80f8b0391102d6501d2481c3377d899003e6b
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 1751b0cb7714cdd867306fb759f646b0d022cd34
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292298"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577174"
 ---
 # <a name="create-tablerow"></a>Criar TableRow
 
 Namespace: microsoft.graph
 
-Adiciona linhas ao final da tabela. Observe que a API pode aceitar vários dados de linhas usando essa API. Adicionar uma linha por vez pode levar à degradação do desempenho. A abordagem recomendada seria reunir as linhas em lote em uma única chamada em vez de fazer a inserção de uma única linha. Para melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute uma única operação de aplicação de linhas. Experimente o número de linhas para determinar o número ideal de linhas a ser usado em uma única chamada à API. 
+Adiciona linhas ao final da tabela. Observe que a API pode aceitar dados de várias linhas usando essa API. Adicionar uma linha por vez pode levar à degradação do desempenho. A abordagem recomendada seria reunir as linhas em lotes em uma única chamada em vez de fazer a inserção de linha única. Para melhores resultados, colete as linhas a serem inseridas no lado do aplicativo e execute a operação de adicionar linhas simples. Experimente o número de linhas para determinar o número ideal de linhas a ser usado em uma única chamada de API. 
 
 ## <a name="error-handling"></a>Tratamento de erros
 
@@ -34,8 +34,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows/add
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
+POST /me/drive/items/{id}/workbook/tables/{id|name}/rows/add
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/add
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -50,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |index|number|Opcional. Especifica a posição relativa da nova linha. Se for nulo, a adição ocorre no final. Todas as linhas abaixo da linha inserida serão deslocadas para baixo. Indexado com zero.|
-|values|Json|Uma matriz bidimensional de valores não formatados das linhas da tabela (booliana, cadeia de caracteres ou número).|
+|values|Json|Uma matriz bidimensional de valores não formatados das linhas de tabela (booleano ou cadeia de caracteres ou número).|
 
 ## <a name="response"></a>Resposta
 

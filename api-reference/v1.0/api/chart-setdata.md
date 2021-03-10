@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c23490937a46f64a4b9c5c1f07a219096f785bbb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d944b58d46a6a5d1ec32b02b052b2f9db80e5d3f
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089263"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575614"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -22,14 +22,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/setData
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setData
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/setData
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

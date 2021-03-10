@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a9d5f4c1d36a8ec98dcca8b501f09775a8906991
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: f50641afa7d66989ed5438f7ba823a646b1b8ebe
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634979"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575592"
 ---
 # <a name="get-formatprotection"></a>Get FormatProtection
 
@@ -29,9 +29,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/format/protection
-GET /workbook/worksheets/{id|name}/range(<address>)/format/protection
-GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
+GET /me/drive/items/{id}/workbook/names/{name}/range/format/protection
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/protection
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(<address>)/format/protection
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(<address>)/format/protection
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/protection
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.

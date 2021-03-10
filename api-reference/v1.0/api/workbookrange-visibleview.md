@@ -1,16 +1,16 @@
 ---
 title: 'workbookRange: visibleView'
-description: Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
+description: Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira Permissões.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 84d9d5b4135aa69bd8271087a3ad6de68978d68e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b613f66e4da8b27753beca46580e866a432734ee
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965747"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577475"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 
@@ -29,7 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range(address={address})/visibleView
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address})/visibleView
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 984e23670a25f5c8b21b5463816ad2347d4fce2f
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 2e7b7a6985eb653cf9ffec7ec1fd71dfb22e023e
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516224"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50578042"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
@@ -29,7 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /workbook/worksheets/{id|name}/charts/{name}
+DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
+DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

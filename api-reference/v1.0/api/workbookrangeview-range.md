@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 980209466060c9b65263fa42b312fc760fa4016e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 48cbd8bed3fd2818366c2560a0064d302adb8e0b
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059233"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575439"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: intervalo
 
-Namespace: Microsoft. Graph retorna o intervalo associado ao recurso rangeView.
+Namespace: microsoft.graph Retornar o intervalo associado ao recurso rangeView.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,7 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/range
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range(address={address})/visibleView/range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address})/visibleView/range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

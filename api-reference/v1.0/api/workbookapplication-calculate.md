@@ -1,18 +1,18 @@
 ---
-title: 'workbookApplication: calcular'
+title: 'workbookApplication: calculate'
 description: Recalcula todas as pastas de trabalho abertas no Excel no momento.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5aec6dbd7ca54182ed272a0636449afcf18f6808
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 75a3888def2b292ffe4aed1aa178cd4c8709b4e3
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970814"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577685"
 ---
-# <a name="workbookapplication-calculate"></a>workbookApplication: calcular
+# <a name="workbookapplication-calculate"></a>workbookApplication: calculate
 
 Namespace: microsoft.graph
 
@@ -30,7 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/application/calculate
+POST /me/drive/items/{id}/workbook/application/calculate
+POST /me/drive/root:/{item-path}:/workbook/application/calculate
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -44,7 +45,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Calculador de cálculo|string|Especifica o tipo de cálculo a usar.  Os valores possíveis são: `Recalculate`, `Full`, `FullRebuild`.|
+|calculationType|string|Especifica o tipo de cálculo a usar.  Os valores possíveis são: `Recalculate`, `Full`, `FullRebuild`.|
 
 ## <a name="response"></a>Resposta
 

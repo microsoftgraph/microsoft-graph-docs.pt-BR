@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 62666c5b5cb9754c7cfdbc28e8e36c25ad86df2a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96d774a111d8a23f57eb3a1667fbaf8d725291a4
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051680"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573684"
 ---
 # <a name="range-insert"></a>Range: insert
 
@@ -29,9 +29,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/insert
-POST /workbook/worksheets/{id|name}/range(address='<address>')/insert
-POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
+POST /me/drive/items/{id}/workbook/names/{name}/range/insert
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/insert
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/insert
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/insert
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/insert
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: e20cf77e307a1ea47212f8a40fd37ccbf5cfc07f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 2af12fcae9b26ca3aff994a1a89ddc089ee76fa8
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402776"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50576754"
 ---
 # <a name="get-icon"></a>Get Icon
 
@@ -29,8 +29,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/sort/fields/icon
-GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+GET /me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/fields/icon
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.

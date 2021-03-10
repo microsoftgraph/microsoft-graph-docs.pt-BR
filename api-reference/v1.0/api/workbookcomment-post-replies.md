@@ -1,22 +1,22 @@
 ---
 title: Criar workbookCommentReply
-description: Use esta API para criar um novo workbookCommentReply.
+description: Use essa API para criar uma nova workbookCommentReply.
 localization_priority: Normal
 author: grangeryy
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 80054510b1bb64ab0bb069ce7b0d5b85512f9ca6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b6a17c5dd650691114e6f6dfba43e70c5ed557c
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970758"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573639"
 ---
 # <a name="create-workbookcommentreply"></a>Criar workbookCommentReply
 
 Namespace: microsoft.graph
 
-Criar um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) .
+Crie um novo [objeto workbookCommentReply.](../resources/workbookcommentreply.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,7 +33,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /workbook/comments/{id}/replies
+POST /me/drive/items/{id}/workbook/comments/{id}/replies
+POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -44,11 +45,11 @@ POST /workbook/comments/{id}/replies
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [workbookCommentReply](../resources/workbookcommentreply.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto workbookCommentReply.](../resources/workbookcommentreply.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um novo objeto `201 Created` [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

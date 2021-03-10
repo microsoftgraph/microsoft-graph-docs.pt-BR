@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 544c14d4aa79f89ebc8ebb1510f9440b9b39d19a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43f7b9f1c0f7e8885f871b7e760a78e866a4cf0f
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038624"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50573695"
 ---
 # <a name="update-formatprotection"></a>Atualizar formatprotection
 
@@ -29,9 +29,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range/format/protection
-PATCH /workbook/worksheets/{id|name}/range(<address>)/format/protection
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
+PATCH /me/drive/items/{id}/workbook/names/{name}/range/format/protection
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/protection
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(<address>)/format/protection
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(<address>)/format/protection
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/protection
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|

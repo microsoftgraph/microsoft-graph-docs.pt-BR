@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d33ff0efb32a8a6fd5ce70def4ae9ce736033630
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 32d978b2cf958916fb1dd1e2c35ede4980639012
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091989"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50575515"
 ---
 # <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
 
@@ -22,16 +22,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
-GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/dataBodyRange
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/dataBodyRange
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/dataBodyRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

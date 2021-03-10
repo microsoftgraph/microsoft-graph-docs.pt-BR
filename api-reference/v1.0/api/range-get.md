@@ -5,32 +5,34 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 324ed54563d09851ad086c9b69d4acaff0580d9b
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 01df07669344787dab4561312dd5026a0dadfb43
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460569"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577944"
 ---
 # <a name="get-range"></a>Obter intervalo
 
 Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos do objeto de intervalo.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/range(address='<address>')
-GET /workbook/tables/{id|name}/columns/{id|name}/range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.

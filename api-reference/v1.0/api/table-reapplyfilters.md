@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6af8dd5017d46f5fddc6d9648208bbfcb7be28ce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b070a1f355273eaccc42d06eb29c64f62e7de6a
+ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092038"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50577160"
 ---
 # <a name="table-reapplyfilters"></a>Table: reapplyFilters
 
@@ -22,15 +22,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/reapplyFilters
-POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
+POST /me/drive/items/{id}/workbook/tables/{id|name}/reapplyFilters
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/reapplyFilters
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
