@@ -1,41 +1,41 @@
 ---
-title: tipo de recurso expirationPattern
-description: O padrão de validade em um agendamento de solicitação pode ser incluído em uma solicitação de atribuição de pacote do Access e está presente em uma atribuição de pacote do Access.
+title: Tipo de recurso expirationPattern
+description: O padrão de expiração em um cronograma de solicitação pode ser incluído em uma solicitação de atribuição de pacote de acesso e está presente em uma atribuição de pacote de acesso.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5a6ae13816c3b59905ee66ad5d2d18f6a71270bd
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: b6587d8ba410ba0240c0fd75b7c8ec37105061d8
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777610"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721289"
 ---
-# <a name="expirationpattern-resource-type"></a>tipo de recurso expirationPattern
+# <a name="expirationpattern-resource-type"></a>Tipo de recurso expirationPattern
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solicitação de atribuição de pacote de acesso é criada por um usuário que deseja obter uma atribuição de pacote do Access. Essa solicitação pode incluir um cronograma para quando o usuário quiser ter uma atribuição.  Uma atribuição de pacote do Access que resulta de tal solicitação também tem um cronograma.  O campo de expiração de um [requestSchedule](requestschedule.md) indica quando a atribuição de pacote de acesso deve expirar.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma solicitação de atribuição de pacote de acesso é criada por um usuário que deseja obter uma atribuição de pacote de acesso. Essa solicitação pode incluir um cronograma para quando o usuário gostaria de ter uma atribuição.  Uma atribuição de pacote de acesso que resulta de tal solicitação também tem um cronograma.  O campo de expiração de [um requestSchedule](requestschedule.md) indica quando a atribuição do pacote de acesso deve expirar.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|endDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|duração|Duração|A duração de acesso desejada do solicitante. Se especificado em uma solicitação, EndDateTime não deve estar presente.|
-|type|expirationPatternType|O tipo de padrão de expiração desejado do solicitante.|
+|endDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|duração|Duration|A duração desejada do acesso do solicitante. Se especificado em uma solicitação, endDateTime não deve estar presente.|
+|tipo|expirationPatternType|O tipo de padrão de expiração desejado do solicitante.|
 
-### <a name="expirationpatterntype-values"></a>valores de expirationPatternType
+### <a name="expirationpatterntype-values"></a>valores expirationPatternType
 
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
-|Não especificado|,0|Nenhum cronograma de expiração especificado.|
-|noexpiração|1 |O solicitante não quis que o acesso expire.|
-|afterDateTime|2 |O Access expirará após uma data e hora especificadas.|
-|afterDuration|3 |O Access expirará após uma determinada duração relativa ao acesso concedido.|
+|notSpecified|0|Nenhum cronograma de expiração foi especificado.|
+|noExpiration|1|O solicitante não desejou que o acesso expirar.|
+|afterDateTime|2 |O acesso expirará após uma data e hora especificadas.|
+|afterDuration|3 |O acesso expirará após uma duração especificada relativa ao acesso que está sendo concedido.|
 
 ## <a name="json-representation"></a>Representação JSON
 

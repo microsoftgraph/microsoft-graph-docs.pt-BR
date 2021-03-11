@@ -4,12 +4,12 @@ description: 'Os lotes JSON permitem otimizar seu aplicativo combinando várias 
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5737d57ef9256333c6485abe4da400be9e7ec745
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 4e1ad5734d0fefe2cdb7634e461ee9f297aae93e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643985"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721569"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes
 
@@ -131,8 +131,6 @@ O formato de resposta para solicitações de lote JSON é semelhante ao formato 
 * Em vez de `method` e `url`, as respostas individuais têm uma propriedade `status`. O valor de `status` é um número que representa o código de status HTTP.
 
 O código de status em uma resposta de lote geralmente é `200` ou `400`. Se a solicitação em lotes em si for mal formada, o código de status será `400`. Se a solicitação de lote for analisável, o código de status será `200`. Um código de status `200` na resposta em lote não indica que as solicitações individuais no lote são bem-sucedidas. É por isso que cada resposta individual na propriedade `responses` tem um código de status.
-
-Além da propriedade `responses`, pode haver uma propriedade `nextLink` na resposta em lotes. Isso permite que o Microsoft Graph retorne uma resposta em lotes assim que qualquer uma das solicitações individuais for concluída. Para garantir que todas as respostas individuais foram recebidas, continue a acompanhar os `nextLink` enquanto existirem.
 
 ## <a name="sequencing-requests-with-the-dependson-property"></a>Solicitações de sequenciamento com a propriedade dependsOn
 

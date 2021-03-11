@@ -2,15 +2,15 @@
 title: 'usuário: getMemberGroups'
 description: Retorne todos os grupos dos quais o usuário é membro. A verificação foi transitiva, ao contrário de leitura a
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 76b5cb609ca5661e0d9592897723e1fccaa8a0e8
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 1d2819f6475df39b25a27ce5523d201eab162939
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177253"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720078"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | User.ReadBasic.All, User.Read, User.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | Usuário. ReadBasic. Todo usuário. Leia, usuário. Ler. Tudo, diretório. Ler. Tudo, diretório. Ler escrever. Tudo, diretório. AccessAsUser. Todos |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                                                                       |
-| Aplicativo                            | User.Read.All, Directory.Read.All, Directory.ReadWrite.All            |
+| Aplicativo                            | Usuário. Ler. Tudo, diretório. Ler. Tudo, diretório. Ler escrever. Todos            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

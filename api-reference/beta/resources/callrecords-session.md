@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 263ad4d249535fc9255507e398b29d69b34bbb7d
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 48983f3a6c4adf12184802722ba2607780c7b531
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155570"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720218"
 ---
 # <a name="session-resource-type"></a>tipo de recurso de sessão
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma User-User comunicação ou uma User-Meeting no caso de uma chamada de conferência.
+Representa uma User-User ou uma comunicação User-Meeting no caso de uma chamada de conferência.
 
 ## <a name="methods"></a>Métodos
 
@@ -31,13 +31,13 @@ Representa uma User-User comunicação ou uma User-Meeting no caso de uma chamad
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|string|Identificador exclusivo da sessão. Somente leitura.|
+|id|cadeia de caracteres|Identificador exclusivo da sessão. Somente leitura.|
 |chamador|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Ponto de extremidade que iniciou a sessão.|
-|destinatário da chamada|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Ponto de extremidade que atendeu a sessão.|
+|callee|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Ponto de extremidade que atendeu a sessão.|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Informações de falha associadas à sessão se a sessão falhou.|
 |modalidades|coleção microsoft.graph.callRecords.modality|Lista de modalidades presentes na sessão. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
-|startDateTime|DateTimeOffset|FIME UTC quando o primeiro usuário ingressou na sessão. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|endDateTime|DateTimeOffset|Horário UTC quando o último usuário saiu da sessão. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|FIME UTC quando o primeiro usuário ingressou na sessão. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|endDateTime|DateTimeOffset|Hora UTC quando o último usuário saiu da sessão. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 
 
 ## <a name="relationships"></a>Relações

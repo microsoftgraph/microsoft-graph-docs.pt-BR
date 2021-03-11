@@ -1,24 +1,24 @@
 ---
-title: tipo userIdentity
+title: Tipo userIdentity
 description: Representa uma identidade de usuário do Azure AD para um revistor de uma revisão de acesso.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 5451216ea41e6de286b5ecc0de2bed1b7ce7c8cf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9379955a4356ff9c969e4813fbf9b812316aa821
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132969"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719854"
 ---
-# <a name="useridentity-type"></a>tipo userIdentity
+# <a name="useridentity-type"></a>Tipo userIdentity
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Para as revisões de acesso do Azure AD, esse tipo representa uma identidade de usuário do Azure AD para um criador ou [revisador](accessreviews-root.md)de uma revisão de acesso.
+Para as análises de acesso do Azure AD, esse tipo representa uma identidade de usuário do Azure AD para um criador ou [revistor](accessreviews-root.md)de uma revisão de acesso.
 No contexto de um log de auditoria do Azure AD, isso representa as informações do usuário que iniciaram ou foram afetadas por uma atividade de auditoria.
 
 Esse tipo herda da [identidade](identity.md) e tem uma propriedade adicional, o nome principal do usuário.
@@ -48,9 +48,9 @@ Nenhum
 
 | Método                                                                | Tipo de retorno                                | Descrição                             |
 |:----------------------------------------------------------------------|:-------------------------------------------|:----------------------------------------|
-| [Obter os revisores do accessReview](../api/accessreview-listreviewers.md)    | [coleção userIdentity](useridentity.md) | Obter os revisores de um accessReview.   |
+| [Obter revisores do accessReview](../api/accessreview-listreviewers.md)    | [Coleção userIdentity](useridentity.md) | Obter os revisores de um accessReview.   |
 | [Adicionar o revisor accessReview](../api/accessreview-addreviewer.md)       | Nenhum.                                      | Adicione um revisor a um accessReview.      |
-| [Remover o revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum.                                      | Remover um revisor de um accessReview. |
+| [Remover o revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum.                                      | Remova um revisor de um accessReview. |
 
 ## <a name="json-representation"></a>Representação JSON
 

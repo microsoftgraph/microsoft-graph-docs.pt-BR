@@ -2,15 +2,15 @@
 title: Listar gerente
 description: Obtenha o gerente do usuário. Retorna o usuário ou contato atribuído como gerente do usuário.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1f04dc23b777906a3ee36bbcefea035e1e8d2422
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 895e14894e6fed97031911744288c3e78dac8b36
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524421"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721198"
 ---
 # <a name="list-manager"></a>Listar gerente
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retorna o usuário ou o contato organizacional atribuído como gerente do usuário. Opcionalmente, você pode expandir a cadeia do gerente para o nó raiz.
+Retorna o usuário ou o contato organizacional atribuído como gerente do usuário. Opcionalmente, você pode expandir a cadeia do gerente ao nó raiz.
 
 ## <a name="permissions"></a>Permissões
 
@@ -52,21 +52,21 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.  
 
-Se sua solicitação incluir o `$expand=manager($levels=n)` parâmetro para obter a cadeia do gerente, você também deverá incluir o seguinte:
+Se sua solicitação incluir o parâmetro `$expand=manager($levels=n)` para obter a cadeia do gerente, você também deverá incluir o seguinte:
 
 - `$count=true` parâmetro de cadeia de caracteres de consulta
 - `ConsistencyLevel=eventual` cabeçalho da solicitação
 
 >**Observação:** o `n` valor de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.  
-> Quando o `$level` parâmetro não é especificado, somente o gerente imediato é retornado.  
-> Você pode especificar `$select` dentro `$expand` para selecionar as propriedades do gerente individual: `$expand=manager($levels=max;$select=id,displayName)`
+> Quando o `$level` parâmetro não for especificado, apenas o gerente imediato será retornado.  
+> Você pode especificar `$select` dentro `$expand` para selecionar as propriedades dos gerentes individuais: `$expand=manager($levels=max;$select=id,displayName)`
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| ConsistencyLevel | eventualmente. Obrigatório quando a solicitação inclui o `$expand=manager($levels=max)` parâmetro. |
+| ConsistencyLevel | eventualmente. Obrigatório quando a solicitação inclui o parâmetro `$expand=manager($levels=max)`. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -78,7 +78,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objet
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-manager"></a>Exemplo 1: obter gerente
+### <a name="example-1-get-manager"></a>Exemplo 1: obtenha o gerente
 
 O exemplo a seguir mostra uma solicitação para obter o gerente.
 
@@ -134,9 +134,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>Exemplo 2: obter cadeia de gerentes até o nível raiz
+### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>Exemplo 2: obtenha a cadeia de gerentes ao nível raiz
 
-O exemplo a seguir mostra uma solicitação para obter a cadeia de gerentes até o nível raiz.
+O exemplo a seguir mostra uma solicitação para obter a cadeia de gerentes ao nível raiz.
 
 #### <a name="request"></a>Solicitação
 
@@ -151,7 +151,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. Os gerenciadores transitivos são exibidos hierarquicamente.
+Este é um exemplo de resposta. Os gerentes transitivos são exibidos hierarquicamente.
 
 >**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 <!-- {

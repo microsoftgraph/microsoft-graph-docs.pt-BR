@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9eb488b931cb5ff89796526f1285fa5454a5bae8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5862cec0cfb7a78a9e7d48fa08998327c7b7a04a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437685"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720099"
 ---
 # <a name="list-appliesto"></a>Lista appliesTo
 
@@ -67,7 +67,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/claimsMappingPolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/claimsMappingPolicies/{id}/appliesTo
 ```
 
 ### <a name="response"></a>Resposta

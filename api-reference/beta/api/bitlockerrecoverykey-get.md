@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 97af35852d19211bde53717b12fcdff2f1981cb8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 49c79732c2953f3e6627061b621a99c00315a4ed
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437989"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719952"
 ---
 # <a name="get-bitlockerrecoverykey"></a>Obter bitlockerRecoveryKey
 Namespace: microsoft.graph
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 >**Observação:** Para permissões delegadas permitirem que os aplicativos recebam recursos bitLockerRecoveryKey em nome do usuário conectado, o administrador de locatários deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual a chave BitLocker foi originalmente backup:  
 * Administrador global
 * Administrador de dispositivos de nuvem
-* Administrador do Helpdesk
+* Administrador da assistência técnica
 * Administrador de Serviço do Intune
 * Administrador de segurança
 * Leitor de segurança
@@ -46,7 +46,7 @@ Para obter a chave BitLocker especificada sem retornar a **propriedade key:**
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
+GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 ```
 
 Para obter a chave BitLocker especificada, incluindo sua **propriedade chave:**
@@ -55,7 +55,7 @@ Para obter a chave BitLocker especificada, incluindo sua **propriedade chave:**
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
+GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -91,7 +91,7 @@ Este é um exemplo de solicitação.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -154,7 +154,7 @@ Este é um exemplo de solicitação.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]

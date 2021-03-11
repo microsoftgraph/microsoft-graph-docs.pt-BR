@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: dd3e96e035c0097830e7ce797da0fa91ea28aac5
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 475a258021c5769d1003efbbd26f16d793887471
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883199"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720967"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 
@@ -39,21 +39,21 @@ O recurso **plannerTask** representa uma tarefa do Planner no Microsoft 365. Uma
 |bucketId|String|ID do bucket ao qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço. |
 |checklistItemCount|Int32|Número de itens de lista de verificação que estão presentes na tarefa.|
 |completedBy|[identitySet](identityset.md)|Identidade do usuário que concluiu a tarefa.|
-|completedDateTime|DateTimeOffset|Somente leitura. A data e a hora na qual o `'percentComplete'` da tarefa está definido como `'100'`. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|completedDateTime|DateTimeOffset|Somente leitura. Data e hora em que `'percentComplete'` a da tarefa é definida como `'100'` . O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |conversationThreadId|String|Identificação do thread da conversa na tarefa. Essa é a identificação do objeto do thread da conversa criado no grupo.|
 |createdBy|[identitySet](identityset.md)|Identidade do usuário que criou a tarefa.|
-|createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que a tarefa é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|Somente leitura. Data e hora em que a tarefa é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|Contém informações sobre a origem da tarefa.|
-|dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|dueDateTime|DateTimeOffset|Data e hora em que a tarefa é devida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |hasDescription|Booliano|Somente leitura. O valor é `true` se o objeto de detalhes da tarefa tem uma descrição não vazia e `false` caso contrário.|
 |id|String|Somente leitura. A ID da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
-|prioridade|Int32|Prioridade da tarefa. O intervalo válido de valores é entre e (inclusive), com o valor crescente sendo menor prioridade ( tem a prioridade mais alta e `0` tem a prioridade mais `10` `0` `10` baixa).  Atualmente, o Planner interpreta valores e como "urgentes" e como "importantes", e como "médio" e , e `0` `1` como `2` `3` `4` `5` `6` `7` `8` `9` `10` "baixo".  Atualmente, o Planner define o valor `1` para "urgente", `3` para "importante", `5` para "médio" e `9` "baixo".|
+|prioridade|Int32|Prioridade da tarefa. O intervalo válido de valores é `0` entre e `10` (inclusivo), com o valor crescente sendo a prioridade mais baixa ( tem a prioridade mais alta `0` e tem a prioridade mais `10` baixa).  Atualmente, o Planner interpreta valores e `0` `1` como "urgentes", e como `2` `3` `4` "importantes", `5` , e como `6` `7` "médio" `8` e , e como `9` `10` "baixo".  Atualmente, o Planner define o valor `1` para "urgente", `3` para "importante", `5` para "médio" e `9` para "baixo".|
 |planId|String|ID do plano ao qual a tarefa pertence.|
 |previewType|String|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Número de referências externas existentes na tarefa.|
-|startDateTime|DateTimeOffset|A data e a hora que a tarefa começa. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|Data e hora em que a tarefa é iniciada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |title|String|Título da tarefa.|
 
 ## <a name="relationships"></a>Relações

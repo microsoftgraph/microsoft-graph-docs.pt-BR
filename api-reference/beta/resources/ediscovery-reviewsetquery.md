@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: f9c535cb1adbb62f33aee1324b6dc06a910f4b46
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8eb674ed70eac47d4e29d127ebfc9f48b7b988a1
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445897"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720314"
 ---
 # <a name="reviewsetquery-resource-type"></a>Tipo de recurso reviewSetQuery
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Representa uma consulta de conjunto de revisão, que é usada para consultar e excluir dados armazenados em uma revisão de descoberta [de eDiscoverySet](ediscovery-reviewset.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -36,12 +36,12 @@ Representa uma consulta de conjunto de revisão, que é usada para consultar e e
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 | createdBy | [identitySet](/graph/api/resources/identityset) | O usuário que criou a consulta. |
-| createdDateTime |DateTimeOffset| A hora e a data em que a consulta foi criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-| displayName | String | O nome da consulta.|
-| id |String| O identificador exclusivo da consulta. Somente leitura.|
+| createdDateTime |DateTimeOffset| A hora e a data em que a consulta foi criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+| displayName | Cadeia de caracteres | O nome da consulta.|
+| id |Cadeia de caracteres| O identificador exclusivo da consulta. Somente leitura.|
 | lastModifiedBy | [identitySet](/graph/api/resources/identityset) | O usuário que modificou a consulta pela última vez. |
-| lastModifiedDateTime |DateTimeOffset | A data e a hora em que a consulta foi modificada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-| consulta | String | A cadeia de caracteres de consulta na consulta KQL (Keyword Query Language). Para obter detalhes, consulte [Campos de metadados de documento em Descoberta Avançada em eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).  Este campo mapeia diretamente para a condição de palavras-chave.  Você pode refinar pesquisas usando campos listados *no* nome de campo pesquisável emparelhados com valores; por exemplo, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*. |
+| lastModifiedDateTime |DateTimeOffset | A data e a hora em que a consulta foi modificada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+| consulta | Cadeia de caracteres | A cadeia de caracteres de consulta na consulta KQL (Keyword Query Language). Para obter detalhes, consulte [Campos de metadados de documento em Descoberta Avançada em eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).  Este campo mapeia diretamente para a condição de palavras-chave.  Você pode refinar pesquisas usando campos listados *no* nome de campo pesquisável emparelhados com valores; por exemplo, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*. |
 
 ## <a name="relationships"></a>Relações
 

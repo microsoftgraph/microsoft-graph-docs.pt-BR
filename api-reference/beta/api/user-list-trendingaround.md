@@ -1,26 +1,26 @@
 ---
-title: Listar trendingAround
-description: Informações calculadas que retornam a lista de itens que se referem a um usuário.
-author: krbain
+title: Listar tendênciasAround
+description: Insight calculado que retorna a lista de itens que estão na tendência em torno de um usuário.
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ede5f41f57c96aa490ae85a287568d6a5074556d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 139416e3b21166f50e2f9fed529a7efe6b4dbd3e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405082"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720673"
 ---
-# <a name="list-trendingaround"></a>Listar trendingAround
+# <a name="list-trendingaround"></a>Listar tendênciasAround
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informações calculadas que retornam a lista de itens que se referem a um usuário.
+Insight calculado que retorna a lista de itens que estão na tendência em torno de um usuário.
 
-**Observação:** Essa API será preterida e substituída pela [API de tendência](../resources/insights-trending.md).
+**Observação:** Essa API será preterida e substituída pela [API de Tendência.](../resources/insights-trending.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta de OK 200 e uma coleção de objetos [driveItem](../resources/driveitem.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta 200 OK e uma coleção de [objetos driveItem](../resources/driveitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

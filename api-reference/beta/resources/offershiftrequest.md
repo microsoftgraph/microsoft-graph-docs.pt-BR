@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d1b26d7801a3eb4570104ff68b9037fd9c553a68
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 0f80e8578422aa00d6af1d2df22a0dfb7472c8c8
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156705"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721478"
 ---
 # <a name="offershiftrequest-resource-type"></a>Tipo de recurso offerShiftRequest
 
@@ -25,19 +25,19 @@ Representa o tipo de solicitação de turno para oferecer uma mudança para outr
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Criar](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Crie uma instância de um objeto offerShiftRequest. |
-| [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e os relacionamentos do objeto offerShiftRequest. |
-| [Lista](../api/offershiftrequest-list.md) | Coleção de [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e as relações de todos os objetos offerShiftRequest em uma equipe. |
-|[Aprovar](../api/offershiftrequest-approve.md)|Nenhum(a)|Aprove uma ofertaShiftRequest. |
-|[Recusar](../api/offershiftrequest-decline.md)|Nenhum(a)|Recusar uma ofertaShiftRequest. |
+| [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Ler propriedades e relações do objeto offerShiftRequest. |
+| [List](../api/offershiftrequest-list.md) | Coleção [of offerShiftRequest](offershiftrequest.md) | Leia propriedades e relações de todos os objetos offerShiftRequest em uma equipe. |
+|[Aprovar](../api/offershiftrequest-approve.md)|Nenhum(a)|Aprovar uma ofertaShiftRequest. |
+|[Declínio](../api/offershiftrequest-decline.md)|Nenhum(a)|Recusar uma ofertaShiftRequest. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|recipientActionDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|recipientActionMessage|String| Mensagem personalizada enviada pelo destinatário da solicitação de turno de oferta. |
-|recipientUserId|String| ID de usuário do destinatário da solicitação de mudança de oferta.|
-|senderShiftId|String| ID de usuário do remetente da solicitação de mudança de oferta.|
+|recipientActionDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|recipientActionMessage|Cadeia de caracteres| Mensagem personalizada enviada pelo destinatário da solicitação de turno de oferta. |
+|recipientUserId|Cadeia de caracteres| ID do usuário do destinatário da solicitação de turno de oferta.|
+|senderShiftId|Cadeia de caracteres| ID do usuário do remetente da solicitação de turno de oferta.|
 
 ## <a name="relationships"></a>Relações
 

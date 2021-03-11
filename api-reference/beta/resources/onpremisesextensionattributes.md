@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso onPremisesExtensionAttributes
-description: A propriedade **onpremisesextensionattributes à** da entidade de usuário contém quinze Propriedades de atributos de extensões personalizadas.
+description: A **propriedade onPremisesExtensionAttributes** da entidade do usuário contém quinze propriedades de atributo de extensão personalizadas.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: users
-author: krbain
-ms.openlocfilehash: 2729d6d624f1bde304425229ccf4ae7df8ddf781
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: jpettere
+ms.openlocfilehash: 95d777140210070471c9578399e26e0eda3620d7
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052584"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720582"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Tipo de recurso onPremisesExtensionAttributes
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A propriedade **onpremisesextensionattributes à** da entidade de [usuário](user.md) contém quinze Propriedades de atributos de extensões personalizadas. Para um usuário do **onPremisesSyncEnabled** , a fonte de autoridade desse conjunto de propriedades é o Active Directory local que é sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definidas durante a criação ou atualização.
+A **propriedade onPremisesExtensionAttributes** da entidade do usuário contém quinze propriedades de atributo de extensão personalizadas. [](user.md) Para um usuário **onPremisesSyncEnabled,** a fonte de autoridade para esse conjunto de propriedades é o Active Directory local que é sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definidas durante a criação ou atualização.
 
 > **Observação:** Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15.
 
@@ -39,8 +39,8 @@ A propriedade **onpremisesextensionattributes à** da entidade de [usuário](use
 |extensionAttribute11|Cadeia de caracteres| Décimo primeiro atributo de extensão personalizável. |
 |extensionAttribute12|Cadeia de caracteres| Décimo segundo atributo de extensão personalizável. |
 |extensionAttribute13|Cadeia de caracteres| Décimo terceiro atributo de extensão personalizável. |
-|extensionAttribute14|Cadeia de caracteres| Atributo de extensão personalizável décimo quarto. |
-|extensionAttribute15|Cadeia de caracteres| Atributo de extensão personalizável décimo quinto. |
+|extensionAttribute14|Cadeia de caracteres| Décimo quarto atributo de extensão personalizável. |
+|extensionAttribute15|Cadeia de caracteres| Décimo quinto atributo de extensão personalizável. |
 
 ## <a name="json-representation"></a>Representação JSON
 

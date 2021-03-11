@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso licenseDetails
+title: Tipo de recurso licenseDetails
 description: Contém informações sobre uma licença atribuída a um usuário.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: krbain
-ms.openlocfilehash: 5236a73697ea6969698fa0cdb6a8368188d0271c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: jpettere
+ms.openlocfilehash: 7a00c1aa5de5684c71a1d83f00b303ada6f54056
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029194"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720519"
 ---
-# <a name="licensedetails-resource-type"></a>tipo de recurso licenseDetails
+# <a name="licensedetails-resource-type"></a>Tipo de recurso licenseDetails
 
 Namespace: microsoft.graph
 
@@ -31,9 +31,9 @@ Contém informações sobre uma licença atribuída a um usuário.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| O identificador exclusivo do objeto de detalhes da licença. Somente leitura, chave, não anulável |
-|onplans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos de serviço atribuídos com a licença. Somente leitura, não nulo |
-|skuId|Guid| Identificador exclusivo (GUID) do serviço SKU. Igual à propriedade skuId no objeto [SubscribedSku](subscribedsku.md) relacionado. Somente leitura |
+|id|Cadeia de caracteres| O identificador exclusivo do objeto de detalhes da licença. Somente leitura, Chave, Não anulada |
+|servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos de serviço atribuídos à licença. Somente leitura, Não anulada |
+|skuId|Guid| Identificador exclusivo (GUID) para a SKU de serviço. Igual à propriedade skuId no objeto [SubscribedSku](subscribedsku.md) relacionado. Somente leitura |
 |skuPartNumber|Cadeia de caracteres| Nome de exibição SKU exclusivo. Igual ao skuPartNumber no objeto [SubscribedSku](subscribedsku.md) relacionado; por exemplo: "AAD_Premium". Somente leitura |
 
 ## <a name="relationships"></a>Relações

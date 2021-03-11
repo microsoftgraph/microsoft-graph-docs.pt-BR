@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: db86b22f61b7293683a775460cb3678af7ca4f5a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c20fd79c9539ed2502960a63cb5b1de154c9693a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985801"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721467"
 ---
 # <a name="schedulinggroup-resource-type"></a>tipo de recurso schedulingGroup
 
@@ -37,8 +37,8 @@ Um agrupamento lógico de usuários em um [cronograma](schedule.md) (geralmente 
 | Nome para exibição   | `string`      | O nome de exibição do grupo `schedulingGroup`. Obrigatório. |
 | isActive          |`bool`      | Indica se o `schedulingGroup` pode ser usada na criação de novas entidades ou atualizar as existentes. Obrigatório. |
 | userIds       | `collection(string)`    |  A lista de IDs é membro de usuários da `schedulingGroup`. Obrigatório. |
-| createdDateTime       |`DateTimeOffset`        |O carimbo de hora em que isso `schedulingGroup` foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime      |`DateTimeOffset`        |O carimbo de hora em que isso `schedulingGroup` foi criado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
+| createdDateTime       |`DateTimeOffset`        |O carimbo de hora em que isso `schedulingGroup` foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime      |`DateTimeOffset`        |O carimbo de hora em que isso `schedulingGroup` foi criado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
 | lastModifiedBy        | [identitySet](identityset.md) |A identidade da última atualização `schedulingGroup`.|
 
 ## <a name="json-representation"></a>Representação JSON

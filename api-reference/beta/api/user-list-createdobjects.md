@@ -1,16 +1,16 @@
 ---
 title: Listar createdObjects
 description: Obtenha uma lista de objetos de diretório criados pelo usuário.
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f1612ff1868cf2f5dfe738f0abac3702c9094413
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8ae5c157d363a69db8dadf68103281d995445ecb
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971743"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720037"
 ---
 # <a name="list-createdobjects"></a>Listar createdObjects
 

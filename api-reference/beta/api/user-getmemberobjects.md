@@ -2,15 +2,15 @@
 title: 'user: getMemberObjects'
 description: Retorna todos os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d5ea5ef17550f5f821f85c8e38a341075639f297
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0d6dba0ce77f4e8918f16b9e6f74a82a44a5f87e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970273"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721443"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 

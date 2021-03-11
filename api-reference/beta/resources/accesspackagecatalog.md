@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a920312977d640d67f34e8f11ffd37fe032f0f0d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 87c2541179cd94472eadab692544a40a1d8b81b7
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443220"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720421"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>Tipo de recurso accessPackageCatalog
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um catálogo de pacotes de acesso é um contêiner para zero ou mais pacotes de acesso.  Um catálogo de pacotes de acesso também pode ter recursos vinculados usados nesses pacotes de acesso para fornecer acesso.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -37,16 +37,16 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um cat
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|catalogStatus|String|Tem o valor `Published` se os pacotes de acesso estão disponíveis para gerenciamento.|
-|catalogType|String|Um dos `UserManaged` ou `ServiceDefault` . |
+|catalogStatus|Cadeia de caracteres|Tem o valor `Published` se os pacotes de acesso estão disponíveis para gerenciamento.|
+|catalogType|Cadeia de caracteres|Um dos `UserManaged` ou `ServiceDefault` . |
 |createdBy|Cadeia de caracteres|UPN do usuário que criou esse recurso. Somente leitura.|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|description|String|A descrição do catálogo de pacotes de acesso.|
-|displayName|String|O nome de exibição do catálogo de pacotes de acesso.|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
+|description|Cadeia de caracteres|A descrição do catálogo de pacotes de acesso.|
+|displayName|Cadeia de caracteres|O nome de exibição do catálogo de pacotes de acesso.|
 |id|String| Somente leitura.|
 |isExternallyVisible|Booliano|Se os pacotes de acesso neste catálogo podem ser solicitados por usuários fora do locatário.|
-|modifiedBy|String|O UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
-|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
+|modifiedBy|Cadeia de caracteres|O UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
+|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 
 
 ## <a name="relationships"></a>Relações

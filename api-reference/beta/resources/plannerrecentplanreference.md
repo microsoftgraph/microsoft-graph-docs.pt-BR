@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso plannerRecentPlanReference
-description: 'O tipo de recurso **plannerRecentPlanReference** representa uma referência a um plannerPlan que foi recentemente exibido por um usuário. '
+title: Tipo de recurso plannerRecentPlanReference
+description: 'O **tipo de recurso plannerRecentPlanReference** repesenta uma referência a um plannerPlan que foi exibido recentemente por um usuário. '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: eefbcf79da1ae2ef76010eace5248708b6c61010
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a8fbf3ce9f39c49dde4bbeee96a3aab15a00077
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063995"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720974"
 ---
-# <a name="plannerrecentplanreference-resource-type"></a>tipo de recurso plannerRecentPlanReference
+# <a name="plannerrecentplanreference-resource-type"></a>Tipo de recurso plannerRecentPlanReference
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo de recurso **plannerRecentPlanReference** representa uma referência a um [plannerPlan](plannerplan.md) que foi recentemente exibido por um usuário. O **plannerRecentPlanReferences** de um usuário é explicitamente mantido por aplicativos. Qualquer aplicativo que implemente o recurso de planos recentes deve registrar quando o usuário tiver exibido o último plano e atualizar as entradas de **plannerRecentPlanReference** de acordo.
-Os aplicativos devem observar que as entradas do **plannerRecentPlanReference** podem fazer referência a **plannerPlans** que são excluídas, que o usuário não pode mais acessar ou que foram atualizadas com um título diferente.
-Recomendamos que os aplicativos Notifiquem os usuários quando houver discrepâncias e mantenha as entradas atualizadas.
+O **tipo de recurso plannerRecentPlanReference** repesenta uma referência a um [plannerPlan](plannerplan.md) que foi exibido recentemente por um usuário. O **plannerRecentPlanReferences** para um usuário é explicitamente mantido por aplicativos. Qualquer aplicativo que implemente o recurso de planos recentes deve registrar quando o usuário exibiu pela última vez um plano e atualizar as entradas **do plannerRecentPlanReference** de acordo.
+Os aplicativos devem observar que as entradas **plannerRecentPlanReference** podem fazer referência a **plannerPlans excluídos,** que o usuário não pode mais acessar ou que foram atualizados com um título diferente.
+Recomendamos que os aplicativos notifiquem os usuários quando houver discrepâncias e mantenham as entradas atualizadas.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|lastAccessedDateTime|DateTimeOffset|A data e a hora em que o plano foi exibido pela última vez pelo usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|lastAccessedDateTime|DateTimeOffset|A data e a hora em que o plano foi exibido pela última vez pelo usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |planTitle|Cadeia de caracteres|O título do plano no momento em que o usuário o exibiu.|
 
 ## <a name="json-representation"></a>Representação JSON

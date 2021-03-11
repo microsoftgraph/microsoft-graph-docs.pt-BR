@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso plannerExternalReference
-description: O recurso **plannerExternalReference** representa os metadados de uma referência (anexos como arquivo, URL). É o valor dos pares propriedade-valor no objeto externalReferences.
+title: Tipo de recurso plannerExternalReference
+description: O **recurso plannerExternalReference** representa os metadados de uma referência (anexos como arquivo, URL). É o valor de pares de valor de propriedade no objeto externalReferences.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: ce9cb16c73871289f7bd80058a80c8e61530a894
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a570c284cbf8726c3b8ed7a192c460c486dce9dd
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029124"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720995"
 ---
-# <a name="plannerexternalreference-resource-type"></a>tipo de recurso plannerExternalReference
+# <a name="plannerexternalreference-resource-type"></a>Tipo de recurso plannerExternalReference
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **plannerExternalReference** representa os metadados de uma referência (anexos como arquivo, URL). É o valor dos pares propriedade-valor no [objeto externalReferences](plannerexternalreferences.md).
+O **recurso plannerExternalReference** representa os metadados de uma referência (anexos como arquivo, URL). É o valor de pares de valor de propriedade no [objeto externalReferences](plannerexternalreferences.md).
 
 
 
@@ -26,10 +26,10 @@ O recurso **plannerExternalReference** representa os metadados de uma referênci
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |alias|Cadeia de caracteres|Um alias de nome para descrever a referência.|
-|lastModifiedBy|[identitySet](identityset.md)|Somente leitura. ID de usuário pela qual esta foi modificada pela última vez.|
-|lastModifiedDateTime|DateTimeOffset|Somente leitura. Data e hora da última modificação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|previewPriority|String|Usado para definir a ordem de prioridade relativa na qual a referência será mostrada como uma visualização na tarefa.|
-|tipo|String|Usado para descrever o tipo da referência. Os tipos incluem: `PowerPoint` , `Word` , `Excel` , `Other` .|
+|lastModifiedBy|[identitySet](identityset.md)|Somente leitura. ID do usuário pela qual foi modificada pela última vez.|
+|lastModifiedDateTime|DateTimeOffset|Somente leitura. Data e hora em que isso foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|previewPriority|Cadeia de caracteres|Usado para definir a ordem de prioridade relativa na qual a referência será mostrada como uma visualização na tarefa.|
+|tipo|Cadeia de caracteres|Usado para descrever o tipo da referência. Os tipos `PowerPoint` incluem: `Word` , , , `Excel` `Other` .|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

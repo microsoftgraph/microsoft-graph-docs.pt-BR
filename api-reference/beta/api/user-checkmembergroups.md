@@ -1,16 +1,16 @@
 ---
 title: checkMemberGroups
 description: Verifique se há associação na lista de grupos especificada. Retorna da lista aqueles grupos dos quais
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8c0c56f83a2a420a88590f36ab4de5f3942e334b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 620d4688cb803e6ed3af1304561c1bd76d23c679
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976600"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720365"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, User.ReadWrite.All and GroupMember.Read.All, User.ReadWrite.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                                     |
-| Aplicativo                            | User. Read. All e GroupMember. Read. All, User. Read. All e Group. Read. All, User. ReadWrite. All e GroupMember. Read. All, User. ReadWrite. All e Group. Read. All, Directory. Read. All, Directory. ReadWrite. All |
+| Aplicativo                            | User.Read.All e GroupMember.Read.All, User.Read.All e Group.Read.All, User.ReadWrite.All e GroupMember.Read.All, User.ReadWrite.All e Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 214bd01cd196a9f03facf4d4ca36d155831445f8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a04f33c283cd82715cb1e0d63917cea7cb373329
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441344"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720456"
 ---
 # <a name="update-privilegedapproval"></a>Atualizar privilegedapproval
 
@@ -44,13 +44,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|approvalDuration|Duração||
-|approvalState|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalDuration|Duration||
+|approvalState|cadeia de caracteres| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalType|Cadeia de caracteres||
+|approverReason|Cadeia de caracteres||
 |endDateTime|DateTimeOffset||
-|requestorReason|String||
-|roleId|String||
+|requestorReason|Cadeia de caracteres||
+|roleId|Cadeia de caracteres||
 |startDateTime|DateTimeOffset||
 |userId|Cadeia de caracteres||
 
@@ -68,7 +68,7 @@ Este é um exemplo da solicitação.
   "name": "update_privilegedapproval"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedApproval{request-id}
+PATCH https://graph.microsoft.com/beta/privilegedApproval/{requestId}
 Content-type: application/json
 Content-length: 180
 

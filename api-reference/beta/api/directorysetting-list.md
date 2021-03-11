@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a460a86f94adae7dd482491fb92241f27555fb6e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 62257563131669a7cacbd122cd2f6a9fac78fd11
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436640"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720113"
 ---
 # <a name="list-directory-settings"></a>Listar configurações de diretório
 
@@ -36,7 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 Listar configurações de grupo ou de locatário
 ```http
 GET /settings
-GET /group/{id}/settings
+GET /groups/{id}/settings
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.

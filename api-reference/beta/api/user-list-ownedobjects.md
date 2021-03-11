@@ -1,16 +1,16 @@
 ---
 title: Listar ownedObjects
 description: Obtenha a lista de objetos de diretório de propriedade do usuário.
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4a2aefc3964bcae88d391ffbca4a39e1157ed2d4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 80611733d963afe0397b8e6809621bd0cd6535b7
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967312"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50718496"
 ---
 # <a name="list-ownedobjects"></a>Listar ownedObjects
 

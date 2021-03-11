@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 23deb11dc582228cd398dfc1f88d576b3cb15a86
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 01837683481008fa79c2213970404413bdd6efe2
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444298"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721681"
 ---
 # <a name="connectedorganization-resource-type"></a>Tipo de recurso connectedOrganization
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma organização conectada é uma referência a um diretório ou domínio de outra organização cujos usuários podem solicitar acesso.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -41,12 +41,12 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma or
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdBy|Cadeia de caracteres|UPN do usuário que criou esse recurso. Somente leitura.|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|description|String|A descrição da organização conectada.|
-|displayName|String|O nome de exibição da organização conectada.|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
+|description|Cadeia de caracteres|A descrição da organização conectada.|
+|displayName|Cadeia de caracteres|O nome de exibição da organização conectada.|
 |id|String| Somente leitura.|
-|modifiedBy|String|UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
-|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
+|modifiedBy|Cadeia de caracteres|UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
+|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |state|connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com o tipo de escopo do solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured`, `proposed`.|
 
 ## <a name="relationships"></a>Relações

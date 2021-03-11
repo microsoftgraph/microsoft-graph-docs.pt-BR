@@ -1,16 +1,16 @@
 ---
 title: Listar os dispositivos do usuário
-description: Obtenha uma lista de dispositivos de usuário que dão suporte a recursos de Roma do projeto. Isso inclui a capacidade de iniciar um aplicativo ou uma mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada para mim/dispositivos, passe a ID do dispositivo para enviar um comando ao dispositivo.
+description: Obter uma lista de dispositivos de usuário que suportam recursos do Project Rome. Isso inclui a capacidade de iniciar um aplicativo ou mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada GET em mim/dispositivos, passe a ID do dispositivo para enviar um comando para seu dispositivo.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bf6dff6b3eea14455bb9dc1e8eed2f515847efc5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1c2b884b00298fd2b79a85b0ed3fe8f412b2736
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016937"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721632"
 ---
 # <a name="list-user-devices"></a>Listar os dispositivos do usuário
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de dispositivos de usuário que dão suporte a recursos de Roma do projeto. Isso inclui a capacidade de iniciar um aplicativo ou uma mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada para mim/dispositivos, passe a ID do dispositivo para [enviar um comando](send-device-command.md) ao dispositivo.
+Obter uma lista de dispositivos de usuário que suportam recursos do Project Rome. Isso inclui a capacidade de iniciar um aplicativo ou mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada GET em mim/dispositivos, passe a ID do dispositivo para [enviar um comando](send-device-command.md) para seu dispositivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 ```
 
 ## <a name="example"></a>Exemplo
-Este exemplo retornará a lista de dispositivos de um usuário. Para executar um comando em um dispositivo usando `me/devices/{id}/command` o, você precisará obter a ID do dispositivo que é retornado.
+Este exemplo retornará a lista de dispositivos para um usuário. Para comando de um dispositivo usando `me/devices/{id}/command` , você precisará obter a ID do dispositivo retornado.
 
 #### <a name="request"></a>Solicitação
 

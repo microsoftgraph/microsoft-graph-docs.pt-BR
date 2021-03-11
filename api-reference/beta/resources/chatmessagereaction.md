@@ -1,34 +1,34 @@
 ---
-title: tipo de recurso chatMessageReaction
-description: 'Representa uma reação a uma entidade chat. '
+title: Tipo de recurso chatMessageReaction
+description: 'Representa uma reação a uma entidade chatMessage. '
 localization_priority: Normal
 doc_type: resourcePageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9dac85d7b177f1b3622129e1187f3a3dca51ba50
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc7a3a5cbff2aee1191383ac18128e97075b4b99
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044232"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721618"
 ---
-# <a name="chatmessagereaction-resource-type"></a>tipo de recurso chatMessageReaction
+# <a name="chatmessagereaction-resource-type"></a>Tipo de recurso chatMessageReaction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma reação a uma entidade [chat](chatmessage.md) . 
+Representa uma reação a uma [entidade chatMessage.](chatmessage.md) 
 
-Uma entidade do tipo `chatMessageReaction` é retornada como parte da API [obter mensagem de canal](../api/channel-get-message.md) , como parte da entidade [chat](chatmessage.md) .
+Uma entidade de tipo é retornada como parte da API de mensagem get `chatMessageReaction` [channel,](../api/channel-get-message.md) como parte da [entidade chatMessage.](chatmessage.md)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|reactiontype|Cadeia de caracteres|Os valores com suporte são,,,, `like` `angry` `sad` `laugh` `heart` `surprised` . |
-|user|[identitySet](identityset.md)|O usuário que reajam à mensagem.|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|reactionType|Cadeia de caracteres|Os valores suportados `like` são , , , , , `angry` `sad` `laugh` `heart` `surprised` . |
+|user|[identitySet](identityset.md)|O usuário que reagia à mensagem.|
 
 ## <a name="json-representation"></a>Representação JSON
 

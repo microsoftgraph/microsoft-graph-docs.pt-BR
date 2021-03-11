@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a8dab67cfff9e695c94c7cbcf4549e49eb9812fa
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 98e9a22137f9f6faaa39fbbb010a32b40f8f0254
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433289"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720834"
 ---
 # <a name="accesspackage-resource-type"></a>Tipo de recurso accessPackage
 
@@ -23,7 +23,7 @@ Cada pacote de acesso é referenciado por um catálogo de pacotes de acesso úni
 
 Para atribuir um usuário a um pacote de acesso, [crie um accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) que faz referência ao pacote de acesso e à política de atribuição de pacote de acesso.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -39,16 +39,16 @@ Para atribuir um usuário a um pacote de acesso, [crie um accessPackageAssignmen
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|catalogId|String|ID do catálogo de pacotes de acesso referenciando este pacote de acesso. Somente leitura.|
+|catalogId|Cadeia de caracteres|ID do catálogo de pacotes de acesso referenciando este pacote de acesso. Somente leitura.|
 |createdBy|Cadeia de caracteres|UPN do usuário ou identidade do assunto que criou esse recurso. Somente leitura.|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|description|String|A descrição do pacote de acesso.|
-|displayName|String|O nome de exibição do pacote de acesso.|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
+|description|Cadeia de caracteres|A descrição do pacote de acesso.|
+|displayName|Cadeia de caracteres|O nome de exibição do pacote de acesso.|
 |id|String| Somente leitura.|
 |isHidden|Booliano|Se o pacote de acesso está oculto do solicitante.|
 |isRoleScopesVisible|Booliano|Indica se os escopos de função estão visíveis.|
-|modifiedBy|String|O UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
-|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
+|modifiedBy|Cadeia de caracteres|O UPN do usuário que modificou esse recurso pela última vez. Somente leitura.|
+|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 

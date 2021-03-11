@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b3090c352c009eb071a148fbbd8203752e56aab7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 97b698a2a74925451228dec6c11b167551ec4420
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438229"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719954"
 ---
 # <a name="list-recoverykeys"></a>Listar recoveryKeys
 Namespace: microsoft.graph
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 >**Observação**: para permissões delegadas permitirem que os aplicativos recebam recursos do BitLockerRecoveryKey em nome do usuário conectado, o administrador de locatários deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual a chave de recuperação do BitLocker foi originalmente respaldada: 
 * Administrador global
 * Administrador de dispositivos de nuvem
-* Administrador do Helpdesk
+* Administrador da assistência técnica
 * Administrador de Serviço do Intune
 * Administrador de segurança
 * Leitor de segurança
@@ -47,7 +47,7 @@ Para obter uma lista de chaves do BitLocker no locatário:
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys
+GET /informationProtection/bitlocker/recoveryKeys
 ```
 
 Para obter uma lista de chaves do BitLocker dentro do locatário filtrada pela **id do dispositivo**:
@@ -57,11 +57,11 @@ Para obter uma lista de chaves do BitLocker dentro do locatário filtrada pela *
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
+GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro de consulta OData para filtrar os resultados pela id do dispositivo em que a chave foi `$filter` mais recente.  Para obter detalhes, consulte [o Exemplo 2](#example-2). Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte ao parâmetro de consulta OData para filtrar os resultados pela id do dispositivo em que a chave foi `$filter` mais recente.  Este método não dá suporte ao `$top` filtro. Para obter detalhes, consulte [o Exemplo 2](#example-2). Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 A resposta também pode conter `odata.nextLink` um , que você pode usar para página através do conjunto de resultados. Para obter detalhes, [consulte Paging Microsoft Graph data](/graph/paging).
 
@@ -94,7 +94,7 @@ Este é um exemplo de solicitação.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -165,7 +165,7 @@ Este é um exemplo de solicitação.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```

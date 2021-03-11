@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 25c33dd911d9c14d91131508fad37c1fea149b9a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bcb21fece207e9e4d98fa7a0fc612f886e5ab0e6
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445898"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720330"
 ---
 # <a name="reviewset-resource-type"></a>Tipo de recurso reviewSet
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Representa o conjunto estático de informações armazenadas eletronicamente coletadas para uso em uma solicitação de litígio, investigação ou regulamentação.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -36,9 +36,9 @@ Representa o conjunto estático de informações armazenadas eletronicamente col
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |createdBy        | [identitySet](/graph/api/resources/identityset) | O usuário que criou o conjunto de revisão. Somente leitura. |
-|createdDateTime  |DateTimeOffset| A data em que o conjunto de revisão foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
-|displayName      |String| O nome do conjunto de revisão. O nome é exclusivo com um limite máximo de 64 caracteres. |
-|id               |String| O identificador exclusivo do conjunto de revisão. Somente leitura. |
+|createdDateTime  |DateTimeOffset| A data em que o conjunto de revisão foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
+|displayName      |Cadeia de caracteres| O nome do conjunto de revisão. O nome é exclusivo com um limite máximo de 64 caracteres. |
+|id               |Cadeia de caracteres| O identificador exclusivo do conjunto de revisão. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 

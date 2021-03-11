@@ -1,16 +1,16 @@
 ---
 title: Criar usuário
 description: Crie um novo usuário.
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1bdbe81274b8769839cf97a5cf8025eea5e2f36e
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 9e60e01bcf530533f6827af2d93a90573f39c760
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523655"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720036"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Crie um novo [usuário](../resources/user.md). O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
 
-Essa operação retorna, por padrão, apenas um subconjunto das propriedades de cada usuário. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/user.md#properties). Para obter propriedades não retornadas por padrão, execute uma [operação GET](user-get.md) e especifique as propriedades em uma opção de consulta `$select` do OData.
+Essa operação retorna por padrão apenas um subconjunto das propriedades para cada usuário. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/user.md#properties). Para obter propriedades não retornadas por padrão, execute uma [operação GET](user-get.md) e especifique as propriedades em uma opção de consulta `$select` do OData.
 
 >[!NOTE]
 >Para criar usuários externos, use a [API de convite](invitation-post.md).
@@ -54,7 +54,7 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |True se a conta estiver habilitada; caso contrário, false.|
+|accountEnabled |Booliano |True se a conta estiver habilitada; caso contrário, false.|
 |displayName |string |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
@@ -63,10 +63,10 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 
 Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.
 
-Os usuários federados criados por meio dessa API serão forçados a entrar a cada 12 horas por padrão. Para obter informações sobre como alterar isso, confira [exceções para tempos de vida do token](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+Os usuários federados criados por meio dessa API serão forçados a entrar a cada 12 horas por padrão. Para obter informações sobre como alterar isso, consulte [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 >[!NOTE]
->A adição de uma [conta local B2C](../resources/objectidentity.md) a um objeto de **usuário** existente não é permitida, a menos que o objeto **User** já contenha uma identidade de conta local.
+>A adição de uma conta  [local B2C](../resources/objectidentity.md) a um objeto de usuário existente não é permitida, a menos que o objeto **de** usuário já contenha uma identidade de conta local.
 
 ## <a name="response"></a>Resposta
 
@@ -123,7 +123,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [user](..
 Veja a seguir um exemplo da resposta. 
 
 >[!NOTE]
->O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

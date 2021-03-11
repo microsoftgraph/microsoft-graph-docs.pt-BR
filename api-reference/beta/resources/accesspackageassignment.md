@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3fcacacf4d616b1b9e52b9615864de9056bf1592
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e188857a2cc92210d9298d588c7d411e16fb688a
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433264"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720281"
 ---
 # <a name="accesspackageassignment-resource-type"></a>Tipo de recurso accessPackageAssignment
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma atribuição de pacote de acesso é uma atribuição de um pacote de acesso a um assunto específico, por um período de tempo.  Por exemplo, uma atribuição de pacote de acesso pode dizer que a usuária Alice recebeu acesso por meio do pacote de acesso Vendas do período de janeiro de 2019 a julho de 2019.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -32,15 +32,15 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma at
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackageId|String|O identificador do pacote de acesso. Somente leitura.|
-|assignmentPolicyId|String|O identificador da política de atribuição do pacote de acesso. Somente leitura.|
-|assignmentState|String|O estado da atribuição do pacote de acesso. Os valores possíveis `Delivering` são `Delivered` , ou `Expired` . Somente leitura.|
-|assignmentStatus|String|Mais informações sobre o ciclo de vida da atribuição.  Os valores possíveis `Delivering` `Delivered` incluem , `NearExpiry1DayNotificationTriggered` , ou `ExpiredNotificationTriggered` .  Somente leitura.|
-|catalogId|String|O identificador do catálogo que contém o pacote de acesso. Somente leitura.|
-|expiredDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|accessPackageId|Cadeia de caracteres|O identificador do pacote de acesso. Somente leitura.|
+|assignmentPolicyId|Cadeia de caracteres|O identificador da política de atribuição do pacote de acesso. Somente leitura.|
+|assignmentState|Cadeia de caracteres|O estado da atribuição do pacote de acesso. Os valores possíveis `Delivering` são `Delivered` , ou `Expired` . Somente leitura.|
+|assignmentStatus|Cadeia de caracteres|Mais informações sobre o ciclo de vida da atribuição.  Os valores possíveis `Delivering` `Delivered` incluem , `NearExpiry1DayNotificationTriggered` , ou `ExpiredNotificationTriggered` .  Somente leitura.|
+|catalogId|Cadeia de caracteres|O identificador do catálogo que contém o pacote de acesso. Somente leitura.|
+|expiredDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |id|String| Somente leitura.|
 |isExtended|Booliano|Indica se a atribuição do pacote de acesso foi estendida. Somente leitura.|
-|targetId|String| A ID do assunto com a atribuição. Somente leitura.|
+|targetId|Cadeia de caracteres| A ID do assunto com a atribuição. Somente leitura.|
 |Cronograma|[requestSchedule](requestschedule.md)| Quando a atribuição de acesso estiver no local. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

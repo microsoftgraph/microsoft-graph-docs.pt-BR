@@ -1,27 +1,26 @@
 ---
 author: learafa
-ms.author: learafa
-title: Obter ponto de extremidade do WebSocket
+title: Obter ponto de extremidade do websocket
 description: Não há suporte para o uso dessas APIs em aplicativos de produção.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cce55126e10dfbae981b2118fb8b0cd9543f7491
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e56a4174808a7b30ecf063c2b782e0be272c6046
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982232"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721453"
 ---
-# <a name="get-websocket-endpoint"></a>Obter ponto de extremidade do WebSocket
+# <a name="get-websocket-endpoint"></a>Obter ponto de extremidade do websocket
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-Permite que você receba notificações de alteração quase em tempo real para uma [unidade][] e [lista][] usando o [Socket.Io][].
-Socket.io é uma biblioteca de notificações popular para JavaScript que utiliza WebSockets. Para saber mais, confira [Socket.Io](https://socket.io).
+Permite que você receba notificações de alteração quase em tempo real para uma [unidade][] e [uma lista][] usando [socket.io][].
+Socket.io é uma biblioteca de notificações popular para JavaScript que utiliza WebSockets. Para saber mais, confira [socket.io](https://socket.io).
 
 [drive]: ../resources/drive.md
 [list]: ../resources/list.md
@@ -33,8 +32,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
 |:---------------------------------------|:-------------------------------------------
-| Delegado (conta corporativa ou de estudante)     | Files. Read, files. ReadWrite, files. ReadWrite. All, sites. ReadWrite. All
-| Delegado (conta pessoal da Microsoft) | Files. Read, files. ReadWrite, files. ReadWrite. All
+| Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
+| Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
 | Aplicativo                            | Sem suporte.
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,7 +43,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /me/drive/root/subscriptions/socketIo
 GET /drives/{driveId}/root/subscriptions/socketIo
-GET /lists/{list-id}/subscriptions/socketIo
+GET /drives/{driveId}/list/subscriptions/socketIo
 GET /groups/{groupId}/drive/root/subscriptions/socketIo
 GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 ```
@@ -80,7 +79,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Subscription](../resources/subscription.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
 
 <!-- {
   "blockType": "response",
@@ -97,11 +96,11 @@ Content-type: application/json
 }
 ```
 
-O `notificationUrl` retornado é uma URL de ponto de extremidade Socket.IO.
-Para usá-lo com um cliente do socket.io, divida a cadeia de caracteres no `/callback?` token.
-A parte da cadeia de caracteres antes `/callback?` é a URL de ponto de extremidade Socket.Io e a parte da cadeia de caracteres depois é uma cadeia de caracteres de consulta opaca que deve ser fornecida à biblioteca.
+O `notificationUrl` retornado é uma URL socket.io ponto de extremidade.
+Para usá-lo com um socket.io cliente, divida a cadeia de caracteres no `/callback?` token.
+A parte da cadeia de caracteres antes é socket.io URL do ponto de extremidade e a parte da cadeia de caracteres depois é uma cadeia de caracteres de consulta opaca que deve ser dada `/callback?` à biblioteca.
 
-O exemplo a seguir mostra como usar o `notificationUrl` com Socket.Io em JavaScript.
+O exemplo a seguir mostra como usar o com socket.io `notificationUrl` em JavaScript.
 
 ```javascript
 // this is the notificationUrl returned from this API

@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso changeTrackedEntity
-description: Representa uma entidade para controlar as alterações feitas em qualquer recurso de turnos com suporte
+title: Tipo de recurso changeTrackedEntity
+description: Representa uma entidade para controlar as alterações feitas em qualquer recurso Shifts com suporte
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1c420274f6ff8e0521f9fd5baca193e95334f3de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e02c02b931558b927f29e7b08a18c5d5937f0f72
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042687"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720211"
 ---
-# <a name="changetrackedentity-resource-type"></a>tipo de recurso changeTrackedEntity
+# <a name="changetrackedentity-resource-type"></a>Tipo de recurso changeTrackedEntity
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma entidade para rastrear as alterações feitas em qualquer [cronograma](schedule.md) compatível e recurso associado.
+Representa uma entidade para controlar as alterações feitas em qualquer agenda [com](schedule.md) suporte e recurso associado.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |id|String| Somente leitura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidade da pessoa que modificou a entidade pela última vez.|
-|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 
 ## <a name="relationships"></a>Relações
 

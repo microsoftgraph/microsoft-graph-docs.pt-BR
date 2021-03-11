@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: harini84
-ms.openlocfilehash: ccb9d02fd8319798d691756526a42e88a661b93a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ee9c70baa5cdea45868feb1517623081f2b62b2
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026247"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50718457"
 ---
 # <a name="responsestatus-resource-type"></a>Tipo de recurso responseStatus
 
@@ -25,7 +25,7 @@ O status de resposta de uma solicitação de reunião.
 | Propriedade | Tipo           | Descrição |
 |:---------|:---------------|:------------|
 | response | Cadeia de caracteres         | O tipo de resposta. Os valores possíveis são: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
-| time     | DateTimeOffset | A data e hora em que a resposta retornou. Usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`
+| time     | DateTimeOffset | A data e hora em que a resposta retornou. Usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`
 
 ## <a name="json-representation"></a>Representação JSON
 

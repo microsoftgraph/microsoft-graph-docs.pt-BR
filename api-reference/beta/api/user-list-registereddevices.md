@@ -2,15 +2,15 @@
 title: Listar registeredDevices
 description: Obtenha a lista de dispositivos registrado do usuário.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 83c513bef60a8a8778842f04d219e80a7c55c76d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dde29d94209f29413cce5ddab5e67e89188803fb
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968831"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721502"
 ---
 # <a name="list-registereddevices"></a>Listar registeredDevices
 

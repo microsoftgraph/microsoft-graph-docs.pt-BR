@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f5820ecc8f4e29f5876b0fbbf9ca9f1acc93c0cb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4763f268628a4609ac91d0597aeb4f55a2d406ce
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444022"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720988"
 ---
 # <a name="plannerplan-resource-type"></a>Tipo de recurso plannerPlan
 
@@ -35,12 +35,12 @@ O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pe
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |contêiner|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifica o contêiner do plano. Depois de definida, essa propriedade não pode ser atualizada. Obrigatório.|
-|createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que o plano foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que o plano foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |id|String| Somente leitura. A ID do plano. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
 |title|String|Obrigatório. Título do plano.|
 |createdBy|[identitySet](identityset.md)|Somente leitura. O usuário que criou o plano.|
 |contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Somente leitura. Experiências adicionais de usuário nas quais esse plano é usado, representadas como entradas [plannerPlanContext.](plannerplancontext.md)|
-|owner (preterido) |String| Use a **propriedade container** em vez disso. ID do [grupo](group.md) que possui o plano. Depois de definida, essa propriedade não pode ser atualizada. Essa propriedade não retornará uma ID de grupo válida se o contêiner do plano não for um grupo.|
+|owner (preterido) |Cadeia de caracteres| Use a **propriedade container** em vez disso. ID do [grupo](group.md) que possui o plano. Depois de definida, essa propriedade não pode ser atualizada. Essa propriedade não retornará uma ID de grupo válida se o contêiner do plano não for um grupo.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

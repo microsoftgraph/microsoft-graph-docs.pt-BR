@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 95a185a8028e35d26513fc90c05d06dbd9d900c1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4eb0a7c2de533332c57f3e26d3b6fba25a68259d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445781"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720372"
 ---
 # <a name="reviewset-addtoreviewset"></a>reviewSet: addToReviewSet
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 
 ``` http
-POST /cases/{caseId}/reviewSets/{reviewsetId}/addToReviewSet
+POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewsetId}/addToReviewSet
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso de configurações do usuário (UserSettings)
 description: 'As atuais configurações de usuário para descoberta de conteúdo. '
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 81391c38f2577fd3f60c57fa40f9671ae710c2a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b03b1b41c466582a219a034d93a16bb887fa356
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057770"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721436"
 ---
 # <a name="usersettings-resource-type"></a>Tipo de recurso de configurações do usuário (UserSettings)
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configurações que representam as preferências de um usuário para [idiomas regionais e idioma](../resources/regionalandlanguagesettings.md), para o [agendamento de turnos](../resources/shiftpreferences.md)e para o [insights e a descoberta de conteúdo](../resources/officegraphinsights.md).
+Configurações que representam as preferências de um usuário para localidade [regional](../resources/regionalandlanguagesettings.md)e idiomas, para agendamento de turnos [e](../resources/shiftpreferences.md)para informações e descoberta de [conteúdo.](../resources/officegraphinsights.md)
 
-Gerenciar preferências baseadas em localidade do usuário: 
-  - Determinar a qual idioma e a formatação regional um usuário prefere exibir aplicativos.
-  - Atualização de preferências de idioma e formatação regional do usuário.
+Gerenciar as preferências baseadas na localidade do usuário: 
+  - Determinando com qual idioma e formatação regional um usuário prefere exibir aplicativos.
+  - Atualizando o idioma de um usuário e as preferências de formatação regional.
 
-Gerenciar preferências de turno de trabalho do usuário: 
+Gerenciar as preferências de turno de trabalho do usuário: 
   - Verificar se um usuário pode ser atribuído a turnos em um cronograma.
-  - Atualização de preferências de turno do usuário.
+  - Atualizando as preferências de turno de um usuário.
   
-Habilitar a descoberta de conteúdo e insights centrados em documentos:
+Habilitar a descoberta de conteúdo e informações centradas em documentos:
   - Verificar se um usuário e a organização do usuário contribuem para a descoberta de conteúdo.
   - Habilitar ou desabilitar a descoberta de conteúdo para usuários específicos. Isso também desabilita documentos no Office Delve.
 
@@ -47,15 +47,15 @@ Para saber como obter ou atualizar as configurações de usuário, confira [Obte
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Booliano|O acesso delegado à API [mais popular](insights-trending.md) do usuário é desabilitada quando definido como verdadeiro. Os documentos do usuário do Office Delve serão desativados quando definidos como verdadeiros. Quando definido como true, a relevância do conteúdo exibido no Microsoft 365, por exemplo, em sites sugeridos na página inicial do SharePoint, e o modo de exibição de descoberta no OneDrive for Business são afetados. Os usuários podem controlar essa configuração em [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|contributionToContentDiscoveryAsOrganizationDisabled|Booliano|Reflete a [configuração do nível de organização](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) controlando o acesso delegado à API [mais popular](insights-trending.md). A organização não tem acesso ao Office Delve quando definido como verdadeiro. A relevância do conteúdo exibido no Microsoft 365, por exemplo, em sites sugeridos na página inicial do SharePoint e o modo de exibição de descoberta no OneDrive for Business, é afetada para toda a organização. Essa configuração é somente leitura e pode ser alterada somente por administradores no [Centro de administração do SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|contributionToContentDiscoveryDisabled|Booliano|O acesso delegado à API [mais popular](insights-trending.md) do usuário é desabilitada quando definido como verdadeiro. Os documentos do usuário do Office Delve serão desativados quando definidos como verdadeiros. Quando definida como verdadeira, a relevância do conteúdo exibido no Microsoft 365, como em sites Sugeridos na Página Inicial do Microsoft Office SharePoint Online e o modo de exibição Descobrir no OneDrive for Business é afetada. Os usuários podem controlar essa configuração em [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
+|contributionToContentDiscoveryAsOrganizationDisabled|Booliano|Reflete a [configuração do nível de organização](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) controlando o acesso delegado à API [mais popular](insights-trending.md). A organização não tem acesso ao Office Delve quando definido como verdadeiro. A relevância do conteúdo exibido no Microsoft 365, como em sites Sugeridos na Página Inicial do Microsoft Office SharePoint Online e o modo de exibição Descobrir no OneDrive for Business é afetada para toda a organização. Essa configuração é somente leitura e pode ser alterada somente por administradores no [Centro de administração do SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|shiftPreferences|[shiftPreferences](shiftpreferences.md)| As preferências de mudança para o usuário. |
-|regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| As preferências do usuário para os idiomas, a localidade regional e a formatação de data/hora. |
+|shiftPreferences|[shiftPreferences](shiftpreferences.md)| As preferências de turno para o usuário. |
+|regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| Preferências do usuário para idiomas, localidade regional e formatação de data/hora. |
 
 ## <a name="json-representation"></a>Representação JSON
 
