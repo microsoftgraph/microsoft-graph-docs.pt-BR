@@ -1,16 +1,16 @@
 ---
-title: Tipo de recurso plannerAssignment
+title: Tipo de recurso appRoleAssignment
 description: Utilizado para registro quando um usuário, grupo ou entidade de serviço é atribuído a uma função de aplicativo na entidade de serviço de um aplicativo. Você pode criar, ler e excluir as atribuições de função.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: d91393823efde4a384a2713723effa8c3f947a8b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 621313667c39747c5aad81192e086ad1234b0d96
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135265"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719070"
 ---
 # <a name="approleassignment-resource-type"></a>Tipo de recurso appRoleAssignment
 
@@ -33,7 +33,7 @@ Uma atribuição de função de aplicativo onde a entidade de segurança atribu�
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 | id | Cadeia de caracteres | Um identificador exclusivo para a chave **appRoleAssignment**. Não anulável. Somente leitura. |
-| creationTimestamp | DateTimeOffset | A hora em que a atribuição de função do aplicativo foi criada. O tipo timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. O não tem suporte para `$filter`. |
+| creationTimestamp | DateTimeOffset | A hora em que a atribuição de função do aplicativo foi criada. O tipo timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. O não tem suporte para `$filter`. |
 | principalId | Guid | O identificador exclusivo (**id**) para o [usuário](user.md), [grupo](group.md) ou da [entidade](serviceprincipal.md) a qual o acesso está sendo concedido. Obrigatório durante a criação. O não tem suporte para `$filter`. |
 | principalType | Cadeia de caracteres | O tipo da entidade de segurança atribuída. Pode ser “Usuário”, “Grupo” ou “ServicePrincipal”. Somente leitura. O não tem suporte para `$filter`. |
 | principalDisplayName | Cadeia de caracteres |O nome de exibição do usuário, grupo ou entidade de serviço que recebeu a atribuição de função do aplicativo. Somente leitura. Suporte para `$filter` (`eq` e `startswith`). |

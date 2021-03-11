@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 524adc7d538203569253af52d29d1fa588f00269
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 05f11678242aca85f64c742a3a74b2db287aa7bf
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998368"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721807"
 ---
 # <a name="outlooktask-resource-type-deprecated"></a>tipo de recurso outlookTask (substituído)
 
@@ -47,7 +47,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[Obter outlookTask](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |Obtenha as propriedades e as relações de uma tarefa do Outlook na caixa de correio do usuário.|
 |[Atualizar](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |Altere as propriedades graváveis ​​de uma tarefa do Outlook. |
 |[Excluir](../api/outlooktask-delete.md) | Nenhum |Exclua a tarefa especificada na caixa de correio do usuário. |
-|[Concluído](../api/outlooktask-complete.md)|coleção [outlookTask](outlooktask.md)|Concluir uma tarefa do Outlook que define a propriedade**completedDateTime** para a data atual e a propriedade de**status** para `completed`.|
+|[Concluído](../api/outlooktask-complete.md)|coleção [outlookTask](outlooktask.md)|Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** para a data atual e a propriedade de **status** para `completed`.|
 |**Anexos**| | |
 |[List attachments](../api/outlooktask-list-attachments.md) |Coleção [anexo](attachment.md)| Obtenha todos os anexos de uma tarefa do Outlook.|
 |[Add attachment](../api/outlooktask-post-attachments.md) |[anexo](attachment.md)| Adiciona um arquivo, um item (mensagem, evento ou contato) ou um link a um arquivo como um anexo a uma tarefa.|
@@ -65,14 +65,14 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |Categorias|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](outlookcategory.md) definida pelo usuário.|
 |changeKey|Cadeia de caracteres|A versão da tarefa.|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
-|createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
 |hasAttachments|Booliano|Defina como verdadeiro se a tarefa tiver anexos.|
 |id|Cadeia de caracteres| Identificador exclusivo para a tarefa. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
 |importância|cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
-|lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|proprietário|Cadeia de caracteres|O nome da pessoa que criou a tarefa.|
+|lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|owner|Cadeia de caracteres|O nome da pessoa que criou a tarefa.|
 |parentFolderId|Cadeia de caracteres|O identificador exclusivo para a pasta pai da tarefa.|
 |recorrência|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
