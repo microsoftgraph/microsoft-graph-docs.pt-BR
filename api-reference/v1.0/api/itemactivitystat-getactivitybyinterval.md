@@ -5,12 +5,12 @@ description: Obter itemAnalyticyStats para as atividades que ocorreram nesse rec
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b339458fb65f457c44113957ef541828a1940724
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e5a88a95a892d5b5e8e9404dc461e56eefaa566f
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471687"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626121"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item por intervalo
 
@@ -39,7 +39,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-10',interval='day')
 GET /sites/{site-id}/getActivitiesByInterval(startDateTime='2016-01-01',endDateTime='2017-05-20',interval='month')
-GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-05-01',interval='week')
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-05-01',endDateTime='2017-05-20',interval='week')
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
@@ -48,7 +48,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | string (timestamp) | O tempo de início sobre o qual agregar atividades.
 | endDateTime    | string (timestamp) | O tempo final sobre o qual agregar atividades.
-| interval       | string             | O intervalo de agregação.
+| interval       | cadeia de caracteres             | O intervalo de agregação.
 
 >**Observação:** Essa API só dá suporte a um intervalo de tempo de 90 dias para contagens diárias. O valor dos parâmetros e deve representar um intervalo `startDateTime` de tempo inferior a `endDateTime` 90 dias.
 

@@ -1,20 +1,20 @@
 ---
 title: Obter workbookOperation
-description: Recuperar o status de um objeto workbookOperation.
+description: Recupere o status de um objeto workbookOperation.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2d5aca6184a392409abe8e103255ebe9999e9478
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5947f24447a96d4f28275322b25b507c95256978
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988643"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626135"
 ---
 # <a name="get-workbookoperation"></a>Obter workbookOperation
 
-Recuperar o status de um objeto [workbookOperation](../resources/workbookoperation.md) .
+Recupere o status de um [objeto workbookOperation.](../resources/workbookoperation.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Files. ReadWrite. |
+| Delegado (conta corporativa ou de estudante)     | Files.ReadWrite. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET workbook/operations/{operation-id}
+GET /me/drive/items/{id}/workbook/operations/{operation-id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [workbookOperation](../resources/workbookoperation.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [workbookOperation](../resources/workbookoperation.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir a resposta com o status "em execução".
+A seguir está a resposta com o status de "running".
 
 
 <!-- {
@@ -103,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-Veja a seguir a resposta com o status de "êxito".
+A seguir está a resposta com o status de "bem-sucedido".
 
 ```http
 HTTP/1.1 200 OK
@@ -116,7 +116,7 @@ Content-type: application/json
 }
 ```
 
-Veja a seguir a resposta com o status de "falha".
+A seguir está a resposta com o status de "failed".
 
 ```http
 HTTP/1.1 200 OK

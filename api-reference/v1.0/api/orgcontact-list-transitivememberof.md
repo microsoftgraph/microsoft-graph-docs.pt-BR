@@ -1,22 +1,22 @@
 ---
 title: Listar transitiveMemberOf
-description: Obter grupos dos quais o contato do organziational é membro. Essa solicitação de API é transitiva e também retorna todos os grupos dos quais o usuário é um membro aninhado.
+description: Obter grupos dos que o contato organziational é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o usuário é membro aninhado.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2387bf17583869f8b5a043d0a8318a424f37af15
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 94a41d23225615a6233b8d37a5cded8f569c7898
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797141"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625987"
 ---
 # <a name="list-transitivememberof"></a>Listar transitiveMemberOf
 
 Namespace: microsoft.graph
 
-Obter grupos dos quais esse [contato organizacional](../resources/orgcontact.md) é membro. A solicitação de API é transitiva e retorna todos os grupos dos quais o contato organizacional é um membro aninhado.
+Obter grupos dos que [esse contato organizacional](../resources/orgcontact.md) é membro. A solicitação de API é transitiva e retorna todos os grupos de que o contato organizacional é um membro aninhado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | OrgContact. Read. All e Group. Read. All, Directory. Read. All  |
-|Delegada (conta Microsoft pessoal) | Sem suporte.    |
-|Application | OrgContact. Read. All e Group. Read. All, Directory. Read. All |
+|Delegado (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -38,7 +38,7 @@ GET /contacts/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte aos `$select` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -67,13 +67,13 @@ Este é um exemplo de solicitação.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/{id}/transitiveMemberOf
+GET https://graph.microsoft.com/v1.0/contacts/{id}/transitiveMemberOf
 ```
 
 ### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação** : o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. 
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. 
 
 <!-- {
   "blockType": "response",

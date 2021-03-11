@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 818a23039bc761072801f83ee1991da25109fca6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8690e7db843c4769a1f3646ec5199240f1e98765
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019142"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50625478"
 ---
 # <a name="update-devicecategory"></a>Atualizar deviceCategory
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; **Integração** e <br> &nbsp;&nbsp; **Gerenciamento de dispositivos**| DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **Integração** e <br> &nbsp;&nbsp; **Gerenciamento de Dispositivos**| DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Integração**|
-|displayName|String|Nome de exibição da categoria de dispositivo.|
-|description|String|Descrição opcional da categoria do dispositivo.|
+|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
+|description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
 
 
 
@@ -65,7 +65,7 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e um ob
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
-Aqui estão exemplos de solicitação.
+Aqui estão exemplos da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{deviceCategoryId}
 Content-type: application/json
@@ -75,12 +75,10 @@ Content-length: 82
   "displayName": "Display Name value",
   "description": "Description value"
 }
-
-PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades de resposta irão variar de acordo com o contexto.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades de resposta variam de acordo com o contexto.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,23 +1,23 @@
 ---
 author: daspek
-title: Obter ponto de extremidade websocket
+title: Obter ponto de extremidade do websocket
 localization_priority: Normal
 ms.prod: sharepoint
 description: Permite que você receba notificações de alteração quase em tempo real para uma unidade usando socket.io.
 doc_type: apiPageType
-ms.openlocfilehash: 2868ba963114bc78053c6098996b6cff597572d9
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 3c937a9d51073ca89148c9ff8a3b51c8f32d30c5
+ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238439"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50626213"
 ---
-# <a name="get-websocket-endpoint"></a>Obter ponto de extremidade websocket
+# <a name="get-websocket-endpoint"></a>Obter ponto de extremidade do websocket
 
 Namespace: microsoft.graph
 
-Permite que você receba notificações de alteração quase em tempo real para uma [unidade][] e [lista][] usando [socket.io][].
-Socket.io é uma biblioteca de notificações popular para JavaScript que utiliza WebSockets. Para saber mais, consulte [socket.io.](https://socket.io)
+Permite que você receba notificações de alteração quase em tempo real para uma [unidade][] e [uma lista][] usando [socket.io][].
+Socket.io é uma biblioteca de notificações popular para JavaScript que utiliza WebSockets. Para saber mais, confira [socket.io](https://socket.io).
 
 [drive]: ../resources/drive.md
 [list]: ../resources/list.md
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
 |:---------------------------------------|:-------------------------------------------
-| Delegada (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
-| Delegada (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
+| Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
+| Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
 | Aplicativo                            | Sem suporte.
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /me/drive/root/subscriptions/socketIo
 GET /drives/{driveId}/root/subscriptions/socketIo
-GET /lists/{list-id}/subscriptions/socketIo
+GET /drives/{driveId}/list/subscriptions/socketIo
 GET /groups/{groupId}/drive/root/subscriptions/socketIo
 GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 ```
@@ -76,7 +76,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto subscription](../resources/subscription.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
 
 <!-- {
   "blockType": "response",
@@ -95,7 +95,7 @@ Content-type: application/json
 
 O `notificationUrl` retornado é uma URL socket.io ponto de extremidade.
 
-O exemplo a seguir mostra como usar o `notificationUrl` com socket.io em JavaScript.
+O exemplo a seguir mostra como usar o com socket.io `notificationUrl` em JavaScript.
 
 ```javascript
 // this is the notificationUrl returned from this API
