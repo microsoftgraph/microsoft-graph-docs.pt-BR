@@ -1,16 +1,16 @@
 ---
 title: Excluir um usuário - Microsoft Graph API
 description: Descreve o método de exclusão de recursos do usuário (entidade) do Microsoft Graph API (REST).
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1c3de475fbe57143478d39dde759ecbad45abf59
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 705899489cb754fac5bbaac17fb75417195a484f
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136791"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721765"
 ---
 # <a name="delete-a-user"></a>Excluir um usuário
 
@@ -32,11 +32,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.ReadWrite.All |
 
-A conta de trabalho ou de estudante deve estar em uma das seguintes funções:
+A conta profissional ou escolar deve desempenhar uma das seguintes funções:
 + Administrador Global
-+ Administrador do Usuário
++ Administrador do usuário
 
-Somente um Administrador Global pode excluir um usuário em uma função de Administrador Global ou _qualquer_ usuário no locatário. Um Administrador de Usuário só pode excluir usuários que não são administradores ou em funções limitadas específicas. Para obter mais detalhes, consulte [Permissões de função de administrador no Azure AD.](/azure/active-directory/roles/permissions-reference#available-roles)
+Somente um Administrador Global pode excluir um usuário em uma função de Administrador Global ou _qualquer_ usuário no locatário. Um administrador de usuários só pode excluir usuários que não sejam administradores ou que tenham funções limitadas específicas. Para obter mais detalhes, consulte [Permissões de função de administrador no Microsoft Azure Active Directory](/azure/active-directory/roles/permissions-reference#available-roles).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

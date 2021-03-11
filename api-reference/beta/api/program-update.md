@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: b1e601908a8f12523f9e02549e3fd24903e77bda
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 29b30bd80dba96b061d0c83f2710d224c3da8758
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442219"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721773"
 ---
 # <a name="update-program"></a>Atualizar programa
 
@@ -33,7 +33,7 @@ O usuário inscreveu também deve estar em uma função de diretório que permit
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /programs('{programId}')
+PATCH /programs/{programId}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |

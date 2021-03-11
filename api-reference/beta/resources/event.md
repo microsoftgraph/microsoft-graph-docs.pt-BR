@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f48ee4d5b2b9def559b48a47471cf0555d1278d6
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: c98a99efcb4f00165376943cac7ad9923c70c092
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754268"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721870"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -117,20 +117,20 @@ Veja a seguir uma representação JSON do recurso
 |cancelledOccurrences|Coleção de cadeia de caracteres|Contém os valores da propriedade **occurrenceId** de instâncias canceladas em uma série recorrente, se o evento for o mestre da série. As instâncias de uma série recorrente que estão canceladas são chamadas de cancelledOccurences.<br><br>Devolvido somente no $select em uma operação[Get](../api/event-get.md) que especifica a identidade de uma sériede eventos mestre (ou seja, o valor da propriedade seriesMasterId).|
 |categories|Coleção de cadeias de caracteres|As categorias associadas ao evento. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](outlookcategory.md) definida para o usuário.|
 |changeKey|String|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina. Por padrão, a hora de término é em UTC.|
 |exceptionOccurrences|Coleção de cadeia de caracteres|Contém os valores da propriedade **id** das instâncias de evento que são exceções em uma série recorrente.<br>As exceções podem diferir das outras ocorrências em uma série recorrente, tais como o assunto, o início ou fim do horário, ou os participantes. As exceções não incluem as ocorrências canceladas.<br><br>Devolvido somente em $select e $expand em uma operação [GET](../api/event-get.md) que especifica a identidade de uma série de eventos mestre (ou seja, o valor da propriedade seriesMasterId).|
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
 |hideAttendees|Booliano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é falso.|
 |id|Cadeia de caracteres| Identificador exclusivo do evento. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
-|importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|importância|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro. Se estiver definido como true, independentemente de ser um evento de um ou de vários dias, a hora de início e término deve ser definida como meia-noite e estar no mesmo fuso horário.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
 |isDraft|Boleano|Defina como verdadeiro se o usuário atualizou a reunião no Outlook mas não enviou as atualizações aos participantes. Defina como falso se todas as alterações forem enviadas, ou se o evento for um compromisso sem participantes.|
 |isOnlineMeeting|Booliano| `True`Se esse evento tiver informações de reunião online (ou seja, **onlineMeeting** aponta para um recurso [onlineMeetingInfo](onlinemeetinginfo.md)), caso contrário `false`. O padrão é `false` (**onlineMeeting** é `null`). Opcional. <br> Depois de definir **isOnlineMeeting** como `true`, o Microsoft Graph Inicializa **onlineMeeting**. Subsequentemente, o Outlook ignora todas as alterações feitas em **isOnlineMeeting** e a reunião permanece disponível online. |
 |isOrganizer|Booliano|Defina como verdadeiro se o proprietário do calendário (especificado pela propriedade do **proprietário** do [calendário](calendar.md)) for o organizador do evento (especificado pela propriedade do **organizador** do **evento**). Isso também se aplica se um representante organizou o evento em nome do proprietário.|
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
-|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |location|[Location](location.md)|O local do evento.|
 |locations|[location](location.md) collection|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
 |occurrenceId|Cadeia de caracteres|Um identificador para uma ocorrência em uma série de eventos recorrentes. Nulo se o evento não faz parte de uma série recorrente.<br><br>O formato do valor da propriedade é OID.{seriesMasterId-value}.{occurrence-start-date}. O fuso horário para {occurrence-start-date} é a propriedade recurrenceTimeZone definida para o [recurrenceRange](recurrencerange.md) correspondente.<br><br>Esta propriedade pode identificar qualquer ocorrência em uma série recorrente, incluindo uma ocorrência que foi modificada ou cancelada. Você pode usar esta propriedade para executar todas as operações suportadas pelas ocorrências na série recorrente.|
@@ -139,19 +139,19 @@ Veja a seguir uma representação JSON do recurso
 |onlineMeetingUrl|String|Uma URL para uma reunião online. A propriedade só é definida quando um organizador especifica no Outlook que um evento é uma reunião online como o Skype. Somente leitura.<br>Acesse a URL para entrar em uma reunião online usando **joinUrl**, exposto por meio da propriedade **onlineMeeting** do **evento**. A propriedade **onlineMeetingUrl** será substituído no futuro. |
 |organizer|[Recipient](recipient.md)|O organizador do evento.|
 |originalEndTimeZone|String|O fuso horário de término que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
-|originalStart|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|originalStart|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |originalStartTimeZone|String|O fuso horário de início que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|O padrão de recorrência do evento.|
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
 |responseRequested|Booliano|O padrão é true, representando que o organizador gostaria de ter um convidado para enviar uma resposta para o evento.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
 |sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
-|seriesMasterId|String|A ID do item mestre da série recorrente se este evento for parte de uma série recorrente.|
+|seriesMasterId|Cadeia de caracteres|A ID do item mestre da série recorrente se este evento for parte de uma série recorrente.|
 |showAs|String|O status a ser exibido. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |iniciar|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário do evento. Por padrão, a hora de início é em UTC.|
 |assunto|String|O texto da linha de assunto do evento.|
 |transactionId|Cadeia de caracteres|Um identificador personalizado especificado por um aplicativo cliente para o servidor para evitar operações [POST](../api/calendar-post-events.md) redundantes caso o cliente tente criar o mesmo evento. Isso é útil quando a conectividade de rede baixa faz com que o cliente expire antes de receber uma resposta do servidor para a solicitação anterior de criação de evento do cliente. Depois de definir **transactionId** ao criar um evento, não será possível alterar a **transactionId** em uma atualização subsequente. Essa propriedade só será retornada em um conteúdo de resposta se um aplicativo a tiver definido. Opcional.|
-|type|String|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura|
+|tipo|String|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura|
 |uid|Cadeia de Caracteres|Um identificador exclusivo para eventos de calendário. Para eventos recorrentes, o valor é o mesmo do mestre da série e todas as suas ocorrências, incluindo as exceções. Essa propriedade substituirá a propriedade iCalUid atual definida nos [recursos de evento](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), que é diferente para cada instância de uma série.|
 |webLink|String|A URL para abrir o evento no Outlook na Web.<br/><br/>O Outlook na Web abre o evento no navegador se você estiver conectado à sua caixa de correio. Caso contrário, o Outlook na Web solicitará que você entre.<br/><br/>Este URL não pode ser acessado a partir de um iFrame.|
 

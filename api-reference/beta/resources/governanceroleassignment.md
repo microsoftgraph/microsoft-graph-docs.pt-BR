@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 7206bea058910aa24d6dd907ea495acb6cace0aa
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6d9e1b56a503ffdf1bde6bde6a583b78f8a34851
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443101"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722304"
 ---
 # <a name="governanceroleassignment-resource-type"></a>Tipo de recurso governanceRoleAssignment
 
@@ -23,7 +23,7 @@ O PIM (Privileged Identity Management) dá suporte a dois tipos de atribuições
 1. Atribuição ativa - Representa o acesso direto/ativado aos recursos.
 2. Atribuição qualificada - representa um estágio intermediário de acesso privilegiado a recursos, entre nenhum acesso e acesso direto. Os administradores podem atribuir usuários/grupos com antecedência e, sempre que o acesso for necessário, o acesso é necessário para obter o acesso instantâneo ao recurso `eligible assignment` `activation` por várias `eligible assignment` horas. Após a ativação, `active assignment` um será criado para os usuários/membros do grupo indicarem o status ativado.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método          | Tipo de retorno |Descrição|
 |:------------|:--------|:--------|
@@ -36,16 +36,16 @@ Não `POST` , , ou as operações são `PUT` `PATCH` `DELETE` suportadas no conj
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo      |Descrição|
 |:----------|:----------|:----------|
-|id         |String     |A ID da atribuição de função. Está no formato GUID.|
-|resourceId |String     |Obrigatório. A ID do recurso ao qual a atribuição de função está associada. |
-|roleDefinitionId|String|Obrigatório. A ID da definição de função à qual a atribuição de função está associada. |
-|subjectId|String       |Obrigatório. A ID do assunto ao qual a atribuição de função está associada. |
-|linkedEligibleRoleAssignmentId|String|Se for um e criado devido à `active assignment` ativação em `eligible assignment` um , ele representará a ID `eligible assignment` disso; Caso contrário, o valor será `null` . |
+|id         |Cadeia de caracteres     |A ID da atribuição de função. Está no formato GUID.|
+|resourceId |Cadeia de caracteres     |Obrigatório. A ID do recurso ao qual a atribuição de função está associada. |
+|roleDefinitionId|Cadeia de caracteres|Obrigatório. A ID da definição de função à qual a atribuição de função está associada. |
+|subjectId|Cadeia de caracteres       |Obrigatório. A ID do assunto ao qual a atribuição de função está associada. |
+|linkedEligibleRoleAssignmentId|Cadeia de caracteres|Se for um e criado devido à `active assignment` ativação em `eligible assignment` um , ele representará a ID `eligible assignment` disso; Caso contrário, o valor será `null` . |
 |externalId   |Cadeia de caracteres     |A ID externa do recurso usado para identificar a atribuição de função no provedor.|
-|startDateTime|DateTimeOffset|A hora de início da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|endDateTime|DateTimeOffset|Para uma atribuição de função não permanente, este é o momento em que a atribuição de função será expirada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|assignmentState|String  |O estado da atribuição. O valor pode ser <ul><li> `Eligible` para atribuição qualificada</li><li> `Active` - se ele for atribuído diretamente pelos administradores ou ativado em uma `Active` atribuição qualificada pelos usuários.</li></ul>|
-|memberType|String      |O tipo de membro. O valor pode ser: <ul><li>`Inherited` - a atribuição de função é herdada de um escopo de recurso pai</li><li>`Group`- a atribuição de função não é herdada, mas vem da associação de uma atribuição de grupo</li><li>`User` - a atribuição de função não é herdada nem de uma atribuição de grupo.</li></ul>|
+|startDateTime|DateTimeOffset|A hora de início da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|endDateTime|DateTimeOffset|Para uma atribuição de função não permanente, este é o momento em que a atribuição de função será expirada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|assignmentState|Cadeia de caracteres  |O estado da atribuição. O valor pode ser <ul><li> `Eligible` para atribuição qualificada</li><li> `Active` - se ele for atribuído diretamente pelos administradores ou ativado em uma `Active` atribuição qualificada pelos usuários.</li></ul>|
+|memberType|Cadeia de caracteres      |O tipo de membro. O valor pode ser: <ul><li>`Inherited` - a atribuição de função é herdada de um escopo de recurso pai</li><li>`Group`- a atribuição de função não é herdada, mas vem da associação de uma atribuição de grupo</li><li>`User` - a atribuição de função não é herdada nem de uma atribuição de grupo.</li></ul>|
 
 
 ## <a name="relationships"></a>Relações

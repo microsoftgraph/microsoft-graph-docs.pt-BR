@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso synchronizationSchedule
-description: Define a agenda usada para executar um synchronizationJob.
+description: Define o cronograma usado para executar um Trabalho de sincronização.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: cce48886fd461e52647fc342d707f5d97676faae
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3d0b0a45515be459c436d24f8427f7b84ef1419f
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133359"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722059"
 ---
 # <a name="synchronizationschedule-resource-type"></a>Tipo de recurso synchronizationSchedule
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define a agenda usada para executar um [synchronizationJob](synchronization-synchronizationjob.md).
+Define o cronograma usado para executar uma [sincronizaçãoJob](synchronization-synchronizationjob.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|expiration|DateTimeOffset|Data e hora em que esse trabalho expirará. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|interval|Duration|O intervalo entre ierações de sincronização.|
-|estado|String| Os valores possíveis são: `Active` e `Disabled`.|
+|expiration|DateTimeOffset|Data e hora em que esse trabalho expirará. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|interval|Duration|O intervalo entre iterações de sincronização.|
+|estado|Cadeia de caracteres| Os valores possíveis são: `Active` e `Disabled`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

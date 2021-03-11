@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso eventMessageResponse
+title: Tipo de recurso eventMessageResponse
 description: Uma mensagem que representa uma resposta a uma solicitação de reunião na caixa de correio do organizador da reunião.
 localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2464a980bc0cffb8513d9f303c1f0b32af2dadfa
-ms.sourcegitcommit: 3cd8584827fef6751d40979aa5f950f3c46ff27d
+ms.openlocfilehash: 40c5ea3956d15a9016361d64b1e27b84e9a30e94
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755728"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721863"
 ---
-# <a name="eventmessageresponse-resource-type"></a>tipo de recurso eventMessageResponse
+# <a name="eventmessageresponse-resource-type"></a>Tipo de recurso eventMessageResponse
 
 Namespace: microsoft.graph
 
@@ -22,9 +22,9 @@ Uma mensagem que representa uma resposta a uma solicitação de reunião na caix
 
 Derivado de [eventMessage](eventmessage.md). 
 
-Um organizador que recebe um **eventMessageResponse** com **ResponseType** definido como `tentativelyAccepted` ou `declined` , e que inclui uma propriedade **proposedNewTime** , pode optar por aceitar a proposta. Para fazer isso, primeiro, use a propriedade de navegação de **eventos** do **eventMessageResponse** para acessar o evento correspondente, conforme mostrado neste [exemplo](../api/eventmessage-get.md#example-2). Em seguida, [atualize](../api/event-update.md) o evento associado ao tempo proposto.
+Um organizador que recebe um **eventMessageResponse** com **o responseType** definido como ou , e que inclui uma propriedade `tentativelyAccepted` `declined` **proposedNewTime,** pode optar por aceitar a proposta. Para fazer isso, primeiro, use a propriedade de navegação de eventos **do eventMessageResponse** para acessar o evento correspondente, conforme mostrado neste [exemplo](../api/eventmessage-get.md#example-2).  Em [seguida,](../api/event-update.md) atualize o evento associado para a hora proposta.
 
-Para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de tempo, confira [propor novos horários da reunião](/graph/outlook-calendar-meeting-proposals).
+Para obter mais informações sobre como propor uma hora e como receber e aceitar uma nova proposta de hora, consulte [Propor novos horários de reunião.](/graph/outlook-calendar-meeting-proposals)
 
 ## <a name="methods"></a>Métodos
 
@@ -32,7 +32,7 @@ Para obter mais informações sobre como propor um horário e como receber e ace
 |:-------------|:------------|:------------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage.|
-|[Delete](../api/eventmessage-delete.md) | Nenhum |Excluir o objeto eventMessage.|
+|[Delete](../api/eventmessage-delete.md) | Nenhum(a) |Excluir o objeto eventMessage.|
 |[copy](../api/message-copy.md)|[message](message.md)|Copiar uma mensagem para uma pasta.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
@@ -48,7 +48,7 @@ Para obter mais informações sobre como propor um horário e como receber e ace
 |[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Adicionar um novo anexo a um eventMessage postando na coleção attachments.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
-|[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome.|
+|[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obter uma extensão aberta identificada pelo nome.|
 |**Propriedades estendidas**| | |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |Criar uma ou mais propriedades estendidas de valor único em uma eventMessage nova ou existente.   |
 |[Obter eventMessage com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Obter eventMessages que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
@@ -68,7 +68,7 @@ Para obter mais informações sobre como propor um horário e como receber e ace
 |changeKey|String|A versão da mensagem.|
 |conversationId|String|A ID da conversa à qual o email pertence.|
 |conversationIndex|Edm.Binary|O Índice da conversa à qual o email pertence.|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|A hora de término da reunião solicitada.|
 |flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio da qual a mensagem foi enviada. Na maioria dos casos, esse valor é o mesmo que o da propriedade **remetente**, exceto para cenários de compartilhamento ou delegação. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
@@ -78,40 +78,40 @@ Para obter mais informações sobre como propor um horário e como receber e ace
 |inferenceClassification|String| Os valores possíveis são: `focused` e `other`.|
 |internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | A coleção de cabeçalhos da mensagem, definida por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que fornece detalhes do caminho de rede adotado por uma mensagem do remetente para o destinatário. Somente leitura.|
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
-|isAllDay |Booliano|Indica se o evento dura todo o dia. Ajustar essa propriedade requer ajustar as propriedades **StartDateTime** e **EndDateTime** do evento também.|
-|IsDelegated foi removida|Booliano|True se essa resposta de solicitação de reunião estiver acessível a um representante, caso contrário, false. O padrão é false.|
+|isAllDay |Booliano|Indica se o evento dura o dia inteiro. Ajustar essa propriedade requer o ajuste das **propriedades startDateTime** e **endDateTime** do evento também.|
+|isDelegated|Booliano|True se essa resposta de solicitação de reunião estiver acessível a um representante, caso contrário, false. O padrão é false.|
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
-|isOutOfDate|Booliano|Indica se esta solicitação de reunião foi desfeita por uma solicitação mais recente.|
+|isOutOfDate|Booliano|Indica se essa solicitação de reunião foi feita fora de data por uma solicitação mais recente.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |location|[location](location.md)|O local da reunião solicitada.|
 |meetingMessageType|String| O tipo de mensagem de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |mentionsPreview|[mentionsPreview](mentionspreview.md)|Informações sobre menções na mensagem. Ao processar uma solicitação `GET` /messages, o servidor define essa propriedade e a inclui na resposta por padrão. O servidor retornará null se não houver menções na mensagem. Opcional. |
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
-|proposedNewTime|[timeSlot](timeslot.md)|Uma data/hora alternativa propostas por um convidado para uma solicitação de reunião para iniciar e finalizar. Somente leitura. Não filtrável.|
-|receivedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|proposedNewTime|[timeSlot](timeslot.md)|Uma data/hora alternativa proposta por um convidado para que uma solicitação de reunião seja inicial e final. Somente leitura. Não filtre.|
+|receivedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da reunião solicitada.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
-|responseType|string| Especifica o tipo de resposta a uma solicitação de reunião. Os valores possíveis são: `tentativelyAccepted`, `accepted`, `declined`. Para o tipo eventMessageResponse, `none` , `organizer` e `notResponded` não são suportados. Somente leitura. Não filtrável.|
+|responseType|cadeia de caracteres| Especifica o tipo de resposta a uma solicitação de reunião. Os valores possíveis são: `tentativelyAccepted`, `accepted`, `declined`. Para o tipo eventMessageResponse, `none` , e não há `organizer` `notResponded` suporte. Somente leitura. Não filtre.|
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [ou ao enviar uma mensagem como um delegado](/graph/outlook-share-delegate-calendar.md). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
-|sentDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|O horário de início da reunião solicitada.|
+|sentDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|A hora de início da reunião solicitada.|
 |assunto|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
-|type|String|O tipo de reunião solicitada: `singleInstance` , `occurence` , `exception` , `seriesMaster` .|
+|tipo|Cadeia de caracteres|O tipo de reunião solicitada: `singleInstance` , `occurence` , , `exception` `seriesMaster` .|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
 |UnsubscribeData|String|As entradas válidas analisadas no cabeçalho List-Unsubscribe.  Esses são os dados para o comando mail no cabeçalho List-Unsubscribe, se a propriedade UnsubscribeEnabled for true.|
 |UnsubscribeEnabled|Booliano|Indica se a mensagem está habilitada para o cancelamento da assinatura.  valueTrue se o cabeçalho list-Unsubscribe estiver em conformidade com o rfc-2369.|
-|webLink|String|A URL para abrir a mensagem no Outlook na Web.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook na Web.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio através do Outlook na Web. Você será solicitado a fazer login se já não estiver conectado no navegador.<br><br>Esta URL não pode ser acessada de dentro de um iFrame.|
+|webLink|String|O URL para abrir a mensagem no Outlook na Web.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se a entrada for definida como 0, o navegador mostrará a mensagem no painel de revisão do Outlook na Web.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio através do Outlook na Web. Você será solicitado a fazer o login, se ainda não estiver conectado com o navegador.<br><br>Este URL não pode ser acessado a partir de um iFrame.|
 
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|attachments|Coleção [attachment](attachment.md)|O conjunto de anexos de [Fileattachment](fileattachment.md), [hiperattachment](itemattachment.md)e [referenceAttachment](referenceattachment.md) para a mensagem. Somente leitura. Anulável.|
+|attachments|Coleção [attachment](attachment.md)|A coleção [de anexos fileAttachment,](fileattachment.md) [itemAttachment](itemattachment.md)e [referenceAttachment](referenceattachment.md) para a mensagem. Somente leitura. Anulável.|
 |event|[event](event.md)| O evento associado à mensagem de evento. A pressuposição dos participantes ou recursos da sala é que o Atendedor de Calendário esteja definido para atualizar automaticamente o calendário com um evento quando mensagens de evento de solicitação de reunião chegarem. Propriedade de navegação.  Somente leitura.|
 |extensions|[extension](extension.md) collection| A coleção de extensões abertas definidas para eventMessage. Somente leitura. Anulável.|
 |menções|Coleção [mention](mention.md) | Uma coleção de menções na mensagem, ordenada pelo **createdDateTime**, do mais novo para o mais antigo. Por padrão, um `GET` /messages não retorna essa propriedade, a menos que você aplique `$expand` à propriedade.|

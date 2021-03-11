@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 575a3d081c7b75b648890de6f0c9d91c2d1fdb24
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 08611fc9a98931dabbf66802df37a346d4117b58
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442905"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721821"
 ---
 # <a name="orgcontact-resource-type"></a>Tipo de recurso orgContact
 
@@ -44,18 +44,18 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | addresses | [Coleção physicalOfficeAddress](physicalofficeaddress.md) | Endereços postais para esse contato organizacional. Por enquanto, um contato só pode ter um endereço físico. |
 | companyName | String | Nome da empresa à que esse contato organizacional pertence. |
 | department | String | O nome do departamento no qual o contato funciona. |
-| displayName | String | Nome de exibição para esse contato organizacional. |
-| givenName | String | Primeiro nome para esse contato organizacional. |
-| id | String | Identificador exclusivo para esse contato organizacional. |
+| displayName | Cadeia de caracteres | Nome de exibição para esse contato organizacional. |
+| givenName | Cadeia de caracteres | Primeiro nome para esse contato organizacional. |
+| id | Cadeia de caracteres | Identificador exclusivo para esse contato organizacional. |
 | jobTitle | String | Cargo para esse contato organizacional. |
 | email | String | O endereço SMTP do contato, por exemplo, "jeff@contoso.onmicrosoft.com". |
 | mailNickname | String | Alias de email (parte do endereço de email pré-pendente do símbolo @) para esse contato organizacional. |
-| onPremisesLastSyncDateTime | DateTimeOffset | Data e hora em que esse contato organizacional foi sincronizado pela última vez do AD local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
+| onPremisesLastSyncDateTime | DateTimeOffset | Data e hora em que esse contato organizacional foi sincronizado pela última vez do AD local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
 | onPremisesProvisioningErrors | coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md) | Lista de erros de provisionamento de sincronização para esse contato organizacional. |
 | onPremisesSyncEnabled | Booliano | **true** se esse objeto for sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado e agora mestre no Exchange; **null** se esse objeto nunca tiver sido sincronizado de um diretório local (padrão). |
 | telefones | Coleção [phone](phone.md) | Lista de telefones para esse contato organizacional. Os tipos de telefone podem ser móveis, comerciais e businessFax. Somente um de cada tipo pode estar presente na coleção. |
 | proxyAddresses | Coleção de cadeias de caracteres | Por exemplo: "SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Oferece suporte a $filter. |
-| surname | String | Sobrenome para esse contato organizacional. |
+| surname | Cadeia de caracteres | Sobrenome para esse contato organizacional. |
 
 ## <a name="relationships"></a>Relações
 

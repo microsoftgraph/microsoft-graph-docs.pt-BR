@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 6513b8bb77316f291268f7a761c0c1ff4f7160ce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 928be5ed3245b19c64cd09a61fea6a1ead0054c7
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067399"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722173"
 ---
 # <a name="alert-resource-type"></a>tipo de alerta do recurso
 
@@ -29,7 +29,7 @@ Os alertas podem ser recuperados de diferentes provedores de segurança listados
 |[Obter alerta](../api/alert-get.md) | [alert](alert.md) |Leia as propriedades e os relacionamentos do objeto de alerta.|
 |[Atualizar alertas](../api/alert-update.md) | [alert](alert.md) |Atualize um objeto de alerta. |
 |[Listar alertas](../api/alert-list.md) | conjunto [alerta](alert.md)  |Obtenha uma coleção de objetos de alerta.|
-|[Atualizar alertas](../api/alert-updatealerts.md)|conjunto [alerta](alert.md) |Atualizar vários objetos de alerta.|
+|[Atualizar alertas](../api/alert-updatealerts.md)|conjunto [alerta](alert.md) |Atualize vários objetos de alerta.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,27 +40,27 @@ Os alertas podem ser recuperados de diferentes provedores de segurança listados
 |azureSubscriptionId|String|ID da assinatura do Azure, presente se o alerta estiver relacionado a um recurso do Azure.|
 |azureTenantId |String|Locatário do Azure Active Directory. Obrigatório. |
 |category|String|Categoria de alerta (por exemplo, credentialTheft ransomware, etc.).|
-|closedDateTime|DateTimeOffset|Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` (suporta[atualização](../api/alert-update.md)).|
+|closedDateTime|DateTimeOffset|Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 `2014-01-01T00:00:00Z` é (suporta [atualização](../api/alert-update.md)).|
 |cloudAppStates|conjunto [cloudAppSecurityState](cloudappsecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre os aplicativos de nuvem relacionados a esse alerta.|
 |comentários|String collection|Comentários fornecidos pelo cliente no alerta (gerenciamento de alerta de cliente) (suporta [atualização](../api/alert-update.md)).|
 |confidence|Int32|Confiança da lógica de detecção (porcentagem entre 1 e 100).|
-|createdDateTime |DateTimeOffset|Hora em que o alerta foi criado pelo provedor de alerta. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Obrigatório.|
+|createdDateTime |DateTimeOffset|Hora em que o alerta foi criado pelo provedor de alerta. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Obrigatório.|
 |description|String|Descrição de alerta.|
 |detectionIds|String collection|Conjunto de alertas relacionados a essa entidade de alerta (cada alerta é enviado ao SIEM como um registro separado).|
-|eventDateTime |DateTimeOffset|Tempo no qual o(s) evento(s) que serviu (serviram) como acionador(es) para gerar o alerta ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Obrigatório.|
+|eventDateTime |DateTimeOffset|Tempo no qual o(s) evento(s) que serviu (serviram) como acionador(es) para gerar o alerta ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Obrigatório.|
 |comentários|alertFeedback|Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. (suporta [atualização](../api/alert-update.md))|
 |fileStates|[fileSecurityState](filesecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre os arquivos relacionados a esse alerta.|
-|historyStates|coleção [alertHistoryState](alerthistorystate.md)| Uma coleção de **alertHistoryStates** que consiste em um log de auditoria de todas as atualizações feitas em um alerta. |
+|historyStates|[Coleção alertHistoryState](alerthistorystate.md)| Uma coleção de **alertHistoryStates** que inclui um log de auditoria de todas as atualizações feitas em um alerta. |
 |hostStates|Conjunto [hostSecurityState](hostsecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre o(s) host(s) relacionados a esse alerta.|
 |id |String|Identificador GUID/exclusivo gerado pelo provedor. Somente leitura. Obrigatório.|
 |incidentIds|Coleção de cadeias de caracteres|IDs de incidentes relacionados ao alerta atual.|
-|lastModifiedDateTime|DateTimeOffset|Hora na qual entidade alerta foi modificada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset|Hora na qual entidade alerta foi modificada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |malwareStates|conjunto [malwareState](malwarestate.md)|Inteligência contra ameaças referentes ao malware relacionado a esse alerta.|
 |networkConnections|conjunto [networkConnection](networkconnection.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre as conexões de rede relacionadas a esse alerta.|
 |processos|conjunto [processo](process.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre o processo ou processos relacionados a esse alerta.|
 |recommendedActions|String collection|Ações recomendadas pelo provedor/fornecedor a serem tomadas como resultado do alerta (por exemplo, isolar máquina, enforce2FA, host de imagem de imagem).|
 |registryKeyStates|conjunto [registryKeyState](registrykeystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre as chaves de registro relacionadas a esse alerta.|
-|securityResources|coleção [securityResource](securityResource.md)|Recursos relacionados ao alerta atual. Por exemplo, para alguns alertas, isso pode ter o valor de recurso do Azure.|
+|securityResources|Coleção de [securityResource](securityResource.md)|Recursos relacionados ao alerta atual. Por exemplo, para alguns alertas, isso pode ter o valor de recurso do Azure.|
 |severity |alertSeverity|Gravidade de alerta, definida pelo provedor/fornecedor. Os valores possíveis são: `unknown`, `informational`, `low`, `medium`, `high`. Obrigatório.|
 |sourceMaterials|String collection|Hiperlinks (URIs) para o material de origem relacionado ao alerta, por exemplo, a interface do usuário do provedor para alertas ou pesquisa de log, etc.|
 |status |alertStatus|Status de alerta de ciclo de vida (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`. (suporta [atualização](../api/alert-update.md)). Obrigatório.|

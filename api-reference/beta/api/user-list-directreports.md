@@ -2,15 +2,15 @@
 title: Listar directReports
 description: Obtenha relatórios diretos do usuário.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: dc4e768e4604c761c6888a12e76bb23af93971d2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6598db1fa98e3fb91a70040c9bf3ffe6e9a0c86f
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981838"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721982"
 ---
 # <a name="list-directreports"></a>Listar directReports
 

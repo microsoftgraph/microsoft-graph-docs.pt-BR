@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso agreementAcceptance
-description: Representa o status atual de um usuário dentro do escopo dos termos de uso personalizáveis de uma empresa, fornecido pelo Azure Active Directory (Azure AD).
+title: Tipo de recurso agreementAcceptance
+description: Representa o status atual de um usuário dentro do escopo dos termos de uso personalizáveis de uma empresa com o Azure Active Directory (Azure AD).
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: f3bad64c1cb691c5a5f5c1c5377bcb4e0188f184
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 55e0be212c0f7a9e655acff03606eda851a0e5c6
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067500"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722479"
 ---
-# <a name="agreementacceptance-resource-type"></a>tipo de recurso agreementAcceptance
+# <a name="agreementacceptance-resource-type"></a>Tipo de recurso agreementAcceptance
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o status atual de um usuário dentro do escopo dos termos de uso personalizáveis de uma empresa, fornecido pelo Azure Active Directory (Azure AD).
+Representa o status atual de um usuário dentro do escopo dos termos de uso personalizáveis de uma empresa com o Azure Active Directory (Azure AD).
 
 <!--
 ## Methods
@@ -34,16 +34,16 @@ Representa o status atual de um usuário dentro do escopo dos termos de uso pers
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |agreementFileId|Cadeia de caracteres|ID do arquivo de contrato aceito pelo usuário.|
-|agreementid|Cadeia de caracteres|ID do contrato.|
+|agreementId|Cadeia de caracteres|ID do contrato.|
 |deviceDisplayName|Cadeia de caracteres|O nome de exibição do dispositivo usado para aceitar o contrato.|
 |deviceId|Cadeia de caracteres|O identificador exclusivo do dispositivo usado para aceitar o contrato.|
 |deviceOSType|Cadeia de caracteres|O sistema operacional usado para aceitar o contrato.|
 |deviceOSVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo usado para aceitar o contrato.    |
-|expirationDateTime|DateTimeOffset|A data e hora da validade da aceitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|expirationDateTime|DateTimeOffset|A data de expiração da aceitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |id|String| Somente leitura.|
-|recordedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|recordedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |estado|string| Os valores possíveis são: `accepted` e `declined`.|
-|userDisplayName|Cadeia de caracteres|Nome para exibição do usuário quando a aceitação foi registrada.|
+|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário quando a aceitação foi registrada.|
 |userEmail|Cadeia de caracteres|Email do usuário quando a aceitação foi registrada.|
 |userId|Cadeia de caracteres|ID do usuário que aceitou o contrato.|
 |userPrincipalName|Cadeia de caracteres|UPN do usuário quando a aceitação foi registrada.|

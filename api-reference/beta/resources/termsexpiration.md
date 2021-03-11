@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso termsExpiration
+title: tipo de recurso termsExpiration
 description: Fornece configurações adicionais ao definir a expiração agendada do contrato.
 localization_priority: Normal
 ms.prod: governance
 author: raprakasMSFT
 doc_type: resourcePageType
-ms.openlocfilehash: 3f31489a80c87dd17a31500818c0c650c57c8a7c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 29489f3e225b24cc57c20826d9a6071c2a501154
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128502"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721723"
 ---
-# <a name="termsexpiration-resource-type"></a>Tipo de recurso termsExpiration
+# <a name="termsexpiration-resource-type"></a>tipo de recurso termsExpiration
 
 Namespace: microsoft.graph
 
@@ -24,7 +24,7 @@ Fornece configurações adicionais ao definir a expiração agendada do contrato
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| startDateTime|DateTimeOffset | DateTime quando o contrato está definido para expirar para todos os usuários. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
+| startDateTime|DateTimeOffset | DateTime quando o contrato está definido para expirar para todos os usuários. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 | frequency| Duration | Representa a frequência na qual os termos expiram, após sua primeira expiração, conforme definido em **startDateTime**. O valor é representado no formato ISO 8601 por durações. Por exemplo, `PT1M` representa um período de tempo de 1 mês.|
 
 ## <a name="json-representation"></a>Representação JSON

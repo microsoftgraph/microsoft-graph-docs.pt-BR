@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso networkConnection
+title: Tipo de recurso networkConnection
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: c111082fe0b9a2f2090de3fe3abb71a96fd4a80d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2221f38c4ba8f8e71030d540985fb93f415bfa19
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026583"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722106"
 ---
-# <a name="networkconnection-resource-type"></a>tipo de recurso networkConnection
+# <a name="networkconnection-resource-type"></a>Tipo de recurso networkConnection
 
 Namespace: microsoft.graph
 
@@ -24,54 +24,54 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|applicationName|Cadeia de caracteres|Nome do aplicativo que gerencia a conexão de rede (por exemplo, Facebook, SMTP, etc.).|
-|destinationAddress|String|Endereço IP de destino (da conexão de rede).|
-|destinationDomain|String|Parte do domínio de destino da URL de destino. (por exemplo, ' www.contoso.com ').|
-|destinationLocation|String|Local (por mapeamento de endereço IP) associado ao destino de uma conexão de rede.|
-|destinationPort|String|Porta de destino (da conexão de rede).|
-|destinationUrl|String|URL de conexão de rede/cadeia de caracteres URI-excluindo parâmetros. (por exemplo, ' www.contoso.com/products/default.htmL')|
+|applicationName|Cadeia de caracteres|Nome do aplicativo que gerencia a conexão de rede (por exemplo, Facebook, SMTP etc.).|
+|destinationAddress|Cadeia de caracteres|Endereço IP de destino (da conexão de rede).|
+|destinationDomain|Cadeia de caracteres|Parte do domínio de destino da URL de destino. (por exemplo, 'www.contoso.com').|
+|destinationLocation|Cadeia de caracteres|Local (por mapeamento de endereço IP) associado ao destino de uma conexão de rede.|
+|destinationPort|Cadeia de caracteres|Porta de destino (da conexão de rede).|
+|destinationUrl|Cadeia de caracteres|Cadeia de caracteres url/URI de conexão de rede - excluindo parâmetros. (por exemplo, 'www.contoso.com/products/default.html')|
 |direction|connectionDirection|Direção da conexão de rede. Os valores possíveis são: `unknown`, `inbound`, `outbound`.|
-|domainRegisteredDateTime|DateTimeOffset|Data em que o domínio de destino foi registrado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|localDnsName|String|A resolução de nome DNS local da forma como aparece no cache de DNS local do host (por exemplo, caso o arquivo "hosts" tenha sido adulterado).|
-|natDestinationAddress|String|Endereço IP de destino de conversão de endereço de rede.|
-|natDestinationPort|String|Porta de destino de conversão de endereço de rede.|
-|natSourceAddress|String|Endereço IP de origem de conversão de endereço de rede.|
-|natSourcePort|String|Porta de origem de conversão de endereço de rede.|
-|RDP|securityNetworkProtocol|Protocolo de rede. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `unknown` `ip` `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader` , `ipSecEncapsulatingSecurityPayload` , `ipSecAuthenticationHeader` ,, `icmpV6` `ipv6NoNextHeader` , `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII` ,,,,,.|
-|riskScore|String|Provedor gerado/Pontuação de risco calculado da conexão de rede. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
-|sourceAddress|String|Endereço IP de origem (ou seja, origem) (da conexão de rede).|
-|sourceLocation|String|Local (por mapeamento de endereço IP) associado à origem de uma conexão de rede.|
-|sourcePort|String|Porta IP de origem (ou seja, origem) (da conexão de rede).|
+|domainRegisteredDateTime|DateTimeOffset|Data em que o domínio de destino foi registrado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|localDnsName|Cadeia de caracteres|A resolução de nome DNS local como ela aparece no cache DNS local do host (por exemplo, caso o arquivo 'hosts' tenha sido adulterado).|
+|natDestinationAddress|Cadeia de caracteres|Endereço de rede Endereço endereço endereço IP de destino.|
+|natDestinationPort|Cadeia de caracteres|Porta de destino de conversão de endereço de rede.|
+|natSourceAddress|Cadeia de caracteres|Endereço de rede Endereço endereço IP de origem.|
+|natSourcePort|Cadeia de caracteres|Porta de origem de conversão de endereço de rede.|
+|protocol|securityNetworkProtocol|Protocolo de rede. Os valores possíveis são: `unknown` , , , , , , , , `ip` `icmp` , `igmp` `ggp` , `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` , `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII`|
+|riskScore|Cadeia de caracteres|Pontuação de risco gerada/calculada do provedor da conexão de rede. Intervalo de valores recomendado de 0 a 1, que equivale a uma porcentagem.|
+|sourceAddress|Cadeia de caracteres|Endereço IP de origem (ou seja, origem) (da conexão de rede).|
+|sourceLocation|Cadeia de caracteres|Local (por mapeamento de endereço IP) associado à origem de uma conexão de rede.|
+|sourcePort|Cadeia de caracteres|Porta IP de origem (ou seja, origem) (da conexão de rede).|
 |status|connectionStatus|Status da conexão de rede. Os valores possíveis são: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
-|urlParameters|String|Parâmetros (sufixo) da URL de destino.|
+|urlParameters|Cadeia de caracteres|Parâmetros (sufixo) da URL de destino.|
 
-### <a name="securitynetworkprotocol-values"></a>valores de securityNetworkProtocol
+### <a name="securitynetworkprotocol-values"></a>valores securityNetworkProtocol
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|-1|Protocolo desconhecido.|
-|IP|,0|Protocolo de Internet.|
-|ICMP|1 | Protocolo de mensagens de controle da Internet.|
-|IGMP|2 | Protocolo de gerenciamento de grupos da Internet.|
-|ggp|3 | Gateway para protocolo gateway.|
-|IPv4|4 | Protocolo IP versão 4.|
-|tcp|6 | Protocolo de controle de transmissão.|
-|confiável|12 | Protocolo de pacote universal do PARC.|
-|via|17 | Protocolo de datagrama de usuário.|
-|IDP|22| Protocolo de datagrama da Internet.|
-|IPv6|41| Protocolo IP versão 6 (IPv6).|
-|ipv6RoutingHeader|43| cabeçalho de roteamento IPv6.|
-|ipv6FragmentHeader|44| cabeçalho de fragmento IPv6.|
-|ipSecEncapsulatingSecurityPayload|50| cabeçalho de carga de segurança de encapsulamento IPv6.|
-|ipSecAuthenticationHeader|51| cabeçalho de autenticação IPv6.|
-|icmpV6|58| Protocolo de mensagens de controle da Internet para IPv6.|
-|ipv6NoNextHeader|59| IPv6 sem cabeçalho seguinte.|
-|ipv6DestinationOptions|60| cabeçalho de opções de destino IPv6.|
-|término|77| Protocolo de disco de rede (não oficial).|
-|-|255| Protocolo de pacote IP bruto.|
-|roteador|1000| Protocolo Internet Packet Exchange.|
-|SPX|1256| Protocolo de troca de pacotes sequenciado.|
-|spxII|1257| Protocolo de troca de pacotes de versão 2.|
+|ip|0|Protocolo Internet.|
+|icmp|1| Protocolo de Mensagem de Controle da Internet.|
+|igmp|2 | Protocolo de Gerenciamento de Grupo da Internet.|
+|ggp|3 | Protocolo gateway para gateway.|
+|ipv4|4 | Protocolo internet versão 4.|
+|tcp|6 | Protocolo de Controle de Transmissão.|
+|cachorro-do-cachorro|12 | Protocolo de Pacote Universal do PARC.|
+|udp|17 | Protocolo datagram do usuário.|
+|idp|22| Protocolo Datagram da Internet.|
+|ipv6|41| Protocolo internet versão 6 (ipv6).|
+|ipv6RoutingHeader|43| Header de roteamento ipv6.|
+|ipv6FragmentHeader|44| Header de fragmento ipv6.|
+|ipSecEncapsulatingSecurityPayload|50| ipv6 Encapsulando o header de Carga de Segurança.|
+|ipSecAuthenticationHeader|51| Header de autenticação ipv6.|
+|icmpV6|58| Protocolo de Mensagem de Controle da Internet para ipv6.|
+|ipv6NoNextHeader|59| ipv6 Nenhum próximo header.|
+|ipv6DestinationOptions|60| Header de Opções de Destino ipv6.|
+|nd|77| Protocolo De Disco Líquido (não oficial).|
+|raw|255| Protocolo de pacote IP bruto.|
+|ipx|1000| Protocolo Exchange de Pacotes da Internet.|
+|spx|1256| Protocolo de Exchange de Pacotes Sequenciados.|
+|spxII|1257| Protocolo sequenced Packet Exchange versão 2.|
 
 ## <a name="json-representation"></a>Representação JSON
 

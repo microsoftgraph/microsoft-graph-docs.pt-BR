@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessPackageResourceEnvironment
-description: Um ambiente de recurso do pacote de acesso é uma referência ao ambiente de geolocalização no qual um recurso está localizado.
+description: Um ambiente de recurso do pacote de acesso é uma referência ao ambiente de localização geográfica no qual um recurso está localizado.
 author: hanki-microsoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2f03e2c754ea09cdc797b71d4ef59372ac47ff9b
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 09bd318036874bb52bfab0ed522a2948cbe83233
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272515"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722192"
 ---
 # <a name="accesspackageresourceenvironment-resource-type"></a>Tipo de recurso accessPackageResourceEnvironment
 
@@ -18,28 +18,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No Gerenciamento de Direitos do [Azure AD,](entitlementmanagement-root.md)um ambiente de recursos do pacote de acesso é uma referência ao ambiente de geolocalização no qual um recurso está localizado. Esse ambiente é fornecido automaticamente como parte do Gerenciamento de Direitos do Azure AD. A API só é aplicável a sites multi-geo do SharePoint Online.
+No [Azure AD Entitlement Management](entitlementmanagement-root.md), um ambiente de recurso do pacote de acesso é uma referência ao ambiente de localização geográfica no qual um recurso está localizado. Esse ambiente é fornecido automaticamente como parte do Gerenciamento de Direitos do Azure AD. A API só é aplicável a sites multi-geo do SharePoint Online.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar accessPackageResourceEnvironments](../api/accesspackageresourceenvironment-list.md)|[Coleção accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Recupere uma lista de [objetos accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)|
-|[Acessar AccessPackageResourceEnvironment](../api/accesspackageresourceenvironment-get.md)|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Leia as propriedades e os relacionamentos de um [objeto accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)|
+|[Listar accessPackageResourceEnvironments](../api/accesspackageresourceenvironment-list.md)|[coleção accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Recupere uma lista de [objetos accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)|
+|[Obter accessPackageResourceEnvironment](../api/accesspackageresourceenvironment-get.md)|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Leia as propriedades e as relações de um [objeto accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |connectionInfo|[connectionInfo](../resources/connectioninfo.md)|Informações de conexão de um ambiente usado para se conectar a um recurso. |
 |createdBy|Cadeia de caracteres|O nome de exibição do usuário que criou esse objeto.|
-|createdDateTime|DateTimeOffset|A data e a hora em que esse objeto foi criado. <br>O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 `'2014-01-01T00:00:00Z'` será.|
-|description|String|A descrição deste *objeto accessPackageResourceEnvironment.*|
-|displayName|String|O nome de exibição deste objeto.|
-|id|String|O identificador exclusivo atribuído pelo sistema do objeto.|
-|isDefaultEnvironment|Booliano|Determina se esse é o ambiente padrão ou não. Ele é definido para todos os sistemas de origem estáticos, como grupos do `true` Azure AD e aplicativos do Azure AD.|
-|modifiedBy|String|O nome de exibição da entidade que modificou esse objeto pela última vez.|
-|modifiedDateTime|DateTimeOffset|A data e a hora em que esse objeto foi modificado pela última vez. <br>O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 `'2014-01-01T00:00:00Z'` será. |
-|originId|String|O identificador exclusivo deste ambiente no sistema de origem.|
-|originSystem|String|O tipo do recurso no sistema de origem, como `SharePointOnline` . Oferece suporte para `$filter`.|
+|createdDateTime|DateTimeOffset|A data e a hora em que esse objeto foi criado. <br>O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|description|Cadeia de caracteres|A descrição desse *objeto accessPackageResourceEnvironment.*|
+|displayName|Cadeia de caracteres|O nome de exibição deste objeto.|
+|id|Cadeia de caracteres|O identificador exclusivo atribuído pelo sistema do objeto.|
+|isDefaultEnvironment|Booliano|Determina se esse é o ambiente padrão ou não. Ele é definido como `true` para todos os sistemas de origem estática, como grupos do Azure AD e Aplicativos do Azure AD.|
+|modifiedBy|Cadeia de caracteres|O nome de exibição da entidade que modificou esse objeto pela última vez.|
+|modifiedDateTime|DateTimeOffset|A data e a hora em que esse objeto foi modificado pela última vez. <br>O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
+|originId|Cadeia de caracteres|O identificador exclusivo desse ambiente no sistema de origem.|
+|originSystem|Cadeia de caracteres|O tipo do recurso no sistema de origem, como `SharePointOnline` . Oferece suporte para `$filter`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

@@ -1,16 +1,16 @@
 ---
 title: Atualizar synchronizationTemplate
-description: Atualize (substitua) o modelo de sincronização associado a um determinado aplicativo.
+description: Atualizar (substituir) o modelo de sincronização associado a um determinado aplicativo.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: b388c4e63eb30f7ad9fc8cb65a3afed305f12926
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 133f503ee6361619581cea058fbf3a47a8c7de01
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137232"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722010"
 ---
 # <a name="update-synchronizationtemplate"></a>Atualizar synchronizationTemplate
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize (substitua) o modelo de sincronização associado a um determinado aplicativo.
+Atualizar (substituir) o modelo de sincronização associado a um determinado aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,12 +27,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.|
-|Aplicativo                            |Sem suporte.| 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH application/{id}/synchronization/templates/{templateId}
+PATCH applications/{id}/synchronization/templates/{templateId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,7 +54,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ##### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação. 
 
->**Observação:** O objeto de solicitação mostrado aqui é encurtado para leitura. Inclua todas as propriedades em uma chamada real.
+>**Observação:** O objeto request mostrado aqui é reduzido para capacidade de leitura. Inclua todas as propriedades em uma chamada real.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

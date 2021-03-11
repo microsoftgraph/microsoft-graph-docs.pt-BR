@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso educationAssignmentGrade
-description: " no entanto, todos os tipos de gradação (pontos, passar/falhar e assim por diante) são subclasses dessa"
+title: Tipo de recurso educationAssignmentGrade
+description: " no entanto, todos os tipos de classificação (pontos, passagem/falha e assim por diante) são subclasses disso"
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 41e981d268718a94e6b28df6b43c4c2f931b7ad2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 84baeb3a0e3efeee0e5f7e7f6f7d5f6d8f285f59
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013745"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722451"
 ---
-# <a name="educationassignmentgrade-resource-type"></a>tipo de recurso educationAssignmentGrade
+# <a name="educationassignmentgrade-resource-type"></a>Tipo de recurso educationAssignmentGrade
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o objeto **graduação** em um envio. Este é um tipo abstrato que nunca será instanciado; no entanto, todos os tipos de gradação (pontos, passar/falhar e assim por diante) são subclasses desse tipo de recurso. Esse objeto também controla quem está fazendo a gradação. Isso é usado na propriedade **enmisse.**
+Representa o **objeto Grade** em um Envio. Esse é um tipo abstrato que nunca será instaurou; no entanto, todos os tipos de classificação (pontos, passagem/falha e assim por diante) são subclasses desse tipo de recurso. Esse objeto também rastreia quem está fazendo a classificação. Isso é usado na **propriedade submission.grade.**
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|gradedBy|[identitySet](identityset.md)| Usuário que fazia a gradação. |
-|gradedDateTime|DateTimeOffset| Momento no momento em que a classificação foi aplicada a este objeto de envio. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|gradedBy|[identitySet](identityset.md)| Usuário que fez a classificação. |
+|gradedDateTime|DateTimeOffset| Momento no tempo em que a nota foi aplicada a esse objeto de envio. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 
 ## <a name="json-representation"></a>Representação JSON
 

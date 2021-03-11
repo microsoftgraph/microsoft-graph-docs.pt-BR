@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 10a4bd64fd8776b1d50d52d5fd9130076417dc85
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9ed43ccabfbd2b5389525ebec02ecd04edb475b3
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128593"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721814"
 ---
 # <a name="outlookitem-resource-type"></a>Tipo de recurso outlookItem
 
@@ -44,13 +44,13 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categories|Coleção de cadeias de caracteres||
-|changeKey|String||
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|changeKey|Cadeia de caracteres||
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |id|String| Somente leitura.|
-|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
