@@ -445,7 +445,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1149,9 +1149,10 @@ items:
         items:
           - name: Visão Geral
             href: resources/communications-api-overview.md
-          - name: Chamada
-            href: resources/call.md
+          - name: Chamadas
             items:
+              - name: Chamada
+                href: resources/call.md
               - name: Criar
                 href: api/application-post-calls.md
               - name: Obter
@@ -1218,9 +1219,10 @@ items:
                     href: resources/callrecords-session.md
                   - name: Listar sessões
                     href: api/callrecords-session-list.md
-          - name: Reunião online
-            href: resources/onlinemeeting.md
+          - name: Reuniões on-line
             items:
+              - name: Reunião online
+                href: resources/onlinemeeting.md
               - name: Criar
                 href: api/application-post-onlinemeetings.md
               - name: Obter
@@ -4896,7 +4898,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Search
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta

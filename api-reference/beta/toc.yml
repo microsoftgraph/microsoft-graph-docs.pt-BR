@@ -253,7 +253,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contatos
+          - name: Contacts
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -1322,9 +1322,10 @@ items:
         items:
           - name: Visão Geral
             href: resources/communications-api-overview.md
-          - name: Chamada
-            href: resources/call.md
+          - name: Chamadas
             items:
+              - name: Chamada
+                href: resources/call.md
               - name: Criar
                 href: api/application-post-calls.md
               - name: Obter
@@ -1400,9 +1401,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Sessão
+              - name: Session
                 items:
-                  - name: Sessão
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Lista
                     href: api/callrecords-session-list.md
@@ -1418,9 +1419,10 @@ items:
                     href: resources/callrecords-directroutinglogrow.md
                   - name: Listar chamadas de roteamento direto
                     href: api/callrecords-callrecord-getdirectroutingcalls.md
-          - name: Reunião online
-            href: resources/onlinemeeting.md
+          - name: Reuniões on-line
             items:
+              - name: Reunião online
+                href: resources/onlinemeeting.md
               - name: Criar
                 href: api/application-post-onlinemeetings.md
               - name: Obter
@@ -11685,7 +11687,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Excluir
                     href: api/educationalactivity-delete.md
-              - name: Endereço de email
+              - name: Email
                 items:
                   - name: Email do item
                     href: resources/itememail.md
