@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 284a53ab713be49d29c19a6d4b69b3b51047977f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 37a9d548e0eac3d07a66ca4b28c243c076a743bb
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137358"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721534"
 ---
 # <a name="outlookitem-resource-type"></a>Tipo de recurso outlookItem
 
@@ -43,11 +43,11 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|categories|String collection|As categorias associadas ao item|
-|changeKey|String|Identifica a versão do item. Toda vez que o item é alterado, changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|Categorias|Coleção de cadeias de caracteres|As categorias associadas ao item|
+|changeKey|Cadeia de caracteres|Identifica a versão do item. Sempre que o item for alterado, changeKey também será alterado. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |id|String| Somente leitura.|
-|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 
 ## <a name="relationships"></a>Relações
 Nenhum

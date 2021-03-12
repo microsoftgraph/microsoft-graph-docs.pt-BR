@@ -3,14 +3,14 @@ title: Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 description: 'Com o Microsoft Graph, você pode acessar recursos do Azure Active Directory (Azure AD) para habilitar cenários como gerenciar funções de administrador (diretório), convidando usuários externos para uma organização e, se você for um Provedor de Solução na Nuvem (CSP), gerenciar dados do cliente. O Microsoft Graph também fornece métodos que os aplicativos podem usar para, por exemplo, descobrir informações sobre grupo transitivo e associações de função de usuário. '
 localization_priority: Priority
 author: dkershaw10
-ms.prod: identity-access
+ms.prod: identity-and-access
 doc_type: conceptualPageType
-ms.openlocfilehash: c18ebf4b140b6103162591fe4848e04aba83a8a0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f6a7d12d374efb9097db3d8d851599bdfd3a66df
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129811"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720447"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
@@ -47,8 +47,9 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | Obter informações sobre uma organização, como seu endereço comercial, contatos de notificação e técnicos, os planos de serviço em que está inscrita em e os domínios associados a ela. | [organization](../resources/organization.md) | N/D |
 | Obter informações sobre SKUs do serviço nos quais a empresa está inscrita. | [subscribedSku](../resources/subscribedsku.md) | N/D |
 | Convidar usuários externos (convidado) para uma organização. | [invitation](../resources/invitation.md) | [O que é a colaboração B2B do Azure AD?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
+| Gerenciar a identidade visual da experiência de entrada de uma organização. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Adicionar identidade visual à página de entrada do Azure Active Directory da sua organização](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
 
-## <a name="whats-new"></a>O que há de novo
+## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 ## <a name="next-steps"></a>Próximas etapas

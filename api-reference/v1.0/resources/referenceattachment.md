@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: outlook
 author: abheek-das
 doc_type: resourcePageType
-ms.openlocfilehash: ae16b7df05a6a240b0081e189d74b4622f2f7988
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8a9b4d43a7bbc31c737c85ea1a18bd14beefcb05
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129337"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722409"
 ---
 # <a name="referenceattachment-resource-type"></a>Tipo de recurso referenceAttachment
 
@@ -31,10 +31,10 @@ Derivado de [attachment](attachment.md).
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |contentType|String|O tipo de conteúdo do anexo.|
-|id|String|A ID do anexo.  Somente leitura.|
+|id|Cadeia de caracteres|A ID do anexo.  Somente leitura.|
 |isInline|Booliano|Defina como verdadeiro se o anexo é exibido embutido no corpo do objeto de incorporação.|
-|lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|nome|String|O texto exibido abaixo do ícone que representa o anexo incorporado. Não precisa ser o nome real do arquivo.|
+|lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|nome|Cadeia de caracteres|O texto exibido abaixo do ícone que representa o anexo incorporado. Não precisa ser o nome real do arquivo.|
 |size|Int32|O tamanho dos metadados, em bytes, que são armazenados na mensagem para o anexo. Esse valor não indica o tamanho real do arquivo.|
 
 ## <a name="relationships"></a>Relações

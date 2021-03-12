@@ -1,24 +1,24 @@
 ---
 title: Atualizar alerta
-description: Atualize uma propriedade de **alerta** editável em qualquer solução integrada para manter o status e as atribuições de alerta em sincronia entre soluções. Este método atualiza qualquer solução que tenha um registro da ID de alerta referenciada.
+description: Atualize uma propriedade **de alerta editável** em qualquer solução integrada para manter o status de alerta e as atribuições em sincronia entre soluções. Este método atualiza qualquer solução que tenha um registro da ID de alerta referenciada.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d3be1de01e416f7d9ac72c9f3d7d17815c9e6eb5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 92edfc5e312b56170aa1c8924dad6b2b48970839
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992836"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721422"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 
 Namespace: microsoft.graph
 
-Atualize uma propriedade de **alerta** editável em qualquer solução integrada para manter o status e as atribuições de alerta em sincronia entre soluções. Este método atualiza qualquer solução que tenha um registro da ID de alerta referenciada.
+Atualize uma propriedade **de alerta editável** em qualquer solução integrada para manter o status de alerta e as atribuições em sincronia entre soluções. Este método atualiza qualquer solução que tenha um registro da ID de alerta referenciada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-> **Observação:** Você deve incluir a ID do **alerta** como um parâmetro e vendorInformation contendo o `provider` e `vendor` com esse método.
+> **Observação:** Você deve incluir a ID **de** alerta como um parâmetro e vendorInformation contendo `provider` o e com este `vendor` método.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,31 +43,31 @@ PATCH /security/alerts/{alert_id}
 | Nome          | Descrição              |
 |:--------------|:-------------------------|
 | Autorização | Portador {código}. Obrigatório. |
-| Preferir        | Return = representação. Opcional.   |
+| Preferir        | return=representation. Opcional.   |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON dos valores de campos relevantes que devem ser atualizados. O corpo **deve** conter a propriedade **vendorInformation** com os `provider` campos válidos e `vendor` . A tabela a seguir lista os campos que podem ser atualizados para um alerta. Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece uma representação JSON dos valores para campos relevantes que devem ser atualizados. O corpo **deve** conter a **propriedade vendorInformation** com campos `provider` `vendor` válidos e válidos. A tabela a seguir lista os campos que podem ser atualizados para um alerta. Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade          | Tipo                                                                   | Descrição |
 |:------------------|:-----------------------------------------------------------------------|:--|
-| assignedTo        | String                                                                 | Nome do analista ao qual o alerta é atribuído para a triagem, investigação ou correção. |
-| closedDateTime    | DateTimeOffset                                                         | Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. |
-| comentários          | String collection                                                      | Comentários de analista sobre o alerta (para o gerenciamento de alerta do cliente). Este método pode atualizar o campo Comments com os seguintes valores apenas: `Closed in IPC` , `Closed in MCAS` . |
+| assignedTo        | Cadeia de caracteres                                                                 | Nome do analista ao que o alerta é atribuído para triagem, investigação ou correção. |
+| closedDateTime    | DateTimeOffset                                                         | Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
+| comentários          | String collection                                                      | Comentários do analista sobre o alerta (para gerenciamento de alertas do cliente). Este método pode atualizar o campo de comentários apenas com os seguintes valores: `Closed in IPC` , `Closed in MCAS` . |
 | comentários          | alertFeedback                                                          | Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. |
 | status            | alertStatus                                                            | Status do ciclo de vida de alerta (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`. |
-| tags              | Coleção de cadeias de caracteres                                                      | Rótulos definíveis pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "vimos). |
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor, provedor e subprovedor de produtos / serviços de segurança (por exemplo, fornecedor = Microsoft; provedor = Windows Defender ATP; subProvedor = AppLocker). **Os campos Provider e Vendor são necessários.** |
+| tags              | Coleção de cadeias de caracteres                                                      | Rótulos definíveis pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "SAW). |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor, provedor e subprovedor de produtos / serviços de segurança (por exemplo, fornecedor = Microsoft; provedor = Windows Defender ATP; subProvedor = AppLocker). **Os campos provedor e fornecedor são necessários.** |
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
-Se o cabeçalho de solicitação opcional for usado, o método retornará um `200 OK` código de resposta e o objeto [Alert](../resources/alert.md) atualizado no corpo da resposta.
+Se o header de solicitação opcional for usado, o método retornará um código de resposta e o objeto `200 OK` [de](../resources/alert.md) alerta atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-request-without-prefer-header"></a>Exemplo 1: solicitação sem cabeçalho de preferência
+### <a name="example-1-request-without-prefer-header"></a>Exemplo 1: Solicitar sem o header Prefer
 
 #### <a name="request"></a>Solicitação
 
@@ -135,11 +135,11 @@ Veja a seguir o exemplo de uma resposta bem-sucedida.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a>Exemplo 2: solicitação com cabeçalho preferencial
+### <a name="example-2-request-with-prefer-header"></a>Exemplo 2: Solicitar com o header Prefer
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação que inclui o `Prefer` cabeçalho da solicitação.
+O exemplo a seguir mostra uma solicitação que inclui o `Prefer` header de solicitação.
 
 <!-- {
   "blockType": "request",
@@ -171,7 +171,7 @@ Prefer: return=representation
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta quando o cabeçalho de `Prefer: return=representation` solicitação opcional é usado.
+A seguir, um exemplo da resposta quando o `Prefer: return=representation` header de solicitação opcional é usado.
 
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 

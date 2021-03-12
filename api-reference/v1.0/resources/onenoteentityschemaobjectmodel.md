@@ -1,22 +1,22 @@
 ---
-title: recurso onenoteEntitySchemaObjectModel
-description: Este é um tipo base para entidades do OneNote.
+title: Recurso onenoteEntitySchemaObjectModel
+description: Esse é um tipo base para entidades do OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 1d7f4cd1ef452acbae902c1d4f2aadaa16f69ffe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9dd44c3360a58195f04632b849f5cafd73490676
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079029"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722332"
 ---
-# <a name="onenoteentityschemaobjectmodel-resource"></a>recurso onenoteEntitySchemaObjectModel
+# <a name="onenoteentityschemaobjectmodel-resource"></a>Recurso onenoteEntitySchemaObjectModel
 
 Namespace: microsoft.graph
 
-Este é um tipo base para entidades do OneNote.
+Esse é um tipo base para entidades do OneNote.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -41,7 +41,7 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|A data e a hora em que a página foi criada. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
+|createdDateTime|DateTimeOffset|A data e a hora em que a página foi criada. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->

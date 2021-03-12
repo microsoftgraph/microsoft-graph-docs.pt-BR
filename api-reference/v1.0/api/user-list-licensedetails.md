@@ -1,29 +1,29 @@
 ---
 title: Listar licenseDetails
 description: Recupere uma lista de objetos licenseDetails.
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 337216a290f41600947bcd83e13b907d80334164
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c0c4f0cebd430b0087f295a5ae4ecd0b92904512
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992143"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719924"
 ---
 # <a name="list-licensedetails"></a>Listar licenseDetails
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos **licenseDetails** para usuários empresariais.
+Recupere uma lista de **objetos licenseDetails** para usuários corporativos.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User. Read, User. Read. All, User. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta corporativa ou de estudante) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegada (conta pessoal da Microsoft) | User.Read    |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -34,19 +34,19 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao `$select` parâmetro de consulta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte `$select` ao parâmetro de consulta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Código do portador &lt;&gt;|
+| Autorização  | Código do &lt; portador&gt;|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [licenseDetails](../resources/licensedetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [licenseDetails](../resources/licensedetails.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 

@@ -1,44 +1,44 @@
 ---
-title: tipo de recurso Shift
-description: Representa uma unidade de trabalho agendado no cronograma.
+title: tipo de recurso shift
+description: Representa uma unidade de trabalho agendada na agenda.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 52c83c8052725e99d1136df8b0c14d8d3c24ffe4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e8c871e580818d96edcb0eae244c88c7edcc128c
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086428"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721835"
 ---
-# <a name="shift-resource-type"></a>tipo de recurso Shift
+# <a name="shift-resource-type"></a>tipo de recurso shift
 
 Namespace: microsoft.graph
 
-Representa uma unidade de trabalho agendado em uma [agenda](schedule.md). 
+Representa uma unidade de trabalho agendada em um [cronograma](schedule.md). 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar turnos](../api/schedule-list-shifts.md) | coleção [Shift](shift.md) | Obtenha a lista de **turnos** neste cronograma.|
+|[Listar turnos](../api/schedule-list-shifts.md) | [coleção shift](shift.md) | Obter a lista **de turnos** nesta agenda.|
 |[Criar turno](../api/schedule-post-shifts.md) | [shift](shift.md) | Criar um novo **turno**.|
 |[Obter turno](../api/shift-get.md) | [shift](shift.md) | Obter um **turno** por ID.|
-|[Substituir Shift](../api/shift-put.md) | [shift](shift.md) | Substitua um **Shift**.|
-|[Excluir Shift](../api/shift-delete.md) | Nenhum | Excluir uma **mudança** do cronograma.|
+|[Substituir turno](../api/shift-put.md) | [shift](shift.md) | Substitua um **turno**.|
+|[Excluir turno](../api/shift-delete.md) | Nenhum | **Exclua um turno** da agenda.|
 
 ## <a name="properties"></a>Propriedades
 |Nome          |Tipo           |Descrição                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |ID do **turno**.|
 | userId            |`string`      |ID do usuário atribuído ao **turno**. Obrigatório. |
-| schedulingGroupId         |`string`      |ID do grupo de agendamento do qual o **turno** faz parte. Obrigatório. |
-| sharedShift   |[shiftItem](shiftitem.md)  |A versão compartilhada dessa **mudança** que é visível por funcionários e gerentes. Obrigatório. |
-| draftShift        |[shiftItem](shiftitem.md)        |A versão de rascunho desse **turno** que é visível por gerentes. Obrigatório. |
-| createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora em que essa **mudança** foi criada pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime      |`DateTimeOffset`        |O carimbo de data/hora em que este **turno** foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
-| lastModifiedBy        | [identitySet](identityset.md)        |A identidade que atualizou este **turno**pela última vez.|
+| schedulingGroupId         |`string`      |A ID do grupo de agendamento **do turno** faz parte. Obrigatório. |
+| sharedShift   |[shiftItem](shiftitem.md)  |A versão compartilhada **dessa** mudança que pode ser visualizada por funcionários e gerentes. Obrigatório. |
+| draftShift        |[shiftItem](shiftitem.md)        |A versão de rascunho dessa **mudança** que pode ser visualizada pelos gerentes. Obrigatório. |
+| createdDateTime       |`DateTimeOffset`        |O data/hora no qual esse **turno** foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime      |`DateTimeOffset`        |O data/hora no qual esse **turno** foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
+| lastModifiedBy        | [identitySet](identityset.md)        |A identidade que atualizou pela última vez esse **turno**.|
 
 ## <a name="json-representation"></a>Representação JSON
 

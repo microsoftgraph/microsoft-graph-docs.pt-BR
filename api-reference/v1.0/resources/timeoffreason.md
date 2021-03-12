@@ -1,43 +1,43 @@
 ---
-title: tipo de recurso timeOffReason
-description: Representa uma razão válida para ser demorada no cronograma.
+title: Tipo de recurso timeOffReason
+description: Representa um motivo válido para o tempo de folga na agenda.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 1630cf2c76ca98f8637af9c80900daf97bcc5660
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d73892d8bcd8ca6beba8be66fe0acc1f036e41e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090785"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720085"
 ---
-# <a name="timeoffreason-resource-type"></a>tipo de recurso timeOffReason
+# <a name="timeoffreason-resource-type"></a>Tipo de recurso timeOffReason
 
 Namespace: microsoft.graph
 
-Representa uma razão válida para uma instância do [timeOff](timeoff.md) em um [cronograma](schedule.md).
+Representa um motivo válido para uma [instância timeOff](timeoff.md) em um [cronograma](schedule.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[List](../api/schedule-list-timeoffreasons.md) | coleção [timeOffReason](timeoffreason.md) | Obtenha a lista de **timeOffReason** em um cronograma.|
-|[Create](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Criar um novo **timeOffReason**.|
-|[Get](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Obtenha um **timeOffReason** por ID.|
+|[List](../api/schedule-list-timeoffreasons.md) | [Coleção timeOffReason](timeoffreason.md) | Obter a lista **de timeOffReason** em um cronograma.|
+|[Create](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Crie um novo **timeOffReason**.|
+|[Get](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Obter um **timeOffReason** por ID.|
 |[Replace](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Substitua um **timeOffReason**.|
-|[Delete](../api/timeoffreason-delete.md) | Nenhum | Marcar um **timeOffReason** como inativo.|
+|[Delete](../api/timeoffreason-delete.md) | Nenhum | Marque um **timeOffReason** como inativo.|
 
 ## <a name="properties"></a>Propriedades
 |Nome          |Tipo           |Descrição                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            |`string`      |A ID da tarefa `timeOffReason`.|
 | Nome para exibição               | `string`                  | O nome do **timeOffReason**. Obrigatório. |
-| icontype | `timeOffReasonIconType`   | Tipos de ícone suportados: nenhum; automóvel dos com plano firstAid; Doutor Não funciona; medição juryDuty; Globe copo telefone Weather abrangência piggyBank; cachorro torta trafficCone; pessoal ensolarado. Obrigatório. |
+| iconType | `timeOffReasonIconType`   | Tipos de ícone com suporte: nenhum; car; calendar; em execução; plano; firstAid; médico; notWorking; clock; juryDuty; globe; cup; telefone; clima; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. Obrigatório. |
 | isActive          |`Boolean`      | Indica se o **timeOffReason** pode ser usado ao criar novas entidades ou atualizar as existentes. Obrigatório. |
-| createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora em que este **timeOffReason** foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime      |`DateTimeOffset`         |O carimbo de data/hora em que este **timeOffReason** foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
-| lastModifiedBy        | [identitySet](identityset.md)        |A identidade que atualizou pela última vez este **timeOffReason**.|
+| createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora no **qualOffReason** foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime      |`DateTimeOffset`         |O carimbo de data/hora no **qualOffReason** foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
+| lastModifiedBy        | [identitySet](identityset.md)        |A identidade que foi atualizada pela última **vez desta vezOffReason**.|
 
 ## <a name="json-representation"></a>Representação JSON
 

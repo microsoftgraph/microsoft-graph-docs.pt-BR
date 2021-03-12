@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso emailFileAssessmentRequest
-description: Usado para criar e recuperar uma avaliação de ameaças de arquivo de email.
+description: Usado para criar e recuperar uma avaliação de ameaça de arquivo de email.
 localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 43c7f1cbfe3087a092ca498969ce6df5250a7af8
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 956097a95016ce24d0935dea7f770476499052f2
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153456"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721989"
 ---
 # <a name="emailfileassessmentrequest-resource-type"></a>Tipo de recurso emailFileAssessmentRequest
 
@@ -18,26 +18,26 @@ Usado para criar e recuperar uma avaliação de ameaça de arquivo de email, der
 
 O arquivo de email pode ser um tipo de arquivo .eml.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailFileAssessmentRequest.md) | Crie uma nova solicitação de avaliação de arquivo de email postando um **objeto emailFileAssessmentRequest.** |
-| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Leia as propriedades e os relacionamentos de um **objeto emailFileAssessmentRequest.** |
+| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Leia as propriedades e as relações de um **objeto emailFileAssessmentRequest.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|contentData|Cadeia de caracteres|Conteúdo do arquivo de email .eml codificado em Base64. O conteúdo do arquivo não pode ser buscado de volta porque não está armazenado.|
-|destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|O motivo do email roteado para seu destino. Os valores possíveis `none` são: `mailFlowRule` , , , , , , , , `safeSender` , , `blockedSender` , , , `advancedSpamFiltering` , `domainAllowList` `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` .|
+|contentData|Cadeia de caracteres|Conteúdo de arquivo de email .eml codificado em base64. O conteúdo do arquivo não pode ser buscar de volta porque não está armazenado.|
+|destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|O motivo do email roteado para seu destino. Os valores possíveis são: `none` , , , , , , , , , `mailFlowRule` , , `safeSender` , , , `blockedSender` `advancedSpamFiltering` `domainAllowList` , `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` .|
 |recipientEmail|Cadeia de caracteres|O destinatário de email cujas políticas são usadas para avaliar o email.|
-|category|[threatCategory](enums.md#threatcategory-values)|A categoria da ameaça. Os valores possíveis são: `spam`, `phishing`, `malware`.|
-|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|O tipo de conteúdo de avaliação de ameaças. Os valores possíveis são: `mail`, `url`, `file`.|
+|category|[threatCategory](enums.md#threatcategory-values)|A categoria de ameaça. Os valores possíveis são: `spam`, `phishing`, `malware`.|
+|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|O tipo de conteúdo da avaliação de ameaças. Os valores possíveis são: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|O criador da solicitação de avaliação de ameaças.|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|A avaliação esperada do enviador. Os valores possíveis são: `block` e `unblock`.|
-|id|Cadeia de caracteres|A ID da solicitação de avaliação de ameaças é um IDENTIFICADOr global exclusivo (GUID).|
+|id|Cadeia de caracteres|A ID da solicitação de avaliação de ameaça é um GUID (identificador global exclusivo).|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|A origem da solicitação de avaliação de ameaças. Os valores possíveis são: `user` e `administrator`.|
 |status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|O status do processo de avaliação. Os valores possíveis são: `pending`, `completed`.|
 
@@ -45,7 +45,7 @@ O arquivo de email pode ser um tipo de arquivo .eml.
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|resultados|[Coleção threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que você aplique `$expand` a ela.|
+|results|[Coleção threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que você `$expand` se aplique a ela.|
 
 ## <a name="json-representation"></a>Representação JSON
 

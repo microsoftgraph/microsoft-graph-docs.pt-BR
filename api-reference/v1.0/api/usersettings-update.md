@@ -1,40 +1,40 @@
 ---
 title: Atualizar configurações
 description: 'Atualize as propriedades do objeto de configurações. '
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0b20225fe22ede9cf0226a3fd1b4c3332922bf6c
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: d2e1cd7107065bb03e7bd9ce89208d218776fd4d
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582055"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721331"
 ---
 # <a name="update-settings"></a>Atualizar configurações
 
 Namespace: microsoft.graph
 
-Atualize as propriedades do objeto [UserSettings](../resources/usersettings.md) . Os usuários na mesma organização podem ter configurações diferentes com base em suas preferências ou nas políticas da organização. Para obter as configurações atuais do usuário, confira [configurações atuais do usuário](usersettings-get.md). 
+Atualize as propriedades do [objeto userSettings.](../resources/usersettings.md) Os usuários na mesma organização podem ter configurações diferentes com base em suas preferências ou nas políticas da organização. Para obter as configurações atuais do usuário, consulte [configurações atuais do usuário](usersettings-get.md). 
 
 ### <a name="batch-request"></a>Solicitação em lote
 
-Também é possível recusar vários usuários do Delve e desabilitar sua contribuição na relevância do conteúdo para toda a organização por meio de uma solicitação em lote.
-Para saber mais, confira [Batching JSON](/graph/json-batching).
+Também é possível desativar vários usuários do Delve e desabilitar sua contribuição sobre a relevância do conteúdo para toda a organização por meio de uma solicitação em lotes.
+Para saber mais, consulte [JSON batching](/graph/json-batching).
 
->**Importante**: somente os membros do grupo de função [Gerenciamento da organização](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) podem atualizar vários usuários. 
+>**Importante:** somente membros do grupo de função [de gerenciamento](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) da organização podem atualizar vários usuários. 
 
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | User. ReadWrite, User. ReadWrite. All   |
-|Delegada (conta Microsoft pessoal) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite, User.ReadWrite.All   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -62,13 +62,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Booliano|Defina como true para desabilitar o acesso de representante à API de [tendências](/graph/api/resources/insights-trending?view=graph-rest-1.0) e desabilitar o acesso aos documentos no Office Delve para o usuário. A configuração como true também afeta a relevância do conteúdo exibido no Microsoft 365-por exemplo, sites sugeridos na página inicial do SharePoint e o modo de exibição de descoberta no OneDrive for Business mostrar resultados menos relevantes. Essa configuração reflete o estado de controle no [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Booliano|Definir como true desabilite o acesso de representante à API [de](/graph/api/resources/insights-trending?view=graph-rest-1.0) Tendência e desabilite o acesso a documentos no Office Delve para o usuário. A configuração como true também afeta a relevância do conteúdo exibido no Microsoft 365 - por exemplo, sites sugeridos no SharePoint Home e a exibição Descobrir no OneDrive for Business mostram resultados menos relevantes. Essa configuração reflete o estado de controle no [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Exemplo 
 
 ##### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de solicitação de como recusar um usuário de aprofundar e desabilitar sua contribuição na relevância do conteúdo para toda a organização.
+Aqui está um exemplo de solicitação sobre como desativar um usuário do Delve e desabilitar sua contribuição sobre a relevância do conteúdo para toda a organização.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/settings

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d17ca029d29b2b8f27a923adf4ef019ac002f404
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 508f8c79606ef6e9e0d3778899cb04789b9defde
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158720"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720799"
 ---
 # <a name="offershiftrequest-resource-type"></a>Tipo de recurso offerShiftRequest
 
@@ -18,24 +18,24 @@ Namespace: microsoft.graph
 
 Representa uma solicitação para oferecer uma mudança para outro usuário na equipe.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [List](../api/offershiftrequest-list.md) | Coleção de [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e os relacionamentos de todos os **objetos offerShiftRequest** em uma equipe. |
-| [Criar](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Crie uma instância de um **objeto offerShiftRequest.** |
-| [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e os relacionamentos de um **objeto offerShiftRequest.** |
+| [List](../api/offershiftrequest-list.md) | Coleção [of offerShiftRequest](offershiftrequest.md) | Leia as propriedades e as relações de todos os **objetos offerShiftRequest** em uma equipe. |
+| [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Crie uma instância de um **objeto offerShiftRequest.** |
+| [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e as relações de um **objeto offerShiftRequest.** |
 |[Aprovar](../api/offershiftrequest-approve.md)|Nenhum|Aprovar uma **ofertaShiftRequest**. |
-|[Recusar](../api/offershiftrequest-decline.md)|Nenhum|Recusar uma **ofertaShiftRequest**. |
+|[Declínio](../api/offershiftrequest-decline.md)|Nenhum|Recusar uma **ofertaShiftRequest**. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|recipientActionDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|recipientActionDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |recipientActionMessage|Cadeia de caracteres| Mensagem personalizada enviada pelo destinatário da solicitação de turno de oferta. |
-|recipientUserId|Cadeia de caracteres| ID de usuário do destinatário da solicitação de mudança de oferta.|
-|senderShiftId|Cadeia de caracteres| ID de usuário do remetente da solicitação de mudança de oferta.|
+|recipientUserId|Cadeia de caracteres| ID do usuário do destinatário da solicitação de turno de oferta.|
+|senderShiftId|Cadeia de caracteres| ID do usuário do remetente da solicitação de turno de oferta.|
 
 ## <a name="relationships"></a>Relações
 

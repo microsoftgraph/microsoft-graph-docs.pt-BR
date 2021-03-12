@@ -1,16 +1,16 @@
 ---
 title: Atualizar usuário
 description: Atualize as propriedades de um objeto user.
-author: krbain
+author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ffb7590aa3200559ac1c7ef5186e06edf5654b13
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 4aa48a9deb6023d2d298c3504f12c2122923d8c9
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292578"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721366"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -53,14 +53,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |aboutMe|String|Um campo de entrada de texto em forma livre para o usuário se descrever.|
 |accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado.    |
-|birthday|DateTimeOffset|O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|birthday|DateTimeOffset|O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |businessPhones| String collection | Números de telefone para o usuário. OBSERVAÇÃO: Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.|
 |city|String|A cidade em que o usuário está localizado.|
 |country|String|País/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido".|
 |department|String|O nome do departamento no qual o usuário trabalha.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |givenName|String|O nome fornecido (nome) do usuário.|
-|hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
 |jobTitle|String|O cargo do usuário.|
 |email|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP. <br><br>Oferece suporte a $filter.|

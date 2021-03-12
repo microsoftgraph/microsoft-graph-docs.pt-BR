@@ -1,23 +1,23 @@
 ---
 title: Atualizar plannertask
-description: Atualize as propriedades do objeto **plannertask** .
+description: Atualize as propriedades do **objeto plannertask.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 6964cae5044ebbb7b7e675b7876a574ce8e4d113
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 410913ba71a7b3404169fbfa2e6f06dcaa47038f
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967862"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722031"
 ---
 # <a name="update-plannertask"></a>Atualizar plannertask
 
 Namespace: microsoft.graph
 
-Atualize as propriedades do objeto **plannertask** .
-## <a name="permissions"></a>Permissões
+Atualize as propriedades do **objeto plannertask.**
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -35,7 +35,7 @@ PATCH /planner/tasks/{id}
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | Último valor de ETag conhecido para o **plannerTask** a ser atualizado. Obrigatório.|
+| If-Match  | Último valor ETag conhecido para o **plannerTask** a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
@@ -43,19 +43,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|As categorias às quais a tarefa foi aplicada. Confira os possíveis valores em [Categorias aplicadas](../resources/plannerappliedcategories.md).|
-|assigneePriority|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).|
-|assignments|[plannerAssignments](../resources/plannerassignments.md)|O conjunto de usuários ao qual a tarefa é atribuída.|
-|bucketId|String|ID de Bucket à qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](../resources/planner-identifiers-disclaimer.md) é feito no serviço. |
-|conversationThreadId|String|ID do thread da conversa na tarefa. Esta é a ID do objeto de thread de conversa criado no grupo.|
-|dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|orderHint|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).|
+|assigneePriority|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [Usando dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
+|assignments|[plannerAssignments](../resources/plannerassignments.md)|O conjunto de usuários aos que a tarefa é atribuída.|
+|bucketId|String|ID de bucket à qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](../resources/planner-identifiers-disclaimer.md) é feito no serviço. |
+|conversationThreadId|String|ID de thread da conversa na tarefa. Esta é a id do objeto thread de conversa criado no grupo.|
+|dueDateTime|DateTimeOffset|Data e hora em que a tarefa é devida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|orderHint|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [Usando dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
-|startDateTime|DateTimeOffset|A data e a hora que a tarefa começa. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|Data e hora em que a tarefa é iniciada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |title|String|Título da tarefa.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerTask](../resources/plannertask.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [plannerTask](../resources/plannertask.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 

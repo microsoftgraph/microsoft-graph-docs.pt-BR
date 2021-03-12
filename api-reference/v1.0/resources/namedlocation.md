@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 91f915b9acda8c43735f501e1652ec8771f97f59
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9a454855a5f1048ddfeab89c85be25e02a26f82b
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432855"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721905"
 ---
 # <a name="namedlocation-resource-type"></a>Tipo de recurso namedLocation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Esta é a classe base que representa um local nomeado pelo Azure Active Directory. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de Acesso Condicional.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -30,10 +30,10 @@ Esta é a classe base que representa um local nomeado pelo Azure Active Director
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |displayName|Cadeia de caracteres|Nome acessível para humanos do local.|
 |id|Cadeia de caracteres|Identificador de um objeto namedLocation. Somente leitura.|
-|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa a última data e hora modificadas do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
+|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa a última data e hora modificadas do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

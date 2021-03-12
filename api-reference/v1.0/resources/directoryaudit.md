@@ -5,12 +5,12 @@ author: SarahBar
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 102399d92b8287c7e82a5ae9323c0e827133a50a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: eff24fe8b86f6b0726cc83fae277a9b9b0a50399
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131282"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721240"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
 
@@ -29,8 +29,8 @@ Representa os itens de auditoria de diretório e sua coleção.
 
 | Propriedade            | Tipo                                                | Descrição                                                                                                                                                                                                                                                                        |
 |:--------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| activityDateTime    | DateTimeOffset                                      | Indica a data e hora que a atividade foi executada. O tipo de Timestamp é sempre UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`                                                                                          |
-| activityDisplayName | Cadeia de caracteres                                              | Indica o nome da atividade ou o nome da operação (exemplos: "Criar Usuário" e "Adicionar membro ao grupo"). Para ver a lista completa, confira a lista de atividades do [Azure AD.](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list) |
+| activityDateTime    | DateTimeOffset                                      | Indica a data e hora que a atividade foi executada. O tipo de Timestamp é sempre UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`                                                                                          |
+| activityDisplayName | Cadeia de caracteres                                              | Indica o nome da atividade ou o nome da operação (exemplos: "Criar Usuário" e "Adicionar membro ao grupo"). Para ver a lista completa, consulte a lista de atividades [do Azure AD](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list). |
 | additionalDetails   | Coleção [KeyValue](keyvalue.md)                  | Indica detalhes adicionais sobre a atividade.                                                                                                                                                                                                                                      |
 | category            | Cadeia de caracteres                                              | Indica qual categoria de recurso direcionada pela atividade. (Por exemplo: gerenciamento de usuário, grupo gerenciamento etc..)                                                                                                                                                          |
 | correlationId       | GUID                                                | Indica uma ID exclusiva que ajuda correlacionar atividades que englobam vários serviços. Pode ser usado para os logs de serviços de rastreamento.                                                                                                                                                |
@@ -38,7 +38,7 @@ Representa os itens de auditoria de diretório e sua coleção.
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | Indica que informações sobre o usuário ou o aplicativo iniciou a atividade.                                                                                                                                                                                                                |
 | loggedByService     | Cadeia de caracteres                                              | Indica informação em que o serviço iniciou a atividade (por exemplo: gerenciamento de senha de autoatendimento, principais diretório, B2C, os usuários convidados, Microsoft Identity Manager, Privileged Identity Management.                                                                      |
 | resultado              | cadeia de caracteres                                              | Indica o resultado da atividade. Os valores possíveis são: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                                   |
-| resultReason        | Cadeia de caracteres                                              | Descreve a causa dos resultados de "falha" ou "tempo final".                                                                                                                                                                                                                                 |
+| resultReason        | Cadeia de caracteres                                              | Descreve a causa dos resultados de "falha" ou "tempo de tempo".                                                                                                                                                                                                                                 |
 | targetResources     | [targetResource](targetresource.md) conjunto      | Indica informação que o recurso foi alterado devido a atividade. Tipo de recurso de destino pode ser usuário, dispositivo, diretório, aplicativos, função, grupo, política ou outros.                                                                                                                   |
 
 ## <a name="relationships"></a>Relações

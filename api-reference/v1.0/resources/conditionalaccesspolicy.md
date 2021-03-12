@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 21da60af8ef83d2b6a45122106de12d58b9e7518
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bbb38453015f1b00b9a290913eeb9c03a090b045
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432848"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721548"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>Tipo de recurso conditionalAccessPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa uma política de acesso condicional do Azure Active Directory. As políticas de acesso condicional são regras personalizadas que definem um cenário de acesso. Para obter mais informações, consulte [a documentação de acesso condicional](/azure/active-directory/conditional-access/).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -33,11 +33,11 @@ Representa uma política de acesso condicional do Azure Active Directory. As pol
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Especifica as regras que devem ser atendidas para que a política seja aplicada. Obrigatório. |
-|createdDateTime|DateTimeOffset| O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Readonly. |
+|createdDateTime|DateTimeOffset| O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Readonly. |
 |displayName|Cadeia de caracteres| Especifica um nome de exibição para o objeto conditionalAccessPolicy. |
 |grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| Especifica os controles de concessão que devem ser cumpridos para passar a política. |
 |id|Cadeia de caracteres| Especifica o identificador de um objeto conditionalAccessPolicy. Somente leitura.|
-|modifiedDateTime| DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Readonly. |
+|modifiedDateTime| DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Readonly. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Especifica os controles de sessão que são imposto após a assinatura. |
 |estado|string| Especifica o estado do objeto conditionalAccessPolicy. Os valores possíveis são: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Obrigatório. |
 

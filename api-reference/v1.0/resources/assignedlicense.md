@@ -2,15 +2,15 @@
 title: Tipo de recurso assignedLicense
 description: Representa uma licença atribuída a um usuário. A propriedade **assignedLicenses** da entidade user é uma coleção de **assignedLicense**.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a4193e09b756437d693e484a0680c27c4e8b6013
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6cb848506d7f78b652f3d094c7b74c4cade6543
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003280"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720806"
 ---
 # <a name="assignedlicense-resource-type"></a>Tipo de recurso assignedLicense
 

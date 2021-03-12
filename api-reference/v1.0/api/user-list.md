@@ -1,16 +1,16 @@
 ---
 title: Listar usuários
 description: Recupere uma lista de objetos user.
-author: krbain
+author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 791579f85173c85b82c4acb56461fa3f7d1b47d4
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 6eec321a319deedc704dc2a2ed508627a2de11ba
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013464"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721926"
 ---
 # <a name="list-users"></a>Listar usuários
 

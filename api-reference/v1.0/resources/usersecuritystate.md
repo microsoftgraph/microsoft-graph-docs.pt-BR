@@ -1,41 +1,41 @@
 ---
-title: tipo de recurso usersecuritystate
-description: Contém informações monitoradoras sobre a conta de usuário.
-author: krbain
+title: Tipo de recurso userSecurityState
+description: Contém informações de estado sobre a conta de usuário.
+author: jpettere
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ae085791cb60aa6d5071332ead86033861a6305a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 54785117a30318154d6ebe1b0a0681fe825368ea
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015369"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721884"
 ---
-# <a name="usersecuritystate-resource-type"></a>tipo de recurso usersecuritystate
+# <a name="usersecuritystate-resource-type"></a>Tipo de recurso userSecurityState
 
 Namespace: microsoft.graph
 
-Contém informações monitoradoras sobre a conta de usuário.
+Contém informações de estado sobre a conta de usuário.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|aadUserId|String|GUID (identificador de objeto do usuário) do AAD – representa a entidade de usuário física/de várias contas.|
-|accountName|String|Nome da conta da conta de usuário (sem o domínio do Active Directory ou domínio DNS)-(também chamado `mailNickName` ).|
-|domainName|Cadeia de caracteres|Domínio NetBIOS/Active Directory da conta de usuário (ou seja, formato de domínio \ conta).|
-|emailRole|emailRole|Para alertas relacionados a email-a função de email da conta de usuário. Os valores possíveis são: `unknown`, `sender`, `recipient`.|
-|isVpn|Boolean|Indica se o usuário fez logon por meio de uma VPN.|
-|logonDateTime|DateTimeOffset|Hora em que o logon ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|LogonId|String|ID de entrada do usuário.|
-|logonIp|String|Endereço IP para o qual a solicitação de entrada originou.|
-|logonLocation|String|Local (por mapeamento de endereço IP) associado a um evento de entrada do usuário por este usuário.|
-|logonType|logonType|Método de logon do usuário. Os possíveis valores são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
-|onPremisesSecurityIdentifier|String|O identificador de segurança (SID) do usuário do Active Directory (local).|
-|riskScore|String|A pontuação de risco calculado/gerado pelo provedor da conta de usuário. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
-|useraccounttype|userAccountSecurityType|Tipo de conta de usuário (Associação de grupo), por definição do Windows. Os valores possíveis são: `unknown`, `standard`, `power`, `administrator`.|
-|userPrincipalName|String|Nome de entrada do usuário-formato da Internet: (nome da conta de usuário) @ (nome de domínio DNS da conta de usuário).|
+|aadUserId|Cadeia de caracteres|Identificador de objeto do usuário AAD (GUID) - representa a entidade de usuário físico/de várias contas.|
+|accountName|Cadeia de caracteres|Nome da conta de usuário (sem domínio do Active Directory ou domínio DNS) - (também chamado `mailNickName` ).|
+|domainName|Cadeia de caracteres|Domínio NetBIOS/Active Directory da conta de usuário (ou seja, formato de domínio\conta).|
+|emailRole|emailRole|Para alertas relacionados a email - 'função' de email da conta de usuário. Os valores possíveis são: `unknown`, `sender`, `recipient`.|
+|isVpn|Booliano|Indica se o usuário fez logons por meio de uma VPN.|
+|logonDateTime|DateTimeOffset|Hora em que ocorreu a login. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|logonId|Cadeia de caracteres|ID de login do usuário.|
+|logonIp|Cadeia de caracteres|Endereço IP da solicitação de login originada.|
+|logonLocation|Cadeia de caracteres|Local (por mapeamento de endereço IP) associado a um evento de login do usuário por esse usuário.|
+|logonType|logonType|Método de login do usuário. Os possíveis valores são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
+|onPremisesSecurityIdentifier|String|Identificador de Segurança (SID) do Active Directory (local) do usuário.|
+|riskScore|Cadeia de caracteres|Pontuação de risco gerada/calculada pelo provedor da conta de usuário. Intervalo de valores recomendado de 0 a 1, que equivale a uma porcentagem.|
+|userAccountType|userAccountSecurityType|Tipo de conta de usuário (associação ao grupo), por definição do Windows. Os valores possíveis são: `unknown`, `standard`, `power`, `administrator`.|
+|userPrincipalName|Cadeia de caracteres|Nome de login do usuário - formato da Internet: (nome da conta de usuário)@(nome de domínio DNS da conta de usuário).|
 
 ## <a name="json-representation"></a>Representação JSON
 

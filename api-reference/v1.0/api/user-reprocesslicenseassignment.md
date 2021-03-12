@@ -1,25 +1,25 @@
 ---
-title: 'usuário: reprocessLicenseAssignment'
-description: Reprocessar todas as atribuições de licença baseadas em grupo para o usuário.
+title: 'user: reprocessLicenseAssignment'
+description: Reprocesse todas as atribuições de licença baseadas em grupo para o usuário.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ed79bdf0c219f0c3a654e46e755a7acd1a452904
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: e3b20fa97bddcc9d5dbab674e1a5af24a2e15f8f
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635457"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720708"
 ---
-# <a name="user-reprocesslicenseassignment"></a>usuário: reprocessLicenseAssignment
+# <a name="user-reprocesslicenseassignment"></a>user: reprocessLicenseAssignment
 
 Namespace: microsoft.graph
 
-Reprocessar todas as atribuições de licença baseadas em grupo para o usuário. Para saber mais sobre licenciamento baseado em grupo, confira [o que é licenciamento baseado em grupo no Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Além disso [, consulte identificar e resolver problemas de atribuição de licença para um grupo no Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) para obter mais detalhes.
+Reprocesse todas as atribuições de licença baseadas em grupo para o usuário. Para saber mais sobre o licenciamento baseado em grupo, consulte O que é licenciamento baseado [em grupo no Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Consulte Também Identificar [e resolver problemas de atribuição de licença para um grupo no Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) para obter mais detalhes.
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -44,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e um objeto [User](../resources/user.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e um objeto de [usuário](../resources/user.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como reprocessar atribuições de licença para o usuário.
@@ -81,7 +81,7 @@ POST https://graph.microsoft.com/v1.0/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 
 ### <a name="response"></a>Resposta
 
-A resposta é o objeto de usuário atualizado.
+A resposta é o objeto do usuário atualizado.
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

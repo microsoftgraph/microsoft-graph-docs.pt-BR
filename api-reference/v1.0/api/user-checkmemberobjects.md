@@ -1,32 +1,32 @@
 ---
-title: 'usuário: checkMemberObjects'
-description: Verifique se há associação em uma lista de funções de grupo ou de diretório para o objeto de usuário especificado.
+title: 'user: checkMemberObjects'
+description: Verifique se há associação em uma lista de funções de grupo ou diretório para o objeto de usuário especificado.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e0450d4bdb35978fcb1f7b375babd6900f11b88d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4f27a53030e1c01b3efb1967f9f0620033e36f28
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967748"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722388"
 ---
-# <a name="user-checkmemberobjects"></a>usuário: checkMemberObjects
+# <a name="user-checkmemberobjects"></a>user: checkMemberObjects
 
 Namespace: microsoft.graph
 
-Verifique se há associação em uma lista de funções de grupo ou de diretório para o objeto de usuário especificado. Este método é transitivo.
+Verifique se há associação em uma lista de funções de grupo ou diretório para o objeto de usuário especificado. Esse método é transitivo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadBasic. All, User. Read. All, User. ReadWrite. All<br><br>Além disso:<br><br><ul><li>Se estiver verificando a associação em grupos: Group. Read. All, Group. ReadWrite. All</li><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</li><li>Se estiver verificando associação em funções de diretório: RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+| Delegado (conta corporativa ou de estudante)     | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br><br>Além disso:<br><br><ul><li>Se verificar a associação em grupos: Group.Read.All, Group.ReadWrite.All</li><li>Se verificar a associação em unidades administrativas: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>Se verificar se há associação em funções de diretório: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All<br>E<ul><li>Se estiver verificando a associação em grupos: Group. Read. All, Group. ReadWrite. All</li><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</li><li>Se estiver verificando associação em funções de diretório: RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
+| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br>E:<ul><li>Se verificar a associação em grupos: Group.Read.All, Group.ReadWrite.All</li><li>Se verificar a associação em unidades administrativas: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>Se verificar se há associação em funções de diretório: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,11 +50,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|ids|Coleção de cadeias de caracteres|Uma coleção que contém as IDs de objeto dos grupos, funções de diretório ou IDs RoleTemplate de funções de diretório, para verificar a associação. Você pode especificar até 20 objetos.|
+|ids|Coleção de cadeias de caracteres|Uma coleção que contém as IDs de objeto dos grupos, funções de diretório ou IDs de roleTemplate de funções de diretório, na qual verificar a associação. Você pode especificar até 20 objetos.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto de coleção String no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um novo objeto da coleção `200 OK` String no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

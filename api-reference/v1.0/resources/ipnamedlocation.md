@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9e5a8f75be26e46bd24da0ff1f5aa1618cd8c8b4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1781c10e28e2d3efc28154cd15a8c36c9b43ac21
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448817"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719336"
 ---
 # <a name="ipnamedlocation-resource-type"></a>Tipo de recurso ipNamedLocation
 
@@ -20,7 +20,7 @@ Representa um local nomeado pelo Azure Active Directory definido por intervalos 
 
 Herda de [namedLocation](../resources/namedLocation.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -34,12 +34,12 @@ Herda de [namedLocation](../resources/namedLocation.md)
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 |displayName|Cadeia de caracteres|Nome acessível para humanos do local.|
 |id|Cadeia de caracteres|Identificador de um objeto namedLocation. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 |ipRanges|Coleção [ipRange](iprange.md)|Lista de intervalos de endereços IP no formato CIDR IPv4 (por exemplo, 1.2.3.4/32) ou qualquer formato IPv6 acessível do IETF RFC596.|
-|isTrusted|Boolean|True se esse local for explicitamente confiável.|
-|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa a última data e hora modificadas do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
+|isTrusted|Booliano|True se esse local for explicitamente confiável.|
+|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa a última data e hora modificadas do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 
 ## <a name="relationships"></a>Relações
 

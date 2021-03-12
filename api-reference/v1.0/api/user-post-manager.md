@@ -2,15 +2,15 @@
 title: Atribuir gerente
 description: Atribuir um gerenciador de usuário.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 20c4a97c183fc3109721c600a41e16f7b704fbb2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 34ffe0a968ef500214d7f987d3a76c7fe4616cf7
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972698"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721415"
 ---
 # <a name="assign-manager"></a>Atribuir gerente
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 Atribuir um gerenciador de usuário.
 > [!NOTE]
-> Não é possível atribuir subordinados diretos; em vez disso, use essa API.
+> Não é possível atribuir relatórios diretos; em vez disso, use essa API.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -41,7 +41,7 @@ PUT /users/{id}/manager/$ref
 | Content-type   | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [directoryobject](../resources/directoryobject.md), [User](../resources/user.md)ou [Contact organizacional](../resources/orgcontact.md) a ser adicionado.
+No corpo da solicitação, fornece uma representação JSON de um objeto de contato [directoryObject](../resources/directoryobject.md), [usuário](../resources/user.md)ou [organizacional](../resources/orgcontact.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
 

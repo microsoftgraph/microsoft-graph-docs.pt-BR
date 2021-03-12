@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 5245836ff01b5e50b74460052bec3e58be2f073b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 91cb4cb48a651622670d83f544bdeb436070e892
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439923"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720645"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -42,11 +42,11 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. Obrigatório.|
+|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Obrigatório.|
 |alternativeSecurityIds|Coleção alternativeSecurityId| Apenas para uso interno. Não anulável. |
-|approximateLastSignInDateTime|DateTimeOffset| O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
-|complianceExpirationDateTime|DateTimeOffset| O timestamp quando o dispositivo não é mais considerado compatível. O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
-|deviceId|string| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
+|approximateLastSignInDateTime|DateTimeOffset| O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
+|complianceExpirationDateTime|DateTimeOffset| O timestamp quando o dispositivo não é mais considerado compatível. O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
+|deviceId|cadeia de caracteres| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
 |deviceMetadata|String| Apenas para uso interno. Definido como nulo. |
 |deviceVersion|Int32| Apenas para uso interno. |
 |displayName|Cadeia de caracteres|O nome de exibição do dispositivo. Obrigatório. |
@@ -56,13 +56,13 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |fabricante|String| Fabricante do dispositivo. Somente leitura. |
 |mdmAppId|Cadeia de caracteres|Identificador de aplicativo usado para registrar o dispositivo no MDM. <br><br>Somente leitura. Oferece suporte a $filter.|
 |modelo|String| Modelo do dispositivo. Somente leitura. |
-|onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` Somente leitura.|
-|onPremisesSyncEnabled|Boolean|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura. |
+|onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` somente leitura.|
+|onPremisesSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura. |
 |operatingSystem|String| O tipo de sistema operacional do dispositivo. Obrigatório. |
 |operatingSystemVersion|String|A versão do sistema operacional do dispositivo. Obrigatório. |
 |physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. |
 |profileType|Cadeia de caracteres|O tipo de perfil do dispositivo. Valores possíveis:<br />**RegisteredDevice** (padrão)<br />**SecureVM**<br />**Printer**<br />**Compartilhado**<br />**IoT**|
-|systemLabels|Conjunto de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. |
+|systemLabels|Coleção de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. |
 |trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](/azure/active-directory/device-management-introduction) |
 
 ## <a name="relationships"></a>Relações

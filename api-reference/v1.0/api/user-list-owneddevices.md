@@ -1,23 +1,23 @@
 ---
 title: Listar ownedDevices
 description: Obtenha a lista de dispositivos de propriedade do usuário.
-author: krbain
+author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ff3bda5afd0dedb9781c532052c4978a7c493c49
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 3034b75b8f868d721d0051ed5a35f1ba55c919dd
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635492"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721947"
 ---
 # <a name="list-owneddevices"></a>Listar ownedDevices
 
 Namespace: microsoft.graph
 
 Obtenha a lista de dispositivos de propriedade do usuário.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -1,46 +1,46 @@
 ---
 title: Tipo de recurso threatAssessmentRequest
-description: Um tipo de resouce abstrato usado para representar um item de solicitação de avaliação de ameaças.
+description: Um tipo de resouce abstrato usado para representar um item de solicitação de avaliação de ameaça.
 localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e316591f4f9db189b1b21dc2d9c3b8d83358c5da
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: dddb7416e18c802b0fbca60c0d134629763f2a03
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158958"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721016"
 ---
 # <a name="threatassessmentrequest-resource-type"></a>Tipo de recurso threatAssessmentRequest
 
-Um tipo de resouce abstrato usado para representar um item de solicitação de avaliação de ameaças.
+Um tipo de resouce abstrato usado para representar um item de solicitação de avaliação de ameaça.
 
 Uma solicitação de avaliação de ameaças pode ser um dos seguintes tipos:
 
 * Mail ([recurso mailAssessmentRequest)](mailAssessmentRequest.md)
-* Arquivo de email[(recurso emailFileAssessmentRequest)](emailFileAssessmentRequest.md)
-* File ([recurso fileAssessmentRequest)](fileAssessmentRequest.md)
+* Arquivo de email ([recurso emailFileAssessmentRequest)](emailFileAssessmentRequest.md)
+* Arquivo ([recurso fileAssessmentRequest)](fileAssessmentRequest.md)
 * URL ([recurso urlAssessmentRequest)](urlAssessmentRequest.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [List threatAssessmentRequest](../api/informationprotection-list-threatassessmentrequests.md) | [Coleção threatAssessmentRequest](threatassessmentrequest.md) | Listar todas as solicitações de avaliação de ameaças no locatário. |
+| [List threatAssessmentRequest](../api/informationprotection-list-threatassessmentrequests.md) | [Coleção threatAssessmentRequest](threatassessmentrequest.md) | Listar todas as solicitações de avaliação de ameaças em locatário. |
 | [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Crie uma nova solicitação de avaliação de ameaças postando um tipo de recurso derivado: [mailAssessmentRequest](../resources/mailAssessmentRequest.md), [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md). |
-| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Recupere as propriedades e os relacionamentos de um recurso **threatAssessmentRequest** especificado. |
+| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Recupere as propriedades e as relações de um recurso **threatAssessmentRequest** especificado. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 | :-------------|:------------|:------------|
-|Ferramentas para desenvolvedores|[threatCategory](enums.md#threatcategory-values)|A categoria da ameaça. Os valores possíveis são: `spam`, `phishing`, `malware`.|
-|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|O tipo de conteúdo de avaliação de ameaças. Os valores possíveis são: `mail`, `url`, `file`.|
+|Ferramentas para desenvolvedores|[threatCategory](enums.md#threatcategory-values)|A categoria de ameaça. Os valores possíveis são: `spam`, `phishing`, `malware`.|
+|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|O tipo de conteúdo da avaliação de ameaças. Os valores possíveis são: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|O criador da solicitação de avaliação de ameaças.|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|A avaliação esperada do enviador. Os valores possíveis são: `block` e `unblock`.|
-|id|Cadeia de caracteres|A ID da solicitação de avaliação de ameaças é um IDENTIFICADOr global exclusivo (GUID).|
+|id|Cadeia de caracteres|A ID da solicitação de avaliação de ameaça é um GUID (identificador global exclusivo).|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|A origem da solicitação de avaliação de ameaças. Os valores possíveis são: `user` e `administrator`.|
 |status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|O status do processo de avaliação. Os valores possíveis são: `pending`, `completed`.|
 
@@ -48,7 +48,7 @@ Uma solicitação de avaliação de ameaças pode ser um dos seguintes tipos:
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|resultados|[Coleção threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que você aplique `$expand` a ele.|
+|results|[Coleção threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que você `$expand` se aplique a ela.|
 
 ## <a name="json-representation"></a>Representação JSON
 

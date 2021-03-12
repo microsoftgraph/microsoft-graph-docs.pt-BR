@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 7c0a09a2348099392a8e00c176f038e30703a854
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 838be4b5a21e2117fd06d33c62c94f1ae6488794
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037252"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50720785"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
 
-Namespace: Microsoft. Graph representa um item de postagem individual em uma entidade [conversationThread](conversationthread.md) .
+Namespace: microsoft.graph Representa um item Post individual dentro de uma [entidade conversationThread.](conversationthread.md)
 
 Embora você não possa criar explicitamente uma postagem, seguir um destes procedimentos criaria uma postagem:
 
@@ -52,24 +52,24 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |:---------------|:--------|:----------|
 |corpo|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
 |Categorias|Coleção de cadeias de caracteres|As categorias associadas à postagem.|
-|changeKey|String|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
+|changeKey|Cadeia de caracteres|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |conversationId|String|ID exclusiva da conversa. Somente leitura.|
 |conversationThreadId|String|ID exclusiva do thread de conversa. Somente leitura.|
-|createdDateTime|DateTimeOffset|Especifica quando a postagem foi criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|Especifica quando a postagem foi criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |from|[recipient](recipient.md)|Usado em cenários de acesso de representante. Indica quem postou a mensagem em nome de outro usuário. Esta é uma propriedade padrão.|
 |hasAttachments|Booliano|Indica se a postagem tem pelo menos um anexo. Esta é uma propriedade padrão.|
 |id|String| Somente leitura.|
-|lastModifiedDateTime|DateTimeOffset|Especifica quando a postagem foi modificada pela última vez. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|Especifica quando a postagem foi modificada pela última vez. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |newParticipants|Coleção [recipient](recipient.md)|Participantes da conversa que foram adicionados ao thread como parte desta postagem.|
-|receivedDateTime|DateTimeOffset|Especifica quando a postagem foi recebida. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|receivedDateTime|DateTimeOffset|Especifica quando a postagem foi recebida. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |sender|[recipient](recipient.md)|Contém o endereço do remetente. O valor de Sender será considerado o endereço do usuário autenticado caso o remetente não seja especificado. Esta é uma propriedade padrão.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) collection| Somente leitura. Anulável.|
+|attachments|Coleção [Attachment](attachment.md)| Somente leitura. Anulável.|
 |extensions|Coleção [Extension](extension.md)|A coleção de extensões abertas definidas para a postagem. Somente leitura. Anulável.|
-|inresponderto|[post](post.md)| Somente leitura.|
+|inReplyTo|[post](post.md)| Somente leitura.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a postagem. Somente leitura. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a postagem. Somente leitura. Anulável.|
 

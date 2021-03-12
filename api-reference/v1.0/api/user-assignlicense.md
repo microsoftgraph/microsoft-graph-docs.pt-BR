@@ -1,16 +1,16 @@
 ---
 title: assignLicense
 description: Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.
-author: krbain
+author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 10850f61675d88bbbe59a84a8f2c3072be345cc5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a6a6cca2374df1870214083cfa46b9f8c5d8211
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022976"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721590"
 ---
 # <a name="user-assignlicense"></a>usuário: assignLicense
 

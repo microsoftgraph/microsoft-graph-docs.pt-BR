@@ -1,29 +1,29 @@
 ---
-title: 'usuário: revokeSignInSessions'
-description: Invalida todos os tokens de atualização do usuário emitidos para aplicativos (bem como cookies de sessão no navegador de um usuário), redefinindo a propriedade de usuário **signInSessionsValidFromDateTime** para a data e hora atual.
+title: 'user: revokeSignInSessions'
+description: Invalida todos os tokens de atualização do usuário emitidos para aplicativos (bem como cookies de sessão no navegador do usuário), redefinindo a propriedade de usuário **signInSessionsValidFromDateTime** para a data-hora atual.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 27bdbd5a9865ea15135ba8bb5fe77546671b6ab7
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: ed8cbcf1e0b04bc93af06b699f37fe0f693280f5
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352375"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721380"
 ---
-# <a name="user-revokesigninsessions"></a>usuário: revokeSignInSessions
+# <a name="user-revokesigninsessions"></a>user: revokeSignInSessions
 
 Namespace: microsoft.graph
 
-Invalida todos os tokens de atualização emitidos para aplicativos para um usuário (bem como cookies de sessão no navegador do usuário), redefinindo a propriedade de usuário **signInSessionsValidFromDateTime** para a data e hora atual. Normalmente, essa operação é executada (pelo usuário ou por um administrador) se o usuário tiver um dispositivo perdido ou roubado. Essa operação impede o acesso aos dados da organização por meio de aplicativos no dispositivo solicitando que o usuário entre novamente em todos os aplicativos para os quais tenham sido consentidos anteriormente, independentemente do dispositivo.
+Invalida todos os tokens de atualização emitidos para aplicativos para um usuário (bem como cookies de sessão no navegador de um usuário), redefinindo a propriedade de usuário **signInSessionsValidFromDateTime** para a data-hora atual. Normalmente, essa operação é executada (pelo usuário ou por um administrador) se o usuário tiver um dispositivo perdido ou roubado. Essa operação impede o acesso aos dados da organização por meio de aplicativos no dispositivo, exigindo que o usuário entre novamente em todos os aplicativos que eles consentiram anteriormente, independentemente do dispositivo.
 
->Se o aplicativo tentar resgatar um token de acesso delegado para esse usuário usando um token de atualização invalidado, o aplicativo receberá um erro. Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização fazendo uma solicitação para o ponto de extremidade de autorização, que forçará o usuário a entrar.
+>Se o aplicativo tentar resgatar um token de acesso delegado para esse usuário usando um token de atualização inválido, o aplicativo receberá um erro. Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização fazendo uma solicitação ao ponto de extremidade de autorização, o que forçará o usuário a entrar.
 
 >[!NOTE]
->Após chamar o **revokeSignInSessions**, pode haver um pequeno atraso de alguns minutos antes de os tokens serem revogados.
+>Depois de **chamar revokeSignInSessions**, pode haver um pequeno atraso de alguns minutos antes que os tokens sejam revogados.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | User. ReadWrite. All, Directory. ReadWrite. All,|
+|Aplicativo                            | User.ReadWrite.All, Directory.ReadWrite.All,|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

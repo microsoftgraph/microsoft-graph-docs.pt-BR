@@ -2,22 +2,22 @@
 title: Listar registeredDevices
 description: Obtenha a lista de dispositivos registrado do usuário.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cd7868adbe90bcc750a5f988626cb532b30bbab8
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 1965a89e4815b525f2e3ee42e65f46bd4b74bb21
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634953"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721933"
 ---
 # <a name="list-registereddevices"></a>Listar registeredDevices
 
 Namespace: microsoft.graph
 
 Obtenha a lista de dispositivos registrado do usuário.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 30f6f042c959ae4177f1482a6222605827766b4b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d0470499b5b2864336a0533d1f531e64674c166e
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132377"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721912"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
@@ -71,7 +71,7 @@ Esse recurso permite:
 |changeKey|String|A versão da mensagem.|
 |conversationId|String|A ID da conversa à qual o email pertence.|
 |conversationIndex|Edm.Binary|Indica a posição da mensagem dentro da conversa.|
-|createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
+|createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio da qual a mensagem foi enviada. Na maioria dos casos, esse valor é o mesmo que o da propriedade **remetente**, exceto para cenários de compartilhamento ou delegação. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |hasAttachments|Booliano|Indica se a mensagem tem anexos. Esta propriedade não inclui anexos em linha, portanto, se uma mensagem contém somente anexos em linha, essa propriedade é falsa. Para verificar a existência de anexos em linha, analise a propriedade **body** para procurar um atributo `src`, como `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
@@ -84,12 +84,12 @@ Esse recurso permite:
 |isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
-|receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
+|receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [ou ao enviar uma mensagem como um delegado](/graph/outlook-share-delegate-calendar.md). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
-|sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
+|sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |assunto|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual. **uniqueBody** não é fornecido por padrão, mas pode ser recuperado por uma determinada mensagem pelo uso da consulta `?$select=uniqueBody`. Pode estar no formato HTML ou no formato de texto.|

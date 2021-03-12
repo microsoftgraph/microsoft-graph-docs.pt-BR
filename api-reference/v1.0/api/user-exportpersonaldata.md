@@ -1,33 +1,33 @@
 ---
-title: 'usuário: exportPersonalData'
-description: Envia uma solicitação de operação de política de dados, feita por um administrador da empresa para exportar os dados de um usuário organizacional.
+title: 'user: exportPersonalData'
+description: Envia uma solicitação de operação de política de dados, feita por um Administrador da Empresa para exportar dados de um usuário organizacional.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bd61c123bf566b97a926c6db81169b704e9f0b93
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fef9b795e0cf1b3fd162afc4599ad4c245b828e9
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992150"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722346"
 ---
-# <a name="user-exportpersonaldata"></a>usuário: exportPersonalData
+# <a name="user-exportpersonaldata"></a>user: exportPersonalData
 
 Namespace: microsoft.graph
 
-Envie uma solicitação de operação de política de dados de um administrador da empresa ou de um aplicativo para exportar os dados de um usuário organizacional.
+Envie uma solicitação de operação de política de dados de um administrador da empresa ou de um aplicativo para exportar dados de um usuário organizacional.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  User. Export. All, User. Read. All  |
+|Delegado (conta corporativa ou de estudante) |  User.Export.All, User.Read.All  |
 |Delegado (conta pessoal da Microsoft) |  Não aplicável  |
-|Aplicativo | User. Export. All, User. Read. All |
+|Aplicativo | User.Export.All, User.Read.All |
 
->**Observação:** A exportação só pode ser realizada por um administrador da empresa quando permissões delegadas são usadas.
+>**Observação:** A exportação só pode ser executada por um administrador da empresa quando as permissões delegadas são usadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,15 +45,15 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|storageLocation|String|Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta de armazenamento do Azure, onde os dados devem ser exportados.|
+|storageLocation|Cadeia de caracteres|Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta de Armazenamento do Azure, para onde os dados devem ser exportados.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta. A resposta contém os cabeçalhos de resposta a seguir.
+Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta. A resposta contém os seguintes headers de resposta.
 
 | Nome       | Descrição|
 |:---------------|:----------|
-| Local  | URL para verificar o status da solicitação. |
-| Repetir-após  | Período de tempo em segundos. O criador de solicitação deve aguardar esse tempo depois de enviar uma solicitação para verificar o status. |
+| Location  | URL para verificar o status da solicitação. |
+| Retry-After  | Período de tempo em segundos. O fazedor de solicitações deve aguardar tanto tempo depois de enviar uma solicitação para verificar o status. |
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

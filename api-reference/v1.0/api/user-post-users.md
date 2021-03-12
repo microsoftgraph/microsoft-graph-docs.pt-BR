@@ -1,16 +1,16 @@
 ---
 title: Criar Usuário
 description: Usar esta API para criar um novo Usuário.
-author: krbain
+author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7a9564aa8c6d7d8bf966c33da2969d9071fb3f6e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 42a3b4a1c0cb5cef9606ddea62c1f9d15d0ff493
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137204"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721401"
 ---
 # <a name="create-user"></a>Criar Usuário
 

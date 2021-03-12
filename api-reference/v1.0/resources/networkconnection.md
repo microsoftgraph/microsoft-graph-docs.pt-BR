@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso networkConnection
+title: Tipo de recurso networkConnection
 description: Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 localization_priority: Normal
 author: chinguyen1
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 926bfe67ec420ae386d0215b09c91d690f7f58f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5671726ead3da811c109a9a2afe01c49b665e513
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965390"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50719007"
 ---
-# <a name="networkconnection-resource-type"></a>tipo de recurso networkConnection
+# <a name="networkconnection-resource-type"></a>Tipo de recurso networkConnection
 
 Namespace: microsoft.graph
 
@@ -23,25 +23,25 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |applicationName|Cadeia de caracteres|Nome do aplicativo que gerencia a conexão de rede (por exemplo, Facebook ou SMTP).|
-|destinationAddress|String|Endereço IP de destino (da conexão de rede).|
-|destinationLocation|String|Local (por mapeamento de endereço IP) associado ao destino de uma conexão de rede.|
-|destinationDomain|String|Parte do domínio de destino da URL de destino. (por exemplo, ' www.contoso.com ').|
-|destinationPort|String|Porta de destino (da conexão de rede).|
-|destinationUrl|String|URL de conexão de rede/cadeia de caracteres URI-excluindo parâmetros. (por exemplo, ' www.contoso.com/products/default.htmL')|
+|destinationAddress|Cadeia de caracteres|Endereço IP de destino (da conexão de rede).|
+|destinationLocation|Cadeia de caracteres|Local (por mapeamento de endereço IP) associado ao destino de uma conexão de rede.|
+|destinationDomain|Cadeia de caracteres|Parte do domínio de destino da URL de destino. (por exemplo, 'www.contoso.com').|
+|destinationPort|Cadeia de caracteres|Porta de destino (da conexão de rede).|
+|destinationUrl|Cadeia de caracteres|Cadeia de caracteres url/URI de conexão de rede - excluindo parâmetros. (por exemplo, 'www.contoso.com/products/default.html')|
 |direction|connectionDirection|Direção da conexão de rede. Os valores possíveis são: `unknown`, `inbound`, `outbound`.|
-|domainRegisteredDateTime|DateTimeOffset|Data em que o domínio de destino foi registrado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|localDnsName|String|A resolução de nome DNS local da forma como aparece no cache de DNS local do host (por exemplo, caso o arquivo "hosts" tenha sido adulterado).|
-|natDestinationAddress|String|Endereço IP de destino de conversão de endereço de rede.|
-|natDestinationPort|String|Porta de destino de conversão de endereço de rede.|
-|natSourceAddress|String|Endereço IP de origem de conversão de endereço de rede.|
-|natSourcePort|String|Porta de origem de conversão de endereço de rede.|
-|RDP|[securityNetworkProtocol](securitynetworkprotocol.md)|Protocolo de rede. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `unknown` `ip` `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader` , `ipSecEncapsulatingSecurityPayload` , `ipSecAuthenticationHeader` ,, `icmpV6` `ipv6NoNextHeader` , `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII` ,,,,,.|
-|riskScore|String|Provedor gerado/Pontuação de risco calculado da conexão de rede. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
-|sourceAddress|String|Endereço IP de origem (ou seja, origem) (da conexão de rede).|
-|sourceLocation|String|Local (por mapeamento de endereço IP) associado à origem de uma conexão de rede.|
-|sourcePort|String|Porta IP de origem (ou seja, origem) (da conexão de rede).|
+|domainRegisteredDateTime|DateTimeOffset|Data em que o domínio de destino foi registrado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|localDnsName|Cadeia de caracteres|A resolução de nome DNS local como ela aparece no cache DNS local do host (por exemplo, caso o arquivo 'hosts' tenha sido adulterado).|
+|natDestinationAddress|Cadeia de caracteres|Endereço de rede Endereço endereço endereço IP de destino.|
+|natDestinationPort|Cadeia de caracteres|Porta de destino de conversão de endereço de rede.|
+|natSourceAddress|Cadeia de caracteres|Endereço de rede Endereço endereço IP de origem.|
+|natSourcePort|Cadeia de caracteres|Porta de origem de conversão de endereço de rede.|
+|protocol|[securityNetworkProtocol](securitynetworkprotocol.md)|Protocolo de rede. Os valores possíveis são: `unknown` , , , , , , , , `ip` `icmp` , `igmp` `ggp` , `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` , `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII`|
+|riskScore|Cadeia de caracteres|Pontuação de risco gerada/calculada do provedor da conexão de rede. Intervalo de valores recomendado de 0 a 1, que equivale a uma porcentagem.|
+|sourceAddress|Cadeia de caracteres|Endereço IP de origem (ou seja, origem) (da conexão de rede).|
+|sourceLocation|Cadeia de caracteres|Local (por mapeamento de endereço IP) associado à origem de uma conexão de rede.|
+|sourcePort|Cadeia de caracteres|Porta IP de origem (ou seja, origem) (da conexão de rede).|
 |status|connectionStatus|Status da conexão de rede. Os valores possíveis são: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
-|urlParameters|String|Parâmetros (sufixo) da URL de destino.|
+|urlParameters|Cadeia de caracteres|Parâmetros (sufixo) da URL de destino.|
 
 ## <a name="json-representation"></a>Representação JSON
 

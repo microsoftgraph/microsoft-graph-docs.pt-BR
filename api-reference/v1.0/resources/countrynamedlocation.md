@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d3ae4c1360c3f3b1bcb9cb1ad50a95afef2098c8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 94d9a422bf7a183fa0d780fbc0197fe4d4655b66
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444417"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721247"
 ---
 # <a name="countrynamedlocation-resource-type"></a>Tipo de recurso countryNamedLocation
 
@@ -20,7 +20,7 @@ Representa um Azure Active Directory nomeado local definido por países e regiõ
 
 Herda de [namedLocation](../resources/namedLocation.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -34,12 +34,12 @@ Herda de [namedLocation](../resources/namedLocation.md)
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Conjunto de cadeias de caracteres|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
-|createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
+|countriesAndRegions|Coleção de cadeias de caracteres|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
+|createdDateTime|DateTimeOffset|O tipo Timestamp representa a data e a hora de criação do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 |displayName|Cadeia de caracteres|Nome acessível para humanos do local. Herdado [de namedLocation](../resources/namedLocation.md).|
 |id|Cadeia de caracteres|Identificador de um objeto namedLocation. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
-|includeUnknownCountriesAndRegions|Boolean|True se os endereços IP que não mapeiam para um país ou região devem ser incluídos no local nomeado.|
-|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa a última data e hora modificadas do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
+|includeUnknownCountriesAndRegions|Booliano|True se os endereços IP que não mapeiam para um país ou região devem ser incluídos no local nomeado.|
+|modifiedDateTime|DateTimeOffset|O tipo Timestamp representa a última data e hora modificadas do local usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Herdado [de namedLocation](../resources/namedLocation.md).|
 
 ## <a name="relationships"></a>Relações
 
