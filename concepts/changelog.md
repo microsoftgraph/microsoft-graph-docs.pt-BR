@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 5b6dd45622371277deb40b28763edd0dc2c6275b
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 44349921023e4197f73709a5b2cae0b0e56e02d8
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575816"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722206"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -34,7 +34,6 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição        | v1.0        | Apresentação do novo tipo de recurso [applicationTemplate](/graph/api/resources/applicationtemplate.md). Esse tipo de recurso dá suporte a [instanciar](/graph/api/applicationtemplate-instantiate.md), [listar](/graph/api/applicationtemplate-instantiate.md) e [obter](/graph/api/applicationtemplate-get.md) aplicativos da galeria do aplicativo Azure AD.
 
 ## <a name="february-2021"></a>Fevereiro de 2021
-
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 | **Tipo de alteração** | **Versão**   | **Descrição**                                                                                              |
@@ -979,7 +978,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | A função [delta](/graph/api/event-delta?view=graph-rest-beta&preserve-view=true) suporta um cenário adicional para obter alterações incrementais (novo, atualizado ou removido) de eventos em um calendário de usuário sem necessidade de estarem limitados por um intervalo de data. |
 
-### <a name="change-notifications"></a>Alterar notificações
+### <a name="change-notifications"></a>Notificações de alteração
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3697,8 +3696,8 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
-| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta&preserve-view=true) e os seguintes métodos: <br> [List](/graph/api/bookingcurrency-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcurrency-get?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcustomer-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingcustomer-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingcustomer-delete?view=graph-rest-beta&preserve-view=true).|
 | Adição        | Beta          | Foi adicionada a entidade [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-services?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-services?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingservice-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingservice-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingservice-delete?view=graph-rest-beta&preserve-view=true).|
@@ -5514,7 +5513,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Alteração          | Beta        | Como parte da alteração de esquema em que o tipo de duas propriedades de local está sendo substituído por um novo tipo complexo no ponto de extremidade identityRiskEvents, as seguintes propriedades são alteradas/adicionadas no ponto de extremidade identityRiskEvents:</br>**location**  alterado de Edm.String para ComplexType signInLocation.<br/>**previousLocation** alterado de Edm.String para ComplexType signInLocation.<br/>**signInLocation** novo ComplexType que contém as propriedades city, state, countryOrRegion e geoCoordinates.<br/>**geoCoordinates** novo ComplexType que contém as propriedades latitude e longitude. |
+| Alterar          | Beta        | Como parte da alteração de esquema em que o tipo de duas propriedades de local está sendo substituído por um novo tipo complexo no ponto de extremidade identityRiskEvents, as seguintes propriedades são alteradas/adicionadas no ponto de extremidade identityRiskEvents:</br>**location**  alterado de Edm.String para ComplexType signInLocation.<br/>**previousLocation** alterado de Edm.String para ComplexType signInLocation.<br/>**signInLocation** novo ComplexType que contém as propriedades city, state, countryOrRegion e geoCoordinates.<br/>**geoCoordinates** novo ComplexType que contém as propriedades latitude e longitude. |
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 
@@ -5559,7 +5558,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Alteração          | Beta        | Os prefixos de parâmetros de consulta sem $ são suportados a partir de 26/09/16. O prefixo $ nos parâmetros de consulta é opcional. |
+| Alterar          | Beta        | Os prefixos de parâmetros de consulta sem $ são suportados a partir de 26/09/16. O prefixo $ nos parâmetros de consulta é opcional. |
 
 ### <a name="sites-and-lists"></a>Sites e listas
 
@@ -5598,7 +5597,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Alteração          | Beta        | A propriedade _WebSite_ será renomeada como _WebSite_. Para obter detalhes, veja [Futuras Alterações nas APIs de Contatos e Pessoas](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/). |
+| Alterar          | Beta        | A propriedade _WebSite_ será renomeada como _WebSite_. Para obter detalhes, veja [Futuras Alterações nas APIs de Contatos e Pessoas](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/). |
 
 ### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
 
