@@ -1,0 +1,100 @@
+---
+title: Listar agreementAcceptances
+description: Recupere uma lista de objetos agreementAcceptance de um usuário.
+localization_priority: Normal
+author: krbain
+ms.prod: users
+doc_type: apiPageType
+ms.openlocfilehash: 12c47f7719f9a5befb31e393a309242d35f984d0
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50722548"
+---
+# <a name="list-agreementacceptances"></a><span data-ttu-id="7723f-103">Listar agreementAcceptances</span><span class="sxs-lookup"><span data-stu-id="7723f-103">List agreementAcceptances</span></span>
+
+<span data-ttu-id="7723f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7723f-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="7723f-105">Recupere uma lista de objetos [agreementAcceptance de um](../resources/agreementacceptance.md) usuário.</span><span class="sxs-lookup"><span data-stu-id="7723f-105">Retrieve a list of a user's [agreementAcceptance](../resources/agreementacceptance.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7723f-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="7723f-106">Permissions</span></span>
+<span data-ttu-id="7723f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7723f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="7723f-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7723f-109">Permission type</span></span>                        | <span data-ttu-id="7723f-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7723f-110">Permissions (from least to most privileged)</span></span>              |
+|:--------------------------------------|:---------------------------------------------------------|
+|<span data-ttu-id="7723f-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7723f-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="7723f-112">AgreementAcceptance.Read</span><span class="sxs-lookup"><span data-stu-id="7723f-112">AgreementAcceptance.Read</span></span> |
+|<span data-ttu-id="7723f-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7723f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7723f-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7723f-114">Not supported.</span></span> |
+|<span data-ttu-id="7723f-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7723f-115">Application</span></span>                            | <span data-ttu-id="7723f-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7723f-116">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="7723f-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7723f-117">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/agreementAcceptances
+GET /users/{id | userPrincipalName}/agreementAcceptances
+```
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="7723f-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7723f-118">Optional query parameters</span></span>
+<span data-ttu-id="7723f-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7723f-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="7723f-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7723f-120">Request headers</span></span>
+| <span data-ttu-id="7723f-121">Nome</span><span class="sxs-lookup"><span data-stu-id="7723f-121">Name</span></span>      |<span data-ttu-id="7723f-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="7723f-122">Description</span></span>|
+|:----------|:----------|
+| <span data-ttu-id="7723f-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="7723f-123">Authorization</span></span> | <span data-ttu-id="7723f-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7723f-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="7723f-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7723f-126">Request body</span></span>
+<span data-ttu-id="7723f-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7723f-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="7723f-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="7723f-128">Response</span></span>
+<span data-ttu-id="7723f-129">Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [agreementAcceptance](../resources/agreementacceptance.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7723f-129">If successful, this method returns a `200 OK` response code and a collection of [agreementAcceptance](../resources/agreementacceptance.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7723f-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7723f-130">Example</span></span>
+### <a name="request"></a><span data-ttu-id="7723f-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7723f-131">Request</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_agreementacceptances"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/agreementAcceptances
+
+GET https://graph.microsoft.com/v1.0/users/f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf/agreementAcceptances
+```
+
+### <a name="response"></a><span data-ttu-id="7723f-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="7723f-132">Response</span></span>
+><span data-ttu-id="7723f-133">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="7723f-133">**Note:** The response object shown here might be shortened for readability.</span></span> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.agreementAcceptance",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 303
+
+{
+  "value": [
+    {
+      "agreementId": "093b947f-8363-4979-a47d-4c52b33ee1be",
+      "userId": "f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf",
+      "agreementFileId": "f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf",
+      "recordedDateTime": "2021-03-10T00:39:56.0523527Z",
+      "userDisplayName": "Test_User",
+      "userPrincipalName": "Test_User@TestTenant.onmicrosoft.com"
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List agreementAcceptances",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

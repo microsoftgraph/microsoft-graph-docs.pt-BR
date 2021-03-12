@@ -5,30 +5,30 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8b5cec3e647670be037b27bcf2cae438111f04e5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 90fc14f3d56c9ca815d7abd721cdeef48dfdb23b
+ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131856"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50721975"
 ---
-# <a name="application-addpassword"></a><span data-ttu-id="7806c-103">application: addPassword</span><span class="sxs-lookup"><span data-stu-id="7806c-103">application: addPassword</span></span>
+# <a name="application-addpassword"></a><span data-ttu-id="56f31-103">application: addPassword</span><span class="sxs-lookup"><span data-stu-id="56f31-103">application: addPassword</span></span>
 
-<span data-ttu-id="7806c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7806c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="56f31-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="56f31-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="7806c-105">Adiciona uma senha forte a um [aplicativo.](../resources/application.md)</span><span class="sxs-lookup"><span data-stu-id="7806c-105">Adds a strong password to an [application](../resources/application.md).</span></span>
+<span data-ttu-id="56f31-105">Adiciona uma senha forte a um [aplicativo](../resources/application.md).</span><span class="sxs-lookup"><span data-stu-id="56f31-105">Adds a strong password to an [application](../resources/application.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7806c-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="7806c-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="56f31-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="56f31-106">Permissions</span></span>
 
-<span data-ttu-id="7806c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7806c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="56f31-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="56f31-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7806c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7806c-109">Permission type</span></span>                        | <span data-ttu-id="7806c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7806c-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="56f31-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="56f31-109">Permission type</span></span>                        | <span data-ttu-id="56f31-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="56f31-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="7806c-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7806c-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="7806c-112">Application.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7806c-112">Application.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-| <span data-ttu-id="7806c-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7806c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7806c-114">Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7806c-114">Application.ReadWrite.All</span></span> |
-| <span data-ttu-id="7806c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7806c-115">Application</span></span>                            | <span data-ttu-id="7806c-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7806c-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+| <span data-ttu-id="56f31-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="56f31-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="56f31-112">Application.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="56f31-112">Application.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+| <span data-ttu-id="56f31-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="56f31-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="56f31-114">Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="56f31-114">Application.ReadWrite.All</span></span> |
+| <span data-ttu-id="56f31-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="56f31-115">Application</span></span>                            | <span data-ttu-id="56f31-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="56f31-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7806c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7806c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="56f31-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="56f31-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,36 +36,36 @@ ms.locfileid: "50131856"
 POST /applications/{id}/addPassword
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7806c-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7806c-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="56f31-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="56f31-118">Request headers</span></span>
 
-| <span data-ttu-id="7806c-119">Nome</span><span class="sxs-lookup"><span data-stu-id="7806c-119">Name</span></span>           | <span data-ttu-id="7806c-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="7806c-120">Description</span></span>                |
+| <span data-ttu-id="56f31-119">Nome</span><span class="sxs-lookup"><span data-stu-id="56f31-119">Name</span></span>           | <span data-ttu-id="56f31-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="56f31-120">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="7806c-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="7806c-121">Authorization</span></span>  | <span data-ttu-id="7806c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7806c-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="7806c-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7806c-124">Content-Type</span></span>   | <span data-ttu-id="7806c-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7806c-p103">application/json. Required.</span></span>|
+| <span data-ttu-id="56f31-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="56f31-121">Authorization</span></span>  | <span data-ttu-id="56f31-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="56f31-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="56f31-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="56f31-124">Content-Type</span></span>   | <span data-ttu-id="56f31-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="56f31-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7806c-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7806c-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="56f31-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="56f31-127">Request body</span></span>
 
-<span data-ttu-id="7806c-128">No corpo da solicitação, forneça um `passwordCredential` objeto opcional com as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="7806c-128">In the request body, provide an optional `passwordCredential` object with the following properties.</span></span>
+<span data-ttu-id="56f31-128">No corpo da solicitação, forneça um `passwordCredential` objeto opcional com as seguintes propriedades.</span><span class="sxs-lookup"><span data-stu-id="56f31-128">In the request body, provide an optional `passwordCredential` object with the following properties.</span></span>
 
-| <span data-ttu-id="7806c-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7806c-129">Property</span></span>     | <span data-ttu-id="7806c-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="7806c-130">Type</span></span>   |<span data-ttu-id="7806c-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="7806c-131">Description</span></span>|
+| <span data-ttu-id="56f31-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="56f31-129">Property</span></span>     | <span data-ttu-id="56f31-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="56f31-130">Type</span></span>   |<span data-ttu-id="56f31-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="56f31-131">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="7806c-132">displayName</span><span class="sxs-lookup"><span data-stu-id="7806c-132">displayName</span></span> | <span data-ttu-id="7806c-133">String</span><span class="sxs-lookup"><span data-stu-id="7806c-133">String</span></span> | <span data-ttu-id="7806c-134">Nome amigável da senha.</span><span class="sxs-lookup"><span data-stu-id="7806c-134">Friendly name for the password.</span></span> <span data-ttu-id="7806c-135">Opcional.</span><span class="sxs-lookup"><span data-stu-id="7806c-135">Optional.</span></span> |
-| <span data-ttu-id="7806c-136">endDateTime</span><span class="sxs-lookup"><span data-stu-id="7806c-136">endDateTime</span></span> | <span data-ttu-id="7806c-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7806c-137">DateTimeOffset</span></span> | <span data-ttu-id="7806c-138">A data e a hora em que a senha expira é representada usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="7806c-138">The date and time at which the password expires represented using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="7806c-139">Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="7806c-139">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="7806c-140">Opcional.</span><span class="sxs-lookup"><span data-stu-id="7806c-140">Optional.</span></span> <span data-ttu-id="7806c-141">O valor padrão é "startDateTime + 2 anos".</span><span class="sxs-lookup"><span data-stu-id="7806c-141">The default value is "startDateTime + 2 years".</span></span> |
-| <span data-ttu-id="7806c-142">startDateTime</span><span class="sxs-lookup"><span data-stu-id="7806c-142">startDateTime</span></span> | <span data-ttu-id="7806c-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7806c-143">DateTimeOffset</span></span> | <span data-ttu-id="7806c-144">A data e a hora em que a senha se torna válida.</span><span class="sxs-lookup"><span data-stu-id="7806c-144">The date and time at which the password becomes valid.</span></span> <span data-ttu-id="7806c-145">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="7806c-145">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="7806c-146">Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="7806c-146">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="7806c-147">Opcional.</span><span class="sxs-lookup"><span data-stu-id="7806c-147">Optional.</span></span>  <span data-ttu-id="7806c-148">O valor padrão é "now".</span><span class="sxs-lookup"><span data-stu-id="7806c-148">The default value is "now".</span></span> |
+| <span data-ttu-id="56f31-132">displayName</span><span class="sxs-lookup"><span data-stu-id="56f31-132">displayName</span></span> | <span data-ttu-id="56f31-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="56f31-133">String</span></span> | <span data-ttu-id="56f31-134">Nome amigável para a senha.</span><span class="sxs-lookup"><span data-stu-id="56f31-134">Friendly name for the password.</span></span> <span data-ttu-id="56f31-135">Opcional.</span><span class="sxs-lookup"><span data-stu-id="56f31-135">Optional.</span></span> |
+| <span data-ttu-id="56f31-136">endDateTime</span><span class="sxs-lookup"><span data-stu-id="56f31-136">endDateTime</span></span> | <span data-ttu-id="56f31-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="56f31-137">DateTimeOffset</span></span> | <span data-ttu-id="56f31-138">A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre em horário UTC.</span><span class="sxs-lookup"><span data-stu-id="56f31-138">The date and time at which the password expires represented using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="56f31-139">Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.</span><span class="sxs-lookup"><span data-stu-id="56f31-139">For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.</span></span> <span data-ttu-id="56f31-140">Opcional.</span><span class="sxs-lookup"><span data-stu-id="56f31-140">Optional.</span></span> <span data-ttu-id="56f31-141">O valor padrão é "startDateTime + 2 anos".</span><span class="sxs-lookup"><span data-stu-id="56f31-141">The default value is "startDateTime + 2 years".</span></span> |
+| <span data-ttu-id="56f31-142">startDateTime</span><span class="sxs-lookup"><span data-stu-id="56f31-142">startDateTime</span></span> | <span data-ttu-id="56f31-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="56f31-143">DateTimeOffset</span></span> | <span data-ttu-id="56f31-144">A data e a hora em que a senha se torna válida.</span><span class="sxs-lookup"><span data-stu-id="56f31-144">The date and time at which the password becomes valid.</span></span> <span data-ttu-id="56f31-145">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="56f31-145">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="56f31-146">Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.</span><span class="sxs-lookup"><span data-stu-id="56f31-146">For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.</span></span> <span data-ttu-id="56f31-147">Opcional.</span><span class="sxs-lookup"><span data-stu-id="56f31-147">Optional.</span></span>  <span data-ttu-id="56f31-148">O valor padrão é "now".</span><span class="sxs-lookup"><span data-stu-id="56f31-148">The default value is "now".</span></span> |
 
-## <a name="response"></a><span data-ttu-id="7806c-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="7806c-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="56f31-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="56f31-149">Response</span></span>
 
-<span data-ttu-id="7806c-150">Se bem-sucedido, este método retorna um código de resposta e `200 OK` um novo [objeto passwordCredential](../resources/passwordcredential.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7806c-150">If successful, this method returns a `200 OK` response code and a new [passwordCredential](../resources/passwordcredential.md) object in the response body.</span></span> <span data-ttu-id="7806c-151">A **propriedade secretText** no objeto response contém as senhas fortes geradas pelo Azure Active Directory com 16 a 64 caracteres.</span><span class="sxs-lookup"><span data-stu-id="7806c-151">The **secretText** property in the response object contains the strong passwords generated by Azure Active Directory that are 16-64 characters in length.</span></span> <span data-ttu-id="7806c-152">Não há como recuperar essa senha no futuro.</span><span class="sxs-lookup"><span data-stu-id="7806c-152">There is no way to retrieve this password in the future.</span></span>
+<span data-ttu-id="56f31-150">Se tiver êxito, este método retornará um código `200 OK` de resposta e um novo objeto [passwordCredential](../resources/passwordcredential.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="56f31-150">If successful, this method returns a `200 OK` response code and a new [passwordCredential](../resources/passwordcredential.md) object in the response body.</span></span> <span data-ttu-id="56f31-151">A **propriedade secretText** no objeto de resposta contém as senhas fortes geradas pelo Azure Active Directory que têm de 16 a 64 caracteres de comprimento.</span><span class="sxs-lookup"><span data-stu-id="56f31-151">The **secretText** property in the response object contains the strong passwords generated by Azure Active Directory that are 16-64 characters in length.</span></span> <span data-ttu-id="56f31-152">Não há como recuperar essa senha no futuro.</span><span class="sxs-lookup"><span data-stu-id="56f31-152">There is no way to retrieve this password in the future.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7806c-153">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7806c-153">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="56f31-153">Exemplos</span><span class="sxs-lookup"><span data-stu-id="56f31-153">Examples</span></span>
 
-<span data-ttu-id="7806c-154">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="7806c-154">The following example shows how to call this API.</span></span>
+<span data-ttu-id="56f31-154">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="56f31-154">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="7806c-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7806c-155">Request</span></span>
+### <a name="request"></a><span data-ttu-id="56f31-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56f31-155">Request</span></span>
 
-<span data-ttu-id="7806c-156">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7806c-156">The following is an example of the request.</span></span> <span data-ttu-id="7806c-157">A **id** especificada na solicitação é o valor da propriedade **de id** do aplicativo, não o valor da **propriedade appId.**</span><span class="sxs-lookup"><span data-stu-id="7806c-157">The **id** that is specified in the request is the value of the **id** property of the application, not the value of the **appId** property.</span></span> 
+<span data-ttu-id="56f31-156">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="56f31-156">The following is an example of the request.</span></span> <span data-ttu-id="56f31-157">A **id** especificada na solicitação é o valor da propriedade **id** do aplicativo, não o valor da **propriedade appId.**</span><span class="sxs-lookup"><span data-stu-id="56f31-157">The **id** that is specified in the request is the value of the **id** property of the application, not the value of the **appId** property.</span></span> 
 
-# <a name="http"></a>[<span data-ttu-id="7806c-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="7806c-158">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="56f31-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="56f31-158">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_addpassword"
@@ -81,28 +81,28 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="7806c-159">C#</span><span class="sxs-lookup"><span data-stu-id="7806c-159">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="56f31-159">C#</span><span class="sxs-lookup"><span data-stu-id="56f31-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-addpassword-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7806c-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7806c-160">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="56f31-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56f31-160">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/application-addpassword-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7806c-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7806c-161">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="56f31-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56f31-161">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/application-addpassword-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="7806c-162">Java</span><span class="sxs-lookup"><span data-stu-id="7806c-162">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="56f31-162">Java</span><span class="sxs-lookup"><span data-stu-id="56f31-162">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-addpassword-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="7806c-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="7806c-163">Response</span></span>
+### <a name="response"></a><span data-ttu-id="56f31-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="56f31-163">Response</span></span>
 
-<span data-ttu-id="7806c-164">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7806c-164">The following is an example of the response.</span></span>
+<span data-ttu-id="56f31-164">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="56f31-164">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
