@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 52c62a997e11e980f9d7cbc2abcf00285488561e
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: b96bd138f8bd10d791878e065db1d83c387ed5d7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402631"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804847"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var toRecipients = new List<Recipient>()
     }
 };
 
-await graphClient.Groups["{id}"].Threads["{id}"].Posts["{id}"]
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"]
     .Forward(toRecipients,comment)
     .Request()
     .PostAsync();

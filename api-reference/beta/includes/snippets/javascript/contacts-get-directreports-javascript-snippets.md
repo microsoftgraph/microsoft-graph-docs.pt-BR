@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 205a1a9a89318febf27d65cf82a370569cdb31c2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 4ae49ef4c2de26d17efc7b7bbede1450dcdc2a2c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877925"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786071"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/contacts/{id}/directReports')
+let directReports = await client.api('/contacts/{id}/directReports')
     .version('beta')
     .get();
 
