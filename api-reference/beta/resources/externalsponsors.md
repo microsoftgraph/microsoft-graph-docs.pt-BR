@@ -1,16 +1,16 @@
 ---
 title: tipo complexo externalSponsors
-description: Identifica uma relação com outro usuário no locatário que será permitido como Aprovador.
+description: Identifica uma relação com outro usuário no locatário que será permitido como aprovador.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4db88b74ae0acb2e817bd575f4e990774533064e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 361ac6ff85d5b4462b39aa10e4f978ce7d486e40
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013690"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761867"
 ---
 # <a name="externalsponsors-complex-type"></a>tipo complexo externalSponsors
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usada no estágio de aprovação de uma [política de atribuição de pacote do Access](accesspackageassignmentpolicy.md). É um subtipo de [userset](userset.md), no qual o `@odata.type` valor `#microsoft.graph.externalSponsors` indica que os patrocinadores externos da organização conectada do usuário solicitante sejam o aprovador. Esse aprovador só é aplicável a solicitações de usuários que fazem parte de uma organização conectada.  Ao criar um estágio de aprovação de política de atribuição de pacote do Access com o externalSponsors, também inclua outro aprovador, como um único usuário ou membro de grupo, caso a organização conectada não tenha um patrocinador externo.
+Usado no estágio de aprovação de uma política de atribuição [de pacote de acesso.](accesspackageassignmentpolicy.md) É um subtipo de [userSet](userset.md), no qual o valor indica que os patrocinadores externos de uma organização conectada do usuário solicitante devem `@odata.type` ser o `#microsoft.graph.externalSponsors` aprovador. Esse aprovador só se aplica a solicitações de usuários que fazem parte de uma organização conectada.  Ao criar um estágio de aprovação da política de atribuição de pacote de acesso com externalSponsors, inclua também outro aprovador, como um único usuário ou membro do grupo, caso a organização conectada não tenha um patrocinador externo.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| IsBackup | Booliano | Indica se o patrocinador é um Aprovador de fallback de backup. |
+| isBackup | Boolean | Indica se o patrocinador é um aprovador de fallback de backup. |
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON desse tipo.
+A seguir está uma representação JSON desse tipo.
 
 <!-- {
   "blockType": "resource",

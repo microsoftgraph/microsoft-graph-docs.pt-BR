@@ -3,14 +3,14 @@ title: Listar accessPackageResourceEnvironments
 description: Recupere uma lista de objetos accessPackageResourceEnvironment.
 author: hanki-microsoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0c8319198ae13894f6f5498bc4c018a26615ce59
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 823abc8a71cfce4ac7872f4e6e86ae7d08e92411
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50439485"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759402"
 ---
 # <a name="list-accesspackageresourceenvironments"></a>Listar accessPackageResourceEnvironments
 Namespace: microsoft.graph

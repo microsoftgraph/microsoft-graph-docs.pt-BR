@@ -3,15 +3,15 @@ title: Confirmar riskyUser comprometido
 description: Confirme um objeto riskyUser como comprometido.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: d9f3b141144654e21c47c523c46a3329865c7031
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 06de240619f121671b6fea8883bca0d3fa19e38a
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970937"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760943"
 ---
 # <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 
 >**Observação:** A API riskyUsers requer uma licença do Azure AD Premium P2.
 
-Confirme um ou mais objetos [riskyUser](../resources/riskyuser.md) como comprometidos. Esta ação define o nível de risco do usuário de destino como alto.
+Confirme um ou mais [objetos riskyUser](../resources/riskyuser.md) como comprometidos. Essa ação define o nível de risco do usuário direcionado como alto.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,13 +46,13 @@ POST /identityProtection/riskyUsers/confirmCompromised
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Especifique as IDs de usuário arriscadas a serem descartadas no corpo da solicitação.
+Especifique as IDs de usuário arriscadas para descartar no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-confirm-users-as-compromised"></a>Exemplo 1: confirmar os usuários como comprometidos
+### <a name="example-1-confirm-users-as-compromised"></a>Exemplo 1: Confirmar usuários como comprometidos
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
@@ -99,7 +99,7 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
-### <a name="example-2-confirm-a-user-as-compromised"></a>Exemplo 2: confirmar um usuário como comprometido
+### <a name="example-2-confirm-a-user-as-compromised"></a>Exemplo 2: Confirmar um usuário como comprometido
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 

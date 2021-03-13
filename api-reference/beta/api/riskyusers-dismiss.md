@@ -1,27 +1,28 @@
 ---
-title: Ignorar riskyUser
+title: Descartar riskyUser
 description: Descartar o risco de um objeto riskyUser.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: 8ae21d3adb754798ea2332c1b9acc7880b4a6d99
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 47b749e1ac5d782d96210b493ed1451db19184c7
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975887"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761483"
 ---
-# <a name="riskyuser-dismiss"></a>riskyUser: fechar
+# <a name="riskyuser-dismiss"></a>riskyUser: dismiss
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
+>**Observação:** Usar a API riskyUsers requer uma licença do Azure AD Premium P2.
 
-Descarte o risco de um ou mais objetos [riskyUser](../resources/riskyuser.md) . Esta ação define o nível de risco do usuário de destino como nenhum.
+Descartar o risco de um ou mais [objetos riskyUser.](../resources/riskyuser.md) Essa ação define o nível de risco do usuário direcionado como nenhum. A contagem máxima de usuários a ser descartada em uma chamada é 60.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -45,13 +46,13 @@ GET /identityProtection/riskyUsers/dismiss
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Especifique as userIds a serem descartadas no corpo da solicitação.
+Especifique os userIds a descartar no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-dismiss-risky-users"></a>Exemplo 1: ignorar usuários arriscados
+### <a name="example-1-dismiss-risky-users"></a>Exemplo 1: descartar usuários arriscados
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 

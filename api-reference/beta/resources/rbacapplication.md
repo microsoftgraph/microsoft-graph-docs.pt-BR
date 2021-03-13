@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso rbacApplication
-description: Propriedade de navegação gerenciamento de função
+title: Tipo de recurso rbacApplication
+description: Propriedade de navegação de gerenciamento de função
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e7145509745bdb696ebe3342035096af27d89b38
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c3833d07e0fb9758cc8f4f5418f725889fd784dc
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993046"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760922"
 ---
-# <a name="rbacapplication-resource-type"></a>tipo de recurso rbacApplication
+# <a name="rbacapplication-resource-type"></a>Tipo de recurso rbacApplication
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contêiner de gerenciamento de função para definições de função unificadas e atribuições de função para provedores Microsoft 365 RBAC. Atualmente, "Directory" é o único aplicativo RBAC compatível.
+Contêiner de gerenciamento de função para definições unificadas de função e atribuições de função para provedores RBAC do Microsoft 365. Atualmente, o "diretório" é o único aplicativo RBAC com suporte.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Criar unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Crie um novo unifiedRoleAssignment postando na coleção roleAssignments. |
-| [Listar roleAssignments](../api/rbacapplication-list-roleassignments.md) | coleção [unifiedRoleAssignment](unifiedroleassignment.md) | Obtenha uma coleção de objetos unifiedRoleAssignment. Somente instâncias específicas podem ser consultadas, por meio da filtragem em roleDefitionId ou entidade de segurança. |
+| [Listar roleAssignments](../api/rbacapplication-list-roleassignments.md) | [Coleção unifiedRoleAssignment](unifiedroleassignment.md) | Obter uma coleção de objetos unifiedRoleAssignment. Somente instâncias específicas podem ser consultadas, filtrando-se roleDefitionId ou principalId. |
 | [Criar unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Crie um novo unifiedRoleDefinition postando na coleção roleDefinitions. |
-| [Listar roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | coleção [unifiedRoleDefinition](unifiedroledefinition.md) | Obtenha uma coleção de objetos unifiedRoleDefinition. |
+| [Listar roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [Coleção unifiedRoleDefinition](unifiedroledefinition.md) | Obter uma coleção de objetos unifiedRoleDefinition. |
 
 ## <a name="properties"></a>Propriedades
 

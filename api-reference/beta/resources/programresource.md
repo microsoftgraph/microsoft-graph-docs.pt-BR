@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso programResource
-description: Representa uma referência a um objeto que é o destino da revisão do Access.
+title: Tipo de recurso programResource
+description: Representa uma referência a um objeto que é o destino da revisão de acesso.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5ad3720587523e6937b4c3713a1c5a8c06d1e6e5
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 0ef610650887b1d34569465bd5babb7ec91c194d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601493"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761825"
 ---
-# <a name="programresource-resource-type"></a>tipo de recurso programResource
+# <a name="programresource-resource-type"></a>Tipo de recurso programResource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O objeto **programResource** , contido em um objeto [programControl](programcontrol.md) , representa uma referência a um objeto que é o destino da revisão do Access.
+O **objeto programResource,** contido em um objeto [programControl,](programcontrol.md) representa uma referência a um objeto que é o destino da revisão de acesso.
 
-Este tipo herda de [Identity](identity.md).
+Esse tipo herda da [identidade](identity.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| type | String | Tipo do recurso, indicando se é um grupo ou um aplicativo. |
+| tipo | Cadeia de caracteres | Tipo do recurso, indicando se é um grupo ou um aplicativo. |
 
 ## <a name="json-representation"></a>Representação JSON
 

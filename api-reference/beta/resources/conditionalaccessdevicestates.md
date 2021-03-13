@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso conditionalAccessDeviceStates
-description: Representa os Estados do dispositivo no escopo da política.
+title: Tipo de recurso conditionalAccessDeviceStates
+description: Representa os estados do dispositivo no escopo da política.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 262657c015e4b3416baa9e6e533d1b8f76c1a536
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 152c4edbd641d68f6211111cb29e9794e2a88260
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040068"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761797"
 ---
-# <a name="conditionalaccessdevicestates-resource-type"></a>tipo de recurso conditionalAccessDeviceStates
+# <a name="conditionalaccessdevicestates-resource-type"></a>Tipo de recurso conditionalAccessDeviceStates
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os Estados do dispositivo no escopo da política.
+Representa os estados do dispositivo no escopo da política.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeStates | Coleção String | Estados no escopo da política. `All` é o único valor permitido. |
-| excludeStates | Coleção String | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
+| includeStates | Coleção de cadeias de caracteres | Estados no escopo da política. `All` é o único valor permitido. |
+| excludeStates | Coleção de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant` , `DomainJoined` . |
 
 ## <a name="relationships"></a>Relações
 

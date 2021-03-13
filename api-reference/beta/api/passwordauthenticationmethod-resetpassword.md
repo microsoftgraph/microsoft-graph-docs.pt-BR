@@ -3,14 +3,14 @@ title: 'passwordAuthenticationMethod: resetPassword'
 description: Redefinir a senha de um usuário
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9ab66da19cbc2034b73476b8c9275f687e729f6a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 71f144592ec2d0d99eccbfa2d0627f74982a5fa3
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968676"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761420"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -18,25 +18,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inicie uma redefinição para a senha associada a um objeto de [método de autenticação de senha](../resources/passwordauthenticationmethod.md) . Isso só pode ser feito por um administrador com as permissões apropriadas e não pode ser executado na conta de um usuário.
+Inicie uma redefinição da senha associada a um objeto de método [de autenticação de](../resources/passwordauthenticationmethod.md) senha. Isso só pode ser feito por um administrador com permissões apropriadas e não pode ser executado na conta de um usuário.
 
-Este fluxo grava a nova senha no Azure Active Directory e a envia para o Active Directory local, se configurado usando o Write-back de senha. O administrador pode fornecer uma nova senha ou fazer com que o sistema gere uma. O usuário é solicitado a alterar a senha na próxima vez em que entrar.
+Esse fluxo grava a nova senha no Azure Active Directory e a pressiona para o Active Directory local, se configurada usando writeback de senha. O administrador pode fornecer uma nova senha ou fazer com que o sistema gere uma. O usuário é solicitado a alterar a senha na próxima vez que entrar.
 
-Essa redefinição é uma operação de execução longa e retornará um link no `Location` cabeçalho onde o chamador pode verificar periodicamente o status da redefinição.
+Essa redefinição é uma operação de longa duração e retornará um link no header onde o chamador pode verificar periodicamente o `Location` status da redefinição.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões que atuam em si (de menos para mais privilégios) | Permissões que atuam em outros (de menos para mais privilégios)|
+| Tipo de permissão                        | Permissões agindo por si mesmo (do mínimo para o mais privilegiado) | Permissões atuando em outras pessoas (do mínimo ao mais privilegiado)|
 |:---------------------------------------|:-------------------------|:-----------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. | UserAuthenticationMethod. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte. | UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Sem suporte. | Sem suporte. |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-* Administrador global
+* Administração global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 
@@ -61,11 +61,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|newPassword|String|A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida. Se for omitido para uma senha somente de nuvem, o sistema retornará uma senha gerada pelo sistema. Esta é uma cadeia de caracteres Unicode sem codificação. Ele é validado em relação ao sistema de senha banida do locatário antes da aceitação e deve cumprir a nuvem do locatário e/ou os requisitos de senha local.|
+|newPassword|Cadeia de Caracteres|A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida. Se for omitido para uma senha somente na nuvem, o sistema retornará uma senha gerada pelo sistema. Esta é uma cadeia de caracteres unicode sem outra codificação. Ele é validado no sistema de senhas proibido do locatário antes da aceitação e deve seguir os requisitos de senha na nuvem e/ou local do locatário.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `202 ACCEPTED` código de resposta e uma URL no `Location` cabeçalho.
+Se tiver êxito, este método retornará `202 ACCEPTED` um código de resposta e uma URL no `Location` header.
 
 Se o chamador não enviar uma senha, uma senha gerada pela Microsoft será fornecida em um objeto JSON no corpo da resposta.
 
@@ -73,14 +73,14 @@ Se o chamador não enviar uma senha, uma senha gerada pela Microsoft será forne
 
 | Nome        | Descrição     |
 |:------------|:----------------|
-|Location     | URL a ser chamada para verificar o status da operação.|
-|Repetir-após  | Duração em segundos.|
+|Local     | URL a ser chamada para verificar o status da operação.|
+|Repetir-after  | Duração em segundos.|
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-user-submitted-password"></a>Exemplo 1: senha enviada pelo usuário
 
-O exemplo a seguir mostra como chamar essa API quando o chamador enviar uma senha.
+O exemplo a seguir mostra como chamar essa API quando o chamador envia uma senha.
 
 #### <a name="request"></a>Solicitação
 
@@ -148,7 +148,7 @@ Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authen
 
 ### <a name="example-2-system-generated-password"></a>Exemplo 2: senha gerada pelo sistema
 
-O exemplo a seguir mostra como chamar essa API quando o chamador não enviar uma senha.
+O exemplo a seguir mostra como chamar essa API quando o chamador não envia uma senha.
 
 #### <a name="request"></a>Solicitação
 

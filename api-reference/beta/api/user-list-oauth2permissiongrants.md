@@ -3,14 +3,14 @@ title: Lista oauth2PermissionGrants
 description: Recuperar uma lista de objetos oAuth2PermissionGrant, representando concessões de permissão delegadas.
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: ada015bb3ee59b0f52ebf63aaa8d4f5dd11f1459
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a1a4aa0a3a2d588c8bc9a744f59b789eb3796097
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975201"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760908"
 ---
 # <a name="list-oauth2permissiongrants"></a>Lista oauth2PermissionGrants
 

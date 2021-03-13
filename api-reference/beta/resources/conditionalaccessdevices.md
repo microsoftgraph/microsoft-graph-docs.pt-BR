@@ -3,14 +3,14 @@ title: Tipo de recurso conditionalAccessDevices
 description: Representa dispositivos no escopo da política.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a42e6023ace493c5efb230ffd53eb9c4caee7d16
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 94115e97c597bc34f03d843b8098f707ed39cd51
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440525"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761804"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>Tipo de recurso conditionalAccessDevices
 

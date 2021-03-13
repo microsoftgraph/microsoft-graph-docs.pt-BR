@@ -4,23 +4,23 @@ description: Leia as propriedades e as relações de um objeto temporaryAccessPa
 author: inbarckms
 ms.author: inbarc
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 52ea16ad502a24ac0eb75de94c2cad4c9fbe93d5
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 08a20da2f4c14a3d3a6d3581765eb5e168e8b721
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272596"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759507"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>Obter temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um objeto [temporaryAccessPassAuthenticationMethodConfiguration,](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) que representa a política de método de autenticação de Passagem de Acesso Temporário para o locatário do Azure Active Directory (Azure AD). [](../resources/authenticationmethodspolicies-overview.md)
+Leia as propriedades e as relações de um objeto [temporaryAccessPassAuthenticationMethodConfiguration,](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) que representa a política de método de autenticação Passagem de Acesso Temporário para o locatário do Azure Active Directory (Azure AD). [](../resources/authenticationmethodspolicies-overview.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
- Para cenários delegados, o administrador precisa da função de administrador global. Para obter mais informações, consulte[funções.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+ Para cenários delegados, o administrador precisa da função de administrador global. Para obter mais informações, consulte[funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -3,14 +3,14 @@ title: Atualizar smsAuthenticationMethodConfiguration
 description: Atualize as propriedades de um objeto smsAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dbdcddf77f2e85517b6c8d1685b4129b1e8d83f0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 08988f75df38facbce7f17a376f335babb3258b2
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475587"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760999"
 ---
 # <a name="update-smsauthenticationmethodconfiguration"></a>Atualizar smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
 Para cenários delegados, o administrador precisa da função de administrador global. Para obter mais informações, consulte [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [o
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador de política do método de autenticação.|
-|estado|authenticationMethodState|Os valores possíveis são: `enabled` e `disabled`.|
+|state|authenticationMethodState|Os valores possíveis são: `enabled` e `disabled`.|
 
 >**Observação:** A `@odata.type` propriedade com um valor de deve ser incluída no `#microsoft.graph.smsAuthenticationMethodConfiguration` corpo.
 

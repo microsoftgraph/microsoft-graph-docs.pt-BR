@@ -1,16 +1,16 @@
 ---
 title: tipo complexo connectedOrganizationMembers
-description: O tipo connectedOrganizationMembers identifica uma coleção de usuários no locatário que serão permitidos como solicitante, Aprovador ou revisor.
+description: O tipo connectedOrganizationMembers identifica uma coleção de usuários no locatário que serão permitidos como solicitante, aprovador ou revisor.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d2df6b91ebcbc65f03ee39103768bdfad04df62f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 725926bc39583bda653294f0cc917ea7d2f08a45
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027192"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761811"
 ---
 # <a name="connectedorganizationmembers-complex-type"></a>tipo complexo connectedOrganizationMembers
 
@@ -18,21 +18,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usado nas configurações de solicitação de uma [política de atribuição de pacote do Access](accesspackageassignmentpolicy.md). O `@odata.type` valor `#microsoft.graph.connectedOrganizationMembers` indica que esse tipo identifica uma coleção de usuários, os que estão associados a uma [organização conectada](connectedorganization.md), que terá permissão para solicitar um pacote do Access.
+Usado nas configurações de solicitação de uma política de atribuição [de pacote de acesso.](accesspackageassignmentpolicy.md) O valor indica que esse tipo identifica uma coleção de usuários, aqueles associados a uma organização conectada, que terão permissão para solicitar `@odata.type` `#microsoft.graph.connectedOrganizationMembers` um pacote de acesso. [](connectedorganization.md)
 
 ## <a name="properties"></a>Propriedades
 
-Este tipo tem as seguintes propriedades:
+Esse tipo tem as seguintes propriedades:
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | A ID da organização conectada no gerenciamento de qualificação. |
-| description |String | O nome da organização conectada. Somente leitura. |
-| IsBackup | Booliano | Não usado no momento. |
+| id |Cadeia de caracteres | A ID da organização conectada no gerenciamento de direitos. |
+| descrição |Cadeia de caracteres | O nome da organização conectada. Somente leitura. |
+| isBackup | Boolean | Não é usado no momento. |
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do tipo.
+A seguir está uma representação JSON do tipo.
 
 <!-- {
   "blockType": "resource",

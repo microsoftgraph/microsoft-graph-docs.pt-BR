@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso statusBase
-description: Descreve o status do evento de Resumo de provisionamento.
+title: Tipo de recurso statusBase
+description: Descreve o status do evento de resumo de provisionamento.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 5d655649f7e1edca4e269576c9bcb6d1f3014e89
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 951ef56ecbe2ff8c2ab9692e4eaa9ddf7811d959
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523025"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761020"
 ---
-# <a name="statusbase-resource-type"></a>tipo de recurso statusBase
+# <a name="statusbase-resource-type"></a>Tipo de recurso statusBase
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve o status do evento de Resumo de provisionamento. 
+Descreve o status do evento de resumo de provisionamento. 
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|status|String| Os valores possíveis são: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
+|status|Cadeia de caracteres| Os valores possíveis são: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

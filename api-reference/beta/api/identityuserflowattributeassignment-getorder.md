@@ -1,32 +1,32 @@
 ---
-title: 'identityUserFlowAttributeAssignment: GetOrder'
-description: Obter a ordem de coleta de identityUserFlowAttributeAssignments em um fluxo de usuário.
+title: 'identityUserFlowAttributeAssignment: getOrder'
+description: Obter a ordem de identityUserFlowAttributeAssignments sendo coletados em um fluxo de usuário.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 19172e8928716cb3f7ad49e67bc2f75de122de46
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 93308846ecf1549efd70ebe8fc4b2915626d7b81
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689241"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759955"
 ---
-# <a name="identityuserflowattributeassignment-getorder"></a>identityUserFlowAttributeAssignment: GetOrder
+# <a name="identityuserflowattributeassignment-getorder"></a>identityUserFlowAttributeAssignment: getOrder
 
 Namespace: microsoft.graph
 
-Obter a ordem de coleta de identityUserFlowAttributeAssignments em um fluxo de usuário.
+Obter a ordem de identityUserFlowAttributeAssignments sendo coletados em um fluxo de usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Aplicativo|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um `200 OK` código de resposta e um [assignmentOrder](../resources/assignmentorder.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um código `200 OK` de resposta e um [assignmentOrder](../resources/assignmentorder.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

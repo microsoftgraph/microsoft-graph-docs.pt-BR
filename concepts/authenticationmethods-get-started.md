@@ -3,13 +3,13 @@ title: Introdução à API dos métodos de autenticação do Microsoft Graph
 description: A API dos métodos de autenticação do Microsoft Graph oferece às organizações a capacidade de gerenciar programaticamente os métodos de autenticação dos usuários, registrando os usuários para autenticação multifator (MFA) e redefinição de senha de autoatendimento (SSPR).
 author: mmcla
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2aa556e882ec4092a8d7dac43018b1f2ffcc83dd
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 36385345141daa8dc782b64fa154ef97c46b3091
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288480"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761448"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Introdução à API dos métodos de autenticação do Microsoft Graph
 

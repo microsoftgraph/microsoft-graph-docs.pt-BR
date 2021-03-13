@@ -1,22 +1,22 @@
 ---
-title: Configurar o Proxy de Aplicativo usando as APIs do Microsoft Graph
+title: Configurar Proxy de Aplicativo usando APIs do Microsoft Graph
 description: Configure automaticamente o Proxy de Aplicativo usando as APIs do Microsoft Graph para fornecer acesso remoto e logon único a aplicativos locais.
 author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 28bb376b094a648d246bba5401764952d5aec863
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.prod: applications
+ms.openlocfilehash: 98db70f1d5690b3021eb69a73007567c39b80c15
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49943679"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761336"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Automatizar a configuração do Proxy de aplicativo usando a API do Microsoft Graph
 
-Neste artigo, você aprenderá a criar e configurar o [Proxy](/azure/active-directory/manage-apps/what-is-application-proxy) de aplicativo do Azure Active Directory (Azure AD) para um aplicativo. O Proxy de Aplicativo fornece acesso remoto seguro e o single sign-on para aplicativos Web locais. Depois de configurar o Proxy de Aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, o portal Meus Aplicativos ou outros portais de aplicativos internos.
+Neste artigo, você aprenderá a criar e configurar o [Proxy](/azure/active-directory/manage-apps/what-is-application-proxy) de Aplicativo do Azure Active Directory (Azure AD) para um aplicativo. O Proxy de Aplicativo fornece acesso remoto seguro e um único login em aplicativos Web locais. Depois de configurar o Proxy de Aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, do portal Meus Aplicativos ou de outros portais de aplicativos internos.
 
-Este artigo assume que você já instalou [](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) um conector e concluiu os pré-requisitos para o Proxy de Aplicativo para que os conectores possam se comunicar com os serviços do Azure AD.
+Este artigo supõe que você já instalou um conector e concluiu os [pré-requisitos](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) para o Proxy de Aplicativo para que os conectores possam se comunicar com os serviços do Azure AD.
 
 Verifique se você tem as permissões correspondentes para chamar as seguintes APIs.
 
@@ -28,22 +28,22 @@ Verifique se você tem as permissões correspondentes para chamar as seguintes A
 |[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Criar servicePrincipal](/graph/api/serviceprincipal-post-serviceprincipals?tabs=http&view=graph-rest-beta) <br> [Atualizar servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Criar appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 > [!NOTE]
-> As solicitações mostradas neste artigo usam valores de exemplo. Você precisará atualizá-los. Os objetos de resposta mostrados também podem ser reduzidos para maior leitura. 
+> As solicitações mostradas neste artigo usam valores de exemplo. Você precisará atualizá-los. Os objetos de resposta mostrados também podem ser reduzidos para a capacidade de leitura. 
 
 ## <a name="step-1-create-an-application"></a>Etapa 1: Criar um aplicativo
 
 ### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Entrar no Microsoft Graph Explorer (recomendado), no Postman ou em qualquer outro cliente de API que você usa
 
 1. Iniciar [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Selecione **Entrar com a Microsoft** e entre usando o administrador global do Azure AD ou as credenciais de Administrador do Aplicativo.
-3. Após entrar com êxito, você verá os detalhes da conta de usuário no painel esquerdo.
+2. Selecione **Entrar com a Microsoft** e entre usando as credenciais de administrador global do Azure AD ou Administrador de Aplicativos.
+3. Ao entrar com êxito, você verá os detalhes da conta de usuário no painel esquerdo.
 
 > [!NOTE]
-> Não há suporte para entrar usando uma entidade de serviço no momento. 
+> No momento, não há suporte para entrar usando uma entidade de serviço. 
 
 ### <a name="create-an-application"></a>Criar um aplicativo
 
-Para configurar o Proxy de Aplicativo para um aplicativo usando a API, crie um aplicativo, adicione uma entidade de serviço ao aplicativo e atualize a propriedade **onPremisesPublishing** do aplicativo para definir as configurações do Proxy de Aplicativo. Ao criar o aplicativo, de definida **signInAudience** do aplicativo como "AzureADMyOrg".
+Para configurar o Proxy de Aplicativo para um aplicativo usando a API, crie um aplicativo, adicione uma entidade de serviço ao aplicativo e atualize a propriedade **onPremisesPublishing** do aplicativo para configurar as configurações do Proxy de Aplicativo. Ao criar o aplicativo, de definir **signInAudience do aplicativo como** "AzureADMyOrg".
 
 #### <a name="request"></a>Solicitação
 
@@ -122,16 +122,16 @@ Content-type: application/json
 }
 ```
 
-### <a name="retrieve-the-application-object-id-and-appid"></a>Recuperar a ID do objeto do aplicativo e appId
-Use a resposta da chamada anterior para recuperar e salvar a ID do objeto do aplicativo e a ID do aplicativo.
+### <a name="retrieve-the-application-object-id-and-appid"></a>Recuperar a ID do objeto de aplicativo e appId
+Use a resposta da chamada anterior para recuperar e salvar a ID do objeto de aplicativo e a ID do aplicativo.
 ```
 "application": {
   "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
   "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b"
 }
 ```
-### <a name="create-a-serviceprincipal-for-the-application-and-add-required-tags"></a>Criar um servicePrincipal para o aplicativo e adicionar as marcas necessárias
-Use a **appId** para criar uma entidade de serviço para o aplicativo. Em seguida, adicione as marcas necessárias para configurar o Proxy de Aplicativo para um aplicativo.
+### <a name="create-a-serviceprincipal-for-the-application-and-add-required-tags"></a>Criar um servicePrincipal para o aplicativo e adicionar marcas necessárias
+Use o **appId** para criar uma entidade de serviço para o aplicativo. Em seguida, adicione as marcas necessárias para configurar o Proxy de Aplicativo para um aplicativo.
 
 #### <a name="request"></a>Solicitação
 
@@ -220,9 +220,9 @@ Content-type: application/json
 
 ## <a name="step-2-configure-application-proxy-properties"></a>Etapa 2: Configurar propriedades do Proxy de Aplicativo
 
-### <a name="set-the-onpremisespublishing-configuration"></a>Definir a configuração onPremisesPublishing
+### <a name="set-the-onpremisespublishing-configuration"></a>Definir a configuração de publicação onPremises
 
-Use a ID de objeto do aplicativo da etapa anterior para configurar o Proxy de Aplicativo para o aplicativo e atualizar a propriedade **onPremisesPublishing** para a configuração desejada. Neste exemplo, você está usando um aplicativo com a URL interna: e usando o domínio padrão `https://contosoiwaapp.com` para a URL externa: `https://contosoiwaapp-contoso.msappproxy.net` . 
+Use a ID do objeto application da etapa anterior para configurar o Proxy de Aplicativo para o aplicativo e atualizar a **propriedade onPremisesPublishing** para a configuração desejada. Neste exemplo, você está usando um aplicativo com a URL interna: e usando o domínio padrão para a `https://contosoiwaapp.com` URL externa: `https://contosoiwaapp-contoso.msappproxy.net` . 
 
 #### <a name="request"></a>Solicitação
 
@@ -492,8 +492,8 @@ Content-type: application/json
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-4-configure-single-sign-on"></a>Etapa 4: Configurar o single sign-on
-Esse aplicativo usa a Autenticação Integrada do Windows (IWA). Para configurar o IWA, de definidas as propriedades de login único no tipo de recurso [singleSignOnSettings.](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
+## <a name="step-4-configure-single-sign-on"></a>Etapa 4: Configurar o login único
+Esse aplicativo usa a Autenticação Integrada do Windows (IWA). Para configurar o IWA, de definir as propriedades de login único no tipo de recurso [singleSignOnSettings.](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
 
 #### <a name="request"></a>Solicitação
 
@@ -599,7 +599,7 @@ Content-type: application/json
 }
 ```
 
-Use a resposta da chamada anterior para recuperar e salvar a ID do appRole a ser usada na próxima etapa.
+Use a resposta da chamada anterior para recuperar e salvar a ID appRole a ser usada para a próxima etapa.
 ```
       {
             "description": "User",
@@ -610,14 +610,14 @@ Use a resposta da chamada anterior para recuperar e salvar a ID do appRole a ser
 
 ### <a name="assign-users-and-groups-to-the-application"></a>Atribuir usuários e grupos ao aplicativo
 
-Use as propriedades a seguir para atribuir um usuário ao aplicativo.
+Use as seguintes propriedades para atribuir um usuário ao aplicativo.
 
 | Propriedade  | Descrição |ID  |
 |---------|---------|---------|
 | principalId | ID de usuário do usuário que será atribuído ao aplicativo | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
-| principalType | Tipo de usuário | Usuário |
+| principalType | Tipo de usuário | User |
 | appRoleId |  A ID da função de aplicativo da função de aplicativo padrão do aplicativo | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
-| resourceId | A ID do servicePrincipal do aplicativo | a8cac399-cde5-4516-a674-819503c61313 |
+| resourceId | A ID servicePrincipal do aplicativo | a8cac399-cde5-4516-a674-819503c61313 |
 
 #### <a name="request"></a>Solicitação
 
@@ -665,5 +665,5 @@ Para saber mais, confira o tipo de recurso [appRoleAssignment](/graph/api/resour
 
 
 ## <a name="additional-steps"></a>Etapas adicionais
-- [Automatizar a configuração usando exemplos do PowerShell para o Proxy de Aplicativo](/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
+- [Automatizar a configuração usando exemplos do PowerShell para Proxy de Aplicativo](/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
 - [Automação da configuração do aplicativo de SSO baseado em SAML com a API do Microsoft Graph](/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)

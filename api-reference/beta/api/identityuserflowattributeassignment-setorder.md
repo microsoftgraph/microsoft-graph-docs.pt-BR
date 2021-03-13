@@ -1,22 +1,22 @@
 ---
-title: 'identityUserFlowAttributeAssignment: SetOrder'
-description: Definir a ordem de identityUserFlowAttributeAssignments que está sendo coletada dentro de um fluxo de usuário.
+title: 'identityUserFlowAttributeAssignment: setOrder'
+description: Definir a ordem de identityUserFlowAttributeAssignments sendo coletados em um fluxo de usuários.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cc1487246f5a3370ce1b88f50eafcce7029baf4f
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 6470470e9c6933ba421acc9af5a38847f5bc0337
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752729"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759871"
 ---
-# <a name="identityuserflowattributeassignment-setorder"></a>identityUserFlowAttributeAssignment: SetOrder
+# <a name="identityuserflowattributeassignment-setorder"></a>identityUserFlowAttributeAssignment: setOrder
 
 Namespace: microsoft.graph
 
-Definir a ordem de identityUserFlowAttributeAssignments que está sendo coletada dentro de um fluxo de usuário.
+Definir a ordem de identityUserFlowAttributeAssignments sendo coletados em um fluxo de usuários.
 
 ## <a name="permissions"></a>Permissões
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|newAssignmentOrder|[assignmentOrder](../resources/assignmentorder.md)|Usado para definir a ordem dos atributos que estão sendo coletados dentro de um fluxo de usuário.|
+|newAssignmentOrder|[assignmentOrder](../resources/assignmentorder.md)|Usado para definir a ordem dos atributos que estão sendo coletados em um fluxo de usuário.|
 
 ## <a name="response"></a>Resposta
 

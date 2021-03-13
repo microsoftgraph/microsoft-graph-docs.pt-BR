@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso provisioningServicePrincipal
+title: Tipo de recurso provisioningServicePrincipal
 description: Representa a entidade de serviço usada para provisionamento.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: aaa4b23a90be458fd3b3159c97159bfa152ff1db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5af9dc46de889eea780ca45eb25463ffafcf1260
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026450"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760992"
 ---
-# <a name="provisioningserviceprincipal-resource-type"></a>tipo de recurso provisioningServicePrincipal
+# <a name="provisioningserviceprincipal-resource-type"></a>Tipo de recurso provisioningServicePrincipal
 
 Namespace: microsoft.graph
 
@@ -24,8 +24,8 @@ Representa a entidade de serviço usada para provisionamento.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|Identifica exclusivamente o **servicePrincipalName** usado para provisionamento.|
-|nome|String| Nome definido pelo cliente para o **servicePrincipalName**.|
+|id|Cadeia de caracteres|Identifica exclusivamente o **servicePrincipal** usado para provisionamento.|
+|nome|Cadeia de caracteres| Nome definido pelo cliente para **o servicePrincipal**.|
 
 ## <a name="json-representation"></a>Representação JSON
 

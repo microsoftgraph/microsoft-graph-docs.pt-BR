@@ -1,18 +1,18 @@
 ---
-title: Listar usageRights do usuário
+title: Listar uso do usuárioRights
 description: Recupere uma lista de objetos usageRights para um usuário.
 author: jeeshnair
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2662458894fe6dab7fd42e0125c6b4c8f165a4e8
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 2df51b15de635df52ff4b667c3a9266fafea1511
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013643"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761490"
 ---
-# <a name="list-user-usagerights"></a>Listar usageRights do usuário
+# <a name="list-user-usagerights"></a>Listar uso do usuárioRights
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -39,11 +39,11 @@ GET /users/{userId}/usageRights
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Essa API dá suporte ao $filter [de consulta OData.](/graph/query-parameters) Os seguintes padrões de $filter são suportados:
+Esta API dá suporte ao parâmetro $filter [consulta OData](/graph/query-parameters). Os seguintes padrões de $filter são suportados:
 
-- $filter = state eq 'value'
+- $filter = estado eq 'value'
 - $filter = serviceIdentifier eq 'value'
-- $filter = state eq 'value' and serviceIdentifier eq 'value'
+- $filter = estado eq 'value' e serviceIdentifier eq 'value'
 - $filter = estado em ('value1', 'value2')
 - $filter = serviceIdentifier em ('value1', 'value2')
 - $filter = estado em ('value1', 'value2') e serviceIdentifier em ('value1', 'value2')
@@ -52,19 +52,19 @@ Essa API dá suporte ao $filter [de consulta OData.](/graph/query-parameters) Os
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
-|odata.maxpagesize|Definir a pereferência do tamanho máximo da página de resultados. Opcional.|
+|odata.maxpagesize|De definir a pereferência de tamanho máximo da página de resultados. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção [de objetos usageRight](../resources/usageright.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [usageRight](../resources/usageright.md) no corpo da resposta.
 
 Além disso, se houver mais páginas na resposta, um @odata.nextLink será retornado.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-all-usage-rights-for-a-user"></a>Exemplo 1: Obter todos os direitos de uso de um usuário
+### <a name="example-1-get-all-usage-rights-for-a-user"></a>Exemplo 1: Obter todos os direitos de uso para um usuário
 
 #### <a name="request"></a>Solicitação
 

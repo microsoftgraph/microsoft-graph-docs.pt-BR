@@ -3,14 +3,14 @@ title: Tipo de recurso extensionSchemaProperty
 description: Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o tipo dela, como parte de uma definição schemaExtension.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 author: keylimesoda
-ms.openlocfilehash: c0bb3a423983b70066e2451a5029f4eaf2acaebd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f938f98c7f6060c41f7a162501ca42a553cace3
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026934"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761392"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
@@ -24,8 +24,8 @@ Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|String| O nome da propriedade fortemente tipada definida como parte de uma extensão de esquema.|
-|tipo|String| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
+|nome|Cadeia de caracteres| O nome da propriedade fortemente digitada definida como parte de uma extensão de esquema.|
+|tipo|Cadeia de caracteres| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
 
 #### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte 
 Há suporte para os seguintes tipos de dados quando se define uma propriedade em uma extensão do esquema:

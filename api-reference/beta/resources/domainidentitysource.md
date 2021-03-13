@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso domainIdentitySource
-description: O tipo domainIdentitySource identifica um domínio não-locatário como uma fonte de identidade para uma organização conectada.
+title: Tipo de recurso domainIdentitySource
+description: O tipo domainIdentitySource identifica um domínio não locatário como uma fonte de identidade para uma organização conectada.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 63301dbf42a4589fd204290c157c6e6f63e473d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ae616c98b2ca20ec4e5d9c7aceeba5bdeb538e81
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010302"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759661"
 ---
-# <a name="domainidentitysource-resource-type"></a>tipo de recurso domainIdentitySource
+# <a name="domainidentitysource-resource-type"></a>Tipo de recurso domainIdentitySource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usado nas fontes de identidade de um [connectedOrganization](connectedOrganization.md). O `@odata.type` valor `#microsoft.graph.domainIdentitySource` indica que esse tipo identifica um domínio como uma fonte de identidade para uma organização conectada.
+Usado nas fontes de identidade de [uma connectedOrganization](connectedOrganization.md). O `@odata.type` valor indica que esse tipo identifica um domínio como uma fonte de identidade para uma organização `#microsoft.graph.domainIdentitySource` conectada.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |String | O nome da fonte de identidade, normalmente também o nome de domínio. Somente leitura. |
-| domainName |Cadeia de caracteres | O nome do domínio. Somente leitura. |
+| displayName |Cadeia de caracteres | O nome da fonte de identidade, normalmente também o nome de domínio. Somente leitura. |
+| domainName |Cadeia de caracteres | O nome de domínio. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 
@@ -33,7 +33,7 @@ Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do tipo.
+A seguir está uma representação JSON do tipo.
 
 <!-- {
   "blockType": "resource",

@@ -2,15 +2,15 @@
 title: Tipo de recurso assignedLabel
 description: Representa um rótulo de sensibilidade atribuído a um grupo do Microsoft 365. Os rótulos de confidencialidade permitem que os administradores imigam configurações de grupo específicas em um grupo atribuindo uma classificação ao grupo (como Confidencial, Altamente Confidencial ou Geral).
 localization_priority: Normal
-author: jpettere
+author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 7c71e59c022eb9a3314771598b47e938a61a946a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f22bfdd6cce307a83a90ada1da6a312994a3538e
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720344"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761244"
 ---
 # <a name="assignedlabel-resource-type"></a>Tipo de recurso assignedLabel
 
@@ -23,7 +23,7 @@ Representa um rótulo de sensibilidade atribuído a um grupo do Microsoft 365. O
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|labelId|Cadeia de caracteres|O identificador exclusivo do rótulo.|
+|labelId|Cadeia de Caracteres|O identificador exclusivo do rótulo.|
 |displayName|Cadeia de caracteres|O nome de exibição do rótulo. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON

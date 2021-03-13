@@ -1,16 +1,16 @@
 ---
 title: Criar directReport
-description: Use esta API para criar um novo directReport.
+description: Use essa API para criar um novo directReport.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a090656c524f9d5c0a2ff7127ab4e0197714ef4b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd228b01123fa893a320a8a273eca379432b4b7e
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969463"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761003"
 ---
 # <a name="create-directreport"></a>Criar directReport
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo directReport.
+Use essa API para criar um novo directReport.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

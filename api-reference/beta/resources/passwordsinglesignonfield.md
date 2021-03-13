@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso passwordSingleSignOnField
+title: Tipo de recurso passwordSingleSignOnField
 description: Campos para capturar as credenciais para SSO de senha
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d79f2347acabae0323e008a43adb7938d70d3768
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0db6198d61715603acee54e7351c9fd5f2fed88
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998191"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761546"
 ---
-# <a name="passwordsinglesignonfield-resource-type"></a>tipo de recurso passwordSingleSignOnField
+# <a name="passwordsinglesignonfield-resource-type"></a>Tipo de recurso passwordSingleSignOnField
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém os campos a serem capturados para preencher as credenciais de uso para logon único baseado em senha.
+Contém os campos a ser capturados para preencher as credenciais de uso para o login único baseado em senha.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|customizedLabel|String|Substituição de título/rótulo para personalização.|
-|defaultlabel|String|Rótulo que seria usado se nenhum customizedLabel for fornecido. Somente leitura.|
-|fieldId|String|ID usada para identificar o tipo de campo. Esta é uma ID interna e os valores possíveis são:,, `param_1` `param_2` `param_userName` `param_password` .|
-|tipo|String|   Tipo da credencial. Os valores podem ser `text` , `password` .|
+|customizedLabel|Cadeia de Caracteres|Substituição de título/rótulo para personalização.|
+|defaultLabel|Cadeia de Caracteres|Rótulo que seria usado se nenhum rótulo personalizado for fornecido. Somente leitura.|
+|fieldId|Cadeia de Caracteres|ID usada para identificar o tipo de campo. Esta é uma ID interna e os valores possíveis `param_1` são , , , `param_2` `param_userName` `param_password` .|
+|tipo|Cadeia de caracteres|   Tipo da credencial. Os valores podem ser `text` , `password` .|
 
 ## <a name="json-representation"></a>Representação JSON
 

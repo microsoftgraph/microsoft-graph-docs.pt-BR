@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso authenticationMethod
+title: tipo de recurso authenticationMethod
 description: Representa um método de autenticação registrado para um usuário.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f09780904d459ff628f9a13b21f3238611ede6ca
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: cf36866aa0263896a4f7d8a0a4f59146f2f934cb
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159154"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761476"
 ---
-# <a name="authenticationmethod-resource-type"></a>Tipo de recurso authenticationMethod
+# <a name="authenticationmethod-resource-type"></a>tipo de recurso authenticationMethod
 
 Namespace: microsoft.graph
 
@@ -24,14 +24,14 @@ Representa um método de autenticação registrado para um usuário. Um [método
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar authenticationMethods](../api/authentication-list-methods.md) | [Coleção authenticationMethod](authenticationmethod.md) | Leia as propriedades e os relacionamentos de todos os objetos **authenticationMethod de** um usuário. |
-| [Obter authenticationMethod](../api/authenticationmethod-get.md) | [authenticationMethod](authenticationmethod.md) | Leia as propriedades e os relacionamentos de um **objeto authenticationMethod.** |
+| [Autenticação de listaMethods](../api/authentication-list-methods.md) | [Coleção authenticationMethod](authenticationmethod.md) | Leia as propriedades e as relações de todos os objetos **authenticationMethod** de um usuário. |
+| [Obter authenticationMethod](../api/authenticationmethod-get.md) | [authenticationMethod](authenticationmethod.md) | Leia as propriedades e as relações de um **objeto authenticationMethod.** |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| O identificador dessa instância de um método de autenticação registrado para esse usuário. Somente leitura. |
+|id|Cadeia de caracteres| O identificador dessa instância de um método de autenticação registrado nesse usuário. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 

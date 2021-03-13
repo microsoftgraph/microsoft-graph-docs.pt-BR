@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso directoryObjectPartnerReference
-description: Representa uma referência a um objeto Directory em um locatário do parceiro. Herda do directoryObject.
+title: Tipo de recurso directoryObjectPartnerReference
+description: Representa uma referência a um objeto de diretório em um locatário parceiro. Herda de directoryObject.
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1b9f042f970109a348b637636749778ed95e55e6
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 8b9d6a8826c38171dc7b32c281c371e841906f82
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402566"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761553"
 ---
-# <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso directoryObjectPartnerReference
+# <a name="directoryobjectpartnerreference-resource-type"></a>Tipo de recurso directoryObjectPartnerReference
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma referência a um objeto Directory em uma organização parceira. Herda de [directoryObject](directoryobject.md).
+Representa uma referência a um objeto de diretório em uma organização parceira. Herda de [directoryObject](directoryobject.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |description|Cadeia de caracteres| Descrição do objeto retornado. Somente leitura. |
-|displayName|Cadeia de caracteres| Nome do objeto de diretório que está sendo retornado, como o grupo ou o aplicativo. Somente leitura. |
-|externalPartnerTenantId|Guid| O identificador de locatário para o locatário do parceiro. Somente leitura. |
+|displayName|Cadeia de caracteres| Nome do objeto de diretório sendo retornado, como grupo ou aplicativo. Somente leitura. |
+|externalPartnerTenantId|Guid| O identificador de locatário do locatário parceiro. Somente leitura. |
 |id|Cadeia de caracteres| O identificador exclusivo do recurso. Herdado de [directoryObject](directoryobject.md). Somente leitura. |
 |objectType|String| O tipo do objeto referenciado no locatário do parceiro. Somente leitura. |
 

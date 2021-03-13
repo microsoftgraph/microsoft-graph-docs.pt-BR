@@ -3,36 +3,36 @@ title: Migrar aplicativos do Azure AD Graph .NET para o Microsoft Graph
 description: Descreve como migrar aplicativos de API do Azure Active Directory (Azure AD) para a API do Microsoft Graph.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: azure-active-directory
-ms.openlocfilehash: 7fea43e808d14f2d80dc01690055257908f7fe18
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.prod: applications
+ms.openlocfilehash: 286f631a9d5787d972e8d7db2559b0c359384c75
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288353"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761294"
 ---
-# <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Migrar o .NET Client library use para o Microsoft Graph
+# <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Migrar o uso da biblioteca de clientes .NET para o Microsoft Graph
 
-Este artigo faz parte da *etapa 3: revise os detalhes do aplicativo* do [processo para migrar aplicativos](migrate-azure-ad-graph-planning-checklist.md).
+Este artigo faz parte da *etapa 3:* revisar detalhes do aplicativo do [processo para migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
-Se seu aplicativo usa atualmente a biblioteca de cliente do Azure AD Graph, alterne para a [biblioteca de cliente .net do Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet).
+Se seu aplicativo atualmente usa a biblioteca de clientes do Azure AD Graph, alternar para a biblioteca de clientes [do Microsoft Graph .NET](https://github.com/microsoftgraph/msgraph-sdk-dotnet).
 
->Observação: a biblioteca de cliente .NET do Microsoft Graph só tem suporte para o .NET Framework 4,5 e o .NET Standard 1,1.  No entanto, consulte a biblioteca de cliente .NET do Microsoft Graph para obter as informações mais recentes sobre suporte.
+>OBSERVAÇÃO: a biblioteca de clientes do Microsoft Graph .NET só tem suporte para .NET Framework 4.5 e .NET Standard 1.1.  No entanto, consulte a biblioteca de clientes do Microsoft Graph .NET para obter as informações de suporte mais recentes.
 
-Veja aqui algumas etapas gerais para migrar para a biblioteca de cliente .NET do Microsoft Graph:
+Aqui, vamos ver algumas etapas gerais para migrar para a biblioteca de clientes do Microsoft Graph .NET:
 
 - Como criar um cliente do Microsoft Graph, dado um token de acesso (que você pode adquirir usando ADAL ou MSAL)
 - Como formular solicitações
 - Como usar construtores de consulta
-- Como lidar com coleções e paginação  
+- Como lidar com coleções e pajamento  
 
 ## <a name="overview-of-the-migration-steps"></a>Visão geral das etapas de migração
 
-As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para adquirir tokens de acesso para chamar o Azure AD Graph e que, por enquanto, você continuará a usar a ADAL. Mudar para o MSAL pode ser feito como uma etapa separada descrita na [migração para o MSAL](./migrate-azure-ad-graph-authentication-library.md#migrating-to-msal).
+As etapas a seguir pressuem que seu aplicativo já está usando o ADAL para adquirir tokens de acesso para chamar o Azure AD Graph e que, por enquanto, você continuará a usar o ADAL. Alternar para MSAL pode ser feito como uma etapa separada descrita na [migração para MSAL](./migrate-azure-ad-graph-authentication-library.md#migrating-to-msal).
 
-1. Para adquirir um token de acesso ao Microsoft Graph, atualize o **resourceurl pela** de `https://graph.windows.net` para `https://graph.microsoft.com` .
+1. Para adquirir um token de acesso ao Microsoft Graph, atualize **resourceUrl** `https://graph.windows.net` de para `https://graph.microsoft.com` .
 
-2. Em seu aplicativo, atualize as referências à biblioteca de cliente do Microsoft Graph alterando:
+2. Em seu aplicativo, atualize referências à biblioteca de clientes do Microsoft Graph alterando:
 
     ``` csharp
     using Microsoft.Azure.ActiveDirectory.GraphClient;
@@ -44,11 +44,11 @@ As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para ad
     using Microsoft.Graph;
     ```
 
-3. Use o Gerenciador de pacotes para baixar e atualizar o [pacote NuGet do Microsoft Graph](https://www.nuget.org/packages/Microsoft.Graph/) e atualizar as dependências.
+3. Use seu gerenciador de pacotes para baixar e atualizar o [pacote nuGet do Microsoft Graph](https://www.nuget.org/packages/Microsoft.Graph/) e atualizar dependências.
 
-4. Atualize o construtor de cliente para criar um `GraphServiceClient` , em vez de `ActiveDirectoryClient` .  Os trechos de código a seguir pressupõem que seu aplicativo está usando o `AcquireTokenAsyncForUser()` método para adquirir novos tokens. Você pode encontrar uma definição para este método como parte do [exemplo Active-Directory-dotnet-graphapi-console](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).
+4. Atualize o construtor do cliente para criar `GraphServiceClient` um , em vez de `ActiveDirectoryClient` .  Os trechos de código a seguir pressuem que seu aplicativo está usando o `AcquireTokenAsyncForUser()` método para adquirir novos tokens. Você pode encontrar uma definição para esse método como parte do exemplo [active-directory-dotnet-graphapi-console](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).
 
-    Trocar
+    Alterar:
 
     ``` csharp
     ActiveDirectoryClient client = new ActiveDirectoryClient(serviceRoot,
@@ -66,9 +66,9 @@ As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para ad
        }));
     ```
 
-    Para a biblioteca de cliente do Microsoft Graph, o `serviceRoot` valor também inclui o número da versão. No momento, esse valor é `https://graph.microsoft.com/v1.0` .
+    Para a biblioteca de clientes do Microsoft Graph, `serviceRoot` o valor também inclui o número da versão. Atualmente, esse valor é `https://graph.microsoft.com/v1.0` .
 
-5. Atualizar solicitações para usar a sintaxe do construtor de solicitação do cliente Microsoft Graph, alterando:
+5. Atualizar solicitações para usar a sintaxe do construtor de solicitações de cliente do Microsoft Graph, alterando:
 
     ``` csharp
     signedInUser = (User)await client.Me.ExecuteAsync();
@@ -81,7 +81,7 @@ As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para ad
     ```
 
     >[!NOTE]
-    >A biblioteca de cliente do Azure AD Graph oferece suporte à sintaxe de consulta baseada em LINQ. No entanto, a biblioteca de cliente do Microsoft Graph não.  Consequentemente, você precisará converter as consultas relevantes para uma expressão mais RESTful.  
+    >A biblioteca de clientes do Azure AD Graph suportava sintaxe de consulta baseada em LINQ. No entanto, a biblioteca de clientes do Microsoft Graph não.  Consequentemente, você precisará converter as consultas relevantes em uma expressão mais RESTful.  
 
     Para fazer isso, altere:
 
@@ -97,9 +97,9 @@ As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para ad
     client.Groups.Request().Filter("startswith(displayName,'a')").GetAsync();
     ```
 
-6. Se suas páginas de código por meio de coleções, faça os seguintes ajustes secundários. O exemplo a seguir compara e contrasta a busca de um grupo e uma paginação por meio de seus membros, 5 por vez. Embora o código do Microsoft Azure AD Graph exija uma construção de busca para buscar membros de um grupo, o Microsoft Graph não tem essa exigência. Além de isso, o código é relativamente semelhante.  Para ser conciso, somente os membros do usuário são exibidos, as condições de try/catch e de erro não são mostradas, e os trechos de código são para um aplicativo de console de thread único.
+6. Se seu código for páginas por coleções, faça os seguintes ajustes secundários. O exemplo a seguir compara e contrasta a busca de um grupo e a paagem através de seus membros, 5 de cada vez. Embora o código do Azure AD Graph exija uma construção de buscador para buscar os membros de um grupo, o Microsoft Graph não tem esse requisito. Fora isso, o código é relativamente semelhante.  Para ser conciso, apenas os membros do usuário são exibidos, as condições de tentativa/captura e erro não são mostradas e os trechos de código são para um aplicativo de console de thread único.
 
-    Por exemplo, altere o código a seguir usando a biblioteca de cliente .NET do Azure AD Graph:
+    Como exemplo, altere o código a seguir usando a biblioteca de clientes do Azure AD Graph .NET:
 
     ```csharp
     Group retrievedGroup = client.Groups.
@@ -124,7 +124,7 @@ As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para ad
 
     ```
 
-    Para o código a seguir usando a biblioteca de cliente .NET do Microsoft Graph:
+    Para o código a seguir usando a biblioteca de clientes do Microsoft Graph .NET:
 
     ```csharp
     var membersPage = client.Groups[id].Members.Request().Top(5).GetAsync().Result;
@@ -147,13 +147,13 @@ As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para ad
 
     ```
 
-7. Criar e corrigir qualquer recurso, propriedade, navegação e erros de ação de serviço, geralmente relacionados a alterações de nome.
+7. Crie e corrige qualquer recurso, propriedade, navegação e erros de ação de serviço, geralmente relacionados a alterações de nome.
 
 ## <a name="see-also"></a>Confira também
 
-O [aplicativo trechos de console C#](https://github.com/microsoftgraph/console-csharp-snippets-sample) realça mais das diferenças entre a biblioteca de cliente do Microsoft Graph e a biblioteca de cliente do Azure ad Graph.
+O [C# de console](https://github.com/microsoftgraph/console-csharp-snippets-sample) realça mais das diferenças entre a biblioteca de clientes do Microsoft Graph e a biblioteca de clientes do Azure AD Graph.
 
-A biblioteca de cliente do Azure AD Graph oferece suporte somente à plataforma .NET.  No entanto, a biblioteca de cliente do Microsoft Graph oferece suporte a [plataformas e idiomas](/graph) adicionais que podem ser úteis para suas soluções.
+A biblioteca de clientes do Azure AD Graph dá suporte apenas à plataforma .NET.  No entanto, a biblioteca de clientes do Microsoft Graph oferece suporte a [plataformas](/graph) e idiomas adicionais que podem ser mais úteis para suas soluções.
 
 ## <a name="next-steps"></a>Próximas etapas
 

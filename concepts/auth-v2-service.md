@@ -3,14 +3,14 @@ title: Obtenha acesso sem um usuário
 description: Alguns aplicativos chamam o Microsoft Graph com sua própria identidade e não em nome de um usuário. Em muitos casos, esses são os serviços em plano de fundo ou daemons que podem ser executados em um servidor sem a presença de um usuário conectado.
 author: jackson-woods
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4c1726a5f974547e8fbd2c6e927431d8a40659f3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 63b9f184639c3cb7186c65940add3cf9d6b1a47d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288473"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761462"
 ---
 # <a name="get-access-without-a-user"></a>Obter acesso sem um usuário
 

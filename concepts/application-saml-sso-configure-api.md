@@ -3,14 +3,14 @@ title: Use as APIs do Microsoft Graph para configurar o logon único baseado em 
 description: Aprenda a economizar tempo usando as APIs do Microsoft Graph para automatizar a configuração de logon único baseado em SAML.
 author: kenwith
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3ab54e4726635262579f3ef54625197f0191c5ae
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: ea4a0a23b19b0b7a7250966f59e3a92e94a40618
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272133"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761469"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>Configure o logon único baseado em SAML para seu aplicativo usando a API do Microsoft Graph
 

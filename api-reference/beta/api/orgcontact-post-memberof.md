@@ -1,16 +1,16 @@
 ---
 title: Criar memberOf
-description: Use esta API para criar um novo memberOf.
+description: Use essa API para criar um novo memberOf.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4f523427d14f5ae5fdba4eeee33399d895277229
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e88f669020d1566765f9313182ee21bc33fe1dd9
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969428"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759416"
 ---
 # <a name="create-memberof"></a>Criar memberOf
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo memberOf.
+Use essa API para criar um novo memberOf.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

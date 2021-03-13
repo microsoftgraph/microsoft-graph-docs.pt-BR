@@ -1,23 +1,23 @@
 ---
-title: Acessar AccessPackageResourceEnvironment
-description: Leia as propriedades e os relacionamentos de um objeto accessPackageResourceEnvironment.
+title: Obter accessPackageResourceEnvironment
+description: Leia as propriedades e as relações de um objeto accessPackageResourceEnvironment.
 author: hanki-microsoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0169ad18a24ff27392c5679f91dfaecd43d76567
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 4530eec57a15a871cd7c633dd645c7f9beae2070
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176273"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759423"
 ---
-# <a name="get-accesspackageresourceenvironment"></a>Acessar AccessPackageResourceEnvironment
+# <a name="get-accesspackageresourceenvironment"></a>Obter accessPackageResourceEnvironment
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e os relacionamentos de um [objeto accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)
+Leia as propriedades e as relações de um [objeto accessPackageResourceEnvironment.](../resources/accesspackageresourceenvironment.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-No momento, esse método não dá suporte [a parâmetros de consulta OData.](/graph/query-parameters)
+Este método atualmente não dá suporte a [parâmetros de consulta OData.](/graph/query-parameters)
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

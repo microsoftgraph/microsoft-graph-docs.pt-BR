@@ -3,14 +3,14 @@ title: Tipo de recurso expirationPattern
 description: O padrão de expiração em um cronograma de solicitação pode ser incluído em uma solicitação de atribuição de pacote de acesso e está presente em uma atribuição de pacote de acesso.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b6587d8ba410ba0240c0fd75b7c8ec37105061d8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 250c01172e44d8ea5f3cdea94a9ac61a89a11c1b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721289"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761406"
 ---
 # <a name="expirationpattern-resource-type"></a>Tipo de recurso expirationPattern
 
@@ -34,8 +34,8 @@ No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma so
 |:---------------|:--------|:----------|
 |notSpecified|0|Nenhum cronograma de expiração foi especificado.|
 |noExpiration|1|O solicitante não desejou que o acesso expirar.|
-|afterDateTime|2 |O acesso expirará após uma data e hora especificadas.|
-|afterDuration|3 |O acesso expirará após uma duração especificada relativa ao acesso que está sendo concedido.|
+|afterDateTime|2|O acesso expirará após uma data e hora especificadas.|
+|afterDuration|3|O acesso expirará após uma duração especificada relativa ao acesso que está sendo concedido.|
 
 ## <a name="json-representation"></a>Representação JSON
 

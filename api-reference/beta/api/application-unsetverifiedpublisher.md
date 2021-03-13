@@ -1,24 +1,24 @@
 ---
-title: 'aplicativo: unsetVerifiedPublisher'
+title: 'application: unsetVerifiedPublisher'
 description: Desmarcar o distribuidor verificado de um aplicativo.
 localization_priority: Normal
 author: jesakowi
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 88bf73cbd90b5bf1eb2c4c8f22d11a232d1cc581
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 7560d9935a2cf35bcf67637ce2353932ba522d2b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634674"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759913"
 ---
-# <a name="application-unsetverifiedpublisher"></a>aplicativo: unsetVerifiedPublisher
+# <a name="application-unsetverifiedpublisher"></a>application: unsetVerifiedPublisher
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Desmarque o [verifiedPublisher](../resources/verifiedPublisher.md) definido anteriormente em um [aplicativo](../resources/application.md), removendo todas as propriedades verificadas do Publisher. Para obter mais informações, consulte [Publisher Verification](/azure/active-directory/develop/publisher-verification-overview).
+Desajuste [o verificadoPublisher](../resources/verifiedPublisher.md) definido anteriormente em um [aplicativo,](../resources/application.md)removendo todas as propriedades do editor verificadas. Para obter mais informações, consulte [Verificação do Publisher](/azure/active-directory/develop/publisher-verification-overview).
 
 ## <a name="permissions"></a>Permissões
 

@@ -1,16 +1,16 @@
 ---
 title: tipo complexo groupMembers
-description: Identifica uma coleção de usuários no locatário que serão permitidos como solicitante, Aprovador ou revisor.
+description: Identifica uma coleção de usuários no locatário que serão permitidos como solicitante, aprovador ou revisor.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 576fd13962dcafaa876225393cc9165e5ef2ece2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0069cd6a8fd738c17a9035b519c4f141c3a5fa55
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078434"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761413"
 ---
 # <a name="groupmembers-complex-type"></a>tipo complexo groupMembers
 
@@ -18,20 +18,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usado nas configurações de solicitação, aprovação e revisão de atribuição de uma [política de atribuição de pacote do Access](accesspackageassignmentpolicy.md). O `@odata.type` valor " `#microsoft.graph.groupMembers` " indica que esse tipo identifica uma coleção de usuários no locatário que será permitido como solicitante, Aprovador ou revisor, que são os membros de um grupo específico.
+Usado nas configurações de solicitação, aprovação e revisão de atribuição de uma política de atribuição [de pacote de acesso.](accesspackageassignmentpolicy.md) O valor " " indica que esse tipo identifica uma coleção de usuários no locatário que serão permitidos como solicitante, aprovador ou `@odata.type` revisor, que são membros de um `#microsoft.graph.groupMembers` grupo específico.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
 | id |Cadeia de caracteres | A ID do grupo no Azure AD. |
-| description |String | O nome do grupo no Azure AD. Somente leitura. |
-| IsBackup | Booliano | Para o **groupMembers** em um estágio de aprovação, essa propriedade indica que os membros do grupo são aprovadores de fallback de backup. |
+| descrição |Cadeia de caracteres | O nome do grupo no Azure AD. Somente leitura. |
+| isBackup | Boolean | Para **groupMembers** em um estágio de aprovação, essa propriedade indica que os membros do grupo são um aprovador de fallback de backup. |
 
 ## <a name="json-representation"></a>Representação JSON
 
 
-Veja a seguir uma representação JSON do tipo.
+A seguir está uma representação JSON do tipo.
 
 <!-- {
   "blockType": "resource",

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso provisionedIdentity
+title: Tipo de recurso provisionedIdentity
 description: Descreve a identidade associada ao evento de resumo do objeto de provisionamento.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 03270c0b5e6ea373ad87355612ddfb85b428d61c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2de68bdce990a6a541a5c284672541669cfdebea
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993137"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761104"
 ---
-# <a name="provisionedidentity-resource-type"></a>tipo de recurso provisionedIdentity
+# <a name="provisionedidentity-resource-type"></a>Tipo de recurso provisionedIdentity
 
 Namespace: microsoft.graph
 
@@ -25,9 +25,9 @@ Descreve a identidade associada ao evento de resumo do objeto de provisionamento
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |detalhes|[detailsInfo](detailsinfo.md)|Detalhes da identidade.|
-|displayName|String|Nome para exibição da identidade. |
-|id|String|Identifica exclusivamente a identidade.|
-|IdentityType|String|Tipo de identidade que foi provisionado, como ' usuário ' ou ' grupo '.|
+|displayName|Cadeia de caracteres|Nome de exibição da identidade. |
+|id|Cadeia de caracteres|Identifica exclusivamente a identidade.|
+|identityType|Cadeia de Caracteres|Tipo de identidade que foi provisionado, como "usuário" ou "grupo".|
 
 ## <a name="json-representation"></a>Representação JSON
 

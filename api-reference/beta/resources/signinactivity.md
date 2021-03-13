@@ -3,14 +3,14 @@ title: Tipo de recurso signInActivity
 description: Fornece a última data de assinatura para um usuário específico.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: e48d2e64c71e67c623582552224a11636c7c6c7c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 7d57324b7953b865b98c01d6b16236dea54e73a5
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721856"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761055"
 ---
 # <a name="signinactivity-resource-type"></a>Tipo de recurso signInActivity
 
@@ -25,7 +25,7 @@ Fornece a última data de assinatura para um usuário [específico.](user.md)
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |lastSignInDateTime|DateTimeOffset|A última data de login interativa para um usuário específico. Você pode usar esse campo para calcular a última vez que um usuário se inscreveu no diretório com um método de autenticação interativa. Esse campo pode ser usado para criar relatórios, como usuários inativos. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é: `'2014-01-01T00:00:00Z'` . Para obter mais informações sobre como usar o valor dessa propriedade, consulte Gerenciar contas de usuário [inativas no Azure AD](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts).|
-|lastSignInRequestId|Cadeia de caracteres|ID de solicitação do último login executado por esse usuário.|
+|lastSignInRequestId|Cadeia de Caracteres|ID de solicitação do último login executado por esse usuário.|
 
 ## <a name="json-representation"></a>Representação JSON
 

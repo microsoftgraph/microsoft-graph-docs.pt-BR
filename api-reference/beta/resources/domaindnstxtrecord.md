@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso domainDnsTxtRecord
+title: Tipo de recurso domainDnsTxtRecord
 description: Representa um registro TXT adicionado ao arquivo de zona DNS de um domínio específico no locatário.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ecd280622a9937e85dfb9079416521853d85cfe4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e59c38028b414208744793945ed480dc708bf6c
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010306"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760901"
 ---
-# <a name="domaindnstxtrecord-resource-type"></a>tipo de recurso domainDnsTxtRecord
+# <a name="domaindnstxtrecord-resource-type"></a>Tipo de recurso domainDnsTxtRecord
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um registro TXT adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade [DomainDnsRecord](domaindnsrecord.md) .
+Representa um registro TXT adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdada [da entidade DomainDnsRecord.](domaindnsrecord.md)
 
 ## <a name="methods"></a>Métodos
-Não há suporte para consultas diretas a esse recurso. Confira o tópico de [domínio](domain.md) para obter informações sobre como consultar os registros de serviço de domínio.
+Não há suporte para consultas diretas a esse recurso. Consulte o tópico [de domínio](domain.md) para obter informações sobre como consultar registros de serviço de domínio.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura. |
-|IsOptional|Booliano| Se for falso, o registro TXT deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
-|rótulo|String| O valor a ser usado ao configurar a propriedade *Name* do registro txt no host DNS.|
-|recordType|String| Tipo de registro DNS. O valor é sempre *txt*. Chave |
-|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro TXT.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
-|texto|String| O valor usado ao configurar a propriedade *Text* no host DNS. |
-|TTL|Int32| O valor a ser usado ao configurar a propriedade *TTL (time-to-Live)* do registro MX no host DNS. Não anulável |
+|id|Cadeia de caracteres| Identificador exclusivo atribuído a essa entidade. Não anulada, somente leitura. |
+|isOptional|Boolean| Se for false, o registro TXT deverá ser configurado pelo cliente no host DNS para Microsoft Online Services operar corretamente com o domínio. |
+|rótulo|Cadeia de Caracteres| Valor a ser usado ao configurar a propriedade *name* do registro TXT no host DNS.|
+|recordType|Cadeia de Caracteres| Tipo de registro DNS. O valor é sempre *Txt*. Chave |
+|supportedService|Cadeia de Caracteres| Serviço ou recurso do Microsoft Online que tem uma dependência nesse registro TXT.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|texto|Cadeia de Caracteres| Valor usado ao configurar a *propriedade de texto* no host DNS. |
+|ttl|Int32| Valor a ser usado ao configurar a *propriedade time-to-live (ttl)* do registro MX no host DNS. Não anulada |
 
 ## <a name="relationships"></a>Relações
 Nenhum

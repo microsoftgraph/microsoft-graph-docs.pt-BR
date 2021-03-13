@@ -3,13 +3,13 @@ title: Usuários que você pode alcançar com o Microsoft Graph
 description: 'A Microsoft oferece soluções e serviços que ampliam a vida moderna e o trabalho atual. '
 author: dkershaw10
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b918c346bfc224277f47d5711b056dc462eeae33
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.prod: applications
+ms.openlocfilehash: c114b84871960c4ee890966ef4428d618a88e960
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288767"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761139"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>Usuários que você pode alcançar com o Microsoft Graph
 

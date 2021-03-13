@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso updateWindow
-description: tipo de recurso updateWindow.
+title: Tipo de recurso updateWindow
+description: Tipo de recurso updateWindow.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: b2aa61d5d815d912caa47fd63d5907b62f882d36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d8f12c7cfcb4c83075087d7b894dc95fe92a695
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003448"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761223"
 ---
-# <a name="updatewindow-resource-type"></a>tipo de recurso updateWindow
+# <a name="updatewindow-resource-type"></a>Tipo de recurso updateWindow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a janela de tempo durante a qual [os agentes](onpremisesagent.md) podem receber atualizações.
+Representa a janela de tempo durante [a qual os agentes](onpremisesagent.md) podem receber atualizações.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|updateWindowEndTime|TimeOfDay|Término de uma janela de tempo durante a qual os agentes podem receber atualizações|
+|updateWindowEndTime|TimeOfDay|Fim de uma janela de tempo durante a qual os agentes podem receber atualizações|
 |updateWindowStartTime|TimeOfDay|Início de uma janela de tempo durante a qual os agentes podem receber atualizações|
 
 ## <a name="json-representation"></a>Representação JSON

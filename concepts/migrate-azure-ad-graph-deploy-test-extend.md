@@ -3,13 +3,13 @@ title: Implantar, testar e estender aplicativos migrados
 description: 'Descreve como migrar aplicativos do Azure Active Directory (Azure AD) para usar a API do Microsoft Graph (REST); isso aborda a etapa 3: implantar, testar e estender.'
 author: dkershaw10
 localization_priority: Normal
-ms.prod: azure-active-directory
-ms.openlocfilehash: 55bca2b1d8499ef7ad788555f55f5f92033d1818
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.prod: applications
+ms.openlocfilehash: 6460b768381cdf3223699d95d1d5b9ce9ed629e8
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470610"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761287"
 ---
 # <a name="deploy-test-and-extend"></a>Implantar, testar e estender
 

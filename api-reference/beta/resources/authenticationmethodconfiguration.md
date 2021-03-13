@@ -1,18 +1,18 @@
 ---
 title: authenticationMethodConfigurations
-description: Objeto authenticationMethodConfigurations.
+description: objeto authenticationMethodConfigurations.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cda2cda7756bb795c93e10dddbd344e5a4a92ed2
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 691184b1dfbf0323204debd70488d232d77b4f7a
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159133"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761132"
 ---
-# <a name="authenticationmethodconfiguration-resource-type"></a>Tipo de recurso authenticationMethodConfiguration
+# <a name="authenticationmethodconfiguration-resource-type"></a>tipo de recurso authenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,8 +22,8 @@ Representa uma política de método de autenticação.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O nome da política.|
-|estado|authenticationMethodState|O estado da política. Os valores possíveis são: `enabled`, `disabled`.|
+|id|Cadeia de caracteres|O nome da política.|
+|state|authenticationMethodState|O estado da política. Os valores possíveis são: `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

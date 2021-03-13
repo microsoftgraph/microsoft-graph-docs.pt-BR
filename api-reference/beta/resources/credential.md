@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso Credential
+title: tipo de recurso de credencial
 description: Indica uma única credencial usada para entrar em um aplicativo.
 localization_priority: Normal
 author: bharathramh92
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a281e39850ea18ee3bcbe0d83c5df3b41d0ccd31
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0521f766a7a0da482cf67628c3816935ee9270b8
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016685"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761678"
 ---
-# <a name="credential-resource-type"></a>tipo de recurso Credential
+# <a name="credential-resource-type"></a>tipo de recurso de credencial
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indica uma única credencial usada para entrar em um aplicativo. Por exemplo, username é uma credencial, password é outra credencial.
+Indica uma única credencial usada para entrar em um aplicativo. Por exemplo, nome de usuário é uma credencial, senha é outra credencial.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|fieldId|String|O nome do campo para esta credencial. por exemplo, nome de usuário ou senha ou phoneNumber. Isso é definido pelo aplicativo. Deve corresponder ao que está no campo HTML no objeto singleSignOnSettings/password.|
-|tipo|String|O tipo desta credencial. Valores válidos: username, password ou Other.|
-|value|Cadeia de caracteres|O valor dessa credencial. por exemplo, mysuperhiddenpassword. Observação o valor de senhas é somente gravação, o valor nunca pode ser lido novamente.|
+|fieldId|Cadeia de Caracteres|O nome do campo para essa credencial. por exemplo, nome de usuário ou senha ou telefoneNumber. Isso é definido pelo aplicativo. Deve corresponder ao que está no campo html no objeto singleSignOnSettings/password.|
+|tipo|Cadeia de caracteres|O tipo dessa credencial. Valores válidos: nome de usuário, senha ou outros.|
+|value|Cadeia de caracteres|O valor dessa credencial. por exemplo, mysuperhiddenpassword. Observe que o valor das senhas é somente gravação, o valor nunca poderá ser lido de volta.|
 
 ## <a name="json-representation"></a>Representação JSON
 

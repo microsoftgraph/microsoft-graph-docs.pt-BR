@@ -1,43 +1,43 @@
 ---
-title: tipo de recurso domainDnsSrvRecord
+title: Tipo de recurso domainDnsSrvRecord
 description: Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário.
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 6854b30dec759726fefaf93e13ad23a49195e381
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b3355115f11937584879725073cd4a4c279c62d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010323"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761671"
 ---
-# <a name="domaindnssrvrecord-resource-type"></a>tipo de recurso domainDnsSrvRecord
+# <a name="domaindnssrvrecord-resource-type"></a>Tipo de recurso domainDnsSrvRecord
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade [DomainDnsRecord](domaindnsrecord.md) .
+Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdada [da entidade DomainDnsRecord.](domaindnsrecord.md)
 
 ## <a name="methods"></a>Métodos
-Não há suporte para consultas diretas a esse recurso. Confira o tópico de [domínio](domain.md) para obter informações sobre como consultar os registros de serviço de domínio.
+Não há suporte para consultas diretas a esse recurso. Consulte o tópico [de domínio](domain.md) para obter informações sobre como consultar registros de serviço de domínio.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura.|
-|IsOptional|Booliano| Se for falso, o registro SRV deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
-|rótulo|String| O valor usado ao configurar a propriedade *Name* do registro SRV no host DNS. |
-|nameTarget|String| O valor a ser usado ao configurar a propriedade *target* do registro SRV no host DNS. |
-|propor|Int32| O valor a ser usado ao configurar a propriedade *Port* do registro SRV no host DNS. |
-|prioridade|Int32| O valor a ser usado ao configurar a propriedade *Priority* do registro SRV no host DNS. |
-|RDP|String| O valor a ser usado ao configurar a propriedade *Protocol* do registro SRV no host DNS. |
-|recordType|String|  Tipo de registro DNS. O valor é sempre *SRV*. Chave |
-|service|Cadeia de caracteres| O valor a ser usado ao configurar a propriedade *Service* do registro SRV no host DNS. |
-|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro SRV.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
-|TTL|Int32| O valor a ser usado ao configurar a propriedade *TTL (time-to-Live)* do registro SRV no host DNS. Não anulável |
-|weight|Int32| O valor a ser usado ao configurar a propriedade *Weight* do registro SRV no host DNS. |
+|id|Cadeia de caracteres| Identificador exclusivo atribuído a essa entidade. Não anulada, somente leitura.|
+|isOptional|Boolean| Se for falso, o registro SRV deverá ser configurado pelo cliente no host DNS para Microsoft Online Services funcionar corretamente com o domínio. |
+|rótulo|Cadeia de Caracteres| Valor usado ao configurar a *propriedade name* do registro SRV no host DNS. |
+|nameTarget|Cadeia de Caracteres| Valor a ser usado ao configurar a *propriedade Target* do registro SRV no host DNS. |
+|port|Int32| Valor a ser usado ao configurar a *propriedade de* porta do registro SRV no host DNS. |
+|prioridade|Int32| Valor a ser usado ao configurar a *propriedade priority* do registro SRV no host DNS. |
+|protocol|Cadeia de Caracteres| Valor a ser usado ao configurar a propriedade *de* protocolo do registro SRV no host DNS. |
+|recordType|Cadeia de Caracteres|  Tipo de registro DNS. O valor é sempre *Srv*. Chave |
+|service|Cadeia de caracteres| Valor a ser usado ao configurar a propriedade *de* serviço do registro SRV no host DNS. |
+|supportedService|Cadeia de Caracteres| Serviço ou recurso do Microsoft Online que tem uma dependência nesse registro SRV.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|ttl|Int32| Valor a ser usado ao configurar a *propriedade time-to-live (ttl)* do registro SRV no host DNS. Não anulada |
+|weight|Int32| Valor a ser usado ao configurar a *propriedade weight* do registro SRV no host DNS. |
 
 ## <a name="relationships"></a>Relações
 Nenhum
