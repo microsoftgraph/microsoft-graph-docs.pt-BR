@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b0a54c3c46a8cb0d416445f0ffae2e7f035999c3
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: bd8c89899d08b1f651c0eaeb32ba12e6a11b7127
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636281"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50802495"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const plannerProgressTaskBoardTaskFormat = {
-  orderHint: "A6673H Ejkl!"
+  orderHint: 'A6673H Ejkl!'
 };
 
-let res = await client.api('/planner/tasks/{id}/progressTaskBoardFormat')
+await client.api('/planner/tasks/{id}/progressTaskBoardFormat')
     .version('beta')
     .update(plannerProgressTaskBoardTaskFormat);
 

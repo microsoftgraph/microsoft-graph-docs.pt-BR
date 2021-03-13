@@ -1,11 +1,11 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
-ms.openlocfilehash: 2ec862b55f579e7daa41813b66a6a2453abae3ce
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: 59d9c5bf9d9e6072f9ce99364478c9b3051be686
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214715"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50790364"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-f75e04f34444/instances')
+let instances = await client.api('/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-f75e04f34444/instances')
     .version('beta')
     .skip(0)
     .top(100)
