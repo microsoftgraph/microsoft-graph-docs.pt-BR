@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 49236c26c73d9a66f226e3217220fcd0c922a9a0
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 7aed95129861fccab402cfc4ba1c6d9047c025c0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659506"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781072"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const custodian = {
-    email:"AdeleV@contoso.com",
-    applyHoldToSources:"true"
+    email: 'AdeleV@contoso.com',
+    applyHoldToSources: 'true'
 };
 
-let res = await client.api('/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians')
+await client.api('/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians')
     .version('beta')
     .post(custodian);
 
