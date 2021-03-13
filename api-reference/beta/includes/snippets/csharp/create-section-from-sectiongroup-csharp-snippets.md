@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2526f1bb7aa311714bd51162c3cf2312e15734d9
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 94812ae9a2656f1610de338fd8949e425fbe068b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48608902"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791327"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var onenoteSection = new OnenoteSection
     DisplayName = "Section name"
 };
 
-await graphClient.Me.Onenote.SectionGroups["{id}"].Sections
+await graphClient.Me.Onenote.SectionGroups["{sectionGroup-id}"].Sections
     .Request()
     .AddAsync(onenoteSection);
 

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 158e0f06760193edd921893f09e55c8654cb347f
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: e111ef2ddae3fdee9954dd845c83ca068a5ccd09
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223055"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794507"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var externalGroupMember = new ExternalGroupMember
     IdentitySource = IdentitySourceType.External
 };
 
-await graphClient.External.Connections["contosohr"].Groups["31bea3d537902000"].Members
+await graphClient.External.Connections["{externalConnection-id}"].Groups["{externalGroup-id}"].Members
     .Request()
     .AddAsync(externalGroupMember);
 
