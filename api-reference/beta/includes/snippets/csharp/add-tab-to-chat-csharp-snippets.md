@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2ac7a2dfeb4f8e4b9518a9523a2d643c23fe3c43
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 4717371ece5591439b515ae129c6fed112242e25
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689620"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50800270"
 ---
 ```csharp
 
@@ -27,7 +27,7 @@ var teamsTab = new TeamsTab
     }
 };
 
-await graphClient.Chats["19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"].Tabs
+await graphClient.Chats["{chat-id}"].Tabs
     .Request()
     .AddAsync(teamsTab);
 

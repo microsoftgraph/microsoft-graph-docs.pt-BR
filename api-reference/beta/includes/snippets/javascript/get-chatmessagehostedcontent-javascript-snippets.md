@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a4e8fc4016ba86200e3df457522733f478947a55
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: 29aa1261749e2b80a462b0fea667b61469471bb7
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402156"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795317"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/chats/{id}/messages/{id}/hostedContents/{id}/$value')
+let stream = await client.api('/chats/{id}/messages/{id}/hostedContents/{id}/$value')
     .version('beta')
     .get();
 

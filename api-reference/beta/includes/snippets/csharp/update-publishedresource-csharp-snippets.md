@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8f2a5344629f5113a7f0ab367061999cd60c5fa8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: c88fc1d2d77cc547a3ec75ad3807dce1473b1265
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874983"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786330"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var publishedResource = new PublishedResource
     DisplayName = "Demo provisioning (updated)"
 };
 
-await graphClient.OnPremisesPublishingProfiles["provisioning"].PublishedResources["1234b780-965f-4149-85c5-a8c73e58b67d"]
+await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].PublishedResources["{publishedResource-id}"]
     .Request()
     .UpdateAsync(publishedResource);
 

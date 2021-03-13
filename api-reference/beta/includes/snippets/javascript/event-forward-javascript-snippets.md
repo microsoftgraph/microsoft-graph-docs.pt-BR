@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7f546f627d75e1cc78b482b4a14d19e5394a1124
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: f8e074795c1cf89113ce31ae8abdcbb02b971869
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48619751"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797986"
 ---
 ```javascript
 
@@ -16,18 +16,18 @@ const options = {
 const client = Client.init(options);
 
 const forward = {
-  ToRecipients:[
+  ToRecipients: [
       {
         emailAddress: {
-          address:"danas@contoso.onmicrosoft.com",
-          name:"Dana Swope"
+          address: 'danas@contoso.onmicrosoft.com',
+          name: 'Dana Swope'
         }
       }
      ],
-  Comment: "Dana, hope you can make this meeting." 
+  Comment: 'Dana, hope you can make this meeting.' 
 };
 
-let res = await client.api('/me/events/{id}/forward')
+await client.api('/me/events/{id}/forward')
     .version('beta')
     .post(forward);
 

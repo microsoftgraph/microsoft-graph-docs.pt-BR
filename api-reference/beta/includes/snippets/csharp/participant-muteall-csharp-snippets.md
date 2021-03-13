@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8a795fa85af86de39324ab6f726468ac13496861
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 4a652b126f1e96fe1bd5eeba3e4e2e654242d302
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302618"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783755"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var participants = new List<String>()
 
 var clientContext = "clientContext-value";
 
-await graphClient.Communications.Calls["{id}"].Participants
+await graphClient.Communications.Calls["{call-id}"].Participants
     .MuteAll(participants,clientContext)
     .Request()
     .PostAsync();

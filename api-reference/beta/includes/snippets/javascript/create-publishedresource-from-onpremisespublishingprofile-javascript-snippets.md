@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d2b4c5714e500107fc264c58e6a70f7beee84db7
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 955f3f46f5bb265e50d458c24fd92cbddc9b3120
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636273"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50807781"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const publishedResource = {
-    displayName: "New provisioning",
-    resourceName: "domain1.contoso.com"
+    displayName: 'New provisioning',
+    resourceName: 'domain1.contoso.com'
 };
 
-let res = await client.api('/onPremisesPublishingProfiles/provisioning/publishedResources')
+await client.api('/onPremisesPublishingProfiles/provisioning/publishedResources')
     .version('beta')
     .post(publishedResource);
 

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: fba3e84128028cbe597fa98f1a1b1d9c71cd93cc
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: ba9e938de7c84d1150acef76839a8a49e1550300
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48610794"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787309"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/classes/11021/assignments/19002/submissions/850f51b7/submit')
+await client.api('/education/classes/11021/assignments/19002/submissions/850f51b7/submit')
     .version('beta')
     .post();
 

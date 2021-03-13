@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1fa4b22b9c9ccedd5da8e9d0bc37c750bafd0975
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: d093c66b3cf1edd17f9d04e2a9a3409ed1bcac33
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874485"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785087"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var workbookRangeFont = await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+var workbookRangeFont = await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"]
     .Range().Format.Font
     .Request()
     .GetAsync();

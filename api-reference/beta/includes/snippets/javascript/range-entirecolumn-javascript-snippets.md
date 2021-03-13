@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7c4fb278ff0dd9e052303b0ad4db2e638308e275
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: e5928805f87372d4b4e23fae9e8491cb50e1eb00
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48610362"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804146"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/EntireColumn')
+let workbookRange = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/EntireColumn')
     .version('beta')
     .get();
 
