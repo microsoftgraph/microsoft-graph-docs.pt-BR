@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 75e88400536d8946b8324b162025ac204bc4b564
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: b43f360c42a50258be85d236d575e2fdf8c9242d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059870"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50786192"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var workbookTableColumn = new WorkbookTableColumn
     Values = "values-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns
     .Request()
     .AddAsync(workbookTableColumn);
 
