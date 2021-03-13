@@ -5,12 +5,12 @@ localization_priority: Priority
 author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cf678e090f4af26aca1222ba464771111b0b6a60
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: aeb5dd5e21019b06f8757b37505d6e5e9f1a4354
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754296"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777388"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>tipo de recurso aadUserConversationMember
 
@@ -33,6 +33,10 @@ Esse tipo é herdado do [conversationMember](conversationmember.md).
 |[Obter canal do membro](../api/channel-get-members.md) | coleção [conversationMember](conversationmember.md) | Obtenha um membro em um canal.|
 |[Atualizar a função do membro do canal](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Atualize as propriedades de um membro do canal. Suportado só para o canal com MembershipType de`private`.|
 |[Remover membro do canal](../api/channel-delete-members.md) | Nenhum | Exclua um membro de um canal. Suportado só com o `channelType` de `private`.|
+|[Listar membros do bate-papo](../api/chat-list-members.md) | coleção [conversationMember](conversationmember.md) | Obter a lista de todos os membros em um chat.|
+|[Adicionar membro do bate-papo](../api/chat-post-members.md) | Cabeçalho de local | Adicionar um membro a um bate-papo.| 
+|[Obter membro do bate-papo](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Obtenha um membro em um chat.|
+|[Remover membro do bate-papo](../api/chat-delete-members.md) | Nenhum | Remover um membro de um bate-papo.| 
 
 ## <a name="properties"></a>Propriedades
 
@@ -43,6 +47,8 @@ Esse tipo é herdado do [conversationMember](conversationmember.md).
 |funções| coleção de cadeias de caracteres | As funções desse usuário. |
 |userId| cadeia de caracteres | O guid do usuário. |
 |email| cadeia de caracteres  | O endereço de email do usuário. |
+|tenantId| cadeia de caracteres  | TenantId para o qual o usuário do Azure AD pertence. |
+|visibleHistoryStartDateTime| DateTimeOffset  | O carimbo de data/hora indicando quanto o histórico de uma conversa é compartilhado com o membro da conversa. Essa propriedade é configurável somente para os membros de um bate-papo.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -50,17 +56,22 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.aadUserConversationMember"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.aadUserConversationMember",
+  "baseType": "microsoft.graph.conversationMember",
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "id": "string (identifier)",
   "displayName" : "string",
+  "visibleHistoryStartDateTime": "string (timestamp)",
   "roles" : ["string"],
   "userId" : "string",
-  "email" : "string"
+  "email" : "string",
+  "tenantId": "string"
 }
 ```
 

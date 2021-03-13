@@ -1,29 +1,28 @@
 ---
 author: chackman
-ms.author: chackman
-description: Não siga um item que o usuário está seguindo.
-title: Item da unidade não seguir
+description: Desa siga um item que o usuário está seguindo.
+title: Item de unidade de unfollow
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6a186eeee8055a4249db66a588b81d0bebfa57e1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fcaa9f39163daa42e12fbea324f4ecbc93ae0977
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955663"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50776792"
 ---
-# <a name="unfollow-drive-item"></a>Item da unidade não seguir
+# <a name="unfollow-drive-item"></a>Item de unidade de unfollow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Não seguir um [driveItem](../resources/driveitem.md).
+Desa siga um [driveItem](../resources/driveitem.md).
 
->**Observação:** Para seguir um item, consulte [follow item](driveitem-follow.md).
+>**Observação:** Para seguir um item, consulte [Follow Item](driveitem-follow.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

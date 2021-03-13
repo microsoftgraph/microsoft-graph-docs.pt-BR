@@ -2,12 +2,12 @@
 title: Respostas de erros e tipos de recurso do Microsoft Graph
 description: Este tópico descreve alguns dos erros que podem ser retornados nas respostas do Microsoft Graph.
 localization_priority: Priority
-ms.openlocfilehash: 2378233090ee63fc41469bc419373a26cf92be0f
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: a893f7e06d89bf50cbcc4cc13a1e394b6da2d72a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289229"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777009"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respostas de erros e tipos de recurso do Microsoft Graph
 
@@ -90,7 +90,7 @@ Dentro da resposta de erro há um recurso de erro que inclui as seguintes propri
 }
 ```
 
-| Nome da propriedade  | Valor                  | Descrição\                                                                                               |
+| Nome da propriedade  | Valor                  | Descrição                                                                                                |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
 | **code**       | string                 | Uma cadeia de códigos de erro para a falha que ocorreu                                                            |
 | **message**    | string                 | Uma mensagem pronta do programador sobre o erro que ocorreu. Esta não deve ser apresentada diretamente ao usuário. |

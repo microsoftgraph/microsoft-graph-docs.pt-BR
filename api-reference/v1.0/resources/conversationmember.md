@@ -5,18 +5,18 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1629b46b12d91fd96dca72577027f0031ab0102a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 14a70fcc6492ec143fa2f4e892438805d3526d60
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161786"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777717"
 ---
 # <a name="conversationmember-resource-type"></a>tipo de recurso conversationMember
 
 Namespace: microsoft.graph
 
-Representa um usuário em uma [equipe,](team.md)um [canal](channel.md)ou um [chat.](chat.md)
+Representa um usuário em uma [equipe,](team.md)um [canal](channel.md)ou [um chat.](chat.md)
 Consulte também [aadUserConversationMember](aaduserconversationmember.md).
 
 ## <a name="methods"></a>Métodos
@@ -29,10 +29,14 @@ Consulte também [aadUserConversationMember](aaduserconversationmember.md).
 |[Atualizar a função do membro](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Alterar um membro para um proprietário ou voltar para um membro regular.|
 |[Remover membro da equipe](../api/team-delete-members.md)|Nenhum|Remova um membro existente da equipe.|
 |[Listar membros do canal](../api/channel-list-members.md) | coleção [conversationMember](conversationmember.md) | Obter a lista de todos os membros em um canal.|
-|[Adicionar membro do canal](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Adicionar um membro a um canal. Suportado só para o`channel`com MembershipType de.`private`|
+|[Adicionar membro do canal](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Adicionar um membro a um canal. Somente suportado para `channel` com o membershipType de `private`.|
 |[Obter canal do membro](../api/channel-get-members.md) | coleção [conversationMember](conversationmember.md) | Obtenha um membro em um canal.|
 |[Atualizar a função do membro do canal](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Atualize as propriedades de um membro do canal. Suportado só para o canal com MembershipType de`private`.|
 |[Remover membro do canal](../api/channel-delete-members.md) | Nenhum | Exclua um membro de um canal. Suportado só com o `channelType` de `private`.|
+|[Listar membros do bate-papo](../api/chat-list-members.md) | coleção [conversationMember](conversationmember.md) | Obter a lista de todos os membros em um chat.|
+|[Adicionar membro do bate-papo](../api/chat-post-members.md) | Cabeçalho de local | Adicionar um membro a um bate-papo.| 
+|[Obter membro do bate-papo](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Obtenha um membro em um chat.|
+|[Remover membro do bate-papo](../api/chat-delete-members.md) | Nenhum | Remover um membro de um bate-papo.| 
 
 ## <a name="properties"></a>Propriedades
 
@@ -41,6 +45,7 @@ Consulte também [aadUserConversationMember](aaduserconversationmember.md).
 |id|String| Somente leitura. ID exclusivo do usuário.|
 |displayName| cadeia de caracteres | O nome de exibição do usuário. |
 |funções| coleção de cadeias de caracteres | As funções desse usuário. |
+|visibleHistoryStartDateTime| DateTimeOffset | O carimbo de data/hora indicando quanto o histórico de uma conversa é compartilhado com o membro da conversa. Essa propriedade é configurável somente para os membros de um bate-papo. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -48,18 +53,21 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.conversationMember",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
-  "displayName": "String",
+  "@odata.type": "#microsoft.graph.conversationMember",
   "id": "String (identifier)",
-  "roles": ["String"]
+  "roles": [
+    "String"
+  ],
+  "displayName": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
 
