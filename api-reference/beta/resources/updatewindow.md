@@ -1,35 +1,35 @@
 ---
-title: tipo de recurso updateWindow
-description: tipo de recurso updateWindow.
+title: Tipo de recurso updateWindow
+description: Tipo de recurso updateWindow.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: b2aa61d5d815d912caa47fd63d5907b62f882d36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d8f12c7cfcb4c83075087d7b894dc95fe92a695
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003448"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761223"
 ---
-# <a name="updatewindow-resource-type"></a><span data-ttu-id="f753b-103">tipo de recurso updateWindow</span><span class="sxs-lookup"><span data-stu-id="f753b-103">updateWindow resource type</span></span>
+# <a name="updatewindow-resource-type"></a><span data-ttu-id="36fd0-103">Tipo de recurso updateWindow</span><span class="sxs-lookup"><span data-stu-id="36fd0-103">updateWindow resource type</span></span>
 
-<span data-ttu-id="f753b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f753b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="36fd0-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="36fd0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f753b-105">Representa a janela de tempo durante a qual [os agentes](onpremisesagent.md) podem receber atualizações.</span><span class="sxs-lookup"><span data-stu-id="f753b-105">Represents time window during which [agents](onpremisesagent.md) can receive updates.</span></span>
+<span data-ttu-id="36fd0-105">Representa a janela de tempo durante [a qual os agentes](onpremisesagent.md) podem receber atualizações.</span><span class="sxs-lookup"><span data-stu-id="36fd0-105">Represents time window during which [agents](onpremisesagent.md) can receive updates.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f753b-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f753b-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="36fd0-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="36fd0-106">Properties</span></span>
 
-| <span data-ttu-id="f753b-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f753b-107">Property</span></span>     | <span data-ttu-id="f753b-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="f753b-108">Type</span></span>        | <span data-ttu-id="f753b-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="f753b-109">Description</span></span> |
+| <span data-ttu-id="36fd0-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="36fd0-107">Property</span></span>     | <span data-ttu-id="36fd0-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="36fd0-108">Type</span></span>        | <span data-ttu-id="36fd0-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="36fd0-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="f753b-110">updateWindowEndTime</span><span class="sxs-lookup"><span data-stu-id="f753b-110">updateWindowEndTime</span></span>|<span data-ttu-id="f753b-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="f753b-111">TimeOfDay</span></span>|<span data-ttu-id="f753b-112">Término de uma janela de tempo durante a qual os agentes podem receber atualizações</span><span class="sxs-lookup"><span data-stu-id="f753b-112">End of a time window during which agents can receive updates</span></span>|
-|<span data-ttu-id="f753b-113">updateWindowStartTime</span><span class="sxs-lookup"><span data-stu-id="f753b-113">updateWindowStartTime</span></span>|<span data-ttu-id="f753b-114">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="f753b-114">TimeOfDay</span></span>|<span data-ttu-id="f753b-115">Início de uma janela de tempo durante a qual os agentes podem receber atualizações</span><span class="sxs-lookup"><span data-stu-id="f753b-115">Start of a time window during which agents can receive updates</span></span>|
+|<span data-ttu-id="36fd0-110">updateWindowEndTime</span><span class="sxs-lookup"><span data-stu-id="36fd0-110">updateWindowEndTime</span></span>|<span data-ttu-id="36fd0-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="36fd0-111">TimeOfDay</span></span>|<span data-ttu-id="36fd0-112">Fim de uma janela de tempo durante a qual os agentes podem receber atualizações</span><span class="sxs-lookup"><span data-stu-id="36fd0-112">End of a time window during which agents can receive updates</span></span>|
+|<span data-ttu-id="36fd0-113">updateWindowStartTime</span><span class="sxs-lookup"><span data-stu-id="36fd0-113">updateWindowStartTime</span></span>|<span data-ttu-id="36fd0-114">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="36fd0-114">TimeOfDay</span></span>|<span data-ttu-id="36fd0-115">Início de uma janela de tempo durante a qual os agentes podem receber atualizações</span><span class="sxs-lookup"><span data-stu-id="36fd0-115">Start of a time window during which agents can receive updates</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f753b-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f753b-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="36fd0-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="36fd0-116">JSON representation</span></span>
 
-<span data-ttu-id="f753b-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f753b-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="36fd0-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="36fd0-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
