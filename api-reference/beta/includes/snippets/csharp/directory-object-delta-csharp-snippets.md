@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 32b90824ac622cc6ab682ac2166e8b4249efed91
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 39532298a38ab0719872cafeedf71f559a518f8c
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862434"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50809573"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = await graphClient.DirectoryObjects["delta"]
+var directoryObject = await graphClient.DirectoryObjects["{directoryObject-id}"]
     .Request()
     .GetAsync();
 

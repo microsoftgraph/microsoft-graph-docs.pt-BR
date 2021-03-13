@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 88800dfee9e2391b13fd68604b167411e3430687
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: ac4fe637433a81983317123298230a608fc2ccae
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48612093"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801066"
 ---
 ```csharp
 
@@ -23,7 +23,7 @@ var directorySetting = new DirectorySetting
     }
 };
 
-await graphClient.Settings["{id}"]
+await graphClient.Settings["{directorySetting-id}"]
     .Request()
     .UpdateAsync(directorySetting);
 
