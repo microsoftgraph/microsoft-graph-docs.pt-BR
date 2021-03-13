@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9780c7bef263a08a3835f96f75d7c586399dc7de
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: fb1b053c3de0a68257ebabac3b2436d84c3e6b92
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402185"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785627"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var type = "edit";
 
 var scope = "organization";
 
-await graphClient.Me.Drive.Items["{item-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"]
     .CreateLink(type,scope,null,null,null,null)
     .Request()
     .PostAsync();

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 0bf47cee3b019070247be6ea7c8ddcb3492150d3
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: ddd0f47f2c9948f1a817f16c2e03a4bb4ce92e54
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636135"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804181"
 ---
 ```javascript
 
@@ -17,11 +17,11 @@ const client = Client.init(options);
 
 const workbookChartLegend = {
   visible: true,
-  position: "position-value",
+  position: 'position-value',
   overlay: true
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend')
     .version('beta')
     .update(workbookChartLegend);
 
