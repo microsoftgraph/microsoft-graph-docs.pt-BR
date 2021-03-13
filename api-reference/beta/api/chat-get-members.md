@@ -1,16 +1,16 @@
 ---
 title: Obtenha o conversationMember em um bate-papo.
 description: Recuperar um membro de um bate-papo.
-author: clearab
+author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a5b37c6cde5c0bf8823a599d1720f3b8c5fcd6ad
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: ba86dc1d4ad5eb5ba6fcc926873d1896d55affb4
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753702"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770083"
 ---
 # <a name="get-conversationmember-in-a-chat"></a>Obtenha o conversationMember em um bate-papo.
 
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [conversationMember](../resources/conversationmember.md) no corpo da resposta.
 
 > [!NOTE]
-> Há alguns problemas conhecidos com essa funcionalidade. Para saber mais, confira [problemas conhecidos](/graph/known-issues.md#missing-tenantid-for-chat-members).
+> Há alguns problemas conhecidos com essa funcionalidade. Para saber mais, confira [problemas conhecidos](/graph/known-issues#missing-properties-for-chat-members).
 
 ## <a name="example"></a>Exemplo
 

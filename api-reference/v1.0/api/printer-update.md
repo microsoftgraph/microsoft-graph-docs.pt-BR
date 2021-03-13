@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e29335cab6d88c736825684b2ab46e65db64d563
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 7adf522284be5778c927c0104889bc42a7674737
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516838"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50771782"
 ---
 # <a name="update-printer"></a>Atualização da impressora
 Namespace: microsoft.graph
@@ -28,8 +28,8 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Printer.ReadWrite.All |
 
 >**Observação:** No momento, somente as impressoras que não têm dispositivo físico podem ser atualizadas usando permissões de aplicativo.
@@ -62,7 +62,7 @@ As propriedades a seguir podem ser atualizadas usando permissões delegadas.
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|As configurações de impressão padrão da impressora.|
 |location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional da impressora.|
-|displayName|Cadeia de caracteres|O nome da impressora.|
+|displayName|String|O nome da impressora.|
 
 ### <a name="application-permissions-and-json-payload"></a>Permissões de aplicativo e carga JSON
 No corpo da solicitação, fornece os valores para os campos de [impressora relevantes](../resources/printer.md) que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados. 
@@ -73,7 +73,7 @@ As propriedades a seguir podem ser atualizadas usando permissões de aplicativo.
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|As configurações de impressão padrão da impressora.|
 |capabilities|[printerCapabilities](../resources/printerCapabilities.md)|Os recursos da impressora associados a esse compartilhamento de impressora.|
-|displayName|Cadeia de caracteres|O nome da impressora.|
+|displayName|String|O nome da impressora.|
 |fabricante|String|O fabricante da impressora.|
 |modelo|String|O nome do modelo da impressora.|
 |status|[printerStatus](../resources/printerstatus.md)|O status de processamento da impressora, incluindo quaisquer erros.|
@@ -102,6 +102,8 @@ Se estiver usando permissões de aplicativo, se bem-sucedido, este método retor
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_printer"
@@ -121,6 +123,16 @@ Content-length: 581
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

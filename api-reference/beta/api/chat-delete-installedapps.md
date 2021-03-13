@@ -1,16 +1,16 @@
 ---
 title: Desinstalar o aplicativo em um chat
 description: Desinstale (remover) um aplicativo instalado em um chat.
-author: nkramer
+author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 212a033198a5bb1b6303b3d1a848ad32da4df5ab
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 014ef8e056ca117bd1680cb5b0be0595f20d8571
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690092"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770061"
 ---
 # <a name="uninstall-app-in-a-chat"></a>Desinstalar o aplicativo em um chat
 
@@ -41,6 +41,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 DELETE /chats/{chat-id}/installedApps/{app-installation-id}
 ```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 

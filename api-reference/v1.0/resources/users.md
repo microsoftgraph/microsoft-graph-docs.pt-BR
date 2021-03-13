@@ -3,14 +3,14 @@ title: Trabalhar com usuários no Microsoft Graph
 description: Crie experiências atraentes para aplicativos baseadas nos usuários, suas relações com outros usuários e grupos, seus emails, calendários e arquivos.
 localization_priority: Priority
 author: jpettere
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: conceptualPageType
-ms.openlocfilehash: 02c4c1fab215049fec344843eb591f53415b1063
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 217e3461c2f14490c0a1ffcf633b513464f1baf1
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721891"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759486"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Trabalhar com usuários no Microsoft Graph
 

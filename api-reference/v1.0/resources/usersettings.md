@@ -3,14 +3,14 @@ title: Tipo de recurso de configurações do usuário (UserSettings)
 description: 'As atuais configurações de usuário para descoberta de conteúdo. '
 author: jpettere
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 85a1a9556a5bc02224c8add5e97bc6cbd442cf77
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 5bbbaa40cc1fdc35441a2ab1e13c94a2a29719fa
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721873"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759353"
 ---
 # <a name="usersettings-resource-type"></a>Tipo de recurso de configurações do usuário (UserSettings)
 

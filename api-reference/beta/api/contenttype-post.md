@@ -5,12 +5,12 @@ description: Crie um tipo de conteúdo em um site.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: f84ec9db88917b55f518bbdbd4660bf91e9321ed
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b9ab72a2d757e2d409f98c2aab4e6f7392769dfc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445861"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50770448"
 ---
 # <a name="create-contenttype"></a>Criar contentType
 Namespace: microsoft.graph
@@ -60,6 +60,8 @@ O exemplo a seguir mostra como criar um novo tipo de conteúdo genérico.
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_contenttype"
@@ -80,6 +82,12 @@ Content-Type: application/json
     "group": "Document Set Content Types" 
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-contenttype-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
