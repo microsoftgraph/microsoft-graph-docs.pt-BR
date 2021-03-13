@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: f8785bc1530ed7673a7b3927243b325586506b66
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 32df7683a63a55c0df246b4f2e7fece089e24400
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44683913"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50802357"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var printerShare = new PrinterShare
     }
 };
 
-await graphClient.Print.Shares["{id}"]
+await graphClient.Print.Shares["{printerShare-id}"]
     .Request()
     .UpdateAsync(printerShare);
 

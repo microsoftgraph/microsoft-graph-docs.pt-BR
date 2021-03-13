@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7604e371eaf0924732a1d20f6648d28a110b691e
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 6aeff6ec7afb7ce880c20501d5c31898040bf1b2
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49692720"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796628"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var userScopeTeamsAppInstallation = new UserScopeTeamsAppInstallation
     }
 };
 
-await graphClient.Users["5b649834-7412-4cce-9e69-176e95a394f5"].Teamwork.InstalledApps
+await graphClient.Users["{user-id}"].Teamwork.InstalledApps
     .Request()
     .AddAsync(userScopeTeamsAppInstallation);
 
