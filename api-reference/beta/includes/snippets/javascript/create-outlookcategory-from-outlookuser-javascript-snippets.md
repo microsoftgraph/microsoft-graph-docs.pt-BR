@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 72ad36680fecb8077ba87c62591dcdb6570a9aaf
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 9b0fc7a9bf547c377b98abccbb37868205d2a1d5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636241"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781117"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const outlookCategory = {
-      displayName:"Project expenses",
-      color:"preset9"
+      displayName: 'Project expenses',
+      color: 'preset9'
 };
 
-let res = await client.api('/me/outlook/masterCategories')
+await client.api('/me/outlook/masterCategories')
     .version('beta')
     .post(outlookCategory);
 

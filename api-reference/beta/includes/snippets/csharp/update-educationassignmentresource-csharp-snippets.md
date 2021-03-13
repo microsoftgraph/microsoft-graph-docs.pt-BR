@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d391d329cad64d627717d724d6961d7d2e84475d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 11a57ace13e84a9b564d068dd93e2bc3a108bfd3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470356"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803182"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var educationAssignmentResource = new EducationAssignmentResource
     DistributeForStudentWork = false
 };
 
-await graphClient.Education.Classes["11021"].Assignments["19002"].Resources["850f51b7-1df9-4ec0-bd62-64a0214b9cbf"]
+await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Resources["{educationAssignmentResource-id}"]
     .Request()
     .UpdateAsync(educationAssignmentResource);
 

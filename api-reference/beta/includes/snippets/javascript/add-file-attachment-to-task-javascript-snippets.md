@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a7c00fd37a8b9f1b373d5476c5da24152b995b50
-ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
+ms.openlocfilehash: a8c7c59570bcd606afffc5fbe04e02f1204e5947
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41119698"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803626"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const attachment = {
-    @odata.type: "#microsoft.graph.fileAttachment",
-    name: "menu.txt",
-    contentBytes: "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    '@odata.type': '#microsoft.graph.fileAttachment',
+    name: 'menu.txt',
+    contentBytes: 'bWFjIGFuZCBjaGVlc2UgdG9kYXk='
 };
 
-let res = await client.api('/me/outlook/tasks/AAMkADAAAANXbdnAAA=/attachments')
+await client.api('/me/outlook/tasks/AAMkADAAAANXbdnAAA=/attachments')
     .version('beta')
     .post(attachment);
 
