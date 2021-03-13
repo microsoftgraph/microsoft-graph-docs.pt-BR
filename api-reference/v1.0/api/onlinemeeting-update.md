@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 419ea402d9e91c3b2b730dfc404dd8acf435d3d5
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 934a54b83b85c7096cc8b1a62f35a53fcfbbc169
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516924"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50773491"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -64,7 +64,7 @@ A tabela abaixo lista as propriedades que podem ser atualizadas. No corpo da sol
 |----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | startDateTime        | DateTime                                                     | O horário de início da reunião em UTC.                                                                                                                 |
 | endDateTime          | DateTime                                                     | A hora de término da reunião em UTC.                                                                                                                   |
-| assunto              | Cadeia de caracteres                                                       | O assunto da reunião online.                                                                                                             |
+| assunto              | String                                                       | O assunto da reunião online.                                                                                                             |
 | participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Os participantes associados à reunião online. Isso inclui o organizador e os participantes.                                            |
 | isEntryExitAnnounced | Booliano                                                      | Se os chamadores ingressarão ou sairão.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Especifica quais participantes podem ignorar o lobby da reunião.                                                                                     |
@@ -81,6 +81,8 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto
 
 > **Observação:** A ID da reunião foi truncada para capacidade de leitura.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
@@ -96,6 +98,24 @@ Content-Type: application/json
   "subject": "Patch Meeting Subject"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-start-end-subject-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-start-end-subject-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-start-end-subject-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-start-end-subject-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -151,6 +171,8 @@ Content-Type: application/json
 #### <a name="example-2-update-the-lobbybypasssettings"></a>Exemplo 2: atualizar o lobbyBypassSettings
 > **Observação:** A ID da reunião foi truncada para capacidade de leitura.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"],
@@ -166,6 +188,24 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-lobbybypasssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-lobbybypasssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-lobbybypasssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-lobbybypasssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

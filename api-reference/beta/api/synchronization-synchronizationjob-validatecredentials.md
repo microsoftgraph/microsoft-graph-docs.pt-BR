@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 4f36764ca7d6787629299261e6ec42c9454ddc46
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ce507c989ee842040787c77f772d6188d9444a03
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132066"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50773554"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte. |
-|Aplicativo                            |Sem suporte.| 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +45,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Boolean|Quando , o parâmetro será ignorado e as credenciais salvas anteriormente `true` `credentials` (se alguma) serão validadas em vez disso. |
-|credenciais|[Coleção synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Credenciais a validar. Ignorado quando o `useSavedCredentials` parâmetro é `true` .|
+|useSavedCredentials|Booliano|Quando , o parâmetro será ignorado e as credenciais `true` `credentials` salvas anteriormente (se alguma) serão validadas. |
+|credenciais|[coleção synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Credenciais para validar. Ignorado quando o `useSavedCredentials` parâmetro é `true` .|
 
 ## <a name="response"></a>Resposta
-Se a validação for bem-sucedida, este método retornará um `204, No Content` código de resposta. Não retorna nada no corpo da resposta.
+Se a validação for bem-sucedida, este método retornará `204, No Content` um código de resposta. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

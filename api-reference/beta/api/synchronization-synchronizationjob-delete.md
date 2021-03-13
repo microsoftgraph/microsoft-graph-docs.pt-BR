@@ -1,33 +1,33 @@
 ---
-title: Excluir synchronizationJob
+title: Excluir sincronizaçãoJob
 description: Pare o trabalho de sincronização e exclua permanentemente todo o estado associado a ele.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: d10196464b9662a6ad2c24ec8aaee5ea5cf925fa
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d4b154cca11b46c53d6929ea9522a7ff36c3b908
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129667"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50773575"
 ---
-# <a name="delete-synchronizationjob"></a>Excluir synchronizationJob
+# <a name="delete-synchronizationjob"></a>Excluir sincronizaçãoJob
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Pare o trabalho de sincronização e exclua permanentemente todo o estado associado a ele. As contas sincronizadas são deixadas como estão.
+Pare o trabalho de sincronização e exclua permanentemente todo o estado associado a ele. Contas sincronizadas são deixadas como estão.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegada (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.  |
-|Aplicativo                            |Sem suporte. | 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
