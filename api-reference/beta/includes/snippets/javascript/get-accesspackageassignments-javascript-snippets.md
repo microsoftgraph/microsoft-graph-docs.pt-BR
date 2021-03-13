@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 35caa95548cbe466db831b7afa73bb5d69e76200
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: c8ebb696ca189a055c61a3db53e612dc2fccc075
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37992912"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801942"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityGovernance/entitlementManagement/accessPackageAssignments')
+let accessPackageAssignments = await client.api('/identityGovernance/entitlementManagement/accessPackageAssignments')
     .version('beta')
     .get();
 

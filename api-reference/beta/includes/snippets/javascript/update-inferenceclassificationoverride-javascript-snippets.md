@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c9887b517342079486b7b753cb4439a7b60f7d74
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: aa9ca613351bec6c582e8fbae10b9f2fda17f86f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636060"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797572"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const inferenceClassificationOverride = {
-  classifyAs: "focused"
+  classifyAs: 'focused'
 };
 
-let res = await client.api('/me/inferenceClassification/overrides/{id}')
+await client.api('/me/inferenceClassification/overrides/{id}')
     .version('beta')
     .update(inferenceClassificationOverride);
 

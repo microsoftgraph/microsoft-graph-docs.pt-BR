@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 32c271e7d977ee580974ed5f436a5fc65c38d371
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: dea67046a44f25b75b7cf910f0ac1af6293129bd
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806398"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50790896"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var accessPackageCatalog = new AccessPackageCatalog
     DisplayName = "Catalog One"
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalogId}"]
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"]
     .Request()
     .UpdateAsync(accessPackageCatalog);
 
