@@ -1,28 +1,28 @@
 ---
-title: 'aplicativo: unsetVerifiedPublisher'
+title: 'application: unsetVerifiedPublisher'
 description: Desmarcar o distribuidor verificado de um aplicativo.
 localization_priority: Normal
 author: jesakowi
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dca739f5086e10fecdfba56cfd1338a9230b4d4d
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 3741529b51912a077bfb7abe217a6828f64d199f
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635506"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761311"
 ---
-# <a name="application-unsetverifiedpublisher"></a>aplicativo: unsetVerifiedPublisher
+# <a name="application-unsetverifiedpublisher"></a>application: unsetVerifiedPublisher
 
 Namespace: microsoft.graph
 
-Desmarque a [verifiedPublisher](../resources/verifiedPublisher.md) definida anteriormente em um [aplicativo](../resources/application.md), removendo todas as propriedades verificadas do Publisher. Para obter mais informações, consulte [Publisher Verification](/azure/active-directory/develop/publisher-verification-overview).
+[Desajuste o verificadoPublisher](../resources/verifiedPublisher.md) anteriormente definido em um [aplicativo,](../resources/application.md)removendo todas as propriedades do editor verificadas. Para obter mais informações, consulte [Verificação do Publisher](/azure/active-directory/develop/publisher-verification-overview).
 
 ## <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
 |Aplicativo | Sem suporte |
 

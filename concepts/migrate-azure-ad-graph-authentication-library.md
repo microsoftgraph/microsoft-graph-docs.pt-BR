@@ -1,30 +1,30 @@
 ---
-title: Analisar alterações da biblioteca de autenticação do aplicativo
-description: Descreve como atualizar o uso da biblioteca de autenticação para migrar um aplicativo dos aplicativos de API do Azure Active Directory (Azure AD) para a API do Microsoft Graph.
+title: Revisar alterações na biblioteca de autenticação de aplicativos
+description: Descreve como atualizar o uso da biblioteca de autenticação para migrar um aplicativo de aplicativos da API do Azure Active Directory (Azure AD) para a API do Microsoft Graph.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: azure-active-directory
-ms.openlocfilehash: 291b34b848892cb0294cc2e1a30c6452174690cc
-ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
+ms.prod: applications
+ms.openlocfilehash: ef49c6a3448dd63a7c933bb40748f218d6fd2db0
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338141"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760683"
 ---
-# <a name="review-app-authentication-library-changes"></a>Analisar alterações da biblioteca de autenticação do aplicativo
+# <a name="review-app-authentication-library-changes"></a>Revisar alterações na biblioteca de autenticação de aplicativos
 
-Este artigo faz parte da *etapa 3: revise os detalhes do aplicativo* do [processo para migrar aplicativos](migrate-azure-ad-graph-planning-checklist.md).
+Este artigo faz parte da *etapa 3:* revisar detalhes do aplicativo do [processo para migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
 A maioria dos aplicativos usa uma biblioteca de autenticação para adquirir e gerenciar tokens de acesso para chamar o Microsoft Graph.  A Microsoft oferece duas bibliotecas de autenticação:
 
-- [Biblioteca de autenticação do Azure Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries) (Adal)
+- [Biblioteca de autenticação do Azure Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
 - [Biblioteca de autenticação da Microsoft](/azure/active-directory/develop/reference-v2-libraries) (MSAL)
 
-## <a name="updating-adal"></a>Atualizando ADAL
+## <a name="updating-adal"></a>Atualizando o ADAL
 
-Se seu aplicativo usa atualmente a ADAL, use uma abordagem de migração de dois estágios:
+Se o aplicativo usa atualmente o ADAL, use uma abordagem de migração de dois estágios:
 
-1. Atualize seu aplicativo para adquirir tokens de acesso para o Microsoft Graph. Continue a usar a ADAL para esta etapa. Atualize o **resourceurl pela**, que contém o URI que representa a API Web de recurso, de:
+1. Atualize seu aplicativo para adquirir tokens de acesso para o Microsoft Graph. Continue a usar o ADAL para esta etapa. Atualize **o resourceURL**, que contém o URI que representa a API da Web de recursos, a partir de:
 
     `https://graph.windows.net`  
 
@@ -32,29 +32,29 @@ Se seu aplicativo usa atualmente a ADAL, use uma abordagem de migração de dois
 
     `https://graph.microsoft.com`
 
-    Tokens adquiridos recentemente têm os mesmos escopos após essa alteração, mas a audiência dos tokens de acesso agora é o Microsoft Graph.  
+    Tokens recém-adquiridos têm os mesmos escopos após essa alteração, mas o público-alvo dos tokens de acesso agora é o Microsoft Graph.  
 
-    Após a atualização do **resourceurl pela** e verificação da funcionalidade, libere uma atualização provisória para que seus usuários sejam ativados e runnning.
+    Depois de atualizar **resourceURL** e verificar a funcionalidade, libere uma atualização provisória para fazer com que os usuários se atualizem e executem.
 
-1.  Em seguida, comece a migrar o aplicativo para usar o MSAL, que é a biblioteca suportada para usar a movimentação para frente, agora que a ADAL foi preterida.
+1.  Em seguida, comece a trabalhar migrando seu aplicativo para usar o MSAL, que é a biblioteca com suporte para usar o avançar, agora que o ADAL está preterido.
 
 ## <a name="migrating-to-msal"></a>Migrando para o MSAL
 
-O MSAL fornece vários benefícios sobre a ADAL, incluindo o consentimento incremental, experiências de logon único mais ricas, suporte para contas pessoais da Microsoft, uso de protocolos baseados em padrões e assim por diante.  
+O MSAL oferece vários benefícios sobre o ADAL, incluindo consentimento incremental, experiências de logom único mais ricas, suporte para contas pessoais da Microsoft, uso de protocolos baseados em padrões e assim por diante.  
 
-Ao mudar seu aplicativo para o MSAL, você precisará fazer algumas alterações, incluindo a configuração do parâmetro de **escopos** na solicitação de aquisição de token:
+Ao alternar seu aplicativo para o MSAL, você precisará fazer algumas alterações, incluindo a definição do parâmetro **scopes** na solicitação de aquisição de token:
 
 ``` csharp
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
 ```
 
-A expressão acima limita a solicitação de escopos de permissão para aquelas configuradas durante o registro do aplicativo no portal do Azure e salva seus usuários existentes para que eles tenham de ser consentidos em seu aplicativo novamente.
+A expressão acima limita a solicitação de escopos de permissão aos configurados durante o registro do aplicativo no Portal do Azure e salva seus usuários existentes de ter que consentir com seu aplicativo novamente.
 
-Consulte [migrando Adal para MSAL](https://aka.ms/adal-net-to-msal-net) para obter ajuda direta e abrangente com o processo, incluindo solução de problemas e ajuda com erros comuns.
+Consulte [Migrando o ADAL para o MSAL](https://aka.ms/adal-net-to-msal-net) para ter ajuda direta e abrangente com o processo, incluindo solução de problemas e ajuda com erros comuns.
 
-Após a migração para o MSAL, você poderá solicitar escopos adicionais dinamicamente e os usuários serão solicitados a fornecer o consentimento incremental na próxima vez que usarem seu aplicativo.
+Depois de migrar para o MSAL, você pode solicitar escopos adicionais dinamicamente e os usuários são solicitados a fornecer consentimento incremental na próxima vez que usarem seu aplicativo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
-- Saiba mais sobre as diferenças de [biblioteca de cliente .net](migrate-azure-ad-graph-client-libraries.md) entre o Azure AD e o Microsoft Graph.
+- Saiba as diferenças de biblioteca do cliente [.NET](migrate-azure-ad-graph-client-libraries.md) entre o Azure AD Graph e o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

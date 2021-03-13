@@ -2,15 +2,15 @@
 title: Tipo de recurso assignedLabel
 description: Representa um rótulo de sensibilidade atribuído a um grupo do Microsoft 365.
 localization_priority: Normal
-author: jpettere
+author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 9602e10dda5d558110c55f1fb4ee166e53187989
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: fa95223aadc4a0b065a3227967a27c8b66b3bff1
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720890"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761518"
 ---
 # <a name="assignedlabel-resource-type"></a>Tipo de recurso assignedLabel
 
@@ -21,8 +21,8 @@ Representa um rótulo de sensibilidade atribuído a um grupo do Microsoft 365. O
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|labelId|Cadeia de caracteres|O identificador exclusivo do rótulo.|
-|displayName|Cadeia de caracteres|O nome de exibição do rótulo. Somente leitura.|
+|labelId|String|O identificador exclusivo do rótulo.|
+|displayName|String|O nome de exibição do rótulo. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

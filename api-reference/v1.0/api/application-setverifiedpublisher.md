@@ -1,28 +1,28 @@
 ---
-title: 'aplicativo: setVerifiedPublisher'
+title: 'application: setVerifiedPublisher'
 description: Definir o distribuidor verificado de um aplicativo.
 localization_priority: Normal
 author: jesakowi
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 60681396c5f1c7e74b2ef04cd1984815e3a5e7a0
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: ff0558f8618020eca6437d7528f1f6d0f17eafa6
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635541"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761146"
 ---
-# <a name="application-setverifiedpublisher"></a>aplicativo: setVerifiedPublisher
+# <a name="application-setverifiedpublisher"></a>application: setVerifiedPublisher
 
 Namespace: microsoft.graph
 
-Definir o [verifiedPublisher](../resources/verifiedPublisher.md) em um [aplicativo](../resources/application.md). Para obter mais informações, incluindo pré-requisitos para definir um editor verificado, confira [verificação do Publisher](/azure/active-directory/develop/publisher-verification-overview).
+De definir [o verificadoPublisher](../resources/verifiedPublisher.md) em um [aplicativo](../resources/application.md). Para obter mais informações, incluindo pré-requisitos para definir um editor verificado, consulte [Verificação do Publisher](/azure/active-directory/develop/publisher-verification-overview).
 
 ## <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
 |Aplicativo | Sem suporte |
 
@@ -43,11 +43,11 @@ POST /applications/{id}/setVerifiedPublisher
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça as seguintes propriedades obrigatórias.
+No corpo da solicitação, forneça as seguintes propriedades necessárias.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| verifiedPublisherId | string | O MPNID (Microsoft Partner Network ID) do editor verificado a ser definido no aplicativo, na conta do centro de parceiros do Publisher. |
+| verifiedPublisherId | string | A ID da Rede de Parceiros da Microsoft (MPNID) do editor verificado a ser definida no aplicativo, a partir da conta do Partner Center do editor. |
 
 ## <a name="response"></a>Resposta
 

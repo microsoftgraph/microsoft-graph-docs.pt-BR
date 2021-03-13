@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso delegatedPermissionClassification
+title: Tipo de recurso delegatedPermissionClassification
 description: Usado para especificar a classificação de uma permissão delegada.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 7d5926bff0d7096080aa22fae49d0ed15c7d1fcd
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: ff9f4ca394e2065c69fd7cd08a19d60817fc4f99
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377174"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761755"
 ---
-# <a name="delegatedpermissionclassification-resource-type"></a>tipo de recurso delegatedPermissionClassification
+# <a name="delegatedpermissionclassification-resource-type"></a>Tipo de recurso delegatedPermissionClassification
 
 Namespace: microsoft.graph
 
 Usado para especificar a classificação de uma permissão delegada.
 
-As classificações de permissão delegada podem ser usadas em combinação com as configurações de consentimento do usuário para escolher a quais permissões um usuário pode concordar. Confira [configurar como os usuários finais consentiam aos aplicativos](/azure/active-directory/manage-apps/configure-user-consent) para saber mais sobre as classificações de permissão.
+As classificações de permissão delegadas podem ser usadas em combinação com as configurações de consentimento do usuário para escolher quais permissões um usuário tem permissão para consentir. Consulte [Configure how end-users consent to applications](/azure/active-directory/manage-apps/configure-user-consent) to learn more about permission classifications.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| id | String | Um identificador exclusivo para a chave **delegatedPermissionClassification** . Não anulável. Somente leitura. |
-| classificação | permissionClassificationType | O valor de classificação que está sendo fornecido. Valor possível: `low` . O não tem suporte para `$filter`. |
-| permissionid | Guid | O identificador exclusivo (**ID**) da permissão delegada listada na coleção **oauth2PermissionScopes** do [servicePrincipalName](servicePrincipal.md). Obrigatório durante a criação. O não tem suporte para `$filter`. |
-| permissionname | Cadeia de Caracteres | O valor de declaração (**valor**) para a permissão delegada listada na coleção **oauth2PermissionScopes** do [servicePrincipalName](servicePrincipal.md). O não tem suporte para `$filter`. |
+| id | String | Um identificador exclusivo para **a chave delegatedPermissionClassification.** Não anulável. Somente leitura. |
+| classificação | permissionClassificationType | O valor de classificação que está sendo dado. Valor possível: `low` . O não tem suporte para `$filter`. |
+| permissionId | Guid | O identificador exclusivo (**id**) da permissão delegada listada na coleção **oauth2PermissionScopes** [do servicePrincipal](servicePrincipal.md). Obrigatório durante a criação. O não tem suporte para `$filter`. |
+| permissionName | String | O valor da declaração (**valor**) da permissão delegada listada na coleção **oauth2PermissionScopes** do [servicePrincipal](servicePrincipal.md). O não tem suporte para `$filter`. |
 
 ## <a name="json-representation"></a>Representação JSON
 

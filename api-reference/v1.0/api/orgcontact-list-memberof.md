@@ -1,31 +1,31 @@
 ---
 title: Listar memberOf
-description: Lista os grupos dos quais este contato do organizaitonal é membro.
+description: Listar os grupos dos que esse contato organizaitonal é membro.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d194fd78ca7bc8eb713ea06ee18656b888630a68
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4814a7dc4482c87edd3e27c7b8949e7fef388ec0
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461213"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761622"
 ---
 # <a name="list-memberof"></a>Listar memberOf
 
 Namespace: microsoft.graph
 
-Lista os grupos dos quais esse [contato organizacional](../resources/orgcontact.md) é membro.
+Listar os grupos dos que [esse contato](../resources/orgcontact.md) organizacional é membro.
 
 ## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | OrgContact. Read. All e Group. Read. All, Directory. Read. All  |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | OrgContact. Read. All e Group. Read. All, Directory. Read. All |
+|Delegada (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /contacts/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) `$select` para ajudar a personalizar a resposta.
+Este método dá suporte aos [Parâmetros de Consulta OData](/graph/query-parameters) `$select` para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |

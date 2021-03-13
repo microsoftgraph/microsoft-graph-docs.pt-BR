@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso appliedConditionalAccessPolicy
-description: Indica os atributos relacionados à política ou políticas de acesso condicional aplicadas que são disparadas pela atividade de entrada correspondente.
+title: Tipo de recurso appliedConditionalAccessPolicy
+description: Indica os atributos relacionados à política de acesso condicional ou políticas aplicadas que são disparadas pela atividade de entrada correspondente.
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: c90e8b012e62317b1a8b02df723d9426ec99c282
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3aa114c23888ccc6852314e2274b8a89ca440344
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003357"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761525"
 ---
-# <a name="appliedconditionalaccesspolicy-resource-type"></a>tipo de recurso appliedConditionalAccessPolicy
+# <a name="appliedconditionalaccesspolicy-resource-type"></a>Tipo de recurso appliedConditionalAccessPolicy
 
 Namespace: microsoft.graph
 
-Indica os atributos relacionados à política ou políticas de acesso condicional aplicadas que são disparadas pela atividade de entrada correspondente.
+Indica os atributos relacionados à política de acesso condicional ou políticas aplicadas que são disparadas pela atividade de entrada correspondente.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Refere-se ao nome da política de acesso condicional (exemplo: "exigir MFA de Salesforce").|
-|enforcedGrantControls|Coleção de cadeias de caracteres|Refere-se aos controles Grant impostos pela política de acesso condicional (exemplo: "requer autenticação multifator").|
-|enforcedSessionControls|Coleção de cadeias de caracteres|Refere-se aos controles de sessão aplicados pela política de acesso condicional (exemplo: "exigir controles de aplicação imposta)").|
+|displayName|String|Refere-se ao Nome da política de acesso condicional (exemplo: "Exigir MFA para Salesforce").|
+|enforcedGrantControls|Coleção de cadeias de caracteres|Refere-se aos controles de concessão imposto pela política de acesso condicional (exemplo: "Exigir autenticação multifacional").|
+|enforcedSessionControls|Coleção de cadeias de caracteres|Refere-se aos controles de sessão impostos pela política de acesso condicional (exemplo: "Exigir controles aplicados ao aplicativo").|
 |id|String|GUID exclusivo da política de acesso condicional.|
-|resultado|String| Indica o resultado da política de autoridade de certificação que foi disparada. Os valores possíveis são:<br/>`success`<br/>`failure`<br/>`notApplied` -A política não é aplicada porque as condições da política não foram atendidas.<br/>`notEnabled` – Isso ocorre devido à política em estado desabilitado.|
+|resultado|String| Indica o resultado da política de AC que foi disparada. Os valores possíveis são:<br/>`success`<br/>`failure`<br/>`notApplied` - A política não é aplicada porque as condições de política não foram atendidas.<br/>`notEnabled` - Isso ocorre devido à política em estado desabilitado.|
 
 ## <a name="json-representation"></a>Representação JSON
 

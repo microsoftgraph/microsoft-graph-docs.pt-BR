@@ -3,13 +3,13 @@ title: Permissões de escopo de aplicativo para caixas de correio específicas d
 description: Para definir o escopo das permissões de aplicativo de um aplicativo para caixas de correio específicas do Exchange Online, você precisará criar políticas de acesso a aplicativos.
 author: abheek-das
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 83caa52f087bc3ef2ebada764132be67ea3efc27
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.prod: applications
+ms.openlocfilehash: 56b05834f85c0b4a3f4480855cd0bffc8415b628
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131219"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760739"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>Permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online 
 

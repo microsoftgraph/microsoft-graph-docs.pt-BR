@@ -1,31 +1,31 @@
 ---
 title: 'orgContact: getMemberObjects'
-description: Retorne todos os grupos dos quais este contato organizacional é membro. A verificação é transitiva.
+description: Retorne todos os grupos dos que esse contato organizacional é membro. A verificação é transitiva.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7fd09f86c53252cb0fd7cbcc69b9ac4d3db3d47a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a51cd565b363e1fe080f5a1d48de9f51b38d78f7
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988651"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761636"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact: getMemberObjects
 
 Namespace: microsoft.graph
 
-Retorne todos os grupos dos quais este [contato organizacional](../resources/orgcontact.md) é membro. A verificação é transitiva. Contatos organizacionais não podem ser membros de funções de diretório. Nenhuma função de diretório será retornada.
+Retorne todos os grupos dos que [esse contato organizacional](../resources/orgcontact.md) é membro. A verificação é transitiva. Contatos organizacionais não podem ser membros de funções de diretório. Nenhuma função de diretório será retornada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | OrgContact. Read. All e Group. Read. All, Directory. Read. All  |
+|Delegada (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | OrgContact. Read. All e Group. Read. All, Directory. Read. All |
+|Aplicativo | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,11 +44,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean|Definido como `false` . Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
+|securityEnabledOnly|Booliano|Definir como `false` . Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção String no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto da coleção de cadeias de caracteres no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

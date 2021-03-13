@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso ipRange
-description: Classe base do intervalo IP para representar intervalos de endereços IPV4 e IPV6.
+description: Classe base de intervalo IP para representar intervalos de endereçoS IPV4 e IPV6.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 43be17079a7b67b02cf0355fd3261d204e5fda0b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: ccd278393968f9d0806a7d3f3cb280961bd178a7
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158986"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761343"
 ---
 # <a name="iprange-resource-type"></a>Tipo de recurso ipRange
 
 Namespace: microsoft.graph
 
-Classe base do intervalo IP para representar intervalos de endereços IPV4 e IPV6.
+Classe base de intervalo IP para representar intervalos de endereçoS IPV4 e IPV6.
 
 ## <a name="properties"></a>Propriedades
 

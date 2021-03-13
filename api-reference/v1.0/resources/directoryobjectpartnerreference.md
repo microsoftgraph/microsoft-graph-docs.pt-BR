@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso directoryObjectPartnerReference
-description: Representa uma referência a um objeto Directory em um locatário do parceiro. Herda do directoryObject.
+title: Tipo de recurso directoryObjectPartnerReference
+description: Representa uma referência a um objeto de diretório em um locatário parceiro. Herda de directoryObject.
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 39a3077862727f4d8457a6d0105f03296ba67950
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 8f68c2660903c088082ec0baca995f2707a88883
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582153"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761202"
 ---
-# <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso directoryObjectPartnerReference
+# <a name="directoryobjectpartnerreference-resource-type"></a>Tipo de recurso directoryObjectPartnerReference
 
 Namespace: microsoft.graph
 
-Representa uma referência a um objeto Directory em uma organização parceira. Herda de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0).
+Representa uma referência a um objeto de diretório em uma organização parceira. Herda de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |description|String| Descrição do objeto retornado. Somente leitura. |
-|displayName|String| Nome do objeto de diretório que está sendo retornado, como o grupo ou o aplicativo. Apenas leitura. |
-|externalPartnerTenantId|Guid| O identificador de locatário para o locatário do parceiro. Somente leitura. |
-|id|String| O identificador exclusivo do recurso. Herdado de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Apenas leitura. |
+|displayName|String| Nome do objeto de diretório sendo retornado, como grupo ou aplicativo. Somente leitura. |
+|externalPartnerTenantId|Guid| O identificador de locatário do locatário parceiro. Somente leitura. |
+|id|String| O identificador exclusivo do recurso. Herdado de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Somente leitura. |
 |objectType|String| O tipo do objeto referenciado no locatário do parceiro. Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON

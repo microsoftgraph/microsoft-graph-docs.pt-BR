@@ -3,14 +3,14 @@ title: Tipo de recurso orgContact
 description: Representa um contato organizacional
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 05a78598cb249d203510674ac96b2dd69d236e26
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: fe19b4b840f1f9d9ef5bc3eaff502bf448eb1432
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721541"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761216"
 ---
 # <a name="orgcontact-resource-type"></a>Tipo de recurso orgContact
 
@@ -43,9 +43,9 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | addresses                    | [Coleção physicalOfficeAddress](physicalofficeaddress.md)             | Endereços postais para esse contato organizacional. Por enquanto, um contato só pode ter um endereço físico.                                                                                                                                                                                    |
 | companyName                  | String                                                                   | Nome da empresa à que esse contato organizacional pertence.                                                                                                                                                                                                                            |
 | department                   | String                                                                   | O nome do departamento no qual o contato funciona.                                                                                                                                                                                                                                    |
-| displayName                  | Cadeia de caracteres                                                                   | Nome de exibição para esse contato organizacional.                                                                                                                                                                                                                                              |
-| givenName                    | Cadeia de caracteres                                                                   | Primeiro nome para esse contato organizacional.                                                                                                                                                                                                                                                |
-| id                           | Cadeia de caracteres                                                                   | Identificador exclusivo para esse contato organizacional.                                                                                                                                                                                                                                         |
+| displayName                  | String                                                                   | Nome de exibição para esse contato organizacional.                                                                                                                                                                                                                                              |
+| givenName                    | String                                                                   | Primeiro nome para esse contato organizacional.                                                                                                                                                                                                                                                |
+| id                           | String                                                                   | Identificador exclusivo para esse contato organizacional.                                                                                                                                                                                                                                         |
 | jobTitle                     | String                                                                   | Cargo para esse contato organizacional.                                                                                                                                                                                                                                                 |
 | email                         | String                                                                   | O endereço SMTP do contato, por exemplo, "jeff@contoso.onmicrosoft.com".                                                                                                                                                                                                             |
 | mailNickname                 | String                                                                   | Alias de email (parte do endereço de email pré-pendente do símbolo @) para esse contato organizacional.                                                                                                                                                                                           |
@@ -54,7 +54,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | onPremisesSyncEnabled        | Booliano                                                                  | **true** se esse objeto for sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado e agora mestre no Exchange; **null** se esse objeto nunca tiver sido sincronizado de um diretório local (padrão). |
 | telefones                       | Coleção [phone](phone.md)                                             | Lista de telefones para esse contato organizacional. Os tipos de telefone podem ser móveis, comerciais e businessFax. Somente um de cada tipo pode estar presente na coleção.                                                                                                                         |
 | proxyAddresses               | Coleção de cadeias de caracteres                                                        | Por exemplo: "SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Dá \$ suporte ao filtro.                                                                                                                |
-| surname                      | Cadeia de caracteres                                                                   | Sobrenome para esse contato organizacional.                                                                                                                                                                                                                                                 |
+| surname                      | String                                                                   | Sobrenome para esse contato organizacional.                                                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Relações
 

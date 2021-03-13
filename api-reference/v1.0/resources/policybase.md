@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso policyBase
-description: Representa um tipo base abstrato dos tipos de política dos quais herdar.
+description: Representa um tipo de base abstrato para tipos de política herdado.
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: deb6b11d9ebb8e2ef4ec9f5a2874903577f593b2
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: a091fb23be66f476b03b725e29dced32b138c9bc
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156333"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761511"
 ---
 # <a name="policybase-resource-type"></a>Tipo de recurso policyBase
 
 Namespace: microsoft.graph
 
-Representa um tipo básico abstrato dos tipos de política dos quais herdar.
+Representa um tipo de base abstrato para tipos de política herdado.
 
 ## <a name="methods"></a>Métodos
 
@@ -26,9 +26,9 @@ Nenhum
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| Identificador exclusivo desta política. Somente leitura.|
-|description|Cadeia de caracteres| Descrição desta política.|
-|displayName|Cadeia de caracteres| Nome para exibição desta política. |
+|id|String| Identificador exclusivo dessa política. Somente leitura.|
+|description|String| Descrição dessa política.|
+|displayName|String| Nome de exibição para esta política. |
 
 ## <a name="relationships"></a>Relações
 

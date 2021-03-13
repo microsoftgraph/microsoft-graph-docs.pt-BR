@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso Preauthorizedapplication e
-description: Lista os aplicativos cliente pré autorizados
+title: Tipo de recurso preAuthorizedApplication
+description: Lista os aplicativos cliente pré-autorizados
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: fdc6b9692076040a4495074456f1b847e3af3c69
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 276b6f618b01d80fd66fda40c0b617a8fd01a6ac
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037245"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760971"
 ---
-# <a name="preauthorizedapplication-resource-type"></a>tipo de recurso Preauthorizedapplication e
+# <a name="preauthorizedapplication-resource-type"></a>Tipo de recurso preAuthorizedApplication
 
 Namespace: microsoft.graph
 
-Lista os aplicativos clientes que são previamente autorizados com as permissões especificadas para acessar as APIs desse aplicativo. Os usuários não precisam ser consentidos em qualquer aplicativo pré autorizado (para as permissões especificadas). No entanto, qualquer permissão adicional que não esteja listada no preAuthorizedApplications (solicitado por meio de consentimento incremental, por exemplo) exigirá o consentimento do usuário.
+Lista os aplicativos cliente pré-autorizados com as permissões especificadas para acessar as APIs desse aplicativo. Os usuários não precisam consentir com nenhum aplicativo pré-autorizado (para as permissões especificadas). No entanto, quaisquer permissões adicionais não listadas em preAuthorizedApplications (solicitadas por meio do consentimento incremental, por exemplo) exigirão o consentimento do usuário.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |appId|String| O identificador exclusivo do aplicativo. |
-|delegatedPermissionIds|Coleção de cadeias de caracteres| O identificador exclusivo para o [oauth2PermissionScopes](permissionscope.md) que o aplicativo exige. |
+|delegatedPermissionIds|Coleção de cadeias de caracteres| O identificador exclusivo para [o oauth2PermissionScopes](permissionscope.md) que o aplicativo requer. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso stsPolicy
+title: Tipo de recurso stsPolicy
 description: Representa um tipo de base abstrato para tipos de política que controlam o comportamento da plataforma de identidade da Microsoft.
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: cb43f538fe961af85c1a92f5e853ae8bca44b418
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: ba7afc9d338a0fd34b5548ca2ade69eebfecf29c
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581901"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760887"
 ---
-# <a name="stspolicy-resource-type"></a>tipo de recurso stsPolicy
+# <a name="stspolicy-resource-type"></a>Tipo de recurso stsPolicy
 
 Namespace: microsoft.graph
 
-Representa um tipo de base abstrato para tipos de política que controlam o comportamento da [plataforma de identidade da Microsoft](/azure/active-directory/develop/) .
+Representa um tipo de base abstrato para tipos de política que controlam o [comportamento da plataforma de identidade da Microsoft.](/azure/active-directory/develop/)
 
 Herda de [policyBase](policyBase.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Nenhum
 
@@ -28,11 +28,11 @@ Nenhum
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| Identificador exclusivo da política. Apenas leitura. Herdado de [policyBase](policyBase.md).|
-|description|String| Descrição da política. Herdado de [policyBase](policyBase.md).|
-|displayName|String| Nome para exibição dessa política. Herdado de [policyBase](policyBase.md).|
-|definir|String collection| Uma coleção String contendo uma cadeia de caracteres JSON que define as regras e configurações de uma política. A sintaxe da definição difere para cada tipo de política derivada. Obrigatório.|
-|isOrganizationDefault|Booliano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|id|String| Identificador exclusivo dessa política. Somente leitura. Herdado de [policyBase](policyBase.md).|
+|descrição|String| Descrição dessa política. Herdado de [policyBase](policyBase.md).|
+|displayName|String| Nome de exibição para esta política. Herdado de [policyBase](policyBase.md).|
+|definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações de uma política. A sintaxe da definição difere para cada tipo de política derivado. Obrigatório.|
+|isOrganizationDefault|Booliano|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
 
 ## <a name="relationships"></a>Relações
 

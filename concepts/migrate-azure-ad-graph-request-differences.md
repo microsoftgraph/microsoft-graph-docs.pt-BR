@@ -1,129 +1,129 @@
 ---
 title: Solicitar diferenças entre o Azure AD Graph e o Microsoft Graph
-description: Descreve como as solicitações do Microsoft Graph são diferentes das solicitações do Azure AD, o que ajuda a migrar aplicativos para o serviço mais recente..
+description: Descreve como as solicitações do Microsoft Graph diferem das solicitações do Azure AD, o que ajuda a migrar aplicativos para o serviço mais novo..
 author: dkershaw10
 localization_priority: Normal
-ms.prod: azure-active-directory
-ms.openlocfilehash: ae393192961c61890e7dc3963a82727b6aea0557
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.prod: applications
+ms.openlocfilehash: e30a0c98aaf7ec0d042787f511872d02529aaa5c
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289103"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760662"
 ---
 # <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>Solicitar diferenças entre o Azure AD Graph e o Microsoft Graph
 
-Este artigo faz parte da *etapa 1: revisar as diferenças de API* do [processo de migração de aplicativos](migrate-azure-ad-graph-planning-checklist.md).
+Este artigo faz parte da *etapa 1: analisar as* diferenças de API do processo para [migrar aplicativos.](migrate-azure-ad-graph-planning-checklist.md)
 
-O Microsoft Graph e a API do Azure AD Graph são APIs REST e cada uma suportam convenções ODATA para parâmetros de consulta. No entanto, a sintaxe varia entre essas duas APIs.
+O Microsoft Graph e a API do Azure AD Graph são APIs REST e cada uma delas oferece suporte a convenções ODATA para parâmetros de consulta. No entanto, a sintaxe varia entre essas duas APIs.
 
-Use o [Explorador do Graph](https://aka.ms/ge) para experimentar esses padrões de solicitação em seus próprios dados, pois é uma ótima maneira de aprender sobre as diferenças de solicitação e resposta.
+Use o [Graph Explorer](https://aka.ms/ge) para experimentar esses padrões de solicitação em relação aos seus próprios dados, pois é uma ótima maneira de aprender sobre as diferenças de solicitação e resposta.
 
 ## <a name="basic-requests"></a>Solicitações básicas
 
-A tabela a seguir realça as principais diferenças de solicitação entre as duas APIs:
+A tabela a seguir destaca as principais diferenças de solicitação entre as duas APIs:
 
 |Detalhes da solicitação| Azure AD Graph. | Microsoft Graph |
 |---|---|---|
 |Sintaxe de solicitação| `https://graph.windows.net/{tenant_id}/` <br> `{resource}?{version}&query-parameters` | `https://graph.microsoft.com/`<br>`{version}/{resource}?query-parameters`|
-|Pontos de extremidade de serviço &nbsp; :||
+|Pontos &nbsp; de extremidade do serviço:||
 |-&nbsp;Global|`https://graph.windows.net`|`https://graph.microsoft.com`|
-|-&nbsp;&nbsp;L4 gov (EUA) &nbsp;|`https://graph.microsoftazure.us`|`https://graph.microsoft.us`|
-|-&nbsp;&nbsp; &nbsp; &nbsp; (DoD) de US gov|`https://graph.microsoftazure.us`|`https://dod-graph.microsoft.us`|
+|-&nbsp;US &nbsp; Gov &nbsp; L4|`https://graph.microsoftazure.us`|`https://graph.microsoft.us`|
+|-&nbsp;US &nbsp; Gov &nbsp; L5 &nbsp; (DOD)|`https://graph.microsoftazure.us`|`https://dod-graph.microsoft.us`|
 |-&nbsp;Alemanha|`https://graph.cloudapi.de`|`https://graph.microsoft.de`|
-|-&nbsp;China &nbsp; (21vianet)| `https://graph.chinacloudapi.cn`|`https://microsoftgraph.chinacloudapi.cn`|
-|{tenant_id}|Especifique a ID do locatário na solicitação.|É opcional especificar uma ID de locatário na solicitação, pois ela é inferida do token de acesso.<br><br>Se você especificar a ID do locatário, ela vai entre o `{version}` e o `{resource}` na URL da solicitação.|
-|Version|Especifique a versão de lançamento do Graph do Azure AD na solicitação usando um parâmetro de consulta necessário.|Especifique a versão de lançamento do Microsoft Graph na solicitação como parte do caminho da URL imediatamente após o ponto de extremidade do serviço.|
+|-&nbsp;China &nbsp; (21Vianet)| `https://graph.chinacloudapi.cn`|`https://microsoftgraph.chinacloudapi.cn`|
+|{tenant_id}|Especifique a ID do locatário na solicitação.|É opcional especificar uma ID de locatário na solicitação, pois ela é inferida do token de acesso.<br><br>Se você especificar a ID do locatário, ela fica entre a URL e `{version}` `{resource}` a da solicitação.|
+|{version}|Especifique a versão de versão do Azure AD Graph na solicitação usando um parâmetro de consulta necessário.|Especifique a versão de versão do Microsoft Graph na solicitação como parte do caminho da URL logo após o ponto de extremidade do serviço.|
 
-Você pode continuar a usar os mesmos parâmetros de consulta no Microsoft Graph como o Graph do Azure AD.
+Você pode continuar a usar os mesmos parâmetros de consulta no Microsoft Graph que o Azure AD Graph.
 
-### <a name="example-request-comparison"></a>Exemplo de comparação de solicitação
+### <a name="example-request-comparison"></a>Comparação de solicitação de exemplo
 
-Suponha que você queira uma lista de todos os usuários com nomes que começam com "Dan".
+Suponha que você queira uma lista de todos os usuários com nomes começando com "Dan".
 
-No Azure AD Graph, você pode usar essa solicitação:
+No Azure AD Graph, você pode usar esta solicitação:
 
-`GET https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6` ou
+`GET https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6` ou 
 
 `GET https://graph.windows.net/myOrganization/users?$filter=startswith(givenName,'Dan')&api-version=1.6`
 
 
 Esta solicitação:
 
-- Targets versão 1,6 do Azure AD Graph.
-- Especifica `contoso.com` como a ID do locatário. A alternativa mostra o uso de um alias `myOrganization` com base na ID do locatário no token de acesso.
+- Direciona a versão 1.6 do Azure AD Graph.
+- Especifica como `contoso.com` a ID do locatário. A alternativa mostra o uso de um alias com base na ID do `myOrganization` locatário no token de acesso.
 - Chama o recurso users.
 - Usa o `$filter` parâmetro de consulta para limitar a resposta a determinados nomes que começam com `Dan` .
 
-Os resultados incluem usuários com nomes como Daniel, Danforth, Danielle, DANERYS e assim por diante.
+Os resultados incluem usuários com nomes como Daniel, Danforth, Danielle, Danerys e assim por diante.
 
 Uma solicitação semelhante para o Microsoft Graph seria:
 
 `GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`
 
-Nela
+Aqui:
 
 - A versão é `v1.0` .
 - A ID do locatário é inferida do token de acesso (não mostrado).
-- O parâmetro de recurso e de `$filter` consulta é o mesmo que a consulta do Azure AD.
+- O parâmetro resource and query é o mesmo que a consulta `$filter` do Azure AD.
 
-> **Observação**: se você estiver usando a biblioteca de cliente .net do Azure ad Graph, confira [bibliotecas de clientes .net](migrate-azure-ad-graph-client-libraries.md) para obter estratégias e assistência mais específicas para mover para a biblioteca de cliente .net do Microsoft Graph.
+> **OBSERVAÇÃO**: se você estiver usando a biblioteca de clientes do Azure AD Graph .NET, consulte Bibliotecas de clientes [.NET](migrate-azure-ad-graph-client-libraries.md) para obter estratégias e assistência mais específicas para mover para a biblioteca de clientes do Microsoft Graph .NET.
 
-### <a name="key-identifiers-objectid-vs-id"></a>Identificadores de chave: objectId vs ID
+### <a name="key-identifiers-objectid-vs-id"></a>Identificadores de chave: objectId vs id
 
-No gráfico do Azure AD, todos os tipos de recursos de entidade têm um identificador (ou chave) exclusivo chamado **ObjectID**.  Para a maior parte (salvo indicação em contrário) esse mesmo identificador é chamado de **ID** no Microsoft Graph.
+No Azure AD Graph, todos os tipos de recursos de entidade têm um identificador exclusivo (ou chave) chamado **objectId**.  Na maioria das partes (a menos que seja declarado de outra forma), esse mesmo identificador é chamado **de id** no Microsoft Graph.
 
-## <a name="default-properties-and-select"></a>Propriedades e $select padrão
+## <a name="default-properties-and-select"></a>Propriedades padrão e $select
 
-Use o `$select` parâmetro de consulta, em solicitações GET, para personalizar a resposta para incluir todas as propriedades exigidas pelo seu aplicativo.
+Use o parâmetro de consulta, em solicitações GET, para personalizar a resposta para incluir todas as `$select` propriedades que seu aplicativo exige.
 
-As operações de **obtenção** ou **lista** do Microsoft Graph para recursos de usuário ou grupo retornam apenas um subconjunto de todas as propriedades, conhecidas como _propriedades padrão_. As propriedades padrão representam as propriedades mais comumente usadas para um recurso. Por outro lado, o Azure AD Graph retorna o conjunto completo de todas as propriedades do respectivo recurso.
+O Microsoft Graph **obter** ou **listar** operações para recursos de usuário ou grupo retorna apenas um subconjunto de todas as propriedades, conhecidas como _as propriedades padrão_. As propriedades padrão representam as propriedades mais comumente usadas para um recurso. Por outro lado, o Azure AD Graph retorna o conjunto completo de todas as propriedades do respectivo recurso.
 
-Para obter outras propriedades na v 1.0, seu aplicativo precisa solicitá-las explicitamente, usando o `$select` parâmetro de consulta. Isso inclui todas as extensões de esquema de diretório que o aplicativo pode estar usando. É uma prática recomendada solicitar apenas as propriedades que seu aplicativo realmente precisa.
+Para obter outras propriedades em v1.0, seu aplicativo precisa solicitá-las explicitamente, usando o `$select` parâmetro de consulta. Isso inclui qualquer extensão de esquema de diretório que seu aplicativo possa estar usando. É uma prática prática só solicitar as propriedades que seu aplicativo realmente precisa.
 
-Para ilustrar a diferença, use o explorador do Graph para executar as seguintes solicitações e comparar as diferentes respostas.
+Para ilustrar a diferença, use o Graph Explorer para executar as seguintes solicitações e comparar as diferentes respostas.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/
 GET https://graph.microsoft.com/beta/me/
 ```
 
-Revise as respostas de cada consulta. Você notará que as informações de endereço são retornadas pela versão/beta, mas não pela versão/v1.0.  Isso ocorre porque as propriedades address não estão no conjunto de propriedades padrão.
+Revise as respostas de cada consulta. Você notará que as informações de endereço são retornadas pela versão /beta, mas não pela versão /v1.0.  Isso porque as propriedades de endereço não estão no conjunto de propriedades padrão.
 
-Se seu aplicativo depende das propriedades de endereço, você precisa atualizar suas solicitações v 1.0 para incluir o parâmetro de `$select` consulta:
+Se o aplicativo se basear nas propriedades de endereço, você precisará atualizar suas solicitações v1.0 para incluir o `$select` parâmetro de consulta:
 
 ```http
 https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,state,postalCode
 ```
 
-A resposta para esta solicitação incluiria as propriedades de endereço.  Ele também inclui a propriedade **DisplayName** , mas somente porque foi especificado pelo parâmetro de consulta.
+A resposta para essa solicitação incluiria as propriedades de endereço.  Ele também inclui a **propriedade displayName,** mas somente porque foi especificada pelo parâmetro de consulta.
 
-Saiba mais sobre:
+Para saber mais sobre:
 
-- Propriedades padrão no usuário, consulte [usuários](/graph/api/resources/users?view=graph-rest-1.0)
-- O `$select` parâmetro e outros parâmetros de consulta ODATA suportados, confira [usar parâmetros de consulta para personalizar respostas](./query-parameters.md).
-- Esta e outras otimizações recomendadas, consulte [práticas recomendadas](./best-practices-concept.md).
+- Propriedades padrão no usuário, consulte [users](/graph/api/resources/users?view=graph-rest-1.0)
+- O parâmetro e outros parâmetros de consulta ODATA com `$select` suporte, consulte [Use query parameters to customize responses](./query-parameters.md).
+- Esta e outras otimizações recomendadas, consulte [Práticas recomendadas.](./best-practices-concept.md)
 
-## <a name="relationships-and-navigation-properties"></a>Propriedades de relações e navegação
+## <a name="relationships-and-navigation-properties"></a>Relações e propriedades de navegação
 
-Relações (ou propriedades de navegação) são um conceito importante no gráfico do Azure AD e no Microsoft Graph, criando uma rede de recursos relacionados. Por exemplo, as propriedades **Manager** e **DirectReports** estendem o recurso User para fornecer a hierarquia organizacional.
+As relações (ou propriedades de navegação) são um conceito-chave no Azure AD Graph e no Microsoft Graph, criando uma rede de recursos relacionados. Por exemplo, as **propriedades manager** e **directReports** estendem o recurso do usuário para fornecer hierarquia organizacional.
 
-As relações também definem associações, como os grupos aos quais um usuário pertence, os membros que pertencem a um grupo ou uma função de diretório e assim por diante.
+As relações também definem associações, como os grupos aos quais um usuário pertence, os membros pertencentes a um grupo ou a uma função de diretório e assim por diante.
 
-As solicitações do Azure AD Graph usam `$link` para indicar relações entre recursos.  No Microsoft Graph, isso usa a `$ref` notação ODATA 4, 1 em vez disso.
+As solicitações do Azure AD Graph `$link` são usadas para indicar relações entre recursos.  No Microsoft Graph, isso usa a notação ODATA 4.01. `$ref`
 
 A tabela a seguir mostra vários exemplos:
 
-| Tarefas | Azure AD Graph. | Microsoft Graph |
+| Tarefa | Azure AD Graph. | Microsoft Graph |
 |------|----------------|-----------------|
 | Adicionar membro        | ```POST /groups/{id}/$link/members```        | ```POST /groups/{id}/members/$ref```        |
 | Listar links de membros | ```GET /groups/{id}/$link/members```         | ```GET /groups/{id}/members/$ref```         |
 | Listar membros      | ```GET /groups/{id}/members```                | ```GET /groups/{id}/members```               |
 | Remover membro     | ```DELETE /groups/{id}/$link/members/{id}``` | ```DELETE /groups/{id}/members/{id}/$ref``` |
 
-Ao migrar seus aplicativos para o Microsoft Graph, procure solicitações que usam `$link` para associar recursos; altere-os para usar `$ref` em vez disso.
+Ao migrar seus aplicativos para o Microsoft Graph, procure solicitações que usam para associar `$link` recursos; altere-os para `$ref` usar.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Saiba mais sobre as [diferenças de recursos de serviço](migrate-azure-ad-graph-feature-differences.md) entre o Azure ad Graph e o Microsoft Graph.
+- Saiba mais [sobre as diferenças de](migrate-azure-ad-graph-feature-differences.md) recursos de serviço entre o Azure AD Graph e o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

@@ -1,36 +1,36 @@
 ---
 title: 'orgContact: getMemberGroups'
-description: Retornar todos os grupos dos quais o contato organizacional é membro.
+description: Retorne todos os grupos dos que o contato organizacional é membro.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e2d4a591a1bc200eb96248fbeed1630fe4d22def
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7fc8f9a62656cace7a4dd3e02182a8a2bc454464
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077741"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761643"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 
 Namespace: microsoft.graph
 
-Retornar todos os grupos dos quais o [contato organizacional](../resources/orgcontact.md) é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação **member**, que retorna somente os grupos dos quais o usuário é membro direto.
+Retorne todos os grupos dos que o [contato organizacional](../resources/orgcontact.md) é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação **member**, que retorna somente os grupos dos quais o usuário é membro direto.
 
-Essa função suporta o Microsoft 365 e outros tipos de grupos provisionados no Azure Active Directory (Azure AD). O número máximo de grupos que cada solicitação pode retornar é 2046. 
+Esta função dá suporte ao Microsoft 365 e a outros tipos de grupos provisionados no Azure Active Directory (Azure AD). O número máximo de grupos que cada solicitação pode retornar é 2046. 
 
 >[!NOTE]
 >Os grupos do Microsoft 365 não podem conter grupos. A associação a um grupo do Microsoft 365 é sempre direta.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | OrgContact. Read. All e Group. Read. All, Directory. Read. All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | OrgContact. Read. All e Group. Read. All, Directory. Read. All |
+|Delegada (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Booliano|Definido como `false` . Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
+|securityEnabledOnly|Booliano|Definir como `false` . Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
 
 ## <a name="response"></a>Resposta
 

@@ -1,24 +1,24 @@
 ---
-title: 'aplicativo: setVerifiedPublisher'
+title: 'application: setVerifiedPublisher'
 description: Definir o distribuidor verificado de um aplicativo.
 localization_priority: Normal
 author: jesakowi
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3aa6156ca95e1d75376ac24be9883aa0ed3db04e
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: d3c66c064cc2628141abe7029fa9fe5121f86a20
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634575"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760655"
 ---
-# <a name="application-setverifiedpublisher"></a>aplicativo: setVerifiedPublisher
+# <a name="application-setverifiedpublisher"></a>application: setVerifiedPublisher
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Definir o [verifiedPublisher](../resources/verifiedPublisher.md) em um [aplicativo](../resources/application.md). Para obter mais informações, incluindo pré-requisitos para definir um editor verificado, confira [verificação do Publisher](/azure/active-directory/develop/publisher-verification-overview).
+De definir [o verificadoPublisher em](../resources/verifiedPublisher.md) um [aplicativo](../resources/application.md). Para obter mais informações, incluindo pré-requisitos para definir um editor verificado, consulte [Verificação do Publisher](/azure/active-directory/develop/publisher-verification-overview).
 
 ## <a name="permissions"></a>Permissões
 
@@ -45,11 +45,11 @@ POST /applications/{id}/setVerifiedPublisher
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça as seguintes propriedades obrigatórias.
+No corpo da solicitação, forneça as seguintes propriedades necessárias.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| verifiedPublisherId | string | O MPNID (Microsoft Partner Network ID) do editor verificado a ser definido no aplicativo, na conta do centro de parceiros do Publisher. |
+| verifiedPublisherId | cadeia de caracteres | A ID da Rede de Parceiros da Microsoft (MPNID) do editor verificado a ser definida no aplicativo, a partir da conta do Partner Center do editor. |
 
 ## <a name="response"></a>Resposta
 

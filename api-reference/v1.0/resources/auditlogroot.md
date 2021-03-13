@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso auditLogRoot
-description: Contém diferentes tipos de logs de auditoria. Esses recursos retornam um recurso singleton auditLog. Ele não contém propriedades utilizáveis.
+title: Tipo de recurso auditLogRoot
+description: Contém diferentes tipos de logs de auditoria. Esses recursos retornam um recurso singleton auditLog. Ele não contém propriedades usáveis.
 author: dhanyahk
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 86ecd0e7721ad804174359baf19bfde7a3230c16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 363d3a0c3aafbbd5b3d53914748dfdb1fd432b1b
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009447"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50759724"
 ---
-# <a name="auditlogroot-resource-type"></a>tipo de recurso auditLogRoot
+# <a name="auditlogroot-resource-type"></a>Tipo de recurso auditLogRoot
 
 Namespace: microsoft.graph
 
-Contém diferentes tipos de logs de auditoria. Esses recursos retornam um recurso singleton auditLog. Ele não contém propriedades utilizáveis.
+Contém diferentes tipos de logs de auditoria. Esses recursos retornam um recurso singleton auditLog. Ele não contém propriedades usáveis.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -35,8 +35,8 @@ Nenhum.
 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|directoryAudits|coleção [directoryAudit](directoryaudit.md)| Somente leitura. Anulável.|
-|signIns|coleção de [entrada](signin.md)| Somente leitura. Anulável.|
+|directoryAudits|[Coleção directoryAudit](directoryaudit.md)| Somente leitura. Anulável.|
+|signIns|[Coleção signIn](signin.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

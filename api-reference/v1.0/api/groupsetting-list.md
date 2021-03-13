@@ -1,24 +1,24 @@
 ---
-title: Configurações de grupo de lista
+title: Listar configurações de grupo
 description: Recupere uma lista de objetos de configuração de grupo.
 author: yyuank
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5ea98dc5d7fd2db802fb7b27e0e9536ef0830bcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6db805374ce4783ff9d339f128efd7bc416ab161
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973383"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761308"
 ---
-# <a name="list-group-settings"></a>Configurações de grupo de lista
+# <a name="list-group-settings"></a>Listar configurações de grupo
 
 Namespace: microsoft.graph
 
 Recupere uma lista de objetos de configuração de grupo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 
-Listar configurações de todo o locatário ou grupo.
+Listar configurações de grupo ou de locatários.
 
 ```http
 GET /groupSettings
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [groupSetting](../resources/groupsetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [groupSetting](../resources/groupsetting.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação

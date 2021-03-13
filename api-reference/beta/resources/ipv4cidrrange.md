@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso iPv4CidrRange
+title: Tipo de recurso iPv4CidrRange
 description: Representa um intervalo IPv4 usando a notação CIDR.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: def441d29abd5bc2a05dcd24adc4148870fb7a65
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6251c06678c811a4553cdc28a76422d75d494284
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988944"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50760711"
 ---
-# <a name="ipv4cidrrange-resource-type"></a>tipo de recurso iPv4CidrRange
+# <a name="ipv4cidrrange-resource-type"></a>Tipo de recurso iPv4CidrRange
 
 Namespace: microsoft.graph
 
@@ -26,7 +26,7 @@ Herda de [ipRange](../resources/iprange.md)
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|cidrAddress|String|Endereço IPv4 em notação CIDR|
+|cidrAddress|String|Endereço IPv4 na notação CIDR|
 
 ## <a name="json-representation"></a>Representação JSON
 

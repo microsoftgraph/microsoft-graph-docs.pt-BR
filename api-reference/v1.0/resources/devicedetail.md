@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso deviceDetail
-description: Indica os detalhes do dispositivo associados a um dispositivo usado para entrar. Isso inclui informações como navegador de dispositivos e sistema operacional e se o dispositivo é gerenciado pelo Azure AD.
+title: Tipo de recurso deviceDetail
+description: Indica os detalhes do dispositivo associados a um dispositivo usado para entrar. Isso inclui informações como navegador de dispositivo e sistema operacional e se o dispositivo é gerenciado pelo Azure AD.
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3a756df15be02544f843e6176677f26ea7e95678
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c48724a12f7cb29de74a965c1cbb06a44498d26
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018698"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761209"
 ---
-# <a name="devicedetail-resource-type"></a>tipo de recurso deviceDetail
+# <a name="devicedetail-resource-type"></a>Tipo de recurso deviceDetail
 
 Namespace: microsoft.graph
 
-Indica os detalhes do dispositivo associados a um dispositivo usado para entrar. Isso inclui informações como navegador de dispositivos e sistema operacional e se o dispositivo é gerenciado pelo Azure AD.
+Indica os detalhes do dispositivo associados a um dispositivo usado para entrar. Isso inclui informações como navegador de dispositivo e sistema operacional e se o dispositivo é gerenciado pelo Azure AD.
 
 ## <a name="properties"></a>Propriedades
 
@@ -25,10 +25,10 @@ Indica os detalhes do dispositivo associados a um dispositivo usado para entrar.
 |Navegador|String|Indica as informações do navegador do usado para entrar.|
 |deviceId|Cadeia de caracteres|Refere-se ao UniqueID do dispositivo usado para entrar.|
 |displayName|String|Refere-se ao nome do dispositivo usado para entrar.|
-|isCompliant|Booliano|Indica se o dispositivo está em conformidade.|
+|isCompliant|Booliano|Indica se o dispositivo é compatível.|
 |isManaged|Booliano|Indica se o dispositivo é gerenciado.|
-|operatingSystem|String|Indica o nome do sistema operacional e a versão usada para entrar.|
-|trustType|String|Fornece informações sobre se o dispositivo conectado é um local de trabalho associado, AzureAD Unido, ingresso no domínio. |
+|operatingSystem|String|Indica o nome e a versão do sistema operacional usados para entrar.|
+|trustType|String|Fornece informações sobre se o dispositivo conectado é Workplace Joined, AzureAD Joined, Domain Joined. |
 
 ## <a name="json-representation"></a>Representação JSON
 

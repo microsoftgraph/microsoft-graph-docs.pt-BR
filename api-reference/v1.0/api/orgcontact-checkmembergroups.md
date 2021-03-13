@@ -1,24 +1,24 @@
 ---
 title: 'orgContact: checkMemberGroups'
-description: Verifique se há associação na lista de grupos especificada. Retorna da lista as identificações de grupo das quais o contato organizacional tem uma associação direta ou transitiva.
+description: Verifique se há associação na lista de grupos especificada. Retorna da lista as IDs de grupo das quais o contato organizacional tem uma associação direta ou transitiva.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fb91b50b49aca27f75f38586517e118dc0850ee9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5bdafc5ecaf7e2f95017267bf35ff140994bfb1d
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063006"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761357"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact: checkMemberGroups
 
 Namespace: microsoft.graph
 
-Verifique se há associação na lista de grupos especificada. Retorna da lista as identificações de grupo das quais o [contato organizacional](../resources/orgcontact.md) tem uma associação direta ou transitiva.
+Verifique se há associação na lista de grupos especificada. Retorna da lista as IDs de grupo das quais o contato [organizacional](../resources/orgcontact.md) tem uma associação direta ou transitiva.
 
-Você pode verificar até um máximo de 20 grupos por solicitação. Essa função suporta o Microsoft 365 e outros tipos de grupos provisionados no Azure Active Directory (Azure AD).
+Você pode fazer check-up de no máximo 20 grupos por solicitação. Esta função dá suporte ao Microsoft 365 e a outros tipos de grupos provisionados no Azure Active Directory (Azure AD).
 
 >[!NOTE]
 >Os grupos do Microsoft 365 não podem conter grupos. A associação a um grupo do Microsoft 365 é sempre direta.
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | OrgContact. Read. All e Group. Read. All, Directory. Read. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | OrgContact. Read. All e Group. Read. All, Directory. Read. All |
+|Delegada (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -50,11 +50,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|groupIds|Coleção de cadeias de caracteres | Uma lista de IDs de grupo para verificar. |
+|groupIds|Coleção de cadeias de caracteres | Uma lista de IDs de grupo a verificar. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção String no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto da coleção de cadeias de caracteres no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
