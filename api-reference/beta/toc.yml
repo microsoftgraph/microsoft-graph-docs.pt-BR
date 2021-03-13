@@ -321,7 +321,7 @@ items:
                 href: api/user-list-memberof.md
               - name: Listar membro transitivo de
                 href: api/user-list-transitivememberof.md
-          - name: Insights
+          - name: Percepções
             items:
               - name: Insights de item
                 href: resources/iteminsights.md
@@ -473,6 +473,10 @@ items:
                 href: api/userteamwork-delete-installedapps.md
               - name: Obter chat entre o usuário e o aplicativo
                 href: api/userscopeteamsappinstallation-get-chat.md
+              - name: Obter chat para o usuário
+                href: api/chat-get.md
+              - name: Listar chats para usuário
+                href: api/chat-list.md
           - name: Tarefas pendentes
             items:
               - name: Tarefa
@@ -1479,7 +1483,7 @@ items:
                     href: api/ediscovery-custodian-update.md
                   - name: Ativar
                     href: api/ediscovery-custodian-activate.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/ediscovery-custodian-release.md
               - name: Retenção legal
                 href: resources/ediscovery-legalhold.md
@@ -11168,6 +11172,20 @@ items:
                         href: api/connectedorganization-delete-externalsponsors.md
                       - name: Remover patrocinadores internos
                         href: api/connectedorganization-delete-internalsponsors.md
+                  - name: Aprovação
+                    href: resources/approval.md
+                    items:
+                      - name: Obter
+                        href: api/approval-get.md
+                  - name: Etapa de aprovação
+                    href: resources/approvalstep.md
+                    items:
+                      - name: Lista
+                        href: api/approval-list-steps.md
+                      - name: Obter
+                        href: api/approvalstep-get.md
+                      - name: Atualizar
+                        href: api/approvalstep-update.md
                   - name: Configurações de gerenciamento de direitos
                     href: resources/entitlementmanagementsettings.md
                     items:
@@ -11897,7 +11915,7 @@ items:
                 href: api/profilecardproperty-update.md
               - name: Excluir
                 href: api/profilecardproperty-delete.md
-          - name: Insights
+          - name: Percepções
             href: resources/iteminsights.md
             items:
               - name: Insights de item
@@ -13273,7 +13291,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefas
+          - name: Tarefa
             href: resources/todotask.md
             items:
               - name: Listar tarefas

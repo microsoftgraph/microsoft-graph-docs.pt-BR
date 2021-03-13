@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b44fc0c9d215473313a5228cd3dde5ac2755e21d
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 134b163cd5b113a7b08c3ad8e0a5d2d755cd02eb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689765"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775679"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var teamsAppInstallation = new TeamsAppInstallation
     }
 };
 
-await graphClient.Chats["19:ea28e88c00e94c7786b065394a61f296@thread.v2"].InstalledApps
+await graphClient.Chats["{chat-id}"].InstalledApps
     .Request()
     .AddAsync(teamsAppInstallation);
 
