@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 098e967c3ced9f611448cb2833a2558ff03f2c5d
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 3dc8721a190a2dbfc0248f456740190cb82cdca9
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932603"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795985"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var queryOptions = new List<QueryOption>()
     new QueryOption("expand", "children")
 };
 
-var driveItem = await graphClient.Drive.Items["{bundle-id}"]
+var driveItem = await graphClient.Drive.Items["{driveItem-id}"]
     .Request( queryOptions )
     .GetAsync();
 

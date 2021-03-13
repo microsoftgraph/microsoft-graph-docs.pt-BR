@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1f0410e4e859fa47ef79dbd728ad76fb9a5ac97c
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: dbed0585c84d3dc09c0ede82030861056b90b054
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44683885"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50788470"
 ---
 ```csharp
 
@@ -113,7 +113,7 @@ var bookingStaffMember = new BookingStaffMember
     }
 };
 
-await graphClient.BookingBusinesses["{id}"].StaffMembers
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].StaffMembers
     .Request()
     .AddAsync(bookingStaffMember);
 
