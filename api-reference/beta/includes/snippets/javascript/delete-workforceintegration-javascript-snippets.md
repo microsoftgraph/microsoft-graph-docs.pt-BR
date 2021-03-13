@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e070d1cc02bdbd4e193635c410d32a6a1de5373f
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 0d3411fc4c080381120879440a4319973c633937
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44219203"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803012"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teamwork/workforceIntegrations/{workforceIntegrationId}')
+await client.api('/teamwork/workforceIntegrations/{workforceIntegrationId}')
     .version('beta')
     .delete();
 
