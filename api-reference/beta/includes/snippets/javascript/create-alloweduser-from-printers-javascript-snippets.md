@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 0e17417db29d93cbf2bb2c8a04dbf42e43159086
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 0920befbd44ce6c8aaf94592e08393dcae201da3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49692789"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50779553"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const user = {
-  @odata.id: "https://graph.microsoft.com/beta/users/{id}"
+  '@odata.id': 'https://graph.microsoft.com/beta/users/{id}'
 };
 
-let res = await client.api('/print/shares/{id}/allowedUsers/$ref')
+await client.api('/print/shares/{id}/allowedUsers/$ref')
     .version('beta')
     .post(user);
 
