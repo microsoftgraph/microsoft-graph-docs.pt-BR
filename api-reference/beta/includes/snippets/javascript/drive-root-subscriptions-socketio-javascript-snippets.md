@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8dfa0be5e8ddbe891c98fe8b80a3816caf6bd9df
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: a222956b232bc71ba6c390624464f04559dd6ebf
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48605510"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50785108"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/root/subscriptions/socketIo')
+let subscription = await client.api('/me/drive/root/subscriptions/socketIo')
     .version('beta')
     .get();
 

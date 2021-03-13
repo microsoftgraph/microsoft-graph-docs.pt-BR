@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 381409ec053f918f5c473633aec237281cb4a8ff
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 46b7b3b57fa2e40215a084c93eb1d8718a510abd
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636258"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50800147"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const subscription = {
-   expirationDateTime:"2016-11-22T18:23:45.9356913Z"
+   expirationDateTime: '2016-11-22T18:23:45.9356913Z'
 };
 
-let res = await client.api('/subscriptions/{id}')
+await client.api('/subscriptions/{id}')
     .version('beta')
     .update(subscription);
 

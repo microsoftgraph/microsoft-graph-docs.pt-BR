@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6d2488ce8ef0a8e0afd944ab044c0c981be38d5c
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: e175406324462b7e08922a2fdf473230a584c1ed
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48608838"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50800397"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailFolders/searchfolders/childFolders')
+let childFolders = await client.api('/me/mailFolders/searchfolders/childFolders')
     .version('beta')
     .get();
 
