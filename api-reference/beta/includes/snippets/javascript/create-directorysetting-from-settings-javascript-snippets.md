@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5f4403fc32a893781bc53708d0a84056629ec5bf
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: c09d067c1fe39dc245f4105d0ad7ad4b402eec10
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636114"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50783300"
 ---
 ```javascript
 
@@ -16,16 +16,16 @@ const options = {
 const client = Client.init(options);
 
 const directorySetting = {
-  templateId: "templateId-value",
+  templateId: 'templateId-value',
   values: [
     {
-      name: "name-value",
-      value: "value-value"
+      name: 'name-value',
+      value: 'value-value'
     }
   ]
 };
 
-let res = await client.api('/settings')
+await client.api('/settings')
     .version('beta')
     .post(directorySetting);
 

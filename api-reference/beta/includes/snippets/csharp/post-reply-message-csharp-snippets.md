@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ea6d8b793d7d381a3523a67bffc217a74cff20cd
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 3a5b0fe1a8019d8b86b764830b3d46e7f0fcf063
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620619"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50793519"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var chatMessage = new ChatMessage
     }
 };
 
-await graphClient.Teams["{id}"].Channels["{id}"].Messages["{id}"].Replies
+await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"].Replies
     .Request()
     .AddAsync(chatMessage);
 
