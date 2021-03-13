@@ -1,11 +1,11 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
-ms.openlocfilehash: 5bd1f71c29b44c6443d60c9b0fc1a24ee84847f3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: b70e6a85679bc9e2f111c8c42cbba9b1d4cb9c5d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221993"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781103"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/pendingAccessReviewInstances')
+let pendingAccessReviewInstances = await client.api('/me/pendingAccessReviewInstances')
     .version('beta')
     .expand('definition')
     .skip(0)

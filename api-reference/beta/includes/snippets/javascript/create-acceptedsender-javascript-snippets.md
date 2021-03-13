@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4441e1b166ed6a14e57ada029aee1a7e18cfcd5b
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 3937e3591a82768e405f363f83d726590443af37
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636079"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781274"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const directoryObject = {
-  @odata.id:"https://graph.microsoft.com/beta/users/alexd@contoso.com"
+  '@odata.id':'https://graph.microsoft.com/beta/users/alexd@contoso.com'
 };
 
-let res = await client.api('/groups/{id}/acceptedSenders/$ref')
+await client.api('/groups/{id}/acceptedSenders/$ref')
     .version('beta')
     .post(directoryObject);
 
