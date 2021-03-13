@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1d58341adad144b0aa9b512cb8caf10b583d0c50
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: a6cd572e40130f6d195b9b4af2f3c613597645ee
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636245"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781940"
 ---
 ```javascript
 
@@ -17,16 +17,16 @@ const client = Client.init(options);
 
 const orgContact = {
   businessPhones: [
-    "businessPhones-value"
+    'businessPhones-value'
   ],
-  city: "city-value",
-  companyName: "companyName-value",
-  country: "country-value",
-  department: "department-value",
-  displayName: "displayName-value"
+  city: 'city-value',
+  companyName: 'companyName-value',
+  country: 'country-value',
+  department: 'department-value',
+  displayName: 'displayName-value'
 };
 
-let res = await client.api('/contacts/{id}')
+await client.api('/contacts/{id}')
     .version('beta')
     .update(orgContact);
 

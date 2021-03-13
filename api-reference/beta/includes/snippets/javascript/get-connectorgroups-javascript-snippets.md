@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2f83214f9b6baf73a692ff8810930f919020ddcf
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 6dabe5ca78230b93a61e7b88b1d5f79ac6dfe87d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681318"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791068"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/onPremisesPublishingProfiles/applicationProxy/connectorGroups')
+let connectorGroups = await client.api('/onPremisesPublishingProfiles/applicationProxy/connectorGroups')
     .version('beta')
     .get();
 
