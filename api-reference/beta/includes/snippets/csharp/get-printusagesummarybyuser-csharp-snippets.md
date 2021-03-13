@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: abd20deed7e70ec485b30032d8b328a08db99dca
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c705533ae4b7aaa483e48eb7f205119c77276c5f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441388"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798246"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var printUsageByUser = await graphClient.Print.Reports.DailyPrintUsageSummariesByUser["{id}"]
+var printUsageByUser = await graphClient.Print.Reports.DailyPrintUsageSummariesByUser["{printUsageByUser-id}"]
     .Request()
     .GetAsync();
 

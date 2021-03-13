@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c8deee373a7f4bdd18344219cd2fe678cc235289
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: ffa8430a5dd17c574ab1ee52e762460a680b2020
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50274708"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50780493"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const organizationalBrandingLocalization = {
-    backgroundColor:"#00000F",
-    id: "fr"
+    backgroundColor: '#00000F',
+    id: 'fr'
 };
 
-let res = await client.api('/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations')
+await client.api('/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations')
     .version('beta')
     .post(organizationalBrandingLocalization);
 
