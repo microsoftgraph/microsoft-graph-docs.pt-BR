@@ -5,32 +5,32 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7dd7cf1c261565407962f5b7034a469dd7aff4e8
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 547cde8d31870fcc2b0d73c1021f5628ce74c19b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516907"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50776918"
 ---
-# <a name="get-printer"></a><span data-ttu-id="a61d7-103">Obter impressora</span><span class="sxs-lookup"><span data-stu-id="a61d7-103">Get printer</span></span>
-<span data-ttu-id="a61d7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a61d7-104">Namespace: microsoft.graph</span></span>
+# <a name="get-printer"></a><span data-ttu-id="17b14-103">Obter impressora</span><span class="sxs-lookup"><span data-stu-id="17b14-103">Get printer</span></span>
+<span data-ttu-id="17b14-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="17b14-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
-<span data-ttu-id="a61d7-105">Recupere as propriedades e as relações de um [objeto printer.](../resources/printer.md)</span><span class="sxs-lookup"><span data-stu-id="a61d7-105">Retrieve the properties and relationships of a [printer](../resources/printer.md) object.</span></span>
+<span data-ttu-id="17b14-105">Recupere as propriedades e as relações de um [objeto printer.](../resources/printer.md)</span><span class="sxs-lookup"><span data-stu-id="17b14-105">Retrieve the properties and relationships of a [printer](../resources/printer.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a61d7-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a61d7-106">Permissions</span></span>
-<span data-ttu-id="a61d7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a61d7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="17b14-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="17b14-106">Permissions</span></span>
+<span data-ttu-id="17b14-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="17b14-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="a61d7-109">Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="a61d7-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="a61d7-110">O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)</span><span class="sxs-lookup"><span data-stu-id="a61d7-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="17b14-109">Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="17b14-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="17b14-110">O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)</span><span class="sxs-lookup"><span data-stu-id="17b14-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="a61d7-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a61d7-111">Permission type</span></span> | <span data-ttu-id="a61d7-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a61d7-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="17b14-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="17b14-111">Permission type</span></span> | <span data-ttu-id="17b14-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="17b14-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="a61d7-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a61d7-113">Delegated (work or school account)</span></span>| <span data-ttu-id="a61d7-114">Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="a61d7-114">Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All</span></span> |
-|<span data-ttu-id="a61d7-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a61d7-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a61d7-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a61d7-116">Not Supported.</span></span>|
-|<span data-ttu-id="a61d7-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a61d7-117">Application</span></span>| <span data-ttu-id="a61d7-118">Printer.Read.All, Printer.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a61d7-118">Printer.Read.All, Printer.ReadWrite.All</span></span> |
+|<span data-ttu-id="17b14-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="17b14-113">Delegated (work or school account)</span></span>| <span data-ttu-id="17b14-114">Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="17b14-114">Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All</span></span> |
+|<span data-ttu-id="17b14-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="17b14-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="17b14-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="17b14-116">Not Supported.</span></span>|
+|<span data-ttu-id="17b14-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="17b14-117">Application</span></span>| <span data-ttu-id="17b14-118">Printer.Read.All, Printer.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="17b14-118">Printer.Read.All, Printer.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a61d7-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a61d7-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="17b14-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="17b14-119">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,31 +41,33 @@ GET /print/printers/{id}
 GET /print/shares/{id}/printer
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="a61d7-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a61d7-120">Optional query parameters</span></span>
-<span data-ttu-id="a61d7-121">Este método dá suporte a alguns dos parâmetros de consulta OData, incluindo `$select` e , para ajudar a personalizar a `$expand` resposta.</span><span class="sxs-lookup"><span data-stu-id="a61d7-121">This method supports some of the OData query parameters, including `$select` and `$expand`, to help customize the response.</span></span> <span data-ttu-id="a61d7-122">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="a61d7-122">For example:</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="17b14-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="17b14-120">Optional query parameters</span></span>
+<span data-ttu-id="17b14-121">Este método dá suporte a alguns dos parâmetros de consulta OData, incluindo `$select` e , para ajudar a personalizar a `$expand` resposta.</span><span class="sxs-lookup"><span data-stu-id="17b14-121">This method supports some of the OData query parameters, including `$select` and `$expand`, to help customize the response.</span></span> <span data-ttu-id="17b14-122">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="17b14-122">For example:</span></span>
 
 ```http
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
-<span data-ttu-id="a61d7-123">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="a61d7-123">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="17b14-123">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="17b14-123">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a61d7-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a61d7-124">Request headers</span></span>
-|<span data-ttu-id="a61d7-125">Nome</span><span class="sxs-lookup"><span data-stu-id="a61d7-125">Name</span></span>|<span data-ttu-id="a61d7-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="a61d7-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="17b14-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="17b14-124">Request headers</span></span>
+|<span data-ttu-id="17b14-125">Nome</span><span class="sxs-lookup"><span data-stu-id="17b14-125">Name</span></span>|<span data-ttu-id="17b14-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="17b14-126">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="a61d7-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="a61d7-127">Authorization</span></span>|<span data-ttu-id="a61d7-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a61d7-p104">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="17b14-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="17b14-127">Authorization</span></span>|<span data-ttu-id="17b14-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="17b14-p104">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a61d7-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a61d7-130">Request body</span></span>
-<span data-ttu-id="a61d7-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a61d7-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="17b14-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="17b14-130">Request body</span></span>
+<span data-ttu-id="17b14-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="17b14-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a61d7-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="a61d7-132">Response</span></span>
-<span data-ttu-id="a61d7-133">Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printer](../resources/printer.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a61d7-133">If successful, this method returns a `200 OK` response code and a [printer](../resources/printer.md) object in the response body.</span></span>
-<span data-ttu-id="a61d7-134">Por padrão, a resposta não conterá [printerCapabilities](../resources/printerCapabilities.md).</span><span class="sxs-lookup"><span data-stu-id="a61d7-134">By default, the response will not contain [printerCapabilities](../resources/printerCapabilities.md).</span></span> <span data-ttu-id="a61d7-135">Para obter **printerCapabilities**, use `$select` o parâmetro de consulta.</span><span class="sxs-lookup"><span data-stu-id="a61d7-135">To get **printerCapabilities**, use the `$select` query parameter.</span></span> 
+## <a name="response"></a><span data-ttu-id="17b14-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="17b14-132">Response</span></span>
+<span data-ttu-id="17b14-133">Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printer](../resources/printer.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="17b14-133">If successful, this method returns a `200 OK` response code and a [printer](../resources/printer.md) object in the response body.</span></span>
+<span data-ttu-id="17b14-134">Por padrão, a resposta não conterá [printerCapabilities](../resources/printerCapabilities.md).</span><span class="sxs-lookup"><span data-stu-id="17b14-134">By default, the response will not contain [printerCapabilities](../resources/printerCapabilities.md).</span></span> <span data-ttu-id="17b14-135">Para obter **printerCapabilities**, use `$select` o parâmetro de consulta.</span><span class="sxs-lookup"><span data-stu-id="17b14-135">To get **printerCapabilities**, use the `$select` query parameter.</span></span> 
 
-## <a name="examples"></a><span data-ttu-id="a61d7-136">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a61d7-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="17b14-136">Exemplos</span><span class="sxs-lookup"><span data-stu-id="17b14-136">Examples</span></span>
 
-### <a name="example-1-get-a-printer"></a><span data-ttu-id="a61d7-137">Exemplo 1: Obter uma impressora</span><span class="sxs-lookup"><span data-stu-id="a61d7-137">Example 1: Get a printer</span></span>
+### <a name="example-1-get-a-printer"></a><span data-ttu-id="17b14-137">Exemplo 1: Obter uma impressora</span><span class="sxs-lookup"><span data-stu-id="17b14-137">Example 1: Get a printer</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a61d7-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a61d7-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="17b14-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="17b14-138">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="17b14-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="17b14-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printer"
@@ -74,9 +76,27 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ``` http
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
 ```
+# <a name="c"></a>[<span data-ttu-id="17b14-140">C#</span><span class="sxs-lookup"><span data-stu-id="17b14-140">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="a61d7-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="a61d7-139">Response</span></span>
-<span data-ttu-id="a61d7-140">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a61d7-140">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="17b14-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="17b14-141">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="17b14-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="17b14-142">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="17b14-143">Java</span><span class="sxs-lookup"><span data-stu-id="17b14-143">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="17b14-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="17b14-144">Response</span></span>
+<span data-ttu-id="17b14-145">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="17b14-145">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -155,9 +175,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-a-printer-and-its-capabilities"></a><span data-ttu-id="a61d7-141">Exemplo 2: obter uma impressora e seus recursos</span><span class="sxs-lookup"><span data-stu-id="a61d7-141">Example 2: Get a printer and its capabilities</span></span>
+### <a name="example-2-get-a-printer-and-its-capabilities"></a><span data-ttu-id="17b14-146">Exemplo 2: obter uma impressora e seus recursos</span><span class="sxs-lookup"><span data-stu-id="17b14-146">Example 2: Get a printer and its capabilities</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a61d7-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a61d7-142">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="17b14-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="17b14-147">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="17b14-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="17b14-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printer_capabilities"
@@ -166,10 +188,28 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displayName,capabilities
 ```
+# <a name="c"></a>[<span data-ttu-id="17b14-149">C#</span><span class="sxs-lookup"><span data-stu-id="17b14-149">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-capabilities-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="a61d7-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="a61d7-143">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="17b14-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="17b14-150">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printer-capabilities-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="a61d7-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a61d7-144">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="17b14-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="17b14-151">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printer-capabilities-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="17b14-152">Java</span><span class="sxs-lookup"><span data-stu-id="17b14-152">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printer-capabilities-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="17b14-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="17b14-153">Response</span></span>
+
+<span data-ttu-id="17b14-154">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="17b14-154">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
