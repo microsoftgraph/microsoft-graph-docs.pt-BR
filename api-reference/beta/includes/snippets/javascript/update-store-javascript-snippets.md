@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1fb8b554fe5db5a8023d0d6dafc497868a9fe6e4
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 3cc0fe1bfe5de656b6f48222580b2a5114c92014
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565785"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50807542"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const store = {
-  defaultLanguageTag: "en-US"
+  defaultLanguageTag: 'en-US'
 };
 
-let res = await client.api('/termStore')
+await client.api('/termStore')
     .version('beta')
     .update(store);
 

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 06485f8f754d6c3a8ba197bbc2070feaa7fe9739
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: e869ed6d37eb8438687c8d6438a8a436b58a0fe0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059697"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50794313"
 ---
 ```javascript
 
@@ -16,15 +16,15 @@ const options = {
 const client = Client.init(options);
 
 const place = {
-  @odata.type: "microsoft.graph.room",
-  nickname: "Conf Room",
-  building: "1",
-  label: "100",
+  '@odata.type': 'microsoft.graph.room',
+  nickname: 'Conf Room',
+  building: '1',
+  label: '100',
   capacity: 50,
   isWheelChairAccessible: false
 };
 
-let res = await client.api('/places/cf100@contoso.com')
+await client.api('/places/cf100@contoso.com')
     .version('beta')
     .update(place);
 

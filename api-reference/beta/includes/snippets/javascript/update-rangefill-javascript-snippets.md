@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9c35b9412b827a9bd5aa4d054e149a6eab51f6b7
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 908090f634b19b2a9babc15318eb96ebd3e7b170
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636270"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796966"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const workbookRangeFill = {
-  color: "color-value"
+  color: 'color-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/fill')
+await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/fill')
     .version('beta')
     .update(workbookRangeFill);
 

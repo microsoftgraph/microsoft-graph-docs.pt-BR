@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 96940113009965e991c6f78ec8b229f315a456dd
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 179e757dcc970fc1464a5def940fe0d673072cfa
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "36845891"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808297"
 ---
 ```csharp
 
@@ -30,7 +30,7 @@ var timeOff = new TimeOff
     }
 };
 
-await graphClient.Teams["{teamId}"].Schedule.TimesOff
+await graphClient.Teams["{team-id}"].Schedule.TimesOff
     .Request()
     .AddAsync(timeOff);
 

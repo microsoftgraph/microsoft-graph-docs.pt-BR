@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8a9380d51af752691da9f60ccddb0f0c3d5dfbba
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c85144aa5bd41c601446f80cd1ccb70b7c95cb2b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719867"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50805578"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/channels/{id}/messages/delta')
+let delta = await client.api('/teams/{id}/channels/{id}/messages/delta')
     .version('beta')
     .get();
 

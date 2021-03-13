@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b560a66e35ed461038f0190a77fc50efd2ea2083
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7391f98f04b897b2d736f3f307745d958239bcdf
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413255"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50802587"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var plannerPlan = new PlannerPlan
     Title = "title-value"
 };
 
-await graphClient.Planner.Plans["{id}"]
+await graphClient.Planner.Plans["{plannerPlan-id}"]
     .Request()
     .Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
     .UpdateAsync(plannerPlan);

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 861a867c57d37e0237d6ab9d6e0f0f7fab06d2c6
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c219a4d8dd87c8be305d4294a2a02919b7cb5b3b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471059"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50792595"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var authenticationMethodConfiguration = new Fido2AuthenticationMethodConfigurati
     IsAttestationEnforced = true
 };
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["fido2"]
+await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
     .Request()
     .UpdateAsync(authenticationMethodConfiguration);
 

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2d3094d8f23eb96ce9f00dddbc4302cb7142ea3e
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 6225dc4d9447f34457d73f5a4744c5069676c807
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48615764"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50784010"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var tiIndicator = new TiIndicator
     Description = "description-after-update"
 };
 
-await graphClient.Security.TiIndicators["{id}"]
+await graphClient.Security.TiIndicators["{tiIndicator-id}"]
     .Request()
     .Header("Prefer","return=representation")
     .UpdateAsync(tiIndicator);
