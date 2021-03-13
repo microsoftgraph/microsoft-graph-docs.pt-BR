@@ -1,16 +1,16 @@
 ---
 title: Listar chats
 description: Recupere a lista de chats de um usuário.
-author: nkramer
+author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2e366ab960509bba1408bc7b346f89980fc828c4
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 0416a123b0694b3b2ffcd6756334fcf891da0b82
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752889"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775763"
 ---
 # <a name="list-chats"></a>Listar chats
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de [chats](../resources/chat.md) dos quais o usuário faz parte.
+Recupere a lista [de chats](../resources/chat.md) dos que o usuário faz parte.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -41,7 +41,7 @@ GET /chats
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte à `$expand` (somente para a propriedade **Members** ) e `$filter` aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte aos parâmetros de consulta (somente para a propriedade `$expand` **members)** e `$filter` [OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,7 +59,7 @@ Se bem sucedido, esse método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="example"></a>Exemplo
 
-### <a name="example-1-list-all-the-chats"></a>Exemplo 1: listar todos os chats
+### <a name="example-1-list-all-the-chats"></a>Exemplo 1: Listar todos os chats
 
 #### <a name="request"></a>Solicitação
 
@@ -138,7 +138,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-chats-along-with-the-members-of-each-chat"></a>Exemplo 2: listar todos os chats junto com os membros de cada chat
+### <a name="example-2-list-all-the-chats-along-with-the-members-of-each-chat"></a>Exemplo 2: listar todos os chats juntamente com os membros de cada chat
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
@@ -179,7 +179,7 @@ Veja a seguir um exemplo da resposta.
 > [!NOTE]
 > As IDs de associação retornadas pelo servidor devem ser tratadas como cadeias de caracteres opacas. O cliente não deve tentar analisar ou fazer suposições sobre essas IDs do recursos.
 >
-> Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros são apenas do locatário atual.
+> Os resultados da associação podem mapear para usuários de locatários diferentes, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros são apenas do locatário atual.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -315,7 +315,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de uma solicitação que filtrará todos os chats com base no nome de exibição de um membro específico.
+Aqui está um exemplo de uma solicitação que filtrará todos os chats com base no nome de exibição de um membro específico.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

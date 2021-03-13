@@ -309,7 +309,7 @@ items:
                 href: api/user-list-memberof.md
               - name: Listar membro transitivo de
                 href: api/user-list-transitivememberof.md
-          - name: Insights
+          - name: Percepções
             items:
               - name: Insights do Office Graph
                 href: resources/officegraphinsights.md
@@ -429,6 +429,8 @@ items:
                 href: api/userteamwork-delete-installedapps.md
               - name: Obter chat entre o usuário e o aplicativo
                 href: api/userscopeteamsappinstallation-get-chat.md
+              - name: Obter chat para o usuário
+                href: api/chat-get.md
           - name: Tarefas pendentes
             items:
               - name: Tarefa
@@ -5229,6 +5231,25 @@ items:
                 href: api/chatmessage-update.md
               - name: Enviar mensagem
                 href: api/channel-post-message.md
+          - name: Chat
+            href: resources/chat.md
+            items:
+              - name: Criar chat
+                href: api/chat-post.md
+              - name: Obter bate-papo
+                href: api/chat-get.md
+              - name: Atualizar chat
+                href: api/chat-patch.md
+              - name: Listar membros
+                href: api/chat-list-members.md
+              - name: Adicionar membro
+                href: api/chat-post-members.md
+              - name: Obter membro
+                href: api/chat-get-members.md
+              - name: Remover membro
+                href: api/chat-delete-members.md
+              - name: Obter chat entre o usuário e o aplicativo
+                href: api/userscopeteamsappinstallation-get-chat.md
           - name: Mensagem de chat
             href: resources/chatmessage.md
             items:
@@ -5297,6 +5318,18 @@ items:
                     href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: Remover o aplicativo para o usuário
                     href: api/userteamwork-delete-installedapps.md
+              - name: Aplicativo no chat
+                items:
+                  - name: Listar aplicativos no chat
+                    href: api/chat-list-installedapps.md
+                  - name: Adicionar aplicativo no chat
+                    href: api/chat-post-installedapps.md
+                  - name: Obter aplicativo instalado no chat
+                    href: api/chat-get-installedapps.md
+                  - name: Atualizar aplicativo instalado no chat
+                    href: api/chat-teamsappinstallation-upgrade.md
+                  - name: Remover aplicativo do chat
+                    href: api/chat-delete-installedapps.md
           - name: Tab
             href: resources/teamstab.md
             items:
@@ -5312,6 +5345,18 @@ items:
                     href: api/channel-patch-tabs.md
                   - name: Remover guia do canal
                     href: api/channel-delete-tabs.md
+              - name: Guia no chat
+                items:
+                  - name: Listar guias no chat
+                    href: api/chat-list-tabs.md
+                  - name: Adicionar guia ao chat
+                    href: api/chat-post-tabs.md
+                  - name: Obter guia no chat
+                    href: api/chat-get-tabs.md
+                  - name: Guia Atualizar no chat
+                    href: api/chat-patch-tabs.md
+                  - name: Remover guia do chat
+                    href: api/chat-delete-tabs.md
           - name: Calendário
             href: resources/event.md
             items:
@@ -5524,7 +5569,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefas
+          - name: Tarefa
             href: resources/todotask.md
             items:
               - name: Listar tarefas

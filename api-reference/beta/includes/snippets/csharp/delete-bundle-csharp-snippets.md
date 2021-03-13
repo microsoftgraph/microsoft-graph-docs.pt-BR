@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8f59ed646d1e30fa4a4cff6eceeb56fcfeb927e0
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: c9b979832c4cc7a07c555fefff66ba11d741dffb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932590"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50774282"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Drive.Items["{bundle-id}"]
+await graphClient.Drive.Items["{driveItem-id}"]
     .Request()
     .DeleteAsync();
 

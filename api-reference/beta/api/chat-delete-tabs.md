@@ -1,35 +1,35 @@
 ---
-title: Excluir Guia de chat
-description: 'Remover (Desafixar) uma guia do chat especificado. '
-author: nkramer
+title: Excluir guia do chat
+description: 'Remova (desempinar) uma guia do chat especificado. '
+author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f32a1afd3fa23a42fee600d2d3243f70957dde55
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: d2020d0fe097be2a02c5b0fba4c47a0d700ca3ae
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690029"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775882"
 ---
-# <a name="delete-tab-from-chat"></a>Excluir Guia de chat
+# <a name="delete-tab-from-chat"></a>Excluir guia do chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover (Desafixar) uma guia do [chat](../resources/chat.md)especificado. 
+Remover (desempinar) uma guia do [chat especificado](../resources/chat.md). 
 
-> **Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md) , em seguida, efetivamente, a guia será removida da reunião.
+> **Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) então, efetivamente, a guia será removida da reunião.
 
 ## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
+|Aplicativo | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -93,7 +93,7 @@ HTTP/1.1 204 No Content
 ```
 ## <a name="see-also"></a>Confira também
 
-- [Excluir Guia do canal](channel-delete-tabs.md)
+- [Excluir guia do canal](channel-delete-tabs.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

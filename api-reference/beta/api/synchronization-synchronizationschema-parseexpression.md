@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: c53046032ea4927d5f475cbb05961253fd323939
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1de23b474cf2cd12191da9ce5c876417fbaad984
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136357"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775469"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 Analisar uma determinada expressão de cadeia de caracteres em [um objeto attributeMappingSource.](../resources/synchronization-attributemappingsource.md)
 
-Para obter mais informações sobre expressões, consulte [Escrever expressões para mapeamentos de atributos no Azure Active Directory.](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)
+Para obter mais informações sobre expressões, consulte [Writing Expressions for Attribute Mappings in Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegada (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.|
-|Aplicativo                            |Sem suporte.|
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |expressão               |String               |Expressão a ser analisado.|
-|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Teste o objeto de dados para avaliar a expressão. Opcional.|
+|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Testar o objeto de dados para avaliar a expressão. Opcional.|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Definição do atributo que será mapeado para essa expressão. Opcional.|
 
 ## <a name="response"></a>Resposta

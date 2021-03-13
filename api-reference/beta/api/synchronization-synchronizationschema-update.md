@@ -1,33 +1,33 @@
 ---
-title: Atualizar synchronizationSchema
-description: Atualize o esquema de sincronização para um determinado trabalho ou modelo. Esse método substitui totalmente o esquema atual pelo fornecido na solicitação. Para atualizar o esquema de um modelo, faça a chamada no objeto application. Você deve ser o proprietário do aplicativo.
+title: Atualizar sincronizaçãoSchema
+description: Atualize o esquema de sincronização para um determinado trabalho ou modelo. Este método substitui totalmente o esquema atual pelo fornecido na solicitação. Para atualizar o esquema de um modelo, faça a chamada no objeto application. Você deve ser o proprietário do aplicativo.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 9c6ce22d5b6811f777667af53d4b6df82a4b372b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6780a9ef000fee6ea3f9a3c68b74186c69ac696e
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136350"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775448"
 ---
-# <a name="update-synchronizationschema"></a>Atualizar synchronizationSchema
+# <a name="update-synchronizationschema"></a>Atualizar sincronizaçãoSchema
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize o esquema de sincronização para um determinado trabalho ou modelo. Esse método substitui totalmente o esquema atual pelo fornecido na solicitação. Para atualizar o esquema de um modelo, faça a chamada no objeto application. Você deve ser o proprietário do aplicativo.
+Atualize o esquema de sincronização para um determinado trabalho ou modelo. Este método substitui totalmente o esquema atual pelo fornecido na solicitação. Para atualizar o esquema de um modelo, faça a chamada no objeto application. Você deve ser o proprietário do aplicativo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegada (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.|
-|Aplicativo                            |Sem suporte.| 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,18 +44,18 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece o [objeto synchronizationSchema](../resources/synchronization-synchronizationschema.md) para substituir o esquema existente.
+No corpo da solicitação, fornece o [objeto synchronizationSchema](../resources/synchronization-synchronizationschema.md) para substituir o esquema existente por.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, retornará um `204 No Content` código de resposta. Não retorna nada no corpo da resposta.
+Se tiver êxito, retornará `204 No Content` um código de resposta. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
 
->**Observação:** O objeto de solicitação mostrado aqui é encurtado para capacidade de leitura. Fornecer todas as propriedades em uma chamada real.
+>**Observação:** O objeto request mostrado aqui é reduzido para capacidade de leitura. Fornecer todas as propriedades em uma chamada real.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

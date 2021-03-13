@@ -1,18 +1,18 @@
 ---
-title: Reiniciar synchronizationJob
+title: Reiniciar sincronizaçãoJob
 description: Reinicie o trabalho de sincronização, forçando-o a reprocessar todos os objetos no diretório. Opcionalmente, limpa o estado de sincronização existente e os erros anteriores.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: dc257c78f5f7463cafb987a0d34c8fed546f3dd8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 216da34bb6900d246f990529c88bc398cc1cdcc7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132773"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50775069"
 ---
-# <a name="restart-synchronizationjob"></a>Reiniciar synchronizationJob
+# <a name="restart-synchronizationjob"></a>Reiniciar sincronizaçãoJob
 
 Namespace: microsoft.graph
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte. |
-|Aplicativo                            |Sem suporte.  | 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ No corpo da solicitação, forneça um objeto JSON com o parâmetro a seguir.
 
 | Parâmetro     | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |Reiniciar critérios|
+|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |Critérios de reinicialização|
 
 ## <a name="response"></a>Resposta
 

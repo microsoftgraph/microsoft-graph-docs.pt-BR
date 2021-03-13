@@ -1,16 +1,16 @@
 ---
 title: 'synchronizationJob: pause'
-description: Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, persiste, e o trabalho continuará de onde foi deixado quando uma chamada iniciar é feita.
+description: Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, é persistente, e o trabalho continuará de onde ele foi deixado quando uma chamada iniciar é feita.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: eba89e688b8dc9ea02fee633ee4beeb40bb55106
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 868184491c13e67b9bcd773f0a82383a5310d67b
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137484"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50776232"
 ---
 # <a name="synchronizationjob-pause"></a>synchronizationJob: pause
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, persiste, e o trabalho continuará de onde foi deixado quando [uma](../api/synchronization-synchronizationjob-start.md) chamada iniciar é feita.
+Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, é persistente, e o trabalho continuará de onde ele foi deixado quando uma [chamada](../api/synchronization-synchronizationjob-start.md) iniciar é feita.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.  |
-|Aplicativo                            |Sem suporte. | 
+|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 85f632dc112012f5d06f63f632a874d0b0ee584c
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 2a26336ae955c2687c67f38bcbc3dc10f9192ffc
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49946095"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775455"
 ---
 ```csharp
 
@@ -68,7 +68,7 @@ var synchronizationSchema = new SynchronizationSchema
     }
 };
 
-await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{jobId}"].Schema
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"].Schema
     .Request()
     .PutAsync(synchronizationSchema);
 

@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Excluir pacote
 description: Excluir um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d5aa0c77a755183582de8f7a798897cd192afbab
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 737a5f7494ea0848e4776058e8f55b78df44e29a
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960267"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50774268"
 ---
 # <a name="delete-bundle"></a>Excluir pacote
 
@@ -19,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [pacote][] de driveItems usando sua **ID**. Observe que excluir um pacote usando esse método exclui permanentemente o pacote e não o move para a lixeira.
+[Exclua um pacote][] de driveItems usando sua **id**. Observe que excluir um pacote usando esse método exclui permanentemente o pacote e não o move para a Lixeira.
 No entanto, ele não remove os itens que foram referenciados pelo pacote.
 Eles permanecerão em suas pastas pai.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -46,7 +45,7 @@ DELETE /drive/items/{bundle-id}
 | Nome          | Descrição  |
 |:------------- |:------------ |
 | Autorização | \{token\} de portador. Obrigatório. |
-| if-match      | ETag. Opcional. Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no pacote, uma `412 Precondition Failed` resposta será retornada e o pacote não será excluído.
+| if-match      | eTag. Opcional. Se esse header de solicitação estiver incluído e a eTag (ou cTag) fornecida não corresponder à marca atual no pacote, uma resposta será retornada e o pacote não `412 Precondition Failed` será excluído.
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -56,7 +55,7 @@ Não forneça um corpo de solicitação com esse método.
 
 Se bem sucedida, esta chamada retorna uma resposta `204 No Content` para indicar que o recurso foi excluído e que não havia nada a retornar.
 
-Leia o tópico [respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
+Leia o tópico [Respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 ## <a name="example"></a>Exemplo
 

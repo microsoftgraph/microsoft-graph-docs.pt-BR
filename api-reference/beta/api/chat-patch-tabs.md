@@ -1,39 +1,44 @@
 ---
-title: Guia atualizar no chat
-description: Atualiza as propriedades da guia especificada em um chat.
-author: nkramer
+title: Guia Atualizar no chat
+description: Atualize as propriedades da guia especificada em um chat.
+author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0225dd70a952d7d977c77c42595d19f7e671f9ff
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: d7d1b1a169e1ba1bc2b9e6b9ad518c2ac4fa48eb
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689802"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775714"
 ---
-# <a name="update-tab-in-chat"></a>Guia atualizar no chat
+# <a name="update-tab-in-chat"></a>Guia Atualizar no chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades da [guia](../resources/teamstab.md) especificada em um [chat](../resources/chat.md). Isso pode ser usado para configurar o conteúdo da guia.
+Atualize as propriedades da guia [especificada](../resources/teamstab.md) em um [chat](../resources/chat.md). Isso pode ser usado para configurar o conteúdo da guia.
 
-> **Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md) , em seguida, efetivamente, a guia fixa na reunião será atualizada.
+> **Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) então, efetivamente, a guia fixada na reunião será atualizada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
+|Aplicativo | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 PATCH /chats/{chat-id}/tabs/{tab-id}
 ```
@@ -45,11 +50,11 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 | Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [Tab](../resources/teamstab.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto tab.](../resources/teamstab.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o recurso **teamsTab** atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o recurso **teamsTab** atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-update-the-name-of-a-tab-in-a-chat"></a>Exemplo 1: atualizar o nome de uma guia em um chat

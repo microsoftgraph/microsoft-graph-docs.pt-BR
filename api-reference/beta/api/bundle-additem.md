@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Adicionar item a um pacote
 description: Adicionar item a um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a5b764bf94894d77ccead6adaa205882f6723fc5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f632b8054c1819c1af8bdd632c0d13092117cb30
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960282"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50774380"
 ---
 # <a name="add-item-to-a-bundle"></a>Adicionar item a um pacote
 
@@ -24,7 +23,7 @@ Adicione um [driveItem][] adicional de uma unidade a um [pacote][].
 [pacote]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -48,13 +47,13 @@ POST /drive/bundles/{bundle-id}/children
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-O corpo da solicitação inclui o identificador de um item que deve ser adicionado à coleção Children do pacote.
+O corpo da solicitação inclui o identificador de um item que deve ser adicionado à coleção de filhos do pacote.
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, a resposta será `204 No Content` .
 
-Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
+Leia o tópico [Respostas de Erro][error-response] para obter mais informações sobre como os erros são retornados.
 
 ## <a name="example"></a>Exemplo
 

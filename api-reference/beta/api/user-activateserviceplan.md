@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 70849865237a82f4a0bb5fcee22263291627c21d
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: a90dd6cd8cce6b33fb74369e4d42c26c03ffe38a
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578851"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775037"
 ---
 # <a name="user-activateserviceplan"></a>user: activateServicePlan
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 | :--- | :--- |
-| Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
+| Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
 
@@ -65,6 +65,8 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_activateserviceplan"
@@ -81,6 +83,24 @@ Content-length: 115
   "skuId": "465a2a90-5e59-456d-a7b8-127b9fb2e484"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-activateserviceplan-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-activateserviceplan-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-activateserviceplan-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-activateserviceplan-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

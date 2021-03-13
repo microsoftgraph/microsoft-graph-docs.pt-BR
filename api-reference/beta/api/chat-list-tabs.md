@@ -1,38 +1,42 @@
 ---
-title: Guias de lista no chat
+title: Listar guias no chat
 description: 'Recupere a lista de guias no chat especificado. '
-author: nkramer
+author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c8d61dc426fd456a356b2838a03c30e3629772ef
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 7f0d7b1feff7205144193a389a3ef84158f570d3
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689924"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50775770"
 ---
-# <a name="list-tabs-in-chat"></a>Guias de lista no chat
+# <a name="list-tabs-in-chat"></a>Listar guias no chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de [guias](../resources/teamstab.md) no [chat](../resources/chat.md)especificado.
+Recupere a lista de [guias](../resources/teamstab.md) no chat [especificado](../resources/chat.md).
 
-> **Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md) e, em seguida, efetivamente, as guias fixadas na reunião serão listadas. 
+> **Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) então, efetivamente, as guias fixadas na reunião serão listadas. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsTab. ReadWriteForChat, TeamsTab. Read. All, TeamsTab. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsTab. ReadWriteForChat. All, TeamsTab. Read. All, TeamsTab. ReadWrite. All |
+|Aplicativo | TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /chats/{chat-id}/tabs
 ```
@@ -50,11 +54,11 @@ Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consult
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Tabs](../resources/teamstab.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [tabs](../resources/teamstab.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>Exemplo 1: listar todas as guias no chat junto com o aplicativo Teams associado
+### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>Exemplo 1: listar todas as guias do chat juntamente com o aplicativo do Teams associado
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
@@ -167,7 +171,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-chat"></a>Exemplo 2: listar todas as guias pertencentes a um aplicativo específico em um chat
+### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-chat"></a>Exemplo 2: Listar todas as guias pertencentes a um aplicativo específico em um chat
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
