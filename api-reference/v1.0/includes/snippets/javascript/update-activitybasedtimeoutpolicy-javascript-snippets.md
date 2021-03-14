@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 12773cfe48f0ea593c3a0f1a0563385bfaa82593
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: cc6f74e94d093e0b8b72efc7fdc308d236c164a1
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910361"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796121"
 ---
 ```javascript
 
@@ -17,13 +17,13 @@ const client = Client.init(options);
 
 const activityBasedTimeoutPolicy = {
   definition: [
-    "definition-value"
+    'definition-value'
   ],
-  displayName: "displayName-value",
+  displayName: 'displayName-value',
   isOrganizationDefault: true
 };
 
-let res = await client.api('/policies/activityBasedTimeoutPolicies/{id}')
+await client.api('/policies/activityBasedTimeoutPolicies/{id}')
     .update(activityBasedTimeoutPolicy);
 
 ```

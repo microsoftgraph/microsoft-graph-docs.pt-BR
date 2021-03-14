@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b87ef1ee558d57897316776c2341564e1e5ed9ba
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 4654f1e10fd6d94c9013540ab2ffc3935850d087
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863542"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50795929"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var claimsMappingPolicy = new ClaimsMappingPolicy
     }
 };
 
-await graphClient.ServicePrincipals["{id}"].ClaimsMappingPolicies.References
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].ClaimsMappingPolicies.References
     .Request()
     .AddAsync(claimsMappingPolicy);
 
