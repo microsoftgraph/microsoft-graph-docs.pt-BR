@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a96bc7eb26d5e6c826d8c4e7a42a44bdb128c8aa
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: de7fd2673fe6dd6b33f43cf08624f00a4f69ab12
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334407"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50803152"
 ---
 ```javascript
 
@@ -17,11 +17,11 @@ const client = Client.init(options);
 
 const passwordCredential = {
   passwordCredential: {
-    displayName: "Password friendly name"
+    displayName: 'Password friendly name'
   }
 };
 
-let res = await client.api('/servicePrincipals/{id}/addPassword')
+await client.api('/servicePrincipals/{id}/addPassword')
     .post(passwordCredential);
 
 ```

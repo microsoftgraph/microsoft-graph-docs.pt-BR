@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 09db92478233726613c3cf6a3ee34c6f72aabfca
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: e93953a4e2ee6c32b72668409d2db63457903d7e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904672"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50790176"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/totalRowRange')
+let workbookRange = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/totalRowRange')
     .get();
 
 ```
