@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ea9b069b41b92c0e33a3c2dcb6ded8981ee7b02a
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 2ebae2b263cca51ddc53b423f1889a92598144af
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50015408"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797559"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const workbookNamedItem = {
-  name: "test5",
-  reference: "=Sheet1!$F$15:$N$27",
-  comment: "Comment for the named item"
+  name: 'test7',
+  formula: '=SUM(Sheet2!$A$1+Sheet2!$A$2)',
+  comment: 'Comment for the named item'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/add')
+await client.api('/me/drive/items/{id}/workbook/names/addFormulaLocal')
     .post(workbookNamedItem);
 
 ```
