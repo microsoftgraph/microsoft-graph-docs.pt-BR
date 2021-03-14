@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 36a8337d2658bddd7c29ebc3e1344bcd530f5429
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3ac9324b2249fd15644e553b51811e1b05741d97
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871045"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50801214"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var role = ScreenSharingRole.Viewer;
 
-await graphClient.Communications.Calls["{id}"]
+await graphClient.Communications.Calls["{call-id}"]
     .ChangeScreenSharingRole(role)
     .Request()
     .PostAsync();

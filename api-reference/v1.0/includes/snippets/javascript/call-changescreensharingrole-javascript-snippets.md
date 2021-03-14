@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: eb7e6835b69bd57dc63ee7a3deffe42aba30da8e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: d88881286dac2399dc1c248dc1b73e04d7f56a63
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871052"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50802308"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const changeScreenSharingRole = {
-  role: "viewer"
+  role: 'viewer'
 };
 
-let res = await client.api('/communications/calls/{id}/changeScreenSharingRole')
+await client.api('/communications/calls/{id}/changeScreenSharingRole')
     .post(changeScreenSharingRole);
 
 ```

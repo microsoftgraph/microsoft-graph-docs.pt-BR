@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: abf522f693838df48823e7aa68a6792895cd5de6
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: dbbf30473f145a1516c756b4bd4a7079ed5046f1
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871013"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50808807"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const unmuteParticipantOperation = {
-  clientContext: "clientContext-value"
+  clientContext: 'clientContext-value'
 };
 
-let res = await client.api('/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/unmute')
+await client.api('/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/unmute')
     .post(unmuteParticipantOperation);
 
 ```

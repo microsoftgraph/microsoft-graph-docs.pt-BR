@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 32792408cf04885a754bb3d68052027ebd8ed2e7
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 222f313d8af183514b564cabeb342a53cbfef812
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910500"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50781838"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var workforceIntegration = new WorkforceIntegration
     SupportedEntities = WorkforceIntegrationSupportedEntities.None
 };
 
-await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegrationId}"]
+await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegration-id}"]
     .Request()
     .UpdateAsync(workforceIntegration);
 

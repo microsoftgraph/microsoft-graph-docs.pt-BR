@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3eb9024bc3b355fb4f48f4418bd79a2f6042a68f
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: afb68ad297a44ff076071449b1377b135308655f
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48609717"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50805172"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/root/delta?token=latest')
+let delta = await client.api('/me/drive/root/delta?token=latest')
     .get();
 
 ```

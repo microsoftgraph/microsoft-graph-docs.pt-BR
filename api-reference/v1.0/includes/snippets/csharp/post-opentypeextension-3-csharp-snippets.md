@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 70a740c36c74229efdf854d8d3fc6948df0fa1ac
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 980c092685b9eded54fcb5186f63e3d96e673971
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470852"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50799616"
 ---
 ```csharp
 
@@ -22,7 +22,7 @@ var extension = new OpenTypeExtension
     }
 };
 
-await graphClient.Groups["f5480dfd-7d77-4d0b-ba2e-3391953cc74a"].Events["AAMkADVl17IsAAA="].Extensions
+await graphClient.Groups["{group-id}"].Events["{event-id}"].Extensions
     .Request()
     .AddAsync(extension);
 
