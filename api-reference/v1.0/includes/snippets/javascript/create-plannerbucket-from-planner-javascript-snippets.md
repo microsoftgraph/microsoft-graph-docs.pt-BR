@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8026b8e22548d2e9114c1fbf00f40f389ab04ce8
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: d9911338bd23a85bcf705fbb556377024a1a8651
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36636385"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797280"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const plannerBucket = {
-  name: "Advertising",
-  planId: "xqQg5FS2LkCp935s-FIFm2QAFkHM",
-  orderHint: " !"
+  name: 'Advertising',
+  planId: 'xqQg5FS2LkCp935s-FIFm2QAFkHM',
+  orderHint: ' !'
 };
 
-let res = await client.api('/planner/buckets')
+await client.api('/planner/buckets')
     .post(plannerBucket);
 
 ```

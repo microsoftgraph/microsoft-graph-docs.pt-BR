@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7467f16fb7938b6119f228798aeac9fac97b8c2a
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 08a9d2156d8afa3a63ce636ce6b8b2ee3d8abc11
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523267"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50806583"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/permissionGrantPolicies/microsoft-application-admin/excludes')
+let excludes = await client.api('/policies/permissionGrantPolicies/microsoft-application-admin/excludes')
     .get();
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9f63baf8b8b35d48098e896acd9bf86ba957fc9e
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 35308053ec77a90347f8b965386c1af25e7afe7d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524195"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50796934"
 ---
 ```javascript
 
@@ -16,11 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const permissionGrantConditionSet = {
-  permissionType: "delegated",
-  resourceApplication: "00000003-0000-0000-c000-000000000000"
+  permissionType: 'delegated',
+  resourceApplication: '00000003-0000-0000-c000-000000000000'
 };
 
-let res = await client.api('/policies/permissionGrantPolicies/my-custom-consent-policy/excludes')
+await client.api('/policies/permissionGrantPolicies/my-custom-consent-policy/excludes')
     .post(permissionGrantConditionSet);
 
 ```

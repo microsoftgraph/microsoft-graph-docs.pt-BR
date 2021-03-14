@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6b365d539188d30dd20815345c359372f0bef488
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: d8a37b6ebec8527b3f09a1ca01de1a1f54d15b7d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566054"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50797027"
 ---
 ```javascript
 
@@ -18,14 +18,14 @@ const client = Client.init(options);
 const conditionalAccessPolicy = {
     conditions: {
         signInRiskLevels: [
-            "high",
-            "medium",
-            "low",
+            'high',
+            'medium',
+            'low',
         ]
     }
 };
 
-let res = await client.api('/identity/conditionalAccess/policies/{id}')
+await client.api('/identity/conditionalAccess/policies/{id}')
     .update(conditionalAccessPolicy);
 
 ```

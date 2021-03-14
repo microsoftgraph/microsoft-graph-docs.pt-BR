@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3ac13d1c44ecc9918633e211ddeb32d126a37eeb
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 64f1f226892eb46fde53aec664dbfd29c9e50a55
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524189"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804963"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var permissionGrantConditionSet = new PermissionGrantConditionSet
     ResourceApplication = "00000003-0000-0000-c000-000000000000"
 };
 
-await graphClient.Policies.PermissionGrantPolicies["my-custom-consent-policy"].Excludes
+await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"].Excludes
     .Request()
     .AddAsync(permissionGrantConditionSet);
 
