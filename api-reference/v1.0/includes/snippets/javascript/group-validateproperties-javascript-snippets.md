@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7075b3ce6f596876e78208c448aea5977e19ce88
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 85cdbee9f6c8c0d6b9bd0cd9537274183a7b587d
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932491"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50778992"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const validateProperties = {
-  displayName: "Myprefix_test_mysuffix",
-  mailNickname: "Myprefix_test_mysuffix",
-  onBehalfOfUserId: "onBehalfOfUserId-value"
+  displayName: 'Myprefix_test_mysuffix',
+  mailNickname: 'Myprefix_test_mysuffix',
+  onBehalfOfUserId: 'onBehalfOfUserId-value'
 };
 
-let res = await client.api('/groups/{id}/validateProperties')
+await client.api('/groups/{id}/validateProperties')
     .post(validateProperties);
 
 ```

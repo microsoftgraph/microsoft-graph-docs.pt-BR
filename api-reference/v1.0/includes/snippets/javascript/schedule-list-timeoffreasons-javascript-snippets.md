@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ed8bbafbb37567e8834006a7119baf886c98d68f
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: f8169e52ccdde30c7ee07af046236b6243288e0b
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218450"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50802167"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{teamId}/schedule/timeOffReasons')
+let timeOffReasons = await client.api('/teams/{teamId}/schedule/timeOffReasons')
     .get();
 
 ```
