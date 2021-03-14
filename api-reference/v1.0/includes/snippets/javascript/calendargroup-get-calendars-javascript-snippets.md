@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6ffaead5aed0eb070e370a2099aa442197e70f8e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 2d176f0b3333d62e58c6883647a6a8d7221e24ba
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882354"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50787230"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/calendarGroups/{id}/calendars')
+let calendars = await client.api('/me/calendarGroups/{id}/calendars')
     .get();
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 69762d057c18edc282cd217fca59d9610362d806
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: e4fd19565c8cd86cb825eb49b7e4f8c9042da8b5
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302276"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789005"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var calculationType = "calculationType-value";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Application
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Application
     .Calculate(calculationType)
     .Request()
     .PostAsync();
