@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: d8478b405804da10e7bad3de647b45751f14ae86
-ms.sourcegitcommit: 59df7b4d5098a49403a315d19a0c048013cd592e
+ms.openlocfilehash: 7cbe064bb6e253d7e3c05648d0d531020cffb4b6
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50723097"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761748"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 

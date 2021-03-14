@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 186599391599c7ac77f637bcc910339f3087c999
-ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.openlocfilehash: e6e859e76e35e4eefd5ef18a26f0f1339c01a8a2
+ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101878"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50761567"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Obter notificações de alteração para mensagens nos canais e bate-papos do Teams usando o Microsoft Graph
 
@@ -28,11 +28,11 @@ Para obter notificações de alteração para todas as mensagens e respostas nos
 
 #### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte. |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | ChannelMessage.Read.All |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|Delegado (conta corporativa ou de estudante) | Sem suporte. | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
+|Aplicativo | ChannelMessage.Read.All | beta, v1.0 |
 
 #### <a name="example"></a>Exemplo
 
@@ -58,11 +58,11 @@ Para obter notificações de alteração para todas as mensagens em chats em um 
 
 #### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte. |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Chat.Read.All |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|Delegado (conta corporativa ou de estudante) | Sem suporte. | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
+|Aplicativo | Chat.Read.All | beta, v1.0 |
 
 #### <a name="example"></a>Exemplo
 
@@ -90,11 +90,11 @@ As assinaturas no nível do canal também oferecem suporte à pesquisa baseada e
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | ChannelMessage.Read.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | ChannelMessage.Read.All, ChannelMessage.Read.Group* |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |Com suporte na versão |
+|:--------------------|:---------------------------------------------------------|:--------------------|
+|Delegado (conta corporativa ou de estudante) | ChannelMessage.Read.All | beta, v1.0 |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
+|Aplicativo | ChannelMessage.Read.All, ChannelMessage.Read.Group* | beta, v1.0 |
 
 >**Observação:** ChannelMessage.Read.Group é suportado como parte do [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -180,11 +180,11 @@ As assinaturas no nível do chat também oferecem suporte à pesquisa baseada em
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Chat.Read |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Chat.Read.All |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Com suporte na versão |
+|:--------------------|:---------------------------------------------------------|:---------------------|
+|Delegada (conta corporativa ou de estudante) | Chat.Read | beta |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
+|Aplicativo | Chat.Read.All | beta |
 
 ### <a name="example-1-subscribe-to-messages-in-a-chat"></a>Exemplo 1: assinar para receber mensagens em um chat
 
