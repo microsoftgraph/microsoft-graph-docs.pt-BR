@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b386aa3d0d58bdde4f49d255d3f55ef16b1f589c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7ed8d8ae89a851288f9c0a70f9748625b559cd7e
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365558"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50791306"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Drive.Items["{id}"].Workbook
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook
     .RefreshSession()
     .Request()
     .Header("workbook-session-id","{session-id}")
