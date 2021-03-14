@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: c868f7162f171cbb552c216139cc6afdc3aea988
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 07ee284f40264c76ec6156235fab651fff77cfe6
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516238"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50777002"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -332,14 +332,11 @@ Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclu
 
 Para obter uma lista de equipes, confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams).
 
-### <a name="unable-to-remove-members-from-chat"></a>Não foi possível remover os membros do chat
-Em certas situações, a chamada para `DELETE /chats/chat-id/members/membership-id` falhará com um `404` mesmo se o membro do chat existir. Isso se deve a um problema com o cálculo do `membership-id`.
-
 ### <a name="unable-to-filter-team-members-by-roles"></a>Não é possível filtrar os membros da equipe por funções
 A consulta de filtro para obter membros de uma equipe com base em suas funções `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')`pode não funcionar. O servidor pode responder com uma.`BAD REQUEST`
 
-### <a name="missing-tenantid-for-chat-members"></a>TenantId ausente para membros de chat
-Em determinadas instâncias, a `tenantId` propriedade para os membros individuais de um bate-papo pode não ser preenchida em uma solicitação de `GET /chats/chat-id/members` ou `GET /chats/chat-id/members/membership-id`.
+### <a name="missing-properties-for-chat-members"></a>Propriedades ausentes para membros do bate-papo
+Em certos casos, a `tenantId` / `email` / `displayName` propriedade para os membros individuais de um bate-papo pode não ser preenchida em uma solicitação `GET /chats/chat-id/members` ou `GET /chats/chat-id/members/membership-id`.
 
 ## <a name="users"></a>Usuários
 

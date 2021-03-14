@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c439647a3b1e46fc1f0facf8dc40405c108a5558
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: cda230c0c686251a67fb531830c94e5be72ba574
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402785"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50780102"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var sourceData = "sourceData-value";
 
 var seriesBy = "seriesBy-value";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"]
     .SetData(seriesBy,sourceData)
     .Request()
     .PostAsync();

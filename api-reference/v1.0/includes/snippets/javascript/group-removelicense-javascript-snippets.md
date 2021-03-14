@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: de9330e10ec2bb1029075edef90e662168114551
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: 03ad6a203acdcddcc3cddaf48ee1c5577626e2d0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953667"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50804672"
 ---
 ```javascript
 
@@ -17,10 +17,10 @@ const client = Client.init(options);
 
 const group = {
   addLicenses: [],
-  removeLicenses: ["skuId-value-1", "skuId-value-2"]
+  removeLicenses: ['skuId-value-1', 'skuId-value-2']
 };
 
-let res = await client.api('/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense')
+await client.api('/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense')
     .post(group);
 
 ```

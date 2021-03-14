@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1ae9252ced46b9b186abafa8df78deb0c09ed52d
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: bba4d4e58288ac4fe36ec49f02e7c2b535d17aff
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845904"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798020"
 ---
 ```csharp
 
@@ -21,7 +21,7 @@ var contact = new Contact
     Initials = "initials-value"
 };
 
-await graphClient.Me.ContactFolders["{id}"].Contacts
+await graphClient.Me.ContactFolders["{contactFolder-id}"].Contacts
     .Request()
     .AddAsync(contact);
 
