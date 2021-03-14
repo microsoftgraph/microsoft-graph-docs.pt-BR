@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e19d2e614c50e32039e2552ea91e0a8cfac87bbc
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: d585edfe24dc625187e4f149a7c05f9df7c778d0
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218348"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50789021"
 ---
 ```csharp
 
@@ -56,7 +56,7 @@ var shift = new Shift
     }
 };
 
-await graphClient.Teams["{teamId}"].Schedule.Shifts
+await graphClient.Teams["{team-id}"].Schedule.Shifts
     .Request()
     .AddAsync(shift);
 

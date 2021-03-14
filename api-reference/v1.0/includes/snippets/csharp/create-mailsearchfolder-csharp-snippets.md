@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 48e342a14d69a79e615680d0b28e5b85a2b9d087
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: c8a963a14c2a6aaf988bf1fcc8e2daa27586ae53
+ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684150"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50798944"
 ---
 ```csharp
 
@@ -22,7 +22,7 @@ var mailFolder = new MailSearchFolder
     FilterQuery = "contains(subject, 'weekly digest')"
 };
 
-await graphClient.Me.MailFolders["AQMkADYAAAIBDAAAAA=="].ChildFolders
+await graphClient.Me.MailFolders["{mailFolder-id}"].ChildFolders
     .Request()
     .AddAsync(mailFolder);
 
