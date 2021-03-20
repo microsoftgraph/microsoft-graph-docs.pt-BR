@@ -5,38 +5,38 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: feb483a8b6cf8d4933f21b1cb4c9cd7cc9ae6f33
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1023c50df39bd8416b15d78733005e5e59633fe5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435726"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946047"
 ---
-# <a name="grant-an-approleassignment-to-a-group"></a><span data-ttu-id="66084-103">Conceder um appRoleAssignment a um grupo</span><span class="sxs-lookup"><span data-stu-id="66084-103">Grant an appRoleAssignment to a group</span></span>
+# <a name="grant-an-approleassignment-to-a-group"></a><span data-ttu-id="50512-103">Conceder um appRoleAssignment a um grupo</span><span class="sxs-lookup"><span data-stu-id="50512-103">Grant an appRoleAssignment to a group</span></span>
 
-<span data-ttu-id="66084-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="66084-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="50512-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="50512-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="66084-105">Use esta API para atribuir uma função de aplicativo a um grupo.</span><span class="sxs-lookup"><span data-stu-id="66084-105">Use this API to assign an app role to a group.</span></span> <span data-ttu-id="66084-106">Todos os membros diretos do grupo serão considerados atribuídos.</span><span class="sxs-lookup"><span data-stu-id="66084-106">All direct members of the group will be considered assigned.</span></span> <span data-ttu-id="66084-107">Para conceder uma atribuição de função de aplicativo a um grupo, você precisa de três identificadores:</span><span class="sxs-lookup"><span data-stu-id="66084-107">To grant an app role assignment to a group, you need three identifiers:</span></span>
+<span data-ttu-id="50512-105">Use esta API para atribuir uma função de aplicativo a um grupo.</span><span class="sxs-lookup"><span data-stu-id="50512-105">Use this API to assign an app role to a group.</span></span> <span data-ttu-id="50512-106">Todos os membros diretos do grupo serão considerados atribuídos.</span><span class="sxs-lookup"><span data-stu-id="50512-106">All direct members of the group will be considered assigned.</span></span> <span data-ttu-id="50512-107">Para conceder uma atribuição de função de aplicativo a um grupo, você precisa de três identificadores:</span><span class="sxs-lookup"><span data-stu-id="50512-107">To grant an app role assignment to a group, you need three identifiers:</span></span>
 
-- <span data-ttu-id="66084-108">`principalId`: A `id` do grupo ao qual você está atribuindo a função de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="66084-108">`principalId`: The `id` of the group to which you are assigning the app role.</span></span>
-- <span data-ttu-id="66084-109">`resourceId`: A `id` do recurso `servicePrincipal` que definiu a função do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="66084-109">`resourceId`: The `id` of the resource `servicePrincipal` which has defined the app role.</span></span>
-- <span data-ttu-id="66084-110">`appRoleId`: A `id` do `appRole` (definido na entidade de serviço do recurso) para atribuir ao grupo.</span><span class="sxs-lookup"><span data-stu-id="66084-110">`appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the group.</span></span>
+- <span data-ttu-id="50512-108">`principalId`: A `id` do grupo ao qual você está atribuindo a função de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="50512-108">`principalId`: The `id` of the group to which you are assigning the app role.</span></span>
+- <span data-ttu-id="50512-109">`resourceId`: A `id` do recurso `servicePrincipal` que definiu a função do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="50512-109">`resourceId`: The `id` of the resource `servicePrincipal` which has defined the app role.</span></span>
+- <span data-ttu-id="50512-110">`appRoleId`: A `id` do `appRole` (definido na entidade de serviço do recurso) para atribuir ao grupo.</span><span class="sxs-lookup"><span data-stu-id="50512-110">`appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the group.</span></span>
 
-<span data-ttu-id="66084-111">Licenças adicionais podem ser necessárias para [usar um grupo para gerenciar o acesso aos aplicativos](/azure/active-directory/users-groups-roles/groups-saasapps).</span><span class="sxs-lookup"><span data-stu-id="66084-111">Additional licenses might be required to [use a group to manage access to applications](/azure/active-directory/users-groups-roles/groups-saasapps).</span></span>
+<span data-ttu-id="50512-111">Licenças adicionais podem ser necessárias para [usar um grupo para gerenciar o acesso aos aplicativos](/azure/active-directory/users-groups-roles/groups-saasapps).</span><span class="sxs-lookup"><span data-stu-id="50512-111">Additional licenses might be required to [use a group to manage access to applications](/azure/active-directory/users-groups-roles/groups-saasapps).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="66084-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="66084-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="50512-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="50512-112">Permissions</span></span>
 
-<span data-ttu-id="66084-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="66084-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="50512-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="50512-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="66084-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="66084-115">Permission type</span></span>      | <span data-ttu-id="66084-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="66084-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="50512-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="50512-115">Permission type</span></span>      | <span data-ttu-id="50512-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="50512-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="66084-117">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="66084-117">Delegated (work or school account)</span></span> | <span data-ttu-id="66084-118">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="66084-118">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="66084-119">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="66084-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="66084-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="66084-120">Not supported.</span></span>    |
-|<span data-ttu-id="66084-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="66084-121">Application</span></span> | <span data-ttu-id="66084-122">AppRoleAssignment.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="66084-122">AppRoleAssignment.ReadWrite.All</span></span> |
+|<span data-ttu-id="50512-117">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="50512-117">Delegated (work or school account)</span></span> | <span data-ttu-id="50512-118">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="50512-118">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="50512-119">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="50512-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="50512-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="50512-120">Not supported.</span></span>    |
+|<span data-ttu-id="50512-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="50512-121">Application</span></span> | <span data-ttu-id="50512-122">AppRoleAssignment.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50512-122">AppRoleAssignment.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="66084-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="66084-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="50512-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="50512-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -44,34 +44,34 @@ POST /groups/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> <span data-ttu-id="66084-124">Como prática recomendada, recomendamos que você crie atribuições de função de aplicativo por meio da `appRoleAssignedTo`relação do _recurso_ da entidade de serviço, em vez da `appRoleAssignments`relação do usuário, grupo ou entidade de serviço atribuída.</span><span class="sxs-lookup"><span data-stu-id="66084-124">As a best practice, we recommend creating app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.</span></span>
+> <span data-ttu-id="50512-124">Como prática recomendada, recomendamos que você crie atribuições de função de aplicativo por meio da `appRoleAssignedTo`relação do _recurso_ da entidade de serviço, em vez da `appRoleAssignments`relação do usuário, grupo ou entidade de serviço atribuída.</span><span class="sxs-lookup"><span data-stu-id="50512-124">As a best practice, we recommend creating app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="66084-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="66084-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="50512-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="50512-125">Request headers</span></span>
 
-| <span data-ttu-id="66084-126">Nome</span><span class="sxs-lookup"><span data-stu-id="66084-126">Name</span></span>       | <span data-ttu-id="66084-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="66084-127">Description</span></span>|
+| <span data-ttu-id="50512-126">Nome</span><span class="sxs-lookup"><span data-stu-id="50512-126">Name</span></span>       | <span data-ttu-id="50512-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="50512-127">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="66084-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="66084-128">Authorization</span></span> | <span data-ttu-id="66084-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="66084-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="66084-131">Content-type</span><span class="sxs-lookup"><span data-stu-id="66084-131">Content-type</span></span> | <span data-ttu-id="66084-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="66084-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="50512-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="50512-128">Authorization</span></span> | <span data-ttu-id="50512-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="50512-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="50512-131">Content-type</span><span class="sxs-lookup"><span data-stu-id="50512-131">Content-type</span></span> | <span data-ttu-id="50512-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="50512-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="66084-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="66084-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="50512-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="50512-134">Request body</span></span>
 
-<span data-ttu-id="66084-135">No corpo da solicitação, forneça uma representação JSON de um objeto [appRoleAssignment](../resources/approleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="66084-135">In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.</span></span>
+<span data-ttu-id="50512-135">No corpo da solicitação, forneça uma representação JSON de um objeto [appRoleAssignment](../resources/approleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="50512-135">In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="66084-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="66084-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="50512-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="50512-136">Response</span></span>
 
-<span data-ttu-id="66084-137">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="66084-137">If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="50512-137">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="50512-137">If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="66084-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="66084-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="50512-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="50512-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="66084-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="66084-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="50512-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="50512-139">Request</span></span>
 
-<span data-ttu-id="66084-140">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="66084-140">Here is an example of the request.</span></span>
+<span data-ttu-id="50512-140">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="50512-140">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="66084-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="66084-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="50512-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="50512-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_create_approleassignment"
+  "name": "group_create_approleassignment_1"
 }-->
 
 ```http
@@ -84,32 +84,32 @@ Content-Type: application/json
   "appRoleId": "00000000-0000-0000-0000-000000000000"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="66084-142">C#</span><span class="sxs-lookup"><span data-stu-id="66084-142">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-create-approleassignment-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="50512-142">C#</span><span class="sxs-lookup"><span data-stu-id="50512-142">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-create-approleassignment-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="66084-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="66084-143">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-create-approleassignment-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="50512-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="50512-143">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-create-approleassignment-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="66084-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="66084-144">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-create-approleassignment-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="50512-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="50512-144">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/group-create-approleassignment-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="66084-145">Java</span><span class="sxs-lookup"><span data-stu-id="66084-145">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="50512-145">Java</span><span class="sxs-lookup"><span data-stu-id="50512-145">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="66084-146">Neste exemplo, `{id}` e `{principalId-value}` seriam os `id` do grupo atribuído.</span><span class="sxs-lookup"><span data-stu-id="66084-146">In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned group.</span></span>
+<span data-ttu-id="50512-146">Neste exemplo, `{id}` e `{principalId-value}` seriam os `id` do grupo atribuído.</span><span class="sxs-lookup"><span data-stu-id="50512-146">In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned group.</span></span>
 
-### <a name="response"></a><span data-ttu-id="66084-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="66084-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="50512-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="50512-147">Response</span></span>
 
-<span data-ttu-id="66084-148">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="66084-148">Here is an example of the response.</span></span> 
+<span data-ttu-id="50512-148">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="50512-148">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="66084-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="66084-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="50512-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="50512-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
