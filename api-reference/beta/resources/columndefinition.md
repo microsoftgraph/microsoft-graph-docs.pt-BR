@@ -6,18 +6,33 @@ title: ColumnDefinition
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: aab34ebe8a0cb7539775ba3e7b07e8ad7b3c357b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cddab6ee01cea34902ee892e593e0e81b3cde8af
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444333"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961297"
 ---
 # <a name="columndefinition-resource-type"></a>Tipo de recurso columnDefinition
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Representa uma coluna em um [site,][] [lista][] ou [contentType][].
+
+## <a name="methods"></a>Métodos
+|Método|Tipo de retorno|Descrição|
+|:---|:---|:---|
+|[Listar colunas em um site](../api/site-list-columns.md)|[coleção columnDefinition](../resources/columndefinition.md)|Obter uma lista dos [objetos columnDefinition](../resources/columndefinition.md) e suas propriedades em um [site](../resources/site.md).|
+|[Listar colunas em uma lista](../api/list-list-columns.md)|[coleção columnDefinition](../resources/columndefinition.md)|Obter uma lista dos [objetos columnDefinition](../resources/columndefinition.md) e suas propriedades em uma [lista](../resources/list.md).|
+|[Listar colunas em um tipo de conteúdo](../api/contenttype-list-columns.md)|[coleção columnDefinition](../resources/columndefinition.md)|Obter uma lista dos [objetos columnDefinition](../resources/columndefinition.md) e suas propriedades em um [tipo de conteúdo](../resources/contenttype.md).|
+|[Criar columnDefinition para um site](../api/site-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Criar um novo [objeto columnDefinition](../resources/columndefinition.md) em um [site](../resources/site.md).|
+|[Criar columnDefinition para uma lista](../api/list-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Criar um novo [objeto columnDefinition](../resources/columndefinition.md) em uma [lista](../resources/list.md).|
+|[Criar columnDefinition para um tipo de conteúdo](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Criar um novo [objeto columnDefinition](../resources/columndefinition.md) em um [tipo de conteúdo](../resources/contenttype.md).|
+|[Obter columnDefinition](../api/columndefinition-get.md)|[columnDefinition](../resources/columndefinition.md)|Leia as propriedades e as relações de um [objeto columnDefinition.](../resources/columndefinition.md)|
+|[Atualizar columnDefinition](../api/columndefinition-update.md)|[columnDefinition](../resources/columndefinition.md)|Atualize as propriedades de um [objeto columnDefinition.](../resources/columndefinition.md)|
+|[Excluir columnDefinition](../api/columndefinition-delete.md)|Nenhum|Exclui um [objeto columnDefinition.](../resources/columndefinition.md)|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -78,10 +93,10 @@ As propriedades relacionadas ao tipo (boolean, calculated, choice, currency, dat
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | Para colunas de site, o nome do grupo ao qual esta coluna pertence. Ajuda a organizar as colunas relacionadas.
 | **description**         | string  | A descrição voltado para o usuário da coluna.
-| **displayName**         | string  | O nome voltado para o usuário da coluna.
+| **displayName**         | cadeia de caracteres  | O nome voltado para o usuário da coluna.
 | **enforceUniqueValues** | Booliano | Se for verdadeiro, esse mesmo valor não constará em dois itens de lista nessa coluna.
 | **hidden**              | Booliano | Especifica se a coluna é exibida na interface do usuário.
-| **id**                  | string  | O identificador exclusivo da coluna.
+| **id**                  | cadeia de caracteres  | O identificador exclusivo da coluna.
 | **indexed**             | Booliano | Especifica se os valores da coluna podem ser usados para classificação e pesquisa.
 | **name**                | string  | O nome voltado para a API da coluna, conforme ele aparece nos [campos][] em uma [listItem][]. Para o nome voltado ao usuário, consulte **displayName**.
 | **readOnly**            | Booliano    | Especifica se os valores da coluna podem ser modificados.
@@ -106,7 +121,7 @@ As propriedades relacionadas ao tipo (boolean, calculated, choice, currency, dat
 | **term**     | [termColumn][] | Esta coluna armazena termos de taxonomia.
 | **sourceContentType**   |[contentTypeInfo][]  | ContentType do qual esta coluna é herdada. Usado apenas ao buscar colunas contentTypes.
 | **thumbnail**           |[thumbnailColumn][]      | Esta coluna armazena valores de miniatura.
-| **tipo**         | columnTypes  | Para colunas de site, o tipo de coluna. Somente leitura
+| **type**         | columnTypes  | Para colunas de site, o tipo de coluna. Somente leitura
 | **contentApprovalStatus**| [contentApprovalStatusColumn][]     | Esta coluna armazena o status de aprovação de conteúdo.
 
 ## <a name="relationships"></a>Relações
@@ -129,13 +144,16 @@ Para vê-los ao exibir valores **field** em [listItems][listItem], inclua as col
 [calculatedColumn]: calculatedcolumn.md
 [choiceColumn]: choicecolumn.md
 [columnDefinition]: columnDefinition.md
+[contentType]: contenttype.md
 [currencyColumn]: currencycolumn.md
 [dateTimeColumn]: datetimecolumn.md
 [defaultColumnValue]: defaultcolumnvalue.md
 [geolocationColumn]: geolocationcolumn.md
+[list]: list.md
 [lookupColumn]: lookupcolumn.md
 [numberColumn]: numbercolumn.md
 [personOrGroupColumn]: personorgroupcolumn.md
+[site]: site.md
 [textColumn]: textcolumn.md
 [fieldValueSet]: fieldvalueset.md
 [campos]: fieldvalueset.md

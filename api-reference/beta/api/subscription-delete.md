@@ -4,13 +4,13 @@ description: Exclua uma assinatura.
 localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3f182d82fdac95480715be2385729b0dec2d5d39
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.prod: change-notifications
+ms.openlocfilehash: 7a2495bb7af062474e653c22005f64bff77f11e8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092742"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961368"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 Exclua uma assinatura.
 
-Consulte a tabela na seção [Permissões para](#permissions) ver a lista de recursos que suportam a assinatura para alterar notificações.
+Consulte a tabela na seção [Permissões](#permissions) para obter a lista de recursos que oferecem suporte à inscrição para alterar notificações.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
+Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
@@ -70,7 +70,7 @@ As limitações adicionais se aplicam aos itens do Outlook. As limitações se a
 
 ### <a name="presence"></a>presença
 
-**assinaturas** de presença [exigem criptografia.](/graph/webhooks-with-resource-data) A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
+**assinaturas** de presença exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

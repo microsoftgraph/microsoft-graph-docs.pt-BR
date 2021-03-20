@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b0bc9630d503847832b8fb3ab73e8064fa90c96c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 178e6afe9b9bd62e1f921f6ddc6c3c9148c57cb9
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720057"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943686"
 ---
 # <a name="list-agreementacceptances"></a>Listar agreementAcceptances
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AgreementAcceptance.Read |
+|Delegado (conta corporativa ou de estudante)     | AgreementAcceptance.Read, AgreementAcceptance.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 

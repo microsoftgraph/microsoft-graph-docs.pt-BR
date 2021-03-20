@@ -5,12 +5,12 @@ author: besiler
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d4ce200ba33cbc3896c967d85c6b83ce21a2bc63
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: a4f3a16defa48f1f57072f3c009d4f8c223f47d8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721744"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961934"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Detalha a atividade de login do usuário e do aplicativo para um locatário (diretório). Você deve ter uma licença do Azure AD Premium P1 ou P2 para baixar logs de login usando a API do Microsoft Graph.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -31,8 +31,8 @@ Detalha a atividade de login do usuário e do aplicativo para um locatário (dir
 |appDisplayName|Cadeia de caracteres|Nome do aplicativo exibido no Portal do Azure.|
 |appId|Cadeia de caracteres|GUID exclusivo que representa a ID do aplicativo no Azure Active Directory.|
 |appliedConditionalAccessPolicy|[coleção appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md)|Fornece uma lista de políticas de acesso condicional acionada por atividade correspondente entrar.|
-|clientAppUsed|Cadeia de caracteres|Identifica o cliente herddo usado para a atividade de entrada.  Inclui Navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP e POP.|
-|conditionalAccessStatus|cadeia de caracteres| Relata o status de uma política de acesso condicional ativada. Os valores possíveis são: `success` `failure` , , e `notApplied` `unknownFutureValue` .|
+|clientAppUsed|Cadeia de caracteres|Identifica o cliente herddo usado para a atividade de entrada.  Inclui `Browser` , `Exchange Active Sync` , , , , e `modern clients` `IMAP` `MAPI` `SMTP` `POP` .|
+|conditionalAccessStatus|conditionalAccessStatus| Relata o status de uma política de acesso condicional ativada. Os valores possíveis são: `success` `failure` , , e `notApplied` `unknownFutureValue` .|
 |correlationId|Cadeia de caracteres|A ID de solicitação enviada do cliente quando a entrada é iniciada; usado para solucionar problemas de atividade de login.|
 |createdDateTime|DateTimeOffset|Data e hora (UTC) a assinatura foi iniciada. Exemplo: meia-noite de 1º de janeiro de 2014 é relatada como `2014-01-01T00:00:00Z` .|
 |deviceDetail|[deviceDetail](devicedetail.md)|Informações do dispositivo de onde ocorreu a entrada; inclui iD do dispositivo, sistema operacional e navegador. |

@@ -2,19 +2,21 @@
 title: Excluir featureRolloutPolicy
 description: Exclua um objeto featureRolloutPolicy.
 localization_priority: Normal
-author: keylimesoda
-ms.prod: directory-management
+author: madhavpatel6
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 62395dec00e5a7713ffb959f1a871eedd1da50c5
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ac2d8f8acba29db911030718fbb37e4ddfe53093
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471184"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955928"
 ---
 # <a name="delete-featurerolloutpolicy"></a>Excluir featureRolloutPolicy
 
 Namespace: microsoft.graph
+
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,14 +37,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directory/featureRolloutPolicies/{id}
+DELETE /policies/featureRolloutPolicies/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Authorization | Portador {código} |
+| Autorização | Portador {token}. Obrigatório |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -59,11 +61,11 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
-  "name": "delete_featurerolloutpolicy"
+  "name": "delete_featurerolloutpolicy_policies"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
+DELETE https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
 
 ### <a name="response"></a>Resposta
