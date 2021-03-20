@@ -2,27 +2,27 @@
 title: Listar agreementAcceptances
 description: Recupere uma lista de objetos agreementAcceptance de um usuário.
 localization_priority: Normal
-author: krbain
+author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 40249bcddeb426269151d32ec842ca097a847e8c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d922160488b3a87fcf8fbf57d42acdba12b87701
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777465"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948656"
 ---
 # <a name="list-agreementacceptances"></a>Listar agreementAcceptances
 
 Namespace: microsoft.graph
 
 Recupere uma lista de objetos [agreementAcceptance de um](../resources/agreementacceptance.md) usuário.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AgreementAcceptance.Read |
+|Delegado (conta corporativa ou de estudante)     | AgreementAcceptance.Read |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 

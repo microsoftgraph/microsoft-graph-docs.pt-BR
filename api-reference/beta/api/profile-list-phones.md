@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b40f2aad9c811f8454d77969a14e75cd47e901cc
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: f8034647c80e334e96066afdcf6f44d4cb129dd0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576698"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950555"
 ---
 # <a name="list-phones"></a>Listar telefones
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/profile/phones
 
 Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-|Nome            |Valor    |Descrição                                                                                                                                                                 |
+|Name            |Valor    |Descrição                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |Limita a resposta apenas aos objetos que contêm os critérios especificados.                                                                                             |
 |$orderby        |cadeia de caracteres   |Por padrão, os objetos na resposta são classificação pelo valor createdDateTime em uma consulta. Você pode alterar a ordem da resposta usando o parâmetro *$orderby.*|
@@ -73,7 +73,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_itemphone"
+  "name": "get_itemphone_2"
 }
 -->
 
@@ -81,19 +81,19 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 GET https://graph.microsoft.com/beta/me/profile/phones
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-itemphone-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-itemphone-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-itemphone-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-itemphone-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-itemphone-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-itemphone-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-itemphone-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-itemphone-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

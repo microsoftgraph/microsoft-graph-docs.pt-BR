@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso labelingOptions
-description: Representa as opções de rótulo que podem ser fornecidas para as APIs de avaliação.
+title: Tipo de recurso labelingOptions
+description: Representa as opções de rotulagem que podem ser fornecidas às APIs de avaliação.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: da2231ae3eb95260663d2907f56f91b96e08278c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d2409bf538de3d37ca32cdf2fd1afb78a659817
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084013"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950295"
 ---
-# <a name="labelingoptions-resource-type"></a>tipo de recurso labelingOptions
+# <a name="labelingoptions-resource-type"></a>Tipo de recurso labelingOptions
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as opções de rótulo que podem ser fornecidas para as APIs de avaliação. **labelingOptions** deve ser passado para a API [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) para especificar detalhes sobre o rótulo que deve ser aplicado. 
+Representa as opções de rotulagem que podem ser fornecidas às APIs de avaliação. **labelingOptions** deve ser passado para a API [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) para especificar detalhes sobre o rótulo a ser aplicado. 
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade               | Tipo                                                | Descrição                                                                                                                   |
 | :--------------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
-| AssignmentMethod for utilizado       | Cadeia de caracteres                                              | Os valores possíveis são: `standard`, `privileged`, `auto`.                                                                        |
-| downgradeJustification | [downgradeJustification](downgradejustification.md) | O objeto Justification de downgrade que indica se o downgrade foi justificado e, em caso afirmativo, o motivo.                          |
-| extendedProperties     | Coleção [keyValuePair](keyvaluepair.md)          | As propriedades estendidas serão analisadas e retornadas no formato de metadados MIP rotulado padrão como parte das informações do rótulo. |
-| labelID                | Guid                                                | O GUID do rótulo que deve ser aplicado à informação.                                                              |
+| assignmentMethod       | Cadeia de caracteres                                              | Os valores possíveis são: `standard`, `privileged`, `auto`.                                                                        |
+| downgradeJustification | [downgradeJustification](downgradejustification.md) | O objeto de justificativa de downgrade que indica se downgrade foi justificado e, em caso afirmado, o motivo.                          |
+| extendedProperties     | Coleção [keyValuePair](keyvaluepair.md)          | As propriedades estendidas serão analisados e retornadas no formato de metadados padrão rotulados MIP como parte das informações do rótulo. |
+| labelId                | Guid                                                | O GUID do rótulo que deve ser aplicado às informações.                                                              |
 
 ## <a name="json-representation"></a>Representação JSON
 

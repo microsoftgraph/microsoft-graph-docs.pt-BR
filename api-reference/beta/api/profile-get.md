@@ -1,16 +1,16 @@
 ---
 title: Obter perfil
-description: Recupere as propriedades e os relacionamentos do objeto de perfil.
+description: Recupere as propriedades e as relações do objeto profile.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8334ebdf8c001cde4784cc07e1d990ca307029cb
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 5e75302cb787a898a0dd7b02498e99b898222fcb
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352179"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950597"
 ---
 # <a name="get-profile"></a>Obter perfil
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto de [perfil](../resources/profile.md) para um determinado usuário.
+Recupere as propriedades e as relações de um [objeto de perfil](../resources/profile.md) para um determinado usuário.
 
-O recurso de **perfil** expõe várias propriedades sofisticadas que são descritivas do usuário como [relações](../resources/profile.md#relationships), por exemplo, aniversários e atividades de educação. Para obter uma destas propriedades de navegação, use o método GET correspondente nessa propriedade. Consulte os [métodos](../resources/profile.md) expostos por **perfil**.
+O **recurso** de perfil expõe várias propriedades ricas que são [descritivas](../resources/profile.md#relationships)do usuário como relações , por exemplo, aniversários e atividades de educação. Para obter uma dessas propriedades de navegação, use o método GET correspondente nessa propriedade. Consulte os [métodos expostos](../resources/profile.md) pelo **perfil**.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
+| Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/profile
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$select` parâmetro de consulta. Especifique uma lista de propriedades a serem incluídas na resposta, separando-as por vírgulas. Para obter o desempenho ideal, selecione apenas o subconjunto de propriedades necessário.
+Este método dá suporte `$select` ao parâmetro de consulta. Especifique uma lista de propriedades para incluir na resposta, separando-as por vírgulas. Para obter o desempenho ideal, selecione apenas o subconjunto de propriedades necessárias.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -58,39 +58,39 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto de [perfil](../resources/profile.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e o objeto de perfil `200 OK` solicitado no corpo da resposta. [](../resources/profile.md)
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-a-users-profile"></a>Exemplo 1: obter o perfil de um usuário
+### <a name="example-1-get-a-users-profile"></a>Exemplo 1: OBTER o perfil de um usuário
 
-Veja a seguir um exemplo de solicitação de perfil GET.
+A seguir, um exemplo da solicitação de perfil GET.
 
 #### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_profile"
+  "name": "get_profile_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-profile-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-profile-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-profile-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -287,35 +287,35 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-expand-names-and-skills-collection-and-select-properties-within-the-entities"></a>Exemplo 2: expanda nomes e coleção de habilidades e selecione Propriedades dentro das entidades
+### <a name="example-2-expand-names-and-skills-collection-and-select-properties-within-the-entities"></a>Exemplo 2: Expanda nomes e conjunto de habilidades e selecione propriedades dentro das entidades
 
-Veja a seguir um exemplo de como usar os parâmetros de consulta $expand e $select para recuperar informações parciais de um perfil de usuário.
+A seguir, um exemplo de uso dos parâmetros de $expand e $select de consulta para recuperar informações parciais do perfil de um usuário.
 
 #### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_profile"
+  "name": "get_profile_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last),skills($select=displayName)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-profile-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-profile-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-profile-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

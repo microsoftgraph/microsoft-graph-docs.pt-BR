@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso threatAssessmentRequest
-description: Um tipo de resouce abstrato usado para representar um item de solicitação de avaliação de ameaça.
+description: Um tipo de recurso abstrato usado para representar um item de solicitação de avaliação de ameaça.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 00a180d1d78c47a50e44fc7606d65fa94cc8e3e2
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0be6931bf2589f20d26ee7fa37310f3181447b2c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721597"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950258"
 ---
 # <a name="threatassessmentrequest-resource-type"></a>Tipo de recurso threatAssessmentRequest
 
@@ -39,14 +39,14 @@ Uma solicitação de avaliação de ameaças pode ser um dos seguintes tipos:
 
 | Propriedade     | Tipo        | Descrição |
 | :-------------|:------------|:------------|
-|Ferramentas para desenvolvedores|[threatCategory](enums.md#threatcategory-values)|A categoria de ameaça. Os valores possíveis são: `spam`, `phishing`, `malware`.|
-|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|O tipo de conteúdo da avaliação de ameaças. Os valores possíveis são: `mail`, `url`, `file`.|
+|Ferramentas para desenvolvedores|threatCategory|A categoria de ameaça. Os valores possíveis são: `spam`, `phishing`, `malware`.|
+|contentType|threatAssessmentContentType|O tipo de conteúdo da avaliação de ameaças. Os valores possíveis são: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|O criador da solicitação de avaliação de ameaças.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-|expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|A avaliação esperada do enviador. Os valores possíveis são: `block` e `unblock`.|
+|expectedAssessment|threatExpectedAssessment|A avaliação esperada do enviador. Os valores possíveis são: `block` e `unblock`.|
 |id|Cadeia de caracteres|A ID da solicitação de avaliação de ameaça é um GUID (identificador global exclusivo).|
-|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|A origem da solicitação de avaliação de ameaças. Os valores possíveis são: `user` e `administrator`.|
-|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|O status do processo de avaliação. Os valores possíveis são: `pending`, `completed`.|
+|requestSource|threatAssessmentRequestSource|A origem da solicitação de avaliação de ameaças. Os valores possíveis são: `user` e `administrator`.|
+|status|threatAssessmentStatus|O status do processo de avaliação. Os valores possíveis são: `pending`, `completed`.|
 
 ## <a name="relationships"></a>Relações
 

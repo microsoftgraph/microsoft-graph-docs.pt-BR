@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 791bf418a525d09c0386b29d2914319f03c7e90b
-ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.openlocfilehash: 0c6a6f5c8ee8fe98d1e65163c2c9a30bb5ec7301
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101906"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948274"
 ---
 # <a name="create-chatmessage-in-channel"></a>Criar chatMessage no canal
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [chatMessage](../resources/chatmessage.md) no canal [especificado.](../resources/channel.md)
+Crie um [novo chatMessage](../resources/chatmessage.md) no canal [especificado](../resources/channel.md).
 
-> **Observação:** é uma violação dos termos [de uso usar](/legal/microsoft-apis/terms-of-use) o Microsoft Teams como um arquivo de log. Enviar apenas mensagens que as pessoas lerão.
+> **Observação**: é uma violação dos termos [de](/legal/microsoft-apis/terms-of-use) uso usar o Microsoft Teams como um arquivo de log. Envie apenas mensagens que as pessoas lerão.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,11 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Teamwork.Migrate.All |
 
-> **Observação:** As permissões de aplicativo só *são* suportadas para [migração.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+> **Observação**: as permissões de aplicativo só *são* suportadas para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
@@ -60,13 +61,13 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto chatMe
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um novo objeto [chatMessage](../resources/chatmessage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto chatMessage](../resources/chatmessage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-create-a-message-in-a-specified-channel"></a>Exemplo 1: Criar uma mensagem em um canal especificado
 
-Para obter uma lista mais abrangente de exemplos, consulte [Criar chatMessage em um canal ou chat.](chatmessage-post.md)
+Para obter uma lista mais abrangente de exemplos, consulte [Create chatMessage in a channel or a chat](chatmessage-post.md).
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -74,7 +75,7 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_1"
 }-->
 
 ```http
@@ -89,19 +90,19 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -160,11 +161,11 @@ Content-length: 160
 
 ### <a name="example-2-import-messages-text-only"></a>Exemplo 2: Importar mensagens (somente texto)
 
-> **Observação:** o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.
+> **Observação**: o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.
 
 #### <a name="request"></a>Solicitação
 <!-- { "blockType": "ignored" } -->
-O exemplo a seguir mostra como importar mensagens de back-in-time usando as `createDateTime` chaves no corpo da `from` solicitação.
+O exemplo a seguir mostra como importar mensagens back-in-time usando `createDateTime` as chaves e no corpo da `from` solicitação.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -252,11 +253,11 @@ HTTP/1.1 200 OK
 > [!NOTE]
 > Atualmente, as imagens em linha são o único tipo de mídia suportado pelo esquema de API de mensagem de importação.
 
-> **Observação:** o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.
+> **Observação**: o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.
 
 #### <a name="request"></a>Solicitação
 <!-- { "blockType": "ignored" } -->
-O exemplo a seguir mostra como importar mensagens de back-in-time contendo imagens em linha usando as teclas e o `createDateTime` `from` corpo da solicitação.
+O exemplo a seguir mostra como importar mensagens back-in-time que contêm imagens em linha usando as chaves e `createDateTime` `from` no corpo da solicitação.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages

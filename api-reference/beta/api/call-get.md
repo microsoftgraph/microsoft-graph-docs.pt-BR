@@ -1,16 +1,16 @@
 ---
 title: Obter chamada
-description: Recupere as propriedades e os relacionamentos de um objeto de chamada.
+description: Recupere as propriedades e as relações de um objeto de chamada.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 12641164d8334a30f5903462497792f00e30dc9c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 035dfff2d7189f67f05de241997391fb86437dce
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959728"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948512"
 ---
 # <a name="get-call"></a>Obter chamada
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto de chamada.
+Recupere as propriedades e as relações de um objeto de chamada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :-------------- | :----------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
-| Application                            | Nenhum.                                  |
+| Aplicativo                            | Nenhum                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,37 +49,37 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto de](../resources/call.md) chamada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-getting-a-peer-to-peer-call"></a>Exemplo 1: obtendo uma chamada ponto a ponto
+### <a name="example-1-getting-a-peer-to-peer-call"></a>Exemplo 1: Recebendo uma chamada ponto a ponto
 
 ##### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-call"
+  "name": "get-call-1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-call-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-call-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-call-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -166,32 +166,32 @@ Content-Type: application/json
   "toneInfo": null
 }
 ```
-### <a name="example-2-getting-a-group-call"></a>Exemplo 2: obtendo uma chamada de grupo
+### <a name="example-2-getting-a-group-call"></a>Exemplo 2: Receber uma chamada de grupo
 
 ##### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-call"
+  "name": "get-call-2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-call-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-call-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-call-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

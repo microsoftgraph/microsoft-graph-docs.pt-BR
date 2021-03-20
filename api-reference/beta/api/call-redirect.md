@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fb2aa01474a5c5d29ed1c87978c2d2aacae9ac92
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 51d25717f10db7ba29fb8364e513893c5e299266
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574892"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948475"
 ---
 # <a name="call-redirect"></a>call: redirect
 
@@ -55,10 +55,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |targets|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada simulring. Isso significa que todos os destinos serão tordos ao mesmo tempo e somente o primeiro destino que escolher será conectado. Suportamos até 25 destinos para simulação.
-|targetDisposition|String|(Preterido) Os valores possíveis são: `default` , `simultaneousRing` , `forward` . Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada de encaminhamento ou simulring do número de destinos fornecidos.|
+|targetDisposition|Cadeia de caracteres|(Preterido) Os valores possíveis são: `default` , `simultaneousRing` , `forward` . Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada de encaminhamento ou simulring do número de destinos fornecidos.|
 |timeout|Int32|O tempo decoro (em segundos) para a operação de redirecionamento. O intervalo do valor de tempo decor entre 15 e 90 segundos, inclusive. O valor de tempo decoro padrão é 55 segundos para um destino e 60 segundos para vários destinos (sujeitos a alterações). |
-|maskCallee|Boolean|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
-|maskCaller|Boolean|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
+|maskCallee|Booliano|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
+|maskCaller|Booliano|Indica se o chamador deve ser oculto do chamador. Se for true, a identidade do chamador será a identidade do bot. Padrão: false.|
 |callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em vez disso. Isso deve ser `https` .|
 
 ## <a name="response"></a>Resposta
@@ -128,7 +128,7 @@ Esses exemplos abrangem um fluxo de trabalho de uma notificação de chamada de 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request", 
-  "name": "call-redirect"
+  "name": "call-redirect-1"
 } -->
 ``` http
 POST https://graph.microsoft.com/beta/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
@@ -160,11 +160,11 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,7 +182,7 @@ HTTP/1.1 202 Accepted
 
 <!-- {
   "blockType": "example", 
-  "name": "call-redirect"
+  "name": "call-redirect-2"
 } -->
 ``` http
 POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039

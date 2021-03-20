@@ -3,14 +3,14 @@ title: Tipo de recurso urlAssessmentRequest
 description: Usado para criar e recuperar uma avaliação de ameaça de URL.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 226e4fff9114fbf13bc0e8bcdc9290180cc487f4
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 3d206e14f61bf273f8764a34e3d5ef6cbd154190
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720953"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950251"
 ---
 # <a name="urlassessmentrequest-resource-type"></a>Tipo de recurso urlAssessmentRequest
 

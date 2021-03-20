@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso justifyaction
+title: Tipo de recurso justifyAction
 description: Indica que uma justificativa é necessária para a operação especificada.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 9e26cd675ecb1a3a50c505c019244c60eaee88c0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1db6a91987fd1345ca6a1503dfbd51e3178e9b89
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039353"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950314"
 ---
-# <a name="justifyaction-resource-type"></a>tipo de recurso justifyaction
+# <a name="justifyaction-resource-type"></a>Tipo de recurso justifyAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indica que uma justificativa é necessária para a operação especificada. As APIs [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md)ou [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md) podem retornar **justifyaction**. A justificativa é fornecida por meio do [labelingOptions](../resources/labelingoptions.md). A chamada anterior deve ser repetida, mas com a propriedade **downgradeJustification** de **labelingOptions** definida com uma mensagem de justificativa, fornecida por meio de entrada do usuário ou lógica do aplicativo.
+Indica que uma justificativa é necessária para a operação especificada. As [APIs evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md)ou [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md) podem retornar **justifyAction**. A justificativa é fornecida por [meio de labelingOptions](../resources/labelingoptions.md). A chamada anterior deve ser repetida, mas com a propriedade **downgradeJustification** de **labelingOptions** definida com uma mensagem de justificativa, fornecida por meio da entrada do usuário ou da lógica do aplicativo.
 
 ## <a name="properties"></a>Propriedades
 

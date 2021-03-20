@@ -1,22 +1,22 @@
 ---
 title: Listar buckets
-description: Recupere uma lista de objetos **plannerbucket** contidos em um objeto plannerPlan.
+description: Recupere uma lista de objetos **plannerbucket** contidos por um objeto plannerPlan.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 88d6156b35063ccb5454278d38505c4f4dbd6291
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 40e42061c16ee26cc08b2f78b3e39a706bdd1032
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020657"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50949114"
 ---
 # <a name="list-buckets"></a>Listar buckets
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos [plannerBucket](../resources/plannerbucket.md) contidos em um objeto [plannerPlan](../resources/plannerplan.md) .
+Recupere uma lista de objetos [plannerBucket](../resources/plannerbucket.md) contidos em um [objeto plannerPlan.](../resources/plannerplan.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -42,7 +42,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [plannerBucket](../resources/plannerbucket.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [plannerBucket](../resources/plannerbucket.md) no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 ## <a name="example"></a>Exemplo
@@ -52,25 +52,25 @@ Este é um exemplo da solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_buckets"
+  "name": "get_buckets_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/buckets
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-buckets-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-buckets-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-buckets-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-buckets-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-buckets-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-buckets-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-buckets-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-buckets-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

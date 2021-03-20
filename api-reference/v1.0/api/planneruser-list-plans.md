@@ -5,18 +5,18 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c650995364c2ff30ba4e4bd938bd6a8f3e9921f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d3085195d49fe6aa1785d968c57fa8926ec972b4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020591"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948911"
 ---
 # <a name="list-plans"></a>Listar planos
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos **plannerplan** compartilhados com um objeto [User](../resources/user.md) .
+Recupere uma lista de objetos **plannerplan** compartilhados com um [objeto user.](../resources/user.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -56,25 +56,25 @@ Este é um exemplo da solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_plans"
+  "name": "get_plans_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/planner/plans
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-plans-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-plans-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-plans-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-plans-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-plans-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-plans-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-plans-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-plans-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

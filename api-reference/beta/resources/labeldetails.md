@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso labelDetails
+title: Tipo de recurso labelDetails
 description: Representa os detalhes do rótulo de um rótulo de proteção de informações.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 6b475c96b3ecbc2caa0aa147e3fc8fd0253ac243
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 214589dfcb26497b5271008f8a358d06a4fb700f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084034"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950300"
 ---
-# <a name="labeldetails-resource-type"></a>tipo de recurso labelDetails
+# <a name="labeldetails-resource-type"></a>Tipo de recurso labelDetails
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os detalhes do rótulo de um rótulo de proteção de informações. **labelDetails** fornece informações sobre um único rótulo de proteção de informações. Pode ser retornado por [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)e [extractLabel](../api/informationprotectionlabel-extractLabel.md)
+Representa os detalhes do rótulo de um rótulo de proteção de informações. **labelDetails** fornece informações sobre um único rótulo de proteção de informações. Pode ser retornado [por evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)e [extractLabel](../api/informationprotectionlabel-extractLabel.md)
 
 ## <a name="properties"></a>Propriedades
 
@@ -27,10 +27,10 @@ Representa os detalhes do rótulo de um rótulo de proteção de informações. 
 | color       | String  | A cor que a interface do usuário deve exibir para o rótulo, se configurada.                               |
 | description | Cadeia de caracteres  | A descrição definida pelo administrador para o rótulo.                                                                 |
 | id          | Cadeia de caracteres  | A ID do rótulo é um identificador global exclusivo (GUID).                                                          |
-| isActive    | Boolean | Indica se o rótulo está ativo ou não. Os rótulos ativos devem ser ocultos ou desabilitados nas interfaces de usuário. |
-| name        | Cadeia de caracteres  | O nome de texto não criptografado do rótulo.                                                                             |
-| sensitivity | Int32   | O valor de confidencialidade do rótulo, onde inferior é menos confidencial.                                           |
-| tooltip     | Cadeia de caracteres  | A dica de ferramenta que deve ser exibida para o rótulo em uma interface de usuário.                                      |
+| isActive    | Booliano | Indica se o rótulo está ativo ou não. Os rótulos ativos devem ser ocultos ou desabilitados nas interfaces do usuário. |
+| nome        | Cadeia de caracteres  | O nome do texto sem formatção do rótulo.                                                                             |
+| sensibilidade | Int32   | O valor de sensibilidade do rótulo, onde menor é menos sensível.                                           |
+| tooltip     | Cadeia de caracteres  | A dica de ferramenta que deve ser exibida para o rótulo em uma interface do usuário.                                      |
 
 ## <a name="json-representation"></a>Representação JSON
 

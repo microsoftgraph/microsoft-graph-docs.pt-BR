@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2fab1c2248414baab43db2bf9caf2e28c09df3ed
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dbdaf4a0332c52e932031da29e0427c3b054763b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959757"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948540"
 ---
 # <a name="delete-call"></a>Excluir chamada
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir ou desligar uma chamada ativa. Para chamadas de grupo, isso só excluirá o trecho de chamada, e a chamada de grupo subjacente ainda continuará.
+Excluir ou desligar uma chamada ativa. Para chamadas de grupo, isso excluirá apenas sua etapa de chamada e a chamada de grupo subjacente continuará.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Excluir ou desligar uma chamada ativa. Para chamadas de grupo, isso só excluir�
 | :-------------- | :----------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
-| Application                            | Nenhum.                                  |
+| Aplicativo                            | Nenhum                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -56,25 +56,25 @@ O exemplo a seguir mostra a solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-call"
+  "name": "delete-call-1"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-call-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-call-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -92,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-
 HTTP/1.1 204 No Content
 ```
 
-##### <a name="notification---terminating"></a>Notificação-encerramento
+##### <a name="notification---terminating"></a>Notificação - término
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -121,7 +121,7 @@ Content-Type: application/json
   
 ```
 
-##### <a name="notification---terminated"></a>Notificação-terminada
+##### <a name="notification---terminated"></a>Notificação - encerrada
 
 ```http
 POST https://bot.contoso.com/api/calls

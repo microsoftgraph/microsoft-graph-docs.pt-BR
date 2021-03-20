@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: db0164be77260c60c2d89c726b048b4af8dc741d
-ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.openlocfilehash: 29be6117b229da1d5b3921db7d52ae0e1897741c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101899"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948227"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Responder a uma mensagem em um canal
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma nova resposta a [um chatMessage](../resources/chatmessage.md) em um canal [especificado.](../resources/channel.md)
+Crie uma nova resposta a [um chatMessage](../resources/chatmessage.md) em um canal [especificado](../resources/channel.md).
 
-> **Observação:** é uma violação dos termos [de uso usar](/legal/microsoft-apis/terms-of-use) o Microsoft Teams como um arquivo de log. Enviar apenas mensagens que as pessoas lerão.
+> **Observação**: é uma violação dos termos [de](/legal/microsoft-apis/terms-of-use) uso usar o Microsoft Teams como um arquivo de log. Envie apenas mensagens que as pessoas lerão.
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -31,11 +31,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Teamwork.Migrate.All |
 
-> **Observação:** As permissões de aplicativo só *são* suportadas para [migração.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+> **Observação**: as permissões de aplicativo só *são* suportadas para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -53,11 +54,11 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto messag
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método `201 Created` retornará o código de resposta com a [mensagem](../resources/chatmessage.md) que foi criada.
+Se tiver êxito, este método retornará `201 Created` o código de resposta com a [mensagem](../resources/chatmessage.md) que foi criada.
 
-## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>Exemplo 1: Criar uma nova resposta a um chatMessage
+## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>Exemplo 1: Criar uma nova resposta para um chatMessage
 
-Para obter uma lista mais abrangente de exemplos, consulte [Criar chatMessage em um canal ou um chat.](chatmessage-post.md)
+Para obter uma lista mais abrangente de exemplos, consulte [Create chatMessage in a channel or a chat](chatmessage-post.md).
 
 ### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
@@ -149,11 +150,11 @@ Content-length: 160
 
 ### <a name="example-2-import-messages"></a>Exemplo 2: Importar mensagens
 
-> **Observação:** o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.
+> **Observação**: o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como importar mensagens de back-in-time usando as `createDateTime` chaves no corpo da `from` solicitação.
+O exemplo a seguir mostra como importar mensagens back-in-time usando `createDateTime` as chaves e no corpo da `from` solicitação.
 
 <!-- {
   "blockType": "response",

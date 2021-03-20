@@ -3,16 +3,16 @@ title: Carregar arquivos grandes usando os SDKs do Microsoft Graph
 description: Fornece orientações para carregar arquivos grandes usando os SDKs do Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 323ee872db1962119a2b34f99ad032b18b5c31f0
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 54ff14071a81ac286cebbd785216c02dc9cf6c23
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777579"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948634"
 ---
 # <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Carregar arquivos grandes usando os SDKs do Microsoft Graph
 
-Várias entidades no Microsoft Graph dão suporte a [carregamentos de arquivos retomáveis](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) para facilitar o carregamento de arquivos grandes. Em vez de tentar carregar todo o arquivo em uma única solicitação, o arquivo é dividido em partes menores e uma solicitação é usada para carregar uma única fatia. Para simplificar esse processo, os SDKs do Microsoft Graph implementam uma tarefa de upload de arquivo grande que gerencia o carregamento das fatias.
+Várias entidades no Microsoft Graph suportam carregamentos de arquivos [resumáveis](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) para facilitar o carregamento de arquivos grandes. Em vez de tentar carregar todo o arquivo em uma única solicitação, o arquivo é fatiado em partes menores e uma solicitação é usada para carregar uma única fatia. Para simplificar esse processo, os SDKs do Microsoft Graph implementam uma tarefa de carregamento de arquivo grande que gerencia o carregamento das fatias.
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -114,19 +114,6 @@ IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
             String.format("Uploaded %d bytes of %d total bytes", current, max)
         );
     }
-
-    @Override
-    public void success(final DriveItem result) {
-        System.out.println(
-            String.format("Uploaded file with ID: %s", result.id)
-        );
-    }
-
-    public void failure(final ClientException ex) {
-        System.out.println(
-            String.format("Error uploading file: %s", ex.getMessage())
-        );
-    }
 };
 
 // Create an upload session
@@ -141,8 +128,8 @@ UploadSession uploadSession = graphClient
     .buildRequest()
     .post();
 
-ChunkedUploadProvider<DriveItem> chunkedUploadProvider =
-    new ChunkedUploadProvider<DriveItem>
+LargeFileUploadTask<DriveItem> largeFileUploadTask =
+    new LargeFileUploadTask<DriveItem>
         (uploadSession, graphClient, fileStream, streamSize, DriveItem.class);
 
 // Config parameter is an array of integers
@@ -151,14 +138,14 @@ ChunkedUploadProvider<DriveItem> chunkedUploadProvider =
 int[] customConfig = { 320 * 1024 };
 
 // Do the upload
-chunkedUploadProvider.upload(callback, customConfig);
+largeFileUploadTask.upload(callback, customConfig);
 ```
 
 ---
 
-## <a name="resuming-a-file-upload"></a>Retomando um upload de arquivo
+## <a name="resuming-a-file-upload"></a>Retomar um carregamento de arquivo
 
-Os SDKs do Microsoft Graph dão suporte à [continuação dos carregamentos em andamento](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload). Se o aplicativo encontrar uma interrupção de conexão ou um status HTTP de 5. x. x durante o carregamento, você poderá retomar o upload.
+Os SDKs do Microsoft Graph [suportam a retomada de carregamentos em andamento.](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload) Se o aplicativo encontrar uma interrupção de conexão ou um status HTTP 5.x.x durante o carregamento, você poderá retomar o carregamento.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)
@@ -176,7 +163,7 @@ const resumedFile: DriveItem = await uploadTask.resume();
 ### <a name="java"></a>[Java](#tab/java)
 
 > [!NOTE]
-> No momento, o Java SDK não dá suporte à continuação dos downloads em andamento.
+> O Java SDK atualmente não dá suporte à retomada de downloads em andamento.
 
 ---
 <!-- markdownlint-enable MD024 -->

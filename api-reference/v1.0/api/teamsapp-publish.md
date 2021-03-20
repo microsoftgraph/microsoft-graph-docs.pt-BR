@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1984ed7226da71ba1baf1bf15a7d83df4e6609a0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1d746d4733301d8fcace84a0dba82a9a7234f320
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471646"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948669"
 ---
 # <a name="publish-teamsapp"></a>Publicar teamsapp
 
@@ -47,7 +47,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |Propriedade|Tipo|Descrição|
 |----|----|----|
-|requiresReview| Boolean | Esse parâmetro de consulta opcional aciona o processo de revisão do aplicativo. Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão. Se os usuários quiserem solicitar uma revisão antes da publicação, eles deverão definir  `requiresReview` como `true` . Um usuário com privilégios de administrador pode optar por não definir ou definir o valor como e o aplicativo será considerado aprovado e `requiresReview` `false`  publicará instantaneamente.|
+|requiresReview| Booliano | Esse parâmetro de consulta opcional aciona o processo de revisão do aplicativo. Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão. Se os usuários quiserem solicitar uma revisão antes da publicação, eles deverão definir  `requiresReview` como `true` . Um usuário com privilégios de administrador pode optar por não definir ou definir o valor como e o aplicativo será considerado aprovado e `requiresReview` `false`  publicará instantaneamente.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -72,9 +72,11 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_1"
 }-->
 
 ```http
@@ -84,6 +86,12 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 Para obter informações sobre como criar um arquivo zip de aplicativo do Microsoft Teams, consulte [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
@@ -113,9 +121,11 @@ Content-Type: application/json
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_2"
 }-->
 
 ```http
@@ -123,6 +133,16 @@ POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?requiresReview=true
 Content-type: application/zip
 Content-length: 244
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -154,7 +174,7 @@ Location: https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-4
 
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_3"
 }-->
 
 ```http

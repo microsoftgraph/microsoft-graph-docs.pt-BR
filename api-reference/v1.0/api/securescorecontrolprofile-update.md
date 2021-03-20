@@ -5,18 +5,18 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6192d33e2d7d1b98e61a4d9f28f863cd03e234d7
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: ddedbb28f16defa68cecd9d03ac24174c916b175
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330365"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50948756"
 ---
 # <a name="update-securescorecontrolprofile"></a>Atualizar secureScoreControlProfile
 
 Namespace: microsoft.graph
 
-Atualize um objeto **secureScoreControlProfile** editável em qualquer solução integrada para alterar várias propriedades, como **assignedTo** ou **tenantNote**.
+Atualizar um objeto **secureScoreControlProfile** editável em qualquer solução integrada para alterar várias propriedades, como **assignedTo** ou **tenantNote**.
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,29 +41,29 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | Portador {código}. Obrigatório.|
-|Preferir | Return = representação. |
+|Preferir | return=representation. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON dos valores de campos relevantes que devem ser atualizados. O corpo **deve** conter a `vendorInformation` propriedade com os `provider` campos válidos e `vendor` . A tabela a seguir lista os campos que podem ser atualizados para um **secureScoreControlProfile**. Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece uma representação JSON dos valores para campos relevantes que devem ser atualizados. O corpo **deve** conter a `vendorInformation` propriedade com campos `provider` `vendor` válidos e válidos. A tabela a seguir lista os campos que podem ser atualizados para **um secureScoreControlProfile**. Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|Cadeia de caracteres|Nome do analista ao qual o controle é atribuído para a triagem, implementação ou correção.|
-|comment|String|Comentários de analista sobre o controle (para o gerenciamento de controle de clientes).|
+|assignedTo|Cadeia de caracteres|Nome do analista ao que o controle é atribuído para triagem, implementação ou correção.|
+|comment|String|Comentários do analista sobre o controle (para gerenciamento de controle do cliente).|
 |estado| Cadeia de caracteres|Configuração orientada pelo analista no controle. Os valores possíveis são: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = SecureScore;). **Os campos Provider e Vendor são necessários.** |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor de produtos/serviços de segurança, provedor e subprovider (por exemplo, vendor=Microsoft; provider=SecureScore;). **Os campos provedor e fornecedor são necessários.** |
 
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
-Se o cabeçalho de solicitação opcional for usado, o método retornará um `200 OK` código de resposta e o objeto [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) atualizado no corpo da resposta.
+Se o header de solicitação opcional for usado, o método retornará um código de resposta e o objeto `200 OK` [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-### <a name="example-1-request-without-prefer-header"></a>Exemplo 1: solicitação sem cabeçalho de preferência
+### <a name="example-1-request-without-prefer-header"></a>Exemplo 1: Solicitar sem o header Prefer
 
 ### <a name="request"></a>Solicitação
 
@@ -72,7 +72,7 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_update"
+  "name": "securescorecontrolprofiles_update_1"
 }-->
 
 ```http
@@ -93,15 +93,15 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
@@ -124,15 +124,17 @@ Veja a seguir o exemplo de uma resposta bem-sucedida.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a>Exemplo 2: solicitação com cabeçalho preferencial
+### <a name="example-2-request-with-prefer-header"></a>Exemplo 2: Solicitar com o header Prefer
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação que inclui o `Prefer` cabeçalho da solicitação.
+O exemplo a seguir mostra uma solicitação que inclui o `Prefer` header de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_update"
+  "name": "securescorecontrolprofiles_update_2"
 }-->
 
 ```http
@@ -151,10 +153,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta quando o cabeçalho de `Prefer: return=representation` solicitação opcional é usado.
+A seguir, um exemplo da resposta quando o `Prefer: return=representation` header de solicitação opcional é usado.
 
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
