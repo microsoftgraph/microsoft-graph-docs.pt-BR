@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 620ca66a2f443f1cf935cb9b5accc35c68d7eb1d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 8d636cab5663633ba78e76057dc9ba3d555fbdc4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773960"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942883"
 ---
 # <a name="list-agreements"></a>Listar contratos
 
@@ -19,14 +19,19 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de objetos [de](../resources/agreement.md) contrato.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | Agreement.Read.All |
+|Delegado (conta corporativa ou de estudante)     | Agreement.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
+
+Ao chamar em nome de um usuário, o usuário precisa pertencer a uma das seguintes funções de diretório. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
++ Administrador Global
++ Administrador de Acesso Condicional
++ Administrador de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

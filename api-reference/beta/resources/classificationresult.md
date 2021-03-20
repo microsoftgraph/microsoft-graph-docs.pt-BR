@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso classificationResult
+title: Tipo de recurso classificationResult
 description: Representa o resultado de uma solicitação de classificação.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 903284f99933c131a24474ac6f024a2c4c2550f1
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 5ecc16197ef4671c6e83883bc69aed45b3ffa200
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405579"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941817"
 ---
-# <a name="classificationresult-resource-type"></a>tipo de recurso classificationResult
+# <a name="classificationresult-resource-type"></a>Tipo de recurso classificationResult
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o resultado de uma operação de classificação do mecanismo de classificação da Microsoft. Os resultados de classificação de dados da proteção de informações do Azure, Office e outros serviços da Microsoft podem retornar um [conjunto bem definido de tipos de classificação](/office365/securitycompliance/what-the-sensitive-information-types-look-for). Esses tipos podem ser fornecidos para a API [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) para resolver informações confidenciais em um rótulo de proteção de informações da Microsoft. 
+Representa o resultado de uma operação de classificação do Mecanismo de Classificação da Microsoft. Os resultados da classificação de dados da Proteção de Informações do Azure, do Office e de outros serviços da Microsoft podem retornar um conjunto bem [definido de tipos de classificação.](/office365/securitycompliance/what-the-sensitive-information-types-look-for) Esses tipos podem ser fornecidos à API [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) para resolver uma informação confidenciais para um rótulo de Proteção de Informações da Microsoft. 
 
 ## <a name="properties"></a>Propriedades
 
@@ -26,7 +26,7 @@ Representa o resultado de uma operação de classificação do mecanismo de clas
 | :-------------- | :---- | :--------------------------------------------------------------------- |
 | confidenceLevel | Int32 | O nível de confiança, de 0 a 100, do resultado.                         |
 | Count           | Int32 | O número de instâncias do tipo de informação específico na entrada. |
-| sensitiveTypeId | GUID  | O GUID do tipo de informação confidencial descoberto.                 |
+| sensitiveTypeId | GUID  | O GUID do tipo de informação confidenciais descoberto.                 |
 
 ## <a name="json-representation"></a>Representação JSON
 

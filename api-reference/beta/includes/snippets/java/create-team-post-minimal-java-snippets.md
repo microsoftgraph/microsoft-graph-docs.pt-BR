@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4ab3cfc5a66a8d56a08619f40345c755088d4ba4
-ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
+ms.openlocfilehash: 45b5c4b3c030b9fdb9a636f05d9f862167dcd9ea
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49556283"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942246"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Team team = new Team();
 team.additionalDataManager().put("template@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/teamsTemplates('standard')"));

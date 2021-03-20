@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: eb28f345aba008a0f2d5bb5ab4723c2ffbb8aca3
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: e55abdad4a03319407b1c6e31e37e717739f0d10
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760929"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941761"
 ---
 # <a name="publishedresource-resource-type"></a>Tipo de recurso publishedResource
 
@@ -38,7 +38,7 @@ Representa o recurso publicado local. Um administrador de locatários pode publi
 |:-------------|:------------|:------------|
 |displayName|Cadeia de caracteres| Nome de exibição do publishedResource.|
 |id|Cadeia de caracteres| A id do objeto do publishedResource. Somente leitura.|
-|publishingType|string| Os valores possíveis são: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|Cadeia de caracteres| Os valores possíveis são: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 |resourceName|Cadeia de caracteres|Nome do publishedResource.|
 
 ## <a name="relationships"></a>Relações

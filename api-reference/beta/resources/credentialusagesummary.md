@@ -1,24 +1,24 @@
 ---
-title: Tipo de recurso credentialUsageSummary
-description: Representa o estado atual de quantos usuários em sua organização estão usando recursos de redefinição de senha de autoatendado.
+title: tipo de recurso credentialUsageSummary
+description: Representa o estado atual de quantos usuários em sua organização estão usando recursos de redefinição de senha de autoatendados.
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 03ae7b4b03cf58301895e5246fa4cb86d1b79667
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 9db31a0d0397f1394a342fb52796a1bec37bae36
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157698"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941821"
 ---
-# <a name="credentialusagesummary-resource-type"></a>Tipo de recurso credentialUsageSummary
+# <a name="credentialusagesummary-resource-type"></a>tipo de recurso credentialUsageSummary
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o estado atual de quantos usuários em sua organização estão usando recursos de redefinição de senha de autoatendado.
+Representa o estado atual de quantos usuários em sua organização estão usando recursos de redefinição de senha de autoatendados.
 
 ## <a name="methods"></a>Métodos
 
@@ -30,11 +30,11 @@ Representa o estado atual de quantos usuários em sua organização estão usand
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| authMethod | string | Representa o método de autenticação que o usuário usou. Os valores possíveis são: , , , (usado somente para redefinição de senha de `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` autoatendido) `appNotification` `appCode` e  `alternateMobileCall` (somente com suporte para registro). |
+| authMethod | usageAuthMethod | Representa o método de autenticação que o usuário usou. Os valores possíveis são: , , , , , (usado apenas para redefinição de senha de `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` autoatendido), , (suportado somente `appNotification` `appCode` no `alternateMobileCall` registro), , , `fido` `appPassword` `unknownFutureValue` . |
 | failureActivityCount | Int64 | Fornece a contagem de redefinições com falha ou dados de registro. |
-| recurso | string | Define o recurso a ser reportdo. Os valores possíveis são: `registration` e `reset` . |
-| id | String | O identificador exclusivo da atividade. Somente leitura. |
-| successfulActivityCount | Int64 | Fornece a contagem de registros ou redefinições bem-sucedidos. |
+| feature | featureType | Define o recurso a ser relatório. Os valores possíveis são: `registration`, `reset`, `unknownFutureValue`. |
+| id | Cadeia de caracteres | O identificador exclusivo da atividade. Somente leitura. |
+| successfulActivityCount | Int64 | Fornece a contagem de registros bem-sucedidos ou redefinições. |
 
 ## <a name="relationships"></a>Relações
 

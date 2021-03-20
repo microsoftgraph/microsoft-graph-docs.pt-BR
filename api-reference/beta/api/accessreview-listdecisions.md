@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b21a7ac3d10e324835922544232a10fbcade409c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 74ac3d2d9ec8857333beb94d8c5c96f1c4684c6b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439344"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943157"
 ---
 # <a name="list-accessreview-decisions"></a>Listar decisões do accessReview
 
@@ -56,25 +56,25 @@ Se tiver êxito, este método retornará um código de resposta e uma matriz de 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_accessReview_decisions"
+  "name": "get_accessReview_decisions_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/decisions
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-decisions-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-decisions-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreview-decisions-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreview-decisions-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-accessreview-decisions-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accessreview-decisions-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-decisions-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-decisions-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -111,10 +111,10 @@ Content-type: application/json
 |:---------------|:--------|:----------|
 |[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recupere uma revisão de acesso. |
 |[Listar minhas decisões do accessReview](accessreview-listmydecisions.md) |        [Coleção accessReviewDecision](../resources/accessreviewdecision.md)|    Como revisor, receba minhas decisões de um accessReview.|
-|[Enviar lembrete accessReview](accessreview-sendreminder.md) |       Nenhum.   |   Envie um lembrete aos revisores de um accessReview. |
-|[Parar accessReview](accessreview-stop.md) |        Nenhum.   |   Pare um accessReview. |
-|[Redefinir as decisões do accessReview](accessreview-reset.md) |        Nenhum.   |   Redefinir as decisões em um accessReview em andamento.|
-|[Aplicar decisões do accessReview](accessreview-apply.md) |        Nenhum.   |   Aplicar as decisões de um accessReview concluído.|
+|[Enviar lembrete accessReview](accessreview-sendreminder.md) |       Nenhum   |   Envie um lembrete aos revisores de um accessReview. |
+|[Parar accessReview](accessreview-stop.md) |        Nenhum   |   Pare um accessReview. |
+|[Redefinir as decisões do accessReview](accessreview-reset.md) |        Nenhum   |   Redefinir as decisões em um accessReview em andamento.|
+|[Aplicar decisões do accessReview](accessreview-apply.md) |        Nenhum   |   Aplicar as decisões de um accessReview concluído.|
 
 
 <!--

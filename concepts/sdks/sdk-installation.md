@@ -1,14 +1,14 @@
 ---
 title: Instalar o SDK do Microsoft Graph
-description: Fornece instruções para a instalação dos SDKs C#, Java, JavaScript, Objective-C, PHP e Ruby do Microsoft Graph.
+description: Fornece instruções para instalar os C#, Java, Javascript, Objective-C, PHP e Ruby Microsoft Graph SDKs.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 7f96266c1ff774f52e559737fe67f032f1e54fdc
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: cd019a8f13bd0ffe154a2a998d59815addf664e9
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580953"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941390"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Instalar os SDKs do Microsoft Graph
 
@@ -18,49 +18,45 @@ Os SDKs do Microsoft Graph estão disponíveis para serem incluídos em seus pro
 
 O SDK do Microsoft Graph .NET está incluído nos seguintes pacotes NuGet:
 
-- [Microsoft. Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) -contém os modelos e criadores de solicitação para acessar o `v1.0` ponto de extremidade com a API fluente. O Microsoft. Graph tem uma dependência em Microsoft. Graph. Core.
-- [Microsoft. Graph. beta](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet) -contém os modelos e criadores de solicitação para acessar o `beta` ponto de extremidade com a API fluente. Microsoft. Graph. beta tem uma dependência em Microsoft. Graph. Core.
-- [Microsoft. Graph. Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet) -a biblioteca principal para fazer chamadas para o Microsoft Graph.
-- [Microsoft. Graph. auth](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth) : fornece um wrapper baseado em cenário de autenticação da biblioteca de autenticação da Microsoft (MSAL) para uso com o SDK do Microsoft Graph. Microsoft. Graph. auth tem uma dependência em Microsoft. Graph. Core.
+- [Microsoft.Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - Contém os modelos e os construtores de solicitação para acessar o ponto `v1.0` de extremidade com a API fluente. O Microsoft.Graph tem uma dependência do Microsoft.Graph.Core.
+- [Microsoft.Graph.Beta](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet) - Contém os modelos e os construtores de solicitação para acessar o ponto de extremidade `beta` com a API fluente. O Microsoft.Graph.Beta tem uma dependência do Microsoft.Graph.Core.
+- [Microsoft.Graph.Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - A biblioteca principal para fazer chamadas para o Microsoft Graph.
+- [Microsoft.Graph.Auth](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth) - Fornece um wrapper baseado em cenário de autenticação da Biblioteca de Autenticação da Microsoft (MSAL) para uso com o SDK do Microsoft Graph. Microsoft.Graph.Auth tem uma dependência em Microsoft.Graph.Core.
 
-Você pode usar a [interface do usuário do Gerenciador de pacotes no Visual Studio ou no console do Gerenciador de pacotes](/nuget/quickstart/install-and-use-a-package-in-visual-studio) para instalar os pacotes do Microsoft. Graph em seu projeto. Os seguintes comandos do console do Gerenciador de pacotes instalarão as bibliotecas Microsoft. Graph, Microsoft. Graph. Core e Microsoft. Graph. auth. O Microsoft. Graph. Core é instalado como uma dependência de Microsoft. Graph.
+Você pode usar a interface [do usuário Gerenciador de Pacotes no](/nuget/quickstart/install-and-use-a-package-in-visual-studio) Visual Studio ou o console Gerenciador de Pacotes para instalar os pacotes do Microsoft.Graph em seu projeto. Os comandos Gerenciador de Pacotes Console a seguir instalarão as bibliotecas Microsoft.Graph, Microsoft.Graph.Core e Microsoft.Graph.Auth. O Microsoft.Graph.Core é instalado como uma dependência do Microsoft.Graph.
 
 ```PowerShell
 Install-Package Microsoft.Graph
 Install-Package Microsoft.Graph.Auth -IncludePrerelease
 ```
 
-## <a name="install-the-microsoft-graph-java-sdk"></a>Instalar o SDK do Microsoft Graph Java
+## <a name="install-the-microsoft-graph-java-sdk"></a>Instalar o Microsoft Graph Java SDK
 
-O SDK do Microsoft Graph Java está incluído nos seguintes pacotes:
+O microsoft graph Java SDK está incluído nos seguintes pacotes:
 
-- [Microsoft-Graph](https://github.com/microsoftgraph/msgraph-sdk-java) -contém os modelos e criadores de solicitação para acessar o `v1.0` ponto de extremidade com a API fluente.
-- [Microsoft-Graph-beta](https://github.com/microsoftgraph/msgraph-beta-sdk-java) -contém os modelos e criadores de solicitação para acessar o `beta` ponto de extremidade com a API fluente.
-- [Microsoft-Graph-Core](https://github.com/microsoftgraph/msgraph-sdk-java-core) -a biblioteca principal para fazer chamadas para o Microsoft Graph.
-- [Microsoft-Graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth) -fornece um wrapper baseado em cenário de autenticação da biblioteca de autenticação da Microsoft (MSAL) para uso com o SDK do Microsoft Graph.
+- [microsoft-graph](https://github.com/microsoftgraph/msgraph-sdk-java) - Contém os modelos e os construtores de solicitação para acessar o ponto `v1.0` de extremidade com a API fluente.
+- [microsoft-graph-beta](https://github.com/microsoftgraph/msgraph-beta-sdk-java) - Contém os modelos e os construtores de solicitação para acessar o ponto de extremidade `beta` com a API fluente.
+- [microsoft-graph-core](https://github.com/microsoftgraph/msgraph-sdk-java-core) - A biblioteca principal para fazer chamadas para o Microsoft Graph.
+- [microsoft-graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth) - Fornece um wrapper baseado em cenário de autenticação da Biblioteca de Autenticação da Microsoft (MSAL) para uso com o SDK do Microsoft Graph.
 
-### <a name="install-the-microsoft-graph-java-sdk-via-gradle"></a>Instalar o SDK do Microsoft Graph Java via gradle
+### <a name="install-the-microsoft-graph-java-sdk-via-gradle"></a>Instalar o Microsoft Graph Java SDK via Gradle
 
-Adicione o repositório e uma dependência de compilação do Microsoft-Graph à compilação do seu projeto. gradle:
+Adicione o repositório e uma dependência de compilação do microsoft-graph ao build.gradle do seu projeto:
 
 ```Gradle
 repository {
     jcenter()
-    jcenter{
-        url 'https://oss.jfrog.org/artifactory/oss-snapshot-local'
-    }
 }
 
 dependency {
     // Include the sdk as a dependency
-    implementation 'com.microsoft.graph:microsoft-graph:2.+'
-    implementation 'com.microsoft.graph:microsoft-graph-auth:0.3.0'
+    implementation 'com.microsoft.graph:microsoft-graph:3.+'
 }
 ```
 
-### <a name="install-the-microsoft-graph-java-sdk-via-maven"></a>Instalar o SDK do Microsoft Graph Java via Maven
+### <a name="install-the-microsoft-graph-java-sdk-via-maven"></a>Instalar o microsoft graph Java SDK via Maven
 
-Adicione os repositórios no `profiles` elemento no pom.xml:
+Adicione os repositórios no `profiles` elemento em pom.xml:
 
 ```xml
 <profiles>
@@ -76,102 +72,85 @@ Adicione os repositórios no `profiles` elemento no pom.xml:
             </repository>
         </repositories>
     </profile>
-    <profile>
-       <id>allow-snapshots</id>
-          <activation><activeByDefault>true</activeByDefault></activation>
-       <repositories>
-         <repository>
-           <id>snapshots-repo</id>
-           <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-           <releases><enabled>false</enabled></releases>
-           <snapshots><enabled>true</enabled></snapshots>
-         </repository>
-       </repositories>
-     </profile>
 </profiles>
 ```
 
-Adicione a dependência no `dependencies` elemento no pom.xml:
+Adicione a dependência no `dependencies` elemento em pom.xml:
 
 ```xml
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>[2.0,)</version>
-</dependency>
-<dependency>
-    <groupId>com.microsoft.graph</groupId>
-    <artifactId>microsoft-graph-auth</artifactId>
-    <version>0.3.0</version>
+    <version>[3.0,)</version>
 </dependency>
 ```
 
-## <a name="install-the-microsoft-graph-javascript-sdk"></a>Instalar o SDK do JavaScript do Microsoft Graph
+## <a name="install-the-microsoft-graph-javascript-sdk"></a>Instalar o SDK Javascript do Microsoft Graph
 
-O SDK do JavaScript do Microsoft Graph está incluído nos seguintes pacotes:
+O SDK Javascript do Microsoft Graph está incluído nos seguintes pacotes:
 
-- @microsoft/Microsoft-Graph-Client ([NPM](https://www.npmjs.com/package/@microsoft/microsoft-graph-client))-a biblioteca principal para fazer chamadas para o Microsoft Graph.
-- @microsoft/Microsoft-Graph-Types ([NPM](https://www.npmjs.com/package/@microsoft/microsoft-graph-types))-os tipos de typescript para entidades do Microsoft Graph.
+- @microsoft/microsoft-graph-client ([npm](https://www.npmjs.com/package/@microsoft/microsoft-graph-client))- A biblioteca principal para fazer chamadas ao Microsoft Graph.
+- @microsoft/microsoft-graph-types ([npm](https://www.npmjs.com/package/@microsoft/microsoft-graph-types)) - Os tipos Typescript para as entidades do Microsoft Graph.
 
-Você pode usar o [NPM](https://www.npmjs.com) para instalar o SDK do JavaScript do Microsoft Graph:
+Você pode usar [npm](https://www.npmjs.com) para instalar o SDK Javascript do Microsoft Graph:
 
 ```Shell
 npm install @microsoft/microsoft-graph-client --save
 npm install @microsoft/microsoft-graph-types --save-dev
 ```
 
-## <a name="install-the-microsoft-graph-objective-c-sdk"></a>Instalar o SDK do Microsoft Graph objetivo-C
+## <a name="install-the-microsoft-graph-objective-c-sdk"></a>Instalar o SDK Do Microsoft Graph Objective-C
 
-O SDK do Microsoft Graph objetivo-C suporta as plataformas iOS e macOS e pode ser instalado em seu projeto usando o CocoaPods ou o Carthage.
+O SDK Do Microsoft Graph Objective-C dá suporte a plataformas iOS e macOS e pode ser instalado em seu projeto usando CocoaPods ou Cartago.
 
-### <a name="install-the-microsoft-graph-objective-c-sdk-using-cocoapods"></a>Instale o SDK do Microsoft Graph objetivo-C usando Cocoapods
+### <a name="install-the-microsoft-graph-objective-c-sdk-using-cocoapods"></a>Instalar o SDK Objective-C do Microsoft Graph usando Cocoapods
 
-Adicione a seguinte linha no seu podfile para incluir o SDK do Microsoft Graph objetivo e o SDK do Microsoft Graph objetivo-C de autenticação no seu projeto do Xcode:
+Adicione a seguinte linha em seu arquivo de pod para incluir o SDK objective-C do Microsoft Graph e o SDK Auth objective-C do Microsoft Graph no seu projeto de xcode:
 
 ```ruby
 pod 'MSGraphClientSDK'
 pod 'MSGraphMSALAuthProvider'
 ```
 
-### <a name="install-the-microsoft-graph-objective-c-sdk-using-carthage"></a>Instale o SDK do Microsoft Graph objetivo-C usando Carthage
+### <a name="install-the-microsoft-graph-objective-c-sdk-using-carthage"></a>Instalar o SDK Do Microsoft Graph Objective-C usando Cartago
 
-Execute as seguintes etapas para instalar o Microsoft Graph objector-C SDK e o Microsoft Graph Objective SDK-C auth using the [Carthage](https://github.com/Carthage/Carthage) Package Manager.
+Execute as etapas a seguir para instalar o SDK do Microsoft Graph Objective-C e o SDK do Microsoft Graph Objective-C Auth usando o gerenciador de pacotes [de](https://github.com/Carthage/Carthage) Cartago.
 
-1. Crie um **cartfile** que especifica o repositório e a [marca de versão](https://github.com/microsoftgraph/msgraph-sdk-objc/releases) do SDK do
+1. Crie um **Cartfile** que especifica o repositório e a marca de lançamento do GitHub do SDK Do Objective-C [para](https://github.com/microsoftgraph/msgraph-sdk-objc/releases) o destino.
 
     ```text
     github "microsoftgraph/msgraph-sdk-objc" "tags/<latest_release_tag>"
     github "microsoftgraph/msgraph-sdk-objc-auth" "tags/<latest_release_tag>"
     ```
 
-1. Executar `carthage update` . Isso irá buscar dependências em uma pasta Carthage/checkouts e, em seguida, cria a biblioteca MSGraphClientSDK.
+1. Executar `carthage update` . Isso buscará dependências em uma pasta Cartago/Checkouts e criará a biblioteca MSGraphClientSDK.
 
-1. Usando o Xcode, na guia configurações **gerais** da sua meta de aplicativo, na seção **estruturas e bibliotecas vinculadas** , arraste e solte o **MSGraphClientSDK. Framework** e o **MSGraphMSALAuthProvider. Framework** da pasta Carthage/Build no disco.
+1. Usando o Xcode, na  guia Configurações Gerais do destino do aplicativo, na seção **Estruturas Vinculadas e Bibliotecas,** arraste e solte a **MSGraphClientSDK.framework** e **MSGraphMSALAuthProvider.framework** da pasta Cartago/Complicação no disco.
 
-1. Na guia Configurações de **fases de compilação** do seu destino de aplicativo, clique no **+** ícone e escolha **nova fase de script de execução**. Crie um script de execução em que você especifique seu shell (ex:/bin/sh) e adicione o seguinte conteúdo ao script:
+1. Na guia **Fases** de Com build do destino do aplicativo, clique no ícone e **+** escolha Nova Fase de Script de **Executar.** Crie um script de executar no qual você especifique seu shell (ex: /bin/sh) e adicione o seguinte conteúdo ao script:
 
     ```Shell
     /usr/local/bin/carthage copy-frameworks
     ```
 
-1. Adicione os caminhos para os frameworks que você deseja usar em **arquivos de entrada**.
+1. Adicione os caminhos às estruturas que você deseja usar em **Arquivos de Entrada**.
 
     ```Shell
     $(SRCROOT)/Carthage/Build/iOS/MSGraphClientSDK.framework
     $(SRCROOT)/Carthage/Build/iOS/MSGraphMSALAuthProvider.framework
     ```
 
-## <a name="install-the-microsoft-graph-php-sdk"></a>Instalar o SDK do Microsoft Graph PHP
+## <a name="install-the-microsoft-graph-php-sdk"></a>Instalar o SDK PHP do Microsoft Graph
 
-O [SDK do Microsoft Graph php](https://github.com/microsoftgraph/msgraph-sdk-php) está disponível no [packagist.org](https://packagist.org/packages/microsoft/microsoft-graph) e pode ser instalado das seguintes maneiras:
+O [SDK PHP](https://github.com/microsoftgraph/msgraph-sdk-php) do Microsoft Graph está disponível packagist.org [e](https://packagist.org/packages/microsoft/microsoft-graph) pode ser instalado das seguintes maneiras:
 
-### <a name="install-the-microsoft-graph-php-sdk-manually-using-composer"></a>Instalar o SDK do Microsoft Graph PHP manualmente usando o Composer
+### <a name="install-the-microsoft-graph-php-sdk-manually-using-composer"></a>Instalar o SDK PHP do Microsoft Graph manualmente usando o compositor
 
 ```Shell
 composer require microsoft/microsoft-graph
 ```
 
-### <a name="install-the-microsoft-graph-php-sdk-using-composerjson"></a>Instale o SDK do Microsoft Graph PHP usando composer.jsno
+### <a name="install-the-microsoft-graph-php-sdk-using-composerjson"></a>Instalar o SDK PHP do Microsoft Graph usando composer.json
 
 ```json
 {
@@ -183,11 +162,11 @@ composer require microsoft/microsoft-graph
 
 ## <a name="install-the-microsoft-powershell-sdk"></a>Instalar o SDK do Microsoft PowerShell
 
-Confira [instalar o SDK do Microsoft Graph PowerShell](../powershell/installation.md).
+Consulte [Install the Microsoft Graph PowerShell SDK](../powershell/installation.md).
 
-## <a name="install-the-microsoft-graph-ruby-sdk"></a>Instalar o SDK do Microsoft Graph Ruby
+## <a name="install-the-microsoft-graph-ruby-sdk"></a>Instalar o SDK ruby do Microsoft Graph
 
-O [SDK do Microsoft Graph Ruby](https://github.com/microsoftgraph/msgraph-sdk-ruby) está disponível no [RubyGems.org](https://rubygems.org/) e pode ser instalado usando o seguinte comando:
+O [SDK ruby](https://github.com/microsoftgraph/msgraph-sdk-ruby) do Microsoft Graph está disponível no rubygems.org [e](https://rubygems.org/) pode ser instalado usando o seguinte comando:
 
 ```ruby
 gem install microsoft_graph

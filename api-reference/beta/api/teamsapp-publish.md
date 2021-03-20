@@ -1,16 +1,16 @@
 ---
 title: Publicar teamsapp
-description: Publicar um aplicativo no catálogo de aplicativos do Microsoft Teams.
+description: Publique um aplicativo no catálogo de aplicativos do Microsoft Teams.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9e8579bb2da482e18d2524c82bee985b9eb8ae39
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: a62760b46c66d2046c8d42a476275c5430ad043a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572181"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942216"
 ---
 # <a name="publish-teamsapp"></a>Publicar teamsApp
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Publicar um [aplicativo](../resources/teamsapp.md) no catálogo de aplicativos do Microsoft Teams.
-Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos do locatário); o recurso criado terá um valor de propriedade **distributionMethod** de `organization` .
+Publique [um aplicativo](../resources/teamsapp.md) no catálogo de aplicativos do Microsoft Teams.
+Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos de locatários); o recurso criado terá um **valor de propriedade distributionMethod** de `organization` .
 
-A propriedade **requiresReview** permite que qualquer usuário envie um aplicativo para revisão por um administrador. Os administradores podem aprovar ou rejeitar esses aplicativos por meio desta API ou do centro de administração do Microsoft Teams.
+A **propriedade requiresReview** permite que qualquer usuário envie um aplicativo para revisão por um administrador. Os administradores podem aprovar ou rejeitar esses aplicativos por meio dessa API ou do Centro de administração do Microsoft Teams.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
 |:----------------------------------     |:-------------|
-| Delegada (conta corporativa ou de estudante) | AppCatalog. Submit, AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
 | Aplicativo                            | Sem suporte. |
 
@@ -41,7 +41,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /appCatalogs/teamsApps
 ```
 
-Para publicar um aplicativo que exija uma análise:
+Para publicar um aplicativo que exija uma revisão:
 
 ```http
 POST /appCatalogs/teamsApps?requiresReview:{Boolean}
@@ -51,35 +51,35 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |Propriedade|Tipo|Descrição|
 |----|----|----|
-|requiresReview| Boolean | Esse parâmetro de consulta opcional dispara o processo de revisão do aplicativo. Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão. Se os usuários desejarem solicitar uma revisão antes da publicação, eles devem  `requiresReview` ser definidos como `true` . Um usuário com privilégios de administrador pode optar por não definir `requiresReview` ou definir o valor como `false`  e o aplicativo será considerado aprovado e publicar instantaneamente.|
+|requiresReview| Booliano | Esse parâmetro de consulta opcional aciona o processo de revisão do aplicativo. Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão. Se os usuários quiserem solicitar uma revisão antes da publicação, eles deverão definir  `requiresReview` como `true` . Um usuário com privilégios de administrador pode optar por não definir ou definir o valor como e o aplicativo será considerado aprovado e `requiresReview` `false`  publicará instantaneamente.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho        | Valor           |
 |:--------------|:--------------  |
 | Autorização | {token} de portador. Obrigatório.  |
-| Content-Type  | Application/zip. Obrigatório. |
+| Content-Type  | application/zip. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, inclua uma carga de manifesto zip do teams. Para obter detalhes, consulte [criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).  
+No corpo da solicitação, inclua uma carga de manifesto zip do Teams. Para obter detalhes, consulte [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).  
 
-Cada aplicativo no catálogo de aplicativos deve ter um manifesto exclusivo `id` .
+Cada aplicativo no catálogo de aplicativos deve ter um manifesto `id` exclusivo.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [teamsApp](../resources/teamsapp.md) .
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [teamsApp.](../resources/teamsapp.md)
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-publish-an-app-to-the-app-catalog"></a>Exemplo 1: publicar um aplicativo no catálogo de aplicativos
+### <a name="example-1-publish-an-app-to-the-app-catalog"></a>Exemplo 1: Publicar um aplicativo no catálogo de aplicativos
 
 #### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_1"
 }-->
 
 ```http
@@ -91,7 +91,7 @@ Content-length: 244
 ```
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
@@ -100,7 +100,7 @@ Content-length: 244
 
 ---
 
-Para obter informações sobre como criar um arquivo zip do aplicativo do Microsoft Teams, consulte [criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).
+Para obter informações sobre como criar um arquivo zip de aplicativo do Microsoft Teams, consulte [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 <!-- markdownlint-disable MD024 -->
 #### <a name="response"></a>Resposta
 
@@ -123,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>Exemplo 2: carregar um novo aplicativo para revisão para o catálogo de aplicativos de uma organização
+### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>Exemplo 2: Carregar um novo aplicativo para revisão no catálogo de aplicativos de uma organização
 
 #### <a name="request"></a>Solicitação
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_2"
 }-->
 
 ```http
@@ -141,11 +141,11 @@ Content-length: 244
 ```
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,14 +172,14 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
 }
 ```
 
-### <a name="example-3-approve-or-reject-an-app-pending-review"></a>Exemplo 3: aprovar ou rejeitar uma revisão pendente do aplicativo
+### <a name="example-3-approve-or-reject-an-app-pending-review"></a>Exemplo 3: Aprovar ou rejeitar uma revisão pendente de um aplicativo
 
 #### <a name="request"></a>Solicitação
 
 **HTTP**
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_3"
 }-->
 
 ```http

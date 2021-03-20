@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b9c09239512a268f5319523f81d68f96cb97c430
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 5b8e97e4da4efa0eab8b384a5b6a9b5917b7c664
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575844"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943318"
 ---
 # <a name="list-tables"></a>Listar tabelas
 
@@ -54,25 +54,25 @@ Este é um exemplo da solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_tables"
+  "name": "get_tables_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-tables-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-tables-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-tables-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-tables-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-tables-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-tables-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-tables-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-tables-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

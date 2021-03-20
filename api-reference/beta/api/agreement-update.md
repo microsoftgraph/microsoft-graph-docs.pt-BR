@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 88bab29854bd474221df81241698b57fa94be79a
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: ee62ae7f42c958304549883afbd66e022230bdd5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773925"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942868"
 ---
 # <a name="update-agreement"></a>Atualizar contrato
 
@@ -19,14 +19,19 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades de um [objeto agreement.](../resources/agreement.md)
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | Agreement.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | Agreement.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
+
+Ao chamar em nome de um usuário, o usuário precisa pertencer a uma das seguintes funções de diretório. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
++ Administrador Global
++ Administrador de Acesso Condicional
++ Administrador de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome de exibição do contrato.|
+|displayName|Cadeia de caracteres|Nome de exibição do contrato.|
 |isViewingBeforeAcceptanceRequired|Booliano|Se o usuário precisa expandir e exibir o contrato antes de aceitar.|
 
 ## <a name="response"></a>Resposta

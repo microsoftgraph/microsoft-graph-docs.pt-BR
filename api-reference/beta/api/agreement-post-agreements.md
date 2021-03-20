@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: c62fc34d83f8602cb0da56027e4def5d2d904e7e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 491c91bb36d2ad3ba55f0f9ad8c2ad2765f15a2c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771208"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942885"
 ---
 # <a name="create-agreement"></a>Criar contrato
 
@@ -27,6 +27,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)     | Agreement.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
+
+Ao chamar em nome de um usuário, o usuário precisa pertencer a uma das seguintes funções de diretório. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
++ Administrador Global
++ Administrador de Acesso Condicional
++ Administrador de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +50,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome de exibição do contrato.|
+|displayName|Cadeia de caracteres|Nome de exibição do contrato.|
 |isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário precisa expandir e exibir o contrato antes de aceitar.|
-|files/fileName|String|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
+|files/fileName|Cadeia de caracteres|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
 |files/isDefault|Booliano|Indica se esse é o arquivo de contrato padrão se nenhuma cultura corresponde à preferência do cliente. Se nenhum arquivo for marcado como padrão, o primeiro será tratado como padrão.|
-|files/language|String|Cultura do arquivo de contrato no formato languagecode2-country/regioncode2. languagecode2 é um código de duas letras minúsculo derivado da ISO 639-1. country/regioncode2 é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47 (por exemplo, en-US).|
+|files/language|Cadeia de caracteres|Cultura do arquivo de contrato no formato languagecode2-country/regioncode2. languagecode2 é um código de duas letras minúsculo derivado da ISO 639-1. country/regioncode2 é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47 (por exemplo, en-US).|
 |files/fileData/data|Binária|Dados que representam os termos de uso do documento PDF.|
 
 ## <a name="response"></a>Resposta

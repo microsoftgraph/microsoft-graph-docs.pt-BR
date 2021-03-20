@@ -1,16 +1,16 @@
 ---
 title: Listar serviços
-description: Obtenha uma lista de objetos bookingService no bookingbusiness especificado.
+description: Obter uma lista de objetos bookingService no bookingbusiness especificado.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d896ba74d70a12fc5417be643366ddaeaffaa0c8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b0d27418d73e16b11f27c253a6dfd57dcd861974
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960739"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942429"
 ---
 # <a name="list-services"></a>Listar serviços
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de objetos [bookingService](../resources/bookingservice.md) no [bookingbusiness](../resources/bookingbusiness.md)especificado.
+Obter uma lista de [objetos bookingService](../resources/bookingservice.md) no [bookingbusiness especificado.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -44,7 +44,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [bookingService](../resources/bookingservice.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [bookingService](../resources/bookingservice.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -52,25 +52,25 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_services"
+  "name": "get_services_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-services-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-services-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-services-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-services-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-services-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-services-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-services-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-services-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

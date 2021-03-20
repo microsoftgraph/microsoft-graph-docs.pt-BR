@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 36c923a469c3aa87eea330f707dd6f8a9a27403a
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4b7e287af4760c9851e392b633a73322f96519b2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874358"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942079"
 ---
 # <a name="list-linkedresources"></a>Listar linkedResources
 Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos linkedResource](../resources/linkedresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos linkedResource](../resources/linkedresource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -60,26 +60,26 @@ Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` cole
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29"],
-  "name": "get_linkedresource"
+  "name": "get_linkedresource_2"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-linkedresource-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-linkedresource-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-linkedresource-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-linkedresource-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-linkedresource-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-linkedresource-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-linkedresource-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-linkedresource-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

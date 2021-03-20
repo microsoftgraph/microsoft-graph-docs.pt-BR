@@ -1,24 +1,24 @@
 ---
 title: Listar buckets
-description: Recupere uma lista de objetos **plannerbucket** .
+description: Recupere uma lista de objetos **plannerbucket.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 26da0ec336de9b33dc87edf14584c9deb739ee9d
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 29be97b19257c312b9e3bb26e70e95450105a599
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458952"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941540"
 ---
 # <a name="list-buckets"></a>Listar buckets
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos **plannerbucket** .
+Recupere uma lista de objetos **plannerbucket.**
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /planner/buckets
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método requer que o [filtro](/graph/query-parameters) de PlanID seja especificado.
+Este método exige [que](/graph/query-parameters) o filtro planId seja especificado.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -45,7 +45,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [plannerBucket](../resources/plannerbucket.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [plannerBucket](../resources/plannerbucket.md) no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 ## <a name="example"></a>Exemplo
@@ -55,25 +55,25 @@ Este é um exemplo da solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_buckets"
+  "name": "get_buckets_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/buckets
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-buckets-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-buckets-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-buckets-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-buckets-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-buckets-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-buckets-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-buckets-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-buckets-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso cloudAppSecuritySessionControl
-description: Controle de sessão usado para impor verificações de segurança de aplicativos na nuvem.
+description: Controle de sessão usado para impor verificações de segurança do aplicativo na nuvem.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ba0b0b2d7c2269358bf6d6cd48d6bf6694fc10ab
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 630c558981b3dc9bbb0ec48c9a81ff74868c43bb
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128833"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941827"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>Tipo de recurso cloudAppSecuritySessionControl
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Controle de sessão usado para impor verificações de segurança de aplicativos na nuvem. Inehrits do [Controle de Sessão de Acesso Condicional.](conditionalaccesssessioncontrol.md)
+Controle de sessão usado para impor verificações de segurança do aplicativo na nuvem. Inehrits do Controle de Sessão [de Acesso Condicional](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
-|cloudAppSecurityType|String | Os valores possíveis são: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Saiba mais sobre esses valores aqui: https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
+|cloudAppSecurityType|cloudAppSecuritySessionControlType| Os valores possíveis são: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Saiba mais sobre esses valores aqui: https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
 
 ## <a name="relationships"></a>Relações
 

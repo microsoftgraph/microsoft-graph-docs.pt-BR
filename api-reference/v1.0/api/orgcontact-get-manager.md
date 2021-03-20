@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 74bab941c4ab22a626fbd1ed1cc8023768f08ffb
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 0a99bfc16c6380093d8e13930f8b6801ef86ce02
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761664"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943486"
 ---
 # <a name="get-manager"></a>Obter gerente
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | OrgContact.Read.All e Group.Read.All, Directory.Read.All   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | OrgContact.Read.All e Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -38,7 +38,7 @@ GET /contacts/{id}/manager
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte aos `$select` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -59,26 +59,26 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_manager"
+  "name": "get_manager_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contacts/{id}/manager
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

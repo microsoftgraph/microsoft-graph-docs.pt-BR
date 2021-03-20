@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso customAction
-description: Representa qualquer ação personalizada que um rótulo pode fornecer, se configurada pelo administrador.
+title: Tipo de recurso customAction
+description: Representa todas as ações personalizadas que um rótulo pode fornecer, se configurado pelo administrador.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 5c71454a6647604d4155fc80c72ec48d22d85d03
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d9c88715cba6fc8faede1419b3c8809c3ec3f54
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050007"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941803"
 ---
-# <a name="customaction-resource-type"></a>tipo de recurso customAction
+# <a name="customaction-resource-type"></a>Tipo de recurso customAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa qualquer ação personalizada que um rótulo pode fornecer, se configurada pelo administrador. As ações personalizadas podem ser definidas como parte de um [informationProtectionLabel](informationProtectionLabel.md) por meio do módulo PowerShell do centro de conformidade e segurança do Office 365. As ações devem ser compreendidas pelo aplicativo de consumo.
+Representa todas as ações personalizadas que um rótulo pode fornecer, se configurado pelo administrador. Ações personalizadas podem ser definidas como parte de [um informationProtectionLabel](informationProtectionLabel.md) por meio do módulo powerShell do Centro de Conformidade e Segurança do Office 365. As ações devem ser compreendidas pelo aplicativo de consumo.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo                                       | Descrição                                          |
 | :--------- | :----------------------------------------- | :--------------------------------------------------- |
 | nome       | Cadeia de caracteres                                     | Nome da ação personalizada.                           |
-| properties | Coleção [keyValuePair](keyvaluepair.md) | Propriedades, no formato par de valores chave, da ação. |
+| properties | Coleção [keyValuePair](keyvaluepair.md) | Propriedades, no formato par de valores-chave, da ação. |
 
 ## <a name="json-representation"></a>Representação JSON
 

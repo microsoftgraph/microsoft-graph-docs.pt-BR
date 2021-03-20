@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 39d99236ec59b38a72a98524bc3211aa616f0bce
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 92b794270c0912f1320f8bb2b5dcf47d1f976f5e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773995"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942890"
 ---
 # <a name="get-agreement"></a>Obter contrato
 
@@ -27,6 +27,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)     | Agreement.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
+
+Ao chamar em nome de um usuário, o usuário precisa pertencer a uma das seguintes funções de diretório. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
++ Administrador Global
++ Administrador de Acesso Condicional
++ Administrador de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4f88629c1b2044cf8c5f92ff90d1d334973f5db7
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 33603d0d16cc44fd2f07177da4c6c6bb4208b082
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161723"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941782"
 ---
 # <a name="extensionproperty-resource-type"></a>Tipo de recurso extensionProperty
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma extensão de diretório que pode ser usada para adicionar uma propriedade personalizada a objetos de diretório sem a necessidade de um armazenamento de dados externos. Por exemplo, se uma organização tiver um aplicativo de linha de negócios (LOB) que exija uma ID do Skype para cada usuário no diretório, o Microsoft Graph poderá ser usado para registrar uma nova propriedade chamada skypeId no objeto User do diretório e gravar um valor na nova propriedade de um usuário específico.
+Representa uma extensão de diretório que pode ser usada para adicionar uma propriedade personalizada a objetos de diretório sem exigir um armazenamento de dados externo. Por exemplo, se uma organização tiver um aplicativo LOB (linha de negócios) que exija uma ID do Skype para cada usuário no diretório, o Microsoft Graph poderá ser usado para registrar uma nova propriedade chamada skypeId no objeto User do diretório e, em seguida, gravar um valor na nova propriedade para um usuário específico.
 
-As extensões podem ser adicionadas ao [usuário,](user.md) [grupo,](group.md) [organização,](organization.md) [dispositivo,](device.md)recursos [do](application.md) aplicativo.
+Extensões podem ser adicionadas ao [usuário,](user.md) [grupo,](group.md) [organização,](organization.md) [dispositivo,](device.md) [recursos de](application.md) aplicativo. Somente 100 valores de extensão, em todos *os* tipos e todos os aplicativos, podem ser gravados em qualquer único recurso do Azure AD. 
 
 > [!IMPORTANT]
-> As extensões de esquema do Azure AD descritas aqui estão disponíveis no Microsoft Graph apenas por motivos de compatibilidade com compatibilidade com compatibilidade.
-> Ele permite que você use o Microsoft Graph para continuar a gerenciar as propriedades de extensão adicionadas por meio do Azure AD Graph ou [do Azure AD Connect.](/azure/active-directory/hybrid/whatis-azure-ad-connect)
-> Para novas extensões personalizadas, recomendamos que você use extensões de esquema do Microsoft Graph para [adicionar dados personalizados aos recursos.](/graph/extensibility-overview)
+> As extensões de esquema do Azure AD descritas aqui estão disponíveis no Microsoft Graph apenas por motivos de compatibilidade com compatibilidade com vertidas.
+> Ele permite que você use o Microsoft Graph para continuar a gerenciar propriedades de extensão adicionadas por meio do Azure AD Graph ou [do Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect).
+> Para novas extensões personalizadas, recomendamos que você use extensões de esquema do Microsoft Graph para adicionar [dados personalizados aos recursos](/graph/extensibility-overview).
 
 ## <a name="methods"></a>Métodos
 
@@ -39,10 +39,10 @@ As extensões podem ser adicionadas ao [usuário,](user.md) [grupo,](group.md) [
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|appDisplayName|String| Nome de exibição do objeto de aplicativo no qual essa propriedade de extensão está definida. Somente leitura. |
-|dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a propriedade de extensão pode conter. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` - Máximo de 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` - Valor de 32 bits.</li><li>`LargeInteger` - Valor de 64 bits.</li><li>`String` - Máximo de 256 caracteres</li></ul>|
-|isSyncedFromOnPremises|Boolean| Indica se essa propriedade de extensão foi sycned do diretório onpremises usando o Azure AD Connect. Somente leitura. |
-|name|String| Nome da propriedade de extensão. Não anulável. |
+|appDisplayName|Cadeia de caracteres| Nome de exibição do objeto application no qual essa propriedade de extensão é definida. Somente leitura. |
+|dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a propriedade extension pode manter. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` - Máximo de 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` - Valor de 32 bits.</li><li>`LargeInteger` - Valor de 64 bits.</li><li>`String` - Máximo de 256 caracteres</li></ul>|
+|isSyncedFromOnPremises|Booliano| Indica se essa propriedade de extensão foi sycned do diretório onpremises usando o Azure AD Connect. Somente leitura. |
+|name|Cadeia de caracteres| Nome da propriedade extension. Não anulável. |
 |targetObjects|Coleção de cadeias de caracteres| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>Relações

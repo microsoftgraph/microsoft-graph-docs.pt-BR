@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso downgradeJustification
-description: Representa a entrada do usuário sobre por que o downgrade foi realizado.
+title: Tipo de recurso downgradeJustification
+description: Representa a entrada do usuário sobre por que a rebaixamento foi realizada.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7c0e34d70bd91ecd896eba4329d775a95d696bed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc7336469f93de9e6d2b07fe73df9dce2eafd47f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979648"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941796"
 ---
-# <a name="downgradejustification-resource-type"></a>tipo de recurso downgradeJustification
+# <a name="downgradejustification-resource-type"></a>Tipo de recurso downgradeJustification
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a entrada do usuário sobre por que o downgrade foi realizado. A justificação de downgrade pode ser necessária com base na configuração de política de rótulo no centro de conformidade e segurança do Office.
+Representa a entrada do usuário sobre por que a rebaixamento foi realizada. A justificativa de downgrade pode ser necessária com base na configuração da política de rótulo no Centro de Conformidade e Segurança do Office.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade             | Tipo    | Descrição                                                                                          |
 | :------------------- | :------ | :--------------------------------------------------------------------------------------------------- |
-| isDowngradeJustified | Boolean | Indica se o downgrade é ou não justificado.                                              |
-| justificationMessage | String  | Mensagem que indica por que um downgrade é justificado. A mensagem aparecerá em logs administrativos. |
+| isDowngradeJustified | Booliano | Indica se a rebaixamento é ou não justificada.                                              |
+| justificationMessage | Cadeia de caracteres  | Mensagem que indica por que uma rebaixamento é justificada. A mensagem aparecerá em logs administrativos. |
 
 ## <a name="json-representation"></a>Representação JSON
 

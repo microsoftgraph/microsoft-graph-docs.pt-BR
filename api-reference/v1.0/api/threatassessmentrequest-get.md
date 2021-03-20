@@ -1,22 +1,22 @@
 ---
 title: Get threatAssessmentRequest
-description: Recupere as propriedades e os relacionamentos de um objeto threatassessmentrequest especificado.
+description: Recupere as propriedades e as relações de um objeto threatassessmentrequest especificado.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 4765488b280c96a3f0d4c497ee12a440781fbf0f
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 882a012ed5187976dedc5edce4dc7fae56e2a4b3
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330005"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941470"
 ---
 # <a name="get-threatassessmentrequest"></a>Get threatAssessmentRequest
 
-Recupere as propriedades e os relacionamentos de um objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) especificado.
+Recupere as propriedades e as relações de um objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) especificado.
 
-Uma solicitação de avaliação de ameaça pode ser um dos seguintes tipos:
+Uma solicitação de avaliação de ameaças pode ser um dos seguintes tipos:
 
 * [Email](../resources/mailAssessmentRequest.md)
 * [Arquivo de email](../resources/emailFileAssessmentRequest.md)
@@ -43,11 +43,11 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-|Nome            |Valor    |Descrição                                                                                                                                                                 |
+|Name            |Valor    |Descrição                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$expand         |string   |Usando `$expand=results` na consulta para recuperar o resultado da avaliação da ameaça.                                                                                              |
+|$expand         |string   |Usando `$expand=results` na consulta para recuperar o resultado da avaliação de ameaças.                                                                                              |
 |$select         |string   |Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.                                        |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -62,11 +62,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) solicitado no corpo da resposta. As propriedades desse tipo são retornadas: [mailAssessmentRequest](../resources/mailAssessmentRequest.md), [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md).
+Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) solicitado no corpo da resposta. As propriedades desse tipo são retornadas: [mailAssessmentRequest](../resources/mailAssessmentRequest.md), [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md).
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-properties-of-a-mail-assessment-request"></a>Exemplo 1: obter as propriedades de uma solicitação de avaliação de email
+### <a name="example-1-get-the-properties-of-a-mail-assessment-request"></a>Exemplo 1: Obter as propriedades de uma solicitação de avaliação de email
 
 #### <a name="request"></a>Solicitação
 
@@ -139,7 +139,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-an-email-file-assessment-request"></a>Exemplo 2: obter as propriedades de uma solicitação de avaliação de arquivo de email
+### <a name="example-2-get-the-properties-of-an-email-file-assessment-request"></a>Exemplo 2: Obter as propriedades de uma solicitação de avaliação de arquivo de email
 
 #### <a name="request"></a>Solicitação
 
@@ -212,7 +212,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-properties-of-a-file-assessment-request"></a>Exemplo 3: obter as propriedades de uma solicitação de avaliação de arquivo
+### <a name="example-3-get-the-properties-of-a-file-assessment-request"></a>Exemplo 3: Obter as propriedades de uma solicitação de avaliação de arquivo
 
 #### <a name="request"></a>Solicitação
 
@@ -284,7 +284,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>Exemplo 4: obter as propriedades de uma solicitação de avaliação de URL
+### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>Exemplo 4: Obter as propriedades de uma solicitação de avaliação de url
 
 #### <a name="request"></a>Solicitação
 
@@ -355,7 +355,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>Exemplo 5: expandir os resultados da avaliação de ameaças para uma solicitação
+### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>Exemplo 5: Expandir resultados de avaliação de ameaças para uma solicitação
 
 #### <a name="request"></a>Solicitação
 

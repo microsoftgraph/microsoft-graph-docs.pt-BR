@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso protectDoNotForwardAction
-description: Informa ao aplicativo para aplicar a proteção não encaminhar.
+title: Tipo de recurso protectDoNotForwardAction
+description: Informa ao aplicativo para aplicar a proteção Não Encaminhar.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 8fdb60651e98148eefb7bd964e8c4cd13ff81663
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a68771ea278ba8a904c032a86732b2b190eeeb43
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404382"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941768"
 ---
-# <a name="protectdonotforwardaction-resource-type"></a>tipo de recurso protectDoNotForwardAction
+# <a name="protectdonotforwardaction-resource-type"></a>Tipo de recurso protectDoNotForwardAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informa ao aplicativo para aplicar a proteção não encaminhar. **protectionDoNotForwardAction** pode ser retornado por [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) ou [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) se o rótulo resultante tiver sido configurado para aplicar a [proteção não encaminhar](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). O aplicativo de consumo deve usar uma biblioteca de cliente para aplicar proteção por meio da proteção de informações do Azure.
+Informa ao aplicativo para aplicar a proteção Não Encaminhar. **protectionDoNotForwardAction** poderá ser retornado por [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) ou [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) se o rótulo resultante tiver sido configurado para aplicar a proteção [Não Encaminhar](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). O aplicativo de consumo deve usar uma biblioteca de clientes para aplicar proteção por meio da Proteção de Informações do Azure.
 
 ## <a name="properties"></a>Propriedades
 

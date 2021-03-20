@@ -1,16 +1,16 @@
 ---
 title: Obter printConnector
-description: Recupere as propriedades e os relacionamentos de um objeto connector.
+description: Recupere as propriedades e as relações de um objeto conector.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: cfe27f18f9e1229babdce07c8cf64c0ed6146fe2
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 898a7d5879f258fe80207a174f97d1622caa9e17
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873553"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942325"
 ---
 # <a name="get-printconnector"></a>Obter printConnector
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um **objeto printConnector.**
+Recupere as propriedades e as relações de um **objeto printConnector.**
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário assinado deve ser um Administrador [de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -48,7 +48,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [printConnector](../resources/printconnector.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printConnector](../resources/printconnector.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -56,25 +56,25 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connector"
+  "name": "get_connector_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/connectors/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connector-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-connector-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connector-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-connector-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connector-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-connector-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-connector-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-connector-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
