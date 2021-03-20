@@ -1,32 +1,32 @@
 ---
 title: 'team: sendActivityNotification'
-description: Envie uma notificação de feed de atividades no escopo de uma equipe.
+description: Envie uma notificação de feed de atividade no escopo de uma equipe.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2dc9da9024207cf04492af9bb8291ccc44e91eb0
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 46b653f3d69111043c41ec0a83907ce041c10a81
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874183"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954073"
 ---
-# <a name="team-sendactivitynotification"></a><span data-ttu-id="609a1-103">team: sendActivityNotification</span><span class="sxs-lookup"><span data-stu-id="609a1-103">team: sendActivityNotification</span></span>
-<span data-ttu-id="609a1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="609a1-104">Namespace: microsoft.graph</span></span>
+# <a name="team-sendactivitynotification"></a><span data-ttu-id="b71d1-103">team: sendActivityNotification</span><span class="sxs-lookup"><span data-stu-id="b71d1-103">team: sendActivityNotification</span></span>
+<span data-ttu-id="b71d1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b71d1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="609a1-105">Envie uma notificação de feed de atividades no escopo de uma equipe.</span><span class="sxs-lookup"><span data-stu-id="609a1-105">Send an activity feed notification in the scope of a team.</span></span> <span data-ttu-id="609a1-106">Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, confira [o envio de notificações de atividades do Teams.](/graph/teams-send-activityfeednotifications)</span><span class="sxs-lookup"><span data-stu-id="609a1-106">For more details about sending notifications and the requirements for doing so, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).</span></span>
+<span data-ttu-id="b71d1-105">Envie uma notificação de feed de atividade no escopo de uma equipe.</span><span class="sxs-lookup"><span data-stu-id="b71d1-105">Send an activity feed notification in the scope of a team.</span></span> <span data-ttu-id="b71d1-106">Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, consulte [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).</span><span class="sxs-lookup"><span data-stu-id="b71d1-106">For more details about sending notifications and the requirements for doing so, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="609a1-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="609a1-107">Permissions</span></span>
-<span data-ttu-id="609a1-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="609a1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b71d1-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="b71d1-107">Permissions</span></span>
+<span data-ttu-id="b71d1-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b71d1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="609a1-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="609a1-110">Permission type</span></span>|<span data-ttu-id="609a1-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="609a1-111">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="b71d1-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b71d1-110">Permission type</span></span>|<span data-ttu-id="b71d1-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b71d1-111">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="609a1-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="609a1-112">Delegated (work or school account)</span></span>|<span data-ttu-id="609a1-113">TeamsActivity.Send</span><span class="sxs-lookup"><span data-stu-id="609a1-113">TeamsActivity.Send</span></span>|
-|<span data-ttu-id="609a1-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="609a1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="609a1-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="609a1-115">Not Supported.</span></span>|
-|<span data-ttu-id="609a1-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="609a1-116">Application</span></span>|<span data-ttu-id="609a1-117">TeamsActivity.Send</span><span class="sxs-lookup"><span data-stu-id="609a1-117">TeamsActivity.Send</span></span>|
+|<span data-ttu-id="b71d1-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b71d1-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b71d1-113">TeamsActivity.Send</span><span class="sxs-lookup"><span data-stu-id="b71d1-113">TeamsActivity.Send</span></span>|
+|<span data-ttu-id="b71d1-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b71d1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b71d1-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b71d1-115">Not Supported.</span></span>|
+|<span data-ttu-id="b71d1-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b71d1-116">Application</span></span>|<span data-ttu-id="b71d1-117">TeamsActivity.Send</span><span class="sxs-lookup"><span data-stu-id="b71d1-117">TeamsActivity.Send</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="609a1-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="609a1-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b71d1-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b71d1-118">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -36,51 +36,51 @@ ms.locfileid: "49874183"
 POST /teams/{teamId}/sendActivityNotification
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="609a1-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="609a1-119">Request headers</span></span>
-|<span data-ttu-id="609a1-120">Nome</span><span class="sxs-lookup"><span data-stu-id="609a1-120">Name</span></span>|<span data-ttu-id="609a1-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="609a1-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b71d1-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b71d1-119">Request headers</span></span>
+|<span data-ttu-id="b71d1-120">Nome</span><span class="sxs-lookup"><span data-stu-id="b71d1-120">Name</span></span>|<span data-ttu-id="b71d1-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="b71d1-121">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="609a1-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="609a1-122">Authorization</span></span>|<span data-ttu-id="609a1-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="609a1-p103">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="609a1-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="609a1-125">Content-Type</span></span>|<span data-ttu-id="609a1-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="609a1-p104">application/json. Required.</span></span>|
+|<span data-ttu-id="b71d1-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="b71d1-122">Authorization</span></span>|<span data-ttu-id="b71d1-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b71d1-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="b71d1-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b71d1-125">Content-Type</span></span>|<span data-ttu-id="b71d1-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b71d1-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="609a1-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="609a1-128">Request body</span></span>
-<span data-ttu-id="609a1-129">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="609a1-129">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b71d1-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b71d1-128">Request body</span></span>
+<span data-ttu-id="b71d1-129">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="b71d1-129">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="609a1-130">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="609a1-130">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="b71d1-130">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="b71d1-130">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="609a1-131">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="609a1-131">Parameter</span></span>|<span data-ttu-id="609a1-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="609a1-132">Type</span></span>|<span data-ttu-id="609a1-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="609a1-133">Description</span></span>|
+|<span data-ttu-id="b71d1-131">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="b71d1-131">Parameter</span></span>|<span data-ttu-id="b71d1-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="b71d1-132">Type</span></span>|<span data-ttu-id="b71d1-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="b71d1-133">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="609a1-134">topic</span><span class="sxs-lookup"><span data-stu-id="609a1-134">topic</span></span>|[<span data-ttu-id="609a1-135">teamworkActivityTopic</span><span class="sxs-lookup"><span data-stu-id="609a1-135">teamworkActivityTopic</span></span>](../resources/teamworkactivitytopic.md)|<span data-ttu-id="609a1-136">Tópico da notificação.</span><span class="sxs-lookup"><span data-stu-id="609a1-136">Topic of the notification.</span></span> <span data-ttu-id="609a1-137">Especifica o recurso que está sendo falado.</span><span class="sxs-lookup"><span data-stu-id="609a1-137">Specifies the resource being talked about.</span></span>|
-|<span data-ttu-id="609a1-138">activityType</span><span class="sxs-lookup"><span data-stu-id="609a1-138">activityType</span></span>|<span data-ttu-id="609a1-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="609a1-139">String</span></span>|<span data-ttu-id="609a1-140">Tipo de atividade.</span><span class="sxs-lookup"><span data-stu-id="609a1-140">Activity type.</span></span> <span data-ttu-id="609a1-141">Isso deve ser declarado no manifesto do [aplicativo Teams.](/microsoftteams/platform/overview)</span><span class="sxs-lookup"><span data-stu-id="609a1-141">This must be declared in the [Teams app manifest](/microsoftteams/platform/overview).</span></span>|
-|<span data-ttu-id="609a1-142">chainId</span><span class="sxs-lookup"><span data-stu-id="609a1-142">chainId</span></span>|<span data-ttu-id="609a1-143">Int64</span><span class="sxs-lookup"><span data-stu-id="609a1-143">Int64</span></span>|<span data-ttu-id="609a1-144">Opcional.</span><span class="sxs-lookup"><span data-stu-id="609a1-144">Optional.</span></span> <span data-ttu-id="609a1-145">Usado para substituir uma notificação anterior.</span><span class="sxs-lookup"><span data-stu-id="609a1-145">Used to override a previous notification.</span></span> <span data-ttu-id="609a1-146">Use o mesmo `chainId` em solicitações subsequentes para substituir a notificação anterior.</span><span class="sxs-lookup"><span data-stu-id="609a1-146">Use the same `chainId` in subsequent requests to override the previous notification.</span></span>|
-|<span data-ttu-id="609a1-147">previewText</span><span class="sxs-lookup"><span data-stu-id="609a1-147">previewText</span></span>|[<span data-ttu-id="609a1-148">itemBody</span><span class="sxs-lookup"><span data-stu-id="609a1-148">itemBody</span></span>](../resources/itembody.md)|<span data-ttu-id="609a1-149">Texto de visualização para a notificação.</span><span class="sxs-lookup"><span data-stu-id="609a1-149">Preview text for the notification.</span></span> <span data-ttu-id="609a1-150">O Microsoft Teams mostrará apenas os primeiros 150 caracteres.</span><span class="sxs-lookup"><span data-stu-id="609a1-150">Microsoft Teams will only show first 150 characters.</span></span>|
-|<span data-ttu-id="609a1-151">templateParameters</span><span class="sxs-lookup"><span data-stu-id="609a1-151">templateParameters</span></span>|<span data-ttu-id="609a1-152">Coleção [keyValuePair](../resources/keyvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="609a1-152">[keyValuePair](../resources/keyvaluepair.md) collection</span></span>|<span data-ttu-id="609a1-153">Valores para variáveis de modelo definidos na entrada do feed de atividades correspondente no `activityType` manifesto do aplicativo do [Teams.](/microsoftteams/platform/overview)</span><span class="sxs-lookup"><span data-stu-id="609a1-153">Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).</span></span>|
-|<span data-ttu-id="609a1-154">destinatário</span><span class="sxs-lookup"><span data-stu-id="609a1-154">recipient</span></span>|[<span data-ttu-id="609a1-155">teamworkNotificationRecipient</span><span class="sxs-lookup"><span data-stu-id="609a1-155">teamworkNotificationRecipient</span></span>](../resources/teamworknotificationrecipient.md)|<span data-ttu-id="609a1-156">Destinatário da notificação.</span><span class="sxs-lookup"><span data-stu-id="609a1-156">Recipient of the notification.</span></span> <span data-ttu-id="609a1-157">Somente os usuários do Azure AD têm suporte.</span><span class="sxs-lookup"><span data-stu-id="609a1-157">Only Azure AD users are supported.</span></span> <span data-ttu-id="609a1-158">Consulte também [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md).</span><span class="sxs-lookup"><span data-stu-id="609a1-158">See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md).</span></span> |
+|<span data-ttu-id="b71d1-134">topic</span><span class="sxs-lookup"><span data-stu-id="b71d1-134">topic</span></span>|[<span data-ttu-id="b71d1-135">teamworkActivityTopic</span><span class="sxs-lookup"><span data-stu-id="b71d1-135">teamworkActivityTopic</span></span>](../resources/teamworkactivitytopic.md)|<span data-ttu-id="b71d1-136">Tópico da notificação.</span><span class="sxs-lookup"><span data-stu-id="b71d1-136">Topic of the notification.</span></span> <span data-ttu-id="b71d1-137">Especifica o recurso que está sendo falado.</span><span class="sxs-lookup"><span data-stu-id="b71d1-137">Specifies the resource being talked about.</span></span>|
+|<span data-ttu-id="b71d1-138">activityType</span><span class="sxs-lookup"><span data-stu-id="b71d1-138">activityType</span></span>|<span data-ttu-id="b71d1-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="b71d1-139">String</span></span>|<span data-ttu-id="b71d1-140">Tipo de atividade.</span><span class="sxs-lookup"><span data-stu-id="b71d1-140">Activity type.</span></span> <span data-ttu-id="b71d1-141">Isso deve ser declarado no manifesto do [aplicativo teams.](/microsoftteams/platform/overview)</span><span class="sxs-lookup"><span data-stu-id="b71d1-141">This must be declared in the [Teams app manifest](/microsoftteams/platform/overview).</span></span>|
+|<span data-ttu-id="b71d1-142">chainId</span><span class="sxs-lookup"><span data-stu-id="b71d1-142">chainId</span></span>|<span data-ttu-id="b71d1-143">Int64</span><span class="sxs-lookup"><span data-stu-id="b71d1-143">Int64</span></span>|<span data-ttu-id="b71d1-144">Opcional.</span><span class="sxs-lookup"><span data-stu-id="b71d1-144">Optional.</span></span> <span data-ttu-id="b71d1-145">Usado para substituir uma notificação anterior.</span><span class="sxs-lookup"><span data-stu-id="b71d1-145">Used to override a previous notification.</span></span> <span data-ttu-id="b71d1-146">Use o mesmo `chainId` em solicitações subsequentes para substituir a notificação anterior.</span><span class="sxs-lookup"><span data-stu-id="b71d1-146">Use the same `chainId` in subsequent requests to override the previous notification.</span></span>|
+|<span data-ttu-id="b71d1-147">previewText</span><span class="sxs-lookup"><span data-stu-id="b71d1-147">previewText</span></span>|[<span data-ttu-id="b71d1-148">itemBody</span><span class="sxs-lookup"><span data-stu-id="b71d1-148">itemBody</span></span>](../resources/itembody.md)|<span data-ttu-id="b71d1-149">Visualizar texto para a notificação.</span><span class="sxs-lookup"><span data-stu-id="b71d1-149">Preview text for the notification.</span></span> <span data-ttu-id="b71d1-150">O Microsoft Teams mostrará apenas os primeiros 150 caracteres.</span><span class="sxs-lookup"><span data-stu-id="b71d1-150">Microsoft Teams will only show first 150 characters.</span></span>|
+|<span data-ttu-id="b71d1-151">templateParameters</span><span class="sxs-lookup"><span data-stu-id="b71d1-151">templateParameters</span></span>|<span data-ttu-id="b71d1-152">Coleção [keyValuePair](../resources/keyvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="b71d1-152">[keyValuePair](../resources/keyvaluepair.md) collection</span></span>|<span data-ttu-id="b71d1-153">Valores para variáveis de modelo definidas na entrada de feed de atividade correspondente `activityType` ao manifesto do aplicativo do [Teams.](/microsoftteams/platform/overview)</span><span class="sxs-lookup"><span data-stu-id="b71d1-153">Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).</span></span>|
+|<span data-ttu-id="b71d1-154">destinatário</span><span class="sxs-lookup"><span data-stu-id="b71d1-154">recipient</span></span>|[<span data-ttu-id="b71d1-155">teamworkNotificationRecipient</span><span class="sxs-lookup"><span data-stu-id="b71d1-155">teamworkNotificationRecipient</span></span>](../resources/teamworknotificationrecipient.md)|<span data-ttu-id="b71d1-156">Destinatário da notificação.</span><span class="sxs-lookup"><span data-stu-id="b71d1-156">Recipient of the notification.</span></span> <span data-ttu-id="b71d1-157">Somente usuários do Azure AD são suportados.</span><span class="sxs-lookup"><span data-stu-id="b71d1-157">Only Azure AD users are supported.</span></span> <span data-ttu-id="b71d1-158">Consulte também [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md).</span><span class="sxs-lookup"><span data-stu-id="b71d1-158">See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md).</span></span> |
 
-<span data-ttu-id="609a1-159">Os seguintes recursos são suportados ao definir `source` o valor da propriedade **de** tópico `entityUrl` como:</span><span class="sxs-lookup"><span data-stu-id="609a1-159">The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:</span></span>
+<span data-ttu-id="b71d1-159">Os seguintes recursos são suportados ao definir o `source` valor da propriedade **topic** como `entityUrl` :</span><span class="sxs-lookup"><span data-stu-id="b71d1-159">The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:</span></span>
 
-- [<span data-ttu-id="609a1-160">team</span><span class="sxs-lookup"><span data-stu-id="609a1-160">team</span></span>](../resources/team.md)
-- [<span data-ttu-id="609a1-161">channel</span><span class="sxs-lookup"><span data-stu-id="609a1-161">channel</span></span>](../resources/channel.md)
-- [<span data-ttu-id="609a1-162">chatMesage</span><span class="sxs-lookup"><span data-stu-id="609a1-162">chatMesage</span></span>](../resources/chatmessage.md)
-- [<span data-ttu-id="609a1-163">teamsTab</span><span class="sxs-lookup"><span data-stu-id="609a1-163">teamsTab</span></span>](../resources/teamstab.md)
+- [<span data-ttu-id="b71d1-160">team</span><span class="sxs-lookup"><span data-stu-id="b71d1-160">team</span></span>](../resources/team.md)
+- [<span data-ttu-id="b71d1-161">channel</span><span class="sxs-lookup"><span data-stu-id="b71d1-161">channel</span></span>](../resources/channel.md)
+- [<span data-ttu-id="b71d1-162">chatMesage</span><span class="sxs-lookup"><span data-stu-id="b71d1-162">chatMesage</span></span>](../resources/chatmessage.md)
+- [<span data-ttu-id="b71d1-163">teamsTab</span><span class="sxs-lookup"><span data-stu-id="b71d1-163">teamsTab</span></span>](../resources/teamstab.md)
 
-> <span data-ttu-id="609a1-164">**Observação:** A URL da entidade deve ser o mesmo recurso ou filho da equipe na URL.</span><span class="sxs-lookup"><span data-stu-id="609a1-164">**Note:** The entity url must be same or child resource of the team in the url.</span></span> <span data-ttu-id="609a1-165">Além disso, o [aplicativo Teams](/microsoftteams/platform/overview) deve ser instalado na equipe.</span><span class="sxs-lookup"><span data-stu-id="609a1-165">Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the team.</span></span>
+> <span data-ttu-id="b71d1-164">**Observação:** A url da entidade deve ser o mesmo ou o recurso filho da equipe na url.</span><span class="sxs-lookup"><span data-stu-id="b71d1-164">**Note:** The entity url must be same or child resource of the team in the url.</span></span> <span data-ttu-id="b71d1-165">Além disso, o [aplicativo do Teams](/microsoftteams/platform/overview) deve ser instalado na equipe.</span><span class="sxs-lookup"><span data-stu-id="b71d1-165">Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the team.</span></span>
 
-## <a name="response"></a><span data-ttu-id="609a1-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="609a1-166">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b71d1-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="b71d1-166">Response</span></span>
 
-<span data-ttu-id="609a1-167">Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="609a1-167">If successful, this action returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="b71d1-167">Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="b71d1-167">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="609a1-168">Exemplos</span><span class="sxs-lookup"><span data-stu-id="609a1-168">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b71d1-168">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b71d1-168">Examples</span></span>
 
-### <a name="example-1-notify-a-user-about-pending-finance-approval-requests"></a><span data-ttu-id="609a1-169">Exemplo 1: Notificar um usuário sobre solicitações de aprovação de finanças pendentes</span><span class="sxs-lookup"><span data-stu-id="609a1-169">Example 1: Notify a user about pending finance approval requests</span></span>
+### <a name="example-1-notify-a-user-about-pending-finance-approval-requests"></a><span data-ttu-id="b71d1-169">Exemplo 1: Notificar um usuário sobre solicitações pendentes de aprovação de finanças</span><span class="sxs-lookup"><span data-stu-id="b71d1-169">Example 1: Notify a user about pending finance approval requests</span></span>
 
-<span data-ttu-id="609a1-170">Este exemplo mostra como você pode enviar uma notificação de feed de atividades para uma equipe.</span><span class="sxs-lookup"><span data-stu-id="609a1-170">This example shows how you can send an activity feed notification for a team.</span></span> <span data-ttu-id="609a1-171">Este exemplo notifica o proprietário da equipe sobre solicitações de aprovação de finanças pendentes.</span><span class="sxs-lookup"><span data-stu-id="609a1-171">This example notifies the team owner about pending finance approval requests.</span></span>
+<span data-ttu-id="b71d1-170">Este exemplo mostra como você pode enviar uma notificação de feed de atividade para uma equipe.</span><span class="sxs-lookup"><span data-stu-id="b71d1-170">This example shows how you can send an activity feed notification for a team.</span></span> <span data-ttu-id="b71d1-171">Este exemplo notifica o proprietário da equipe sobre solicitações pendentes de aprovação de finanças.</span><span class="sxs-lookup"><span data-stu-id="b71d1-171">This example notifies the team owner about pending finance approval requests.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="609a1-172">Solicitação</span><span class="sxs-lookup"><span data-stu-id="609a1-172">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b71d1-172">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b71d1-172">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="609a1-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="609a1-173">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b71d1-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="b71d1-173">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_1"
 }
 -->
 ``` http
@@ -108,26 +108,26 @@ Content-Type: application/json
     ] 
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="609a1-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="609a1-174">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="b71d1-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b71d1-174">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="609a1-175">C#</span><span class="sxs-lookup"><span data-stu-id="609a1-175">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="b71d1-175">C#</span><span class="sxs-lookup"><span data-stu-id="b71d1-175">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="609a1-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="609a1-176">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="b71d1-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b71d1-176">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="609a1-177">Java</span><span class="sxs-lookup"><span data-stu-id="609a1-177">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="b71d1-177">Java</span><span class="sxs-lookup"><span data-stu-id="b71d1-177">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="609a1-178">Resposta</span><span class="sxs-lookup"><span data-stu-id="609a1-178">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="b71d1-178">Resposta</span><span class="sxs-lookup"><span data-stu-id="b71d1-178">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -137,14 +137,16 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-a-channel-tab"></a><span data-ttu-id="609a1-179">Exemplo 2: Notificar um usuário sobre uma guia de canal</span><span class="sxs-lookup"><span data-stu-id="609a1-179">Example 2: Notify a user about a channel tab</span></span>
+### <a name="example-2-notify-a-user-about-a-channel-tab"></a><span data-ttu-id="b71d1-179">Exemplo 2: Notificar um usuário sobre uma guia de canal</span><span class="sxs-lookup"><span data-stu-id="b71d1-179">Example 2: Notify a user about a channel tab</span></span>
 
-<span data-ttu-id="609a1-180">Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic` o .</span><span class="sxs-lookup"><span data-stu-id="609a1-180">Similar to the previous example, this example uses `entityUrl` for the `topic`.</span></span> <span data-ttu-id="609a1-181">No entanto, este exemplo se vincula a [uma guia](../resources/teamstab.md) em um [canal.](../resources/channel.md)</span><span class="sxs-lookup"><span data-stu-id="609a1-181">However, this example links to a [tab](../resources/teamstab.md) in a [channel](../resources/channel.md).</span></span> <span data-ttu-id="609a1-182">A guia hospeda uma página mostrando ao usuário o status de sua reserva de hotel.</span><span class="sxs-lookup"><span data-stu-id="609a1-182">The tab hosts a page showing the user the status of their hotel reservation.</span></span> <span data-ttu-id="609a1-183">Selecionar a notificação levará o usuário para a guia, onde ele pode verificar sua reserva.</span><span class="sxs-lookup"><span data-stu-id="609a1-183">Selecting the notification will take the user to the tab, where they can check their reservation.</span></span>
+<span data-ttu-id="b71d1-180">Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic` o .</span><span class="sxs-lookup"><span data-stu-id="b71d1-180">Similar to the previous example, this example uses `entityUrl` for the `topic`.</span></span> <span data-ttu-id="b71d1-181">No entanto, este exemplo se vincula a [uma guia](../resources/teamstab.md) em um [canal](../resources/channel.md).</span><span class="sxs-lookup"><span data-stu-id="b71d1-181">However, this example links to a [tab](../resources/teamstab.md) in a [channel](../resources/channel.md).</span></span> <span data-ttu-id="b71d1-182">A guia hospeda uma página mostrando ao usuário o status de sua reserva de hotel.</span><span class="sxs-lookup"><span data-stu-id="b71d1-182">The tab hosts a page showing the user the status of their hotel reservation.</span></span> <span data-ttu-id="b71d1-183">Selecionar a notificação levará o usuário para a guia, onde ele pode verificar sua reserva.</span><span class="sxs-lookup"><span data-stu-id="b71d1-183">Selecting the notification will take the user to the tab, where they can check their reservation.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="609a1-184">Solicitação</span><span class="sxs-lookup"><span data-stu-id="609a1-184">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b71d1-184">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b71d1-184">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="b71d1-185">HTTP</span><span class="sxs-lookup"><span data-stu-id="b71d1-185">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_2"
 }
 -->
 ``` http
@@ -176,8 +178,26 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="b71d1-186">C#</span><span class="sxs-lookup"><span data-stu-id="b71d1-186">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="609a1-185">Resposta</span><span class="sxs-lookup"><span data-stu-id="609a1-185">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="b71d1-187">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b71d1-187">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="b71d1-188">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b71d1-188">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="b71d1-189">Java</span><span class="sxs-lookup"><span data-stu-id="b71d1-189">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="b71d1-190">Resposta</span><span class="sxs-lookup"><span data-stu-id="b71d1-190">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -187,14 +207,16 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a><span data-ttu-id="609a1-186">Exemplo 3: Notificar um usuário sobre um evento usando o tópico personalizado</span><span class="sxs-lookup"><span data-stu-id="609a1-186">Example 3: Notify a user about an event using custom topic</span></span>
+### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a><span data-ttu-id="b71d1-191">Exemplo 3: Notificar um usuário sobre um evento usando tópico personalizado</span><span class="sxs-lookup"><span data-stu-id="b71d1-191">Example 3: Notify a user about an event using custom topic</span></span>
 
-<span data-ttu-id="609a1-187">Conforme visto nos exemplos anteriores, você pode vincular a diferentes aspectos da equipe.</span><span class="sxs-lookup"><span data-stu-id="609a1-187">As seen in the previous examples, you can link to different aspects of the team.</span></span> <span data-ttu-id="609a1-188">No entanto, se você quiser vincular a um aspecto que não faz parte da equipe ou não é representado pelo Microsoft Graph, ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele.</span><span class="sxs-lookup"><span data-stu-id="609a1-188">However, if you want to link to an aspect that is not part of the team or is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it.</span></span> <span data-ttu-id="609a1-189">`webUrl` é necessário ao definir a `topic` fonte como `text` .</span><span class="sxs-lookup"><span data-stu-id="609a1-189">`webUrl` is required when setting `topic` source to `text`.</span></span>
+<span data-ttu-id="b71d1-192">Como visto nos exemplos anteriores, você pode vincular a diferentes aspectos da equipe.</span><span class="sxs-lookup"><span data-stu-id="b71d1-192">As seen in the previous examples, you can link to different aspects of the team.</span></span> <span data-ttu-id="b71d1-193">No entanto, se você deseja vincular a um aspecto que não faz parte da equipe ou não é representado pelo Microsoft Graph, ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado para `topic` `text` ele.</span><span class="sxs-lookup"><span data-stu-id="b71d1-193">However, if you want to link to an aspect that is not part of the team or is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it.</span></span> <span data-ttu-id="b71d1-194">`webUrl` é necessário ao definir `topic` a fonte como `text` .</span><span class="sxs-lookup"><span data-stu-id="b71d1-194">`webUrl` is required when setting `topic` source to `text`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="609a1-190">Solicitação</span><span class="sxs-lookup"><span data-stu-id="609a1-190">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b71d1-195">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b71d1-195">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="b71d1-196">HTTP</span><span class="sxs-lookup"><span data-stu-id="b71d1-196">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_3"
 }
 -->
 ``` http
@@ -223,8 +245,26 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="b71d1-197">C#</span><span class="sxs-lookup"><span data-stu-id="b71d1-197">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="609a1-191">Resposta</span><span class="sxs-lookup"><span data-stu-id="609a1-191">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="b71d1-198">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b71d1-198">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="b71d1-199">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b71d1-199">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="b71d1-200">Java</span><span class="sxs-lookup"><span data-stu-id="b71d1-200">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="b71d1-201">Resposta</span><span class="sxs-lookup"><span data-stu-id="b71d1-201">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false

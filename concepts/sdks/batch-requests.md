@@ -1,35 +1,35 @@
 ---
-title: Usar os SDKs do Microsoft Graph para solicitações em lote
+title: Usar os SDKs do Microsoft Graph para solicitações em lotes
 description: Fornece instruções para criar um lote de solicitações de API usando os SDKs do Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 721adb1631037055a2d2498d321bb06e68b6c257
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: bda68247c0375447913c3c64aae90ba2c88ab563
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932420"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953373"
 ---
-# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a><span data-ttu-id="6a270-103">Usar os SDKs do Microsoft Graph para solicitações em lote</span><span class="sxs-lookup"><span data-stu-id="6a270-103">Use the Microsoft Graph SDKs to batch requests</span></span>
+# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a><span data-ttu-id="cac36-103">Usar os SDKs do Microsoft Graph para solicitações em lotes</span><span class="sxs-lookup"><span data-stu-id="cac36-103">Use the Microsoft Graph SDKs to batch requests</span></span>
 
-<span data-ttu-id="6a270-104">O [processamento em lotes](../json-batching.md) é uma maneira de combinar várias solicitações em uma única solicitação HTTP.</span><span class="sxs-lookup"><span data-stu-id="6a270-104">[Batching](../json-batching.md) is a way of combining multiple requests into a single HTTP request.</span></span> <span data-ttu-id="6a270-105">As solicitações são combinadas em uma única carga JSON, que é enviada por POSTAgem para o `\$batch` ponto de extremidade.</span><span class="sxs-lookup"><span data-stu-id="6a270-105">The requests are combined in a single JSON payload, which is sent via POST to the `\$batch` endpoint.</span></span> <span data-ttu-id="6a270-106">Os SDKs do Microsoft Graph têm um conjunto de classes para simplificar o modo como você cria cargas de lote e analisa as cargas de resposta em lote.</span><span class="sxs-lookup"><span data-stu-id="6a270-106">Microsoft Graph SDKs have a set of classes to simplify how you create batch payloads and parse batch response payloads.</span></span>
+<span data-ttu-id="cac36-104">[O lote](../json-batching.md) é uma maneira de combinar várias solicitações em uma única solicitação HTTP.</span><span class="sxs-lookup"><span data-stu-id="cac36-104">[Batching](../json-batching.md) is a way of combining multiple requests into a single HTTP request.</span></span> <span data-ttu-id="cac36-105">As solicitações são combinadas em uma única carga JSON, que é enviada via POST para o `\$batch` ponto de extremidade.</span><span class="sxs-lookup"><span data-stu-id="cac36-105">The requests are combined in a single JSON payload, which is sent via POST to the `\$batch` endpoint.</span></span> <span data-ttu-id="cac36-106">Os SDKs do Microsoft Graph têm um conjunto de classes para simplificar como você cria cargas em lotes e analisar cargas de resposta em lotes.</span><span class="sxs-lookup"><span data-stu-id="cac36-106">Microsoft Graph SDKs have a set of classes to simplify how you create batch payloads and parse batch response payloads.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="6a270-107">Para obter as limitações atuais com o processamento em lotes JSON no Microsoft Graph, confira [problemas conhecidos](../known-issues.md#json-batching).</span><span class="sxs-lookup"><span data-stu-id="6a270-107">For current limitations with JSON batching in Microsoft Graph, see [Known Issues](../known-issues.md#json-batching).</span></span>
+> <span data-ttu-id="cac36-107">Para limitações atuais com o lote JSON no Microsoft Graph, consulte [Problemas Conhecidos.](../known-issues.md#json-batching)</span><span class="sxs-lookup"><span data-stu-id="cac36-107">For current limitations with JSON batching in Microsoft Graph, see [Known Issues](../known-issues.md#json-batching).</span></span>
 
-## <a name="create-a-batch-request"></a><span data-ttu-id="6a270-108">Criar uma solicitação em lote</span><span class="sxs-lookup"><span data-stu-id="6a270-108">Create a batch request</span></span>
+## <a name="create-a-batch-request"></a><span data-ttu-id="cac36-108">Criar uma solicitação em lote</span><span class="sxs-lookup"><span data-stu-id="cac36-108">Create a batch request</span></span>
 
-<span data-ttu-id="6a270-109">Os SDKs do Microsoft Graph fornecem três classes para trabalhar com solicitações de lote e respostas.</span><span class="sxs-lookup"><span data-stu-id="6a270-109">The Microsoft Graph SDKs provide three classes to work with batch requests and responses.</span></span>
+<span data-ttu-id="cac36-109">Os SDKs do Microsoft Graph fornecem três classes para trabalhar com solicitações e respostas em lotes.</span><span class="sxs-lookup"><span data-stu-id="cac36-109">The Microsoft Graph SDKs provide three classes to work with batch requests and responses.</span></span>
 
-- <span data-ttu-id="6a270-110">**BatchRequestStep** -representa uma única solicitação (como `GET /me` ) em um lote.</span><span class="sxs-lookup"><span data-stu-id="6a270-110">**BatchRequestStep** - Represents a single request (such as `GET /me`) within a batch.</span></span> <span data-ttu-id="6a270-111">Ele permite atribuir um identificador exclusivo para a solicitação e especificar dependências entre solicitações.</span><span class="sxs-lookup"><span data-stu-id="6a270-111">It enables assigning a unique identifier to the request and specifying dependencies between requests.</span></span>
-- <span data-ttu-id="6a270-112">**BatchRequestContent** -simplifica a criação da carga de solicitação em lote.</span><span class="sxs-lookup"><span data-stu-id="6a270-112">**BatchRequestContent** - Simplifies creating the batch request payload.</span></span> <span data-ttu-id="6a270-113">Ele contém vários objetos **BatchRequestStep** .</span><span class="sxs-lookup"><span data-stu-id="6a270-113">It contains multiple **BatchRequestStep** objects.</span></span>
-- <span data-ttu-id="6a270-114">**BatchResponseContent** -simplifica a análise da resposta de uma solicitação em lote.</span><span class="sxs-lookup"><span data-stu-id="6a270-114">**BatchResponseContent** - Simplifies parsing the response from a batch request.</span></span> <span data-ttu-id="6a270-115">Ele fornece a capacidade de obter todas as respostas, obter uma resposta específica por ID e obter a `@odata.nextLink` propriedade, se houver.</span><span class="sxs-lookup"><span data-stu-id="6a270-115">It provides the ability to get all responses, get a specific response by ID, and get the `@odata.nextLink` property if present.</span></span>
+- <span data-ttu-id="cac36-110">**BatchRequestStep** - Representa uma única solicitação (como `GET /me` ) em um lote.</span><span class="sxs-lookup"><span data-stu-id="cac36-110">**BatchRequestStep** - Represents a single request (such as `GET /me`) within a batch.</span></span> <span data-ttu-id="cac36-111">Ele permite atribuir um identificador exclusivo à solicitação e especificar dependências entre solicitações.</span><span class="sxs-lookup"><span data-stu-id="cac36-111">It enables assigning a unique identifier to the request and specifying dependencies between requests.</span></span>
+- <span data-ttu-id="cac36-112">**BatchRequestContent** - Simplifica a criação da carga de solicitação em lote.</span><span class="sxs-lookup"><span data-stu-id="cac36-112">**BatchRequestContent** - Simplifies creating the batch request payload.</span></span> <span data-ttu-id="cac36-113">Ele contém vários **objetos BatchRequestStep.**</span><span class="sxs-lookup"><span data-stu-id="cac36-113">It contains multiple **BatchRequestStep** objects.</span></span>
+- <span data-ttu-id="cac36-114">**BatchResponseContent** - Simplifica a análise da resposta de uma solicitação em lotes.</span><span class="sxs-lookup"><span data-stu-id="cac36-114">**BatchResponseContent** - Simplifies parsing the response from a batch request.</span></span> <span data-ttu-id="cac36-115">Ele fornece a capacidade de obter todas as respostas, obter uma resposta específica por ID e obter a `@odata.nextLink` propriedade, se presente.</span><span class="sxs-lookup"><span data-stu-id="cac36-115">It provides the ability to get all responses, get a specific response by ID, and get the `@odata.nextLink` property if present.</span></span>
 
-## <a name="simple-batching-example"></a><span data-ttu-id="6a270-116">Exemplo de lote simples</span><span class="sxs-lookup"><span data-stu-id="6a270-116">Simple batching example</span></span>
+## <a name="simple-batching-example"></a><span data-ttu-id="cac36-116">Exemplo de lotes simples</span><span class="sxs-lookup"><span data-stu-id="cac36-116">Simple batching example</span></span>
 
-<span data-ttu-id="6a270-117">Este exemplo mostra como enviar várias solicitações em um lote que não dependem uns dos outros.</span><span class="sxs-lookup"><span data-stu-id="6a270-117">This example shows how to send multiple requests in a batch that are not dependent on each other.</span></span> <span data-ttu-id="6a270-118">As solicitações podem ser executadas pelo serviço em qualquer ordem.</span><span class="sxs-lookup"><span data-stu-id="6a270-118">The requests can be run by the service in any order.</span></span> <span data-ttu-id="6a270-119">Este exemplo obtém o usuário e Obtém o modo de exibição de calendário do usuário para o dia atual.</span><span class="sxs-lookup"><span data-stu-id="6a270-119">This example gets the user and gets the user's calendar view for the current day.</span></span>
+<span data-ttu-id="cac36-117">Este exemplo mostra como enviar várias solicitações em um lote que não dependem umas das outras.</span><span class="sxs-lookup"><span data-stu-id="cac36-117">This example shows how to send multiple requests in a batch that are not dependent on each other.</span></span> <span data-ttu-id="cac36-118">As solicitações podem ser executados pelo serviço em qualquer ordem.</span><span class="sxs-lookup"><span data-stu-id="cac36-118">The requests can be run by the service in any order.</span></span> <span data-ttu-id="cac36-119">Este exemplo obtém o usuário e obtém a exibição de calendário do usuário para o dia atual.</span><span class="sxs-lookup"><span data-stu-id="cac36-119">This example gets the user and gets the user's calendar view for the current day.</span></span>
 
-### <a name="c"></a>[<span data-ttu-id="6a270-120">C#</span><span class="sxs-lookup"><span data-stu-id="6a270-120">C#</span></span>](#tab/csharp)
+### <a name="c"></a>[<span data-ttu-id="cac36-120">C#</span><span class="sxs-lookup"><span data-stu-id="cac36-120">C#</span></span>](#tab/csharp)
 
 ```csharp
 // Use the request builder to generate a regular
@@ -87,7 +87,7 @@ catch (ServiceException ex)
 }
 ```
 
-### <a name="typescript"></a>[<span data-ttu-id="6a270-121">TypeScript</span><span class="sxs-lookup"><span data-stu-id="6a270-121">TypeScript</span></span>](#tab/typescript)
+### <a name="typescript"></a>[<span data-ttu-id="cac36-121">TypeScript</span><span class="sxs-lookup"><span data-stu-id="cac36-121">TypeScript</span></span>](#tab/typescript)
 
 ```typescript
 // Create a batch request step to GET /me
@@ -156,19 +156,17 @@ if (calendarResponse.ok) {
 }
 ```
 
-### <a name="java"></a>[<span data-ttu-id="6a270-122">Java</span><span class="sxs-lookup"><span data-stu-id="6a270-122">Java</span></span>](#tab/java)
+### <a name="java"></a>[<span data-ttu-id="cac36-122">Java</span><span class="sxs-lookup"><span data-stu-id="cac36-122">Java</span></span>](#tab/java)
 
 ```java
 // Create the batch request content with the steps
-final MSBatchRequestContent batchRequestContent = new MSBatchRequestContent();
+final BatchRequestContent batchRequestContent = new BatchRequestContent();
 
 // Use the Graph client to generate the request for GET /me
 final String meGetId = batchRequestContent
                         .addBatchRequestStep(graphClient
                                               .me()
-                                              .buildRequest()
-                                              .withHttpMethod(HttpMethod.GET)
-                                              .getHttpRequest());
+                                              .buildRequest());
 
 final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
 final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
@@ -182,72 +180,30 @@ final String calendarViewRequestStepId = batchRequestContent
                                         .addBatchRequestStep(graphClient
                                           .me()
                                           .calendarView()
-                                          .buildRequest(calendarViewOptions)
-                                          .withHttpMethod(HttpMethod.GET)
-                                          .getHttpRequest());
-
-final ICoreAuthenticationProvider auth =
-    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
-final OkHttpClient client = HttpClients.createDefault(auth);
+                                          .buildRequest(calendarViewOptions));
 
 // Send the batch request content to the /$batch endpoint
-final String batchContent = batchRequestContent.getBatchRequestContent();
-final Request batchRequest = new Request.Builder()
-    .url("https://graph.microsoft.com/v1.0/$batch")
-    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
-    .build();
-
-final Response batchResponse = client.newCall(batchRequest).execute();
-
-final ISerializer graphSerializer = graphClient.getSerializer();
-
-// Create an MSBatchResponseContent object to parse the response
-final MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(graphClient);
 // Get the user response using the id assigned to the request
-final Response userResponse = batchResponseContent.getResponseById(meGetId);
-
-// For a single entity, the JSON payload can be deserialized
-// into the expected type
-if (userResponse.isSuccessful()) {
-    final User user = graphSerializer.deserializeObject(userResponse.body().string(), User.class);
-    System.out.println(String.format("Hello %s!", user.displayName));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(userResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting user: %s - %s", error.error.code, error.error.message));
-}
+final User user = batchResponseContent.getResponseById(meGetId).getDeserializedBody(User.class);
+System.out.println(String.format("Hello %s!", user.displayName));
 
 // Get the calendar view response by id
-final Response calendarViewResponse = batchResponseContent.getResponseById(calendarViewRequestStepId);
-
-// For a collection of entities, the JSON payload can be deserialized
-// into a *CollectionResponse object. The collection can then be
-// accessed via the value property
-if (calendarViewResponse.isSuccessful()) {
-    final EventCollectionResponse events = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
-    System.out.println(
-        String.format("You have %d events on your calendar today", events.value.size()));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
-}
+final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
+System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
 ---
 
-## <a name="batches-with-dependent-requests"></a><span data-ttu-id="6a270-123">Lotes com solicitações dependentes</span><span class="sxs-lookup"><span data-stu-id="6a270-123">Batches with dependent requests</span></span>
+## <a name="batches-with-dependent-requests"></a><span data-ttu-id="cac36-123">Lotes com solicitações dependentes</span><span class="sxs-lookup"><span data-stu-id="cac36-123">Batches with dependent requests</span></span>
 
-<span data-ttu-id="6a270-124">Este exemplo mostra como enviar várias solicitações em um lote que dependem uns dos outros.</span><span class="sxs-lookup"><span data-stu-id="6a270-124">This example shows how to send multiple requests in a batch that are dependent on each other.</span></span> <span data-ttu-id="6a270-125">As solicitações serão executadas pelo serviço na ordem especificada pelas dependências.</span><span class="sxs-lookup"><span data-stu-id="6a270-125">The requests will be run by the service in the order specified by the dependencies.</span></span> <span data-ttu-id="6a270-126">Este exemplo adiciona um evento com uma hora de início durante o dia atual ao calendário do usuário e Obtém o modo de exibição de calendário do usuário para o dia atual.</span><span class="sxs-lookup"><span data-stu-id="6a270-126">This example adds an event with a start time during the current day to the user's calendar and gets the user's calendar view for the current day.</span></span> <span data-ttu-id="6a270-127">Para certificar-se de que a revisão de calendário retornada inclui o novo evento criado, a solicitação para o modo de exibição calendário é configurada como dependente da solicitação para adicionar o novo evento.</span><span class="sxs-lookup"><span data-stu-id="6a270-127">To make sure that the calendar review returned includes the new event created, the request for the calendar view is configured as dependent on the request to add the new event.</span></span> <span data-ttu-id="6a270-128">Isso garante que a solicitação de evento add seja executada primeiro.</span><span class="sxs-lookup"><span data-stu-id="6a270-128">This ensures that the add event request will execute first.</span></span>
+<span data-ttu-id="cac36-124">Este exemplo mostra como enviar várias solicitações em um lote que dependem umas das outras.</span><span class="sxs-lookup"><span data-stu-id="cac36-124">This example shows how to send multiple requests in a batch that are dependent on each other.</span></span> <span data-ttu-id="cac36-125">As solicitações serão executados pelo serviço na ordem especificada pelas dependências.</span><span class="sxs-lookup"><span data-stu-id="cac36-125">The requests will be run by the service in the order specified by the dependencies.</span></span> <span data-ttu-id="cac36-126">Este exemplo adiciona um evento com uma hora de início durante o dia atual ao calendário do usuário e obtém a exibição de calendário do usuário para o dia atual.</span><span class="sxs-lookup"><span data-stu-id="cac36-126">This example adds an event with a start time during the current day to the user's calendar and gets the user's calendar view for the current day.</span></span> <span data-ttu-id="cac36-127">Para garantir que a revisão de calendário retornada inclua o novo evento criado, a solicitação para o exibição de calendário é configurada como dependente da solicitação para adicionar o novo evento.</span><span class="sxs-lookup"><span data-stu-id="cac36-127">To make sure that the calendar review returned includes the new event created, the request for the calendar view is configured as dependent on the request to add the new event.</span></span> <span data-ttu-id="cac36-128">Isso garante que a solicitação de evento add seja executada primeiro.</span><span class="sxs-lookup"><span data-stu-id="cac36-128">This ensures that the add event request will execute first.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="6a270-129">Se a solicitação de evento add falhar, a solicitação de exibição obter calendário falhará com um `424 Failed Dependency` erro.</span><span class="sxs-lookup"><span data-stu-id="6a270-129">If the add event request fails, the get calendar view request will fail with a `424 Failed Dependency` error.</span></span>
+> <span data-ttu-id="cac36-129">Se a solicitação de evento adicionar falhar, a solicitação obter exibição de calendário falhará com um `424 Failed Dependency` erro.</span><span class="sxs-lookup"><span data-stu-id="cac36-129">If the add event request fails, the get calendar view request will fail with a `424 Failed Dependency` error.</span></span>
 
 <!-- markdownlint-disable MD024 -->
-### <a name="c"></a>[<span data-ttu-id="6a270-130">C#</span><span class="sxs-lookup"><span data-stu-id="6a270-130">C#</span></span>](#tab/csharp)
+### <a name="c"></a>[<span data-ttu-id="cac36-130">C#</span><span class="sxs-lookup"><span data-stu-id="cac36-130">C#</span></span>](#tab/csharp)
 
 ```csharp
 var today = DateTime.Now.Date;
@@ -337,7 +293,7 @@ catch (ServiceException ex)
 }
 ```
 
-### <a name="typescript"></a>[<span data-ttu-id="6a270-131">TypeScript</span><span class="sxs-lookup"><span data-stu-id="6a270-131">TypeScript</span></span>](#tab/typescript)
+### <a name="typescript"></a>[<span data-ttu-id="cac36-131">TypeScript</span><span class="sxs-lookup"><span data-stu-id="cac36-131">TypeScript</span></span>](#tab/typescript)
 
 ```typescript
 // 5:00 PM
@@ -429,11 +385,11 @@ if (calendarResponse.ok)
 }
 ```
 
-### <a name="java"></a>[<span data-ttu-id="6a270-132">Java</span><span class="sxs-lookup"><span data-stu-id="6a270-132">Java</span></span>](#tab/java)
+### <a name="java"></a>[<span data-ttu-id="cac36-132">Java</span><span class="sxs-lookup"><span data-stu-id="cac36-132">Java</span></span>](#tab/java)
 
 ```java
 // Create the batch request content with the steps
-final MSBatchRequestContent batchRequestContent = new MSBatchRequestContent(batchSteps);
+final BatchRequestContent batchRequestContent = new BatchRequestContent(batchSteps);
 
 final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
 final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
@@ -457,9 +413,7 @@ final String addEventRequestId = batchRequestContent
                                 .addBatchRequestStep(graphClient
                                                 .me()
                                                 .events()
-                                                .buildRequest()
-                                                .withHttpMethod(HttpMethod.POST)
-                                                .getHttpRequest(newEvent));
+                                                .buildRequest(), HttpMethod.POST, newEvent);
 
 // Use the Graph client to generate the request URL for
 // GET /me/calendarview?startDateTime="start"&endDateTime="end"
@@ -469,60 +423,20 @@ final String calendarViewRequestStepId = batchRequestContent
                                         .addBatchRequestStep(graphClient
                                           .me()
                                           .calendarView()
-                                          .buildRequest(calendarViewOptions)
-                                          .withHttpMethod(HttpMethod.GET)
-                                          .getHttpRequest(),
+                                          .buildRequest(calendarViewOptions),
+                                          HttpMethod.GET,
+                                          null,
                                           addEventRequestId);
 
-final ICoreAuthenticationProvider auth =
-    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
-final OkHttpClient client = HttpClients.createDefault(auth);
-
 // Send the batch request content to the /$batch endpoint
-final String batchContent = batchRequestContent.getBatchRequestContent();
-final Request batchRequest = new Request.Builder()
-    .url("https://graph.microsoft.com/v1.0/$batch")
-    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
-    .build();
-
-final Response batchResponse = client.newCall(batchRequest).execute();
-
-final ISerializer graphSerializer = graphClient.getSerializer();
-
-// Create an MSBatchResponseContent object to parse the response
-final MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(client);
 // Get the user response using the id assigned to the request
-final Response addEventResponse = batchResponseContent.getResponseById(addEventRequestId);
-
-// For a single entity, the JSON payload can be deserialized
-// into the expected type
-  if (addEventResponse.isSuccessful()) {
-    final Event event = graphSerializer.deserializeObject(addEventResponse.body().string(), Event.class);
-    System.out.println(String.format("New event created with ID: %s", event.id));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(addEventResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error creating event: %s - %s", error.error.code, error.error.message));
-}
+final Event event = batchResponseContent.getResponseById(addEventRequestId).getDeserializedBody(Event.class);
+System.out.println(String.format("New event created with ID: %s", event.id));
 
 // Get the calendar view response by id
-final Response calendarViewResponse = batchResponseContent.getResponseById(calendarViewRequestStepId);
-
-// For a collection of entities, the JSON payload can be deserialized
-// into a *CollectionResponse object. The collection can then be
-// accessed via the value property
-if (calendarViewResponse.isSuccessful()) {
-    final EventCollectionResponse events = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
-    System.out.println(
-        String.format("You have %d events on your calendar today", events.value.size()));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
-}
+final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
+System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
 ---
