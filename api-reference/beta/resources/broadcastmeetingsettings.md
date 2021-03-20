@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso broadcastMeetingSettings
 description: Configurações relacionadas a um evento ao vivo
-author: frankpeng7
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 42ac666817b6f259dd888e479939216fc3e39c6c
-ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
+ms.openlocfilehash: def9276d97ddbe1fd812083cc17e547ae7ce53c5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49866246"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953752"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>Tipo de recurso broadcastMeetingSettings
 
@@ -21,24 +21,24 @@ Namespace: microsoft.graph
 Configurações relacionadas a um evento ao vivo.
 
 > [!IMPORTANT]
-> Essa API não valida configurações de eventos ao vivo gerenciadas por [política.](/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell)
+> Esta API não valida as configurações de evento ao vivo gerenciadas pela [política](/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell).
 > Por exemplo, se um administrador definir uma política de evento ao vivo usando , os usuários serão impedidos de definir permissões de evento ao vivo no cliente do Teams, mas poderão criar um evento ao vivo por meio do Microsoft Graph definindo `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany` `public` **allowedAudience** como `everyone` . 
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                   | Tipo                     | Descrição                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
-| allowedAudience            | broadcastMeetingAudience | Define quem pode ingressar no evento ao vivo. Os valores possíveis estão listados na tabela a seguir. |
-| isRecordingEnabled         | Boolean                  | Indica se a gravação está habilitada para este evento ao vivo. O valor padrão é `false`.          |
-| isAttendeeReportEnabled    | Boolean                  | Indica se o relatório de participantes está habilitado para este evento ao vivo. O valor padrão é `false`.    |
-| isQuestionAndAnswerEnabled | Boolean                  | Indica se as&A estão habilitadas para este evento ao vivo. O valor padrão é `false`.                |
-| isVideoOnDemandEnabled     | Boolean                  | Indica se o vídeo sob demanda está habilitado para este evento ao vivo. O valor padrão é `false`.    |
+| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Define quem pode participar do evento ao vivo. Os valores possíveis são listados na tabela a seguir. |
+| isRecordingEnabled         | Booliano                  | Indica se a gravação está habilitada para esse evento ao vivo. O valor padrão é `false`.          |
+| isAttendeeReportEnabled    | Booliano                  | Indica se o relatório do participante está habilitado para este evento ao vivo. O valor padrão é `false`.    |
+| isQuestionAndAnswerEnabled | Booliano                  | Indica se O&A está habilitado para este evento ao vivo. O valor padrão é `false`.                |
+| isVideoOnDemandEnabled     | Booliano                  | Indica se o vídeo sob demanda está habilitado para esse evento ao vivo. O valor padrão é `false`.    |
 
-### <a name="broadcastmeetingaudience-values"></a>Valores de broadcastMeetingAudience
+### <a name="broadcastmeetingaudience-values"></a>valores broadcastMeetingAudience
 
 | Valor              | Descrição                                                       |
 | ------------------ | ----------------------------------------------------------------- |
-| everyone           | O evento ao vivo será aberto para qualquer pessoa. Esse é o valor padrão. |
+| everyone           | O evento ao vivo será aberto a qualquer pessoa. Esse é o valor padrão. |
 | organization       | Todos em sua organização podem participar do evento ao vivo.                     |
 | roleIsAttendee     | Somente as pessoas especificadas podem participar do evento ao vivo.                |
 | unknownFutureValue | Valor futuro desconhecido.                                             |

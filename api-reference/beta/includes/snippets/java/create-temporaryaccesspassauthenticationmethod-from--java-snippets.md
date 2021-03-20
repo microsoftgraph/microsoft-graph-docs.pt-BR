@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 90a65b15bdced879fe453eb7b126e363ef4d3da9
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 55571705a99789f1469c76d1afd60211c06a725f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475064"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50978092"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TemporaryAccessPassAuthenticationMethod temporaryAccessPassAuthenticationMethod = new TemporaryAccessPassAuthenticationMethod();
-temporaryAccessPassAuthenticationMethod.startDateTime = CalendarSerializer.deserialize("2021-01-26T00:00:00Z");
+temporaryAccessPassAuthenticationMethod.startDateTime = OffsetDateTimeSerializer.deserialize("2021-01-26T00:00:00Z");
 temporaryAccessPassAuthenticationMethod.lifetimeInMinutes = 60;
 temporaryAccessPassAuthenticationMethod.isUsableOnce = false;
 

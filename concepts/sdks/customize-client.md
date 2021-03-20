@@ -1,18 +1,18 @@
 ---
-title: Personalizar o cliente do serviço SDK do Microsoft Graph
-description: Fornece instruções sobre como alterar o comportamento padrão do cliente do serviço SDK do Microsoft Graph.
+title: Personalizar o cliente de serviço SDK do Microsoft Graph
+description: Fornece instruções sobre como alterar o comportamento padrão do cliente de serviço SDK do Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: dd8fdca9d093c8164dd486fb185d462b9de0ff0d
-ms.sourcegitcommit: 6eadb95e21b2e7eb5d6b081b91999cb91070f397
+ms.openlocfilehash: a9b2c4b1d77206e814dfb558481243a3da0c16d4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299274"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953345"
 ---
-# <a name="customize-the-microsoft-graph-sdk-service-client"></a>Personalizar o cliente do serviço SDK do Microsoft Graph
+# <a name="customize-the-microsoft-graph-sdk-service-client"></a>Personalizar o cliente de serviço SDK do Microsoft Graph
 
-O cliente SDK do Microsoft Graph configura um conjunto padrão de middleware que permite que o SDK se comunique com os pontos de extremidade do Microsoft Graph. Esse conjunto padrão é personalizável, permitindo que você altere o comportamento do cliente. Por exemplo, você pode inserir logs personalizados ou adicionar um manipulador de teste para simular cenários específicos. Você pode adicionar e remover os componentes middleware. É importante observar que a ordem em que os componentes middleware são executados é significativa.
+O cliente SDK do Microsoft Graph configura um conjunto padrão de middleware que permite que o SDK se comunique com os pontos de extremidade do Microsoft Graph. Esse conjunto padrão é personalizável, permitindo que você altere o comportamento do cliente. Por exemplo, você pode inserir o registro em log personalizado ou adicionar um manipulador de teste para simular cenários específicos. Você pode adicionar e remover componentes de middleware. É importante observar que a ordem na qual os componentes de middleware são executados é significativa.
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -69,7 +69,7 @@ let response: PageCollection = await client
   .get();
 ```
 
-### <a name="simpleauthproviderts"></a>SimpleAuthProvider. TS
+### <a name="simpleauthproviderts"></a>SimpleAuthProvider.ts
 
 ```typescript
 import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
@@ -87,7 +87,7 @@ export default class SimpleAuthProvider implements AuthenticationProvider {
 }
 ```
 
-### <a name="customlogginghandlerts"></a>CustomLoggingHandler. TS
+### <a name="customlogginghandlerts"></a>CustomLoggingHandler.ts
 
 ```typescript
 import { Context, Middleware } from "@microsoft/microsoft-graph-client";
@@ -109,21 +109,17 @@ export default class CustomLoggingHandler implements Middleware {
 
 ```java
 // you can configure any OkHttpClient option and add interceptors
-// Note: com.microsoft.graph:microsoft-graph:2.3 or above is required
+// Note: com.microsoft.graph:microsoft-graph:3.0 or above is required
 // for a complete description of available configuration options https://square.github.io/okhttp/4.x/okhttp/okhttp3/-ok-http-client/-builder/
-final OkHttpClient httpClient = HttpClients.createDefault(coreAuthenticationProvider)
+final OkHttpClient httpClient = HttpClients.createDefault(authenticationProvider)
                                 .newBuilder()
                                 .followSslRedirects(false) // sample configuration to apply to client
                                 .build();
 
-final IHttpProvider httpProvider = DefaultClientConfig
-                          .createWithAuthenticationProvider(authenticationProvider)
-                          .getHttpProvider(httpClient);
-
-final IGraphServiceClient graphServiceClient = GraphServiceClient
+final GraphServiceClient graphServiceClient = GraphServiceClient
                 .builder()
                 .authenticationProvider(authenticationProvider)
-                .httpProvider(httpProvider)
+                .httpClient(httpClient)
                 .buildClient();
 ```
 
