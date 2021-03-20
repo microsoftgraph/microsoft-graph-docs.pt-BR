@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b4b6ee584e671e070955eb7c065c59cb8481c375
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1b6138bc52e5686af94a94cfa13762b71a6242c4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440350"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945687"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>Tipo de recurso entitlementManagementSettings
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa configurações que controlam o comportamento do gerenciamento de direitos do [Azure AD.](entitlementmanagement-root.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -31,8 +31,8 @@ Representa configurações que controlam o comportamento do gerenciamento de dir
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|externalUserLifecycleAction|String|Um dos `None` , `BlockSignIn` ou `BlockSignInAndDelete` . |
-|daysUntilExternalUserDeletedAfterBlocked|Int64|Se for , o número de dias após um usuário externo ser bloqueado de `externalUserLifecycleAction` entrar antes que sua conta seja `BlockSignInAndDelete` excluída.|
+|externalUserLifecycleAction|Cadeia de caracteres|Um dos `None` , `BlockSignIn` ou `BlockSignInAndDelete` . |
+|daysUntilExternalUserDeletedAfterBlocked|Int64|Se **externalUserLifecycleAction** for , o número de dias após um usuário externo ser bloqueado de entrar antes de `BlockSignInAndDelete` sua conta ser excluída.|
 
 ## <a name="relationships"></a>Relações
 

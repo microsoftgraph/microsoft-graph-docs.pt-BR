@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 1841f80be8d5062419f4b12d98f25e062e91ed49
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: dfabbed35d669fcf539c33b8ec64f39622f4c476
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777156"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945068"
 ---
 # <a name="list-shares"></a>Listar shares
 Namespace: microsoft.graph
@@ -26,8 +26,8 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| PrinterShare.Read.All, PrinterShare.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)| PrinterShare.Read.All, PrinterShare.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -69,26 +69,26 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_printershare"
+  "name": "list_printershare_1"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/print/shares
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-printershare-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-printershare-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-printershare-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-printershare-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-printershare-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-printershare-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-printershare-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-printershare-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Remova o acesso a um DriveItem.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ea5e5eca29db3ffb668f6e4e126e4c127b2a7cfc
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: c21c3685aa2471026e5d7ff9e10e6f84370c4673
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240147"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945094"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Excluir uma permissão de compartilhamento de um arquivo ou pasta
 
@@ -46,7 +46,7 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome          | Tipo   | Descrição                                                                                                                                                                                       |
+| Name          | Tipo   | Descrição                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído. |
 
@@ -60,25 +60,25 @@ Este exemplo remove a permissão identificada como {perm-id} de {item-id} do ite
 
 
 # <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "delete-permission-1", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
 DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

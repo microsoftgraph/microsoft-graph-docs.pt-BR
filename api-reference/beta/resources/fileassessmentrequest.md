@@ -3,14 +3,14 @@ title: Tipo de recurso fileAssessmentRequest
 description: Usado para criar e recuperar uma avaliação de ameaça de arquivo.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: ce0280eb465474dab26658c9d31bfc90e368ff21
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 51211fd4ab732525423617bb3bdcb6c00091ac86
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722150"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945652"
 ---
 # <a name="fileassessmentrequest-resource-type"></a>Tipo de recurso fileAssessmentRequest
 

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 52230f5e69779666e7f56048831874b197826088
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: f4b67f9d97245b2f5749af33ce36a59a1cc85ec6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460604"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945390"
 ---
 # <a name="list-educationclasses"></a>Listar educationClasses
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 Recupera uma lista de classes de propriedade de uma escola.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,25 +51,25 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_classes"
+  "name": "get_classes_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-classes-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-classes-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-classes-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-classes-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

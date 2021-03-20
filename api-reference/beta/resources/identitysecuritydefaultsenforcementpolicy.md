@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b06fd0b88a87dabb5a12e09b788094b8e00b8960
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 249396b0c2bfc4b39ca21c198958adc3d0b9e228
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440250"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945638"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>Tipo de recurso identitySecurityDefaultsEnforcementPolicy
 
@@ -22,7 +22,7 @@ Representa a política de padrões de [segurança](/azure/active-directory/funda
 
 Herda de [policyBase](../resources/policybase.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -33,10 +33,10 @@ Herda de [policyBase](../resources/policybase.md).
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|String|Descrição dessa política. Somente leitura.|
-|displayName|String|Nome de exibição para esta política. Somente leitura.|
-|id|String|Identificador dessa política. Somente leitura.|
-|isEnabled|Booliano|Se definido como true, os padrões de segurança do Azure Active Directory são habilitados para o locatário.|
+|description|Cadeia de caracteres|Descrição dessa política. Somente leitura.|
+|displayName|Cadeia de caracteres|Nome de exibição para esta política. Somente leitura.|
+|id|Cadeia de caracteres|Identificador dessa política. Somente leitura.|
+|isEnabled|Booliano|Se definido como , os padrões de segurança do `true` Azure Active Directory estão habilitados para o locatário.|
 
 ## <a name="relationships"></a>Relações
 

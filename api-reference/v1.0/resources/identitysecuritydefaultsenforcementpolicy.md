@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 21b012338e6ca168e932a8aaf2560ce825304ae9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2609a75ad90aba9ab545e81207bc0d3ea33f0a8a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439839"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944840"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>Tipo de recurso identitySecurityDefaultsEnforcementPolicy
 
@@ -25,7 +25,7 @@ Herda de [policyBase](../resources/policybase.md).
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Get](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Leia as propriedades de **um objeto identitySecurityDefaultsEnforcementPolicy.** |
-| [Atualizar](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Atualize **um objeto identitySecurityDefaultsEnforcementPolicy.** |
+| [Atualização](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Atualize **um objeto identitySecurityDefaultsEnforcementPolicy.** |
 
 ## <a name="properties"></a>Propriedades
 
@@ -34,7 +34,7 @@ Herda de [policyBase](../resources/policybase.md).
 |description|Cadeia de caracteres|Descrição dessa política. Somente leitura.|
 |displayName|Cadeia de caracteres|Nome de exibição para esta política. Somente leitura.|
 |id|Cadeia de caracteres|Identificador dessa política. Somente leitura.|
-|isEnabled|Booliano|Se definido como true, os padrões de segurança do Azure Active Directory são habilitados para o locatário.|
+|isEnabled|Booliano|Se definido como , os padrões de segurança do `true` Azure Active Directory estão habilitados para o locatário.|
 
 ## <a name="relationships"></a>Relações
 

@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 247e4626c35eb9b0d9d3cf82d5ebc32621922755
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 2f88108fc1c619bdb4c8ef234dd10a3f38ec35c7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516798"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945791"
 ---
 # <a name="get-shiftpreferences"></a>Obter shiftPreferences
 
@@ -64,25 +64,25 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "shift-get-2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/shift-get-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

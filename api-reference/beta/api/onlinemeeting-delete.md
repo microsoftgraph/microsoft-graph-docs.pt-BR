@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f340e8e65cfddfce657bab522bbb933016be8b30
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 320bafdae61848ceb2f3490ab688be3ddebe3069
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516259"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945985"
 ---
 # <a name="delete-onlinemeeting"></a>Excluir onlineMeeting
 
@@ -71,25 +71,25 @@ O exemplo a seguir mostra a solicitação.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype"],
-  "name": "delete-call"
+  "name": "delete-call-2"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/onlineMeetings/550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-call-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-call-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

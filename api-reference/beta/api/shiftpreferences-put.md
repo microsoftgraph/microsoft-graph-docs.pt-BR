@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 80b503780c0b17db2cb4f33ee2e21c27b5c4afcd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 12eb1020f2daad820d9fbbf9fe20005e8ec00447
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969139"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945800"
 ---
 # <a name="update-shiftpreferences"></a>Atualizar shiftPreferences
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades e os relacionamentos de um objeto [shiftPreferences](../resources/shiftpreferences.md) .
+Atualize as propriedades e as relações de um [objeto shiftPreferences.](../resources/shiftpreferences.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,7 +46,7 @@ PUT /users/{userId}/settings/shiftPreferences
 | Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [shiftPreferences](../resources/shiftpreferences.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto shiftPreferences.](../resources/shiftpreferences.md)
 
 ## <a name="response"></a>Resposta
 
@@ -61,7 +61,7 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "shift-get-3"
 }-->
 ```msgraph-interactive
 PUT https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
@@ -89,19 +89,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/shift-get-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

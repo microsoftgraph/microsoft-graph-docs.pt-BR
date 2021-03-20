@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso do conector
-description: Representa um conector de Proxy de Aplicativo.
+description: Representa um conector proxy de aplicativo.
 author: japere
 localization_priority: Normal
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 53a5726456ce3d03ea537e87ec0dddb901623601
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 567b67576c5300419c9671de8bd82df84bf49685
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136767"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945694"
 ---
 # <a name="connector-resource-type"></a>tipo de recurso do conector
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Conectores são agentes leves que ficam no local e facilitam a conexão de saída com o serviço de Proxy de Aplicativo do [Azure AD.](https://aka.ms/whyappproxy) Cada conector faz parte de um [connectorGroup](connectorgroup.md).
+Os conectores são agentes leves que se sentam no local e facilitam a conexão de saída para o serviço proxy de aplicativo do [Azure AD.](https://aka.ms/whyappproxy) Cada conector faz parte de um [connectorGroup](connectorgroup.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar conectores](../api/connector-list.md) | [conjunto de conectores](connector.md) | Recupere uma lista de objetos de conector. | 
-| [Obter conector](../api/connector-get.md) | [connector](connector.md) | Leia as propriedades e os relacionamentos do objeto connector. |
+| [Listar conectores](../api/connector-list.md) | [coleção connector](connector.md) | Recupere uma lista de objetos do conector. | 
+| [Obter conector](../api/connector-get.md) | [connector](connector.md) | Ler propriedades e relações do objeto connector. |
 | [Listar memberOf](../api/connector-list-memberof.md) | [Coleção connectorGroup](connectorgroup.md) | Listar a coleção de objetos connectorGroup da que o conector é membro. |
 | [Adicionar conector a connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Adicione um conector a um connectorGroup. |
 
@@ -33,10 +33,10 @@ Conectores são agentes leves que ficam no local e facilitam a conexão de saíd
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|externalIp|String| O endereço IP externo detectado pelo servidor do conector. Somente leitura. |
-|id|String| Identificador exclusivo do conector. Somente leitura. |
-|machineName|String| O nome do computador em que o conector está instalado e em execução. |
-|status|cadeia de caracteres| Indica o status do conector. Os valores possíveis são: `active` e `inactive`. Somente leitura. |
+|externalIp|Cadeia de caracteres| O endereço IP externo detectado pelo servidor do conector. Somente leitura. |
+|id|Cadeia de caracteres| Identificador exclusivo do conector. Somente leitura. |
+|machineName|Cadeia de caracteres| O nome do computador em que o conector está instalado e em execução. |
+|status|connectorStatus| Indica o status do conector. Os valores possíveis são: `active` e `inactive`. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

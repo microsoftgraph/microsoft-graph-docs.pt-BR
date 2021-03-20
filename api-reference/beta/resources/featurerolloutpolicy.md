@@ -5,16 +5,18 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 8c223f377941f0a897810de20aadeb4b86804d9f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: feed3844717dffbfcc98a0e11db31da4a0550e05
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443109"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945674"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>Tipo de recurso featureRolloutPolicy
 
 Namespace: microsoft.graph
+
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,25 +49,25 @@ A seguir estão os pré-requisitos para cada um dos recursos atualmente com supo
 
 * Associe emails alternativos a contas de usuário.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                                         | Tipo de retorno                                     | Descrição                                                               |
 |:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
-| [Listar featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere uma lista de objetos featureRolloutPolicy.                          |
+| [Listar featureRolloutPolicies](../api/list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere uma lista de objetos featureRolloutPolicy.                          |
 | [Obter featureRolloutPolicy](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere as propriedades e as relações do objeto featurerolloutpolicy. |
-| [Criar featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Crie um novo objeto featureRolloutPolicy.                                 |
+| [Criar featureRolloutPolicy](../api/post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Crie um novo objeto featureRolloutPolicy.                                 |
 | [Atualizar featureRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Atualize as propriedades do objeto featurerolloutpolicy.                     |
-| [Excluir featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | Nenhum(a)                                            | Exclua um objeto featureRolloutPolicy.                                     |
+| [Excluir featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | Nenhum                                            | Exclua um objeto featureRolloutPolicy.                                     |
 | [Atribuir appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Atribua um directoryObject à atribuição de recursos.                              |
-| [Remover appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Nenhum(a)                                            | Remover um directoryObject da adoção de recursos.                            |
+| [Remover appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Nenhum                                            | Remover um directoryObject da adoção de recursos.                            |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|String|Uma descrição para essa política de lançamento de recursos.|
-|displayName|String|O nome de exibição dessa política de lançamento de recursos.|
-|feature|stagedFeatureName| Os valores possíveis são: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
+|description|Cadeia de caracteres|Uma descrição para essa política de lançamento de recursos.|
+|displayName|Cadeia de caracteres|O nome de exibição dessa política de lançamento de recursos.|
+|feature|stagedFeatureName| Os valores possíveis são: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`.|
 |id|String| Somente leitura.|
 |isAppliedToOrganization|Booliano|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Booliano|Indica se a adoção de recursos está habilitada.|

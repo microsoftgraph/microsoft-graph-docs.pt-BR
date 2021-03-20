@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de aprovação
-description: O objeto de aprovação associado ao accessPackageAssignmentRequest.
+description: O objeto de aprovação associado a um accessPackageAssignmentRequest ou userConsentRequest.
 localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d46630b563674153ef687a8e8f86dce70eec9985
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 6f6751807f0dcb042958104c4b3146a555b22189
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761258"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945715"
 ---
 # <a name="approval-resource-type"></a>tipo de recurso de aprovação
 
@@ -19,6 +19,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No [Azure AD Entitlement Management](entitlementmanagement-root.md), o objeto de aprovação para decisões associadas ao `accessPackageAssignmentRequest` . Uma única solicitação de etapa pode ter uma etapa associada a ela na qual os aprovadores podem agir. Da mesma forma, uma solicitação em várias etapas pode ter várias etapas associadas a ela nas quais os aprovadores podem agir. No entanto, em aprovações em várias etapas, as etapas pendentes e concluídas anteriormente são mostradas.
+
+Em [userConsentRequests](../resources/userconsentrequest.md), o objeto de aprovação para decisões associadas a uma solicitação.
 
 ## <a name="methods"></a>Métodos
 

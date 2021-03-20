@@ -1,22 +1,22 @@
 ---
 title: Criar offerShiftRequest
-description: Criar uma instância de um offerShiftRequest.
+description: Crie uma instância de um offerShiftRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d41641e031c7d3cfa97e3facfaec714c99239394
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: f9d339836c5b0aa211a12f1840b0c14afad5c70b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313622"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945257"
 ---
 # <a name="create-offershiftrequest"></a>Criar offerShiftRequest
 
 Namespace: microsoft.graph
 
-Criar uma instância de um [offerShiftRequest](../resources/offershiftrequest.md).
+Crie uma instância de [um offerShiftRequest](../resources/offershiftrequest.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,11 +44,11 @@ POST /teams/{teamId}/schedule/offerShiftRequests
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Forneça o novo objeto [offerShiftRequest](../resources/offershiftrequest.md) no corpo da solicitação para este método.
+Forneça o novo [objeto offerShiftRequest](../resources/offershiftrequest.md) no corpo da solicitação para este método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [offerShiftRequest](../resources/offershiftrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto offerShiftRequest](../resources/offershiftrequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -60,7 +60,7 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_offershiftrequest"
+  "name": "get_offershiftrequest_3"
 }-->
 
 ```http
@@ -75,19 +75,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-offershiftrequest-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-offershiftrequest-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-offershiftrequest-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-offershiftrequest-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-offershiftrequest-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-offershiftrequest-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-offershiftrequest-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-offershiftrequest-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

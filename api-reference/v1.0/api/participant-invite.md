@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 697a9f6a25b498f6e76b726978b1ce4ccf9636d5
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 33b36c9657e4975f404696ae0451fc7f2c5c54a2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577993"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945130"
 ---
 # <a name="participant-invite"></a>participante: invite
 
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes a serem convidados.|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se succsessivo, este método retorna um código de resposta e um header de local com um URI para `200 OK` [o inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. 
@@ -71,7 +71,7 @@ Os exemplos a seguir mostram como chamar essa API.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "participant-invite"
+  "name": "participant-invite-1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/invite
@@ -96,19 +96,19 @@ Content-Type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -710,7 +710,7 @@ Essa chamada requer uma instância de aplicativo com um número PSTN atribuído.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "participant-invite"
+  "name": "participant-invite-2"
 }-->
 ```http
 POST /communications/calls/{id}/participants/invite
@@ -734,11 +734,11 @@ Content-Length: 464
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

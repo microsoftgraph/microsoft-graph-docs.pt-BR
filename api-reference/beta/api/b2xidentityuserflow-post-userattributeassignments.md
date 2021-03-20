@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 38d011b2300e690862ec4fe519fba21d969ab20f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 821545418a4dabd8599e2bea6cedbb1a72354df4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438824"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944452"
 ---
 # <a name="create-userattributeassignments"></a>Criar userAttributeAssignments
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [identit
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição da identityUserFlowAttribute em um fluxo de usuário.|
+|displayName|Cadeia de caracteres|O nome de exibição da identityUserFlowAttribute em um fluxo de usuário.|
 |isOptional|Booliano|Determina se identityUserFlowAttribute é opcional. `true` significa que o usuário não precisa fornecer um valor. `false` significa que o usuário não pode concluir a assinatura sem fornecer um valor.|
 |requiresVerification|Booliano|Determina se identityUserFlowAttribute requer verificação. Isso só é usado para verificar o número de telefone ou o endereço de email do usuário.|
 |userAttributeValues|[Coleção userAttributeValuesItem](../resources/userattributevaluesitem.md)|As opções de entrada para o atributo de fluxo do usuário. Aplicável somente quando o userInputType `radioSingleSelect` for `dropdownSingleSelect` , ou `checkboxMultiSelect` .|
@@ -73,7 +73,7 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_identityuserflowattributeassignment_from_"
+  "name": "create_identityuserflowattributeassignment_from__2"
 }
 -->
 
@@ -93,19 +93,19 @@ Content-Type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-identityuserflowattributeassignment-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-identityuserflowattributeassignment-from--2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-identityuserflowattributeassignment-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-identityuserflowattributeassignment-from--2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-identityuserflowattributeassignment-from--objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-identityuserflowattributeassignment-from--2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-identityuserflowattributeassignment-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-identityuserflowattributeassignment-from--2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

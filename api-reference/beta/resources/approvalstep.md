@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso approvalStep
-description: O objeto approvalStep associado ao accessPackageAssignmentRequest.
+description: O objeto approvalStep associado a um accessPackageAssignmentRequest ou userConsentRequest.
 localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 263e809e5858cdc23b34b8401171bb5fce668721
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 94c37320d17a72e0734d856c24cdff49308c9463
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761251"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945705"
 ---
 # <a name="approvalstep-resource-type"></a>Tipo de recurso approvalStep
 
@@ -19,6 +19,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No [Azure AD Entitlement Management](entitlementmanagement-root.md), o objeto approvalStep para decisões associadas ao `accessPackageAssignmentRequest` . Ele é usado para distinguir decisões para diferentes etapas de um fluxo de trabalho de aprovação em que os aprovadores podem agir.
+
+Em [userConsentRequests](../resources/userconsentrequest.md), as decisões de aprovação associadas a uma solicitação.
 
 ## <a name="methods"></a>Métodos
 
@@ -31,14 +33,15 @@ No [Azure AD Entitlement Management](entitlementmanagement-root.md), o objeto ap
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
+|assignedToMe|Booliano|Indica se a etapa é atribuída ao usuário chamador para revisar. Somente leitura.|
+|displayName|Cadeia de caracteres|O rótulo fornecido pelo criador da política para identificar uma etapa de aprovação. Somente leitura.|
 |id|Cadeia de caracteres|O identificador da etapa associada a um objeto de aprovação. Somente leitura.|
-|displayName|Cadeia de caracteres|O rótulo fornecido pelo criador da política para identificar uma etapa de aprovação. Somente leitura|
-|status|Cadeia de caracteres|O status da etapa. Valores possíveis: `InProgress` ou `Completed` . Somente leitura.|
-|assignedToMe|Boolean|Indica se a etapa é atribuída ao usuário chamador para revisar. Somente leitura.|
+|justification|Cadeia de caracteres|A justificativa associada à decisão da etapa de aprovação.|
+|reviewResult|Cadeia de caracteres|O resultado desse registro de aprovação. Os valores possíveis `NotReviewed` incluem: `Approved` , , `Denied` .|
 |reviewedBy|[Coleção userIdentity](useridentity.md) | O identificador do revistor. Somente leitura.|
-|reviewedDateTime|DateTimeOffset|A data e a hora em que uma decisão foi registrada. Somente leitura.|
-|reviewResult|Cadeia de Caracteres|O resultado desse registro de aprovação. Os valores possíveis `NotReviewed` incluem: `Approved` , , `Denied` .|
-|justification|Cadeia de Caracteres|A justificativa associada à decisão da etapa de aprovação.|
+|reviewedDateTime|DateTimeOffset|A data e a hora em que uma decisão foi registrada. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
+|status|Cadeia de caracteres|O status da etapa. Valores possíveis: `InProgress` `Initializing` , , , `Completed` `Expired` . Somente leitura.|
+
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

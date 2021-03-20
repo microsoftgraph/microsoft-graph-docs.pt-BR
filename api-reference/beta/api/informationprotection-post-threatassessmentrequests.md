@@ -1,16 +1,16 @@
 ---
 title: Create threatAssessmentRequest
-description: Criar uma nova solicitação de avaliação de ameaça.
+description: Crie uma nova solicitação de avaliação de ameaças.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 4bf7996f84ade6668e6ce70720656158320af06a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fd45facf81797a8b5f11024a7df9285db6ab227d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952962"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944109"
 ---
 # <a name="create-threatassessmentrequest"></a>Create threatAssessmentRequest
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar uma nova solicitação de avaliação de ameaça.
+Crie uma nova solicitação de avaliação de ameaças.
 
-Uma solicitação de avaliação de ameaça pode ser um dos seguintes tipos:
+Uma solicitação de avaliação de ameaças pode ser um dos seguintes tipos:
 
 * [Email](../resources/mailAssessmentRequest.md)
 * [Arquivo de email](../resources/emailFileAssessmentRequest.md)
@@ -53,15 +53,15 @@ POST /informationProtection/threatAssessmentRequests
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) .
+No corpo da solicitação, fornece uma representação JSON [do objeto threatAssessmentRequest.](../resources/threatassessmentrequest.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201, Created` código de resposta e um novo objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201, Created` novo [objeto threatAssessmentRequest](../resources/threatassessmentrequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-mail-assessment-request"></a>Exemplo 1: criar uma solicitação de avaliação de email
+### <a name="example-1-create-a-mail-assessment-request"></a>Exemplo 1: Criar uma solicitação de avaliação de email
 
 #### <a name="request"></a>Solicitação
 
@@ -142,7 +142,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-email-assessment-request"></a>Exemplo 2: criar uma solicitação de avaliação de email
+### <a name="example-2-create-an-email-assessment-request"></a>Exemplo 2: Criar uma solicitação de avaliação de email
 
 #### <a name="request"></a>Solicitação
 
@@ -223,7 +223,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-a-file-assessment-request"></a>Exemplo 3: criar uma solicitação de avaliação de arquivo
+### <a name="example-3-create-a-file-assessment-request"></a>Exemplo 3: Criar uma solicitação de avaliação de arquivo
 
 #### <a name="request"></a>Solicitação
 
@@ -303,7 +303,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-an-url-assessment-request"></a>Exemplo 4: criar uma solicitação de avaliação de URL
+### <a name="example-4-create-an-url-assessment-request"></a>Exemplo 4: Criar uma solicitação de avaliação de url
 
 #### <a name="request"></a>Solicitação
 

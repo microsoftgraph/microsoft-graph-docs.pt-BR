@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dfb149462ddfddc9b614e91a1a3d4642dcfb4c8d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 97c21c9b688d160f314ea31a8fe0e47dafd5778e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432946"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945526"
 ---
 # <a name="add-a-member"></a>Adicionar um membro
 
@@ -48,9 +48,13 @@ No corpo da solicitação, forneça o de um usuário , grupo ou `id` [directoryO
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_administrativeUnits_members"
+} -->
 ```http
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
@@ -63,9 +67,13 @@ Content-length: 109
 ```
 No corpo da solicitação, forneça o `id` objeto [do usuário](../resources/user.md) ou grupo que você deseja adicionar. [](../resources/group.md)
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
- 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```

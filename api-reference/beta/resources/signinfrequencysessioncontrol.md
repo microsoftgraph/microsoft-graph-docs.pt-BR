@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: bc5123975dc15c7c49f0dcbec507c345cf057850
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 1f224c1e9ba72e114fd9c9bcacdd74670713837d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761048"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945624"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>Tipo de recurso signInFrequencySessionControl
 
@@ -25,7 +25,7 @@ Controle de sessão para impor a frequência de login. Herda do [Controle de Ses
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
-|tipo          |Cadeia de caracteres       | Os valores possíveis são: `days` e `hours`.|
+|tipo          |signinFrequencyType       | Os valores possíveis são: `days` e `hours`.|
 |valor         |Int32        | O número de `days` ou `hours` .|
 
 ## <a name="relationships"></a>Relações

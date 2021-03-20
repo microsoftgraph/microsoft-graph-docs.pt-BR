@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 0220d6d85c7aafe3489e4099a2c6b1837a7439e2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: af00e70e1ef4603c1b1370ec5ef9e9ba75fecb4c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130084"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943657"
 ---
 # <a name="kerberossignonsettings-resource-type"></a>Tipo de recurso kerberosSignOnSettings
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as configurações de KCD (Delegação Restrita de Keberos) para o recurso [onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md) ao publicar um aplicativo local por meio do Proxy de Aplicativo do Azure AD. O Proxy de Aplicativo usa a Delegação Restrita de Kerberos (KCD) para dar suporte ao login único em aplicativos integrados de Autenticação do Windows. Para obter mais informações, consulte Delegação Restrita de Kerberos para fazer o login único em [seus aplicativos com o Proxy de Aplicativo.](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd)
+Representa as configurações de Delegação Restrita keberos (KCD) para o recurso [onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md) ao publicar um aplicativo local por meio do Proxy de Aplicativo do Azure AD. O Proxy de Aplicativo usa o KCD (Delegação Restrita kerberos) para dar suporte a um único login em aplicativos integrados de Autenticação do Windows. Para obter mais informações, [consulte Kerberos Constrained Delegation for single-sign on to your apps with Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
 
 >[!NOTE]
->Não use essa propriedade para configurar o SAML ou o single-on baseado em senha. Se você estiver configurando o single-on saml, isso deve ser definido no [servicePrincipal](serviceprincipal.md).
-Se você estiver configurando o single-sign baseado em senha, isso deve ser definido usando [createPasswordSingleSignOnCredentials](../api/serviceprincipal-createpasswordsinglesignoncredentials.md).
+>Não use essa propriedade para configurar SAML ou acesso único baseado em senha. Se você estiver configurando o SAML single-sign-on, isso deve ser definido no [servicePrincipal](serviceprincipal.md).
+Se você estiver configurando um sinal único baseado em senha, isso deve ser definido usando [createPasswordSingleSignOnCredentials](../api/serviceprincipal-createpasswordsinglesignoncredentials.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|kerberosServicePrincipalName|String| O SPN de Aplicativo Interno do servidor de aplicativos. Esse SPN precisa estar na lista de serviços para os quais o conector pode apresentar credenciais delegadas. |
-|kerberosSignOnMappingAttributeType|String| A Identidade de logon delegada para o conector usar em nome de seus usuários. Para obter mais informações, [consulte Trabalhando com diferentes identidades locais e de nuvem. ](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities) Os valores possíveis são: `userPrincipalName`, `onPremisesUserPrincipalName`, `userPrincipalUsername`, `onPremisesUserPrincipalUsername`, `onPremisesSAMAccountName`.|
+|kerberosServicePrincipalName|Cadeia de caracteres| O SPN de Aplicativo Interno do servidor de aplicativos. Esse SPN precisa estar na lista de serviços aos quais o conector pode apresentar credenciais delegadas. |
+|kerberosSignOnMappingAttributeType|kerberosSignOnMappingAttributeType| A Identidade de Logon Delegada para o conector a ser usado em nome de seus usuários. Para obter mais informações, consulte [Working with different on-premises and cloud identities ](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities). Os valores possíveis são: `userPrincipalName`, `onPremisesUserPrincipalName`, `userPrincipalUsername`, `onPremisesUserPrincipalUsername`, `onPremisesSAMAccountName`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
