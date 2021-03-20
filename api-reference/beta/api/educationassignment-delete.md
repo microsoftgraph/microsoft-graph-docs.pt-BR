@@ -1,16 +1,16 @@
 ---
 title: Excluir educationAssignment
-description: Excluir uma atribuição existente. Somente os professores de uma aula podem excluir atribuições.
+description: Exclua uma atribuição existente. Somente professores em uma classe podem excluir atribuições.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3e85d23fc4ef128a3c1231f51a8a037036b0a3d7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bbab9c5a42c54d660e7962e16211158bdde7da05
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966586"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951865"
 ---
 # <a name="delete-educationassignment"></a>Excluir educationAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir uma atribuição existente. Somente os professores de uma aula podem excluir atribuições.
+Exclua uma atribuição existente. Somente professores em uma classe podem excluir atribuições.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)             |
 | :------------------------------------- | :------------------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                          |
-| Application                            | Sem suporte.                                          |
+| Aplicativo                            | Sem suporte.                                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -62,26 +62,26 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_educationassignment"
+  "name": "delete_educationassignment_1"
 }-->
 
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11014/assignments/19002
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationassignment-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationassignment-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

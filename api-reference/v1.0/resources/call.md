@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1a9069c33078b89fb818e27a9ce099ec546d1c5c
-ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
+ms.openlocfilehash: acfcb3dc067f69e8cf7e3e3b9295a6e9e5c8396c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48479917"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952540"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -22,7 +22,7 @@ As chamadas podem ser configuradas como uma chamada ponto a ponto ou de grupo. P
 
 Embora a mesma identidade não possa ser convidada várias vezes, é possível que um aplicativo ingresse na mesma reunião várias vezes. Sempre que o aplicativo quiser ingressar em uma chamada, uma identidade separada deve ser fornecida para que os clientes possam exibi-las como participantes diferentes.
 
-> ** Observação: ** você poderá obter a URL de ingresso em uma reunião agendada com o Microsoft Teams. Extraia os dados da URL conforme mostrado para preencher `chatInfo` e `meetingInfo`.
+> **Observação:** você poderá obter a URL de ingresso em uma reunião agendada com o Microsoft Teams. Extraia os dados da URL conforme mostrado para preencher `chatInfo` e `meetingInfo`.
 ```http
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%224b444206-207c-42f8-92a6-e332b41c88a2%22%7d
 ```
@@ -69,17 +69,17 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | callChainId         | Cadeia de caracteres                                                                                                 | Um identificador único para todas as chamadas de participantes em uma conferência ou um identificador exclusivo para chamadas com dois participantes em uma chamada P2P.  Isso precisa ser copiado de `Microsoft.Graph.Call.CallChainId`. |
 | callRoutes         | [callRoute](callRoute.md) collection                                                                                                 | As informações de roteamento sobre como a chamada foi redirecionada. Apenas leitura.                                                                                                                |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | As informações de chat. Informações necessárias para ingressar em uma reunião.                                                                                                                              |
-| direction           | String                                                                                                 | A direção da chamada. Os valores possíveis são `incoming` ou `outgoing`. Somente leitura.                                                                                            |
+| direction           | callDirection                                                                                                 | A direção da chamada. Os valores possíveis são `incoming` ou `outgoing`. Somente leitura.                                                                                            |
 | id                  | String                                                                                                 | A ID de chamada. Somente leitura.                                                                                                                                                                        |
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) ou [serviceHostedMediaConfig](servicehostedmediaconfig.md) | A configuração de mídia. Obrigatório.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Somente leitura. O estado da mídia de chamadas. |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) ou [tokenMeetingInfo](tokenmeetinginfo.md)             | As informações de reunião necessárias para ingressar em uma reunião.                                                                                                            |
 transcrição     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | As informações da transcrição da chamada. Somente leitura.    |
 | myParticipantId     | String                                                                                                 | Somente leitura.                                                                                                                                                                        |
-| requestedModalities | String collection                                                                                      | A lista de modalidades solicitadas. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
+| requestedModalities | coleção modality                                                                                      | A lista de modalidades solicitadas. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | As informações de resultado. Por exemplo pode incluir o motivo de término. Somente leitura.                                                                                                        |
 | source              | [participantInfo](participantinfo.md)                                                                  | O remetente da chamada.                                                                                                                                                                         |
-| state               | String                                                                                                 | O estado da chamada. Os valores possíveis são: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Somente leitura.                          |
+| state               | callState                                                                                                 | O estado da chamada. Os valores possíveis são: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Somente leitura.                          |
 | assunto             | String                                                                                                 | O assunto da conversa.                                                                                                                                                                    |
 | targets             | conjunto [invitationParticipantInfo](participantinfo.md)                                             | O destinatário da chamada. Informações necessárias para criar chamadas ponto a ponto.                                                                                                            |
 toneInfo            | [toneInfo](toneinfo.md)                                                                                | Apenas leitura.                                                                                                                                                                        |

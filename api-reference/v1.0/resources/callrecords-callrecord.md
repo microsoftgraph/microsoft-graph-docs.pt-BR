@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 23c66be2623d208482ce80ac60a66abf1bacfdc6
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c6944d6a9cad10015f20a2b168645d71349cf829
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722248"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952526"
 ---
 # <a name="callrecord-resource-type"></a>Tipo de recurso callRecord
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.callRecords
 
 Representa uma única chamada ponto a ponto ou uma chamada de grupo entre vários participantes, às vezes chamada de reunião online.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -32,11 +32,11 @@ Representa uma única chamada ponto a ponto ou uma chamada de grupo entre vário
 |id|Cadeia de caracteres|Identificador exclusivo do registro de chamada. Somente leitura.|
 |joinWebUrl|Cadeia de caracteres|URL de reunião associada à chamada. Pode não estar disponível para um tipo de registro de chamada peerToPeer.|
 |lastModifiedDateTime|DateTimeOffset|Hora UTC quando o registro de chamada foi criado. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|modalidades|coleção microsoft.graph.callRecords.modality|Lista de todas as modalidades usadas na chamada. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
+|modalidades|coleção de modalidades|Lista de todas as modalidades usadas na chamada. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |organizer|[identitySet](identityset.md)|A identidade da parte organizadora.|
 |participantes|Coleção [identitySet](identityset.md)|Lista de identidades distintas envolvidas na chamada.|
-|startDateTime|DateTimeOffset|Hora UTC quando o primeiro usuário ingressou na chamada. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|tipo|microsoft.graph.callRecords.callType|Indica o tipo da chamada. Os valores possíveis são: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
+|startDateTime|DateTimeOffset|Hora UTC quando o primeiro usuário ingressou na chamada. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|tipo|callType|Indica o tipo da chamada. Os valores possíveis são: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
 |versão|Int64|Versão de aumento monótono do registro de chamada. Registros de chamada de versão superior com a mesma id incluem dados adicionais em comparação com a versão inferior.|
 
 ## <a name="relationships"></a>Relações

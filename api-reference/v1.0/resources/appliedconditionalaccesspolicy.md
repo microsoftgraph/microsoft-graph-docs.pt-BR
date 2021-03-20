@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3aa114c23888ccc6852314e2274b8a89ca440344
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: e69125d4119e7d2083189f459ad7c86816ddcd8e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761525"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952554"
 ---
 # <a name="appliedconditionalaccesspolicy-resource-type"></a>Tipo de recurso appliedConditionalAccessPolicy
 
@@ -22,11 +22,11 @@ Indica os atributos relacionados à política de acesso condicional ou política
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Refere-se ao Nome da política de acesso condicional (exemplo: "Exigir MFA para Salesforce").|
+|displayName|Cadeia de caracteres|Refere-se ao Nome da política de acesso condicional (exemplo: "Exigir MFA para Salesforce").|
 |enforcedGrantControls|Coleção de cadeias de caracteres|Refere-se aos controles de concessão imposto pela política de acesso condicional (exemplo: "Exigir autenticação multifacional").|
 |enforcedSessionControls|Coleção de cadeias de caracteres|Refere-se aos controles de sessão impostos pela política de acesso condicional (exemplo: "Exigir controles aplicados ao aplicativo").|
-|id|String|GUID exclusivo da política de acesso condicional.|
-|resultado|String| Indica o resultado da política de AC que foi disparada. Os valores possíveis são:<br/>`success`<br/>`failure`<br/>`notApplied` - A política não é aplicada porque as condições de política não foram atendidas.<br/>`notEnabled` - Isso ocorre devido à política em estado desabilitado.|
+|id|Cadeia de caracteres|Um identificador da política de acesso condicional.|
+|resultado|appliedConditionalAccessPolicyResult| Indica o resultado da política de AC que foi disparada. Os valores possíveis são: , , , (A política não é aplicada porque as condições de política não foram atendidas), (Isso ocorre devido à política em estado `success` `failure` `notApplied` `notEnabled` desabilitado), `unknown` , `unknownFutureValue` .|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,20 +1,20 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c8616267436292965bd84d29b86fbc45443145f4
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 53d2290bfe98d581eb7aebfd4f05750ae645a0c7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471716"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50970397"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessReview accessReview = new AccessReview();
 accessReview.displayName = "TestReview";
-accessReview.startDateTime = CalendarSerializer.deserialize("2017-02-10T00:35:53.214Z");
-accessReview.endDateTime = CalendarSerializer.deserialize("2017-03-12T00:35:53.214Z");
+accessReview.startDateTime = OffsetDateTimeSerializer.deserialize("2017-02-10T00:35:53.214Z");
+accessReview.endDateTime = OffsetDateTimeSerializer.deserialize("2017-03-12T00:35:53.214Z");
 Identity reviewedEntity = new Identity();
 reviewedEntity.id = "99025615-a0b1-47ec-9117-35377b10998b";
 accessReview.reviewedEntity = reviewedEntity;

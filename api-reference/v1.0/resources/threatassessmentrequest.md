@@ -3,14 +3,14 @@ title: Tipo de recurso threatAssessmentRequest
 description: Um tipo de resouce abstrato usado para representar um item de solicitação de avaliação de ameaça.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: dddb7416e18c802b0fbca60c0d134629763f2a03
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: aeb3733ed3c93896d701851a928e216a2b9c7c7d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721016"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952498"
 ---
 # <a name="threatassessmentrequest-resource-type"></a>Tipo de recurso threatAssessmentRequest
 
@@ -23,7 +23,7 @@ Uma solicitação de avaliação de ameaças pode ser um dos seguintes tipos:
 * Arquivo ([recurso fileAssessmentRequest)](fileAssessmentRequest.md)
 * URL ([recurso urlAssessmentRequest)](urlAssessmentRequest.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|

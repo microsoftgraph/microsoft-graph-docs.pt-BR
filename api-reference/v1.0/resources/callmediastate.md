@@ -5,12 +5,12 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 24dde1de6248413a7fe7753492b40995f994e66d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8797aadf7e35000d799c4c8b879ef2ed6da6409
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009370"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952533"
 ---
 # <a name="callmediastate-resource-type"></a>tipo de recurso callMediaState
 
@@ -23,7 +23,7 @@ Representa o estado de mídia de uma [chamada](call.md).
 
 | Propriedade            | Tipo    | Descrição                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| audio           | String  | O estado da mídia de áudio. Os valores possíveis são: `active` e `inactive`. |
+| audio           | mediaState  | O estado da mídia de áudio. Os valores possíveis são: `active`, `inactive`, `unknownFutureValue`. |
 
 ## <a name="json-representation"></a>Representação JSON
 

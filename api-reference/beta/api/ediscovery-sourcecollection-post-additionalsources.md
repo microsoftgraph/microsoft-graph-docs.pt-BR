@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 61da920c39cb75583661fde46c9bdbcc0a5d568d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 3038f657930bcc92360bf5a60b68db4d6a8398a6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772594"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952064"
 ---
 # <a name="create-datasource"></a>Criar dataSource
 
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o dataS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID do [caso sourceCollection.](../resources/ediscovery-sourcecollection.md) Somente leitura. Herdado da [entidade](../resources/entity.md)|
-|displayName|String|O nome da [sourceCollection](../resources/ediscovery-sourcecollection.md)|
+|id|Cadeia de caracteres|A ID do [caso sourceCollection.](../resources/ediscovery-sourcecollection.md) Somente leitura. Herdado da [entidade](../resources/entity.md)|
+|displayName|Cadeia de caracteres|O nome da [sourceCollection](../resources/ediscovery-sourcecollection.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em [que o sourceCollection](../resources/ediscovery-sourcecollection.md) foi criado.|
 |createdBy|[identitySet](../resources/identityset.md)|O usuário que criou [o sourceCollection](../resources/ediscovery-sourcecollection.md).|
 
@@ -73,7 +73,7 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_datasource_from_"
+  "name": "create_datasource_from__1"
 }
 -->
 
@@ -88,19 +88,19 @@ Content-length: 179
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-datasource-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-datasource-from--1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-datasource-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-datasource-from--1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-datasource-from--objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-datasource-from--1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
