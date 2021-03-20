@@ -5,12 +5,12 @@ description: Exclua um tipo de conteúdo de uma lista do sharepoint ou de um sit
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5cf3182f16871c4b56026ba10cfa61f6edcbff05
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 62ff8164a4deca10cc26d22556a00fd207e56fb0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770949"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946997"
 ---
 # <a name="delete-contenttype"></a>Excluir contentType
 Namespace: microsoft.graph
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
+|Delegado (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Aplicativo | Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

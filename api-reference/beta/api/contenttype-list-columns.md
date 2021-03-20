@@ -1,22 +1,22 @@
 ---
 author: swapnil1993
-title: Listar columnDefinitions
+title: Listar columnDefinitions em um tipo de conteúdo
 description: Listar colunas em um tipo de conteúdo.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 67ca1c05a9f92714b31932056d55c889006b129e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 8e1327f092816fd6ef2d5db88f03af6e3e4973bd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770522"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946976"
 ---
-# <a name="list-columndefinitions"></a>Listar columnDefinitions
+# <a name="list-columns-in-a-content-type"></a>Listar colunas em um tipo de conteúdo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Obter a coleção  [de colunas][columnDefinition] em um [tipo de conteúdo][contentType].
+Obter a coleção de colunas, representada como [columnDefinition][columnDefinition] resources, em um [tipo de conteúdo][contentType].
 
   
 

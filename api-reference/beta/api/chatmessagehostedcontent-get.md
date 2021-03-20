@@ -1,16 +1,16 @@
 ---
 title: Obter chatMessageHostedContent
-description: Recupere as propriedades e os relacionamentos do objeto chatMessageHostedContent.
+description: Recupere as propriedades e as relações do objeto chatMessageHostedContent.
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8540459413b6c688daf365546b1ffb2a7e9ccc14
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 56c96c812c1c5f8e8a6d471224bf8faef2733045
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958098"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947735"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Obter chatMessageHostedContent
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos do objeto [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) .
+Recupere as propriedades e as relações do [objeto chatMessageHostedContent.](../resources/chatmessagehostedcontent.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Para recurso de **usuário** ou **chat** : chat. Read, chat. ReadWrite<br/><br/>Para recurso de **canal** : ChannelMessage. Read. All, Group. Read. All, Group. Read. WriteAll |
+|Delegado (conta corporativa ou de estudante)| Para **o recurso** de usuário ou **chat:** Chat.Read, Chat.ReadWrite<br/><br/>Para **recurso de** canal: ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Para o **usuário** ou recurso de **chat** : chat. Read. All, chat. ReadWrite. All<br/><br/>Para recurso de **canal** : ChannelMessage. Read. Group *, ChannelMessage. Read. All, Group. Read. All, Group. ReadWrite. All |
+|Aplicativo| Para **o recurso** de usuário ou **chat:** Chat.Read.All, Chat.ReadWrite.All<br/><br/>Para **recurso de** canal: ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
@@ -61,11 +61,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e `200 OK` o [objeto chatMessageHostedContent](../resources/chatmessagehostedcontent.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-hosted-content"></a>Exemplo 1: obter conteúdo hospedado
+### <a name="example-1-get-hosted-content"></a>Exemplo 1: Obter conteúdo hospedado
 
 #### <a name="request"></a>Solicitação
 
@@ -74,26 +74,26 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagehostedcontent"
+  "name": "get_chatmessagehostedcontent_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagehostedcontent-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagehostedcontent-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagehostedcontent-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagehostedcontent-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagehostedcontent-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagehostedcontent-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagehostedcontent-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagehostedcontent-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -120,7 +120,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-hosted-content-bytes-for-an-image"></a>Exemplo 2: obter bytes de conteúdo hospedados para uma imagem
+### <a name="example-2-get-hosted-content-bytes-for-an-image"></a>Exemplo 2: Obter bytes de conteúdo hospedados para uma imagem
 
 #### <a name="request"></a>Solicitação
 
@@ -128,25 +128,25 @@ Content-type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagehostedcontent"
+  "name": "get_chatmessagehostedcontent_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagehostedcontent-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagehostedcontent-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagehostedcontent-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagehostedcontent-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagehostedcontent-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagehostedcontent-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagehostedcontent-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagehostedcontent-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

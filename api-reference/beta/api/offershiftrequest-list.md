@@ -1,16 +1,16 @@
 ---
 title: Listar offerShiftRequest
-description: Recupere as propriedades e os relacionamentos de todos os objetos offerShiftRequest de uma equipe.
+description: Recupere as propriedades e as relações de todos os objetos offerShiftRequest em uma equipe.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 244c96b26cc55ac4cc727979517ab5ce75b0c509
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8d38b668041bb94c3b61e589307aadfdb46e76de
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981283"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946020"
 ---
 # <a name="list-offershiftrequest"></a>Listar offerShiftRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de todos os objetos [offerShiftRequest](../resources/offershiftrequest.md) de uma equipe.
+Recupere as propriedades e as relações de todos os [objetos offerShiftRequest](../resources/offershiftrequest.md) em uma equipe.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Schedule.ReadWrite.All |
+| Aplicativo                            | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [offerShiftRequest](../resources/offershiftrequest.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [offerShiftRequest](../resources/offershiftrequest.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -65,26 +65,26 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_offershiftrequest"
+  "name": "get_offershiftrequest_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-offershiftrequest-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-offershiftrequest-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-offershiftrequest-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-offershiftrequest-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-offershiftrequest-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-offershiftrequest-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-offershiftrequest-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-offershiftrequest-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

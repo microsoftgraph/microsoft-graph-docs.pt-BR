@@ -7,8 +7,6 @@ items:
       - name: Visão geral
         href: /graph/auth/index?context=graph/api/beta
       - name: Noções básicas
-        href: /graph/auth/auth-concepts?context=graph/api/beta
-      - name: Registrar seu aplicativo
         href: /graph/auth-register-app-v2?context=graph/api/beta
       - name: Obter acesso em nome de um usuário
         href: /graph/auth-v2-user?context=graph/api/beta
@@ -253,7 +251,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contacts
+          - name: Contatos
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -956,6 +954,8 @@ items:
                     href: api/serviceprincipal-addkey.md
                   - name: Remover chave
                     href: api/serviceprincipal-removekey.md
+                  - name: Adicionar certificado de assinatura de token
+                    href: api/serviceprincipal-addtokensigningcertificate.md
               - name: Concessões de permissão delegadas
                 items:
                   - name: Listar concessões de permissão delegadas
@@ -973,7 +973,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: Listar memberOf transitivos
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1851,7 +1851,7 @@ items:
                     href: api/print-get-settings.md
                   - name: Atualizar
                     href: api/print-update-settings.md
-          - name: Gerenciamento de Corprate
+          - name: Gerenciamento corporativo
             href: resources/intune-graph-overview.md
             displayName: Intune
             items:
@@ -9656,7 +9656,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -9752,7 +9752,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -10160,11 +10160,11 @@ items:
                 href: resources/featurerolloutpolicy.md
                 items:
                   - name: Lista
-                    href: api/directory-list-featurerolloutpolicies.md
+                    href: api/list-featurerolloutpolicies.md
                   - name: Obter
                     href: api/featurerolloutpolicy-get.md
                   - name: Criar
-                    href: api/directory-post-featurerolloutpolicies.md
+                    href: api/post-featurerolloutpolicies.md
                   - name: Atualizar
                     href: api/featurerolloutpolicy-update.md
                   - name: Excluir
@@ -10387,7 +10387,7 @@ items:
                         href: api/authenticationoperation-get.md
               - name: Política de método de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethodspolicies-overview.md
                   - name: Política FIDO2
                     href: resources/fido2authenticationmethodconfiguration.md
@@ -10696,6 +10696,23 @@ items:
                         href: api/claimsmappingpolicy-delete.md
                       - name: Listar aplicadas ao aplicativo
                         href: api/claimsmappingpolicy-list-appliesto.md
+                  - name: Política de lançamento de recursos
+                    href: resources/featurerolloutpolicy.md
+                    items:
+                      - name: Lista
+                        href: api/list-featurerolloutpolicies.md
+                      - name: Obter
+                        href: api/featurerolloutpolicy-get.md
+                      - name: Criar
+                        href: api/post-featurerolloutpolicies.md
+                      - name: Atualizar
+                        href: api/featurerolloutpolicy-update.md
+                      - name: Excluir
+                        href: api/featurerolloutpolicy-delete.md
+                      - name: Criar appliesTo
+                        href: api/featurerolloutpolicy-post-appliesto.md
+                      - name: Delete appliesTo
+                        href: api/featurerolloutpolicy-delete-appliesto.md
                   - name: Política de descoberta de realm inicial
                     href: resources/homerealmdiscoverypolicy.md
                     items:
@@ -11059,6 +11076,34 @@ items:
                     items:
                       - name: Listar
                         href: api/programcontroltype-list.md
+              - name: Solicitações de consentimento
+                href: resources/consentrequests-root.md
+                items:
+                  - name: Política de solicitação de consentimento do administrador
+                    href: resources/adminconsentrequestpolicy.md
+                    items:
+                      - name: Obter
+                        href: api/adminconsentrequestpolicy-get.md
+                      - name: Atualizar
+                        href: api/adminconsentrequestpolicy-update.md
+                  - name: Solicitações de consentimento do aplicativo
+                    href: resources/appconsentrequest.md
+                    items:
+                      - name: Lista
+                        href: api/appconsentrequest-list.md
+                      - name: Obter
+                        href: api/appconsentrequest-get.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/appconsentrequest-filterByCurrentUser.md
+                  - name: Solicitações de consentimento do usuário
+                    href: resources/userconsentrequest.md
+                    items:
+                      - name: Lista
+                        href: api/userconsentrequest-list.md
+                      - name: Obter
+                        href: api/userconsentrequest-get.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/userconsentrequest-filterByCurrentUser.md
               - name: Gerenciamento de direitos
                 href: resources/entitlementmanagement-root.md
                 items:
@@ -11483,7 +11528,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -11605,7 +11650,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -11949,9 +11994,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Configurações
+              - name: Settings
                 items:
-                  - name: Configurações
+                  - name: Settings
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -12035,7 +12080,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -12057,7 +12102,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -12080,7 +12125,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -12103,7 +12148,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de Registro de Usuário credencial
                     href: resources/credentialuserregistrationcount.md
@@ -12137,7 +12182,7 @@ items:
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -12349,7 +12394,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -12359,7 +12404,7 @@ items:
                 href: api/search-query.md
           - name: Índice (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -12465,7 +12510,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -12521,17 +12566,14 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
-            href: resources/site.md
             items:
+              - name: Site
+                href: resources/site.md
               - name: Obter site
                 href: api/site-get.md
-              - name: Obter listas
-                href: api/list-list.md
-              - name: Listar subsites
-                href: api/site-list-subsites.md
               - name: Obter análises do site
                 href: api/itemanalytics-get.md
               - name: Obter atividades por intervalo
@@ -12542,37 +12584,102 @@ items:
                 href: api/site-unfollow.md
               - name: Listar sites seguidos
                 href: api/sites-list-followed.md
+              - name: Listar colunas
+                href: api/site-list-columns.md
+              - name: Criar coluna
+                href: api/site-post-columns.md
+              - name: Listar tipos de conteúdo
+                href: api/site-list-contenttypes.md
+              - name: Criar tipo de conteúdo
+                href: api/site-post-contenttypes.md
               - name: Obter tipos de conteúdo aplicáveis para lista
                 href: api/site-getapplicablecontenttypesforlist.md
+              - name: Obter listas
+                href: api/list-list.md
+              - name: Criar lista
+                href: api/list-create.md
+              - name: Listar subsites
+                href: api/site-list-subsites.md
               - name: Permissões
-                href: resources/permission.md
                 items:
-                  - name: Obter permissão de site
-                    href: api/site-get-permission.md
+                  - name: Permissão
+                    href: resources/permission.md
                   - name: Listar permissões de site
                     href: api/site-list-permissions.md
                   - name: Criar permissões de site
                     href: api/site-post-permissions.md
+                  - name: Obter permissão de site
+                    href: api/site-get-permission.md
                   - name: Atualizar a permissão do site
                     href: api/site-update-permission.md
                   - name: Excluir permissão de site
                     href: api/site-delete-permission.md
           - name: Listas
-            href: resources/list.md
             items:
+              - name: Lista
+                href: resources/list.md
+              - name: Obter listas em um site
+                href: api/list-list.md
+              - name: Criar lista
+                href: api/list-create.md
               - name: Obter lista
                 href: api/list-get.md
               - name: Obter itens
                 href: api/listitem-list.md
-              - name: Criar lista
-                href: api/list-create.md
-          - name: Listar itens
-            href: resources/listitem.md
+              - name: Listar colunas
+                href: api/list-list-columns.md
+              - name: Criar coluna
+                href: api/list-post-columns.md
+              - name: Listar tipos de conteúdo
+                href: api/list-list-contenttypes.md
+              - name: Adicionar cópia do tipo de conteúdo
+                href: api/contenttype-addcopy.md
+          - name: Colunas
             items:
-              - name: Obter item
-                href: api/listitem-get.md
+              - name: Definição de coluna
+                href: resources/columndefinition.md
+              - name: Obter
+                href: api/columndefinition-get.md
+              - name: Atualizar
+                href: api/columndefinition-update.md
+              - name: Excluir
+                href: api/columndefinition-delete.md
+          - name: Tipos de conteúdo
+            items:
+              - name: Tipo de conteúdo
+                href: resources/contentType.md
+              - name: Obter
+                href: api/contenttype-get.md
+              - name: Atualizar
+                href: api/contenttype-update.md
+              - name: Excluir
+                href: api/contenttype-delete.md
+              - name: IsPublished
+                href: api/contenttype-ispublished.md
+              - name: Publicar
+                href: api/contenttype-publish.md
+              - name: Cancelar publicação
+                href: api/contenttype-unpublish.md
+              - name: Adicionar cópia à lista
+                href: api/contenttype-addcopy.md
+              - name: Associar a sites de hub
+                href: api/contenttype-associatewithhubsites.md
+              - name: Copiar para o local de conteúdo padrão
+                href: api/contenttype-copytodefaultcontentlocation.md
+              - name: Listar colunas
+                href: api/contenttype-list-columns.md
+              - name: Criar coluna
+                href: api/contenttype-post-columns.md
+          - name: Listar itens
+            items:
+              - name: Item de lista
+                href: resources/listitem.md
+              - name: Obter itens
+                href: api/listitem-list.md
               - name: Criar item
                 href: api/listitem-create.md
+              - name: Obter item
+                href: api/listitem-get.md
               - name: Atualizar item
                 href: api/listitem-update.md
               - name: Excluir item
@@ -12584,17 +12691,18 @@ items:
               - name: Obter atividades por intervalo
                 href: api/itemactivity-getbyinterval.md
           - name: Páginas
-            href: resources/sitepage.md
             items:
-              - name: Listar páginas
+              - name: Página do site
+                href: resources/sitepage.md
+              - name: Lista
                 href: api/sitepage-list.md
-              - name: Obter página
+              - name: Obter
                 href: api/sitepage-get.md
-              - name: Criar página
+              - name: Criar
                 href: api/sitepage-create.md
-              - name: Excluir página
+              - name: Excluir
                 href: api/sitepage-delete.md
-              - name: Publicar página
+              - name: Publicar
                 href: api/sitepage-publish.md
           - name: Taxonomia (visualização)
             displayname: Taxonomy API
@@ -12652,45 +12760,10 @@ items:
                     href: api/termStore-term-list-relations.md
                   - name: Criar
                     href: api/termStore-relation-post.md
-          - name: Tipos de conteúdo
-            href: resources/contentType.md
-            items:
-              - name: Listar
-                href: api/contenttype-list.md
-              - name: Criar
-                href: api/contenttype-post.md
-              - name: Obter
-                href: api/contenttype-get.md
-              - name: Atualizar
-                href: api/contenttype-update.md
-              - name: Excluir
-                href: api/contenttype-delete.md
-              - name: Publicar
-                href: api/contenttype-publish.md
-              - name: Cancelar publicação
-                href: api/contenttype-unpublish.md
-              - name: IsPublished
-                href: api/contenttype-ispublished.md
-              - name: Adicionar cópia
-                href: api/contenttype-addcopy.md
-              - name: Copiar para o local de conteúdo padrão
-                href: api/contenttype-copytodefaultcontentlocation.md
-              - name: Associar a sites de hub
-                href: api/contenttype-associatewithhubsites.md
-              - name: Listar colunas de tipo de conteúdo
-                href: api/contenttype-list-columns.md
-              - name: Criar coluna de tipo de conteúdo
-                href: api/contenttype-post-columns.md
-              - name: Obter coluna de tipo de conteúdo
-                href: api/contenttype-get-columns.md
-              - name: Atualizar coluna de tipo de conteúdo
-                href: api/contenttype-update-columns.md
-              - name: Excluir coluna de tipo de conteúdo
-                href: api/contenttype-delete-columns.md
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -13000,7 +13073,7 @@ items:
                 href: api/teamsapp-update.md
               - name: Remover aplicativo do catálogo
                 href: api/teamsapp-delete.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -13270,7 +13343,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
@@ -13409,7 +13482,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:

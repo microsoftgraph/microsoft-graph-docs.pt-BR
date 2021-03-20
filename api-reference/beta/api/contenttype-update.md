@@ -5,12 +5,12 @@ description: Atualizar um tipo de conteúdo
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 52cdcdc18b106c1b09b69d37cc027dc610630611
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: bb7b898a8eb05c70c4c9ec187d36d3d5a4ce69db
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773309"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946931"
 ---
 # <a name="update-contenttype"></a>Atualizar contentType
 Namespace: microsoft.graph
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Delegado (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo |Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Aplicativo |Sites.Manage.All, Sites.FullControl.All |
 
   
 

@@ -1,16 +1,16 @@
 ---
 title: Listar conectores
-description: Recupere uma lista de objetos de conector.
+description: Recupere uma lista de objetos do conector.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 91b4bddca4d0756b84c7793b0b81414e9fe2d9b4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 27fb3343b230d3397809063da1d8f56cf80ac9c3
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130126"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947130"
 ---
 # <a name="list-connectors"></a>Listar conectores
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [de](../resources/connector.md) conector.
+Recupere uma lista de objetos [do](../resources/connector.md) conector.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de objetos [connector](../resources/connector.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [conectores](../resources/connector.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -57,25 +57,25 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connectors"
+  "name": "get_connectors_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connectors-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-connectors-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connectors-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-connectors-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connectors-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-connectors-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-connectors-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-connectors-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9e88686b3772fcd5f9c43ddd64e1c9eda865b518
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f199dece53ce5082a775787c24af88e4ced474f3
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437270"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946922"
 ---
 # <a name="get-contract"></a>Obter Contrato
 
@@ -62,25 +62,25 @@ Se tiver êxito, este método retornará um código de resposta e `200 OK` [um o
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_contract"
+  "name": "get_contract_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contracts/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-contract-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-contract-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-contract-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-contract-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-contract-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-contract-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-contract-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-contract-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

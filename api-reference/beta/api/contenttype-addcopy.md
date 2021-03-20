@@ -5,18 +5,18 @@ description: Adicione uma cópia de um tipo de conteúdo de site a uma lista.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 97c93929fbc0c370bd4dac53b068439f5bbd5b82
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f388799e409a5f2037182bb3bc331a6a6adbc45f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771145"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947025"
 ---
 # <a name="contenttype-addcopy"></a>contentType: addCopy
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Adicione uma cópia de um [tipo de conteúdo de site][site] [][contentType] a uma [lista][list].
+Adicione uma cópia de um [tipo de conteúdo][contentType] de um [site][site] a uma [lista][list].
  
   
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Delegado (conta corporativa ou de estudante) |Sites.Manage.All, Sites.FullControl.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Aplicativo | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -40,7 +40,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ```http
-
 POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 ```
 
@@ -61,7 +60,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa chamada retornará uma `204 No Content` resposta.
+Se tiver êxito, essa chamada retornará um código `201 Created` de resposta e um objeto [contentType][] no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -105,11 +104,30 @@ Content-Type: application/json
 ### <a name="response"></a>Resposta
 
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "truncated": true} -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
 
+{
+    "id": "0x0101",
+    "description": "Create a new custom CSR JavaScript Display Template.",
+    "group": "Display Template Content Types",
+    "hidden": false,
+    "name": "JavaScript Display Template",
+    "parentId": "0x01",
+    "readOnly": false,
+    "sealed": false,
+    "base": {
+        "id": "0x01",
+        "description": "Create a new custom CSR JavaScript Display Template.",
+        "group": "Display Template Content Types",
+        "hidden": false,
+        "name": "JavaScript Display Template",
+        "readOnly": false,
+        "sealed": false
+    }
+}
 ```
 
 [site]: ../resources/site.md

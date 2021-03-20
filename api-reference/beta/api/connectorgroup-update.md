@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9da1f53869d25c4623c2b2e401777d06aaa065d2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9c4aadfee6674e0d363f2633c4e064ab72843551
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129755"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50947049"
 ---
 # <a name="update-connectorgroups"></a>Atualizar connectorGroups
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Nome       | Descrição|
+| Name       | Descrição|
 |:-----------|:-----------|
 | Autorização  | Portador. Obrigatório|
 
@@ -44,15 +44,15 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Indica o tipo de agente híbrido. Isso é pré-definido pelo sistema. |
-|id|string| Identificador exclusivo deste connectorGroup. Somente leitura. |
+|connectorGroupType|cadeia de caracteres| Indica o tipo de agente híbrido. Este pré-definido pelo sistema. |
+|id|cadeia de caracteres| Identificador exclusivo para este connectorGroup. Somente leitura. |
 |isDefault|booliano| Indica se o connectorGroup é o connectorGroup padrão. Somente um único grupo de conectores pode ser o connectorGroup padrão e isso é pré-definido pelo sistema. |
 |nome|string| O nome associado ao connectorGroup. |
-|region|string| A região à que o connectorGroup está atribuído e otimizará o tráfego. Essa região só poderá ser definida se **nenhum** conector ou aplicativo estiver atribuído ao connectorGroup. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|region|cadeia de caracteres| A região à que o connectorGroup é atribuído e otimizará o tráfego. Essa região só poderá ser definida se **nenhum** conector ou aplicativo for atribuído ao connectorGroup. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [connectorGroup](../resources/connectorgroup.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [connectorGroup](../resources/connectorgroup.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -60,7 +60,7 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_connectorgroup"
+  "name": "update_connectorgroup_2"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
@@ -73,19 +73,19 @@ Content-length: 99
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-connectorgroup-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-connectorgroup-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-connectorgroup-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-connectorgroup-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-connectorgroup-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-connectorgroup-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5fe36d8a129a42dcd139b36577f0ae7fab45a6f6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d31044ce98248ae4759a7c7086e9ec14d336df8f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437055"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946689"
 ---
 # <a name="permanently-delete-item"></a>Excluir permanentemente item
 
@@ -33,6 +33,8 @@ Para aplicativos:
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
+O solicitante precisa ter uma das seguintes funções: *Administrador Global* ou Administrador *de Aplicativos.*
+
 Para usuários:
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -41,6 +43,8 @@ Para usuários:
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Sem suporte. |
 
+O usuário inscreveu precisa ter uma das seguintes funções: *Administrador Global* ou Administrador *de Usuário.*
+
 Para grupos:
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -48,6 +52,8 @@ Para grupos:
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
+
+O solicitante precisa ter uma das seguintes funções: *Administrador Global* ou Administrador *de Grupos.*
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4efeba615acf1755e04fc6344c521331a80321b7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3876e362365d00e62209bb8d9c852b0bbaddb756
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445805"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50946185"
 ---
 # <a name="list-custodian-usersources"></a>Listar usuários custodiadosSources
 
@@ -67,7 +67,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_usersource"
+  "name": "get_usersource_1"
 }
 -->
 
@@ -75,19 +75,19 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/userSources
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-usersource-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-usersource-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-usersource-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-usersource-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-usersource-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-usersource-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-usersource-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-usersource-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
