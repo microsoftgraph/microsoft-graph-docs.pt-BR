@@ -5,21 +5,21 @@ author: tarkansevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 199697f7cd3ee050caac983e9822007cdc38a557
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 68b62d68620f205f3933f7a876746e19ab8f3e0c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272482"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953215"
 ---
 # <a name="list-rosterplans"></a>Listar rosterPlans
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a lista de [plannerPlans contidos](../resources/plannerplan.md) pelos [plannerRosters](../resources/plannerroster.md) dos quais o usuário é membro.
+Obter a lista de [plannerPlans](../resources/plannerplan.md) contidos pelos [plannerRosters](../resources/plannerroster.md) dos quais o usuário é membro.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -39,7 +39,7 @@ GET /users/{usersId}/planner/rosterPlans
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método só dá suporte aos seguintes parâmetros de consulta OData:
+Este método só dá suporte a seguintes parâmetros de consulta OData:
 
 - $select
 
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos plannerPlan](../resources/plannerplan.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -64,26 +64,26 @@ Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` cole
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_plannerplan"
+  "name": "list_plannerplan_2"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/{usersId}/planner/rosterPlans
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-plannerplan-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-plannerplan-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-plannerplan-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-plannerplan-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-plannerplan-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-plannerplan-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-plannerplan-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-plannerplan-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Listar dailyPrintUsageSummariesByUser
-description: Recupere uma lista de resumos de uso diário de impressão, agrupados por usuário.
+description: Recupere uma lista de resumos diários de uso de impressão, agrupados pelo usuário.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5f67c8907986ad9aa5672030ee69e47c1749f2a6
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b6cd4365ce11a0c090410f4787932968ebdc5012
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982765"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953076"
 ---
 # <a name="list-dailyprintusagesummariesbyuser"></a>Listar dailyPrintUsageSummariesByUser
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de resumos de uso diário de impressão, agrupados por usuário.
+Recupere uma lista de resumos diários de uso de impressão, agrupados pelo usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos printUsageSummaryByUser](../resources/printusagesummarybyuser.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos printUsageSummaryByUser](../resources/printusagesummarybyuser.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -57,25 +57,25 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_endpoints"
+  "name": "get_endpoints_4"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByUser
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

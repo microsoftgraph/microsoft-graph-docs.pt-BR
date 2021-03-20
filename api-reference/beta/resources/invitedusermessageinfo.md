@@ -4,13 +4,13 @@ description: O objeto invitedUserMessageInfo permite configurar a mensagem de co
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
-author: elisolMS
-ms.openlocfilehash: 6092a5bd493377480c0a835b28982aec2d95c522
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: Sammak
+ms.openlocfilehash: 610a82646b87775e4f50651a2fc8f617f1782108
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131492"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952792"
 ---
 # <a name="configuring-the-invitation-message"></a>Configurando a mensagem de convite
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O objeto invitedUserMessageInfo permite configurar a mensagem [de](invitation.md) convite.
+O objeto invitedUserMessageInfo permite configurar a [mensagem de](invitation.md) convite.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|ccRecipients|Coleção [recipient](recipient.md)|Destinatários adicionais para os que a mensagem de convite deve ser enviada. Atualmente, apenas 1 destinatário adicional é suportado.|
-|customizedMessageBody|String|Corpo de mensagem personalizado que você deseja enviar se não quiser a mensagem padrão.|
-|messageLanguage|String|O idioma em que você deseja enviar a mensagem padrão. Se customizedMessageBody for especificado, essa propriedade será ignorada e a mensagem será enviada usando customizedMessageBody. O formato de idioma deve estar na ISO 639. O padrão é en-US.|
+|ccRecipients|Coleção [recipient](recipient.md)|Destinatários adicionais aos que a mensagem de convite deve ser enviada. Atualmente, apenas 1 destinatário adicional é suportado.|
+|customizedMessageBody|Cadeia de caracteres|Corpo da mensagem personalizado que você deseja enviar se não quiser a mensagem padrão.|
+|messageLanguage|Cadeia de caracteres|O idioma em que você deseja enviar a mensagem padrão. Se o personaledMessageBody for especificado, essa propriedade será ignorada e a mensagem será enviada usando o CustomizedMessageBody. O formato de idioma deve estar na ISO 639. O padrão é en-US.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso

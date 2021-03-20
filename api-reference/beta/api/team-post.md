@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac7d879f35a9d98051650e830e7a75a94a98de5e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d596d39330ecf332313ca0d82766c71d977980c0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775378"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50942255"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -31,6 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Observação**: A permissão Teamwork.Migrate.All é *somente* suportado para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -597,6 +598,8 @@ Content-Length: 0
 #### <a name="request"></a>Solicitação
 
 O exemplo a seguir mostra como criar uma equipe para mensagens importadas.
+
+>**Observação:** No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
 
 >**Observação:** Equipes criadas no modo de migração só suportam o modelo `standard`.
 

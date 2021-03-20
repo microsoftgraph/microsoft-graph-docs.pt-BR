@@ -4,12 +4,12 @@ description: No Outlook, os clientes podem compartilhar um calendário com outro
 author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: fd231521a36ba761297042bc41f3ee60ef438a01
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e09b3552ca0d4a3ecd85855c471ec1cc16950abf
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475531"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941397"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>Crie eventos do Outlook em um calendário compartilhado ou delegado
 
@@ -17,7 +17,7 @@ No Outlook, os clientes podem compartilhar um calendário com outros usuários e
 
 Programaticamente, o Microsoft Graph oferece suporte à leitura e à criação de eventos em calendários que foram compartilhadas por outros usuários, além de leitura da calendários compartilhados e da atualização do nome do calendário para compartilhados. O suporte também se aplica a calendários que foram delegados. O restante deste artigo discorre sobre a criação de um evento de reunião em um calendário compartilhado ou delegado. Para obter eventos, consulte[Obter eventos do Outlook em um calendário compartilhado ou delegado](outlook-get-shared-events-calendars.md).
 
-A instrução a seguir usa o cenário de exemplo em que Alex delega seu calendário principal à Adele no Outlook e mantém a configuração de caixa de correio do Outlook padrão para direcionar solicitações de reunião e respostas apenas às pessoas delegadas. (Esta configuração corresponde à propriedade **delegateMeetingMessageDeliveryOptions** de [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) do Alex, definida como o valor padrão `sendToDelegateOnly`). 
+A instrução a seguir usa o cenário de exemplo em que Alex delega seu calendário principal à Adele no Outlook e mantém a configuração de caixa de correio do Outlook padrão para direcionar solicitações de reunião e respostas apenas às pessoas delegadas. (Esta configuração corresponde à propriedade **delegateMeetingMessageDeliveryOptions** de [mailboxSettings](/graph/api/resources/mailboxsettings) do Alex, definida como o valor padrão `sendToDelegateOnly`). 
 
 A instrução passo a passo descreve algumas etapas subsequentes:
 1. [Adele obtém o calendário que Alex delegou a ela](#step-1-adele-gets-the-delegated-calendar).
@@ -37,6 +37,9 @@ Caso Alex tenha compartilhado com Adele mas não tiver delegado seu calendário 
 
 Entre como Adele, obtenha os calendários a que ela tem acesso e identifique aquele que Alex delegou a ela, para usá-lo na próxima etapa para criar um evento no calendário. 
 
+**Permissões do Microsoft Graph**
+
+Use a permissão delegada com menos privilégios, `Calendars.Read.Shared`. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -119,7 +122,11 @@ Content-type: application/json
 
 ## <a name="step-2-adele-creates-and-sends-an-invitation-on-alex-behalf"></a>Etapa 2: Adele cria e envia um convite em nome de Alex
 
-Conectado como Adele, usa a ID de calendário obtida na etapa 1 para criar um [evento](/graph/api/resources/event?view=graph-rest-1.0) no calendário delegado e envia para Clara e Sara, em nome de Alex:
+Conectado como Adele, use o ID do calendário obtido na etapa 1 para criar um [evento](/graph/api/resources/event) no calendário delegado e envie-o para Christie e Megan, em nome de Alex.
+
+**Permissões do Microsoft Graph**
+
+Use a permissão delegada com menos privilégios, `Calendars.ReadWrite.Shared`. Para mais informações, veja [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 <!-- {
   "blockType": "request",
@@ -168,7 +175,7 @@ Content-type: application/json
 }
 ```
 
-Observe que uma resposta bem-sucedida inclui HTTP 201 e as seguintes propriedades da instância [event](/graph/api/resources/event?view=graph-rest-1.0):
+Observe que uma resposta bem-sucedida inclui HTTP 201 e as seguintes propriedades da instância [event](/graph/api/resources/event):
 
 - **isOrganizer** é definido como verdadeiro. Em geral, essa propriedade é verdadeira se o proprietário do calendário (Alex) é o organizador da reunião. Isso também se aplica se um representante (Adele) organizou o evento em nome do proprietário.
 - A coleção **attendees** especifica Sara e Clara.
@@ -279,9 +286,13 @@ Content-type: application/json
 
 ## <a name="step-3-christie-receives-meeting-request-and-inspects-the-associated-event-in-her-calendar"></a>Etapa 3: Clara recebe a solicitação de reunião e examina o evento associado no seu calendário
 
-Ao entregar a solicitação de reunião, o Outlook cria automaticamente um[evento](/graph/api/resources/event?view=graph-rest-1.0)não confirmado no calendário de Clara.
+Ao entregar a solicitação de reunião, o Outlook cria automaticamente um[evento](/graph/api/resources/event)não confirmado no calendário de Clara.
 
-Conectado como Clara, obtenha o [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0)e **event** que estão associados à solicitação de reunião da etapa 2:
+Conectado como Christie, obtenha o [eventMessage](/graph/api/resources/eventmessage) e **evento** que estão associados à solicitação de reunião da etapa 2.
+
+**Permissões do Microsoft Graph**
+
+Use a permissão delegada com menos privilégios, `Mail.Read` e`Calendar.Read.Shared`. Para mais informações, veja [permissões de correio](permissions-reference.md#mail-permissions) e [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -312,14 +323,14 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADADVj3fyAABZ5hYdAAA=?$expa
 ---
 
 
-Observe que uma resposta bem-sucedida inclui HTTP 200 e as seguintes propriedades do[eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0):
+Observe que uma resposta bem-sucedida inclui HTTP 200 e as seguintes propriedades do[eventMessage](/graph/api/resources/eventmessage):
 
 - **meetingMessageType** especifica se essa mensagem é `meetingRequest`.
 - **sender** é Adele.
 - **from** é Alex.
 - **toRecipients** incluem Sara e Clara.
 
-E as seguintes propriedades da instância [event](/graph/api/resources/event?view=graph-rest-1.0):
+E as seguintes propriedades da instância [event](/graph/api/resources/event):
 
 - **attendees** incluem Alex, Sara e Clara.
 - **organizer** é Alex.
@@ -506,6 +517,9 @@ Content-type: application/json
 
 Conectada como Clara, define o **evento** como provisório e inclui uma mensagem na resposta:
 
+**Permissões do Microsoft Graph**
+
+Use a permissão delegada com menos privilégios, `Calendars.ReadWrite.Shared`. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -556,7 +570,11 @@ HTTP/1.1 202 Accepted
 
 Como Adele é uma representante do calendário principal de Alex, Adele recebe todas as respostas de reunião desse calendário em nome de Alex.
 
-Conectada como Adele, obtem [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) que representa a resposta de Clara na etapa 4:
+Conectado como Adele, obtenha o [eventMessage](/graph/api/resources/eventmessage) que representa a resposta de Christie na etapa 4.
+
+**Permissões do Microsoft Graph**
+
+Use a permissão delegada com menos privilégios, `Mail.Read.Shared`. Para mais informações, veja [permissões de correio](permissions-reference.md#mail-permissions).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -587,7 +605,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADI4oeRpAABf0HJUAAA=
 ---
 
 
-Observe que uma resposta bem-sucedida inclui HTTP 200 e as seguintes propriedades do[eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0):
+Observe que uma resposta bem-sucedida inclui HTTP 200 e as seguintes propriedades do[eventMessage](/graph/api/resources/eventmessage):
 
 - **meetingMessageType** é `meetingTenativelyAccepted`.
 - **de** é Clara.
@@ -664,9 +682,13 @@ Content-type: application/json
 
 ## <a name="step-6-alex-accesses-responses-as-part-of-the-event"></a>Etapa 6: Alex acessa respostas como parte do evento
 
-Como Alex manteve o padrão de fazer com que o Outlook direcionasse todas as solicitações e respostas de reunião apenas para delegados, Alex não recebe a resposta de Clara da etapa 4. No entanto, ele pode obter a resposta por meio de [evento](/graph/api/resources/event?view=graph-rest-1.0) no calendário principal.
+Como Alex manteve o padrão de fazer com que o Outlook direcionasse todas as solicitações e respostas de reunião apenas para delegados, Alex não recebe a resposta de Clara da etapa 4. No entanto, ele pode obter a resposta por meio de [evento](/graph/api/resources/event) no calendário principal.
 
-Conectado como Alex, obtem o [evento](/graph/api/resources/event?view=graph-rest-1.0) que Adele criou na etapa 2 e obtem respostas da propriedade **participantes**:
+Conectado como Alex, obtenha o [evento](/graph/api/resources/event) que Adele criou na etapa 2 e obtém respostas do **participantes** propriedade.
+
+**Permissões do Microsoft Graph**
+
+Use a permissão delegada com menos privilégios, `Calendars.Read`. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -697,7 +719,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events/AAMkADJXJGu0AABf02qwAAA=
 ---
 
 
-Observe que uma resposta bem-sucedida inclui HTTP 200 e as seguintes propriedades do[event](/graph/api/resources/event?view=graph-rest-1.0):
+Observe que uma resposta bem-sucedida inclui HTTP 200 e as seguintes propriedades do[event](/graph/api/resources/event):
 
 - **isOrganizer** é verdadeiro.
 - **attendees** incluem Sara e Clara.
@@ -816,4 +838,4 @@ Saiba mais sobre:
 - [Obter eventos do Outlook em um calendário compartilhado ou delegado](outlook-get-shared-events-calendars.md)
 - [Compartilhar ou delegar um calendário no Outlook (visualização)](outlook-share-or-delegate-calendar.md)
 - [Por que se integrar com o calendário do Outlook](outlook-calendar-concept-overview.md)
-- A [API de calendário](/graph/api/resources/calendar?view=graph-rest-1.0) do Outlook no Microsoft Graph v1.0.
+- A [API de calendário](/graph/api/resources/calendar) do Outlook no Microsoft Graph v1.0.

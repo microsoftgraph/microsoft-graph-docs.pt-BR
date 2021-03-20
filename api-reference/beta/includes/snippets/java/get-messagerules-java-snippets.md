@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b8430fb8935d0e14cbee6114490b95203edc97a5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 896c2588afd4adcff0aa50243a8205588bbc0927
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979330"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50967421"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IMessageRuleCollectionPage messageRules = graphClient.me().mailFolders("inbox").messageRules()
+MessageRuleCollectionPage messageRules = graphClient.me().mailFolders("inbox").messageRules()
     .buildRequest()
     .get();
 

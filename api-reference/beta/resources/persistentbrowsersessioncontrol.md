@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a4870720f02c0b88299ebfa7337ce9725fbcb220
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4ef2abb60c364969e4bb9f739e45ae537162188f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130872"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952771"
 ---
 # <a name="persistentbrowsersessioncontrol-resource-type"></a>Tipo de recurso persistentBrowserSessionControl
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Controle de sessão para definir se os cookies serão persistentes ou não. Herda do [Controle de Sessão de Acesso Condicional.](conditionalaccesssessioncontrol.md)
+Controle de sessão para definir se os cookies serão persistentes ou não. Herda do [Controle de Sessão de Acesso Condicional](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
-|modo|String| Os valores possíveis são: `always` e `never`.|
+|mode|persistentBrowserSessionMode| Os valores possíveis são: `always`, `never`.|
 
 ## <a name="relationships"></a>Relações
 

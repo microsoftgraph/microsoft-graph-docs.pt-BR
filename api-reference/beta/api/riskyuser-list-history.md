@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 28f10f6181d3bfa5091fdb2c98fb584c9bf26452
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f192642793f459911a51e44c4febe1503d496145
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440847"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953102"
 ---
 # <a name="list-history-of-riskyuser"></a>Histórico de lista de riskyUser
 
@@ -59,26 +59,26 @@ Este é um exemplo da solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userriskhitsory",
+  "name": "get_userriskhitsory_1",
   "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-userriskhitsory-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-userriskhitsory-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -165,26 +165,26 @@ Este é um exemplo da solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userriskhitsory",
+  "name": "get_userriskhitsory_2",
   "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-userriskhitsory-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-userriskhitsory-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

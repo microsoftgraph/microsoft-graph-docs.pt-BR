@@ -2,15 +2,15 @@
 title: tipo de recurso convite
 description: Representa um convite usado para adicionar usuários externos a uma organização.
 localization_priority: Normal
-author: elisolMS
+author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5f132f1fb79c9f74df636b4684f6d42cdbe5bdc7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d27825f33e3afa65ad7b89b24c940e9a8a29634e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443003"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952799"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -32,7 +32,7 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 >[!NOTE]
 >O status do convite é rastreado usando **as propriedades externalUserState** e [](user.md) **externalUserStateChangeDateTime** no recurso de usuário externo criado como parte da solicitação de convite.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Criar convite](../api/invitation-post.md) | invitation | Escreva as propriedades e os relacionamentos do objeto invitation.|
@@ -45,14 +45,14 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
 |sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
 |inviteRedirectUrl|String|A URL para a qual o usuário deve ser redirecionado após o resgate do convite. Obrigatório.|
-|inviteRedeemUrl|String|A URL que o usuário pode usar para resgatar seu convite. Somente leitura.|
-|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você pode convidar como Membro se for administrador da empresa. |
-|status|String|O status do convite. Valores possíveis: PendingAcceptance, Completed, InProgress, e Error|
+|inviteRedeemUrl|Cadeia de caracteres|O URL que o usuário pode usar para resgatar o convite dele. Somente leitura.|
+|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, isso é `Guest` . Você pode convidar `Member` como se fosse administrador da empresa. |
+|status|Cadeia de caracteres|O status do convite. Valores possíveis: `PendingAcceptance` `Completed` , , `InProgress` e `Error`|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|invitedUser|[user](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
+|invitedUser|[Usuário](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
