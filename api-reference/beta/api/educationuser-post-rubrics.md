@@ -1,16 +1,16 @@
 ---
 title: Criar educationRubric
-description: Criar um novo objeto educationRubric.
+description: Crie um novo objeto educationRubric.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 60c9f0338cd79db41221efd379227dbbb2055bd5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0ce2f6bc0c284ac14ac4494cfbc506986a4e7cc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955159"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951037"
 ---
 # <a name="create-educationrubric"></a>Criar educationRubric
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [educationRubric](../resources/educationrubric.md) .
+Crie um novo [objeto educationRubric.](../resources/educationrubric.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)             |
 | :------------------------------------- | :------------------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                          |
 | Aplicativo                            | Sem suporte.                                          |
 
@@ -46,24 +46,24 @@ POST /education/me/rubrics
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [educationRubric](../resources/educationrubric.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto educationRubric.](../resources/educationrubric.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um novo objeto [educationRubric](../resources/educationrubric.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo objeto [educationRubric](../resources/educationrubric.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-posting-a-credit-rubric"></a>Exemplo 1: postando um amostra rubric de crédito
+### <a name="example-1-posting-a-credit-rubric"></a>Exemplo 1: Postando uma rubrica de crédito
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para postar um amostra rubric de crédito (um amostra rubric sem pontos).
+Veja a seguir um exemplo da solicitação para postar uma rubrica de crédito (uma rubrica sem pontos).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_1"
 }-->
 
 ```http
@@ -137,19 +137,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -160,7 +160,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -244,12 +244,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-posting-a-points-rubric"></a>Exemplo 2: lançamento de pontos amostra rubric
+### <a name="example-2-posting-a-points-rubric"></a>Exemplo 2: Postando um Points Rubric
 
-Veja a seguir um exemplo da solicitação para postar um amostra rubric com pontos.
+A seguir, um exemplo da solicitação para postar uma rubrica com pontos.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_2"
 }-->
 
 ```http
@@ -335,13 +337,31 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

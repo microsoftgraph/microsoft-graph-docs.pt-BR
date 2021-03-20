@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 848f7b2521a93f1fe735d9f5a42f6e7004f27e60
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b0a932d0e90e4ccacacbebba249a2bc6990dc89b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955271"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951198"
 ---
 # <a name="get-user"></a>Obter usuário
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Recupere o **usuário** do diretório simples que corresponde a esse **educationUser**.
 
 > [!NOTE]
-> Se o token delegado for usado, os membros só poderão ver informações sobre sua própria conta. Nesse caso, use o recurso `beta/education/me/users`.
+> Se o token delegado for usado, os membros poderão ver apenas informações sobre sua própria conta. Nesse caso, use o recurso `beta/education/me/users`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma combinação de permissões é obrigatória para chamar essa API. Para saber
 | :------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                            |
-| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All                                       |
+| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -66,7 +66,7 @@ Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationuser"
+  "name": "get_educationuser_1"
 }-->
 
 ```msgraph-interactive
@@ -74,22 +74,22 @@ GET https://graph.microsoft.com/beta/education/me/user
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-1-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-1-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-1-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

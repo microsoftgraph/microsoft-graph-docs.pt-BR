@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 2cb6ee71c888e90ee082c1f70ecced2c21199939
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4883fedc71cfdcc6c50ab87b46299fdb173552a5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435858"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950742"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -44,7 +44,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Azure Active Directory
+### <a name="azure-ad"></a>Azure AD
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
@@ -82,11 +82,11 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto govern
 | Propriedade         | Tipo                                                     | Descrição |
 |:-----------------|:---------------------------------------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | A ID do recurso. Obrigatório. |
-| roleDefinitionId | String                                                   | A ID da definição de função. Obrigatório. |
-| subjectId        | String                                                   | A ID do assunto. Obrigatório. |
-| assignmentState  | String                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active` . Obrigatório. |
-| type             | String                                                   | O tipo de solicitação. O valor pode `AdminAdd` ser , , , , , , `UserAdd` e `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Obrigatório. |
-| motivo           | String                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão. |
+| roleDefinitionId | Cadeia de caracteres                                                   | A ID da definição de função. Obrigatório. |
+| subjectId        | Cadeia de caracteres                                                   | A ID do assunto. Obrigatório. |
+| assignmentState  | Cadeia de caracteres                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active` . Obrigatório. |
+| tipo             | Cadeia de caracteres                                                   | O tipo de solicitação. O valor pode `AdminAdd` ser , , , , , , `UserAdd` e `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Obrigatório. |
+| motivo           | Cadeia de caracteres                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão. |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | O cronograma da solicitação de atribuição de função. Para o tipo de `UserAdd` `AdminAdd` solicitação de , `AdminUpdate` , e , é `AdminExtend` necessário. |
 
 ## <a name="response"></a>Resposta
@@ -120,11 +120,11 @@ Neste exemplo, um administrador atribui nawu@contoso.com usuário à função Le
 | Propriedade         | Tipo                                                     | Obrigatório                 | Valor |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim                      | \<subjectId\> |
-| assignmentState  | String                                                   | Sim                      | Qualificado / Ativo |
-| type             | String                                                   | Sim                      | AdminAdd |
-| motivo           | String                                                   | depende das configurações de função |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                      | Qualificado / Ativo |
+| tipo             | Cadeia de caracteres                                                   | Sim                      | AdminAdd |
+| motivo           | Cadeia de caracteres                                                   | depende das configurações de função |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
 #### <a name="request"></a>Solicitação
@@ -133,7 +133,7 @@ Neste exemplo, um administrador atribui nawu@contoso.com usuário à função Le
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_1"
 }-->
 
 ```http
@@ -155,19 +155,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -232,18 +232,20 @@ Neste exemplo, o usuário nawu@contoso.com ativa a função leitor de cobrança 
 | Propriedade         | Tipo                                                     | Obrigatório                 | Valor |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim                      | \<subjectId\> |
-| assignmentState  | String                                                   | Sim                      | Ativo |
-| type             | String                                                   | Sim                      | UserAdd |
-| motivo           | String                                                   | depende das configurações de função |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                      | Ativa |
+| tipo             | Cadeia de caracteres                                                   | Sim                      | UserAdd |
+| motivo           | Cadeia de caracteres                                                   | depende das configurações de função |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_2"
 }-->
 
 ```http
@@ -265,6 +267,24 @@ Content-type: application/json
   "linkedEligibleRoleAssignmentId": "e327f4be-42a0-47a2-8579-0a39b025b394"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -335,18 +355,20 @@ Neste exemplo, o usuário nawu@contoso.com desativa a função leitor de cobran�
 | Propriedade         | Tipo                                                     | Obrigatório | Valor |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim      | \<subjectId\> |
-| assignmentState  | String                                                   | Sim      | Ativo |
-| type             | String                                                   | Sim      | UserRemove |
-| motivo           | String                                                   | Não       |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim      | \<roleDefinitionId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim      | \<subjectId\> |
+| assignmentState  | Cadeia de caracteres                                                   | Sim      | Ativa |
+| tipo             | Cadeia de caracteres                                                   | Sim      | UserRemove |
+| motivo           | Cadeia de caracteres                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_3"
 }-->
 
 ```http
@@ -363,6 +385,24 @@ Content-type: application/json
   "linkedEligibleRoleAssignmentId": "cb8a533e-02d5-42ad-8499-916b1e4822ec"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -405,18 +445,20 @@ Neste exemplo, um administrador remove o usuário nawu@contoso.com da função L
 | Propriedade         | Tipo                                                     | Obrigatório | Valor |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim      | \<subjectId\> |
-| assignmentState  | String                                                   | Sim      | Qualificado / Ativo |
-| type             | String                                                   | Sim      | AdminRemove |
-| motivo           | String                                                   | Não       |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim      | \<roleDefinitionId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim      | \<subjectId\> |
+| assignmentState  | Cadeia de caracteres                                                   | Sim      | Qualificado / Ativo |
+| tipo             | Cadeia de caracteres                                                   | Sim      | AdminRemove |
+| motivo           | Cadeia de caracteres                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_4"
 }-->
 
 ```http
@@ -431,6 +473,24 @@ Content-type: application/json
   "type": "AdminRemove"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -473,18 +533,20 @@ Neste exemplo, os administradores atualizam a atribuição de função para o us
 | Propriedade         | Tipo                                                     | Obrigatório                | Valor |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                     | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim                     | \<subjectId\> |
-| assignmentState  | String                                                   | Sim                     | Qualificado / Ativo |
-| type             | String                                                   | Sim                     | AdminUpdate |
-| motivo           | String                                                   | depende de roleSettings |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim                     | \<subjectId\> |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                     | Qualificado / Ativo |
+| tipo             | Cadeia de caracteres                                                   | Sim                     | AdminUpdate |
+| motivo           | Cadeia de caracteres                                                   | depende de roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_5"
 }-->
 
 ```http
@@ -504,6 +566,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-5-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-5-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-5-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -564,18 +644,20 @@ Este exemplo estende a atribuição de função de expiração para o usuário A
 | Propriedade         | Tipo                                                     | Obrigatório                | Valor |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                     | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim                     | \<subjectId\> |
-| assignmentState  | String                                                   | Sim                     | Qualificado / Ativo |
-| type             | String                                                   | Sim                     | AdminExtend |
-| motivo           | String                                                   | depende de roleSettings |   |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim                     | \<subjectId\> |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                     | Qualificado / Ativo |
+| tipo             | Cadeia de caracteres                                                   | Sim                     | AdminExtend |
+| motivo           | Cadeia de caracteres                                                   | depende de roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_6"
 }-->
 
 ```http
@@ -596,6 +678,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-6-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-6-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 52293a20af20f39cf327af421a7f6db51202f2a7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ad690ccb21d49196ee52cf69f9832d87b7a6a7c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955298"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951149"
 ---
 # <a name="get-educationuser"></a>Obter educationUser
 
@@ -25,16 +25,16 @@ Recupere as propriedades e as relações de um usuário.
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 > [!NOTE]
-> Se o token delegado for usado, os membros só poderão ver informações sobre sua própria conta. Nesse caso, use o recurso `beta/education/me/users`.
+> Se o token delegado for usado, os membros poderão ver apenas informações sobre sua própria conta. Nesse caso, use o recurso `beta/education/me/users`.
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!IMPORTANT]
-> Ao usar escopos de permissão delegada, o Graph só retornará um conjunto limitado de propriedades:,,,,,,, `id` `primaryRole` ,, `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` , `teacher/externalId` . Se seu aplicativo exigir propriedades adicionais, você deve usar escopos de permissão de aplicativo.
+> Ao usar escopos de permissão delegados, o Graph retornará apenas um conjunto limitado de propriedades: `id` , , , , , , , , , `primaryRole` , `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` `teacher/externalId` . Se seu aplicativo exigir propriedades adicionais, você deve usar escopos de permissão application.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -73,7 +73,7 @@ Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationuser"
+  "name": "get_educationuser_2"
 }-->
 
 ```msgraph-interactive
@@ -81,22 +81,22 @@ GET https://graph.microsoft.com/beta/education/users/13012
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-2-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-2-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-2-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

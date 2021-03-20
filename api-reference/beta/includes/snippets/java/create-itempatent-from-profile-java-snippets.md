@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: dc8fd7abfc536cd23c61e28500cd136a07279b0c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2b8683a6375fa1eba867ff86f8441397ef4da045
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974662"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50966966"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ItemPatent itemPatent = new ItemPatent();
 itemPatent.description = "Calculating the intent of a user to purchase an item based on the amount of time they hover their mouse over a given pixel.";

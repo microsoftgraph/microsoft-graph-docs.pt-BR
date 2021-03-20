@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0cd2eb2712929e6f1f3554a02f0c72d68fc2f314
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: aa75b11a875095bfaff52e4f8fbc11f9ab3f4522
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955173"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50951057"
 ---
 # <a name="list-schools"></a>Listar escolas
 
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
-> Quando as permissões delegadas são usadas, somente os recursos do educationSchool de que o usuário de autenticação é um membro será retornado.
+> Quando as permissões delegadas são usadas, somente os recursos educationSchool que o usuário de autenticação é membro serão retornados.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -70,7 +70,7 @@ Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "get_schools"
+  "name": "get_schools_3"
 }-->
 
 ```msgraph-interactive
@@ -78,22 +78,22 @@ GET https://graph.microsoft.com/beta/education/me/schools
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-3-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-3-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-3-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-schools-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
