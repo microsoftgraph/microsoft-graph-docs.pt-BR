@@ -5,12 +5,12 @@ description: Obter tipos de conteúdo de site que podem ser adicionados a uma li
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 99ca8f23b153f8835fc841e142b79684601bd293
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 8609c15eef73090864f9908aadfb3ffcaf13a2fd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772447"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958974"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>site: getApplicableContentTypesForList
 Namespace: microsoft.graph
@@ -55,8 +55,8 @@ Na URL da solicitação, forneça os seguintes parâmetros de consulta com valor
 A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Parâmetro|Tipo|Descrição|
-|-|-|-|-|
-|listId| String | GUID da lista para a qual os tipos de conteúdo aplicáveis precisam ser buscados. Obrigatório. |
+|-|-|-|
+|listId| Cadeia de caracteres | GUID da lista para a qual os tipos de conteúdo aplicáveis precisam ser buscados. Obrigatório. |
 
 ## <a name="response"></a>Resposta
 

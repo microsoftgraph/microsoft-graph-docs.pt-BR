@@ -3,14 +3,14 @@ title: Tipo de recurso mailAssessmentRequest
 description: Usado para criar e recuperar uma avaliação de ameaça de email.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 35b94380392b6dc1d0237d7d4655ca45f6347a1a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c6df66260673e6319f8b91bf52c7ca351adb85a7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719955"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958070"
 ---
 # <a name="mailassessmentrequest-resource-type"></a>Tipo de recurso mailAssessmentRequest
 
@@ -18,7 +18,7 @@ Usado para criar e recuperar uma avaliação de ameaça de email, derivada de [t
 
 Quando você cria uma solicitação de avaliação de ameaça de email, o email deve ser recebido pelo usuário especificado em `recipientEmail` . As permissões [de email delegadas](/graph/permissions-reference#mail-permissions) (Mail.Read ou Mail.Read.Shared) são requriadas para acessar o email recebido pelo usuário ou compartilhado por outra pessoa.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|

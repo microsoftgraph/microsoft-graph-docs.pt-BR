@@ -5,20 +5,20 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bd6af2af85c713556c7847853cd24db1013714d4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c4cebe3c5b35e44d5d81289dbc77cd78332350e7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131457"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958638"
 ---
 # <a name="add-owner"></a>Adicionar proprietário
 
 Namespace: microsoft.graph
 
-Adicione um proprietário a um [aplicativo](../resources/application.md) postando na coleção owners.
+Adicione um proprietário a [um aplicativo](../resources/application.md) postando na coleção owners.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -26,6 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta corporativa ou de estudante) |  Application.ReadWrite.All e Directory.Read.All, Directory.AccessAsUser.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.OwnedBy e Directory.Read.All, Application.ReadWrite.All e Directory.Read.All |
+
+> **Observação:** **Application.ReadWrite.OwnedBy** não será suficiente para adicionar outro proprietário. Consentimento também para **Application.ReadWrite.All**. 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

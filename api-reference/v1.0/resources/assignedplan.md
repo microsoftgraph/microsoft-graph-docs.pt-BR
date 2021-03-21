@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9e2c9c3dd04c2c3842fa984308d5f2ba002e607e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 182ef3239437234c74945fa37483924429f2200b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720813"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958091"
 ---
 # <a name="assignedplan-resource-type"></a>Tipo de recurso assignedPlan
 
@@ -23,8 +23,8 @@ A propriedade **assignedPlans** das entidades [user](user.md) e [organization](o
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assignedDateTime|DateTimeOffset|A data e hora em que o plano foi atribuído; por exemplo: 2013-01-02T19:32:30Z. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|capabilityStatus|[capabilityStatus](#capabilitystatus-values)|Condição da atribuição de recursos. Os valores possíveis `Enabled` são , , , , `Warning` `Suspended` `Deleted` `LockedOut` .|
+|assignedDateTime|DateTimeOffset|A data e a hora em que o plano foi atribuído. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|capabilityStatus|Cadeia de caracteres|Condição da atribuição de recursos. Os valores possíveis `Enabled` são , , , , `Warning` `Suspended` `Deleted` `LockedOut` . Consulte [uma descrição detalhada](#capabilitystatus-values) de cada valor.|
 |service|Cadeia de caracteres|O nome do serviço; por exemplo, "Exchange".|
 |servicePlanId|Guid|Um GUID que identifica o plano de serviço.|
 
@@ -36,7 +36,7 @@ A propriedade **assignedPlans** das entidades [user](user.md) e [organization](o
 | Habilitado | Disponível para uso normal. |
 | Aviso | Disponível para uso normal, mas está em um período de carência. |
 | Suspenso | Indisponível, mas todos os dados associados à funcionalidade devem ser preservados. |
-| Deleted | Indisponíveis e quaisquer dados associados à funcionalidade podem ser excluídos. |
+| Excluída | Indisponíveis e quaisquer dados associados à funcionalidade podem ser excluídos. |
 | LockedOut | Indisponível para todos os administradores e usuários, mas todos os dados associados à funcionalidade devem ser preservados. |
 
 ## <a name="json-representation"></a>Representação JSON

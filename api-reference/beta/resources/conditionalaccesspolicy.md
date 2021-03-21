@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 990ddea3cdea724011d2a495b9c588aaf6a24215
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 578d7cfcab984922d0c98f7cc8971daf9b10a2fa
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721689"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958812"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>Tipo de recurso conditionalAccessPolicy
 
@@ -28,7 +28,7 @@ Representa uma política de acesso condicional do Azure Active Directory. As pol
 | [Criar conditionalAccessPolicy](../api/conditionalaccessroot-post-policies.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Crie um novo objeto conditionalAccessPolicy. |
 | [Obter conditionalAccessPolicy](../api/conditionalaccesspolicy-get.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Ler propriedades e relações de um objeto conditionalAccessPolicy. |
 | [Atualizar conditionalAccessPolicy](../api/conditionalaccesspolicy-update.md) | [conditionalAccessPolicy](conditionalaccesspolicy.md) | Atualize um objeto conditionalAccessPolicy. |
-| [Excluir conditionalAccessPolicy](../api/conditionalaccesspolicy-delete.md) | Nenhum(a) | Exclua um objeto conditionalAccessPolicy. |
+| [Excluir conditionalAccessPolicy](../api/conditionalaccesspolicy-delete.md) | Nenhum | Exclua um objeto conditionalAccessPolicy. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -42,7 +42,7 @@ Representa uma política de acesso condicional do Azure Active Directory. As pol
 |id|Cadeia de caracteres| Especifica o identificador de um objeto conditionalAccessPolicy. Somente leitura.|
 |modifiedDateTime| DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Readonly. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Especifica os controles de sessão que são imposto após a assinatura. |
-|estado|string| Especifica o estado do objeto conditionalAccessPolicy. Os valores possíveis são: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Obrigatório. |
+|estado|conditionalAccessPolicyState| Especifica o estado do objeto conditionalAccessPolicy. Os valores possíveis são: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 

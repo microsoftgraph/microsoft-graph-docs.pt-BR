@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a10d262444b0a33dfbeadbb21611d914d9253e0d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: deb5c93570a9921bc1830bfcb0772d643eed68b7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719903"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958655"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>Tipo de recurso userCredentialUsageDetails
 
@@ -30,10 +30,10 @@ Representa o uso de redefinição de senha de autoatendados para um determinado 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| authMethod | cadeia de caracteres | Representa o método de autenticação que o usuário usou. Os valores possíveis são: , , , , , (usado somente para redefinição de senha de `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` autoatendido), `appNotification` `appCode` , e `alternateMobileCall` (suportado somente no registro). |
-| eventDateTime | DateTimeOffset | O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
+| authMethod | usageAuthMethod | Representa o método de autenticação que o usuário usou. Os valores possíveis são: , , , , , (usado apenas para redefinição de senha de `email` `mobileSMS` `mobileCall` `officePhone` `securityQuestion` autoatendido), `appNotification` , , , `appCode` `alternateMobileCall` (suportado somente no registro), `fido` , , `appPassword` ,`unknownFutureValue` |
+| eventDateTime | DateTimeOffset | O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`. |
 | failureReason | Cadeia de caracteres | Fornece o motivo da falha para o fluxo de trabalho de redefinição ou registro correspondente. |
-| feature | cadeia de caracteres | Os valores possíveis são: `registration` e `reset` . |
+| feature | featureType | Os valores possíveis são: `registration`, `reset`, `unknownFutureValue`. |
 | id | String | Somente leitura. O identificador exclusivo da atividade. Somente leitura.|
 | isSuccess | Booliano | Indica sucesso ou falha do fluxo de trabalho. |
 | userDisplayName | Cadeia de caracteres | Nome de usuário do usuário que executa o fluxo de trabalho de redefinição ou registro. |
