@@ -5,12 +5,12 @@ localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b139dcda363943427876dd4461f8823a144f2144
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 1b51b94b03f18647e8d3cf88036ecee22ab4de3a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721961"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50943353"
 ---
 # <a name="list-manager"></a>Listar gerente
 
@@ -48,16 +48,12 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.  
+Este método oferece suporte aos parâmetros de consulta `$select` e `$expand`[OData](/graph/query-parameters)para ajudar a personalizar a resposta.  
 
-Se sua solicitação incluir o parâmetro `$expand=manager($levels=n)` para obter a cadeia do gerente, você também deverá incluir o seguinte:
-
-- `$count=true` parâmetro de cadeia de caracteres de consulta
-- `ConsistencyLevel=eventual` cabeçalho da solicitação
-
->**Observação:** o `n` valor de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.  
-> Quando o `$level` parâmetro não for especificado, apenas o gerente imediato será retornado.  
-> Você pode especificar `$select` dentro `$expand` para selecionar as propriedades dos gerentes individuais: `$expand=manager($levels=max;$select=id,displayName)`
+>**Observação:** 
+> + O valor `n` de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.  
+> + Quando o `$levels` parâmetro não for especificado, apenas o gerente imediato será retornado.  
+> + Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades do gerente individual. O parâmetro `$levels` é obrigatório: `$expand=manager($levels=max;$select=id,displayName)`
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -85,25 +81,25 @@ O exemplo a seguir mostra uma solicitação para obter o gerente.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_manager"
+  "name": "get_manager_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

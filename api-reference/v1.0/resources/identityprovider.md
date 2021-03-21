@@ -5,18 +5,18 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3a8cf2d9c262551beb060c8b412c77ce50ffeeda
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2b6794d9aa4955b5b2260549641e4f7530c23e2a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444396"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50944847"
 ---
 # <a name="identityprovider-resource-type"></a>Tipo de recurso do identityProvider
 
 Namespace: microsoft.graph
 
-Representa um provedor de identidade do Azure Active Directory (Azure AD). O provedor de identidade pode ser Microsoft, Google, Facebook, Amazon, LinkedIn ou Twitter. Os seguintes provedores de identidade são na visualização: Weibo, QQ, WeChat, GitHub e qualquer provedores com suporte OpenID Connect. 
+Representa um provedor de identidade do Azure Active Directory (Azure AD). O provedor de identidade pode ser **Microsoft**, **Google**, **Facebook**,**Amazon**, **LinkedIn** ou **Twitter**. Os seguintes provedores de identidade estão em visualização: **Weibo**, **QQ**, **WeChat**,**GitHub** e qualquer provedor compatível com OpenID Connect. 
 
 Configurar um provedor de identidade em seu locatário do Azure AD B2C permite que os usuários:
 
@@ -37,13 +37,13 @@ Configurar um provedor de identidade em seu locatário do Azure AD permite cená
 
 ## <a name="properties"></a>Propriedades
 
-|Propriedade|Tipo|Obrigatório|Anulável|Descrição|
-|:---------------|:--------|:--------|:--------|:----------|
-|clientId|Cadeia de caracteres|Sim|Não|ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
-|clientSecret|Cadeia de caracteres|Sim|Não|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará "\*\*\*\*".|
-|id|Cadeia de caracteres|Não|Não|O ID do provedor de identidade.|
-|nome|Cadeia de caracteres|Não|Não|O nome de exibição exclusivo do provedor de identidade.|
-|tipo|Cadeia de caracteres|Sim|Não|A identidade do provedor de identidade. Ele deve ser um dos seguintes valores para cenários B2C: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>Para os cenários B2B, o valor deve ser Google ou Facebook.|
+|Propriedade|Tipo|Descrição|
+|:---------------|:--------|:--------|
+|clientId|Cadeia de caracteres|O ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade. Obrigatório. Não anulável.|
+|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará `****`.  Obrigatório. Não anulável.|
+|id|Cadeia de caracteres|O ID do provedor de identidade.|
+|nome|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade. Não anulável.|
+|tipo|Cadeia de caracteres|O tipo de provedor de identidade é um campo obrigatório. Para o cenário B2B:`Google`, `Facebook`. Para o cenário B2C: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`, `OpenIDConnect`. Não anulável.|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Como obter o ID e segredo do cliente
 

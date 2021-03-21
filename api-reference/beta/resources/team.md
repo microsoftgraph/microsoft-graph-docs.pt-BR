@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7376d6fca9abbf246b3ab2fd9b0a7591c32da613
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: a8c05b71c440925425d47fc19e5b836559e42b85
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714288"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50950283"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -76,7 +76,7 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 
 | Nome da propriedade| Tipo   | Descrição
 |:-----------------------|:-------|:-------------------------|
-|@microsoft.graph.teamCreationMode|cadeia de caracteres|Indica que a equipe está em estado de migração e atualmente está sendo usada para fins de migração. Ele aceita um valor: `migration`.|
+|@microsoft.graph.teamCreationMode|cadeia de caracteres|Indica que a equipe está em estado de migração e atualmente está sendo usada para fins de migração. Ele aceita um valor: `migration`. **Observação**: no futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.|
 
 Para um exemplo de solicitação POST, confira [Solicitação (criar equipe no estado de migração)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 

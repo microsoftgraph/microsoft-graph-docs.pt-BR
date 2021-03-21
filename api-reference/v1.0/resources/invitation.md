@@ -2,15 +2,15 @@
 title: tipo de recurso convite
 description: Representa um convite usado para adicionar usuários externos a uma organização.
 localization_priority: Priority
-author: elisolMS
+author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 484ac459d36d98353038fa68af4a2c8c9312ac56
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ff977732b4d0894767f06ccfcf03451a8cc77f61
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516609"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50941362"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -41,9 +41,9 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
 |sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
 |inviteRedirectUrl|Cadeia de caracteres|O URL para a qual o usuário deve ser redirecionado uma vez que o convite seja resgatado. Obrigatório.|
-|inviteRedeemUrl|Cadeia de caracteres|O URL que o usuário pode usar para resgatar o convite dele. Somente leitura.|
-|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você poderá convidar como Membro se não for administrador da empresa. |
-|status|String|O status do convite. Valores possíveis: PendingAcceptance, Completed, InProgress, e Error|
+|inviteRedeemUrl|Cadeia de caracteres|O URL que o usuário pode usar para resgatar seus convites. Somente leitura|.
+|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é `Guest` Você pode convidar como `Member` se fosse um administrador da empresa. |
+|status|Cadeia de caracteres|O status do convite. Os valores possíveis são: `PendingAcceptance`, `Completed`, `InProgress` e `Error`|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

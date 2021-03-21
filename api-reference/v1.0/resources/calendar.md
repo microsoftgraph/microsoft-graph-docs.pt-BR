@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5bac4adf71511a8823a77d8591e4700916308f3d
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: d6d549435cd9350f9baf1136fd10f174eb1d0938
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720543"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952547"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -46,16 +46,16 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowedOnlineMeetingProviders|coleção de cadeias de caracteres| Represente os provedores de serviços de reunião online que podem ser usados para criar reuniões online neste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
-|canEdit |Boolean |Verdadeira se o usuário pode gravar o calendário, falsa caso contrário. Essa propriedade é verdadeira para o usuário que criou o calendário. Esta propriedade também é verdadeira para um usuário com o qual tenha sido compartilhado um calendário e tenha sido concedido acesso de gravação. |
-|canShare |Boolean |Verdadeira se o usuário tem permissão para compartilhar o calendário, falsa caso contrário. Somente o usuário que criou o calendário pode compartilhá-lo. |
-|canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. |
+|allowedOnlineMeetingProviders|onlineMeetingProviderType collection| Represente os provedores de serviços de reunião online que podem ser usados para criar reuniões online neste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
+|canEdit |Booliano |`true` se o usuário pode escrever no calendário, `false` caso contrário. Esta propriedade é `true` para o usuário que criou o calendário. Esta propriedade também é `true` para um usuário que compartilhou uma agenda e recebeu acesso de gravação. |
+|canShare |Boolean |`true` se o usuário tiver permissão para compartilhar a agenda, `false` caso contrário. Apenas o usuário que criou o calendário pode compartilhá-lo. |
+|canViewPrivateItems |Boolean |`true` se o usuário pode ler itens de calendário que foram marcados como privados, `false` caso contrário. |
 |changeKey|String|Identifica a versão do objeto calendar. Toda vez que o calendário é alterado, a changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
-|color|calendarColor|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|color|calendarColor|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores das propriedades são: `auto`, `lightBlue`, `lightGreen`, `lightOrange`, `lightGray`, `lightYellow`, `lightTeal`, `lightPink`, `lightBrown`, `lightRed`, `maxColor`|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|O provedor de reunião online padrão para reuniões enviadas deste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
-|hexColor |String |A cor do calendário, expressa em um código de cores hexadecimais de três valores hexadecimais, cada um deles variando de 00 a FF e representando os componentes vermelho, verde ou azul do espaço de cor RGB. Se o usuário nunca tiver definido explicitamente uma cor para o calendário, esta propriedade estará vazia. Somente leitura.|
+|hexColor |String |A cor do calendário, expressa em um código de cor hexadecimal de três valores hexadecimais, cada um variando de 00 a FF e representando os componentes vermelho, verde ou azul da cor no espaço de cores RGB. Se o usuário nunca tiver definido explicitamente uma cor para o calendário, esta propriedade estará vazia. Somente leitura.|
 |id|String|O identificador exclusivo do calendário. Somente leitura.|
-|isDefaultCalendar|Booliano|Verdadeiro se este for o calendário padrão em que novos eventos são criados; caso contrário, será falso.|
+|isDefaultCalendar|Booliano|`true` se este for o calendário padrão onde novos eventos são criados por padrão, `false` caso contrário.|
 |isRemovable|Booliano| Indica se o calendário deste usuário pode ser excluído da caixa de correio do usuário.|
 |isTallyingResponses|Booliano|Indica se o calendário deste usuário dá suporte ao acompanhamento de respostas de reunião. Somente os convites para reuniões enviados do calendário principal do usuário oferecem suporte para respostas de reunião.|
 |nome|String|O nome do calendário.|

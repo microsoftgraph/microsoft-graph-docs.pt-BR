@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6eec321a319deedc704dc2a2ed508627a2de11ba
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 1fac25f5c638324df8c0686e0001c3de794ddba0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721926"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958113"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -49,7 +49,7 @@ Determinadas propriedades não podem ser retornadas dentro de uma coleção de u
 | Cabeçalho        | Valor                      |
 |:--------------|:---------------------------|
 | Autorização | {token} do portador (obrigatório)  |
-| ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou quando se usa `$filter` com o `$orderby` parâmetro de consulta. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
+| ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários ao usar `$search`, ou ao usar o `$filter` com o parâmetro de consulta `$orderby` ou `$filter` com o operador lógico `endsWith`. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -71,25 +71,25 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_users"
+  "name": "get_users_2"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-users-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-users-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -426,6 +426,62 @@ Content-type: application/json
   ]
 }
 ```
+
+### <a name="example-8-use-filter-to-get-users-who-are-assigned-a-specific-license"></a>Exemplo 8: Use $ filter para obter usuários que receberam uma licença específica
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_user_assignedLicenses"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=id,mail,assignedLicenses&$filter=assignedLicenses/any(u:u/skuId eq cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46)
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,mail,assignedLicenses)",
+  "value": [
+    {
+      "id": "cb4954e8-467f-4a6d-a8c8-28b9034fadbc",
+      "mail": "admin@contoso.com",
+      "assignedLicenses": [
+        {
+          "disabledPlans": [],
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46"
+        }
+      ]
+    },
+    {
+      "id": "81a133c2-bdf2-4e67-8755-7264366b04ee",
+      "mail": "DebraB@contoso.com",
+      "assignedLicenses": [
+        {
+          "disabledPlans": [],
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46"
+        }
+      ]
+    }
+  ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

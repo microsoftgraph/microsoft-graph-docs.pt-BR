@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 2ca266a1e3f170579d2b466ea8fd23f52b2a0099
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f154ad9dbb305923f579547db9d3bbf3839b7577
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135016"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962004"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -67,27 +67,37 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | api | [apiApplication](apiapplication.md) | Especifica configurações para um aplicativo que implementa uma API Web. |
 | appId | String | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Azure AD. Não anulável. Somente leitura. |
 | appRoles | Coleção [appRole](approle.md) | O conjunto de funções atribuídas ao aplicativo. Com as [atribuições de funções do aplicativo](approleassignment.md), essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço de outros aplicativos. Não anulável. |
-| createdDateTime | DateTimeOffset | A data e a hora que o aplicativo foi registrado. Somente leitura. |
-| deletedDateTime | DateTimeOffset | A data e a hora que o aplicativo foi excluído. Somente leitura. |
+| createdDateTime | DateTimeOffset | A data e a hora que o aplicativo foi registrado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
+| deletedDateTime | DateTimeOffset | A data e a hora que o aplicativo foi excluído. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 | displayName | String | O nome de exibição do aplicativo. |
-| groupMembershipClaims | Cadeia de caracteres | Configura a declaração `groups` emitida em um usuário ou o token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores válidos de cadeia de caracteres:<ul><li>`None`</li><li>`SecurityGroup`: para grupos de segurança e funções do Azure AD</li><li>`All`: Isso obterá todos os grupos de segurança, de distribuição e funções de diretório do Azure AD dos quais o usuário conectado é membro.</li></ul> |
+| groupMembershipClaims | Cadeia de caracteres | Configura a declaração `groups` emitida em um usuário ou o token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores de cadeia de caracteres válidos:`None`,`SecurityGroup` (para grupos de segurança e funções do Azure Active Directory),`All` (isso obtém todos os grupos de segurança, grupos de distribuição e funções de diretório do Azure Active Directory que o usuário conectado é um membro de). |
 | id | String | O identificador exclusivo do aplicativo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | identifierUris | Coleção de cadeias de caracteres | Os URIs que identificam o aplicativo em seu locatário do Azure AD ou em um domínio personalizado verificado, se o aplicativo é multilocatário. Para saber mais, confira [Objetos de aplicativo e objetos de entidade de serviço](/azure/active-directory/develop/app-objects-and-service-principals). O operador `any` é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
 | informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo, como marketing, suporte, termos de serviço e URLs de política de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como adicionar termos de serviço e política de privacidade a aplicativos do Azure AD registrados](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 | isFallbackPublicClient | Booliano | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é `false`, o que significa que o tipo de aplicativo de fallback é cliente confidencial, como um aplicativo web. No entanto, há situações em que o Azure AD não consegue determinar o tipo de aplicativo cliente. Por exemplo, o fluxo [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) onde o aplicativo está configurado sem especificar um URI de redirecionamento. Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade.|
 | keyCredentials | [keyCredential](keycredential.md) collection | A coleção de credenciais chaves associada ao aplicativo. Não anulável. |
 | logo | Stream | O principal logotipo do aplicativo. Não anulável. |
+| notes | String | Anotações relevantes para o gerenciamento do aplicativo. |
 | optionalClaims | [optionalClaims](optionalclaims.md) | Desenvolvedores de aplicativos podem configurar declarações opcionais em aplicativos do Azure AD para especificar quais declarações serão enviadas ao aplicativo pelo serviço de token de segurança da Microsoft. Para saber mais, confira [Como: Fornecer declarações opcionais ao aplicativo](/azure/active-directory/develop/active-directory-optional-claims).|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo. |
 | passwordCredentials | Coleção [passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associada ao aplicativo. Não anulável.|
 | publicClient | [publicClientApplication](publicclientapplication.md) | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
 | publisherDomain | String | O domínio do publicador verificado para o aplicativo. Somente leitura. Para obter mais informações, consulte [Como: configurar o domínio do publisher de um aplicativo](/azure/active-directory/develop/howto-configure-publisher-domain).|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection|Especifique os recursos que o aplicativo precisa acessar. Essa propriedade também especifica o conjunto de escopos de permissão OAuth e as funções de aplicativo necessários para cada um desses recursos. Essa configuração de acesso aos recursos necessários impulsiona a experiência de consentimento. Não anulável.|
-| signInAudience | Cadeia de caracteres | Especifique quais contas Microsoft têm suporte para o aplicativo atual. Os valores com suporte são:<ul><li>`AzureADMyOrg`: Usuários com uma conta Microsoft corporativa ou de estudante no locatário do Azure AD da organização (ou seja, locatário único)</li><li>`AzureADMultipleOrgs`: Usuários com uma conta Microsoft corporativa ou de estudante em locatário Azure AD de qualquer organização (multi locatário)</li><li>`AzureADandPersonalMicrosoftAccount`: Usuários com uma conta Microsoft pessoal, corporativa ou de estudante no locatário do Azure AD de qualquer organização.</li><li>`PersonalMicrosoftAccount`: Somente os usuários com uma conta Microsoft pessoal.</li></ul>Para autenticar usuários com fluxos de usuário do Active Directory B2C, use o `AzureADandPersonalMicrosoftAccount`. Este valor permite o mais amplo conjunto de identidades de usuário, incluindo contas locais e identidades de usuário da Microsoft, Facebook, Google, Twitter ou qualquer provedor de conexão OpenID. |
+| signInAudience | Cadeia de caracteres | Especifique quais contas Microsoft têm suporte para o aplicativo atual. Os valores com suporte são: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount`, `PersonalMicrosoftAccount`. Confira mais na [tabela abaixo](#signinaudience-values). |
 | categorias |Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulável.|
 | tokenEncryptionKeyId |Cadeia de caracteres|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD criptografa todos os tokens emitidos usando a chave para a qual essa propriedade aponta. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Especifica o fornecedor verificado para o aplicativo.|
 | web |[webApplication](webapplication.md)| Especifica configurações para um aplicativo Web. |
+
+### <a name="signinaudience-values"></a>signInAudience values
+
+| Valor | Descrição |
+|:---------------|:--------|
+|AzureADMyOrg|Usuários com uma conta de corporativa ou estudante da Microsoft no locatário do Azure Active Directory da minha organização (locatário único).|
+|AzureADMultipleOrgs|Usuários com uma conta de trabalho ou escola da Microsoft em qualquer locatário do Azure Active Directory (multilocatário) da organização.|
+|AzureADandPersonalMicrosoftAccount|: Usuários com uma conta Microsoft pessoal, corporativa ou de estudante no locatário do Azure Active Directory de qualquer organização. Para autenticar usuários com fluxos de usuário do Active Directory B2C, use o `AzureADandPersonalMicrosoftAccount`. Este valor permite o mais amplo conjunto de identidades de usuário, incluindo contas locais e identidades de usuário da Microsoft, Facebook, Google, Twitter ou qualquer provedor de conexão OpenID. |
+|PersonalMicrosoftAccount|Usuários com uma conta Microsoft pessoal apenas.|
 
 ## <a name="relationships"></a>Relações
 
@@ -127,6 +137,7 @@ Veja a seguir uma representação JSON do recurso.
   "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
+  "notes": "String",
   "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
   "parentalControlSettings": {"@odata.type": "microsoft.graph.parentalControlSettings"},
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],

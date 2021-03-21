@@ -5,26 +5,26 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 66a3d8358ffe6a968f6f7f681e64236c7ecd665e
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 29268cb321dd133ba762be5ccfc625810280f3bf
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523306"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964209"
 ---
 # <a name="add-member-to-channel"></a>Adicionar membro ao canal
 
 Namespace: microsoft.graph
 
-Adicionar um [conversationMember](../resources/conversationmember.md) a um [canal](../resources/channel.md). Essa operação só é permitida para canais com um valor de **membershiptype** de `private` .
+Adicionar uma [conversaMember](../resources/conversationmember.md) a um [canal](../resources/channel.md). Essa operação só é permitida para canais com **um valor membershipType** de `private` .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| ChannelMember.ReadWrite.All |
 
@@ -47,8 +47,8 @@ Inclua as propriedades a seguir no corpo da solicitação.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|funções|coleção de cadeias de caracteres|A função para o usuário. Deve ser `owner` ou vazio.|
-|user|[user](../resources/user.md)|O usuário a ser adicionado ao canal.|
+|funções|coleção de cadeias de caracteres|A função do usuário. Deve estar `owner` ou vazio.|
+|user|[Usuário](../resources/user.md)|O usuário a ser acrescentado ao canal.|
 
 ## <a name="response"></a>Resposta
 
@@ -56,14 +56,14 @@ Se bem-sucedido, este método retornará um código de resposta `201 Created` e 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-add-a-member-to-a-channel"></a>Exemplo 1: adicionar um membro a um canal
+### <a name="example-1-add-a-member-to-a-channel"></a>Exemplo 1: Adicionar um membro a um canal
 
 #### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "channel_add_member"
+  "name": "channel_add_member_1"
 } -->
 ```http
 POST https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
@@ -77,11 +77,19 @@ Content-length: 100
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/channel-add-member-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/channel-add-member-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/channel-add-member-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/channel-add-member-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -112,17 +120,29 @@ Content-length: 468
 }
 ```
 
-### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>Exemplo 2: adicionar um membro com a função proprietário a um canal
+### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>Exemplo 2: Adicionar um membro com a função de proprietário a um canal
 
 #### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "channel_add_member"
+  "name": "channel_add_member_2"
 } -->
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/channel-add-member-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

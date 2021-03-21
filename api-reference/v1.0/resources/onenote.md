@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: cd2d8f52043541684d6c56c706ba9b0e3e3b6c78
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c81804c9ea93e6da9f0f9b7134f5b38aa4afd64
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082956"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961976"
 ---
 # <a name="onenote-resource-type"></a>tipo de recurso do onenote
 
@@ -52,7 +52,7 @@ Para obter informações sobre as permissões necessárias para trabalhar com o 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|notebooks|Coleção [Notebook](notebook.md)|A coleção de blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anulável.|
+|notebooks|Coleção [bloco de anotações](notebook.md)|A coleção de blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anulável.|
 |operations|Coleção [OnenoteOperation](onenoteoperation.md)  |O status das operações do OneNote. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status das operações longas se o cabeçalho `Operation-Location` for retornado na resposta. Somente leitura. Anulável.|
 |páginas|Coleção [OnenotePage](page.md) |As páginas em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
 |recursos|Coleção [OnenoteResource](resource.md)  |A imagem e outros recursos de arquivos nas páginas do OneNote. Não há suporte para a obtenção de uma coleção de recursos, mas você pode [obter o conteúdo de um recurso binário específico](resource.md). Somente leitura. Anulável.|

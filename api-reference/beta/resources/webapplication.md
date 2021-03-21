@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 630423c787f8a89734c56362b079a402a5606929
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 68266c75995fed51038319cf50e0925d5057fa91
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135611"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964531"
 ---
 # <a name="webapplication-resource-type"></a>Tipo de recurso webApplication
 
@@ -24,10 +24,10 @@ Especifica configurações para um aplicativo Web.
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| `homePageUrl` | String | Página inicial ou página de aterrissagem do aplicativo. |
-| `implicitGrantSettings` | [implicitGrantSettings](implicitgrantsettings.md)| Especifica se esse aplicativo Web pode solicitar tokens usando o fluxo implícito do OAuth 2.0. |
-| `logoutUrl` | String | Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML. |
-| `redirectUris` | Coleção de cadeias de caracteres | Especifica as URLs para onde os tokens de usuário são enviados para entrada ou os URIs de redirecionamento para os quais os códigos de autorização e tokens de acesso do OAuth 2.0 são enviados. |
+| homePageUrl | Cadeia de caracteres | Página inicial ou página de aterrissagem do aplicativo. |
+| implicitGrantSettings | [implicitGrantSettings](implicitgrantsettings.md)| Especifica se esse aplicativo Web pode solicitar tokens usando o fluxo implícito OAuth 2.0. |
+| logoutUrl | String | Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML. |
+| redirectUris | Coleção de cadeias de caracteres | Especifica as URLs para as quais os tokens de usuário são enviados para entrar ou as URIs de redirecionamento para as quais os códigos de autorização do OAuth 2.0 e tokens de acesso são enviados. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

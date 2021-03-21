@@ -1,35 +1,35 @@
 ---
 title: 'cloudCommunications: getPresencesByUserId'
-description: Obtenha as informações de presença de vários usuários.
-author: elvinyang-msft
+description: Obter informações de presença para vários usuários.
+author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 1eae5f86955732829c3eed56be531588f5155eb5
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 78793623972e5887a1f74184789dbda87ee4dda4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689147"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964007"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
 Namespace: microsoft.graph
 
-Obtenha as informações de [presença](../resources/presence.md) de vários usuários.
+Obter informações [de](../resources/presence.md) presença para vários usuários.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Presence.Read.All                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
-| Application                            | Sem suporte.                                  |
+| Aplicativo                            | Sem suporte.                                  |
 
 > **Observação:**
-> * O máximo de 650 IDs de usuário têm suporte por solicitação de API.
-> * A taxa máxima de solicitações dessa API são 1500 solicitações de API em um período de 30 segundos, por aplicativo por locatário.
+> * Há suporte para no máximo 650 IDs de usuário por solicitação de API.
+> * A taxa máxima de solicitação dessa API é de 1500 solicitações de API em um período de 30 segundos, por aplicativo por locatário.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ Uma das seguintes permissões é necessária para chamar essas APIs. Para saber 
 POST /communications/getPresencesByUserId
 ```
 
-## <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Headers de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
@@ -46,15 +46,15 @@ POST /communications/getPresencesByUserId
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça um objeto JSON com o seguinte parâmetro.
+No corpo da solicitação, forneça um objeto JSON com o parâmetro a seguir.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|ids|Coleção de cadeias de caracteres|As IDs de objeto de usuário.|
+|ids|Coleção de cadeias de caracteres|As IDs de objeto do usuário.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Presence](../resources/presence.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [de](../resources/presence.md) presença no corpo da resposta.
 
 
 ## <a name="examples"></a>Exemplos
@@ -101,7 +101,7 @@ Content-Type: application/json
 ### <a name="response"></a>Resposta
 O exemplo a seguir mostra a resposta.
 
-> **Observação:** Os objetos Response podem ser reduzidos para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** Os objetos de resposta podem ser reduzidos para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 36220039ee1682db4ec337da91545fd27f2970e1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 82792a33e1adc961712a8653f8da99fbd298f7af
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439826"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962431"
 ---
 # <a name="permissiongrantconditionset-resource-type"></a>tipo de recurso permissionGrantConditionSet
 
@@ -25,13 +25,13 @@ Um conjunto de condições para concessão de permissão contém várias condiç
 | Propriedade     | Tipo |Descrição|
 |:---------------|:--------|:----------|
 | id | String | O identificador exclusivo para o conjunto de condições de concessão de permissão. Chave. Somente leitura. |
-| permissionClassification | String | A [classificação de permissão](delegatedpermissionclassification.md) para que a permissão seja concedida ou "tudo" para corresponder a qualquer classificação de permissão (incluindo permissões que não são classificadas). O padrão é `all`. |
-| permissionType | permissionType | O tipo de permissão da permissão sendo concedida. Valores possíveis: `application` para permissões do aplicativo (por exemplo, funções do aplicativo) ou `delegated` para permissões delegadas. O valor `delegatedUserConsentable` indica que as permissões delegadas que não foram configuradas pelo fornecedor da API exigem o consentimento do administrador — esse valor pode ser usado em políticas de concessão de permissão interna, mas não pode ser usado em políticas de concessão de permissão personalizadas. Obrigatório. |
+| permissionClassification | String | O [classificação de permissão](delegatedpermissionclassification.md)pela permissão sendo concedida, ou `all` para corresponder a qualquer classificação de permissão (incluindo permissões que não são classificadas). O padrão é `all`. |
+| permissionType | permissionType | O tipo de permissão da permissão sendo concedida. Valores possíveis: `application` para permissões de aplicativos (por exemplo, funções de aplicativos) ou`delegated` para permissões delegadas. O valor `delegatedUserConsentable` indica que as permissões delegadas que não foram configuradas pelo fornecedor da API exigem o consentimento do administrador — esse valor pode ser usado em políticas de concessão de permissão interna, mas não pode ser usado em políticas de concessão de permissão personalizadas. Obrigatório. |
 | resourceApplication | String | O **appId** do aplicativo de recursos (por exemplo, a API) para o qual uma permissão está sendo concedida ou `any` para corresponder a qualquer aplicativo de recurso ou API. O padrão é `any`. |
-| permissões | Conjunto de cadeia de caracteres | A lista de valores de **identificação** para as permissões específicas corresponderem ou uma lista com o valor único "tudo" para corresponder a qualquer permissão. A **identificação** de permissões delegadas pode ser encontrado na propriedade **oauth2PermissionScopes** do objeto [ **servicePrincipal**](serviceprincipal.md) da API. A **identificação** das permissões do aplicativo podem ser encontradas na propriedade **appRoles** do objeto [**servicePrincipal**](serviceprincipal.md) da API. A **identificação** de permissões de aplicativos específicas do recurso pode ser encontrada na propriedade **resourceSpecificApplicationPermissions** do objeto [**servicePrncipal**](serviceprincipal.md) da API. O padrão é o valor único "tudo". |
-| clientApplicationIds | Coleção de cadeias de caracteres | A lista de valores de **identificação** para os aplicativos cliente se corresponderem ou uma lista com o valor único "tudo" para corresponder a qualquer aplicativo cliente. O padrão é o valor único "tudo". |
-| clientApplicationTenantIds | Coleção de cadeias de caracteres | Uma lista de IDs de locatários do Azure Active Directory na qual o aplicativo cliente está registrado ou uma lista com o valor único para corresponder a aplicativos cliente registrados em qualquer locatário. O padrão é o valor único "tudo". |
-| clientApplicationPublisherIds | Coleção de cadeias de caracteres | Uma lista de identificações Microsoft Partner Network (MPN) para fornecedores verificados de aplicativo cliente, ou uma lista com valor único "tudo" para corresponder aos aplicativos cliente de qualquer fornecedor. O padrão é o valor único "tudo". |
+| permissões | Conjunto de cadeia de caracteres | A lista de **identificação** valores para as permissões específicas corresponderem ou uma lista com o valor único `all` para combinar com qualquer permissão. A **identificação** de permissões delegadas pode ser encontrado na propriedade **oauth2PermissionScopes** do objeto [ **servicePrincipal**](serviceprincipal.md) da API. A **identificação** das permissões do aplicativo podem ser encontradas na propriedade **appRoles** do objeto [**servicePrincipal**](serviceprincipal.md) da API. A **identificação** de permissões de aplicativos específicas do recurso pode ser encontrada na propriedade **resourceSpecificApplicationPermissions** do objeto [**servicePrncipal**](serviceprincipal.md) da API. O padrão é o valor único `all`. |
+| clientApplicationIds | Coleção de cadeias de caracteres | A lista de **appld** valores para os aplicativos cliente corresponderem ou uma lista com o valor único `all` para corresponder a qualquer aplicativo cliente. O padrão é o valor único `all`. |
+| clientApplicationTenantIds | Coleção de cadeias de caracteres | Uma lista de IDs de locatário do Azure Active Directory em que o aplicativo cliente está registrado ou uma lista com o valor único `all` para corresponder aos aplicativos clientes registrados em qualquer locatário. O padrão é o valor único `all`. |
+| clientApplicationPublisherIds | Coleção de cadeias de caracteres | Uma lista de IDs do Microsoft Partner Network (MPN) para editores verificados do aplicativo cliente ou uma lista com o valor único `all` para combinar com aplicativos cliente de qualquer editor. O padrão é o valor único `all`. |
 | clientApplicationsFromVerifiedPublisherOnly | Booleano | Configure para `true` para corresponder apenas a aplicativos cliente com um fornecedor verificado. Configure para `false` para corresponder a qualquer aplicativo cliente, mesmo que não tenha um fornecedor verificado. O padrão é `false`. |
 
 ## <a name="json-representation"></a>Representação JSON

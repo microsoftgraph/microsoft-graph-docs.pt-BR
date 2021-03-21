@@ -5,12 +5,12 @@ localization_priority: Priority
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 980abee92bc2457d584febd4bda746a0ffd75a10
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 56ab065ffb2ec303bbd79f681882d7154af9ff2c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722325"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50952512"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -38,7 +38,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
 | assignedPlans | Coleção [assignedPlan](assignedplan.md) | A coleção de planos de serviço associados ao locatário. Não anulável. |
-| businessPhones | Coleção de cadeias de caracteres | Número de telefone da organização. OBSERVAÇÃO: embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. |
+| businessPhones | Coleção de cadeias de caracteres | Número de telefone da organização. Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. |
 | city | Cadeia de caracteres | Nome da cidade do endereço da organização. |
 | country | Cadeia de caracteres | Nome do país/região do endereço da organização. |
 | countryLetterCode | Cadeia de caracteres | Abreviação do país/região da organização. |
@@ -47,12 +47,12 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | createdDateTime | DateTimeOffset | Carimbo de hora de criação da organização. Não é possível modificar o valor e ele é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 | displayName | String | O nome de exibição do locatário. |
 | id | Cadeia de caracteres | A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
-| isMultipleDataLocationsForServicesEnabled | Boolean | **verdadeiro** se a organização estiver habilitada no Multi-Geo; **falso** se a organização não estiver habilitada no Multi-Geo, **nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
+| isMultipleDataLocationsForServicesEnabled | Boolean | `true` se a organização estiver habilitada para Multi-Geo; **fallse** se a organização não estiver habilitada para Multi-Geo; **null** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
-| onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
-| onPremisesSyncEnabled | Booliano | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
+| onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
+| onPremisesSyncEnabled | Booliano | `true` se este objeto for sincronizado a partir de um diretório local; `false` se este objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado. Anulável. `null` se este objeto nunca foi sincronizado de um diretório local (padrão). |
 | postalCode | Cadeia de caracteres | CEP do endereço da organização. |
-| preferredLanguage | String | O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en". |
+| preferredLanguage | String | O idioma preferencial da organização. Deve seguir o Código ISO 639-1; por exemplo `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | O perfil de privacidade de uma organização. |
 | provisionedPlans | Coleção [ProvisionedPlan](provisionedplan.md) | Não anulável. |
 | securityComplianceNotificationMails | Coleção de cadeias de caracteres ||

@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 587014aa0c9dbe4c05c0e3b946c3f6e44b7cb821
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e754bf9e5199de502672cdf0a0de5279eb5ef80f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442784"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953744"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -42,6 +42,10 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Criar permissões][]         | POST /sites/{site-id}/permissions
 | [Excluir permissão][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Atualizar permissão][]         | PATCH /sites/{site-id}/permissions/{permission-id}
+|[Tipos de conteúdo de lista][]          | Obter /sites/{site-id}/contentTypes
+|[Criar contentType][]        | POSTAR /sites/{site-id}/contentTypes
+|[Colunas de lista][]               | OBTER /sites/{site-id}/columns
+|[Criar coluna][]              | POSTAR /sites/{site-id}/columns
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -60,6 +64,10 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 [Criar permissões]: ../api/site-post-permissions.md
 [Excluir permissão]: ../api/site-delete-permission.md
 [Atualizar permissão]: ../api/site-update-permission.md
+[Tipos de conteúdo de lista]: ../api/site-list-contenttypes.md
+[Criar contentType]: ../api/site-post-contenttypes.md
+[Colunas de lista]: ../api/site-list-columns.md
+[Criar coluna]: ../api/site-post-columns.md
 
 
 ## <a name="properties"></a>Propriedades
