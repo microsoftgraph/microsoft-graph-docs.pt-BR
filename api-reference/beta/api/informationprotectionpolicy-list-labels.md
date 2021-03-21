@@ -3,14 +3,14 @@ title: 'informationProtectionLabel: listLabels'
 description: Recupere uma lista de rótulos de proteção de informações.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: dc78485300ea59ae526d93f174212b9f8b5328bd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 00119bf52541db03c2c6ae00c2f9ba7497b38465
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964639"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954631"
 ---
 # <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel: listLabels
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha um conjunto de [Rótulos de proteção de informações](../resources/informationprotectionlabel.md) disponíveis para o usuário ou para a organização.
+Obter uma coleção de [rótulos](../resources/informationprotectionlabel.md) de proteção de informações disponíveis para o usuário ou para a organização.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,18 +28,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+| Aplicativo                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
-Para obter os rótulos disponíveis para o usuário conectado ou usuário especificado:
+Para obter rótulos disponíveis para o usuário ou usuário especificado:
 ```http
 GET /me/informationProtection/policy/labels
 GET /users/{id | user-principal-name}/informationProtection/policy/labels
 ```
 
-Para obter os rótulos disponíveis para a organização:
+Para obter rótulos disponíveis para a organização:
 ```http
 GET /informationProtection/policy/labels
 ```
@@ -53,7 +53,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 | Nome          | Descrição                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Autorização | {token} de portador. Obrigatório.                                                                                                                                                         |
-| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
+| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes aparecerão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [informationProtectionLabel](../resources/informationprotectionlabel.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos informationProtectionLabel](../resources/informationprotectionlabel.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

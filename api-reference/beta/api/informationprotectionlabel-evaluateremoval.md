@@ -1,16 +1,16 @@
 ---
 title: 'informationProtectionLabel: evaluateRemoval'
-description: Avaliar qual rótulo remover e como removê-lo com base nas informações de conteúdo existentes.
+description: Avalie qual rótulo remover e como removê-lo com base nas informações de conteúdo existentes.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 2333bd038b59c7e27d78f9f81c06fa2e65c75072
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d86f5cc5bd8d52ea4c902b06bd2f0013d11aaf12
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952850"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954689"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel: evaluateRemoval
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indique o aplicativo de consumo que ações deve executar para remover as informações de rótulo.
+Indique ao aplicativo de consumo quais ações devem ser tomadas para remover as informações do rótulo.
 
-Dada [contentInfo](../resources/contentinfo.md) como uma entrada, que inclui [pares de chave/valor](../resources/keyvaluepair.md)de metadados de conteúdo existentes, a API retorna um [informationProtectionAction](../resources/informationprotectionaction.md) que contém alguma combinação de uma ou mais das seguintes opções: 
+Dado [contentInfo](../resources/contentinfo.md) como uma entrada, que inclui pares de chave/valor de metadados de conteúdo [existentes,](../resources/keyvaluepair.md)a API retorna uma [informationProtectionAction](../resources/informationprotectionaction.md) que contém alguma combinação de um dos seguintes: 
 
-* [justifyaction](../resources/justifyaction.md)
-* [metadataaction](../resources/metadataaction.md)
+* [justifyAction](../resources/justifyaction.md)
+* [metadataAction](../resources/metadataaction.md)
 * [removeContentFooterAction](../resources/removecontentfooteraction.md)
 * [removeContentHeaderAction](../resources/removecontentheaderaction.md)
 * [removeProtectionAction](../resources/removeprotectionaction.md)
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+| Aplicativo                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,7 @@ POST /informationProtection/policy/labels/evaluateRemoval
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Autorização | {token} de portador. Obrigatório.                                                                                                                                                         |
 | Content-type  | application/json. Obrigatório.                                                                                                                                                       |
-| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
+| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes aparecerão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -62,12 +62,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro              | Tipo                                                             | Descrição                                                                                                                         |
 | :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | contentInfo            | [contentInfo](../resources/contentinfo.md)                       | Fornece detalhes sobre o formato de conteúdo, o estado do conteúdo e os [metadados](../resources/keyvaluepair.md) existentes como pares de chave/valor. |
-| downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | Justificativa que deve ser fornecida pelo usuário ou pela lógica do aplicativo.                                                               |
+| downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | Justification that must be provided by the user or application logic.                                                               |
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto da coleção [informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta. O [objeto informationProtectionAction](../resources/informationprotectionaction.md) conterá um objeto [metadataaction](../resources/metadataaction.md) que informa ao aplicativo quais metadados serão removidos. 
+Se tiver êxito, este método retornará um código de resposta e um novo objeto da coleção `200 OK` [informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta. O [objeto informationProtectionAction](../resources/informationprotectionaction.md) conterá um [objeto metadataAction](../resources/metadataaction.md) que informa ao aplicativo quais metadados remover. 
 
 ## <a name="examples"></a>Exemplos
 

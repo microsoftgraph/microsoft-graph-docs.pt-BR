@@ -3,14 +3,14 @@ title: Listar threatAssessmentRequests
 description: Recupere uma lista de objetos threatassessmentrequest.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: eeeb17bd23f5ecf4d840cc20b6aa62b2b03d3829
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ffc58d43be57ec99d7d7ec8dfc7abb4f239bf16a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952935"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954694"
 ---
 # <a name="list-threatassessmentrequests"></a>Listar threatAssessmentRequests
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [threatAssessmentRequest](../resources/threatassessmentrequest.md) .
+Recupere uma lista [de objetos threatAssessmentRequest.](../resources/threatassessmentrequest.md)
 
-Uma solicitação de avaliação de ameaça pode ser um dos seguintes tipos:
+Uma solicitação de avaliação de ameaças pode ser um dos seguintes tipos:
 
 * [Email](../resources/mailAssessmentRequest.md)
 * [Arquivo de email](../resources/emailFileAssessmentRequest.md)
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | ThreatAssessment.ReadWrite.All             |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | ThreatAssessment.Read.All                  |
+| Aplicativo                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,12 +47,12 @@ GET /informationProtection/threatAssessmentRequests
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-|Nome            |Valor    |Descrição                                                                                                                                                                 |
+|Name            |Valor    |Descrição                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Limita a resposta somente aos objetos que contêm os critérios especificados.                                                                                             |
-|$orderby        |cadeia de caracteres   |Por padrão, os objetos na resposta são decrescentes ordenados por seu valor **createdDateTime** .                                                                          |
+|$filter         |string   |Limita a resposta apenas aos objetos que contêm os critérios especificados.                                                                                             |
+|$orderby        |cadeia de caracteres   |Por padrão, os objetos na resposta são decrescentes ordenados pelo **valor createdDateTime.**                                                                          |
 |$select         |string   |Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.                                        |
 |$skipToken      |string   |Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.                                                                                               |
 
@@ -68,7 +68,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [threatAssessmentRequest](../resources/threatassessmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos threatAssessmentRequest](../resources/threatassessmentrequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

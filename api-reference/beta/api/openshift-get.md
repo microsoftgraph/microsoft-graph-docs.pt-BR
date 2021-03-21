@@ -1,16 +1,16 @@
 ---
 title: Obter openShift
-description: Recupere as propriedades e os relacionamentos do objeto openshift.
+description: Recupere as propriedades e as relações do objeto openshift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 03ed9840776937c7282b50757aa442bf0871c800
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c390874f199fed937ed89d4df8dab25e1ca1d2e7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968774"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954423"
 ---
 # <a name="get-openshift"></a>Obter openShift
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [openshift](../resources/openshift.md) .
+Recupere as propriedades e as relações de um [objeto openshift.](../resources/openshift.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,7 +40,7 @@ GET /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte a parâmetros de consulta OData para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta OData para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [openShift](../resources/openshift.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e o objeto `200 OK` [openShift](../resources/openshift.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -65,26 +65,26 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_openshift"
+  "name": "get_openshift_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-openshift-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-openshift-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-openshift-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-openshift-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-openshift-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-openshift-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-openshift-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-openshift-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

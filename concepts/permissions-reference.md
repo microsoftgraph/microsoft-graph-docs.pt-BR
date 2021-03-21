@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: f7f5dee15a8111af1a925c1ece328b41e9b538c9
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: bb159956728639bd414cf08d76fe3136f432b2b8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573849"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50953380"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -259,7 +259,7 @@ A permissão _Application.ReadWrite.OwnedBy_ admite as mesmas operações que _A
 * _Application.ReadWrite.OwnedBy_: criar um aplicativo (`POST /beta/applications`)
 * _Application.ReadWrite.OwnedBy_: Listar todos os aplicativos pertencentes ao aplicativo da chamada (`GET /beta/servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_: adicionar outro proprietário a um aplicativo próprio (`POST /applications/{id}/owners/$ref`).
-> OBSERVAÇÃO: isso pode exigir permissões adicionais.
+    > OBSERVAÇÃO: isso pode exigir permissões adicionais.
 
 ---
 
@@ -545,6 +545,22 @@ Nenhuma.
 Nenhum
 
 ---
+
+## <a name="consent-requests-permissions"></a>Autorizações de pedidos de consentimento
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_ConsentRequest.Read.All_ |Ler solicitações de consentimento |Permite que o aplicativo leia solicitações e aprovações de consentimento, em nome do usuário conectado. |Sim | Não |
+|_ConsentRequest.ReadWrite.All_ |Ler e gravar solicitações de consentimento |Permite que o aplicativo leia solicitações e aprovações de consentimento e negue ou aprove essas solicitações em nome do usuário conectado. |Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_ConsentRequest.Read.All_ |Ler solicitações de consentimento |Permite que o aplicativo leia as solicitações e aprovações de consentimento do aplicativo sem um usuário conectado. |Sim |
+|_ConsentRequest.ReadWrite.All_ |Ler e gravar solicitações de consentimento |Permite que o aplicativo leia solicitações e aprovações de consentimento de aplicativo e negue ou aprove essas solicitações sem um usuário conectado. |Sim |
 
 ## <a name="contacts-permissions"></a>Permissões de contatos
 
@@ -1234,7 +1250,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1481,6 +1497,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave as políticas de fluxo de autenticação, em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
 | _Policy.ReadWrite.ConditionalAccess_ | Ler e gravar as políticas de acesso condicional da sua organização | Permite que o aplicativo leia e grave todas as políticas de acesso condicional em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.ConsentRequest_ | Ler e escrever a política de solicitações de consentimento da sua organização | Permite que o aplicativo leia e grave a política de solicitações de consentimento da sua organização, em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.FeatureRollout_ | Ler e gravar as políticas de implantação de novos recursos da sua organização | Permite que o aplicativo leia e grave todas as políticas de implantação de novos recursos em nome do usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim | Não |
 | _Policy.ReadWrite.PermissionGrant_ | Gerenciar as políticas de concessão de consentimento e permissão | Permite que o aplicativo gerencie as políticas relacionadas a concessões de consentimento e permissão para aplicativos, em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas TrustFramework (Estrutura de Confiança) da sua organização | Permite que o aplicativo leia e grave todas as políticas de TrustFramework da sua organização em nome do usuário conectado. | Sim | Não |
@@ -1495,6 +1512,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.Read.ApplicationConfiguration_ | Leia as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia todas as políticas de configuração dos aplicativos da sua organização sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave todas as políticas de fluxo de autenticação do locatário, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
+| _Policy.ReadWrite.ConsentRequest_ | Ler e escrever a política de solicitações de consentimento da sua organização | Permite que o aplicativo leia e escreva a política de solicitações de consentimento da sua organização sem um usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.FeatureRollout_ | Políticas de distribuição de recursos de leitura e gravação | Permite que o aplicativo leia e grave todas as políticas de distribuição de recursos sem um usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim |
 | _Policy.ReadWrite.PermissionGrant_ | Gerenciar as políticas de concessão de consentimento e permissão | Permite que o aplicativo gerencie as políticas relacionadas às concessões de consentimento e permissão para aplicativos, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas da estrutura de confiança da sua organização | Permite que o aplicativo leia e grave todas as políticas da estrutura de confiança da sua organização sem um usuário conectado. | Sim |
@@ -2182,7 +2200,7 @@ Para contas corporativas ou de estudante, o perfil completo inclui todas as prop
 - mobilePhone
 - mySite
 - pastProjects
-- photo
+- Foto
 - preferredName
 - responsibilities
 - schools
@@ -2199,7 +2217,7 @@ A permissão _User.ReadBasic.All_ restringe o acesso do aplicativo a um conjunto
 - displayName
 - givenName
 - Email
-- photo
+- Foto
 - surname
 - userPrincipalName
 

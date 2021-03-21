@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: d9f6d123d13b75a8dde23a47a5119bbb9b87ca06
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 11c793a01cd1b0027e12cd831984dc30cd04961c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440301"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945659"
 ---
 # <a name="identityprovider-resource-type"></a>Tipo de recurso do identityProvider
 
@@ -24,7 +24,7 @@ Para cenários do Azure AD B2B em um locatário do Microsoft Azure Active Direct
 
 A configuração de um provedor de identidade no locatário do Microsoft Azure Active Directory permite novos cenários de convidado no Azure AD B2B. Por exemplo, uma organização possui recursos no Microsoft 365 que precisam ser compartilhados com um usuário do Gmail. O usuário do Gmail usará as credenciais de conta do Google para autenticar e acessar os documentos.
 
-Em um locatário do Azure AD B2C, o tipo de provedor de identidade pode ser a Microsoft, o Google, o Facebook, a Amazon, o LinkedIn, o Twitter ou qualquer [openIdConnectProvider](../resources/openidconnectprovider.md). Os seguintes provedores de identidade estão em visualização: Weibo, QQ, WeChat e GitHub.
+Em um locatário do Azure Active Directory B2C, o tipo de provedor de identidade pode ser **Microsoft**, **Google**, **Facebook**, **Amazon**, **LinkedIn**, **Twitter** ou qualquer [openIdConnectProvider](../resources/openidconnectprovider.md). Os seguintes provedores de identidade estão em visualização: **Weibo**, **QQ**, **WeChat** e **GitHub**.
 
 A configuração de um provedor de identidade no locatário do Azure AD B2C permite que os usuários se inscrevam e entrem usando uma conta social ou um provedor personalizado suportado pelo OpenID Connect em um aplicativo. Por exemplo, um aplicativo pode usar o Azure AD B2C para permitir que os usuários se inscrevam no serviço usando uma conta do Facebook ou o seu próprio provedor de identidade personalizado que esteja em conformidade com o protocolo OIDC.
 
@@ -46,11 +46,11 @@ Se for um provedor de identidade personalizado do OpenID Connect `OpenIDConnect`
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|clientId|Cadeia de caracteres|A ID do cliente para o aplicativo obtido ao registrar o aplicativo no provedor de identidade. Esse é um campo obrigatório.|
-|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo obtido ao registrar o aplicativo no provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará "\*\*\*\*". Esse é um campo obrigatório.|
+|clientId|Cadeia de caracteres|A ID do cliente para o aplicativo obtido ao registrar o aplicativo no provedor de identidade. Esse é um campo obrigatório.  Obrigatório. Não anulável.|
+|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo obtido ao registrar o aplicativo no provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará `****`. Esse é um campo obrigatório. Obrigatório. Não anulável.|
 |id|Cadeia de caracteres|O ID do provedor de identidade.|
-|nome|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
-|tipo|Cadeia de caracteres|O tipo de provedor de identidade é um campo obrigatório.<ul>Para o cenário B2B:<li/>Google<li/>Facebook</ul><ul>Para o cenário B2C:<li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
+|nome|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade. Não anulável.|
+|tipo|Cadeia de caracteres|O tipo de provedor de identidade é um campo obrigatório. Para o cenário B2B:`Google`, `Facebook`. Para o cenário B2B: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`,`QQ`, `WeChat`, `OpenIDConnect`. Não anulável.|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Como obter o ID e segredo do cliente
 

@@ -3,14 +3,14 @@ title: 'informationProtectionLabel: extractLabel'
 description: Recupere informationProtectionContentLabel usando metadados de um objeto rotulado.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: aaa9fe32f9ca07efa9dc4703fe9b78ee61443239
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cfc46fcc6ccafadd938ebc7eb6dc1c28fac1f328
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964686"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954668"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usando os metadados que existem em uma informação já rotulada, resolva os metadados para um rótulo de confidencialidade específico. A entrada [contentInfo](../resources/contentinfo.md) é resolvida como [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md).
+Usando os metadados existentes em uma informação já rotulada, resolva os metadados para um rótulo de sensibilidade específico. A [entrada contentInfo](../resources/contentinfo.md) é resolvida para [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md).
 
 >[!NOTE]
->O recurso **[informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)** representa um rótulo de confidencialidade que foi aplicado a uma informação. os objetos [informationProtectionLabel](../resources/informationprotectionlabel.md) são os rótulos abstratos que fazem parte da política de rótulo de organização e podem ser aplicados às informações.
+>O **[recurso informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)** representa um rótulo de sensibilidade que foi aplicado a uma informação. [os objetos informationProtectionLabel](../resources/informationprotectionlabel.md) são os rótulos abstratos que fazem parte da política de rotulagem organizacional e podem ser aplicados às informações.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+| Aplicativo                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,8 +46,8 @@ POST /informationprotection/policy/labels/extractLabel
 | Nome          | Descrição                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Autorização | {token} de portador. Obrigatório.                                                                                                                                                         |
-| Content-type  | Content-Type: Application/JSON. Obrigatório.                                                                                                                                         |
-| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
+| Content-type  | Tipo de conteúdo: application/json. Obrigatório.                                                                                                                                         |
+| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes aparecerão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -59,7 +59,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` novo [objeto informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

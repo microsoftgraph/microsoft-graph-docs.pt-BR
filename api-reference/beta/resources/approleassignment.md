@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 621313667c39747c5aad81192e086ad1234b0d96
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f5be3d8deda6adf875b896cc6081f016debcfe69
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719070"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50945719"
 ---
 # <a name="approleassignment-resource-type"></a>Tipo de recurso appRoleAssignment
 
@@ -33,13 +33,13 @@ Uma atribuição de função de aplicativo onde a entidade de segurança atribu�
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 | id | Cadeia de caracteres | Um identificador exclusivo para a chave **appRoleAssignment**. Não anulável. Somente leitura. |
-| creationTimestamp | DateTimeOffset | A hora em que a atribuição de função do aplicativo foi criada. O tipo timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. O não tem suporte para `$filter`. |
-| principalId | Guid | O identificador exclusivo (**id**) para o [usuário](user.md), [grupo](group.md) ou da [entidade](serviceprincipal.md) a qual o acesso está sendo concedido. Obrigatório durante a criação. O não tem suporte para `$filter`. |
-| principalType | Cadeia de caracteres | O tipo da entidade de segurança atribuída. Pode ser “Usuário”, “Grupo” ou “ServicePrincipal”. Somente leitura. O não tem suporte para `$filter`. |
+| creationTimestamp | DateTimeOffset | A hora em que a atribuição de função do aplicativo foi criada. O tipo timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
+| principalId | Guid | O identificador exclusivo (**id**) para o [usuário](user.md), [grupo](group.md) ou da [entidade](serviceprincipal.md) a qual o acesso está sendo concedido. Obrigatório ao criar.  |
+| principalType | Cadeia de caracteres | O tipo da entidade de segurança atribuída. Isso pode ser `User`, `Group` ou `ServicePrincipal`. Somente leitura. |
 | principalDisplayName | Cadeia de caracteres |O nome de exibição do usuário, grupo ou entidade de serviço que recebeu a atribuição de função do aplicativo. Somente leitura. Suporte para `$filter` (`eq` e `startswith`). |
 | resourceId | Guid |Identificador exclusivo (**id**) para o recurso [(entidade de serviço)](serviceprincipal.md) para o qual a atribuição foi feita. Obrigatório durante a criação. Suporte para `$filter` (`eq` somente). |
-| resourceDisplayName | Cadeia de caracteres | O nome de exibição da entidade de serviço da função do aplicativo para o qual a atribuição foi feita. O não tem suporte para `$filter`. |
-| appRoleId | Guid | O identificador (**id**) da [função do aplicativo](approle.md) que está atribuída à entidade de segurança. Essa função de aplicativo deve ser exposta na propriedade **appRoles** na entidade de serviço do aplicativo de recurso (**ResourceId**). Se o aplicativo de recurso não tiver declarado todas as funções do aplicativo, uma ID de função de aplicativo padrão de `00000000-0000-0000-0000-000000000000` poderá ser especificada para sinalizar que a entidade de segurança está atribuída ao aplicativo de recursos sem nenhuma função específica do aplicativo. Obrigatório durante a criação. O não tem suporte para `$filter`. |
+| resourceDisplayName | Cadeia de caracteres | O nome de exibição da entidade de serviço da função do aplicativo para o qual a atribuição foi feita.  |
+| appRoleId | Guid | O identificador (**id**) da [função do aplicativo](approle.md) que está atribuída à entidade de segurança. Essa função de aplicativo deve ser exposta na propriedade **appRoles** na entidade de serviço do aplicativo de recurso (**ResourceId**). Se o aplicativo de recurso não tiver declarado todas as funções do aplicativo, uma ID de função de aplicativo padrão de `00000000-0000-0000-0000-000000000000` poderá ser especificada para sinalizar que a entidade de segurança está atribuída ao aplicativo de recursos sem nenhuma função específica do aplicativo. Obrigatório durante a criação. |
 
 ## <a name="json-representation"></a>Representação JSON
 
