@@ -1,0 +1,37 @@
+---
+title: Visão geral da API de métodos de autenticação do Azure AD
+description: Os métodos de autenticação são como os usuários autenticam no Azure AD.
+localization_priority: Normal
+author: mmcla
+ms.prod: microsoft-identity-platform
+doc_type: conceptualPageType
+ms.openlocfilehash: 1f39a7d231a9db7f4198aec4a440811ccce989f5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964629"
+---
+# <a name="azure-ad-authentication-methods-api-overview"></a><span data-ttu-id="ca518-103">Visão geral da API de métodos de autenticação do Azure AD</span><span class="sxs-lookup"><span data-stu-id="ca518-103">Azure AD authentication methods API overview</span></span>
+
+<span data-ttu-id="ca518-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ca518-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="ca518-105">[Os métodos de autenticação](/azure/active-directory/authentication/concept-authentication-methods) são as maneiras que os usuários autenticam no Azure Active Directory (AD).</span><span class="sxs-lookup"><span data-stu-id="ca518-105">[Authentication methods](/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Azure Active Directory (AD).</span></span> <span data-ttu-id="ca518-106">Os métodos de autenticação no Azure AD incluem senha e telefone (por exemplo, sms e chamadas de voz), que são gerenciáveis no ponto de extremidade beta do Microsoft Graph hoje, entre muitas outras, como chaves de segurança FIDO2 e o aplicativo Microsoft Authenticator.</span><span class="sxs-lookup"><span data-stu-id="ca518-106">Authentication methods in Azure AD include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph beta endpoint today, among many others such as FIDO2 security keys and the Microsoft Authenticator app.</span></span> <span data-ttu-id="ca518-107">Os métodos de autenticação são usados nas autenticações primária, de segundo fator e de step-up. Além disso, no processo de redefinição de senha de autoatendimento (SSPR).</span><span class="sxs-lookup"><span data-stu-id="ca518-107">Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.</span></span>
+
+<span data-ttu-id="ca518-108">As APIs do método de autenticação são usadas para gerenciar os métodos de autenticação de um usuário.</span><span class="sxs-lookup"><span data-stu-id="ca518-108">The authentication method APIs are used to manage a user's authentication methods.</span></span> <span data-ttu-id="ca518-109">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="ca518-109">For example:</span></span>
+
+* <span data-ttu-id="ca518-110">Você pode recuperar detalhes da Chave de Segurança FIDO2 de um usuário e excluí-la se o usuário tiver perdido a chave.</span><span class="sxs-lookup"><span data-stu-id="ca518-110">You can retrieve details of a user's FIDO2 Security Key, and delete it if the user has lost the key.</span></span>
+* <span data-ttu-id="ca518-111">Você pode recuperar detalhes do registro do Microsoft Authenticator de um usuário e excluí-lo se o usuário tiver perdido o telefone.</span><span class="sxs-lookup"><span data-stu-id="ca518-111">You can retrieve details of a user's Microsoft Authenticator registration, and delete it if the user has lost the phone.</span></span>
+
+## <a name="what-authentication-methods-can-be-managed-in-microsoft-graph"></a><span data-ttu-id="ca518-112">Quais métodos de autenticação podem ser gerenciados no Microsoft Graph?</span><span class="sxs-lookup"><span data-stu-id="ca518-112">What authentication methods can be managed in Microsoft Graph?</span></span>
+
+|<span data-ttu-id="ca518-113">Método de autenticação</span><span class="sxs-lookup"><span data-stu-id="ca518-113">Authentication method</span></span>       | <span data-ttu-id="ca518-114">Descrição</span><span class="sxs-lookup"><span data-stu-id="ca518-114">Description</span></span> |<span data-ttu-id="ca518-115">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ca518-115">Examples</span></span>     |
+|:---------------------------|:------------|:------------|
+|[<span data-ttu-id="ca518-116">fido2AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="ca518-116">fido2AuthenticationMethod</span></span>](fido2authenticationmethod.md)|<span data-ttu-id="ca518-117">Uma Chave de Segurança FIDO2 pode ser usada por um usuário para entrar no Azure AD.</span><span class="sxs-lookup"><span data-stu-id="ca518-117">A FIDO2 Security Key can be used by a user to sign-in to Azure AD.</span></span>|<span data-ttu-id="ca518-118">Excluir uma chave de segurança FIDO2 perdida.</span><span class="sxs-lookup"><span data-stu-id="ca518-118">Delete a lost FIDO2 Security Key.</span></span>|
+|[<span data-ttu-id="ca518-119">microsoftAuthenticatorAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="ca518-119">microsoftAuthenticatorAuthenticationMethod</span></span>](microsoftauthenticatorauthenticationmethod.md)|<span data-ttu-id="ca518-120">O Microsoft Authenticator pode ser usado por um usuário para entrar ou executar a autenticação multifafatório no Azure AD</span><span class="sxs-lookup"><span data-stu-id="ca518-120">Microsoft Authenticator can be used by a user to sign-in or perform multi-factor authentication to Azure AD</span></span>|<span data-ttu-id="ca518-121">Exclua um método de autenticação do Microsoft Authenticator.</span><span class="sxs-lookup"><span data-stu-id="ca518-121">Delete a Microsoft Authenticator authentication method.</span></span>|
+|[<span data-ttu-id="ca518-122">windowsHelloForBusinessAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="ca518-122">windowsHelloForBusinessAuthenticationMethod</span></span>](windowsHelloForBusinessAuthenticationMethod.md)|<span data-ttu-id="ca518-123">O Windows Hello para Empresas é um método de entrada sem senha em dispositivos Windows.</span><span class="sxs-lookup"><span data-stu-id="ca518-123">Windows Hello for Business is a passwordless sign-in method on Windows devices.</span></span>|<span data-ttu-id="ca518-124">Consulte dispositivos em que um usuário habilitar a entrada do Windows Hello para Empresas.</span><span class="sxs-lookup"><span data-stu-id="ca518-124">See devices where a user has enabled Windows Hello for Business sign-in.</span></span> <span data-ttu-id="ca518-125">Exclua uma credencial do Windows Hello para Empresas.</span><span class="sxs-lookup"><span data-stu-id="ca518-125">Delete a Windows Hello for Business credential.</span></span>|
+
+## <a name="next-steps"></a><span data-ttu-id="ca518-126">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="ca518-126">Next steps</span></span>
+
+* <span data-ttu-id="ca518-127">Revise os tipos de método de autenticação e seus vários métodos.</span><span class="sxs-lookup"><span data-stu-id="ca518-127">Review the authentication method types and their various methods.</span></span>
+* <span data-ttu-id="ca518-128">Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="ca518-128">Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>

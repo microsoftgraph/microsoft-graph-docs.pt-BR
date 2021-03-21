@@ -5,33 +5,33 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6d5a6d85e1341a7c742c1691a8fa126b1d5644dd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b6dac42062d84746196caaa0a11c26af1549b555
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130778"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962480"
 ---
-# <a name="conditionalaccessplatforms-resource-type"></a><span data-ttu-id="089c2-103">Tipo de recurso conditionalAccessPlatforms</span><span class="sxs-lookup"><span data-stu-id="089c2-103">conditionalAccessPlatforms resource type</span></span>
+# <a name="conditionalaccessplatforms-resource-type"></a><span data-ttu-id="a7c5a-103">Tipo de recurso conditionalAccessPlatforms</span><span class="sxs-lookup"><span data-stu-id="a7c5a-103">conditionalAccessPlatforms resource type</span></span>
 
-<span data-ttu-id="089c2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="089c2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a7c5a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a7c5a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="089c2-105">Plataformas incluídas e excluídas do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="089c2-105">Platforms included in and excluded from the policy scope.</span></span>
+<span data-ttu-id="a7c5a-105">Plataformas incluídas e excluídas do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="a7c5a-105">Platforms included in and excluded from the policy scope.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="089c2-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="089c2-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a7c5a-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a7c5a-106">Properties</span></span>
 
-| <span data-ttu-id="089c2-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="089c2-107">Property</span></span>     | <span data-ttu-id="089c2-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="089c2-108">Type</span></span>        | <span data-ttu-id="089c2-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="089c2-109">Description</span></span> |
+| <span data-ttu-id="a7c5a-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a7c5a-107">Property</span></span>     | <span data-ttu-id="a7c5a-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="a7c5a-108">Type</span></span>        | <span data-ttu-id="a7c5a-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="a7c5a-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="089c2-110">includePlatforms</span><span class="sxs-lookup"><span data-stu-id="089c2-110">includePlatforms</span></span>|<span data-ttu-id="089c2-111">String collection</span><span class="sxs-lookup"><span data-stu-id="089c2-111">String collection</span></span>| <span data-ttu-id="089c2-112">Os valores possíveis são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="089c2-112">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="089c2-113">excludePlatforms</span><span class="sxs-lookup"><span data-stu-id="089c2-113">excludePlatforms</span></span>|<span data-ttu-id="089c2-114">String collection</span><span class="sxs-lookup"><span data-stu-id="089c2-114">String collection</span></span>| <span data-ttu-id="089c2-115">Os possíveis valores são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="089c2-115">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="a7c5a-110">includePlatforms</span><span class="sxs-lookup"><span data-stu-id="a7c5a-110">includePlatforms</span></span>|<span data-ttu-id="a7c5a-111">Coleção conditionalAccessDevicePlatform</span><span class="sxs-lookup"><span data-stu-id="a7c5a-111">conditionalAccessDevicePlatform collection</span></span>| <span data-ttu-id="a7c5a-112">Os valores possíveis são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="a7c5a-112">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="a7c5a-113">excludePlatforms</span><span class="sxs-lookup"><span data-stu-id="a7c5a-113">excludePlatforms</span></span>|<span data-ttu-id="a7c5a-114">Coleção conditionalAccessDevicePlatform</span><span class="sxs-lookup"><span data-stu-id="a7c5a-114">conditionalAccessDevicePlatform collection</span></span>| <span data-ttu-id="a7c5a-115">Os valores possíveis são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="a7c5a-115">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="089c2-116">Relações</span><span class="sxs-lookup"><span data-stu-id="089c2-116">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="a7c5a-116">Relações</span><span class="sxs-lookup"><span data-stu-id="a7c5a-116">Relationships</span></span>
 
-<span data-ttu-id="089c2-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="089c2-117">None.</span></span>
+<span data-ttu-id="a7c5a-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="a7c5a-117">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="089c2-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="089c2-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a7c5a-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a7c5a-118">JSON representation</span></span>
 
-<span data-ttu-id="089c2-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="089c2-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a7c5a-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a7c5a-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
