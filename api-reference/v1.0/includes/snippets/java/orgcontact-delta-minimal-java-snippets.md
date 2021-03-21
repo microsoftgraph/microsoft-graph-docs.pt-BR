@@ -1,20 +1,20 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 06d57c976c252b191566c6b7b547b69b465025e2
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: d8fa69be171b42b4206b8de4b62cdd0851504c5d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43770958"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50979346"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "return=minimal"));
 
-IOrgContactDeltaCollectionPage delta = graphClient.contacts()
+OrgContactDeltaCollectionPage delta = graphClient.contacts()
     .delta()
     .buildRequest( requestOptions )
     .select("displayName,jobTitle,mail")

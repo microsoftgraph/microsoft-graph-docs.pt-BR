@@ -1,20 +1,24 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7459c6bacfcb5b34e0df820151b86039b73645c9
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b50127fe24eb5b7c9fe99e9ec494448bbe0eb519
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865720"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50975613"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 RejectReason reason = RejectReason.NONE;
 
 graphClient.communications().calls("57dab8b1-894c-409a-b240-bd8beae78896")
-    .reject(reason,null)
+    .reject(CallRejectParameterSet
+        .newBuilder()
+        .withReason(reason)
+        .withCallbackUri(null)
+        .build())
     .buildRequest()
     .post();
 

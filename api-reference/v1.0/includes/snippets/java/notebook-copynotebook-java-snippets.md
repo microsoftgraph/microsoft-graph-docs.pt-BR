@@ -1,22 +1,29 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c5cc2fb7d41ccaba17d76ae012d6dd9fdc83f63e
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: 8e7cb10e540c304087bd7b881d4ded3f8eb7246e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402667"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50969761"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String groupId = "groupId-value";
 
 String renameAs = "renameAs-value";
 
 graphClient.me().onenote().notebooks("{id}")
-    .copyNotebook(groupId,renameAs,null,null,null)
+    .copyNotebook(NotebookCopyNotebookParameterSet
+        .newBuilder()
+        .withGroupId(groupId)
+        .withRenameAs(renameAs)
+        .withNotebookFolder(null)
+        .withSiteCollectionId(null)
+        .withSiteId(null)
+        .build())
     .buildRequest()
     .post();
 
