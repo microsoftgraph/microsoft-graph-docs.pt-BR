@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: dec1c282139b41c43f825b370dc5c129bf23d44b
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 55a3a8b48a80d342ddc8140d7eeb2a147ce3fc92
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "37428757"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50969554"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String comment = "comment-value";
 
@@ -23,7 +23,12 @@ toRecipients.emailAddress = emailAddress;
 toRecipientsList.add(toRecipients);
 
 graphClient.me().messages("{id}")
-    .forward(toRecipientsList,null,comment)
+    .forward(MessageForwardParameterSet
+        .newBuilder()
+        .withToRecipients(toRecipientsList)
+        .withMessage(null)
+        .withComment(comment)
+        .build())
     .buildRequest()
     .post();
 

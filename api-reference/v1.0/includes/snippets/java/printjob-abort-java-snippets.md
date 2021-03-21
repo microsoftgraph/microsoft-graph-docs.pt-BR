@@ -1,20 +1,23 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3257d0e2c134e27a7da2821c78aaf5b3bbb2aa74
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 3287e6286621c8be40bd4b317e8b6d36f0ba0cb2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771418"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50970584"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String reason = "String";
 
 graphClient.print().printers("{printerId}").jobs("{printJobId}")
-    .abort(reason)
+    .abort(PrintJobAbortParameterSet
+        .newBuilder()
+        .withReason(reason)
+        .build())
     .buildRequest()
     .post();
 

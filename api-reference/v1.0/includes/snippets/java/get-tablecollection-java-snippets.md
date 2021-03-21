@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: debb2433b0ca23dd9e1f6b77f3495f543bb5678e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 744cf49083aa9091e1e3a5286db8244cf6870e46
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884832"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50969712"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IWorkbookTableCollectionPage tables = graphClient.me().drive().items("{id}").workbook().tables()
+WorkbookTableCollectionPage tables = graphClient.me().drive().items("{id}").workbook().tables()
     .buildRequest()
     .get();
 
