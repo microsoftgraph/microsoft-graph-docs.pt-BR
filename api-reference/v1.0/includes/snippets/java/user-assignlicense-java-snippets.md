@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 20f6c52204463e18fb9dab475264e1c0b6ce6def
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c3e81bc55b79c71c6be7a64e434a3edb93017ada
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48983542"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50968256"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<AssignedLicense> addLicensesList = new LinkedList<AssignedLicense>();
 AssignedLicense addLicenses = new AssignedLicense();
@@ -24,7 +24,11 @@ LinkedList<UUID> removeLicensesList = new LinkedList<UUID>();
 removeLicensesList.add(UUID.fromString("bea13e0c-3828-4daa-a392-28af7ff61a0f"));
 
 graphClient.me()
-    .assignLicense(addLicensesList,removeLicensesList)
+    .assignLicense(UserAssignLicenseParameterSet
+        .newBuilder()
+        .withAddLicenses(addLicensesList)
+        .withRemoveLicenses(removeLicensesList)
+        .build())
     .buildRequest()
     .post();
 

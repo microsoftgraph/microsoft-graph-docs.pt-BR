@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 50588df1d56aa925de2c0a4b3f3d1d9559ff292d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 26842e1a8980691fcb6fcbdacf701e1573674f07
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885753"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50968806"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IUserDeltaCollectionPage delta = graphClient.users()
+UserDeltaCollectionPage delta = graphClient.users()
     .delta()
     .buildRequest()
     .select("displayName,jobTitle,mobilePhone")

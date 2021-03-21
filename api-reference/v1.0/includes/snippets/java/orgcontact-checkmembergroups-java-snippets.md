@@ -1,22 +1,25 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6646acae95813b554cf68a717a24854fb31ec1a9
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 20fa39fa6f0e4ef947a7d061221b5bf7ccb5f601
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638379"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50966644"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<String> groupIdsList = new LinkedList<String>();
 groupIdsList.add("groupId-value1");
 groupIdsList.add("groupId-value2");
 
 graphClient.contacts("{id}")
-    .checkMemberGroups(groupIdsList)
+    .checkMemberGroups(DirectoryObjectCheckMemberGroupsParameterSet
+        .newBuilder()
+        .withGroupIds(groupIdsList)
+        .build())
     .buildRequest()
     .post();
 

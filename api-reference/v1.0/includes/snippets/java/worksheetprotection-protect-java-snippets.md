@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4231696afa691226ff1690948be0bb39c98b5b87
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: e918edfbef1ba9a3cb05b5bff3eb535ddf9dfbbd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884160"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50975007"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookWorksheetProtectionOptions options = new WorkbookWorksheetProtectionOptions();
 options.allowFormatCells = true;
@@ -25,7 +25,10 @@ options.allowAutoFilter = true;
 options.allowPivotTables = true;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").protection()
-    .protect(options)
+    .protect(WorkbookWorksheetProtectionProtectParameterSet
+        .newBuilder()
+        .withOptions(options)
+        .build())
     .buildRequest()
     .post();
 
