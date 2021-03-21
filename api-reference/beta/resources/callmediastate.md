@@ -5,30 +5,30 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 99dc11faa96221abab6df6c27bac0db840123d5a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cbdc4feb50428fb3007b5a61362381d9c55a78a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071532"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955011"
 ---
-# <a name="callmediastate-resource-type"></a><span data-ttu-id="12733-103">tipo de recurso callMediaState</span><span class="sxs-lookup"><span data-stu-id="12733-103">callMediaState resource type</span></span>
+# <a name="callmediastate-resource-type"></a><span data-ttu-id="a44a6-103">tipo de recurso callMediaState</span><span class="sxs-lookup"><span data-stu-id="a44a6-103">callMediaState resource type</span></span>
 
-<span data-ttu-id="12733-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="12733-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a44a6-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a44a6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="12733-105">Representa o estado de mídia de uma [chamada](call.md).</span><span class="sxs-lookup"><span data-stu-id="12733-105">Represents the media state for a [call](call.md).</span></span>
+<span data-ttu-id="a44a6-105">Representa o estado de mídia de uma [chamada](call.md).</span><span class="sxs-lookup"><span data-stu-id="a44a6-105">Represents the media state for a [call](call.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="12733-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="12733-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a44a6-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a44a6-106">Properties</span></span>
 
-| <span data-ttu-id="12733-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="12733-107">Property</span></span>            | <span data-ttu-id="12733-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="12733-108">Type</span></span>    | <span data-ttu-id="12733-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="12733-109">Description</span></span>                                                                    |
+| <span data-ttu-id="a44a6-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a44a6-107">Property</span></span>            | <span data-ttu-id="a44a6-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="a44a6-108">Type</span></span>    | <span data-ttu-id="a44a6-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="a44a6-109">Description</span></span>                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="12733-110">audio</span><span class="sxs-lookup"><span data-stu-id="12733-110">audio</span></span>           | <span data-ttu-id="12733-111">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="12733-111">String</span></span>  | <span data-ttu-id="12733-112">O estado da mídia de áudio.</span><span class="sxs-lookup"><span data-stu-id="12733-112">The audio media state.</span></span> <span data-ttu-id="12733-113">Os valores possíveis são: `active` e `inactive`.</span><span class="sxs-lookup"><span data-stu-id="12733-113">Possible values are: `active`, `inactive`.</span></span> |
+| <span data-ttu-id="a44a6-110">audio</span><span class="sxs-lookup"><span data-stu-id="a44a6-110">audio</span></span>           | <span data-ttu-id="a44a6-111">mediaState</span><span class="sxs-lookup"><span data-stu-id="a44a6-111">mediaState</span></span>  | <span data-ttu-id="a44a6-112">O estado da mídia de áudio.</span><span class="sxs-lookup"><span data-stu-id="a44a6-112">The audio media state.</span></span> <span data-ttu-id="a44a6-113">Os valores possíveis são: `active`, `inactive`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="a44a6-113">Possible values are: `active`, `inactive`, `unknownFutureValue`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="12733-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="12733-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a44a6-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a44a6-114">JSON representation</span></span>
 
-<span data-ttu-id="12733-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="12733-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a44a6-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a44a6-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

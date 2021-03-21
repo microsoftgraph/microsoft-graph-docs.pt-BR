@@ -5,31 +5,31 @@ author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9d90b24e8746d53049a82e2f1858ac62d0497cd7
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1ddf7286d0e806665bbe3eacd1b9cf134fcc1e53
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777339"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954880"
 ---
-# <a name="list-tabs-in-chat"></a><span data-ttu-id="f6117-103">Listar guias no chat</span><span class="sxs-lookup"><span data-stu-id="f6117-103">List tabs in chat</span></span>
+# <a name="list-tabs-in-chat"></a><span data-ttu-id="b7a15-103">Listar guias no chat</span><span class="sxs-lookup"><span data-stu-id="b7a15-103">List tabs in chat</span></span>
 
-<span data-ttu-id="f6117-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f6117-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b7a15-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7a15-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f6117-105">Recupere a lista de [guias](../resources/teamstab.md) no chat [especificado](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="f6117-105">Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat](../resources/chat.md).</span></span>
+<span data-ttu-id="b7a15-105">Recupere a lista de [guias](../resources/teamstab.md) no chat [especificado](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="b7a15-105">Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat](../resources/chat.md).</span></span>
 
-> <span data-ttu-id="f6117-106">**Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) então, efetivamente, as guias fixadas na reunião serão listadas.</span><span class="sxs-lookup"><span data-stu-id="f6117-106">**Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tabs pinned in the meeting will be listed.</span></span> 
+> <span data-ttu-id="b7a15-106">**Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) então, efetivamente, as guias fixadas na reunião serão listadas.</span><span class="sxs-lookup"><span data-stu-id="b7a15-106">**Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tabs pinned in the meeting will be listed.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="f6117-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="f6117-107">Permissions</span></span>
-<span data-ttu-id="f6117-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f6117-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b7a15-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="b7a15-107">Permissions</span></span>
+<span data-ttu-id="b7a15-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b7a15-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f6117-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f6117-110">Permission type</span></span>      | <span data-ttu-id="f6117-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f6117-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b7a15-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b7a15-110">Permission type</span></span>      | <span data-ttu-id="b7a15-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b7a15-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f6117-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f6117-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f6117-113">TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f6117-113">TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span></span> |
-|<span data-ttu-id="f6117-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f6117-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f6117-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f6117-115">Not supported.</span></span>    |
-|<span data-ttu-id="f6117-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f6117-116">Application</span></span> | <span data-ttu-id="f6117-117">TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f6117-117">TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span></span> |
+|<span data-ttu-id="b7a15-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b7a15-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b7a15-113">TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7a15-113">TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span></span> |
+|<span data-ttu-id="b7a15-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b7a15-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7a15-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b7a15-115">Not supported.</span></span>    |
+|<span data-ttu-id="b7a15-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b7a15-116">Application</span></span> | <span data-ttu-id="b7a15-117">TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7a15-117">TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f6117-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f6117-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b7a15-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b7a15-118">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,27 +39,29 @@ ms.locfileid: "50777339"
 GET /chats/{chat-id}/tabs
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f6117-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="f6117-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b7a15-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b7a15-119">Optional query parameters</span></span>
 
-<span data-ttu-id="f6117-120">Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="f6117-120">This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="b7a15-120">Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="b7a15-120">This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f6117-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f6117-121">Request headers</span></span>
-| <span data-ttu-id="f6117-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f6117-122">Header</span></span>       | <span data-ttu-id="f6117-123">Valor</span><span class="sxs-lookup"><span data-stu-id="f6117-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="b7a15-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b7a15-121">Request headers</span></span>
+| <span data-ttu-id="b7a15-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b7a15-122">Header</span></span>       | <span data-ttu-id="b7a15-123">Valor</span><span class="sxs-lookup"><span data-stu-id="b7a15-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f6117-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="f6117-124">Authorization</span></span>  | <span data-ttu-id="f6117-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f6117-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b7a15-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="b7a15-124">Authorization</span></span>  | <span data-ttu-id="b7a15-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b7a15-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f6117-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f6117-127">Request body</span></span>
-<span data-ttu-id="f6117-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f6117-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b7a15-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b7a15-127">Request body</span></span>
+<span data-ttu-id="b7a15-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b7a15-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f6117-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="f6117-129">Response</span></span>
-<span data-ttu-id="f6117-130">Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [tabs](../resources/teamstab.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f6117-130">If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b7a15-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7a15-129">Response</span></span>
+<span data-ttu-id="b7a15-130">Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [tabs](../resources/teamstab.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b7a15-130">If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f6117-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f6117-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b7a15-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b7a15-131">Examples</span></span>
 
-### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a><span data-ttu-id="f6117-132">Exemplo 1: listar todas as guias do chat juntamente com o aplicativo do Teams associado</span><span class="sxs-lookup"><span data-stu-id="f6117-132">Example 1: List all the tabs in the chat along with associated Teams app</span></span>
-#### <a name="request"></a><span data-ttu-id="f6117-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f6117-133">Request</span></span>
-<span data-ttu-id="f6117-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f6117-134">The following is an example of the request.</span></span>
+### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a><span data-ttu-id="b7a15-132">Exemplo 1: listar todas as guias do chat juntamente com o aplicativo do Teams associado</span><span class="sxs-lookup"><span data-stu-id="b7a15-132">Example 1: List all the tabs in the chat along with associated Teams app</span></span>
+#### <a name="request"></a><span data-ttu-id="b7a15-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b7a15-133">Request</span></span>
+<span data-ttu-id="b7a15-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b7a15-134">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="b7a15-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="b7a15-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_tabs_in_chat"
@@ -69,11 +71,29 @@ GET /chats/{chat-id}/tabs
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs?$expand=teamsApp
 ```
+# <a name="c"></a>[<span data-ttu-id="b7a15-136">C#</span><span class="sxs-lookup"><span data-stu-id="b7a15-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-chat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="b7a15-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b7a15-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-chat-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="b7a15-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b7a15-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-chat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="b7a15-139">Java</span><span class="sxs-lookup"><span data-stu-id="b7a15-139">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-#### <a name="response"></a><span data-ttu-id="f6117-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="f6117-135">Response</span></span>
-<span data-ttu-id="f6117-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f6117-136">The following is an example of the response.</span></span>
-><span data-ttu-id="f6117-137">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="f6117-137">**Note:** The response object shown here might be shortened for readability.</span></span> 
+
+#### <a name="response"></a><span data-ttu-id="b7a15-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7a15-140">Response</span></span>
+<span data-ttu-id="b7a15-141">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b7a15-141">The following is an example of the response.</span></span>
+><span data-ttu-id="b7a15-142">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="b7a15-142">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -150,10 +170,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-chat"></a><span data-ttu-id="f6117-138">Exemplo 2: Listar todas as guias pertencentes a um aplicativo específico em um chat</span><span class="sxs-lookup"><span data-stu-id="f6117-138">Example 2: List all the tabs belonging to a specific app in a chat</span></span>
-#### <a name="request"></a><span data-ttu-id="f6117-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f6117-139">Request</span></span>
-<span data-ttu-id="f6117-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f6117-140">The following is an example of the request.</span></span>
+### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-chat"></a><span data-ttu-id="b7a15-143">Exemplo 2: Listar todas as guias pertencentes a um aplicativo específico em um chat</span><span class="sxs-lookup"><span data-stu-id="b7a15-143">Example 2: List all the tabs belonging to a specific app in a chat</span></span>
+#### <a name="request"></a><span data-ttu-id="b7a15-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b7a15-144">Request</span></span>
+<span data-ttu-id="b7a15-145">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b7a15-145">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="b7a15-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="b7a15-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_tabs_in_chat_app_filter"
@@ -163,11 +185,29 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs?$expand=teamsApp&$filter=teamsApp/id eq 'com.microsoft.teamspace.tab.web'
 ```
+# <a name="c"></a>[<span data-ttu-id="b7a15-147">C#</span><span class="sxs-lookup"><span data-stu-id="b7a15-147">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-chat-app-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="b7a15-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b7a15-148">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-chat-app-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="b7a15-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b7a15-149">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-chat-app-filter-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="b7a15-150">Java</span><span class="sxs-lookup"><span data-stu-id="b7a15-150">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-chat-app-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-#### <a name="response"></a><span data-ttu-id="f6117-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="f6117-141">Response</span></span>
-<span data-ttu-id="f6117-142">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f6117-142">The following is an example of the response.</span></span>
-><span data-ttu-id="f6117-143">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="f6117-143">**Note:** The response object shown here might be shortened for readability.</span></span> 
+
+#### <a name="response"></a><span data-ttu-id="b7a15-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7a15-151">Response</span></span>
+<span data-ttu-id="b7a15-152">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b7a15-152">The following is an example of the response.</span></span>
+><span data-ttu-id="b7a15-153">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="b7a15-153">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -209,9 +249,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="f6117-144">Confira também</span><span class="sxs-lookup"><span data-stu-id="f6117-144">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b7a15-154">Confira também</span><span class="sxs-lookup"><span data-stu-id="b7a15-154">See also</span></span>
 
-- [<span data-ttu-id="f6117-145">Listar guias no canal</span><span class="sxs-lookup"><span data-stu-id="f6117-145">List tabs in channel</span></span>](channel-list-tabs.md)
+- [<span data-ttu-id="b7a15-155">Listar guias no canal</span><span class="sxs-lookup"><span data-stu-id="b7a15-155">List tabs in channel</span></span>](channel-list-tabs.md)
 - 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
