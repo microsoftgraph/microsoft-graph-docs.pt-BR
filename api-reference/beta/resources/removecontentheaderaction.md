@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso removeContentHeaderAction
-description: Representa uma ação que especifica os detalhes no cabeçalho de conteúdo a ser removido das informações, se aplicável.
+title: Tipo de recurso removeContentHeaderAction
+description: Representa uma ação que especifica os detalhes do header de conteúdo a serem removidos das informações, se aplicável.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 63dc9556ace567f4505b40c1882bd56b087a7835
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9170556f5fc04e7b270d9886cd81f48c45e07122
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073422"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962060"
 ---
-# <a name="removecontentheaderaction-resource-type"></a>tipo de recurso removeContentHeaderAction
+# <a name="removecontentheaderaction-resource-type"></a>Tipo de recurso removeContentHeaderAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma ação que especifica os detalhes no cabeçalho de conteúdo a ser removido das informações, se aplicável. As APIs [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)ou [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) podem retornar o **removeContentHeaderAction** se o cabeçalho for removido como resultado da atualização ou remoção do rótulo. A ação instrui o aplicativo de consumo a remover o elemento de interface do usuário específico que contém o cabeçalho de conteúdo aplicável anteriormente.
+Representa uma ação que especifica os detalhes do header de conteúdo a serem removidos das informações, se aplicável. As APIs [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)ou [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) podem retornar **a removeContentHeaderAction** se o header for removido como resultado da atualização ou remoção do rótulo. A ação instrui o aplicativo de consumo a remover o elemento de interface do usuário específico que contém o header de conteúdo anteriormente aplicável.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade       | Tipo              | Descrição                                                |
 | :------------- | :---------------- | :--------------------------------------------------------- |
-| uiElementnames | Coleção de cadeias de caracteres | O nome do elemento de interface do usuário do cabeçalho a ser removido. |
+| uiElementNames | Coleção de cadeias de caracteres | O nome do elemento de interface do usuário do header a ser removido. |
 
 ## <a name="json-representation"></a>Representação JSON
 

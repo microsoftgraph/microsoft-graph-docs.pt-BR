@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 5ff1e4a5915487837ab7db25d2acefa3fafb4ad5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b1210ab3493910f251379185beb5d478cfb72716
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448874"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962011"
 ---
 # <a name="administrativeunit-resource-type"></a>Tipo de recurso administrativeUnit
 
@@ -29,9 +29,9 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 | Método   | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 |[Criar](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Crie uma nova unidade administrativa.|
-|[List](../api/administrativeunit-list.md) | [Coleção administrativeUnit](administrativeunit.md) |Listar propriedades de todas as administrativeUnits.|
+|[Lista](../api/administrativeunit-list.md) | [Coleção administrativeUnit](administrativeunit.md) |Listar propriedades de todas as administrativeUnits.|
 |[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Ler propriedades e relações de um objeto administrativeUnit específico.|
-|[Atualizar](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Atualizar o objeto administrativeUnit. |
+|[Atualização](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Atualizar o objeto administrativeUnit. |
 |[Delete](../api/administrativeunit-delete.md) | Nenhum |Excluir objeto administrativeUnit. |
 |[Adicionar um membro](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Adicionar um membro (usuário ou grupo).|
 |[Listar membros](../api/administrativeunit-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obter a lista de membros (usuário e grupo).|
@@ -46,14 +46,15 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Uma descrição opcional para a unidade administrativa.|
-|displayName|string|Nome de exibição da unidade administrativa.|
-|id|string|Identificador exclusivo da unidade administrativa. Somente leitura.|
-|visibilidade|string|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como `HiddenMembership` ou `Public` . Se não for definido, o comportamento padrão será Público. Quando definido como HiddenMembership, somente membros da unidade administrativa podem listar outros membros da unidade administrativa.|
+|displayName|cadeia de caracteres|Nome de exibição da unidade administrativa.|
+|id|cadeia de caracteres|Identificador exclusivo da unidade administrativa. Somente leitura.|
+|visibilidade|string|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como `HiddenMembership` ou `Public` . Se não estiver definido, o comportamento padrão será `Public` . Quando definido como `HiddenMembership` , somente membros da unidade administrativa podem listar outros membros da unidade administrativa.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|membros|Coleção [directoryObject](directoryobject.md)|Usuários e grupos que são membros desta Unidade Adminsitrative. Métodos HTTP: GET (membros da lista), POST (adicionar membros), DELETE (remover membros).|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para esta Unidade Administrativa. Anulável.|
+|members|Coleção [directoryObject](directoryobject.md)|Usuários e grupos que são membros desta Unidade Adminsitrative. Métodos HTTP: GET (membros da lista), POST (adicionar membros), DELETE (remover membros).|
 |scopedRoleMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros de função de escopo desta Unidade Administrativa.  Métodos HTTP: GET (list scopedRoleMemberships), POST (adicionar scopedRoleMembership), DELETE (remover scopedRoleMembership). |
 
 ## <a name="json-representation"></a>Representação JSON

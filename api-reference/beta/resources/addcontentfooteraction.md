@@ -1,36 +1,36 @@
 ---
-title: tipo de recurso addContentFooterAction
-description: Representa uma ação que especifica os detalhes no rodapé de conteúdo a ser adicionado às informações, se aplicável.
+title: Tipo de recurso addContentFooterAction
+description: Representa uma ação que especifica os detalhes no rodapé de conteúdo a serem adicionados às informações, se aplicável.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 5b4e9edf4007d7bc5d4028e4f9202e09647ca863
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20debce7dc408bd10d4f62b905efa55156d4d4ca
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024511"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962131"
 ---
-# <a name="addcontentfooteraction-resource-type"></a>tipo de recurso addContentFooterAction
+# <a name="addcontentfooteraction-resource-type"></a>Tipo de recurso addContentFooterAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma ação que especifica os detalhes no rodapé de conteúdo a ser adicionado às informações, se aplicável.
+Representa uma ação que especifica os detalhes no rodapé de conteúdo a serem adicionados às informações, se aplicável.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo   | Descrição                                                   |
 | :------------ | :----- | :------------------------------------------------------------ |
-| Alinhamento     | String | Os valores possíveis são: `left`, `right`, `center`.               |
-| fontColor     | String | Cor da fonte a ser usada para o rodapé.                      |
-| fontName      | String | Nome da fonte a ser usada para o rodapé.                       |
+| Alinhamento     | Cadeia de caracteres | Os valores possíveis são: `left`, `right`, `center`.               |
+| fontColor     | Cadeia de caracteres | Cor da fonte a ser usada para o rodapé.                      |
+| fontName      | Cadeia de caracteres | Nome da fonte a ser usada para o rodapé.                       |
 | fontSize      | Int32  | Tamanho da fonte a ser usado para o rodapé.                              |
-| margin        | Int32  | A margem do cabeçalho na parte inferior do documento.     |
-| texto          | String | O conteúdo do rodapé propriamente dito.                            |
-| uiElementname | String | O nome do elemento de interface do usuário onde o rodapé deve ser colocado. |
+| margin        | Int32  | A margem do header na parte inferior do documento.     |
+| texto          | Cadeia de caracteres | O conteúdo do rodapé em si.                            |
+| uiElementName | Cadeia de caracteres | O nome do elemento da interface do usuário onde o rodapé deve ser colocado. |
 
 ## <a name="json-representation"></a>Representação JSON
 

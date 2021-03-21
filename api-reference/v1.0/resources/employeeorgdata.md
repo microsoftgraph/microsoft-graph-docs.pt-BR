@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso employeeOrgData
+title: Tipo de recurso employeeOrgData
 description: Representa os dados da organização associados a um usuário.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: users
 author: cmmdesai
-ms.openlocfilehash: 841d3c7965309721d662475f2cba553c378c49ee
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 5e3ea0401730ffc8b15cae8c371d9352995c6f28
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635604"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961990"
 ---
-# <a name="employeeorgdata-resource-type"></a>tipo de recurso employeeOrgData
+# <a name="employeeorgdata-resource-type"></a>Tipo de recurso employeeOrgData
 
 Namespace: microsoft.graph
 
-Representa os dados da organização associados a um usuário. A propriedade **employeeOrgData** da entidade [User](user.md) é uma coleção de atributos de organização.
+Representa os dados da organização associados a um usuário. A **propriedade employeeOrgData** da entidade [user](user.md) é uma coleção de atributos da organização.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-| Division | String | O nome da divisão na qual o usuário trabalha. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
-| costCenter | String | O centro de custos associado ao usuário. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
+| division | Cadeia de caracteres | O nome da divisão na qual o usuário trabalha. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
+| costCenter | Cadeia de caracteres | O centro de custos associado ao usuário. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
 
 ## <a name="json-representation"></a>Representação JSON
 

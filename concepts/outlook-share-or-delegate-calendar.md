@@ -4,12 +4,12 @@ description: No Outlook, um proprietário de calendário pode compartilhá-lo co
 author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f04b1138fe8967a682ba890a5947c4e861c47717
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8bf08b8d32a53e5b309b2048060a8c64d1cb1ce7
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474936"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962445"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>Compartilhar ou delegar um calendário no Outlook
 
@@ -80,7 +80,8 @@ Este exemplo mostra com o consentimento de Alex ou administrador, como obter os 
   - **a função** é`freeBusyRead`, a configuração padrão para "My Organization".
   - **emailAddress** especifica a subpropriedade **name** como "My Organization"; o **endereço** de "My Organization" é nulo.
 
-#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+**Permissões do Microsoft Graph**
+
 Use a permissão delegada ou de aplicativo com menos privilégios, `Calendars.Read`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -167,7 +168,8 @@ Com exceção da propriedade **função**, você não pode atualizar outras prop
 
 O exemplo nesta seção atualiza a propriedade **função**, alterando a permissão de um sharee existente, Adele, de `read` para `write` para o calendário personalizado "Festas infantis".
 
-#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+**Permissões do Microsoft Graph**
+
 Use a permissão delegada ou de aplicativo com menos privilégios, `Calendars.ReadWrite`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -252,7 +254,8 @@ Observe as seguintes propriedades de Alex:
 - **isSharedWithMe** é sempre falso para o proprietário do calendário.
 - **owner** mostra Alex como proprietário.
 
-#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+**Permissões do Microsoft Graph**
+
 Use a permissão delegada ou de aplicativo com menos privilégios, `Calendars.Read`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -332,7 +335,8 @@ Observe as seguintes propriedades:
 > [!NOTE] 
 > Um compartilhamento ou representante só pode personalizar a propriedade **nome** de um calendário compartilhado/delegado. A atualização é visível apenas para eles mesmos; o proprietário do calendário não vê essas alterações no nome do calendário.
 
-#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+**Permissões do Microsoft Graph**
+
 Use a permissão delegada com menos privilégios, `Calendars.Read.Shared`, ou permissão de aplicativo, `Calendars.Read`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -422,7 +426,8 @@ Essa é uma configuração para toda a caixa de correio; portanto, a mesma confi
 
 O exemplo nesta seção obtém as **mailboxSettings** de um proprietário de calendário que permite que o Outlook direcione solicitações e respostas de reunião apenas para delegados de calendário; ou seja, **delegateMeetingMessageDeliveryOptions** é definido como `sendToDelegateOnly`.
 
-#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+**Permissões do Microsoft Graph**
+
 Use a permissão delegada ou de aplicativo com menos privilégios, `MailboxSettings.Read`, conforme apropriado, para esta operação. Para obter mais informações sobre permissões de caixa de correio, confira [permissões de email](permissions-reference.md#mail-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -505,7 +510,8 @@ Content-type: application/json
 
 O exemplo nesta seção atualiza a propriedade **delegateMeetingMessageDeliveryOptions** para `sendToDelegateAndPrincipal`, para que o Outlook direcione solicitações de reunião e respostas do calendário delegado para todos os delegados e o proprietário.
 
-#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+**Permissões do Microsoft Graph**
+
 Use a permissão delegada ou de aplicativo com menos privilégios, `MailboxSettings.ReadWrite`, conforme apropriado, para esta operação. Para obter mais informações sobre permissões de caixa de correio, confira [permissões de email](permissions-reference.md#mail-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -558,7 +564,8 @@ Content-type: application/json
 
 No exemplo abaixo, Alex exclui Sara como um sharee do calendário "Festas infantis".
 
-#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+**Permissões do Microsoft Graph**
+
 Use a permissão delegada ou de aplicativo com menos privilégios, `Calendars.ReadWrite`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)

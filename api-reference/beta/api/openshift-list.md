@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bc10a41d05a09c8076a52861e24eea0d0b9edec0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0b297a9f1a995dbe3424596dd1fa15f310010631
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968747"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962347"
 ---
 # <a name="list-openshift"></a>Listar openShift
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar objetos [openshift](../resources/openshift.md) em uma equipe.
+Listar [objetos openshift](../resources/openshift.md) em uma equipe.
 
 ## <a name="permissions"></a>Permissões
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e todos os objetos [openShift](../resources/openshift.md) na equipe no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e todos os objetos [openShift](../resources/openshift.md) na equipe no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -65,26 +65,26 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_openshift"
+  "name": "get_openshift_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-openshift-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-openshift-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-openshift-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-openshift-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-openshift-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-openshift-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-openshift-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-openshift-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,18 +5,16 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: b5d675b8780e7fd7389d8c929d16fcb6756059eb
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 52162b23bbd56544be8bee48fbea1cfa00891e7a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883169"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962389"
 ---
 # <a name="create-update-and-delete-connections-in-the-microsoft-graph"></a>Criar, atualizar e excluir conexões no Microsoft Graph
 
 As conexões de serviços externos com o serviço da Pesquisa da Microsoft são representadas pelo recurso [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) no Microsoft Graph.
-
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 A plataforma de conectores do Microsoft Graph oferece uma maneira simples de adicionar seus dados externos ao Microsoft Graph. Uma conexão é um contêiner lógico de dados externos que um administrador pode gerenciar como uma única unidade.
 

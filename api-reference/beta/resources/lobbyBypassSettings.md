@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso lobbyBypassSettings
+title: Tipo de recurso lobbyBypassSettings
 description: Especifica quais participantes podem ignorar o lobby da reunião.
-author: frankpeng7
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3723f6593547b75c60a82b8436995c931d64e436
-ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
+ms.openlocfilehash: fbf6aada6f4a748a615f660e4a3ec62322116bdc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47423678"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962095"
 ---
-# <a name="lobbybypasssettings-resource-type"></a>tipo de recurso lobbyBypassSettings
+# <a name="lobbybypasssettings-resource-type"></a>Tipo de recurso lobbyBypassSettings
 
 Namespace: microsoft.graph
 
@@ -24,18 +24,18 @@ Especifica quais participantes podem ignorar o lobby da reunião.
 
 | Propriedade              | Tipo    | Descrição                                                         | 
 | --------------------- | ------- | ------------------------------------------------------------------- | 
-| scope                 | lobbyBypassScope  | Especifica o tipo de participantes que são automaticamente admitidos em uma reunião, ignorando o lobby. Os valores possíveis estão listados na tabela a seguir. Opcional.|
-| isDialInBypassEnabled | Boolean | Especifica se você deseja ou não permitir que chamadores de discagem ignorem o lobby. Opcional. | 
+| scope                 | [lobbyBypassScope](#lobbybypassscope-values)  | Especifica o tipo de participantes que são automaticamente admitidos em uma reunião, ignorando o lobby. Os valores possíveis são listados na tabela a seguir. Opcional.|
+| isDialInBypassEnabled | Booliano | Especifica se os chamadores de discagem sempre podem ou não ignorar o lobby. Opcional. | 
 
-### <a name="lobbybypassscope-values"></a>valores de lobbyBypassScope
+### <a name="lobbybypassscope-values"></a>valores lobbyBypassScope
 
 | Valor                    | Descrição                                                                                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| organizer                | Somente o organizador é admitido na reunião, ignorando o lobby. Todos os outros participantes são colocados na sala de reunião.                                                                                                         |
-| organization             | Somente os participantes da mesma empresa são admitidos na reunião, ignorando o lobby. Todos os outros participantes são colocados na sala de reunião.                                                                              |
-| organizationAndFederated | Somente os participantes da mesma empresa ou organização confiável são admitidos na reunião, ignorando o lobby. Todos os outros participantes são colocados na sala de reunião. |
-| têm                 | Todos são admitidos na reunião. Nenhum participante é colocado na sala de reunião.                                                                                                                   |
-| unknownFutureValue       | Valor de futuro desconhecido.                                                                                                                                     |
+| organizer                | Somente o organizador é admitido na reunião, ignorando o lobby. Todos os outros participantes são colocados no lobby da reunião.                                                                                                         |
+| organization             | Somente os participantes da mesma empresa são admitidos na reunião, ignorando o lobby. Todos os outros participantes são colocados no lobby da reunião.                                                                              |
+| organizationAndFederated | Somente os participantes da mesma empresa ou organização confiável são admitidos na reunião, ignorando o lobby. Todos os outros participantes são colocados no lobby da reunião. |
+| everyone                 | Todos são admitidos na reunião. Nenhum participante é colocado no lobby da reunião.                                                                                                                   |
+| unknownFutureValue       | Valor futuro desconhecido.                                                                                                                                     |
 
 ## <a name="json-representation"></a>Representação JSON
 

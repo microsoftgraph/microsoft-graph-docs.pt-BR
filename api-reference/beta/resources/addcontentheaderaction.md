@@ -1,36 +1,36 @@
 ---
-title: tipo de recurso addContentHeaderAction
-description: Representa uma ação que especifica os detalhes sobre o cabeçalho de conteúdo a ser adicionado às informações, se aplicável.
+title: Tipo de recurso addContentHeaderAction
+description: Representa uma ação que especifica os detalhes do header de conteúdo a serem adicionados às informações, se aplicável.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7e7a5675cdf150f03b283f664e248319d49c820d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 65754bffc034611fd319403cd81d931addfea9f0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024512"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962130"
 ---
-# <a name="addcontentheaderaction-resource-type"></a>tipo de recurso addContentHeaderAction
+# <a name="addcontentheaderaction-resource-type"></a>Tipo de recurso addContentHeaderAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma ação que especifica os detalhes sobre o cabeçalho de conteúdo a ser adicionado às informações, se aplicável.
+Representa uma ação que especifica os detalhes do header de conteúdo a serem adicionados às informações, se aplicável.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo   | Descrição                                                   |
 | :------------ | :----- | :------------------------------------------------------------ |
-| Alinhamento     | String | Os valores possíveis são: `left`, `right`, `center`.               |
-| fontColor     | String | Cor da fonte a ser usada para o cabeçalho.                      |
-| fontName      | String | Nome da fonte a ser usada para o cabeçalho.                       |
-| fontSize      | Int32  | Tamanho da fonte a ser usado para o cabeçalho.                              |
-| margin        | Int32  | A margem do cabeçalho na parte superior do documento.        |
-| texto          | String | O conteúdo do próprio cabeçalho.                            |
-| uiElementname | String | O nome do elemento de interface do usuário onde o cabeçalho deve ser colocado. |
+| Alinhamento     | Cadeia de caracteres | Os valores possíveis são: `left`, `right`, `center`.               |
+| fontColor     | Cadeia de caracteres | Cor da fonte a ser usada para o header.                      |
+| fontName      | Cadeia de caracteres | Nome da fonte a ser usada para o header.                       |
+| fontSize      | Int32  | Tamanho da fonte a ser usado para o header.                              |
+| margin        | Int32  | A margem do header na parte superior do documento.        |
+| texto          | Cadeia de caracteres | O conteúdo do próprio header.                            |
+| uiElementName | Cadeia de caracteres | O nome do elemento da interface do usuário onde o header deve ser colocado. |
 
 ## <a name="json-representation"></a>Representação JSON
 

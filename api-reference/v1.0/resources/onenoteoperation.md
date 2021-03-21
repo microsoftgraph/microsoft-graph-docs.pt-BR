@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso onenoteOperation
-description: O status de determinadas operações demoradas do OneNote.
+title: Tipo de recurso do onenoteOperation
+description: O status de determinadas operações do OneNote de longa duração.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 6c2778dc08867acba2e458a041dc11aae65c0a9b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 146cfec00c630fc0abde326a57374549d7b2d378
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079008"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961948"
 ---
-# <a name="onenoteoperation-resource-type"></a>tipo de recurso onenoteOperation
+# <a name="onenoteoperation-resource-type"></a>Tipo de recurso do onenoteOperation
 
 Namespace: microsoft.graph
 
-O status de determinadas operações demoradas do OneNote.
+O status de determinadas operações do OneNote de longa duração.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -47,12 +47,12 @@ Veja a seguir uma representação JSON do recurso.
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |A hora de início da operação.|
 |erro|[onenoteOperationError](onenoteoperationerror.md)|O erro retornado pela operação.|
-|id|string|A ID da operação. somente leitura.|
+|id|cadeia de caracteres|A id da operação. Somente leitura.|
 |lastActionDateTime| DateTimeOffset |A hora da última ação da operação.|
-|resourceId|string|A ID do recurso.|
-|resourceLocation|string|O URI do recurso para o objeto. Por exemplo, o URI do recurso para uma página ou seção copiada. |
-|status|cadeia de caracteres|O status atual da operação: `notstarted` , `running` , `completed` , `failed` |
-|percentComplete|string|A porcentagem concluída da operação se a operação ainda estiver em `running` status
+|resourceId|cadeia de caracteres|A ID do recurso.|
+|resourceLocation|cadeia de caracteres|O URI do recurso do objeto. Por exemplo, o URI de recurso para uma página ou seção copiada. |
+|status|operationStatus|O status atual da operação: `NotStarted` , `Running` , , `Completed` `Failed` . |
+|percentComplete|cadeia de caracteres|A porcentagem de operação será concluída se a operação ainda estiver em `running` status.|
 
 ## <a name="relationships"></a>Relações
 Nenhuma
@@ -62,7 +62,7 @@ Nenhuma
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Operação get](../api/onenoteoperation-get.md) | [onenoteOperation](onenoteoperation.md) |Obter o status da operação. |
+|[Obter operação](../api/onenoteoperation-get.md) | [onenoteOperation](onenoteoperation.md) |Obter o status da operação. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

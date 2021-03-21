@@ -1,35 +1,35 @@
 ---
-title: tipo de recurso addwatermarkaction
-description: Representa uma ação que especifica os detalhes sobre a marca d' água de conteúdo a ser adicionado às informações, se aplicável.
+title: Tipo de recurso addWatermarkAction
+description: Representa uma ação que especifica os detalhes sobre a marca d'água do conteúdo a ser adicionado às informações, se aplicável.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 884553ce1181fd3d79fe0e953fe7703b386698b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db493c57d6de7c840e5f0606743392698cb475b6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024427"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962123"
 ---
-# <a name="addwatermarkaction-resource-type"></a>tipo de recurso addwatermarkaction
+# <a name="addwatermarkaction-resource-type"></a>Tipo de recurso addWatermarkAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma ação que especifica os detalhes sobre a marca d' água de conteúdo a ser adicionado às informações, se aplicável.
+Representa uma ação que especifica os detalhes sobre a marca d'água do conteúdo a ser adicionado às informações, se aplicável.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo   | Descrição                                                      |
 | :------------ | :----- | :--------------------------------------------------------------- |
-| fontColor     | String | Cor da fonte a ser usada para a marca d' água.                      |
-| fontName      | String | Nome da fonte a ser usada para a marca d' água.                       |
-| fontSize      | Int32  | Tamanho da fonte a ser usado para a marca d' água.                              |
-| teclado        | String | Os valores possíveis são: `horizontal` e `diagonal`.                   |
-| texto          | String | O conteúdo da própria marca d' água.                            |
-| uiElementname | String | O nome do elemento de interface do usuário onde a marca d' água deve ser colocada. |
+| fontColor     | Cadeia de caracteres | Cor da fonte a ser usada para a marca d'água.                      |
+| fontName      | Cadeia de caracteres | Nome da fonte a ser usada para a marca d'água.                       |
+| fontSize      | Int32  | Tamanho da fonte a ser usado para a marca d'água.                              |
+| layout        | String | Os valores possíveis são: `horizontal` e `diagonal`.                   |
+| texto          | Cadeia de caracteres | O conteúdo da marca d'água em si.                            |
+| uiElementName | Cadeia de caracteres | O nome do elemento da interface do usuário onde a marca d'água deve ser colocada. |
 
 ## <a name="json-representation"></a>Representação JSON
 

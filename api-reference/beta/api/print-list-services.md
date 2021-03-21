@@ -1,33 +1,33 @@
 ---
-title: Listar serviços de reserviço
-description: Recupere uma lista de objetos de reserviço que representam os serviços disponíveis para seu locatário.
+title: Listar printServices
+description: Recupere uma lista de objetos printService que representam os serviços disponíveis para seu locatário.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b72a2e2a59cfc718832a9082428878c0258d3321
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d32cd0467db0106ef8d923275b7624ec4bd0dead
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967053"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962278"
 ---
-# <a name="list-printservices"></a>Listar serviços de reserviço
+# <a name="list-printservices"></a>Listar printServices
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos de [reserviço](../resources/printservice.md) que representam os **Serviços** disponíveis para seu locatário.
+Recupere uma lista de [objetos printService](../resources/printservice.md) que representam os **serviços** disponíveis para seu locatário.
 
 ## <a name="permissions"></a>Permissões
-Nenhuma permissão é necessária para chamar essa API, mas para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa.
+Nenhuma permissão é necessária para chamar essa API, mas para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Nenhum.|
+|Delegado (conta corporativa ou de estudante)|Nenhum|
 |Delegado (conta pessoal da Microsoft)|Nenhum.|
-|Aplicativo|Nenhum.|
+|Aplicativo|Nenhum|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos de [reserviço](../resources/printservice.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos printService](../resources/printservice.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -54,25 +54,25 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_services"
+  "name": "get_services_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/services
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-services-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-services-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-services-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-services-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-services-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-services-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-services-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-services-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

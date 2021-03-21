@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a19132396f88797735801ee782c3c13e12a5e2ca
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 6e840c47ed5170f95929d686fe9ff94be54ea1ad
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161121"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962109"
 ---
 # <a name="relyingpartydetailedsummary-resource-type"></a>Tipo de recurso relyingPartyDetailedSummary
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma parte de confiança configurada com os Serviços de Federação do Active Directory (AD FS), seu uso agregado e se a configuração de terceiros de confiança pode ser migrada para o Azure Active Directory.
+Representa uma parte de confiança configurada com os Serviços de Federação do Active Directory (AD FS), seu uso agregado e se a configuração de parte de base pode ser migrada para o Azure Active Directory.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [List](../api/relyingpartydetailedsummary-list.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | Recupere uma lista de **objetos relyingPartyDetailedSummary.** |
+| [List](../api/relyingpartydetailedsummary-list.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | Recupere uma lista **de objetos relyingPartyDetailedSummary.** |
 
 
 ## <a name="properties"></a>Propriedades
@@ -32,16 +32,16 @@ Representa uma parte de confiança configurada com os Serviços de Federação d
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String| Somente leitura. Identificador exclusivo gerado no nível da API.| 
-|relyingPartyId|String|Esse identificador é usado para identificar a parte de confiança para este Serviço de Federação. Ele é usado ao emissão de declarações para a parte de confiança.|
-|serviceId|String|Identifica exclusivamente a floresta do Active Directory.|
-|migrationStatus|string| Indicação se o aplicativo pode ser movido para o Azure AD ou exigir mais investigação. Os valores possíveis são: `ready`, `needsReview`, `additionalStepsRequired`.|
-|migrationValidationDetails|Coleção [keyValuePair](keyvaluepair.md)|Especifica todas as validações feitas nos detalhes de configuração de aplicativos para avaliar se o aplicativo está pronto para ser movido para o Azure AD. Os nomes possíveis `AdditionalWSFedEndpointCheckResult` são:  `AllowedAuthenticationClassReferencesCheckResult` , , , , , , , , , `AlwaysRequireAuthenticationCheckResult` , ,   `AutoUpdateEnabledCheckResult` , , , `ClaimsProviderNameCheckResult` `EncryptClaimsCheckResult`  `EncryptedNameIdRequiredCheckResult` , `MonitoringEnabledCheckResult` `NotBeforeSkewCheckResult`  `RequestMFAFromClaimsProvidersCheckResult` `SignedSamlRequestsRequiredCheckResult` `AdditionalAuthenticationRulesCheckResult` `TokenLifetimeCheckResult`  `DelegationAuthorizationRulesCheckResult` `IssuanceAuthorizationRulesCheckResult` `IssuanceTransformRulesCheckResult` . Os valores de resultado possíveis `0` `1` são , ou `2` . `0` quando a verificação de validação passou, `1` quando a verificação de validação falhou e quando a verificação de `2` validação é um aviso. |
-|relyingPartyName|String|Nome do aplicativo ou outra entidade na Internet que usa um provedor de identidade para autenticar um usuário que deseja fazer logoff.|
-|failedSignInCount|Int64| Número de falhas ao entrar no Serviço de Federação do Active Directory no período especificado. |
-|replyUrls|String collection|Especifica onde a confiança espera receber o token.|
-|signInSuccessRate|Duplo|Número de êxito /(número de êxito + número de falhas de logins) no Serviço de Federação do Active Directory no período especificado.|
+|relyingPartyId|Cadeia de caracteres|Esse identificador é usado para identificar a parte de base para este Serviço de Federação. Ele é usado ao emissão de declarações à parte de base.|
+|serviceId|Cadeia de caracteres|Identifica exclusivamente a floresta do Active Directory.|
+|migrationStatus|migrationStatus| Indicação de se o aplicativo pode ser movido para o Azure AD ou exigir mais investigação. Os valores possíveis são: `ready`, `needsReview`, `additionalStepsRequired`, `unknownFutureValue`.|
+|migrationValidationDetails|Coleção [keyValuePair](keyvaluepair.md)|Especifica todas as validações feitas em detalhes de configuração de aplicativos para avaliar se o aplicativo está pronto para ser movido para o Azure AD.|
+|relyingPartyName|Cadeia de caracteres|Nome do aplicativo ou outra entidade na Internet que usa um provedor de identidade para autenticar um usuário que deseja fazer logoff.|
+|failedSignInCount|Int64| Número de falha ao entrar no Serviço de Federação do Active Directory no período especificado. |
+|replyUrls|String collection|Especifica onde a parte de confiança espera receber o token.|
+|signInSuccessRate|Duplo|Número de êxito / (número de bem-sucedido + número de falhas de login) no Serviço de Federação do Active Directory no período especificado.|
 |successfulSignInCount|Int64|Número de logins bem-sucedidos no Serviço de Federação do Active Directory.|
-|totalSignInCount|Int64|Número de tentativas bem-sucedidas + falhas de logins no Serviço de Federação do Active Directory no período especificado.|
+|totalSignInCount|Int64|Número de logins bem-sucedidos + com falha ao entrar no Serviço de Federação do Active Directory no período especificado.|
 |uniqueUserCount|Int64|Número de usuários exclusivos que entraram no aplicativo.|
 
 ## <a name="relationships"></a>Relações

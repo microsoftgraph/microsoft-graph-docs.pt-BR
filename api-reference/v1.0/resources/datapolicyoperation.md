@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 18294905754cd962ec1c18136b61ca20799eee3d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f7b07cb2906eb1a3d01d6c24ca5b91fec35ec7c8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50718440"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961997"
 ---
 # <a name="datapolicyoperation-resource-type"></a>Tipo de recurso dataPolicyOperation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa uma operação de política de dados enviada. Ele contém informações necessárias para controlar o status de uma operação. Por exemplo, um administrador da empresa pode enviar uma solicitação de operação de política de dados para exportar dados da empresa de um funcionário e, em seguida, rastrear essa solicitação.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -33,7 +33,7 @@ Representa uma operação de política de dados enviada. Ele contém informaçõ
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Representa quando a solicitação para essa operação de política de dados foi concluída, em tempo UTC, usando o formato ISO 8601. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Nulo até que a operação seja concluída.|
 |id|Cadeia de caracteres| Chave exclusiva para essa operação. |
-|status|cadeia de caracteres| Os valores possíveis são: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
+|status|dataPolicyOperationStatus| Os valores possíveis são: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |storageLocation|Cadeia de caracteres|O local da URL para onde os dados estão sendo exportados para solicitações de exportação.|
 |userId|Cadeia de caracteres|A id do usuário no qual a operação é executada.|
 |submittedDateTime|DateTimeOffset|Representa quando a solicitação para essa operação de dados foi enviada, em tempo UTC, usando o formato ISO 8601. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|

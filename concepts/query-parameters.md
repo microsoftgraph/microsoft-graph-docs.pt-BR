@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0f50886cb9fffe1dee51be3a751bda5936011cb7
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 51bf43360c3580011ab39e2c385b4c23d3bfc5a1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176630"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962410"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -235,7 +235,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 >- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
 >- [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)
 >
-> Para usar o `$orderby` e o `$filter` em conjunto, você precisa:
+> Para usar `$orderby` e `$filter` junto ou `$filter` com `endsWith` você precisa:
 >
 > - Adicionar `$count=true` aos parâmetros de consulta
 > - Adicionar `ConsistencyLevel: eventual` ao cabeçalho de solicitação

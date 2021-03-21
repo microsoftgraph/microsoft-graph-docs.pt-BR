@@ -5,18 +5,16 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 4ac64724a676c2da2d39a68d842039bd14138161
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: c2cae0ca25d55fd95a7b26c0175f7e5313d6e532
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883176"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962396"
 ---
 # <a name="create-update-and-delete-items-added-by-your-application-in-the-microsoft-graph-connection"></a>Criar, atualizar e excluir itens adicionados por seu aplicativo na conexão do Microsoft Graph
 
 Os itens adicionados por seu aplicativo ao serviço de Pesquisa da Microsoft são representados pelo recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) no Microsoft Graph.
-
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 Depois de criar uma conexão, você pode adicionar o conteúdo. Cada item da fonte de dados deve ser representado como um [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) no Microsoft Graph com uma ID de item exclusiva. Essa ID é usada para criar, atualizar ou excluir o item do Microsoft Graph. Você pode usar a chave primária da fonte de dados como itemId ou derivá-la de um ou mais campos. Um [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) possui três componentes principais: lista de controle de acesso, propriedades e conteúdo.
 

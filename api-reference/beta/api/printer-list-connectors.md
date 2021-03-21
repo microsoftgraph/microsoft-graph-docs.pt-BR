@@ -1,35 +1,35 @@
 ---
-title: Listar os reconectadores de impressora
+title: Listar printConnectors para impressora
 description: Recupere uma lista de conectores associados à impressora.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 433e7260cc715bde17f1749e9b481b9444aedac1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 97640840c7054037254073f9145e801e0faf0a24
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969691"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961458"
 ---
-# <a name="list-printconnectors-for-printer"></a>Listar os reconectadores de impressora
+# <a name="list-printconnectors-for-printer"></a>Listar printConnectors para impressora
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de **conectores** associados à [impressora](../resources/printer.md).
+Recupere uma lista **de conectores associados** à [impressora](../resources/printer.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Printer. Read. All, Printer. ReadWrite. All, Printer. FullControl. All |
+|Delegado (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Sem suporte. |
+|Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de objetos de [multiconnector](../resources/printconnector.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [printConnector](../resources/printconnector.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -56,25 +56,25 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connectors"
+  "name": "get_connectors_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{id}/connectors
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connectors-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-connectors-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connectors-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-connectors-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connectors-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-connectors-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-connectors-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-connectors-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

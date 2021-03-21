@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 8ded2e79f8a9a2004f2ffa412b6d42e3275556b8
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ce334002b58849671ab2e602594af0c8335b1377
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516091"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961941"
 ---
 # <a name="onlinemeeting-resource-type"></a>Tipo de recurso onlineMeeting
 
@@ -24,7 +24,7 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | :----------------------------------------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------- |
 | [Criar ReuniãoOnline](../api/application-post-onlineMeetings.md)  | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online.                                                                                    |
 | [Obter onlineMeeting](../api/onlinemeeting-get.md)                   | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e as relações de um **objeto onlineMeeting.**                                        |
-| [Update](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Atualize as propriedades de um **objeto onlineMeeting.** |
+| [Atualização](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Atualize as propriedades de um **objeto onlineMeeting.** |
 | [Excluir onlineMeeting](../api/onlinemeeting-delete.md)             | Nenhum                              | Excluir um **objeto onlineMeeting.**                                                                                    |
 | [Criar ou obter OnlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Crie um **objeto onlineMeeting** com uma ID externa personalizada. Se a reunião já existir, recupere suas propriedades. |
 
@@ -32,7 +32,7 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 
 | Propriedade              | Tipo                                          | Descrição                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| allowedPresenters     | onlineMeetingPresenters                       | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis são listados na tabela a seguir.                          |
+| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis são listados na tabela a seguir.                          |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | As informações de acesso por telefone (discagem) para uma reunião online. Apenas leitura.                                                   |
 | chatInfo              | [chatInfo](chatinfo.md)                       | As informações de chat associadas a essa reunião online.                                                                  |
 | creationDateTime      | DateTime                                      | O tempo de criação da reunião em UTC. Somente leitura.                                                                               |
@@ -52,7 +52,7 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | Valor              | Descrição                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | everyone           | Todos são apresentadores (essa é a opção padrão).             |
-| organização       | Todos na organização do organizador são apresentadores.          |
+| organization       | Todos na organização do organizador são apresentadores.          |
 | roleIsPresenter    | Somente os participantes cuja função é apresentador são apresentadores. |
 | organizer          | Somente o organizador é um apresentador.                           |
 | unknownFutureValue | Valor futuro desconhecido.                                          |

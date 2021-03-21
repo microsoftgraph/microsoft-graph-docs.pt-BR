@@ -5,18 +5,17 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 2d354a26d2d756ceddac9da0f00a271c595f9fdb
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3242d1a1451946429a24902467d8ca05fe2f1c2e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472794"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962382"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Visão geral da API da Pesquisa da Microsoft no Microsoft Graph
 
 A Pesquisa da Microsoft é um mecanismo de pesquisa empresarial que proporciona ganhos de produtividade e resultados de pesquisa relevantes para sua organização. Ela reúne o conhecimento coletivo e a produtividade de uma organização, e apresenta um conteúdo relevante para manter os usuários finais atualizados. A Pesquisa da Microsoft está disponível em várias experiências, inclusive no Office, SharePoint, Delve, Windows e Bing. Você pode usar a API de pesquisa da Microsoft no Microsoft Graph para estender a pesquisa da Microsoft para seus aplicativos.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 <!-- markdownlint-disable MD026 -->
 ## <a name="why-use-the-microsoft-search-api"></a>Por que usar a API de Pesquisa da Microsoft?
