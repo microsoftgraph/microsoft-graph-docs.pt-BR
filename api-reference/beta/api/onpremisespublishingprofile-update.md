@@ -1,16 +1,16 @@
 ---
 title: Atualizar onPremisesPublishingProfile
-description: Atualizar as propriedades de um objeto onPremisesPublishingProfile.
+description: Atualize as propriedades de um objeto onPremisesPublishingProfile.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e1200e66da53b564e21396bbf347959a3223fd3a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8749ba414fc675fbdba4bed13a858b7d6512347d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132787"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50963195"
 ---
 # <a name="update-onpremisespublishingprofile"></a>Atualizar onPremisesPublishingProfile
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [objeto onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
+Atualize as propriedades de um [objeto onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,7 +46,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece os valores dos campos relevantes a atualizar. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores dos campos relevantes a ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -58,9 +58,9 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a>Exemplo 1: Atualizar UpdateWindow no hybridAgentUpdaterConfiguration
+### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a>Exemplo 1: atualizar updateWindow no hybridAgentUpdaterConfiguration
 
-O exemplo a seguir atualiza **a updateWindow** no **hybridAgentUpdaterConfiguration**.
+O exemplo a seguir atualiza **o updateWindow** no **hybridAgentUpdaterConfiguration**.
 
 #### <a name="request"></a>Solicitação
 
@@ -69,7 +69,7 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_onpremisespublishingprofile"
+  "name": "update_onpremisespublishingprofile_1"
 }-->
 
 ```http
@@ -85,19 +85,19 @@ Content-Type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-onpremisespublishingprofile-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-onpremisespublishingprofile-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-onpremisespublishingprofile-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-onpremisespublishingprofile-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-onpremisespublishingprofile-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-onpremisespublishingprofile-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -115,16 +115,18 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a>Exemplo 2: Atualizar deferUpdate no hybridAgentUpdaterConfiguration 
+### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a>Exemplo 2: Atualizar adiamentoUpdate no hybridAgentUpdaterConfiguration 
 
-O exemplo a seguir **atualiza deferUpdate** no **hybridAgentUpdaterConfiguration**.
+O exemplo a seguir atualiza **deferUpdate** no **hybridAgentUpdaterConfiguration**.
 
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_onpremisespublishingprofile"
+  "name": "update_onpremisespublishingprofile_2"
 }-->
 
 ```http
@@ -135,6 +137,16 @@ Content-Type: application/json
     "deferUpdate" : "2018-08-20T12:00"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-onpremisespublishingprofile-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -148,16 +160,18 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a>Exemplo 3: Atualizar allowUpdateConfigurationOverride no hybridAgentUpdaterConfiguration
+### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a>Exemplo 3: Update allowUpdateConfigurationOverride in the hybridAgentUpdaterConfiguration
 
 O exemplo a seguir atualiza **allowUpdateConfigurationOverride** no **hybridAgentUpdaterConfiguration**.
 
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_onpremisespublishingprofile"
+  "name": "update_onpremisespublishingprofile_3"
 }-->
 
 ```http
@@ -168,6 +182,24 @@ Content-Type: application/json
     "allowUpdateConfigurationOverride" : false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-onpremisespublishingprofile-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-onpremisespublishingprofile-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-onpremisespublishingprofile-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

@@ -3,44 +3,34 @@ title: Criar uma guia do Microsoft Teams com o Microsoft Graph Toolkit
 description: Começar a criar uma guia do Microsoft Teams usando o microsoft graph Toolkit.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 757c7eb8a94b0f6936a21f5ecb6f126cde36b6ad
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 915bbe562fec9ef0bcbd5ae6d67d8497ea7e72eb
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721562"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50963271"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>Criar uma guia do Microsoft Teams com o Microsoft Graph Toolkit
 
 Este tópico aborda como começar a usar o microsoft graph Toolkit em uma solução do Microsoft Teams. Começar envolve as seguintes etapas:
 
 1. Crie um novo aplicativo do Teams com uma guia personalizada.
-2. Configurar ngrok e criar um túnel.
-3. Adicione o microsoft graph Toolkit.
-4. Inicializar o provedor do Microsoft Teams.
-5. Crie a página pop-up de auth.
-6. Adicione componentes.
-7. Teste seu aplicativo.
+2. Adicione o microsoft graph Toolkit.
+3. Inicializar o provedor do Microsoft Teams.
+4. Crie a página pop-up de auth.
+5. Adicione componentes.
+6. Teste seu aplicativo.
 
 ## <a name="create-a-new-teams-application-with-a-custom-tab"></a>Criar um novo aplicativo do Teams com uma guia personalizada
 
 A maneira mais fácil de criar um novo aplicativo do Teams é usar a extensão Toolkit [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) para Visual Studio Code. Siga as instruções para [configurar um novo projeto do Teams.](/microsoftteams/platform/toolkit/visual-studio-code-overview#set-up-a-new-teams-project) Quando você chegar à tela **Adicionar recursos,** selecione **Guia** e, em seguida, **guia Pessoal.**
-
-## <a name="set-up-ngrok-and-create-a-tunnel"></a>Configurar ngrok e criar um túnel
-
-Para testar seu aplicativo posteriormente, você precisará hospedar seu aplicativo em uma URL voltada para o público usando HTTPS. Instale [ngrok](https://ngrok.com/download) e crie um túnel da Internet para localhost:3000 com o seguinte comando:
-
-```bash
-ngrok http 3000
-```
-No diretório do projeto, localize o `.publish\Development.env` arquivo e substitua o valor por sua URL `baseUrl0` ngrok.
 
 ## <a name="add-the-microsoft-graph-toolkit"></a>Adicionar o microsoft graph Toolkit
 
 Você pode usar o microsoft graph Toolkit em seu aplicativo fazendo referência ao carregador diretamente (por meio de unpkg) ou instalando o pacote npm. Para usar o Toolkit, você também precisará do [SDK do Microsoft Teams.](/javascript/api/overview/msteams-client?view=msteams-client-js-latest)
 
 ### <a name="use-via-mgt-loader"></a>Usar por meio do mgt-loader
-Para usar o Toolkit e o SDK do Teams por meio dos carregadores, adicione as seguintes referências a `public/index.html` :
+Para usar o Toolkit e o SDK do Teams por meio dos carregadores, adicione as seguintes referências dentro `<head>` do `public/index.html` arquivo:
 
 ```html
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
@@ -62,16 +52,16 @@ Você pode optar por inicializar o provedor em seu HTML ou no código JavaScript
 
 ### <a name="initialize-in-html"></a>Inicializar em HTML
 
-Em `public/index.html` , adicione o provedor do Teams conforme mostrado.
+In `public/index.html` , add the Teams provider into the , as `<body>` shown.
 
 ```html
 <mgt-teams-provider
   client-id="<YOUR_CLIENT_ID>"
-  auth-popup-url="https://<YOUR_NGROK_URL>/auth.html"
+  auth-popup-url="/auth.html"
 ></mgt-teams-provider>
 ```
 
-Substitua `<YOUR_CLIENT_ID>` pela ID do cliente para seu aplicativo e `<YOUR_NGROK_URL>` pela URL de ngrok que você criou.
+Substitua `<YOUR_CLIENT_ID>` pela ID do cliente para seu aplicativo. 
 
 ### <a name="initialize-in-javascript"></a>Inicializar em JavaScript
 
@@ -90,22 +80,33 @@ Providers.globalProvider = new TeamsProvider ({
 Substitua `<YOUR_CLIENT_ID>` pela ID do cliente para seu aplicativo.
 
 ### <a name="creating-an-appclient-id"></a>Criando uma ID de aplicativo/cliente
-Para obter uma ID do cliente, você precisa registrar [seu aplicativo](../../auth-register-app-v2.md) no Azure AD. Certifique-se de adicionar sua URL ngrok com o caminho completo para a página pop-up de autenticação para suas URIs de redirecionamento (por exemplo, `https://<YOUR_NGROK_URL>/auth.html` ).
+
+Para obter uma ID do cliente, você precisa registrar um aplicativo do Azure Active Directory. Siga as etapas no [artigo Criar um aplicativo do Azure Active Directory.](./add-aad-app-registration.md)
+
+Certifique-se de definir o **URI de** redirecionamento no registro do aplicativo para apontar para sua `auth.html` página. Por exemplo, se você estiver executando seu aplicativo `localhost:3000` em , de definir o URI de redirecionamento como `https://localhost:3000/auth.html` .
+
 >**Observação**: O MSAL só dá suporte ao Fluxo Implícito para OAuth. Certifique-se de habilitar o Fluxo Implícito em seu aplicativo no Portal do Azure (ele não está habilitado por padrão). Em **Autenticação**, encontre a seção **Concessão implícita** e selecione as caixas de seleção para **tokens de Acesso** e **tokens de ID**. 
 
 ## <a name="create-the-auth-popup-page"></a>Criar a página pop-up de auth
 
 Para permitir que os usuários entre, você precisa fornecer uma URL que o aplicativo do Teams abrirá em um pop-up para seguir o fluxo de autenticação. A URL precisa estar em seu domínio, e tudo o que essa página precisa fazer é chamar o `TeamsProvider.handleAuth()` método.
 
-Você pode fazer isso em seu HTML adicionando um novo arquivo na pasta (que deve estar no mesmo nível que ) e adicionando `auth.html` `public` o seguinte `index.html` código: 
+Você pode fazer isso adicionando um novo arquivo na pasta (que deve estar no mesmo nível que ) e adicionando `auth.html` `public` o seguinte `index.html` código: 
 
 ```html
-<script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+  </head>
 
-<script>
-  mgt.TeamsProvider.handleAuth();
-</script>
+  <body>
+    <script>
+      mgt.TeamsProvider.handleAuth();
+    </script>
+  </body>
+</html>
 ```
 
 ## <a name="add-components"></a>Adicionar componentes
@@ -150,11 +151,7 @@ npm install
 npm start
 ```
 
-Para testar seu aplicativo, você precisa carregar seu aplicativo no Teams. Abra o cliente do Microsoft Teams, selecione **o ...** no menu à esquerda e vá para **App Studio**. Clique na **guia Editor de Manifesto** e selecione Importar um aplicativo **existente.**
-
-Localize o diretório do projeto e carregue **o arquivoDevelopment.zip** dentro da pasta **.publish.**
-
-Depois que o aplicativo tiver sido carregado, role para baixo no menu esquerdo e selecione **Testar e Distribuir**. Clique no **botão Instalar** e clique em **Adicionar**. Você será redirecionado para a guia criada.
+Para testar seu aplicativo, você pode instalar seu aplicativo no Teams por meio do Teams Toolkit Extension. Abra o Teams Toolkit Extension e **clique em Abrir o Microsoft Teams Toolkit**. Clique **em App Studio** no menu esquerdo, role para baixo e selecione Testar e **Distribuir**, em **seguida, Instalar**. O Teams abrirá no navegador e você será redirecionado para a guia criada. Você deve ser capaz de ver o componente de Logon e usá-lo para entrar no seu aplicativo.
 
 ## <a name="next-steps"></a>Próximas etapas
 - Confira este tutorial passo a passo sobre [como criar uma guia do Teams.](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/)

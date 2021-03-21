@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b09d773a740a82b8424a7699f959ddb38d78e1cf
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d1c573b43587ef5213f876b6532358fe5465f84b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444252"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962637"
 ---
 # <a name="contract-resource-type"></a>Tipo de recurso de contrato
 
@@ -22,7 +22,7 @@ Representa uma parceria existente que o locatário parceiro tem com um locatári
 
 > **Importante:** Existe apenas em locatários parceiros. Os locatários de parceiros são locatários do Azure AD que pertencem aos parceiros da Microsoft que fazem parte do [Microsoft Cloud Solution Provider](https://partnercenter.microsoft.com/en-us/partner/programs), do Office 365 Syndication ou dos programas de parceiros do Microsoft Advisor.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método   | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
@@ -32,11 +32,19 @@ Representa uma parceria existente que o locatário parceiro tem com um locatári
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|contractType|String|Tipo de contrato.<br><br>Os valores possíveis são:<br> *SyndicationPartner* - Parceiro que revende e gerencia exclusivamente o O365 e o Intune para esse cliente. Eles revendem e suportam seus clientes.<br> *BreadthPartner* - O parceiro tem a capacidade de fornecer suporte administrativo para esse cliente. No entanto, o parceiro não tem permissão para revender para o cliente.<br>*ResellerPartner* - Parceiro semelhante a um parceiro de sindicalidade, exceto que o parceiro não tem acesso exclusivo a um locatário. No caso de sindicalização, o cliente não pode comprar assinaturas diretas adicionais da Microsoft ou de outros parceiros.|
+|contractType|Cadeia de caracteres|Tipo de contrato. Os valores possíveis são:  `SyndicationPartner` , `BreadthPartner` , `ResellerPartner` . Veja mais na [tabela abaixo](#contracttype-values). |
 |customerId|Guid|O identificador exclusivo do locatário do cliente referenciado por essa parceria. Corresponde à propriedade id do recurso de organização do locatário do cliente. |
-|defaultDomainName|String|Uma cópia do nome de domínio padrão do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de domínio padrão do locatário do cliente mudar.|
-|displayName|String|Uma cópia do nome de exibição do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de exibição do locatário do cliente mudar.|
-|id|String| O identificador exclusivo da parceria. Chave, somente leitura |
+|defaultDomainName|Cadeia de caracteres|Uma cópia do nome de domínio padrão do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de domínio padrão do locatário do cliente mudar.|
+|displayName|Cadeia de caracteres|Uma cópia do nome de exibição do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não será atualizado automaticamente se o nome de exibição do locatário do cliente mudar.|
+|id|Cadeia de caracteres| O identificador exclusivo da parceria. Chave, somente leitura |
+
+### <a name="contracttype-values"></a>valores contractType
+
+|Member|Descrição|
+|:---|:---|
+|SyndicationPartner|Parceiro que *revende* e gerencia exclusivamente o O365 e o Intune para esse cliente. Eles revendem e suportam seus clientes.|
+|BreadthPartner|O parceiro tem a capacidade de fornecer suporte administrativo para esse cliente. No entanto, o parceiro não tem permissão para revender para o cliente.|
+|ResellerPartner|Parceiro semelhante a um parceiro de sindicalidade, exceto que o parceiro não tem acesso exclusivo a um locatário. No caso de sindicalização, o cliente não pode comprar assinaturas diretas adicionais da Microsoft ou de outros parceiros.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

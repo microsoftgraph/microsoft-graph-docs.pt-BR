@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ff7159c09b0afcaf223a5840584d531e99be2da6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3d448b2d54fbc94c63588712f06492ce7d38a33a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132131"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962494"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>Tipo de recurso conditionalAccessConditionSet
 
@@ -22,13 +22,13 @@ Representa o tipo de condições que regem quando a política se aplica.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Aplicativos e ações do usuário incluídos e excluídos da política. Obrigatório. |
+|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Aplicativos e ações do usuário incluídas e excluídas da política. Obrigatório. |
 |usuários|[conditionalAccessUsers](conditionalaccessusers.md)| Usuários, grupos e funções incluídos e excluídos da política. Obrigatório. |
-|clientAppTypes|String collection| Tipos de aplicativo cliente incluídos na política. Os possíveis valores são: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
+|clientAppTypes|coleção conditionalAccessClientApp| Tipos de aplicativo cliente incluídos na política. Os possíveis valores são: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Obrigatório.|
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locais incluídos e excluídos da política. |
-|platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
-|signInRiskLevels|String collection| Níveis de risco de login incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
-|userRiskLevels|String collection| Níveis de risco do usuário incluídos na política. Os valores possíveis são: `low`, `medium`, `high`.|
+|plataformas|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
+|signInRiskLevels|Coleção riskLevel| Níveis de risco de login incluídos na política. Os possíveis valores são: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Obrigatório.|
+|userRiskLevels|Coleção riskLevel| Níveis de risco de usuário incluídos na política. Os possíveis valores são: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Obrigatório.|
 
 ## <a name="relationships"></a>Relações
 

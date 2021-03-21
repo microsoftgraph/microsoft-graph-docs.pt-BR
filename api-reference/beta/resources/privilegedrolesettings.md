@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: efc04b9b65719cbd5952dffb545d371172ab95eb
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a1f20455ffcc818aa1b1edf784d6990d68b7556b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137631"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962561"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>Tipo de recurso privilegedRoleSettings
 
@@ -25,22 +25,22 @@ Representa as configurações de uma função privilegiada.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Leia as propriedades e os relacionamentos do objeto privilegedRoleSettings.|
+|[Get privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Ler propriedades e relações do objeto privilegedRoleSettings.|
 |[Atualizar privilegedRoleSettings](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Atualize o objeto privilegedRoleSettings.|
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |elevationDuration|duração|A duração quando a função é ativada.|
-|id|string| O identificador exclusivo das configurações de função. Somente leitura.|
-|isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation for configurável. **false** se mfaOnElevation não for configurável.|
-|lastGlobalAdmin|booliano|Somente para uso interno.|
+|id|cadeia de caracteres| O identificador exclusivo para as configurações de função. Somente leitura.|
+|isMfaOnElevationConfigurable|booliano|`true` se **mfaOnElevation** for configurável. `false` se **mfaOnElevation** não for configurável.|
+|lastGlobalAdmin|booliano|Somente uso interno.|
 |maxElavationDuration|duração|Duração máxima da função ativada.|
-|mfaOnElevation|booliano|**true** se a MFA for necessária para ativar a função. **false** se a MFA não for necessária para ativar a função.|
+|mfaOnElevation|booliano|`true` se o MFA for necessário para ativar a função. `false` se o MFA não for necessário para ativar a função.|
 |minElevationDuration|duração|Duração mínima para a função ativada.|
-|notificationToUserOnElevation|booliano|**true** se enviar notificação para o usuário final quando a função for ativada. **false** se não enviar notificação quando a função for ativada.|
-|ticketingInfoOnElevation|booliano|**true** se as informações de tíquetes são necessárias ao ativar a função. **false** se as informações de tíquete não são necessárias ao ativar a função.|
-|approvalOnElevation|booliano|**true** se a aprovação for necessária ao ativar a função. **false** se a aprovação não for necessária ao ativar a função.|
-|approverIds| coleção de cadeias de caracteres |Lista de IDs de aprovação, se for necessária aprovação para ativação.|
+|notificationToUserOnElevation|booliano|`true` se enviar notificação ao usuário final quando a função for ativada. `false` se não enviar notificação quando a função for ativada.|
+|ticketingInfoOnElevation|booliano|`true` se as informações de tíquete são necessárias ao ativar a função. `false` se as informações de tíquete não são necessárias ao ativar a função.|
+|approvalOnElevation|booliano|`true` se a aprovação for necessária ao ativar a função. `false` se a aprovação não for necessária ao ativar a função.|
+|approverIds| coleção de cadeias de caracteres |Lista de IDs de Aprovação, se a aprovação for necessária para ativação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

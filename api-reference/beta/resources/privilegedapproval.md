@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 7d7842b89bce06d582aa827b853e4170b0693ff8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8d092d6c877f9fa2bdce2d645ef56a84508c510d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721604"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962585"
 ---
 # <a name="privilegedapproval-resource-type"></a>Tipo de recurso privilegedApproval
 
@@ -35,7 +35,7 @@ Representa uma aprovação solicitada no Privileged Identity Management para ent
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
-|approvalState|cadeia de caracteres| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalState|approvalState| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
 |approvalType|Cadeia de caracteres||
 |approverReason|Cadeia de caracteres||
 |endDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|

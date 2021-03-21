@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso informationProtectionAction
+title: Tipo de recurso informationProtectionAction
 description: Descreve a entidade abtract informationProtectionAction.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 84526bea53b7261960044515f515a7c210333100
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20b7815ec975aae4765c1d35324d73afab24f8b8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016482"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962606"
 ---
-# <a name="informationprotectionaction-resource-type"></a>tipo de recurso informationProtectionAction
+# <a name="informationprotectionaction-resource-type"></a>Tipo de recurso informationProtectionAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O **informationProtectionAction** é uma entidade abstrata que é retornada como resultado de qualquer uma das APIs de avaliação de proteção de informações. O objeto contém uma ou mais das ações a seguir que orientam o aplicativo sobre como aplicar, atualizar ou remover o rótulo de proteção de informações. 
+A **informationProtectionAction** é uma entidade abstrata retornada como resultado de qualquer uma das APIs de avaliação de proteção de informações. O objeto contém uma ou mais das seguintes ações que instruim o aplicativo sobre como aplicar, atualizar ou remover o rótulo de proteção de informações. 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
-* [addwatermarkaction](../resources/addwatermarkaction.md)
+* [addWatermarkAction](../resources/addwatermarkaction.md)
 * [applyLabelAction](../resources/applylabelaction.md)
-* [Personalizada](../resources/customaction.md)
-* [justifyaction](../resources/justifyaction.md)
-* [metadataaction](../resources/metadataaction.md)
+* [customAction](../resources/customaction.md)
+* [justifyAction](../resources/justifyaction.md)
+* [metadataAction](../resources/metadataaction.md)
 * [protectAdhocAction](../resources/protectadhocaction.md)
 * [protectByTemplateAction](../resources/protectbytemplateaction.md)
 * [protectionDoNotForwardAction](../resources/protectdonotforwardaction.md)

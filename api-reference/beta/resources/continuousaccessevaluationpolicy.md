@@ -5,12 +5,12 @@ author: jerrysai
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 58c4f913c8a5fc3b4f7c1c129c7126437035cbe7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f34fdacf75b991ff339f4b7cdd823290438e8fea
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444260"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962634"
 ---
 # <a name="continuousaccessevaluationpolicy-resource-type"></a>Tipo de recurso continuousAccessEvaluationPolicy
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 A Avaliação de Acesso Contínuo (CAE) gerencia sessões de autenticação em tempo real. A CAE permite que os clientes manipularem o acesso a recursos suportando eventos de revogação instantânea.  Para obter mais informações, consulte a avaliação [de acesso contínuo](/azure/active-directory/fundamentals/concept-fundamentals-continuous-access-evaluation).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter continuousAccessEvaluationPolicy](../api/continuousaccessevaluationpolicy-get.md)|[continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md)|Leia as propriedades de [um objeto continuousAccessEvaluationPolicy.](../resources/continuousaccessevaluationpolicy.md)|
@@ -29,10 +29,10 @@ A Avaliação de Acesso Contínuo (CAE) gerencia sessões de autenticação em t
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|String|A avaliação de acesso contínuo bloqueia automaticamente o acesso a recursos e aplicativos quase em tempo real quando o acesso de um usuário é removido ou um endereço IP do cliente muda. Somente leitura.|
-|displayName|String| O valor é sempre "Avaliação de Acesso Contínuo". Somente leitura.|
+|description|Cadeia de caracteres|A avaliação de acesso contínuo bloqueia automaticamente o acesso a recursos e aplicativos quase em tempo real quando o acesso de um usuário é removido ou um endereço IP do cliente muda. Somente leitura.|
+|displayName|Cadeia de caracteres| O valor é sempre `Continuous Access Evaluation` . Somente leitura.|
 |grupos|Coleção de cadeias de caracteres|A coleção de identificadores de grupo no escopo para avaliação. Todos os grupos estão no escopo quando a coleção está vazia.|
-|id|String|Especifica o identificador de um objeto continuousAccessEvaluationPolicy. Somente leitura.|
+|id|Cadeia de caracteres|Especifica o identificador de um [objeto continuousAccessEvaluationPolicy.](#continuousaccessevaluationpolicy-resource-type) Somente leitura.|
 |isEnabled|Booliano| `true` para indicar se a avaliação de acesso contínuo deve ser realizada; caso `false` contrário. |
 |usuários|Coleção de cadeias de caracteres|A coleção de identificadores de usuário no escopo para avaliação. Todos os usuários estão no escopo quando a coleção está vazia.|
 

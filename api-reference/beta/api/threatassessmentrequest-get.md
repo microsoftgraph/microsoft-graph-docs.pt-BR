@@ -1,16 +1,16 @@
 ---
 title: Get threatAssessmentRequest
-description: Recupere as propriedades e os relacionamentos de um objeto threatassessmentrequest especificado.
+description: Recupere as propriedades e as relações de um objeto threatassessmentrequest especificado.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a93923673f9c7629fbe3d1d0e536501dfbf5bd08
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0c4f179243f8fa14ee59e22a07fbd643f9ccb850
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977846"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962795"
 ---
 # <a name="get-threatassessmentrequest"></a>Get threatAssessmentRequest
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) especificado.
+Recupere as propriedades e as relações de um objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) especificado.
 
-Uma solicitação de avaliação de ameaça pode ser um dos seguintes tipos:
+Uma solicitação de avaliação de ameaças pode ser um dos seguintes tipos:
 
 * [Email](../resources/mailAssessmentRequest.md)
 * [Arquivo de email](../resources/emailFileAssessmentRequest.md)
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | ThreatAssessment.ReadWrite.All             |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | ThreatAssessment.Read.All                  |
+| Aplicativo                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,11 +47,11 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-|Nome            |Valor    |Descrição                                                                                                                                                                 |
+|Name            |Valor    |Descrição                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$expand         |string   |Usando `$expand=results` na consulta para recuperar o resultado da avaliação da ameaça.                                                                                              |
+|$expand         |string   |Usando `$expand=results` na consulta para recuperar o resultado da avaliação de ameaças.                                                                                              |
 |$select         |string   |Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.                                        |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -66,11 +66,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) solicitado no corpo da resposta. As propriedades desse tipo são retornadas: [mailAssessmentRequest](../resources/mailAssessmentRequest.md), [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md).
+Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) solicitado no corpo da resposta. As propriedades desse tipo são retornadas: [mailAssessmentRequest](../resources/mailAssessmentRequest.md), [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md).
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-properties-of-a-mail-assessment-request"></a>Exemplo 1: obter as propriedades de uma solicitação de avaliação de email
+### <a name="example-1-get-the-properties-of-a-mail-assessment-request"></a>Exemplo 1: Obter as propriedades de uma solicitação de avaliação de email
 
 #### <a name="request"></a>Solicitação
 
@@ -142,7 +142,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-an-email-file-assessment-request"></a>Exemplo 2: obter as propriedades de uma solicitação de avaliação de arquivo de email
+### <a name="example-2-get-the-properties-of-an-email-file-assessment-request"></a>Exemplo 2: Obter as propriedades de uma solicitação de avaliação de arquivo de email
 
 #### <a name="request"></a>Solicitação
 
@@ -214,7 +214,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-properties-of-a-file-assessment-request"></a>Exemplo 3: obter as propriedades de uma solicitação de avaliação de arquivo
+### <a name="example-3-get-the-properties-of-a-file-assessment-request"></a>Exemplo 3: Obter as propriedades de uma solicitação de avaliação de arquivo
 
 #### <a name="request"></a>Solicitação
 
@@ -285,7 +285,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>Exemplo 4: obter as propriedades de uma solicitação de avaliação de URL
+### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>Exemplo 4: Obter as propriedades de uma solicitação de avaliação de url
 
 #### <a name="request"></a>Solicitação
 
@@ -355,7 +355,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>Exemplo 5: expandir os resultados da avaliação de ameaças para uma solicitação
+### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>Exemplo 5: Expandir resultados de avaliação de ameaças para uma solicitação
 
 #### <a name="request"></a>Solicitação
 

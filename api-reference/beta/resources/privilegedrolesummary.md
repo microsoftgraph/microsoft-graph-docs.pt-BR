@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso privilegedRoleSummary
-description: O resumo de estatísticas de uma função específica.
+description: O resumo de estatísticas para uma função específica.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 368ed2ba6b206ba102f821ceac38de70494f8718
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 962cd1b830542c5b17c5f742af357d5855b81886
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133970"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962557"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>Tipo de recurso privilegedRoleSummary
 
@@ -18,23 +18,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O resumo de estatísticas de uma função específica.
+O resumo de estatísticas para uma função específica.
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |Leia as propriedades e os relacionamentos do objeto privilegedRoleSummary.|
+|[Get privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |Ler propriedades e relações do objeto privilegedRoleSummary.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |elevatedCount|int32|O número de usuários que têm a função atribuída e a função é ativada.|
-|id|string| O identificador exclusivo da função. Somente leitura.|
+|id|cadeia de caracteres| O identificador exclusivo da função. Somente leitura.|
 |managedCount|int32|O número de usuários que têm a função atribuída, mas a função é desativada.|
-|mfaEnabled|booliano|**true** se a ativação de função exigir MFA. **false** se a ativação de função não exigir MFA.|
-|status|cadeia de caracteres| Os valores possíveis são: `ok` e `bad`. O valor depende da taxa de (managedCount /usersCount). Se a taxa for menor que um limite predefinido, `ok` será retornado. Caso contrário, `bad` será retornado.|
+|mfaEnabled|booliano|`true` se a ativação de função exigir MFA. `false` se a ativação de função não exigir MFA.|
+|status|roleSummaryStatus| Os valores possíveis são: `ok` e `bad`. O valor depende da taxa de (managedCount /usersCount). Se a taxa for menor que um limite predefinido, `ok` será retornado. Caso contrário, `bad` será retornado.|
 |usersCount|int32|O número de usuários atribuídos à função.|
 
 ## <a name="relationships"></a>Relações

@@ -3,14 +3,14 @@ title: Tipo de recurso informationProtectionContentLabel
 description: Descreve o objeto informationProtectionContentLabel que define metadados MIP em um objeto.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: a7905a585b28832829d838db94344b28f691644d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b4d113e0f8f6d8f057a93d9094533e7fa2d5be6c
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50718516"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962596"
 ---
 # <a name="informationprotectioncontentlabel-resource-type"></a>Tipo de recurso informationProtectionContentLabel
 

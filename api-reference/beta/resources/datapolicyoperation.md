@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 498d03180eca9a0508f513f0051a6f9b0079b45d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f12d83ace221a64754e4227ff292e780abf7ea82
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720701"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962627"
 ---
 # <a name="datapolicyoperation-resource-type"></a>Tipo de recurso dataPolicyOperation
 
@@ -32,7 +32,7 @@ Representa uma operação de política de dados enviada. Ele contém informaçõ
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Representa quando a solicitação para essa operação de política de dados foi concluída, em tempo UTC, usando o formato ISO 8601. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Nulo até que a operação seja concluída.|
 |id|Cadeia de caracteres| Chave exclusiva para essa operação. |
-|status|cadeia de caracteres| Os valores possíveis são: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
+|status|dataPolicyOperationStatus| Os valores possíveis são: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |storageLocation|Cadeia de caracteres|O local da URL para onde os dados estão sendo exportados para solicitações de exportação.|
 |userId|Cadeia de caracteres|A id do usuário no qual a operação é executada.|
 |submittedDateTime|DateTimeOffset|Representa quando a solicitação para essa operação de dados foi enviada, em tempo UTC, usando o formato ISO 8601. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|

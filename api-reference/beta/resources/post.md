@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso post
-description: Representa um item post individual dentro de uma entidade converstaionThread.
+description: Representa um item de postagem individual dentro de uma entidade conversationThread.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f2cc4a4ca9cdf9b57f835992604b9ac00776b67d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 93856e484891a2edc21d13e6e3178f65a2b97b50
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720956"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962592"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um item post individual dentro de uma [entidade converstaionThread.](conversationthread.md)
+Representa um item de postagem individual dentro de uma [entidade conversationThread.](conversationthread.md)
 
 Embora você não possa criar explicitamente uma postagem, seguir um destes procedimentos criaria uma postagem:
 
@@ -78,7 +78,7 @@ Veja a seguir uma representação JSON do recurso
 |from|[recipient](recipient.md)|Usado em cenários de acesso de representante. Indica quem postou a mensagem em nome de outro usuário. Esta é uma propriedade padrão.|
 |hasAttachments|Booliano|Indica se a postagem tem pelo menos um anexo. Esta é uma propriedade padrão.|
 |id|String| Somente leitura.|
-|importance | Cadeia de caracteres | A importância de uma postagem de grupo: `low` , `normal` , `high` . |
+|importância | importância| A importância de uma postagem de grupo: `low` , `normal` , `high` . |
 |lastModifiedDateTime|DateTimeOffset|Especifica quando a postagem foi modificada pela última vez. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |newParticipants|Coleção [recipient](recipient.md)|Participantes da conversa que foram adicionados ao thread como parte desta postagem.|
 |receivedDateTime|DateTimeOffset|Especifica quando a postagem foi recebida. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|

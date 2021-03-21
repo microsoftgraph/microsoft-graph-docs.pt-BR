@@ -1,38 +1,30 @@
 ---
-title: tipo de recurso meetingParticipantInfo
-description: Informações sobre um participante de uma reunião.
+title: Tipo de recurso meetingParticipantInfo
+description: Informações sobre um participante em uma reunião.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a642532579d127fdeb48b4c69524975b293ff959
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 40209354f1621839bd51a20fcbafa4cd58b4fd8d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48741996"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962452"
 ---
-# <a name="meetingparticipantinfo-resource-type"></a>tipo de recurso meetingParticipantInfo
+# <a name="meetingparticipantinfo-resource-type"></a>Tipo de recurso meetingParticipantInfo
 
 Namespace: microsoft.graph
 
-Informações sobre um participante de uma reunião.
+Informações sobre um participante em uma reunião.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo                          | Descrição                                                                         |
 | :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
-| ladrões | [identitySet](identityset.md) | Informações de identidade do participante.                                            |
-| UPN      | String                        | Nome principal do usuário do participante.                                             |
-| role     | onlineMeetingRole             | Especifica a função do participante na reunião.  Os valores possíveis estão listados na tabela a seguir. |
-
-### <a name="onlinemeetingrole-values"></a>valores de onlineMeetingRole
-
-| Valor              | Descrição                     |
-| ------------------ | ------------------------------- |
-| attendee           | O participante é um participante. |
-| instrutor          | O participante é um apresentador. |
-| unknownFutureValue | Valor de futuro desconhecido.           |
+| identity | [identitySet](identityset.md) | Informações de identidade do participante.                                            |
+| upn      | Cadeia de caracteres                        | Nome principal do usuário do participante.                                             |
+| role     | onlineMeetingRole             | Especifica a função do participante na reunião.  Os valores possíveis são: `attendee`, `presenter` e `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

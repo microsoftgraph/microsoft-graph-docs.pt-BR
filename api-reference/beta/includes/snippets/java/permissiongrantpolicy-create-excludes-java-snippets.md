@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 46f560ea3b547607cd36b52e8c884d127bf8e757
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9edea880c075f8e57e19822a82b0136701eda316
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969293"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50968066"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PermissionGrantConditionSet permissionGrantConditionSet = new PermissionGrantConditionSet();
 permissionGrantConditionSet.permissionType = PermissionType.DELEGATED;

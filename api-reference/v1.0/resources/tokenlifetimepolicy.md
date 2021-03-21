@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f950ce0c5a269aee5159349c76e9bea1c4c7a505
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b4d8d814278855e164fa00643b8f56ebc544a789
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442499"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50963355"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>Tipo de recurso tokenLifetimePolicy
 
@@ -40,10 +40,10 @@ Herda de [stsPolicy](stsPolicy.md).
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|Cadeia de caracteres| Identificador exclusivo dessa política. Somente leitura.|
-|definition|Conjunto de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
 |description|Cadeia de caracteres| Descrição dessa política.|
 |displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
-|isOrganizationDefault|Boolean|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
+|isOrganizationDefault|Booliano|Se definido como `true` , ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é `false` .|
 
 
 ### <a name="properties-of-a-token-lifetime-policy-definition"></a>Propriedades de uma definição de política de vida útil do token

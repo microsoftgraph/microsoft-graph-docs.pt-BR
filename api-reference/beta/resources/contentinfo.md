@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso contentInfo
-description: Representa o estado atual de algumas informações que serão rotuladas.
+title: Tipo de recurso contentInfo
+description: Representa o estado atual de algumas informações que devem ser rotuladas.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: d7e0c159d46cb680329efc6a93896ca3df7270f7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 939d7730c0de2ffb13d4dbdcade6f7c2fbce5de4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998904"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962648"
 ---
-# <a name="contentinfo-resource-type"></a>tipo de recurso contentInfo
+# <a name="contentinfo-resource-type"></a>Tipo de recurso contentInfo
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o estado atual de algumas informações que serão rotuladas. **contentInfo** é passado para as APIs [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)e [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) para descrever a API o estado atual das informações. Este detalhe de **contentInfo** orienta os resultados em quais metadados, a marcação de conteúdo e a proteção devem ser adicionados ou removidos quando o rótulo é aplicado, atualizado ou removido. 
+Representa o estado atual de algumas informações que devem ser rotuladas. **contentInfo** é passado para as APIs [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)e [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) para descrever para a API o estado atual das informações. Este **detalhe contentInfo** orienta os resultados sobre quais metadados, marcação de conteúdo e proteção devem ser adicionados ou removidos quando o rótulo for aplicado, atualizado ou removido. 
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo                                       | Descrição                                                                                                                     |
 | :--------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
 | formato     | String                                     | Os valores possíveis são: `default` e `email`.                                                                                        |
-| identificador | String                                     | Identificador usado para a análise de proteção de informações do Azure.                                                                     |
-| los   | Coleção [keyValuePair](keyvaluepair.md) | Os metadados de proteção de informações existentes da Microsoft são passados como pares chave/valor, onde a chave é o MSIP_Label_GUID_PropName. |
-| state      | String                                     | Os valores possíveis são: `rest`, `motion`, `use`.                                                                                   |
+| identificador | Cadeia de caracteres                                     | Identificador usado para o Azure Information Protection Analytics.                                                                     |
+| metadados   | Coleção [keyValuePair](keyvaluepair.md) | Os metadados existentes da Proteção de Informações da Microsoft são passados como pares de chave/valor, onde a chave é a MSIP_Label_GUID_PropName. |
+| estado      | Cadeia de caracteres                                     | Os valores possíveis são: `rest`, `motion`, `use`.                                                                                   |
 
 ## <a name="json-representation"></a>Representação JSON
 

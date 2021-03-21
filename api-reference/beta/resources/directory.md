@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 531b688fe64f4cadb7a23cbc7db6cba313b86a0c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4eb1cbdcbf0a1256c2bf2bf0cec35479b8bbc2cc
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440472"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50962620"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
 
@@ -22,7 +22,7 @@ Representa um item excluído no diretório. Quando um item é excluído, ele é 
 
 Atualmente, a funcionalidade de itens excluídos só tem suporte para os recursos [de](application.md)aplicativo, [grupo](group.md) [e](user.md) usuário.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método         | Tipo de retorno | Descrição |
 |:---------------|:------------|:------------|
@@ -31,16 +31,16 @@ Atualmente, a funcionalidade de itens excluídos só tem suporte para os recurso
 |[Listar itens excluídos](../api/directory-deleteditems-list.md) |Coleção [directoryObject](directoryobject.md)| Obtém uma lista de itens recentemente excluídos. |
 |[Excluir permanentemente um item](../api/directory-deleteditems-delete.md) | Nenhum | Exclui permanentemente um item. |
 |[Listar itens excluídos pertencentes a um usuário](../api/directory-deleteditems-user-owned.md) | Coleção [directoryObject](directoryobject.md) | Lista itens de diretório pertencentes a um usuário. |
-|[Listar featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [Coleção featureRolloutPolicy](featurerolloutpolicy.md) | Recupere uma lista de objetos featureRolloutPolicy. |
-|[Criar featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Crie um novo objeto featureRolloutPolicy. |
+|[Listar featureRolloutPolicies](../api/list-featurerolloutpolicies.md) | [Coleção featureRolloutPolicy](featurerolloutpolicy.md) | Recupere uma lista de objetos featureRolloutPolicy. |
+|[Criar featureRolloutPolicy](../api/post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Crie um novo objeto featureRolloutPolicy. |
 | [Obter featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere as propriedades e as relações do objeto featurerolloutpolicy. |
 | [Atualizar featureRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Atualize as propriedades do objeto featurerolloutpolicy. |
-| [Excluir featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | Nenhum(a) | Exclua um objeto featureRolloutPolicy. |
+| [Excluir featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | Nenhum | Exclua um objeto featureRolloutPolicy. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Um identificador exclusivo para o objeto; por exemplo, 12345678-9abc-def0-1234-56789abcde. Chave. Não anulável. Somente leitura.|
+|id|Cadeia de caracteres| Um identificador exclusivo para o objeto; por exemplo, 12345678-9abc-def0-1234-56789abcde. Chave. Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
