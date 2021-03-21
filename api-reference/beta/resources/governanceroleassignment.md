@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 6d9e1b56a503ffdf1bde6bde6a583b78f8a34851
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 532ea3c1d8fe5b1bc1128994c96c493774e9b19b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722304"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964559"
 ---
 # <a name="governanceroleassignment-resource-type"></a>Tipo de recurso governanceRoleAssignment
 
@@ -28,7 +28,7 @@ O PIM (Privileged Identity Management) dá suporte a dois tipos de atribuições
 | Método          | Tipo de retorno |Descrição|
 |:------------|:--------|:--------|
 |[Get](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Ler propriedades e relações de uma entidade de atribuição de função.|
-|[List](../api/governanceroleassignment-list.md) | [Coleção governanceRoleAssignment](../resources/governanceroleassignment.md)|Listar uma coleção de atribuições de função em um recurso. |
+|[Lista](../api/governanceroleassignment-list.md) | [Coleção governanceRoleAssignment](../resources/governanceroleassignment.md)|Listar uma coleção de atribuições de função em um recurso. |
 |[Export](../api/governanceroleassignment-export.md) | octet-stream |Baixe uma coleção de atribuições de função em um recurso e salve como um `.csv` arquivo.|
 
 Não `POST` , , ou as operações são `PUT` `PATCH` `DELETE` suportadas no conjunto de `roleAssignments` entidades. Todas as operações de criação, atualização e exclusão são `governanceRoleAssignment` feitas por `governanceRoleAssignmentRequest` .
@@ -44,8 +44,8 @@ Não `POST` , , ou as operações são `PUT` `PATCH` `DELETE` suportadas no conj
 |externalId   |Cadeia de caracteres     |A ID externa do recurso usado para identificar a atribuição de função no provedor.|
 |startDateTime|DateTimeOffset|A hora de início da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |endDateTime|DateTimeOffset|Para uma atribuição de função não permanente, este é o momento em que a atribuição de função será expirada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|assignmentState|Cadeia de caracteres  |O estado da atribuição. O valor pode ser <ul><li> `Eligible` para atribuição qualificada</li><li> `Active` - se ele for atribuído diretamente pelos administradores ou ativado em uma `Active` atribuição qualificada pelos usuários.</li></ul>|
-|memberType|Cadeia de caracteres      |O tipo de membro. O valor pode ser: <ul><li>`Inherited` - a atribuição de função é herdada de um escopo de recurso pai</li><li>`Group`- a atribuição de função não é herdada, mas vem da associação de uma atribuição de grupo</li><li>`User` - a atribuição de função não é herdada nem de uma atribuição de grupo.</li></ul>|
+|assignmentState|Cadeia de caracteres  |O estado da atribuição. O valor pode ser para atribuição qualificada ou se ele for atribuído diretamente pelos administradores ou ativado em uma atribuição qualificada `Eligible` `Active` pelos `Active` usuários.|
+|memberType|Cadeia de caracteres      |O tipo de membro. O valor pode ser: (se a atribuição de função for herdada de um escopo de recurso pai), (se a atribuição de função não for herdada, mas vier da associação de uma atribuição de grupo) ou (se a atribuição de função não for herdada nem de uma atribuição de `Inherited` `Group` `User` grupo).|
 
 
 ## <a name="relationships"></a>Relações

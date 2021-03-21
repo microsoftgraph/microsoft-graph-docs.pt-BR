@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 134c3e502fa39fea626216315056adfeef5aef13
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0f7042b8b2be369c97e19cb038d7cf82fe07e96d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720333"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964554"
 ---
 # <a name="authenticationdetail-resource-type"></a>Tipo de recurso authenticationDetail
 
@@ -24,7 +24,7 @@ Fornece os detalhes de autenticação para uma login do usuário, como informaç
 
 | Propriedade                       | Tipo           | Descrição                                                                                                                                                                                                              |
 |:-------------------------------|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| authenticationMethod           | Cadeia de caracteres         | O tipo de método de autenticação usado para executar esta etapa de autenticação. Valores possíveis: `Password` , , , , , `SMS` `Voice` `Authenticator App` `Software OATH token` `Satisfied by token` .                            |
+| authenticationMethod           | Cadeia de caracteres         | O tipo de método de autenticação usado para executar esta etapa de autenticação. Valores possíveis: `Password` , , , , , , `SMS` `Voice` `Authenticator App` `Software OATH token` `Satisfied by token` `Previously satisfied` .                            |
 | authenticationMethodDetail     | Cadeia de caracteres         | Detalhes sobre o método de autenticação usado para executar essa etapa de autenticação. Por exemplo, número de telefone (para SMS e voz), nome do dispositivo (para aplicativo Autenticador) e fonte de senha (por exemplo, nuvem, AD FS, PTA, PHS). |
 | authenticationStepDateTime     | DateTimeOffset | Representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.                                           |
 | authenticationStepRequirement  | Cadeia de caracteres         | A etapa de autenticação que isso satisfez. Por exemplo, autenticação primária ou autenticação multifa factor.                                                                                                     |

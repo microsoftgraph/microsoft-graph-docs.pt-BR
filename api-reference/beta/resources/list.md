@@ -6,12 +6,12 @@ title: Listar
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 7eae3ca5530b04d004888edf1cfe75e67a83b310
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9bc255a0bcddadbbf9190decc2d429eb88e91e67
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055299"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964552"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -32,15 +32,21 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/be
 
 | Tarefa comum               | Método HTTP
 |:--------------------------|:------------------------------
-| [Obter lista][]              | GET /lists/{list-id}
+| [Obter listas em um site][]   | GET /sites/{site-id}/lists
 | [Criar lista][]           | POSTAR/listas
+| [Obter lista][]              | GET /lists/{list-id}
 | [Enumerar itens de lista][]  | GET /lists/{list-id}/items
 | [Atualizar item de lista][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Excluir item de lista][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Criar item de lista][]      | POST /lists/{list-id}
 | [Obter atividades recentes][] | GET /lists/{list-id}/activities
 | [Obter canal WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
+|[Listar tipos de conteúdo][]          | GET /lists/{list-id}/contentTypes
+|[Adicionar cópia do tipo de conteúdo do site][] | POST /lists/{list-id}/contentTypes/addCopy
+|[List columns][]               | GET /lists/{list-id}/columns
+|[Criar coluna][]              | POST /lists/{list-id}/columns
 
+[Obter listas em um site]: ../api/list-list.md
 [Obter lista]: ../api/list-get.md
 [Criar lista]: ../api/list-create.md
 [Enumerar itens de lista]: ../api/listitem-list.md
@@ -49,7 +55,10 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/be
 [Criar item de lista]: ../api/listitem-create.md
 [Obter atividades recentes]: ../api/activities-list.md
 [Obter canal WebSocket]: ../api/subscriptions-socketio.md
-
+[Listar tipos de conteúdo]: ../api/list-list-contenttypes.md
+[Adicionar cópia do tipo de conteúdo do site]: ../api/contenttype-addCopy.md
+[List columns]: ../api/list-list-columns.md
+[Criar coluna]: ../api/list-post-columns.md
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON de um recurso **list**.
