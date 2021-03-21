@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3aa4674d212bbc46351f93610d02bb5773b3e150
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c3a94dfcc01ea4472b7e1cc85cbf9bc7265b89e5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979603"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50972850"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IOutlookCategoryCollectionPage masterCategories = graphClient.me().outlook().masterCategories()
+OutlookCategoryCollectionPage masterCategories = graphClient.me().outlook().masterCategories()
     .buildRequest()
     .get();
 

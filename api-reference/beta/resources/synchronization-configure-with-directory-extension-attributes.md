@@ -5,26 +5,26 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 1a19db23c5797812c41b10ca281efde887da90fc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: db5e2ba4bc715f608d17b8e11067df71141a6142
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131493"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956975"
 ---
-# <a name="configure-synchronization-with-directory-extension-attributes"></a><span data-ttu-id="3e1e3-103">Configurar a sincronização com atributos de extensão de diretório</span><span class="sxs-lookup"><span data-stu-id="3e1e3-103">Configure synchronization with directory extension attributes</span></span>
+# <a name="configure-synchronization-with-directory-extension-attributes"></a><span data-ttu-id="f9a60-103">Configurar a sincronização com atributos de extensão de diretório</span><span class="sxs-lookup"><span data-stu-id="f9a60-103">Configure synchronization with directory extension attributes</span></span>
 
-<span data-ttu-id="3e1e3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3e1e3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f9a60-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f9a60-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3e1e3-105">Você pode personalizar seu esquema de sincronização para incluir atributos de extensão de diretório do Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="3e1e3-105">You can customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes.</span></span> <span data-ttu-id="3e1e3-106">Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para preencher o valor de User.CommunityNickname no Salesforce.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-106">This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce.</span></span> <span data-ttu-id="3e1e3-107">Neste cenário, você tem o Azure AD Connect definido para provisionar vários atributos de extensão de diretório do Windows Server Active Directory local para o Azure AD.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-107">In this scenario, you have Azure AD Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Azure AD.</span></span> 
+<span data-ttu-id="f9a60-105">Você pode personalizar seu esquema de sincronização para incluir atributos de extensão de diretório do Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="f9a60-105">You can customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes.</span></span> <span data-ttu-id="f9a60-106">Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para preencher o valor de User.CommunityNickname no Salesforce.</span><span class="sxs-lookup"><span data-stu-id="f9a60-106">This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce.</span></span> <span data-ttu-id="f9a60-107">Nesse cenário, você tem o Azure AD Connect definido para provisionar vários atributos de extensão de diretório do Windows Server Active Directory local para o Azure AD.</span><span class="sxs-lookup"><span data-stu-id="f9a60-107">In this scenario, you have Azure AD Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Azure AD.</span></span> 
 
-<span data-ttu-id="3e1e3-108">Este artigo presume que você já adicionou um aplicativo que dá suporte à sincronização com seu locatário por meio do Portal do [Azure,](https://portal.azure.com)que você sabe o nome de exibição do aplicativo e que tem um token de autorização para o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-108">This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph.</span></span> <span data-ttu-id="3e1e3-109">Para obter informações sobre como obter o token de autorização, confira [Obter tokens de acesso para chamar o Microsoft Graph.](/graph/auth/)</span><span class="sxs-lookup"><span data-stu-id="3e1e3-109">For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](/graph/auth/).</span></span>
+<span data-ttu-id="f9a60-108">Este artigo supõe que você já adicionou um aplicativo que oferece suporte à sincronização ao seu locatário por meio do [Portal do Azure,](https://portal.azure.com)que você conhece o nome de exibição do aplicativo e que tem um token de autorização para o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="f9a60-108">This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph.</span></span> <span data-ttu-id="f9a60-109">Para obter informações sobre como obter o token de autorização, consulte [Obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/).</span><span class="sxs-lookup"><span data-stu-id="f9a60-109">For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](/graph/auth/).</span></span>
 
-## <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="3e1e3-110">Encontrar o objeto de entidade de serviço por nome de exibição</span><span class="sxs-lookup"><span data-stu-id="3e1e3-110">Find the service principal object by display name</span></span>
+## <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="f9a60-110">Encontre o objeto de entidade de serviço por nome de exibição</span><span class="sxs-lookup"><span data-stu-id="f9a60-110">Find the service principal object by display name</span></span>
 
-<span data-ttu-id="3e1e3-111">O exemplo a seguir mostra como encontrar um objeto de entidade de serviço com o nome de exibição "Salesforce Sandbox".</span><span class="sxs-lookup"><span data-stu-id="3e1e3-111">The following example shows how to find a service principal object with the display name "Salesforce Sandbox".</span></span>
+<span data-ttu-id="f9a60-111">O exemplo a seguir mostra como encontrar um objeto de entidade de serviço com o nome de exibição "Área Desatenção do Salesforce".</span><span class="sxs-lookup"><span data-stu-id="f9a60-111">The following example shows how to find a service principal object with the display name "Salesforce Sandbox".</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -54,11 +54,11 @@ Authorization: Bearer {Token}
 }
 ```
 
-<span data-ttu-id="3e1e3-112">O `{servicePrincipalId}` é `60443998-8cf7-4e61-b05c-a53b658cb5e1` .</span><span class="sxs-lookup"><span data-stu-id="3e1e3-112">The `{servicePrincipalId}` is `60443998-8cf7-4e61-b05c-a53b658cb5e1`.</span></span>
+<span data-ttu-id="f9a60-112">O `{servicePrincipalId}` é `60443998-8cf7-4e61-b05c-a53b658cb5e1` .</span><span class="sxs-lookup"><span data-stu-id="f9a60-112">The `{servicePrincipalId}` is `60443998-8cf7-4e61-b05c-a53b658cb5e1`.</span></span>
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a><span data-ttu-id="3e1e3-113">Listar trabalhos de sincronização no contexto da entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="3e1e3-113">List synchronization jobs in the context of the service principal</span></span> 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a><span data-ttu-id="f9a60-113">Listar trabalhos de sincronização no contexto da entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="f9a60-113">List synchronization jobs in the context of the service principal</span></span> 
 
-<span data-ttu-id="3e1e3-114">O exemplo a seguir mostra como obter `jobId` o que você precisa para trabalhar.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-114">The following example shows you how to get the `jobId` that you need to work with.</span></span> <span data-ttu-id="3e1e3-115">Geralmente, a resposta retorna apenas um trabalho.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-115">Generally, the response returns only one job.</span></span>
+<span data-ttu-id="f9a60-114">O exemplo a seguir mostra como obter o `jobId` que você precisa trabalhar.</span><span class="sxs-lookup"><span data-stu-id="f9a60-114">The following example shows you how to get the `jobId` that you need to work with.</span></span> <span data-ttu-id="f9a60-115">Geralmente, a resposta retorna apenas um trabalho.</span><span class="sxs-lookup"><span data-stu-id="f9a60-115">Generally, the response returns only one job.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -79,49 +79,49 @@ Authorization: Bearer {Token}
 }
 ```
 
-<span data-ttu-id="3e1e3-116">O `{jobId}` é `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` .</span><span class="sxs-lookup"><span data-stu-id="3e1e3-116">The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.</span></span>
+<span data-ttu-id="f9a60-116">O `{jobId}` é `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` .</span><span class="sxs-lookup"><span data-stu-id="f9a60-116">The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.</span></span>
 
-## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a><span data-ttu-id="3e1e3-117">Encontre o nome do atributo de extensão de diretório de que você precisa</span><span class="sxs-lookup"><span data-stu-id="3e1e3-117">Find the name of the directory extension attribute you need</span></span>
+## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a><span data-ttu-id="f9a60-117">Encontre o nome do atributo de extensão de diretório de que você precisa</span><span class="sxs-lookup"><span data-stu-id="f9a60-117">Find the name of the directory extension attribute you need</span></span>
 
-<span data-ttu-id="3e1e3-118">Você precisará do nome completo do atributo de extensão.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-118">You'll need the full name of the extension attribute.</span></span> <span data-ttu-id="3e1e3-119">Se você não sabe o nome completo (que deve ser semelhante ao **extension_9d98asdfl15980a_Nickname**), consulte as seguintes informações sobre atributos de extensão de diretório e como inspecioná-los:</span><span class="sxs-lookup"><span data-stu-id="3e1e3-119">If you don't know the full name (which should look similar to **extension_9d98asdfl15980a_Nickname**), see the following information about directory extension attributes and how to inspect them:</span></span> 
+<span data-ttu-id="f9a60-118">Você precisará do nome completo do atributo extension.</span><span class="sxs-lookup"><span data-stu-id="f9a60-118">You'll need the full name of the extension attribute.</span></span> <span data-ttu-id="f9a60-119">Se você não sabe o nome completo (que deve ser semelhante ao extension_9d98asdfl15980a_Nickname **),** confira as seguintes informações sobre atributos de extensão de diretório e como inspecioná-los:</span><span class="sxs-lookup"><span data-stu-id="f9a60-119">If you don't know the full name (which should look similar to **extension_9d98asdfl15980a_Nickname**), see the following information about directory extension attributes and how to inspect them:</span></span> 
 
-* [<span data-ttu-id="3e1e3-120">Estendendo o esquema de diretório do Azure AD com propriedades personalizadas</span><span class="sxs-lookup"><span data-stu-id="3e1e3-120">Extending the Azure AD directory schema with custom properties</span></span>](/graph/extensibility-overview)
-* [<span data-ttu-id="3e1e3-121">Extensões de esquema de | Conceitos da API do Graph</span><span class="sxs-lookup"><span data-stu-id="3e1e3-121">Directory schema extensions | Graph API concepts</span></span>](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
-
-
-## <a name="get-the-synchronization-schema"></a><span data-ttu-id="3e1e3-122">Obter o esquema de sincronização</span><span class="sxs-lookup"><span data-stu-id="3e1e3-122">Get the synchronization schema</span></span>
-<span data-ttu-id="3e1e3-123">O exemplo a seguir mostra como obter o esquema de sincronização.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-123">The following example shows how to get the synchronization schema.</span></span>
+* [<span data-ttu-id="f9a60-120">Estendendo o esquema de diretório do Azure AD com propriedades personalizadas</span><span class="sxs-lookup"><span data-stu-id="f9a60-120">Extending the Azure AD directory schema with custom properties</span></span>](/graph/extensibility-overview)
+* [<span data-ttu-id="f9a60-121">Extensões de esquema de diretório | Conceitos de API do Graph</span><span class="sxs-lookup"><span data-stu-id="f9a60-121">Directory schema extensions | Graph API concepts</span></span>](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
-# <a name="http"></a>[<span data-ttu-id="3e1e3-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="3e1e3-124">HTTP</span></span>](#tab/http)
+## <a name="get-the-synchronization-schema"></a><span data-ttu-id="f9a60-122">Obter o esquema de sincronização</span><span class="sxs-lookup"><span data-stu-id="f9a60-122">Get the synchronization schema</span></span>
+<span data-ttu-id="f9a60-123">O exemplo a seguir mostra como obter o esquema de sincronização.</span><span class="sxs-lookup"><span data-stu-id="f9a60-123">The following example shows how to get the synchronization schema.</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="f9a60-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="f9a60-124">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_synchronizationschema"
+  "name": "get_synchronizationschema_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```
-# <a name="c"></a>[<span data-ttu-id="3e1e3-125">C#</span><span class="sxs-lookup"><span data-stu-id="3e1e3-125">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="f9a60-125">C#</span><span class="sxs-lookup"><span data-stu-id="f9a60-125">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3e1e3-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3e1e3-126">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="f9a60-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f9a60-126">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3e1e3-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3e1e3-127">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="f9a60-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f9a60-127">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="3e1e3-128">Java</span><span class="sxs-lookup"><span data-stu-id="3e1e3-128">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="f9a60-128">Java</span><span class="sxs-lookup"><span data-stu-id="f9a60-128">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-><span data-ttu-id="3e1e3-129">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-129">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="3e1e3-130">Todas as propriedades serão retornadas em uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-130">All the properties will be returned in an actual call.</span></span>
+><span data-ttu-id="f9a60-129">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="f9a60-129">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f9a60-130">Todas as propriedades serão retornadas em uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f9a60-130">All the properties will be returned in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -219,20 +219,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a><span data-ttu-id="3e1e3-131">Adicionar uma definição para o atributo de extensão de diretório e um mapeamento entre os atributos</span><span class="sxs-lookup"><span data-stu-id="3e1e3-131">Add a definition for the directory extension attribute, and a mapping between the attributes</span></span>
+## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a><span data-ttu-id="f9a60-131">Adicione uma definição para o atributo de extensão de diretório e um mapeamento entre os atributos</span><span class="sxs-lookup"><span data-stu-id="f9a60-131">Add a definition for the directory extension attribute, and a mapping between the attributes</span></span>
 
-<span data-ttu-id="3e1e3-132">Use um editor de texto sem texto de sua preferência (por exemplo, Bloco de [Notas++](https://notepad-plus-plus.org/) ou [Editor JSON Online](https://www.jsoneditoronline.org/)) para:</span><span class="sxs-lookup"><span data-stu-id="3e1e3-132">Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:</span></span>
+<span data-ttu-id="f9a60-132">Use um editor de texto simples de sua escolha (por exemplo, [Notepad++](https://notepad-plus-plus.org/) ou [Editor JSON Online](https://www.jsoneditoronline.org/)) para:</span><span class="sxs-lookup"><span data-stu-id="f9a60-132">Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:</span></span>
 
-1. <span data-ttu-id="3e1e3-133">Adicione uma [definição de](synchronization-attributedefinition.md) atributo para o `extension_9d98asdfl15980a_Nickname` atributo.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-133">Add an [attribute definition](synchronization-attributedefinition.md) for the `extension_9d98asdfl15980a_Nickname` attribute.</span></span> 
+1. <span data-ttu-id="f9a60-133">Adicione uma [definição de atributo](synchronization-attributedefinition.md) para o `extension_9d98asdfl15980a_Nickname` atributo.</span><span class="sxs-lookup"><span data-stu-id="f9a60-133">Add an [attribute definition](synchronization-attributedefinition.md) for the `extension_9d98asdfl15980a_Nickname` attribute.</span></span> 
 
-    - <span data-ttu-id="3e1e3-134">Em diretórios, encontre o diretório com o nome "Azure Active Directory" e, na matriz do objeto, encontre o chamado **Usuário**.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-134">Under directories, find the directory with the name "Azure Active Directory", and in the object's array, find the one named **User**.</span></span>
-    - <span data-ttu-id="3e1e3-135">Adicione o novo atributo à lista, especificando o nome e o tipo, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-135">Add the new attribute to the list, specifying the name and type, as shown in the following example.</span></span>
+    - <span data-ttu-id="f9a60-134">Em diretórios, localizou o diretório com o nome "Azure Active Directory" e, na matriz do objeto, localizou o chamado **User**.</span><span class="sxs-lookup"><span data-stu-id="f9a60-134">Under directories, find the directory with the name "Azure Active Directory", and in the object's array, find the one named **User**.</span></span>
+    - <span data-ttu-id="f9a60-135">Adicione o novo atributo à lista, especificando o nome e o tipo, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="f9a60-135">Add the new attribute to the list, specifying the name and type, as shown in the following example.</span></span>
 
-2. <span data-ttu-id="3e1e3-136">Adicione um [mapeamento de atributos](synchronization-attributemapping.md) entre extension_9d98asdfl15980a_Nickname e CommunityNickname.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-136">Add an [attribute mapping](synchronization-attributemapping.md) between extension_9d98asdfl15980a_Nickname and CommunityNickname.</span></span>
+2. <span data-ttu-id="f9a60-136">Adicione um [mapeamento de atributos](synchronization-attributemapping.md) entre extension_9d98asdfl15980a_Nickname e CommunityNickname.</span><span class="sxs-lookup"><span data-stu-id="f9a60-136">Add an [attribute mapping](synchronization-attributemapping.md) between extension_9d98asdfl15980a_Nickname and CommunityNickname.</span></span>
 
-    - <span data-ttu-id="3e1e3-137">Em [synchronizationRules](synchronization-synchronizationrule.md), encontre a regra que especifica o Azure AD como diretório de origem e Salesforce.com como o diretório de destino ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).</span><span class="sxs-lookup"><span data-stu-id="3e1e3-137">Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).</span></span>
-    - <span data-ttu-id="3e1e3-138">Nos [objectMappings](synchronization-objectmapping.md) da regra, encontre o mapeamento entre os usuários ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).</span><span class="sxs-lookup"><span data-stu-id="3e1e3-138">In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span></span>
-    - <span data-ttu-id="3e1e3-139">Na matriz [attributeMappings](synchronization-attributemapping.md) do **objectMapping,** adicione uma nova entrada, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-139">In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.</span></span>
+    - <span data-ttu-id="f9a60-137">Em [synchronizationRules,](synchronization-synchronizationrule.md)localiza a regra que especifica o Azure AD como diretório de origem e Salesforce.com como o diretório de destino ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).</span><span class="sxs-lookup"><span data-stu-id="f9a60-137">Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).</span></span>
+    - <span data-ttu-id="f9a60-138">No [objectMappings](synchronization-objectmapping.md) da regra, encontre o mapeamento entre usuários ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).</span><span class="sxs-lookup"><span data-stu-id="f9a60-138">In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span></span>
+    - <span data-ttu-id="f9a60-139">Na matriz [attributeMappings](synchronization-attributemapping.md) do **objectMapping**, adicione uma nova entrada, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="f9a60-139">In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.</span></span>
 
     ```json
     {
@@ -283,9 +283,9 @@ Content-Type: application/json
     }
     ```
 
-## <a name="save-the-modified-synchronization-schema"></a><span data-ttu-id="3e1e3-140">Salvar o esquema de sincronização modificado</span><span class="sxs-lookup"><span data-stu-id="3e1e3-140">Save the modified synchronization schema</span></span>
+## <a name="save-the-modified-synchronization-schema"></a><span data-ttu-id="f9a60-140">Salvar o esquema de sincronização modificado</span><span class="sxs-lookup"><span data-stu-id="f9a60-140">Save the modified synchronization schema</span></span>
 
-<span data-ttu-id="3e1e3-141">Ao salvar o esquema de sincronização atualizado, certifique-se de incluir todo o esquema, incluindo as partes não modificadas.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-141">When you save the updated synchronization schema, make sure that you include the entire schema, including the unmodified parts.</span></span> <span data-ttu-id="3e1e3-142">Essa solicitação substituirá o esquema existente pelo que você fornecer.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-142">This request will replace the existing schema with the one that you provide.</span></span>
+<span data-ttu-id="f9a60-141">Ao salvar o esquema de sincronização atualizado, certifique-se de incluir todo o esquema, incluindo as partes nãomodificadas.</span><span class="sxs-lookup"><span data-stu-id="f9a60-141">When you save the updated synchronization schema, make sure that you include the entire schema, including the unmodified parts.</span></span> <span data-ttu-id="f9a60-142">Essa solicitação substituirá o esquema existente pelo que você fornece.</span><span class="sxs-lookup"><span data-stu-id="f9a60-142">This request will replace the existing schema with the one that you provide.</span></span>
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -298,7 +298,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-<span data-ttu-id="3e1e3-143">Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincronização, ele começará a processar todas as contas no Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.</span><span class="sxs-lookup"><span data-stu-id="3e1e3-143">If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.</span></span>
+<span data-ttu-id="f9a60-143">Se o esquema tiver sido salvo com êxito, na próxima iteração do trabalho de sincronização, ele começará a processar todas as contas no Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.</span><span class="sxs-lookup"><span data-stu-id="f9a60-143">If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.</span></span>
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
