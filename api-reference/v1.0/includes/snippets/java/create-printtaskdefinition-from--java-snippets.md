@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 99c51c3fc4f8d6c4125b19fdf6fb418be353d66d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d72eb285a7a7a9c92f9f4a88e697f70c7f510a90
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772195"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50975361"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PrintTaskDefinition printTaskDefinition = new PrintTaskDefinition();
 printTaskDefinition.displayName = "Test TaskDefinitionName";
