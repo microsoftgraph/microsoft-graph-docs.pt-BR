@@ -1,24 +1,24 @@
 ---
-title: Obter configurações para análise de usuário
-description: Recupere as propriedades do objeto de configurações para a análise do usuário.
+title: Obter configurações para análise do usuário
+description: Recupere as propriedades do objeto settings para análise do usuário.
 localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 34041ad8f48a97c79399bc5a0f161cb7987a6957
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 607ddeea17942211cbd9988f5f3248385a0c7283
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973989"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50955302"
 ---
-# <a name="get-settings-for-user-analytics"></a>Obter configurações para análise de usuário
+# <a name="get-settings-for-user-analytics"></a>Obter configurações para análise do usuário
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades de um objeto de [configurações](../resources/settings.md) conforme aplicável para a API de análise.
+Recupere as propriedades de um [objeto settings](../resources/settings.md) conforme aplicável para a API de análise.
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,7 +40,7 @@ GET /me/analytics/settings
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte a parâmetros de consulta opcionais para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e o objeto de [configurações](../resources/settings.md) solicitadas no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e o objeto de configurações `200 OK` [solicitados](../resources/settings.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -65,26 +65,26 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_settings"
+  "name": "get_settings_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/analytics/settings
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-settings-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-settings-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-settings-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-settings-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-settings-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-settings-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-settings-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-settings-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

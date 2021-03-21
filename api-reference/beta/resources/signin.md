@@ -5,12 +5,12 @@ description: Fornece detalhes sobre a atividade de login de usuário ou de aplic
 author: besiler
 localization_priority: Normal
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 84cad7fd567918712f53ac90ba757f09627cf2f7
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: affc874a27af4aa9037bf6f9b7a212dc33f75995
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721968"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954984"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -33,13 +33,13 @@ Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu 
 |alternateSignInName|Cadeia de caracteres|A identidade de login alternativa sempre que você usa o número de telefone para entrar.|
 |appDisplayName|Cadeia de caracteres|O nome do aplicativo exibido no Portal do Azure.|
 |appId|Cadeia de caracteres|O identificador de aplicativo no Azure Active Directory.|
-|appliedConditionalAccessPolicies|[conditionalAccessPolicy](conditionalaccesspolicy.md) conjunto|Uma lista de políticas de acesso condicional que são disparadas pela atividade de entrada correspondente.|
+|appliedConditionalAccessPolicies|[coleção appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md)|Uma lista de políticas de acesso condicional que são disparadas pela atividade de entrada correspondente.|
 |authenticationDetails|[Coleção authenticationDetail](authenticationdetail.md)|O resultado da tentativa de autenticação e detalhes adicionais sobre o método de autenticação.|
 |authenticationMethodsUsed|Coleção de cadeias de caracteres|Os métodos de autenticação usados. Valores possíveis: `SMS` , , , , , , ou `Authenticator App` `App Verification code` `Password` `FIDO` `PTA` `PHS` .|
 |authenticationProcessingDetails|Coleção [KeyValue](keyvalue.md)|Detalhes adicionais de processamento de autenticação, como o nome do agente em caso de PTA/PHS ou nome de servidor/farm em caso de autenticação federada.|
-|authenticationRequirement | cadeia de caracteres | Isso mantém o nível mais alto de autenticação necessário por meio de todas as etapas de login, para que a assinatura seja bem-sucedida.|
-|clientAppUsed|Cadeia de caracteres|O cliente herddo usado para atividades de entrada. Por exemplo, Navegador, Sincronização Ativa do Exchange, Clientes modernos, IMAP, MAPI, SMTP ou POP.|
-|conditionalAccessStatus|cadeia de caracteres| O status da política de acesso condicional disparada. Valores possíveis: `success` `failure` , , ou `notApplied` `unknownFutureValue` .|
+|authenticationRequirement | Cadeia de caracteres | Isso mantém o nível mais alto de autenticação necessário por meio de todas as etapas de login, para que a assinatura seja bem-sucedida.|
+|clientAppUsed|Cadeia de caracteres|O cliente herddo usado para atividades de entrada. Por exemplo: `Browser` , , , , , , ou `Exchange Active Sync` `Modern clients` `IMAP` `MAPI` `SMTP` `POP` .|
+|conditionalAccessStatus|conditionalAccessStatus| O status da política de acesso condicional disparada. Valores possíveis: `success` `failure` , , ou `notApplied` `unknownFutureValue` .|
 |correlationId|Cadeia de caracteres|O identificador enviado do cliente quando a entrada é iniciada. Isso é usado para solucionar problemas da atividade de login correspondente ao chamar o suporte.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a assinatura foi iniciada. O tipo de Timestamp é sempre UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |deviceDetail|[deviceDetail](devicedetail.md)|As informações do dispositivo de onde ocorreu a entrada. Inclui informações como deviceId, so e navegador. |
@@ -47,7 +47,7 @@ Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu 
 |ipAddress|Cadeia de caracteres|O endereço IP do cliente de onde ocorreu a entrada.|
 |isInteractive|Booliano|Indica se uma assinatura é interativa ou não.|
 |location|[signInLocation](signinlocation.md)|A cidade, o estado e o código de país de duas letras de onde ocorreu a login.|
-|networkLocationDetails|coleção [networkLocationDetail](networklocationdetail.md)|Os detalhes do local da rede, como endereço IP, local da login, o tipo de rede usado e seus nomes. Valores possíveis: `Named Netowrk` `Extranet` , , ou `Intranet` `Trusted Network` .|
+|networkLocationDetails|coleção [networkLocationDetail](networklocationdetail.md)|Os detalhes do local da rede, incluindo o tipo de rede usada e seus nomes.|
 |originalRequestId|Cadeia de caracteres|O identificador de solicitação da primeira solicitação na sequência de autenticação.|
 |processingTimeInMilliseconds|Int|O tempo de processamento da solicitação em milissegundos no AD STS.|
 |resourceDisplayName|Cadeia de caracteres|O nome do recurso ao que o usuário se inscreveu.|
@@ -62,7 +62,7 @@ Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu 
 |servicePrincipalName|Cadeia de caracteres|O nome do aplicativo usado para entrar. Esse campo é preenchido quando você está fazendo o registro usando um aplicativo.|
 |status|[signInStatus](signinstatus.md)|O status de login. Inclui o código de erro e a descrição do erro (no caso de uma falha de login).|
 |tokenIssuerName|Cadeia de caracteres|O nome do provedor de identidade. Por exemplo, `sts.microsoft.com`.|
-|tokenIssuerType|Cadeia de caracteres|O tipo de provedor de identidade. Valores possíveis: `AzureAD` `ADFederationServices` , ou `UnknownFutureValue` .|
+|tokenIssuerType|tokenIssuerType|O tipo de provedor de identidade. Valores possíveis: `AzureAD` `ADFederationServices` , ou `UnknownFutureValue` .|
 |userAgent|Cadeia de caracteres|As informações do agente do usuário relacionadas à login.|
 |userDisplayName|Cadeia de caracteres|O nome de exibição do usuário.|
 |userId|Cadeia de caracteres|O identificador do usuário.|

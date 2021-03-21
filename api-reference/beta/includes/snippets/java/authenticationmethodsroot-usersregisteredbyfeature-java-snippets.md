@@ -1,18 +1,22 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a47194dc6aad91eda2a34de3abf65be3d666a776
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 27126cf782f043adce3b1fd50c6787724d3bc49d
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092327"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50984006"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 UserRegistrationFeatureSummary userRegistrationFeatureSummary = graphClient.reports().authenticationMethods()
-    .usersRegisteredByFeature('all','all')
+    .usersRegisteredByFeature(AuthenticationMethodsRootUsersRegisteredByFeatureParameterSet
+        .newBuilder()
+        .withIncludedUserTypes('all')
+        .withIncludedUserRoles('all')
+        .build())
     .buildRequest()
     .get();
 

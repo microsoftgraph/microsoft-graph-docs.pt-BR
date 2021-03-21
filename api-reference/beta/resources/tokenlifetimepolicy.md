@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: dfe225a5d79551d7312a7ef22daa976d5d75e38b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: afc82ff81e9fd514cb95bd51ccb9df89e3577bd6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442772"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50954964"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>Tipo de recurso tokenLifetimePolicy
 
@@ -24,29 +24,29 @@ Representa uma política que pode controlar o tempo de vida de um token de acess
 
 Herda de [stsPolicy](stsPolicy.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Criar tokenLifetimePolicy](../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Crie um objeto tokenLifetimePolicy. |
 | [Obter tokenLifetimePolicy](../api/tokenlifetimepolicy-get.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Ler propriedades e relações de um objeto tokenLifetimePolicy. |
 | [Listar tokenLifetimePolicies](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Leia propriedades e relações de objetos tokenLifetimePolicies. |
-| [Atualizar tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | Nenhum(a) | Atualize um objeto tokenLifetimePolicy. |
-| [Excluir tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | Nenhum(a) | Exclua um objeto tokenLifetimePolicy. |
+| [Atualizar tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | Nenhum | Atualize um objeto tokenLifetimePolicy. |
+| [Excluir tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | Nenhum | Exclua um objeto tokenLifetimePolicy. |
 | [Lista appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | Coleção [directoryObject](directoryobject.md) | Obter a lista de directoryObjects aos qual essa política foi aplicada. |
-| [Atribiur tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md) | Nenhum(a) | Atribua um objeto tokenLifetimePolicy a [um aplicativo ou](application.md) objeto [servicePrincipal.](serviceprincipal.md) |
+| [Atribiur tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md) | Nenhum | Atribua um objeto tokenLifetimePolicy a [um aplicativo ou](application.md) objeto [servicePrincipal.](serviceprincipal.md) |
 | [Listar token atribuídoLifetimePolicy](../api/application-list-tokenlifetimepolicies.md) | Conjunto [tokenLifetimePolicy](tokenlifetimepolicy.md) | Listar os objetos tokenLifetimePolicy atribuídos a um [aplicativo](application.md) ou [objeto servicePrincipal.](serviceprincipal.md) |
-| [Remover tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md) | Nenhum(a) | Remova um objeto tokenLifetimePolicy de [um aplicativo ou](application.md) objeto [servicePrincipal.](serviceprincipal.md) |
+| [Remover tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md) | Nenhum | Remova um objeto tokenLifetimePolicy de [um aplicativo ou](application.md) objeto [servicePrincipal.](serviceprincipal.md) |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| Identificador exclusivo dessa política. Somente leitura.|
+|id|Cadeia de caracteres| Identificador exclusivo dessa política. Somente leitura.|
 |definition|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política. Consulte abaixo para obter mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
-|description|String| Descrição dessa política.|
-|displayName|String| Nome de exibição para esta política. Obrigatório.|
-|isOrganizationDefault|Booliano|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é false.|
+|description|Cadeia de caracteres| Descrição dessa política.|
+|displayName|Cadeia de caracteres| Nome de exibição para esta política. Obrigatório.|
+|isOrganizationDefault|Booliano|Se definido como `true` , ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como o padrão da organização. Opcional, o valor padrão é `false` .|
 
 
 ### <a name="properties-of-a-token-lifetime-policy-definition"></a>Propriedades de uma definição de política de vida útil do token
@@ -67,7 +67,7 @@ As propriedades abaixo formam o objeto JSON que representa uma política de vida
 
 | Propriedade     | Tipo   |Descrição| Valor Mínimo | Valor Máximo | Valor padrão|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|String|Controla por quanto tempo os tokens de acesso e ID são considerados válidos.|10 minutos|1 dia|1 hora|
+|AccessTokenLifetime|Cadeia de caracteres|Controla por quanto tempo os tokens de acesso e ID são considerados válidos.|10 minutos|1 dia|1 hora|
 |Versão|Inteiro|Definir o valor de 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
 
 ## <a name="relationships"></a>Relações
