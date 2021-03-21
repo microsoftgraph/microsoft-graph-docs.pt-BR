@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso protectAdhocAction
+title: Tipo de recurso protectAdhocAction
 description: Informa ao aplicativo que a proteção ad hoc deve ser aplicada.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 77fa6cd57f6887fae16592041d31fd433e1086fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 611e935464006dce61287bdb181828544c37ab10
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078189"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956845"
 ---
-# <a name="protectadhocaction-resource-type"></a>tipo de recurso protectAdhocAction
+# <a name="protectadhocaction-resource-type"></a>Tipo de recurso protectAdhocAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informa ao aplicativo que a proteção ad hoc deve ser aplicada. O **protectAdhocAction** informa aos aplicativos que o rótulo deve aplicar a proteção ad hoc. A proteção ad hoc é definida em tempo de execução pelo usuário ou aplicativo. O aplicativo de consumo deve usar o SDK de proteção de informações da Microsoft para aplicar localmente a proteção ao arquivo ou aos dados.
+Informa ao aplicativo que a proteção ad hoc deve ser aplicada. O **protectAdhocAction** informa que os aplicativos devem aplicar proteção ad hoc. A proteção ad hoc é definida em tempo de execução pelo usuário ou aplicativo. O aplicativo de consumo deve usar o SDK da Proteção de Informações da Microsoft para aplicar localmente a proteção ao arquivo ou aos dados.
 
 ## <a name="properties"></a>Propriedades
 

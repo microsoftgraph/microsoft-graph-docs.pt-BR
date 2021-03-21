@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 05f11678242aca85f64c742a3a74b2db287aa7bf
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 1cf1958dc4d07c9bf2b322e6a4b576ce4a8191f6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721807"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956852"
 ---
 # <a name="outlooktask-resource-type-deprecated"></a>tipo de recurso outlookTask (substituído)
 
@@ -69,16 +69,16 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
 |hasAttachments|Booliano|Defina como verdadeiro se a tarefa tiver anexos.|
 |id|Cadeia de caracteres| Identificador exclusivo para a tarefa. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
-|importância|cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|importância|importância|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |owner|Cadeia de caracteres|O nome da pessoa que criou a tarefa.|
 |parentFolderId|Cadeia de caracteres|O identificador exclusivo para a pasta pai da tarefa.|
 |recorrência|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
-|sensibilidade|cadeia de caracteres|Indica o nível de privacidade da tarefa. Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
+|sensibilidade|sensibilidade|Indica o nível de privacidade da tarefa. Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data no fuso horário especificado que a tarefa será iniciada.|
-|status|cadeia de caracteres|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |assunto|Cadeia de caracteres|Uma breve descrição ou o título da tarefa.|
 
 ## <a name="relationships"></a>Relações

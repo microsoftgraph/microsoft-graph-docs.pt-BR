@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fa201a61b1b2dd126cd75a9e90be1f6ec4b34d5e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: e4bdbc361de50a4d261596c6b7b4f0c070f2a299
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721639"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957034"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -45,51 +45,50 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. padrão é true.|
-|alternativeSecurityIds|Coleção alternativeSecurityId| Apenas para uso interno. Não anulável. |
+|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. padrão é true.|
+|alternativeSecurityIds|Coleção [alternativeSecurityId](alternativeSecurityId.md)| Apenas para uso interno. Não anulável. |
 |approximateLastSignInDateTime|DateTimeOffset| O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 |complianceExpirationDateTime|DateTimeOffset| O timestamp quando o dispositivo não é mais considerado compatível. O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 |deviceCategory|Cadeia de caracteres|Propriedade definida pelo usuário definida pelo Intune para adicionar automaticamente dispositivos a grupos e simplificar o gerenciamento de dispositivos.|
-|deviceId|Guid| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
-|deviceMetadata|String| Apenas para uso interno. Definido como nulo. |
-|deviceOwnership|Cadeia de caracteres|Propriedade do dispositivo. Essa propriedade é definida pelo Intune. Os valores possíveis são: desconhecido, empresa, pessoal.|
+|deviceId|Cadeia de caracteres| Identificador definido pelo Serviço de Registro de Dispositivo do Azure no momento do registro. |
+|deviceMetadata|String| Apenas para uso interno. Definir como `null` . |
+|deviceOwnership|Cadeia de caracteres|Propriedade do dispositivo. Essa propriedade é definida pelo Intune. Os valores possíveis são: `unknown`, `company`, `personal`.|
 |deviceVersion|Int32| Apenas para uso interno. |
 |displayName|Cadeia de caracteres| O nome de exibição do dispositivo. Obrigatório. |
 |domainName|Cadeia de caracteres|O nome de domínio local dos dispositivos ingressados no Azure AD híbrido. Essa propriedade é definida pelo Intune.|
-|enrollmentProfileName|Cadeia de caracteres|Perfil de registro aplicado ao dispositivo. Por exemplo, Perfil de Registro de Dispositivo Apple, Registro de Dispositivo - Identificadores de dispositivo corporativo ou nome de perfil do Windows Autopilot. Essa propriedade é definida pelo Intune.|
-|enrollmentType|String|Tipo de registro do dispositivo. Essa propriedade é definida pelo Intune. Os valores possíveis são: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.|
+|enrollmentProfileName|Cadeia de caracteres|Perfil de registro aplicado ao dispositivo. Por exemplo, `Apple Device Enrollment Profile` , `Device enrollment - Corporate device identifiers` ou `Windows Autopilot profile name` . Essa propriedade é definida pelo Intune.|
+|enrollmentType|String|Tipo de registro do dispositivo. Essa propriedade é definida pelo Intune. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |id|Cadeia de caracteres|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura.|
-|isCompliant|Booliano|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para dispositivos do sistema operacional Windows.|
-|isManaged|Booliano|**true** se o dispositivo for gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para dispositivos do sistema operacional Windows. |
-|isRooted|Booliano|**true** se o dispositivo estiver enraizado; **false** se o dispositivo for quebrado na cadeia. Isso só pode ser atualizado pelo Intune.|
-|managementType|String|Canal de gerenciamento do dispositivo.  Essa propriedade é definida pelo Intune. Os valores possíveis são: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.|
+|isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com políticas de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, `false` . Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para dispositivos do sistema operacional Windows.|
+|isManaged|Booliano|`true` se o dispositivo for gerenciado por um aplicativo MDM (Gerenciamento de Dispositivo Móvel). caso contrário, `false` . Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para dispositivos do sistema operacional Windows. |
+|isRooted|Booliano|`true` se o dispositivo estiver enraizado; `false` se o dispositivo estiver com a cadeia quebrada. Isso só pode ser atualizado pelo Intune.|
+|managementType|String|Canal de gerenciamento do dispositivo.  Essa propriedade é definida pelo Intune. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |fabricante|String| Fabricante do dispositivo. Somente leitura. |
-|mdmAppId|Cadeia de caracteres|Identificador de aplicativo usado para registrar o dispositivo no MDM. <br><br>Somente leitura. Oferece suporte a $filter.|
+|mdmAppId|Cadeia de caracteres|Identificador de aplicativo usado para registrar o dispositivo no MDM. Somente leitura. Oferece suporte para `$filter`.|
 |modelo|String| Modelo do dispositivo. Somente leitura. |
 |onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` somente leitura. |
-|onPremisesSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura.|
+|onPremisesSyncEnabled|Booliano|`true` se esse objeto está sincronizado de um diretório local; `false` se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; `null` se esse objeto nunca foi sido sincronizado de um diretório local (padrão).  Somente leitura.|
 |operatingSystem|String| O tipo de sistema operacional do dispositivo. Obrigatório. |
 |operatingSystemVersion|String| A versão do sistema operacional do dispositivo. Obrigatório. |
 |physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. |
-|profileType|Cadeia de caracteres|O tipo de perfil do dispositivo. Valores possíveis:<br />**RegisteredDevice** (padrão)<br />**SecureVM**<br />**Printer**<br />**Compartilhado**<br />**IoT**|
+|profileType|Cadeia de caracteres|O tipo de perfil do dispositivo. Valores possíveis: `RegisteredDevice` (padrão), `SecureVM` , , , `Printer` `Shared` `IoT` .|
 |registrationDateTime|DateTimeOffset|Data e hora de quando o dispositivo foi registrado. O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |systemLabels|Coleção de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. |
-|hostNames|Coleção de cadeias de caracteres| Lista de hostNames do dispositivo.|
-|trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](/azure/active-directory/device-management-introduction) |
-|Nome| Cadeia de caracteres | Nome amigável de um dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome. |
-|Status | Cadeia de caracteres| O dispositivo está online ou offline. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome. |
-|Plataforma |Cadeia de caracteres|Plataforma do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome.|
+|hostnames|Coleção de cadeias de caracteres| Lista de hostNames do dispositivo.|
+|trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: (indica trazer seus próprios dispositivos pessoais ), (Dispositivos ingressados apenas na nuvem) (dispositivos ingressados no domínio local `Workplace`  `AzureAd` `ServerAd` ingressados no Azure AD). Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](/azure/active-directory/device-management-introduction) |
+|nome| Cadeia de caracteres | Nome amigável de um dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome. |
+|status | Cadeia de caracteres| O dispositivo é `online` ou `offline` . Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome. |
+|plataforma |Cadeia de caracteres|Plataforma do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome.|
 |Tipo| Cadeia de caracteres| Fator de formulário do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome. |
-|Modelo| Cadeia de caracteres| Modelo de dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome. |
-|Fabricante| Cadeia de caracteres| Fabricante do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome. |
+|modelo| String| Modelo de dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome. |
+|fabricante| String| Fabricante do dispositivo. Somente retornado se o usuário entrar com uma conta da Microsoft como parte do Project Rome. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
 |registeredOwners|Coleção [directoryObject](directoryobject.md)| O usuário que associou o dispositivo na nuvem ou registrou seu dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário. Somente leitura. Anulável.|
 |registeredUsers|Coleção [directoryObject](directoryobject.md)| Coleção de usuários registrados do dispositivo. Para dispositivos associados em nuvem e dispositivos pessoais registrados, os usuários registrados são definidos para o mesmo valor que proprietários registrados no momento do registro. Somente leitura. Anulável.|
-|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o dispositivo. Anulável.|
 | comandos | [coleção command](command.md) | Conjunto de comandos enviados para este dispositivo|
 |usageRight|Coleção [usageRight](usageright.md)|Representa os direitos de uso que um dispositivo recebeu. |
 

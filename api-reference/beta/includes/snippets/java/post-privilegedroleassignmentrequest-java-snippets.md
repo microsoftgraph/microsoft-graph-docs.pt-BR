@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8a37c95e23afbdf9bef4e7898b1fa15c9f330999
-ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
+ms.openlocfilehash: 0ad9b7d8e36300cc23d88f4936a95dc6a4128aab
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49866138"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50975575"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PrivilegedRoleAssignmentRequest privilegedRoleAssignmentRequest = new PrivilegedRoleAssignmentRequest();
 privilegedRoleAssignmentRequest.duration = "2";
@@ -17,7 +17,7 @@ privilegedRoleAssignmentRequest.reason = "Activate the role for business purpose
 privilegedRoleAssignmentRequest.ticketNumber = "234";
 privilegedRoleAssignmentRequest.ticketSystem = "system";
 GovernanceSchedule schedule = new GovernanceSchedule();
-schedule.startDateTime = CalendarSerializer.deserialize("2018-02-08T02:35:17.903Z");
+schedule.startDateTime = OffsetDateTimeSerializer.deserialize("2018-02-08T02:35:17.903Z");
 privilegedRoleAssignmentRequest.schedule = schedule;
 privilegedRoleAssignmentRequest.type = "UserAdd";
 privilegedRoleAssignmentRequest.assignmentState = "Active";

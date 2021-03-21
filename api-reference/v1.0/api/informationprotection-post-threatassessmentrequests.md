@@ -1,22 +1,22 @@
 ---
 title: Create threatAssessmentRequest
-description: Criar uma nova solicitação de avaliação de ameaça.
+description: Crie uma nova solicitação de avaliação de ameaças.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d26434d06d300fd24bb42d9f6b1a35d93e51b205
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: a31c1a4fc532de2f59132aba8c10eafa397a023f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330012"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956534"
 ---
 # <a name="create-threatassessmentrequest"></a>Create threatAssessmentRequest
 
-Criar uma nova solicitação de avaliação de ameaça.
+Crie uma nova solicitação de avaliação de ameaças.
 
-Uma solicitação de avaliação de ameaça pode ser um dos seguintes tipos:
+Uma solicitação de avaliação de ameaças pode ser um dos seguintes tipos:
 
 * [Email](../resources/mailAssessmentRequest.md)
 * [Arquivo de email](../resources/emailFileAssessmentRequest.md)
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ThreatAssessment.ReadWrite.All             |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | ThreatAssessment.ReadWrite.All             |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,15 +49,15 @@ POST /informationProtection/threatAssessmentRequests
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) .
+No corpo da solicitação, fornece uma representação JSON de [um objeto threatAssessmentRequest.](../resources/threatassessmentrequest.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto threatAssessmentRequest](../resources/threatassessmentrequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-mail-assessment-request"></a>Exemplo 1: criar uma solicitação de avaliação de email
+### <a name="example-1-create-a-mail-assessment-request"></a>Exemplo 1: Criar uma solicitação de avaliação de email
 
 #### <a name="request"></a>Solicitação
 
@@ -139,7 +139,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-email-assessment-request"></a>Exemplo 2: criar uma solicitação de avaliação de email
+### <a name="example-2-create-an-email-assessment-request"></a>Exemplo 2: Criar uma solicitação de avaliação de email
 
 #### <a name="request"></a>Solicitação
 
@@ -221,7 +221,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-a-file-assessment-request"></a>Exemplo 3: criar uma solicitação de avaliação de arquivo
+### <a name="example-3-create-a-file-assessment-request"></a>Exemplo 3: Criar uma solicitação de avaliação de arquivo
 
 #### <a name="request"></a>Solicitação
 
@@ -302,7 +302,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-an-url-assessment-request"></a>Exemplo 4: criar uma solicitação de avaliação de URL
+### <a name="example-4-create-an-url-assessment-request"></a>Exemplo 4: Criar uma solicitação de avaliação de url
 
 #### <a name="request"></a>Solicitação
 

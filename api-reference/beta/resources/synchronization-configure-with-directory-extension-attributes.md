@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 1a19db23c5797812c41b10ca281efde887da90fc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: db5e2ba4bc715f608d17b8e11067df71141a6142
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131493"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956975"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Configurar a sincronização com atributos de extensão de diretório
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode personalizar seu esquema de sincronização para incluir atributos de extensão de diretório do Azure Active Directory (Azure AD). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para preencher o valor de User.CommunityNickname no Salesforce. Neste cenário, você tem o Azure AD Connect definido para provisionar vários atributos de extensão de diretório do Windows Server Active Directory local para o Azure AD. 
+Você pode personalizar seu esquema de sincronização para incluir atributos de extensão de diretório do Azure Active Directory (Azure AD). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para preencher o valor de User.CommunityNickname no Salesforce. Nesse cenário, você tem o Azure AD Connect definido para provisionar vários atributos de extensão de diretório do Windows Server Active Directory local para o Azure AD. 
 
-Este artigo presume que você já adicionou um aplicativo que dá suporte à sincronização com seu locatário por meio do Portal do [Azure,](https://portal.azure.com)que você sabe o nome de exibição do aplicativo e que tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, confira [Obter tokens de acesso para chamar o Microsoft Graph.](/graph/auth/)
+Este artigo supõe que você já adicionou um aplicativo que oferece suporte à sincronização ao seu locatário por meio do [Portal do Azure,](https://portal.azure.com)que você conhece o nome de exibição do aplicativo e que tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, consulte [Obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/).
 
-## <a name="find-the-service-principal-object-by-display-name"></a>Encontrar o objeto de entidade de serviço por nome de exibição
+## <a name="find-the-service-principal-object-by-display-name"></a>Encontre o objeto de entidade de serviço por nome de exibição
 
-O exemplo a seguir mostra como encontrar um objeto de entidade de serviço com o nome de exibição "Salesforce Sandbox".
+O exemplo a seguir mostra como encontrar um objeto de entidade de serviço com o nome de exibição "Área Desatenção do Salesforce".
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -58,7 +58,7 @@ O `{servicePrincipalId}` é `60443998-8cf7-4e61-b05c-a53b658cb5e1` .
 
 ## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Listar trabalhos de sincronização no contexto da entidade de serviço 
 
-O exemplo a seguir mostra como obter `jobId` o que você precisa para trabalhar. Geralmente, a resposta retorna apenas um trabalho.
+O exemplo a seguir mostra como obter o `jobId` que você precisa trabalhar. Geralmente, a resposta retorna apenas um trabalho.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -83,10 +83,10 @@ O `{jobId}` é `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` .
 
 ## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>Encontre o nome do atributo de extensão de diretório de que você precisa
 
-Você precisará do nome completo do atributo de extensão. Se você não sabe o nome completo (que deve ser semelhante ao **extension_9d98asdfl15980a_Nickname**), consulte as seguintes informações sobre atributos de extensão de diretório e como inspecioná-los: 
+Você precisará do nome completo do atributo extension. Se você não sabe o nome completo (que deve ser semelhante ao extension_9d98asdfl15980a_Nickname **),** confira as seguintes informações sobre atributos de extensão de diretório e como inspecioná-los: 
 
 * [Estendendo o esquema de diretório do Azure AD com propriedades personalizadas](/graph/extensibility-overview)
-* [Extensões de esquema de | Conceitos da API do Graph](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+* [Extensões de esquema de diretório | Conceitos de API do Graph](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
 ## <a name="get-the-synchronization-schema"></a>Obter o esquema de sincronização
@@ -96,26 +96,26 @@ O exemplo a seguir mostra como obter o esquema de sincronização.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_synchronizationschema"
+  "name": "get_synchronizationschema_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -219,20 +219,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>Adicionar uma definição para o atributo de extensão de diretório e um mapeamento entre os atributos
+## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>Adicione uma definição para o atributo de extensão de diretório e um mapeamento entre os atributos
 
-Use um editor de texto sem texto de sua preferência (por exemplo, Bloco de [Notas++](https://notepad-plus-plus.org/) ou [Editor JSON Online](https://www.jsoneditoronline.org/)) para:
+Use um editor de texto simples de sua escolha (por exemplo, [Notepad++](https://notepad-plus-plus.org/) ou [Editor JSON Online](https://www.jsoneditoronline.org/)) para:
 
-1. Adicione uma [definição de](synchronization-attributedefinition.md) atributo para o `extension_9d98asdfl15980a_Nickname` atributo. 
+1. Adicione uma [definição de atributo](synchronization-attributedefinition.md) para o `extension_9d98asdfl15980a_Nickname` atributo. 
 
-    - Em diretórios, encontre o diretório com o nome "Azure Active Directory" e, na matriz do objeto, encontre o chamado **Usuário**.
+    - Em diretórios, localizou o diretório com o nome "Azure Active Directory" e, na matriz do objeto, localizou o chamado **User**.
     - Adicione o novo atributo à lista, especificando o nome e o tipo, conforme mostrado no exemplo a seguir.
 
 2. Adicione um [mapeamento de atributos](synchronization-attributemapping.md) entre extension_9d98asdfl15980a_Nickname e CommunityNickname.
 
-    - Em [synchronizationRules](synchronization-synchronizationrule.md), encontre a regra que especifica o Azure AD como diretório de origem e Salesforce.com como o diretório de destino ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).
-    - Nos [objectMappings](synchronization-objectmapping.md) da regra, encontre o mapeamento entre os usuários ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).
-    - Na matriz [attributeMappings](synchronization-attributemapping.md) do **objectMapping,** adicione uma nova entrada, conforme mostrado no exemplo a seguir.
+    - Em [synchronizationRules,](synchronization-synchronizationrule.md)localiza a regra que especifica o Azure AD como diretório de origem e Salesforce.com como o diretório de destino ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).
+    - No [objectMappings](synchronization-objectmapping.md) da regra, encontre o mapeamento entre usuários ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).
+    - Na matriz [attributeMappings](synchronization-attributemapping.md) do **objectMapping**, adicione uma nova entrada, conforme mostrado no exemplo a seguir.
 
     ```json
     {
@@ -285,7 +285,7 @@ Use um editor de texto sem texto de sua preferência (por exemplo, Bloco de [Not
 
 ## <a name="save-the-modified-synchronization-schema"></a>Salvar o esquema de sincronização modificado
 
-Ao salvar o esquema de sincronização atualizado, certifique-se de incluir todo o esquema, incluindo as partes não modificadas. Essa solicitação substituirá o esquema existente pelo que você fornecer.
+Ao salvar o esquema de sincronização atualizado, certifique-se de incluir todo o esquema, incluindo as partes nãomodificadas. Essa solicitação substituirá o esquema existente pelo que você fornece.
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -298,7 +298,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincronização, ele começará a processar todas as contas no Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
+Se o esquema tiver sido salvo com êxito, na próxima iteração do trabalho de sincronização, ele começará a processar todas as contas no Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

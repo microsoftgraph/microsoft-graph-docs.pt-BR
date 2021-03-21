@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: cb0eb46feebb743a30593bf6e1d2b0142077cc7e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8e3adb4679233fa35a53574b6f8d0c2b806be110
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50718447"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956796"
 ---
 # <a name="directorydefinition-resource-type"></a>Tipo de recurso directoryDefinition
 
@@ -38,9 +38,9 @@ As definições de diretório são atualizadas como parte do [esquema de sincron
 |metadados       |Coleção metadataEntry    |Propriedades de extensão adicionais. A menos que mencionado explicitamente, os valores de metadados não devem ser alterados.|
 |nome           |Cadeia de caracteres     |Nome do diretório. Deve ser exclusivo no esquema [de sincronização](synchronization-synchronizationschema.md). Não anulável.|
 |objects        |[coleção objectDefinition](synchronization-objectdefinition.md)    |Coleção de objetos suportados pelo diretório.|
-|versão|String|Valor somente leitura que indica a versão descoberta. Nulo se a descoberta ainda não tiver ocorrido.|
-|discoveryDateTime|DateTimeOffset| Representa a data e a hora de descoberta usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|discoverabilities|cadeia de caracteres| Valor somente leitura indicando que tipo de descoberta o aplicativo oferece suporte. Os possíveis valores são: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
+|versão|String|Valor somente leitura que indica a versão descoberta. `null` se a descoberta ainda não tiver ocorrido.|
+|discoveryDateTime|DateTimeOffset| Representa a data e a hora de descoberta usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
+|discoverabilities|directoryDefinitionDiscoverabilities| Valor somente leitura indicando que tipo de descoberta o aplicativo oferece suporte. Os possíveis valores são: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
 
 ## <a name="json-representation"></a>Representação JSON
 

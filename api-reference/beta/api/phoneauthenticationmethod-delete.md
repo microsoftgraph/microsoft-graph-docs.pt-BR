@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1abea19acd14c53d75e51783f8bd01fa8ed74d81
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: bbd08b9da7a75c471e90b9846e3aaa2c1a503879
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516493"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957482"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>Excluir phoneAuthenticationMethod
 
@@ -34,16 +34,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
@@ -59,6 +59,10 @@ Para cenários delegados em que um administrador está atuando em outro usuário
 DELETE /me/authentication/phoneMethods/{id}
 DELETE /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
+O valor correspondente ao phoneType a ser `id` excluído é um dos seguintes:
++ `b6332ec1-7057-4abe-9331-3d72feddfe41` para excluir `alternateMobile` **o phoneType**.
++ `e37fc753-ff3b-4958-9484-eaa9425c82bc` para excluir `office` **o phoneType**.
++ `3179e48a-750b-4051-897c-87b9720928f7` para excluir `mobile` **o phoneType**.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

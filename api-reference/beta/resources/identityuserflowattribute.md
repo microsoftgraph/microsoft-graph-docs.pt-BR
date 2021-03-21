@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 3e8707627b09784972a1a578fe4b6b84a623f4dd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8262d8c77d31abbd25aaaae26018c651f0dcfbe5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440238"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50957006"
 ---
 # <a name="identityuserflowattribute-resource-type"></a>tipo de recurso identityUserFlowAttribute
 
@@ -39,8 +39,8 @@ Configurar os atributos de fluxo de usuário no seu Azure AD ou no Azure AD B2C 
 |id|String|O identificador do atributo de fluxo do usuário. Esse é um atributo somente leitura criado automaticamente.|
 |displayName|String|O nome de exibição do atributo de fluxo do usuário.|
 |descrição|String|A descrição do atributo de fluxo de usuário exibido para o usuário no momento da inscrição.|
-|userFlowAttributeType|String|O tipo do atributo de fluxo do usuário. Esse é um atributo somente leitura que é definido automaticamente. Dependendo do tipo de atributo, os valores dessa propriedade serão `builtIn` ou `custom`.|
-|dataType|Cadeia de caracteres|O tipo de dados do atributo de fluxo do usuário. Isso não pode ser modificado após o atributo de fluxo de usuário personalizado ser criado. Os valores com suporte para **tipo de dados** são:<br/><ul><li>`string` -indica que o tipo de dados para identityUserFlowAttribute é uma cadeia de caracteres. </li><li>`boolean` -indica que o tipo de dados para identityUserFlowAttribute é um booleano.</li><li>`int64` -indica que o tipo de dados para identityUserFlowAttribute é um número inteiro.</li></ul>|
+|userFlowAttributeType|identityUserFlowAttributeType|O tipo do atributo de fluxo do usuário. Esse é um atributo somente leitura que é definido automaticamente. Dependendo do tipo de atributo, os valores desta propriedade serão `builtIn`, `custom` ou `required`.|
+|dataType|identityUserFlowAttributeDataType|O tipo de dados do atributo de fluxo do usuário. Isso não pode ser modificado após o atributo de fluxo de usuário personalizado ser criado. Os valores suportados para **dataType** são: `string` , `boolean` , `int64` , `stringCollection` , `dateTime`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

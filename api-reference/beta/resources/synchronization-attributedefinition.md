@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 34503f3edf15542db449d56e5211cd33b3d9132e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a9c50721c1ee19505edc2507313cc346a6adabfd
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128810"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50956810"
 ---
 # <a name="attributedefinition-resource-type"></a>Tipo de recurso attributeDefinition
 
@@ -24,16 +24,16 @@ Descreve um atributo de um objeto.
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|âncora         |Boolean    | `true` se o atributo deve ser usado como âncora para o objeto. Os atributos de âncora devem ter um valor exclusivo que identifique um objeto e devem ser imutáveis. O padrão é `false`. Um e apenas um dos atributos do objeto devem ser designados como a âncora para suportar a sincronização. |
-|caseExact      |Boolean    |`true` se o valor desse atributo deve ser tratado como sensível a minúsculas. Essa configuração afeta como o mecanismo de sincronização detecta alterações para o atributo.|
-|flowNullValues |Boolean    |"true" para permitir valores nulos para atributos.|
-|metadados       |[Coleção metadataEntry](../resources/synchronization-metadataentry.md)   |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
-|multivalorado    |Boolean    |`true` se um atributo puder ter vários valores. O padrão é `false`.|
-|mutability     |String     |A transformabilidade de um atributo. Os valores possíveis `ReadWrite` são: `ReadOnly` , , `Immutable` . `WriteOnly` O padrão é `ReadWrite`.|
-|nome           |String     |Nome do atributo. Deve ser exclusivo na definição do objeto. Não anulável.|
-|obrigatório       |Boolean    |`true` se o atributo for necessário. O objeto não poderá ser criado se nenhum dos atributos necessários estiver faltando. Se, durante a sincronização, o atributo necessário não tiver valor, o valor padrão será usado. Se o valor padrão não foi definido, a sincronização registrará um erro.|
-|referencedObjects|[Coleção referencedObject](../resources/synchronization-referencedobject.md) |Para atributos com `reference` tipo, listas de objetos referenciados (por exemplo, o `manager` atributo listaria `User` como o objeto referenciado).|
-|type           |String     |Tipo de valor de atributo. Os valores possíveis são: `String`, `Integer`, `Reference`, `Binary`, `Boolean`. O padrão é `String`.|
+|anchor         |Booliano    | `true` se o atributo deve ser usado como âncora para o objeto. Os atributos de âncora devem ter um valor exclusivo que identifique um objeto e devem ser imutáveis. O padrão é `false`. Um e apenas um dos atributos do objeto devem ser designados como âncora para dar suporte à sincronização. |
+|caseExact      |Booliano    |`true` se o valor desse atributo deve ser tratado como sensível a caso. Essa configuração afeta como o mecanismo de sincronização detecta alterações para o atributo.|
+|flowNullValues |Booliano    |'true' para permitir valores nulos para atributos.|
+|metadados       |[Coleção metadataEntry](../resources/synchronization-metadataentry.md)   |Propriedades de extensão adicionais. A menos que mencionado explicitamente, os valores de metadados não devem ser alterados.|
+|multivalued    |Booliano    |`true` se um atributo pode ter vários valores. O padrão é `false`.|
+|mutabilidade     |mutabilidade     |Mutabilidade de um atributo. Os valores possíveis são:  `ReadWrite` `ReadOnly` , , , `Immutable` `WriteOnly` . O padrão é `ReadWrite`.|
+|nome           |Cadeia de caracteres     |Nome do atributo. Deve ser exclusivo na definição do objeto. Não anulável.|
+|obrigatório       |Booliano    |`true` se o atributo for necessário. O objeto não poderá ser criado se nenhum dos atributos necessários estiver ausente. Se durante a sincronização, o atributo necessário não tiver valor, o valor padrão será usado. Se o valor padrão não foi definido, a sincronização registrará um erro.|
+|referencedObjects|[Coleção referencedObject](../resources/synchronization-referencedobject.md) |Para atributos com `reference` tipo, lista objetos referenciados (por exemplo, o `manager` atributo listaria `User` como o objeto referenciado).|
+|tipo           |attributeType     |Tipo de valor de atributo. Os valores possíveis `String` são: `Integer` , , , , , `Reference` `Binary` `Boolean` `DateTime` . O padrão é `String`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
