@@ -5,80 +5,80 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e0759edf0a1b21a0c66cec8401c4198213535722
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cd34638570614aa0bae3e66a08f1558f361694a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966356"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50964434"
 ---
-# <a name="delete-call"></a><span data-ttu-id="d0e1e-103">Excluir chamada</span><span class="sxs-lookup"><span data-stu-id="d0e1e-103">Delete call</span></span>
+# <a name="delete-call"></a><span data-ttu-id="918b1-103">Excluir chamada</span><span class="sxs-lookup"><span data-stu-id="918b1-103">Delete call</span></span>
 
-<span data-ttu-id="d0e1e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d0e1e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="918b1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="918b1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="d0e1e-105">Excluir ou desligar uma chamada ativa.</span><span class="sxs-lookup"><span data-stu-id="d0e1e-105">Delete or hang up an active call.</span></span> <span data-ttu-id="d0e1e-106">Para chamadas de grupo, isso só excluirá o trecho de chamada, e a chamada de grupo subjacente ainda continuará.</span><span class="sxs-lookup"><span data-stu-id="d0e1e-106">For group calls, this will only delete your call leg and the underlying group call will still continue.</span></span>
+<span data-ttu-id="918b1-105">Excluir ou desligar uma chamada ativa.</span><span class="sxs-lookup"><span data-stu-id="918b1-105">Delete or hang up an active call.</span></span> <span data-ttu-id="918b1-106">Para chamadas de grupo, isso excluirá apenas sua etapa de chamada e a chamada de grupo subjacente continuará.</span><span class="sxs-lookup"><span data-stu-id="918b1-106">For group calls, this will only delete your call leg and the underlying group call will still continue.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d0e1e-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="d0e1e-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="918b1-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="918b1-107">Permissions</span></span>
 
-| <span data-ttu-id="d0e1e-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d0e1e-108">Permission type</span></span> | <span data-ttu-id="d0e1e-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d0e1e-109">Permissions (from least to most privileged)</span></span>                  |
+| <span data-ttu-id="918b1-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="918b1-108">Permission type</span></span> | <span data-ttu-id="918b1-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="918b1-109">Permissions (from least to most privileged)</span></span>                  |
 | :-------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="d0e1e-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d0e1e-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="d0e1e-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d0e1e-111">Not Supported.</span></span>                         |
-| <span data-ttu-id="d0e1e-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d0e1e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d0e1e-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d0e1e-113">Not Supported.</span></span>                         |
-| <span data-ttu-id="d0e1e-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d0e1e-114">Application</span></span>                            | <span data-ttu-id="d0e1e-115">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="d0e1e-115">None.</span></span>                                  |
+| <span data-ttu-id="918b1-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="918b1-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="918b1-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="918b1-111">Not Supported.</span></span>                         |
+| <span data-ttu-id="918b1-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="918b1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="918b1-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="918b1-113">Not Supported.</span></span>                         |
+| <span data-ttu-id="918b1-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="918b1-114">Application</span></span>                            | <span data-ttu-id="918b1-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="918b1-115">None.</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="d0e1e-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d0e1e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="918b1-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="918b1-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /communications/calls/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d0e1e-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d0e1e-117">Request headers</span></span>
-| <span data-ttu-id="d0e1e-118">Nome</span><span class="sxs-lookup"><span data-stu-id="d0e1e-118">Name</span></span>          | <span data-ttu-id="d0e1e-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="d0e1e-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="918b1-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="918b1-117">Request headers</span></span>
+| <span data-ttu-id="918b1-118">Nome</span><span class="sxs-lookup"><span data-stu-id="918b1-118">Name</span></span>          | <span data-ttu-id="918b1-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="918b1-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="d0e1e-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="d0e1e-120">Authorization</span></span> | <span data-ttu-id="d0e1e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d0e1e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="918b1-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="918b1-120">Authorization</span></span> | <span data-ttu-id="918b1-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="918b1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d0e1e-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d0e1e-123">Request body</span></span>
-<span data-ttu-id="d0e1e-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d0e1e-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="918b1-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="918b1-123">Request body</span></span>
+<span data-ttu-id="918b1-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="918b1-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d0e1e-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="d0e1e-125">Response</span></span>
-<span data-ttu-id="d0e1e-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d0e1e-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="918b1-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="918b1-125">Response</span></span>
+<span data-ttu-id="918b1-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="918b1-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d0e1e-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d0e1e-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="918b1-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="918b1-128">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="d0e1e-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d0e1e-129">Request</span></span>
-<span data-ttu-id="d0e1e-130">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="d0e1e-130">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="918b1-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="918b1-129">Request</span></span>
+<span data-ttu-id="918b1-130">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="918b1-130">The following example shows the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="d0e1e-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="d0e1e-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="918b1-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="918b1-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-call"
+  "name": "delete-call-1"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896
 ```
-# <a name="c"></a>[<span data-ttu-id="d0e1e-132">C#</span><span class="sxs-lookup"><span data-stu-id="d0e1e-132">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="918b1-132">C#</span><span class="sxs-lookup"><span data-stu-id="918b1-132">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d0e1e-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d0e1e-133">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="918b1-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="918b1-133">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d0e1e-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d0e1e-134">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="918b1-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="918b1-134">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="d0e1e-135">Java</span><span class="sxs-lookup"><span data-stu-id="d0e1e-135">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-call-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="918b1-135">Java</span><span class="sxs-lookup"><span data-stu-id="918b1-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-call-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="d0e1e-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="d0e1e-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="918b1-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="918b1-136">Response</span></span>
 
-> <span data-ttu-id="d0e1e-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d0e1e-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="918b1-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="918b1-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -88,7 +88,7 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-
 HTTP/1.1 204 No Content
 ```
 
-##### <a name="notification---terminating"></a><span data-ttu-id="d0e1e-139">Notificação-encerramento</span><span class="sxs-lookup"><span data-stu-id="d0e1e-139">Notification - terminating</span></span>
+##### <a name="notification---terminating"></a><span data-ttu-id="918b1-139">Notificação - término</span><span class="sxs-lookup"><span data-stu-id="918b1-139">Notification - terminating</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -117,7 +117,7 @@ Content-Type: application/json
   
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="d0e1e-140">Notificação-terminada</span><span class="sxs-lookup"><span data-stu-id="d0e1e-140">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="918b1-140">Notificação - encerrada</span><span class="sxs-lookup"><span data-stu-id="918b1-140">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
