@@ -5,36 +5,36 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ee7fa067e22ce072126c78385970919bf5fa1095
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 2588a60333fa6a4d66cbbf682225d21dc5cfc476
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292312"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959459"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal: addKey
 
 Namespace: microsoft.graph
 
-Adiciona uma credencial de chave a [um servicePrincipal](../resources/serviceprincipal.md). Esse método, [juntamente com removeKey,](serviceprincipal-removekey.md) pode ser usado por uma servicePrincipal para automatizar a rolagem de suas chaves expiradas.
+Adiciona uma credencial de chave a [um servicePrincipal](../resources/serviceprincipal.md). Esse método juntamente com [removeKey](serviceprincipal-removekey.md) pode ser usado por um servicePrincipal para automatizar a rolagem de suas chaves expiradas.
 
 > [!NOTE]
-> [Criar operações servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) e [Update servicePrincipal](../api/serviceprincipal-update.md) podem continuar a ser usadas para adicionar e atualizar credenciais de chave para qualquer servicePrincipal com ou sem o contexto de um usuário.
+> [Criar servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) e [Atualizar service As operaçõesPrincipal](../api/serviceprincipal-update.md) podem continuar a ser usadas para adicionar e atualizar credenciais de chave para qualquer servicePrincipal com ou sem o contexto de um usuário.
 
-Como parte da validação da solicitação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada. 
+Como parte da validação de solicitação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada. 
 
-ServicePrincipals que não têm certificados válidos existentes (ou seja, se nenhum certificado tiver sido adicionado ainda ou todos os certificados expiraram), não poderão usar essa ação de serviço. [Atualizar servicePrincipal](../api/serviceprincipal-update.md) pode ser usado para executar uma atualização.
+ServicePrincipals que não têm certificados válidos existentes (ou seja: nenhum certificado foi adicionado ainda, ou todos os certificados expiraram), não poderão usar essa ação de serviço. [Atualizar servicePrincipal](../api/serviceprincipal-update.md) pode ser usado para executar uma atualização.
 
 ## <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Nenhum.  |
+|Delegado (conta corporativa ou de estudante) | Nenhum  |
 |Delegado (conta pessoal da Microsoft) | Nenhum.    |
-|Aplicativo | Nenhum. |
+|Aplicativo | Nenhum |
 
 > [!NOTE]
-> Uma servicePrincipal não precisa de nenhuma permissão específica para rolar suas próprias chaves.
+> Um servicePrincipal não precisa de nenhuma permissão específica para rolar suas próprias chaves.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,18 +57,18 @@ No corpo da solicitação, forneça as seguintes propriedades necessárias.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | A nova credencial de chave servicePrincipal a ser acrescentada. O __tipo__, __uso__ __e chave__ são propriedades necessárias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: o uso deve ser `Verify` .</li><li>`X509CertAndPassword`: o uso deve ser `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Somente __secretText__ é necessário para ser definido que deve conter a senha da chave. Essa propriedade é necessária somente para chaves do tipo `X509CertAndPassword` . De definida como `null` caso contrário.|
-| proof | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do servicePrincipal. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor precisa ser a __id__  da servicePrincipal que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar esse token de comprovação de posse.|
+| keyCredential | [keyCredential](../resources/keycredential.md) | A nova credencial de chave servicePrincipal a ser acrescentada. O __tipo__, __uso__ __e chave__ são propriedades necessárias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: O uso deve ser `Verify` .</li><li>`X509CertAndPassword`: O uso deve ser `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Somente __secretText__ é necessário para ser definido que deve conter a senha da chave. Essa propriedade é necessária apenas para chaves do tipo `X509CertAndPassword` . De defini-lo como `null` caso contrário.|
+| proof | Cadeia de caracteres | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do servicePrincipal. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor precisa ser __a id__  do servicePrincipal que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar essa prova de token de posse.|
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código `200 OK` de resposta e um novo objeto [keyCredential](../resources/keycredential.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` novo [objeto keyCredential](../resources/keycredential.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-adding-a-new-key-credential-to-a-serviceprincipal"></a>Exemplo 1: Adicionando uma nova credencial de chave a uma servicePrincipal
+### <a name="example-1-adding-a-new-key-credential-to-a-serviceprincipal"></a>Exemplo 1: Adicionando uma nova credencial de chave a um servicePrincipal
 
 #### <a name="request"></a>Solicitação
 
@@ -78,7 +78,7 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_addkey"
+  "name": "serviceprincipal_addkey_1"
 }-->
 
 ```http
@@ -96,19 +96,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-addkey-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-addkey-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-addkey-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-addkey-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addkey-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addkey-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -133,15 +133,17 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-adding-a-key-credential-and-an-associated-password-for-the-key"></a>Exemplo 2: Adicionando uma credencial de chave e uma senha associada à chave
+### <a name="example-2-adding-a-key-credential-and-an-associated-password-for-the-key"></a>Exemplo 2: Adicionar uma credencial de chave e uma senha associada à chave
 
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_addkey"
+  "name": "serviceprincipal_addkey_2"
 }-->
 
 ```http
@@ -160,6 +162,24 @@ Content-type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-addkey-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-addkey-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addkey-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

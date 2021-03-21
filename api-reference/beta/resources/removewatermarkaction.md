@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso removeWatermarkAction
-description: Representa uma ação que especifica os detalhes sobre a marca d' água de conteúdo a ser removido das informações, se aplicável.
+title: Tipo de recurso removeWatermarkAction
+description: Representa uma ação que especifica os detalhes sobre a marca d'água de conteúdo a ser removida das informações, se aplicável.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0b75a001e7673bbeb1513eaac82555d228d712f5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a2365b2c9bc1080db9b6bf58b2035d88832881a
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023955"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960352"
 ---
-# <a name="removewatermarkaction-resource-type"></a>tipo de recurso removeWatermarkAction
+# <a name="removewatermarkaction-resource-type"></a>Tipo de recurso removeWatermarkAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma ação que especifica os detalhes sobre a marca d' água de conteúdo a ser removido das informações, se aplicável. As APIs [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)ou [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) podem retornar o **removeWatermarkAction** se a marca d' água for removida como resultado da atualização ou remoção do rótulo. A ação instrui o aplicativo de consumo a remover o elemento de interface do usuário específico que contém a marca d' água de conteúdo aplicável anteriormente.
+Representa uma ação que especifica os detalhes sobre a marca d'água de conteúdo a ser removida das informações, se aplicável. As APIs [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)ou [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) podem retornar a **removeWatermarkAction** se a marca d'água for removida como resultado da atualização ou remoção do rótulo. A ação instrui o aplicativo de consumo a remover o elemento de interface do usuário específico que contém a marca d'água de conteúdo anteriormente aplicável.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade       | Tipo              | Descrição                           |
 | :------------- | :---------------- | :------------------------------------ |
-| uiElementnames | Coleção String | O nome do elemento de interface do usuário do rodapé a ser removido. |
+| uiElementNames | Coleção de cadeias de caracteres | O nome do elemento de interface do usuário do rodapé a ser removido. |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: f10ee2a54a310018d87500e5dd4f939d1fe38a0e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: eb04c1e05c669758e282aebdcccfa4e55507e659
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443983"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960366"
 ---
 # <a name="program-resource-type"></a>tipo de recurso de programa
 
@@ -23,12 +23,12 @@ No recurso de revisões de acesso do Azure AD, um programa é um contêiner, man
 Cada locatário que tenha avaliações de acesso do Azure AD no Azure tem um programa, `Default program` .  Um administrador global pode criar programas adicionais, por exemplo, para representar iniciativas de conformidade. 
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Criar programa](../api/program-create.md) |   [program](program.md)   |   Crie um novo programa.|
-|[Excluir programa](../api/program-delete.md) |   Nenhum.   |   Excluir um programa.|
+|[Excluir programa](../api/program-delete.md) |   Nenhum   |   Excluir um programa.|
 |[Listar programas](../api/program-list.md) |  [conjunto de](program.md) programas|   Obter uma coleção de todos os programas.|
 |[Listar programControls de um programa](../api/program-listcontrols.md) |      [Coleção programControl](programcontrol.md)| Obter uma coleção dos controles de um programa.|
 |[Atualizar programa](../api/program-update.md) |   [program](program.md)|  Atualize um programa.|
@@ -36,9 +36,9 @@ Cada locatário que tenha avaliações de acesso do Azure AD no Azure tem um pro
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| `id`                        |`String`                              |  O identificador atribuído ao recurso do programa.                    |
-| `displayName`               |`String`                              |  O nome do programa.  Obrigatório durante a criação.                  |
-| `description`               |`String`                              |  A descrição do programa.           |
+| id                        |Cadeia de caracteres                              |  O identificador atribuído ao recurso do programa.                    |
+| displayName               |Cadeia de caracteres                              |  O nome do programa.  Obrigatório durante a criação.                  |
+| description               |Cadeia de caracteres                              |  A descrição do programa.           |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

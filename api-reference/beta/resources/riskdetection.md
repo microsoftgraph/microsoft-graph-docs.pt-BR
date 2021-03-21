@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 40fa938f94f5f43a61c191a3d3c14b0dbbb10d6f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: af77e46c688d514f3a7b49aff3c785712706f3e2
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440133"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960345"
 ---
 # <a name="riskdetection-resource-type"></a>Tipo de recurso riskDetection
 
@@ -27,7 +27,7 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 >[!NOTE]
 >Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de riscos.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
@@ -38,27 +38,27 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|`id`|`string`|ID exclusiva da detecção de risco. |
-|`requestId`|`string`|ID da solicitação da login associada à detecção de risco. Essa propriedade será nula se a detecção de risco não estiver associada a uma login.|
-|`correlationId`|`string`|ID de correlação do sign-in associado à detecção de risco. Essa propriedade será nula se a detecção de risco não estiver associada a uma login. |
-|`riskEventType`|`string`|O tipo de evento de risco detectado. Os valores possíveis `unlikelyTravel` são , , , , , , , `anonymizedIPAddress` , , , , `maliciousIPAddress` , , `unfamiliarFeatures` , , `malwareInfectedIPAddress` e `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue` . |
-|`riskType`|`riskEventType`|Lista de tipos de eventos de risco.<br/>**Observação:** Essa propriedade é preterida. Use **riskEventTypes** em vez disso. |
-|`riskState`|`riskState`|O estado de um usuário ou de login de risco detectado. Os valores possíveis são none, confirmedSafe, remediado, ignorado, atRisk, confirmedCompromised e unknownFutureValue. |
-|`riskLevel`|`riskLevel`|Nível do risco detectado. Os valores possíveis são baixo, médio, alto, oculto, nenhum, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Clientes P1 serão retornados `hidden` .|
-|`riskDetail`|`riskDetail`|Detalhes do risco detectado. Os valores possíveis não são nenhum, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Clientes P1 serão retornados `hidden` .|
-|`source`|`string`|Origem da detecção de risco. Por exemplo, "activeDirectory". |
-|`detectionTimingType`|`riskDetectionTimingType`|Tempo do risco detectado (em tempo real/offline). Os valores possíveis não sãoDefined, realtime, nearRealtime, offline, unknownFutureValue. |
-|`activity`|`activityType`|Indica o tipo de atividade ao qual o risco detectado está vinculado. Os valores possíveis são signin, user, unknownFutureValue. |
-|`tokenIssuerType`|`tokenIssuerType`|Indica o tipo de emissor de token para o risco de entrar detectado. Os valores possíveis são AzureAD, ADFederationServices e unknownFutureValue. |
-|`ipAddress`|`string`|Fornece o endereço IP do cliente de onde o risco ocorreu. |
-|`location`|[signInLocation](signinlocation.md)|Local da assinatura. |
-|`activityDateTime`|`datetimeoffset`|Data e hora em que a atividade arriscada ocorreu. |
-|`detectedDateTime`|`datetimeoffset`|Data e hora em que o risco foi detectado. |
-|`lastUpdatedDateTime`|`datetime`|Data e hora em que a detecção de risco foi atualizada pela última vez. |
-|`userId`|`string`|ID exclusivo do usuário. |
-|`userDisplayName`|`string`|Nome do usuário. |
-|`userPrincipalName`|`string`|O nome UPN do usuário. |
-|`additionalInfo`|`string`|Informações adicionais associadas à detecção de risco no formato JSON. |
+|id|cadeia de caracteres|ID exclusiva da detecção de risco. |
+|requestId|cadeia de caracteres|ID da solicitação da login associada à detecção de risco. Essa propriedade será nula se a detecção de risco não estiver associada a uma login.|
+|correlationId|cadeia de caracteres|ID de correlação do sign-in associado à detecção de risco. Essa propriedade será nula se a detecção de risco não estiver associada a uma login. |
+|riskEventType|cadeia de caracteres|O tipo de evento de risco detectado. Os valores possíveis `unlikelyTravel` são , , , , , , , , `anonymizedIPAddress` , , , `maliciousIPAddress` , , `unfamiliarFeatures` , `malwareInfectedIPAddress` e `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `generic` `adminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue` . |
+|riskType|riskEventType|Lista de tipos de eventos de risco.<br />**Observação:** Essa propriedade é preterida. Use **riskEventType** em vez disso. |
+|riskState|riskState|O estado de um usuário ou de login de risco detectado. Os valores possíveis `none` são , , , , , e `confirmedSafe` `remediated` `dismissed` `atRisk` `confirmedCompromised` `unknownFutureValue` . |
+|riskLevel|riskLevel|Nível do risco detectado. Os valores possíveis `low` são , , , , , `medium` `high` `hidden` `none` `unknownFutureValue` . <br />**Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Clientes P1 serão retornados `hidden` .|
+|riskDetail|riskDetail|Detalhes do risco detectado. Os valores possíveis `none` são , , , , , , , `adminGeneratedTemporaryPassword` , , , `userPerformedSecuredPasswordChange` , , `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden` `adminConfirmedUserCompromised` `unknownFutureValue` . <br />**Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Clientes P1 serão retornados `hidden` .|
+|source|cadeia de caracteres|Origem da detecção de risco. Por exemplo, `activeDirectory`. |
+|detectionTimingType|riskDetectionTimingType|Tempo do risco detectado (em tempo real/offline). Os valores possíveis `notDefined` são , , , , `realtime` `nearRealtime` `offline` `unknownFutureValue` . |
+|atividade|activityType|Indica o tipo de atividade ao qual o risco detectado está vinculado. Os valores possíveis são `signin` `user` , , `unknownFutureValue` . |
+|tokenIssuerType|tokenIssuerType|Indica o tipo de emissor de token para o risco de entrar detectado. Os valores possíveis são `AzureAD`, `ADFederationServices` e `unknownFutureValue`. |
+|ipAddress|cadeia de caracteres|Fornece o endereço IP do cliente de onde o risco ocorreu. |
+|location|[signInLocation](signinlocation.md)|Local da assinatura. |
+|activityDateTime|DateTimeOffset|Data e hora em que a atividade arriscada ocorreu. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|detectedDateTime|DateTimeOffset|Data e hora em que o risco foi detectado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z` |
+|lastUpdatedDateTime|DateTimeOffset|Data e hora em que a detecção de risco foi atualizada pela última vez. |
+|userId|cadeia de caracteres|ID exclusivo do usuário.  O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|userDisplayName|cadeia de caracteres|Nome do usuário. |
+|userPrincipalName|string|O nome UPN do usuário. |
+|additionalInfo|cadeia de caracteres|Informações adicionais associadas à detecção de risco no formato JSON. |
 
 ## <a name="json-representation"></a>Representação JSON
 

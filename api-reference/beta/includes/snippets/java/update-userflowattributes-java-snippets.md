@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d42aecd2ed10f3fae691cbff8988dd1e0a593140
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ae8613eaf47ffed15e0c2025aaeb9fd6a4f69c35
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953121"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50975817"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IdentityUserFlowAttribute identityUserFlowAttribute = new IdentityUserFlowAttribute();
 identityUserFlowAttribute.description = "Your new hobby";

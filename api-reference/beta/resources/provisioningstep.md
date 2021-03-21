@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso provisioningStep
-description: 'Descreve as etapas realizadas para executar uma ação. '
+description: 'Descreve as etapas tomadas para executar uma ação. '
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: bfc0fef09c1dfa8da4161a75449894e391ca1974
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 6baf1656cb470cfc8dc01908f5a398ac5d421eb1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135342"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960338"
 ---
 # <a name="provisioningstep-resource-type"></a>Tipo de recurso provisioningStep
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve as etapas realizadas para executar uma ação.
+Descreve as etapas tomadas para executar uma ação.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|String|Resumo do que ocorreu durante a etapa.|
+|description|Cadeia de caracteres|Resumo do que ocorreu durante a etapa.|
 |detalhes|[detailsInfo](detailsinfo.md)|Detalhes do que ocorreu durante a etapa.|
-|nome|String|Nome da etapa.|
-|provisioningStepType|String| Tipo de etapa. Os valores possíveis são: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
-|status|String| Status da etapa. Os valores possíveis `success` são: `warning` , , ,  `failure` `skipped` `unknownFutureValue` .|
+|nome|Cadeia de caracteres|Nome da etapa.|
+|provisioningStepType|provisioningStepType| Tipo de etapa. Os valores possíveis são: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
+|status|provisioningResult| Status da etapa. Os valores possíveis são: `success` , , , , `warning`  `failure` `skipped` `unknownFutureValue` .|
 
 ## <a name="json-representation"></a>Representação JSON
 

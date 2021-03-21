@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 92e521575e18c51874dc954cd61db18b5c8d5808
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9688d9d5b54958a33705a71bb8637923b5163ce5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440098"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959526"
 ---
 # <a name="list-riskdetections"></a>Listar riskDetections
 Namespace: microsoft.graph
@@ -59,7 +59,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 ### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
-  "name": "get_riskdetection"
+  "name": "get_riskdetection_2"
 }
 -->
 ``` http

@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso metadataaction
+title: Tipo de recurso metadataAction
 description: Representa os metadados a serem gravados ou removidos de um arquivo.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 55ddd644428662f6a646fd9c003761ab6f7c1e9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 23305d8a3e1e89d198b4700e794dd264eabf003b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021382"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960394"
 ---
-# <a name="metadataaction-resource-type"></a>tipo de recurso metadataaction
+# <a name="metadataaction-resource-type"></a>Tipo de recurso metadataAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os metadados a serem gravados ou removidos de um arquivo. **metadataaction** pode ser retornado pelas APIs [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)e [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) . A ação informa o aplicativo de consumo dos pares chave/valor específicos que devem ser adicionados ao arquivo ou as chaves de metadados específicas que devem ser removidas do arquivo. Este metadados é o que descreve o arquivo ou as informações que estão sendo *rotuladas*.
+Representa os metadados a serem gravados ou removidos de um arquivo. **metadataAction** pode ser retornada pelas APIs [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)e [evaluateClassificationResults.](../api/informationprotectionlabel-evaluateclassificationresults.md) A ação informa o aplicativo de consumo dos pares de chave/valor específicos que devem ser adicionados ao arquivo ou às chaves de metadados específicas que devem ser removidas do arquivo. Esse metadados é o que descreve o arquivo ou informações como *sendo rotulados*.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade         | Tipo                                       | Descrição                                                                        |
 | :--------------- | :----------------------------------------- | :--------------------------------------------------------------------------------- |
-| metadataToAdd    | Coleção [keyValuePair](keyvaluepair.md) | Uma coleção de pares chave de valor que deve ser adicionado ao arquivo.                  |
-| metadataToRemove | Coleção String                          | Uma coleção de cadeias de caracteres que indicam quais teclas serão removidas dos metadados do arquivo. |
+| metadataToAdd    | Coleção [keyValuePair](keyvaluepair.md) | Uma coleção de pares de valores-chave que devem ser adicionados ao arquivo.                  |
+| metadataToRemove | Coleção de cadeias de caracteres                          | Uma coleção de cadeias de caracteres que indica quais chaves remover dos metadados do arquivo. |
 
 ## <a name="json-representation"></a>Representação JSON
 

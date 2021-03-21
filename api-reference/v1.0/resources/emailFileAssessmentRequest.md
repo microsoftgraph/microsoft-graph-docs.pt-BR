@@ -3,14 +3,14 @@ title: Tipo de recurso emailFileAssessmentRequest
 description: Usado para criar e recuperar uma avaliação de ameaça de arquivo de email.
 localization_priority: Normal
 author: hafen-ms
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 956097a95016ce24d0935dea7f770476499052f2
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 707cc20666df8d225e0e2f0853cf47cb9b6352c4
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721989"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959302"
 ---
 # <a name="emailfileassessmentrequest-resource-type"></a>Tipo de recurso emailFileAssessmentRequest
 
@@ -18,7 +18,7 @@ Usado para criar e recuperar uma avaliação de ameaça de arquivo de email, der
 
 O arquivo de email pode ser um tipo de arquivo .eml.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|

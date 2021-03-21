@@ -1,33 +1,33 @@
 ---
 title: Obter presença
-description: Obtenha as informações de presença de um usuário.
-author: elvinyang-msft
+description: Obter informações de presença de um usuário.
+author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f0b807775de40758514e5a839a3af1b1d3a20a01
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: ccd05e056f4d751184dd2b5fbb9605377a9a64a0
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690553"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959676"
 ---
 # <a name="get-presence"></a>Obter presença
 
 Namespace: microsoft.graph
 
-Obtenha as informações de [presença](../resources/presence.md) de um usuário.
+Obter informações de presença [de um](../resources/presence.md) usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Presence.Read, Presence.Read.All      |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                        |
-| Application                            | Sem suporte.                        |
+| Aplicativo                            | Sem suporte.                        |
 
-> **Observação:** A taxa máxima de solicitações para esta API são 1500 solicitações de API em um período de 30 segundos, por aplicativo por locatário.
+> **Observação:** A taxa máxima de solicitação para essa API é de 1500 solicitações de API em um período de 30 segundos, por aplicativo por locatário.
 
 ## <a name="http-requests"></a>Solicitações HTTP
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ GET /users/{id}/presence
 GET /communications/presences
 ```
 
-## <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Headers de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
@@ -48,13 +48,13 @@ GET /communications/presences
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Presence](../resources/presence.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [de](../resources/presence.md) presença no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-get-your-own-presence-information"></a>Exemplo 1: obter suas próprias informações de presença
 
-O exemplo a seguir mostra como obter suas próprias informações de presença. Esta operação requer a permissão Presence. Read.
+O exemplo a seguir mostra como obter suas próprias informações de presença. Esta operação requer a permissão Presence.Read.
 
 #### <a name="request"></a>Solicitação
 
@@ -111,9 +111,9 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-2-get-the-presence-information-of-another-user"></a>Exemplo 2: obter as informações de presença de outro usuário
+### <a name="example-2-get-the-presence-information-of-another-user"></a>Exemplo 2: Obter as informações de presença de outro usuário
 
-O exemplo a seguir mostra como obter as informações de presença de outro usuário. Esta operação requer a permissão Presence. Read. All.
+O exemplo a seguir mostra como obter as informações de presença para outro usuário. Esta operação requer a permissão Presence.Read.All.
 
 #### <a name="request"></a>Solicitação
 
@@ -169,9 +169,9 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-3-get-the-presence-information-of-another-user"></a>Exemplo 3: obter as informações de presença de outro usuário
+### <a name="example-3-get-the-presence-information-of-another-user"></a>Exemplo 3: Obter as informações de presença de outro usuário
 
-O exemplo a seguir mostra como obter as informações de presença de outro usuário. Esta operação requer a permissão Presence. Read. All.
+O exemplo a seguir mostra como obter as informações de presença para outro usuário. Esta operação requer a permissão Presence.Read.All.
 
 #### <a name="request"></a>Solicitação
 

@@ -2,19 +2,21 @@
 title: Atualizar featureRolloutPolicy
 description: Atualize as propriedades do objeto featurerolloutpolicy.
 localization_priority: Normal
-author: keylimesoda
-ms.prod: directory-management
+author: madhavpatel6
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 26d5f16bd6d61689ff4cfe73b83c4a45add9c2f7
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 91567639b46a369305e8b02a3ee4cdde77f21aad
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471079"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50959267"
 ---
 # <a name="update-featurerolloutpolicy"></a>Atualizar featurerolloutpolicy
 
 Namespace: microsoft.graph
+
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,29 +37,29 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /directory/featureRolloutPolicies/{id}
+PATCH /policies/featureRolloutPolicies/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Authorization | Portador {código} |
+| Autorização | Portador {token}. Obrigatório |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores para propriedades relevantes que devem ser atualizadas. As propriedades existentes que não estão incluídas no corpo da solicitação mantêm os valores anteriores ou recalcula-os com base nas alterações feitas em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|Cadeia de caracteres|Uma descrição dessa política.|
 |displayName|Cadeia de caracteres|O nome de exibição dessa política.|
-|isAppliedToOrganization|Boolean|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
+|isAppliedToOrganization|Booliano|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Booliano|Indica se a adoção de recursos está habilitada.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto featureRolloutPolicy](../resources/featurerolloutpolicy.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No content`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -66,11 +68,11 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
-  "name": "update_featurerolloutpolicy"
+  "name": "update_featurerolloutpolicy_policies"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
+PATCH https://graph.microsoft.com/beta/policies/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
 Content-type: application/json
 
 {
@@ -85,12 +87,9 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.featureRolloutPolicy"
 } -->
 
 ```http

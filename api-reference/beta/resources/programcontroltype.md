@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 593d8a8fa36c03515dbad9a1ee1dd0b267f98577
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 58c9ee3ade6e3969de9653f54c5181a66f087ea5
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443941"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960359"
 ---
 # <a name="programcontroltype-resource-type"></a>Tipo de recurso programControlType
 
@@ -23,7 +23,7 @@ No recurso de revisões de acesso do Azure [AD,](accessreviews-root.md) o tipo d
 Os objetos do tipo de controle do programa são gerados automaticamente quando o administrador global inscarda o locatário para usar o recurso de críticas de acesso.  Nenhum tipo de controle de programa adicional pode ser criado.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -32,8 +32,8 @@ Os objetos do tipo de controle do programa são gerados automaticamente quando o
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| `id`                     |`String`                | O identificador atribuído ao recurso do tipo de controle do programa                                      |
-| `displayName`            |`String`                | O nome do tipo de controle do programa                                                             |
+| id                     |Cadeia de caracteres                | O identificador atribuído ao recurso do tipo de controle do programa                                      |
+| displayName            |Cadeia de caracteres                | O nome do tipo de controle do programa                                                             |
 
 
 ## <a name="relationships"></a>Relações

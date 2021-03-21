@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 35c6ab2136f8a04be7edbc6170b4e7e0328b314c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c52108e415388d8e4e919709fd619660c531aef8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722094"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960371"
 ---
 # <a name="notebook-resource-type"></a>tipo de recurso de bloco de anotações
 
@@ -67,7 +67,7 @@ Veja a seguir uma representação JSON do recurso
 |sectionGroupsUrl|Cadeia de caracteres|A URL da `sectionGroups` propriedade de navegação, que retorna todos os grupos de seções no bloco de anotações. Somente leitura.|
 |sectionsUrl|Cadeia de caracteres|A URL da `sections` propriedade de navegação, que retorna todas as seções no bloco de anotações. Somente leitura.|
 |self|Cadeia de caracteres|O ponto de extremidade onde você pode obter detalhes sobre o bloco de anotações. Somente leitura.|
-|userRole|String|Os valores possíveis são: `Owner`, `Contributor`, `Reader`, `None`. O proprietário representa o acesso no nível do proprietário ao bloco de anotações. Colaborador representa o acesso de leitura/gravação ao bloco de anotações. O leitor representa o acesso somente leitura ao bloco de anotações. Somente leitura.|
+|userRole|onenoteUserRole|Os valores possíveis são: `Owner`, `Contributor`, `Reader`, `None`. O proprietário representa o acesso no nível do proprietário ao bloco de anotações. Colaborador representa o acesso de leitura/gravação ao bloco de anotações. O leitor representa o acesso somente leitura ao bloco de anotações. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -86,7 +86,7 @@ Veja a seguir uma representação JSON do recurso
 |[List section groups](../api/notebook-list-sectiongroups.md) |[coleção sectionGroup](sectiongroup.md)| Obter uma coleção de grupos de seções no bloco de anotações especificado.|
 |[Criar seção](../api/notebook-post-sections.md) |[onenoteSection](onenotesection.md)| Crie uma seção postando na coleção sections no bloco de anotações especificado.|
 |[Listar seções](../api/notebook-list-sections.md) |[Coleção onenoteSection](onenotesection.md)| Obter uma coleção de seções no bloco de anotações especificado.|
-|[copyNotebook](../api/notebook-copynotebook.md)| Nenhum(a) | Copia um bloco de anotações.|
+|[copyNotebook](../api/notebook-copynotebook.md)| Nenhum | Copia um bloco de anotações.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso meetingCapability
+title: Tipo de recurso meetingCapability
 description: Contém os recursos de uma reunião
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 29da5c8d4796e393bfead08979aca8e58a95024d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d8e1d3985f95ecc28bd986218d7ff668f65b1db8
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971682"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960401"
 ---
-# <a name="meetingcapability-resource-type"></a>tipo de recurso meetingCapability
+# <a name="meetingcapability-resource-type"></a>Tipo de recurso meetingCapability
 
 Namespace: microsoft.graph
 
@@ -24,9 +24,9 @@ Contém os recursos de uma reunião
 
 | Propriedade                          | Tipo    | Descrição                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| allowAnonymousUsersToDialOut      | Boolean | Indica se os usuários anônimos de discagem são permitidos em uma reunião. |
-| allowAnonymousUsersToStartMeeting | Boolean | Indica se os usuários anônimos podem iniciar uma reunião.  |
-| autoAdmittedUsers                 | String  | Os valores possíveis são: `everyoneInCompany` e `everyone`.              |
+| allowAnonymousUsersToDialOut      | Booliano | Indica se o discagem de usuários anônimos é permitido em uma reunião. |
+| allowAnonymousUsersToStartMeeting | Booliano | Indica se os usuários anônimos têm permissão para iniciar uma reunião.  |
+| autoAdmittedUsers                 | autoAdmittedUsersType  | Os valores possíveis são: `everyoneInCompany` e `everyone`.              |
 
 ## <a name="json-representation"></a>Representação JSON
 
