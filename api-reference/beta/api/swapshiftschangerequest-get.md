@@ -1,38 +1,38 @@
 ---
 title: Obter swapShiftsChangeRequest
-description: Recupere as propriedades e os relacionamentos de um objeto swapShiftsChangeRequest.
+description: Recupere as propriedades e as relações de um objeto swapShiftsChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 964848e931c99f668e91af740ec18f30b3bae9c5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b10d7e5aef296b9a06b952abbc059892da9b3eb6
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971980"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50958920"
 ---
-# <a name="get-swapshiftschangerequest"></a><span data-ttu-id="f4c59-103">Obter swapShiftsChangeRequest</span><span class="sxs-lookup"><span data-stu-id="f4c59-103">Get swapShiftsChangeRequest</span></span>
+# <a name="get-swapshiftschangerequest"></a><span data-ttu-id="3406b-103">Obter swapShiftsChangeRequest</span><span class="sxs-lookup"><span data-stu-id="3406b-103">Get swapShiftsChangeRequest</span></span>
 
-<span data-ttu-id="f4c59-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f4c59-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3406b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3406b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f4c59-105">Recupere as propriedades e os relacionamentos de um objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) .</span><span class="sxs-lookup"><span data-stu-id="f4c59-105">Retrieve the properties and relationships of a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.</span></span>
+<span data-ttu-id="3406b-105">Recupere as propriedades e as relações de um [objeto swapShiftsChangeRequest.](../resources/swapshiftschangerequest.md)</span><span class="sxs-lookup"><span data-stu-id="3406b-105">Retrieve the properties and relationships of a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f4c59-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f4c59-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3406b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3406b-106">Permissions</span></span>
 
-<span data-ttu-id="f4c59-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f4c59-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3406b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3406b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f4c59-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f4c59-109">Permission type</span></span>                        | <span data-ttu-id="f4c59-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f4c59-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="3406b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3406b-109">Permission type</span></span>                        | <span data-ttu-id="3406b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3406b-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="f4c59-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f4c59-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f4c59-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f4c59-112">Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="f4c59-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f4c59-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4c59-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f4c59-114">Not supported.</span></span> |
-| <span data-ttu-id="f4c59-115">Application</span><span class="sxs-lookup"><span data-stu-id="f4c59-115">Application</span></span> | <span data-ttu-id="f4c59-116">Schedule. Read. All *, Schedule. ReadWrite. All*</span><span class="sxs-lookup"><span data-stu-id="f4c59-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span></span> |
+| <span data-ttu-id="3406b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3406b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="3406b-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3406b-112">Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="3406b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3406b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3406b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3406b-114">Not supported.</span></span> |
+| <span data-ttu-id="3406b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3406b-115">Application</span></span> | <span data-ttu-id="3406b-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="3406b-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span></span> |
 
-><span data-ttu-id="f4c59-117">\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.</span><span class="sxs-lookup"><span data-stu-id="f4c59-117">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
+><span data-ttu-id="3406b-117">\***Importante:** As permissões de aplicativo estão atualmente apenas em visualização privada e não estão disponíveis para uso público.</span><span class="sxs-lookup"><span data-stu-id="3406b-117">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f4c59-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f4c59-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3406b-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3406b-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,63 +40,63 @@ ms.locfileid: "48971980"
 GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f4c59-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="f4c59-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3406b-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="3406b-119">Optional query parameters</span></span>
 
-<span data-ttu-id="f4c59-120">Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="f4c59-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="f4c59-121">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="f4c59-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="3406b-120">Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="3406b-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="3406b-121">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="3406b-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f4c59-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f4c59-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3406b-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3406b-122">Request headers</span></span>
 
-| <span data-ttu-id="f4c59-123">Nome</span><span class="sxs-lookup"><span data-stu-id="f4c59-123">Name</span></span>      |<span data-ttu-id="f4c59-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="f4c59-124">Description</span></span>|
+| <span data-ttu-id="3406b-123">Nome</span><span class="sxs-lookup"><span data-stu-id="3406b-123">Name</span></span>      |<span data-ttu-id="3406b-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="3406b-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="f4c59-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="f4c59-125">Authorization</span></span> | <span data-ttu-id="f4c59-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f4c59-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3406b-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="3406b-125">Authorization</span></span> | <span data-ttu-id="3406b-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3406b-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f4c59-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f4c59-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3406b-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3406b-128">Request body</span></span>
 
-<span data-ttu-id="f4c59-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f4c59-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="3406b-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3406b-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f4c59-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="f4c59-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3406b-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="3406b-130">Response</span></span>
 
-<span data-ttu-id="f4c59-131">Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f4c59-131">If successful, this method returns a `200 OK` response code and the requested [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object in the response body.</span></span>
+<span data-ttu-id="3406b-131">Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3406b-131">If successful, this method returns a `200 OK` response code and the requested [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f4c59-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f4c59-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3406b-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="3406b-132">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="f4c59-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f4c59-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3406b-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3406b-133">Request</span></span>
 
-<span data-ttu-id="f4c59-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f4c59-134">The following is an example of the request.</span></span>
+<span data-ttu-id="3406b-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="3406b-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f4c59-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="f4c59-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3406b-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="3406b-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_swapshiftschangerequest"
+  "name": "get_swapshiftschangerequest_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftsChangeRequestId}
 ```
-# <a name="c"></a>[<span data-ttu-id="f4c59-136">C#</span><span class="sxs-lookup"><span data-stu-id="f4c59-136">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-csharp-snippets.md)]
+# <a name="c"></a>[<span data-ttu-id="3406b-136">C#</span><span class="sxs-lookup"><span data-stu-id="3406b-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f4c59-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f4c59-137">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-swapshiftschangerequest-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="3406b-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3406b-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-swapshiftschangerequest-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f4c59-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f4c59-138">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-swapshiftschangerequest-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="3406b-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3406b-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-swapshiftschangerequest-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f4c59-139">Java</span><span class="sxs-lookup"><span data-stu-id="f4c59-139">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-swapshiftschangerequest-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="3406b-139">Java</span><span class="sxs-lookup"><span data-stu-id="3406b-139">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-swapshiftschangerequest-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="f4c59-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="f4c59-140">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3406b-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="3406b-140">Response</span></span>
 
-<span data-ttu-id="f4c59-141">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f4c59-141">The following is an example of the response.</span></span>
+<span data-ttu-id="3406b-141">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3406b-141">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="f4c59-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f4c59-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="3406b-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3406b-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
