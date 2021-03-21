@@ -247,7 +247,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contacts
+          - name: Contatos
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -3779,7 +3779,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4054,6 +4054,70 @@ items:
                         href: api/subscribedsku-get.md
           - name: Identidade e entrada
             items:
+              - name: Métodos de autenticação
+                items:
+                  - name: Visão geral
+                    href: resources/authenticationmethods-overview.md
+                  - name: Listar todos os métodos
+                    href: api/authentication-list-methods.md
+                  - name: Chaves de segurança FIDO2
+                    href: resources/fido2authenticationmethod.md
+                    items:
+                      - name: Lista
+                        href: api/fido2authenticationmethod-list.md
+                      - name: Obter
+                        href: api/fido2authenticationmethod-get.md
+                      - name: Excluir
+                        href: api/fido2authenticationmethod-delete.md
+                  - name: Microsoft Authenticator
+                    href: resources/microsoftauthenticatorauthenticationmethod.md
+                    items:
+                      - name: Lista
+                        href: api/microsoftauthenticatorauthenticationmethod-list.md
+                      - name: Obter
+                        href: api/microsoftauthenticatorauthenticationmethod-get.md
+                      - name: Excluir
+                        href: api/microsoftauthenticatorauthenticationmethod-delete.md
+                  - name: Windows Hello para Empresas
+                    href: resources/windowshelloforbusinessauthenticationmethod.md
+                    items:
+                      - name: Lista
+                        href: api/windowshelloforbusinessauthenticationmethod-list.md
+                      - name: Obter
+                        href: api/windowshelloforbusinessauthenticationmethod-get.md
+                      - name: Excluir
+                        href: api/windowshelloforbusinessauthenticationmethod-delete.md
+              - name: Política de método de autenticação
+                items:
+                  - name: Visão geral
+                    href: resources/authenticationmethodspolicies-overview.md
+                  - name: Política FIDO2
+                    href: resources/fido2authenticationmethodconfiguration.md
+                    items:
+                      - name: Obter
+                        href: api/fido2authenticationmethodconfiguration-get.md
+                      - name: Atualizar
+                        href: api/fido2authenticationmethodconfiguration-update.md
+                      - name: Excluir
+                        href: api/fido2authenticationmethodconfiguration-delete.md
+                  - name: Política do Microsoft Authenticator
+                    href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+                    items:
+                      - name: Obter
+                        href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+                      - name: Atualizar
+                        href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+                      - name: Excluir
+                        href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+                  - name: Política de email
+                    href: resources/emailauthenticationmethodconfiguration.md
+                    items:
+                      - name: Obter
+                        href: api/emailauthenticationmethodconfiguration-get.md
+                      - name: Atualizar
+                        href: api/emailauthenticationmethodconfiguration-update.md
+                      - name: Excluir
+                        href: api/emailauthenticationmethodconfiguration-delete.md
               - name: Configuração de auth baseada em certificado
                 href: resources/certificatebasedauthconfiguration.md
                 items:
@@ -4256,6 +4320,23 @@ items:
                         href: api/claimsmappingpolicy-delete.md
                       - name: Listar aplicadas ao aplicativo
                         href: api/claimsmappingpolicy-list-appliesto.md
+                  - name: Política de lançamento de recursos
+                    href: resources/featurerolloutpolicy.md
+                    items:
+                      - name: Listar
+                        href: api/featurerolloutpolicies-list.md
+                      - name: Criar
+                        href: api/featurerolloutpolicies-post.md
+                      - name: Obter
+                        href: api/featurerolloutpolicy-get.md
+                      - name: Atualizar
+                        href: api/featurerolloutpolicy-update.md
+                      - name: Excluir
+                        href: api/featurerolloutpolicy-delete.md
+                      - name: Criar appliesTo
+                        href: api/featurerolloutpolicy-post-appliesto.md
+                      - name: Delete appliesTo
+                        href: api/featurerolloutpolicy-delete-appliesto.md
                   - name: Política de emissão de tokens
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -4461,7 +4542,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4572,7 +4653,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4662,7 +4743,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4684,7 +4765,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -4702,7 +4783,7 @@ items:
                     href: api/signin-get.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -4905,7 +4986,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -4931,7 +5012,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -4970,7 +5051,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -5029,7 +5110,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -5271,11 +5352,6 @@ items:
                 href: api/chatmessage-list-chatmessagehostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Chat
-            href: resources/chat.md
-            items:
-              - name: Obter chat entre o usuário e o aplicativo
-                href: api/userscopeteamsappinstallation-get-chat.md
           - name: Catálogo de aplicativos
             items:
               - name: Aplicativo no catálogo
@@ -5288,7 +5364,7 @@ items:
                 href: api/teamsapp-update.md
               - name: Remover aplicativo do catálogo
                 href: api/teamsapp-delete.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -5548,7 +5624,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
