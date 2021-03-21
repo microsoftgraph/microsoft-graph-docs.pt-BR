@@ -1,20 +1,23 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d83ae0fd5557cc9b0f39872f62feb6a0dba59b59
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 7fa0666bca077f65a9543b408926ae329c92e505
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218160"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50980472"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String message = "Approved!";
 
 graphClient.teams("{teamId}").schedule().offerShiftRequests("{offerShiftRequestId}")
-    .approve(message)
+    .approve(ScheduleChangeRequestApproveParameterSet
+        .newBuilder()
+        .withMessage(message)
+        .build())
     .buildRequest()
     .post();
 

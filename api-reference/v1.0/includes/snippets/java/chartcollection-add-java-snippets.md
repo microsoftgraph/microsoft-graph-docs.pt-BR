@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: bf40bdbec9f62e5c0bd9a8dd84c745350ecb933d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5ea156580637ae90088bb10c07357b51db7b6d81
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48983708"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50979872"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String type = "ColumnStacked";
 
@@ -18,7 +18,12 @@ JsonElement sourceData = JsonParser.parseString("A1:B1");
 String seriesBy = "Auto";
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts()
-    .add(type,sourceData,seriesBy)
+    .add(WorkbookChartAddParameterSet
+        .newBuilder()
+        .withType(type)
+        .withSourceData(sourceData)
+        .withSeriesBy(seriesBy)
+        .build())
     .buildRequest()
     .post();
 

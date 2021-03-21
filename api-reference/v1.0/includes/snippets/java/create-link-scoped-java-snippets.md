@@ -1,22 +1,29 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 40526a28a9c573fd5e7bf26389d182490f3bc024
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: ff6976d8ff9d60dbbd9fde62cabc2951ec789e2b
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43771034"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50980883"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String type = "edit";
 
 String scope = "organization";
 
 graphClient.me().drive().items("{item-id}")
-    .createLink(type,scope,null,null,null)
+    .createLink(DriveItemCreateLinkParameterSet
+        .newBuilder()
+        .withType(type)
+        .withScope(scope)
+        .withExpirationDateTime(null)
+        .withPassword(null)
+        .withMessage(null)
+        .build())
     .buildRequest()
     .post();
 

@@ -1,20 +1,23 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 411d997ea542d53bf56e4674b5d0cb0df78f011a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 1f54f171da952555e55dc7f1de1770f3aa9bbb6f
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880668"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50968994"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String destinationId = "destinationId-value";
 
 graphClient.me().messages("{id}")
-    .copy(destinationId)
+    .copy(MessageCopyParameterSet
+        .newBuilder()
+        .withDestinationId(destinationId)
+        .build())
     .buildRequest()
     .post();
 
