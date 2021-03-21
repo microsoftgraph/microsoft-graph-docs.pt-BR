@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2e331a482fce3274463f742ceba6dc111437cd95
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 162943a5f2d51744ae37d6644f8a01eafb31c259
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137379"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961287"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>Tipo de recurso conditionalAccessConditionSet
 
@@ -24,23 +24,20 @@ Representa o tipo de condições que regem quando a política se aplica.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Aplicativos e ações do usuário incluídos e excluídos da política. Obrigatório. |
+|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Aplicativos e ações do usuário incluídas e excluídas da política. Obrigatório. |
 |usuários|[conditionalAccessUsers](conditionalaccessusers.md)| Usuários, grupos e funções incluídos e excluídos da política. Obrigatório. |
-|clientAppTypes|Coleção de cadeias de caracteres| Tipos de aplicativo cliente incluídos na política. Os possíveis valores são: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
+|clientAppTypes|coleção conditionalAccessClientApp| Tipos de aplicativo cliente incluídos na política. Os possíveis valores são: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Obrigatório.|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Estados do dispositivo na política. |
 |devices|[conditionalAccessDevices](conditionalaccessdevices.md)| Dispositivos na política. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locais incluídos e excluídos da política. |
-|platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
-|signInRiskLevels|Coleção de cadeias de caracteres| Níveis de risco de login incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
-|userRiskLevels|Coleção de cadeias de caracteres| Níveis de risco do usuário incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
+|plataformas|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
+|signInRiskLevels|Coleção riskLevel| Níveis de risco de login incluídos na política. Os possíveis valores são: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Obrigatório.|
+|userRiskLevels|Coleção riskLevel| Níveis de risco de usuário incluídos na política. Os possíveis valores são: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Obrigatório.|
 
->**Observação:** 
-
->**clientAppType** `modern` será preterido e substituído por `mobileAppsAndDesktopClients` . 
-
->**clientAppType** `easUnsupported` será preterido em favor do que inclui plataformas compatíveis e sem suporte `exchangeActiveSync` do EAS. 
-
->Estamos preterindo a **condição deviceStates** e ela pode ser removida no futuro. No futuro, use a **condição de dispositivos.**
+>**Observação:**
+>* **clientAppType** `modern` será preterido e substituído por `mobileAppsAndDesktopClients` . <br>
+>* **clientAppType** `easUnsupported` será preterido em favor do que inclui plataformas com suporte e sem suporte do `exchangeActiveSync` EAS. <br>
+>* Estamos preterindo a condição **deviceStates** e ela pode ser removida no futuro. Em frente, use a **condição de** dispositivos.
 
 ## <a name="relationships"></a>Relações
 

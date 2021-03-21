@@ -5,25 +5,25 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7b418f16a69e5b97cbb42bc81994dfd87e5a3c1e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 41e84491593040ff44e9f5097fd6c960f9250b45
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135734"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50961101"
 ---
 # <a name="persistentbrowsersessioncontrol-resource-type"></a>Tipo de recurso persistentBrowserSessionControl
 
 Namespace: microsoft.graph
 
-Controle de sessão para definir se os cookies serão persistentes ou não. Herda do [Controle de Sessão de Acesso Condicional.](conditionalaccesssessioncontrol.md)
+Controle de sessão para definir se os cookies serão persistentes ou não. Herda do [Controle de Sessão de Acesso Condicional](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
-|modo|String| Os valores possíveis são: `always` e `never`.|
+|mode|persistentBrowserSessionMode| Os valores possíveis são: `always`, `never`.|
 
 ## <a name="relationships"></a>Relações
 

@@ -1,16 +1,16 @@
 ---
 title: 'informationProtectionLabel: evaluateClassificationResults'
-description: Avaliar qual rótulo aplicar com base nas informações de conteúdo existentes e em um resultado de classificação.
+description: Avalie qual rótulo aplicar com base nas informações de conteúdo existentes e em um resultado de classificação.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 25fafc91e9b230eb088bf379b33760ff83552882
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 46fdfc7ad1cfd798ecaf8685e1473da09701c1c1
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952900"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50960941"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usando [os resultados da classificação](../resources/classificationresult.md), calcule o [rótulo de proteção de informações](../resources/informationprotectionlabel.md) que deve ser aplicado e retorne o conjunto de ações que devem ser executadas para rotular corretamente as informações. Essa API é útil quando um rótulo deve ser definido automaticamente com base na classificação do conteúdo do arquivo, em vez de ser rotulado diretamente por um usuário ou serviço. 
+Usando [resultados de](../resources/classificationresult.md)classificação, calcule o rótulo de proteção de informações que deve ser aplicado e retorne o conjunto de ações que devem ser tomadas para rotular corretamente as informações. [](../resources/informationprotectionlabel.md) Essa API é útil quando um rótulo deve ser definido automaticamente com base na classificação do conteúdo do arquivo, em vez de rotulado diretamente por um usuário ou serviço. 
 
-Para avaliar com base nos resultados da classificação, forneça [contentInfo](../resources/contentinfo.md), que inclui [pares de chave/valor](../resources/keyvaluepair.md)de metadados de conteúdo existentes e [resultados da classificação](../resources/classificationresult.md). A API retorna um [informationProtectionAction](../resources/informationprotectionaction.md) que contém um ou mais dos seguintes itens: 
+Para avaliar com base nos resultados da classificação, forneça [contentInfo](../resources/contentinfo.md), que inclui pares de [chave/valor](../resources/keyvaluepair.md)de metadados de conteúdo existentes e resultados [de classificação.](../resources/classificationresult.md) A API retorna [uma informationProtectionAction](../resources/informationprotectionaction.md) que contém um dos seguintes: 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
-* [addwatermarkaction](../resources/addWatermarkaction.md)
+* [addWatermarkAction](../resources/addWatermarkaction.md)
 * [applyLabelAction](../resources/applylabelaction.md)
-* [Personalizada](../resources/customaction.md)
-* [justifyaction](../resources/justifyaction.md)
-* [metadataaction](../resources/metadataaction.md)
+* [customAction](../resources/customaction.md)
+* [justifyAction](../resources/justifyaction.md)
+* [metadataAction](../resources/metadataaction.md)
 * [protectAdhocAction](../resources/protectadhocaction.md)
 * [protectByTemplateAction](../resources/protectBytemplateaction.md)
 * [protectionDoNotForwardAction](../resources/protectdonotforwardaction.md)
@@ -46,7 +46,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+| Aplicativo                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -62,7 +62,7 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Autorização | {token} de portador. Obrigatório.                                                                                                                                             |
 | Content-type  | application/json. Obrigatório.                                                                                                                                           |
-| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
+| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes aparecerão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -71,11 +71,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro             | Tipo                                                                    | Descrição                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Fornece detalhes sobre o formato de conteúdo, o estado do conteúdo e os [metadados](../resources/keyvaluepair.md) existentes como pares de chave/valor.                                                                                                                                                   |
-| classificationResults | coleção [classificationResult](../resources/classificationresult.md) | Contém o conjunto de resultados de classificação retornado pelo ponto de extremidade de classificação de dados. As informações de classificação são usadas para determinar o rótulo apropriado com base na configuração de rótulo de política de proteção de informações da Microsoft no centro de segurança e conformidade do Office 365. |
+| classificationResults | [coleção classificationResult](../resources/classificationresult.md) | Contém o conjunto de resultados de classificação retornados pelo ponto de extremidade de classificação de dados. As informações de classificação são usadas para determinar o rótulo apropriado com base na configuração do rótulo da política de Proteção de Informações da Microsoft no Centro de Conformidade e Segurança do Office 365. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto da coleção [informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um novo objeto da coleção `200 OK` [informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
