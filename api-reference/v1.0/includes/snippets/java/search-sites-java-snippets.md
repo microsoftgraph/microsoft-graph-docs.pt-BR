@@ -1,20 +1,20 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e3449077169acc018398759cb86195106cbf1f64
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 8d3bf32a951935f1d3cc3ccf569f78f128112f27
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892210"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50969959"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new QueryOption("search", "{query}"));
 
-ISiteCollectionPage sites = graphClient.sites()
+SiteCollectionPage sites = graphClient.sites()
     .buildRequest( requestOptions )
     .get();
 
