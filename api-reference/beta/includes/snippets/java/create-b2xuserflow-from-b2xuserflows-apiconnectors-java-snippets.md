@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8945f2e4fea4b25274b368cd995c0229a12b8313
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: febebf2d4441f70c5aa91f6c2519499446e0d618
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844373"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50981929"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 B2xIdentityUserFlow b2xIdentityUserFlow = new B2xIdentityUserFlow();
 b2xIdentityUserFlow.id = "UserFlowWithAPIConnector";

@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: fb54ee7e87db7aa12a5e9d5b1a1dd06e196a08be
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9260e97afd6031fc568b597023fde81ded5cf977
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967402"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50980878"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
 LinkedList<Recipient> toRecipientsList = new LinkedList<Recipient>();
@@ -30,7 +30,11 @@ message.toRecipients = toRecipientsList;
 String comment = "Samantha, Randi, would you name the group please?";
 
 graphClient.me().messages("AAMkADA1MTAAAAqldOAAA=")
-    .reply(message,comment)
+    .reply(MessageReplyParameterSet
+        .newBuilder()
+        .withMessage(message)
+        .withComment(comment)
+        .build())
     .buildRequest()
     .post();
 
