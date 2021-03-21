@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1bde40d4f8dba0b84ea566017e565a487436c95e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 465d165d4bc0ce41023645c3da8abfe7b6a9c72e
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977559"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50972074"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("workbook-session-id", "{session-id}"));

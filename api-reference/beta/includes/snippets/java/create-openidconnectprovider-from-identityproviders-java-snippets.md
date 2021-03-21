@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7b6a3450e82cdc6648b33c7e2263eb620ed5defe
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4641308799106b6c34c73efba39e2e72c5403862
+ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953374"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50969832"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OpenIdConnectProvider identityProvider = new OpenIdConnectProvider();
 identityProvider.name = "Login with the Contoso identity provider";
