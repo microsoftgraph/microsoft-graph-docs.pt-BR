@@ -1,17 +1,8 @@
 ---
-title: Listar assinaturas
-description: Recupere as propriedades e os relacionamentos das assinaturas do webhook, com base no ID do aplicativo, no usuário e na função do usuário com um locatário.
-localization_priority: Priority
-author: davidmu1
-ms.prod: ''
-doc_type: apiPageType
-ms.openlocfilehash: 98b21b3ee8e049c4c3069406328be364fb89b0e2
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742214"
+título: descrição "Listar assinaturas": "Recuperar as propriedades e as relações das assinaturas de webhook, com base na ID do aplicativo, no usuário e na função do usuário com um locatário".
+localization_priority: Autor de prioridade: "Jumaodhiss" ms.prod: ""change-notifications" doc_type: apiPageType
 ---
+
 # <a name="list-subscriptions"></a>Listar assinaturas
 
 Namespace: microsoft.graph
@@ -46,8 +37,8 @@ Para esses cenários, é necessária uma permissão delegada Subscription.Read.A
 
 | Contexto do aplicativo de chamada | A resposta contém |
 |:-----|:---------------- |
-| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um não administrador* . <br/>-e-<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Nota: Isso se aplica a contas pessoais da Microsoft e contas de trabalho/escola. | Assinaturas criadas por **qualquer aplicativo** apenas para o usuário conectado. |
-| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um administrador* .<br/>-e-<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Nota: Isso se aplica apenas a contas de trabalho/escola. | Assinaturas criadas por **qualquer aplicativo** para **qualquer usuário** no diretório.|
+| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um não administrador*. <br/>-e-<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Nota: Isso se aplica a contas pessoais da Microsoft e contas de trabalho/escola. | Assinaturas criadas por **qualquer aplicativo** apenas para o usuário conectado. |
+| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um administrador*.<br/>-e-<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Nota: Isso se aplica apenas a contas de trabalho/escola. | Assinaturas criadas por **qualquer aplicativo** para **qualquer usuário** no diretório.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -114,7 +105,7 @@ Veja um exemplo de resposta.  Observe que pode estar truncada, para brevidade.  
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription",
   "isCollection": true
 } -->
@@ -140,7 +131,8 @@ Content-length: 586
       "latestSupportedTlsVersion": "v1_2",
       "encryptionCertificate": "",
       "encryptionCertificateId": "",
-      "includeResourceData": false
+      "includeResourceData": false,
+      "notificationContentType": "application/json"
     }
   ]
 }

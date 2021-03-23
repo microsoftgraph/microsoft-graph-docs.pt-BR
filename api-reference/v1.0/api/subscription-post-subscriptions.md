@@ -1,17 +1,8 @@
 ---
-title: Criar assinatura
-description: Inscreve um aplicativo de ouvinte para receber notificações de alterações quando os dados no Microsoft Graph forem alterados.
-localization_priority: Priority
-author: davidmu1
-ms.prod: ''
-doc_type: apiPageType
-ms.openlocfilehash: fb6f04b020fd925d1131f2d8f88afe44b185c5c7
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761427"
+título: descrição "Criar assinatura": "Assina um aplicativo ouvinte para receber notificações de alteração quando os dados no Microsoft Graph são alterados".
+localization_priority: Autor de prioridade: "Jumaodhiss" ms.prod: ""change-notifications" doc_type: apiPageType
 ---
+
 # <a name="create-subscription"></a>Criar assinatura
 
 Namespace: microsoft.graph
@@ -41,6 +32,8 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[impressora](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -145,8 +138,10 @@ Estes são os valores válidos da propriedade de recurso da assinatura:
 |[Grupos](../resources/group.md)|`groups`|
 |[Lista](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Email](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[Usuários](../resources/user.md)|`users`|
+|[impressora](../resources/printer.md) |`print/printers/{id}/jobs`|
+|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Alerta de segurança](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+|[Usuários](../resources/user.md)|`users`|
 
 > **Observação:** qualquer caminho iniciado por `me` também pode ser usado com `users/{id}` em vez de `me` para direcionar um usuário específico, em vez de usar o usuário atual.
 
@@ -174,7 +169,8 @@ Content-length: 252
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-  "latestSupportedTlsVersion": "v1_2"
+  "latestSupportedTlsVersion": "v1_2",
+  "notificationContentType": "application/json"
 }
 ```
 

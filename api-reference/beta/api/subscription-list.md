@@ -1,16 +1,16 @@
 ---
 title: Listar assinaturas
-description: " Veja os cenários abaixo para obter detalhes."
+description: " consulte os cenários abaixo para obter detalhes."
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 5ce70af9462ab0669dade856725f2589257743e2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: change-notifications
+ms.openlocfilehash: 25b37c652eac03eb827abfc4f6b43481e8d3e8c3
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972037"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031006"
 ---
 # <a name="list-subscriptions"></a>Listar assinaturas
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de assinaturas de webhook. O conteúdo da resposta depende do contexto no qual o aplicativo está chamando; Veja os cenários abaixo para obter detalhes.
+Recupere uma lista de assinaturas de webhook. O conteúdo da resposta depende do contexto no qual o aplicativo está chamando; consulte os cenários abaixo para obter detalhes.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Esta API suporta os seguintes escopos de permissão; para saber mais, incluindo 
 
 | Tipo de permissão  | Permissões (da com menos para a com mais privilégios)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegado](/graph/auth-v2-user) (conta corporativa ou de estudante) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
-| [Delegado](/graph/auth-v2-user) (conta pessoal da Microsoft) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
-| [Aplicação](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
+| [Delegada](/graph/auth-v2-user) (conta de trabalho ou de estudante) | Permissão necessária para criar [assinatura ou](subscription-post-subscriptions.md) Subscription.Read.All (consulte abaixo). |
+| [Delegada](/graph/auth-v2-user) (conta pessoal da Microsoft) | Permissão necessária para criar [assinatura ou](subscription-post-subscriptions.md) Subscription.Read.All (consulte abaixo). |
+| [Aplicativo](/graph/auth-v2-service) | Permissão necessária para criar [assinatura](subscription-post-subscriptions.md). |
 
 Os resultados da resposta são baseados no contexto do aplicativo de chamada. A seguir, um resumo dos cenários comuns:
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: a resposta mostrada aqui pode ser truncada por brevidade. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: a resposta mostrada aqui pode ser truncada para brevidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -142,7 +142,8 @@ Content-length: 586
       "latestSupportedTlsVersion": "v1_2",
       "encryptionCertificate": "",
       "encryptionCertificateId": "",
-      "includeResourceData": false
+      "includeResourceData": false,
+      "notificationContentType": "application/json"
     }
   ]
 }

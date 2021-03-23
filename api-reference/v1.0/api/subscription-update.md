@@ -1,17 +1,8 @@
 ---
-title: Atualizar assinatura
-description: Renove uma assinatura ampliando seu tempo de validade.
-localization_priority: Normal
-author: davidmu1
-ms.prod: ''
-doc_type: apiPageType
-ms.openlocfilehash: e63f810e6e11d18d2e03fb702a629cee74d768fe
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759500"
+title: descrição "Atualizar assinatura": "Renovar uma assinatura estendendo seu tempo de expiração".
+localization_priority: Autor normal: "Jumaodhiss" ms.prod: ""change-notifications" doc_type: apiPageType
 ---
+
 # <a name="update-subscription"></a>Atualizar assinatura
 
 Namespace: microsoft.graph
@@ -41,6 +32,8 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[impressora](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -128,7 +121,7 @@ Content-type: application/json
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
@@ -150,7 +143,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2",
   "encryptionCertificate": "",
   "encryptionCertificateId": "",
-  "includeResourceData": false
+  "includeResourceData": false,
+  "notificationContentType": "application/json"
 }
 ```
 

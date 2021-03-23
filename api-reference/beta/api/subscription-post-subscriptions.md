@@ -1,16 +1,16 @@
 ---
 title: Criar assinatura
-description: Assina um aplicativo ouvinte para receber notificações de alteração quando os dados de um recurso do Microsoft Graph são alterações.
+description: Inscreve um aplicativo ouvinte para receber notificações de alteração quando os dados de um recurso do Microsoft Graph mudarem.
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 191036a8df1ab58362bf26138722d7212aa2ee69
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: f89720d18db554a8700e5d14b2bafd15d92d5f0f
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092740"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031027"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Inscreve um aplicativo de ouvinte para receber notificações de alterações quando o tipo de alteração solicitado ocorrer no recurso especificado no Microsoft Graph.
 
-Consulte a tabela na [seção Permissões para](#permissions) ver a lista de recursos que suportam a assinatura para alterar notificações.
+Consulte a tabela na seção [Permissões](#permissions) para obter a lista de recursos que oferecem suporte à inscrição para alterar notificações.
 
 ## <a name="permissions"></a>Permissões
 
-Criar uma assinatura requer permissão de leitura para o recurso. Por exemplo, para receber notificações de alteração em mensagens, seu aplicativo precisa da permissão Mail.Read. 
+A criação de uma assinatura requer permissão de leitura para o recurso. Por exemplo, para receber notificações de alteração em mensagens, seu aplicativo precisa da permissão Mail.Read. 
 
-Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
+Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
@@ -72,7 +72,7 @@ As limitações adicionais se aplicam aos itens do Outlook. As limitações se a
 
 ### <a name="presence"></a>presença
 
-**assinaturas** de presença [exigem criptografia.](/graph/webhooks-with-resource-data) A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
+**assinaturas** de presença exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -90,7 +90,7 @@ POST /subscriptions
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
 
 Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 
@@ -101,7 +101,7 @@ Para detalhes sobre como os erros são retornados, confira [Respostas de erro][e
 No corpo da solicitação, forneça uma representação JSON do objeto [subscription](../resources/subscription.md).
 Os campos `clientState` e `latestSupportedTlsVersion` são opcionais.
 
-Essa solicitação cria uma assinatura para notificações de alteração sobre novos emails recebidos pelo usuário atualmente assinado.
+Essa solicitação cria uma assinatura para notificações de alteração sobre novos emails recebidos pelo usuário atualmente inscrito.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -145,7 +145,7 @@ Os campos `clientState` e `latestSupportedTlsVersion` são opcionais.
 
 #### <a name="resources-examples"></a>Exemplos de recursos
 
-A seguir estão os valores válidos para a propriedade de recurso.
+Os valores a seguir são válidos para a propriedade resource.
 
 | Tipo de recurso | Exemplos |
 |:------ |:----- |
@@ -193,13 +193,14 @@ Content-length: 252
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-  "latestSupportedTlsVersion": "v1_2"
+  "latestSupportedTlsVersion": "v1_2",
+  "notificationContentType": "application/json"
 }
 ```
 
 ### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
 
-O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl)** deve ser capaz de responder a uma solicitação de validação conforme descrito em Configurar notificações para alterações nos dados [do usuário.](/graph/webhooks#notification-endpoint-validation) Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
+O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl)** deve ser capaz de responder a uma solicitação de validação conforme descrito em [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 
 [error-response]: /graph/errors
 
