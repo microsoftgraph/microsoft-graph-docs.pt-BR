@@ -5,12 +5,12 @@ author: jahsu
 localization_priority: Priority
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0d4cbaabb6fc05df3d9a58d1ced467bee0b8ef04
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: f5413cc178f220b34c37aa1fc4840596003561bc
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515727"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031104"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>Assine para alterar notificações de APIs de impressão na nuvem usando o Microsoft Graph
 
@@ -47,11 +47,11 @@ Para obter informações sobre como ouvir as notificações do Microsoft Graph, 
 
 Para assinar as notificações de trabalhos de impressão, os aplicativos devem ter os seguintes escopos de permissão aprovados no locatário do Azure AD do cliente: 
 
-* Para evento printTask acionado (JobStarted), as permissões listadas em [Obter taskDefinition](/graph/api/printtaskdefinition-get?view=graph-rest-beta&tabs=http%22%20%5Cl%20%22permissions%22%20%5C). 
+* Para evento printTask acionado (JobStarted), as permissões listadas em [Obter taskDefinition](/graph/api/printtaskdefinition-get?view=graph-rest-v1.0&tabs=http%22%20%5Cl%20%22permissions%22%20%5C). 
 
-* Para evento JobFetchable, as permissões listadas em [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http).
+* Para evento JobFetchable, as permissões listadas em [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http).
 
-Os aplicativos devem [gerar e usar o token de segurança do Azure AD](/graph/auth-v2-service?context=graph%2Fapi%2Fbeta&view=graph-rest-beta) no cabeçalho de solicitação da API do Microsoft Graph. O token de segurança contém as declarações de acordo com os escopos aprovados para o locatário do Azure AD do cliente por seu administrador.  
+Os aplicativos devem [gerar e usar o token de segurança do Azure AD](/graph/auth-v2-service?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) no cabeçalho de solicitação da API do Microsoft Graph. O token de segurança contém as declarações de acordo com os escopos aprovados para o locatário do Azure AD do cliente por seu administrador.  
 
 
 ## <a name="create-subscription-printtask-triggered-jobstarted-event"></a>Criar assinatura: evento printTask acionado (JobStarted) 
@@ -60,20 +60,20 @@ Alguns aplicativos monitoram as filas de impressão em busca de trabalhos recebi
 
 Antes de criar uma notificação para um evento **printTask**-acionado, certifique-se de que o aplicativo criou o seguinte: 
 
-- Um [printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta&tabs=http)  para o locatário do Azure AD do cliente. Uma única definição de tarefa pode ser associada a uma ou mais impressoras no mesmo locatário do Azure AD. 
+- Um [printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-v1.0&tabs=http)  para o locatário do Azure AD do cliente. Uma única definição de tarefa pode ser associada a uma ou mais impressoras no mesmo locatário do Azure AD. 
 
-- Um [printTaskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-beta&tabs=http) de cada uma das filas de impressão para as quais o parceiro quer receber uma notificação quando um novo trabalho de impressão for iniciado. O **printTaskTrigger** precisa ser vinculado ao **printTaskDefinition**. 
+- Um [printTaskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-v1.0&tabs=http) de cada uma das filas de impressão para as quais o parceiro quer receber uma notificação quando um novo trabalho de impressão for iniciado. O **printTaskTrigger** precisa ser vinculado ao **printTaskDefinition**. 
 
 >[!NOTE]
 >Uma impressora pode ser associada a apenas um **printTaskTrigger** e um **printTaskTrigger** pode ser associado a apenas um **printTaskDefinition**. No entanto, um **printTaskDefinition** pode ter um ou mais **printTaskTriggers** associados a ele. 
 
-Com o **printTaskDefinition** existente para o locatário do Azure AD do cliente, o aplicativo pode [criar uma assinatura para um evento printTask acionado (JobStarted) usando o printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). Ao criar a assinatura:  
+Com o **printTaskDefinition** existente para o locatário do Azure AD do cliente, o aplicativo pode [criar uma assinatura para um evento printTask acionado (JobStarted) usando o printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http). Ao criar a assinatura:  
 
 * O campo `resource` precisa ser definido como `print/taskDefinitions/{printTaskDefinition ID}/tasks`. 
 * O campo `changeType` precisa ser definido como `created`. 
-* O campo `expirationDateTime` precisa ser menor que o [tempo máximo de expiração](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
+* O campo `expirationDateTime` precisa ser menor que o [tempo máximo de expiração](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type). 
 
-Para obter mais detalhes, confira [Propriedades do tipo de recurso da assinatura.](/graph/api/resources/subscription?view=graph-rest-beta#properties).
+Para obter mais detalhes, confira [Propriedades do tipo de recurso da assinatura.](/graph/api/resources/subscription?view=graph-rest-v1.0#properties).
 
 Este é um exemplo de solicitação.
 <!-- {
@@ -81,7 +81,7 @@ Este é um exemplo de solicitação.
   "name": "create_subscription"
 }--> 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions 
+POST https://graph.microsoft.com/v1.0/subscriptions 
 Content-Type: application/json
 { 
     "changeType":"created", 
@@ -103,7 +103,7 @@ O exemplo a seguir mostra a resposta.
 HTTP/1.1 201 Created
 Content-Type: application/json
 { 
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity", 
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity", 
     "id": "{Subscription ID}", 
     "resource": "print/taskDefinitions/{printTaskDefinition ID}/tasks", 
     "applicationId": "{application ID}", 
@@ -131,9 +131,9 @@ Uma notificação JobFetchable precisa ser criada para cada fila da impressora. 
 * O campo `resource` precisa ser definido como 'print/printers/{printer id}/jobs'. 
 * O campo `changeType` precisa ser definido como `updated`. 
 * O campo `notificationQueryOptions` precisa ser definido como `$filter = isFetchable eq true`. 
-* O campo `expirationDateTime` precisa ser menor que o [tempo máximo de expiração](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). 
+* O campo `expirationDateTime` precisa ser menor que o [tempo máximo de expiração](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type). 
 
-Para obter mais detalhes, confira [Propriedades do tipo de recurso da assinatura.](/graph/api/resources/subscription?view=graph-rest-beta#properties).
+Para obter mais detalhes, confira [Propriedades do tipo de recurso da assinatura.](/graph/api/resources/subscription?view=graph-rest-v1.0#properties).
 
 Este é um exemplo de solicitação.
 <!-- {
@@ -141,7 +141,7 @@ Este é um exemplo de solicitação.
   "name": "create_subscription"
 }--> 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
     "changeType":"updated",
@@ -164,7 +164,7 @@ O exemplo a seguir mostra a resposta.
 HTTP/1.1 201 Created
 Content-Type: application/json
 { 
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity", 
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity", 
     "id": "{Subscription ID}", 
     "resource": "print/printers/{printer ID}/jobs", 
     "applicationId": "{Application ID}", 
@@ -185,11 +185,11 @@ Content-Type: application/json
 
 ## <a name="renewing-a-notification-subscription"></a>Renovando uma assinatura de notificação
 
-O Microsoft Graph tem um limite de tempo de expiração. Para obter detalhes, confira [tempo máximo de expiração](/graph/api/resources/subscription?view=graph-rest-beta#maximum-length-of-subscription-per-resource-type). Para continuar recebendo notificações, é necessário que a assinatura seja renovada periodicamente, usando a [API de atualização da assinatura](/graph/api/subscription-update?view=graph-rest-beta&tabs=http). 
+O Microsoft Graph tem um limite de tempo de expiração. Para obter detalhes, confira [tempo máximo de expiração](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type). Para continuar recebendo notificações, é necessário que a assinatura seja renovada periodicamente, usando a [API de atualização da assinatura](/graph/api/subscription-update?view=graph-rest-v1.0&tabs=http). 
 
 ## <a name="other-operations-on-notification-subscriptions"></a>Outras operações sobre assinaturas de notificação 
 
-Os aplicativos podem [obter](/graph/api/subscription-get?view=graph-rest-beta&tabs=http) detalhes da assinatura ou podem [excluir](/graph/api/subscription-delete?view=graph-rest-beta&tabs=http) uma assinatura quando necessário. Para obter detalhes, confira [Usar a API do Microsoft Graph para receber notificações de alteração](/graph/api/resources/webhooks?view=graph-rest-beta).
+Os aplicativos podem [obter](/graph/api/subscription-get?view=graph-rest-v1.0&tabs=http) detalhes da assinatura ou podem [excluir](/graph/api/subscription-delete?view=graph-rest-v1.0&tabs=http) uma assinatura quando necessário. Para obter detalhes, confira [Usar a API do Microsoft Graph para receber notificações de alteração](/graph/api/resources/webhooks?view=graph-rest-v1.0).
 
 
 ## <a name="faqs"></a>Perguntas frequentes
@@ -201,7 +201,7 @@ Para obter detalhes, confira [Validação do ponto de extremidade da notificaç�
 Os aplicativos devem processar e reconhecer todas as notificações de alteração recebidas. Para obter detalhes, confira [Processando a notificação de alteração](/graph/webhooks#processing-the-change-notification).
 
 ### <a name="how-can-i-get-a-list-of-active-subscriptions"></a>Como posso obter uma lista de assinaturas ativas?
-Para obter detalhes sobre como recuperar uma lista de assinaturas de webhook, confira [Listar assinaturas](/graph/api/subscription-list?view=graph-rest-beta&tabs=http).
+Para obter detalhes sobre como recuperar uma lista de assinaturas de webhook, confira [Listar assinaturas](/graph/api/subscription-list?view=graph-rest-v1.0&tabs=http).
 
 
 ## <a name="see-also"></a>Confira também

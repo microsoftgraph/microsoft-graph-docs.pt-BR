@@ -1,91 +1,60 @@
 ---
 title: Configurar Proxy de Aplicativo usando APIs do Microsoft Graph
-description: Configure automaticamente o Proxy de Aplicativo usando as APIs do Microsoft Graph para fornecer acesso remoto e logon único a aplicativos locais.
+description: Configure o Proxy de Aplicativo usando as APIs do Microsoft Graph para fornecer acesso remoto e um único login a aplicativos locais.
 author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 98db70f1d5690b3021eb69a73007567c39b80c15
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: efc22ff03bf5b32398be6711a8f44394bf623050
+ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761336"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031076"
 ---
-# <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Automatizar a configuração do Proxy de aplicativo usando a API do Microsoft Graph
+# <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>Configurar o Proxy de Aplicativo usando a API do Microsoft Graph
 
-Neste artigo, você aprenderá a criar e configurar o [Proxy](/azure/active-directory/manage-apps/what-is-application-proxy) de Aplicativo do Azure Active Directory (Azure AD) para um aplicativo. O Proxy de Aplicativo fornece acesso remoto seguro e um único login em aplicativos Web locais. Depois de configurar o Proxy de Aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, do portal Meus Aplicativos ou de outros portais de aplicativos internos.
+Neste artigo, você aprenderá a configurar o Proxy de Aplicativo do Azure Active Directory (Azure AD) para um aplicativo. O Proxy de Aplicativo fornece acesso remoto seguro e um único login em aplicativos Web locais. Depois de configurar o Proxy de Aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, do portal Meus Aplicativos ou de outros portais de aplicativos internos.
 
-Este artigo supõe que você já instalou um conector e concluiu os [pré-requisitos](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) para o Proxy de Aplicativo para que os conectores possam se comunicar com os serviços do Azure AD.
+## <a name="prerequisites"></a>Pré-requisitos
 
-Verifique se você tem as permissões correspondentes para chamar as seguintes APIs.
+- Este tutorial supõe que você já instalou um conector e concluiu os [pré-requisitos](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) para o Proxy de Aplicativo para que os conectores possam se comunicar com os serviços do Azure AD.
+- Este tutorial assume que você está usando o Microsoft Graph Explorer, mas você pode usar o Postman ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Conclua as seguintes etapas para definir as permissões no Microsoft Graph Explorer:
+    1. Inicie o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+    2. Selecione **Entrar com a conta da Microsoft** e entre usando uma conta de administrador global do Azure AD. Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.
+    3. Selecione o ícone de configurações à direita dos detalhes da conta do usuário e, em seguida, selecione **Selecionar permissões**.
 
-|Tipo de recurso |Método |
-|---------|---------|
-|[aplicativos](/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Criar aplicativo](/graph/api/application-post-applications?tabs=http&view=graph-rest-beta) <br> [Atualizar aplicativo](/graph/api/application-update?view=graph-rest-beta)<br> [Adicionar aplicativo ao connectorGroup](/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
-|[connector](/graph/api/resources/connector?view=graph-rest-beta)| [Obter conectores](/graph/api/connector-get?view=graph-rest-beta)
-|[connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Criar connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Adicionar conector a connectorGroup](/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Criar servicePrincipal](/graph/api/serviceprincipal-post-serviceprincipals?tabs=http&view=graph-rest-beta) <br> [Atualizar servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Criar appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+        ![Definir permissões](./images/application-proxy-configure-api/set-permissions.png)
+        
+    4. Role a lista de permissões para **Directory (3),** expanda e selecione `Directory.ReadWrite.All` .
 
-> [!NOTE]
-> As solicitações mostradas neste artigo usam valores de exemplo. Você precisará atualizá-los. Os objetos de resposta mostrados também podem ser reduzidos para a capacidade de leitura. 
+        ![Pesquisar permissões](./images/application-proxy-configure-api/select-permissions.png)
+    
+    5. Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões. Você não precisa consentir em nome da organização para essas permissões.
 
-## <a name="step-1-create-an-application"></a>Etapa 1: Criar um aplicativo
-
-### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Entrar no Microsoft Graph Explorer (recomendado), no Postman ou em qualquer outro cliente de API que você usa
-
-1. Iniciar [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Selecione **Entrar com a Microsoft** e entre usando as credenciais de administrador global do Azure AD ou Administrador de Aplicativos.
-3. Ao entrar com êxito, você verá os detalhes da conta de usuário no painel esquerdo.
+        ![Aceitar permissões](./images/application-proxy-configure-api/accept-permissions.png)
 
 > [!NOTE]
-> No momento, não há suporte para entrar usando uma entidade de serviço. 
+> Os objetos de resposta mostrados podem ser reduzidos para a capacidade de leitura. 
 
-### <a name="create-an-application"></a>Criar um aplicativo
+## <a name="step-1-create-a-custom-application"></a>Etapa 1: Criar um aplicativo personalizado
 
-Para configurar o Proxy de Aplicativo para um aplicativo usando a API, crie um aplicativo, adicione uma entidade de serviço ao aplicativo e atualize a propriedade **onPremisesPublishing** do aplicativo para configurar as configurações do Proxy de Aplicativo. Ao criar o aplicativo, de definir **signInAudience do aplicativo como** "AzureADMyOrg".
+Para configurar o Proxy de Aplicativo para um aplicativo usando a API, primeiro crie um aplicativo personalizado e atualize a propriedade **onPremisesPublishing** do aplicativo para configurar as configurações do Proxy de Aplicativo. Neste tutorial, você usa um modelo de aplicativo para criar uma instância de um aplicativo personalizado e entidade de serviço em seu locatário para gerenciamento. A ID do modelo de um aplicativo personalizado é `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
+
+Grave o **id**, **appId**, **servicePrincipalId** do aplicativo a ser usado posteriormente no tutorial.
 
 #### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_application"
-}-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/applications
+```http
+POST https://graph.microsoft.com/v1.0/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
 Content-type: application/json
 
 {
-  "displayName": "Contoso IWA App",
-  "signInAudience":"AzureADMyOrg"
+  "displayName": "Contoso IWA App"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application",
-  "isCollection": true
-} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -122,168 +91,26 @@ Content-type: application/json
 }
 ```
 
-### <a name="retrieve-the-application-object-id-and-appid"></a>Recuperar a ID do objeto de aplicativo e appId
-Use a resposta da chamada anterior para recuperar e salvar a ID do objeto de aplicativo e a ID do aplicativo.
-```
-"application": {
-  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
-  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b"
-}
-```
-### <a name="create-a-serviceprincipal-for-the-application-and-add-required-tags"></a>Criar um servicePrincipal para o aplicativo e adicionar marcas necessárias
-Use o **appId** para criar uma entidade de serviço para o aplicativo. Em seguida, adicione as marcas necessárias para configurar o Proxy de Aplicativo para um aplicativo.
+## <a name="step-2-configure-application-proxy"></a>Etapa 2: Configurar o Proxy de Aplicativo
+
+Use a **id** que você gravou para o aplicativo para iniciar a configuração do Proxy de Aplicativo. Atualize as seguintes propriedades:
+
+- **onPremisesPublishing** - Neste exemplo, você está usando um aplicativo com a URL interna: `https://contosoiwaapp.com` . Você também usa o domínio padrão para a URL externa: `https://contosoiwaapp-contoso.msappproxy.net` . 
+- **redirectUri**, **identifierUri** e **homepageUrl** - Defina como a mesma URL externa configurada na **propriedade onPremisesPublishing.**
+- **implicitGrantSettings** - Definir como `true` **para enabledTokenIssuance** e `false` **enabledAccessTokenIssuance**.
 
 #### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_servicePrincipal"
-}-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/serviceprincipals
-Content-type: appplication/json
-
-{
-  "appId":"d7fbfe28-c60e-46d2-8335-841923950d3b",
-  "tags": [
-    "WindowsAzureActiveDirectoryIntegratedApp",
-    "WindowsAzureActiveDirectoryOnPremApp"
-  ]
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-serviceprincipal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-serviceprincipal-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Resposta
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application",
-  "isCollection": true
-} -->
-
 ```http
-HTTP/1.1 201 Created
+PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/$entity",
-  "id": "a8cac399-cde5-4516-a674-819503c61313",
-  "deletedDateTime": null,
-  "accountEnabled": true,
-  "alternativeNames": [],
-  "createdDateTime": null,
-  "deviceManagementAppType": null,
-  "appDescription": null,
-  "appDisplayName": "Contoso IWA App",
-  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-  "applicationTemplateId": null,
-  "appOwnerOrganizationId": "7918d4b5-0442-4a97-be2d-36f9f9962ece",
-  "appRoleAssignmentRequired": false,
-  "description": null,
-  "displayName": "vtestapi2",
-  "errorUrl": null,
-  "homepage": null,
-  "isAuthorizationServiceEnabled": false,
-  "loginUrl": null,
-  "logoutUrl": null,
-  "notes": null,
-  "notificationEmailAddresses": [],
-  "preferredSingleSignOnMode": null,
-  "preferredTokenSigningKeyEndDateTime": null,
-  "preferredTokenSigningKeyThumbprint": null,
-  "publisherName": "f/128 Photography",
-  "replyUrls": [],
-  "samlMetadataUrl": null,
-  "samlSingleSignOnSettings": null,
-  "servicePrincipalNames": [
-      "b92b92d4-3874-46a5-b715-a00ea01cff93"
-  ],
-  "servicePrincipalType": "Application",
-}
-```
-
-## <a name="step-2-configure-application-proxy-properties"></a>Etapa 2: Configurar propriedades do Proxy de Aplicativo
-
-### <a name="set-the-onpremisespublishing-configuration"></a>Definir a configuração de publicação onPremises
-
-Use a ID do objeto application da etapa anterior para configurar o Proxy de Aplicativo para o aplicativo e atualizar a **propriedade onPremisesPublishing** para a configuração desejada. Neste exemplo, você está usando um aplicativo com a URL interna: e usando o domínio padrão para a `https://contosoiwaapp.com` URL externa: `https://contosoiwaapp-contoso.msappproxy.net` . 
-
-#### <a name="request"></a>Solicitação
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_application"
-}-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
-Content-type: appplication/json
-
-{
-    "onPremisesPublishing": {
-        "externalAuthenticationType": "aadPreAuthentication",
-        "internalUrl": "https://contosoiwaapp.com",
-        "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-    }
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-
-```http
-HTTP/1.1 204 No content
-```
-### <a name="complete-the-configuration-of-the-application"></a>Concluir a configuração do aplicativo
-Atualize as propriedades **redirectUri**, **identifierUri** e **homepageUrl** do aplicativo para a UR externa configurada na **propriedade onPremisesPublishing.** Em seguida, [atualize implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) para `true` **enabledTokenIssuance** e `false` **enabledAccessTokenIssuance**.
-
-#### <a name="request"></a>Solicitação
-<!-- {
-  "blockType": "request",
-  "name": "update_application"
-}-->
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
-Content-type: appplication/json
-
-{
+  "onPremisesPublishing": {
+    "externalAuthenticationType": "aadPreAuthentication",
+    "internalUrl": "https://contosoiwaapp.com",
+    "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
+  }
   "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
   "web": {
     "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
@@ -298,123 +125,74 @@ Content-type: appplication/json
 
 #### <a name="response"></a>Resposta
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
-
 ```http
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-3-assign-the-connector-group-to-the-application"></a>Etapa 3: Atribuir o grupo de conectores ao aplicativo
+## <a name="step-3-assign-a-connector-group-to-the-application"></a>Etapa 3: Atribuir um grupo de conectores ao aplicativo
 
 ### <a name="get-connectors"></a>Obter conectores
 
-Liste os conectores e use a resposta para recuperar e salvar a ID do objeto do conector. A ID do objeto do conector será usada para atribuir o conector a um grupo de conectores.
+Listar os conectores disponíveis. Grave a **id** do conector que você deseja atribuir a um grupo de conectores.
 
 #### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "connector"
-}-->
-
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
-
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/connector-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/connector-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/connector-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.connectors",
-  "isCollection": true
-} -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectors",
-    "value": [
-        {
-            "id": "d2b1e8e8-8511-49d6-a4ba-323cb083fbb0",
-            "machineName": "connectorA.redmond.contoso.com"",
-            "externalIp": "131.137.147.164",
-            "status": "active"
-        },
-        {
-            "id": "f2cab422-a1c8-4d70-a47e-2cb297a2e051",
-            "machineName": "connectorB.contoso.com"",
-            "externalIp": "68.0.191.210",
-            "status": "active"
-        },
-        {
-            "id": "8555cc3c-5c8b-48a8-a8b2-5e97c32ef907",
-            "machineName": "connectorC.contoso.com",
-            "externalIp": "40.78.66.161",
-            "status": "active"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectors",
+  "value": [
+    {
+      "id": "d2b1e8e8-8511-49d6-a4ba-323cb083fbb0",
+      "machineName": "connectorA.redmond.contoso.com"",
+      "externalIp": "131.137.147.164",
+      "status": "active"
+    },
+    {
+      "id": "f2cab422-a1c8-4d70-a47e-2cb297a2e051",
+      "machineName": "connectorB.contoso.com"",
+      "externalIp": "68.0.191.210",
+      "status": "active"
+    }
+  ]
 }
 ```
 
 ### <a name="create-a-connectorgroup"></a>Criar um connectorGroup
-Para este exemplo, um novo connectorGroup é criado chamado "IWA Demo Connector Group" que é usado para o aplicativo. Você também pode ignorar esta etapa se o conector já estiver atribuído ao connectorGroup apropriado. Recupere e salve a ID do objeto connectorGroup a ser usada na próxima etapa.
+
+Para este exemplo, um novo connectorGroup é criado chamado `IWA Demo Connector Group` que é usado para o aplicativo. Grave a **id** retornada para uso na próxima etapa.
 
 #### <a name="request"></a>Solicitação
 
-<!-- {
-  "blockType": "request",
-  "name": "connectorGroup"
-}-->
-
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
 Content-type: application/json
 {
-   "name": "IWA Demo Connector Group"
+  "name": "IWA Demo Connector Group"
 }
 ```
 
 #### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 
 ```http
 HTTP/1.1 201
 Content-type: connectorGroup/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectorGroups/$entity",
-    "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",
-    "name": "IWA Demo Connector Group",
-    "connectorGroupType": "applicationProxy",
-    "isDefault": false
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectorGroups/$entity",
+  "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",
+  "name": "IWA Demo Connector Group",
+  "connectorGroupType": "applicationProxy",
+  "isDefault": false
 }
 ```
 
@@ -422,26 +200,16 @@ Content-type: connectorGroup/json
 
 #### <a name="request"></a>Solicitação
 
-<!-- {
-  "blockType": "request",
-  "name": "connectorGroup"
-}-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/8555cc3c-5c8b-48a8-a8b2-5e97c32ef907/memberOf/$ref
-
+```http
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/f2cab422-a1c8-4d70-a47e-2cb297a2e051/memberOf/$ref
 Content-type: application/json
+
 {
   "@odata.id":"https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
 
 #### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 
 ```http
 HTTP/1.1 204 No content
@@ -451,14 +219,7 @@ HTTP/1.1 204 No content
 
 #### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "connectorGroup"
-}-->
-
-```msgraph-interactive
+```http
 PUT https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/connectorGroup/$ref
 Content-type: application/json
 
@@ -466,172 +227,135 @@ Content-type: application/json
 "@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/connectorgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/connectorgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/connectorgroup-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 
 ```http
 HTTP/1.1 204 No content
 ```
 
 ## <a name="step-4-configure-single-sign-on"></a>Etapa 4: Configurar o login único
-Esse aplicativo usa a Autenticação Integrada do Windows (IWA). Para configurar o IWA, de definir as propriedades de login único no tipo de recurso [singleSignOnSettings.](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
+
+Esse aplicativo usa a Autenticação Integrada do Windows (IWA). Para configurar o IWA, de definir as propriedades de login único para **onPremisesPublishing**.
 
 #### <a name="request"></a>Solicitação
 
-<!-- {
-  "blockType": "request",
-  "name": "update_application"
-}-->
-
-```msgraph-interactive
+```http
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: appplication/json
 
 {
-   "onPremisesPublishing": {
-      "singleSignOnSettings": {
-         "kerberosSignOnSettings": {
-            "kerberosServicePrincipalName": "HTTP/iwademo.contoso.com",
+  "onPremisesPublishing": {
+    "singleSignOnSettings": {
+      "kerberosSignOnSettings": {
+        "kerberosServicePrincipalName": "HTTP/iwademo.contoso.com",
         "kerberosSignOnMappingAttributeType": "userPrincipalName"
-         },
-         "singleSignOnMode": "onPremisesKerberos"
-      }
-   }
+      },
+      "singleSignOnMode": "onPremisesKerberos"
+    }
+  } 
 }
 ```
 
 #### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 
 ```http
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-5-assign-users"></a>Etapa 5. Atribuir usuários
-### <a name="retrieve-approle-for-the-applicaiton"></a>Recuperar appRole para o aplicativo
+## <a name="step-5-assign-a-user"></a>Etapa 5: Atribuir um usuário
+
+### <a name="retrieve-the-approle-for-the-application"></a>Recuperar o appRole para o aplicativo
+
+Obter as funções do aplicativo usando a **id** da entidade de serviço. Grave a **id** da **função de** aplicativo usuário a ser usada na próxima etapa.
 
 #### <a name="request"></a>Solicitação
 
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "servicePrincipals"
-}-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoles
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 ```http
 HTTP/1.1 200
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('a8cac399-cde5-4516-a674-819503c61313')/appRoles",
-    "value": [
-        {
-            "allowedMemberTypes": [
-                "User"
-            ],
-            "description": "User",
-            "displayName": "User",
-            "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
-            "isEnabled": true,
-            "origin": "Application",
-            "value": null
-        },
-        {
-            "allowedMemberTypes": [
-                "User"
-            ],
-            "description": "msiam_access",
-            "displayName": "msiam_access",
-            "id": "b9632174-c057-4f7e-951b-be3adc52bfe6",
-            "isEnabled": true,
-            "origin": "Application",
-            "value": null
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('a8cac399-cde5-4516-a674-819503c61313')/appRoles",
+  "value": [
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "User",
+      "displayName": "User",
+      "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": null
+    },
+  ]
 }
 ```
 
-Use a resposta da chamada anterior para recuperar e salvar a ID appRole a ser usada para a próxima etapa.
-```
-      {
-            "description": "User",
-            "displayName": "User",
-            "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f"
-        }
-```
+### <a name="create-a-user-account"></a>Criar uma conta de usuário
 
-### <a name="assign-users-and-groups-to-the-application"></a>Atribuir usuários e grupos ao aplicativo
-
-Use as seguintes propriedades para atribuir um usuário ao aplicativo.
-
-| Propriedade  | Descrição |ID  |
-|---------|---------|---------|
-| principalId | ID de usuário do usuário que será atribuído ao aplicativo | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
-| principalType | Tipo de usuário | User |
-| appRoleId |  A ID da função de aplicativo da função de aplicativo padrão do aplicativo | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
-| resourceId | A ID servicePrincipal do aplicativo | a8cac399-cde5-4516-a674-819503c61313 |
+Para este tutorial, você cria uma conta de usuário atribuída à função de aplicativo. No corpo da solicitação, `contoso.com` altere para o nome de domínio do locatário. Encontre informações sobre locatários na página de visão geral do Azure Active Directory. Grave a **id** da conta de usuário a ser usada na próxima etapa.
 
 #### <a name="request"></a>Solicitação
 
-<!-- {
-  "blockType": "ignored",
-  "name": "servicePrincipals"
-}-->
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments
+```http
+POST https://graph.microsoft.com/v1.0/users
+Content-type: application/json
 
+{
+  "accountEnabled":true,
+  "displayName":"MyTestUser1",
+  "mailNickname":"MyTestUser1",
+  "userPrincipalName":"MyTestUser1@contoso.com",
+  "passwordProfile": {
+    "forceChangePasswordNextSignIn":true,
+    "password":"Contoso1234"
+  }
+}
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "id": "4628e7df-dff3-407c-a08f-75f08c0806dc",
+  "businessPhones": [],
+  "displayName": "MyTestUser1",
+  "givenName": null,
+  "jobTitle": null,
+  "mail": null,
+  "mobilePhone": null,
+  "officeLocation": null,
+  "preferredLanguage": null,
+  "surname": null,
+  "userPrincipalName": "MyTestUser1@contoso.com"
+}
+```
+
+### <a name="assign-the-user-to-the-application"></a>Atribuir o usuário ao aplicativo
+
+No exemplo a seguir, substitua os valores dessas propriedades:
+
+- **principalId** com **a id** do usuário
+- **appRoleId** com **a id** da função de aplicativo
+- **resourceId** com **a id** da entidade de serviço
+
+#### <a name="request"></a>Solicitação
+
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments
 Content-type: appRoleAssignments/json
 
 {
-  "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
+  "principalId": "4628e7df-dff3-407c-a08f-75f08c0806dc",
   "principalType": "User",
   "appRoleId":"18d14569-c3bd-439b-9a66-3a2aee01d14f",
   "resourceId":"a8cac399-cde5-4516-a674-819503c61313"
@@ -640,30 +364,84 @@ Content-type: appRoleAssignments/json
 
 #### <a name="response"></a>Resposta
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-} -->
 ```http
 HTTP/1.1 200
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments/$entity",
-    "id": "I23pL8ZdNU-CIgQmqMEVyLJ0E6fx0ixEo92az8MnhtU",
-    "creationTimestamp": "2020-06-09T00:06:07.5129268Z",
-    "appRoleId": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
-    "principalDisplayName": "Jean Green",
-    "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
-    "principalType": "User",
-    "resourceDisplayName": "Contoso IWA App",
-    "resourceId": "a8cac399-cde5-4516-a674-819503c61313"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments/$entity",
+  "id": "I23pL8ZdNU-CIgQmqMEVyLJ0E6fx0ixEo92az8MnhtU",
+  "creationTimestamp": "2020-06-09T00:06:07.5129268Z",
+  "appRoleId": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
+  "principalDisplayName": "MyTestUser1",
+  "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
+  "principalType": "User",
+  "resourceDisplayName": "Contoso IWA App",
+  "resourceId": "a8cac399-cde5-4516-a674-819503c61313"
 }
 ```
+## <a name="step-6-test-access-to-the-application"></a>Etapa 6: Testar o acesso ao aplicativo
 
-Para saber mais, confira o tipo de recurso [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta).
+Teste o aplicativo visitando a **URL externa** configurada para o aplicativo em seu navegador e, em seguida, entre com seu usuário de teste. Você deve poder fazer logoff no aplicativo e acessar o aplicativo.
 
+## <a name="step-7-clean-up-resources"></a>Etapa 7: Limpar recursos
 
-## <a name="additional-steps"></a>Etapas adicionais
-- [Automatizar a configuração usando exemplos do PowerShell para Proxy de Aplicativo](/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
-- [Automação da configuração do aplicativo de SSO baseado em SAML com a API do Microsoft Graph](/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
+Os recursos criados neste tutorial não se destinam a ser usados em um ambiente de produção. Nessa etapa, remova os recursos que criou.
+
+### <a name="delete-the-user-account"></a>Excluir a conta de usuário
+
+Exclua a conta de usuário MyTestUser1.
+
+#### <a name="request"></a>Solicitação
+
+```http
+DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+No Content - 204
+```
+
+### <a name="delete-the-application"></a>Excluir o aplicativo
+
+#### <a name="request"></a>Solicitação
+
+```http
+DELETE https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+No Content - 204
+```
+
+### <a name="delete-the-connector-group"></a>Excluir o grupo de conectores
+
+#### <a name="request"></a>Solicitação
+
+```http
+DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+No Content - 204
+```
+
+## <a name="see-also"></a>Confira também
+
+- [Proxy de aplicativo](/azure/active-directory/manage-apps/what-is-application-proxy)
+- [aplicativo](/graph/api/resources/application?view=graph-rest-1.0)
+- [applicationTemplate: instaurá-lo](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
+- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
+- [connector](/graph/api/resources/connector?view=graph-rest-beta)
+- [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
+- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
+- [perfis de publicação local](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
+- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
+- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
+- [user](/graph/api/resources/user?view=graph-rest-1.0)
