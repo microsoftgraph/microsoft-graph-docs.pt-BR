@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2315d4b42abd6289e77df767206197973e98fd3
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: b07fd067ababeb40ff290ff7047b6be125acdf03
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160130"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51125237"
 ---
 # <a name="validatefilter-action"></a>Ação validateFilter
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Ainda não documentado
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,7 +58,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará `200 OK` um código de resposta e um [assignmentFilterValidationResult](../resources/intune-policyset-assignmentfiltervalidationresult.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará um código `200 OK` de resposta e um [assignmentFilterValidationResult](../resources/intune-policyset-assignmentfiltervalidationresult.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

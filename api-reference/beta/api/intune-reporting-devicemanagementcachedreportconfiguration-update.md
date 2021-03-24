@@ -1,35 +1,35 @@
 ---
 title: Atualizar deviceManagementCachedReportConfiguration
-description: Atualiza as propriedades de um objeto deviceManagementCachedReportConfiguration.
+description: Atualize as propriedades de um objeto deviceManagementCachedReportConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fdfa2512972323cb62672c6f639a95a77cc25e0e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7b9304713a7b7d278991f8dd9ea07ecaece8f4bb
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49307994"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51123389"
 ---
 # <a name="update-devicemanagementcachedreportconfiguration"></a>Atualizar deviceManagementCachedReportConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .
+Atualize as propriedades de [um objeto deviceManagementCachedReportConfiguration.](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,26 +47,26 @@ PATCH /deviceManagement/reports/cachedReportConfigurations/{deviceManagementCach
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto deviceManagementCachedReportConfiguration.](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para esta entidade|
-|reportName|String|Nome do relatório|
-|filter|String|Filtros aplicados na criação de relatórios.|
-|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
-|Classificadoporativado|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
-|los|String|Metadados gerenciados pelo chamador associados ao relatório|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do relatório em cache. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|id|Cadeia de caracteres|Identificador exclusivo dessa entidade|
+|reportName|Cadeia de caracteres|Nome do relatório|
+|filter|Cadeia de caracteres|Filtros aplicados na criação de relatório.|
+|select|Coleção de cadeias de caracteres|Colunas selecionadas no relatório|
+|orderBy|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
+|metadados|Cadeia de caracteres|Metadados gerenciados pelo chamador associados ao relatório|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do relatório armazenado em cache. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Hora em que o relatório em cache foi atualizado pela última vez|
-|expirationDateTime|DateTimeOffset|Hora em que o relatório em cache expira|
+|expirationDateTime|DateTimeOffset|Tempo em que o relatório armazenado em cache expira|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

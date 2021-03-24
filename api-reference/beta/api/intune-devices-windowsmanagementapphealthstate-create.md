@@ -1,35 +1,35 @@
 ---
 title: Criar windowsManagementAppHealthState
-description: Criar um novo objeto windowsManagementAppHealthState.
+description: Crie um novo objeto windowsManagementAppHealthState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0784b612e996f018112662cbf242f38f3da505aa
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0ba082150ea5b032a4621bfea33b7d85f5ad2a16
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49218730"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51126379"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>Criar windowsManagementAppHealthState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) .
+Crie um novo [objeto windowsManagementAppHealthState.](../resources/intune-devices-windowsmanagementapphealthstate.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,23 +47,23 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto windowsManagementAppHealthState.
+No corpo da solicitação, fornece uma representação JSON para o objeto windowsManagementAppHealthState.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar windowsManagementAppHealthState.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o windowsManagementAppHealthState.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do estado de integridade do aplicativo de gerenciamento do Windows. Essa propriedade é somente leitura.|
-|HealthState|[HealthState](../resources/intune-devices-healthstate.md)|Estado de integridade do aplicativo de gerenciamento do Windows. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String|Versão instalada do aplicativo de gerenciamento do Windows.|
-|lastCheckInDateTime|DateTimeOffset|Tempo de check-in do aplicativo de gerenciamento do Windows por último.|
+|id|Cadeia de caracteres|Identificador exclusivo para o estado de saúde do aplicativo de gerenciamento do Windows. Essa propriedade é somente leitura.|
+|healthState|[healthState](../resources/intune-devices-healthstate.md)|Estado de saúde do aplicativo de gerenciamento do Windows. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`.|
+|installedVersion|Cadeia de caracteres|Versão instalada do aplicativo de gerenciamento do Windows.|
+|lastCheckInDateTime|DateTimeOffset|Última hora de check-in do aplicativo de gerenciamento do Windows.|
 |deviceName|String|Nome do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
-|deviceOSVersion|String|Versão do Windows 10 so do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
+|deviceOSVersion|Cadeia de caracteres|Versão do sistema operacional Windows 10 do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

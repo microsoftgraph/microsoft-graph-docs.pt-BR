@@ -1,35 +1,35 @@
 ---
 title: Atualizar windowsManagementApp
-description: Atualiza as propriedades de um objeto windowsManagementApp.
+description: Atualize as propriedades de um objeto windowsManagementApp.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 895626cdaac3f43342100c39de1845abddccc53b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4b6fb2eb59aed83744e158a808344b1f18cf834e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49218758"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51126392"
 ---
 # <a name="update-windowsmanagementapp"></a>Atualizar windowsManagementApp
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) .
+Atualize as propriedades de um [objeto windowsManagementApp.](../resources/intune-devices-windowsmanagementapp.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,19 +47,19 @@ PATCH /deviceAppManagement/windowsManagementApp
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto windowsManagementApp.](../resources/intune-devices-windowsmanagementapp.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o aplicativo de gerenciamento do Windows|
-|availableVersion|String|Versão disponível do aplicativo de gerenciamento do Windows.|
+|id|Cadeia de caracteres|Identificador exclusivo do aplicativo de gerenciamento do Windows|
+|availableVersion|Cadeia de caracteres|Versão disponível do aplicativo de gerenciamento do Windows.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
