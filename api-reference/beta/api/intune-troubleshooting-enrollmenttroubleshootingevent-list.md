@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f97a669539497431d59643ed8332332e810fd5c2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8cbf1e252043899b8e312231621976b36f791008
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49223329"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51141495"
 ---
-# <a name="list-enrollmenttroubleshootingevents"></a><span data-ttu-id="52fdf-103">Listar enrollmentTroubleshootingEvents</span><span class="sxs-lookup"><span data-stu-id="52fdf-103">List enrollmentTroubleshootingEvents</span></span>
+# <a name="list-enrollmenttroubleshootingevents"></a><span data-ttu-id="92184-103">Listar enrollmentTroubleshootingEvents</span><span class="sxs-lookup"><span data-stu-id="92184-103">List enrollmentTroubleshootingEvents</span></span>
 
-<span data-ttu-id="52fdf-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="52fdf-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="92184-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="92184-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="52fdf-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="52fdf-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="92184-105">**Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.</span><span class="sxs-lookup"><span data-stu-id="92184-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="52fdf-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="52fdf-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="92184-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="92184-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="52fdf-107">Lista propriedades e relações dos objetos [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md).</span><span class="sxs-lookup"><span data-stu-id="52fdf-107">List properties and relationships of the [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) objects.</span></span>
+<span data-ttu-id="92184-107">Lista propriedades e relações dos objetos [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md).</span><span class="sxs-lookup"><span data-stu-id="92184-107">List properties and relationships of the [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="52fdf-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="52fdf-108">Prerequisites</span></span>
-<span data-ttu-id="52fdf-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="52fdf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="92184-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="92184-108">Prerequisites</span></span>
+<span data-ttu-id="92184-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="92184-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="52fdf-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="52fdf-111">Permission type</span></span>|<span data-ttu-id="52fdf-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="52fdf-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="92184-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="92184-111">Permission type</span></span>|<span data-ttu-id="92184-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="92184-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="52fdf-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="52fdf-113">Delegated (work or school account)</span></span>|<span data-ttu-id="52fdf-114">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="52fdf-114">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
-|<span data-ttu-id="52fdf-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="52fdf-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="52fdf-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="52fdf-116">Not supported.</span></span>|
-|<span data-ttu-id="52fdf-117">Application</span><span class="sxs-lookup"><span data-stu-id="52fdf-117">Application</span></span>|<span data-ttu-id="52fdf-118">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="52fdf-118">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
+|<span data-ttu-id="92184-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="92184-113">Delegated (work or school account)</span></span>|<span data-ttu-id="92184-114">DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92184-114">DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="92184-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="92184-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="92184-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="92184-116">Not supported.</span></span>|
+|<span data-ttu-id="92184-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="92184-117">Application</span></span>|<span data-ttu-id="92184-118">DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92184-118">DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="52fdf-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="52fdf-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="92184-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="92184-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,28 +40,28 @@ ms.locfileid: "49223329"
 GET /deviceManagement/troubleshootingEvents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="52fdf-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="52fdf-120">Request headers</span></span>
-|<span data-ttu-id="52fdf-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="52fdf-121">Header</span></span>|<span data-ttu-id="52fdf-122">Valor</span><span class="sxs-lookup"><span data-stu-id="52fdf-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="92184-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="92184-120">Request headers</span></span>
+|<span data-ttu-id="92184-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="92184-121">Header</span></span>|<span data-ttu-id="92184-122">Valor</span><span class="sxs-lookup"><span data-stu-id="92184-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="52fdf-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="52fdf-123">Authorization</span></span>|<span data-ttu-id="52fdf-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="52fdf-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="52fdf-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="52fdf-125">Accept</span></span>|<span data-ttu-id="52fdf-126">application/json</span><span class="sxs-lookup"><span data-stu-id="52fdf-126">application/json</span></span>|
+|<span data-ttu-id="92184-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="92184-123">Authorization</span></span>|<span data-ttu-id="92184-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="92184-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="92184-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="92184-125">Accept</span></span>|<span data-ttu-id="92184-126">application/json</span><span class="sxs-lookup"><span data-stu-id="92184-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="52fdf-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="52fdf-127">Request body</span></span>
-<span data-ttu-id="52fdf-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="52fdf-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="92184-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="92184-127">Request body</span></span>
+<span data-ttu-id="92184-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="92184-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="52fdf-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="52fdf-129">Response</span></span>
-<span data-ttu-id="52fdf-130">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="52fdf-130">If successful, this method returns a `200 OK` response code and a collection of [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="92184-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="92184-129">Response</span></span>
+<span data-ttu-id="92184-130">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="92184-130">If successful, this method returns a `200 OK` response code and a collection of [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="52fdf-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="52fdf-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="92184-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="92184-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="52fdf-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="52fdf-132">Request</span></span>
-<span data-ttu-id="52fdf-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="52fdf-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="92184-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="92184-132">Request</span></span>
+<span data-ttu-id="92184-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="92184-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
 ```
 
-### <a name="response"></a><span data-ttu-id="52fdf-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="52fdf-134">Response</span></span>
-<span data-ttu-id="52fdf-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="52fdf-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="92184-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="92184-134">Response</span></span>
+<span data-ttu-id="92184-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="92184-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
