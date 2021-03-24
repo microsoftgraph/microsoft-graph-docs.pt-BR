@@ -1,34 +1,34 @@
 ---
 title: Criar deviceManagementIntent
-description: Criar um novo objeto deviceManagementIntent.
+description: Crie um novo objeto deviceManagementIntent.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cde7ad8536edbcab146a5d93e1a94624491c3b3f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 20cb05e52b7b065f2cbf1768895e9686bd4a49d0
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49278272"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51128912"
 ---
 # <a name="create-devicemanagementintent"></a>Criar deviceManagementIntent
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) .
+Crie um novo [objeto deviceManagementIntent.](../resources/intune-deviceintent-devicemanagementintent.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,24 +47,24 @@ POST /deviceManagement/intents
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementIntent.
+No corpo da solicitação, fornece uma representação JSON para o objeto deviceManagementIntent.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementIntent.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de intenção|
-|displayName|String|O nome de exibição fornecido pelo usuário|
-|description|String|Descrição fornecida pelo usuário|
+|id|Cadeia de caracteres|A ID de intenção|
+|displayName|Cadeia de caracteres|O nome de exibição dado pelo usuário|
+|descrição|Cadeia de caracteres|A descrição dada pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|String|A ID do modelo de que esta intenção foi criada (se houver)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|templateId|Cadeia de caracteres|A ID do modelo de que essa intenção foi criada (se alguma)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
