@@ -1,35 +1,35 @@
 ---
 title: Criar deviceManagementReportSchedule
-description: Criar um novo objeto deviceManagementReportSchedule.
+description: Crie um novo objeto deviceManagementReportSchedule.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f91038e518550b9ebfc50d59c3a0168d8e489cd
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a9e29979c0999d05592adaad8e2f19a332a57a8a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49257622"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134386"
 ---
 # <a name="create-devicemanagementreportschedule"></a>Criar deviceManagementReportSchedule
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) .
+Crie um novo [objeto deviceManagementReportSchedule.](../resources/intune-reporting-devicemanagementreportschedule.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,30 +47,30 @@ POST /deviceManagement/reports/reportSchedules
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementReportSchedule.
+No corpo da solicitação, fornece uma representação JSON para o objeto deviceManagementReportSchedule.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementReportSchedule.
+A tabela a seguir mostra as propriedades necessárias ao criar deviceManagementReportSchedule.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para esta entidade|
-|reportScheduleName|String|Nome da agenda|
-|assunto|String|Assunto dos relatórios agendados que são entregues|
-|email|Coleção de cadeias de caracteres|Emails para os quais os relatórios agendados são entregues|
-|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequência da entrega de relatórios agendados. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
-|startDateTime|DateTimeOffset|Hora de início da entrega dos relatórios agendados|
+|id|Cadeia de caracteres|Identificador exclusivo dessa entidade|
+|reportScheduleName|Cadeia de caracteres|Nome da agenda|
+|assunto|Cadeia de caracteres|Assunto dos relatórios agendados que são entregues|
+|emails|Coleção de cadeias de caracteres|Emails para os quais os relatórios agendados são entregues|
+|recorrência|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequência de entrega de relatório agendada. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
+|startDateTime|DateTimeOffset|Hora em que a entrega dos relatórios agendados é iniciada|
 |endDateTime|DateTimeOffset|Hora em que a entrega dos relatórios agendados termina|
-|userId|Cadeia de caracteres|A ID do usuário que criou o relatório|
-|reportName|String|Nome do relatório|
-|filter|String|Filtros aplicados no relatório|
-|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
-|Classificadoporativado|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
+|userId|Cadeia de caracteres|A ID do Usuário que criou o relatório|
+|reportName|Cadeia de caracteres|Nome do relatório|
+|filter|Cadeia de caracteres|Filtros aplicados no relatório|
+|select|Coleção de cadeias de caracteres|Colunas selecionadas no relatório|
+|orderBy|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório agendado. Os valores possíveis são: `csv` e `pdf`.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
