@@ -1,35 +1,35 @@
 ---
 title: Excluir groupPolicyUploadedPresentation
-description: Exclui groupPolicyUploadedPresentation.
+description: Exclui um groupPolicyUploadedPresentation.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 789e2b53d9df5e2b65107417e0a50085509e7a91
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0cabc29e1f9213da53407d6317906d221d9b7dfa
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49224617"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51145583"
 ---
 # <a name="delete-grouppolicyuploadedpresentation"></a>Excluir groupPolicyUploadedPresentation
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui [groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md).
+Exclui um [groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

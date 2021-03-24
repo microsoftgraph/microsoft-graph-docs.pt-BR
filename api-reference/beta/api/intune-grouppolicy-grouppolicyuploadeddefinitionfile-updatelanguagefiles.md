@@ -1,22 +1,22 @@
 ---
-title: ação updateLanguageFiles
+title: Ação updateLanguageFiles
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1ce730fa71535073a5818e28d938e4b78f66db9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 900825b8db43fea285a8c54825e4a8e56570d06d
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49224662"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51145604"
 ---
-# <a name="updatelanguagefiles-action"></a>ação updateLanguageFiles
+# <a name="updatelanguagefiles-action"></a>Ação updateLanguageFiles
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,11 +25,11 @@ Ainda não documentado
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|groupPolicyUploadedLanguageFiles|coleção [groupPolicyUploadedLanguageFile](../resources/intune-grouppolicy-grouppolicyuploadedlanguagefile.md)|Ainda não documentado|
+|groupPolicyUploadedLanguageFiles|[coleção groupPolicyUploadedLanguageFile](../resources/intune-grouppolicy-grouppolicyuploadedlanguagefile.md)|Ainda não documentado|
 
 
 

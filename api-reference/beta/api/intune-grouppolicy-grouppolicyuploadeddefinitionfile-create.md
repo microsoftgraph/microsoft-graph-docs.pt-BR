@@ -1,35 +1,35 @@
 ---
 title: Criar groupPolicyUploadedDefinitionFile
-description: Criar um novo objeto groupPolicyUploadedDefinitionFile.
+description: Crie um novo objeto groupPolicyUploadedDefinitionFile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4b390008b94ca56f24b7c0d5c2891dbf8b881bd
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b414eeb1211af6ff9f6683d021f74c3be0d48d79
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49224904"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51145723"
 ---
 # <a name="create-grouppolicyuploadeddefinitionfile"></a>Criar groupPolicyUploadedDefinitionFile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) .
+Crie um novo [objeto groupPolicyUploadedDefinitionFile.](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,32 +47,32 @@ POST /deviceManagement/groupPolicyUploadedDefinitionFiles
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto groupPolicyUploadedDefinitionFile.
+No corpo da solicitação, fornece uma representação JSON para o objeto groupPolicyUploadedDefinitionFile.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar groupPolicyUploadedDefinitionFile.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o groupPolicyUploadedDefinitionFile.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome amigável localizado do arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|description|String|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|languageCodes|Coleção de cadeias de caracteres|Os códigos de idioma suportados para o arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|targetPrefix|String|Especifica o nome lógico que se refere ao namespace dentro do arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|targetNamespace|String|Especifica o URI usado para identificar o namespace no arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md). Os valores possíveis são: `admxBacked` e `admxIngested`.|
-|firmware|String|A versão de revisão associada ao arquivo. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|id|String|Chave da entidade. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|fileName|String|O nome de arquivo do arquivo ADML carregado.|
-|status|[groupPolicyUploadedDefinitionFileStatus](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)|O status de upload do arquivo ADMX carregado. Os valores possíveis são: `none`, `uploadInProgress`, `available`, `assigned`, `removalInProgress`, `uploadFailed`, `removalFailed`.|
-|conteúdo|Binária|O conteúdo do arquivo ADMX carregado.|
+|displayName|Cadeia de caracteres|O nome amigável localizado do arquivo ADMX. Herdado [de groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|descrição|Cadeia de caracteres|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio. Herdado [de groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|languageCodes|Coleção de cadeias de caracteres|Os códigos de idioma com suporte para o arquivo ADMX. Herdado [de groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|targetPrefix|Cadeia de caracteres|Especifica o nome lógico que se refere ao namespace no arquivo ADMX. Herdado [de groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|targetNamespace|Cadeia de caracteres|Especifica o URI usado para identificar o namespace no arquivo ADMX. Herdado [de groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Herdado [de groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md). Os valores possíveis são: `admxBacked` e `admxIngested`.|
+|revision|Cadeia de caracteres|A versão de revisão associada ao arquivo. Herdado [de groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado [de groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado [de groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|fileName|String|O nome do arquivo ADML carregado.|
+|status|[groupPolicyUploadedDefinitionFileStatus](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)|O status de carregamento do arquivo ADMX carregado. Os valores possíveis são: `none`, `uploadInProgress`, `available`, `assigned`, `removalInProgress`, `uploadFailed`, `removalFailed`.|
+|conteúdo|Binário|O conteúdo do arquivo ADMX carregado.|
 |uploadDateTime|DateTimeOffset|O tempo carregado do arquivo ADMX carregado.|
-|defaultLanguageCode|String|O idioma padrão do arquivo ADMX carregado.|
-|groupPolicyUploadedLanguageFiles|coleção [groupPolicyUploadedLanguageFile](../resources/intune-grouppolicy-grouppolicyuploadedlanguagefile.md)|A lista de arquivos ADML associados ao arquivo ADMX carregado.|
+|defaultLanguageCode|Cadeia de caracteres|O idioma padrão do arquivo ADMX carregado.|
+|groupPolicyUploadedLanguageFiles|[coleção groupPolicyUploadedLanguageFile](../resources/intune-grouppolicy-grouppolicyuploadedlanguagefile.md)|A lista de arquivos ADML associados ao arquivo ADMX carregado.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

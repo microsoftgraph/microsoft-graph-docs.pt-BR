@@ -1,34 +1,34 @@
 ---
 title: Criar androidManagedStoreAppConfigurationSchema
-description: Criar um novo objeto androidManagedStoreAppConfigurationSchema.
+description: Crie um novo objeto androidManagedStoreAppConfigurationSchema.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4806af59c1548682a603177bc0da43b6af9c6c6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 53051becf2156aa9a60707421b0ba74fda00dced
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49254333"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51144582"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>Criar androidManagedStoreAppConfigurationSchema
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) .
+Crie um novo [objeto androidManagedStoreAppConfigurationSchema.](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,21 +47,21 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto androidManagedStoreAppConfigurationSchema.
+No corpo da solicitação, fornece uma representação JSON para o objeto androidManagedStoreAppConfigurationSchema.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar androidManagedStoreAppConfigurationSchema.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a|
+|id|Cadeia de caracteres|A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a|
 |exampleJson|Binária|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
-|schemaItems|coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Coleção de itens que representa uma opção de configuração nomeada no esquema. Ele contém apenas a configuração de nível de raiz.|
-|nestedSchemaItems|coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Coleção de itens que representa uma opção de configuração nomeada no esquema. Ele contém uma lista simples de todas as configurações.|
+|schemaItems|[coleção androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Coleção de itens que representam uma opção de configuração nomeada no esquema. Ele contém apenas a configuração de nível raiz.|
+|nestedSchemaItems|[coleção androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Coleção de itens que representam uma opção de configuração nomeada no esquema. Ele contém uma lista simples de todas as configurações.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

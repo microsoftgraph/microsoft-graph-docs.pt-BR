@@ -1,34 +1,34 @@
 ---
 title: Criar iosVppAppAssignedLicense
-description: Criar um novo objeto iosVppAppAssignedLicense.
+description: Crie um novo objeto iosVppAppAssignedLicense.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04eb7e784136564c3c2a85d42f96e838d6162c7b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6ae534c4edc24683221c204b4e6de48b2b17c69f
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49252019"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51144029"
 ---
 # <a name="create-iosvppappassignedlicense"></a>Criar iosVppAppAssignedLicense
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) .
+Crie um novo [objeto iosVppAppAssignedLicense.](../resources/intune-apps-iosvppappassignedlicense.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,22 +47,22 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto iosVppAppAssignedLicense.
+No corpo da solicitação, fornece uma representação JSON para o objeto iosVppAppAssignedLicense.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar iosVppAppAssignedLicense.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o iosVppAppAssignedLicense.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|useremailaddress|String|O endereço de email do usuário.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
 |userId|Cadeia de caracteres|A ID do usuário.|
-|userName|Cadeia de caracteres|O nome de usuário.|
-|userPrincipalName|String|O nome da entidade de segurança do usuário.|
+|userName|Cadeia de caracteres|O nome do usuário.|
+|userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

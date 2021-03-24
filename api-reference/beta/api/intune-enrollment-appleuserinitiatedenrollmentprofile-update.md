@@ -1,34 +1,34 @@
 ---
 title: Atualizar appleUserInitiatedEnrollmentProfile
-description: Atualiza as propriedades de um objeto appleUserInitiatedEnrollmentProfile.
+description: Atualize as propriedades de um objeto appleUserInitiatedEnrollmentProfile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ec83d3d9f4e8ca06d9f0f92752e9655b9fb469c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ca6dda640ceaadb4420a41cf4bfd0e147f3d29f2
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49309687"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51146059"
 ---
 # <a name="update-appleuserinitiatedenrollmentprofile"></a>Atualizar appleUserInitiatedEnrollmentProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) .
+Atualize as propriedades de [um objeto appleUserInitiatedEnrollmentProfile.](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,26 +47,26 @@ PATCH /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiated
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto appleUserInitiatedEnrollmentProfile.](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|defaultenrollmentidtype|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|O tipo de registro de perfil padrão. Os valores possíveis são: `unknown`, `device`, `user`.|
-|availableEnrollmentTypeOptions|coleção [appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md)|Lista de opções de tipo de registro disponíveis|
-|id|String|O GUID do objeto.|
-|displayName|String|Nome do perfil|
-|description|String|Descrição do perfil|
-|prioridade|Int32|Prioridade, 0 é a maior|
-|plataforma|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|A plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|createdDateTime|DateTimeOffset|Hora de criação do perfil|
-|lastModifiedDateTime|DateTimeOffset|Hora da última modificação do perfil|
+|defaultEnrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|O tipo de registro de perfil padrão. Os valores possíveis são: `unknown`, `device`, `user`.|
+|availableEnrollmentTypeOptions|[Coleção appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md)|Lista de opções de tipo de registro disponível|
+|id|Cadeia de caracteres|O GUID do objeto.|
+|displayName|Cadeia de caracteres|Nome do perfil|
+|descrição|Cadeia de caracteres|Descrição do perfil|
+|prioridade|Int32|Prioridade, 0 é mais alta|
+|plataforma|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|A plataforma do Dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|createdDateTime|DateTimeOffset|Tempo de criação de perfil|
+|lastModifiedDateTime|DateTimeOffset|Tempo de última modificação do perfil|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

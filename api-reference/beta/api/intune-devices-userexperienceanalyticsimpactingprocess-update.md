@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18be2d4556c454d387418a0ba434aa51bc0ea7e3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f2d1f2c3a2791e6536e701be35bc0c5c91e62949
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445703"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51146220"
 ---
 # <a name="update-userexperienceanalyticsimpactingprocess"></a>Atualizar userExperienceAnalyticsImpactingProcess
 
@@ -25,10 +25,10 @@ Atualize as propriedades de [um objeto userExperienceAnalyticsImpactingProcess.]
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da entidade de processo de análise de experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da entidade de processo de análise de experiência do usuário.|
 |deviceId|Cadeia de caracteres|O identificador exclusivo do dispositivo afetado.|
-|category|String|A categoria do processo de impacto.|
-|processName|String|O nome do processo.|
-|descrição|String|A descrição do processo.|
+|category|Cadeia de caracteres|A categoria do processo de impacto.|
+|processName|Cadeia de caracteres|O nome do processo.|
+|descrição|Cadeia de caracteres|A descrição do processo.|
 |publicador|String|O editor do processo.|
 |impactValue|Duplo|O valor de impacto do processo. Valores válidos de 0 a 1,79769313486232E+308|
 

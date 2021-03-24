@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b6f3d19b6311bfdc706b16b6d6320dfb9d0518e
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 51e139fbf3c903bb591647566ab74177f397add7
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156858"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51145443"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>Criar enrollmentConfigurationAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Criar um novo objeto [enrollmentConfigurationAssignment](../resources/intune-onb
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar enrollme
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da atribuição de configuração de registro|
+|id|Cadeia de caracteres|Chave da atribuição de configuração de registro|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Representa uma atribuição a dispositivos gerenciados no locatário|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Tipo de recurso usado para implantação em um grupo, direct ou policySet. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|String|Identificador de recurso usado para implantação em um grupo|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Tipo de recurso usado para implantação para um grupo, direto ou policySet. Os valores possíveis são: `direct` e `policySets`.|
+|sourceId|Cadeia de caracteres|Identificador de recurso usado para implantação em um grupo|
 
 
 

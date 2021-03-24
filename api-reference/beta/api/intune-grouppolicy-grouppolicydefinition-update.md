@@ -1,34 +1,34 @@
 ---
 title: Atualizar groupPolicyDefinition
-description: Atualiza as propriedades de um objeto groupPolicyDefinition.
+description: Atualize as propriedades de um objeto groupPolicyDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff7a0a56f01dcc3e2cc627548a3f7f77c97895ef
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 40012449a86324874251588dad27021e3e38fcec
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49286000"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51145744"
 ---
 # <a name="update-grouppolicydefinition"></a>Atualizar groupPolicyDefinition
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) .
+Atualize as propriedades de [um objeto groupPolicyDefinition.](../resources/intune-grouppolicy-grouppolicydefinition.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,26 +51,26 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto groupPolicyDefinition.](../resources/intune-grouppolicy-grouppolicydefinition.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifica o tipo de grupo ao qual a política pode ser aplicada. Os valores possíveis são: `user` e `machine`.|
-|displayName|String|O nome da política localizada.|
-|Texto não criptografado|String|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
-|categoryPath|String|O caminho de categoria completo localizado para a política.|
-|com suporte|String|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política.|
-|PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
-|groupPolicyCategoryId|Guid|A ID de categoria da categoria pai|
-|id|String|Chave da entidade.|
+|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifica o tipo de grupos aos qual a política pode ser aplicada. Os valores possíveis são: `user` e `machine`.|
+|displayName|Cadeia de caracteres|O nome da política localizada.|
+|explainText|Cadeia de caracteres|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
+|categoryPath|Cadeia de caracteres|O caminho de categoria completa localizado para a política.|
+|supportedOn|Cadeia de caracteres|Cadeia de caracteres localizada usada para especificar qual versão do sistema operacional ou aplicativo é afetada pela política.|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
+|groupPolicyCategoryId|Guid|A id de categoria da categoria pai|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -1,34 +1,34 @@
 ---
 title: Atualizar userExperienceAnalyticsScoreHistory
-description: Atualiza as propriedades de um objeto userExperienceAnalyticsScoreHistory.
+description: Atualize as propriedades de um objeto userExperienceAnalyticsScoreHistory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 62f6243b6241901ee330ceb855bd3886db8cdc27
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 932e990ca028cee40220fb5e49b0d9353a1c577a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49263698"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51146129"
 ---
 # <a name="update-userexperienceanalyticsscorehistory"></a>Atualizar userExperienceAnalyticsScoreHistory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) .
+Atualize as propriedades de [um objeto userExperienceAnalyticsScoreHistory.](../resources/intune-devices-userexperienceanalyticsscorehistory.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,24 +47,24 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto userExperienceAnalyticsScoreHistory.](../resources/intune-devices-userexperienceanalyticsscorehistory.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do processo de inicialização do dispositivo de análise da experiência do usuário.|
-|startupDateTime|DateTimeOffset|A experiência do usuário da data de início do dispositivo de análise.|
-|startupScore|Int32|Pontuação de inicialização do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
-|coreBootScore|Int32|A pontuação de inicialização do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
-|coreSigninScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
-|recommendedSoftwareScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
-|restartScore|Int32|Reinicie o placar. A pontuação será no intervalo 0-100, 100 é a pontuação ideal, 0 indica reinicializações em excesso. Valores válidos de 0 a 9999999|
+|id|Cadeia de caracteres|O identificador exclusivo do processo de inicialização do dispositivo de análise de experiência do usuário.|
+|startupDateTime|DateTimeOffset|A data de inicialização do dispositivo de análise de experiência do usuário.|
+|startupScore|Int32|Pontuação de inicialização do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
+|coreBootScore|Int32|A pontuação de inicialização principal do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
+|coreSigninScore|Int32|A pontuação de entrada principal do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
+|recommendedSoftwareScore|Int32|A pontuação de entrada principal do dispositivo de análise de experiência do usuário. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal.|
+|restartScore|Int32|Reinicie a pontuação. A pontuação estará no intervalo de 0 a 100, 100 é a pontuação ideal, 0 indica reinicializações excessivas. Valores válidos de 0 a 9999999|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

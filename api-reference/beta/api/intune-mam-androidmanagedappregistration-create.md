@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 07eb7db74761eeb3c866693ade33d011a307c8dc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d3c0b4901db4ee277b4f2470bc62aaffd00bbea3
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49300000"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51145527"
 ---
 # <a name="create-androidmanagedappregistration"></a>Criar androidManagedAppRegistration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Cria um novo objeto [androidManagedAppRegistration](../resources/intune-mam-andr
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,16 +61,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidM
 |deviceType|String|Tipo de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceTag|String|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceName|String|Nome de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|managedDeviceId|String|O identificador de dispositivo gerenciado do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é gerenciado. Herdada da [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|azureADDeviceId|String|O identificador de dispositivo do Azure Active Directory do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é registrado no Azure Active Directory. Herdada da [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceModel|Cadeia de caracteres|O modelo de dispositivo para o registro de aplicativo atual herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceManufacturer|String|O fabricante do dispositivo para o registro de aplicativo atual herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo em execução no dispositivo raiz herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md). Os valores possíveis são: `none`, `rootedDevice`, `androidBootloaderUnlocked`, `androidFactoryRomModified`.|
+|managedDeviceId|Cadeia de caracteres|O identificador de Dispositivo Gerenciado do dispositivo host. O valor pode estar vazio mesmo quando o dispositivo host é gerenciado. Herdada da [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|azureADDeviceId|String|O identificador do Dispositivo do Azure Active Directory do dispositivo host. O valor pode estar vazio mesmo quando o dispositivo host é registrado no Azure Active Directory. Herdada da [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceModel|Cadeia de caracteres|O modelo de dispositivo para o registro de aplicativo atual Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceManufacturer|Cadeia de caracteres|O fabricante do dispositivo para o registro de aplicativo atual Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|flaggedReasons|[Coleção managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo em execução no dispositivo raiz Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md). Os valores possíveis são: `none`, `rootedDevice`, `androidBootloaderUnlocked`, `androidFactoryRomModified`.|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O Identificador de pacote do aplicativo. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|id|String|Chave da entidade. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |version|String|Versão da entidade. Herdada da [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|patchVersion|String|A versão do patch para o registro atual do aplicativo Android|
+|patchVersion|Cadeia de caracteres|A versão de patch para o registro atual do aplicativo android|
 
 
 

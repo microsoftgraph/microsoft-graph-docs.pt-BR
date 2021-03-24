@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef3b75c8d3e30fda7483eaee77ac58630d49c5d7
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: ee148d25f00ca6c953e6f7ccfb923d1e0c30d51a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157201"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51143182"
 ---
 # <a name="list-mobileappdependencies"></a>Listar mobileAppDependencies
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,11 +25,11 @@ Listar propriedades e relações dos objetos [mobileAppDependency.](../resources
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos mobileAppDependency](../resources/intune-apps-mobileappdependency.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos mobileAppDependency](../resources/intune-apps-mobileappdependency.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

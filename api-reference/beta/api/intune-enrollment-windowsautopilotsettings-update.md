@@ -1,35 +1,35 @@
 ---
 title: Atualizar windowsAutopilotSettings
-description: Atualiza as propriedades de um objeto windowsAutopilotSettings.
+description: Atualize as propriedades de um objeto windowsAutopilotSettings.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53560e607bd3cdfe9cc56268d68fa09d9f95ac44
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bff766b56e9c625e2d22247db0612e5e8aeb95fc
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49212346"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51145849"
 ---
 # <a name="update-windowsautopilotsettings"></a>Atualizar windowsAutopilotSettings
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) .
+Atualize as propriedades de um [objeto windowsAutopilotSettings.](../resources/intune-enrollment-windowsautopilotsettings.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,21 +47,21 @@ PATCH /deviceManagement/windowsAutopilotSettings
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto windowsAutopilotSettings.](../resources/intune-enrollment-windowsautopilotsettings.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
-|lastSyncDateTime|DateTimeOffset|Data e hora da última sincronização de dados com o DDS Service.|
-|lastManualSyncTriggerDateTime|DateTimeOffset|Data e hora da última sincronização de dados com o DDS Service.|
-|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Indica o status da sincronização com o serviço de DDS (sincronização de dados do dispositivo). Os valores possíveis são: `unknown`, `inProgress`, `completed`, `failed`.|
+|id|Cadeia de caracteres|O GUID do objeto.|
+|lastSyncDateTime|DateTimeOffset|Última data de sincronização de dados com o serviço DDS.|
+|lastManualSyncTriggerDateTime|DateTimeOffset|Última data de sincronização de dados com o serviço DDS.|
+|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Indica o status da sincronização com o serviço de sincronização de dados de dispositivo (DDS). Os valores possíveis são: `unknown`, `inProgress`, `completed`, `failed`.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

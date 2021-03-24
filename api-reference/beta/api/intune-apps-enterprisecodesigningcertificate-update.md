@@ -1,34 +1,34 @@
 ---
 title: Atualizar enterpriseCodeSigningCertificate
-description: Atualiza as propriedades de um objeto enterpriseCodeSigningCertificate.
+description: Atualize as propriedades de um objeto enterpriseCodeSigningCertificate.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fad5751730adb14516dad0688369495fd6061070
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4e48075ef8278082959dc38f5f4c37d736599497
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49252980"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51144281"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>Atualizar enterpriseCodeSigningCertificate
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) .
+Atualize as propriedades de [um objeto enterpriseCodeSigningCertificate.](../resources/intune-apps-enterprisecodesigningcertificate.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,26 +47,26 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto enterpriseCodeSigningCertificate.](../resources/intune-apps-enterprisecodesigningcertificate.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da entidade.|
-|conteúdo|Binária|O certificado do Windows Enterprise Code-Signing no formato de dados brutos.|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
-|SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
-|assunto|String|O valor de entidade para o certificado.|
-|issuerName|String|O nome do emissor do certificado.|
-|emissor|String|O valor do emissor para o certificado.|
-|expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
-|uploadDateTime|DateTimeOffset|A data/hora do certificado de codesignação quando é carregado.|
+|id|Cadeia de caracteres|A chave da entidade.|
+|conteúdo|Binário|O Certificado Code-Signing Windows Enterprise no formato de dados brutos.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O Status do Certificado Provisionado ou não Provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
+|SubjectName|Cadeia de caracteres|O Nome do Assunto do certificado.|
+|assunto|Cadeia de caracteres|O Valor do Assunto do certificado.|
+|issuerName|Cadeia de caracteres|O Nome do Emissor do certificado.|
+|emissor|Cadeia de caracteres|O valor emissor do certificado.|
+|expirationDateTime|DateTimeOffset|A Data de Expiração do Certificado.|
+|uploadDateTime|DateTimeOffset|A data em que CodeSigning Cert é carregado.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

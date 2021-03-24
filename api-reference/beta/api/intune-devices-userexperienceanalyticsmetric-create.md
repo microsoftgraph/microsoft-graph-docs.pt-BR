@@ -1,35 +1,35 @@
 ---
 title: Criar userExperienceAnalyticsMetric
-description: Criar um novo objeto userExperienceAnalyticsMetric.
+description: Crie um novo objeto userExperienceAnalyticsMetric.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18c5f6eee064d3d4b690bd759df6f210a6dbbc5f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6ad5b6320e257df35baf3011b8c19949bfe3118d
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49234241"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51146199"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Criar userExperienceAnalyticsMetric
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) .
+Crie um novo [objeto userExperienceAnalyticsMetric.](../resources/intune-devices-userexperienceanalyticsmetric.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -50,20 +50,20 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto userExperienceAnalyticsMetric.
+No corpo da solicitação, fornece uma representação JSON para o objeto userExperienceAnalyticsMetric.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar userExperienceAnalyticsMetric.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o userExperienceAnalyticsMetric.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da métrica de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da métrica de análise de experiência do usuário.|
 |valor|Duplo|O valor da métrica de análise da experiência do usuário.|
-|unidade|String|A unidade da métrica de análise da experiência do usuário.|
+|unidade|Cadeia de caracteres|A unidade da métrica de análise de experiência do usuário.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

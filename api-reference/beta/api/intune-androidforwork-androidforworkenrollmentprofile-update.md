@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a6c3eb8d2886595f128a600dc1ef5170b79d9b9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1e2011dc33af2450fe5fe63492167973269441c0
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49254724"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51144701"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>Atualizar androidForWorkEnrollmentProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Atualizar as propriedades de um objeto [androidForWorkEnrollmentProfile](../reso
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
-|id|String|GUID exclusivo do perfil de registro.|
-|displayName|String|Nome de exibição do perfil de registro.|
-|description|String|Descrição do perfil de registro.|
+|id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
+|displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
+|descrição|Cadeia de caracteres|Descrição do perfil de registro.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
 |tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|

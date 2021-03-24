@@ -1,34 +1,34 @@
 ---
 title: Atualizar iosVppAppAssignedLicense
-description: Atualiza as propriedades de um objeto iosVppAppAssignedLicense.
+description: Atualize as propriedades de um objeto iosVppAppAssignedLicense.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 205d529c361b42dc13b55345260a9e00e7e85cba
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d8fc793f48d718af7a3cbc1ffa4dada36766df97
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49251798"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51144015"
 ---
 # <a name="update-iosvppappassignedlicense"></a>Atualizar iosVppAppAssignedLicense
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) .
+Atualize as propriedades de [um objeto iosVppAppAssignedLicense.](../resources/intune-apps-iosvppappassignedlicense.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,22 +47,22 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto iosVppAppAssignedLicense.](../resources/intune-apps-iosvppappassignedlicense.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|useremailaddress|String|O endereço de email do usuário.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
 |userId|Cadeia de caracteres|A ID do usuário.|
-|userName|Cadeia de caracteres|O nome de usuário.|
-|userPrincipalName|String|O nome da entidade de segurança do usuário.|
+|userName|Cadeia de caracteres|O nome do usuário.|
+|userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

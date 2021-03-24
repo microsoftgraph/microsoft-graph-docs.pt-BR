@@ -1,34 +1,34 @@
 ---
 title: Atualizar mobileAppInstallSummary
-description: Atualiza as propriedades de um objeto mobileAppInstallSummary.
+description: Atualize as propriedades de um objeto mobileAppInstallSummary.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efe0816dc084dd0ff4f8c95e9a4b3aac8f5a6097
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9ecf2214cd2853112a23c4dab105d32a2e1a839e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49248312"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51143147"
 ---
 # <a name="update-mobileappinstallsummary"></a>Atualizar mobileAppInstallSummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .
+Atualize as propriedades de um [objeto mobileAppInstallSummary.](../resources/intune-apps-mobileappinstallsummary.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,28 +47,28 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto mobileAppInstallSummary.](../resources/intune-apps-mobileappinstallsummary.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |installedDeviceCount|Int32|Número de dispositivos que instalaram com êxito este aplicativo.|
-|failedDeviceCount|Int32|Número de dispositivos que falharam ao instalar este aplicativo.|
-|notApplicableDeviceCount|Int32|Número de dispositivos que não se aplicam a este aplicativo.|
-|notInstalledDeviceCount|Int32|Número de dispositivos que não possuem este aplicativo instalado.|
+|failedDeviceCount|Int32|Número de dispositivos que falharam ao instalar esse aplicativo.|
+|notApplicableDeviceCount|Int32|Número de dispositivos que não são aplicáveis para este aplicativo.|
+|notInstalledDeviceCount|Int32|Número de dispositivos que não têm esse aplicativo instalado.|
 |pendingInstallDeviceCount|Int32|Número de dispositivos que foram notificados para instalar este aplicativo.|
 |installedUserCount|Int32|Número de usuários cujos dispositivos foram todos bem-sucedidos para instalar este aplicativo.|
-|failedUserCount|Int32|Número de usuários que têm um ou mais dispositivos que não instalaram este aplicativo.|
-|notApplicableUserCount|Int32|Número de usuários cujos dispositivos não são todos aplicáveis para este aplicativo.|
-|notInstalledUserCount|Int32|Número de usuários que têm um ou mais dispositivos que não instalaram este aplicativo.|
-|pendingInstallUserCount|Int32|Número de usuários que têm um ou mais dispositivos que foram notificados para instalar este aplicativo e têm 0 dispositivos com falhas.|
+|failedUserCount|Int32|Número de usuários que têm 1 ou mais dispositivos que falharam ao instalar esse aplicativo.|
+|notApplicableUserCount|Int32|Número de usuários cujos dispositivos não eram aplicáveis para este aplicativo.|
+|notInstalledUserCount|Int32|Número de usuários que têm 1 ou mais dispositivos que não instalaram esse aplicativo.|
+|pendingInstallUserCount|Int32|Número de usuários que têm 1 ou mais dispositivos que foram notificados para instalar esse aplicativo e têm 0 dispositivos com falhas.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

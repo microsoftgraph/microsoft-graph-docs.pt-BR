@@ -1,34 +1,34 @@
 ---
 title: ação revokeDeviceLicense
-description: Revogar licença de dispositivo VPP do iOS atribuída para determinado aplicativo.
+description: Revogar a licença de dispositivo VPP do iOS atribuída para determinado aplicativo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2e21466985a372287aec28bd8cadf9eb4f4e461
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 648677f00c26c4432614eda9ce840b152528a5e4
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49252372"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51144099"
 ---
 # <a name="revokedevicelicense-action"></a>ação revokeDeviceLicense
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Revogar licença de dispositivo VPP do iOS atribuída para determinado aplicativo.
+Revogar a licença de dispositivo VPP do iOS atribuída para determinado aplicativo.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,8 +55,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|managedDeviceId|String|A DeviceID para a qual a licença de aplicativo atribuída deve ser revogada|
-|notifyManagedDevices|Booliano|Booliano que indica se a notificação de revogação deve ser enviada ao dispositivo|
+|managedDeviceId|Cadeia de caracteres|DeviceId para quem a licença de aplicativo atribuída deve ser revogada|
+|notifyManagedDevices|Booleano|Boolean que indica se a notificação de revogação deve ser enviada ao dispositivo|
 
 
 
