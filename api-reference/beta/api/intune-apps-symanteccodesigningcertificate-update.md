@@ -1,34 +1,34 @@
 ---
 title: Atualizar symantecCodeSigningCertificate
-description: Atualiza as propriedades de um objeto symantecCodeSigningCertificate.
+description: Atualize as propriedades de um objeto symantecCodeSigningCertificate.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a31fe8fcaaf27e37fc1119460e521ad18339dcee
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bc1edeade6d629fa2eecd1fb6bb7b29eb96a5619
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49247682"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51139388"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Atualizar symantecCodeSigningCertificate
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) .
+Atualize as propriedades de um [objeto symantecCodeSigningCertificate.](../resources/intune-apps-symanteccodesigningcertificate.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,27 +47,27 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto symantecCodeSigningCertificate.](../resources/intune-apps-symanteccodesigningcertificate.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da entidade.|
-|conteúdo|Binária|O Windows Symantec Code-Signing o certificado no formato de dados brutos.|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
-|password|String|A senha necessária para o arquivo. pfx.|
-|SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
-|assunto|String|O valor de entidade para o certificado.|
-|issuerName|String|O nome do emissor do certificado.|
-|emissor|String|O valor do emissor para o certificado.|
-|expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
-|uploadDateTime|DateTimeOffset|O tipo do certificado de codesignação como CERT da Symantec.|
+|id|Cadeia de caracteres|A chave da entidade.|
+|conteúdo|Binário|O Certificado do Windows Symantec Code-Signing no formato de dados brutos.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O Status do Certificado Provisionado ou não Provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
+|password|String|A senha necessária para o arquivo .pfx.|
+|SubjectName|Cadeia de caracteres|O Nome do Assunto do certificado.|
+|assunto|Cadeia de caracteres|O valor Subject do certificado.|
+|issuerName|Cadeia de caracteres|O Nome do Emissor do certificado.|
+|emissor|Cadeia de caracteres|O valor emissor do certificado.|
+|expirationDateTime|DateTimeOffset|A Data de Expiração do Certificado.|
+|uploadDateTime|DateTimeOffset|O Tipo do Certificado de Design de Código como Certificado Symantec.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
