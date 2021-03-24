@@ -1,34 +1,34 @@
 ---
 title: Criar macOSSoftwareUpdateAccountSummary
-description: Criar um novo objeto macOSSoftwareUpdateAccountSummary.
+description: Crie um novo objeto macOSSoftwareUpdateAccountSummary.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 650cf62516b34552de066743e010d6da17b7e6b9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0a34b35952ee240784a4b4f28705fe49354024cb
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49236733"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51129752"
 ---
 # <a name="create-macossoftwareupdateaccountsummary"></a>Criar macOSSoftwareUpdateAccountSummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) .
+Crie um novo [objeto macOSSoftwareUpdateAccountSummary.](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,28 +47,28 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto macOSSoftwareUpdateAccountSummary.
+No corpo da solicitação, fornece uma representação JSON para o objeto macOSSoftwareUpdateAccountSummary.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar macOSSoftwareUpdateAccountSummary.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o macOSSoftwareUpdateAccountSummary.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|displayName|String|O nome do relatório|
+|id|Cadeia de caracteres|Chave da entidade.|
+|displayName|Cadeia de caracteres|O nome do relatório|
 |deviceId|Cadeia de caracteres|A ID do dispositivo.|
 |userId|Cadeia de caracteres|A ID do usuário.|
 |deviceName|String|O nome do dispositivo.|
-|userPrincipalName|String|O nome principal do usuário|
+|userPrincipalName|Cadeia de caracteres|O nome principal do usuário|
 |osVersion|String|A versão do sistema operacional.|
 |successfulUpdateCount|Int32|Número de atualizações bem-sucedidas no dispositivo.|
 |failedUpdateCount|Int32|Número de atualizações com falha no dispositivo.|
-|totalUpdateCount|Int32|Número total de atualizações no dispositivo.|
-|lastUpdatedDateTime|DateTimeOffset|Hora da última data em que o relatório para este dispositivo foi atualizado.|
+|totalUpdateCount|Int32|Número de atualizações totais no dispositivo.|
+|lastUpdatedDateTime|DateTimeOffset|Última data em que o relatório deste dispositivo foi atualizado.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
