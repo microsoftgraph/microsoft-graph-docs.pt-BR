@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cb49bec3ff01bf1efe604c7490e243401718bfd
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0ed8402d459a750f120754a5e33a087656de958b
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49230335"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51137081"
 ---
 # <a name="update-sharedpcconfiguration"></a>Atualizar sharedPCConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,11 +25,11 @@ Atualiza as propriedades de um objeto [sharedPCConfiguration](../resources/intun
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,35 +55,35 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [sharedPCConfigu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|Especifica como as contas são gerenciadas em um PC compartilhado. Aplica-se somente quando disableAccountManager é false.|
 |allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Indica que tipos de contas podem ser usadas em um PC compartilhado. Os valores possíveis são: `notConfigured`, `guest`, `domain`.|
-|localStorage|[habilitação](../resources/intune-shared-enablement.md)|Especifica se o armazenamento local é permitido em um PC compartilhado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|localStorage|[enablement](../resources/intune-shared-enablement.md)|Especifica se o armazenamento local é permitido em um PC compartilhado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |allowLocalStorage|Boolean|Especifica se o armazenamento local é permitido em um PC compartilhado.|
-|setaccountmanager|[habilitação](../resources/intune-shared-enablement.md)|Desabilita o gerente de contas para o modo de PC compartilhado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|setAccountManager|[enablement](../resources/intune-shared-enablement.md)|Desabilita o gerente de contas para o modo de PC compartilhado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |disableAccountManager|Boolean|Desabilita o gerente de contas para o modo de PC compartilhado.|
-|setEduPolicies|[habilitação](../resources/intune-shared-enablement.md)|Especifica se as políticas de ambiente de educação de computador compartilhado padrão devem ser habilitadas/desabilitadas/não configuradas. Para o Windows 10 RS2 e posterior, essa política será aplicada sem configurar Enabled como true. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|setEduPolicies|[enablement](../resources/intune-shared-enablement.md)|Especifica se as políticas de ambiente de educação do computador compartilhado padrão devem ser habilitadas/desabilitadas/não configuradas. Para o Windows 10 RS2 e posterior, essa política será aplicada sem configurar Enabled como true. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |disableEduPolicies|Boolean|Especifica se as políticas padrão de ambiente de educação do PC compartilhado devem ser desabilitadas. Para o Windows 10 RS2 e posterior, essa política será aplicada sem configurar Enabled como true.|
-|setPowerPolicies|[habilitação](../resources/intune-shared-enablement.md)|Especifica se as políticas de energia padrão do computador compartilhado devem ser ativadas/desativadas. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|setPowerPolicies|[enablement](../resources/intune-shared-enablement.md)|Especifica se as políticas de energia do computador compartilhado padrão devem ser habilitadas/desabilitadas. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |disablePowerPolicies|Boolean|Especifica se as políticas padrão de energia do PC compartilhado devem ser desabilitadas.|
-|signInOnResume|[habilitação](../resources/intune-shared-enablement.md)|Especifica o requisito para entrar sempre que o dispositivo é ativado do modo de suspensão. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|signInOnResume|[enablement](../resources/intune-shared-enablement.md)|Especifica o requisito de entrar sempre que o dispositivo acordar do modo de sono. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |disableSignInOnResume|Boolean|Desabilita o requisito de entrar sempre que o dispositivo sai do modo de suspensão.|
 |enabled|Boolean|Habilita o modo de PC compartilhado e aplica as políticas de PC compartilhadas.|
 |idleTimeBeforeSleepInSeconds|Int32|Especifica o tempo em segundos que um dispositivo deve ficar ocioso antes de o PC entrar em suspensão. Definir esse valor como 0 impede que o tempo limite de suspensão ocorra.|
 |kioskAppDisplayName|String|Especifica o texto de exibição para a conta mostrada na tela de entrada que inicializa o aplicativo especificado por SetKioskAppUserModelId. Aplicável somente quando KioskAppUserModelId está definido.|
 |kioskAppUserModelId|String|Especifica a ID do modelo de usuário do aplicativo para uso com acesso atribuído.|
 |maintenanceStartTime|TimeOfDay|Especifica o horário de início diário da hora de manutenção.|
-|fastFirstSignIn|[habilitação](../resources/intune-shared-enablement.md)|Especifica se a conexão automática de novas contas não administrativas do Azure AD para contas locais de candidatos pré-configuradas. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|fastFirstSignIn|[enablement](../resources/intune-shared-enablement.md)|Especifica se as novas contas não administrativas do Azure AD serão conectadas automaticamente a contas locais de candidatos pré-configurados. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 
 
 

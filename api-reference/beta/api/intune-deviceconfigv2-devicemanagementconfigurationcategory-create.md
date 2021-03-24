@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f442bc7fb988fe96b95d051a9370ed5f7b67b820
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cc4e659b9149347030344d10ecc02a4272c35832
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435004"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51136892"
 ---
 # <a name="create-devicemanagementconfigurationcategory"></a>Criar deviceManagementConfigurationCategory
 
@@ -25,10 +25,10 @@ Crie um novo [objeto deviceManagementConfigurationCategory.](../resources/intune
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,16 +53,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador de item|
-|descrição|String|Descrição do item|
-|helpText|String|Texto de ajuda do item|
-|nome|String|Nome do item|
-|displayName|String|Nome de exibição do item|
+|id|Cadeia de caracteres|Identificador de item|
+|descrição|Cadeia de caracteres|Descrição do item|
+|helpText|Cadeia de caracteres|Texto de ajuda do item|
+|nome|Cadeia de caracteres|Nome do item|
+|displayName|Cadeia de caracteres|Nome de exibição do item|
 |plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Tipos de plataformas, que configurações na categoria têm. Os valores possíveis são: `none`, `macOS`, `windows10X`, `windows10`.|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tipos de tecnologias, que configurações na categoria têm. Os valores possíveis são: `none`, `mdm`, `windows10XManagement`, `configManager`.|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indica que a categoria contém configurações usadas para Conformidade ou Configuração. Os valores possíveis são: `none` e `configuration`.|
-|parentCategoryId|String|ID pai da categoria.|
-|rootCategoryId|String|ID raiz da categoria.|
+|parentCategoryId|Cadeia de caracteres|ID pai da categoria.|
+|rootCategoryId|Cadeia de caracteres|ID raiz da categoria.|
 |childCategoryIds|Coleção de cadeias de caracteres|Lista de IDs filho da categoria.|
 
 

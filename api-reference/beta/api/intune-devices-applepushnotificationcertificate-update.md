@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 729f77d89c9ba8583fb6c875f2b224ab515e0086
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6d5c82bd86b931fa619b0e92239558126df3ae0e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49306027"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51136493"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Atualizar applePushNotificationCertificate
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Atualizar as propriedades de um objeto [applePushNotificationCertificate](../res
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,14 +53,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [applePu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do certificado.|
+|id|Cadeia de caracteres|O identificador exclusivo do certificado.|
 |appleIdentifier|Cadeia de caracteres|Id da Apple da conta usada para criar o certificado de push do MDM.|
 |topicIdentifier|Cadeia de caracteres|ID do tópico.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação de certificado de notificações por push da Apple.|
 |expirationDateTime|DateTimeOffset|Data e hora do vencimento de certificado de notificações por push da Apple.|
-|certificateUploadStatus|String|O status do carregamento do certificado.|
-|certificateUploadFailureReason|String|O motivo da falha no carregamento do certificado.|
-|certificateSerialNumber|String|Número de série do certificado. Essa propriedade é somente leitura.|
+|certificateUploadStatus|Cadeia de caracteres|O status de carregamento do certificado.|
+|certificateUploadFailureReason|Cadeia de caracteres|O motivo pelo qual o carregamento do certificado falhou.|
+|certificateSerialNumber|Cadeia de caracteres|Número de série do certificado. Essa propriedade é somente leitura.|
 |certificado|Cadeia de caracteres|Ainda não documentado|
 
 
