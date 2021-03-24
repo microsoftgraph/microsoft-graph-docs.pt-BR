@@ -1,35 +1,35 @@
 ---
 title: Atualizar deviceHealthScriptDeviceState
-description: Atualiza as propriedades de um objeto deviceHealthScriptDeviceState.
+description: Atualize as propriedades de um objeto deviceHealthScriptDeviceState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: daa79b87391aeec8265f8f6499e4addf8c3393cf
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a7db2c523dccab40a48d95289ca72d832a09e2ec
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49235130"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51130662"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a>Atualizar deviceHealthScriptDeviceState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) .
+Atualize as propriedades de [um objeto deviceHealthScriptDeviceState.](../resources/intune-devices-devicehealthscriptdevicestate.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,28 +47,28 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStat
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto deviceHealthScriptDeviceState.](../resources/intune-devices-devicehealthscriptdevicestate.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado do dispositivo de script de integridade do dispositivo. Essa propriedade é somente leitura.|
-|detecçaostate|[runState](../resources/intune-shared-runstate.md)|Estado de detecção da execução do script de integridade do dispositivo mais recente. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|lastStateUpdateDateTime|DateTimeOffset|O último carimbo de data/hora de quando o script de integridade do dispositivo é executado|
-|expectedStateUpdateDateTime|DateTimeOffset|O carimbo de data/hora seguinte de quando o script de integridade do dispositivo deve ser executado|
-|lastSyncDateTime|DateTimeOffset|A última vez em que a extensão de gerenciamento do Intune foi sincronizada com o Intune|
-|preRemediationDetectionScriptOutput|String|Saída do script de detecção antes da correção|
-|preRemediationDetectionScriptError|String|Erro do script de detecção antes da correção|
-|remediationScriptError|String|Saída de erro do script de correção|
-|postRemediationDetectionScriptOutput|String|Saída do script de detecção após a correção|
-|postRemediationDetectionScriptError|String|Erro do script de detecção após a correção|
-|remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Estado de correção da execução do script de integridade do dispositivo mais recente. Os valores possíveis são: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|id|Cadeia de caracteres|Chave da entidade de estado do dispositivo de script de saúde do dispositivo. Essa propriedade é somente leitura.|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|Estado de detecção da última execução de script de saúde do dispositivo. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|lastStateUpdateDateTime|DateTimeOffset|O último período de data/hora de quando o script de saúde do dispositivo foi executado|
+|expectedStateUpdateDateTime|DateTimeOffset|O próximo horário de quando o script de saúde do dispositivo deve ser executado|
+|lastSyncDateTime|DateTimeOffset|A última vez que a Extensão de Managment do Intune foi sincronizada com o Intune|
+|preRemediationDetectionScriptOutput|Cadeia de caracteres|Saída do script de detecção antes da correção|
+|preRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção antes da correção|
+|remediationScriptError|Cadeia de caracteres|Saída de erro do script de correção|
+|postRemediationDetectionScriptOutput|Cadeia de caracteres|Saída de script de detecção após correção|
+|postRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção após a correção|
+|remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Estado de correção da última execução do script de saúde do dispositivo. Os valores possíveis são: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

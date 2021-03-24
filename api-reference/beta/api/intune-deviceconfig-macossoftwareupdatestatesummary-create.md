@@ -1,35 +1,35 @@
 ---
 title: Criar macOSSoftwareUpdateStateSummary
-description: Criar um novo objeto macOSSoftwareUpdateStateSummary.
+description: Crie um novo objeto macOSSoftwareUpdateStateSummary.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a94fae032fd3bae053b7af170d5ac1c4f43b2a08
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a31fdb8581146969d8647a10f429999aeb6d2d0a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49219928"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51132636"
 ---
 # <a name="create-macossoftwareupdatestatesummary"></a>Criar macOSSoftwareUpdateStateSummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) .
+Crie um novo [objeto macOSSoftwareUpdateStateSummary.](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,24 +47,24 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateA
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto macOSSoftwareUpdateStateSummary.
+No corpo da solicitação, fornece uma representação JSON para o objeto macOSSoftwareUpdateStateSummary.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar macOSSoftwareUpdateStateSummary.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o macOSSoftwareUpdateStateSummary.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|displayName|String|Nome da atualização de software legível por pessoas|
-|productKey|String|Chave de produto da atualização de software.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|displayName|Cadeia de caracteres|Nome acessível humano da atualização de software|
+|productKey|String|Chave do produto da atualização de software.|
 |updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Categoria de atualização de software. Os valores possíveis são: `critical`, `configurationDataFile`, `firmware`, `other`.|
-|updateVersion|String|Versão da atualização de software|
-|state|[macOSSoftwareUpdateState](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|Estado da atualização de software. Os valores possíveis são:, `success` `downloading` , `downloaded` , `installing` , `idle` , `available` , `scheduled` , `downloadFailed` , `downloadInsufficientSpace` , `downloadInsufficientPower` , `downloadInsufficientNetwork` , `installInsufficientSpace` ,, `installInsufficientPower` `installFailed` `commandFailed` .|
-|lastUpdatedDateTime|DateTimeOffset|Hora da última data em que o relatório para este dispositivo e chave do produto foi atualizado.|
+|updateVersion|Cadeia de caracteres|Versão da atualização de software|
+|state|[macOSSoftwareUpdateState](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|Estado da atualização de software. Os valores possíveis são: `success` , , , , , , , , , `downloading` , , `downloaded` , , , `installing` `idle` `available` , `scheduled` `downloadFailed` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installFailed` `commandFailed` .|
+|lastUpdatedDateTime|DateTimeOffset|Última data em que o relatório para este dispositivo e a chave do produto foi atualizado.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

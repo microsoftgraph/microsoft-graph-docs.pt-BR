@@ -1,34 +1,34 @@
 ---
 title: Atualizar macOSEndpointProtectionConfiguration
-description: Atualiza as propriedades de um objeto macOSEndpointProtectionConfiguration.
+description: Atualize as propriedades de um objeto macOSEndpointProtectionConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 501fe61b0a3b1edb355ae008991b8c4c6e8fef86
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 23e7bc30a9b5410e6f33e96d628654e1f9f69ebc
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49258301"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51131320"
 ---
 # <a name="update-macosendpointprotectionconfiguration"></a>Atualizar macOSEndpointProtectionConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) .
+Atualize as propriedades de [um objeto macOSEndpointProtectionConfiguration.](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,52 +49,52 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto macOSEndpointProtectionConfiguration.](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Configuração de sistema e privacidade que determina quais locais de download os aplicativos podem ser executados em um dispositivo macOS. Os valores possíveis são: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|gatekeeperBlockOverride|Booliano|Se definido como true, a substituição do usuário para gatekeeper será desabilitada.|
-|firewallEnabled|Booliano|Se o firewall deve ser habilitado ou não.|
-|firewallBlockAllIncoming|Booliano|Corresponde à opção "bloquear todas as conexões de entrada".|
-|firewallEnableStealthMode|Booliano|Corresponde a "Habilitar modo oculto".|
-|firewallApplications|coleção [macOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md)|Lista de aplicativos com configurações de firewall. As configurações de firewall para aplicativos que não estão nessa lista são determinadas pelo usuário. Esta coleção pode conter um máximo de 500 elementos.|
-|fileVaultEnabled|Booliano|Se o FileVault deve ser habilitado ou não.|
-|fileVaultSelectedRecoveryKeyTypes|[macOSFileVaultRecoveryKeyTypes](../resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md)|Obrigatório se FileVault estiver habilitado, determina o (s) tipo (s) de chave de recuperação a ser usado. . Os valores possíveis são: `notConfigured`, `institutionalRecoveryKey`, `personalRecoveryKey`.|
-|fileVaultInstitutionalRecoveryKeyCertificate|Binária|Obrigatório se os tipos de chave de recuperação selecionados incluem InstitutionalRecoveryKey. O arquivo de certificado codificado por DER usado para definir uma chave de recuperação institucional.|
-|fileVaultInstitutionalRecoveryKeyCertificateFileName|String|Nome do arquivo do certificado de chave de recuperação institucional a ser exibido na interface do usuário. (*. der).|
-|fileVaultPersonalRecoveryKeyHelpMessage|String|Obrigatório se os tipos de chave de recuperação selecionados incluem PersonalRecoveryKey. Uma mensagem curta exibida para o usuário que explica como eles podem recuperar sua chave de recuperação pessoal.|
-|fileVaultAllowDeferralUntilSignOut|Booliano|Opcional. Se for definido como true, o usuário poderá adiar a habilitação do FileVault até que ele saia.|
-|fileVaultNumberOfTimesUserCanIgnore|Int32|Opcional. Ao usar a opção Defer, este é o número máximo de vezes que o usuário pode ignorar as solicitações para habilitar o FileVault antes que o usuário entre no FileVault será necessário para entrar. Se for definido como-1, ele sempre solicitará a habilitação do FileVault até que o FileVault esteja habilitado, embora permita que o usuário ignore a habilitação de FileVault. Configurar como 0 desativará o recurso.|
-|fileVaultDisablePromptAtSignOut|Booliano|Opcional. Ao usar a opção Defer, se definida como true, o usuário não será solicitado a habilitar o FileVault ao sair.|
-|fileVaultPersonalRecoveryKeyRotationInMonths|Int32|Opcional. Se os tipos de chave de recuperação selecionados incluírem PersonalRecoveryKey, a frequência de rotação dessa chave, em meses.|
-|fileVaultHidePersonalRecoveryKey|Booliano|Opcional. Uma chave de recuperação pessoal oculta não aparece na tela do usuário durante a criptografia FileVault, reduzindo o risco de ela ser terminada nas mãos erradas.|
-|advancedThreatProtectionRealTime|[habilitação](../resources/intune-shared-enablement.md)|Determina se a proteção em tempo real para proteção avançada contra ameaças do Microsoft defender deve ou não ser habilitada no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|advancedThreatProtectionCloudDelivered|[habilitação](../resources/intune-shared-enablement.md)|Determina se a proteção do Microsoft defender para proteção avançada contra ameaças deve ou não ser habilitada no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|advancedThreatProtectionAutomaticSampleSubmission|[habilitação](../resources/intune-shared-enablement.md)|Determina se o envio automático de exemplo de arquivo para a proteção avançada contra ameaças do Microsoft defender deve ou não ser habilitado no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|advancedThreatProtectionDiagnosticDataCollection|[habilitação](../resources/intune-shared-enablement.md)|Determina se o diagnóstico e a coleta de dados de uso devem ou não ser habilitados para a proteção avançada contra ameaças do Microsoft defender no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|advancedThreatProtectionExcludedFolders|Coleção de cadeias de caracteres|Uma lista de caminhos para pastas a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
-|advancedThreatProtectionExcludedFiles|Coleção de cadeias de caracteres|Uma lista de caminhos para arquivos a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
-|advancedThreatProtectionExcludedExtensions|Coleção de cadeias de caracteres|Uma lista de extensões de arquivo para excluir da verificação antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
-|advancedThreatProtectionExcludedProcesses|Coleção de cadeias de caracteres|Uma lista de nomes de processos a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
+|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Configuração de Sistema e Privacidade que determina de quais locais de download os aplicativos podem ser executados em um dispositivo macOS. Os valores possíveis são: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
+|gatekeeperBlockOverride|Booleano|Se definido como true, a substituição do usuário para Gatekeeper será desabilitada.|
+|firewallEnabled|Booleano|Se o firewall deve ser habilitado ou não.|
+|firewallBlockAllIncoming|Booleano|Corresponde à opção "Bloquear todas as conexões de entrada".|
+|firewallEnableStealthMode|Booleano|Corresponde a "Habilitar o modo de furtividade".|
+|firewallApplications|[Coleção macOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md)|Lista de aplicativos com configurações de firewall. As configurações de firewall para aplicativos que não estão nesta lista são determinadas pelo usuário. Esta coleção pode conter um máximo de 500 elementos.|
+|fileVaultEnabled|Booleano|Se FileVault deve ser habilitado ou não.|
+|fileVaultSelectedRecoveryKeyTypes|[macOSFileVaultRecoveryKeyTypes](../resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md)|Obrigatório se FileVault estiver habilitado, determina os tipos da chave de recuperação a ser usada. . Os valores possíveis são: `notConfigured`, `institutionalRecoveryKey`, `personalRecoveryKey`.|
+|fileVaultInstitutionalRecoveryKeyCertificate|Binário|Obrigatório se os tipos de teclas de recuperação selecionados incluirEm InstitucionalRecoveryKey. O arquivo de certificado codificado por DER usado para definir uma chave de recuperação institucional.|
+|fileVaultInstitutionalRecoveryKeyCertificateFileName|Cadeia de caracteres|Nome do arquivo do certificado de chave de recuperação institucional a ser exibido na interface do usuário. (*.der).|
+|fileVaultPersonalRecoveryKeyHelpMessage|Cadeia de caracteres|Obrigatório se os tipos de teclas de recuperação selecionados incluirEm PersonalRecoveryKey. Uma mensagem curta exibida para o usuário que explica como eles podem recuperar sua chave de recuperação pessoal.|
+|fileVaultAllowDeferralUntilSignOut|Booleano|Opcional. Se for definido como true, o usuário poderá adiar a habilitação de FileVault até sair.|
+|fileVaultNumberOfTimesUserCanIgnore|Int32|Opcional. Ao usar a opção Adiar, esse é o número máximo de vezes que o usuário pode ignorar prompts para habilitar FileVault antes que FileVault seja necessário para o usuário entrar. Se estiver definido como -1, ele sempre solicitará que FileVault seja habilitado até que FileVault seja habilitado, embora permita que o usuário ignore a habilitação de FileVault. Definir isso como 0 desabilitará o recurso.|
+|fileVaultDisablePromptAtSignOut|Booleano|Opcional. Ao usar a opção Adiar, se definido como true, o usuário não é solicitado a habilitar FileVault na saída.|
+|fileVaultPersonalRecoveryKeyRotationInMonths|Int32|Opcional. Se os tipos de teclas de recuperação selecionados incluirEm PersonalRecoveryKey, a frequência para girar essa chave, em meses.|
+|fileVaultHidePersonalRecoveryKey|Booleano|Opcional. Uma chave de recuperação pessoal oculta não aparece na tela do usuário durante a criptografia FileVault, reduzindo o risco de ela acabar em mãos erradas.|
+|advancedThreatProtectionRealTime|[enablement](../resources/intune-shared-enablement.md)|Determina se a proteção em tempo real do Microsoft Defender Advanced Threat Protection será habilitada ou não no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionCloudDelivered|[enablement](../resources/intune-shared-enablement.md)|Determina se a proteção entregue na nuvem deve ou não ser habilitada para a Proteção Avançada contra Ameaças do Microsoft Defender no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionAutomaticSampleSubmission|[enablement](../resources/intune-shared-enablement.md)|Determina se deve ou não habilitar o envio automático de exemplo de arquivo para a Proteção Avançada contra Ameaças do Microsoft Defender no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionDiagnosticDataCollection|[enablement](../resources/intune-shared-enablement.md)|Determina se será ou não possível habilitar a coleta de dados de diagnóstico e uso para a Proteção Avançada contra Ameaças do Microsoft Defender no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionExcludedFolders|Coleção de cadeias de caracteres|Uma lista de caminhos para pastas a excluir da verificação de antivírus para a Proteção Avançada contra Ameaças do Microsoft Defender no macOS.|
+|advancedThreatProtectionExcludedFiles|Coleção de cadeias de caracteres|Uma lista de caminhos para arquivos a ser excluídos da verificação de antivírus para a Proteção Avançada contra Ameaças do Microsoft Defender no macOS.|
+|advancedThreatProtectionExcludedExtensions|Coleção de cadeias de caracteres|Uma lista de extensões de arquivo a excluir da verificação de antivírus para a Proteção Avançada contra Ameaças do Microsoft Defender no macOS.|
+|advancedThreatProtectionExcludedProcesses|Coleção de cadeias de caracteres|Uma lista de nomes de processo a ser excluídos da verificação de antivírus para a Proteção Avançada contra Ameaças do Microsoft Defender no macOS.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

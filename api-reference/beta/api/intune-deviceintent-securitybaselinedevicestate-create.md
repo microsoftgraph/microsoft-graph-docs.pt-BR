@@ -1,34 +1,34 @@
 ---
 title: Criar securityBaselineDeviceState
-description: Criar um novo objeto securityBaselineDeviceState.
+description: Crie um novo objeto securityBaselineDeviceState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84a212dfef5dc9add7cf87dd5683c1788e070ecb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 498c9799315ba844001c82058915e8b0ec68a548
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275045"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51131985"
 ---
 # <a name="create-securitybaselinedevicestate"></a>Criar securityBaselineDeviceState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) .
+Crie um novo [objeto securityBaselineDeviceState.](../resources/intune-deviceintent-securitybaselinedevicestate.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,23 +47,23 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto securityBaselineDeviceState.
+No corpo da solicitação, fornece uma representação JSON para o objeto securityBaselineDeviceState.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar securityBaselineDeviceState.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o securityBaselineDeviceState.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade|
-|managedDeviceId|String|ID de dispositivo do Intune|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade|
+|managedDeviceId|Cadeia de caracteres|ID de dispositivo do Intune|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
-|userPrincipalName|String|Nome UPN|
+|userPrincipalName|Cadeia de caracteres|Nome UPN|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Estado de conformidade da linha de base de segurança. Os possíveis valores são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
-|lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de política|
+|lastReportedDateTime|DateTimeOffset|Data da última modificação do relatório de política|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

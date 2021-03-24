@@ -1,34 +1,34 @@
 ---
 title: Criar deviceManagementIntentDeviceState
-description: Criar um novo objeto deviceManagementIntentDeviceState.
+description: Crie um novo objeto deviceManagementIntentDeviceState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5de043e10960e54b9f8ba15c28380af9b003406
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: acb09abea15606ff2b0594da665784aabbef1571
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49289486"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51132027"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a>Criar deviceManagementIntentDeviceState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md) .
+Crie um novo [objeto deviceManagementIntentDeviceState.](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,24 +47,24 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceStates
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementIntentDeviceState.
+No corpo da solicitação, fornece uma representação JSON para o objeto deviceManagementIntentDeviceState.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementIntentDeviceState.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID|
-|userPrincipalName|String|O nome principal do usuário que está sendo relatado em um dispositivo|
+|id|Cadeia de caracteres|A ID|
+|userPrincipalName|Cadeia de caracteres|O nome principal do usuário que está sendo relatado em um dispositivo|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado em um dispositivo|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo que está sendo relatado|
-|lastReportedDateTime|DateTimeOffset|Data e hora da última modificação de um relatório de intenção|
+|lastReportedDateTime|DateTimeOffset|Data da última modificação de um relatório de intenção|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado do dispositivo para uma intenção. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|deviceId|Cadeia de caracteres|ID do dispositivo que está sendo relatado|
+|deviceId|Cadeia de caracteres|ID do dispositivo que está sendo relatada|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
