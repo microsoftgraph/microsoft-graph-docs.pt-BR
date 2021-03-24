@@ -1,35 +1,35 @@
 ---
 title: Criar depOnboardingSetting
-description: Criar um novo objeto depOnboardingSetting.
+description: Crie um novo objeto depOnboardingSetting.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d605f4a18eab5eacb3e8c53070a721952c54f7cf
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e4417c01a435ceb8392eff280992877ebdeb79e4
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49201692"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135730"
 ---
 # <a name="create-deponboardingsetting"></a>Criar depOnboardingSetting
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
+Crie um novo [objeto depOnboardingSetting.](../resources/intune-enrollment-deponboardingsetting.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,30 +47,30 @@ POST /deviceManagement/depOnboardingSettings
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto depOnboardingSetting.
+No corpo da solicitação, fornece uma representação JSON para o objeto depOnboardingSetting.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar depOnboardingSetting.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o depOnboardingSetting.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O UUID do objeto.|
+|id|Cadeia de caracteres|O UUID do objeto.|
 |appleIdentifier|Cadeia de caracteres|A ID da Apple usada para obter o token atual.|
-|tokenExpirationDateTime|DateTimeOffset|Quando o token expirará.|
+|tokenExpirationDateTime|DateTimeOffset|Quando o token expirar.|
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
-|lastSuccessfulSyncDateTime|DateTimeOffset|Quando o serviço última syned com o Intune|
-|lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitou uma sincronização pela última vez.|
-|shareTokenWithSchoolDataSyncService|Booliano|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
-|lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de Dep.|
-|TokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de token Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenname|String|Nome amigável para token Dep|
-|syncedDeviceCount|Int32|Obtém a contagem de dispositivos sincronizados|
-|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|lastSuccessfulSyncDateTime|DateTimeOffset|Quando o serviço foi sintetizado pela última vez com o Intune|
+|lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitou pela última vez uma sincronização.|
+|shareTokenWithSchoolDataSyncService|Booleano|Se o compartilhamento de token Dep está habilitado ou não com o serviço de Sincronização de Dados escolares.|
+|lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de dep.|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o Tipo de Token de Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
+|tokenName|Cadeia de caracteres|Nome amigável para Token de Dep|
+|syncedDeviceCount|Int32|Obtém contagem de dispositivos sincronizados|
+|dataSharingConsentGranted|Booleano|Consentimento concedido para compartilhamento de dados com o Serviço de Dep da Apple|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

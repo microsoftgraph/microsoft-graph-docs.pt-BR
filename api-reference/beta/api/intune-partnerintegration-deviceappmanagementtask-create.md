@@ -1,34 +1,34 @@
 ---
 title: Criar deviceAppManagementTask
-description: Criar um novo objeto deviceAppManagementTask.
+description: Crie um novo objeto deviceAppManagementTask.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 81771048e4a1c8868358a0a9d5eb66bd3843fec3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8f90599d0feefaa7a40e8ced47ab1653eb2e4d97
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49285300"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134904"
 ---
 # <a name="create-deviceappmanagementtask"></a>Criar deviceAppManagementTask
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) .
+Crie um novo [objeto deviceAppManagementTask.](../resources/intune-partnerintegration-deviceappmanagementtask.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,28 +47,28 @@ POST /deviceAppManagement/deviceAppManagementTasks
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto deviceAppManagementTask.
+No corpo da solicitação, fornece uma representação JSON para o objeto deviceAppManagementTask.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar deviceAppManagementTask.
+A tabela a seguir mostra as propriedades necessárias ao criar deviceAppManagementTask.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da entidade.|
-|displayName|String|O nome.|
-|description|String|A descrição.|
-|createdDateTime|DateTimeOffset|A data de criação.|
-|dueDateTime|DateTimeOffset|A data de conclusão.|
+|id|Cadeia de caracteres|A chave da entidade.|
+|displayName|Cadeia de caracteres|O nome.|
+|descrição|Cadeia de caracteres|A descrição.|
+|createdDateTime|DateTimeOffset|A data criada.|
+|dueDateTime|DateTimeOffset|A data de vencimento.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Os valores possíveis são: `unknown` e `advancedThreatProtection`.|
 |prioridade|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|A prioridade. Os valores possíveis são: `none`, `high`, `low`.|
-|criador|String|O endereço de email do criador.|
-|creatorNotes|String|Observações do criador.|
-|assignedTo|String|O nome ou email do administrador ao qual esta tarefa é atribuída.|
+|criador|Cadeia de caracteres|O endereço de email do criador.|
+|creatorNotes|Cadeia de caracteres|Observações do criador.|
+|assignedTo|Cadeia de caracteres|O nome ou o email do administrador ao que essa tarefa é atribuída.|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|O status. Os valores possíveis são: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

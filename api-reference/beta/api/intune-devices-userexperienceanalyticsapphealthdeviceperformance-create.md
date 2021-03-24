@@ -1,35 +1,35 @@
 ---
 title: Criar userExperienceAnalyticsAppHealthDevicePerformance
-description: Criar um novo objeto userExperienceAnalyticsAppHealthDevicePerformance.
+description: Crie um novo objeto userExperienceAnalyticsAppHealthDevicePerformance.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef02600ac660ab328e79df1da68be17c4f1776ed
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b10beeca6d79b8dc596cfa509a5a1a817af9a346
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49202847"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51136129"
 ---
 # <a name="create-userexperienceanalyticsapphealthdeviceperformance"></a>Criar userExperienceAnalyticsAppHealthDevicePerformance
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [userExperienceAnalyticsAppHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) .
+Crie um novo [objeto userExperienceAnalyticsAppHealthDevicePerformance.](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,28 +47,28 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto userExperienceAnalyticsAppHealthDevicePerformance.
+No corpo da solicitação, fornece uma representação JSON para o objeto userExperienceAnalyticsAppHealthDevicePerformance.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar userExperienceAnalyticsAppHealthDevicePerformance.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o userExperienceAnalyticsAppHealthDevicePerformance.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do objeto de desempenho do dispositivo de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
 |deviceModel|Cadeia de caracteres|O nome do modelo do dispositivo.|
-|deviceManufacturer|String|O nome do fabricante do dispositivo.|
-|appCrashCount|Int32|O número de falhas do aplicativo para o dispositivo. Valores válidos-2147483648 a 2147483647|
-|crashedAppCount|Int32|O número de falhas de aplicativos distintos para o dispositivo. Valores válidos-2147483648 a 2147483647|
-|appHangCount|Int32|O número de bloqueios de aplicativo para o dispositivo. Valores válidos-2147483648 a 2147483647|
-|meanTimeToFailureInMinutes|Int32|O tempo médio de falha para o dispositivo em minutos. Valores válidos-2147483648 a 2147483647|
-|deviceAppHealthScore|Duplo|A pontuação de integridade do aplicativo do dispositivo. Valores válidos-1.79769313486232 E + 308 a 1.79769313486232 E + 308|
-|deviceAppHealthStatus|String|O status de integridade geral do aplicativo do dispositivo.|
-|deviceId|Cadeia de caracteres|A ID do dispositivo.|
+|deviceManufacturer|Cadeia de caracteres|O nome do fabricante do dispositivo.|
+|appCrashCount|Int32|O número de falhas de aplicativo para o dispositivo. Valores válidos -2147483648 a 2147483647|
+|crashedAppCount|Int32|O número de falhas distintas do aplicativo para o dispositivo. Valores válidos -2147483648 a 2147483647|
+|appHangCount|Int32|O número de travas de aplicativo para o dispositivo. Valores válidos -2147483648 a 2147483647|
+|meanTimeToFailureInMinutes|Int32|O tempo de falha média do dispositivo em minutos. Valores válidos -2147483648 a 2147483647|
+|deviceAppHealthScore|Duplo|A pontuação de saúde do aplicativo do dispositivo. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|deviceAppHealthStatus|Cadeia de caracteres|O status geral da saúde do aplicativo do dispositivo.|
+|deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [userExperienceAnalyticsAppHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto userExperienceAnalyticsAppHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

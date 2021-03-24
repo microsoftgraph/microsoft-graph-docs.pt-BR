@@ -1,35 +1,35 @@
 ---
 title: Criar userExperienceAnalyticsAppHealthOSVersionPerformance
-description: Criar um novo objeto userExperienceAnalyticsAppHealthOSVersionPerformance.
+description: Crie um novo objeto userExperienceAnalyticsAppHealthOSVersionPerformance.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7bd76e0d5938f80c0a45923b5eb95f278e2edf38
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 80ae02ef79f06808a83997c494862d769e82bce2
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49202567"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135996"
 ---
 # <a name="create-userexperienceanalyticsapphealthosversionperformance"></a>Criar userExperienceAnalyticsAppHealthOSVersionPerformance
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) .
+Crie um novo [objeto userExperienceAnalyticsAppHealthOSVersionPerformance.](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,24 +47,24 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto userExperienceAnalyticsAppHealthOSVersionPerformance.
+No corpo da solicitação, fornece uma representação JSON para o objeto userExperienceAnalyticsAppHealthOSVersionPerformance.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar userExperienceAnalyticsAppHealthOSVersionPerformance.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o userExperienceAnalyticsAppHealthOSVersionPerformance.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do objeto de desempenho da versão da experiência do usuário do Analytics OS.|
+|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho de versão do sistema operacional de análise de experiência do usuário.|
 |osVersion|String|A versão do sistema operacional instalada no dispositivo.|
-|osBuildNumber|String|O número de compilação do sistema operacional instalado no dispositivo.|
-|activeDeviceCount|Int32|O número de dispositivos ativos para a versão do sistema operacional. Valores válidos-2147483648 a 2147483647|
-|meanTimeToFailureInMinutes|Int32|O tempo médio de falha para a versão do sistema operacional em minutos. Valores válidos-2147483648 a 2147483647|
-|osVersionAppHealthScore|Duplo|A pontuação de integridade do aplicativo da versão do sistema operacional. Valores válidos-1.79769313486232 E + 308 a 1.79769313486232 E + 308|
-|osVersionAppHealthStatus|String|O status de integridade geral do aplicativo da versão do sistema operacional.|
+|osBuildNumber|Cadeia de caracteres|O número de com build do sistema operacional instalado no dispositivo.|
+|activeDeviceCount|Int32|O número de dispositivos ativos para a versão do sistema operacional. Valores válidos -2147483648 a 2147483647|
+|meanTimeToFailureInMinutes|Int32|O tempo de falha média para a versão do sistema operacional em minutos. Valores válidos -2147483648 a 2147483647|
+|osVersionAppHealthScore|Duplo|A pontuação de saúde do aplicativo da versão do sistema operacional. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
+|osVersionAppHealthStatus|Cadeia de caracteres|O status geral da saúde do aplicativo da versão do sistema operacional.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

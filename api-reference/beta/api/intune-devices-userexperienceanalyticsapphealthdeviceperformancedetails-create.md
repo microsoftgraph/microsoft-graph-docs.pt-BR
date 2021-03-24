@@ -1,35 +1,35 @@
 ---
 title: Criar userExperienceAnalyticsAppHealthDevicePerformanceDetails
-description: Criar um novo objeto userExperienceAnalyticsAppHealthDevicePerformanceDetails.
+description: Crie um novo objeto userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4712d12d380b23a21efd044cc2bc8eb0e2b6d9e7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d2073878214b09a4ad2a00700e826ab992e9ba44
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49202792"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51136073"
 ---
 # <a name="create-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Criar userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) .
+Crie um novo [objeto userExperienceAnalyticsAppHealthDevicePerformanceDetails.](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,23 +47,23 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto userExperienceAnalyticsAppHealthDevicePerformanceDetails.
+No corpo da solicitação, fornece uma representação JSON para o objeto userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar userExperienceAnalyticsAppHealthDevicePerformanceDetails.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do objeto de desempenho do dispositivo de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do dispositivo de análise de experiência do usuário.|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
-|eventType|String|O tipo do evento.|
-|appDisplayName|String|O nome amigável do aplicativo para o qual o evento ocorreu.|
-|deviceId|Cadeia de caracteres|A ID do dispositivo.|
+|eventType|Cadeia de caracteres|O tipo do evento.|
+|appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo para o qual o evento ocorreu.|
+|deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

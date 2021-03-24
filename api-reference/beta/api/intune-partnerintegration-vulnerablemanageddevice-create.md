@@ -1,34 +1,34 @@
 ---
 title: Criar vulnerableManagedDevice
-description: Criar um novo objeto vulnerableManagedDevice.
+description: Crie um novo objeto vulnerableManagedDevice.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d9bab17be811156f9aa0efcae52f024388f260d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 02ada5a0926a3b96e448b8027b3b68ed4be8fe26
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49270411"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134743"
 ---
 # <a name="create-vulnerablemanageddevice"></a>Criar vulnerableManagedDevice
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) .
+Crie um novo [objeto vulnerableManagedDevice.](../resources/intune-partnerintegration-vulnerablemanageddevice.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,21 +47,21 @@ POST ** Collection URI for microsoft.management.services.api.vulnerableManagedDe
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto vulnerableManagedDevice.
+No corpo da solicitação, fornece uma representação JSON para o objeto vulnerableManagedDevice.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar vulnerableManagedDevice.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o vulnerableManagedDevice.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da entidade e a ID do dispositivo AAD.|
-|managedDeviceId|String|A ID do dispositivo gerenciado do Intune.|
-|displayName|String|O nome do dispositivo.|
-|lastSyncDateTime|DateTimeOffset|A data da última sincronização.|
+|id|Cadeia de caracteres|A chave de entidade e a ID do dispositivo AAD.|
+|managedDeviceId|Cadeia de caracteres|A ID do dispositivo gerenciado do Intune.|
+|displayName|Cadeia de caracteres|O nome do dispositivo.|
+|lastSyncDateTime|DateTimeOffset|A última data de sincronização.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

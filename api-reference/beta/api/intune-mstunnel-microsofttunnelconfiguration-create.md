@@ -1,35 +1,35 @@
 ---
 title: Criar microsoftTunnelConfiguration
-description: Criar um novo objeto microsoftTunnelConfiguration.
+description: Crie um novo objeto microsoftTunnelConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa74bc55c739cc7ef8ad735538e9a948cfc2a2a4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d3adc02714b7cc71a210e0279e04cec0fb6c894b
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241226"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51135212"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>Criar microsoftTunnelConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) .
+Crie um novo [objeto microsoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,30 +47,30 @@ POST /deviceManagement/microsoftTunnelConfigurations
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto microsoftTunnelConfiguration.
+No corpo da solicitação, fornece uma representação JSON para o objeto microsoftTunnelConfiguration.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar microsoftTunnelConfiguration.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o microsoftTunnelConfiguration.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID do MicrosoftTunnelConfiguration|
-|displayName|String|O nome de exibição do MicrosoftTunnelConfiguration|
-|description|String|A descrição do MicrosoftTunnelConfiguration|
-|rede|String|A sub-rede que será usada para alocar o endereço virtual para os clientes|
+|id|Cadeia de caracteres|Id do MicrosoftTunnelConfiguration|
+|displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelConfiguration|
+|descrição|Cadeia de caracteres|A descrição do MicrosoftTunnelConfiguration|
+|network|Cadeia de caracteres|A sub-rede que será usada para alocar endereço virtual para os clientes|
 |dnsServers|Coleção de cadeias de caracteres|Os servidores DNS que serão usados pelos clientes|
-|defaultDomainSuffix|String|O apêndice de domínio padrão que será usado pelos clientes|
-|routesInclude|Coleção de cadeias de caracteres|O routs que será roteado pelo servidor|
-|routesExclude|Coleção de cadeias de caracteres|Subconjuntos de rotas que não serão encaminhadas pelo servidor|
-|splitDNS|Coleção de cadeias de caracteres|Os domínios que serão resolvidos usando os servidores DNS fornecidos|
-|listenPort|Int32|A porta na qual o TCP e o UPD serão escutados no servidor|
+|defaultDomainSuffix|Cadeia de caracteres|O apêndice Domínio Padrão que será usado pelos clientes|
+|routesInclude|Coleção de cadeias de caracteres|Os routs que serão roteados pelo servidor|
+|routesExclude|Coleção de cadeias de caracteres|Subconjunto das rotas que não serão roteadas pelo servidor|
+|splitDNS|Coleção de cadeias de caracteres|Os domínios que serão resolvidos usando os servidores dns fornecidos|
+|listenPort|Int32|A porta que o TCP e o UPD escutarão no servidor|
 |advancedSettings|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Configurações adicionais que podem ser aplicadas ao servidor|
 |lastUpdateDateTime|DateTimeOffset|Quando o MicrosoftTunnelConfiguration foi atualizado pela última vez|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
