@@ -1,35 +1,35 @@
 ---
-title: ação updateDeviceProperties
-description: Atualiza as propriedades nos dispositivos do AutoPilot.
+title: Ação updateDeviceProperties
+description: Atualiza as propriedades em dispositivos do Autopilot.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09598a47f945878ccd815f497e30df207db79040
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 58ff137b41ad9ec6c985e9ef23f1c6364464f7bb
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49212367"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51142132"
 ---
-# <a name="updatedeviceproperties-action"></a>ação updateDeviceProperties
+# <a name="updatedeviceproperties-action"></a>Ação updateDeviceProperties
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades nos dispositivos do AutoPilot.
+Atualiza as propriedades em dispositivos do Autopilot.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,10 +54,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|String|Ainda não documentado|
+|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
 |addressableUserName|String|Ainda não documentado|
 |groupTag|String|Ainda não documentado|
-|displayName|String|Ainda não documentado|
+|displayName|Cadeia de caracteres|Ainda não documentado|
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8632c95ee0ec9700a16fa0ca94d2838285ba768
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3f9b390b2e742418c39015ef44c5a2443b8b977b
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161492"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51141390"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentity
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -34,15 +34,14 @@ Dispositivos importados do Windows AutoPilot.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
-|orderIdentifier|Cadeia de caracteres|ID do pedido do dispositivo do Windows AutoPilot. - Preterir|
-|groupTag|String|Marca de grupo do dispositivo windows autopilot.|
+|id|Cadeia de caracteres|O GUID do objeto.|
+|groupTag|Cadeia de caracteres|Marca de grupo do dispositivo de piloto automático do Windows.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|importId|String|A ID de importação do dispositivo windows autopilot.|
+|importId|Cadeia de caracteres|A ID de Importação do dispositivo de piloto automático do Windows.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|
-|assignedUserPrincipalName|String|UPN do usuário ao dispositivo será atribuído|
+|assignedUserPrincipalName|Cadeia de caracteres|UPN do usuário que o dispositivo será atribuído|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -59,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "id": "String (identifier)",
-  "orderIdentifier": "String",
   "groupTag": "String",
   "serialNumber": "String",
   "productKey": "String",

@@ -1,34 +1,34 @@
 ---
 title: Criar microsoftTunnelServer
-description: Criar um novo objeto microsoftTunnelServer.
+description: Crie um novo objeto microsoftTunnelServer.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 146de9c8b03d2934ad6507b5adf2aecc3d778d75
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9636422495a2c7834dc7ed678c49a389e16b0df9
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301401"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51141796"
 ---
 # <a name="create-microsofttunnelserver"></a>Criar microsoftTunnelServer
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) .
+Crie um novo [objeto microsoftTunnelServer.](../resources/intune-mstunnel-microsofttunnelserver.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,21 +47,21 @@ POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTun
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto microsoftTunnelServer.
+No corpo da solicitação, fornece uma representação JSON para o objeto microsoftTunnelServer.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar microsoftTunnelServer.
+A tabela a seguir mostra as propriedades necessárias ao criar o microsoftTunnelServer.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID do MicrosoftTunnelServer|
-|displayName|String|O nome de exibição do MicrosoftTunnelServer|
-|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|O status de integridade do MicrosoftTunnelServer. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
-|lastCheckinDateTime|DateTimeOffset|Quando o MicrosoftTunnelServer último check-in|
+|id|Cadeia de caracteres|Id do MicrosoftTunnelServer|
+|displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelServer|
+|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|O status de saúde do MicrosoftTunnelServer. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
+|lastCheckinDateTime|DateTimeOffset|Quando o MicrosoftTunnelServer entrou pela última vez|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

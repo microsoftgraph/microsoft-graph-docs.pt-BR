@@ -1,35 +1,35 @@
 ---
 title: Atualizar importedDeviceIdentity
-description: Atualiza as propriedades de um objeto importedDeviceIdentity.
+description: Atualize as propriedades de um objeto importedDeviceIdentity.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7a47bb38ec41be3d1223f48214119779a27629f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: decc169b9f1b404c03691323bb0686309cb603c4
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49228059"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51142293"
 ---
 # <a name="update-importeddeviceidentity"></a>Atualizar importedDeviceIdentity
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) .
+Atualize as propriedades de [um objeto importedDeviceIdentity.](../resources/intune-enrollment-importeddeviceidentity.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,26 +47,26 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto importedDeviceIdentity.](../resources/intune-enrollment-importeddeviceidentity.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [importDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID da identidade do dispositivo importado|
-|importedDeviceIdentifier|String|Identificador de dispositivo importado|
-|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Tipo de identidade de dispositivo importada. Os valores possíveis são: `unknown`, `imei`, `serialNumber`.|
-|lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da descrição|
-|createdDateTime|DateTimeOffset|Data e hora de criação do dispositivo|
-|lastContactedDateTime|DateTimeOffset|Data e hora do último contato do dispositivo|
-|description|String|A descrição do dispositivo|
-|enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|O estado do dispositivo no Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|plataforma|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|id|Cadeia de caracteres|ID da identidade do dispositivo importado|
+|importedDeviceIdentifier|Cadeia de caracteres|Identificador de Dispositivo Importado|
+|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Tipo de Identidade de Dispositivo Importado. Os valores possíveis são: `unknown`, `imei`, `serialNumber`.|
+|lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description|
+|createdDateTime|DateTimeOffset|Data de criação hora do dispositivo|
+|lastContactedDateTime|DateTimeOffset|Hora da Última Data Contata do dispositivo|
+|descrição|Cadeia de caracteres|A descrição do dispositivo|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|O estado do dispositivo no Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|plataforma|[platform](../resources/intune-enrollment-platform.md)|A plataforma do Dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
