@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 929c7e22d1c9604c905441c98e7cc13a7536a746
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 37b0cdc77f1b8955c181a94d0a6bb0ecdc716a88
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49257650"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51134393"
 ---
-# <a name="getdevicenoncompliancereport-action"></a><span data-ttu-id="96972-103">ação getDeviceNonComplianceReport</span><span class="sxs-lookup"><span data-stu-id="96972-103">getDeviceNonComplianceReport action</span></span>
+# <a name="getdevicenoncompliancereport-action"></a><span data-ttu-id="42bce-103">ação getDeviceNonComplianceReport</span><span class="sxs-lookup"><span data-stu-id="42bce-103">getDeviceNonComplianceReport action</span></span>
 
-<span data-ttu-id="96972-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="96972-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="42bce-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="42bce-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="96972-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="96972-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="42bce-105">**Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.</span><span class="sxs-lookup"><span data-stu-id="42bce-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="96972-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="96972-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="42bce-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="42bce-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="96972-107">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="96972-107">Not yet documented</span></span>
+<span data-ttu-id="42bce-107">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="42bce-107">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="96972-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="96972-108">Prerequisites</span></span>
-<span data-ttu-id="96972-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="96972-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="42bce-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="42bce-108">Prerequisites</span></span>
+<span data-ttu-id="42bce-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="42bce-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="96972-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="96972-111">Permission type</span></span>|<span data-ttu-id="96972-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="96972-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="42bce-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="42bce-111">Permission type</span></span>|<span data-ttu-id="42bce-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="42bce-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="96972-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="96972-113">Delegated (work or school account)</span></span>|<span data-ttu-id="96972-114">DeviceManagementConfiguration. ReadWrite. All, DeviceManagementConfiguration. Read. All, DeviceManagementApps. ReadWrite. All, DeviceManagementApps. Read. All, DeviceManagementManagedDevices. ReadWrite. All, DeviceManagementManagedDevices. Read. All</span><span class="sxs-lookup"><span data-stu-id="96972-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
-|<span data-ttu-id="96972-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="96972-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="96972-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="96972-116">Not supported.</span></span>|
-|<span data-ttu-id="96972-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="96972-117">Application</span></span>|<span data-ttu-id="96972-118">DeviceManagementConfiguration. ReadWrite. All, DeviceManagementConfiguration. Read. All, DeviceManagementApps. ReadWrite. All, DeviceManagementApps. Read. All, DeviceManagementManagedDevices. ReadWrite. All, DeviceManagementManagedDevices. Read. All</span><span class="sxs-lookup"><span data-stu-id="96972-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
+|<span data-ttu-id="42bce-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="42bce-113">Delegated (work or school account)</span></span>|<span data-ttu-id="42bce-114">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="42bce-114">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="42bce-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="42bce-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="42bce-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="42bce-116">Not supported.</span></span>|
+|<span data-ttu-id="42bce-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="42bce-117">Application</span></span>|<span data-ttu-id="42bce-118">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="42bce-118">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="96972-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="96972-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42bce-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="42bce-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,38 +40,38 @@ ms.locfileid: "49257650"
 POST /deviceManagement/reports/getDeviceNonComplianceReport
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="96972-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="96972-120">Request headers</span></span>
-|<span data-ttu-id="96972-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="96972-121">Header</span></span>|<span data-ttu-id="96972-122">Valor</span><span class="sxs-lookup"><span data-stu-id="96972-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="42bce-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="42bce-120">Request headers</span></span>
+|<span data-ttu-id="42bce-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="42bce-121">Header</span></span>|<span data-ttu-id="42bce-122">Valor</span><span class="sxs-lookup"><span data-stu-id="42bce-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="96972-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="96972-123">Authorization</span></span>|<span data-ttu-id="96972-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="96972-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="96972-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="96972-125">Accept</span></span>|<span data-ttu-id="96972-126">application/json</span><span class="sxs-lookup"><span data-stu-id="96972-126">application/json</span></span>|
+|<span data-ttu-id="42bce-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="42bce-123">Authorization</span></span>|<span data-ttu-id="42bce-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="42bce-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="42bce-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="42bce-125">Accept</span></span>|<span data-ttu-id="42bce-126">application/json</span><span class="sxs-lookup"><span data-stu-id="42bce-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="96972-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="96972-127">Request body</span></span>
-<span data-ttu-id="96972-128">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="96972-128">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="42bce-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="42bce-127">Request body</span></span>
+<span data-ttu-id="42bce-128">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="42bce-128">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="96972-129">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="96972-129">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="42bce-129">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="42bce-129">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="96972-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="96972-130">Property</span></span>|<span data-ttu-id="96972-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="96972-131">Type</span></span>|<span data-ttu-id="96972-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="96972-132">Description</span></span>|
+|<span data-ttu-id="42bce-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="42bce-130">Property</span></span>|<span data-ttu-id="42bce-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="42bce-131">Type</span></span>|<span data-ttu-id="42bce-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="42bce-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="96972-133">nome</span><span class="sxs-lookup"><span data-stu-id="96972-133">name</span></span>|<span data-ttu-id="96972-134">String</span><span class="sxs-lookup"><span data-stu-id="96972-134">String</span></span>|<span data-ttu-id="96972-135">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="96972-135">Not yet documented</span></span>|
-|<span data-ttu-id="96972-136">select</span><span class="sxs-lookup"><span data-stu-id="96972-136">select</span></span>|<span data-ttu-id="96972-137">String collection</span><span class="sxs-lookup"><span data-stu-id="96972-137">String collection</span></span>|<span data-ttu-id="96972-138">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="96972-138">Not yet documented</span></span>|
-|<span data-ttu-id="96972-139">search</span><span class="sxs-lookup"><span data-stu-id="96972-139">search</span></span>|<span data-ttu-id="96972-140">String</span><span class="sxs-lookup"><span data-stu-id="96972-140">String</span></span>|<span data-ttu-id="96972-141">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="96972-141">Not yet documented</span></span>|
-|<span data-ttu-id="96972-142">groupBy</span><span class="sxs-lookup"><span data-stu-id="96972-142">groupBy</span></span>|<span data-ttu-id="96972-143">String collection</span><span class="sxs-lookup"><span data-stu-id="96972-143">String collection</span></span>|<span data-ttu-id="96972-144">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="96972-144">Not yet documented</span></span>|
-|<span data-ttu-id="96972-145">Classificadoporativado</span><span class="sxs-lookup"><span data-stu-id="96972-145">orderBy</span></span>|<span data-ttu-id="96972-146">String collection</span><span class="sxs-lookup"><span data-stu-id="96972-146">String collection</span></span>|<span data-ttu-id="96972-147">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="96972-147">Not yet documented</span></span>|
-|<span data-ttu-id="96972-148">skip</span><span class="sxs-lookup"><span data-stu-id="96972-148">skip</span></span>|<span data-ttu-id="96972-149">Int32</span><span class="sxs-lookup"><span data-stu-id="96972-149">Int32</span></span>|<span data-ttu-id="96972-150">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="96972-150">Not yet documented</span></span>|
-|<span data-ttu-id="96972-151">top</span><span class="sxs-lookup"><span data-stu-id="96972-151">top</span></span>|<span data-ttu-id="96972-152">Int32</span><span class="sxs-lookup"><span data-stu-id="96972-152">Int32</span></span>|<span data-ttu-id="96972-153">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="96972-153">Not yet documented</span></span>|
-|<span data-ttu-id="96972-154">Identificação_da_sessão</span><span class="sxs-lookup"><span data-stu-id="96972-154">sessionId</span></span>|<span data-ttu-id="96972-155">String</span><span class="sxs-lookup"><span data-stu-id="96972-155">String</span></span>|<span data-ttu-id="96972-156">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="96972-156">Not yet documented</span></span>|
-|<span data-ttu-id="96972-157">filter</span><span class="sxs-lookup"><span data-stu-id="96972-157">filter</span></span>|<span data-ttu-id="96972-158">String</span><span class="sxs-lookup"><span data-stu-id="96972-158">String</span></span>|<span data-ttu-id="96972-159">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="96972-159">Not yet documented</span></span>|
+|<span data-ttu-id="42bce-133">nome</span><span class="sxs-lookup"><span data-stu-id="42bce-133">name</span></span>|<span data-ttu-id="42bce-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="42bce-134">String</span></span>|<span data-ttu-id="42bce-135">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="42bce-135">Not yet documented</span></span>|
+|<span data-ttu-id="42bce-136">select</span><span class="sxs-lookup"><span data-stu-id="42bce-136">select</span></span>|<span data-ttu-id="42bce-137">String collection</span><span class="sxs-lookup"><span data-stu-id="42bce-137">String collection</span></span>|<span data-ttu-id="42bce-138">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="42bce-138">Not yet documented</span></span>|
+|<span data-ttu-id="42bce-139">search</span><span class="sxs-lookup"><span data-stu-id="42bce-139">search</span></span>|<span data-ttu-id="42bce-140">String</span><span class="sxs-lookup"><span data-stu-id="42bce-140">String</span></span>|<span data-ttu-id="42bce-141">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="42bce-141">Not yet documented</span></span>|
+|<span data-ttu-id="42bce-142">groupBy</span><span class="sxs-lookup"><span data-stu-id="42bce-142">groupBy</span></span>|<span data-ttu-id="42bce-143">String collection</span><span class="sxs-lookup"><span data-stu-id="42bce-143">String collection</span></span>|<span data-ttu-id="42bce-144">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="42bce-144">Not yet documented</span></span>|
+|<span data-ttu-id="42bce-145">orderBy</span><span class="sxs-lookup"><span data-stu-id="42bce-145">orderBy</span></span>|<span data-ttu-id="42bce-146">String collection</span><span class="sxs-lookup"><span data-stu-id="42bce-146">String collection</span></span>|<span data-ttu-id="42bce-147">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="42bce-147">Not yet documented</span></span>|
+|<span data-ttu-id="42bce-148">skip</span><span class="sxs-lookup"><span data-stu-id="42bce-148">skip</span></span>|<span data-ttu-id="42bce-149">Int32</span><span class="sxs-lookup"><span data-stu-id="42bce-149">Int32</span></span>|<span data-ttu-id="42bce-150">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="42bce-150">Not yet documented</span></span>|
+|<span data-ttu-id="42bce-151">top</span><span class="sxs-lookup"><span data-stu-id="42bce-151">top</span></span>|<span data-ttu-id="42bce-152">Int32</span><span class="sxs-lookup"><span data-stu-id="42bce-152">Int32</span></span>|<span data-ttu-id="42bce-153">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="42bce-153">Not yet documented</span></span>|
+|<span data-ttu-id="42bce-154">sessionId</span><span class="sxs-lookup"><span data-stu-id="42bce-154">sessionId</span></span>|<span data-ttu-id="42bce-155">String</span><span class="sxs-lookup"><span data-stu-id="42bce-155">String</span></span>|<span data-ttu-id="42bce-156">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="42bce-156">Not yet documented</span></span>|
+|<span data-ttu-id="42bce-157">filter</span><span class="sxs-lookup"><span data-stu-id="42bce-157">filter</span></span>|<span data-ttu-id="42bce-158">String</span><span class="sxs-lookup"><span data-stu-id="42bce-158">String</span></span>|<span data-ttu-id="42bce-159">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="42bce-159">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="96972-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="96972-160">Response</span></span>
-<span data-ttu-id="96972-161">Se tiver êxito, esta ação retornará um `200 OK` código de resposta e um fluxo no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="96972-161">If successful, this action returns a `200 OK` response code and a Stream in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="42bce-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="42bce-160">Response</span></span>
+<span data-ttu-id="42bce-161">Se tiver êxito, essa ação retornará `200 OK` um código de resposta e um Stream no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="42bce-161">If successful, this action returns a `200 OK` response code and a Stream in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="96972-162">Exemplo</span><span class="sxs-lookup"><span data-stu-id="96972-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="42bce-162">Exemplo</span><span class="sxs-lookup"><span data-stu-id="42bce-162">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="96972-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="96972-163">Request</span></span>
-<span data-ttu-id="96972-164">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="96972-164">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="42bce-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="42bce-163">Request</span></span>
+<span data-ttu-id="42bce-164">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="42bce-164">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/reports/getDeviceNonComplianceReport
 
@@ -97,8 +97,8 @@ Content-length: 278
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="96972-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="96972-165">Response</span></span>
-<span data-ttu-id="96972-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="96972-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="42bce-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="42bce-165">Response</span></span>
+<span data-ttu-id="42bce-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="42bce-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
