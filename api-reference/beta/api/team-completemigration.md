@@ -1,30 +1,30 @@
 ---
-title: 'equipe: completeMigration'
-description: Concluir a migração de mensagens externas, removendo o modo de migração de uma equipe.
+title: 'team: completeMigration'
+description: Conclua a migração de mensagens externas removendo o modo de migração de uma equipe.
 localization_priority: Normal
-author: laujan
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3422c67c34c62fd037b2acf214c4664b21f83900
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6edd393475eecba7da736fe0c72571ffc244b73e
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951483"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200755"
 ---
-# <a name="team-completemigration"></a>equipe: completeMigration
+# <a name="team-completemigration"></a>team: completeMigration
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Conclua o processo de migração de mensagens removendo `migration mode` de uma [equipe](../resources/team.md). `Migration mode` é um estado especial em que determinadas operações são bloqueadas, como a POSTAgem de mensagens e operações de associação durante o processo de migração de dados.
+Conclua o processo de migração de mensagens removendo `migration mode` de uma [equipe](../resources/team.md). `Migration mode` é um estado especial em que determinadas operações são barradas, como as operações postagem de mensagem e associação durante o processo de migração de dados.
 
-Depois que uma solicitação **completeMigration** é feita, não é possível importar mensagens adicionais para a equipe. Você pode adicionar membros à equipe depois que a solicitação retornar uma resposta bem-sucedida.
+Depois que **uma solicitação completeMigration** for feita, você não poderá importar mensagens adicionais para a equipe. Você pode adicionar membros à equipe após a solicitação retornar uma resposta bem-sucedida.
 
 ## <a name="permissions"></a>Permissões
 
-A seguinte permissão é necessária para chamar esta API. Para saber mais, confira [permissões](/graph/permissions-reference).
+A permissão a seguir é necessária para chamar essa API. Para saber mais, confira [permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissão  |
 |:--------------------|:---------------------------------------------------------|
@@ -35,7 +35,7 @@ A seguinte permissão é necessária para chamar esta API. Para saber mais, conf
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{teamId}/completeMigration
+POST /teams/{team-id}/completeMigration
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -61,32 +61,15 @@ Este é um exemplo de solicitação.
 <!-- markdownlint-disable MD022 -->
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_team"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/completeMigration
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/completeMigration
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/completemigration-team-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/completemigration-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/completemigration-team-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/completemigration-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->

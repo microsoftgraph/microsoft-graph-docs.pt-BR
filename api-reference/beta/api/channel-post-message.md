@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0c6a6f5c8ee8fe98d1e65163c2c9a30bb5ec7301
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 97b0b0d2db2ad813440d034f0cb3ae47149f24bb
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948274"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200940"
 ---
 # <a name="create-chatmessage-in-channel"></a>Criar chatMessage no canal
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Teamwork.Migrate.All |
 
 > **Observação**: as permissões de aplicativo só *são* suportadas para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
@@ -45,7 +45,7 @@ No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adici
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/channels/{id}/messages
+POST /teams/{team-id}/channels/{channel-id}/messages
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -79,7 +79,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -125,7 +125,7 @@ Content-type: application/json
 Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
     "id": "id-value",
     "replyToId": null,
     "etag": "id-value",
@@ -159,7 +159,7 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-import-messages-text-only"></a>Exemplo 2: Importar mensagens (somente texto)
+### <a name="example-2-import-messages"></a>Exemplo 2: Importar mensagens
 
 > **Observação**: o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.
 
@@ -168,23 +168,13 @@ Content-length: 160
 O exemplo a seguir mostra como importar mensagens back-in-time usando `createDateTime` as chaves e no corpo da `from` solicitação.
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 
 {
-   "replyToId":null,
    "messageType":"message",
    "createdDateTime":"2019-02-04T19:58:15.511Z",
-   "lastModifiedDateTime":null,
    "deleted":false,
-   "subject":null,
-   "summary":null,
-   "importance":"normal",
-   "locale":"en-us",
-   "policyViolation":null,
    "from":{
-      "application":null,
-      "device":null,
-      "conversation":null,
       "user":{
          "id":"id-value",
          "displayName":"Joh Doe",
@@ -195,9 +185,6 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
       "contentType":"html",
       "content":"Hello World"
    },
-   "attachments":[ ],
-   "mentions":[ ],
-   "reactions":[ ]
 }
 ```
 
@@ -215,7 +202,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
    "id":"id-value",
    "replyToId":null,
    "etag":"id-value",
@@ -260,7 +247,7 @@ HTTP/1.1 200 OK
 O exemplo a seguir mostra como importar mensagens back-in-time que contêm imagens em linha usando as chaves e `createDateTime` `from` no corpo da solicitação.
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 
 {
    "createdDateTime":"2019-02-04T19:58:15.511Z",
@@ -300,7 +287,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
    "id":"id-value",
    "replyToId":null,
    "etag":"id-value",

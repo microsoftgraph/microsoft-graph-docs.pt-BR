@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para pontos de extremidade do Intune
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 64a9a7c17959a42fa9debb81127429d182976be7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6e7fc3fac47f6b2adecab2c61a6d04d1e069705e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444200"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51159316"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -31,11 +31,11 @@ Namespace: microsoft.graph
 - [Evento de auditoria](intune-auditing-auditevent.md)
 - [Propriedade de auditoria](intune-auditing-auditproperty.md)
 - [Recurso de auditoria](intune-auditing-auditresource.md)
+- [Estado registrado no Azure ad](intune-devices-azureadregisteredstate.md)
 - [Expressões de condição de gerenciamento binário](intune-fencing-binarymanagementconditionexpression.md)
 - [Tipo de operador de expressão de condição de gerenciamento binário](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [Resultado de ação do dispositivo gerenciado em massa](intune-devices-bulkmanageddeviceactionresult.md)
 - [Tipo de gabinete](intune-devices-chassistype.md)
-- [Propriedade de dispositivo Chrome o s](intune-devices-chromeosdeviceproperty.md)
 - [Condição de gerenciamento de cerca geográfica circular](intune-fencing-circulargeofencemanagementcondition.md)
 - [Resumo de dispositivos comanados](intune-devices-comanageddevicessummary.md)
 - [Dispositivo qualificado de comanagement](intune-devices-comanagementeligibledevice.md)
@@ -219,7 +219,6 @@ Namespace: microsoft.graph
 - [Resumo do estado da linha de base de segurança](intune-deviceintent-securitybaselinestatesummary.md)
 - [Modelo de linha da base de segurança](intune-deviceintent-securitybaselinetemplate.md)
 - [Usuário de dispositivo Apple compartilhado](intune-devices-sharedappledeviceuser.md)
-- [Tuple_2 de execução type_ i collection_1 de operação](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [Expressões de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpression.md)
 - [Tipo de operador de expressão de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Parâmetro da ação de atualização de conta de dispositivo Windows](intune-devices-updatewindowsdeviceaccountactionparameter.md)
@@ -230,8 +229,10 @@ Namespace: microsoft.graph
 - [Desempenho do dispositivo de saúde do aplicativo de análise de experiência do usuário](intune-devices-userexperienceanalyticsapphealthdeviceperformance.md)
 - [Detalhes do desempenho do dispositivo de saúde do aplicativo de análise da experiência do usuário](intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)
 - [Desempenho da versão do aplicativo de análise da experiência do usuário](intune-devices-userexperienceanalyticsapphealthosversionperformance.md)
+- [Resumo de dispositivos de piloto automático de análise de experiência do usuário](intune-devices-userexperienceanalyticsautopilotdevicessummary.md)
 - [Linha de base de análise de experiência do usuário](intune-devices-userexperienceanalyticsbaseline.md)
 - [Categoria de análise de experiência do usuário](intune-devices-userexperienceanalyticscategory.md)
+- [Resumo de dispositivos de gerenciamento de nuvem de análise de experiência do usuário](intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)
 - [Desempenho do dispositivo de análise de experiência do usuário](intune-devices-userexperienceanalyticsdeviceperformance.md)
 - [Histórico de inicialização do dispositivo de análise de experiência do usuário](intune-devices-userexperienceanalyticsdevicestartuphistory.md)
 - [Processo de inicialização do dispositivo de análise de experiência do usuário](intune-devices-userexperienceanalyticsdevicestartupprocess.md)
@@ -244,6 +245,7 @@ Namespace: microsoft.graph
 - [Valor do insight de análise de experiência do usuário](intune-devices-userexperienceanalyticsinsightvalue.md)
 - [Métrica de análise de experiência do usuário](intune-devices-userexperienceanalyticsmetric.md)
 - [Histórico métrico de análise de experiência do usuário](intune-devices-userexperienceanalyticsmetrichistory.md)
+- [Análise da experiência do usuário não dispositivo pronto para piloto automático](intune-devices-userexperienceanalyticsnotautopilotreadydevice.md)
 - [Categoria de reinicialização do sistema operacional de análise de experiência do usuário](intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)
 - [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsoverview.md)
 - [Resumo de regressão de análise de experiência do usuário](intune-devices-userexperienceanalyticsregressionsummary.md)
@@ -252,6 +254,8 @@ Namespace: microsoft.graph
 - [Histórico de pontuação da análise da experiência do usuário](intune-devices-userexperienceanalyticsscorehistory.md)
 - [Configurações de análise de experiência do usuário](intune-devices-userexperienceanalyticssettings.md)
 - [Análise de experiência do usuário resumida por](intune-devices-userexperienceanalyticssummarizedby.md)
+- [Resumo de dispositivos Windows 10 de análise de experiência do usuário](intune-devices-userexperienceanalyticswindows10devicessummary.md)
+- [Análise de experiência do usuário funciona em qualquer lugar resumo de dispositivos](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [Expressões de condição de gerenciamento variável](intune-fencing-variablemanagementconditionexpression.md)
 - [Estado de implantação do Windows autopilot](intune-troubleshooting-windowsautopilotdeploymentstate.md)
 - [Tipo de registro do Windows autopilot](intune-troubleshooting-windowsautopilotenrollmenttype.md)
