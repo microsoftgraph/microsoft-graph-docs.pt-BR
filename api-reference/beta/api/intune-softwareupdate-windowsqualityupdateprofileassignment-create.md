@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19c34d199e4ec1e46fbf3ed0ef9692bdd02da53f
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: b4c1c7feb40af06d8baefcfbc7642c828114e208
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160112"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51156167"
 ---
 # <a name="create-windowsqualityupdateprofileassignment"></a>Criar windowsQualityUpdateProfileAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Crie um novo [objeto windowsQualityUpdateProfileAssignment.](../resources/intune
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,19 +47,19 @@ POST /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfile
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto windowsQualityUpdateProfileAssignment.
+No corpo da solicitação, fornece uma representação JSON para o objeto windowsQualityUpdateProfileAssignment.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar windowsQualityUpdateProfileAssignment.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador da entidade|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição ao que o perfil de atualização de recursos está atribuído.|
+|id|Cadeia de caracteres|O Identificador da entidade|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição ao que o perfil de atualização de recursos é atribuído.|
 
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [windowsQualityUpdateProfileAssignment](../resources/intune-softwareupdate-windowsqualityupdateprofileassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto windowsQualityUpdateProfileAssignment](../resources/intune-softwareupdate-windowsqualityupdateprofileassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

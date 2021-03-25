@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5a4c7b4900eb7b8ae67a8f4efc4ae2602a43659
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8de03a90555c5d80e10bf0c64bb408c12130cba8
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274765"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51156874"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>Atualizar mobileThreatDefenseConnector
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Atualiza as propriedades de um objeto [mobileThreatDefenseConnector](../resource
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,22 +53,22 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [mobileThreatDef
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |lastHeartbeatDateTime|DateTimeOffset|Data e hora da última Pulsação recebida de um Parceiro de Sincronização de Dados|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Estado do parceiro de sincronização de dados para esta conta. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
-|androidMobileApplicationManagementEnabled|Booliano|Para Android, defina se os dados do parceiro de sincronização de dados devem ser usados durante as avaliações de MAM (gerenciamento de aplicativo móvel). Somente um parceiro por plataforma pode ser habilitado para a avaliação de gerenciamento de aplicativo móvel (MAM).|
-|iosMobileApplicationManagementEnabled|Booliano|Para IOS, Obtém ou define se os dados do parceiro de sincronização de dados devem ser usados durante as avaliações de MAM (gerenciamento de aplicativo móvel). Somente um parceiro por plataforma pode ser habilitado para a avaliação de gerenciamento de aplicativo móvel (MAM).|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Estado do Parceiro de Sincronização de Dados para essa conta. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|androidMobileApplicationManagementEnabled|Booleano|Para Android, de definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações do Gerenciamento de Aplicativo Móvel (MAM). Somente um parceiro por plataforma pode estar habilitado para avaliação do Gerenciamento de Aplicativo Móvel (MAM).|
+|iosMobileApplicationManagementEnabled|Booleano|Para IOS, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações do MAM (Gerenciamento de Aplicativo Móvel). Somente um parceiro por plataforma pode estar habilitado para avaliação do Gerenciamento de Aplicativo Móvel (MAM).|
 |androidEnabled|Boolean|No Android, definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
 |iosEnabled|Boolean|No iOS, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
-|windowsEnabled|Booliano|Para o Windows, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
-|macEnabled|Booliano|Para Mac, Obtém ou define se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
+|windowsEnabled|Booleano|Para o Windows, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
+|macEnabled|Booleano|Para Mac, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
 |androidDeviceBlockedOnMissingPartnerData|Boolean|No Android, definir se o Intune deve receber os dados do parceiro de sincronização de dados antes de marcar um dispositivo como compatível|
 |iosDeviceBlockedOnMissingPartnerData|Boolean|No iOS, definir se o Intune deve receber os dados do parceiro de sincronização de dados antes de marcar um dispositivo como compatível|
-|windowsDeviceBlockedOnMissingPartnerData|Booliano|Para o Windows, defina se o Intune deve receber dados do parceiro de sincronização de dados antes de marcar um dispositivo em conformidade|
-|macDeviceBlockedOnMissingPartnerData|Booliano|Para Mac, obtenha ou defina se o Intune deve receber dados do parceiro de sincronização de dados antes de marcar um dispositivo em conformidade|
+|windowsDeviceBlockedOnMissingPartnerData|Booleano|Para o Windows, defina se o Intune deve receber dados do parceiro de sincronização de dados antes de marcar um dispositivo compatível|
+|macDeviceBlockedOnMissingPartnerData|Booleano|Para Mac, obter ou definir se o Intune deve receber dados do parceiro de sincronização de dados antes de marcar um dispositivo compatível|
 |partnerUnsupportedOsVersionBlocked|Boolean|Obter ou definir se dispositivos devem ser bloqueados nas plataformas habilitadas que não atendam aos requisitos mínimos de versão do Parceiro de Sincronização de Dados|
 |partnerUnresponsivenessThresholdInDays|Int32|Obtém ou define dias de tolerância por locatário à falta de resposta para esta integração de parceiro|
-|allowPartnerToCollectIOSApplicationMetadata|Booliano|Para dispositivos IOS, permite que o administrador configure se o parceiro de sincronização de dados também pode coletar metadados sobre os aplicativos instalados do Intune|
+|allowPartnerToCollectIOSApplicationMetadata|Booleano|Para dispositivos IOS, permite que o administrador configure se o parceiro de sincronização de dados também pode coletar metadados sobre aplicativos instalados do Intune|
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1076a9870b62d069e3f4c572aef418c08e8f764
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1421d45155a841202ba3c13e3c7eabd12b6a0013
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301486"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51156804"
 ---
 # <a name="getpolicysummary-function"></a>função getPolicySummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,11 +25,11 @@ Ainda não documentado
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,12 +52,12 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|PolicyId|String|Ainda não documentado|
+|policyId|String|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará um `200 OK` código de resposta e um [configManagerPolicySummary](../resources/intune-partnerintegration-configmanagerpolicysummary.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um código `200 OK` de resposta e um [configManagerPolicySummary](../resources/intune-partnerintegration-configmanagerpolicysummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

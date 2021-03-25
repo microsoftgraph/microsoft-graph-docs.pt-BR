@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 411e7dd15a8f3fe75d726f0caab38c7592b3a8a6
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: ce61e72124fc58b710d17d246827e65edf133b38
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159210"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51156027"
 ---
 # <a name="create-devicemanagementautopilotevent"></a>Criar deviceManagementAutopilotEvent
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Crie um novo [objeto deviceManagementAutopilotEvent.](../resources/intune-troubl
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,44 +47,44 @@ POST /deviceManagement/autopilotEvents
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto deviceManagementAutopilotEvent.
+No corpo da solicitação, fornece uma representação JSON para o objeto deviceManagementAutopilotEvent.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementAutopilotEvent.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O UUID do objeto.|
+|id|Cadeia de caracteres|O UUID do objeto.|
 |deviceId|Cadeia de caracteres|ID do dispositivo associada ao objeto|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
-|deviceRegisteredDateTime|DateTimeOffset|Data de registro do dispositivo.|
+|deviceRegisteredDateTime|DateTimeOffset|Data do registro do dispositivo.|
 |enrollmentStartDateTime|DateTimeOffset|Data de início do registro do dispositivo.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Tipo de registro. Os valores possíveis são: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|deviceSerialNumber|String|Número de série do dispositivo.|
+|deviceSerialNumber|Cadeia de caracteres|Número de série do dispositivo.|
 |managedDeviceName|String|Nome do dispositivo gerenciado.|
-|userPrincipalName|String|Nome principal do usuário usado para registrar o dispositivo.|
-|windowsAutopilotDeploymentProfileDisplayName|String|Nome do perfil do Autopilot.|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro como Registro, Falha. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Nome do perfil da Página de Status do Registro|
-|windows10EnrollmentCompletionPageConfigurationId|String|ID do perfil da Página de Status do Registro|
-|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Estado de implantação como Êxito, Falha, InProgress, SuccessWithTimeout. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
-|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação da fase de configuração do dispositivo da página de status do registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
-|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação da fase de configuração da conta da página de status do registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário usado para registrar o dispositivo.|
+|windowsAutopilotDeploymentProfileDisplayName|Cadeia de caracteres|Nome do perfil do piloto automático.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro como Inscrito, Falha. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|Cadeia de caracteres|Nome do perfil da Página de Status do Registro|
+|windows10EnrollmentCompletionPageConfigurationId|Cadeia de caracteres|ID do perfil da página de status de registro|
+|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Estado de implantação como Sucesso, Falha, InProgress, SuccessWithTimeout. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação para a fase de configuração do dispositivo de página de status de registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Status de implantação para a fase de configuração da conta de página de status de registro. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |osVersion|String|Versão do sistema operacional do dispositivo.|
-|deploymentDuration|Duration|Duração da implantação do Autopilot, incluindo o registro.|
-|deploymentTotalDuration|Duration|Duração total da implantação do registro na tela área de trabalho.|
+|deploymentDuration|Duration|Duração da implantação do piloto automático, incluindo o registro.|
+|deploymentTotalDuration|Duration|Duração total da implantação do registro na tela da Área de Trabalho.|
 |devicePreparationDuration|Duration|Tempo gasto no registro do dispositivo.|
-|deviceSetupDuration|Duration|Tempo gasto no dispositivo ESP.|
+|deviceSetupDuration|Duration|Tempo gasto no ESP do dispositivo.|
 |accountSetupDuration|Duration|Tempo gasto no ESP do usuário.|
 |deploymentStartDateTime|DateTimeOffset|Hora de início da implantação.|
 |deploymentEndDateTime|DateTimeOffset|Hora de término da implantação.|
 |targetedAppCount|Int32|Contagem de aplicativos direcionados.|
 |targetedPolicyCount|Int32|Contagem de políticas direcionadas.|
-|enrollmentFailureDetails|String|Detalhes da falha do registro.|
+|enrollmentFailureDetails|Cadeia de caracteres|Detalhes de falha de registro.|
 
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -1,34 +1,34 @@
 ---
 title: Atualizar roleManagement
-description: Atualiza as propriedades de um objeto roleManagement.
+description: Atualize as propriedades de um objeto roleManagement.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2f64e6c7d6f06a4808a37a12ae2c8f55bcb21a8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 549d3ab5bc3e4d248ba81bf5c0059a6fcd0d5e90
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49304705"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51156671"
 ---
 # <a name="update-rolemanagement"></a>Atualizar roleManagement
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [roleManagement](../resources/intune-rbac-rolemanagement.md) .
+Atualize as propriedades de um [objeto roleManagement.](../resources/intune-rbac-rolemanagement.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,18 +47,18 @@ PATCH /roleManagement
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [roleManagement](../resources/intune-rbac-rolemanagement.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto roleManagement.](../resources/intune-rbac-rolemanagement.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [roleManagement](../resources/intune-rbac-rolemanagement.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [a funçãoManagement](../resources/intune-rbac-rolemanagement.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [roleManagement](../resources/intune-rbac-rolemanagement.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [roleManagement](../resources/intune-rbac-rolemanagement.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

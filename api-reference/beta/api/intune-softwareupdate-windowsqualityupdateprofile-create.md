@@ -1,34 +1,34 @@
 ---
 title: Criar windowsQualityUpdateProfile
-description: Criar um novo objeto windowsQualityUpdateProfile.
+description: Crie um novo objeto windowsQualityUpdateProfile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb1f1e20460c1bb9e109b45dea555ef0f475bd70
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 19a6a9c7b267ad4de2e675a43f5fd5420736a5c6
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160117"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51156244"
 ---
 # <a name="create-windowsqualityupdateprofile"></a>Criar windowsQualityUpdateProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo [objeto windowsQualityUpdateProfile.](../resources/intune-softwareupdate-windowsqualityupdateprofile.md)
+Crie um novo [objeto windowsQualityUpdateProfile.](../resources/intune-softwareupdate-windowsqualityupdateprofile.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,24 +47,26 @@ POST /deviceManagement/windowsQualityUpdateProfiles
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto windowsQualityUpdateProfile.
+No corpo da solicitação, fornece uma representação JSON para o objeto windowsQualityUpdateProfile.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar windowsQualityUpdateProfile.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o windowsQualityUpdateProfile.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de política do Intune.|
-|displayName|String|O nome de exibição do perfil.|
-|description|String|A descrição do perfil especificado pelo usuário.|
-|expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|Configurações de atualização agilizadas.|
-|createdDateTime|DateTimeOffset|A data e a hora em que o perfil foi criado.|
+|id|Cadeia de caracteres|A ID da política do Intune.|
+|displayName|Cadeia de caracteres|O nome de exibição do perfil.|
+|descrição|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
+|expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|Configurações de atualização aceleradas.|
+|createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para esta entidade de Atualização de Qualidade.|
+|releaseDateDisplayName|Cadeia de caracteres|Data de lançamento amigável a ser exibida para um lançamento de Atualização de Qualidade|
+|deployableContentDisplayName|Cadeia de caracteres|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
 
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -73,7 +75,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdateProfiles
 Content-type: application/json
-Content-length: 418
+Content-length: 558
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateProfile",
@@ -86,7 +88,9 @@ Content-length: 418
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "releaseDateDisplayName": "Release Date Display Name value",
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 
@@ -95,7 +99,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 590
+Content-Length: 730
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateProfile",
@@ -111,7 +115,9 @@ Content-Length: 590
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "releaseDateDisplayName": "Release Date Display Name value",
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 
