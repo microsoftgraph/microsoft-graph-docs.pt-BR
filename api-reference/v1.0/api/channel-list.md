@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: a9a2d1815184e5c1b96eba1eafd29161abcd5def
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 87895685781982e054714b2991441250cb1738b3
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979799"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202223"
 ---
 # <a name="list-channels"></a>Listar canais
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels
+GET /teams/{team-id}/channels
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -63,39 +63,21 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 O exemplo a seguir mostra uma solicitação para listar todos os canais.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_channels"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels
+```http
+GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels
 ```
 
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-channels-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-channels-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-channels-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### <a name="response"></a>Resposta
 
 Esta é a resposta.
 
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -111,12 +93,11 @@ Content-length: 262
 {
   "value": [
     {
-      "description": "description-value",
-      "displayName": "display-name-value",
-      "id": "id-value",
-      "isFavoriteByDefault": false,
-      "webUrl": "webUrl-value",
-      "email": "email-value"
+      "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
+      "createdDateTime": "2020-05-27T19:22:25.692Z",
+      "displayName": "General",
+      "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
+      "membershipType": "standard"
     }
   ]
 }
@@ -128,7 +109,6 @@ Content-length: 262
 
 O exemplo a seguir mostra uma solicitação para listar todos os canais privados.
 
-# <a name="http"></a>[HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -136,31 +116,14 @@ O exemplo a seguir mostra uma solicitação para listar todos os canais privados
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
+GET https://graph.microsoft.com/v1.0/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/channels?$filter=membershipType eq 'private'
 ```
-
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-private-channels-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-private-channels-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-private-channels-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-private-channels-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
----
 
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -177,12 +140,11 @@ Content-length: 262
 {
   "value": [
     {
-      "description": "description-value",
-      "displayName": "display-name-value",
-      "id": "id-value",
-      "isFavoriteByDefault": false,
-      "webUrl": "webUrl-value",
-      "email": "email-value"
+      "id": "19:982abbfca323a582f0a6d00ae2deca@thread.tacv2",
+      "createdDateTime": "2020-05-27T19:22:25.692Z",
+      "displayName": "General",
+      "description": "test private team",
+      "membershipType": "private"
     }
   ]
 }

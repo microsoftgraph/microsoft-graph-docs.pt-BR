@@ -1,16 +1,16 @@
 ---
 title: Criar equipe
 description: Criar uma nova equipe.
-author: nkramer
+author: anandjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b28dea086f712fef0fb73cc1f66befcb1ab12304
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6a6a26b350f27d81d9a5ae0d5279bf62058fa161
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50449023"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202636"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -28,6 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
+> **Observação**: A permissão Teamwork.Migrate.All é *somente* suportado para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -76,21 +78,7 @@ Content-Type: application/json
   "description": "My Sample Team’s Description"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-team-post-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -104,8 +92,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
@@ -140,21 +128,7 @@ Content-Type: application/json
    ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-minimal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-minimal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-minimal-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-team-post-minimal-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -168,8 +142,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
@@ -181,7 +155,7 @@ Aqui está uma solicitação com um conteúdo completo. O cliente pode substitui
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_team_post_full_payload"
 }-->
 ```http
@@ -279,8 +253,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('958e8cf8-169a-42aa-8599-5c1c5479c0ca')/operations('00000000-0000-0000-0000-000000000000')
+Content-Location: /teams('958e8cf8-169a-42aa-8599-5c1c5479c0ca')
 Content-Length: 0
 ```
 
@@ -307,24 +281,9 @@ Content-Type: application/json
 
 {
   "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
-  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
+  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('71392b2f-1765-406e-86af-5907d9bdb2ab')"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-team-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-team-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -338,8 +297,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('71392b2f-1765-406e-86af-5907d9bdb2ab')/operations('9698b2b8-9636-4f49-b7a8-10dadfa7062a')
+Content-Location: /teams('71392b2f-1765-406e-86af-5907d9bdb2ab')
 Content-Length: 0
 ```
 
@@ -362,7 +321,7 @@ Content-Type: application/json
 
 {
    "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
-   "group@odata.bind":"https://graph.microsoft.com/v1.0/groups('groupId')",
+   "group@odata.bind":"https://graph.microsoft.com/v1.0/groups('dbd8de4f-5d47-48da-87f1-594bed003375')",
    "channels":[
       {
          "displayName":"Class Announcements 📢",
@@ -390,21 +349,7 @@ Content-Type: application/json
    ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/convert-team-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -418,8 +363,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
@@ -448,21 +393,7 @@ Content-Type: application/json
   "description": "My Class Team’s Description"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/convert-team-from-non-standard-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -477,8 +408,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
@@ -530,21 +461,7 @@ Content-Type: application/json
    ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/convert-team-from-non-standard2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -558,14 +475,61 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
+### <a name="example-8-create-a-team-in-migration-mode"></a>Exemplo 8: Criar uma equipe no modo de migração
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra como criar uma equipe para mensagens importadas.
+
+>**Observação:** No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
+
+>**Observação:** Equipes criadas no modo de migração só suportam o modelo `standard`.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams
+Content-Type: application/json
+
+{
+  "@microsoft.graph.teamCreationMode": "migration",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+  "displayName": "My Sample Team",
+  "description": "My Sample Team’s Description",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+HTTP/1.1 202 Accepted
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
+```
+
+#### <a name="error-response"></a>Resposta de erro
+
+Se a solicitação não for bem-sucedida, este método retorna um código de resposta `400 Bad Request`. 
+
+```http
+400 Bad Request
+```
+
+Os seguintes são motivos comuns para esta resposta:
+
+* **createdDateTime** é definido no futuro.
+* **createdDateTime** está especificado corretamente, mas o atributo da instância **teamCreationMode** está ausente ou definido com um valor inválido.
+
 ## <a name="see-also"></a>Confira também
 
-- [Modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates)
-- [Introdução aos modelos de Equipes de varejo](/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [Introdução aos modelos de Equipes médicas](/MicrosoftTeams/healthcare/healthcare-templates)
-- [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
+* [Migração completa para uma equipe](team-completemigration.md)
+* [Importar mensagens de plataforma de terceiros para o Teams usando o Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [Create channel](channel-post.md)
+* [Modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates)
+* [Introdução aos modelos de Equipes de varejo](/MicrosoftTeams/get-started-with-retail-teams-templates)
+* [Introdução aos modelos de Equipes médicas](/MicrosoftTeams/healthcare/healthcare-templates)
+* [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)

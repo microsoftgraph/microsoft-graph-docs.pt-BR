@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a8c05b71c440925425d47fc19e5b836559e42b85
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 439522645966f35c2ba68795be71c698b2808e97
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950283"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202650"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -68,7 +68,7 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |webUrl|cadeia de caracteres (somente leitura) | Um hiperlink que será enviado à equipe no cliente do Microsoft Teams. Esta é a URL que você recebe ao clicar com o botão direito do mouse em uma equipe no cliente do Microsoft Teams e escolher **Obter o link para a equipe**. Essa URL deve ser tratada como um blob opaco e não analisado. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Definir configurações de uma classe. Disponível apenas quando a equipe representa uma classe.|
 |isMembershipLimitedToOwners|Booliano|Se definido para `true`, a equipe está atualmente no estado de membro da equipe apenas para o proprietário e não é acessível a outros membros da equipe, tais como estudantes.|
-|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de criação da equipe.|
+|createdDateTime|dateTimeOffset|Carimbo de data/hora de criação da equipe.|
 
 ### <a name="instance-attributes"></a>Atributos de instância
 
@@ -123,7 +123,7 @@ Veja a seguir uma representação JSON do recurso.
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
   "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "string (timestamp)"
+  "createdDateTime": "dateTimeOffset"
 }
 ```
 

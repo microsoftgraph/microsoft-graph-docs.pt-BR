@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e941379cbe9253ed79eb193f4cbc49284213b0a3
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 42025545ed4244b74b684acb05cde5b0e908ede9
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714260"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202111"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -36,7 +36,8 @@ Namespace: microsoft.graph
 |[Adicionar membro do canal](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Adicionar um membro a um canal. Suportado só para o`channel`com MembershipType de.`private`|
 |[Obter canal do membro](../api/channel-get-members.md) | coleção [conversationMember](conversationmember.md) | Obtenha um membro em um canal.|
 |[Atualizar a função do membro do canal](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Atualize as propriedades de um membro do canal. Suportado só para o canal com MembershipType de`private`.|
-|[Remover membro do canal](../api/channel-delete-members.md) | Nenhum | Exclua um membro de um canal. Suportado apenas para `channelType` de `private`.|
+|[Remover membro do canal](../api/channel-delete-members.md) | Nenhum | Exclua um membro de um canal. Suportado só com o `channelType` de `private`.|
+|[Migração completa](../api/channel-completemigration.md)|[channel](channel.md)| Remove o modo de migração do canal e torna o canal disponível para os usuários postarem e lerem mensagens.|
 |[Listar guias no canal](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
 |[Adicionar uma guia ao canal](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia a um canal.|
 |[Guia obter no canal](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Ler uma guia fixada a um canal.|
@@ -53,7 +54,7 @@ Namespace: microsoft.graph
 |isFavoriteByDefault|Booliano|Indica se o canal deve automaticamente ser marcado como “favorito” para todos os membros da equipe. Só pode ser definida por programação com [Criar equipe](../api/team-post.md). Padrão: `false`.|
 |email|Cadeia de caracteres| O endereço de email para enviar mensagens ao canal. Somente leitura.|
 |webUrl|String|Um hiperlink que navegará até o canal no Microsoft Teams. Essa é a URL que você recebe ao clicar com o botão direito do mouse em um canal Microsoft Teams e selecionar Obter o link para o canal. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
-|membershipType|channelMembershipType|O tipo do canal. Pode ser definido durante a criação e não pode ser alterado. Valores possíveis são:`standard` - Canal herda a lista de membros da equipe principal;`private` - O canal pode ter membros que são um subconjunto de todos os membros da equipe principal.
+|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|O tipo do canal. Pode ser definido durante a criação e não pode ser alterado. Valores possíveis são:`standard` - Canal herda a lista de membros da equipe principal;`private` - O canal pode ter membros que são um subconjunto de todos os membros da equipe principal.
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de criação do canal.|
 
 ## <a name="relationships"></a>Relações
@@ -87,7 +88,7 @@ Veja a seguir uma representação JSON do recurso.
   "isFavoriteByDefault": true,
   "email": "string",
   "webUrl": "string",
-  "membershipType": "string",
+  "membershipType": "channelMembershipType",
   "createdDateTime": "string (timestamp)"
 }
 ```

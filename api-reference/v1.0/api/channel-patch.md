@@ -1,22 +1,22 @@
 ---
-title: Canal de patch
-description: Atualiza as propriedades do canal especificado.
-author: clearab
+title: Canal patch
+description: Atualize as propriedades do canal especificado.
+author: anandjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b90e3abff3d0624b7639195f02e342f7fa11c5ee
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 975623111ad2ecde6afa13432cba5fcd3f7fef4f
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848924"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202216"
 ---
-# <a name="patch-channel"></a>Canal de patch
+# <a name="patch-channel"></a>Canal patch
 
 Namespace: microsoft.graph
 
-Atualiza as propriedades do [canal](../resources/channel.md)especificado.
+Atualize as propriedades do canal [especificado](../resources/channel.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,29 +24,31 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | ChannelSettings. ReadWrite. Group *, ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo | ChannelSettings.ReadWrite.Group*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-> **Observação** : esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/{id}/channels/{id}
+PATCH /teams/{team-id}/channels/{channel-id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).
 
-> **Observação:** Não é possível atualizar o `membershipType` valor de um canal existente.
+> **Observação:** Não é possível atualizar `membershipType` o valor de um canal existente.
 
 ## <a name="response"></a>Resposta
 
@@ -58,18 +60,17 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 Este é um exemplo da solicitação.
 
-```http
-PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
-```
-
 <!-- {
   "blockType": "request",
-  "name": "update_channel"
+  "name": "patch_channel"
 }-->
+```http
+PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
+```
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true,

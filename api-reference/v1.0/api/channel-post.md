@@ -1,22 +1,22 @@
 ---
 title: Criar canal
-description: Crie um novo canal em uma equipe da Microsoft, conforme especificado no corpo da solicitação.
+description: Crie um novo canal em uma equipe, conforme especificado no corpo da solicitação.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ec64a58a88d410abf84acbbb6fd92ccaf3940b3e
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 7ab9a2d0bdd204e77b9bc149860e9fdfab9d2fcf
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848931"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202692"
 ---
 # <a name="create-channel"></a>Criar canal
 
 Namespace: microsoft.graph
 
-Criar um novo [canal](../resources/channel.md) em uma equipe, conforme especificado no corpo da solicitação.
+Crie um novo [canal](../resources/channel.md) em uma equipe, conforme especificado no corpo da solicitação.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,16 +24,20 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Channel. Create. Group *, Channel. Create, entrabalho. Migration. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-> **Observação** : esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observações**: Permissões marcadas com * use [o consentimento específico do recurso]( https://aka.ms/teams-rsc).
+>
+> Esta API dá suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+>
+> No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados usando APIs de trabalho em equipe.Migrate.All e/ou [migração.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels
+POST /teams/{team-id}/channels
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,19 +57,18 @@ Se tiver êxito, este método retornará um código de resposta `201 Created` e 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-standard-channel"></a>Exemplo 1: criar um canal padrão
+### <a name="example-1-create-a-standard-channel"></a>Exemplo 1: Criar um canal padrão
 #### <a name="request"></a>Solicitação
 
 O exemplo a seguir mostra uma solicitação para criar um canal padrão.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
 
 {
@@ -74,27 +77,13 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
----
 #### <a name="response"></a>Resposta
 
 O exemplo a seguir mostra a resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -108,26 +97,25 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "id": "id-value",
+  "id": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
   "displayName": "Architecture Discussion",
   "description": "This channel is where we debate all future architecture plans"
 }
 ```
 
-### <a name="example-2-create-private-channel-on-behalf-of-user"></a>Exemplo 2: criar um canal privado em nome do usuário
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>Exemplo 2: Criar canal privado em nome do usuário
 
 #### <a name="request"></a>Solicitação
 
 O exemplo a seguir mostra uma solicitação para criar um canal privado e adicionar um usuário como proprietário da equipe.
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{group_id}/channels
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
 
 {
@@ -139,29 +127,13 @@ Content-type: application/json
      [
         {
            "@odata.type":"#microsoft.graph.aadUserConversationMember",
-           "user@odata.bind":"https://graph.microsoft.com/v1.0/users('{user_id}')",
+           "user@odata.bind":"https://graph.microsoft.com/v1.0/users('62855810-484b-4823-9e01-60667f8b12ae')",
            "roles":["owner"]
         }
      ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-user-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-user-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response"></a>Resposta
@@ -180,14 +152,68 @@ Content-type: application/json
 Content-length: 201
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('{group_id}')/channels/$entity",
-    "id": "{channel_id}",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:33b76eea88574bd1969dca37e2b7a819@thread.skype",
     "displayName": "My First Private Channel",
     "description": "This is my first private channels",
     "isFavoriteByDefault": null,
     "email": "",
-    "webUrl": "https://teams.microsoft.com/l/channel/{channel_id}/My%20First%20Private%20Channel?groupId={group_id}&tenantId={tenant_id}",
+    "webUrl": "https://teams.microsoft.com/l/channel/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
     "membershipType": "private"
+}
+```
+
+### <a name="example-3-create-a-channel-in-migration-mode"></a>Exemplo 3: Criar um canal no modo de migração
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra como criar um canal que será usado para importar mensagens.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_for_migration"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-Type: application/json
+
+{
+  "@microsoft.graph.channelCreationMode": "migration",
+  "displayName": "Import_150958_99z",
+  "description": "Import_150958_99z",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+
+#### <a name="response"></a>Resposta
+
+O exemplo a seguir mostra a resposta. O header Content-Location na resposta especifica o caminho para o canal que está sendo provisionado.
+Depois de provisionado, esse canal pode ser usado para [importar mensagens](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "create_channel_for_migration",
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:987c7a9fbe6447ccb3ea31bcded5c75c@thread.tacv2",
+    "createdDateTime": null,
+    "displayName": "Import_150958_99z",
+    "description": "Import_150958_99z",
+    "isFavoriteByDefault": null,
+    "email": null,
+    "webUrl": null,
+    "membershipType": null,
+    "moderationSettings": null
 }
 ```
 

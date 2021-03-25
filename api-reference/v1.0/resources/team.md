@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c6f1eb9254b0af1ce0ec8b11fbaf775482197104
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: ca4e3c55c56d6b4a469515dc20a9fbff5cbec36f
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714267"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202090"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -37,12 +37,13 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |[Listar membros](../api/team-list-members.md)|coleção [conversationMember](../resources/conversationmember.md)|Obtenha a lista de membros nessa equipe.|
 |[Adicionar membro](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Adicione um novo membro à equipe.|
 |[Obter membro](../api/team-get-members.md) | [conversationMember](conversationmember.md)coleção | Obtenha um membro na equipe.|
-|[Remover membro](../api/team-delete-members.md)|Nenhum|Remova um membro existente da equipe.|
 |[Atualizar a função do membro](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Alterar um membro para um proprietário ou voltar para um membro regular.|
+|[Remover membro](../api/team-delete-members.md)|Nenhum|Remova um membro existente da equipe.|
 |[Arquivar equipe](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Coloque a equipe em um estado somente leitura. |
 |[Desarquivar equipe](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restaure a equipe com um estado de leitura e gravação. |
 |[Clonar equipe](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copie a equipe e o grupo associado. |
 |[Listar suas equipes](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Liste as equipes das quais você é membro. |
+|[Migração completa](../api/team-completemigration.md)|[equipe](team.md)| Remove o modo de migração da equipe e disponibiliza a equipe aos usuários para postar e ler mensagens.|
 |[Listar aplicativos em equipe](../api/team-list-installedapps.md) | Coleção [teamsAppInstallation](teamsappinstallation.md) | Liste os aplicativos instalados em uma equipe.|
 |[Adicionar aplicativo à equipe](../api/team-post-installedapps.md) |Nenhuma | Adicione (instale) um aplicativo a uma equipe.|
 |[Instalar o aplicativo na equipe do](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obtenha o aplicativo especificado instalado em uma equipe.|
@@ -65,6 +66,17 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Configurações para configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots na equipe.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Configurações para definir a mensagens e menções na equipe.|
 |webUrl|cadeia de caracteres (somente leitura) | Um hiperlink que será enviado à equipe no cliente do Microsoft Teams. Esta é a URL que você recebe ao clicar com o botão direito do mouse em uma equipe no cliente do Microsoft Teams e escolher **Obter o link para a equipe**. Essa URL deve ser tratada como um blob opaco e não analisado. |
+|createdDateTime|dateTimeOffset|Carimbo de data/hora de criação da equipe.|
+
+### <a name="instance-attributes"></a>Atributos de instância
+
+Atributos de instância são propriedades com comportamentos especiais. Essas propriedades são temporárias e a) definem o comportamento que o serviço deve apresentar ou b) fornecem valores de propriedades de curto prazo, como uma URL de download, para um item com data de expiração.
+
+| Nome da propriedade| Tipo   | Descrição
+|:-----------------------|:-------|:-------------------------|
+|@microsoft.graph.teamCreationMode|cadeia de caracteres|Indica que a equipe está em estado de migração e atualmente está sendo usada para fins de migração. Ele aceita um valor: `migration`. **Observação**: no futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.|
+
+Para um exemplo de solicitação POST, confira [Solicitação (criar equipe no estado de migração)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## <a name="relationships"></a>Relações
 
@@ -99,7 +111,8 @@ Veja a seguir uma representação JSON do recurso.
   "internalId": "string",
   "isArchived": false,
   "webUrl": "string (URL)",
-  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
+  "createdDateTime": "dateTimeOffset"
 }
 ```
 

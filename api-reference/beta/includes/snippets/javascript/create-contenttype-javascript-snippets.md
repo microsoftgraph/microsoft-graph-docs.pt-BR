@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d461f3380e7eb3b0995c9f28ef8ad12c9ce32ed2
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f53cc5364c6353d5f7783fe1988b5f3881ef2cc4
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770457"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51202042"
 ---
 ```javascript
 
@@ -18,7 +18,7 @@ const client = Client.init(options);
 const contentType = {
     name: 'docSet',
     description: 'custom docset',
-    parentReference: {
+    base: {
         name: 'Document Set',
         id: '0x0120D520'
     },
