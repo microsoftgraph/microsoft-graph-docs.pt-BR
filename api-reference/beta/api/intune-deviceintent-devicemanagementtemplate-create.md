@@ -1,34 +1,34 @@
 ---
 title: Criar deviceManagementTemplate
-description: Criar um novo objeto deviceManagementTemplate.
+description: Crie um novo objeto deviceManagementTemplate.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85a3640fd3822788e2ef7301191c729482add55c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8b7002f0aff39ad54a5cfed4c2930fb72cad3936
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49286273"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51150714"
 ---
 # <a name="create-devicemanagementtemplate"></a>Criar deviceManagementTemplate
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) .
+Crie um novo [objeto deviceManagementTemplate.](../resources/intune-deviceintent-devicemanagementtemplate.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,18 +48,18 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementTemplate.
+No corpo da solicitação, fornece uma representação JSON para o objeto deviceManagementTemplate.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementTemplate.
+A tabela a seguir mostra as propriedades necessárias ao criar deviceManagementTemplate.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID do modelo|
-|displayName|String|O nome de exibição do modelo|
-|description|String|A descrição do modelo|
-|versionInfo|String|As informações de versão do modelo|
-|preterido|Booliano|O modelo é preterido ou não. Os propósitos não podem ser criados a partir de um modelo preterido.|
-|intentCount|Int32|Número de tentativas criadas a partir deste modelo.|
+|id|Cadeia de caracteres|A ID do modelo|
+|displayName|Cadeia de caracteres|O nome de exibição do modelo|
+|descrição|Cadeia de caracteres|A descrição do modelo|
+|versionInfo|Cadeia de caracteres|Informações de versão do modelo|
+|isDeprecated|Booleano|O modelo está preterido ou não. As intenções não podem ser criadas a partir de um modelo preterido.|
+|intentCount|Int32|Número de Intenções criadas a partir deste modelo.|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|O tipo do modelo. Os valores possíveis são: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`, `deviceConfigurationForOffice365`, `cloudPC`, `firewallSharedSettings`.|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|A plataforma do modelo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
 |templateSubtype|[deviceManagementTemplateSubtype](../resources/intune-deviceintent-devicemanagementtemplatesubtype.md)|O subtipo do modelo. Os valores possíveis são: `none`, `firewall`, `diskEncryption`, `attackSurfaceReduction`, `endpointDetectionReponse`, `accountProtection`, `antivirus`, `firewallSharedAppList`, `firewallSharedIpList`, `firewallSharedPortlist`.|
@@ -68,7 +68,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 567c7b70f73a9710bd884a9fab58faf577dac4c2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d795d99e2d3808268100c22ac8d9840edd96c85
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444438"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51151813"
 ---
 # <a name="devicemanagementresourceaccessprofilebase-resource-type"></a>Tipo de recurso deviceManagementResourceAccessProfileBase
 
@@ -22,21 +22,21 @@ Namespace: microsoft.graph
 
 Tipo de perfil base para acesso a recursos
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceManagementResourceAccessProfileBases](../api/intune-rapolicy-devicemanagementresourceaccessprofilebase-list.md)|[Coleção deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|Listar propriedades e relações dos [objetos deviceManagementResourceAccessProfileBase.](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |[Obter deviceManagementResourceAccessProfileBase](../api/intune-rapolicy-devicemanagementresourceaccessprofilebase-get.md)|[deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|Leia propriedades e relações do [objeto deviceManagementResourceAccessProfileBase.](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |[atribuir ação](../api/intune-rapolicy-devicemanagementresourceaccessprofilebase-assign.md)|[Coleção deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md)|Ainda não documentado|
-|[ação queryByPlatformType](../api/intune-rapolicy-devicemanagementresourceaccessprofilebase-querybyplatformtype.md)|[iQueryable_1OfDeviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-iqueryable_1ofdevicemanagementresourceaccessprofilebase.md)|Ainda não documentado|
+|[ação queryByPlatformType](../api/intune-rapolicy-devicemanagementresourceaccessprofilebase-querybyplatformtype.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador de perfil|
+|id|Cadeia de caracteres|Identificador de perfil|
 |versão|Int32|Versão do perfil|
-|displayName|String|Nome de exibição de perfil|
-|descrição|String|Descrição do perfil|
+|displayName|Cadeia de caracteres|Nome de exibição de perfil|
+|descrição|Cadeia de caracteres|Descrição do perfil|
 |creationDateTime|DateTimeOffset|O perfil DateTime foi criado|
 |lastModifiedDateTime|DateTimeOffset|O perfil DateTime foi modificado pela última vez|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo|

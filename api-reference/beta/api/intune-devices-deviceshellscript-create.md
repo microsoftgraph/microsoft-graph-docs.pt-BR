@@ -1,35 +1,35 @@
 ---
 title: Criar deviceShellScript
-description: Criar um novo objeto deviceShellScript.
+description: Crie um novo objeto deviceShellScript.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de06b3bb33def4f9278dcc247169d167dcbc2edd
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7941779b023bc81dc1a1db9e8a89158822ad9bbd
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49228635"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51150266"
 ---
 # <a name="create-deviceshellscript"></a>Criar deviceShellScript
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [deviceShellScript](../resources/intune-devices-deviceshellscript.md) .
+Crie um novo [objeto deviceShellScript.](../resources/intune-devices-deviceshellscript.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,29 +47,29 @@ POST /deviceManagement/deviceShellScripts
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto deviceShellScript.
+No corpo da solicitação, fornece uma representação JSON para o objeto deviceShellScript.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar deviceShellScript.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o deviceShellScript.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|executionFrequency|Duração|O intervalo de execução do script. Se não definido, o script será executado uma vez|
-|retryCount|Int32|Número de vezes que o script deve ser repetido se falhar|
-|blockExecutionNotifications|Booliano|Não notifica o usuário de que um script está sendo executado|
-|id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
-|displayName|String|Nome do script de gerenciamento de dispositivo.|
-|description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
-|scriptContent|Binária|O conteúdo de script.|
-|createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado. Essa propriedade é somente leitura.|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez. Essa propriedade é somente leitura.|
+|executionFrequency|Duration|O intervalo para que o script seja executado. Se não estiver definido, o script será executado uma vez|
+|retryCount|Int32|Número de vezes em que o script será retridido se ele falhar|
+|blockExecutionNotifications|Booleano|Não notifica ao usuário que um script está sendo executado|
+|id|Cadeia de caracteres|Identificador exclusivo do script de gerenciamento de dispositivos.|
+|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivos.|
+|descrição|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivos.|
+|scriptContent|Binário|O conteúdo do script.|
+|createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi criado. Essa propriedade é somente leitura.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceShellScript](../resources/intune-devices-deviceshellscript.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [deviceShellScript](../resources/intune-devices-deviceshellscript.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
