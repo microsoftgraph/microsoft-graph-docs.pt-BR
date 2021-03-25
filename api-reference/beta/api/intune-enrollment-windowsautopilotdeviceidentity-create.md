@@ -1,35 +1,35 @@
 ---
 title: Criar windowsAutopilotDeviceIdentity
-description: Criar um novo objeto windowsAutopilotDeviceIdentity.
+description: Crie um novo objeto windowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3476283ca68877e311b1265a2bbc6a67e9c1ed82
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 725d6d5c0cb0f03c9fcb1b2c161959a4242e2a13
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49212409"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51153850"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Criar windowsAutopilotDeviceIdentity
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
+Crie um novo [objeto windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -48,38 +48,38 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto windowsAutopilotDeviceIdentity.
+No corpo da solicitação, fornece uma representação JSON para o objeto windowsAutopilotDeviceIdentity.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar windowsAutopilotDeviceIdentity.
+A tabela a seguir mostra as propriedades necessárias ao criar o windowsAutopilotDeviceIdentity.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
-|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Status de atribuição de perfil do dispositivo do Windows AutoPilot. Os valores possíveis são: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Atribuição de perfil status detalhado do dispositivo do Windows AutoPilot. Os valores possíveis são: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
-|deploymentProfileAssignedDateTime|DateTimeOffset|Hora do conjunto de perfis do dispositivo do Windows AutoPilot.|
-|orderIdentifier|Cadeia de caracteres|Identificador de pedidos do dispositivo do Windows AutoPilot-preterido|
-|groupTag|String|Marca de grupo do dispositivo do Windows AutoPilot.|
-|purchaseOrderIdentifier|String|Identificador de ordem de compra do dispositivo do Windows AutoPilot.|
+|id|Cadeia de caracteres|O GUID do objeto.|
+|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Status da atribuição de perfil do dispositivo de piloto automático do Windows. Os valores possíveis são: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Status detalhado da atribuição de perfil do dispositivo de piloto automático do Windows. Os valores possíveis são: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
+|deploymentProfileAssignedDateTime|DateTimeOffset|Hora do conjunto de perfis do dispositivo de piloto automático do Windows.|
+|groupTag|Cadeia de caracteres|Marca de grupo do dispositivo de piloto automático do Windows.|
+|purchaseOrderIdentifier|Cadeia de caracteres|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|fabricante|String|Fabricante OEM do dispositivo do Windows AutoPilot.|
-|modelo|String|Nome do modelo do dispositivo do Windows AutoPilot.|
-|enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|Estado de registro do Intune do dispositivo do Windows AutoPilot. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|lastContactedDateTime|DateTimeOffset|Data e hora do último contato do Intune para o dispositivo do Windows AutoPilot.|
-|addressableUserName|String|Nome de usuário endereçável.|
-|userPrincipalName|String|Nome principal do usuário.|
+|fabricante|String|Fabricante do Oem do dispositivo de piloto automático do Windows.|
+|modelo|String|Nome do modelo do dispositivo de piloto automático do Windows.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro do Intune do dispositivo de piloto automático do Windows. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|lastContactedDateTime|DateTimeOffset|Intune Última Data Contada Hora do dispositivo de piloto automático do Windows.|
+|addressableUserName|Cadeia de caracteres|Nome de usuário acessível.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
 |resourceName|Cadeia de caracteres|Nome do recurso.|
-|skuNumber|String|Número de SKU|
-|systemFamily|String|Família de sistema|
-|azureActiveDirectoryDeviceId|String|ID de dispositivo do AAD|
-|managedDeviceId|String|ID do dispositivo gerenciado|
-|displayName|String|Nome de exibição|
+|skuNumber|Cadeia de caracteres|Número SKU|
+|systemFamily|Cadeia de caracteres|Família do Sistema|
+|azureActiveDirectoryDeviceId|Cadeia de caracteres|ID do dispositivo AAD - a ser preterida|
+|azureAdDeviceId|Cadeia de caracteres|ID do dispositivo AAD|
+|managedDeviceId|Cadeia de caracteres|ID de dispositivo gerenciado|
+|displayName|Cadeia de caracteres|Nome de exibição|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -88,14 +88,13 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 1075
+Content-length: 1077
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
   "deploymentProfileAssignmentStatus": "assignedInSync",
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
-  "orderIdentifier": "Order Identifier value",
   "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
@@ -110,6 +109,7 @@ Content-length: 1075
   "skuNumber": "Sku Number value",
   "systemFamily": "System Family value",
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "azureAdDeviceId": "Azure Ad Device Id value",
   "managedDeviceId": "Managed Device Id value",
   "displayName": "Display Name value"
 }
@@ -120,7 +120,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1124
+Content-Length: 1126
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -128,7 +128,6 @@ Content-Length: 1124
   "deploymentProfileAssignmentStatus": "assignedInSync",
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
-  "orderIdentifier": "Order Identifier value",
   "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
@@ -143,6 +142,7 @@ Content-Length: 1124
   "skuNumber": "Sku Number value",
   "systemFamily": "System Family value",
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "azureAdDeviceId": "Azure Ad Device Id value",
   "managedDeviceId": "Managed Device Id value",
   "displayName": "Display Name value"
 }

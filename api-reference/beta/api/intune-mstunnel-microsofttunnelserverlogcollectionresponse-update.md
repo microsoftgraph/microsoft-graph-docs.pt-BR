@@ -1,34 +1,34 @@
 ---
 title: Atualizar microsoftTunnelServerLogCollectionResponse
-description: Atualizar as propriedades de um objeto microsoftTunnelServerLogCollectionResponse.
+description: Atualize as propriedades de um objeto microsoftTunnelServerLogCollectionResponse.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 257bfd68d719dbf22f04f946a3720304142ca112
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: df112324b5ad51cd8a3d0bb6893e8789f24449fe
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162154"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51152968"
 ---
 # <a name="update-microsofttunnelserverlogcollectionresponse"></a>Atualizar microsoftTunnelServerLogCollectionResponse
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualizar as propriedades de um [objeto microsoftTunnelServerLogCollectionResponse.](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)
+Atualize as propriedades de um [objeto microsoftTunnelServerLogCollectionResponse.](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,14 +47,14 @@ PATCH /deviceManagement/microsoftTunnelServerLogCollectionResponses/{microsoftTu
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [microsoftTunnelServerLogCollectionResponse.](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)
+No corpo da solicitação, fornece uma representação JSON para o [objeto microsoftTunnelServerLogCollectionResponse.](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID exclusiva da entidade|
-|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|O status da coleção de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
+|id|Cadeia de caracteres|A ID exclusiva da entidade|
+|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|O status do conjunto de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
 |startDateTime|DateTimeOffset|A hora de início dos logs coletados |
 |endDateTime|DateTimeOffset|A hora de término dos logs coletados|
 |sizeInBytes|Int64|O tamanho dos logs em bytes|
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [microso
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

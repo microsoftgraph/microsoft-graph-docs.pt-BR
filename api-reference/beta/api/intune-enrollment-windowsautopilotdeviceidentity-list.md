@@ -1,35 +1,35 @@
 ---
 title: Listar windowsAutopilotDeviceIdentities
-description: Listar Propriedades e relações dos objetos windowsAutopilotDeviceIdentity.
+description: Listar propriedades e relações dos objetos windowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d5d31f835743d8f4f01e10f45515eed4046fa2af
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 00bf6a085bb940fe0c96a96b1074da1abf78e9a9
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49309394"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51153815"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>Listar windowsAutopilotDeviceIdentities
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
+Listar propriedades e relações dos [objetos windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,7 +51,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1245
+Content-Length: 1247
 
 {
   "value": [
@@ -76,7 +76,6 @@ Content-Length: 1245
       "deploymentProfileAssignmentStatus": "assignedInSync",
       "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
       "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
-      "orderIdentifier": "Order Identifier value",
       "groupTag": "Group Tag value",
       "purchaseOrderIdentifier": "Purchase Order Identifier value",
       "serialNumber": "Serial Number value",
@@ -91,6 +90,7 @@ Content-Length: 1245
       "skuNumber": "Sku Number value",
       "systemFamily": "System Family value",
       "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+      "azureAdDeviceId": "Azure Ad Device Id value",
       "managedDeviceId": "Managed Device Id value",
       "displayName": "Display Name value"
     }

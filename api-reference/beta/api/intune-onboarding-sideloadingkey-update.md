@@ -1,34 +1,34 @@
 ---
 title: Atualizar sideLoadingKey
-description: Atualiza as propriedades de um objeto sideLoadingKey.
+description: Atualize as propriedades de um objeto sideLoadingKey.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05da10cbd567b41d115fbcef105d00ac1eb1549e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 65ae9cfcb7fd2d66c8b56108929a284f26d840fa
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49262180"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51152667"
 ---
 # <a name="update-sideloadingkey"></a>Atualizar sideLoadingKey
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
+Atualize as propriedades de um [objeto sideLoadingKey.](../resources/intune-onboarding-sideloadingkey.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,23 +47,23 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto sideLoadingKey.](../resources/intune-onboarding-sideloadingkey.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID exclusiva da chave de carregamento do lado.|
-|value|Cadeia de caracteres|O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.|
-|displayName|String|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
-|description|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
-|totalActivation|Int32|Chave de carregamento do lado ativação total exibida para os administradores do profissionais.|
-|lastUpdatedDateTime|String|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
+|id|Cadeia de caracteres|ID exclusiva da chave de carregamento lateral.|
+|value|Cadeia de caracteres|Side Loading Key Value, it is 5x5 value, seperated by hiphens.|
+|displayName|Cadeia de caracteres|Side Loading Key Name displayed to the ITPro Admins.|
+|descrição|Cadeia de caracteres|Descrição da Chave de Carregamento lateral exibida para os administradores do ITPro..|
+|totalActivation|Int32|Side Loading Key Total Activation displayed to the ITPro Admins.|
+|lastUpdatedDateTime|Cadeia de caracteres|Side Loading Key Last Updated Date displayed to the ITPro Admins.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

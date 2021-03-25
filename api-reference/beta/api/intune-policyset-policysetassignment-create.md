@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c2616cecf5cd66ec008dc4754670e916af1718b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 66cc853d9fc34a2de3a155e6a0dd6ddce2f5f815
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153757"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51152373"
 ---
 # <a name="create-policysetassignment"></a>Criar policySetAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Crie um novo [objeto policySetAssignment.](../resources/intune-policyset-policys
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,20 +47,20 @@ POST /deviceAppManagement/policySets/{policySetId}/assignments
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto policySetAssignment.
+No corpo da solicitação, fornece uma representação JSON para o objeto policySetAssignment.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar policySetAssignment.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave do PolicySetAssignment.|
+|id|Cadeia de caracteres|Chave do PolicySetAssignment.|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do PolicySetAssignment.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo de destino de PolicySetAssignment|
 
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto policySetAssignment](../resources/intune-policyset-policysetassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [policySetAssignment](../resources/intune-policyset-policysetassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

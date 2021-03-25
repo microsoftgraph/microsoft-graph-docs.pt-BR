@@ -1,35 +1,35 @@
 ---
 title: Criar groupPolicyConfiguration
-description: Criar um novo objeto groupPolicyConfiguration.
+description: Crie um novo objeto groupPolicyConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be1978efb5b318e85484bb1e6fe5b1a5f4f82118
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0964d6eac276d42292e4417e9bfbb0e643101597
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49227978"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51153465"
 ---
 # <a name="create-grouppolicyconfiguration"></a>Criar groupPolicyConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .
+Crie um novo [objeto groupPolicyConfiguration.](../resources/intune-grouppolicy-grouppolicyconfiguration.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,23 +47,23 @@ POST /deviceManagement/groupPolicyConfigurations
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto groupPolicyConfiguration.
+No corpo da solicitação, fornece uma representação JSON para o objeto groupPolicyConfiguration.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar groupPolicyConfiguration.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
-|displayName|String|Nome fornecido pelo usuário para o objeto Resource.|
-|description|String|Descrição fornecida pelo usuário para o objeto Resource.|
+|displayName|Cadeia de caracteres|Nome fornecido pelo usuário para o objeto resource.|
+|descrição|Cadeia de caracteres|O usuário forneceu a descrição do objeto resource.|
 |roleScopeTagIds|Coleção de cadeias de caracteres|A lista de marcas de escopo para a configuração.|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

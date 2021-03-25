@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: abbeb504bea64181ac1a0bd31cf239b360399de1
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 1f9e8c139be2aec7edcf698322218fae44b5a5c2
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162160"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51153066"
 ---
 # <a name="create-microsofttunnelserverlogcollectionresponse"></a>Criar microsoftTunnelServerLogCollectionResponse
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Crie um novo [objeto microsoftTunnelServerLogCollectionResponse.](../resources/i
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,14 +47,14 @@ POST /deviceManagement/microsoftTunnelServerLogCollectionResponses
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto microsoftTunnelServerLogCollectionResponse.
+No corpo da solicitação, fornece uma representação JSON para o objeto microsoftTunnelServerLogCollectionResponse.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar microsoftTunnelServerLogCollectionResponse.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o microsoftTunnelServerLogCollectionResponse.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID exclusiva da entidade|
-|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|O status da coleção de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
+|id|Cadeia de caracteres|A ID exclusiva da entidade|
+|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|O status do conjunto de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
 |startDateTime|DateTimeOffset|A hora de início dos logs coletados |
 |endDateTime|DateTimeOffset|A hora de término dos logs coletados|
 |sizeInBytes|Int64|O tamanho dos logs em bytes|
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar microsof
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um objeto `201 Created` [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

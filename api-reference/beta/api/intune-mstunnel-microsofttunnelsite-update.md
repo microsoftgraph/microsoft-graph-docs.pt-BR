@@ -1,34 +1,34 @@
 ---
 title: Atualizar microsoftTunnelSite
-description: Atualiza as propriedades de um objeto microsoftTunnelSite.
+description: Atualize as propriedades de um objeto microsoftTunnelSite.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6fa69846aa08faf3be63382a1ec0429936d77370
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d0804e0c367e379a68305b7b8790d29405a3e235
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301387"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51152926"
 ---
 # <a name="update-microsofttunnelsite"></a>Atualizar microsoftTunnelSite
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) .
+Atualize as propriedades de um [objeto microsoftTunnelSite.](../resources/intune-mstunnel-microsofttunnelsite.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,22 +47,22 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto microsoftTunnelSite.](../resources/intune-mstunnel-microsofttunnelsite.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID do MicrosoftTunnelSite|
-|displayName|String|O nome de exibição do MicrosoftTunnelSite|
-|description|String|A descrição do MicrosoftTunnelSite|
-|publicAddress|String|O nome de domínio público ou endereço IP do MicrosoftTunnelSite|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|id|Cadeia de caracteres|Id do MicrosoftTunnelSite|
+|displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelSite|
+|descrição|Cadeia de caracteres|Descrição do MicrosoftTunnelSite|
+|publicAddress|Cadeia de caracteres|O nome de domínio público do MicrosoftTunnelSite ou o endereço IP|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

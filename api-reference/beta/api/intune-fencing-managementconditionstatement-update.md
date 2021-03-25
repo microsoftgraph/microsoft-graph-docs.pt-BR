@@ -1,35 +1,35 @@
 ---
 title: Atualizar managementConditionStatement
-description: Atualiza as propriedades de um objeto managementConditionStatement.
+description: Atualize as propriedades de um objeto managementConditionStatement.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94d00ae9d17e61cd09c2dd62db42059c31ccda9e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 819d17f2884c1581a088646d4f3e107a32af78b0
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49218303"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51153605"
 ---
 # <a name="update-managementconditionstatement"></a>Atualizar managementConditionStatement
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .
+Atualize as propriedades de [um objeto managementConditionStatement.](../resources/intune-fencing-managementconditionstatement.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -48,26 +48,26 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto managementConditionStatement.](../resources/intune-fencing-managementconditionstatement.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
-|displayName|String|O nome do administrador definido da instrução de condição de gerenciamento.|
-|description|String|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
-|createdDateTime|DateTimeOffset|A hora em que a instrução de gerenciamento da condição foi criada. Lado do serviço gerado.|
-|modifiedDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi modificada pela última vez. Atualizado o lado do serviço.|
+|id|Cadeia de caracteres|Identificador exclusivo para a instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
+|displayName|Cadeia de caracteres|O nome definido pelo administrador da instrução de condição de gerenciamento.|
+|descrição|Cadeia de caracteres|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
+|createdDateTime|DateTimeOffset|A hora em que a instrução de condição de gerenciamento foi criada. Lado de serviço gerado.|
+|modifiedDateTime|DateTimeOffset|A hora em que a instrução de condição de gerenciamento foi modificada pela última vez. Lado do serviço atualizado.|
 |expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão de instrução de condição de gerenciamento usada para avaliar se uma instrução de condição de gerenciamento foi ativada/desativada.|
-|eTag|String|ETag da instrução de condição de gerenciamento. Atualizado o lado do serviço.|
-|applicablePlatforms|coleção [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|As plataformas aplicáveis para essa instrução de condição de gerenciamento.
-Isso é calculado a partir da aparência das condições de gerenciamento associadas à instrução de condição de gerenciamento e à localização da interseção de plataformas aplicáveis. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|eTag|String|ETag da instrução de condição de gerenciamento. Lado do serviço atualizado.|
+|applicablePlatforms|[Coleção devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|As plataformas aplicáveis para essa instrução de condição de gerenciamento.
+Isso é calculado analisando as condições de gerenciamento associadas à instrução de condição de gerenciamento e encontrando a interseção das plataformas aplicáveis. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -1,18 +1,18 @@
 ---
-title: Listar locationManagementConditions
-description: Listar propriedades e relações dos objetos locationManagementCondition.
+title: Ação deleteDevices
+description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c231d219e4baecdbb224bed12d5f1d57c876759b
+ms.openlocfilehash: d790acee9d501391c74ebfc1d299ca6fe85ae831
 ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51153738"
+ms.locfileid: "51159334"
 ---
-# <a name="list-locationmanagementconditions"></a>Listar locationManagementConditions
+# <a name="deletedevices-action"></a>Ação deleteDevices
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos [objetos locationManagementCondition.](../resources/intune-fencing-locationmanagementcondition.md)
+Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,8 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/managementConditions
-GET /deviceManagement/managementConditions/{managementConditionId}/managementConditionStatements/{managementConditionStatementId}/managementConditions
+POST /deviceManagement/windowsAutopilotDeviceIdentities/deleteDevices
+POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignedDevices/deleteDevices
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -48,17 +48,34 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON dos parâmetros.
+
+A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|serialNumbers|String collection|Ainda não documentado|
+
+
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos locationManagementCondition](../resources/intune-fencing-locationmanagementcondition.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará um código de resposta e uma `200 OK` [coleção deletedWindowsAutopilotDeviceState](../resources/intune-enrollment-deletedwindowsautopilotdevicestate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/managementConditions
+POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/deleteDevices
+
+Content-type: application/json
+Content-length: 59
+
+{
+  "serialNumbers": [
+    "Serial Numbers value"
+  ]
+}
 ```
 
 ### <a name="response"></a>Resposta
@@ -66,22 +83,16 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 512
+Content-Length: 301
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.locationManagementCondition",
-      "id": "23b1ca32-ca32-23b1-32ca-b12332cab123",
-      "uniqueName": "Unique Name value",
-      "displayName": "Display Name value",
-      "description": "Description value",
-      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
-      "eTag": "ETag value",
-      "applicablePlatforms": [
-        "androidForWork"
-      ]
+      "@odata.type": "microsoft.graph.deletedWindowsAutopilotDeviceState",
+      "serialNumber": "Serial Number value",
+      "deviceRegistrationId": "Device Registration Id value",
+      "deletionState": "failed",
+      "errorMessage": "Error Message value"
     }
   ]
 }
