@@ -1,37 +1,37 @@
 ---
 title: Obter appleUserInitiatedEnrollmentProfile
-description: Leia as propriedades e as relações do objeto appleUserInitiatedEnrollmentProfile.
+description: Ler propriedades e relações do objeto appleUserInitiatedEnrollmentProfile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c87b715fe2cd874fa6b7c975ce024abb89a285d8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1750b92d23ff5c55d022d1de0ce704a7e96acb9c
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49263677"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51157678"
 ---
-# <a name="get-appleuserinitiatedenrollmentprofile"></a><span data-ttu-id="05298-103">Obter appleUserInitiatedEnrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="05298-103">Get appleUserInitiatedEnrollmentProfile</span></span>
+# <a name="get-appleuserinitiatedenrollmentprofile"></a><span data-ttu-id="1750b-103">Obter appleUserInitiatedEnrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="1750b-103">Get appleUserInitiatedEnrollmentProfile</span></span>
 
-<span data-ttu-id="05298-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="05298-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1750b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1750b-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="05298-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="05298-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="1750b-105">**Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1750b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="05298-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="05298-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1750b-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1750b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="05298-107">Leia as propriedades e as relações do objeto [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="05298-107">Read properties and relationships of the [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) object.</span></span>
+<span data-ttu-id="1750b-107">Ler propriedades e relações do [objeto appleUserInitiatedEnrollmentProfile.](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md)</span><span class="sxs-lookup"><span data-stu-id="1750b-107">Read properties and relationships of the [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="05298-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="05298-108">Prerequisites</span></span>
-<span data-ttu-id="05298-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="05298-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1750b-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="1750b-108">Prerequisites</span></span>
+<span data-ttu-id="1750b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1750b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="05298-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="05298-111">Permission type</span></span>|<span data-ttu-id="05298-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="05298-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1750b-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1750b-111">Permission type</span></span>|<span data-ttu-id="1750b-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1750b-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="05298-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="05298-113">Delegated (work or school account)</span></span>|<span data-ttu-id="05298-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="05298-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="05298-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="05298-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="05298-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="05298-116">Not supported.</span></span>|
-|<span data-ttu-id="05298-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="05298-117">Application</span></span>|<span data-ttu-id="05298-118">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="05298-118">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="1750b-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1750b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1750b-114">DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1750b-114">DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="1750b-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1750b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1750b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1750b-116">Not supported.</span></span>|
+|<span data-ttu-id="1750b-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1750b-117">Application</span></span>|<span data-ttu-id="1750b-118">DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1750b-118">DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="05298-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="05298-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1750b-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1750b-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,31 +40,31 @@ ms.locfileid: "49263677"
 GET /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="05298-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="05298-120">Optional query parameters</span></span>
-<span data-ttu-id="05298-121">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="05298-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1750b-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="1750b-120">Optional query parameters</span></span>
+<span data-ttu-id="1750b-121">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="1750b-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="05298-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="05298-122">Request headers</span></span>
-|<span data-ttu-id="05298-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="05298-123">Header</span></span>|<span data-ttu-id="05298-124">Valor</span><span class="sxs-lookup"><span data-stu-id="05298-124">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1750b-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1750b-122">Request headers</span></span>
+|<span data-ttu-id="1750b-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1750b-123">Header</span></span>|<span data-ttu-id="1750b-124">Valor</span><span class="sxs-lookup"><span data-stu-id="1750b-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="05298-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="05298-125">Authorization</span></span>|<span data-ttu-id="05298-126">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="05298-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="05298-127">Aceitar</span><span class="sxs-lookup"><span data-stu-id="05298-127">Accept</span></span>|<span data-ttu-id="05298-128">application/json</span><span class="sxs-lookup"><span data-stu-id="05298-128">application/json</span></span>|
+|<span data-ttu-id="1750b-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="1750b-125">Authorization</span></span>|<span data-ttu-id="1750b-126">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1750b-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1750b-127">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1750b-127">Accept</span></span>|<span data-ttu-id="1750b-128">application/json</span><span class="sxs-lookup"><span data-stu-id="1750b-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="05298-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="05298-129">Request body</span></span>
-<span data-ttu-id="05298-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="05298-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1750b-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1750b-129">Request body</span></span>
+<span data-ttu-id="1750b-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1750b-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="05298-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="05298-131">Response</span></span>
-<span data-ttu-id="05298-132">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="05298-132">If successful, this method returns a `200 OK` response code and [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1750b-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="1750b-131">Response</span></span>
+<span data-ttu-id="1750b-132">Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1750b-132">If successful, this method returns a `200 OK` response code and [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="05298-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="05298-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1750b-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1750b-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="05298-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="05298-134">Request</span></span>
-<span data-ttu-id="05298-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="05298-135">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1750b-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1750b-134">Request</span></span>
+<span data-ttu-id="1750b-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1750b-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}
 ```
 
-### <a name="response"></a><span data-ttu-id="05298-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="05298-136">Response</span></span>
-<span data-ttu-id="05298-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="05298-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1750b-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="1750b-136">Response</span></span>
+<span data-ttu-id="1750b-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1750b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
