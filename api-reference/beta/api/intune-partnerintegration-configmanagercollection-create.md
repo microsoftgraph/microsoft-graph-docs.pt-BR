@@ -1,34 +1,34 @@
 ---
 title: Criar configManagerCollection
-description: Criar um novo objeto configManagerCollection.
+description: Crie um novo objeto configManagerCollection.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a16a878140e233e44960d842687f05f0c2c7a79e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2a7fc439408d357d2463fd14c0a8c738e403148a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301451"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158749"
 ---
 # <a name="create-configmanagercollection"></a>Criar configManagerCollection
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) .
+Crie um novo [objeto configManagerCollection.](../resources/intune-partnerintegration-configmanagercollection.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,24 +47,24 @@ POST /deviceManagement/configManagerCollections
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto configManagerCollection.
+No corpo da solicitação, fornece uma representação JSON para o objeto configManagerCollection.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar configManagerCollection.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o configManagerCollection.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da coleção Configmanager.|
-|displayName|String|O DisplayName.|
-|collectionIdentifier|String|O identificador de coleção no SCCM.|
-|HierarchyName|String|O HierarchyName.|
-|hierarchyIdentifier|String|O identificador de hierarquia.|
-|createdDateTime|DateTimeOffset|A data de criação.|
-|lastModifiedDateTime|DateTimeOffset|A data da última modificação.|
+|id|Cadeia de caracteres|A chave da Coleção ConfigManager.|
+|displayName|Cadeia de caracteres|The DisplayName.|
+|collectionIdentifier|Cadeia de caracteres|O identificador de coleção no SCCM.|
+|hierarchyName|Cadeia de caracteres|O HierarchyName.|
+|hierarchyIdentifier|Cadeia de caracteres|O Identificador de Hierarquia.|
+|createdDateTime|DateTimeOffset|A data criada.|
+|lastModifiedDateTime|DateTimeOffset|A última data modificada.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

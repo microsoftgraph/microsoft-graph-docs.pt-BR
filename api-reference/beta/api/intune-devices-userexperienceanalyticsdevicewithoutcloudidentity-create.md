@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3022153d740837f0c05864decfb2caba8fc9a43
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: b1ba3c28e300ec44d104326e5fe11166cb18c37a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162195"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51157895"
 ---
 # <a name="create-userexperienceanalyticsdevicewithoutcloudidentity"></a>Criar userExperienceAnalyticsDeviceWithoutCloudIdentity
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,10 +25,10 @@ Crie um novo [objeto userExperienceAnalyticsDeviceWithoutCloudIdentity.](../reso
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,20 +47,20 @@ POST /deviceManagement/userExperienceAnalyticsDevicesWithoutCloudIdentity
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto userExperienceAnalyticsDeviceWithoutCloudIdentity.
+No corpo da solicitação, fornece uma representação JSON para o objeto userExperienceAnalyticsDeviceWithoutCloudIdentity.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar userExperienceAnalyticsDeviceWithoutCloudIdentity.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o userExperienceAnalyticsDeviceWithoutCloudIdentity.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do dispositivo de anexação de locatário da análise de experiência do usuário.|
-|deviceName|String|O nome do dispositivo de anexação de locatário.|
-|azureAdDeviceId|String|ID de dispositivo do Azure Active Directory|
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo de anexação do locatário de análise de experiência do usuário.|
+|deviceName|String|O nome do dispositivo de anexação do locatário.|
+|azureAdDeviceId|Cadeia de caracteres|ID de dispositivo do Azure Active Directory|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um objeto `201 Created` [userExperienceAnalyticsDeviceWithoutCloudIdentity](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto userExperienceAnalyticsDeviceWithoutCloudIdentity](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

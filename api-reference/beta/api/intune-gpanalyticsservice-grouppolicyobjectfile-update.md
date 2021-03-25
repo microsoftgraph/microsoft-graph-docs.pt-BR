@@ -1,34 +1,34 @@
 ---
 title: Atualizar groupPolicyObjectFile
-description: Atualiza as propriedades de um objeto groupPolicyObjectFile.
+description: Atualize as propriedades de um objeto groupPolicyObjectFile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f03314e42386f3ae0371c13a7bcae17a0e39681d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: efe599f7b894629ca4b1b1d5c2d3492b76bc9b9e
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274996"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158959"
 ---
 # <a name="update-grouppolicyobjectfile"></a>Atualizar groupPolicyObjectFile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) .
+Atualize as propriedades de [um objeto groupPolicyObjectFile.](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,23 +47,23 @@ PATCH /deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto groupPolicyObjectFile.](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
-|groupPolicyObjectId|Guid|O GUID do objeto da política de grupo do conteúdo XML do GPO|
-|ouDistinguishedName|String|O nome diferenciado da OU.|
-|createdDateTime|DateTimeOffset|A data e a hora em que o GroupPolicy foi carregado pela primeira vez.|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyObjectFile foi modificado pela última vez.|
-|content|Cadeia de caracteres|O conteúdo do arquivo do objeto de diretiva de grupo.|
+|id|Cadeia de caracteres|Ainda não documentado|
+|groupPolicyObjectId|Guid|O GUID do objeto de política de grupo do conteúdo XML do GPO|
+|ouDistinguishedName|Cadeia de caracteres|O nome diferenciado da UO.|
+|createdDateTime|DateTimeOffset|A data e a hora em que GroupPolicy foi carregado pela primeira vez.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora em que GroupPolicyObjectFile foi modificado pela última vez.|
+|content|Cadeia de caracteres|O conteúdo do arquivo de objeto de Política de Grupo.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

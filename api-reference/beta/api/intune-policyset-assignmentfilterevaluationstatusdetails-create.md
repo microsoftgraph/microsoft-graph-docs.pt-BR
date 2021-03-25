@@ -1,34 +1,34 @@
 ---
 title: Criar assignmentFilterEvaluationStatusDetails
-description: Criar um novo objeto assignmentFilterEvaluationStatusDetails.
+description: Crie um novo objeto assignmentFilterEvaluationStatusDetails.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a234b511821db87d92ee91416f6094379360cc6
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: aa4418ea4e00099e807684196d8960231d3b9c28
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160136"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51158728"
 ---
 # <a name="create-assignmentfilterevaluationstatusdetails"></a>Criar assignmentFilterEvaluationStatusDetails
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo [objeto assignmentFilterEvaluationStatusDetails.](../resources/intune-policyset-assignmentfilterevaluationstatusdetails.md)
+Crie um novo [objeto assignmentFilterEvaluationStatusDetails.](../resources/intune-policyset-assignmentfilterevaluationstatusdetails.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,19 +47,19 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/assignmentFilterEvaluati
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto assignmentFilterEvaluationStatusDetails.
+No corpo da solicitação, fornece uma representação JSON para o objeto assignmentFilterEvaluationStatusDetails.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar assignmentFilterEvaluationStatusDetails.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade AssignmentFilterEvaluationStatusDetails.|
-|payloadId|String|PayloadId no qual o filtro foi aplicado.|
+|id|Cadeia de caracteres|Chave da entidade AssignmentFilterEvaluationStatusDetails.|
+|payloadId|Cadeia de caracteres|PayloadId no qual o filtro foi aplicado.|
 
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [assignmentFilterEvaluationStatusDetails](../resources/intune-policyset-assignmentfilterevaluationstatusdetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto assignmentFilterEvaluationStatusDetails](../resources/intune-policyset-assignmentfilterevaluationstatusdetails.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

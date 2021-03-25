@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5e29fadfe2e323614ae2c12f412955b39c4a2bd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ae30966ec42edc00dc4245fb9f8b58ad85461346
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441498"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51159155"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>Obter userExperienceAnalyticsOverview
 
@@ -25,11 +25,11 @@ Ler propriedades e relações do [objeto userExperienceAnalyticsOverview.](../re
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1026
+Content-Length: 1123
 
 {
   "value": {
@@ -77,6 +77,7 @@ Content-Length: 1026
     "overallScore": 12,
     "deviceBootPerformanceOverallScore": 1,
     "bestPracticesOverallScore": 9,
+    "workFromAnywhereOverallScore": 12,
     "appHealthOverallScore": 5,
     "resourcePerformanceOverallScore": 15,
     "insights": [
@@ -96,6 +97,7 @@ Content-Length: 1026
     "state": "insufficientData",
     "deviceBootPerformanceHealthState": "insufficientData",
     "bestPracticesHealthState": "insufficientData",
+    "workFromAnywhereHealthState": "insufficientData",
     "appHealthState": "insufficientData",
     "resourcePerformanceState": "insufficientData"
   }

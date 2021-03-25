@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6287f070f0bbd610bab40694d3c41fcb6e701a7b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a26b5bfaabe9a10eb77f7f3337138d47db0dea88
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445697"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51159134"
 ---
 # <a name="update-userexperienceanalyticsremoteconnection"></a>Atualizar userExperienceAnalyticsRemoteConnection
 
@@ -25,10 +25,10 @@ Atualize as propriedades de [um objeto userExperienceAnalyticsRemoteConnection.]
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da entidade de conexão remota de análise de experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da entidade de conexão remota de análise de experiência do usuário.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |deviceName|String|O nome do dispositivo.|
 |modelo|String|O modelo de dispositivo de análise de experiência do usuário.|
-|virtualNetwork|String|A rede virtual de análise de experiência do usuário.|
+|virtualNetwork|Cadeia de caracteres|A rede virtual de análise de experiência do usuário.|
 |deviceCount|Int32|A contagem de conexão remota. Valores válidos de 0 a 2147483647|
 |cloudPcRoundTripTime|Duplo|O tempo de dica de ida e volta do dispositivo cloud pc. Valores válidos de 0 a 1,79769313486232E+308|
 |cloudPcSignInTime|Duplo|A hora de entrada do dispositivo cloud pc. Valores válidos de 0 a 1,79769313486232E+308|
