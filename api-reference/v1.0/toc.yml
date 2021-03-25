@@ -193,11 +193,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -217,7 +217,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: Listar
+              - name: Lista
                 href: api/user-list-approleassignments.md
               - name: Adicionar
                 href: api/user-post-approleassignments.md
@@ -260,7 +260,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: Concessões de permissão delegadas
             items:
-              - name: Listar
+              - name: Lista
                 href: api/user-list-oauth2permissiongrants.md
           - name: Objetos de diretório
             href: resources/directoryobject.md
@@ -445,7 +445,7 @@ items:
                 href: api/todo-list-lists.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -548,7 +548,7 @@ items:
           - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
-              - name: Listar
+              - name: Lista
                 href: api/group-list-approleassignments.md
               - name: Adicionar
                 href: api/group-post-approleassignments.md
@@ -643,7 +643,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -744,7 +744,7 @@ items:
                     href: api/application-delete-extensionproperty.md
               - name: Proprietários
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/application-list-owners.md
                   - name: Adicionar
                     href: api/application-post-owners.md
@@ -757,7 +757,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Listar
+                      - name: Lista
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -766,14 +766,14 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Listar
+                      - name: Lista
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
               - name: Modelo de aplicativo
                 href: resources/applicationtemplate.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/applicationtemplate-list.md
                   - name: Obter
                     href: api/applicationtemplate-get.md
@@ -801,7 +801,7 @@ items:
               - name: Atribuição de funções do aplicativo
                 href: resources/approleassignment.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-approleassignments.md
@@ -825,7 +825,7 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: Concessões de permissão delegadas
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: Classificações de permissão delegada
                 href: resources/delegatedpermissionclassification.md
@@ -852,7 +852,7 @@ items:
                     href: api/serviceprincipal-getmemberobjects.md
               - name: Proprietários
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/serviceprincipal-list-owners.md
                   - name: Adicionar
                     href: api/serviceprincipal-post-owners.md
@@ -865,7 +865,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Listar
+                      - name: Lista
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -874,7 +874,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Listar
+                      - name: Lista
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -911,7 +911,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Listar
+                      - name: Lista
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -920,7 +920,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Listar
+                      - name: Lista
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1080,7 +1080,7 @@ items:
                 href: api/calendarpermission-update.md
               - name: Excluir
                 href: api/calendarpermission-delete.md
-          - name: Categories
+          - name: Categorias
             items:
               - name: Categoria
                 href: resources/outlookcategory.md
@@ -1096,7 +1096,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1185,7 +1185,7 @@ items:
               - name: Participante
                 href: resources/participant.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/call-list-participants.md
                   - name: Obter
                     href: api/participant-get.md
@@ -1207,7 +1207,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1215,9 +1215,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter registro de chamada
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: Listar sessões
                     href: api/callrecords-session-list.md
@@ -1279,7 +1279,7 @@ items:
               - name: Conector de impressão
                 href: resources/printconnector.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/print-list-connectors.md
                   - name: Obter
                     href: api/printconnector-get.md
@@ -1424,7 +1424,7 @@ items:
               - name: Serviço de impressão
                 href: resources/printservice.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/print-list-services.md
                   - name: Obter
                     href: api/printservice-get.md
@@ -3779,7 +3779,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4056,14 +4056,14 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
                   - name: Chaves de segurança FIDO2
                     href: resources/fido2authenticationmethod.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/fido2authenticationmethod-list.md
                       - name: Obter
                         href: api/fido2authenticationmethod-get.md
@@ -4072,7 +4072,7 @@ items:
                   - name: Microsoft Authenticator
                     href: resources/microsoftauthenticatorauthenticationmethod.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/microsoftauthenticatorauthenticationmethod-list.md
                       - name: Obter
                         href: api/microsoftauthenticatorauthenticationmethod-get.md
@@ -4081,7 +4081,7 @@ items:
                   - name: Windows Hello para Empresas
                     href: resources/windowshelloforbusinessauthenticationmethod.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/windowshelloforbusinessauthenticationmethod-list.md
                       - name: Obter
                         href: api/windowshelloforbusinessauthenticationmethod-get.md
@@ -4089,7 +4089,7 @@ items:
                         href: api/windowshelloforbusinessauthenticationmethod-delete.md
               - name: Política de método de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethodspolicies-overview.md
                   - name: Política FIDO2
                     href: resources/fido2authenticationmethodconfiguration.md
@@ -4151,7 +4151,7 @@ items:
                         items:
                           - name: Local nomeado
                             href: resources/namedlocation.md
-                          - name: Listar
+                          - name: Lista
                             href: api/conditionalaccessroot-list-namedlocations.md
                           - name: Obter
                             href: api/namedlocation-get.md
@@ -4211,7 +4211,7 @@ items:
                   - name: Detecção de riscos
                     href: resources/riskdetection.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/riskdetection-list.md
                       - name: Obter
                         href: api/riskdetection-get.md
@@ -4542,7 +4542,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4653,7 +4653,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4743,7 +4743,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4765,7 +4765,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -4783,7 +4783,7 @@ items:
                     href: api/signin-get.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -4981,12 +4981,12 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -5012,7 +5012,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -5051,7 +5051,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -5110,7 +5110,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -5228,6 +5228,8 @@ items:
                 href: api/team-get-primarychannel.md
               - name: Listar todas as equipes
                 href: /graph/teams-list-all-teams?context=graph/api/1.0
+              - name: Migração completa para equipe
+                href: api/team-completemigration.md
           - name: Grupo (equipe)
             href: resources/group.md
             items:
@@ -5294,6 +5296,8 @@ items:
                 href: api/channel-update-members.md
               - name: Remover membro
                 href: api/channel-delete-members.md
+              - name: Migração completa para canal
+                href: api/channel-completemigration.md
               - name: Obter pasta de arquivos.
                 href: api/channel-get-filesfolder.md
               - name: Listar mensagens do canal
@@ -5500,7 +5504,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: Listar
+                  - name: Lista
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md
@@ -5624,7 +5628,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
@@ -5645,7 +5649,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefa
+          - name: Tarefas
             href: resources/todotask.md
             items:
               - name: Listar tarefas
@@ -5707,7 +5711,7 @@ items:
           - name: Comentários de workbook
             href: resources/workbookcomment.md
             items:
-              - name: Listar
+              - name: Lista
                 href: api/workbook-list-comments.md
               - name: Obter
                 href: api/workbookcomment-get.md
