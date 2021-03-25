@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e2b7110f6796b7b383ed8becade4f142dd124c52
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 42a74f1ebed4ab1ea68d33c0112de23c1805b82c
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947285"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51208638"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ConditionalAccessPolicy conditionalAccessPolicy = new ConditionalAccessPolicy();
 conditionalAccessPolicy.displayName = "Require MFA to EXO from non-complaint devices.";

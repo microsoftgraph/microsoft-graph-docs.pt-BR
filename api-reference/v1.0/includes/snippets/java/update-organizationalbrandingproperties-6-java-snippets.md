@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 296d861790b6b700bc0dfc16ab50ca2e5373a0b5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 53b6c4ea5cd7137e837ce43ecd6f9452f71ed7e0
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959708"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51208755"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OrganizationalBrandingLocalization organizationalBrandingLocalization = new OrganizationalBrandingLocalization();
 organizationalBrandingLocalization.backgroundColor = "#00000F";
