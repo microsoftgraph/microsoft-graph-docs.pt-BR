@@ -1,34 +1,34 @@
 ---
 title: Atualizar userExperienceAnalyticsDeviceWithoutCloudIdentity
-description: Atualizar as propriedades de um objeto userExperienceAnalyticsDeviceWithoutCloudIdentity.
+description: Atualize as propriedades de um objeto userExperienceAnalyticsDeviceWithoutCloudIdentity.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01ed006ffdc3b3ae2d13d015edb5799324b33efb
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 633183db5824aae24c66f072d918974f5d3cd4fe
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160307"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51154011"
 ---
 # <a name="update-userexperienceanalyticsdevicewithoutcloudidentity"></a>Atualizar userExperienceAnalyticsDeviceWithoutCloudIdentity
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualizar as propriedades de um [objeto userExperienceAnalyticsDeviceWithoutCloudIdentity.](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md)
+Atualize as propriedades de [um objeto userExperienceAnalyticsDeviceWithoutCloudIdentity.](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,20 +47,20 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicesWithoutCloudIdentity/{user
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [userExperienceAnalyticsDeviceWithoutCloudIdentity.](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md)
+No corpo da solicitação, fornece uma representação JSON para o [objeto userExperienceAnalyticsDeviceWithoutCloudIdentity.](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [userExperienceAnalyticsDeviceWithoutCloudIdentity](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o userExperienceAnalyticsDeviceWithoutCloudIdentity](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do dispositivo de anexação de locatário da análise de experiência do usuário.|
-|deviceName|String|O nome do dispositivo de anexação de locatário.|
-|azureAdDeviceId|String|ID de dispositivo do Azure Active Directory|
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo de anexação do locatário de análise de experiência do usuário.|
+|deviceName|String|O nome do dispositivo de anexação do locatário.|
+|azureAdDeviceId|Cadeia de caracteres|ID de dispositivo do Azure Active Directory|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [userExperienceAnalyticsDeviceWithoutCloudIdentity](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto userExperienceAnalyticsDeviceWithoutCloudIdentity](../resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

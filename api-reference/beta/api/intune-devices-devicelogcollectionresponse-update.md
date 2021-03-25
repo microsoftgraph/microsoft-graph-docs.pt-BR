@@ -1,34 +1,34 @@
 ---
 title: Atualizar deviceLogCollectionResponse
-description: Atualiza as propriedades de um objeto deviceLogCollectionResponse.
+description: Atualize as propriedades de um objeto deviceLogCollectionResponse.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e162b964f4b80ac554cc8bb283f345db6400fc2f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ed85268897942ba953ccdd5240d120829f6ea400
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49219283"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51154361"
 ---
 # <a name="update-devicelogcollectionresponse"></a>Atualizar deviceLogCollectionResponse
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) .
+Atualize as propriedades de um [objeto deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,26 +47,26 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) .
+No corpo da solicitação, fornece uma representação JSON para o [objeto deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md).
+A tabela a seguir mostra as propriedades necessárias ao criar [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo no formato de tenantId_deviceId_requestId|
-|status|String|O status da solicitação de coleção de logs|
+|id|Cadeia de caracteres|O identificador exclusivo na forma de tenantId_deviceId_requestId|
+|status|Cadeia de caracteres|O status da solicitação do conjunto de log|
 |managedDeviceId|Guid|A ID do dispositivo|
-|errorCode|Int64|O código de erro, se houver. Valores válidos-9.22337203685478 E + 18 para 9.22337203685478 E + 18|
-|requestedDateTimeUTC|DateTimeOffset|O DateTime da solicitação|
-|receivedDateTimeUTC|DateTimeOffset|O DateTime que a solicitação foi recebida|
-|initiatedByUserPrincipalName|String|O UPN para quem iniciou a solicitação|
-|expirationDateTimeUTC|DateTimeOffset|O DateTime do vencimento dos logs|
-|size|Duplo|O tamanho dos logs. Valores válidos-1.79769313486232 E + 308 a 1.79769313486232 E + 308|
+|errorCode|Int64|O código de erro, se for o caso. Valores válidos -9.22337203685478E+18 a 9.22337203685478E+18|
+|requestedDateTimeUTC|DateTimeOffset|DateTime da solicitação|
+|receivedDateTimeUTC|DateTimeOffset|DateTime a solicitação foi recebida|
+|initiatedByUserPrincipalName|Cadeia de caracteres|O UPN para quem iniciou a solicitação|
+|expirationDateTimeUTC|DateTimeOffset|DateTime da expiração dos logs|
+|size|Duplo|O tamanho dos logs. Valores válidos -1,79769313486232E+308 a 1.79769313486232E+308|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

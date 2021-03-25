@@ -1,34 +1,34 @@
 ---
 title: Criar managedAllDeviceCertificateState
-description: Criar um novo objeto managedAllDeviceCertificateState.
+description: Crie um novo objeto managedAllDeviceCertificateState.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a3ce5624e9b54d58cfab25d438b3ded71c023a1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2f240bde656806928dd03d478acb26c73bcfe8d0
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49264699"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51155194"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Criar managedAllDeviceCertificateState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .
+Crie um novo [objeto managedAllDeviceCertificateState.](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,30 +47,30 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto managedAllDeviceCertificateState.
+No corpo da solicitação, fornece uma representação JSON para o objeto managedAllDeviceCertificateState.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar managedAllDeviceCertificateState.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|A hora em que o status da revogação foi alterado pela última vez|
-|managedDeviceDisplayName|String|Nome de exibição do dispositivo|
-|userPrincipalName|String|Nome UPN|
-|certificateExpirationDateTime|DateTimeOffset|Data de vencimento do certificado|
-|certificateIssuerName|String|Emissor|
-|certificateThumbprint|String|Impressão Digital|
-|certificateSerialNumber|String|Número de série|
-|certificateSubjectName|String|Nome do assunto do certificado|
-|certificateKeyUsages|Int32|Uso de chave|
-|certificateExtendedKeyUsages|String|Uso avançado de chave|
+|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|A hora em que o status de revogação foi alterado pela última vez|
+|managedDeviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
+|userPrincipalName|Cadeia de caracteres|Nome UPN|
+|certificateExpirationDateTime|DateTimeOffset|Data de expiração do certificado|
+|certificateIssuerName|Cadeia de caracteres|Emissor|
+|certificateThumbprint|Cadeia de caracteres|Impressão Digital|
+|certificateSerialNumber|Cadeia de caracteres|Número de série|
+|certificateSubjectName|Cadeia de caracteres|Nome do assunto do certificado|
+|certificateKeyUsages|Int32|Uso da Chave|
+|certificateExtendedKeyUsages|Cadeia de caracteres|Uso avançado de chave|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

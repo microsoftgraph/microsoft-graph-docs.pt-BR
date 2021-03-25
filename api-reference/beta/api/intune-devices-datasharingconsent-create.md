@@ -1,35 +1,35 @@
 ---
 title: Criar dataSharingConsent
-description: Criar um novo objeto dataSharingConsent.
+description: Crie um novo objeto dataSharingConsent.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f5daca2ade6749e41358a0d2938079b4a88121c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 87e9044fc48f857aa64c75f7a9b5579d8ae7573a
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49229349"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51154424"
 ---
 # <a name="create-datasharingconsent"></a>Criar dataSharingConsent
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
+Crie um novo [objeto dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,24 +47,24 @@ POST /deviceManagement/dataSharingConsents
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto dataSharingConsent.
+No corpo da solicitação, fornece uma representação JSON para o objeto dataSharingConsent.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar dataSharingConsent.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o dataSharingConsent.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de consentimento de compartilhamento de dados|
-|objectdisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
-|granted|Booliano|O Estado concedido para o consentimento de compartilhamento de dados|
-|grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
-|grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
+|id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
+|serviceDisplayName|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|Cadeia de caracteres|The TermsUrl for the data sharing consent|
+|concedido|Booleano|O estado concedido para o consentimento de compartilhamento de dados|
+|grantDateTime|DateTimeOffset|O consentimento de hora foi concedido para essa conta|
+|grantedByUpn|Cadeia de caracteres|O Upn do usuário que concedeu consentimento para essa conta|
+|grantedByUserId|Cadeia de caracteres|UserId do usuário que concedeu consentimento para essa conta|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto dataSharingConsent](../resources/intune-devices-datasharingconsent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
