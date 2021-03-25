@@ -1,37 +1,37 @@
 ---
 title: Criar windowsQualityUpdateCatalogItem
-description: Criar um novo objeto windowsQualityUpdateCatalogItem.
+description: Crie um novo objeto windowsQualityUpdateCatalogItem.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ad143f79bdabc99dadef3009bc10d55263acca1d
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 9d49f8c4140c385a40ee80d00a89b25933c2ed84
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160086"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51156314"
 ---
-# <a name="create-windowsqualityupdatecatalogitem"></a><span data-ttu-id="7cc6b-103">Criar windowsQualityUpdateCatalogItem</span><span class="sxs-lookup"><span data-stu-id="7cc6b-103">Create windowsQualityUpdateCatalogItem</span></span>
+# <a name="create-windowsqualityupdatecatalogitem"></a><span data-ttu-id="ae80f-103">Criar windowsQualityUpdateCatalogItem</span><span class="sxs-lookup"><span data-stu-id="ae80f-103">Create windowsQualityUpdateCatalogItem</span></span>
 
-<span data-ttu-id="7cc6b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7cc6b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ae80f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ae80f-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="7cc6b-105">**Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ae80f-105">**Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ae80f-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7cc6b-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ae80f-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ae80f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7cc6b-107">Criar um novo [objeto windowsQualityUpdateCatalogItem.](../resources/intune-softwareupdate-windowsqualityupdatecatalogitem.md)</span><span class="sxs-lookup"><span data-stu-id="7cc6b-107">Create a new [windowsQualityUpdateCatalogItem](../resources/intune-softwareupdate-windowsqualityupdatecatalogitem.md) object.</span></span>
+<span data-ttu-id="ae80f-107">Crie um novo [objeto windowsQualityUpdateCatalogItem.](../resources/intune-softwareupdate-windowsqualityupdatecatalogitem.md)</span><span class="sxs-lookup"><span data-stu-id="ae80f-107">Create a new [windowsQualityUpdateCatalogItem](../resources/intune-softwareupdate-windowsqualityupdatecatalogitem.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7cc6b-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="7cc6b-108">Prerequisites</span></span>
-<span data-ttu-id="7cc6b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7cc6b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ae80f-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="ae80f-108">Prerequisites</span></span>
+<span data-ttu-id="ae80f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ae80f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7cc6b-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7cc6b-111">Permission type</span></span>|<span data-ttu-id="7cc6b-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="7cc6b-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ae80f-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ae80f-111">Permission type</span></span>|<span data-ttu-id="ae80f-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ae80f-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7cc6b-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7cc6b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7cc6b-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7cc6b-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="7cc6b-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7cc6b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7cc6b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-116">Not supported.</span></span>|
-|<span data-ttu-id="7cc6b-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7cc6b-117">Application</span></span>|<span data-ttu-id="7cc6b-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7cc6b-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="ae80f-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ae80f-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ae80f-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ae80f-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="ae80f-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ae80f-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ae80f-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ae80f-116">Not supported.</span></span>|
+|<span data-ttu-id="ae80f-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ae80f-117">Application</span></span>|<span data-ttu-id="ae80f-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ae80f-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7cc6b-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7cc6b-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ae80f-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ae80f-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,35 +40,35 @@ ms.locfileid: "50160086"
 POST /deviceManagement/windowsUpdateCatalogItems
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7cc6b-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7cc6b-120">Request headers</span></span>
-|<span data-ttu-id="7cc6b-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7cc6b-121">Header</span></span>|<span data-ttu-id="7cc6b-122">Valor</span><span class="sxs-lookup"><span data-stu-id="7cc6b-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ae80f-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ae80f-120">Request headers</span></span>
+|<span data-ttu-id="ae80f-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ae80f-121">Header</span></span>|<span data-ttu-id="ae80f-122">Valor</span><span class="sxs-lookup"><span data-stu-id="ae80f-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7cc6b-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="7cc6b-123">Authorization</span></span>|<span data-ttu-id="7cc6b-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7cc6b-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="7cc6b-125">Accept</span></span>|<span data-ttu-id="7cc6b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7cc6b-126">application/json</span></span>|
+|<span data-ttu-id="ae80f-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="ae80f-123">Authorization</span></span>|<span data-ttu-id="ae80f-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ae80f-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ae80f-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="ae80f-125">Accept</span></span>|<span data-ttu-id="ae80f-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ae80f-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7cc6b-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7cc6b-127">Request body</span></span>
-<span data-ttu-id="7cc6b-128">No corpo da solicitação, fornece uma representação JSON do objeto windowsQualityUpdateCatalogItem.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-128">In the request body, supply a JSON representation for the windowsQualityUpdateCatalogItem object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ae80f-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ae80f-127">Request body</span></span>
+<span data-ttu-id="ae80f-128">No corpo da solicitação, fornece uma representação JSON para o objeto windowsQualityUpdateCatalogItem.</span><span class="sxs-lookup"><span data-stu-id="ae80f-128">In the request body, supply a JSON representation for the windowsQualityUpdateCatalogItem object.</span></span>
 
-<span data-ttu-id="7cc6b-129">A tabela a seguir mostra as propriedades que são necessárias ao criar windowsQualityUpdateCatalogItem.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-129">The following table shows the properties that are required when you create the windowsQualityUpdateCatalogItem.</span></span>
+<span data-ttu-id="ae80f-129">A tabela a seguir mostra as propriedades que são necessárias ao criar windowsQualityUpdateCatalogItem.</span><span class="sxs-lookup"><span data-stu-id="ae80f-129">The following table shows the properties that are required when you create the windowsQualityUpdateCatalogItem.</span></span>
 
-|<span data-ttu-id="7cc6b-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7cc6b-130">Property</span></span>|<span data-ttu-id="7cc6b-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="7cc6b-131">Type</span></span>|<span data-ttu-id="7cc6b-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="7cc6b-132">Description</span></span>|
+|<span data-ttu-id="ae80f-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ae80f-130">Property</span></span>|<span data-ttu-id="ae80f-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="ae80f-131">Type</span></span>|<span data-ttu-id="ae80f-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="ae80f-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7cc6b-133">id</span><span class="sxs-lookup"><span data-stu-id="7cc6b-133">id</span></span>|<span data-ttu-id="7cc6b-134">String</span><span class="sxs-lookup"><span data-stu-id="7cc6b-134">String</span></span>|<span data-ttu-id="7cc6b-135">A ID do item de catálogo. Herdado [de windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span><span class="sxs-lookup"><span data-stu-id="7cc6b-135">The catalog item id. Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span></span>|
-|<span data-ttu-id="7cc6b-136">displayName</span><span class="sxs-lookup"><span data-stu-id="7cc6b-136">displayName</span></span>|<span data-ttu-id="7cc6b-137">String</span><span class="sxs-lookup"><span data-stu-id="7cc6b-137">String</span></span>|<span data-ttu-id="7cc6b-138">O nome de exibição do item de catálogo.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-138">The display name for the catalog item.</span></span> <span data-ttu-id="7cc6b-139">Herdado [de windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span><span class="sxs-lookup"><span data-stu-id="7cc6b-139">Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span></span>|
-|<span data-ttu-id="7cc6b-140">releaseDateTime</span><span class="sxs-lookup"><span data-stu-id="7cc6b-140">releaseDateTime</span></span>|<span data-ttu-id="7cc6b-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7cc6b-141">DateTimeOffset</span></span>|<span data-ttu-id="7cc6b-142">A data em que o item de catálogo foi lançado Herdado de [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span><span class="sxs-lookup"><span data-stu-id="7cc6b-142">The date the catalog item was released Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span></span>|
-|<span data-ttu-id="7cc6b-143">kbArticleId</span><span class="sxs-lookup"><span data-stu-id="7cc6b-143">kbArticleId</span></span>|<span data-ttu-id="7cc6b-144">String</span><span class="sxs-lookup"><span data-stu-id="7cc6b-144">String</span></span>|<span data-ttu-id="7cc6b-145">ID do artigo da base de dados de conhecimento</span><span class="sxs-lookup"><span data-stu-id="7cc6b-145">Knowledge base article id</span></span>|
-|<span data-ttu-id="7cc6b-146">classificação</span><span class="sxs-lookup"><span data-stu-id="7cc6b-146">classification</span></span>|[<span data-ttu-id="7cc6b-147">windowsQualityUpdateClassification</span><span class="sxs-lookup"><span data-stu-id="7cc6b-147">windowsQualityUpdateClassification</span></span>](../resources/intune-softwareupdate-windowsqualityupdateclassification.md)|<span data-ttu-id="7cc6b-148">Classificação da atualização de qualidade.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-148">Classification of the quality update.</span></span> <span data-ttu-id="7cc6b-149">Os valores possíveis são: `all`, `security`, `nonSecurity`.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-149">Possible values are: `all`, `security`, `nonSecurity`.</span></span>|
-|<span data-ttu-id="7cc6b-150">isExpeditable</span><span class="sxs-lookup"><span data-stu-id="7cc6b-150">isExpeditable</span></span>|<span data-ttu-id="7cc6b-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="7cc6b-151">Boolean</span></span>|<span data-ttu-id="7cc6b-152">Sinalizador indicando se a atualização se qualifica para acelerar</span><span class="sxs-lookup"><span data-stu-id="7cc6b-152">Flag indicating if update qualifies for expedite</span></span>|
+|<span data-ttu-id="ae80f-133">id</span><span class="sxs-lookup"><span data-stu-id="ae80f-133">id</span></span>|<span data-ttu-id="ae80f-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ae80f-134">String</span></span>|<span data-ttu-id="ae80f-135">A ID do item de catálogo. Herdado [do windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span><span class="sxs-lookup"><span data-stu-id="ae80f-135">The catalog item id. Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span></span>|
+|<span data-ttu-id="ae80f-136">displayName</span><span class="sxs-lookup"><span data-stu-id="ae80f-136">displayName</span></span>|<span data-ttu-id="ae80f-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ae80f-137">String</span></span>|<span data-ttu-id="ae80f-138">O nome de exibição do item de catálogo.</span><span class="sxs-lookup"><span data-stu-id="ae80f-138">The display name for the catalog item.</span></span> <span data-ttu-id="ae80f-139">Herdado [do windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span><span class="sxs-lookup"><span data-stu-id="ae80f-139">Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span></span>|
+|<span data-ttu-id="ae80f-140">releaseDateTime</span><span class="sxs-lookup"><span data-stu-id="ae80f-140">releaseDateTime</span></span>|<span data-ttu-id="ae80f-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ae80f-141">DateTimeOffset</span></span>|<span data-ttu-id="ae80f-142">A data em que o item de catálogo foi lançado Herdado de [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span><span class="sxs-lookup"><span data-stu-id="ae80f-142">The date the catalog item was released Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)</span></span>|
+|<span data-ttu-id="ae80f-143">kbArticleId</span><span class="sxs-lookup"><span data-stu-id="ae80f-143">kbArticleId</span></span>|<span data-ttu-id="ae80f-144">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ae80f-144">String</span></span>|<span data-ttu-id="ae80f-145">ID do artigo da base de dados de conhecimento</span><span class="sxs-lookup"><span data-stu-id="ae80f-145">Knowledge base article id</span></span>|
+|<span data-ttu-id="ae80f-146">classificação</span><span class="sxs-lookup"><span data-stu-id="ae80f-146">classification</span></span>|[<span data-ttu-id="ae80f-147">windowsQualityUpdateClassification</span><span class="sxs-lookup"><span data-stu-id="ae80f-147">windowsQualityUpdateClassification</span></span>](../resources/intune-softwareupdate-windowsqualityupdateclassification.md)|<span data-ttu-id="ae80f-148">Classificação da atualização de qualidade.</span><span class="sxs-lookup"><span data-stu-id="ae80f-148">Classification of the quality update.</span></span> <span data-ttu-id="ae80f-149">Os valores possíveis são: `all`, `security`, `nonSecurity`.</span><span class="sxs-lookup"><span data-stu-id="ae80f-149">Possible values are: `all`, `security`, `nonSecurity`.</span></span>|
+|<span data-ttu-id="ae80f-150">isExpeditable</span><span class="sxs-lookup"><span data-stu-id="ae80f-150">isExpeditable</span></span>|<span data-ttu-id="ae80f-151">Booleano</span><span class="sxs-lookup"><span data-stu-id="ae80f-151">Boolean</span></span>|<span data-ttu-id="ae80f-152">Sinalizador indicando se a atualização se qualifica para acelerar</span><span class="sxs-lookup"><span data-stu-id="ae80f-152">Flag indicating if update qualifies for expedite</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="7cc6b-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="7cc6b-153">Response</span></span>
-<span data-ttu-id="7cc6b-154">Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [windowsQualityUpdateCatalogItem](../resources/intune-softwareupdate-windowsqualityupdatecatalogitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-154">If successful, this method returns a `201 Created` response code and a [windowsQualityUpdateCatalogItem](../resources/intune-softwareupdate-windowsqualityupdatecatalogitem.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ae80f-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="ae80f-153">Response</span></span>
+<span data-ttu-id="ae80f-154">Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto windowsQualityUpdateCatalogItem](../resources/intune-softwareupdate-windowsqualityupdatecatalogitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ae80f-154">If successful, this method returns a `201 Created` response code and a [windowsQualityUpdateCatalogItem](../resources/intune-softwareupdate-windowsqualityupdatecatalogitem.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7cc6b-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7cc6b-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ae80f-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ae80f-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7cc6b-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7cc6b-156">Request</span></span>
-<span data-ttu-id="7cc6b-157">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ae80f-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ae80f-156">Request</span></span>
+<span data-ttu-id="ae80f-157">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ae80f-157">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 272
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="7cc6b-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="7cc6b-158">Response</span></span>
-<span data-ttu-id="7cc6b-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7cc6b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ae80f-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="ae80f-158">Response</span></span>
+<span data-ttu-id="ae80f-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ae80f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
