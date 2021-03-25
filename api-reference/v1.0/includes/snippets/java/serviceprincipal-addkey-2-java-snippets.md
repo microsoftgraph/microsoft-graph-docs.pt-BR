@@ -1,15 +1,15 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9340ae109720d28ba6892a2fa5715b1827393a7c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 76478007da5046f49547f9e4917c888c7a43c478
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959457"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51209785"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 KeyCredential keyCredential = new KeyCredential();
 keyCredential.type = "X509CertAndPassword";
@@ -22,7 +22,12 @@ passwordCredential.secretText = "MKTr0w1...";
 String proof = "eyJ0eXAiOiJ...";
 
 graphClient.servicePrincipals("{id}")
-    .addKey(keyCredential,passwordCredential,proof)
+    .addKey(ServicePrincipalAddKeyParameterSet
+        .newBuilder()
+        .withKeyCredential(keyCredential)
+        .withPasswordCredential(passwordCredential)
+        .withProof(proof)
+        .build())
     .buildRequest()
     .post();
 

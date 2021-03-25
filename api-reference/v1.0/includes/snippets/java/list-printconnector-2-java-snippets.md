@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7c872527212840af2625518a9bd08881b840a187
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a9dc6271dcf74b562719c22d9d9dc0b6a98a881a
+ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956324"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51209914"
 ---
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IPrintConnectorCollectionWithReferencesPage connectors = graphClient.print().printers("{printerId}").connectors()
+PrintConnectorCollectionWithReferencesPage connectors = graphClient.print().printers("{printerId}").connectors()
     .buildRequest()
     .get();
 
