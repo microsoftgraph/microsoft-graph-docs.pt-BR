@@ -1,37 +1,37 @@
 ---
 title: Ação unassignResourceAccountFromDevice
-description: Retira a atribuição da conta de recurso de um dispositivo de piloto automático.
+description: Desaigna a conta de recurso de um dispositivo Autopilot.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c48fa2312940a59420f1392525953f540175588
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8973f4ee3a2663884374e7a46fecff989156f4ea
+ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49309401"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51153780"
 ---
-# <a name="unassignresourceaccountfromdevice-action"></a><span data-ttu-id="41730-103">Ação unassignResourceAccountFromDevice</span><span class="sxs-lookup"><span data-stu-id="41730-103">unassignResourceAccountFromDevice action</span></span>
+# <a name="unassignresourceaccountfromdevice-action"></a><span data-ttu-id="f35d7-103">Ação unassignResourceAccountFromDevice</span><span class="sxs-lookup"><span data-stu-id="f35d7-103">unassignResourceAccountFromDevice action</span></span>
 
-<span data-ttu-id="41730-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="41730-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f35d7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f35d7-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="41730-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="41730-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f35d7-105">**Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.</span><span class="sxs-lookup"><span data-stu-id="f35d7-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="41730-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="41730-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f35d7-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="f35d7-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="41730-107">Retira a atribuição da conta de recurso de um dispositivo de piloto automático.</span><span class="sxs-lookup"><span data-stu-id="41730-107">Unassigns the resource account from an Autopilot device.</span></span>
+<span data-ttu-id="f35d7-107">Desaigna a conta de recurso de um dispositivo Autopilot.</span><span class="sxs-lookup"><span data-stu-id="f35d7-107">Unassigns the resource account from an Autopilot device.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="41730-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="41730-108">Prerequisites</span></span>
-<span data-ttu-id="41730-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="41730-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f35d7-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="f35d7-108">Prerequisites</span></span>
+<span data-ttu-id="f35d7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f35d7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="41730-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="41730-111">Permission type</span></span>|<span data-ttu-id="41730-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="41730-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f35d7-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f35d7-111">Permission type</span></span>|<span data-ttu-id="f35d7-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f35d7-112">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="41730-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="41730-113">Delegated (work or school account)</span></span>|<span data-ttu-id="41730-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="41730-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="41730-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="41730-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="41730-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="41730-116">Not supported.</span></span>|
-|<span data-ttu-id="41730-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="41730-117">Application</span></span>|<span data-ttu-id="41730-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="41730-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="f35d7-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f35d7-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f35d7-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f35d7-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="f35d7-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f35d7-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f35d7-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f35d7-116">Not supported.</span></span>|
+|<span data-ttu-id="f35d7-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f35d7-117">Application</span></span>|<span data-ttu-id="f35d7-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f35d7-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="41730-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="41730-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f35d7-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f35d7-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,28 +41,28 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignedDevices/{windowsAutopilotDeviceIdentityId}/unassignResourceAccountFromDevice
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="41730-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="41730-120">Request headers</span></span>
-|<span data-ttu-id="41730-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="41730-121">Header</span></span>|<span data-ttu-id="41730-122">Valor</span><span class="sxs-lookup"><span data-stu-id="41730-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f35d7-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f35d7-120">Request headers</span></span>
+|<span data-ttu-id="f35d7-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f35d7-121">Header</span></span>|<span data-ttu-id="f35d7-122">Valor</span><span class="sxs-lookup"><span data-stu-id="f35d7-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="41730-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="41730-123">Authorization</span></span>|<span data-ttu-id="41730-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="41730-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="41730-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="41730-125">Accept</span></span>|<span data-ttu-id="41730-126">application/json</span><span class="sxs-lookup"><span data-stu-id="41730-126">application/json</span></span>|
+|<span data-ttu-id="f35d7-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="f35d7-123">Authorization</span></span>|<span data-ttu-id="f35d7-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f35d7-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f35d7-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="f35d7-125">Accept</span></span>|<span data-ttu-id="f35d7-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f35d7-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="41730-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="41730-127">Request body</span></span>
-<span data-ttu-id="41730-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="41730-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f35d7-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f35d7-127">Request body</span></span>
+<span data-ttu-id="f35d7-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f35d7-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="41730-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="41730-129">Response</span></span>
-<span data-ttu-id="41730-130">Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="41730-130">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="f35d7-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="f35d7-129">Response</span></span>
+<span data-ttu-id="f35d7-130">Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="f35d7-130">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="41730-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="41730-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f35d7-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f35d7-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="41730-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="41730-132">Request</span></span>
-<span data-ttu-id="41730-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="41730-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f35d7-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f35d7-132">Request</span></span>
+<span data-ttu-id="f35d7-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f35d7-133">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/unassignResourceAccountFromDevice
 ```
 
-### <a name="response"></a><span data-ttu-id="41730-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="41730-134">Response</span></span>
-<span data-ttu-id="41730-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="41730-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f35d7-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="f35d7-134">Response</span></span>
+<span data-ttu-id="f35d7-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f35d7-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
