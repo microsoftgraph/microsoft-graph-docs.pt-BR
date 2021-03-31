@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: af2f3b0512ead453413a4fd65aa3337c7d9b2cd0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8ef2e48900484c32669a56c15b88de87dc4710d3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952820"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469049"
 ---
 # <a name="accessreviewinstance-resource-type"></a>Tipo de recurso accessReviewInstance
 
@@ -31,21 +31,20 @@ Cada **accessReviewInstance** contém uma lista de [decisões](accessreviewinsta
 |[Listar accessReviewInstances](../api/accessreviewinstance-list.md) | [Coleção accessReviewInstance](accessreviewinstance.md) | Obter uma lista dos [objetos accessReviewInstance](../resources/accessreviewinstance.md) e suas propriedades. |
 |[Obter accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Retorna accessReviewInstance para um accessReviewScheduleDefinition. Não inclui accessReviewInstanceDecisionItem associado no objeto. |
 |[Listar pendingAccessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [Coleção accessReviewInstance.](accessreviewinstance.md) | Obter todos os recursos de accessReviewInstance pendentes atribuídos ao usuário de chamada. |
-|[Enviar lembrete accessReviewInstance](../api/accessreviewinstance-sendreminder.md) | Nenhum | Envie um lembrete aos revisores de um accessReviewInstance. |
-|[Parar accessReviewInstance](../api/accessreviewinstance-stop.md) | Nenhum | Pare manualmente um accessReviewInstance. |
-|[Aceitar recomendações](../api/accessreviewinstance-acceptrecommendations.md) | Nenhum | Permite que o usuário de chamada aceite a recomendação de decisão para cada acesso NotReviewInstanceDecisionItem em que ele é o revisor para um accessReviewInstance específico. |
-|[Aplicar decisões](../api/accessreviewinstance-applydecisions.md) | Nenhum | Aplicar manualmente a decisão em um accessReviewInstance. |
-
-
+|[Enviar lembrete accessReviewInstance](../api/accessreviewinstance-sendreminder.md) | Nenhum. | Envie um lembrete aos revisores de um accessReviewInstance. |
+|[Parar accessReviewInstance](../api/accessreviewinstance-stop.md) | Nenhum. | Pare manualmente um accessReviewInstance. |
+|[Aceitar recomendações](../api/accessreviewinstance-acceptrecommendations.md) | Nenhum. | Permite que o usuário de chamada aceite a recomendação de decisão para cada acesso NotReviewInstanceDecisionItem em que ele é o revisor para um accessReviewInstance específico. |
+|[Aplicar decisões](../api/accessreviewinstance-applydecisions.md) | Nenhum. | Aplicar manualmente a decisão em um accessReviewInstance. |
+|[Decisões de registro em lotes](../api/accessreviewinstance-batchrecorddecisions.md)|Nenhum|Revise lotes de entidades ou recursos em uma chamada.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |
 | :-------------------------| :---------------------------------- | :---------- |
-| id | Cadeia de caracteres | Identificador exclusivo da instância. |
-| displayName | Cadeia de caracteres | Nome do access [paiReviewScheduleDefinition](accessreviewscheduledefinition.md). |
+| id | String | Identificador exclusivo da instância. |
+| displayName | String | Nome do access [paiReviewScheduleDefinition](accessreviewscheduledefinition.md). |
 | startDateTime | DateTimeOffset | DateTime quando a instância de revisão está agendada para começar. Pode ser no futuro. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
 | endDateTime | DateTimeOffset | DateTime quando a instância de revisão está agendada para terminar. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
-| status | Cadeia de caracteres | Especifica o status de um accessReview. Os estados típicos `Initializing` `NotStarted` incluem , `Starting` , , , , , e `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` .  Somente leitura.|
+| status | String | Especifica o status de um accessReview. Os estados típicos `Initializing` `NotStarted` incluem , `Starting` , , , , , e `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` .  Somente leitura.|
 | escopo | [accessReviewScope](accessreviewscope.md) | Criado com base **no escopo** **e instanceEnumerationScope** no `accessReviewScheduleDefinition` nível. Define o escopo dos usuários revisados em um grupo. No caso de uma revisão de grupo único, o escopo definido no `accessReviewScheduleDefinition` nível se aplica a todas as instâncias. No caso da revisão de todos os grupos, o escopo pode ser diferente para cada grupo. Somente leitura.  | 
 | decisions | [Coleção accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) | Cada usuário revisado em [um accessReviewInstance](#accessreviewinstance-resource-type) tem um item de decisão que representa se seu acesso foi aprovado, negado ou ainda não revisado. |
 | definition |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Há exatamente um **accessReviewScheduleDefinition** associado a cada instância. É a agenda pai da instância, onde as instâncias são criadas para cada recorrência de uma definição de revisão e cada grupo selecionado para revisar pela definição. |

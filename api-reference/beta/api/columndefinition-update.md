@@ -5,12 +5,12 @@ description: Atualizar uma coluna de site, lista ou tipo de conteúdo
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 90f9330fd5cb934ec5cead04cfcc245d46b172df
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0a18f128b92496fa956600557a4a8923efc8d117
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952198"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468904"
 ---
 # <a name="update-columndefinition"></a>Atualizar columnDefinition
 Namespace: microsoft.graph
@@ -136,7 +136,6 @@ Content-type: application/json
     "maxLength": 255
   }
 }
-
 ```
 
   

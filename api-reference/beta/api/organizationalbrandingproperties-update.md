@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kexia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e8a22df2b11240ca69fdc0d179094ec552bee2db
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: af27dcecac0c6dca57323a602387867148b0f5ba
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943921"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469252"
 ---
 # <a name="update-organizationalbrandingproperties"></a>Atualizar organizationalBrandingProperties
 
@@ -51,12 +51,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|backgroundColor|Cadeia de caracteres|Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. A cor primária do logotipo da faixa ou da cor da sua organização é recomendada para ser usada aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF).|
-|backgroundImage|Stream|Imagem que aparece como o plano de fundo da página de logom. .png ou .jpg não maior que 1920x1080 e menor que 300kb. Uma imagem menor reduzirá os requisitos de largura de banda e tornará as cargas de página mais performant.|
-|bannerLogo|Stream|Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. .png ou .jpg não maior que 36x245px. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
-|signInPageText|Cadeia de caracteres|Texto que aparece na parte inferior da caixa de login. Você pode usar isso para comunicar informações adicionais, como o número de telefone para o seu help desk ou uma declaração legal. Este texto deve ser Unicode e não exceder 1024 caracteres.|
-|squareLogo|Stream|Versão quadrada do logotipo da sua empresa. Isso aparece nas experiências OOBE (windows 10 out-of-box) e quando o Windows Autopilot está habilitado para implantação. .png ou .jpg não maior do que 240x240px e no máximo 10kb de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
-|usernameHintText|Cadeia de caracteres|Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres.|
+|backgroundColor|String|Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. A cor primária do logotipo da faixa ou da cor da sua organização é recomendada para ser usada aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF).|
+|backgroundImage|Fluxo|Imagem que aparece como o plano de fundo da página de logom. .png ou .jpg não maior que 1920x1080 e menor que 300kb. Uma imagem menor reduzirá os requisitos de largura de banda e tornará as cargas de página mais performant.|
+|bannerLogo|Fluxo|Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. .png ou .jpg não maior que 36x245px. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
+|signInPageText|String|Texto que aparece na parte inferior da caixa de login. Você pode usar isso para comunicar informações adicionais, como o número de telefone para o seu help desk ou uma declaração legal. Este texto deve ser Unicode e não exceder 1024 caracteres.|
+|squareLogo|Fluxo|Versão quadrada do logotipo da sua empresa. Isso aparece nas experiências OOBE (windows 10 out-of-box) e quando o Windows Autopilot está habilitado para implantação. .png ou .jpg não maior do que 240x240px e no máximo 10kb de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
+|usernameHintText|String|Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres.|
 
 A **propriedade id** é ignorada quando passada.
 
@@ -66,7 +66,7 @@ Se tiver êxito, este método retornará um código de resposta `204 OK`.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-update-default-branding"></a>Exemplo 1: atualizar a identidade visual padrão
-Se a identidade visual já existir, PATCH substituirá apenas as propriedades especificadas, deixando propriedades não especificadas inalteradas. 
+Se a identidade visual já existir, substituirá apenas as propriedades especificadas, deixando propriedades não `PATCH` especificadas inalteradas. 
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
@@ -118,7 +118,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 OK
 ```
 
-Nesse caso, os valores do padrão /branding são atualizados, mas nenhum valor é alterado em qualquer localização.
+Nesse caso, os valores da identidade visual padrão são atualizados, mas nenhum valor é alterado em qualquer localização.
 
 ### <a name="example-2-update-bannerlogo-for-default-branding"></a>Exemplo 2: Atualizar bannerLogo para identidade visual padrão
 A solicitação a seguir atualiza o logotipo da faixa para a identidade visual padrão.
@@ -126,7 +126,6 @@ A solicitação a seguir atualiza o logotipo da faixa para a identidade visual p
 
 Este é um exemplo de solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandingproperties_2"
@@ -138,24 +137,6 @@ Content-Type: image/jpeg
 
 <Image>
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
@@ -171,7 +152,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### <a name="example-3-update-localized-branding"></a>Exemplo 3: atualizar a identidade visual localizada
-Se o header content-Language for especificado, a localização associada ao Content-Language será criada, se ainda não existir e, em seguida, atualizada usando os valores especificados. A identidade visual padrão não foi alterada.
+Se o header **Content-Language** for especificado, a localização associada ao **Content-Language** será criada primeiro se ainda não existir e, em seguida, atualizada usando os valores especificados. A identidade visual padrão não foi alterada.
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
@@ -203,10 +184,10 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-Após essa solicitação, a localização fr é atualizada com o novo valor de backgroundColor, mas nenhuma alteração é feita para o padrão /branding.
+Após essa solicitação, a localização é atualizada com o novo valor de backgroundColor , mas nenhuma alteração é feita para a `fr` identidade visual padrão. 
 
 ### <a name="example-4-replace-default-branding-and-all-localizations"></a>Exemplo 4: Substituir a identidade visual padrão e todas as localizações
-Se a identidade visual já existir, PUT substituirá a identidade visual padrão e quaisquer localizações.
+Se a identidade visual já existir, `PUT` substituirá a identidade visual padrão e quaisquer localizações.
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
@@ -258,7 +239,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-Após essa solicitação, a identidade visual padrão tem apenas o backgroundColor especificado e tem exatamente uma localização com o id fr, também com o conjunto backgroundColor.
+Após essa solicitação, a identidade visual padrão tem apenas o **backgroundColor** especificado e tem exatamente uma localização com a **id** , também com o `fr` conjunto **backgroundColor.**
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

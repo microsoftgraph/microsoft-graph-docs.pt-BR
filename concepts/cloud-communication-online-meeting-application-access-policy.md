@@ -4,12 +4,12 @@ description: Saiba como configurar aplicativos para acessar reuniões online em 
 author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 23f46fec732895d33b2caa08c51493e9b5999b29
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2f80db867829ac2bead2671c0ed6bc184e0e786f
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961836"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468958"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Permitir que os aplicativos acessem reuniões online em nome de um usuário
 
@@ -23,7 +23,7 @@ Essas etapas são específicas para reuniões online e não se aplicam a outros 
 
 Para configurar uma política de acesso a aplicativos e permitir que os aplicativos acessem reuniões online com permissões de aplicativo:
 
-1. Identifique a ID de aplicação do aplicativo (cliente) e as IDs de usuário dos usuários em nome das quais o aplicativo será autorizado a acessar reuniões online.
+1. Identifique a ID do aplicativo (cliente) do aplicativo e as IDs de usuário dos usuários em nome dos quais o aplicativo será autorizado a acessar reuniões online.
 
     - Identifique o ID do aplicativo (cliente) do aplicativo no [portal de registro de aplicativos do Azure](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Identificar a ID de usuário (objeto) do usuário no portal de gerenciamento [de usuários do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)

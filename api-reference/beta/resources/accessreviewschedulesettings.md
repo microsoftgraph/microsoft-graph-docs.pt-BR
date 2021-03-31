@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewScheduleSettings
-description: No recurso de revisões de acesso do Azure AD, as configurações associadas a `accessReviewScheduleSettings` uma série de revisão de acesso.
+description: No recurso de revisões de acesso do Azure AD, as configurações associadas a uma série de revisão `accessReviewScheduleSettings` de acesso.
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3a58ba9a682e443efbc159befaea61b15e3fdc81
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 77ea7d8601df36525aad7a3448aa3b6f031d98d3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133440"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469315"
 ---
 # <a name="accessreviewschedulesettings-resource-type"></a>Tipo de recurso accessReviewScheduleSettings
 
@@ -18,21 +18,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**AccessReviewScheduleSettings** define as configurações de [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md). 
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
+
+O **accessReviewScheduleSettings** define as configurações de [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md). 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade    | Tipo   | Descrição |
 | :---------------| :---------- | :---------- |
-| mailNotificationsEnabled|Boolean | Sinalizador para indicar se os emails estão habilitados/desabilitados.                |
-| reminderNotificationsEnabled|Boolean  | Sinalizador para indicar se os lembretes estão habilitados/desabilitados.   |
-| justificationRequiredOnApproval|Boolean | Sinalizador para indicar se os revisadores são obrigados a fornecer justificativa com sua decisão. |
-| defaultDecisionEnabled|Boolean | Sinalizador para indicar se a decisão padrão está habilitada/desabilitada quando os revisadores não respondem. |
-| defaultDecision|String | Decisão escolhida se `defaultDecisionEnabled` estiver habilitada. Pode ser "Aprovar", "Negar" ou "Recomendação". |
+| mailNotificationsEnabled|Booliano | Sinalizador para indicar se os emails estão habilitados/desabilitados.                |
+| reminderNotificationsEnabled|Booliano  | Sinalizador para indicar se os lembretes estão habilitados/desabilitados.   |
+| justificationRequiredOnApproval|Booliano | Sinalizador para indicar se os revisadores são necessários para fornecer justificativa com sua decisão. |
+| defaultDecisionEnabled|Booliano | Sinalizador para indicar se a decisão padrão está habilitada/desabilitada quando os revisadores não respondem. |
+| defaultDecision|String | Decisão escolhida se `defaultDecisionEnabled` estiver habilitada. Pode ser um de "Aprovar", "Negar" ou "Recomendação". |
 | instanceDurationInDays|Int32 | Duração de cada recorrência de revisão ( `accessReviewInstance` ) em número de dias. |
-| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Configurações detalhadas de recorrência. Usando o objeto de recorrência padrão do Outlook.  |
-| autoApplyDecisionsEnabled|Boolean | Sinalizador para indicar se o recurso de aplicação automática está habilitado. |
-| applyActions|[Coleção accessReviewApplyAction](../resources/accessreviewapplyaction.md) | Campo opcional. Descreve as ações a tomar depois que uma revisão é concluída. Há dois tipos com suporte no momento: `removeAccessApplyAction` (padrão) e `disableAndDeleteUserApplyAction` . O campo só precisa ser especificado no caso de `disableAndDeleteUserApplyAction` . Consulte [accessReviewApplyAction](accessreviewapplyaction.md). |
-| recommendationsEnabled|Boolean | Sinalizador para indicar se as recomendações de decisão estão habilitadas/desabilitadas. |
+| recorrência|[patternedRecurrence](../resources/patternedrecurrence.md) | Configurações detalhadas para recorrência. Usando o objeto de recorrência padrão do Outlook. Observe que dayOfMonth não tem suporte - use a propriedade startDate em recurrenceRange para determinar o dia em que a revisão será iniciada. |
+| autoApplyDecisionsEnabled|Booliano | Sinalizador para indicar se o recurso de aplicação automática está habilitado. |
+| applyActions|[Coleção accessReviewApplyAction](../resources/accessreviewapplyaction.md) | Campo opcional. Descreve as ações a ser realizadas depois que uma revisão é concluída. Há dois tipos com suporte no momento: `removeAccessApplyAction` (padrão) e `disableAndDeleteUserApplyAction` . O campo só precisa ser especificado no caso de `disableAndDeleteUserApplyAction` . Consulte [accessReviewApplyAction](accessreviewapplyaction.md). |
+| recommendationsEnabled|Booliano | Sinalizador para indicar se as recomendações de decisão estão habilitadas/desabilitadas. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

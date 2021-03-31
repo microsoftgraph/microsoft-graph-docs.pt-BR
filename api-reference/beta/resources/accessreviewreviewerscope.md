@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7c8a0644699daf7e204226d89bdd6cab6048888d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 68f353b81b6a14292828d82929a0eeac81d67bc5
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133487"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469154"
 ---
 # <a name="accessreviewreviewerscope-resource-type"></a>Tipo de recurso accessReviewReviewerScope
 
@@ -18,14 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O accessReviewReviewerScope define quem revisará instâncias de um [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Isso é expresso como uma consulta OData, que permite que os revisadores sejam especificados como uma lista estática de usuários (ou seja, usuários específicos, proprietários de grupos, membros do grupo) ou dinamicamente (ou seja, o caso em que cada usuário é revisado por seu gerente). Para criar uma auto-revisão (onde os usuários revisam seu próprio acesso), não forneça aos revisores sobre a criação [de accessReviewScheduleDefinition.](accessreviewscheduledefinition.md)
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
+O accessReviewReviewerScope define quem revisará instâncias de [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Isso é expresso como uma consulta OData, que permite que os revisadores sejam especificados como uma lista estática de usuários (ou seja, usuários específicos, proprietários de grupo, membros do grupo) ou dinamicamente (ou seja, o caso em que cada usuário é revisado por seu gerente). Para criar uma auto-revisão (onde os usuários analisam seu próprio acesso), não forneça aos revisores sobre a criação [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md)
+
+Herda de [accessReviewScope](../resources/accessreviewscope.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |
 | :-------------------------| :---------- | :---------- |
-| consulta | String | A consulta especificando quem será o revistor. Consulte a tabela para ver exemplos. |
-| queryType | String | O tipo de consulta. Exemplos incluem `MicrosoftGraph` e `ARM` . |
+| consulta | String | A consulta especificando quem será o revistor. Consulte tabela para exemplos. |
+| queryType | String | O tipo de consulta. Exemplos incluem `MicrosoftGraph` `ARM` e . |
 | queryRoot | String | No cenário em que os revisadores precisam ser especificados dinamicamente, essa propriedade é usada para indicar a fonte relativa da consulta. Essa propriedade só será necessária se uma consulta relativa (ou seja, ./manager) for especificada. |
 
 ### <a name="supported-queries-for-accessreviewreviewerscope"></a>Consultas com suporte para accessReviewReviewerScope
@@ -34,7 +37,9 @@ O accessReviewReviewerScope define quem revisará instâncias de um [accessRevie
 |--|--|--|--|
 | Proprietário do grupo como revistor | /groups/{group id}/owners |MicrosoftGraph||
 | Usuário específico como revistor | /users/{user id} |MicrosoftGraph||
-| Gerente do usuário que está sendo revisado como revistor | ./manager | MicrosoftGraph |decisões|
+| Gerente do usuário que está sendo revisado como revistor | ./manager | MicrosoftGraph |decisions|
+| Autoavaliação | Lista vazia(Sem revistores) | MicrosoftGraph  |
+
 
 ## <a name="relationships"></a>Relações
 Nenhum

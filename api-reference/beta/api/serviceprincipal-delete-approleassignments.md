@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d16fd569b218c58accded22a2c23b6cb2d0f5b68
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2aa0ccdc0e10bdffac2eb60f7f5af3adb42dccd4
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128481"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469140"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>Excluir um appRoleAssignment concedido a uma entidade de serviço
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um [appRoleAssignment que](../resources/approleassignment.md) uma entidade de serviço recebeu.
+Exclui um [appRoleAssignment](../resources/approleassignment.md) que uma entidade de serviço recebeu.
 
-Funções de aplicativo que são atribuídas a entidades de serviço também são conhecidas como [permissões de aplicativo.](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) Excluir uma atribuição de função de aplicativo para uma entidade de serviço é equivalente a revogar a concessão de permissão somente de aplicativo.
+Funções de aplicativo atribuídas a entidades de serviço também são conhecidas como [permissões de aplicativo.](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) Excluir uma atribuição de função de aplicativo para uma entidade de serviço equivale a revogar a concessão de permissão somente aplicativo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,7 +41,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> Como prática recomendável, recomendamos excluir atribuições de função de aplicativo por meio da relação da entidade de serviço de recurso, em vez da relação do usuário, grupo ou entidade de `appRoleAssignedTo` serviço  `appRoleAssignments` atribuído.
+> Como prática prática, recomendamos excluir atribuições de função de aplicativo por meio da relação da entidade de serviço de recursos, em vez da relação do usuário, grupo ou entidade de `appRoleAssignedTo` serviço  `appRoleAssignments` atribuída.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -118,4 +118,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-

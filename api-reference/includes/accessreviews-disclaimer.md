@@ -3,14 +3,14 @@ author: isabelleatmsft
 ms.topic: include
 ms.date: 02/17/2021
 ms.author: isabelleatmsft
-ms.openlocfilehash: 80986746d2a43cef1482b618c4ea8663ed5ed93b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 70eacf780d235b817c2867af9e78a466cfa56db7
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50500564"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469332"
 ---
 <!-- markdownlint-disable MD041-->
 
 >[!NOTE]
->As APIs de revisão de acesso nesta seção se aplicam a avaliações de acesso em todos os tipos de recursos suportados. No entanto, para revisão de acesso que revisa associações de grupo, consulte [Avaliações](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta)do Access para grupos , que substituirão as APIs de revisão de acesso nesta seção.
+>As APIs de revisão de acesso nesta seção estão sendo substituídas por [avaliações do Access.](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta) As APIs nesta seção não se moverão para v1.0.

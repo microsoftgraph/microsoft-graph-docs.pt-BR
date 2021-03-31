@@ -1,16 +1,16 @@
 ---
 title: Adicionar membro
-description: Adicionar um membro a um grupo do Microsoft 365 ou grupo de segurança por meio da propriedade de navegação **Members** .
+description: Adicione um membro a um grupo ou grupo de segurança do Microsoft 365 por meio da **propriedade de navegação de** membros.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e7e214c23aab13c45abf73e1242aa64ec71bfa3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 188f93c82734c9ae9fe0986114e3c4e4d2bd1772
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964982"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468867"
 ---
 # <a name="add-member"></a>Adicionar membro
 
@@ -18,12 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar um membro a um grupo do Microsoft 365 ou grupo de segurança por meio da propriedade de navegação **Members** .
+Adicione um membro a um grupo ou grupo de segurança do Microsoft 365 por meio da **propriedade de navegação de** membros.
 
 Você pode adicionar usuários, entidades de serviço ou outros grupos. 
 
 > [!Important]
-> Só é possível adicionar usuários aos grupos do Microsoft 365 e segurança gerenciados pela nuvem.
+> + Só é possível adicionar usuários aos grupos do Microsoft 365 e segurança gerenciados pela nuvem.
+> + Não é possível adicionar grupos de segurança aos grupos do Microsoft 365.
+> + Não é possível adicionar grupos do Microsoft 365 a grupos de segurança ou outros grupos do Microsoft 365.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -87,11 +89,11 @@ Content-length: 30
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do `id` objeto [directoryobject](../resources/directoryobject.md), [User](../resources/user.md)ou [Group](../resources/group.md) que você deseja adicionar.
+No corpo da solicitação, fornece uma representação JSON do `id` [objeto directoryObject](../resources/directoryobject.md), [user](../resources/user.md)ou [group](../resources/group.md) que você deseja adicionar.
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

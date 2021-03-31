@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3fcd6bb895a4f1cb36f099269c8414669dc98620
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 5efe85f8d78e11ea5c97799c426bba383300c24a
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201446"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468916"
 ---
 # <a name="update-adminconsentrequestpolicy"></a>Atualizar adminConsentRequestPolicy
 Namespace: microsoft.graph
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.ConsentRequest|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Policy.ReadWrite.ConsentRequest|
+|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
 
 Ao chamar em nome de um usuário, o usuário precisa pertencer à função de diretório [Administrador Global.](/azure/active-directory/roles/permissions-reference)
 
@@ -54,8 +54,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o a
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |isEnabled|Booliano|Especifica se o recurso de solicitação de consentimento do administrador está habilitado ou desabilitado.|
-|notifyReviewers|Booleano|Especifica se os revisadores receberão notificações.|
-|remindersEnabled|Booleano|Especifica se os revisadores receberão emails de lembrete.|
+|notifyReviewers|Booliano|Especifica se os revisadores receberão notificações.|
+|remindersEnabled|Booliano|Especifica se os revisadores receberão emails de lembrete.|
 |requestDurationInDays|Int32|Especifica a duração em que a solicitação está ativa antes de expirar automaticamente se nenhuma decisão for aplicada.|
 |revisadores|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|A lista de revisadores para o consentimento do administrador.|
 

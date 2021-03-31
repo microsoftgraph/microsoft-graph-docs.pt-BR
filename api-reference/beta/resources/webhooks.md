@@ -1,16 +1,16 @@
 ---
 title: Usar a API do Microsoft Graph para acessar as notificações de alteração
-description: A API REST do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações. Para saber mais, incluindo como se inscrever e lidar com as notificações recebidas, confira Configurar notificações para alterações nos dados de usuário.
+description: Entregar notificações de alteração aos clientes.
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: conceptualPageType
-ms.prod: ''
-ms.openlocfilehash: 27a67797830513a951c778e994bc8033ddab5bea
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.prod: change-notifications
+ms.openlocfilehash: 941189d27c01222309a8011fe7701d811ac46a7c
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51030992"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468680"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -24,8 +24,8 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 
 | **Recurso** | **Trajetórias dos recursos com suporte** | **Os dados do recurso podem ser incluídos nas notificações**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Impressão na nuvem [impressora][] | Muda quando um trabalho de impressão está pronto para ser baixado (evento JobFetchable):<br>`/print/printers/{id}/jobs` | Não |
-| Impressão na nuvem [printTaskDefinition][] | Muda quando há um trabalho válido na fila (evento JobStarted) :<br>`/print/printtaskdefinition/{id}/tasks` | Não |
+| Impressão na nuvem [printer][] | Alterações quando um trabalho de impressão está pronto para ser baixado (evento JobFetchable):<br>`/print/printers/{id}/jobs` | Não |
+| Impressão na nuvem [printTaskDefinition][] | Alterações quando há um trabalho válido na fila (evento JobStarted) :<br>`/print/printtaskdefinition/{id}/tasks` | Não |
 | [driveItem][] no OneDrive for Business | Alterações no conteúdo da hierarquia de _qualquer pasta_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Não |
 | [driveItem][] no OneDrive (pessoal) | Alterações no conteúdo da hierarquia de _qualquer pasta_:<br>`/users/{id}/drive/root` | Não |
 | [Grupo][] | Alterações em todos os grupos:<br>`/groups` <br>Alterações em um grupo específico:<br>`/groups/{id}`<br>Mudanças nos proprietários de um grupo específico:<br>`/groups/{id}/owners`<br>Mudanças em membros de um grupo específico:<br>`/groups/{id}/members` | Não |

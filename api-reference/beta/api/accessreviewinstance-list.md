@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 155c77e5a7b7fc8c81c5595dd2d504febd14673f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 59795800be0bf7146262ec82c01265b969e194e1
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439188"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468937"
 ---
 # <a name="list-accessreviewinstance"></a>Listar accessReviewInstance
 
@@ -60,7 +60,7 @@ O exemplo a seguir mostra uma solicitação para recuperar todas as instâncias 
   "name": "list_accessReviewInstance"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-f75e04f34444/instances?$top=100&$skip=0
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/8564a649-4f67-4e09-88e7-55def6530e88/instances?$top=100&$skip=0
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstance-csharp-snippets.md)]
@@ -94,25 +94,31 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('8564a649-4f67-4e09-88e7-55def6530e88')/instances",
+    "@odata.count": 2,
     "value": [
         {
-            "id": "12490cdb-6a18-4c08-ba2c-44442f0a0138",
-            "startDateTime": "2020-09-21T20:03:36Z",
-            "endDateTime": "2020-09-23T20:03:36Z",
-            "status": "NotStarted",
+            "id": "7bc18cf4-3d70-4009-bc8e-a7c5adb30849",
+            "startDateTime": "2021-03-09T23:10:28.83Z",
+            "endDateTime": "2021-03-09T23:10:28.83Z",
+            "status": "Applied",
             "scope": {
-                "query": "/groups/b7a04444-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
-                "queryType": "MicrosoftGraph"
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/v1.0/groups/f661fdd0-f0f7-42c0-8281-e89c6527ac63/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+                "queryType": "MicrosoftGraph",
+                "queryRoot": null
             }
         },
         {
-            "id": "64444761-b89f-4d9c-afb9-fcfc8bb9cf45",
-            "startDateTime": "2020-09-14T20:03:36.74Z",
-            "endDateTime": "2020-09-16T20:03:36.74Z",
-            "status": "Completed",
+            "id": "f1f35945-3f42-4941-9f7b-465e545f6f99",
+            "startDateTime": "2021-03-09T23:10:28.83Z",
+            "endDateTime": "2021-03-09T23:10:28.83Z",
+            "status": "Applied",
             "scope": {
-                "query": "/groups/b7a04444-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
-                "queryType": "MicrosoftGraph"
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/v1.0/groups/f4ac55b3-3b3c-417e-85bd-183bbda3ccf2/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+                "queryType": "MicrosoftGraph",
+                "queryRoot": null
             }
         }
     ]

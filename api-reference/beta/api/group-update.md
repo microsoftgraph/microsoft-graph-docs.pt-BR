@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f52ad13f778891614df3ae45ed2bf12ce29ffb75
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 13d605efafb3d74cbaa78d79fb7fc634168b016a
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944234"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468860"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -50,9 +50,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|O padrão é **false**. Indica se as pessoas externas à empresa podem enviar mensagens para o grupo.|
-|autoSubscribeNewMembers|Boolean|O padrão é **false**. Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email.|
-|description|String|Uma descrição opcional para o grupo. |
+|allowExternalSenders|Boolean|O padrão é `false`. Indica se as pessoas externas à organização podem enviar mensagens para o grupo.|
+|autoSubscribeNewMembers|Boolean|O padrão é `false`. Indica se novos membros adicionados ao grupo serão inscritos automaticamente para receber notificações por email. **autoSubscribeNewMembers** não pode ser quando `true` **subscriptionEnabled** é `false` definido como no grupo.|
+|descrição|String|Uma descrição opcional para o grupo.|
+|descrição|String|Uma descrição opcional para o grupo. |
 |displayName|Cadeia de caracteres|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. |
 |groupTypes|Coleção de cadeias de caracteres|Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver um grupo **unificado** então o grupo será um grupo do Microsoft 365; caso contrário, será um grupo de segurança.  <br><br>Se a coleção incluir **DynamicMembership**, o grupo tem associação dinâmica; caso contrário, a associação é estática. |
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. |
@@ -65,7 +66,7 @@ Como o **recurso de** grupo dá suporte a extensões, você pode usar a operaç�
 
 > **Observação:**
 >
-> - Você pode atualizar o **autoSubscribeNewMembers** especificando-o em sua própria solicitação PATCH, sem incluir as demais propriedades na tabela acima.
+> - Você pode atualizar **allowExternalSenders** e **autoSubscribeNewMembers** especificando-os em sua própria solicitação PATCH, sem incluir as outras propriedades na tabela acima.
 > - Apenas um subconjunto da API de grupo relacionado à administração do grupo principal e ao aplicativo de suporte para gerenciamento às permissões delegadas. Todos os outros membros da API do grupo, inclusive a atualização **autoSubscribeNewMembers**, dão suporte apenas a permissões delegadas. Confira exemplos nos [problemas conhecidos](/graph/known-issues#group).
 > - As regras para atualizar os grupos de segurança habilitados para email no Microsoft Exchange Server podem ser complexas; Para saber mais, confira [Gerenciar grupos de segurança habilitados para email no Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
 
@@ -73,7 +74,7 @@ Como o **recurso de** grupo dá suporte a extensões, você pode usar a operaç�
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta, exceto um código de resposta ao atualizar as seguintes `204 No Content` `200 OK` propriedades: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 
 ## <a name="examples"></a>Exemplos
 

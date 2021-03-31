@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 27b5debdbb9e55eafe55a4c1a7bc66d87b7290cc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 391b50e54c331c3f514bc68089b64f8d1d4fc169
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962662"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469329"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>Tipo de recurso accessReviewScheduleDefinition
 
@@ -31,17 +31,17 @@ Um accessReviewScheduleDefinition contém uma lista de [objetos accessReviewInst
 |[Listar accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md) | [Coleção accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Lista todos os accessReviewScheduleDefinition. Não inclui instâncias de accessReviewInstance associadas em listagem. |
 |[Obter accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Obter um accessReviewScheduleDefinition com uma id especificada. |
 |[Criar accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Crie um novo accessReviewScheduleDefinition. |
-|[Excluir accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Nenhum | Exclua um accessReviewScheduleDefinition com um identificador especificado. |
-|[Atualizar accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Nenhum | Atualizar propriedades de um accessReviewScheduleDefinition com um identificador especificado. |
+|[Excluir accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Nenhum. | Exclua um accessReviewScheduleDefinition com um identificador especificado. |
+|[Atualizar accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Nenhum. | Atualizar propriedades de um accessReviewScheduleDefinition com um identificador especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |
 | :------------------| :-------------- | :---------- |
-| id | Cadeia de caracteres | O identificador exclusivo atribuído ao recurso de uma revisão de acesso.|
-| displayName | Cadeia de caracteres   | Nome da série de revisão de acesso. Obrigatório durante a criação. |
+| id | String | O identificador exclusivo atribuído ao recurso de uma revisão de acesso.|
+| displayName | String   | Nome da série de revisão de acesso. Obrigatório durante a criação. |
 | createdDateTime  |DateTimeOffset  | Timestamp quando a série de revisão foi criada. |
 | lastModifiedDateTime | DateTimeOffset   | Timestamp quando a série de revisão foi modificada pela última vez.|
-| status  |Cadeia de caracteres   | Este campo somente leitura especifica o status de um accessReview. Os estados típicos `Initializing` `NotStarted` incluem , `Starting` , , , , , e `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . |
+| status  |String   | Este campo somente leitura especifica o status de um accessReview. Os estados típicos `Initializing` `NotStarted` incluem , `Starting` , , , , , e `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . |
 | descriptionForAdmins  |cadeia de caracteres  |  Descrição fornecida pelos criadores de revisão para fornecer mais contexto da revisão aos administradores. |
 | descriptionForReviewers |cadeia de caracteres | Descrição fornecida pelos criadores de revisão para fornecer mais contexto da revisão aos revisadores. Os revisadores verão essa descrição no email enviado a eles solicitando sua revisão. |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | Usuário que criou essa revisão. |
@@ -58,14 +58,18 @@ Um accessReviewScheduleDefinition contém uma lista de [objetos accessReviewInst
 |:---------------|:--------|:----------|
 | `instances`               |[Coleção accessReviewInstance](accessreviewinstance.md)         | Se for `accessReviewScheduleDefinition` uma revisão de acesso recorrente, as instâncias representarão cada recorrência. Uma revisão que não se recorre terá exatamente uma instância. As instâncias também representam cada recurso exclusivo sob revisão no `accessReviewScheduleDefinition` . Se uma revisão tiver vários recursos e várias instâncias, cada recurso terá uma instância exclusiva para cada recorrência. |
 
-### <a name="supported-queries-for-accessreviewscheduledefinition"></a>Consultas com suporte para accessReviewScheduleDefinition
+### <a name="supported-search-queries-for-accessreviewscheduledefinition"></a>Consultas de pesquisa com suporte para accessReviewScheduleDefinition
 A seguir, há consultas com suporte em [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md) com base no [accessReviewScope](accessreviewscope.md).
 
 |Cenário| Consulta |
 |--|--|
-| Listar `accessReviewScheduleDefinition` todos os grupos individuais (exclui definições com escopo para todos os grupos do Microsoft 365 com usuários convidados) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups') |
-| Listar todos em um grupo específico (exclui definições com escopo para todos os grupos do `accessReviewScheduleDefinition` Microsoft 365 com usuários convidados) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups/{group id}') |
-| Listar `accessReviewScheduleDefinition` todos os grupos do Microsoft 365 com usuários convidados | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, './members') |
+| Listar `accessReviewScheduleDefinition` todos os grupos individuais (exclui definições com escopo para todos os grupos do Microsoft 365 com usuários convidados) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups') |
+| Listar todos em um grupo específico (exclui definições com escopo para todos os grupos do `accessReviewScheduleDefinition` Microsoft 365 com usuários convidados) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups/{group id}') |
+| Listar `accessReviewScheduleDefinition` todos os grupos do Microsoft 365 com usuários convidados | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members') |
+| Listar `accessReviewScheduleDefinition` todos em um pacote de acesso | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'accessPackageAssignments') |
+| Listar `accessReviewScheduleDefinition` todas as entidades de serviço atribuídas à função privilegiada | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'roleAssignmentScheduleInstances') |
+
+
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

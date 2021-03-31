@@ -5,12 +5,12 @@ description: Listar colunas em um tipo de conteúdo.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8e1327f092816fd6ef2d5db88f03af6e3e4973bd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 49a47efbeb59869dfc4f1b83946f9b6a8f178924
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946976"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468902"
 ---
 # <a name="list-columns-in-a-content-type"></a>Listar colunas em um tipo de conteúdo
 Namespace: microsoft.graph
@@ -44,7 +44,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ```http
-
 GET /sites/{site-id}/contentTypes/{contentType-id}/columns
 GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
 ```
@@ -112,39 +111,39 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "description": "",
-      "displayName": "Title",
-      "hidden": false,
-      "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
-      "indexed": false,
-      "name": "Title",
-      "readOnly": false,
-      "required": false,
-      "text": {
-        "allowMultipleLines": false,
-        "appendChangesToExistingText": false,
-        "linesForEditing": 0,
-        "maxLength": 255
+   "value":[
+      {
+         "description":"",
+         "displayName":"Title",
+         "hidden":false,
+         "id":"99ddcf45-e2f7-4f17-82b0-6fba34445103",
+         "indexed":false,
+         "name":"Title",
+         "readOnly":false,
+         "required":false,
+         "text":{
+            "allowMultipleLines":false,
+            "appendChangesToExistingText":false,
+            "linesForEditing":0,
+            "maxLength":255
+         }
+      },
+      {
+         "description":"",
+         "displayName":"Address",
+         "id":"11dfef35-e2f7-4f17-82b0-6fba34445103",
+         "indexed":false,
+         "name":"Address",
+         "readOnly":false,
+         "required":false,
+         "text":{
+            "allowMultipleLines":false,
+            "appendChangesToExistingText":false,
+            "linesForEditing":0,
+            "maxLength":255
+         }
       }
-    },
-    {
-      "description": "",
-      "displayName": "Address",
-      "id": "11dfef35-e2f7-4f17-82b0-6fba34445103",
-      "indexed": false,
-      "name": "Address",
-      "readOnly": false,
-      "required": false,
-      "text": {
-        "allowMultipleLines": false,
-        "appendChangesToExistingText": false,
-        "linesForEditing": 0,
-        "maxLength": 255
-      }
-    }
-  ]
+   ]
 }
 ```
 

@@ -1,16 +1,16 @@
 ---
 title: Obter locatedRiskEvent
-description: Recupere as propriedades e os relacionamentos de um objeto locatedriskevent.
+description: Recupere as propriedades e as relações de um objeto locatedriskevent.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: davidmu1
-ms.openlocfilehash: bf1f17524609e7a94e019019db37ebb9d45d91a0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: identity-and-access
+author: cloudhandler
+ms.openlocfilehash: b366859d98ece78e8a8af3742bb82612a1fd413d
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053675"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469189"
 ---
 # <a name="get-locatedriskevent"></a>Obter locatedRiskEvent
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto locatedriskevent.
+Recupere as propriedades e as relações de um objeto locatedriskevent.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -45,7 +45,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [locatedRiskEvent](../resources/locatedriskevent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e [localizará o objetoRiskEvent](../resources/locatedriskevent.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

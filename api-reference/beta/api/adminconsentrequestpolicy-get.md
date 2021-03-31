@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3c50b0a3197e682d00688ab8ec3527ed279aefa8
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 458c2b977f9c5f488b3a7b31d599b0c398993cfa
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201450"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468923"
 ---
 # <a name="get-adminconsentrequestpolicy"></a>Obter adminConsentRequestPolicy
 Namespace: microsoft.graph
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.ConsentRequest|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Policy.Read.All, Policy.ReadWrite.ConsentRequest|
+|Delegado (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All|
 
 Ao chamar em nome de um usuário, o usuário precisa pertencer a uma das seguintes funções de diretório. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
 + Administrador global

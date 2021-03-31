@@ -1,16 +1,16 @@
 ---
 title: Excluir um appRoleAssignment concedido a um usuário
-description: Exclua um appRoleAssignment que tenha sido concedido a um usuário.
+description: Exclua um appRoleAssignment que foi concedido a um usuário.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: b04483ea90a3018224686340796211a94689a882
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9695ce33bb8294f2a78e2cddd3557debbdf599d1
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130379"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469483"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-user"></a>Excluir um appRoleAssignment concedido a um usuário
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Exclua um appRoleAssignment](../resources/approleassignment.md) que tenha sido concedido a um usuário.
+[Exclua um appRoleAssignment](../resources/approleassignment.md) que foi concedido a um usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -39,7 +39,7 @@ DELETE /users/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> Como prática recomendável, recomendamos excluir atribuições de função de aplicativo por meio da relação da entidade de serviço de recurso, em vez da relação do usuário, grupo ou entidade de `appRoleAssignedTo` serviço  `appRoleAssignments` atribuído.
+> Como prática prática, recomendamos excluir atribuições de função de aplicativo por meio da relação da entidade de serviço de recursos, em vez da relação do usuário, grupo ou entidade de `appRoleAssignedTo` serviço  `appRoleAssignments` atribuída.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -116,5 +116,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
 

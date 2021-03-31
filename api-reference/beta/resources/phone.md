@@ -4,13 +4,13 @@ description: Representa um número de telefone.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: directory-management
-author: davidmu1
-ms.openlocfilehash: 7c6ee74a588540470ceeffcc37b51e29e7e4f597
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: Jumaodhiss
+ms.openlocfilehash: 00867d2d3725b4dd0607c87771019f85ab1058b6
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130862"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468839"
 ---
 # <a name="phone-resource-type"></a>tipo de recurso de telefone
 
@@ -24,8 +24,8 @@ Representa um número de telefone.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|number|string|O número de telefone.|
-|type|String|O tipo de número de telefone. Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|number|cadeia de caracteres|O número de telefone.|
+|tipo|String|O tipo de número de telefone. Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

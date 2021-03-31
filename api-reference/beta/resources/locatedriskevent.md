@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso locatedRiskEvent
-description: 'Um evento de risco detectado pela proteção de identidade do Azure Active Directory com base nos dados do local. Os tipos de eventos de risco localizados incluem:'
+description: 'Um evento de risco detectado pela Proteção de Identidade do Azure Active Directory que se baseia nos dados de localização. Os tipos de eventos de risco localizados incluem:'
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: 461f20233e92edca48b9dd51fa417b33ab9f386c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 902dc864ea16bd677d0499711faa078131ca015d
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404669"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469455"
 ---
 # <a name="locatedriskevent-resource-type"></a>tipo de recurso locatedRiskEvent
 
@@ -18,35 +18,35 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection) com base nos dados do local. Os tipos de eventos de risco localizados incluem:
-* [entradas de endereços IP anônimos](anonymousipriskevent.md)
-* [entradas de dispositivos infectados por malware](malwareriskevent.md)
-* [impossível viajar para locais atypical](impossibletravelriskevent.md)
-* [entradas de endereços IP suspeitos](suspiciousipriskevent.md)
-* [entradas de locais desconhecidos](unfamiliarlocationriskevent.md) As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](/azure/active-directory/identity-protection/overview-identity-protection).
+Um evento de risco detectado pela Proteção de Identidade [do Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection) que se baseia nos dados de localização. Os tipos de eventos de risco localizados incluem:
+* [entrar de endereços IP anônimos](anonymousipriskevent.md)
+* [entrar de dispositivos infectados por malware](malwareriskevent.md)
+* [viagem impossível para locais atípicos](impossibletravelriskevent.md)
+* [entrar de endereços IP suspeitos](suspiciousipriskevent.md)
+* [entrar de locais desconhecidos](unfamiliarlocationriskevent.md) Informações completas sobre eventos de risco podem ser encontradas na documentação da Proteção de Identidade do [Azure AD.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter locatedRiskEvent](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |Leia as propriedades e os relacionamentos do objeto locatedRiskEvent.|
+|[Obter locatedRiskEvent](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |Leia propriedades e relações do objeto locatedRiskEvent.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
-|createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
-|id|string| Somente leitura|
-|ipAddress|string| O endereço IP do logon|
-|location|cadeia de caracteres| O local anexado ao endereço IP do logon|
+|createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior ou igual ao tempo de data do evento de risco em si. Essa é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
+|id|cadeia de caracteres| Somente leitura|
+|ipAddress|cadeia de caracteres| O endereço IP da assinatura|
+|location|cadeia de caracteres| O local anexado ao endereço IP da login|
 |riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
-|riskEventStatus|string| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|riskEventStatus|cadeia de caracteres| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
-|riskEventType|string| O tipo de risco|
-|userDisplayName|string| O nome do usuário em risco|
-|userId|cadeia de caracteres| A identificação do usuário em risco|
-|userPrincipalName|string| O nome principal de usuário do usuário em risco|
+|riskEventType|cadeia de caracteres| O tipo de risco|
+|userDisplayName|cadeia de caracteres| O nome do usuário em risco|
+|userId|cadeia de caracteres| A id do usuário em risco|
+|userPrincipalName|string| O nome principal do usuário em risco|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
