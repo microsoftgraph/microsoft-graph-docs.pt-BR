@@ -1,65 +1,65 @@
 ---
 title: Atualizar plannertaskdetails
-description: Atualize as propriedades do objeto **plannertaskdetails** .
+description: Atualize as propriedades do **objeto plannertaskdetails.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 1a73baf5e1978a76985f52ad1215e2686cf8798f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 02c558b1a28ad4348f28c3f7738bf6e2b21ddd3e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095755"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473330"
 ---
-# <a name="update-plannertaskdetails"></a><span data-ttu-id="f0483-103">Atualizar plannertaskdetails</span><span class="sxs-lookup"><span data-stu-id="f0483-103">Update plannertaskdetails</span></span>
+# <a name="update-plannertaskdetails"></a><span data-ttu-id="0bd9e-103">Atualizar plannertaskdetails</span><span class="sxs-lookup"><span data-stu-id="0bd9e-103">Update plannertaskdetails</span></span>
 
-<span data-ttu-id="f0483-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f0483-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0bd9e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0bd9e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f0483-105">Atualize as propriedades do objeto **plannertaskdetails** .</span><span class="sxs-lookup"><span data-stu-id="f0483-105">Update the properties of **plannertaskdetails** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f0483-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f0483-106">Permissions</span></span>
-<span data-ttu-id="f0483-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f0483-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0bd9e-105">Atualize as propriedades do **objeto plannertaskdetails.**</span><span class="sxs-lookup"><span data-stu-id="0bd9e-105">Update the properties of **plannertaskdetails** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0bd9e-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="0bd9e-106">Permissions</span></span>
+<span data-ttu-id="0bd9e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0bd9e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f0483-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f0483-109">Permission type</span></span>      | <span data-ttu-id="f0483-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f0483-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0bd9e-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0bd9e-109">Permission type</span></span>      | <span data-ttu-id="0bd9e-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0bd9e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f0483-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f0483-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f0483-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f0483-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f0483-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f0483-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0483-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f0483-114">Not supported.</span></span>    |
-|<span data-ttu-id="f0483-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f0483-115">Application</span></span> | <span data-ttu-id="f0483-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f0483-116">Not supported.</span></span> |
+|<span data-ttu-id="0bd9e-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0bd9e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0bd9e-112">Tasks.ReadWrite, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0bd9e-112">Tasks.ReadWrite, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="0bd9e-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0bd9e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0bd9e-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-114">Not supported.</span></span>    |
+|<span data-ttu-id="0bd9e-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0bd9e-115">Application</span></span> | <span data-ttu-id="0bd9e-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f0483-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f0483-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0bd9e-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0bd9e-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/{id}/details
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="f0483-118">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="f0483-118">Optional request headers</span></span>
-| <span data-ttu-id="f0483-119">Nome</span><span class="sxs-lookup"><span data-stu-id="f0483-119">Name</span></span>       | <span data-ttu-id="f0483-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="f0483-120">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="0bd9e-118">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="0bd9e-118">Optional request headers</span></span>
+| <span data-ttu-id="0bd9e-119">Nome</span><span class="sxs-lookup"><span data-stu-id="0bd9e-119">Name</span></span>       | <span data-ttu-id="0bd9e-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="0bd9e-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="f0483-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="f0483-121">Authorization</span></span>  | <span data-ttu-id="f0483-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f0483-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f0483-124">If-Match</span><span class="sxs-lookup"><span data-stu-id="f0483-124">If-Match</span></span>  | <span data-ttu-id="f0483-125">Último valor de ETag conhecido para o **plannerTaskDetails** a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="f0483-125">Last known ETag value for the **plannerTaskDetails** to be updated.</span></span> <span data-ttu-id="f0483-126">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f0483-126">Required.</span></span>|
+| <span data-ttu-id="0bd9e-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="0bd9e-121">Authorization</span></span>  | <span data-ttu-id="0bd9e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0bd9e-124">If-Match</span><span class="sxs-lookup"><span data-stu-id="0bd9e-124">If-Match</span></span>  | <span data-ttu-id="0bd9e-125">Último valor ETag conhecido para o **plannerTaskDetails** a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-125">Last known ETag value for the **plannerTaskDetails** to be updated.</span></span> <span data-ttu-id="0bd9e-126">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-126">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f0483-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f0483-127">Request body</span></span>
-<span data-ttu-id="f0483-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="f0483-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0bd9e-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0bd9e-127">Request body</span></span>
+<span data-ttu-id="0bd9e-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="f0483-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f0483-131">Property</span></span>     | <span data-ttu-id="f0483-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="f0483-132">Type</span></span>   |<span data-ttu-id="f0483-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="f0483-133">Description</span></span>|
+| <span data-ttu-id="0bd9e-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0bd9e-131">Property</span></span>     | <span data-ttu-id="0bd9e-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="0bd9e-132">Type</span></span>   |<span data-ttu-id="0bd9e-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="0bd9e-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f0483-134">verificação</span><span class="sxs-lookup"><span data-stu-id="f0483-134">checklist</span></span>|[<span data-ttu-id="f0483-135">plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="f0483-135">plannerChecklistItems</span></span>](../resources/plannerchecklistitems.md)|<span data-ttu-id="f0483-136">A coleção de itens de lista de verificação na tarefa.</span><span class="sxs-lookup"><span data-stu-id="f0483-136">The collection of checklist items on the task.</span></span>|
-|<span data-ttu-id="f0483-137">description</span><span class="sxs-lookup"><span data-stu-id="f0483-137">description</span></span>|<span data-ttu-id="f0483-138">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f0483-138">String</span></span>|<span data-ttu-id="f0483-139">Descrição da tarefa</span><span class="sxs-lookup"><span data-stu-id="f0483-139">Description of the task</span></span>|
-|<span data-ttu-id="f0483-140">previewType</span><span class="sxs-lookup"><span data-stu-id="f0483-140">previewType</span></span>|<span data-ttu-id="f0483-141">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f0483-141">string</span></span>|<span data-ttu-id="f0483-142">Isso define o tipo de visualização que aparece na tarefa.</span><span class="sxs-lookup"><span data-stu-id="f0483-142">This sets the type of preview that shows up on the task.</span></span> <span data-ttu-id="f0483-143">Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`.</span><span class="sxs-lookup"><span data-stu-id="f0483-143">Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.</span></span> <span data-ttu-id="f0483-144">Quando definido para `automatic` a visualização exibida é escolhido pelo aplicativo que está exibindo a tarefa.</span><span class="sxs-lookup"><span data-stu-id="f0483-144">When set to `automatic` the displayed preview is chosen by the app viewing the task.</span></span>|
-|<span data-ttu-id="f0483-145">Referencie</span><span class="sxs-lookup"><span data-stu-id="f0483-145">references</span></span>|[<span data-ttu-id="f0483-146">plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="f0483-146">plannerExternalReferences</span></span>](../resources/plannerexternalreferences.md)|<span data-ttu-id="f0483-147">A coleção de referências na tarefa.</span><span class="sxs-lookup"><span data-stu-id="f0483-147">The collection of references on the task.</span></span>|
+|<span data-ttu-id="0bd9e-134">checklist</span><span class="sxs-lookup"><span data-stu-id="0bd9e-134">checklist</span></span>|[<span data-ttu-id="0bd9e-135">plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="0bd9e-135">plannerChecklistItems</span></span>](../resources/plannerchecklistitems.md)|<span data-ttu-id="0bd9e-136">A coleção de itens de lista de verificação na tarefa.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-136">The collection of checklist items on the task.</span></span>|
+|<span data-ttu-id="0bd9e-137">descrição</span><span class="sxs-lookup"><span data-stu-id="0bd9e-137">description</span></span>|<span data-ttu-id="0bd9e-138">String</span><span class="sxs-lookup"><span data-stu-id="0bd9e-138">String</span></span>|<span data-ttu-id="0bd9e-139">Descrição da tarefa</span><span class="sxs-lookup"><span data-stu-id="0bd9e-139">Description of the task</span></span>|
+|<span data-ttu-id="0bd9e-140">previewType</span><span class="sxs-lookup"><span data-stu-id="0bd9e-140">previewType</span></span>|<span data-ttu-id="0bd9e-141">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="0bd9e-141">string</span></span>|<span data-ttu-id="0bd9e-142">Isso define o tipo de visualização que aparece na tarefa.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-142">This sets the type of preview that shows up on the task.</span></span> <span data-ttu-id="0bd9e-143">Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-143">Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.</span></span> <span data-ttu-id="0bd9e-144">Quando definido para `automatic` a visualização exibida, é escolhido pelo aplicativo exibindo a tarefa.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-144">When set to `automatic` the displayed preview is chosen by the app viewing the task.</span></span>|
+|<span data-ttu-id="0bd9e-145">referências</span><span class="sxs-lookup"><span data-stu-id="0bd9e-145">references</span></span>|[<span data-ttu-id="0bd9e-146">plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="0bd9e-146">plannerExternalReferences</span></span>](../resources/plannerexternalreferences.md)|<span data-ttu-id="0bd9e-147">A coleção de referências na tarefa.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-147">The collection of references on the task.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f0483-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="f0483-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0bd9e-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="0bd9e-148">Response</span></span>
 
-<span data-ttu-id="f0483-149">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerTaskDetails](../resources/plannertaskdetails.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f0483-149">If successful, this method returns a `200 OK` response code and updated [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.</span></span>
+<span data-ttu-id="0bd9e-149">Se tiver êxito, este método retornará `204 No Content` resposta e conteúdo vazio.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-149">If successful, this method returns `204 No Content` response and empty content.</span></span> <span data-ttu-id="0bd9e-150">Se a solicitação especificar o header com preferência, este método retornará um código de resposta e o objeto `Prefer` `return=representation` `200 OK` [plannerTaskDetails](../resources/plannertaskdetails.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-150">If the request specifies `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and updated [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.</span></span>
 
-<span data-ttu-id="f0483-p106">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="f0483-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="0bd9e-p107">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="0bd9e-p107">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="f0483-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f0483-153">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f0483-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f0483-154">Request</span></span>
-<span data-ttu-id="f0483-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f0483-155">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0bd9e-154">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0bd9e-154">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0bd9e-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0bd9e-155">Request</span></span>
+<span data-ttu-id="0bd9e-156">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-156">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f0483-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="f0483-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0bd9e-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="0bd9e-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannertaskdetails"
@@ -68,6 +68,7 @@ PATCH /planner/tasks/{id}/details
 PATCH https://graph.microsoft.com/beta/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
 Content-type: application/json
 Content-length: 857
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
@@ -99,18 +100,18 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="f0483-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f0483-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0bd9e-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0bd9e-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertaskdetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="f0483-158">C#</span><span class="sxs-lookup"><span data-stu-id="f0483-158">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0bd9e-159">C#</span><span class="sxs-lookup"><span data-stu-id="0bd9e-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannertaskdetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f0483-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="f0483-159">Response</span></span>
-<span data-ttu-id="f0483-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f0483-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0bd9e-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="0bd9e-160">Response</span></span>
+<span data-ttu-id="0bd9e-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0bd9e-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
