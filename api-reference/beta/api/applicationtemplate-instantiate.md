@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bc94c8abe1de8d45324fc6ad65e44e7c1329c3f5
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d0a3d39d7903b3d7870d5b71fa821bd7f7ad3b6b
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471527"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473259"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate: instaurá-lo
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegada (conta corporativa ou de estudante)     | Application.ReadWrite.All, Directory.ReadWrite.All |
 | Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Application.ReadWrite.All, Directory.ReadWrite.All |
+| Aplicativo                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|Cadeia de caracteres|Nome personalizado do aplicativo|
+|displayName|String|Nome personalizado do aplicativo|
 
 ## <a name="response"></a>Resposta
 

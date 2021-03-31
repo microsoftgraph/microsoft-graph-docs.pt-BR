@@ -3,14 +3,14 @@ title: Obter microsoftAuthenticatorAuthenticationMethodConfiguration
 description: Leia as propriedades e as relações de um objeto microsoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ab22fdac70f4d7101a8610a5a96ca5bdfa84d943
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: c8a7067384e15b1105f1111290257fb61b84ece8
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202862"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469168"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a>Obter microsoftAuthenticatorAuthenticationMethodConfiguration
 Namespace: microsoft.graph

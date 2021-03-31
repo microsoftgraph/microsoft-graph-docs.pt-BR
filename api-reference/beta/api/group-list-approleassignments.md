@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: cd5afbbd17669eab5e8db9461626f50c75a5e976
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 16cc5012db3bfd1fde2705974afa6fe23978b90e
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435784"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468881"
 ---
 # <a name="list-approleassignments-granted-to-a-group"></a>Listar appRoleAssignments concedido a um grupo
 
@@ -59,7 +59,7 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e uma c
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de uma solicitação para recuperar as funções de aplicativo que foram atribuídas a um grupo.
+O exemplo a seguir mostra uma solicitação para recuperar as funções de aplicativo que foram atribuídas a um grupo.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -114,7 +114,7 @@ Content-type: application/json
       "id": "pNl5diMjzUS1wmc-yI2LEkGgWqFFrFdLhG2Ly2CysL4",
       "deletedDateTime": null,
       "appRoleId": "00000000-0000-0000-0000-000000000000",
-      "createdDateTime": "2021-02-19T17:55:08.3369542Z",
+      "creationTimestamp": "2021-02-19T17:55:08.3369542Z",
       "principalDisplayName": "Young techmakers",
       "principalId": "7679d9a4-2323-44cd-b5c2-673ec88d8b12",
       "principalType": "Group",
@@ -138,5 +138,4 @@ Content-type: application/json
   ]
 }
 -->
-
 

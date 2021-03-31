@@ -3,14 +3,14 @@ title: Excluir emailAuthenticationMethodConfiguration
 description: Exclui um objeto emailAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c8b83a955e7b5df880f265a4531c9fc5385b13b9
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 128148d5402d6ddcd2c95bccf17da7d6cbf379bf
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200858"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469294"
 ---
 # <a name="delete-emailauthenticationmethodconfiguration"></a>Excluir emailAuthenticationMethodConfiguration
 

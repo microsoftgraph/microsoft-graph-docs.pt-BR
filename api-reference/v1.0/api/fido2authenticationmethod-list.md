@@ -3,14 +3,14 @@ title: Listar fido2AuthenticationMethod
 description: Recupere uma lista dos objetos fido2AuthenticationMethod e suas propriedades.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c9c735a12bba47baaddcfbed0359a3f794c473b8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 166ac533d85e43fdc413f614ce848cdbdb5c56e7
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964589"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469266"
 ---
 # <a name="list-fido2authenticationmethod"></a>Listar fido2AuthenticationMethod
 Namespace: microsoft.graph

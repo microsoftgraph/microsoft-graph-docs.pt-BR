@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso resourceData
-description: Representa os dados de recursos anexados à notificação de alteração enviada ao Assinante.
+title: Tipo de recurso resourceData
+description: Representa os dados de resouce anexados à notificação de alteração enviada ao assinante.
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: resourcePageType
-ms.prod: non-product-specific
-ms.openlocfilehash: 29fb3d93db939ec077444c367d74aadc7cd751fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: change-notifications
+ms.openlocfilehash: d852268ee1a007b60014a224b34d12f25100fe8c
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967223"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51467964"
 ---
-# <a name="resourcedata-resource-type"></a>tipo de recurso resourceData
+# <a name="resourcedata-resource-type"></a>Tipo de recurso resourceData
 
 Namespace: microsoft.graph
 
-Representa os dados de recursos anexados à notificação de alteração enviada ao Assinante.
+Representa os dados de resouce anexados à notificação de alteração enviada ao assinante.
 
-Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).
+Para obter detalhes, confira [Usar a API do Microsoft Graph para receber notificações de alteração](webhooks.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Nenhum.
 
@@ -35,7 +35,7 @@ Para recursos do Outlook, **resourceData** contém os seguintes campos:
 | @odata.etag | string | A marca da entidade HTTP que representa a versão do objeto. |
 | id | string | O identificador do objeto. |
 
-> **Observação:** O `id` valor fornecido em **resourceData** é válido no momento em que a notificação de alteração foi gerada. Algumas ações, como mover uma mensagem para outra pasta podem resultar na `id` não mais ser válida quando a notificação de alteração for processada.
+> **Observação:** O `id` valor fornecido em **resourceData** é válido no momento em que a notificação de alteração foi gerada. Algumas ações, como mover uma mensagem para outra pasta, podem resultar na não validade quando a notificação `id` de alteração for processada.
 
 ## <a name="relationships"></a>Relações
 

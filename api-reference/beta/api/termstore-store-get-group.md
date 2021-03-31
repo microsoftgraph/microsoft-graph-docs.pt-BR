@@ -5,27 +5,27 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e13a7d3f79da8227e0599d30182ea30e6799ed96
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 86a96855c330e581e98da902b5e38f16cc857ec9
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961326"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473294"
 ---
 # <a name="get-group"></a>Obter grupo
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto group.](../resources/termstore-group.md)
+Leia as propriedades e as relações de um objeto de grupo de armazenamento [de](../resources/termstore-group.md) termos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) | TermStore.Read.All, TermStore.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | TermStore.Read.All, TermStore.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 
@@ -50,11 +50,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, esse método retorna um código de resposta `200 OK` e um objeto [group](../resources/termstore-group.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e um objeto [microsoft.graph.termStore.group](../resources/termstore-group.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-get-a-termstore-group"></a>Exemplo 1: Obter um grupo termStore
+
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -84,9 +86,7 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}
 
 ---
 
-
-
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -106,6 +106,43 @@ Content-Type: application/json
   "scope" : "global",
   "id": "1FFD3F87-9464-488A-A0EC-8FB90911182C",
   "displayName": "myGroup"  
+}
+```
+### <a name="example-2-get-a-termstore-group-and-its-parent-site-id"></a>Exemplo 2: Obter um grupo termStore e sua ID de site pai
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/termStore/groups/{groupId}?$select=*,parentSiteId
+```
+
+#### <a name="response"></a>Resposta
+
+**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.group"
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "createdDateTime": "2019-06-21T20:01:37Z",
+  "description": "My term group",
+  "scope" : "global",
+  "id": "1FFD3F87-9464-488A-A0EC-8FB90911182C",
+  "displayName": "myGroup",
+  "parentSiteId": "microsoft.sharepoint.com,05259ba9-25a8-4c93-a9a9-f995ef1fc51f,a785ad58-1d57-4f8a-aa71-77170459bd0d"
 }
 ```
 

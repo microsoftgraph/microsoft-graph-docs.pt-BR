@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 501290407b08e8fc6f461de5f7ec446dab53bccd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e5d1c03a4c4c5fb47f63640993705fa62709d47c
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945740"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51472188"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -97,6 +97,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | categorias |Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulável.|
 | tokenEncryptionKeyId |Guid|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD criptografa todos os tokens emitidos usando a chave para a qual essa propriedade aponta. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Especifica o fornecedor verificado para o aplicativo.|
+| Nome único | Cadeia de caracteres | O identificador exclusivo que pode ser atribuído a um aplicativo como um identificador alternativo. Imutável. Somente leitura. |
 | web |[webApplication](webapplication.md)| Especifica configurações para um aplicativo Web. |
 
 ### <a name="signinaudience-values"></a>signInAudience values
@@ -161,6 +162,7 @@ Veja a seguir uma representação JSON do recurso.
   "signInAudience": "String",
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
+  "uniqueName": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }

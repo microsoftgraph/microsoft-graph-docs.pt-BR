@@ -3,14 +3,14 @@ title: Obter windowsHelloForBusinessAuthenticationMethod
 description: Leia as propriedades e as relações de um objeto windowsHelloForBusinessAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9d24d3200574551601f3d7beb65ce299de505759
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 9aa247474108cf9ac3351e7f55374fd7b95c5c69
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202174"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51467936"
 ---
 # <a name="get-windowshelloforbusinessauthenticationmethod"></a>Obter windowsHelloForBusinessAuthenticationMethod
 Namespace: microsoft.graph

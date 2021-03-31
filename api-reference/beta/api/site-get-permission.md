@@ -1,21 +1,21 @@
 ---
 title: Obter permissão
-description: Recupere as propriedades e os relacionamentos de um objeto de permissão em um site.
+description: Recupere as propriedades e as relações de um objeto de permissão em um site.
 author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 56f8060eec149bb4106d40f1ce2c3a460961c316
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 1f9a0a2ecfee85f172b3407068a1fbad18d114d3
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177120"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473217"
 ---
 # <a name="get-permission"></a>Obter permissão
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um [objeto de](../resources/permission.md) permissão em um site.
+Recupere as propriedades e as relações de um [objeto de](../resources/permission.md) permissão em um site.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e o objeto [de](../resources/permission.md) permissão no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [permission](../resources/permission.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -101,7 +101,7 @@ Content-Type: application/json
   "grantedToIdentities": [{
     "application": {
       "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-      "displayName": "Foo App"
+      "displayName": "Contoso Time Manager App"
     }
   }]
 }

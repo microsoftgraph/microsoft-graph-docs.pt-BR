@@ -5,15 +5,17 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e1dd8c4dd30d6cc4279178e88088b305aea3b87c
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: b4c950aec7b58eb6583e8b7a0a209a64f022368e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176462"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473210"
 ---
 # <a name="list-permissions"></a>Listar permissões
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter os [recursos de](../resources/permission.md) permissão da propriedade de navegação de permissões em um site.
 
@@ -49,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de objetos [permission](../resources/permission.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [de](../resources/permission.md) permissão no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -97,28 +99,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "1",
-      "roles": ["read"],
-      "grantedToIdentities": [{
-        "application": {
-          "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-          "displayName": "Foo App"
-        }
-      }]
-    },
-    {
-      "id": "2",
-      "roles": ["write"],
-      "grantedToIdentities": [{
-        "application": {
-          "id": "22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
-          "displayName": "Bar App"
-        }
-      }]
-    }
-  ]
+   "value":[
+      {
+         "id":"1",
+         "roles":[
+            "read"
+         ],
+         "grantedToIdentities":[
+            {
+               "application":{
+                  "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+                  "displayName":"Contoso Time Manager App"
+               }
+            }
+         ]
+      },
+      {
+         "id":"2",
+         "roles":[
+            "write"
+         ],
+         "grantedToIdentities":[
+            {
+               "application":{
+                  "id":"22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
+                  "displayName":"Fabrikam Dashboard App"
+               }
+            }
+         ]
+      }
+   ]
 }
 ```
 

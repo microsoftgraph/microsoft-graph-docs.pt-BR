@@ -3,14 +3,14 @@ title: Obter emailAuthenticationMethodConfiguration
 description: Leia as propriedades e as relações de um objeto emailAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ce3336973819f1b3062912b361c1d513e0d9098c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: af941c49671ff5a5a2addc9d8e5877f4922043f2
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964583"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469280"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>Obter emailAuthenticationMethodConfiguration
 

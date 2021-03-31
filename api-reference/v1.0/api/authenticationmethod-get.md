@@ -3,14 +3,14 @@ title: Obter authenticationMethod
 description: Recupere as propriedades e as relações de um objeto authenticationMethod.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ff118645edf0a303c5017d11e7cdbb1e770bab58
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 95ab608e5b1c384e4ddffc2c2e252d473f9aa2af
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948981"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469084"
 ---
 # <a name="get-authenticationmethod"></a>Obter authenticationMethod
 

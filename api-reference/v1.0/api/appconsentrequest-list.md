@@ -1,0 +1,98 @@
+---
+title: Listar appConsentRequests
+description: Recuperar objetos appConsentRequest e suas propriedades
+author: psignoret
+localization_priority: Normal
+ms.prod: governance
+doc_type: apiPageType
+ms.openlocfilehash: fba86e4f48a74097cf278fd20c65769f92b959c4
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469498"
+---
+# <a name="list-appconsentrequests"></a>Listar appConsentRequests
+Namespace: microsoft.graph
+
+Recupere [objetos appConsentRequest](../resources/appconsentrequest.md) e suas propriedades.
+
+## <a name="permissions"></a>Permissões
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All.|
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityGovernance/appConsent/appConsentRequests
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Este método dá suporte aos parâmetros de consulta , , , e OData para  `$select` ajudar a personalizar a `$skip` `$top` `$filter` `$orderby` resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos appConsentRequest](../resources/appconsentrequest.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "list_appconsentrequest"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests
+```
+
+### <a name="response"></a>Resposta
+
+**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.appConsentRequest)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests",
+  "@odata.count": 1,
+  "value": [
+    {
+      "id": "af330b30-dd59-4482-a848-0fd81b0438ed",
+      "appId": "3ca5f23f-94b4-4930-aec9-b8ca0f060e68",
+      "appDisplayName": "Moodle",
+      "pendingScopes": [],
+      "userConsentRequests@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
+      "userConsentRequests": []
+    }
+  ]
+}
+```

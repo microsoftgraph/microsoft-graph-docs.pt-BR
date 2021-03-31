@@ -1,8 +1,17 @@
 ---
-título: descrição "Listar assinaturas": "Recuperar as propriedades e as relações das assinaturas de webhook, com base na ID do aplicativo, no usuário e na função do usuário com um locatário".
-localization_priority: Autor de prioridade: "Jumaodhiss" ms.prod: ""change-notifications" doc_type: apiPageType
+title: Listar assinaturas
+description: Recupere as propriedades e os relacionamentos das assinaturas do webhook, com base no ID do aplicativo, no usuário e na função do usuário com um locatário.
+localization_priority: Priority
+author: Jumaodhiss
+ms.prod: change-notifications
+doc_type: apiPageType
+ms.openlocfilehash: cd5c72305e070745407c2c89cc5213758ce591b3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468841"
 ---
-
 # <a name="list-subscriptions"></a>Listar assinaturas
 
 Namespace: microsoft.graph

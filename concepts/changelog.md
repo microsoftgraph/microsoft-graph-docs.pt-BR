@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 10fd30a83f14d0607c14bb8e6c0ce0188cfa7ac2
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: effe614c907d734b274e93a6994277b9952c7f35
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760704"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473287"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -31,7 +31,11 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão** | **Descrição** |
 |:---|:---|:---|
-| Adição        | v1.0        | Apresentação do novo tipo de recurso [applicationTemplate](/graph/api/resources/applicationtemplate.md). Esse tipo de recurso dá suporte a [instanciar](/graph/api/applicationtemplate-instantiate.md), [listar](/graph/api/applicationtemplate-instantiate.md) e [obter](/graph/api/applicationtemplate-get.md) aplicativos da galeria do aplicativo Azure AD.
+| Adição        | v1.0        | Apresentação do novo tipo de recurso [applicationTemplate](/graph/api/resources/applicationtemplate.md). Esse tipo de recurso dá suporte a [instanciar](/graph/api/applicationtemplate-instantiate.md), [listar](/graph/api/applicationtemplate-list.md) e [obter](/graph/api/applicationtemplate-get.md) aplicativos da galeria do aplicativo Azure AD.
+| Adição | Beta, v 1.0 | Adicionado suporte para a permissão de somente no aplicativo **Application.ReadWrite.OwnedBy** para o método [applicationTemplate](/graph/api/resources/applicationtemplate.md) [instantiate](/graph/api/applicationtemplate-instantiate.md). |
+| Adição | v1.0 | Adicionada a propriedade **signInAudience** ao recurso [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0).|
+| Adição | beta | Adicionada a propriedade **uniqueName** ao recurso [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta).|
+
 
 ## <a name="february-2021"></a>Fevereiro de 2021
 
@@ -977,7 +981,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | A função [delta](/graph/api/event-delta?view=graph-rest-beta&preserve-view=true) suporta um cenário adicional para obter alterações incrementais (novo, atualizado ou removido) de eventos em um calendário de usuário sem necessidade de estarem limitados por um intervalo de data. |
 
-### <a name="change-notifications"></a>Alterar notificações
+### <a name="change-notifications"></a>Notificações de alteração
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3534,7 +3538,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Adicionado o recurso de [consulta delta](delta-query-overview.md) para as entidades a seguir no Azure Active Directory:<br/>[application](/graph/api/application-delta?view=graph-rest-beta&preserve-view=true)<br/>[directoryRole](/graph/api/directoryrole-delta?view=graph-rest-beta&preserve-view=true)<br/>[servicePrincipal](/graph/api/serviceprincipal-delta?view=graph-rest-beta&preserve-view=true) |
+| Adição        | Beta        | Adicionado o recurso de [consulta delta](delta-query-overview.md) para as entidades a seguir no Azure Active Directory:<br/>[aplicativo](/graph/api/application-delta?view=graph-rest-beta&preserve-view=true)<br/>[directoryRole](/graph/api/directoryrole-delta?view=graph-rest-beta&preserve-view=true)<br/>[servicePrincipal](/graph/api/serviceprincipal-delta?view=graph-rest-beta&preserve-view=true) |
 
 
 ## <a name="july-2018"></a>Julho de 2018
@@ -3695,8 +3699,8 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
-| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta&preserve-view=true) e os seguintes métodos: <br> [List](/graph/api/bookingcurrency-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcurrency-get?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcustomer-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingcustomer-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingcustomer-delete?view=graph-rest-beta&preserve-view=true).|
 | Adição        | Beta          | Foi adicionada a entidade [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-services?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-services?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingservice-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingservice-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingservice-delete?view=graph-rest-beta&preserve-view=true).|

@@ -3,14 +3,14 @@ title: Excluir microsoftAuthenticatorAuthenticationMethod
 description: Exclui um objeto microsoftAuthenticatorAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a2d454e428fd1fdfb9f86af573840eacea42aaec
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 7b77c27db8f1fd26503e9f45da179b42425af504
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202825"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469203"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethod"></a>Excluir microsoftAuthenticatorAuthenticationMethod
 Namespace: microsoft.graph

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: identity-and-access
 doc_type: conceptualPageType
-ms.openlocfilehash: f6a7d12d374efb9097db3d8d851599bdfd3a66df
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 769f3125c28a230e97f60155c8ee55bdbb97bbf2
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720447"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468993"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
@@ -48,6 +48,8 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | Obter informações sobre SKUs do serviço nos quais a empresa está inscrita. | [subscribedSku](../resources/subscribedsku.md) | N/D |
 | Convidar usuários externos (convidado) para uma organização. | [invitation](../resources/invitation.md) | [O que é a colaboração B2B do Azure AD?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
 | Gerenciar a identidade visual da experiência de entrada de uma organização. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Adicionar identidade visual à página de entrada do Azure Active Directory da sua organização](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
+| **Solicitações de consentimento** | | |
+| Gerenciar o fluxo de trabalho da solicitação de consentimento para usuários que tentam acessar aplicativos que requerem autorização do administrador.  | [API de solicitações de consentimento](../resources/consentrequests-root.md) |[Configure o fluxo de trabalho de consentimento do administrador](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

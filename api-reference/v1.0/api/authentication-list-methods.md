@@ -3,14 +3,14 @@ title: Métodos de List
 description: Recupere uma lista de objetos do método de autenticação.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e4dd76103f14daad826d78dfbf2dc5be6e333aa0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1cca7f87bc5eb6b0c12108b0214ab81db99f0568
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950237"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468594"
 ---
 # <a name="list-methods"></a>Métodos de List
 

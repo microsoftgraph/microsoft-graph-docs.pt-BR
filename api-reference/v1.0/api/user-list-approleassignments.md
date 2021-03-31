@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 8260c636191b05ccdfa2c6bacaa2a0698ec9149d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d11d02cff70a733cd2edb4898b6bc5a61262f682
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777444"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468825"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>Listar appRoleAssignments concedido a um usuário
 
@@ -124,6 +124,7 @@ Content-type: application/json
   ]
 }
 ```
+
 ### <a name="example-2-list-approleassignments-granted-to-a-user-filtered-by-resourceid"></a>Exemplo 2: Listar atribuições de função de aplicativo concedidas a um usuário, filtradas por ID de recurso
 
 #### <a name="request"></a>Solicitação
@@ -181,7 +182,7 @@ Content-type: application/json
   "value": [
     {
       "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
-      "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
+      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
       "appRoleId": "00000000-0000-0000-0000-000000000000",
       "principalDisplayName": "MOD Administrator",
       "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",

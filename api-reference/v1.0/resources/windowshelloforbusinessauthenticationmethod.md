@@ -3,14 +3,14 @@ title: Tipo de recurso windowsHelloForBusinessAuthenticationMethod
 description: Uma representação de uma instância do Windows Hello para Empresas registrada em um usuário. O Windows Hello para Empresas é um método de autenticação de login.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ad3fd83605d49351e2c57b469339fcfe222f05cb
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cd7784bca9b6eab1390d40286431efd658c401d3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964585"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468951"
 ---
 # <a name="windowshelloforbusinessauthenticationmethod-resource-type"></a>Tipo de recurso windowsHelloForBusinessAuthenticationMethod
 
@@ -31,8 +31,8 @@ Herda de [authenticationMethod](../resources/authenticationmethod.md).
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A data e a hora em que essa chave do Windows Hello para Empresas foi registrada.|
-|displayName|Cadeia de caracteres|O nome do dispositivo no qual o Windows Hello para Empresas está registrado|
-|id|Cadeia de caracteres|Um identificador exclusivo para esse método de autenticação. Herdado da [autenticaçãoMethod](../resources/authenticationmethod.md)|
+|displayName|String|O nome do dispositivo no qual o Windows Hello para Empresas está registrado|
+|id|String|Um identificador exclusivo para esse método de autenticação. Herdado da [autenticaçãoMethod](../resources/authenticationmethod.md)|
 |keyStrength|authenticationMethodKeyStrength|Força fundamental dessa chave do Windows Hello para Empresas. Os valores possíveis são: `normal`, `weak`, `unknown`.|
 
 ## <a name="relationships"></a>Relações

@@ -1,24 +1,24 @@
 ---
 title: Tipo de recurso changeNotification
-description: Representa a notificação de alteração enviada ao Assinante.
+description: Representa a notificação de alteração enviada ao assinante.
 localization_priority: Normal
-author: davidmu1
+author: Jumaodhiss
 doc_type: resourcePageType
-ms.prod: non-product-specific
-ms.openlocfilehash: 203fd0c4966bb2c726bcb0cc4e89a4f8d38e7028
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.prod: change-notifications
+ms.openlocfilehash: 613e7f7bc29f3fbf54db357de7d203d912056acc
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48741919"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469350"
 ---
 # <a name="changenotification-resource-type"></a>Tipo de recurso changeNotification
 
 Namespace: microsoft.graph
 
-Representa a notificação enviada ao Assinante.
+Representa a notificação enviada ao assinante.
 
-Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).
+Para obter detalhes, confira [Usar a API do Microsoft Graph para receber notificações de alteração](webhooks.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -28,16 +28,16 @@ Nenhum.
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| changeType | string | Indica o tipo de alteração que irá gerar a notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Obrigatório. |
-| clientState | string | O valor da propriedade **ClientState** enviada na solicitação de assinatura (se houver). O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando os valores da propriedade **ClientState** . O valor da propriedade **ClientState** enviada com a assinatura é comparado com o valor da propriedade **ClientState** recebida com cada notificação de alteração. Opcional. |
-| lifecycleEvent | string | O tipo de notificação de ciclo de vida se a notificação atual é uma notificação de ciclo de vida. Opcional. Os valores com suporte são `missed` , `removed` , `reauthorizationRequired` . |
-| encryptedContent | [Microsoft. Graph. changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | Prever Conteúdo criptografado anexado à notificação de alteração. Só é fornecido se **encryptionCertificate** e **includeResourceData** foram definidos durante a solicitação de assinatura e se o recurso oferecer suporte a ele. Opcional. |
-| id | string | ID exclusiva da notificação. Opcional. |
-| recurso | string | O URI do recurso que emitiu a notificação de alteração relativa a `https://graph.microsoft.com` . Obrigatório. |
-| resourceData | [Microsoft. Graph. resourceData](resourcedata.md) | O conteúdo dessa propriedade depende do tipo de recurso que está sendo assinado. Obrigatório. |
+| changeType | cadeia de caracteres | Indica o tipo de alteração que levantará a notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Obrigatório. |
+| clientState | string | Valor da **propriedade clientState** enviada na solicitação de assinatura (se alguma). O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço comparando os valores da **propriedade clientState.** O valor da **propriedade clientState** enviado com a assinatura é comparado com o valor da **propriedade clientState** recebida com cada notificação de alteração. Opcional. |
+| lifecycleEvent | cadeia de caracteres | O tipo de notificação do ciclo de vida se a notificação atual for uma notificação do ciclo de vida. Opcional. Os valores suportados `missed` são `removed` , , `reauthorizationRequired` . |
+| encryptedContent | [microsoft.graph.changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | (Visualização) Conteúdo criptografado anexado com a notificação de alteração. Somente fornecido se **encryptionCertificate** e **includeResourceData** foram definidos durante a solicitação de assinatura e se o recurso oferece suporte a ela. Opcional. |
+| id | cadeia de caracteres | ID exclusiva da notificação. Opcional. |
+| recurso | cadeia de caracteres | O URI do recurso que emitiu a notificação de alteração em relação a `https://graph.microsoft.com` . Obrigatório. |
+| resourceData | [microsoft.graph.resourceData](resourcedata.md) | O conteúdo dessa propriedade depende do tipo de recurso que está sendo assinado. Obrigatório. |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | O tempo de expiração da assinatura. Obrigatório. |
 | subscriptionId | string | O identificador exclusivo da assinatura que gerou a notificação. |
-| tenantId | #c0 | O identificador exclusivo do locatário do qual a notificação de alteração se originou. |
+| tenantId | guid | O identificador exclusivo do locatário do qual a notificação de alteração se originou. |
 
 ## <a name="relationships"></a>Relações
 

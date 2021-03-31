@@ -3,14 +3,14 @@ title: tipo de recurso authenticationMethod
 description: Representa um método de autenticação registrado para um usuário.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 283b81981417494e86a225770427f5497490809a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b052a6034484a5d1d1f8edc8ff9adc3feac52e98
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948983"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469133"
 ---
 # <a name="authenticationmethod-resource-type"></a>tipo de recurso authenticationMethod
 
@@ -29,7 +29,7 @@ Representa um método de autenticação registrado para um usuário. Um [método
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| O identificador dessa instância de um método de autenticação registrado nesse usuário. Somente leitura. |
+|id|String| O identificador dessa instância de um método de autenticação registrado nesse usuário. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 

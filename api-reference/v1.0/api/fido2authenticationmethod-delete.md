@@ -3,14 +3,14 @@ title: Excluir fido2AuthenticationMethod
 description: Exclui um objeto fido2AuthenticationMethod.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8ffbb31e7c8c5fd992a2a8942c91566269e8f218
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 2ef78f3957f262b59bef7c627ea5450c2c759ab7
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201243"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469021"
 ---
 # <a name="delete-fido2authenticationmethod"></a>Excluir fido2AuthenticationMethod
 Namespace: microsoft.graph

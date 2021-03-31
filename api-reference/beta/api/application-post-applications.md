@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 839d8d339c1dfcdc071b9cd7f5f648710687b86d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b85080226e7664cc92e39528a0e518f83ff60d5e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129105"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473273"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -145,6 +145,7 @@ Content-length: 1145
     },
     "passwordCredentials": [],
     "requiredResourceAccess": [],
+    "uniqueName": null,
     "web": {
         "redirectUris": [],
         "homePageUrl": null,

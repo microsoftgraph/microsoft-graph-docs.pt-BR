@@ -3,14 +3,14 @@ title: Visão geral da API de métodos de autenticação do Azure AD
 description: Os métodos de autenticação são como os usuários autenticam no Azure AD.
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 1f39a7d231a9db7f4198aec4a440811ccce989f5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6027e03a4c78c5359db77ee9c263c9e98f412a9f
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964629"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469119"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Visão geral da API de métodos de autenticação do Azure AD
 

@@ -3,14 +3,14 @@ title: tipo de recurso authenticationMethodTarget
 description: Uma coleção de usuários ou grupos habilitados para usar um método de autenticação como parte de uma política de método de autenticação.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4c9265fa359e5b60da6f8e36c13d1a4340ba6d1a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2f75a0ee81f1c43923a910bd86df4828c276706e
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964627"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469105"
 ---
 # <a name="authenticationmethodtarget-resource-type"></a>tipo de recurso authenticationMethodTarget
 
@@ -22,7 +22,7 @@ Uma coleção de usuários ou grupos habilitados para usar um método de autenti
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID do objeto de um usuário ou grupo do Azure AD.|
+|id|String|ID do objeto de um usuário ou grupo do Azure AD.|
 |isRegistrationRequired|Booliano|Determina se o usuário é imposto a registrar o método de autenticação.|
 |targetType|authenticationMethodTargetType|Os valores possíveis são: `user` e `group`.|
 |useForSignIn|Booliano|Determina se o método de autenticação pode ser usado para entrar no Azure AD.|

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 60c18961c8f6b1adc9a1d498dee11cef62278da2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6f58f116b82c0f6b8c5d45f6d55aff695fcabd44
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944854"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468643"
 ---
 # <a name="approleassignment-resource-type"></a>Tipo de recurso appRoleAssignment
 
@@ -31,7 +31,7 @@ Uma atribuição de função de aplicativo onde a entidade de segurança atribu�
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 | id | Cadeia de caracteres | Um identificador exclusivo para a chave **appRoleAssignment**. Não anulável. Somente leitura. |
-| creationTimestamp | DateTimeOffset | A hora em que a atribuição de função do aplicativo foi criada. O tipo timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.  |
+| createdDateTime | DateTimeOffset | A hora em que a atribuição de função do aplicativo foi criada. O tipo timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.  |
 | principalId | Guid | O identificador exclusivo (**id**) para o [usuário](user.md), [grupo](group.md) ou da [entidade](serviceprincipal.md) a qual o acesso está sendo concedido. Obrigatório ao criar.  |
 | principalType | Cadeia de caracteres | O tipo da entidade de segurança atribuída. Isso pode ser `User`, `Group` ou `ServicePrincipal`. Somente leitura.  |
 | principalDisplayName | Cadeia de caracteres |O nome de exibição do usuário, grupo ou entidade de serviço que recebeu a atribuição de função do aplicativo. Somente leitura. Suporte para `$filter` (`eq` e `startswith`). |
@@ -54,7 +54,7 @@ Veja a seguir uma representação JSON do recurso
 ```json
 {
   "id": "string",
-  "creationTimestamp": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "principalDisplayName": "string",
   "principalId": "guid",
   "principalType": "string",

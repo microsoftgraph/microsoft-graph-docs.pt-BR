@@ -3,14 +3,14 @@ title: Atualizar microsoftAuthenticatorAuthenticationMethodConfiguration
 description: Atualize as propriedades de um objeto microsoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cbbd1523791fa7578b5a200a84cdb737d33e6823
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 3967d145a0d732e66bc7c77a2ab3539b129be043
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202703"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469161"
 ---
 # <a name="update-microsoftauthenticatorauthenticationmethodconfiguration"></a>Atualizar microsoftAuthenticatorAuthenticationMethodConfiguration
 Namespace: microsoft.graph

@@ -3,14 +3,14 @@ title: Obter fido2AuthenticationMethod
 description: Leia as propriedades e as relações de um objeto fido2AuthenticationMethod.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b13b9502c1587fcef5a20a07cc4b57d0300f91ee
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b641e1c2afdbf01a3999c50f76497ac7a1417382
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964590"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51467957"
 ---
 # <a name="get-fido2authenticationmethod"></a>Obter fido2AuthenticationMethod
 Namespace: microsoft.graph

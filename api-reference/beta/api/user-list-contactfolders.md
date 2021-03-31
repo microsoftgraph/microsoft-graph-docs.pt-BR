@@ -1,16 +1,16 @@
 ---
 title: Listar contactFolders
-description: Obter todas as pastas de contatos na caixa de correio do usuário conectado.
+description: Obter todas as pastas de contato na caixa de correio do usuário de entrada.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cb43b621fa43a32516a18a5bb6de04ea0ab8bea3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 33e73e44b260787c43da3a98e3bf2e3972cdfd84
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982215"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473154"
 ---
 # <a name="list-contactfolders"></a>Listar contactFolders
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter todas as pastas de contatos na caixa de correio do usuário conectado.
+Obter todas as pastas de contato na caixa de correio do usuário de entrada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [ContactFolder](../resources/contactfolder.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/me/contactFolders
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -90,15 +90,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 145
 
 {
   "value": [
     {
-      "parentFolderId": "parentFolderId-value",
-      "displayName": "displayName-value",
-      "wellKnownName": "wellKnownName-value",
-      "id": "id-value"
+      "parentFolderId": "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBCAAAAA==",
+      "displayName": "Contacts",
+      "id": "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA==",
+      "wellKnownName": "contacts"
     }
   ]
 }

@@ -3,14 +3,14 @@ title: Tipo de recurso microsoftAuthenticatorAuthenticationMethod
 description: Uma representação do aplicativo Microsoft Authenticator registrado para um usuário. O Microsoft Authenticator é um método de autenticação.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: aeb2d1d7b111c9424da2f927dbaf3030a356c6b6
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f7438ca72a4f5d4063eec0444d3b0028237083d9
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964573"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468986"
 ---
 # <a name="microsoftauthenticatorauthenticationmethod-resource-type"></a>Tipo de recurso microsoftAuthenticatorAuthenticationMethod
 
@@ -31,10 +31,10 @@ Herda de [authenticationMethod](../resources/authenticationmethod.md).
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A data e a hora em que esse aplicativo foi registrado. Essa propriedade será nula se o dispositivo não estiver registrado para Entrada de Telefone sem senha.|
-|displayName|Cadeia de caracteres|O nome do dispositivo no qual esse aplicativo está registrado.|
-|id|Cadeia de caracteres|Um identificador exclusivo para esse método de autenticação. Herdado da [autenticaçãoMethod](../resources/authenticationmethod.md)|
+|displayName|String|O nome do dispositivo no qual esse aplicativo está registrado.|
+|id|String|Um identificador exclusivo para esse método de autenticação. Herdado da [autenticaçãoMethod](../resources/authenticationmethod.md)|
 |deviceTag|String|Marcas que contêm metadados de aplicativo.|
-|phoneAppVersion|Cadeia de caracteres|Versão numérica dessa instância do aplicativo Authenticator.|
+|phoneAppVersion|String|Versão numérica dessa instância do aplicativo Authenticator.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

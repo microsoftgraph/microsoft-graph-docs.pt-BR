@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: e754bf9e5199de502672cdf0a0de5279eb5ef80f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a8cab7859c68224acc734a88f941a952ca82798b
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953744"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51472104"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -111,6 +111,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 | **pages**         | Collection([sitePage][])         | O conjunto de páginas na lista SitePages no site.
 | **permissões**   | Coleção ([permissão][])         | As permissões associadas ao site. Anulável.
 | **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
+| **LojaDeTermos**     | [microsoft.graph.termStore.store]  | A LojaDeTermos sob este site.
 | **externalColumns**     | Collection([columnDefinition][])  | A coleção de definições de coluna disponíveis no site que são referenciadas nos sites na hierarquia pai do site atual.
 
 [columnDefinition]: columndefinition.md
@@ -126,6 +127,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 [site]: site.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
+[microsoft.graph.termStore.store]: termstore-store.md
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -167,6 +169,7 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
   "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   /* inherited from baseItem */
   "name": "string",

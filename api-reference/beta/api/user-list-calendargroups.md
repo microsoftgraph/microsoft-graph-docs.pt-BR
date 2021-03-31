@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2fd3a38fe2bcc0fef706f3d7d2f428fda7d8a992
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 401423f8afb678f8440f6e951bcd32079147c8af
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979408"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473161"
 ---
 # <a name="list-calendargroups"></a>Listar calendarGroups
 
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [CalendarGroup](../resources/calendargroup.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -89,15 +89,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 155
 
 {
   "value": [
     {
-      "name": "name-value",
-      "classId": "classId-value",
-      "changeKey": "changeKey-value",
-      "id": "id-value"
+      "name": "My Calendars",
+      "classId": "0006f0b7-0000-0000-c000-000000000046",
+      "changeKey": "NreqLYgxdE2DpHBBId74XwAAAAAGZw==",
+      "id": "AQMkADIxYjJiYgEzLTFmN_F8AAAIBBgAA_F8AAAJjIQAAAA=="
     }
   ]
 }
