@@ -5,42 +5,42 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 33865876b1750c13c6f2eec77aa09f4fa57191d2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0b3d8d9826ae8ebd77ef8ede529a0f7327357be5
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957100"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473693"
 ---
-# <a name="list-manager"></a><span data-ttu-id="28576-104">Listar gerente</span><span class="sxs-lookup"><span data-stu-id="28576-104">List manager</span></span>
+# <a name="list-manager"></a><span data-ttu-id="0a2bb-104">Listar gerente</span><span class="sxs-lookup"><span data-stu-id="0a2bb-104">List manager</span></span>
 
-<span data-ttu-id="28576-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="28576-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0a2bb-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0a2bb-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="28576-106">Retorna o usuário ou o contato organizacional atribuído como gerente do usuário.</span><span class="sxs-lookup"><span data-stu-id="28576-106">Returns the user or organizational contact assigned as the user's manager.</span></span> <span data-ttu-id="28576-107">Opcionalmente, você pode expandir a cadeia do gerente ao nó raiz.</span><span class="sxs-lookup"><span data-stu-id="28576-107">Optionally, you can expand the manager's chain up to the root node.</span></span>
+<span data-ttu-id="0a2bb-106">Retorna o usuário ou o contato organizacional atribuído como gerente do usuário.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-106">Returns the user or organizational contact assigned as the user's manager.</span></span> <span data-ttu-id="0a2bb-107">Opcionalmente, você pode expandir a cadeia do gerente ao nó raiz.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-107">Optionally, you can expand the manager's chain up to the root node.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="28576-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="28576-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0a2bb-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="0a2bb-108">Permissions</span></span>
 
-<span data-ttu-id="28576-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="28576-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0a2bb-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0a2bb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="28576-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="28576-111">Permission type</span></span>      | <span data-ttu-id="28576-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="28576-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0a2bb-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0a2bb-111">Permission type</span></span>      | <span data-ttu-id="0a2bb-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0a2bb-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="28576-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="28576-113">Delegated (work or school account)</span></span> | <span data-ttu-id="28576-114">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="28576-114">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="28576-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="28576-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="28576-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="28576-116">Not supported.</span></span>    |
-|<span data-ttu-id="28576-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="28576-117">Application</span></span> | <span data-ttu-id="28576-118">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="28576-118">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="0a2bb-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0a2bb-113">Delegated (work or school account)</span></span> | <span data-ttu-id="0a2bb-114">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0a2bb-114">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="0a2bb-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0a2bb-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0a2bb-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-116">Not supported.</span></span>    |
+|<span data-ttu-id="0a2bb-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0a2bb-117">Application</span></span> | <span data-ttu-id="0a2bb-118">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0a2bb-118">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-## <a name="http-request"></a><span data-ttu-id="28576-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="28576-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0a2bb-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0a2bb-119">HTTP request</span></span>
 
-<span data-ttu-id="28576-120">Obtenha o gerente:</span><span class="sxs-lookup"><span data-stu-id="28576-120">Get the manager:</span></span>
+<span data-ttu-id="0a2bb-120">Obtenha o gerente:</span><span class="sxs-lookup"><span data-stu-id="0a2bb-120">Get the manager:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
-<span data-ttu-id="28576-121">Obtenha a cadeia de gerenciamento:</span><span class="sxs-lookup"><span data-stu-id="28576-121">Get the management chain:</span></span>
+<span data-ttu-id="0a2bb-121">Obtenha a cadeia de gerenciamento:</span><span class="sxs-lookup"><span data-stu-id="0a2bb-121">Get the management chain:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=manager
@@ -48,39 +48,39 @@ GET /users?$expand=manager($levels=n)
 GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="28576-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="28576-122">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0a2bb-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0a2bb-122">Optional query parameters</span></span>
 
-<span data-ttu-id="28576-123">Este método oferece suporte aos parâmetros de consulta `$select` e `$expand`[OData](/graph/query-parameters)para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="28576-123">This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>  
+<span data-ttu-id="0a2bb-123">Este método oferece suporte aos parâmetros de consulta `$select` e `$expand`[OData](/graph/query-parameters)para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-123">This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>  
 
-><span data-ttu-id="28576-124">**Observação:**</span><span class="sxs-lookup"><span data-stu-id="28576-124">**Note:**</span></span> 
-> + <span data-ttu-id="28576-125">O valor de pode ser (para retornar todos `n` os `$levels` `max` gerentes) ou um número entre 1 e 1000.</span><span class="sxs-lookup"><span data-stu-id="28576-125">The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.</span></span>  
-> + <span data-ttu-id="28576-126">Quando o `$levels` parâmetro não for especificado, apenas o gerente imediato será retornado.</span><span class="sxs-lookup"><span data-stu-id="28576-126">When the `$levels` parameter is not specified, only the immediate manager is returned.</span></span>  
-> + <span data-ttu-id="28576-127">Você pode especificar `$select` dentro para selecionar as propriedades do gerente `$expand` individual.</span><span class="sxs-lookup"><span data-stu-id="28576-127">You can specify `$select` inside `$expand` to select the individual manager's properties.</span></span> <span data-ttu-id="28576-128">O `$levels` parâmetro é necessário: `$expand=manager($levels=max;$select=id,displayName)`</span><span class="sxs-lookup"><span data-stu-id="28576-128">The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`</span></span>
+><span data-ttu-id="0a2bb-124">**Observação:**</span><span class="sxs-lookup"><span data-stu-id="0a2bb-124">**Note:**</span></span> 
+> + <span data-ttu-id="0a2bb-125">O valor `n` de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-125">The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.</span></span>  
+> + <span data-ttu-id="0a2bb-126">Quando o `$levels` parâmetro não for especificado, apenas o gerente imediato será retornado.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-126">When the `$levels` parameter is not specified, only the immediate manager is returned.</span></span>  
+> + <span data-ttu-id="0a2bb-127">Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades do gerente individual.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-127">You can specify `$select` inside `$expand` to select the individual manager's properties.</span></span> <span data-ttu-id="0a2bb-128">O parâmetro `$levels` é obrigatório: `$expand=manager($levels=max;$select=id,displayName)`</span><span class="sxs-lookup"><span data-stu-id="0a2bb-128">The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="28576-129">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="28576-129">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0a2bb-129">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0a2bb-129">Request headers</span></span>
 
-| <span data-ttu-id="28576-130">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="28576-130">Header</span></span>       | <span data-ttu-id="28576-131">Valor</span><span class="sxs-lookup"><span data-stu-id="28576-131">Value</span></span>|
+| <span data-ttu-id="0a2bb-130">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="0a2bb-130">Header</span></span>       | <span data-ttu-id="0a2bb-131">Valor</span><span class="sxs-lookup"><span data-stu-id="0a2bb-131">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="28576-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="28576-132">Authorization</span></span>  | <span data-ttu-id="28576-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="28576-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="28576-135">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="28576-135">ConsistencyLevel</span></span> | <span data-ttu-id="28576-136">eventualmente.</span><span class="sxs-lookup"><span data-stu-id="28576-136">eventual.</span></span> <span data-ttu-id="28576-137">Obrigatório quando a solicitação inclui o parâmetro `$expand=manager($levels=max)`.</span><span class="sxs-lookup"><span data-stu-id="28576-137">Required when the request includes the `$expand=manager($levels=max)` parameter.</span></span> |
+| <span data-ttu-id="0a2bb-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="0a2bb-132">Authorization</span></span>  | <span data-ttu-id="0a2bb-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="0a2bb-135">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="0a2bb-135">ConsistencyLevel</span></span> | <span data-ttu-id="0a2bb-136">eventualmente.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-136">eventual.</span></span> <span data-ttu-id="0a2bb-137">Obrigatório quando a solicitação inclui o parâmetro `$expand=manager($levels=max)`.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-137">Required when the request includes the `$expand=manager($levels=max)` parameter.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="28576-138">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="28576-138">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0a2bb-138">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0a2bb-138">Request body</span></span>
 
-<span data-ttu-id="28576-139">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="28576-139">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="0a2bb-139">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="28576-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="28576-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0a2bb-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="0a2bb-140">Response</span></span>
 
-<span data-ttu-id="28576-141">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="28576-141">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="0a2bb-141">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-141">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="28576-142">Exemplos</span><span class="sxs-lookup"><span data-stu-id="28576-142">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="0a2bb-142">Exemplos</span><span class="sxs-lookup"><span data-stu-id="0a2bb-142">Examples</span></span>
 
-### <a name="example-1-get-manager"></a><span data-ttu-id="28576-143">Exemplo 1: obtenha o gerente</span><span class="sxs-lookup"><span data-stu-id="28576-143">Example 1: Get manager</span></span>
+### <a name="example-1-get-manager"></a><span data-ttu-id="0a2bb-143">Exemplo 1: obtenha o gerente</span><span class="sxs-lookup"><span data-stu-id="0a2bb-143">Example 1: Get manager</span></span>
 
-<span data-ttu-id="28576-144">O exemplo a seguir mostra uma solicitação para obter o gerente.</span><span class="sxs-lookup"><span data-stu-id="28576-144">The following example shows a request to get the manager.</span></span>
+<span data-ttu-id="0a2bb-144">O exemplo a seguir mostra uma solicitação para obter o gerente.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-144">The following example shows a request to get the manager.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="28576-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="28576-145">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0a2bb-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0a2bb-145">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="28576-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="28576-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0a2bb-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="0a2bb-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_manager_2"
@@ -88,29 +88,28 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
-# <a name="c"></a>[<span data-ttu-id="28576-147">C#</span><span class="sxs-lookup"><span data-stu-id="28576-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0a2bb-147">C#</span><span class="sxs-lookup"><span data-stu-id="0a2bb-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="28576-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="28576-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0a2bb-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0a2bb-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="28576-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="28576-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0a2bb-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0a2bb-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-manager-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="28576-150">Java</span><span class="sxs-lookup"><span data-stu-id="28576-150">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="0a2bb-150">Java</span><span class="sxs-lookup"><span data-stu-id="0a2bb-150">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+#### <a name="response"></a><span data-ttu-id="0a2bb-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="0a2bb-151">Response</span></span>
 
-#### <a name="response"></a><span data-ttu-id="28576-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="28576-151">Response</span></span>
-
-<span data-ttu-id="28576-152">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="28576-152">The following is an example of the response.</span></span>
-><span data-ttu-id="28576-153">**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="28576-153">**Note**: The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="0a2bb-152">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-152">The following is an example of the response.</span></span>
+><span data-ttu-id="0a2bb-153">**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-153">**Note**: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,7 +121,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "<user-id>",
+  "id": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
   "displayName": "Sara Davis",
   "jobTitle": "Finance VP",
   "mail": "SaraD@contoso.onmicrosoft.com",
@@ -130,11 +129,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-manager-chain-up-to-the-root-level"></a><span data-ttu-id="28576-154">Exemplo 2: obtenha a cadeia de gerentes ao nível raiz</span><span class="sxs-lookup"><span data-stu-id="28576-154">Example 2: Get manager chain up to the root level</span></span>
+### <a name="example-2-get-manager-chain-up-to-the-root-level"></a><span data-ttu-id="0a2bb-154">Exemplo 2: obtenha a cadeia de gerentes ao nível raiz</span><span class="sxs-lookup"><span data-stu-id="0a2bb-154">Example 2: Get manager chain up to the root level</span></span>
 
-<span data-ttu-id="28576-155">O exemplo a seguir mostra uma solicitação para obter a cadeia de gerentes ao nível raiz.</span><span class="sxs-lookup"><span data-stu-id="28576-155">The following example shows a request to get the manager chain up to the root level.</span></span>
+<span data-ttu-id="0a2bb-155">O exemplo a seguir mostra uma solicitação para obter a cadeia de gerentes ao nível raiz.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-155">The following example shows a request to get the manager chain up to the root level.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="28576-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="28576-156">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0a2bb-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0a2bb-156">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -145,11 +144,11 @@ GET https://graph.microsoft.com/beta/me?$expand=manager($levels=max;$select=id,d
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="28576-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="28576-157">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="0a2bb-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="0a2bb-157">Response</span></span>
 
-<span data-ttu-id="28576-158">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="28576-158">The following is an example of the response.</span></span> <span data-ttu-id="28576-159">Os gerentes transitivos são exibidos hierarquicamente.</span><span class="sxs-lookup"><span data-stu-id="28576-159">Transitive managers are displayed hierarchically.</span></span>
+<span data-ttu-id="0a2bb-158">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-158">The following is an example of the response.</span></span> <span data-ttu-id="0a2bb-159">Os gerentes transitivos são exibidos hierarquicamente.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-159">Transitive managers are displayed hierarchically.</span></span>
 
-><span data-ttu-id="28576-160">**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="28576-160">**Note**: The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="0a2bb-160">**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="0a2bb-160">**Note**: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -161,20 +160,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "<user1-id>",
-    "displayName": "Individual Contributor",
+  "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8",
+  "displayName": "Individual Contributor",
+  "manager": {
+    "id": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
+    "displayName": "Alex Wilber",
     "manager": {
-        "id": "<manager1-id>",
-        "displayName": "Manager 1",
-        "manager": {
-            "id": "<manager2-id>",
-            "displayName": "Manager 2",
-            "manager": {
-                "id": "<manager3-id>",
-                "displayName": "Manager 3"
-            }
-        }
+      "id": "343a3f95-377c-47a9-b697-480487bfcdf7",
+      "displayName": "Bianca Pisani",
+      "manager": {
+        "id": "8e07b731-5ba7-4081-b482-15e6eca35c45",
+        "displayName": "Patti Fernandez"
+      }
     }
+  }
 }
 ```
 
