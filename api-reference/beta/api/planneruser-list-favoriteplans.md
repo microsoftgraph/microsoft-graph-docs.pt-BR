@@ -1,16 +1,16 @@
 ---
 title: Listar favoritePlans
-description: Recupere uma lista de plannerPlans marcados como favoritos por um usuário. Você pode marcar um plano como favorito, atualizando o recurso plannerUser.
+description: Recupere uma lista de plannerPlans marcados como favoritos por um usuário. Você pode marcar um plano como favorito atualizando o recurso plannerUser.
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 00ee82c8830b61dc31cfbf6beafd13063e9de6e4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1650ea55e1fc7dc6200e4985e417fdfb67fb0ee3
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980500"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473483"
 ---
 # <a name="list-favoriteplans"></a>Listar favoritePlans
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de [plannerPlans](../resources/plannerplan.md) marcados como favoritos por um usuário. Você pode marcar um plano como favorito, [atualizando o recurso plannerUser](planneruser-update.md).
+Recupere uma lista de [plannerPlans marcados](../resources/plannerplan.md) como favoritos por um usuário. Você pode marcar um plano como favorito [atualizando o recurso plannerUser](planneruser-update.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Tasks.Read, Tasks.ReadWrite, Group.Read.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,7 +46,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

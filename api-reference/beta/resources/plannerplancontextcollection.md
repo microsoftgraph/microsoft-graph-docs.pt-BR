@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso plannerPlanContextCollection
-description: O recurso **plannerPlanContextCollection** representa a coleção de contextos externos aos quais um plano está vinculado. Esse recurso é um tipo aberto e faz parte do objeto plannerPlan. O valor no par propriedade-valor é o objeto plannerPlanContext.
+title: Tipo de recurso plannerPlanContextCollection
+description: O **recurso plannerPlanContextCollection** representa a coleção de contextos externos aos quais um plano está vinculado. Esse recurso é um tipo aberto e faz parte do objeto plannerPlan. O valor no par de valores de propriedade é o objeto plannerPlanContext.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 45b09a0cca28a9efdc1a62b4d404d0966587fd9f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b2069fd30ba3beb6150b0fdc5dd5bb0f69956b82
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094936"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473595"
 ---
-# <a name="plannerplancontextcollection-resource-type"></a>tipo de recurso plannerPlanContextCollection
+# <a name="plannerplancontextcollection-resource-type"></a>Tipo de recurso plannerPlanContextCollection
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-O recurso **plannerPlanContextCollection** representa a coleção de contextos externos aos quais um plano está vinculado. Esse recurso é um tipo aberto e faz parte do objeto [plannerPlan](plannerplan.md) . O valor no par propriedade-valor é o objeto [plannerPlanContext](plannerplancontext.md) .
+O **recurso plannerPlanContextCollection** representa a coleção de contextos externos aos quais um plano está vinculado. Esse recurso é um tipo aberto e faz parte do [objeto plannerPlan.](plannerplan.md) O valor no par de valores de propriedade é o [objeto plannerPlanContext.](plannerplancontext.md)
 
 
 ## <a name="properties"></a>Propriedades
-Você pode definir as propriedades desse tipo aberto. Os valores de propriedade devem ser um identificador distintivo que representa o contexto externo como o nome da propriedade. Os valores de propriedade devem ser objetos [plannerPlanContext](plannerplancontext.md) . Com base nos requisitos de OData, os nomes de propriedade em tipos abertos não podem conter os seguintes caracteres:,,, `.` `:` `%` `@` . Esses caracteres precisam ser codificados usando a codificação de URL. Para remover um item da lista favoritos, defina o valor da propriedade como `null` .
+Você pode definir as propriedades desse tipo aberto. Os valores da propriedade devem ser identificadores distintos que representam o contexto externo como o nome da propriedade. Os valores da propriedade devem ser [objetos plannerPlanContext.](plannerplancontext.md) Com base nos requisitos OData, os nomes de propriedades em tipos abertos não podem conter os seguintes caracteres: `.` , , , , `:` `%` `@` `#` . Esses caracteres precisam ser codificados usando codificação de URL. Para remover um item na lista de favoritos, de definir o valor da propriedade como `null` .
 
 ## <a name="json-representation"></a>Representação JSON
 

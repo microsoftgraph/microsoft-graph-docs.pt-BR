@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6598db1fa98e3fb91a70040c9bf3ffe6e9a0c86f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 130338318fc3e7e970838dbbcb8d5f70e726e857
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721982"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473518"
 ---
 # <a name="list-directreports"></a>Listar directReports
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/directReports
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
@@ -94,12 +94,11 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8"
     }
   ]
 }

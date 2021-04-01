@@ -1,30 +1,30 @@
 ---
-title: 'Planner: Delta'
-description: Recupera alterações nos objetos nos quais o usuário está inscrito.
+title: 'Planner: delta'
+description: Recupera as alterações nos objetos aos que o usuário está inscrito.
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 59c9802797c86e8ef007bb61ce503682e14981d7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7c730630f3fd655db29c93c699e8090d3046a4d4
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970245"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473490"
 ---
-# <a name="planner-delta"></a>Planner: Delta
+# <a name="planner-delta"></a>Planner: delta
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupera alterações nos objetos nos quais o usuário está [inscrito](../resources/planner-overview.md#track-changes-using-delta-query) .
+Recupera as alterações nos objetos aos que o usuário [está inscrito.](../resources/planner-overview.md#track-changes-using-delta-query)
 
-Este método permite que seu aplicativo rastreie alterações para objetos que o usuário pode acessar no planejador ao longo do tempo.
+Esse método permite que seu aplicativo acompanhe as alterações nos objetos que o usuário pode acessar no Planner ao longo do tempo.
 
-O valor de retorno desse método pode conter tipos heterogêneo de objetos do Planner.
+O valor de retorno desse método pode conter tipos hetergêneos de objetos do Planner.
 
-Para obter mais informações sobre o controle de alterações nos dados do Microsoft Graph, consulte [usar a consulta Delta para controlar alterações nos dados do Microsoft Graph](/graph/delta-query-overview).
+Para obter mais informações sobre o controle de alterações nos dados do Microsoft Graph, consulte [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Permissões
 
@@ -32,8 +32,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,7 +45,7 @@ GET /me/planner/all/delta
 GET /users/{id}/planner/all/delta
 ```
 
-Nenhum parâmetro de consulta adicional (como `$select` , `$expand` ou `$filter` ) é suportado atualmente na implementação do Planner de consultas Delta.
+No momento, não há suporte para parâmetros de consulta adicionais (como , ou ) na implementação de consultas `$select` `$expand` delta do `$filter` Planner.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,11 +59,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de alterações a serem aplicadas aos objetos no corpo da resposta e um link de sincronização Delta a seguir.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de alterações a serem aplicadas a objetos no corpo da resposta e um link de Sincronização `200 OK` Delta a ser seguido.
 
-Se o `deltaLink` chamador usa estiver malformado, este ponto de extremidade retornará HTTP 400.
+Se o `deltaLink` que o chamador usa estiver malformado, esse ponto de extremidade retornará HTTP 400.
 
-Se o `deltaLink` chamador usar for muito antigo, esse ponto de extremidade retornará HTTP 410.
+Se o `deltaLink` que o chamador usa for muito antigo, esse ponto de extremidade retornará HTTP 410.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 

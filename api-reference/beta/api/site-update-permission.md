@@ -5,12 +5,12 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 609013d8150cec5ff1be6f95b7bb254536a68acc
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 24f84eed8550b133387275873e63634703cbfd5e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177260"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473602"
 ---
 # <a name="update-permission"></a>Atualizar permissão
 Namespace: microsoft.graph
@@ -47,7 +47,7 @@ No corpo da solicitação, fornece uma representação JSON do [objeto permissio
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [de](../resources/permission.md) permissão no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [de](../resources/permission.md) permissão no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -105,7 +105,7 @@ Content-Type: application/json
     "grantedToIdentities": [{
       "application": {
         "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Bar App"
+        "displayName": "Fabrikam Dashboard App"
       }
     }]
 }

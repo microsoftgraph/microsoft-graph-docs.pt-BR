@@ -1,28 +1,28 @@
 ---
 title: Atualizar plannerplandetails
-description: Atualize as propriedades do objeto **plannerplandetails** .
+description: Atualize as propriedades do **objeto plannerplandetails.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 6841fd67b55628ff409b287b04fc256a85e87023
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e706b9e0d95c4084d0b234e81df03905e7aca5e
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984704"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473847"
 ---
 # <a name="update-plannerplandetails"></a>Atualizar plannerplandetails
 
 Namespace: microsoft.graph
 
-Atualize as propriedades do objeto **plannerplandetails** .
+Atualize as propriedades do **objeto plannerplandetails.**
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -35,7 +35,7 @@ PATCH /planner/plans/{id}/details
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | Último valor de ETag conhecido para o plannerPlanDetails a ser atualizado. Obrigatório.|
+| If-Match  | Último valor ETag conhecido para o plannerPlanDetails a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
@@ -43,11 +43,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|Um objeto que especifica as descrições das seis categorias que podem ser associadas a tarefas no plano|
-|sharedWith|[plannerUserIds](../resources/planneruserids.md)|Conjunto de IDs de usuário com as quais esse plano é compartilhado. Se você estiver aproveitando os grupos do Microsoft 365, use a API de grupos para gerenciar a associação de grupo para compartilhar o plano [do grupo](../resources/group.md) . Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de Propriedade do grupo.|
+|sharedWith|[plannerUserIds](../resources/planneruserids.md)|Conjunto de ids de usuário com as que esse plano é compartilhado. Se você estiver aproveitando grupos do Microsoft 365, use a API grupos para gerenciar a associação ao grupo para compartilhar o [plano do](../resources/group.md) grupo. Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de propriedade do grupo.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerPlanDetails](../resources/plannerplandetails.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `204 No Content` resposta e conteúdo vazio. Se a solicitação especificar o header com preferência, este método retornará um código de resposta e o objeto `Prefer` `return=representation` `200 OK` [plannerPlanDetails](../resources/plannerplandetails.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -64,6 +64,7 @@ Este é um exemplo da solicitação.
 PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
 Content-type: application/json
 Content-length: 212
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

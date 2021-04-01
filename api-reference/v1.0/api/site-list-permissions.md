@@ -5,19 +5,19 @@ author: BarrySh
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7beb13d789aae8b3e57be7ff10ea471620067e3e
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 33085513c2a6279a9c765fe43fa9eb8a025d1057
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176819"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473698"
 ---
 # <a name="list-permissions"></a>Listar permissões
 Namespace: microsoft.graph
 
 Obter os [recursos de](../resources/permission.md) permissão da propriedade de navegação de permissões em um site.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de objetos [permission](../resources/permission.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [de](../resources/permission.md) permissão no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -103,7 +103,7 @@ Content-Type: application/json
       "grantedToIdentities": [{
         "application": {
           "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-          "displayName": "Foo App"
+          "displayName": "Contoso Time Manager App"
         }
       }]
     },
@@ -113,7 +113,7 @@ Content-Type: application/json
       "grantedToIdentities": [{
         "application": {
           "id": "22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
-          "displayName": "Bar App"
+          "displayName": "Fabrikam Dashboard App"
         }
       }]
     }

@@ -5,17 +5,23 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 0a46ecda87e254a8fb7341412b7c75aca059d2a1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ebb237ec12d7f5526133e96d25652f5191d0fa23
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959281"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473784"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
 
+### <a name="consentrequestfilterbycurrentuseroptions-values"></a>valores consentRequestFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|revistor|
+|unknownFutureValue|
 ### <a name="externalemailotpstate-values"></a>valores externalEmailOtpState
 
 |Member|
@@ -29,7 +35,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|location|
+|localização|
 |aplicativo|
 
 ### <a name="fido2restrictionenforcementtype-values"></a>valores fido2RestrictionEnforcementType
@@ -50,7 +56,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|user|
+|usuário|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState values
@@ -95,7 +101,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|nenhum|
+|nenhuma|
 |adminsAndGuestInviters|
 |adminsGuestInvitersAndAllMembers|
 |everyone|
@@ -312,7 +318,7 @@ Namespace: microsoft.graph
 |incoming|
 |saída|
 
-### <a name="signinaudience-values"></a>Valores signInAudience
+### <a name="signinaudience-values"></a>signInAudience values
 
 |Member|
 |:---|
@@ -333,7 +339,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|nenhum|
+|nenhuma|
 |internal|
 |external|
 |externalPartner|
@@ -344,7 +350,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |signin|
-|user|
+|usuário|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>valores riskDetectionTimingType
@@ -409,7 +415,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|nenhum|
+|nenhuma|
 |car|
 |calendar|
 |running|
@@ -465,7 +471,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| nenhum
+| nenhuma
 | contactsOnly
 | all
 
@@ -554,7 +560,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| nenhum
+| nenhuma
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -586,7 +592,7 @@ Namespace: microsoft.graph
 | deviceDefault
 | banner
 | modal
-| nenhum
+| nenhuma
 
 ### <a name="deviceenrollmentfailurereason-values"></a>Valores deviceEnrollmentFailureReason
 
@@ -716,7 +722,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| description
+| descrição
 | referência
 
 
@@ -788,7 +794,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| nenhum
+| nenhuma
 | organizer
 | tentativelyAccepted
 | aceito
@@ -821,7 +827,7 @@ Namespace: microsoft.graph
 
 | Membro   |Valor
 |:---------|:--------
-| nenhum     | -1
+| nenhuma     | -1
 | preset0  | 0
 | preset1  | 1
 | preset2  | 2
@@ -835,7 +841,7 @@ Namespace: microsoft.graph
 | preset10 | 10 
 | preset11 | 11
 | preset12 | 12 
-| preset13 | 13 
+| preset13 | 13
 | preset14 | 14 
 | preset15 | 15 
 | preset16 | 16 
@@ -949,7 +955,7 @@ Enum para tipos de valor do Registro conforme definido por [/windows/desktop/sys
 |expandSz|5 | REG_EXPAND_SZ tipo de valor do Registro.|
 |vínculo|6 | REG_LINK tipo de valor do Registro.|
 |multiSz|7 | REG_MULTI_SZ tipo de valor do Registro.|
-|nenhum|8 | REG_NONE tipo de valor do Registro.|
+|nenhuma|8 | REG_NONE tipo de valor do Registro.|
 |qword|9 | REG_QWORD tipo de valor do Registro.|
 |qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro.|
 |sz|11| REG_SZ tipo de valor do Registro.|
@@ -1014,7 +1020,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|nenhum|
+|nenhuma|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -1066,7 +1072,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member
 |:-------------------------
-| nenhum
+| nenhuma
 | low
 | medium
 | high
@@ -1077,7 +1083,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member
 |:-------------------------
-| nenhum
+| nenhuma
 | confirmedSafe
 | remediado
 | dismissed
@@ -1116,7 +1122,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|nenhum|
+|nenhuma|
 |freeBusyRead|
 |limitedRead|
 |leitura|
@@ -1161,7 +1167,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | 0     | Ainda não sabemos.            |
-| user          | 1     | Envio do usuário.         |
+| usuário          | 1     | Envio do usuário.         |
 | administrator | 2     | Envio de administrador de locatário. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores threatAssessmentResultType
@@ -1176,7 +1182,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
-| nenhum                  | 0     | Ainda não sabemos.                       |
+| nenhuma                  | 0     | Ainda não sabemos.                       |
 | mailFlowRule          | 1     | Regra de transporte do Exchange.            |
 | safeSender            | 2     | Lista de remetentes seguros.                   |
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
@@ -1189,7 +1195,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | autoPurgeToJunk       | 10     | TimeTravel mover mensagem para lixo eletrônico.    |
 | autoPurgeToDeleted    | 11    | TimeTravel move a mensagem para excluída. |
 | outbound              | 12     | Email de saída.                      |
-| notJunk               | 13     | Permitir devido a não lixo eletrônico.              |
+| notJunk               | 13    | Permitir devido a não lixo eletrônico.              |
 | junk                  | 14     | Bloqueado devido a lixo eletrônico.                |
 | unknownFutureValue    | 15     | Um membro do sentinel.                  |
 
@@ -1197,7 +1203,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Valor |
 |:-----------------|
-| nenhum |
+| nenhuma |
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
@@ -1229,7 +1235,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 ### <a name="wellknownlistname-values"></a>valores wellknownListName
 | Member
 |:----------------------
-| nenhum
+| nenhuma
 | defaultList
 | flaggedEmails
 | unknownFutureValue
@@ -1288,7 +1294,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|nenhum|
+|nenhuma|
 |staple|
 |punch|
 |cover|
@@ -1350,5 +1356,12 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |shrinkToFit|
 |fill|
 |fit|
-|nenhum|
+|nenhuma|
 |unknownFutureValue|
+
+### <a name="teamworkactivitytopicsource-values"></a>valores de teamworkActivityTopicSource 
+
+| Member    |
+| :-------- |
+| entityUrl |
+| texto      |

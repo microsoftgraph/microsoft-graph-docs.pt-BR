@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 87a5fc5f29d23b6c9a7fbbe48b059066001d5419
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 6ccbd844e9bb8ccae4e7dd607cc78c28eaef5dc0
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176988"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473686"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). 
 
-Dependendo do tamanho da página e dos dados da caixa de correio, a obtenção de mensagens de uma caixa de correio pode incorrer em várias solicitações. O tamanho de página padrão é 10 mensagens. Use `$top` para personalizar o tamanho da página, dentro do intervalo de 1 e 1000.
+Dependendo do tamanho da página e dos dados da caixa de correio, a obtenção de mensagens de uma caixa de correio pode incorrer em várias solicitações. O tamanho de página padrão é 10 mensagens. Use `$top` para personalizar o tamanho da página, no intervalo de 1 a 1000.
 
-Para melhorar o tempo de resposta da operação, use para especificar as propriedades exatas de que você `$select` precisa; consulte [o exemplo 1](#example-1-list-all-messages) abaixo. Ajuste os valores para e, especialmente quando você deve usar um tamanho de página maior, pois retornar uma página com centenas de mensagens cada uma com uma carga de resposta completa pode disparar o tempo de vida do `$select` `$top` [gateway](/graph/errors#http-status-codes) (HTTP 504).
+Para melhorar o tempo de resposta da operação, use `$select` para especificar as propriedades exatas de que você precisa; consulte [exemplo 1](#example-1-list-all-messages) abaixo. Ajuste os valores para `$select` e `$top`, especialmente quando você deve usar um tamanho de página maior, pois retornar uma página com centenas de mensagens, cada uma com uma carga útil de resposta completa, pode acionar o [tempo limite do gateway](/graph/errors#http-status-codes) (HTTP 504).
 
 Para obter a próxima página de mensagens, basta aplicar a URL inteira retornada em `@odata.nextLink` à próxima solicitação de obtenção de mensagens. Esta URL inclui todos os parâmetros de consulta que você especificou na solicitação inicial. 
 
 Não tente extrair o valor `$skip` da URL `@odata.nextLink` para manipular respostas. Essa API usa o valor `$skip` para manter a contagem de todos os itens pelos quais passou na caixa de correio do usuário para retornar uma página de itens do tipo mensagem. Portanto, é possível que, mesmo na resposta inicial, o valor `$skip` seja maior que o tamanho da página. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
-Você pode filtrar as mensagens e obter apenas aquelas que incluem [uma](../resources/mention.md) menção do usuário entrar. Veja um [exemplo](#request-2) abaixo. Por padrão, a `GET /me/messages` operação não retorna a propriedade **menções.** Use o `$expand` parâmetro de consulta para encontrar detalhes de cada [menção em uma mensagem.](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message)
+Você pode filtrar as mensagens e obter apenas aquelas que incluem [uma](../resources/mention.md) menção do usuário que está dentro. Veja um [exemplo](#request-2) abaixo. Por padrão, `GET /me/messages` a operação não retorna a propriedade **mentions.** Use o `$expand` parâmetro de consulta para encontrar detalhes de cada [menção em uma mensagem](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message).
 
 Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
@@ -64,7 +64,7 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-Para obter todas as mensagens na caixa de correio do usuário que incluem **uma menção** do usuário:
+Para obter todas as mensagens na caixa de correio do usuário que incluem uma **menção** do usuário:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -75,7 +75,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Você pode usar `$filter` o parâmetro de consulta na propriedade **mentionsPreview** para obter as mensagens que mencionam o usuário assinado.
+Você pode usar `$filter` o parâmetro de consulta na propriedade **mentionsPreview** para obter as mensagens que mencionam o usuário de assinatura.
 
 ### <a name="using-filter-and-orderby-in-the-same-query"></a>Uso de filtro e orderby na mesma consulta
 Ao usar `$filter` e `$orderby` na mesma consulta para obter mensagens, lembre-se de especificar as propriedades das seguintes maneiras:
@@ -100,12 +100,12 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de objetos [message](../resources/message.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [de](../resources/message.md) mensagem no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-list-all-messages"></a>Exemplo 1: Listar todas as mensagens
 #### <a name="request"></a>Solicitação
-O primeiro exemplo obtém as 10 principais mensagens padrão na caixa de correio do usuário. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
+O primeiro exemplo obtém as 10 principais mensagens padrão na caixa de correio do usuário de entrada. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -147,105 +147,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$select=sender%2csubject&$skip=14",
-    "value": [
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
-            "id": "AAMkAGUAAAwTW09AAA=",
-            "subject": "You have late tasks!",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Planner",
-                    "address": "noreply@Planner.Office365.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
-            "id": "AAMkAGUAAAq5QKlAAA=",
-            "subject": "You have late tasks!",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Planner",
-                    "address": "noreply@Planner.Office365.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
-            "id": "AAMkAGUAAAq5QKkAAA=",
-            "subject": "Your Azure AD Identity Protection Weekly Digest",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Azure",
-                    "address": "azure-noreply@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
-            "id": "AAMkAGUAAAq5QKjAAA=",
-            "subject": "Use attached file",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
-            "id": "AAMkAGUAAAq5QKiAAA=",
-            "subject": "Original invitation",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
-            "id": "AAMkAGUAAAq5QKhAAA=",
-            "subject": "Koala image",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
-            "id": "AAMkAGUAAAq5QKgAAA=",
-            "subject": "Sales invoice template",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.eventMessageRequest",
-            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
-            "id": "AAMkAGUAAAq5T8tAAA=",
-            "subject": "Review strategy for Q3",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
+  "value": [
+    {
+      "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
+      "id": "AAMkAGUAAAwTW09AAA=",
+      "subject": "You have late tasks!",
+      "sender": {
+        "emailAddress": {
+          "name": "Microsoft Planner",
+          "address": "noreply@Planner.Office365.com"
         }
-    ]
+      }
+    }
+  ]
 }
 ```
 
-### <a name="example-2-use-filter-to-get-all-messages-satisfying-a-specific-condition"></a>Exemplo 2: Use $filter para obter todas as mensagens que satisfazem uma condição específica
+### <a name="example-2-use-filter-to-get-all-messages-satisfying-a-specific-condition"></a>Exemplo 2: use $filter para obter todas as mensagens que satisfazem uma condição específica
 #### <a name="request"></a>Solicitação
-O próximo exemplo filtra todas as mensagens na caixa de correio do usuário que o mencionam. Ele também usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
+O próximo exemplo filtra todas as mensagens na caixa de correio do usuário de entrada para aqueles que mencionam o usuário. Ele também usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
 
 O exemplo também incorpora a codificação de URL para os caracteres de espaço na cadeia de caracteres do parâmetro de consulta.
 
@@ -306,30 +227,14 @@ Content-length: 987
       "mentionsPreview":{
         "isMentioned":true
       }
-    },
-    {
-      "@odata.id":"https://graph.microsoft.com/beta/Users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/Messages('AQMkADJmMTUAAAjwVAAAA')",
-      "@odata.etag":"W/\"CQAAABYAAAAPFhK2FclcRbABBJhCde8iAAAAAEGj\"",
-      "id":"AQMkADJmMTUAAAjwVAAAA",
-      "receivedDateTime":"2016-07-21T07:40:20Z",
-      "subject":"Re: Start planning soon",
-      "sender":{
-        "emailAddress":{
-          "name":"Adele Vance",
-          "address":"AdeleV@contoso.com"
-        }
-      },
-      "mentionsPreview":{
-        "isMentioned":true
-      }
     }
   ]
 }
 ```
 
-### <a name="example-3-use-prefer-header-to-get-the-message-body-and-uniquebody-is-text-format"></a>Exemplo 3: Usar o header prefer para obter o corpo da mensagem e uniqueBody é o formato de texto
+### <a name="example-3-use-prefer-header-to-get-the-message-body-and-uniquebody-is-text-format"></a>Exemplo 3: use o header prefer para obter o corpo da mensagem e uniqueBody é o formato de texto
 #### <a name="request"></a>Solicitação
-O terceiro exemplo mostra como usar um header para obter o corpo e as propriedades `Prefer: outlook.body-content-type="text"` **uniqueBody** de cada mensagem no formato de texto. 
+O terceiro exemplo mostra como usar um header para obter as propriedades body e `Prefer: outlook.body-content-type="text"` **uniqueBody**  de cada mensagem no formato de texto.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -371,58 +276,30 @@ Note: The response includes a `Preference-Applied: outlook.body-content-type` he
   "@odata.type": "microsoft.graph.message",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2704
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)",
-    "value":[
-        {
-            "@odata.type":"#microsoft.graph.eventMessageRequest",
-            "@odata.etag":"W/\"CwAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj5\"",
-            "id":"AAMkAGIAAAoZCfIAAA=",
-            "subject":"Orientation ",
-            "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
-            "body":{
-                "contentType":"text",
-                "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
-            },
-            "uniqueBody":{
-                "contentType":"text",
-                "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
-            }
-        },
-        {
-            "@odata.etag":"W/\"CQAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj4\"",
-            "id":"AAMkAGIAAAoZCfHAAA=",
-            "subject":"Welcome to our group!",
-            "bodyPreview":"Welcome to our group, Dana! Hope you will enjoy working with us !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nTh",
-            "body":{
-                "contentType":"text",
-                "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nThanks!\r\n\r\n"
-            },
-            "uniqueBody":{
-                "contentType":"text",
-                "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\nThanks!\r\n"
-            }
-        },
-        {
-            "@odata.etag":"W/\"CQAAABYAAABmWdbhEgBXTophjCWt81m9AAAAAAjr\"",
-            "id":"AQMkAGIAAAIJTQAAAA==",
-            "subject":"Welcome aboard!",
-            "bodyPreview":"Welcome to the Support group!",
-            "body":{
-                "contentType":"text",
-                "content":"Welcome to the Support group!\r\n"
-            },
-            "uniqueBody":{
-                "contentType":"text",
-                "content":"Welcome to the Support group!\r\n"
-            }
-        }
-    ]
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)",
+  "value":[
+    {
+      "@odata.type":"#microsoft.graph.eventMessageRequest",
+      "@odata.etag":"W/\"CwAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj5\"",
+      "id":"AAMkAGIAAAoZCfIAAA=",
+      "subject":"Orientation ",
+      "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
+      "body":{
+        "contentType":"text",
+        "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
+      },
+      "uniqueBody":{
+        "contentType":"text",
+        "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
+      }
+    }
+  ]
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f56bab29e538afd8841ddd86a57b6a5456b969d8
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: a12e055c4972f7064cdf91239502b7bb54e5c787
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883197"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473812"
 ---
 # <a name="create-plannerplan"></a>Criar plannerPlan
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo **plannerPlan**.
+Criar um novo **plannerPlan**.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | Tasks.ReadWrite, Group.ReadWrite.All                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,9 +47,9 @@ POST /planner/plans
 ## <a name="request-body"></a>Corpo da solicitação
 
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md).
-A propriedade do contêiner **plannerPlan** deve ser definida.
+A propriedade de contêiner **plannerPlan** deve ser definida.
 
->**Observação:** Se o contêiner for um grupo do Microsoft 365, o usuário que está criando o plano deverá ser um membro do grupo que conterá o plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
+>**Observação:** Se o contêiner for um grupo do Microsoft 365, o usuário que estiver criando o plano deverá ser um membro do grupo que conterá o plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
 
 ## <a name="response"></a>Resposta
 

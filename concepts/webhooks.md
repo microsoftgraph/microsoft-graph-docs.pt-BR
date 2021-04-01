@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 046610705fe4d8a2e44f5adf35b0ae7797eee383
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: fda7792cab92391aba441ec62004ffb604f3ac3c
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934629"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469441"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -90,9 +90,11 @@ Ao se inscrever em recursos do Outlook, tais como **mensagens**, **eventos** ou 
 
 `/users/sh.o'neal@contoso.com/messages`
 
-Use: 
+Use:
 
 `/users/{guid-user-id}/messages`
+
+É permitido um máximo de 1000 assinaturas ativas por caixa de correio para todos os aplicativos.
 
 ### <a name="teams-resource-limitations"></a>Limitações de recursos do Teams
 

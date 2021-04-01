@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 99452fa19be003bbd4edf02dbb814a8f685169a9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 314d49f3325ebe6966a8a55bf9325779e91a26bd
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444762"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473721"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -80,7 +80,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2020-01-01T19
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -125,14 +125,14 @@ Content-length: 354
 {
   "value": [
     {
-      "originalStartTimeZone": "originalStartTimeZone-value",
-      "originalEndTimeZone": "originalEndTimeZone-value",
+      "originalStartTimeZone": "Pacific Standard Time",
+      "originalEndTimeZone": "Pacific Standard Time",
       "responseStatus": {
-        "response": "",
+        "response": "accepted",
         "time": "2016-10-19T10:37:00Z"
       },
-      "uid": "iCalUId-value",
-      "reminderMinutesBeforeStart": 99,
+      "uid": "040000008200E00074C5B7101A82E00800000000D3D70B8A6A17D70100000000000000001000000074665914A06C3F49BB4B7D7EEE4304DA",
+      "reminderMinutesBeforeStart": 15,
       "isReminderOn": true
     }
   ]

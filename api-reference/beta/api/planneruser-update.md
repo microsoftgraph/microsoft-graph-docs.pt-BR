@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 20c50b423962e9c8289ba3c00556deeba22b50e4
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 0555d7ccfd843fbfac3cf51fe43c61e16930421a
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474026"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473924"
 ---
 # <a name="update-planneruser"></a>Atualizar plannerUser
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Tasks.ReadWrite, Group.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|Alterações na coleção que contém as referências aos planos que o usuário exibiu recentemente.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [plannerUser](../resources/planneruser.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `204 No Content` resposta e conteúdo vazio. Se a solicitação especificar o header com preferência, este método retornará um código de resposta e um `Prefer` `return=representation` objeto `200 OK` [plannerUser](../resources/planneruser.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 ## <a name="example"></a>Exemplo
@@ -66,6 +66,7 @@ Ele também atualiza o último tempo de exibição do plano "jd8S5gOaFk2S8aWCIAJ
 PATCH https://graph.microsoft.com/beta/me/planner
 Content-type: application/json
 Content-length: 504
+Prefer: return=representation
 If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
 
 {

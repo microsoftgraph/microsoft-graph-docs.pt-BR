@@ -3,12 +3,12 @@ title: Use o Postman com a API do Microsoft Graph
 description: Use a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph em questão minutos.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 34be5bab88acbd7545caa958db0809a010660fb4
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 04668cd76a7d8ca298e2ad16483be902c59983c5
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059683"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469042"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Use o Postman com a API do Microsoft Graph
 Você pode usar a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph em questão minutos.
@@ -59,8 +59,8 @@ Para usar essa coleção no próprio locatário de desenvolvedor, crie um aplica
 
 O aplicativo do Azure AD agora tem permissões para fazer solicitações em nome de um usuário para chamar Mail.Read e como aplicativo do User.Read.All.
 
-## <a name="step-4---configuring-authentication"></a>Etapa 4 - Configurando a autenticação
-Configure algumas variáveis ​​de ambiente usadas para recuperar um token de acesso.
+## <a name="step-4---configuring-authentication-in-postman"></a>Etapa 4 - Configurando autenticação no Postman
+Vá para o Postman e certifique-se de ter selecionado o espaço de trabalho criado na etapa 1. Configure algumas variáveis ​​de ambiente usadas para recuperar um token de acesso.
 
 1. Clique no ícone de olho no canto superior direito próximo ao menu suspenso **Nenhum ambiente**.
 2. Clique em **Adicionar** no canto superior direito desse pop-up.

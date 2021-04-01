@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 38f9d9ac6fbe3b2ccbd6589f51935b8b2601c641
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b68afeb4a44247e16c101b961288a43e8687e0d6
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975658"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473707"
 ---
 # <a name="list-joinedteams"></a>Listar joinedTeams
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos da[equipe](../resources/team.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -97,12 +97,11 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "31aa74dd-dd65-43ac-8c4e-0ec1ae5a8ee1"
     }
   ]
 }

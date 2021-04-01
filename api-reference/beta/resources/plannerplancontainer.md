@@ -5,30 +5,33 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 8b3abb10892077159e6f02c33a31d501a75dba2a
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: acb7a85683bc94795953e524ee9630d6cfc01f24
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883225"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473882"
 ---
 # <a name="plannerplancontainer-resource-type"></a>Tipo de recurso plannerPlanContainer
 
 Namespace: microsoft.graph
 
-Representa um contêiner para um [plannerPlan](plannerPlan.md). O contêiner é um recurso que especifica as regras de autorização e o tempo de vida do plano. Isso significa que somente as pessoas autorizadas a trabalhar com o recurso que contém o plano poderão trabalhar com o plano e as tarefas dentro dele. Quando o recurso que contém é excluído, os planos contidos também são excluídos. As propriedades **de plannerPlanContainer** não podem ser alteradas depois que o plano é criado.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualmente, o Planner oferece suporte aos tipos de contêiner listados na tabela a seguir. Ao criar um plano, a **propriedade containerUrl** deve ser especificada com o caminho do recurso identificado na tabela.
+Representa um contêiner para um [plannerPlan](plannerPlan.md). O contêiner é um recurso que especifica as regras de autorização e o tempo de vida do plano. Isso significa que somente as pessoas que estão autorizadas a trabalhar com o recurso que contém o plano poderão trabalhar com o plano e as tarefas dentro dele. Quando o recurso que contém é excluído, os planos contidos também são excluídos. As propriedades **do plannerPlanContainer** não podem ser alteradas após a criação do plano.
+
+No momento, o Planner dá suporte aos tipos de contêiner listados na tabela a seguir. Ao criar um plano, a **propriedade containerUrl** deve ser especificada com o caminho do recurso identificado na tabela.
 
 |Tipo|Descrição|Caminho para o recurso|
 |----|-----------|--------------------|
-|group| O plano está contido em um grupo.| https://graph.microsoft.com/v1.0/groups/&lt;id&gt;|
+|group| O plano está contido em um [grupo](group.md).| https://graph.microsoft.com/beta/groups/&lt;id&gt;|
+|roster| O plano está contido por [um plannerRoster](plannerroster.md) | https://graph.microsoft.com/beta/planner/rosters/&lt;id&gt;|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |containerId|String|O identificador do recurso que contém o plano.|
-|type|plannerContainerType| O tipo do recurso que contém o plano. Consulte a tabela anterior para ver os tipos com suporte. Os valores possíveis são: `group` e `unknownFutureValue`.|
+|tipo|plannerContainerType| O tipo do recurso que contém o plano. Consulte a tabela anterior para tipos com suporte. Os valores possíveis são: `group`, `roster`, `unknownFutureValue`.|
 |url|Cadeia de caracteres|A URL canônica completa do contêiner.|
 
 ## <a name="relationships"></a>Relações

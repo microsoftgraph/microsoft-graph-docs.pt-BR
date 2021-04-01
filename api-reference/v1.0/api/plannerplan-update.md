@@ -1,29 +1,29 @@
 ---
 title: Atualizar plannerPlan
-description: Atualiza as propriedades de um objeto **plannerPlan** .
+description: Atualize as propriedades de um **objeto plannerPlan.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c9dda21c2cedb31d681d64a16ff0e4d1fdf9387e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c64647ae3e7508fdeb4971d62e333f9a6f512f9
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020656"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473854"
 ---
 # <a name="update-plannerplan"></a>Atualizar plannerPlan
 
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto **plannerPlan** .
+Atualize as propriedades de um **objeto plannerPlan.**
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -38,19 +38,19 @@ PATCH /planner/plans/{plan-id}
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | Último valor de ETag conhecido para o plannerPlan a ser atualizado. Obrigatório.|
+| If-Match  | Último valor conhecido de ETag para o plannerPlan ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores de campos relevantes a serem atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores para campos relevantes a ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|proprietário|String|[Grupo](../resources/group.md) `id` pelo qual o plano é proprietário. Deve haver um grupo válido para que esse campo possa ser definido. Uma vez definido, isso só pode ser atualizado pelo proprietário.|
+|owner|String|[Grupo](../resources/group.md) `id` pelo qual o plano pertence. Deve haver um grupo válido para que esse campo possa ser definido. Depois de definido, isso só pode ser atualizado pelo proprietário.|
 |title|String|Título do plano.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [plannerPlan](../resources/plannerplan.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `204 No Content` resposta e conteúdo vazio. Se a solicitação especificar o header com preferência, este método retornará um código de resposta e um `Prefer` `return=representation` objeto `200 OK` [plannerPlan](../resources/plannerplan.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -67,6 +67,7 @@ Este é um exemplo da solicitação.
 PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 Content-type: application/json
 Content-length: 29
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

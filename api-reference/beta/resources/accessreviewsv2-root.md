@@ -5,14 +5,14 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 9142a91d2558adc351d43a372e20fe02b909b898
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 931541b6f730c0ed52168b4cf3dfef4e927d808a
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469301"
+ms.locfileid: "51473420"
 ---
-# <a name="azure-ad-access-reviews-for-groups"></a>Avaliações de acesso do Azure AD para grupos
+# <a name="azure-ad-access-reviews"></a>Revisões de acesso ao Azure AD
 
 Namespace: microsoft.graph
 

@@ -5,24 +5,24 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c279d4e5074723a8fac1c37ec326efc9517b95da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b6efef1f2da8473f1ab5a624f1f40df0eca7faaa
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967916"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473742"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos **plannerTask** associados a um objeto [plannerBucket](../resources/plannerbucket.md) .
+Recupere uma lista de objetos **plannerTask** associados a um [objeto plannerBucket.](../resources/plannerbucket.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 

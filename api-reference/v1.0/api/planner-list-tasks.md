@@ -1,28 +1,28 @@
 ---
 title: Listar tarefas
-description: Recupere uma lista de objetos **plannertask** .
+description: Recupere uma lista de objetos **plannertask.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: bfb0b6608aabecc3584064587350ec70b5bfed65
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 0c086e8bfdb6fbbe86606e46c13ee42067388c4c
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458350"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473791"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos **plannertask** .
-## <a name="permissions"></a>Permissions
+Recupere uma lista de objetos **plannertask.**
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /planner/tasks
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método requer que o [filtro](/graph/query-parameters) de PlanID seja especificado.
+Este método exige [que](/graph/query-parameters) o filtro planId seja especificado.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

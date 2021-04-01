@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f6d2816fdd5dbf308709b8a511484f523e8c72ad
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 5891897fb76a356be577f242b1ae5e7648b0e8fb
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775168"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473448"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate: instaurá-lo
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)        |
 | :------------------------------------- | :------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Application.ReadWrite.All, Directory.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Application.ReadWrite.All, Directory.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                     |
-| Aplicativo                            | Application.ReadWrite.All, Directory.ReadWrite.All |
+| Aplicativo                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

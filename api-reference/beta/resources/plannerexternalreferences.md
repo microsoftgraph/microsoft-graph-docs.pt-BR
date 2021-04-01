@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso plannerExternalReferences
-description: O recurso **plannerExternalReferences** representa a coleção de referências em uma tarefa. Este é um tipo aberto. Ele faz parte do objeto de detalhes da tarefa. O valor no par propriedade-valor é o objeto externalReference.
+title: Tipo de recurso plannerExternalReferences
+description: O **recurso plannerExternalReferences** representa a coleção de referências em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto de detalhes da tarefa. O valor no par de valores de propriedade é o objeto externalReference.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 5c67aadd421d4f7ac3ac96527dc85deef33de722
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 00d69ce50c3bfa1d5a9adca28ffae6ed88a9dc33
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330317"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473560"
 ---
-# <a name="plannerexternalreferences-resource-type"></a>tipo de recurso plannerExternalReferences
+# <a name="plannerexternalreferences-resource-type"></a>Tipo de recurso plannerExternalReferences
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **plannerExternalReferences** representa a coleção de referências em uma tarefa. Este é um tipo aberto. Ele faz parte do objeto de [detalhes da tarefa](plannertaskdetails.md) . O valor no par propriedade-valor é o objeto [externalReference](plannerexternalreference.md) .
+O **recurso plannerExternalReferences** representa a coleção de referências em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto [de detalhes da](plannertaskdetails.md) tarefa. O valor no par de valores de propriedade é o [objeto externalReference.](plannerexternalreference.md)
 
 
 ## <a name="properties"></a>Propriedades
-As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **URLs válidas** com base nos protocolos **http/https** como propriedades e seus valores devem ser os objetos [externalReference](plannerexternalreference.md) . Com base em OData, os nomes de propriedade em tipos abertos não podem conter os seguintes caracteres: `.` , `:` e, `%`  portanto, precisam ser codificados. O exemplo é mostrado abaixo. Para remover uma referência, defina o valor da propriedade como `null` .
+As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **URLs válidas** com base nos protocolos **HTTP/HTTPS** como propriedades e seus valores devem ser [os objetos externalReference.](plannerexternalreference.md) Com base em OData, os nomes de propriedades em Tipos Abertos não podem conter os seguintes caracteres: , , , , portanto, eles precisam `.` `:` ser `%` `@` `#` codificados. Exemplo é mostrado abaixo. Para remover uma referência, de definir o valor da propriedade como `null` .
 
 ## <a name="json-representation"></a>Representação JSON
 

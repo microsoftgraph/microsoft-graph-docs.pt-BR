@@ -1,28 +1,28 @@
 ---
 title: Atualizar plannerProgressTaskBoardTaskFormat
-description: Atualize as propriedades do objeto **plannerProgressTaskBoardTaskFormat** .
+description: Atualize as propriedades **do objeto plannerProgressTaskBoardTaskFormat.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e31a78844b98080e91ec76e2e6c35ced3c78ac2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e2c70aad52ed1a28de9334f8d847a3c7be1ac8f
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967895"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473833"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>Atualizar plannerProgressTaskBoardTaskFormat
 
 Namespace: microsoft.graph
 
-Atualize as propriedades do objeto **plannerProgressTaskBoardTaskFormat** .
+Atualize as propriedades **do objeto plannerProgressTaskBoardTaskFormat.**
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -42,11 +42,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|orderHint|String|O valor de dica usado para ordenar a tarefa no modo de exibição de progresso do quadro de tarefas. O formato é definido conforme descrito [aqui](../resources/planner-order-hint-format.md).|
+|orderHint|String|Valor de dica usado para ordenar a tarefa no modo de exibição Progresso do Quadro de Tarefas. O formato é definido como descrito [aqui](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `204 No Content` resposta e conteúdo vazio. Se a solicitação especificar o header com preferência, este método retornará um código de resposta e o objeto `Prefer` `return=representation` `200 OK` [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -63,6 +63,7 @@ Este é um exemplo da solicitação.
 PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/progressTaskBoardFormat
 Content-type: application/json
 Content-length: 34
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

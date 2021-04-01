@@ -1,27 +1,29 @@
 ---
 title: Adicionar membro
-description: Adicionar um membro a um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **members** .
+description: Adicionar um membro a um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **members**.
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 17321cff45b4d1af9cf625ce47002b934953b948
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: d7272266893579d0524423a7bd968ad56ff7e694
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796959"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469000"
 ---
 # <a name="add-member"></a>Adicionar membro
 
 Namespace: microsoft.graph
 
-Adicione um membro a um grupo do Microsoft 365 ou a um grupo de segurança através da propriedade de navegação de **membros** .
+Adicione um membro a um grupo do Microsoft 365 ou a um grupo de segurança através da propriedade de navegação de **membros**.
 
 É possível adicionar usuários, contatos organizacionais, entidades de serviço ou outros grupos. 
 
 > [!IMPORTANT]
-> Só é possível adicionar usuários aos grupos do Microsoft 365 e segurança gerenciados pela nuvem.
+> + Só é possível adicionar usuários aos grupos do Microsoft 365 e segurança gerenciados pela nuvem.
+> + Não é possível adicionar grupos de segurança a grupos do Microsoft 365.
+> + Não é possível adicionar grupos do Microsoft 365 a grupos de segurança ou a outros grupos do Microsoft 365.
 
 ## <a name="permissions"></a>Permissões
 

@@ -1,15 +1,15 @@
 ---
-title: Receba notificações sobre alterações por diferentes maneiras de envio(versão prévia)
+title: Receba notificações de alterações de maneiras diferentes
 description: As notificações de alteração podem ser enviadas por meio de tecnologias diferentes, incluindo o webhooks e Hubs de Eventos do Azure.
-author: davidmu1
+author: Jumaodhiss
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: f48f22a286235ad9863b2ec79a554250c82897ab
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 2cb6000b309b9bcaf5af840cc26976c7254d2d96
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910273"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469098"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways-preview"></a>Receba notificações sobre alterações por diferentes maneiras de envio(versão prévia)
 

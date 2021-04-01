@@ -1,16 +1,16 @@
 ---
 title: Listar tarefas
-description: Recupere uma lista de objetos **plannertask** .
+description: Recupere uma lista de objetos **plannertask.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a7bae4d52955568216dc60e2648d7e96d5ab9151
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c5edeb00560689d528dcd0b747302f951853637b
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973779"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473735"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos **plannertask** .
+Recupere uma lista de objetos **plannertask.**
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /planner/tasks
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método requer que o [filtro](/graph/query-parameters) de PlanID seja especificado.
+Este método exige [que](/graph/query-parameters) o filtro planId seja especificado.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

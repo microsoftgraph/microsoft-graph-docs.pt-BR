@@ -4,13 +4,13 @@ description: Conceder uma atribuição de função de aplicativo a uma entidade 
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: 1a97262b4671d70adbbb5daf3dc448cfc5a25db5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+author: psignoret
+ms.openlocfilehash: 9c3a06f2710b234430811fdaecaee1cdb661dca7
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962525"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51467950"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>Conceder um appRoleAssignment a uma entidade de serviço
 
@@ -33,9 +33,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All    |
+|Delegada (conta corporativa ou de estudante) | AppRoleAssignment. ReadWrite.All, Directory. ReadWrite.All, Directory. AccessAsUser.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | AppRoleAssignment.ReadWrite.All, |
+|Aplicativo | AppRoleAssignment. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -68,11 +68,9 @@ Se tiver êxito, este método retornará um código de resposta `201 Created` e 
 
 Este é um exemplo da solicitação.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_create_approleassignment_2"
+  "name": "serviceprincipal_create_approleassignment"
 }-->
 
 ```http
@@ -80,31 +78,13 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/9028d19c-26a9-4809-8e3f-
 Content-Type: application/json
 
 {
-  "principalId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
-  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
-  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7"
+  "principalId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "resourceId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
+  "appRoleId": "498476ce-e0fe-48b0-b801-37ba7e2685c6"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-create-approleassignment-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-create-approleassignment-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-create-approleassignment-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-Nesse exemplo, a `{id}` e o `{principalId-value}` seriam as `id` da entidade de serviço de cliente atribuída e o `{resourceId}` seria a `id` da entidade de serviço de recurso (a API).
+Neste exemplo, observe que o valor usado como a **id** da entidade de serviço na URL de solicitação (`9028d19c-26a9-4809-8e3f-20ff73e2d75e`) é o mesmo que o da propriedade **principalId** no corpo. O valor **resourceId** é a **id** da entidade de serviço do recurso (a API)
 
 ### <a name="response"></a>Resposta
 
@@ -125,13 +105,13 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appRoleAssignments/$entity",
   "id": "2jLOj0YSe0OZzXbR1Gd71fDqFUrPM1xIgUfvWBHJ9n0",
-  "creationTimestamp": "2021-02-15T16:39:38.2975029Z",
-  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7",
-  "principalDisplayName": "Remote living",
-  "principalId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
-  "principalType": "Group",
-  "resourceDisplayName": "Yammer",
-  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
+  "createdDateTime": "2021-02-15T16:39:38.2975029Z",
+  "appRoleId": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
+  "principalDisplayName": "Fabrikam App",
+  "principalId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "8fce32da-1246-437b-99cd-76d1d4677bd5"
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 33865876b1750c13c6f2eec77aa09f4fa57191d2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0b3d8d9826ae8ebd77ef8ede529a0f7327357be5
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957100"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473693"
 ---
 # <a name="list-manager"></a>Listar gerente
 
@@ -53,9 +53,9 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 Este método oferece suporte aos parâmetros de consulta `$select` e `$expand`[OData](/graph/query-parameters)para ajudar a personalizar a resposta.  
 
 >**Observação:** 
-> + O valor de pode ser (para retornar todos `n` os `$levels` `max` gerentes) ou um número entre 1 e 1000.  
+> + O valor `n` de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.  
 > + Quando o `$levels` parâmetro não for especificado, apenas o gerente imediato será retornado.  
-> + Você pode especificar `$select` dentro para selecionar as propriedades do gerente `$expand` individual. O `$levels` parâmetro é necessário: `$expand=manager($levels=max;$select=id,displayName)`
+> + Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades do gerente individual. O parâmetro `$levels` é obrigatório: `$expand=manager($levels=max;$select=id,displayName)`
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 
 ---
 
-
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
@@ -122,7 +121,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "<user-id>",
+  "id": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
   "displayName": "Sara Davis",
   "jobTitle": "Finance VP",
   "mail": "SaraD@contoso.onmicrosoft.com",
@@ -161,20 +160,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "<user1-id>",
-    "displayName": "Individual Contributor",
+  "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8",
+  "displayName": "Individual Contributor",
+  "manager": {
+    "id": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
+    "displayName": "Alex Wilber",
     "manager": {
-        "id": "<manager1-id>",
-        "displayName": "Manager 1",
-        "manager": {
-            "id": "<manager2-id>",
-            "displayName": "Manager 2",
-            "manager": {
-                "id": "<manager3-id>",
-                "displayName": "Manager 3"
-            }
-        }
+      "id": "343a3f95-377c-47a9-b697-480487bfcdf7",
+      "displayName": "Bianca Pisani",
+      "manager": {
+        "id": "8e07b731-5ba7-4081-b482-15e6eca35c45",
+        "displayName": "Patti Fernandez"
+      }
     }
+  }
 }
 ```
 

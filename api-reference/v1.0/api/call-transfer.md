@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 52b9d681c9eb56fe7428634d253adf5b6c0cc545
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 59b009aed4440fd30a4b038bc4eb40eba208c5ef
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958616"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473441"
 ---
 # <a name="call-transfer"></a>call: transfer
 
@@ -49,7 +49,6 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|O participante que é o destino da transferência.|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `202 Accepted`.
@@ -83,8 +82,7 @@ Content-Length: 430
       }
     },
     "replacesCallId": "replacesCallId-value"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -275,8 +273,7 @@ Content-Type: application/json
       }
     },
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 

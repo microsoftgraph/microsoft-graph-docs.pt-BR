@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ca29bdc8f33ed7aab9b79f59f8f1b29e3d88a636
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 15c3c855e5d1ce42d4f154886aac4760015282f4
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721919"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51474050"
 ---
 # <a name="list-user-transitive-memberof"></a>Listar usuário transitivo memberOf
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obter grupos, funções de diretório das quais o usuário é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o usuário é membro aninhado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -149,9 +149,9 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`893`
+893
+```
 
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>Exemplo 3: Usar a conversão OData para obter apenas uma contagem de associação transitiva em grupos
 
@@ -178,9 +178,9 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`588`
+588
+```
 
 ### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Exemplo 4: use $search e OData cast para obter associação transitiva em grupos com nomes de exibição que contêm as letras 'camada' incluindo uma contagem de objetos retornados
 

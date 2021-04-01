@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2cc3e747e70626d83817660ed02254689d447ae6
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 7a680b7c7fb77b9962aecf13ad39f9d7a87a6372
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516763"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473931"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    |
-|Aplicativo | Calendars.Read, Calendars.ReadWrite |
+|Delegada (conta corporativa ou de estudante) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Aplicativo | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Calendar](../resources/calendar.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/me/calendars
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

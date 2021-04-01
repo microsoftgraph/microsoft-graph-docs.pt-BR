@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: bb159956728639bd414cf08d76fe3136f432b2b8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0930c625bb3aea20f65c5ba3194d5f550a6d3c59
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953380"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51469070"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -663,13 +663,15 @@ A permissão _Directory.ReadWrite.All_ concede os seguintes privilégios:
 
 - Leitura completa de todos os recursos de diretório (propriedades declaradas e propriedades de navegação)
 - Criar e atualizar usuários
-- Desabilitar e habilitar usuários (mas não o administrador da empresa)
-- Definir a id de segurança alternativa do usuário (mas não administradores)
+- Desabilitar e habilitar usuários (mas não o Administrador da Empresa)
+- Definir o identificador de segurança alternativa do usuário (mas não administradores)
 - Criar e atualizar grupos
 - Gerenciar associações do grupo
 - Atualizar o proprietário do grupo
 - Gerenciar as atribuições de licença
 - Definir as extensões de esquema em aplicativos
+- Gerenciar configurações de diretório
+- Gerenciar a configuração do fluxo de trabalho de consentimento do administrador (mas não se o consentimento do administrador é necessário ou quem está autorizado a conceder o consentimento do administrador)
 
 > **Observação**:
 > - Nenhum direito de redefinir senhas de usuários.
@@ -1250,7 +1252,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -2200,7 +2202,7 @@ Para contas corporativas ou de estudante, o perfil completo inclui todas as prop
 - mobilePhone
 - mySite
 - pastProjects
-- Foto
+- photo
 - preferredName
 - responsibilities
 - schools
@@ -2217,7 +2219,7 @@ A permissão _User.ReadBasic.All_ restringe o acesso do aplicativo a um conjunto
 - displayName
 - givenName
 - Email
-- Foto
+- photo
 - surname
 - userPrincipalName
 

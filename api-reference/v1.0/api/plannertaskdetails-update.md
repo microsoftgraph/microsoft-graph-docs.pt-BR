@@ -1,28 +1,28 @@
 ---
 title: Atualizar plannertaskdetails
-description: Atualize as propriedades do objeto **plannertaskdetails** .
+description: Atualize as propriedades do **objeto plannertaskdetails.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ea626e17954cf0c3c3813e7f4a00df1faf447bf5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 697a58c006758c535489c51371ffea81bfa99376
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967860"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473819"
 ---
 # <a name="update-plannertaskdetails"></a>Atualizar plannertaskdetails
 
 Namespace: microsoft.graph
 
-Atualize as propriedades do objeto **plannertaskdetails** .
+Atualize as propriedades do **objeto plannertaskdetails.**
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -35,21 +35,21 @@ PATCH /planner/tasks/{id}/details
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | Último valor de ETag conhecido para o **plannerTaskDetails** a ser atualizado. Obrigatório.|
+| If-Match  | Último valor ETag conhecido para o **plannerTaskDetails** a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|verificação|[plannerChecklistItems](../resources/plannerchecklistitems.md)|A coleção de itens de lista de verificação na tarefa.|
-|description|String|Descrição da tarefa|
-|previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida é escolhido pelo aplicativo que está exibindo a tarefa.|
-|Referencie|[plannerExternalReferences](../resources/plannerexternalreferences.md)|A coleção de referências na tarefa.|
+|checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|A coleção de itens de lista de verificação na tarefa.|
+|descrição|String|Descrição da tarefa|
+|previewType|cadeia de caracteres|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida, é escolhido pelo aplicativo exibindo a tarefa.|
+|referências|[plannerExternalReferences](../resources/plannerexternalreferences.md)|A coleção de referências na tarefa.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerTaskDetails](../resources/plannertaskdetails.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `204 No Content` resposta e conteúdo vazio. Se a solicitação especificar o header com preferência, este método retornará um código de resposta e o objeto `Prefer` `return=representation` `200 OK` [plannerTaskDetails](../resources/plannertaskdetails.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -66,6 +66,7 @@ Este é um exemplo da solicitação.
 PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 Content-type: application/json
 Content-length: 857
+Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {

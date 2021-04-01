@@ -1,28 +1,28 @@
 ---
 title: Get plannerPlan
-description: Recupere as propriedades e os relacionamentos do objeto **plannerplan** .
+description: Recupere as propriedades e as relações do **objeto plannerplan.**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0d66a4b0e258cfb4af458e8e748d921d844767eb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 570be9cfe55b6c41ed0e2bf44a4566e41da92ea8
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020654"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473868"
 ---
 # <a name="get-plannerplan"></a>Get plannerPlan
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto [plannerplan](../resources/plannerplan.md) .
+Recupere as propriedades e as relações de um [objeto plannerplan.](../resources/plannerplan.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -41,7 +41,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
