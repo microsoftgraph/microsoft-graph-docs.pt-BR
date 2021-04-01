@@ -455,7 +455,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -1600,7 +1600,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-      - name: Reserva de clientes (prévia)
+      - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Visão Geral
@@ -10681,6 +10681,30 @@ items:
                         href: api/riskyusers-dismiss.md
               - name: Provedor de identidade
                 items:
+                  - name: Base do provedor de identidade
+                    href: resources/identityproviderbase.md
+                  - name: Provedor de identidade integrado
+                    href: resources/builtinidentityprovider.md
+                  - name: Provedor de identidade social
+                    href: resources/socialidentityprovider.md
+                  - name: Provedor de identidade da Apple
+                    href: resources/appleidentityprovider.md
+                  - name: Provedor de identidade do OpenID Connect
+                    href: resources/openidconnectidentityprovider.md
+                  - name: Listar
+                    href: api/identityproviderbase-list.md
+                  - name: Criar
+                    href: api/identityproviderbase-post-identityproviders.md
+                  - name: Obter
+                    href: api/identityproviderbase-get.md
+                  - name: Atualizar
+                    href: api/identityproviderbase-update.md
+                  - name: Excluir
+                    href: api/identityproviderbase-delete.md
+                  - name: Listar os tipos de provedor disponíveis
+                    href: api/identityproviderbase-list-availableprovidertypes.md
+              - name: Provedor de identidade (preterido)
+                items:
                   - name: Tipo de provedor de identidade
                     href: resources/identityprovider.md
                   - name: Tipo de provedor de identidade do OpenID Connect
@@ -12469,7 +12493,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta

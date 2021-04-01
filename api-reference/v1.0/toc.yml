@@ -413,7 +413,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -4374,51 +4374,51 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
                       - name: Atualizar
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
-      - name: Governança
-        items:
-          - name: Solicitações de consentimento
-            href: resources/consentrequests-root.md
+          - name: Governança
             items:
-              - name: Política de solicitação de consentimento do administrador
-                href: resources/adminconsentrequestpolicy.md
+              - name: Solicitações de consentimento
+                href: resources/consentrequests-root.md
                 items:
+                  - name: Política de solicitação de consentimento do administrador
+                    href: resources/adminconsentrequestpolicy.md
+                    items:
+                      - name: Obter
+                        href: api/adminconsentrequestpolicy-get.md
+                      - name: Atualizar
+                        href: api/adminconsentrequestpolicy-update.md
+                  - name: Solicitações de consentimento do aplicativo
+                    href: resources/appconsentrequest.md
+                    items:
+                      - name: Lista
+                        href: api/appconsentrequest-list.md
+                      - name: Obter
+                        href: api/appconsentrequest-get.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/appconsentrequest-filterByCurrentUser.md
+                  - name: Solicitações de consentimento do usuário
+                    href: resources/userconsentrequest.md
+                    items:
+                      - name: Lista
+                        href: api/userconsentrequest-list.md
+                      - name: Obter
+                        href: api/userconsentrequest-get.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/userconsentrequest-filterByCurrentUser.md
+              - name: Termos de uso
+                href: resources/agreement.md
+                items:
+                  - name: Listar
+                    href: api/agreement-list.md
+                  - name: Criar
+                    href: api/agreement-post-agreements.md
                   - name: Obter
-                    href: api/adminconsentrequestpolicy-get.md
+                    href: api/agreement-get.md
                   - name: Atualizar
-                    href: api/adminconsentrequestpolicy-update.md
-              - name: Solicitações de consentimento do aplicativo
-                href: resources/appconsentrequest.md
-                items:
-                  - name: Lista
-                    href: api/appconsentrequest-list.md
-                  - name: Obter
-                    href: api/appconsentrequest-get.md
-                  - name: Filtrar pelo usuário atual
-                    href: api/appconsentrequest-filterByCurrentUser.md
-              - name: Solicitações de consentimento do usuário
-                href: resources/userconsentrequest.md
-                items:
-                  - name: Lista
-                    href: api/userconsentrequest-list.md
-                  - name: Obter
-                    href: api/userconsentrequest-get.md
-                  - name: Filtrar pelo usuário atual
-                    href: api/userconsentrequest-filterByCurrentUser.md
-          - name: Termos de uso
-            href: resources/agreement.md
-            items:
-              - name: Listar
-                href: api/agreement-list.md
-              - name: Criar
-                href: api/agreement-post-agreements.md
-              - name: Obter
-                href: api/agreement-get.md
-              - name: Atualizar
-                href: api/agreement-update.md
-              - name: Excluir
-                href: api/agreement-delete.md
-              - name: Listar status de aceitação
-                href: api/user-list-agreementacceptances.md
+                    href: api/agreement-update.md
+                  - name: Excluir
+                    href: api/agreement-delete.md
+                  - name: Listar status de aceitação
+                    href: api/user-list-agreementacceptances.md
       - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
@@ -5009,7 +5009,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -5216,7 +5216,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
