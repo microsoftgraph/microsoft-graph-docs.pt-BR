@@ -3,14 +3,14 @@ title: tipo de recurso locatedRiskEvent
 description: 'Um evento de risco detectado pela Proteção de Identidade do Azure Active Directory que se baseia nos dados de localização. Os tipos de eventos de risco localizados incluem:'
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: cloudhandler
-ms.openlocfilehash: 902dc864ea16bd677d0499711faa078131ca015d
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: c53c503132a0b280c8b7fb02c99816d2ee7a5f03
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469455"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51490988"
 ---
 # <a name="locatedriskevent-resource-type"></a>tipo de recurso locatedRiskEvent
 
@@ -37,14 +37,14 @@ Um evento de risco detectado pela Proteção de Identidade [do Azure Active Dire
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior ou igual ao tempo de data do evento de risco em si. Essa é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
-|id|cadeia de caracteres| Somente leitura|
-|ipAddress|cadeia de caracteres| O endereço IP da assinatura|
+|id|string| Somente leitura|
+|ipAddress|string| O endereço IP da assinatura|
 |location|cadeia de caracteres| O local anexado ao endereço IP da login|
 |riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
-|riskEventStatus|cadeia de caracteres| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|riskEventStatus|string| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
-|riskEventType|cadeia de caracteres| O tipo de risco|
-|userDisplayName|cadeia de caracteres| O nome do usuário em risco|
+|riskEventType|string| O tipo de risco|
+|userDisplayName|string| O nome do usuário em risco|
 |userId|cadeia de caracteres| A id do usuário em risco|
 |userPrincipalName|string| O nome principal do usuário em risco|
 
