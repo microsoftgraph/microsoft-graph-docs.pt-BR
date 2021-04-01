@@ -463,7 +463,7 @@ items:
                 href: webhooks-lifecycle.md
               - name: Notificações com dados de recursos
                 href: webhooks-with-resource-data.md
-              - name: Receba notificações de diferentes maneiras (visualização)
+              - name: Obter notificações entregues de diferentes maneiras
                 href: change-notifications-delivery.md
               - name: Obter notificações de alteração para mensagens de chat e canal
                 href: teams-changenotifications-chatmessage.md
