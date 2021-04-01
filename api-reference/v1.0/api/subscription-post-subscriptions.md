@@ -1,8 +1,17 @@
 ---
-título: descrição "Criar assinatura": "Assina um aplicativo ouvinte para receber notificações de alteração quando os dados no Microsoft Graph são alterados".
-localization_priority: Autor de prioridade: "Jumaodhiss" ms.prod: ""change-notifications" doc_type: apiPageType
+title: Criar assinatura
+description: Inscreve um aplicativo de ouvinte para receber notificações de alterações quando os dados no Microsoft Graph forem alterados.
+localization_priority: Priority
+author: Jumaodhiss
+ms.prod: change-notifications
+doc_type: apiPageType
+ms.openlocfilehash: 5d0a5afd29b799e51662ceba23c5ee415aa69689
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468832"
 ---
-
 # <a name="create-subscription"></a>Criar assinatura
 
 Namespace: microsoft.graph
@@ -32,7 +41,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[impressora](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
+|[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
@@ -139,7 +148,7 @@ Estes são os valores válidos da propriedade de recurso da assinatura:
 |[Lista](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Email](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[impressora](../resources/printer.md) |`print/printers/{id}/jobs`|
-|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
+|[printTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Alerta de segurança](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
 |[Usuários](../resources/user.md)|`users`|
 

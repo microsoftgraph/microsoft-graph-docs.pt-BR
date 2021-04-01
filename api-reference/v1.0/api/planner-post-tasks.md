@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 3b3af628ab1dde864597fa6b2a10a7006e994201
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 61cd7335b01b33ad5c438756797665459fd05027
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025659"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473763"
 ---
 # <a name="create-plannertask"></a>Criar plannerTask
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 

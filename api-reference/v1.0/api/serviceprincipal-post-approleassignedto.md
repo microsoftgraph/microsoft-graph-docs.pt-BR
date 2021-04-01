@@ -1,21 +1,20 @@
 ---
-title: Conceder um appRoleAssignment a uma entidade de serviço
+title: Conceder um appRoleAssignment para uma entidade de serviço
 description: Conceder uma atribuição de função de aplicativo a uma entidade de serviço.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: 9b0fe2f32fccd04c745f1dd6ccb7aa685ddd3b5a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: psignoret
+ms.openlocfilehash: f2aeb0c6abaad90b7da38285437da2f95d123ef3
+ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434262"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51468650"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>Conceder um appRoleAssignment para uma entidade de serviço
 
 Namespace: microsoft.graph
-
 
 Atribuir uma função de aplicativo a uma entidade de serviço de recurso, a um usuário, grupo ou entidade de serviço de cliente.
 
@@ -33,9 +32,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All    |
+|Delegada (conta corporativa ou de estudante) | AppRoleAssignment. ReadWrite.All, Directory. ReadWrite.All, Directory. AccessAsUser.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | AppRoleAssignment.ReadWrite.All, |
+|Aplicativo | AppRoleAssignment. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -128,7 +127,7 @@ Content-type: application/json
   "principalDisplayName": "Parents of Contoso",
   "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
   "principalType": "Group",
-  "resourceDisplayName": "Yammer",
+  "resourceDisplayName": "Fabrikam App",
   "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 }
 ```

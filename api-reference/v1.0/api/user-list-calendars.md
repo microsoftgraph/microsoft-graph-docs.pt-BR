@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 277a7d9e1c5389ecde9f49c6d367a4589f37b591
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: e11593b968976792fe65eb1e38d2a7572df3f801
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516718"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473651"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
@@ -22,9 +22,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    |
-|Aplicativo | Calendars.Read, Calendars.ReadWrite |
+|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Aplicativo | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

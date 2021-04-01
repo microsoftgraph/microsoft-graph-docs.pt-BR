@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 351dd84a03ba3d0020293d1ca4b873962a72e4a4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 18bd1fae45c75f15e5ed5661253dca4a388e02c9
+ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967853"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51473308"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
