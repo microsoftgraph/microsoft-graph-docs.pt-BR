@@ -5,22 +5,23 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 8a91b4d52dcb3eb9cd889d8406349bd057948208
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fc51780f2f5ab9a783b431d49e19136c1f5e3fef
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961027"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508579"
 ---
-# <a name="get-identityprovider"></a>Obter identityProvider
+# <a name="get-identityprovider-deprecated"></a>Obter identityProvider (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Recupere as propriedades e as relações de [um identityProvider](../resources/identityprovider.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,6 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
+
 * Administrador global
 * Administrador do Provedor de Identidade Externa
 
@@ -41,6 +43,7 @@ A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funç�
 ```http
 GET /identityProviders/{id}
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 |Nome|Descrição|
@@ -115,6 +118,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+
 ### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>Exemplo 2: Recuperar um openIDConnectProvider específico (somente para o Azure AD B2C)
 
 #### <a name="request"></a>Solicitação
@@ -185,5 +189,3 @@ Content-type: application/json
   "scope": "openid"
 }
 ```
-
-

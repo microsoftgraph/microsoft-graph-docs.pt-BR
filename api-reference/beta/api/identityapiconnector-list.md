@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 065413d8d5abb3bd60075f12882d2a0696b5aaf8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6aa2d3a4a5c45dc7b9e0b168eac7402404fcb982
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435578"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507844"
 ---
 # <a name="list-identityapiconnectors"></a>Listar identityApiConnectors
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Leia as propriedades de [um objeto identityApiConnector.](../resources/identityapiconnector.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.  |
+| Delegada (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.  |
 | Aplicativo                            | APIConnectors.ReadWrite.All |
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
@@ -115,16 +115,38 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors",
     "value": [
-      {
-          "id": "<guid>",
-          "displayName": "Test API",
-          "targetUrl": "https://someapi.com/api/endpoint",
-          "authenticationConfiguration": {
-            "@odata.type": "#microsoft.graph.basicAuthentication",
-            "username": "<USERNAME>",
-            "password": "******"
-          }
-      }
+        {
+            "id": "<guid>",
+            "displayName": "Test API",
+            "targetUrl": "https://someapi.com/api/endpoint",
+            "authenticationConfiguration": {
+              "@odata.type": "#microsoft.graph.basicAuthentication",
+              "username": "<USERNAME>",
+              "password": "******"
+            }
+        },
+        {
+            "id": "<guid>",
+            "displayName": "My API connector",
+            "targetUrl": "https://someotherapi.com/api/endpoint",
+            "authenticationConfiguration": {
+                "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
+                "certificateList": [
+                    {
+                        "thumbprint": "0EB255CC895477798BA418B378255204304897AD",
+                        "notAfter": 1666350522,
+                        "notBefore": 1508670522,
+                        "isActive": true
+                    },
+                    {
+                        "thumbprint": "1AB255CC895477798BA418B378255204304897BC",
+                        "notAfter": 1766350522,
+                        "notBefore": 1608670522,
+                        "isActive": false
+                    }
+                ]
+            }
+        }
   ]
 }
 ```

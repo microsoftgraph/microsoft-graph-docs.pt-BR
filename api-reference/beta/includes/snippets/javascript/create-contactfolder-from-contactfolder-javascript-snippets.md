@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c897de6e9c2e8e659445cfb5c503fb7e6c0d118d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 01a7f14a81e93afbde0e4b5c40f8102d59d087f9
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50804545"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507201"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const contactFolder = {
-  displayName: 'displayName-value'
+  displayName: 'Family'
 };
 
 await client.api('/me/contactFolders/{id}/childFolders')

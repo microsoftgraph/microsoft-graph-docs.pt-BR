@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5c6c46f0d092d39171de1cb0d8c865448f609463
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 915e1c0c26cee173991d75bc46a1a0230844d2ec
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137071"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507963"
 ---
 # <a name="apiauthenticationconfigurationbase-resource-type"></a>Tipo de recurso apiAuthenticationConfigurationBase
 
@@ -18,9 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo base para manter as informações de autenticação para chamar a API.
+O tipo base para manter informações de autenticação para chamar uma API.
 
-Um [basicAuthentication](basicauthentication.md) é derivado de apiAuthenticationConfigurationBase.
+Os tipos derivados incluem:
+- [basicAuthentication para](basicauthentication.md) autenticação básica HTTP
+- [pkcs12certificate para autenticação](pkcs12certificate.md) de certificado do cliente (usado para criar ou carregar conectores de API)
+- [clientCertificateAuthentication para](pkcs12certificate.md) autenticação de certificado de cliente (usado para buscar os certificados do cliente de um conector de API)
 
 ## <a name="properties"></a>Propriedades
 

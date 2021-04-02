@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: edb0a8eab1406c3bcdd3856c158b4fb936228eb5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 620d6a395c87c8507a9fd6c2bb9d5742a8b560da
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435536"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508873"
 ---
 # <a name="create-b2cidentityuserflow"></a>Criar b2cIdentityUserFlow
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
@@ -57,10 +57,10 @@ No corpo da solicitação, forneça uma representação JSON de [um b2cIdentityU
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|String|Obrigatório. O nome do fluxo de usuário. O nome será pré-canetado após `B2C_1` a criação.|
-|userFlowType|String|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowType|Cadeia de caracteres|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Flutuação|Obrigatório. A versão do fluxo de usuário.|
 |isLanguageCustomizationEnabled|Booliano|Opcional. Determina se a personalização de idioma está habilitada no fluxo de usuários do Azure AD B2C. A personalização de idioma não está habilitada por padrão para fluxos de usuários do Azure AD B2C.|
-|defaultLanguageTag|String|Opcional.  Especifica o idioma padrão do b2cIdentityUserFlow que é usado quando nenhuma marca é `ui_locale` especificada na solicitação. Esse campo é [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível.|
+|defaultLanguageTag|Cadeia de caracteres|Opcional.  Especifica o idioma padrão do b2cIdentityUserFlow que é usado quando nenhuma marca é `ui_locale` especificada na solicitação. Esse campo é [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível.|
 |identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo de usuários.|
 
 ## <a name="response"></a>Resposta
@@ -251,10 +251,10 @@ Content-length: 154
     "userFlowTypeVersion": 1,
     "apiConnectorConfiguration":{
         "postFederationSignup":{
-            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+            "@odata.id": "{apiConnectorId}"
         },
         "postAttributeCollection":{
-            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+            "@odata.id": "{apiConnectorId}"
         }
     }
 }

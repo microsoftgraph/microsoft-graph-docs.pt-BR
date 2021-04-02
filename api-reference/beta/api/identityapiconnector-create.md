@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e2ff03ae081a1d406a56c5a826664bb402983a4f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 06515ca0ca1f302ee94cb06e7a58c5dcae518c1b
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435607"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51508852"
 ---
 # <a name="create-identityapiconnector"></a>Criar identityApiConnector
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto identityApiConnector.](../resources/identityapiconnector.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.  |
+| Delegada (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.  |
 | Aplicativo                            | APIConnectors.ReadWrite.All |
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
@@ -61,9 +61,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [identit
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String| O nome do conector da API. |
-|targetUrl|String| A URL do ponto de extremidade da API a ser chamada. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. Somente [a autenticação básica](../resources/basicauthentication.md) é suportada.|
+|displayName|Cadeia de caracteres| O nome do conector da API. |
+|targetUrl|Cadeia de caracteres| A URL do ponto de extremidade da API a ser chamada. |
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. [Autenticação básica](../resources/basicauthentication.md) e certificado cliente [PKCS 12](../resources/pkcs12certificate.md) são suportados.|
 
 ## <a name="response"></a>Resposta
 
@@ -71,7 +71,9 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-create-an-api-connector-with-basic-authentication"></a>Exemplo 1: Criar um conector de API com autenticação básica
+
+#### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -116,11 +118,11 @@ Content-Type: application/json
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -142,6 +144,70 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.basicAuthentication",
         "username": "<USERNAME>",
         "password": "******"
+    }
+}
+```
+
+### <a name="example-2-create-an-api-connector-with-client-certificate-authentication"></a>Exemplo 2: Criar um conector de API com autenticação de certificado de cliente
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+> **Observação:** `authenticationConfiguration` na solicitação é do tipo [microsoft.graph.pkcs12certificate](../resources/pkcs12certificate.md), que representa a configuração de um certificado necessário para carregar ou criar.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_identityapiconnector"
+}
+-->
+```http
+POST https://graph.microsoft.com/beta/identity/apiConnectors
+Content-Type: application/json
+
+{
+    "displayName":"Test API",
+    "targetUrl":"https://someotherapi.com/api",
+    "authenticationConfiguration": {
+        "@odata.type":"#microsoft.graph.pkcs12Certificate",
+        "pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
+        "password": "<password>"
+    }
+}
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** `authenticationConfiguration` na resposta é do tipo [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md) porque isso representa as informações públicas dos certificados carregados.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityApiConnector"
+}
+-->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors/$entity",
+    "id":"guid",
+    "displayName": "Test API",
+    "targetUrl": "https://someotherapi.com/api",
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
+        "certificateList": [
+            {
+                "thumbprint": "0EB255CC895477798BA418B378255204304897AD",
+                "notAfter": 1666350522,
+                "notBefore": 1508670522,
+                "isActive": true
+            }
+        ]
     }
 }
 ```
