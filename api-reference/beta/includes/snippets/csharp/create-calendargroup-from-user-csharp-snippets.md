@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b996354bf56fb2b8e5cc652eea69af64394538b0
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: 5f88e8018eec04e02ea54f1dc66676da538df7d5
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845876"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507782"
 ---
 ```csharp
 
@@ -13,9 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var calendarGroup = new CalendarGroup
 {
-    Name = "name-value",
-    ClassId = Guid.Parse("classId-value"),
-    ChangeKey = "changeKey-value"
+    Name = "Personal events"
 };
 
 await graphClient.Me.CalendarGroups
