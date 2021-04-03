@@ -1,23 +1,23 @@
 ---
 title: Atualizar chatMessage
 description: Atualize a propriedade policyViolation de um chatMessage.
-author: clearab
+author: RamjotSingh
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d5d4b36f2d0ca0ef3d62c3991feae64a8e57a700
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: 7de6500a4186871e7ccdbba8c0c07effd0e47d6e
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115231"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582666"
 ---
 # <a name="update-chatmessage"></a>Atualizar chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Atualize [um objeto chatMessage.](../resources/chatMessage.md) Somente a **propriedade policyViolation** de um **chatMessage** pode ser atualizada.
+Atualize um [objeto chatMessage.](../resources/chatMessage.md) Somente a **propriedade policyViolation** de **um chatMessage** pode ser atualizada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,12 +27,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sem suporte. |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Chat.UpdatePolicyViolation.All para uma mensagem de chat.</br>ChannelMessage.UpdatePolicyViolation.All para uma mensagem de canal. |
+|Aplicativo | Chat.UpdatePolicyViolation.All para uma mensagem de chat.</br>ChannelMessage.UpdatePolicyViolation.All para uma mensagem de canal. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
 PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
@@ -45,17 +46,17 @@ PATCH /chats/{chatThread-id}/messages/{message-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um objeto [chatMessage,](../resources/chatMessage.md) especificando apenas a **propriedade policyViolation.**
+No corpo da solicitação, fornece uma representação JSON de um [objeto chatMessage,](../resources/chatMessage.md) especificando apenas a **propriedade policyViolation.**
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna uma `200 OK` resposta.
+Se tiver êxito, este método retornará uma `200 OK` resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-A seguir está um exemplo da solicitação para atualizar a **propriedade policyViolation** em uma mensagem de canal do Microsoft Teams.
+A seguir, um exemplo da solicitação para atualizar a propriedade **policyViolation** em uma mensagem de canal do Microsoft Teams.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -66,7 +67,6 @@ A seguir está um exemplo da solicitação para atualizar a **propriedade policy
 ```http
 PATCH https://graph.microsoft.com/beta/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
-Content-Length: 248
 
 {
   "policyViolation": {

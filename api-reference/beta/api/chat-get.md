@@ -1,16 +1,16 @@
 ---
 title: Obter bate-papo
 description: Recupere um único bate-papo.
-author: bhartono
+author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4041abae0053de6adebad2ce57c2a9bcb400bbc5
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4734cb09b948bb8e900d6a16c660d606e4cbaf88
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775819"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582687"
 ---
 # <a name="get-chat"></a>Obter bate-papo
 
@@ -60,7 +60,7 @@ Se bem sucedido, esse método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+O exemplo a seguir mostra a resposta.
 
 >**Observação:** O objeto de resposta mostrado aqui é encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

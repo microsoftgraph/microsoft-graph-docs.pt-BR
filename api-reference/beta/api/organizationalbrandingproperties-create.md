@@ -2,15 +2,15 @@
 title: Criar organizationalBrandingProperties
 description: Criar identidade visual da organização.
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fe8b7b70b391d4c96645d570e054200e2bbc4eac
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 848f2dbdc03f08671f2105c52da3ffaa3bd79929
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955781"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582736"
 ---
 # <a name="create-organizationalbrandingproperties"></a>Criar organizationalBrandingProperties
 

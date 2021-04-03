@@ -1,16 +1,16 @@
 ---
 title: Obter bate-papo
 description: Recupere um único bate-papo.
-author: bhartono
+author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 866bfb702ff80474ee9791a230d14179a82c2faf
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 80f49fea90b332068216fa3afd5fc20d93e1f946
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950133"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582855"
 ---
 # <a name="get-chat"></a>Obter bate-papo
 
@@ -57,8 +57,8 @@ Não forneça um corpo de solicitação para esse método.
 Se bem sucedido, esse método retorna um código de resposta `200 OK` e uma coleção de objetos de [bate-papo](../resources/chat.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-#### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+##### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -88,9 +88,10 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 ---
 
 
+---
 
-#### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+##### <a name="response"></a>Resposta
+O exemplo a seguir mostra a resposta.
 
 >**Observação:** O objeto de resposta mostrado aqui é encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

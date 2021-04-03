@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9bedad8f196ff8dc3a0bc2cb6a73d96ff8056caf
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d805892959510ead3627a24205e83107ff95b37b
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954074"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573096"
 ---
 ```csharp
 
@@ -39,7 +39,7 @@ var templateParameters = new List<KeyValuePair>()
 };
 
 await graphClient.Teams["{team-id}"]
-    .SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient,null)
+    .SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient)
     .Request()
     .PostAsync();
 

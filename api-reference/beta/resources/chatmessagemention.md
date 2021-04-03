@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso chatMessageMention
-description: 'Representa uma menção em uma entidade chat. A menção pode ser a um usuário, uma equipe, um bot ou um canal. '
+title: Tipo de recurso chatMessageMention
+description: 'Representa uma menção em uma entidade chatMessage. A menção pode ser para um usuário, equipe, bot ou canal. '
 localization_priority: Normal
-author: nkramer
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b6a63380475be8bd0e669851f7e760a9f645d18d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7671f438544392ca9c8b60523c910e82873c848b
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064271"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582554"
 ---
-# <a name="chatmessagemention-resource-type"></a>tipo de recurso chatMessageMention
+# <a name="chatmessagemention-resource-type"></a>Tipo de recurso chatMessageMention
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma menção em uma entidade [chat](chatmessage.md) . A menção pode ser a um [usuário](user.md), uma [equipe](team.md), um bot ou um [canal](channel.md). 
+Representa uma menção em uma [entidade chatMessage.](chatmessage.md) A menção pode ser para um [usuário](user.md), [equipe,](team.md)bot ou [canal](channel.md). 
 
-Em um objeto **chat** que contém uma ou mais menciona, a propriedade de **conteúdo** do corpo da mensagem representa a mensagem de chat em HTML. Ele inclui o **mentionText** de cada menção em um `at` elemento HTML, com um `id` atributo que corresponde à propriedade **ID** da menção.
+Em um **objeto chatMessage** que contém uma ou  mais menções, a propriedade de conteúdo do corpo da mensagem representa a mensagem de chat em HTML. Ele inclui o **mentionText** de cada menção em um elemento HTML, com um atributo que corresponde à propriedade `at` `id` **id** da menção.
 
-Por exemplo, uma mensagem de chat contém duas menção, com o texto de menção "Megan" e "Alex", respectivamente. A propriedade de **conteúdo** do corpo especifica `at` os elementos das duas mencionas da seguinte maneira:
+Como exemplo, uma mensagem de chat contém duas menções, com o texto de menção "Megan" e "Alex" respectivamente. Sua propriedade **de conteúdo** do corpo especifica elementos para as `at` duas menções da seguinte forma:
 
 ``` json
 "body": {
@@ -31,18 +31,18 @@ Por exemplo, uma mensagem de chat contém duas menção, com o texto de menção
 }
 ```
 
-Na propriedade **Content** , a primeira menção tem um atributo HTML `id` de 0. Isso corresponde à propriedade **ID** dessa primeira instância de **chatMessageMention**, que também é 0.
+Na propriedade **content,** a primeira menção tem um atributo HTML `id` de 0. Isso corresponde à propriedade **id** da primeira instância **do chatMessageMention**, que também é 0.
 
-A segunda menção tem um `id` atributo de 1, correspondendo à propriedade **ID** da segunda instância, que é 1.
+A segunda menção tem um atributo 1, que corresponde à `id` **propriedade id** da segunda instância, que é 1.
 
-Para obter um contexto mais completo do exemplo, consulte [listar respostas de mensagens de canal](../api/channel-list-messagereplies.md#example).
+Para um contexto mais completo do exemplo, consulte [List channel message replies](../api/chatmessage-list-replies.md#example).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Int32|Índice de uma entidade que está sendo mencionada no **chat**especificado. Corresponde ao valor {index} na marca correspondente `<at id="{index}">` no corpo da mensagem.|
-|mentionText|cadeia de caracteres|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, o nome de uma equipe.|
-|foi|[identitySet](identityset.md)|A entidade (usuário, aplicativo, equipe ou canal) que foi mencionada.  Se fosse um canal ou uma equipe que foi @mentioned, o identityset contém uma propriedade de **conversa** que concede a ID da equipe/canal, e uma propriedade **conversationIdentityType** que representa a equipe ou o canal.|
+|id|Int32|Índice de uma entidade que está sendo mencionada no **chatMessage especificado.** Corresponde ao valor {index} na `<at id="{index}">` marca correspondente no corpo da mensagem.|
+|mentionText|string|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, um nome de equipe.|
+|mencionado|[identitySet](identityset.md)|A entidade (usuário, aplicativo, equipe ou canal) mencionada.  Se foi um canal ou uma equipe que foi @mentioned, o identitySet contém uma propriedade de conversa que dá **a** ID da equipe/canal e uma propriedade **conversationIdentityType** que representa a equipe ou o canal.|
 
 
 ## <a name="json-representation"></a>Representação JSON

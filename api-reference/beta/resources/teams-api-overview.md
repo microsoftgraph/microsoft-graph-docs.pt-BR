@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: c3f0715e8ac09d8cc6f3138aa5defbbdbe89dd0b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 7116f182da4822949ff9cdb6500e1b049f6bc68b
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474614"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582631"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -28,7 +28,7 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Microsoft 365 que
 |[teamsTab](../resources/teamstab.md) |[Listar](../api/channel-list-tabs.md), [criar](../api/channel-post-tabs.md), [ler](../api/channel-get-tabs.md), [atualizar](../api/channel-patch-tabs.md), [excluir](../api/channel-delete-tabs.md) |
 |[teamsApp](../resources/teamsapp.md)|[Listar](../api/appcatalogs-list-teamsapps.md), [publicar](../api/teamsapp-publish.md), [atualizar](../api/teamsapp-update.md), [remover](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Listar](../api/team-list-installedapps.md), [instalar](../api/team-post-installedapps.md), [atualizar](../api/team-delete-installedapps.md), [remover](../api/team-delete-installedapps.md) |
-|[chatMessage](../resources/chatmessage.md)| [listar no canal](../api/channel-list-messages.md), [listar no chat](../api/chat-list-message.md), [enviar](../api/chatmessage-post.md), [ler no canal](../api/channel-get-message.md), [ler no chat](../api/chat-get-message.md)|
+|[chatMessage](../resources/chatmessage.md)| [listar no canal](../api/channel-list-messages.md), [listar no chat](../api/chat-list-messages.md), [enviar](../api/chatmessage-post.md), [ler no canal](../api/chatmessage-get.md), [ler no chat](../api/chatmessage-get.md)|
 |[chat](../resources/chat.md)| [lista](../api/chat-list.md), [ler](../api/chat-get.md),
 |[chamada](../resources/call.md)| [Responder](../api/call-answer.md), [rejeitar](../api/call-reject.md), [redirecionar](../api/call-redirect.md), [silenciar](../api/call-mute.md), [não silenciar](../api/call-unmute.md), [alterar função de compartilhamento de tela](../api/call-changescreensharingrole.md), [lista de participantes](../api/call-list-participants.md), [convidar participantes](../api/participant-invite.md), [silenciar todos os participantes](../api/participant-muteall.md) |
 |[cronograma](../resources/schedule.md)| [Criar ou substituir](../api/team-put-schedule.md), [obter](../api/schedule-get.md), [compartilhar](../api/schedule-share.md) |

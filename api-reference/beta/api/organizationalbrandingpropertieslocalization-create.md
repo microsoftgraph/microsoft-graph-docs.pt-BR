@@ -2,15 +2,15 @@
 title: Criar organizationalBrandingProperties localizados
 description: Crie a identidade visual da organização para uma localidade específica.
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e072be81f10b56802d648501e56d3d2b88ef9c0c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3d49f5fe2589acf2d668a25240a5862197390b87
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943881"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582708"
 ---
 # <a name="create-localized-organizationalbrandingproperties"></a>Criar organizationalBrandingProperties localizados
 

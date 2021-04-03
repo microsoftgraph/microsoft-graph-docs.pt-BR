@@ -2,15 +2,15 @@
 title: Atualizar organizacionais localizadasproperties
 description: Atualize as propriedades do objeto organizationalbrandingproperties para uma localização específica.
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7beb0ec43fb0369ad958914b966d68a6134ab8a3
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 67cfc1e18f0572a1faae4199621fdc5b86260438
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943771"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582617"
 ---
 # <a name="update-localized-organizationalbrandingproperties"></a>Atualizar organizacionais de marca organizacional localizadas
 

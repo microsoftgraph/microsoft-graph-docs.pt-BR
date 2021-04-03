@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: bc7a3a5cbff2aee1191383ac18128e97075b4b99
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f66b37ee9f9ae69f5f0ccb1f4a2f45f3a3522163
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721618"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582239"
 ---
 # <a name="chatmessagereaction-resource-type"></a>Tipo de recurso chatMessageReaction
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa uma reação a uma [entidade chatMessage.](chatmessage.md) 
 
-Uma entidade de tipo é retornada como parte da API de mensagem get `chatMessageReaction` [channel,](../api/channel-get-message.md) como parte da [entidade chatMessage.](chatmessage.md)
+Uma entidade de tipo é retornada como parte da API de mensagem get `chatMessageReaction` [channel,](../api/chatmessage-get.md) como parte da [entidade chatMessage.](chatmessage.md)
 
 ## <a name="properties"></a>Propriedades
 
@@ -28,7 +28,7 @@ Uma entidade de tipo é retornada como parte da API de mensagem get `chatMessage
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |reactionType|Cadeia de caracteres|Os valores suportados `like` são , , , , , `angry` `sad` `laugh` `heart` `surprised` . |
-|user|[identitySet](identityset.md)|O usuário que reagia à mensagem.|
+|usuário|[identitySet](identityset.md)|O usuário que reagia à mensagem.|
 
 ## <a name="json-representation"></a>Representação JSON
 

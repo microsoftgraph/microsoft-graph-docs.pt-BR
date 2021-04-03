@@ -1,16 +1,16 @@
 ---
 title: 'chats: getAllMessages'
 description: Obter mensagens de todos os chats nos quais um usuário é um participante.
-author: laujan
+author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cb23dd527a4f1bf78863602c1c8b01fa0e848b9d
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 12b645943297d34504bb4d4586ecbd8d3e79b7c6
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597495"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582652"
 ---
 # <a name="chats-getallmessages"></a>chats: getAllMessages
 

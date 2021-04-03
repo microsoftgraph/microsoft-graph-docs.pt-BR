@@ -2,15 +2,15 @@
 title: Obter organizationalBrandingProperties localizadas
 description: Recupere o objeto organizationalbrandingproperties para uma localidade específica.
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 17d55e9c98eedad91b544c16b2e3ca39163adbe0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 003688ed17b1fa5486d9482257cfdff8451fc3b8
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963070"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582694"
 ---
 # <a name="get-localized-organizationalbrandingproperties"></a>Get Localized organizationalBrandingProperties
 

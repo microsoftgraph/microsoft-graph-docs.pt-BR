@@ -2,15 +2,15 @@
 title: 'channel: completeMigration'
 description: Conclua a migração de mensagens externas removendo o modo de migração de um canal.
 localization_priority: Normal
-author: laujan
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fb56abf4a30bfe55021535526e86b0e34ebe4bbb
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 91316139c19b67ee0de96f95cfcbc1677b196943
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508765"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582302"
 ---
 # <a name="channel-completemigration"></a>channel: completeMigration
 
@@ -22,7 +22,7 @@ Conclua o processo de migração de mensagens removendo `migration mode` de [um 
 
 Depois que **uma solicitação completeMigration** for feita, você não poderá importar mensagens adicionais para a equipe. Você pode adicionar membros à equipe após a solicitação retornar uma resposta bem-sucedida.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 A permissão a seguir é necessária para chamar essa API. Para saber mais, *confira* [Permissões](/graph/permissions-reference).
 

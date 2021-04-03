@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de chat
 description: Um chat é uma coleção de chatMessages entre um ou mais participantes.
-author: clearab
+author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f9162e39e1326d89818f959e846ccde5f04350e9
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 51980c166652ea2a2d863049e5877b3cc6d632ba
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776813"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582785"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
@@ -22,7 +22,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 
 ## <a name="methods"></a>Métodos
 
-|  Método       |  Tipo de retorno  | Descrição|
+|  Método       |  Tipo de retorno  | Descrição| 
 |:---------------|:--------|:----------|
 |[Criar chat](../api/chat-post.md) | [chat](chat.md) | Crie um novo chat.| 
 |[Obter bate-papo](../api/chat-get.md) | [chat](chat.md) | Leia propriedades e relações do chat.| 
@@ -31,6 +31,8 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 |[Adicionar membro do bate-papo](../api/chat-post-members.md) | Cabeçalho de local | Adicione um usuário ao chat.| 
 |[Obter membro do bate-papo](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Obter um único usuário no bate-papo.| 
 |[Remover membro do bate-papo](../api/chat-delete-members.md)|Nenhum|Remova um usuário do chat.|
+|[Listar mensagens no chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obter mensagens em um chat. | 
+|[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | 
 |[Obter chat entre o usuário e o aplicativo](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Obter chat um-a-um entre o usuário e o aplicativo |
 |[Listar aplicativos no chat](../api/chat-list-installedapps.md) |Coleção [teamsAppInstallation](teamsappinstallation.md) | Listar aplicativos instalados em um chat (e reunião associada).|
 |[Obter aplicativo no chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obter um aplicativo específico instalado em um chat (e reunião associada).|

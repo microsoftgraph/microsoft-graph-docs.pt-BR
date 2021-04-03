@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso chatMessagePolicyViolationPolicyTip
+title: Tipo de recurso chatMessagePolicyViolationPolicyTip
 description: Representa as propriedades de uma dica de política em um objeto chatMessagePolicyViolation. As dicas de política fornecem ao remetente informações sobre a violação da política.
-author: clearab
+author: RamjotSingh
 doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7a12afbd3ffb8eac75eb89b5d2bb5095fbd2ae98
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c315dbcb37b11e7ed5771544f511c5cf07cc89a8
+ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081953"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "51582246"
 ---
-# <a name="chatmessagepolicytip-resource-type"></a>tipo de recurso chatMessagePolicyTip
+# <a name="chatmessagepolicytip-resource-type"></a>Tipo de recurso chatMessagePolicyTip
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as propriedades de uma dica de política em um objeto [chatMessagePolicyViolation](chatmessagepolicyviolation.md) . As dicas de política fornecem ao remetente informações sobre a violação da política.
-As dicas de política são normalmente definidas por um aplicativo DLP (prevenção de perda de dados) que observa mensagens que contêm dados que os usuários não devem enviar.
+Representa as propriedades de uma dica de política em um [objeto chatMessagePolicyViolation.](chatmessagepolicyviolation.md) As dicas de política fornecem ao remetente informações sobre a violação da política.
+As dicas de política geralmente são definidas por um aplicativo de prevenção contra perda de dados (DLP) que observa mensagens que contêm dados que os usuários não devem enviar.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|complianceUrl|cadeia de caracteres|A URL que um usuário pode visitar para ler sobre as políticas de prevenção de perda de dados da organização. (IE, políticas sobre o que os usuários não devem dizer nos chats)|
-|generalText|cadeia de caracteres|Texto explicativo mostrado ao remetente da mensagem.|
-|matchedConditionDescriptions|coleção de cadeias de caracteres|A lista de dados inadequados na mensagem que foi detectada pelo aplicativo prevenção de perda de dados. Cada aplicativo DLP define suas próprias condições, exemplos incluem "número do cartão de crédito" e "número do CPF".|
+|complianceUrl|string|A URL que um usuário pode visitar para ler sobre as políticas de prevenção contra perda de dados da organização. (ou seja, políticas sobre o que os usuários não devem dizer nos chats)|
+|generalText|string|Texto explicativo mostrado ao remetente da mensagem.|
+|matchedConditionDescriptions|coleção de cadeias de caracteres|A lista de dados impróprios na mensagem detectada pelo aplicativo de prevenção contra perda de dados. Cada aplicativo DLP define suas próprias condições, exemplos incluem "Número do Cartão de Crédito" e "Número da Previdência Social".|
 
 ## <a name="json-representation"></a>Representação JSON
 
