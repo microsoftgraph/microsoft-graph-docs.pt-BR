@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2ef78f3957f262b59bef7c627ea5450c2c759ab7
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: a13120fcb629d484915d1b7d3f0f96e2d8774642
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469021"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506865"
 ---
 # <a name="delete-fido2authenticationmethod"></a>Excluir fido2AuthenticationMethod
 Namespace: microsoft.graph
@@ -67,8 +67,6 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
-
-# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b26d04024ee4cf8ba19ad8d63ea83245982b2dca
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 334f99bd2b13226b1acd629ebcd466ff2c59128e
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50785232"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573041"
 ---
 ```csharp
 
@@ -24,6 +24,7 @@ var plannerAssignedToTaskBoardTaskFormat = new PlannerAssignedToTaskBoardTaskFor
 
 await graphClient.Planner.Tasks["{plannerTask-id}"].AssignedToTaskBoardFormat
     .Request()
+    .Header("Prefer","return=representation")
     .Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
     .UpdateAsync(plannerAssignedToTaskBoardTaskFormat);
 

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 186df4e81f5958501d7defe8b25e1ea092ab2971
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: 871d990342807a9742ce9125c62e730fec39cd10
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368086"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507942"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -200,7 +200,7 @@ O exemplo a seguir cria um grupo de segurança com um proprietário e membros es
 Este é um exemplo de solicitação.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
 ``` http

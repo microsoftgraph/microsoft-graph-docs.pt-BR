@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b591571ddd53be77198f49d44990b611bdd995f9
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: f8be6eb112fbc55a50befd356aeeda70ff321f74
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49945768"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573026"
 ---
 ```csharp
 
@@ -54,7 +54,7 @@ var team = new Team
     AdditionalData = new Dictionary<string, object>()
     {
         {"template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('standard')"},
-        {"group@odata.bind", "https://graph.microsoft.com/v1.0/groups('groupId')"}
+        {"group@odata.bind", "https://graph.microsoft.com/beta/groups('dbd8de4f-5d47-48da-87f1-594bed003375')"}
     }
 };
 
