@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: bc03993ffe10f05b26ca67efd1d19a9403b92f19
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: e90a4d7f9f68f9655c609ae1e9d8bc5327849f5c
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176415"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573032"
 ---
 ```objc
 
@@ -24,7 +24,7 @@ NSMutableArray *grantedToIdentitiesList = [[NSMutableArray alloc] init];
 MSGraphIdentitySet *grantedToIdentities = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *application = [[MSGraphIdentity alloc] init];
 [application setId:@"89ea5c94-7736-4e25-95ad-3fa95f62b66e"];
-[application setDisplayName:@"Foo App"];
+[application setDisplayName:@"Contoso Time Manager App"];
 [grantedToIdentities setApplication:application];
 [grantedToIdentitiesList addObject: grantedToIdentities];
 [permission setGrantedToIdentities:grantedToIdentitiesList];

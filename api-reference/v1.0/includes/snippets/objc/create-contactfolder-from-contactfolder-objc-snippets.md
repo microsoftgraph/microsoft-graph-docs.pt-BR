@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 40258115f10754ada78d1d6941ef825bd8e0d626
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: ecb4798ffa01984875005b7f2f6a3e7feb47a120
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48615192"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507586"
 ---
 ```objc
 
@@ -17,7 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphContactFolder *contactFolder = [[MSGraphContactFolder alloc] init];
-[contactFolder setDisplayName:@"displayName-value"];
+[contactFolder setDisplayName:@"Family"];
 
 NSError *error;
 NSData *contactFolderData = [contactFolder getSerializedDataWithError:&error];

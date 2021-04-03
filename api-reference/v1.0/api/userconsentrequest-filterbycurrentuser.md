@@ -5,30 +5,30 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8ba0d5491ad7347bc06b4ed6da3e7346b21860e0
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: ffcbb985adfc21c267291f27e45e8c50b53ccb4f
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469505"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51507977"
 ---
-# <a name="userconsentrequest-filterbycurrentuser"></a><span data-ttu-id="da323-103">userConsentRequest: filterByCurrentUser</span><span class="sxs-lookup"><span data-stu-id="da323-103">userConsentRequest: filterByCurrentUser</span></span>
+# <a name="userconsentrequest-filterbycurrentuser"></a><span data-ttu-id="d190c-103">userConsentRequest: filterByCurrentUser</span><span class="sxs-lookup"><span data-stu-id="d190c-103">userConsentRequest: filterByCurrentUser</span></span>
 
-<span data-ttu-id="da323-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="da323-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d190c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d190c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="da323-105">Recupere [o userConsentRequests](../resources/userconsentrequest.md) para um appConsentRequest para o qual o usuário atual é o revistor e o status do userConsentRequest é `InProgress` .</span><span class="sxs-lookup"><span data-stu-id="da323-105">Retrieve the [userConsentRequests](../resources/userconsentrequest.md) for an appConsentRequest for which the current user is the reviewer and the status of the userConsentRequest is `InProgress`.</span></span>
+<span data-ttu-id="d190c-105">Recupere [o userConsentRequests](../resources/userconsentrequest.md) para um appConsentRequest para o qual o usuário atual é o revistor e o status do userConsentRequest é `InProgress` .</span><span class="sxs-lookup"><span data-stu-id="d190c-105">Retrieve the [userConsentRequests](../resources/userconsentrequest.md) for an appConsentRequest for which the current user is the reviewer and the status of the userConsentRequest is `InProgress`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="da323-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="da323-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d190c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d190c-106">Permissions</span></span>
 
-<span data-ttu-id="da323-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da323-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d190c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d190c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="da323-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="da323-109">Permission type</span></span>|<span data-ttu-id="da323-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="da323-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="d190c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d190c-109">Permission type</span></span>|<span data-ttu-id="d190c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d190c-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="da323-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="da323-111">Delegated (work or school account)</span></span>|<span data-ttu-id="da323-112">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da323-112">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span></span>|
-|<span data-ttu-id="da323-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="da323-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="da323-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="da323-114">Not supported.</span></span>|
-|<span data-ttu-id="da323-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="da323-115">Application</span></span>|<span data-ttu-id="da323-116">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da323-116">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span></span>|
+|<span data-ttu-id="d190c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d190c-111">Delegated (work or school account)</span></span>|<span data-ttu-id="d190c-112">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d190c-112">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span></span>|
+|<span data-ttu-id="d190c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d190c-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d190c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d190c-114">Not supported.</span></span>|
+|<span data-ttu-id="d190c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d190c-115">Application</span></span>|<span data-ttu-id="d190c-116">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d190c-116">ConsentRequest.Read.All, ConsentRequest.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="da323-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="da323-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d190c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d190c-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,37 +38,39 @@ ms.locfileid: "51469505"
 GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/filterByCurrentUser(on='parameterValue')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="da323-118">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="da323-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="d190c-118">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="d190c-118">Function parameters</span></span>
 
-<span data-ttu-id="da323-119">Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.</span><span class="sxs-lookup"><span data-stu-id="da323-119">In the request URL, provide the following query parameters with values.</span></span>
-<span data-ttu-id="da323-120">A tabela a seguir mostra os parâmetros que podem ser usados com esta função.</span><span class="sxs-lookup"><span data-stu-id="da323-120">The following table shows the parameters that can be used with this function.</span></span>
+<span data-ttu-id="d190c-119">Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.</span><span class="sxs-lookup"><span data-stu-id="d190c-119">In the request URL, provide the following query parameters with values.</span></span>
+<span data-ttu-id="d190c-120">A tabela a seguir mostra os parâmetros que podem ser usados com esta função.</span><span class="sxs-lookup"><span data-stu-id="d190c-120">The following table shows the parameters that can be used with this function.</span></span>
 
-|<span data-ttu-id="da323-121">Propriedade</span><span class="sxs-lookup"><span data-stu-id="da323-121">Property</span></span>|<span data-ttu-id="da323-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="da323-122">Type</span></span>|<span data-ttu-id="da323-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="da323-123">Description</span></span>|
+|<span data-ttu-id="d190c-121">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d190c-121">Property</span></span>|<span data-ttu-id="d190c-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="d190c-122">Type</span></span>|<span data-ttu-id="d190c-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="d190c-123">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="da323-124">on</span><span class="sxs-lookup"><span data-stu-id="da323-124">on</span></span>|<span data-ttu-id="da323-125">consentRequestFilterByCurrentUserOptions</span><span class="sxs-lookup"><span data-stu-id="da323-125">consentRequestFilterByCurrentUserOptions</span></span>|<span data-ttu-id="da323-126">Filtrar para consultar userConsentRequests para um appConsentRequest para o qual o usuário atual é um revistor.</span><span class="sxs-lookup"><span data-stu-id="da323-126">Filter to query userConsentRequests for an appConsentRequest for which the current user is a reviewer.</span></span> <span data-ttu-id="da323-127">O valor permitido é `reviewer` .</span><span class="sxs-lookup"><span data-stu-id="da323-127">Allowed value is `reviewer`.</span></span> <span data-ttu-id="da323-128">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="da323-128">Required.</span></span>|
+|<span data-ttu-id="d190c-124">on</span><span class="sxs-lookup"><span data-stu-id="d190c-124">on</span></span>|<span data-ttu-id="d190c-125">consentRequestFilterByCurrentUserOptions</span><span class="sxs-lookup"><span data-stu-id="d190c-125">consentRequestFilterByCurrentUserOptions</span></span>|<span data-ttu-id="d190c-126">Filtrar para consultar userConsentRequests para um appConsentRequest para o qual o usuário atual é um revistor.</span><span class="sxs-lookup"><span data-stu-id="d190c-126">Filter to query userConsentRequests for an appConsentRequest for which the current user is a reviewer.</span></span> <span data-ttu-id="d190c-127">O valor permitido é `reviewer` .</span><span class="sxs-lookup"><span data-stu-id="d190c-127">Allowed value is `reviewer`.</span></span> <span data-ttu-id="d190c-128">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d190c-128">Required.</span></span>|
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="da323-129">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="da323-129">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d190c-129">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d190c-129">Optional query parameters</span></span>
 
-<span data-ttu-id="da323-130">Essa função dá suporte ao  `$filter` parâmetro de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="da323-130">This function supports the `$filter` OData query parameter to help customize the response.</span></span> <span data-ttu-id="da323-131">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="da323-131">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="d190c-130">Essa função dá suporte ao  `$filter` parâmetro de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d190c-130">This function supports the `$filter` OData query parameter to help customize the response.</span></span> <span data-ttu-id="d190c-131">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="d190c-131">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="da323-132">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="da323-132">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d190c-132">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d190c-132">Request headers</span></span>
 
-|<span data-ttu-id="da323-133">Nome</span><span class="sxs-lookup"><span data-stu-id="da323-133">Name</span></span>|<span data-ttu-id="da323-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="da323-134">Description</span></span>|
+|<span data-ttu-id="d190c-133">Nome</span><span class="sxs-lookup"><span data-stu-id="d190c-133">Name</span></span>|<span data-ttu-id="d190c-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="d190c-134">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="da323-135">Autorização</span><span class="sxs-lookup"><span data-stu-id="da323-135">Authorization</span></span>|<span data-ttu-id="da323-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="da323-p105">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="d190c-135">Autorização</span><span class="sxs-lookup"><span data-stu-id="d190c-135">Authorization</span></span>|<span data-ttu-id="d190c-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d190c-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="da323-138">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="da323-138">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d190c-138">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d190c-138">Request body</span></span>
 
-<span data-ttu-id="da323-139">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="da323-139">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d190c-139">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d190c-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="da323-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="da323-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d190c-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="d190c-140">Response</span></span>
 
-<span data-ttu-id="da323-141">Se tiver êxito, essa função retornará um código `200 OK` de resposta e uma coleção [userConsentRequest](../resources/userconsentrequest.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="da323-141">If successful, this function returns a `200 OK` response code and a [userConsentRequest](../resources/userconsentrequest.md) collection in the response body.</span></span>
+<span data-ttu-id="d190c-141">Se tiver êxito, essa função retornará um código `200 OK` de resposta e uma coleção [userConsentRequest](../resources/userconsentrequest.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d190c-141">If successful, this function returns a `200 OK` response code and a [userConsentRequest](../resources/userconsentrequest.md) collection in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="da323-142">Exemplos</span><span class="sxs-lookup"><span data-stu-id="da323-142">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d190c-142">Exemplos</span><span class="sxs-lookup"><span data-stu-id="d190c-142">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="da323-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="da323-143">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d190c-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d190c-143">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="d190c-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="d190c-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userconsentrequest_filterbycurrentuser"
@@ -77,10 +79,28 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests/ee245379-e3bb-4944-a997-24115f0b8b5e/userConsentRequests/filterByCurrentUser(on='reviewer')?$filter= (status eq 'Completed')
 ```
+# <a name="c"></a>[<span data-ttu-id="d190c-145">C#</span><span class="sxs-lookup"><span data-stu-id="d190c-145">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/userconsentrequest-filterbycurrentuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="da323-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="da323-144">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="d190c-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d190c-146">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/userconsentrequest-filterbycurrentuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="da323-145">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="da323-145">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="d190c-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d190c-147">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/userconsentrequest-filterbycurrentuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="d190c-148">Java</span><span class="sxs-lookup"><span data-stu-id="d190c-148">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/userconsentrequest-filterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="d190c-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="d190c-149">Response</span></span>
+
+<span data-ttu-id="d190c-150">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="d190c-150">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
