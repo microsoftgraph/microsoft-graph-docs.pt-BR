@@ -5,18 +5,18 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d6d549435cd9350f9baf1136fd10f174eb1d0938
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cdbae695cff9469f31d4a2e813312a9608e3bb98
+ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952547"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51509314"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
 Namespace: microsoft.graph
 
-Um calendário que é um contêiner para eventos. Pode ser um calendário para um [usuário](user.md)ou o calendário padrão de um [grupo](group.md) do Microsoft 365.
+Representa um contêiner para recursos de [evento](event.md). Pode ser um calendário para um [usuário](user.md)ou o calendário padrão de um [grupo](group.md) do Microsoft 365.
 
 > **Observação:** existem algumas pequenas diferenças na maneira como você pode interagir com calendários de usuários e calendários de grupos:
 
