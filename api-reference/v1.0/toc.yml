@@ -193,11 +193,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -309,7 +309,7 @@ items:
                 href: api/user-list-memberof.md
               - name: Listar membro transitivo de
                 href: api/user-list-transitivememberof.md
-          - name: Percepções
+          - name: Insights
             items:
               - name: Insights do Office Graph
                 href: resources/officegraphinsights.md
@@ -413,7 +413,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -445,7 +445,7 @@ items:
                 href: api/todo-list-lists.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -643,7 +643,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1096,7 +1096,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1207,7 +1207,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -3779,7 +3779,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4056,7 +4056,7 @@ items:
             items:
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -4089,7 +4089,7 @@ items:
                         href: api/windowshelloforbusinessauthenticationmethod-delete.md
               - name: Política de método de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethodspolicies-overview.md
                   - name: Política FIDO2
                     href: resources/fido2authenticationmethodconfiguration.md
@@ -4570,7 +4570,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4681,7 +4681,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4771,7 +4771,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4793,7 +4793,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -4811,7 +4811,7 @@ items:
                     href: api/signin-get.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -5014,7 +5014,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -5040,7 +5040,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -5079,7 +5079,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -5138,7 +5138,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -5216,7 +5216,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -5333,17 +5333,17 @@ items:
               - name: Obter mensagens de canal delta
                 href: api/chatmessage-delta.md
               - name: Obter mensagens do canal
-                href: api/channel-get-message.md
+                href: api/chatmessage-get.md
               - name: Listar respostas da mensagem
-                href: api/channel-list-messagereplies.md
+                href: api/chatmessage-list-replies.md
               - name: Obter resposta da mensagem
-                href: api/channel-get-messagereply.md
+                href: api/chatmessage-get.md
+              - name: Enviar mensagem
+                href: api/channel-post-messages.md
               - name: Responder à mensagem
-                href: api/channel-post-messagereply.md
+                href: api/chatmessage-post-replies.md
               - name: Atualizar mensagem
                 href: api/chatmessage-update.md
-              - name: Enviar mensagem
-                href: api/channel-post-message.md
           - name: Chat
             href: resources/chat.md
             items:
@@ -5361,6 +5361,12 @@ items:
                 href: api/chat-get-members.md
               - name: Remover membro
                 href: api/chat-delete-members.md
+              - name: Listar mensagens em um bate-papo
+                href: api/chat-list-messages.md
+              - name: Receba uma mensagem no bate-papo
+                href: api/chatmessage-get.md
+              - name: Enviar mensagem no chat
+                href: api/chat-post-messages.md
               - name: Obter chat entre o usuário e o aplicativo
                 href: api/userscopeteamsappinstallation-get-chat.md
           - name: Mensagem de chat
@@ -5368,20 +5374,22 @@ items:
             items:
               - name: Listar mensagens do canal
                 href: api/channel-list-messages.md
-              - name: Obter mensagens de canal delta
+              - name: Listar mensagens de canal delta
                 href: api/chatmessage-delta.md
-              - name: Obter mensagens do canal
-                href: api/channel-get-message.md
               - name: Listar respostas da mensagem
-                href: api/channel-list-messagereplies.md
+                href: api/chatmessage-list-replies.md
+              - name: Obter mensagem no canal ou chat
+                href: api/chatmessage-get.md
               - name: Obter resposta da mensagem
-                href: api/channel-get-messagereply.md
-              - name: Responder à mensagem
-                href: api/channel-post-messagereply.md
+                href: api/chatmessage-get.md
+              - name: Enviar mensagem
+                href: api/chatmessage-post.md
+              - name: Enviar resposta a uma mensagem
+                href: api/chatmessage-post-replies.md
               - name: Atualizar mensagem
                 href: api/chatmessage-update.md
               - name: Listar conteúdo hospedado
-                href: api/chatmessage-list-chatmessagehostedcontents.md
+                href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
           - name: Catálogo de aplicativos
@@ -5664,7 +5672,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
