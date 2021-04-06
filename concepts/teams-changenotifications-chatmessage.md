@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e6e859e76e35e4eefd5ef18a26f0f1339c01a8a2
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 2e5490549e4ff204957c46e5da39a5516ed7d866
+ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761567"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51594858"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Obter notificações de alteração para mensagens nos canais e bate-papos do Teams usando o Microsoft Graph
 
@@ -182,9 +182,9 @@ As assinaturas no nível do chat também oferecem suporte à pesquisa baseada em
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Com suporte na versão |
 |:--------------------|:---------------------------------------------------------|:---------------------|
-|Delegada (conta corporativa ou de estudante) | Chat.Read | beta |
+|Delegada (conta corporativa ou de estudante) | Chat.Read | beta, v1.0 |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | Chat.Read.All | beta |
+|Aplicativo | Chat.Read.All | beta, v1.0 |
 
 ### <a name="example-1-subscribe-to-messages-in-a-chat"></a>Exemplo 1: assinar para receber mensagens em um chat
 

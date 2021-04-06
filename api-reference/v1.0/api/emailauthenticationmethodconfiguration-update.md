@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ce5d52d99f2f80b4ff285a5ebfc1971db1932383
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 7a38d4d7d30b225aa81365e8282c38c73cf2739c
+ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469273"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51594851"
 ---
 # <a name="update-emailauthenticationmethodconfiguration"></a>Atualizar emailAuthenticationMethodConfiguration
 
@@ -75,7 +75,7 @@ Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-  "allowExternalIdToUseEmailOtp": "false",
+  "allowExternalIdToUseEmailOtp": "enabled",
 }
 ```
 
