@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 635982c8610bc524de027632dd07c00e1a3d26b1
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: b15d6a50bfb6d7826bc26f85805c6b7311d33c41
+ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582162"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51594865"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
@@ -48,6 +48,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 |[Adicionar guia ao chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Adicione (pin) uma guia a um chat (e reunião associada).|
 |[Guia Atualizar no chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Atualize as propriedades de uma guia em um chat (e reunião associada).|
 |[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhum | Remover (desempinar) uma guia de um chat (e reunião associada).|
+|[Listar concessões de permissão](../api/chat-list-permissiongrants.md) | [coleção resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Listar permissões concedidas aos aplicativos neste chat.|
 
 >**Observação:** Ao usar permissões de aplicativo, certifique-se de saber como obter a ID do chat. Como não há suporte para listagem de chats com permissões de aplicativo, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de alteração para [/chats/getAllMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
 
@@ -55,7 +56,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-| id| Cadeia de caracteres| O identificador exclusivo do chat. Somente leitura.|
+| id| String| O identificador exclusivo do chat. Somente leitura.|
 | topic| String|  (Opcional) Assunto ou tópico para o chat. Disponível apenas para chats em grupo.|
 | createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
 | lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a lista de membros foi alterada pela última vez. Somente leitura.|
@@ -77,6 +78,7 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 | installedApps | Coleção [teamsAppInstallation](teamsappinstallation.md) | Uma coleção de todos os aplicativos no chat. Anulável. |
 | members | coleção [conversationMember](conversationmember.md) | Uma coleção de todos os membros no chat. Anulável. |
 | messages | [chatMessage](chatmessage.md) collection | Uma coleção de todas as mensagens no chat. Anulável. |
+| permissionGrants| [coleção resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Uma coleção de permissões concedidas aos aplicativos para o chat.|
 
 ## <a name="json-representation"></a>Representação JSON
 
