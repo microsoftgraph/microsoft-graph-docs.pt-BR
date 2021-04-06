@@ -4,14 +4,14 @@ description: As notificações de alteração podem ser enviadas por meio de tec
 author: Jumaodhiss
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 2cb6000b309b9bcaf5af840cc26976c7254d2d96
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 3be156e2d83cfe820c26482fcc87179b42d8142d
+ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469098"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51594872"
 ---
-# <a name="get-change-notifications-delivered-in-different-ways-preview"></a>Receba notificações sobre alterações por diferentes maneiras de envio(versão prévia)
+# <a name="get-change-notifications-delivered-in-different-ways"></a>Receber notificações de alterações de maneiras diferentes
 
 A alteração de notificações podem ser enviadas em diferentes maneiras aos assinantes. Se o principal modo de entrega para notificações de alteração for por meio de webhooks, pode ser desafiador tirar proveito de webhooks para cenários de alto rendimento ou quando o receptor não pode expor uma URL de notificação disponível publicamente.  
 
