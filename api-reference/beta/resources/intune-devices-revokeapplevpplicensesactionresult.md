@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso revokeAppleVppLicensesActionResult
-description: Cancelar o resultado da ação de licenças VPP da Apple
+title: Tipo de recurso revokeAppleVppLicensesActionResult
+description: Resultado da ação Revogar licenças do Apple Vpp
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dadfd90dcd06c3628088c15d39cd8ba1d5655392
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 56fce51fb5de4066136199a99670c4767b6ad724
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267261"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611857"
 ---
-# <a name="revokeapplevpplicensesactionresult-resource-type"></a>tipo de recurso revokeAppleVppLicensesActionResult
+# <a name="revokeapplevpplicensesactionresult-resource-type"></a>Tipo de recurso revokeAppleVppLicensesActionResult
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Cancelar o resultado da ação de licenças VPP da Apple
+Resultado da ação Revogar licenças do Apple Vpp
 
 
 Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
@@ -29,11 +29,11 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |actionName|Cadeia de caracteres|Nome da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado da ação herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune-devices-actionstate.md)|Estado da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora de início da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|totalLicensesCount|Int32|Número total de licenças VPP da Apple associadas|
-|failedLicensesCount|Int32|Número total de licenças VPP da Apple que falharam ao revogar|
+|totalLicensesCount|Int32|Número total de licenças do Apple Vpp associadas|
+|failedLicensesCount|Int32|Número total de licenças do Apple Vpp que falharam ao revogar|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5a2ee897506a2d642dd4dcb9df75ed8a3198ca4
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 2673f7325d3be8285e01d75e5dbcc3b7cb691dda
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159302"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51611121"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -28,7 +28,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Perfis de registro corporativo
 - Configurações de dispositivo
 - Configurações de intenção de dispositivo
-- Gerenciamento de dispositivos
+- Gerenciamento de dispositivo
 - SIM Eletrônico (ESIM)
 - Esgrima
 - Análise de Política de Grupo
@@ -39,7 +39,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Acesso remoto
 - Parceiros de assistência remota
 - Políticas de controle de acesso baseado em função (RBAC)
-- Reporting
+- Relatório
 - Parceiros de gerenciamento de expansão de telecomunicações
 - Solução de problemas de eventos
 - Resumos da Proteção de Informações do Windows
@@ -51,7 +51,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |[Atualizar deviceManagement](../api/intune-shared-devicemanagement-update.md)|Atualizar as propriedades de um objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).|
 |**Configuração do dispositivo**|
 |[ação enableLegacyPcManagement](../api/intune-shared-devicemanagement-enablelegacypcmanagement.md)|Nenhuma|Ainda não documentado|
-|**Gerenciamento de dispositivos**|
+|**Gerenciamento de dispositivo**|
 |[ação sendCustomNotificationToCompanyPortal](../api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md)|Nenhuma|Ainda não documentado|
 |**Integração**|
 |[Função verifyWindowsEnrollmentAutoDiscovery](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|Booliano|Ainda não documentado|
@@ -64,13 +64,13 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo associado ao dispositivo.|
+|id|String|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
-|legacyPcManangementEnabled|Booleano|A propriedade para habilitar o gerenciamento de computador herdado não-MDM gerenciado para essa conta. Essa propriedade é somente leitura.|
+|legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não-MDM gerenciado para essa conta. Essa propriedade é somente leitura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitidos por locatário.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
-|**Gerenciamento de dispositivos**|
+|**Gerenciamento de dispositivo**|
 |accountMoveCompletionDateTime|DateTimeOffset|A data & hora em que os dados do locatário foram movidos entre as unidades de escala.|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Informações de consentimento do administrador.|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Visão geral da proteção do dispositivo.|
@@ -122,7 +122,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |settingDefinitions|[Coleção deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|Definições de configuração de intenção de gerenciamento de dispositivos|
 |templates|[Coleção deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Os modelos disponíveis|
 |categories|[Coleção deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|As categorias disponíveis|
-|**Gerenciamento de dispositivos**|
+|**Gerenciamento de dispositivo**|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Certificado de notificação por push da Apple.|
 |dataSharingConsents|[Coleção dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|Consentimentos de compartilhamento de dados.|
 |detectedApps|Conjunto [detectedApp](../resources/intune-devices-detectedapp.md)|A lista de aplicativos detectados associados a um dispositivo.|
@@ -130,10 +130,13 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |deviceShellScripts|[Coleção deviceShellScript](../resources/intune-devices-deviceshellscript.md)|A lista de scripts de shell de dispositivo associados ao locatário.|
 |deviceHealthScripts|[Coleção deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|A lista de scripts de saúde do dispositivo associados ao locatário.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Visão geral do dispositivo|
-|managedDevices|Conjunto [managedDevice](../resources/intune-shared-manageddevice.md)|A lista de dispositivos gerenciados.|
+|managedDevices|Conjunto [managedDevice](../resources/intune-devices-manageddevice.md)|A lista de dispositivos gerenciados.|
 |remoteActionAudits|[Coleção remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|A lista de auditorias de ação remota do dispositivo com o locatário.|
 |windowsMalwareInformation|[Coleção windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)|A lista de malware afetados no locatário.|
 |mobileAppTroubleshootingEvents|[Coleção mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|A propriedade collection de MobileAppTroubleshootingEvent.|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userExperienceAnalyticsOverview.md)|Visão geral da análise da experiência do usuário|
+|userExperienceAnalyticsBaselines|[Coleção userExperienceAnalyticsBaseline](../resources/intune-devices-userExperienceAnalyticsBaseline.md)|Linhas de base de análise de experiência do usuário|
+|userExperienceAnalyticsCategories|[coleção userExperienceAnalyticsCategory](../resources/intune-devices-userExperienceAnalyticsCategory.md)|Categorias de análise de experiência do usuário|
 |userExperienceAnalyticsDevicePerformance|[coleção userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userExperienceAnalyticsDevicePerformance.md)|Desempenho do dispositivo de análise de experiência do usuário|
 |userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userExperienceAnalyticsRegressionSummary.md)|Resumo de regressão de análise de experiência do usuário|
 |userExperienceAnalyticsDeviceStartupHistory|[coleção userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md)|Histórico de inicialização do dispositivo de análise de experiência do usuário|
