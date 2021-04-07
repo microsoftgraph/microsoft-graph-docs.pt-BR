@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 23bc95ff02c4170d4730a804b2f020385bfd1b37
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: bb69c367b7a0b2c1588297c4564516212a23043d
+ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844334"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51613529"
 ---
 ```objc
 
@@ -17,11 +17,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphIdentityApiConnector *identityApiConnector = [[MSGraphIdentityApiConnector alloc] init];
-[identityApiConnector setDisplayName:@"New Test API"];
-[identityApiConnector setTargetUrl:@"https://otherapi.com/api/endpoint"];
 MSGraphApiAuthenticationConfigurationBase *authenticationConfiguration = [[MSGraphApiAuthenticationConfigurationBase alloc] init];
-[authenticationConfiguration setUsername:@"<NEW_USERNAME>"];
-[authenticationConfiguration setPassword:@"<NEW_PASSWORD>"];
+[authenticationConfiguration setPkcs12Value:@"eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"];
+[authenticationConfiguration setPassword:@"secret"];
 [identityApiConnector setAuthenticationConfiguration:authenticationConfiguration];
 
 NSError *error;
