@@ -5,12 +5,12 @@ description: Crie um tipo de conteúdo para um site.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 9617d43291e241bb937e7743dcbfddbb83cb6edd
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 4eff9efd9ae4f2b2daa81356cc8d3887f7fc3c29
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202045"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638862"
 ---
 # <a name="create-contenttype"></a>Criar contentType
 Namespace: microsoft.graph
@@ -19,14 +19,14 @@ Namespace: microsoft.graph
 
 Crie um novo [contentType][] para um [site][].
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |Sites.Manage.All, Sites.FullControl.All    |
-|Delegada (conta pessoal da Microsoft) |Não suportado    |
+|Delegado (conta corporativa ou de estudante) |Sites.Manage.All, Sites.FullControl.All    |
+|Delegado (conta pessoal da Microsoft) |Não suportado    |
 |Aplicativo |Sites.Manage.All, Sites.FullControl.All |
 
 
@@ -36,7 +36,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 POST /sites/{site-id}/contentTypes
-
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: da886cc799f638d981c6aa0d9ee213518c6deedc
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 194669c6dcf19e72732c9d798d3081d8ed4606e0
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491023"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638911"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -72,11 +72,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|String|
 |Inteiro|
 |Referência|
 |Binário|
-|Boolean|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -810,13 +810,13 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |event|
-|message|
+|mensagem|
 |driveItem|
 |externalItem|
 |site|
 |list|
 |listItem|
-|drive|
+|Unidade|
 
 ### <a name="bucketaggregationsortproperty-values"></a>valores bucketAggregationSortProperty
 
@@ -1675,7 +1675,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|message|
+|mensagem|
 
 ### <a name="chatmessageimportance-values"></a>valores chatMessageImportance
 
@@ -1751,7 +1751,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Member       |
 |:--------------|
 |event|
-|message|
+|mensagem|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -2160,3 +2160,10 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |other|
 |unknownFutureValue|
 
+### <a name="teamsappinstallationscope-values"></a>Valores teamsAppInstallationScope
+
+|Membro    |Valor    |Descrição |
+|:---------|:--------|:----------- |
+|team      |0        |Indica que o aplicativo do Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|groupChat |1        |Indica que o aplicativo do Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
+|pessoal  |2        |Indica que o aplicativo do Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|

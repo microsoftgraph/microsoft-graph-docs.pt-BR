@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0aa3aeea81bf0d559fd97fe45598c662c9cdb4ae
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: c4d559cb7778e6a0147e0e0fd4b8fc5f63bfb168
+ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844137"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51638869"
 ---
 # <a name="list-teamsapp"></a>Listar teamsApp
 
@@ -19,10 +19,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Listar [aplicativos](../resources/teamsapp.md) do catálogo de aplicativos do Microsoft Teams.
-Isso inclui aplicativos da loja do Microsoft Teams, bem como aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário). Para obter aplicativos somente do catálogo de aplicativos da sua organização, especifique `organization` como **distributionMethod** na solicitação.
+Isso inclui aplicativos da loja do Microsoft Teams, bem como aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos de locatário). Para obter aplicativos somente do catálogo de aplicativos da sua organização, especifique `organization` como **distributionMethod** na solicitação.
 
 > [!NOTE]
-> O recurso de um aplicativo teams é gerado pelo servidor e não é o mesmo que `id` o especificado em um manifesto de aplicativo do  `id` Teams. O fornecido pelo desenvolvedor como parte do manifesto do aplicativo `id` Teams é marcado como o recurso no aplicativo `externalId` **teams.**
+> O `id` de um recurso **teamsApp** é gerado pelo servidor e não é o mesmo especificado em um manifesto `id` de aplicativo do Teams. O `id` fornecido pelo desenvolvedor como parte do manifesto do aplicativo teams é carimbado como o no recurso `externalId` **teamsApp.**
 
 ## <a name="permissions"></a>Permissions
 
@@ -46,9 +46,9 @@ GET /appCatalogs/teamsApps
 
 Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-O uso retornará mais informações sobre o estado do aplicativo, como `$expand=AppDefinitions` **publishingState**, que reflete o status de revisão de envio de aplicativo e retorna se um aplicativo foi aprovado, rejeitado ou permanece em revisão. 
+O uso retornará mais informações sobre o estado do aplicativo, como `$expand=AppDefinitions` **o publishingState**, que reflete o status da revisão de envio do aplicativo e retorna se um aplicativo foi aprovado, rejeitado ou permanece sob revisão. 
 
-> **Observação:** Você pode filtrar qualquer um dos campos do objeto [teamsApp](../resources/teamsapp.md) para reduzir a lista de resultados. Você pode usar qualquer uma das seguintes operações de filtro: Igual, não igual a e, ou não.
+> **Observação:** Você pode filtrar em qualquer um dos campos do [objeto teamsApp](../resources/teamsapp.md) para reduzir a lista de resultados. Você pode usar qualquer uma das seguintes operações de filtro: Igual, não igual e ou não.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -62,13 +62,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` lista de [objetos teamsApp](../resources/teamsapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` lista de objetos [teamsApp](../resources/teamsapp.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Exemplo 1: Listar todos os aplicativos específicos do locatário
+### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Exemplo 1: listar todos os aplicativos específicos do locatário
 
-O exemplo a seguir lista todos os aplicativos específicos do seu locatário.
+O exemplo a seguir lista todos os aplicativos que são específicos para seu locatário.
 
 #### <a name="request"></a>Solicitação
 
@@ -192,9 +192,9 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Exemplo 3: Encontrar aplicativo baseado na ID de manifesto do aplicativo Teams
+### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Exemplo 3: Encontrar aplicativo com base na ID do manifesto do aplicativo do Teams
 
-O exemplo a seguir lista os aplicativos que corresponderem à 'id' especificada no manifesto do aplicativo teams. No exemplo, a ID de manifesto do aplicativo Teams é 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
+O exemplo a seguir lista aplicativos que corresponderem à "id" especificada no manifesto do aplicativo do Teams. No exemplo, a ID de manifesto do aplicativo Teams é 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
 #### <a name="request"></a>Solicitação
 
@@ -254,9 +254,9 @@ Content-Type: application/json
   }
 ```
 
-### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Exemplo 4: Listar aplicativos com uma determinada ID e retornar o estado de revisão de envio
+### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Exemplo 4: listar aplicativos com uma determinada ID e retornar o estado de revisão de envio
 
-O exemplo a seguir lista aplicativos com uma determinada ID e expande **appDefinitions** para retornar **o publishingState**, que reflete o estado de revisão de envio do aplicativo. `Submitted` significa que a análise está pendente, significa que o aplicativo foi aprovado pelo administrador e significa que o `published` aplicativo foi rejeitado pelo `rejected` administrador.
+O exemplo a seguir lista aplicativos com uma determinada ID e expande **appDefinitions** para retornar **o publishingState**, que reflete o estado de revisão de envio do aplicativo. `Submitted` significa que a revisão está pendente, significa que o aplicativo foi aprovado pelo administrador e significa que o `published` aplicativo foi rejeitado pelo `rejected` administrador.
 
 #### <a name="request"></a>Solicitação
 
@@ -328,7 +328,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>Exemplo 5: Listar os detalhes apenas dos aplicativos no catálogo que contêm um bot
+### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>Exemplo 5: listar os detalhes apenas desses aplicativos no catálogo que contêm um bot
 
 O exemplo a seguir lista apenas os aplicativos no catálogo que contêm um bot.
 
@@ -450,6 +450,57 @@ Content-Type: application/json
                     "bot": {
                         "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
                     }
+                }
+            ]
+        }
+    ]
+}
+```
+
+### <a name="example-6-list-the-details-of-apps-filtered-by-app-installation-scope"></a>Exemplo 6: Listar os detalhes dos aplicativos filtrados pelo escopo de instalação do aplicativo
+
+O exemplo a seguir lista apenas os aplicativos que podem ser instalados no escopo pessoal de um usuário.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_in_personal_scope"
+}-->
+
+```msgraph-interactive
+GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($select=id,displayName,allowedInstallationScopes)&$filter=appDefinitions/any(a:a/allowedInstallationScopes has 'personal')
+```
+---
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_in_personal_scope",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions(id,displayName,allowedInstallationScopes))",
+    "value": [
+        {
+            "id": "5a542e1c-5f8c-4793-8b0c-6082464b2378",
+            "externalId": "4b3ec336-b998-4623-9e25-d4182fb82159",
+            "displayName": "Carriage",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('5a542e1c-5f8c-4793-8b0c-6082464b2378')/appDefinitions(id,displayName,allowedInstallationScopes)",
+            "appDefinitions": [
+                {
+                    "id": "MWE1NDJlMWMtNWY4Yy00NzkzLThiMGMtNjA4MjQ2NGIyMzc4IyMxLjAuMCMjUHVibGlzaGVk",
+                    "displayName": "Carriage",
+                    "allowedInstallationScopes": "personal"
                 }
             ]
         }
