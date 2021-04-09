@@ -3,14 +3,76 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: ef5f4a45a9c6a48bbf0bec8e96d84dce42b1fb2e
-ms.sourcegitcommit: 59df7b4d5098a49403a315d19a0c048013cd592e
+ms.openlocfilehash: 9da8465882d4c179afbb9b658ea02cee53ebd9d5
+ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50723125"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51654083"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="february-2021-new-and-generally-available"></a>Fevereiro de 2021: novo e disponível para o público geral
+
+### <a name="cloud-communications--online-meeting"></a>Comunicações em nuvem | Reunião online
+Use permissões de aplicativo baseada em políticas `OnlineMeetings.Read.All` ou `OnlineMeetings.ReadWrite.All` sobre as operações e métodos do recurso [onlineMeeting](/graph/api/resources/onlinemeeting). Isso significa que os administradores podem [configurar a política de acesso a aplicativos](cloud-communication-online-meeting-application-access-policy.md) para permitir que os aplicativos acessem as reuniões online em nome de um usuário.
+
+### <a name="sites-and-lists"></a>Sites e listas
+Use o recurso de [permissão](/graph/api/resources/permission) e suas operações CRUD para gerenciar a permissão de compartilhamento concedida para um [driveItem](/graph/api/resources/driveitem). Permissões com uma faceta link representam links de compartilhamento criados no item. Permissões com uma faceta invitation representam permissões adicionadas convidando usuários ou grupos específicos para ter acesso ao arquivo.
+
+## <a name="february-2021-new-in-preview-only"></a>Fevereiro de 2021: novo apenas em pré-visualização
+
+### <a name="applications"></a>Aplicativos
+Use permissões de aplicativo para as [APIs de sincronização](/graph/api/resources/synchronization-overview?view=graph-rest-beta&preserve-view=true) que automatizam o provisionamento (criação, manutenção) e o desprovisionamento (remoção) de identidades no Azure AD.
+
+### <a name="cloud-communications--calls"></a>Comunicações na nuvem | Chamadas
+Suporte para [gravação baseada em políticas para chamadas](/microsoftteams/teams-recording-policy) onde, usando a política administrativa, as chamadas são gravadas automaticamente para processamento e retenção subsequentes, conforme exigido pela política corporativa ou regulamentar relevante. Antes de um participante baseado em política ingressar em uma chamada, a política solicita o envio de um [participantJoiningNotification](/graph/api/resources/participantJoiningNotification?view=graph-rest-beta&preserve-view=true) ao bot associado à política que tem capacidade para lidar com o novo participante. O bot responde com [acceptJoinResponse](/graph/api/resources/acceptjoinresponse?view=graph-rest-beta&preserve-view=true), [rejectJoinResponse](/graph/api/resources/rejectjoinresponse?view=graph-rest-beta&preserve-view=true) ou [inviteNewBotResponse](/graph/api/resources/invitenewbotresponse?view=graph-rest-beta&preserve-view=true) em seu conteúdo de resposta.
+
+### <a name="compliance--ediscovery"></a>Conformidade | Descoberta Eletrônica
+- Use o recurso [legalHold](/graph/api/resources/ediscovery-legalhold?view=graph-rest-beta&preserve-view=true) e suas APIs para proteger o conteúdo indefinidamente contra exclusão, para fins de litígio, investigação interna ou outras ações legais.
+- Use o recurso [sourceColection](/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta&preserve-view=true) e suas APIs para pesquisar e identificar documentos relevantes de locais com ou sem custódia no Microsoft 365.
+- Use o recurso [tag](/graph/api/resources/ediscovery-tag?view=graph-rest-beta&preserve-view=true) e as APIs para marcar documentos durante a revisão para separar o conteúdo responsivo e não responsivo.
+- [Exporte](/graph/api/ediscovery-reviewset-export?view=graph-rest-beta&preserve-view=true) documentos de um [conjunto de revisão](/graph/api/resources/ediscovery-reviewset?view=graph-rest-beta&preserve-view=true).
+- Use a ação [addToReviewSet](/graph/api/ediscovery-reviewset-addtoreviewset?view=graph-rest-beta&preserve-view=true) para adicionar documentos em uma **sourceColection** a um **reviewSet**.
+- [Aplique tags](/graph/api/ediscovery-reviewsetquery-applytags?view=graph-rest-beta&preserve-view=true) a documentos baseados em uma [consulta de conjunto de revisão](/graph/api/resources/ediscovery-reviewsetquery?view=graph-rest-beta&preserve-view=true).
+- API de Descoberta eletrônica definida no namespace `microsoft.graph.ediscovery`.
+- Modelo de permissões delegadas alterado de `User.Read` para `eDiscovery.Read.All` e `eDiscovery.ReadWrite.All`.
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
+- Atualizações do Intune de [fevereiro](https://developer.microsoft.com/graph/changelog/?from=2021-02-01&to=2021-02-28&filterBy=Corporate%20management) para a versão beta.
+- Novas propriedades definidas pelo Intune no recurso do [dispositivo](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true): **deviceCategory**, **deviceOwnership**, **domainName**, **enrollmentProfileName**, **enrollmentType**, **isRooted**, **managementType**, and **registrationDateTime**.
+
+### <a name="education"></a>Educação
+Use [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) para especificar as práticas padrão em uma tarefa para uma classe, por exemplo, hora de vencimento da tarefa, URL do canal para notificações sobre uma tarefa. Você ainda pode personalizar valores ao criar uma tarefa.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
+- Use o recurso [smsAuthenticationMethodConfiguration](/graph/api/resources/smsAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true) para [obter](/graph/api/smsauthenticationmethodconfiguration-get?view=graph-rest-beta&preserve-view=true), [atualizar](/graph/api/smsauthenticationmethodconfiguration-update?view=graph-rest-beta&preserve-view=true) ou [excluir](/graph/api/smsauthenticationmethodconfiguration-delete?view=graph-rest-beta&preserve-view=true) as definições de configuração de uma política de autenticação de mensagem de texto em uma organização.
+- Use o recurso [temporaryAccessPassAuthenticationMethodConfiguration](/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) para [obter](/graph/api/temporaryaccesspassauthenticationmethodconfiguration-get?view=graph-rest-beta&preserve-view=true), [atualizar](/graph/api/temporaryaccesspassauthenticationmethodconfiguration-update?view=graph-rest-beta&preserve-view=true) ou [excluir](/graph/api/temporaryaccesspassauthenticationmethodconfiguration-delete?view=graph-rest-beta&preserve-view=true) as definições de configuração de uma política de autenticação de passe de acesso temporário em uma organização.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+- Atribua informações de geolocalização a um recurso de [pacote de acesso](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true) na [solicitação de atribuição de pacote de acesso](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true).
+- Obtenha uma lista de todos os [ambientes de recursos de pacote de acesso](/graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta&preserve-view=true) que representam as geolocalizações que armazenam os recursos do Microsoft Office SharePoint Online.
+- Use permissões de aplicativos (`EntitlementManagement.Read.All` ou `EntitlementManagement.ReadWrite.All`) para operações dos seguintes recursos:
+  - [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageAssignmentResourceRole](/graph/api/resources/accesspackageassignmentresourcerole?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
+  - [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
+  - [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true)
+  - [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta&preserve-view=true)
+
+### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
+Obtenha mais propriedades incluídas em [relatórios detalhados para uso do site SharePoint](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta&preserve-view=true): anonymousLinkCount, companyLinkCount, externalSharing, geolocation, secureLinkForGuestCount, secureLinkForMemberCount, siteSensitivityLabelId, e unmanagedDevicePolicy.
+
+### <a name="tasks-and-plans"></a>Tarefas e planos
+- Defina até 25 categorias em um objeto de [detalhes do plano](/graph/api/resources/plannerplandetails?view=graph-rest-beta&preserve-view=true) para um plano. Para cada categoria, especifique um rótulo descritivo e associe tarefas em um plano com uma ou mais destas categorias. 
+- Use uma [lista de participantes](/graph/api/resources/plannerRoster?view=graph-rest-beta&preserve-view=true) para representar um conjunto de usuários colaborando em um [plano](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true). Use a relação **rosterPlans** para obter as listas de participantes das quais o usuário é um [membro](/graph/api/resources/plannerrostermember?view=graph-rest-beta&preserve-view=true). 
+- Para planos que são apresentados em experiências fora do Planner, como o Microsoft Teams, especifique nos [detalhes de contexto do plano](/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta&preserve-view=true) como exibir o link para o [contexto do plano](/graph/api/resources/plannerPlanContext?view=graph-rest-beta&preserve-view=true). 
+
+### <a name="use-sdks"></a>Usar SDKs
+Experimente a versão prévia do [Microsoft Graph Java SDK v3](https://github.com/microsoftgraph/msgraph-sdk-java/tree/feature/v3)! Para mais informações, confira a [postagem no blog](https://developer.microsoft.com/graph/blogs/announcing-the-public-preview-of-microsoft-graph-java-sdk-v3/) relacionada.
 
 ## <a name="january-2021-new-in-preview-only"></a>Janeiro de 2021: novo apenas em pré-visualização
 

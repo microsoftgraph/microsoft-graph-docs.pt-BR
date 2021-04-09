@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d4a88bb4d826ead30d1d739e696dec76df5cbb2f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2c38895059461f814a3ad0f8e663082972cc8663
+ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957062"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51654125"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>Tipo de recurso cloudPcDeviceImage
 
@@ -36,15 +36,15 @@ Representa o recurso de imagem no computador de nuvem.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do recurso de imagem no computador de nuvem. Somente leitura.|
-|sourceImageResourceId|Cadeia de caracteres|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
-|displayName|Cadeia de caracteres|O nome de exibição da imagem.|
+|id|String|Identificador exclusivo do recurso de imagem no computador de nuvem. Somente leitura.|
+|sourceImageResourceId|String|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|displayName|String|O nome de exibição da imagem.|
 |versão|String|A versão da imagem. Por exemplo: 0.0.1, 1.5.13.|
-|osBuildNumber|Cadeia de caracteres|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
+|osBuildNumber|String|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
 |operatingSystem|String|O sistema operacional da imagem. Por exemplo: Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|Os dados e a hora em que a imagem foi modificada pela última vez. O tempo é mostrado no formato ISO 8601 e hora UTC (Tempo Universal Coordenado). Por exemplo, meia-noite UTC em 1º de janeiro de 2014 aparece como '2014-01-01T00:00:00Z'.|
 |status|cloudPcDeviceImageStatus|O status da imagem no computador de nuvem. Os valores possíveis são: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|Os detalhes do status da imagem, que indica por que o carregamento falhou, se aplicável. Os valores possíveis são: `internalServerError` e `sourceImageNotFound`.|
+|statusDetails|cloudPcDeviceImageStatusDetails|Os detalhes do status da imagem, que indica por que o carregamento falhou, se aplicável. Os valores possíveis são: `internalServerError` `sourceImageNotFound` , , e `osVersionNotSupported` `sourceImageInvalid` .|
 
 ### <a name="cloudpcdeviceimagestatus-values"></a>valores cloudPcDeviceImageStatus
 
