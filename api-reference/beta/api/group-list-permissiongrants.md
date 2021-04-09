@@ -12,53 +12,53 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51594880"
 ---
-# <a name="list-permissiongrants-of-a-group"></a><span data-ttu-id="a8969-103">Listar permissionGrants de um grupo</span><span class="sxs-lookup"><span data-stu-id="a8969-103">List permissionGrants of a group</span></span>
+# <a name="list-permissiongrants-of-a-group"></a><span data-ttu-id="b7a1a-103">Listar permissionGrants de um grupo</span><span class="sxs-lookup"><span data-stu-id="b7a1a-103">List permissionGrants of a group</span></span>
 
-<span data-ttu-id="a8969-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a8969-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b7a1a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7a1a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a8969-105">Listar tudo [concessões de permissão para recursos específicos](../resources/resourcespecificpermissiongrant.md) no [grupo](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="a8969-105">List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [group](../resources/group.md).</span></span> <span data-ttu-id="a8969-106">Esta é uma lista de aplicativos do Azure AD que têm acesso ao chat junto com o tipo de acesso que cada aplicativo tem.</span><span class="sxs-lookup"><span data-stu-id="a8969-106">This is a list of Azure AD apps that have access to the chat along with the kind of access that each app has.</span></span>
+<span data-ttu-id="b7a1a-105">Listar tudo [concessões de permissão para recursos específicos](../resources/resourcespecificpermissiongrant.md) no [grupo](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="b7a1a-105">List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [group](../resources/group.md).</span></span> <span data-ttu-id="b7a1a-106">Esta é uma lista de aplicativos do Azure AD que têm acesso ao chat junto com o tipo de acesso que cada aplicativo tem.</span><span class="sxs-lookup"><span data-stu-id="b7a1a-106">This is a list of Azure AD apps that have access to the chat along with the kind of access that each app has.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a8969-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="a8969-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b7a1a-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="b7a1a-107">Permissions</span></span>
 
-<span data-ttu-id="a8969-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a8969-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b7a1a-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b7a1a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a8969-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a8969-110">Permission Type</span></span>                        | <span data-ttu-id="a8969-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a8969-111">Permissions (from least to most privileged)</span></span>                                          |
+| <span data-ttu-id="b7a1a-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b7a1a-110">Permission Type</span></span>                        | <span data-ttu-id="b7a1a-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b7a1a-111">Permissions (from least to most privileged)</span></span>                                          |
 | :------------------------------------- | :----------------------------------------------------------------------------------- |
-| <span data-ttu-id="a8969-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a8969-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="a8969-113">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8969-113">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="a8969-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a8969-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8969-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a8969-115">Not supported.</span></span>                                                                       |
-| <span data-ttu-id="a8969-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a8969-116">Application</span></span>                            | <span data-ttu-id="a8969-117">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8969-117">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="b7a1a-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b7a1a-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="b7a1a-113">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7a1a-113">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="b7a1a-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b7a1a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7a1a-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b7a1a-115">Not supported.</span></span>                                                                       |
+| <span data-ttu-id="b7a1a-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b7a1a-116">Application</span></span>                            | <span data-ttu-id="b7a1a-117">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7a1a-117">GroupMember.Read.All, GroupMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a8969-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a8969-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b7a1a-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b7a1a-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{group-id}/permissionGrants
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="a8969-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a8969-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b7a1a-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b7a1a-119">Optional query parameters</span></span>
 
-<span data-ttu-id="a8969-120">Esta operação não é compatível com os [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a8969-120">This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="b7a1a-120">Esta operação não é compatível com os [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="b7a1a-120">This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a8969-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a8969-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b7a1a-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b7a1a-121">Request headers</span></span>
 
-| <span data-ttu-id="a8969-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a8969-122">Header</span></span>           | <span data-ttu-id="a8969-123">Valor</span><span class="sxs-lookup"><span data-stu-id="a8969-123">Value</span></span>                      |
+| <span data-ttu-id="b7a1a-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b7a1a-122">Header</span></span>           | <span data-ttu-id="b7a1a-123">Valor</span><span class="sxs-lookup"><span data-stu-id="b7a1a-123">Value</span></span>                      |
 | :--------------- | :------------------------- |
-| <span data-ttu-id="a8969-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="a8969-124">Authorization</span></span>    | <span data-ttu-id="a8969-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a8969-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b7a1a-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="b7a1a-124">Authorization</span></span>    | <span data-ttu-id="b7a1a-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b7a1a-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="a8969-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a8969-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b7a1a-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b7a1a-127">Request body</span></span>
 
-<span data-ttu-id="a8969-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a8969-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="b7a1a-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b7a1a-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a8969-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="a8969-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b7a1a-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7a1a-129">Response</span></span>
 
-<span data-ttu-id="a8969-130">Se for bem-sucedido, este método retorna um `200 OK` código de resposta e uma lista de [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objetos no corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a8969-130">If successful, this method returns a `200 OK` response code and a list of [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objects in the response body.</span></span>
+<span data-ttu-id="b7a1a-130">Se for bem-sucedido, este método retornará um `200 OK` código de resposta e uma lista de [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objetos no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b7a1a-130">If successful, this method returns a `200 OK` response code and a list of [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a8969-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a8969-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b7a1a-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b7a1a-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="a8969-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a8969-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b7a1a-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b7a1a-132">Request</span></span>
 
-<span data-ttu-id="a8969-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a8969-133">The following is an example of the request.</span></span>
+<span data-ttu-id="b7a1a-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b7a1a-133">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -70,11 +70,11 @@ GET https://graph.microsoft.com/beta/groups/14c981a4-dca9-4565-bae6-e13ada8861be
 
 ---
 
-### <a name="response"></a><span data-ttu-id="a8969-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="a8969-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b7a1a-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7a1a-134">Response</span></span>
 
-<span data-ttu-id="a8969-135">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="a8969-135">The following example shows the response.</span></span>
+<span data-ttu-id="b7a1a-135">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="b7a1a-135">The following example shows the response.</span></span>
 
-><span data-ttu-id="a8969-136">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a8969-136">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="b7a1a-136">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="b7a1a-136">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
