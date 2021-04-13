@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6aa3c85c25373ecee98894ce0704b35a6de25cdb
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 57f29fdef863671c36f8b9e063c99a370e1173d1
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872909"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697190"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter log de chamadas PSTN como uma coleção de entradas [pstnCallLogRow.](../resources/callrecords-pstncalllogrow.md)
+Obter log de chamadas PSTN como uma coleção de [entradas pstnCallLogRow.](../resources/callrecords-pstncalllogrow.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,11 +48,11 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|fromDateTime|DateTimeOffset|Início do intervalo de tempo para consulta. UTC, inclusive.<br/>O intervalo de tempo é baseado na hora de início da chamada.|
-|toDateTime|DateTimeOffset|Fim do intervalo de tempo a ser consultado. UTC, inclusive.|
+|fromDateTime|DateTimeOffset|Início do intervalo de tempo para consulta. UTC, inclusive.<br/>O intervalo de tempo se baseia na hora de início da chamada.|
+|toDateTime|DateTimeOffset|Fim do intervalo de tempo para consulta. UTC, inclusive.|
 
 > [!IMPORTANT]
-> Os **valores fromDateTime** **e toDateTime** não podem ser maiores do que um intervalo de datas de 90 dias.
+> Os **valores fromDateTime** **e toDateTime** não podem ser mais de um intervalo de datas de 90 dias.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -62,9 +62,9 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esta função retornará um código de resposta e uma coleção de entradas `200 OK` [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um código de resposta e uma coleção de entradas `200 OK` [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) no corpo da resposta.
   
-Se houver mais de 1.000 entradas no intervalo de datas, o corpo também incluirá um com uma URL para consultar a próxima página de entradas `@odata.NextLink` de chamada. A última página no intervalo de datas não tem `@odata.NextLink` . Para obter mais informações, consulte [paging dados do Microsoft Graph em seu aplicativo.](/graph/paging)
+Se houver mais de 1000 entradas no intervalo de datas, o corpo também incluirá um com uma URL para consultar a próxima página de entradas `@odata.NextLink` de chamada. A última página no intervalo de datas não tem `@odata.NextLink` . Para obter mais informações, [consulte paging Microsoft Graph data in your app](/graph/paging).
 
 ## <a name="examples"></a>Exemplos
 
@@ -117,7 +117,9 @@ HTTP/1.1 200 OK
             "destinationName": "United States",
             "conferenceId": null,
             "licenseCapability": "MCOPSTNU",
-            "inventoryType": "Subscriber"
+            "inventoryType": "Subscriber",
+            "operator": "Microsoft",
+            "callDurationSource": "microsoft"
         }],
     "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
 }
@@ -125,5 +127,5 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>Confira também
 
-* [Relatório de uso de PSTN do Microsoft Teams](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
+* [Relatório de uso PSTN do Microsoft Teams](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
 * [Relatório de roteamento direto no Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)

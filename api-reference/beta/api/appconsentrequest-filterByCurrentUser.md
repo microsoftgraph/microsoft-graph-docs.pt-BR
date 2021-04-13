@@ -1,31 +1,31 @@
 ---
-title: 'appConsentRequests: filterByCurrentUser'
-description: Recupere appConsentRequests para o qual o usuário atual é o revistor.
+title: 'appConsentRequest: filterByCurrentUser'
+description: Recupere objetos appConsentRequest para os quais o usuário atual é o revistor.
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2fa7c1c345abe68c0fd2af2d588f07d00468e462
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: ab52efea1ffe02453187c825727f641cde61995c
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201741"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698059"
 ---
-# <a name="appconsentrequests-filterbycurrentuser"></a>appConsentRequests: filterByCurrentUser
+# <a name="appconsentrequest-filterbycurrentuser"></a>appConsentRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere [appConsentRequests](../resources/appconsentrequest.md) para o qual o usuário atual é o revistor e o status do userConsentRequest é `InProgress` .
+Recupere uma coleção de [objetos appConsentRequest](../resources/appconsentrequest.md) para os quais o usuário atual é o revistor e o status do userConsentRequest para acessar o aplicativo especificado é `InProgress` .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,10 +44,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Filtrar para consultar appConsentRequests para o qual o usuário atual é um revistor. O valor permitido é `reviewer` . Obrigatório.|
+|on|consentRequestFilterByCurrentUserOptions|Filtre para consultar objetos appConsentRequest para os quais o usuário atual é um revistor. O valor permitido é `reviewer` . Obrigatório.|
 
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Essa função requer o parâmetro de consulta OData para retornar uma  `$filter` coleção de [userConsentRequests](../resources/userconsentrequest.md) cujo status é `InProgress` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+## <a name="query-parameters"></a>Parâmetros de consulta
+Essa função exige que o parâmetro de consulta OData retorne uma coleção de objetos  `$filter` [userConsentRequest](../resources/userconsentrequest.md) para os quais o status é `InProgress` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos appConsentRequest](../resources/appconsentrequest.md) no corpo da resposta.
 
-## <a name="examples"></a>Exemplos
+## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 

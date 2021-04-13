@@ -3,12 +3,12 @@ title: Microsoft Graph Toolkit provedores
 description: Os provedores de Toolkit do Microsoft Graph permitem autenticação e acesso ao Microsoft Graph para todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: c6fa59632464d0cfa801b07a30d6a5cf94ae5c76
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1bebdb6bd2445873d8b45412b61f8793673db216
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470281"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697176"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Microsoft Graph Toolkit provedores
 
@@ -120,7 +120,7 @@ Providers.onProviderUpdated(providerStateChanged);
 Providers.removeProviderUpdatedListener(providerStateChanged);
 ```
 
-## <a name="getting-an-access-token"></a>Como obter um token de acesso
+## <a name="getting-an-access-token"></a>Obter um token de acesso
 
 Cada provedor expõe uma função chamada que pode recuperar o token de acesso atual ou recuperar um novo token de `getAccessToken` acesso para os escopos fornecidos. O exemplo a seguir mostra como obter um novo token de acesso com o `User.Read` escopo de permissão.
 
@@ -130,7 +130,7 @@ import { Providers, ProviderState } from "@microsoft/mgt";
 //assuming a provider has already been initialized
 
 if (Providers.globalProvider.state === ProviderState.SignedIn) {
-  const token = Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
+  const token = await Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
 }
 ```
 

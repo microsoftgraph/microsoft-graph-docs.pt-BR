@@ -8,7 +8,7 @@ Seus comentários são importantes para nós.
 
 - Para nos informar sobre dúvidas ou problemas encontrados na documentação, [envie uma questão](https://github.com/microsoftgraph/microsoft-graph-docs/issues) neste repositório.
 - Recomendamos que você faça a bifurcação, a correção e uma solicitação de pull das suas alterações propostas. Confira [CONTRIBUTING.md](CONTRIBUTING.md) para obter as diretrizes de contribuição.
-- Para nos informar sobre sua experiência de programação, o que você gostaria de ver em versões futuras, exemplos de código, entre outros, insira suas sugestões e ideias no [UserVoice da Plataforma do Desenvolvedor do Office](https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback?category_id=101632).
+- Para nos informar sobre sua experiência de programação, o que você gostaria de ver em versões futuras, exemplos de código e assim por diante, insira suas sugestões e ideias na [Microsoft 365 Developer Platform Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 ## <a name="code-of-conduct"></a>Código de conduta
 

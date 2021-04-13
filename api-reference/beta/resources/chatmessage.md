@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: d4fbc55ba5c8342ed3bec99255d57460137ed0fb
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 3c0026f966d84869acca52b18347495d331f230b
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582575"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697912"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -47,7 +47,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |[Atualizar mensagem no chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Atualize a **propriedade policyViolation** de uma mensagem de chat.|
 |**Conteúdo hospedado**| | |
 |[Listar todo o conteúdo hospedado](../api/chatmessage-list-hostedcontents.md) | [coleção chatMessageHostedContent](../resources/chatmessagehostedcontent.md)| Obter todo o conteúdo hospedado associado a uma mensagem.|
-|[Obter conteúdo hospedado](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Obter conteúdo hospedado (e são bytes) para uma mensagem.|
+|[Obter conteúdo hospedado](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Obter conteúdo hospedado (e seus bytes) para uma mensagem.|
 
 
 ## <a name="properties"></a>Propriedades
@@ -58,7 +58,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |replyToId| string | Somente leitura. ID da mensagem de chat pai ou da mensagem de chat raiz do thread. (Aplica-se apenas a mensagens de chat em canais, não chats.) |
 |from|[identitySet](identityset.md)| Somente leitura. Detalhes do remetente da mensagem de chat.|
 |etag| string | Somente leitura. Número da versão da mensagem de chat. |
-|messageType|string|O tipo de mensagem de chat. Os valores possíveis são: `message` .|
+|messageType|string|O tipo de mensagem de chat. O valor possível é: `message` .|
 |createdDateTime|dateTimeOffset|Timestamp de quando a mensagem de chat foi criada.|
 |lastModifiedDateTime|dateTimeOffset|Somente leitura. Timestamp quando a mensagem de chat é criada (configuração inicial) ou modificada, incluindo quando uma reação é adicionada ou removida. |
 |lastEditedDateTime|dateTimeOffset|Somente leitura. Timestamp quando as edições para a mensagem de chat foram feitas. Dispara um sinalizador "Editado" na interface do usuário do Teams. Se nenhuma edição for feita, o valor será `null` .|

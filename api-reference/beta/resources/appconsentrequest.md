@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso appConsentRequest
-description: Uma solicitação que representa uma agregação de userConsentRequests para um aplicativo específico.
+description: Uma solicitação que representa uma coleção de objetos userConsentRequest para um aplicativo específico.
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f823f64d4c0324aeca74c3268d6fc95d313e2f00
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d9c01fd4e752bca0fe9518553f52312e523da3a3
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965060"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697898"
 ---
 # <a name="appconsentrequest-resource-type"></a>Tipo de recurso appConsentRequest
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma agregação de [userConsentRequests](../resources/userconsentrequest.md) para um aplicativo específico.
+Uma coleção de [objetos userConsentRequest](../resources/userconsentrequest.md) para um aplicativo específico.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar appConsentRequests](../api/appconsentrequest-list.md)|[Coleção appConsentRequest](../resources/appconsentrequest.md)|Obter uma lista dos [objetos appConsentRequest](../resources/appconsentrequest.md) e suas propriedades.|
+|[Listar appConsentRequests](../api/appconsentrequest-list.md)|[Coleção appConsentRequest](../resources/appconsentrequest.md)|Recupere uma coleção de [objetos appConsentRequest](appconsentrequest.md) e suas propriedades.|
 |[Obter appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|Leia as propriedades e as relações de um [objeto appConsentRequest.](../resources/appconsentrequest.md)|
-|[Listar appConsentRequests: filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Uma lista do [appConsentRequests](../resources/appconsentrequest.md) para o qual o usuário atual é o revistor|
+|[filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Leia as propriedades dos [objetos appConsentRequest](../resources/appconsentrequest.md) para os quais o usuário atual é o revistor e o status da solicitação de consentimento do usuário é `InProgress` .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|appDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo para o qual o consentimento é solicitado. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
-|appId|Cadeia de caracteres|O identificador do aplicativo. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
-|consentType|Cadeia de caracteres|O tipo de consentimento da solicitação. Os valores possíveis são: `Static`   e  `Dynamic` . Elas representam permissões estáticas e dinâmicas, respectivamente, solicitadas no fluxo de trabalho de consentimento. Suporta `$filter` ( `eq` somente) e `$orderby` . Obrigatório.|
-|id|Cadeia de caracteres|O identificador da solicitação de consentimento do aplicativo. Obrigatório.|
+|appDisplayName|String|O nome de exibição do aplicativo para o qual o consentimento é solicitado. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
+|appId|String|O identificador do aplicativo. Obrigatório. Suporta `$filter` ( `eq` somente) e `$orderby` . |
+|consentType|String|O tipo de consentimento da solicitação. Os valores possíveis são: `Static`   e  `Dynamic` . Elas representam permissões estáticas e dinâmicas, respectivamente, solicitadas no fluxo de trabalho de consentimento. Suporta `$filter` ( `eq` somente) e `$orderby` . Obrigatório.|
+|id|String|O identificador da solicitação de consentimento do aplicativo. Obrigatório.|
 |pendingScopes|[Coleção appConsentRequestScope](../resources/appconsentrequestscope.md)|Uma lista de escopos pendentes aguardando aprovação. Isso será vazio se o consentType for `Static` . Obrigatório.|
 
 ## <a name="relationships"></a>Relações
