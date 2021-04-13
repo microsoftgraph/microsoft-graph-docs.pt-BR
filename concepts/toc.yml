@@ -453,7 +453,7 @@ items:
           - name: Limitação
             href: throttling.md
           - name: Notificações de alteração
-            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            displayName: 'Webhooks, cloud printing, Unviersal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             items:
               - name: Visão Geral
                 href: webhooks.md
@@ -467,6 +467,8 @@ items:
                 href: change-notifications-delivery.md
               - name: Obter notificações de alteração para mensagens de chat e canal
                 href: teams-changenotifications-chatmessage.md
+              - name: Alterar notificações para impressão na nuvem
+                href: universal-print-webhook-notifications.md
           - name: Controle de alterações
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
