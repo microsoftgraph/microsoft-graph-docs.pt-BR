@@ -3,12 +3,12 @@ title: Use o Postman com a API do Microsoft Graph
 description: Use a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph em questão minutos.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 04668cd76a7d8ca298e2ad16483be902c59983c5
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 41c6768097a2c0b001b5b9b7c691b0488bed018a
+ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469042"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51654104"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Use o Postman com a API do Microsoft Graph
 Você pode usar a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph em questão minutos.
@@ -60,22 +60,23 @@ Para usar essa coleção no próprio locatário de desenvolvedor, crie um aplica
 O aplicativo do Azure AD agora tem permissões para fazer solicitações em nome de um usuário para chamar Mail.Read e como aplicativo do User.Read.All.
 
 ## <a name="step-4---configuring-authentication-in-postman"></a>Etapa 4 - Configurando autenticação no Postman
-Vá para o Postman e certifique-se de ter selecionado o espaço de trabalho criado na etapa 1. Configure algumas variáveis ​​de ambiente usadas para recuperar um token de acesso.
+Nesta etapa, você irá configurar as variáveis do ambiente usadas para recuperar um token de acesso.
 
-1. Clique no ícone de olho no canto superior direito próximo ao menu suspenso **Nenhum ambiente**.
-2. Clique em **Adicionar** no canto superior direito desse pop-up.
-3. Altere **Novo ambiente** para **Ambiente M365**.
-4. Crie uma nova variável chamada `ClientID` e defina o **Valor atual** como o valor da ID de aplicativo (cliente) da etapa 3.15.
-5. Crie uma nova variável chamada `ClientSecret` e defina o **Valor atual** como o valor do segredo do cliente da etapa 3.17.
-6. Crie uma nova variável chamada `TenantID` e defina o **Valor atual** como o valor da ID de diretório (locatário) da etapa 3.15.
-7. Selecione **Salvar**/**Atualizar**. 
-8. Feche a caixa de diálogo **Gerenciar ambientes**. 
-9. Verifique se o **Ambiente M365** está selecionado no menu suspenso e não em **Nenhum ambiente**.
+1. Vá para o [ambiente de Bifurcação](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/environment/455214-efbc69b2-69bd-402e-9e72-850b3a49bb21/fork).
+2. Adicionar um rótulo para a bifurcação. Pode ser qualquer texto.
+3. No espaço de trabalho, certifique-se de que **Meu espaço de trabalho** esteja selecionado na lista suspensa. 
+4. Clique em **ambiente de Bifurcação**.
+5. Em `ClientID`, defina o **Valor atual** como o valor da ID de aplicativo (cliente) da etapa 3.15.
+6. Em `ClientSecret`, defina o **Valor atual** para o valor do segredo do cliente da etapa 3.17.
+6. Em`TenantID`, defina o **Valor atual** como o valor da ID de diretório (locatário) da etapa 3.15.
+7. No canto superior direito, clique em **Salvar**. 
+8. Feche a guia **Gerenciar ambientes**. 
+9. No canto superior direito, próximo ao ícone de olho, verifique se o **Ambiente M365** está selecionado no menu suspenso e não em **Nenhum ambiente**.
 
 ## <a name="step-5---get-a-delegated-access-token"></a>Etapa 5 - Obter um token de acesso delegado
 Como esta é a primeira vez que você está executando uma solicitação como um fluxo de autenticação delegado, é necessário obter um token de acesso.
 
-1. Passe o mouse sobre a pasta **Em nome de um usuário**, clique nas reticências e selecione **Editar**
+1. Passe o mouse sobre a pasta **Delegado**, clique nas reticências e selecione **Editar**
 2. Clique na guia **Autorização**.
 3. Role para baixo à direita e clique em **Obter novo token de acesso**.
 4. Entre com sua conta de administrador de locatários de desenvolvedor.
@@ -85,9 +86,9 @@ Como esta é a primeira vez que você está executando uma solicitação como um
 Agora você tem um token de acesso válido para usar para solicitações delegadas.
 
 ## <a name="step-6---run-your-first-delegated-request"></a>Etapa 6 - Executar a primeira solicitação delegada
-Dentro da pasta **Em nome de um usuário** estão solicitações de várias cargas de trabalho do Microsoft Graph que você pode chamar.
+Dentro da pasta **Delegado** estão as solicitações de várias cargas de trabalho do Microsoft Graph que você pode chamar.
 
-1. Expanda a pasta **Em nome de um usuário**, em seguida, expanda a pasta **Email**.
+1. Expanda a pasta **Delegado**, em seguida, expanda a pasta **Email**.
 2. Clique duas vezes em **Obter minhas mensagens** para abrir a solicitação.
 3. No canto superior direito, clique em **Enviar**.
 
@@ -120,6 +121,6 @@ Se você quiser contribuir com seus próprios pedidos, precisará de uma licenç
 
 ## <a name="see-also"></a>Confira também
 
-Para obter detalhes sobre como fazer isso, assista ao vídeo [Introdução ao espaço de trabalho do Microsoft Graph Postman](https://youtu.be/3RTHY3jScmA).
+Para obter detalhes sobre como fazer isso, assista ao vídeo [Introdução à coleção do Microsoft Graph Postman](https://youtu.be/3RTHY3jScmA).
 
 

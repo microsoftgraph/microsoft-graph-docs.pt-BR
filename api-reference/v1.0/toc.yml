@@ -431,7 +431,7 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Obter chat para o usuário
                 href: api/chat-get.md
-          - name: Tarefas pendentes
+          - name: Tarefas To do
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -447,7 +447,7 @@ items:
         items:
           - name: Visão geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -4405,8 +4405,9 @@ items:
                       - name: Filtrar pelo usuário atual
                         href: api/userconsentrequest-filterByCurrentUser.md
               - name: Termos de uso
-                href: resources/agreement.md
                 items:
+                  - name: Contrato
+                    href: resources/agreement.md
                   - name: Listar
                     href: api/agreement-list.md
                   - name: Criar
@@ -5098,7 +5099,7 @@ items:
                 href: api/site-unfollow.md
               - name: Listar sites seguidos
                 href: api/sites-list-followed.md
-              - name: Permissões
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: Obter permissão de site
@@ -5361,7 +5362,7 @@ items:
                 href: api/chat-get-members.md
               - name: Remover membro
                 href: api/chat-delete-members.md
-              - name: Listar mensagens em um bate-papo
+              - name: Listar mensagens em um chat
                 href: api/chat-list-messages.md
               - name: Receba uma mensagem no bate-papo
                 href: api/chatmessage-get.md

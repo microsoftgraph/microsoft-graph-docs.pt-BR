@@ -7,6 +7,8 @@ items:
       - name: Visão geral
         href: /graph/auth/index?context=graph/api/beta
       - name: Noções básicas
+        href: /graph/auth/auth-concepts?context=graph/api/beta
+      - name: Registrar seu aplicativo
         href: /graph/auth-register-app-v2?context=graph/api/beta
       - name: Obter acesso em nome de um usuário
         href: /graph/auth-v2-user?context=graph/api/beta
@@ -475,7 +477,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para usuário
                 href: api/chat-list.md
-          - name: Tarefas pendentes
+          - name: Tarefas To do
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -499,7 +501,7 @@ items:
         items:
           - name: Visão geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -11465,17 +11467,18 @@ items:
                           - name: Cancelar
                             href: api/governanceroleassignmentrequest-cancel.md
               - name: Termos de uso
-                href: resources/agreement.md
                 items:
-                  - name: Criar contrato
+                  - name: Contrato
+                    href: resources/agreement.md
+                  - name: Criar
                     href: api/agreement-post-agreements.md
-                  - name: Listar contratos
+                  - name: Listar
                     href: api/agreement-list.md
-                  - name: Obter contrato
+                  - name: Obter
                     href: api/agreement-get.md
-                  - name: Atualizar contrato
+                  - name: Atualizar
                     href: api/agreement-update.md
-                  - name: Excluir contrato
+                  - name: Excluir
                     href: api/agreement-delete.md
                   - name: Listar status de aceitação
                     href: api/user-list-agreementacceptances.md
@@ -12706,7 +12709,7 @@ items:
                 href: api/list-create.md
               - name: Listar subsites
                 href: api/site-list-subsites.md
-              - name: Permissões
+              - name: Permissions
                 items:
                   - name: Permissão
                     href: resources/permission.md
@@ -12820,7 +12823,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -13134,7 +13137,7 @@ items:
                 href: api/chat-get-members.md
               - name: Remover membro
                 href: api/chat-delete-members.md
-              - name: Listar mensagens em um bate-papo
+              - name: Listar mensagens em um chat
                 href: api/chat-list-messages.md
               - name: Receba uma mensagem no bate-papo
                 href: api/chatmessage-get.md
