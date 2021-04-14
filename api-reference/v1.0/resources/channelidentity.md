@@ -5,12 +5,12 @@ author: Kanaka
 doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: teamwork
-ms.openlocfilehash: 866469745a4dd3aaf7b22c2a6710e327992e9fee
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: eae8533f549ba0064d9d392fcf60a5baa6479e2c
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582878"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698017"
 ---
 # <a name="channelidentity-resource-type"></a>Tipo de recurso channelIdentity
 
@@ -40,9 +40,8 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "channelId": "string",
-  "teamId": "string",
-  
+   "channelId":"string",
+   "teamId":"string"
 }
 ```
 

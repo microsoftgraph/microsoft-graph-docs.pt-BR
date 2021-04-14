@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9aab98b448333412b8982fc80e68702e4255f66b
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: a3ac490e4dcd7231c8b005eeb6a259e525bbf882
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469517"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698038"
 ---
 # <a name="userconsentrequest-resource-type"></a>Tipo de recurso userConsentRequest
 
@@ -22,9 +22,9 @@ Um [userConsentRequest](../resources/userconsentrequest.md) é criado por um usu
 
 Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar userConsentRequests](../api/userconsentrequest-list.md)|[Coleção userConsentRequest](../resources/userconsentrequest.md)|Obter uma lista dos [objetos userConsentRequest](../resources/userconsentrequest.md) e suas propriedades.|
+|[Listar userConsentRequests](../api/userconsentrequest-list.md)|[Coleção userConsentRequest](../resources/userconsentrequest.md)|Recupere uma coleção de [objetos userConsentRequest](userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md).|
 |[Obter userConsentRequest](../api/userconsentrequest-get.md)|[userConsentRequest](../resources/userconsentrequest.md)|Leia as propriedades e as relações de um [objeto userConsentRequest.](../resources/userconsentrequest.md)|
-|[Listar userConsentRequests: filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[Coleção userConsentRequest](../resources/userconsentrequest.md)|Obter uma lista dos [objetos userConsentRequest](../resources/userconsentrequest.md) e suas propriedades.|
+|[filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[Coleção userConsentRequest](../resources/userconsentrequest.md)|Leia as propriedades dos [objetos userConsentRequest](../resources/userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md) para o qual o usuário atual é o revistor.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -33,7 +33,7 @@ Método|Tipo de retorno|Descrição|
 |approvalId|String|A id da aprovação. Esse valor é igual ao valor do `id` .|
 |completedDateTime|DateTimeOffset|A data e a hora em **que o status** da solicitação foi marcado como `Completed` . As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |createdBy|[identitySet](../resources/identityset.md)|O usuário que criou a solicitação.|
-|createdDateTime|DateTimeOffset|A data e a hora em que a solicitação foi criada. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br>Suporta `$filter` ( `eq` somente) e `$orderby` .|
+|createdDateTime|DateTimeOffset|A data e a hora em que a solicitação foi criada. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Suporta `$filter` ( `eq` somente) e `$orderby` .|
 |customData|String|Campo de texto livre para definir quaisquer dados personalizados para a solicitação de consentimento do usuário. Não usado.|
 |id|String|Identificador da solicitação. |
 |motivo|String|A justificativa do usuário para exigir acesso ao aplicativo. Suporta `$filter` ( `eq` somente) e `$orderby` .  |

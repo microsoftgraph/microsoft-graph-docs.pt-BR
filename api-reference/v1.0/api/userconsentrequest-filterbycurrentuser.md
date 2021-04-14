@@ -1,22 +1,22 @@
 ---
 title: 'userConsentRequest: filterByCurrentUser'
-description: Recupere userConsentRequests para o qual o usuário atual é o revistor.
+description: Recupere objetos userConsentRequest para os quais o usuário atual é o revistor.
 author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ffcbb985adfc21c267291f27e45e8c50b53ccb4f
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: e30d94934f0ccce140610a8ee713e16aff83c3d6
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507977"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698076"
 ---
 # <a name="userconsentrequest-filterbycurrentuser"></a>userConsentRequest: filterByCurrentUser
 
 Namespace: microsoft.graph
 
-Recupere [o userConsentRequests](../resources/userconsentrequest.md) para um appConsentRequest para o qual o usuário atual é o revistor e o status do userConsentRequest é `InProgress` .
+Recupere uma coleção [de objetos userConsentRequest](../resources/userconsentrequest.md) para acessar um aplicativo especificado, para o qual o usuário atual é o revistor.
 
 ## <a name="permissions"></a>Permissões
 
@@ -45,7 +45,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Filtrar para consultar userConsentRequests para um appConsentRequest para o qual o usuário atual é um revistor. O valor permitido é `reviewer` . Obrigatório.|
+|on|consentRequestFilterByCurrentUserOptions|Filtrar para consultar objetos userConsentRequest para um objeto appConsentRequest para o qual o usuário atual é um revistor. O valor permitido é `reviewer` . Obrigatório.|
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -63,12 +63,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um código `200 OK` de resposta e uma coleção [userConsentRequest](../resources/userconsentrequest.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um código de resposta e uma `200 OK` coleção de [objetos userConsentRequest](../resources/userconsentrequest.md) no corpo da resposta.
 
-## <a name="examples"></a>Exemplos
+## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
+Nesta solicitação, você lista todos os **objetos userConsentRequest** para os quais o usuário atual é o revistor e o status é `Completed` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
