@@ -1,16 +1,16 @@
 ---
 title: Get printJob
-description: Recupere as propriedades e os relacionamentos de um trabalho de impressão.
+description: Recupere as propriedades e as relações de um trabalho de impressão.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: eba94363ccb030096f9ee13a303a159c9383cb33
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c19306c2426603c39fb7892177be262feee03982
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968333"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766452"
 ---
 # <a name="get-printjob"></a>Get printJob
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um trabalho de impressão.
+Recupere as propriedades e as relações de um trabalho de impressão.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário ou do aplicativo deve ter uma assinatura de impressão universal ativa e ter uma permissão que conceda [obter impressora](printer-get.md) ou obter o acesso do [printerShare](printershare-get.md) , dependendo se a impressora ou o printerShare está sendo usado.
+Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma [](printer-get.md) assinatura de Impressão Universal ativa e ter uma permissão que conceda Obter impressora ou Obter acesso a [PrinterShare,](printershare-get.md) dependendo se a impressora ou impressoraShare está sendo usada.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| PrintJob. ReadBasic, PrintJob. Read, PrintJob. ReadBasic. All, PrintJob. Read. All, PrintJob. ReadWriteBasic, PrintJob. ReadWrite, PrintJob. ReadWriteBasic. All, PrintJob. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| PrintJob. ReadBasic. All, PrintJob. Read. All, PrintJob. ReadWriteBasic. All, PrintJob. ReadWrite. All |
+|Aplicativo| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -55,13 +55,13 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [printJob](../resources/printjob.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printJob](../resources/printjob.md) no corpo da resposta.
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-print-job"></a>Exemplo 1: obter trabalho de impressão
+### <a name="example-1-get-print-job"></a>Exemplo 1: Obter trabalho de impressão
 
 #### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação para obter metadados para um trabalho de impressão.
+A seguir, um exemplo de uma solicitação para obter metadados para um trabalho de impressão.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -108,16 +108,21 @@ Content-length: 408
   "createdDateTime": "2020-02-04T00:00:00.0000000Z",
   "createdBy": {},
   "status": {
-    "processingState": "completed",
-    "processingStateDescription": "The print job has completed successfully and no further processing will take place."
-  }
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false
 }
 ```
 
-### <a name="example-2-get-print-job-with-task-list"></a>Exemplo 2: obter trabalho de impressão com a lista de tarefas
+### <a name="example-2-get-print-job-with-task-list"></a>Exemplo 2: Obter trabalho de impressão com lista de tarefas
 
 #### <a name="request"></a>Solicitação
-Veja a seguir uma solicitação para obter um trabalho de impressão e todas [as tarefas](../resources/printtask.md) que estão em execução ou foram executadas nele.
+A seguir está uma solicitação para [](../resources/printtask.md) obter um trabalho de impressão e todas as tarefas que estão sendo executadas ou executadas em relação a ele.
 
 <!-- {
   "blockType": "request",
@@ -150,8 +155,15 @@ Content-length: 774
     "userPrincipalName": ""
   },
   "status": {
-    "processingState": "pendingHeld",
-    "processingStateDescription": "The job is not a candidate for processing yet."
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false,
+  "configuration": {    
   },
   "tasks": [
     {
@@ -166,10 +178,10 @@ Content-length: 774
 }
 ```
 
-### <a name="example-3-get-a-print-job-and-its-associated-document-data"></a>Exemplo 3: obter um trabalho de impressão e seus dados de documento associados
+### <a name="example-3-get-a-print-job-and-its-associated-document-data"></a>Exemplo 3: Obter um trabalho de impressão e seus dados de documento associados
 
 #### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação para obter um trabalho de impressão e seus dados de documento associados.
+A seguir, um exemplo de uma solicitação para obter um trabalho de impressão e seus dados de documento associados.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -224,8 +236,15 @@ Content-length: 1688
     "oDataType": null
   },
   "status": {
-  "processingState": "aborted",
-  "processingStateDescription": "The print job has been aborted by a user or the printer and no further processing will take place."
+  "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false,
+  "configuration": {    
   },
   "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
   "documents": [
@@ -233,28 +252,7 @@ Content-length: 1688
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
       "displayName": "",
       "contentType": "application/oxps",
-      "size": 276604,
-      "configuration": {
-        "quality": "medium",
-        "dpi": 300,
-        "feedDirection": null,
-        "orientation": "landscape",
-        "duplexMode": "oneSided",
-        "copies": 2,
-        "colorMode": "color",
-        "inputBin": null,
-        "outputBin": null,
-        "mediaSize": null,
-        "mediaType": null,
-        "finishings": [],
-        "pagesPerSheet": null,
-        "multipageLayout": "clockwiseFromTopLeft",
-        "collate": true,
-        "scaling": null,
-        "fitPdfToPage": null,
-        "margin": null,
-        "pageRanges": []
-      }
+      "size": 276604
     }
   ]
 }

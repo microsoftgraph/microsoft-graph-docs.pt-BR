@@ -1,16 +1,16 @@
 ---
 title: Atualizar printConnector
-description: Atualizar as propriedades de um objeto printConnector.
+description: Atualize as propriedades de um objeto printConnector.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 767f60c6db7b212cd33467bdad893fc8c8ac853b
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: ad196f179a81f9d5467ba715a08730b09ad4b88c
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873546"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766039"
 ---
 # <a name="update-printconnector"></a>Atualizar printConnector
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um **objeto printConnector.**
+Atualize as propriedades de um **objeto printConnector.**
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário assinado deve ser um Administrador [de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -47,14 +47,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|nome|Cadeia de caracteres|O nome do conector.|
-|fullyQualifiedDomainName|Cadeia de caracteres|O nome do host do computador do conector.|
-|operatingSystem|String|A versão do sistema operacional do computador do conector.|
-|appVersion|Cadeia de caracteres|A versão do conector.|
-|location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
+|nome|String|O nome do conector.|
+|fullyQualifiedDomainName|String|O nome de host do computador do conector.|
+|operatingSystem|String|A versão do sistema operacional do conector.|
+|appVersion|String|A versão do conector.|
+|localização|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [printConnector](../resources/printConnector.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto printConnector](../resources/printConnector.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -70,7 +70,7 @@ Content-type: application/json
 Content-length: 300
 
 {
-  "name": "ConnectorName",
+  "displayName": "ConnectorName",
   "fullyQualifiedDomainName": "CONNECTOR-MACHINE",
   "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
   "appVersion": "0.19.7338.23496",
@@ -81,21 +81,6 @@ Content-length: 300
   }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-connector-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-connector-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-connector-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-connector-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -115,7 +100,7 @@ Content-length: 406
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/connectors/$entity",
   "id": "9953d245-3f6e-418c-a438-67f50e69a430",
-  "name": "ConnectorName",
+  "displayName": "ConnectorName",
   "fullyQualifiedDomainName": "CONNECTOR-MACHINE",
   "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
   "appVersion": "0.19.7338.23496",
@@ -134,9 +119,9 @@ Content-length: 406
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
         "C+AI",

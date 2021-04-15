@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 53a1b89dfbd7ba160f62ea36451a0428fe9757f1
-ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
+ms.openlocfilehash: 3450055fbbd834381d5b9a74208425befe029eac
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51654090"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766536"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -20,8 +20,8 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 ## <a name="april-2021-new-and-generally-available"></a>Abril de 2021: novo e disponível para o público geral
 
 ### <a name="teamwork"></a>Trabalho em equipe
-- Identifique o canal pela propriedade **channelIdentity**, se uma [chatMessage](/graph/api/resources/chatmessage) estiver dentro de um canal.
-- Identifique o chat pela propriedade **chatId**, se **chatMessage** estiver em um chat.
+- Identifique o canal pela propriedade **channelIdentity**, se uma [chatMessage](/graph/api/resources/chatmessage) estiver em um [canal](/graph/api/resources/channel).
+- Identifique o chat pela propriedade **chatId**, se o **[chatMessage](/graph/api/resources/chatmessage)** estiver em um [chat](/graph/api/resources/chat).
 - Use o relacionamento de **mensagens** para obter todos os recursos [chatMessage](/graph/api/resources/chatmessage) em um [chat](/graph/api/resources/chat).
 
 ## <a name="april-2021-new-in-preview-only"></a>Abril de 2021: Novo somente para visualização

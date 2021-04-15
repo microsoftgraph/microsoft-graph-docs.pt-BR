@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: df96ef3a92a0e22d01feea0cb991dffc4da137f1
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 7dc6fb2c0b9d5126aa3b84331e88b3fe294ddd6f
+ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508166"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698052"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -530,7 +530,10 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-Nenhuma.
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_CloudPC.Read.All_ | Leia PCs na Internet | Permite que o aplicativo leia objetos do PC na Internet, como políticas de provisionamento, sem um usuário conectado. | Não | Não |
+|_CloudPC.ReadWrite.All_ | Ler e escrever PCs na Internet | Permite que o aplicativo crie, leia, atualize e exclua objetos do PC na Internet, como conexões locais, políticas de provisionamento e imagens de dispositivo, sem um usuário conectado. | Sim | Não |
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -541,7 +544,8 @@ Nenhuma.
 
 #### <a name="application"></a>Aplicativo
 
-Nenhum
+* _CloudPC.Read.All_: visualize as propriedades de todos os PCs na Internet(`GET /deviceManagement/virtualEndpoint/cloudPCs`).
+* _CloudPC.ReadWrite.All_: edite a política de provisionamento do PC na Internet(`PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}`).
 
 ---
 

@@ -1,16 +1,16 @@
 ---
 title: Get printerShare
-description: Recupere as propriedades e os relacionamentos de um compartilhamento de impressora.
+description: Recupere as propriedades e as relações de um compartilhamento de impressora.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: a30f670d429fb57d92c7c0cf5f615ffb60bb2d59
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: f5f760f8b4fe3fa41046cd32e2c3ae5fe8674532
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784840"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766263"
 ---
 # <a name="get-printershare"></a>Get printerShare
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um compartilhamento de impressora.
+Recupere as propriedades e as relações de um compartilhamento de impressora.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -34,12 +34,12 @@ Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/shares/{id}
-GET /print/printers/{id}/share
+GET /print/shares/{printerShareId}
+GET /print/printers/{printerId}/shares/{printerShareId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método dá suporte a alguns dos parâmetros de consulta OData, incluindo $select, $expand para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns dos parâmetros de consulta OData, incluindo $select, $expand ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 por exemplo, 
 ```http
@@ -47,7 +47,7 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
 
 ### <a name="exceptions"></a>Exceptions
-* Não `$count` há suporte para o operador.
+* O `$count` operador não tem suporte.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -57,7 +57,7 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [printerShare](../resources/printershare.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printerShare](../resources/printershare.md) no corpo da resposta.
 Por padrão, a resposta não conterá [printerCapabilities](../resources/printerCapabilities.md). Para obter **printerCapabilities**, use `$select` o parâmetro de consulta. 
 
 ## <a name="example"></a>Exemplo
@@ -111,7 +111,7 @@ Content-length: 225
 }
 ```
 
-A seguir está um exemplo da resposta, ao usar $select=id,displayName,capabilities
+A seguir, um exemplo da resposta, ao usar $select=id,displayName,capabilities
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

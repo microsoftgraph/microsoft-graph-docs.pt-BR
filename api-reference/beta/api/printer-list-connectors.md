@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 97640840c7054037254073f9145e801e0faf0a24
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8b2b3bbff54d20de777c37e344190cee07ea4806
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961458"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766277"
 ---
 # <a name="list-printconnectors-for-printer"></a>Listar printConnectors para impressora
 
@@ -23,11 +23,11 @@ Recupere uma lista **de conectores associados** à [impressora](../resources/pri
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve [](printer-get.md) ter uma assinatura de Impressão Universal ativa, uma permissão que concede acesso a Obter impressora e uma das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
+|Delegado (conta corporativa ou de estudante)| PrintConnector.Read.All, PrintConnector.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
@@ -102,9 +102,6 @@ Content-length: 1373
       "fullyQualifiedDomainName": "connector1@redmond.corp.microsoft.com",
       "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
       "appVersion": "0.19.7338.23496",
-      "deviceHealth": {
-        "lastConnectionTime": "2020-02-04T07:00:00.0000000"
-      },
       "registeredDateTime": "2020-02-04T07:00:00.0000000",
       "location": {
         "latitude": 1.1,
@@ -120,9 +117,9 @@ Content-length: 1373
         "countryOrRegion": "USA",
         "site": "Puget Sound",
         "building": "Studio E",
-        "floorNumber": 1,
+        "floor": "1",
         "floorDescription": "First Floor",
-        "roomNumber": 1234,
+        "roomName": "1234",
         "roomDescription": "First floor copy room",
         "organization": [
             "C+AI",

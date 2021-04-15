@@ -1,33 +1,33 @@
 ---
-title: Obter operação
-description: Recupere uma operação.
+title: Obter printOperation
+description: Recupere um printOperation.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 35521daa461c60290567a0202c07e2619de73ae5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c2af9b1a257943bb1bf05d864286c6382a4e9304
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968222"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766410"
 ---
-# <a name="get-printoperation"></a>Obter operação
+# <a name="get-printoperation"></a>Obter printOperation
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto Print [Operation](../resources/printoperation.md) .
+Recupere as propriedades e as relações de um [objeto printOperation.](../resources/printoperation.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Printer. Create, Printer. ReadWrite. All, Printer. FullControl. All |
+|Delegado (conta corporativa ou de estudante)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
@@ -45,7 +45,7 @@ GET /print/operations/{id}
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [reoperation](../resources/printOperation.md) (ou uma derivada de **reoperation** ) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto printOperation](../resources/printOperation.md) (ou uma derivada de **printOperation**) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -92,7 +92,7 @@ Content-type: application/json
 Content-length: 1199
 
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#print/operations/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/operations/$entity",
     "@odata.type": "#microsoft.graph.printerCreateOperation",
     "id": "81f4cca3-b3b7-47ea-9f88-7ddbf7208ef4",
     "createdDateTime": "2020-06-15T22:27:03.031849Z",
@@ -103,26 +103,20 @@ Content-length: 1199
     },
     "printer": {
         "registeredDateTime": "2020-06-15T22:27:12.0920077Z",
-        "acceptingJobs": null,
         "isShared": false,
         "id": "e56f9cdd-acec-486f-a05e-b622ff0bcc7d",
-        "name": "Test Printer",
+        "displayName": "Test Printer",
         "manufacturer": "Test Printer Manufacturer",
         "model": "Test Printer Model",
         "isAcceptingJobs": null,
-        "capabilities": null,
         "status": {
-            "processingState": "unknown",
-            "processingStateReasons": [],
-            "processingStateDescription": ""
+            "state": "unknown",
+            "details": [],
+            "description": ""
         },
         "location": {
             "latitude": null,
             "longitude": null
-        },
-        "defaults": {
-            "copiesPerJob": 1,
-            "finishings": []
         }
     }
 }

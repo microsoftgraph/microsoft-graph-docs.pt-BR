@@ -1,16 +1,16 @@
 ---
 title: Criar allowedUser para printerShare
-description: Conceda ao usuário especificado o acesso ao envio de trabalhos de impressão para o compartilhamento de impressora associado.
+description: Conceda ao usuário especificado acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: bba70146718ba50acfc6ee02cad756c91186499b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c3c170c05d8dfe18a228456de26c3bbce4dabc2a
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968410"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765940"
 ---
 # <a name="create-alloweduser-for-printershare"></a>Criar allowedUser para printerShare
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Conceda ao usuário especificado acesso para enviar trabalhos de impressão para o [printerShare](../resources/printershare.md)associado.
+Conceda ao usuário especificado acesso para enviar trabalhos de impressão para a [impressora associadaShare](../resources/printershare.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,10 +43,10 @@ POST /print/shares/{id}/allowedUsers/$ref
 | Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma referência a uma entidade de usuário usando o `@odata.id` formato, conforme mostrado no exemplo a seguir.
+No corpo da solicitação, fornece uma referência a uma entidade de usuário usando o formato, conforme `@odata.id` mostrado no exemplo a seguir.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `201 Created`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -85,7 +85,7 @@ Content-length: 66
 
 ---
 
-No corpo da solicitação, forneça uma referência a uma entidade de usuário, incluindo o URI do Microsoft Graph do usuário no `@odata.id` campo do corpo JSON.
+No corpo da solicitação, fornece uma referência a uma entidade de usuário incluindo o URI do Microsoft Graph do usuário no campo `@odata.id` do corpo JSON.
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 

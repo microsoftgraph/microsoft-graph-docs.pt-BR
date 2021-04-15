@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c4d559cb7778e6a0147e0e0fd4b8fc5f63bfb168
-ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
+ms.openlocfilehash: afa9c6bc0a0af2aee4b3351101c5d078649c46c9
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51638869"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765956"
 ---
 # <a name="list-teamsapp"></a>Listar teamsApp
 
@@ -24,7 +24,7 @@ Isso inclui aplicativos da loja do Microsoft Teams, bem como aplicativos do cat�
 > [!NOTE]
 > O `id` de um recurso **teamsApp** é gerado pelo servidor e não é o mesmo especificado em um manifesto `id` de aplicativo do Teams. O `id` fornecido pelo desenvolvedor como parte do manifesto do aplicativo teams é carimbado como o no recurso `externalId` **teamsApp.**
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -463,6 +463,8 @@ O exemplo a seguir lista apenas os aplicativos que podem ser instalados no escop
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_in_personal_scope"
@@ -471,6 +473,24 @@ O exemplo a seguir lista apenas os aplicativos que podem ser instalados no escop
 ```msgraph-interactive
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($select=id,displayName,allowedInstallationScopes)&$filter=appDefinitions/any(a:a/allowedInstallationScopes has 'personal')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-in-personal-scope-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-in-personal-scope-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-in-personal-scope-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-in-personal-scope-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 #### <a name="response"></a>Resposta

@@ -1,37 +1,37 @@
 ---
-title: 'printJob: Redirect'
+title: 'printJob: redirecionamento'
 description: Redirecionar um trabalho de impressão para uma impressora diferente.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2b99f9e2e6d0def97c1f2a23837f79e61b8e3341
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 8e31cfdff953feb689e7799954dd5ae260e9943e
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689302"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766417"
 ---
-# <a name="printjob-redirect"></a>printJob: Redirect
+# <a name="printjob-redirect"></a>printJob: redirecionamento
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Redirecionar um [trabalho de impressão](../resources/printjob.md) para uma [impressora](../resources/printer.md)diferente.
+Redirecionar [um trabalho de impressão](../resources/printjob.md) para uma impressora [diferente.](../resources/printer.md)
 
-Para obter detalhes sobre como usar essa API para adicionar suporte à impressão pull à impressão universal, consulte [Estendeing universal print to support pull Printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Para obter detalhes sobre como usar essa API para adicionar suporte à impressão pull à Impressão Universal, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura universal de impressão ativa, uma permissão que conceda obter acesso à [impressora](printer-get.md) e uma das permissões listadas na tabela a seguir.
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve [](printer-get.md) ter uma assinatura de Impressão Universal ativa, uma permissão que concede acesso a Obter impressora e uma das permissões listadas na tabela a seguir.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Sem suporte. |
+|Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| PrintJob.Manage.All |
+|Aplicativo| PrintJob.Manage.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,15 +44,15 @@ POST /print/printers/{id}/jobs/{id}/redirect
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça a ID da impressora para a qual o trabalho de impressão deve ser redirecionado.
+No corpo da solicitação, fornece a ID da impressora para a onde o trabalho de impressão deve ser redirecionado.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|destinationPrinterId|Cadeia de Caracteres|A ID da impressora para a qual o trabalho de impressão deve ser redirecionado.|
-|configuração|Microsoft. Graph. printJobConfiguration|Configuração atualizada do trabalho de impressão.|
+|destinationPrinterId|String|A ID da impressora para a que o trabalho de impressão deve ser redirecionado.|
+|configuração|microsoft.graph.printJobConfiguration|Configuração atualizada do trabalho de impressão.|
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [printJob](../resources/printjob.md) enfileirados para a impressora de destino.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto printJob](../resources/printjob.md) na fila para a impressora de destino.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -69,24 +69,40 @@ Este é um exemplo de solicitação.
 POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353/redirect
 
 {
-  "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
+  "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea",
+  "configuration": {
+    "feedOrientation": "longEdgeFirst",
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "quality": "medium",
+    "dpi": 600,
+    "orientation": "landscape",
+    "copies": 1,
+    "duplexMode": "oneSided",
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false
+  }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-redirect-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-redirect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/printjob-redirect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -114,8 +130,40 @@ Content-length: 437
     "userPrincipalName": ""
   },
   "status": {
-    "processingState": "processing",
-    "processingStateDescription": "The print job is currently being processed by the printer."
+    "state": "processing",
+    "description": "The print job is currently being processed by the printer.",
+    "details": ["interpreting"]
+  },
+  "configuration": {
+    "feedOrientation": "longEdgeFirst",
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "quality": "medium",
+    "dpi": 600,
+    "orientation": "landscape",
+    "copies": 1,
+    "duplexMode": "oneSided",
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false
   }
 }
 ```

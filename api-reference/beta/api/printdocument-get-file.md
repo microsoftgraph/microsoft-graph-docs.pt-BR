@@ -1,18 +1,18 @@
 ---
-title: Baixar o arquivo binário printDocument
+title: Baixar arquivo binário printDocument
 description: Baixe o arquivo binário associado ao documento.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 590b97c01623cba26407ca0a39ad7d0b3b7a1ca3
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 96f3a8a574951ddb2b1e2c2ecf26fb18dafafd5e
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034230"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766025"
 ---
-# <a name="download-printdocument-binary-file"></a>Baixar o arquivo binário printDocument
+# <a name="download-printdocument-binary-file"></a>Baixar arquivo binário printDocument
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ Baixe o arquivo binário associado a [um printDocument](../resources/printdocume
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda acesso à [impressora.](printer-get.md)
+Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda concessões obter acesso [à](printer-get.md) impressora.
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                  |
 | :------------------------------------- | :----------------------------------------------------------- |
@@ -45,7 +45,7 @@ GET /print/printers/{id}/jobs/{id}/documents/{id}/$value
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna e a `302 Found` URL de download previamente autenticada no título De localização.
+Se tiver êxito, este método retornará e a `302 Found` URL de download pré-autenticada no header Location.
 
 ## <a name="examples"></a>Exemplos
 O exemplo a seguir mostra como chamar essa API para adquirir uma URL de download pré-autenticada. Para iniciar o download, siga a URL de redirecionamento na resposta.
@@ -86,6 +86,6 @@ GET https://graph.microsoft.com/beta/print/printers/fcb0bc53-a446-41d0-bfc3-5c56
   "truncated": true
 } -->
 ```http
-HTTP/1.1 302 Accepted
+HTTP/1.1 302 Found
 Location: https://print.print.microsoft.com/downloads/bd260b1a-044e-4ca6-afa9-17d9a587d254?tempauthtoken={accesstoken}
 ```

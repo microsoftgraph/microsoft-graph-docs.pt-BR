@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: fd7e09dde34eb77a78b63cfaf10de31c4796e908
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: eba2f5d05a5571bf7f4fa4cd72d9a945b9936481
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982898"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766396"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
-**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para saber mais, confira a [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
+**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetro
 
 > **Observação:** você precisa definir o período ou data na URL.
 
-Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é texto/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta $format OData definido como text/csv ou application/json.
+Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -80,20 +80,35 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Contagem de mensagens de chat privadas
 - Contagem de chamadas
 - Contagem de reuniões
+- Contagem Organizada de Reuniões
+- Contagem de Reuniões Atendidas
+- Contagem Organizada de Reuniões Ad Hoc
+- Contagem de Presença de Reuniões Ad Hoc
+- Contagem Organizada de Reuniões Agendadas Única
+- Contagem de Reuniões Agendadas Única
+- Contagem Organizada de Reuniões Recorrentes Agendadas
+- Contagem de reuniões recorrentes agendadas
+- Duração do Áudio
+- Duração do vídeo
+- Duração do Compartilhamento de Tela
+- Duração do áudio em segundos
+- Duração do vídeo em segundos
+- Duração do compartilhamento de tela em segundos
 - Tem outra ação
+- É Licenciado
 - Período de Relatório
 
 ### <a name="json"></a>JSON
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` **[teamsUserActivityUserDetail](../resources/teamsuseractivityuserdetail.md)** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **[objeto teamsUserActivityUserDetail](../resources/teamsuseractivityuserdetail.md)** no corpo da resposta.
 
-O tamanho de página padrão para essa solicitação é de 2000 itens.
+O tamanho padrão da página para essa solicitação é de 2000 itens.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="csv"></a>CSV
 
-A seguir está um exemplo que saída CSV.
+A seguir, um exemplo que dá saída ao CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -134,12 +149,12 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
 ### <a name="json"></a>JSON
 
-A seguir está um exemplo que retorna JSON.
+A seguir, um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -179,6 +194,7 @@ Content-Length: 452
     {
       "reportRefreshDate": "2017-09-01", 
       "userPrincipalName": "userPrincipalName-value", 
+      "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 
       "isDeleted": false, 
       "deletedDate": null, 
@@ -189,6 +205,17 @@ Content-Length: 452
       "privateChatMessageCount": 49, 
       "callCount": 2, 
       "meetingCount": 0, 
+      "meetingsOrganizedCount": 0, 
+      "meetingsAttendedCount": 0, 
+      "adHocMeetingsOrganizedCount": 0, 
+      "adHocMeetingsAttendedCount": 0, 
+      "scheduledOneTimeMeetingsOrganizedCount": 0, 
+      "scheduledOneTimeMeetingsAttendedCount": 0, 
+      "scheduledRecurringMeetingsOrganizedCount": 0, 
+      "scheduledRecurringMeetingsAttendedCount": 0, 
+      "audioDuration": 00:00:00, 
+      "videoDuration": 00:00:00, 
+      "screenShareDuration": 00:00:00, 
       "hasOtherAction": true, 
       "reportPeriod": "7"
     }

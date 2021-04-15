@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7a2c7969a5900410eeb195025391c4b3b413ce26
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3a888531cd7129b500a9286d8987909bdd3f9a62
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950668"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765997"
 ---
 # <a name="list-printjobs-for-a-printershare"></a>Listar printJobs para uma printerShare
 
@@ -46,7 +46,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 * Este método dá suporte à filtragem de trabalhos de impressão pelo usuário que os criou. Use `$filter=createdBy/userPrincipalName eq '{upn}'` , onde **{upn}** é [o nome principal do](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) usuário do usuário associado.
 
 ### <a name="exceptions"></a>Exceptions
-Alguns operadores não têm suporte: `$count` , `$search` , `$filter` .
+Alguns operadores não têm suporte: `$count` , `$search` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -111,8 +111,10 @@ Content-length: 461
       "createdDateTime": "2020-02-04T00:00:00.0000000Z",
       "createdBy": {},
       "status": {
-        "processingState": "completed",
-        "processingStateDescription": "The print job has completed successfully and no further processing will take place."
+        "state": "completed",
+        "description": "The print job has completed successfully and no further processing will take place.",
+        "details" : [],
+        "isAcquiredByPrinter": true
       }
     }
   ]

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso printTaskDefinition
-description: Representa uma tarefa que pode ser disparada quando vários eventos ocorrem na Impressão Universal.
+description: Representa uma tarefa que pode ser disparada quando vários eventos ocorrem em Impressão Universal.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: bbffceb08be336cd816d80f03236078b39348339
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 2495825ec64d73bb440d16e4eae9125f8dbd38eb
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934853"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766305"
 ---
 # <a name="printtaskdefinition-resource-type"></a>Tipo de recurso printTaskDefinition
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma definição abstrata para uma tarefa que pode ser disparada quando vários eventos ocorrem na Impressão Universal.
+Representa uma definição abstrata para uma tarefa que pode ser disparada quando vários eventos ocorrem em Impressão Universal.
 
-Para obter detalhes sobre como usar esse recurso para adicionar suporte de impressão pull à Impressão Universal, consulte Estendendo a impressão universal para dar suporte [à impressão pull.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
+Para obter detalhes sobre como usar esse recurso para adicionar suporte à impressão pull à Impressão Universal, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 Esse recurso permite:
 * [Assinatura para alterar notificações](/graph/universal-print-webhook-notifications).
@@ -29,25 +29,25 @@ Esse recurso permite:
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [List](../api/print-list-taskdefinitions.md) | [Coleção printTaskDefinition](printtaskdefinition.md) | Obter uma lista completa de printTaskDefinitions criadas na Impressão Universal. |
+| [List](../api/print-list-taskdefinitions.md) | [Coleção printTaskDefinition](printtaskdefinition.md) | Obter uma lista completa de printTaskDefinitions criados em Impressão Universal. |
 | [Create](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Crie uma nova printTaskDefinition. |
-| [Update](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | Atualize uma printTaskDefinition. |
-| [Delete](../api/print-delete-taskdefinition.md) | Nenhum | Exclua uma printTaskDefinition. |
-| [Listar tarefas](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Obter uma lista de tarefas que foram criadas com base nessa definição. A lista inclui tarefas em execução no momento e tarefas concluídas recentemente. |
+| [Atualizar](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | Atualize um printTaskDefinition. |
+| [Delete](../api/print-delete-taskdefinition.md) | Nenhum | Exclua um printTaskDefinition. |
+| [Listar tarefas](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Obter uma lista de tarefas que foram criadas com base nessa definição. A lista inclui tarefas executadas no momento e tarefas concluídas recentemente. |
 | [Obter tarefa](../api/printtask-get.md) | [printTask](printtask.md) | Obtém uma tarefa que foi criada com base nessa definição. |
-| [Atualizar tarefa](../api/printtaskdefinition-update-task.md) | Nenhum | Atualize uma tarefa que foi criada com base nessa definição. **Os aplicativos que registram gatilhos de tarefa são responsáveis por atualizar o status da tarefa quando o processamento é concluído, a menos que o printJob relacionado tenha sido redirecionado para outra impressora.** A falha ao relatar a conclusão fará com que o trabalho de impressão relacionado seja impedido de imprimir e, eventualmente, excluído. |
+| [Atualizar tarefa](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | Atualize uma tarefa criada com base nessa definição. **Os aplicativos que registram gatilhos de tarefas são responsáveis por atualizar o status da tarefa ao terminar o processamento, a menos que a impressão relacionadaJob tenha sido redirecionada para outra impressora.** A falha na conclusão do relatório resultará no bloqueio do trabalho de impressão relacionado à impressão e, eventualmente, excluído. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres|O identificador de printTaskDefinition. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome da printTaskDefinition.|
-|createdBy|[appIdentity](appidentity.md)|O aplicativo que criou a printTaskDefinition. Somente leitura.|
+|id|String|O identificador printTaskDefinition. Somente leitura.|
+|displayName|String|O nome da printTaskDefinition.|
+|createdBy|[appIdentity](appidentity.md)|O aplicativo que criou o printTaskDefinition. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|tarefas|[Coleção printTask](printtask.md)|Uma lista de tarefas que foram criadas com base nessa definição. A lista inclui tarefas em execução no momento e tarefas concluídas recentemente. Somente leitura.|
+|tarefas|[Coleção printTask](printtask.md)|Uma lista de tarefas que foram criadas com base nessa definição. A lista inclui tarefas executadas no momento e tarefas concluídas recentemente. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

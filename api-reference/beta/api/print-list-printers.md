@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: e004d62626eb8e2c090198c556bbcd3263a7821a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 38f742b4013f01b150ee5b653d341dd2e8ca5991
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967066"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766508"
 ---
 # <a name="list-printers"></a>Lista de impressoras
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de **impressoras** registradas no locatário.
+Recupere a lista de **impressoras registradas** no locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Printer. Read. All, Printer. ReadWrite. All, Printer. FullControl. All |
+|Delegado (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Sem suporte. |
+|Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,8 +41,8 @@ GET /print/printers
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ### <a name="exceptions"></a>Exceptions
-* Os `$expand` `select` operadores e têm suporte para a `share` propriedade de navegação, mas não para `jobs` .
-* Não há suporte para alguns operadores: `$count` , `$search` .
+* Os `$expand` `select` operadores e são suportados para a `share` propriedade de navegação, mas não para `jobs` .
+* Alguns operadores não têm suporte: `$count` , `$search` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -52,7 +52,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Printer](../resources/printer.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [de](../resources/printer.md) impressora no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -102,22 +102,39 @@ Content-length: 1526
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "name": "PrinterName",
+      "displayName": "PrinterName",
       "manufacturer": "PrinterManufacturer",
       "model": "PrinterModel",
       "isShared": true,
       "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-      "acceptingJobs": true,
+      "isAcceptingJobs": true,
       "status": {
-        "processingState": "stopped",
-        "processingStateReasons": ["disconnected"],
-        "processingStateDescription": ""
+        "state": "stopped",
+        "details": [
+          "disconnected"
+        ],
+        "description": ""
       },
       "defaults": {
-        "copiesPerJob":1,
-        "documentMimeType": "application/oxps",
-        "finishings": ["none"],
-        "mediaType": "stationery"
+        "copiesPerJob": 1,
+        "finishings": [
+          "none"
+        ],
+        "mediaColor": "Unknown",
+        "mediaType": "stationery",
+        "mediaSize": "North America Letter",
+        "pagesPerSheet": 1,
+        "orientation": "portrait",
+        "outputBin": "auto",
+        "inputBin": "auto",
+        "contentType": "application/oxps",
+        "fitPdfToPage": false,
+        "multipageLayout": null,
+        "colorMode": "color",
+        "quality": "medium",
+        "duplexMode": "oneSided",
+        "dpi": 600,
+        "scaling": null
       },
       "location": {
         "latitude": 1.1,
@@ -133,9 +150,9 @@ Content-length: 1526
         "countryOrRegion": "USA",
         "site": "Puget Sound",
         "building": "Studio E",
-        "floorNumber": 1,
+        "floor": "1",
         "floorDescription": "First Floor",
-        "roomNumber": 1234,
+        "roomName": "1234",
         "roomDescription": "First floor copy room",
         "organization": [
             "C+AI",

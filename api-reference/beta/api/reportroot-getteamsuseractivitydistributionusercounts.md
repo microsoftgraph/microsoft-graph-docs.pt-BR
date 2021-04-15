@@ -1,24 +1,24 @@
 ---
-title: 'reportRoot: getTeamsUserActivityCounts'
-description: Obtém o número de atividades do Microsoft Teams por tipo de atividade. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões. As atividades são executadas por usuários licenciados do Microsoft Teams.
+title: 'reportRoot: getTeamsUserActivityDistributionUserCounts'
+description: Obter o número de usuários licenciados do Microsoft Teams por tipo de atividade durante o período selecionado. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões.
 localization_priority: Normal
 ms.prod: reports
-author: sarahwxy
+author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 8ac375460208e9f9f44d947ad4b764b82c390973
+ms.openlocfilehash: 91a9f503ad2798f154d7415e93e7c4be28cd7c32
 ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766151"
+ms.locfileid: "51766899"
 ---
-# <a name="reportroot-getteamsuseractivitycounts"></a>reportRoot: getTeamsUserActivityCounts
+# <a name="reportroot-getteamsuseractivitydistributionusercounts"></a>reportRoot: getTeamsUserActivityDistributionUserCounts
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtém o número de atividades do Microsoft Teams por tipo de atividade. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões. As atividades são executadas por usuários licenciados do Microsoft Teams.
+Obter o número de usuários licenciados do Microsoft Teams por tipo de atividade durante o período selecionado. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,14 +30,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
-**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
+> **Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsUserActivityCounts(period='D7')
+GET /reports/getTeamsUserActivityDistributionUserCounts(period='D7')
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
@@ -48,7 +48,9 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 | :-------- | :----- | :--------------------------------------- |
 | ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Eles seguem o formato D *n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
 
-Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou application/json.
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData definido como `$format` text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -67,7 +69,6 @@ As URLs de download previamente autenticadas são válidas apenas por um curto p
 O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 - Data de atualização do relatório
-- Data do relatório
 - Mensagens de chat de equipes
 - Mensagens de chat privadas
 - Chamadas
@@ -76,7 +77,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 ### <a name="json"></a>JSON
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` **[objeto teamsUserActivityCounts](../resources/teamsuseractivitycounts.md)** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto teamsUserActivityDistributionUserCounts](../resources/teamsuseractivitydistributionusercounts.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -88,14 +89,13 @@ A seguir, um exemplo que dá saída ao CSV.
 
 Este é um exemplo de solicitação.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivitycounts_csv"
+  "name": "reportroot_getteamsuseractivitydistributionusercounts_csv"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityDistributionUserCounts(period='D7')?$format=text/csv
 ```
 
 
@@ -110,6 +110,7 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+
 Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 
 <!-- {
@@ -122,7 +123,7 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
+Report Refresh Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -133,14 +134,13 @@ A seguir, um exemplo que retorna JSON.
 
 Este é um exemplo de solicitação.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivitycounts_json"
+  "name": "reportroot_getteamsuseractivitydistributionusercounts_json"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityDistributionUserCounts(period='D7')?$format=application/json
 ```
 
 
@@ -153,23 +153,22 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsUserActivityCounts"
+  "@odata.type": "microsoft.graph.teamsUserActivityDistributionUserCounts"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 277
+Content-Length: 291
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityCounts)", 
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsuseractivitydistributionusercounts)", 
   "value": [
     {
-      "reportRefreshDate": "2017-09-01", 
-      "reportDate": "2017-09-01", 
-      "teamChatMessages": 26, 
-      "privateChatMessages": 17, 
-      "calls": 4, 
+      "reportRefreshDate": "2020-09-01", 
+      "teamChatMessages": 0, 
+      "privateChatMessages": 0, 
+      "calls": 0, 
       "meetings": 0, 
       "reportPeriod": "7"
     }

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8bda64c21c2f94a40115b24bc9297451efed417a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 190fd272fa09807ef7866bb3d34df46eb4623875
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960898"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766459"
 ---
 # <a name="list-printjobs-for-a-printer"></a>Listar printJobs para uma impressora
 
@@ -46,7 +46,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 * Este método dá suporte à filtragem de trabalhos de impressão pelo usuário que os criou. Use `$filter=createdBy/userPrincipalName eq '{upn}'` , onde **{upn}** é [o nome principal do](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) usuário do usuário associado.
 
 ### <a name="exceptions"></a>Exceptions
-Alguns operadores não têm suporte: `$count` , `$search` , `$filter` .
+Alguns operadores não têm suporte: `$count` , `$search` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

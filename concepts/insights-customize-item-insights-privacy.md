@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f4f143b66ba93b488c747eebfda7777e9800aea5
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 5e7ccf00729e9acaffd08c2618d3f3249a2a268e
+ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883043"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697197"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Personalizando a privacidade das informações do item no Microsoft Graph (visualização)
 
@@ -40,9 +40,9 @@ Confirme os pré-requisitos adicionais a seguir. Em seguida, você pode usar o [
 > ```powershell
 >    Select-MgProfile beta
 > ```
-Para obter a configuração das informações do item de uma organização, use o módulo Microsoft Graph PowerShell e o seguinte comando, onde você substitui `$OrgID` pela ID aplicável da sua organização:
+Para obter a configuração de insights do item para uma organização, use o módulo Microsoft Graph Windows PowerShell e o comando a seguir, onde você substitui `$TenantId` por sua ID de locatário do Azure Active Directory. Você pode recuperar essa ID na página de visão geral do Azure Active Directory.
 ```powershell
-   Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
+   Get-MgOrganizationSettingItemInsight -OrganizationId $TenantId
 ```
 
 Por padrão, as informações do item estão habilitadas para toda a organização. É possível usar o módulo Microsoft Graph Windows PowerShell para alterar isso e desabilitar as percepções do item para todos na organização. 
@@ -52,13 +52,13 @@ Por padrão, as informações do item estão habilitadas para toda a organizaç�
 >    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
 > ```
 
-Use o seguinte comando, onde você substitui `$OrgID` pelo ID da sua organização e especifica `-IsEnabledInOrganization` como `false`.
+Usar o seguinte comando, em que você substitui `$TenantId`por sua ID de locatário do Azure Active Directory e especifica`-IsEnabledInOrganization` como `false`.
 ```powershell
-   Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -IsEnabledInOrganization:$false
+   Update-MgOrganizationSettingItemInsight -OrganizationId $TenantId -IsEnabledInOrganization:$false
 ```
-Como alternativa, você pode alterar o padrão e desabilitar as informações do item para um grupo específico do Microsoft Azure AD. Use o seguinte comando, onde você substitui `$OrgID` pela ID da sua organização e `$GroupID` como a ID do grupo do Microsoft Azure AD.
+Como alternativa, você pode alterar o padrão e desabilitar as informações do item para um grupo específico do Microsoft Azure AD. Usar o seguinte comando, onde você substitui `$TenantId` por sua ID de locatário do Azure Active Directory e `$GroupID` pela ID de grupo do Azure Active Directory.
 ```powershell
-   Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup $GroupId
+   Update-MgOrganizationSettingItemInsight -OrganizationId $TenantId -DisabledForGroup $GroupId
 ```
 
 ### <a name="configure-item-insights-using-rest-api"></a>Configurar as informações do item usando a API REST

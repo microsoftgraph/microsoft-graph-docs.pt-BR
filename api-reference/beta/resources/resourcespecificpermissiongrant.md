@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a34faa7a7b709d85cd2bee3208cc22270fecbe74
-ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
+ms.openlocfilehash: 7119d25f25b0e4f382a077ca6a1264dc22e11d5b
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51594881"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765899"
 ---
 # <a name="resourcespecificpermissiongrant-resource-type"></a>tipo de recurso resourceSpecificPermissionGrant
 
@@ -36,7 +36,7 @@ Um resourceSpecificPermissionGrant declara a permissão concedida a um aplicativ
 | clientId        | string        | ID do aplicativo do Azure AD que recebeu acesso. Somente leitura.                            |
 | clientAppId     | string        | ID da entidade de serviço do aplicativo do Azure AD que recebeu acesso. Somente leitura.   |
 | resourceAppId   | string        | ID do aplicativo do Azure AD que está hospedando o recurso. Somente leitura.                        |
-| permissionType  | string        | O tipo de permissão. Os valores possíveis são: `Application` , `Delegated` . Somente leitura. |
+| permissionType  | string        | O tipo de permissão. Os valores possíveis são: `Application` e `Delegated`. Somente leitura. |
 | permission      | string        | O nome da permissão. Somente leitura.                                                |
 
 ## <a name="json-representation"></a>Representação JSON

@@ -1,52 +1,52 @@
 ---
-title: tipo de recurso printTaskTrigger
-description: Determina as condições sob as quais uma nova multitarefa será executada com base no printTaskDefinition associado.
+title: Tipo de recurso printTaskTrigger
+description: Determina as condições em que um novo printTask será executado com base na printTaskDefinition associada.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: fc05fe9011d91ac9da5f74a6079537ebfba25160
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de2da4f94894d9744fdfdd302b310251cd91fdb3
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078287"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766319"
 ---
-# <a name="printtasktrigger-resource-type"></a>tipo de recurso printTaskTrigger
+# <a name="printtasktrigger-resource-type"></a>Tipo de recurso printTaskTrigger
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Determina a condição sob a qual uma nova [multitarefa](printtask.md) será disparada com base no [printTaskDefinition](printtaskdefinition.md)associado.
+Determina a condição na qual um [novo printTask](printtask.md) será acionado com base na [impressão associadaTaskDefinition](printtaskdefinition.md).
 
-Para obter detalhes sobre como usar esse recurso para adicionar suporte à impressão pull à impressão universal, consulte [estender a impressão universal para dar suporte à impressão pull](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Para obter detalhes sobre como usar esse recurso para adicionar suporte à impressão pull à Impressão Universal, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [List](../api/printer-list-tasktriggers.md) | coleção [printTaskTrigger](printtasktrigger.md) | Obtenha uma lista de printTaskTriggers associados a uma [impressora](printer.md)específica. |
-| [Get](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Obter o printTaskTrigger associado a uma [multitarefa](printtask.md)em particular. |
+| [List](../api/printer-list-tasktriggers.md) | [Coleção printTaskTrigger](printtasktrigger.md) | Obter uma lista de printTaskTriggers associados a uma impressora [específica.](printer.md) |
+| [Get](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Obter uma determinada printTaskTrigger associada a uma impressora [específica.](printer.md)|
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres|O identificador do printTaskTrigger. Somente leitura.|
-|event|MyEvent|O evento de impressão universal que fará com que [uma nova impressão seja disparada](printtask.md) . Os valores válidos são descritos na tabela a seguir.|
+|id|String|O identificador printTaskTrigger. Somente leitura.|
+|event|printEvent|O evento Impressão Universal que fará com que um [novo printTask](printtask.md) seja acionado. Os valores válidos são descritos na tabela a seguir.|
 
-### <a name="printevent-values"></a>valores de MyEvent
+### <a name="printevent-values"></a>valores printEvent
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|jobStarted|,0|Representa um evento que ocorre quando um novo trabalho de impressão é iniciado.|
-|unknownFutureValue|1 |Valor de sentinela de enumeração evolvable. Não usar.|
+|jobStarted|0|Representa um evento que ocorre quando um novo trabalho de impressão é iniciado.|
+|unknownFutureValue|1|Valor de sentinela de enumeração evolvável. Não usar.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|definir|[printTaskDefinition](printtaskdefinition.md)|Uma definição abstrata que será usada para criar uma [multitarefa](printtask.md) quando disparado por um evento Print. Somente leitura.|
+|definition|[printTaskDefinition](printtaskdefinition.md)|Uma definição abstrata que será usada para criar [uma printTask](printtask.md) quando disparada por um evento de impressão. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

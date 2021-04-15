@@ -1,29 +1,29 @@
 ---
-title: Listar allowedUsers para printerShare
-description: Recupere uma lista de usuários que tiveram acesso para enviar trabalhos de impressão ao compartilhamento de impressora associado.
+title: Listar allowedUsers for printerShare
+description: Recupere uma lista de usuários que tiveram acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 527484207edbfaea7da3a10b5c1937d6058dd5bc
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: d66ba6d7d9eadecc4b6b1dc2346fbf6afe1e7378
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983339"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766004"
 ---
-# <a name="list-allowedusers-for-printershare"></a>Listar allowedUsers para printerShare
+# <a name="list-allowedusers-for-printershare"></a>Listar allowedUsers for printerShare
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de usuários que tiveram acesso para enviar trabalhos de impressão para a [printerShare associada.](../resources/printershare.md)
+Recupere uma lista de usuários que tiveram acesso para enviar trabalhos de impressão para a [impressora associadaShare](../resources/printershare.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário assinado deve ser um Administrador [de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda acesso aos usuários [de](user-list.md) lista. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|

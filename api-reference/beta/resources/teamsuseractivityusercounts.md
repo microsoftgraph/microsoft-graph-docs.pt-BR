@@ -1,33 +1,37 @@
 ---
-title: tipo de recurso teamsUserActivityUserCounts
-description: Veja a seguir uma representação JSON do recurso.
+title: Tipo de recurso teamsUserActivityUserCounts
+description: Representa números de usuários diários por tipo de atividade.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3982b679802a2ca80eac5fe4e8f76fee91bbf1d3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1ddb3e6e5e6a0b6fbb5c9973bec7e29f4492089
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046346"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766438"
 ---
-# <a name="teamsuseractivityusercounts-resource-type"></a>tipo de recurso teamsUserActivityUserCounts
+# <a name="teamsuseractivityusercounts-resource-type"></a>Tipo de recurso teamsUserActivityUserCounts
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Representa números de usuários diários por tipo de atividade.
+
 ## <a name="properties"></a>Propriedades
 
-| Propriedade            | Tipo   |
-| :------------------ | :----- |
-| reportRefreshDate   | Data   |
-| reportDate          | Data   |
-| teamChatMessages    | Int64  |
-| privateChatMessages | Int64  |
-| calls               | Int64  |
-| treinamento            | Int64  |
-| otherActions        | Int64  |
-| reportPeriod        | String |
+| Propriedade            | Tipo   | Descrição                                                  |
+| :------------------ | :----- | ------------------------------------------------------------ |
+| reportRefreshDate   | Data   | A data mais recente do conteúdo.                              |
+| reportDate          | Data   | A data em que os usuários realizaram as atividades.        |
+| teamChatMessages    | Int64  | O número de usuários que postaram mensagens em um chat de equipe.       |
+| privateChatMessages | Int64  | O número de usuários que postaram mensagens em um chat privado.    |
+| calls               | Int64  | O número de usuários que participaram de chamadas 1:1.           |
+| meetings            | Int64  | O número de usuários que participaram de reuniões online.     |
+| otherActions        | Int64  | O número de usuários que estavam ativos, mas realizaram outras atividades que não os tipos de ação expostos oferecidos no relatório (enviando ou respondendo a mensagens de canal e mensagens de chat, agendando ou participando de chamadas e reuniões 1:1). Exemplos de ações são quando um usuário altera o status do Teams ou a mensagem de status do Teams ou abre uma postagem mensagem de canal, mas não responde. |
+| reportPeriod        | String | O número de dias que o relatório aborda.                        |
 
 ## <a name="json-representation"></a>Representação JSON
 

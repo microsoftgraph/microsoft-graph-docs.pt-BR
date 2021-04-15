@@ -1,16 +1,16 @@
 ---
 title: Obter impressora
-description: Recupere as propriedades e os relacionamentos de um objeto printer.
+description: Recupere as propriedades e as relações de um objeto printer.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: bfd3f6e71e8fd56c630cfcaa5b56cc32eff4e148
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 42804622f94207e304ada3a9538f860415ddbf53
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034048"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766249"
 ---
 # <a name="get-printer"></a>Obter impressora
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um [objeto printer.](../resources/printer.md)
+Recupere as propriedades e as relações de um [objeto printer.](../resources/printer.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário assinado deve ser um Administrador [de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -39,7 +39,7 @@ GET /print/shares/{id}/printer
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método dá suporte a alguns dos parâmetros de consulta OData, incluindo $select, $expand para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns dos parâmetros de consulta OData, incluindo $select, $expand ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 por exemplo, 
 ```http
@@ -53,7 +53,7 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [printer](../resources/printer.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printer](../resources/printer.md) no corpo da resposta.
 Por padrão, a resposta não conterá [printerCapabilities](../resources/printerCapabilities.md). Para obter **printerCapabilities**, use `$select` o parâmetro de consulta. 
 
 ## <a name="example"></a>Exemplo
@@ -102,22 +102,39 @@ Content-length: 1313
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "name": "PrinterName",
+  "displayName": "PrinterName",
   "manufacturer": "PrinterManufacturer",
   "model": "PrinterModel",
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-  "acceptingJobs": true,
+  "isAcceptingJobs": true,
   "status": {
-    "processingState": "stopped",
-    "processingStateReasons": ["disconnected"],
-    "processingStateDescription": ""
+     "state": "stopped",
+    "details": [
+      "disconnected"
+    ],
+    "description": ""
   },
   "defaults": {
-    "copiesPerJob":1,
-    "documentMimeType": "application/oxps",
-    "finishings": ["none"],
-    "mediaType": "stationery"
+    "copiesPerJob": 1,
+    "finishings": [
+      "none"
+    ],
+    "mediaColor": "Unknown",
+    "mediaType": "stationery",
+    "mediaSize": "North America Letter",
+    "pagesPerSheet": 1,
+    "orientation": "portrait",
+    "outputBin": "auto",
+    "inputBin": "auto",
+    "contentType": "application/oxps",
+    "fitPdfToPage": false,
+    "multipageLayout": null,
+    "colorMode": "color",
+    "quality": "medium",
+    "duplexMode": "oneSided",
+    "dpi": 600,
+    "scaling": null
   },
   "location": {
     "latitude": 1.1,
@@ -133,9 +150,9 @@ Content-length: 1313
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
         "C+AI",
@@ -150,7 +167,7 @@ Content-length: 1313
 }
 ```
 
-A seguir está um exemplo da resposta, ao usar $select=id,displayName,capabilities
+A seguir, um exemplo da resposta, ao usar $select=id,displayName,capabilities
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
