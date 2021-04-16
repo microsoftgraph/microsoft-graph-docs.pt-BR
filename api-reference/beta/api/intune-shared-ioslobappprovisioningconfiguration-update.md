@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosLobAppProvisioningConfiguration
 description: Atualize as propriedades de um objeto iosLobAppProvisioningConfiguration.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efeecc86bdb481b3b77871551ced12694c3eb590
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ccbc08b8b07a26f05666c9a855f132e824837247
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471828"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863153"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>Atualizar iosLobAppProvisioningConfiguration
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementApps.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Application||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementApps.ReadWrite.All|
 
@@ -59,9 +59,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosLobA
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |expirationDateTime|DateTimeOffset|Data e hora opcionais de expiração do perfil.|
-|payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileprovision \| *.xml).|
+|payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade de configuração de provisionamento de aplicativos LOB do iOS.|
+|roleScopeTagIds|Coleção String|Lista de Marcas de Escopo para essa entidade de configuração de provisionamento de aplicativos LOB do iOS.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|

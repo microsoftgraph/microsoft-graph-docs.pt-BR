@@ -1,38 +1,38 @@
 ---
 title: Atualizar deviceAppManagement
 description: Atualizar as propriedades de um objeto de deviceAppManagement.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 27da30374f9f224695945f545b0527dce83f74d6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bc6e7cb6e7b5a5614f56048b586a47bbc2a0bcca
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49257503"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864575"
 ---
 # <a name="update-deviceappmanagement"></a>Atualizar deviceAppManagement
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto de [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md).
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  Observe que a permissão adequada varia de acordo com o fluxo de trabalho.
+Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  Observe que a permissão apropriada varia de acordo com o fluxo de trabalho.
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-| Delegado (conta corporativa ou de estudante) | |
-| &nbsp;&nbsp; **Aplicativos**, **livros**, **onboarding** integração, integração de **parceiros** ou conjunto de **políticas** | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | |
-| &nbsp;&nbsp; **Aplicativos**, **livros**, **onboarding** integração, integração de **parceiros** ou conjunto de **políticas** | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante) | |
+| &nbsp;&nbsp; **Aplicativos,** **livros,** **integração,** **integração de** parceiros ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | |
+| &nbsp;&nbsp; **Aplicativos,** **livros,** **integração,** **integração de** parceiros ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,13 +56,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|**Integração**|
+|id|Cadeia de caracteres|Chave da entidade.|
+|**Ao abordar**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Se a conta está ativada para sincronizar aplicativos do Microsoft Store para Empresa.|
 |microsoftStoreForBusinessLanguage|String|As informações sobre a localidade usada para sincronizar aplicativos do Microsoft Store para Empresas. Culturas específicas de um país/região. Os nomes dessas culturas seguem a RFC 4646 (Windows Vista e mais recentes). O formato é <languagecode2>-<country/regioncode2>, onde <languagecode2> é um código em duas letras minúsculas derivado da ISO 639-1 e <country/regioncode2> é um código em duas letras maiúsculas derivado da ISO 3166. Por exemplo, en-US para inglês (Estados Unidos) é uma cultura específica.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|A última vez em uma sincronização de aplicativo na Microsoft Store para Empresas foi concluída.|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|A última vez que os aplicativos da Microsoft Store para Empresas foram sincronizados com êxito para essa conta.|
-|microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|As informações do portal do usuário final são usadas para sincronizar aplicativos da Microsoft Store para empresas com o portal da empresa do Intune. Há três opções a serem escolhidas em \[ "somente portal da empresa", "portal da empresa e repositório privado", "somente repositório privado" \] . Os valores possíveis são: `none`, `companyPortal`, `privateStore`.|
+|microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|As informações do portal do usuário final são usadas para sincronizar aplicativos da Microsoft Store para Empresas para o Portal da Empresa do Intune. Há três opções para escolher em 'Somente portal da empresa', 'Portal da empresa e loja \[ privada', 'Somente armazenamento particular' \] . Os valores possíveis são: `none`, `companyPortal`, `privateStore`.|
 
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 

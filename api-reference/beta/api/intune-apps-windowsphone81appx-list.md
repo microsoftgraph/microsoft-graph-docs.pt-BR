@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ea12bfbd5961937de51f21c10d9d1dd5e95d803
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8fa93d4dc500c62505bcea1f09d37da4632fb95d
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51138776"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862971"
 ---
 # <a name="list-windowsphone81appxs"></a>Listar windowsPhone81AppXs
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2025
+Content-Length: 2052
 
 {
   "value": [
@@ -116,7 +116,8 @@ Content-Length: 2025
         "v10_1809": true,
         "v10_1903": true,
         "v10_1909": true,
-        "v10_2004": true
+        "v10_2004": true,
+        "v10_2H20": true
       },
       "phoneProductIdentifier": "Phone Product Identifier value",
       "phonePublisherId": "Phone Publisher Id value",

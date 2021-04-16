@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2352683ba34cb98216c742ac5962cc1b7c435a3f
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: a9300238704838eab7e82bbf039507c69dff3611
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133448"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863664"
 ---
 # <a name="devicemanagementconfigurationsettingdefinition-resource-type"></a>Tipo de recurso deviceManagementConfigurationSettingDefinition
 
@@ -36,19 +36,20 @@ Ainda não documentado
 |:---|:---|:---|
 |aplicabilidade|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Detalhes em qual configuração de dispositivo é aplicável|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Modo de acesso de leitura/gravação da configuração. Os valores possíveis são: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
-|palavras-chave|Coleção de cadeias de caracteres|Tokens em que as configurações de pesquisa|
-|infoUrls|Coleção de cadeias de caracteres|Lista de links mais informações para a configuração podem ser encontradas em|
+|palavras-chave|Coleção String|Tokens em que as configurações de pesquisa|
+|infoUrls|Coleção String|Lista de links mais informações para a configuração podem ser encontradas em|
 |occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Indica se a configuração é necessária ou não|
-|baseUri|Cadeia de caracteres|Caminho CSP Base|
-|offsetUri|Cadeia de caracteres|Deslocamento do caminho do CSP da Base|
-|rootDefinitionId|Cadeia de caracteres|Definição de configuração raiz se a configuração for uma configuração filho.|
-|categoryId|Cadeia de caracteres|Especifica o grupo de área no qual a configuração está configurada em um provedor de serviços de configuração especificado (CSP)|
+|baseUri|Cadeia de Caracteres|Caminho CSP Base|
+|offsetUri|Cadeia de Caracteres|Deslocamento do caminho do CSP da Base|
+|rootDefinitionId|Cadeia de Caracteres|Definição de configuração raiz se a configuração for uma configuração filho.|
+|categoryId|Cadeia de Caracteres|Especifica o grupo de área no qual a configuração está configurada em um provedor de serviços de configuração especificado (CSP)|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Tipo de configuração, por exemplo, configuração e conformidade. Os valores possíveis são: `none` e `configuration`.|
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Definindo a representação do tipo de controle no UX. Os valores possíveis são: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
 |visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Definindo o escopo de visibilidade como UX. Os valores possíveis são: `none`, `settingsCatalog`, `template`.|
+|referredSettingInformationList|[coleção deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md)|Lista de informações de configuração referidas.|
 |id|Cadeia de caracteres|Identificador de item|
-|descrição|Cadeia de caracteres|Descrição do item|
-|helpText|Cadeia de caracteres|Texto de ajuda do item|
+|description|Cadeia de caracteres|Descrição do item|
+|helpText|Cadeia de Caracteres|Texto de ajuda do item|
 |nome|Cadeia de caracteres|Nome do item|
 |displayName|Cadeia de caracteres|Nome de exibição do item|
 |versão|String|Versão do item|
@@ -93,6 +94,12 @@ Veja a seguir uma representação JSON do recurso.
   "settingUsage": "String",
   "uxBehavior": "String",
   "visibility": "String",
+  "referredSettingInformationList": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+      "settingDefinitionId": "String"
+    }
+  ],
   "id": "String (identifier)",
   "description": "String",
   "helpText": "String",

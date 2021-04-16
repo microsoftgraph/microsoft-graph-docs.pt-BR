@@ -1,22 +1,22 @@
 ---
 title: função getMobileAppCount
 description: Ainda não documentado
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c85d46dc38cf4ef208f0a059721486a0cc501659
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e6b975137bff474366f083bb880e7ebaca33c2f8
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49217533"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863833"
 ---
 # <a name="getmobileappcount-function"></a>função getMobileAppCount
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -54,12 +54,12 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|status|String|Ainda não documentado|
+|status|Cadeia de caracteres|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará um `200 OK` código de resposta e um Int64 no corpo da resposta.
+Se tiver êxito, essa função retornará um código de resposta e um `200 OK` Int64 no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

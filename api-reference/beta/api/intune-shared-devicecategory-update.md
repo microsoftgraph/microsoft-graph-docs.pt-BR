@@ -1,22 +1,22 @@
 ---
 title: Atualizar deviceCategory
 description: Atualizar as propriedades de um objeto deviceCategory.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9be951487979ecc9dd860a8626f87d1456934ecc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: dfb3fa9ba4e5599f0666f50bf30d7e555c67f8d6
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49232701"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863405"
 ---
 # <a name="update-devicecategory"></a>Atualizar deviceCategory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -29,16 +29,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **Integração** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Application||
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **Integração** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-**Gerenciamento de dispositivos**
+**Gerenciamento de dispositivo**
 
 <!-- {
   "blockType": "ignored"
@@ -48,7 +48,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-**Integração**
+**Ao abordar**
 
 <!-- {
   "blockType": "ignored"
@@ -73,10 +73,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Integração**|
-|description|String|Descrição opcional da categoria do dispositivo.|
-|displayName|String|Nome de exibição da categoria de dispositivo.|
+|description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
+|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
 
 ## <a name="response"></a>Resposta
 
@@ -86,7 +86,7 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e um ob
 
 ### <a name="request"></a>Solicitação
 
-Aqui estão exemplos de solicitação.
+Aqui estão exemplos da solicitação.
 
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
@@ -103,7 +103,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades de resposta irão variar de acordo com o contexto.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades de resposta variam de acordo com o contexto.
 
 ``` http
 HTTP/1.1 200 OK

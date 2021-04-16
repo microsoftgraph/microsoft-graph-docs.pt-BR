@@ -1,15 +1,15 @@
 ---
-title: Como proteger os dados de aplicativo da sua empresa com o Microsoft Intune-API do Microsoft Graph
-description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que gerenciam aplicativos e suas políticas para uma organização de locatário.
+title: Como proteger os dados do aplicativo da empresa com o Microsoft Intune - API do Microsoft Graph
+description: Lista a API do Microsoft Graph para pontos de extremidade do Intune (REST) que gerenciam aplicativos e suas políticas para uma organização de locatários.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 22ae1004a3f22d96ec6c7bd7f4da7d6d8763f55a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0faa6c3b62a865c027d1ece4e5b34915f2da996b
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274415"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863973"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -21,13 +21,13 @@ Namespace: microsoft.graph
 
 As políticas de proteção de aplicativos do Microsoft Intune ajudam a proteger os dados da empresa e evitar a perda de dados.
 
-Use as políticas de proteção de aplicativos do Intune para ajudar a proteger os dados da sua empresa. Como as políticas de proteção de aplicativos do Intune podem ser usadas independentemente de qualquer solução de gerenciamento de dispositivo móvel (MDM), você pode usá-la para proteger os dados da sua empresa com ou sem o registro de dispositivos em uma solução de gerenciamento de dispositivo. Implementando as políticas de nível de aplicativo, é possível restringir o acesso aos recursos da empresa e manter os dados dentro do âmbito do seu departamento de TI.
+Use as políticas de proteção de aplicativos do Intune para ajudar a proteger os dados da sua empresa. Como as políticas de proteção de aplicativos do Intune podem ser usadas independentemente de qualquer solução de gerenciamento de dispositivo móvel (MDM), você pode usá-los para proteger os dados da sua empresa com ou sem registrar dispositivos em uma solução de gerenciamento de dispositivos. Implementando as políticas de nível de aplicativo, é possível restringir o acesso aos recursos da empresa e manter os dados dentro do âmbito do seu departamento de TI.
 
 Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de proteção de aplicativos no Intune:
 
 - [Modo de registro do proprietário do dispositivo Android](intune-androidforwork-androiddeviceownerenrollmentmode.md)
 - [Perfil de registro de proprietário do dispositivo Android](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
-- [Tipo de token de registro de proprietário do dispositivo Android](intune-androidforwork-androiddeviceownerenrollmenttokentype.md)
+- [Tipo de token de registro do proprietário do dispositivo Android](intune-androidforwork-androiddeviceownerenrollmenttokentype.md)
 - [Código da empresa de registro do Android](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Aplicativo Android for Work](intune-apps-androidforworkapp.md)
 - [Esquema de configuração do aplicativo Android for Work](intune-androidforwork-androidforworkappconfigurationschema.md)
@@ -49,12 +49,12 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Esquema de configuração do aplicativo do repositório gerenciado Android](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Item de esquema de configuração do aplicativo do repositório gerenciado Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Tipo de dados do item de esquema de configuração do aplicativo do repositório gerenciado Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
-- [Faixa de aplicativos do repositório gerenciado do Android](intune-apps-androidmanagedstoreapptrack.md)
-- [Aplicativo Web do repositório gerenciado do Android](intune-apps-androidmanagedstorewebapp.md)
+- [Faixa de aplicativos da Loja Gerenciada do Android](intune-apps-androidmanagedstoreapptrack.md)
+- [Aplicativo Web da Loja Gerenciada do Android](intune-apps-androidmanagedstorewebapp.md)
 - [Sistema operacional mínimo do Android](intune-apps-androidminimumoperatingsystem.md)
 - [Ação de permissão do Android](intune-apps-androidpermissionaction.md)
 - [Tipo de ação de permissão do Android](intune-apps-androidpermissionactiontype.md)
-- [Aplicabilidade do perfil do Android](intune-apps-androidprofileapplicability.md)
+- [Aplicabilidade do perfil android](intune-apps-androidprofileapplicability.md)
 - [Aplicativo da loja Android](intune-apps-androidstoreapp.md)
 - [Item de definição de configuração do aplicativo](intune-apps-appconfigurationsettingitem.md)
 - [Status de certificado](intune-apps-certificatestatus.md)
@@ -78,10 +78,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Livro eletrônico do VPP do iOS](intune-books-iosvppebook.md)
 - [Atribuição de livros eletrônicos do VPP do iOS](intune-books-iosvppebookassignment.md)
 - [Aplicativo LOB para macOS](intune-apps-macoslobapp.md)
-- [configurações de atribuição de aplicativo de LOB do macOS](intune-apps-macoslobappassignmentsettings.md)
 - [Aplicativo filho macOS LOB](intune-apps-macoslobchildapp.md)
-- [aplicativo macOS mdatp](intune-apps-macosmdatpapp.md)
-- [aplicativo macOS Microsoft Edge](intune-apps-macosmicrosoftedgeapp.md)
+- [aplicativo mdatp do macOS](intune-apps-macosmdatpapp.md)
+- [macOS microsoft edge app](intune-apps-macosmicrosoftedgeapp.md)
 - [Sistema operacional mínimo do macOS](intune-apps-macosminimumoperatingsystem.md)
 - [Aplicativo do macOS Office Suite](intune-apps-macosofficesuiteapp.md)
 - [Aplicativo VPP do macOS](intune-apps-macosvppapp.md)
@@ -104,7 +103,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Aplicativo da loja iOS gerenciado](intune-apps-managediosstoreapp.md)
 - [Aplicativo LOB móvel gerenciado](intune-apps-managedmobilelobapp.md)
 - [Tipo de chave de configuração do aplicativo MDM](intune-apps-mdmappconfigkeytype.md)
-- [Canal do Microsoft Edge](intune-apps-microsoftedgechannel.md)
+- [Canal de borda da Microsoft](intune-apps-microsoftedgechannel.md)
 - [Aplicativo da Microsoft Store para Empresas](intune-apps-microsoftstoreforbusinessapp.md)
 - [Aplicativo contido da Microsoft Store para Empresas](intune-apps-microsoftstoreforbusinesscontainedapp.md)
 - [Tipo de licença da Microsoft Store para Empresas](intune-apps-microsoftstoreforbusinesslicensetype.md)
@@ -113,30 +112,23 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Conteúdo do aplicativo móvel](intune-apps-mobileappcontent.md)
 - [Arquivo de conteúdo do aplicativo móvel](intune-apps-mobileappcontentfile.md)
 - [Estado de carregamento do arquivo de conteúdo do aplicativo móvel](intune-apps-mobileappcontentfileuploadstate.md)
-- [Dependência do aplicativo móvel](intune-apps-mobileappdependency.md)
-- [Tipo de dependência do aplicativo móvel](intune-apps-mobileappdependencytype.md)
+- [Dependência de aplicativo móvel](intune-apps-mobileappdependency.md)
+- [Tipo de dependência de aplicativo móvel](intune-apps-mobileappdependencytype.md)
 - [Status de instalação do aplicativo móvel](intune-apps-mobileappinstallstatus.md)
 - [Resumo de instalação do aplicativo móvel](intune-apps-mobileappinstallsummary.md)
 - [Atribuição de grupo de configuração de provisionamento do aplicativo móvel](intune-apps-mobileappprovisioningconfiggroupassignment.md)
 - [Estado de publicação do aplicativo móvel](intune-apps-mobileapppublishingstate.md)
-- [Relação do aplicativo móvel](intune-apps-mobileapprelationship.md)
-- [Estado da relação do aplicativo móvel](intune-apps-mobileapprelationshipstate.md)
+- [Relação de aplicativo móvel](intune-apps-mobileapprelationship.md)
+- [Estado de relação do aplicativo móvel](intune-apps-mobileapprelationshipstate.md)
 - [Tipo de relação de aplicativo móvel](intune-apps-mobileapprelationshiptype.md)
-- [Substituição de aplicativos móveis](intune-apps-mobileappsupersedence.md)
-- [Tipo de substituição de aplicativo móvel](intune-apps-mobileappsupersedencetype.md)
+- [Supersedência do aplicativo móvel](intune-apps-mobileappsupersedence.md)
+- [Tipo de supersedência de aplicativo móvel](intune-apps-mobileappsupersedencetype.md)
 - [Aplicativo contido móvel](intune-apps-mobilecontainedapp.md)
 - [Aplicativo LOB móvel](intune-apps-mobilelobapp.md)
-- [Status de check-in de cliente do Office](intune-cirrus-officeclientcheckinstatus.md)
-- [Configuração de Cliente do Office](intune-cirrus-officeclientconfiguration.md)
-- [Atribuição de configuração de cliente do Office](intune-cirrus-officeclientconfigurationassignment.md)
-- [Configuração do Office](intune-cirrus-officeconfiguration.md)
-- [Destino de atribuição de configuração do Office](intune-cirrus-officeconfigurationassignmenttarget.md)
-- [Destino de atribuição de grupo de configuração do Office](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
 - [ID do produto do Office](intune-apps-officeproductid.md)
 - [Aplicativo do pacote Office](intune-apps-officesuiteapp.md)
 - [Nível de exibição do andamento da instalação do pacote Office](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Canal de atualização do Office](intune-apps-officeupdatechannel.md)
-- [Resumo de check-in de usuário do Office](intune-cirrus-officeusercheckinsummary.md)
 - [Detalhe do estado do aplicativo resultante](intune-apps-resultantappstatedetail.md)
 - [Certificado de assinatura de código da Symantec](intune-apps-symanteccodesigningcertificate.md)
 - [Status de instalação do aplicativo do usuário](intune-apps-userappinstallstatus.md)
@@ -148,39 +140,37 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Operador de detecção de aplicativo LOB do Win32](intune-apps-win32lobappdetectionoperator.md)
 - [Detecção de sistema do arquivo do aplicativo LOB do Win32](intune-apps-win32lobappfilesystemdetection.md)
 - [Tipo de detecção de sistema do arquivo do aplicativo LOB do Win32](intune-apps-win32lobappfilesystemdetectiontype.md)
-- [Tipo de operação do sistema de arquivos do aplicativo LOB Win32](intune-apps-win32lobappfilesystemoperationtype.md)
-- [Requisitos do sistema de arquivos do aplicativo LOB Win32](intune-apps-win32lobappfilesystemrequirement.md)
-- [Regra do sistema de arquivos do aplicativo LOB Win32](intune-apps-win32lobappfilesystemrule.md)
+- [Tipo de operação do sistema de arquivos do aplicativo LOB win32](intune-apps-win32lobappfilesystemoperationtype.md)
+- [Requisito do sistema de arquivos do aplicativo LOB win32](intune-apps-win32lobappfilesystemrequirement.md)
+- [Regra do sistema de arquivos do aplicativo LOB win32](intune-apps-win32lobappfilesystemrule.md)
 - [Experiência de instalação do aplicativo LOB do Win32](intune-apps-win32lobappinstallexperience.md)
 - [Informações de msi do aplicativo LOB do Win32](intune-apps-win32lobappmsiinformation.md)
 - [Tipo de pacote de msi do aplicativo LOB do Win32](intune-apps-win32lobappmsipackagetype.md)
 - [Detecção de script powershell do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptdetection.md)
-- [Tipo de detecção de script do aplicativo LOB Win32 do Shell de energia](intune-apps-win32lobapppowershellscriptdetectiontype.md)
-- [Requisito de script do Shell de energia do aplicativo LOB Win32](intune-apps-win32lobapppowershellscriptrequirement.md)
-- [Regra de script do Shell de energia do aplicativo LOB Win32](intune-apps-win32lobapppowershellscriptrule.md)
-- [Tipo de operação de regra de script do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
+- [Tipo de detecção de script do shell de energia do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptdetectiontype.md)
+- [Requisito de script do shell de energia do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptrequirement.md)
+- [Regra de script do shell de energia do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptrule.md)
+- [Tipo de operação de regra de script do shell de energia do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
 - [Detecção de código de produto do aplicativo LOB do Win32](intune-apps-win32lobappproductcodedetection.md)
-- [Regra de código de produto do aplicativo LOB Win32](intune-apps-win32lobappproductcoderule.md)
+- [Regra de código do produto do aplicativo LOB win32](intune-apps-win32lobappproductcoderule.md)
 - [Detecção de registro de aplicativo LOB do Win32](intune-apps-win32lobappregistrydetection.md)
 - [Tipo de detecção de registro de aplicativo LOB do Win32](intune-apps-win32lobappregistrydetectiontype.md)
-- [Requisito do registro do aplicativo LOB Win32](intune-apps-win32lobappregistryrequirement.md)
-- [Regra de registro de aplicativo LOB Win32](intune-apps-win32lobappregistryrule.md)
-- [Tipo de operação de regra de registro de aplicativo LOB Win32](intune-apps-win32lobappregistryruleoperationtype.md)
-- [Requisito do aplicativo LOB do Win32](intune-apps-win32lobapprequirement.md)
-- [Comportamento de reinicialização do aplicativo LOB Win32](intune-apps-win32lobapprestartbehavior.md)
+- [Requisito do registro do aplicativo LOB do Win32](intune-apps-win32lobappregistryrequirement.md)
+- [Regra de registro de aplicativo LOB do Win32](intune-apps-win32lobappregistryrule.md)
+- [Tipo de operação de regra do registro do aplicativo LOB win32](intune-apps-win32lobappregistryruleoperationtype.md)
+- [Requisito do aplicativo LOB win32](intune-apps-win32lobapprequirement.md)
+- [Comportamento de reinicialização do aplicativo LOB win32](intune-apps-win32lobapprestartbehavior.md)
 - [Código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncode.md)
 - [Tipo de código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncodetype.md)
-- [Regra de aplicativo LOB do Win32](intune-apps-win32lobapprule.md)
-- [Operador de regras de aplicativos LOB do Win32](intune-apps-win32lobappruleoperator.md)
-- [Tipo de regra de aplicativo LOB Win32](intune-apps-win32lobappruletype.md)
+- [Regra do aplicativo LOB win32](intune-apps-win32lobapprule.md)
+- [Operador de regra de aplicativo LOB win32](intune-apps-win32lobappruleoperator.md)
+- [Tipo de regra do aplicativo LOB win32](intune-apps-win32lobappruletype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Arquitetura do Windows](intune-apps-windowsarchitecture.md)
 - [Tipo de dispositivo Windows](intune-apps-windowsdevicetype.md)
-- [Aplicativo Windows da Microsoft Edge](intune-apps-windowsmicrosoftedgeapp.md)
+- [Aplicativo do Microsoft Edge do Windows](intune-apps-windowsmicrosoftedgeapp.md)
 - [Sistema operacional mínimo do Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
-- [Configuração de cliente do Windows Office](intune-cirrus-windowsofficeclientconfiguration.md)
-- [Configuração de segurança do cliente do Windows](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Informações de pacote do Windows](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 AppX](intune-apps-windowsphone81appx.md)
 - [Pacote AppX do Windows Phone 8.1](intune-apps-windowsphone81appxbundle.md)

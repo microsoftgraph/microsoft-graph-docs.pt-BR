@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ebf02fe048a3a39f5515cb11fde9ee614a48759
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 84ca0f6832cc65cc4c6d09c7762c05d1447ba073
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51609686"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863202"
 ---
 # <a name="get-manageddevice"></a>Acessar managedDevice
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -74,7 +74,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8802
+Content-Length: 9023
 
 {
   "value": {
@@ -120,7 +120,11 @@ Content-Length: 8802
       "osBuildNumber": "Os Build Number value",
       "operatingSystemProductType": 10,
       "ipAddressV4": "Ip Address V4 value",
-      "subnetAddress": "Subnet Address value"
+      "subnetAddress": "Subnet Address value",
+      "esimIdentifier": "Esim Identifier value",
+      "systemManagementBIOSVersion": "System Management BIOSVersion value",
+      "tpmManufacturer": "Tpm Manufacturer value",
+      "tpmVersion": "Tpm Version value"
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -263,15 +267,7 @@ Content-Length: 8802
     "joinType": "azureADJoined",
     "skuFamily": "Sku Family value",
     "skuNumber": 9,
-    "managementFeatures": "microsoftManagedDesktop",
-    "chromeOSDeviceInfo": [
-      {
-        "@odata.type": "microsoft.graph.chromeOSDeviceProperty",
-        "name": "Name value",
-        "value": "Value value",
-        "valueType": "Value Type value",
-        "updatable": true
-      }
+    "managementFeatures": "microsoftManagedDesktop"
     ]
   }
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4730f642ba43b97211ab35053094e578956ac218
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 90dd6dfc79557ebed69c7359ff3a85d6fd042ee6
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146955"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862783"
 ---
 # <a name="create-devicemanagementconfigurationsettingdefinition"></a>Criar deviceManagementConfigurationSettingDefinition
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+POST /deviceManagement/reusableSettings
 POST /deviceManagement/configurationSettings
 POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions
 ```
@@ -56,19 +57,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |:---|:---|:---|
 |aplicabilidade|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Detalhes em qual configuração de dispositivo é aplicável|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Modo de acesso de leitura/gravação da configuração. Os valores possíveis são: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
-|palavras-chave|Coleção de cadeias de caracteres|Tokens em que as configurações de pesquisa|
-|infoUrls|Coleção de cadeias de caracteres|Lista de links mais informações para a configuração podem ser encontradas em|
+|palavras-chave|Coleção String|Tokens em que as configurações de pesquisa|
+|infoUrls|Coleção String|Lista de links mais informações para a configuração podem ser encontradas em|
 |occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Indica se a configuração é necessária ou não|
-|baseUri|Cadeia de caracteres|Caminho CSP Base|
-|offsetUri|Cadeia de caracteres|Deslocamento do caminho do CSP da Base|
-|rootDefinitionId|Cadeia de caracteres|Definição de configuração raiz se a configuração for uma configuração filho.|
-|categoryId|Cadeia de caracteres|Especifica o grupo de área no qual a configuração está configurada em um provedor de serviços de configuração especificado (CSP)|
+|baseUri|Cadeia de Caracteres|Caminho CSP Base|
+|offsetUri|Cadeia de Caracteres|Deslocamento do caminho do CSP da Base|
+|rootDefinitionId|Cadeia de Caracteres|Definição de configuração raiz se a configuração for uma configuração filho.|
+|categoryId|Cadeia de Caracteres|Especifica o grupo de área no qual a configuração está configurada em um provedor de serviços de configuração especificado (CSP)|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Tipo de configuração, por exemplo, configuração e conformidade. Os valores possíveis são: `none` e `configuration`.|
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Definindo a representação do tipo de controle no UX. Os valores possíveis são: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
 |visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Definindo o escopo de visibilidade como UX. Os valores possíveis são: `none`, `settingsCatalog`, `template`.|
+|referredSettingInformationList|[coleção deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md)|Lista de informações de configuração referidas.|
 |id|Cadeia de caracteres|Identificador de item|
-|descrição|Cadeia de caracteres|Descrição do item|
-|helpText|Cadeia de caracteres|Texto de ajuda do item|
+|description|Cadeia de caracteres|Descrição do item|
+|helpText|Cadeia de Caracteres|Texto de ajuda do item|
 |nome|Cadeia de caracteres|Nome do item|
 |displayName|Cadeia de caracteres|Nome de exibição do item|
 |versão|String|Versão do item|
@@ -83,9 +85,9 @@ Se tiver êxito, este método retornará um código de resposta e um `201 Create
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/configurationSettings
+POST https://graph.microsoft.com/beta/deviceManagement/reusableSettings
 Content-type: application/json
-Content-length: 1042
+Content-length: 1258
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
@@ -115,6 +117,12 @@ Content-length: 1042
   "settingUsage": "configuration",
   "uxBehavior": "dropdown",
   "visibility": "settingsCatalog",
+  "referredSettingInformationList": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+      "settingDefinitionId": "Setting Definition Id value"
+    }
+  ],
   "description": "Description value",
   "helpText": "Help Text value",
   "name": "Name value",
@@ -128,7 +136,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1091
+Content-Length: 1307
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
@@ -158,6 +166,12 @@ Content-Length: 1091
   "settingUsage": "configuration",
   "uxBehavior": "dropdown",
   "visibility": "settingsCatalog",
+  "referredSettingInformationList": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+      "settingDefinitionId": "Setting Definition Id value"
+    }
+  ],
   "id": "7af649e5-49e5-7af6-e549-f67ae549f67a",
   "description": "Description value",
   "helpText": "Help Text value",

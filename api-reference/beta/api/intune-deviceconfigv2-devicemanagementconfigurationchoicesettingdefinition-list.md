@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b57875f5b8c59ccd029cd42fdf49979a4e7a1c0d
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c5a6eb5cabbf7d430892f77d43d1050099c177c6
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51136689"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864422"
 ---
 # <a name="list-devicemanagementconfigurationchoicesettingdefinitions"></a>Listar deviceManagementConfigurationChoiceSettingDefinitions
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+GET /deviceManagement/reusableSettings
 GET /deviceManagement/configurationSettings
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions
 ```
@@ -58,7 +59,7 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings
+GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings
 ```
 
 ### <a name="response"></a>Resposta
@@ -66,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10712
+Content-Length: 10952
 
 {
   "value": [
@@ -98,6 +99,12 @@ Content-Length: 10712
       "settingUsage": "configuration",
       "uxBehavior": "dropdown",
       "visibility": "settingsCatalog",
+      "referredSettingInformationList": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+          "settingDefinitionId": "Setting Definition Id value"
+        }
+      ],
       "id": "30b2258a-258a-30b2-8a25-b2308a25b230",
       "description": "Description value",
       "helpText": "Help Text value",

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0804e0c367e379a68305b7b8790d29405a3e235
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 74a0396c4627a8c7f4e496df78964de0ff2965cd
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152926"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863826"
 ---
 # <a name="update-microsofttunnelsite"></a>Atualizar microsoftTunnelSite
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,9 +55,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o micro
 |:---|:---|:---|
 |id|Cadeia de caracteres|Id do MicrosoftTunnelSite|
 |displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelSite|
-|descrição|Cadeia de caracteres|Descrição do MicrosoftTunnelSite|
-|publicAddress|Cadeia de caracteres|O nome de domínio público do MicrosoftTunnelSite ou o endereço IP|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|description|Cadeia de caracteres|Descrição do MicrosoftTunnelSite|
+|publicAddress|Cadeia de Caracteres|O nome de domínio público do MicrosoftTunnelSite ou o endereço IP|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity.|
 
 
 

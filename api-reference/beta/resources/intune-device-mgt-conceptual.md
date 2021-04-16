@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para pontos de extremidade do Intune
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6e7fc3fac47f6b2adecab2c61a6d04d1e069705e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: f14fe5075e18a046698bc5725ccb9bb1d2618a89
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159316"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51863938"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -31,7 +31,6 @@ Namespace: microsoft.graph
 - [Evento de auditoria](intune-auditing-auditevent.md)
 - [Propriedade de auditoria](intune-auditing-auditproperty.md)
 - [Recurso de auditoria](intune-auditing-auditresource.md)
-- [Estado registrado no Azure ad](intune-devices-azureadregisteredstate.md)
 - [Expressões de condição de gerenciamento binário](intune-fencing-binarymanagementconditionexpression.md)
 - [Tipo de operador de expressão de condição de gerenciamento binário](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [Resultado de ação do dispositivo gerenciado em massa](intune-devices-bulkmanageddeviceactionresult.md)
@@ -169,6 +168,7 @@ Namespace: microsoft.graph
 - [Usuário conectado](intune-devices-loggedonuser.md)
 - [Estado de modo perdido](intune-devices-lostmodestate.md)
 - [Estado de malware para dispositivo windows](intune-devices-malwarestateforwindowsdevice.md)
+- [Dispositivo gerenciado](intune-devices-manageddevice.md)
 - [Arquitetura de dispositivo gerenciado](intune-devices-manageddevicearchitecture.md)
 - [Configurações de limpeza do dispositivo gerenciado](intune-devices-manageddevicecleanupsettings.md)
 - [Recursos de gerenciamento de dispositivos gerenciados](intune-devices-manageddevicemanagementfeatures.md)
@@ -219,6 +219,7 @@ Namespace: microsoft.graph
 - [Resumo do estado da linha de base de segurança](intune-deviceintent-securitybaselinestatesummary.md)
 - [Modelo de linha da base de segurança](intune-deviceintent-securitybaselinetemplate.md)
 - [Usuário de dispositivo Apple compartilhado](intune-devices-sharedappledeviceuser.md)
+- [Tuple_2 de execução type_ i collection_1 de operação](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [Expressões de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpression.md)
 - [Tipo de operador de expressão de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Parâmetro da ação de atualização de conta de dispositivo Windows](intune-devices-updatewindowsdeviceaccountactionparameter.md)
@@ -234,6 +235,7 @@ Namespace: microsoft.graph
 - [Categoria de análise de experiência do usuário](intune-devices-userexperienceanalyticscategory.md)
 - [Resumo de dispositivos de gerenciamento de nuvem de análise de experiência do usuário](intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)
 - [Desempenho do dispositivo de análise de experiência do usuário](intune-devices-userexperienceanalyticsdeviceperformance.md)
+- [Pontuações do dispositivo de análise de experiência do usuário](intune-devices-userexperienceanalyticsdevicescores.md)
 - [Histórico de inicialização do dispositivo de análise de experiência do usuário](intune-devices-userexperienceanalyticsdevicestartuphistory.md)
 - [Processo de inicialização do dispositivo de análise de experiência do usuário](intune-devices-userexperienceanalyticsdevicestartupprocess.md)
 - [Desempenho do processo de inicialização do dispositivo de análise de experiência do usuário](intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)
@@ -255,7 +257,9 @@ Namespace: microsoft.graph
 - [Configurações de análise de experiência do usuário](intune-devices-userexperienceanalyticssettings.md)
 - [Análise de experiência do usuário resumida por](intune-devices-userexperienceanalyticssummarizedby.md)
 - [Resumo de dispositivos Windows 10 de análise de experiência do usuário](intune-devices-userexperienceanalyticswindows10devicessummary.md)
+- [A análise de experiência do usuário funciona em qualquer lugar do dispositivo](intune-devices-userexperienceanalyticsworkfromanywheredevice.md)
 - [Análise de experiência do usuário funciona em qualquer lugar resumo de dispositivos](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
+- [A análise de experiência do usuário funciona de qualquer lugar métrica](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
 - [Expressões de condição de gerenciamento variável](intune-fencing-variablemanagementconditionexpression.md)
 - [Estado de implantação do Windows autopilot](intune-troubleshooting-windowsautopilotdeploymentstate.md)
 - [Tipo de registro do Windows autopilot](intune-troubleshooting-windowsautopilotenrollmenttype.md)

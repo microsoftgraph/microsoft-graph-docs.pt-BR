@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 03c9d864f63e703d6868cf194ca139d97b66d804
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 036a872d4829bae45f6dc1034060a0ffcf4c8c3a
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51129213"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864302"
 ---
 # <a name="get-devicemanagementconfigurationsettinggroupdefinition"></a>Obter deviceManagementConfigurationSettingGroupDefinition
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+GET /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
@@ -61,7 +62,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
+GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -69,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1681
+Content-Length: 1909
 
 {
   "value": {
@@ -100,6 +101,12 @@ Content-Length: 1681
     "settingUsage": "configuration",
     "uxBehavior": "dropdown",
     "visibility": "settingsCatalog",
+    "referredSettingInformationList": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+        "settingDefinitionId": "Setting Definition Id value"
+      }
+    ],
     "id": "95dc9604-9604-95dc-0496-dc950496dc95",
     "description": "Description value",
     "helpText": "Help Text value",

@@ -1,16 +1,16 @@
 ---
 title: Ação syncMicrosoftStoreForBusinessApps
 description: Sincroniza a conta do Intune com o Microsoft Store For Business
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1be868185e634ba74f9f58f1ab4c388efcf5ed3
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b1bd3cc43c5b585cab0702540102cb3e560546a0
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474866"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864589"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>Ação syncMicrosoftStoreForBusinessApps
 
@@ -27,10 +27,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)||
-| &nbsp; &nbsp; **Integração** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **Integração** |DeviceManagementApps.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
-| &nbsp; &nbsp; **Integração** | DeviceManagementApps.ReadWrite.All|
+|Application||
+| &nbsp; &nbsp; **Integração** |DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
