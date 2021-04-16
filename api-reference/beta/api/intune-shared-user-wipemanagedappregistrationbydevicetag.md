@@ -1,40 +1,40 @@
 ---
 title: Ação wipeManagedAppRegistrationByDeviceTag
 description: Emite uma operação de apagamento em um registro de aplicativo com uma marcação de dispositivo específica.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 69004f1f88d1b6f16625368fdda7f9f9ef9b6821
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 402069753a2c965b9d9d776b67f260d835bd1c57
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303773"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865051"
 ---
-# <a name="wipemanagedappregistrationbydevicetag-action"></a><span data-ttu-id="32eac-103">Ação wipeManagedAppRegistrationByDeviceTag</span><span class="sxs-lookup"><span data-stu-id="32eac-103">wipeManagedAppRegistrationByDeviceTag action</span></span>
+# <a name="wipemanagedappregistrationbydevicetag-action"></a><span data-ttu-id="5df5e-103">Ação wipeManagedAppRegistrationByDeviceTag</span><span class="sxs-lookup"><span data-stu-id="5df5e-103">wipeManagedAppRegistrationByDeviceTag action</span></span>
 
-<span data-ttu-id="32eac-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="32eac-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5df5e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5df5e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="32eac-105">**Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="32eac-105">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="32eac-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="32eac-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5df5e-105">**Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="5df5e-105">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="5df5e-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="5df5e-106">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="32eac-107">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="32eac-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5df5e-107">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5df5e-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="32eac-108">Emite uma operação de apagamento em um registro de aplicativo com uma marcação de dispositivo específica.</span><span class="sxs-lookup"><span data-stu-id="32eac-108">Issues a wipe operation on an app registration with specified device tag.</span></span>
+<span data-ttu-id="5df5e-108">Emite uma operação de apagamento em um registro de aplicativo com uma marcação de dispositivo específica.</span><span class="sxs-lookup"><span data-stu-id="5df5e-108">Issues a wipe operation on an app registration with specified device tag.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="32eac-109">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="32eac-109">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5df5e-109">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="5df5e-109">Prerequisites</span></span>
 
-<span data-ttu-id="32eac-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="32eac-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5df5e-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5df5e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="32eac-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="32eac-112">Permission type</span></span>|<span data-ttu-id="32eac-113">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="32eac-113">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5df5e-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5df5e-112">Permission type</span></span>|<span data-ttu-id="5df5e-113">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="5df5e-113">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="32eac-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="32eac-114">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="32eac-115">&nbsp;&nbsp; **Mam**</span><span class="sxs-lookup"><span data-stu-id="32eac-115">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="32eac-116">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="32eac-116">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="32eac-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="32eac-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="32eac-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="32eac-118">Not supported.</span></span>|
-|<span data-ttu-id="32eac-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="32eac-119">Application</span></span>||
-| <span data-ttu-id="32eac-120">&nbsp;&nbsp; **Mam**</span><span class="sxs-lookup"><span data-stu-id="32eac-120">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="32eac-121">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="32eac-121">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="5df5e-114">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5df5e-114">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="5df5e-115">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="5df5e-115">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="5df5e-116">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5df5e-116">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="5df5e-117">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5df5e-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5df5e-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5df5e-118">Not supported.</span></span>|
+|<span data-ttu-id="5df5e-119">Application</span><span class="sxs-lookup"><span data-stu-id="5df5e-119">Application</span></span>||
+| <span data-ttu-id="5df5e-120">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="5df5e-120">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="5df5e-121">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5df5e-121">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="32eac-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="32eac-122">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5df5e-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5df5e-122">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -43,32 +43,32 @@ ms.locfileid: "49303773"
 POST /users/{usersId}/wipeManagedAppRegistrationByDeviceTag
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="32eac-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="32eac-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5df5e-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5df5e-123">Request headers</span></span>
 
-|<span data-ttu-id="32eac-124">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="32eac-124">Header</span></span>|<span data-ttu-id="32eac-125">Valor</span><span class="sxs-lookup"><span data-stu-id="32eac-125">Value</span></span>|
+|<span data-ttu-id="5df5e-124">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5df5e-124">Header</span></span>|<span data-ttu-id="5df5e-125">Valor</span><span class="sxs-lookup"><span data-stu-id="5df5e-125">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="32eac-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="32eac-126">Authorization</span></span>|<span data-ttu-id="32eac-127">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="32eac-127">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="32eac-128">Aceitar</span><span class="sxs-lookup"><span data-stu-id="32eac-128">Accept</span></span>|<span data-ttu-id="32eac-129">application/json</span><span class="sxs-lookup"><span data-stu-id="32eac-129">application/json</span></span>|
+|<span data-ttu-id="5df5e-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="5df5e-126">Authorization</span></span>|<span data-ttu-id="5df5e-127">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5df5e-127">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5df5e-128">Aceitar</span><span class="sxs-lookup"><span data-stu-id="5df5e-128">Accept</span></span>|<span data-ttu-id="5df5e-129">application/json</span><span class="sxs-lookup"><span data-stu-id="5df5e-129">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="32eac-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="32eac-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5df5e-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5df5e-130">Request body</span></span>
 
-<span data-ttu-id="32eac-131">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="32eac-131">In the request body, supply JSON representation of the parameters.</span></span>
+<span data-ttu-id="5df5e-131">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="5df5e-131">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="32eac-132">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="32eac-132">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="5df5e-132">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="5df5e-132">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="32eac-133">Propriedade</span><span class="sxs-lookup"><span data-stu-id="32eac-133">Property</span></span>|<span data-ttu-id="32eac-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="32eac-134">Type</span></span>|<span data-ttu-id="32eac-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="32eac-135">Description</span></span>|
+|<span data-ttu-id="5df5e-133">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5df5e-133">Property</span></span>|<span data-ttu-id="5df5e-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="5df5e-134">Type</span></span>|<span data-ttu-id="5df5e-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="5df5e-135">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="32eac-136">deviceTag</span><span class="sxs-lookup"><span data-stu-id="32eac-136">deviceTag</span></span>|<span data-ttu-id="32eac-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="32eac-137">String</span></span>|<span data-ttu-id="32eac-138">marca de dispositivo</span><span class="sxs-lookup"><span data-stu-id="32eac-138">device tag</span></span>|
+|<span data-ttu-id="5df5e-136">deviceTag</span><span class="sxs-lookup"><span data-stu-id="5df5e-136">deviceTag</span></span>|<span data-ttu-id="5df5e-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5df5e-137">String</span></span>|<span data-ttu-id="5df5e-138">marca de dispositivo</span><span class="sxs-lookup"><span data-stu-id="5df5e-138">device tag</span></span>|
 
-## <a name="response"></a><span data-ttu-id="32eac-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="32eac-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5df5e-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="5df5e-139">Response</span></span>
 
-<span data-ttu-id="32eac-140">Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="32eac-140">If successful, this action returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="5df5e-140">Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="5df5e-140">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="32eac-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="32eac-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5df5e-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5df5e-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="32eac-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="32eac-142">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5df5e-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5df5e-142">Request</span></span>
 
-<span data-ttu-id="32eac-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="32eac-143">Here is an example of the request.</span></span>
+<span data-ttu-id="5df5e-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5df5e-143">Here is an example of the request.</span></span>
 
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/wipeManagedAppRegistrationByDeviceTag
@@ -81,9 +81,9 @@ Content-length: 39
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="32eac-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="32eac-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5df5e-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="5df5e-144">Response</span></span>
 
-<span data-ttu-id="32eac-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="32eac-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="5df5e-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5df5e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ``` http
 HTTP/1.1 204 No Content
