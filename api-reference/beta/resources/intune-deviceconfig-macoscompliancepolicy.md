@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6d33b4e3ac57206a664dc1faaf722e6dad03c736
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ba2f7a3450473b35c17661145145a63e06eef5fe
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49268759"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865555"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>Tipo de recurso macOSCompliancePolicy
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -37,12 +37,12 @@ Herda de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepol
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passwordRequired|Boolean|Se uma senha deve ou não ser exigida.|
 |passwordBlockSimple|Booliano|Indica se senhas simples devem ou não ser bloqueadas.|
@@ -54,16 +54,17 @@ Herda de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepol
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |osMinimumVersion|String|Versão mínima do MacOS.|
 |osMaximumVersion|String|Versão máxima do MacOS.|
-|osMinimumBuildVersion|String|Versão mínima do MacOS.|
-|osMaximumBuildVersion|String|Versão máxima do MacOS.|
+|osMinimumBuildVersion|Cadeia de Caracteres|Versão mínima de com build do MacOS.|
+|osMaximumBuildVersion|Cadeia de Caracteres|Versão de composição máxima do MacOS.|
 |systemIntegrityProtectionEnabled|Booliano|Exige que dispositivos tenham habilitado a proteção de integridade do sistema.|
 |deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|O MDATP exige nível mínimo de risco da Proteção Contra Ameaças Móveis para relatar o não-atendimento. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Booliano|Exige criptografia em dispositivos Mac OS.|
-|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Configuração de sistema e privacidade que determina quais locais de download os aplicativos podem ser executados em um dispositivo macOS. Os valores possíveis são: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|firewallEnabled|Booliano|Se o firewall deve ser habilitado ou não.|
-|firewallBlockAllIncoming|Booliano|Corresponde à opção "bloquear todas as conexões de entrada".|
-|firewallEnableStealthMode|Booliano|Corresponde a "Habilitar modo oculto".|
+|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Configuração de Sistema e Privacidade que determina de quais locais de download os aplicativos podem ser executados em um dispositivo macOS. Os valores possíveis são: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
+|firewallEnabled|Boolean|Se o firewall deve ser habilitado ou não.|
+|firewallBlockAllIncoming|Boolean|Corresponde à opção "Bloquear todas as conexões de entrada".|
+|firewallEnableStealthMode|Boolean|Corresponde a "Habilitar o modo de furtividade".|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -111,6 +112,7 @@ Veja a seguir uma representação JSON do recurso.
   "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
+  "advancedThreatProtectionRequiredSecurityLevel": "String",
   "storageRequireEncryption": true,
   "gatekeeperAllowedAppSource": "String",
   "firewallEnabled": true,

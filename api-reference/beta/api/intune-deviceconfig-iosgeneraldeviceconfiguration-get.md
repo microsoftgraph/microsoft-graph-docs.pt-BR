@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11219f5202d332615356e2f2ff873975bbfcf1a9
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 78d07c5782e29987ab2b2baa838008e2ce77bc0d
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51147907"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865681"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>Get iosGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11408
+Content-Length: 11433
 
 {
   "value": {
@@ -365,6 +365,7 @@ Content-Length: 11408
     "sharedDeviceBlockTemporarySessions": true,
     "appClipsBlocked": true,
     "applePersonalizedAdsBlocked": true,
+    "nfcBlocked": true,
     "kioskModeAppType": "appStoreApp"
   }
 }

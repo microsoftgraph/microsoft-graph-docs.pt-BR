@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagement
 description: 'O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  '
 localization_priority: Normal
-author: dougeby
+author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2673f7325d3be8285e01d75e5dbcc3b7cb691dda
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 73aa7497c6e519ca139856104a692c6f939fbf2f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611121"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866126"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -39,7 +39,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Acesso remoto
 - Parceiros de assistência remota
 - Políticas de controle de acesso baseado em função (RBAC)
-- Relatório
+- Reporting
 - Parceiros de gerenciamento de expansão de telecomunicações
 - Solução de problemas de eventos
 - Resumos da Proteção de Informações do Windows
@@ -64,10 +64,10 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo associado ao dispositivo.|
+|id|Cadeia de caracteres|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
-|legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não-MDM gerenciado para essa conta. Essa propriedade é somente leitura.|
+|legacyPcManangementEnabled|Boolean|A propriedade para habilitar o gerenciamento de computador herdado não-MDM gerenciado para essa conta. Essa propriedade é somente leitura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitidos por locatário.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivo**|
@@ -185,7 +185,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |roleDefinitions|Conjunto [roleDefinition](../resources/intune-rbac-roledefinition.md)|As definições da função.|
 |roleScopeTags|[Coleção roleScopeTag](../resources/intune-rbac-rolescopetag.md)|As Marcas de Escopo de Função.|
 |**Relatórios**|
-|reports|[deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)|Singleton de relatórios|
+|reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Singleton de relatórios|
 |**Atualização de Software**|
 |windowsFeatureUpdateProfiles|[Coleção windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Uma coleção de perfis de atualização de recursos do Windows|
 |**Gerenciamento de despesas de telecomunicações (TEM)**|

@@ -1,22 +1,22 @@
 ---
 title: Função getEffectivePermissions
 description: Ainda não documentado
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51bcc381b1a2f804649a6185e7e89d071d84d57c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a047cc3606d6a6bfcf7774ac8937b844aa494495
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49210351"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865996"
 ---
 # <a name="geteffectivepermissions-function"></a>Função getEffectivePermissions
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 

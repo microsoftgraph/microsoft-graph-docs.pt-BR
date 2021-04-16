@@ -1,22 +1,22 @@
 ---
 title: Criar deviceCategory
 description: Cria um novo objeto deviceCategory.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c846a2dda0d39b0086398af51afe8ebd6a08bff
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5b7da53c95a73329b1e694e49956bfa0d66247a1
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49232729"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866423"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -58,10 +58,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Obboarding**|
-|description|String|Descrição opcional da categoria do dispositivo.|
-|displayName|String|Nome de exibição da categoria de dispositivo.|
+|description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
+|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
 
 ## <a name="response"></a>Resposta
 

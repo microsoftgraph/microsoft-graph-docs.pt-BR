@@ -1,22 +1,22 @@
 ---
 title: Função getLoggedOnManagedDevices
 description: Ainda não documentado
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 315e05f322e00122876e4f246d970c58b97e180b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: c4d4b2a8bbe663369c535ba0aee19c4ebb73d584
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157782"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865107"
 ---
 # <a name="getloggedonmanageddevices-function"></a>Função getLoggedOnManagedDevices
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application||
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedida, esta função retorna um código de resposta e uma `200 OK` [coleção managedDevice](../resources/intune-shared-manageddevice.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um código de resposta e uma `200 OK` [coleção managedDevice](../resources/intune-devices-manageddevice.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

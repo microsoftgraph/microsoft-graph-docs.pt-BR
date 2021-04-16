@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 340e5fc55e85a58dab5b5d2805e94744c493d49d
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 760631b115d6a458556b476b28f6f996e259d2bd
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158280"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866619"
 ---
 # <a name="wipe-action"></a>ação wipe
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -62,6 +62,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |keepEnrollmentData|Booliano|Ainda não documentado|
 |keepUserData|Booliano|Ainda não documentado|
 |macOsUnlockCode|Cadeia de caracteres|Ainda não documentado|
+|persistEsimDataPlan|Booliano|Ainda não documentado|
 |useProtectedWipe|Booliano|Ainda não documentado|
 
 
@@ -77,12 +78,13 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
-Content-length: 138
+Content-length: 170
 
 {
   "keepEnrollmentData": true,
   "keepUserData": true,
   "macOsUnlockCode": "Mac Os Unlock Code value",
+  "persistEsimDataPlan": true,
   "useProtectedWipe": true
 }
 ```

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d1d9e7a340db9cc176b2ebc11bfcb4e7bd5f8de
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 214ef0f5eed28d02dd172e6acb7845ea379f372f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611878"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866570"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Tipo de recurso remoteActionAudit
 
@@ -34,16 +34,16 @@ Relatório de ações remotas iniciadas nos dispositivos pertencentes a um deter
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID do relatório.|
+|id|Cadeia de caracteres|ID do relatório.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo do Intune.|
 |userName|Cadeia de caracteres|\[preterido \] Use InitiatedByUserPrincipalName em vez disso.|
-|initiatedByUserPrincipalName|String|Usuário que iniciou a ação do dispositivo, o formato é UPN.|
-|ação|[remoteAction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são: `unknown` , , , , , , , , `factoryReset` `removeCompanyData` , `resetPasscode` `remoteLock` , `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures` , `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName`|
+|initiatedByUserPrincipalName|Cadeia de Caracteres|Usuário que iniciou a ação do dispositivo, o formato é UPN.|
+|ação|[remoteAction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são: `unknown` , , , , , , , , `factoryReset` `removeCompanyData` , `resetPasscode` , `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` , `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName` `activateDeviceEsim` .|
 |requestDateTime|DateTimeOffset|Hora em que a ação foi emitida, dada em UTC.|
-|deviceOwnerUserPrincipalName|String|Upn do proprietário do dispositivo.|
-|deviceIMEI|String|IMEI do dispositivo.|
-|actionState|[actionState](../resources/intune-devices-actionstate.md)|Estado da ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|managedDeviceId|String|Destino da ação.|
+|deviceOwnerUserPrincipalName|Cadeia de Caracteres|Upn do proprietário do dispositivo.|
+|deviceIMEI|Cadeia de Caracteres|IMEI do dispositivo.|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado da ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|managedDeviceId|Cadeia de Caracteres|Destino da ação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

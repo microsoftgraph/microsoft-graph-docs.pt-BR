@@ -1,47 +1,47 @@
 ---
-title: tipo de recurso mobileAppTroubleshootingEvent
-description: Descreve o recurso mobileAppTroubleshootingEvent da API do Microsoft Graph para o Intune, que oferece suporte a vários fluxos de trabalho.
+title: Tipo de recurso mobileAppTroubleshootingEvent
+description: Descreve o recurso mobileAppTroubleshootingEvent da API do Microsoft Graph para Intune, que oferece suporte a vários fluxos de trabalho.
 localization_priority: Normal
-author: dougeby
+author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89e7800fcd0e6bec5c8097937f87a92c6f1e9fa3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 387e21597c806e7aedf814128f809305999b19a6
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49300567"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51864953"
 ---
-# <a name="mobileapptroubleshootingevent-resource-type"></a>tipo de recurso mobileAppTroubleshootingEvent
+# <a name="mobileapptroubleshootingevent-resource-type"></a>Tipo de recurso mobileAppTroubleshootingEvent
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Evento representando um status de instalação de aplicativo do dispositivo de usuários para o gerenciamento de dispositivos e a solução de problemas de fluxos de trabalho.
+Evento representando um status de instalação de aplicativo de dispositivo de usuários para gerenciamento de dispositivos e solução de problemas de fluxos de trabalho de eventos.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar mobileAppTroubleshootingEvents](../api/intune-shared-mobileapptroubleshootingevent-list.md)|coleção [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Listar Propriedades e relações dos objetos [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
-|[Obter mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-get.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Leia as propriedades e as relações do objeto [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
-|[Criar mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-create.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Criar um novo objeto [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
-|[Excluir mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-delete.md)|Nenhum|Exclui [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md).|
-|[Atualizar mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-update.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Atualiza as propriedades de um objeto [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
+|[Listar mobileAppTroubleshootingEvents](../api/intune-shared-mobileapptroubleshootingevent-list.md)|[Coleção mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Listar propriedades e relações dos [objetos mobileAppTroubleshootingEvent.](../resources/intune-shared-mobileapptroubleshootingevent.md)|
+|[Obter mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-get.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Leia propriedades e relações do [objeto mobileAppTroubleshootingEvent.](../resources/intune-shared-mobileapptroubleshootingevent.md)|
+|[Criar mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-create.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Crie um novo [objeto mobileAppTroubleshootingEvent.](../resources/intune-shared-mobileapptroubleshootingevent.md)|
+|[Excluir mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-delete.md)|Nenhum|Exclui um [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md).|
+|[Atualizar mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-update.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Atualize as propriedades de [um objeto mobileAppTroubleshootingEvent.](../resources/intune-shared-mobileapptroubleshootingevent.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|UUID para o objeto.|
+|id|Cadeia de caracteres|UUID para o objeto.|
 |**Solução de Problemas**|
-|additionalInformation|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres que fornece informações adicionais sobre o evento de solução de problemas herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|additionalInformation|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de pares de valores de chave de cadeia de caracteres e cadeia de caracteres que fornece informações adicionais sobre o evento Troubleshooting Herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |ApplicationId|Cadeia de caracteres|Identificador de aplicativo do Intune.|
 |correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço. |
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu. |
-|EventName|String|Nome do evento correspondente ao evento de solução de problemas. Opcional|
-|histórico|coleção [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Item do histórico de solução de problemas do aplicativo móvel do Intune|
+|eventName|Cadeia de Caracteres|Nome do Evento correspondente ao Evento de Solução de Problemas. Opcional|
+|history|[coleção mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Item histórico de solução de problemas de aplicativo móvel do Intune|
 |managedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo criado ou coletado pelo Intune.|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto contendo informações detalhadas sobre o erro e sua correção. Herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |userId|Cadeia de caracteres|Identificador do usuário que tentou registrar o dispositivo.|
@@ -49,8 +49,8 @@ Evento representando um status de instalação de aplicativo do dispositivo de u
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|**Gerenciamento de dispositivos**|
-|appLogCollectionRequests|coleção [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|A Propriedade Collection de AppLogUploadRequest.|
+|**Gerenciamento de dispositivo**|
+|appLogCollectionRequests|[Coleção appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|A propriedade collection de AppLogUploadRequest.|
 
 
 ## <a name="json-representation"></a>Representação JSON

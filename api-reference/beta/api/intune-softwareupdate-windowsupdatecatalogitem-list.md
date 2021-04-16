@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e063646083be5c1bb7e8a3e6907b44068189df39
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4f4be6933c7218fdf4c51e2172aa7b487a7718b0
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156090"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865625"
 ---
 # <a name="list-windowsupdatecatalogitems"></a>Listar windowsUpdateCatalogItems
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 263
+Content-Length: 327
 
 {
   "value": [
@@ -73,7 +73,8 @@ Content-Length: 263
       "@odata.type": "#microsoft.graph.windowsUpdateCatalogItem",
       "id": "e887145d-145d-e887-5d14-87e85d1487e8",
       "displayName": "Display Name value",
-      "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00"
+      "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+      "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
     }
   ]
 }

@@ -1,16 +1,16 @@
 ---
 title: função getAssignedRoleIdsForLoggedInUser
 description: Recupera as definições de função atribuídas e as atribuições de função do usuário autenticado no momento.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3b0a8e4755ba6361bcb8d92dae4fe6c2e66eb65
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e9a5fe31e10ea1ad7bf4ae2ba89aa1d70bd60982
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159332"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865989"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>função getAssignedRoleIdsForLoggedInUser
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Application||
 | &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

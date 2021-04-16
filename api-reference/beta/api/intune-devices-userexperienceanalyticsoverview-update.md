@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dbe91b8e131e4379c8d658cea6420aad9fbf2c9e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c1df141edc551b62aea8c32534aa852490d9772f
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51149972"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866703"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>Atualizar userExperienceAnalyticsOverview
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o userE
 |bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da categoria de análise de experiência do usuário "BestPractices". Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |workFromAnywhereHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da categoria de análise de experiência do usuário 'WorkFromAnywhere'. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da categoria de análise de experiência do usuário "BestPractices". Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
-|resourcePerformanceState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da categoria de análise de experiência do usuário 'ResourcePerformance'. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|resourcePerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de saúde atual da categoria de análise de experiência do usuário 'ResourcePerformance'. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -80,7 +80,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 999
+Content-length: 1005
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -109,7 +109,7 @@ Content-length: 999
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData"
 }
 ```
 
@@ -118,7 +118,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1048
+Content-Length: 1054
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -148,7 +148,7 @@ Content-Length: 1048
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData"
 }
 ```
 

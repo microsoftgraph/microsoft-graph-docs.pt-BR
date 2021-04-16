@@ -1,22 +1,22 @@
 ---
 title: Listar mobileApps
 description: Listar propriedades e relações dos objetos mobileApp.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 764b79235a58cf597afe4ae9843b88f5c962875c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ec574543622428f86aca4cdaa2f3136102748417
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49285125"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865870"
 ---
 # <a name="list-mobileapps"></a>Listar mobileApps
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,13 +27,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-| &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+| &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-| &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+| &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

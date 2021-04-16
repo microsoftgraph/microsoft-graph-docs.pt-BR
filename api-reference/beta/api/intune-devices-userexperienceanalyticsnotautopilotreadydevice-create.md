@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3842a478ab89e03366a111a52aed901613959dce
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 1473c0a856636dc5373239c1bed4c2caed9ea78b
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51159338"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865219"
 ---
 # <a name="create-userexperienceanalyticsnotautopilotreadydevice"></a>Criar userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,11 +58,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o userEx
 |serialNumber|String|O número de série do dispositivo intune.|
 |fabricante|String|O fabricante do dispositivo intune.|
 |modelo|String|O modelo do dispositivo intune.|
-|managedBy|Cadeia de caracteres|O dispositivo do intune é gerenciado por.|
-|autoPilotRegistered|Booleano|O piloto automático do dispositivo intuneRegistered.|
-|autoPilotProfileAssigned|Booleano|O autopilotProfileAssigned do dispositivo intune.|
-|azureAdRegistered|[azureAdRegisteredState](../resources/intune-devices-azureadregisteredstate.md)|O dispositivo do intune é azureAdRegistered. Os valores possíveis são: `no`, `yes`, `unknown`.|
-|azureAdJoinType|Cadeia de caracteres|O azure Ad joinType do dispositivo do intune.|
+|managedBy|Cadeia de Caracteres|O dispositivo do intune é gerenciado por.|
+|autoPilotRegistered|Boolean|O piloto automático do dispositivo intuneRegistered.|
+|autoPilotProfileAssigned|Boolean|O autopilotProfileAssigned do dispositivo intune.|
+|azureAdRegistered|Boolean|O dispositivo do intune é azureAdRegistered.|
+|azureAdJoinType|Cadeia de Caracteres|O azure Ad joinType do dispositivo do intune.|
 
 
 
@@ -76,7 +76,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 Content-type: application/json
-Content-length: 422
+Content-length: 421
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsNotAutopilotReadyDevice",
@@ -87,7 +87,7 @@ Content-length: 422
   "managedBy": "Managed By value",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "yes",
+  "azureAdRegistered": true,
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
@@ -97,7 +97,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 471
+Content-Length: 470
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsNotAutopilotReadyDevice",
@@ -109,7 +109,7 @@ Content-Length: 471
   "managedBy": "Managed By value",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "yes",
+  "azureAdRegistered": true,
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```

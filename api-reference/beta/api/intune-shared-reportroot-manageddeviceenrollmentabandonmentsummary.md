@@ -1,36 +1,36 @@
 ---
-title: função managedDeviceEnrollmentAbandonmentSummary
-description: Metadados para o relatório de Resumo de abandono de registro
-author: dougeby
+title: Função managedDeviceEnrollmentAbandonmentSummary
+description: Metadados para relatório de resumo de abandono de registro
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82fc32b8132c2e393aa59c935d81a3dbce762261
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 83bbca5bfb965a477e0603bb28f80ceb273a4ce8
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49200586"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865401"
 ---
-# <a name="manageddeviceenrollmentabandonmentsummary-function"></a>função managedDeviceEnrollmentAbandonmentSummary
+# <a name="manageddeviceenrollmentabandonmentsummary-function"></a>Função managedDeviceEnrollmentAbandonmentSummary
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Metadados para o relatório de Resumo de abandono de registro
+Metadados para relatório de resumo de abandono de registro
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; **Troublshooting** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp;&nbsp; **Desarmamento** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Application||
-| &nbsp;&nbsp; **Troublshooting** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp;&nbsp; **Desarmamento** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

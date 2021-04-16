@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso deviceEnrollmentConfiguration
-description: A classe base da configuração de registro do dispositivo
-author: dougeby
+description: A Classe Base de Configuração de Registro de Dispositivo
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7e15322dd41eaa15e4b00c83a59b361059bbedb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0d46e446aab9806ad856f71cb8ac57c2f75f1b55
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49287659"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865793"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-A classe base da configuração de registro do dispositivo
+A Classe Base de Configuração de Registro de Dispositivo
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -30,18 +30,18 @@ A classe base da configuração de registro do dispositivo
 |**Integração**|
 |[Ação setPriority](../api/intune-shared-deviceenrollmentconfiguration-setpriority.md)|Nenhum|Ainda não documentado|
 |[atribuir ação](../api/intune-shared-deviceenrollmentconfiguration-assign.md)|Nenhuma|Ainda não documentado|
-|**Conjunto de políticas**|
-|[ação hasPayloadLinks](../api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md)|coleção [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md)|Ainda não documentado|
+|**Conjunto de Políticas**|
+|[Ação hasPayloadLinks](../api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md)|[coleção hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para a conta|
-|displayName|String|O nome de exibição da configuração de registro do dispositivo|
-|description|String|A descrição da configuração de registro do dispositivo|
-|prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos somente à configuração com o menor valor de prioridade.|
-|createdDateTime|DateTimeOffset|Data e hora de criação em UTC da configuração de registro do dispositivo|
-|lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação em UTC da configuração de registro do dispositivo|
+|id|Cadeia de caracteres|Identificador exclusivo da conta|
+|displayName|Cadeia de caracteres|O nome de exibição da configuração de registro do dispositivo|
+|description|Cadeia de caracteres|A descrição da configuração de registro do dispositivo|
+|prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos apenas à configuração com o valor de prioridade mais baixo.|
+|createdDateTime|DateTimeOffset|Hora de data criada no UTC da configuração de registro do dispositivo|
+|lastModifiedDateTime|DateTimeOffset|Última data de modificação no UTC da configuração de registro do dispositivo|
 |versão|Int32|A versão da configuração de registro do dispositivo|
 
 ## <a name="relationships"></a>Relações

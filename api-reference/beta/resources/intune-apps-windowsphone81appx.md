@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso windowsPhone81AppX
-description: Contém propriedades e propriedades herdadas para aplicativos de linha de negócios AppX do Windows Phone 8.1.
+description: Contém propriedades e propriedades herdadas para aplicativos da Linha de Negócios do Windows Phone 8.1 AppX.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba589b1c6733c011617eac29182336364bd9fa81
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: f7483a57775b243ffd011284872343d51b27a8c5
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161884"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866297"
 ---
 # <a name="windowsphone81appx-resource-type"></a>Tipo de recurso windowsPhone81AppX
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades e propriedades herdadas para aplicativos de linha de negócios AppX do Windows Phone 8.1.
+Contém propriedades e propriedades herdadas para aplicativos da Linha de Negócios do Windows Phone 8.1 AppX.
 
 
 Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
@@ -28,18 +28,18 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar windowsPhone81AppXs](../api/intune-apps-windowsphone81appx-list.md)|[Coleção windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Listar propriedades e relações dos [objetos windowsPhone81AppX.](../resources/intune-apps-windowsphone81appx.md)|
-|[Obter windowsPhone81AppX](../api/intune-apps-windowsphone81appx-get.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Leia as propriedades e as relações do [objeto windowsPhone81AppX.](../resources/intune-apps-windowsphone81appx.md)|
+|[Listar windowsPhone81AppXs](../api/intune-apps-windowsphone81appx-list.md)|[Coleção windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Listar propriedades e relações dos objetos [windowsPhone81AppX.](../resources/intune-apps-windowsphone81appx.md)|
+|[Obter windowsPhone81AppX](../api/intune-apps-windowsphone81appx-get.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Leia propriedades e relações do [objeto windowsPhone81AppX.](../resources/intune-apps-windowsphone81appx.md)|
 |[Criar windowsPhone81AppX](../api/intune-apps-windowsphone81appx-create.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Crie um novo [objeto windowsPhone81AppX.](../resources/intune-apps-windowsphone81appx.md)|
-|[Excluir windowsPhone81AppX](../api/intune-apps-windowsphone81appx-delete.md)|Nenhum(a)|Exclui um [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md).|
-|[Atualizar windowsPhone81AppX](../api/intune-apps-windowsphone81appx-update.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Atualizar as propriedades de um [objeto windowsPhone81AppX.](../resources/intune-apps-windowsphone81appx.md)|
+|[Excluir windowsPhone81AppX](../api/intune-apps-windowsphone81appx-delete.md)|Nenhum|Exclui um [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md).|
+|[Atualizar windowsPhone81AppX](../api/intune-apps-windowsphone81appx-update.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Atualize as propriedades de um [objeto windowsPhone81AppX.](../resources/intune-apps-windowsphone81appx.md)|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|String|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|String|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|description|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -47,16 +47,16 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |isFeatured|Boolean|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|owner|Cadeia de caracteres|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|Anotações do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |uploadState|Int32|O estado de carregamento. Os valores possíveis são: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
-|isAssigned|Boolean|O valor que indica se o aplicativo está atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção String|Lista de ids de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|supersedingAppCount|Int32|O número total de aplicativos que este aplicativo é direta ou indiretamente é supersedido. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|supersededAppCount|Int32|O número total de aplicativos pelos quais esse aplicativo é direta ou indiretamente sobressu valorado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|O número total de aplicativos que esse aplicativo sobressede direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|O número total de aplicativos pelos quais esse aplicativo é, direta ou indiretamente, é suplido. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |committedContentVersion|String|A versão do conteúdo interno confirmado. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
@@ -65,8 +65,8 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |identityPublisherHash|String|O Hash do Publicador de Identidade.|
 |identityResourceIdentifier|String|O Identificador de Recurso da Identidade.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável.|
-|phoneProductIdentifier|String|O Identificador de Produto de Telefone.|
-|phonePublisherId|String|A ID do Editor de Telefones.|
+|phoneProductIdentifier|Cadeia de Caracteres|O Identificador de Produto de Telefone.|
+|phonePublisherId|Cadeia de Caracteres|A ID do Editor de Telefones.|
 |identityVersion|String|A versão da identidade.|
 
 ## <a name="relationships"></a>Relações
@@ -77,7 +77,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Resumo de instalação do aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |deviceStatuses|[Coleção mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|A lista de estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |userStatuses|[Coleção userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|relationships|[coleção mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|O conjunto de relações diretas para este aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|relações|[Coleção mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|O conjunto de relações diretas para este aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |contentVersions|Coleção [mobileAppContent](../resources/intune-apps-mobileappcontent.md)|A lista das versões de conteúdo deste aplicativo. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -136,7 +136,8 @@ Veja a seguir uma representação JSON do recurso.
     "v10_1809": true,
     "v10_1903": true,
     "v10_1909": true,
-    "v10_2004": true
+    "v10_2004": true,
+    "v10_2H20": true
   },
   "phoneProductIdentifier": "String",
   "phonePublisherId": "String",

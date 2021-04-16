@@ -1,26 +1,26 @@
 ---
 title: Obter windowsAutopilotDeploymentProfile
-description: Leia as propriedades e as relações do objeto windowsAutopilotDeploymentProfile.
-author: dougeby
+description: Leia propriedades e relações do objeto windowsAutopilotDeploymentProfile.
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 475f04a3222c5ea32c0555d2991b4f263e1a1cd8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3ab309a198887601778724f473f31e622a6ec9c0
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49217421"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866395"
 ---
 # <a name="get-windowsautopilotdeploymentprofile"></a>Obter windowsAutopilotDeploymentProfile
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) .
+Leia propriedades e relações do [objeto windowsAutopilotDeploymentProfile.](../resources/intune-shared-windowsautopilotdeploymentprofile.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,12 +28,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
-| &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+| &nbsp;&nbsp; **Inscrição** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+| &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Application||
-| &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
-| &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+| &nbsp;&nbsp; **Inscrição** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+| &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,7 +59,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

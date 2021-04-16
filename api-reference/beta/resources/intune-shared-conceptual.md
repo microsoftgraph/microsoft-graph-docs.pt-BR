@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para pontos de extremidade do Intune
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 6c0b11847ff5ec0f4431a20e4ffa197ddd21dbcf
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4de0e8477d7d20894981c0d0e68956d806d926c4
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440175"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866143"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
@@ -45,7 +45,7 @@ Os seguintes recursos do Graph são compartilhados entre fluxos de trabalho do I
 - [Configuração do dispositivo](intune-shared-deviceconfiguration.md)
 - [Configuração de registro do dispositivo](intune-shared-deviceenrollmentconfiguration.md)
 - [Tipo de registro de dispositivo](intune-shared-deviceenrollmenttype.md)
-- [Gerenciamento de dispositivos](intune-shared-devicemanagement.md)
+- [Gerenciamento de dispositivo](intune-shared-devicemanagement.md)
 - [Configurações de credenciais derivadas do gerenciamento de dispositivos](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Script de gerenciamento de dispositivo](intune-shared-devicemanagementscript.md)
 - [Tipo de plataforma do dispositivo](intune-shared-deviceplatformtype.md)
@@ -80,6 +80,7 @@ Os seguintes recursos do Graph são compartilhados entre fluxos de trabalho do I
 - [Configurações de tempo de instalação do aplicativo móvel](intune-shared-mobileappinstalltimesettings.md)
 - [Evento de solução de problemas de aplicativo móvel](intune-shared-mobileapptroubleshootingevent.md)
 - [Tipo de proprietário](intune-shared-ownertype.md)
+- [Tipo de plataforma da política](intune-shared-policyplatformtype.md)
 - [Domínio com proxy](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [Raiz de relatório](intune-shared-reportroot.md)

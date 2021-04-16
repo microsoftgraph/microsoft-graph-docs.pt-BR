@@ -1,22 +1,22 @@
 ---
 title: função getEffectiveDeviceEnrollmentConfigurations
 description: Ainda não documentado
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94c695b818dad8c4785c28ac2a08ac574c66e3f7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1f5db4f5fdcfb2b953286f34637ab5f7622ec321
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49223749"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865653"
 ---
 # <a name="geteffectivedeviceenrollmentconfigurations-function"></a>função getEffectiveDeviceEnrollmentConfigurations
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um código de resposta e uma `200 OK` [coleção deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

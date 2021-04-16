@@ -1,22 +1,22 @@
 ---
-title: função getTopMobileApps
+title: Função getTopMobileApps
 description: Ainda não documentado
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf2d8bcd344f6ac12263f0821db98a48b2aa7c43
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 426d79529414bd44f0a2327d503adf388943aaf5
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49285139"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865905"
 ---
-# <a name="gettopmobileapps-function"></a>função getTopMobileApps
+# <a name="gettopmobileapps-function"></a>Função getTopMobileApps
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,10 +27,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,13 +54,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|status|String|Ainda não documentado|
+|status|Cadeia de caracteres|Ainda não documentado|
 |count|Int64|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção [mobileApp](../resources/intune-shared-mobileapp.md) no corpo da resposta.
+Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma coleção [mobileApp](../resources/intune-shared-mobileapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

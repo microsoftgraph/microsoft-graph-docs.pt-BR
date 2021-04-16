@@ -1,22 +1,22 @@
 ---
 title: função getManagedAppDiagnosticStatuses
 description: Obtém diagnóstico do status de validação para um determinado usuário.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47f479cf26fe9f06e4b920ecbaebd3a17e50cf04
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: faea09447153988b7ca8ecf86b013fea83a50920
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303899"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865100"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>função getManagedAppDiagnosticStatuses
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs na versão /beta do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; **Mam** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
-| &nbsp;&nbsp; **Mam** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegada (conta corporativa ou de estudante)||
+| &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application||
+| &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

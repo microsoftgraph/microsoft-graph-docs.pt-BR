@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosLobAppProvisioningConfiguration
 description: Este tópico fornece descrições dos métodos, propriedades e relações declarados expostos pelo recurso Configuração de Provisionamento de Aplicativos do iOS Lob.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c3745089ff34bc4bb0554b7e9364e112a11ab31
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 357eabcf6a6102ddcdbd3de4d0cb7afb96de8462
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472353"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866115"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>Tipo de recurso iosLobAppProvisioningConfiguration
 
@@ -40,9 +40,9 @@ Este tópico fornece descrições dos métodos, propriedades e relações declar
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |expirationDateTime|DateTimeOffset|Data e hora opcionais de expiração do perfil.|
-|payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileprovision \| *.xml).|
+|payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade de configuração de provisionamento de aplicativos LOB do iOS.|
+|roleScopeTagIds|Coleção String|Lista de Marcas de Escopo para essa entidade de configuração de provisionamento de aplicativos LOB do iOS.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|

@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso androidManagedAppProtection
 description: Política usada para definir configurações de gerenciamento detalhadas direcionadas a grupos de segurança específicos e para um conjunto especificado de aplicativos em um dispositivo Android
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1b1938850a83879b3c03877f6f1e44ab4dd4bdf7
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 532f61afadbeec9eb59bb9a1480194f9ff47d8bf
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158111"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866542"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Tipo de recurso androidManagedAppProtection
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -34,17 +34,17 @@ Herda de [targetedManagedAppProtection](../resources/intune-mam-targetedmanageda
 |[Excluir androidManagedAppProtection](../api/intune-shared-androidmanagedappprotection-delete.md)|Nenhum|Excluir um [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).|
 |[Atualizar androidManagedAppProtection](../api/intune-shared-androidmanagedappprotection-update.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Atualizar as propriedades de um objeto [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).|
 |**Conjunto de Políticas**|
-|[Ação hasPayloadLinks](../api/intune-shared-androidmanagedappprotection-haspayloadlinks.md)|[Coleção hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md)|Ainda não documentado|
+|[Ação hasPayloadLinks](../api/intune-shared-androidmanagedappprotection-haspayloadlinks.md)|[coleção hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|displayName|String|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|description|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para esta instância de Entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo não está conectado à Internet. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |periodOnlineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo está conectado à Internet. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -58,7 +58,7 @@ Herda de [targetedManagedAppProtection](../resources/intune-mam-targetedmanageda
 |saveAsBlocked|Boolean|Indica se os usuários podem usar o item de menu "Salvar como" para salvar uma cópia dos arquivos protegidos. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |periodOfflineBeforeWipeIsEnforced|Duração|A quantidade de tempo que um aplicativo pode permanecer desconectado da Internet antes que todos os dados gerenciados sejam apagados. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |pinRequired|Boolean|Indica se é necessário um pin no nível do aplicativo. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|maximumPinRetries|Int32|Número máximo de tentativas de pin incorretas antes que o aplicativo gerenciado seja bloqueado ou apagado. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|maximumPinRetries|Int32|Número máximo de tentativas de repetir pinos incorretos antes que o aplicativo gerenciado seja bloqueado ou apagado. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |simplePinBlocked|Boolean|Indica se simplePin está bloqueado. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumPinLength|Int32|Tamanho mínimo de pin necessário para um pin no nível do aplicativo se PinRequired estiver definido como True Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |pinCharacterSet|[managedAppPinCharacterSet](../resources/intune-mam-managedapppincharacterset.md)|Conjunto de caracteres que poderá ser usado para um pin no nível do aplicativo se PinRequired estiver definido como True. Herdado [de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `numeric`, `alphanumericAndSymbol`.|
@@ -72,34 +72,34 @@ Herda de [targetedManagedAppProtection](../resources/intune-mam-targetedmanageda
 |minimumWarningOsVersion|String|Versões anteriores à versão especificada resultarão em uma mensagem de aviso no aplicativo gerenciado ao acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumRequiredAppVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWarningAppVersion|String|Versões anteriores à versão especificada resultarão em uma mensagem de aviso no aplicativo gerenciado. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWipeOsVersion|String|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWipeAppVersion|String|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, bloquear ou apagar, quando o dispositivo está com raiz ou jailbroken, se DeviceComplianceRequired estiver definido como true. Herdado [de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
-|appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, bloqueio ou apagamento, com base no número máximo de tentativas incorretas de tentativas de pin. Herdado [de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
-|pinRequiredInsteadOfBiometricTimeout|Duration|Tempo de vida em minutos para um pin de aplicativo em vez de senha não biométrica Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|allowedOutboundClipboardSharingExceptionLength|Int32|Especifique o número de caracteres que podem ser cortados ou copiados de dados e contas da Organização para qualquer aplicativo. Essa configuração substitui a restrição AllowedOutboundClipboardSharingLevel. O valor padrão '0' significa que nenhuma exceção é permitida. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Especificar restrição de notificação de aplicativo [Herdado de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `allow`, `blockOrganizationalData`, `block`.|
+|minimumWipeOsVersion|Cadeia de Caracteres|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWipeAppVersion|Cadeia de Caracteres|Versões menores ou iguais à versão especificada apagarão o aplicativo gerenciado e os dados da empresa associados. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, seja bloquear ou apagar, quando o dispositivo estiver enraizado ou com jailbroken, se DeviceComplianceRequired estiver definido como true. Herdado [de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
+|appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, bloqueado ou apagado, com base no número máximo de tentativas de nova tentativa de pino incorretas. Herdado [de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
+|pinRequiredInsteadOfBiometricTimeout|Duration|Tempo de tempo em minutos para um pin de aplicativo em vez de senha não biométrica Herdada [de managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|allowedOutboundClipboardSharingExceptionLength|Int32|Especifique o número de caracteres que podem ser cortados ou copiados de dados e contas de Org para qualquer aplicativo. Essa configuração substitui a restrição AllowedOutboundClipboardSharingLevel. O valor padrão de '0' significa que nenhuma exceção é permitida. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Especificar restrição de notificação de aplicativo Herdada [de managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `allow`, `blockOrganizationalData`, `block`.|
 |isAssigned|Boolean|Indica se a política foi implantada a grupos de inclusão ou não. Herdado de [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
-|targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|Os níveis de gerenciamento de aplicativo pretendido para essa política Herdado de [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md). Os valores possíveis são: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
+|targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|Os níveis de gerenciamento de aplicativos pretendido para essa política Herdados de [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md). Os valores possíveis são: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |screenCaptureBlocked|Boolean|Indica se um usuário gerenciado pode fazer capturas de tela dos aplicativos gerenciados|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|Quando essa configuração estiver habilitada, a criptografia no nível do aplicativo será desabilitada se a criptografia no nível do dispositivo for habilitada|
 |encryptAppData|Boolean|Indica se os dados de aplicativos gerenciados devem ser criptografados|
 |deployedAppCount|Int32|Contagem de aplicativos em que a política atual é implantada.|
 |minimumRequiredPatchVersion|String|Define o nível mais antigo de patch de segurança do Android necessário que um usuário pode ter para obter acesso seguro ao aplicativo.|
 |minimumWarningPatchVersion|String|Define o nível mais antigo de patch de segurança do Android recomendado que um usuário pode ter para obter acesso seguro ao aplicativo.|
-|exemptedAppPackages|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Os pacotes de aplicativos nesta lista estarão isentos da política e poderão receber dados de aplicativos gerenciados.|
-|minimumWipePatchVersion|String|O nível de patch de segurança do Android menor ou igual ao valor especificado apagará o aplicativo gerenciado e os dados da empresa associados.|
-|allowedAndroidDeviceManufacturers|String|A lista de fabricantes de dispositivos semicolon permitidos, como uma cadeia de caracteres, para que o aplicativo gerenciado funcione.|
+|exemptedAppPackages|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Os pacotes de aplicativo nesta lista serão isentos da política e poderão receber dados de aplicativos gerenciados.|
+|minimumWipePatchVersion|Cadeia de Caracteres|O nível de patch de segurança do Android menor ou igual ao valor especificado apagará o aplicativo gerenciado e os dados da empresa associados.|
+|allowedAndroidDeviceManufacturers|Cadeia de Caracteres|A lista entre ponto e vírgula dos fabricantes de dispositivos permitido, como cadeia de caracteres, para que o aplicativo gerenciado funcione.|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, bloquear ou apagar, se o fabricante do dispositivo especificado não for permitido. Os valores possíveis são: `block`, `wipe`, `warn`.|
-|requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|Define o requisito de Atestado de Dispositivo SafetyNet Android para que um aplicativo gerenciado funcione. Os valores possíveis são: `none`, `basicIntegrity`, `basicIntegrityAndDeviceCertification`.|
-|appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, aviso ou bloqueio, se o requisito de Atestado de SafetyNet do Android especificado falhar. Os valores possíveis são: `block`, `wipe`, `warn`.|
-|requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Define o requisito de Verificação de Aplicativos SafetyNet do Android para que um aplicativo gerenciado funcione. Os valores possíveis são: `none` e `enabled`.|
-|appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, aviso ou bloqueio, se o requisito de Verificação de Aplicativo Android especificado falhar. Os valores possíveis são: `block`, `wipe`, `warn`.|
-|customBrowserPackageId|String|Identificador exclusivo de um navegador personalizado para abrir o weblink no Android.|
-|customBrowserDisplayName|String|Nome amigável do navegador personalizado preferido para abrir o weblink no Android.|
-|minimumRequiredCompanyPortalVersion|String|A versão mínima do portal da empresa que deve ser instalada no dispositivo ou no acesso ao aplicativo será bloqueada|
-|minimumWarningCompanyPortalVersion|String|Versão mínima do portal da empresa que deve ser instalado no dispositivo ou o usuário receberá um aviso|
-|minimumWipeCompanyPortalVersion|String|A versão mínima do portal da empresa que deve ser instalada no dispositivo ou os dados da empresa no aplicativo serão apagados|
+|requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|Define o requisito de Atestado de Dispositivo SafetyNet do Android para que um aplicativo gerenciado funcione. Os valores possíveis são: `none`, `basicIntegrity`, `basicIntegrityAndDeviceCertification`.|
+|appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, aviso ou bloqueio, se o requirment de Atestado de Segurança do Android especificado falhar. Os valores possíveis são: `block`, `wipe`, `warn`.|
+|requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Define o requisito de Verificação do Android SafetyNet Apps para que um aplicativo gerenciado funcione. Os valores possíveis são: `none` e `enabled`.|
+|appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, aviso ou bloqueio, se o requirment de Verificação de Aplicativo Android especificado falhar. Os valores possíveis são: `block`, `wipe`, `warn`.|
+|customBrowserPackageId|Cadeia de Caracteres|Identificador exclusivo de um navegador personalizado para abrir o weblink no Android.|
+|customBrowserDisplayName|Cadeia de Caracteres|Nome amigável do navegador personalizado preferencial para abrir o weblink no Android.|
+|minimumRequiredCompanyPortalVersion|Cadeia de Caracteres|A versão mínima do portal da empresa que deve ser instalada no dispositivo ou no acesso ao aplicativo será bloqueada|
+|minimumWarningCompanyPortalVersion|Cadeia de Caracteres|Versão mínima do portal da empresa que deve ser instalada no dispositivo ou o usuário receberá um aviso|
+|minimumWipeCompanyPortalVersion|Cadeia de Caracteres|Versão mínima do portal da empresa que deve ser instalada no dispositivo ou os dados da empresa no aplicativo serão apagados|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

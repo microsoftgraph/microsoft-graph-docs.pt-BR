@@ -1,16 +1,16 @@
 ---
 title: Criar windowsUpdateState
 description: Crie um novo objeto windowsUpdateState.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e53a4bdc6bb07c9761cabeff5eec9886130bc942
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bad8d5a7d91e90e7907227d4091ef7cb5fefb8da
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448008"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866185"
 ---
 # <a name="create-windowsupdatestate"></a>Criar windowsUpdateState
 
@@ -27,11 +27,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Atualização de Software** | DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Atualização de Software** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -57,14 +57,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o window
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Esta é a ID da entidade.|
+|id|Cadeia de caracteres|Esta é a ID da entidade.|
 |deviceId|Cadeia de caracteres|A id do dispositivo.|
 |userId|Cadeia de caracteres|A id do usuário.|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo.|
-|userPrincipalName|String|Nome principal do usuário.|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Status udpate do Windows. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|qualityUpdateVersion|String|A Versão de Atualização de Qualidade do dispositivo.|
-|featureUpdateVersion|String|A versão atual de atualização de recursos do dispositivo.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
+|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Status udpate do Windows. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|qualityUpdateVersion|Cadeia de Caracteres|A Versão de Atualização de Qualidade do dispositivo.|
+|featureUpdateVersion|Cadeia de Caracteres|A versão atual de atualização de recursos do dispositivo.|
 |lastScanDateTime|DateTimeOffset|A data em que o Agente do Windows Update fez uma verificação bem-sucedida.|
 |lastSyncDateTime|DateTimeOffset|Última data em que o dispositivo sincroniza com o Microsoft Intune.|
 

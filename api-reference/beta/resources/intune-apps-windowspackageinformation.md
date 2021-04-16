@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c53ce1f9dac5c4b01129df32ff96ceb8645a842a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 7b2474fe5458c7a8c8fcc54d354f46ec7386952e
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154387"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866304"
 ---
 # <a name="windowspackageinformation-resource-type"></a>Tipo de recurso windowsPackageInformation
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,12 +25,12 @@ Contém propriedades para as informações do pacote para um aplicativo de linha
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A arquitetura do Windows na qual esse aplicativo pode ser executado. Os possíveis valores são: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|displayName|String|O Nome para Exibição.|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A arquitetura do Windows na qual este aplicativo pode ser executado. Os possíveis valores são: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|displayName|Cadeia de caracteres|O Nome para Exibição.|
 |identityName|String|O Nome da Identidade.|
-|identityPublisher|String|O Identity Publisher.|
+|identityPublisher|Cadeia de Caracteres|O Editor de Identidade.|
 |identityResourceIdentifier|String|O Identificador de Recurso da Identidade.|
-|identityVersion|String|A versão de identidade.|
+|identityVersion|String|A Versão de Identidade.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável.|
 
 ## <a name="relationships"></a>Relações
@@ -64,7 +64,8 @@ Veja a seguir uma representação JSON do recurso.
     "v10_1809": true,
     "v10_1903": true,
     "v10_1909": true,
-    "v10_2004": true
+    "v10_2004": true,
+    "v10_2H20": true
   }
 }
 ```

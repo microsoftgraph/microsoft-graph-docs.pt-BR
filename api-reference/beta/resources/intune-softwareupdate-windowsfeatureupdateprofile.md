@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea8ead87af7e1f0b968ee9b85aaf0b7b4efbbcb6
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 79f08f9d1b8b4696f3c122c653ef45e428bd88b1
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133385"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51865786"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>Tipo de recurso windowsFeatureUpdateProfile
 
@@ -37,12 +37,13 @@ Perfil de Atualização de Recursos do Windows
 |:---|:---|:---|
 |id|Cadeia de caracteres|O Identificador da entidade.|
 |displayName|Cadeia de caracteres|O nome de exibição do perfil.|
-|descrição|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
-|featureUpdateVersion|Cadeia de caracteres|A versão de atualização de recursos que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão com suporte para o exemplo 1709, 1803 ou 1809 e assim por diante.|
+|description|Cadeia de caracteres|A descrição do perfil especificado pelo usuário.|
+|featureUpdateVersion|Cadeia de Caracteres|A versão de atualização de recursos que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão com suporte para o exemplo 1709, 1803 ou 1809 e assim por diante.|
 |createdDateTime|DateTimeOffset|A data em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data em que o perfil foi modificado pela última vez.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de Marcas de Escopo para essa entidade atualização de recursos.|
-|deployableContentDisplayName|Cadeia de caracteres|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
+|roleScopeTagIds|Coleção String|Lista de Marcas de Escopo para essa entidade atualização de recursos.|
+|deployableContentDisplayName|Cadeia de Caracteres|Nome de exibição amigável do conteúdo implantável do perfil de atualização de qualidade|
+|endOfSupportDate|DateTimeOffset|A última data com suporte para uma atualização de recursos|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -70,7 +71,8 @@ Veja a seguir uma representação JSON do recurso.
   "roleScopeTagIds": [
     "String"
   ],
-  "deployableContentDisplayName": "String"
+  "deployableContentDisplayName": "String",
+  "endOfSupportDate": "String (timestamp)"
 }
 ```
 

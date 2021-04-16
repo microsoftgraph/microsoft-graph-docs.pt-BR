@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso deviceCategory
 description: Essas categorias podem então ser aplicadas a um dispositivo no console do Intune Azure ou selecionadas por um usuário durante o registro de um dispositivo. Você pode filtrar relatórios e criar grupos de dispositivos dinâmicos do Azure Active Directory com base em categorias de dispositivo.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14ff0efe2532fd808e94c27c68777c4935212b01
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3671665c40fb141ddfebe231e3408a94449990eb
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49306895"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866668"
 ---
 # <a name="devicecategory-resource-type"></a>Tipo de recurso deviceCategory
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-As categorias de dispositivo fornecem uma maneira de organizar seus dispositivos. Usando categorias de dispositivos, os administradores da empresa podem definir categorias exclusivas que fazem sentido para sua empresa. Essas categorias podem então ser aplicadas a um dispositivo no console do Intune Azure ou selecionadas por um usuário durante o registro de um dispositivo. Você pode filtrar relatórios e criar grupos de dispositivos dinâmicos do Azure Active Directory com base em categorias de dispositivo.
+As categorias de dispositivo fornecem uma maneira de organizar seus dispositivos. Usando categorias de dispositivo, os administradores da empresa podem definir categorias exclusivas que fazem sentido para sua empresa. Essas categorias podem então ser aplicadas a um dispositivo no console do Intune Azure ou selecionadas por um usuário durante o registro de um dispositivo. Você pode filtrar relatórios e criar grupos de dispositivos dinâmicos do Azure Active Directory com base em categorias de dispositivo.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -34,10 +34,10 @@ As categorias de dispositivo fornecem uma maneira de organizar seus dispositivos
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Integração**|
-|displayName|String|Nome de exibição da categoria de dispositivo.|
-|description|String|Descrição opcional da categoria do dispositivo.|
+|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
+|description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
