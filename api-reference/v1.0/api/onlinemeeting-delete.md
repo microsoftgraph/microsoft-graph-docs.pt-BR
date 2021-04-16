@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 357d04c3d456dde08f666da0aa05a97c3f67c231
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: eee39ddcaa0122f4e628f06cc8f90bac0317ddab
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945211"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869873"
 ---
 # <a name="delete-onlinemeeting"></a>Excluir onlineMeeting
 
@@ -41,7 +41,7 @@ Para excluir o onlineMeeting especificado por meio da ID de reunião com a permi
 ```http
 DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
-> **Observação:**
+> [!NOTE]
 > - `userId`é a ID do objeto de um usuário no portal de gerenciamento [de usuários do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 

@@ -1,24 +1,24 @@
 ---
-title: 'Grupo: checkMemberObjects'
+title: 'group: checkMemberObjects'
 description: Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto de grupo especificado.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e6d2b4ee6f316d4c11b34940d3bbe9504f2ed67c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bd5b12d938b04108e67d99ab815668ac7f28b29d
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954337"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869719"
 ---
-# <a name="group-checkmemberobjects"></a>Grupo: checkMemberObjects
+# <a name="group-checkmemberobjects"></a>group: checkMemberObjects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifique se há associação em uma lista de grupos ou unidades administrativas para o grupo especificado. Este método é transitivo.
+Verifique se há associação em uma lista de grupos ou unidades administrativas para o grupo especificado. Esse método é transitivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Group.ReadWrite.All<br>E<br><ul><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</li></ul><br>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Group.Read.All, Group.ReadWrite.All<br>E<br><ul><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</ul></li><br>Directory.Read.All, Directory.ReadWrite.All |
+| Aplicativo                            | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|ids|Coleção de cadeias de caracteres| Uma coleção que contém as IDs de objeto dos grupos, funções de diretório, unidades administrativas ou IDs RoleTemplate de funções de diretório, para verificar a associação. Até 20 objetos podem ser especificados. |
+|ids|Coleção de cadeias de caracteres| Uma coleção que contém as IDs de objeto dos grupos, funções de diretório, unidades administrativas ou IDs de roleTemplate de funções de diretório, na qual verificar a associação. Até 20 objetos podem ser especificados. |
 
 ## <a name="response"></a>Resposta
 

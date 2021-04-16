@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 934a54b83b85c7096cc8b1a62f35a53fcfbbc169
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 42bc40f6dc1ec6f72996ade9b0a552bc94d0a69f
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773491"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870006"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -44,7 +44,7 @@ Para atualizar o onlineMeeting especificado pela ID de reunião com o token de a
 PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-> **Observações:**
+> [!NOTE]
 > - `userId`é a ID do objeto de um usuário no portal de gerenciamento [de usuários do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 
@@ -64,9 +64,9 @@ A tabela abaixo lista as propriedades que podem ser atualizadas. No corpo da sol
 |----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | startDateTime        | DateTime                                                     | O horário de início da reunião em UTC.                                                                                                                 |
 | endDateTime          | DateTime                                                     | A hora de término da reunião em UTC.                                                                                                                   |
-| assunto              | String                                                       | O assunto da reunião online.                                                                                                             |
+| assunto              | Cadeia de caracteres                                                       | O assunto da reunião online.                                                                                                             |
 | participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Os participantes associados à reunião online. Isso inclui o organizador e os participantes.                                            |
-| isEntryExitAnnounced | Booliano                                                      | Se os chamadores ingressarão ou sairão.                                                                                         |
+| isEntryExitAnnounced | Boolean                                                      | Se os chamadores ingressarão ou sairão.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Especifica quais participantes podem ignorar o lobby da reunião.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis são todos, organização, roleIsPresenter, organizador e unknownFutureValue. |
 

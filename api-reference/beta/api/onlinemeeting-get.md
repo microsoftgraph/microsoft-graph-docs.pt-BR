@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f930a0c60b228942781086b4ecae0a17b0e20b91
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ca2ef5d4dde7d6364ec4646721c1ebc1801565a7
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516014"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870104"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -25,7 +25,7 @@ Por exemplo, você pode:
 - Use o caminho para obter um relatório do participante `/attendeeReport` de um evento ao vivo, conforme mostrado no exemplo [4](#example-4-retrieve-the-attendee-report-of-a-live-event).
 - Use os caminhos e para obter as gravações de um `/recording` `/alternativeRecording` evento ao vivo, conforme mostrado no exemplo [5](#example-5-retrieve-the-recording-of-a-live-event).
 
->**Observações:** 
+> [!NOTE]
 >- Atualmente, os relatórios e gravações do participante estão disponíveis apenas para eventos ao vivo.
 >- Somente o organizador do evento pode acessar relatórios e gravações do participante.
 >- Os relatórios e gravações do participante só estarão disponíveis quando o evento ao vivo for concluído.
@@ -84,7 +84,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
 
->**Observações:**
+> [!NOTE]
 >- O caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 >- `userId`é a ID do objeto de um usuário no portal de gerenciamento [de usuários do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)

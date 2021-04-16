@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 255c7e02b601b05b54b80ed7dbb3bd15df8925d9
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 00564efd81650941559c4d3b01833d3d797c2d4c
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515587"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869726"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -20,7 +20,8 @@ Namespace: microsoft.graph
 
 Crie uma reunião online em nome de um usuário usando a ID de objeto (OID) no token de usuário (permissão delegada) ou solicite o caminho (permissão de aplicativo).
 
-> **Observação**: a reunião não é exibida no calendário do usuário.
+> [!NOTE]
+> A reunião não é exibida no calendário do usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,7 +49,8 @@ Solicitar quando usar um token de aplicativo:
 POST /users/{userId}/onlineMeetings
 ```
 
-> **Observação:** `userId` é a ID de objeto de um usuário no [portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Veja mais detalhes na [política](/graph/cloud-communication-online-meeting-application-access-policy) de acesso aos aplicativos.
+> [!NOTE]
+> `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Veja mais detalhes na [política](/graph/cloud-communication-online-meeting-application-access-policy) de acesso aos aplicativos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

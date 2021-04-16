@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 81ef5019ad98af32cd2a393b1f531ee6b5b0ba87
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 02466f23b1ffbb7e91cfffba6c5bf5748cdc1892
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515878"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870013"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
+| Delegada (conta corporativa ou de estudante)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                        |
 | Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
@@ -51,7 +51,7 @@ Para obter o onlineMeeting especificado usando **videoTeleconferenceId***:
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-> **Observação:**
+> [!NOTE]
 > - `userId`é a ID do objeto de um usuário no portal de gerenciamento [de usuários do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 > - **videoTeleconferenceId** é gerado para usuários licenciados do Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting.](../resources/onlinemeeting.md) Consulte a [ID da conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) para obter mais detalhes.

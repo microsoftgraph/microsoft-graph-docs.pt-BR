@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4f27a53030e1c01b3efb1967f9f0620033e36f28
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: df3cf26e98f3769bea4ceba632dccd24030494b0
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722388"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870062"
 ---
 # <a name="user-checkmemberobjects"></a>user: checkMemberObjects
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 Verifique se há associação em uma lista de funções de grupo ou diretório para o objeto de usuário especificado. Esse método é transitivo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br><br>Além disso:<br><br><ul><li>Se verificar a associação em grupos: Group.Read.All, Group.ReadWrite.All</li><li>Se verificar a associação em unidades administrativas: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>Se verificar se há associação em funções de diretório: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br>E:<ul><li>Se verificar a associação em grupos: Group.Read.All, Group.ReadWrite.All</li><li>Se verificar a associação em unidades administrativas: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>Se verificar se há associação em funções de diretório: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 320bafdae61848ceb2f3490ab688be3ddebe3069
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fe6d17b3da60904283066cbd893b5ed075389a5d
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945985"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51869740"
 ---
 # <a name="delete-onlinemeeting"></a>Excluir onlineMeeting
 
@@ -45,8 +45,7 @@ Solicitar quando usar um token de aplicativo:
 DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 ```
 
-> **Observação:**
->
+> [!NOTE]
 > - `userId`é a ID do objeto de um usuário no portal de gerenciamento [de usuários do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 

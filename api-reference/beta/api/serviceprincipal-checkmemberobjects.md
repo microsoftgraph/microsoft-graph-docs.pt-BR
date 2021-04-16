@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: checkMemberObjects'
-description: Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto de entidade de serviço especificado.
+description: Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto de princípio de serviço especificado.
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a0bf3389563f99b69b7e27651f85163e7f820748
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ebdbcbd782146fbe8a29dfeb0666a2cbb241e8a6
+ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135916"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51870090"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal: checkMemberObjects
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto [servicePrincipal](../resources/serviceprincipal.md) especificado. Esse método é transitivo.
+Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o [objeto servicePrincipal](../resources/serviceprincipal.md) especificado. Esse método é transitivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All|
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Directory.Read.All, Directory.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All|
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|ids|Coleção de cadeias de caracteres|Uma coleção que contém as IDs de objeto dos grupos, funções de diretório, unidades administrativas ou IDs de roleTemplate de funções de diretório, para verificar a associação. Até 20 objetos podem ser especificados.|
+|ids|Coleção de cadeias de caracteres|Uma coleção que contém as IDs de objeto dos grupos, funções de diretório, unidades administrativas ou IDs de roleTemplate de funções de diretório, na qual verificar a associação. Até 20 objetos podem ser especificados.|
 
 ## <a name="response"></a>Resposta
 

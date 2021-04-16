@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68cc244764c3675145ea2019678ddc61af873db8
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 344b8c710a89be0cd187df995852ce03c2ee638b
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51150875"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51868243"
 ---
 # <a name="update-devicemanagementconfigurationpolicy"></a>Atualizar deviceManagementConfigurationPolicy
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -38,6 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
+PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -55,15 +56,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave do documento de política. Gerado automaticamente.|
 |nome|Cadeia de caracteres|Nome da política|
-|descrição|Cadeia de caracteres|Descrição da política|
+|description|Cadeia de caracteres|Descrição da política|
 |plataformas|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Plataformas para essa política. Os valores possíveis são: `none`, `macOS`, `windows10X`, `windows10`.|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Tecnologias para essa política. Os valores possíveis são: `none`, `mdm`, `windows10XManagement`, `configManager`.|
 |createdDateTime|DateTimeOffset|Data e hora de criação de política. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da política. Essa propriedade é somente leitura.|
 |settingCount|Int32|Número de configurações. Essa propriedade é somente leitura.|
-|creationSource|Cadeia de caracteres|Fonte de criação de política|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|creationSource|Cadeia de Caracteres|Fonte de criação de política|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity.|
 |isAssigned|Boolean|Status da atribuição de política. Essa propriedade é somente leitura.|
+|templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Informações de referência do modelo|
 
 
 
@@ -77,7 +79,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
 Content-type: application/json
-Content-length: 346
+Content-length: 685
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -90,7 +92,14 @@ Content-length: 346
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "isAssigned": true
+  "isAssigned": true,
+  "templateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateId": "Template Id value",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Template Display Name value",
+    "templateDisplayVersion": "Template Display Version value"
+  }
 }
 ```
 
@@ -99,7 +108,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 518
+Content-Length: 857
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -115,7 +124,14 @@ Content-Length: 518
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "isAssigned": true
+  "isAssigned": true,
+  "templateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateId": "Template Id value",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Template Display Name value",
+    "templateDisplayVersion": "Template Display Version value"
+  }
 }
 ```
 
