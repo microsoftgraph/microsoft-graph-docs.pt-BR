@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7adf522284be5778c927c0104889bc42a7674737
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a479aff38b24105e80d3fc0c3f098299b9eeafb4
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771782"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765878"
 ---
 # <a name="update-printer"></a>Atualização da impressora
 Namespace: microsoft.graph
@@ -28,8 +28,8 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Printer.ReadWrite.All |
 
 >**Observação:** No momento, somente as impressoras que não têm dispositivo físico podem ser atualizadas usando permissões de aplicativo.
@@ -48,7 +48,7 @@ PATCH /print/printers/{printerId}
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
-|Content-Type|application/json. Obrigatório.|
+|Content-type|`application/json` ao usar permissões delegadas `application/ipp` ou ao usar permissões de `application/json` aplicativo. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -61,7 +61,7 @@ As propriedades a seguir podem ser atualizadas usando permissões delegadas.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|As configurações de impressão padrão da impressora.|
-|location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional da impressora.|
+|localização|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional da impressora.|
 |displayName|String|O nome da impressora.|
 
 ### <a name="application-permissions-and-json-payload"></a>Permissões de aplicativo e carga JSON
@@ -84,6 +84,11 @@ As propriedades a seguir podem ser atualizadas usando permissões de aplicativo.
 Com permissões de aplicativo, uma impressora também pode ser atualizada usando uma carga IPP (Internet Printing Protocol). Nesse caso, o corpo da solicitação contém um fluxo binário que representa o grupo Atributos da Impressora na [codificação IPP.](https://tools.ietf.org/html/rfc8010)
 
 O cliente DEVE fornecer um conjunto de atributos printer com um ou mais valores (incluindo valores fora de banda explicitamente permitidos), conforme definido em Atributos de Descrição da Impressora [RFC8011 seção 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) Atributos de Modelo de Trabalho ("xxx-default", "xxx-supported" e "xxx-ready"), Atributos de Descrição da Impressora da Seção [5.4](https://tools.ietf.org/html/rfc8011#section-5.4) e quaisquer extensões de atributo suportadas pela Impressora. Os valores de cada atributo Printer fornecido substituem os valores do atributo Printer correspondente no objeto Printer de destino. Para atributos que podem ter vários valores (1setOf), todos os valores fornecidos pelo cliente substituem todos os valores do atributo de objeto Printer correspondente.
+
+> **Observação:** Não passe atributos de operação no corpo da solicitação. O corpo da solicitação deve conter apenas atributos de impressora.
+
+
+> **Observação:** Para que as impressoras funcionem com uma plataforma específica, ela deve atender aos requisitos dessa plataforma. Por exemplo, no cliente windows, é esperado que a impressora especifique todos os atributos considerados obrigatórios de acordo com as especificações [MOPRIA.](https://mopria.org) Observe que as especificações MOPRIA estão disponíveis apenas para os membros pagos da MOPRIA.
 
 ## <a name="response"></a>Resposta
 

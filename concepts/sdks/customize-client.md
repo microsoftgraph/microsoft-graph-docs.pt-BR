@@ -3,12 +3,12 @@ title: Personalizar o cliente de serviço SDK do Microsoft Graph
 description: Fornece instruções sobre como alterar o comportamento padrão do cliente de serviço SDK do Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: a9b2c4b1d77206e814dfb558481243a3da0c16d4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e666a9e976455f640d29edf2d460523935e53d97
+ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953345"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51836854"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>Personalizar o cliente de serviço SDK do Microsoft Graph
 
@@ -118,7 +118,6 @@ final OkHttpClient httpClient = HttpClients.createDefault(authenticationProvider
 
 final GraphServiceClient graphServiceClient = GraphServiceClient
                 .builder()
-                .authenticationProvider(authenticationProvider)
                 .httpClient(httpClient)
                 .buildClient();
 ```

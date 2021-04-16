@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: f154ad9dbb305923f579547db9d3bbf3839b7577
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 16543beb4c38d973f298c0af14c353e1464bb0f0
+ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962004"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51836861"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -66,6 +66,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | addIns | Coleção [addIn](addin.md)| Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando. |
 | api | [apiApplication](apiapplication.md) | Especifica configurações para um aplicativo que implementa uma API Web. |
 | appId | String | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Azure AD. Não anulável. Somente leitura. |
+| applicationTemplateId | String | Identificador exclusivo do applicationTemplate. |
 | appRoles | Coleção [appRole](approle.md) | O conjunto de funções atribuídas ao aplicativo. Com as [atribuições de funções do aplicativo](approleassignment.md), essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço de outros aplicativos. Não anulável. |
 | createdDateTime | DateTimeOffset | A data e a hora que o aplicativo foi registrado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 | deletedDateTime | DateTimeOffset | A data e a hora que o aplicativo foi excluído. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
@@ -74,10 +75,12 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | id | String | O identificador exclusivo do aplicativo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | identifierUris | Coleção de cadeias de caracteres | Os URIs que identificam o aplicativo em seu locatário do Azure AD ou em um domínio personalizado verificado, se o aplicativo é multilocatário. Para saber mais, confira [Objetos de aplicativo e objetos de entidade de serviço](/azure/active-directory/develop/app-objects-and-service-principals). O operador `any` é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
 | informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo, como marketing, suporte, termos de serviço e URLs de política de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como adicionar termos de serviço e política de privacidade a aplicativos do Azure AD registrados](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
+| isDeviceOnlyAuthSupported | Booliano | Especifica se o aplicativo dá suporte à autenticação de dispositivo sem um usuário. O padrão é `false`.  |
 | isFallbackPublicClient | Booliano | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é `false`, o que significa que o tipo de aplicativo de fallback é cliente confidencial, como um aplicativo web. No entanto, há situações em que o Azure AD não consegue determinar o tipo de aplicativo cliente. Por exemplo, o fluxo [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) onde o aplicativo está configurado sem especificar um URI de redirecionamento. Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade.|
 | keyCredentials | [keyCredential](keycredential.md) collection | A coleção de credenciais chaves associada ao aplicativo. Não anulável. |
 | logo | Stream | O principal logotipo do aplicativo. Não anulável. |
 | notes | String | Anotações relevantes para o gerenciamento do aplicativo. |
+| oauth2RequiredPostResponse | Boolean | Especifica se, como parte das solicitações de token OAuth 2.0, o Azure AD permite solicitações POST, em vez de solicitações GET. O padrão é `false`, que especifica que somente as solicitações GET são permitidas. |
 | optionalClaims | [optionalClaims](optionalclaims.md) | Desenvolvedores de aplicativos podem configurar declarações opcionais em aplicativos do Azure AD para especificar quais declarações serão enviadas ao aplicativo pelo serviço de token de segurança da Microsoft. Para saber mais, confira [Como: Fornecer declarações opcionais ao aplicativo](/azure/active-directory/develop/active-directory-optional-claims).|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo. |
 | passwordCredentials | Coleção [passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associada ao aplicativo. Não anulável.|
@@ -85,6 +88,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | publisherDomain | String | O domínio do publicador verificado para o aplicativo. Somente leitura. Para obter mais informações, consulte [Como: configurar o domínio do publisher de um aplicativo](/azure/active-directory/develop/howto-configure-publisher-domain).|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection|Especifique os recursos que o aplicativo precisa acessar. Essa propriedade também especifica o conjunto de escopos de permissão OAuth e as funções de aplicativo necessários para cada um desses recursos. Essa configuração de acesso aos recursos necessários impulsiona a experiência de consentimento. Não anulável.|
 | signInAudience | Cadeia de caracteres | Especifique quais contas Microsoft têm suporte para o aplicativo atual. Os valores com suporte são: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount`, `PersonalMicrosoftAccount`. Confira mais na [tabela abaixo](#signinaudience-values). |
+| spa                     | [spaApplication](../resources/spaapplication.md)                            | Especifica as configurações de um aplicativo de página simples, incluindo URLs de saída e de redirecionamento de URIs para os códigos de autorização e tokens de acesso. |
 | categorias |Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulável.|
 | tokenEncryptionKeyId |Cadeia de caracteres|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD criptografa todos os tokens emitidos usando a chave para a qual essa propriedade aponta. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Especifica o fornecedor verificado para o aplicativo.|
@@ -126,6 +130,7 @@ Veja a seguir uma representação JSON do recurso.
   "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
   "api": {"@odata.type": "microsoft.graph.apiApplication"},
   "appId": "String",
+  "applicationTemplateId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
@@ -134,10 +139,12 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "identifierUris": ["String"],
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
+  "isDeviceOnlyAuthSupported": false,
   "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
   "notes": "String",
+  "oauth2RequiredPostResponse": false,
   "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
   "parentalControlSettings": {"@odata.type": "microsoft.graph.parentalControlSettings"},
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
@@ -145,6 +152,7 @@ Veja a seguir uma representação JSON do recurso.
   "publisherDomain": "String",
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
   "signInAudience": "String",
+  "spa": {"@odata.type": "microsoft.graph.spaApplication"},
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},

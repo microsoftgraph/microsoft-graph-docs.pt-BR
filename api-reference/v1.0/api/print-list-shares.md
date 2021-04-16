@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: dfabbed35d669fcf539c33b8ec64f39622f4c476
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8fa29dfc5d9a9bafc82ed791eb43c75549f69c31
+ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945068"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51766557"
 ---
 # <a name="list-shares"></a>Listar shares
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| PrinterShare.Read.All, PrinterShare.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
