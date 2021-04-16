@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3adc02714b7cc71a210e0279e04cec0fb6c894b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e17cd32c6fedf529cab0c840bea93e7d81c1a4cf
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135212"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51868152"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>Criar microsoftTunnelConfiguration
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,17 +55,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o micros
 |:---|:---|:---|
 |id|Cadeia de caracteres|Id do MicrosoftTunnelConfiguration|
 |displayName|Cadeia de caracteres|O nome de exibição do MicrosoftTunnelConfiguration|
-|descrição|Cadeia de caracteres|A descrição do MicrosoftTunnelConfiguration|
-|network|Cadeia de caracteres|A sub-rede que será usada para alocar endereço virtual para os clientes|
-|dnsServers|Coleção de cadeias de caracteres|Os servidores DNS que serão usados pelos clientes|
-|defaultDomainSuffix|Cadeia de caracteres|O apêndice Domínio Padrão que será usado pelos clientes|
-|routesInclude|Coleção de cadeias de caracteres|Os routs que serão roteados pelo servidor|
-|routesExclude|Coleção de cadeias de caracteres|Subconjunto das rotas que não serão roteadas pelo servidor|
-|splitDNS|Coleção de cadeias de caracteres|Os domínios que serão resolvidos usando os servidores dns fornecidos|
+|description|Cadeia de caracteres|A descrição do MicrosoftTunnelConfiguration|
+|network|Cadeia de Caracteres|A sub-rede que será usada para alocar endereço virtual para os clientes|
+|dnsServers|Coleção String|Os servidores DNS que serão usados pelos clientes|
+|defaultDomainSuffix|Cadeia de Caracteres|O apêndice Domínio Padrão que será usado pelos clientes|
+|routesInclude|Coleção String|Os routs que serão roteados pelo servidor|
+|routesExclude|Coleção String|Subconjunto das rotas que não serão roteadas pelo servidor|
+|splitDNS|Coleção String|Os domínios que serão resolvidos usando os servidores dns fornecidos|
 |listenPort|Int32|A porta que o TCP e o UPD escutarão no servidor|
 |advancedSettings|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Configurações adicionais que podem ser aplicadas ao servidor|
 |lastUpdateDateTime|DateTimeOffset|Quando o MicrosoftTunnelConfiguration foi atualizado pela última vez|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância entity.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância entity.|
 
 
 

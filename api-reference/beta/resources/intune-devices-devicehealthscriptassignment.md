@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6849c3d8adb7ff10a8322d83707af0aeb328ddd0
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 276104e49a12ff64fcbc585b3a5ce07570377397
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51612074"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867324"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>Tipo de recurso deviceHealthScriptAssignment
 
@@ -34,10 +34,9 @@ Contém propriedades usadas para atribuir um script de gerenciamento de disposit
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de atribuição de script de saúde do dispositivo. Essa propriedade é somente leitura.|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-devices-deviceandappmanagementassignmenttarget.md)|O grupo do Azure Active Directory para o qual estamos direcionando o script|
-|runRemediationScript|Booliano|Determinar se queremos executar somente script de detecção ou executar script de detecção e script de correção|
-|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Agenda de executar scripts para o grupo de destino|
+|id|Cadeia de caracteres|Chave da entidade de atribuição de script de saúde do dispositivo. Essa propriedade é somente leitura.|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo do Azure Active Directory para o qual estamos direcionando o script|
+|runRemediationScript|Boolean|Determinar se queremos executar somente script de detecção ou executar script de detecção e script de correção|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -60,13 +59,7 @@ Veja a seguir uma representação JSON do recurso.
     "deviceAndAppManagementAssignmentFilterType": "String",
     "collectionId": "String"
   },
-  "runRemediationScript": true,
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
-    "interval": 1024,
-    "useUtc": true,
-    "time": "String (time of day)"
-  }
+  "runRemediationScript": true
 }
 ```
 

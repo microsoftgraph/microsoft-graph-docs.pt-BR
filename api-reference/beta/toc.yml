@@ -1485,7 +1485,7 @@ items:
                     href: api/ediscovery-custodian-update.md
                   - name: Ativar
                     href: api/ediscovery-custodian-activate.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/ediscovery-custodian-release.md
               - name: Retenção legal
                 href: resources/ediscovery-legalhold.md
@@ -2697,39 +2697,6 @@ items:
                         href: api/intune-apps-mobilelobapp-list.md
                       - name: Obter
                         href: api/intune-apps-mobilelobapp-get.md
-                  - name: Status de check-in de cliente do Office
-                    href: resources/intune-cirrus-officeclientcheckinstatus.md
-                  - name: Configuração de Cliente do Office
-                    href: resources/intune-cirrus-officeclientconfiguration.md
-                    items:
-                      - name: Listar
-                        href: api/intune-cirrus-officeclientconfiguration-list.md
-                      - name: Obter
-                        href: api/intune-cirrus-officeclientconfiguration-get.md
-                      - name: atribuir ação
-                        href: api/intune-cirrus-officeclientconfiguration-assign.md
-                      - name: ação updatePriorities
-                        href: api/intune-cirrus-officeclientconfiguration-updatepriorities.md
-                  - name: Atribuição de configuração de cliente do Office
-                    href: resources/intune-cirrus-officeclientconfigurationassignment.md
-                    items:
-                      - name: Listar
-                        href: api/intune-cirrus-officeclientconfigurationassignment-list.md
-                      - name: Obter
-                        href: api/intune-cirrus-officeclientconfigurationassignment-get.md
-                      - name: Criar
-                        href: api/intune-cirrus-officeclientconfigurationassignment-create.md
-                      - name: Excluir
-                        href: api/intune-cirrus-officeclientconfigurationassignment-delete.md
-                      - name: Atualizar
-                        href: api/intune-cirrus-officeclientconfigurationassignment-update.md
-                  - name: Configuração do Office
-                    href: resources/intune-cirrus-officeconfiguration.md
-                    items: null
-                  - name: Destino de atribuição de configuração do Office
-                    href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
-                  - name: Destino de atribuição de grupo de configuração do Office
-                    href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
                   - name: ID do produto do Office
                     href: resources/intune-apps-officeproductid.md
                   - name: Aplicativo do pacote Office
@@ -2749,8 +2716,6 @@ items:
                     href: resources/intune-apps-officesuiteinstallprogressdisplaylevel.md
                   - name: Canal de atualização do Office
                     href: resources/intune-apps-officeupdatechannel.md
-                  - name: Resumo de check-in de usuário do Office
-                    href: resources/intune-cirrus-officeusercheckinsummary.md
                   - name: Detalhe do estado do aplicativo resultante
                     href: resources/intune-apps-resultantappstatedetail.md
                   - name: Certificado de assinatura de código da Symantec
@@ -2917,32 +2882,6 @@ items:
                         href: api/intune-apps-windowsmobilemsi-delete.md
                       - name: Atualizar
                         href: api/intune-apps-windowsmobilemsi-update.md
-                  - name: Configuração do cliente do Windows Office
-                    href: resources/intune-cirrus-windowsofficeclientconfiguration.md
-                    items:
-                      - name: Lista
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-list.md
-                      - name: Obter
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-get.md
-                      - name: Criar
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-create.md
-                      - name: Excluir
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
-                      - name: Atualizar
-                        href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
-                  - name: Configuração de segurança do cliente do Windows office
-                    href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
-                    items:
-                      - name: Lista
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md
-                      - name: Obter
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md
-                      - name: Criar
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-create.md
-                      - name: Excluir
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md
-                      - name: Atualizar
-                        href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-update.md
                   - name: Informações de pacote do Windows
                     href: resources/intune-apps-windowspackageinformation.md
                   - name: Windows Phone 8.1 AppX
@@ -5782,12 +5721,51 @@ items:
                     href: resources/intune-deviceconfig-omasettingstring.md
                   - name: Cadeia xml de configuração de OMA
                     href: resources/intune-deviceconfig-omasettingstringxml.md
+                  - name: Em carga criptografada prem
+                    href: resources/intune-raimportcerts-onpremencryptedpayload.md
+                    items:
+                      - name: Lista
+                        href: api/intune-raimportcerts-onpremencryptedpayload-list.md
+                      - name: Obter
+                        href: api/intune-raimportcerts-onpremencryptedpayload-get.md
+                      - name: Criar
+                        href: api/intune-raimportcerts-onpremencryptedpayload-create.md
+                      - name: Excluir
+                        href: api/intune-raimportcerts-onpremencryptedpayload-delete.md
+                      - name: Atualizar
+                        href: api/intune-raimportcerts-onpremencryptedpayload-update.md
                   - name: Intervalo de versão do sistema operacional
                     href: resources/intune-deviceconfig-operatingsystemversionrange.md
                   - name: Operador
                     href: resources/intune-deviceconfig-operator.md
                   - name: Grupo de segredo de encaminhamento perfeito
                     href: resources/intune-deviceconfig-perfectforwardsecrecygroup.md
+                  - name: Solicitação de rescriptografia Pfx
+                    href: resources/intune-raimportcerts-pfxrecryptionrequest.md
+                    items:
+                      - name: Lista
+                        href: api/intune-raimportcerts-pfxrecryptionrequest-list.md
+                      - name: Obter
+                        href: api/intune-raimportcerts-pfxrecryptionrequest-get.md
+                      - name: Criar
+                        href: api/intune-raimportcerts-pfxrecryptionrequest-create.md
+                      - name: Excluir
+                        href: api/intune-raimportcerts-pfxrecryptionrequest-delete.md
+                      - name: Atualizar
+                        href: api/intune-raimportcerts-pfxrecryptionrequest-update.md
+                  - name: Certificado de usuário Pfx
+                    href: resources/intune-raimportcerts-pfxusercertificate.md
+                    items:
+                      - name: Lista
+                        href: api/intune-raimportcerts-pfxusercertificate-list.md
+                      - name: Obter
+                        href: api/intune-raimportcerts-pfxusercertificate-get.md
+                      - name: Criar
+                        href: api/intune-raimportcerts-pfxusercertificate-create.md
+                      - name: Excluir
+                        href: api/intune-raimportcerts-pfxusercertificate-delete.md
+                      - name: Atualizar
+                        href: api/intune-raimportcerts-pfxusercertificate-update.md
                   - name: Tipo de ação Power
                     href: resources/intune-deviceconfig-poweractiontype.md
                   - name: Recursos pré-lançamento
@@ -6676,10 +6654,16 @@ items:
                   - name: Solicitação de conjunto de log do aplicativo
                     href: resources/intune-devices-applogcollectionrequest.md
                     items:
+                      - name: Listar
+                        href: api/intune-devices-applogcollectionrequest-list.md
                       - name: Obter
                         href: api/intune-devices-applogcollectionrequest-get.md
                       - name: Criar
                         href: api/intune-devices-applogcollectionrequest-create.md
+                      - name: Excluir
+                        href: api/intune-devices-applogcollectionrequest-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-applogcollectionrequest-update.md
                       - name: ação createDownloadUrl
                         href: api/intune-devices-applogcollectionrequest-createdownloadurl.md
                   - name: Algoritmo de descriptografia de log do aplicativo
@@ -6727,8 +6711,6 @@ items:
                     href: resources/intune-auditing-auditproperty.md
                   - name: Recurso de auditoria
                     href: resources/intune-auditing-auditresource.md
-                  - name: Estado registrado no Azure ad
-                    href: resources/intune-devices-azureadregisteredstate.md
                   - name: Expressões de condição de gerenciamento binário
                     href: resources/intune-fencing-binarymanagementconditionexpression.md
                   - name: Tipo de operador de expressão de condição de gerenciamento binário
@@ -7558,6 +7540,71 @@ items:
                         href: api/intune-devices-malwarestateforwindowsdevice-delete.md
                       - name: Atualizar
                         href: api/intune-devices-malwarestateforwindowsdevice-update.md
+                  - name: Dispositivo gerenciado
+                    href: resources/intune-devices-manageddevice.md
+                    items:
+                      - name: Obter
+                        href: api/intune-devices-manageddevice-get.md
+                      - name: Atualizar
+                        href: api/intune-devices-manageddevice-update.md
+                      - name: Ação executeAction
+                        href: api/intune-devices-manageddevice-executeaction.md
+                      - name: Ação enableLostMode
+                        href: api/intune-devices-manageddevice-enablelostmode.md
+                      - name: Ação playLostModeSound
+                        href: api/intune-devices-manageddevice-playlostmodesound.md
+                      - name: Ação setDeviceName
+                        href: api/intune-devices-manageddevice-setdevicename.md
+                      - name: Ação activateDeviceEsim
+                        href: api/intune-devices-manageddevice-activatedeviceesim.md
+                      - name: Ação rotateFileVaultKey
+                        href: api/intune-devices-manageddevice-rotatefilevaultkey.md
+                      - name: Ação createDeviceLogCollectionRequest
+                        href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
+                      - name: Ação retire
+                        href: api/intune-devices-manageddevice-retire.md
+                      - name: ação wipe
+                        href: api/intune-devices-manageddevice-wipe.md
+                      - name: Ação resetPasscode
+                        href: api/intune-devices-manageddevice-resetpasscode.md
+                      - name: Ação remoteLock
+                        href: api/intune-devices-manageddevice-remotelock.md
+                      - name: Ação requestRemoteAssistance
+                        href: api/intune-devices-manageddevice-requestremoteassistance.md
+                      - name: Ação disableLostMode
+                        href: api/intune-devices-manageddevice-disablelostmode.md
+                      - name: Ação locateDevice
+                        href: api/intune-devices-manageddevice-locatedevice.md
+                      - name: Ação bypassActivationLock
+                        href: api/intune-devices-manageddevice-bypassactivationlock.md
+                      - name: Ação rebootNow
+                        href: api/intune-devices-manageddevice-rebootnow.md
+                      - name: Ação shutDown
+                        href: api/intune-devices-manageddevice-shutdown.md
+                      - name: Ação recoverPasscode
+                        href: api/intune-devices-manageddevice-recoverpasscode.md
+                      - name: Ação cleanWindowsDevice
+                        href: api/intune-devices-manageddevice-cleanwindowsdevice.md
+                      - name: Ação logoutSharedAppleDeviceActiveUser
+                        href: api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md
+                      - name: Ação deleteUserFromSharedAppleDevice
+                        href: api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md
+                      - name: Ação syncDevice
+                        href: api/intune-devices-manageddevice-syncdevice.md
+                      - name: Ação windowsDefenderScan
+                        href: api/intune-devices-manageddevice-windowsdefenderscan.md
+                      - name: Ação windowsDefenderUpdateSignatures
+                        href: api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md
+                      - name: Ação updateWindowsDeviceAccount
+                        href: api/intune-devices-manageddevice-updatewindowsdeviceaccount.md
+                      - name: Ação revokeAppleVppLicenses
+                        href: api/intune-devices-manageddevice-revokeapplevpplicenses.md
+                      - name: Ação rotateBitLockerKeys
+                        href: api/intune-devices-manageddevice-rotatebitlockerkeys.md
+                      - name: ação sendCustomNotificationToCompanyPortal
+                        href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
+                      - name: Ação triggerConfigurationManagerAction
+                        href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
                   - name: Arquitetura de dispositivo gerenciado
                     href: resources/intune-devices-manageddevicearchitecture.md
                   - name: Configurações de limpeza do dispositivo gerenciado
@@ -7798,6 +7845,8 @@ items:
                         href: api/intune-deviceintent-securitybaselinetemplate-update.md
                   - name: Usuário de dispositivo Apple compartilhado
                     href: resources/intune-devices-sharedappledeviceuser.md
+                  - name: Tuple_2 de execução type_ i collection_1 de operação
+                    href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                   - name: Expressões de condição de gerenciamento unário
                     href: resources/intune-fencing-unarymanagementconditionexpression.md
                   - name: Tipo de operador de expressão de condição de gerenciamento unário
@@ -7934,6 +7983,19 @@ items:
                         href: api/intune-devices-userexperienceanalyticsdeviceperformance-update.md
                       - name: summarizeDevicePerformanceDevices
                         href: api/intune-devices-userexperienceanalyticsdeviceperformance-summarizedeviceperformancedevices.md
+                  - name: Pontuações do dispositivo de análise de experiência do usuário
+                    href: resources/intune-devices-userexperienceanalyticsdevicescores.md
+                    items:
+                      - name: Lista
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsdevicescores-update.md
                   - name: Histórico de inicialização do dispositivo de análise de experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md
                     items:
@@ -8113,8 +8175,34 @@ items:
                     href: resources/intune-devices-userexperienceanalyticssummarizedby.md
                   - name: Resumo de dispositivos Windows 10 de análise de experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticswindows10devicessummary.md
+                  - name: A análise de experiência do usuário funciona em qualquer lugar do dispositivo
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md
+                    items:
+                      - name: Lista
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-update.md
                   - name: Análise de experiência do usuário funciona em qualquer lugar resumo de dispositivos
                     href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md
+                  - name: A análise de experiência do usuário funciona de qualquer lugar métrica
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywheremetric.md
+                    items:
+                      - name: Lista
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
                   - name: Expressões de condição de gerenciamento variável
                     href: resources/intune-fencing-variablemanagementconditionexpression.md
                   - name: Estado de implantação do Windows autopilot
@@ -9038,29 +9126,6 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Excluir
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
-                  - name: Relatórios do gerenciamento de dispositivos
-                    href: resources/intune-shared-devicemanagementreports.md
-                    items:
-                      - name: Obter
-                        href: api/intune-reporting-devicemanagementreports-get.md
-                      - name: Atualizar
-                        href: api/intune-reporting-devicemanagementreports-update.md
-                      - name: ação getDeviceNonComplianceReport
-                        href: api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md
-                      - name: ação getPolicyNonComplianceReport
-                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md
-                      - name: ação getPolicyNonComplianceMetadata
-                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md
-                      - name: ação getPolicyNonComplianceSummaryReport
-                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md
-                      - name: Ação getSettingNonComplianceReport
-                        href: api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport.md
-                      - name: Ação getReportFilters
-                        href: api/intune-reporting-devicemanagementreports-getreportfilters.md
-                      - name: ação getHistoricalReport
-                        href: api/intune-reporting-devicemanagementreports-gethistoricalreport.md
-                      - name: ação getCachedReport
-                        href: api/intune-reporting-devicemanagementreports-getcachedreport.md
                   - name: Script de gerenciamento de dispositivo
                     href: resources/intune-shared-devicemanagementscript.md
                     items:
@@ -9080,8 +9145,6 @@ items:
                         href: api/intune-shared-devicemanagementscript-haspayloadlinks.md
                   - name: Tipo de plataforma do dispositivo
                     href: resources/intune-shared-deviceplatformtype.md
-                  - name: Tipo de dispositivo
-                    href: resources/intune-shared-devicetype.md
                   - name: Habilitação
                     href: resources/intune-shared-enablement.md
                   - name: Opções de disponibilidade de registro
@@ -9154,79 +9217,8 @@ items:
                     href: resources/intune-shared-macoslobappassignmentsettings.md
                   - name: Configurações de atribuição do aplicativo VPP do macOS
                     href: resources/intune-shared-macosvppappassignmentsettings.md
-                  - name: Dispositivo gerenciado
-                    href: resources/intune-shared-manageddevice.md
-                    items:
-                      - name: Listar
-                        href: api/intune-policyset-manageddevice-list.md
-                      - name: Obter
-                        href: api/intune-policyset-manageddevice-get.md
-                      - name: Criar
-                        href: api/intune-policyset-manageddevice-create.md
-                      - name: Excluir
-                        href: api/intune-policyset-manageddevice-delete.md
-                      - name: Atualizar
-                        href: api/intune-policyset-manageddevice-update.md
-                      - name: Ação executeAction
-                        href: api/intune-devices-manageddevice-executeaction.md
-                      - name: Ação enableLostMode
-                        href: api/intune-devices-manageddevice-enablelostmode.md
-                      - name: Ação playLostModeSound
-                        href: api/intune-devices-manageddevice-playlostmodesound.md
-                      - name: Ação setDeviceName
-                        href: api/intune-devices-manageddevice-setdevicename.md
-                      - name: Ação rotateFileVaultKey
-                        href: api/intune-devices-manageddevice-rotatefilevaultkey.md
-                      - name: Ação createDeviceLogCollectionRequest
-                        href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
-                      - name: Ação retire
-                        href: api/intune-devices-manageddevice-retire.md
-                      - name: ação wipe
-                        href: api/intune-devices-manageddevice-wipe.md
-                      - name: Ação resetPasscode
-                        href: api/intune-devices-manageddevice-resetpasscode.md
-                      - name: Ação remoteLock
-                        href: api/intune-devices-manageddevice-remotelock.md
-                      - name: Ação requestRemoteAssistance
-                        href: api/intune-devices-manageddevice-requestremoteassistance.md
-                      - name: Ação disableLostMode
-                        href: api/intune-devices-manageddevice-disablelostmode.md
-                      - name: Ação locateDevice
-                        href: api/intune-devices-manageddevice-locatedevice.md
-                      - name: Ação bypassActivationLock
-                        href: api/intune-devices-manageddevice-bypassactivationlock.md
-                      - name: Ação rebootNow
-                        href: api/intune-devices-manageddevice-rebootnow.md
-                      - name: Ação shutDown
-                        href: api/intune-devices-manageddevice-shutdown.md
-                      - name: Ação recoverPasscode
-                        href: api/intune-devices-manageddevice-recoverpasscode.md
-                      - name: Ação cleanWindowsDevice
-                        href: api/intune-devices-manageddevice-cleanwindowsdevice.md
-                      - name: Ação logoutSharedAppleDeviceActiveUser
-                        href: api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md
-                      - name: Ação deleteUserFromSharedAppleDevice
-                        href: api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md
-                      - name: Ação syncDevice
-                        href: api/intune-devices-manageddevice-syncdevice.md
-                      - name: Ação windowsDefenderScan
-                        href: api/intune-devices-manageddevice-windowsdefenderscan.md
-                      - name: Ação windowsDefenderUpdateSignatures
-                        href: api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md
-                      - name: Ação updateWindowsDeviceAccount
-                        href: api/intune-devices-manageddevice-updatewindowsdeviceaccount.md
-                      - name: Ação revokeAppleVppLicenses
-                        href: api/intune-devices-manageddevice-revokeapplevpplicenses.md
-                      - name: Ação rotateBitLockerKeys
-                        href: api/intune-devices-manageddevice-rotatebitlockerkeys.md
-                      - name: ação sendCustomNotificationToCompanyPortal
-                        href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
-                      - name: Ação triggerConfigurationManagerAction
-                        href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
                   - name: Tipo de proprietário do dispositivo gerenciado
                     href: resources/intune-shared-manageddeviceownertype.md
-                  - name: Tipo de agente de gerenciamento
-                    href: resources/intune-shared-managementagenttype.md
                   - name: Política de proteção de informações do Windows MDM
                     href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
                     items:

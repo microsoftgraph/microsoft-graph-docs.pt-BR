@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67fcf5574b3cb4481286ecc7b4448018d64e0f44
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8729dd6251f9dbaf062fbfee3d024de265565020
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472024"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867452"
 ---
 # <a name="omasettingbase64-resource-type"></a>Tipo de recurso omaSettingBase64
 
@@ -31,8 +31,9 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|Cadeia de caracteres|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|isEncrypted|Boolean|Indica se o campo valor é criptografado. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|String|Nome do arquivo associado à propriedade Value (*.cer \| *.crt \| *.p7b \| *.bin).|
+|secretReferenceValueId|Cadeia de Caracteres|ReferenceId para procurar segredo para descriptografia. Essa propriedade é somente leitura. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|isEncrypted|Boolean|Indica se o campo valor é criptografado. Essa propriedade é somente leitura. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|fileName|Cadeia de caracteres|Nome de arquivo associado com a propriedade do valor (*.cer | *.crt | *.p7b | *.bin).|
 |value|Cadeia de caracteres|Valor. (Cadeia de caracteres codificada em Base64)|
 
 ## <a name="relationships"></a>Relações
@@ -51,6 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
+  "secretReferenceValueId": "String",
   "isEncrypted": true,
   "fileName": "String",
   "value": "String"

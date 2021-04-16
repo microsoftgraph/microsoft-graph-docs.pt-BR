@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 183f5aa3557d11bf4d4acea443fdf4a65f351cdc
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8866af41ccd58366ab735b9b1ab2732bdfbd8c9b
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51130347"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51867249"
 ---
 # <a name="list-androidforworkcustomconfigurations"></a>Listar androidForWorkCustomConfigurations
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1645
+Content-Length: 1717
 
 {
   "value": [
@@ -109,6 +109,7 @@ Content-Length: 1645
           "displayName": "Display Name value",
           "description": "Description value",
           "omaUri": "Oma Uri value",
+          "secretReferenceValueId": "Secret Reference Value Id value",
           "isEncrypted": true
         }
       ]

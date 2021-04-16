@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af504a01a4a32e739bdc2faff823fc6192d5c8bd
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3b7cf68452f5b1c2a0b6d8b4df3a06554e4faae7
+ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134358"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51866934"
 ---
 # <a name="create-windowsfeatureupdatecatalogitem"></a>Criar windowsFeatureUpdateCatalogItem
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,6 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o window
 |id|Cadeia de caracteres|A ID do item de catálogo. Herdado [do windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |displayName|Cadeia de caracteres|O nome de exibição do item de catálogo. Herdado [do windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|A data em que o item de catálogo foi lançado Herdado de [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|endOfSupportDate|DateTimeOffset|A última data com suporte para um item de catálogo Herdado de [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |versão|String|A versão de atualização de recursos|
 
 
@@ -70,12 +71,13 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems
 Content-type: application/json
-Content-length: 203
+Content-length: 263
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateCatalogItem",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "version": "Version value"
 }
 ```
@@ -85,13 +87,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 252
+Content-Length: 312
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateCatalogItem",
   "id": "cbd85729-5729-cbd8-2957-d8cb2957d8cb",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "version": "Version value"
 }
 ```
