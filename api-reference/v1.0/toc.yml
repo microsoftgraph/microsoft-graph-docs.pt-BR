@@ -193,11 +193,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -431,7 +431,7 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Obter chat para o usuário
                 href: api/chat-get.md
-          - name: Tarefas To do
+          - name: Tarefas pendentes
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -445,7 +445,7 @@ items:
                 href: api/todo-list-lists.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Group
             href: resources/group.md
@@ -643,7 +643,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1096,7 +1096,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1207,7 +1207,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -3779,7 +3779,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4054,9 +4054,17 @@ items:
                         href: api/subscribedsku-get.md
           - name: Identidade e entrada
             items:
+              - name: Política de fluxos de autenticação
+                items:
+                  - name: Política de fluxos de autenticação
+                    href: resources/authenticationflowspolicy.md
+                  - name: Obter
+                    href: api/authenticationflowspolicy-get.md
+                  - name: Atualizar
+                    href: api/authenticationflowspolicy-update.md
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -4089,7 +4097,7 @@ items:
                         href: api/windowshelloforbusinessauthenticationmethod-delete.md
               - name: Política de método de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethodspolicies-overview.md
                   - name: Política FIDO2
                     href: resources/fido2authenticationmethodconfiguration.md
@@ -4243,6 +4251,8 @@ items:
                     href: api/identityprovider-update.md
                   - name: Excluir o provedor de identidade
                     href: api/identityprovider-delete.md
+                  - name: Listar os tipos de provedor disponíveis
+                    href: api/identityprovider-list-availableprovidertypes.md
               - name: Gerenciador de convites
                 href: resources/invitation.md
                 items:
@@ -4374,6 +4384,94 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
                       - name: Atualizar
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
+              - name: Fluxos de usuários
+                items:
+                  - name: Fluxos de usuário de assinatura de autoatend
+                    items:
+                      - name: Autoatendindo inscrever o fluxo de usuários
+                        href: resources/b2xidentityuserflow.md
+                      - name: Listar
+                        href: api/identitycontainer-list-b2xuserflows.md
+                      - name: Criar
+                        href: api/identitycontainer-post-b2xuserflows.md
+                      - name: Obter
+                        href: api/b2xidentityuserflow-get.md
+                      - name: Excluir
+                        href: api/b2xidentityuserflow-delete.md
+                      - name: Listar os provedores de identidade
+                        href: api/b2xidentityuserflow-list-identityproviders.md
+                      - name: Adicionar provedor de identidade
+                        href: api/b2xidentityuserflow-post-identityproviders.md
+                      - name: Remover provedor de identidade
+                        href: api/b2xidentityuserflow-delete-identityproviders.md
+                      - name: Listar as atribuições de atributo de usuário
+                        href: api/b2xidentityuserflow-list-userattributeassignments.md
+                      - name: Criar uma tarefa de atributo de usuário
+                        href: api/b2xidentityuserflow-post-userattributeassignments.md
+                      - name: Idiomas da lista
+                        href: api/b2xidentityuserflow-list-languages.md
+                      - name: Obter configuração de conectores de API
+                        href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+                      - name: Configurar um conector de API
+                        href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
+                  - name: Atributos de fluxo do usuário
+                    items:
+                      - name: Atributo de fluxo do usuário
+                        href: resources/identityuserflowattribute.md
+                      - name: Listar
+                        href: api/identityuserflowattribute-list.md
+                      - name: Criar
+                        href: api/identityuserflowattribute-post.md
+                      - name: Obter
+                        href: api/identityuserflowattribute-get.md
+                      - name: Atualizar
+                        href: api/identityuserflowattribute-update.md
+                      - name: Excluir
+                        href: api/identityuserflowattribute-delete.md
+                  - name: Atribuição de atributo de fluxo de usuário
+                    items:
+                      - name: Atribuição de atributo de fluxo de usuário
+                        href: resources/identityuserflowattributeassignment.md
+                      - name: Obter
+                        href: api/identityuserflowattributeassignment-get.md
+                      - name: Atualizar
+                        href: api/identityuserflowattributeassignment-update.md
+                      - name: Excluir
+                        href: api/identityuserflowattributeassignment-delete.md
+                  - name: Configuração do idioma de fluxo do usuário
+                    items:
+                      - name: Configuração do idioma de fluxo do usuário
+                        href: resources/userflowlanguageconfiguration.md
+                      - name: Obter
+                        href: api/userflowlanguageconfiguration-get.md
+                      - name: Listar páginas padrão
+                        href: api/userflowlanguageconfiguration-list-defaultpages.md
+                      - name: Lista substitui páginas
+                        href: api/userflowlanguageconfiguration-list-overridespages.md
+                      - name: Página de idioma de fluxo de usuário
+                        href: resources/userflowlanguagepage.md
+                      - name: Obter
+                        href: api/userflowlanguagepage-get.md
+                      - name: Atualizar
+                        href: api/userflowlanguagepage-put.md
+                      - name: Excluir
+                        href: api/userflowlanguagepage-delete.md
+                  - name: Conectores de API
+                    items:
+                      - name: Conector de API
+                        href: resources/identityapiconnector.md
+                      - name: Listar
+                        href: api/identityapiconnector-list.md
+                      - name: Criar
+                        href: api/identityapiconnector-create.md
+                      - name: Obter
+                        href: api/identityapiconnector-get.md
+                      - name: Atualizar
+                        href: api/identityapiconnector-update.md
+                      - name: Carregar um certificado de cliente
+                        href: api/identityapiconnector-uploadclientcertificate.md
+                      - name: Excluir
+                        href: api/identityapiconnector-delete.md
           - name: Governança
             items:
               - name: Solicitações de consentimento
@@ -4571,7 +4669,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4680,9 +4778,9 @@ items:
             items:
               - name: Obter recurso
                 href: api/resource-get.md
-      - name: Inteligência de pessoas e local de trabalho
+      - name: Inteligência de pessoas e no local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4772,7 +4870,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4794,7 +4892,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -4812,7 +4910,7 @@ items:
                     href: api/signin-get.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -5015,7 +5113,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -5041,7 +5139,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -5080,7 +5178,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -5099,7 +5197,7 @@ items:
                 href: api/site-unfollow.md
               - name: Listar sites seguidos
                 href: api/sites-list-followed.md
-              - name: Permissions
+              - name: Permissões
                 href: resources/permission.md
                 items:
                   - name: Obter permissão de site
@@ -5139,7 +5237,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -5393,7 +5491,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Catálogo de aplicativos
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -5405,7 +5503,7 @@ items:
                 href: api/teamsapp-update.md
               - name: Remover aplicativo do catálogo
                 href: api/teamsapp-delete.md
-          - name: Aplicativo
+          - name: Instalação do aplicativo
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -5453,7 +5551,7 @@ items:
                 href: api/chat-sendactivitynotification.md
               - name: Enviar notificação para o usuário na equipe
                 href: api/team-sendactivitynotification.md
-              - name: Enviar notificação para o usuário
+              - name: Enviar notificação ao usuário
                 href: api/userteamwork-sendactivitynotification.md
           - name: Tab
             href: resources/teamstab.md
@@ -5673,7 +5771,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md

@@ -1602,7 +1602,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-      - name: Reserva de clientes (visualização)
+      - name: Reserva de clientes (prévia)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Visão Geral
@@ -11749,7 +11749,7 @@ items:
             items:
               - name: Criar e enviar uma notificação
                 href: api/user-post-notifications.md
-      - name: Inteligência de pessoas e local de trabalho
+      - name: Inteligência de pessoas e no local de trabalho
         items:
           - name: Visão Geral
             href: resources/social-overview.md
@@ -11851,7 +11851,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Excluir
                     href: api/educationalactivity-delete.md
-              - name: Endereço de email
+              - name: Email
                 items:
                   - name: Email do item
                     href: resources/itememail.md
@@ -13176,7 +13176,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Catálogo de aplicativos
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -13188,7 +13188,14 @@ items:
                 href: api/teamsapp-update.md
               - name: Remover aplicativo do catálogo
                 href: api/teamsapp-delete.md
-          - name: Aplicativo
+              - name: ícone de aplicativo
+                href: resources/teamsappicon.md
+                items:
+                  - name: Obter ícone
+                    href: api/teamsappicon-get.md
+                  - name: Obter conteúdo hospedado
+                    href: api/teamworkhostedcontent-get.md
+          - name: Instalação do aplicativo
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
