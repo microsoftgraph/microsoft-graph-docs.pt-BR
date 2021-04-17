@@ -5,26 +5,22 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: ca8930a5cb11edb1cf7345464666478cfc01bcda
+ms.openlocfilehash: af3ec2a762fc0252da929d863917ba6cd274ba95
 ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882597"
+ms.locfileid: "51882783"
 ---
 # <a name="identityuserflowattribute-resource-type"></a>tipo de recurso identityUserFlowAttribute
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Representa os atributos de fluxo de usuário em um locatário do Azure Active Directory (Azure AD).
 
-Representa os atributos de fluxo de usuário em um locatário do Azure Active Directory (Azure AD) e em um locatário do Azure AD B2C.
+Configurar os atributos de fluxo de usuário no seu locatário do Azure AD permite que você colete informações sobre um usuário durante a inscrição. Você pode escolher coletar um conjunto interno de atributos. Por exemplo, nome, sobrenome, cidade e CEP. Você também pode configurar atributos de fluxo de usuário personalizado para coletar informações de um usuário que não está integrado ao diretório. Os atributos de fluxo de usuário personalizado são uma abstração das [extensões de esquema do Azure Active Directory](/azure/active-directory/develop/active-directory-schema-extensions).
 
-Configurar os atributos de fluxo de usuário no seu Azure AD ou no Azure AD B2C permite que você colete informações sobre um usuário durante a inscrição. Você pode optar por coletar um conjunto de atributos interno. Por exemplo, o nome, o sobrenome, a cidade e o CEP. Você também pode configurar atributos de fluxo de usuário personalizado para coletar informações de um usuário que não está integrado ao diretório. Os atributos de fluxo de usuário personalizado são uma abstração das [extensões de esquema do Azure Active Directory](/azure/active-directory/develop/active-directory-schema-extensions).
-
-[IdentityBuiltInUserFlowAttributes](../resources/identitybuiltinuserflowattribute.md) e [identityCustomUserFlowAttributes](../resources/identitycustomuserflowattribute.md) herdam desse tipo de base.
-
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
