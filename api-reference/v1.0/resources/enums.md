@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: ebb237ec12d7f5526133e96d25652f5191d0fa23
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f2eeed42a528ea59a2edd1ac0d117bb82a3b2777
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473784"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882233"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -722,7 +722,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -1135,7 +1135,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -1358,6 +1358,49 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |fit|
 |nenhuma|
 |unknownFutureValue|
+
+### <a name="userflowtype-values"></a>valores userFlowType
+
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwner
+| unknownFutureValue
+
+### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType values
+
+| Member                |
+|:----------------------|
+| cadeia de caracteres                |
+| booliano               |
+| int64                 |
+| stringCollection      |
+| dateTime              |
+| unknownFutureValue    |
+
+### <a name="identityuserflowattributetype-values"></a>identityUserFlowAttributeType values
+
+| Member                |
+|:----------------------|
+| builtIn               |
+| custom                |
+| obrigatório              |
+| unknownFutureValue    |
+
+### <a name="identityuserflowattributeinputtype-values"></a>identityUserFlowAttributeInputType values
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
 
 ### <a name="teamworkactivitytopicsource-values"></a>valores de teamworkActivityTopicSource 
 

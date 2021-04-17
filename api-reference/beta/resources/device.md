@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e4bdbc361de50a4d261596c6b7b4f0c070f2a299
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 626d72434194f89842b394ac8b6ac51f5b1ab492
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957034"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882212"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -86,11 +86,13 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+| comandos | [coleção command](command.md) | Conjunto de comandos enviados para este dispositivo.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
+|memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos que esse dispositivo é membro. Somente leitura. Anulável.|
 |registeredOwners|Coleção [directoryObject](directoryobject.md)| O usuário que associou o dispositivo na nuvem ou registrou seu dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário. Somente leitura. Anulável.|
 |registeredUsers|Coleção [directoryObject](directoryobject.md)| Coleção de usuários registrados do dispositivo. Para dispositivos associados em nuvem e dispositivos pessoais registrados, os usuários registrados são definidos para o mesmo valor que proprietários registrados no momento do registro. Somente leitura. Anulável.|
-| comandos | [coleção command](command.md) | Conjunto de comandos enviados para este dispositivo|
-|usageRight|Coleção [usageRight](usageright.md)|Representa os direitos de uso que um dispositivo recebeu. |
+|transitiveMemberOf |Coleção [directoryObject](directoryobject.md)| Grupos dos que esse dispositivo é membro. Esta operação é transitiva. |
+|usageRights|Coleção [usageRight](usageright.md)|Representa os direitos de uso que um dispositivo recebeu. |
 
 ## <a name="json-representation"></a>Representação JSON
 

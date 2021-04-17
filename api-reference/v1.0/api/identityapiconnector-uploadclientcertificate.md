@@ -1,0 +1,128 @@
+---
+title: 'identityApiConnector: uploadClientCertificate'
+description: Carregue uma chave de formato PKCS 12 (PFX) para uma configuração de autenticação de conectores de API.
+localization_priority: Normal
+author: nickgmicrosoft
+ms.prod: identity-and-sign-in
+doc_type: apiPageType
+ms.openlocfilehash: a80f66828bcb7916d11cc665f14ed50d881c6b9a
+ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51882756"
+---
+# <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector: uploadClientCertificate
+
+Namespace: microsoft.graph
+
+Carregue uma chave de formato PKCS 12 (.pfx) para a configuração de autenticação de um conector de API. A entrada é um valor codificado de base 64 do conteúdo do certificado PKCS 12. Este método retorna uma [apiConnector](../resources/identityApiConnector.md).
+
+## <a name="permissions"></a>Permissões
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.  |
+| Aplicativo                            | APIConnectors.ReadWrite.All |
+
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
+
+* Administrador global
+* Administrador de Fluxo de Usuário de Identidade Externa
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /identity/apiconnectors/{id}/uploadClientCertificate
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome          | Descrição   |
+|:--------------|:--------------|
+| Autorização | {token} de portador. Obrigatório. |
+| Content-type  | application/json. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|pkcs12Value|Cadeia de caracteres| Este é o campo para enviar o conteúdo pfx. O valor deve ser uma versão codificada de base 64 do conteúdo real do certificado. Obrigatório.|
+|password|String| Essa é a senha do arquivo pfx. Obrigatório. Se nenhuma senha for usada, ainda deverá fornecer um valor `""` de .|
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um código de resposta e o `200 OK` [apiConnector](../resources/identityApiConnector.md) cujo `authenticationConfiguration` contém as informações públicas do certificado do cliente.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "identityapiconnector_uploadclientcertificate"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/identity/apiconnectors/{id}/uploadClientCertificate
+Content-type: application/json
+
+{
+    "pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
+    "password": "<password>"
+}
+```
+
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** `authenticationConfiguration` na resposta é do tipo [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md) porque isso representa as informações públicas dos certificados carregados.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityApiConnector"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/apiConnectors/$entity",
+    "id": "guid",
+    "displayName": "My API connector",
+    "targetUrl": "https://api.contoso.com/endpoint",
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
+        "certificateList": [
+            {
+                "thumbprint": "0EB255CC895477798BA418B378255204304897AD",
+                "notAfter": 1666350522,
+                "notBefore": 1508670522,
+                "isActive": true
+            }
+        ]
+    }
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed982019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "identityApiConnector: uploadClientCertificate",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
