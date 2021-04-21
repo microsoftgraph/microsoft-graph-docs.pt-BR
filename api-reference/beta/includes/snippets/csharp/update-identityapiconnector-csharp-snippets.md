@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 0f3d3ebb482b39074b644177fea19ed5c8cfd8d2
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 0a264ef5e3c61dec639f93e7b2fd01a8e66a78e8
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50786604"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51922616"
 ---
 ```csharp
 
@@ -13,12 +13,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var identityApiConnector = new IdentityApiConnector
 {
-    DisplayName = "New Test API",
-    TargetUrl = "https://otherapi.com/api/endpoint",
-    AuthenticationConfiguration = new BasicAuthentication
+    AuthenticationConfiguration = new Pkcs12Certificate
     {
-        Username = "<NEW_USERNAME>",
-        Password = "<NEW_PASSWORD>"
+        Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
+        Password = "secret"
     }
 };
 
