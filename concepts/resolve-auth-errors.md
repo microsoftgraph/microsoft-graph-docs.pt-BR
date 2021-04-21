@@ -4,12 +4,12 @@ description: Descubra como solucionar os erros de autorização do Microsoft Gra
 author: davidmu1
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: 13e815b72157da2fe5d8db8114a3dac436b40026
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: ecc8929c0671cbafed4baa5fc242a9f8515c7652
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760936"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921676"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>Resolver erros de autorização do Microsoft Graph
 
@@ -22,7 +22,7 @@ Erros de autorização podem ocorrer como resultado de vários problemas diferen
 
 ## <a name="steps-to-resolve-common-errors"></a>Etapas para resolver erros comuns
 
-Para resolver erros de autorização comuns, experimente as etapas descritas para o erro que mais se aproxima do erro que está ocorrendo. Pode haver mais de um erro. Você também pode verificar as respostas já disponíveis no Microsoft Q&A para [401 erros](https://docs.microsoft.com/answers/search.html?c=&includeChildren=&f=&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user&redirect=search%2Fsearch&sort=relevance&q=%5Bmicrosoft-graph%5D%20401%20) e [403 erros](https://docs.microsoft.com/answers/search.html?c=&includeChildren=&f=&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user&redirect=search%2Fsearch&sort=relevance&q=%5Bmicrosoft-graph%5D%20403). Se você não consegue encontrar uma solução para o seu problema, [faça uma nova pergunta no Microsoft Q&A](https://aka.ms/askgraph) e marcar com *microsoft-graph**.
+Para resolver erros de autorização comuns, experimente as etapas descritas para o erro que mais se aproxima do erro que está ocorrendo. Pode haver mais de um erro. Você também pode verificar as respostas já disponíveis no Microsoft Q&A para [401 erros](/answers/search.html?c=&f=&includeChildren=&q=%5bmicrosoft-graph%5d+401+&redirect=search%2fsearch&sort=relevance&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user) e [403 erros](/answers/search.html?c=&f=&includeChildren=&q=%5bmicrosoft-graph%5d+403&redirect=search%2fsearch&sort=relevance&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user). Se você não consegue encontrar uma solução para o seu problema, [faça uma nova pergunta no Microsoft Q&A](/answers/products/m365#microsoft-graph) e marcar com *microsoft-graph**.
 
 **Erro 401 Não autorizado: seu token é válido?** <br>
 

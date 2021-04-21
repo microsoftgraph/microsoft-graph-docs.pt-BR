@@ -4,12 +4,12 @@ description: Você pode usar os serviços conectados no Visual Studio para confi
 localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
-ms.openlocfilehash: 7b93a0245c34b67d3975d0b568df5defd292b72c
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 95fbe544edff9543d694f5fa024929fd7e241160
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472850"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921662"
 ---
 # <a name="call-microsoft-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Como chamar os serviços do Microsoft 365 no Visual Studio 2017 com a API do Microsoft Graph
 
@@ -94,4 +94,4 @@ O exemplo inicial inclui os seguintes arquivos:
 
 ## <a name="need-help"></a>Precisa de ajuda?
 
-Se precisar de ajuda, poste suas perguntas no [Microsoft Q&A](https://aka.ms/askgraph). Marque sua postagem com {microsoft-graph-identity}.
+Se precisar de ajuda, poste suas perguntas no [Microsoft Q&A](/answers/products/m365#microsoft-graph). Marque sua postagem com {microsoft-graph-identity}.
