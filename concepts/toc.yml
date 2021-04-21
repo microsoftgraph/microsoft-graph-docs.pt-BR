@@ -225,6 +225,14 @@ items:
             items:
               - name: Gerenciar acesso aos recursos
                 href: tutorial-access-package-api.md
+              - name: Analisar o acesso aos seus grupos
+                items:
+                  - name: Visão geral da API de análises de acesso
+                    href: accessreviews-overview.md
+                  - name: Analisar o acesso a um grupo de segurança
+                    href: tutorial-accessreviews-securitygroup.md
+                  - name: Analisar o acesso a um grupo do Microsoft 365
+                    href: tutorial-accessreviews-M365group.md
       - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
