@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: effe614c907d734b274e93a6994277b9952c7f35
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f4ef1486317bcff023629b4c16f30d9b878d2c21
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473287"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920436"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -42,25 +42,25 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 | **Tipo de alteração** | **Versão**   | **Descrição**                                                                                              |
 | :-------------- | :------------ | :---------------------------------------                                                                     |
-| Adição        | beta          | Adicionada a opção **participantCapacity** para [responder](https://docs.microsoft.com/en-us/graph/api/call-answer?view=graph-rest-beta) à operação.|
-| Adição        | beta          | Adicionado o tipo de recurso [participantJoiningNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-beta).|
-| Adição        | beta          | Adicionado o tipo de recurso [participantLeftNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-beta).|
-| Adição        | beta          | Adicionado o tipo de recurso [participantJoiningResponse](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-beta).|
-| Adição        | beta          | Adicionado o tipo de recurso [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-beta).|
-| Adição        | beta          | Adicionado o tipo de recurso [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta).|
-| Adição        | beta          | Adicionado o tipo de recurso [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta).|
+| Adição        | beta          | Adicionada a opção **participantCapacity** para [responder](/graph/api/call-answer?view=graph-rest-beta) à operação.|
+| Adição        | beta          | Adicionado o tipo de recurso [participantJoiningNotification](/graph/api/resources/participantJoiningNotification?view=graph-rest-beta).|
+| Adição        | beta          | Adicionado o tipo de recurso [participantLeftNotification](/graph/api/resources/participantLeftNotification?view=graph-rest-beta).|
+| Adição        | beta          | Adicionado o tipo de recurso [participantJoiningResponse](/graph/api/resources/participantJoiningResponse?view=graph-rest-beta).|
+| Adição        | beta          | Adicionado o tipo de recurso [acceptJoinResponse](/graph/api/resources/acceptJoinResponse?view=graph-rest-beta).|
+| Adição        | beta          | Adicionado o tipo de recurso [rejectJoinResponse](/graph/api/resources/rejectJoinResponse?view=graph-rest-beta).|
+| Adição        | beta          | Adicionado o tipo de recurso [inviteNewBotResponse](/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta).|
 
 ### <a name="tasks-and-plans"></a>Tarefas e planos
 
 | **Tipo de alteração** | **Versão** | **Descrição** |
 |:---|:---|:---|
-|Adição|beta|Adicionada a relação **rosterPlans** ao recurso [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta)|
-|Adição|beta|Adicionada a relação **rosters** ao recurso [planner](https://docs.microsoft.com/en-us/graph/api/resources/planner?view=graph-rest-beta)|
-|Adição|beta|Adicionada a propriedade **isCreationContext** ao recurso [plannerPlanContext](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContext?view=graph-rest-beta)|
-|Adição|beta|Adicionada a propriedade **customLinkText** ao recurso [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta)|
-|Adição|beta|Adicionada a propriedade **displayLinkType** ao recurso [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta)|
-|Adição|beta|Adicionado o tipo de recurso [plannerRoster](https://docs.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta)|
-|Adição|beta|Adicionado o tipo de recurso [plannerRosterMember](https://docs.microsoft.com/en-us/graph/api/resources/plannerRosterMember?view=graph-rest-beta)|
+|Adição|beta|Adicionada a relação **rosterPlans** ao recurso [plannerUser](/graph/api/resources/plannerUser?view=graph-rest-beta)|
+|Adição|beta|Adicionada a relação **rosters** ao recurso [planner](/graph/api/resources/planner?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **isCreationContext** ao recurso [plannerPlanContext](/graph/api/resources/plannerPlanContext?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **customLinkText** ao recurso [plannerPlanContextDetails](/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **displayLinkType** ao recurso [plannerPlanContextDetails](/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta)|
+|Adição|beta|Adicionado o tipo de recurso [plannerRoster](/graph/api/resources/plannerRoster?view=graph-rest-beta)|
+|Adição|beta|Adicionado o tipo de recurso [plannerRosterMember](/graph/api/resources/plannerRosterMember?view=graph-rest-beta)|
 |Adição|beta|Adicionado o membro `roster` à enumeração **plannerContainerType**|
 |Adição|beta|Adicionado o tipo de enumeração **plannerPlanContextType**|
 
@@ -236,10 +236,10 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionou métodos para listar e criar atribuições de atributo de usuário para o recurso [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionou métodos para listar e criar atribuições de atributo de usuário para o recurso [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true).|
 | Adição | v1.0 | Adicionado o tipo de recurso [AuthorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true).  |
-| Adição | beta | Adicionada a propriedade **includeDevices** ao recurso [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta).|
-| Adição | beta | Adicionada a propriedade **excludeDevices** ao recurso [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta).|
-| Alteração | beta | A propriedade **includeDeviceStates** no recurso [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) foi descontinuada.|
-| Alteração | beta | A propriedade **excludeDeviceStates** no recurso [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) foi descontinuada.|
+| Adição | beta | Adicionada a propriedade **includeDevices** ao recurso [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta).|
+| Adição | beta | Adicionada a propriedade **excludeDevices** ao recurso [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta).|
+| Alteração | beta | A propriedade **includeDeviceStates** no recurso [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) foi descontinuada.|
+| Alteração | beta | A propriedade **excludeDeviceStates** no recurso [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) foi descontinuada.|
 | Adição | beta | Adicionado o tipo de recurso [authenticationEventsPolicy](/graph/api/resources/authenticationeventspolicy?preserve-view=true&view=graph-rest-beta). |
 | Adição | beta | Adicionado o tipo de recurso [authenticationListener](/graph/api/resources/authenticationlistener?preserve-view=true&view=graph-rest-beta). |
 | Adição | beta | Adicionado o tipo de recurso [invokeUserFlowListener](/graph/api/resources/invokeUserFlowListener?preserve-view=true&view=graph-rest-beta). |
@@ -3538,7 +3538,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Adicionado o recurso de [consulta delta](delta-query-overview.md) para as entidades a seguir no Azure Active Directory:<br/>[aplicativo](/graph/api/application-delta?view=graph-rest-beta&preserve-view=true)<br/>[directoryRole](/graph/api/directoryrole-delta?view=graph-rest-beta&preserve-view=true)<br/>[servicePrincipal](/graph/api/serviceprincipal-delta?view=graph-rest-beta&preserve-view=true) |
+| Adição        | Beta        | Adicionado o recurso de [consulta delta](delta-query-overview.md) para as entidades a seguir no Azure Active Directory:<br/>[application](/graph/api/application-delta?view=graph-rest-beta&preserve-view=true)<br/>[directoryRole](/graph/api/directoryrole-delta?view=graph-rest-beta&preserve-view=true)<br/>[servicePrincipal](/graph/api/serviceprincipal-delta?view=graph-rest-beta&preserve-view=true) |
 
 
 ## <a name="july-2018"></a>Julho de 2018

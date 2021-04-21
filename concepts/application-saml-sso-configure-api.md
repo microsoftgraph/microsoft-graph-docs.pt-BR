@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ea4a0a23b19b0b7a7250966f59e3a92e94a40618
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: d3988d4147c0df1bdfd86b6342e04fd8a80123cf
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761469"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920219"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>Configure o logon único baseado em SAML para seu aplicativo usando a API do Microsoft Graph
 
@@ -733,13 +733,13 @@ No Content - 204
 
 ## <a name="see-also"></a>Confira também
 
-- No AWS, você pode [habilitar o provisionamento de usuário](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api) para buscar todas as funções dessa conta do AWS. Para saber mais, confira [Configurar a declaração de função emitida no token SAML](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
+- No AWS, você pode [habilitar o provisionamento de usuário](/azure/active-directory/app-provisioning/application-provisioning-configure-api) para buscar todas as funções dessa conta do AWS. Para saber mais, confira [Configurar a declaração de função emitida no token SAML](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 - [Personalizar as declarações emitidas em tokens para um aplicativo específico em um locatário](/azure/active-directory/develop/active-directory-claims-mapping).
-- Você pode usar a API applicationTemplate para criar uma instância [Aplicativos inexistentes na galeria](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+- Você pode usar a API applicationTemplate para criar uma instância [Aplicativos inexistentes na galeria](/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 - [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps)
 - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)
 - [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)
 - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 - [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)
+- [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)
 - [keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0)

@@ -1,18 +1,18 @@
 ---
-title: 'searchEntity: query'
+title: 'searchEntity: consulta'
 description: Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e675b9b9301e7b0fc918c4631757a9bb21f82ce7
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 8194b23ede8856f0237b179aa4d50a5ce0c1ebc9
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983759"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920107"
 ---
-# <a name="searchentity-query"></a>searchEntity: query
+# <a name="searchentity-query"></a>searchEntity: consulta
 
 Namespace: microsoft.graph
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Mail.Read, Mail.ReadWrite, Calendars.Read, Calendars.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, ExternalItem.Read.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,11 +48,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|requests|[Coleção searchRequest](../resources/searchrequest.md)|Uma coleção de uma ou mais solicitações de pesquisa cada formatada em um blob JSON. Cada blob JSON contém os tipos de recursos esperados na resposta, as fontes subjacentes, os parâmetros de paging, os campos solicitados e a consulta de pesquisa real. <br> Esteja ciente das [limitações conhecidas](../resources/search-api-overview.md#known-limitations) em pesquisar combinações específicas de tipos de entidade e classificar ou agregar resultados de pesquisa. |
+|requests|[coleção searchRequest](../resources/searchrequest.md)|Uma coleção de uma ou mais solicitações de pesquisa formatadas em um blob JSON. Cada blob JSON contém os tipos de recursos esperados na resposta, as fontes subjacentes, os parâmetros de pajamento, os campos solicitados e a consulta de pesquisa real. <br> Esteja ciente das [limitações conhecidas na](../resources/search-api-overview.md#known-limitations) pesquisa de combinações específicas de tipos de entidade e classificação ou agregação de resultados de pesquisa. |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta e um objeto da coleção `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e um objeto da coleção `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) no corpo da resposta.
  
 
 ## <a name="examples"></a>Exemplos
@@ -164,8 +164,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 - Pesquisar [mensagens de email](/graph/search-concept-messages)
-- Pesquisar [eventos de calendário](/graph/search-concept-events)
-- Pesquisar conteúdo no SharePoint e no OneDrive[(arquivos, listas e sites)](/graph/search-concept-files)
+- Eventos [de calendário de pesquisa](/graph/search-concept-events)
+- Pesquisar conteúdo no SharePoint e no OneDrive ([arquivos, listas e sites](/graph/search-concept-files))
 - Pesquisar [dados de tipos personalizados (Conectores do Graph)](/graph/search-concept-custom-types)
 
 

@@ -4,12 +4,12 @@ description: O corpo de uma página do OneNote pode conter vários elementos fil
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: e21ad3fb97b807bc91ecf6a993483f3bb83c82b8
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3921b89d811013a8966e7b1057a3c3614a978703
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472836"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920212"
 ---
 # <a name="create-absolute-positioned-elements-in-onenote-pages"></a>Criar elementos posicionados absolutos nas páginas do OneNote
 
@@ -165,6 +165,5 @@ Para saber mais sobre escopos de permissão e como eles funcionam, confira [Esco
 - [Atualizar o conteúdo da página do OneNote](onenote-update-page.md)
 - [Integrar com o OneNote](integrate-with-onenote.md)
 - [Blog de desenvolvedor do OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Perguntas sobre desenvolvimento do OneNote no Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
-- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
+- [Perguntas de desenvolvimento do OneNote no Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
+- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)
