@@ -4,12 +4,12 @@ description: " Notebooks empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 601ada5a98e42aeb1e0e1eb19dfd225451a6a27d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d575ab5609adcc60f4886c726c50ced9bcb10d0b
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474964"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920184"
 ---
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>Usar marcas DIV da API do OneNote para extrair dados de capturas 
 
@@ -296,6 +296,5 @@ Para saber mais sobre escopos de permissão e como eles funcionam, confira [Refe
 - [Adicionar imagens e arquivos](onenote-images-files.md)
 - [Integrar com o OneNote](integrate-with-onenote.md)
 - [Blog de desenvolvedor do OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Perguntas sobre desenvolvimento do OneNote no Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
-- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
+- [Perguntas de desenvolvimento do OneNote no Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
+- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)

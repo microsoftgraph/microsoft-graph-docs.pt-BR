@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 779b4e6d7800ad9284c77295145ea1c5f27d82a3
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: ed5491867a08999ede0a7db12482b6ee4e0598c8
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509364"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920069"
 ---
 # <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector: uploadClientCertificate
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegada (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
 | Delegada (conta pessoal da Microsoft) | Sem suporte.  |
-| Aplicativo                            | APIConnectors.ReadWrite.All |
+| Application                            | APIConnectors.ReadWrite.All |
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -56,7 +56,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|pkcs12Value|Cadeia de caracteres| Este é o campo para enviar o conteúdo pfx. O valor deve ser uma versão codificada de base 64 do conteúdo real do certificado. Obrigatório.|
+|pkcs12Value|String| Este é o campo para enviar o conteúdo pfx. O valor deve ser uma versão codificada de base 64 do conteúdo real do certificado. Obrigatório.|
 |password|String| Essa é a senha do arquivo pfx. Obrigatório. Se nenhuma senha for usada, ainda deverá fornecer um valor `""` de .|
 
 ## <a name="response"></a>Resposta
@@ -69,6 +69,8 @@ Se tiver êxito, este método retornará um código de resposta e o `200 OK` [ap
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "identityapiconnector_uploadclientcertificate"
@@ -83,6 +85,24 @@ Content-type: application/json
     "password": "<password>"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/identityapiconnector-uploadclientcertificate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/identityapiconnector-uploadclientcertificate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/identityapiconnector-uploadclientcertificate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/identityapiconnector-uploadclientcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nilakhan
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 55199e600be68562e256342e79f14a37cc669681
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: e0304601c76276fbcdd3db5836245ef5b592f05a
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766018"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921846"
 ---
 # <a name="printdocument-createuploadsession"></a>printDocument: createUploadSession
 
@@ -29,9 +29,9 @@ Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter 
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | PrintJob.Create, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | PrintJob.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | PrintJob.Create, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -84,6 +84,8 @@ O exemplo a seguir mostra como criar uma sessão de carregamento que você pode 
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printdocument_createuploadsession"
@@ -100,6 +102,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printdocument-createuploadsession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printdocument-createuploadsession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printdocument-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printdocument-createuploadsession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

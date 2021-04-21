@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 1d2302c647e55e377209aaf630dc06e7a24d55a1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 346f6941d23387fce06f99ec4e7fcdf2907d0c0e
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978733"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921837"
 ---
 # <a name="searchentity-query"></a>searchEntity: consulta
 
@@ -22,14 +22,14 @@ Executa a consulta especificada no corpo da solicitação. Os resultados da pesq
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference). 
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Mail. Read, mail. ReadWrite, Calendars. Read, Calendars. ReadWrite, files. Read. All, files. ReadWrite. All, sites. Read. All, sites. ReadWrite. All, ExternalItem. Read. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,11 +51,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Quest|coleção [searchRequest](../resources/searchrequest.md)|Uma coleção de uma ou mais solicitações de pesquisa cada formatadas em um blob JSON. Cada blob JSON contém os tipos de recursos esperados na resposta, as fontes subjacentes, os parâmetros de paginação, os campos solicitados e a consulta de pesquisa real. <br> Esteja ciente das [limitações conhecidas](../resources/search-api-overview.md#known-limitations) de pesquisa de combinações específicas de tipos de entidade e da classificação ou agregação de resultados de pesquisa. |
+|requests|[coleção searchRequest](../resources/searchrequest.md)|Uma coleção de uma ou mais solicitações de pesquisa formatadas em um blob JSON. Cada blob JSON contém os tipos de recursos esperados na resposta, as fontes subjacentes, os parâmetros de pajamento, os campos solicitados e a consulta de pesquisa real. <br> Esteja ciente das [limitações conhecidas na](../resources/search-api-overview.md#known-limitations) pesquisa de combinações específicas de tipos de entidade e classificação ou agregação de resultados de pesquisa. |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `HTTP 200 OK` código de resposta e um objeto da coleção [searchResponse](../resources/searchresponse.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e um objeto da coleção `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) no corpo da resposta.
  
 
 ## <a name="examples"></a>Exemplos
@@ -160,12 +160,12 @@ Content-type: application/json
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Mensagens de email](/graph/search-concept-messages) de pesquisa
-- [Eventos de calendário](/graph/search-concept-events) de pesquisa
+- Pesquisar [mensagens de email](/graph/search-concept-messages)
+- Eventos [de calendário de pesquisa](/graph/search-concept-events)
 - Pesquisar conteúdo no SharePoint e no OneDrive ([arquivos, listas e sites](/graph/search-concept-files))
-- Dados [de tipos personalizados de pesquisa (conectores do gráfico)](/graph/search-concept-custom-types)
-- [Classificar](/graph/search-concept-sort) resultados de pesquisa
-- Usar [agregações](/graph/search-concept-aggregations) para refinar os resultados da pesquisa
+- Pesquisar [dados de tipos personalizados (Conectores do Graph)](/graph/search-concept-custom-types)
+- [Classificar resultados](/graph/search-concept-sort) da pesquisa
+- Usar [agregação para](/graph/search-concept-aggregations) refinar resultados de pesquisa
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

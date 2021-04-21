@@ -3,12 +3,12 @@ title: Práticas recomendadas para trabalhar com o Microsoft Graph
 description: Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6a91eaea5211b58cc821f098822ddb683a58cc22
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d6227c3bb90e620d741f387978f84ac12c171e19
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473431"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920030"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Práticas recomendadas para trabalhar com o Microsoft Graph
 
@@ -148,4 +148,4 @@ Para garantir a segurança e facilitar o suporte do aplicativo:
 - Abra conexões para todas as respostas de DNS anunciadas.
 - Gerar um GUID exclusivo e o enviar em cada solicitação REST do Microsoft Graph. Isso ajudará a Microsoft a investigar os erros com maior facilidade, caso seja necessário relatar um problema com o Microsoft Graph.
   - Em todas as solicitações do Microsoft Graph, gere um GUID exclusivo, envie-o no cabeçalho de solicitação HTTP do `client-request-id` e também registre-o nos logs dos aplicativos.
-  - Registre sempre o `request-id`, o `timestamp` e o `x-ms-ags-diagnostic` dos cabeçalhos de resposta HTTP. Estes, juntamente com o `client-request-id`, são necessários ao relatar problemas em[Microsoft Q&A](https://aka.ms/askgraph) ou para o Suporte da Microsoft.
+  - Registre sempre o `request-id`, o `timestamp` e o `x-ms-ags-diagnostic` dos cabeçalhos de resposta HTTP. Estes, juntamente com o `client-request-id`, são necessários ao relatar problemas em[Microsoft Q&A](/answers/products/m365#microsoft-graph) ou para o Suporte da Microsoft.

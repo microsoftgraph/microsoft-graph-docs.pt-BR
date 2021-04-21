@@ -4,12 +4,12 @@ description: 'Descreve como migrar aplicativos do Azure Active Directory (Azure 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 6460b768381cdf3223699d95d1d5b9ce9ed629e8
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: cdd2414652e675223b6de42a6a63de5c7e8c5c8a
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761287"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921921"
 ---
 # <a name="deploy-test-and-extend"></a>Implantar, testar e estender
 
@@ -57,12 +57,12 @@ Esta é a etapa 4 do [processo para migrar aplicativos.](migrate-azure-ad-graph-
 Se você tiver problemas ou precisar de ajuda durante o processo de migração, poderá:
 
 - Revisar a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente
-- Postar perguntas para [o Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-applications.html) 
+- Postar perguntas para [o Microsoft Q&A](/answers/topics/microsoft-graph-applications.html) 
 - Revise exemplos do Microsoft Graph para contrastar e comparar com seu código de aplicativo existente:
   - **Aplicativos que usam** a API REST : explorar [inícios rápidos e exemplos,](https://developer.microsoft.com/graph/get-started)escolher sua plataforma de escolha e executar o início rápido ou pesquisar por um exemplo apropriado
   - **App that use the .NET client library**: [review console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) and/or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximas Etapas
 
 - Use [inícios rápidos e exemplos](/graph/get-started) para acelerar rapidamente.
 - Aproveitar [bibliotecas de clientes e SDKs](https://developer.microsoft.com/graph/get-started) para desenvolver aplicativos personalizados 

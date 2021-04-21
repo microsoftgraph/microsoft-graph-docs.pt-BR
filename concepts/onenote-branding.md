@@ -4,16 +4,16 @@ description: " "
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 1ff5373cc671f7f60e0a8a4870d69340f7538ea0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1000172e015ad8a48da906e38be32eca0fdf6662
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473487"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920198"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>Diretrizes de marca para desenvolvedores da API do OneNote 
  
-**Aplica-se a** notebooks do consumidor no OneDrive | Notebooks empresariais no Microsoft 365
+**Aplica-se a** Notebooks de consumidores no OneDrive | Notebooks corporativos no Microsoft 365
 
 Siga as orientações contidas neste artigo para melhor integrar a marca do OneNote ao seu produto e satisfazer os requisitos de marca do OneNote.
 
@@ -180,7 +180,5 @@ Se você tiver alguma dúvida sobre essas diretrizes ou estiver criando novas co
 - [Diretrizes de identidade visual para desenvolvedores da API do OneNote](https://www.microsoft.com/download/details.aspx?id=42977) (página de download)
 - [Integrar com o OneNote](integrate-with-onenote.md)
 - [Blog de desenvolvedor do OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [Perguntas sobre desenvolvimento do OneNote no Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
-- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
-
+- [Perguntas de desenvolvimento do OneNote no Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
+- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)

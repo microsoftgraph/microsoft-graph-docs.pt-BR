@@ -3,12 +3,12 @@ title: Escolher um provedor de autenticação do Microsoft Graph
 description: Saiba como escolher provedores de autenticação específicos de cenário para seu aplicativo.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: f174ae516ca6bde01456349a7a0ed7742b8b0ba1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 726fbf1334a99ab6a854bd4627052d154187105c
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953366"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921123"
 ---
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Escolha um provedor de autenticação do Microsoft Graph com base no cenário
 
@@ -34,7 +34,7 @@ Os provedores de autenticação implementam o código necessário para adquirir 
 | [Aplicativo móvel que chama APIs da Web](/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
 | | Interativo | Consumidor Delegado/Org | [Provedor Interativo](#InteractiveProvider) |
 
-> Observação: Java desenvolvedores android precisam adicionar a biblioteca [do azure-identity](https://docs.microsoft.com/java/api/overview/azure/identity-readme?view=azure-java-stable) para obter acesso aos diferentes tipos de credenciais.
+> Observação: Java desenvolvedores android precisam adicionar a biblioteca [do azure-identity](/java/api/overview/azure/identity-readme?view=azure-java-stable) para obter acesso aos diferentes tipos de credenciais.
 
 ## <a name="authorization-code-provider"></a><a name="AuthCodeProvider" ></a>Provedor de código de autorização
 

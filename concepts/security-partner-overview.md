@@ -4,12 +4,12 @@ description: 'Este artigo descreve as oportunidades de parceria habilitadas pela
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 3f6e3a03c02986856b8a7e7dc80f369c6f86263f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 2e8025bbcb3b2858db467444d155cd8186e57dce
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470064"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51921935"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Parceria com a API de Segurança do Microsoft Graph – oportunidades de parceiros de tecnologia
 
@@ -121,7 +121,7 @@ Os cenários do provedor são amplamente variados. Um processo de integração c
 ### <a name="help-and-support"></a>Ajuda e suporte
 
 - Se você tiver dúvidas sobre integrações de aplicativos ou serviços ou produtos com a API de Segurança do Microsoft Graph, entre em contato com a comunidade técnica usando a [API do Microsoft Security Graph](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/bd-p/SecurityGraphAPI)
-- Siga as discussões [sobre o Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-security.html)  com a marca: microsoft-graph-security.
+- Siga as discussões [sobre o Microsoft Q&A](/answers/topics/microsoft-graph-security.html)  com a marca: microsoft-graph-security.
 - Se você encontrar bugs nos exemplos ou solicitações de documentação ou problemas de arquivo de bugs no respectivo [repositório de exemplo.](https://github.com/microsoftgraph/security-api-solutions/blob/master/sample-repos.md)
 - Se você tiver novas solicitações de exemplo ou problemas que não tenham escopo para um único [exemplo,](https://github.com/microsoftgraph/security-api-solutions/issues/new) os problemas de arquivo no [repositório soluções](https://github.com/microsoftgraph/security-api-solutions)de segurança do Microsoft Graph .
 
