@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 889ff6c7a36be5580a6a419b6bd99e7e85240632
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c655b69a588ced1777221289d41175a73c696854
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964622"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944216"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>Tipo de recurso featureRolloutPolicy
 
@@ -24,7 +24,7 @@ Veja a seguir as limitações da adoção de recursos:
 - O **campo appliesTo só** dá suporte a grupos.
 - Não há suporte para grupos dinâmicos e grupos aninhados.
 
-A seguir estão os pré-requisitos para cada um dos recursos atualmente com suporte para a adoção usando essa política de lançamento.
+A seguir estão os pré-requisitos para cada um dos recursos atualmente suportados para a adoção usando essa política de lançamento.
 
 ### <a name="passthrough-authentication"></a>Autenticação passo a passo
 

@@ -1,33 +1,36 @@
 ---
-title: tipo de recurso meetingParticipants
-description: Participantes de uma reunião.
-author: ananmishr
+title: Tipo de recurso meetingParticipants
+description: Participantes em uma reunião.
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e6d53d0359b9dc71e538c5bbe025e093a4912ffb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93ca3d73518f9739cc3115c80efd2aec551629b5
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971647"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944160"
 ---
-# <a name="meetingparticipants-resource-type"></a>tipo de recurso meetingParticipants
+# <a name="meetingparticipants-resource-type"></a>Tipo de recurso meetingParticipants
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Participantes de uma reunião.
+Participantes em uma reunião.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade       | Tipo    | Descrição|
-|:---------------|:--------|:----------|
-| attendees | coleção [meetingParticipantInfo](meetingparticipantinfo.md) |  |
-| organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
-| produtores | coleção [meetingParticipantInfo](meetingparticipantinfo.md) | Somente para reunião de transmissão. |
-| colaboradores | coleção [meetingParticipantInfo](meetingparticipantinfo.md) | Somente para reunião de transmissão. |
+| Propriedade                  | Tipo                                                           | Descrição                           |
+| :------------------------ | :------------------------------------------------------------- | :------------------------------------ |
+| attendees                 | [coleção meetingParticipantInfo](meetingparticipantinfo.md) | Informações dos participantes da reunião. |
+| organizer                 | [meetingParticipantInfo](meetingparticipantinfo.md)            | Informações do organizador da reunião. |
+| produtores (preterido)    | [coleção meetingParticipantInfo](meetingparticipantinfo.md) | Somente para a reunião de transmissão.           |
+| colaboradores (preterido) | [coleção meetingParticipantInfo](meetingparticipantinfo.md) | Somente para a reunião de transmissão.           |
+
+> [!CAUTION]
+> As **propriedades de produtores** **e** colaboradores são preteridas. Todos os participantes da reunião são retornados **na coleção de participantes.** Use a **propriedade role** de [meetingParticipantInfo](meetingparticipantinfo.md) para identificar a função de reunião do participante.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -35,17 +38,12 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.meetingParticipants"
 }-->
 ```json
 {
   "attendees": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
   "organizer": {"@odata.type": "#microsoft.graph.meetingParticipantInfo"},
-  "producers": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
-  "contributors": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
 }
 ```
 

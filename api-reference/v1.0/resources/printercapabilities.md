@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 5416cf43e266bab65254ac5aaee1a79c9c3e17be
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: bda913275aff692df2f66472f61436665cbc3dd7
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516822"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944223"
 ---
 # <a name="printercapabilities-resource-type"></a>Tipo de recurso printerCapabilities
 
@@ -34,8 +34,8 @@ Representa os recursos relatados por um printer/printerShare.
 |copiesPerJob|[integerRange](integerrange.md)|O intervalo de cópias por trabalho suportado pela impressora.|
 |finishings|[Coleção printFinishing](enums.md#printfinishing-values)|Processos de término que a impressora dá suporte a um documento impresso.|
 |mediaColors|Coleção de cadeias de caracteres|As cores de mídia (ou seja, papel) suportadas pela impressora.|
-|mediaTypes|Coleção de cadeias de caracteres|Os tipos de mídia suportados pela impressora. Os valores válidos são descritos na tabela a seguir.|
-|mediaSizes|Coleção de cadeias de caracteres|Os tamanhos de mídia suportados pela impressora. Oferece suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI, juntamente com todos os tamanhos personalizados suportados pela impressora associada.|
+|mediaTypes|Coleção de cadeias de caracteres|Os tipos de mídia suportados pela impressora.|
+|mediaSizes|Coleção de cadeias de caracteres|Os tamanhos de mídia suportados pela impressora. Oferece suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI. Os valores válidos estão na tabela [a seguir](#mediasizes-values).|
 |pagesPerSheet|Coleção Int32|Número suportado de Páginas de Entrada para impor uma única Impressão.|
 |orientações|[Coleção printOrientation](enums.md#printorientation-values)|As orientações de impressão suportadas pela impressora. Os valores válidos são descritos na tabela a seguir.|
 |inputBins|Coleção de cadeias de caracteres|Caixas de entrada com suporte para a impressora.|
@@ -49,6 +49,31 @@ Representa os recursos relatados por um printer/printerShare.
 |leftMargins|Coleção Int32|Uma lista de margens esquerdas suportadas (em mícrons) para a impressora.|
 |collation|Booliano|True se a impressora dá suporte à colagem ao imprimir cópias muliplas de um documento de várias páginas; false caso contrário.|
 |scalings|[Coleção printScaling](enums.md#printscaling-values)|Dimensionamentos de impressão com suporte.|
+
+### <a name="mediasizes-values"></a>mediaSizes values
+
+|Valor|
+|:---|
+|A3|
+|A4|
+|A5|
+|A6|
+|JIS B4|
+|JIS B5|
+|JPN Hagaki|
+|América do Norte 5x7in|
+|Executivo da América do Norte|
+|Carta de Goverment da América do Norte|
+|Índice da América do Norte 3x5in|
+|Índice da América do Norte 4x8in|
+|Índice da América do Norte 5x8in|
+|Fatura da América do Norte|
+|Ledger da América do Norte|
+|América do Norte Legal|
+|Carta da América do Norte|
+|Foto l 3.5x5in|
+|Cartão de Visita|
+|Photo|
 
 ## <a name="relationships"></a>Relações
 Nenhum

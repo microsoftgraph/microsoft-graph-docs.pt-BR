@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 1e12541bd4426dca1e0d7b48b0e3bcbd9e2bb7ea
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: f848b9274172113404a39f13e42c003643dfdf74
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517038"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944237"
 ---
 # <a name="printjobconfiguration-resource-type"></a>Tipo de recurso printJobConfiguration
 
@@ -33,9 +33,9 @@ Um grupo de configurações que uma impressora deve usar para imprimir um trabal
 |colorMode|[printColorMode](enums.md#printcolormode-values)|O modo de cor que a impressora deve usar para imprimir o trabalho. Os valores válidos são descritos na tabela abaixo. Somente leitura.|
 |inputBin|Cadeia de caracteres|A bandeja de entrada (bandeja) a ser usada durante a impressão. Consulte os recursos da [impressora para](printercapabilities.md) uma lista de caixas de entrada com suporte.|
 |outputBin|Cadeia de caracteres|A lixeira de saída para colocar as impressões concluídas. Consulte os recursos da [impressora para](printercapabilities.md) uma lista de caixas de saída com suporte.|
-|mediaSize|Cadeia de caracteres|O tamanho da mídia a ser usado ao imprimir. Oferece suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI, juntamente com todos os tamanhos personalizados suportados pela impressora associada.|
+|mediaSize|Cadeia de caracteres|O tamanho da mídia a ser usado ao imprimir. Oferece suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI. Valores válidos listados no tópico [printerCapabilities.](printercapabilities.md#mediasizes-values)|
 |margin|[printMargin](printmargin.md)|As configurações de margem a ser usadas ao imprimir.|
-|mediaType|Cadeia de caracteres|O tipo de mídia padrão (como papel) para imprimir o documento. Os valores válidos são descritos na tabela a seguir.|
+|mediaType|Cadeia de caracteres|O tipo de mídia padrão (como papel) para imprimir o documento.|
 |finishings|[Coleção printFinishing](enums.md#printfinishing-values)|Processos de término a ser usado ao imprimir.|
 |pagesPerSheet|Int32|O número de páginas de documento a ser impressa em cada planilha.
 |multipageLayout|[printMultipageLayout](enums.md#printmultipagelayout-values)|A direção para colocar as páginas quando várias páginas estão sendo impressas por planilha. Os valores válidos são descritos na tabela a seguir.|

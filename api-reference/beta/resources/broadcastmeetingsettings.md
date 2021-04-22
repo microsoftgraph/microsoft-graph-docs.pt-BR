@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: def9276d97ddbe1fd812083cc17e547ae7ce53c5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f199a82ee90d6848cb68d670d49d7af1c1d2c739
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953752"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944111"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>Tipo de recurso broadcastMeetingSettings
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 Configurações relacionadas a um evento ao vivo.
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Esta API não valida as configurações de evento ao vivo gerenciadas pela [política](/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell).
-> Por exemplo, se um administrador definir uma política de evento ao vivo usando , os usuários serão impedidos de definir permissões de evento ao vivo no cliente do Teams, mas poderão criar um evento ao vivo por meio do Microsoft Graph definindo `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany` `public` **allowedAudience** como `everyone` . 
+> Por exemplo, se um administrador definir uma política de evento ao vivo usando , os usuários serão impedidos de definir permissões de evento ao vivo no cliente do Teams, mas poderão criar um evento ao vivo por meio do Microsoft Graph definindo `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany` `public` **allowedAudience** como `everyone` .
 
 ## <a name="properties"></a>Propriedades
 

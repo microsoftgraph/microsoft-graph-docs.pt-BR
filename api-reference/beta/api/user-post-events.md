@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 34c094323716f0245381084400383e41c3936397
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: efcf2876ce7963e3bc6cb38dcbdab7c2b7e0e9d6
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719780"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944279"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -83,10 +83,10 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>Exemplo 1: criar um evento no fuso horário especificado e atribuir o evento um valor opcional de TransactionId
+### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>Exemplo 1: Criar um evento no fuso horário especificado e atribuir ao evento um valor transactionId opcional
 
 #### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação. Ele usa o cabeçalho de solicitação prefiro: Outlook. TimeZone para especificar o fuso horário das horas de início e término na resposta. Ele também define a propriedade transactionId para reduzir tentativas desnecessárias no servidor.
+Este é um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar o fuso horário para as horas de início e fim na resposta. Ele também define a propriedade transactionId para reduzir tentativas desnecessárias no servidor.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -482,7 +482,7 @@ Content-length: 2985
 ```
 
 
-### <a name="example-3-create-a-weekly-recurring-event"></a>Exemplo 3: criar um evento recorrente semanal
+### <a name="example-3-create-a-weekly-recurring-event"></a>Exemplo 3: Criar um evento recorrente semanal
 
 #### <a name="request"></a>Solicitação
 O terceiro exemplo mostra como criar um evento recorrente uma vez na semana.  O evento ocorre das 12:00 às 2:00 da tarde, todas as segundas-feiras a partir de 4 de setembro de 2017 até o final do ano.
@@ -674,10 +674,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-a-daily-recurring-event"></a>Exemplo 4: criar um evento recorrente diário
+### <a name="example-4-create-a-daily-recurring-event"></a>Exemplo 4: Criar um evento recorrente diário
 
 #### <a name="request"></a>Solicitação
-O quarto exemplo mostra como criar um evento recorrente uma vez ao dia.  O evento ocorre de 12:00pm a 2:00pm, todos os dias a partir de 25 de fevereiro de 2020, para duas ocorrências.
+O quarto exemplo mostra como criar um evento recorrente uma vez ao dia.  O evento ocorre das 12:00 às 14:00, todos os dias a partir de 25 de fevereiro de 2020, para duas ocorrências.
 
 <!-- {
   "blockType": "request",
@@ -845,7 +845,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5-create-and-enable-an-event-as-an-online-meeting"></a>Exemplo 5: criar e habilitar um evento como uma reunião online
+### <a name="example-5-create-and-enable-an-event-as-an-online-meeting"></a>Exemplo 5: Criar e habilitar um evento como uma reunião online
 
 #### <a name="request"></a>Solicitação
 Veja um exemplo de uma solicitação que cria um evento e o habilita como uma reunião online. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar o fuso horário para as horas de **início** e **fim** na resposta.

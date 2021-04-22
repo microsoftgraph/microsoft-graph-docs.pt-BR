@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 3e1082c048c069698e4f48989bdbab28c186bf26
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 6fd35c274fb91ef527e4dc42f24546a699c22645
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882205"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944230"
 ---
 # <a name="onlinemeeting-resource-type"></a>Tipo de recurso onlineMeeting
 
@@ -42,7 +42,7 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Configurações relacionadas a um evento ao vivo*                                                                                                                                                                                                                    |
 | chatInfo              | [chatInfo](chatinfo.md)                       | As informações de chat associadas a essa reunião online.                                                                                                                                                                                                   |
 | creationDateTime      | DateTime                                      | O tempo de criação da reunião em UTC. Somente leitura.                                                                                                                                                                                                                |
-| capabilities          | coleção meetingCapabilities                             | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer` , `unknownFutureValue` .                                                                                                                                                                                 |
+| capabilities (preterido)         | coleção meetingCapabilities                             | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer` , `unknownFutureValue` .                                                                                                                                                                                 |
 | endDateTime           | DateTime                                      | A hora de término da reunião em UTC.                                                                                                                                                                                                                                |
 | externalId            | Cadeia de caracteres                                        | A ID externa. Uma ID personalizada. Opcional.                                                                                                                                                                                                                     |
 | id                    | Cadeia de caracteres                                        | A ID padrão associada à reunião online. Somente leitura.                                                                                                                                                                                               |
@@ -59,7 +59,9 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | videoTeleconferenceId | Cadeia de caracteres                                        | A ID de teleconferência de vídeo. Somente leitura.                                                                                                                                                                                                                   |
 
 > [!CAUTION]
+>
 >- A **propriedade autoAdmittedUsers** é preterida. Use **a propriedade scope** do [lobbyBypassSettings.](lobbyBypassSettings.md)
+>- A **propriedade capabilities** é preterida. Use **a propriedade isQuestionAndAnswerEnabled** [de broadcastMeetingSettings.](broadcastMeetingSettings.md)
 >- \* A criação de eventos ao vivo **com a propriedade broadcastSettings** está em Beta, com limitações importantes. Consulte [broadcastSettings](broadcastMeetingSettings.md) para obter mais detalhes.
 
 ### <a name="onlinemeetingpresenters-values"></a>valores onlineMeetingPresenters
@@ -72,7 +74,7 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | organizer          | Somente o organizador é um apresentador.                           |
 | unknownFutureValue | Valor futuro desconhecido.                                         |
 
-> [!NOTE]
+> [!TIP]
 > Se o valor **de allowedPresenters** estiver definido como , especifique a função de reunião de cada participante da reunião usando a propriedade `roleIsPresenter` **role** em [meetingParticipantInfo](../resources/meetingparticipantinfo.md).
 
 ## <a name="json-representation"></a>Representação JSON
@@ -95,7 +97,6 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
-  "capabilities": [ "questionAndAnswer" ],
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
