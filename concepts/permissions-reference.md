@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7dc6fb2c0b9d5126aa3b84331e88b3fe294ddd6f
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: c72b65a8220a82e0c48022fcf4839a6b1be7e345
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698052"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920177"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1255,7 +1255,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1515,6 +1515,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.Read.All_ | Leia as políticas da sua organização | Permite que o aplicativo leia todas as políticas da sua organização sem um usuário conectado. | Sim |
 | _Policy.Read.PermissionGrant_ | Ler políticas de concessão de consentimento e permissão | Permite que o aplicativo leia políticas relacionadas a concessões de consentimento e permissão para aplicativos, sem um usuário conectado. | Sim |
 | _Policy.Read.ApplicationConfiguration_ | Leia as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia todas as políticas de configuração dos aplicativos da sua organização sem um usuário conectado. | Sim |
+| _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização, sem um usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave todas as políticas de fluxo de autenticação do locatário, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
 | _Policy.ReadWrite.ConsentRequest_ | Ler e escrever a política de solicitações de consentimento da sua organização | Permite que o aplicativo leia e escreva a política de solicitações de consentimento da sua organização sem um usuário conectado. | Sim | Não |
@@ -1707,9 +1708,9 @@ O acesso aos dados por meio de pesquisa requer permissão de leitura para o item
 | _SecurityEvents.Read.All_        |  Ler os eventos de segurança da organização | Permite ao aplicativo ler os eventos de segurança da sua organização em nome do usuário conectado. | Sim  | Não |
 | _SecurityEvents.ReadWrite.All_   | Ler e atualizar os eventos de segurança da organização | Permite ao aplicativo ler os eventos de segurança da sua organização em nome do usuário conectado. Também permite ao aplicativo atualizar as propriedades editáveis em eventos de segurança em nome do usuário conectado. | Sim  | Não |
 | _SecurityActions.Read.All_        |  Ler as ações de segurança da organização | Permite que o aplicativo leia as ações de segurança da sua organização em nome do usuário conectado. | Sim  | Não |
-| _SecurityActions.ReadWrite.All_   | Ler e atualizar as ações de segurança da organização | Permite que o aplicativo leia as ações de segurança da sua organização em nome do usuário conectado.  | Sim  | Não |
+| _SecurityActions.ReadWrite.All_   | Ler e atualizar as ações de segurança da organização | Permite que o aplicativo leia ou atualize as ações de segurança da sua organização em nome do usuário conectado.  | Sim  | Não |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | Gerenciar indicadores de ameaças que este aplicativo cria ou é proprietário |Permite que o aplicativo crie indicadores de ameaças e gerencie totalmente esses indicadores de ameaças (ler, atualizar e excluir) em nome do usuário conectado.  | Sim  | Não |
-| _ThreatIndicators.Read.All_   | Leia os indicadores de ameaças da sua organização | Permite que o aplicativo leia as ações de segurança da sua organização em nome do usuário conectado.  | Sim  | Não |
+| _ThreatIndicators.Read.All_   | Leia os indicadores de ameaças da sua organização | Permite que o aplicativo leia todos os indicadores de ameaça para sua organização, em nome do usuário conectado.  | Sim  | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1720,7 +1721,7 @@ O acesso aos dados por meio de pesquisa requer permissão de leitura para o item
 | _SecurityActions.Read.All_        |  Ler os eventos de segurança da organização | Permite que o aplicativo leia os eventos de segurança da sua organização. | Sim  |
 | _SecurityActions.ReadWrite.All_   | Criar e ler ações de segurança da sua organização | Permite que o aplicativo leia ou crie ações de segurança, sem um usuário ter entrado. | Sim  |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | Gerenciar indicadores de ameaças que este aplicativo cria ou é proprietário | Permite que o aplicativo crie indicadores de ameaças e gerencie totalmente esses indicadores de ameaças (ler, atualizar e excluir) sem um usuário ter entrado.  Ele não atualizará os indicadores de ameaças que não possui. | Sim  |
-| _ThreatIndicators.Read.All_   | Gerenciar indicadores de ameaças que este aplicativo cria ou é proprietário | Permite que o aplicativo leia todos os indicadores em sua organização sem um usuário conectado. | Sim  |
+| _ThreatIndicators.Read.All_   | Gerenciar indicadores de ameaças que este aplicativo cria ou é proprietário | Permite que o aplicativo leia todos os indicadores de ameaça para sua organização, sem um usuário assinado. | Sim  |
 
 ### <a name="remarks"></a>Comentários
 
@@ -1772,7 +1773,7 @@ As permissões de segurança só são válidas para contas corporativas ou de es
 | _Sites.ReadWrite.All_   | Ler e gravar itens em todos os conjuntos de sites | Permite ao aplicativo criar, ler, atualizar e excluir documentos e listar itens em todos os conjuntos de sites sem um usuário conectado. | Sim |
 | _Sites.Manage.All_      | Criar, editar e excluir itens e listas em todos os conjuntos de sites | Permite ao aplicativo gerenciar e criar listas, documentos e listar itens em todos os conjuntos de sites sem um usuário conectado.  | Sim  |
 | _Sites.FullControl.All_ | Ter controle total de todos os conjuntos de sites | Permite ao aplicativo ter controle total nos sites do SharePoint em todos os conjuntos de sites sem um usuário conectado.  | Sim  |
-| _Sites.Selecionados_ | Acessar conjuntos de sites selecionados (visualização) | Permitir que o aplicativo acesse um subconjunto de conjuntos de sites sem um usuário conectado.  Os conjuntos de sites específicos e as permissões concedidas serão configurados no SharePoint Online. | Sim  |
+| _Sites.Selecionados_ | Acessar conjuntos de sites selecionados | Permitir que o aplicativo acesse um subconjunto de conjuntos de sites sem um usuário conectado.  Os conjuntos de sites específicos e as permissões concedidas serão configurados no SharePoint Online. | Sim  |
 
 
 ### <a name="remarks"></a>Comentários
