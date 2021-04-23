@@ -1,18 +1,18 @@
 ### YamlMime:Landing
 title: Tutoriais do Microsoft Graph
-summary: Os tutoriais do Microsoft Graph são exercícios de treinamento passo a passo que orientam você na criação de um aplicativo básico que acessa dados por meio do Microsoft Graph.
+summary: Tutoriais do Microsoft Graph são exercícios de treinamento passo a passo que o orientam através da criação de um aplicativo básico que acessa dados por meio do Microsoft Graph.
 metadata:
   title: Tutoriais do Microsoft Graph
-  description: Os tutoriais do Microsoft Graph são exercícios de treinamento passo a passo que orientam você na criação de um aplicativo básico que acessa dados por meio do Microsoft Graph.
+  description: Tutoriais do Microsoft Graph são exercícios de treinamento passo a passo que o orientam através da criação de um aplicativo básico que acessa dados por meio do Microsoft Graph.
   ms.topic: landing-page
   author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 15a26f4ebffbcd3518db742f216b4f6a57cac98f
-  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+  ms.openlocfilehash: 1e9c5ac18c874d458131691b26dacd75c266dab5
+  ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "50240476"
+  ms.lasthandoff: 04/23/2021
+  ms.locfileid: "51960957"
 landingContent:
 - title: Criar seu primeiro aplicativo do lado do servidor
   linkLists:
@@ -72,19 +72,23 @@ landingContent:
       url: /graph/tutorials/bot-framework
     - text: Suplemento do Office
       url: /graph/tutorials/office-addin
-    - text: Ligar/Desligar Automação
+    - text: Power Automate
       url: /graph/tutorials/power-automate
     - text: Estrutura do SharePoint
       url: /graph/tutorials/spfx
     - text: Teams
       url: /graph/tutorials/teams
-- title: Cenários
+    - text: Microsoft Graph Toolkit
+      url: /learn/modules/msgraph-toolkit-intro
+- title: Aprender módulos
   linkLists:
-  - linkListType: tutorial
+  - linkListType: learn
     links:
-    - text: Alterar notificações e controle de alterações
-      url: /learn/modules/msgraph-changenotifications-trackchanges
-    - text: Otimizar o uso de dados com parâmetros de consulta
-      url: /learn/modules/optimize-data-usage
-    - text: Otimizar o tráfego de rede
-      url: /learn/modules/optimize-network-traffic
+    - text: Fundamentos do Microsoft Graph
+      url: /learn/paths/m365-msgraph-fundamentals
+    - text: Criar aplicativos com o Microsoft Graph - Associar
+      url: /learn/paths/m365-msgraph-associate
+    - text: Começar a trabalhar com o Microsoft Graph Toolkit
+      url: /learn/modules/msgraph-toolkit-intro
+    - text: Explorar cenários do Microsoft Graph para desenvolvimento javascript
+      url: /learn/paths/m365-msgraph-scenarios
