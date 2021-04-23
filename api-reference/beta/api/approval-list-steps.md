@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 81df11f30ece700fc64361d7d6e9c154ed35eb49
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 797d2715dd2c273c5673e608a4794fc0c56a6f45
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942566"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961356"
 ---
 # <a name="list-approvalsteps"></a>Aprovação de listaSteps
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar [os objetos approvalStep](../resources/approvalstep.md) associados a um [objeto de](../resources/approval.md) aprovação.
+No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-root.md)lista os objetos [approvalStep](../resources/approvalstep.md) associados a um [objeto de aprovação.](../resources/approval.md)  Essa chamada pode ser feita por um aprovador, fornecendo o identificador da solicitação de atribuição [do pacote de acesso.](../resources/accesspackageassignmentrequest.md)
 
 ## <a name="permissions"></a>Permissões
 

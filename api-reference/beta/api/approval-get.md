@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: da034f07aa83a483417161e0524661d97ca327e9
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 083064a405525a33855340bcf920900e3d70ca91
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942578"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961363"
 ---
 # <a name="get-approval"></a>Obter aprovação
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades de um [objeto de aprovação.](../resources/approval.md)
+No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-root.md)recupera as propriedades de um [objeto de aprovação.](../resources/approval.md)  Essa chamada pode ser feita por um aprovador, fornecendo o identificador da solicitação de atribuição [do pacote de acesso.](../resources/accesspackageassignmentrequest.md)
 
 ## <a name="permissions"></a>Permissões
 

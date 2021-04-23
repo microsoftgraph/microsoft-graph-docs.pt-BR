@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6f6751807f0dcb042958104c4b3146a555b22189
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8365ff5f42d85698965fe0d63d70c719a037f530
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945715"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961370"
 ---
 # <a name="approval-resource-type"></a>tipo de recurso de aprovação
 
@@ -32,7 +32,7 @@ Em [userConsentRequests](../resources/userconsentrequest.md), o objeto de aprova
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador do objeto de aprovação.|
+|id|Cadeia de caracteres|O identificador do objeto de aprovação.  No gerenciamento de direitos, ele é o mesmo identificador do identificador da solicitação de atribuição [do pacote de acesso.](accesspackageassignmentrequest.md)|
 |etapas|[Coleção approvalStep](../resources/approvalstep.md)|Usado para representar a decisão associada a uma única etapa no processo de aprovação configurado em [approvalStage](../resources/approvalstage.md).|
 
 ## <a name="relationships"></a>Relações

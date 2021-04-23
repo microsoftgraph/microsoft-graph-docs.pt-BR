@@ -1,16 +1,16 @@
 ---
 title: Listar tarefas
-description: Recupere uma lista de objetos assignment. Um professor tem permissão para ver todos os objetos Assignment da classe. Os alunos só podem ver as atribuições atribuídas a eles.
+description: Recupere uma lista de objetos de atribuição. Um professor ou um aplicativo que executa com permissões de aplicativo tem permissão para ver todos os objetos de atribuição da classe. Os alunos só podem ver atribuições atribuídas a eles.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2667f2248e712cc6f84f6f2214de7006c3b8d3c7
-ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
+ms.openlocfilehash: 474de134eceb456585a5c8df6d12347c4b9a802c
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675981"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961258"
 ---
 # <a name="list-assignments"></a>Listar tarefas
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos assignment. Um professor tem permissão para ver todos os objetos Assignment da classe. Os alunos só podem ver as atribuições atribuídas a eles.
+Recupere uma lista de objetos de atribuição. Um professor ou um aplicativo que executa com permissões de aplicativo tem permissão para ver todos os objetos de atribuição da classe. Os alunos só podem ver atribuições atribuídas a eles.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
-| Aplicativo                            | Sem suporte.                                                                                         |
+| Aplicativo                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -91,7 +91,7 @@ Content-length: 344
   "value": [
     {
       "id": "19002",
-      "addedStudentAction": "String",
+      "addedStudentAction": "none",
       "allowLateSubmissions": true,
       "allowStudentsToAddResourcesToSubmission": true,
       "assignDateTime": "2014-02-01T00:00:00Z",
@@ -127,7 +127,7 @@ Content-length: 344
           }
       },
       "lastModifiedDateTime": "2014-02-01T00:00:00Z",
-      "notificationChannelUrl": "String",
+      "notificationChannelUrl": null,
       "status": "published"
     }
   ]

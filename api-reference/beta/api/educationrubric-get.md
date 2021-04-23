@@ -1,16 +1,16 @@
 ---
 title: Obter educationRubric
-description: Recupere as propriedades e os relacionamentos de um objeto educationrubric.
+description: Recupere as propriedades e as relações de um objeto educationrubric.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 265b94d9ba9c4ccf3532b071c0bdae77e899a93b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d3e5c474869d906b9597324c678f6ef0733ae57b
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965997"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961244"
 ---
 # <a name="get-educationrubric"></a>Obter educationRubric
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [educationRubric](../resources/educationrubric.md) .
+Recupere as propriedades e as relações de um [objeto educationRubric.](../resources/educationrubric.md)
 
-Observe que ao obter o amostra rubric de uma atribuição ( `GET /education/me/assignments/{id}/rubric` ), o que é retornado é uma cópia imutável do amostra rubric original existente em `/education/users/{id}/rubrics` . A cópia é associada a essa atribuição específica.
+Observe que, ao obter a rubrica de uma atribuição ( ), o que é retornado é uma cópia imutável da rubrica original que `GET /education/me/assignments/{id}/rubric` existe em `/education/users/{id}/rubrics` . A cópia está associada a essa atribuição específica.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [educationRubric](../resources/educationrubric.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [educationRubric](../resources/educationrubric.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

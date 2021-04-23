@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: feed3844717dffbfcc98a0e11db31da4a0550e05
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7fa35d99c8c77240a182b5d28a0fdb896153aa8b
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945674"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961132"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>Tipo de recurso featureRolloutPolicy
 
@@ -28,7 +28,7 @@ Veja a seguir as limitações da adoção de recursos:
 - O **campo appliesTo só** dá suporte a grupos.
 - Não há suporte para grupos dinâmicos e grupos aninhados.
 
-A seguir estão os pré-requisitos para cada um dos recursos atualmente com suporte para a adoção usando essa política de lançamento.
+A seguir estão os pré-requisitos para cada um dos recursos atualmente suportados para a adoção usando essa política de lançamento.
 
 ### <a name="passthrough-authentication"></a>Autenticação passo a passo
 
@@ -69,7 +69,7 @@ A seguir estão os pré-requisitos para cada um dos recursos atualmente com supo
 |displayName|Cadeia de caracteres|O nome de exibição dessa política de lançamento de recursos.|
 |feature|stagedFeatureName| Os valores possíveis são: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`.|
 |id|String| Somente leitura.|
-|isAppliedToOrganization|Booliano|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
+|isAppliedToOrganization|Boolean|Indica se essa política de lançamento de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Booliano|Indica se a adoção de recursos está habilitada.|
 
 ## <a name="relationships"></a>Relações
