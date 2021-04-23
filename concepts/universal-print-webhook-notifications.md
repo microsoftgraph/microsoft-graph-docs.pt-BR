@@ -5,12 +5,12 @@ author: jahsu
 localization_priority: Priority
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f5413cc178f220b34c37aa1fc4840596003561bc
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: d7b4aa230e3f3b93997de51e014c52581d5f9f8b
+ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031104"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51920387"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>Assine para alterar notificações de APIs de impressão na nuvem usando o Microsoft Graph
 
@@ -31,7 +31,7 @@ Antes de aproveitar as vantagens das notificações de alteração por meio do M
 A Impressão Universal atualmente oferece suporte a notificações para dois cenários relacionados a trabalhos de impressão:
 
 * PrintTask é acionado (JobStarted): um aplicativo pode se inscrever para receber notificações quando o printTask(gancho) é acionado.
-Para obter detalhes sobre como acionar uma tarefa, confira [Estendendo a Impressão Universal para oferecer suporte ao pull de impressão](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing). Atualmente, um printTask pode ser acionado apenas para um evento JobStarted. Um evento JobStarted é gerado quando um trabalho de impressão é criado com sucesso, seu conteúdo é carregado e o processamento de trabalho é iniciado.  
+Para obter detalhes sobre como acionar uma tarefa, confira [Estendendo a Impressão Universal para oferecer suporte ao pull de impressão](./universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing). Atualmente, um printTask pode ser acionado apenas para um evento JobStarted. Um evento JobStarted é gerado quando um trabalho de impressão é criado com sucesso, seu conteúdo é carregado e o processamento de trabalho é iniciado.  
 
 * Jobfetchable: após o início do trabalho, aplicativos de impressão de terceiros ou a Impressão Universal podem fazer algum processamento (como converter o conteúdo XPS em PDF para uma impressora PDF). Depois que o processamento for concluído e a conteúdo estiver pronto para ser baixado por uma impressora, um evento JobFetchable é gerado para o trabalho de impressão correspondente.
 
@@ -40,7 +40,7 @@ Para obter detalhes sobre como acionar uma tarefa, confira [Estendendo a Impress
 
 ### <a name="create-an-application-to-listen-to-notifications"></a>Crie um aplicativo para ouvir as notificações
 
-Para obter informações sobre como ouvir as notificações do Microsoft Graph, confira [Usar notificações de alteração e controlar alterações com o Microsoft Graph](https://docs.microsoft.com/learn/modules/msgraph-changenotifications-trackchanges/) e [Configurar notificações para alterações nos dados do usuário – Exemplos de código](/graph/webhooks#code-samples).
+Para obter informações sobre como ouvir as notificações do Microsoft Graph, confira [Usar notificações de alteração e controlar alterações com o Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges/) e [Configurar notificações para alterações nos dados do usuário – Exemplos de código](./webhooks.md#code-samples).
 
 
 ### <a name="scopes"></a>Escopos
@@ -51,7 +51,7 @@ Para assinar as notificações de trabalhos de impressão, os aplicativos devem 
 
 * Para evento JobFetchable, as permissões listadas em [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http).
 
-Os aplicativos devem [gerar e usar o token de segurança do Azure AD](/graph/auth-v2-service?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) no cabeçalho de solicitação da API do Microsoft Graph. O token de segurança contém as declarações de acordo com os escopos aprovados para o locatário do Azure AD do cliente por seu administrador.  
+Os aplicativos devem [gerar e usar o token de segurança do Azure AD](/graph/auth-v2-service?context=graph%2Fapi%2F1.0) no cabeçalho de solicitação da API do Microsoft Graph. O token de segurança contém as declarações de acordo com os escopos aprovados para o locatário do Azure AD do cliente por seu administrador.  
 
 
 ## <a name="create-subscription-printtask-triggered-jobstarted-event"></a>Criar assinatura: evento printTask acionado (JobStarted) 
@@ -195,10 +195,10 @@ Os aplicativos podem [obter](/graph/api/subscription-get?view=graph-rest-v1.0&ta
 ## <a name="faqs"></a>Perguntas frequentes
 ### <a name="how-does-microsoft-graph-validate-notification-urls"></a>Como o Microsoft Graph valida as URLs de notificação?
 O Microsoft Graph valida o ponto de extremidade da notificação fornecido na propriedade **notificationUrl** da solicitação da assinatura antes de criá-la.
-Para obter detalhes, confira [Validação do ponto de extremidade da notificação](/graph/webhooks#notification-endpoint-validation).
+Para obter detalhes, confira [Validação do ponto de extremidade da notificação](./webhooks.md#notification-endpoint-validation).
 
 ### <a name="what-are-applications-expected-to-do-after-receiving-a-change-notification"></a>O que os aplicativos devem fazer após receber uma notificação de alteração?
-Os aplicativos devem processar e reconhecer todas as notificações de alteração recebidas. Para obter detalhes, confira [Processando a notificação de alteração](/graph/webhooks#processing-the-change-notification).
+Os aplicativos devem processar e reconhecer todas as notificações de alteração recebidas. Para obter detalhes, confira [Processando a notificação de alteração](./webhooks.md#processing-the-change-notification).
 
 ### <a name="how-can-i-get-a-list-of-active-subscriptions"></a>Como posso obter uma lista de assinaturas ativas?
 Para obter detalhes sobre como recuperar uma lista de assinaturas de webhook, confira [Listar assinaturas](/graph/api/subscription-list?view=graph-rest-v1.0&tabs=http).

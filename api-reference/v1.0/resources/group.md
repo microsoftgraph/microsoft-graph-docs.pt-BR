@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 2fb76f1409b779c40a3f624cc429cb3040cc0eaf
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 027f3df4ef061d4b620d9eaa177327d2edce9140
+ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468797"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51944202"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -179,6 +179,7 @@ Esse recurso permite:
 |membersWithLicenseErrors|Coleção [user](user.md)|Uma lista de membros do grupo com erros de licença desse grupo baseado em atribuição de licença. Somente leitura.|
 |onenote|[Onenote](onenote.md)| Somente leitura.|
 |owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Limitado a 100 proprietários. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Microsoft 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Microsoft 365 e grupos de segurança). Anulável.|
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|A permissão que foi concedida a um grupo para um aplicativo específico.|
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do grupo |
 |fotos|Coleção [profilePhoto](profilephoto.md)| As fotos de perfil pertencentes ao grupo. Somente leitura. Anulável.|
 |planejador|[plannerGroup](plannergroup.md)| Ponto de entrada para o recurso Planejador que pode existir para um Grupo unificado.|
