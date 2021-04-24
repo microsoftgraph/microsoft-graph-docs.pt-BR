@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c4a64d2945a0e7852d7b90694ac361a608370ac9
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: aa0a489324f883061a461e8df82d763fab02ca86
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773841"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51987566"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var legalHold = new LegalHold
+var legalHold = new Microsoft.Graph.Ediscovery.LegalHold
 {
     Description = "String",
     CreatedBy = new IdentitySet

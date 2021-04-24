@@ -5,33 +5,33 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4734cb09b948bb8e900d6a16c660d606e4cbaf88
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 1862f080194f8a55c8ba0ec6fcc37d9f94b51b58
+ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582687"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "51961342"
 ---
-# <a name="get-chat"></a><span data-ttu-id="a0725-103">Obter bate-papo</span><span class="sxs-lookup"><span data-stu-id="a0725-103">Get chat</span></span>
+# <a name="get-chat"></a><span data-ttu-id="238ec-103">Obter bate-papo</span><span class="sxs-lookup"><span data-stu-id="238ec-103">Get chat</span></span>
 
-<span data-ttu-id="a0725-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a0725-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="238ec-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="238ec-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a0725-105">Recupere um único [bate-papo](../resources/chat.md) (sem suas mensagens).</span><span class="sxs-lookup"><span data-stu-id="a0725-105">Retrieve a single [chat](../resources/chat.md) (without its messages).</span></span>
+<span data-ttu-id="238ec-105">Recupere um único [bate-papo](../resources/chat.md) (sem suas mensagens).</span><span class="sxs-lookup"><span data-stu-id="238ec-105">Retrieve a single [chat](../resources/chat.md) (without its messages).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a0725-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a0725-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="238ec-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="238ec-106">Permissions</span></span>
 
-<span data-ttu-id="a0725-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a0725-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="238ec-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="238ec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="a0725-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a0725-109">Permission type</span></span>      | <span data-ttu-id="a0725-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a0725-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="238ec-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="238ec-109">Permission type</span></span>      | <span data-ttu-id="238ec-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="238ec-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a0725-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a0725-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a0725-112">Chat.ReadBasic, Chat.Read, Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a0725-112">Chat.ReadBasic, Chat.Read, Chat.ReadWrite</span></span> |
-|<span data-ttu-id="a0725-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a0725-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0725-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a0725-114">Not supported.</span></span>    |
-|<span data-ttu-id="a0725-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a0725-115">Application</span></span> | <span data-ttu-id="a0725-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a0725-116">Not supported.</span></span> |
+|<span data-ttu-id="238ec-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="238ec-111">Delegated (work or school account)</span></span> | <span data-ttu-id="238ec-112">Chat.ReadBasic, Chat.Read, Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="238ec-112">Chat.ReadBasic, Chat.Read, Chat.ReadWrite</span></span> |
+|<span data-ttu-id="238ec-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="238ec-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="238ec-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="238ec-114">Not supported.</span></span>    |
+|<span data-ttu-id="238ec-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="238ec-115">Application</span></span> | <span data-ttu-id="238ec-116">Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="238ec-116">Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a0725-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a0725-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="238ec-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="238ec-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -40,62 +40,41 @@ GET /users/{user-id}/chats/{chat-id}
 GET /chats/{chat-id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="a0725-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a0725-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="238ec-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="238ec-118">Optional query parameters</span></span>
 
-<span data-ttu-id="a0725-119">Esta operação não é atualmente compatível com [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a0725-119">This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="238ec-119">Esta operação não é atualmente compatível com [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="238ec-119">This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a0725-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a0725-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="238ec-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="238ec-120">Request headers</span></span>
 
-| <span data-ttu-id="a0725-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a0725-121">Header</span></span>       | <span data-ttu-id="a0725-122">Valor</span><span class="sxs-lookup"><span data-stu-id="a0725-122">Value</span></span> |
+| <span data-ttu-id="238ec-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="238ec-121">Header</span></span>       | <span data-ttu-id="238ec-122">Valor</span><span class="sxs-lookup"><span data-stu-id="238ec-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="a0725-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="a0725-123">Authorization</span></span>  | <span data-ttu-id="a0725-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a0725-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="238ec-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="238ec-123">Authorization</span></span>  | <span data-ttu-id="238ec-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="238ec-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="a0725-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a0725-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="238ec-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="238ec-126">Request body</span></span>
 
-<span data-ttu-id="a0725-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a0725-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="238ec-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="238ec-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a0725-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0725-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="238ec-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="238ec-128">Response</span></span>
 
-<span data-ttu-id="a0725-129">Se bem sucedido, esse método retorna um código de resposta `200 OK` e uma coleção de objetos de [bate-papo](../resources/chat.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a0725-129">If successful, this method returns a `200 OK` response code and a collection of [chat](../resources/chat.md) objects in the response body.</span></span>
+<span data-ttu-id="238ec-129">Se bem sucedido, esse método retorna um código de resposta `200 OK` e uma coleção de objetos de [bate-papo](../resources/chat.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="238ec-129">If successful, this method returns a `200 OK` response code and a collection of [chat](../resources/chat.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a0725-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a0725-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a0725-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a0725-131">Request</span></span>
-<span data-ttu-id="a0725-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a0725-132">The following is an example of the request.</span></span>
+## <a name="examples"></a><span data-ttu-id="238ec-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="238ec-130">Examples</span></span>
 
+### <a name="example-1-get-a-group-chat"></a><span data-ttu-id="238ec-131">Exemplo 1: obtenha um chat em grupo</span><span class="sxs-lookup"><span data-stu-id="238ec-131">Example 1: Get a group chat</span></span>
+#### <a name="request"></a><span data-ttu-id="238ec-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="238ec-132">Request</span></span>
+<span data-ttu-id="238ec-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="238ec-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a0725-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="a0725-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chat"
+  "name": "get_group_chat"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces
+```http
+GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2
 ```
-# <a name="c"></a>[<span data-ttu-id="a0725-134">C#</span><span class="sxs-lookup"><span data-stu-id="a0725-134">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a0725-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a0725-135">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="238ec-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="238ec-134">Response</span></span>
+<span data-ttu-id="238ec-135">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="238ec-135">The following example shows the response.</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="a0725-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a0725-136">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="a0725-137">Java</span><span class="sxs-lookup"><span data-stu-id="a0725-137">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chat-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
-
-##### <a name="response"></a><span data-ttu-id="a0725-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0725-138">Response</span></span>
-<span data-ttu-id="a0725-139">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="a0725-139">The following example shows the response.</span></span>
-
-><span data-ttu-id="a0725-140">**Observação:** O objeto de resposta mostrado aqui é encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a0725-140">**Note:** The response object shown here is shortened for readability.</span></span> <span data-ttu-id="a0725-141">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a0725-141">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +83,60 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
+    "id": "19:b8577894a63548969c5c92bb9c80c5e1@thread.v2",
+    "topic": "test group 1",
+    "createdDateTime": "2021-04-06T19:49:52.431Z",
+    "lastUpdatedDateTime": "2021-04-06T19:54:04.306Z",
+    "chatType": "group"
+}
+```
+
+### <a name="example-2-get-a-users-one-on-one-chat"></a><span data-ttu-id="238ec-136">Exemplo 2: obtenha um bate-papo individual de um usuário</span><span class="sxs-lookup"><span data-stu-id="238ec-136">Example 2: Get a user's one on one chat</span></span>
+#### <a name="request"></a><span data-ttu-id="238ec-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="238ec-137">Request</span></span>
+<span data-ttu-id="238ec-138">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="238ec-138">The following is an example of the request.</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="238ec-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="238ec-139">HTTP</span></span>](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_chat"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces
+```
+# <a name="c"></a>[<span data-ttu-id="238ec-140">C#</span><span class="sxs-lookup"><span data-stu-id="238ec-140">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="238ec-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="238ec-141">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="238ec-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="238ec-142">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="238ec-143">Java</span><span class="sxs-lookup"><span data-stu-id="238ec-143">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="238ec-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="238ec-144">Response</span></span>
+<span data-ttu-id="238ec-145">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="238ec-145">The following example shows the response.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
@@ -113,6 +145,103 @@ Content-length: 201
     "createdDateTime": "2019-04-18T23:51:42.099Z",
     "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z",
     "chatType": "oneOnOne"
+}
+```
+
+### <a name="example-3-get-a-chat-and-all-its-members"></a><span data-ttu-id="238ec-146">Exemplo 3: obtenha um bate-papo e todos os seus membros</span><span class="sxs-lookup"><span data-stu-id="238ec-146">Example 3: Get a chat and all its members</span></span>
+#### <a name="request"></a><span data-ttu-id="238ec-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="238ec-147">Request</span></span>
+<span data-ttu-id="238ec-148">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="238ec-148">The following is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_chat_withmembers"
+}-->
+```http
+GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2?$expand=members
+```
+
+#### <a name="response"></a><span data-ttu-id="238ec-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="238ec-149">Response</span></span>
+<span data-ttu-id="238ec-150">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="238ec-150">The following example shows the response.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats(members())/$entity",
+    "id": "19:b8577894a63548969c5c92bb9c80c5e1@thread.v2",
+    "topic": "test group 1",
+    "createdDateTime": "2021-04-06T19:49:52.431Z",
+    "lastUpdatedDateTime": "2021-04-21T17:13:44.033Z",
+    "chatType": "group",
+    "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ab8577894a63548969c5c92bb9c80c5e1%40thread.v2')/members",
+    "members": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiODU3Nzg5NGE2MzU0ODk2OWM1YzkyYmI5YzgwYzVlMUB0aHJlYWQudjIjIzhjMGExYTY3LTUwY2UtNDExNC1iYjZjLWRhOWM1ZGJjZjZjYQ==",
+            "roles": [
+                "owner"
+            ],
+            "displayName": "John Doe",
+            "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
+            "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+            "email": "john@contoso.onmicrosoft.com",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiODU3Nzg5NGE2MzU0ODk2OWM1YzkyYmI5YzgwYzVlMUB0aHJlYWQudjIjIzQ1OTVkMmYyLTdiMzEtNDQ2Yy04NGZkLTliNzk1ZTYzMTE0Yg==",
+            "roles": [
+                "owner"
+            ],
+            "displayName": "Test User 1",
+            "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
+            "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+            "email": "testuser1@contoso.onmicrosoft.com",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiODU3Nzg5NGE2MzU0ODk2OWM1YzkyYmI5YzgwYzVlMUB0aHJlYWQudjIjIzgyZmU3NzU4LTViYjMtNGYwZC1hNDNmLWU1NTVmZDM5OWM2Zg==",
+            "roles": [
+                "owner"
+            ],
+            "displayName": "Test User 2",
+            "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
+            "userId": "82fe7758-5bb3-4f0d-a43f-e555fd399c6f",
+            "email": "testuser2@contoso.onmicrosoft.com",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiODU3Nzg5NGE2MzU0ODk2OWM1YzkyYmI5YzgwYzVlMUB0aHJlYWQudjIjIzJjOGQyYjVjLTE4NDktNDA2Ni1iNTdkLWU3YTBlOWU0NGVjOA==",
+            "roles": [
+                "owner"
+            ],
+            "displayName": "Test User 3",
+            "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
+            "userId": "2c8d2b5c-1849-4066-b57d-e7a0e9e44ec8",
+            "email": "testuser3@contoso.onmicrosoft.com",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiODU3Nzg5NGE2MzU0ODk2OWM1YzkyYmI5YzgwYzVlMUB0aHJlYWQudjIjIzhlYTBlMzhiLWVmYjMtNDc1Ny05MjRhLTVmOTQwNjFjZjhjMg==",
+            "roles": [
+                "owner"
+            ],
+            "displayName": "Test User 4",
+            "visibleHistoryStartDateTime": "2021-04-20T17:13:43.715Z",
+            "userId": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "email": "testuser4@contoso.onmicrosoft.com",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+        }
+    ]
 }
 ```
 

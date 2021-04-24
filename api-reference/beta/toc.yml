@@ -977,7 +977,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: Listar memberOf transitivos
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -11227,6 +11227,19 @@ items:
                     items:
                       - name: List
                         href: api/accesspackageassignment-list.md
+                  - name: Aprovação de atribuição de pacote de acesso
+                    href: resources/approval.md
+                    items:
+                      - name: Etapa de aprovação
+                        href: resources/approvalstep.md
+                      - name: Obter aprovação
+                        href: api/approval-get.md
+                      - name: Listar etapas de aprovação
+                        href: api/approval-list-steps.md
+                      - name: Obter etapa de aprovação
+                        href: api/approvalstep-get.md
+                      - name: Atualizar etapa de aprovação
+                        href: api/approvalstep-update.md
                   - name: Política de atribuição de pacote de acesso
                     href: resources/accesspackageassignmentpolicy.md
                     items:
@@ -11319,20 +11332,6 @@ items:
                         href: api/connectedorganization-delete-externalsponsors.md
                       - name: Remover patrocinadores internos
                         href: api/connectedorganization-delete-internalsponsors.md
-                  - name: Aprovação
-                    href: resources/approval.md
-                    items:
-                      - name: Obter
-                        href: api/approval-get.md
-                  - name: Etapa de aprovação
-                    href: resources/approvalstep.md
-                    items:
-                      - name: Lista
-                        href: api/approval-list-steps.md
-                      - name: Obter
-                        href: api/approvalstep-get.md
-                      - name: Atualizar
-                        href: api/approvalstep-update.md
                   - name: Configurações de gerenciamento de direitos
                     href: resources/entitlementmanagementsettings.md
                     items:
