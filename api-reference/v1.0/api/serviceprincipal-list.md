@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 48697a400cbc7b39fea6bf2f0be917218f9f36b7
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 24840c245b714ab3f3a567d0e5fe6d26e5302262
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882569"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996105"
 ---
 # <a name="list-serviceprincipals"></a>Listar servicePrincipals
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
@@ -109,7 +109,6 @@ Content-type: application/json
     {
       "accountEnabled":true,
       "displayName":"amasf",
-      "publisherName":"Contoso",
       "servicePrincipalType":"Application",
       "signInAudience":"AzureADMyOrg"
     }
@@ -184,7 +183,6 @@ Content-type: application/json
     {
       "accountEnabled":true,
       "displayName":"a",
-      "publisherName":"Contoso",
       "servicePrincipalType":"Application",
       "signInAudience":"AzureADMyOrg"
     }
@@ -230,7 +228,6 @@ Content-type: application/json
     {
       "accountEnabled":true,
       "displayName":"myContosoTeam",
-      "publisherName":"Contoso",
       "servicePrincipalType":"Application",
       "signInAudience":"AzureADMyOrg"
     }
