@@ -5,12 +5,12 @@ author: anandjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cea6e29ace4907a7a573086de30a6d7fad8b1abb
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: d0193d0b6e9b3c002762f13b27b2c6839ca2f7d0
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202083"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996140"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -599,7 +599,7 @@ Content-Length: 0
 
 O exemplo a seguir mostra como criar uma equipe para mensagens importadas.
 
->**Observação:** No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
+>**Observação**: no futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
 
 >**Observação:** Equipes criadas no modo de migração só suportam o modelo `standard`.
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3a7a7e5218e58891649a0caae7d7de43e5629288
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e6b49f389e59b3f314414e2766a5e8fe9e3a9a6c
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433163"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996098"
 ---
 # <a name="b2cauthenticationmethodspolicy-resource-type"></a>Tipo de recurso b2cAuthenticationMethodsPolicy
 
@@ -36,6 +36,7 @@ As contas locais no Azure AD B2C não seguem as configurações ou paradigmas do
 |id|String|A id da política de métodos de autenticação do B2C. Esta é a chave e uma propriedade somente leitura.|
 |isEmailPasswordAuthenticationEnabled|Booliano|O administrador de locatário pode configurar contas locais usando o email se o método de autenticação de email e senha estiver habilitado.|
 |isUserNameAuthenticationEnabled|Booliano|O administrador de locatários pode configurar contas locais usando o nome de usuário se o método de autenticação do nome de usuário e senha estiver habilitado.|
+|isPhoneOneTimePasswordAuthenticationEnabled|Boolean|O administrador de locatários poderá configurar contas locais usando o número de telefone se o número de telefone e o método de autenticação de senha única estiver habilitado.|
 
 ## <a name="relationships"></a>Relações
 
@@ -58,7 +59,8 @@ Veja a seguir uma representação JSON do recurso.
 {
     "id": "b2CAuthenticationMethodsPolicy",
     "isEmailPasswordAuthenticationEnabled": true,
-    "isUserNameAuthenticationEnabled": false
+    "isUserNameAuthenticationEnabled": false,
+    "isPhoneOneTimePasswordAuthenticationEnabled": true
 }
 ```
 

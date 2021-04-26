@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e8cf8ba0d1f0af33b726d9df9fdc31045e6c4f97
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f2da149c32e10c0871decf1f8be96144b66b173a
+ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438376"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "51996119"
 ---
 # <a name="update-b2cauthenticationmethodspolicy"></a>Atualizar b2cAuthenticationMethodsPolicy
 
@@ -55,6 +55,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao atualizar [b2cAuthenti
 |:-------------|:------------|:------------|
 |isEmailPasswordAuthenticationEnabled|Booliano|O administrador de locatário pode configurar contas locais usando o email se o método de autenticação de email e senha estiver habilitado.|
 |isUserNameAuthenticationEnabled|Booliano|O administrador de locatários pode configurar contas locais usando o nome de usuário se o método de autenticação do nome de usuário e senha estiver habilitado.|
+|isPhoneOneTimePasswordAuthenticationEnabled|Boolean|O administrador de locatários poderá configurar contas locais usando o número de telefone se o número de telefone e o método de autenticação de senha única estiver habilitado.|
 
 ## <a name="response"></a>Resposta
 
@@ -78,7 +79,8 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 
 {
     "isEmailPasswordAuthenticationEnabled": false,
-    "isUserNameAuthenticationEnabled": true
+    "isUserNameAuthenticationEnabled": true,
+    "isPhoneOneTimePasswordAuthenticationEnabled": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
