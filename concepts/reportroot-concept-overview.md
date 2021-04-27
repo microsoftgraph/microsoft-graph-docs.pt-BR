@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3dd9e752de384970c00d828a2a9c672e65100f2f
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 52247aa125745055f4fec5b651c8c175597d1b82
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982226"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055593"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Visão geral da API de relatórios do Microsoft Graph
 
@@ -24,9 +24,9 @@ A API de relatórios do Microsoft Graph permite entender as atividades de aplica
 Muitas empresas têm soluções de relatório existentes que utilizam um aplicativo ou o portal da Web para gerar relatórios. Você pode usar a API de relatórios para incorporar os dados de uso do Microsoft 365 à solução de relatórios existente na sua organização, para que todos os relatórios do serviço de TI estejam em um único local.
 
 ### <a name="retain-usage-reports-for-historical-analysis"></a>Reter relatórios de uso para análise de histórico
-Você pode usar a API de relatórios para obter os dados que estão disponíveis em todos os relatórios de uso, incluindo resumos no nível da organização de acordo com o serviço, informações de uso no nível da entidade (usuários, sites, contas) para os últimos 7/30/90/180 dias e agregações de atividades diárias. Isso permite que você mantenha informações de uso históricas por quanto tempo precisar.
+Você pode usar a API de relatórios para obter os dados que estão disponíveis nos relatórios de uso, incluindo resumos no nível da organização de acordo com o serviço, informações de uso no nível da entidade (usuários, sites, contas) dos últimos 7/30/90/180 dias e agregações de atividades diárias. Isso lhe dá a opção de manter informações históricas de uso pelo tempo que for necessário.
 
-### <a name="analize-ad-fs-application-activity-and-configuration"></a>Analisar atividade e configuração de aplicativos do AD FS
+### <a name="analyze-ad-fs-application-activity-and-configuration"></a>Analise a atividade e configuração do aplicativo AD FS
 Fornece informações sobre uma terceira parte confiável configurada com os Serviços de Federação do Active Directory (AD FS), seu uso agregado e se a configuração da terceira parte confiável pode ser migrada para o Azure Active Directory.
 
 ### <a name="monitor-application-sign-ins"></a>Monitorar logins de aplicativos
@@ -46,7 +46,6 @@ Entenda melhor como seus usuários acessam e utilizam os serviços do Microsoft 
 Você pode utilizar as APIs de relatórios para acessar os conjuntos de dados listados na tabela a seguir.
 
 | APIs de relatórios | Conjunto de dados |
-|:------------ |:-------- |
 |:------------ |:-------- |
 | Atividade | [Auditoria de diretório](/graph/api/resources/directoryaudit?view=graph-rest-1.0)<br/>[Entrar](/graph/api/resources/signin?view=graph-rest-1.0)<br/>[Provisionamento (Visualização)](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) |
 | Aplicativos AD FS | [Resumo detalhado da parte de confiança (Visualização)](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta) |

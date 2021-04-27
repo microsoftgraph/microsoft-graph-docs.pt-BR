@@ -12,5 +12,5 @@ ms.locfileid: "50243095"
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> As APIs sob `/beta` a versão do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção. Para determinar se uma API está disponível na versão 1.0, use o **seletor de** versão.
+> APIs na `/beta` versão no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção. Para determinar se uma API está disponível em v1.0, use o **seletor De** versão.
 
