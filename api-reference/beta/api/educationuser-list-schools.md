@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: aa75b11a875095bfaff52e4f8fbc11f9ab3f4522
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b2b351a130dcb33c4e4f94c33edb31104f0714b8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951057"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042706"
 ---
 # <a name="list-schools"></a>Listar escolas
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
 > Quando as permissões delegadas são usadas, somente os recursos educationSchool que o usuário de autenticação é membro serão retornados.
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/education/me/schools
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

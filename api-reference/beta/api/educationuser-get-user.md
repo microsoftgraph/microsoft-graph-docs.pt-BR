@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b0a932d0e90e4ccacacbebba249a2bc6990dc89b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 88db1f007245c2d48115478236dbb163f10a7ac6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951198"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042895"
 ---
 # <a name="get-user"></a>Obter usuário
 
@@ -31,7 +31,7 @@ Uma combinação de permissões é obrigatória para chamar essa API. Para saber
 | :------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                            |
-| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All                                       |
+| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/education/me/user
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f6a8dd354a93ec2a99c739585c4562e17552bb47
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 1810fe299b62a52c2b56d9fccb2f312638beff06
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574241"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043105"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>Obter um educationSynchronizationProfile
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.Read, EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Aplicativo| EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+|Application| EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

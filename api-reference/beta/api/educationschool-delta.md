@@ -1,24 +1,24 @@
 ---
-title: 'educationSchool: Delta'
-description: Obter escolas recém-criadas ou atualizadas sem ter que realizar uma leitura completa de toda a coleção de escola.
+title: 'educationSchool: delta'
+description: Get newly created or updated schools without having to perform a full read of the entire school collection.
 localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7e2108faa364f15dd968a39c00afa104eef9652b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9491a958776797252eada5116b48b25a936b4111
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965926"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043462"
 ---
-# <a name="educationschool-delta"></a>educationSchool: Delta
+# <a name="educationschool-delta"></a>educationSchool: delta
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter escolas recém-criadas ou atualizadas sem ter que realizar uma leitura completa de toda a coleção de escola. Consulte [usar a consulta Delta](/graph/delta-query-overview) para obter detalhes.
+Get newly created or updated schools without having to perform a full read of the entire school collection. Consulte [Usar consulta delta para](/graph/delta-query-overview) obter detalhes.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                              |
 | :------------------------------------- | :----------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | EduRoster. ReadBasic, EduRoster. Read ou EduRoster. ReadWrite              |
+| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic, EduRoster.Read ou EduRoster.ReadWrite              |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                           |
-| Application                            | EduRoster. ReadBasic. All, EduRoster. Read. All ou EduRoster. WriteWrite. All |
+| Application                            | EduRoster.ReadBasic.All, EduRoster.Read.All ou EduRoster.WriteWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção [educationSchool](../resources/educationschool.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto da coleção educationSchool](../resources/educationschool.md) no corpo da resposta.
 
 > [!IMPORTANT]
 > educationSchool deltas não incluem escolas excluídas.
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/education/schools/delta
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

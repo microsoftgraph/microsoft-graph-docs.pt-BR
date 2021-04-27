@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4f569834f3b21b287571d9560cfefbec9f36f943
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: acfcbd41c07cd9e308e6ad1d705c8590298e04f3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954827"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042552"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -47,7 +47,7 @@ GET /groups/{id}/events/{id}/attachments
 
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Em particular, você pode usar o `$expand` parâmetro de consulta para incluir todos os anexos de evento embutidos com o restante das propriedades do evento. Por exemplo:
+Em particular, você pode usar o parâmetro de consulta para incluir todos os anexos de evento em linha com o `$expand` restante das propriedades do evento. Por exemplo:
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "event_get_attachments_beta",

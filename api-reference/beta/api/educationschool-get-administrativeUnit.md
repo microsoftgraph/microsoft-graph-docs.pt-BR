@@ -1,16 +1,16 @@
 ---
 title: Obter administrativeUnit
-description: Recupere o diretório simples **administrativeUnit** que corresponde a esse **educationSchool**.
+description: Recupere o diretório **simples administrativeUnit** que corresponde a este **educationSchool**.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 109f5a014674ee143305469e06c6b2af60592f19
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e3e619f67839f4ed733b87bf00d11da010330518
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955607"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043441"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o diretório simples **administrativeUnit** que corresponde a esse **educationSchool**.
+Recupere o diretório **simples administrativeUnit** que corresponde a este **educationSchool**.
 
 >**Observação:** se o token delegado for usado, os membros só poderão ver informações sobre as próprias escolas. Nesse caso, use o recurso `...beta/education/me/schools`.
 
@@ -44,7 +44,7 @@ GET /education/schools/{id}/administrativeUnit
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/education/schools/2961761D-8094-4183-A9F6-8
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

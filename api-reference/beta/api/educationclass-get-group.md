@@ -1,16 +1,16 @@
 ---
 title: Obter grupo
-description: Recupere o **grupo** Microsoft 365 que corresponde a esse **educationClass**.
+description: Recupere o Microsoft 365 **grupo que** corresponde a esta **educationClass**.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5cff82e4b9c93502aacb390925af034159aba101
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ca134cfabe18defd818af94b9354b5f6458b0d61
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966310"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044050"
 ---
 # <a name="get-group"></a>Obter grupo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o **grupo** Microsoft 365 que corresponde a esse **educationClass**.
+Recupere o Microsoft 365 **grupo que** corresponde a esta **educationClass**.
 
 >**Observação:** se o token delegado for usado, os membros só poderão ver informações sobre as próprias escolas. Nesse caso, use o recurso `...beta/education/me/schools`.
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

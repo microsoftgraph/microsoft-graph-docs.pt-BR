@@ -1,31 +1,31 @@
 ---
 title: Criar educationAssignmentResource
-description: OData. Type para indicar o tipo de recurso que está sendo criado. Observe que os recursos baseados em arquivo devem primeiro ser carregados no **resourceFolder**de atribuições.
+description: odata.type para indicar qual tipo de recurso está sendo criado. Observe que os recursos baseados em arquivo devem primeiro ser carregados para as atribuições **resourceFolder**.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1e432d4521ffe871de75be4ae8764953d99a3abc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8001af1c46ee374d47c9235f67080f87af74b4bc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002552"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044253"
 ---
 # <a name="create-educationassignmentresource"></a>Criar educationAssignmentResource
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um [recurso de atribuição](../resources/educationassignmentresource.md). O próprio recurso tem um @odata. Type para indicar o tipo de recurso que está sendo criado. Observe que os recursos baseados em arquivo devem primeiro ser carregados no **resourceFolder**de atribuições.
+Criar um [recurso de atribuição](../resources/educationassignmentresource.md). O recurso em si tem um @odata.type para indicar qual tipo de recurso está sendo criado. Observe que os recursos baseados em arquivo devem primeiro ser carregados para as atribuições **resourceFolder**.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte.  | 
 
@@ -41,11 +41,11 @@ POST /education/classes/{id}/assignments/{id}/resources
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [educationAssignmentResource](../resources/educationassignmentresource.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto educationAssignmentResource.](../resources/educationassignmentresource.md)
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [educationAssignmentResource](../resources/educationassignmentresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto educationAssignmentResource](../resources/educationassignmentresource.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -69,11 +69,11 @@ Content-length: 212
 }
 
 ```
-No corpo da solicitação, forneça uma representação JSON do objeto [educationAssignmentResource](../resources/educationassignmentresource.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto educationAssignmentResource.](../resources/educationassignmentresource.md)
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 
 <!-- {

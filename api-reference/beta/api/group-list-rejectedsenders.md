@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: adacc97fa00880b9be16667b5d04823864b78d15
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 657f6a847d8d00b8543a2d560e5a6eac955243c5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953855"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52041453"
 ---
 # <a name="list-rejectedsenders"></a>Listar rejectedSenders
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/rejectedSenders
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

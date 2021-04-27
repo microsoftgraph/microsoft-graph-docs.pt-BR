@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 17e2ff0f96706c50095a5620b6e729ace157c0c8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e0bcea6b95b83cad3f4467e0a3687a3e2c401b56
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965968"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043476"
 ---
 # <a name="update-educationrubric"></a>Atualizar educationRubric
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [educationRubric](../resources/educationrubric.md) .
+Atualize as propriedades de um [objeto educationRubric.](../resources/educationrubric.md)
 
-A atualização de um amostra rubric anexado a uma atribuição ( `PATCH /education/me/assignments/{id}/rubric` ) só é possível antes da atribuição ser publicada e o que é atualizado na verdade, o amostra rubric original que existe em `/education/users/{id}/rubrics` . Depois que a atribuição é publicada, uma cópia imutável do amostra rubric é feita anexada a essa atribuição específica. Esse amostra rubric pode ser recuperado usando [Get/Education/me/assignments/{ID}/rubric](educationrubric-get.md), mas não pode ser atualizado.
+A atualização de uma rubrica anexada a uma atribuição ( ) só é possível antes da atribuição ser publicada, e o que é atualizado na verdade é a rubrica original que existe `PATCH /education/me/assignments/{id}/rubric` em `/education/users/{id}/rubrics` . Depois que a atribuição for publicada, será feita uma cópia imutável da rubrica anexada a essa atribuição específica. Essa rubrica pode ser recuperada usando [GET /education/me/assignments/{id}/rubric](educationrubric-get.md), mas não pode ser atualizada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -53,15 +53,15 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|itemBody|A descrição desse amostra rubric.|
-|displayName|String|O nome deste amostra rubric.|
-|notas|educationAssignmentGradeType|Se este amostra rubric tem pontos ou não.|
-|alcançar|coleção rubricLevel|A coleção de níveis que compõem este amostra rubric.|
-|qualidades|coleção rubricQuality|O conjunto de qualidades que compõem este amostra rubric.|
+|description|itemBody|A descrição dessa rubrica.|
+|displayName|String|O nome dessa rubrica.|
+|grading|educationAssignmentGradeType|Se essa rubrica tem pontos ou não.|
+|levels|Coleção rubricLevel|A coleção de níveis que comem essa rubrica.|
+|qualidades|Coleção rubricQuality|A coleção de qualidades que com isso é rubrica.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationRubric](../resources/educationrubric.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationRubric](../resources/educationrubric.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

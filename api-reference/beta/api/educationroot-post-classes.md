@@ -1,16 +1,16 @@
 ---
 title: Criar educationClass
-description: Crie uma nova aula. Isso também criará um grupo universal. Quando você usar essa API para criar uma classe, ela adicionará propriedades especiais ao grupo, que será
+description: Crie uma nova aula. Isso também criará um grupo universal. Quando você usa essa API para criar uma classe, ela adicionará propriedades especiais ao grupo, que adicionará
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 18852970d0c5fe13568769639e89452f9b0e2c23
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: df566e35dd2bed527ef36f181cd9c4c92791843e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966057"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043639"
 ---
 # <a name="create-educationclass"></a>Criar educationClass
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma nova aula. Isso também criará um grupo universal. Quando você usar essa API para criar uma classe, ela adicionará propriedades especiais ao grupo, que adicionará recursos como atribuições e tratamento especial no Microsoft Teams quando o Teams for criado usando o grupo. Observe que essa API apenas cria o grupo universal e não cria uma equipe. O Microsoft Teams oferece uma interface do usuário para que os professores criem equipes para suas próprias classes usando os grupos criados por essa API.
+Crie uma nova aula. Isso também criará um grupo universal. Quando você usa essa API para criar uma classe, ela adicionará propriedades especiais ao grupo, que adicionará recursos como atribuições e tratamento especial no Microsoft Teams quando as equipes são criadas usando o grupo. Observe que essa API cria apenas o grupo universal e não cria uma equipe. Microsoft Teams fornece uma interface de usuário para que os professores criem equipes para suas próprias classes usando os grupos criados por essa API.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -93,7 +93,7 @@ Content-length: 224
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

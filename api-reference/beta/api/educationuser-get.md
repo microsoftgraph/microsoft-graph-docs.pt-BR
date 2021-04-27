@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6ad690ccb21d49196ee52cf69f9832d87b7a6a7c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 893f484eaf03ef5102a22e70fdb946251af0cbd9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951149"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042881"
 ---
 # <a name="get-educationuser"></a>Obter educationUser
 
@@ -31,10 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!IMPORTANT]
-> Ao usar escopos de permissão delegados, o Graph retornará apenas um conjunto limitado de propriedades: `id` , , , , , , , , , `primaryRole` , `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` `teacher/externalId` . Se seu aplicativo exigir propriedades adicionais, você deve usar escopos de permissão application.
+> Ao usar escopos de permissão delegados, Graph retornará apenas um conjunto limitado de propriedades: `id` , , , , , , , , , `primaryRole` , `accountEnabled` , `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` `teacher/externalId` . Se seu aplicativo exigir propriedades adicionais, você deve usar escopos de permissão application.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/education/users/13012
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

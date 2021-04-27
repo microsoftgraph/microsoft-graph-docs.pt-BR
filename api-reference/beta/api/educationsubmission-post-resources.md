@@ -1,31 +1,31 @@
 ---
 title: Criar educationSubmissionResource
-description: 'Adiciona um recurso à lista de recursos. Esta ação só pode ser feita pelo aluno a quem esse envio é atribuído. Esta ação não será bem-sucedida se o sinalizador **allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso baseado em arquivo, o arquivo deverá ser carregado na pasta recursos que está associada ao envio. Se o arquivo não existir ou não estiver nessa pasta, a solicitação POST falhará. '
+description: 'Adiciona um recurso à lista de recursos. Essa ação só pode ser feita pelo aluno ao qual esse envio é atribuído. Essa ação não terá êxito **se o sinalizador allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso baseado em arquivo, o arquivo deverá ser carregado na pasta de recursos associada ao envio. Se o arquivo não existir ou não estiver nessa pasta, a solicitação POST falhará. '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d078cfb0f5e81cd245058b3952a74cfe5dd34836
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e44b8a5b970fefebeb7ed9472531edb2991281d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007230"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043185"
 ---
 # <a name="create-educationsubmissionresource"></a>Criar educationSubmissionResource
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adiciona um recurso à lista de recursos. Esta ação só pode ser feita pelo aluno a quem esse envio é atribuído. Esta ação não será bem-sucedida se o sinalizador **allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso baseado em arquivo, o arquivo deverá ser carregado na pasta recursos que está associada ao envio. Se o arquivo não existir ou não estiver nessa pasta, a solicitação POST falhará. 
+Adiciona um recurso à lista de recursos. Essa ação só pode ser feita pelo aluno ao qual esse envio é atribuído. Essa ação não terá êxito **se o sinalizador allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso baseado em arquivo, o arquivo deverá ser carregado na pasta de recursos associada ao envio. Se o arquivo não existir ou não estiver nessa pasta, a solicitação POST falhará. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -42,11 +42,11 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto educationSubmissionResource.](../resources/educationsubmissionresource.md)
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -93,7 +93,7 @@ Content-length: 1097
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "ignored",

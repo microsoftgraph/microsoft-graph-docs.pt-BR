@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 27210f444228e3feb5bde98b0b048f26612f4493
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 675cf90ed375bd157f10d0268eef3b90bf3edf5b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574108"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042944"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>Atualizar um educationSynchronizationProfile
 
@@ -104,7 +104,7 @@ Content-type: application/json
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "ignored",

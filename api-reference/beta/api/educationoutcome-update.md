@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f33383ea8c3c8b7369be47aa852847af022884ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5f27763d558590e01f61fbc231959b05bee3c296
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966129"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043714"
 ---
 # <a name="update-educationoutcome"></a>Atualizar educationoutcome
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [educationOutcome](../resources/educationoutcome.md) .
+Atualize as propriedades de um [objeto educationOutcome.](../resources/educationoutcome.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -48,21 +48,21 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-O objeto educationOutcome será um dos seguintes tipos derivados: **educationPointsOutcome** , **educationFeedbackOutcome** ou **educationRubricOutcome**. Forneça as propriedades específicas relevantes ao tipo de resultado que está sendo corrigido.
+O objeto educationOutcome será um dos seguintes tipos **derivados: educationPointsOutcome**, **educationFeedbackOutcome** ou **educationRubricOutcome**. Fornecer as propriedades específicas relevantes para o tipo de resultado que está sendo remendado.
 
-Todos os tipos de resultados derivados têm uma propriedade regular e "publicada" apropriada para esse tipo de resultado; por exemplo, **pontos** e **publishedPoints** , **feedback** e **publishedFeedback**. Não atualiza a propriedade "published"; é para uso interno. Por exemplo, para atribuir pontos a um **educationPointsOutcome** , atualize a propriedade **Points** , mas não atualize o **publishedPoints**.
+Todos os tipos de resultado derivados têm uma propriedade regular e "publicada" apropriada para esse tipo de resultado; por exemplo, **pontos e** **publishedPoints**, **comentários** e **publishedFeedback**. Não atualize a propriedade "publicado"; é para uso interno. Por exemplo, para atribuir pontos a **um educationPointsOutcome**, atualize a propriedade **points,** mas não atualize **publishedPoints**.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationOutcome](../resources/educationoutcome.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationOutcome](../resources/educationoutcome.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-update-a-feedback-outcome"></a>Exemplo 1: atualizar um resultado de comentários
+### <a name="example-1-update-a-feedback-outcome"></a>Exemplo 1: Atualizar um resultado de feedback
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para atualizar um resultado de comentários.
+A seguir, um exemplo da solicitação de atualização de um resultado de feedback.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -107,7 +107,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -142,11 +142,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-update-a-points-outcome"></a>Exemplo 2: atualizar um resultado de pontos
+### <a name="example-2-update-a-points-outcome"></a>Exemplo 2: Atualizar um resultado de pontos
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para atualizar um resultado de pontos.
+A seguir, um exemplo da solicitação de atualização de um resultado de pontos.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -189,7 +189,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -221,11 +221,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-update-a-rubric-outcome"></a>Exemplo 3: atualizar um resultado de amostra rubric
+### <a name="example-3-update-a-rubric-outcome"></a>Exemplo 3: atualizar um resultado rubrico
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para atualizar um resultado amostra rubric.
+A seguir, um exemplo da solicitação de atualização de um resultado rubrico.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -290,7 +290,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

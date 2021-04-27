@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 04f8f9e96422c262ea816a5f24796d4059b0809c
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: a0c344b1696da6a04b196af97dd83fb84f11a8b1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574141"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042958"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Iniciar a sincronização depois de carregar arquivos em um educationSynchronizationProfile
 
@@ -45,7 +45,7 @@ POST /education/synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK`. Se não tiver êxito, retornará `400 Bad Request` um . A resposta contém uma coleção de objetos [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) como parte do corpo da resposta se quaisquer erros ou avisos foram encontrados.
+Se bem-sucedido, este método retorna um código de resposta `200 OK`. Se não tiver êxito, retornará `400 Bad Request` um . A resposta contém uma coleção de objetos [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) como parte do corpo da resposta se quaisquer erros ou avisos foram encontrados.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -81,7 +81,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

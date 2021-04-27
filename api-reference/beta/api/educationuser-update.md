@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 38a3f187a934f57b9ecb910047367ccf3bf20c28
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6846ac91051897fcf455c466d5dcd58119d0131a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955126"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042662"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
 
@@ -58,12 +58,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | surname          | String             | Sobrenome do usuário                                                                                                                                 |
 | email             | String             | endereço de email                                                                                                                                   |
 | mobilePhone      | String             | O número de celular do usuário                                                                                                                           |
-| externalSource   | cadeia de caracteres             | De onde esse usuário foi criado. Os valores possíveis são: `sis` , `manual` , ou `lms` .                                                               |
-| mailingAddress   | [physicalAddress]  | Endereço de email do usuário. Observação: `type` e `postOfficeBox` não têm suporte para `educationUser` recursos.                                         |
-| residenceAddress | [physicalAddress]  | Endereço em que o usuário reside. Observação: `type` e `postOfficeBox` não têm suporte para `educationUser` recursos.                                     |
+| externalSource   | cadeia de caracteres             | De onde esse usuário foi criado. Os valores possíveis são: `sis`, `manual` ou `lms`.                                                               |
+| mailingAddress   | [physicalAddress]  | Endereço de email do usuário. Observação: `type` e não há suporte para `postOfficeBox` `educationUser` recursos.                                         |
+| residenceAddress | [physicalAddress]  | Endereço em que o usuário reside. Observação: `type` e não há suporte para `postOfficeBox` `educationUser` recursos.                                     |
 | primaryRole      | cadeia de caracteres             | Função padrão de um usuário. A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`. |
 | student          | [educationStudent] | Se a função principal for aluno, esse bloco conterá dados específicos do aluno.                                                                  |
-| teacher          | [educationTeacher](../resources/educationteacher.md) | Se a função principal for professor, esse bloco conterá dados específicos do professor.                                                                  |
+| teacher          | [educationTeacher](../resources/educationteacher.md) | Se a função primária for professor, esse bloco conterá dados específicos do professor.                                                                  |
 
 ## <a name="response"></a>Resposta
 
@@ -118,7 +118,7 @@ Content-length: 508
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -183,7 +183,7 @@ Content-length: 508
 }
 -->
 
-[PhysicalAddress]: ../resources/physicaladdress.md
+[physicaladdress]: ../resources/physicaladdress.md
 [educationstudent]: ../resources/educationstudent.md
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: efa0768fbb8cae441afc3d1fd48baa2e2a3567da
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4e76bf6cd10682717bebe9365afa14ced47d4c90
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436236"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042587"
 ---
 # <a name="event-delta"></a>evento: delta
 
@@ -152,7 +152,7 @@ Não suporta `$expand` , , , e `$filter` `$orderby` `$select` `$search` .
 | Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type  | string  | application/json. Obrigatório. |
 | Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
-| Preferir | string | outlook.timezone={Cadeia de caracteres de fuso horário}. Opcional, supõe-se o UTC se estiver ausente.|
+| Preferir | cadeia de caracteres | outlook.timezone={Cadeia de caracteres de fuso horário}. Opcional, supõe-se o UTC se estiver ausente.|
 
 ## <a name="response"></a>Resposta
 
@@ -260,7 +260,7 @@ Respectivamente, eles indicam se você deve continuar com a rodada ou se você c
 
 A resposta a seguir mostra _um skipToken_ em um header de resposta _\@ odata.nextLink._
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. 
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 <!-- {
   "blockType": "response",
   "name": "event_delta_calendarview",

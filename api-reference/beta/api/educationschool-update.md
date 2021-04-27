@@ -1,16 +1,16 @@
 ---
-title: Atualizar propriedades de educationSchool
+title: Atualizar propriedades educationSchool
 description: Atualize as propriedades de um objeto de escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 29bf64b6b6923dd3a47539294ce8cbc7240523a7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bb25d6e2ff81542dcd5481215fd93687b388fe05
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955498"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043364"
 ---
 # <a name="update-educationschool-properties"></a>Atualizar as propriedades educationschool
 
@@ -107,7 +107,7 @@ Content-length: 292
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 744804a73c3ccba136d4596c2f4ee2d8f5a2f92d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0b5271e7d559ac5326056b4a2ee63ef7cfad7de1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965191"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52041775"
 ---
 # <a name="list-acceptedsenders"></a>Listar acceptedSenders
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/acceptedSenders
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

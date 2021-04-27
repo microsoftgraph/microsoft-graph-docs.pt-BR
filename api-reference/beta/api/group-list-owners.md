@@ -1,16 +1,16 @@
 ---
 title: Listar proprietários
-description: Recupere uma lista de proprietários do grupo.
+description: Recupere uma lista dos proprietários do grupo.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 29352a52e6e50c788bd1457f3038c6389356303f
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 4d9af9c39479262952d0ac7d645f7f0ba5de96bc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50271959"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52041495"
 ---
 # <a name="list-owners"></a>Listar proprietários
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que têm permissão para modificar o objeto de grupo. Os proprietários atualmente não estão disponíveis no Microsoft Graph para grupos que foram criados no Exchange ou grupos que são sincronizados de um ambiente local. 
+Recupere uma lista dos proprietários do grupo. Os proprietários são um conjunto de usuários que têm permissão para modificar o objeto group. Os proprietários não estão atualmente disponíveis no Microsoft Graph para os grupos que foram criados no Exchange ou grupos que são sincronizados a partir de um ambiente no local. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All  |
+|Delegado (conta corporativa ou de estudante) | GroupMember.Read.All, Group.Read.All, Group.Member.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All  |
+|Aplicativo | GroupMember.Read.All, Group.Read.All, Group.Member.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All  |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/owners
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

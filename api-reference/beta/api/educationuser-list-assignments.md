@@ -1,16 +1,16 @@
 ---
 title: Listar tarefas
-description: Retorna uma lista de atribuições atribuídas a um usuário para todas as classes. Este namespace de utilitário permite que um chamador encontre todas as atribuições de um aluno em uma única chamada, em vez de solicitar as atribuições de cada classe. A lista de atribuição contém o que é necessário para obter as informações detalhadas da atribuição de dentro do namespace da classe. Todas as outras operações na atribuição devem usar o namespace de classe.
+description: Retorna uma lista de atribuições atribuídas a um usuário para todas as classes. Esse namespace utilitário permite que um chamador encontre todas as atribuições de um aluno em uma única chamada, em vez de ter que solicitar atribuições de cada classe. A lista de atribuições contém o que é necessário para obter as informações detalhadas para a atribuição de dentro do namespace de classe. Todas as outras operações na atribuição devem usar o namespace de classe.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3b629ef9fddb70abbe61de5e0cb515d8bb8833ad
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c660185ec5f0e0c7a2eaed46f5b0cc43499500ff
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403280"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042839"
 ---
 # <a name="list-assignments"></a>Listar tarefas
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retorna uma lista de atribuições atribuídas a um usuário para todas as classes. Este namespace de utilitário permite que um chamador encontre todas as atribuições de um aluno em uma única chamada, em vez de solicitar as atribuições de cada classe. A lista de atribuição contém o que é necessário para obter as informações detalhadas da atribuição de dentro do namespace da classe. Todas as outras operações na atribuição devem usar o namespace de classe.
+Retorna uma lista de atribuições atribuídas a um usuário para todas as classes. Esse namespace utilitário permite que um chamador encontre todas as atribuições de um aluno em uma única chamada, em vez de ter que solicitar atribuições de cada classe. A lista de atribuições contém o que é necessário para obter as informações detalhadas para a atribuição de dentro do namespace de classe. Todas as outras operações na atribuição devem usar o namespace de classe.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
 | Aplicativo                            | Sem suporte.                                                                                         |
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/education/me/assignments
 
 Este é um exemplo de resposta. 
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 
 <!-- {

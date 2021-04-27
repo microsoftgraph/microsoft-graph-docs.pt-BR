@@ -1,26 +1,26 @@
 ---
-title: 'Grupo: assignLicense'
-description: Adicionar ou remover licenças no grupo. As licenças atribuídas ao grupo serão atribuídas a todos os usuários do grupo.
+title: 'group: assignLicense'
+description: Adicione ou remova licenças no grupo. As licenças atribuídas ao grupo serão atribuídas a todos os usuários do grupo.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5e5afc176caadd4605820952bb197885c2e614cb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a6e4732deabfe4ff54f9549b7a0b5103cfa70d12
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954380"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042160"
 ---
-# <a name="group-assignlicense"></a>Grupo: assignLicense
+# <a name="group-assignlicense"></a>group: assignLicense
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar ou remover licenças no grupo. As licenças atribuídas ao grupo serão atribuídas a todos os usuários do grupo. Para saber mais sobre licenciamento baseado em grupo, confira [o que é licenciamento baseado em grupo no Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+Adicione ou remova licenças no grupo. As licenças atribuídas ao grupo serão atribuídas a todos os usuários do grupo. Para saber mais sobre o licenciamento baseado em grupo, consulte O que é licenciamento baseado em [grupo em Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
-Para obter as assinaturas disponíveis no diretório, execute uma [solicitação get subscribedSkus](subscribedsku-list.md).
+Para obter as assinaturas disponíveis no diretório, execute uma [solicitação GET subscribedSkus](subscribedsku-list.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,16 +47,16 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|addLicenses|Coleção [assignedLicense](../resources/assignedlicense.md)|Uma coleção de objetos [assignedLicense](../resources/assignedlicense.md) que especifica as licenças a adicionar. Você pode desabilitar o onplans associado a uma licença definindo a propriedade **disabledPlans** em um objeto [assignedLicense](../resources/assignedlicense.md) .|
-|removeLicenses|Coleção GUID|Uma coleção de skuIds que identifica as licenças a serem removidas.|
+|addLicenses|Coleção [assignedLicense](../resources/assignedlicense.md)|Uma coleção de objetos [assignedLicense](../resources/assignedlicense.md) que especifica as licenças a adicionar. Você pode desabilitar servicePlans associado a uma licença definindo a propriedade **disabledPlans** em [um objeto assignedLicense.](../resources/assignedlicense.md)|
+|removeLicenses|Coleção GUID|Uma coleção de skuIds que identificam as licenças a remover.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um objeto de [grupo](../resources/group.md) de destino no corpo da resposta.
+Se tiver êxito, este método retornará `202 Accepted` um código de resposta e um objeto [de](../resources/group.md) grupo de destino no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-add-licenses-to-the-group"></a>Exemplo 1: adicionar licenças ao grupo
+### <a name="example-1-add-licenses-to-the-group"></a>Exemplo 1: Adicionar licenças ao grupo
 O exemplo a seguir adiciona licenças ao grupo.
 #### <a name="request"></a>Solicitação
 
@@ -106,7 +106,7 @@ Content-type: application/json
 #### <a name="response"></a>Resposta
 A resposta é o objeto de grupo atualizado.
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,7 +127,7 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
 }
 ```
 
-### <a name="example-2-remove-licenses-from-the-group"></a>Exemplo 2: remover licenças do grupo
+### <a name="example-2-remove-licenses-from-the-group"></a>Exemplo 2: Remover licenças do grupo
 O exemplo a seguir remove licenças do grupo.
 
 #### <a name="request"></a>Solicitação
@@ -170,7 +170,7 @@ Content-type: application/json
 #### <a name="response"></a>Resposta
 A resposta é o objeto de grupo atualizado.
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura..
 <!-- {
   "blockType": "response",
   "truncated": true,

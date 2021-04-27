@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 859060a1c0a67c5b7c30f5dca72432953247c048
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 18c73e333c98c86c66b8ed8227aa9f98cfcfcbb8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954780"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042531"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para adicionar um [anexo](../resources/attachment.md) a um [evento](../resources/event.md)existente. Esta operação limita o tamanho do anexo que você pode adicionar a menos de 3 MB.
+Use essa API para adicionar um [anexo](../resources/attachment.md) a um evento [existente.](../resources/event.md) Essa operação limita o tamanho do anexo que você pode adicionar a menos de 3 MB.
 
-Se um organizador adicionar um anexo a um evento de reunião, o organizador poderá, subsequentemente, [Atualizar](event-update.md) o evento para enviar o anexo e também atualizar o evento para cada participante.
+Se um organizador adiciona um anexo a um [](event-update.md) evento de reunião, o organizador pode atualizar o evento posteriormente para enviar o anexo e atualizar o evento para cada participante também.
 
 ## <a name="permissions"></a>Permissões
 
@@ -106,7 +106,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [attachme
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_event_beta",
@@ -174,7 +174,7 @@ Content-length: 600
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_event",
@@ -204,8 +204,8 @@ Content-length: 162
 
 ### <a name="request"></a>Solicitação
 
-Veja um exemplo de uma solicitação que adiciona um anexo de referência a um evento existente.
-O anexo aponta para uma pasta no OneDrive.
+Aqui está um exemplo de uma solicitação que adiciona um anexo de referência a um evento existente.
+O anexo aponta para uma pasta OneDrive.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -248,7 +248,7 @@ Content-length: 319
 
 ### <a name="response"></a>Resposta
 
-Veja um exemplo de resposta completa.
+Aqui está um exemplo de uma resposta completa.
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_from_event",
