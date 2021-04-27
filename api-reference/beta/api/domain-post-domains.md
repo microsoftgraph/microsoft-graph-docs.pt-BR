@@ -5,59 +5,59 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d4c6e9731285f5e28829dc2bb5c77faae30775c4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 08ceebe10857d8966f7f86e5a30a5dee14189f3f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436474"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046339"
 ---
-# <a name="create-domain"></a><span data-ttu-id="8daaa-103">Criar domínio</span><span class="sxs-lookup"><span data-stu-id="8daaa-103">Create domain</span></span>
+# <a name="create-domain"></a><span data-ttu-id="ffe85-103">Criar domínio</span><span class="sxs-lookup"><span data-stu-id="ffe85-103">Create domain</span></span>
 
-<span data-ttu-id="8daaa-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8daaa-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ffe85-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ffe85-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8daaa-105">Adiciona um domínio ao inquilino.</span><span class="sxs-lookup"><span data-stu-id="8daaa-105">Adds a domain to the tenant.</span></span>
+<span data-ttu-id="ffe85-105">Adiciona um domínio ao inquilino.</span><span class="sxs-lookup"><span data-stu-id="ffe85-105">Adds a domain to the tenant.</span></span>
 
-<span data-ttu-id="8daaa-p101">**Importante**: Você não pode usar um domínio associado ao seu locatário do Azure AD até que a propriedade seja verificada. Confira [Listar verificationDnsRecords](domain-list-verificationdnsrecords.md) para obter mais detalhes. Os domínios raiz exigem verificação. Por exemplo, contoso.com exige verificação. Se um domínio raiz for verificado, os subdomínios do domínio raiz serão verificados automaticamente. Por exemplo, o subdominio.contoso.com é automaticamente verificado se contoso.com for verificado.</span><span class="sxs-lookup"><span data-stu-id="8daaa-p101">**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified. See [List verificationDnsRecords](domain-list-verificationdnsrecords.md) for details. Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.</span></span>
+<span data-ttu-id="ffe85-p101">**Importante**: Você não pode usar um domínio associado ao seu locatário do Azure AD até que a propriedade seja verificada. Confira [Listar verificationDnsRecords](domain-list-verificationdnsrecords.md) para obter mais detalhes. Os domínios raiz exigem verificação. Por exemplo, contoso.com exige verificação. Se um domínio raiz for verificado, os subdomínios do domínio raiz serão verificados automaticamente. Por exemplo, o subdominio.contoso.com é automaticamente verificado se contoso.com for verificado.</span><span class="sxs-lookup"><span data-stu-id="ffe85-p101">**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified. See [List verificationDnsRecords](domain-list-verificationdnsrecords.md) for details. Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8daaa-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="8daaa-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ffe85-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="ffe85-112">Permissions</span></span>
 
-<span data-ttu-id="8daaa-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8daaa-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ffe85-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ffe85-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="8daaa-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8daaa-115">Permission type</span></span>      | <span data-ttu-id="8daaa-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8daaa-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ffe85-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ffe85-115">Permission type</span></span>      | <span data-ttu-id="ffe85-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ffe85-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8daaa-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8daaa-117">Delegated (work or school account)</span></span> | <span data-ttu-id="8daaa-118">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="8daaa-118">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="8daaa-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8daaa-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8daaa-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8daaa-120">Not supported.</span></span>    |
-|<span data-ttu-id="8daaa-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8daaa-121">Application</span></span> | <span data-ttu-id="8daaa-122">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8daaa-122">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="ffe85-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ffe85-117">Delegated (work or school account)</span></span> | <span data-ttu-id="ffe85-118">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ffe85-118">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="ffe85-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ffe85-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ffe85-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ffe85-120">Not supported.</span></span>    |
+|<span data-ttu-id="ffe85-121">Application</span><span class="sxs-lookup"><span data-stu-id="ffe85-121">Application</span></span> | <span data-ttu-id="ffe85-122">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ffe85-122">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8daaa-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8daaa-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ffe85-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ffe85-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains
 ```
-## <a name="request-headers"></a><span data-ttu-id="8daaa-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8daaa-124">Request headers</span></span>
-| <span data-ttu-id="8daaa-125">Nome</span><span class="sxs-lookup"><span data-stu-id="8daaa-125">Name</span></span>       | <span data-ttu-id="8daaa-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="8daaa-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ffe85-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ffe85-124">Request headers</span></span>
+| <span data-ttu-id="ffe85-125">Nome</span><span class="sxs-lookup"><span data-stu-id="ffe85-125">Name</span></span>       | <span data-ttu-id="ffe85-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="ffe85-126">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="8daaa-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="8daaa-127">Authorization</span></span>  | <span data-ttu-id="8daaa-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8daaa-p103">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="8daaa-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8daaa-130">Content-Type</span></span>  | <span data-ttu-id="8daaa-131">application/json</span><span class="sxs-lookup"><span data-stu-id="8daaa-131">application/json</span></span> |
+| <span data-ttu-id="ffe85-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="ffe85-127">Authorization</span></span>  | <span data-ttu-id="ffe85-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ffe85-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="ffe85-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ffe85-130">Content-Type</span></span>  | <span data-ttu-id="ffe85-131">application/json</span><span class="sxs-lookup"><span data-stu-id="ffe85-131">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8daaa-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8daaa-132">Request body</span></span>
-<span data-ttu-id="8daaa-133">No corpo da solicitação, forneça uma representação JSON do objeto [domain](../resources/domain.md).</span><span class="sxs-lookup"><span data-stu-id="8daaa-133">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ffe85-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ffe85-132">Request body</span></span>
+<span data-ttu-id="ffe85-133">No corpo da solicitação, forneça uma representação JSON do objeto [domain](../resources/domain.md).</span><span class="sxs-lookup"><span data-stu-id="ffe85-133">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
 
-> <span data-ttu-id="8daaa-p104">O corpo da solicitação contém a propriedade id do novo domínio. Id é a única propriedade que pode ser especificada e isso é necessário. O valor da propriedade id é o nome de domínio totalmente qualificado para criar.</span><span class="sxs-lookup"><span data-stu-id="8daaa-p104">The request body contains the id property for the new domain. Id is the only property that can be specified and it is required. The id property value is the fully qualified domain name to create.</span></span>
+> <span data-ttu-id="ffe85-p104">O corpo da solicitação contém a propriedade id do novo domínio. Id é a única propriedade que pode ser especificada e isso é necessário. O valor da propriedade id é o nome de domínio totalmente qualificado para criar.</span><span class="sxs-lookup"><span data-stu-id="ffe85-p104">The request body contains the id property for the new domain. Id is the only property that can be specified and it is required. The id property value is the fully qualified domain name to create.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8daaa-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="8daaa-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ffe85-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="ffe85-137">Response</span></span>
 
-<span data-ttu-id="8daaa-138">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [domain](../resources/domain.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8daaa-138">If successful, this method returns `201 Created` response code and [domain](../resources/domain.md) object in the response body.</span></span>
+<span data-ttu-id="ffe85-138">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [domain](../resources/domain.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ffe85-138">If successful, this method returns `201 Created` response code and [domain](../resources/domain.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8daaa-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8daaa-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8daaa-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8daaa-140">Request</span></span>
+## <a name="example"></a><span data-ttu-id="ffe85-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ffe85-139">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ffe85-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ffe85-140">Request</span></span>
 
-<span data-ttu-id="8daaa-141">No corpo da solicitação, forneça uma representação JSON do objeto [domain](../resources/domain.md).</span><span class="sxs-lookup"><span data-stu-id="8daaa-141">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
+<span data-ttu-id="ffe85-141">No corpo da solicitação, forneça uma representação JSON do objeto [domain](../resources/domain.md).</span><span class="sxs-lookup"><span data-stu-id="ffe85-141">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -73,8 +73,8 @@ Content-length: 192
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="8daaa-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="8daaa-142">Response</span></span>
-<span data-ttu-id="8daaa-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8daaa-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ffe85-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="ffe85-142">Response</span></span>
+<span data-ttu-id="ffe85-143">Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="ffe85-143">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

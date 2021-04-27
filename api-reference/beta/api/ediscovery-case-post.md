@@ -5,32 +5,32 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 69a099cf250036f86e6481a818b4dbdc581c7aea
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 7fa7331b9a75c9c9d787ab12804540b1e5efe31a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773729"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044722"
 ---
-# <a name="create-case"></a><span data-ttu-id="839e7-103">Criar caso</span><span class="sxs-lookup"><span data-stu-id="839e7-103">Create case</span></span>
+# <a name="create-case"></a><span data-ttu-id="33329-103">Criar caso</span><span class="sxs-lookup"><span data-stu-id="33329-103">Create case</span></span>
 
-<span data-ttu-id="839e7-104">Namespace: microsoft.graph.ediscovery</span><span class="sxs-lookup"><span data-stu-id="839e7-104">Namespace: microsoft.graph.ediscovery</span></span>
+<span data-ttu-id="33329-104">Namespace: microsoft.graph.ediscovery</span><span class="sxs-lookup"><span data-stu-id="33329-104">Namespace: microsoft.graph.ediscovery</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="839e7-105">Crie um novo [objeto case.](../resources/ediscovery-case.md)</span><span class="sxs-lookup"><span data-stu-id="839e7-105">Create a new [case](../resources/ediscovery-case.md) object.</span></span>
+<span data-ttu-id="33329-105">Crie um novo [objeto case.](../resources/ediscovery-case.md)</span><span class="sxs-lookup"><span data-stu-id="33329-105">Create a new [case](../resources/ediscovery-case.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="839e7-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="839e7-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="33329-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="33329-106">Permissions</span></span>
 
-<span data-ttu-id="839e7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="839e7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="33329-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="33329-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="839e7-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="839e7-109">Permission type</span></span>|<span data-ttu-id="839e7-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="839e7-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="33329-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="33329-109">Permission type</span></span>|<span data-ttu-id="33329-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="33329-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="839e7-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="839e7-111">Delegated (work or school account)</span></span>|<span data-ttu-id="839e7-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="839e7-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span></span>|
-|<span data-ttu-id="839e7-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="839e7-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="839e7-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="839e7-114">Not supported.</span></span>|
-|<span data-ttu-id="839e7-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="839e7-115">Application</span></span>|<span data-ttu-id="839e7-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="839e7-116">Not supported.</span></span>|
+|<span data-ttu-id="33329-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="33329-111">Delegated (work or school account)</span></span>|<span data-ttu-id="33329-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33329-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span></span>|
+|<span data-ttu-id="33329-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="33329-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="33329-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="33329-114">Not supported.</span></span>|
+|<span data-ttu-id="33329-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="33329-115">Application</span></span>|<span data-ttu-id="33329-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="33329-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="839e7-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="839e7-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="33329-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="33329-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,31 +38,31 @@ ms.locfileid: "50773729"
 POST /compliance/ediscovery/cases
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="839e7-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="839e7-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="33329-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="33329-118">Request headers</span></span>
 
-| <span data-ttu-id="839e7-119">Nome</span><span class="sxs-lookup"><span data-stu-id="839e7-119">Name</span></span>          | <span data-ttu-id="839e7-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="839e7-120">Description</span></span>   |
+| <span data-ttu-id="33329-119">Nome</span><span class="sxs-lookup"><span data-stu-id="33329-119">Name</span></span>          | <span data-ttu-id="33329-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="33329-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="839e7-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="839e7-121">Authorization</span></span> | <span data-ttu-id="839e7-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="839e7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="33329-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="33329-121">Authorization</span></span> | <span data-ttu-id="33329-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="33329-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="839e7-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="839e7-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="33329-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="33329-124">Request body</span></span>
 
-<span data-ttu-id="839e7-125">No corpo da solicitação, fornece uma representação JSON de um [objeto case.](../resources/ediscovery-case.md)</span><span class="sxs-lookup"><span data-stu-id="839e7-125">In the request body, supply a JSON representation of a [case](../resources/ediscovery-case.md) object.</span></span> <span data-ttu-id="839e7-126">A tabela a seguir lista propriedades que podem ser enviadas com a chamada.</span><span class="sxs-lookup"><span data-stu-id="839e7-126">The following table lists properties that can be submitted with the call.</span></span>
+<span data-ttu-id="33329-125">No corpo da solicitação, fornece uma representação JSON de um [objeto case.](../resources/ediscovery-case.md)</span><span class="sxs-lookup"><span data-stu-id="33329-125">In the request body, supply a JSON representation of a [case](../resources/ediscovery-case.md) object.</span></span> <span data-ttu-id="33329-126">A tabela a seguir lista propriedades que podem ser enviadas com a chamada.</span><span class="sxs-lookup"><span data-stu-id="33329-126">The following table lists properties that can be submitted with the call.</span></span>
 
-| <span data-ttu-id="839e7-127">Propriedade</span><span class="sxs-lookup"><span data-stu-id="839e7-127">Property</span></span>     | <span data-ttu-id="839e7-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="839e7-128">Type</span></span>        | <span data-ttu-id="839e7-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="839e7-129">Description</span></span> |
+| <span data-ttu-id="33329-127">Propriedade</span><span class="sxs-lookup"><span data-stu-id="33329-127">Property</span></span>     | <span data-ttu-id="33329-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="33329-128">Type</span></span>        | <span data-ttu-id="33329-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="33329-129">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="839e7-130">displayName</span><span class="sxs-lookup"><span data-stu-id="839e7-130">displayName</span></span>  | <span data-ttu-id="839e7-131">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="839e7-131">string</span></span>      | <span data-ttu-id="839e7-132">O nome do caso de Descoberta e.</span><span class="sxs-lookup"><span data-stu-id="839e7-132">The name of the eDiscovery case.</span></span> |
+| <span data-ttu-id="33329-130">displayName</span><span class="sxs-lookup"><span data-stu-id="33329-130">displayName</span></span>  | <span data-ttu-id="33329-131">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="33329-131">string</span></span>      | <span data-ttu-id="33329-132">O nome do caso de Descoberta e.</span><span class="sxs-lookup"><span data-stu-id="33329-132">The name of the eDiscovery case.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="839e7-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="839e7-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="33329-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="33329-133">Response</span></span>
 
-<span data-ttu-id="839e7-134">Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="839e7-134">If successful, this method returns a `201 Created` response code and a new [microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) object in the response body.</span></span>
+<span data-ttu-id="33329-134">Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="33329-134">If successful, this method returns a `201 Created` response code and a new [microsoft.graph.ediscovery.case](../resources/ediscovery-case.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="839e7-135">Exemplos</span><span class="sxs-lookup"><span data-stu-id="839e7-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="33329-135">Exemplos</span><span class="sxs-lookup"><span data-stu-id="33329-135">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="839e7-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="839e7-136">Request</span></span>
+### <a name="request"></a><span data-ttu-id="33329-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="33329-136">Request</span></span>
 
-<span data-ttu-id="839e7-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="839e7-137">The following is an example of the request.</span></span>
+<span data-ttu-id="33329-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="33329-137">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="839e7-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="839e7-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="33329-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="33329-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_case"
@@ -77,29 +77,29 @@ Content-type: application/json
 }
 ```
 
-# <a name="c"></a>[<span data-ttu-id="839e7-139">C#</span><span class="sxs-lookup"><span data-stu-id="839e7-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="33329-139">C#</span><span class="sxs-lookup"><span data-stu-id="33329-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-case-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="839e7-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="839e7-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="33329-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="33329-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-case-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="839e7-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="839e7-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="33329-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="33329-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-case-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="839e7-142">Java</span><span class="sxs-lookup"><span data-stu-id="839e7-142">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="33329-142">Java</span><span class="sxs-lookup"><span data-stu-id="33329-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-case-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="839e7-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="839e7-143">Response</span></span>
+### <a name="response"></a><span data-ttu-id="33329-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="33329-143">Response</span></span>
 
-<span data-ttu-id="839e7-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="839e7-144">The following is an example of the response.</span></span>
+<span data-ttu-id="33329-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="33329-144">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="839e7-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="839e7-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="33329-145">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="33329-145">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
