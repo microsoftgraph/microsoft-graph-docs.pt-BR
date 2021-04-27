@@ -457,7 +457,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -1555,7 +1555,7 @@ items:
                     href: api/ediscovery-tag-childtags.md
                   - name: Listar marcas como hierarquia
                     href: api/ediscovery-tag-ashierarchy.md
-              - name: Resumo do conjunto de consulta
+              - name: Consulta de conjunto de revisão
                 href: resources/ediscovery-reviewsetquery.md
                 items:
                   - name: Listar
@@ -11852,7 +11852,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Excluir
                     href: api/educationalactivity-delete.md
-              - name: Email
+              - name: Endereço de email
                 items:
                   - name: Email do item
                     href: resources/itememail.md
@@ -12006,7 +12006,7 @@ items:
                     href: api/personresponsibility-update.md
                   - name: Excluir
                     href: api/personresponsibility-delete.md
-              - name: Skills
+              - name: Capacidades
                 items:
                   - name: Proficiência de habilidade
                     href: resources/skillproficiency.md
@@ -13177,7 +13177,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -13487,7 +13487,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefas
+          - name: Tarefa
             href: resources/todotask.md
             items:
               - name: Listar tarefas
@@ -13722,10 +13722,14 @@ items:
                 href: api/table-list-rows.md
               - name: Criar linha
                 href: api/table-post-rows.md
+              - name: Excluir linha
+                href: api/tablerow-delete.md
               - name: Listar colunas
                 href: api/table-list-columns.md
               - name: Criar coluna
                 href: api/table-post-columns.md
+              - name: Excluir coluna
+                href: api/tablecolumn-delete.md
               - name: Obter intervalo
                 href: api/table-range.md
           - name: Gráfico
