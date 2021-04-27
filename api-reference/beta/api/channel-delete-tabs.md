@@ -1,59 +1,59 @@
 ---
-title: Excluir Guia do canal
-description: 'Remove (desafixa) uma guia do canal especificado de uma equipe. '
+title: Excluir guia do canal
+description: 'Remove (unpins) uma guia do canal especificado dentro de uma equipe. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b557925c39de7b0ea976ea78f7ac75fd657faf92
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 5afc43cd071a66c4e6312456e6ed40f674305ab1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607475"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047550"
 ---
-# <a name="delete-tab-from-channel"></a><span data-ttu-id="59104-103">Excluir Guia do canal</span><span class="sxs-lookup"><span data-stu-id="59104-103">Delete tab from channel</span></span>
+# <a name="delete-tab-from-channel"></a><span data-ttu-id="2e0ad-103">Excluir guia do canal</span><span class="sxs-lookup"><span data-stu-id="2e0ad-103">Delete tab from channel</span></span>
 
-<span data-ttu-id="59104-104">Namespace: Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="59104-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2e0ad-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2e0ad-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="59104-105">Remove (desafixa) uma guia do [canal](../resources/channel.md) especificado de uma [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="59104-105">Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> 
+<span data-ttu-id="2e0ad-105">Remove (unpins) uma guia do canal [especificado](../resources/channel.md) dentro de uma [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="2e0ad-105">Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="59104-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="59104-106">Permissions</span></span>
-<span data-ttu-id="59104-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="59104-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2e0ad-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="2e0ad-106">Permissions</span></span>
+<span data-ttu-id="2e0ad-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2e0ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="59104-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="59104-109">Permission type</span></span>      | <span data-ttu-id="59104-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="59104-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2e0ad-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2e0ad-109">Permission type</span></span>      | <span data-ttu-id="2e0ad-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2e0ad-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="59104-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="59104-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="59104-112">TeamsTab. ReadWriteForTeam, TeamsTab. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="59104-112">TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="59104-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="59104-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="59104-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="59104-114">Not supported.</span></span>    |
-|<span data-ttu-id="59104-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="59104-115">Application</span></span> | <span data-ttu-id="59104-116">TeamsTab. Delete. Group \*, TeamsTab. ReadWriteForTeam. All, TeamsTab. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="59104-116">TeamsTab.Delete.Group\*, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="2e0ad-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2e0ad-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="2e0ad-112">TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e0ad-112">TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="2e0ad-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2e0ad-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2e0ad-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2e0ad-114">Not supported.</span></span>    |
+|<span data-ttu-id="2e0ad-115">Application</span><span class="sxs-lookup"><span data-stu-id="2e0ad-115">Application</span></span> | <span data-ttu-id="2e0ad-116">TeamsTab.Delete.Group\*, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e0ad-116">TeamsTab.Delete.Group\*, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="59104-117">**Observação**: Permissões marcadas com \* usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="59104-117">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="2e0ad-117">**Observação**: Permissões marcadas com \* usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="2e0ad-117">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
-> <span data-ttu-id="59104-118">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="59104-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="59104-119">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="59104-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="2e0ad-118">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="2e0ad-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="2e0ad-119">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="2e0ad-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="59104-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="59104-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2e0ad-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2e0ad-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="59104-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="59104-121">Request headers</span></span>
-| <span data-ttu-id="59104-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="59104-122">Header</span></span>       | <span data-ttu-id="59104-123">Valor</span><span class="sxs-lookup"><span data-stu-id="59104-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="2e0ad-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2e0ad-121">Request headers</span></span>
+| <span data-ttu-id="2e0ad-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2e0ad-122">Header</span></span>       | <span data-ttu-id="2e0ad-123">Valor</span><span class="sxs-lookup"><span data-stu-id="2e0ad-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="59104-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="59104-124">Authorization</span></span>  | <span data-ttu-id="59104-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="59104-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="2e0ad-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="2e0ad-124">Authorization</span></span>  | <span data-ttu-id="2e0ad-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2e0ad-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="59104-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="59104-127">Request body</span></span>
-<span data-ttu-id="59104-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="59104-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2e0ad-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2e0ad-127">Request body</span></span>
+<span data-ttu-id="2e0ad-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="2e0ad-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="59104-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="59104-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2e0ad-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e0ad-129">Response</span></span>
 
-<span data-ttu-id="59104-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="59104-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="2e0ad-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2e0ad-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="59104-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="59104-132">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="59104-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="59104-133">Request</span></span>
-<span data-ttu-id="59104-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="59104-134">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2e0ad-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2e0ad-132">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="2e0ad-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2e0ad-133">Request</span></span>
+<span data-ttu-id="2e0ad-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2e0ad-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -61,8 +61,8 @@ DELETE /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
-#### <a name="response"></a><span data-ttu-id="59104-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="59104-135">Response</span></span>
-<span data-ttu-id="59104-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="59104-136">The following is an example of the response.</span></span> <span data-ttu-id="59104-137">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="59104-137">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="59104-138">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="59104-138">All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="2e0ad-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e0ad-135">Response</span></span>
+<span data-ttu-id="2e0ad-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2e0ad-136">The following is an example of the response.</span></span> <span data-ttu-id="2e0ad-137">Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="2e0ad-137">Note: The response object shown here might be shortened for readability.</span></span>
 ```http
 HTTP/1.1 204 No Content
 ```

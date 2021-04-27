@@ -1,58 +1,58 @@
 ---
 title: Criar bookingBusiness
-description: Criar uma nova empresa de livros da Microsoft em um locatário.
+description: Crie uma nova empresa do Microsoft Bookings em um locatário.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0dca36dd9c07eee0f3c91d0a5c25251672a400fa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 251d1b6d5e73b646216bdb152289808e93882d38
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960686"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047879"
 ---
-# <a name="create-bookingbusiness"></a><span data-ttu-id="61a51-103">Criar bookingBusiness</span><span class="sxs-lookup"><span data-stu-id="61a51-103">Create bookingBusiness</span></span>
+# <a name="create-bookingbusiness"></a><span data-ttu-id="6fe81-103">Criar bookingBusiness</span><span class="sxs-lookup"><span data-stu-id="6fe81-103">Create bookingBusiness</span></span>
 
-<span data-ttu-id="61a51-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="61a51-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6fe81-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6fe81-104">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="61a51-105">Criar uma nova empresa de livros da Microsoft em um locatário.</span><span class="sxs-lookup"><span data-stu-id="61a51-105">Create a new Microsoft Bookings business in a tenant.</span></span>
+<span data-ttu-id="6fe81-105">Crie uma nova empresa do Microsoft Bookings em um locatário.</span><span class="sxs-lookup"><span data-stu-id="6fe81-105">Create a new Microsoft Bookings business in a tenant.</span></span>
 
-<span data-ttu-id="61a51-106">Esta é a primeira etapa para configurar uma empresa de reservas onde você deve especificar o nome de exibição comercial.</span><span class="sxs-lookup"><span data-stu-id="61a51-106">This is the first step in setting up a Bookings business where you must specify the business display name.</span></span> <span data-ttu-id="61a51-107">Você pode incluir outras informações, como endereço comercial, endereço do site da Web e política de agendamento, ou definir essas informações mais tarde, [atualizando](bookingbusiness-update.md) o **bookingBusiness**.</span><span class="sxs-lookup"><span data-stu-id="61a51-107">You can include other information such as business address, web site address, and scheduling policy, or set that information later by [updating](bookingbusiness-update.md) the **bookingBusiness**.</span></span>
-## <a name="permissions"></a><span data-ttu-id="61a51-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="61a51-108">Permissions</span></span>
-<span data-ttu-id="61a51-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="61a51-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6fe81-106">Esta é a primeira etapa na configuração de uma empresa do Bookings em que você deve especificar o nome de exibição comercial.</span><span class="sxs-lookup"><span data-stu-id="6fe81-106">This is the first step in setting up a Bookings business where you must specify the business display name.</span></span> <span data-ttu-id="6fe81-107">Você pode incluir outras informações, como endereço comercial, endereço do site e [](bookingbusiness-update.md) política de agendamento, ou definir essas informações posteriormente atualizando **o bookingBusiness**.</span><span class="sxs-lookup"><span data-stu-id="6fe81-107">You can include other information such as business address, web site address, and scheduling policy, or set that information later by [updating](bookingbusiness-update.md) the **bookingBusiness**.</span></span>
+## <a name="permissions"></a><span data-ttu-id="6fe81-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="6fe81-108">Permissions</span></span>
+<span data-ttu-id="6fe81-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6fe81-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="61a51-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="61a51-111">Permission type</span></span>      | <span data-ttu-id="61a51-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="61a51-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6fe81-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6fe81-111">Permission type</span></span>      | <span data-ttu-id="6fe81-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6fe81-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="61a51-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="61a51-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="61a51-114">Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="61a51-114">Bookings.Manage.All</span></span>  |
-|<span data-ttu-id="61a51-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="61a51-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="61a51-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="61a51-116">Not supported.</span></span>   |
-|<span data-ttu-id="61a51-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="61a51-117">Application</span></span> | <span data-ttu-id="61a51-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="61a51-118">Not supported.</span></span> |
+|<span data-ttu-id="6fe81-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6fe81-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="6fe81-114">Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="6fe81-114">Bookings.Manage.All</span></span>  |
+|<span data-ttu-id="6fe81-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6fe81-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6fe81-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6fe81-116">Not supported.</span></span>   |
+|<span data-ttu-id="6fe81-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6fe81-117">Application</span></span> | <span data-ttu-id="6fe81-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6fe81-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="61a51-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="61a51-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6fe81-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6fe81-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="61a51-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="61a51-120">Request headers</span></span>
-| <span data-ttu-id="61a51-121">Nome</span><span class="sxs-lookup"><span data-stu-id="61a51-121">Name</span></span>       | <span data-ttu-id="61a51-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="61a51-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6fe81-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6fe81-120">Request headers</span></span>
+| <span data-ttu-id="6fe81-121">Nome</span><span class="sxs-lookup"><span data-stu-id="6fe81-121">Name</span></span>       | <span data-ttu-id="6fe81-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="6fe81-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="61a51-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="61a51-123">Authorization</span></span>  | <span data-ttu-id="61a51-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="61a51-124">Bearer {code}</span></span>|
+| <span data-ttu-id="6fe81-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="6fe81-123">Authorization</span></span>  | <span data-ttu-id="6fe81-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="6fe81-124">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="61a51-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="61a51-125">Request body</span></span>
-<span data-ttu-id="61a51-126">No corpo da solicitação, forneça uma representação JSON do objeto [bookingBusiness](../resources/bookingbusiness.md) .</span><span class="sxs-lookup"><span data-stu-id="61a51-126">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6fe81-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6fe81-125">Request body</span></span>
+<span data-ttu-id="6fe81-126">No corpo da solicitação, fornece uma representação JSON do [objeto bookingBusiness.](../resources/bookingbusiness.md)</span><span class="sxs-lookup"><span data-stu-id="6fe81-126">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="61a51-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="61a51-127">Response</span></span>
-<span data-ttu-id="61a51-128">Se bem-sucedido, este método retorna o `201, Created` código de resposta e o objeto [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="61a51-128">If successful, this method returns `201, Created` response code and [bookingBusiness](../resources/bookingbusiness.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6fe81-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="6fe81-127">Response</span></span>
+<span data-ttu-id="6fe81-128">Se tiver êxito, este método retornará `201, Created` o código de resposta e o objeto [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6fe81-128">If successful, this method returns `201, Created` response code and [bookingBusiness](../resources/bookingbusiness.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="61a51-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="61a51-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="61a51-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="61a51-130">Request</span></span>
-<span data-ttu-id="61a51-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="61a51-131">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6fe81-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6fe81-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6fe81-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6fe81-130">Request</span></span>
+<span data-ttu-id="6fe81-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6fe81-131">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="61a51-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="61a51-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6fe81-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="6fe81-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_bookingbusiness_from_bookingbusinesses"
@@ -78,27 +78,27 @@ Content-type: application/json
     "defaultCurrencyIso":"USD"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="61a51-133">C#</span><span class="sxs-lookup"><span data-stu-id="61a51-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6fe81-133">C#</span><span class="sxs-lookup"><span data-stu-id="6fe81-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-bookingbusiness-from-bookingbusinesses-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="61a51-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="61a51-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6fe81-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6fe81-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-bookingbusiness-from-bookingbusinesses-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="61a51-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="61a51-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6fe81-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6fe81-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-bookingbusiness-from-bookingbusinesses-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="61a51-136">Java</span><span class="sxs-lookup"><span data-stu-id="61a51-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="6fe81-136">Java</span><span class="sxs-lookup"><span data-stu-id="6fe81-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-bookingbusiness-from-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="61a51-137">No corpo da solicitação, forneça uma representação JSON do objeto [bookingBusiness](../resources/bookingbusiness.md) .</span><span class="sxs-lookup"><span data-stu-id="61a51-137">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="61a51-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="61a51-138">Response</span></span>
-<span data-ttu-id="61a51-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="61a51-139">The following is an example of the response.</span></span> <span data-ttu-id="61a51-140">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="61a51-140">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="61a51-141">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="61a51-141">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="6fe81-137">No corpo da solicitação, fornece uma representação JSON do [objeto bookingBusiness.](../resources/bookingbusiness.md)</span><span class="sxs-lookup"><span data-stu-id="6fe81-137">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="6fe81-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="6fe81-138">Response</span></span>
+<span data-ttu-id="6fe81-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6fe81-139">The following is an example of the response.</span></span> <span data-ttu-id="6fe81-140">Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="6fe81-140">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
