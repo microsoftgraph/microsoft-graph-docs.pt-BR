@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a22b1b260f73d6ea07e2dd4ad1d442ea414d84a8
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: e96fdce4e22aa1f83337ca9be938b648394808ac
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961328"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047291"
 ---
 # <a name="list-members-of-a-chat"></a>Liste os membros de um bate-papo.
 
@@ -23,9 +23,9 @@ Listar todos os [membros da conversa](../resources/conversationmember.md) de um 
 > [!NOTE]
 > As IDs de associação retornadas pelo servidor devem ser tratadas como cadeias de caracteres opacas. O cliente não deve tentar analisar ou fazer suposições sobre essas IDs do recursos.
 >
-> Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros são apenas do locatário atual.
+> Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros sejam apenas do locatário atual.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1b
 
 Veja a seguir um exemplo da resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
