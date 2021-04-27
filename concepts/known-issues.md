@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 07ee284f40264c76ec6156235fab651fff77cfe6
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 856100b87a1e776a4983f75f4bd35158f0745cfd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777002"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054249"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -340,9 +340,13 @@ Em certos casos, a `tenantId` / `email` / `displayName` propriedade para os memb
 
 ## <a name="users"></a>Usuários
 
+### <a name="use-the-dollar--symbol-in-the-userprincipalname"></a>Usar o símbolo de cifrão ($) no userPrincipalName
+
+O Microsoft Graph permite que o **userPrincipalName** comece com um caractere de cifrão (`$`). No entanto, ao consultar usuários por userPrincipalName, a url de solicitação `/users/$x@y.com` falha. Isso porque essa URL de solicitação viola as convenções de URL OData que espera que apenas as opções de consulta do sistema sejam prefixadas com um caractere `$`. Como alternativa, remova a barra (/) após `/users` e coloque o **userPrincipalName** entre parênteses e aspas simples como a seguir: `/users('$x@y.com')`
+
 ### <a name="no-instant-access-after-creation"></a>Sem acesso instantâneo após a criação
 
-Os usuários podem ser criados imediatamente por um POST na entidade do usuário. Uma licença do Microsoft 365 deve ser atribuída a um usuário primeiro para que ele possa ter acesso aos serviços do Microsoft 365. Mesmo assim, devido à natureza distribuída do serviço, pode demorar 15 minutos antes que os arquivos, as mensagens e as entidades de eventos fiquem disponíveis para uso por esse usuário na API do Microsoft Graph. Durante esse período, os aplicativos receberão uma resposta de erro 404 HTTP.
+Os usuários podem ser criados imediatamente por um POST na entidade do usuário. Uma licença do Office 365 deve ser atribuída a um usuário primeiro para que ele possa ter acesso aos serviços do Microsoft 365. Mesmo assim, devido à natureza distribuída do serviço, pode demorar 15 minutos antes que os arquivos, as mensagens e as entidades de eventos fiquem disponíveis para uso por esse usuário na API do Microsoft Graph. Durante esse período, os aplicativos receberão uma resposta de erro HTTP 404.
 
 ### <a name="photo-restrictions"></a>Restrições de foto
 
