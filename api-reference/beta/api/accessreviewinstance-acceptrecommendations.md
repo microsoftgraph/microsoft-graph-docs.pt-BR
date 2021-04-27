@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2ed7a78287acd725955220cfaca426faf0739556
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2e9505a0cf7e3b0e52d54c45ed7d85ee4e09651e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439244"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048432"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
@@ -36,7 +36,7 @@ O usuário de entrada também deve ser um revisor no accessReviewInstance.
 POST /me/pendingAccessReviewInstances/{instance-id}/acceptRecommendations
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-Nenhum.
+Nenhum
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -76,7 +76,7 @@ POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-6
 
 
 ### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": false

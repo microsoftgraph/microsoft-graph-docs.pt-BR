@@ -1,24 +1,23 @@
 ---
-ms.author: yiwenwang
 title: Usar a API de Pesquisa da Microsoft no Microsoft Graph para pesquisar arquivos
-description: Você pode usar a API de Pesquisa da Microsoft para pesquisar arquivos armazenados no OneDrive ou no SharePoint.
+description: Você pode usar a API de Pesquisa da Microsoft para pesquisar arquivos armazenados OneDrive ou SharePoint.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: f8da8b173762ce3630466ffe08de7b459bfd6f56
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: dc9d27255ca5306abf85462ca8e5715fe2345dac
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432680"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048649"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Usar a API de Pesquisa da Microsoft para pesquisar conteúdo no OneDrive e no SharePoint
+# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Use a API de Pesquisa da Microsoft para pesquisar conteúdo em OneDrive e SharePoint
 
-Use a API de Pesquisa da Microsoft para pesquisar conteúdo armazenado no OneDrive ou SharePoint: arquivos, pastas, listas, itens de lista ou sites.
+Use a API de Pesquisa da Microsoft para pesquisar conteúdo armazenado em OneDrive ou SharePoint: arquivos, pastas, listas, itens de lista ou sites.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-A API de Pesquisa permite que você escopo os tipos de conteúdo a ser recuperado no OneDrive ou no SharePoint especificando a propriedade **entityTypes** no [searchRequest](/graph/api/resources/searchRequest). Este artigo descreve alguns exemplos.
+A API de Pesquisa permite que você escopo os tipos de conteúdo a ser recuperado em OneDrive ou SharePoint especificando a propriedade **entityTypes** no [searchRequest](/graph/api/resources/searchRequest). Este artigo descreve alguns exemplos.
 
 ## <a name="example-1-search-files"></a>Exemplo 1: Arquivos de pesquisa
 
@@ -244,9 +243,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>Exemplo 4: Pesquisar todo o conteúdo no OneDrive e no SharePoint
+## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>Exemplo 4: Pesquisar todo o conteúdo em OneDrive e SharePoint
 
-Este exemplo consulta todo o conteúdo nos sites do OneDrive e do SharePoint aos quais o usuário interno tem acesso de leitura. A **propriedade resource** na resposta retorna corresponde a arquivos e pastas como objetos **driveItem,** corresponde a contêineres (listas do SharePoint) como **lista** e todas as outras corresponde como **listItem**.
+Este exemplo consulta todo o conteúdo em OneDrive e SharePoint sites aos quais o usuário inscreveu tem acesso de leitura. A **propriedade resource** na resposta retorna corresponde a arquivos e pastas como objetos **driveItem,** corresponde a contêineres (listas SharePoint) como lista e todas as outras combinações como **listItem**. 
 
 ### <a name="request"></a>Solicitação
 
@@ -355,8 +354,8 @@ Você pode usar KQL em termos de pesquisa de consultas para OneDrive e SharePoin
 - `"query": "contoso filetype:docx OR filetype:doc"` escopos da consulta para documentos do Word.
 - `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` escopos da consulta para uma pasta específica dentro de um site.
 - `"query": "contoso AND isDocument=true"` escopos da consulta para retornar apenas documentos. Qualquer contêiner (pasta, biblioteca de documentos) não será retornado.
-- `"query": "contoso contentclass:STS_List_Events"` escopos da consulta a eventos calendar armazenados no SharePoint.
-- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"` escopos da consulta para filtrar itens do SharePoint e do OneDrive por data
+- `"query": "contoso contentclass:STS_List_Events"`escopos da consulta para eventos calendar armazenados em SharePoint.
+- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"`escopos da consulta para filtrar SharePoint e OneDrive itens por data
 
 Para ser válida, a restrição de propriedades deve especificar um nome de propriedade gerenciada válido e queryable na condição.
 
@@ -364,7 +363,7 @@ Para ser válida, a restrição de propriedades deve especificar um nome de prop
 
 Você pode especificar os campos que deseja retornar na resposta, como parte da sub-propriedade **fields** de um [objeto searchHit](/graph/api/resources/searchhit) na resposta. Essa é uma maneira de cortar a resposta sobre o fio ou solicitar algumas propriedades específicas que não fazem parte do esquema fora da caixa.
 
-Observe que a seleção de propriedades só está disponível para **listItem,** pois essa é a única entidade do SharePoint no Microsoft Graph que dá suporte a propriedades personalizadas.
+Observe que a seleção de propriedades só está disponível para **listItem,** pois essa é a única entidade SharePoint no Microsoft Graph que oferece suporte a propriedades personalizadas.
 
 Para recuperar uma propriedade personalizada para **um driveItem**, **listItem de** consulta.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 92b794270c0912f1320f8bb2b5dcf47d1f976f5e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 96c574b688958b48a90074e4d7b830eba0501677
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942890"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048208"
 ---
 # <a name="get-agreement"></a>Obter contrato
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{i
 
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

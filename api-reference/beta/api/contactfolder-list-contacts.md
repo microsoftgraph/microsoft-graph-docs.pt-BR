@@ -1,16 +1,16 @@
 ---
 title: Listar contatos
-description: Obter todos os contatos na caixa de correio do usuário conectado (. ../me/Contacts) ou a pasta de contatos especificada.
+description: Obter todos os contatos na caixa de correio do usuário de entrada (.../me/contatos) ou na pasta de contato especificada.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 176a7834206944e8da1f9e6c58cdb95cd3021e18
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0cda56fb840d7a09ec5ad36614effe0e5564bc8b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957074"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047081"
 ---
 # <a name="list-contacts"></a>Listar contatos
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter todos os contatos na caixa de correio do usuário conectado (. ../me/Contacts) ou a pasta de contatos especificada.
+Obter todos os contatos na caixa de correio do usuário de entrada (.../me/contatos) ou na pasta de contato especificada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

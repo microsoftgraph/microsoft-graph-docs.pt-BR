@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9ca123ad39a307a67c5a91b542eab368dc988b85
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6e8bfe43529632988249206a0d84cc6e50e8324e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961544"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048005"
 ---
 # <a name="update-audio-routing-group"></a>Atualizar grupo de roteamento de áudio
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Modificar fontes e receptores de um [audioRoutingGroup](../resources/audioroutinggroup.md).
+Modificar fontes e receptores de [um audioRoutingGroup](../resources/audioroutinggroup.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :-------------- | :--------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado                       |
 | Delegado (conta pessoal da Microsoft) | Não suportado                       |
-| Aplicativo     | Calls. JoinGroupCalls. All, Calls.InitiateGroupCalls. All |
+| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,12 +47,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-| receptores | Coleção de cadeias de caracteres | Os participantes de destino no audioRoutingGroup. |
-| routingmode | String | Os valores possíveis são: `oneToOne` e `multicast`. |
-| fontes | Coleção de cadeias de caracteres | O participante de origem no audioRoutingGroup. |
+| receptores | Conjunto de cadeias de caracteres | Os participantes de destino no audioRoutingGroup. |
+| routingMode | String | Os valores possíveis são: `oneToOne` e `multicast`. |
+| fontes | Conjunto de cadeias de caracteres | O participante de origem no audioRoutingGroup. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [audioRoutingGroup](../resources/audioroutinggroup.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto audioRoutingGroup](../resources/audioroutinggroup.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

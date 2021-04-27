@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a8d4622c0c60521b6d4a56db86b5c4bd959950a2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 91b5e0fd0987bcc41e61646a298036efb4f538b9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437555"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047221"
 ---
 # <a name="list-policies"></a>Listar políticas
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies?$filter
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

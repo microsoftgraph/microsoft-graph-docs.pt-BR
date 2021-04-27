@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: bea9b639dced6f490941822e488ebbf07307dac3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5f790cdc87cc7beedb85421cffec8dfb65aa56e3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960660"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047858"
 ---
 # <a name="create-bookingservice"></a>Criar bookingService
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [bookingService](../resources/bookingservice.md) para o [bookingbusiness](../resources/bookingbusiness.md)especificado.
+Crie um novo [bookingService](../resources/bookingservice.md) para o [bookingbusiness especificado.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings. ReadWrite. All, bookings. Manage. All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -40,11 +40,11 @@ POST /bookingBusinesses/{id}/services
 | Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [bookingService](../resources/bookingservice.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto bookingService.](../resources/bookingservice.md)
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o `201, Created` código de resposta e o objeto [bookingService](../resources/bookingservice.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o `201, Created` [objeto bookingService](../resources/bookingservice.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -137,9 +137,9 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [bookingService](../resources/bookingservice.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto bookingService.](../resources/bookingservice.md)
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

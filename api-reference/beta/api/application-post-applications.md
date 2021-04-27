@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: b85080226e7664cc92e39528a0e518f83ff60d5e
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 1ba04ea1a7a7ba5128e91f5bbe8243fc4c436311
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473273"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048082"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -91,7 +91,7 @@ Content-length: 67
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

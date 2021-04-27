@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e8132815289848c7290b0a09ce2478665e1bbd11
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: dffd394e5724a3954324432abccd15f8a9be9318
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507186"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048425"
 ---
 # <a name="get-accessreviewinstance"></a>Obter accessReviewInstance
 
@@ -22,14 +22,14 @@ Recupere um [objeto accessReviewInstance](../resources/accessreviewinstance.md) 
 
 Para recuperar as decisões na instância, use [List accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
 Para chamar essa API, o usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso, ou o usuário pode ser atribuído como revistor na revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-root.md)
 
@@ -39,7 +39,7 @@ Para chamar essa API, o usuário inscreveu também deve estar em uma função de
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-Nenhum.
+Nenhum
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 
 ### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,24 +1,24 @@
 ---
-title: Listar tokenIssuancePolicies atribuídos
-description: Listar tokenIssuancePolicies que são atribuídas a um aplicativo.
+title: Listar tokens atribuídosIssuancePolicies
+description: Listar tokenIssuancePolicies atribuídas a um aplicativo.
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 155250bd4b7fb8a163d95eb44d5987c0d0a8d7bc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: be0d2e7e113d676c97d03e45262d901a3482ba1a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129174"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048110"
 ---
-# <a name="list-assigned-tokenissuancepolicies"></a>Listar tokenIssuancePolicies atribuídos
+# <a name="list-assigned-tokenissuancepolicies"></a>Listar tokens atribuídosIssuancePolicies
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar [os objetos tokenIssuancePolicy](../resources/tokenissuancepolicy.md) atribuídos a um [aplicativo.](../resources/application.md)
+Listar [os objetos tokenIssuancePolicy](../resources/tokenissuancepolicy.md) atribuídos a um [aplicativo](../resources/application.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Application                            | Policy.Read.All e Application.ReadWrite.OwnedBy, Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos tokenIssuancePolicy](../resources/tokenissuancepolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos tokenIssuancePolicy](../resources/tokenissuancepolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/applications/{id}/tokenIssuancePolicies
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

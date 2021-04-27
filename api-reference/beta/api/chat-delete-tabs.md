@@ -5,12 +5,12 @@ author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2020d0fe097be2a02c5b0fba4c47a0d700ca3ae
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 84509aff2efaf1c528c52b9e73744d6fada0ebb6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775882"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047298"
 ---
 # <a name="delete-tab-from-chat"></a>Excluir guia do chat
 
@@ -22,14 +22,14 @@ Remover (desempinar) uma guia do [chat especificado](../resources/chat.md).
 
 > **Observação**: se o chat estiver associado a uma instância [onlineMeeting,](../resources/onlinemeeting.md) então, efetivamente, a guia será removida da reunião.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Application | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -81,7 +81,7 @@ DELETE https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f29
 ---
 
 ### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

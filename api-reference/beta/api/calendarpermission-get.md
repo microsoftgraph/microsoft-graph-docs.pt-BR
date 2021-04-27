@@ -1,22 +1,22 @@
 ---
 title: Obter calendarPermission
-description: Obtenha as propriedades e os relacionamentos do objeto calendarpermission.
+description: Obter as propriedades e as relações do objeto calendarpermission.
 localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b2cc187eea605ef1b5bcbdb257705cd1b729756b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e6286ec91e3ef75cf9ae5d35992a8794392d2ede
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959848"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047683"
 ---
 # <a name="get-calendarpermission"></a>Obter calendarPermission
 
 Namespace: microsoft.graph
 
-Obter o objeto Permissions especificado de um usuário ou grupo calendário que foi compartilhado.
+Obter o objeto de permissões especificado de um usuário ou calendário de grupo que foi compartilhado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -35,13 +35,13 @@ Obter as permissões especificadas do calendário principal de um usuário:
 GET /users/{id}/calendar/calendarPermissions/{id}
 ```
 
-Obter as permissões especificadas de um calendário de Grupo:
+Obter as permissões especificadas de um calendário de grupo:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/calendar/calendarPermissions/{id}
 ```
 
-Obtenha as permissões especificadas do calendário do usuário que contém o evento identificado:
+Obter as permissões especificadas do calendário do usuário que contém o evento identificado:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
@@ -63,7 +63,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [calendarPermission](../resources/calendarpermission.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [calendarPermission](../resources/calendarpermission.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

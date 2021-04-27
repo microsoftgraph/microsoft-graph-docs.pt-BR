@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 188bb45cc664681cf536617a77072a0bb409f755
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 79ba45ac5238a1f80608951b0723f8217c772e39
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947074"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047144"
 ---
 # <a name="create-connectorgroup"></a>Criar connectorGroup
 
@@ -36,7 +36,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ```
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Name       | Descrição|
+| Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | Portador. Obrigatório.|
 | Content-type | application/json. Obrigatório. |
@@ -96,7 +96,7 @@ Content-length: 99
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

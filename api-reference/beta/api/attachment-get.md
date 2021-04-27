@@ -1,16 +1,16 @@
 ---
 title: Obter anexo
-description: Leia as propriedades e os relacionamentos de um anexo, anexados a um evento, mensagem, tarefa do Outlook ou postagem.
+description: Leia as propriedades e as relações de um anexo, anexado a um evento, mensagem, Outlook tarefa ou postagem.
 localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 0c4126ae9396c8afab1ee77a36cf35a1c91c8708
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 39c8be1eb33bd5843fe38c3715a3ee207e57c9f6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272167"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048026"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Leia as propriedades, relações ou conteúdo bruto de um anexo anexado a um evento de [usuário,](../resources/event.md) [mensagem,](../resources/message.md)tarefa do [Outlook](../resources/outlooktask.md)ou postagem de [grupo.](../resources/post.md) 
+Leia as propriedades, relações ou conteúdo bruto de um anexo anexado a um evento de [usuário,](../resources/event.md) [mensagem,](../resources/message.md)Outlook [tarefa](../resources/outlooktask.md)ou postagem de [grupo.](../resources/post.md) 
 
 Um anexo pode ser de um dos seguintes tipos:
 
@@ -33,21 +33,21 @@ Todos esses tipos de anexos são derivados do recurso [anexo](../resources/attac
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Obter o conteúdo bruto de um arquivo ou anexo de item
 Você pode anexar o segmento do caminho `/$value` para obter o conteúdo bruto de um arquivo ou anexo de item. 
 
-Para um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original. Veja um [exemplo 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message).
+Para um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original. Consulte um [exemplo 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message).
 
 Para um anexo de item que é um [contato](../resources/contact.md), [evento](../resources/event.md) ou [mensagem](../resources/message.md), o conteúdo bruto retornado está no formato MIME.
 
 | Tipo de anexo do item  | Conteúdo bruto retornado |
 |:-----------|:----------|
-| **contato** | Formato [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME. Veja [o exemplo 7](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
-| **event** | Formato iCal MIME. Veja [o exemplo 8](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
-| **message** | Formato MIME. Veja [o exemplo 9](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
+| **contato** | Formato [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME. Consulte [o exemplo 7](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **event** | Formato iCal MIME. Consulte [o exemplo 8](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
+| **message** | Formato MIME. Consulte [o exemplo 9](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
 
 A tentativa de obter o `$value` de um anexo de referência retorna HTTP 405.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem**) ao qual o anexo está anexado e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
+Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem**) ao qual o anexo está anexado e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
@@ -63,12 +63,12 @@ Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Esta seção mostra a sintaxe de solicitação HTTP GET para cada uma das entidades ([evento](../resources/event.md) [,](../resources/message.md)mensagem , tarefa do [Outlook](../resources/outlooktask.md)e [postagem](../resources/post.md)) que suportam anexos:
+Esta seção mostra a sintaxe de solicitação GET HTTP para cada uma das entidades ([evento,](../resources/event.md) [mensagem,](../resources/message.md)Outlook [tarefa](../resources/outlooktask.md)e [postagem](../resources/post.md)) que suportam anexos:
 
-- Para obter as propriedades e os relacionamentos de um anexo, especifique a ID do anexo a ser indexada na coleção **attachments,** anexada ao evento especificado [,](../resources/event.md)mensagem [,](../resources/message.md)tarefa do [Outlook](../resources/outlooktask.md)ou instância [de postagem.](../resources/post.md)
+- Para obter as propriedades e as relações de um anexo, especifique a ID do anexo para indexar na coleção **attachments,** anexada ao evento especificado [,](../resources/event.md)mensagem [,](../resources/message.md) [Outlook tarefa](../resources/outlooktask.md)ou instância de [postagem.](../resources/post.md)
 - Se o anexo for um arquivo ou item do Outlook (contato, evento ou mensagem), você poderá obter ainda mais o conteúdo bruto do anexo anexando o segmento de caminho `/$value` à URL da solicitação.
 
-Um anexo de um [evento:](../resources/event.md)
+Um anexo de um [evento](../resources/event.md):
 
 <!-- { "blockType": "ignored" } -->
 
@@ -83,7 +83,7 @@ GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 GET /groups/{id}/events/{id}/attachments/{id}
 -->
 
-Um anexo de uma [mensagem na](../resources/message.md) caixa de correio de um usuário:
+Um anexo de [uma mensagem](../resources/message.md) na caixa de correio de um usuário:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -93,7 +93,7 @@ GET /me/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 
-Um anexo de uma [mensagem contida](../resources/message.md) em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário:
+Um anexo de uma [mensagem](../resources/message.md) contida em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -113,9 +113,9 @@ GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$v
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-O exemplo anterior mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho e assim por diante.
+O exemplo anterior mostra um nível de aninhamento, mas uma mensagem pode ser localizada em um filho de um filho e assim por diante.
 
-Um anexo de uma [tarefa do Outlook:](../resources/outlooktask.md)
+Um anexo de uma [tarefa Outlook:](../resources/outlooktask.md)
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -125,7 +125,7 @@ GET /me/outlook/tasks/{id}/attachments/{id}/$value
 GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
-Um anexo de [uma postagem](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a [uma conversa](../resources/conversation.md) de um grupo:
+Um anexo de uma [postagem](../resources/post.md) em [um thread](../resources/conversationthread.md) pertencente a uma [conversa](../resources/conversation.md) de um grupo:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -199,7 +199,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_beta",
@@ -262,7 +262,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_item_attachment",
@@ -321,7 +321,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_and_expand_item_attachment",
@@ -541,7 +541,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachmen
 
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",

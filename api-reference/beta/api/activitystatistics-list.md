@@ -1,16 +1,16 @@
 ---
 title: Listar activityStatistics
-description: Obtenha uma coleção de objetos activityStatistics.
+description: Obter uma coleção de objetos activityStatistics.
 localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: ba1fb1fb18b3791b43d17ffeb11fadf7edd608aa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 422d6b3d03129d2e1c7169f3131c46fadc457e35
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952498"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048306"
 ---
 # <a name="list-activitystatistics"></a>Listar activityStatistics
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma coleção de [activityStatistics](../resources/activitystatistics.md) para um usuário para a última semana completa.
+Obter uma coleção [de activityStatistics](../resources/activitystatistics.md) para um usuário, para a última semana completa.
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,7 +41,7 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte a parâmetros de consulta opcionais para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -55,13 +55,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [activityStatistics](../resources/activitystatistics.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos activityStatistics](../resources/activitystatistics.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de uma solicitação de todas as estatísticas de atividade relacionadas para o usuário conectado.
+A seguir está um exemplo de uma solicitação de todas as estatísticas de atividade relacionadas para o usuário in-loco.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -94,9 +94,9 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo de uma resposta com todas as estatísticas de atividade relacionadas de um usuário. Essa resposta mostra apenas o primeiro dia das atividades de uma semana para reduzir a legibilidade.
+A seguir está um exemplo de uma resposta com todas as estatísticas de atividade relacionadas para um usuário. Essa resposta mostra apenas o primeiro dia das atividades de uma semana para reduzi-la para a capacidade de leitura.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

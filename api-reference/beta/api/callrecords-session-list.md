@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 923aba3d4cdc489ff6c716df2b55f59c82233752
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 2b575672befe470a6adfceb2a84ed1d22fe39d58
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472579"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047578"
 ---
 # <a name="list-callrecord-sessions"></a>Listar sessões callRecord
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | CallRecords.Read.All |
+| Application                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -211,7 +211,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$e
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

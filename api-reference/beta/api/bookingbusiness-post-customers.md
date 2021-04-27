@@ -1,16 +1,16 @@
 ---
 title: Criar bookingCustomer
-description: Criar um novo objeto bookingCustomer.
+description: Crie um novo objeto bookingCustomer.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a8e89c3b33acbb69a34e66cb55be2d271a9c0cbf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5206c6969f2a0f9504cfecd347e7e215577caae1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960681"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047865"
 ---
 # <a name="create-bookingcustomer"></a>Criar bookingCustomer
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [bookingCustomer](../resources/bookingcustomer.md) .
+Crie um novo [objeto bookingCustomer.](../resources/bookingcustomer.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All   |
+|Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -40,11 +40,11 @@ POST /bookingBusinesses/{id}/customers
 | Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [bookingCustomer](../resources/bookingcustomer.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto bookingCustomer.](../resources/bookingcustomer.md)
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o `201, Created` código de resposta e o objeto [bookingCustomer](../resources/bookingcustomer.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201, Created` o código de resposta e o objeto [bookingCustomer](../resources/bookingcustomer.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -82,9 +82,9 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [bookingCustomer](../resources/bookingcustomer.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto bookingCustomer.](../resources/bookingcustomer.md)
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

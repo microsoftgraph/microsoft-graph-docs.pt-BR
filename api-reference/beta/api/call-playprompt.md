@@ -1,18 +1,18 @@
 ---
-title: 'Call: playPrompt'
+title: 'call: playPrompt'
 description: Reproduza um prompt na chamada.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: adf46f91bba84940e7ae7632d7e6ae804be9b1e2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b6bfd7aa2cf7392a4abd16b339d31f58f9e64aff
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959623"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047641"
 ---
-# <a name="call-playprompt"></a>Call: playPrompt
+# <a name="call-playprompt"></a>call: playPrompt
 
 Namespace: microsoft.graph
 
@@ -20,10 +20,10 @@ Namespace: microsoft.graph
 
 Reproduza um prompt na chamada.
 
-Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsoperation.md)
+Para obter mais informações sobre como lidar com operações, consulte [commsOperation](../resources/commsoperation.md)
 
 > [!Note]
-> A ação **playPrompt** é suportada apenas para [chamadas](../resources/call.md) que são iniciadas com o [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
+> A **ação playPrompt** só tem suporte para [chamadas](../resources/call.md) iniciadas com [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Application                            | Nenhum.                                        |
+| Application                            | Nenhum                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,12 +53,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|prompts|Coleção [MediaPrompt](../resources/mediaprompt.md)| Os prompts a serem reproduzidos. O tamanho máximo de coleção mediaPrompt compatível é 20.|
-|ciclo|Booliano| O valor do loop. True indica o loop infinitamente. O valor padrão é falso. |
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. Pode ter um máximo de 256 caracteres.|
+|prompts|[Coleção MediaPrompt](../resources/mediaprompt.md)| Os prompts a serem tocados. O tamanho máximo da coleção mediaPrompt suportado é 20.|
+|loop|Boolean| O valor do loop. True indica fazer loop infinitamente. O valor padrão é falso. |
+|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -114,7 +114,7 @@ Content-Length: 166
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -134,9 +134,9 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação-operação concluída
+##### <a name="notification---operation-completed"></a>Notificação - operação concluída
 
- >**Observação:** Se ocorrer um loop infinito, esta notificação não será enviada.
+ >**Observação:** Se ocorrer loop infinito, essa notificação não será enviada.
  
 ```http
 POST https://bot.contoso.com/api/calls

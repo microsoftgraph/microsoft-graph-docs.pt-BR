@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0e805bcba5cac51910987f7a0d782bcb4f9c9380
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d96e5b2f2c7f435a0ea8dcd39a4b58ae7657c222
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960788"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047907"
 ---
 # <a name="list-bookings-calendarview"></a>Listar o calendarView do Bookings
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a coleção de objetos [bookingAppointment](../resources/bookingappointment.md) para um [bookingBusiness](../resources/bookingbusiness.md), que ocorre no intervalo de datas especificado.
+Obter a coleção [de objetos bookingAppointment](../resources/bookingappointment.md) para [um bookingBusiness](../resources/bookingbusiness.md), que ocorre no intervalo de datas especificado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -41,10 +41,10 @@ Forneça os seguintes parâmetros de consulta necessários com valores na URL so
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|iniciar|DateTimeOffset|A data e a hora de início de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T00:00:00Z ' e o mesmo tempo em PST teria a seguinte aparência: ' 2017-12-31T16:00:00-08:00 '.|
-|end|DateTimeOffset|A data e a hora de término de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC. Por exemplo, 3am UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T03:00: o 00Z ' e o mesmo momento em PST teria a seguinte aparência: ' 2017-12-31T19:00:00-08:00 '.|
+|iniciar|DateTimeOffset|A data e a hora de início de um intervalo de tempo, representados no formato ISO 8601, como UTC ou um deslocamento do UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria esta aparência: '2018-01-01T00:00:00Z', e o mesmo horário no PST teria esta aparência: '2017-12-31T16:00:00-08:00'.|
+|end|DateTimeOffset|A data e a hora de término de um intervalo de tempo, representado no formato ISO 8601, como UTC ou um deslocamento do UTC. Por exemplo, 3am UTC em 1º de janeiro de 2018 teria esta aparência: '2018-01-01T03:00:00Z', e o mesmo horário no PST teria esta aparência: '2017-12-31T19:00:00-08:00'.|
 
-Os valores de `start` e `end` são interpretados usando o deslocamento de fuso horário especificado em seus valores correspondentes e não são afetados pelo valor do `Prefer: outlook.timezone` cabeçalho, se houver.
+Os valores de e são interpretados usando o deslocamento de zona de tempo especificado em seus valores correspondentes e não são afetados pelo valor do `start` `end` `Prefer: outlook.timezone` header, se presente.
 
 Este método também dá suporte a alguns [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
@@ -57,7 +57,7 @@ Este método também dá suporte a alguns [Parâmetros de consulta OData](/graph
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `200, OK` o código de resposta e o objeto da coleção [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o objeto da coleção `200, OK` [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Veja a seguir um exemplo de como chamar essa API.
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

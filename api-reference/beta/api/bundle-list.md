@@ -5,12 +5,12 @@ description: Listar os pacotes na unidade de um usuário
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fafafbdef4f2fa8b6c2ba01f8544fa5f814f7672
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 746cfcc09792baf5d4b6cbb19be22f3918e06d54
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472717"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047781"
 ---
 # <a name="list-bundles"></a>Listar pacotes
 
@@ -124,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 
 ### <a name="example-2-list-all-photo-albums-in-a-drive"></a>Exemplo 2: Listar todos os álbuns de fotos em uma unidade
@@ -198,7 +198,7 @@ Content-type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 
 [pacote]: ../resources/bundle.md
@@ -211,7 +211,7 @@ O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitur
   "description": "List the bundles in a drive.",
   "keywords": "list,bundle,collection",
   "section": "documentation",
-  "tocPath": "Bundles/List"
+  "tocPath&quot;: &quot;Bundles/List"
 } -->
 
 

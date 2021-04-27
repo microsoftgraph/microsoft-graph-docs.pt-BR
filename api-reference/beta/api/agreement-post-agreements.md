@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 491c91bb36d2ad3ba55f0f9ad8c2ad2765f15a2c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 53d11dc97d2662906e06b661cd967d5536419a86
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942885"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048201"
 ---
 # <a name="create-agreement"></a>Criar contrato
 
@@ -50,12 +50,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|Cadeia de caracteres|Nome de exibição do contrato.|
-|isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário precisa expandir e exibir o contrato antes de aceitar.|
-|files/fileName|Cadeia de caracteres|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
-|files/isDefault|Booliano|Indica se esse é o arquivo de contrato padrão se nenhuma cultura corresponde à preferência do cliente. Se nenhum arquivo for marcado como padrão, o primeiro será tratado como padrão.|
-|files/language|Cadeia de caracteres|Cultura do arquivo de contrato no formato languagecode2-country/regioncode2. languagecode2 é um código de duas letras minúsculo derivado da ISO 639-1. country/regioncode2 é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47 (por exemplo, en-US).|
-|files/fileData/data|Binária|Dados que representam os termos de uso do documento PDF.|
+|displayName|String|Nome de exibição do contrato.|
+|isViewingBeforeAcceptanceRequired|Boolean|Indica se o usuário precisa expandir e exibir o contrato antes de aceitar.|
+|files/fileName|String|Nome do arquivo de contrato (por exemplo, TOU.pdf).|
+|files/isDefault|Boolean|Indica se esse é o arquivo de contrato padrão se nenhuma cultura corresponde à preferência do cliente. Se nenhum arquivo for marcado como padrão, o primeiro será tratado como padrão.|
+|files/language|String|Cultura do arquivo de contrato no formato languagecode2-country/regioncode2. languagecode2 é um código de duas letras minúsculo derivado da ISO 639-1. country/regioncode2 é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47 (por exemplo, en-US).|
+|files/fileData/data|Binário|Dados que representam os termos de uso do documento PDF.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `201, Created` um código de resposta e um objeto [agreement](../resources/agreement.md) no corpo da resposta.
@@ -111,7 +111,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

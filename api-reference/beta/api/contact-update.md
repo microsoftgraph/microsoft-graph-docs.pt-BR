@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7022203e1e3ca4867ba1c1b026f450d21d94b591
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3108edc3db30865cfd9541c053dbe1ea5105dd63
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472521"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047109"
 ---
 # <a name="update-contact"></a>Atualizar contato
 
@@ -65,7 +65,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |displayName|String|O nome para exibição do contato. Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação atualizar.|
 |emailAddresses|[Coleção typedEmailAddress](../resources/typedemailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
-|gender |Cadeia de caracteres |O sexo do contato. |
+|gender |String |O sexo do contato. |
 |generation|String|A geração do contato.|
 |givenName|String|O nome do contato.|
 |imAddresses|String|Os endereços de mensagens instantâneas do contato.|
@@ -77,14 +77,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |officeLocation|String|O local do escritório do contato.|
 |parentFolderId|String|A ID da pasta pai do contato.|
 |personalNotes|String|As anotações do usuário sobre o contato.|
-|telefones |Coleção [phone](../resources/phone.md) |Números de telefone associados ao contato, por exemplo, telefone 1, celular e telefone comercial. |
+|telefones |Coleção [phone](../resources/phone.md) |Telefone números associados ao contato, por exemplo, telefone 1, celular e telefone comercial. |
 |postalAddresses |[Coleção physicalAddress](../resources/physicaladdress.md) |Endereços associados ao contato, por exemplo, endereço residencial e endereço comercial. |
 |profession|String|A profissão do contato.|
 |spouseName|String|O nome do cônjuge/parceiro do contato.|
 |surname|String|O sobrenome do contato.|
 |title|String|O título do contato.|
 |websites |Coleção [website](../resources/website.md)|Sites associados ao contato. |
-|weddingAnniversary |Data |O aniversário de casamento do contato. |
+|weddingAnniversary |Date |O aniversário de casamento do contato. |
 |yomiCompanyName|String|O nome de empresa japonês fonético do contato. Essa propriedade é opcional.|
 |yomiGivenName|String|O nome japonês fonético do contato. Essa propriedade é opcional.|
 |yomiSurname|String|O sobrenome japonês fonético do contato. Essa propriedade é opcional.|
@@ -142,7 +142,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

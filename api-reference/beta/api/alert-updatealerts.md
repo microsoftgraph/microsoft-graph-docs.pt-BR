@@ -1,18 +1,18 @@
 ---
-title: 'alerta: updateAlerts'
+title: 'alert: updateAlerts'
 description: Atualize vários alertas em uma solicitação em vez de várias solicitações.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 37415ece13d81e7920b5edffd2db4431bf0be938
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 86c391f0684ebad30ef5abab0c3a7e8746445a32
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962308"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048180"
 ---
-# <a name="alert-updatealerts"></a>alerta: updateAlerts
+# <a name="alert-updatealerts"></a>alert: updateAlerts
 
 Namespace: microsoft.graph
 
@@ -46,15 +46,15 @@ POST /security/alerts/updateAlerts
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. Cada entidade deve ter propriedades **ID** e **vendorInformation** . Para obter detalhes sobre as propriedades que podem ser atualizadas, consulte [Update Alert](alert-update.md).
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. Cada entidade deve ter **propriedades id** e **vendorInformation.** Para obter detalhes sobre as propriedades que podem ser atualizadas, consulte [update alert](alert-update.md).
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|valor|conjunto [alerta](../resources/alert.md) | Conjunto de alertas a serem atualizados. Cada entidade deve ter **ID** , **vendorInformation** e outras propriedades editáveis a serem atualizadas.|
+|valor|conjunto [alerta](../resources/alert.md) | Coleção de alertas a ser atualizado. Cada entidade deve ter **id,** **vendorInformation** e outras propriedades editáveis a serem atualizadas.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200, OK` o código de resposta e o objeto da coleção [Alert](../resources/alert.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o objeto `200, OK` [da](../resources/alert.md) coleção de alertas no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -118,7 +118,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

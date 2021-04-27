@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b8ef436a9319e7a670e0aa5bdc728b39b53c2709
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0fe071b58709a7816a4ffd9c82627542c1905243
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942517"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048040"
 ---
 # <a name="update-approvalstep"></a>Atualizar approvalStep
 
@@ -50,8 +50,8 @@ A tabela a seguir mostra as propriedades necessárias para este método.
 
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-| reviewResult | Cadeia de caracteres | Decisão do aprovador. Os valores possíveis são: `Approve` e `Deny`.|
-| justification | Cadeia de caracteres | Justificativa relacionada à decisão do aprovador. |
+| reviewResult | String | Decisão do aprovador. Os valores possíveis são: `Approve` e `Deny`.|
+| justification | String | Justificativa relacionada à decisão do aprovador. |
 
 
 ## <a name="response"></a>Resposta
@@ -87,7 +87,7 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

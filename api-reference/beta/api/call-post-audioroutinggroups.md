@@ -1,16 +1,16 @@
 ---
 title: Criar grupo de roteamento de áudio
-description: Criar um novo **audioRoutingGroup**.
+description: Crie um novo **audioRoutingGroup**.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9dc787e7dc5c4339319c46f66f94ba7845c443d9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f4c7cbc969b676db6786bf0d708e92381fd4cecf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959582"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047627"
 ---
 # <a name="create-audio-routing-group"></a>Criar grupo de roteamento de áudio
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo **audioRoutingGroup**.
+Crie um novo **audioRoutingGroup**.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Application                            | Calls. JoinGroupCalls. All, Calls.InitiateGroupCalls. All |
+| Application                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,14 +43,14 @@ POST /communications/calls/{id}/audioRoutingGroups
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto audioRoutingGroup.](../resources/audioroutinggroup.md)
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-one-to-one-audio-routing-group"></a>Exemplo 1: grupo de roteamento de áudio de um para um
+### <a name="example-1-one-to-one-audio-routing-group"></a>Exemplo 1: grupo de roteamento de áudio um para um
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -96,11 +96,11 @@ Content-Length: 233
 ---
 
 
-No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto audioRoutingGroup.](../resources/audioroutinggroup.md)
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -123,7 +123,7 @@ Content-Length: 233
   ]
 }
 ```
-### <a name="example-2-multicast-audioroutinggroup"></a>Exemplo 2: audioRoutingGroup de difusão seletiva
+### <a name="example-2-multicast-audioroutinggroup"></a>Exemplo 2: audioRoutingGroup multicast
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -154,11 +154,11 @@ Content-Length: 233
 }
 ```
 
-No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto audioRoutingGroup.](../resources/audioroutinggroup.md)
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 ```http
 HTTP/1.1 200 OK

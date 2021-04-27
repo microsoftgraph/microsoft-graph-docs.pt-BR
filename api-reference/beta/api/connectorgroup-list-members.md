@@ -1,16 +1,16 @@
 ---
 title: Listar membros
-description: Recupere uma lista de objetos de conector associados a um connectorGroup.
+description: Recupere uma lista de objetos conectores associados a um connectorGroup.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 540a08d9b5b586c00de0553285d17f38d1ba994d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5a910360321db251a783f945d0146038d287c06a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129573"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047158"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de [objetos de](../resources/connector.md) conector associados a um [connectorGroup](../resources/connectorgroup.md).
+Recuperar uma lista de [objetos conectores](../resources/connector.md) associados a um [connectorGroup](../resources/connectorgroup.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [connector](../resources/connector.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [conectores](../resources/connector.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ---
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

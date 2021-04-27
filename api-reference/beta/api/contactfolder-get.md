@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 75d1264371487adf4aaeca902eee860744b6f715
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 73f9e8359640efa733371b9dd04ba4be6491937a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957102"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047095"
 ---
 # <a name="get-contactfolder"></a>Obter contactFolder
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtenha uma pasta de contatos usando a respectiva ID.
 
-Há dois cenários em que um aplicativo pode obter a pasta de contatos de outro usuário:
+Há dois cenários em que um aplicativo pode obter a pasta de contato de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
 * Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

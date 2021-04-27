@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: db326c4fe3ed63b4387d7fb5414312d683f26322
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: e4cf7e701787a18a85890dff29c321f643db20dd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625719"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047942"
 ---
 # <a name="add-identityprovider-to-a-b2xidentityuserflow"></a>Adicionar identityProvider a um b2xIdentityUserFlow
 
@@ -28,19 +28,19 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo| IdentityUserFlow.ReadWrite.All|
+|Application| IdentityUserFlow.ReadWrite.All|
 
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /identity/b2xUserFlows/{id}/identityProviders/$ref
+POST /identity/b2xUserFlows/{id}/identityProviders/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -56,7 +56,7 @@ No corpo da solicitação, forneça uma representação JSON da `id` [identidade
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="example"></a>Exemplo
 
@@ -73,7 +73,7 @@ Este é um exemplo de solicitação.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProviders/$ref
+POST https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProviders/$ref
 Content-type: application/json
 Content-length: 30
 

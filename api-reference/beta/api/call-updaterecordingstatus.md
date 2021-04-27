@@ -1,26 +1,26 @@
 ---
-title: 'Call: updateRecordingStatus'
+title: 'call: updateRecordingStatus'
 description: Atualize o status de gravação do aplicativo associado a uma chamada.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ca79d4711da249365cc0bc6e7456a8a16fad0b28
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 69893f1ff55a080e94ded88722614856c0dcf8c2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959456"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047592"
 ---
-# <a name="call-updaterecordingstatus"></a>Call: updateRecordingStatus
+# <a name="call-updaterecordingstatus"></a>call: updateRecordingStatus
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize o status de gravação do aplicativo associado a uma chamada. Isso requer o uso da solução de [gravação baseada em políticas do teams](/MicrosoftTeams/teams-recording-policy) .
+Atualize o status de gravação do aplicativo associado a uma chamada. Isso requer o uso da solução de [gravação Teams baseada em](/MicrosoftTeams/teams-recording-policy) política.
 
-> **Restrição adicional** : você não pode usar a API de acesso à mídia para registrar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa, ou dados derivados desse conteúdo de mídia ("Record" ou "Recording"), sem primeiro chamar a API **updateRecordingStatus** para indicar que a gravação começou e receber uma resposta de êxito dessa API. Se o aplicativo começar a gravar qualquer reunião, ele deverá finalizar a gravação antes de chamar a API **updateRecordingStatus** para indicar que a gravação foi concluída.
+> Restrição adicional **:** você não pode usar a API do Media Access para gravar ou persistir conteúdo de mídia de chamadas ou reuniões acessadas pelo aplicativo ou dados derivados desse conteúdo de mídia ("registro" ou "gravação"), sem chamar primeiro a API **updateRecordingStatus** para indicar que a gravação foi iniciada e receber uma resposta de sucesso dessa API. Se o aplicativo começar a gravar qualquer reunião, ele deverá encerrar a gravação antes de chamar a API **updateRecordingStatus** para indicar que a gravação terminou.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:-------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                                    |
 | Delegado (conta pessoal da Microsoft) | Não suportado                                    |
-| Aplicativo                            | Calls. JoinGroupCalls. All, calls. AccessMedia. All  |
+| Aplicativo                            | Calls.JoinGroupCalls.All, Calls.AccessMedia.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -50,11 +50,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro       | Tipo    | Descrição                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| clientContext   | String  | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                                 |
-| status          | String  | O status de gravação. Os valores possíveis são: `notRecording` , `recording` , ou `failed` .  |
+| clientContext   | String  | Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.                                 |
+| status          | String  | O status da gravação. Os valores possíveis são: `notRecording`, `recording` ou `failed`.  |
 
 ## <a name="response"></a>Resposta
-Este método retorna um `200 OK` código de resposta e um cabeçalho de local com um URI para o objeto [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) criado para essa solicitação.
+Este método retorna um código de resposta e um header location com um URI para o `200 OK` [objeto updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) criado para essa solicitação.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -99,7 +99,7 @@ Content-Length: 79
 
 ### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

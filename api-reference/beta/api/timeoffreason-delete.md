@@ -1,16 +1,16 @@
 ---
 title: Excluir timeOffReason
-description: Marque uma timeOffReason como inativa definindo a propriedade IsActive.
+description: Marque um timeOffReason como inativo definindo a propriedade isActive.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a4972905e927d204ae76d497c9c0761f9b63ff8c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d0e976ce275eda442ececbff5c2553d1764e154c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981410"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048957"
 ---
 # <a name="delete-timeoffreason"></a>Excluir timeOffReason
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Marque uma [timeOffReason](../resources/timeoffreason.md) como inativa definindo a propriedade **IsActive** . Cada equipe deve incluir pelo menos um **timeOffReason**.
+Marque um [timeOffReason](../resources/timeoffreason.md) como inativo definindo a **propriedade isActive.** Cada equipe deve incluir pelo menos uma **vezOffReason**.
 
-Este método não remove a instância especificada do **timeOffReason** . as instâncias do [timeOffItem](../resources/timeoffitem.md) que foram atribuídas essa razão permanecem atribuídas a esse motivo.
+Este método não remove a instância **timeOffReason** especificada. [As instâncias timeOffItem](../resources/timeoffitem.md) que foram atribuídas a esse motivo permanecem atribuídas a esse motivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,11 +30,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule. ReadWrite. All * |
+|Application | Schedule.ReadWrite.All* |
 
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
+>\***Importante:** As permissões de aplicativo estão atualmente apenas em visualização privada e não estão disponíveis para uso público.
 
-> **Observação** : esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -94,7 +94,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

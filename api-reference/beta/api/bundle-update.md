@@ -5,12 +5,12 @@ description: Atualizar um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5c27690f146924db2ade4baf8539a4973aa01ce2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 7b6cd4001acd674d265748e24638c2bca5454967
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471515"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047774"
 ---
 # <a name="update-bundle"></a>Pacote de atualizações
 
@@ -115,7 +115,7 @@ Content-Type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 
 [pacote]: ../resources/bundle.md
@@ -127,7 +127,7 @@ O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitur
   "description": "Update or replace the contents or properties of a bundle.",
   "keywords": "update,replace,contents,bundle",
   "section": "documentation",
-    "tocPath": "Bundles/Update"
+    "tocPath&quot;: &quot;Bundles/Update"
 } -->
 
 

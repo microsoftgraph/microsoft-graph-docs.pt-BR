@@ -5,18 +5,18 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0d151245252cb47503c92ab5d1c210db4f65736c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 116352b351d66bdc2c413eb1aad9357407d25631
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959833"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047676"
 ---
 # <a name="update-calendarpermission"></a>Atualizar calendarPermission
 
 Namespace: microsoft.graph
 
-Atualize as permissões atribuídas a um compartilhamento ou delegado existente, através do objeto [calendarPermission](../resources/calendarpermission.md) correspondente para um calendário.
+Atualize as permissões atribuídas a um compartilhamento ou representante existente, por meio do [objeto calendarPermission](../resources/calendarpermission.md) correspondente para um calendário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,13 +29,13 @@ Dependendo do tipo de calendário em que o evento se encontra e do tipo de permi
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Atualizar as permissões especificadas do calendário de um usuário:
+Atualize as permissões especificadas do calendário de um usuário:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id}/calendar/calendarPermissions/{id}
 ```
 
-Atualizar as permissões especificadas de um calendário de Grupo:
+Atualize as permissões especificadas de um calendário de grupo:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/calendar/calendarPermissions/{id}
@@ -59,17 +59,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|role|[calendarRoleType](../resources/calendarpermission.md#calendarroletype-values)| O nível de permissão a ser alterado para o compartilhamento ou representante do calendário. |
+|role|[calendarRoleType](../resources/calendarpermission.md#calendarroletype-values)| O nível de permissão a ser alterado para o compartilhamento de calendário ou representante. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [calendarPermission](../resources/calendarpermission.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [calendarPermission](../resources/calendarpermission.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
-O exemplo a seguir altera o nível de permissão de Sharee, Adele, para `write` .
+O exemplo a seguir altera o nível de permissão do compartilhamento, Adele, para `write` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -109,7 +109,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

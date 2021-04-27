@@ -1,16 +1,16 @@
 ---
 title: Criar connectorGroup
-description: Use esta API para criar um novo connectorGroup.
+description: Use essa API para criar um novo connectorGroup.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 07adf13a703868eb1ec77bf67325d6a8eef45ebf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: dd11c3b86bc2e4036f56b3bd5d83f426fab0e1bd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129979"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047151"
 ---
 # <a name="create-connectorgroup"></a>Criar connectorGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [connectorGroup](../resources/connectorgroup.md).
+Criar um novo [connectorGroup](../resources/connectorgroup.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -45,7 +45,7 @@ No corpo da solicitação, fornece uma representação JSON do [objeto connector
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o `201 Created` [objeto connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -86,7 +86,7 @@ Content-length: 99
 
 No corpo da solicitação, fornece uma representação JSON do [objeto connectorGroup.](../resources/connectorgroup.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

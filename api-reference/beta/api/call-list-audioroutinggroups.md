@@ -1,16 +1,16 @@
 ---
 title: Listar grupos de roteamento de áudio
-description: Recupere uma lista de objetos **audioRoutingGroup** .
+description: Recupere uma lista de **objetos audioRoutingGroup.**
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0ebdf20f757af275a0903ddfe474cf69cb6b72ba
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f64b3df32fa06dacdbd4a23018b654db3a5fb41b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959694"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047648"
 ---
 # <a name="list-audio-routing-groups"></a>Listar grupos de roteamento de áudio
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos **audioRoutingGroup** .
+Recupere uma lista de **objetos audioRoutingGroup.**
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Application     | Calls. JoinGroupCalls. All, Calls.InitiateGroupCalls. All |
+| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroup
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

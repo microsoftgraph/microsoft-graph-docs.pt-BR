@@ -1,16 +1,16 @@
 ---
 title: Obter applicationSignInDetailedSummary
-description: Recupere as propriedades e os relacionamentos de um objeto applicationSignInDetailSummary.
+description: Recupere as propriedades e as relações de um objeto applicationSignInDetailSummary.
 localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 17f4a087d548ae06b69430c3ca442ead5ac38625
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5bb2acdcc76b26aac6ebd851359a4c85a0441015
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128974"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048068"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>Obter applicationSignInDetailedSummary
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de [um objeto applicationSignInDetailSummary.](../resources/applicationsignindetailedsummary.md)
+Recupere as propriedades e as relações de [um objeto applicationSignInDetailSummary.](../resources/applicationsignindetailedsummary.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).
@@ -49,7 +49,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{i
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d32c462a9aeebaefcce4a712748d2b2402f385de
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 557fc6bf408b8536aad249474dbb248aa2c6f69d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472591"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047585"
 ---
 # <a name="get-callrecord"></a>Obter callRecord
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | CallRecords.Read.All |
+| Application                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -190,7 +190,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 
 Este é um exemplo de resposta. Se a lista de sessões estiver truncada, será fornecido um valor para recuperar a `sessions@odata.nextLink` próxima página de sessões.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -1,30 +1,30 @@
 ---
-title: 'chamada: ativar mudo'
-description: Permitir que o aplicativo se desative sozinho.
+title: 'call: unmute'
+description: Permitir que o aplicativo se desmute sozinho.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 66366ca4536f0b0a95805f5d6c0f96d3004b9c81
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1e995e17bfd98b26ae4680c1215a56d231e0116c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959470"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047599"
 ---
-# <a name="call-unmute"></a>chamada: ativar mudo
+# <a name="call-unmute"></a>call: unmute
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permitir que o aplicativo se desative sozinho.
+Permitir que o aplicativo se desmute sozinho.
 
-Este é um servidor que está desativado, o que significa que o servidor começará a enviar pacotes de áudio para este participante a outros participantes novamente.
+Esse é um servidor sem deslocamento, o que significa que o servidor começará a enviar pacotes de áudio para esse participante para outros participantes novamente.
 
-Para obter mais informações sobre como lidar com as operações de desativação, consulte [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).
+Para obter mais informações sobre como lidar com operações sem deslocamento, consulte [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).
 
-> **Observação:** Este método só tem suporte para chamadas de grupo.
+> **Observação:** Esse método só tem suporte para chamadas de grupo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -32,7 +32,7 @@ Para obter mais informações sobre como lidar com as operações de desativaç�
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Application                            | Nenhum.                                        |
+| Application                            | Nenhum                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +56,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) no corpo da resposta.
 
 >**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
 
@@ -99,7 +99,7 @@ Content-Length: 46
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -128,7 +128,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-unmuted"></a>Lista de notificação atualizada com o participante sem som
+##### <a name="notification---roster-updated-with-participant-unmuted"></a>Notificação - lista atualizada com o participante sem deslocamento
 
 ```http
 POST https://bot.contoso.com/api/calls

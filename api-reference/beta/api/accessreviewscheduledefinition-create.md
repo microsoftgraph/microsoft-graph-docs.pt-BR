@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b82980e053a50b7562cf94d0a5224badfd1d2a8a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a26c081af41658cebcff1db5d1608907f5b25034
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439097"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048369"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Criar accessReviewScheduleDefinition
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReview.ReadWrite.All |
 
 O usuário interno também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-root.md)
 
@@ -51,11 +51,11 @@ A tabela a seguir mostra as propriedades aceitas para criar um accessReview.
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
 | displayName | String | Nome da série de revisão de acesso. Obrigatório.|
-| descriptionForAdmins | string | Contexto da revisão fornecida aos administradores. Obrigatório. |
-  descriptionForReviewers | string | Contexto da revisão fornecida aos revisadores. Obrigatório. |
+| descriptionForAdmins | cadeia de caracteres | Contexto da revisão fornecida aos administradores. Obrigatório. |
+  descriptionForReviewers | cadeia de caracteres | Contexto da revisão fornecida aos revisadores. Obrigatório. |
 | escopo | [accessReviewScope](../resources/accessreviewscope.md) | Define o escopo dos usuários revisados em um grupo. Consulte  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Obrigatório.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | No caso de uma revisão de todos os grupos, isso determina o escopo de quais grupos serão revisados. Consulte [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
+| configurações | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisados analisam seu próprio acesso). Consulte [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
 
 
@@ -136,7 +136,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

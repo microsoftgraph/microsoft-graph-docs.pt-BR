@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3c9a98f731b58a55b70a27b0d39fd6d0d2b2d240
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: d921406f21b7c954aaf56185edf541cba26657bc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574360"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047333"
 ---
 # <a name="create-chartpoint"></a>Criar ChartPoint
 
@@ -85,7 +85,7 @@ Content-length: 3
 
 No corpo da solicitação, fornece uma representação JSON do [objeto WorkbookChartPoint.](../resources/workbookchartpoint.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

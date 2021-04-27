@@ -1,16 +1,16 @@
 ---
 title: Obter connectorGroup
-description: Recupere as propriedades de um objeto connectorGroup .
+description: Recupere as propriedades de um objeto connectorGroup.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8052f4aaf16ee16f89141c2715d519360e33dead
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9207236c7470fe4bdc7d7c638f573dd17bd3d992
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129594"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047179"
 ---
 # <a name="get-connectorgroup"></a>Obter connectorGroup
 
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ---
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

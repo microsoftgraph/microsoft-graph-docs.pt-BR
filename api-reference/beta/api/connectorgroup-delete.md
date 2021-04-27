@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d5ad43b789dff0abdc7cf938746e3b75dc5f4ad4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d08c319f16e3f2329a0f944c1b2d313395052990
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130133"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047186"
 ---
 # <a name="delete-connectorgroup"></a>Excluir connectorGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [connectorGroup](../resources/connectorgroup.md). Todos [os conectores](../resources/connector.md) e aplicativos devem ser removidos do grupo de conectores para que um grupo de conectores possa ser excluído.
+Excluir um [connectorGroup](../resources/connectorgroup.md). Todos [os conectores](../resources/connector.md) e aplicativos devem ser removidos do grupo de conectores antes que um grupo de conectores possa ser excluído.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -78,7 +78,7 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/application
 ---
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true

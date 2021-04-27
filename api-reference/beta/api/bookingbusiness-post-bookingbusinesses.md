@@ -1,16 +1,16 @@
 ---
 title: Criar bookingBusiness
-description: Criar uma nova empresa de livros da Microsoft em um locatário.
+description: Crie uma nova empresa do Microsoft Bookings em um locatário.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0dca36dd9c07eee0f3c91d0a5c25251672a400fa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 251d1b6d5e73b646216bdb152289808e93882d38
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960686"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047879"
 ---
 # <a name="create-bookingbusiness"></a>Criar bookingBusiness
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar uma nova empresa de livros da Microsoft em um locatário.
+Crie uma nova empresa do Microsoft Bookings em um locatário.
 
-Esta é a primeira etapa para configurar uma empresa de reservas onde você deve especificar o nome de exibição comercial. Você pode incluir outras informações, como endereço comercial, endereço do site da Web e política de agendamento, ou definir essas informações mais tarde, [atualizando](bookingbusiness-update.md) o **bookingBusiness**.
+Esta é a primeira etapa na configuração de uma empresa do Bookings em que você deve especificar o nome de exibição comercial. Você pode incluir outras informações, como endereço comercial, endereço do site e [](bookingbusiness-update.md) política de agendamento, ou definir essas informações posteriormente atualizando **o bookingBusiness**.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -42,11 +42,11 @@ POST /bookingBusinesses
 | Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [bookingBusiness](../resources/bookingbusiness.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto bookingBusiness.](../resources/bookingbusiness.md)
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o `201, Created` código de resposta e o objeto [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201, Created` o código de resposta e o objeto [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -96,9 +96,9 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [bookingBusiness](../resources/bookingbusiness.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto bookingBusiness.](../resources/bookingbusiness.md)
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 1ecb7dac1020bf243f6f58e0f6a80afc0724bfdc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1b6a970e9e7336ba4773c3ecbe0e53f7c02e8700
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437986"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047767"
 ---
 # <a name="list-businessflowtemplates"></a>Listar businessFlowTemplates
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
 O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/businessFlowTemplates
 
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

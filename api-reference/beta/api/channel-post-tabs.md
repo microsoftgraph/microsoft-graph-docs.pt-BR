@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 09fc4cf0ae88e9046de57ddcbdfdf195c7cb89ec
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 5575c4ae9267a968c7381ba4a89b66f9e0e7698d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607471"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047536"
 ---
 # <a name="add-tab-to-channel"></a>Adicionar uma guia ao canal
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | TeamsTab. Create, TeamsTab. ReadWriteForTeam, TeamsTab. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | TeamsTab.Create, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-| Aplicativo   | TeamsTab. Create. Group *, TeamsTab. Create, TeamsTab. ReadWriteForTeam. All, TeamsTab. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+| Aplicativo   | TeamsTab.Create.Group*, TeamsTab.Create, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
@@ -77,7 +77,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -104,7 +104,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Configurando os tipos de guias buit](/graph/teams-configuring-builtin-tabs)
+- [Configurando os tipos de guia buit-in](/graph/teams-configuring-builtin-tabs)
 - [Adicionar aplicativo à equipe](team-post-installedapps.md)
 
 

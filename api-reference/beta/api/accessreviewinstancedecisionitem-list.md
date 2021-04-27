@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1d2ec913e3ef942f76c26c86df74493819c2d790
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7674a129b118c2c9d8c3487623cf039b2ceca603
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439132"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048397"
 ---
 # <a name="list-accessreviewinstancedecisionitem"></a>Listar accessReviewInstanceDecisionItem
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Recupere os [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) para um [accessReviewInstance específico.](../resources/accessreviewinstance.md) Uma lista de zero ou mais objetos accessReviewInstanceDecisionItem é retornada, incluindo todas as suas propriedades aninhadas.
 
 >[!NOTE]
->Se muitos **accessReviewInstanceDecisionItems são retornados,** para melhorar a eficiência e evitar tempos-de-tempo, recupere o conjunto de resultados definido em páginas, incluindo o parâmetro de consulta $top com um tamanho de página de no máximo 100 e o parâmetro de consulta $skip=0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata.nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata.nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito na paja de dados do Microsoft Graph em seu aplicativo.
+>Se muitos **accessReviewInstanceDecisionItems são retornados,** para melhorar a eficiência e evitar tempos-de-tempo, recupere o conjunto de resultados definido em páginas, incluindo o parâmetro de consulta $top com um tamanho de página de no máximo 100 e o parâmetro de consulta $skip=0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata.nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata.nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito na pa paja do Microsoft Graph dados em seu aplicativo.
 >
 >Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph paginará automaticamente os resultados em 100 resultados por página.
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
  O usuário interno também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 
@@ -42,7 +42,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}/decisions
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-Nenhum.
+Nenhum
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não fornecer um corpo de solicitação.
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ---
 
 ### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

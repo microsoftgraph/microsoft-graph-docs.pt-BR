@@ -5,12 +5,12 @@ description: Obter um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8a3d74c5f4b746d6232bc39a9be7e82c5119d497
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b6f1619bbb169a92841d3999c43603860c0038fd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472738"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047788"
 ---
 # <a name="get-bundle"></a>Obter pacote
 
@@ -118,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 ### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>Exemplo 2: Obter um pacote e seus filhos em uma única chamada
 
@@ -176,7 +176,7 @@ Content-Type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 
 [pacote]: ../resources/bundle.md
@@ -190,7 +190,7 @@ O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitur
   "description": "Retrieve metadata about a bundle and its children in OneDrive",
   "keywords": "retrieve,item,bundle,metadata",
   "section": "documentation",
-  "tocPath": "Bundles/Get Bundle Metadata"
+  "tocPath&quot;: &quot;Bundles/Get Bundle Metadata"
 } -->
 
 
