@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d1f534193c2996693ccbce1c6ec6c9a2be6a9fb9
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c220f8bf4bed00c5203921cfb4efde0d29105152
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471359"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046017"
 ---
 # <a name="create-countriesregions"></a>Criar countriesRegions
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Aplicativo|Financials.ReadWrite.All|
+|Application|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```http
@@ -72,7 +72,7 @@ Content-type: application/json
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 
 ```http
 HTTP/1.1 201 Created

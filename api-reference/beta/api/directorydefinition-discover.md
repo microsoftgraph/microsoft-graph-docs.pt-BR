@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4b83168464b8f8ab563ffa549d601e35929684bb
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 0f4d5a26128c78dca1245f5b8c15f6a446e4296a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625882"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046885"
 ---
 # <a name="directorydefinition-discover"></a>directoryDefinition: descobrir
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.|
-|Aplicativo                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
+|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -88,7 +88,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 
 Veja a seguir um exemplo de uma resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

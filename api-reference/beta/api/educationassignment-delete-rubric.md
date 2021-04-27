@@ -1,24 +1,24 @@
 ---
-title: Remover o educationRubric do educationAssignment
+title: Remover educationRubric do educationAssignment
 description: Remover um educationRubric de um educationAssignment
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 119fe854c1bc04f850e89fcaf9dd8460b87ac95d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4eadc22c5e88243319245b90c165534bb062e404
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966597"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044428"
 ---
-# <a name="remove-educationrubric-from-educationassignment"></a>Remover o educationRubric do educationAssignment
+# <a name="remove-educationrubric-from-educationassignment"></a>Remover educationRubric do educationAssignment
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover um [educationRubric](../resources/educationrubric.md) de um [educationAssignment](../resources/educationassignment.md).  Isso não exclui o próprio amostra rubric.
+Remover um [educationRubric](../resources/educationrubric.md) de [um educationAssignment](../resources/educationassignment.md).  Isso não exclui a rubrica em si.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric/$re
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

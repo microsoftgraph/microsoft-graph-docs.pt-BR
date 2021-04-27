@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 98f1680bf871890df8e965af05c82e7e813f9e36
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 225df8d68d4a5f9eb99758b7d659c12102117af2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474397"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045240"
 ---
 # <a name="update-itemcategories"></a>Atualizar itemCategories
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Aplicativo|Financials.ReadWrite.All|
+|Application|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -71,7 +71,7 @@ Content-type: application/json
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 
 ```http
 HTTP/1.1 200 OK

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f2165f0149bc3389820907341773f78d1840ef26
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: eae0e826451383eb4e3bbd9b2c8089709baf509e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776568"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044757"
 ---
 # <a name="list-cases"></a>Listar casos
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

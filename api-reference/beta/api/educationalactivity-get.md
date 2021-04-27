@@ -1,16 +1,16 @@
 ---
 title: Obter educationalActivity
-description: Recupere as propriedades e os relacionamentos de um objeto educationalActivity.
+description: Recupere as propriedades e as relações de um objeto educationalActivity.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d0a789ab302d8a130d81c7acf06978ce841f081a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0f232b37db300bdd674f84e08ace433eb6524ad3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966661"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044498"
 ---
 # <a name="get-educationalactivity"></a>Obter educationalActivity
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [educationalActivity](../resources/educationalactivity.md) de um perfil de usuário.
+Recupere as propriedades e as relações de um [objeto educationalActivity](../resources/educationalactivity.md) de um perfil de usuários.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Application                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
+| Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$select` parâmetro de consulta. Especifique uma lista de propriedades a serem incluídas na resposta, separando-as por vírgulas. Para obter o desempenho ideal, selecione apenas o subconjunto de propriedades necessário.
+Este método dá suporte `$select` ao parâmetro de consulta. Especifique uma lista de propriedades para incluir na resposta, separando-as por vírgulas. Para obter o desempenho ideal, selecione apenas o subconjunto de propriedades necessárias.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [educationalActivity](../resources/educationalactivity.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [educationalActivity](../resources/educationalactivity.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

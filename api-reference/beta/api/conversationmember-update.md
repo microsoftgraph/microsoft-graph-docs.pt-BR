@@ -1,16 +1,16 @@
 ---
 title: Atualizar conversationMember
-description: Atualizar a função de um conversationMember em uma equipe ou canal.
+description: Atualize a função de um conversationMember em uma equipe ou canal.
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 24366fadfb863ba78b8f92ba39c25008c795e23e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0127d88adb5abaadc3698d4b1d237433e7ed9088
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956698"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047025"
 ---
 # <a name="update-conversationmember"></a>Atualizar conversationMember
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar a função de um [conversationMember](../resources/conversationmember.md) em uma [equipe](../resources/team.md).
+Atualize a função de [um conversationMember](../resources/conversationmember.md) em uma [equipe.](../resources/team.md)
 ou [canal](../resources/channel.md).
 
 > [!NOTE]
-> Em canais, essa operação só é suportada em canais com um [channelMembershipType](../resources/enums.md#channelmembershiptype-values) de `private` . Chamadas com qualquer outro [channelMembershipType](../resources/enums.md#channelmembershiptype-values) retornará uma `400 Bad Request` resposta.
+> Nos canais, essa operação só é suportada em canais com [um channelMembershipType](../resources/enums.md#channelmembershiptype-values) de `private` . Chamadas com qualquer outro [canalMembershipType](../resources/enums.md#channelmembershiptype-values) retornarão uma `400 Bad Request` resposta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,9 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| No Teams: TeamMember. ReadWrite. All<br/>Em canais: ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)| Em equipes: TeamMember.ReadWrite.All<br/>Em canais: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| No Teams: TeamMember. ReadWrite. All<br/>Em canais: ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo| Em equipes: TeamMember.ReadWrite.All<br/>Em canais: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->
@@ -49,11 +49,11 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes a serem atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores para que os campos relevantes atualizem. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|funções|coleção de cadeias de caracteres|As funções desse usuário. Deve ser "proprietário" ou vazio. Os usuários convidados devem sempre ter a função "convidado" e não podem ser alterados. |
+|funções|coleção de cadeias de caracteres|As funções desse usuário. Deve ser "proprietário" ou vazio. Os usuários convidados sempre devem ter a função "convidado" e não podem mudar. |
 
 ## <a name="response"></a>Resposta
 
@@ -103,7 +103,7 @@ content-length: 26
 
 Veja a seguir um exemplo da resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

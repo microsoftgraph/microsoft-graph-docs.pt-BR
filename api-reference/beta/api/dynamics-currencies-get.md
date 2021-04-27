@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d6b471b0aa7233c9777aaccdadafc8621aa65cc3
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 4b9b5f66e2fcddac908cea15f0fa16cca5b7c510
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471345"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045674"
 ---
 # <a name="get-currencies"></a>Obter moedas
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Aplicativo|Financials.ReadWrite.All|
+|Application|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 
 ```json
 {

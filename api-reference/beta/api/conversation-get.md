@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e25443b376ca84e5177946332ed8a8bfb0eb6c51
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 937ad1e434f01716fbbd6c5634fbd60716f2a2c6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956861"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047039"
 ---
 # <a name="get-conversation"></a>Obter conversa
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group. ReadWrite. All, Group. Read. All    |
+|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Group.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Group. ReadWrite. All, Group. Read. All |
+|Application | Group.ReadWrite.All, Group.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

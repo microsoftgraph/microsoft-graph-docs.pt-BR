@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 88f095439d159826aec1edebf9caf7baf2a66454
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ec1eedd4055d575eb469336bb177114c1561daee
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471366"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046164"
 ---
 # <a name="get-agedaccountsreceivable"></a>Obter agedAccountsReceivable
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Aplicativo|Financials.ReadWrite.All|
+|Application|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```http
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsRecei
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 
 ```json
 {

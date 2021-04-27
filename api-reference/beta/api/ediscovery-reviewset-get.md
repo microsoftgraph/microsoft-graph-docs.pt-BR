@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4a3478e7aee0459dea9f9c03d0d5ed6dfde50d54
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 220a52d7ceb7a3b5fce766a9ec98dbe9c7bf308b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445775"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044694"
 ---
 # <a name="get-reviewset"></a>Obter reviewSet
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/6f65a8e4-c6a0-4
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e814dd9afe56633c15825ede842f799bd85b0700
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 6c71ad4897ef0e00f16a72edc86d46b84dacd3a0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921669"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045205"
 ---
 # <a name="get-journals"></a>Obter diários
 
@@ -22,12 +22,12 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de um objeto de diário para o Dynamics 365 Business Central.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão |Permissões (da com menos para a com mais privilégios)|
 |:---------------|:------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|Financials.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)|Financials.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|
 |Application|Financials.ReadWrite.All|
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 
 ```json
 {

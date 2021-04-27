@@ -1,17 +1,17 @@
 ---
 title: 'driveItem: restaurar'
-description: Restaurar um driveItem que foi excluído e que está atualmente na lixeira.
+description: Restaure um driveItem que foi excluído e está atualmente na lixeira.
 localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 ms.date: 08/06/2019
 doc_type: apiPageType
-ms.openlocfilehash: aef61c906ff51e16d84c4f2f54444bc2343fffd1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fc1d9e1dc44af3ccbca132d8d54f1413e029f614
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963526"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046262"
 ---
 # <a name="driveitem-restore"></a>driveItem: restaurar
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restaurar um [driveItem](../resources/driveitem.md) que foi excluído e que está atualmente na lixeira. **Observação** : atualmente, essa funcionalidade só está disponível para o onedrive Personal.
+Restaure [um driveItem](../resources/driveitem.md) que foi excluído e está atualmente na lixeira. **OBSERVAÇÃO**: Essa funcionalidade está disponível apenas para OneDrive Pessoal.
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,12 +51,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro     | Tipo                                         | Descrição |
 |:--------------|:---------------------------------------------|:------------|
-|parentReference|[ItemReference](../resources/itemreference.md)| Opcional. Referência ao item pai no qual o item excluído será restaurado. |
+|parentReference|[ItemReference](../resources/itemreference.md)| Opcional. Referência ao item pai ao que o item excluído será restaurado. |
 |nome           |String                                        | Opcional. O novo nome do item restaurado. Se isso não for fornecido, será usado o mesmo nome que o original. |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [driveItem](../resources/driveitem.md) restaurado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [driveItem](../resources/driveitem.md) restaurado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -108,7 +108,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

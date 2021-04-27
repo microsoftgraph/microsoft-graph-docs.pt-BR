@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d37036734e1e00d8130612528ee90305c3986476
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b7271f38e11505930cb377cb05399a2e7f93d458
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437195"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046976"
 ---
 # <a name="list-device-groups"></a>Listar grupos de dispositivos
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta. 
-> **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -169,7 +169,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -212,7 +212,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

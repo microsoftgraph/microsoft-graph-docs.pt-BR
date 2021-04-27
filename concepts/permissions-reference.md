@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c72b65a8220a82e0c48022fcf4839a6b1be7e345
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 33c08345417a5cb06e4015184712ff5135097361
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920177"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038625"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -799,7 +799,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Files.Read.All_ | Ler todos os arquivos que o usuário pode acessar | Permite que o aplicativo para leia todos os arquivos que o usuário conectado pode acessar. | Não | Sim |
 | _Files.ReadWrite_  | Ter acesso total aos arquivos do usuário | Permite que o aplicativo leia, crie, atualize e exclua os arquivos do usuário conectado. | Não| Sim |
 | _Files.ReadWrite.All_ | Ter acesso total a todos os arquivos que o usuário pode acessar | Permite que o aplicativo leia, crie, atualize e exclua todos os arquivos que o usuário conectado pode acessar. | Não | Sim |
-| _Files.ReadWrite.AppFolder_ | Ter acesso total à pasta do aplicativo (prévia) | (Prévia) Permite que o aplicativo leia, crie, atualize exclua arquivos na pasta do aplicativo. | Não | Não |
+| _Files.ReadWrite.AppFolder_ | Ter acesso total à pasta do aplicativo (prévia) | (Prévia) Permite que o aplicativo leia, crie, atualize exclua arquivos na pasta do aplicativo. | Não | Sim |
 | _Files.Read.Selected_  | Ler arquivos selecionados pelo usuário | **Suporte limitado no Microsoft Graph – confira Comentários** <br/> (Visualização) Permite ao aplicativo ler arquivos selecionados pelo usuário. O aplicativo tem acesso por várias horas depois que o usuário tiver selecionado um arquivo.  | Não | Não |
 | _Files.ReadWrite.Selected_ | Ler e gravar arquivos selecionados pelo usuário | **Suporte limitado no Microsoft Graph – confira Comentários** <br/> (Visualização) Permite ao aplicativo ler e gravar arquivos selecionados pelo usuário. O aplicativo tem acesso por várias horas depois que o usuário tiver selecionado um arquivo. | Não | Não |
 
@@ -1144,8 +1144,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Mail.Send.Shared_ |    Enviar email em nome de outras pessoas | Permite que o aplicativo enviar emails como o usuário conectado no, incluindo o envio de nome de terceiros. | Não | Não
 | _MailboxSettings.Read_ |  Ler as configurações da caixa de correio do usuário | Permite ao aplicativo ler as configurações da caixa de correio do usuário. Não inclui a permissão para enviar emails. | Não | Sim
 | _MailboxSettings.ReadWrite_ |  Leia e grave as configurações de caixa de correio do usuário | Permite ao aplicativo criar, ler, atualizar e excluir as configurações da caixa de correio do usuário. Não inclui permissão para enviar emails diretamente, mas permite que o aplicativo crie regras que podem encaminhar ou redirecionar mensagens. | Não | Sim
-| _IMAP.AccessAsUser.All_ | Acesso de leitura e gravação aos emails do usuário via IMAP | Permite o aplicativo ler, atualizar e excluir emails em caixas de correio do usuário. Não inclui a permissão para enviar emails. | Não | Sim
-| _POP.AccessAsUser.All_ | Acesso de leitura e gravação aos emails do usuário via POP | Permite o aplicativo ler, atualizar e excluir emails em caixas de correio do usuário. Não inclui a permissão para enviar emails. | Não | Sim
+| _IMAP.AccessAsUser.All_ | Acesso de leitura e gravação aos emails do usuário via IMAP | Permite ao aplicativo ler, atualizar, criar e excluir emails das caixas de correio do usuário. Não inclui a permissão para enviar emails. | Não | Sim
+| _POP.AccessAsUser.All_ | Acesso de leitura e gravação aos emails do usuário via POP | Permite ao aplicativo ler, atualizar, criar e excluir emails das caixas de correio do usuário. Não inclui a permissão para enviar emails. | Não | Sim
 | _SMTP.Send_ | Enviar email como um usuário usando SMTP AUTH | Permite ao aplicativo enviar emails como usuários na organização. | Não | Sim
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -1153,7 +1153,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | Permissão                  | Exibir Cadeia de Caracteres                           | Descrição                                                                                                                                                                        | Consentimento Obrigatório do Administrador |
 |:----------------------------|:-----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------|
 | _Mail.Read_                 | Ler emails em todas as caixas de correio               | Permite ao aplicativo ler emails em todas as caixas de correio sem um usuário conectado.                                                                                                             | Sim                    |
-| _Mail.ReadBasic.All_        | Ler emails básicos de todos usuários                 | Permite que o aplicativo leia as caixas de correio de todos os usuários, exceto o Copro, BodyPreview, UniqueBody, Anexos, ExtendedProperties e Extensões. Não inclui permissões para pesquisar mensagens. | Sim                    |
+| _Mail.ReadBasic.All_        | Ler emails básicos de todos usuários                 | Permite que o aplicativo leia as caixas de correio de todos os usuários, exceto Body, BodyPreview, UniqueBody, Attachments, ExtendedProperties e Extensions. Não inclui permissões para pesquisar mensagens. | Sim                    |
 | _Mail.ReadWrite_            | Ler e gravar emails em todas as caixas de correio     | Permite ao aplicativo criar, ler, atualizar e excluir emails em todas as caixas de correio sem um usuário conectado. Não inclui a permissão para enviar emails.                                       | Sim                    |
 | _Mail.Send_                 | Enviar email como qualquer usuário                    | Permite ao aplicativo enviar emails como qualquer usuário sem um usuário conectado.                                                                                                                  | Sim                    |
 | _MailboxSettings.Read_      | Ler as configurações de caixa de correio do usuário           | Permite que o aplicativo leia configurações da caixa de correio do usuário sem um usuário conectado. Não inclui a permissão para enviar emails.                                                                 | Não                     |
@@ -1255,7 +1255,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1437,7 +1437,7 @@ Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _off
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read.All_ | Ler listas de pessoas relevantes de todos os usuários | Permite ao aplicativo ler uma lista pontuada de pessoas relevantes para o usuário conectado ou para outros usuários da organização do usuário conectado. <br/><br/>A lista pode incluir contatos locais, contatos das redes sociais ou do diretório da sua organização e as pessoas de comunicações recentes (como emails e Skype). Também permite que o aplicativo pesquise todo o diretório da organização do usuário conectado. | Sim |
+| _People.Read.All_ | Ler listas de pessoas relevantes de todos os usuários | Permite ao aplicativo ler uma lista pontuada de pessoas relevantes para o usuário conectado ou para outros usuários da organização do usuário conectado. <br/><br/>A lista pode incluir contatos locais, contatos de redes sociais ou do diretório da organização, e pessoas de comunicações recentes (como email e Skype). Também permite que o aplicativo pesquise todo o diretório da organização do usuário conectado. | Sim |
 
 ### <a name="remarks"></a>Comentários
 
@@ -1620,7 +1620,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), em nome do usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim | Não |
-| _RoleManagement.Read.Directory_ | Ler os dados da função de gerenciamento para Azure Active Directory | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado.  Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
+| _RoleManagement.Read.Directory_ | Ler os dados da função de gerenciamento para Azure Active Directory | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado em função (RBAC) da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
 | _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função no Azure AD | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -1905,8 +1905,8 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ (**Preterido**)| Ler todos os aplicativos do Teams instalados | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
-| _TeamsApp.ReadWrite.All_ (**Preterido**)| Gerenciar todos os aplicativos do Teams | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp.Read.All_ (**Preterido**)| Ler todos os aplicativos do Teams instalados | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado, e em todas as equipes que o usuário é membro. Não dá a capacidade de ler as configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp.ReadWrite.All_ (**Preterido**)| Gerenciar todos os aplicativos do Teams | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado, e também das equipes que o usuário é membro. Não dá a capacidade de ler ou gravar as configurações específicas do aplicativo. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1997,8 +1997,8 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsTab.Read.All_ | Lê guias no Microsoft Teams. | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
-| _TeamsTab.ReadWrite.All_ | Lê e grava guias no Microsoft Teams. | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo.    | Sim | Não |
+| _TeamsTab.Read.All_ | Lê guias no Microsoft Teams. | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado, e em todas as equipes que o usuário é membro. Não dá a capacidade de ler as configurações específicas do aplicativo. | Sim | Não |
+| _TeamsTab.ReadWrite.All_ | Lê e grava guias no Microsoft Teams. | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado, e também das equipes que o usuário é membro. Não dá a capacidade de ler ou gravar as configurações específicas do aplicativo.    | Sim | Não |
 | _TeamsTab.Create_ | Cria guias no Microsoft Teams. | Permite que o aplicativo crie guias em qualquer equipe do Microsoft Teams, em nome do usuário conectado. Isso não concede a capacidade de ler, modificar ou excluir guias depois de criá-las ou conceder acesso ao conteúdo nas guias. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -2168,7 +2168,7 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 | _User.ReadWrite.All_ |     Ler e gravar os perfis completos de todos os usuários | Permite ao aplicativo ler e gravar o conjunto completo de propriedades do perfil, relatórios e gerentes de outros usuários na sua organização, em nome do usuário conectado. Também permite que o aplicativo crie e exclua usuários, além de redefinir senhas de usuário em nome do usuário conectado. | Sim | Não |
 | _User.Invite.All_  |     Convidar usuários convidados para a organização | Permite que o aplicativo convide usuários para sua organização em nome do usuário conectado. | Sim | Não |
 | _User.Export.All_       |    Exportar dados de usuários | Permite que o aplicativo exporte os dados de um usuário organizacional, quando executado por um administrador da empresa.| Sim | Não |
-| _User.ManageIdentities.All_       |    Gerenciar identidades de usuário | Permite que um aplicativo leia, atualize e exclua identidades associadas a uma conta de usuário à qual o usuário conectado tenha acesso. Controla quais identidades os seus usuários podem usar para entrar. | Sim | Não |
+| _User.ManageIdentities.All_       |    Gerenciar identidades de usuário | Permite que um aplicativo leia, atualize e exclua identidades associadas a uma conta de usuário, a qual o usuário conectado tenha acesso. Isso controla com quais identidades seus usuários podem se conectar. | Sim | Não |
 
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -2179,7 +2179,7 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 | _User.ReadWrite.All_ |   Ler e gravar os perfis completos de todos os usuários | Permite ao aplicativo ler e gravar o conjunto completo de propriedades do perfil, relatórios e gerentes de outros usuários na sua organização, sem um usuário conectado.  Também permite que o aplicativo crie e exclua usuários não administrativos. Não permite a redefinição de senhas de usuário. | Sim |
 | _User.Invite.All_  |     Convidar usuários convidados para a organização | Permite que o aplicativo convide usuários para sua organização sem um usuário conectado. | Sim |
 | _User.Export.All_       |    Exportar dados de usuários | Permite que o aplicativo exporte dados de usuários organizacionais, sem um usuário conectado.| Sim |
-| _User.ManageIdentities.All_       |    Gerenciar todas as identidades de usuário | Permite que um aplicativo leia, atualize e exclua identidades associadas a uma conta de usuário sem que o usuário esteja conectado. Controla quais identidades os usuários podem usar para entrar. |  Sim |
+| _User.ManageIdentities.All_       |    Gerenciar todas as identidades de usuário | Permite que um aplicativo leia, atualize e exclua identidades associadas a uma conta de usuário, sem um usuário conectado. Isso controla com quais identidades os usuários podem se conectar. |  Sim |
 
 ### <a name="remarks"></a>Comentários
 
@@ -2294,7 +2294,7 @@ A restrição *CreatedByApp* associada a essa permissão indica que o serviço a
 
 ### <a name="remarks"></a>Comentários
 
-As permissões do método de autenticação do usuário são usadas para gerenciar os métodos de autenticação nos usuários. Com essas permissões, um usuário ou aplicativo delegado pode registrar novos métodos de autenticação em um usuário, ler os métodos de autenticação que o usuário já registrou, atualizar esses métodos de autenticação e removê-los do usuário.
+As permissões do método de autenticação do usuário são usadas para gerenciar os métodos de autenticação dos usuários. Com essas permissões, um usuário ou aplicativo delegado pode registrar novos métodos de autenticação em um usuário, ler os métodos de autenticação que o usuário já registrou, atualizar estes métodos de autenticação e removê-los do usuário.
 
 Com essas permissões, todos os métodos de autenticação podem ser lidos e gerenciados em um usuário. Isso inclui os métodos usados para:
 
@@ -2345,7 +2345,7 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 | **Tarefas do aplicativo envolvendo o Grupo**  |  **Permissões necessárias** |  **Cadeias de caracteres de permissão** |
 |:-------------------------------|:---------------------|:---------------|
 | O aplicativo deseja ler as informações básicas do grupo (somente o nome para exibição e a imagem), por exemplo, para mostrar uma experiência de seleção de um grupo  | _Group.Read.All_  | Ler todos os grupos|
-| O aplicativo deseja ler todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos e conversas.  Também precisa mostrar associações de grupo e ser capaz de atualizar associações de grupo (caso seja o proprietário).  |  _Group.Read.All_ | Ler itens em todos os conjuntos de sites, ler todos os grupos|
-| O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos e conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
-| O aplicativo deseja descobrir (localizar) um grupo do Microsoft 365. Permite ao usuário procurar um grupo específico e escolher um deles na lista enumerada para ingressar no grupo.   | _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
+| O aplicativo deseja ler todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos, conversas.  Ele também precisa mostrar associações de grupo, conseguir atualizar associações de grupo (caso seja o proprietário).  |  _Group.Read.All_ | Ler itens em todos os conjuntos de sites, ler todos os grupos|
+| O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos, conversas. Ele também precisa mostrar associações de grupo, conseguir atualizar associações de grupo (caso seja o proprietário).  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
+| O aplicativo deseja descobrir (localizar) um grupo do Microsoft 365. Permite ao usuário procurar um grupo específico e escolher um deles na lista enumerada para permitir a sua entrada no grupo.   | _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
 | O aplicativo deseja criar um grupo por meio do AAD Graph |   _Group.ReadWrite.All_ | Ler e gravar todos os grupos|

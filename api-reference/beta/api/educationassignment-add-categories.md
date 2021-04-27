@@ -1,31 +1,31 @@
 ---
 title: Adicionar educationCategories
-description: Adicionar um educationCategory existente a este educationAssignment
+description: Adicionar uma educationCategory existente a este educationAssignment
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0f5a536ba1dc6390d8642f82de2d4bf131602c62
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c94ffa2f11ae8fd77380fa164affdded4cfb3b2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007893"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044407"
 ---
 # <a name="add-educationcategories"></a>Adicionar educationCategories
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um ou mais objetos [educationCategory](../resources/educationcategory.md) existentes a este [educationAssignment](../resources/educationassignment.md).
+Adicione um ou mais objetos [educationCategory](../resources/educationcategory.md) existentes a [este educationAssignment](../resources/educationassignment.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte.  | 
 
@@ -41,7 +41,7 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça o odata.id dos objetos existentes do [educationCategory](../resources/educationcategory.md) para adicionar a essa atribuição.
+No corpo da solicitação, odata.id os objetos [educationCategory](../resources/educationcategory.md) existentes para adicionar a esta atribuição.
 
 
 ## <a name="response"></a>Resposta
@@ -64,11 +64,11 @@ Content-length: 212
 }
 
 ```
-No corpo da solicitação, forneça a odata.id do objeto [educationCategory](../resources/educationcategory.md) existente para adicionar a essa atribuição.
+No corpo da solicitação, fornece o odata.id do objeto [educationCategory](../resources/educationcategory.md) existente para adicionar a essa atribuição.
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 
 <!-- {

@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 505c78a9adef3efc2baae05487a46b59d97d6ca6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4e0a821420ccac7de9fb4bc055d5d9dddb11969c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436544"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046493"
 ---
 # <a name="list-domainnamereferences"></a>Listar domainNameReferences
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sem suporte. |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/domainNameReferences
 
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

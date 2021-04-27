@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 38e5ec2c48f6f553579b69b12c42821e459cc5b6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 92c77a811eacc6af18d48324f70392c30313f1a2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130953"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046892"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo usuário, aplicativo, gerenciamento de dispositivos e grupos, PIM (privileged identity management), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (redefinições de senha de administrador e SSPR) e gerenciamento de grupo de autoatend direito.
+Obter a lista de logs de auditoria gerados por Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo gerenciamento de usuário, aplicativo, dispositivo e grupo, PIM (gerenciamento de identidade privilegiada), análises de acesso, termos de uso, proteção de identidade, gerenciamento de senha (redefinições de senha de administrador e SSPR) e gerenciamento de grupo de autoatendamento.
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, consulte [parâmetros de consulta OData.](/graph/query_parameters)
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, consulte [Parâmetros de consulta OData](/graph/query_parameters).
 
 |Parâmetro     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar
 |[$top](/graph/query-parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/directoryAudits?$top=1`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.|`/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte $filter parâmetro
+### <a name="attributes-supported-by-filter-parameter"></a>Atributos suportados pelo $filter parâmetro
 
 |Atributo        |Operadores com suporte|
 |:----------------|:------|
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 
 Veja a seguir um exemplo da resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

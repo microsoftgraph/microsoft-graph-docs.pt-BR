@@ -5,12 +5,12 @@ description: Criar um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8883006a6aa1daf86e4d3b8a6efac31e0ae25376
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 21312f78257fbd3c7c371e3c22e1ee03905402c1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471380"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046269"
 ---
 # <a name="create-bundle"></a>Criar pacote
 
@@ -120,7 +120,7 @@ Content-Type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 ### <a name="example-2-create-an-album"></a>Exemplo 2: Criar um álbum
 
@@ -182,10 +182,10 @@ Content-Type: application/json
 }
 ```
 
-O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 Se _@microsoft.graph.conflictBehavior_ estiver definido para **renomear** e um pacote com o mesmo nome já existir, o novo nome do pacote será atualizado para ser exclusivo.
-O OneDrive anexa um número ao final do nome do pacote.
+OneDrive anexar um número ao final do nome do pacote.
 
 Por exemplo, `My Day at the Beach` poderia ser renomeado `My Day at the Beach 1`.
 Se `My Day at the Beach 1` for tomada, o número será incrementado novamente até que um nome de pacote exclusivo seja descoberto.
@@ -198,7 +198,7 @@ Se `My Day at the Beach 1` for tomada, o número será incrementado novamente at
   "description": "Create a new bundle or photo album.",
   "keywords": "create,bundle",
   "section": "documentation",
-  "tocPath": "Bundles/Create"
+  "tocPath&quot;: &quot;Bundles/Create"
 } -->
 
 

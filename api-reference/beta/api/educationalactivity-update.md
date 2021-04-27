@@ -1,24 +1,24 @@
 ---
-title: Atualizar educationalactivity
-description: Atualiza as propriedades de um objeto educationalActivity.
+title: Atualizar a atividade educacional
+description: Atualize as propriedades de um objeto educationalActivity.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e672c1259d888b8a8fa4f6972268216ed57d9bdc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7f59b6ef2b5bebb2369a3cbd44baaae6ca209b97
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966639"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044477"
 ---
-# <a name="update-educationalactivity"></a>Atualizar educationalactivity
+# <a name="update-educationalactivity"></a>Atualizar a atividade educacional
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um objeto [educationalActivity](../resources/educationalactivity.md) no [perfil](../resources/profile.md)de um usuário.
+Atualize as propriedades de [um objeto educationalActivity](../resources/educationalactivity.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,17 +52,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|completionMonthYear|Data|O mês e o ano em que o usuário formou ou concluiu a atividade. |
-|endMonthYear|Data|O mês e o ano em que o usuário concluiu a atividade educacional referenciada.|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|instituição|[institutionData](../resources/institutiondata.md)|Contém detalhes da instituição estudada em. |
-|programa|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contém informações estendidas sobre o programa ou o curso.|
-|startMonthYear|Data|O mês e o ano em que o usuário tiver iniciado a atividade referenciada.|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|completionMonthYear|Date|O mês e o ano em que o usuário se formou ou concluiu a atividade. |
+|endMonthYear|Date|O mês e o ano em que o usuário concluiu a atividade educacional referenciada.|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|institution|[institutionData](../resources/institutiondata.md)|Contém detalhes da instituição em que estudou. |
+|program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contém informações estendidas sobre o programa ou o curso.|
+|startMonthYear|Date|O mês e o ano em que o usuário iniciou a atividade referenciada.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationalActivity](../resources/educationalactivity.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [educationalActivity](../resources/educationalactivity.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -118,7 +118,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

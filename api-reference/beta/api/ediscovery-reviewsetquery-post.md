@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 311b9d4571e9b83122d7a69d596a4856342bb941
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: b42cfb7c45b1cd4dcc0a3d2c66f3e0ae94415dd1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445765"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044575"
 ---
 # <a name="create-reviewsetquery"></a>Criar reviewSetQuery
 
@@ -50,7 +50,7 @@ No corpo da solicitação, fornece uma representação JSON do [objeto reviewSet
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| displayName  | string      | O nome da consulta conjunto de revisão |
+| displayName  | cadeia de caracteres      | O nome da consulta conjunto de revisão |
 
 ## <a name="response"></a>Resposta
 
@@ -100,7 +100,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

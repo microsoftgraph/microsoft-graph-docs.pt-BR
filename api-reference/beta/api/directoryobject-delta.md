@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 88a78e85d640c5d6e5c62fef239f29485d820897
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 51076a2530b1b1696e271b02e916a74ca0d31516
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946620"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046871"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: delta
 
@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Nenhum filtro foi usado, portanto, todos os `isOf` tipos derivados de directoryObject são retornados.
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
