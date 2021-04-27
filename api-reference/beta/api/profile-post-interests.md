@@ -1,16 +1,16 @@
 ---
 title: Criar personInterest
-description: Criar um novo personInterest.
+description: Crie uma nova personInterest.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: People
 doc_type: apiPageType
-ms.openlocfilehash: 156e9f6cef6c0b0f6e9def42fc4d2417706e426b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e4f5648901ff1ed904d5e02fa278b6b9be329de8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975369"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036923"
 ---
 # <a name="create-personinterest"></a>Criar personInterest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [personInterest] (.. /Resources/personinterest.MD] no [perfil](../resources/profile.md)de um usuário.
+Crie um novo [personInterest](.. /resources/personinterest.md] no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/interests
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [personInterest](../resources/personinterest.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto personInterest.](../resources/personinterest.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir em um novo objeto [personInterest](../resources/personinterest.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir dentro de um novo [objeto personInterest](../resources/personinterest.md) no perfil de um [usuário.](../resources/profile.md)
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Coleção de cadeias de caracteres|Contém categorias que um usuário associou aos juros (por exemplo, pessoal, recipies). |
-|collaborationTags|Coleção de cadeias de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` , `ableToMentor` , `wantsToLearn` , `wantsToImprove` .|
-|description|String|Contém uma descrição dos juros.|
-|displayName|String|Contém um nome amigável para os juros.  |
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|webUrl|String|Contém um link para uma página da Web ou recurso sobre os juros. |
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|String collection|Contém categorias que um usuário associou ao interesse (por exemplo, recipies pessoais). |
+|collaborationTags|Conjunto de cadeias de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` `ableToMentor` , , , `wantsToLearn` `wantsToImprove` .|
+|description|String|Contém uma descrição do interesse.|
+|displayName|String|Contém um nome amigável para o interesse.  |
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|webUrl|String|Contém um link para uma página da Web ou recurso sobre o interesse. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [personInterest](../resources/personinterest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo objeto [personInterest](../resources/personinterest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -115,7 +115,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

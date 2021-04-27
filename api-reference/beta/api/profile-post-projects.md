@@ -1,16 +1,16 @@
 ---
 title: Criar projectParticipation
-description: Use esta API para criar um novo projectParticipation.
+description: Use essa API para criar um novo projectParticipation.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2484fc7282d984bb06e7ee6390d116bf0f5b0657
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7fdfc23831b30495f35f1eb4c4d82e863bba07fd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979560"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036790"
 ---
 # <a name="create-projectparticipation"></a>Criar projectParticipation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo objeto [projectParticipation](../resources/projectParticipation.md) no [perfil](../resources/profile.md)de um usuário.
+Use essa API para criar um novo [objeto projectParticipation](../resources/projectParticipation.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,28 +48,28 @@ POST /users/{id | userPrincipalName}/profile/projects
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [projectParticipation](../resources/projectparticipation.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto projectParticipation.](../resources/projectparticipation.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir quando você cria um novo objeto [projectParticipation](../resources/projectParticipation.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo [objeto projectParticipation](../resources/projectParticipation.md) no perfil de um [usuário](../resources/profile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Coleção de cadeias de caracteres|Contém categorias que um usuário associou ao projeto (por exemplo, transformação digital, Rig óleo). |
-|clientes|[companyDetail](../resources/companydetail.md)|Contém informações detalhadas sobre o cliente para o qual o projeto foi. |
-|collaborationTags|Coleção de cadeias de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` , `ableToMentor` , `wantsToLearn` , `wantsToImprove` .|
-|conhecidos|coleção [relatedPerson](../resources/relatedperson.md)|Lista as pessoas que também trabalharam no projeto. |
-|detalhada|[positionDetail](../resources/positiondetail.md)|Contém detalhes sobre a função do usuário no projeto.|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|String collection|Contém categorias que um usuário associou ao projeto (por exemplo, transformação digital, plataforma de petróleo). |
+|client|[companyDetail](../resources/companydetail.md)|Contém informações detalhadas sobre o cliente para o que o projeto era. |
+|collaborationTags|Conjunto de cadeias de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` `ableToMentor` , , , `wantsToLearn` `wantsToImprove` .|
+|colleagues|[coleção relatedPerson](../resources/relatedperson.md)|Lista as pessoas que também trabalharam no projeto. |
+|detail|[positionDetail](../resources/positiondetail.md)|Contém detalhes sobre a função do usuário no projeto.|
 |displayName|String|Contém um nome amigável para o projeto.|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|responsáveis|coleção [relatedPerson](../resources/relatedperson.md)|A pessoa ou as pessoas que patrocinaram o projeto.    |
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|patrocinadores|[coleção relatedPerson](../resources/relatedperson.md)|A Pessoa ou as pessoas que patrocinaram o projeto.    |
 
 ## <a name="relationships"></a>Relações
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201, Created` um código de resposta e um novo objeto [projectParticipation](../resources/projectparticipation.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201, Created` o código de resposta e um novo objeto [projectParticipation](../resources/projectparticipation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -133,7 +133,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

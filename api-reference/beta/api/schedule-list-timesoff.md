@@ -1,16 +1,16 @@
 ---
 title: Listar timesOff
-description: Obtenha a lista de timesOff neste cronograma.
+description: Obter a lista de timesOff nesta agenda.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0eaebbc1c5777f4c7d96d442076e2a382dfebea4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: aec47b6dcd27c9e9b05a4794e1fdef3465e06eec
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970566"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036667"
 ---
 # <a name="list-timesoff"></a>Listar timesOff
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a lista de instâncias do [timeOff](../resources/timeoff.md) em um [cronograma](../resources/schedule.md).
+Obter a lista de [instâncias timeOff](../resources/timeoff.md) em um [cronograma](../resources/schedule.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
-> **Observação** : esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /teams/{teamId}/schedule/timesOff
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao [parâmetro de consulta OData](/graph/query-parameters) $Filter para ajudar a personalizar a resposta.
+Este método dá suporte ao parâmetro $filter [consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,13 +54,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [timeOff](../resources/timeoff.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos timeOff](../resources/timeoff.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de uma solicitação que obtém todos os objetos **timeOff** que têm uma versão compartilhada e uma versão de rascunho entre 11 de março de 18 de março de 2019.
+A seguir, um exemplo de uma solicitação que obtém todos os objetos **timeOff** que tenham uma versão compartilhada e uma versão de rascunho entre 11 de março e 18 de março de 2019.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sh
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

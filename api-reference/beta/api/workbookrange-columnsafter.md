@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 42a6e79e72cd10d17dcfa725cdd29ea7ada798bc
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: b1b42f977c2c5d85eaf6295e204d293cf6c1feea
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575179"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036055"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/c
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

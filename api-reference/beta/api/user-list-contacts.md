@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2cea6bfeebc6143648163c110b5c6ee1dbe48eb2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 38fca8b8b20dd0c0f0e5680b4d9bdfc6a53f5c50
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471860"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036307"
 ---
 # <a name="list-contacts"></a>Listar contatos
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddres
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

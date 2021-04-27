@@ -1,24 +1,24 @@
 ---
-title: Criar PersonName
-description: Use esta API para criar um novo PersonName no perfil de um usuário.
+title: Criar personName
+description: Use essa API para criar um novo personName no perfil de um usuário.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b8cc9365132d102698edceb18c36838bfd8a3b2f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f29c138fbf2a0dfe374111bfa6f9d2511f5e62b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974753"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036881"
 ---
-# <a name="create-personname"></a>Criar PersonName
+# <a name="create-personname"></a>Criar personName
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo objeto [PersonName](../resources/personname.md) no [perfil](../resources/profile.md)de um usuário.
+Use essa API para criar um novo [objeto personName](../resources/personname.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Application                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,30 +47,30 @@ POST /users/{id | userPrincipalName}/profile/names
 | Content-Type   | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [PersonName](../resources/personname.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto personName.](../resources/personname.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir quando você cria um objeto [PersonName](../resources/personname.md) .
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um [objeto personName.](../resources/personname.md)
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |displayName|String|Fornece uma renderização ordenada de firstName e lastName, dependendo da localidade do usuário ou de seu dispositivo.|
-|primeiro|String|Nome do usuário.|
-|id|String|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
+|first|String|Nome do usuário.|
+|id|String|Identificador usado para endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
 |initials|String|Iniciais do usuário.|
-|languageTag|String|Contém o nome do idioma (en-US, no-NB, en-AU) após o formato BCP47 da IETF.   |
-|durar|String|Sobrenome do usuário.|
-|Virgem|String|Nome de solteira do usuário. |
-|middleware|String|Nome do meio do usuário.|
-|apelido|String|Apelido do usuário.|
-|pronúncia|[yomiPersonName](../resources/yomipersonname.md)|Orientações sobre como pronunciar o nome dos usuários.|
-|sufixo|String|Designadores usados após o nome dos usuários (por exemplo: PhD).  |
-|title|String|Honorifics usado para prefixar um nome de usuário (por exemplo: Dr, Sir, Madam, Sra.)|
+|languageTag|String|Contém o nome do idioma (en-US, no-NB, en-AU) após o formato IETF BCP47.   |
+|last|String|Sobrenome do usuário.|
+|maiden|String|Nome de solteira do usuário. |
+|middle|String|Nome do meio do usuário.|
+|nickname|String|Apelido do usuário.|
+|pronúncia|[yomiPersonName](../resources/yomipersonname.md)|Diretrizes sobre como pronunciar o nome dos usuários.|
+|sufixo|String|Designadores usados após o nome dos usuários (por exemplo: PhD.)  |
+|title|String|Honorifics usado para prefixar um nome de usuário (por exemplo: Dr, Sir, Mrs.)|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201, Created` um código de resposta e um novo objeto [PersonName](../resources/personname.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201, Created` o código de resposta e um novo objeto [personName](../resources/personname.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -120,7 +120,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

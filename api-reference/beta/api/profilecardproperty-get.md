@@ -1,16 +1,16 @@
 ---
 title: Obter profileCardProperty
-description: Recupere as propriedades e os relacionamentos de um objeto profileCardProperty.
+description: Recupere as propriedades e as relações de um objeto profileCardProperty.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 11be3c0976515e800583b88898683548f5da92d7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 35c6f2cf1d0beb56d1dafbc8e31b93973e0e2aa5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980843"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036711"
 ---
 # <a name="get-profilecardproperty"></a>Obter profileCardProperty
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de uma entidade do [profileCardProperty](../resources/profilecardproperty.md) , que contém as personalizações de cartão de perfil existentes na sua organização do Microsoft 365 para um determinado campo. O profileCardProperty é identificado pela propriedade **directoryPropertyName** .
+Recupere as propriedades e as relações de uma entidade [profileCardProperty,](../resources/profilecardproperty.md) que contém as personalizações de cartão de perfil que existem em sua organização Microsoft 365 para um determinado campo. O profileCardProperty é identificado por **sua propriedade directoryPropertyName.**
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. Read. All                    |
+| Delegado (conta corporativa ou de estudante)     | User.Read, User.Read.All                    |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
->**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha um administrador de locatários ou uma função de administrador global.
+>**Observação:** O uso de permissões delegadas para essa operação exige que o usuário in-loco tenha um administrador de locatário ou uma função de administrador global.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [profileCardProperty](../resources/profilecardproperty.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [profileCardProperty](../resources/profilecardproperty.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

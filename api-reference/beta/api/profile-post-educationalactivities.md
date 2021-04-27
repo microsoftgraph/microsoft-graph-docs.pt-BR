@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 43bd9ca20cf7fb151b92108b16a021aa65a1cd03
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 366417fd6cf8e218bf7fc3a0fe2f14bc9c0ac4d3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292088"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036937"
 ---
 # <a name="create-educationalactivity"></a>Criar educationalActivity
 
@@ -50,22 +50,22 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 
 No corpo da solicitação, fornece uma representação JSON de um [objeto educationalActivity.](../resources/educationalactivity.md)
 
-A tabela a seguir mostra as propriedades que são possíveis definir ao criar um novo objeto [educationalActivity](../resources/educationalactivity.md) no perfil de um [usuário.](../resources/profile.md)
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo objeto [educationalActivity](../resources/educationalactivity.md) no perfil de um [usuário.](../resources/profile.md)
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|completionMonthYear|Data|O mês e o ano em que o usuário concluiu ou concluiu a atividade. |
-|endMonthYear|Data|O mês e o ano em que o usuário concluiu a atividade educacional referenciada.|
-|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pela criação ou modificação do aplicativo. Herdado de [itemFacet](../resources/itemfacet.md).|
-|institution|[institutionData](../resources/institutiondata.md)|Contém detalhes da instituição de ensino. |
-|programa|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contém informações estendidas sobre o programa ou curso.|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado de [itemFacet](../resources/itemfacet.md).|
-|startMonthYear|Data|O mês e o ano em que o usuário iniciou a atividade referenciada.|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|completionMonthYear|Date|O mês e o ano em que o usuário se formou ou concluiu a atividade. |
+|endMonthYear|Date|O mês e o ano em que o usuário concluiu a atividade educacional referenciada.|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|institution|[institutionData](../resources/institutiondata.md)|Contém detalhes da instituição em que estudou. |
+|program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contém informações estendidas sobre o programa ou o curso.|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|startMonthYear|Date|O mês e o ano em que o usuário iniciou a atividade referenciada.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um novo objeto `201 Created` [educationalActivity](../resources/educationalactivity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo objeto [educationalActivity](../resources/educationalactivity.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -137,7 +137,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

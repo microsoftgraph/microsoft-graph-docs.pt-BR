@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getOffice365GroupsActivityDetail'
-description: Obter detalhes sobre a atividade de grupos do Microsoft 365 por grupo.
+description: Obter detalhes sobre Microsoft 365 grupos por grupo.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 33e0455d08cd3d853337261a440b5803de419248
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: dde570c4cdfb55adb6ccf72ff3702e928b8f2944
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981610"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036664"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter detalhes sobre a atividade de grupos do Microsoft 365 por grupo.
+Obter detalhes sobre Microsoft 365 grupos por grupo.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - grupos do Microsoft 365.](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Microsoft 365 grupos](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
 ## <a name="permissions"></a>Permissões
 
@@ -54,7 +54,7 @@ Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetro
 
 > **Observação:** você precisa definir o período ou data na URL.
 
-Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é texto/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta $format OData definido como text/csv ou application/json.
+Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -89,10 +89,10 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Armazenamento utilizado da caixa de correio do Exchange (bytes)
 - Contagem total de arquivos do SharePoint
 - Armazenamento utilizado do site do SharePoint (bytes)
-- ID do Grupo
+- Id do grupo
 - Período de Relatório
 
-As seguintes colunas não são suportadas no Microsoft Graph China operado pela 21Vianet:
+As seguintes colunas não são suportadas na Microsoft Graph China operada pela 21Vianet:
 
 - Contagem de mensagens postadas no Yammer
 - Contagem de mensagens lidas no Yammer
@@ -100,7 +100,7 @@ As seguintes colunas não são suportadas no Microsoft Graph China operado pela 
 
 ### <a name="json"></a>JSON
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **[objeto office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** no corpo da resposta.
 
 As seguintes propriedades no **[objeto office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** não são suportadas no Microsoft Graph China operado pela 21Vianet:
 
@@ -108,13 +108,13 @@ As seguintes propriedades no **[objeto office365GroupsActivityDetail](../resourc
 - yammerReadMessageCount
 - yammerLikedMessageCount
 
-O tamanho de página padrão para essa solicitação é de 200 itens.
+O tamanho padrão da página para essa solicitação é de 200 itens.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="csv"></a>CSV
 
-A seguir está um exemplo que saída CSV.
+A seguir, um exemplo que dá saída ao CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -160,7 +160,7 @@ Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Acti
 
 ### <a name="json"></a>JSON
 
-A seguir está um exemplo que retorna JSON.
+A seguir, um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -181,7 +181,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(pe
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

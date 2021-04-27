@@ -1,16 +1,16 @@
 ---
 title: Listar os dispositivos do usuário
-description: Obter uma lista de dispositivos de usuário que suportam recursos do Project Rome. Isso inclui a capacidade de iniciar um aplicativo ou mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada GET em mim/dispositivos, passe a ID do dispositivo para enviar um comando para seu dispositivo.
+description: Obter uma lista de dispositivos de usuário que suportam Project de Roma. Isso inclui a capacidade de iniciar um aplicativo ou mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada GET em mim/dispositivos, passe a ID do dispositivo para enviar um comando para seu dispositivo.
 localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b1c2b884b00298fd2b79a85b0ed3fe8f412b2736
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b116213a285cc334d02a70ed94461b5cf6436eea
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721632"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036293"
 ---
 # <a name="list-user-devices"></a>Listar os dispositivos do usuário
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de dispositivos de usuário que suportam recursos do Project Rome. Isso inclui a capacidade de iniciar um aplicativo ou mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada GET em mim/dispositivos, passe a ID do dispositivo para [enviar um comando](send-device-command.md) para seu dispositivo.
+Obter uma lista de dispositivos de usuário que suportam Project de Roma. Isso inclui a capacidade de iniciar um aplicativo ou mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada GET em mim/dispositivos, passe a ID do dispositivo para [enviar um comando](send-device-command.md) para seu dispositivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -98,7 +98,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "ignored",

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 81f5f9e6742ad19ea6d9966f92729876a1eb95eb
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: ebcf17c40b3d9175ec9db4c9621ebfc053647c1d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766403"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037444"
 ---
 # <a name="update-printershare"></a>Atualizar o printershare
 
@@ -31,7 +31,7 @@ Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter 
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Application|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ As seguintes propriedades podem ser atualizadas:
 |:-------------|:------------|:------------|
 |printer|microsoft.graph.printer|A impressora à que essa impressora está relacionada. Use a sintaxe conforme mostrado no exemplo a seguir para atualizar a impressora à qual esse compartilhamento de impressora `printer@odata.bind` está associado.|
 |displayName|String|O nome do compartilhamento de impressora que os clientes de impressão devem exibir.|
-|allowAllUsers|Booliano| Se for true, todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso sobressalta as listas de permissão definidas pelas propriedades de navegação allowedUsers e allowedGroups.|
+|allowAllUsers|Boolean| Se for true, todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso sobressalta as listas de permissão definidas pelas propriedades de navegação allowedUsers e allowedGroups.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [printerShare](../resources/printershare.md) atualizado no corpo da resposta.
@@ -98,7 +98,7 @@ Content-length: 109
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Atualizar profileCardProperty
-description: Atualiza as propriedades de um objeto profileCardProperty.
+description: Atualize as propriedades de um objeto profileCardProperty.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7e7acede752607b34cf8f3cb9378cb0d87983f25
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 53d95deee5be591745e62d7c41b2ab232b3b19d8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968977"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036685"
 ---
 # <a name="update-profilecardproperty"></a>Atualizar profileCardProperty
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um objeto [profileCardProperty](../resources/profilecardproperty.md) , identificadas por sua propriedade **directoryPropertyName** .
+Atualize as propriedades de [um objeto profileCardProperty,](../resources/profilecardproperty.md) identificado por **sua propriedade directoryPropertyName.**
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
->**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha um administrador de locatários ou uma função de administrador global.
+>**Observação:** O uso de permissões delegadas para essa operação exige que o usuário in-loco tenha um administrador de locatário ou uma função de administrador global.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,12 +53,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|anotações|coleção profileCardAnnotation| Contém quaisquer rótulos alternativos ou localizados que um administrador optou por especificar.|
-|directoryPropertyName|String|Contém o nome da propriedade de diretório que se destina à superfície no cartão de perfil. |
+|anotações|Coleção profileCardAnnotation| Contém qualquer rótulo alternativo ou localizado que um administrador optou por especificar.|
+|directoryPropertyName|String|Contém o nome da propriedade directory que se destina a aparecer no cartão de perfil. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [profileCardProperty](../resources/profilecardproperty.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto profileCardProperty](../resources/profilecardproperty.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -112,7 +112,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

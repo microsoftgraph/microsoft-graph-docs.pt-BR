@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: f5f760f8b4fe3fa41046cd32e2c3ae5fe8674532
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 046d5a107ea2b92adf17bb24f585138764757b50
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766263"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037484"
 ---
 # <a name="get-printershare"></a>Get printerShare
 
@@ -29,7 +29,7 @@ Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter 
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Application|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ por exemplo,
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Exceções
 * O `$count` operador não tem suporte.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/print/shares/{id}
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,7 +112,7 @@ Content-length: 225
 ```
 
 A seguir, um exemplo da resposta, ao usar $select=id,displayName,capabilities
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

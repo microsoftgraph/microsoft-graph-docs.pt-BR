@@ -1,16 +1,16 @@
 ---
 title: Criar languageProficiency
-description: Use esta API para criar um novo languageProficiency.
+description: Use essa API para criar um novo idiomaProficiency.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 38e46c90841e48358cef9fc4f7f486c2ea5da2e7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e8e550450c3fbc07eacd62378fa587d59fed9990
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979583"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036902"
 ---
 # <a name="create-languageproficiency"></a>Criar languageProficiency
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo objeto [languageProficiency](../resources/languageproficiency.md) no [perfil](../resources/profile.md)de um usuário.
+Use essa API para criar um novo [objeto languageProficiency](../resources/languageproficiency.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/languages
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [languageProficiency](../resources/languageproficiency.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto languageProficiency.](../resources/languageproficiency.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir quando você cria um novo objeto [languageProficiency](../resources/languageproficiency.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo objeto [languageProficiency](../resources/languageproficiency.md) no perfil de um [usuário](../resources/profile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Contém o nome de formato longo para o idioma. |
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|Converte|languageProficiencyLevel|Representa os usuários que estão lendo a compreensão do idioma representado pelo objeto. Os valores possíveis são: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|idioma|languageProficiencyLevel|Representa a proficiência dos usuários falada sobre o idioma representado pelo objeto. Os valores possíveis são: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Contém o nome de formulário longo para o idioma. |
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|leitura|languageProficiencyLevel|Representa a compreensão de leitura dos usuários para o idioma representado pelo objeto. Os valores possíveis são: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|falado|languageProficiencyLevel|Representa a proficiência falada dos usuários para o idioma representado pelo objeto. Os valores possíveis são: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
 |tag|String|Contém o nome BCP47 de quatro caracteres para o idioma (en-US, no-NB, en-AU).|
-|pré-gravados|languageProficiencyLevel|Representa a proficiência dos usuários gravados para o idioma representado pelo objeto. Os valores possíveis são: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
+|written|languageProficiencyLevel|Representa a proficiência escrita dos usuários para o idioma representado pelo objeto. Os valores possíveis são: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201, Created` um código de resposta e um novo objeto [languageProficiency](../resources/languageproficiency.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201, Created` o código de resposta e um novo objeto [languageProficiency](../resources/languageproficiency.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -114,7 +114,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

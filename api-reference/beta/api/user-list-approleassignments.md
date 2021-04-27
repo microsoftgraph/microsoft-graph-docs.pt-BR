@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 5e3e88a09408d44a07c34bf5379b189ada7055d9
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 9988f98ac197eceb6b3f54910f5338803954f084
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468692"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036321"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>Listar appRoleAssignments concedido a um usuário
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

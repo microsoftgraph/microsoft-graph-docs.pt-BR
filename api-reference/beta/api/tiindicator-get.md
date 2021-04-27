@@ -1,24 +1,24 @@
 ---
-title: Obter indicador de inteligência de ameaças
-description: Recupere as propriedades e os relacionamentos de um objeto tiindicator.
+title: Obter indicador de inteligência de ameaça
+description: Recupere as propriedades e as relações de um objeto tiindicator.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: fd5e6d027ecbb097406f280dfe02f9fe3c1a6c9b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7ae7d1dc59493454a3fef55948bb712a3aa1c772
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977707"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036398"
 ---
-# <a name="get-threat-intelligence-indicator"></a>Obter indicador de inteligência de ameaças
+# <a name="get-threat-intelligence-indicator"></a>Obter indicador de inteligência de ameaça
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [tiIndicator](../resources/tiindicator.md) .
+Recupere as propriedades e as relações de um [objeto tiIndicator.](../resources/tiindicator.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,7 +40,7 @@ GET /security/tiIndicators/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, consulte [Parâmetros de Consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [tiIndicator](../resources/tiindicator.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto tiIndicator](../resources/tiindicator.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/security/tiIndicators/{id}
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

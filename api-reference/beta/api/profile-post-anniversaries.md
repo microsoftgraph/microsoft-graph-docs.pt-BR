@@ -1,16 +1,16 @@
 ---
 title: Criar personAnniversary
-description: Use esta API para criar um novo personAnniversary.
+description: Use essa API para criar uma nova personAnniversary.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 89cae3dc7fe0b5e1b314adbebd9510eab5f65d23
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c28e988290c239c8a7977df8eab6d3ae3a945372
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964589"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036965"
 ---
 # <a name="create-personanniversary"></a>Criar personAnniversary
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo objeto [personAnniversary](../resources/personanniversary.md) no [perfil](../resources/profile.md)de um usuário.
+Use essa API para criar um novo [objeto personAnniversary](../resources/personanniversary.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,21 +48,21 @@ POST /users/{id | userPrincipalName}/profile/anniversaries
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [personAnniversary](../resources/personanniversary.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto personAnniversary.](../resources/personanniversary.md)
 
-A tabela a seguir mostra as propriedades que podem ser definidas em um novo objeto * * personAnniversary * *, no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir dentro de um novo objeto **personAnniversary**** no perfil de um [usuário.](../resources/profile.md)
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |data|Data|Contém a data associada ao tipo de aniversário.|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|tipo|data especial|O tipo de aniversário que a data representa. Os valores possíveis são: `birthday`, `wedding`, `unknownFutureValue`.|
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|tipo|anniversaryType|O tipo de aniversário que a data representa. Os valores possíveis são: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201, Created` um código de resposta e um novo objeto [personAnniversary](../resources/personanniversary.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201, Created` o código de resposta e um novo objeto [personAnniversary](../resources/personanniversary.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

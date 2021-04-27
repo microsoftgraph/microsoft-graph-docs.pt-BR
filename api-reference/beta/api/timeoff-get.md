@@ -1,16 +1,16 @@
 ---
 title: Obter timeOff
-description: Obtenha um timeOff por ID.
+description: Obter um timeOff por ID.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4a26b0e1048a4a43a0dad833c07d901367cf40f9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2cdd981d4638fc80d5ed9999a37fd3c15ff085be
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981434"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036328"
 ---
 # <a name="get-timeoff"></a>Obter timeOff
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [timeOff](../resources/timeoff.md) por ID.
+Recupere as propriedades e as relações de um [objeto timeOff](../resources/timeoff.md) por ID.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,11 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule. Read. All *, Schedule. ReadWrite. All* |
+|Application | Schedule.Read.All *, Schedule.ReadWrite.All* |
 
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
+>\***Importante:** As permissões de aplicativo estão atualmente apenas em visualização privada e não estão disponíveis para uso público.
 
-> **Observação** : esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,7 +44,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte a parâmetros de consulta OData para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta OData para personalizar a resposta.
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [timeOff](../resources/timeoff.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [timeOff](../resources/timeoff.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

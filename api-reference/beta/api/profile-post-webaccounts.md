@@ -1,24 +1,24 @@
 ---
-title: Criar conta da
-description: Criar um novo objeto webaccount.
+title: Criar webAccount
+description: Crie um novo objeto webAccount.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 697791bff68443cedd3e094c8ae2d3706ab2b072
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2d41cb9fe650fa8d506f8ea9c218a01d4f2c0605
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972645"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036762"
 ---
-# <a name="create-webaccount"></a>Criar conta da
+# <a name="create-webaccount"></a>Criar webAccount
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [webaccount](../resources/webaccount.md) no [perfil](../resources/profile.md)de um usuário.
+Crie um novo [objeto webAccount](../resources/webaccount.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/webAccounts
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [webaccount](../resources/webaccount.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto webAccount.](../resources/webaccount.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir quando você cria um novo objeto [webaccount](../resources/webaccount.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir quando você cria um novo [objeto webAccount](../resources/webaccount.md) no perfil de um [usuário](../resources/profile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|String|Contém a descrição que o usuário forneceu para a conta no serviço que está sendo referenciado.|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|serviço|[Informações sobre o](../resources/serviceinformation.md)| Contém detalhes básicos sobre o serviço que está sendo associado. |
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|statusMessage|String|Contém uma mensagem de status do serviço de nuvem, se fornecido ou sincronizado. |
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|serviço|[serviceInformation](../resources/serviceinformation.md)| Contém detalhes básicos sobre o serviço que está sendo associado. |
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
+|statusMessage|String|Contém uma mensagem de status do serviço de nuvem, se fornecida ou sincronizada. |
 |userId|Cadeia de caracteres|O nome de usuário exibido para a conta da Web.  |
 |webUrl|String|Contém um link para o perfil do usuário no serviço de nuvem, se houver um.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `201, Created` código de resposta e um novo objeto [webaccount](../resources/webaccount.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201, Created` o código de resposta e um novo objeto [webAccount](../resources/webaccount.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -115,7 +115,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

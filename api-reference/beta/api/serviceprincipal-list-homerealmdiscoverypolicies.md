@@ -1,16 +1,16 @@
 ---
-title: Listar homeRealmDiscoveryPolicies atribuída
-description: Listar homeRealmDiscoveryPolicies que são atribuídas a um servicePrincipal.
+title: Listar homeRealmDiscoveryPolicies atribuídas
+description: Listar homeRealmDiscoveryPolicies atribuídas a um servicePrincipal.
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5cebe83b8104ad2e00b2af30ec8124d14d24b7f4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 73bc69c6ef53f831126f2d87205c1ec423d61b92
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134327"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036613"
 ---
 # <a name="list-assigned-homerealmdiscoverypolicy"></a>Listar homeRealmDiscoveryPolicy atribuída
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar [os objetos homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) atribuídos a um [servicePrincipal](../resources/servicePrincipal.md).
+Listar [os objetos homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) atribuídos a [um servicePrincipal](../resources/servicePrincipal.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All  |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Application                            | Policy.Read.All e Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.OwnedBy, Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/homeRealmDiscoveryPo
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

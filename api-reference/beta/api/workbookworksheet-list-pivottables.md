@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c9240c83d509d947cf73187e1e03107ef44e1b64
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 34f739f472ea4af054d1182b763e0aeb0d2d2424
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578812"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036027"
 ---
 # <a name="list-pivottables"></a>List pivotTables
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTa
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

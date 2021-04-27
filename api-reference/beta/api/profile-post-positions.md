@@ -1,16 +1,16 @@
 ---
 title: Criar workPosition
-description: Use esta API para criar um novo workPosition.
+description: Use essa API para criar um novo workPosition.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bc67994dbf3d9a6107ed2a4bcba8f0f0f090e327
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d826309b69ae66aaef736f81b8864928a2fa28ad
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974624"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036860"
 ---
 # <a name="create-workposition"></a>Criar workPosition
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo [workPosition](../resources/workposition.md) no [perfil](../resources/profile.md)de um usuário.
+Use essa API para criar uma nova [workPosition](../resources/workposition.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegado (conta pessoal da Microsoft) | User.ReadWrite, User.ReadWrite.All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/positions
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [workPosition](../resources/workposition.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto workPosition.](../resources/workposition.md)
 
-A tabela a seguir mostra as propriedades que são possíveis de definir quando você cria um novo objeto [workPosition](../resources/workPosition.md) no [perfil](../resources/profile.md)de um usuário.
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo [objeto workPosition](../resources/workPosition.md) no perfil de um [usuário.](../resources/profile.md)
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Coleção de cadeias de caracteres|Categorias que o usuário tenha associado a esta posição.|
-|conhecidos|coleção [relatedPerson](../resources/relatedperson.md)|Colegas associados a esta posição.|
-|detalhada|[positionDetail](../resources/positiondetail.md)|Contém informações detalhadas sobre a posição. |
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|IsCurrent|Booliano|Indica se a posição é ou não atual.|
+|allowedAudiences|String|As audiências que são capazes de ver os valores contidos na entidade. Herdado [do itemFacet](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|String collection|Categorias que o usuário associou a essa posição.|
+|colleagues|[coleção relatedPerson](../resources/relatedperson.md)|Colegas associados a essa posição.|
+|detail|[positionDetail](../resources/positiondetail.md)|Contém informações detalhadas sobre a posição. |
+|inferência|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado [do itemFacet](../resources/itemfacet.md).|
+|isCurrent|Boolean|Indica se a posição está ou não atual.|
 |manager|[relatedPerson](../resources/relatedperson.md)|Contém detalhes do gerente do usuário nesta posição.|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores se originaram se sincronizados de outro serviço. Herdado [do itemFacet](../resources/itemfacet.md).|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201, Created` um código de resposta e um novo objeto [workPosition](../resources/workposition.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201, Created` o código de resposta e um novo objeto [workPosition](../resources/workposition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -127,7 +127,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

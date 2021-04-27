@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 38f742b4013f01b150ee5b653d341dd2e8ca5991
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 67abcedfd9b120b8d075530ec423a5f937ee5c27
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766508"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037533"
 ---
 # <a name="list-printers"></a>Lista de impressoras
 
@@ -29,7 +29,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Sem suporte. |
+|Application| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /print/printers
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Exceções
 * Os `$expand` `select` operadores e são suportados para a `share` propriedade de navegação, mas não para `jobs` .
 * Alguns operadores não têm suporte: `$count` , `$search` .
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/print/printers
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

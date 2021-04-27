@@ -1,24 +1,24 @@
 ---
-title: Listar qualificações
+title: Listar habilidades
 description: Recupere uma lista de objetos skillProficiency.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4b7120dfae412b7ddd03575bc8cd3f407171b465
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 78f91c8e3ba8a60278c0188bb5990d2aadbd8fb1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952385"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037162"
 ---
-# <a name="list-skills"></a>Listar qualificações
+# <a name="list-skills"></a>Listar habilidades
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [skillProficiency](../resources/skillproficiency.md) no [perfil](../resources/profile.md)de um usuário.
+Recupere uma lista de [objetos skillProficiency](../resources/skillproficiency.md) no perfil de um [usuário.](../resources/profile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Application                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
+| Delegado (conta corporativa ou de estudante)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -41,14 +41,14 @@ GET /users/{id | userPrincipalName}/profile/skills
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 |Nome            |Valor    |Descrição                                                                                                                                                                      |
 |:---------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Limita a resposta somente aos objetos que contêm os critérios especificados.                                                                                                  |
-|$orderby        |cadeia de caracteres   |Por padrão, os objetos na resposta são classificados por seu valor **createdDateTime** em uma consulta. Você pode alterar a ordem da resposta usando o `$orderby` parâmetro.|
+|$filter         |string   |Limita a resposta apenas aos objetos que contêm os critérios especificados.                                                                                                  |
+|$orderby        |cadeia de caracteres   |Por padrão, os objetos na resposta são classificação pelo valor **createdDateTime** em uma consulta. Você pode alterar a ordem da resposta usando o `$orderby` parâmetro.|
 |$select         |string   |Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.                                             |
-|$skip           |int      |Ignore os primeiros n resultados, útil para paginação.                                                                                                                                     |
+|$skip           |int      |Ignore os primeiros resultados n, úteis para pajamento.                                                                                                                                     |
 |$top            |int      |Número de resultados a ser retornado.                                                                                                                                                |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -64,7 +64,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [skillProficiency](../resources/skillproficiency.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos skillProficiency](../resources/skillproficiency.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/me/profile/skills
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

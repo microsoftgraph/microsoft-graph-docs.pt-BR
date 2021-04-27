@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: fcd08898f9dab1a6551709a5c76045b6f196cc1f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c35bc0faec06d61aac67c5be2570e344d3e884e9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721499"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036279"
 ---
 # <a name="list-licensedetails"></a>Listar licenseDetails
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/licenseDetails
 ---
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
