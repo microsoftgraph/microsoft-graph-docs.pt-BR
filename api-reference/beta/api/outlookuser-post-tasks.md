@@ -1,16 +1,16 @@
 ---
 title: Criar outlookTask
-description: Crie uma tarefa do Outlook no grupo de tarefas padrão ( `My Tasks` ) e na pasta de tarefas padrão ( `Tasks` ) na caixa de correio do usuário.
+description: Crie uma Outlook tarefa no grupo de tarefas padrão ( ) e na pasta de tarefas `My Tasks` padrão ( ) na caixa de correio do `Tasks` usuário.
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1195cc0d96dc15f5edb46a0792330db797e1dcff
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a327acde8db0928b1ade7e5fcf660f86d6cdae96
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977175"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037953"
 ---
 # <a name="create-outlooktask-deprecated"></a>Criar outlookTask(obsoleto)
 
@@ -21,11 +21,11 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Crie uma tarefa do Outlook no grupo de tarefas padrão ( `My Tasks` ) e na pasta de tarefas padrão ( `Tasks` ) na caixa de correio do usuário.
+Crie uma Outlook tarefa no grupo de tarefas padrão ( ) e na pasta de tarefas `My Tasks` padrão ( ) na caixa de correio do `Tasks` usuário.
 
-O método POST sempre ignora a parte de hora de **StartDateTime** e **dueDateTime** no corpo da solicitação e pressupõe que o tempo seja sempre meia-noite no fuso horário especificado.
+O método POST sempre ignora a parte de tempo de **startDateTime** e **dueDateTime** no corpo da solicitação e assume o tempo para ser sempre meia-noite no fuso horário especificado.
 
-Por padrão, essa operação (e o GET, PATCH e operações de tarefa [completa](../api/outlooktask-complete.md) ) retorna propriedades relacionadas à data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
+Por padrão, essa operação (e as operações GET, PATCH e [tarefa](../api/outlooktask-complete.md) completa) retorna propriedades relacionadas à data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,18 +46,18 @@ POST /users/{id|userPrincipalName}/outlook/tasks
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de hora na resposta, que seria no UTC se esse cabeçalho não for especificado. Opcional.|
+| Prefira: outlook.timezone | Especifica o fuso horário para propriedades de tempo na resposta, que estaria em UTC se esse header não for especificado. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [outlookTask](../resources/outlooktask.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto outlookTask.](../resources/outlooktask.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra o uso do `Prefer: outlook.timezone` cabeçalho. Ele cria uma tarefa, expressa **StartDateTime** e **DueDateTime** na hora padrão do leste (EST) e inclui um `Prefer` cabeçalho do horário padrão do Pacífico (PST).
+O exemplo a seguir mostra o uso `Prefer: outlook.timezone` do header. Ele cria uma tarefa, expressa **startDateTime** e **dueDateTime** no Horário Padrão do Leste (EST) e inclui um `Prefer` header do Horário Padrão do Pacífico (PST).
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlookuser"
@@ -98,13 +98,13 @@ Content-length: 276
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [outlookTask](../resources/outlooktask.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto outlookTask.](../resources/outlooktask.md)
 ##### <a name="response"></a>Resposta
-O método POST ignora a parte de hora de **StartDateTime** e **dueDateTime** no corpo da solicitação e pressupõe que o tempo seja sempre meia-noite no fuso horário especificado (EST).
+O método POST ignora a parte de tempo de **startDateTime** e **dueDateTime** no corpo da solicitação e assume a hora de ser sempre meia-noite no fuso horário especificado (EST).
 
-Como o cabeçalho `Prefer` especifica PST, o método POST expressa todas as propriedades relacionadas à data na resposta em PST. Em particular, para as propriedades **StartDateTime** e **dueDateTime** , o método post converte meia-noite em est para pst e retorna-as em PST na resposta.
+Como o cabeçalho `Prefer` especifica PST, o método POST expressa todas as propriedades relacionadas à data na resposta em PST. Em particular, para as **propriedades startDateTime** e **dueDateTime,** o método POST converte meia-noite em EST em PST e retorna-os no PST na resposta.
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Criar outlookTaskGroup
-description: Criar um grupo de tarefas do Outlook na caixa de correio do usuário.
+description: Crie um Outlook de tarefas na caixa de correio do usuário.
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fd26a2853dcf69a12027fc6fb17fce84a2faecd0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1cef21d441ba20c1bc97f7e4bf2e4f1c922d1f9c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971562"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037995"
 ---
 # <a name="create-outlooktaskgroup-deprecated"></a>Criar outlookTaskGroup (preterido)
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Criar um grupo de tarefas do Outlook na caixa de correio do usuário.
+Crie um Outlook de tarefas na caixa de correio do usuário.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -43,11 +43,11 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto outlookTaskGroup.](../resources/outlooktaskgroup.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta e o `201 Created` [objeto outlookTaskGroup](../resources/outlooktaskgroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -85,9 +85,9 @@ Content-length: 40
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto outlookTaskGroup.](../resources/outlooktaskgroup.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

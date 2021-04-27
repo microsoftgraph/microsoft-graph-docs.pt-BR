@@ -1,24 +1,24 @@
 ---
 title: 'participante: configureMixer'
-description: Configure o modo como o áudio é misturado para diferentes participantes em uma conversa de várias partes.
+description: Configure como o áudio é misto para diferentes participantes em uma conversa de várias partes.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fe8531c4c63606303148fcdf7def3db57768b24d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9b8efa45be5163e088bef06e2d71959e80cae58
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004582"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52037911"
 ---
 # <a name="participant-configuremixer"></a>participante: configureMixer
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configure o modo como o áudio é misturado para diferentes participantes em uma conversa de várias partes.
+Configure como o áudio é misto para diferentes participantes em uma conversa de várias partes.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Calls. JoinGroupCalls. All, Calls.InitiateGroupCalls. All |
+| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,11 +47,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participantMixerLevels|coleção [participantMixerLevel](../resources/participantmixerlevel.md)| Configuração dos níveis de mixer para determinado participante de áudio.|
+|participantMixerLevels|[Coleção participantMixerLevel](../resources/participantmixerlevel.md)| Configuração de níveis de mistura para determinado participante de áudio.|
 |clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Retorna `202 Accepted` o código de resposta e um cabeçalho de local com um URI para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
+Retorna `202 Accepted` o código de resposta e um header location com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -110,7 +110,7 @@ Content-Length: 501
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -131,7 +131,7 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 }
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação-operação concluída
+##### <a name="notification---operation-completed"></a>Notificação - operação concluída
 
 ```http
 POST https://bot.contoso.com/api/calls

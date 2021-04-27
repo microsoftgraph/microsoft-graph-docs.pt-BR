@@ -1,16 +1,16 @@
 ---
 title: Atualizar inferenceClassificationOverride
-description: 'Altere **o campo classifyAs** de uma substituição da Caixa de Entrada Focada conforme especificado. '
+description: 'Altere **o campo classifyAs** de uma substituição de Caixa de Entrada Focalizada conforme especificado. '
 localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 9195466b1ea09b9b0dde4c00a057d95548184edf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 655be2a14ca6948bcb76bda02c1aaca43c5ad09b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130323"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040515"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Atualizar inferenceClassificationOverride
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Altere **o campo classifyAs** de uma [substituição da Caixa de Entrada Focada](../resources/manage-focused-inbox.md) conforme especificado.
+Altere **o campo classifyAs** de uma [substituição de Caixa de Entrada](../resources/manage-focused-inbox.md) Focalizada conforme especificado.
 
 Você não pode usar PATCH para alterar outros campos em uma instância de [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md).
 
@@ -95,7 +95,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

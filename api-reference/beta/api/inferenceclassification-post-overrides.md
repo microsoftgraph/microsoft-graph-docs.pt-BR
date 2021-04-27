@@ -1,16 +1,16 @@
 ---
 title: Criar inferenceClassificationOverride
-description: 'Criar uma substituição da Caixa de Entrada Destaques para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas '
+description: 'Criar uma substituição da Caixa de Entrada Destaques para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão classificadas de forma consistente '
 localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 82f309e1d4da5e8482679c61470a91dcad8d9a04
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ccbcd6f6a914e61fd302d102fbfe652cb4b48310
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130339"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040620"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Criar inferenceClassificationOverride
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma [substituição da Caixa de](../resources/manage-focused-inbox.md) Entrada Focada para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas conforme especificado na substituição.
+Crie uma [substituição de Caixa de](../resources/manage-focused-inbox.md) Entrada Focalizada para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas conforme especificado na substituição.
 
 **Observação**
 
-- Se já existir uma substituição com o mesmo endereço SMTP, **os campos classifyAs** e **name** dessa substituição serão atualizados com os valores fornecidos.
+- Se já existir uma substituição com o mesmo endereço SMTP, os campos **classifyAs** e **name** dessa substituição serão atualizados com os valores fornecidos.
 - O número máximo de substituições com suporte para uma caixa de correio é 1000, com base nos endereços SMTP exclusivos do remetente.
 - A operação POST dá suporte à criação de apenas uma substituição de cada vez.
 
@@ -95,7 +95,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

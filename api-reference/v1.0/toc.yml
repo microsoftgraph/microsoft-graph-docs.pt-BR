@@ -413,7 +413,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -5317,7 +5317,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -5493,7 +5493,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -5794,7 +5794,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefas
+          - name: Tarefa
             href: resources/todotask.md
             items:
               - name: Listar tarefas
@@ -5925,10 +5925,14 @@ items:
                 href: api/table-list-rows.md
               - name: Criar linha
                 href: api/table-post-rows.md
+              - name: Excluir linha
+                href: api/tablerow-delete.md
               - name: Listar colunas
                 href: api/table-list-columns.md
               - name: Criar coluna
                 href: api/table-post-columns.md
+              - name: Excluir coluna
+                href: api/tablecolumn-delete.md
               - name: Obter intervalo
                 href: api/table-range.md
           - name: Gráfico

@@ -1,16 +1,16 @@
 ---
 title: Obter onPremisesAgentGroup
-description: Recupere as propriedades e os relacionamentos de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+description: Recupere as propriedades e as relações de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dc5f4931c8b4845393ee9c3889c47a27419373a7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 77da5d0a46f952e59bdac2923bed8a4139673411
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136413"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038086"
 ---
 # <a name="get-onpremisesagentgroup"></a>Obter onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+Recupere as propriedades e as relações de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e o objeto `200 OK` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e o objeto `200 OK` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/a
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

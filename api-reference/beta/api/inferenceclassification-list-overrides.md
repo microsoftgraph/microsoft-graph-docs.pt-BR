@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 486d99db01c2efbbc0ff295730cf248aaffb643a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 07de9e0bb9d8992811b64a8fe19685a2a329a8c1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130715"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040606"
 ---
 # <a name="list-overrides"></a>List overrides
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as [substituições da Caixa](../resources/manage-focused-inbox.md) de Entrada Focada que um usuário tenha definido para sempre classificar mensagens de determinados envios de maneiras específicas.
+Obter as [substituições da Caixa de Entrada Focalizadas](../resources/manage-focused-inbox.md) que um usuário definiu para sempre classificar mensagens de determinados envios de maneiras específicas.
 
 Cada substituição corresponde a um endereço SMTP de um remetente. Inicialmente, um usuário não tem quaisquer substituições.
 ## <a name="permissions"></a>Permissões
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

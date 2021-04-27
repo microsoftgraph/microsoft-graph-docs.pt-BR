@@ -1,18 +1,18 @@
 ---
-title: Atribuir onPremisesAgent a onPremisesAgentGroup
-description: Atribua onPremisesAgent a onPremisesAgentGroup.
+title: Atribuir onPremisesAgent ao onPremisesAgentGroup
+description: Atribua onPremisesAgent ao onPremisesAgentGroup.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6e4899885573abebda0f5dfb23bdadf852673c02
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3ab4e1ed97dec2968bfac63c38d6f2044d4dfc21
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136418"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038163"
 ---
-# <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>Atribuir onPremisesAgent a onPremisesAgentGroup
+# <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>Atribuir onPremisesAgent ao onPremisesAgentGroup
 
 Namespace: microsoft.graph
 
@@ -50,7 +50,7 @@ No corpo da solicitação, fornece uma representação JSON de uma referência O
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um novo objeto `201 Created` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 ---
 
 
-No corpo da solicitação, fornece uma representação JSON da referência de OData para um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+No corpo da solicitação, fornece uma representação JSON da referência OData a um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ```http
 {
@@ -90,7 +90,7 @@ No corpo da solicitação, fornece uma representação JSON da referência de OD
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

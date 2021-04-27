@@ -1,16 +1,16 @@
 ---
 title: Obter onPremisesAgent
-description: Recupere as propriedades e os relacionamentos de um objeto onPremisesAgent.
+description: Recupere as propriedades e as relações de um objeto onPremisesAgent.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f91b5023d4b45d5ea097e6b09ba9b38eef88561c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 034ab82730afe99ef547d496d7addca1b503387d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136511"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038205"
 ---
 # <a name="get-onpremisesagent"></a>Obter onPremisesAgent
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um [objeto onPremisesAgent.](../resources/onpremisesagent.md)
+Recupere as propriedades e as relações de um [objeto onPremisesAgent.](../resources/onpremisesagent.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [onPremisesAgent](../resources/onpremisesagent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto onPremisesAgent](../resources/onpremisesagent.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/a
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
