@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cbbeffff7949096693969b03d6f3aa7bbf5bfe44
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4fb7e85c4a3590bf4b5688588e4c6cc29326b181
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131674"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052618"
 ---
 # <a name="user-getmailtips"></a>user: getMailTips
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as Dicas de Email de um ou mais destinatários conforme disponíveis para o usuário [assinado.](../resources/user.md)
+Obter as Dicas de Email de um ou mais destinatários, conforme disponível para o usuário [de logom.](../resources/user.md)
 
-Observe que, ao fazer uma chamada para a ação, você pode solicitar que tipos específicos de Dicas de Email sejam retornados para mais de `POST` um destinatário de cada `getMailTips` vez. As Dicas de Email solicitadas são retornadas em uma coleção [mailTips.](../resources/mailtips.md)
+Observe que, ao fazer uma chamada para a ação, você pode solicitar que tipos específicos de Dicas de Email sejam retornados por mais de `POST` um destinatário de cada `getMailTips` vez. As Dicas de Email solicitadas são retornadas em uma coleção [mailTips.](../resources/mailtips.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,15 +50,15 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|EmailAddresses|Coleção de cadeias de caracteres|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
-|MailTipsOptions|String|Uma enumeração de sinalizadores que representa as dicas de email solicitadas. Os valores possíveis `automaticReplies` são: `customMailTip` , , , , , , , `deliveryRestriction` e `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
+|EmailAddresses|Conjunto de cadeias de caracteres|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
+|MailTipsOptions|String|Uma enumeração de sinalizadores que representa as dicas de email solicitadas. Os valores possíveis são: `automaticReplies` , , , , , , , , , `customMailTip` e `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos mailTips](../resources/mailtips.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos mailTips](../resources/mailtips.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir obtém Dicas de Email para os destinatários especificados, para todas as configurações de resposta automática e o status completo da caixa de correio.
+O exemplo a seguir obtém Dicas de Email para os destinatários especificados, para qualquer configuração de resposta automática e o status completo da caixa de correio.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -98,7 +98,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

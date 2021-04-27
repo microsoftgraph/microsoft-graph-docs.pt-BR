@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1c9d7eb22a11710b41d64c3284e4fd72789d8e4b
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 573b5f6894b83b90bb5e9b305ca237a4551d13a9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577350"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051029"
 ---
 # <a name="create-rangeborder"></a>Criar RangeBorder
 
@@ -94,7 +94,7 @@ Content-length: 136
 
 No corpo da solicitação, fornece uma representação JSON do [objeto workbookRangeBorder.](../resources/workbookrangeborder.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

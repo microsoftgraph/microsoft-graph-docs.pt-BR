@@ -1,30 +1,30 @@
 ---
-title: 'participante: sem áudio'
-description: Ativar mudo de um participante específico na chamada.
+title: 'participante: mute'
+description: Silencie um participante específico na chamada.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 16839001c234f63c7c1651b2abdb6d431df0a0c9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0399807f7cd962b508b10cc5dd0cd3ed8d3378ff
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968739"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049188"
 ---
-# <a name="participant-mute"></a>participante: sem áudio
+# <a name="participant-mute"></a>participante: mute
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ativar mudo de um participante específico na chamada.
+Silencie um participante específico na chamada.
 
-Este é um servidor sem som, o que significa que o servidor irá descartar todos os pacotes de áudio desse participante, mesmo que o participante continue a transmitir áudio.
+Esse é um servidor mudo, o que significa que o servidor soltará todos os pacotes de áudio para esse participante, mesmo que o participante continue a transmitir áudio.
 
-Para obter mais informações sobre como lidar com operações sem som, consulte [muteParticipantOperation](../resources/muteParticipantoperation.md).
+Para obter mais informações sobre como lidar com operações de mudo, consulte [muteParticipantOperation](../resources/muteParticipantoperation.md).
 
-> **Observação:** Este método só tem suporte para chamadas de grupo.
+> **Observação:** Esse método só tem suporte para chamadas de grupo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -32,7 +32,7 @@ Para obter mais informações sobre como lidar com operações sem som, consulte
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhum                                        |
+| Aplicativo     | Nenhuma                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -53,14 +53,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
+|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.
 
 >**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
 
-## <a name="example---mute-specific-participant"></a>Exemplo-sem áudio o participante específico
+## <a name="example---mute-specific-participant"></a>Exemplo - Mudo de participante específico
 O exemplo a seguir mostra como chamar essa API.
 
 ##### <a name="request"></a>Solicitação
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real. 
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
 
 <!-- {
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a>Lista de notificação atualizada com o participante sem som
+##### <a name="notification---roster-updated-with-participant-muted"></a>Notificação - lista atualizada com o participante em mudo
 
 ```http
 POST https://bot.contoso.com/api/calls

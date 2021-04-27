@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 4738ae53b75d0530da4d9b453431f6daeb822ec9
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 4e5f828dd9bab9fa047877ddf793944d74a11183
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983682"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049097"
 ---
 # <a name="reportroot-getonedriveusagefilecounts"></a>reportRoot: getOneDriveUsageFileCounts
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtenha o número total de arquivos em todos os sites e quantos são arquivos ativos. Um arquivo é considerado ativo se ele foi salvo, sincronizado, modificado ou compartilhado dentro do período de tempo especificado.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, confira relatórios do [Microsoft 365 - uso do OneDrive for Business.](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - OneDrive for Business uso](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,7 +50,7 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 | :-------- | :----- | :--------------------------------------- |
 | ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Eles seguem o formato D *n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
 
-Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é texto/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta $format OData definido como text/csv ou application/json.
+Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -77,13 +77,13 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 ### <a name="json"></a>JSON
 
-Se bem-sucedido, este método retorna um código de resposta e um `200 OK` **[objeto oneDriveUsageFileCounts](../resources/onedriveusagefilecounts.md)** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **[objeto oneDriveUsageFileCounts](../resources/onedriveusagefilecounts.md)** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="csv"></a>CSV
 
-A seguir está um exemplo que saída CSV.
+A seguir, um exemplo que dá saída ao CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -129,7 +129,7 @@ Report Refresh Date,Site Type,Total,Active,Report Date,Report Period
 
 ### <a name="json"></a>JSON
 
-A seguir está um exemplo que retorna JSON.
+A seguir, um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/reports/getOneDriveUsageFileCounts(period='
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

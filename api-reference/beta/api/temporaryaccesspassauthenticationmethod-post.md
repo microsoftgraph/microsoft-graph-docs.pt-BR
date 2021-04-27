@@ -2,16 +2,15 @@
 title: Criar temporaryAccessPassAuthenticationMethod
 description: Crie um novo objeto temporaryAccessPassAuthenticationMethod.
 author: inbarckMS
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 801f82d30baf5a231b0fea78c3613773d4dd8f53
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 504b81b94252ffde5e9247e0357763e05fb806ac
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761090"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049657"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>Criar temporaryAccessPassAuthenticationMethod
 Namespace: microsoft.graph

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 4d70ea6dacb12b56a4ae14486cb0ed5adcb6850b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cd4a00faeee1b97adc525727c1c01d69f26e4a27
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442198"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049818"
 ---
 # <a name="create-programcontrol"></a>Criar programControl
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            |  ProgramControl.ReadWrite.All  |
+|Application                            |  ProgramControl.ReadWrite.All  |
 
 O usuário inscreveu também deve estar em uma função de diretório que permita que ele crie um **programControl**. 
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

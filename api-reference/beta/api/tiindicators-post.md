@@ -1,16 +1,16 @@
 ---
 title: Criar indicador de inteligência de ameaças
-description: Criar um novo tiIndicator.
+description: Crie um novo tiIndicator.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: be0e89fd353cbe54a9f3d9d6dbb3108a1b4da8db
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 14620ff345c5d74075548b17e26bc7923f942da6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981466"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050756"
 ---
 # <a name="create-threat-intelligence-indicator"></a>Criar indicador de inteligência de ameaças
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [tiIndicator](../resources/tiindicator.md) .
+Crie um novo [objeto tiIndicator.](../resources/tiindicator.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,11 +46,11 @@ POST /security/tiIndicators
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [tiIndicator](../resources/tiindicator.md) que contém pelo menos um [email](../resources/tiindicator.md#indicator-observables---email), [arquivo](../resources/tiindicator.md#indicator-observables---file)ou [rede](../resources/tiindicator.md#indicator-observables---network) observou, e os seguintes campos obrigatórios:,,,, `action` `description` `expirationDateTime` `targetProduct` `threatType` , `tlpLevel` . 
+No corpo da solicitação, fornece uma representação JSON de um objeto [tiIndicator](../resources/tiindicator.md) contendo pelo menos um [email](../resources/tiindicator.md#indicator-observables---email) [,](../resources/tiindicator.md#indicator-observables---file)arquivo ou rede observável, e os seguintes campos obrigatórios: , , , , , , [](../resources/tiindicator.md#indicator-observables---network) `action` `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` . 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [tiIndicator](../resources/tiindicator.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um objeto [tiIndicator](../resources/tiindicator.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -110,7 +110,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

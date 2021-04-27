@@ -1,16 +1,16 @@
 ---
 title: Criar outlookTaskFolder
-description: Crie uma pasta de tarefas do Outlook em um outlookTaskGroup especificado.
+description: Crie uma Outlook de tarefas em um outlookTaskGroup especificado.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae45fb686c3b76156b0423ee3890fd306502aa82
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: e7fd36eae4980a533f4d3bc02223bab788f8e7a4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774247"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049216"
 ---
 # <a name="create-outlooktaskfolder-deprecated"></a>Criar outlookTaskFolder (preterido)
 
@@ -21,13 +21,13 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Criar uma pasta de tarefas do Outlook em um [outlookTaskGroup especificado.](../resources/outlooktaskgroup.md)
+Crie uma Outlook de tarefas em um [outlookTaskGroup especificado.](../resources/outlooktaskgroup.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Tasks.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
@@ -89,7 +89,7 @@ Content-length: 131
 
 No corpo da solicitação, fornece uma representação JSON do [objeto outlookTaskFolder.](../resources/outlooktaskfolder.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

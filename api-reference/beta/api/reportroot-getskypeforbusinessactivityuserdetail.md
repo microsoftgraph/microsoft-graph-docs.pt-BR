@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6f5d03e4997dd199cfa653641448bcd656626dad
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 21c43c0098ae1a9efe7a018d51fd320a19caec17
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982618"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049741"
 ---
 # <a name="reportroot-getskypeforbusinessactivityuserdetail"></a>reportRoot: getSkypeForBusinessActivityUserDetail
 
@@ -54,7 +54,7 @@ Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetro
 
 > **Observação:** você precisa definir o período ou data na URL.
 
-Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é texto/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta $format OData definido como text/csv ou application/json.
+Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -99,7 +99,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Contagem de chamadas dial-in/out pela Microsoft em conferência organizada
 - Minutos de chamadas dial-in pela Microsoft em conferência organizada
 - Minutos de chamadas dial-out pela Microsoft em conferência organizada
-- Contagem de IMs de conferência participadas
+- Contagem de IMs de Conferências Participadas
 - Contagem de áudios/vídeos em conferência participada
 - Minutos de áudios/vídeos em conferência participada
 - Contagem de compartilhamentos de aplicativos em conferência participada
@@ -110,15 +110,15 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 ### <a name="json"></a>JSON
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` **[skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md)** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **[objeto skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md)** no corpo da resposta.
 
-O tamanho de página padrão para essa solicitação é de 200 itens.
+O tamanho padrão da página para essa solicitação é de 200 itens.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="csv"></a>CSV
 
-A seguir está um exemplo que saída CSV.
+A seguir, um exemplo que dá saída ao CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -164,7 +164,7 @@ Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Da
 
 ### <a name="json"></a>JSON
 
-A seguir está um exemplo que retorna JSON.
+A seguir, um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -185,7 +185,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessActivityUserDeta
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

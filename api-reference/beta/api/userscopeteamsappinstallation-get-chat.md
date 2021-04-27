@@ -1,26 +1,26 @@
 ---
-title: Obter chat entre o usuário e o teamsApp
-description: Recupere o chat de um em um entre o usuário especificado e o aplicativo Teams.
+title: Obter chat entre usuário e teamsApp
+description: Recupere o chat um-a-um entre o usuário especificado e o Teams aplicativo.
 author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 975722356177a537da9d7ca53e5232747866a9b8
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: cde0931caf5509c9782e7da9fdb4691eafa4eb67
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690271"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052576"
 ---
-# <a name="get-chat-between-user-and-teamsapp"></a>Obter chat entre o usuário e o teamsApp
+# <a name="get-chat-between-user-and-teamsapp"></a>Obter chat entre usuário e teamsApp
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o [chat](../resources/chat.md) do [usuário](../resources/user.md) especificado e o [aplicativo Teams](../resources/teamsapp.md).
+Recupere o [chat](../resources/chat.md) do usuário especificado [e](../resources/user.md) Teams [app](../resources/teamsapp.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsAppInstallation. ReadForUser. All, TeamsAppInstallation. ReadWriteSelfForUser. All, TeamsAppInstallation. ReadWriteForUser. All |
+|Application | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,11 +54,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma instância do objeto [chat](../resources/chat.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` instância de objeto de [chat](../resources/chat.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>Exemplo 1: listar chats um-on-one entre o usuário especificado e o aplicativo Teams
+### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>Exemplo 1: Listar chats um-a-um entre o usuário especificado e o Teams aplicativo
 
 #### <a name="request"></a>Solicitação
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "user_chat_teamsApps",

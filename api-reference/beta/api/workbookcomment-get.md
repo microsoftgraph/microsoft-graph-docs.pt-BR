@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5355a52998e0f3e2f61fa2834bf3e482669a1f56
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 132925396dd9f8e9acebfd2192b58d090d6d80b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626206"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049566"
 ---
 # <a name="get-workbookcomment"></a>Obter workbookComment
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

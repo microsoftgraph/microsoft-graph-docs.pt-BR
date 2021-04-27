@@ -1,16 +1,16 @@
 ---
 title: Subtituir schedulingGroup
-description: Substitua um existente.
+description: Substitua um schedulingGroup existente.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 713e9a7750eb71d18961925d2a3f9931df5ed1ce
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 776dd553c6573455e5577156a52e9b5d69a7add8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975350"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051995"
 ---
 # <a name="replace-schedulinggroup"></a>Subtituir schedulingGroup
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Substitua [um existente.](../resources/schedulinggroup.md)
+Substitua um [schedulingGroup existente.](../resources/schedulinggroup.md)
 
-Se o The [Scheduling](../resources/schedulinggroup.md) especificado não existir, este método retornará `404 Not found` .
+Se o [schedulingGroup especificado](../resources/schedulinggroup.md) não existir, este método retornará `404 Not found` .
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Application | Schedule.ReadWrite.All |
 
@@ -49,11 +49,11 @@ PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto do objeto de [plano](../resources/schedulinggroup.md) .
+No corpo da solicitação, fornece uma representação JSON de [um objeto schedulingGroup.](../resources/schedulinggroup.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de forma de [plano](../resources/schedulinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto schedulingGroup](../resources/schedulinggroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -103,7 +103,7 @@ Prefer: return=representation
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

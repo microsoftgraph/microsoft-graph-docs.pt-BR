@@ -1,16 +1,16 @@
 ---
 title: Criar securityAction
-description: Criar um novo objeto SecurityAction. "
+description: Crie um novo objeto securityAction."
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: dbbb6ce1b566ec0dec977a51d02426c2c62f7117
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f1d513ca1a24a1314be48f550be1ceae81282609
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970910"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049734"
 ---
 # <a name="create-securityaction"></a>Criar securityAction
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [SecurityAction](../resources/securityaction.md) .
+Crie um novo [objeto securityAction.](../resources/securityaction.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,11 +46,11 @@ POST /security/securityActions
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [SecurityAction](../resources/securityaction.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto securityAction.](../resources/securityaction.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [SecurityAction](../resources/securityaction.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um objeto [securityAction](../resources/securityaction.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -107,7 +107,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

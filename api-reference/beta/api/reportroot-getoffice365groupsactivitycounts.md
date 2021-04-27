@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: c4ded882d6a90755ec25e6635d5949fd8b846b6a
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 33f92fc10573a28809ac79f80ae386f9fdc43faf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983080"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050889"
 ---
 # <a name="reportroot-getoffice365groupsactivitycounts"></a>reportRoot: getOffice365GroupsActivityCounts
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtenha o número de atividades de grupo em todas as cargas de trabalho de grupo.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - grupos do Microsoft 365.](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Microsoft 365 grupos](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,7 +50,7 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 | :-------- | :----- | :--------------------------------------- |
 | ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Eles seguem o formato D *n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
 
-Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é texto/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta $format OData definido como text/csv ou application/json.
+Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -76,7 +76,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Data do relatório
 - Período de Relatório
 
-As seguintes colunas não são suportadas no Microsoft Graph China operado pela 21Vianet:
+As seguintes colunas não são suportadas na Microsoft Graph China operada pela 21Vianet:
 
 - Mensagens postadas do Yammer
 - Mensagens lidas do Yammer
@@ -84,7 +84,7 @@ As seguintes colunas não são suportadas no Microsoft Graph China operado pela 
 
 ### <a name="json"></a>JSON
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` **[office365GroupsActivityCounts](../resources/office365groupsactivitycounts.md)** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **[objeto office365GroupsActivityCounts](../resources/office365groupsactivitycounts.md)** no corpo da resposta.
 
 As seguintes propriedades no **[objeto office365GroupsActivityCounts](../resources/office365groupsactivitycounts.md)** não são suportadas no Microsoft Graph China operado pela 21Vianet:
 
@@ -96,7 +96,7 @@ As seguintes propriedades no **[objeto office365GroupsActivityCounts](../resourc
 
 ### <a name="csv"></a>CSV
 
-A seguir está um exemplo que saída CSV.
+A seguir, um exemplo que dá saída ao CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -142,7 +142,7 @@ Report Refresh Date,Exchange Emails Received,Yammer Messages Posted,Yammer Messa
 
 ### <a name="json"></a>JSON
 
-A seguir está um exemplo que retorna JSON.
+A seguir, um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -163,7 +163,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityCounts(pe
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 1d3dab6008e54a464c6b8a62cd90b0b9fed9388e
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: ebb4c09758fec323e015cf2efbda6b04f1e8cf5a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983101"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050903"
 ---
 # <a name="reportroot-getoffice365activeuserdetail"></a>reportRoot: getOffice365ActiveUserDetail
 
@@ -54,7 +54,7 @@ Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetro
 
 > **Observação:** você precisa definir o período ou data na URL.
 
-Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é texto/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta $format OData definido como text/csv ou application/json.
+Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -97,7 +97,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 - Data de atribuição da licença do Teams
 - Produtos Atribuídos
 
-As seguintes colunas não são suportadas no Microsoft Graph China operado pela 21Vianet:
+As seguintes colunas não são suportadas na Microsoft Graph China operada pela 21Vianet:
 
 - Tem a licença do Yammer
 - Tem a licença do Teams
@@ -108,7 +108,7 @@ As seguintes colunas não são suportadas no Microsoft Graph China operado pela 
 
 ### <a name="json"></a>JSON
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **[objeto office365ActiveUserDetail](../resources/office365activeuserdetail.md)** no corpo da resposta.
 
 As seguintes propriedades no **[objeto office365ActiveUserDetail](../resources/office365activeuserdetail.md)** não são suportadas no Microsoft Graph China operado pela 21Vianet:
 
@@ -119,13 +119,13 @@ As seguintes propriedades no **[objeto office365ActiveUserDetail](../resources/o
 - yammerLicenseAssignDate
 - teamsLicenseAssignDate
 
-O tamanho de página padrão para essa solicitação é de 200 itens.
+O tamanho padrão da página para essa solicitação é de 200 itens.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="csv"></a>CSV
 
-A seguir está um exemplo que saída CSV.
+A seguir, um exemplo que dá saída ao CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -171,7 +171,7 @@ Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Has
 
 ### <a name="json"></a>JSON
 
-A seguir está um exemplo que retorna JSON.
+A seguir, um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -192,7 +192,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

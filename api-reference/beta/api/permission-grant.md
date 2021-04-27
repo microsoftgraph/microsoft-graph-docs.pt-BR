@@ -5,12 +5,12 @@ description: Conceder uma lista de usuários acesso para usar o link especificad
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4dedd3614c043a622ba659bf1986f7d216ac7ac1
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 6aeecf4d3f12974457d0ceccd725c551f4cc5c7d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475174"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050070"
 ---
 # <a name="permission-grant"></a>permission: grant
 
@@ -147,7 +147,7 @@ Content-type: application/json
 }
 ```
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 Se o link for um link [de acesso](../resources/permission.md#existing-access-link) existente, permissões adicionais serão retornadas representando o seguinte:
 
@@ -212,7 +212,7 @@ Content-type: application/json
 
 ```
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 
 
@@ -226,7 +226,7 @@ Content-type: application/json
   "description": "Add permissions to an item and optionally send a sharing notification.",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Sharing/Add permissions"
+  "tocPath&quot;: &quot;Sharing/Add permissions"
 } -->
 
 

@@ -1,16 +1,16 @@
 ---
 title: Criar openShift
-description: Criar uma instância do objeto openshift.
+description: Crie uma instância de objeto openshift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5f9b02e5463c5215e67aef206d5876400ef275a5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 313c5a8ecdd940d9811dab653152e04ad15c59f4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019940"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052086"
 ---
 # <a name="create-openshift"></a>Criar openShift
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar uma instância de um objeto [openshift](../resources/openshift.md) .
+Crie uma instância de [um objeto openshift.](../resources/openshift.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,11 +47,11 @@ POST /teams/{id}/schedule/openShifts
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça o novo objeto [openshift](../resources/openshift.md) no corpo da solicitação para este método.
+Forneça o novo [objeto openshift](../resources/openshift.md) no corpo da solicitação para este método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [openShift](../resources/openshift.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e o objeto `200 OK` [openShift](../resources/openshift.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -107,7 +107,7 @@ Content-length: 244
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

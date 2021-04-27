@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 61776660883cdcf9ea8d6122e2e84c5b63505935
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 33e88005c5840196b8f6c668b51ca0135e9e23f0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131170"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050133"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -30,9 +30,9 @@ Todos esses tipos de recursos de anexo são derivados do recurso [attachment](..
 
 Você pode adicionar um anexo [](../resources/message.md) a uma mensagem existente postando em sua coleção de anexos ou em uma nova mensagem que está sendo redigida [ou](../api/user-post-messages.md)criada e enviada em [tempo real.](../api/user-sendmail.md)
 
->**Observação:** essa operação limita o tamanho do anexo que você pode adicionar a menos de 3 MB.
+>**Observação**: Essa operação limita o tamanho do anexo que você pode adicionar a menos de 3 MB.
 >
-> No entanto, se você estiver anexando a uma mensagem um arquivo entre 3 MB e 150 MB, poderá criar uma sessão de [upload](attachment-createuploadsession.md) e carregar iterativamente intervalos do arquivo para anexá-lo. Veja [anexar arquivos grandes a mensagens do Outlook](/graph/outlook-large-attachments) para ver um exemplo.
+> No entanto, se você estiver anexando a uma mensagem um arquivo que esteja entre 3MB e 150 MB, você pode criar uma sessão de [carregamento](attachment-createuploadsession.md) e carregar iterativamente intervalos do arquivo para anexá-lo. Consulte [anexar arquivos grandes Outlook mensagens](/graph/outlook-large-attachments) para um exemplo.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -70,7 +70,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [Attachme
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [Attachment](../resources/attachment.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e o objeto [Attachment](../resources/attachment.md) no corpo da resposta.
 
 ## <a name="example-file-attachment"></a>Exemplo (anexo de arquivo)
 
@@ -179,7 +179,7 @@ Content-length: 200
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_beta",
@@ -205,7 +205,7 @@ Content-length: 162
 
 ##### <a name="request"></a>Solicitação
 Aqui está um exemplo de uma solicitação que adiciona um anexo de referência a uma mensagem existente.
-O anexo aponta para uma pasta no OneDrive.
+O anexo aponta para uma pasta OneDrive.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

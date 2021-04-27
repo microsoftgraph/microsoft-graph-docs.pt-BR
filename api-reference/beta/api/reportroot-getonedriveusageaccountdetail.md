@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 7da7b20c4f2fcf2a8f99fc75d07c6244ac1b2ad8
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 5b995f0335e584f6d7a5156f04ed7f5eb1ce261e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981239"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049762"
 ---
 # <a name="reportroot-getonedriveusageaccountdetail"></a>reportRoot: getOneDriveUsageAccountDetail
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtenha dados sobre o uso do OneDrive por conta.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, confira relatórios do [Microsoft 365 - uso do OneDrive for Business.](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - OneDrive for Business uso](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).
 
 ## <a name="permissions"></a>Permissões
 
@@ -54,7 +54,7 @@ Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetro
 
 > **Observação:** você precisa definir o período ou data na URL.
 
-Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é texto/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta $format OData definido como text/csv ou application/json.
+Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -86,13 +86,13 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 ### <a name="json"></a>JSON
 
-Se bem-sucedido, este método retorna um código de resposta e um `200 OK` **[objeto oneDriveUsageAccountDetail](../resources/onedriveusageaccountdetail.md)** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **[objeto oneDriveUsageAccountDetail](../resources/onedriveusageaccountdetail.md)** no corpo da resposta.
 
-O tamanho de página padrão para essa solicitação é de 200 itens.
+O tamanho padrão da página para essa solicitação é de 200 itens.
 
 ## <a name="example"></a>Exemplo
 
-A seguir está um exemplo que saída CSV.
+A seguir, um exemplo que dá saída ao CSV.
 
 ### <a name="csv"></a>CSV
 
@@ -140,7 +140,7 @@ Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,Fi
 
 ### <a name="json"></a>JSON
 
-A seguir está um exemplo que retorna JSON.
+A seguir, um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -161,7 +161,7 @@ GET https://graph.microsoft.com/beta/reports/getOneDriveUsageAccountDetail(perio
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

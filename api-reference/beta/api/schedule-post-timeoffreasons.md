@@ -1,16 +1,16 @@
 ---
 title: Criar timeOffReason
-description: Criar um novo timeOffReason.
+description: Crie um novo timeOffReason.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 35299b61e6a26710453a825442a0c136c33d3ba2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 297b3188de82b432cb3dab4e198b8bf6ae41d835
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974949"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052716"
 ---
 # <a name="create-timeoffreason"></a>Criar timeOffReason
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [timeOffReason](../resources/timeoffreason.md).
+Crie um novo [timeOffReason](../resources/timeoffreason.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,11 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule. ReadWrite. All * |
+|Application | Schedule.ReadWrite.All* |
 
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
+>\***Importante:** As permissões de aplicativo estão atualmente apenas em visualização privada e não estão disponíveis para uso público.
 
-> **Observação** : esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/timeOffReasons
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,7 +97,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

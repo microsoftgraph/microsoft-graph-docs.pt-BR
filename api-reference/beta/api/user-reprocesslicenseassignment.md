@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 58d2372356f43167b15f2b84d245f9acc98b38c8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 4ff1500ade221a24970f6cfbde38fab9101b67dc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721079"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049594"
 ---
 # <a name="user-reprocesslicenseassignment"></a>user: reprocessLicenseAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reprocesse todas as atribuições de licença baseadas em grupo para o usuário. Para saber mais sobre o licenciamento baseado em grupo, consulte O que é licenciamento baseado [em grupo no Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Consulte Também Identificar [e resolver problemas de atribuição de licença para um grupo no Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) para obter mais detalhes.
+Reprocesse todas as atribuições de licença baseadas em grupo para o usuário. Para saber mais sobre o licenciamento baseado em grupo, consulte O que é licenciamento baseado em [grupo em Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Consulte Também Identificar [e resolver problemas de atribuição](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) de licença para um grupo Azure Active Directory para obter mais detalhes.
 
 
 ## <a name="permissions"></a>Permissões
@@ -83,7 +83,7 @@ POST https://graph.microsoft.com/beta/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 ### <a name="response"></a>Resposta
 A resposta é o objeto do usuário atualizado.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

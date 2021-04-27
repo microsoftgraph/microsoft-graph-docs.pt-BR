@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a7cbf2803c65f3159cd7cbd3aafaa147114983e0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 9fbb914533b8eedce9e896a86886bdba656d6034
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475426"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052653"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -194,7 +194,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Aqui está uma resposta de exemplo. Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Aqui está uma resposta de exemplo. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

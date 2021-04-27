@@ -1,16 +1,16 @@
 ---
 title: Get schemaExtension
-description: Obtenha as propriedades da definição schemaExtension especificada.
+description: Obter as propriedades da definição de esquemaExtension especificada.
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: ff909af6ae238394268fe51e8eb39f93a7d9f130
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bb1cd6e7869faaf67e378a2e24709226c0afc14f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975900"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051988"
 ---
 # <a name="get-schemaextension"></a>Get schemaExtension
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as propriedades da definição [schemaExtension](../resources/schemaextension.md) especificada.
+Obter as propriedades da definição [de esquemaExtension](../resources/schemaextension.md) especificada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User. Read, Application. Read. All  |
+|Delegado (conta corporativa ou de estudante) | User.Read, Application.Read.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Application | Application.Read.All |
 
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto schemaExtension](../resources/schemaextension.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

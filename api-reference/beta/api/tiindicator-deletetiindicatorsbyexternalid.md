@@ -1,16 +1,16 @@
 ---
 title: 'tiIndicator: deleteTiIndicatorsByExternalId'
-description: Excluir vários indicadores de inteligência de ameaça (TI) em uma solicitação, em vez de várias solicitações, e a solicitação contém IDs externas em vez de IDs.
+description: Exclua vários indicadores de TI (inteligência de ameaça) em uma solicitação em vez de várias solicitações, e a solicitação contém IDs externas em vez de IDs.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 76de4d49adc3e3b34a49e43516376dd8a25f1db7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a163f2c2a362cda42964733bf6639a2138dcb98c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977728"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052660"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator: deleteTiIndicatorsByExternalId
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir vários indicadores de inteligência de ameaça (TI) em uma solicitação, em vez de várias solicitações, quando a solicitação contém IDs externas em vez de IDs.
+Exclua vários indicadores de TI (inteligência de ameaça) em uma solicitação em vez de várias solicitações, quando a solicitação contiver IDs externas em vez de IDs.
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,11 +50,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|valor|Coleção de cadeias de caracteres| Coleção de `externalIds` objetos **tiIndicator** a serem excluídos. |
+|valor|Conjunto de cadeias de caracteres| Coleção dos `externalIds` **objetos tiIndicator** a serem excluídos. |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200, OK` código de resposta e um objeto da coleção [resultInfo](../resources/resultinfo.md) no corpo da resposta. Se houver um erro, este método retornará um `206 Partial Content` código de resposta.  Consulte [erros](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) para obter mais informações.
+Se tiver êxito, este método retornará `200, OK` o código de resposta e um objeto da coleção [resultInfo](../resources/resultinfo.md) no corpo da resposta. Se houver um erro, este método retornará um `206 Partial Content` código de resposta.  Consulte [Erros para](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) obter mais informações.
 
 ## <a name="examples"></a>Exemplos
 
@@ -106,7 +106,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 41f24b9b5c76502080441efac63f927018bfb1ec
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0602c04ab890f773866d8721580c0c099cccbeb4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921977"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051071"
 ---
 # <a name="update-printer"></a>Atualização da impressora
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto printer.](../resources/printer.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Além das permissões a seguir, o locatário do usuário deve ter uma assinatura de Impressão Universal ativa. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
@@ -29,8 +29,8 @@ Somente o aplicativo que registrou a impressora tem permissão para atualizar a 
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Application| Printer.ReadWrite.All |
 
 >**Observação:** No momento, somente as impressoras que não têm dispositivo físico podem ser atualizadas usando permissões de aplicativo.
@@ -73,7 +73,7 @@ As propriedades a seguir podem ser atualizadas usando permissões de aplicativo.
 |fabricante|String|O fabricante da impressora.|
 |modelo|String|O nome do modelo da impressora.|
 |status|[printerStatus](../resources/printerstatus.md)|O status de processamento da impressora, incluindo quaisquer erros.|
-|isAcceptingJobs|Booliano|Se a impressora está aceitando novos trabalhos de impressão no momento.|
+|isAcceptingJobs|Boolean|Se a impressora está aceitando novos trabalhos de impressão no momento.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Permissões de aplicativo e carga IPP
 
@@ -149,7 +149,7 @@ Content-length: 124
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

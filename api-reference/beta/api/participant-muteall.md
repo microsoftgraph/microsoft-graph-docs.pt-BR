@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 945619d406baf5552581559397c79dcf13bc61cf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0cf9da4b6903931b813c0c2b2bd1aed3681434d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968725"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049181"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Ative o mudo para todos os participantes em uma chamada.
 
-> **Observação:** Esta API foi preterida e será removida até 15 de março de 2020. Para fazer o mudo de um único participante, confira [participante: sem áudio](participant-mute.md).
+> **Observação:** Essa API foi preterida e será removida até 15 de março de 2020. Para silenciar um único participante, consulte [participante: mute](participant-mute.md).
 
 
 ## <a name="permissions"></a>Permissões
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                               |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Aplicativo                            | Nenhum                                        |
+| Aplicativo                            | Nenhuma                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,11 +51,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participants|Coleção de cadeias de caracteres|Os participantes a serem mudo.|
+|participants|Conjunto de cadeias de caracteres|Os participantes a serem mudos.|
 |clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto commsOperation](../resources/commsoperation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -101,7 +101,7 @@ Content-Length: 81
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: Obter organizationSettings
-description: Recupere as propriedades e os relacionamentos do objeto organizationSettings.
+description: Recupere as propriedades e as relações do objeto organizationSettings.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d1fc6d9d8abb8e93a145536c5ae8d6678ed4b3d9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 53bf7e03d56ad949683b0c363af3d4aa017502d6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975480"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052065"
 ---
 # <a name="get-organizationsettings"></a>Obter organizationSettings
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [organizationSettings](../resources/organizationsettings.md) , incluindo **profileCardProperties**.
+Recupere as propriedades e as relações de um [objeto organizationSettings,](../resources/organizationsettings.md) incluindo **profileCardProperties**.
 
-Essa operação não retorna [itemInsightsSettings](../resources/iteminsightssettings.md) por meio da propriedade de navegação **persights** . Use [Get itemInsightsSettings](iteminsightssettings-get.md) em vez disso.
+Esta operação não retorna [itemInsightsSettings](../resources/iteminsightssettings.md) por meio da propriedade de navegação **itemInsights.** Use [get itemInsightsSettings](iteminsightssettings-get.md) em vez disso.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,11 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. Read. All                    |
+| Delegado (conta corporativa ou de estudante)     | User.Read, User.Read.All                    |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
->**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha um administrador de locatários ou uma função de administrador global.
+>**Observação:** O uso de permissões delegadas para essa operação exige que o usuário in-loco tenha um administrador de locatário ou uma função de administrador global.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [organizationSettings](../resources/organizationsettings.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [organizationSettings](../resources/organizationsettings.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/organization/settings
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

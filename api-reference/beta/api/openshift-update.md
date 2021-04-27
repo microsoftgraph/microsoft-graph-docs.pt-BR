@@ -1,16 +1,16 @@
 ---
 title: Atualizar openShift
-description: Atualiza as propriedades de um objeto openShift.
+description: Atualize as propriedades de um objeto openShift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7c17e56fb6fe0f6eb963d30beb35dc867955cea3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 37d7399883980532560a7748c8082a9ff184fe1c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976880"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052079"
 ---
 # <a name="update-openshift"></a>Atualizar openShift
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [openShift](../resources/openshift.md) .
+Atualize as propriedades de um [objeto openShift.](../resources/openshift.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,7 +47,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça o objeto [openshift](../resources/openshift.md) modificado no corpo da solicitação para este método.
+Forneça o [objeto openshift modificado](../resources/openshift.md) no corpo da solicitação para este método.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -57,7 +57,7 @@ Forneça o objeto [openshift](../resources/openshift.md) modificado no corpo da 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [openShift](../resources/openshift.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto openShift](../resources/openshift.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -120,7 +120,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

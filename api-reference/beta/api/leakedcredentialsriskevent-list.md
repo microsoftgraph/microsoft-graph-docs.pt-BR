@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0b27be914e14371c091ff4de7547f96e4d6c003b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ef845c380dabab204b113f31b27b42d8d680bc85
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443759"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049314"
 ---
 # <a name="list-leakedcredentialsriskevents-deprecated"></a>Listar leakedCredentialsRiskEvents (preterido)
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | IdentityRiskEvent.Read.All |
+|Application | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +59,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/v1.0/leakedCredentialsRiskEvents
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

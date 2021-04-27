@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 42804622f94207e304ada3a9538f860415ddbf53
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 00cdebef99cc27de862b88768c725dd5e0a92372
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766249"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049132"
 ---
 # <a name="get-printer"></a>Obter impressora
 
@@ -29,7 +29,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Printer.Read.All, Printer.ReadWrite.All |
+|Application| Printer.Read.All, Printer.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/print/printers/{id}
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -168,7 +168,7 @@ Content-length: 1313
 ```
 
 A seguir, um exemplo da resposta, ao usar $select=id,displayName,capabilities
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

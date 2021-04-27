@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
-description: Obter a contagem de usuários que estão habilitados e aqueles que ativaram a assinatura do Office em computadores desktop ou dispositivos ou computadores compartilhados.
+description: Obter a contagem de usuários habilitados e aqueles que ativaram a assinatura Office em desktop ou dispositivos ou computadores compartilhados.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: a93a4207285d84dc9a9d748d85e43908aff2d13d
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: f8ec6ccaf9421994fad1585dd243ab7d6ba599c9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983724"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049790"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a contagem de usuários que estão habilitados e aqueles que ativaram a assinatura do Office em computadores desktop ou dispositivos ou computadores compartilhados.
+Obter a contagem de usuários habilitados e aqueles que ativaram a assinatura Office em desktop ou dispositivos ou computadores compartilhados.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte [relatórios do Microsoft 365 - ativações do Microsoft Office.](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Microsoft Office ativações](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,7 +44,7 @@ GET /reports/getOffice365ActivationsUserCounts
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é texto/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta $format OData definido como text/csv ou application/json.
+Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -70,13 +70,13 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 ### <a name="json"></a>JSON
 
-Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` **[office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **[objeto office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="csv"></a>CSV
 
-A seguir está um exemplo que saída CSV.
+A seguir, um exemplo que dá saída ao CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -122,7 +122,7 @@ Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
 
 ### <a name="json"></a>JSON
 
-A seguir está um exemplo que retorna JSON.
+A seguir, um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -143,7 +143,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserCounts?$
 
 O exemplo a seguir mostra a resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

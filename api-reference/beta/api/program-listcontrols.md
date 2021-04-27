@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 06eeeed15e6f46c8bbe802e504a1d7b15a83d867
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b9e92d36a699934a9bd4480b9a7158418a78272d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721772"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049825"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Listar programControls de um programa
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
  O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia um programa.
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b8
 
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

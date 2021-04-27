@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2486c83d9e22304f57dbd64d322029fcec201c83
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bd010c8832d98242f00341f8357af5bde9e78688
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136374"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051113"
 ---
 # <a name="create-onpremisesagentgroup"></a>Criar onPremisesAgentGroup
 
@@ -56,7 +56,7 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto onPrem
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -96,7 +96,7 @@ No corpo da solicitação, fornece uma representação JSON do [objeto onPremise
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -1,33 +1,33 @@
 ---
-title: Obter serviço de multiatendimento
-description: Recupere as propriedades e os relacionamentos de um serviço de impressão.
+title: Obter printService
+description: Recupere as propriedades e as relações de um serviço de impressão.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2735e019d4e861bb0a2fc066f3c4796011745d9b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1eb5f1475889e7f1d8b399baa40c739cad018f66
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968200"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049881"
 ---
-# <a name="get-printservice"></a>Obter serviço de multiatendimento
+# <a name="get-printservice"></a>Obter printService
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um serviço de impressão.
+Recupere as propriedades e as relações de um serviço de impressão.
 
 ## <a name="permissions"></a>Permissões
-Nenhuma permissão é necessária para chamar essa API, mas para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa.
+Nenhuma permissão é necessária para chamar essa API, mas para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Nenhum.|
+|Delegado (conta corporativa ou de estudante)|Nenhum|
 |Delegado (conta pessoal da Microsoft)|Nenhum.|
-|Aplicativo|Nenhum.|
+|Aplicativo|Nenhum|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de [serviço](../resources/printservice.md) de pesquisa no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printService](../resources/printservice.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/print/services/{id}
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

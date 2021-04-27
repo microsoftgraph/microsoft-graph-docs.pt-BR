@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7a680b7c7fb77b9962aecf13ad39f9d7a87a6372
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 2b6c9089f0f839d59dcaaab61690b5bbf760dd56
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473931"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052604"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
 |Aplicativo | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/me/calendars
 ---
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

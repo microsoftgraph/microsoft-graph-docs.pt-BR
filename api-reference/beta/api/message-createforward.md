@@ -1,16 +1,16 @@
 ---
 title: 'message: createForward'
-description: 'Criar um rascunho de mensagem de encaminhamento para incluir um comentário ou atualizar as propriedades da mensagem  '
+description: 'Criar uma mensagem de encaminhamento de rascunho para incluir um comentário ou atualizar quaisquer propriedades de mensagem  '
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e36487e3e25e4eac30c4c05987082b26b31601f3
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: dd0802fa9443067fe4db9edd53783b800d81ce8c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136714"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052170"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um rascunho de mensagem de encaminhamento para incluir um comentário ou atualizar as propriedades da mensagem  
+Criar uma mensagem de encaminhamento de rascunho para incluir um comentário ou atualizar quaisquer propriedades de mensagem  
 tudo em uma **chamada createForward.** Você pode então [enviar](../api/message-send.md) o rascunho da mensagem.
 
 **Observação**
 
-- Você pode especificar um comentário ou a **propriedade do** corpo do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
+- Você pode especificar um comentário ou a **propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
 - Você deve especificar o `toRecipients` parâmetro ou a propriedade **toRecipients** do `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
 
 ## <a name="permissions"></a>Permissões
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

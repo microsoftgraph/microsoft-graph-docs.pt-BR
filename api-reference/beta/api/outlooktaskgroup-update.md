@@ -1,16 +1,16 @@
 ---
 title: Atualizar outlooktaskgroup
-description: Atualizar as propriedades graváveis de um grupo de tarefas do Outlook.
+description: Atualize as propriedades writable de um grupo de Outlook tarefa.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8b0dbeffd373e702bdd0ac8560f659436e24dee6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 37bf87e8d52ac320d29fd7be1f6cdd3dae7165ea
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978001"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049202"
 ---
 # <a name="update-outlooktaskgroup-deprecated"></a>Atualizar outlooktaskgroup (preterido)
 
@@ -21,9 +21,9 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Atualizar as propriedades graváveis de um grupo de tarefas do Outlook.
+Atualize as propriedades writable de um grupo de Outlook tarefa.
 
-Observe que você não pode modificar o nome do grupo de tarefas padrão, "minhas tarefas".
+Observe que você não pode modificar o nome do grupo de tarefas padrão, "Minhas Tarefas".
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir altera o nome de um grupo de tarefas para "Tarefas Pessoais". 
@@ -91,7 +91,7 @@ Content-length: 28
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

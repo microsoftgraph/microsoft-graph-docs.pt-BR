@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 681c845f25e8bfa92749f5ec2e976b1404490b11
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 878d2f92297673d7ce66a23aeafdb2fb392dad7b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131205"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050147"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Em particular, você pode usar o $expand de consulta para incluir todos os anexos de mensagem em linha com o restante das propriedades da mensagem. Por exemplo:
+Em particular, você pode usar o parâmetro $expand de consulta para incluir todos os anexos de mensagem em linha com o restante das propriedades da mensagem. Por exemplo:
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "message_get_attachments_beta",

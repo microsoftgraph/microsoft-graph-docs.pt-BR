@@ -1,16 +1,16 @@
 ---
 title: 'tiIndicator: submitTiIndicators'
-description: Carregar vários indicadores de inteligência de ameaça (TI) em uma solicitação em vez de várias solicitações.
+description: Upload vários indicadores de TI (inteligência de ameaça) em uma solicitação em vez de várias solicitações.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: bb3542c678fbee89a4de293585d31094502c857e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ed4ccd5adf087ecf8be69d8d192ae180ec685090
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975852"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050777"
 ---
 # <a name="tiindicator-submittiindicators"></a>tiIndicator: submitTiIndicators
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Carregar vários indicadores de inteligência de ameaça (TI) em uma solicitação em vez de várias solicitações.
+Upload vários indicadores de TI (inteligência de ameaça) em uma solicitação em vez de várias solicitações.
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,13 +50,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|valor|coleção tiIndicator| Coleção JSON de **tiIndicators** a ser criada. |
+|valor|Coleção tiIndicator| Coleção JSON **de tiIndicators** a serem criados. |
 
-Para cada tiIndicator, forneça uma representação JSON de um objeto [tiIndicator](../resources/tiindicator.md) que contém pelo menos um [email](../resources/tiindicator.md#indicator-observables---email), [arquivo](../resources/tiindicator.md#indicator-observables---file)ou [rede](../resources/tiindicator.md#indicator-observables---network) observou, e os seguintes campos obrigatórios:,,,, `action` `description` `expirationDateTime` `targetProduct` `threatType` , `tlpLevel` .
+Para cada tiIndicator, fornece uma representação JSON de um objeto [tiIndicator](../resources/tiindicator.md) contendo pelo menos um [email](../resources/tiindicator.md#indicator-observables---email) [,](../resources/tiindicator.md#indicator-observables---file)arquivo ou rede observável, e os seguintes campos obrigatórios: , , , , , , , [](../resources/tiindicator.md#indicator-observables---network) `action` `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [tiIndicator](../resources/tiindicator.md) no corpo da resposta.  Se houver um erro, este método retornará um `206 Partial Content` código de resposta.  Consulte [erros](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) para obter mais informações.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos tiIndicator](../resources/tiindicator.md) no corpo da resposta.  Se houver um erro, este método retornará um `206 Partial Content` código de resposta.  Consulte [Erros para](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) obter mais informações.
 
 ## <a name="examples"></a>Exemplos
 
@@ -138,7 +138,7 @@ Content-Type: application/json
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

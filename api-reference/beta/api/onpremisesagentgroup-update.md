@@ -1,16 +1,16 @@
 ---
 title: Atualizar onPremisesAgentGroup
-description: Atualizar as propriedades de um **objeto onPremisesAgentGroup.**
+description: Atualize as propriedades de um **objeto onPremisesAgentGroup.**
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1b04124a5e0cb39d59a95f2278b8ea24f9dc2366
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 892acaa068347ca6a555d163d01ec71b118c0285
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136371"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049230"
 ---
 # <a name="update-onpremisesagentgroup"></a>Atualizar onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+Atualize as propriedades de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,7 +48,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/agentGroups
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-A seguir está a lista de propriedades que você pode atualizar.
+Veja a seguir a lista de propriedades que você pode atualizar.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -101,7 +101,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: ad00fc4b9b2dc8bdd557495709f6f680fc6a4141
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 616aab701eab50bfc716b3a27bc98b0b9862ae2d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092677"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050091"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma extensão aberta[(objeto openTypeExtension)](../resources/opentypeextension.md) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso com suporte.
+Crie uma extensão aberta ([objeto openTypeExtension)](../resources/opentypeextension.md) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso com suporte.
 
-A tabela na seção [Permissões lista os](#permissions) recursos que suportam extensões abertas.
+A tabela na seção [Permissões](#permissions) lista os recursos que oferecem suporte a extensões abertas.
 
 > **Observação:** Se você estiver criando extensões abertas em recursos do Outlook, confira **considerações específicas do Outlook** no [tipo de recurso openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso para o qual você está criando a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
+Dependendo do recurso para o qual você está criando a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
@@ -39,7 +39,7 @@ Dependendo do recurso para o qual você está criando a extensão e o tipo de pe
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tarefa](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -102,7 +102,7 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extens�
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um corpo JSON de [uma openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome-valor obrigatórios e quaisquer dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
+Forneça um corpo JSON de [um openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome-valor necessários e quaisquer dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
 
 | Nome       | Valor |
 |:---------------|:----------|
@@ -198,7 +198,7 @@ Veja a seguir a resposta para o primeiro exemplo. O corpo da resposta inclui pro
 - A propriedade padrão **extensionName** especificada na solicitação.
 - Os dados personalizados especificados na solicitação, armazenados como 3 propriedades personalizadas.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -549,7 +549,7 @@ Content-type: application/json
 
 Veja a seguir a resposta do quinto exemplo, que contém a nova conversa e uma ID de thread. Esse novo thread contém uma postagem criada automaticamente que, por sua vez, contém a nova extensão.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 Para obter a nova extensão, primeiro [obtenha todas as postagens](../api/conversationthread-list-posts.md) desse thread. Inicialmente, deve haver somente uma. Em seguida, aplique a ID da postagem e o nome da extensão `Com.Contoso.Benefits` para [obter a extensão](../api/opentypeextension-get.md).
 

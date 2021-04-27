@@ -1,16 +1,16 @@
 ---
 title: 'bloco de anotações: getNotebookFromWebUrl'
-description: Recupere as propriedades e os relacionamentos de um objeto Notebook usando seu caminho de URL.
+description: Recupere as propriedades e as relações de um objeto de bloco de anotações usando seu caminho de URL.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 0d18a0597b6a295a8f2d7433e7208dc4e05e32ed
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 25c0731270edd5576ab2416682a6e6395b0e41b9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971299"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049237"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>bloco de anotações: getNotebookFromWebUrl
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [Notebook](../resources/notebook.md) usando seu caminho de URL.
+Recupere as propriedades e as relações de um objeto de bloco de [anotações](../resources/notebook.md) usando seu caminho de URL.
 
-O local pode ser blocos de anotações de usuário no Microsoft 365, em blocos de anotações de grupo ou em blocos de anotações de equipe hospedados no site do SharePoint no Microsoft 365.
+O local pode ser blocos de anotações de usuário em Microsoft 365, blocos de anotações de grupo ou SharePoint blocos de anotações de equipe hospedados no site em Microsoft 365.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -44,15 +44,15 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 | Aceitar | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do caminho de URL completo para o bloco de anotações que você deseja recuperar.
+No corpo da solicitação, fornece uma representação JSON do caminho de URL completo para o bloco de anotações que você deseja recuperar.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| `webUrl`     |`String`     | O caminho da URL do bloco de anotações a ser recuperado. Também pode conter um prefixo "OneNote:".|
+| `webUrl`     |`String`     | O caminho da URL do bloco de anotações a ser recuperado. Ele também pode conter um prefixo "onenote:".|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Notebook](../resources/notebook.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto de [bloco](../resources/notebook.md) de anotações no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -89,7 +89,7 @@ Content-type: application/json
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

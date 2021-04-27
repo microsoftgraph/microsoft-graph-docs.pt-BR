@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1cc87e9d4c111c7e0204614df4ece37ecef6452d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fe6e476eb8fdb29fd2817a94f6f7935c86c7006a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131688"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051736"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
@@ -54,7 +54,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Para obter configurações específicas, somente as configurações de respostas automáticas, o formato de data, a localidade, o formato de hora, o fuso horário, o horário de trabalho ou a finalidade do usuário:
+Para obter configurações específicas - somente as configurações de respostas automáticas, formato de data, localidade, formato de hora, fuso horário, horário comercial ou finalidade do usuário:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -98,7 +98,7 @@ Se for bem-sucedido, este método retornará um código de resposta `200 OK` e u
 - Objeto [mailboxSettings](../resources/mailboxsettings.md)
 - Objeto [automaticRepliesSetting](../resources/automaticrepliessetting.md)
 - cadeia de caracteres (para **dateFormat**)
-- cadeia de **caracteres (para delegateMeetingMessageDeliveryOptions**)
+- string (para **delegateMeetingMessageDeliveryOptions**)
 - Objeto [localeInfo](../resources/localeinfo.md)
 - cadeia de caracteres (para **timeFormat**)
 - cadeia de caracteres (para **timeZone**)
@@ -109,7 +109,7 @@ Se for bem-sucedido, este método retornará um código de resposta `200 OK` e u
 
 ### <a name="example-1"></a>Exemplo 1
 #### <a name="request"></a>Solicitação 
-O primeiro exemplo obtém todas as configurações de caixa de correio da caixa de correio do usuário de entrada, que incluem configurações para respostas automáticas, formato de data, localidade (idioma e país/região), formato de hora, fuso horário, horário de trabalho e finalidade do usuário.
+O primeiro exemplo obtém todas as configurações de caixa de correio da caixa de correio do usuário interna, que incluem configurações para respostas automáticas, formato de data, localidade (idioma e país/região), formato de hora, fuso horário, horários de trabalho e finalidade do usuário.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -138,7 +138,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings
 ---
 
 #### <a name="response"></a>Resposta
-A resposta inclui todas as configurações da caixa de correio do usuário conectado. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui todas as configurações da caixa de correio do usuário conectado. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -224,7 +224,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 ---
 
 #### <a name="response"></a>Resposta
-A resposta inclui apenas as configurações de respostas automáticas. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui apenas as configurações de respostas automáticas. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -263,7 +263,7 @@ O terceiro exemplo obtém especificamente as configurações de horário de trab
 GET https://graph.microsoft.com/beta/me/mailboxSettings/workingHours
 ```
 #### <a name="response"></a>Resposta
-A resposta inclui apenas as configurações de horário de trabalho. As horas de trabalho do usuário estão em um [fuso horário personalizado](../resources/customtimezone.md). Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui apenas as configurações de horário de trabalho. As horas de trabalho do usuário estão em um [fuso horário personalizado](../resources/customtimezone.md). Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",
@@ -312,7 +312,7 @@ Content-type: application/json
 
 ### <a name="example-4"></a>Exemplo 4
 #### <a name="request"></a>Solicitação
-O quarto exemplo obtém especificamente [as configurações de](../resources/userpurpose.md) finalidade do usuário da caixa de correio do usuário.
+O quarto exemplo obtém especificamente [as configurações de](../resources/userpurpose.md) finalidade do usuário da caixa de correio do usuário de entrada.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

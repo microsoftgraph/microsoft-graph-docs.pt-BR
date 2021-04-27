@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 3949306eb646fe3dd83419c88ed306dd20e63c41
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 05d3f30e3061a39e3104293691448e0f4534790b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721688"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049608"
 ---
 # <a name="assign-a-manager"></a>Atribuir um gerente
 
@@ -85,7 +85,7 @@ Content-length: xxx
 
 No corpo da solicitação, forneça uma representação JSON de um objeto [user](../resources/user.md) a ser adicionado.
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

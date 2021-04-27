@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2ee1616fdb3fa5c38ed0848359ad09dbb1948c9a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9982fa413b23aa5746a027879f8f9d3dbdc52c05
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131163"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050140"
 ---
 # <a name="message-move"></a>message: move
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 Veja a seguir um exemplo da resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

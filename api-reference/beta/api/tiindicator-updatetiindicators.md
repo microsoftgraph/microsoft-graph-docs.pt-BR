@@ -1,16 +1,16 @@
 ---
 title: 'tiIndicator: updateTiIndicators'
-description: Atualize vários indicadores de inteligência de ameaça (TI) em uma solicitação em vez de várias solicitações.
+description: Atualize vários indicadores de TI (inteligência contra ameaças) em uma solicitação em vez de várias solicitações.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a5531b9d43b0700451e902a7c1f89c2c9020a37e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4c594c9ba75ea0ee1cd1fcb8390d4b9ff738d48c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971995"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050770"
 ---
 # <a name="tiindicator-updatetiindicators"></a>tiIndicator: updateTiIndicators
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize vários indicadores de inteligência de ameaça (TI) em uma solicitação em vez de várias solicitações.
+Atualize vários indicadores de TI (inteligência contra ameaças) em uma solicitação em vez de várias solicitações.
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,15 +46,15 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. Para obter detalhes sobre as propriedades que podem ser atualizadas, consulte [Update tiIndicator](tiindicator-update.md). Os campos obrigatórios para cada tiIndicator são: `id` , `expirationDateTime` , `targetProduct` .
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. Para obter detalhes sobre propriedades que podem ser atualizadas, consulte [update tiIndicator](tiindicator-update.md). Os campos necessários para cada tiIndicator são: `id` , `expirationDateTime` , `targetProduct` .
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|valor|coleção tiIndicator| Coleção de **tiIndicators** para atualizar. Cada entidade deve ter **ID** e outras propriedades editáveis a serem atualizadas.|
+|valor|Coleção tiIndicator| Coleção **de tiIndicators** a ser atualizada. Cada entidade deve ter **id** e outras propriedades editáveis a serem atualizadas.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [tiIndicator](../resources/tiindicator.md) no corpo da resposta.  Se houver um erro, este método retornará um `206 Partial Content` código de resposta.  Consulte [erros](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) para obter mais informações.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos tiIndicator](../resources/tiindicator.md) no corpo da resposta.  Se houver um erro, este método retornará um `206 Partial Content` código de resposta.  Consulte [Erros para](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) obter mais informações.
 
 ## <a name="examples"></a>Exemplos
 
@@ -112,7 +112,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

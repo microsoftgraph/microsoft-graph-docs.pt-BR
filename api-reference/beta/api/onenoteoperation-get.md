@@ -1,30 +1,30 @@
 ---
-title: Obter onenoteOperation
-description: 'Obter o status de uma operação de execução longa do OneNote. Isso se aplica às operações que retornam o cabeçalho **Operation-Location** na resposta, como `CopyNotebook` ,,, `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   '
+title: Obter o onenoteOperation
+description: 'Obter o status de uma operação de OneNote de longo prazo. Isso se aplica a operações que retornam o header **Operation-Location** na resposta, como `CopyNotebook` , , , `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   '
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 0e5dc0d15ce7152a9713bbd1729b22cc901762c7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5dd65d44ea9d4df3bdd494586a17b67cc1e5b82b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969335"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050098"
 ---
-# <a name="get-onenoteoperation"></a>Obter onenoteOperation
+# <a name="get-onenoteoperation"></a>Obter o onenoteOperation
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o status de uma operação de execução longa do OneNote. Isso se aplica às operações que retornam o cabeçalho **Operation-Location** na resposta, como `CopyNotebook` ,,, `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   
+Obter o status de uma operação de OneNote de longo prazo. Isso se aplica a operações que retornam o header **Operation-Location** na resposta, como `CopyNotebook` , , , `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   
 
-Você pode sondar o ponto de extremidade Operation-Location até que a `status` Propriedade retorne `completed` ou `failed` . 
+Você pode sondar o ponto de extremidade Operation-Location até que `status` a propriedade retorne ou `completed` `failed` . 
 
-Se o status for `completed` , a `resourceLocation` Propriedade conterá o URI do ponto de extremidade do recurso. 
+Se o status for `completed` , `resourceLocation` a propriedade conterá o URI do ponto de extremidade do recurso. 
 
-Se o status for `failed` , o erro e `@api.diagnostics` as propriedades fornecerão informações de erro.
+Se o status for `failed` , o erro e as propriedades `@api.diagnostics` fornecerão informações de erro.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,7 +44,7 @@ GET /groups/{id}/onenote/operations/{id}
 GET /sites/{id}/onenote/operations/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Nenhum.
+Nenhum
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [onenoteOperation](../resources/onenoteoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto onenoteOperation](../resources/onenoteoperation.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

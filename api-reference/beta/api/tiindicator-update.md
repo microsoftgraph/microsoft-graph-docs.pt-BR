@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 589c34a024097599e5b6f9de074cd635d28ccc77
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6cb7f92d2a9d6c69b8daba94fddd2229beeab839
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942155"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050784"
 ---
 # <a name="update-tiindicator"></a>Atualizar tiIndicator
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,27 +52,27 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |ação|cadeia de caracteres| A ação a ser aplicada se o indicador for matched de dentro da ferramenta de segurança targetProduct. Os valores possíveis são: `unknown`, `allow`, `block`, `alert`.|
-|activityGroupNames|Coleção de cadeias de caracteres|Os nomes(s) de inteligência de ameaças cibernéticas para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaça.|
-|additionalInformation|Cadeia de caracteres|Uma área de catchall na qual os dados extras do indicador não cobertos pelas outras propriedades tiIndicator podem ser colocados. Os dados colocados em additionalInformation normalmente não serão usados pela ferramenta de segurança targetProduct.|
+|activityGroupNames|Conjunto de cadeias de caracteres|Os nomes(s) de inteligência de ameaças cibernéticas para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaça.|
+|additionalInformation|String|Uma área de catchall na qual os dados extras do indicador não cobertos pelas outras propriedades tiIndicator podem ser colocados. Os dados colocados em additionalInformation normalmente não serão usados pela ferramenta de segurança targetProduct.|
 |confidence|Int32|Um inteiro que representa a confiança dos dados no indicador identifica com precisão comportamento mal-intencionado. Os valores aceitáveis são 0 – 100 com 100 sendo os mais altos.|
-|description|Cadeia de caracteres|Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador.|
+|description|String|Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador.|
 |diamondModel|[diamondModel](../resources/tiindicator.md#diamondmodel-values)|A área do Modelo de Diamante na qual esse indicador existe. Os valores possíveis são: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| Cadeia de caracteres DateTime indicando quando o Indicador expira. Todos os indicadores devem ter uma data de expiração para evitar que os indicadores de stale persistam no sistema. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`.|
 |externalId|Cadeia de caracteres|Um número de identificação que vincula o indicador ao sistema do provedor de indicadores (por exemplo, uma chave estrangeira).|
-|isActive|Booliano|Usado para desativar indicadores dentro do sistema. Por padrão, qualquer indicador enviado é definido como ativo. No entanto, os provedores podem enviar indicadores existentes com esse conjunto como "False" para desativar indicadores no sistema.|
+|isActive|Boolean|Usado para desativar indicadores dentro do sistema. Por padrão, qualquer indicador enviado é definido como ativo. No entanto, os provedores podem enviar indicadores existentes com esse conjunto como "False" para desativar indicadores no sistema.|
 |killChain|[Coleção killChain](../resources/tiindicator.md#killchain-values)|Uma matriz JSON de cadeias de caracteres que descreve qual ponto ou pontos na Cadeia de Kill esse indicador tem como destino. Consulte "valores killChain" abaixo para saber os valores exatos.|
-|knownFalsePositives|Cadeia de caracteres|Cenários em que o indicador pode causar falsos positivos. Este deve ser um texto aceitável para humanos.|
+|knownFalsePositives|String|Cenários em que o indicador pode causar falsos positivos. Este deve ser um texto aceitável para humanos.|
 |lastReportedDateTime|DateTimeOffset|A última vez que o indicador foi visto. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`|
-|malwareFamilyNames|Coleção de cadeias de caracteres|O nome da família de malware associado a um indicador se ele existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, o que pode ser encontrado por meio da Windows Defender de [ameaças do](https://www.microsoft.com/wdsi/threats)Security Intelligence.|
-|passiveOnly|Booliano|Determina se o indicador deve disparar um evento visível para um usuário final. Quando definida como "true", as ferramentas de segurança não notificarão o usuário final de que ocorreu um "acerto". Isso é tratado com mais frequência como modo de auditoria ou silencioso pelos produtos de segurança, onde eles simplesmente registrarão que ocorreu uma combinação, mas não executarão a ação. O valor padrão é falso.|
+|malwareFamilyNames|Conjunto de cadeias de caracteres|O nome da família de malware associado a um indicador se ele existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, o que pode ser encontrado por meio da Windows Defender de ameaças [do](https://www.microsoft.com/wdsi/threats)Security Intelligence.|
+|passiveOnly|Boolean|Determina se o indicador deve disparar um evento visível para um usuário final. Quando definida como "true", as ferramentas de segurança não notificarão o usuário final de que ocorreu um "acerto". Isso é tratado com mais frequência como modo de auditoria ou silencioso pelos produtos de segurança, onde eles simplesmente registrarão que ocorreu uma combinação, mas não executarão a ação. O valor padrão é falso.|
 |severity|Int32|Um inteiro que representa a gravidade do comportamento mal-intencionado identificado pelos dados dentro do indicador. Os valores aceitáveis são 0 – 5, onde 5 é o mais grave e zero não é grave. O valor padrão é 3.|
-|tags|Coleção de cadeias de caracteres|Uma matriz JSON de cadeias de caracteres que armazena marcas/palavras-chave arbitrárias.|
+|tags|String collection|Uma matriz JSON de cadeias de caracteres que armazena marcas/palavras-chave arbitrárias.|
 |tlpLevel|[tlpLevel](../resources/tiindicator.md#tlplevel-values)| Valor do Protocolo de Semáforo para o indicador. Os valores possíveis são: `unknown`, `white`, `green`, `amber`, `red`.|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
 Se o header de solicitação opcional for usado, o método retornará um código de resposta e o objeto `200 OK` [tiIndicator](../resources/tiindicator.md) atualizado no corpo da resposta.
 
@@ -179,7 +179,7 @@ Prefer: return=representation
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

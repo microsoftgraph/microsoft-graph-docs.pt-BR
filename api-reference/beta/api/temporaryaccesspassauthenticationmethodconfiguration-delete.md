@@ -2,16 +2,15 @@
 title: Excluir temporaryAccessPassAuthenticationMethodConfiguration
 description: Remova as alterações feitas em um objeto temporaryAccessPassAuthenticationMethodConfiguration.
 author: inbarckms
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4512b4127a9c1fe1bab4c9e7bc0645d39f79c3b1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 023759dfec81417d8b39041842f937c1bb2352d4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953989"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049650"
 ---
 # <a name="delete-temporaryaccesspassauthenticationmethodconfiguration"></a>Excluir temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph

@@ -1,16 +1,16 @@
 ---
 title: Delete taskTrigger
-description: Excluir o gatilho de tarefa de uma impressora.
+description: Exclua o gatilho de tarefas de uma impressora.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b809380147bae5826d2d62eec68219edb49708b8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f98e73a7cf6d1da759ba933d685f72fbf11f2035
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972449"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051085"
 ---
 # <a name="delete-tasktrigger"></a>Delete taskTrigger
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua o [disparador de tarefa](../resources/printtasktrigger.md) de uma [impressora](../resources/printer.md)para impedir que eventos de impressão relacionados disparem tarefas na impressora especificada.
+Exclua [o gatilho](../resources/printer.md)de tarefas de uma [impressora para](../resources/printtasktrigger.md) impedir que eventos de impressão relacionados acionem tarefas na impressora especificada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura de Impressão Universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Printer. ReadWrite. All, Printer. FullControl. All |
+|Delegado (conta corporativa ou de estudante)| Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Application|Sem suporte.|
 
@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/beta/print/printers/1a5f91a7-9bd1-4d5f-bb86-f
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response"
 } -->

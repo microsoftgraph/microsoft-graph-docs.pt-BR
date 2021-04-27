@@ -1,16 +1,16 @@
 ---
 title: 'message: createReplyAll'
-description: 'Criar um rascunho de uma mensagem de resposta a todos para incluir um comentário ou atualizar as propriedades da mensagem, '
+description: 'Crie um rascunho de uma mensagem de resposta-tudo para incluir um comentário ou atualizar quaisquer propriedades de mensagem, '
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 593024ee53e739b0651646309b21e20934a33940
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ac0e9047933d51773601d64aff8970758f36a171
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132801"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052156"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -22,9 +22,9 @@ Crie uma mensagem para responder a todos de rascunho para incluir um comentário
 
 **Observação**
 
-- Você pode especificar um comentário ou a **propriedade do** corpo do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Se a **propriedade replyTo** for especificada na mensagem original, por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta aos destinatários no  
-**Propriedades replyTo** **e toRecipients,** e não os destinatários nas propriedades **from** **e toRecipients.** 
+- Você pode especificar um comentário ou a **propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
+- Se a **propriedade replyTo** for especificada na mensagem original, por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deverá enviar a resposta aos destinatários no  
+**propriedades replyTo** **e toRecipients,** e não os destinatários nas propriedades **from** **e toRecipients.** 
 
 
 ## <a name="permissions"></a>Permissões
@@ -63,7 +63,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir cria um rascunho para responder a todos e adiciona um anexo e comentar tudo em uma **chamada createReplyAll.**
+O exemplo a seguir cria um rascunho para responder a todos e adiciona um anexo e um comentário em **uma chamada createReplyAll.**
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
@@ -109,7 +109,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

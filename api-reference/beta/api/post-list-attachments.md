@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 633da99ef94b980ce57a4f362cade31a26d4f054
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 86ea62f245e36bee9a3499946f7a3eb80249d368
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962742"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049146"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Obter os anexos de uma [postagem](../resources/post.md) em um [conversationThread](../resources/conversationthread.md) de um grupo. A especificação da [conversa](../resources/conversation.md) pai é opcional.
+Obter os anexos de uma [postagem](../resources/post.md) em [uma conversaThread](../resources/conversationthread.md) de um grupo. Especificar a conversa [pai](../resources/conversation.md) é opcional.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +39,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Em particular, você pode usar o $expand parâmetro de consulta para incluir todos os anexos de postagem embutidos com o restante das propriedades post. Por exemplo:
+Em particular, você pode usar o parâmetro $expand de consulta para incluir todos os anexos de postagem em linha com o restante das propriedades de postagem. Por exemplo:
 
 <!-- { "blockType": "ignored" } -->
 ```
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "post_get_attachments_beta",

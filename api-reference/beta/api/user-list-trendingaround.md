@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 139416e3b21166f50e2f9fed529a7efe6b4dbd3e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b1594d031f9ff007a87243ccf0cf481022b48d89
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720673"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052583"
 ---
 # <a name="list-trendingaround"></a>Listar tendênciasAround
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sites.Read.All |
+|Application | Sites.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```http
@@ -60,7 +60,7 @@ Se tiver êxito, este método retornará um código de resposta 200 OK e uma col
 GET https://graph.microsoft.com/beta/me/trendingAround
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

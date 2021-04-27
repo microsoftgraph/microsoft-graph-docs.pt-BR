@@ -1,16 +1,16 @@
 ---
 title: Excluir schedulingGroup
-description: Marcar um modo de agendamento como inativo Configurando sua propriedade IsActive
+description: Marcar um schedulingGroup como inativo definindo sua propriedade isActive
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 793b6ed249d5eb3dfde6b3667c4bfaafe89a9fde
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fa82dc1c8c8b677a7864ed67f3eb4b66a123ba18
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972065"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052002"
 ---
 # <a name="delete-schedulinggroup"></a>Excluir schedulingGroup
 
@@ -18,8 +18,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Marcar um modo de [agendamento](../resources/schedulinggroup.md) como inativo, definindo sua propriedade **IsActive** .
-Esse método não [Remove o enhorário do plano.](../resources/schedulinggroup.md) As instâncias de [alternância](../resources/shift.md) existentes atribuídas ao grupo de agendamento permanecem como parte do grupo.
+Marque um [schedulingGroup](../resources/schedulinggroup.md) como inativo definindo sua **propriedade isActive.**
+Este método não remove o [scheduleingGroup](../resources/schedulinggroup.md) da agenda. As instâncias [de turno](../resources/shift.md) existentes atribuídas ao grupo de agendamento permanecem parte do grupo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Application | Schedule.ReadWrite.All |
 
@@ -89,7 +89,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

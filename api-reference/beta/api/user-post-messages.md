@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fcf8ad8a4b8016f972ee8844a959d0a3359a2db9
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 60663e9ffa2c0b016d5667e7ce03f6eff151865e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135160"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049615"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -23,7 +23,7 @@ Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualqu
 Ao criar o rascunho na mesma **chamada POST,** você pode:
 
 - Incluir um [anexo](../resources/attachment.md) 
-- Use uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem
+- Usar uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,14 +53,14 @@ No corpo da solicitação, fornece uma representação JSON do [objeto message.]
 
 Se você quiser usar a **menção** para chamar outro usuário na nova mensagem:
 
-- Inclua a propriedade **required toRecipients,** a propriedade mentions e quaisquer propriedades de mensagem que podem ser **escritas** no corpo da solicitação.
-- Para cada menção na **propriedade menções,** você deve especificar a **propriedade mencionada.**
+- Inclua a propriedade **required toRecipients,** a propriedade **mentions** e quaisquer propriedades de mensagem writable no corpo da solicitação.
+- Para cada menção na **propriedade mentions,** você deve especificar a **propriedade** mencionada.
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados à mensagem ao criá-la.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [de](../resources/message.md) mensagem no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
@@ -111,7 +111,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
 ##### <a name="response-1"></a>Resposta 1
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -181,7 +181,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>Solicitação 2
-O próximo exemplo mostra um rascunho de email de Randi Randi Ltd para Sam australiana. A mensagem também inclui uma menção de outro usuário, Dana Swope.
+O próximo exemplo mostra um rascunho de email de Randi Welch para Samantha Booth. A mensagem também inclui uma menção de outra usuário, Dana Swope.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
 

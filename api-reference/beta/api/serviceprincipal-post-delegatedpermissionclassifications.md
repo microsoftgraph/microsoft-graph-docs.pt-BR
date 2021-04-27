@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 631c68bb6986362c5c9743dd59b2d51809d5bbfb
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7d286984628d52948593671137e9fecdf173da31
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134187"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050854"
 ---
 # <a name="create-delegatedpermissionclassification"></a>Criar delegatedPermissionClassification
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Classifique uma permissão delegada adicionando [uma delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) à [servicePrincipal](../resources/servicePrincipal.md) que representa a API.
+Classifique uma permissão delegada adicionando [uma delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) ao [servicePrincipal](../resources/servicePrincipal.md) que representa a API.
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,11 +46,11 @@ POST /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de [um objeto delegatedPermissionClassification.](../resources/delegatedpermissionclassification.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto delegatedPermissionClassification.](../resources/delegatedpermissionclassification.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -98,7 +98,7 @@ Content-Type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

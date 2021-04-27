@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a34939a59ca265fb7c50b82cf662095052763950
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 32aad6e260b0eeb4df87cd9daa51f59d0fa82416
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761434"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049174"
 ---
 # <a name="get-passwordauthenticationmethod"></a>Obter passwordAuthenticationMethod
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordMethods/{id}
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 20cb026334e88dc6113db579be07a9de01dfaaa7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bf5674126b62a1933899c92da7573d52215f59b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441386"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049867"
 ---
 # <a name="get-printusagesummarybyuser"></a>Obter UsageSummaryByUser
 
@@ -29,7 +29,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |:---------------|:--------------------------------------------|
 |Delegada (conta corporativa ou de estudante)| Reports.Read.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Application|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByUse
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

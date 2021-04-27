@@ -1,16 +1,16 @@
 ---
 title: Criar turno
-description: Criar um novo turno.
+description: Crie um novo turno.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 113d51f78edec3ca26bbe898b1a5d53664363deb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e74b00a6ec3563d5ee47b13fb4d082d6a0e9bfaf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981829"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052730"
 ---
 # <a name="create-shift"></a>Criar turno
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar uma nova instância de [turno](../resources/shift.md) em um [cronograma](../resources/schedule.md).
+Crie uma nova [instância de turno](../resources/shift.md) em um [agendamento](../resources/schedule.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule. ReadWrite. All * |
+|Application | Schedule.ReadWrite.All* |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,7 +47,7 @@ POST /teams/{teamId}/schedule/shifts
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [Shift](../resources/shift.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [shift](../resources/shift.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -125,7 +125,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

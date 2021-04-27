@@ -5,12 +5,12 @@ localization_priority: Priority
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 292634327717d720a80d55065041de7571660858
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9007795bfb04f8484be61d13a5da17602df80337
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970096"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052639"
 ---
 # <a name="user-findrooms"></a>user: findRooms
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/me/findRooms
 ##### <a name="response-1"></a>Resposta 1
 Veja a seguir um exemplo da resposta. 
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "user_get_rooms_in_tenant",
@@ -186,7 +186,7 @@ GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@conto
 ##### <a name="response-2"></a>Resposta 2
 Veja a seguir um exemplo da resposta. 
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "user_get_rooms_from_specific_list",

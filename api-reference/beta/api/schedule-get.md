@@ -1,31 +1,31 @@
 ---
-title: Obter cronograma
-description: Recupere as propriedades e os relacionamentos de um objeto **Schedule** .
+title: Obter agendamento
+description: Recupere as propriedades e as relações de um **objeto schedule.**
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8f03ccbe900db7d4d919db2db992f269b0ff2acd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e0bcc91939ac53adbefe16a97986239fec955ab3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979142"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049034"
 ---
-# <a name="get-schedule"></a>Obter cronograma
+# <a name="get-schedule"></a>Obter agendamento
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [Schedule](../resources/schedule.md) .
+Recupere as propriedades e as relações de um [objeto schedule.](../resources/schedule.md)
 
-O processo de criação de agendamento está em conformidade com a [diretriz de uma API para operações de longa duração com base em recursos (relo)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
-Quando os clientes usam o [método Put](team-put-schedule.md), se a agenda for provisionada, a operação atualizará a agenda; caso contrário, a operação iniciará o processo de provisionamento de agendamento em segundo plano.
+O processo de criação de agendamento está em conformidade com a diretriz da API One para operações de longa execução [(RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)baseadas em recursos.
+Quando os clientes usam o [método PUT](team-put-schedule.md), se o agendamento for provisionado, a operação atualiza o cronograma; caso contrário, a operação inicia o processo de provisionamento de agendamento em segundo plano.
 
-Durante o provisionamento de agendamento, os clientes podem usar o método GET para obter o agendamento e observar a `provisionStatus` propriedade para o estado atual do provisionamento. Se o provisionamento falhar, os clientes poderão obter informações adicionais da `provisionStatusCode` propriedade.
+Durante o provisionamento de agendamento, os clientes podem usar o método GET para obter o agendamento e olhar para a propriedade para o estado `provisionStatus` atual do provisionamento. Se o provisionamento falhar, os clientes poderão obter informações adicionais da `provisionStatusCode` propriedade.
 
-Os clientes também podem inspecionar a configuração do cronograma.
+Os clientes também podem inspecionar a configuração da agenda.
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,9 +33,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule. Read. All, Schedule. ReadWrite. All |
+|Application | Schedule.Read.All, Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,7 +47,7 @@ GET /teams/{teamId}/schedule
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte a parâmetros de consulta OData para personalizar a resposta.
+Este método não dá suporte a parâmetros de consulta OData para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Schedule](../resources/schedule.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [schedule](../resources/schedule.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

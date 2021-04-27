@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1de486edef0764b528491ed63bd5fd01d2e94895
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0686e0a6b8ac6bec26a2f30d8e52e59b52f3a192
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721492"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051701"
 ---
 # <a name="list-scopedadministratorof"></a>Listar scopedAdministratorOf
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

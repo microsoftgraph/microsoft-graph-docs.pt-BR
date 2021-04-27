@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 323babcfeeb407f7dcfb94445c7cfa65102fde53
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: e5255c8dfd8e80b88720cd13a208fac89c928a2d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50576544"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051827"
 ---
 # <a name="create-tablecolumn"></a>Criar TableColumn
 
@@ -91,7 +91,7 @@ Content-length: 81
 
 No corpo da solicitação, fornece uma representação JSON do [objeto WorkbookTableColumn.](../resources/workbooktablecolumn.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

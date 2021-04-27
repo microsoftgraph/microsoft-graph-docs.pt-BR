@@ -2,23 +2,22 @@
 title: Obter temporaryAccessPassAuthenticationMethodConfiguration
 description: Leia as propriedades e as relações de um objeto temporaryAccessPassAuthenticationMethodConfiguration.
 author: inbarckms
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 08a20da2f4c14a3d3a6d3581765eb5e168e8b721
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: b0874968f9cce1b60a3b0f85a68ac4ccbf9a887e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759507"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049643"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>Obter temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um objeto [temporaryAccessPassAuthenticationMethodConfiguration,](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) que representa a política de método de autenticação Passagem de Acesso Temporário para o locatário do Azure Active Directory (Azure AD). [](../resources/authenticationmethodspolicies-overview.md)
+Leia as propriedades e as relações de um [objeto temporaryAccessPassAuthenticationMethodConfiguration,](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) que representa a política de método de autenticação Passagem de Acesso Temporário para o locatário do Azure Active Directory (Azure AD). [](../resources/authenticationmethodspolicies-overview.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

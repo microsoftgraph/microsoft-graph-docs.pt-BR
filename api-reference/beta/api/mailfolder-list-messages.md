@@ -1,16 +1,16 @@
 ---
 title: Listar mensagens
-description: Lista todas as mensagens na caixa de correio do usuário ou as mensagens em uma pasta especificada na caixa de correio ou unidade.
+description: Lista todas as mensagens na caixa de correio do usuário de entrada ou essas mensagens em uma pasta especificada na caixa de correio ou unidade.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f4f81010343e89d5f90af69290cebda85fa5953e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4dbad3f465091828b718c8467a5b6e75356f7eee
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136907"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049258"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lista todas as mensagens na caixa de correio do usuário especificado ou as mensagens em uma pasta especificada na caixa de correio.
+Lista todas as mensagens na caixa de correio do usuário especificado ou essas mensagens em uma pasta especificada na caixa de correio.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

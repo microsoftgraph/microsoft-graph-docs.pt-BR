@@ -1,16 +1,16 @@
 ---
 title: Listar taskFolders
-description: Obter pastas de tarefas do Outlook em um outlookTaskGroup específico.
+description: Obter Outlook pastas de tarefas em um outlookTaskGroup específico.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc83f3d5c17f5d2f40b2d13440633b088674577d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bb6d875d1c8f2999c8ace5a69dad0f31cd2d24f9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953258"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049223"
 ---
 # <a name="list-taskfolders-deprecated"></a>Listar taskFolders (preterido)
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Obter pastas de tarefas do Outlook em um [outlookTaskGroup específico.](../resources/outlooktaskgroup.md)
+Obter Outlook pastas de tarefas em um [outlookTaskGroup específico.](../resources/outlooktaskgroup.md)
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=/
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

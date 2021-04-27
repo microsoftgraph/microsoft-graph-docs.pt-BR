@@ -1,16 +1,16 @@
 ---
 title: Criar MailFolder
-description: Use essa API para criar uma nova mailFolder filha.
+description: Use essa API para criar um novo mailFolder filho.
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 11a64624671a326876fa9ad3556fba6e46860bf7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8d79b9817332c7aea773ad9062efd3a4718dd197
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136901"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049251"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar uma nova [mailFolder filha.](../resources/mailfolder.md)
+Use essa API para criar um novo [mailFolder filho.](../resources/mailfolder.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -58,7 +58,7 @@ No corpo da solicitação, forneça um objeto JSON com os parâmetros a seguir. 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta e um `201 Created` [objeto mailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um objeto [mailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -104,7 +104,7 @@ Content-length: 159
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

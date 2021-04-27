@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b731778c096470f23799540919ff93f9a8e52853
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 020513c2eb1fdc8b05d49b1f34979dcfecf17623
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508334"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049916"
 ---
 # <a name="create-featurerolloutpolicy"></a>Criar featureRolloutPolicy
 
@@ -22,14 +22,14 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [um feat
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|displayName |string |O nome de exibição dessa política de lançamento de recursos.|
+|displayName |cadeia de caracteres |O nome de exibição dessa política de lançamento de recursos.|
 |feature |stagedFeatureName |O recurso que seria lançado usando essa política.|
-|isEnabled |string |Indica se a adoção de recursos está habilitada.|
+|isEnabled |cadeia de caracteres |Indica se a adoção de recursos está habilitada.|
 
 ## <a name="response"></a>Resposta
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

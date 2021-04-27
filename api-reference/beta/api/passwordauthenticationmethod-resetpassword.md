@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 71f144592ec2d0d99eccbfa2d0627f74982a5fa3
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 392629ed4cc686855b1ec31aba09f1b70a62c5a9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761420"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049167"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Inicie uma redefinição da senha associada a um objeto de método [de autenticação de](../resources/passwordauthenticationmethod.md) senha. Isso só pode ser feito por um administrador com permissões apropriadas e não pode ser executado na conta de um usuário.
 
-Esse fluxo grava a nova senha no Azure Active Directory e a pressiona para o Active Directory local, se configurada usando writeback de senha. O administrador pode fornecer uma nova senha ou fazer com que o sistema gere uma. O usuário é solicitado a alterar a senha na próxima vez que entrar.
+Esse fluxo grava a nova senha para Azure Active Directory e a pressiona para o Active Directory local, se configurada usando writeback de senha. O administrador pode fornecer uma nova senha ou fazer com que o sistema gere uma. O usuário é solicitado a alterar a senha na próxima vez que entrar.
 
 Essa redefinição é uma operação de longa duração e retornará um link no header onde o chamador pode verificar periodicamente o `Location` status da redefinição.
 
@@ -61,7 +61,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|newPassword|Cadeia de Caracteres|A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida. Se for omitido para uma senha somente na nuvem, o sistema retornará uma senha gerada pelo sistema. Esta é uma cadeia de caracteres unicode sem outra codificação. Ele é validado no sistema de senhas proibido do locatário antes da aceitação e deve seguir os requisitos de senha na nuvem e/ou local do locatário.|
+|newPassword|String|A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida. Se for omitido para uma senha somente na nuvem, o sistema retornará uma senha gerada pelo sistema. Esta é uma cadeia de caracteres unicode sem outra codificação. Ele é validado no sistema de senhas proibido do locatário antes da aceitação e deve seguir os requisitos de senha na nuvem e/ou local do locatário.|
 
 ## <a name="response"></a>Resposta
 
@@ -123,7 +123,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -186,7 +186,7 @@ POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authenticat
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

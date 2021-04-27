@@ -2,16 +2,15 @@
 title: Excluir temporaryAccessPassAuthenticationMethod
 description: Exclui um objeto temporaryAccessPassAuthenticationMethod.
 author: inbarckMS
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 590a0d3d7581b0d8f1b109351c9c563812a973e6
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 5c9046137e5c8de5420a14f5c313c30e5f47fac1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761504"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049678"
 ---
 # <a name="delete-temporaryaccesspassauthenticationmethod"></a>Excluir temporaryAccessPassAuthenticationMethod
 Namespace: microsoft.graph

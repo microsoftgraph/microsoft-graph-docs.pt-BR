@@ -1,16 +1,16 @@
 ---
 title: 'message: createReply'
-description: 'Criar um rascunho de uma mensagem de resposta para incluir um comentário ou atualizar as propriedades da mensagem '
+description: 'Criar um rascunho de uma mensagem de resposta para incluir um comentário ou atualizar quaisquer propriedades de mensagem '
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d2943f5a822ce02c3fc4c8fd1e6ae34e6d6f7b98
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f952621dce25b4aa1525b4a7fafb21ca231259fa
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134726"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052163"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -22,8 +22,8 @@ Crie uma mensagem de resposta de rascunho para incluir um comentário ou atualiz
 
 **Observação**
 
-- Você pode especificar um comentário ou a **propriedade do** corpo do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Se **replyTo** for especificado na mensagem original, por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta para os destinatários em **replyTo**, e não os destinatários de **.** 
+- Você pode especificar um comentário ou a **propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
+- Se **replyTo** for especificado na mensagem original, por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deverá enviar a resposta aos destinatários em **replyTo** e não aos destinatários de **.** 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -114,7 +114,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

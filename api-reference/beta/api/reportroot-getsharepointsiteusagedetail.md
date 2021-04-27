@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: be28e66a48462ec2bda64c3ae66b1f0cb6059548
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: b58d90ef3be8a723190909ee960f659de6f6c58b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115196"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049062"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtenha dados sobre o uso do site do SharePoint.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte [relatórios do Microsoft 365 - uso do site do SharePoint.](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
+> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - SharePoint uso do site](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
 ## <a name="permissions"></a>Permissões
 
@@ -54,7 +54,7 @@ Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetro
 
 > **Observação:** você precisa definir o período ou data na URL.
 
-Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é texto/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta $format OData definido como text/csv ou application/json.
+Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -78,18 +78,18 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 - Nome de exibição do proprietário
 - Excluído
 - Data da última atividade
-- Id do rótulo de sensibilidade do site
-- Compartilhamento externo
-- Política de dispositivo nãomanageda
+- ID do rótulo de sensibilidade do site
+- Compartilhamento Externo
+- Política de dispositivo sem gestão
 - Localização Geográfica
 - Contagem de arquivos
 - Contagem de arquivos ativos
 - Contagem de visualização de página
 - Contagem de páginas visitadas
 - Contagem de links anônimos
-- Contagem de links da empresa
+- Contagem de vínculos da empresa
 - Link seguro para contagem de convidados
-- Link seguro para contagem de membros
+- Link Seguro para Contagem de Membros
 - Armazenamento utilizado (bytes)
 - Armazenamento alocado (bytes)
 - Modelo de Web raiz
@@ -98,15 +98,15 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 
 ### <a name="json"></a>JSON
 
-Se bem-sucedido, este método retorna um código de resposta e um `200 OK` **[objeto sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md)** no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` **[objeto sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md)** no corpo da resposta.
 
-O tamanho de página padrão para essa solicitação é de 200 itens.
+O tamanho padrão da página para essa solicitação é de 200 itens.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="csv"></a>CSV
 
-A seguir está um exemplo que saída CSV.
+A seguir, um exemplo que dá saída ao CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -152,7 +152,7 @@ Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity
 
 ### <a name="json"></a>JSON
 
-A seguir está um exemplo que retorna JSON.
+A seguir, um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -173,7 +173,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

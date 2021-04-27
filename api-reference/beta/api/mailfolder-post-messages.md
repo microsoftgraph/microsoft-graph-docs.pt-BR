@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 28e335eeb5e8a8128794dcd5fd166bebc395677c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b63c00b892b4f9cf2ecdc979c06450590379e255
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136896"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049244"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -89,7 +89,7 @@ Content-length: 248
 
 No corpo da solicitação, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
