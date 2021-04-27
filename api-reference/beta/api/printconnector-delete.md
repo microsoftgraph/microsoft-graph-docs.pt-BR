@@ -1,63 +1,63 @@
 ---
 title: Excluir conector
-description: Exclua (unregister) um conector.
+description: Excluir (não registro) um conector.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f7b19cf15e7b08ae1d4c34011c8b5b4f5a41b178
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 99a8a4d0da5f3abb4beccfc1a196b8567f690303
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873560"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053612"
 ---
-# <a name="delete-connector"></a><span data-ttu-id="a14c5-103">Excluir conector</span><span class="sxs-lookup"><span data-stu-id="a14c5-103">Delete connector</span></span>
+# <a name="delete-connector"></a><span data-ttu-id="f6a4a-103">Excluir conector</span><span class="sxs-lookup"><span data-stu-id="f6a4a-103">Delete connector</span></span>
 
-<span data-ttu-id="a14c5-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a14c5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f6a4a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f6a4a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a14c5-105">Exclua (unregister) **um printConnector**.</span><span class="sxs-lookup"><span data-stu-id="a14c5-105">Delete (unregister) a **printConnector**.</span></span>
+<span data-ttu-id="f6a4a-105">Excluir (não registro) um **printConnector**.</span><span class="sxs-lookup"><span data-stu-id="f6a4a-105">Delete (unregister) a **printConnector**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a14c5-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a14c5-106">Permissions</span></span>
-<span data-ttu-id="a14c5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a14c5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f6a4a-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f6a4a-106">Permissions</span></span>
+<span data-ttu-id="f6a4a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f6a4a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="a14c5-109">Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="a14c5-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="a14c5-110">O usuário assinado deve ser um Administrador [de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)</span><span class="sxs-lookup"><span data-stu-id="a14c5-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="f6a4a-109">Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="f6a4a-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="f6a4a-110">O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)</span><span class="sxs-lookup"><span data-stu-id="f6a4a-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="a14c5-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a14c5-111">Permission type</span></span> | <span data-ttu-id="a14c5-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a14c5-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="f6a4a-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f6a4a-111">Permission type</span></span> | <span data-ttu-id="f6a4a-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f6a4a-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="a14c5-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a14c5-113">Delegated (work or school account)</span></span>| <span data-ttu-id="a14c5-114">PrintConnector.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a14c5-114">PrintConnector.ReadWrite.All</span></span> |
-|<span data-ttu-id="a14c5-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a14c5-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a14c5-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a14c5-116">Not Supported.</span></span>|
-|<span data-ttu-id="a14c5-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a14c5-117">Application</span></span>|<span data-ttu-id="a14c5-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a14c5-118">Not Supported.</span></span>|
+|<span data-ttu-id="f6a4a-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f6a4a-113">Delegated (work or school account)</span></span>| <span data-ttu-id="f6a4a-114">PrintConnector.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f6a4a-114">PrintConnector.ReadWrite.All</span></span> |
+|<span data-ttu-id="f6a4a-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f6a4a-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f6a4a-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f6a4a-116">Not Supported.</span></span>|
+|<span data-ttu-id="f6a4a-117">Application</span><span class="sxs-lookup"><span data-stu-id="f6a4a-117">Application</span></span>|<span data-ttu-id="f6a4a-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f6a4a-118">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a14c5-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a14c5-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f6a4a-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f6a4a-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /print/connectors/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="a14c5-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a14c5-120">Request headers</span></span>
-| <span data-ttu-id="a14c5-121">Nome</span><span class="sxs-lookup"><span data-stu-id="a14c5-121">Name</span></span>          | <span data-ttu-id="a14c5-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="a14c5-122">Description</span></span>   |
+## <a name="request-headers"></a><span data-ttu-id="f6a4a-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f6a4a-120">Request headers</span></span>
+| <span data-ttu-id="f6a4a-121">Nome</span><span class="sxs-lookup"><span data-stu-id="f6a4a-121">Name</span></span>          | <span data-ttu-id="f6a4a-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="f6a4a-122">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="a14c5-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="a14c5-123">Authorization</span></span> | <span data-ttu-id="a14c5-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a14c5-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f6a4a-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="f6a4a-123">Authorization</span></span> | <span data-ttu-id="f6a4a-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f6a4a-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a14c5-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a14c5-126">Request body</span></span>
-<span data-ttu-id="a14c5-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a14c5-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f6a4a-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f6a4a-126">Request body</span></span>
+<span data-ttu-id="f6a4a-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f6a4a-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a14c5-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="a14c5-128">Response</span></span>
-<span data-ttu-id="a14c5-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a14c5-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f6a4a-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="f6a4a-128">Response</span></span>
+<span data-ttu-id="f6a4a-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f6a4a-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-### <a name="error-conditions-and-messages"></a><span data-ttu-id="a14c5-131">Condições e mensagens de erro</span><span class="sxs-lookup"><span data-stu-id="a14c5-131">Error conditions and messages</span></span>
+### <a name="error-conditions-and-messages"></a><span data-ttu-id="f6a4a-131">Condições de erro e mensagens</span><span class="sxs-lookup"><span data-stu-id="f6a4a-131">Error conditions and messages</span></span>
 
-|<span data-ttu-id="a14c5-132">Cenário</span><span class="sxs-lookup"><span data-stu-id="a14c5-132">Scenario</span></span>|<span data-ttu-id="a14c5-133">Método</span><span class="sxs-lookup"><span data-stu-id="a14c5-133">Method</span></span>|<span data-ttu-id="a14c5-134">Código</span><span class="sxs-lookup"><span data-stu-id="a14c5-134">Code</span></span>|<span data-ttu-id="a14c5-135">Mensagem</span><span class="sxs-lookup"><span data-stu-id="a14c5-135">Message</span></span>|
+|<span data-ttu-id="f6a4a-132">Cenário</span><span class="sxs-lookup"><span data-stu-id="f6a4a-132">Scenario</span></span>|<span data-ttu-id="f6a4a-133">Método</span><span class="sxs-lookup"><span data-stu-id="f6a4a-133">Method</span></span>|<span data-ttu-id="f6a4a-134">Código</span><span class="sxs-lookup"><span data-stu-id="f6a4a-134">Code</span></span>|<span data-ttu-id="f6a4a-135">Mensagem</span><span class="sxs-lookup"><span data-stu-id="f6a4a-135">Message</span></span>|
 |--------|------|----|-------|
-|<span data-ttu-id="a14c5-136">O usuário tenta excluir um conector com uma ou mais impressoras registradas</span><span class="sxs-lookup"><span data-stu-id="a14c5-136">User attempts to delete a connector that has one or more printers registered</span></span>|<span data-ttu-id="a14c5-137">EXCLUIR</span><span class="sxs-lookup"><span data-stu-id="a14c5-137">DELETE</span></span>|<span data-ttu-id="a14c5-138">409</span><span class="sxs-lookup"><span data-stu-id="a14c5-138">409</span></span>|<span data-ttu-id="a14c5-139">Antes de excluir o conector, não faça o registro das impressoras associadas.</span><span class="sxs-lookup"><span data-stu-id="a14c5-139">Before deleting the connector, please unregister the associated printers.</span></span>|
+|<span data-ttu-id="f6a4a-136">O usuário tenta excluir um conector que tenha uma ou mais impressoras registradas</span><span class="sxs-lookup"><span data-stu-id="f6a4a-136">User attempts to delete a connector that has one or more printers registered</span></span>|<span data-ttu-id="f6a4a-137">DELETE</span><span class="sxs-lookup"><span data-stu-id="f6a4a-137">DELETE</span></span>|<span data-ttu-id="f6a4a-138">409</span><span class="sxs-lookup"><span data-stu-id="f6a4a-138">409</span></span>|<span data-ttu-id="f6a4a-139">Antes de excluir o conector, desassocie o registro das impressoras associadas.</span><span class="sxs-lookup"><span data-stu-id="f6a4a-139">Before deleting the connector, please unregister the associated printers.</span></span>|
 
-## <a name="example"></a><span data-ttu-id="a14c5-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a14c5-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a14c5-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a14c5-141">Request</span></span>
-<span data-ttu-id="a14c5-142">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a14c5-142">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f6a4a-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f6a4a-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f6a4a-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f6a4a-141">Request</span></span>
+<span data-ttu-id="f6a4a-142">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f6a4a-142">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a14c5-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="a14c5-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f6a4a-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="f6a4a-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_connector"
@@ -65,27 +65,27 @@ DELETE /print/connectors/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/print/connectors/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="a14c5-144">C#</span><span class="sxs-lookup"><span data-stu-id="a14c5-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f6a4a-144">C#</span><span class="sxs-lookup"><span data-stu-id="f6a4a-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-connector-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a14c5-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a14c5-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f6a4a-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f6a4a-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-connector-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a14c5-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a14c5-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f6a4a-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f6a4a-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-connector-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="a14c5-147">Java</span><span class="sxs-lookup"><span data-stu-id="a14c5-147">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="f6a4a-147">Java</span><span class="sxs-lookup"><span data-stu-id="f6a4a-147">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-connector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="a14c5-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="a14c5-148">Response</span></span>
-<span data-ttu-id="a14c5-149">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a14c5-149">The following is an example of the response.</span></span>
-><span data-ttu-id="a14c5-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a14c5-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f6a4a-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="f6a4a-148">Response</span></span>
+<span data-ttu-id="f6a4a-149">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f6a4a-149">The following is an example of the response.</span></span>
+><span data-ttu-id="f6a4a-150">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="f6a4a-150">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

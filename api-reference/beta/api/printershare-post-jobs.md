@@ -5,58 +5,58 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 643038023af0a805e32d88ea6d315a111541d2e8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3d5d248e75472d7c0d60b43e5242d1668b4a5119
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955608"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055306"
 ---
-# <a name="create-printjob-for-a-printershare"></a><span data-ttu-id="57576-103">Criar printJob para uma printerShare</span><span class="sxs-lookup"><span data-stu-id="57576-103">Create printJob for a printerShare</span></span>
+# <a name="create-printjob-for-a-printershare"></a><span data-ttu-id="d9a57-103">Criar printJob para uma printerShare</span><span class="sxs-lookup"><span data-stu-id="d9a57-103">Create printJob for a printerShare</span></span>
 
-<span data-ttu-id="57576-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="57576-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d9a57-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d9a57-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="57576-105">Criar um novo [printJob](../resources/printJob.md) para uma [printerShare](../resources/printerShare.md).</span><span class="sxs-lookup"><span data-stu-id="57576-105">Create a new [printJob](../resources/printJob.md) for a [printerShare](../resources/printerShare.md).</span></span> 
+<span data-ttu-id="d9a57-105">Criar um novo [printJob](../resources/printJob.md) para uma [printerShare](../resources/printerShare.md).</span><span class="sxs-lookup"><span data-stu-id="d9a57-105">Create a new [printJob](../resources/printJob.md) for a [printerShare](../resources/printerShare.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="57576-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="57576-106">Permissions</span></span>
-<span data-ttu-id="57576-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="57576-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d9a57-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d9a57-106">Permissions</span></span>
+<span data-ttu-id="d9a57-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d9a57-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="57576-109">Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda [acesso a Get printerShare.](printerShare-get.md)</span><span class="sxs-lookup"><span data-stu-id="57576-109">In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printerShare](printerShare-get.md) access.</span></span> <span data-ttu-id="57576-110">O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)</span><span class="sxs-lookup"><span data-stu-id="57576-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="d9a57-109">Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda [acesso a Get printerShare.](printerShare-get.md)</span><span class="sxs-lookup"><span data-stu-id="d9a57-109">In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printerShare](printerShare-get.md) access.</span></span> <span data-ttu-id="d9a57-110">O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)</span><span class="sxs-lookup"><span data-stu-id="d9a57-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="57576-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="57576-111">Permission type</span></span> | <span data-ttu-id="57576-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="57576-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="d9a57-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d9a57-111">Permission type</span></span> | <span data-ttu-id="d9a57-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d9a57-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="57576-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="57576-113">Delegated (work or school account)</span></span>| <span data-ttu-id="57576-114">PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="57576-114">PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
-|<span data-ttu-id="57576-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="57576-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="57576-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="57576-116">Not Supported.</span></span>|
-|<span data-ttu-id="57576-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="57576-117">Application</span></span>| <span data-ttu-id="57576-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="57576-118">Not Supported.</span></span> |
+|<span data-ttu-id="d9a57-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d9a57-113">Delegated (work or school account)</span></span>| <span data-ttu-id="d9a57-114">PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9a57-114">PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
+|<span data-ttu-id="d9a57-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d9a57-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d9a57-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d9a57-116">Not Supported.</span></span>|
+|<span data-ttu-id="d9a57-117">Application</span><span class="sxs-lookup"><span data-stu-id="d9a57-117">Application</span></span>| <span data-ttu-id="d9a57-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d9a57-118">Not Supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="57576-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="57576-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d9a57-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d9a57-119">HTTP request</span></span>
 
 ```http
 POST print/shares/{id}/jobs
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="57576-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="57576-120">Request headers</span></span>
-| <span data-ttu-id="57576-121">Nome</span><span class="sxs-lookup"><span data-stu-id="57576-121">Name</span></span>      |<span data-ttu-id="57576-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="57576-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d9a57-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d9a57-120">Request headers</span></span>
+| <span data-ttu-id="d9a57-121">Nome</span><span class="sxs-lookup"><span data-stu-id="d9a57-121">Name</span></span>      |<span data-ttu-id="d9a57-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="d9a57-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="57576-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="57576-123">Authorization</span></span> | <span data-ttu-id="57576-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="57576-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="57576-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="57576-126">Content-type</span></span>  | <span data-ttu-id="57576-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="57576-p104">application/json. Required.</span></span>|
+| <span data-ttu-id="d9a57-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="d9a57-123">Authorization</span></span> | <span data-ttu-id="d9a57-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d9a57-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d9a57-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="d9a57-126">Content-type</span></span>  | <span data-ttu-id="d9a57-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d9a57-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="57576-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="57576-129">Request body</span></span>
-<span data-ttu-id="57576-130">No corpo da solicitação, fornece uma representação JSON de um [objeto printJob.](../resources/printjob.md)</span><span class="sxs-lookup"><span data-stu-id="57576-130">In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object.</span></span>
-<span data-ttu-id="57576-131">O objeto printJob deve conter apenas a **configuração**.</span><span class="sxs-lookup"><span data-stu-id="57576-131">The printJob object should only contain **configuration**.</span></span> <span data-ttu-id="57576-132">Todas as propriedades de **configuração** são anuladas.</span><span class="sxs-lookup"><span data-stu-id="57576-132">All properties of **configuration** are nullable.</span></span>
-<span data-ttu-id="57576-133">Todos os outros campos, incluindo IDs de trabalho e documento, são definidos automaticamente durante a criação de recursos.</span><span class="sxs-lookup"><span data-stu-id="57576-133">All other fields including job and document IDs are set automatically during resource creation.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d9a57-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d9a57-129">Request body</span></span>
+<span data-ttu-id="d9a57-130">No corpo da solicitação, fornece uma representação JSON de um [objeto printJob.](../resources/printjob.md)</span><span class="sxs-lookup"><span data-stu-id="d9a57-130">In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object.</span></span>
+<span data-ttu-id="d9a57-131">O objeto printJob deve conter apenas a **configuração**.</span><span class="sxs-lookup"><span data-stu-id="d9a57-131">The printJob object should only contain **configuration**.</span></span> <span data-ttu-id="d9a57-132">Todas as propriedades de **configuração** são anuladas.</span><span class="sxs-lookup"><span data-stu-id="d9a57-132">All properties of **configuration** are nullable.</span></span>
+<span data-ttu-id="d9a57-133">Todos os outros campos, incluindo IDs de trabalho e documento, são definidos automaticamente durante a criação de recursos.</span><span class="sxs-lookup"><span data-stu-id="d9a57-133">All other fields including job and document IDs are set automatically during resource creation.</span></span>
 
-<span data-ttu-id="57576-134">No momento, a Impressão Universal dá suporte a apenas **um objeto printDocument** por **printJob.**</span><span class="sxs-lookup"><span data-stu-id="57576-134">Right now, Universal Print supports only one **printDocument** per **printJob** object.</span></span>
+<span data-ttu-id="d9a57-134">No momento, a Impressão Universal dá suporte a apenas **um objeto printDocument** por **printJob.**</span><span class="sxs-lookup"><span data-stu-id="d9a57-134">Right now, Universal Print supports only one **printDocument** per **printJob** object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="57576-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="57576-135">Response</span></span>
-<span data-ttu-id="57576-136">Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto printJob](../resources/printjob.md) e [printDocument](../resources/printDocument.md) associado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="57576-136">If successful, this method returns a `201 Created` response code and a [printJob](../resources/printjob.md) object and associated [printDocument](../resources/printDocument.md) in the response body.</span></span> 
-## <a name="example"></a><span data-ttu-id="57576-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="57576-137">Example</span></span>
-### <a name="request"></a><span data-ttu-id="57576-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="57576-138">Request</span></span>
-<span data-ttu-id="57576-139">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="57576-139">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="d9a57-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="d9a57-135">Response</span></span>
+<span data-ttu-id="d9a57-136">Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto printJob](../resources/printjob.md) e [printDocument](../resources/printDocument.md) associado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d9a57-136">If successful, this method returns a `201 Created` response code and a [printJob](../resources/printjob.md) object and associated [printDocument](../resources/printDocument.md) in the response body.</span></span> 
+## <a name="example"></a><span data-ttu-id="d9a57-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d9a57-137">Example</span></span>
+### <a name="request"></a><span data-ttu-id="d9a57-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d9a57-138">Request</span></span>
+<span data-ttu-id="d9a57-139">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d9a57-139">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="57576-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="57576-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d9a57-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="d9a57-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_printjob_2"
@@ -99,19 +99,19 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="57576-141">C#</span><span class="sxs-lookup"><span data-stu-id="57576-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d9a57-141">C#</span><span class="sxs-lookup"><span data-stu-id="d9a57-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="57576-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="57576-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d9a57-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d9a57-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="57576-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="57576-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d9a57-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d9a57-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="57576-144">Java</span><span class="sxs-lookup"><span data-stu-id="57576-144">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="d9a57-144">Java</span><span class="sxs-lookup"><span data-stu-id="d9a57-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-printjob-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -120,9 +120,9 @@ Content-type: application/json
 
 ---
 
-### <a name="response"></a><span data-ttu-id="57576-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="57576-145">Response</span></span>
-<span data-ttu-id="57576-146">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="57576-146">The following is an example of the response.</span></span>
-><span data-ttu-id="57576-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="57576-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d9a57-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="d9a57-145">Response</span></span>
+<span data-ttu-id="d9a57-146">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d9a57-146">The following is an example of the response.</span></span>
+><span data-ttu-id="d9a57-147">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="d9a57-147">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
