@@ -1,20 +1,19 @@
 ---
-ms.author: yiwenwang
-title: Usar a API de Pesquisa da Microsoft no Microsoft Graph para pesquisar tipos personalizados
+title: Use a API de Pesquisa da Microsoft no Microsoft Graph pesquisar tipos personalizados
 description: Você pode usar a API de Pesquisa da Microsoft para importar dados externos por meio do [recurso externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) e executar consultas de pesquisa nesse conteúdo externo.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: c4e0b158356d3f26d8a0f36a7d7e86faeba96649
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: db80e90bf8ec6afc8b1b4a993f5c42be66a07e3d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471835"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031393"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Use a API de Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores do Microsoft Graph (visualização) 
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Use a API de Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores Graph Microsoft (visualização) 
 
-Use a API de Pesquisa da Microsoft para pesquisar o conteúdo ingerido e indexado pelos [conectores do Microsoft Graph.](/microsoftsearch/connectors-overview) O conteúdo é importado por meio de conectores [integrados fornecidos](/microsoftsearch/connectors-gallery) pela Microsoft ou por meio de conectores personalizados implementados usando a API de ingestão de conectores do [Microsoft Graph.](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
+Use a API de Pesquisa da Microsoft para pesquisar o conteúdo ingerido e indexado pelos conectores [Graph Microsoft.](/microsoftsearch/connectors-overview) O conteúdo é importado por meio de conectores [integrados fornecidos](/microsoftsearch/connectors-gallery) pela Microsoft ou por meio de conectores personalizados implementados usando a API de ingestão de conectores do [Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -38,7 +37,7 @@ Além disso, você pode agregar resultados de pesquisa com base em propriedades 
 
 ## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>Exemplo 1: Recuperar itens usando o Azure SQL conector integrado
 
-Neste exemplo, o conteúdo do banco de dados [AdventureWorks](/sql/samples/adventureworks-install-configure) foi ingerido usando o conector do Azure SQL integrado.
+Neste exemplo, o conteúdo do banco de dados [AdventureWorks](/sql/samples/adventureworks-install-configure) foi ingerido usando o conector SQL Azure integrado.
 
 ### <a name="request"></a>Solicitação
 
