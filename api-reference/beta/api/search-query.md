@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 346f6941d23387fce06f99ec4e7fcdf2907d0c0e
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 688fb39ef0c4170feb5e134e439e6b1c538ecbc6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921837"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053479"
 ---
 # <a name="searchentity-query"></a>searchEntity: consulta
 
@@ -22,14 +22,14 @@ Executa a consulta especificada no corpo da solicitação. Os resultados da pesq
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference). 
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -119,7 +119,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -162,8 +162,8 @@ Content-type: application/json
 ## <a name="see-also"></a>Confira também
 - Pesquisar [mensagens de email](/graph/search-concept-messages)
 - Eventos [de calendário de pesquisa](/graph/search-concept-events)
-- Pesquisar conteúdo no SharePoint e no OneDrive ([arquivos, listas e sites](/graph/search-concept-files))
-- Pesquisar [dados de tipos personalizados (Conectores do Graph)](/graph/search-concept-custom-types)
+- Pesquisar conteúdo em SharePoint e OneDrive ([arquivos, listas e sites](/graph/search-concept-files))
+- Pesquisar [tipos personalizados (Graph conectores)](/graph/search-concept-custom-types) dados
 - [Classificar resultados](/graph/search-concept-sort) da pesquisa
 - Usar [agregação para](/graph/search-concept-aggregations) refinar resultados de pesquisa
 

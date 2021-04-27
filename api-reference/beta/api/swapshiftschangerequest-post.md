@@ -1,16 +1,16 @@
 ---
 title: Criar swapshiftRequest
-description: Criar uma instância de um swapShiftsChangeRequest.
+description: Crie uma instância de um swapShiftsChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c4dd366ae1d9fc98cd495584581d3dfa0b73ab93
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b1f873194d18f3ec34681f90942d5de2cbb089b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004414"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054830"
 ---
 # <a name="create-swapshiftschangerequest"></a>Criar swapShiftsChangeRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar uma instância de um objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) .
+Crie uma instância de um [objeto swapShiftsChangeRequest.](../resources/swapshiftschangerequest.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Schedule. ReadWrite. All * |
+| Application                            | Schedule.ReadWrite.All* |
 
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
+>\***Importante:** As permissões de aplicativo estão atualmente apenas em visualização privada e não estão disponíveis para uso público.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,11 +52,11 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 | Content-type | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um novo objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) .
+No corpo da solicitação, forneça uma representação JSON de um novo [objeto swapShiftsChangeRequest.](../resources/swapshiftschangerequest.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) criado no corpo da resposta.
+Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) criado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -84,7 +84,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

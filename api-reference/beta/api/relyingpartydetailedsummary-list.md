@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7512cc10db5b37cce6c899f5399f0c51194ab59c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 17e4c4b3e92173593c768267f6db957942241cdf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131380"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052856"
 ---
 # <a name="list-relyingpartydetailedsummary"></a>Listar relyingPartyDetailedSummary
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de **objetos relyingPartyDetailedSummary.**
+Recupere uma lista **de objetos relyingPartyDetailedSummary.**
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,14 +41,14 @@ GET /reports/getRelyingPartyDetailedSummary
 
 | Parâmetro | Descrição |
 |:----------|:----------|
-| ponto | Os valores com suporte são: D1, D7, D30. Eles seguem o formato Dn, em que n representa o número de dias em que o relatório é agregado.|
+| ponto | Os valores suportados são: D1, D7, D30. Eles seguem o formato Dn, em que n representa o número de dias em que o relatório é agregado.|
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. 
 
-- Você pode usar o `$filter` parâmetro para filtrar por relyingPartyId, migrationStatus e outros atributos. Por exemplo, $filter= relyingPartyId eq 'identifier'.
-- Você pode usar `$orderby` , `$top` e `$skip` parâmetros de consulta em qualquer solicitação GET.
+- Você pode usar o `$filter` parâmetro para filtrar confiandoPartyId, migrationStatus e outros atributos. Por exemplo, $filter= relyingPartyId eq 'identifier'.
+- Você pode usar `$orderby` parâmetros `$top` , e consulta em `$skip` qualquer solicitação GET.
 
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -65,7 +65,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e o objeto `200 OK` [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e o objeto `200 OK` [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(peri
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

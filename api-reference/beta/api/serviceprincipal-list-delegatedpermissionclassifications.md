@@ -1,16 +1,16 @@
 ---
 title: Listar a coleção delegatedPermissionClassifications de servicePrincipal
-description: Recupere uma lista de classificações dadas às permissões delegadas expostas pela entidade de serviço de uma API.
+description: Recupere uma lista de classificações concedidas a permissões delegadas expostas pela entidade de serviço de uma API.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: fa32de810f7afa8a972bbe59632a5fa90ee8663e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 980038094e551a1779b5b74b7d31884cfe38278d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132164"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053472"
 ---
 # <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>Listar a coleção delegatedPermissionClassifications de servicePrincipal
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionC
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 915e08a395cad734b8a84c7123f4c8f89ad902d1
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 7c991a7b798f114df204c1731eba6a4a71bf29cf
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292207"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052989"
 ---
 # <a name="create-openshiftchangerequest"></a>Criar openShiftChangeRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma instância de [um objeto openShiftChangeRequest.](../resources/openshiftchangerequest.md)
+Crie instância de um [objeto openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Schedule.ReadWrite.All*  |
+| Application                            | Schedule.ReadWrite.All*  |
 
->\***Importante:** No momento, as permissões de aplicativo estão apenas em visualização privada e não estão disponíveis para uso público.
+>\***Importante:** As permissões de aplicativo estão atualmente apenas em visualização privada e não estão disponíveis para uso público.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -55,7 +55,7 @@ No corpo da solicitação, forneça uma representação JSON de um novo [objeto 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e o objeto `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) criado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) criado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -82,7 +82,7 @@ Content-length: 244
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

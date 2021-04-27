@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: uploadSecret'
-description: Carregue um segredo em um keyset.
+description: Upload um segredo para um teclado.
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b008e1ae41d61fb14dbd80e5a820208355bb670d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 104e11956a388ccc7ae65cf4a70e609f3eb9b08f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444970"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053409"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet: uploadSecret
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Carregue um segredo de texto simples em [um trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Exemplos de segredos são segredos de aplicativos no Azure Active Directory, Google, Facebook ou qualquer outro provedor de identidade. seu método retorna [trustFrameworkKey](../resources/trustframeworkkey.md).
+Upload um segredo de texto simples para [um trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Exemplos de segredos são segredos de aplicativos Azure Active Directory, Google, Facebook ou qualquer outro provedor de identidade. seu método retorna [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

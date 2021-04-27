@@ -1,33 +1,33 @@
 ---
-title: Obter o AddServiceEndpoint
-description: Recupere as propriedades e os relacionamentos de um ponto de extremidade de serviço de impressão.
+title: Obter printServiceEndpoint
+description: Recupere as propriedades e as relações de um ponto de extremidade do serviço de impressão.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: fd03c0601d98080af4942df574a1aee2740640a0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8e5e26d620d0285686859862c014cf1f2390659d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968188"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053598"
 ---
-# <a name="get-printserviceendpoint"></a>Obter o AddServiceEndpoint
+# <a name="get-printserviceendpoint"></a>Obter printServiceEndpoint
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um ponto de extremidade de serviço de impressão.
+Recupere as propriedades e as relações de um ponto de extremidade do serviço de impressão.
 
 ## <a name="permissions"></a>Permissões
-Nenhuma permissão é necessária para chamar essa API, mas para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa.
+Nenhuma permissão é necessária para chamar essa API, mas para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Nenhum.|
+|Delegado (conta corporativa ou de estudante)|Nenhum|
 |Delegado (conta pessoal da Microsoft)|Nenhum.|
-|Aplicativo|Nenhum.|
+|Aplicativo|Nenhum|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [myserviceendpoint](../resources/printserviceendpoint.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printServiceEndpoint](../resources/printserviceendpoint.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints/{name}
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9e60e01bcf530533f6827af2d93a90573f39c760
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0ebdf4a68247a4b6c62d5c2cf1431b903fd140a2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720036"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054711"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -54,7 +54,7 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled |Booliano |True se a conta estiver habilitada; caso contrário, false.|
+|accountEnabled |Boolean |True se a conta estiver habilitada; caso contrário, false.|
 |displayName |string |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
@@ -123,7 +123,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [user](..
 Veja a seguir um exemplo da resposta. 
 
 >[!NOTE]
->O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
+>O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",
@@ -219,7 +219,7 @@ Content-type: application/json
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityTotalUserCounts'
-description: Obter o número de usuários licenciados ou não licenciados do Microsoft Teams por tipo de atividade. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões.
+description: Obter o número de usuários Microsoft Teams licenciados ou não licenciados por tipo de atividade. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 9c62a7bf316f8b11b908f30eb3db1865b7a4f1df
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: a534070cf178f93fe999728893ab5de5e707d9ab
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766903"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054998"
 ---
 # <a name="reportroot-getteamsuseractivitytotalusercounts"></a>reportRoot: getTeamsUserActivityTotalUserCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o número de usuários licenciados ou não licenciados do Microsoft Teams por tipo de atividade. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões.
+Obter o número de usuários Microsoft Teams licenciados ou não licenciados por tipo de atividade. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões.
 
 ## <a name="permissions"></a>Permissões
 
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalUserCounts
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

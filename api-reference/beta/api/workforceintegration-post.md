@@ -1,16 +1,16 @@
 ---
 title: Criar workforceIntegration
-description: Criar um novo objeto workforceIntegration.
+description: Crie um novo objeto workforceIntegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c67023a11f105008361de7167b8adc14ce5cfa40
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 76cb01efb15f7937c9e71e1fa26eb8d425f2b4d7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970700"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054683"
 ---
 # <a name="create-workforceintegration"></a>Criar workforceIntegration
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [workforceIntegration](../resources/workforceintegration.md) .
+Crie um novo [objeto workforceIntegration.](../resources/workforceintegration.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | WorkforceIntegration. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | WorkforceIntegration.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -47,19 +47,19 @@ POST /teamwork/workforceIntegrations
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [workforceIntegration](../resources/workforceintegration.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto workforceIntegration.](../resources/workforceintegration.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [workforceIntegration](../resources/workforceintegration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo objeto [workforceIntegration](../resources/workforceintegration.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-new-workforceintegration-object"></a>Exemplo 1: criar um novo objeto workforceIntegration.
+### <a name="example-1-create-a-new-workforceintegration-object"></a>Exemplo 1: Criar um novo objeto workforceIntegration.
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de uma solicitação para criar um novo objeto **workforceIntegration** .
+A seguir está um exemplo de uma solicitação para criar um novo **objeto workforceIntegration.**
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -106,7 +106,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -131,9 +131,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Exemplo 2: criar um novo workforceIntegration com o SwapRequest habilitado para filtragem de qualificação
+### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Exemplo 2: Criar uma nova workforceIntegration com SwapRequest habilitada para filtragem de qualificação
 
-Veja a seguir um exemplo de uma solicitação com o SwapRequest habilitado para filtragem de qualificação. 
+A seguir, um exemplo de uma solicitação com SwapRequest habilitada para filtragem de qualificação. 
 
 #### <a name="request"></a>Solicitação
 
@@ -176,15 +176,15 @@ HTTP/1.1 200 OK
 }
 
 ```
-Para atualizar um objeto **workforceIntegration** existente com o SwapRequest habilitado para filtragem de qualificação, confira o método [Update](../api/workforceintegration-update.md) .
+Para atualizar um objeto **workforceIntegration** existente com SwapRequest habilitado para filtragem de qualificação, consulte o [método Update.](../api/workforceintegration-update.md)
 
-### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Exemplo 3: buscando turnos qualificados quando o SwapRequest está incluído no eligibilityFilteringEnabledEntities
+### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Exemplo 3: buscar turnos qualificados quando SwapRequest está incluído em eligibilityFilteringEnabledEntities
 
-A interação entre o aplicativo turnos e os pontos de extremidade de integração da força de força seguirá o padrão existente.
+A interação entre o aplicativo Shifts e os pontos de extremidade de integração da força de trabalho seguirá o padrão existente.
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação feita por turnos para o ponto de extremidade de integração de força de funcionários para buscar turnos qualificados para uma solicitação de troca.
+A seguir, um exemplo da solicitação feita por Shifts para o ponto de extremidade de integração da força de trabalho para buscar turnos qualificados para uma solicitação de troca.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -201,7 +201,7 @@ Accept-Language: en-us
 ```
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta do serviço de integração de força de funcionários.
+A seguir, um exemplo da resposta do serviço de integração da força de trabalho.
 ```
 HTTP/1.1 200 OK
 {

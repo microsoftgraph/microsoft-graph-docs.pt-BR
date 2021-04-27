@@ -1,16 +1,16 @@
 ---
 title: Atualizar publishedResource
-description: Atualize as propriedades de [um objeto publishedResource.](../resources/publishedresource.md)
+description: Atualize as propriedades de um [objeto publishedResource.](../resources/publishedresource.md)
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8c8a6cfe8eead7219918daf5ac2e87090cc18888
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 22544845ededf639bc71f14dec72a7163ded7c90
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137673"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055152"
 ---
 # <a name="update-publishedresource"></a>Atualizar publishedResource
 
@@ -46,7 +46,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece os valores dos campos relevantes a atualizar. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores dos campos relevantes a ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 A tabela a seguir lista as propriedades que podem ser atualizadas.
 
@@ -100,7 +100,7 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

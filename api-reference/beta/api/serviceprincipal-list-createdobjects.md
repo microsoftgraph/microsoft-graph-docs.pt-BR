@@ -1,18 +1,18 @@
 ---
-title: 'servicePrincipal: Listar createdObjects'
+title: 'servicePrincipal: List createdObjects'
 description: Recuperar uma lista de objetos directoryobject.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 52a36d4afaaee71775b0b88a690d54c30ce36cc6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 23f93a48e808a72e312c55def59fae0a89d6daeb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134330"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053486"
 ---
-# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: Listar createdObjects
+# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
 
 Namespace: microsoft.graph
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
->Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+>Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

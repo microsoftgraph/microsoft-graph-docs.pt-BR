@@ -1,16 +1,16 @@
 ---
 title: Obter publishedResource
-description: Recupere as propriedades e os relacionamentos de um [objeto publishedResource.](../resources/publishedresource.md)
+description: Recupere as propriedades e as relações de um [objeto publishedResource.](../resources/publishedresource.md)
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6b0f84de5dfdcde391094e71dbcde451dc4fe3b0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 00b3242dbef55afe0f01571fabac848aa8e391db
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135531"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055180"
 ---
 # <a name="get-publishedresource"></a>Obter publishedResource
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos do [objeto publishedResource.](../resources/publishedresource.md)
+Recupere as propriedades e as relações do [objeto publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e o objeto `200 OK` [publishedResource](../resources/publishedresource.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [publishedResource](../resources/publishedresource.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/p
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

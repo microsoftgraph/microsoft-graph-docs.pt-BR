@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityDistributionUserCounts'
-description: Obter o número de usuários licenciados do Microsoft Teams por tipo de atividade durante o período selecionado. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões.
+description: Obter o número de usuários Microsoft Teams licenciados por tipo de atividade durante o período selecionado. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 91a9f503ad2798f154d7415e93e7c4be28cd7c32
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 69bdcafd963c96274034f53158337d0e38c3d654
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766899"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053514"
 ---
 # <a name="reportroot-getteamsuseractivitydistributionusercounts"></a>reportRoot: getTeamsUserActivityDistributionUserCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o número de usuários licenciados do Microsoft Teams por tipo de atividade durante o período selecionado. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões.
+Obter o número de usuários Microsoft Teams licenciados por tipo de atividade durante o período selecionado. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões.
 
 ## <a name="permissions"></a>Permissões
 
@@ -148,7 +148,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityDistributionUse
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

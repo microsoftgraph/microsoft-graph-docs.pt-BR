@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 87c098fa50ed1498d4bf81952247decf70b2c02c
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 0cd78b2046d65f8f4d5095fe2555c0c587aa20ec
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469469"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054725"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>Conceder um appRoleAssignment a um usuário
 
@@ -101,13 +101,13 @@ Content-Type: application/json
 ---
 
 
-Neste exemplo, observe que o valor usado como o **id** do usuário no URL de solicitação (`cde330e5-2150-4c11-9c5b-14bfdc948c79`) é o mesmo que a propriedade **principalId** no corpo.
+Neste exemplo, observe que o valor usado como a **id** do usuário na URL de solicitação (`cde330e5-2150-4c11-9c5b-14bfdc948c79`) é o mesmo que a propriedade **principalId** no corpo.
 
 ### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

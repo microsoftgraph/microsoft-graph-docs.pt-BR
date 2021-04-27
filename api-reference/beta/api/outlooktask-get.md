@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2fccd7dea62dd0d08f56f119a75dd71037d00c90
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8db32df8b0e92451c98e4d6bde6a2c503bb17c67
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957595"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055488"
 ---
 # <a name="get-outlooktask-deprecated"></a>Obter outlookTask (preterido)
 
@@ -65,7 +65,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-an-outlook-task"></a>Exemplo 1: Obter uma tarefa do Outlook
+### <a name="example-1-get-an-outlook-task"></a>Exemplo 1: Obter uma tarefa Outlook tarefa
 
 #### <a name="request"></a>Solicitação
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 
 Veja a seguir um exemplo da resposta. Por padrão, as propriedades de data e hora na resposta estão em UTC.
 
-> **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -150,7 +150,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Exemplo 2: Obter tarefa do Outlook com propriedades de data e hora no Horário Padrão do Pacífico
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Exemplo 2: Obter Outlook com propriedades de data e hora no Horário Padrão do Pacífico
 
 #### <a name="request"></a>Solicitação
 
@@ -190,7 +190,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 Veja a seguir um exemplo da resposta. As propriedades de data e hora na resposta são retornadas no Horário Padrão do Pacífico especificado.
 
-> **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 6212446f136d87b9331793c9846be8f2edd8a499
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8df99c32c43e947863c4a7713c984b99fbd4bb73
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968852"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053353"
 ---
 # <a name="list-people"></a>Listar pessoas
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [Person](../resources/person.md) ordenados por sua relevância para o [usuário](../resources/user.md), que é determinado pelos padrões de comunicação e colaboração do usuário e relações comerciais.
+Recupere uma lista de [objetos](../resources/person.md) de pessoa ordenados por sua relevância para o usuário [,](../resources/user.md)que é determinado pelos padrões de comunicação e colaboração do usuário e pelas relações comerciais.
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/people
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta.
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta.
 
 |Nome|Valor|Descrição|
 |:---------------|:--------|:-------|
@@ -65,19 +65,19 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Person](../resources/person.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [person](../resources/person.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="browse"></a>Browse
+### <a name="browse"></a>Procurar
 
-As solicitações nesta seção obtêm as pessoas mais relevantes para o usuário conectado ( `/me` ), com base nas relações de comunicação, colaboração e negócios.
+As solicitações nesta seção têm as pessoas mais relevantes para o usuário ( ), com base na `/me` comunicação, colaboração e relações comerciais.
 
-Por padrão, cada resposta retorna 10 registros, mas você pode alterar esse número usando o parâmetro *$top*. Essas solicitações exigem a permissão People. Read.
+Por padrão, cada resposta retorna 10 registros, mas você pode alterar esse número usando o parâmetro *$top*. Essas solicitações exigem a permissão People.Read.
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação padrão.
+A seguir, um exemplo da solicitação padrão.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/me/people
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -220,7 +220,7 @@ GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 
 Você pode alterar o número de pessoas retornadas na resposta definindo o parâmetro *$top*.
 
-O exemplo a seguir solicita as 1.000 pessoas mais relevantes `/me` . A solicitação também limita a quantidade de dados enviados de volta do servidor solicitando apenas o nome de exibição da pessoa.
+O exemplo a seguir solicita as 1.000 pessoas mais relevantes para `/me` . A solicitação também limita a quantidade de dados enviados de volta do servidor solicitando apenas o nome de exibição da pessoa.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
@@ -228,9 +228,9 @@ GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
 
 #### <a name="selecting-the-fields-to-return"></a>Seleção dos campos que devem ser retornados
 
-Você pode limitar a quantidade de dados retornados do servidor usando o parâmetro *$Select* para escolher um ou mais campos. O campo *@odata.id* é sempre retornado.
+Você pode limitar a quantidade de dados retornados do servidor usando o parâmetro *$select* para escolher um ou mais campos. O campo *@odata.id* é sempre retornado.
 
-O exemplo a seguir limita a resposta para *DisplayName* e *EmailAddress* das dez pessoas mais relevantes.
+O exemplo a seguir limita a resposta para *DisplayName* e *EmailAddress* das 10 pessoas mais relevantes.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses
@@ -240,17 +240,17 @@ GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddress
 
 Você pode usar o parâmetro *$filter* para limitar a resposta apenas às pessoas cujo registro contém os critérios especificados.
 
-A consulta a seguir limita a resposta a pessoas com o "diretório" de origem.
+A consulta a seguir limita a resposta a pessoas com a origem "Directory".
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$filter=Sources/Any (source: source/Type  eq 'Directory')
 ```
 
-#### <a name="selecting-the-fields-to-return-in-a-filtered-response"></a>Selecionar os campos a serem retornados em uma resposta filtrada
+#### <a name="selecting-the-fields-to-return-in-a-filtered-response"></a>Selecionando os campos para retornar em uma resposta filtrada
 
 Você pode combinar os parâmetros *$select* e *$filter* para criar uma lista personalizada de pessoas relevantes para o usuário e obter somente os campos necessários para seu aplicativo.
 
-O exemplo a seguir obtém o *DisplayName* e o *EmailAddress* de pessoas cujo nome de exibição é igual ao nome especificado. Neste exemplo, somente as pessoas cujo nome de exibição é igual a "Nestor Kellum" são retornadas.
+O exemplo a seguir obtém *DisplayName* e *EmailAddress* de pessoas cujo nome de exibição é igual ao nome especificado. Neste exemplo, somente as pessoas cujo nome de exibição é igual a "Nestor Kellum" são retornadas.
 
 ```http
 +GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses&$filter=DisplayName eq 'Nestor Kellum'
@@ -258,13 +258,13 @@ O exemplo a seguir obtém o *DisplayName* e o *EmailAddress* de pessoas cujo nom
 
 ### <a name="search-people"></a>Pesquisar pessoas
 
-As solicitações nesta seção também obtêm as pessoas mais relevantes para o usuário conectado ( `/me` ). As solicitações de pesquisa exigem a permissão People. Read.
+As solicitações nesta seção também obterão as pessoas mais relevantes para o usuário de sessão ( `/me` ). As solicitações de pesquisa exigem a permissão People.Read.
 
 #### <a name="using-search-to-select-people"></a>Usando a pesquisa para selecionar pessoas
 
 Use o parâmetro *$search* para selecionar as pessoas que atendem a determinado conjunto de critérios.
 
-A consulta de pesquisa a seguir retorna pessoas relevantes para `/me` o qual o determinadoname ou o sobrenome começa com a letra "j".
+A consulta de pesquisa a seguir retorna pessoas `/me` relevantes para cuja GivenName ou Sobrenome começa com a letra "j".
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search=j
@@ -272,7 +272,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search=j
 
 #### <a name="using-search-to-specify-a-relevant-topic"></a>Uso da pesquisa para especificar um tópico relevante
 
-A solicitação a seguir retorna pessoas relevantes para o `/me` nome que contém "ma" e que têm uma associação com "planejamento de recursos".
+A solicitação a seguir retorna pessoas relevantes cujo nome contém "ma" e que têm uma associação `/me` com "planejamento de recursos".
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature planning"
@@ -280,7 +280,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature plann
 
 #### <a name="performing-a-fuzzy-search"></a>Execução de uma pesquisa difusa
 
-A solicitação a seguir faz uma pesquisa por uma pessoa chamada "Hermaini Sousa". Como há uma pessoa denominada "Herminia Hull" relevante para o usuário conectado, as informações de "Herminia Hull" são retornadas.
+A solicitação a seguir faz uma pesquisa para uma pessoa chamada "Hermaini Hall". Como há uma pessoa chamada "Herminia Hull" relevante para o usuário in-loco, as informações de "Herminia Hull" são retornadas.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
@@ -288,7 +288,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
 
 ### <a name="related-people"></a>Pessoas relacionadas
 
-A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário. Essa solicitação exige o User. ReadBasic. All para a permissão People. Read. All. Neste exemplo, as pessoas relevantes do Marcos Kellum são exibidas.
+A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário. Essa solicitação requer a permissão User.ReadBasic.All para People.Read.All. Neste exemplo, as pessoas relevantes de Nestor Kellum são exibidas.
 
 ```http
 GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/

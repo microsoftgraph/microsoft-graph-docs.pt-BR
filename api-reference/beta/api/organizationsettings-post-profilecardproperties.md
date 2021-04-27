@@ -1,16 +1,16 @@
 ---
 title: Criar profileCardProperty
-description: Use esta API para criar um novo profileCardProperty.
+description: Use essa API para criar um novo profileCardProperty.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 597ff7f2bafcf05e4f2827932bc29cbc98df10c1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5c9b43c3ca76416db4d319fdfcd7631d5eaf3a9b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964009"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055586"
 ---
 # <a name="create-profilecardproperty"></a>Criar profileCardProperty
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [profileCardProperty](../resources/profilecardproperty.md) para uma organização. A nova propriedade é identificada pela propriedade **directoryPropertyName** .
+Crie um novo [profileCardProperty](../resources/profilecardproperty.md) para uma organização. A nova propriedade é identificada por **sua propriedade directoryPropertyName.**
 
-Para obter mais informações sobre como adicionar propriedades ao cartão de perfil de uma organização, consulte [Customize The Profile Card](/graph/add-properties-profilecard).
+Para obter mais informações sobre como adicionar propriedades ao cartão de perfil de uma organização, consulte [personalizar o cartão de perfil](/graph/add-properties-profilecard).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,11 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
->**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha um administrador de locatários ou uma função de administrador global.
+>**Observação:** O uso de permissões delegadas para essa operação exige que o usuário in-loco tenha um administrador de locatário ou uma função de administrador global.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,11 +51,11 @@ POST https://graph.microsoft.com/beta/organization/{organizationId}/settings/pro
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [profileCardProperty](../resources/profilecardproperty.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto profileCardProperty.](../resources/profilecardproperty.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um novo objeto [profileCardProperty](../resources/profilecardproperty.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo objeto [profileCardProperty](../resources/profilecardproperty.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -111,7 +111,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

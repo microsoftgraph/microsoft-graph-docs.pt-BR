@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3b1bf0939a7fe5e33b31ad9d2200e55da8464a67
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ff171910adbe92e3ed936f2ea868487e761c3b05
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957757"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055565"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact: Obter gerente
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/contacts/{id}/manager
 
 #### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageDistributionUserCounts'
-description: Obter o número de usuários licenciados exclusivos do Microsoft Teams por tipo de dispositivo durante o período de tempo selecionado.
+description: Obter o número de usuários Microsoft Teams licenciados por tipo de dispositivo durante o período de tempo selecionado.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: c6d6e8cf10071b46d660f5e50e80a45b2a0c1e10
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 23bcbb90a3cfd55f2585d1136f443cd38f125b77
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766186"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052744"
 ---
 # <a name="reportroot-getteamsdeviceusagedistributionusercounts"></a>reportRoot: getTeamsDeviceUsageDistributionUserCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o número de usuários licenciados exclusivos do Microsoft Teams por tipo de dispositivo durante o período de tempo selecionado.
+Obter o número de usuários Microsoft Teams licenciados por tipo de dispositivo durante o período de tempo selecionado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -152,7 +152,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageDistributionUser
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

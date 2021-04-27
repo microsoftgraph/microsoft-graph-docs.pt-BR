@@ -1,24 +1,24 @@
 ---
-title: Atribuir publishedResource a onPremisesAgentGroup
-description: Atribua **um objeto publishedResource** a um **objeto onPremisesAgentGroup** .
+title: Atribuir publishedResource ao onPremisesAgentGroup
+description: Atribua um **objeto publishedResource** a um **objeto onPremisesAgentGroup.**
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6e30689074c566511e638db484e7b29db6f9373e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3cbd9e434701cad6ac7eff47daed6080c5979863
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130673"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055166"
 ---
-# <a name="assign-publishedresource-to-onpremisesagentgroup"></a>Atribuir publishedResource a onPremisesAgentGroup
+# <a name="assign-publishedresource-to-onpremisesagentgroup"></a>Atribuir publishedResource ao onPremisesAgentGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atribua [um objeto publishedResource](../resources/publishedresource.md) [ao objeto onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
+Atribua um [objeto publishedResource](../resources/publishedresource.md) [ao objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,7 +50,7 @@ No corpo da solicitação, fornece uma representação JSON de um [objeto onPrem
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto publishedResource](../resources/publishedresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [publishedResource](../resources/publishedresource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -76,7 +76,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

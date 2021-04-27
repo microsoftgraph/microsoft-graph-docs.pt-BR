@@ -1,16 +1,16 @@
 ---
 title: Criar publishedResource
-description: Criar um novo **objeto publishedResource.**
+description: Crie um novo **objeto publishedResource.**
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2b87c40556cb7612e6c354ddb8e5815fb4d08760
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0cf0b586010b6d68a36f4d710bc24f0035ecafa7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130386"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055159"
 ---
 # <a name="create-publishedresource"></a>Criar publishedResource
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [objeto publishedResource.](../resources/publishedresource.md)
+Crie um novo [objeto publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,7 +48,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 No corpo da solicitação, fornece uma representação JSON de um [objeto publishedResource.](../resources/publishedresource.md)
 
-Fornece os valores para as propriedades a seguir.
+Fornecer os valores para as propriedades a seguir.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -57,7 +57,7 @@ Fornece os valores para as propriedades a seguir.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto publishedResource](../resources/publishedresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [publishedResource](../resources/publishedresource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -103,7 +103,7 @@ Content-Type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

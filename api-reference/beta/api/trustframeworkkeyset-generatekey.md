@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6ffcb8beb1744d8ca702ed1d9fd550721b6e7747
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2dd481634a9b42a9cf40d2d507e06c95b225b0c5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433642"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053437"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet: generateKey
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,8 +51,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| use | string | Semelhante à propriedade **use** de **trustFrameworkKey**. |
-| kty | string | Semelhante à **propriedade kty** **de trustFrameworkKey**. |
+| use | cadeia de caracteres | Semelhante à propriedade **use** de **trustFrameworkKey**. |
+| kty | cadeia de caracteres | Semelhante à **propriedade kty** **de trustFrameworkKey**. |
 | nbf | int | Semelhante à **propriedade nbf** **de trustFrameworkKey**. |
 | exp | int | Semelhante à **propriedade exp** **de trustFrameworkKey**. |
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

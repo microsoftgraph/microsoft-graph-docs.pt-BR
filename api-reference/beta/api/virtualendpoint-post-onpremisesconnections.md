@@ -1,16 +1,16 @@
 ---
 title: Criar cloudPcOnPremisesConnection
-description: Crie uma conexão local para provisionar PCs na nuvem.
+description: Crie uma conexão local para provisionar PCs de nuvem.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 22f2e0f4b66742322f3ff6b1f18a50092fdf4895
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3f37d57516d78c1f9027346633213b7520d35dd8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162073"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053325"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>Criar cloudPcOnPremisesConnection
 
@@ -52,16 +52,16 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do objeto [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|O nome de exibição da conexão local.|
-|subscriptionId|String|A ID da assinatura do Azure de destino que está associada ao seu locatário.|
-|adDomainName|String|O nome de domínio totalmente qualificado (FQDN) do domínio do Active Directory no qual você deseja ingressar.|
-|adDomainUsername|String|O nome de usuário de uma conta do Active Directory (usuário ou conta de serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: admin@contoso.com.|
+|subscriptionId|String|A ID da assinatura de destino do Azure associada ao seu locatário.|
+|adDomainName|String|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar.|
+|adDomainUsername|String|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: admin@contoso.com.|
 |adDomainPassword|String|A senha associada a adDomainUsername.|
 |resourceGroupId|String|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
@@ -69,7 +69,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [cloudPc
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -122,7 +122,7 @@ Content-length: 800
 
 ### <a name="response"></a>Resposta
 
-**Observação:** Veja um exemplo da resposta. O objeto response mostrado aqui pode estar truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
+**Observação:** Aqui está um exemplo da resposta. O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {
   "blockType": "response",
   "truncated": true,

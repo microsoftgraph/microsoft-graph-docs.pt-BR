@@ -1,16 +1,16 @@
 ---
 title: Criar assinatura
-description: Inscreve um aplicativo ouvinte para receber notificações de alteração quando os dados de um recurso do Microsoft Graph mudarem.
+description: Inscreve um aplicativo ouvinte para receber notificações de alteração quando os dados em um recurso microsoft Graph alterações.
 localization_priority: Normal
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: f89720d18db554a8700e5d14b2bafd15d92d5f0f
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: 7fe6db48038b68d7d2bfe507af60a26846962832
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031027"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054872"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -44,7 +44,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[presence](../resources/presence.md) | Presence.Read.All | Sem suporte | Sem suporte |
-|[impressora](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
+|[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
@@ -160,7 +160,7 @@ Os valores a seguir são válidos para a propriedade resource.
 |[Email](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Presença](../resources/presence.md)| `/communications/presences/{id}` (usuário único), `/communications/presences?$filter=id in ({id},{id}…)` (vários usuários)|
 |[impressora](../resources/printer.md) |`print/printers/{id}/jobs`|
-|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
+|[printTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Usuários](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
 |[Alerta de segurança](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
@@ -171,7 +171,7 @@ Os valores a seguir são válidos para a propriedade resource.
 
 O exemplo a seguir mostra a resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

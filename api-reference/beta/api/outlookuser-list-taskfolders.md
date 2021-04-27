@@ -1,16 +1,16 @@
 ---
 title: Listar taskFolders
-description: Obter todas as pastas de tarefas do Outlook na caixa de correio do usuário.
+description: Obter todas as Outlook de tarefas na caixa de correio do usuário.
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 17a8742393a8c245c638db64f04ce641e760e7f7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f863aa4edb26ef0d3ac1325404c07737ae0285af
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957498"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052975"
 ---
 # <a name="list-taskfolders-deprecated"></a>Listar taskFolders (preterido)
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Obter todas as pastas de tarefas do Outlook na caixa de correio do usuário.
+Obter todas as Outlook de tarefas na caixa de correio do usuário.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

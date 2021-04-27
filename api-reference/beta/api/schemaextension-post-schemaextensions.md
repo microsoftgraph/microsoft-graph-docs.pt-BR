@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 49241c6374cad314197c9f9ad433d6a6c2aa966c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a16c8e75d8e07f55a1592374b3d393362ef34252
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978801"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053493"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
@@ -128,7 +128,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -223,7 +223,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** que se baseia no nome do esquema fornecido na solicitação, juntamente com o restante da definição de esquema recém-criada. O valor na **id** na resposta é baseado no formato, ext \{ _&#65279;8-random-alphanumeric-chars_&#65279;\} \_ \{ _nome do esquema_ \} . Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -320,7 +320,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-A resposta inclui o **proprietário** definido como o valor fornecido na solicitação. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui o **proprietário** definido como o valor fornecido na solicitação. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

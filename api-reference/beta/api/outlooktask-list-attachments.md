@@ -1,18 +1,18 @@
 ---
 title: Listar anexos
-description: Obter uma lista de objetos Attachment anexados a uma tarefa do Outlook.
+description: Obter uma lista de objetos anexos anexados a uma Outlook tarefa.
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5ed5ec108da53f4c68c0e9d701d78f929e0f8dc9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 87b7a341be4e280a8b211bf03e814006d8240755
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974116"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055474"
 ---
-# <a name="list-attachments-deprecated"></a>Listar anexos (preterido)
+# <a name="list-attachments-deprecated"></a>Anexos de lista (preterido)
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Obter uma lista de objetos [Attachment](../resources/attachment.md) anexados a uma tarefa do Outlook.
+Obter uma lista de [objetos anexos](../resources/attachment.md) anexados a uma Outlook tarefa.
 
 ## <a name="permissions"></a>Permissões
 
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [anexos](../resources/attachment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Atualizar as configurações de caixa de correio do usuário
-description: Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui configurações para respostas automáticas (notificar as pessoas automaticamente após o recebimento de seus emails), localidade (idioma e país/região), fuso horário e horário comercial.
+description: Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui configurações de respostas automáticas (notificar pessoas automaticamente ao receber emails), localidade (idioma e país/região), fuso horário e horário de trabalho.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 34c52abdd59b5b9384b2e21f02af13cffc8cf5bb
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: af2c46084d09f8bb8b1799ac87a32e951038b610
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475018"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053339"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 
@@ -30,7 +30,7 @@ Habilitar, configurar ou desabilitar uma ou mais das seguintes configurações c
 
 Ao atualizar o formato de data ou hora preferencial para um usuário, especifique-o, respectivamente, no formato de [data curta](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou [de curto](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) período. 
 
-Ao atualizar o fuso horário preferencial para um usuário, especifique-o no formato [IANA (Autoridade](https://www.iana.org/time-zones) de Números Atribuídos) do Windows ou internet (também conhecido como fuso horário Olson). Você também pode personalizar ainda mais o fuso horário, conforme mostrado no [exemplo 2](#example-2) abaixo.
+Ao atualizar o fuso horário preferencial para um usuário, especifique-o no formato de fuso horário Windows internet [ou IANA (também](https://www.iana.org/time-zones) conhecido como fuso horário Olson). Você também pode personalizar ainda mais o fuso horário, conforme mostrado no [exemplo 2](#example-2) abaixo.
 
 > [!TIP] 
 > Não é possível criar ou excluir configurações de caixa de correio.
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | MailboxSettings.ReadWrite    |
 |Aplicativo | MailboxSettings.ReadWrite |
 
@@ -63,10 +63,10 @@ No corpo da solicitação, forneça os valores para as propriedades relevantes q
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado. Você pode definir essas notificações apenas para um intervalo de datas futuro.|
-|dateFormat|string|O formato de data para a caixa de correio do usuário.|
+|dateFormat|cadeia de caracteres|O formato de data para a caixa de correio do usuário.|
 |delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Se o usuário tiver um representante de calendário, isso especifica se o representante, o proprietário da caixa de correio ou ambos recebem mensagens de reunião e respostas de reunião. Os valores possíveis são: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |idioma|[localeInfo](../resources/localeinfo.md)|Informações sobre a localidade do usuário, incluindo o idioma preferencial e o país/região.|
-|timeFormat|string|O formato de hora da caixa de correio do usuário.|
+|timeFormat|cadeia de caracteres|O formato de hora da caixa de correio do usuário.|
 |timeZone|string|O fuso horário padrão para a caixa de correio do usuário.|
 |workingHours|[workingHours](../resources/workinghours.md)|As horas, os dias de uma semana e o fuso horário em que o usuário trabalha.|
 
@@ -135,7 +135,7 @@ Content-Type: application/json
 ---
 
 #### <a name="response"></a>Resposta
-A resposta inclui apenas as configurações atualizadas de respostas automáticas. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui apenas as configurações atualizadas de respostas automáticas. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_1",
@@ -232,7 +232,7 @@ Content-Type: application/json
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_2",

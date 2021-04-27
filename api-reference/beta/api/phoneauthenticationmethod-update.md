@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 62d6dfbdf2e9025b3bdd0732b69b54e036045913
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5230ca00a63f3543b95ef4f2a1dc7242c5460a1b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957280"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055404"
 ---
 # <a name="update-phoneauthenticationmethod"></a>Atualizar phoneAuthenticationMethod
 
@@ -22,7 +22,7 @@ Atualize o número de telefone associado a um [método de autenticação de tele
 
 Não é possível alterar o tipo de telefone. Para alterar o tipo de telefone, adicione um novo número do tipo desejado e exclua o objeto com o tipo original.
 
-Se um usuário estiver habilitado pela política para usar o SMS para entrar e o número for alterado, o sistema tentará registrar o número para `mobile` uso nesse sistema.
+Se um usuário estiver habilitado pela política para usar SMS entrar e o número for alterado, o sistema tentará registrar o número para uso `mobile` nesse sistema.
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,10 +42,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:-------------------------|
 | Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma [das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administrador global
+* Administração global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 
@@ -75,7 +75,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato "+ \<country code\> \<number\> \<extension\> x", com a extensão opcional. Por exemplo, +1 5555551234 ou +1 5555551234x123 são válidos. Os números são rejeitados ao criar/atualizar se não corresponderem ao formato necessário.|
+|phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Telefone números usam o formato "+ \<country code\> \<number\> x \<extension\> ", com a extensão opcional. Por exemplo, +1 5555551234 ou +1 5555551234x123 são válidos. Os números são rejeitados ao criar/atualizar se não corresponderem ao formato necessário.|
 |phoneType|cadeia de caracteres| Os valores possíveis são: `mobile`, `alternateMobile` ou `office`.|
 
 ## <a name="response"></a>Resposta
@@ -126,7 +126,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

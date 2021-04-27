@@ -1,16 +1,16 @@
 ---
 title: 'outlookTask: concluído'
-description: 'Conclua uma tarefa do Outlook que define a **propriedade completedDateTime** como a data atual, '
+description: 'Conclua uma Outlook que define a **propriedade completedDateTime** como a data atual, '
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 09a8f9d46597d96d51d5bd66f7fcac750e46809c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 35ff88db1fb8cde5c84a6010fc6e33b81661c387
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775532"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055481"
 ---
 # <a name="outlooktask-complete-deprecated"></a>outlookTask: completo (preterido)
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Conclua uma tarefa do Outlook que define a **propriedade completedDateTime** como a data atual e a **propriedade status** como `completed` .
+Conclua uma Outlook que define a propriedade **completedDateTime** como a data atual e a **propriedade status** como `completed` .
 
 Se você estiver concluindo uma tarefa em uma série recorrente, na resposta, a coleção de tarefas conterá a tarefa concluída na série e a próxima tarefa na série.
 
@@ -29,7 +29,7 @@ A **propriedade completedDateTime** representa a data em que a tarefa é conclu�
 
 Por padrão, essa operação (e as operações de tarefa POST, GET e PATCH) retorna propriedades relacionadas à data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -104,7 +104,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 Veja a seguir um exemplo da resposta. As **propriedades completedDateTime** e outras relacionadas à data na resposta são expressas em PST.
 
-> **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

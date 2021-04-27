@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: uploadCertificate'
-description: Carregue um certificado em um keyset.
+description: Upload um certificado para um teclado.
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 279794743f6f6b4cbd80fd9b3793195a73ff0e18
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 841a99797e737b79ee9d480b14a06c90a2bc2f48
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433611"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053416"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet: uploadCertificate
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Carregue um certificado em [um trustFrameworkKeyset](../resources/trustframeworkkeyset.md). A entrada é um valor codificado de base 64 do conteúdo do certificado. Este método retorna [trustFrameworkKey](../resources/trustframeworkkey.md).
+Upload um certificado para [um trustFrameworkKeyset](../resources/trustframeworkkeyset.md). A entrada é um valor codificado de base 64 do conteúdo do certificado. Este método retorna [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | TrustFrameworkKeySet.ReadWrite.All |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -100,7 +100,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

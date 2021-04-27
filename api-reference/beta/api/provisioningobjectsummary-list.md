@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 035cd43487f83cc23f86b3d8b979af5052c708fc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ad5ff716396a2971c4112e98239484be97c2cfce
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130421"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055187"
 ---
 # <a name="list-provisioningobjectsummary"></a>Listar provisioningObjectSummary
 
@@ -40,7 +40,7 @@ GET /auditLogs/provisioning
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Observe que todos os filtros são sensíveis a casos, exceto para status. 
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Observe que os filtros são todos sensíveis a minúsculas, exceto para status. 
 
 |Nome     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -50,29 +50,29 @@ Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar
 
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query_parameters).
 
-### <a name="attributes-supported-by-the-filter-parameter"></a>Atributos suportados pelo parâmetro $filter parâmetro
+### <a name="attributes-supported-by-the-filter-parameter"></a>Atributos suportados pelo parâmetro $filter
 
 |Nome do atributo |Operadores com suporte|
 |:----------------|:------|
-|id| eq, contains|
+|id| eq, contém|
 |activityDateTime| eq|
-|tenantid|eq, contains|
-|jobid|eq, contains|
-|changeid|eq, contains|
-|cycleid|eq, contains|
-|ação|eq, contains|
-|statusInfo/status|eq, contains|
-|sourceSystem/displayName|eq, contains|
-|targetSystem/displayName|eq, contains|
-|sourceIdentity/identityType|eq, contains|
-|targetIdentity/identityType|eq, contains|
-|sourceIdentity/id|eq, contains|
+|tenantid|eq, contém|
+|jobid|eq, contém|
+|changeid|eq, contém|
+|cycleid|eq, contém|
+|ação|eq, contém|
+|statusInfo/status|eq, contém|
+|sourceSystem/displayName|eq, contém|
+|targetSystem/displayName|eq, contém|
+|sourceIdentity/identityType|eq, contém|
+|targetIdentity/identityType|eq, contém|
+|sourceIdentity/id|eq, contém|
 |servicePrincipal/id|eq|
 |servicePrincipal/name|eq|
-|targetIdentity/id|eq, contains|
-|sourceIdentity/displayName|eq, contains|
-|targetIdentity/displayName|eq, contains|
-|initiatedBy/displayName|eq, contains|
+|targetIdentity/id|eq, contém|
+|sourceIdentity/displayName|eq, contém|
+|targetIdentity/displayName|eq, contém|
+|initiatedBy/displayName|eq, contém|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -86,7 +86,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos provisioningObjectSummary](../resources/provisioningobjectsummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [provisioningObjectSummary](../resources/provisioningobjectsummary.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -126,9 +126,9 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ### <a name="response"></a>Resposta
 
-A seguir está um exemplo da resposta para um evento bem-sucedido.
+A seguir, um exemplo da resposta para um evento bem-sucedido.
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -278,9 +278,9 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ### <a name="response"></a>Resposta
 
-A seguir está um exemplo da resposta para um evento de provisionamento com falha.
+A seguir, um exemplo da resposta para um evento de provisionamento com falha.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: Criar outlookTask
-description: Crie uma tarefa do Outlook na pasta de tarefas especificada.
+description: Crie uma Outlook na pasta de tarefas especificada.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b5986d4fe2ab77cf8c4634f3d872d966819ebca7
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 233e93529c2b4644a69643fd8bf1f49562765127
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774303"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055432"
 ---
 # <a name="create-outlooktask-deprecated"></a>Criar outlookTask(obsoleto)
 
@@ -21,11 +21,11 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Crie uma tarefa do Outlook na pasta de tarefas especificada.
+Crie uma Outlook na pasta de tarefas especificada.
 
 O método POST sempre ignora a parte de tempo de **startDateTime** e **dueDateTime** no corpo da solicitação e assume o tempo para ser sempre meia-noite no fuso horário especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -103,7 +103,7 @@ No corpo da solicitação, fornece uma representação JSON do [objeto outlookTa
 ##### <a name="response"></a>Resposta
 O método POST ignora a parte da hora no corpo da solicitação e assume que a hora seja sempre meia-noite no fuso horário especificado (PST). Em seguida, por padrão, o método POST converte e mostra todas as propriedades relacionadas à data em UTC na resposta.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
