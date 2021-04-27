@@ -5,53 +5,53 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 858ebfb3dd71f1969d911d8666e90c39fb73c97f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7298cd8d0e9ecdb5773f524f248fef85d0a0a540
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965010"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52041222"
 ---
-# <a name="create-event"></a><span data-ttu-id="80550-103">Criar evento</span><span class="sxs-lookup"><span data-stu-id="80550-103">Create event</span></span>
+# <a name="create-event"></a><span data-ttu-id="2ba34-103">Criar evento</span><span class="sxs-lookup"><span data-stu-id="2ba34-103">Create event</span></span>
 
-<span data-ttu-id="80550-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="80550-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2ba34-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2ba34-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="80550-105">Use esta API para criar um novo [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="80550-105">Use this API to create a new [event](../resources/event.md).</span></span>
+<span data-ttu-id="2ba34-105">Use esta API para criar um novo [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="2ba34-105">Use this API to create a new [event](../resources/event.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="80550-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="80550-106">Permissions</span></span>
-<span data-ttu-id="80550-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80550-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2ba34-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="2ba34-106">Permissions</span></span>
+<span data-ttu-id="2ba34-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2ba34-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="80550-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="80550-109">Permission type</span></span>      | <span data-ttu-id="80550-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="80550-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2ba34-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2ba34-109">Permission type</span></span>      | <span data-ttu-id="2ba34-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2ba34-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="80550-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="80550-111">Delegated (work or school account)</span></span> | <span data-ttu-id="80550-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80550-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="80550-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="80550-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="80550-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="80550-114">Not supported.</span></span>    |
-|<span data-ttu-id="80550-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="80550-115">Application</span></span> | <span data-ttu-id="80550-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="80550-116">Not supported.</span></span> |
+|<span data-ttu-id="2ba34-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2ba34-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2ba34-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2ba34-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="2ba34-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2ba34-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2ba34-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2ba34-114">Not supported.</span></span>    |
+|<span data-ttu-id="2ba34-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2ba34-115">Application</span></span> | <span data-ttu-id="2ba34-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2ba34-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="80550-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="80550-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2ba34-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2ba34-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="80550-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="80550-118">Request headers</span></span>
-| <span data-ttu-id="80550-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="80550-119">Header</span></span>       | <span data-ttu-id="80550-120">Valor</span><span class="sxs-lookup"><span data-stu-id="80550-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="2ba34-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2ba34-118">Request headers</span></span>
+| <span data-ttu-id="2ba34-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2ba34-119">Header</span></span>       | <span data-ttu-id="2ba34-120">Valor</span><span class="sxs-lookup"><span data-stu-id="2ba34-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="80550-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="80550-121">Authorization</span></span>  | <span data-ttu-id="80550-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="80550-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="2ba34-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="2ba34-121">Authorization</span></span>  | <span data-ttu-id="2ba34-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2ba34-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="80550-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="80550-124">Request body</span></span>
-<span data-ttu-id="80550-125">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="80550-125">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2ba34-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2ba34-124">Request body</span></span>
+<span data-ttu-id="2ba34-125">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="2ba34-125">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="80550-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="80550-126">Response</span></span>
-<span data-ttu-id="80550-127">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80550-127">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2ba34-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="2ba34-126">Response</span></span>
+<span data-ttu-id="2ba34-127">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2ba34-127">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="80550-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="80550-128">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="80550-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="80550-129">Request</span></span>
-<span data-ttu-id="80550-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="80550-130">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2ba34-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2ba34-128">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="2ba34-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2ba34-129">Request</span></span>
+<span data-ttu-id="2ba34-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2ba34-130">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="80550-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="80550-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2ba34-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="2ba34-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01d4ee64-15ce-491e-bad1-b91aa3223df4"],
@@ -89,29 +89,29 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="80550-132">C#</span><span class="sxs-lookup"><span data-stu-id="80550-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2ba34-132">C#</span><span class="sxs-lookup"><span data-stu-id="2ba34-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="80550-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="80550-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2ba34-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2ba34-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="80550-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="80550-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2ba34-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2ba34-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="80550-135">Java</span><span class="sxs-lookup"><span data-stu-id="80550-135">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2ba34-135">Java</span><span class="sxs-lookup"><span data-stu-id="2ba34-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="80550-136">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="80550-136">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="2ba34-136">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="2ba34-136">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="80550-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="80550-137">Response</span></span>
-<span data-ttu-id="80550-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="80550-138">The following is an example of the response.</span></span>
-><span data-ttu-id="80550-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="80550-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="2ba34-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="2ba34-137">Response</span></span>
+<span data-ttu-id="2ba34-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2ba34-138">The following is an example of the response.</span></span>
+><span data-ttu-id="2ba34-139">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="2ba34-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
