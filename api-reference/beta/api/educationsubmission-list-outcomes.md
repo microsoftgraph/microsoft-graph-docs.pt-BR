@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7ef71a1cd3b1015a2a483ce2361e32862decbc30
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6a351467a96b60aa2bcabd560db910c88d999a67
+ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043308"
+ms.locfileid: "52061816"
 ---
 # <a name="list-outcomes"></a>Listar resultados
 
@@ -38,7 +38,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+| Application*                           | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+
+*As permissões de aplicativo estão disponíveis apenas para clientes de visualização privada.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

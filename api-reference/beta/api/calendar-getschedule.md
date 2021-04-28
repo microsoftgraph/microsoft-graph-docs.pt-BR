@@ -5,12 +5,12 @@ localization_priority: Priority
 author: tariq-sharif
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2bc4a43dad2181dd2c86e384447111081d5c2bd4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1b91b0b0aad21c87d01ff813b85dc5b8861cff25
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960069"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047753"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -104,7 +104,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

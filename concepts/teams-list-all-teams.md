@@ -4,12 +4,12 @@ description: 'Listar todas as equipes '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: a7e95945d6d13b65d19b168352e067d3c2382ec0
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 8bacd936f67c0ba02ba547104eb9a7983017cbe8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843237"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051148"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>Listar todas as equipes do Microsoft Teams para uma organização
 
@@ -64,7 +64,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** O objeto de resposta mostrado pode ser reduzido para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 ```http
 HTTP/1.1 200 OK
@@ -120,7 +120,7 @@ GET /teams/{group-id}
 
 O exemplo a seguir mostra a resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "ignored",
   "truncated": true,

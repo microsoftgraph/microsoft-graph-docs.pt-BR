@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 863ff034080250fc7ce4cfc5b22344fcd2374fad
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 74840c4ac794262d7e5b7cced90c535e5132aa18
+ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961293"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061697"
 ---
 # <a name="get-educationassignmentdefaults"></a>Obter educationAssignmentDefaults
 Namespace: microsoft.graph
@@ -26,7 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 |Delegado (conta pessoal da Microsoft)| Sem suporte. |
-|Aplicativo| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+|Application*| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+
+*As permissões de aplicativo estão disponíveis apenas para clientes de visualização privada.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

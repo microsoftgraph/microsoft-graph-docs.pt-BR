@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 94c37320d17a72e0734d856c24cdff49308c9463
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 413af698c72be945e648a3fe21ce772f2b4e6102
+ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945705"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061872"
 ---
 # <a name="approvalstep-resource-type"></a>Tipo de recurso approvalStep
 
@@ -33,7 +33,7 @@ Em [userConsentRequests](../resources/userconsentrequest.md), as decisões de ap
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|assignedToMe|Booliano|Indica se a etapa é atribuída ao usuário chamador para revisar. Somente leitura.|
+|assignedToMe|Boolean|Indica se a etapa é atribuída ao usuário chamador para revisar. Somente leitura.|
 |displayName|Cadeia de caracteres|O rótulo fornecido pelo criador da política para identificar uma etapa de aprovação. Somente leitura.|
 |id|Cadeia de caracteres|O identificador da etapa associada a um objeto de aprovação. Somente leitura.|
 |justification|Cadeia de caracteres|A justificativa associada à decisão da etapa de aprovação.|
@@ -58,14 +58,14 @@ Veja a seguir uma representação JSON do recurso.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.approvalStep",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "status": "String",
-  "assignedToMe": true,
-  "reviewedBy": [{"@odata.type": "microsoft.graph.userIdentity"}],
-  "reviewedDateTime": "String (timestamp)",
-  "reviewResult": "String",
-  "justification": "String",
+   "@odata.type":"#microsoft.graph.approvalStep",
+   "id":"String (identifier)",
+   "displayName":"String",
+   "status":"String",
+   "assignedToMe":true,
+   "reviewedBy": [{"@odata.type": "microsoft.graph.userIdentity"}],
+   "reviewedDateTime":"String (timestamp)",
+   "reviewResult":"String",
+   "justification":"String"
 }
 ```
