@@ -5,52 +5,52 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: d2515f3ff07bc81bf782a5197ceda87df9feb85b
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 16f692af808b66e09952322f329e4c09a6ceb47f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577300"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039346"
 ---
-# <a name="nameditem-range"></a><span data-ttu-id="ccdfb-104">NamedItem: Range</span><span class="sxs-lookup"><span data-stu-id="ccdfb-104">NamedItem: Range</span></span>
+# <a name="nameditem-range"></a><span data-ttu-id="43090-104">NamedItem: Range</span><span class="sxs-lookup"><span data-stu-id="43090-104">NamedItem: Range</span></span>
 
-<span data-ttu-id="ccdfb-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ccdfb-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="43090-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="43090-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ccdfb-p102">Retorna o objeto Range associado ao nome. Gera uma exceção quando o tipo de item nomeado não é um intervalo.</span><span class="sxs-lookup"><span data-stu-id="ccdfb-p102">Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ccdfb-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="ccdfb-108">Permissions</span></span>
-<span data-ttu-id="ccdfb-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ccdfb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="43090-p102">Retorna o objeto Range associado ao nome. Gera uma exceção quando o tipo de item nomeado não é um intervalo.</span><span class="sxs-lookup"><span data-stu-id="43090-p102">Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.</span></span>
+## <a name="permissions"></a><span data-ttu-id="43090-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="43090-108">Permissions</span></span>
+<span data-ttu-id="43090-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="43090-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ccdfb-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ccdfb-111">Permission type</span></span>      | <span data-ttu-id="ccdfb-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ccdfb-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="43090-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="43090-111">Permission type</span></span>      | <span data-ttu-id="43090-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="43090-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ccdfb-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ccdfb-113">Delegated (work or school account)</span></span> | <span data-ttu-id="ccdfb-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ccdfb-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ccdfb-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ccdfb-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ccdfb-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ccdfb-116">Not supported.</span></span>    |
-|<span data-ttu-id="ccdfb-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ccdfb-117">Application</span></span> | <span data-ttu-id="ccdfb-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ccdfb-118">Not supported.</span></span> |
+|<span data-ttu-id="43090-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="43090-113">Delegated (work or school account)</span></span> | <span data-ttu-id="43090-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="43090-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="43090-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="43090-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43090-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="43090-116">Not supported.</span></span>    |
+|<span data-ttu-id="43090-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="43090-117">Application</span></span> | <span data-ttu-id="43090-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="43090-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ccdfb-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ccdfb-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43090-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="43090-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/items/{id}/workbook/names/{name}/range
 GET /me/drive/root:/{item-path}:/workbook/names/{name}/range
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ccdfb-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ccdfb-120">Request headers</span></span>
-| <span data-ttu-id="ccdfb-121">Nome</span><span class="sxs-lookup"><span data-stu-id="ccdfb-121">Name</span></span>       | <span data-ttu-id="ccdfb-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="ccdfb-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="43090-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="43090-120">Request headers</span></span>
+| <span data-ttu-id="43090-121">Nome</span><span class="sxs-lookup"><span data-stu-id="43090-121">Name</span></span>       | <span data-ttu-id="43090-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="43090-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="ccdfb-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="ccdfb-123">Authorization</span></span>  | <span data-ttu-id="ccdfb-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ccdfb-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ccdfb-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ccdfb-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="ccdfb-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="ccdfb-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="43090-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="43090-123">Authorization</span></span>  | <span data-ttu-id="43090-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="43090-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="43090-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="43090-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="43090-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="43090-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ccdfb-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ccdfb-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="43090-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="43090-129">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="ccdfb-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="ccdfb-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="43090-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="43090-130">Response</span></span>
 
-<span data-ttu-id="ccdfb-131">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ccdfb-131">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="43090-131">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="43090-131">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ccdfb-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ccdfb-132">Example</span></span>
-<span data-ttu-id="ccdfb-133">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="ccdfb-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="ccdfb-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ccdfb-134">Request</span></span>
-<span data-ttu-id="ccdfb-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ccdfb-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="43090-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="43090-132">Example</span></span>
+<span data-ttu-id="43090-133">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="43090-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="43090-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="43090-134">Request</span></span>
+<span data-ttu-id="43090-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="43090-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ccdfb-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="ccdfb-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="43090-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="43090-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "idempotent": true,
@@ -59,27 +59,27 @@ GET /me/drive/root:/{item-path}:/workbook/names/{name}/range
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
 ```
-# <a name="c"></a>[<span data-ttu-id="ccdfb-137">C#</span><span class="sxs-lookup"><span data-stu-id="ccdfb-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="43090-137">C#</span><span class="sxs-lookup"><span data-stu-id="43090-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditem-range-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ccdfb-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ccdfb-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="43090-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="43090-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/nameditem-range-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ccdfb-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ccdfb-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="43090-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="43090-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/nameditem-range-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ccdfb-140">Java</span><span class="sxs-lookup"><span data-stu-id="ccdfb-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="43090-140">Java</span><span class="sxs-lookup"><span data-stu-id="43090-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/nameditem-range-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="ccdfb-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="ccdfb-141">Response</span></span>
-<span data-ttu-id="ccdfb-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ccdfb-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="43090-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="43090-141">Response</span></span>
+<span data-ttu-id="43090-142">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="43090-142">Here is an example of the response.</span></span> <span data-ttu-id="43090-143">Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="43090-143">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

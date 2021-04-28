@@ -5,28 +5,28 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aa41c0d9e8e31f1cbe7a4c4653a27168c67a1a2c
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 0eaf4bb551a1f75faa3c68252ca7ec72d7ced189
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582813"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052212"
 ---
-# <a name="get-organizationalbrandingproperties"></a><span data-ttu-id="d79ad-103">Obter organizationalBrandingProperties</span><span class="sxs-lookup"><span data-stu-id="d79ad-103">Get organizationalBrandingProperties</span></span>
+# <a name="get-organizationalbrandingproperties"></a><span data-ttu-id="c4ab6-103">Obter organizationalBrandingProperties</span><span class="sxs-lookup"><span data-stu-id="c4ab6-103">Get organizationalBrandingProperties</span></span>
 
-<span data-ttu-id="d79ad-104">Recupere as propriedades e as relações de um [objeto organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)</span><span class="sxs-lookup"><span data-stu-id="d79ad-104">Retrieve the properties and relationships of an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.</span></span>
+<span data-ttu-id="c4ab6-104">Recupere as propriedades e as relações de um [objeto organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)</span><span class="sxs-lookup"><span data-stu-id="c4ab6-104">Retrieve the properties and relationships of an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d79ad-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="d79ad-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c4ab6-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="c4ab6-105">Permissions</span></span>
 
-<span data-ttu-id="d79ad-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d79ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c4ab6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c4ab6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d79ad-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d79ad-108">Permission type</span></span>                        | <span data-ttu-id="d79ad-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d79ad-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c4ab6-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c4ab6-108">Permission type</span></span>                        | <span data-ttu-id="c4ab6-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c4ab6-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="d79ad-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d79ad-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="d79ad-111">Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="d79ad-111">Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All</span></span> |
-| <span data-ttu-id="d79ad-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d79ad-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d79ad-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d79ad-113">Not supported.</span></span> |
-| <span data-ttu-id="d79ad-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d79ad-114">Application</span></span>                            | <span data-ttu-id="d79ad-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d79ad-115">Not supported.</span></span> |
+| <span data-ttu-id="c4ab6-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c4ab6-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="c4ab6-111">Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="c4ab6-111">Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All</span></span> |
+| <span data-ttu-id="c4ab6-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c4ab6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c4ab6-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-113">Not supported.</span></span> |
+| <span data-ttu-id="c4ab6-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c4ab6-114">Application</span></span>                            | <span data-ttu-id="c4ab6-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d79ad-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d79ad-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c4ab6-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c4ab6-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,36 +34,36 @@ ms.locfileid: "51582813"
 GET /organization/{id}/branding/{property name}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d79ad-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d79ad-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c4ab6-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c4ab6-117">Request headers</span></span>
 
-| <span data-ttu-id="d79ad-118">Nome</span><span class="sxs-lookup"><span data-stu-id="d79ad-118">Name</span></span>      |<span data-ttu-id="d79ad-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="d79ad-119">Description</span></span>|
+| <span data-ttu-id="c4ab6-118">Nome</span><span class="sxs-lookup"><span data-stu-id="c4ab6-118">Name</span></span>      |<span data-ttu-id="c4ab6-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="c4ab6-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="d79ad-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="d79ad-120">Authorization</span></span> | <span data-ttu-id="d79ad-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d79ad-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c4ab6-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="c4ab6-120">Authorization</span></span> | <span data-ttu-id="c4ab6-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-p102">Bearer {token}. Required.</span></span> |
 
 >[!NOTE]
-><span data-ttu-id="d79ad-123">Se você tentar a consulta no Graph Explorer, também deverá incluir o header de solicitação **Accept-Language** com uma localidade ISO-639 válida.</span><span class="sxs-lookup"><span data-stu-id="d79ad-123">If you try the query in Graph Explorer, you must also include the **Accept-Language** request header with a valid ISO-639 locale.</span></span>
+><span data-ttu-id="c4ab6-123">Se você tentar a consulta no Graph Explorer, também deverá incluir o header de solicitação **Accept-Language** com uma localidade ISO-639 válida.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-123">If you try the query in Graph Explorer, you must also include the **Accept-Language** request header with a valid ISO-639 locale.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="d79ad-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d79ad-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c4ab6-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c4ab6-124">Request body</span></span>
 
-<span data-ttu-id="d79ad-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d79ad-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="c4ab6-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d79ad-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="d79ad-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c4ab6-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="c4ab6-126">Response</span></span>
 
-<span data-ttu-id="d79ad-127">Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d79ad-127">If successful, this method returns a `200 OK` response code and the requested [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object in the response body.</span></span>
+<span data-ttu-id="c4ab6-127">Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-127">If successful, this method returns a `200 OK` response code and the requested [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d79ad-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="d79ad-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c4ab6-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c4ab6-128">Examples</span></span>
 
-### <a name="example-1-get-the-default-branding"></a><span data-ttu-id="d79ad-129">Exemplo 1: Obter a identidade visual padrão</span><span class="sxs-lookup"><span data-stu-id="d79ad-129">Example 1: Get the default branding</span></span>
+### <a name="example-1-get-the-default-branding"></a><span data-ttu-id="c4ab6-129">Exemplo 1: Obter a identidade visual padrão</span><span class="sxs-lookup"><span data-stu-id="c4ab6-129">Example 1: Get the default branding</span></span>
 
 >[!NOTE]
-><span data-ttu-id="d79ad-130">Se você tentar o exemplo no Graph Explorer, também deverá incluir o header de solicitação **Accept-Language** com uma localidade ISO-639 válida para evitar obter um erro " Valor de id de localidade inválido *en-US,en;q=0,9. Deve ser uma localidade ISO-639 válida.*"</span><span class="sxs-lookup"><span data-stu-id="d79ad-130">If you try the example in Graph Explorer, you must also include the **Accept-Language** request header with a valid ISO-639 locale to avoid getting an error "*Invalid locale id value en-US,en;q=0.9. It must be a valid ISO-639 locale.*"</span></span>
+><span data-ttu-id="c4ab6-130">Se você tentar o exemplo no Graph Explorer, também deverá incluir o header de solicitação **Accept-Language** com uma localidade ISO-639 válida para evitar obter um erro " Valor de id de localidade inválido *en-US,en;q=0,9. Deve ser uma localidade ISO-639 válida.*"</span><span class="sxs-lookup"><span data-stu-id="c4ab6-130">If you try the example in Graph Explorer, you must also include the **Accept-Language** request header with a valid ISO-639 locale to avoid getting an error "*Invalid locale id value en-US,en;q=0.9. It must be a valid ISO-639 locale.*"</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d79ad-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d79ad-131">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c4ab6-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c4ab6-131">Request</span></span>
 
-<span data-ttu-id="d79ad-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d79ad-132">The following is an example of the request.</span></span>
+<span data-ttu-id="c4ab6-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-132">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="d79ad-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="d79ad-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c4ab6-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="c4ab6-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties_2"
@@ -72,30 +72,30 @@ GET /organization/{id}/branding/{property name}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 ```
-# <a name="c"></a>[<span data-ttu-id="d79ad-134">C#</span><span class="sxs-lookup"><span data-stu-id="d79ad-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c4ab6-134">C#</span><span class="sxs-lookup"><span data-stu-id="c4ab6-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d79ad-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d79ad-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c4ab6-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c4ab6-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d79ad-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d79ad-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c4ab6-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c4ab6-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="d79ad-137">Java</span><span class="sxs-lookup"><span data-stu-id="d79ad-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c4ab6-137">Java</span><span class="sxs-lookup"><span data-stu-id="c4ab6-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="d79ad-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="d79ad-138">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c4ab6-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="c4ab6-138">Response</span></span>
 
-<span data-ttu-id="d79ad-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d79ad-139">The following is an example of the response.</span></span>
+<span data-ttu-id="c4ab6-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-139">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="d79ad-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d79ad-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="c4ab6-140">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-140">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -124,13 +124,13 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="d79ad-142">As solicitações de /branding sempre retornam as **propriedades mediaContentType,** **mediaReadLink** e **mediaEditLink.**</span><span class="sxs-lookup"><span data-stu-id="d79ad-142">Requests for /branding always return the **mediaContentType**, **mediaReadLink**, and **mediaEditLink** properties.</span></span> <span data-ttu-id="d79ad-143">Se uma localidade tiver sido aplicada, **mediaEditLink** será o **mediaEditLink** para a localidade (que sempre não é nulo), e **mediaReadLink** e **mediaContentType** serão **mediaReadLink** e **mediaContentType** da localidade se **o mediaReadLink** da localidade não for nulo; caso contrário, o **mediaReadLink** padrão e **mediaContentType**.</span><span class="sxs-lookup"><span data-stu-id="d79ad-143">If a locale has been applied, the **mediaEditLink** is the **mediaEditLink** for the locale (which is always non-null), and the **mediaReadLink** and **mediaContentType** are the **mediaReadLink** and **mediaContentType** of the locale if the **mediaReadLink** of the locale is non-null; otherwise, the default **mediaReadLink** and **mediaContentType**.</span></span>
+<span data-ttu-id="c4ab6-141">As solicitações de /branding sempre retornam as **propriedades mediaContentType,** **mediaReadLink** e **mediaEditLink.**</span><span class="sxs-lookup"><span data-stu-id="c4ab6-141">Requests for /branding always return the **mediaContentType**, **mediaReadLink**, and **mediaEditLink** properties.</span></span> <span data-ttu-id="c4ab6-142">Se uma localidade tiver sido aplicada, **mediaEditLink** será o **mediaEditLink** para a localidade (que sempre não é nulo), e **mediaReadLink** e **mediaContentType** serão **mediaReadLink** e **mediaContentType** da localidade se **o mediaReadLink** da localidade não for nulo; caso contrário, o **mediaReadLink** padrão e **mediaContentType**.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-142">If a locale has been applied, the **mediaEditLink** is the **mediaEditLink** for the locale (which is always non-null), and the **mediaReadLink** and **mediaContentType** are the **mediaReadLink** and **mediaContentType** of the locale if the **mediaReadLink** of the locale is non-null; otherwise, the default **mediaReadLink** and **mediaContentType**.</span></span>
 
-### <a name="example-2-get-organizational-branding-but-no-branding-configured"></a><span data-ttu-id="d79ad-144">Exemplo 2: Obter identidade visual organizacional, mas nenhuma identidade visual configurada</span><span class="sxs-lookup"><span data-stu-id="d79ad-144">Example 2: Get organizational branding but no branding configured</span></span>
+### <a name="example-2-get-organizational-branding-but-no-branding-configured"></a><span data-ttu-id="c4ab6-143">Exemplo 2: Obter identidade visual organizacional, mas nenhuma identidade visual configurada</span><span class="sxs-lookup"><span data-stu-id="c4ab6-143">Example 2: Get organizational branding but no branding configured</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d79ad-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d79ad-145">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c4ab6-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c4ab6-144">Request</span></span>
 
-<span data-ttu-id="d79ad-146">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d79ad-146">The following is an example of the request.</span></span>
+<span data-ttu-id="c4ab6-145">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-145">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties_3"
@@ -140,9 +140,9 @@ Content-Type: application/json
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 ```
 
-#### <a name="response"></a><span data-ttu-id="d79ad-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="d79ad-147">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c4ab6-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="c4ab6-146">Response</span></span>
 
-<span data-ttu-id="d79ad-148">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d79ad-148">The following is an example of the response.</span></span>
+<span data-ttu-id="c4ab6-147">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-147">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -154,12 +154,12 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 HTTP/1.1 404 NOT FOUND
 ```
 
-### <a name="example-3-get-organizational-branding-for-the-french-locale"></a><span data-ttu-id="d79ad-149">Exemplo 3: Obter identidade visual organizacional para a localidade francesa</span><span class="sxs-lookup"><span data-stu-id="d79ad-149">Example 3: Get organizational branding for the French locale</span></span>
-<span data-ttu-id="d79ad-150">O **header Accept-Language** é usado para aplicar uma localização específica à identidade visual.</span><span class="sxs-lookup"><span data-stu-id="d79ad-150">The **Accept-Language** header is used to apply a particular localization to the branding.</span></span> <span data-ttu-id="d79ad-151">As propriedades que `null` estão na localização especificada são retornadas da identidade visual padrão.</span><span class="sxs-lookup"><span data-stu-id="d79ad-151">Properties that are `null` in the specified localization are returned from the default branding.</span></span> <span data-ttu-id="d79ad-152">Se o header **Accept-Language** for especificado na solicitação, a resposta incluirá o header **Content-Language,** a menos que seja `und` .</span><span class="sxs-lookup"><span data-stu-id="d79ad-152">If the **Accept-Language** header is specified in the request, the response will include the **Content-Language** header, unless it is `und`.</span></span>
+### <a name="example-3-get-organizational-branding-for-the-french-locale"></a><span data-ttu-id="c4ab6-148">Exemplo 3: Obter identidade visual organizacional para a localidade francesa</span><span class="sxs-lookup"><span data-stu-id="c4ab6-148">Example 3: Get organizational branding for the French locale</span></span>
+<span data-ttu-id="c4ab6-149">O **header Accept-Language** é usado para aplicar uma localização específica à identidade visual.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-149">The **Accept-Language** header is used to apply a particular localization to the branding.</span></span> <span data-ttu-id="c4ab6-150">As propriedades que `null` estão na localização especificada são retornadas da identidade visual padrão.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-150">Properties that are `null` in the specified localization are returned from the default branding.</span></span> <span data-ttu-id="c4ab6-151">Se o header **Accept-Language** for especificado na solicitação, a resposta incluirá o header **Content-Language,** a menos que seja `und` .</span><span class="sxs-lookup"><span data-stu-id="c4ab6-151">If the **Accept-Language** header is specified in the request, the response will include the **Content-Language** header, unless it is `und`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d79ad-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d79ad-153">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c4ab6-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c4ab6-152">Request</span></span>
 
-<span data-ttu-id="d79ad-154">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d79ad-154">The following is an example of the request.</span></span>
+<span data-ttu-id="c4ab6-153">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-153">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties_4"
@@ -170,11 +170,11 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 Accept-Language: fr
 ```
 
-#### <a name="response"></a><span data-ttu-id="d79ad-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="d79ad-155">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c4ab6-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="c4ab6-154">Response</span></span>
 
-<span data-ttu-id="d79ad-156">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d79ad-156">The following is an example of the response.</span></span>
+<span data-ttu-id="c4ab6-155">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-155">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="d79ad-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d79ad-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="c4ab6-156">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-156">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -204,15 +204,15 @@ Content-Language: fr
 }
 ```
 
-### <a name="example-4-get-bannerlogo-for-the-french-locale"></a><span data-ttu-id="d79ad-159">Exemplo 4: Obter bannerLogo para a localidade francesa</span><span class="sxs-lookup"><span data-stu-id="d79ad-159">Example 4: Get bannerLogo for the French locale</span></span>
-<span data-ttu-id="d79ad-160">Retorna **bannerLogo** para `fr` a localidade se ela existir.</span><span class="sxs-lookup"><span data-stu-id="d79ad-160">Returns **bannerLogo** for the `fr` locale if it exists.</span></span> <span data-ttu-id="d79ad-161">Se a localização não existir, retornará o **bannerLogo padrão**.</span><span class="sxs-lookup"><span data-stu-id="d79ad-161">If the localization does not exist, returns the default **bannerLogo**.</span></span>
+### <a name="example-4-get-bannerlogo-for-the-french-locale"></a><span data-ttu-id="c4ab6-157">Exemplo 4: Obter bannerLogo para a localidade francesa</span><span class="sxs-lookup"><span data-stu-id="c4ab6-157">Example 4: Get bannerLogo for the French locale</span></span>
+<span data-ttu-id="c4ab6-158">Retorna **bannerLogo** para `fr` a localidade se ela existir.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-158">Returns **bannerLogo** for the `fr` locale if it exists.</span></span> <span data-ttu-id="c4ab6-159">Se a localização não existir, retornará o **bannerLogo padrão**.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-159">If the localization does not exist, returns the default **bannerLogo**.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d79ad-162">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d79ad-162">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c4ab6-160">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c4ab6-160">Request</span></span>
 
-<span data-ttu-id="d79ad-163">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d79ad-163">The following is an example of the request.</span></span>
+<span data-ttu-id="c4ab6-161">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-161">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="d79ad-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="d79ad-164">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c4ab6-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="c4ab6-162">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties_5"
@@ -222,28 +222,28 @@ Content-Language: fr
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
 Accept-Language: fr
 ```
-# <a name="c"></a>[<span data-ttu-id="d79ad-165">C#</span><span class="sxs-lookup"><span data-stu-id="d79ad-165">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c4ab6-163">C#</span><span class="sxs-lookup"><span data-stu-id="c4ab6-163">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-5-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d79ad-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d79ad-166">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c4ab6-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c4ab6-164">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-5-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d79ad-167">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d79ad-167">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c4ab6-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c4ab6-165">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-5-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="d79ad-168">Java</span><span class="sxs-lookup"><span data-stu-id="d79ad-168">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c4ab6-166">Java</span><span class="sxs-lookup"><span data-stu-id="c4ab6-166">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="d79ad-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="d79ad-169">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c4ab6-167">Resposta</span><span class="sxs-lookup"><span data-stu-id="c4ab6-167">Response</span></span>
 
-<span data-ttu-id="d79ad-170">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d79ad-170">The following is an example of the response.</span></span>
+<span data-ttu-id="c4ab6-168">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-168">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -262,15 +262,15 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-get-bannerlogo-when-no-bannerlogo-is-configured"></a><span data-ttu-id="d79ad-171">Exemplo 5: Obter bannerLogo quando nenhum bannerLogo estiver configurado</span><span class="sxs-lookup"><span data-stu-id="d79ad-171">Example 5: Get bannerLogo when no bannerLogo is configured</span></span>
+### <a name="example-5-get-bannerlogo-when-no-bannerlogo-is-configured"></a><span data-ttu-id="c4ab6-169">Exemplo 5: Obter bannerLogo quando nenhum bannerLogo estiver configurado</span><span class="sxs-lookup"><span data-stu-id="c4ab6-169">Example 5: Get bannerLogo when no bannerLogo is configured</span></span>
 
-<span data-ttu-id="d79ad-172">Este exemplo mostra uma solicitação para uma propriedade que não existe na identidade visual padrão ou no idioma especificado no header **Accept-Language.**</span><span class="sxs-lookup"><span data-stu-id="d79ad-172">This example shows a request for a property that does not exist on the default branding or the language specified in the **Accept-Language** header.</span></span>
+<span data-ttu-id="c4ab6-170">Este exemplo mostra uma solicitação para uma propriedade que não existe na identidade visual padrão ou no idioma especificado no header **Accept-Language.**</span><span class="sxs-lookup"><span data-stu-id="c4ab6-170">This example shows a request for a property that does not exist on the default branding or the language specified in the **Accept-Language** header.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d79ad-173">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d79ad-173">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c4ab6-171">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c4ab6-171">Request</span></span>
 
-<span data-ttu-id="d79ad-174">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d79ad-174">The following is an example of the request.</span></span>
+<span data-ttu-id="c4ab6-172">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-172">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="d79ad-175">HTTP</span><span class="sxs-lookup"><span data-stu-id="d79ad-175">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c4ab6-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="c4ab6-173">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties_6"
@@ -280,28 +280,28 @@ Content-Type: application/json
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
 Accept-Language: de
 ```
-# <a name="c"></a>[<span data-ttu-id="d79ad-176">C#</span><span class="sxs-lookup"><span data-stu-id="d79ad-176">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c4ab6-174">C#</span><span class="sxs-lookup"><span data-stu-id="c4ab6-174">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-6-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d79ad-177">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d79ad-177">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c4ab6-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c4ab6-175">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-6-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d79ad-178">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d79ad-178">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c4ab6-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c4ab6-176">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-6-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="d79ad-179">Java</span><span class="sxs-lookup"><span data-stu-id="d79ad-179">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c4ab6-177">Java</span><span class="sxs-lookup"><span data-stu-id="c4ab6-177">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-6-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="d79ad-180">Resposta</span><span class="sxs-lookup"><span data-stu-id="d79ad-180">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c4ab6-178">Resposta</span><span class="sxs-lookup"><span data-stu-id="c4ab6-178">Response</span></span>
 
-<span data-ttu-id="d79ad-181">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d79ad-181">The following is an example of the response.</span></span>
+<span data-ttu-id="c4ab6-179">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c4ab6-179">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
