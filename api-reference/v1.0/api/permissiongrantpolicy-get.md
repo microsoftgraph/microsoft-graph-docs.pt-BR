@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 47771f8ad5cac3e2abd5191ae6651509c575ef13
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9aeb3259ed414b70391793cafd8453b22d413a94
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441690"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051302"
 ---
 # <a name="get-permissiongrantpolicy"></a>Obter permissionGrantPolicy
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 
 Este é um exemplo de resposta. A política tem dois conjuntos de condições, um que corresponde à permissão delegada classificada para aplicativos cliente registrados nesse locatário e o outro que corresponde a permissões delegadas classificadas para aplicativos de editores verificados (independentemente de qual locatário o aplicativo está `includes` `low` `low` registrado).
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7a6d02e20f7770e5006f72dacd4e8d83a91f371b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ce0e7375d0bafbb5794e26ba26a5ee81fa196b65
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963719"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051470"
 ---
 # <a name="add-teacher"></a>Adicionar professor
 
@@ -87,7 +87,7 @@ Este é um exemplo de resposta.
 
 <!-- Add the educationClass object to the response -->
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

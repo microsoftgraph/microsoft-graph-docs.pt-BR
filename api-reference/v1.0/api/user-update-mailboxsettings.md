@@ -1,16 +1,16 @@
 ---
 title: Atualizar as configurações de caixa de correio do usuário
-description: Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui configurações para respostas automáticas (notificar as pessoas automaticamente após o recebimento de seus emails), localidade (idioma e país/região), fuso horário e horário comercial.
+description: Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui configurações de respostas automáticas (notificar pessoas automaticamente ao receber emails), localidade (idioma e país/região), fuso horário e horário de trabalho.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f63768297d1930f4a06c82392e66086434f1a484
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f703560c561360379df793cc36582b3f141e48d8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475497"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050203"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 
@@ -28,7 +28,7 @@ Habilitar, configurar ou desabilitar uma ou mais das seguintes configurações c
 
 Ao atualizar o formato de data ou hora preferencial para um usuário, especifique-o, respectivamente, no formato de [data curta](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou [de curto](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) período.
 
-Ao atualizar o fuso horário preferencial para um usuário, especifique-o no formato [IANA (Autoridade](https://www.iana.org/time-zones) de Números Atribuídos) do Windows ou internet (também conhecido como fuso horário Olson). Você também pode personalizar ainda mais o fuso horário, conforme mostrado no [exemplo 2](#example-2) abaixo.
+Ao atualizar o fuso horário preferencial para um usuário, especifique-o no formato de fuso horário Windows internet [ou IANA (também](https://www.iana.org/time-zones) conhecido como fuso horário Olson). Você também pode personalizar ainda mais o fuso horário, conforme mostrado no [exemplo 2](#example-2) abaixo.
 
 > [!TIP]
 > Não é possível criar ou excluir configurações de caixa de correio.
@@ -134,7 +134,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Resposta
-A resposta inclui apenas as configurações atualizadas de respostas automáticas. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui apenas as configurações atualizadas de respostas automáticas. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_1",
@@ -231,7 +231,7 @@ Content-Type: application/json
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_2",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: af5c06c1ba8b2475e362b81dd799ec574d4e6a33
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3c30809b8dd25960dbe26275df2509d848a9063a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959807"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051400"
 ---
 # <a name="list-appliesto"></a>Lista appliesTo
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/{id}/ap
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

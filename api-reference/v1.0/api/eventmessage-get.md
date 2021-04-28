@@ -1,16 +1,16 @@
 ---
 title: Obter eventMessage
-description: Expanda o parâmetro na propriedade de navegação de **evento** para obter o evento associado no calendário de um participante.
+description: expanda o parâmetro na **propriedade de** navegação de eventos para obter o evento associado no calendário de um participante.
 localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e570987ec70f90b00d58a93832cb384bf31f8929
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4dc549c39c5113e972485fab647b5c4363b6ca14
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459750"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048740"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 
@@ -20,7 +20,7 @@ Obtenha as propriedades e os relacionamentos do objeto [eventMessage](../resourc
 
 No momento, essa operação retorna corpos de mensagens de eventos somente no formato HTML.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. As propriedades do evento correspondente são retornadas na resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. As propriedades do evento correspondente são retornadas na resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",

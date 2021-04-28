@@ -5,19 +5,19 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 9c2f482ea1b7feb5db8895f4031f887500c54efa
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: df8a850a220c8f1d60329b4adfc658e9eaad9bf9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133848"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050448"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Excluir inferenceClassificationOverride
 
 Namespace: microsoft.graph
 
 Exclua uma substituição especificada de acordo com sua ID.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -76,7 +76,7 @@ DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/98f
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true

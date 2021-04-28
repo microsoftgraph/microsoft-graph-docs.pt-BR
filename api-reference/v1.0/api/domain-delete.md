@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b3d5820b17d77873e0eded4a8aecd0d825747112
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0ecaf2cd5c1f8f0ed0281be585a85008e6870a8f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434391"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050504"
 ---
 # <a name="delete-domain"></a>Excluir domínio
 
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/v1.0/domains/contoso.com
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true

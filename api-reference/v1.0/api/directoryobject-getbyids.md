@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Priority
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d86b10766b0a735e482fd0d09d19a0682d7099d6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: bcd1e20de65f6ddefc08310572ff596865d438da
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448587"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051491"
 ---
 # <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
@@ -108,7 +108,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Resposta
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

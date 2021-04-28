@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a55dfbfdc3266cb246814d58bb7110cab21cebe0
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: e62229a704ce51b31f0d192107d480ff97f7fd08
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720550"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039633"
 ---
 # <a name="event-delta"></a>evento: delta
 
@@ -103,7 +103,7 @@ Se a solicitação for bem-sucedida, a resposta incluiria um token de estado, qu
 
 A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

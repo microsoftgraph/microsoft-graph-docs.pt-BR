@@ -1,24 +1,24 @@
 ---
 title: 'group: delta'
-description: Obter grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação de grupo, sem ter que executar uma leitura completa de toda a coleção de grupos.
+description: Obter grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação ao grupo, sem precisar executar uma leitura completa de todo o conjunto de grupos.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 37e9c3bd57ad5235b1a03115236b0501f4431280
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: e094aaae32d8fe4ccbadd534b3d75ece56f8176e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368226"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050483"
 ---
 # <a name="group-delta"></a>group: delta
 
 Namespace: microsoft.graph
 
-Obter grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação de grupo, sem ter que executar uma leitura completa de toda a coleção de grupos. Consulte [usando a consulta Delta](/graph/delta-query-overview) para obter detalhes.
+Obter grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação ao grupo, sem precisar executar uma leitura completa de todo o conjunto de grupos. Consulte [Using Delta Query](/graph/delta-query-overview) para obter detalhes.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,10 +53,10 @@ Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` 
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
 
-Este método oferece suporte a parâmetros de consulta OData opcionais para ajudar a personalizar a resposta.
+Este método dá suporte a parâmetros opcionais de consulta OData para ajudar a personalizar a resposta.
 
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade *id* sempre será retornada.
-- Você pode usar o `$select=members` para obter alterações de associação. Você também pode controlar outras alterações como propriedade e mais selecionando qualquer [relação de grupo](../resources/group.md#relationships) do tipo **directoryobject**.
+- Você pode usar `$select=members` para obter alterações de associação. Você também pode rastrear outras alterações, como propriedade e muito mais, selecionando qualquer relação de grupo [do](../resources/group.md#relationships) tipo **coleção directoryObject**.
 - Há suporte limitado para `$filter`:
   - A única expressão `$filter` suportada é para controlar alterações em um objeto específico: `$filter=id+eq+{value}`. É possível filtrar vários objetos. Por exemplo, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. Há um limite de 50 objetos filtrados.
 
@@ -142,9 +142,9 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 >
-> Observe a presença da propriedade *Members@delta* que inclui as IDs dos objetos member no grupo.
+> Observe a presença da propriedade *members@delta* que inclui as ids de objetos membros no grupo.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 604a05ab01312707b52274c6276ce044349f0d43
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 9261db7230c1655398f61f5f37d9f6792f79d066
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473189"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051358"
 ---
 # <a name="list-trending"></a>Listar tendências
 
@@ -77,7 +77,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/v1.0/me/insights/trending
 ```
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real. Consulte um exemplo de resposta não truncada na parte inferior da página.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade. Consulte um exemplo de resposta não truncada na parte inferior da página.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

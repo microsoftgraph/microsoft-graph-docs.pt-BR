@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 43bc6bc3646dadde3b8438977daa5f1b41682582
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 060aa6e30443c75707146dbdf00fb911ace6eb06
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575865"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051155"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -40,7 +40,7 @@ Na URL de solicitação, você pode fornecer parâmetros opcionais.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|valuesOnly|Booliano|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
+|valuesOnly|Boolean|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

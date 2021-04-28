@@ -1,27 +1,27 @@
 ---
-title: 'Call: playPrompt'
+title: 'call: playPrompt'
 description: Reproduza um prompt na chamada.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4759beaed98f5384deb41e982d5ce8a5ee1da396
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ce89f0bbdaf665bb9f459f554a2e605324ead609
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979165"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051603"
 ---
-# <a name="call-playprompt"></a>Call: playPrompt
+# <a name="call-playprompt"></a>call: playPrompt
 
 Namespace: microsoft.graph
 
 Reproduza um prompt na chamada.
 
-Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsoperation.md)
+Para obter mais informações sobre como lidar com operações, consulte [commsOperation](../resources/commsoperation.md)
 
 > [!Note]
-> A ação **playPrompt** é suportada apenas para [chamadas](../resources/call.md) que são iniciadas com o [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
+> A **ação playPrompt** só tem suporte para [chamadas](../resources/call.md) iniciadas com [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,11 +49,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|prompts|Coleção [MediaPrompt](../resources/mediaprompt.md)| Os prompts a serem reproduzidos. O tamanho máximo de coleção MediaPrompt compatível é 20.|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. Pode ter um máximo de 256 caracteres.|
+|prompts|[Coleção MediaPrompt](../resources/mediaprompt.md)| Os prompts a serem tocados. O tamanho máximo da coleção MediaPrompt suportado é 20.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -108,7 +108,7 @@ Content-Length: 166
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -129,7 +129,7 @@ Content-Type: application/json
 
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação-operação concluída
+##### <a name="notification---operation-completed"></a>Notificação - operação concluída
  
 ```http
 POST https://bot.contoso.com/api/calls

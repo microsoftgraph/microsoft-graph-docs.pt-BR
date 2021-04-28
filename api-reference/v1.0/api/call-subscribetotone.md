@@ -1,28 +1,28 @@
 ---
-title: 'Call: subscribeToTone'
-description: Assine o DTMF (sinalização de multifrequência de tom dual). Isso permite que você seja notificado quando o usuário pressionar teclas em um ' dialpad '.
+title: 'call: subscribeToTone'
+description: Inscreva-se em DTMF (sinalização multifrequência de tom duplo). Isso permite que você seja notificado quando o usuário pressionar teclas em um "Dialpad".
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 24da1586fdf0debe808930358e1390a0ab6db2b6
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: bca2ba67be2f62f87c84390a5a1bc3a2799e9498
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461304"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051596"
 ---
-# <a name="call-subscribetotone"></a>Call: subscribeToTone
+# <a name="call-subscribetotone"></a>call: subscribeToTone
 
 Namespace: microsoft.graph
 
 
-Assine o DTMF (sinalização de multifrequência de tom dual). Isso permite que você seja notificado quando o usuário pressionar teclas em um "dialpad".
+Inscreva-se em DTMF (sinalização multifrequência de tom duplo). Isso permite que você seja notificado quando o usuário pressionar teclas em um "dialpad".
 
 > [!Note]
-> A ação **subscribeToTone** é suportada apenas para [chamadas](../resources/call.md) que são iniciadas com o [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
+> A **ação subscribeToTone** só tem suporte para [chamadas](../resources/call.md) iniciadas com [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
 | Aplicativo     | Calls.AccessMedia.All                       |
 
->**Observação:** Qualquer dado de Tom fornecido pode não ser persistente. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
+>**Observação:** Os dados de tom fornecidos podem não ser persistentes. Certifique-se de estar em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    | Descrição |
 |:---------------|:--------|:------------|
-| clientContext  | String  | Cadeia de caracteres de contexto de cliente exclusivo. Pode ter um máximo de 256 caracteres. |
+| clientContext  | Cadeia de caracteres  | Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres. |
 
 ## <a name="response"></a>Resposta
 Se bem sucedido, este método retorna um código de resposta `200 OK`.
@@ -96,7 +96,7 @@ Content-Length: 46
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -118,9 +118,9 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
 ```
 
 
-##### <a name="notification---tone-notification"></a>Notificação de sinal de notificação
+##### <a name="notification---tone-notification"></a>Notificação - notificação de tom
 
-A notificação contém informações sobre o Tom pressionado no recurso [toneinfo](../resources/toneinfo.md) .
+A notificação contém informações do tom pressionado no [recurso toneinfo.](../resources/toneinfo.md)
 
 ```http
 POST https://bot.contoso.com/api/calls

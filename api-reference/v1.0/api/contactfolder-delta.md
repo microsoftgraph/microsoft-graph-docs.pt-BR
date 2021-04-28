@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2910412938ee167c68a14c3a37080adee450f7da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6126287711e042abb03705b01cf0fcd70e9fb69e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057595"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048789"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -105,7 +105,7 @@ Se a solicitação for bem-sucedida, a resposta incluiria um token de estado que
 
 A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

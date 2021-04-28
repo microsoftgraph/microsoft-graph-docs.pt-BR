@@ -1,28 +1,28 @@
 ---
-title: 'chamada: sem áudio'
-description: Permite que o aplicativo se desative.
+title: 'call: mute'
+description: Permite que o aplicativo se silencie.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c80228d654f41742eed2f96b9e18ac9bfd6ca4d8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c60fee9bc5f1e433f067b6cab2ef20db00ebd1ed
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966265"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050588"
 ---
-# <a name="call-mute"></a>chamada: sem áudio
+# <a name="call-mute"></a>call: mute
 
 Namespace: microsoft.graph
 
-Permite que o aplicativo se desative.
+Permite que o aplicativo se silencie.
 
-Este é um servidor sem som, o que significa que o servidor irá descartar todos os pacotes de áudio desse participante, mesmo que o participante continue a transmitir áudio.
+Esse é um servidor mudo, o que significa que o servidor soltará todos os pacotes de áudio para esse participante, mesmo que o participante continue a transmitir áudio.
 
-Para obter mais detalhes sobre como lidar com operações sem som, consulte [muteParticipantOperation](../resources/muteparticipantoperation.md)
+Para obter mais detalhes sobre como lidar com operações de mudo, consulte [muteParticipantOperation](../resources/muteparticipantoperation.md)
 
-> **Observação:** Este método só tem suporte para chamadas de grupo.
+> **Observação:** Esse método só tem suporte para chamadas de grupo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,10 +50,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.
 
 > **Observação:** Depois que essa operação retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista
 
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real. 
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
  
 <!-- { 
   "blockType": "response", 
@@ -128,7 +128,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a>Lista de notificação atualizada com o participante sem som
+##### <a name="notification---roster-updated-with-participant-muted"></a>Notificação - lista atualizada com o participante em mudo
 
 ```http
 POST https://bot.contoso.com/api/calls

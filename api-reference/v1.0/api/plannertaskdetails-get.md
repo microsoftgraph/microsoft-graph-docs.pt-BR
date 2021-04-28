@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: cafec5aa27d595beace5b3a0db6b3a54f79e531f
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 037ccfd4c02e85c00c2cb1ef03137198646dbb71
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473371"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049454"
 ---
 # <a name="get-plannertaskdetails"></a>Obter plannerTaskDetails
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

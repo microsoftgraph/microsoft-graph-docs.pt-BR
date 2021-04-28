@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 409d9b480df81741fc79591a8179426b832942b7
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 97a00a5eed7f1ea6b8569d5066b39c45001548dc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473873"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051589"
 ---
 # <a name="list-callrecord-sessions"></a>Listar sessões callRecord
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -209,7 +209,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions?$e
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

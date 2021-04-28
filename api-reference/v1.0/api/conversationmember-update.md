@@ -1,22 +1,22 @@
 ---
 title: Atualizar conversationMember
-description: Atualize a função do conversationMember em uma equipe ou canal.
+description: Atualizar a função de conversationMember em uma equipe ou canal.
 author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: efb4ed29e93dd2e73852a1589e233cefa7db8d11
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 974ae555623975c3a6a58aa9f75a5db8702d4f0d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848310"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048775"
 ---
 # <a name="update-conversationmember"></a>Atualizar conversationMember
 
 Namespace: microsoft.graph
 
-Atualizar a função de um [conversationMember](../resources/conversationmember.md) em uma [equipe](../resources/team.md) ou [canal](../resources/channel.md).
+Atualize a função de [um conversationMember](../resources/conversationmember.md) em uma [equipe](../resources/team.md) ou [canal](../resources/channel.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| No Teams: TeamMember. ReadWrite. All<br/>Em canais: ChannelMember. ReadWrite. All  |
+|Delegado (conta corporativa ou de estudante)| Em equipes: TeamMember.ReadWrite.All<br/>Em canais: ChannelMember.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| No Teams: TeamMember. ReadWrite. All<br/>Em canais: ChannelMember. ReadWrite. All |
+|Aplicativo| Em equipes: TeamMember.ReadWrite.All<br/>Em canais: ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->
@@ -42,11 +42,11 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes a serem atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores para que os campos relevantes atualizem. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|funções|coleção de cadeias de caracteres|As funções desse usuário. Deve ser "proprietário" ou vazio. Os usuários convidados devem sempre ter a função "convidado" e não podem ser alterados. |
+|funções|coleção de cadeias de caracteres|As funções desse usuário. Deve ser "proprietário" ou vazio. Os usuários convidados sempre devem ter a função "convidado" e não podem mudar. |
 
 ## <a name="response"></a>Resposta
 
@@ -77,7 +77,7 @@ content-length: 26
 
 Veja a seguir um exemplo da resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

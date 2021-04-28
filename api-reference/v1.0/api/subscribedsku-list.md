@@ -5,12 +5,12 @@ localization_priority: Priority
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0e1d403e4930c9edcf48dd7c008fd95c9d3fbe61
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 584519cde56062b687b1a10fc2f0fa16b064b557
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442534"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52034585"
 ---
 # <a name="list-subscribedskus"></a>Listar subscribedSkus
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

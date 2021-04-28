@@ -1,22 +1,22 @@
 ---
 title: Listar logons
-description: Descreve o método de lista do recurso signIn (entidade) da API do Microsoft Graph.
+description: Descreve o método de lista do recurso signIn (entidade) da API Graph Microsoft.
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 90e48837976afedd8b5da14febff47bb99d615ea
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: f84f7f34c92080c8d4ff55ed217ac822cef4ae48
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177078"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050301"
 ---
 # <a name="list-signins"></a>Listar logons
 
 Namespace: microsoft.graph
 
-Recupera os logons de usuário do Azure AD para seu locatário. As inserções que são interativas por natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de logom.
+Recupera os logons de usuário do Azure AD para seu locatário. As inserções interativas de natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de login.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
-|Delegado (conta pessoal da conta Microsoft) | Sem suporte   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All e Directory.Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -37,7 +37,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
+Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
 
 |Nome     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -45,7 +45,7 @@ Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar
 |[$top](/graph/query_parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/signIns?$top=1`|
 |[$skiptoken](/graph/query_parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte $filter parâmetro
+### <a name="attributes-supported-by-filter-parameter"></a>Atributos suportados pelo $filter parâmetro
 
 |Nome do atributo |Operadores com suporte|
 |:----------------|:------|
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -5,21 +5,21 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e3b20fa97bddcc9d5dbab674e1a5af24a2e15f8f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 7cebc304feabb29b95f63f2929f7f8f79e544866
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720708"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050196"
 ---
 # <a name="user-reprocesslicenseassignment"></a>user: reprocessLicenseAssignment
 
 Namespace: microsoft.graph
 
-Reprocesse todas as atribuições de licença baseadas em grupo para o usuário. Para saber mais sobre o licenciamento baseado em grupo, consulte O que é licenciamento baseado [em grupo no Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Consulte Também Identificar [e resolver problemas de atribuição de licença para um grupo no Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) para obter mais detalhes.
+Reprocesse todas as atribuições de licença baseadas em grupo para o usuário. Para saber mais sobre o licenciamento baseado em grupo, consulte O que é licenciamento baseado em [grupo em Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Consulte Também Identificar [e resolver problemas de atribuição](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) de licença para um grupo Azure Active Directory para obter mais detalhes.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -83,7 +83,7 @@ POST https://graph.microsoft.com/v1.0/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 
 A resposta é o objeto do usuário atualizado.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

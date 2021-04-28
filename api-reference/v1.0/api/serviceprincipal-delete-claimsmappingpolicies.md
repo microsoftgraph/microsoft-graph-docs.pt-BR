@@ -1,16 +1,16 @@
 ---
 title: Remover claimsMappingPolicy
-description: Remova um claimsMappingPolicy de uma servicePrincipal.
+description: Remova um claimsMappingPolicy de um servicePrincipal.
 localization_priority: Normal
 author: paulgarn
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d692fb399f6ef0deaaf77070bcb5ebe48ce2818a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f39d2b80d893ce9a3f6241bafe17e5c76c83b798
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132262"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049433"
 ---
 # <a name="remove-claimsmappingpolicy"></a>Remover claimsMappingPolicy
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 Remover um [claimsMappingPolicy](../resources/claimsmappingpolicy.md) de [um servicePrincipal](../resources/serviceprincipal.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Policy.Read.All e Application.ReadWrite.OwnedBy, Policy.Read.All e Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration e Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -89,7 +89,7 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/claimsMappingPoli
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

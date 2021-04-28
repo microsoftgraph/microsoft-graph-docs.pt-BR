@@ -1,16 +1,16 @@
 ---
 title: Criar inferenceClassificationOverride
-description: 'Crie uma substituição para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas '
+description: 'Crie uma substituição para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão classificadas de forma consistente '
 localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6e3ec52690c605dd9c4ab6ea9cda7eb090650dd3
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e3edf0e5ac276f5ab94e50d59cb4215877beec09
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133865"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051365"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Criar inferenceClassificationOverride
 
@@ -20,11 +20,11 @@ Crie uma substituição para um remetente identificado por um endereço SMTP. Me
 
 **Observação**
 
-- Se já existir uma substituição com o mesmo endereço SMTP, os **campos classifyAs** e **name** dessa substituição serão atualizados com os valores fornecidos.
+- Se já existir uma substituição com o mesmo endereço SMTP, os campos **classifyAs** e **name** dessa substituição serão atualizados com os valores fornecidos.
 - O número máximo de substituições com suporte para uma caixa de correio é 1000, com base nos endereços SMTP exclusivos do remetente.
 - A operação POST dá suporte à criação de apenas uma substituição de cada vez.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -93,7 +93,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

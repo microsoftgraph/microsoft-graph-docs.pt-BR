@@ -1,22 +1,22 @@
 ---
-title: Obter o aplicativo instalado no Team
-description: Obter um aplicativo instalado no Team.
+title: Obter aplicativo instalado na equipe
+description: Instale um aplicativo em equipe.
 author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9b9a61a36a49d36c24c35533bd1870ae568abf93
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: b5fe5ebf8ac0e65c8ffe2be10dee502f1d0ea0fa
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659892"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050252"
 ---
-# <a name="get-installed-app-in-team"></a>Obter o aplicativo instalado no Team
+# <a name="get-installed-app-in-team"></a>Obter aplicativo instalado na equipe
 
 Namespace: microsoft.graph
 
-Recupere o [aplicativo](../resources/teamsappinstallation.md) instalado na [equipe](../resources/team.md)especificada.
+Recupere o [aplicativo](../resources/teamsappinstallation.md) instalado na equipe [especificada](../resources/team.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation. ReadWriteSelfForTeam, TeamsAppInstallation. ReadForUser, TeamsAppInstallation. ReadForTeam, TeamsAppInstallation. ReadWriteForTeam, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsAppInstallation. ReadWriteSelfForTeam, TeamsAppInstallation. ReadForTeam. All, TeamsAppInstallation. ReadWriteForTeam. All, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Aplicativo | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,11 +48,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-installed-app"></a>Exemplo 1: obter o aplicativo instalado
+### <a name="example-1-get-the-installed-app"></a>Exemplo 1: Obter o aplicativo instalado
 
 #### <a name="request"></a>Solicitação
 
@@ -90,7 +90,7 @@ GET /teams/{id}/installedApps/{id}
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_installed_teams_apps",
@@ -112,7 +112,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-names-and-other-details-of-the-installed-app"></a>Exemplo 2: obter os nomes e outros detalhes do aplicativo instalado
+### <a name="example-2-get-the-names-and-other-details-of-the-installed-app"></a>Exemplo 2: Obter os nomes e outros detalhes do aplicativo instalado
 
 #### <a name="requests"></a>Solicitações
 
@@ -151,7 +151,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps/{id}?$expand=teams
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_installed_teams_apps_expand",

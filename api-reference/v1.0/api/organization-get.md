@@ -5,12 +5,12 @@ localization_priority: Priority
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47aece931b004a0775a0142d7254984fe9ba6f07
-ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
+ms.openlocfilehash: 87298a3862e7f0e5806ee39fdf3c7fcc8aea52cc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51836956"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052198"
 ---
 # <a name="get-organization"></a>Obter organização
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/organization
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

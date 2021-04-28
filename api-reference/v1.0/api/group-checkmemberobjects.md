@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 076fb6007d856d02f06eb874f0ea3e3f6e211a66
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 7371745848085d3edb0eadbbac8b824c7823ac53
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870020"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050490"
 ---
 # <a name="group-checkmemberobjects"></a>group: checkMemberObjects
 
@@ -105,7 +105,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta. 
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

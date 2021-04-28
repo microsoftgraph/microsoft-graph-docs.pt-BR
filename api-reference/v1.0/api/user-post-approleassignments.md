@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 68733ebdea60565e7e9320510cb490233f702f10
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 72374524558b84f2f9aad9fe75312ad0007cecea
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469406"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52033626"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>Conceder um appRoleAssignment a um usuário
 
@@ -105,7 +105,7 @@ Neste exemplo, observe que o valor usado como a **id** do usuário na URL de sol
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

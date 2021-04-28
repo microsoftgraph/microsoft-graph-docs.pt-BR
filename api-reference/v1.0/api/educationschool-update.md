@@ -1,18 +1,18 @@
 ---
-title: Atualizar propriedades de educationSchool
+title: Atualizar propriedades educationSchool
 description: Atualize as propriedades de um objeto de escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f1428992c909ac5c8e33cfd0ec53131ea5a0feb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b051e5339c2cc32cfd0dad58e21154cf8e9cca8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038943"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051435"
 ---
-# <a name="update-educationschool-properties"></a>Atualizar propriedades de educationSchool
+# <a name="update-educationschool-properties"></a>Atualizar propriedades educationSchool
 
 Namespace: microsoft.graph
 
@@ -48,8 +48,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade            | Tipo                                               | Descrição                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | String                                             | Nome de exibição da escola         |
-| description         | String                                             | Descrição da escola          |
+| displayName         | Cadeia de caracteres                                             | Nome de exibição da escola         |
+| description         | Cadeia de caracteres                                             | Descrição da escola          |
 | principalEmail      | Cadeia de caracteres                                             | Endereço de email da entidade de segurança     |
 | principalName       | Cadeia de caracteres                                             | Nome da entidade de segurança              |
 | externalPrincipalId | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização. |
@@ -110,7 +110,7 @@ Content-length: 292
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

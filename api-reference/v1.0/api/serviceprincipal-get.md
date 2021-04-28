@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7e768425c246ccc0f3bbcfd46fe90d582d8e5450
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: dda33bf14ff7ab50af983236d2da8394693aa26b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473658"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050336"
 ---
 # <a name="get-serviceprincipal"></a>Obter um servicePrincipal
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

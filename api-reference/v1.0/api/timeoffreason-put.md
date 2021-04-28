@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ab5f273ab260afb454882b2293463556c6a5249c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee87ff78baa7ae9b1fd5cf4428b99a167c960fc5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970968"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050231"
 ---
 # <a name="replace-timeoffreason"></a>Substituir timeOffReason
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Substitua um [timeOffReason](../resources/timeoffreason.md)existente.
 
-Se o [timeOffReason](../resources/timeoffreason.md) especificado não existir, este método retornará `404 Not found` .
+Se o [timeOffReason especificado](../resources/timeoffreason.md) não existir, este método retornará `404 Not found` .
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,11 +49,11 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [timeOffReason](../resources/timeoffreason.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto timeOffReason.](../resources/timeoffreason.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -103,7 +103,7 @@ Prefer: return=representation
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

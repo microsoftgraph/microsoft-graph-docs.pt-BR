@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 1e1f0d250d73c998371f52ad8ab26374dd85b9b6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01bad74bcd27ca68af0a1fbbf3ca6e4d25b07c55
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992843"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048852"
 ---
 # <a name="list-alerts"></a>Listar alertas
 
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

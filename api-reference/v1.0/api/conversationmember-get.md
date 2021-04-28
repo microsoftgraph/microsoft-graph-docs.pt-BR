@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 054bbb8d69d843fd26644ac658bd2b7553600a7a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 20439161d3aeb8617510a6f49dce91e2606cb331
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963866"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039822"
 ---
 # <a name="get-conversationmember"></a>Obter conversationMember
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/V1.0/chats/{id}/members/{id}
 
 Veja a seguir um exemplo da resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!--
 {
   "blockType": "response",

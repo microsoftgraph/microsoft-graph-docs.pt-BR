@@ -1,28 +1,28 @@
 ---
-title: 'chamada: ativar mudo'
-description: Permitir que o aplicativo se desative sozinho.
+title: 'call: unmute'
+description: Permitir que o aplicativo se desmute sozinho.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 85e6885588d8c43c5c7c9b3c7204cef45a02fd93
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a8cd47614020fc76386e5c9e8acff6a386fcadd7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992451"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051582"
 ---
-# <a name="call-unmute"></a>chamada: ativar mudo
+# <a name="call-unmute"></a>call: unmute
 
 Namespace: microsoft.graph
 
-Permitir que o aplicativo se desative sozinho.
+Permitir que o aplicativo se desmute sozinho.
 
-Este é um servidor que está desativado, o que significa que o servidor começará a enviar pacotes de áudio para este participante a outros participantes novamente.
+Esse é um servidor sem deslocamento, o que significa que o servidor começará a enviar pacotes de áudio para esse participante para outros participantes novamente.
 
-Para obter mais informações sobre como lidar com as operações de desativação, consulte [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).
+Para obter mais informações sobre como lidar com operações sem deslocamento, consulte [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).
 
-> **Observação:** Este método só tem suporte para chamadas de grupo.
+> **Observação:** Esse método só tem suporte para chamadas de grupo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,10 +49,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) no corpo da resposta.
 
 >**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
 
@@ -95,7 +95,7 @@ Content-Length: 46
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -124,7 +124,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-unmuted"></a>Lista de notificação atualizada com o participante sem som
+##### <a name="notification---roster-updated-with-participant-unmuted"></a>Notificação - lista atualizada com o participante sem deslocamento
 
 ```http
 POST https://bot.contoso.com/api/calls

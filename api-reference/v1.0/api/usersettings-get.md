@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9aa36e3762faddb0f9cc0f9f419c497f2ce3aa82
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0663f9581eb34be5c26c8666887c7c3bee7cffc1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721255"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031421"
 ---
 # <a name="get-settings"></a>Obter configurações
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/v1.0/me/settings
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 
 ```http
 HTTP/1.1 200 OK

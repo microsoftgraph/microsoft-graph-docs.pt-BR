@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 283b5da9499245b0c6cca929d7cecdd8bc4a4d27
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: edae635198203ead7f40cb1d77ac5a6f21f16a02
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448092"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051449"
 ---
 # <a name="list-permissiongrantpolicies"></a>Listar permissionGrantPolicies
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

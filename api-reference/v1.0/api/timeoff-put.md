@@ -1,22 +1,22 @@
 ---
 title: Substituir timeOff
-description: Substituir um objeto timeOff existente.
+description: Substitua um objeto timeOff existente.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 383abe12fe945adc291d4a96420a9e054477c235
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b05916566f366793e683e413b3dd44076f2f76a5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978234"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051211"
 ---
 # <a name="replace-timeoff"></a>Substituir timeOff
 
 Namespace: microsoft.graph
 
-Substituir um objeto [timeOff](../resources/timeoff.md) existente.
+Substitua um objeto [timeOff](../resources/timeoff.md) existente.
 
 Se o objeto [timeOff](../resources/timeoff.md) especificado não existir, este método retornará `404 Not found` .
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,11 +49,11 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [timeOff](../resources/timeoff.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto timeOff.](../resources/timeoff.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [timeOff](../resources/timeoff.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [timeOff](../resources/timeoff.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -113,7 +113,7 @@ Prefer: return=representation
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

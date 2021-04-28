@@ -1,16 +1,16 @@
 ---
 title: Obter educationClass
-description: "  administradores de grupo representam os professores da turma. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros."
+description: "  os administradores de grupo representam os professores da classe. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros."
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3359cbdb797fafc0a78b35cef5b66111b30c4074
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4bbbe40a291657813023596d3fd42cdfcd5c3310
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460030"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048761"
 ---
 # <a name="get-educationclass"></a>Obter educationClass
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 Recupere uma aula do sistema. Uma aula é um grupo universal com uma propriedade especial que indica ao sistema que o grupo é uma aula. Os membros do grupo representam os alunos; os administradores do grupo representam os professores da aula. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
+|Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte  |
 |Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5d3d0ca7bae62fd2e0c8f7311dd867509ec672f1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0c40d7bda2c0878a17b0268de8934a1aeda2debb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136105"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049517"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Copie uma mailFolder e seu conteúdo para outra mailFolder.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e um recurso [mailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e um recurso [mailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -100,7 +100,7 @@ Content-length: 44
 
 Veja a seguir um exemplo da resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

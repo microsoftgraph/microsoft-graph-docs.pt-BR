@@ -1,22 +1,22 @@
 ---
 title: Criar timeOffReason
-description: Criar um novo timeOffReason.
+description: Crie um novo timeOffReason.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e4867fb06326b4a8f84cc711fd2d1a1e5219618
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d57e287bee995f28cc738ac7a9b505ed143c59b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051211"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050343"
 ---
 # <a name="create-timeoffreason"></a>Criar timeOffReason
 
 Namespace: microsoft.graph
 
-Criar um novo [timeOffReason](../resources/timeoffreason.md).
+Crie um novo [timeOffReason](../resources/timeoffreason.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,7 +47,7 @@ POST /teams/{teamId}/schedule/timeOffReasons
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -96,7 +96,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

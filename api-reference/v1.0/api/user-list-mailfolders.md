@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 09df2c7b980bff3725c563c1b898f465b4f354f7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3883794642723cc5b7df07ad0c1d1f67fc58aed3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135979"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051190"
 ---
 # <a name="list-mailfolders"></a>Listar mailFolders
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

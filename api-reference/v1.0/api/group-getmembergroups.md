@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7a750ef9f2ed34e62b8756c1254da167ccbb0206
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d549365d312dce33f6383ef364c1d22ddea068a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094705"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039577"
 ---
 # <a name="group-getmembergroups"></a>grupo: getMemberGroups
 
@@ -102,7 +102,7 @@ Content-length: 33
 
 Este é um exemplo de resposta.
 
-> **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

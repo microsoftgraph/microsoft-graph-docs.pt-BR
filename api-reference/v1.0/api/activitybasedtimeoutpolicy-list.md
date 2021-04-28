@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d24301e50c66360e290b67a77c9e0fb7a7b7fa95
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fe442b506122ee08897c806054f51c67fe10f105
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442604"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050665"
 ---
 # <a name="list-activitybasedtimeoutpolicies"></a>Listar activityBasedTimeoutPolicies
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/policies/activityBasedTimeoutPolicies
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

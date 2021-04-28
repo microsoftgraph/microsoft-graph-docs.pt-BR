@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1c16d03d455baba9ce955a12d855dc12a7f30ecf
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2259ca86f1a6667c9881b87d3156be7b2248d6f2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964140"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050553"
 ---
 # <a name="list-appliesto"></a>Lista appliesTo
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/{id}/applies
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

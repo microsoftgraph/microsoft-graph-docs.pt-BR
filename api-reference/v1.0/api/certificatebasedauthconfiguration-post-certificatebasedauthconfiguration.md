@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fa9b96d3df3c03dd48f75142cfc58efc5d0b0cd8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1f1c759cade945fb8dad05d82ae30c9044074e5f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434815"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051568"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>Criar certificateBasedAuthConfiguration
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

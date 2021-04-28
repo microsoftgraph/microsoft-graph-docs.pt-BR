@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 14ad018efa1aee22a8f6557fdab34b7d2fc6decf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e0e6dff51e16f0582e2bbbde058f8e78f35d5c1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009764"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051456"
 ---
 # <a name="update-educationclass-properties"></a>Atualizar propriedades educationclass
 
@@ -43,8 +43,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|description|String| Descrição da aula.|
-|displayName|String| Nome da aula.|
+|description|Cadeia de caracteres| Descrição da aula.|
+|displayName|Cadeia de caracteres| Nome da aula.|
 |mailNickname|String| Alias de email para envio de email a todos os usuários, se esse recurso estiver habilitado. |
 |classCode|Cadeia de caracteres| Código de classe usado pela escola.|
 |externalId|Cadeia de caracteres| ID da aula no sistema de sincronização. |
@@ -93,7 +93,7 @@ Content-length: 224
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9aa79a083375dda6c5b98dbb9e3fb9dee237d550
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: eaafb6b86dd7392cd041a54247a47535ffc25039
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130625"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051344"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Crie um rascunho para encaminhar a [mensagem](../resources/message.md) especificada. Você pode [atualizar](../api/message-update.md) o rascunho para adicionar conteúdo ao **corpo** ou alterar outras propriedades da mensagem ou, simplesmente, [enviar](../api/message-send.md) o rascunho.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -91,7 +91,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

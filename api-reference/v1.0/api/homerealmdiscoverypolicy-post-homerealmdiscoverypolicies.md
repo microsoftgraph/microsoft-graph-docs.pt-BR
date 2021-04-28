@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1d8529aeb1d3f6146ee0a1d9d2761919612a5ebd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 31b201ea19658361cdb2bf7c3da2326c3e710e29
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441869"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051386"
 ---
 # <a name="create-homerealmdiscoverypolicy"></a>Criar homeRealmDiscoveryPolicy
 
@@ -101,7 +101,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -1,29 +1,29 @@
 ---
 title: Criar ou substituir agendamento
-description: Criar ou substituir um objeto **Schedule** .
+description: Crie ou substitua um **objeto schedule.**
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 51b7a8afbf70899c7f217cb0b0b648ca8f4e7761
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 5d40cf859826d66b679e0f0ef7bc2e73c79ffac9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314948"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051232"
 ---
 # <a name="create-or-replace-schedule"></a>Criar ou substituir agendamento
 
 Namespace: microsoft.graph
 
-Criar ou substituir um objeto [Schedule](../resources/schedule.md) .
+Crie ou substitua um [objeto schedule.](../resources/schedule.md)
 
-O processo de criação de agendamento está em conformidade com a [diretriz de uma API para operações de longa duração com base em recursos (relo)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
-Quando os clientes usam o método PUT, se a agenda for provisionada, a operação substituirá a agenda; caso contrário, a operação iniciará o processo de provisionamento de agendamento em segundo plano.
+O processo de criação de agendamento está em conformidade com a diretriz da API One para operações de longa execução [(RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)baseadas em recursos.
+Quando os clientes usam o método PUT, se o agendamento for provisionado, a operação substituirá o agendamento; caso contrário, a operação inicia o processo de provisionamento de agendamento em segundo plano.
 
-Durante o provisionamento de agendamento, os clientes podem usar o [método Get](schedule-get.md) para obter o agendamento e observar a `provisionStatus` propriedade para o estado atual do provisionamento. Se o provisionamento falhar, os clientes poderão obter informações adicionais da `provisionStatusCode` propriedade.
+Durante o provisionamento de agendamento, os clientes podem usar o [método GET](schedule-get.md) para obter o agendamento e olhar para a propriedade para o estado atual `provisionStatus` do provisionamento. Se o provisionamento falhar, os clientes poderão obter informações adicionais da `provisionStatusCode` propriedade.
 
-Os clientes também podem inspecionar a configuração do cronograma.
+Os clientes também podem inspecionar a configuração da agenda.
 
 
 ## <a name="permissions"></a>Permissões
@@ -32,8 +32,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,11 +53,11 @@ PUT /teams/{teamId}/schedule
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [Schedule](../resources/schedule.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto schedule.](../resources/schedule.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Schedule](../resources/schedule.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [schedule](../resources/schedule.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -84,7 +84,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

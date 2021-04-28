@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0c9b5838e9028b65b76248f22850b09645d3f6d0
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 2f7c0a90cc9c7e0f06e16740eeed1f001791b1ff
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761574"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050525"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: delta
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Obter funções de diretório recém-criadas, atualizadas ou excluídas sem precisar executar uma leitura completa de toda a coleção de recursos. Consulte [Using Delta Query](/graph/delta-query-overview) para obter detalhes.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
@@ -70,7 +70,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o código de resposta e o `200 OK` [objeto da coleção directoryRole](../resources/directoryrole.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou `deltaLink`.
+Se tiver êxito, este método retornará o código de resposta e o `200 OK` [objeto da coleção directoryRole](../resources/directoryrole.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`.
 
 - Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O aplicativo continua fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser incluída na resposta.
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -138,7 +138,7 @@ Content-type: application/json
 
 ### <a name="see-also"></a>Confira também
 
-- [Use a consulta delta para rastrear alterações nos dados do Microsoft Graph](/graph/delta-query-overview) para obter mais detalhes
+- [Use a consulta delta para rastrear alterações no Microsoft Graph dados](/graph/delta-query-overview) para obter mais detalhes
 - [Obter as alterações incrementais para usuários](/graph/delta-query-users) para solicitações de um exemplo.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

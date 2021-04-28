@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a42de1e633f893b3be5bd6cba4d972a99955a2af
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b0518cad022b4e3bef2185449b83fd767ffd4ea4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945331"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050455"
 ---
 # <a name="get-grouplifecyclepolicy"></a>Obter groupLifecyclePolicy
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

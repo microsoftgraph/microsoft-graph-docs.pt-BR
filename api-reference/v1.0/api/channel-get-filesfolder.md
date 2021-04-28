@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 48687f8f42520848369e3060174be187650db6d3
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 32272d197ff46545a7152f72f660a6132486d6c0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849008"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039892"
 ---
 # <a name="get-filesfolder"></a>Obter filesFolder
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/filesFolder
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

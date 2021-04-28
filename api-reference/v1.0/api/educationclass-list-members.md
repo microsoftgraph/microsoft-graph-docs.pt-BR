@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 452fa3f90de2eeedec46fddac8351517e6c24585
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: d24ada4c11aec3ceddac736146f8e70c4d9baf86
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460016"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048754"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Recupere os professores e alunos de uma aula. Se o token delegado for usado, os membros poderão ser vistos apenas por outros membros da aula.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
+|Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte  |
-|Aplicativo | EduRoster. Read. All, EduRoster. ReadWrite. All mais member. Read. Hidden | 
+|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All mais Member.Read.Hidden | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

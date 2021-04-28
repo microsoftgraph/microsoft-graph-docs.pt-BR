@@ -1,22 +1,22 @@
 ---
 title: Atualizar openShift
-description: Atualiza as propriedades de um objeto openShift.
+description: Atualize as propriedades de um objeto openShift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 71b6dc24bb4eb6426e5b15ca7c4147ae77ff1457
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 16d25b1c0056134ad0517630a8fd65547944f300
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032933"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051316"
 ---
 # <a name="update-openshift"></a>Atualizar openShift
 
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto [openShift](../resources/openshift.md) .
+Atualize as propriedades de um [objeto openShift.](../resources/openshift.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,17 +47,17 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça o objeto [openShift](../resources/openshift.md) modificado no corpo da solicitação para este método.
+Forneça o [objeto openShift modificado](../resources/openshift.md) no corpo da solicitação para este método.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |draftOpenShift|openShiftItem|Um turno aberto não publicado.|
-|schedulingGroupId|String| ID do grupo de agendamento. |
+|schedulingGroupId|Cadeia de caracteres| ID do grupo de agendamento. |
 |sharedOpenShift|openShiftItem|Um turno aberto publicado.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [openShift](../resources/openshift.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto openShift](../resources/openshift.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -124,7 +124,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

@@ -1,22 +1,22 @@
 ---
 title: Obter workforceIntegration
-description: Recupere as propriedades e os relacionamentos do objeto workforceIntegration.
+description: Recupere as propriedades e as relações do objeto workforceIntegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2b19f368f14f26679247f310c34c6f263e45aec6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 53cd0ca961a407c0cf8e20153e25a8bf2a3cf0f3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037931"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049349"
 ---
 # <a name="get-workforceintegration"></a>Obter workforceIntegration
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto [workforceIntegration](../resources/workforceintegration.md) .
+Recupere as propriedades e as relações de um [objeto workforceIntegration.](../resources/workforceintegration.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | WorkforceIntegration. Read. All, WorkforceIntegration. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | WorkforceIntegration.Read.All, WorkforceIntegration.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [workforceIntegration](../resources/workforceintegration.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [workforceIntegration](../resources/workforceintegration.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforcein
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
