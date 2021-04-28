@@ -1,28 +1,28 @@
 ---
-title: Usar a API de pesquisa da Microsoft para classificar resultados de pesquisa (versão prévia)
-description: Você classifica os resultados da pesquisa usando a API de pesquisa da Microsoft.
+title: Usar a API de Pesquisa da Microsoft para classificar resultados de pesquisa (visualização)
+description: Você classificar resultados de pesquisa usando a API de Pesquisa da Microsoft.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 216da2d183f70545700fe4df48e4e5d7c5f33ff9
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 4f4a2c8925e910520ca3d75d98f86d713105f6ac
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597456"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067184"
 ---
-# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a><span data-ttu-id="c1cb6-103">"Usar a API de pesquisa da Microsoft para classificar resultados de pesquisa (versão prévia)</span><span class="sxs-lookup"><span data-stu-id="c1cb6-103">"Use the Microsoft Search API to sort search results (preview)</span></span>
+# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a><span data-ttu-id="1b836-103">Usar a API de Pesquisa da Microsoft para classificar resultados de pesquisa (visualização)</span><span class="sxs-lookup"><span data-stu-id="1b836-103">Use the Microsoft Search API to sort search results (preview)</span></span>
 
-<span data-ttu-id="c1cb6-104">Você pode usar a API do Microsoft Search no Microsoft Graph para classificar os resultados da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="c1cb6-104">You can use the Microsoft Search API in Microsoft Graph to sort search results.</span></span> <span data-ttu-id="c1cb6-105">Para classificar os resultados, especifique a propriedade **sortproperties** em um objeto [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) e identifique uma propriedade de recurso em **EntityTypes** para classificar correspondências por, em ordem crescente ou decrescente.</span><span class="sxs-lookup"><span data-stu-id="c1cb6-105">To sort the results, specify the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object and identify a resource property in **entityTypes** to sort matches by, in ascending or descending order.</span></span>
+<span data-ttu-id="1b836-104">Você pode usar a API de Pesquisa da Microsoft no Microsoft Graph classificar os resultados da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="1b836-104">You can use the Microsoft Search API in Microsoft Graph to sort search results.</span></span> <span data-ttu-id="1b836-105">Para classificar os resultados, especifique a propriedade **sortProperties** em um objeto [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) e identifique uma propriedade de recurso em **entityTypes** para classificar as corresponde por, em ordem crescente ou decrescente.</span><span class="sxs-lookup"><span data-stu-id="1b836-105">To sort the results, specify the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object and identify a resource property in **entityTypes** to sort matches by, in ascending or descending order.</span></span>
 
-<span data-ttu-id="c1cb6-106">A classificação é suportada apenas para itens do SharePoint e do OneDrive.</span><span class="sxs-lookup"><span data-stu-id="c1cb6-106">Sorting is supported only for SharePoint and OneDrive items.</span></span>
-<span data-ttu-id="c1cb6-107">A propriedade a ser classificada deve ser *classificável* no esquema de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="c1cb6-107">The property to be sorted on should be *Sortable* in the search schema.</span></span>
+<span data-ttu-id="1b836-106">A classificação só é suportada para SharePoint e OneDrive itens.</span><span class="sxs-lookup"><span data-stu-id="1b836-106">Sorting is supported only for SharePoint and OneDrive items.</span></span>
+<span data-ttu-id="1b836-107">A propriedade a ser classificação deve ser *Sortable* no esquema de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="1b836-107">The property to be sorted on should be *Sortable* in the search schema.</span></span>
 
-<span data-ttu-id="c1cb6-108">A ordem de classificação padrão é ascendente.</span><span class="sxs-lookup"><span data-stu-id="c1cb6-108">The default sort order is ascending.</span></span> <span data-ttu-id="c1cb6-109">Defina a propriedade **Isdescendeting** para alterá-la.</span><span class="sxs-lookup"><span data-stu-id="c1cb6-109">Set the **isDescending** property to change it.</span></span>
+<span data-ttu-id="1b836-108">A ordem de classificação padrão é crescente.</span><span class="sxs-lookup"><span data-stu-id="1b836-108">The default sort order is ascending.</span></span> <span data-ttu-id="1b836-109">De definir **a propriedade isDescending** para alterá-la.</span><span class="sxs-lookup"><span data-stu-id="1b836-109">Set the **isDescending** property to change it.</span></span>
 
-## <a name="example-1-single-level-sort"></a><span data-ttu-id="c1cb6-110">Exemplo 1: classificação de nível único</span><span class="sxs-lookup"><span data-stu-id="c1cb6-110">Example 1: Single-level sort</span></span>
+## <a name="example-1-single-level-sort"></a><span data-ttu-id="1b836-110">Exemplo 1: Classificação de nível único</span><span class="sxs-lookup"><span data-stu-id="1b836-110">Example 1: Single-level sort</span></span>
 
-### <a name="request"></a><span data-ttu-id="c1cb6-111">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c1cb6-111">Request</span></span>
+### <a name="request"></a><span data-ttu-id="1b836-111">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1b836-111">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -48,7 +48,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="c1cb6-112">Resposta</span><span class="sxs-lookup"><span data-stu-id="c1cb6-112">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1b836-112">Resposta</span><span class="sxs-lookup"><span data-stu-id="1b836-112">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -145,9 +145,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-multi-level-sort"></a><span data-ttu-id="c1cb6-113">Exemplo 2: classificação de vários níveis</span><span class="sxs-lookup"><span data-stu-id="c1cb6-113">Example 2: Multi-level sort</span></span>
+## <a name="example-2-multi-level-sort"></a><span data-ttu-id="1b836-113">Exemplo 2: Classificação de vários níveis</span><span class="sxs-lookup"><span data-stu-id="1b836-113">Example 2: Multi-level sort</span></span>
 
-### <a name="request"></a><span data-ttu-id="c1cb6-114">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c1cb6-114">Request</span></span>
+### <a name="request"></a><span data-ttu-id="1b836-114">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1b836-114">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -179,7 +179,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="c1cb6-115">Resposta</span><span class="sxs-lookup"><span data-stu-id="c1cb6-115">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1b836-115">Resposta</span><span class="sxs-lookup"><span data-stu-id="1b836-115">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -314,11 +314,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="known-limitations"></a><span data-ttu-id="c1cb6-116">Limitações conhecidas</span><span class="sxs-lookup"><span data-stu-id="c1cb6-116">Known limitations</span></span>
+## <a name="known-limitations"></a><span data-ttu-id="1b836-116">Limitações conhecidas</span><span class="sxs-lookup"><span data-stu-id="1b836-116">Known limitations</span></span>
 
-- <span data-ttu-id="c1cb6-117">Sort não tem suporte para **Message**, **Event** e **externalItem**.</span><span class="sxs-lookup"><span data-stu-id="c1cb6-117">Sort is not supported for **message**, **event**, and **externalItem**.</span></span>
-- <span data-ttu-id="c1cb6-118">Classificar por relevância não pode ser especificado em **sortproperties**.</span><span class="sxs-lookup"><span data-stu-id="c1cb6-118">Sort by relevance cannot be specified in **sortProperties**.</span></span>
+- <span data-ttu-id="1b836-117">Não há suporte para classificação para **mensagem,** **evento** e **externalItem**.</span><span class="sxs-lookup"><span data-stu-id="1b836-117">Sort is not supported for **message**, **event**, and **externalItem**.</span></span>
+- <span data-ttu-id="1b836-118">Classificar por relevância não pode ser especificado em **sortProperties**.</span><span class="sxs-lookup"><span data-stu-id="1b836-118">Sort by relevance cannot be specified in **sortProperties**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="c1cb6-119">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="c1cb6-119">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="1b836-119">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="1b836-119">Next steps</span></span>
 
-- [<span data-ttu-id="c1cb6-120">Usar a API de Pesquisa da Microsoft para consultar dados</span><span class="sxs-lookup"><span data-stu-id="c1cb6-120">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [<span data-ttu-id="1b836-120">Usar a API de Pesquisa da Microsoft para consultar dados</span><span class="sxs-lookup"><span data-stu-id="1b836-120">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)

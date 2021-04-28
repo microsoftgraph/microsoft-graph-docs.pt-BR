@@ -9469,6 +9469,99 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Atribuir
                     href: api/cloudpcprovisioningpolicy-assign.md
+          - name: Atualizações de dispositivo (visualização)
+            displayName: Windows updates
+            items:
+              - name: Atualizações
+                href: resources/windowsupdates-updates.md
+              - name: Catálogo
+                items:
+                  - name: Catálogo
+                    href: resources/windowsupdates-catalog.md
+                  - name: Entrada do catálogo de atualizações de recursos
+                    href: resources/windowsupdates-featureupdatecatalogentry.md
+                  - name: Entrada do catálogo de atualizações de qualidade
+                    href: resources/windowsupdates-qualityupdatecatalogentry.md
+                  - name: Listar entradas de catálogo
+                    href: api/windowsupdates-catalog-list-entries.md
+              - name: Implantação
+                href: resources/windowsupdates-deployment.md
+                items:
+                  - name: Listar implantações
+                    href: api/windowsupdates-updates-list-deployments.md
+                  - name: Criar implantação
+                    href: api/windowsupdates-updates-post-deployments.md
+                  - name: Obter implantação
+                    href: api/windowsupdates-deployment-get.md
+                  - name: Atualizar implantação
+                    href: api/windowsupdates-deployment-update.md
+                  - name: Excluir implantação
+                    href: api/windowsupdates-deployment-delete.md
+                  - name: Conteúdo implantável
+                    items:
+                      - name: Referência de atualização de qualidade acelerada
+                        href: resources/windowsupdates-expeditedqualityupdatereference.md
+                      - name: Referência de atualização de recursos
+                        href: resources/windowsupdates-featureupdatereference.md
+                  - name: Audiência de implantação
+                    items:
+                      - name: Audiência de implantação
+                        href: resources/windowsupdates-deploymentaudience.md
+                      - name: Listar membros
+                        href: api/windowsupdates-deploymentaudience-list-members.md
+                      - name: Exclusões de lista
+                        href: api/windowsupdates-deploymentaudience-list-exclusions.md
+                      - name: Atualizar membros e exclusões
+                        href: api/windowsupdates-deploymentaudience-updateaudience.md
+                      - name: Atualização por ID
+                        href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+              - name: Ativo atualizável
+                href: resources/windowsupdates-updatableasset.md
+                items:
+                  - name: Listar ativos atualizáveis
+                    href: api/windowsupdates-updates-list-updatableassets.md
+                  - name: Obter ativo atualizável
+                    href: api/windowsupdates-updatableasset-get.md
+                  - name: Excluir ativo atualizável
+                    href: api/windowsupdates-updatableasset-delete.md
+                  - name: Dispositivo do Azure AD
+                    href: resources/windowsupdates-azureaddevice.md
+                    items:
+                      - name: Listar dispositivos do Azure AD
+                        href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
+                      - name: Obter dispositivo do Azure AD
+                        href: api/windowsupdates-azureaddevice-get.md
+                      - name: Excluir dispositivo do Azure AD
+                        href: api/windowsupdates-azureaddevice-delete.md
+                      - name: Registrar-se no gerenciamento de atualizações
+                        href: api/windowsupdates-updatableasset-enrollassets.md
+                      - name: Registrar por ID
+                        href: api/windowsupdates-updatableasset-enrollassetsbyid.md
+                      - name: Desemroll do gerenciamento de atualizações
+                        href: api/windowsupdates-updatableasset-unenrollassets.md
+                      - name: Desemroll por ID
+                        href: api/windowsupdates-updatableasset-unenrollassetsbyid.md
+                  - name: Grupo de ativos atualizável
+                    href: resources/windowsupdates-updatableassetgroup.md
+                    items:
+                      - name: Listar grupos de ativos atualizáveis
+                        href: api/windowsupdates-updates-list-updatableassets-updatableassetgroup.md
+                      - name: Criar grupo de ativos atualizáveis
+                        href: api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md
+                      - name: Obter grupo de ativos atualizáveis
+                        href: api/windowsupdates-updatableassetgroup-get.md
+                      - name: Excluir grupo de ativos atualizáveis
+                        href: api/windowsupdates-updatableassetgroup-delete.md
+                      - name: Listar membros
+                        href: api/windowsupdates-updatableassetgroup-list-members.md
+                      - name: Adicionar membros
+                        href: api/windowsupdates-updatableassetgroup-addmembers.md
+                      - name: Adicionar membros por ID
+                        href: api/windowsupdates-updatableassetgroup-addmembersbyid.md
+                      - name: Remover membros
+                        href: api/windowsupdates-updatableassetgroup-removemembers.md
+                      - name: Remover membros por ID
+                        href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
       - name: Educação
         items:
           - name: Visão geral
@@ -11114,6 +11207,13 @@ items:
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: Atualizar
                         href: api/accessreviewinstancedecisionitem-update.md
+                  - name: Política de revisão do Access
+                    href: resources/accessreviewpolicy.md
+                    items:
+                      - name: Obter
+                        href: api/accessreviewpolicy-get.md
+                      - name: Atualizar
+                        href: api/accessreviewpolicy-update.md
               - name: Avaliações do Access (herdação)
                 href: resources/accessreviews-root.md
                 items:

@@ -1,35 +1,35 @@
 ---
-title: tipo de recurso searchResponse
-description: Descrição do searchResponse
+title: Tipo de recurso searchResponse
+description: Descrição da pesquisaResponse
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: deb5450017b4ae9db534c30f71dd6da4f1a9b812
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 5778d82c0c4718b9f34c686a613270eebfcc56e1
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192746"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067086"
 ---
-# <a name="searchresponse-resource-type"></a><span data-ttu-id="62c59-103">tipo de recurso searchResponse</span><span class="sxs-lookup"><span data-stu-id="62c59-103">searchResponse resource type</span></span>
+# <a name="searchresponse-resource-type"></a><span data-ttu-id="0c867-103">Tipo de recurso searchResponse</span><span class="sxs-lookup"><span data-stu-id="0c867-103">searchResponse resource type</span></span>
 
-<span data-ttu-id="62c59-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="62c59-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0c867-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0c867-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="62c59-105">Representa os resultados de uma consulta de pesquisa e os termos usados para a consulta.</span><span class="sxs-lookup"><span data-stu-id="62c59-105">Represents results from a search query, and the terms used for the query.</span></span> 
+<span data-ttu-id="0c867-105">Representa a resposta de uma consulta de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="0c867-105">Represents the response from a search query.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="62c59-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="62c59-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0c867-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0c867-106">Properties</span></span>
 
-| <span data-ttu-id="62c59-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="62c59-107">Property</span></span>     | <span data-ttu-id="62c59-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="62c59-108">Type</span></span>        | <span data-ttu-id="62c59-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="62c59-109">Description</span></span> |
+| <span data-ttu-id="0c867-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0c867-107">Property</span></span>     | <span data-ttu-id="0c867-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="0c867-108">Type</span></span>        | <span data-ttu-id="0c867-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="0c867-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="62c59-110">hitsContainers</span><span class="sxs-lookup"><span data-stu-id="62c59-110">hitsContainers</span></span>|<span data-ttu-id="62c59-111">coleção [searchHitsContainer](searchhitscontainer.md)</span><span class="sxs-lookup"><span data-stu-id="62c59-111">[searchHitsContainer](searchhitscontainer.md) collection</span></span>|<span data-ttu-id="62c59-112">Uma coleção de resultados de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="62c59-112">A collection of search results.</span></span>|
-|<span data-ttu-id="62c59-113">searchTerms</span><span class="sxs-lookup"><span data-stu-id="62c59-113">searchTerms</span></span>|<span data-ttu-id="62c59-114">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="62c59-114">String collection</span></span>|<span data-ttu-id="62c59-115">Contém os termos de pesquisa enviados na consulta de pesquisa inicial.</span><span class="sxs-lookup"><span data-stu-id="62c59-115">Contains the search terms sent in the initial search query.</span></span>|
+|<span data-ttu-id="0c867-110">queryAlterationResponse</span><span class="sxs-lookup"><span data-stu-id="0c867-110">queryAlterationResponse</span></span>|[<span data-ttu-id="0c867-111">alterationResponse</span><span class="sxs-lookup"><span data-stu-id="0c867-111">alterationResponse</span></span>](alterationResponse.md)|<span data-ttu-id="0c867-112">Fornece detalhes da resposta de alteração de consulta para correção ortográfica.</span><span class="sxs-lookup"><span data-stu-id="0c867-112">Provides details of query alteration response for spelling correction.</span></span>|
+|<span data-ttu-id="0c867-113">valor</span><span class="sxs-lookup"><span data-stu-id="0c867-113">value</span></span>|<span data-ttu-id="0c867-114">[Coleção searchResultSet](searchResultSet.md)</span><span class="sxs-lookup"><span data-stu-id="0c867-114">[searchResultSet](searchResultSet.md) collection</span></span>|<span data-ttu-id="0c867-115">Representa os resultados de uma consulta de pesquisa e os termos usados para a consulta.</span><span class="sxs-lookup"><span data-stu-id="0c867-115">Represents results from a search query, and the terms used for the query.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="62c59-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="62c59-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0c867-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0c867-116">JSON representation</span></span>
 
-<span data-ttu-id="62c59-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="62c59-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0c867-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0c867-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -42,8 +42,8 @@ ms.locfileid: "48192746"
 
 ```json
 {
-  "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
-  "searchTerms": ["String"]
+  "queryAlterationResponse": {"@odata.type": "microsoft.graph.alterationResponse"},
+  "value": [{"@odata.type": "microsoft.graph.searchResultSet"}]
 }
 ```
 
