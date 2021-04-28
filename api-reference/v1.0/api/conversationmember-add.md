@@ -5,18 +5,18 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 150c3003487ed4585951495b0f9e9ed9a6f38121
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 1441ee9698720cc5d5041e7fd3df7c661574077f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848639"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053241"
 ---
 # <a name="add-conversationmember"></a>Adicionar conversationMember
 
 Namespace: microsoft.graph
 
-Adicionar um [conversationMember](../resources/conversationmember.md) a um [canal](../resources/channel.md).
+Adicionar uma [conversaMember](../resources/conversationmember.md) a um [canal](../resources/channel.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,7 +47,7 @@ Inclua as propriedades a seguir no corpo da solicitação.
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |funções|coleção de cadeias de caracteres|As funções desse usuário.|
-|user|[user](../resources/user.md)|O usuário a ser adicionado ao canal.|
+|user|[user](../resources/user.md)|O usuário a ser acrescentado ao canal.|
 
 ## <a name="response"></a>Resposta
 
@@ -99,7 +99,7 @@ content-length: 26
 
 Veja a seguir um exemplo da resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

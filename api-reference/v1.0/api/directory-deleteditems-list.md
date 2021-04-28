@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: eb5ccfae61b94d5d8771f2ae5fef7d4e690324bb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 88c13a7fade62f3eecaa8bc48001dfb265823cad
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448702"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053192"
 ---
 # <a name="list-deleted-items"></a>Listar itens excluídos
 
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.grou
 ---
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

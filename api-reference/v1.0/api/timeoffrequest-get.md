@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a55e4b9bda896084d177cef09908807162284c26
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 99683f33448c4d7b492b19f07f2f0fc704b73753
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963574"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52034389"
 ---
 # <a name="get-timeoffrequest"></a>Obter timeOffRequest
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffRequests/{ti
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

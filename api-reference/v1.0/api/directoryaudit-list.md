@@ -1,22 +1,22 @@
 ---
 title: Lista directoryAudits
-description: Descreve o método de lista do recurso directoryAudit (entidade) da API do Microsoft Graph.
+description: Descreve o método de lista do recurso directoryAudit (entidade) da API Graph Microsoft.
 localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8cf4dc9624408820bb3d4ea9cdf44bbc47ec10c4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cc7037ab178629e6a0861506cf31a9f0604d70f7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956695"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053171"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
 Namespace: microsoft.graph
 
-Obter a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo gerenciamento de usuários, aplicativos, dispositivos e grupos, PIM (gerenciamento de identidade privilegiada), análises de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (redefinições de senha de autoatendados e administradores), gerenciamento de grupo de autoatendados e assim por diante.
+Obter a lista de logs de auditoria gerados por Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo gerenciamento de usuários, aplicativos, dispositivos e grupos, PIM (gerenciamento de identidade privilegiada), análises de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (redefinições de senha de autoatendados e administradores), gerenciamento de grupo de autoatendados e assim por diante.
 
 ## <a name="permissions"></a>Permissões
 
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 
 Veja a seguir um exemplo da resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

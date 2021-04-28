@@ -1,22 +1,22 @@
 ---
 title: Obter directoryAudit
-description: Descreve o método get do recurso directoryAudit (entidade) da API do Microsoft Graph.
+description: Descreve o método get do recurso directoryAudit (entidade) da API Graph Microsoft.
 localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 068bc198b767afdb18e43e05fed316fb9ddaca57
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e7886e69f203bb685fcb8876472a5b26115dbe54
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956730"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053178"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
 
 Namespace: microsoft.graph
 
-Obter um item de log de auditoria específico do Azure Active Directory. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como gerenciamento de usuário, aplicativo, dispositivo e grupo, pim (gerenciamento de identidade privilegiada), análises de acesso, termos de uso, proteção de identidade, gerenciamento de senha (redefinições de senha de autoatendados e administrador), gerenciamento de grupo de autoatendados e assim por diante.
+Obter um item Azure Active Directory log de auditoria específico. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como gerenciamento de usuário, aplicativo, dispositivo e grupo, pim (gerenciamento de identidade privilegiada), análises de acesso, termos de uso, proteção de identidade, gerenciamento de senha (redefinições de senha de autoatendados e administrador), gerenciamento de grupo de autoatendados e assim por diante.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+|Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All |
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 ### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

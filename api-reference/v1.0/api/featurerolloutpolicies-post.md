@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bbd11d73cf8453eac184708324b1001144c1a36c
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 5d1d55faa62ea070287692298c568b0db48f8d15
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201572"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052387"
 ---
 # <a name="create-featurerolloutpolicy"></a>Criar featureRolloutPolicy
 
@@ -50,9 +50,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [um feat
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|displayName |cadeia de caracteres |O nome de exibição dessa política de lançamento de recursos.|
+|displayName |string |O nome de exibição dessa política de lançamento de recursos.|
 |feature |stagedFeatureName |O recurso que seria lançado usando essa política.|
-|isEnabled |cadeia de caracteres |Indica se a adoção de recursos está habilitada.|
+|isEnabled |string |Indica se a adoção de recursos está habilitada.|
 
 ## <a name="response"></a>Resposta
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

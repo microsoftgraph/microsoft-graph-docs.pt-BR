@@ -1,22 +1,22 @@
 ---
 title: Obter grupo
-description: Recupere o **grupo** Microsoft 365 que corresponde a esse **educationClass**.
+description: Recupere o Microsoft 365 **grupo que** corresponde a esta **educationClass**.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d8854a4a9f72aacd8dd04297da45f2343efc0bc1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6439e460bcd1e32780540de4bce3f36d432c75a0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087513"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035565"
 ---
 # <a name="get-group"></a>Obter grupo
 
 Namespace: microsoft.graph
 
-Recupere o **grupo** Microsoft 365 que corresponde a esse **educationClass**.
+Recupere o Microsoft 365 **grupo que** corresponde a esta **educationClass**.
 
 >**Observação:** se o token delegado for usado, os membros só poderão ver informações sobre as próprias escolas. Nesse caso, use o recurso `...beta/education/me/schools`.
 
@@ -25,8 +25,8 @@ Uma combinação de permissões é obrigatória para chamar essa API. Para saber
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All|
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |  Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All|
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All| 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/group
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

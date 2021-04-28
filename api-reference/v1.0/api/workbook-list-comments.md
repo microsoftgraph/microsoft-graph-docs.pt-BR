@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 32d58e77fe16bca2db2af3144b4dd033485ae534
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 11ec3c796207e216734fb9e858b7fb0fd9ef0007
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626178"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031494"
 ---
 # <a name="list-workbookcomments"></a>Listar workbookComments
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

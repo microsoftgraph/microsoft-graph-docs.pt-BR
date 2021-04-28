@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 6e9da9bd6847872c9b85adf49cd51ecef503c485
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: ba9b5953f877a6dae825aea6bede63af18c55ffd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473406"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039542"
 ---
 # <a name="list-used"></a>Listar usados
 
@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/used
 
 #### <a name="response"></a>Resposta
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
 <!-- {
   "blockType": "response",

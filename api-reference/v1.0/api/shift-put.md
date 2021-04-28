@@ -1,24 +1,24 @@
 ---
-title: Substituir Shift
+title: Substituir turno
 description: Substitua um turno existente.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0cca74df2655b8aa56e2f93fa315f30ea1598a37
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 888932c4732bca7f15a5eb61327cda9bb554b762
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315546"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52034893"
 ---
-# <a name="replace-shift"></a>Substituir Shift
+# <a name="replace-shift"></a>Substituir turno
 
 Namespace: microsoft.graph
 
-Substitua um [turno](../resources/shift.md)existente.
+Substitua um turno [existente](../resources/shift.md).
 
-Se o [turno](../resources/shift.md) especificado não existir, este método retornará `404 Not found` .
+Se o turno [especificado](../resources/shift.md) não existir, este método retornará `404 Not found` .
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,11 +47,11 @@ PATCH /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [Shift](../resources/shift.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto shift.](../resources/shift.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Shift](../resources/shift.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [shift](../resources/shift.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -144,7 +144,7 @@ Prefer: return=representation
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

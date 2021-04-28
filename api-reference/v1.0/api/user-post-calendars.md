@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dd857c550e5054a22c78403b072cc17f843a82b3
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: 2b19e7fdfb56518d26ba0dafd597838047ea21ae
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720718"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031496"
 ---
 # <a name="create-calendar"></a>Criar calendário
 
@@ -82,7 +82,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [calendar](../resources/calendar.md).
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

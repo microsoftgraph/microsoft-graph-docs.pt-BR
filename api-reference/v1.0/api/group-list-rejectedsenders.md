@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0f3e976a04f33866b81926849d9ad310551c335a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b4794c7b2d16f51584ff0a5e8b60c75bfe979df6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055096"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052310"
 ---
 # <a name="list-rejectedsenders"></a>Listar rejectedSenders
 
-Namespace: Microsoft. Graph obtenha uma lista de usuários ou grupos que estão na lista de remetentes rejeitados para esse grupo. 
+Namespace: microsoft.graph Obter uma lista de usuários ou grupos que estão na lista de envios rejeitados para esse grupo. 
 
 Os usuários na lista de remetentes rejeitados não podem postar em conversas do grupo (identificado na URL da solicitação GET). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

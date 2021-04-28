@@ -1,24 +1,24 @@
 ---
-title: 'Call: cancelMediaProcessing'
-description: Cancela o processamento de mídia para qualquer operação playPrompt ou recordResponse em andamento.
+title: 'call: cancelMediaProcessing'
+description: Cancela o processamento de mídia para quaisquer operações playPrompt ou recordResponse em andamento.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4ba60b3008bcab8afb6136f3a9848e8ffb0dc6a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be241d8c63f8d47bf4c76a29d2ee460a727dd31d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966391"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035908"
 ---
-# <a name="call-cancelmediaprocessing"></a>Call: cancelMediaProcessing
+# <a name="call-cancelmediaprocessing"></a>call: cancelMediaProcessing
 
 Namespace: microsoft.graph
 
-Cancela o processamento de todas as operações de mídia em andamento.
+Cancela o processamento de qualquer operação de mídia em andamento.
 
-Operações de mídia consulte as operações IVR [playPrompt](./call-playprompt.md) e [recordResponse](./call-record.md), que são, por padrão, enfileiradas para processar na ordem. O método **cancelMediaProcessing** cancela qualquer operação em processo, bem como operações que são enfileiradas. Por exemplo, este método pode ser usado para limpar a fila de operação IVR para uma nova operação de mídia. No entanto, ele não cancelará uma operação do **subscribeToTone** , pois ele funciona independentemente de qualquer fila de operação.
+As operações de mídia referem-se às operações IVR [playPrompt](./call-playprompt.md) e [recordResponse](./call-record.md), que por padrão são enluadas para processar em ordem. O **método cancelMediaProcessing** cancela qualquer operação que está em processo, bem como as operações que estão na fila. Por exemplo, esse método pode ser usado para limpar a fila de operação ivr para uma nova operação de mídia. No entanto, ele não cancelará uma **operação subscribeToTone** porque opera independentemente de qualquer fila de operação.
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,11 +49,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro     | Tipo   | Descrição         |
 | :------------ | :----- | :------------------ |
-| clientContext | String | O contexto do cliente. |
+| clientContext | Cadeia de caracteres | O contexto do cliente. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta http e um cabeçalho de local com um URI para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
+Se tiver êxito, este método retornará um código de resposta HTTP e um cabeçalho location com um URI para o `200 OK` [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
 
 ## <a name="example"></a>Exemplo
 
@@ -102,7 +102,7 @@ Content-Length: 62
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -124,7 +124,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---operation-canceled-for-recordresponse"></a>Notificação-operação cancelada para recordResponse
+##### <a name="notification---operation-canceled-for-recordresponse"></a>Notificação - Operação cancelada para recordResponse
 
 ```http
 POST https://bot.contoso.com/api/calls

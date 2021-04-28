@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fadacf270f549efd7f7e7f63ee52e6d2d225f84e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ab8c15bc3aff44419c20e0cefa26b178a9c92605
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953611"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053108"
 ---
 # <a name="list-schools"></a>Listar escolas
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/education/me/schools
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

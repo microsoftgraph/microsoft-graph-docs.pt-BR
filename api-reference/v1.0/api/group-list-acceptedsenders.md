@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 47e2a442b2f38d46a0b23df06556d3381ad9e10f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9874b3fd3ad12c77f27e496dbcddb860a86dca8f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070216"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052352"
 ---
 # <a name="list-acceptedsenders"></a>Listar acceptedSenders
 
-Namespace: Microsoft. Graph obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para esse grupo.
+Namespace: microsoft.graph Obter uma lista de usuários ou grupos que estão na lista de envios aceitos para esse grupo.
 
 Os usuários na lista de remetentes aceitos podem postar em conversas do grupo (identificado na URL da solicitação GET). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

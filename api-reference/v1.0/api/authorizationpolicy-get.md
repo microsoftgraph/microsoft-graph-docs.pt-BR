@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7ffb4e245e9a24f5ed33576dbd414891ee5d28ac
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a5a108cc74ba41cfa5ac21a362c053bfc966bf14
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434913"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052527"
 ---
 # <a name="get-authorizationpolicy"></a>Obter authorizationPolicy
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

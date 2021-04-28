@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 97a902f38b983105a1815250071b3ef7f8b3d7bd
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 5efd624bf4a8104465e7663a41b758ec8661a2eb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910501"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031513"
 ---
 # <a name="update-workforceintegration"></a>Atualizar workforceIntegration
 
@@ -52,14 +52,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |apiVersion|Int32|Versão da API para a URL de retorno de chamada. Comece com 1.|
 |displayName|Cadeia de caracteres|Nome da integração da força de trabalho.|
-|criptografia|workforceIntegrationEncryption|O recurso de criptografia de integração da força de trabalho. |
-|isActive|Booliano|Indica se essa integração de força de trabalho está ativa e disponível no momento.|
-|supportedEntities|string| Os possíveis valores são: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Se você selecionar mais de um valor, todos os valores deverão começar com a primeira letra em maiúsculas.|
-|url|Cadeia de caracteres| URL de integração da força de trabalho para retornos de chamada do serviço de turno. |
+|encryption|workforceIntegrationEncryption|O recurso de criptografia de integração de força de trabalho. |
+|isActive|Boolean|Indica se essa integração de força de trabalho está ativa e disponível no momento.|
+|supportedEntities|string| Os possíveis valores são: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúscula.|
+|url|Cadeia de caracteres| URL de integração de força de trabalho para retornos de chamada do serviço de turno. |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [workforceIntegration](../resources/workforceintegration.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [workforceIntegration](../resources/workforceintegration.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -115,7 +115,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -140,9 +140,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="examples-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>Exemplos Casos de uso da entidade WorkforceIntegration para filtragem por qualificação de regras WFM
+## <a name="examples-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>Exemplos Use casos de entidade WorkforceIntegration para filtragem por qualificação de regras WFM
 
-### <a name="use-case-replace-an-existing-workforceintegration-to-enable-swaprequest-for-eligibility-filtering"></a>Caso de uso: substitua uma WorkforceIntegration existente para habilitar SwapRequest para filtragem de qualificação
+### <a name="use-case-replace-an-existing-workforceintegration-to-enable-swaprequest-for-eligibility-filtering"></a>Caso de uso: Substitua uma WorkforceIntegration existente para habilitar SwapRequest para filtragem de qualificação
 
 ### <a name="request"></a>Solicitação
 
@@ -182,14 +182,14 @@ Content-type: application/json
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
-Para ver como criar uma nova força de trabalho com SwapRequest habilitado para filtragem de qualificação, consulte [Criar](../api/workforceintegration-post.md).
+Para ver como criar uma nova força de trabalho com SwapRequest habilitado para filtragem de qualificação, consulte [Create](../api/workforceintegration-post.md).
 
-## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Exemplo de busca de turnos qualificados quando SwapRequest é incluído em eligibilityFilteringEnabledEntities
-A interação entre os pontos de extremidade de integração do aplicativo Shifts e da força de trabalho seguirá o padrão existente.
+## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Exemplo de busca de turnos qualificados quando SwapRequest está incluído em eligibilityFilteringEnabledEntities
+A interação entre o aplicativo Shifts e os pontos de extremidade de integração da força de trabalho seguirá o padrão existente.
 
 ### <a name="request"></a>Solicitação
 
-A seguir está um exemplo da solicitação feita por Shifts ao ponto de extremidade de integração da força de trabalho para buscar turnos qualificados para uma solicitação de troca.
+A seguir, um exemplo da solicitação feita por Shifts para o ponto de extremidade de integração da força de trabalho para buscar turnos qualificados para uma solicitação de troca.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -205,7 +205,7 @@ Accept-Language: en-us
 ```
 ### <a name="response"></a>Resposta
 
-A seguir está um exemplo da resposta do serviço de integração da força de trabalho.
+A seguir, um exemplo da resposta do serviço de integração da força de trabalho.
 ```
 HTTP/1.1 200 OK
 {

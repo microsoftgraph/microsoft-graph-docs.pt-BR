@@ -1,30 +1,30 @@
 ---
 title: Obter entrada
-description: Descreve o método get do recurso signIn (entidade) da API do Microsoft Graph.
+description: Descreve o método get do recurso signIn (entidade) da API Graph Microsoft.
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: cb09d2f9fde80ba6e9d24cae80a39a74faacc3ed
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d4da7d4abf4fb6c83c8dc557b628228d2a235094
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131989"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52034592"
 ---
 # <a name="get-signin"></a>Obter entrada
 
 Namespace: microsoft.graph
 
-Recupere um evento específico de entrada do Azure AD para seu locatário. As inserções que são interativas por natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de logom.
+Recupere um evento específico de entrada do Azure AD para seu locatário. As inserções interativas de natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de login.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+|Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All e Directory.Read.All |
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns/{id}
 ### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

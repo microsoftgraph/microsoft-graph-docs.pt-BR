@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 147f6f4aaeed20a51e69ecca8bfb310d4e253cfa
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 45f0e9a667747b522f2a3a8831ae9b3b684ad41c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51506890"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031512"
 ---
 # <a name="create-contactfolder"></a>Criar ContactFolder
 
@@ -87,7 +87,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [contactFolder](../resources/contactfolder.md).
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

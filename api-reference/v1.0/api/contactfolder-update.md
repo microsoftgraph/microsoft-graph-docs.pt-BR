@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 851d28549c90a79c74f806b8ec882d7d0d6611c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b0dca141622a784702a2a2153774d8564d4ccc55
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010098"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035712"
 ---
 # <a name="update-contactfolder"></a>Atualizar contactfolder
 
@@ -43,8 +43,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da pasta.|
-|parentFolderId|String|A ID da pasta pai da pasta.|
+|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
+|parentFolderId|Cadeia de caracteres|A ID da pasta pai da pasta.|
 
 ## <a name="response"></a>Resposta
 
@@ -87,7 +87,7 @@ Content-length: 84
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

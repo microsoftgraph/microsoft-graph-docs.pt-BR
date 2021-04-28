@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6af194afb2d341869e622644fe428246599c77fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8788b039c8f9234c9544f08cb354860fb3534116
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094810"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053087"
 ---
 # <a name="delete-conversation-thread"></a>Excluir thread de conversas
 
-Namespace: Microsoft. Graph excluir um objeto [thread](../resources/conversationthread.md) .
+Namespace: microsoft.graph Excluir um [objeto thread.](../resources/conversationthread.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -76,7 +76,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true

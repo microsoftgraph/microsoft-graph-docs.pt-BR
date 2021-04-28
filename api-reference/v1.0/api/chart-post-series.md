@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a329a9ec6f2966460213308a44e8da35011fe1b4
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 9468a415a02409a17862cec4486eee8156973e1b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575634"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053283"
 ---
 # <a name="create-chartseries"></a>Criar ChartSeries
 
@@ -84,7 +84,7 @@ Content-length: 26
 
 No corpo da solicitação, fornece uma representação JSON do [objeto WorkbookChartSeries.](../resources/chartseries.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
