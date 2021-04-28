@@ -1,37 +1,37 @@
 ---
 title: Criar workforceIntegration
-description: Criar um novo objeto workforceIntegration.
+description: Crie um novo objeto workforceIntegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3ec2f2629e7f64e2f7cf7ae703b88c5eb8fe43bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2eee6b620bcd22e571a2b526d4a43e70fe91416a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015551"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055642"
 ---
-# <a name="create-workforceintegration"></a><span data-ttu-id="e514f-103">Criar workforceIntegration</span><span class="sxs-lookup"><span data-stu-id="e514f-103">Create workforceIntegration</span></span>
+# <a name="create-workforceintegration"></a><span data-ttu-id="9f748-103">Criar workforceIntegration</span><span class="sxs-lookup"><span data-stu-id="9f748-103">Create workforceIntegration</span></span>
 
-<span data-ttu-id="e514f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e514f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9f748-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9f748-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e514f-105">Criar um novo objeto [workforceIntegration](../resources/workforceintegration.md) .</span><span class="sxs-lookup"><span data-stu-id="e514f-105">Create a new [workforceIntegration](../resources/workforceintegration.md) object.</span></span>
-<span data-ttu-id="e514f-106">Você pode configurar quais entidades você deseja que recebam as notificações de alteração síncronas em e defina as entidades para configurar a filtragem pela qualificação de regras do WFM, incluindo solicitações de troca.</span><span class="sxs-lookup"><span data-stu-id="e514f-106">You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.</span></span>
+<span data-ttu-id="9f748-105">Crie um novo [objeto workforceIntegration.](../resources/workforceintegration.md)</span><span class="sxs-lookup"><span data-stu-id="9f748-105">Create a new [workforceIntegration](../resources/workforceintegration.md) object.</span></span>
+<span data-ttu-id="9f748-106">Você pode configurar para quais entidades deseja receber notificações de alteração síncrona shifts e definir entidades para configurar a filtragem por qualificação de regras WFM, incluindo solicitações de troca.</span><span class="sxs-lookup"><span data-stu-id="9f748-106">You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e514f-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="e514f-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9f748-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="9f748-107">Permissions</span></span>
 
-<span data-ttu-id="e514f-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e514f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9f748-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9f748-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e514f-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e514f-110">Permission type</span></span>                        | <span data-ttu-id="e514f-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e514f-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="9f748-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9f748-110">Permission type</span></span>                        | <span data-ttu-id="9f748-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9f748-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="e514f-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e514f-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e514f-113">WorkforceIntegration. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="e514f-113">WorkforceIntegration.ReadWrite.All</span></span> |
-| <span data-ttu-id="e514f-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e514f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e514f-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e514f-115">Not supported.</span></span> |
-| <span data-ttu-id="e514f-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e514f-116">Application</span></span>                            | <span data-ttu-id="e514f-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e514f-117">Not supported.</span></span> |
+| <span data-ttu-id="9f748-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9f748-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="9f748-113">WorkforceIntegration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f748-113">WorkforceIntegration.ReadWrite.All</span></span> |
+| <span data-ttu-id="9f748-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9f748-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9f748-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9f748-115">Not supported.</span></span> |
+| <span data-ttu-id="9f748-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9f748-116">Application</span></span>                            | <span data-ttu-id="9f748-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9f748-117">Not supported.</span></span> |
 
-> <span data-ttu-id="e514f-118">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="e514f-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="e514f-119">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="e514f-119">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="9f748-118">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="9f748-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="9f748-119">Os administradores globais podem acessar grupos dos que não são membros.</span><span class="sxs-lookup"><span data-stu-id="9f748-119">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e514f-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e514f-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9f748-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9f748-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,29 +39,29 @@ ms.locfileid: "48015551"
 POST /teamwork/workforceIntegrations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e514f-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e514f-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9f748-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9f748-121">Request headers</span></span>
 
-| <span data-ttu-id="e514f-122">Nome</span><span class="sxs-lookup"><span data-stu-id="e514f-122">Name</span></span>          | <span data-ttu-id="e514f-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="e514f-123">Description</span></span>   |
+| <span data-ttu-id="9f748-122">Nome</span><span class="sxs-lookup"><span data-stu-id="9f748-122">Name</span></span>          | <span data-ttu-id="9f748-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="9f748-123">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="e514f-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="e514f-124">Authorization</span></span> | <span data-ttu-id="e514f-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e514f-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e514f-127">Content-type</span><span class="sxs-lookup"><span data-stu-id="e514f-127">Content-type</span></span> | <span data-ttu-id="e514f-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e514f-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="9f748-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="9f748-124">Authorization</span></span> | <span data-ttu-id="9f748-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9f748-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9f748-127">Content-type</span><span class="sxs-lookup"><span data-stu-id="9f748-127">Content-type</span></span> | <span data-ttu-id="9f748-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9f748-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e514f-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e514f-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9f748-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9f748-130">Request body</span></span>
 
-<span data-ttu-id="e514f-131">No corpo da solicitação, forneça uma representação JSON de um objeto [workforceIntegration](../resources/workforceintegration.md) .</span><span class="sxs-lookup"><span data-stu-id="e514f-131">In the request body, supply a JSON representation of a [workforceIntegration](../resources/workforceintegration.md) object.</span></span>
+<span data-ttu-id="9f748-131">No corpo da solicitação, fornece uma representação JSON de um [objeto workforceIntegration.](../resources/workforceintegration.md)</span><span class="sxs-lookup"><span data-stu-id="9f748-131">In the request body, supply a JSON representation of a [workforceIntegration](../resources/workforceintegration.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e514f-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="e514f-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9f748-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="9f748-132">Response</span></span>
 
-<span data-ttu-id="e514f-133">Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [workforceIntegration](../resources/workforceintegration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e514f-133">If successful, this method returns a `201 Created` response code and a new [workforceIntegration](../resources/workforceintegration.md) object in the response body.</span></span>
+<span data-ttu-id="9f748-133">Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo objeto [workforceIntegration](../resources/workforceintegration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9f748-133">If successful, this method returns a `201 Created` response code and a new [workforceIntegration](../resources/workforceintegration.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e514f-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e514f-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="9f748-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="9f748-134">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e514f-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e514f-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9f748-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9f748-135">Request</span></span>
 
-<span data-ttu-id="e514f-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="e514f-136">The following is an example of the request.</span></span>
+<span data-ttu-id="9f748-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="9f748-136">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="e514f-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="e514f-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9f748-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="9f748-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_workforceintegration_from_teamwork"
@@ -83,19 +83,19 @@ Content-type: application/json
   "supportedEntities": "supportedEntities-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e514f-138">C#</span><span class="sxs-lookup"><span data-stu-id="e514f-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9f748-138">C#</span><span class="sxs-lookup"><span data-stu-id="9f748-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-workforceintegration-from-teamwork-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e514f-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e514f-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9f748-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9f748-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-workforceintegration-from-teamwork-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e514f-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e514f-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9f748-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9f748-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-workforceintegration-from-teamwork-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e514f-141">Java</span><span class="sxs-lookup"><span data-stu-id="e514f-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="9f748-141">Java</span><span class="sxs-lookup"><span data-stu-id="9f748-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-workforceintegration-from-teamwork-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,11 +104,11 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e514f-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="e514f-142">Response</span></span>
+### <a name="response"></a><span data-ttu-id="9f748-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="9f748-142">Response</span></span>
 
-<span data-ttu-id="e514f-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="e514f-143">The following is an example of the response.</span></span>
+<span data-ttu-id="9f748-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="9f748-143">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="e514f-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e514f-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="9f748-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="9f748-144">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -133,13 +133,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="examples-for-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a><span data-ttu-id="e514f-146">Exemplos de casos de uso da entidade WorkforceIntegration para filtragem pela elegibilidade de regras do WFM</span><span class="sxs-lookup"><span data-stu-id="e514f-146">Examples for Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility</span></span>
+## <a name="examples-for-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a><span data-ttu-id="9f748-145">Exemplos de casos de uso da entidade WorkforceIntegration para filtragem por qualificação de regras WFM</span><span class="sxs-lookup"><span data-stu-id="9f748-145">Examples for Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility</span></span>
 
-### <a name="use-case-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a><span data-ttu-id="e514f-147">Caso de uso: criar um novo WorkforceIntegration com o SwapRequest habilitado para filtragem de qualificação</span><span class="sxs-lookup"><span data-stu-id="e514f-147">Use case: Create a new WorkforceIntegration with SwapRequest enabled for eligibility filtering</span></span>
+### <a name="use-case-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a><span data-ttu-id="9f748-146">Caso de uso: Criar uma nova WorkforceIntegration com SwapRequest habilitada para filtragem de qualificação</span><span class="sxs-lookup"><span data-stu-id="9f748-146">Use case: Create a new WorkforceIntegration with SwapRequest enabled for eligibility filtering</span></span>
 
-### <a name="request"></a><span data-ttu-id="e514f-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e514f-148">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9f748-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9f748-147">Request</span></span>
 
-<span data-ttu-id="e514f-149">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="e514f-149">The following is an example of the request.</span></span> 
+<span data-ttu-id="9f748-148">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="9f748-148">The following is an example of the request.</span></span> 
 ```
 POST https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/
 {
@@ -157,9 +157,9 @@ POST https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/
 Authorization: Bearer {token}
 Content-type: application/json
 ```
-### <a name="response"></a><span data-ttu-id="e514f-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="e514f-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="9f748-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="9f748-149">Response</span></span>
 
-<span data-ttu-id="e514f-151">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="e514f-151">The following is an example of the response.</span></span>
+<span data-ttu-id="9f748-150">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="9f748-150">The following is an example of the response.</span></span>
 ```
 HTTP/1.1 200 OK
 {
@@ -177,14 +177,14 @@ HTTP/1.1 200 OK
 }
 
 ```
-<span data-ttu-id="e514f-152">Para ver como atualizar um workforceintegration existente com o SwapRequest habilitado para filtragem de qualificação, consulte [Update](../api/workforceintegration-update.md).</span><span class="sxs-lookup"><span data-stu-id="e514f-152">To see how to update an existing workforceintegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).</span></span>
+<span data-ttu-id="9f748-151">Para ver como atualizar uma força de trabalho existente com SwapRequest habilitado para filtragem de qualificação, consulte [Update](../api/workforceintegration-update.md).</span><span class="sxs-lookup"><span data-stu-id="9f748-151">To see how to update an existing workforceintegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).</span></span>
 
-## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a><span data-ttu-id="e514f-153">Exemplo de busca de turnos qualificados quando o SwapRequest está incluído no eligibilityFilteringEnabledEntities</span><span class="sxs-lookup"><span data-stu-id="e514f-153">Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities</span></span>
-<span data-ttu-id="e514f-154">A interação entre o aplicativo turnos e os pontos de extremidade de integração da força de força seguirá o padrão existente.</span><span class="sxs-lookup"><span data-stu-id="e514f-154">The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.</span></span>
+## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a><span data-ttu-id="9f748-152">Exemplo de busca de turnos qualificados quando SwapRequest está incluído em eligibilityFilteringEnabledEntities</span><span class="sxs-lookup"><span data-stu-id="9f748-152">Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities</span></span>
+<span data-ttu-id="9f748-153">A interação entre o aplicativo Shifts e os pontos de extremidade de integração da força de trabalho seguirá o padrão existente.</span><span class="sxs-lookup"><span data-stu-id="9f748-153">The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.</span></span>
 
-### <a name="request"></a><span data-ttu-id="e514f-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e514f-155">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9f748-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9f748-154">Request</span></span>
 
-<span data-ttu-id="e514f-156">Veja a seguir um exemplo da solicitação feita por turnos para o ponto de extremidade de integração de força de funcionários para buscar turnos qualificados para uma solicitação de troca.</span><span class="sxs-lookup"><span data-stu-id="e514f-156">The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.</span></span>
+<span data-ttu-id="9f748-155">A seguir, um exemplo da solicitação feita por Shifts para o ponto de extremidade de integração da força de trabalho para buscar turnos qualificados para uma solicitação de troca.</span><span class="sxs-lookup"><span data-stu-id="9f748-155">The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.</span></span>
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -198,9 +198,9 @@ Accept-Language: en-us
    }]
 }
 ```
-### <a name="response"></a><span data-ttu-id="e514f-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="e514f-157">Response</span></span>
+### <a name="response"></a><span data-ttu-id="9f748-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="9f748-156">Response</span></span>
 
-<span data-ttu-id="e514f-158">Veja a seguir um exemplo da resposta do serviço de integração de força de funcionários.</span><span class="sxs-lookup"><span data-stu-id="e514f-158">The following is an example of the response from the workforce integration service.</span></span>
+<span data-ttu-id="9f748-157">A seguir, um exemplo da resposta do serviço de integração da força de trabalho.</span><span class="sxs-lookup"><span data-stu-id="9f748-157">The following is an example of the response from the workforce integration service.</span></span>
 ```
 HTTP/1.1 200 OK
 {
