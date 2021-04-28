@@ -1,16 +1,16 @@
 ---
 title: Atualizar a categoria do Outlook
-description: 'Atualize a propriedade gravável, **color**, do objeto outlookCategory especificado. Você não pode modificar a **propriedade displayName** '
+description: 'Atualize a propriedade gravável, **color**, do objeto outlookCategory especificado. Não é possível modificar a **propriedade displayName** '
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e18edb079cf507e350f7b9ee879141a02f27030
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4ca7f779344a73baf52822b667995ccfaefb87b0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128369"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053983"
 ---
 # <a name="update-outlook-category"></a>Atualizar a categoria do Outlook
 
@@ -19,12 +19,12 @@ Namespace: microsoft.graph
 
 Atualize a propriedade gravável, **color**, do objeto [outlookCategory](../resources/outlookcategory.md) especificado. Não é possível modificar a propriedade **displayName** depois de criar a categoria.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | MailboxSettings.ReadWrite    |
 |Aplicativo | MailboxSettings.ReadWrite |
 
@@ -88,7 +88,7 @@ Content-length: 30
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

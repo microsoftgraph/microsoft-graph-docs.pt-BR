@@ -1,29 +1,29 @@
 ---
-title: Obter local
-description: Recupere as propriedades e os relacionamentos de um objeto place.
+title: Obter lugar
+description: Recupere as propriedades e as relações de um objeto place.
 localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2579bac8f3e9b9a3cd951ea5c533541edacb1308
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: eb36b9b79f6058644da8529ba353a613e97726b7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059648"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053997"
 ---
-# <a name="get-place"></a>Obter local
+# <a name="get-place"></a>Obter lugar
 
 Namespace: microsoft.graph
 
-Obter as propriedades e os relacionamentos de um [objeto de](../resources/place.md) local especificado por sua ID ou endereço de email.
+Obter as propriedades e as relações de um [objeto local](../resources/place.md) especificado por sua ID ou endereço de email.
 
-O **objeto** place pode ser um dos seguintes tipos:
+O **objeto place** pode ser um dos seguintes tipos:
 
-* Uma [sala](../resources/room.md) que inclui propriedades rica, como um endereço de email para a sala e acessibilidade, capacidade e suporte ao dispositivo.
+* Uma [sala](../resources/room.md) que inclui propriedades ricas, como um endereço de email para a sala e acessibilidade, capacidade e suporte a dispositivos.
 * Uma [lista de](../resources/roomlist.md) sala que inclui um endereço de email para a  lista de sala e uma propriedade de navegação para obter a coleção de instâncias de sala nessa lista de sala.
 
-Room **e** **roomList** são derivados do [objeto place.](../resources/place.md)
+Sala **e** **roomList** são derivados do [objeto place.](../resources/place.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Place.Read.All |
+| Delegado (conta corporativa ou de estudante)     | Place.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo                            | Place.Read.All |
 
@@ -44,7 +44,7 @@ GET /places/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Use `$select` para obter propriedades **específicas do local.**
+Use `$select` para obter propriedades de **local** específicas.
 
 Para obter mais informações, consulte [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -60,7 +60,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e o objeto de [local](../resources/place.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [place](../resources/place.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 
 Este é um exemplo de resposta.
 
->**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -189,7 +189,7 @@ GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
 
 Este é um exemplo de resposta.
 
->**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 
 <!-- {
   "blockType": "response",

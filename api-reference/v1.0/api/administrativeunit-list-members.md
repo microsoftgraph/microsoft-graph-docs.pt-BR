@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 538b9c5448cfe2c7cd6eae1b0d9d78825fdf10ef
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f65e2f2b8509e5718146a2b99893e35e1bea6327
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433009"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054207"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -57,7 +57,7 @@ A solicitação a seguir lista os membros da unidade administrativa, retornando 
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members
 ```
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
  
 ```http
 HTTP/1.1 200 OK
@@ -89,7 +89,7 @@ A solicitação a seguir lista as referências de membro da unidade administrati
 ```
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 ```
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
  
 ```http
 HTTP/1.1 200 OK

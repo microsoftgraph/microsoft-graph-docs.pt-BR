@@ -1,21 +1,21 @@
 ---
 title: Excluir participante
-description: Exclua um participante específico da chamada.
+description: Exclua um participante específico na chamada.
 manager: zhengni
 author: jackry6350
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 40171c4cea7fe97fb20dc7ef3bfb7e27ff287bf3
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 6ba26fc94f12b1e9e10f603f0448517e19db388d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240379"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054515"
 ---
 # <a name="delete-participant"></a>Excluir participante
 
-Exclua um participante específico em uma chamada. Em algumas situações, é apropriado para um aplicativo remover um participante de uma chamada ativa. Essa ação pode ser feita depois que o participante atender à chamada. Quando um chamador ativo é removido, ele é removido imediatamente da chamada sem notificação de pré ou pós-remoção.
+Exclua um participante específico em uma chamada. Em algumas situações, é apropriado que um aplicativo remova um participante de uma chamada ativa. Essa ação pode ser feita depois que o participante responder à chamada. Quando um chamador ativo é removido, ele é imediatamente removido da chamada sem notificação de pré ou pós-remoção.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
 | Aplicativo                            | Nenhum                                        |
 
-A configuração de reunião de aplicativo no nível do locatário é necessária para permitir que um aplicativo chame essa API. O administrador de locatários deve chamar o seguinte cmdlet no PowerShell remoto do locatário para conceder a permissão ao aplicativo para chamar essa API. Para obter mais informações, [consulte Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
+A configuração de reunião de aplicativo no nível de locatário é necessária para permitir que um aplicativo chame essa API. O administrador do locatário deve chamar o cmdlet a seguir no PowerShell remoto do locatário para conceder a permissão ao aplicativo para chamar essa API. Para obter mais informações, [consulte Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
 ```
 PS C:\> Set-CsApplicationMeetingConfiguration -AllowRemoveParticipantAppIds @{Add="app_id"}
 ```
@@ -82,7 +82,7 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

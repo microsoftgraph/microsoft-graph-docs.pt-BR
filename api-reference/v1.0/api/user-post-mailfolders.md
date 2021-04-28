@@ -5,19 +5,19 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 434e3ae114f0514ad002939aa1a39f82b0c31455
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d858db1fb120a29a6ebbffe1d4138498abe43e7c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137218"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053766"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
 Namespace: microsoft.graph
 
 Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -43,7 +43,7 @@ No corpo da solicitação, forneça um objeto JSON com os parâmetros a seguir. 
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da nova pasta.|
+|displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
 
 ## <a name="response"></a>Resposta
 
@@ -87,7 +87,7 @@ Content-length: 159
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

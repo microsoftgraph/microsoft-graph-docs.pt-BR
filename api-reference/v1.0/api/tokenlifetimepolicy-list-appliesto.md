@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 13b703d96a6949c5b7056ffb55e32fd5cfc29294
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 37926ca3c92e1ad44cba9aaa0951ceb6568ede2b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961210"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054333"
 ---
 # <a name="list-appliesto"></a>Lista appliesTo
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/{id}/applies
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

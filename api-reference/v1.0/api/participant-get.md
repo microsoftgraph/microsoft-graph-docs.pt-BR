@@ -1,22 +1,22 @@
 ---
 title: Obter participante
-description: Recupere as propriedades e os relacionamentos de um objeto **participante** .
+description: Recupere as propriedades e as relações de um **objeto** participante.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 15a87b6cfdcfe2081e61d36a5972bc8ef9916cb6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d1d09c3bf78d604905a634245e45216fa94312c7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066576"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054508"
 ---
 # <a name="get-participant"></a>Obter participante
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e os relacionamentos de um objeto **participante** .
+Recupere as propriedades e as relações de um **objeto** participante.
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,7 +44,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [participante](../resources/participant.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto](../resources/participant.md) participante no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

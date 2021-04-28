@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4f5715ca356b50be73f85d7100c3a3c9357a8242
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: af852d0f1794906af3f95c55f4e0d7e054753f94
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578308"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055621"
 ---
 # <a name="create-chart"></a>Create Chart
 
@@ -86,7 +86,7 @@ Content-length: 52
 
 No corpo da solicitação, fornece uma representação JSON do [objeto WorkbookChart.](../resources/chart.md)
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

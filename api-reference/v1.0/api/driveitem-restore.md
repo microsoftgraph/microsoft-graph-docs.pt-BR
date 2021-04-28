@@ -1,22 +1,22 @@
 ---
 title: 'driveItem: restaurar'
-description: Restaurar um driveItem que foi excluído e que está atualmente na lixeira.
+description: Restaure um driveItem que foi excluído e está atualmente na lixeira.
 localization_priority: Normal
 author: learafa
 ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: 8566c299f775788e31186186f3589d189c9324cc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 391788bccc09876a1bed78da932dd574f1e23cfb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982334"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054046"
 ---
 # <a name="driveitem-restore"></a>driveItem: restaurar
 
 Namespace: microsoft.graph
 
-Restaurar um [driveItem](../resources/driveitem.md) que foi excluído e que está atualmente na lixeira. **Observação** : atualmente, essa funcionalidade só está disponível para o onedrive Personal.
+Restaure [um driveItem](../resources/driveitem.md) que foi excluído e está atualmente na lixeira. **OBSERVAÇÃO**: Essa funcionalidade está disponível apenas para OneDrive Pessoal.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Files.ReadWrite.All |
-| Application                            | Files.ReadWrite.All |
+| Aplicativo                            | Files.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,12 +48,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro     | Tipo                                         | Descrição |
 |:--------------|:---------------------------------------------|:------------|
-|parentReference|[ItemReference](../resources/itemreference.md)| Opcional. Referência ao item pai no qual o item excluído será restaurado. |
+|parentReference|[ItemReference](../resources/itemreference.md)| Opcional. Referência ao item pai ao que o item excluído será restaurado. |
 |nome           |String                                        | Opcional. O novo nome do item restaurado. Se isso não for fornecido, será usado o mesmo nome que o original. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [driveItem](../resources/driveitem.md) restaurado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [driveItem](../resources/driveitem.md) restaurado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -105,7 +105,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

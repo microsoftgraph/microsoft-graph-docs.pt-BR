@@ -1,22 +1,22 @@
 ---
 title: Criar uma configuração de grupo
-description: Crie uma nova configuração, com base nos modelos disponíveis no groupSettingTemplates.
+description: Crie uma nova configuração, com base nos modelos disponíveis em groupSettingTemplates.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b96a198543da31e9abb672801e56a8ab1d92e0d5
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 2d85876b4dc024f976e6bedbc7aadd17eda5cec7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373990"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054004"
 ---
 # <a name="create-a-group-setting"></a>Criar uma configuração de grupo
 
 Namespace: microsoft.graph
 
-Use essa API para criar uma nova configuração, com base nos modelos disponíveis no [groupSettingTemplates](../resources/groupsettingtemplate.md). Essas configurações podem ser no nível do locatário ou no nível do grupo. A solicitação de criação deve fornecer [settingValues](../resources/settingvalue.md) para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que determina se os membros de um grupo podem convidar usuários convidados podem ser definidos. Isso irá controlar esse comportamento assim que a capacidade de adicionar usuários convidados a um grupo estiver disponível. Para pontos de extremidade beta, use [directorySettingTemplates](/graph/api/resources/directorysettingtemplate?view=graph-rest-beta).
+Use essa API para criar uma nova configuração, com base nos modelos disponíveis em [groupSettingTemplates](../resources/groupsettingtemplate.md). Essas configurações podem estar no nível do locatário ou no nível do grupo. A solicitação de criação deve [fornecer settingValues](../resources/settingvalue.md) para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que rege se membros de um grupo podem convidar usuários convidados podem ser definidos. Isso regerá esse comportamento quando a capacidade de adicionar usuários convidados a um grupo geralmente está disponível. Para pontos de extremidade beta, use [directorySettingTemplates](/graph/api/resources/directorysettingtemplate?view=graph-rest-beta).
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Directory.ReadWrite.All |
+|Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -97,7 +97,7 @@ Content-length: 215
 No corpo da solicitação, forneça uma representação JSON do objeto [groupSetting](../resources/groupsetting.md).
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

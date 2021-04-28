@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: af4273496a44b91bff1aab9c8d583933173667b4
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: c3b9a48ebc05964196d97860c891d180d90d7c0d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578721"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054270"
 ---
 # <a name="get-workbookapplication"></a>Obter workbookApplication
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

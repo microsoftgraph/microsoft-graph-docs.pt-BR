@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 50cfc949f4e900bc91338d96b297eb3ff4577daf
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f4a281f5398988a0f5fad151105a1ad40d8dc9c5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959376"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054347"
 ---
 # <a name="list-appliesto"></a>Lista appliesTo
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies/{id}/applies
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

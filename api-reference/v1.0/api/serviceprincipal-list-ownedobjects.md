@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: f409605b5c90319e3e862f7d7c3790f5a2502fc8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2f6bbfa13edd0fe5bb2f29bd2597dfe5ec443846
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943408"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053822"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: Lista ownedObjects
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/ownedObjects
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
->Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+>Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bba954e428bbc81a6d83dd17471ca24b66133e95
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 32645e98fbb2e7da1aeec8d48eddb3c5da6822bb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087506"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054032"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  Sem suporte.  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,7 +55,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço em que o usuário reside.|
 |primaryRole|cadeia de caracteres| Função padrão de um usuário.  A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`.|
 |student|[educationStudent](../resources/educationstudent.md)| Se a função principal for aluno, esse bloco conterá dados específicos do aluno.|
-|teacher|[educationTeacher](../resources/educationteacher.md)| Se a função principal for professor, esse bloco conterá dados específicos do professor.|
+|teacher|[educationTeacher](../resources/educationteacher.md)| Se a função primária for professor, esse bloco conterá dados específicos do professor.|
 
 
 ## <a name="response"></a>Resposta
@@ -100,7 +100,7 @@ Content-length: 508
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

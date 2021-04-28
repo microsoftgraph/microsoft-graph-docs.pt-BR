@@ -1,16 +1,16 @@
 ---
 title: Listar a coleção delegatedPermissionClassifications de servicePrincipal
-description: Recupere uma lista de classificações dadas a permissões delegadas expostas pela entidade de serviço de uma API.
+description: Recupere uma lista de classificações concedidas a permissões delegadas expostas pela entidade de serviço de uma API.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 4ab551d0e8d23a2d8810d3bc10c812318aaaaa10
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fdf42339adea9441ff0378fe26cce2063062eb82
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132227"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054445"
 ---
 # <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>Listar a coleção delegatedPermissionClassifications de servicePrincipal
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Recupere a lista [de delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) atualmente configurada para as permissões delegadas expostas por uma API.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de objetos delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/delegatedPermissionC
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

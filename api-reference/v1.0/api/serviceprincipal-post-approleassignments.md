@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 00d622862a47ed64848f4774ae587210cf49bace
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: e8021b9bcc96e0a70a139e5d4fd1597f186ab20b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508034"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054417"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>Conceder um appRoleAssignment a uma entidade de serviço
 
@@ -104,13 +104,13 @@ Content-Type: application/json
 ---
 
 
-Neste exemplo, observe que o valor usado como o principal do serviço **ID** na URL de solicitação (`9028d19c-26a9-4809-8e3f-20ff73e2d75e`) é o mesmo que a propriedade **principalId** no corpo. O valor **resourceId** é a **ID** da entidade de serviço do recurso (a API)
+Neste exemplo, observe que o valor usado como a principal **id** do serviço no URL do solicitado (`9028d19c-26a9-4809-8e3f-20ff73e2d75e`) é o mesmo que a propriedade **principalId** no corpo. O valor **resourceId** é a **id** principal do serviço de recursos (a API)
 
 ### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

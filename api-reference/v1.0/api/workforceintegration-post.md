@@ -1,23 +1,23 @@
 ---
 title: Criar workforceIntegration
-description: Criar um novo objeto workforceIntegration.
+description: Crie um novo objeto workforceIntegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3ec2f2629e7f64e2f7cf7ae703b88c5eb8fe43bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2eee6b620bcd22e571a2b526d4a43e70fe91416a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015551"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055642"
 ---
 # <a name="create-workforceintegration"></a>Criar workforceIntegration
 
 Namespace: microsoft.graph
 
-Criar um novo objeto [workforceIntegration](../resources/workforceintegration.md) .
-Você pode configurar quais entidades você deseja que recebam as notificações de alteração síncronas em e defina as entidades para configurar a filtragem pela qualificação de regras do WFM, incluindo solicitações de troca.
+Crie um novo [objeto workforceIntegration.](../resources/workforceintegration.md)
+Você pode configurar para quais entidades deseja receber notificações de alteração síncrona shifts e definir entidades para configurar a filtragem por qualificação de regras WFM, incluindo solicitações de troca.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,11 +25,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | WorkforceIntegration. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | WorkforceIntegration.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos que não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,11 +48,11 @@ POST /teamwork/workforceIntegrations
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [workforceIntegration](../resources/workforceintegration.md) .
+No corpo da solicitação, fornece uma representação JSON de um [objeto workforceIntegration.](../resources/workforceintegration.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [workforceIntegration](../resources/workforceintegration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo objeto [workforceIntegration](../resources/workforceintegration.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -108,7 +108,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -133,9 +133,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="examples-for-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>Exemplos de casos de uso da entidade WorkforceIntegration para filtragem pela elegibilidade de regras do WFM
+## <a name="examples-for-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>Exemplos de casos de uso da entidade WorkforceIntegration para filtragem por qualificação de regras WFM
 
-### <a name="use-case-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Caso de uso: criar um novo WorkforceIntegration com o SwapRequest habilitado para filtragem de qualificação
+### <a name="use-case-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Caso de uso: Criar uma nova WorkforceIntegration com SwapRequest habilitada para filtragem de qualificação
 
 ### <a name="request"></a>Solicitação
 
@@ -177,14 +177,14 @@ HTTP/1.1 200 OK
 }
 
 ```
-Para ver como atualizar um workforceintegration existente com o SwapRequest habilitado para filtragem de qualificação, consulte [Update](../api/workforceintegration-update.md).
+Para ver como atualizar uma força de trabalho existente com SwapRequest habilitado para filtragem de qualificação, consulte [Update](../api/workforceintegration-update.md).
 
-## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Exemplo de busca de turnos qualificados quando o SwapRequest está incluído no eligibilityFilteringEnabledEntities
-A interação entre o aplicativo turnos e os pontos de extremidade de integração da força de força seguirá o padrão existente.
+## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Exemplo de busca de turnos qualificados quando SwapRequest está incluído em eligibilityFilteringEnabledEntities
+A interação entre o aplicativo Shifts e os pontos de extremidade de integração da força de trabalho seguirá o padrão existente.
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação feita por turnos para o ponto de extremidade de integração de força de funcionários para buscar turnos qualificados para uma solicitação de troca.
+A seguir, um exemplo da solicitação feita por Shifts para o ponto de extremidade de integração da força de trabalho para buscar turnos qualificados para uma solicitação de troca.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -200,7 +200,7 @@ Accept-Language: en-us
 ```
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta do serviço de integração de força de funcionários.
+A seguir, um exemplo da resposta do serviço de integração da força de trabalho.
 ```
 HTTP/1.1 200 OK
 {

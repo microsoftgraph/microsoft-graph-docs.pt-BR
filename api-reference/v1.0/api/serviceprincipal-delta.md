@@ -1,22 +1,22 @@
 ---
 title: 'servicePrincipal: delta'
-description: Obter entidades de serviço recém-criadas, atualizadas ou excluídas sem precisar executar uma leitura completa de toda a coleção de recursos. Consulte Usando a Consulta Delta para obter detalhes.
+description: Obter entidades de serviço recém-criadas, atualizadas ou excluídas sem precisar executar uma leitura completa de toda a coleção de recursos. Consulte Using Delta Query para obter detalhes.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: c07df18bc685e6a9ee351ad76bdcf42ea65548b2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: dcbc05093737862c025b337d102696da718ccf99
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134614"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054459"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal: delta
 
 Obter entidades de serviço recém-criadas, atualizadas ou excluídas sem precisar executar uma leitura completa de toda a coleção de recursos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para começar a controlar as alterações, faça uma solicitação incluindo a função delta no recurso servicePrincipal. 
+Para começar a controlar as alterações, você faz uma solicitação incluindo a função delta no recurso servicePrincipal. 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -38,12 +38,12 @@ GET /servicePrincipals/delta
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-O rastreamento de alterações incorre em uma série de uma ou mais **chamadas de função delta.** Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente. Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` da resposta anterior, já que essa URL inclui os parâmetros codificados desejados.
+O controle de alterações incorre em uma rodada de uma ou mais chamadas **de função delta.** Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente. Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` da resposta anterior, já que essa URL inclui os parâmetros codificados desejados.
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de](/graph/delta-query-overview) estado retornado na URL da chamada de função delta anterior para a mesma coleção de recursos, indicando a conclusão dessa série de controle de `deltaLink` alterações.  Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
-| $skiptoken | string | Um [token de](/graph/delta-query-overview) estado retornado na URL da chamada de função delta anterior indicando que não há mais alterações a serem controladas na mesma coleção de `nextLink` recursos.  |
+| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL da chamada de função delta anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de `deltaLink` alterações.  Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
+| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL da chamada de função delta anterior, indicando que há outras alterações a serem controladas na mesma coleção de `nextLink` recursos.  |
 
 ### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -52,7 +52,7 @@ Este método dá suporte a Parâmetros de consulta do OData para ajudar a person
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada. 
 
 - Há suporte limitado para `$filter`:
-  * A única expressão com `$filter` suporte é para controlar alterações de recursos específicos, por sua id: ou  `$filter=id+eq+{value}` `$filter=id+eq+{value1}+or+id+eq+{value2}` . O número de IDs que você pode especificar é limitado pelo comprimento máximo da URL.
+  * A única expressão `$filter` com suporte é para controlar alterações para recursos específicos, por sua id: ou  `$filter=id+eq+{value}` `$filter=id+eq+{value1}+or+id+eq+{value2}` . O número de ids que você pode especificar é limitado pelo tamanho máximo da URL.
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -65,7 +65,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto da coleção `200 OK` [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta. A resposta também inclui uma URL nextLink ou uma URL deltaLink. 
+Se tiver êxito, este método retornará um código de resposta e um objeto da coleção `200 OK` [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta. A resposta também inclui uma URL do nextLink ou uma URL deltaLink. 
 
 - Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O aplicativo continua fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser incluída na resposta.
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/delta
 
 
 #### <a name="response"></a>Resposta
->Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- { 
   "blockType": "response",
   "truncated": true,
