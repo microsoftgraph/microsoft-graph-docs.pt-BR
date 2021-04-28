@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nilakhan
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 9de1372e4c4e9bb6819c06a563eda6763a407d0e
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: c72144dc8b4aa39a87b1c8785ba61e69dab16c37
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517027"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067212"
 ---
 # <a name="printdocument-createuploadsession"></a>printDocument: createUploadSession
 Namespace: microsoft.graph
@@ -85,7 +85,8 @@ O exemplo a seguir mostra como criar uma sessão de carregamento que você pode 
 
 ### <a name="request"></a>Solicitação
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "printdocument_createuploadsession"
 }
 -->
 ``` http

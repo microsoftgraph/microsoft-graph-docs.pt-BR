@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 762f243145b544b8e20114578abb875160793f79
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 10eb40e502a3b1e6ac6c21cebecceab7c6277b62
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131000"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055943"
 ---
 # <a name="list-rules"></a>Listar regras
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 Obtenha todos os objetos [messageRule](../resources/messagerule.md) definidos para a Caixa de Entrada do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | MailboxSettings.Read    |
+|Delegado (conta corporativa ou de estudante) | MailboxSettings.Read    |
 |Delegada (conta pessoal da Microsoft) | MailboxSettings.Read    |
 |Aplicativo | MailboxSettings.Read |
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

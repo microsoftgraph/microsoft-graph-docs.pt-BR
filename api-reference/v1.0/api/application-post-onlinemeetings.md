@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 34508cc03a668b9fdc9c20df77a7da5888861dce
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 035bc01bce48624ce066e339e7f1bc8a10864ae6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869845"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039983"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -106,7 +106,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
 <!-- {
   "blockType": "response",
@@ -151,7 +152,8 @@ Content-Type: application/json
   "subject": "User Token Meeting"
 }
 ```
->**Observação:** Se 'Accept-Language: ja' for especificado para indicar japonês, por exemplo, a resposta incluirá o seguinte.
+> [!NOTE]
+> Se 'Accept-Language: ja' for especificado para indicar japonês, por exemplo, a resposta incluirá o seguinte.
 
 ```json
     "joinInformation": {

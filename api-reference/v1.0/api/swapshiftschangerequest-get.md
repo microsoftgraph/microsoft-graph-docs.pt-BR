@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66d6775a6d2e059cfa7f338a0c2810098311631d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f672f6a69963b597d1d33577236f6b8f277ad796
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952652"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055761"
 ---
 # <a name="get-swapshiftschangerequest"></a>Obter swapShiftsChangeRequest
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/swapShiftsChangeReq
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

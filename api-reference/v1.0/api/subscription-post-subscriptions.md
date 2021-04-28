@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 5d0a5afd29b799e51662ceba23c5ee415aa69689
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 733e9d0665e135d2e5dd1be152e6676c184252c5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468832"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055768"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -156,7 +156,7 @@ Estes são os valores válidos da propriedade de recurso da assinatura:
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

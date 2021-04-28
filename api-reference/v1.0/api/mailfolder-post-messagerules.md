@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b305bbfca7d9a61197f677db9d7e3da785f81c0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fc840b12296b7a308fde8e5af4e39e025fd53a80
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137624"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055922"
 ---
 # <a name="create-rule"></a>Criar regra
 
@@ -21,12 +21,12 @@ Crie um objeto [messageRule](../resources/messagerule.md) especificando um conju
 
 O Outlook realizará essas ações se uma mensagem recebida na Caixa de Entrada do usuário atender às condições especificadas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | MailboxSettings.ReadWrite    |
 |Aplicativo | MailboxSettings.ReadWrite |
 
@@ -50,7 +50,7 @@ No corpo da solicitação, forneça os parâmetros que são aplicáveis à sua r
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|Ações a serem realizadas em uma mensagem quando as condições correspondentes, se houver, forem atendidas. Obrigatório.|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. Opcional.|
-|displayName| String  | O nome de exibição da regra. Obrigatório.|
+|displayName| Cadeia de caracteres  | O nome de exibição da regra. Obrigatório.|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Representa condições de exceção para a regra. Opcional. |
 |isEnabled | Booliano | Indica se a regra está habilitada para ser aplicada a mensagens. Opcional. |
 |sequence| Int32 | Indica a ordem em que a regra é executada, entre outras regras. Obrigatório.|
@@ -114,7 +114,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

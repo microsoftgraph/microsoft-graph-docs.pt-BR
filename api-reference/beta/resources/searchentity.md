@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso searchEntity
-description: Um objeto de nível superior representando o ponto de extremidade da API de pesquisa da Microsoft.
+title: Tipo de recurso searchEntity
+description: Um objeto de nível superior que representa o ponto de extremidade da API de Pesquisa da Microsoft.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: cb6d5bdd5288a3f6098f33d3432a0e4f0d7ac8bd
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d62292b3a4890589d72214a3544059eaf8af8817
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193830"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067128"
 ---
-# <a name="searchentity-resource-type"></a>tipo de recurso searchEntity
+# <a name="searchentity-resource-type"></a>Tipo de recurso searchEntity
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um objeto de nível superior representando o ponto de extremidade da API de pesquisa da Microsoft. Ela não se comporta como qualquer outro recurso no Graph, mas serve como uma âncora para a ação de [consulta](../api/search-query.md) . 
+Um objeto de nível superior que representa o ponto de extremidade da API de Pesquisa da Microsoft. Ele não se comporta como qualquer outro recurso no Graph, mas serve como uma âncora para a [ação de](../api/search-query.md) consulta. 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[query](../api/search-query.md) |coleção [searchResponse](searchresponse.md) | Executa a consulta especificada no corpo da solicitação.  |
+|[query](../api/search-query.md) |[searchResponse](searchresponse.md) | Executa a consulta especificada no corpo da solicitação.  |
 
 ## <a name="properties"></a>Propriedades
 Nenhum.
@@ -50,7 +50,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Explore a ação de [consulta](../api/search-query.md) .
+Explore [a ação de](../api/search-query.md) consulta.
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

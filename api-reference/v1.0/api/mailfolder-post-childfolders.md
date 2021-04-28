@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2b83a9776e39c6bf58e2d42ebd7eaf04a30cb481
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7746fb03f6f47f81f0807cdc42e1b7af8a982cfe
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131716"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055929"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Use essa API para criar uma nova mailfolder filha.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -48,15 +48,15 @@ Especifique a pasta pai na URL de consulta como uma ID de pasta ou um nome de pa
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. **displayName** é a única propriedade que pode ser escrita para um [objeto mailFolder.](../resources/mailfolder.md)
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. **displayName** é a única propriedade writable para um [objeto mailFolder.](../resources/mailfolder.md)
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-|displayName|String|O nome de exibição da nova pasta.|
+|displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e um recurso [mailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um recurso [mailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -101,7 +101,7 @@ Content-length: 159
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

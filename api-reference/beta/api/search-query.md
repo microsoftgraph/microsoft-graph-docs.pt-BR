@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 688fb39ef0c4170feb5e134e439e6b1c538ecbc6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8637e16e686ddbd87476646636a414c0c09bee34
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053479"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067170"
 ---
 # <a name="searchentity-query"></a>searchEntity: consulta
 
@@ -52,10 +52,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |requests|[coleção searchRequest](../resources/searchrequest.md)|Uma coleção de uma ou mais solicitações de pesquisa formatadas em um blob JSON. Cada blob JSON contém os tipos de recursos esperados na resposta, as fontes subjacentes, os parâmetros de pajamento, os campos solicitados e a consulta de pesquisa real. <br> Esteja ciente das [limitações conhecidas na](../resources/search-api-overview.md#known-limitations) pesquisa de combinações específicas de tipos de entidade e classificação ou agregação de resultados de pesquisa. |
+|queryAlterationOptions|[searchAlterationOptions](../resources/searchalterationoptions.md)|Opções de alteração de consulta formatadas em um blob JSON que contém dois sinalizadores opcionais para correção ortográfica. Opcional. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o código de resposta e um objeto da coleção `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `HTTP 200 OK` [objeto searchResponse](../resources/searchresponse.md) no corpo da resposta.
  
 
 ## <a name="examples"></a>Exemplos
@@ -166,6 +167,7 @@ Content-type: application/json
 - Pesquisar [tipos personalizados (Graph conectores)](/graph/search-concept-custom-types) dados
 - [Classificar resultados](/graph/search-concept-sort) da pesquisa
 - Usar [agregação para](/graph/search-concept-aggregations) refinar resultados de pesquisa
+- [Habilitar correções ort](/graph/search-concept-speller) spell nos resultados da pesquisa
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

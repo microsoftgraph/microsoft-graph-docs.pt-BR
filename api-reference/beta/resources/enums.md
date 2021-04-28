@@ -1,16 +1,16 @@
 ---
 title: Valores denum
-description: Valores de enumeração do Microsoft Graph
+description: Valores Graph enumeração da Microsoft
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 42ee6a9363efd868085cecb62a9a6aa5ac5600d4
-ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
+ms.openlocfilehash: 6004a27fa12fd7246830e463f67b43c2872a0157
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697204"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067198"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -72,11 +72,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|String|
+|Cadeia de caracteres|
 |Inteiro|
 |Referência|
 |Binário|
-|Booliano|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -397,7 +397,7 @@ Namespace: microsoft.graph
 |all|
 |privilegedAdmin|
 |admin|
-|usuário|
+|user|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>valores includedUserTypes 
@@ -413,7 +413,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |aplicativo|
 |sistema|
 |unknownFutureValue|
@@ -698,7 +698,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState values
@@ -810,13 +810,20 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |event|
-|mensagem|
+|message|
 |driveItem|
 |externalItem|
 |site|
 |list|
 |listItem|
 |Unidade|
+
+### <a name="searchalterationtype-values"></a>searchAlterationType values
+
+| Member | Descrição |
+|:---------------|:----------|
+|suggestion|Obter resultados de pesquisa para consulta de usuário original e as informações de correção ortográfica sugeridas para erros de digitação na consulta.|
+|modification|Obter resultados de pesquisa para a consulta alterada corrigida e as informações de correção ortográfica para erros de digitação.|
 
 ### <a name="bucketaggregationsortproperty-values"></a>valores bucketAggregationSortProperty
 
@@ -1197,7 +1204,7 @@ Namespace: microsoft.graph
 |:-----------------
 |NotStarted
 |Em execução
-|Completed
+|Concluído
 |Falhou
 
 
@@ -1363,7 +1370,7 @@ Namespace: microsoft.graph
 | preset12 | 12     |
 | preset13 | 13    |
 | preset14 | 14     |
-| preset15 | 15     |
+| preset15 | 15    |
 | preset16 | 16     |
 | preset17 | 17     |
 | preset18 | 18     |
@@ -1520,7 +1527,7 @@ Valores possíveis para o método de login do usuário.
 
 ### <a name="useraccountsecuritytype-values"></a>valores userAccountSecurityType
 
-Valores possíveis para tipos de conta de usuário (associação ao grupo), por definição do Windows.
+Valores possíveis para tipos de conta de usuário (associação ao grupo), por Windows definição.
 
 | Membro        | Valor | Descrição                     |
 | :------------ | :---- | :------------------------------ |
@@ -1675,7 +1682,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|mensagem|
+|message|
 
 ### <a name="chatmessageimportance-values"></a>valores chatMessageImportance
 
@@ -1726,7 +1733,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |Member|
 |:---|
 |signin|
-|usuário|
+|user|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>valores chatMessagePolicyViolationUserActionType
@@ -1751,7 +1758,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Member       |
 |:--------------|
 |event|
-|mensagem|
+|message|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -1933,7 +1940,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | 0     | Ainda não sabemos.            |
-| usuário          | 1     | Envio do usuário.         |
+| user          | 1     | Envio do usuário.         |
 | administrator | 2     | Envio de administrador de locatário. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores threatAssessmentResultType
@@ -1949,8 +1956,8 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
 | nenhuma                  | 0     | Ainda não sabemos.                       |
-| mailFlowRule          | 1     | Regra de transporte do Exchange.            |
-| safeSender            | 2     | Lista de remetentes seguros.                   |
+| mailFlowRule          | 1     | Exchange regra de transporte.            |
+| safeSender            | 2     | Cofre lista de remetentes.                   |
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4      | Opção avançada de filtragem de spam.     |
 | domainAllowList       | 5      | Lista de permitir domínio de remetente.           |
@@ -1963,7 +1970,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | outbound              | 12     | Email de saída.                      |
 | notJunk               | 13    | Permitir devido a não lixo eletrônico.              |
 | junk                  | 14     | Bloqueado devido a lixo eletrônico.                |
-| unknownFutureValue    | 15     | Um membro do sentinel.                  |
+| unknownFutureValue    | 15    | Um membro do sentinel.                  |
 
 ### <a name="threatassessmentrequestpivotproperty-values"></a>valores threatAssessmentRequestPivotProperty
 
@@ -2024,7 +2031,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |dateTime | coluna dateTime. |
 |lookup | coluna de lookup. |
 |booliano | Coluna Sim/Não. |
-|usuário | coluna de pessoa ou grupo. |
+|user | coluna de pessoa ou grupo. |
 |url | hyperlink ou coluna de imagem. |
 |calculado | coluna calculada. |
 |localização | coluna de local. |
@@ -2054,7 +2061,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType values
@@ -2164,6 +2171,6 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|team      |0        |Indica que o aplicativo do Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
-|groupChat |1        |Indica que o aplicativo do Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
-|pessoal  |2        |Indica que o aplicativo do Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
+|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
+|pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|

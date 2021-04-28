@@ -1,0 +1,97 @@
+---
+title: 'updatableAssetGroup: addMembers'
+description: Adicione membros a um updatableAssetGroup.
+author: Alice-at-Microsoft
+localization_priority: Normal
+ms.prod: w10
+doc_type: apiPageType
+ms.openlocfilehash: dbb5cd4c156940379eaf114235099d9fd53fb08f
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067813"
+---
+# <a name="updatableassetgroup-addmembers"></a>updatableAssetGroup: addMembers
+Namespace: microsoft.graph.windowsUpdates
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Adicionar membros a [um updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
+
+Você pode adicionar [recursos do azureADDevice](../resources/windowsupdates-azureaddevice.md) como membros, mas pode não adicionar **recursos updatableAssetGroup** como membros.
+
+Adicionar um dispositivo do Azure AD como membro de um grupo de ativos atualizável cria automaticamente um **objeto azureADDevice,** se ainda não existir.
+
+Você também pode usar o [método addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md) para adicionar membros.
+
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)|WindowsUpdates.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|WindowsUpdates.ReadWrite.All|
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /updatableAssetGroup/{updatableAssetGroupId}/addMembers
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+|Content-Type|application/json. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, forneça uma representação JSON dos parâmetros.
+
+A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
+
+|Parâmetro|Tipo|Descrição|
+|:---|:---|:---|
+|assets|[coleção microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Lista de **recursos updatableAsset** a adicionar como membros do **updatableAssetGroup**.|
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, esta ação retornará um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "updatableassetgroup_addmembers"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/updatableAssetGroup/{updatableAssetGroupId}/addMembers
+Content-Type: application/json
+
+{
+  "assets": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+      "id": "String (identifier)"
+    }
+  ]
+}
+```
+
+### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+```

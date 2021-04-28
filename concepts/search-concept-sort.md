@@ -1,26 +1,26 @@
 ---
-title: Usar a API de pesquisa da Microsoft para classificar resultados de pesquisa (versão prévia)
-description: Você classifica os resultados da pesquisa usando a API de pesquisa da Microsoft.
+title: Usar a API de Pesquisa da Microsoft para classificar resultados de pesquisa (visualização)
+description: Você classificar resultados de pesquisa usando a API de Pesquisa da Microsoft.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 216da2d183f70545700fe4df48e4e5d7c5f33ff9
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 4f4a2c8925e910520ca3d75d98f86d713105f6ac
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597456"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067184"
 ---
-# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>"Usar a API de pesquisa da Microsoft para classificar resultados de pesquisa (versão prévia)
+# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>Usar a API de Pesquisa da Microsoft para classificar resultados de pesquisa (visualização)
 
-Você pode usar a API do Microsoft Search no Microsoft Graph para classificar os resultados da pesquisa. Para classificar os resultados, especifique a propriedade **sortproperties** em um objeto [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) e identifique uma propriedade de recurso em **EntityTypes** para classificar correspondências por, em ordem crescente ou decrescente.
+Você pode usar a API de Pesquisa da Microsoft no Microsoft Graph classificar os resultados da pesquisa. Para classificar os resultados, especifique a propriedade **sortProperties** em um objeto [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) e identifique uma propriedade de recurso em **entityTypes** para classificar as corresponde por, em ordem crescente ou decrescente.
 
-A classificação é suportada apenas para itens do SharePoint e do OneDrive.
-A propriedade a ser classificada deve ser *classificável* no esquema de pesquisa.
+A classificação só é suportada para SharePoint e OneDrive itens.
+A propriedade a ser classificação deve ser *Sortable* no esquema de pesquisa.
 
-A ordem de classificação padrão é ascendente. Defina a propriedade **Isdescendeting** para alterá-la.
+A ordem de classificação padrão é crescente. De definir **a propriedade isDescending** para alterá-la.
 
-## <a name="example-1-single-level-sort"></a>Exemplo 1: classificação de nível único
+## <a name="example-1-single-level-sort"></a>Exemplo 1: Classificação de nível único
 
 ### <a name="request"></a>Solicitação
 
@@ -145,7 +145,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-multi-level-sort"></a>Exemplo 2: classificação de vários níveis
+## <a name="example-2-multi-level-sort"></a>Exemplo 2: Classificação de vários níveis
 
 ### <a name="request"></a>Solicitação
 
@@ -316,8 +316,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-- Sort não tem suporte para **Message**, **Event** e **externalItem**.
-- Classificar por relevância não pode ser especificado em **sortproperties**.
+- Não há suporte para classificação para **mensagem,** **evento** e **externalItem**.
+- Classificar por relevância não pode ser especificado em **sortProperties**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

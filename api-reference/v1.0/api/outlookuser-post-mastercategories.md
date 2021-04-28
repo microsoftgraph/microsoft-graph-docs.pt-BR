@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8d5c86f927c43f49bff0ae4ff60d2a91b61aa44b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0117b075dae4e7e38572781526fdc4e369f4d2fc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132605"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055859"
 ---
 # <a name="create-outlook-category"></a>Criar categoria do Outlook
 
@@ -19,12 +19,12 @@ Namespace: microsoft.graph
 
 Cria um objeto [outlookCategory](../resources/outlookcategory.md) na lista mestra de categorias do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | MailboxSettings.ReadWrite   |
 |Aplicativo | MailboxSettings.ReadWrite |
 
@@ -86,7 +86,7 @@ Content-Length: 70
 
 No corpo da solicitação, forneça uma representação JSON do objeto [outlookCategory](../resources/outlookcategory.md).
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c154644261239f2be6b2273b1a7007db52b68fc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 072ff5435f168af138bad0580de3d3815a8e4185
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129356"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055957"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -20,7 +20,7 @@ Obtenha um conjunto de pastas de email que foram adicionadas, excluídas ou remo
 
 Uma chamada de função **delta** de pastas de email em uma caixa de correio é semelhante a uma solicitação GET, exceto que, aplicando adequadamente os [tokens de estado](/graph/delta-query-overview) em uma ou mais dessas chamadas, permite consultar alterações incrementais nas pastas de email. Isso permite manter e sincronizar um armazenamento local de pastas de email do usuário sem ter que sempre buscar todas as pastas de email dessa caixa de correio.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -102,7 +102,7 @@ Se a solicitação for bem-sucedida, a resposta incluiria um token de estado que
 
 A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

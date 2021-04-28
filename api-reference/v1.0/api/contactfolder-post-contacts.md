@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a1ead090f2ad376213d18ed29ed1d88b65693aad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf20b2b9388dea809214e5978737c098892812b0
+ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010119"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061865"
 ---
 # <a name="create-contact"></a>Criar contato
 
@@ -108,7 +108,9 @@ No corpo da solicitação, forneça uma representação JSON do objeto [Contact]
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. 
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

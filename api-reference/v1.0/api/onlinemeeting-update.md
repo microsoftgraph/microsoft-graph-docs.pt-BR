@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 42bc40f6dc1ec6f72996ade9b0a552bc94d0a69f
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 8e6ba3e4d3a36b1d9d14ad4ab9528af98d22dbc8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870006"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055866"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -45,7 +45,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > [!NOTE]
-> - `userId`é a ID do objeto de um usuário no portal de gerenciamento [de usuários do Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
+> - `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para obter mais detalhes, consulte [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -119,7 +119,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
