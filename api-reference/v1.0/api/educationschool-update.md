@@ -1,77 +1,77 @@
 ---
-title: Atualizar propriedades de educationSchool
+title: Atualizar propriedades educationSchool
 description: Atualize as propriedades de um objeto de escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f1428992c909ac5c8e33cfd0ec53131ea5a0feb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b051e5339c2cc32cfd0dad58e21154cf8e9cca8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038943"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051435"
 ---
-# <a name="update-educationschool-properties"></a><span data-ttu-id="bdaf4-103">Atualizar propriedades de educationSchool</span><span class="sxs-lookup"><span data-stu-id="bdaf4-103">Update educationSchool properties</span></span>
+# <a name="update-educationschool-properties"></a><span data-ttu-id="d28cd-103">Atualizar propriedades educationSchool</span><span class="sxs-lookup"><span data-stu-id="d28cd-103">Update educationSchool properties</span></span>
 
-<span data-ttu-id="bdaf4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bdaf4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d28cd-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d28cd-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="bdaf4-105">Atualize as propriedades de um objeto de escola.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-105">Update the properties of a school object.</span></span>
+<span data-ttu-id="d28cd-105">Atualize as propriedades de um objeto de escola.</span><span class="sxs-lookup"><span data-stu-id="d28cd-105">Update the properties of a school object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bdaf4-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="bdaf4-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d28cd-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d28cd-106">Permissions</span></span>
 
-<span data-ttu-id="bdaf4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bdaf4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d28cd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d28cd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="bdaf4-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bdaf4-109">Permission type</span></span>                        | <span data-ttu-id="bdaf4-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="bdaf4-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="d28cd-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d28cd-109">Permission type</span></span>                        | <span data-ttu-id="d28cd-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d28cd-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="bdaf4-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bdaf4-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="bdaf4-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-112">Not supported.</span></span>                              |
-| <span data-ttu-id="bdaf4-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bdaf4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bdaf4-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-114">Not supported.</span></span>                              |
-| <span data-ttu-id="bdaf4-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="bdaf4-115">Application</span></span>                            | <span data-ttu-id="bdaf4-116">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bdaf4-116">EduRoster.ReadWrite.All</span></span>                     |
+| <span data-ttu-id="d28cd-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d28cd-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="d28cd-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d28cd-112">Not supported.</span></span>                              |
+| <span data-ttu-id="d28cd-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d28cd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d28cd-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d28cd-114">Not supported.</span></span>                              |
+| <span data-ttu-id="d28cd-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d28cd-115">Application</span></span>                            | <span data-ttu-id="d28cd-116">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d28cd-116">EduRoster.ReadWrite.All</span></span>                     |
 
-## <a name="http-request"></a><span data-ttu-id="bdaf4-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bdaf4-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d28cd-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d28cd-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /education/schools/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bdaf4-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bdaf4-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d28cd-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d28cd-118">Request headers</span></span>
 
-| <span data-ttu-id="bdaf4-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="bdaf4-119">Header</span></span>        | <span data-ttu-id="bdaf4-120">Valor</span><span class="sxs-lookup"><span data-stu-id="bdaf4-120">Value</span></span>                     |
+| <span data-ttu-id="d28cd-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d28cd-119">Header</span></span>        | <span data-ttu-id="d28cd-120">Valor</span><span class="sxs-lookup"><span data-stu-id="d28cd-120">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="bdaf4-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="bdaf4-121">Authorization</span></span> | <span data-ttu-id="bdaf4-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="bdaf4-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bdaf4-124">Content-Type</span></span>  | <span data-ttu-id="bdaf4-125">application/json</span><span class="sxs-lookup"><span data-stu-id="bdaf4-125">application/json</span></span>          |
+| <span data-ttu-id="d28cd-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="d28cd-121">Authorization</span></span> | <span data-ttu-id="d28cd-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d28cd-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d28cd-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d28cd-124">Content-Type</span></span>  | <span data-ttu-id="d28cd-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d28cd-125">application/json</span></span>          |
 
-## <a name="request-body"></a><span data-ttu-id="bdaf4-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bdaf4-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d28cd-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d28cd-126">Request body</span></span>
 
-<span data-ttu-id="bdaf4-127">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-127">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="bdaf4-128">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="bdaf4-129">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-129">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="d28cd-127">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="d28cd-127">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="d28cd-128">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="d28cd-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="d28cd-129">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="d28cd-129">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="bdaf4-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bdaf4-130">Property</span></span>            | <span data-ttu-id="bdaf4-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="bdaf4-131">Type</span></span>                                               | <span data-ttu-id="bdaf4-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="bdaf4-132">Description</span></span>                        |
+| <span data-ttu-id="d28cd-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d28cd-130">Property</span></span>            | <span data-ttu-id="d28cd-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="d28cd-131">Type</span></span>                                               | <span data-ttu-id="d28cd-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="d28cd-132">Description</span></span>                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
-| <span data-ttu-id="bdaf4-133">displayName</span><span class="sxs-lookup"><span data-stu-id="bdaf4-133">displayName</span></span>         | <span data-ttu-id="bdaf4-134">String</span><span class="sxs-lookup"><span data-stu-id="bdaf4-134">String</span></span>                                             | <span data-ttu-id="bdaf4-135">Nome de exibição da escola</span><span class="sxs-lookup"><span data-stu-id="bdaf4-135">Display name of the school</span></span>         |
-| <span data-ttu-id="bdaf4-136">description</span><span class="sxs-lookup"><span data-stu-id="bdaf4-136">description</span></span>         | <span data-ttu-id="bdaf4-137">String</span><span class="sxs-lookup"><span data-stu-id="bdaf4-137">String</span></span>                                             | <span data-ttu-id="bdaf4-138">Descrição da escola</span><span class="sxs-lookup"><span data-stu-id="bdaf4-138">Description of the school</span></span>          |
-| <span data-ttu-id="bdaf4-139">principalEmail</span><span class="sxs-lookup"><span data-stu-id="bdaf4-139">principalEmail</span></span>      | <span data-ttu-id="bdaf4-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdaf4-140">String</span></span>                                             | <span data-ttu-id="bdaf4-141">Endereço de email da entidade de segurança</span><span class="sxs-lookup"><span data-stu-id="bdaf4-141">Email address of the principal</span></span>     |
-| <span data-ttu-id="bdaf4-142">principalName</span><span class="sxs-lookup"><span data-stu-id="bdaf4-142">principalName</span></span>       | <span data-ttu-id="bdaf4-143">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdaf4-143">String</span></span>                                             | <span data-ttu-id="bdaf4-144">Nome da entidade de segurança</span><span class="sxs-lookup"><span data-stu-id="bdaf4-144">Name of the principal</span></span>              |
-| <span data-ttu-id="bdaf4-145">externalPrincipalId</span><span class="sxs-lookup"><span data-stu-id="bdaf4-145">externalPrincipalId</span></span> | <span data-ttu-id="bdaf4-146">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdaf4-146">String</span></span>                                             | <span data-ttu-id="bdaf4-147">ID da entidade de segurança no sistema de sincronização.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-147">Id of principal in syncing system.</span></span> |
-| <span data-ttu-id="bdaf4-148">highestGrade</span><span class="sxs-lookup"><span data-stu-id="bdaf4-148">highestGrade</span></span>        | <span data-ttu-id="bdaf4-149">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdaf4-149">String</span></span>                                             | <span data-ttu-id="bdaf4-150">Ensino de nível mais alto.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-150">Highest grade taught.</span></span>              |
-| <span data-ttu-id="bdaf4-151">lowestGrade</span><span class="sxs-lookup"><span data-stu-id="bdaf4-151">lowestGrade</span></span>         | <span data-ttu-id="bdaf4-152">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdaf4-152">String</span></span>                                             | <span data-ttu-id="bdaf4-153">Ensino de nível mais baixo.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-153">Lowest grade taught.</span></span>               |
-| <span data-ttu-id="bdaf4-154">schoolNumber</span><span class="sxs-lookup"><span data-stu-id="bdaf4-154">schoolNumber</span></span>        | <span data-ttu-id="bdaf4-155">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdaf4-155">String</span></span>                                             | <span data-ttu-id="bdaf4-156">Número da escola.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-156">School Number.</span></span>                     |
-| <span data-ttu-id="bdaf4-157">externalId</span><span class="sxs-lookup"><span data-stu-id="bdaf4-157">externalId</span></span>          | <span data-ttu-id="bdaf4-158">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdaf4-158">String</span></span>                                             | <span data-ttu-id="bdaf4-159">ID da escola no sistema de sincronização.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-159">Id of school in syncing system.</span></span>    |
-| <span data-ttu-id="bdaf4-160">phone</span><span class="sxs-lookup"><span data-stu-id="bdaf4-160">phone</span></span>               | <span data-ttu-id="bdaf4-161">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdaf4-161">String</span></span>                                             | <span data-ttu-id="bdaf4-162">Número de telefone da escola.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-162">Phone number of school.</span></span>            |
-| <span data-ttu-id="bdaf4-163">address</span><span class="sxs-lookup"><span data-stu-id="bdaf4-163">address</span></span>             | [<span data-ttu-id="bdaf4-164">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="bdaf4-164">physicalAddress</span></span>](../resources/physicaladdress.md) | <span data-ttu-id="bdaf4-165">Endereço da escola.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-165">Address of the School.</span></span>             |
-| <span data-ttu-id="bdaf4-166">createdBy</span><span class="sxs-lookup"><span data-stu-id="bdaf4-166">createdBy</span></span>           | [<span data-ttu-id="bdaf4-167">identitySet</span><span class="sxs-lookup"><span data-stu-id="bdaf4-167">identitySet</span></span>](../resources/identityset.md)         | <span data-ttu-id="bdaf4-168">Entidade que criou a escola.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-168">Entity who created the school.</span></span>     |
+| <span data-ttu-id="d28cd-133">displayName</span><span class="sxs-lookup"><span data-stu-id="d28cd-133">displayName</span></span>         | <span data-ttu-id="d28cd-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d28cd-134">String</span></span>                                             | <span data-ttu-id="d28cd-135">Nome de exibição da escola</span><span class="sxs-lookup"><span data-stu-id="d28cd-135">Display name of the school</span></span>         |
+| <span data-ttu-id="d28cd-136">description</span><span class="sxs-lookup"><span data-stu-id="d28cd-136">description</span></span>         | <span data-ttu-id="d28cd-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d28cd-137">String</span></span>                                             | <span data-ttu-id="d28cd-138">Descrição da escola</span><span class="sxs-lookup"><span data-stu-id="d28cd-138">Description of the school</span></span>          |
+| <span data-ttu-id="d28cd-139">principalEmail</span><span class="sxs-lookup"><span data-stu-id="d28cd-139">principalEmail</span></span>      | <span data-ttu-id="d28cd-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d28cd-140">String</span></span>                                             | <span data-ttu-id="d28cd-141">Endereço de email da entidade de segurança</span><span class="sxs-lookup"><span data-stu-id="d28cd-141">Email address of the principal</span></span>     |
+| <span data-ttu-id="d28cd-142">principalName</span><span class="sxs-lookup"><span data-stu-id="d28cd-142">principalName</span></span>       | <span data-ttu-id="d28cd-143">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d28cd-143">String</span></span>                                             | <span data-ttu-id="d28cd-144">Nome da entidade de segurança</span><span class="sxs-lookup"><span data-stu-id="d28cd-144">Name of the principal</span></span>              |
+| <span data-ttu-id="d28cd-145">externalPrincipalId</span><span class="sxs-lookup"><span data-stu-id="d28cd-145">externalPrincipalId</span></span> | <span data-ttu-id="d28cd-146">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d28cd-146">String</span></span>                                             | <span data-ttu-id="d28cd-147">ID da entidade de segurança no sistema de sincronização.</span><span class="sxs-lookup"><span data-stu-id="d28cd-147">Id of principal in syncing system.</span></span> |
+| <span data-ttu-id="d28cd-148">highestGrade</span><span class="sxs-lookup"><span data-stu-id="d28cd-148">highestGrade</span></span>        | <span data-ttu-id="d28cd-149">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d28cd-149">String</span></span>                                             | <span data-ttu-id="d28cd-150">Ensino de nível mais alto.</span><span class="sxs-lookup"><span data-stu-id="d28cd-150">Highest grade taught.</span></span>              |
+| <span data-ttu-id="d28cd-151">lowestGrade</span><span class="sxs-lookup"><span data-stu-id="d28cd-151">lowestGrade</span></span>         | <span data-ttu-id="d28cd-152">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d28cd-152">String</span></span>                                             | <span data-ttu-id="d28cd-153">Ensino de nível mais baixo.</span><span class="sxs-lookup"><span data-stu-id="d28cd-153">Lowest grade taught.</span></span>               |
+| <span data-ttu-id="d28cd-154">schoolNumber</span><span class="sxs-lookup"><span data-stu-id="d28cd-154">schoolNumber</span></span>        | <span data-ttu-id="d28cd-155">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d28cd-155">String</span></span>                                             | <span data-ttu-id="d28cd-156">Número da escola.</span><span class="sxs-lookup"><span data-stu-id="d28cd-156">School Number.</span></span>                     |
+| <span data-ttu-id="d28cd-157">externalId</span><span class="sxs-lookup"><span data-stu-id="d28cd-157">externalId</span></span>          | <span data-ttu-id="d28cd-158">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d28cd-158">String</span></span>                                             | <span data-ttu-id="d28cd-159">ID da escola no sistema de sincronização.</span><span class="sxs-lookup"><span data-stu-id="d28cd-159">Id of school in syncing system.</span></span>    |
+| <span data-ttu-id="d28cd-160">phone</span><span class="sxs-lookup"><span data-stu-id="d28cd-160">phone</span></span>               | <span data-ttu-id="d28cd-161">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d28cd-161">String</span></span>                                             | <span data-ttu-id="d28cd-162">Número de telefone da escola.</span><span class="sxs-lookup"><span data-stu-id="d28cd-162">Phone number of school.</span></span>            |
+| <span data-ttu-id="d28cd-163">address</span><span class="sxs-lookup"><span data-stu-id="d28cd-163">address</span></span>             | [<span data-ttu-id="d28cd-164">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="d28cd-164">physicalAddress</span></span>](../resources/physicaladdress.md) | <span data-ttu-id="d28cd-165">Endereço da escola.</span><span class="sxs-lookup"><span data-stu-id="d28cd-165">Address of the School.</span></span>             |
+| <span data-ttu-id="d28cd-166">createdBy</span><span class="sxs-lookup"><span data-stu-id="d28cd-166">createdBy</span></span>           | [<span data-ttu-id="d28cd-167">identitySet</span><span class="sxs-lookup"><span data-stu-id="d28cd-167">identitySet</span></span>](../resources/identityset.md)         | <span data-ttu-id="d28cd-168">Entidade que criou a escola.</span><span class="sxs-lookup"><span data-stu-id="d28cd-168">Entity who created the school.</span></span>     |
 
-## <a name="response"></a><span data-ttu-id="bdaf4-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="bdaf4-169">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d28cd-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="d28cd-169">Response</span></span>
 
-<span data-ttu-id="bdaf4-170">Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationSchool](../resources/educationschool.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-170">If successful, this method returns a `200 OK` response code and an updated [educationSchool](../resources/educationschool.md) object in the response body.</span></span>
+<span data-ttu-id="d28cd-170">Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationSchool](../resources/educationschool.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d28cd-170">If successful, this method returns a `200 OK` response code and an updated [educationSchool](../resources/educationschool.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bdaf4-171">Exemplo</span><span class="sxs-lookup"><span data-stu-id="bdaf4-171">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d28cd-171">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d28cd-171">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="bdaf4-172">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bdaf4-172">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="d28cd-172">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d28cd-172">Request</span></span>
 
-<span data-ttu-id="bdaf4-173">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-173">The following is an example of the request.</span></span>
+<span data-ttu-id="d28cd-173">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d28cd-173">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bdaf4-174">HTTP</span><span class="sxs-lookup"><span data-stu-id="bdaf4-174">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d28cd-174">HTTP</span><span class="sxs-lookup"><span data-stu-id="d28cd-174">HTTP</span></span>](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -88,29 +88,29 @@ Content-length: 292
 }
 ```
 
-# <a name="c"></a>[<span data-ttu-id="bdaf4-175">C#</span><span class="sxs-lookup"><span data-stu-id="bdaf4-175">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d28cd-175">C#</span><span class="sxs-lookup"><span data-stu-id="d28cd-175">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bdaf4-176">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bdaf4-176">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d28cd-176">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d28cd-176">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bdaf4-177">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bdaf4-177">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d28cd-177">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d28cd-177">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="bdaf4-178">Java</span><span class="sxs-lookup"><span data-stu-id="bdaf4-178">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="d28cd-178">Java</span><span class="sxs-lookup"><span data-stu-id="d28cd-178">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="bdaf4-179">Resposta</span><span class="sxs-lookup"><span data-stu-id="bdaf4-179">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="d28cd-179">Resposta</span><span class="sxs-lookup"><span data-stu-id="d28cd-179">Response</span></span>
 
-<span data-ttu-id="bdaf4-180">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-180">The following is an example of the response.</span></span>
+<span data-ttu-id="d28cd-180">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d28cd-180">The following is an example of the response.</span></span>
 
-><span data-ttu-id="bdaf4-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="bdaf4-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="d28cd-181">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="d28cd-181">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",

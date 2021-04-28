@@ -5,28 +5,28 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5fd63973a74b9ee7f283b1c526f819aac463a859
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 7d1e21ecd7d1a927df7d6ec625213dbbe370ecb8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577776"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051253"
 ---
-# <a name="range-column"></a><span data-ttu-id="65b22-103">Range: Column</span><span class="sxs-lookup"><span data-stu-id="65b22-103">Range: Column</span></span>
+# <a name="range-column"></a><span data-ttu-id="abc12-103">Range: Column</span><span class="sxs-lookup"><span data-stu-id="abc12-103">Range: Column</span></span>
 
-<span data-ttu-id="65b22-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="65b22-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="abc12-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="abc12-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="65b22-105">Obtém uma coluna incluída no intervalo.</span><span class="sxs-lookup"><span data-stu-id="65b22-105">Gets a column contained in the range.</span></span>
-## <a name="permissions"></a><span data-ttu-id="65b22-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="65b22-106">Permissions</span></span>
-<span data-ttu-id="65b22-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="65b22-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="abc12-105">Obtém uma coluna incluída no intervalo.</span><span class="sxs-lookup"><span data-stu-id="abc12-105">Gets a column contained in the range.</span></span>
+## <a name="permissions"></a><span data-ttu-id="abc12-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="abc12-106">Permissions</span></span>
+<span data-ttu-id="abc12-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="abc12-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="65b22-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="65b22-109">Permission type</span></span>      | <span data-ttu-id="65b22-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="65b22-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="abc12-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="abc12-109">Permission type</span></span>      | <span data-ttu-id="abc12-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="abc12-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="65b22-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="65b22-111">Delegated (work or school account)</span></span> | <span data-ttu-id="65b22-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="65b22-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="65b22-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="65b22-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="65b22-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="65b22-114">Not supported.</span></span>    |
-|<span data-ttu-id="65b22-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="65b22-115">Application</span></span> | <span data-ttu-id="65b22-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="65b22-116">Not supported.</span></span> |
+|<span data-ttu-id="abc12-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="abc12-111">Delegated (work or school account)</span></span> | <span data-ttu-id="abc12-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="abc12-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="abc12-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="abc12-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="abc12-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="abc12-114">Not supported.</span></span>    |
+|<span data-ttu-id="abc12-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="abc12-115">Application</span></span> | <span data-ttu-id="abc12-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="abc12-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="65b22-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="65b22-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="abc12-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="abc12-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -38,29 +38,29 @@ GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/colum
 GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/column
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="65b22-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="65b22-118">Request headers</span></span>
-| <span data-ttu-id="65b22-119">Nome</span><span class="sxs-lookup"><span data-stu-id="65b22-119">Name</span></span>       | <span data-ttu-id="65b22-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="65b22-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="abc12-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="abc12-118">Request headers</span></span>
+| <span data-ttu-id="abc12-119">Nome</span><span class="sxs-lookup"><span data-stu-id="abc12-119">Name</span></span>       | <span data-ttu-id="abc12-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="abc12-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="65b22-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="65b22-121">Authorization</span></span>  | <span data-ttu-id="65b22-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="65b22-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="65b22-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="65b22-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="65b22-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="65b22-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="abc12-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="abc12-121">Authorization</span></span>  | <span data-ttu-id="abc12-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="abc12-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="abc12-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="abc12-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="abc12-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="abc12-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="path-parameters"></a><span data-ttu-id="65b22-127">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="65b22-127">Path parameters</span></span>
-<span data-ttu-id="65b22-128">No caminho da solicitação, forneça os parâmetros a seguir.</span><span class="sxs-lookup"><span data-stu-id="65b22-128">In the request path, provide the following parameters.</span></span>
+## <a name="path-parameters"></a><span data-ttu-id="abc12-127">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="abc12-127">Path parameters</span></span>
+<span data-ttu-id="abc12-128">No caminho da solicitação, forneça os parâmetros a seguir.</span><span class="sxs-lookup"><span data-stu-id="abc12-128">In the request path, provide the following parameters.</span></span>
 
-| <span data-ttu-id="65b22-129">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="65b22-129">Parameter</span></span>    | <span data-ttu-id="65b22-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="65b22-130">Type</span></span>   |<span data-ttu-id="65b22-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="65b22-131">Description</span></span>|
+| <span data-ttu-id="abc12-129">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="abc12-129">Parameter</span></span>    | <span data-ttu-id="abc12-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="abc12-130">Type</span></span>   |<span data-ttu-id="abc12-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="abc12-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="65b22-132">column</span><span class="sxs-lookup"><span data-stu-id="65b22-132">column</span></span>|<span data-ttu-id="65b22-133">Int32</span><span class="sxs-lookup"><span data-stu-id="65b22-133">Int32</span></span>|<span data-ttu-id="65b22-p104">O número da coluna do intervalo a ser recuperado. Indexados com zero.</span><span class="sxs-lookup"><span data-stu-id="65b22-p104">Column number of the range to be retrieved. Zero-indexed.</span></span>|
+|<span data-ttu-id="abc12-132">column</span><span class="sxs-lookup"><span data-stu-id="abc12-132">column</span></span>|<span data-ttu-id="abc12-133">Int32</span><span class="sxs-lookup"><span data-stu-id="abc12-133">Int32</span></span>|<span data-ttu-id="abc12-p104">O número da coluna do intervalo a ser recuperado. Indexados com zero.</span><span class="sxs-lookup"><span data-stu-id="abc12-p104">Column number of the range to be retrieved. Zero-indexed.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="65b22-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="65b22-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="abc12-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="abc12-136">Response</span></span>
 
-<span data-ttu-id="65b22-137">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="65b22-137">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="abc12-137">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="abc12-137">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="65b22-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="65b22-138">Example</span></span>
-<span data-ttu-id="65b22-139">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="65b22-139">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="65b22-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="65b22-140">Request</span></span>
-<span data-ttu-id="65b22-141">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="65b22-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="abc12-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="abc12-138">Example</span></span>
+<span data-ttu-id="abc12-139">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="abc12-139">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="abc12-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="abc12-140">Request</span></span>
+<span data-ttu-id="abc12-141">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="abc12-141">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="65b22-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="65b22-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="abc12-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="abc12-142">HTTP</span></span>](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -69,27 +69,27 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/column(column=5)
 ```
-# <a name="c"></a>[<span data-ttu-id="65b22-143">C#</span><span class="sxs-lookup"><span data-stu-id="65b22-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="abc12-143">C#</span><span class="sxs-lookup"><span data-stu-id="abc12-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-column-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="65b22-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="65b22-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="abc12-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="abc12-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-column-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="65b22-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="65b22-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="abc12-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="abc12-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-column-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="65b22-146">Java</span><span class="sxs-lookup"><span data-stu-id="65b22-146">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="abc12-146">Java</span><span class="sxs-lookup"><span data-stu-id="abc12-146">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/range-column-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="65b22-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="65b22-147">Response</span></span>
-<span data-ttu-id="65b22-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="65b22-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="abc12-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="abc12-147">Response</span></span>
+<span data-ttu-id="abc12-148">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="abc12-148">Here is an example of the response.</span></span> <span data-ttu-id="abc12-149">Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="abc12-149">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
