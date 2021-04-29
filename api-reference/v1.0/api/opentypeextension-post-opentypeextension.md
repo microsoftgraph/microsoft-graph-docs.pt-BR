@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 5cd57197f519ed4f79bd684667a02ac8e990cd81
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f91a549e13b956d9c0d1fa4d8ca8765e7b7bd89a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470857"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052219"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
@@ -80,7 +80,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
 POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 ```
 
->**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância do recurso, para criar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.
+>**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância de recurso, a fim de criar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos suportam a criação de extensões abertas nelas de forma semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extensão_ no corpo da solicitação.
 
@@ -113,8 +113,7 @@ Ao criar uma extensão em uma _nova_ instância de recursos, além de novos obje
 
 Dependendo da operação, o código de resposta pode ser `201 Created` ou `202 Accepted`.
 
-Quando você cria uma extensão usando a mesma operação usada para criar uma instância de recurso, a operação retorna o mesmo código de resposta retornado quando você usa a operação para criar a instância do recurso sem a extensão.
-Consulte os tópicos correspondentes para criar a instância conforme listado [cima](#create-an-extension-in-a-new-resource-instance).
+Quando você cria uma extensão usando a mesma operação que você usa para criar uma instância de recurso, a operação retorna o mesmo código de resposta retornado quando você usa a operação para criar a instância de recurso sem a extensão. Consulte os tópicos correspondentes para a criação da instância, conforme listado [acima](#create-an-extension-in-a-new-resource-instance).
 
 ### <a name="response-body"></a>Corpo da resposta
 
@@ -193,7 +192,7 @@ Veja a seguir a resposta para o primeiro exemplo. O corpo da resposta inclui pro
 - A propriedade padrão **extensionName** especificada na solicitação.
 - Os dados personalizados especificados na solicitação, armazenados como 3 propriedades personalizadas.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -539,7 +538,7 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 
 Veja a seguir a resposta do quinto exemplo, que contém a nova conversa e uma ID de thread. Esse novo thread contém uma postagem criada automaticamente que, por sua vez, contém a nova extensão.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 
 Para obter a nova extensão, primeiro [obtenha todas as postagens](../api/conversationthread-list-posts.md) desse thread. Inicialmente, deve haver somente uma. Em seguida, aplique a ID da postagem e o nome da extensão `Com.Contoso.Benefits` para [obter a extensão](../api/opentypeextension-get.md).
 

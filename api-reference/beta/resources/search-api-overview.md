@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 08baf178608287709632c44cc5e96efd02d34a7a
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 070d799c80fd9d10916d9adfb3a48a9d033883af
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883050"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067037"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -40,6 +40,7 @@ As solicitações de pesquisa são executadas em nome do usuário. Os resultados
 |[Classificar resultados de pesquisa](#sort-search-results)| **sort** |
 |[Refinar os resultados usando agregações](#refine-results-using-aggregations)| **aggregations** |
 |[Pesquisar tipos personalizados importados usando conectores](/graph/search-concept-custom-types)| **contentSources** |
+|[Solicitar verificação ortográfica](#request-spelling-correction)| **queryAlterationOptions** |
 
 ## <a name="scope-search-based-on-entity-types"></a>Pesquisa de escopo com base em tipos de entidade
 
@@ -143,6 +144,14 @@ As agregações atualmente têm suporte para qualquer propriedade refinável nos
 
 Confira [refinar os resultados da pesquisa](/graph/search-concept-aggregation) para obter exemplos que mostram como usar a agregação para melhorar e restringir os resultados da pesquisa.
 
+## <a name="request-spelling-correction"></a>Solicitar verificação ortográfica
+
+A verificação ortográfica é uma maneira popular de lidar com incompatibilidades entre erros de digitação em uma consulta do usuário e as palavras corretas em conteúdos combinados. Quando erros de digitação são detectados na consulta original do usuário, você pode obter o resultado da pesquisa tanto para a consulta original do usuário quanto para a consulta alternativa corrigida. Você também pode obter as informações de verificação ortográfica para erros de digitação na propriedade **queryAlterationResponse** da [searchresponse](searchresponse.md). 
+
+No corpo de solicitação do método [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true), especifique as **queryAlterationOptions** que devem ser aplicadas à consulta para as verificações ortográficas. A descrição das **queryAlterationOptions** são definidas nas [searchAlterationOptions](./searchalterationoptions.md).
+
+Para exemplos que mostram como usar verificações ortográficas, consulte [Solicitar verificação ortográfica](/graph/search-concept-speller).
+
 ## <a name="error-handling"></a>Tratamento de erros
 
 A API de pesquisa retorna respostas de erro conforme estipulado pela [definição de objeto de erro OData](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse). Cada uma delas é um objeto JSON que contém um código e uma mensagem.
@@ -193,6 +202,7 @@ Para compatibilidade com versões anteriores, as propriedades e tipos originais 
   - [Pesquisar tipos personalizados importados usando conectores](/graph/search-concept-custom-types)
   - [Classificar resultados de pesquisa](/graph/search-concept-sort)
   - [Refinar resultados de pesquisa](/graph/search-concept-aggregation)
+  - [Solicitar verificação ortográfica](/graph/search-concept-speller)
 
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 
