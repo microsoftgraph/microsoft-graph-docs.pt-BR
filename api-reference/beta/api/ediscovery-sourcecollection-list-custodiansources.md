@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: e1a0a653476ff0226d33c19f33eda9d1d7bc2c04
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 4b03b5bc02e16b901066b3561317d7afb8777bd2
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952099"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080295"
 ---
 # <a name="list-custodiansources"></a>Listar custodiadoresSources
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 
 ### <a name="response"></a>Resposta
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

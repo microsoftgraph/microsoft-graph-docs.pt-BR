@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7317ba399c284ff0f953a1e14787409f7e0e9939
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 916725283b86c59907ddd89e5441902fa0f8c756
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921945"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080173"
 ---
 # <a name="printjob-redirect"></a>printJob: redirecionamento
 
@@ -20,9 +20,11 @@ Namespace: microsoft.graph
 
 Redirecionar [um trabalho de impressão](../resources/printjob.md) para uma impressora [diferente.](../resources/printer.md)
 
+Redirecionar um trabalho de impressão só terá êxito se houver [um printTask](../resources/printTask.md) em um estado no trabalho de impressão associado, iniciado por um gatilho criado pelo aplicativo `processing` solicitante. 
+
 Para obter detalhes sobre como usar essa API para adicionar suporte à impressão pull à Impressão Universal, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve [](printer-get.md) ter uma assinatura de Impressão Universal ativa, uma permissão que concede acesso a Obter impressora e uma das permissões listadas na tabela a seguir.
@@ -31,7 +33,7 @@ Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativ
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| PrintJob.Manage.All |
+|Aplicativo| PrintJob.Manage.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +50,7 @@ No corpo da solicitação, fornece a ID da impressora para a onde o trabalho de 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|destinationPrinterId|String|A ID da impressora para a que o trabalho de impressão deve ser redirecionado.|
+|destinationPrinterId|Cadeia de Caracteres|A ID da impressora para a que o trabalho de impressão deve ser redirecionado.|
 |configuração|microsoft.graph.printJobConfiguration|Configuração atualizada do trabalho de impressão.|
 
 ## <a name="response"></a>Resposta

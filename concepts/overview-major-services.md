@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite a integração com os melhores serviços
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 55b877252d843b0e181e3aefa8d0ddc5756ce648
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 27ac5bb349ad8ada5cc079331cfb23e3c08e87bf
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882345"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067219"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -56,7 +56,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 | Observações | OneNote | Permite aos usuários planejar e organizar informações e ideias. | [Visão geral das anotações do OneNote](integrate-with-onenote.md) |
 | Contatos pessoais | Outlook | Entra em contato com o gerente na Web e em dispositivos móveis e de desktop. Faz parte do hub de comunicação de mensagens do Outlook no Microsoft 365, que também permite que os usuários gerenciem emails e agendem reuniões.  | [Visão geral de contatos pessoais do Outlook](outlook-contacts-concept-overview.md) |
 | Pastas de trabalho e gráficos | Excel | Permite que os usuários usem planilhas do Excel para fazer cálculos complexos, rastrear, analisar e visualizar dados e gerar relatórios profissionais. | [Visão geral de gráficos e pastas de trabalho do Excel](excel-concept-overview.md) |
-| Tarefas pendentes | To Do | Permite aos usuários gerenciar suas tarefas pessoais em seu trabalho e em sua vida particular. Ele também está integrado ao Outlook, Teams, Planner e Cortana, o que o torna o único destino para as tarefas pessoais do usuário no Microsoft 365 | [Visão geral sobre tarefas To Do](todo-concept-overview.md) |
+| Tarefas pendentes | To Do | Permite aos usuários gerenciar suas tarefas pessoais em todo seu trabalho e na sua vida pessoal. Ele também está integrado ao Outlook, Equipes, Planner e Cortana, o que o torna o único destino para as tarefas pessoais do usuário no Microsoft 365 | [Visão geral sobre tarefas To Do](todo-concept-overview.md) |
 
 ## <a name="collaboration"></a>Colaboração
 
@@ -87,6 +87,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |:-----------|:--------------------|:-----------|:----------------|
 | Impressão na nuvem | Impressão universal | A impressão universal é uma infraestrutura de impressão baseada na nuvem do Microsoft 365 que permite uma experiência de impressão simples, rica e segura aos usuários e reduz o tempo e o esforço de TI. | [Impressão na nuvem usando a API de Impressão Universal](universal-print-concept-overview.md) |
 |Gerenciamento corporativo de dispositivos e aplicativos | Intune | Registra e configura dispositivos e gerencia aplicativos móveis em sua organização. | [Visão geral de dispositivos e aplicativos do Intune](intune-concept-overview.md) |
+| Atualização de dispositivos | Serviço de implantação do Windows Update para Empresas | Fornece controle sobre a aprovação, agendamento, monitoramento e proteção do conteúdo fornecido pelo Windows Update. | [Atualizações do Windows no Microsoft Graph](windowsupdates-concept-overview.md)
 
 
 ## <a name="security"></a>Segurança

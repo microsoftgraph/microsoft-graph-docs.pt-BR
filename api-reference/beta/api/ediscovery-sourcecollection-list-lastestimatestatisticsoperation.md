@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: c9f1cf37baa5bb816d34290065bf74eb5419cdc8
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 2f3d5f1b755687b91a99e25132eb21ca9dc30713
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772615"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080334"
 ---
 # <a name="list-estimatestatisticsoperation"></a>Listar estimateStatisticsOperation
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 
 ### <a name="response"></a>Resposta
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

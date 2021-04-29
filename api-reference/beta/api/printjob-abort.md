@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: cfd82c356463f3e642d5817ff0203c2bec8627db
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 597d92e051940d94a53364c624a8d0d20ef23dce
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515447"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080624"
 ---
 # <a name="printjob-abort"></a>printJob: abort
 
@@ -19,6 +19,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Aborte um trabalho de impressão. Somente aplicativos que usam permissões de aplicativo podem cancelar um trabalho de impressão.
+
+A anulação de um trabalho de impressão só terá êxito se houver [uma printTask](../resources/printTask.md) em um estado no trabalho de impressão associado, iniciado por um gatilho criado pelo aplicativo `processing` solicitante. Para obter detalhes sobre como registrar um gatilho de tarefas, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,7 +48,7 @@ No corpo da solicitação, opcionalmente, você pode fornecer o motivo pelo qual
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|motivo|Cadeia de caracteres|Motivo pelo qual o trabalho está sendo abortado.|
+|motivo|Cadeia de Caracteres|Motivo pelo qual o trabalho está sendo abortado.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.

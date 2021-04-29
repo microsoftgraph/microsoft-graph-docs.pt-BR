@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1ba26e01cd51a4819fa8947967f5865a9ec84fe3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 799601b3ca59c3522e4d023f7647bca523369659
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773792"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080311"
 ---
 # <a name="create-sourcecollection"></a>Criar sourceCollection
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.ediscovery
 
 Crie um novo [objeto sourceCollection.](../resources/ediscovery-sourcecollection.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -56,9 +56,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [sourceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|Quando especificado, a coleção se estenderá por um serviço para uma carga de trabalho inteira. Os valores possíveis são: `none` , , , , `allTenantMailboxes` `allTenantSites` `allCaseCustodians` `allCaseNoncustodialDataSources` . **Observação:** Um custodiante ou a especificação de dadosSourceScope é necessária ao criar uma coleção de origem.|
 |displayName|String|O nome de exibição da **sourceCollection**|
 |custodianSources|[coleção microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|As fontes custodiadas a incluir nesta pesquisa. Você pode obter a URL do [site custodianteSources,](../api/ediscovery-custodian-list-sitesources.md) [unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md)ou [userSources](../api/ediscovery-custodian-list-usersources.md) mais a ID da origem. **Observação:** Um custodiante ou a especificação da origem do locatário é necessário ao criar uma coleção de origem. |
-|tenantSources|microsoft.graph.ediscovery.tenantSources|Quando especificado, a coleção se estenderá por um serviço para uma carga de trabalho inteira. Os valores possíveis são: `allMailboxes` e `allSites`. **Observação:** Um custodiante ou a especificação da origem do locatário é necessário ao criar uma coleção de origem.|
 
 ## <a name="response"></a>Resposta
 
@@ -110,7 +110,7 @@ Content-length: 272
 
 ### <a name="response"></a>Resposta
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,7 +127,7 @@ Content-Type: application/json
     "description": null,
     "lastModifiedDateTime": "2021-01-12T18:09:03.7378679Z",
     "contentQuery": "subject:'Quarterly Financials'",
-    "tenantSources": "none",
+    "dataSourceScopes": "none",
     "id": "1a9b4145d8f84e39bc45a7f68c5c5119",
     "displayName": "Quarterly Financials search",
     "createdDateTime": "2021-01-12T18:09:03.417009Z",

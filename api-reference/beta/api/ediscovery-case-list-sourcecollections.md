@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2902b13af183a72a20a4322ff9d78357d150e4a4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 801a526ef92cdffb5e262a830b5708db3a11e0ca
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776589"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080292"
 ---
 # <a name="list-sourcecollections"></a>Listar sourceCollections
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 
 ### <a name="response"></a>Resposta
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,7 +126,7 @@ Content-Type: application/json
                 }
             },
             "contentQuery": "subject:'Quarterly Financials'",
-            "tenantSources": "none",
+            "dataSourceScopes": "allTenantMailboxes",
             "id": "fe5ef84e9c8c45819c056f6eb261718e",
             "displayName": "Quarterly Financials",
             "createdDateTime": "2020-12-11T22:56:14.2329133Z"

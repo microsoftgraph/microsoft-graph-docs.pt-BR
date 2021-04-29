@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 86ecf3adb64be2b216fdc167b29c10a850e25af6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: aca8b0dcf89f00ada59b093d1164104da0885578
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445895"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080467"
 ---
 # <a name="sourcecollection-resource-type"></a>Tipo de recurso sourceCollection
 
@@ -18,41 +18,48 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma coleção eDiscovery, comumente conhecida como pesquisa. Para obter detalhes, [consulte Coletar dados para uma ocorrência em Descoberta Avançada de eDiscovery](/microsoft-365/compliance/collecting-data-for-ediscovery).
+Representa uma coleção eDiscovery, comumente conhecida como pesquisa. Para detalhes, consulte [Coletar dados para um caso na Descoberta Eletrônica Avançada](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
+|[Adicionar additionalSource](../api/ediscovery-sourcecollection-post-additionalsources.md)|[coleção microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Adicione um **objeto dataSource** adicional à coleção de origem.|
+|[Adicionar custodianSource](../api/ediscovery-sourcecollection-post-custodiansources.md)|[coleção microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Adicionar um objeto **dataSource custodiante** à coleção de origem.|
+|[Adicionar noncustodialSource](../api/ediscovery-sourcecollection-post-noncustodialsources.md)|[coleção microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md)|Adicione um objeto **noncustodialSource** de origem não custodial à coleção de origem.|
 |[Listar sourceCollections](../api/ediscovery-case-list-sourcecollections.md)|[coleção microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Obter uma lista dos **objetos sourceCollection** e suas propriedades.|
 |[Criar sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Crie um novo **objeto sourceCollection.**|
 |[Obter sourceCollection](../api/ediscovery-sourcecollection-get.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Leia as propriedades e as relações de um **objeto sourceCollection.**|
 |[Atualizar sourceCollection](../api/ediscovery-sourcecollection-update.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Atualize as propriedades de um **objeto sourceCollection.**|
-|[Excluir sourceCollection](../api/ediscovery-sourcecollection-delete.md)|Nenhum(a)|Exclua **um objeto sourceCollection.**|
-|[estimateStatistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|Nenhum(a)|Execute uma estimativa do número de emails e documentos na coleção de origem.|
+|[Excluir sourceCollection](../api/ediscovery-sourcecollection-delete.md)|Nenhum|Exclua **um objeto sourceCollection.**|
+|[estimateStatistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|Nenhum|Execute uma estimativa do número de emails e documentos na coleção de origem.|
 |[Listar additionalSources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[coleção microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Obter uma lista de **objetos dataSource adicionais** associados a uma coleção de origem.|
-|[Listar custodiadoresSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[coleção microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Obter uma lista de **objetos dataSource adicionais** associados a uma coleção de origem.|
+|[Listar custodiadoresSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[coleção microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Obter uma lista de objetos **dataSource custodiantes** associados a uma coleção de origem.|
+|[Listar noncustodialSources](../api/ediscovery-sourcecollection-list-noncustodialsources.md)|[coleção microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md)|Obter uma lista de fontes não custodiais **objetos noncustodialSource** associados a uma coleção de origem.|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|contentQuery|String|A cadeia de caracteres de consulta na consulta KQL (Keyword Query Language). Para obter detalhes, consulte [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo e Descoberta De Conteúdo.](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)  Você pode refinar pesquisas usando campos emparelhados com valores; por exemplo, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*|
+|contentQuery|Cadeia de Caracteres|A cadeia de caracteres de consulta na consulta KQL (Keyword Query Language). Para obter detalhes, consulte [Consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo e Descoberta De Conteúdo.](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)  Você pode refinar pesquisas usando campos emparelhados com valores; por exemplo, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*|
 |createdBy|[identitySet](../resources/identityset.md)|O usuário que criou **o sourceCollection**.|
 |createdDateTime|DateTimeOffset|A data e a hora em **que o sourceCollection** foi criado.|
-|descrição|String|A descrição da **sourceCollection**|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|Quando especificado, a coleção se estenderá por um serviço para uma carga de trabalho inteira. Os valores possíveis são: `none` , , , , `allTenantMailboxes` `allTenantSites` `allCaseCustodians` `allCaseNoncustodialDataSources` .|
+|description|String|A descrição da **sourceCollection**|
 |displayName|String|O nome de exibição da **sourceCollection**|
 |id|String| A ID da **sourceCollection**. Somente leitura. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|O último usuário que modificou **o sourceCollection**.|
 |lastModifiedDateTime|DateTimeOffset|A última data e hora em **que o sourceCollection** foi modificado.|
-|tenantSources|microsoft.graph.ediscovery.tenantSources|Quando especificado, a coleção se estenderá por um serviço para uma carga de trabalho inteira. Os valores possíveis são: `allMailboxes` e `allSites`.|
 
-### <a name="tenantsources-values"></a>valores tenantSources
+### <a name="datasourcescopes-values"></a>valores dataSourceScopes
 
 |Member|Descrição|
 |:----|-----------|
-|allMailboxes| Inclua todas as caixas de correio na coleção. |
-|allSites| Inclua todos os sites na coleção. |
+|nenhuma|Não especifique nenhum escopo - os locais seriam referenciados separadamente.|
+|allTenantMailboxes|Inclua todas as caixas de correio de locatários **na sourceCollection**.|
+|allTenantSites|Inclua todos os sites de **locatários no sourceCollection**.|
+|allCaseCustodians|Inclua todos os locais de custodia na **sourceCollection**.|
+|allCaseNoncustodialDataSources|Inclua todas as fontes de dados não custodiais na **sourceCollection**.|
 
 ## <a name="relationships"></a>Relações
 
@@ -62,6 +69,7 @@ Representa uma coleção eDiscovery, comumente conhecida como pesquisa. Para obt
 |addToReviewSetOperation|[microsoft.graph.ediscovery.addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md)|Adiciona os resultados do **sourceCollection** ao **reviewSet especificado.**|
 |custodianSources|[coleção microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|**Fontes de** custodia que estão incluídas na **sourceCollection**.|
 |lastEstimateStatisticsOperation|[microsoft.graph.ediscovery.estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md)|A última operação de estimativa associada à **sourceCollection**.|
+|noncustodialSources|[coleção microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)|**fontes noncustodialDataSource** incluídas na **sourceCollection**|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -88,6 +96,6 @@ Veja a seguir uma representação JSON do recurso.
   },
   "lastModifiedDateTime": "String (timestamp)",
   "contentQuery": "String",
-  "tenantSources": "String"
+  "dataSourceScopes": "String"
 }
 ```

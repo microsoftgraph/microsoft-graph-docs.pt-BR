@@ -1409,9 +1409,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -1487,7 +1487,7 @@ items:
                     href: api/ediscovery-custodian-update.md
                   - name: Ativar
                     href: api/ediscovery-custodian-activate.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/ediscovery-custodian-release.md
               - name: Retenção legal
                 href: resources/ediscovery-legalhold.md
@@ -1502,6 +1502,19 @@ items:
                     href: api/ediscovery-legalhold-update.md
                   - name: Excluir
                     href: api/ediscovery-legalhold-delete.md
+              - name: Fontes de dados não custodiais
+                href: resources/ediscovery-noncustodialdatasource.md
+                items:
+                  - name: Listar
+                    href: api/ediscovery-noncustodialdatasource-list.md
+                  - name: Criar
+                    href: api/ediscovery-noncustodialdatasource-post.md
+                  - name: Obter
+                    href: api/ediscovery-noncustodialdatasource-get.md
+                  - name: Listar datasource
+                    href: api/ediscovery-noncustodialdatasource-list-datasource.md
+                  - name: Liberar
+                    href: api/ediscovery-noncustodialdatasource-release.md
               - name: Conjuntos de revisão
                 href: resources/ediscovery-reviewset.md
                 items:
@@ -1604,7 +1617,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-      - name: Reserva de clientes (visualização)
+      - name: Reserva de clientes (prévia)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Visão Geral
@@ -11850,7 +11863,7 @@ items:
             items:
               - name: Criar e enviar uma notificação
                 href: api/user-post-notifications.md
-      - name: Inteligência de pessoas e local de trabalho
+      - name: Inteligência de pessoas e no local de trabalho
         items:
           - name: Visão Geral
             href: resources/social-overview.md
@@ -12196,9 +12209,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Configurações
                 items:
-                  - name: Settings
+                  - name: Configurações
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -13587,7 +13600,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefa
+          - name: Tarefas
             href: resources/todotask.md
             items:
               - name: Listar tarefas

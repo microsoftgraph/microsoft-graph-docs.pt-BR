@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nilakhan
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e0304601c76276fbcdd3db5836245ef5b592f05a
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 7f565aacff1cf656f0697f5564763f40341981f7
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921846"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080677"
 ---
 # <a name="printdocument-createuploadsession"></a>printDocument: createUploadSession
 
@@ -22,6 +22,8 @@ Crie uma sessão de carregamento que permita que um aplicativo carregue de forma
 
 Como parte da resposta, essa ação retorna uma URL de carregamento que pode ser usada em consultas `PUT` sequenciais subsequentes. Os headers de solicitação para cada operação podem ser usados para especificar o intervalo exato de `PUT` bytes a serem carregados. Isso permite que a transferência seja retomada, caso a conexão de rede seja largada durante o carregamento. 
 
+>**Observação**: a criação de uma sessão de carregamento usando permissões de aplicativo só terá êxito se houver um [printTask](../resources/printTask.md) em um estado no trabalho de impressão associado, iniciado por um gatilho criado pelo aplicativo `processing` solicitante. Para obter detalhes sobre como registrar um gatilho de tarefas, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,9 +31,9 @@ Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter 
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | PrintJob.Create, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | PrintJob.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | PrintJob.Create, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -42,7 +44,7 @@ Para criar uma sessão de carregamento usando **impressora**:
 POST /print/printers/{id}/jobs/{id}/documents/{id}/createUploadSession
 ```
 
-Para criar uma sessão de carregamento usando **printerShare**: 
+Para criar uma sessão de carregamento usando **printerShare** (com suporte apenas com permissões delegadas): 
 
 <!-- { "blockType": "ignored" } -->
 ```http

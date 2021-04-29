@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3038f657930bcc92360bf5a60b68db4d6a8398a6
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3d7636ef3e11d83949ba345010c4e140ee903f43
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952064"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080327"
 ---
 # <a name="create-datasource"></a>Criar dataSource
 
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o dataS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID do [caso sourceCollection.](../resources/ediscovery-sourcecollection.md) Somente leitura. Herdado da [entidade](../resources/entity.md)|
-|displayName|Cadeia de caracteres|O nome da [sourceCollection](../resources/ediscovery-sourcecollection.md)|
+|id|String|A ID do [caso sourceCollection.](../resources/ediscovery-sourcecollection.md) Somente leitura. Herdado da [entidade](../resources/entity.md)|
+|displayName|String|O nome da [sourceCollection](../resources/ediscovery-sourcecollection.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em [que o sourceCollection](../resources/ediscovery-sourcecollection.md) foi criado.|
 |createdBy|[identitySet](../resources/identityset.md)|O usuário que criou [o sourceCollection](../resources/ediscovery-sourcecollection.md).|
 
@@ -108,7 +108,7 @@ Content-length: 179
 
 ### <a name="response"></a>Resposta
 
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 931541b6f730c0ed52168b4cf3dfef4e927d808a
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 528b5d42024793846b047ddc16f7e464b6d995c1
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473420"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080621"
 ---
 # <a name="azure-ad-access-reviews"></a>Revisões de acesso ao Azure AD
 
@@ -33,7 +33,7 @@ Cenários de cliente típicos para análises de acesso de associações de grupo
 
 Há também um recurso relacionado para que os clientes revisem e certifiquem as atribuições de função de usuários administrativos que são atribuídas a funções do Azure AD, como Administrador Global ou funções de assinatura do Azure.  Esse recurso está incluído no [Azure AD Privileged Identity Management](privilegedidentitymanagement-root.md).
 
-Observe que o recurso de críticas de acesso, incluindo a API, está incluído no Azure AD Premium P2.  O locatário em que uma revisão de acesso está sendo criada deve ter uma assinatura válida comprada ou avaliação do Azure AD Premium P2 ou EMS E5.
+Observe que o recurso de análises de acesso, incluindo a API, está incluído no Azure AD Premium P2.  O locatário em que uma revisão de acesso está sendo criada deve ter uma assinatura válida comprada ou de avaliação do Azure AD Premium assinatura P2 ou EMS E5.
 
 
 ## <a name="methods"></a>Métodos
@@ -60,9 +60,9 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 
 ## <a name="role-and-application-permission-authorization-checks"></a>Verificações de autorização de função e permissão de aplicativo
 
-As seguintes funções de diretório são necessárias para que um usuário de chamada gerencie as análises de acesso. Observe que apenas as avaliações de acesso em grupos são suportadas atualmente por meio de APIs do Microsoft Graph.
+As seguintes funções de diretório são necessárias para que um usuário de chamada gerencie as análises de acesso. 
 
-| Operação | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
+| Operation | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
 |:------------------|:------------|:--------------------------------------------|
 | Ler | AccessReview.Read.All ou AccessReview.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Segurança, Leitor de Segurança ou Administrador do Usuário |
 | Criar, atualizar ou excluir | AccessReview.ReadWrite.All | Administrador Global ou Administrador de Usuário |
