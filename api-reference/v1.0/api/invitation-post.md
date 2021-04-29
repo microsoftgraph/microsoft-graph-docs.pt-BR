@@ -1,16 +1,16 @@
 ---
 title: Criar convite
-description: Use esta API para criar um novo convite. O convite adiciona um usuário externo à organização.
+description: Use essa API para criar um novo convite. O convite adiciona um usuário externo à organização.
 localization_priority: Priority
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bc9c4b0357f2b7ee083bcf37ada5b2db953ebaa0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2ca265c53fc730d30f624062bbd0751327b4cca8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949860"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052247"
 ---
 # <a name="create-invitation"></a>Criar convite
 
@@ -97,7 +97,7 @@ Content-length: 551
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

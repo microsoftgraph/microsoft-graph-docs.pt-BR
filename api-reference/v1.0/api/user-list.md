@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 700254bd7ecfbc0a602552ddc82817e26664f6ee
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 79c60a53edf8d5c105d0a12a4ce53514e6dc8cb2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473147"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52033654"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -42,7 +42,7 @@ Por padrão, apenas um conjunto limitado de propriedades é retornado (**busines
 
 Para retornar um conjunto de propriedades alternativas, especifique o conjunto desejado de propriedades do [usuário](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar **displayName**, **givenName** e **postalCode**, adicione o seguinte à sua consulta `$select=displayName,givenName,postalCode`.
 
-Determinadas propriedades não podem ser retornadas dentro de uma coleção de usuário. As seguintes propriedades só possuem suporte ao [recuperar um único usuário](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
+Certas propriedades não podem ser retornadas em uma coleção de usuário. As seguintes propriedades são suportadas apenas [ao recuperar um único usuário:](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/v1.0/users
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -165,7 +165,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identi
 
 Este é um exemplo de resposta. 
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -233,7 +233,7 @@ ConsistencyLevel: eventual
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -300,7 +300,7 @@ ConsistencyLevel: eventual
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -347,7 +347,7 @@ ConsistencyLevel: eventual
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -393,7 +393,7 @@ ConsistencyLevel: eventual
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

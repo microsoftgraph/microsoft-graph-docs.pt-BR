@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 91aabfaa178f1363a425b21967bf61e1e4457567
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: 8900708ae5d22ef658ec8d5ea9dc6f9c6b798b7c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720557"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038730"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -146,7 +146,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 #### <a name="response"></a>Resposta
-Veja um exemplo de resposta que exibe as propriedades **start** e **end** usando o fuso horário especificado no cabeçalho `Prefer: outlook.timezone`. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja um exemplo de resposta que exibe as propriedades **start** e **end** usando o fuso horário especificado no cabeçalho `Prefer: outlook.timezone`. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -345,7 +345,7 @@ Content-length: 1390
 
 #### <a name="response"></a>Resposta
 O exemplo de resposta a seguir mostra o evento criado que especifica as informações dos três locais de reunião. Devido ao cabeçalho da solicitação `Prefer: outlook.timezone="Pacific Standard Time"`, as propriedades **start** e **end** são expressas em PST.
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -553,7 +553,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -738,7 +738,7 @@ Content-type: application/json
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 #### <a name="response"></a>Resposta
 Veja um exemplo de resposta que exibe as propriedades **start** e **end** usando o fuso horário especificado no cabeçalho `Prefer: outlook.timezone`.
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_with_online_meeting",
