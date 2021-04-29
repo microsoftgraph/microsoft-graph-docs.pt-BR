@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b2c4c157e75484d17fbef80daa26f59cfe6d9861
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 90152ca06ec28fcf147ab79e34110f2c85c739af
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50803434"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52081575"
 ---
 ```javascript
 
@@ -15,12 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-const identityProviders = {
+const identityProvider = {
   '@odata.id': 'https://graph.microsoft.com/beta/identityProviders/{id}'
 };
 
 await client.api('/identity/b2xUserFlows/{id}/identityProviders/$ref')
     .version('beta')
-    .update(identityProviders);
+    .post(identityProvider);
 
 ```
