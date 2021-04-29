@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2edf48aa0fc92c37f0b86e30aef566ceb687b134
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 69160b9e583cd480c09baebed58b079472b3a65b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516189"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054200"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_v1",
@@ -522,7 +522,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKgAAA=/attachments/A
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -561,7 +561,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 ```
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. O corpo da resposta real inclui os bytes brutos do anexo do arquivo, que são abreviados aqui por questões de brevidade.
+Aqui está um exemplo da resposta. O corpo de resposta real inclui os bytes brutos do anexo do arquivo, que são abreviados aqui para brevidade.
 
 <!-- {
   "blockType": "ignored",

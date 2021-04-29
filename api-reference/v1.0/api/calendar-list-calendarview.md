@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 574ad46a454bc86ab7e9a9b7fe827d7a44cedc31
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4a3caa3aa190f899163c75d7f4b89a14b88465b5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434892"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052520"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -71,7 +71,7 @@ Este método também dá suporte a alguns [Parâmetros de consulta OData](/graph
 | Nome       | Tipo | Descrição |
 |:---------------|:--------|:--------|
 | Autorização  | string | {token} de portador. Obrigatório.  |
-| Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
+| Prefira: outlook.timezone  | string | Use isso para especificar o fuso horário para os horários de início e término na resposta. Se não for especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

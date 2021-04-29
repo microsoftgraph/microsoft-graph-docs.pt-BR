@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 206c5422858dd9d3225e566ff76ba86eea4f6185
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 92689c47b456d85e605cdd509045f77b94ea12b0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063699"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052324"
 ---
 # <a name="list-events"></a>Listar eventos
 
@@ -41,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 | Nome       | Tipo | Descrição |
 |:---------------|:--------|:--------|
 | Autorização  | string | {token} de portador. Obrigatório.  |
-| Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
+| Prefira: outlook.timezone  | string | Use isso para especificar o fuso horário para os horários de início e término na resposta. Se não for especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 | Prefer: outlook.body-content-type | cadeia de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

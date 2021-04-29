@@ -5,18 +5,18 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aba156ec5b47ea69e18ff14e4109cfe1b6c24cf9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 25ead575d867324d9090293f7bf26cd9feaa5296
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434360"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050462"
 ---
 # <a name="add-group-owner"></a>Adicionar proprietário do grupo
 
 Namespace: microsoft.graph
 
-Adicione um usuário ou diretor de serviço aos proprietários do grupo. Os proprietários são um conjunto de usuários ou os diretores de serviço que têm permissão para modificar o objeto do grupo.
+Adicione um usuário ou diretor de serviço aos proprietários do grupo. Os proprietários são um conjunto de usuários ou diretores de serviço que têm permissão para modificar o objeto de grupo.
 
 >**Importante:** se você atualizar os proprietários do grupo, e você criou uma equipe para o grupo, poderá levar até duas horas para que os proprietários sejam sincronizados com o Microsoft Teams. Além disso, se você quiser que o proprietário seja capaz de fazer alterações em uma equipe - por exemplo, criando um plano Planner - o proprietário também precisará ser adicionado como um membro do grupo/equipe. 
 
@@ -86,7 +86,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [user]
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

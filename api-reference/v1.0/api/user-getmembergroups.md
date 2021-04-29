@@ -1,16 +1,16 @@
 ---
 title: 'usuário: getMemberGroups'
-description: Retorne todos os grupos dos quais o usuário é membro. A verificação foi transitiva, ao contrário de leitura a
+description: Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva, ao contrário da leitura do
 localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8ebbbe1aeca0e20af40b19cf72ef1baa4ce0689d
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: a28a32ce1af781ea2d6eb05e18240067562c179a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870041"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055677"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 
@@ -102,7 +102,7 @@ Content-length: 33
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

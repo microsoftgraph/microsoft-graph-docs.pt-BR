@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 26fad30039c4e80b99b19a5e80ef17a579f9e25d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0f9ff0216ed09a71dd8b841ad0f87bdfc1333e02
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722136"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049398"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -37,6 +37,7 @@ Para um usuário específico:
 ```http
 GET /users/{id | userPrincipalName}
 ```
+Observe que quando o **userPrincipalName** começar com um caractere `$`, remova a barra (/) logo após `/users` e coloque o **userPrincipalName** entre parênteses e aspas simples. Para detalhes, consulte a lista de [problemas conhecidos](/graph/known-issues#users).
 
 Para o usuário conectado:
 <!-- { "blockType": "ignored" } -->

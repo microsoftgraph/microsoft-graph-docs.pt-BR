@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 5094e412de24a26e5381ae0763299760bac1699d
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: a2b659b1cf2f0ab830166314b5b8c5d27b594300
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51472097"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050224"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -69,7 +69,7 @@ Este método também dá suporte a alguns [Parâmetros de consulta OData](/graph
 | Nome       | Tipo | Descrição |
 |:---------------|:--------|:--------|
 | Autorização  | string | {token} de portador. Obrigatório.  |
-| Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
+| Prefira: outlook.timezone  | string | Use isso para especificar o fuso horário para os horários de início e término na resposta. Se não for especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 | Prefer: outlook.body-content-type | cadeia de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2020-01-01T19
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

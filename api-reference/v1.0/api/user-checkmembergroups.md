@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d76b252fcf6c4239c598a4f6591ae2392d25cdba
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 28c4833bc6b3e83f957d113fc5c088abb1696083
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869950"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52033640"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -104,7 +104,7 @@ Content-length: 44
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

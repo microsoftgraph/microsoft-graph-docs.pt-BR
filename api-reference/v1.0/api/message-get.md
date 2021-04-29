@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 13215ac951f9c23b80edf44fd5b57f33866ae386
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: faef3fd45e331012b642624361c9fc03e35d9a97
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136154"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035376"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -217,7 +217,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=in
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: O conjunto de cabeçalhos das mensagens no objeto de resposta é truncado para brevidade. Todas os cabeçalhos serão retornados de uma chamada real.
+Aqui está um exemplo da resposta. Observação: O conjunto de cabeçalhos de mensagem no objeto de resposta está truncado para brevidade. Todos os cabeçalhos serão retornados de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "get_message_headers",
