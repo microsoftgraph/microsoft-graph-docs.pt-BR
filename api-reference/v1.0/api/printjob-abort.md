@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 55ee53dd758116edd14149a9dc20270fa49b1679
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4f9bfb7623e546c402853c31eba750f5c4040966
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771404"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080089"
 ---
 # <a name="printjob-abort"></a>printJob: abort
 
@@ -20,7 +20,9 @@ Namespace: microsoft.graph
 
 Aborte um trabalho de impressão. Somente aplicativos que usam permissões de aplicativo podem cancelar um trabalho de impressão.
 
-## <a name="permissions"></a>Permissions
+A anulação de um trabalho de impressão só terá êxito se houver [uma printTask](../resources/printTask.md) em um estado no trabalho de impressão associado, iniciado por um gatilho criado pelo aplicativo `processing` solicitante. Para obter detalhes sobre como registrar um gatilho de tarefas, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Além das permissões a seguir, o locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter a permissão Printer.Read.All ou Printer.ReadWrite.All.
@@ -29,7 +31,7 @@ Além das permissões a seguir, o locatário do aplicativo deve ter uma assinatu
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Não suportado |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
+|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

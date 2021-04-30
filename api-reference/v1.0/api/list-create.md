@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Criar uma nova lista em um site.
 doc_type: apiPageType
-ms.openlocfilehash: f8abd6311f1b9fa98ed4a1a99cb36ac3b1a77812
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 128e772681bae4b4fcc60eefb0b224fd2a4205d1
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471683"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080425"
 ---
 # <a name="create-a-new-list"></a>Crie uma nova lista
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |            Tipo de permissão             | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Sites.Manage.All                            |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | Sites.ReadWrite.All                         |
+| Delegada (conta corporativa ou de estudante)     | Sites.Manage.All                            |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Application                            | Sites.Manage.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

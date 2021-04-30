@@ -1,15 +1,15 @@
 ---
 title: Implantar, testar e estender aplicativos migrados
-description: 'Descreve como migrar aplicativos do Azure Active Directory (Azure AD) para usar a API do Microsoft Graph (REST); isso aborda a etapa 3: implantar, testar e estender.'
+description: 'Descreve como migrar aplicativos Azure Active Directory (Azure AD) para usar a API do Microsoft Graph (REST); isso aborda a etapa 3: implantar, testar e estender.'
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: cdd2414652e675223b6de42a6a63de5c7e8c5c8a
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 3f8129c434ba8a2d7c9455f3dbfad216fb216399
+ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921921"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100104"
 ---
 # <a name="deploy-test-and-extend"></a>Implantar, testar e estender
 
@@ -30,27 +30,27 @@ Esta é a etapa 4 do [processo para migrar aplicativos.](migrate-azure-ad-graph-
 3.  **Explorar novo valor**
 
     Agora que você alternou para o Microsoft Graph, nunca foi mais fácil desbloquear muitos mais conjuntos de dados e recursos que agora estão à sua ponta dos dedos. 
-    O Microsoft Graph dá suporte a muitos novos conjuntos de dados e recursos do Azure AD que não estão disponíveis no Azure AD Graph, incluindo: 
+    O Microsoft Graph oferece suporte a muitos novos conjuntos de dados e recursos do Azure AD que não estão disponíveis no Azure AD Graph, incluindo: 
 
-    - [Gerenciamento de grupo do Microsoft 365](./office365-groups-concept-overview.md)
-    - [Convites de usuário externos](/graph/api/resources/invitation?view=graph-rest-1.0)
-    - A capacidade de restaurar usuários e grupos do [Microsoft 365](/graph/api/resources/directory?view=graph-rest-1.0) depois que eles foram excluídos
-    - [Notificações de webhook em usuários e grupos](./webhooks.md?toc=.%252fref%252ftoc.json&view=graph-rest-1.0)
+    - [Microsoft 365 gerenciamento de grupo](./office365-groups-concept-overview.md)
+    - [Convites de usuário externos](/graph/api/resources/invitation)
+    - A capacidade de [restaurar usuários e Microsoft 365 grupos depois](/graph/api/resources/directory) que eles foram excluídos
+    - [Notificações de webhook em usuários e grupos](./webhooks.md?toc=.%252fref%252ftoc.json)
     - Recursos de governança de identidade, como:
-      - [PiM](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (gerenciamento de identidade privilegiada) para elevar os usuários a funções privilegiadas somente quando necessário e por um período de tempo limitado
-      - [Avaliações do Access](/graph/api/resources/accessreviews-root?view=graph-rest-beta) para análises de acesso única ou recorrentes para atestado dos direitos de acesso do usuário
-      - [Termos de uso para permitir que](/graph/api/resources/accessreviews-root?view=graph-rest-beta) as organizações apresentem informações para requisitos legais ou de conformidade, como avisos de isenção de responsabilidade
+      - [PiM](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) (gerenciamento de identidade privilegiada) para elevar os usuários a funções privilegiadas somente quando necessário e por um período de tempo limitado
+      - [Avaliações do Access](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) para análises de acesso única ou recorrentes para atestado dos direitos de acesso do usuário
+      - [Termos de uso para permitir que](/graph/api/resources/agreement) as organizações apresentem informações para requisitos legais ou de conformidade, como avisos de isenção de responsabilidade
     - Recursos de segurança como:
-      - [Eventos de risco de identidade](/graph/api/resources/identityriskevent?view=graph-rest-1.0)
-      - [Usuários de risco](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-    - [Bibliotecas de clientes e exemplos](./index.yml) disponíveis em muitas outras plataformas e idiomas. Os SDKs do Microsoft Graph fornecem uma interface descobrivel para acessar facilmente seus dados enquanto manipulam de forma transparente a aquisição de tokens, a manipulação de novo devido a erros e a throttling, manipulação segura de redirecionamento e serialização de modelo e dessarialização.
+      - [Eventos de risco de identidade](/graph/api/resources/riskdetection)
+      - [Usuários de risco](/graph/api/resources/riskyuser)
+    - [Bibliotecas de clientes e exemplos](/graph/sdks/sdks-overview) disponíveis em muitas outras plataformas e idiomas. Os SDKs do Microsoft Graph fornecem uma interface descobrivel para acessar facilmente seus dados enquanto manipulam de forma transparente a aquisição de tokens, a manipulação de novo devido a erros e a throttling, tratamento seguro de redirecionamento e serialização de modelo e dessarialização.
 
-    O Microsoft Graph oferece acesso a muito mais serviços do que apenas ao Azure Active Directory. Também é o gateway da API para serviços do [Microsoft 365.](./index.yml)
+    O Microsoft Graph oferece acesso a muito mais serviços do que apenas Azure Active Directory. É o gateway [da API para Microsoft 365 serviços também.](./index.yml)
     Verifique novos conjuntos de dados e recursos regularmente.  
 
-    - Dê uma olhada [no que você pode fazer com o Microsoft Graph](/graph/examples)
-    - Explore o [blog do Microsoft Graph](/graph/blogs) para saber mais sobre o Microsoft Graph e algumas ótimas séries de aprendizado.
-    - O [changelog](/greaph/changelog) resume atualizações de serviço e documento. Após essas atualizações, você acompanhará novas APIs introduzidas para /beta (visualização) e aquelas promovidas para v1.0 (GA).  Essas novas APIs podem fornecer novas maneiras de adicionar mais valor e novas experiências aos seus aplicativos.  
+    - Dê uma olhada no [que você pode fazer com o Microsoft Graph](https://developer.microsoft.com/graph/examples)
+    - Explore o [blog do Microsoft Graph](https://developer.microsoft.com/graph/blogs) para saber mais sobre o Microsoft Graph e algumas ótimas séries de aprendizado.
+    - O [changelog](/graph/changelog) resume atualizações de serviço e documento. Após essas atualizações, você acompanhará novas APIs introduzidas para /beta (visualização) e aquelas promovidas para v1.0 (GA).  Essas novas APIs podem fornecer novas maneiras de adicionar mais valor e novas experiências aos seus aplicativos.  
 
 ## <a name="see-also"></a>Confira também
 
@@ -58,13 +58,13 @@ Se você tiver problemas ou precisar de ajuda durante o processo de migração, 
 
 - Revisar a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente
 - Postar perguntas para [o Microsoft Q&A](/answers/topics/microsoft-graph-applications.html) 
-- Revise exemplos do Microsoft Graph para contrastar e comparar com seu código de aplicativo existente:
+- Revise amostras Graph Microsoft para contrastar e comparar com seu código de aplicativo existente:
   - **Aplicativos que usam** a API REST : explorar [inícios rápidos e exemplos,](https://developer.microsoft.com/graph/get-started)escolher sua plataforma de escolha e executar o início rápido ou pesquisar por um exemplo apropriado
   - **App that use the .NET client library**: [review console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) and/or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
 ## <a name="next-steps"></a>Próximas Etapas
 
-- Use [inícios rápidos e exemplos](/graph/get-started) para acelerar rapidamente.
-- Aproveitar [bibliotecas de clientes e SDKs](https://developer.microsoft.com/graph/get-started) para desenvolver aplicativos personalizados 
-- Explore conceitos e práticas do [Microsoft Graph.](./overview.md)
-- Use [o Graph Explorer](https://aka.ms/ge) para experimentar com o Microsoft Graph.
+- Use [inícios rápidos e exemplos](https://developer.microsoft.com/graph/get-started) para acelerar rapidamente.
+- Aproveitar [bibliotecas de clientes e SDKs](/graph/sdks/sdks-overview) para desenvolver aplicativos personalizados 
+- Explore os Graph e práticas da [Microsoft.](./overview.md)
+- Use [Graph Explorer para](https://aka.ms/ge) experimentar com o Microsoft Graph.
