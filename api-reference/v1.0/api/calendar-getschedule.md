@@ -5,12 +5,12 @@ localization_priority: Priority
 author: tariq-sharif
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aed0c88b667fee7464473c87e3aebaefee7d7999
-ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
+ms.openlocfilehash: 267da79cf32f55de94b6d23fd87125c415973f03
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48771780"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054606"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -39,7 +39,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type  | string | Natureza dos dados no corpo de uma entidade, que é application/json. Obrigatório.  |
-| Prefira: outlook.timezone | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
+| Prefira: outlook.timezone | string | Use isso para especificar o fuso horário para os horários de início e término na resposta. Se não for especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

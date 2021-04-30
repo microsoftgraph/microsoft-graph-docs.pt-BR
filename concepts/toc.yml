@@ -198,6 +198,25 @@ items:
           - name: Gerenciamento corporativo
             href: intune-concept-overview.md
             displayName: Intune
+          - name: Atualizações do dispositivo (prévia)
+            displayName: Windows updates
+            items:
+              - name: Visão Geral
+                href: windowsupdates-concept-overview.md
+              - name: Atualizações de software
+                href: windowsupdates-software-updates.md
+              - name: Implantações
+                href: windowsupdates-deployments.md
+              - name: Registrar-se na gestão
+                href: windowsupdates-enroll.md
+              - name: Implantar uma atualização de recursos
+                href: windowsupdates-deploy-update.md
+              - name: Implantar uma atualização acelerada
+                href: windowsupdates-deploy-expedited-update.md
+              - name: Agendar uma implantação
+                href: windowsupdates-schedule-deployment.md
+              - name: Gerenciar regras de monitoramento
+                href: windowsupdates-manage-monitoring-rules.md
       - name: Educação
         items:
           - name: Visão geral
@@ -225,7 +244,7 @@ items:
             items:
               - name: Gerenciar acesso aos recursos
                 href: tutorial-access-package-api.md
-              - name: Analisar o acesso aos seus grupos
+              - name: Analisar o acesso aos seus recursos
                 items:
                   - name: Visão geral da API de análises de acesso
                     href: accessreviews-overview.md
@@ -349,6 +368,8 @@ items:
                 href: search-concept-sort.md
               - name: Refinar os resultados da busca (visualização)
                 href: search-concept-aggregation.md
+              - name: Solicitar correção ortográfica (prévia)
+                href: search-concept-speller.md
           - name: Índice (visualização)
             items:
               - name: Gerenciar conexões

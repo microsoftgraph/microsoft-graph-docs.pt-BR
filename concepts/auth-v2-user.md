@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2ea70d1f18eaf48b8889f924d7306d186d99c6a7
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: dfa698c43a9870f4f3c1521dd565404b319d0f6f
+ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882548"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100090"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
 
@@ -33,7 +33,7 @@ Para usar o ponto de extremidade da plataforma de identidade da Microsoft, você
 Para configurar um aplicativo para usar o fluxo de concessão do código de autorização do OAuth 2.0, salve os seguintes valores quando registrar o aplicativo:
 
 - A ID do Aplicativo (cliente) atribuída pelo portal de registro do aplicativo.
-- Um Segredo do Cliente (aplicativo), que pode ser uma senha ou um par de chaves públicas/particulares (certificado). Isso não é necessário para aplicativos nativos.
+- Um Segredo de Cliente (aplicativo), uma senha ou um par de chaves públicas/privadas (certificado). Isso não é necessário para aplicativos nativos.
 - Uma URL de redirecionamento (ou URL de resposta) para seu aplicativo receber respostas do Azure AD.
 
 Para saber como configurar um aplicativo no portal do Azure, confira [Registrar seu aplicativo](./auth-register-app-v2.md).
@@ -269,7 +269,7 @@ A Microsoft continua oferecendo suporte ao ponto de extremidade do Azure AD. Exi
 
 - O aplicativo exigirá uma ID de aplicativo diferente (ID do cliente) para cada plataforma.
 - Se o aplicativo for um aplicativo multilocatário, você deve configurá-lo explicitamente para funcionar como multilocatário no [portal do Azure](https://portal.azure.com).
-- Todas as permissões que seu aplicativo precisa devem ser configuradas pelo desenvolvedor. O ponto de extremidade do Azure AD não oferece suporte ao consentimento dinâmico (incremental).
+- Todas as permissões de que seu aplicativo precisa devem ser configuradas pelo desenvolvedor. O ponto de extremidade do Microsoft Azure Active Directory não oferece suporte ao consentimento dinâmico (incremental).
 - O ponto de extremidade do Azure AD usa um parâmetro `resource` em solicitações de autorização e de token para especificar o recurso, como o Microsoft Graph, para o qual ele deseja permissões. O ponto de extremidade não é compatível com o parâmetro `scope`.
 - O ponto de extremidade do Azure AD não expõe um ponto de extremidade específico para o consentimento do administrador. Em vez disso, os aplicativos usam o parâmetro `prompt=admin_consent` na solicitação de autorização para obter o consentimento do administrador para uma organização. Para obter mais informações, confira **Como acionar a estrutura do consentimento do Azure AD no tempo de execução** no artigo [Integração de aplicativos com o Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications).
 
@@ -280,4 +280,4 @@ Para obter mais informações sobre como obter acesso ao Microsoft Graph em nome
 
 ## <a name="see-also"></a>Confira também
 
-Para ver um exemplo de um aplicativo Web hospedado no Serviço de Aplicativo do Azure chamando o Microsoft Graph como o aplicativo (usando identidades gerenciadas), consulte [Tutorial: Acessar o Microsoft Graph de um aplicativo seguro como o aplicativo](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app). Este tutorial mostra como criar uma identidade gerenciada atribuída pelo sistema em um aplicativo Web, adicionar permissões de API do Microsoft Graph a uma identidade gerenciada e chamar o Microsoft Graph.
+Para obter um exemplo de um aplicativo Web hospedado no Serviço de Aplicativo do Azure chamando o Microsoft Graph como o usuário, confira [Tutorial: acesse o Microsoft Graph de um aplicativo seguro como o usuário](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user). Aprenda como conceder permissões delegadas a um aplicativo da web, configurar o serviço de aplicativo para obter um token de acesso e chamar o Microsoft Graph de um aplicativo da web para um usuário conectado.

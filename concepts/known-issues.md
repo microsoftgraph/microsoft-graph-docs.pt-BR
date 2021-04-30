@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 856100b87a1e776a4983f75f4bd35158f0745cfd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 20d9d3cb70ad1ea8a4b5647f683bbb01dcfb3e4c
+ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054249"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100062"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -184,6 +184,12 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * O contexto de OData às vezes é retornado incorretamente ao controlar alterações nas relações.
 * As extensões de esquema (herdadas) não são retornadas com instrução $select, mas são retornadas sem $select.
 * Os clientes não podem controlar alterações em extensões abertas ou extensões de esquema.
+
+## <a name="devices-and-apps--device-updates-windows-updates"></a>Dispositivos e aplicativos | Atualizações do dispositivo (atualizações do Windows)
+
+### <a name="making-a-request-for-the-first-time"></a>Fazendo uma solicitação pela primeira vez
+
+Ao fazer uma chamada para a API de atualizações do Windows pela primeira vez, você pode receber uma resposta `401 Unauthorized`. O erro ocorre nos casos em que a entidade de serviço de um aplicativo ainda não existe em seu locatário e requer tempo para concluir o provisionamento. Tente novamente após cerca de 24 horas.
 
 ## <a name="extensions"></a>Extensões
 

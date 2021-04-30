@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 027f3df4ef061d4b620d9eaa177327d2edce9140
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: d355ed5bc108aa02a9e02dfe7f8b8daebf8b508a
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944202"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080572"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -34,7 +34,7 @@ Esse recurso permite:
 | Método | Tipo de retorno | Descrição |
 |:------ |:----------- |:----------- |
 | **Gerenciamento de grupos** |||
-| [Criar grupo](../api/group-post-groups.md) | [group](group.md) | Criar um novo grupo. Pode ser um grupo do Microsoft 365, um grupo dinâmico ou um grupo de segurança. |
+| [Criar grupo](../api/group-post-groups.md) | [grupo](group.md) | Criar um novo grupo. Pode ser um grupo Microsoft 365, grupo dinâmico ou grupo de segurança. |
 | [Obter grupo](../api/group-get.md) | [group](group.md) | Ler as propriedades de um objeto group. |
 | [Listar grupos](../api/group-list.md) | Coleção [group](group.md) | Listar objetos group e suas propriedades. |
 | [Atualizar grupo](../api/group-update.md) | Nenhum | Atualizar as propriedades de um objeto group. |
@@ -54,12 +54,12 @@ Esse recurso permite:
 | [Remover membro](../api/group-delete-members.md) | Nenhum | Remover um membro de um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
 | [Remover proprietário](../api/group-delete-owners.md) | Nenhum | Remover um proprietário de um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **owners**. |
 | [Atualizar configuração](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Atualizar um objeto setting. |
-| [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Adicione ou remova assinaturas para o grupo. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
+| [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Adicione ou remova inscrições para o grupo. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
 | [checkMemberGroups](../api/group-checkmembergroups.md) | Coleção de cadeias de caracteres | Verificar esse grupo quanto a uma associação em uma lista de grupos. Essa função é transitiva. |
-| [checkMemberObjects](../api/group-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. Essa função é transitiva. |
+| [checkMemberObjects](../api/group-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de objetos de grupo, função de diretório ou unidade administrativa. A função é transitiva. |
 | [getMemberGroups](../api/group-getmembergroups.md) | Coleção de cadeias de caracteres | Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva. |
 | [getMemberObjects](../api/group-getmemberobjects.md) | Coleção de cadeias de caracteres | Retornar todos os grupos dos quais o grupo é um membro. Essa função é transitiva. |
-| [renovar](../api/group-renew.md) | Booleano | Renova o período de validade de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política. |
+| [renovar](../api/group-renew.md) | Booleano | Renova a expiração de um grupo. Quando um grupo é renovado, a expiração do grupo é estendida pelo número de dias definido na política. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura. |
 | **Atribuição de funções do aplicativo** |||
 | [List appRoleAssignments](../api/group-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Obter os aplicativos e funções do aplicativo atribuídos a esse grupo. |
@@ -104,12 +104,12 @@ Esse recurso permite:
 | [Listar fotos](../api/group-list-photos.md) | Coleção [profilePhoto](photo.md) | Obter um conjunto de fotos de perfil para o grupo. |
 | [Listar plannerPlans](../api/plannergroup-list-plans.md) | Coleção [plannerPlan](plannerplan.md) | Obter os planos de planejador pertencentes ao grupo. |
 | **Configurações do usuário** |||
-| [addFavorite](../api/group-addfavorite.md) | Nenhum | Adicionar o grupo à lista de grupos de favoritos do usuário conectado. Apenas grupos do Microsoft 365 são suportados. |
-| [removeFavorite](../api/group-removefavorite.md) | Nenhum | Remover o grupo da lista de grupos favoritos do usuário conectado. Apenas grupos do Microsoft 365 são suportados. |
+| [addFavorite](../api/group-addfavorite.md) | Nenhum | Adicionar o grupo à lista de grupos favoritos do usuário conectado. Suportado apenas para grupos do Microsoft 365. |
+| [removeFavorite](../api/group-removefavorite.md) | Nenhum | Remova o grupo da lista de grupos favoritos do usuário conectado. Suportado apenas para grupos do Microsoft 365. |
 | [Listar memberOf](../api/group-list-memberof.md) | Coleção [directoryObject](directoryobject.md) | Obter os grupos e unidades administrativas dos quais esse usuário é um membro direto a partir da propriedade de navegação **memberOf**. |
 | [subscribeByMail](../api/group-subscribebymail.md) | Nenhum | Defina a propriedade isSubscribedByMail como `true`. Permitir que o usuário conectado receba conversas por email. Apenas grupos do Microsoft 365 são suportados. |
 | [unsubscribeByMail](../api/group-unsubscribebymail.md) | Nenhum | Defina a propriedade isSubscribedByMail como `false`. Desabilitar o recebimento de conversas por email do usuário conectado. Apenas grupos do Microsoft 365 são suportados. |
-| [resetUnseenCount](../api/group-resetunseencount.md) | Nenhum | Redefinir unseenCount como 0 para todas as postagens que o usuário conectado não tenha visto desde a última visita. Apenas grupos do Microsoft 365 são suportados. |
+| [resetUnseenCount](../api/group-resetunseencount.md) | Nenhum | Redefina o unseenCount para 0 de todas as postagens que o usuário conectado não viu desde a última visita. Suportado apenas para grupos do Microsoft 365. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -122,7 +122,7 @@ Esse recurso permite:
 |createdDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado por padrão. Somente leitura. |
 |deletedDateTime|DateTimeOffset| Para alguns objetos do Azure Active Directory (usuário, grupo, aplicativo), se o objeto for excluído, ele será excluído primeiro logicamente e essa propriedade será atualizada com a data e a hora em que o objeto foi excluído. Caso contrário, esta propriedade é `null`. Se o objeto for restaurado, esta propriedade será atualizada para `null`. |
 |description|String|Uma descrição opcional para o grupo. <br><br>Retornado por padrão.|
-|displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante as atualizações. <br><br>Retornado por padrão. Oferece suporte para `$filter` e `$orderby`. |
+|displayName|String|O nome de exibição do grupo. Esta propriedade é necessária quando um grupo é criado e não pode ser limpa durante as atualizações.<br><br>Retornado por padrão. Oferece suporte para `$filter` e `$orderby`. |
 |expirationDateTime|DateTimeOffset| Data e hora de quando o grupo está configurado para expirar. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado por padrão. Somente leitura. |
 |groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver `Unified`, o grupo será um grupo do Microsoft 365; caso contrário, será um grupo de segurança ou um grupo de distribuição. Para obter detalhes, confira [visão geral sobre grupos](groups-overview.md).<br><br>Se a coleção inclui `DynamicMembership`, o grupo tem associação dinâmica; caso contrário, a associação é estática.  <br><br>Retornado por padrão. Oferece suporte para `$filter`.|
 |hasMembersWithLicenseErrors|Boolean|Indica se existem membros neste grupo com erros de licença da sua atribuição de licença baseada em grupo. <br><br>Esta propriedade nunca é retornada em uma operação GET. Você pode usá-lo como um argumento $filter para acessar os grupos que têm membros com erros de licença (ou seja, o filtro para essa propriedade é true). Veja um [exemplo](../api/group-list.md).|
@@ -139,9 +139,9 @@ Esse recurso permite:
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do grupo que foi sincronizado do local com a nuvem. <br><br>Retornado por padrão. Somente leitura. |
 |onPremisesSyncEnabled|Booliano|`true` se esse grupo está sincronizado de um diretório local; `false` se esse grupo foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). <br><br>Retornado por padrão. Somente leitura. Oferece suporte para `$filter`.|
 |preferredDataLocation|String|O local de data preferido para o grupo. Saiba mais em [OneDrive Online com Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Retornado por padrão.|
-|preferredLanguage|Cadeia de caracteres|Idioma de preferência de um grupo do Microsoft 365. Deve seguir o código ISO 639-1; por exemplo "en-US". <br><br>Retornado por padrão. |
+|preferredLanguage|String|O idioma preferido para um grupo Microsoft 365. Deve seguir o Código ISO 639-1; por exemplo "en-US". <br><br>Retornado por padrão. |
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para filtrar expressões em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Oferece suporte para `$filter`. |
-|renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/group-renew.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado por padrão. Apenas leitura.|
+|renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/group-renew.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. <br><br>Retornado por padrão. Somente leitura.|
 |resourceBehaviorOptions|Conjunto de cadeias de caracteres|Especifica os comportamentos de grupo que podem ser configurados para um grupo do Microsoft 365 durante sua criação. Isso só pode ser definido como parte da criação (POST). Os valores possíveis são `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. Para obter mais informações, confira o artigo [Definir as opções de provisionamento e comportamentos de grupo do Microsoft 365 ](/graph/group-set-options).|
 |resourceProvisioningOptions|Conjunto de cadeias de caracteres|Especifica os recursos de grupo provisionados como parte da criação de grupos do Microsoft 365 que não costumam fazer parte do processo padrão de criação de grupos. Um valor possível é `Team`. Para obter mais informações, confira o artigo [Definir as opções de provisionamento e comportamentos de grupo do Microsoft 365 ](/graph/group-set-options).|
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. <br><br>Retornado por padrão. Oferece suporte para `$filter`.|
@@ -169,16 +169,16 @@ Esse recurso permite:
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura.|
 |conversations|Coleção [conversation](conversation.md)|As conversas do grupo.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| O usuário (ou aplicativo) que criou o grupo. OBSERVAÇÃO: Não definido se o usuário for um administrador. Somente leitura.|
-|Unidade|[unidade](drive.md)|Unidade padrão do grupo. Somente leitura.|
+|Unidade|[unidade](drive.md)|A unidade padrão do grupo. Somente leitura.|
 |unidades|Coleção [drive](drive.md)|As unidades do grupo. Somente leitura.|
 |events|Coleção [event](event.md)|Os eventos de calendário do grupo.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o grupo. Somente leitura. Anulável.|
-|groupLifecyclePolicies|Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)|O conjunto de políticas de ciclo de vida para esse grupo. Somente leitura. Anulável.|
+|groupLifecyclePolicies|Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)|A coleção de políticas de ciclo de vida para este grupo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos quais esse grupo é membro. Métodos HTTP: GET (com suporte para todos os grupos). Somente leitura. Anulável.|
-|membros|Coleção [directoryObject](directoryobject.md)| Os usuários e grupos que são membros desse grupo. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Microsoft 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Microsoft 365 e grupos de segurança). Anulável.|
-|membersWithLicenseErrors|Coleção [user](user.md)|Uma lista de membros do grupo com erros de licença desse grupo baseado em atribuição de licença. Somente leitura.|
+|membros|Coleção [directoryObject](directoryobject.md)| Usuários e grupos que são membros deste grupo. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Microsoft 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Microsoft 365 e grupos de segurança). Anulável.|
+|membersWithLicenseErrors|Coleção [user](user.md)|Uma lista de membros do grupo com erros de licença desta atribuição de licença baseada em grupo. Somente leitura.|
 |onenote|[Onenote](onenote.md)| Somente leitura.|
-|owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Limitado a 100 proprietários. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Microsoft 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Microsoft 365 e grupos de segurança). Anulável.|
+|owners|Coleção [directoryObject](directoryobject.md)|Os donos do grupo. Os proprietários são um conjunto de usuários não administradores que têm permissão para modificar este objeto. Limitado a 100 proprietários. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Microsoft 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Microsoft 365 e grupos de segurança). Anulável.|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|A permissão que foi concedida a um grupo para um aplicativo específico.|
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do grupo |
 |fotos|Coleção [profilePhoto](profilephoto.md)| As fotos de perfil pertencentes ao grupo. Somente leitura. Anulável.|

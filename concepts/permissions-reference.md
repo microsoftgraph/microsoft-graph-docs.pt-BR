@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 60df1656862dadf9f08e99972d322f463b5bcb73
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 848510f113767ec9e9530cf82b30dfff9e836711
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061809"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067205"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -608,6 +608,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Device.Read_ |Ler os dispositivos do usuário |Permite ao aplicativo ler a lista de dispositivos do usuário em nome do usuário conectado. |Não | Sim |
+|_Device.Read.All_ |Leia todos os dispositivos |Permite que o aplicativo leia as informações de configuração dos dispositivos da sua organização, em nome do usuário conectado.|Sim | Sim |
 |_Device.Command_ |Comunicar-se com os dispositivos do usuário |Permite ao aplicativo se comunicar ou inicializar outro aplicativo no dispositivo do usuário em nome do usuário conectado. |Não | Sim |
 
 
@@ -615,6 +616,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_Device.Read.All_ |Leia todos os dispositivos |Permite que o aplicativo leia as informações de configuração dos dispositivos da sua organização sem um usuário conectado. |Sim |
 |_Device.ReadWrite.All_ |Ler e registrar dispositivos |Permite que o aplicativo leia e registre todas as propriedades dos dispositivos sem um usuário conectado. Não permite a criação de dispositivos, exclusão de dispositivos ou atualização de identificadores de segurança de dispositivo alternativo. |Sim |
 
 > [!NOTE]
@@ -2301,6 +2303,36 @@ Com essas permissões, todos os métodos de autenticação podem ser lidos e ger
 * Autenticação primária (senha)
 * Segundo fator de autenticação multifator/MFA (números de telefone)
 * Redefinição de senha de autoatendimento/SSPR (endereço de email)
+
+## <a name="windows-updates-permissions"></a>Permissões de atualizações do Windows
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|Permissão|Exibir Cadeia de Caracteres|Descrição|Consentimento Obrigatório do Administrador|Conta Microsoft com Suporte|
+|:---|:---|:---|:---|:---|
+|_WindowsUpdates.ReadWrite.All_|Ler e gravar todas as configurações de implantação de atualização do Windows|Permite ao aplicativo ler e gravar todas as configurações de implantação de atualização do Windows para a organização em nome do usuário que está assinado.|Sim|Não|
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|Permissão|Exibir Cadeia de Caracteres|Descrição|Consentimento Obrigatório do Administrador|
+|:---|:---|:---|:---|
+|_WindowsUpdates.ReadWrite.All_|Ler e gravar todas as configurações de implantação de atualização do Windows|Permite que o aplicativo leia e grave todas as configurações de implantação de atualização do Windows para a organização sem um usuário conectado.|Sim|
+
+### <a name="remarks"></a>Comentários
+
+Todas as permissões acima são válidas apenas para contas corporativas ou de estudante.
+
+Para que um aplicativo leia ou grave todas as configurações de implantação de atualização do Windows com permissões delegadas, o usuário conectado deve ser atribuído à função de Administrador Global ou Administrador do Intune. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
+
+#### <a name="application"></a>Aplicativo
+
+* _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 
 ## <a name="authentication-methods-policy-permissions-preview"></a>Permissões de política de métodos de autenticação ([visualização](#permissions-availability-status))
 

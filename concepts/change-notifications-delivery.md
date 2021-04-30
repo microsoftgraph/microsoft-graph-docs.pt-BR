@@ -4,16 +4,16 @@ description: As notificações de alteração podem ser enviadas por meio de tec
 author: Jumaodhiss
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 3be156e2d83cfe820c26482fcc87179b42d8142d
-ms.sourcegitcommit: 8b1a6d7b0516f936ce4626246408f067527f5082
+ms.openlocfilehash: aee486325f13f009fd7f7db09e4bc69553bc85dd
+ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51594872"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100083"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways"></a>Receber notificações de alterações de maneiras diferentes
 
-A alteração de notificações podem ser enviadas em diferentes maneiras aos assinantes. Se o principal modo de entrega para notificações de alteração for por meio de webhooks, pode ser desafiador tirar proveito de webhooks para cenários de alto rendimento ou quando o receptor não pode expor uma URL de notificação disponível publicamente.  
+As notificações de alteração podem ser entregues de diferentes maneiras aos assinantes. Se o principal modo de entrega para notificações de alteração for por meio de webhooks, pode ser desafiador tirar proveito de webhooks para cenários de alto rendimento ou quando o receptor não pode expor um URL de notificação disponível publicamente.  
 
 Esse modo de entrega de notificações de alterações está disponível para todos os recursos que oferecem suporte a notificações de alterações do Microsoft Graph.
 
@@ -21,7 +21,7 @@ Bons exemplos de cenários de alta produtividade incluem aplicações que subscr
 
 ## <a name="using-azure-event-hubs-to-receive-change-notifications"></a>Usando os Hubs de Eventos do Azure para receber notificações de alteração
 
-Os [Hubs de Eventos do Azure](https://azure.microsoft.com/services/event-hubs) é um serviço popular de inclusão e distribuição de eventos em tempo real, compilado para ser dimensionável. Você pode usar os Hubs de Eventos do Azure, em vez de webhooks tradicionais, para receber notificações de alteração. Este recurso está atualmente no modo de visualização.  
+Os [Hubs de Eventos do Azure](https://azure.microsoft.com/services/event-hubs) é um serviço popular de inclusão e distribuição de eventos em tempo real, compilado para ser dimensionável. Você pode usar os Hubs de Eventos do Azure, em vez de webhooks tradicionais, para receber notificações de alteração.  
 Usar os Hubs de Eventos do Azure para receber notificações de alteração difere do webhooks em algumas maneiras, incluindo:
 
 - Você não depende de URLs com notificações publicamente expostas. O SDK do Hubs de Eventos retransmitirá as notificações para sua aplicação.
