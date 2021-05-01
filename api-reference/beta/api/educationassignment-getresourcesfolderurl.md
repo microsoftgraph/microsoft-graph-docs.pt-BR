@@ -1,57 +1,58 @@
 ---
-title: 'educationAssignment: getResourcesFolderUrl'
-description: 'Essa função retorna a URL do OneDrive onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados.  '
+title: 'educationAssignment: getResourcesFolderUrl (preterido)'
+description: 'Essa função retorna a URL OneDrive onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados.  '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ce5f35560a25f2a57742d93293788038e13cb179
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 44c7caec25b4d96b225598041f59bfcaa3f5d3ac
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951830"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52119002"
 ---
-# <a name="educationassignment-getresourcesfolderurl"></a><span data-ttu-id="3a041-103">educationAssignment: getResourcesFolderUrl</span><span class="sxs-lookup"><span data-stu-id="3a041-103">educationAssignment: getResourcesFolderUrl</span></span>
+# <a name="educationassignment-getresourcesfolderurl-deprecated"></a><span data-ttu-id="80c6c-103">educationAssignment: getResourcesFolderUrl (preterido)</span><span class="sxs-lookup"><span data-stu-id="80c6c-103">educationAssignment: getResourcesFolderUrl (deprecated)</span></span>
 
-<span data-ttu-id="3a041-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3a041-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="80c6c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="80c6c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+ [!CAUTION] <span data-ttu-id="80c6c-105">A API getResourcesFolderUrl está preterida e interromperá o retorno de dados em 31 de maio de 2021.</span><span class="sxs-lookup"><span data-stu-id="80c6c-105">The getResourcesFolderUrl API is deprecated and will stop returning data on May 31, 2021.</span></span> <span data-ttu-id="80c6c-106">Use a nova propriedade exposta `resourcesFolderUrl` na entidade [educationAssignment](../resources/educationassignment.md) para buscar essas informações.</span><span class="sxs-lookup"><span data-stu-id="80c6c-106">Please use the new property `resourcesFolderUrl` exposed on [educationAssignment](../resources/educationassignment.md) entity to fetch this info.</span></span> 
 
-<span data-ttu-id="3a041-105">Essa função retorna a URL do OneDrive onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados.</span><span class="sxs-lookup"><span data-stu-id="3a041-105">This function returns the OneDrive URL where all file-based resources (Word, Excel, and so on) should be uploaded.</span></span>  
-<span data-ttu-id="3a041-106">Observe que os arquivos devem estar localizados nesta pasta para serem adicionados como recursos.</span><span class="sxs-lookup"><span data-stu-id="3a041-106">Note that files must be located in this folder in order to be added as resources.</span></span> <span data-ttu-id="3a041-107">Somente um professor da classe pode determinar quais arquivos carregar.</span><span class="sxs-lookup"><span data-stu-id="3a041-107">Only a teacher in the class can determine what files to upload.</span></span> 
+<span data-ttu-id="80c6c-107">Essa função retorna a URL OneDrive onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados.</span><span class="sxs-lookup"><span data-stu-id="80c6c-107">This function returns the OneDrive URL where all file-based resources (Word, Excel, and so on) should be uploaded.</span></span>  
+<span data-ttu-id="80c6c-108">Observe que os arquivos devem estar localizados nesta pasta para serem adicionados como recursos.</span><span class="sxs-lookup"><span data-stu-id="80c6c-108">Note that files must be located in this folder in order to be added as resources.</span></span> <span data-ttu-id="80c6c-109">Somente um professor da classe pode determinar quais arquivos carregar.</span><span class="sxs-lookup"><span data-stu-id="80c6c-109">Only a teacher in the class can determine what files to upload.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="3a041-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="3a041-108">Permissions</span></span>
-<span data-ttu-id="3a041-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3a041-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="80c6c-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="80c6c-110">Permissions</span></span>
+<span data-ttu-id="80c6c-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80c6c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3a041-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3a041-111">Permission type</span></span>      | <span data-ttu-id="3a041-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3a041-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="80c6c-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="80c6c-113">Permission type</span></span>      | <span data-ttu-id="80c6c-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="80c6c-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3a041-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3a041-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="3a041-114">EduAssignments.ReadBasic, EduAssignments.Read</span><span class="sxs-lookup"><span data-stu-id="3a041-114">EduAssignments.ReadBasic, EduAssignments.Read</span></span>  |
-|<span data-ttu-id="3a041-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3a041-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3a041-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3a041-116">Not supported.</span></span>  |
-|<span data-ttu-id="3a041-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3a041-117">Application</span></span> | <span data-ttu-id="3a041-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3a041-118">Not supported.</span></span> | 
+|<span data-ttu-id="80c6c-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="80c6c-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="80c6c-116">EduAssignments.ReadBasic, EduAssignments.Read</span><span class="sxs-lookup"><span data-stu-id="80c6c-116">EduAssignments.ReadBasic, EduAssignments.Read</span></span>  |
+|<span data-ttu-id="80c6c-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="80c6c-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="80c6c-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="80c6c-118">Not supported.</span></span>  |
+|<span data-ttu-id="80c6c-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="80c6c-119">Application</span></span> | <span data-ttu-id="80c6c-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="80c6c-120">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="3a041-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3a041-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="80c6c-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="80c6c-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="3a041-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3a041-120">Request headers</span></span>
-| <span data-ttu-id="3a041-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3a041-121">Header</span></span>       | <span data-ttu-id="3a041-122">Valor</span><span class="sxs-lookup"><span data-stu-id="3a041-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="80c6c-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="80c6c-122">Request headers</span></span>
+| <span data-ttu-id="80c6c-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="80c6c-123">Header</span></span>       | <span data-ttu-id="80c6c-124">Valor</span><span class="sxs-lookup"><span data-stu-id="80c6c-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="3a041-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="3a041-123">Authorization</span></span>  | <span data-ttu-id="3a041-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3a041-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="80c6c-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="80c6c-125">Authorization</span></span>  | <span data-ttu-id="80c6c-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="80c6c-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="3a041-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3a041-126">Request body</span></span>
-<span data-ttu-id="3a041-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3a041-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="3a041-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a041-128">Response</span></span>
-<span data-ttu-id="3a041-129">Se tiver êxito, este método retornará um código de resposta `200 Ok`.</span><span class="sxs-lookup"><span data-stu-id="3a041-129">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="3a041-130">O corpo conterá a URL do OneDrive de uma pasta na qual todos os recursos baseados em arquivo serão colocados.</span><span class="sxs-lookup"><span data-stu-id="3a041-130">The body will contain the OneDrive URL of a folder in which to put all file-based resources.</span></span>
+## <a name="request-body"></a><span data-ttu-id="80c6c-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="80c6c-128">Request body</span></span>
+<span data-ttu-id="80c6c-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="80c6c-129">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="80c6c-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="80c6c-130">Response</span></span>
+<span data-ttu-id="80c6c-131">Se tiver êxito, este método retornará um código de resposta `200 Ok`.</span><span class="sxs-lookup"><span data-stu-id="80c6c-131">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="80c6c-132">O corpo conterá a URL OneDrive de uma pasta na qual todos os recursos baseados em arquivo serão colocados.</span><span class="sxs-lookup"><span data-stu-id="80c6c-132">The body will contain the OneDrive URL of a folder in which to put all file-based resources.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3a041-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3a041-131">Example</span></span>
-<span data-ttu-id="3a041-132">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="3a041-132">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="3a041-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3a041-133">Request</span></span>
-<span data-ttu-id="3a041-134">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="3a041-134">The following is an example of a request.</span></span>
+## <a name="example"></a><span data-ttu-id="80c6c-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="80c6c-133">Example</span></span>
+<span data-ttu-id="80c6c-134">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="80c6c-134">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="80c6c-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="80c6c-135">Request</span></span>
+<span data-ttu-id="80c6c-136">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="80c6c-136">The following is an example of a request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3a041-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="3a041-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="80c6c-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="80c6c-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationassignment_publish_1"
@@ -59,27 +60,27 @@ GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/getResourcesFolderUrl
 ```
-# <a name="c"></a>[<span data-ttu-id="3a041-136">C#</span><span class="sxs-lookup"><span data-stu-id="3a041-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="80c6c-138">C#</span><span class="sxs-lookup"><span data-stu-id="80c6c-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3a041-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3a041-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="80c6c-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="80c6c-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-publish-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3a041-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3a041-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="80c6c-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="80c6c-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="3a041-139">Java</span><span class="sxs-lookup"><span data-stu-id="3a041-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="80c6c-141">Java</span><span class="sxs-lookup"><span data-stu-id="80c6c-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="3a041-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a041-140">Response</span></span>
-<span data-ttu-id="3a041-141">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="3a041-141">The following is an example of a response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="80c6c-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="80c6c-142">Response</span></span>
+<span data-ttu-id="80c6c-143">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="80c6c-143">The following is an example of a response.</span></span> 
 
 <!-- {
   "blockType": "response",
