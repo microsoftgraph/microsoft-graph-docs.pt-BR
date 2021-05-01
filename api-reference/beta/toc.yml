@@ -392,10 +392,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: Atualizar configurações de Caixa de Correio
                     href: api/user-update-mailboxsettings.md
-              - name: Serviços de usuário do Outlook
+              - name: Outlook de usuário
                 expanded: true
                 items:
-                  - name: Usuário do Outlook
+                  - name: Outlook usuário
                     href: resources/outlookuser.md
                   - name: Criar categoria
                     href: api/outlookuser-post-mastercategories.md
@@ -457,7 +457,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -501,7 +501,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -882,7 +882,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: Remover do grupo de agentes
                     href: api/publishedresource-delete-agentgroups.md
-              - name: Connector
+              - name: Conector
                 href: resources/connector.md
                 items:
                   - name: Lista
@@ -1617,7 +1617,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-      - name: Reserva de clientes (prévia)
+      - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Visão Geral
@@ -2712,7 +2712,7 @@ items:
                         href: api/intune-apps-mobilelobapp-list.md
                       - name: Obter
                         href: api/intune-apps-mobilelobapp-get.md
-                  - name: ID do produto do Office
+                  - name: Office id do produto
                     href: resources/intune-apps-officeproductid.md
                   - name: Aplicativo do pacote Office
                     href: resources/intune-apps-officesuiteapp.md
@@ -2869,7 +2869,7 @@ items:
                     href: resources/intune-apps-windowsarchitecture.md
                   - name: Tipo de dispositivo Windows
                     href: resources/intune-apps-windowsdevicetype.md
-                  - name: Aplicativo do Microsoft Edge do Windows
+                  - name: Windows microsoft edge app
                     href: resources/intune-apps-windowsmicrosoftedgeapp.md
                     items:
                       - name: Lista
@@ -3304,7 +3304,7 @@ items:
                         href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-delete.md
                       - name: Atualizar
                         href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-update.md
-                  - name: Estado de exclusão de dispositivo do Windows autopilot
+                  - name: Windows estado de exclusão do dispositivo de piloto automático
                     href: resources/intune-enrollment-windowsautopilotdevicedeletionstate.md
                   - name: Identidade do dispositivo do Windows Autopilot
                     href: resources/intune-enrollment-windowsautopilotdeviceidentity.md
@@ -4156,7 +4156,7 @@ items:
                     href: resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md
                   - name: Opções de recuperação do BitLocker
                     href: resources/intune-deviceconfig-bitlockerrecoveryoptions.md
-                  - name: Tipo de rotação de senha de recuperação do BitLocker
+                  - name: BitLocker tipo de rotação de senha de recuperação
                     href: resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md
                   - name: Política da unidade removível do BitLocker
                     href: resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md
@@ -6049,7 +6049,7 @@ items:
                         href: api/intune-deviceconfig-windows10customconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-windows10customconfiguration-update.md
-                  - name: Interface de configuração do firmware do dispositivo Windows 10
+                  - name: Windows 10 de configuração de firmware de dispositivo
                     href: resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md
                     items:
                       - name: Lista
@@ -6062,7 +6062,7 @@ items:
                         href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-update.md
-                  - name: Tipo de modo de dispositivo windows 10
+                  - name: Windows 10 tipo de modo de dispositivo
                     href: resources/intune-deviceconfig-windows10devicemodetype.md
                   - name: Configuração de perfil de email do EAS do Windows 10
                     href: resources/intune-deviceconfig-windows10easemailprofileconfiguration.md
@@ -6341,7 +6341,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Opções de proteção contra violações do Windows Defender
+                  - name: Windows proteção contra violações do defender
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Configuração de otimização de distribuição do Windows
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -6358,7 +6358,7 @@ items:
                         href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-update.md
                   - name: Modo de otimização de distribuição do Windows
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
-                  - name: Tipo de quiosque de borda do Windows
+                  - name: Windows tipo de quiosque de borda
                     href: resources/intune-deviceconfig-windowsedgekiosktype.md
                   - name: Perfil de rede de firewall do Windows
                     href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
@@ -6427,7 +6427,7 @@ items:
                         href: api/intune-deviceconfig-windowskioskconfiguration-update.md
                   - name: Aplicativo para área de trabalho de quiosque do Windows
                     href: resources/intune-deviceconfig-windowskioskdesktopapp.md
-                  - name: Agenda de atualização de força de quiosque do Windows
+                  - name: Windows agenda de atualização de força de quiosque
                     href: resources/intune-deviceconfig-windowskioskforceupdateschedule.md
                   - name: Grupo local do quiosque do Windows
                     href: resources/intune-deviceconfig-windowskiosklocalgroup.md
@@ -6439,7 +6439,7 @@ items:
                     href: resources/intune-deviceconfig-windowskioskprofile.md
                   - name: Aplicativo UWP do único quiosque do Windows
                     href: resources/intune-deviceconfig-windowskiosksingleuwpapp.md
-                  - name: Aplicativo win32 único do quiosque do Windows
+                  - name: Windows quiosque único win32 app
                     href: resources/intune-deviceconfig-windowskiosksinglewin32app.md
                   - name: Usuário do quiosque do Windows
                     href: resources/intune-deviceconfig-windowskioskuser.md
@@ -6447,7 +6447,7 @@ items:
                     href: resources/intune-deviceconfig-windowskioskuwpapp.md
                   - name: Visitante do quiosque do Windows
                     href: resources/intune-deviceconfig-windowskioskvisitor.md
-                  - name: Aplicativo win32 do quiosque do Windows
+                  - name: Windows quiosque win32 app
                     href: resources/intune-deviceconfig-windowskioskwin32app.md
                   - name: Política de isolamento de rede do Windows
                     href: resources/intune-deviceconfig-windowsnetworkisolationpolicy.md
@@ -7804,7 +7804,7 @@ items:
                     href: resources/intune-devices-revokeapplevpplicensesactionresult.md
                   - name: Informações da marca de escopo de função
                     href: resources/intune-auditing-rolescopetaginfo.md
-                  - name: Girar o resultado da ação do dispositivo de chaves do BitLocker
+                  - name: Girar BitLocker de ação do dispositivo de teclas
                     href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
                   - name: Resumo do estado da categoria de linha de base de segurança
                     href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
@@ -8188,7 +8188,7 @@ items:
                     href: resources/intune-devices-userexperienceanalyticssettings.md
                   - name: Análise de experiência do usuário resumida por
                     href: resources/intune-devices-userexperienceanalyticssummarizedby.md
-                  - name: Resumo de dispositivos Windows 10 de análise de experiência do usuário
+                  - name: Análise de experiência do usuário Windows 10 resumo de dispositivos
                     href: resources/intune-devices-userexperienceanalyticswindows10devicessummary.md
                   - name: A análise de experiência do usuário funciona em qualquer lugar do dispositivo
                     href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md
@@ -8220,11 +8220,11 @@ items:
                         href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
                   - name: Expressões de condição de gerenciamento variável
                     href: resources/intune-fencing-variablemanagementconditionexpression.md
-                  - name: Estado de implantação do Windows autopilot
+                  - name: Windows estado de implantação do piloto automático
                     href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
-                  - name: Tipo de registro do Windows autopilot
+                  - name: Windows tipo de registro do piloto automático
                     href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
-                  - name: Status do produto do Windows Defender
+                  - name: Windows status do produto defender
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Resultado de ação de verificação do Windows Defender
                     href: resources/intune-devices-windowsdefenderscanactionresult.md
@@ -8276,7 +8276,7 @@ items:
                     href: resources/intune-devices-windowsmalwareoverview.md
                   - name: Gravidade de malware do Windows
                     href: resources/intune-devices-windowsmalwareseverity.md
-                  - name: Contagem de gravidade de malware do Windows
+                  - name: Windows de gravidade de malware
                     href: resources/intune-devices-windowsmalwareseveritycount.md
                   - name: Estado de malware do Windows
                     href: resources/intune-devices-windowsmalwarestate.md
@@ -8531,7 +8531,7 @@ items:
                         href: api/intune-mam-targetedmanagedappprotection-get.md
                       - name: atribuir ação
                         href: api/intune-mam-targetedmanagedappprotection-assign.md
-                  - name: Identificador de aplicativo do Windows
+                  - name: Windows de aplicativo
                     href: resources/intune-mam-windowsappidentifier.md
                   - name: Proteção de informações do Windows
                     href: resources/intune-mam-windowsinformationprotection.md
@@ -9392,7 +9392,7 @@ items:
                         href: api/intune-shared-windowsdomainjoinconfiguration-update.md
                   - name: Configurações de atribuição do aplicativo Windows universal AppX
                     href: resources/intune-shared-windowsuniversalappxappassignmentsettings.md
-                  - name: Estado de atualização do Windows
+                  - name: Windows estado de atualização
                     href: resources/intune-shared-windowsupdatestate.md
                     items:
                       - name: Lista
@@ -9437,7 +9437,7 @@ items:
                     href: api/cloudpc-get.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
-              - name: Imagem do dispositivo de computador na nuvem
+              - name: Cloud PC imagem do dispositivo
                 href: resources/cloudpcdeviceimage.md
                 items:
                   - name: Lista
@@ -9450,7 +9450,7 @@ items:
                     href: api/cloudpcdeviceimage-delete.md
                   - name: Obter imagens de origem
                     href: api/cloudpcdeviceimage-getsourceimages.md
-              - name: Conexão local do computador na nuvem
+              - name: Cloud PC local
                 href: resources/cloudpconpremisesconnection.md
                 items:
                   - name: Lista
@@ -9467,7 +9467,7 @@ items:
                     href: api/cloudpconpremisesconnection-runhealthcheck.md
                   - name: Atualizar senha de domínio do Active Directory
                     href: api/cloudpconpremisesconnection-updateaddomainpassword.md
-              - name: Política de provisionamento de computadores na nuvem
+              - name: Cloud PC de provisionamento
                 href: resources/cloudpcprovisioningpolicy.md
                 items:
                   - name: Lista
@@ -9482,7 +9482,7 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Atribuir
                     href: api/cloudpcprovisioningpolicy-assign.md
-          - name: Atualizações de dispositivo (visualização)
+          - name: Atualizações do dispositivo (prévia)
             displayName: Windows updates
             items:
               - name: Atualizações
@@ -9689,7 +9689,7 @@ items:
                 href: api/educationassignment-publish.md
               - name: Listar envios da tarefa
                 href: api/educationassignment-list-submissions.md
-              - name: Obter URL da pasta do recurso
+              - name: Obter URL da pasta de recursos (preterida)
                 href: api/educationassignment-getresourcesfolderurl.md
               - name: Obter rubrica anexada à atribuição
                 href: api/educationassignment-get-rubric.md
@@ -10197,9 +10197,9 @@ items:
                     href: api/administrativeunit-get-scopedrolemembers.md
                   - name: Remover um administrador de função no escopo
                     href: api/administrativeunit-delete-scopedrolemembers.md
-              - name: Chave de recuperação do BitLocker (visualização)
+              - name: BitLocker de recuperação (visualização)
                 items:
-                  - name: Chave de recuperação do BitLocker
+                  - name: BitLocker chave de recuperação
                     href: resources/bitlockerrecoverykey.md
                   - name: Lista
                     href: api/bitlocker-list-recoverykeys.md
@@ -10495,7 +10495,7 @@ items:
                         href: api/microsoftauthenticatorauthenticationmethod-get.md
                       - name: Excluir
                         href: api/microsoftauthenticatorauthenticationmethod-delete.md
-                  - name: Microsoft Authenticator Passwordless Phone Sign-In (preterido)
+                  - name: Microsoft Authenticator Senha Telefone Sign-In (preterido)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: Lista
@@ -10537,9 +10537,9 @@ items:
                         href: api/phoneauthenticationmethod-delete.md
                       - name: Adicionar
                         href: api/authentication-post-phonemethods.md
-                      - name: Habilitar a assinatura SMS
+                      - name: Habilitar SMS entrar
                         href: api/phoneauthenticationmethod-enablesmssignin.md
-                      - name: Desabilitar a login do SMS
+                      - name: Desabilitar SMS entrar
                         href: api/phoneauthenticationmethod-disablesmssignin.md
                   - name: Email
                     href: resources/emailauthenticationmethod.md
@@ -10578,7 +10578,7 @@ items:
                         href: api/fido2authenticationmethodconfiguration-update.md
                       - name: Excluir
                         href: api/fido2authenticationmethodconfiguration-delete.md
-                  - name: Política do Microsoft Authenticator
+                  - name: Microsoft Authenticator política
                     href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: Obter
@@ -10587,7 +10587,7 @@ items:
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: Excluir
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                  - name: Política de login sem senha do Microsoft Authenticator Phone (preterida)
+                  - name: Microsoft Authenticator Política de Telefone de login sem senha (preterida)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: Obter
@@ -10791,7 +10791,7 @@ items:
                     href: resources/socialidentityprovider.md
                   - name: Provedor de identidade da Apple
                     href: resources/appleidentityprovider.md
-                  - name: Provedor de identidade do OpenID Connect
+                  - name: OpenID Conexão provedor de identidade
                     href: resources/openidconnectidentityprovider.md
                   - name: Listar
                     href: api/identityproviderbase-list.md
@@ -10809,7 +10809,7 @@ items:
                 items:
                   - name: Tipo de provedor de identidade
                     href: resources/identityprovider.md
-                  - name: Tipo de provedor de identidade do OpenID Connect
+                  - name: OpenID Conexão tipo de provedor de identidade
                     href: resources/openidconnectprovider.md
                   - name: Listar
                     href: api/identityprovider-list.md
@@ -11021,11 +11021,11 @@ items:
                     href: api/trustframeworkkeyset-generatekey.md
                   - name: Obter chave ativa
                     href: api/trustframeworkkeyset-getactivekey.md
-                  - name: Carregar certificado
+                  - name: Upload certificado
                     href: api/trustframeworkkeyset-uploadcertificate.md
-                  - name: Carregar certificado PKCS12
+                  - name: Upload Certificado PKCS12
                     href: api/trustframeworkkeyset-uploadpkcs12.md
-                  - name: Carregar segredo
+                  - name: Upload segredo
                     href: api/trustframeworkkeyset-uploadsecret.md
               - name: Política da Estrutura de Confiança
                 href: resources/trustframeworkpolicy.md
@@ -11170,7 +11170,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: Atualizar
                         href: api/identityapiconnector-update.md
-                      - name: Carregar um certificado de cliente
+                      - name: Upload um certificado de cliente
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
@@ -11863,7 +11863,7 @@ items:
             items:
               - name: Criar e enviar uma notificação
                 href: api/user-post-notifications.md
-      - name: Inteligência de pessoas e no local de trabalho
+      - name: Inteligência de pessoas e local de trabalho
         items:
           - name: Visão Geral
             href: resources/social-overview.md
@@ -12079,7 +12079,7 @@ items:
                     href: api/workposition-delete.md
               - name: Projects
                 items:
-                  - name: Participação do projeto
+                  - name: Project participação
                     href: resources/projectparticipation.md
                   - name: Listar
                     href: api/profile-list-projects.md
@@ -12395,7 +12395,7 @@ items:
                     items:
                       - name: Obter usuários registrados pelo método de autenticação
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
-          - name: Relatórios de uso do Microsoft 365
+          - name: Microsoft 365 de uso
             items:
               - name: Visão Geral
                 href: resources/report.md
@@ -12460,7 +12460,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: Obter armazenamento
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Ativações do Microsoft 365
+              - name: Microsoft 365 ativações
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: Obter detalhes do usuário
@@ -12469,7 +12469,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: Obter contagens de usuários
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Usuários ativos do Microsoft 365
+              - name: Microsoft 365 usuários ativos
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: Obter detalhes do usuário
@@ -12487,7 +12487,7 @@ items:
                     href: api/reportroot-getm365appusercounts.md
                   - name: Obter contagens de usuários da plataforma
                     href: api/reportroot-getm365appplatformusercounts.md
-              - name: Atividade de grupos do Microsoft 365
+              - name: Microsoft 365 atividade de grupos
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: Obter detalhe do grupo
@@ -12941,7 +12941,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -13359,7 +13359,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Enviar notificação ao usuário
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: Guia
             href: resources/teamstab.md
             items:
               - name: Guia no canal
@@ -13634,7 +13634,7 @@ items:
                 href: api/linkedresource-delete.md
           - name: Tarefas do Outlook (obsoleto)
             items:
-              - name: Tarefa do Outlook (preterida)
+              - name: Outlook tarefa (preterida)
                 items:
                   - name: Tarefa do Outlook
                     href: resources/outlooktask.md
@@ -13654,7 +13654,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: Adicionar anexo
                     href: api/outlooktask-post-attachments.md
-              - name: Pasta de tarefas do Outlook (preterida)
+              - name: Outlook pasta de tarefas (preterida)
                 items:
                   - name: Pasta de tarefas do Outlook
                     href: resources/outlooktaskfolder.md
@@ -13672,7 +13672,7 @@ items:
                     href: api/outlooktaskfolder-list-tasks.md
                   - name: Criar tarefas na pasta
                     href: api/outlooktaskfolder-post-tasks.md
-              - name: Grupo de tarefas do Outlook (preterido)
+              - name: Outlook grupo de tarefas (preterido)
                 items:
                   - name: Grupo de tarefas do Outlook
                     href: resources/outlooktaskgroup.md
