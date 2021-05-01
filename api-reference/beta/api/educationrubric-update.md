@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e0bcea6b95b83cad3f4467e0a3687a3e2c401b56
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 50e3d9a675a6052f6eb2f26b5ed28a3395b77063
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043476"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118985"
 ---
 # <a name="update-educationrubric"></a>Atualizar educationRubric
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto educationRubric.](../resources/educationrubric.md)
 
-A atualização de uma rubrica anexada a uma atribuição ( ) só é possível antes da atribuição ser publicada, e o que é atualizado na verdade é a rubrica original que existe `PATCH /education/me/assignments/{id}/rubric` em `/education/users/{id}/rubrics` . Depois que a atribuição for publicada, será feita uma cópia imutável da rubrica anexada a essa atribuição específica. Essa rubrica pode ser recuperada usando [GET /education/me/assignments/{id}/rubric](educationrubric-get.md), mas não pode ser atualizada.
+A atualização de uma rubrica anexada a uma atribuição ( ) só é possível antes da atribuição ser publicada, e o que é atualizado na verdade é a rubrica original que existe `PATCH /education/classes/{id}/assignments/{id}/rubric` em `/education/users/{id}/rubrics` . Depois que a atribuição for publicada, será feita uma cópia imutável da rubrica anexada a essa atribuição específica. Essa rubrica pode ser recuperada usando [GET /education/classes/{id}/assignments/{id}/rubric](educationrubric-get.md), mas não pode ser atualizada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 PATCH /education/me/rubrics/{id}
-PATCH /education/me/assignments/{id}/rubric
+PATCH /education/classes/{id}/assignments/{id}/rubric
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

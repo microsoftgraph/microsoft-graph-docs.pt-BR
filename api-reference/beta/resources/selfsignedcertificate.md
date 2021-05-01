@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: luleonpla
-ms.openlocfilehash: 641748720be99272569c08874d91be7b7bb56888
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 1dbb9bcb15a3e820b3676e336826a741ecbb5e9f
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469028"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118967"
 ---
 # <a name="selfsignedcertificate-resource-type"></a>Tipo de recurso selfSignedCertificate
 
@@ -23,11 +23,11 @@ Contém a parte pública de um certificado de assinatura. É o tipo de retorno d
 ## <a name="properties"></a>Propriedades
 Propriedade|Tipo|Descrição
 ----|--|---
-|customKeyIdentifier|Binário| Identificador de chave personalizada |
+|customKeyIdentifier|Binário| Identificador de chave personalizado. |
 | displayName | String | O nome amigável da chave. |
-|endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria esta aparência: "2014-01-01T00:00:00Z". |
+|endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria esta aparência: "2014-01-01T00:00:00Z". |
 |keyId|Guid|O identificador exclusivo (GUID) da chave.|
-|startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria esta aparência: "2014-01-01T00:00:00Z". |
+|startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria esta aparência: "2014-01-01T00:00:00Z". |
 |tipo|String|O tipo de credencial de chave. "AsymmetricX509Cert".|
 |usage|String|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada. Por exemplo, "Verificar".|
 |chave|Binário| O valor da credencial de chave. Deve ser um valor codificado de base-64. |
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso
     "thumbprint":"string",
     "usage": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

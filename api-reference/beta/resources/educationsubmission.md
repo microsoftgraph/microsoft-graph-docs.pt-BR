@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: fccb8c691d5398bd95cc3ebc7eca1fc3028443a5
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 550e8329374865ce22954f1d25c977f877faf415
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722154"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52119016"
 ---
 # <a name="educationsubmission-resource-type"></a>Tipo de recurso educationSubmission
 
@@ -38,12 +38,12 @@ Os envios são criados automaticamente quando uma atribuição é publicada. O e
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|destinatário|[educationSubmissionRecipient](educationsubmissionrecipient.md)|A quem esse envio é atribuído.|
-|releasedBy|[identitySet](identityset.md)|Usuário que moveu o status desse envio para liberado.|
-|releasedDateTime|DateTimeOffset|Momento no tempo em que o envio foi lançado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|destinatário|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who esse envio é atribuído.|
+|releasedBy (preterido)|[identitySet](identityset.md)|Usuário que moveu o status desse envio para liberado.|
+|releasedDateTime (preterido)|DateTimeOffset|Momento no tempo em que o envio foi lançado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |returnedBy|[identitySet](identityset.md)|Usuário que moveu o status desse envio para retornado.|
 |returnedDateTime|DateTimeOffset|Momento no tempo em que o envio foi retornado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|resourcesFolderUrl|Cadeia de caracteres|Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.|
+|resourcesFolderUrl|String|Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.|
 |status|cadeia de caracteres| Somente Leitura. Os valores possíveis são: `working`, `submitted`, `released`, `returned`.|
 |submittedBy|[identitySet](identityset.md)|Usuário que moveu o recurso para o estado enviado.|
 |submittedDateTime|DateTimeOffset|Momento no tempo em que o envio foi movido para o estado enviado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
@@ -81,9 +81,7 @@ Veja a seguir uma representação JSON do recurso.
     "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
     "submittedDateTime":"String (timestamp)",
     "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "unsubmittedDateTime":"String (timestamp)",
-    "releasedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "releasedDateTime":"String (timestamp)"
+    "unsubmittedDateTime":"String (timestamp)"
 }
 ```
 

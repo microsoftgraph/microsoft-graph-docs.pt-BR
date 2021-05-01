@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f27763d558590e01f61fbc231959b05bee3c296
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 00985a84bcae02f30ee80e5a3babe9de58682d7e
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043714"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118953"
 ---
 # <a name="update-educationoutcome"></a>Atualizar educationoutcome
 
@@ -71,7 +71,7 @@ A seguir, um exemplo da solicitação de atualização de um resultado de feedba
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {
@@ -155,7 +155,7 @@ A seguir, um exemplo da solicitação de atualização de um resultado de pontos
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {
@@ -234,7 +234,7 @@ A seguir, um exemplo da solicitação de atualização de um resultado rubrico.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {

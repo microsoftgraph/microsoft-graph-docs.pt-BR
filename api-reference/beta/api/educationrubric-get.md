@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6f035cb9b31f813b788fe71e0feb4ae06d996750
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 879728279d2b57b3459284e2bcad92a1d617e7a6
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061830"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118932"
 ---
 # <a name="get-educationrubric"></a>Obter educationRubric
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de um [objeto educationRubric.](../resources/educationrubric.md)
 
-Observe que, ao obter a rubrica de uma atribuição ( ), o que é retornado é uma cópia imutável da rubrica original que `GET /education/me/assignments/{id}/rubric` existe em `/education/users/{id}/rubrics` . A cópia está associada a essa atribuição específica.
+Observe que, ao obter a rubrica de uma atribuição ( ), o que é retornado é uma cópia imutável da rubrica original que `GET /education/classes/{id}/assignments/{id}/rubric` existe em `/education/users/{id}/rubrics` . A cópia está associada a essa atribuição específica.
 
 ## <a name="permissions"></a>Permissões
 

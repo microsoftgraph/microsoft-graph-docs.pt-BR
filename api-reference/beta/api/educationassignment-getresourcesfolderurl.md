@@ -1,24 +1,25 @@
 ---
-title: 'educationAssignment: getResourcesFolderUrl'
-description: 'Essa função retorna a URL do OneDrive onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados.  '
+title: 'educationAssignment: getResourcesFolderUrl (preterido)'
+description: 'Essa função retorna a URL OneDrive onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados.  '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ce5f35560a25f2a57742d93293788038e13cb179
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 44c7caec25b4d96b225598041f59bfcaa3f5d3ac
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951830"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52119002"
 ---
-# <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: getResourcesFolderUrl
+# <a name="educationassignment-getresourcesfolderurl-deprecated"></a>educationAssignment: getResourcesFolderUrl (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+ [!CAUTION] A API getResourcesFolderUrl está preterida e interromperá o retorno de dados em 31 de maio de 2021. Use a nova propriedade exposta `resourcesFolderUrl` na entidade [educationAssignment](../resources/educationassignment.md) para buscar essas informações. 
 
-Essa função retorna a URL do OneDrive onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados.  
+Essa função retorna a URL OneDrive onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados.  
 Observe que os arquivos devem estar localizados nesta pasta para serem adicionados como recursos. Somente um professor da classe pode determinar quais arquivos carregar. 
 
 ## <a name="permissions"></a>Permissões
@@ -44,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 Ok`. O corpo conterá a URL do OneDrive de uma pasta na qual todos os recursos baseados em arquivo serão colocados.
+Se tiver êxito, este método retornará um código de resposta `200 Ok`. O corpo conterá a URL OneDrive de uma pasta na qual todos os recursos baseados em arquivo serão colocados.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
