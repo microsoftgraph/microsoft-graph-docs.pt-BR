@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 848510f113767ec9e9530cf82b30dfff9e836711
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: d0b44fd3737405e4bac72dd2d9b9fbe48e0ec3d6
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067205"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080579"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -107,6 +107,7 @@ Segue a resposta de JSON:
 | _AccessReview.Read.All_ |   Ler todas as revisões de acesso  | Permite que o aplicativo leia as revisões de acesso em nome do usuário conectado. | Sim | Não |
 | _AccessReview.ReadWrite.All_ |   Gerenciar todas as revisões de acesso  | Permite que o aplicativo leia e grave revisões de acesso em nome do usuário conectado. | Sim | Não |
 | _AccessReview.ReadWrite.Membership_ |   Gerenciar revisões de acesso para participações em grupo e aplicativos | Permite que o aplicativo leia e grave revisões de acesso de grupos e aplicativos em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.AccessReviews_ |   Gerenciar todas as políticas de análise de acesso  | Permite que o aplicativo leia e grave para acessar as políticas de análise em nome do usuário conectado. | Sim | Não |
 
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -115,11 +116,12 @@ Segue a resposta de JSON:
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _AccessReview.Read.All_ |   Ler todas as revisões de acesso | Permite que o aplicativo leia revisões de acesso sem um usuário conectado. | Sim |
 | _AccessReview.ReadWrite.Membership_ | Gerenciar revisões de acesso para participações em grupo e aplicativos | Permite que o aplicativo gerencie o acesso a revisões de aplicativos e grupos sem um usuário conectado. | Sim |
+| _Policy.ReadWrite.AccessReviews_ |   Gerenciar todas as políticas de análise de acesso  | Permite que o aplicativo leia e grave políticas de análise de acesso sem um usuário conectado. | Sim |
 
 
 ### <a name="remarks"></a>Comentários
 
-_AccessReview.Read.All_, _AccessReview.ReadWrite. All_ e _AccessReview.ReadWrite.Membership_ são válidos apenas para contas corporativas ou de estudante.
+_AccessReview.Read.All_, _AccessReview.ReadWrite.All_, _AccessReview.ReadWrite.Membership_, _Policy.ReadWrite.AccessReviews_ são válidos apenas para contas corporativas ou estudante.
 
 Para um aplicativo com permissões delegadas para ler as revisões de acesso de um grupo ou aplicativo, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança, Leitor de Segurança ou Administrador de Usuários. Para um aplicativo com permissões delegadas para gravar revisões de acesso de um grupo ou aplicativo, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global ou Administrador de Usuários.
 
@@ -1257,7 +1259,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1631,7 +1633,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|
 | _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), sem um usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim |
 | _RoleManagement.Read.Directory_ | Ler os dados da função de gerenciamento para Azure Active Directory | Permite que o aplicativo leia e gerencie as configurações de RBAC (controle de acesso baseado em função) da sua empresa, em nome do usuário conectado. Isso inclui a leitura de modelos da função de diretório, as associações e as funções de diretório. | Sim |
-| _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função no Azure AD | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) para o diretório da empresa, sem um usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
+| _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função no Azure AD | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado em função (RBAC) para o diretório da sua empresa, sem um usuário conectado. Isso inclui instanciar funções de diretório e gerenciamento de associação de função de diretório e leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
 
 ### <a name="remarks"></a>Comentários
 Com a permissão _RoleManagement.Read.Directory_ um aplicativo pode ler directoryRoles e directoryRoleTemplates. Isso inclui a leitura de informações de associação para funções de diretório.
@@ -1936,7 +1938,7 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 | _TeamsAppInstallation.ReadWriteForUser.All_ | Gerenciar aplicativos do Teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
 | _TeamsAppInstallation.ReadWriteSelfForUser.All_ (visualização privada) | Permitir que o aplicativo se gerencie para todos os usuários| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale para qualquer usuário, sem um usuário conectado.| Sim |
 | _TeamsAppInstallation.ReadForTeam.All_ | Ler os aplicativos do Teams instalados para todas as equipes| Permite que o aplicativo leia os aplicativos do Teams instalados para qualquer equipe, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteForTeam.All_ | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale os aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteForTeam.All_ | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não permite ler configurações específicas do aplicativo.| Sim |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_ (visualização privada) | Permitir que o aplicativo do Teams se gerencie para todas as equipes| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale em qualquer equipe, sem um usuário conectado.| Sim |
 
 ## <a name="team-member-permissions"></a>Permissões de membro da equipe 
@@ -2060,7 +2062,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _TeamsAppInstallation.ReadWriteForUser.All_ (visualização privada) | Gerenciar aplicativos do Teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
 | _TeamsAppInstallation.ReadWriteSelfForUser.All_ (visualização privada) | Permitir que o aplicativo se gerencie para todos os usuários| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale para qualquer usuário, sem um usuário conectado.| Sim |
 | _TeamsAppInstallation.ReadForTeam.All_ (visualização privada) | Ler os aplicativos do Teams instalados para todas as equipes| Permite que o aplicativo leia os aplicativos do Teams instalados para qualquer equipe, sem um usuário conectado. Não dá a capacidade de ler as configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation.ReadWriteForTeam.All_ (visualização privada) | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale os aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteForTeam.All_ (visualização privada) | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não permite ler configurações específicas do aplicativo.| Sim |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_ (visualização privada) | Permitir que o aplicativo do Teams se gerencie para todas as equipes| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale em qualquer equipe, sem um usuário conectado.| Sim |
 
 ## <a name="threat-assessment-permissions"></a>Permissões de avaliação de ameaças
@@ -2326,7 +2328,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação d
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 
