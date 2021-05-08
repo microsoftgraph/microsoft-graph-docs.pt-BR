@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3b5186d9d4aafd092591ecbc88b6d5f83a95ed13
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 470faeb478736e9be6a03e5fd97d3f06fb18faa3
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50969246"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52254225"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-EducationRubric educationRubric = graphClient.education().me().assignments("{id}").rubric()
+EducationRubric educationRubric = graphClient.education().classes("{id}").assignments("{id}").rubric()
     .buildRequest()
     .get();
 

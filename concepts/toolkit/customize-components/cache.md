@@ -1,26 +1,29 @@
 ---
-title: Cache do Microsoft Graph Toolkit
-description: Explicar como o cache funciona e como configurar as opções fornecidas aos desenvolvedores
+title: O Microsoft Graph Toolkit cache
+description: Explicando como o Cache funciona e como configurar as opções fornecidas aos desenvolvedores
 localization_priority: Normal
 author: adchau
-ms.openlocfilehash: f51b4f188fe8ec70f75a50e1d9de049459c97e14
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: cef5c06c39ebad58e6a39f094427dea6a1b1be25
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658702"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266617"
 ---
-# <a name="microsoft-graph-toolkit-caching"></a><span data-ttu-id="93b53-103">Cache do Microsoft Graph Toolkit</span><span class="sxs-lookup"><span data-stu-id="93b53-103">Microsoft Graph Toolkit caching</span></span>
+# <a name="microsoft-graph-toolkit-caching"></a><span data-ttu-id="4b444-103">O Microsoft Graph Toolkit cache</span><span class="sxs-lookup"><span data-stu-id="4b444-103">Microsoft Graph Toolkit caching</span></span>
 
-<span data-ttu-id="93b53-104">O Microsoft Graph Toolkit oferece suporte a cache de chamadas de API SELECT do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="93b53-104">The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls.</span></span> <span data-ttu-id="93b53-105">Atualmente, as chamadas para os pontos de extremidade de usuários, pessoas, contatos e fotos são armazenadas em cache por padrão em três repositórios do IndexedDB.</span><span class="sxs-lookup"><span data-stu-id="93b53-105">Currently, calls to the users, person, contact, and photo endpoints are cached by default in three IndexedDB stores.</span></span>
+<span data-ttu-id="4b444-104">O microsoft graph Toolkit suporta o cache de chamadas de API do Microsoft Graph selecionadas.</span><span class="sxs-lookup"><span data-stu-id="4b444-104">The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls.</span></span> <span data-ttu-id="4b444-105">As chamadas estão sendo armazenadas em cache por entidade, como pessoas, contato, foto.</span><span class="sxs-lookup"><span data-stu-id="4b444-105">Calls are being cached per entity, such as people, contact, photo.</span></span> <span data-ttu-id="4b444-106">Isso permite que um componente recupere os dados e outros componentes para reutilizar sem chamar o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="4b444-106">This allows one component to retrieve the data and other components to reuse it without calling Microsoft Graph.</span></span>
 
-<span data-ttu-id="93b53-106">Você pode exibir o cache no painel de desenvolvedor.</span><span class="sxs-lookup"><span data-stu-id="93b53-106">You can view the cache on the developer panel.</span></span> <span data-ttu-id="93b53-107">Na guia **aplicativo** , no painel **armazenamento** , vá para a guia **IndexedDB** .</span><span class="sxs-lookup"><span data-stu-id="93b53-107">On the **Application** tab, in the **Storage** pane, go to the **IndexedDB** tab.</span></span>
+> [!TIP]
+> <span data-ttu-id="4b444-107">Para obter mais informações sobre quais entidades são armazenadas em cache por cada componente, consulte a documentação do componente.</span><span class="sxs-lookup"><span data-stu-id="4b444-107">For more information about which entities are cached by each component, see the component's documentation.</span></span>
+
+<span data-ttu-id="4b444-108">Bancos de dados criados pelo mgt para cache são prefixados com `mgt-` .</span><span class="sxs-lookup"><span data-stu-id="4b444-108">Databases created by mgt for caching are prefixed with `mgt-`.</span></span> <span data-ttu-id="4b444-109">Os dados de cada entidade são armazenados em um armazenamento de objetos separado.</span><span class="sxs-lookup"><span data-stu-id="4b444-109">The data for each entity is stored in a separate object store.</span></span> <span data-ttu-id="4b444-110">Para inspecionar o cache, use a guia Aplicativo no painel do  desenvolvedor (ferramentas F12) - na seção Armazenamento, clique na **guia IndexedDB.** </span><span class="sxs-lookup"><span data-stu-id="4b444-110">To inspect the cache, use the **Application** tab in the developer panel (F12 tools) - under the **Storage** section, click on the **IndexedDB** tab.</span></span> 
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
-## <a name="cache-configuration"></a><span data-ttu-id="93b53-109">Configuração de cache</span><span class="sxs-lookup"><span data-stu-id="93b53-109">Cache configuration</span></span>
+## <a name="cache-configuration"></a><span data-ttu-id="4b444-112">Configuração de cache</span><span class="sxs-lookup"><span data-stu-id="4b444-112">Cache configuration</span></span>
 
-<span data-ttu-id="93b53-110">Você pode ler e gravar as opções de cache por meio do objeto de classe estática `CacheService.config` .</span><span class="sxs-lookup"><span data-stu-id="93b53-110">You can read and write the cache options through the static class `CacheService.config` object.</span></span> <span data-ttu-id="93b53-111">Ele é formatado como mostrado.</span><span class="sxs-lookup"><span data-stu-id="93b53-111">It is formatted as shown.</span></span>
+<span data-ttu-id="4b444-113">Você pode ler e gravar as opções de cache por meio do objeto de classe `CacheService.config` estática.</span><span class="sxs-lookup"><span data-stu-id="4b444-113">You can read and write the cache options through the static class `CacheService.config` object.</span></span> <span data-ttu-id="4b444-114">Ele é formatado conforme mostrado.</span><span class="sxs-lookup"><span data-stu-id="4b444-114">It is formatted as shown.</span></span>
 
 ```TypeScript
 let config = {
@@ -46,24 +49,28 @@ let config = {
     invalidationPeriod: number,
     isEnabled: boolean
   },
+  response: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  }
 };
 ```
 
-<span data-ttu-id="93b53-112">Os períodos de invalidação de cache individual são padronizados para `null` o objeto config e o padrão é o `defaultInvalidationPeriod` valor geral 3,6 milhões ms (60 minutos).</span><span class="sxs-lookup"><span data-stu-id="93b53-112">Individual cache invalidation periods are defaulted to `null` in the config object, and default to the general `defaultInvalidationPeriod` value of 3,600,000 ms (60 minutes).</span></span> <span data-ttu-id="93b53-113">Qualquer valor passado para `config.x.invalidationPeriod` será substituído `defaultInvalidationPeriod` .</span><span class="sxs-lookup"><span data-stu-id="93b53-113">Any value passed into `config.x.invalidationPeriod` will override `defaultInvalidationPeriod`.</span></span>
+<span data-ttu-id="4b444-115">Períodos de invalidação de cache individuais são padrão no objeto config e padrão para o valor geral de `null` `defaultInvalidationPeriod` 3.600.000 ms (60 minutos).</span><span class="sxs-lookup"><span data-stu-id="4b444-115">Individual cache invalidation periods are defaulted to `null` in the config object, and default to the general `defaultInvalidationPeriod` value of 3,600,000 ms (60 minutes).</span></span> <span data-ttu-id="4b444-116">Qualquer valor passado para `config.x.invalidationPeriod` substituirá `defaultInvalidationPeriod` .</span><span class="sxs-lookup"><span data-stu-id="4b444-116">Any value passed into `config.x.invalidationPeriod` will override `defaultInvalidationPeriod`.</span></span>
 
-<span data-ttu-id="93b53-114">O repositório de presença é a única exceção e tem um valor padrão de 300000 MS ou 5 minutos.</span><span class="sxs-lookup"><span data-stu-id="93b53-114">The presence store is the only exception, and has a default value of 300000 ms, or 5 minutes.</span></span>
+<span data-ttu-id="4b444-117">O armazenamento de presença é a única exceção e tem um valor padrão de 300000 ms ou 5 minutos.</span><span class="sxs-lookup"><span data-stu-id="4b444-117">The presence store is the only exception, and has a default value of 300000 ms, or 5 minutes.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="93b53-115">Exemplos</span><span class="sxs-lookup"><span data-stu-id="93b53-115">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="4b444-118">Exemplos</span><span class="sxs-lookup"><span data-stu-id="4b444-118">Examples</span></span>
 
-<span data-ttu-id="93b53-116">Para desabilitar individualmente um repositório, basta definir o valor das `isEnabled` Propriedades de config da loja como false:</span><span class="sxs-lookup"><span data-stu-id="93b53-116">To individual disable a store simply set the value of `isEnabled` in that store's config properties to false:</span></span>
+<span data-ttu-id="4b444-119">Para desabilitar individualmente um armazenamento, basta definir o valor das propriedades de config desse armazenamento `isEnabled` como false:</span><span class="sxs-lookup"><span data-stu-id="4b444-119">To individual disable a store simply set the value of `isEnabled` in that store's config properties to false:</span></span>
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
 
 CacheService.config.users.isEnabled = false;
 ```
-<span data-ttu-id="93b53-117">Desabilitar o cache **não limpa o** cache.</span><span class="sxs-lookup"><span data-stu-id="93b53-117">Disabling the cache does **not** clear the cache.</span></span>
+<span data-ttu-id="4b444-120">Desabilitar o cache **não limpa** o cache.</span><span class="sxs-lookup"><span data-stu-id="4b444-120">Disabling the cache does **not** clear the cache.</span></span>
 
-<span data-ttu-id="93b53-118">Alterar o período de invalditation é semelhante:</span><span class="sxs-lookup"><span data-stu-id="93b53-118">Changing the invalditation period is similar:</span></span>
+<span data-ttu-id="4b444-121">Alterar o período de invalditation é semelhante:</span><span class="sxs-lookup"><span data-stu-id="4b444-121">Changing the invalditation period is similar:</span></span>
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
@@ -71,11 +78,11 @@ import { CacheService } from '@microsoft/mgt';
 CacheService.config.users.invalidationPeriod = 1800000;
 ```
 
-## <a name="clearing-the-cache"></a><span data-ttu-id="93b53-119">Limpando o cache</span><span class="sxs-lookup"><span data-stu-id="93b53-119">Clearing the cache</span></span>
+## <a name="clearing-the-cache"></a><span data-ttu-id="4b444-122">Limpar o cache</span><span class="sxs-lookup"><span data-stu-id="4b444-122">Clearing the cache</span></span>
 
-<span data-ttu-id="93b53-120">O cache é automaticamente limpo quando o usuário se desconecta. Ela também pode ser limpa manualmente.</span><span class="sxs-lookup"><span data-stu-id="93b53-120">The cache is automatically cleared when the user signs out. It can also be cleared manually.</span></span>
+<span data-ttu-id="4b444-123">O cache é automaticamente limpo quando o usuário sai. Ele também pode ser limpo manualmente.</span><span class="sxs-lookup"><span data-stu-id="4b444-123">The cache is automatically cleared when the user signs out. It can also be cleared manually.</span></span>
 
-<span data-ttu-id="93b53-121">Limpar todas as lojas no cache, o `clearCaches()` método da `CacheService` classe limpará todos os repositórios mantidos pelo CacheService.</span><span class="sxs-lookup"><span data-stu-id="93b53-121">The clear all the stores in the cache, the `clearCaches()` method of the `CacheService` class will clear every store maintained by the CacheService.</span></span>
+<span data-ttu-id="4b444-124">Se limpar todos os armazenamentos no cache, o método da classe limpará todos os `clearCaches()` `CacheService` armazenamentos mantidos pelo CacheService.</span><span class="sxs-lookup"><span data-stu-id="4b444-124">The clear all the stores in the cache, the `clearCaches()` method of the `CacheService` class will clear every store maintained by the CacheService.</span></span>
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
@@ -83,16 +90,16 @@ import { CacheService } from '@microsoft/mgt';
 CacheService.clearCaches();
 ```
 
-## <a name="creating-your-own-cache-stores"></a><span data-ttu-id="93b53-122">Criar seus próprios repositórios de cache</span><span class="sxs-lookup"><span data-stu-id="93b53-122">Creating your own cache stores</span></span>
+## <a name="creating-your-own-cache-stores"></a><span data-ttu-id="4b444-125">Criando seus próprios armazenamentos de cache</span><span class="sxs-lookup"><span data-stu-id="4b444-125">Creating your own cache stores</span></span>
 
-<span data-ttu-id="93b53-123">Se você deseja criar e preencher seus próprios repositórios de cache para seus componentes personalizados, você pode usar a `CacheService` classe estática.</span><span class="sxs-lookup"><span data-stu-id="93b53-123">If you want to create and populate your own cache stores for your custom components, you can use the `CacheService` static class.</span></span>
+<span data-ttu-id="4b444-126">Se você quiser criar e preencher seus próprios armazenamentos de cache para seus componentes personalizados, você pode usar a `CacheService` classe estática.</span><span class="sxs-lookup"><span data-stu-id="4b444-126">If you want to create and populate your own cache stores for your custom components, you can use the `CacheService` static class.</span></span>
 
 ```JavaScript
 CacheService.getCache(schema: CacheSchema, storeName: String);
 ```
-> <span data-ttu-id="93b53-124">**Observação:** A `storeName` referência que você faz na chamada `getCache()` deve corresponder a uma das lojas listadas em seu `CacheSchema` objeto.</span><span class="sxs-lookup"><span data-stu-id="93b53-124">**Note:** The `storeName` you reference in the call to `getCache()` must match one of the stores listed in your `CacheSchema` object.</span></span>
+> <span data-ttu-id="4b444-127">**Observação:** A `storeName` referência que você faz na chamada deve corresponder a um dos `getCache()` armazenamentos listados em seu `CacheSchema` objeto.</span><span class="sxs-lookup"><span data-stu-id="4b444-127">**Note:** The `storeName` you reference in the call to `getCache()` must match one of the stores listed in your `CacheSchema` object.</span></span>
 
-<span data-ttu-id="93b53-125">O `CacheSchema` objeto é um dicionário com os pares chave/valor.</span><span class="sxs-lookup"><span data-stu-id="93b53-125">The `CacheSchema` object is a dictionary with the key/value pairs.</span></span>
+<span data-ttu-id="4b444-128">O `CacheSchema` objeto é um dicionário com os pares de chave/valor.</span><span class="sxs-lookup"><span data-stu-id="4b444-128">The `CacheSchema` object is a dictionary with the key/value pairs.</span></span>
 
 ```TypeScript
 import { CacheSchema } from '@microsoft/mgt';
@@ -107,7 +114,7 @@ const cacheSchema: CacheSchema = {
 };
 ```
 
-<span data-ttu-id="93b53-126">O exemplo a seguir mostra a implementação de cache.</span><span class="sxs-lookup"><span data-stu-id="93b53-126">The following example shows the cache implementation.</span></span>
+<span data-ttu-id="4b444-129">O exemplo a seguir mostra a implementação do cache.</span><span class="sxs-lookup"><span data-stu-id="4b444-129">The following example shows the cache implementation.</span></span>
 
 ```TypeScript
 import { CacheItem, CacheSchema, CacheService, CacheStore } from '@microsoft/mgt';

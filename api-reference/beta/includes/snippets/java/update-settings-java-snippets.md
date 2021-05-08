@@ -1,21 +1,36 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 716b8893a21d6a30a51c741df4eccde6683c1c15
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a1ccb4f6c5f83d5c3f33c61fba9195934a64411b
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50984316"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240827"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-PrintSettings printSettings = new PrintSettings();
-printSettings.documentConversionEnabled = true;
+Settings settings = new Settings();
+RedundancyDetectionSettings redundancyDetection = new RedundancyDetectionSettings();
+redundancyDetection.isEnabled = false;
+redundancyDetection.similarityThreshold = 70;
+redundancyDetection.minWords = 12;
+redundancyDetection.maxWords = 400000;
+settings.redundancyDetection = redundancyDetection;
+TopicModelingSettings topicModeling = new TopicModelingSettings();
+topicModeling.isEnabled = false;
+topicModeling.ignoreNumbers = false;
+topicModeling.topicCount = 50;
+topicModeling.dynamicallyAdjustTopicCount = false;
+settings.topicModeling = topicModeling;
+OcrSettings ocr = new OcrSettings();
+ocr.isEnabled = true;
+ocr.maxImageSize = 12000;
+settings.ocr = ocr;
 
-graphClient.customRequest("/print/settings", PrintSettings.class)
+graphClient.compliance().ediscovery().cases("{caseId}").settings()
     .buildRequest()
-    .patch(printSettings);
+    .patch(settings);
 
 ```
