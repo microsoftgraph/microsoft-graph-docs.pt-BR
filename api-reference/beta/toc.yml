@@ -457,7 +457,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -977,7 +977,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: Listar memberOf transitivos
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1409,9 +1409,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Sessão
+              - name: Session
                 items:
-                  - name: Sessão
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -11227,6 +11227,17 @@ items:
                         href: api/accessreviewpolicy-get.md
                       - name: Atualizar
                         href: api/accessreviewpolicy-update.md
+                  - name: Definição de histórico de revisão do Access
+                    href: resources/accessreviewhistorydefinition.md
+                    items:
+                      - name: Obter
+                        href: api/accessreviewhistorydefinition-get.md
+                      - name: Listar
+                        href: api/accessreviewhistorydefinition-list.md
+                      - name: Criar
+                        href: api/accessreviewhistorydefinition-create.md
+                      - name: Gerar URI de download
+                        href: api/accessreviewhistorydefinition-generatedownloaduri.md
               - name: Avaliações do Access (herdação)
                 href: resources/accessreviews-root.md
                 items:

@@ -5,32 +5,32 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: ad5ff716396a2971c4112e98239484be97c2cfce
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9e907b5fd55d6022fde87816179c89a7689be41b
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055187"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231370"
 ---
-# <a name="list-provisioningobjectsummary"></a><span data-ttu-id="c9059-103">Listar provisioningObjectSummary</span><span class="sxs-lookup"><span data-stu-id="c9059-103">List provisioningObjectSummary</span></span>
+# <a name="list-provisioningobjectsummary"></a><span data-ttu-id="0602d-103">Listar provisioningObjectSummary</span><span class="sxs-lookup"><span data-stu-id="0602d-103">List provisioningObjectSummary</span></span>
 
-<span data-ttu-id="c9059-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c9059-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0602d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0602d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c9059-105">Obter todos os eventos de provisionamento que ocorreram em seu locatário, como a exclusão de um grupo em um aplicativo de destino ou a criação de um usuário ao provisionar contas de usuário do seu sistema de RH.</span><span class="sxs-lookup"><span data-stu-id="c9059-105">Get all provisioning events that occurred in your tenant, such as the deletion of a group in a target application or the creation of a user when provisioning user accounts from your HR system.</span></span> 
+<span data-ttu-id="0602d-105">Obter todos os eventos de provisionamento que ocorreram em seu locatário, como a exclusão de um grupo em um aplicativo de destino ou a criação de um usuário ao provisionar contas de usuário do seu sistema de RH.</span><span class="sxs-lookup"><span data-stu-id="0602d-105">Get all provisioning events that occurred in your tenant, such as the deletion of a group in a target application or the creation of a user when provisioning user accounts from your HR system.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="c9059-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="c9059-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0602d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="0602d-106">Permissions</span></span>
 
-<span data-ttu-id="c9059-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c9059-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0602d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0602d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c9059-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c9059-109">Permission type</span></span> | <span data-ttu-id="c9059-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c9059-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0602d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0602d-109">Permission type</span></span> | <span data-ttu-id="0602d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0602d-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c9059-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c9059-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c9059-112">AuditLog.Read.All e Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="c9059-112">AuditLog.Read.All and Directory.Read.All</span></span> |
-|<span data-ttu-id="c9059-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c9059-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9059-114">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="c9059-114">Not supported</span></span>   |
-|<span data-ttu-id="c9059-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c9059-115">Application</span></span> | <span data-ttu-id="c9059-116">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="c9059-116">AuditLog.Read.All</span></span> |
+|<span data-ttu-id="0602d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0602d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0602d-112">AuditLog.Read.All e Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="0602d-112">AuditLog.Read.All and Directory.Read.All</span></span> |
+|<span data-ttu-id="0602d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0602d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0602d-114">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="0602d-114">Not supported</span></span>   |
+|<span data-ttu-id="0602d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0602d-115">Application</span></span> | <span data-ttu-id="0602d-116">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="0602d-116">AuditLog.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c9059-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c9059-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0602d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0602d-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,65 +38,68 @@ ms.locfileid: "52055187"
 GET /auditLogs/provisioning
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c9059-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="c9059-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0602d-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0602d-118">Optional query parameters</span></span>
 
-<span data-ttu-id="c9059-119">Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="c9059-119">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="c9059-120">Observe que os filtros são todos sensíveis a minúsculas, exceto para status.</span><span class="sxs-lookup"><span data-stu-id="c9059-120">Note that the filters are all case sensitive except for status.</span></span> 
+<span data-ttu-id="0602d-119">Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="0602d-119">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="0602d-120">Observe que os filtros são todos sensíveis a minúsculas, exceto para status.</span><span class="sxs-lookup"><span data-stu-id="0602d-120">Note that the filters are all case sensitive except for status.</span></span> 
 
-|<span data-ttu-id="c9059-121">Nome</span><span class="sxs-lookup"><span data-stu-id="c9059-121">Name</span></span>     |<span data-ttu-id="c9059-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="c9059-122">Description</span></span>                            |<span data-ttu-id="c9059-123">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c9059-123">Example</span></span>|
+|<span data-ttu-id="0602d-121">Nome</span><span class="sxs-lookup"><span data-stu-id="0602d-121">Name</span></span>     |<span data-ttu-id="0602d-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="0602d-122">Description</span></span>                            |<span data-ttu-id="0602d-123">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0602d-123">Example</span></span>|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[<span data-ttu-id="c9059-124">$filter</span><span class="sxs-lookup"><span data-stu-id="c9059-124">$filter</span></span>](/graph/query-parameters#filter-parameter)|<span data-ttu-id="c9059-125">Filtra os resultados (linhas).</span><span class="sxs-lookup"><span data-stu-id="c9059-125">Filters results (rows).</span></span> |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
-|[<span data-ttu-id="c9059-126">$top</span><span class="sxs-lookup"><span data-stu-id="c9059-126">$top</span></span>](/graph/query-parameters#top-parameter)|<span data-ttu-id="c9059-127">Define o tamanho de página de resultados.</span><span class="sxs-lookup"><span data-stu-id="c9059-127">Sets the page size of results.</span></span>|`/auditLogs/provisioning?$top=20`|
-|[<span data-ttu-id="c9059-128">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="c9059-128">$skiptoken</span></span>](/graph/query-parameters#skiptoken-parameter)|<span data-ttu-id="c9059-129">Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.</span><span class="sxs-lookup"><span data-stu-id="c9059-129">Retrieves the next page of results from result sets that span multiple pages.</span></span> <span data-ttu-id="c9059-130">Você deve passar o filtro superior na consulta para gerar o token.</span><span class="sxs-lookup"><span data-stu-id="c9059-130">You must pass the top filter in the query to generate the token.</span></span> <span data-ttu-id="c9059-131">Não é possível especificar o número de resultados a serem ignorados.</span><span class="sxs-lookup"><span data-stu-id="c9059-131">You cannot specify the number of results to be skipped.</span></span>|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
+|[<span data-ttu-id="0602d-124">$filter</span><span class="sxs-lookup"><span data-stu-id="0602d-124">$filter</span></span>](/graph/query-parameters#filter-parameter)|<span data-ttu-id="0602d-125">Filtra os resultados (linhas).</span><span class="sxs-lookup"><span data-stu-id="0602d-125">Filters results (rows).</span></span> |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
+|[<span data-ttu-id="0602d-126">$top</span><span class="sxs-lookup"><span data-stu-id="0602d-126">$top</span></span>](/graph/query-parameters#top-parameter)|<span data-ttu-id="0602d-127">Define o tamanho de página de resultados.</span><span class="sxs-lookup"><span data-stu-id="0602d-127">Sets the page size of results.</span></span>|`/auditLogs/provisioning?$top=20`|
+|[<span data-ttu-id="0602d-128">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="0602d-128">$skiptoken</span></span>](/graph/query-parameters#skiptoken-parameter)|<span data-ttu-id="0602d-129">Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.</span><span class="sxs-lookup"><span data-stu-id="0602d-129">Retrieves the next page of results from result sets that span multiple pages.</span></span> <span data-ttu-id="0602d-130">Você deve passar o filtro superior na consulta para gerar o token.</span><span class="sxs-lookup"><span data-stu-id="0602d-130">You must pass the top filter in the query to generate the token.</span></span> <span data-ttu-id="0602d-131">Não é possível especificar o número de resultados a serem ignorados.</span><span class="sxs-lookup"><span data-stu-id="0602d-131">You cannot specify the number of results to be skipped.</span></span>|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-<span data-ttu-id="c9059-132">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query_parameters).</span><span class="sxs-lookup"><span data-stu-id="c9059-132">For general information, see [OData query parameters](/graph/query_parameters).</span></span>
+<span data-ttu-id="0602d-132">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query_parameters).</span><span class="sxs-lookup"><span data-stu-id="0602d-132">For general information, see [OData query parameters](/graph/query_parameters).</span></span>
 
-### <a name="attributes-supported-by-the-filter-parameter"></a><span data-ttu-id="c9059-133">Atributos suportados pelo parâmetro $filter</span><span class="sxs-lookup"><span data-stu-id="c9059-133">Attributes supported by the $filter parameter</span></span>
+### <a name="attributes-supported-by-the-filter-parameter"></a><span data-ttu-id="0602d-133">Atributos suportados pelo parâmetro $filter</span><span class="sxs-lookup"><span data-stu-id="0602d-133">Attributes supported by the $filter parameter</span></span>
 
-|<span data-ttu-id="c9059-134">Nome do atributo</span><span class="sxs-lookup"><span data-stu-id="c9059-134">Attribute name</span></span> |<span data-ttu-id="c9059-135">Operadores com suporte</span><span class="sxs-lookup"><span data-stu-id="c9059-135">Supported operators</span></span>|
+|<span data-ttu-id="0602d-134">Nome do atributo</span><span class="sxs-lookup"><span data-stu-id="0602d-134">Attribute name</span></span> |<span data-ttu-id="0602d-135">Operadores com suporte</span><span class="sxs-lookup"><span data-stu-id="0602d-135">Supported operators</span></span>|
 |:----------------|:------|
-|<span data-ttu-id="c9059-136">id</span><span class="sxs-lookup"><span data-stu-id="c9059-136">id</span></span>| <span data-ttu-id="c9059-137">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-137">eq, contains</span></span>|
-|<span data-ttu-id="c9059-138">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="c9059-138">activityDateTime</span></span>| <span data-ttu-id="c9059-139">eq</span><span class="sxs-lookup"><span data-stu-id="c9059-139">eq</span></span>|
-|<span data-ttu-id="c9059-140">tenantid</span><span class="sxs-lookup"><span data-stu-id="c9059-140">tenantid</span></span>|<span data-ttu-id="c9059-141">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-141">eq, contains</span></span>|
-|<span data-ttu-id="c9059-142">jobid</span><span class="sxs-lookup"><span data-stu-id="c9059-142">jobid</span></span>|<span data-ttu-id="c9059-143">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-143">eq, contains</span></span>|
-|<span data-ttu-id="c9059-144">changeid</span><span class="sxs-lookup"><span data-stu-id="c9059-144">changeid</span></span>|<span data-ttu-id="c9059-145">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-145">eq, contains</span></span>|
-|<span data-ttu-id="c9059-146">cycleid</span><span class="sxs-lookup"><span data-stu-id="c9059-146">cycleid</span></span>|<span data-ttu-id="c9059-147">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-147">eq, contains</span></span>|
-|<span data-ttu-id="c9059-148">ação</span><span class="sxs-lookup"><span data-stu-id="c9059-148">action</span></span>|<span data-ttu-id="c9059-149">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-149">eq, contains</span></span>|
-|<span data-ttu-id="c9059-150">statusInfo/status</span><span class="sxs-lookup"><span data-stu-id="c9059-150">statusInfo/status</span></span>|<span data-ttu-id="c9059-151">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-151">eq, contains</span></span>|
-|<span data-ttu-id="c9059-152">sourceSystem/displayName</span><span class="sxs-lookup"><span data-stu-id="c9059-152">sourceSystem/displayName</span></span>|<span data-ttu-id="c9059-153">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-153">eq, contains</span></span>|
-|<span data-ttu-id="c9059-154">targetSystem/displayName</span><span class="sxs-lookup"><span data-stu-id="c9059-154">targetSystem/displayName</span></span>|<span data-ttu-id="c9059-155">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-155">eq, contains</span></span>|
-|<span data-ttu-id="c9059-156">sourceIdentity/identityType</span><span class="sxs-lookup"><span data-stu-id="c9059-156">sourceIdentity/identityType</span></span>|<span data-ttu-id="c9059-157">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-157">eq, contains</span></span>|
-|<span data-ttu-id="c9059-158">targetIdentity/identityType</span><span class="sxs-lookup"><span data-stu-id="c9059-158">targetIdentity/identityType</span></span>|<span data-ttu-id="c9059-159">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-159">eq, contains</span></span>|
-|<span data-ttu-id="c9059-160">sourceIdentity/id</span><span class="sxs-lookup"><span data-stu-id="c9059-160">sourceIdentity/id</span></span>|<span data-ttu-id="c9059-161">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-161">eq, contains</span></span>|
-|<span data-ttu-id="c9059-162">servicePrincipal/id</span><span class="sxs-lookup"><span data-stu-id="c9059-162">servicePrincipal/id</span></span>|<span data-ttu-id="c9059-163">eq</span><span class="sxs-lookup"><span data-stu-id="c9059-163">eq</span></span>|
-|<span data-ttu-id="c9059-164">servicePrincipal/name</span><span class="sxs-lookup"><span data-stu-id="c9059-164">servicePrincipal/name</span></span>|<span data-ttu-id="c9059-165">eq</span><span class="sxs-lookup"><span data-stu-id="c9059-165">eq</span></span>|
-|<span data-ttu-id="c9059-166">targetIdentity/id</span><span class="sxs-lookup"><span data-stu-id="c9059-166">targetIdentity/id</span></span>|<span data-ttu-id="c9059-167">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-167">eq, contains</span></span>|
-|<span data-ttu-id="c9059-168">sourceIdentity/displayName</span><span class="sxs-lookup"><span data-stu-id="c9059-168">sourceIdentity/displayName</span></span>|<span data-ttu-id="c9059-169">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-169">eq, contains</span></span>|
-|<span data-ttu-id="c9059-170">targetIdentity/displayName</span><span class="sxs-lookup"><span data-stu-id="c9059-170">targetIdentity/displayName</span></span>|<span data-ttu-id="c9059-171">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-171">eq, contains</span></span>|
-|<span data-ttu-id="c9059-172">initiatedBy/displayName</span><span class="sxs-lookup"><span data-stu-id="c9059-172">initiatedBy/displayName</span></span>|<span data-ttu-id="c9059-173">eq, contém</span><span class="sxs-lookup"><span data-stu-id="c9059-173">eq, contains</span></span>|
+|<span data-ttu-id="0602d-136">id</span><span class="sxs-lookup"><span data-stu-id="0602d-136">id</span></span>| <span data-ttu-id="0602d-137">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-137">eq, contains</span></span>|
+|<span data-ttu-id="0602d-138">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="0602d-138">activityDateTime</span></span>| <span data-ttu-id="0602d-139">eq</span><span class="sxs-lookup"><span data-stu-id="0602d-139">eq</span></span>|
+|<span data-ttu-id="0602d-140">tenantid</span><span class="sxs-lookup"><span data-stu-id="0602d-140">tenantid</span></span>|<span data-ttu-id="0602d-141">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-141">eq, contains</span></span>|
+|<span data-ttu-id="0602d-142">jobid</span><span class="sxs-lookup"><span data-stu-id="0602d-142">jobid</span></span>|<span data-ttu-id="0602d-143">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-143">eq, contains</span></span>|
+|<span data-ttu-id="0602d-144">changeid</span><span class="sxs-lookup"><span data-stu-id="0602d-144">changeid</span></span>|<span data-ttu-id="0602d-145">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-145">eq, contains</span></span>|
+|<span data-ttu-id="0602d-146">cycleid</span><span class="sxs-lookup"><span data-stu-id="0602d-146">cycleid</span></span>|<span data-ttu-id="0602d-147">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-147">eq, contains</span></span>|
+|<span data-ttu-id="0602d-148">ação</span><span class="sxs-lookup"><span data-stu-id="0602d-148">action</span></span>|<span data-ttu-id="0602d-149">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-149">eq, contains</span></span>|
+|<span data-ttu-id="0602d-150">provisioningAction</span><span class="sxs-lookup"><span data-stu-id="0602d-150">provisioningAction</span></span>|<span data-ttu-id="0602d-151">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-151">eq, contains</span></span>|
+|<span data-ttu-id="0602d-152">durationInMilliseconds</span><span class="sxs-lookup"><span data-stu-id="0602d-152">durationInMilliseconds</span></span>|<span data-ttu-id="0602d-153">eq, gt, lt</span><span class="sxs-lookup"><span data-stu-id="0602d-153">eq, gt, lt</span></span>|
+|<span data-ttu-id="0602d-154">provisioningStatusInfo/status</span><span class="sxs-lookup"><span data-stu-id="0602d-154">provisioningStatusInfo/status</span></span>|<span data-ttu-id="0602d-155">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-155">eq, contains</span></span>|
+|<span data-ttu-id="0602d-156">statusInfo/status</span><span class="sxs-lookup"><span data-stu-id="0602d-156">statusInfo/status</span></span>|<span data-ttu-id="0602d-157">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-157">eq, contains</span></span>|
+|<span data-ttu-id="0602d-158">sourceSystem/displayName</span><span class="sxs-lookup"><span data-stu-id="0602d-158">sourceSystem/displayName</span></span>|<span data-ttu-id="0602d-159">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-159">eq, contains</span></span>|
+|<span data-ttu-id="0602d-160">targetSystem/displayName</span><span class="sxs-lookup"><span data-stu-id="0602d-160">targetSystem/displayName</span></span>|<span data-ttu-id="0602d-161">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-161">eq, contains</span></span>|
+|<span data-ttu-id="0602d-162">sourceIdentity/identityType</span><span class="sxs-lookup"><span data-stu-id="0602d-162">sourceIdentity/identityType</span></span>|<span data-ttu-id="0602d-163">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-163">eq, contains</span></span>|
+|<span data-ttu-id="0602d-164">targetIdentity/identityType</span><span class="sxs-lookup"><span data-stu-id="0602d-164">targetIdentity/identityType</span></span>|<span data-ttu-id="0602d-165">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-165">eq, contains</span></span>|
+|<span data-ttu-id="0602d-166">sourceIdentity/id</span><span class="sxs-lookup"><span data-stu-id="0602d-166">sourceIdentity/id</span></span>|<span data-ttu-id="0602d-167">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-167">eq, contains</span></span>|
+|<span data-ttu-id="0602d-168">servicePrincipal/id</span><span class="sxs-lookup"><span data-stu-id="0602d-168">servicePrincipal/id</span></span>|<span data-ttu-id="0602d-169">eq</span><span class="sxs-lookup"><span data-stu-id="0602d-169">eq</span></span>|
+|<span data-ttu-id="0602d-170">servicePrincipal/name</span><span class="sxs-lookup"><span data-stu-id="0602d-170">servicePrincipal/name</span></span>|<span data-ttu-id="0602d-171">eq</span><span class="sxs-lookup"><span data-stu-id="0602d-171">eq</span></span>|
+|<span data-ttu-id="0602d-172">targetIdentity/id</span><span class="sxs-lookup"><span data-stu-id="0602d-172">targetIdentity/id</span></span>|<span data-ttu-id="0602d-173">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-173">eq, contains</span></span>|
+|<span data-ttu-id="0602d-174">sourceIdentity/displayName</span><span class="sxs-lookup"><span data-stu-id="0602d-174">sourceIdentity/displayName</span></span>|<span data-ttu-id="0602d-175">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-175">eq, contains</span></span>|
+|<span data-ttu-id="0602d-176">targetIdentity/displayName</span><span class="sxs-lookup"><span data-stu-id="0602d-176">targetIdentity/displayName</span></span>|<span data-ttu-id="0602d-177">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-177">eq, contains</span></span>|
+|<span data-ttu-id="0602d-178">initiatedBy/displayName</span><span class="sxs-lookup"><span data-stu-id="0602d-178">initiatedBy/displayName</span></span>|<span data-ttu-id="0602d-179">eq, contém</span><span class="sxs-lookup"><span data-stu-id="0602d-179">eq, contains</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="c9059-174">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c9059-174">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0602d-180">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0602d-180">Request headers</span></span>
 
-| <span data-ttu-id="c9059-175">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c9059-175">Header</span></span>        | <span data-ttu-id="c9059-176">Valor</span><span class="sxs-lookup"><span data-stu-id="c9059-176">Value</span></span>                      |
+| <span data-ttu-id="0602d-181">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="0602d-181">Header</span></span>        | <span data-ttu-id="0602d-182">Valor</span><span class="sxs-lookup"><span data-stu-id="0602d-182">Value</span></span>                      |
 |:--------------|:---------------------------|
-| <span data-ttu-id="c9059-177">Autorização</span><span class="sxs-lookup"><span data-stu-id="c9059-177">Authorization</span></span> | <span data-ttu-id="c9059-178">{token} do portador (obrigatório)</span><span class="sxs-lookup"><span data-stu-id="c9059-178">Bearer {token} (required)</span></span>  |
+| <span data-ttu-id="0602d-183">Autorização</span><span class="sxs-lookup"><span data-stu-id="0602d-183">Authorization</span></span> | <span data-ttu-id="0602d-184">{token} do portador (obrigatório)</span><span class="sxs-lookup"><span data-stu-id="0602d-184">Bearer {token} (required)</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c9059-179">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c9059-179">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0602d-185">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0602d-185">Request body</span></span>
 
-<span data-ttu-id="c9059-180">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c9059-180">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="0602d-186">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0602d-186">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c9059-181">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9059-181">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0602d-187">Resposta</span><span class="sxs-lookup"><span data-stu-id="0602d-187">Response</span></span>
 
-<span data-ttu-id="c9059-182">Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [provisioningObjectSummary](../resources/provisioningobjectsummary.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c9059-182">If successful, this method returns a `200 OK` response code and a collection of [provisioningObjectSummary](../resources/provisioningobjectsummary.md) objects in the response body.</span></span>
+<span data-ttu-id="0602d-188">Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [provisioningObjectSummary](../resources/provisioningobjectsummary.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0602d-188">If successful, this method returns a `200 OK` response code and a collection of [provisioningObjectSummary](../resources/provisioningobjectsummary.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c9059-183">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c9059-183">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="0602d-189">Exemplos</span><span class="sxs-lookup"><span data-stu-id="0602d-189">Examples</span></span>
 
-### <a name="example-1-successful-request"></a><span data-ttu-id="c9059-184">Exemplo 1: Solicitação bem-sucedida</span><span class="sxs-lookup"><span data-stu-id="c9059-184">Example 1: Successful request</span></span>
+### <a name="example-1-successful-request"></a><span data-ttu-id="0602d-190">Exemplo 1: Solicitação bem-sucedida</span><span class="sxs-lookup"><span data-stu-id="0602d-190">Example 1: Successful request</span></span>
 
-### <a name="request"></a><span data-ttu-id="c9059-185">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c9059-185">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0602d-191">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0602d-191">Request</span></span>
 
-<span data-ttu-id="c9059-186">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c9059-186">The following is an example of the request.</span></span>
+<span data-ttu-id="0602d-192">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0602d-192">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c9059-187">HTTP</span><span class="sxs-lookup"><span data-stu-id="c9059-187">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0602d-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="0602d-193">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary"
@@ -105,30 +108,30 @@ GET /auditLogs/provisioning
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
-# <a name="c"></a>[<span data-ttu-id="c9059-188">C#</span><span class="sxs-lookup"><span data-stu-id="c9059-188">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0602d-194">C#</span><span class="sxs-lookup"><span data-stu-id="0602d-194">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c9059-189">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c9059-189">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0602d-195">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0602d-195">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c9059-190">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c9059-190">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0602d-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0602d-196">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c9059-191">Java</span><span class="sxs-lookup"><span data-stu-id="c9059-191">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="0602d-197">Java</span><span class="sxs-lookup"><span data-stu-id="0602d-197">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="c9059-192">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9059-192">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0602d-198">Resposta</span><span class="sxs-lookup"><span data-stu-id="0602d-198">Response</span></span>
 
-<span data-ttu-id="c9059-193">A seguir, um exemplo da resposta para um evento bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="c9059-193">The following is an example of the response for a successful event.</span></span>
+<span data-ttu-id="0602d-199">A seguir, um exemplo da resposta para um evento bem-sucedido.</span><span class="sxs-lookup"><span data-stu-id="0602d-199">The following is an example of the response for a successful event.</span></span>
 
-><span data-ttu-id="c9059-194">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c9059-194">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="0602d-200">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="0602d-200">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -152,10 +155,15 @@ Content-type: application/json
             "jobId": "aws.74beb1753b704b63b8d56f0b76082b16.10a7a801-7101-4c69-ae00-ce9f75f8460a",
             "cycleId": "b6502552-018d-79bd-8869-j47194dc65c1",
             "changeId": "b6502552-018d-89bd-9969-b49194dc65c1",
-            "action": "EntryExportUpdate",
+            "action": "Create",
+            "provisioningAction": "create",
             "durationInMilliseconds": 3236,
             "statusInfo": {
                 "status": "success"
+            },
+            "provisioningStatusInfo": {
+                "status": "success",
+                "errorInformation" : null
             },
             "provisioningSteps": [
                 {
@@ -221,7 +229,7 @@ Content-type: application/json
                 }
             },
             "initiatedBy": {
-                "initiatingType": "System",
+                "initiatingType": "system",
                 "id": "",
                 "displayName": "Azure AD Provisioning Service"
             },
@@ -242,13 +250,13 @@ Content-type: application/json
 }
 
 ```
-### <a name="example-2-error-reponse"></a><span data-ttu-id="c9059-195">Exemplo 2: Reponse de erro</span><span class="sxs-lookup"><span data-stu-id="c9059-195">Example 2: Error reponse</span></span>
+### <a name="example-2-error-reponse"></a><span data-ttu-id="0602d-201">Exemplo 2: Reponse de erro</span><span class="sxs-lookup"><span data-stu-id="0602d-201">Example 2: Error reponse</span></span>
 
-### <a name="request"></a><span data-ttu-id="c9059-196">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c9059-196">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0602d-202">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0602d-202">Request</span></span>
 
-<span data-ttu-id="c9059-197">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c9059-197">The following is an example of the request.</span></span>
+<span data-ttu-id="0602d-203">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0602d-203">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c9059-198">HTTP</span><span class="sxs-lookup"><span data-stu-id="c9059-198">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0602d-204">HTTP</span><span class="sxs-lookup"><span data-stu-id="0602d-204">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary_error"
@@ -257,30 +265,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
-# <a name="c"></a>[<span data-ttu-id="c9059-199">C#</span><span class="sxs-lookup"><span data-stu-id="c9059-199">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0602d-205">C#</span><span class="sxs-lookup"><span data-stu-id="0602d-205">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-error-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c9059-200">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c9059-200">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0602d-206">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0602d-206">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-error-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c9059-201">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c9059-201">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0602d-207">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0602d-207">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-error-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c9059-202">Java</span><span class="sxs-lookup"><span data-stu-id="c9059-202">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="0602d-208">Java</span><span class="sxs-lookup"><span data-stu-id="0602d-208">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-error-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="c9059-203">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9059-203">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0602d-209">Resposta</span><span class="sxs-lookup"><span data-stu-id="0602d-209">Response</span></span>
 
-<span data-ttu-id="c9059-204">A seguir, um exemplo da resposta para um evento de provisionamento com falha.</span><span class="sxs-lookup"><span data-stu-id="c9059-204">The following is an example of the response for a failed provisioning event.</span></span>
+<span data-ttu-id="0602d-210">A seguir, um exemplo da resposta para um evento de provisionamento com falha.</span><span class="sxs-lookup"><span data-stu-id="0602d-210">The following is an example of the response for a failed provisioning event.</span></span>
 
-><span data-ttu-id="c9059-205">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c9059-205">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="0602d-211">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="0602d-211">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -346,8 +354,18 @@ Content-type: application/json
                 "errorCode": "ContosoEntryConflict",
                 "reason": "Message: Contoso returned an error response with the HTTP status code 409.  This response indicates that a user or a group already exisits with the same name. This can be avoided by identifying and removing the conflicting user from Contoso via the Contoso administrative user interface, or removing the current user from the scope of provisioning either by removing their assignment to the Contoso application in Azure Active Directory or adding a scoping filter to exclude the user.",
                 "additionalDetails": null,
-                "errorCategory": "NonServiceFailure",
+                "errorCategory": "nonServiceFailure",
                 "recommendedAction": null
+            },
+            "provisioningStatusInfo": {                
+                "status": "failure",
+                "errorInformation" : {
+                    "errorCode": "ContosoEntryConflict",
+                    "reason": "Message: Contoso returned an error response with the HTTP status code 409.  This response indicates that a user or a group already exisits with the same name. This can be avoided by identifying and removing the conflicting user from Contoso via the Contoso administrative user interface, or removing the current user from the scope of provisioning either by removing their assignment to the Contoso application in Azure Active Directory or adding a scoping filter to exclude the user.",
+                    "additionalDetails": null,
+                    "errorCategory": "nonServiceFailure",
+                    "recommendedAction": null
+                }
             },
             "provisioningSteps": [
                 {
