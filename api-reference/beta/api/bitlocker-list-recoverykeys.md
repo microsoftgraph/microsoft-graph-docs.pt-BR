@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a51ffa28290b51539dd8ccbcc95c71917b15db0d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7e4fbd5a2a4c1b76ca985cb17e5c6799cb4f41c5
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944335"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240970"
 ---
 # <a name="list-recoverykeys"></a>Listar recoveryKeys
 Namespace: microsoft.graph
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|BitLocker.ReadBasic.All, BitLocker.Read.All|
+|Delegada (conta corporativa ou de estudante)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
->**Observação**: para permissões delegadas permitirem que os aplicativos recebam recursos do BitLockerRecoveryKey em nome do usuário conectado, o administrador de locatários deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual a chave de recuperação do BitLocker foi originalmente respaldada: 
+>**Observação**: para permissões delegadas permitirem que os aplicativos recebam recursos do BitLockerRecoveryKey em nome do usuário conectado, o administrador de locatários deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual BitLocker chave de recuperação foi originalmente backup: 
 * Administrador global
 * Administrador de dispositivos de nuvem
 * Administrador da assistência técnica
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 * Leitor global
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para obter uma lista de chaves do BitLocker no locatário:
+Para obter uma lista de BitLocker chaves dentro do locatário:
 
 <!-- {
   "blockType": "ignored"
@@ -50,7 +50,7 @@ Para obter uma lista de chaves do BitLocker no locatário:
 GET /informationProtection/bitlocker/recoveryKeys
 ```
 
-Para obter uma lista de chaves do BitLocker dentro do locatário filtrada pela **id do dispositivo**:
+Para obter uma lista de BitLocker chaves dentro do locatário filtrada pela **id do dispositivo**:
 
 <!-- {
   "blockType": "ignored"
@@ -82,7 +82,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1"></a>Exemplo 1
-Recupere uma lista de chaves do BitLocker no locatário.
+Recupere uma lista de BitLocker chaves no locatário.
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -152,7 +152,7 @@ Content-Type: application/json
 }
 ```
 ### <a name="example-2"></a>Exemplo 2
-Recuperar uma lista de chaves BitLocker filtradas por **id de dispositivo.**
+Recuperar uma lista de chaves BitLocker filtradas por **id do dispositivo.**
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

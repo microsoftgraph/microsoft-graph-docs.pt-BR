@@ -2,15 +2,15 @@
 title: Tipo de recurso organizationalBrandingProperties
 description: Contém detalhes da identidade visual da organização.
 localization_priority: Normal
-author: kexia
+author: almars
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: e27966381c5838ac7662b977c5061a46bb660f1c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f68c33e7a3cf81e5d3debedcd6162ec59ddcce03
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442912"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266819"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>Tipo de recurso organizationalBrandingProperties
 
@@ -27,26 +27,26 @@ As empresas podem adicionar identidade visual diferente com base na localidade. 
 
 >**Observação:** A identidade visual é exposta como uma propriedade sob organização com uma coleção de localizações específicas da localidade. **organizationalBrandingProperties** é uma classe abstrata que define propriedades para **organizationalBranding**.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Criar](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Criar identidade visual organizacional com o objeto organizationalBrandingProperties. |
 | [Get](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Leia propriedades e relações do objeto organizationalBrandingProperties. |
 | [Atualização](../api/organizationalbrandingproperties-update.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Atualizar o objeto organizationalBrandingProperties. |
-| [Delete](../api/organizationalbrandingproperties-delete.md) | Nenhum(a) | Exclua o objeto organizationalBrandingProperties. |
+| [Delete](../api/organizationalbrandingproperties-delete.md) | Nenhum | Exclua o objeto organizationalBrandingProperties. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|backgroundColor|String| Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. A cor primária do logotipo da faixa ou da cor da sua organização é recomendada para ser usada aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF). |
-|backgroundImage|Stream| Imagem que aparece como o plano de fundo da página de logom. .png ou .jpg não maior que 1920x1080 e menor que 300kb. Uma imagem menor reduzirá os requisitos de largura de banda e tornará as cargas de página mais performant. |
-|bannerLogo|Stream| Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. .png ou .jpg não maior que 36x245px. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo. |
-|id|String| Esta é uma id, herdada de microsoft.graph.entity, é a localidade que especifica o padrão ISO 639 para idioma, por exemplo, inglês é "en-us" ou "en". Daqui para frente, se expormos a funcionalidade para ter várias marcas para uma localidade, isso poderá ser alterado. Observe que id para Padrão /identidade visual é sempre 'und' até termos singletons sem teclas. Somente leitura. |
-|signInPageText|String| Texto que aparece na parte inferior da caixa de login. Você pode usar isso para comunicar informações adicionais, como o número de telefone para o seu help desk ou uma declaração legal. Este texto deve ser Unicode e não exceder 1024 caracteres. |
-|squareLogo|Stream| Versão quadrada do logotipo da sua empresa. Isso aparece nas experiências OOBE (windows 10 out-of-box) e quando o Windows Autopilot está habilitado para implantação. .png ou .jpg não maior do que 240x240px e no máximo 10kb de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo. |
-|usernameHintText|String| Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres. |
+|backgroundColor|Cadeia de caracteres| Cor que aparecerá no lugar da imagem de plano de fundo em conexões de baixa largura de banda. A cor primária do logotipo da faixa ou da cor da sua organização é recomendada para ser usada aqui. Especifique isso em hexadecimal (por exemplo, branco é #FFFFFF). |
+|backgroundImage|Stream| Imagem que aparece como o plano de fundo da página de logom. .png ou .jpg maior que 1920x1080 e menor que 300kb. Uma imagem menor reduzirá os requisitos de largura de banda e tornará as cargas de página mais performant. |
+|bannerLogo|Stream| Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. .png ou .jpg maior que 36x245px. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo. |
+|id|Cadeia de caracteres| Esta é uma id, herdada de microsoft.graph.entity, é a localidade que especifica o padrão ISO 639 para idioma, por exemplo, inglês é "en-us" ou "en". Daqui para frente, se expormos a funcionalidade para ter várias marcas para uma localidade, isso poderá ser alterado. Observe que id para Padrão /identidade visual é sempre 'und' até termos singletons sem teclas. Somente leitura. |
+|signInPageText|Cadeia de caracteres| Texto que aparece na parte inferior da caixa de login. Você pode usar isso para comunicar informações adicionais, como o número de telefone para o seu help desk ou uma declaração legal. Este texto deve ser Unicode e não exceder 1024 caracteres. |
+|squareLogo|Stream| Versão quadrada do logotipo da sua empresa. Isso aparece nas experiências OOBE (windows 10 out-of-box) e quando o Windows Autopilot está habilitado para implantação. .png ou .jpg maior que 240x240px e não mais de 10kb de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo. |
+|usernameHintText|Cadeia de caracteres| Cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser Unicode, sem links ou código, e não pode exceder 64 caracteres. |
 
 ## <a name="relationships"></a>Relações
 

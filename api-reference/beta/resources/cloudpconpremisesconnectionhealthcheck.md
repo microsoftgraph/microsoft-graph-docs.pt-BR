@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 32b57750400e1fb71dc8cc173b364fba76cd36ec
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 576319abab0894530f363059cb2f07d787f80c7c
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50033978"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266826"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnectionHealthCheck
 
@@ -26,40 +26,42 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|Nenhum|Execute as verificações de saúde de [uma cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
+|[RunHealthChecks de cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|Nenhum|Execute as verificações de saúde de [um cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição deste item de verificação de saúde.|
+|displayName|Cadeia de caracteres|O nome de exibição desse item de verificação de saúde.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|O status do item de verificação de saúde. Os valores possíveis são: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Somente leitura.|
 |startDateTime|DateTimeOffset|A hora de início do item de verificação de saúde. Somente leitura.|
 |endDateTime|DateTimeOffset|A hora de término do item de verificação de saúde. Somente leitura.|
-|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|O tipo de erro que ocorreu durante a verificação de saúde.|
+|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|O tipo de erro que ocorreu durante essa verificação de saúde.|
 |recommendedAction|Cadeia de caracteres|A ação recomendada para corrigir o erro correspondente.|
 |additionalDetails|Cadeia de caracteres|Detalhes adicionais sobre a verificação de saúde ou a ação recomendada.|
 
-### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>Valores de cloudPcOnPremisesConnectionHealthCheckErrorType
+### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>valores cloudPcOnPremisesConnectionHealthCheckErrorType
 
 |Member|Descrição|
 |:---|:---|
-|dnsCheckFqdnNotFound|A verificação de DNS falhou porque o nome de domínio totalmente qualificado não foi encontrado. Insira o nome de domínio totalmente qualificado.|
-|dnsCheckUnknownError|A verificação de DNS falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
+|dnsCheckFqdnNotFound|A verificação DNS falhou porque o nome de domínio totalmente qualificado não foi encontrado. Insira o nome de domínio totalmente qualificado.|
+|dnsCheckUnknownError|A verificação DNS falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
 |adJoinCheckFqdnNotFound|A verificação de junção de domínio ativo falhou porque o nome de domínio totalmente qualificado não foi encontrado. Insira o nome de domínio totalmente qualificado.|
-|adJoinCheckIncorrectCredentials|A verificação de participação no domínio ativo falhou porque as credenciais do domínio estão incorretas. Atualize o nome de usuário e a senha.|
-|adJoinCheckOrganizationalUnitNotFound|A verificação de junção de domínio ativo falhou porque a unidade organizacional especificada não foi encontrada. Insira a unidade da organização.|
-|adJoinCheckOrganizationalUnitIncorrectFormat|A verificação de junção de domínio ativo falhou ao usar o formato da unidade organizacional especificada está incorreto. Formato de exemplo: "OU=OU1,OU=OU2,OU=OU3,DC=DC1".|
+|adJoinCheckIncorrectCredentials|A verificação de junção de domínio ativo falhou porque as credenciais de domínio estão incorretas. Atualize o nome de usuário e a senha.|
+|adJoinCheckOrganizationalUnitNotFound|A verificação de junção de domínio ativo falhou porque a unidade organizacional especificada não foi encontrada. Insira a unidade de organização de nova.|
+|adJoinCheckOrganizationalUnitIncorrectFormat|A verificação de junção de domínio ativo falhou ao usar o formato da unidade organizacional especificada está incorreta. Formato de exemplo: "OU=OU1,OU=OU2,OU=OU3,DC=DC1".|
+|adJoinCheckAccessDenied|A verificação de junção de domínio ativo falhou porque o acesso é negado quando usuários não administradores que foram delegados tentam ingressar objetos de computador em um controlador de domínio. Atribua a permissão correta ao cliente para ingressar no objeto do computador no domínio. Permissões necessárias: Criar objetos de computador, Excluir objetos do computador.|
 |adJoinCheckUnknownError|A verificação de junção de domínio ativo falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
-|endpointConnectivityCheckUrlNotWhitelisted|A verificação de conectividade do ponto de extremidade falhou porque as URLs não estão na lista de autorização nas configurações de firewall da rede. Adicione as URLs à lista de autorizações para as configurações de firewall de rede. Consulte [a lista de URLs necessárias](/azure/virtual-desktop/safe-url-list) para obter informações de URL.|
+|endpointConnectivityCheckUrlNotWhitelisted|A verificação de conectividade do ponto de extremidade falhou porque as URLs não estão na lista de permitir nas configurações de firewall de rede. Adicione as URLs à lista de autorizações para as configurações de firewall de rede. Consulte [a lista de URL necessárias para](/azure/virtual-desktop/safe-url-list) obter informações de URL.|
 |endpointConnectivityCheckUnknownError|A verificação de conectividade do ponto de extremidade falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
 |aadConnectivityCheckUnknownError|A verificação de conectividade do Azure Active Directory falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
 |resourceAvailabilityCheckNoSubnetIP|A verificação de disponibilidade do recurso falhou porque não havia endereços IP disponíveis na sub-rede. Free up some or change to another subnet and retry.|
-|resourceAvailabilityCheckSubscriptionDisabled|A verificação de disponibilidade do recurso falhou devido a uma assinatura desabilitada do Azure. Habilita a assinatura.|
+|resourceAvailabilityCheckSubscriptionDisabled|A verificação de disponibilidade do recurso falhou devido a uma assinatura desabilitada do Azure. Reabilitar a assinatura.|
+|resourceAvailabilityCheckUnsupportedVNetRegion|O vNet selecionado não está em uma região do Azure com suporte.|
 |resourceAvailabilityCheckUnknownError|A verificação de disponibilidade do recurso falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
 |permissionCheckNoSubscriptionReaderRole|A entidade de serviço de computador na nuvem não tem permissões de leitor na assinatura especificada do Azure. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de leitor na assinatura do Azure para a entidade de serviço do Cloud PC.|
-|permissionCheckNoResourceGroupOwnerRole|A entidade de serviço do cloud PC não tem permissões de proprietário no grupo de recursos especificado. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de proprietário ao grupo de recursos para a entidade de serviço do Cloud PC.|
-|permissionCheckNoVNetContributorRole|A entidade de serviço do cloud PC não tem permissões de colaborador de rede na rede virtual especificada. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de colaborador de rede para a entidade de serviço do Cloud PC. |
+|permissionCheckNoResourceGroupOwnerRole|A entidade de serviço do computador na nuvem não tem permissões de proprietário no grupo de recursos especificado. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de proprietário no grupo de recursos para a entidade de serviço do Cloud PC.|
+|permissionCheckNoVNetContributorRole|A entidade de serviço de computador na nuvem não tem permissões de colaborador de rede na rede virtual especificada. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de colaborador de rede para a entidade de serviço do Cloud PC. |
 |permissionCheckUnknownError|A verificação de permissão falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
 |internalServerUnknownError|A verificação de saúde falhou devido a um erro de servidor interno desconhecido. Entre em contato com o suporte ao cliente.|
 

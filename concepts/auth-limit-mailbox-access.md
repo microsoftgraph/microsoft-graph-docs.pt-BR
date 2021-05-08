@@ -4,12 +4,12 @@ description: Para definir o escopo das permissões de aplicativo de um aplicativ
 author: abheek-das
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: 56b05834f85c0b4a3f4480855cd0bffc8415b628
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f31f7bfc8ff72c8f3cb9e6f61185187f50bab7fc
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760739"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266833"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>Permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online 
 
@@ -43,7 +43,7 @@ Para configurar uma política de acesso a aplicativos e limitar o escopo das per
     ```
     A saída desse comando indicará se o aplicativo tem acesso à caixa de correio do Usuário 1.
 
-Observação: as alterações nas políticas de acesso a aplicativos podem levar até 30 minutos para entrar em vigor nas chamadas da API REST do Microsoft Graph.
+>**Observação: as alterações nas políticas de acesso ao aplicativo podem levar até 30 minutos para entrar em vigor nas chamadas da API REST do Microsoft Graph.**
 
 ## <a name="supported-permissions-and-additional-resources"></a>Permissões compatíveis e recursos adicionais
 Os administradores podem usar os cmdlets ApplicationAccessPolicy para controlar o acesso à caixa de correio de um aplicativo que tenha recebido as seguintes permissões de aplicativo: 

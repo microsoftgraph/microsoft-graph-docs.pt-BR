@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: bf4654f096065538449723d076e0b712ee4cdbf5
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 114c877ddcf75bb483eda039ef9c5d77d02d74f5
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231487"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266875"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -107,7 +107,7 @@ Segue a resposta de JSON:
 | _AccessReview.Read.All_ |   Ler todas as revisões de acesso  | Permite que o aplicativo leia as revisões de acesso em nome do usuário conectado. | Sim | Não |
 | _AccessReview.ReadWrite.All_ |   Gerenciar todas as revisões de acesso  | Permite que o aplicativo leia e grave revisões de acesso em nome do usuário conectado. | Sim | Não |
 | _AccessReview.ReadWrite.Membership_ |   Gerenciar revisões de acesso para participações em grupo e aplicativos | Permite que o aplicativo leia e grave revisões de acesso de grupos e aplicativos em nome do usuário conectado. | Sim | Não |
-| _Policy.ReadWrite.AccessReviews_ |   Gerenciar todas as políticas de análise de acesso  | Permite que o aplicativo leia e grave para acessar as políticas de análise em nome do usuário conectado. | Sim | Não |
+
 
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -116,12 +116,11 @@ Segue a resposta de JSON:
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _AccessReview.Read.All_ |   Ler todas as revisões de acesso | Permite que o aplicativo leia revisões de acesso sem um usuário conectado. | Sim |
 | _AccessReview.ReadWrite.Membership_ | Gerenciar revisões de acesso para participações em grupo e aplicativos | Permite que o aplicativo gerencie o acesso a revisões de aplicativos e grupos sem um usuário conectado. | Sim |
-| _Policy.ReadWrite.AccessReviews_ |   Gerenciar todas as políticas de análise de acesso  | Permite que o aplicativo leia e grave políticas de análise de acesso sem um usuário conectado. | Sim |
 
 
 ### <a name="remarks"></a>Comentários
 
-_AccessReview.Read.All_, _AccessReview.ReadWrite.All_, _AccessReview.ReadWrite.Membership_, _Policy.ReadWrite.AccessReviews_ são válidos apenas para contas corporativas ou estudante.
+_AccessReview.Read.All_, _AccessReview.ReadWrite.All_, _AccessReview.ReadWrite.Membership_ são válidos apenas para contas corporativas ou de estudante.
 
 Para um aplicativo com permissões delegadas para ler as revisões de acesso de um grupo ou aplicativo, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança, Leitor de Segurança ou Administrador de Usuários. Para um aplicativo com permissões delegadas para gravar revisões de acesso de um grupo ou aplicativo, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global ou Administrador de Usuários.
 
@@ -1502,6 +1501,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Policy.Read.All_ | Ler as políticas da sua organização | Permite ao aplicativo ler as políticas da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.Read.PermissionGrant_ | Ler políticas de concessão de consentimento e permissão | Permite que o aplicativo leia políticas relacionadas a concessões de consentimento e permissão para aplicativos, em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.AccessReview_ |   Ler e gravar a política de autorização da sua organização  | Permite ao aplicativo ler e gravar a política de revisão de acesso da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave as políticas de fluxo de autenticação, em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
@@ -1519,6 +1519,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.Read.All_ | Leia as políticas da sua organização | Permite que o aplicativo leia todas as políticas da sua organização sem um usuário conectado. | Sim |
 | _Policy.Read.PermissionGrant_ | Ler políticas de concessão de consentimento e permissão | Permite que o aplicativo leia políticas relacionadas a concessões de consentimento e permissão para aplicativos, sem um usuário conectado. | Sim |
 | _Policy.Read.ApplicationConfiguration_ | Leia as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia todas as políticas de configuração dos aplicativos da sua organização sem um usuário conectado. | Sim |
+| _Policy.ReadWrite.AccessReview_ | Ler e gravar a política de autorização da sua organização | Permite ao aplicativo ler e gravar a política de revisão de acesso da sua organização, sem um usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização, sem um usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave todas as políticas de fluxo de autenticação do locatário, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
@@ -1535,6 +1536,7 @@ Os seguintes usos são válidos para permissões delegadas e permissões de apli
 * _Policy.Read.All_: Ler as políticas da sua organização (`GET /policies`)
 * _Policy.Read.All_: Ler as políticas da estrutura de confiança da sua organização (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_: Ler as políticas de distribuição de recursos da sua organização (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.AccessReview_: Ler e gravar as políticas de revisão de acesso da sua organização (`PATCH /beta/policies/accessReviewPolicy`)
 * _Policy.ReadWrite.ApplicationConfiguration_: Leia e grave as políticas de configuração dos aplicativos da sua organização (`POST /beta/policies/tokenLifetimePolicies`)
 * _Policy.ReadWrite.AuthenticationFlows_: Ler e gravar a política de fluxos de autenticação da sua organização (`PATCH /beta/policies/authenticationFlowsPolicy`)
 * _Policy.ReadWrite.ConditionalAccess_: Leia e escreva as políticas de acesso condicional da sua organização (`POST /beta/identity/conditionalAccess/policies`)

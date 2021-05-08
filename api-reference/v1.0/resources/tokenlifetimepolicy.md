@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso tokenLifetimePolicy
-description: Representa uma política que pode controlar o tempo de vida de um token de acesso emitido pelo Azure Active Directory.
+description: Representa uma política que pode controlar o tempo de vida de um token de acesso emitido por Azure Active Directory.
 localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b4d8d814278855e164fa00643b8f56ebc544a789
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d143faa87af81fbaae73973510bafe3fd3ee4fcb
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963355"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241041"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>Tipo de recurso tokenLifetimePolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 
 
-Representa uma política que pode controlar o tempo de vida de um token de acesso JWT, um token de ID ou um token SAML 1.1/2.0 emitido pelo Azure Active Directory (Azure AD). É possível definir tempos de vida do token para todos os aplicativos em sua organização, para um aplicativo multilocatário (organização múltipla) ou para uma entidade de serviço específica em sua organização.  Para obter mais detalhes do cenário, [consulte Tempo de vida útil do token configurável no Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
+Representa uma política que pode controlar o tempo de vida de um token de acesso JWT, um token de ID ou um token SAML 1.1/2.0 emitido pelo Azure Active Directory (Azure AD). É possível definir tempos de vida do token para todos os aplicativos em sua organização, para um aplicativo multilocatário (organização múltipla) ou para uma entidade de serviço específica em sua organização. 
 
 >**Observação:** Não há suporte para configurar essa política para Tokens de Atualização e Tokens de Sessão.
 

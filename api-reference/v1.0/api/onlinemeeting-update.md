@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8e6ba3e4d3a36b1d9d14ad4ab9528af98d22dbc8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6d239a98275b6ca8fb390ae646f67a82c2212c99
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055866"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241076"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -58,15 +58,16 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 A tabela abaixo lista as propriedades que podem ser atualizadas. No corpo da solicitação, inclua apenas as propriedades que precisam ser atualizadas, com as seguintes exceções:
 
 - Ajustar a data/hora inicial ou final de uma reunião online sempre requer as propriedades **startDateTime** e **endDateTime** no corpo da solicitação.
+- **o** campo organizador **da propriedade participante não** pode ser atualizado. O organizador da reunião não pode ser modificado depois que a reunião é criada.
 - Ajustar o **campo de** participantes  da propriedade participantes, como adicionar ou remover um participante à reunião, sempre requer a lista completa de participantes no corpo da solicitação.
 
 | Propriedade             | Tipo                                                         | Descrição                                                                                                                                    |
 |----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | startDateTime        | DateTime                                                     | O horário de início da reunião em UTC.                                                                                                                 |
 | endDateTime          | DateTime                                                     | A hora de término da reunião em UTC.                                                                                                                   |
-| assunto              | Cadeia de caracteres                                                       | O assunto da reunião online.                                                                                                             |
-| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Os participantes associados à reunião online. Isso inclui o organizador e os participantes.                                            |
-| isEntryExitAnnounced | Boolean                                                      | Se os chamadores ingressarão ou sairão.                                                                                         |
+| Assunto              | Cadeia de caracteres                                                       | O assunto da reunião online.                                                                                                             |
+| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Os participantes associados à reunião online. Somente participantes podem ser atualizados.                                            |
+| isEntryExitAnnounced | Booliano                                                      | Se os chamadores ingressarão ou sairão.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Especifica quais participantes podem ignorar o lobby da reunião.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis são todos, organização, roleIsPresenter, organizador e unknownFutureValue. |
 

@@ -1,30 +1,30 @@
 ---
-title: Componente seletor de canal do Microsoft Teams no Microsoft Graph Toolkit
-description: Você pode usar o Requery-Teams-Channel-Picker para pesquisar canais e equipes associados ao usuário do Microsoft Graph.
+title: Componente do Seletor de Canal do Microsoft Teams no microsoft graph Toolkit
+description: Você pode usar o mgt-teams-channel-picker para pesquisar canais e equipes associadas ao usuário no Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: c0b6e818f0c9c30314b5342fcfb6ef44978ec830
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 086ce7085f1802e40195fca9f54f2af460291fda
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660005"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266791"
 ---
-# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Componente seletor de canal do Microsoft Teams no Microsoft Graph Toolkit
+# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Componente do Seletor de Canal do Microsoft Teams no microsoft graph Toolkit
 
-A você pode usar o `mgt-teams-channel-picker` componente para habilitar pesquisas para os canais do Microsoft Teams associados a um usuário. O componente pode pesquisar todas as equipes que o usuário ingressou e cada canal dessas equipes. 
+Você pode usar o `mgt-teams-channel-picker` componente para habilitar pesquisas para canais do Microsoft Teams associados a um usuário. O componente pode pesquisar todas as equipes que o usuário ingressou e cada canal nessas equipes. 
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra o `mgt-teams-channel-picker` componente. Comece a pesquisar um canal ou uma equipe para ver os resultados renderizar.
+O exemplo a seguir mostra o `mgt-teams-channel-picker` componente. Comece a procurar um canal ou equipe para ver os resultados renderizar.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker--teams-channel-picker&source=docs" height="450"></iframe>
 
-[Abra este exemplo em gerenciamento de. dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
+[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
 
-## <a name="getting-the-selected-channel"></a>Obtendo o canal selecionado
+## <a name="getting-the-selected-channel"></a>Obter o canal selecionado
 
-Use a `selectedItem` propriedade para recuperar o canal e a equipe pai atualmente selecionados. Esse valor será NULL se nenhum canal tiver sido selecionado. `selectedItem` contém duas propriedades: `channel` ([MicrosoftGraph. Channel](/graph/api/resources/channel)) e `team` ([MicrosoftGraph. Team](/graph/api/resources/team)).
+Use a propriedade para recuperar o canal selecionado no momento `selectedItem` e a equipe pai. Esse valor será nulo se nenhum canal tiver sido selecionado. `selectedItem` contém duas propriedades: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel)) e `team` ([MicrosoftGraph.Team](/graph/api/resources/team)).
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -34,9 +34,9 @@ console.log(channelPicker.selectedItem.team);
 
 ## <a name="selecting-a-channel"></a>Selecionar um canal
 
-Use o `selectChannelById(channelId: string)` método para selecionar um canal de forma programática.
+Use o `selectChannelById(channelId: string)` método para selecionar programaticamente um canal.
 
-> **Observação:** o seletor de canal do teams suporta apenas a seleção de canal único.
+> **Observação: o** seletor de canal do Teams só dá suporte à seleção de canal único.
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -47,9 +47,9 @@ channelPicker.selectChannelById(channelId);
 > **Observação:** O canal fornecido (e a ID subsequente) deve pertencer a uma equipe que o usuário autenticado ingressou. 
 
 
-## <a name="css-custom-properties"></a>Propriedades personalizadas de CSS
+## <a name="css-custom-properties"></a>Propriedades personalizadas CSS
 
-O `mgt-teams-channel-picker` componente define as seguintes propriedades personalizadas de CSS.
+O `mgt-teams-channel-picker` componente define as seguintes propriedades personalizadas CSS.
 
 ```css
 mgt-teams-channel-picker {
@@ -79,16 +79,16 @@ mgt-teams-channel-picker {
 ## <a name="events"></a>Eventos
 | Evento | Detalhe | Descrição |
 | --- | --- | --- |
-| selectionChanged | O detalhe contém o item atualmente selecionado de `{channel : ` [MicrosoftGraph. Channel](/graph/api/resources/channel) `, team: ` [MicrosoftGraph. Team](/graph/api/resources/team)`}` | Acionado quando o usuário faz uma alteração na seleção de um canal. |
+| selectionChanged | O detalhe contém o item selecionado no momento do `{channel : ` [MicrosoftGraph.Channel](/graph/api/resources/channel) `, team: ` [MicrosoftGraph.Team](/graph/api/resources/team)`}` | Acionado quando o usuário faz uma alteração na seleção de um canal. |
 
 ## <a name="templates"></a>Modelos
 
- `mgt-teams-channel-picker` o dá suporte a vários [modelos](../customize-components/templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
+ `mgt-teams-channel-picker` oferece suporte [a vários modelos](../customize-components/templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir o `<template>` valor como um dos `data-type` seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
-| carregando | nulo: não há dados | O modelo usado para renderizar o estado do seletor enquanto a solicitação para o Microsoft Graph está sendo feita. |
-| erro | nulo: não há dados| O modelo usado se a pesquisa de usuário não retornar nenhum usuário. |
+| loading | null: sem dados | O modelo usado para renderizar o estado do selador enquanto a solicitação ao Microsoft Graph está sendo feita. |
+| erro | null: sem dados| O modelo usado se a pesquisa do usuário não retornar usuários. |
 
 
 O exemplo a seguir mostra como usar o `error` modelo.
@@ -103,28 +103,32 @@ O exemplo a seguir mostra como usar o `error` modelo.
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-Este componente usa as seguintes APIs e permissões do Microsoft Graph.
+Esse componente usa as seguintes APIs e permissões do Microsoft Graph.
 
 | API                                                                                                              | Permissão  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
-| [/equipes/$ {ID}/Channels](/graph/api/channel-list) | Group.Read.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
 
 ## <a name="authentication"></a>Autenticação
 
 O controle usa o provedor de autenticação global descrito na [documentação de autenticação](../providers/providers.md).
 
-## <a name="extend-for-more-control"></a>Estender para mais controle
+## <a name="cache"></a>Cache
 
-Para cenários mais complexos ou uma UX verdadeiramente personalizada, esse componente expõe vários `protected render*` métodos de substituição nas extensões de componente:
+O `mgt-teams-channel-picker` componente não armazena dados em cache.
+
+## <a name="extend-for-more-control"></a>Estender para obter mais controle
+
+Para cenários mais complexos ou um UX realmente personalizado, esse componente expõe vários métodos para substituição `protected render*` em extensões de componentes:
 
 | Método | Descrição |
 | - | - |
-| renderSelected | Renderiza a equipe e canal selecionados na caixa de entrada. |
+| renderSelected | Renderiza a equipe e o canal selecionados na caixa de entrada. |
 | renderInput | Renderiza a caixa de entrada. |
 | renderDropdown | Renderiza o menu suspenso. |
 | renderDropdownList | Renderiza os itens no menu suspenso recursivamente. |
-| renderItem | Renderiza uma equipe ou um canal na lista suspensa. |
+| renderItem | Renderiza uma equipe ou um canal na lista de menus suspensos. |
 | renderHighlightedText | Renderiza o texto do canal, realçando a consulta de entrada. |
-| renderLoading | Renderiza o estado do menu suspenso de carregamento. |
-| renderError | Renderiza o estado de erro DropDown. |
+| renderLoading | Renderiza o estado suspenso de carregamento. |
+| renderError | Renderiza o estado de erro suspenso. |

@@ -3,12 +3,12 @@ title: People-Picker componente
 description: Você pode usar o componente web do se picker mgt-people para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 138c87a004838ae4f1f431e1f553d75ea3a57401
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 3531c32ae4f33898b11f7d92f91115aa1cbf43a3
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516658"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266812"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft graph Toolkit
 
@@ -146,6 +146,15 @@ Esse componente usa as seguintes APIs e permissões do Microsoft Graph.
 
 O controle usa o provedor de autenticação global descrito na [documentação de autenticação](../providers/providers.md).
 
+## <a name="cache"></a>Cache
+
+|Armazenamento de objetos|Dados armazenados em cache|Comentários|
+|---------|-----------|-------|
+|`groups`|Lista de grupos|Usado quando `type` está definido como `PersonType.group`|
+|`people`|Lista de pessoas|Usado quando `type` está definido como `PersonType.person` ou `PersonType.any`|
+|`users`|Lista de usuários|Usado quando `groupId` especificado|
+
+Consulte [Cache para](../customize-components/cache.md) obter mais detalhes sobre como configurar o cache.
 ## <a name="extend-for-more-control"></a>Estender para obter mais controle
 
 Para cenários mais complexos ou um UX realmente personalizado, esse componente expõe vários métodos para substituição `protected render*` em extensões de componentes.

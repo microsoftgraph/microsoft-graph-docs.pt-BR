@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d55f1889a8134196760b133827bee2ec8c82b20e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 503d165d1d7c1a997c9e39f728a833a0dc422d68
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944326"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241083"
 ---
 # <a name="get-bitlockerrecoverykey"></a>Obter bitlockerRecoveryKey
 Namespace: microsoft.graph
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|BitLocker.ReadBasic.All, BitLocker.Read.All|
+|Delegada (conta corporativa ou de estudante)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
->**Observação:** Para permissões delegadas permitirem que os aplicativos recebam recursos bitLockerRecoveryKey em nome do usuário conectado, o administrador de locatários deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual a chave BitLocker foi originalmente backup:  
+>**Observação:** Para permissões delegadas para permitir que os aplicativos recebam recursos bitLockerRecoveryKey em nome do usuário conectado, o administrador do  locatário deve ter atribuído ao usuário uma das seguintes funções ou o usuário deve ser o proprietário registrado do dispositivo do qual a chave BitLocker foi originalmente backup: 
 * Administrador global
 * Administrador de dispositivos de nuvem
 * Administrador da assistência técnica
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 * Leitor global
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para obter a chave BitLocker especificada sem retornar a **propriedade key:**
+Para obter a chave BitLocker chave especificada sem retornar a **propriedade key:**
 <!-- {
   "blockType": "ignored"
 }
@@ -49,7 +49,7 @@ Para obter a chave BitLocker especificada sem retornar a **propriedade key:**
 GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 ```
 
-Para obter a chave BitLocker especificada, incluindo sua **propriedade chave:**
+Para obter a chave BitLocker, incluindo sua **propriedade chave:**
 <!-- {
   "blockType": "ignored"
 }
@@ -78,7 +78,7 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1"></a>Exemplo 1
-Obter a chave BitLocker especificando a **id da chave**. Este exemplo não retorna a **propriedade key.**
+Obter a BitLocker tecla especificando a **id da chave**. Este exemplo não retorna a **propriedade key.**
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -141,7 +141,7 @@ Content-type: application/json
 ```
 
 ### <a name="example-2"></a>Exemplo 2
-Obter a chave BitLocker com a **propriedade key** especificando a **id da chave**.
+Obter a BitLocker chave com a propriedade **key** especificando a **id da chave**.
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

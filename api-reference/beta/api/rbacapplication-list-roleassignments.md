@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b267a347537b46a29fd2d74afc1161e026a84bcc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2877f9bca06eed962257e2c8c43c5f776d06ff76
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959054"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241139"
 ---
 # <a name="list-unifiedroleassignments"></a>Listar unifiedRoleAssignments
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,12 +35,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/directory/roleAssignments
+GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+## <a name="query-parameters"></a>Parâmetros de consulta
 
-Essa operação requer `$filter` o parâmetro de consulta. Você pode filtrar as `roleDefinitionId` propriedades `principalId` ou. A propriedade pode ser uma ID de objeto de função ou uma ID de objeto `roleDefinitionId` de modelo de função. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Essa operação requer `$filter` o parâmetro de consulta. Você pode filtrar as `roleDefinitionId` propriedades `principalId` ou. A propriedade pode ser uma ID de objeto de função ou uma ID de objeto `roleDefinitionId` de modelo de função. O `$expand` parâmetro de consulta também é suportado na entidade **principal**. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -58,7 +60,7 @@ Se tiver êxito, este método retornará um código de resposta e uma `200 OK` c
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-request-using-a-filter-on-role-definition-id"></a>Exemplo 1: Solicitar usando um filtro na ID de definição de função
+### <a name="example-1-request-using-filter-on-role-definition-id-and-expand-principal"></a>Exemplo 1: Solicitar usando $filter ID de definição de função e expandir principal
 
 #### <a name="request"></a>Solicitação
 

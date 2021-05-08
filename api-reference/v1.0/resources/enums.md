@@ -1,16 +1,16 @@
 ---
 title: Valores denum
-description: Valores de enumeração do Microsoft Graph.
+description: Valores Graph enumeração da Microsoft.
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: f2eeed42a528ea59a2edd1ac0d117bb82a3b2777
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: b6bffb41090b9c9beffd4e559256cb519870eeb2
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882233"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241153"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -501,15 +501,13 @@ Namespace: microsoft.graph
 | lightRed   | 8 
 | maxColor   | 9 
 
-
 ### <a name="educationexternalsource-values"></a>valores educationExternalSource
 
-| Member
-|:-------------------------
-| sis
-| Manual
-| unknownFutureValue
-
+| Member             |
+| :----------------- |
+| sis                |
+| Manual             |
+| unknownFutureValue |
 
 ### <a name="educationgender-values"></a>valores educationGender
 
@@ -549,12 +547,14 @@ Namespace: microsoft.graph
 | normal
 | high
 
-
 ### <a name="educationuserrole-values"></a>valores educationUserRole
-| Member
-|:---------------------
-| student
-| teacher
+
+| Member             |
+| :----------------- |
+| student            |
+| teacher            |
+| nenhuma               |
+| unknownFutureValue |
 
 ### <a name="meetingmessagetype-values"></a>valores meetingMessageType
 
@@ -677,7 +677,7 @@ Namespace: microsoft.graph
 |:-----------------
 |NotStarted
 |Em execução
-|Completed
+|Concluído
 |Falhou
 
 
@@ -722,7 +722,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| description
+| descrição
 | referência
 
 
@@ -843,7 +843,7 @@ Namespace: microsoft.graph
 | preset12 | 12 
 | preset13 | 13
 | preset14 | 14 
-| preset15 | 15 
+| preset15 | 15
 | preset16 | 16 
 | preset17 | 17 
 | preset18 | 18 
@@ -989,7 +989,7 @@ Valores possíveis para funções de email.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Função Desconhecida.|
-|sender|1|Remetente do email.|
+|remetente|1|Remetente do email.|
 |destinatário|2|Destinatário do email.|
 
 ### <a name="logontype-values"></a>valores logonType
@@ -1007,7 +1007,7 @@ Valores possíveis para o método de login do usuário.
 
 ### <a name="useraccountsecuritytype-values"></a>valores userAccountSecurityType
 
-Valores possíveis para tipos de conta de usuário (associação ao grupo), por definição do Windows.
+Valores possíveis para tipos de conta de usuário (associação ao grupo), por Windows definição.
 
 |Member|Member|Descrição|
 |:---|:---|:---|
@@ -1183,8 +1183,8 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
 | nenhuma                  | 0     | Ainda não sabemos.                       |
-| mailFlowRule          | 1     | Regra de transporte do Exchange.            |
-| safeSender            | 2     | Lista de remetentes seguros.                   |
+| mailFlowRule          | 1     | Exchange regra de transporte.            |
+| safeSender            | 2     | Cofre lista de remetentes.                   |
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4      | Opção avançada de filtragem de spam.     |
 | domainAllowList       | 5      | Lista de permitir domínio de remetente.           |
@@ -1197,7 +1197,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | outbound              | 12     | Email de saída.                      |
 | notJunk               | 13    | Permitir devido a não lixo eletrônico.              |
 | junk                  | 14     | Bloqueado devido a lixo eletrônico.                |
-| unknownFutureValue    | 15     | Um membro do sentinel.                  |
+| unknownFutureValue    | 15    | Um membro do sentinel.                  |
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>valores chatMessagePolicyViolationDlpActionType
 
@@ -1408,3 +1408,57 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | :-------- |
 | entityUrl |
 | texto      |
+
+
+### <a name="provisioningresult-values"></a>valores provisioningResult 
+
+|Member|
+|:---|
+|sucesso|
+|failure|
+|ignorado|
+|warning|
+|unknownFutureValue|
+
+### <a name="provisioningsteptype-values"></a>valores provisioningStepType 
+
+|Member|
+|:---|
+|import|
+|scoping|
+|matching|
+|processamento|
+|referenceResolution|
+|export|
+|unknownFutureValue|
+
+### <a name="provisioningstatuserrorcategory-values"></a>valores provisioningStatusErrorCategory 
+
+|Member|
+|:---|
+|failure|
+|nonServiceFailure|
+|sucesso|
+|unknownFutureValue|
+
+### <a name="provisioningaction-values"></a>Valores provisioningAction 
+
+|Member|
+|:---|
+|other|
+|create|
+|delete|
+|desabilitar|
+|update|
+|stagedDelete|
+|unknownFutureValue|
+
+
+### <a name="initiatortype-values"></a>valores de initiatorType 
+
+|Member|
+|:---|
+|usuário|
+|aplicação|
+|sistema|
+|unknownFutureValue|

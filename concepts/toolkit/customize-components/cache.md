@@ -1,26 +1,29 @@
 ---
-title: Cache do Microsoft Graph Toolkit
-description: Explicar como o cache funciona e como configurar as opções fornecidas aos desenvolvedores
+title: O Microsoft Graph Toolkit cache
+description: Explicando como o Cache funciona e como configurar as opções fornecidas aos desenvolvedores
 localization_priority: Normal
 author: adchau
-ms.openlocfilehash: f51b4f188fe8ec70f75a50e1d9de049459c97e14
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: cef5c06c39ebad58e6a39f094427dea6a1b1be25
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658702"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266617"
 ---
-# <a name="microsoft-graph-toolkit-caching"></a>Cache do Microsoft Graph Toolkit
+# <a name="microsoft-graph-toolkit-caching"></a>O Microsoft Graph Toolkit cache
 
-O Microsoft Graph Toolkit oferece suporte a cache de chamadas de API SELECT do Microsoft Graph. Atualmente, as chamadas para os pontos de extremidade de usuários, pessoas, contatos e fotos são armazenadas em cache por padrão em três repositórios do IndexedDB.
+O microsoft graph Toolkit suporta o cache de chamadas de API do Microsoft Graph selecionadas. As chamadas estão sendo armazenadas em cache por entidade, como pessoas, contato, foto. Isso permite que um componente recupere os dados e outros componentes para reutilizar sem chamar o Microsoft Graph.
 
-Você pode exibir o cache no painel de desenvolvedor. Na guia **aplicativo** , no painel **armazenamento** , vá para a guia **IndexedDB** .
+> [!TIP]
+> Para obter mais informações sobre quais entidades são armazenadas em cache por cada componente, consulte a documentação do componente.
+
+Bancos de dados criados pelo mgt para cache são prefixados com `mgt-` . Os dados de cada entidade são armazenados em um armazenamento de objetos separado. Para inspecionar o cache, use a guia Aplicativo no painel do  desenvolvedor (ferramentas F12) - na seção Armazenamento, clique na **guia IndexedDB.**  
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
 ## <a name="cache-configuration"></a>Configuração de cache
 
-Você pode ler e gravar as opções de cache por meio do objeto de classe estática `CacheService.config` . Ele é formatado como mostrado.
+Você pode ler e gravar as opções de cache por meio do objeto de classe `CacheService.config` estática. Ele é formatado conforme mostrado.
 
 ```TypeScript
 let config = {
@@ -46,22 +49,26 @@ let config = {
     invalidationPeriod: number,
     isEnabled: boolean
   },
+  response: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  }
 };
 ```
 
-Os períodos de invalidação de cache individual são padronizados para `null` o objeto config e o padrão é o `defaultInvalidationPeriod` valor geral 3,6 milhões ms (60 minutos). Qualquer valor passado para `config.x.invalidationPeriod` será substituído `defaultInvalidationPeriod` .
+Períodos de invalidação de cache individuais são padrão no objeto config e padrão para o valor geral de `null` `defaultInvalidationPeriod` 3.600.000 ms (60 minutos). Qualquer valor passado para `config.x.invalidationPeriod` substituirá `defaultInvalidationPeriod` .
 
-O repositório de presença é a única exceção e tem um valor padrão de 300000 MS ou 5 minutos.
+O armazenamento de presença é a única exceção e tem um valor padrão de 300000 ms ou 5 minutos.
 
 ### <a name="examples"></a>Exemplos
 
-Para desabilitar individualmente um repositório, basta definir o valor das `isEnabled` Propriedades de config da loja como false:
+Para desabilitar individualmente um armazenamento, basta definir o valor das propriedades de config desse armazenamento `isEnabled` como false:
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
 
 CacheService.config.users.isEnabled = false;
 ```
-Desabilitar o cache **não limpa o** cache.
+Desabilitar o cache **não limpa** o cache.
 
 Alterar o período de invalditation é semelhante:
 
@@ -71,11 +78,11 @@ import { CacheService } from '@microsoft/mgt';
 CacheService.config.users.invalidationPeriod = 1800000;
 ```
 
-## <a name="clearing-the-cache"></a>Limpando o cache
+## <a name="clearing-the-cache"></a>Limpar o cache
 
-O cache é automaticamente limpo quando o usuário se desconecta. Ela também pode ser limpa manualmente.
+O cache é automaticamente limpo quando o usuário sai. Ele também pode ser limpo manualmente.
 
-Limpar todas as lojas no cache, o `clearCaches()` método da `CacheService` classe limpará todos os repositórios mantidos pelo CacheService.
+Se limpar todos os armazenamentos no cache, o método da classe limpará todos os `clearCaches()` `CacheService` armazenamentos mantidos pelo CacheService.
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
@@ -83,16 +90,16 @@ import { CacheService } from '@microsoft/mgt';
 CacheService.clearCaches();
 ```
 
-## <a name="creating-your-own-cache-stores"></a>Criar seus próprios repositórios de cache
+## <a name="creating-your-own-cache-stores"></a>Criando seus próprios armazenamentos de cache
 
-Se você deseja criar e preencher seus próprios repositórios de cache para seus componentes personalizados, você pode usar a `CacheService` classe estática.
+Se você quiser criar e preencher seus próprios armazenamentos de cache para seus componentes personalizados, você pode usar a `CacheService` classe estática.
 
 ```JavaScript
 CacheService.getCache(schema: CacheSchema, storeName: String);
 ```
-> **Observação:** A `storeName` referência que você faz na chamada `getCache()` deve corresponder a uma das lojas listadas em seu `CacheSchema` objeto.
+> **Observação:** A `storeName` referência que você faz na chamada deve corresponder a um dos `getCache()` armazenamentos listados em seu `CacheSchema` objeto.
 
-O `CacheSchema` objeto é um dicionário com os pares chave/valor.
+O `CacheSchema` objeto é um dicionário com os pares de chave/valor.
 
 ```TypeScript
 import { CacheSchema } from '@microsoft/mgt';
@@ -107,7 +114,7 @@ const cacheSchema: CacheSchema = {
 };
 ```
 
-O exemplo a seguir mostra a implementação de cache.
+O exemplo a seguir mostra a implementação do cache.
 
 ```TypeScript
 import { CacheItem, CacheSchema, CacheService, CacheStore } from '@microsoft/mgt';

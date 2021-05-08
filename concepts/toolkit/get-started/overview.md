@@ -3,12 +3,12 @@ title: Iniciando o microsoft graph Toolkit
 description: Começar a usar o microsoft graph Toolkit em seu aplicativo.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 3197542066d92978bf151d61a378e7f392633016
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 15d3e4721ae43146496b1a54ec12bc7906bfda5b
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961419"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266868"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Iniciando o microsoft graph Toolkit
 
@@ -18,7 +18,7 @@ Você pode assistir a este vídeo curto para ver como é rápido e fácil começ
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
-Para obter um tutorial passo a passo, consulte o módulo Introdução ao [Microsot Graph Toolkit .](/learn/modules/msgraph-toolkit-intro/) 
+Para obter um tutorial passo a passo, consulte o [módulo Introdução ao Microsoft Graph Toolkit .](/learn/modules/msgraph-toolkit-intro/) 
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Configure o locatário do Microsoft 365.
 Para desenvolver com o Toolkit, você precisa acessar um locatário do Microsoft 365. Se você não tiver um, poderá obter uma assinatura gratuita de desenvolvedor do Microsoft 365 ins juntando-se ao Programa de Desenvolvedores do [Microsoft 365.](https://developer.microsoft.com/microsoft-365/dev-program) Para obter detalhes sobre como configurar sua assinatura, consulte Configurar uma assinatura de [desenvolvedor do Microsoft 365](/office/developer-program/microsoft-365-developer-program-get-started).

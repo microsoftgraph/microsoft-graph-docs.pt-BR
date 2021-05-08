@@ -3,12 +3,12 @@ title: Person-Card componente no microsoft graph Toolkit
 description: Um Person-Card é um componente para exibir mais informações relacionadas a uma pessoa.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 9acf9fd9c38128442d49d776f1f05646e2efe276
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 9c12c9e76f6c0b332a70bfbc429bc7b7845056cb
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722437"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266805"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card componente no microsoft graph Toolkit
 
@@ -155,7 +155,7 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 
 O Person-Card usa as seguintes APIs e permissões do Microsoft Graph.
 
-| Recurso | Permissão | Seção |
+| Recurso | Permissão | Section |
 | - | - | - |
 | [/me](/graph/api/user-get) | User.Read | Padrão |
 | [/me/photo/$value](/graph/api/profilephoto-get) | User.Read | Padrão |
@@ -183,3 +183,17 @@ const neededScopes = MgtPersonCard.getScopes();
 ## <a name="authentication"></a>Autenticação
 
 O Person-Card usa o provedor de autenticação global descrito na [documentação de autenticação](../providers/providers.md). 
+
+## <a name="cache"></a>Cache
+
+> [!IMPORTANT]
+> O `mgt-person-card` componente recupera os dados básicos da pessoa do componente pai sem chamar o Microsoft `mgt-person` Graph. Quando `mgt-person-card` for usado separadamente, ele recuperará os dados necessários em si e os armazenará em cache. Os dados exibidos nas seções do cartão são recuperados separadamente e não são armazenados em cache.
+
+|Armazenamento de objetos|Dados armazenados em cache|Comentários|
+|---------|-----------|-------|
+|`people`|Informações da pessoa|Usado quando `personQuery` especificado e seu valor é diferente do `me`|
+|`photos`|Foto da pessoa|
+|`presence`|Presença da pessoa|Usado, quando `showPresence` está definido como `true`|
+|`users`|Informações do usuário da pessoa|Usado quando `userId` especificado ou `personQuery` definido como `me`|
+
+Consulte [Cache para](../customize-components/cache.md) obter mais detalhes sobre como configurar o cache.

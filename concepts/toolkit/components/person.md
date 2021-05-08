@@ -3,12 +3,12 @@ title: Componente person no microsoft graph Toolkit
 description: O componente de pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 9ac8eebfaa4d95ccd935414329ab1dd145839dd2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 5250919404ecccea1f01042d93aaf2b9fa4fc3b3
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475055"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266840"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente person no microsoft graph Toolkit
 
@@ -124,8 +124,8 @@ O `mgt-person` componente dá suporte a vários [modelos](../customize-component
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --------- | ------------ | ----------- |
-| loading | nenhum | O modelo a ser render enquanto o componente está em um estado de carregamento. |
-| no-data | nenhum | O modelo a ser renderizar quando nenhuma imagem ou dados de pessoa estiver disponível. | 
+| loading | nenhuma | O modelo a ser render enquanto o componente está em um estado de carregamento. |
+| no-data | nenhuma | O modelo a ser renderizar quando nenhuma imagem ou dados de pessoa estiver disponível. | 
 | Padrão. | pessoa: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo padrão substitui todo o componente por seu próprio. |
 | person-card | pessoa: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo para atualizar o mgt-person-card exibido em foco ou clique. |
 | line1 | pessoa: o objeto de detalhes da pessoa | O modelo para a primeira linha de metadados de pessoa. |
@@ -218,6 +218,16 @@ Esse controle usa as seguintes APIs e permissões do Microsoft Graph.
 ## <a name="authentication"></a>Autenticação
 
 O controle usa o provedor de autenticação global descrito na [documentação de autenticação](../providers/providers.md) para buscar os dados necessários.
+
+## <a name="cache"></a>Cache
+
+|Armazenamento de objetos|Dados armazenados em cache|Comentários|
+|---------|-----------|-------|
+|`photos`|Foto da pessoa|Usado, quando `avatarType` é definido como e é definido `photo` `fetchImage` como `true`|
+|`presence`|Presença da pessoa|Usado, quando `showPresence` está definido como `true`|
+|`users`|Informações do usuário da pessoa|
+
+Consulte [Cache para](../customize-components/cache.md) obter mais detalhes sobre como configurar o cache.
 
 ## <a name="extend-for-more-control"></a>Estender para obter mais controle
 

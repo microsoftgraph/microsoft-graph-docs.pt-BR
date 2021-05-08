@@ -5,16 +5,18 @@ author: linkhp
 localization_priority: Priority
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3e0ad7345b7017ec543bb4813b62edb71fb77f21
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6bd6d397cd9e4a979db6d74c20d907a1217f8ee0
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438509"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266770"
 ---
 # <a name="update-authenticationflowspolicy"></a>Atualizar authenticationFlowsPolicy
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize a propriedade booleana **selfServiceSignUp** de um objeto [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md). As propriedades **id**, **tipo** e **descrição** não podem ser modificadas.
 

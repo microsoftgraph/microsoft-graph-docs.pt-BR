@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8c6023f8893ced851ee7c79b3ed63314a4a9c510
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0781be9d2dcc289fe99aeb92f31f3e55ea273730
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038217"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241062"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -59,16 +59,17 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 ## <a name="request-body"></a>Corpo da solicitação
 A tabela abaixo lista as propriedades que podem ser atualizadas. No corpo da solicitação, inclua apenas as propriedades que precisam ser atualizadas, com as seguintes exceções:
 
-- Ajustar a data/hora inicial ou final de uma reunião online sempre requer as propriedades **startDateTime** e **endDateTime** no corpo da solicitação.
-- Ajustar o **campo de** participantes  da propriedade participantes, como adicionar ou remover um participante à reunião, sempre requer a lista completa de participantes no corpo da solicitação.
+- Atualizar a data/hora inicial ou final de uma reunião online sempre requer as propriedades **startDateTime** e **endDateTime** no corpo da solicitação.
+- **o** campo organizador **da propriedade participante não** pode ser atualizado. O organizador da reunião não pode ser modificado depois que a reunião é criada.
+- A atualização **do campo** de  participantes da propriedade participantes, como adicionar ou remover um participante à reunião, sempre requer a lista completa de participantes no corpo da solicitação.
 
 | Propriedade             | Tipo                                                         | Descrição                                                                                                                                    |
 |----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | startDateTime        | DateTime                                                     | O horário de início da reunião em UTC.                                                                                                                 |
 | endDateTime          | DateTime                                                     | A hora de término da reunião em UTC.                                                                                                                   |
-| assunto              | String                                                       | O assunto da reunião online.                                                                                                             |
-| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Os participantes associados à reunião online. Isso inclui o organizador e os participantes.                                            |
-| isEntryExitAnnounced | Boolean                                                      | Se os chamadores ingressarão ou sairão.                                                                                         |
+| Assunto              | Cadeia de caracteres                                                       | O assunto da reunião online.                                                                                                             |
+| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Os participantes associados à reunião online. Somente participantes podem ser atualizados.                                            |
+| isEntryExitAnnounced | Booliano                                                      | Se os chamadores ingressarão ou sairão.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Especifica quais participantes podem ignorar o lobby da reunião.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis são todos, organização, roleIsPresenter, organizador e unknownFutureValue. |
 
