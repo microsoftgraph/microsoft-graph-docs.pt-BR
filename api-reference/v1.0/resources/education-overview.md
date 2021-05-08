@@ -5,18 +5,18 @@ localization_priority: Priority
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 4d36403aef6212831e186fffd401df7155be43fd
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 1bfe49d6841142794a5b3a60b0de84eaff4290d4
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582356"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231529"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Como trabalhar com APIs de educação no Microsoft Graph
 
 As APIs de educação no Microsoft Graph aprimoram os recursos e dados do Microsoft 365 com informações que são relevantes para cenários de educação, incluindo escolas, alunos, professores, aulas e matrículas. Isso facilita a criação de soluções que se integram aos recursos educacionais.
 
-As APIs de educação incluem recursos de escalação e recursos de atribuições que podem ser usados para interação com os serviços de escalação no Microsoft Teams. Você pode usar esses recursos para gerenciar a lista de participantes de uma escola.
+As APIs de educação incluem recursos de listagem e recursos de tarefas que você pode usar para interagir com os serviços de listagem no Microsoft Teams. Você pode usar esses recursos para gerenciar uma lista de escolas.
 
 ## <a name="authorization"></a>Autorização
 
@@ -28,7 +28,7 @@ Para implantar os aplicativos que são integrados às APIs de educação do Micr
 
 Para mostrar uma caixa de diálogo de consentimento, use a chamada REST a seguir.
 
-``` http
+```http
 GET https://login.microsoftonline.com/{tenant}/adminconsent?
 client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 ```
@@ -59,10 +59,10 @@ As APIs de escalação fornecem os seguintes recursos-chave:
 
 As APIs de escalação dão suporte aos seguintes cenários:
 
-- [Listar todas as escolas](../api/educationroot-list-schools.md)
+- [Listar todas as escolas](../api/educationschool-list.md)
 - [Listar escolas nas quais uma aula é ministrada](../api/educationclass-list-schools.md)
 - [Listar escolas para um usuário](../api/educationuser-list-schools.md)
-- [Obter todas as aulas](../api/educationroot-list-classes.md)
+- [Obter todas as aulas](../api/educationclass-list.md)
 - [Obter aulas em um escola](../api/educationschool-list-classes.md)
 - [Listar aulas para um usuário](../api/educationuser-list-classes.md)
 - [Adicionar aulas a uma escola](../api/educationschool-post-classes.md)
@@ -79,7 +79,7 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Use as APIs de educação do Microsoft Graph para criar soluções de educação que acessam listas de participantes da escola. Para saber mais:
+Use as APIs de educação do Microsoft Graph para construir soluções educacionais que acessam as listas escolares. Para saber mais:
 
 - Explore os recursos e os métodos mais úteis para seu cenário.
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).

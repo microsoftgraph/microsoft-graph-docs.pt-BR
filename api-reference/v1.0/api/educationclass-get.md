@@ -1,22 +1,22 @@
 ---
 title: Obter educationClass
-description: "  os administradores de grupo representam os professores da classe. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros."
+description: Recuperar uma classe do sistema
 localization_priority: Normal
-author: mmast-msft
+author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4bbbe40a291657813023596d3fd42cdfcd5c3310
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 52f24e1f3c02b955874a78cdba447b697485f4a3
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048761"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232008"
 ---
 # <a name="get-educationclass"></a>Obter educationClass
 
 Namespace: microsoft.graph
 
-Recupere uma aula do sistema. Uma aula é um grupo universal com uma propriedade especial que indica ao sistema que o grupo é uma aula. Os membros do grupo representam os alunos; os administradores do grupo representam os professores da aula. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros.
+Recupere uma aula do sistema. Uma aula é um grupo universal com uma propriedade especial que indica ao sistema que o grupo é uma aula. Os membros do grupo representam os alunos; os administradores de grupo representam os professores da classe. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -32,9 +32,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /education/classes/{id}
 ```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+É possível usar a opção de consulta `$select` para obter propriedades específicas do grupo, inclusive aquelas que não são retornadas por padrão.
+
+Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de consulta OData](/graph/query-parameters).
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
@@ -48,34 +50,23 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um ob
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
+Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationClass](../resources/educationclass.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+
 <!-- {
   "blockType": "request",
   "name": "get_educationclass"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
+}
+-->
+
+```http
+GET /education/classes/{educationClassId}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationclass-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. 
+### <a name="response"></a>Resposta
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -83,38 +74,32 @@ Este é um exemplo de resposta.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationClass"
-} -->
+}
+-->
+
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 224
+Content-Type: application/json
 
 {
-  "id": "11023",
-  "description": "English Level 2",
-  "classCode": "11023",
-  "createdBy": {
-    "user": {
-      "displayName": "Susana Rocha",
-      "id": "14012",
+  "value": {
+    "@odata.type": "#microsoft.graph.educationClass",
+    "id": "64ef8ce5-8ce5-64ef-e58c-ef64e58cef64",
+    "displayName": "String",
+    "mailNickname": "String",
+    "description": "String",
+    "createdBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "classCode": "String",
+    "externalName": "String",
+    "externalId": "String",
+    "externalSource": "String",
+    "externalSourceDetail": "String",
+    "grade": "String",
+    "term": {
+      "@odata.type": "microsoft.graph.educationTerm"
     }
-  },
-  "displayName": "English - Language 2",
-  "externalId": "301",
-  "externalName": "English Level 1",
-  "externalSource": "School of Fine Art",
-  "mailNickname": "fineartschool.net "
+  }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get educationClass",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->

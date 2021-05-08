@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 300369a97237865faa8c8bb9842352880007a1ea
-ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
+ms.openlocfilehash: 51a34d50801914dcc3e1e10c1813c25543880c0b
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "51996133"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240753"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -54,10 +54,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |autoSubscribeNewMembers|Boolean|O padrão é `false`. Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. **autoSubscribeNewMembers** não pode ser `true` quando **subscriptionEnabled** é definido como `false` no grupo.|
 |descrição|String|Uma descrição opcional para o grupo.|
 |displayName|Cadeia de caracteres|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. |
-|groupTypes|Coleção de cadeias de caracteres|Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver um grupo **unificado** então o grupo será um grupo do Microsoft 365; caso contrário, será um grupo de segurança.  <br><br>Se a coleção incluir **DynamicMembership**, o grupo tem associação dinâmica; caso contrário, a associação é estática. |
+|groupTypes|Coleção de cadeias de caracteres|Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção **contiver Unified,** o grupo será um Microsoft 365 grupo; caso contrário, é um grupo de segurança.  <br><br>Se a coleção incluir **DynamicMembership**, o grupo tem associação dinâmica; caso contrário, a associação é estática. |
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. |
 |mailNickname|String|O alias de email do grupo. Essa propriedade deve ser especificada quando um grupo é criado. |
-|securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança, incluindo grupos do Microsoft 365. |
+|securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança, incluindo Microsoft 365 grupos. |
 |visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).|
 
 Como o **recurso de** grupo dá suporte a extensões, você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview)de uma extensão em uma instância de grupo `PATCH` existente. 
@@ -95,8 +95,8 @@ Content-type: application/json
 Content-length: 211
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
+   "description":"description-value",
+   "displayName":"displayName-value"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -130,10 +130,10 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
-### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>Exemplo 2: aplicar o rótulo de sensibilidade a um grupo do Microsoft 365
+### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>Exemplo 2: aplicar o rótulo de sensibilidade a um Microsoft 365 grupo
 #### <a name="request"></a>Solicitação
 
-Você pode obter a ID do rótulo que deseja aplicar a um grupo do Microsoft 365 usando [List label](informationprotectionpolicy-list-labels.md). Em seguida, você pode atualizar [a propriedade assignedLabels](../resources/assignedlabel.md) do grupo com a ID do rótulo. 
+Você pode obter a ID do rótulo que deseja aplicar a um grupo Microsoft 365 usando [o rótulo lista](informationprotectionpolicy-list-labels.md). Em seguida, você pode atualizar [a propriedade assignedLabels](../resources/assignedlabel.md) do grupo com a ID do rótulo. 
 
 
 # <a name="http"></a>[HTTP](#tab/http)

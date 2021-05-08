@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: d0b44fd3737405e4bac72dd2d9b9fbe48e0ec3d6
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: bf4654f096065538449723d076e0b712ee4cdbf5
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080579"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231487"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -293,7 +293,7 @@ Nenhuma.
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Bookings.Read.All_ |  Permite que um aplicativo leia compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado. | Voltado a aplicativos somente leitura. O usuário-alvo típico é o cliente de uma empresa de reservas. | Não | Não |
+| _Bookings.Read.All_ |  Permite que um aplicativo leia compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado. | Destinados a aplicativos somente leitura. O usuário-alvo típico é o cliente de uma empresa de reservas. | Não | Não |
 | _BookingsAppointment.ReadWrite.All_ | Permite que um aplicativo leia e grave compromissos e clientes do Bookings, permitindo também a leitura de empresas, serviços e funcionários em nome do usuário conectado. | Desenvolvido para aplicativos de agendamento que precisam manipular compromissos e clientes. Não pode alterar informações fundamentais sobre a empresa de reservas, nem seus serviços e funcionários. O usuário-alvo típico é o cliente de uma empresa de reservas.| Não | Não |
 | _Bookings.ReadWrite.All_ | Permite que um aplicativo leia e grave compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado. Não permite criar, excluir ou publicar de empresas do Bookings. | Voltado a aplicativos de gerenciamento que manipulam empresas existentes, seus serviços e seus funcionários. Não pode criar, excluir ou alterar o status de publicação de uma empresa de reservas. O usuário-alvo típico é o funcionário de suporte de uma organização.| Não | Não |
 | _Bookings.Manage.All_ | Permite que um aplicativo leia, grave e gerencie compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado.  | Permite que o aplicativo tenha acesso total. <br>Voltado a uma experiência de gerenciamento completa. O usuário-alvo típico é o administrador de uma organização.| Não | Não |
@@ -757,10 +757,10 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | :---------------------------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
 | _EduAdministration.Read.All_        | Ler configurações do aplicativo ducacional                         | Ler o estado e as configurações de todos os aplicativos educacionais da Microsoft em nome do usuário                                                                                             | Sim                    |
 | _EduAdministration.ReadWrite.All_   | Gerenciar as configurações do aplicativo educacional                       | Gerenciar o estado e as configurações de todos os aplicativos educacionais da Microsoft em nome do usuário                                                                                           | sim                    |
-| _EduAssignments.ReadBasic.All_ ([versão prévia privada](#permissions-availability-status))      | Ler as tarefas de classe sem notas               | Permite ao aplicativo ler as tarefas sem notas para todos os usuários                                                                                                               | Sim                    |
-| _EduAssignments.ReadWriteBasic.All_ ([versão prévia privada](#permissions-availability-status)) | Ler e gravar as tarefas de classe sem notas     | Permite ao aplicativo ler e gravar as tarefas sem notas para todos os usuários                                                                                                     | Sim                    |
-| _EduAssignments.Read.All_ ([versão prévia privada](#permissions-availability-status))          | Ler as tarefas de classe com notas                  | Permite ao aplicativo ler as tarefas e as notas delas para todos os usuários                                                                                                             | Sim                    |
-| _EduAssignments.ReadWrite.All_ ([versão prévia privada](#permissions-availability-status))     | Ler e gravar as tarefas de classe com notas        | Permite ao aplicativo ler e gravar as tarefas e as notas delas para todos os usuários                                                                                                   | Sim                    |
+| _EduAssignments.ReadBasic.All_      | Ler as tarefas de classe sem notas               | Permite ao aplicativo ler as tarefas sem notas para todos os usuários                                                                                                               | Sim                    |
+| _EduAssignments.ReadWriteBasic.All_ | Ler e gravar as tarefas de classe sem notas     | Permite ao aplicativo ler e gravar as tarefas sem notas para todos os usuários                                                                                                     | Sim                    |
+| _EduAssignments.Read.All_           | Ler as tarefas de classe com notas                  | Permite ao aplicativo ler as tarefas e as notas delas para todos os usuários                                                                                                             | Sim                    |
+| _EduAssignments.ReadWrite.All_      | Ler e gravar as tarefas de classe com notas        | Permite ao aplicativo ler e gravar as tarefas e as notas delas para todos os usuários                                                                                                   | Sim                    |
 | _EduRoster.ReadBasic.All_           | Ler um subconjunto limitado da lista de participação da organização. | Permite ao aplicativo ler um subconjunto limitado de estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários.          | Sim                    |
 | _EduRoster.Read.All_                | Ler a lista de participação da organização.                     | Permite ao aplicativo ler a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários a serem lidas.                       | Sim                    |
 | _EduRoster.ReadWrite.All_           | Ler e gravar a lista de participação da organização.           | Permite ao aplicativo ler e gravar a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários a serem lidas e gravadas. | Sim                    |
@@ -1211,7 +1211,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 ### <a name="remarks"></a>Comentários
 _Member.Read.Hidden_ é válida somente para contas corporativas ou de estudante.
 
-A associação pode estar oculta em alguns grupos do Microsoft 365. Isso significa que somente os membros do grupo podem exibir seus membros. Esse recurso pode ser usado para ajudar a cumprir regulamentos que exijam a ocultação da associação de grupo de pessoas externas (por exemplo, um grupo do Microsoft 365 que representa os alunos registrados em uma classe).
+A associação pode estar oculta em alguns grupos do Office 365. Isso significa que somente os membros do grupo podem exibir seus membros. Esse recurso pode ser usado para ajudar a cumprir regulamentos que exijam que uma organização oculte a associação ao grupo de pessoas externas (por exemplo, um grupo do Microsoft 365 que representa os alunos registrados em uma classe).
 
 ### <a name="example-usage"></a>Exemplo de uso
 

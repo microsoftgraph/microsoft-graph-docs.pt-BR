@@ -1,22 +1,22 @@
 ---
-title: Atualizar propriedades educationclass
+title: Atualizar educationClass
 description: Atualize as propriedades de uma aula.
-author: mmast-msft
+author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2e0e6dff51e16f0582e2bbbde058f8e78f35d5c1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5340a05df5068942c2f895c9858e2f5cd280e24a
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051456"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231959"
 ---
-# <a name="update-educationclass-properties"></a>Atualizar propriedades educationclass
+# <a name="update-educationclass"></a>Atualizar educationClass
 
 Namespace: microsoft.graph
 
-Atualize as propriedades de uma aula.
+Atualize as propriedades de um [objeto educationClass.](../resources/educationclass.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -41,15 +41,18 @@ PATCH /education/classes/{id}
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|description|Cadeia de caracteres| Descrição da aula.|
-|displayName|Cadeia de caracteres| Nome da aula.|
-|mailNickname|String| Alias de email para envio de email a todos os usuários, se esse recurso estiver habilitado. |
-|classCode|Cadeia de caracteres| Código de classe usado pela escola.|
-|externalId|Cadeia de caracteres| ID da aula no sistema de sincronização. |
-|externalName|Cadeia de caracteres|Nome da aula no sistema de sincronização.|
-|externalSource|cadeia de caracteres| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
+| Propriedade             | Tipo                                               | Descrição                                                        |
+| :------------------- | :------------------------------------------------- | :----------------------------------------------------------------- |
+| displayName          | String                                             | Nome da aula.                                                 |
+| mailNickname         | String                                             | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.    |
+| descrição          | String                                             | Descrição da aula.                                          |
+| createdBy            | [identitySet](../resources/identityset.md)         | Entidade que criou a aula                                       |
+| classCode            | Cadeia de caracteres                                             | Código de aula usada pela escola para identificar a aula.               |
+| externalId           | Cadeia de caracteres                                             | ID da aula no sistema de sincronização.                           |
+| externalSource       | educationExternalSource                            | Como essa aula foi criada. Os valores possíveis são: `sis` , `manual`   |
+| externalSourceDetail | String                                             | O nome da fonte externa de onde esses recursos foram gerados. |
+| grade                | Cadeia de caracteres                                             | Nível de nota da classe.                                          |
+| term                 | [educationTerm](../resources/educationterm.md)     | Termos dessa aula.                                               |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationClass](../resources/educationclass.md) atualizado no corpo da resposta.
@@ -102,24 +105,26 @@ Este é um exemplo de resposta.
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 224
+Content-Type: application/json
 
 {
-  "id": "11014",
-  "description": "World History Level 1",
-  "classCode": "301",
+  "@odata.type": "#microsoft.graph.educationClass",
+  "id": "64ef8ce5-8ce5-64ef-e58c-ef64e58cef64",
+  "displayName": "String",
+  "mailNickname": "String",
+  "description": "String",
   "createdBy": {
-    "user": {
-      "displayName": "Susana Rocha",
-      "id": "14012"
-    }
+    "@odata.type": "microsoft.graph.identitySet"
   },
-  "displayName": "History - World History 1",
-  "externalId": "301",
-  "externalName": "World History Level 1",
-  "externalSource": "Fabrikam High School",
-  "mailNickname": "Fabrikam"
+  "classCode": "String",
+  "externalName": "String",
+  "externalId": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
+  "grade": "String",
+  "term": {
+    "@odata.type": "microsoft.graph.educationTerm"
+  }
 }
 ```
 
@@ -134,4 +139,3 @@ Content-length: 224
   "suppressions": [
   ]
 }-->
-

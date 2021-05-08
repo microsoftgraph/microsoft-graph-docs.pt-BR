@@ -1,24 +1,24 @@
 ---
-title: Remover um aluno
+title: Remover membro do educationClass
 description: Remove um educationUser de uma educationClass
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9afd89af1100b58c1df2cd0d4f6ec3c1d37a622e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e067542eec9584a74f7e163935b56ba382f87b4d
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963825"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231896"
 ---
-# <a name="remove-a-student"></a>Remover um aluno
+# <a name="remove-member-from-educationclass"></a>Remover membro do educationClass
 
 Namespace: microsoft.graph
 
 Remove um [educationUser](../resources/educationuser.md) de uma [educationClass](../resources/educationclass.md)
 
->**Observação:** professores _e_ alunos estão na coleção **members** da aula. Antes de chamar essa API, garanta que **educationUser** que você está removendo não seja um professor.  Obtenha a lista de professores chamando [educationclass_list_teachers](educationclass-list-teachers.md) e verificando se a ID do usuário a ser removido não está na lista de professores retornada.
+> **Observação:** professores _e_ alunos estão na coleção **members** da aula. Antes de chamar essa API, garanta que **educationUser** que você está removendo não seja um professor. Obtenha a lista de professores chamando [educationclass_list_teachers](educationclass-list-teachers.md) e verificando se a ID do usuário a ser removido não está na lista de professores retornada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -97,4 +97,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

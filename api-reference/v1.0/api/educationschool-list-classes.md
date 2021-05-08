@@ -1,39 +1,56 @@
 ---
-title: Listar educationClasses
+title: Listar classes de uma educationSchool
 description: Recupera uma lista de classes de propriedade de uma escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b67fe609ccafdeb39ecd8e2fd63008770216b134
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cbd644e5994f8039a29c16f0463445d92500a865
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035481"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232029"
 ---
-# <a name="list-educationclasses"></a>Listar educationClasses
+# <a name="list-classes-of-an-educationschool"></a>Listar classes de uma educationSchool
 
 Namespace: microsoft.graph
 
-Recupera uma lista de classes de propriedade de uma escola.
+Obter os [recursos educationClass](../resources/educationclass.md) pertencentes a uma [educationSchool](../resources/educationschool.md).
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /education/schools/{id}/classes
+GET /education/schools/{educationSchoolId}/classes
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Use a opção de consulta OData `$orderby` para classificar grupos em uma organização pelos valores **displayName**, conforme exibido no exemplo a seguir:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
+```
+
+Você também pode usar os `$filter` parâmetros , `$count` e consulta para limitar a `$search` resposta.
+
+Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
+
+Para obter mais informações sobre as opções de consulta OData, veja [ Parâmetros de consulta OData ](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |

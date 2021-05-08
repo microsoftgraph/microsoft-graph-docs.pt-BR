@@ -1,18 +1,18 @@
 ---
-title: Listar escolas
+title: Listar escolas de um educationUser
 description: Recupere uma lista de escolas de um usuário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ab8c15bc3aff44419c20e0cefa26b178a9c92605
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 229c1182e45e9ac72e9ef984c9943823e4292536
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053108"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231875"
 ---
-# <a name="list-schools"></a>Listar escolas
+# <a name="list-schools-of-an-educationuser"></a>Listar escolas de um educationUser
 
 Namespace: microsoft.graph
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/me/schools
-GET /education/users/{id}/schools
+GET /education/users/{educationUserId}/schools
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

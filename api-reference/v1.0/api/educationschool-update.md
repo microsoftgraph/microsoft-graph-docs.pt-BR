@@ -1,22 +1,22 @@
 ---
-title: Atualizar propriedades educationSchool
-description: Atualize as propriedades de um objeto de escola.
-author: mmast-msft
+title: Atualizar educationSchool
+description: Atualize as propriedades de um objeto educationSchool.
+author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0b051e5339c2cc32cfd0dad58e21154cf8e9cca8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e6c53b2b9b5934559a352378ee5316618ae69abe
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051435"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231868"
 ---
-# <a name="update-educationschool-properties"></a>Atualizar propriedades educationSchool
+# <a name="update-educationschool"></a>Atualizar educationSchool
 
 Namespace: microsoft.graph
 
-Atualize as propriedades de um objeto de escola.
+Atualize as propriedades de um [objeto educationSchool.](../resources/educationschool.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,22 +44,27 @@ PATCH /education/schools/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece uma representação JSON do [objeto educationSchool.](../resources/educationschool.md)
 
-| Propriedade            | Tipo                                               | Descrição                        |
-| :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | Cadeia de caracteres                                             | Nome de exibição da escola         |
-| description         | Cadeia de caracteres                                             | Descrição da escola          |
-| principalEmail      | Cadeia de caracteres                                             | Endereço de email da entidade de segurança     |
-| principalName       | Cadeia de caracteres                                             | Nome da entidade de segurança              |
-| externalPrincipalId | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização. |
-| highestGrade        | Cadeia de caracteres                                             | Ensino de nível mais alto.              |
-| lowestGrade         | Cadeia de caracteres                                             | Ensino de nível mais baixo.               |
-| schoolNumber        | Cadeia de caracteres                                             | Número da escola.                     |
-| externalId          | Cadeia de caracteres                                             | ID da escola no sistema de sincronização.    |
-| phone               | Cadeia de caracteres                                             | Número de telefone da escola.            |
-| address             | [physicalAddress](../resources/physicaladdress.md) | Endereço da escola.             |
-| createdBy           | [identitySet](../resources/identityset.md)         | Entidade que criou a escola.     |
+A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o educationSchool](../resources/educationschool.md).
+
+| Propriedade             | Tipo                                               | Descrição                                                                                                                                                           |
+| :------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName          | String                                             | Nome de exibição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
+| descrição          | String                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                             |
+| externalSource       | educationExternalSource                            | Fonte de onde essa organização foi criada. Herdado de [educationOrganization](../resources/educationorganization.md). Os valores possíveis são: `sis` e `manual`. |
+| externalSourceDetail | String                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                    |
+| principalEmail       | Cadeia de caracteres                                             | Endereço de email da entidade de segurança.                                                                                                                                       |
+| principalName        | Cadeia de caracteres                                             | Nome da entidade de segurança.                                                                                                                                                |
+| externalPrincipalId  | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização.                                                                                                                                    |
+| highestGrade         | Cadeia de caracteres                                             | Ensino de nível mais alto.                                                                                                                                                 |
+| lowestGrade          | Cadeia de caracteres                                             | Ensino de nível mais baixo.                                                                                                                                                  |
+| schoolNumber         | Cadeia de caracteres                                             | Número da escola.                                                                                                                                                        |
+| externalId           | Cadeia de caracteres                                             | ID da escola no sistema de sincronização.                                                                                                                                       |
+| phone                | Cadeia de caracteres                                             | Número de telefone da escola.                                                                                                                                               |
+| fax                  | Cadeia de caracteres                                             | Número de fax da escola.                                                                                                                                                 |
+| createdBy            | [identitySet](../resources/identityset.md)         | Entidade que criou a escola.                                                                                                                                        |
+| address              | [physicalAddress](../resources/physicaladdress.md) | Endereço da escola.                                                                                                                                                |
 
 ## <a name="response"></a>Resposta
 
@@ -157,4 +162,3 @@ Content-length: 292
   "suppressions": [
   ]
 }-->
-

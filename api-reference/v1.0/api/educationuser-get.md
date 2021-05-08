@@ -1,22 +1,22 @@
 ---
 title: Obter educationUser
-description: Recupere as propriedades e as relações de um usuário.
-author: mmast-msft
+description: Leia as propriedades e as relações de um objeto educationUser.
+author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 58c9a00e5922a405240e73f40084fe10b2d0cf25
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e550f1dc17f562f0d9f6db51001b4bcc26166eed
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053122"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231274"
 ---
 # <a name="get-educationuser"></a>Obter educationUser
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e as relações de um usuário.
+Leia as propriedades e as relações de um [objeto educationUser.](../resources/educationuser.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -83,53 +83,76 @@ Este é um exemplo de resposta.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationUser"
-} -->
+}
+-->
+
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 508
+Content-Type: application/json
 
 {
-  "id": "13012",
-  "displayName": "Dion Matheson",
-  "givenName": "Dion",
-  "middleName": " ",
-  "surname": "Matheson",
-  "mail": "DionM@contoso.com",
-  "mobilePhone": "+1 (253) 555-0101",
-  "createdBy": {
-    "user": {
-      "displayName": "Susana Rocha",
-      "id": "14012"
+  "value": {
+    "@odata.type": "#microsoft.graph.educationUser",
+    "id": "90eedea1-dea1-90ee-a1de-ee90a1deee90",
+    "primaryRole": "String",
+    "middleName": "String",
+    "externalSource": "String",
+    "externalSourceDetail": "String",
+    "residenceAddress": {
+      "@odata.type": "microsoft.graph.physicalAddress"
+    },
+    "mailingAddress": {
+      "@odata.type": "microsoft.graph.physicalAddress"
+    },
+    "student": {
+      "@odata.type": "microsoft.graph.educationStudent"
+    },
+    "teacher": {
+      "@odata.type": "microsoft.graph.educationTeacher"
+    },
+    "createdBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "accountEnabled": "Boolean",
+    "assignedLicenses": [
+      {
+        "@odata.type": "microsoft.graph.assignedLicense"
+      }
+    ],
+    "assignedPlans": [
+      {
+        "@odata.type": "microsoft.graph.assignedPlan"
+      }
+    ],
+    "businessPhones": [
+      "String"
+    ],
+    "department": "String",
+    "displayName": "String",
+    "givenName": "String",
+    "mail": "String",
+    "mailNickname": "String",
+    "mobilePhone": "String",
+    "passwordPolicies": "String",
+    "passwordProfile": {
+      "@odata.type": "microsoft.graph.passwordProfile"
+    },
+    "officeLocation": "String",
+    "preferredLanguage": "String",
+    "provisionedPlans": [
+      {
+        "@odata.type": "microsoft.graph.provisionedPlan"
+      }
+    ],
+    "refreshTokensValidFromDateTime": "String (timestamp)",
+    "showInAddressList": "Boolean",
+    "surname": "String",
+    "usageLocation": "String",
+    "userPrincipalName": "String",
+    "userType": "String",
+    "onPremisesInfo": {
+      "@odata.type": "microsoft.graph.educationOnPremisesInfo"
     }
-  },
-  "externalSource": "sis",
-  "mailingAddress": {
-    "city": "Los Angeles",
-    "countryOrRegion": "United States",
-    "postalCode": "98055",
-    "state": "CA",
-    "street": "12345 Main St."
-  },
-  "primaryRole": "student",
-  "residenceAddress": {
-    "city": "Los Angeles",
-    "countryOrRegion": "United States",
-    "postalCode": "98055",
-    "state": "CA",
-    "street": "12345 Main St."
-  },
+  }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get educationUser",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->

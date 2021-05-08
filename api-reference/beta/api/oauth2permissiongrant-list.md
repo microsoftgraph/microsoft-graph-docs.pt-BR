@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a432a863cad767486083ee9de333af58d2311839
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3e42b422a358a0fc513a2b11014e74f91432ecfc
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038289"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231931"
 ---
 # <a name="list-oauth2permissiongrants"></a>Lista oauth2PermissionGrants
 
@@ -19,6 +19,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de objetos [oAuth2PermissionGrant,](../resources/oauth2permissiongrant.md) representando permissões delegadas que foram concedidas aos aplicativos cliente para acessar APIs em nome de usuários assinados.
+
+> [!NOTE]
+> Essa solicitação pode ter atrasos de replicação para concessões de permissão delegadas que foram criadas, atualizadas ou excluídas recentemente. Esse atraso será minimizado se um filtro `clientId` for especificado.
 
 ## <a name="permissions"></a>Permissões
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 04d296371a5d10dc447ea7588fdfbf5faea4f99d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c52e6bb05c9258680a36f04ad428c24a3a2829fc
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442709"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52239958"
 ---
 # <a name="unifiedroleassignment-resource-type"></a>Tipo de recurso unifiedRoleAssignment
 
@@ -22,32 +22,36 @@ Um unifiedRoleAssignment é usado para conceder acesso aos recursos. Ele represe
 
 É necessário fornecer um directoryScopeId ou um appScopeId.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
+| [Listar unifiedRoleAssignment](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Leia uma lista de objetos unifiedRoleAssignment e suas propriedades. |
 | [Obter unifiedRoleAssignment](../api/unifiedroleassignment-get.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Leia propriedades e relações do objeto unifiedRoleAssignment. |
 | [Criar unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Crie um novo unifiedRoleAssignment postando na coleção roleAssignment. |
-| [Excluir unifiedRoleAssignment](../api/unifiedroleassignment-delete.md) | Nenhum(a) | Exclua o objeto unifiedRoleAssignment. |
+| [Excluir unifiedRoleAssignment](../api/unifiedroleassignment-delete.md) | Nenhum | Exclua o objeto unifiedRoleAssignment. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| O identificador exclusivo do unifiedRoleAssignment. Chave, não anulada, somente leitura. |
-|roleDefinitionId|String| ID do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura. |
-|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|Propriedade indicando a funçãoDefinition para a qual a atribuição se destina. Fornecido para que os chamadores possam obter a definição de função `$expand` usando ao mesmo tempo que obter a atribuição de função. roleDefinition.Id será expandido automaticamente
-|principalId|String| Objectid da entidade à qual a atribuição é concedida. |
-|principal|[directoryObject](directoryobject.md)| Propriedade fazendo referência à entidade atribuída. Fornecido para que os chamadores possam obter a entidade principal `$expand` usando ao mesmo tempo que obter a atribuição de função. Somente leitura. |
-|directoryScopeId|String|ID do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo.|
-|directoryScope|[directoryObject](directoryobject.md)|Propriedade fazendo referência ao objeto de diretório que é o escopo da atribuição. Fornecido para que os chamadores possam obter o objeto de diretório `$expand` usando ao mesmo tempo que obter a atribuição de função. Somente leitura. |
-|appScopeId|String|ID do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use "/" para o escopo de todo o locatário. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo.|
-|appScope|[appScope](appscope.md)|Propriedade somente leitura com detalhes do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. Entidade de contenção. |
-|resourceScope|String| O escopo no qual o unifiedRoleAssignment se aplica. Isso é "/" para todo o serviço. **NÃO USE. Essa propriedade será preterida em breve.**|
+|id|Cadeia de caracteres| O identificador exclusivo do unifiedRoleAssignment. Chave, não anulada, somente leitura. |
+|roleDefinitionId|Cadeia de caracteres| Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura. Suporta `$filter` ( `eq` somente operador). |
+|principalId|Cadeia de caracteres| Identificador da entidade à qual a atribuição é concedida. Suporta `$filter` ( `eq` somente operador). |
+|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo.|
+|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo.|
+|resourceScope|Cadeia de caracteres| O escopo no qual o unifiedRoleAssignment se aplica. Isso é `/` para todo o serviço. **NÃO USE. Essa propriedade será preterida em breve.**|
 
 ## <a name="relationships"></a>Relações
 
-Nenhum
+| Relação | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|appScope|[appScope](appscope.md)|Detalhes do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. Entidade de contenção. |
+|directoryScope|[directoryObject](directoryobject.md)|O objeto directory que é o escopo da atribuição. Fornecido para que os chamadores possam obter o objeto de diretório `$expand` usando ao mesmo tempo que obter a atribuição de função. Somente leitura. Oferece suporte para `$expand`. |
+|principal|[directoryObject](directoryobject.md)| A entidade atribuída. Fornecido para que os chamadores possam obter a entidade principal `$expand` usando ao mesmo tempo que obter a atribuição de função. Somente leitura. Oferece suporte para `$expand`. |
+|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|A funçãoDefinition para a atribuição. Fornecido para que os chamadores possam obter a definição de função `$expand` usando ao mesmo tempo que obter a atribuição de função. **roleDefinition.id** será expandido automaticamente. Oferece suporte para `$expand`. |
+
+
 
 ## <a name="json-representation"></a>Representação JSON
 

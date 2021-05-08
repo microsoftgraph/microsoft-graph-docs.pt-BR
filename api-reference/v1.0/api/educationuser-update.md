@@ -1,22 +1,23 @@
 ---
-title: Atualizar propriedades de educationUser
-description: Atualize as propriedades de um objeto **educationuser**.
+title: Atualizar educationUser
+description: Atualize as propriedades de um objeto educationUser.
+author: mlafleur
 localization_priority: Normal
-author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 32645e98fbb2e7da1aeec8d48eddb3c5da6822bb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f3cf8d98f3446c93e89451a2d2c262bc431328e0
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054032"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232050"
 ---
-# <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
+# <a name="update-educationuser"></a>Atualizar educationUser
 
 Namespace: microsoft.graph
 
-Atualize as propriedades de um objeto **educationuser**.
+Atualize as propriedades de um [objeto educationUser.](../resources/educationuser.md)
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -41,22 +42,36 @@ PATCH /education/users/{id}
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|displayName| Cadeia de caracteres| Nome de exibição do usuário|
-|givenName| Cadeia de caracteres | Nome |
-|middleName| String | O nome do meio do usuário|
-|surname| Cadeia de caracteres | Sobrenome do usuário|
-|email| String| endereço de email|
-|mobilePhone| String | O número de celular do usuário |
-|externalSource|cadeia de caracteres| Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
-|externalSource|cadeia de caracteres| De onde esse usuário foi criado.  Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
-|mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço de email do usuário.|
-|residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço em que o usuário reside.|
-|primaryRole|cadeia de caracteres| Função padrão de um usuário.  A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`.|
-|student|[educationStudent](../resources/educationstudent.md)| Se a função principal for aluno, esse bloco conterá dados específicos do aluno.|
-|teacher|[educationTeacher](../resources/educationteacher.md)| Se a função primária for professor, esse bloco conterá dados específicos do professor.|
-
+| Propriedade             | Tipo                                                               | Descrição                                                                                                                                                                                                                                                                                                                                                 |
+| :------------------- | :----------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| accountEnabled       | Booliano                                                            | **True** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.                                                                                                                                                                                                                               |
+| assignedLicenses     | Coleção [assignedLicense](../resources/assignedlicense.md)      | As licenças que são atribuídas ao usuário. Não anulável.                                                                                                                                                                                                                                                                                                   |
+| assignedPlans        | Coleção [assignedPlan](../resources/assignedplan.md)            | Os planos que são atribuídos ao usuário. Somente leitura. Não anulável.                                                                                                                                                                                                                                                                                           |
+| businessPhones       | Coleção de cadeias de caracteres                                                  | Números de telefone para o usuário. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                                                                                                                                                                                           |
+| createdBy            | [identitySet](../resources/identityset.md)                         | Entidade que criou o usuário.                                                                                                                                                                                                                                                                                                                                |
+| department           | String                                                             | O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.                                                                                                                                                                                                                                                                                      |
+| displayName          | String                                                             | O nome exibido para o usuário no catálogo de endereços. Geralmente é a combinação do nome, da inicial do nome do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.                                                                                      |
+| externalSource       | educationExternalSource                                            | De onde esse usuário foi criado. Os valores possíveis são: `sis` e `manual`.                                                                                                                                                                                                                                                                                     |
+| externalSourceDetail | String                                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                                                                                                                                                                                                          |
+| givenName            | String                                                             | O nome fornecido (nome) do usuário. Oferece suporte a $filter.                                                                                                                                                                                                                                                                                                  |
+| email                 | String                                                             | O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.                                                                                                                                                                                                                                                    |
+| mailingAddress       | [physicalAddress](../resources/physicaladdress.md)                 | Endereço de email do usuário.                                                                                                                                                                                                                                                                                                                                       |
+| mailNickname         | String                                                             | O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte a $filter.                                                                                                                                                                                                                                                      |
+| middleName           | String                                                             | O nome do meio do usuário.                                                                                                                                                                                                                                                                                                                                    |
+| mobilePhone          | String                                                             | O número de celular principal do usuário.                                                                                                                                                                                                                                                                                                         |
+| onPremisesInfo       | [educationOnPremisesInfo](../resources/educationonpremisesinfo.md) | Informações adicionais usadas para associar o usuário do AAD ao equivalente do Active Directory.                                                                                                                                                                                                                                                               |
+| passwordPolicies     | String                                                             | Especifica as políticas de senha do usuário. Este valor é uma enumeração com um possível valor sendo "DisableStrongPassword", que permite especificar as senhas mais fracas do que a política padrão. O "DisablePasswordExpiration" também pode ser especificado. Os dois podem ser especificados juntos, por exemplo: "DisablePasswordExpiration, DisableStrongPassword". |
+| passwordProfile      | [passwordProfile](../resources/passwordprofile.md)                 | Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.                                                        |
+| preferredLanguage    | String                                                             | O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo, "en-US".                                                                                                                                                                                                                                                                    |
+| primaryRole          | educationUserRole                                                  | Função padrão de um usuário. A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `none`, `unknownFutureValue`.                                                                                                                                                                                                |
+| provisionedPlans     | coleção [provisionedPlan](../resources/provisionedplan.md)      | Os planos que estão provisionados para o usuário. Somente leitura. Não anulável.                                                                                                                                                                                                                                                                                       |
+| residenceAddress     | [physicalAddress](../resources/physicaladdress.md)                 | Endereço em que o usuário reside.                                                                                                                                                                                                                                                                                                                                   |
+| student              | [educationStudent](../resources/educationstudent.md)               | Se a função principal for aluno, esse bloco conterá dados específicos do aluno.                                                                                                                                                                                                                                                                              |
+| surname              | String                                                             | O sobrenome do usuário (nome de família ou sobrenome). Oferece suporte a $filter.                                                                                                                                                                                                                                                                                            |
+| teacher              | [educationTeacher](../resources/educationteacher.md)               | Se a função primária for professor, esse bloco conterá dados específicos do professor.                                                                                                                                                                                                                                                                              |
+| usageLocation        | String                                                             | Um código de país de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços em países ou regiões. Os exemplos incluem: "US", "JP" e "GB". Não anulável. Oferece suporte a $filter.                                                                                           |
+| userPrincipalName    | String                                                             | O nome UPN do usuário.                                                                                                                                                                                                                                                                                                                  |
+| userType             | String                                                             | Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como "Member" e "Guest". Oferece suporte a $filter.                                                                                                                                                                                                                                   |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationUser](../resources/educationuser.md) atualizado no corpo da resposta.
@@ -133,7 +148,7 @@ Content-length: 508
         "state": "CA",
         "street": "12345 Main St."
       },
-  "primaryRole": "student",
+  "primaryRole": "string",
   "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -142,6 +157,7 @@ Content-length: 508
         "street": "12345 Main St."
       },
   "student": {
+      "primaryRole": "student",
       "externalId": "13005",
       "birthDate": "2001-01-01T00:00:00Z"
     }
@@ -159,4 +175,3 @@ Content-length: 508
   "suppressions": [
   ]
 }-->
-

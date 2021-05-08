@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso iniciador
+title: Tipo de recurso iniciador
 description: Descreve quem ou o que iniciou o evento de provisionamento.
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 2aa8c3f365402569d7a9987d9152bae5e4e3c580
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f1085b6a9b04ef2ad3cd584ac9e0d4dc6c88f037
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130240"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232057"
 ---
-# <a name="initiator-resource-type"></a>tipo de recurso iniciador
+# <a name="initiator-resource-type"></a>Tipo de recurso iniciador
 
 Namespace: microsoft.graph
 
@@ -26,7 +26,7 @@ Descreve quem ou o que iniciou o evento de provisionamento.
 |:-------------|:------------|:------------|
 |displayName|String|Nome da pessoa ou serviço que iniciou o evento de provisionamento.|
 |id|String|Identifica exclusivamente a pessoa ou serviço que iniciou o evento de provisionamento.|
-|initiatorType|String| Tipo de iniciador. Os valores possíveis são: `user`, `app`, `system`, `unknownFutureValue`.|
+|initiatorType|String| Tipo de iniciador. Os valores possíveis são: `user`, `application`, `system`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

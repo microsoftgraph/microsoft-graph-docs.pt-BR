@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 435d577ccf892b0cbf03a2899ec039150ae09f9f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b2bab33e8e78c7c42e7d47fd6dcf4a889579528b
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052597"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231788"
 ---
 # <a name="list-oauth2permissiongrants"></a>Lista oauth2PermissionGrants
 
@@ -22,6 +22,9 @@ Recuperar uma lista de entidades [oAuth2PermissionGrant](../resources/oAuth2Perm
 
 > [!NOTE]
 > Consultar as concessões de permissão delegada para um usuário só retornará permissões delegadas para o usuário específico. As permissões delegadas concedidas em nome de todos os usuários da organização _não_ são incluídas na resposta.
+
+> [!NOTE]
+> Essa solicitação pode ter atrasos de replicação para concessão de permissão delegada que foram criadas, atualizadas ou excluídas recentemente.
 
 ## <a name="permissions"></a>Permissões
 

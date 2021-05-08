@@ -1,0 +1,154 @@
+---
+title: Criar educationSchool
+description: Crie um novo objeto educationSchool.
+author: mlafleur
+localization_priority: Normal
+ms.prod: education
+doc_type: apiPageType
+ms.openlocfilehash: f9bf1499ef3c1d0106d9daac1bbda8f7ef25926d
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232122"
+---
+# <a name="create-educationschool"></a>Criar educationSchool
+
+Namespace: microsoft.graph
+
+Crie um novo [objeto educationSchool.](../resources/educationschool.md)
+
+## <a name="permissions"></a>Permissões
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | EduRoster.ReadWrite.All                     |
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+```http
+POST /education/schools
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome          | Descrição                 |
+| :------------ | :-------------------------- |
+| Autorização | {token} de portador. Obrigatório.   |
+| Content-Type  | application/json. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+No corpo da solicitação, fornece uma representação JSON do [objeto educationSchool.](../resources/educationschool.md)
+
+A tabela a seguir mostra as propriedades que são necessárias ao criar [a educationSchool](../resources/educationschool.md).
+
+| Propriedade             | Tipo                                               | Descrição                                                                                                                                                          |
+| :------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName          | String                                             | Nome de exibição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                           |
+| descrição          | String                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
+| externalSource       | educationExternalSource                            | Fonte de onde essa organização foi criada. Herdado de [educationOrganization](../resources/educationorganization.md). Os valores possíveis são: `sis` , 'manual. |
+| externalSourceDetail | String                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                   |
+| principalEmail       | Cadeia de caracteres                                             | Endereço de email da entidade de segurança.                                                                                                                                      |
+| principalName        | Cadeia de caracteres                                             | Nome da entidade de segurança.                                                                                                                                               |
+| externalPrincipalId  | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização.                                                                                                                                   |
+| highestGrade         | Cadeia de caracteres                                             | Ensino de nível mais alto.                                                                                                                                                |
+| lowestGrade          | Cadeia de caracteres                                             | Ensino de nível mais baixo.                                                                                                                                                 |
+| schoolNumber         | Cadeia de caracteres                                             | Número da escola.                                                                                                                                                       |
+| externalId           | Cadeia de caracteres                                             | ID da escola no sistema de sincronização.                                                                                                                                      |
+| phone                | Cadeia de caracteres                                             | Número de telefone da escola.                                                                                                                                              |
+| fax                  | Cadeia de caracteres                                             | Número de fax da escola.                                                                                                                                                |
+| createdBy            | [identitySet](../resources/identityset.md)         | Entidade que criou a escola.                                                                                                                                       |
+| address              | [physicalAddress](../resources/physicaladdress.md) | Endereço da escola.                                                                                                                                               |
+
+## <a name="response"></a>Resposta
+
+Se bem-sucedido, esse método retornará um código de resposta `201 Created` e um objeto [educationSchool](../resources/educationschool.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "create_educationschool_from_"
+}
+-->
+
+```http
+POST https://graph.microsoft.com/v1.0/education/schools
+Content-Type: application/json
+Content-length: 583
+
+{
+  "@odata.type": "#microsoft.graph.educationSchool",
+  "displayName": "String",
+  "description": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
+  "principalEmail": "String",
+  "principalName": "String",
+  "externalPrincipalId": "String",
+  "lowestGrade": "String",
+  "highestGrade": "String",
+  "schoolNumber": "String",
+  "externalId": "String",
+  "phone": "String",
+  "fax": "String",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  }
+}
+```
+
+### <a name="response"></a>Resposta
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSchool"
+}
+-->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.educationSchool",
+  "id": "1c23c12e-c12e-1c23-2ec1-231c2ec1231c",
+  "displayName": "String",
+  "description": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
+  "principalEmail": "String",
+  "principalName": "String",
+  "externalPrincipalId": "String",
+  "lowestGrade": "String",
+  "highestGrade": "String",
+  "schoolNumber": "String",
+  "externalId": "String",
+  "phone": "String",
+  "fax": "String",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  }
+}
+```

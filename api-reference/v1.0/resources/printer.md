@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: a772631a753d6f2d69402970f9a214da141f9e5f
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: e81614ba6c17955e8199e5c5aae6c643d93e9068
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516821"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232036"
 ---
 # <a name="printer-resource-type"></a>Tipo de recurso de impressora
 
@@ -30,7 +30,7 @@ Herda de [printerBase](../resources/printerbase.md).
 |:---|:---|:---|
 | [Criar](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Criar (registrar) uma nova impressora com Impressão Universal. |
 | [Get](../api/printer-get.md) | [impressora](printer.md) | Leia as propriedades e as relações do objeto printer. |
-| [Update](../api/printer-update.md) | [impressora](printer.md) | Atualize o objeto printer. |
+| [Atualização](../api/printer-update.md) | [impressora](printer.md) | Atualize o objeto printer. |
 | [Delete](../api/printer-delete.md) | Nenhum | Desaconselhe a impressora física do serviço de Impressão Universal. |
 | [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | Nenhum | Restaure as configurações padrão de uma impressora para os valores especificados pelo fabricante. |
 | [Listar trabalhos](../api/printer-list-jobs.md) | [Coleção printJob](printjob.md) | Obter uma lista de trabalhos de impressão que estão na fila para processamento pela impressora. |
@@ -44,8 +44,8 @@ Herda de [printerBase](../resources/printerbase.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador do documento. Herdado de [printerBase](../resources/printerbase.md). Somente leitura.|
-|displayName|Cadeia de caracteres|O nome da impressora. Herdado de [printerBase](../resources/printerbase.md).|
+|id|String|O identificador do documento. Herdado de [printerBase](../resources/printerbase.md). Somente leitura.|
+|displayName|String|O nome da impressora. Herdado de [printerBase](../resources/printerbase.md).|
 |fabricante|String|O fabricante relatado pela impressora. Herdado de [printerBase](../resources/printerbase.md).|
 |modelo|String|O nome do modelo relatado pela impressora. Herdado de [printerBase](../resources/printerbase.md).|
 |registeredDateTime|DateTimeOffset|DateTimeOffset quando a impressora foi registrada. Somente leitura.|
@@ -53,9 +53,10 @@ Herda de [printerBase](../resources/printerbase.md).
 |isShared|Booliano|True se a impressora for compartilhada; false caso contrário. Somente leitura.|
 |hasPhysicalDevice|Booliano|True se a impressora tiver um dispositivo físico para impressão. Somente leitura.|
 |isAcceptingJobs|Booliano|Se a impressora está aceitando novos trabalhos de impressão no momento. Herdado de [printerBase](../resources/printerbase.md).|
-|location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora. Herdado de [printerBase](../resources/printerbase.md).|
+|localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora. Herdado de [printerBase](../resources/printerbase.md).|
 |defaults|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora. Herdado de [printerBase](../resources/printerbase.md).|
 |capabilities|[printerCapabilities](printercapabilities.md)|Os recursos da impressora associados a esse compartilhamento de impressora. Herdado de [printerBase](../resources/printerbase.md).|
+|lastSeenDateTime|DateTimeOffset|O dateTimeOffset mais recente quando uma impressora interagiu com a Impressão Universal. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -97,7 +98,8 @@ Veja a seguir uma representação JSON do recurso.
   },
   "registeredDateTime": "String (timestamp)",
   "isShared": "Boolean",
-  "hasPhysicalDevice": "Boolean"
+  "hasPhysicalDevice": "Boolean",
+  "lastSeenDateTime": "String (timestamp)"
 }
 ```
 

@@ -1,22 +1,22 @@
 ---
-title: Listar classes
+title: Listar classes de um educationUser
 description: 'Recupere uma lista de objetos de classe. Se o token delegado for usado, os membros só poderão ver informações sobre suas próprias aulas. '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: de9a7585b45246a59818b6cac18ca048b3845374
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 054c5af5483c6cd85ebbf0e7fa110bb6f4a504a9
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053115"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231267"
 ---
-# <a name="list-classes"></a>Listar classes
+# <a name="list-classes-of-an-educationuser"></a>Listar classes de um educationUser
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos de classe. Se o token delegado for usado, os membros só poderão ver informações sobre suas próprias aulas. 
+Obter os [recursos educationClass](../resources/educationclass.md) de que um [educationUser](../resources/educationuser.md) é membro.
 
 <!-- Please verify the revision to the delegated token text. -->
 
@@ -28,6 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+
+> [!NOTE]
+> Se o token delegado for usado, os membros só poderão ver informações sobre suas próprias aulas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

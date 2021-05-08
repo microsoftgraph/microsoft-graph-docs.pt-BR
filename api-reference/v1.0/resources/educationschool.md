@@ -1,102 +1,98 @@
 ---
 title: Tipo de recurso educationSchool
 description: 'Recurso usado para gerenciar aulas, professores e alunos da escola representada.  '
+author: mlafleur
 localization_priority: Normal
-author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: bd25283390e2683affe2e2cb636344c60a772a2e
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: b076b38e52bb8a7eb93a9eef35c866fc58e0e29a
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368163"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231854"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
 Namespace: microsoft.graph
 
-Recurso usado para gerenciar aulas, professores e alunos da escola representada.  
+Recurso usado para gerenciar aulas, professores e alunos da escola representada.
 
-## <a name="methods"></a>Methods
+Herda de [educationOrganization](../resources/educationorganization.md).
 
-| Método                                                   | Tipo de retorno                                    | Descrição                                                                                 |
-| :------------------------------------------------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| [Get](../api/educationschool-get.md)                     | [educationSchool](educationschool.md)          | Leia as propriedades e relações de um objeto **educationSchool**.                         |
-| [Adicionar classe](../api/educationschool-post-classes.md)      | [educationClass](educationclass.md)            | Adicione uma nova **educationClass** para a escola postando na propriedade de navegação de aulas.  |
-| [Listar classes](../api/educationschool-list-classes.md)   | Coleção [educationClass](educationclass.md) | Obtenha a coleção de objetos **educationClass**.                                               |
-| [Remover classe](../api/educationschool-delete-classes.md) | [educationClass](educationclass.md)            | Remova uma **educationClass** da escola por meio da propriedade de navegação de aulas.       |
-| [Adicionar usuário](../api/educationschool-post-users.md)         | [educationUser](educationuser.md)              | Adicione um novo **educationUser** para a escola postando na propriedade de navegação de **usuários**. |
-| [Listar usuários](../api/educationschool-list-users.md)       | Coleção [educationUser](educationuser.md)   | Obtenha a coleção de objetos **educationUser**.                                                |
-| [Remover usuário](../api/educationschool-delete-users.md)    | [educationUser](educationuser.md)              | Remova um **educationUser** da escola por meio da propriedade de navegação **users**.      |
-| [Atualizar](../api/educationschool-update.md)               | [educationSchool](educationschool.md)          | Atualize um objeto **educationSchool**.                                                       |
-| [Excluir](../api/educationschool-delete.md)               | Nenhum                                           | Exclua um objeto **educationSchool**.                                                       |
+## <a name="methods"></a>Métodos
+
+| Método                                                     | Tipo de retorno                                                   | Descrição                                                                                            |
+| :--------------------------------------------------------- | :------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [Listar educationSchools](../api/educationschool-list.md)    | Coleção [educationSchool](../resources/educationschool.md) | Obter uma lista dos [objetos educationSchool](../resources/educationschool.md) e suas propriedades.     |
+| [Criar educationSchool](../api/educationschool-post.md) | [educationSchool](../resources/educationschool.md)            | Crie um novo [objeto educationSchool.](../resources/educationschool.md)                                |
+| [Obter educationSchool](../api/educationschool-get.md)       | [educationSchool](../resources/educationschool.md)            | Leia as propriedades e as relações de um [objeto educationSchool.](../resources/educationschool.md) |
+| [Atualizar educationSchool](../api/educationschool-update.md) | [educationSchool](../resources/educationschool.md)            | Atualize as propriedades de um [objeto educationSchool.](../resources/educationschool.md)                 |
+| [Excluir educationSchool](../api/educationschool-delete.md) | Nenhum                                                          | Exclua um objeto [educationSchool](../resources/educationschool.md).                                  |
+| [delta](../api/educationschool-delta.md)                   | Coleção [educationSchool](../resources/educationschool.md) | Obter alterações incrementais na coleção de recursos.                                                    |
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade            | Tipo                                  | Descrição                                                                        |
-| :------------------ | :------------------------------------ | :--------------------------------------------------------------------------------- |
-| id                  | String                                | GUID desta escola.                                                               |
-| displayName         | String                                | Nome de exibição da escola.                                                        |
-| description         | String                                | Descrição da escola.                                                         |
-| status              | cadeia de caracteres                                | Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`. |
-| externalSource      | educationExternalSource               | Somente Leitura.  Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.        |
-| principalEmail      | Cadeia de caracteres                                | Endereço de email da entidade de segurança.                                                    |
-| principalName       | Cadeia de caracteres                                | Nome da entidade de segurança.                                                             |
-| externalPrincipalId | Cadeia de caracteres                                | ID da entidade de segurança no sistema de sincronização.                                                 |
-| highestGrade        | Cadeia de caracteres                                | Ensino de nível mais alto.                                                              |
-| lowestGrade         | Cadeia de caracteres                                | Ensino de nível mais baixo.                                                               |
-| schoolNumber        | Cadeia de caracteres                                | Número da escola.                                                                     |
-| externalId          | Cadeia de caracteres                                | ID da escola no sistema de sincronização.                                                    |
-| phone               | Cadeia de caracteres                                | Número de telefone da escola.                                                            |
-| address             | [physicalAddress](physicaladdress.md) | Endereço da escola.                                                             |
-| createdBy           | [identitySet](identityset.md)         | Entidade que criou a escola.                                                     |
+| Propriedade             | Tipo                                               | Descrição                                                                                                                                                          |
+| :------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| address              | [physicalAddress](../resources/physicaladdress.md) | Endereço da escola.                                                                                                                                               |
+| createdBy            | [identitySet](../resources/identityset.md)         | Entidade que criou a escola.                                                                                                                                       |
+| descrição          | String                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                             |
+| displayName          | String                                             | Nome de exibição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
+| externalId           | Cadeia de caracteres                                             | ID da escola no sistema de sincronização.                                                                                                                                      |
+| externalPrincipalId  | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização.                                                                                                                                   |
+| externalSource       | educationExternalSource                            | Fonte de onde essa organização foi criada. Herdado de [educationOrganization](../resources/educationorganization.md). Os valores possíveis são: `sis` e `manual`. |
+| externalSourceDetail | String                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                   |
+| highestGrade         | Cadeia de caracteres                                             | Ensino de nível mais alto.                                                                                                                                                |
+| id                   | String                                             | Identificador de objeto. Herdado da [entidade](../resources/entity.md).                                                                                                   |
+| lowestGrade          | Cadeia de caracteres                                             | Ensino de nível mais baixo.                                                                                                                                                 |
+| phone                | Cadeia de caracteres                                             | Número de telefone da escola.                                                                                                                                              |
+| principalEmail       | Cadeia de caracteres                                             | Endereço de email da entidade de segurança.                                                                                                                                      |
+| principalName        | Cadeia de caracteres                                             | Nome da entidade de segurança.                                                                                                                                               |
+| schoolNumber         | Cadeia de caracteres                                             | Número da escola.                                                                                                                                                       |
 
 ## <a name="relationships"></a>Relações
 
-| Relação | Tipo                                           | Descrição                             |
-| :----------- | :--------------------------------------------- | :-------------------------------------- |
-| classes      | Coleção [educationClass](educationclass.md) | Aulas ministradas na escola. Anulável. |
-| users        | Coleção [educationUser](educationuser.md)   | Usuários na escola. Anulável.          |
+| Relação       | Tipo                                                        | Descrição                                       |
+| :----------------- | :---------------------------------------------------------- | :------------------------------------------------ |
+| administrativeUnit | [administrativeUnit](../resources/administrativeunit.md)    | A administrativeUnit subjacente para essa escola. |
+| classes            | Coleção [educationClass](../resources/educationclass.md) | Aulas ministradas na escola. Anulável.           |
+| users              | Coleção [educationUser](../resources/educationuser.md)   | Usuários na escola. Anulável.                    |
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [],
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.educationSchool",
   "baseType": "microsoft.graph.educationOrganization",
-  "@odata.type": "microsoft.graph.educationSchool"
-}-->
+  "openType": false
+}
+-->
 
 ```json
 {
-  "id": "String",
+  "@odata.type": "#microsoft.graph.educationSchool",
+  "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
-  "status": "String",
   "externalSource": "String",
+  "externalSourceDetail": "String",
   "principalEmail": "String",
   "principalName": "String",
   "externalPrincipalId": "String",
-  "highestGrade": "String",
   "lowestGrade": "String",
+  "highestGrade": "String",
   "schoolNumber": "String",
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "externalId": "String",
-  "phone": "String"
+  "phone": "String",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "educationSchool resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-

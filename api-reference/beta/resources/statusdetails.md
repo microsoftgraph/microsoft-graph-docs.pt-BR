@@ -5,18 +5,20 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d817c0aa46dde6b49debd849d8fd2ae61e06a672
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ae11d370fb0a92a03e497aec75550f5407934839
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956814"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231903"
 ---
-# <a name="statusdetails-resource-type"></a>Tipo de recurso statusDetails
+# <a name="statusdetails-resource-type-deprecated"></a>Tipo de recurso statusDetails (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+>[!CAUTION] 
+> A API statusDetails está preterida e interromperá o retorno de dados em 31 de dezembro de 2021. Use o novo tipo [provisioningStatusInfo.](provisioningstatusinfo.md)
 
 Descreve o status do evento de provisionamento e os erros associados. Ele é herdado do [statusBase](/graph/api/resources/statusbase) e usado somente quando o status é definido como `failure` .  
 
@@ -25,11 +27,11 @@ Descreve o status do evento de provisionamento e os erros associados. Ele é her
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |status|statusBase|Os valores possíveis são: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`. Herdado do statusBase.|
-|additionalDetails|Cadeia de caracteres|Detalhes adicionais em caso de erro.|
-|errorCategory|Cadeia de caracteres|Categoriza o código de erro. Os valores possíveis são `Failure`, `NonServiceFailure`, `Success`.|
+|additionalDetails|String|Detalhes adicionais em caso de erro.|
+|errorCategory|String|Categoriza o código de erro. Os valores possíveis são `Failure`, `NonServiceFailure`, `Success`.|
 |errorCode|Cadeia de caracteres|Código de erro exclusivo se ocorrer algum. [Saiba Mais](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
-|motivo|Cadeia de caracteres|Resume o status e descreve por que o status aconteceu.|
-|recommendedAction|Cadeia de caracteres|Fornece a resolução do erro correspondente.|
+|motivo|String|Resume o status e descreve por que o status aconteceu.|
+|recommendedAction|String|Fornece a resolução do erro correspondente.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,39 +1,48 @@
 ---
-title: Listar membros
+title: Listar membros de uma educationClass
 description: Recupere os professores e alunos de uma aula. Se o token delegado for usado, os membros poderão ser vistos apenas por outros membros da aula.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d24ada4c11aec3ceddac736146f8e70c4d9baf86
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: eadc2f00fee83f3663ab983118f92ce84f8cc607
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048754"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232088"
 ---
-# <a name="list-members"></a>Listar membros
+# <a name="list-members-of-an-educationclass"></a>Listar membros de uma educationClass
 
 Namespace: microsoft.graph
 
-Recupere os professores e alunos de uma aula. Se o token delegado for usado, os membros poderão ser vistos apenas por outros membros da aula.
+Recupera os [membros educationUser](../resources/educationuser.md) de uma [educationClass](../resources/educationclass.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte  |
-|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All mais Member.Read.Hidden | 
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                         |
+| :------------------------------------- | :------------------------------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                                                 |
+| Delegado (conta pessoal da Microsoft) | Sem suporte                                                       |
+| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All mais Member.Read.Hidden |
+
+> [!NOTE]
+> Se o token delegado for usado, os membros só poderão ver informações sobre suas próprias aulas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/members
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`.
+
+Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
+
+Para obter mais informações sobre as opções de consulta OData, veja [ Parâmetros de consulta OData ](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |

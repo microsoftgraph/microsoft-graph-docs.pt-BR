@@ -1,22 +1,25 @@
 ---
 title: Excluir educationClass
 description: Exclua uma aula. Como uma aula também é um grupo universal, excluir uma aula exclui o grupo.
+author: mlafleur
 localization_priority: Normal
-author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 99c342f1682018af9c7bba8026c6a73139e6425b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4f3d509364168227766465ead899340b00f24f83
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028935"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232022"
 ---
 # <a name="delete-educationclass"></a>Excluir educationClass
 
 Namespace: microsoft.graph
 
-Exclua uma aula. Como uma aula também é um grupo universal, excluir uma aula exclui o grupo.
+Excluir uma [educationClass](../resources/educationclass.md).
+
+> [!IMPORTANT]
+> Como uma aula também é um grupo universal, excluir uma aula exclui o grupo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -97,4 +100,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

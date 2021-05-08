@@ -193,11 +193,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -311,7 +311,7 @@ items:
                 href: api/user-list-transitivememberof.md
           - name: Insights
             items:
-              - name: Insights do Office Graph
+              - name: Office Graph insights
                 href: resources/officegraphinsights.md
                 items:
                   - name: Listar compartilhados
@@ -380,10 +380,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: Atualizar configurações de Caixa de Correio
                     href: api/user-update-mailboxsettings.md
-              - name: Serviços de usuário do Outlook
+              - name: Outlook de usuário
                 expanded: true
                 items:
-                  - name: Usuário do Outlook
+                  - name: Outlook usuário
                     href: resources/outlookuser.md
                   - name: Criar categoria
                     href: api/outlookuser-post-mastercategories.md
@@ -413,7 +413,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -445,9 +445,9 @@ items:
                 href: api/todo-list-lists.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -645,7 +645,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1098,7 +1098,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1209,7 +1209,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1217,9 +1217,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter registro de chamada
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: Listar sessões
                     href: api/callrecords-session-list.md
@@ -3691,15 +3691,17 @@ items:
             href: resources/educationschool.md
             items:
               - name: Listar escolas
-                href: api/educationroot-list-schools.md
+                href: api/educationschool-list.md
               - name: Criar escola
-                href: api/educationroot-post-schools.md
+                href: api/educationschool-post.md
               - name: Obter escola
                 href: api/educationschool-get.md
               - name: Atualizar escola
                 href: api/educationschool-update.md
               - name: Excluir escola
                 href: api/educationschool-delete.md
+              - name: Obter alterações nas escolas
+                href: api/educationschool-delta.md
               - name: Listar classes
                 href: api/educationschool-list-classes.md
               - name: Criar classe
@@ -3715,18 +3717,18 @@ items:
           - name: Aulas
             href: resources/educationclass.md
             items:
-              - name: Listar escolas
-                href: api/educationclass-list-schools.md
               - name: Listar classes
-                href: api/educationroot-list-classes.md
+                href: api/educationclass-list.md
               - name: Criar classe
-                href: api/educationroot-post-classes.md
+                href: api/educationclass-post.md
               - name: Obter classe
                 href: api/educationclass-get.md
               - name: Atualizar classe
                 href: api/educationclass-update.md
               - name: Excluir classe
                 href: api/educationclass-delete.md
+              - name: Obter alterações nas classes
+                href: api/educationclass-delta.md
               - name: Listar professores
                 href: api/educationclass-list-teachers.md
               - name: Adicionar professor
@@ -3742,14 +3744,20 @@ items:
           - name: Usuários
             href: resources/educationuser.md
             items:
-              - name: Listar escolas
-                href: api/educationuser-list-schools.md
-              - name: Listar classes
-                href: api/educationuser-list-classes.md
+              - name: Listar usuários
+                href: api/educationuser-list.md
+              - name: Criar usuário
+                href: api/educationuser-post.md
               - name: Obter usuário
                 href: api/educationuser-get.md
               - name: Excluir usuário
                 href: api/educationuser-delete.md
+              - name: Obter alterações nos usuários
+                href: api/educationuser-delta.md
+              - name: Listar classes
+                href: api/educationuser-list-classes.md
+              - name: Listar classes ensinadas
+                href: api/educationuser-list-taughtclasses.md
       - name: Extensões
         items:
           - name: Extensões abertas
@@ -3781,7 +3789,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4066,7 +4074,7 @@ items:
                     href: api/authenticationflowspolicy-update.md
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Listar todos os métodos
                     href: api/authentication-list-methods.md
@@ -4099,7 +4107,7 @@ items:
                         href: api/windowshelloforbusinessauthenticationmethod-delete.md
               - name: Política de método de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethodspolicies-overview.md
                   - name: Política FIDO2
                     href: resources/fido2authenticationmethodconfiguration.md
@@ -4110,7 +4118,7 @@ items:
                         href: api/fido2authenticationmethodconfiguration-update.md
                       - name: Excluir
                         href: api/fido2authenticationmethodconfiguration-delete.md
-                  - name: Política do Microsoft Authenticator
+                  - name: Microsoft Authenticator política
                     href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: Obter
@@ -4470,7 +4478,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: Atualizar
                         href: api/identityapiconnector-update.md
-                      - name: Carregar um certificado de cliente
+                      - name: Upload um certificado de cliente
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
@@ -4671,7 +4679,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4782,7 +4790,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4872,7 +4880,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4894,7 +4902,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -4910,9 +4918,14 @@ items:
                     href: api/signin-list.md
                   - name: Obter entrada
                     href: api/signin-get.md
-          - name: Relatórios de uso do Microsoft 365
+              - name: Provisionamento
+                href: resources/provisioningobjectsummary.md
+                items:
+                  - name: Provisionamento de lista
+                    href: api/provisioningobjectsummary-list.md
+          - name: Microsoft 365 de uso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -4963,7 +4976,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: Obter armazenamento
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Ativações do Microsoft 365
+              - name: Microsoft 365 ativações
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: Obter detalhes do usuário
@@ -4972,7 +4985,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: Obter contagens de usuários
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Usuários ativos do Microsoft 365
+              - name: Microsoft 365 usuários ativos
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: Obter detalhes do usuário
@@ -4981,7 +4994,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: Obter contagens de usuários dos serviços
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Atividade de grupos do Microsoft 365
+              - name: Microsoft 365 atividade de grupos
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: Obter detalhe do grupo
@@ -5115,7 +5128,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -5141,7 +5154,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -5180,7 +5193,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -5239,7 +5252,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -5317,7 +5330,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -5555,7 +5568,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Enviar notificação ao usuário
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: Guia
             href: resources/teamstab.md
             items:
               - name: Guia no canal
@@ -5773,7 +5786,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
@@ -5794,7 +5807,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefa
+          - name: Tarefas
             href: resources/todotask.md
             items:
               - name: Listar tarefas

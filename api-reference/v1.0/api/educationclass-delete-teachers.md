@@ -1,22 +1,21 @@
 ---
-title: Remover professor
+title: 'Remover professor do educationClass '
 description: Remova um professor de uma aula.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8905fec82f2db5ad9605481dee54e36b4b5fb208
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f270dbc6a27c0beadb16cedb306aa8a7b0150b59
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943539"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231889"
 ---
-# <a name="remove-teacher"></a>Remover professor
-
+# <a name="remove-teacher-from-educationclass"></a>Remover professor do educationClass
 Namespace: microsoft.graph
 
-Remova um professor de uma aula.
+Remover professor de uma [educationClass](../resources/educationclass.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -95,4 +94,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
