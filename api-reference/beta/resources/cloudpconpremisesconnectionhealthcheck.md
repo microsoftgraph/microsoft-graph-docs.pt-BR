@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 576319abab0894530f363059cb2f07d787f80c7c
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: adc215b32635476320913b2d14aac33ec6ccfc95
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266826"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241146"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnectionHealthCheck
 
@@ -54,14 +54,13 @@ O resultado de uma verificação de saúde de conexão local do computador na nu
 |adJoinCheckUnknownError|A verificação de junção de domínio ativo falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
 |endpointConnectivityCheckUrlNotWhitelisted|A verificação de conectividade do ponto de extremidade falhou porque as URLs não estão na lista de permitir nas configurações de firewall de rede. Adicione as URLs à lista de autorizações para as configurações de firewall de rede. Consulte [a lista de URL necessárias para](/azure/virtual-desktop/safe-url-list) obter informações de URL.|
 |endpointConnectivityCheckUnknownError|A verificação de conectividade do ponto de extremidade falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
-|aadConnectivityCheckUnknownError|A verificação de conectividade do Azure Active Directory falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
+|aadConnectivityCheckUnknownError|A Azure Active Directory de conectividade falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
 |resourceAvailabilityCheckNoSubnetIP|A verificação de disponibilidade do recurso falhou porque não havia endereços IP disponíveis na sub-rede. Free up some or change to another subnet and retry.|
 |resourceAvailabilityCheckSubscriptionDisabled|A verificação de disponibilidade do recurso falhou devido a uma assinatura desabilitada do Azure. Reabilitar a assinatura.|
-|resourceAvailabilityCheckUnsupportedVNetRegion|O vNet selecionado não está em uma região do Azure com suporte.|
 |resourceAvailabilityCheckUnknownError|A verificação de disponibilidade do recurso falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
-|permissionCheckNoSubscriptionReaderRole|A entidade de serviço de computador na nuvem não tem permissões de leitor na assinatura especificada do Azure. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de leitor na assinatura do Azure para a entidade de serviço do Cloud PC.|
-|permissionCheckNoResourceGroupOwnerRole|A entidade de serviço do computador na nuvem não tem permissões de proprietário no grupo de recursos especificado. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de proprietário no grupo de recursos para a entidade de serviço do Cloud PC.|
-|permissionCheckNoVNetContributorRole|A entidade de serviço de computador na nuvem não tem permissões de colaborador de rede na rede virtual especificada. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de colaborador de rede para a entidade de serviço do Cloud PC. |
+|permissionCheckNoSubscriptionReaderRole|Cloud PC de serviço não tem permissões de leitor na assinatura especificada do Azure. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de leitor na assinatura do Azure para a entidade Cloud PC serviço.|
+|permissionCheckNoResourceGroupOwnerRole|Cloud PC de serviço não tem permissões de proprietário no grupo de recursos especificado. Trabalhe com o proprietário da assinatura para adicionar atribuição de função de proprietário no grupo de recursos da entidade Cloud PC de serviço.|
+|permissionCheckNoVNetContributorRole|Cloud PC de serviço não tem permissões de colaborador de rede na rede virtual especificada. Trabalhe com o proprietário da assinatura para adicionar a atribuição de função de colaborador de rede para a entidade Cloud PC de serviço. |
 |permissionCheckUnknownError|A verificação de permissão falhou devido a um erro desconhecido. Entre em contato com o suporte ao cliente.|
 |internalServerUnknownError|A verificação de saúde falhou devido a um erro de servidor interno desconhecido. Entre em contato com o suporte ao cliente.|
 
