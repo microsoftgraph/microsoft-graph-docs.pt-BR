@@ -5,58 +5,58 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: eba5a039143c55b4ac77610ac07a5a721ae3a3f4
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 859c3edf2e6f103dd484f5583a2cfafd63f3186e
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582729"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298575"
 ---
-# <a name="delete-organizationalbrandingproperties"></a><span data-ttu-id="8bcb3-103">Excluir organizationalBrandingProperties</span><span class="sxs-lookup"><span data-stu-id="8bcb3-103">Delete organizationalBrandingProperties</span></span>
+# <a name="delete-organizationalbrandingproperties"></a><span data-ttu-id="37a86-103">Excluir organizationalBrandingProperties</span><span class="sxs-lookup"><span data-stu-id="37a86-103">Delete organizationalBrandingProperties</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8bcb3-104">[Exclua um objeto organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)</span><span class="sxs-lookup"><span data-stu-id="8bcb3-104">Delete an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.</span></span>
+<span data-ttu-id="37a86-104">[Exclua um objeto organizationalBrandingProperties.](../resources/organizationalbrandingproperties.md)</span><span class="sxs-lookup"><span data-stu-id="37a86-104">Delete an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8bcb3-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="8bcb3-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="37a86-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="37a86-105">Permissions</span></span>
 
-<span data-ttu-id="8bcb3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8bcb3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="37a86-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="37a86-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="8bcb3-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8bcb3-108">Permission type</span></span>                        | <span data-ttu-id="8bcb3-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8bcb3-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="37a86-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="37a86-108">Permission type</span></span>                        | <span data-ttu-id="37a86-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="37a86-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="8bcb3-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8bcb3-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="8bcb3-111">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8bcb3-111">Organization.ReadWrite.All</span></span> |
-| <span data-ttu-id="8bcb3-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8bcb3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8bcb3-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8bcb3-113">Not supported.</span></span> |
-| <span data-ttu-id="8bcb3-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8bcb3-114">Application</span></span>                            | <span data-ttu-id="8bcb3-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8bcb3-115">Not supported.</span></span> |
+| <span data-ttu-id="37a86-110">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="37a86-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="37a86-111">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="37a86-111">Organization.ReadWrite.All</span></span> |
+| <span data-ttu-id="37a86-112">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="37a86-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="37a86-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="37a86-113">Not supported.</span></span> |
+| <span data-ttu-id="37a86-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="37a86-114">Application</span></span>                            | <span data-ttu-id="37a86-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="37a86-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8bcb3-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8bcb3-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="37a86-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="37a86-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /organization/{id}/branding
+DELETE /organization/{tenant id}/branding
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8bcb3-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8bcb3-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="37a86-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="37a86-117">Request headers</span></span>
 
-| <span data-ttu-id="8bcb3-118">Nome</span><span class="sxs-lookup"><span data-stu-id="8bcb3-118">Name</span></span>          | <span data-ttu-id="8bcb3-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="8bcb3-119">Description</span></span>   |
+| <span data-ttu-id="37a86-118">Nome</span><span class="sxs-lookup"><span data-stu-id="37a86-118">Name</span></span>          | <span data-ttu-id="37a86-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="37a86-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="8bcb3-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="8bcb3-120">Authorization</span></span> | <span data-ttu-id="8bcb3-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8bcb3-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="37a86-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="37a86-120">Authorization</span></span> | <span data-ttu-id="37a86-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="37a86-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8bcb3-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8bcb3-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="37a86-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="37a86-123">Request body</span></span>
 
-<span data-ttu-id="8bcb3-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="8bcb3-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="37a86-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="37a86-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8bcb3-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="8bcb3-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="37a86-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="37a86-125">Response</span></span>
 
-<span data-ttu-id="8bcb3-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8bcb3-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="37a86-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="37a86-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="8bcb3-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="8bcb3-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="37a86-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="37a86-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="8bcb3-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8bcb3-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="37a86-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="37a86-129">Request</span></span>
 
-<span data-ttu-id="8bcb3-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8bcb3-130">The following is an example of the request.</span></span>
+<span data-ttu-id="37a86-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="37a86-130">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="8bcb3-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="8bcb3-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="37a86-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="37a86-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_organizationalbrandingproperties_1"
@@ -65,28 +65,28 @@ DELETE /organization/{id}/branding
 ```http
 DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 ```
-# <a name="c"></a>[<span data-ttu-id="8bcb3-132">C#</span><span class="sxs-lookup"><span data-stu-id="8bcb3-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="37a86-132">C#</span><span class="sxs-lookup"><span data-stu-id="37a86-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-organizationalbrandingproperties-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8bcb3-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8bcb3-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="37a86-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="37a86-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-organizationalbrandingproperties-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8bcb3-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8bcb3-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="37a86-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="37a86-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-organizationalbrandingproperties-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="8bcb3-135">Java</span><span class="sxs-lookup"><span data-stu-id="8bcb3-135">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="37a86-135">Java</span><span class="sxs-lookup"><span data-stu-id="37a86-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-organizationalbrandingproperties-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="8bcb3-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="8bcb3-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="37a86-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="37a86-136">Response</span></span>
 
-<span data-ttu-id="8bcb3-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8bcb3-137">The following is an example of the response.</span></span>
+<span data-ttu-id="37a86-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="37a86-137">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
