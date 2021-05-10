@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ff0f60841fe852d67e5c76268fe4e00ce277af11
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bc9d9c244f955e2479cf79ded3bd7ee6ac4a31b7
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048593"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298373"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Criar accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-root.md)crie um novo [objeto accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Essa operação é usada para atribuir um usuário a um pacote de acesso ou para remover uma atribuição de pacote de acesso.
+No [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), crie um novo [objeto accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Essa operação é usada para atribuir um usuário a um pacote de acesso ou para remover uma atribuição de pacote de acesso.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | EntitlementManagement.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,9 @@ Para que um administrador solicite a criação de uma atribuição para um usuá
 
 Para que um administrador solicite a remoção de uma atribuição, o valor da propriedade **requestType** é , e a propriedade `AdminRemove` **accessPackageAssignment** contém a propriedade **id** que identifica [o accessPackageAssignment](../resources/accesspackageassignment.md) sendo removido.
 
-Para um usuário que não seja administrador solicitar a criação de uma atribuição por conta própria, o valor da propriedade **requestType** é , e a propriedade accessPackageAssignment contém a com a ID dos próprios usuários, a propriedade `UserAdd`  `targetId` **assignmentPolicyId** que identifica [o accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)e a propriedade **accessPackageId** identificando [o accessPackage](../resources/accesspackage.md).  O usuário que faz a solicitação já deve existir no diretório.
+Para um usuário não administrador solicitar a criação de sua própria atribuição para uma primeira atribuição ou renovação de atribuição, o valor da **propriedade requestType** é `UserAdd` . A **propriedade accessPackageAssignment** contém `targetId` a com os `id` usuários. A **propriedade assignmentPolicyId** identifica [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). A **propriedade accessPackageId** identifica [o accessPackage](../resources/accesspackage.md). O usuário que faz a solicitação já deve existir no diretório.
+
+Para um usuário que não seja administrador solicitar estender suas próprias atribuições, o valor da **propriedade requestType** é `UserExtend` . A **propriedade accessPackageAssignment** contém `targetId` a com os `id` usuários. A **propriedade assignmentPolicyId** identifica [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). A **propriedade accessPackageId** identifica [o accessPackage](../resources/accesspackage.md). O usuário que faz a solicitação já deve existir no diretório.
 
 ## <a name="response"></a>Resposta
 
@@ -192,9 +194,6 @@ Content-type: application/json
 
 
 
----
-
-
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
@@ -275,6 +274,67 @@ Content-type: application/json
             "isSingleLineQuestion": false
         }
     }]
+}
+```
+### <a name="example-3-request-a-package-and-provide-a-justification"></a>Exemplo 3: solicitar um pacote e fornecer uma justificativa
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra como solicitar um pacote de acesso e fornecer justificativa ao aprovador.
+ 
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "UserAdd",
+    "accessPackageAssignment": {
+        "accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b"
+    },
+    "justification":"Need access to New Hire access package"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "id": "813bbc6b-31f5-4cdf-8fed-1ba4284a1e3f",
+    "requestType": "UserAdd",
+    "requestState": "Submitted",
+    "requestStatus": "Accepted",
+    "isValidationOnly": false,
+    "expirationDateTime": null,
+    "justification": "Requested for the new task.",
+    "answers": [],
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": null
+        }
+    }
 }
 ```
 

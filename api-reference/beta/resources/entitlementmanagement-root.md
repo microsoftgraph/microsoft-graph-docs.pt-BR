@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 7dc9ec20ef316cd0c6e5e305d780099f61901e6f
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f4723923a6b05b13fb8076b3e69ccbf0c1295f4f
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761322"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298556"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhando com a API de gerenciamento de direitos do Azure AD
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O gerenciamento de direitos do Azure Active Directory (Azure AD) pode ajudá-lo a gerenciar o acesso a grupos, aplicativos e sites do SharePoint Online para usuários internos e usuários fora da sua organização.
+Azure Active Directory (Azure AD) gerenciamento de direitos pode ajudá-lo a gerenciar o acesso a grupos, aplicativos e sites SharePoint Online para usuários internos, bem como usuários fora da sua organização.
 
 Ao criar pacotes de acesso com as funções que os usuários precisam ter nesses recursos e definir políticas para quem pode solicitar um pacote de acesso e por quanto tempo eles podem ter uma atribuição para um pacote de acesso, você pode reger o ciclo de vida do acesso para usuários internos e externos.
 
@@ -31,14 +31,14 @@ Os tipos de recursos de gerenciamento de direitos incluem:
 - [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md): Indica a função específica do recurso que um assunto foi atribuído por meio de uma atribuição de pacote de acesso.
 - [accessPackageCatalog](accesspackagecatalog.md): um contêiner para pacotes de acesso.
 - [accessPackageResourceRequest](accesspackageresourcerequest.md): Uma solicitação para adicionar um recurso a um catálogo de pacotes de acesso.
-- [accessPackageResourceEnvironment](accesspackageresourceenvironment.md): uma referência à localização geográfica do recurso. Aplicável a sites multi-geo do SharePoint Online.
+- [accessPackageResourceEnvironment](accesspackageresourceenvironment.md): uma referência à localização geográfica do recurso. Aplicável a sites multi-SharePoint Online.
 - [connectedOrganization](connectedorganization.md): uma organização conectada para usuários externos que podem solicitar acesso.
 - [entitlementManagementSettings](entitlementmanagementsettings.md): configurações de todo o locatário para o gerenciamento de direitos do Azure AD.
 - [aprovação](approval.md): representa as decisões associadas a uma solicitação de pacote de acesso.
 
 For a tutorial that shows you how to use entitlement management to create a package of resources that internal users can self-service request, see [Create an access package using Microsoft Graph APIs](/graph/tutorial-access-package-api).
 
-Observe que o recurso de gerenciamento de direitos, incluindo a API, está incluído no Azure AD Premium P2. O locatário em que o gerenciamento de direitos está sendo usado deve ter uma assinatura válida comprada ou avaliação do Azure AD Premium P2 ou EMS E5.
+Observe que o recurso de gerenciamento de direitos, incluindo a API, está incluído no Azure AD Premium P2. O locatário em que o gerenciamento de direitos está sendo usado deve ter uma assinatura válida comprada ou de avaliação do Azure AD Premium assinatura P2 ou EMS E5.
 
 ## <a name="methods"></a>Métodos
 
@@ -47,12 +47,13 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 | [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Leia as propriedades de **um objeto entitlementManagementSettings.** |
-| [Update](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualize as propriedades de **um objeto entitlementManagementSettings.** |
+| [Atualizar](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualize as propriedades de **um objeto entitlementManagementSettings.** |
 | [Listar accessPackages](../api/accesspackage-list.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista de **objetos accessPackage.** |
 | [Criar accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Crie um novo **objeto accessPackage.** |
 | [Obter accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Ler propriedades e relações de um **objeto accessPackage.** |
-| [Atualizar accessPackage](../api/accesspackage-update.md)|Nenhum | Atualize as propriedades de um **objeto accesspackage.** |
+| [Atualizar accessPackage](../api/accesspackage-update.md)|Nenhum(a) | Atualize as propriedades de um **objeto accesspackage.** |
 | [Excluir accessPackage](../api/accesspackage-delete.md) | | Excluir **accessPackage**. |
+| [FilterByCurrentUser](../api/accesspackage-filterbycurrentuser.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista de **objetos accessPackage** filtrados no usuário de entrada. |
 | [Listar accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [Coleção accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Recupere uma lista de **objetos accessPackageResourceRoleScope** para um pacote de acesso. |
 | [Criar accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Crie um novo **objeto accessPackageResourceRoleScope** para um pacote de acesso. |
 | [Listar accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [coleção accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Recupere uma lista de **objetos accessPackageAssignmentPolicy.** |
@@ -63,13 +64,16 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Listar accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [coleção accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Recupere uma lista de **objetos accessPackageAssignmentRequest.** |
 | [Criar accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Crie um novo **accessPackageAssignmentRequest**. |
 | [Obter accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Leia propriedades e relações de um **objeto accessPackageAssignmentRequest.** |
+|[FilterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[coleção accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Recupere a lista de **objetos accessPackageAssignmentRequest** filtrados no usuário de entrada.|
+|[cancel](../api/accesspackageassignmentrequest-cancel.md)|[coleção accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Cancele **um objeto accessPackageAssignmentRequest** que está em estado cancelável: `accepted` , , , `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated` .|
 | [Listar accessPackageAssignments](../api/accesspackageassignment-list.md) | [Coleção accessPackageAssignment](accesspackageassignment.md) | Recupere uma lista de **objetos accessPackageAssignment.** |
+|[FilterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[Coleção accessPackageAssignment](../resources/accesspackageassignment.md)|Recupere a lista de **objetos accessPackageAssignment** filtrados no usuário de entrada.|
 | [Listar accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [Coleção accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) | Recupere uma lista de **objetos accessPackageAssignmentResourceRole.** |
 | [Obter accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Recupere um **objeto accessPackageAssignmentResourceRole.** |
 | [Listar accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [Coleção accessPackageCatalog](accesspackagecatalog.md) | Recupere uma lista de **objetos accessPackageCatalogs.** |
 | [Criar accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Crie um novo **objeto accessPackageCatalog.** |
 | [Obter accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Ler propriedades e relações de um **objeto accessPackageCatalog.** |
-| [Atualizar accessPackageCatalog](../api/accesspackagecatalog-update.md)|Nenhum | Atualize as propriedades de um **objeto accessPackageCatalog.** |
+| [Atualizar accessPackageCatalog](../api/accesspackagecatalog-update.md)|Nenhum(a) | Atualize as propriedades de um **objeto accessPackageCatalog.** |
 | [Excluir accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Excluir um **accessPackageCatalog**. |
 | [Listar recursos do accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresources.md) | [Coleção accessPackageResource](accesspackageresource.md) | Recupere uma lista de **objetos accessPackageResource.** |
 | [Listar funções de recurso accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [Coleção accessPackageResourceRole](accesspackageresourcerole.md) | Recupere uma lista de **objetos accessPackageResourceRole.** |
@@ -80,17 +84,17 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Listar connectedOrganizations](../api/connectedorganization-list.md) | [Coleção connectedOrganization](connectedorganization.md) | Recupere uma lista de **objetos connectedOrganization.** |
 | [Criar connectedOrganization](../api/connectedorganization-post.md) | [connectedOrganization](connectedorganization.md) | Crie um novo **objeto connectedOrganization.** |
 | [Obter connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Leia propriedades e relações de um **objeto connectedOrganization.** |
-| [Atualizar connectedOrganization](../api/connectedorganization-update.md) |Nenhum | Atualizar uma **connectedOrganization**. |
-| [Excluir connectedOrganization](../api/connectedorganization-delete.md) |Nenhum | Excluir uma **connectedOrganization**. |
+| [Atualizar connectedOrganization](../api/connectedorganization-update.md) |Nenhum(a) | Atualizar uma **connectedOrganization**. |
+| [Excluir connectedOrganization](../api/connectedorganization-delete.md) |Nenhum(a) | Excluir uma **connectedOrganization**. |
 |[Listar internalSponsors](../api/connectedorganization-list-internalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista dos **patrocinadores internos de uma connectedOrganization.** |
 |[Listar externalSponsors](../api/connectedorganization-list-externalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista de **patrocinadores externos de uma connectedOrganization.** |
-|[Adicionar internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Nenhum | Adicione um usuário ou grupo aos patrocinadores internos de um **connectedOrganization.** |
-|[Adicionar externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Nenhum | Adicione um usuário ou grupo aos patrocinadores **externos de um connectedOrganization.** |
-|[Remover internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Nenhum | Remova um usuário ou grupo dos patrocinadores **internos de uma connectedOrganization.** |
+|[Adicionar internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Nenhum(a) | Adicione um usuário ou grupo aos patrocinadores internos de um **connectedOrganization.** |
+|[Adicionar externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Nenhum(a) | Adicione um usuário ou grupo aos patrocinadores **externos de um connectedOrganization.** |
+|[Remover internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Nenhum(a) | Remova um usuário ou grupo dos patrocinadores **internos de uma connectedOrganization.** |
 |[Obter aprovação](../api/approval-get.md) | [aprovação](approval.md) | Recupere as propriedades de um **objeto de aprovação.** |
 |[Aprovação de listaSteps](../api/approval-list-steps.md) | [Coleção approvalStep](approvalstep.md) | Listar **os objetos approvalStep** associados a um **objeto de** aprovação. |
 |[Obter approvalStep](../api/approvalstep-get.md) | [approvalStep](approvalstep.md) | Recupere as propriedades de um **objeto approvalStep.** |
-|[Atualizar approvalStep](../api/approvalstep-update.md) | Nenhum | Aplicar aprovar ou negar decisão em um **objeto approvalStep.** |
+|[Atualizar approvalStep](../api/approvalstep-update.md) | Nenhum(a) | Aplicar aprovar ou negar decisão em um **objeto approvalStep.** |
 
 
 ## <a name="types"></a>Tipos

@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 6004a27fa12fd7246830e463f67b43c2872a0157
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 31c803ccc82deaacddd81a70691e6570a044b5a1
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067198"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298535"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -76,7 +76,7 @@ Namespace: microsoft.graph
 |Inteiro|
 |Referência|
 |Binário|
-|Boolean|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -92,7 +92,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum|
+|Nenhum(a)|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -816,7 +816,7 @@ Namespace: microsoft.graph
 |site|
 |list|
 |listItem|
-|Unidade|
+|drive|
 
 ### <a name="searchalterationtype-values"></a>searchAlterationType values
 
@@ -1249,7 +1249,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| description
+| descrição
 | referência
 
 
@@ -1509,7 +1509,7 @@ Valores possíveis para funções de email.
 | Membro    | Valor | Descrição             |
 | :-------- | :---- | :---------------------- |
 | desconhecido   | 0     | Função Desconhecida.           |
-| sender    | 1     | Remetente do email.    |
+| remetente    | 1     | Remetente do email.    |
 | destinatário | 2     | Destinatário do email. |
 
 ### <a name="logontype-values"></a>valores logonType
@@ -2174,3 +2174,50 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |groupChat |1        |Indica que o aplicativo Teams pode ser instalado em um chat de grupo e está autorizado a acessar os dados desse chat de grupo.|
 |pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
+
+### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>valores roleAssignmentScheduleRequestFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|aprovador|
+|unknownFutureValue|
+
+### <a name="roleassignmentschedulefilterbycurrentuseroptions-values"></a>valores roleAssignmentScheduleFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### <a name="roleassignmentscheduleinstancefilterbycurrentuseroptions-values"></a>valores roleAssignmentScheduleInstanceFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulerequestfilterbycurrentuseroptions-values"></a>valores roleEligibilityScheduleRequestFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|aprovador|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulefilterbycurrentuseroptions-values"></a>valores roleEligibilityScheduleFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### <a name="roleeligibilityscheduleinstancefilterbycurrentuseroptions-values"></a>valores roleEligibilityScheduleInstanceFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
