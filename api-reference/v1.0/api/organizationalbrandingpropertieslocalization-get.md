@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c6118a89c12f1de111e246e9018fbc066afd4470
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8760803c6363cacfe41d239c6031a7e81c18492f
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052205"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298720"
 ---
 # <a name="get-localized-organizationalbrandingproperties"></a>Get Localized organizationalBrandingProperties
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Organization.Read.All, User.Read, User.Read.All, User.ReadBasic.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{id}/branding/localizations/{locale}
+GET /organization/{tenant id}/branding/localizations/{locale}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
