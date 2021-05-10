@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 24714df9c4f8ac26167eb005dfef8f3b189694d2
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 870aa1e51af2202ae81e856771bd48cdc515d35b
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232099"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298549"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -167,7 +167,7 @@ Esse recurso permite:
 | assignedPlans | Coleção [assignedPlan](assignedplan.md) | Os planos que são atribuídos ao usuário. <br><br>Retornado apenas em `$select`. Somente leitura. Não anulável. |
 | birthday | DateTimeOffset | O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z` <br><br>Retornado apenas em `$select`. |
 | businessPhones | Coleção de cadeias de caracteres | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade. <br><br>Retornado por padrão. Somente leitura para usuários sincronizados de diretório local. |
-| city | String | A cidade em que o usuário está localizado. O comprimento máximo é de 128 caracteres. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
+| city | Cadeia de caracteres | A cidade em que o usuário está localizado. O comprimento máximo é de 128 caracteres. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
 | companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O comprimento máximo do nome da empresa é 64 caracteres.<br><br>Retornado apenas em `$select`. |
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
 | country | String | País/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". O comprimento máximo é de 128 caracteres.<br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
@@ -179,7 +179,7 @@ Esse recurso permite:
 | employeeHireDate | DateTimeOffset | A data e a hora em que o usuário foi contratado ou começará a trabalhar em caso de futura contratação. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`.|
 | employeeId | String | O identificador de funcionário atribuído ao usuário pela organização. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`.|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Representa os dados da organização (por exemplo, divisão e costCenter) associados a um usuário. <br><br>Retornado apenas em `$select`.|
-| employeeType | String | Captura o tipo de trabalhador corporativo. Por exemplo, `Employee`, `Contractor`, `Consultant` ou `Vendor`. Retornado apenas em `$select`. Suporta o `$filter` com o operador `eq`.|
+| employeeType | String | Captura o tipo de trabalhador corporativo. Por exemplo, `Employee`, `Contractor`, `Consultant` ou `Vendor`. Retornado apenas em `$select`. Suporta o `$filter` com o `eq` operador.|
 | externalUserState | String | Para um usuário externo convidado para o locatário usando a [API de convite](../api/invitation-post.md), essa propriedade representa o status do convite do usuário convidado. Para usuários convidados, o estado pode ser `PendingAcceptance` ou `Accepted` ou `null` para todos os outros usuários. <br><br>Retornado apenas em `$select`. Suporta o `$filter` com os valores compatíveis. Por exemplo: `$filter=externalUserState eq 'PendingAcceptance'`. |
 | externalUserStateChangeDateTime | String | Mostra o carimbo de hora da alteração mais recente da propriedade externalUserState. <br><br>Retornado apenas em `$select`. |
 | FaxNumber | String | O número de fax do usuário. <br><br>Retornado apenas em `$select`. |
@@ -191,11 +191,11 @@ Esse recurso permite:
 | infoCatalogs | Conjunto de cadeias de caracteres | Identifica os segmentos de informações atribuídos ao usuário. Retornado por padrão. |
 | interests | Coleção de cadeias de caracteres | Uma lista para o usuário descrever os interesses dele. <br><br>Retornado apenas em `$select`. |
 | isResourceAccount | Boolean | Não use – reservado para uso futuro. |
-| jobTitle | String | O cargo do usuário. O comprimento máximo é de 128 caracteres. <br><br>Retornado por padrão. Oferece suporte para `$filter`.|
+| jobTitle | String | O cargo do usuário. O comprimento máximo é de 128 caracteres. <br><br>Retornado por padrão. Suporte para `$filter` (`eq` e `startsWith` operadores).|
 | lastPasswordChangeDateTime | DateTimeOffset | A hora em que o usuário do Azure AD alterou a senha dele pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z` <br><br>Retornado apenas em `$select`. Somente leitura. |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
 | licenseAssignmentStates | Coleção [licenseAssignmentState](licenseassignmentstate.md) | Estado das atribuições de licenças para esse usuário. <br><br>Retornado apenas em `$select`. Somente leitura. |
-| email | String | O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com".<br>OBSERVAÇÃO: embora essa propriedade possa conter caracteres acentuados, eles podem causar problemas de acesso aos outros aplicativos da Microsoft para o usuário.<br><br>Retornado por padrão. Oferece suporte para `$filter` e `endsWith`. |
+| email | String | O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com".<br>OBSERVAÇÃO: embora essa propriedade possa conter caracteres acentuados, eles podem causar problemas de acesso aos aplicativos primários do usuário.<br><br>Retornado por padrão. Oferece suporte para `$filter` e `endsWith`. |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Configurações da caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada.<br><br>Retornado apenas em `$select`. Com suporte apenas para Obter API de usuário (`GET /users/{id}` ou `GET /me`). |
 | mailNickname | String | O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. O comprimento máximo é de 64 caracteres.<br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
 | mobilePhone | String | O número de celular principal do usuário. <br><br>Retornado por padrão. Somente leitura para usuários sincronizados de diretório local. |

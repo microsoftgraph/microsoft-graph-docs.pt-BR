@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: eb80f5c031be6729530b7bb4e506de1b0b22e579
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: dac4e330c7ba589536a07844018e2a83a834f2aa
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232071"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298713"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -163,7 +163,7 @@ Esse recurso permite:
 |imAddresses|String collection|Os endereços do Protocolo de Início de Sessão (SIP) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
 |isResourceAccount|Boolean| Não use – reservado para uso futuro.|
-|jobTitle|String|O cargo do usuário. O comprimento máximo é de 128 caracteres. Retornado por padrão. Oferece suporte para `$filter`.|
+|jobTitle|String|O cargo do usuário. O comprimento máximo é de 128 caracteres. Retornado por padrão. Suporte para `$filter` (`eq` e `startsWith` operadores).|
 |lastPasswordChangeDateTime| DateTimeOffset | A hora em que o usuário do Azure AD alterou a senha dele pela última vez. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
 |licenseAssignmentStates|Coleção [licenseAssignmentState](licenseassignmentstate.md)|Estado das atribuições de licença para este usuário. Somente leitura.|
