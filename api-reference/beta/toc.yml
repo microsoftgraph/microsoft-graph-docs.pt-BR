@@ -10441,6 +10441,72 @@ items:
                         href: api/unifiedroleassignmentmultiple-update.md
                       - name: Excluir
                         href: api/unifiedroleassignmentmultiple-delete.md
+                  - name: Solicitação de atribuição de função
+                    href: resources/unifiedroleassignmentschedulerequest.md
+                    items:
+                      - name: Lista
+                        href: api/unifiedroleassignmentschedulerequest-list.md
+                      - name: Obter
+                        href: api/unifiedroleassignmentschedulerequest-get.md
+                      - name: Criar
+                        href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+                      - name: Atualizar
+                        href: api/unifiedroleassignmentschedulerequest-update.md
+                      - name: Cancelar
+                        href: api/unifiedroleassignmentschedulerequest-cancel.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                  - name: Solicitação de qualificação de função
+                    href: resources/unifiedroleeligibilityschedulerequest.md
+                    items:
+                      - name: Lista
+                        href: api/unifiedroleeligibilityschedulerequest-list.md
+                      - name: Obter
+                        href: api/unifiedroleeligibilityschedulerequest-get.md
+                      - name: Criar
+                        href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+                      - name: Atualizar
+                        href: api/unifiedroleeligibilityschedulerequest-update.md
+                      - name: Cancelar
+                        href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+                  - name: Agendamento de atribuição de função
+                    href: resources/unifiedRoleAssignmentSchedule.md
+                    items:
+                      - name: Lista
+                        href: api/unifiedroleassignmentschedule-list.md
+                      - name: Obter
+                        href: api/unifiedroleassignmentschedule-get.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                  - name: Agenda de qualificação de função
+                    href: resources/unifiedRoleEligibilitySchedule.md
+                    items:
+                      - name: Lista
+                        href: api/unifiedRoleEligibilitySchedule-list.md
+                      - name: Obter
+                        href: api/unifiedRoleEligibilitySchedule-get.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/unifiedRoleEligibilitySchedule-filterbycurrentuser.md
+                  - name: Instância de atribuição de função
+                    href: resources/unifiedRoleAssignmentScheduleInstance.md
+                    items:
+                      - name: Lista
+                        href: api/unifiedRoleAssignmentScheduleInstance-list.md
+                      - name: Obter
+                        href: api/unifiedRoleAssignmentScheduleInstance-get.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/unifiedRoleAssignmentScheduleInstance-filterbycurrentuser.md
+                  - name: Instância de qualificação de função
+                    href: resources/unifiedRoleEligibilityScheduleInstance.md
+                    items:
+                      - name: Lista
+                        href: api/unifiedRoleEligibilityScheduleInstance-list.md
+                      - name: Obter
+                        href: api/unifiedRoleEligibilityScheduleInstance-get.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
           - name: Identidade e entrada
             items:
               - name: Política de eventos de autenticação
@@ -10960,6 +11026,33 @@ items:
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: Excluir de exclui
                             href: api/permissiongrantpolicy-delete-excludes.md
+                  - name: Política de gerenciamento de função
+                    href: resources/unifiedRoleManagementPolicy.md
+                    items:
+                      - name: Lista
+                        href: api/unifiedrolemanagementpolicy-list.md
+                      - name: Obter
+                        href: api/unifiedrolemanagementpolicy-get.md
+                      - name: Listar regras efetivas
+                        href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+                      - name: Listar regras
+                        href: api/unifiedrolemanagementpolicy-list-rules.md
+                  - name: Atribuição de política de gerenciamento de função
+                    href: resources/unifiedRoleManagementPolicyAssignment.md
+                    items:
+                      - name: Lista
+                        href: api/unifiedRoleManagementPolicyAssignment-list.md
+                      - name: Obter
+                        href: api/unifiedRoleManagementPolicyAssignment-get.md
+                  - name: Regra de política de gerenciamento de função
+                    href: resources/unifiedRoleManagementPolicyRule.md
+                    items:
+                      - name: Lista
+                        href: api/unifiedRoleManagementPolicyRule-list.md
+                      - name: Obter
+                        href: api/unifiedRoleManagementPolicyRule-get.md
+                      - name: Atualizar
+                        href: api/unifiedRoleManagementPolicyRule-update.md
                   - name: Política de emissão de tokens
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -11235,7 +11328,7 @@ items:
                       - name: Listar
                         href: api/accessreviewhistorydefinition-list.md
                       - name: Criar
-                        href: api/accessreviewhistorydefinition-create.md
+                        href: api/accessreviewhistorydefinition-post.md
                       - name: Gerar URI de download
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
               - name: Avaliações do Access (herdação)
@@ -11346,11 +11439,15 @@ items:
                         href: api/accesspackage-update.md
                       - name: Excluir
                         href: api/accesspackage-delete.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/accesspackage-filterbycurrentuser.md
                   - name: Atribuição de pacote do Access
                     href: resources/accesspackageassignment.md
                     items:
                       - name: List
                         href: api/accesspackageassignment-list.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/accesspackageassignment-filterbycurrentuser.md
                   - name: Aprovação de atribuição de pacote de acesso
                     href: resources/approval.md
                     items:
@@ -11386,6 +11483,10 @@ items:
                         href: api/accesspackageassignmentrequest-post.md
                       - name: Obter
                         href: api/accesspackageassignmentrequest-get.md
+                      - name: Filtrar pelo usuário atual
+                        href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+                      - name: Cancelar
+                        href: api/accesspackageassignmentrequest-cancel.md
                   - name: Função de recurso de atribuição de pacote de acesso
                     href: resources/accesspackageassignmentresourcerole.md
                     items:
@@ -12220,9 +12321,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Configurações
+              - name: Settings
                 items:
-                  - name: Configurações
+                  - name: Settings
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -12627,7 +12728,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -13003,7 +13104,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -13370,7 +13471,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Enviar notificação ao usuário
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Guia
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: Guia no canal
@@ -13781,11 +13882,11 @@ items:
                 href: api/workbook-list-comments.md
               - name: Obter
                 href: api/workbookcomment-get.md
-              - name: Listar respostas
+              - name: Listar respostas da mensagem
                 href: api/workbookcomment-list-replies.md
-              - name: Criar resposta
+              - name: Criar Resposta
                 href: api/workbookcomment-post-replies.md
-              - name: Obter resposta
+              - name: Obter resposta da mensagem
                 href: api/workbookcommentreply-get.md
           - name: Planilha
             href: resources/workbookworksheet.md
@@ -13846,13 +13947,13 @@ items:
                 href: api/table-list-rows.md
               - name: Criar linha
                 href: api/table-post-rows.md
-              - name: Excluir linha
+              - name: Excluir linha de tabela
                 href: api/tablerow-delete.md
               - name: Listar colunas
                 href: api/table-list-columns.md
               - name: Criar coluna
                 href: api/table-post-columns.md
-              - name: Excluir coluna
+              - name: Excluir coluna de tabela
                 href: api/tablecolumn-delete.md
               - name: Obter intervalo
                 href: api/table-range.md
