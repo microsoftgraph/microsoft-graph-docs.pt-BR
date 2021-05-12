@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-title: tipo de recurso permission
-description: recurso de permissão que representa uma permissão de compartilhamento concedida para um driveItem
+title: tipo de recurso de permissão
+description: recurso permission representando uma permissão de compartilhamento concedida para um driveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c372436fc4c4e65f583ca95d7a208e0fe9a5df14
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: e7eb160bf7899feec9afda49c6087072aab83c3b
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177225"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335601"
 ---
-# <a name="permission-resource-type"></a>tipo de recurso permission
+# <a name="permission-resource-type"></a>tipo de recurso de permissão
 
 Namespace: microsoft.graph
 
@@ -22,9 +21,9 @@ Namespace: microsoft.graph
 O **recurso de** permissão fornece informações sobre uma permissão de compartilhamento concedida para um recurso [driveItem.](driveitem.md)
 
 As permissões de compartilhamento têm várias formas diferentes.
-O **recurso** de permissão representa esses diferentes formulários por meio de facetas no recurso.
+O **recurso de** permissão representa esses diferentes formulários por meio de facetas no recurso.
 
->**Observação:** As bibliotecas de documentos do OneDrive for Business e do SharePoint não retornam **a propriedade inheritedFrom.**
+>**Observação:** OneDrive for Business e SharePoint de documentos não retornam a **propriedade inheritedFrom.**
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -83,7 +82,7 @@ Veja a seguir uma representação JSON do recurso.
 |:------------------|:-------------------------------------------------------------------------------|
 | leitura            | Oferece a capacidade de ler os metadados e o conteúdo do item.            |
 | gravação           | Oferece a capacidade de ler e modificar os metadados e o conteúdo do item. |
-| controle sp.full | Para o Microsoft Office SharePoint Online e o OneDrive for Business, este representa o papel do proprietário.       |
+| owner           | Para o SharePoint e o OneDrive for Business, isso representa a função de proprietário.       |
 
 O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
 
@@ -102,7 +101,7 @@ Você pode usar a API [invite][] para criar um link que funcione apenas para pes
 
 Aqui estão alguns exemplos de links de compartilhamento.
 
-### <a name="view-link"></a>Link exibir
+### <a name="view-link"></a>Link Exibir
 
 Este link de exibição fornece acesso somente leitura a qualquer pessoa com o link.
 
@@ -196,9 +195,9 @@ Este link fornece acesso de leitura e gravação para as pessoas específicas na
 }
 ```
 
-## <a name="sharing-invitations"></a>Convites de compartilhamento
+## <a name="sharing-invitations"></a>Compartilhamento de convites
 
-As permissões enviadas [][] pela [API][] de convite ou []concessão podem ter informações adicionais na faceta[SharingInvitation] do convite para endereços de email que não corresponderem a uma conta conhecida. Nesses casos, a propriedade **grantedTo** pode não ser definida até que o link do convite seja resgatado, o que ocorre na primeira vez que o usuário clica no link e se conectar.
+Permissões enviadas pela [API][] [de][] convite ou concessão podem ter informações adicionais na faceta [][convite SharingInvitation] para endereços de email que não corresponderem a uma conta conhecida. Nesses casos, a propriedade **grantedTo** pode não ser definida até que o link de convite seja resgatado, o que ocorre na primeira vez que o usuário clica no link e faz logona.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 

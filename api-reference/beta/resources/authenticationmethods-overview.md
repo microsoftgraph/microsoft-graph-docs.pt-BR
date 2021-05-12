@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: bc29aeecee72dc72c6e460b64420c5fd64d76afb
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 1c0d0476ba7917caf407599d5c4ab8180a8d1795
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50271831"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335615"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Visão geral da API de métodos de autenticação do Azure AD
 
@@ -22,12 +22,12 @@ Namespace: microsoft.graph
 
 As APIs do método de autenticação são usadas para gerenciar os métodos de autenticação de um usuário. Por exemplo:
 
-* Você pode adicionar um número de telefone a um usuário. Em seguida, o usuário poderá usar esse número de telefone para autenticação de SMS e chamada de voz se estiver habilitado para usá-lo por política.
+* Você pode adicionar um número de telefone a um usuário. Em seguida, o usuário pode usar esse número de telefone para SMS e autenticação de chamada de voz se estiver habilitado para usá-lo por política.
 * Você pode atualizar esse número ou excluí-lo do usuário.
-* Você pode habilitar ou desabilitar o número de login por SMS.
+* Você pode habilitar ou desabilitar o número SMS entrar.
 * Você pode redefinir a senha de um usuário.
 * Você pode recuperar detalhes da Chave de Segurança FIDO2 de um usuário e excluí-la se o usuário tiver perdido a chave.
-* Você pode recuperar detalhes do registro do Microsoft Authenticator de um usuário e excluí-lo se o usuário tiver perdido o telefone.
+* Você pode recuperar detalhes do registro de Microsoft Authenticator usuário e excluí-lo se o usuário tiver perdido o telefone.
 * Você pode adicionar um endereço de email a um usuário. Em seguida, o usuário pode usar esse email como parte do processo Self-Service redefinição de senha (SSPR).
 * Você pode atualizar esse email ou excluí-lo do usuário.
 
@@ -35,17 +35,25 @@ As APIs do método de autenticação são usadas para gerenciar os métodos de a
 
 |Método de autenticação       | Descrição |Exemplos     |
 |:---------------------------|:------------|:------------|
-|[passwordAuthenticationMethod](passwordauthenticationmethod.md)| Uma senha é atualmente o método de autenticação principal padrão no Azure AD.|Redefinir a senha de um usuário|
-|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|Um telefone pode ser usado por um usuário para autenticar usando SMS ou [chamadas de voz](/azure/active-directory/authentication/concept-authentication-methods#phone-options) (conforme permitido pela política).|Veja os números de telefone de autenticação de um usuário. Adicionar, atualizar ou remover um número de telefone para um usuário. Habilitar ou desabilitar um telefone celular principal para entrar por SMS.|
+|[passwordAuthenticationMethod](passwordauthenticationmethod.md)| No momento, uma senha é o método de autenticação principal padrão no Azure AD.|Redefinir a senha de um usuário|
+|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|Um telefone pode ser usado por um usuário para autenticar usando SMS [ou](/azure/active-directory/authentication/concept-authentication-methods#phone-options) chamadas de voz (conforme permitido pela política).|Consulte os números de telefone de autenticação de um usuário. Adicionar, atualizar ou remover um número de telefone para um usuário. Habilitar ou desabilitar um telefone celular principal para SMS entrar.|
 |[fido2AuthenticationMethod](fido2authenticationmethod.md)|Uma Chave de Segurança FIDO2 pode ser usada por um usuário para entrar no Azure AD.|Excluir uma chave de segurança FIDO2 perdida.|
-|[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|O Microsoft Authenticator pode ser usado por um usuário para entrar ou executar a autenticação multifatório no Azure AD|Exclua um método de autenticação do Microsoft Authenticator.|
-|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (preterido)|O Acesso por Telefone sem Senha do Microsoft Authenticator pode ser usado por um usuário para entrar no Azure AD|Exclua um método de autenticação de login de telefone sem senha.|
+|[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|Microsoft Authenticator pode ser usado por um usuário para entrar ou executar a autenticação multifafação no Azure AD|Exclua um Microsoft Authenticator de autenticação.|
+|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (preterido)|Microsoft Authenticator Acesso sem Telefone senha pode ser usado por um usuário para entrar no Azure AD|Exclua um método Telefone autenticação de login sem senha.|
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|Um endereço de email pode ser usuário por um usuário como parte do processo Self-Service redefinição de senha (SSPR).|Consulte o endereço de email de autenticação de um usuário. Adicionar, atualizar ou remover um endereço de email para um usuário.|
-|[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|O Windows Hello para Empresas é um método de entrada sem senha em dispositivos Windows.|Ver dispositivos em que um usuário habilitar a entrada do Windows Hello para Empresas. Exclua uma credencial do Windows Hello para Empresas.|
-|[temporaryaccesspassauthenticationmethod](temporaryaccesspassauthenticationmethod.md)|O Acesso Temporário é uma senha com tempo limitado que serve como uma credencial forte e permite a integração de credenciais sem senha. | Definir uma nova Passagem de Acesso Temporário em um usuário.|
+|[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello for Business é um método de entrada sem senha em Windows dispositivos.|Consulte dispositivos em que um usuário habilitar Windows entrada hello for Business. Exclua uma Windows hello para empresas.|
+|[temporaryaccesspassauthenticationmethod](temporaryaccesspassauthenticationmethod.md)|Passagem de Acesso Temporário é uma senha limitada por tempo que serve como uma credencial forte e permite a integração de credenciais sem senha. | Definir uma nova Passagem de Acesso Temporário em um usuário.|
 
+Os métodos de autenticação a seguir ainda não são suportados no Microsoft Graph beta.
+
+|Método de autenticação       | Descrição |Exemplos     |
+|:---------------------------|:------------|:------------|
+|Token de hardware | Permitir que os usuários executem a autenticação multifator usando um dispositivo físico que fornece um código único. | Obter um token de hardware atribuído a um usuário.|
+|Token de software | Permitir que os usuários executem a autenticação multifator usando um aplicativo que apoia a especificação DEM E fornece um código único. | Obter e excluir um token de software atribuído a um usuário.|
+|Perguntas e respostas de segurança | Permitir que os usuários validem sua identidade ao executar uma redefinição de senha de autoatendida. |Excluir uma pergunta de segurança registrada por um usuário.|
+|Método padrão | Representa o método que o usuário selecionou como padrão para executar a autenticação multifato.| Alterar o método MFA padrão de um usuário.|
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Revise os tipos de método de autenticação e seus diversos métodos.
+* Revise os tipos de método de autenticação e seus vários métodos.
 * Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).

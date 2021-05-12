@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 11c0598f19fcc5bf6f9862a2d87fa1f08acb8a2c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 87c7f5e0f9ed29e6e1f5aa7c8ec332620bcc8a0a
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945666"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335643"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>Tipo de recurso fido2AuthenticationMethod
 
@@ -31,10 +31,11 @@ Uma representação de uma chave de segurança FIDO2 registrada em um usuário. 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador do método de autenticação.|
-|displayName|Cadeia de caracteres|O nome de exibição da chave conforme dado pelo usuário.|
-|creationDateTime|DateTimeOffset|O timestamp quando essa chave foi registrada para o usuário.|
-|aaGuid|Cadeia de caracteres|GUID de Atestado de Autenticador, um identificador que indica o tipo (por exemplo, make e model) do autenticador.|
+|id|String|O identificador do método de autenticação.|
+|displayName|String|O nome de exibição da chave conforme dado pelo usuário.|
+|createdDateTime|DateTimeOffset|O timestamp quando essa chave foi registrada para o usuário.|
+|creationDateTime (Preterido)|DateTimeOffset|O timestamp quando essa chave foi registrada para o usuário.|
+|aaGuid|String|Authenticator GUID de atestado, um identificador que indica o tipo (por exemplo, make e model) do autenticador.|
 |modelo|String|O modelo atribuído pelo fabricante da chave de segurança FIDO2.|
 |attestationCertificates|Coleção de cadeias de caracteres|Os certificados de atestado anexados a essa chave de segurança.|
 |attestationLevel|attestationLevel|O nível de atestado dessa chave de segurança FIDO2. Os valores possíveis são: `attested`, `notAttested`, `unknownFutureValue`.|
@@ -59,6 +60,7 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "displayName": "String",
   "creationDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "aaGuid": "String",
   "model": "String",
   "attestationCertificates": [

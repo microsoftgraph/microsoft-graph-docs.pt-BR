@@ -5,15 +5,17 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8dd07f542d5d0167376a0d18157228007a931201
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 7278ae26e137e3a71988fb7ce388c3c4304bfdd3
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516350"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335650"
 ---
 # <a name="list-microsoftauthenticatorauthenticationmethods"></a>Listar microsoftAuthenticatorAuthenticationMethods
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter uma lista dos [objetos microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) e suas propriedades.
 
