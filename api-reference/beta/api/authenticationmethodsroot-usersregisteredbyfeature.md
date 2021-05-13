@@ -1,40 +1,40 @@
 ---
 title: 'authenticationMethodsRoot: usersRegisteredByFeature'
-description: Obter o número de usuários capazes de autenticação multifa factor, redefinição de senha de autoatendado e autenticação sem senha.
+description: Obter o número de usuários capazes de autenticação multifafa, redefinição de senha de autoatendados e autenticação sem senha.
 author: danielwood95
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: c6f0976e364e2cf4b24883bef10e7f3c6e49480f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 54c1265ebed3eb8a3fe28f091d045b7bfe221b18
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129657"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474348"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbyfeature"></a>authenticationMethodsRoot: usersRegisteredByFeature
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o número de usuários capazes de autenticação multifa factor, redefinição de senha de autoatendado e autenticação sem senha.
+Obter o número de usuários capazes de autenticação multifafa, redefinição de senha de autoatendados e autenticação sem senha.
 
 ## <a name="permissions"></a>Permissões
 As permissões a seguir são necessárias para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Reports.Read.All|
+|Delegada (conta corporativa ou de estudante)|AuditLogs.Read.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-Para acessar a API, [uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) é necessária:
+Para acessar a API, uma [das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) é necessária:
 
 * Leitor de relatórios
 * Leitor de segurança
 * Administrador de segurança
 * Leitor global
-* Administrador global
+* Administração global
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -66,7 +66,7 @@ O valor `privilegedAdmin` consiste nas seguintes funções de administrador priv
 * Administrador de usuários
 * Administrador de autenticação
 
-O valor inclui todas as funções de administrador do `admin` Azure AD. 
+O valor inclui todas as funções de administrador `admin` do Azure AD. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -78,7 +78,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esta função retornará um código de resposta e um `200 OK` [userRegistrationFeatureSummary](../resources/userregistrationfeaturesummary.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um código de resposta e um `200 OK` [userRegistrationFeatureSummary](../resources/userregistrationfeaturesummary.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -142,7 +142,7 @@ Content-Type: application/json
             "feature": "ssprCapable",
             "userCount": 4234
         }, {
-            "feature": "passwordlessRegistered",
+            "feature": "passwordlessCapable",
             "userCount": 323
         },
         {

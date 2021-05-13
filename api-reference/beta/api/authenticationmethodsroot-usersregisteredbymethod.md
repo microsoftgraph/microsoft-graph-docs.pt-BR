@@ -5,12 +5,12 @@ author: danielwood95
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 0cf2a93756cca42f33b0bdd7ad9b994fe3b0393f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5cccef1ba35edbb3eb947cee90fb70c05ff19389
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129609"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52473455"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbymethod"></a>authenticationMethodsRoot: usersRegisteredByMethod
 Namespace: microsoft.graph
@@ -24,17 +24,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Reports.Read.All|
+|Delegada (conta corporativa ou de estudante)|AuditLogs.Read.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-Para acessar a API, [uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) é necessária:
+Para acessar a API, uma [das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) é necessária:
 
 * Leitor de relatórios
 * Leitor de segurança
 * Administrador de segurança
 * Leitor global
-* Administrador global
+* Administração global
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -66,7 +66,7 @@ O valor `privilegedAdmin` consiste nas seguintes funções de administrador priv
 * Administrador de usuários
 * Administrador de autenticação
 
-O valor inclui todas as funções de administrador do `admin` Azure AD. 
+O valor inclui todas as funções de administrador `admin` do Azure AD. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -78,7 +78,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esta função retornará um código de resposta e um `200 OK` [userRegistrationMethodSummary](../resources/userregistrationmethodsummary.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um código de resposta e um `200 OK` [userRegistrationMethodSummary](../resources/userregistrationmethodsummary.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

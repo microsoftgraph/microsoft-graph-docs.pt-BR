@@ -1,20 +1,20 @@
 ---
-title: Escolher um provedor de autenticação do Microsoft Graph
+title: Escolha um provedor de autenticação Graph microsoft
 description: Saiba como escolher provedores de autenticação específicos de cenário para seu aplicativo.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 726fbf1334a99ab6a854bd4627052d154187105c
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0cdc407187ea0b5befc3704f877b1df11aeda545
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921123"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52475532"
 ---
-# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Escolha um provedor de autenticação do Microsoft Graph com base no cenário
+# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Escolha um provedor Graph de autenticação da Microsoft com base no cenário
 
 Os provedores de autenticação implementam o código necessário para adquirir um token usando a Biblioteca de Autenticação da Microsoft (MSAL); lidar com vários erros potenciais para casos como consentimento incremental, senhas expiradas e acesso condicional; e, em seguida, de definir o cabeçalho de autorização de solicitação HTTP. A tabela a seguir lista o conjunto de provedores que combinam com os cenários de diferentes tipos [de aplicativo.](/azure/active-directory/develop/v2-app-types)
 
-|Cenário | Fluxo/Concessão | Espectadores | Provedor|
+|Cenário | Flow/Grant | Espectadores | Provedor|
 |--|--|--|--|
 | [Aplicativo de Página Única](/azure/active-directory/develop/scenario-spa-acquire-token)| | | |
 | | Implícito | Consumidor Delegado/Org |[Provedor Implícito](#ImplicitProvider) |
@@ -26,7 +26,7 @@ Os provedores de autenticação implementam o código necessário para adquirir 
 | | Credenciais do cliente  | Somente aplicativo | [Provedor de Credenciais do Cliente](#ClientCredentialsProvider) |
 | [Aplicativo de área de trabalho que chama APIs da Web](/azure/active-directory/develop/scenario-desktop-acquire-token) | | | |
 | | Interativo | Consumidor Delegado/Org | [Provedor Interativo](#InteractiveProvider) |
-| | Windows integrado | Organização Delegada | [Provedor Integrado do Windows](#IntegratedWindowsProvider) |
+| | Integração Windows | Organização Delegada | [Provedor Windows integrado](#IntegratedWindowsProvider) |
 | | Proprietário do Recurso  | Organização Delegada | [Username /Password Provider](#UsernamePasswordProvider) |
 | | Código do dispositivo  | Organização Delegada | [Provedor de Código de Dispositivo](#DeviceCodeProvider) |
 | [Aplicativo Daemon](/azure/active-directory/develop/scenario-daemon-acquire-token) | | | |
@@ -38,7 +38,7 @@ Os provedores de autenticação implementam o código necessário para adquirir 
 
 ## <a name="authorization-code-provider"></a><a name="AuthCodeProvider" ></a>Provedor de código de autorização
 
-O fluxo de código de autorização permite que aplicativos nativos e web obtenham tokens com segurança no nome do usuário. Para saber mais, confira [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+O fluxo de código de autorização permite que aplicativos nativos e web obtenham tokens com segurança no nome do usuário. Para saber mais, confira plataforma de identidade da Microsoft fluxo de código de autorização [do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -87,17 +87,17 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 ---
 
 ##  <a name="client-credentials-provider"></a><a name="ClientCredentialsProvider"></a>Provedor de credenciais do cliente
 
-O fluxo de credenciais do cliente permite que aplicativos de serviço executem sem interação do usuário. O Access baseia-se na identidade do aplicativo. Para obter mais informações, [consulte Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+O fluxo de credenciais do cliente permite que aplicativos de serviço executem sem interação do usuário. O Access baseia-se na identidade do aplicativo. Para obter mais informações, consulte plataforma de identidade da Microsoft e o fluxo de credenciais do cliente [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -145,17 +145,17 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 ---
 
 ##  <a name="on-behalf-of-provider"></a><a name="OnBehalfOfProvider"></a>Provedor on-behalf-of
 
-O fluxo em nome do fluxo é aplicável quando seu aplicativo chama uma API de serviço/Web que, por sua vez, chama a API do Microsoft Graph. Saiba mais lendo a plataforma de identidade da Microsoft e o [fluxo OAuth 2.0 On-Behalf-Of](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+O fluxo em nome do fluxo é aplicável quando seu aplicativo chama uma API de serviço/web que, por sua vez, chama a API Graph Microsoft. Saiba mais lendo [o plataforma de identidade da Microsoft e o fluxo OAuth 2.0 On-Behalf-Of](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -175,7 +175,7 @@ O código de autorização, a credencial do cliente e os fluxos em nome do OAuth
 
 # <a name="java"></a>[Java](#tab/Java)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 # <a name="android"></a>[Android](#tab/Android)
 
@@ -187,17 +187,17 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 ---
 
 ## <a name="implicit-provider"></a><a name="ImplicitProvider"></a>Provedor implícito
 
-O fluxo de concessão implícito é usado em aplicativos baseados em navegador. Para obter mais informações, consulte [Plataforma de identidade da Microsoft e Fluxo de concessão implícito.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)
+O fluxo de concessão implícito é usado em aplicativos baseados em navegador. Para obter mais informações, [consulte plataforma de identidade da Microsoft fluxo de concessão implícito.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -249,7 +249,7 @@ Não aplicável.
 
 ##  <a name="device-code-provider"></a><a name="DeviceCodeProvider"></a>Provedor de código de dispositivo
 
-O fluxo de código do dispositivo permite entrar em dispositivos por meio de outro dispositivo. Para obter detalhes, [consulte Microsoft identity platform and the OAuth 2.0 device code flow](/azure/active-directory/develop/v2-oauth2-device-code).
+O fluxo de código do dispositivo permite entrar em dispositivos por meio de outro dispositivo. Para obter detalhes, consulte plataforma de identidade da Microsoft e o fluxo de código do dispositivo [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-device-code)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -265,7 +265,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -298,17 +298,17 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 ---
 
-##  <a name="integrated-windows-provider"></a><a name="IntegratedWindowsProvider"></a>Provedor integrado do Windows
+##  <a name="integrated-windows-provider"></a><a name="IntegratedWindowsProvider"></a>Provedor Windows integrado
 
-O fluxo integrado do Windows fornece uma maneira para os computadores Windows adquirirem silenciosamente um token de acesso quando eles estão ingressados no domínio. Para obter detalhes, consulte [Autenticação integrada do Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
+O fluxo Windows integrado fornece uma maneira de Windows computadores adquirirem silenciosamente um token de acesso quando eles estão ingressados no domínio. Para obter detalhes, consulte [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -349,7 +349,7 @@ Não aplicável.
 
 ##  <a name="interactive-provider"></a><a name="InteractiveProvider"></a>Provedor interativo
 
-O fluxo interativo é usado por aplicativos móveis (Xamarin e UWP) e aplicativos de área de trabalho para chamar o Microsoft Graph em nome de um usuário. Para obter detalhes, consulte [Adquirindo tokens interativamente](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
+O fluxo interativo é usado por aplicativos móveis (Xamarin e UWP) e aplicativos de área de trabalho para chamar a Microsoft Graph em nome de um usuário. Para obter detalhes, consulte [Adquirindo tokens interativamente](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -363,7 +363,7 @@ InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationPr
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -426,7 +426,7 @@ Não aplicável.
 
 ##  <a name="usernamepassword-provider"></a><a name="UsernamePasswordProvider"></a>Provedor de nome de usuário/senha
 
-O provedor de nome de usuário/senha permite que um aplicativo entre em um usuário usando seu nome de usuário e senha. Use esse fluxo somente quando você não puder usar nenhum dos outros fluxos OAuth. Para obter mais informações, [consulte Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc)
+O provedor de nome de usuário/senha permite que um aplicativo entre em um usuário usando seu nome de usuário e senha. Use esse fluxo somente quando você não puder usar nenhum dos outros fluxos OAuth. Para obter mais informações, consulte plataforma de identidade da Microsoft e a credencial de senha do proprietário do recurso [OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc)
 
 
 
@@ -449,7 +449,7 @@ User me = await graphClient.Me.Request()
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -481,15 +481,16 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 ---
 
 ## <a name="next-steps"></a>Próximas etapas
 
+* Para obter exemplos de código que mostram como usar o plataforma de identidade da Microsoft para proteger diferentes tipos de aplicativos, consulte plataforma de identidade da Microsoft exemplos de código (ponto de extremidade [v2.0)](/azure/active-directory/develop/sample-v2-code).
 * Os provedores de autenticação exigem uma ID do cliente. Você vai querer registrar [seu aplicativo depois](https://portal.azure.com/) de configurar seu provedor de autenticação.
-* Deixe-nos saber se um fluxo OAuth necessário não tem suporte no momento votando ou abrindo uma solicitação de recurso [do Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+* Deixe-nos saber se um fluxo OAuth necessário não tem suporte no momento votando ou abrindo uma solicitação de recurso do [Microsoft Graph](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).

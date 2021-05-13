@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8e1dceac5e7c901cdeeba7788c6a1541fdc26867
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 1212f1e473d6f8bfe6ac06fbee0b96b12256a377
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469147"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335587"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>Tipo de recurso fido2AuthenticationMethod
 
@@ -32,7 +32,7 @@ Uma representação de uma chave de segurança FIDO2 registrada em um usuário. 
 |id|String|O identificador do método de autenticação.|
 |displayName|String|O nome de exibição da chave conforme dado pelo usuário.|
 |createdDateTime|DateTimeOffset|O timestamp quando essa chave foi registrada para o usuário.|
-|aaGuid|String|GUID de Atestado de Autenticador, um identificador que indica o tipo (por exemplo, make e model) do autenticador.|
+|aaGuid|String|Authenticator GUID de atestado, um identificador que indica o tipo (por exemplo, make e model) do autenticador.|
 |modelo|String|O modelo atribuído pelo fabricante da chave de segurança FIDO2.|
 |attestationCertificates|Coleção de cadeias de caracteres|Os certificados de atestado anexados a essa chave de segurança.|
 |attestationLevel|attestationLevel|O nível de atestado dessa chave de segurança FIDO2. Os valores possíveis são: `attested` , ou `notAttested` .|
@@ -56,7 +56,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethod",
   "id": "String (identifier)",
   "displayName": "String",
-  "creationDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "aaGuid": "String",
   "model": "String",
   "attestationCertificates": [
