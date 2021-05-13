@@ -6,12 +6,12 @@ localization_priority: Priority
 description: O recurso Permission fornece informações sobre uma permissão de compartilhamento concedida a um recurso DriveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6bbd22afe1aad3b823c892438447a42548c68318
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 5c14371966d4620450c7d791a3ed90a38b12c61b
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239517"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335603"
 ---
 # <a name="permission-resource-type"></a>Tipo de recurso permission
 
@@ -63,7 +63,7 @@ Veja a seguir uma representação JSON do recurso
 |:--------------|:------------------------------------------|:-----------------
 | id            | String                                    | O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.
 | grantedTo     | [IdentitySet](identityset.md)             | Para permissões de tipo de usuário, os detalhes de usuários e aplicativos para esta permissão. Somente leitura.
-| grantedToIdentities | Coleção([IdentitySet](identityset.md)) | Para permissões de tipo de link, os detalhes dos usuários aos quais a permissão foi concedida. Somente leitura.
+| grantedToIdentities | Coleção([IdentitySet](identityset.md)) | Para permissões de tipo de link, os detalhes dos usuários a quem a permissão foi concedida. Somente leitura.
 | invitation    | [SharingInvitation][]                     | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.
 | inheritedFrom | [ItemReference](itemreference.md)         | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
 | vínculo          | [SharingLink][]                           | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
@@ -87,7 +87,7 @@ Permissões com uma faceta [**invitation**][SharingInvitation] representam permi
 |:------------------|:-------------------------------------------------------------------------------|
 | leitura            | Oferece a capacidade de ler os metadados e o conteúdo do item.            |
 | gravação           | Oferece a capacidade de ler e modificar os metadados e o conteúdo do item. |
-| controle sp.full | Para o Microsoft Office SharePoint Online e o OneDrive for Business, este representa o papel do proprietário.       |
+| proprietário           | Para o Microsoft Office SharePoint Online e o OneDrive for Business, este representa o papel do proprietário.       |
 
 ## <a name="sharing-links"></a>Links de compartilhamento
 O tipo mais comum de permissões são os links de compartilhamento. Esses links fornecem uma URL exclusiva que inclui o recurso que está sendo compartilhado e um token de autenticação que fornece acesso ao recurso. Os usuários não precisam entrar para acessar o conteúdo compartilhado com um link de compartilhamento. Os usuários podem compartilhar um link que concede acesso somente leitura ou acesso de gravação ao conteúdo.
@@ -106,7 +106,7 @@ Um link de exibição oferece acesso somente leitura a um item.
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
   "shareId": "!LKj1lkdlals90j1nlkascl",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 
@@ -124,7 +124,7 @@ Um link de edição fornece acesso de leitura e gravação a um item.
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
   "shareId": "!LKj1lkdlals90j1nlkascl",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 ### <a name="specific-people-link"></a>Link de pessoas específicas
@@ -140,13 +140,13 @@ Este link fornece acesso de leitura e gravação para as pessoas específicas na
     {
        "user": {
         "id": "35fij1974gb8832",
-        "displayName": "Misty Suarez"
+        "displayName&quot;: &quot;Misty Suarez"
       }
     },
     {
        "user": {
         "id": "9397721fh4hgh73",
-        "displayName": "Judith Clemons"
+        "displayName&quot;: &quot;Judith Clemons"
       }
     }
   ],
@@ -156,7 +156,7 @@ Este link fornece acesso de leitura e gravação para as pessoas específicas na
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
   "shareId": "!LKj1lkdlals90j1nlkascl",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 
@@ -175,7 +175,7 @@ Este link não concede privilégios adicionais ao usuário.
     "type": "view",
     "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
   },
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 
@@ -195,7 +195,7 @@ Se a permissão for enviada por meio do endereço de email para um destinatário
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 
@@ -209,7 +209,7 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
   "grantedTo": {
     "user": {
       "id": "5D33DD65C6932946",
-      "displayName": "John Doe"
+      "displayName&quot;: &quot;John Doe"
     }
   },
   "invitation": {
@@ -217,7 +217,7 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 

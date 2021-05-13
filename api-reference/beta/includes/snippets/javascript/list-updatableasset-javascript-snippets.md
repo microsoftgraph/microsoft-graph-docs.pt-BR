@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 922eb2c4a640e6d0147c3cb33ed12e4ffb381042
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 872fc80e86801ebdd5546bfbdf69e65f06dc0f1a
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52266660"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52476803"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let updatableAssets = await client.api('/admin/windows/updates/updatableAssets')
+let exclusions = await client.api('/admin/windows/updates/deployments/{deploymentId}/audience/exclusions')
     .version('beta')
     .get();
 

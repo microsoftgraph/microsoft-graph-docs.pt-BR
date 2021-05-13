@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8a71a50714d18d4d4d8e91a4f5a7e0c0b31fe9e6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 95d0839341f158821eeb51f9aea252155462241d
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052632"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335664"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -33,13 +33,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 Chamar o ponto de extremidade `/me` exige um usuário conectado e, portanto, uma permissão delegada. Não há suporte para permissões do aplicativo ao usar o ponto de extremidade `/me`.
 
+## <a name="http-request"></a>Solicitação HTTP
+
 Para um usuário específico:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
 
-Observe que quando **userPrincipalName** começar com um caractere `$`, remova a barra (/) logo após `/users` e coloque **userPrincipalName** entre parênteses e aspas simples. Para saber mais, consulte a lista [problemas conhecidos](/graph/known-issues#users).
+Observe que quando o **userPrincipalName** começar com um caractere `$`, remova a barra (/) logo após `/users` e coloque o **userPrincipalName** entre parênteses e aspas simples. Para detalhes, consulte a lista de [problemas conhecidos](/graph/known-issues#users).
 
 Para o usuário conectado:
 <!-- { "blockType": "ignored" } -->
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade. 
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura. 
 
 <!-- {
   "blockType": "response",

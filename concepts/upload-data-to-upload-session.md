@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c51d027a0e76f24f6ec4788ae1429adcc29f2948
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: bd34071caf8d428847693be86eb7082e7f80e99c
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766312"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52473259"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Faça o upload de documentos utilizando a API de Impressão Universal do Microsoft Graph
 
@@ -21,7 +21,7 @@ Para imprimir um documento utilizando a API de Impressão Universal no Microsoft
 Para fazer o upload de um arquivo, ou de parte de um arquivo, seu aplicativo faz uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession**.
 Você pode fazer o upload de todo o arquivo ou dividi-lo em vários intervalos de bytes, desde que o máximo de bytes em qualquer solicitação seja inferior a 10 MB.
 
-É possível fazer o upload dos segmentos do arquivo em qualquer ordem e o upload pode ser feito em paralelo, com até quatro solicitações simultâneas. Quando todos os segmentos binários do documento são carregados, o arquivo binário é vinculado ao **printDocument**.
+É possível fazer o upload dos segmentos do arquivo em qualquer ordem e o upload pode ser feito em paralelo, com até quatro solicitações simultâneas. Quando todos os segmentos binários de um documento são carregados, o arquivo binário é vinculado a **printDocument**.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,7 +48,7 @@ Content-Length: 72797
 ```
 
 Aqui, 0 e 72796 são os índices inicial e final do segmento de arquivo, e 4533322 é o tamanho do documento.
-### <a name="http-response"></a>Resposta HTTP:
+## <a name="http-response"></a>Resposta HTTP:
 
 Quando a solicitação for concluída, o servidor responderá com `202 Accepted` se houver mais intervalos de bytes que precisem ser carregados.
 
@@ -83,15 +83,16 @@ Content-Type: application/json
 
 ### <a name="remarks"></a>Comentários
 
-* Em falhas quando o cliente enviou um fragmento que o servidor já havia recebido, o servidor responderá com `HTTP 416 Requested Range Not Satisfiable`. Você pode [solicitar o status do upload](#get-the-upload-session) para obter uma lista mais detalhada dos intervalos que estão faltando.
-* Incluir o Cabeçalho de Autorização ao emitir a chamada `PUT`pode resultar em uma resposta`HTTP 401 Unauthorized`. O Cabeçalho de Autorização e o token do portador devem ser enviados apenas durante a criação da sessão de upload. Não deve ser incluído ao enviar dados para a sessão de upload.
+* Em falhas, quando o cliente envia um fragmento que o servidor já recebeu, o servidor responderá com `HTTP 416 Requested Range Not Satisfiable`. 
+  Você pode [solicitar o status do upload](#get-the-upload-session) para obter uma lista mais detalhada dos intervalos que estão faltando.
+* A inclusão do cabeçalho de `Authorizatio` ao fazer a chamada `PUT` pode resultar em uma resposta `HTTP 401 Unauthorized`. O Cabeçalho de Autorização e o token de portador devem ser enviados apenas durante a criação da sessão de upload. Ele não deve ser incluído ao enviar dados para a sessão de upload.
 
 ## <a name="completing-a-file"></a>Concluindo um arquivo
 
 Quando o último intervalo de bytes de um arquivo for recebido, o servidor responderá com um `HTTP 201 Created`. O corpo da resposta também incluirá o conjunto de propriedades para o **printDocument** associado.
 
+### <a name="request"></a>Solicitação
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "printjob.readwrite" } -->
-
 ```http
 PUT https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
 Content-Length: 10
@@ -100,6 +101,7 @@ Content-Range: bytes 4533312-4533321/4533322
 <final bytes of the file>
 ```
 
+### <a name="response"></a>Resposta
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.printDocument", "truncated": true } -->
 
 ```http
@@ -116,9 +118,9 @@ Content-Type: application/json
 
 >**Observação:** A sessão de upload é excluída após a conclusão do upload do documento.
 
-## <a name="get-the-upload-session"></a>Obtenha a sessão de upload
+## <a name="get-the-upload-session"></a>Obter a sessão de upload
 
-Para obter a sessão de upload, envie uma solicitação GET para o URL de upload. 
+Para obter a sessão de upload, envie uma solicitação GET para a URL de upload. 
 
 ### <a name="request"></a>Solicitação
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
@@ -142,10 +144,79 @@ Content-Type: application/json
   ]
 }
 ```
+## <a name="code-examples-create-upload-session-and-upload-documents"></a>Exemplos de código: Criar sessão de upload e carregar documentos
+ 
+# <a name="c"></a>[C#](#tab/csharp)
+
+```csharp
+
+            GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+            var properties = new PrintDocumentUploadProperties
+            {
+                DocumentName = "TestFile.pdf",
+                ContentType = "application/pdf",
+                Size = 4533322
+            };
+
+            var uploadSession = await graphClient.Print.Printers["{printer-id}"].Jobs["{printJob-id}"].Documents["{printDocument-id}"]
+                .CreateUploadSession(properties)
+                .Request()
+                .PostAsync()
+
+            // if using Graph SDK, maxSliceSize should in multiples of 320 KiB
+            int maxSliceSize = 320 * 1024;
+            var fileUploadTask =
+                new LargeFileUploadTask<PrintDocument>(uploadSession, fileStream, maxSliceSize);
+
+            // Create a callback that is invoked after each slice is uploaded
+            IProgress<long> progress = new Progress<long>(prog =>
+            {
+                Console.WriteLine($"Uploaded {prog} bytes of {fileStream.Length} bytes");
+            });
+
+            // Upload the file
+
+            var uploadResult = await fileUploadTask.UploadAsync(progress);
+```
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+
+```javascript
+
+    const options = {
+      authProvider,
+    };
+    const client = Client.init(options);
+   
+   const fileName = "test.txt";
+    const file = fs.readFileSync(`./${fileName}`);
+    const stats = fs.statSync(`./${fileName}`);
+    const requestUrl ="https://graph.microsoft.com/v1.0/print/shares/{id}/jobs/{id}/documents/{id}/createuploadsession"
+    const payload = {
+        "properties": {
+            "documentName": fileName,
+            "contentType": "application/pdf",
+            "size": stats.size
+        }
+    }
+    const uploadSession = await LargeFileUploadTask.createUploadSession(client, requestUrl, payload);
+
+    const fileObject = {
+        content: file,
+        name: fileName,
+        size: stats.size
+    };
+
+    const task = new LargeFileUploadTask(client, fileObject, uploadSession);
+
+    const uploadResponse = await task.upload();
+```
+---
 
 ## <a name="cancel-the-upload-session"></a>Cancelar a sessão de upload
 
-Para cancelar uma sessão de upload, envie uma solicitação DELETE para o URL de upload. Isso deve ser usado em cenários em que o upload é interrompido, por exemplo, se o usuário cancelar a transferência.
+Para cancelar uma sessão de upload, envie uma solicitação DELETE para a URL de upload. Isso deve ser usado em cenários em que o upload é interrompido; por exemplo, se o usuário cancelar a transferência.
 
 Os arquivos temporários e a sessão de carregamento que os acompanha são automaticamente limpos decorrido o valor de **expirationDateTime**.
 
