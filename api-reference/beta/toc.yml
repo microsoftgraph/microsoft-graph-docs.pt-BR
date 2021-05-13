@@ -1409,9 +1409,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -1487,7 +1487,7 @@ items:
                     href: api/ediscovery-custodian-update.md
                   - name: Ativar
                     href: api/ediscovery-custodian-activate.md
-                  - name: Liberar
+                  - name: Lançar
                     href: api/ediscovery-custodian-release.md
               - name: Retenção legal
                 href: resources/ediscovery-legalhold.md
@@ -1513,7 +1513,7 @@ items:
                     href: api/ediscovery-noncustodialdatasource-get.md
                   - name: Listar datasource
                     href: api/ediscovery-noncustodialdatasource-list-datasource.md
-                  - name: Liberar
+                  - name: Lançar
                     href: api/ediscovery-noncustodialdatasource-release.md
               - name: Conjuntos de revisão
                 href: resources/ediscovery-reviewset.md
@@ -9750,6 +9750,8 @@ items:
                 href: api/educationsubmissionresource-delete.md
               - name: Obter envio
                 href: api/educationsubmission-get.md
+              - name: Configurar pasta de recurso de envio
+                href: api/educationsubmission-setupresourcesfolder.md
               - name: Enviar
                 href: api/educationsubmission-submit.md
               - name: Cancelar envio
@@ -13405,7 +13407,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md

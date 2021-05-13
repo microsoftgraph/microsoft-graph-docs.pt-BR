@@ -5,30 +5,30 @@ author: shauliu
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c88442960327de7d89d17e32549bc6eefb874db1
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 2136258212faeaaba241e25e7743eaff9e9a6aec
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299042"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52475055"
 ---
-# <a name="get-unifiedrolemanagementpolicy"></a><span data-ttu-id="a0d55-103">Obter unifiedRoleManagementPolicy</span><span class="sxs-lookup"><span data-stu-id="a0d55-103">Get unifiedRoleManagementPolicy</span></span>
-<span data-ttu-id="a0d55-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a0d55-104">Namespace: microsoft.graph</span></span>
+# <a name="get-unifiedrolemanagementpolicy"></a><span data-ttu-id="10fca-103">Obter unifiedRoleManagementPolicy</span><span class="sxs-lookup"><span data-stu-id="10fca-103">Get unifiedRoleManagementPolicy</span></span>
+<span data-ttu-id="10fca-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="10fca-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a0d55-105">Leia as propriedades e as relações de [um objeto unifiedRoleManagementPolicy.](../resources/unifiedrolemanagementpolicy.md)</span><span class="sxs-lookup"><span data-stu-id="a0d55-105">Read the properties and relationships of an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object.</span></span>
+<span data-ttu-id="10fca-105">Leia as propriedades e as relações de [um objeto unifiedRoleManagementPolicy.](../resources/unifiedrolemanagementpolicy.md)</span><span class="sxs-lookup"><span data-stu-id="10fca-105">Read the properties and relationships of an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a0d55-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a0d55-106">Permissions</span></span>
-<span data-ttu-id="a0d55-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a0d55-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="10fca-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="10fca-106">Permissions</span></span>
+<span data-ttu-id="10fca-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="10fca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a0d55-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a0d55-109">Permission type</span></span>|<span data-ttu-id="a0d55-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a0d55-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="10fca-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="10fca-109">Permission type</span></span>|<span data-ttu-id="10fca-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="10fca-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a0d55-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a0d55-111">Delegated (work or school account)</span></span>|<span data-ttu-id="a0d55-112">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="a0d55-112">PrivilegedAccess.ReadWrite.AzureAD</span></span>|
-|<span data-ttu-id="a0d55-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a0d55-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a0d55-114">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="a0d55-114">Not supported</span></span>|
-|<span data-ttu-id="a0d55-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a0d55-115">Application</span></span>|<span data-ttu-id="a0d55-116">PrivilegedAccess.Read.AzureAD</span><span class="sxs-lookup"><span data-stu-id="a0d55-116">PrivilegedAccess.Read.AzureAD</span></span>|
+|<span data-ttu-id="10fca-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="10fca-111">Delegated (work or school account)</span></span>|<span data-ttu-id="10fca-112">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="10fca-112">PrivilegedAccess.ReadWrite.AzureAD</span></span>|
+|<span data-ttu-id="10fca-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="10fca-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="10fca-114">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="10fca-114">Not supported</span></span>|
+|<span data-ttu-id="10fca-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="10fca-115">Application</span></span>|<span data-ttu-id="10fca-116">PrivilegedAccess.Read.AzureAD</span><span class="sxs-lookup"><span data-stu-id="10fca-116">PrivilegedAccess.Read.AzureAD</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a0d55-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a0d55-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="10fca-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="10fca-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,24 +38,26 @@ ms.locfileid: "52299042"
 GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="a0d55-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a0d55-118">Optional query parameters</span></span>
-<span data-ttu-id="a0d55-119">Este método dá suporte a todos os parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a0d55-119">This method supports all of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="a0d55-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="a0d55-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="10fca-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="10fca-118">Optional query parameters</span></span>
+<span data-ttu-id="10fca-119">Este método dá suporte a todos os parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="10fca-119">This method supports all of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="10fca-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="10fca-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a0d55-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a0d55-121">Request headers</span></span>
-|<span data-ttu-id="a0d55-122">Nome</span><span class="sxs-lookup"><span data-stu-id="a0d55-122">Name</span></span>|<span data-ttu-id="a0d55-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="a0d55-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="10fca-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="10fca-121">Request headers</span></span>
+|<span data-ttu-id="10fca-122">Nome</span><span class="sxs-lookup"><span data-stu-id="10fca-122">Name</span></span>|<span data-ttu-id="10fca-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="10fca-123">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="a0d55-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="a0d55-124">Authorization</span></span>|<span data-ttu-id="a0d55-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a0d55-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="10fca-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="10fca-124">Authorization</span></span>|<span data-ttu-id="10fca-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="10fca-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a0d55-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a0d55-127">Request body</span></span>
-<span data-ttu-id="a0d55-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a0d55-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="10fca-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="10fca-127">Request body</span></span>
+<span data-ttu-id="10fca-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="10fca-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a0d55-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0d55-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="10fca-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="10fca-129">Response</span></span>
 
-<span data-ttu-id="a0d55-130">Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a0d55-130">If successful, this method returns a `200 OK` response code and an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="10fca-130">Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="10fca-130">If successful, this method returns a `200 OK` response code and an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a0d55-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a0d55-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="10fca-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="10fca-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="a0d55-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a0d55-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="10fca-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="10fca-132">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="10fca-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="10fca-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedrolemanagementpolicy"
@@ -64,10 +66,28 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 ``` http
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/f93a5c37-5c37-f93a-375c-3af9375c3af9
 ```
+# <a name="c"></a>[<span data-ttu-id="10fca-134">C#</span><span class="sxs-lookup"><span data-stu-id="10fca-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="10fca-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="10fca-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedrolemanagementpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="10fca-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="10fca-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedrolemanagementpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="10fca-137">Java</span><span class="sxs-lookup"><span data-stu-id="10fca-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-unifiedrolemanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-### <a name="response"></a><span data-ttu-id="a0d55-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0d55-133">Response</span></span>
-<span data-ttu-id="a0d55-134">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a0d55-134">**Note:** The response object shown here might be shortened for readability.</span></span>
+
+### <a name="response"></a><span data-ttu-id="10fca-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="10fca-138">Response</span></span>
+<span data-ttu-id="10fca-139">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="10fca-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
