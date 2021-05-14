@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 054c5af5483c6cd85ebbf0e7fa110bb6f4a504a9
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 6530d0fd060381a0e2f3281f23cad60f98b2dfef
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231267"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52475427"
 ---
 # <a name="list-classes-of-an-educationuser"></a>Listar classes de um educationUser
 
