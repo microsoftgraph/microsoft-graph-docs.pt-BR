@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: aa3da767963b70ef33380b84eadf3922eed10614
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 286364bc6e6dd69fc839eafcdfa805578e55d889
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231805"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579456"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -1004,6 +1004,11 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 |Adição|Beta e v1.0 |Adicionado o método [Get workbookOperation](/graph/api/workbookoperation-get) para a entidade [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="june-2020"></a>Junho de 2020
+
+### <a name="security--information-protection-labeling"></a>Segurança | Rotulagem de proteção de informação
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a propriedade **pai** à entidade [informationProtectionLabel](graph/api/resources/informationprotectionlabel?view=graph-rest-beta). |
 
 ### <a name="calendar"></a>Calendário
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -3727,8 +3732,8 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
-| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta&preserve-view=true) e os seguintes métodos: <br> [List](/graph/api/bookingcurrency-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcurrency-get?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcustomer-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingcustomer-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingcustomer-delete?view=graph-rest-beta&preserve-view=true).|
 | Adição        | Beta          | Foi adicionada a entidade [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-services?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-services?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingservice-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingservice-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingservice-delete?view=graph-rest-beta&preserve-view=true).|
@@ -5379,7 +5384,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Foi introduzida a nova API de visualização para relatórios do Microsoft 365. Você pode usá-la para obter relatórios de uso sobre como as pessoas em sua empresa estão usando serviços do Microsoft 365. Por exemplo, você pode identificar quem está usando muito um serviço e atingindo cotas, ou quem pode não precisar de uma licença do Microsoft 365. Para obter mais detalhes, consulte o [relatório](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true). |
+| Adição        | Beta        | Introduced the new preview API for Microsoft 365 reports. You can use it to get usage reports of how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. For more details, see [report](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true). |
 
 
 ## <a name="february-2017"></a>Fevereiro de 2017
@@ -5550,7 +5555,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | As APIs do gerenciador de convites agora estão disponíveis nos pontos de extremidade do Microsoft Graph na versão Beta. Você pode usar as APIs do gerenciador de convites para que o gerenciador de convites crie um convite para adicionar um usuário externo à organização. Como parte do convite, você também pode optar por adicionar o usuário convidado a um grupo do Microsoft 365. Para obter mais detalhes, veja [gerenciador de convite](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true). |
+| Adição        | Beta        | Invitation manager APIs are now available in the Microsoft Graph beta endpoint. You can use invitation manager APIs to create an invite, in order to add an external user to the organization. As part of the invitation, you can also choose to add the invited user to a Microsoft 365 group. For more details, see [invitation manager](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="files"></a>Arquivos
 
@@ -5622,7 +5627,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0        | Em geral, a API REST do Excel no Microsoft Graph está disponível. Agora, você pode criar integrações avançadas e profundas com pastas de trabalho do Excel no Microsoft 365. Consulte o [Turbine seus aplicativos com a nova API REST do Excel no Microsoft Graph](https://developer.microsoft.com/office/blogs/power-your-apps-with-the-new-excel-rest-api/) na postagem do blog para obter mais detalhes. |
+| Adição        | v1.0        | Excel REST API on Microsoft Graph is generally available. Now you can build rich and deep integrations with Excel workbooks in Microsoft 365. See the [Power your apps with the new Excel REST API on the Microsoft Graph](https://developer.microsoft.com/office/blogs/power-your-apps-with-the-new-excel-rest-api/) blog post for more details. |
 
 ### <a name="people-and-workplace-intelligence--people"></a>Inteligência de pessoas e do local de trabalho | Pessoas
 
@@ -5788,7 +5793,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 | Adição        | Beta        | As propriedades _wellKnownName_ e _userConfigurations_ foram adicionadas a entidade **mailFolder**. |
 | Adição        | Beta        | As propriedades _singleValueExtendedProperties_ e _multiValueExtendedProperties_ foram adicionadas a entidade **mailFolder**. |
 | Adição        | v1.0          | A propriedade _mobilePhone_ foi adicionada a entidade **mensagem**.            |
-| Adição        | v1.0 e beta | A propriedade _internetMessageHeaders_ foi adicionada à entidade **mensagem**. A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
+| Adição        | v1.0 e beta | Added _internetMessageId_ property to the **message** entity. The message ID in the format specified by [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 | Alterar          | Beta          | A propriedade _mobilePhone1_ foi renomeada para o _mobilePhone_ na entidade **mensagem**. |
 | Alterar          | Beta          | _createReply_ e _createReplyAll_ da entidade **mensagem** adotaram um novo parâmetro _Mensagem_ e _comentário_. |
 | Alterar          | Beta          | _createForward_ da entidade **mensagem** e adotou novos parâmetros _Mensagem_, _ToRecipients_ e _comentário_. |
@@ -5819,7 +5824,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 | **Tipo de alteração** | **Ponto de extremidade** | **Descrição**                          |
 | :-------------- | :----------- | :--------------------------------------- |
-| Adição        | v1.0         | Os webhooks agora são GA no ponto de extremidade da versão 1.0 por meio do recurso _/Subscriptions_. Crie, Leia, Renove e Exclua assinaturas para receber notificações sobre dados do Outlook e de conversas de grupo do Microsoft 365. |
+| Adição        | v1.0         | Webhooks are now GA on v1.0 endpoint via the _/Subscriptions_ resource. Create, Read, Renew and Delete subscriptions to receive notifications on data from Outlook and Microsoft 365 group conversations. |
 
 ### <a name="users"></a>Usuários
 

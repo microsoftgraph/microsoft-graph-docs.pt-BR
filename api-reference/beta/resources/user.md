@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 8b0c1b597fa629b36cf106c84812a35518020adf
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 85ee877646569c33ba07b623fd3f246a5444c21e
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474362"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579285"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -227,8 +227,8 @@ Esse recurso permite:
 | showInAddressList | Booliano | `true` se a lista de endereços global do Outlook deve conter o usuário, caso contrário `false`. Se não estiver configurado, isso será tratado como `true`. Para os usuários convidados por meio do Gerenciador de convites, essa propriedade será definida como `false`. <br><br>Retornado apenas em `$select`.|
 | signInSessionsValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em `$select`. Somente leitura. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) para redefinir.|
 | skills | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas qualificações. <br><br>Retornado apenas em `$select`. |
-| signInActivity | [signInActivity](signinactivity.md) | Obtenha a última data de entrada e solicite a ID de entrada de um usuário específico.<br><br>Oferece suporte para `$filter`, mas não com outras propriedades filtradas. <br><br>Retornado apenas em `$select`. Somente leitura. <br>**Nota:** Os detalhes desta propriedade exigem uma licença P1/P2 Premium do Microsoft Azure Active Directory.|
-| estado | String | O estado ou município no endereço do usuário. O comprimento máximo é de 128 caracteres. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
+| signInActivity | [signInActivity](signinactivity.md) | Obtenha a última data de entrada e solicite a ID de entrada de um usuário específico.<br><br>Oferece suporte para `$filter`, mas não com outras propriedades filtradas. <br><br>Retornado apenas em `$select`. Somente leitura. <br>**Observação:** os detalhes dessa propriedade exigem uma licença do Azure Active Directory Premium P1/P2 e a permissão AuditLog.Read.All.|
+| state | String | O estado ou município no endereço do usuário. O comprimento máximo é de 128 caracteres. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
 | streetAddress | String | O endereço do local de trabalho do usuário. O comprimento máximo é de 1024 caracteres. <br><br>Retornado apenas em `$select`.|
 | surname | String | O sobrenome do usuário (nome de família ou sobrenome). O comprimento máximo é de 64 caracteres. <br><br>Retornado por padrão. Oferece suporte para `$filter`. |
 | usageLocation | String | Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países. Entre os exemplos temos: "US", "JP" e "GB". Não anulável.<br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`.|
