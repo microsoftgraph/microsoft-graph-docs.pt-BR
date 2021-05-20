@@ -1,18 +1,18 @@
 ---
 title: People-Picker componente
-description: Você pode usar o componente web do se picker mgt-people para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
+description: Você pode usar o componente web mgt-people-picker para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 3531c32ae4f33898b11f7d92f91115aa1cbf43a3
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: dd3956e39450946a381b0b90851f248d7cf07b64
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266812"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52580019"
 ---
-# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft graph Toolkit
+# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no microsoft Graph Toolkit
 
-Você pode usar o `mgt-people-picker` componente web para pesquisar pessoas e/ou grupos. Por padrão, o componente procurará por todas as pessoas e usuários na organização, mas você pode alterar o comportamento para também pesquisar grupos ou somente grupos. Você também pode filtrar a pesquisa para um grupo específico.
+Você pode usar o `mgt-people-picker` componente web para pesquisar pessoas e/ou grupos. Por padrão, o componente procurará por todas as pessoas e usuários na organização, mas você pode alterar o comportamento para também pesquisar grupos ou somente grupos. Você também pode filtrar a pesquisa para um grupo específico. Além disso, você pode permitir que o usuário insira e selecione qualquer endereço de email.
 
 ## <a name="example"></a>Exemplo
 
@@ -29,16 +29,19 @@ Por padrão, `mgt-people-picker` o componente busca pessoas dos pontos de extrem
 | Atributo | Propriedade | Descrição                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max | showMax   | Um valor de número para indicar o número máximo de pessoas a mostrar. o valor padrão é 6.                                                                                             |
-| group-id    | groupId     | Um valor de cadeia de caracteres que pertence a um grupo definido pelo Microsoft Graph para filtrar ainda mais os resultados da pesquisa.                                                                            |
-| tipo     | tipo      | O tipo de entidades a ser pesquisada. As opções disponíveis são: `person` , `group` , `any` . O valor padrão é `person`. Esse atributo não terá efeito se `group-id` a propriedade for definida.         
+| group-id    | groupId     | Um valor de cadeia de caracteres que pertence a um grupo Graph da Microsoft para filtrar ainda mais os resultados da pesquisa.                                                                            |
 | transitive-search     | transitiveSearch      | Um valor Boolean para executar uma pesquisa transitiva retornando uma lista simples de todos os membros aninhados - por padrão, a pesquisa transitiva não é usada.|
-| tipo de grupo     | groupType      | O tipo de grupo a ser pesquisado. As opções disponíveis são: `unified` , , , , `security` `mailenabledsecurity` `distribution` `any` . O valor padrão é `any`. Esse atributo não terá efeito se a `type` propriedade for definida como `person` .                                                                           |
-|  selected-people  | selectedPeople     | Uma matriz de pessoas selecionadas. De definir esse valor para selecionar pessoas programaticamente.|
+| tipo     | tipo      | O tipo de entidades a ser pesquisada. As opções disponíveis são: `person` , `group` , `any` . O valor padrão é `person`. Esse atributo não terá efeito se `group-id` a propriedade for definida.         
+| tipo de usuário     | userType      | O tipo de usuário a ser pesquisado. As opções disponíveis são: `any` , para `user` usuários organizacionais ou `contact` para contatos. O valor padrão é `any`. |
+| tipo de grupo     | groupType      | O tipo de grupo a ser pesquisado. As opções disponíveis são: `unified` , , , , `security` `mailenabledsecurity` `distribution` `any` . O valor padrão é `any`. Esse atributo não terá efeito se a `type` propriedade for definida como `person` .  |
+| selected-people  | selectedPeople     | Uma matriz de pessoas selecionadas. De definir esse valor para selecionar pessoas programaticamente.|
 | people   | people    | Uma matriz de pessoas encontradas e renderizadas no resultado da pesquisa |
 | placeholder   | placeholder    | O texto padrão que parece explicar como usar o componente. O valor padrão é `Start typing a name`.
-| default-selected-user-ids | defaultSelectedUserIds | Quando fornecido uma cadeia de caracteres de IDs de usuário separadas por vírgulas do Microsoft Graph, o componente renderiza os respectivos usuários como selecionados após a inicialização.
+| default-selected-user-ids | defaultSelectedUserIds | Quando fornecido uma cadeia de caracteres de IDs de usuário separadas por vírgulas da Microsoft Graph, o componente renderiza os respectivos usuários como selecionados após a inicialização.
+| default-selected-group-ids | defaultSelectedGroupIds | Semelhante a IDs de grupo padrão selecionadas-user-ids, quando fornecida uma cadeia de caracteres de IDs de grupo do Microsoft Graph separadas por vírgulas, o componente renderiza os respectivos grupos como selecionados após a inicialização.
 | modo de seleção | selectionMode | Usado para indicar se é possível selecionar vários itens (usuários ou grupos) ou apenas um único item. As opções disponíveis são: `single` , `multiple` . O valor padrão é `multiple`.
 | desabilitadas | desabilitadas | Define se o se picker de pessoas está desabilitado. Quando desabilitado, o usuário não é capaz de pesquisar ou selecionar pessoas.
+| allow-any-email | allowAnyEmail | Indica se o seletor de pessoas pode aceitar endereços de email sem selecionar uma pessoa. O valor padrão é `false`. Ao concluir a digitação de um endereço de email, você pode pressionar vírgula ( ), ponto e vírgula ( ), guia ou inserir `,` `;` teclas para adicioná-lo.
 
 A seguir, um `show-max` exemplo.
 
@@ -132,7 +135,7 @@ Os exemplos a seguir mostram como usar o `error` modelo.
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-Esse componente usa as seguintes APIs e permissões do Microsoft Graph.
+Esse componente usa as seguintes APIs Graph Microsoft e permissões.
 
 | API                                                                                                              | Permissão  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
@@ -154,7 +157,7 @@ O controle usa o provedor de autenticação global descrito na [documentação d
 |`people`|Lista de pessoas|Usado quando `type` está definido como `PersonType.person` ou `PersonType.any`|
 |`users`|Lista de usuários|Usado quando `groupId` especificado|
 
-Consulte [Cache para](../customize-components/cache.md) obter mais detalhes sobre como configurar o cache.
+Consulte [Caching](../customize-components/cache.md) para obter mais detalhes sobre como configurar o cache.
 ## <a name="extend-for-more-control"></a>Estender para obter mais controle
 
 Para cenários mais complexos ou um UX realmente personalizado, esse componente expõe vários métodos para substituição `protected render*` em extensões de componentes.

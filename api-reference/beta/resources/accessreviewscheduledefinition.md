@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 391b50e54c331c3f514bc68089b64f8d1d4fc169
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 06556bfdbcad8c422e4e8e522163437c9c7fa9c6
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469329"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579904"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>Tipo de recurso accessReviewScheduleDefinition
 
@@ -22,54 +22,42 @@ Namespace: microsoft.graph
 
 Representa o agendamento de uma revisão de acesso do Azure [AD.](accessreviewsv2-root.md) 
 
-Um accessReviewScheduleDefinition contém uma lista de [objetos accessReviewInstance.](accessreviewinstance.md) Cada recorrência da definição de agendamento criará uma instância. As instâncias também representam cada grupo exclusivo que está sendo revisado. Se uma definição de agenda analisar vários grupos, cada grupo terá uma instância exclusiva por cada recorrência. No caso de uma revisão única, apenas uma instância será criada por grupo.
+Um accessReviewScheduleDefinition contém uma lista de [objetos accessReviewInstance.](accessreviewinstance.md) Cada recorrência da definição de agenda cria uma instância. As instâncias também representam cada recurso exclusivo que está sendo revisado. Se uma definição de agenda analisar vários recursos (incluindo vários grupos), cada recurso terá uma instância exclusiva por cada recorrência. No caso de uma revisão única, apenas uma instância é criada por recurso.
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md) | [Coleção accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Lista todos os accessReviewScheduleDefinition. Não inclui instâncias de accessReviewInstance associadas em listagem. |
-|[Obter accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Obter um accessReviewScheduleDefinition com uma id especificada. |
-|[Criar accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Crie um novo accessReviewScheduleDefinition. |
-|[Excluir accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Nenhum. | Exclua um accessReviewScheduleDefinition com um identificador especificado. |
-|[Atualizar accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Nenhum. | Atualizar propriedades de um accessReviewScheduleDefinition com um identificador especificado. |
+|[Listar accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md) | [Coleção accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Lista todos os accessReviewScheduleDefinition. Não inclui objetos accessReviewInstance associados nos resultados. |
+|[Obter accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Obter um accessReviewScheduleDefinition com uma **id especificada**. Não inclui objetos accessReviewInstance associados nos resultados.|
+|[Criar accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-post.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Crie um novo accessReviewScheduleDefinition. |
+|[Excluir accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Nenhum. | Excluir um accessReviewScheduleDefinition com uma **id especificada**. |
+|[Atualizar accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Nenhum. | Atualizar propriedades de um accessReviewScheduleDefinition com uma **id especificada**. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |
 | :------------------| :-------------- | :---------- |
-| id | String | O identificador exclusivo atribuído ao recurso de uma revisão de acesso.|
-| displayName | String   | Nome da série de revisão de acesso. Obrigatório durante a criação. |
-| createdDateTime  |DateTimeOffset  | Timestamp quando a série de revisão foi criada. |
-| lastModifiedDateTime | DateTimeOffset   | Timestamp quando a série de revisão foi modificada pela última vez.|
-| status  |String   | Este campo somente leitura especifica o status de um accessReview. Os estados típicos `Initializing` `NotStarted` incluem , `Starting` , , , , , e `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . |
-| descriptionForAdmins  |cadeia de caracteres  |  Descrição fornecida pelos criadores de revisão para fornecer mais contexto da revisão aos administradores. |
-| descriptionForReviewers |cadeia de caracteres | Descrição fornecida pelos criadores de revisão para fornecer mais contexto da revisão aos revisadores. Os revisadores verão essa descrição no email enviado a eles solicitando sua revisão. |
+| id | String | O identificador exclusivo atribuído ao recurso de uma revisão de acesso. Oferece suporte para `$select`.|
+| displayName | String   | Nome da série de revisão de acesso. Obrigatório durante a criação. Oferece suporte para `$select`. |
+| createdDateTime  |DateTimeOffset  | Timestamp quando a série de revisão de acesso foi criada. Oferece suporte para `$select`.|
+| lastModifiedDateTime | DateTimeOffset   | Timestamp quando a série de revisão de acesso foi modificada pela última vez. Oferece suporte para `$select`.|
+| status  |String   | Este campo somente leitura especifica o status de uma revisão de acesso. Os estados típicos `Initializing` `NotStarted` incluem , `Starting` , , , , , e `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . <br>Suporta `$select` `$orderby` , e ( `$filter` `eq` somente).|
+| descriptionForAdmins  |cadeia de caracteres  |  Descrição fornecida pelos criadores de revisão para fornecer mais contexto da revisão aos administradores. Oferece suporte para `$select`. |
+| descriptionForReviewers |cadeia de caracteres | Descrição fornecida pelos criadores de revisão para fornecer mais contexto da revisão aos revisadores. Os revisadores verão essa descrição no email enviado a eles solicitando sua revisão. Oferece suporte para `$select`. |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | Usuário que criou essa revisão. |
-| escopo  |[accessReviewScope](../resources/accessreviewscope.md)  | Define o escopo dos usuários revisados. Para escopos com suporte, consulte [accessReviewScope](accessreviewscope.md). Obrigatório durante a criação. |
-| instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | No caso de uma revisão de usuários convidados em todos os grupos do Microsoft 365, isso determina o escopo de quais grupos serão revisados. Cada grupo se tornará um accessReviewInstance exclusivo da série de revisão de acesso.  Para escopos com suporte, consulte [accessReviewScope](accessreviewscope.md). | 
-| configurações  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso, consulte a definição de tipo abaixo. |
-| revisadores   |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa coleção de escopos de revisão de acesso é usada para definir quem são os revistores. Consulte [accessReviewReviewerScope](accessreviewreviewerscope.md). Obrigatório durante a criação. |
-| backupReviewers   |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa coleção de escopos do revistor é usada para definir a lista de revisadores de fallback. Esses revisadores de fallback serão notificados para tomar medidas se nenhum usuário for encontrado na lista de revisadores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como o revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe. Consulte [accessReviewReviewerScope](accessreviewreviewerscope.md). |
-| instances |Collection(microsoft.graph.accessReviewInstance)|  Conjunto de instâncias de críticas de acesso para esta série de revisão de acesso. As avaliações do Access que não se recorrem terão apenas uma instância; caso contrário, haverá uma instância para cada recorrência. |
+| escopo  |[accessReviewScope](../resources/accessreviewscope.md)  | Define o escopo de recursos a ser analisado. Para escopos com suporte, consulte [accessReviewScope](accessreviewscope.md). Obrigatório durante a criação. Suporta `$select` e `$filter` ( `contains` somente). Para exemplos de opções para configurar escopo, consulte [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).|
+| instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | Essa propriedade é necessária ao analisar o acesso dos usuários convidados em todos os grupos Microsoft 365 e determina quais grupos Microsoft 365 são revisados. Cada grupo se tornará um **accessReviewInstance exclusivo** da série de revisão de acesso.  Para escopos com suporte, consulte [accessReviewScope](accessreviewscope.md). Oferece suporte para `$select`. Para exemplos de opções para configurar instanceEnumerationScope, consulte Configure the scope of your [access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).| 
+| settings  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso, consulte a definição de tipo abaixo. Oferece suporte para `$select`.|
+| revisadores   |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa coleção de escopos de revisão de acesso é usada para definir quem são os revistores. Obrigatório durante a criação. Oferece suporte para `$select`. Para exemplos de opções para atribuir revisadores, consulte Atribuir revisadores à sua definição de revisão de acesso [usando a API do Microsoft Graph](/graph/accessreviews-scope-concept).|
+| backupReviewers   |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa coleção de escopos do revistor é usada para definir a lista de revisadores de fallback. Esses revisadores de fallback serão notificados para tomar medidas se nenhum usuário for encontrado na lista de revisadores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como o revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe. Oferece suporte para `$select`. <br>**Observação:** Essa propriedade foi substituída por **fallbackReviewers**. No entanto, especificar **backupReviewers** ou **fallbackReviewers** preenche automaticamente os mesmos valores para a outra propriedade.|
+| fallbackReviewers   |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa coleção de escopos do revistor é usada para definir a lista de revisadores de fallback. Esses revisadores de fallback serão notificados para tomar medidas se nenhum usuário for encontrado na lista de revisadores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como o revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe. Oferece suporte para `$select`.|
+| instances |[Coleção accessReviewInstance](../resources/accessreviewinstance.md)|  Conjunto de instâncias de críticas de acesso para esta série de revisão de acesso. As avaliações do Access que não se recorrem terão apenas uma instância; caso contrário, há uma instância para cada recorrência. |
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | `instances`               |[Coleção accessReviewInstance](accessreviewinstance.md)         | Se for `accessReviewScheduleDefinition` uma revisão de acesso recorrente, as instâncias representarão cada recorrência. Uma revisão que não se recorre terá exatamente uma instância. As instâncias também representam cada recurso exclusivo sob revisão no `accessReviewScheduleDefinition` . Se uma revisão tiver vários recursos e várias instâncias, cada recurso terá uma instância exclusiva para cada recorrência. |
-
-### <a name="supported-search-queries-for-accessreviewscheduledefinition"></a>Consultas de pesquisa com suporte para accessReviewScheduleDefinition
-A seguir, há consultas com suporte em [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md) com base no [accessReviewScope](accessreviewscope.md).
-
-|Cenário| Consulta |
-|--|--|
-| Listar `accessReviewScheduleDefinition` todos os grupos individuais (exclui definições com escopo para todos os grupos do Microsoft 365 com usuários convidados) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups') |
-| Listar todos em um grupo específico (exclui definições com escopo para todos os grupos do `accessReviewScheduleDefinition` Microsoft 365 com usuários convidados) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups/{group id}') |
-| Listar `accessReviewScheduleDefinition` todos os grupos do Microsoft 365 com usuários convidados | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members') |
-| Listar `accessReviewScheduleDefinition` todos em um pacote de acesso | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'accessPackageAssignments') |
-| Listar `accessReviewScheduleDefinition` todas as entidades de serviço atribuídas à função privilegiada | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'roleAssignmentScheduleInstances') |
-
-
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

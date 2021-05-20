@@ -1,23 +1,23 @@
 ---
-title: O Microsoft Graph Toolkit cache
+title: Cache Graph Toolkit Microsoft
 description: Explicando como o Cache funciona e como configurar as opções fornecidas aos desenvolvedores
 localization_priority: Normal
 author: adchau
-ms.openlocfilehash: cef5c06c39ebad58e6a39f094427dea6a1b1be25
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 7bb13e97cc6ef0fa77ba05afb27a065f934e1f42
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266617"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579932"
 ---
-# <a name="microsoft-graph-toolkit-caching"></a>O Microsoft Graph Toolkit cache
+# <a name="microsoft-graph-toolkit-caching"></a>Cache Graph Toolkit Microsoft
 
-O microsoft graph Toolkit suporta o cache de chamadas de API do Microsoft Graph selecionadas. As chamadas estão sendo armazenadas em cache por entidade, como pessoas, contato, foto. Isso permite que um componente recupere os dados e outros componentes para reutilizar sem chamar o Microsoft Graph.
+O Microsoft Graph Toolkit oferece suporte ao cache de chamadas de API Graph Microsoft. As chamadas estão sendo armazenadas em cache por entidade, como pessoas, contato, foto. Isso permite que um componente recupere os dados e outros componentes para reutilizar sem chamar o Microsoft Graph.
 
 > [!TIP]
 > Para obter mais informações sobre quais entidades são armazenadas em cache por cada componente, consulte a documentação do componente.
 
-Bancos de dados criados pelo mgt para cache são prefixados com `mgt-` . Os dados de cada entidade são armazenados em um armazenamento de objetos separado. Para inspecionar o cache, use a guia Aplicativo no painel do  desenvolvedor (ferramentas F12) - na seção Armazenamento, clique na **guia IndexedDB.**  
+Bancos de dados criados pelo mgt para cache são prefixados com `mgt-` . Os dados de cada entidade são armazenados em um armazenamento de objetos separado. Para inspecionar o cache, use **a** guia Aplicativo no painel do desenvolvedor (ferramentas F12) - na seção Armazenamento, clique na **guia IndexedDB.**  
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
@@ -52,6 +52,14 @@ let config = {
   response: {
     invalidationPeriod: number,
     isEnabled: boolean
+  },
+  files: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  },
+  fileLists: {
+    invalidationPeriod: number,
+    isEnabled: boolean
   }
 };
 ```
@@ -70,7 +78,7 @@ CacheService.config.users.isEnabled = false;
 ```
 Desabilitar o cache **não limpa** o cache.
 
-Alterar o período de invalditation é semelhante:
+Alterar o período de invalidação é semelhante:
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';

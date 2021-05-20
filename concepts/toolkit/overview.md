@@ -1,32 +1,32 @@
 ---
 title: 'Microsoft Graph Toolkit: Componentes da interface do usuário e provedores de autenticação para o Microsoft Graph'
-description: O microsoft graph Toolkit é uma coleção de provedores de autenticação e componentes web reutilizáveis e agnósticos da estrutura para acessar e trabalhar com o Microsoft Graph.
+description: O Microsoft Graph Toolkit é uma coleção de provedores de autenticação e componentes web reutilizáveis e agnósticos da estrutura para acessar e trabalhar com o Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 01f406c288ebca1dde5c6b1577fd2acdc7631d5b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e39eba8c79d2aae3d1ce048a21d2d0a911aed089
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470533"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579764"
 ---
 # <a name="microsoft-graph-toolkit-ui-components-and-authentication-providers-for-microsoft-graph"></a>Microsoft Graph Toolkit: Componentes da interface do usuário e provedores de autenticação para o Microsoft Graph 
 
-O microsoft graph Toolkit é uma coleção de componentes reutilizáveis, componentes de estrutura e provedores de autenticação para acessar e trabalhar com o Microsoft Graph. Os componentes são totalmente funcionais imediatamente, com provedores internos que se autenticam com e buscam dados do Microsoft Graph.
+O Microsoft Graph Toolkit é uma coleção de componentes reutilizáveis e agnostic e provedores de autenticação para acessar e trabalhar com o Microsoft Graph. Os componentes são totalmente funcionais imediatamente, com provedores internos que se autenticam com e buscam dados da Microsoft Graph.
 
-A Toolkit do Microsoft Graph facilita o uso do Microsoft Graph em seu aplicativo. No exemplo a seguir, um usuário e seus eventos de calendário são exibidos com apenas duas linhas de código usando os componentes [Login](./components/login.md) e [Agenda.](./components/agenda.md)
+O microsoft Graph Toolkit facilita o uso do Microsoft Graph em seu aplicativo. No exemplo a seguir, um usuário e seus eventos de calendário são exibidos com apenas duas linhas de código usando os componentes [Login](./components/login.md) e [Agenda.](./components/agenda.md)
 
 <iframe src="https://mgt.dev/iframe.html?id=samples-general--login-to-show-agenda&source=docs&source=docs" height="400"></iframe>
 
 [Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/samples-general--login-to-show-agenda&source=docs)
 
-## <a name="whats-in-the-microsoft-graph-toolkit"></a>O que há no microsoft graph Toolkit?
+## <a name="whats-in-the-microsoft-graph-toolkit"></a>O que há no microsoft Graph Toolkit?
 
 ### <a name="components"></a>Componentes
 
-O microsoft graph Toolkit inclui uma coleção de componentes da Web para as experiências mais comumente criadas com as APIs do Microsoft Graph. 
+O microsoft Graph Toolkit inclui uma coleção de componentes da Web para as experiências mais comumente criadas por APIs do Microsoft Graph. 
 
-Os componentes também estão disponíveis como [componentes do React.](./get-started/mgt-react.md)
+Os componentes também estão disponíveis como [React componentes](./get-started/mgt-react.md).
 
 |Componente|Descrição|
 |---------|-----------|
@@ -37,9 +37,9 @@ Os componentes também estão disponíveis como [componentes do React.](./get-st
 |[Tarefas](./components/tasks.md)|Exibe e habilita a adição, remoção, conclusão ou edição de tarefas do Microsoft Planner ou Microsoft To Do.|
 |[Seletor de pessoas](./components/people-picker.md)|Fornece a capacidade de pesquisar por pessoas e renderiza a lista de resultados.|
 |[Cartão pessoal](./components/person-card.md)|Um flyout usado no componente da pessoa para exibir mais informações de perfil sobre um usuário.|
-|[Get](./components/get.md)|Faça uma consulta GET para qualquer API do Microsoft Graph diretamente em seu HTML.|
-|[Se picker de canal](./components/teams-channel-picker.md)|Fornece a capacidade de pesquisar canais do Microsoft Teams para selecionar um canal em uma lista renderizada de resultados.|
-|[To Do](./components/todo.md)|Exibe e habilita a adição, remoção, conclusão ou edição de tarefas do Microsoft To Do.|
+|[Get](./components/get.md)|Faça uma consulta GET para qualquer API Graph Microsoft diretamente em seu HTML.|
+|[Se picker de canal](./components/teams-channel-picker.md)|Fornece a capacidade de pesquisar Microsoft Teams canais para selecionar um canal em uma lista renderizada de resultados.|
+|[To Do](./components/todo.md)|Exibe e habilita a adição, remoção, conclusão ou edição de tarefas de Microsoft To Do.|
 
 ### <a name="providers"></a>Provedores
 
@@ -48,26 +48,27 @@ Os componentes também estão disponíveis como [componentes do React.](./get-st
 |Provedores|Descrição|
 |---------|-----------|
 |[Msal](./providers/msal.md)|Usa MSAL.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph.|
-|[Tron](./providers/electron.md)|Autentica e fornece acesso do Microsoft Graph a componentes dentro de aplicativos Detron|
-|[SharePoint](./providers/sharepoint.md)|Autentica e fornece acesso do Microsoft Graph a componentes dentro das Web Parts do SharePoint.|
-|[Teams](./providers/teams.md)|Autentica e fornece acesso do Microsoft Graph a componentes dentro das guias do Microsoft Teams.|
-|[Proxy](./providers/proxy.md)|Permite o uso da autenticação de back-end roteamento de todas as chamadas para o Microsoft Graph por meio do back-end.|
-|[Personalizados](./providers/custom.md)|Crie um provedor personalizado para habilitar a autenticação e o acesso ao Microsoft Graph com o código de autenticação existente do aplicativo.|
+|[Msal 2.0](./providers/msal2.md)| Usa o msal-browser para entrar em usuários e adquirir tokens para usar com o Microsoft Graph.|
+|[Tron](./providers/electron.md)|Autentica e fornece à Microsoft Graph acesso a componentes dentro de aplicativos Detron|
+|[SharePoint](./providers/sharepoint.md)|Autentica e fornece à Microsoft Graph acesso a componentes dentro de SharePoint Web Parts.|
+|[Teams](./providers/teams.md)|Autentica e fornece à Microsoft Graph acesso a componentes dentro de Microsoft Teams guias.|
+|[Proxy](./providers/proxy.md)|Permite o uso da autenticação de back-end roteamento de todas as chamadas para a Microsoft Graph seu back-end.|
+|[Personalizados](./providers/custom.md)|Crie um provedor personalizado para habilitar a autenticação e o acesso à Microsoft Graph com o código de autenticação existente do aplicativo.|
 
-## <a name="why-use-the-microsoft-graph-toolkit"></a>Por que usar o microsoft graph Toolkit?
+## <a name="why-use-the-microsoft-graph-toolkit"></a>Por que usar o microsoft Graph Toolkit?
 
-A Toolkit do Microsoft Graph torna a integração de experiências comuns fornecidas pelo Microsoft Graph em seu próprio aplicativo de forma rápida e fácil.
+O Microsoft Graph Toolkit torna a integração de experiências comuns fornecidas pela Microsoft Graph em seu próprio aplicativo de forma rápida e fácil.
 
 :::row:::
    :::column span="":::
     **Reduzir o tempo de desenvolvimento**
 
-    O trabalho para se conectar às APIs do Microsoft Graph e renderizar os dados em uma interface do usuário que parece e parece uma experiência do Microsoft365 é feito para você, sem nenhuma personalização necessária.
+    O trabalho para se conectar às APIs do Microsoft Graph e renderizar os dados em uma interface do usuário que parece e parece uma experiência do Microsoft365 é feito para você, sem a necessidade de personalização.
   :::column-end:::
   :::column span="":::
     **Funciona em todos os lugares**
 
-    Todos os componentes são baseados em padrões da Web e funcionam perfeitamente com qualquer navegador moderno e estrutura da Web (React, Angular, Vue etc.). 
+    Todos os componentes são baseados nos padrões da Web e funcionam perfeitamente com qualquer navegador moderno e estrutura da Web (React, Angular, Vue etc.). 
   :::column-end:::
   :::column span="":::
     **Belo, mas flexível**
@@ -76,18 +77,18 @@ A Toolkit do Microsoft Graph torna a integração de experiências comuns fornec
   :::column-end:::
 :::row-end:::
 
-## <a name="who-should-use-it"></a>Quem deve usá-lo?
+## <a name="who-should-use-it"></a>Who deve usá-lo?
 
-O microsoft graph Toolkit é ótimo para desenvolvedores de todos os níveis de experiência que procuram desenvolver um aplicativo que se conecta e acessa dados do Microsoft Graph, como:
+O Microsoft Graph Toolkit é ótimo para desenvolvedores de todos os níveis de experiência que procuram desenvolver um aplicativo que se conecta e acessa dados do Microsoft Graph, como:
 - Aplicativo Web
-- Guia Microsoft Teams
+- Microsoft Teams guia
 - Aplicativo Web Progressivo (PWA)
 - Aplicativo Detron
-- Web Part do SharePoint
+- SharePoint Web Part
 
 ## <a name="where-can-i-use-it"></a>Onde posso usá-lo?
 
-O microsoft graph Toolkit é suportado nos seguintes navegadores.
+O microsoft Graph Toolkit é suportado nos seguintes navegadores.
 
 |![Borda](images/edgeIcon.png)|![Firefox](images/firefoxIcon.png)|![Chrome](images/chromeIcon.png)|![Safari](images/safariIcon.png)|![Opera](images/operaIcon.png)|![Samsung Internet](images/samsungInternetIcon.png)|
 |----|----|----|----|----|----|----|
@@ -96,5 +97,5 @@ O microsoft graph Toolkit é suportado nos seguintes navegadores.
 ## <a name="next-steps"></a>Próximas etapas
 
 - Experimente os componentes no [playground](https://mgt.dev).
-- [Começar a](./get-started/overview.md) trabalhar com o Microsoft Graph Toolkit.
-- Confira o microsoft graph Toolkit [github](https://aka.ms/mgt).
+- [Começar com](./get-started/overview.md) o microsoft Graph Toolkit.
+- Confira o microsoft Graph Toolkit no [GitHub](https://aka.ms/mgt).

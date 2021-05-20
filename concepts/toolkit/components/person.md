@@ -1,16 +1,16 @@
 ---
-title: Componente person no microsoft graph Toolkit
+title: Componente person no microsoft Graph Toolkit
 description: O componente de pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 5250919404ecccea1f01042d93aaf2b9fa4fc3b3
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 46ba7c780985e71d68fe9270f165292136f2e46b
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266840"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579946"
 ---
-# <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente person no microsoft graph Toolkit
+# <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente person no microsoft Graph Toolkit
 
 O componente de pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome, endereço de email ou qualquer outro detalhe de pessoa.
 
@@ -28,9 +28,9 @@ O exemplo a seguir exibe uma pessoa usando o `mgt-person` componente. Você pode
 
 Você pode usar três propriedades para definir os detalhes da pessoa. Use apenas uma das seguintes propriedades por instância:
 
-* De definir `user-id` o atributo ou a propriedade para buscar o usuário do Microsoft Graph usando sua `userId` ID.
+* De definir `user-id` o atributo ou a propriedade para buscar o usuário da Microsoft Graph usando sua `userId` ID.
 
-* De definir `person-query` o atributo ou a propriedade para pesquisar o Microsoft Graph por uma determinada `personQuery` pessoa. Ele escolherá a primeira pessoa disponível e buscará os detalhes da pessoa. Um email funciona melhor para garantir que a pessoa certa seja consultada, mas um nome também funciona.
+* De definir `person-query` o atributo ou a propriedade para pesquisar o Microsoft Graph uma determinada `personQuery` pessoa. Ele escolherá a primeira pessoa disponível e buscará os detalhes da pessoa. Um email funciona melhor para garantir que a pessoa certa seja consultada, mas um nome também funciona.
 
 * De definir `person-presence` o atributo ou a propriedade para adicionar um selo de presença ao avatar da pessoa `personPresence` manualmente.
 
@@ -50,19 +50,22 @@ Você pode usar três propriedades para definir os detalhes da pessoa. Use apena
 
   Se nenhuma imagem for fornecida, uma será buscada (se disponível).
 
+* Por padrão, o componente de pessoa solicitará apenas o conjunto de propriedades padrão da Microsoft Graph [usuário.](/graph/api/user-get?&tabs=http#optional-query-parameters) Para solicitar propriedades adicionais, declare-as como qualquer parte do `line(x)Property` . 
+
+
 ## <a name="properties"></a>Propriedades
 
 Você pode usar várias propriedades para personalizar o componente.
 
 | Atributo       | Propriedade       | Descrição                                                   |
 | -----------     | ----------     | ------------------------------------------------------------- |
-| user-id         | userId         | De acordo com uma id do usuário para buscar os detalhes e a imagem desse usuário do Microsoft Graph.|
+| user-id         | userId         | De definida como uma id do usuário para buscar os detalhes e a imagem desse usuário da Microsoft Graph.|
 | person-query    | personQuery    | De definida como um nome ou email de uma pessoa para pesquisar uma pessoa no Microsoft Graph e buscar os detalhes e a imagem da primeira pessoa.|
 | person-details  | personDetails  | De acordo com um objeto que representa uma pessoa. Funciona com o objeto de pessoas, usuários, contatos ou grupos, recursos. |
 | fallback-details| fallbackDetails| De acordo com um objeto que representa uma pessoa quando nenhum usuário/pessoa/contato é encontrado no gráfico.
 | person-image    | personImage    | De definir a imagem para mostrar para a pessoa. |
 | presença de pessoa | personPresence | Desmarcar a presença da pessoa. |
-| fetch-image     | fetchImage     | De definir o sinalizador `personImage` para buscar automaticamente do Microsoft Graph com base `personDetails` no objeto fornecido pelo usuário. |
+| fetch-image     | fetchImage     | De definir o sinalizador para buscar automaticamente do `personImage` Microsoft Graph com base no objeto fornecido pelo `personDetails` usuário. |
 | tipo avatar     | avatarType     | Definir ou `initials` `photo` renderizar o estado de exibição - o padrão é foto. |
 | modo de exibição            | modo de exibição           | Definir para controlar como a pessoa é renderizada. O padrão é `avatar` <br /> `avatar` - mostrar somente o avatar <br /> `oneline` - mostrar avatar e primeira linha ( `displayName` por padrão) <br /> `twolines` - mostrar avatar e duas linhas de texto ( `displayName` `mail` e por padrão)|
 | line1-property  | line1Property  | Define a propriedade da personDetails a ser usada para a primeira linha de texto. O padrão é `displayName`.|
@@ -79,6 +82,7 @@ mgt-person {
   --avatar-size: 48px;
   --avatar-border: 0;
   --avatar-border-radius: 50%;
+  --avatar-cursor: default;
   
   --initials-color: white;
   --initials-background-color: magenta;
@@ -126,7 +130,7 @@ O `mgt-person` componente dá suporte a vários [modelos](../customize-component
 | --------- | ------------ | ----------- |
 | loading | nenhuma | O modelo a ser render enquanto o componente está em um estado de carregamento. |
 | no-data | nenhuma | O modelo a ser renderizar quando nenhuma imagem ou dados de pessoa estiver disponível. | 
-| Padrão. | pessoa: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo padrão substitui todo o componente por seu próprio. |
+| Padrão. | pessoa: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem <br> `personPresence`: O objeto de detalhes de presença para pessoa  | O modelo padrão substitui todo o componente por seu próprio. |
 | person-card | pessoa: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo para atualizar o mgt-person-card exibido em foco ou clique. |
 | line1 | pessoa: o objeto de detalhes da pessoa | O modelo para a primeira linha de metadados de pessoa. |
 | line2 | pessoa: o objeto de detalhes da pessoa | O modelo para a segunda linha de metadados de pessoa. |
@@ -199,11 +203,11 @@ As propriedades a seguir estão disponíveis no objeto config.
 
 | Propriedade | Descrição |
 | ------------ | ------------- |
-| useContactApis | `boolean` - Indica se o componente da pessoa pode usar a API de contatos pessoais do Microsoft Graph para pesquisar detalhes de contato e fotos. O valor padrão é `true`.  |
+| useContactApis | `boolean`- Indica se o componente da pessoa pode usar a API de contatos pessoais da Microsoft Graph para pesquisar detalhes de contato e fotos. O valor padrão é `true`.  |
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-Esse controle usa as seguintes APIs e permissões do Microsoft Graph.
+Esse controle usa as seguintes APIs Graph Microsoft e permissões.
 
 | Recurso | Permissão     |
 | -| - |
@@ -227,7 +231,7 @@ O controle usa o provedor de autenticação global descrito na [documentação d
 |`presence`|Presença da pessoa|Usado, quando `showPresence` está definido como `true`|
 |`users`|Informações do usuário da pessoa|
 
-Consulte [Cache para](../customize-components/cache.md) obter mais detalhes sobre como configurar o cache.
+Consulte [Caching](../customize-components/cache.md) para obter mais detalhes sobre como configurar o cache.
 
 ## <a name="extend-for-more-control"></a>Estender para obter mais controle
 

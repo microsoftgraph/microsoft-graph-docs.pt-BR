@@ -1,20 +1,20 @@
 ---
-title: Localizando os componentes de Toolkit do Microsoft Graph
-description: Use LocalizationHelper para localização do Microsoft Graph Toolkit componentes.
+title: Localizando os componentes Graph Toolkit Microsoft
+description: Use LocalizationHelper para localização dos componentes Graph Toolkit Microsoft.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 3fafc71f20079f5320d07a62b06a2a18f97c5831
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d333112e77d047151aa6b030acd0ed1cea626573
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475412"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579925"
 ---
-# <a name="localizing-the-microsoft-graph-toolkit-components"></a>Localizando os componentes de Toolkit do Microsoft Graph
+# <a name="localizing-the-microsoft-graph-toolkit-components"></a>Localizando os componentes Graph Toolkit Microsoft
 
 A localização é um aspecto importante do desenvolvimento de aplicativos para dar suporte a usuários com vários requisitos de idioma globalmente.
 
-Você pode localizar os componentes do Microsoft Graph Toolkit para garantir que a interface do usuário reflita o idioma de destino.
+Você pode localizar os componentes Graph Toolkit microsoft para garantir que a interface do usuário reflita o idioma de destino.
 
 ## <a name="use-localizationhelper-to-add-localized-strings"></a>Use LocalizationHelper para adicionar cadeias de caracteres localizadas
 
@@ -197,5 +197,22 @@ As cadeias de caracteres podem ser definidas em nível global ou por componente 
   personalInterestsSubSectionTitle: "Personal Interests",
   birthdaySubSectionTitle: "Birthday",
   currentYearSubtitle: "Current"
+}
+```
+
+### <a name="file"></a>File
+
+```ts
+'file': {
+  modifiedSubtitle: 'Modified',
+  sizeSubtitle: 'Size'
+};
+```
+
+### <a name="file-list"></a>File-List
+
+```ts
+"file-list": {
+  showMoreSubtitle: 'Show more items'
 }
 ```

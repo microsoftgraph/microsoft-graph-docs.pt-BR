@@ -1,30 +1,30 @@
 ---
-title: Usar o Kit de Ferramentas do Microsoft Graph com o React
-description: Começar a usar o Microsoft Graph Toolkit em um aplicativo React.
+title: Use o microsoft Graph Toolkit com React
+description: Começar a usar o microsoft Graph Toolkit em um React aplicativo.
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 1ed264233e24f542a3cc0e23d664f1977cbe318f
-ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.openlocfilehash: a1eaf17b4d4b12e04c11941ab25c5e2bdfd6d57a
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101885"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579771"
 ---
-# <a name="use-the-microsoft-graph-toolkit-with-react"></a>Usar o Kit de Ferramentas do Microsoft Graph com o React
+# <a name="use-the-microsoft-graph-toolkit-with-react"></a>Use o microsoft Graph Toolkit com React
 
-O Microsoft Graph Toolkit é um conjunto de componentes da Web que simplificam a conexão com o Microsoft Graph e permitem que você se concentre no seu aplicativo. O Microsoft Graph Toolkit está disponível como um conjunto genérico de componentes web distribuídos por meio do `@microsoft/mgt` pacote npm.
+O Microsoft Graph Toolkit é um conjunto de componentes da Web que simplificam a conexão com o Microsoft Graph e permitem que você se concentre em seu aplicativo. O Microsoft Graph Toolkit está disponível como um conjunto genérico de componentes web distribuídos por meio do `@microsoft/mgt` pacote npm.
 
-Se você estiver criando aplicativos com [ `@microsoft/mgt-react` ](./mgt-react.md)o React, poderá usar o pacote, que envolve os componentes web do Microsoft Graph Toolkit em componentes do React e facilita a passagem de dados complexos.
+Se você estiver criando aplicativos com React, poderá usar o pacote [ `@microsoft/mgt-react` ,](./mgt-react.md)que envolve os componentes da Web do Microsoft Graph Toolkit em componentes React e facilita a passagem de dados complexos.
 
-Este artigo descreve o processo passo a passo de usar o Kit de Ferramentas do Microsoft Graph para criar um aplicativo React e conectá-lo ao Microsoft 365. Depois de concluir as etapas, você terá um aplicativo React que mostra os próximos compromissos do usuário atualmente assinado do Microsoft 365.
+Este artigo descreve o processo passo a passo de usar o microsoft Graph Toolkit para criar um aplicativo React e conectá-lo ao Microsoft 365. Depois de concluir as etapas, você terá um aplicativo React que mostra os próximos compromissos do usuário atualmente Microsoft 365.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para seguir as etapas deste artigo, você precisará de um ambiente de desenvolvimento do Microsoft 365 e algumas ferramentas. Para obter detalhes, veja [como começar.](./overview.md)
+Para seguir as etapas deste artigo, você precisará de um ambiente Microsoft 365 desenvolvimento e algumas ferramentas. Para obter detalhes, consulte [getting started](./overview.md).
 
-## <a name="create-a-react-app"></a>Criar um aplicativo React
+## <a name="create-a-react-app"></a>Criar um React aplicativo
 
-Crie um novo aplicativo React executando o seguinte comando. Isso criará um novo aplicativo React usando TypeScript, que ajudará você a escrever código mais robusto e evitar erros de tempo de execução.
+Crie um novo React aplicativo executando o seguinte comando. Isso criará um novo aplicativo React usando TypeScript, o que ajudará você a escrever um código mais robusto e evitar erros de tempo de execução.
 
 ```cmd
 npx create-react-app my-m365-app --template typescript --use-npm
@@ -36,16 +36,16 @@ Altere o diretório de trabalho para o aplicativo recém-criado.
 cd my-m365-app
 ```
 
-Em seguida, instale o `mgt-react` pacote npm, que contém os componentes do React do Kit de Ferramentas do Microsoft Graph.
+Em seguida, instale o `mgt-react` pacote npm, que contém os componentes Graph Toolkit React Microsoft.
 
 ```cmd
 npm i @microsoft/mgt-react
 ```
 
-Instale também `mgt-msal-provider` `mgt-element` o pacote npm, que contém o provedor de auth MSAL.
+Instale o `mgt-msal2-provider` `mgt-element` pacote e npm também, que contém o provedor de auth MSAL 2.0.
 
 ```cmd
-npm i @microsoft/mgt-element @microsoft/mgt-msal-provider
+npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
 ```
 
 Confirme se você pode executar o aplicativo.
@@ -54,40 +54,43 @@ Confirme se você pode executar o aplicativo.
 npm start
 ```
 
-Você deve ser capaz de abrir seu aplicativo no navegador via `http://localhost:3000` .
+Você deve ser capaz de abrir seu aplicativo no navegador por `http://localhost:3000` meio de .
 
 [!INCLUDE [AAD with implicit flow app registration](../includes/aad-app-registration-spa.md)]
 
-## <a name="connect-react-app-to-microsoft-365"></a>Conectar o aplicativo React ao Microsoft 365
+## <a name="connect-react-app-to-microsoft-365"></a>Conexão React aplicativo para Microsoft 365
 
-Agora que você registrou seu aplicativo no Azure Active Directory (Azure AD), poderá conectar o aplicativo React ao Microsoft 365. Primeiro, permita que os usuários se inscrevam no aplicativo usando a conta da Microsoft.
+Agora que você registrou seu aplicativo com o Azure Active Directory (Azure AD), você pode conectar o aplicativo React ao Microsoft 365. Primeiro, permita que os usuários entre no aplicativo usando sua conta da Microsoft.
 
-### <a name="copy-the-azure-ad-application-registration-id"></a>Copiar a ID de registro do aplicativo Azure AD
+### <a name="copy-the-azure-ad-application-registration-id"></a>Copiar a ID de registro do aplicativo do Azure AD
 
-1. No Portal do Azure, vá para o registro do seu aplicativo.
+1. No Portal do Azure, acesse o registro do aplicativo.
 1. Verifique se você está na página **Visão** Geral.
-1. Na seção **Essentials,** copie o valor da propriedade **de ID do aplicativo (cliente)**
+1. Na seção **Essentials,** copie o valor da propriedade **Application (client) ID**
 
-### <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a>Configurar o provedor de autenticação do Microsoft Graph Toolkit
+### <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a>Configurar o provedor de autenticação Graph Toolkit Microsoft
 
-Em seguida, configure o provedor de autenticação que o Microsoft Graph Toolkit deve usar. Nesse caso, você usará a MSAL, que é um bom padrão para a criação de aplicativos autônomos. Se você usar qualquer um dos pontos de extensibilidade no Microsoft 365, como o Teams ou o SharePoint, você usará [outros provedores.](../providers/providers.md)
+Em seguida, configure o provedor de autenticação que o microsoft Graph Toolkit deve usar. Nesse caso, você usará o MSAL, que é um bom padrão para a criação de aplicativos autônomos. Se você usar qualquer um dos pontos de extensibilidade no Microsoft 365, como Teams ou SharePoint, você usará [outros provedores](../providers/providers.md).
 
-1. No editor de código, abra **o src/index.** e na lista de importações, adicione:
+>[!NOTE] 
+>Se você estiver usando o Provedor MSAL no momento e quiser atualizar para o Provedor MSAL 2, siga as etapas no artigo do provedor [MSAL 2.](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider)
+
+1. No editor de código, abra **o src/index.** e à lista de importações, adicione:
 
     ```tsx
     import { Providers } from '@microsoft/mgt-element';
-    import { MsalProvider } from '@microsoft/mgt-msal-provider';
+    import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
     ```
 
-1. Após a última `import` instrução, inicialize o Microsoft Graph Toolkit com o provedor MSAL.
+1. Após a última `import` instrução, inicialize o microsoft Graph Toolkit com o provedor MSAL.
 
     ```tsx
-    Providers.globalProvider = new MsalProvider({
+    Providers.globalProvider = new Msal2Provider({
       clientId: 'REPLACE_WITH_CLIENTID'
     });
     ```
 
-    Substitua o valor da `clientId` propriedade pelo valor da propriedade que você `Application (client) ID` copiou anteriormente no Portal do Azure.
+    Substitua o valor da propriedade pelo valor da propriedade copiada `clientId` `Application (client) ID` anteriormente no Portal do Azure.
 
 Com essas alterações, o **arquivo src/index.tsx** terá a seguinte aparência.
 
@@ -99,9 +102,9 @@ Com essas alterações, o **arquivo src/index.tsx** terá a seguinte aparência.
   import * as serviceWorker from './serviceWorker';
 
   import { Providers } from '@microsoft/mgt-element';
-  import { MsalProvider } from '@microsoft/mgt-msal-provider';
+  import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
   
-  Providers.globalProvider = new MsalProvider({
+  Providers.globalProvider = new Msal2Provider({
     clientId: 'REPLACE_WITH_CLIENTID'
   });
   
@@ -120,15 +123,15 @@ Com essas alterações, o **arquivo src/index.tsx** terá a seguinte aparência.
 
 ### <a name="add-the-sign-in-button"></a>Adicionar o botão Entrar
 
-Adicione o **componente React** do Kit de  Ferramentas do Microsoft Graph de logon, que exibirá o botão Entrar que as pessoas podem usar para entrar com a conta da Microsoft em seu aplicativo.
+Adicione o **componente Logon** do Microsoft Graph Toolkit React, que exibirá o botão Entrar que as pessoas podem usar para entrar com sua conta da Microsoft em seu aplicativo. 
 
-1. No editor de código, abra o **arquivo src/App.tsx** e adicione à lista de importações:
+1. No editor de código, abra o **arquivo src/App.tsx** e, na lista de importações, adicione:
 
     ```tsx
     import { Login } from '@microsoft/mgt-react';
     ```
 
-1. Na função, substitua o conteúdo da cláusula pela estrutura básica, incluindo o componente logon do Kit de Ferramentas `App` `return` do Microsoft Graph:
+1. Na `App` função, substitua o conteúdo da cláusula pela estrutura básica, incluindo o componente Graph Toolkit `return` Logon da Microsoft:
 
     ```tsx
     <div className="App">
@@ -158,39 +161,39 @@ function App() {
 export default App;
 ```
 
-### <a name="test-signing-in-to-your-application"></a>Testar a assinatura em seu aplicativo
+### <a name="test-signing-in-to-your-application"></a>Testar o registro no aplicativo
 
-Agora você poderá entrar em seu aplicativo com sua conta da Microsoft.
+Agora você deve poder entrar no aplicativo com sua conta da Microsoft.
 
-1. Volte para o navegador em que seu aplicativo React está sendo executado. Agora você deve ver um **botão Entrar.**
-1. Ao clicar  no botão Entrar, você será solicitado a entrar com sua conta da Microsoft (você pode usar a mesma conta que a que acessou o Portal do Azure).
-1. Como esta é a primeira vez que você está usando esse aplicativo Azure AD, precisa consentir seu uso em sua organização.
-1. Depois de entrar, você será redirecionado para seu aplicativo React. Observe que o **botão** Entrar foi alterado para mostrar o nome do aplicativo React do usuário mostrando as informações do usuário recuperadas do ![ Microsoft 365 usando o Microsoft Graph ](../images/mgt-react-userinfo.png) Toolkit.
+1. Volte para o navegador onde seu aplicativo React está sendo executado. Agora você deve ver um **botão Entrar.**
+1. Ao clicar  no botão Entrar, você será solicitado a entrar com sua conta da Microsoft (você pode usar a mesma conta com a qual você acessou o Portal do Azure).
+1. Como esta é a primeira vez que você está usando esse aplicativo do Azure AD, você precisa consentir seu uso em sua organização.
+1. Depois de entrar, você será redirecionado para seu React app. Observe que o **botão** Entrar foi alterado para mostrar o nome do usuário React aplicativo mostrando informações do usuário recuperadas do Microsoft 365 usando o ![ Microsoft Graph Toolkit ](../images/mgt-react-userinfo.png) .
 
-## <a name="load-data-from-microsoft-365"></a>Carregar dados do Microsoft 365
+## <a name="load-data-from-microsoft-365"></a>Carregar dados de Microsoft 365
 
-O Microsoft Graph Toolkit não apenas simplifica a autenticação para o Microsoft 365, mas também carrega seus dados. Neste exemplo, você mostrará o calendário da pessoa.
+A Microsoft Graph Toolkit simplifica a autenticação para Microsoft 365, mas também carrega seus dados. Neste exemplo, você mostrará o calendário da pessoa assinada.
 
 ### <a name="specify-permissions-needed-for-your-application"></a>Especificar permissões necessárias para seu aplicativo
 
-Antes de carregar dados do Microsoft 365, você precisa especificar a lista de escopos de permissão que seu aplicativo deve ter para acessar os dados do usuário. Esses escopos diferem dependendo do tipo de informação que você deseja mostrar. Nesse caso, você precisará de acesso ao calendário das pessoas, bem como acesso básico a informações sobre as pessoas que também são exibidas no calendário. Você pode encontrar os escopos exigidos por cada API na documentação da [API do Microsoft Graph.](/graph/api/overview)
+Antes de carregar dados Microsoft 365, você precisa especificar a lista de escopos de permissão que seu aplicativo deve ter para acessar os dados do usuário. Esses escopos diferem dependendo do tipo de informação que você deseja mostrar. Nesse caso, você precisará de acesso ao calendário das pessoas, bem como acesso básico a informações sobre pessoas que também são exibidas no calendário. Você pode encontrar os escopos exigidos por cada API na documentação da [API Graph Microsoft.](/graph/api/overview)
 
 1. No editor de código, abra o **arquivo src/index.tsx** e atualize o código de inicialização do provedor.
 
     ```tsx
-    Providers.globalProvider = new MsalProvider({
-      clientId: 'd7cb93c9-9097-4e38-8f06-7c0088ac3318',
+    Providers.globalProvider = new Msal2Provider({
+      clientId: 'REPLACE_WITH_CLIENTID',
       scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']
     });
     ```
 
 ### <a name="show-users-data-after-signing-in"></a>Mostrar dados do usuário após entrar
 
-Em seguida, estenda o aplicativo para mostrar dados do calendário do usuário. Você só poderá acessar essas informações depois que o usuário entrar. Para fazer isso, você precisará controlar o estado de login do usuário e mostrar os dados do calendário depois que o usuário entrar com a conta da Microsoft.
+Em seguida, estenda o aplicativo para mostrar dados do calendário do usuário. Você só pode acessar essas informações depois que o usuário entrar. Para fazer isso, você precisará rastrear o estado de login do usuário e mostrar os dados do calendário depois que o usuário tiver se assinado com sua conta da Microsoft.
 
-#### <a name="track-users-sign-in-state"></a>Acompanhar o estado de login do usuário
+#### <a name="track-users-sign-in-state"></a>Controlar o estado de login do usuário
 
-Para controlar o estado de login do usuário em seu aplicativo, você usará o React e os ganchos em combinação com manipuladores de `useState` `useEffect` eventos do provedor.
+Para rastrear o estado de login do usuário em seu aplicativo, você usará o React e os ganchos em combinação com manipuladores de eventos `useState` `useEffect` do provedor.
 
 1. No editor de código, abra o **arquivo src/App.tsx** e estenda a instrução React `import` existente.
 
@@ -198,13 +201,13 @@ Para controlar o estado de login do usuário em seu aplicativo, você usará o R
     import React, { useState, useEffect } from 'react';
     ```
 
-1. Importe o `Provider` e os tipos de , `ProviderState` `mgt-element` adicionando às importações.
+1. Importe os `Provider` tipos e de , `ProviderState` `mgt-element` adicionando a importações.
 
     ```tsx
     import { Providers, ProviderState } from '@microsoft/mgt-element';
     ```
 
-1. Adicione uma função personalizada chamada que permite rastrear o estado de login do `useIsSignedIn` usuário em seu aplicativo.
+1. Adicione uma função personalizada chamada que permite controlar o estado de login do `useIsSignedIn` usuário em seu aplicativo.
 
     ```tsx
     function useIsSignedIn(): [boolean] {
@@ -228,11 +231,11 @@ Para controlar o estado de login do usuário em seu aplicativo, você usará o R
     }
     ```
 
-Esta função faz duas coisas. Primeiro, usando o `useState` gancho do React, ele habilita o estado de rastreamento dentro do componente. Sempre que o estado mudar, o React renderizará o componente. Em segundo lugar, usando o gancho react, ele estende o ciclo de vida do componente rastreando as alterações no provedor do Microsoft Graph Toolkit e atualizando o `useEffect` componente, se necessário.
+Essa função faz duas coisas. Primeiro, usando o `useState` React, ele habilita o estado de controle dentro do componente. Sempre que o estado mudar, React renderizará seu componente. Em segundo lugar, usando o React, ele estende o ciclo de vida do componente rastreando as alterações no provedor Graph Toolkit Microsoft e atualizando o componente, se `useEffect` necessário.
 
-#### <a name="load-users-calendar-if-user-is-signed-in"></a>Carregar o calendário do usuário se o usuário estiver se inscreveu
+#### <a name="load-users-calendar-if-user-is-signed-in"></a>Carregar o calendário do usuário se o usuário estiver assinado
 
-Agora que você rastreia o estado de login do usuário em seu aplicativo, pode mostrar o calendário depois de entrar.
+Agora que você rastreia o estado de login do usuário em seu aplicativo, você pode mostrar seu calendário depois de entrar.
 
 1. No editor de código, abra o **arquivo src/App.tsx** e, dentro da função **App,** adicione:
 
@@ -240,9 +243,9 @@ Agora que você rastreia o estado de login do usuário em seu aplicativo, pode m
     const [isSignedIn] = useIsSignedIn();
     ```
 
-    Isso define uma constante Boolean, que você pode usar para determinar se o usuário está `isSignedIn` atualmente londo em seu aplicativo.
+    Isso define uma constante Boolean, que você pode usar para determinar se o usuário está atualmente `isSignedIn` dentro do aplicativo.
 
-1. Estenda o conteúdo da cláusula com um componente adicional e o componente agenda do Kit de Ferramentas `return` `div` do Microsoft Graph.
+1. Estenda o conteúdo da cláusula com um componente de Agenda Graph Toolkit `return` `div` Microsoft.
 
     ```tsx
     <div>
@@ -251,7 +254,7 @@ Agora que você rastreia o estado de login do usuário em seu aplicativo, pode m
     </div>
     ```
 
-Com essas alterações, o **arquivo src/App.tsx** deve se parecer com o seguinte.
+Com essas alterações, o **arquivo src/App.tsx** deve ter a seguinte aparência.
 
 ```tsx
 import { Providers, ProviderState } from '@microsoft/mgt';
@@ -298,19 +301,19 @@ function App() {
 export default App;
 ```
 
-### <a name="test-showing-users-calendar-after-they-signed-in"></a>Teste mostrando o calendário do usuário depois que ele se inscreveu
+### <a name="test-showing-users-calendar-after-they-signed-in"></a>Testar mostrando o calendário do usuário depois que ele se inscreveu
 
-Com essas alterações, depois de entrar em seu aplicativo com sua conta da Microsoft, você deverá ver seu calendário.
+Com essas alterações, depois de entrar no aplicativo com sua conta da Microsoft, você deverá ver seu calendário.
 
-1. Para ver as alterações, feche o navegador e abra-o novamente e vá para `http://localhost:3000` . Você faz isso porque alterou o valor da propriedade, o que afeta o token de acesso que você `scopes` solicita do Azure AD.
-1. Escolha o **botão Entrar** e entre usando sua conta da Microsoft. Observe as adições à lista de permissões solicitadas na solicitação de consentimento. Isso porque você incluiu permissões adicionais na `scope` propriedade.
-1. Depois de consentir o uso do aplicativo, você deverá ver informações sobre o usuário atual e seu calendário.
+1. Para ver as alterações, feche o navegador e abra-o novamente e vá para `http://localhost:3000` . Faça isso porque alterou o valor da propriedade, o que afeta o token de acesso solicitado `scopes` pelo Azure AD.
+1. Escolha o **botão Entrar** e entre usando sua conta da Microsoft. Observe as adições à lista de permissões solicitadas no prompt de consentimento. Isso porque você incluiu permissões adicionais na `scope` propriedade.
+1. Depois de concordar com o uso do aplicativo, você deverá ver informações sobre o usuário atual e seu calendário.
 
 ![Aplicativo concluído](../images/mgt-finished-app.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Veja [o que há no Kit de Ferramentas do Microsoft Graph.](../overview.md)
-- Experimente os componentes no [playground.](https://mgt.dev)
-- Faça uma pergunta no [Stack Overflow](https://aka.ms/mgt-question).
-- Relatar bugs ou deixar uma solicitação de recurso [no GitHub.](https://aka.ms/mgt)
+- Veja [o que está no microsoft Graph Toolkit](../overview.md).
+- Experimente os componentes no [playground](https://mgt.dev).
+- Faça uma pergunta sobre [Stack Overflow](https://aka.ms/mgt-question).
+- Relatar bugs ou deixar uma solicitação de recurso [GitHub](https://aka.ms/mgt).

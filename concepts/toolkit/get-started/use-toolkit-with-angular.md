@@ -1,22 +1,22 @@
 ---
-title: Usar o kit de ferramentas do Microsoft Graph com angular
-description: Introdução ao uso do kit de ferramentas do Microsoft Graph em um aplicativo angular.
+title: Use o microsoft Graph Toolkit com Angular
+description: Começar a usar o microsoft Graph Toolkit em um Angular aplicativo.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: a1c0ebc252545491dc57d8910eb283db6d227ccd
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 1390b29c94fef292433e1e422fa5c44fd480e1eb
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49664041"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579883"
 ---
-# <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Usar o kit de ferramentas do Microsoft Graph com angular
+# <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Use o microsoft Graph Toolkit com Angular
 
-Os componentes do kit de ferramentas do Microsoft Graph funcionam bem com estruturas da Web como angulares, além de JavaScript e HTML. Este tópico descreve como usar o kit de ferramentas do Microsoft Graph com angular. Para obter instruções passo a passo que descrevem como criar um novo aplicativo angular e usar o Microsoft Graph Toolkit, consulte [usando o Microsoft Graph Toolkit com angular](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/).
+Os Graph Toolkit da Microsoft funcionam muito bem com estruturas da Web, como Angular além de JavaScript e HTML de baunilha. Este tópico descreve como usar o microsoft Graph Toolkit com Angular. Para um passo a passo passo que descreve como criar um novo aplicativo Angular e usar o Microsoft Graph Toolkit, consulte [Using Microsoft Graph Toolkit with Angular](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/).
 
-## <a name="add-the-microsoft-graph-toolkit"></a>Adicionar o Microsoft Graph Toolkit
+## <a name="add-the-microsoft-graph-toolkit"></a>Adicionar o microsoft Graph Toolkit
 
-Primeiro, você precisa habilitar elementos personalizados no seu aplicativo angular adicionando o `CUSTOM_ELEMENT_SCHEMA` ao `@NgModule() decorator` `app.module.ts` . O exemplo a seguir mostra como fazer isso:
+Primeiro, você precisa habilitar elementos personalizados em seu aplicativo Angular adicionando o `CUSTOM_ELEMENT_SCHEMA` ao `@NgModule() decorator` em `app.module.ts` . O exemplo a seguir mostra como fazer isso:
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -32,19 +32,23 @@ import { AppComponent } from './app.component';
 })
 export class AppModule {}
 ```
-Em seguida, adicione o Microsoft Graph Toolkit ao seu projeto instalando o pacote do NPM com:
+Em seguida, adicione o microsoft Graph Toolkit ao seu projeto instalando o pacote npm com:
 ```bash
 npm install @microsoft/mgt
 ```
 ## <a name="initialize-a-provider"></a>Inicializar um provedor
 
-Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para os componentes. Para saber mais, consulte [usando os provedores](../providers/providers.md). O provedor que você usa depende do contexto no qual a solução será usada.
+Os provedores Graph Toolkit Microsoft habilitam a autenticação e o acesso ao Microsoft Graph para os componentes. Para saber mais, confira [Usando os provedores](../providers/providers.md). O provedor usado depende do contexto no qual sua solução será usada.
 
-O exemplo a seguir mostra como adicionar o [provedor MSAL](../providers/msal.md), mas você pode seguir o mesmo modelo com qualquer um dos provedores. Importe o provedor e defina-o para ser inicializado quando o aplicativo for inicializado. Substitua `<YOUR-CLIENT-ID>` pela ID do cliente para seu aplicativo.
+O exemplo a seguir mostra como adicionar o [Provedor MSAL 2](../providers/msal2.md), mas você pode seguir o mesmo modelo com qualquer um dos provedores.
+>[!NOTE] 
+>Se você estiver usando o Provedor MSAL no momento e quiser atualizar para o Provedor MSAL 2, siga as etapas no artigo do provedor [MSAL 2.](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider)
+
+Import the provider and set it to initialize when the application initializes. Substitua `<YOUR-CLIENT-ID>` pela ID do cliente para seu aplicativo.
 
 ```ts
 import { Component, OnInit } from '@angular/core';
-import { Providers, MsalProvider } from '@microsoft/mgt';
+import { Providers, Msal2Provider } from '@microsoft/mgt';
 
 @Component({
     selector: 'app-root',
@@ -55,27 +59,26 @@ export class AppComponent implements OnInit {
 
     ngOnInit()
     {
-        Providers.globalProvider = new MsalProvider({
+        Providers.globalProvider = new Msal2Provider({
             clientId: '<YOUR-CLIENT-ID>'
         });
     }
 }
 ```
 ### <a name="create-an-appclient-id"></a>Criar uma ID de aplicativo/cliente
-Para obter uma ID de cliente, você precisa [registrar seu aplicativo](../../auth-register-app-v2.md) no Azure AD. 
->**Observação**: o MSAL só dá suporte ao fluxo implícito do OAuth. Certifique-se de habilitar o fluxo implícito em seu aplicativo no portal do Azure (não está habilitado por padrão). Em **autenticação**, encontre a seção **concessão implícita** e marque as caixas de seleção para **tokens de acesso** e **tokens de ID**.
+Para obter uma ID do cliente, você precisa registrar [seu aplicativo](../../auth-register-app-v2.md) no Azure AD. 
 
 ## <a name="add-components"></a>Adicionar componentes
 
-Agora, você pode usar qualquer um dos componentes do Microsoft Graph Toolkit como faria normalmente em seus modelos HTML. Por exemplo, para adicionar o [componente pessoa](../components/person.md), adicione o seguinte ao modelo:
+Agora, você pode usar qualquer um dos componentes do Microsoft Graph Toolkit como faria normalmente em seus modelos HTML. Por exemplo, para adicionar o [componente Person](../components/person.md), adicione o seguinte ao seu modelo:
 
 ```html
 <mgt-person person-query="me" view="twolines"></mgt-person>
 ```
 
-## <a name="customizing-components-with-angular"></a>Personalizando componentes com o angular
+## <a name="customizing-components-with-angular"></a>Personalização de componentes com Angular
 
-Todos os componentes do Microsoft Graph Toolkit dão suporte a [modelos personalizados](../customize-components/templates.md), que permitem modificar o conteúdo de um componente. A sintaxe padrão para personalizar os componentes é usar chaves duplas para se referir aos dados de propriedade de cada um dos itens retornados, conforme mostrado:
+Todos os Graph Toolkit microsoft [suportam modelos personalizados](../customize-components/templates.md), que permitem modificar o conteúdo de um componente. A sintaxe padrão para personalizar os componentes é usar chaves duplas para se referir aos dados de propriedade de cada um dos itens retornados, conforme mostrado:
 
 ```html
 <!-- Double braces are used for data binding in Angular. This will throw an error. -->
@@ -86,15 +89,15 @@ Todos os componentes do Microsoft Graph Toolkit dão suporte a [modelos personal
 </mgt-agenda>
 ```
 
-No angular, no entanto, chaves duplas são usadas para associação de dados e o compilador angular apresentará um erro se você tentar usar a sintaxe de chave dupla.
+No Angular, no entanto, chaves duplas são usadas para vinculação de dados e o compilador Angular lançará um erro se você tentar usar a sintaxe de chave dupla.
 
-Você pode evitar esses erros alterando os caracteres padrão usados pelo kit de ferramentas para algo diferente de chaves duplas usando o `TemplateHelper` . É melhor fazer isso no seu componente de aplicativo de nível superior para que se aplique globalmente.
+Você pode evitar esses erros alterando os caracteres padrão usados pelo Toolkit para algo diferente de chaves duplas usando `TemplateHelper` o . É melhor fazer isso em seu componente de aplicativo de nível superior para que ele se aplique globalmente.
 
-Importe o `TemplateHelper` e use o `.setBindingSyntax()` método para definir sua sintaxe de associação personalizada.
+Importe e `TemplateHelper` use o método para definir sua sintaxe de associação `.setBindingSyntax()` personalizada.
 
 ```ts
 import { Component, OnInit } from '@angular/core';
-import { Providers, MsalProvider, TemplateHelper } from '@microsoft/mgt';
+import { Providers, Msal2Provider, TemplateHelper } from '@microsoft/mgt';
 
 @Component({
     selector: 'app-root',
@@ -105,12 +108,12 @@ export class AppComponent implements OnInit {
 
     ngOnInit()
     {
-        Providers.globalProvider = new MsalProvider({ clientId: '<YOUR-CLIENT-ID>'})
+        Providers.globalProvider = new Msal2Provider({ clientId: '<YOUR-CLIENT-ID>'})
         TemplateHelper.setBindingSyntax('[[',']]');
     }
 }
 ```
-Agora, você pode usar a sintaxe de associação personalizada para definir modelos personalizados.
+Agora, você pode usar sua sintaxe de associação personalizada para definir modelos personalizados.
 
 ```html
 <mgt-agenda>
@@ -121,7 +124,7 @@ Agora, você pode usar a sintaxe de associação personalizada para definir mode
 ```
 
 ## <a name="next-steps"></a>Próximas etapas
-- Confira este tutorial passo a passo sobre a [criação de um aplicativo angular](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/).
+- Confira este tutorial passo a passo sobre como [criar um Angular app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/).
 - Experimente os componentes no [playground](https://mgt.dev).
-- Faça uma pergunta sobre o [estouro de pilha](https://aka.ms/mgt-question).
-- Informe bugs ou deixe uma solicitação de recurso no [GitHub](https://aka.ms/mgt).
+- Faça uma pergunta sobre [Stack Overflow](https://aka.ms/mgt-question).
+- Relatar bugs ou deixar uma solicitação de recurso [GitHub](https://aka.ms/mgt).

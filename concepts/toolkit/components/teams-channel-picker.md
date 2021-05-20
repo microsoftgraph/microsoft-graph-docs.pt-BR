@@ -1,18 +1,18 @@
 ---
-title: Componente do Seletor de Canal do Microsoft Teams no microsoft graph Toolkit
-description: Você pode usar o mgt-teams-channel-picker para pesquisar canais e equipes associadas ao usuário no Microsoft Graph.
+title: Microsoft Teams Componente selador de canal no Microsoft Graph Toolkit
+description: Você pode usar o mgt-teams-channel-picker para pesquisar canais e equipes associadas ao usuário no microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 086ce7085f1802e40195fca9f54f2af460291fda
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: aaa89b9fab5d9e29c35b7d2cabb0a494ca97d4b3
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266791"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579939"
 ---
-# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Componente do Seletor de Canal do Microsoft Teams no microsoft graph Toolkit
+# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Teams Componente selador de canal no Microsoft Graph Toolkit
 
-Você pode usar o `mgt-teams-channel-picker` componente para habilitar pesquisas para canais do Microsoft Teams associados a um usuário. O componente pode pesquisar todas as equipes que o usuário ingressou e cada canal nessas equipes. 
+Você pode usar o `mgt-teams-channel-picker` componente para habilitar pesquisas Microsoft Teams canais associados a um usuário. O componente pode pesquisar todas as equipes que o usuário ingressou e cada canal nessas equipes. 
 
 ## <a name="example"></a>Exemplo
 
@@ -36,7 +36,7 @@ console.log(channelPicker.selectedItem.team);
 
 Use o `selectChannelById(channelId: string)` método para selecionar programaticamente um canal.
 
-> **Observação: o** seletor de canal do Teams só dá suporte à seleção de canal único.
+> **Observação:** o Teams seletor de canal só dá suporte à seleção de canal único.
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -87,7 +87,7 @@ mgt-teams-channel-picker {
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
-| loading | null: sem dados | O modelo usado para renderizar o estado do selador enquanto a solicitação ao Microsoft Graph está sendo feita. |
+| loading | null: sem dados | O modelo usado para renderizar o estado do selador enquanto a solicitação à Microsoft Graph está sendo feita. |
 | erro | null: sem dados| O modelo usado se a pesquisa do usuário não retornar usuários. |
 
 
@@ -103,12 +103,29 @@ O exemplo a seguir mostra como usar o `error` modelo.
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-Esse componente usa as seguintes APIs e permissões do Microsoft Graph.
+Este componente usa as seguintes APIs Graph Microsoft e permissões por padrão.
 
 | API                                                                                                              | Permissão  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
 | [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
+
+Na versão 2.2, as permissões necessárias foram atualizadas para as permissões menos restritivas Teams baseadas em dados. Para evitar uma alteração de quebra, você precisa optar pelas novas permissões por meio de uma configuração global.
+
+```ts
+import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";
+
+MgtTeamsChannelPicker.config.useTeamsBasedScopes = true;
+```
+
+Com `useTeamsBasedScopes` definido como , o Teams Selador de Canal usará os seguintes `true` escopos. 
+
+| API                                                                                                              | Permissão  |
+| ---------------------------------------------------------------------------------------------------------------- | ----------- |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | Team.ReadBasic.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Channel.ReadBasic.All        |
+
+Essas serão as permissões padrão na próxima grande atualização.
 
 ## <a name="authentication"></a>Autenticação
 

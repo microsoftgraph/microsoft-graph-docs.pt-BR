@@ -1,16 +1,16 @@
 ---
-title: Componente Pessoas no microsoft graph Toolkit
+title: Componente Pessoas no Microsoft Graph Toolkit
 description: Você pode usar o componente web para exibir um grupo de pessoas ou contatos usando `mgt-people` suas fotos ou iniciais.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0cdade8720112dc623e617514f31ab63151b80ff
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 6bed8f2c06e3c6834533b8e881016c4bc6d54bac
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266847"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52580012"
 ---
-# <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente Pessoas no microsoft graph Toolkit
+# <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente Pessoas no Microsoft Graph Toolkit
 
 Você pode usar o componente web para exibir um grupo de pessoas ou contatos usando `mgt-people` suas fotos ou iniciais. Por padrão, ele exibirá os contatos mais frequentes para o usuário que entrou.
 
@@ -32,11 +32,14 @@ Por padrão, o componente busca eventos do ponto de extremidade com o filtro par
 | --- | --- | --- |
 | show-max | showMax | Indica o número máximo de pessoas a mostrar. O valor padrão é 3. |
 | people | people | Uma matriz de pessoas para obter ou definir a lista de pessoas renderizadas pelo componente. Use essa propriedade para acessar as pessoas carregadas pelo componente. De definir esse valor para carregar suas próprias pessoas. |
-| group-id | groupId | Recupera pessoas de um Microsoft Graph específico da respectiva ID. |
-| user-ids | userIds | Devido a uma matriz de usuário do Microsoft `ids` Graph, o componente renderizará esses usuários.  |
+| group-id | groupId | Recupera pessoas de um microsoft Graph da respectiva ID. |
+| user-ids | userIds | Devido a uma matriz de usuários Graph `ids` Microsoft, o componente renderizará esses usuários.  |
 | people-queries | peopleQueries | Devido a uma matriz de consultas de pessoas (nomes, upns, emails), o componente renderizará esses usuários. |
 | person-card | personCard | Uma enumeração para determinar a ação do usuário necessária para ativar o painel do sub-sub-plano - `hover` ou `click` . O valor padrão é `none`. |
 | show-presence | showPresence | Um booleano para determinar se deve mostrar o selo de presença da pessoa na imagem da pessoa. |
+| recurso | recurso | O recurso a ser Graph microsoft (por exemplo, `/me/people` ). |
+| escopos | escopos | Matriz opcional de cadeias de caracteres se estiver usando a propriedade ou um escopo delimitado por vírgula se estiver usando o atributo. O componente usará esses escopos (com um provedor com suporte) para garantir que o usuário tenha consentido com a permissão certa. |
+| versão | versão | Versão da API opcional a ser usada ao fazer a solicitação GET. O padrão é `v1.0`.  |
 
 
 O exemplo a seguir define o número máximo de pessoas a mostrar.
@@ -88,7 +91,7 @@ Os exemplos a seguir mostram como usar o `person` modelo.
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
-Este componente usa as seguintes APIs e permissões do Microsoft Graph:
+Este componente usa as seguintes APIs Graph Microsoft e permissões:
 
 | Recurso | Permissão |
 | - | - |
@@ -115,7 +118,7 @@ O controle usa o provedor de autenticação global descrito na [documentação d
 > [!NOTE]
 > Por padrão, o `mgt-people` componente usa o componente para exibir informações sobre [`mgt-person`](./person.md) pessoas. O `mgt-person` componente baixa automaticamente e armazena em cache a foto para cada pessoa.
 
-Consulte [Cache para](../customize-components/cache.md) obter mais detalhes sobre como configurar o cache.
+Consulte [Caching](../customize-components/cache.md) para obter mais detalhes sobre como configurar o cache.
 ## <a name="extend-for-more-control"></a>Estender para obter mais controle
 
 Para cenários mais complexos ou um UX realmente personalizado, esse componente expõe vários métodos para substituição `protected render*` em extensões de componentes.
