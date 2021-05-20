@@ -3,30 +3,30 @@ title: Tipo de recurso assignedLicense
 description: Representa uma licença atribuída a um usuário. A propriedade **assignedLicenses** da entidade user é uma coleção de **assignedLicense**.
 localization_priority: Normal
 author: jpettere
-ms.prod: ''
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: d6cb848506d7f78b652f3d094c7b74c4cade6543
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c5aceba073cf7962b7b1caeb9a25a1936d5d4248
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720806"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546956"
 ---
-# <a name="assignedlicense-resource-type"></a><span data-ttu-id="95bd6-104">Tipo de recurso assignedLicense</span><span class="sxs-lookup"><span data-stu-id="95bd6-104">assignedLicense resource type</span></span>
+# <a name="assignedlicense-resource-type"></a><span data-ttu-id="a3493-104">Tipo de recurso assignedLicense</span><span class="sxs-lookup"><span data-stu-id="a3493-104">assignedLicense resource type</span></span>
 
-<span data-ttu-id="95bd6-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="95bd6-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a3493-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a3493-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="95bd6-106">Representa uma licença atribuída a um usuário.</span><span class="sxs-lookup"><span data-stu-id="95bd6-106">Represents a license assigned to a user.</span></span> <span data-ttu-id="95bd6-107">A propriedade **assignedLicenses** da entidade [user](user.md) é uma coleção de **assignedLicense**.</span><span class="sxs-lookup"><span data-stu-id="95bd6-107">The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
+<span data-ttu-id="a3493-p102">Representa uma licença atribuída a um usuário. A propriedade **assignedLicenses** da entidade [user](user.md) é uma coleção de **assignedLicense**.</span><span class="sxs-lookup"><span data-stu-id="a3493-p102">Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="95bd6-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="95bd6-108">Properties</span></span>
-| <span data-ttu-id="95bd6-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="95bd6-109">Property</span></span>     | <span data-ttu-id="95bd6-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="95bd6-110">Type</span></span>   |<span data-ttu-id="95bd6-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="95bd6-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a3493-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a3493-108">Properties</span></span>
+| <span data-ttu-id="a3493-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a3493-109">Property</span></span>     | <span data-ttu-id="a3493-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="a3493-110">Type</span></span>   |<span data-ttu-id="a3493-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="a3493-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="95bd6-112">disabledPlans</span><span class="sxs-lookup"><span data-stu-id="95bd6-112">disabledPlans</span></span>|<span data-ttu-id="95bd6-113">Coleção de GUIDs</span><span class="sxs-lookup"><span data-stu-id="95bd6-113">Guid collection</span></span>|<span data-ttu-id="95bd6-114">Uma coleção dos identificadores exclusivos de planos que foram desabilitados.</span><span class="sxs-lookup"><span data-stu-id="95bd6-114">A collection of the unique identifiers for plans that have been disabled.</span></span>|
-|<span data-ttu-id="95bd6-115">skuId</span><span class="sxs-lookup"><span data-stu-id="95bd6-115">skuId</span></span>|<span data-ttu-id="95bd6-116">Guid</span><span class="sxs-lookup"><span data-stu-id="95bd6-116">Guid</span></span>|<span data-ttu-id="95bd6-117">O identificador exclusivo da SKU.</span><span class="sxs-lookup"><span data-stu-id="95bd6-117">The unique identifier for the SKU.</span></span>|
+|<span data-ttu-id="a3493-112">Planos desativados</span><span class="sxs-lookup"><span data-stu-id="a3493-112">disabledPlans</span></span>|<span data-ttu-id="a3493-113">Coleção de GUIDs</span><span class="sxs-lookup"><span data-stu-id="a3493-113">Guid collection</span></span>|<span data-ttu-id="a3493-114">Uma coleção dos identificadores exclusivos de planos que foram desabilitados.</span><span class="sxs-lookup"><span data-stu-id="a3493-114">A collection of the unique identifiers for plans that have been disabled.</span></span>|
+|<span data-ttu-id="a3493-115">skuId</span><span class="sxs-lookup"><span data-stu-id="a3493-115">skuId</span></span>|<span data-ttu-id="a3493-116">Guid</span><span class="sxs-lookup"><span data-stu-id="a3493-116">Guid</span></span>|<span data-ttu-id="a3493-117">O identificador exclusivo da SKU.</span><span class="sxs-lookup"><span data-stu-id="a3493-117">The unique identifier for the SKU.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="95bd6-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="95bd6-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a3493-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a3493-118">JSON representation</span></span>
 
-<span data-ttu-id="95bd6-119">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="95bd6-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="a3493-119">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="a3493-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

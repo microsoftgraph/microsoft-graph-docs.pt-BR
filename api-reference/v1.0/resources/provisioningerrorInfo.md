@@ -1,37 +1,37 @@
 ---
-title: Tipo de recurso provisioningErrorInfo
+title: provisionamentoErrorInfo tipo de recurso
 description: Descreve o status do evento de provisionamento e os erros associados.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d22d68b7c040ea07e6aef2cc0f606bd378b3b47c
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: a682e176b40d58e2dc0a794b58b8561f8948d5a5
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241482"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547152"
 ---
-# <a name="provisioningerrorinfo-resource-type"></a><span data-ttu-id="36083-103">Tipo de recurso provisioningErrorInfo</span><span class="sxs-lookup"><span data-stu-id="36083-103">provisioningErrorInfo resource type</span></span>
+# <a name="provisioningerrorinfo-resource-type"></a><span data-ttu-id="7c40f-103">provisionamentoErrorInfo tipo de recurso</span><span class="sxs-lookup"><span data-stu-id="7c40f-103">provisioningErrorInfo resource type</span></span>
 
-<span data-ttu-id="36083-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="36083-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7c40f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7c40f-104">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="36083-105">Descreve o status do evento de provisionamento e os erros associados.</span><span class="sxs-lookup"><span data-stu-id="36083-105">Describes the status of the provisioning event and the associated errors.</span></span> 
+<span data-ttu-id="7c40f-105">Descreve o status do evento de provisionamento e os erros associados.</span><span class="sxs-lookup"><span data-stu-id="7c40f-105">Describes the status of the provisioning event and the associated errors.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="36083-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="36083-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7c40f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7c40f-106">Properties</span></span>
 
-| <span data-ttu-id="36083-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="36083-107">Property</span></span>     | <span data-ttu-id="36083-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="36083-108">Type</span></span>        | <span data-ttu-id="36083-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="36083-109">Description</span></span> |
+| <span data-ttu-id="7c40f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7c40f-107">Property</span></span>     | <span data-ttu-id="7c40f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="7c40f-108">Type</span></span>        | <span data-ttu-id="7c40f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="7c40f-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="36083-110">additionalDetails</span><span class="sxs-lookup"><span data-stu-id="36083-110">additionalDetails</span></span>|<span data-ttu-id="36083-111">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="36083-111">String</span></span>|<span data-ttu-id="36083-112">Detalhes adicionais em caso de erro.</span><span class="sxs-lookup"><span data-stu-id="36083-112">Additional details in case of error.</span></span>|
-|<span data-ttu-id="36083-113">errorCategory</span><span class="sxs-lookup"><span data-stu-id="36083-113">errorCategory</span></span>|<span data-ttu-id="36083-114">provisioningStatusErrorCategory</span><span class="sxs-lookup"><span data-stu-id="36083-114">provisioningStatusErrorCategory</span></span>|<span data-ttu-id="36083-115">Categoriza o código de erro.</span><span class="sxs-lookup"><span data-stu-id="36083-115">Categorizes the error code.</span></span> <span data-ttu-id="36083-116">Os valores possíveis `failure` são `nonServiceFailure` , , `success` , `unknownFutureValue`</span><span class="sxs-lookup"><span data-stu-id="36083-116">Possible values are `failure`, `nonServiceFailure`, `success`, `unknownFutureValue`</span></span>|
-|<span data-ttu-id="36083-117">errorCode</span><span class="sxs-lookup"><span data-stu-id="36083-117">errorCode</span></span>|<span data-ttu-id="36083-118">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="36083-118">String</span></span>|<span data-ttu-id="36083-119">Código de erro exclusivo se ocorrer algum.</span><span class="sxs-lookup"><span data-stu-id="36083-119">Unique error code if any occurred.</span></span> [<span data-ttu-id="36083-120">Saiba Mais</span><span class="sxs-lookup"><span data-stu-id="36083-120">Learn more</span></span>](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
-|<span data-ttu-id="36083-121">motivo</span><span class="sxs-lookup"><span data-stu-id="36083-121">reason</span></span>|<span data-ttu-id="36083-122">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="36083-122">String</span></span>|<span data-ttu-id="36083-123">Resume o status e descreve por que o status aconteceu.</span><span class="sxs-lookup"><span data-stu-id="36083-123">Summarizes the status and describes why the status happened.</span></span>|
-|<span data-ttu-id="36083-124">recommendedAction</span><span class="sxs-lookup"><span data-stu-id="36083-124">recommendedAction</span></span>|<span data-ttu-id="36083-125">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="36083-125">String</span></span>|<span data-ttu-id="36083-126">Fornece a resolução do erro correspondente.</span><span class="sxs-lookup"><span data-stu-id="36083-126">Provides the resolution for the corresponding error.</span></span>|
+|<span data-ttu-id="7c40f-110">additionalDetails</span><span class="sxs-lookup"><span data-stu-id="7c40f-110">additionalDetails</span></span>|<span data-ttu-id="7c40f-111">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7c40f-111">String</span></span>|<span data-ttu-id="7c40f-112">Detalhes adicionais em caso de erro.</span><span class="sxs-lookup"><span data-stu-id="7c40f-112">Additional details in case of error.</span></span>|
+|<span data-ttu-id="7c40f-113">erroCategoria</span><span class="sxs-lookup"><span data-stu-id="7c40f-113">errorCategory</span></span>|<span data-ttu-id="7c40f-114">provisionamentoStatusErrorCategory</span><span class="sxs-lookup"><span data-stu-id="7c40f-114">provisioningStatusErrorCategory</span></span>|<span data-ttu-id="7c40f-115">Categoriza o código de erro.</span><span class="sxs-lookup"><span data-stu-id="7c40f-115">Categorizes the error code.</span></span> <span data-ttu-id="7c40f-116">Os valores possíveis `failure` `nonServiceFailure` são, `success` , , `unknownFutureValue`</span><span class="sxs-lookup"><span data-stu-id="7c40f-116">Possible values are `failure`, `nonServiceFailure`, `success`, `unknownFutureValue`</span></span>|
+|<span data-ttu-id="7c40f-117">errorCode</span><span class="sxs-lookup"><span data-stu-id="7c40f-117">errorCode</span></span>|<span data-ttu-id="7c40f-118">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7c40f-118">String</span></span>|<span data-ttu-id="7c40f-119">Código de erro único, se ocorreu algum.</span><span class="sxs-lookup"><span data-stu-id="7c40f-119">Unique error code if any occurred.</span></span> [<span data-ttu-id="7c40f-120">Saiba mais</span><span class="sxs-lookup"><span data-stu-id="7c40f-120">Learn more</span></span>](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|<span data-ttu-id="7c40f-121">motivo</span><span class="sxs-lookup"><span data-stu-id="7c40f-121">reason</span></span>|<span data-ttu-id="7c40f-122">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7c40f-122">String</span></span>|<span data-ttu-id="7c40f-123">Resume o status e descreve por que o status aconteceu.</span><span class="sxs-lookup"><span data-stu-id="7c40f-123">Summarizes the status and describes why the status happened.</span></span>|
+|<span data-ttu-id="7c40f-124">recomendaçãoAction</span><span class="sxs-lookup"><span data-stu-id="7c40f-124">recommendedAction</span></span>|<span data-ttu-id="7c40f-125">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7c40f-125">String</span></span>|<span data-ttu-id="7c40f-126">Fornece a resolução para o erro correspondente.</span><span class="sxs-lookup"><span data-stu-id="7c40f-126">Provides the resolution for the corresponding error.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="36083-127">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="36083-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7c40f-127">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7c40f-127">JSON representation</span></span>
 
-<span data-ttu-id="36083-128">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="36083-128">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7c40f-128">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7c40f-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

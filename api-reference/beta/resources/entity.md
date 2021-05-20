@@ -1,34 +1,34 @@
 ---
 title: Tipo de recurso entity
-description: ''
+description: Representa uma entidade.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: MSGraphDocsVteam
-ms.openlocfilehash: 4ddfebc3376aea36bb35fd8b26adb36f79664ab1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+author: keylimesoda
+ms.openlocfilehash: 1881b02911cef03e14e760a144c8db989ca3c4d3
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989518"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547285"
 ---
-# <a name="entity-resource-type"></a><span data-ttu-id="3e7fa-102">Tipo de recurso entity</span><span class="sxs-lookup"><span data-stu-id="3e7fa-102">entity resource type</span></span>
+# <a name="entity-resource-type"></a><span data-ttu-id="e5fb7-103">Tipo de recurso entity</span><span class="sxs-lookup"><span data-stu-id="e5fb7-103">entity resource type</span></span>
 
-<span data-ttu-id="3e7fa-103">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3e7fa-103">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e5fb7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e5fb7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="properties"></a><span data-ttu-id="3e7fa-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3e7fa-104">Properties</span></span>
-| <span data-ttu-id="3e7fa-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3e7fa-105">Property</span></span> | <span data-ttu-id="3e7fa-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="3e7fa-106">Type</span></span>  | <span data-ttu-id="3e7fa-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="3e7fa-107">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="e5fb7-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e5fb7-105">Properties</span></span>
+| <span data-ttu-id="e5fb7-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e5fb7-106">Property</span></span> | <span data-ttu-id="e5fb7-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="e5fb7-107">Type</span></span>  | <span data-ttu-id="e5fb7-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="e5fb7-108">Description</span></span> |
 |:---------|:------|:------------|
-|<span data-ttu-id="3e7fa-108">id</span><span class="sxs-lookup"><span data-stu-id="3e7fa-108">id</span></span>        |<span data-ttu-id="3e7fa-109">String</span><span class="sxs-lookup"><span data-stu-id="3e7fa-109">String</span></span> | <span data-ttu-id="3e7fa-110">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="3e7fa-110">Read-only.</span></span>  |
+|<span data-ttu-id="e5fb7-109">id</span><span class="sxs-lookup"><span data-stu-id="e5fb7-109">id</span></span>        |<span data-ttu-id="e5fb7-110">String</span><span class="sxs-lookup"><span data-stu-id="e5fb7-110">String</span></span> | <span data-ttu-id="e5fb7-111">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="e5fb7-111">Read-only.</span></span>  |
 
-## <a name="relationships"></a><span data-ttu-id="3e7fa-111">Relações</span><span class="sxs-lookup"><span data-stu-id="3e7fa-111">Relationships</span></span>
-<span data-ttu-id="3e7fa-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="3e7fa-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="e5fb7-112">Relações</span><span class="sxs-lookup"><span data-stu-id="e5fb7-112">Relationships</span></span>
+<span data-ttu-id="e5fb7-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="e5fb7-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="3e7fa-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3e7fa-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e5fb7-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e5fb7-114">JSON representation</span></span>
 
-<span data-ttu-id="3e7fa-114">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="3e7fa-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="e5fb7-115">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="e5fb7-115">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

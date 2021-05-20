@@ -1,32 +1,32 @@
 ---
 title: Tipo de recurso entity
-description: ''
+description: Representa uma entidade.
 localization_priority: Normal
-author: MSGraphDocsVteam
-ms.prod: keylimesoda
+author: keylimesoda
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: a0167bbbf38bbfcbed40554f02eeda198b8b7c6b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e4a42f3eec4edb001f3bcb0835d240e58b0e5b3
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018561"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547566"
 ---
-# <a name="entity-resource-type"></a><span data-ttu-id="3aabc-102">Tipo de recurso entity</span><span class="sxs-lookup"><span data-stu-id="3aabc-102">entity resource type</span></span>
+# <a name="entity-resource-type"></a><span data-ttu-id="ef222-103">Tipo de recurso entity</span><span class="sxs-lookup"><span data-stu-id="ef222-103">entity resource type</span></span>
 
-<span data-ttu-id="3aabc-103">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3aabc-103">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ef222-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ef222-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3aabc-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3aabc-104">Properties</span></span>
-| <span data-ttu-id="3aabc-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3aabc-105">Property</span></span>     | <span data-ttu-id="3aabc-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="3aabc-106">Type</span></span>   |<span data-ttu-id="3aabc-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="3aabc-107">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ef222-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ef222-105">Properties</span></span>
+| <span data-ttu-id="ef222-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ef222-106">Property</span></span>     | <span data-ttu-id="ef222-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="ef222-107">Type</span></span>   |<span data-ttu-id="ef222-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="ef222-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3aabc-108">id</span><span class="sxs-lookup"><span data-stu-id="3aabc-108">id</span></span>|<span data-ttu-id="3aabc-109">String</span><span class="sxs-lookup"><span data-stu-id="3aabc-109">String</span></span>| <span data-ttu-id="3aabc-110">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="3aabc-110">Read-only.</span></span>|
+|<span data-ttu-id="ef222-109">id</span><span class="sxs-lookup"><span data-stu-id="ef222-109">id</span></span>|<span data-ttu-id="ef222-110">String</span><span class="sxs-lookup"><span data-stu-id="ef222-110">String</span></span>| <span data-ttu-id="ef222-111">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="ef222-111">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="3aabc-111">Relações</span><span class="sxs-lookup"><span data-stu-id="3aabc-111">Relationships</span></span>
-<span data-ttu-id="3aabc-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="3aabc-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="ef222-112">Relações</span><span class="sxs-lookup"><span data-stu-id="ef222-112">Relationships</span></span>
+<span data-ttu-id="ef222-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="ef222-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="3aabc-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3aabc-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ef222-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ef222-114">JSON representation</span></span>
 
-<span data-ttu-id="3aabc-114">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="3aabc-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="ef222-115">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="ef222-115">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
