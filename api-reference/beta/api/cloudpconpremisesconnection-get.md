@@ -1,16 +1,16 @@
 ---
 title: Obter cloudPcOnPremisesConnection
-description: Leia as propriedades e os relacionamentos do objeto cloudPcOnPremisesConnection.
+description: Leia as propriedades e as relações do objeto cloudPcOnPremisesConnection.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c1d9945b9fb5458ec5e497f8b757d07388d73f8b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 291e6e17494bf8dcfc467b8d3c594f27d6b2e710
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158272"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546837"
 ---
 # <a name="get-cloudpconpremisesconnection"></a>Obter cloudPcOnPremisesConnection
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e os relacionamentos do objeto [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+Leia as propriedades e as relações do [objeto cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Permissões
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft) | Sem suporte.|
-|Aplicativo| Sem suporte.|
+|Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,7 +44,7 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte `$select` ao parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte `$select` ao parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

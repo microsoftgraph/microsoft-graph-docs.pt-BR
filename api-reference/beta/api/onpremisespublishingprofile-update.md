@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8749ba414fc675fbdba4bed13a858b7d6512347d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9ca1c8237f5869c8545482eaf3f561489a48e11c
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963195"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547229"
 ---
 # <a name="update-onpremisespublishingprofile"></a>Atualizar onPremisesPublishingProfile
 
@@ -123,7 +123,6 @@ O exemplo a seguir atualiza **deferUpdate** no **hybridAgentUpdaterConfiguration
 
 Este é um exemplo de solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_onpremisespublishingprofile_2"
@@ -137,16 +136,6 @@ Content-Type: application/json
     "deferUpdate" : "2018-08-20T12:00"
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-onpremisespublishingprofile-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 

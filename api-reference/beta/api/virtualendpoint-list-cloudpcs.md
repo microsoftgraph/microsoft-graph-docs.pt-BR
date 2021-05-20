@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 864d772aab5c084ee1fb479ebb0179fafd3418d3
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: dd8c0aaa6b9551f041a5d90f6f3ddc777b5d1b87
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874029"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547659"
 ---
 # <a name="list-cloudpcs"></a>Listar cloudPCs
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,7 +45,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte a parâmetros de consulta OData e ao `$select` `$filter` `$count` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece `$select` suporte a parâmetros de consulta OData e para `$filter` ajudar a personalizar a `$count` resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de objetos [cloudPC](../resources/cloudpc.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [cloudPC](../resources/cloudpc.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

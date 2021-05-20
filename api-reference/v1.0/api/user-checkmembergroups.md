@@ -1,16 +1,16 @@
 ---
 title: checkMemberGroups
 description: Verifique se há associação na lista de grupos especificada. Retorna da lista aqueles grupos dos quais
-author: jpettere
+author: yyuank
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 28c4833bc6b3e83f957d113fc5c088abb1696083
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: faa5ecf8609e4807614a66faa9cf56e9d51fbb83
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52033640"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547587"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -104,7 +104,7 @@ Content-length: 44
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 <!-- {
   "blockType": "response",

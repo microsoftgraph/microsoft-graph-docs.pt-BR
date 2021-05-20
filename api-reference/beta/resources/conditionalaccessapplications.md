@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0a787a1c22209b502e4eed68790629e2e6e1b03b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d688b529e32390c2330cf8cb3558994c3e752a25
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137395"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547680"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>Tipo de recurso conditionalAccessApplications
 
@@ -24,9 +24,10 @@ Representa os aplicativos e as ações do usuário incluídas e excluídas da po
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| includeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativos a que a política se aplica, a menos que explicitamente excluída (em excludeApplications). Também pode ser definido como `All` . |
-| excludeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativo explicitamente excluída da política. |
+| includeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativo a que a política se aplica, a menos que seja explicitamente excluída (em excludeApplications). Também pode ser definido como `All` . |
+| excludeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativos excluídas explicitamente da política. |
 | includeUserActions | Coleção de cadeias de caracteres | Ações do usuário a incluir. Os valores com suporte `urn:user:registersecurityinfo` são e `urn:user:registerdevice` |
+| includeAuthenticationContextClassReferences | Coleção de cadeias de caracteres | As referências de classe de contexto de autenticação incluem. Os valores suportados são `c1` através `c25` de . |
 
 ## <a name="relationships"></a>Relações
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a31637e41e2ef03242c8a2e26ad307f2a3d0fdc2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0fe437806ee9fdb71535c16dab8c7ff07f631f39
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048341"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579631"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Atualizar accessReviewScheduleDefinition
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Application                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,13 +54,13 @@ A tabela a seguir mostra as propriedades aceitas para atualizar um accessReviewS
 | displayName | String | Nome da série de revisão de acesso. |
 | descriptionForAdmins | String | Contexto da revisão fornecida aos administradores. |
 | descriptionForReviewers | String | Contexto da revisão fornecida aos revisadores. |
-| configurações | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | As configurações de uma série de revisão de acesso. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | As configurações de uma série de revisão de acesso. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|  Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisados analisam seu próprio acesso). A propriedade Reviewers só será atualizável se usuários individuais atribuídos são revistores. Consulte [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). | 
 
-Observe que uma solicitação PUT espera que o objeto completo seja passado, no qual todas as propriedades writable estão incluídas, e não apenas as propriedades que estão sendo atualizadas.
+Uma **solicitação PUT** espera que o objeto completo seja passado, o que inclui todas as propriedades que podem ser escritas, e não apenas as propriedades que estão sendo atualizadas.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `204, Accepted` código de resposta e nenhum corpo de resposta.
+Se tiver êxito, este método retornará um `204 No Content` código de resposta e nenhum corpo de resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -138,13 +138,12 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 
 ### <a name="response"></a>Resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 204 No Content
 ```
 
 <!--

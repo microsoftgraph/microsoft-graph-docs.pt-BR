@@ -1,25 +1,25 @@
 ---
-title: Página por meio de uma coleção usando os SDKs do Microsoft Graph
-description: Fornece instruções para criar solicitações de API do Microsoft Graph usando os SDKs do Microsoft Graph.
+title: Page through a collection using the Microsoft Graph SDKs
+description: Fornece instruções para criar solicitações Graph API da Microsoft usando os SDKs do Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: ef48af29a4cc0388c405e2a42894d98ce6c98010
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 467a1114781105a0799724c8a072f19324948552
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289481"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546921"
 ---
-# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>Página por meio de uma coleção usando os SDKs do Microsoft Graph
+# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>Page through a collection using the Microsoft Graph SDKs
 
-Por motivos de desempenho, as coleções de entidades são freqüentemente divididas em páginas e cada página é retornada com uma URL para a próxima página. A classe **PageIterator** simplifica o consumo de coleções paginadas. **PageIterator** Handles enumerando a página atual e solicitando páginas subsequentes automaticamente.
+Por motivos de desempenho, as coleções de entidades geralmente são divididas em páginas e cada página é retornada com uma URL para a próxima página. A **classe PageIterator** simplifica o consumo de coleções pagedas. **PageIterator** lida com a enumeração da página atual e solicita páginas subsequentes automaticamente.
 
-## <a name="iterate-over-all-the-messages"></a>Iterar em todas as mensagens
+## <a name="iterate-over-all-the-messages"></a>Iterar sobre todas as mensagens
 
-O exemplo a seguir mostra a iteração em todas as mensagens na caixa de correio de um usuário.
+O exemplo a seguir mostra iteração sobre todas as mensagens na caixa de correio de um usuário.
 
 > [!TIP]
-> Este exemplo define um tamanho de página pequeno usando o `top` parâmetro para fins de demonstração. Você pode definir o tamanho da página até 999 para minimizar o número de solicitações necessárias.
+> Este exemplo define um pequeno tamanho de página usando `top` o parâmetro para fins de demonstração. Você pode definir o tamanho da página até 999 para minimizar o número de solicitações necessárias.
 
 ### <a name="c"></a>[C#](#tab/csharp)
 
@@ -69,7 +69,7 @@ await pageIterator.iterate();
 ### <a name="java"></a>[Java](#tab/java)
 
 ```java
-IMessageCollectionPage messagesPage = graphClient.me().messages()
+final MessageCollectionPage messagesPage = graphClient.me().messages()
     .buildRequest()
     .select("Sender,Subject")
     .top(10)
@@ -77,8 +77,8 @@ IMessageCollectionPage messagesPage = graphClient.me().messages()
 
 
 while(messagesPage != null) {
-  final List<Message> messages = messagesPage.GetCurrentPage();
-  final IMessageCollectionRequestBuilder nextPage = messagesPage.GetNextPage();
+  final List<Message> messages = messagesPage.getCurrentPage();
+  final MessageCollectionRequestBuilder nextPage = messagesPage.getNextPage();
   if(nextPage == null) {
     break;
   } else {
@@ -89,9 +89,9 @@ while(messagesPage != null) {
 
 ---
 
-## <a name="stopping-and-resuming-the-iteration"></a>Interromper e retomar a iteração
+## <a name="stopping-and-resuming-the-iteration"></a>Parar e retomar a iteração
 
-Alguns cenários exigem a interrupção do processo de iteração para executar outras ações. É possível pausar a iteração retornando `false` do retorno de chamada de iteração. A iteração pode ser retomada chamando-se o `resume` método no **PageIterator**.
+Alguns cenários exigem parar o processo de iteração para executar outras ações. É possível pausar a iteração retornando do `false` retorno de chamada de iteração. A iteração pode ser retomada chamando o `resume` método no **PageIterator**.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)

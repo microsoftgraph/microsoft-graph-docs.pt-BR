@@ -3,14 +3,14 @@ title: Tipo de recurso recurrenceRange
 description: 'Descreve um intervalo de datas sobre o qual um event recorrente se repete. '
 localization_priority: Normal
 author: harini84
-ms.prod: ''
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 337187058c923adec27de26e6e5a25d850487d04
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 0b7aa184981549f45c9c5d00e5c32cd5431123c2
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292452"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547257"
 ---
 # <a name="recurrencerange-resource-type"></a>Tipo de recurso recurrenceRange
 
@@ -28,11 +28,11 @@ Descreve um intervalo de datas sobre o qual um [event](event.md) recorrente se r
 |numberOfOccurrences|Int32|O número de vezes para repetir o evento. Obrigatório e deve ser positivo se **type** for `numbered`.|
 |recurrenceTimeZone|Cadeia de caracteres |Fuso horário das propriedades **startDate** e **endDate**. Opcional. Se a propriedade não for especificada, será usado o fuso horário do evento.|
 |startDate|Data|A data para começar a aplicar o padrão de recorrência. A primeira ocorrência da reunião pode ser essa data ou posterior, dependendo do padrão de recorrência do evento. Deve ser o mesmo valor da propriedade **start** do [event](event.md) recorrente. Obrigatório.|
-|type|recurrenceRangeType|O intervalo de recorrência. Os valores possíveis são: `endDate`, `noEnd`, `numbered`. Obrigatório.|
+|type|recorrênciaRangeType|O intervalo de recorrência. Os valores possíveis são: `endDate`, `noEnd`, `numbered`. Obrigatório.|
 
 Use a propriedade **type** para especificar os diferentes tipos de **recorrenceRange**. Observe as propriedades necessárias para cada tipo, conforme descrito na tabela a seguir.
 
-| propriedade type  | Tipo de intervalo de recorrência | Descrição | Exemplo | Propriedades necessárias |
+| propriedade tipo  | Tipo de intervalo de recorrência | Descrição | Exemplo | Propriedades necessárias |
 |:-------|:---------------|:--------|:--------|:--------|
 |`endDate` |Intervalo com data final | O evento se repete em todos os dias que se encaixam no padrão de recorrência correspondente entre **startDate** e **endDate**, incluindo essas datas. | Repita o evento no período entre 1º de junho de 2017 e 15 de junho de 2017. | **type**, **startDate**, **endDate** |
 |`noEnd`  |Intervalo sem uma data final | O evento se repete em todos os dias que se encaixam no padrão de recorrência correspondente começando em **startDate**. | Repita o evento no intervalo de datas que começa em 1º de junho de 2017, indefinidamente. | **type**, **startDate** |

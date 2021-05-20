@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 4b6acff15539c2a1b42f66547289621a7e87d7b5
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 86671d0fce531445ac32a370d2e69ba813cc4e22
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872740"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546823"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy: assign
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,13 +52,13 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do objeto [cloudPcProvisioningPolicyAssignment.](../resources/cloudpcprovisioningpolicyassignment.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcProvisioningPolicyAssignment.](../resources/cloudpcprovisioningpolicyassignment.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da atribuição de política de provisionamento. Se o destino for um grupo de usuários, a ID será mostrada como {policyId}_{groupId}. |
+|id|String|A ID da atribuição de política de provisionamento. Se destino for um grupo de usuários, a ID será mostrada como {policyId}_{groupId}. |
 |destino|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|O destino da atribuição da política de provisionamento. Atualmente, o único destino com suporte é um grupo de usuários.|
 
 ## <a name="response"></a>Resposta

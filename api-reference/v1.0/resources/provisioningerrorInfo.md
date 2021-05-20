@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso provisioningErrorInfo
+title: provisionamentoErrorInfo tipo de recurso
 description: Descreve o status do evento de provisionamento e os erros associados.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d22d68b7c040ea07e6aef2cc0f606bd378b3b47c
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: a682e176b40d58e2dc0a794b58b8561f8948d5a5
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241482"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547152"
 ---
-# <a name="provisioningerrorinfo-resource-type"></a>Tipo de recurso provisioningErrorInfo
+# <a name="provisioningerrorinfo-resource-type"></a>provisionamentoErrorInfo tipo de recurso
 
 Namespace: microsoft.graph
 
@@ -24,10 +24,10 @@ Descreve o status do evento de provisionamento e os erros associados.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |additionalDetails|Cadeia de caracteres|Detalhes adicionais em caso de erro.|
-|errorCategory|provisioningStatusErrorCategory|Categoriza o código de erro. Os valores possíveis `failure` são `nonServiceFailure` , , `success` , `unknownFutureValue`|
-|errorCode|Cadeia de caracteres|Código de erro exclusivo se ocorrer algum. [Saiba Mais](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|erroCategoria|provisionamentoStatusErrorCategory|Categoriza o código de erro. Os valores possíveis `failure` `nonServiceFailure` são, `success` , , `unknownFutureValue`|
+|errorCode|Cadeia de caracteres|Código de erro único, se ocorreu algum. [Saiba mais](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
 |motivo|Cadeia de caracteres|Resume o status e descreve por que o status aconteceu.|
-|recommendedAction|Cadeia de caracteres|Fornece a resolução do erro correspondente.|
+|recomendaçãoAction|Cadeia de caracteres|Fornece a resolução para o erro correspondente.|
 
 ## <a name="json-representation"></a>Representação JSON
 

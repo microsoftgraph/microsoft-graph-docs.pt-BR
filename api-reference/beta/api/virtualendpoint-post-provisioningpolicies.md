@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a83b156808fd0c9634fc8c7fedf62a6c9b8a2996
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 6c28d27cced97d2e1ab927de14d888ae15d8e902
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874071"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547608"
 ---
 # <a name="create-cloudpcprovisioningpolicy"></a>Criar cloudPcProvisioningPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
+Crie um novo [objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,20 +54,20 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies
 
 No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição da política de provisionamento.|
-|description|Cadeia de caracteres|A descrição da política de provisionamento.|
-|onPremisesConnectionId|Cadeia de caracteres|A ID da cloudPcOnPremisesConnection. Para garantir que os computadores na nuvem tenham conectividade de rede e que in joinam no domínio, escolha uma conexão com uma rede virtual validada pelo serviço de computador na nuvem.|
-|imageId|Cadeia de caracteres|A ID da imagem do sistema operacional que você deseja provisionar em PCs na nuvem. O formato de uma imagem de tipo de galeria é: {publisher_offer_sku}.|
-|imageDisplayName|Cadeia de caracteres|O nome de exibição da imagem do sistema operacional que você está provisionando.|
-|imageType|cloudPcProvisioningPolicyImageType|O tipo de imagem do sistema operacional (personalizada ou galeria) que você deseja provisionar em PCs de nuvem. Os valores possíveis são: `gallery` e `custom`.|
+|displayName|String|O nome de exibição da política de provisionamento.|
+|descrição|String|A descrição da política de provisionamento.|
+|onPremisesConnectionId|String|A ID do cloudPcOnPremisesConnection. Para garantir que os computadores de nuvem tenham conectividade de rede e que eles participem do domínio, escolha uma conexão com uma rede virtual validada pelo serviço de computador na nuvem.|
+|imageId|String|A ID da imagem do sistema operacional que você deseja provisionar em PCs de nuvem. O formato de uma imagem de tipo de galeria é: {publisher_offer_sku}.|
+|imageDisplayName|String|O nome de exibição da imagem do sistema operacional que você está provisionando.|
+|imageType|cloudPcProvisioningPolicyImageType|O tipo de imagem do sistema operacional (personalizado ou galeria) que você deseja provisionar em PCs de nuvem. Os valores possíveis são: `gallery` e `custom`.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

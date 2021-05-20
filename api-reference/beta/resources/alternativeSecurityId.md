@@ -3,14 +3,14 @@ title: Tipo de recurso alternativeSecurityId
 description: Apenas para uso interno. Esse tipo complexo será preterido no futuro.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: spunukol
-ms.openlocfilehash: d08cf247961f4364486f2f9ba5d05508fd900688
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e696c824e2229ea26cacccee11c93a24d03fa97
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089802"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547552"
 ---
 # <a name="alternativesecurityid-resource-type"></a>Tipo de recurso alternativeSecurityId
 

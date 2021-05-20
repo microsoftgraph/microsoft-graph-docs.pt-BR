@@ -3,14 +3,14 @@ title: Tipo de recurso assignedLicense
 description: Representa uma licença atribuída a um usuário. A propriedade **assignedLicenses** da entidade user é uma coleção de **assignedLicense**.
 localization_priority: Normal
 author: jpettere
-ms.prod: ''
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: d6cb848506d7f78b652f3d094c7b74c4cade6543
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c5aceba073cf7962b7b1caeb9a25a1936d5d4248
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720806"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546956"
 ---
 # <a name="assignedlicense-resource-type"></a>Tipo de recurso assignedLicense
 
@@ -21,7 +21,7 @@ Representa uma licença atribuída a um usuário. A propriedade **assignedLicens
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|disabledPlans|Coleção de GUIDs|Uma coleção dos identificadores exclusivos de planos que foram desabilitados.|
+|Planos desativados|Coleção de GUIDs|Uma coleção dos identificadores exclusivos de planos que foram desabilitados.|
 |skuId|Guid|O identificador exclusivo da SKU.|
 
 ## <a name="json-representation"></a>Representação JSON

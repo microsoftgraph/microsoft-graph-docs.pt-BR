@@ -5,16 +5,18 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9c4701db54661cd4cb30fc4e75d96ed364b8d1ab
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 58cffebabba13553f18c8bb5b7b45845bdd1fe64
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955218"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547096"
 ---
 # <a name="list-defaultpages"></a>Listar defaultPages
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter os recursos userFlowLanguagePage da propriedade de navegação defaultPages. Eles contêm os valores mostrados para o usuário em uma jornada de usuário padrão de um fluxo de usuário.
 
@@ -31,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 

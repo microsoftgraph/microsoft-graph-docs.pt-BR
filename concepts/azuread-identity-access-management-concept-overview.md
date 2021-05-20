@@ -3,20 +3,20 @@ title: Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 description: 'O Active Directory do Azure (Azure AD) ajuda a centralizar o gerenciamento de identidade e acesso para permitir acesso seguro e produtivo entre aplicativos, dispositivos, serviços e infraestrutura. As organizações podem usar o Azure AD para gerenciar identidades e controlar o acesso em ambientes locais, híbridos e em nuvem.  '
 author: jackson-woods
 localization_priority: Priority
-ms.prod: identity-access
+ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a2ea9b042119c110d4063c19877b9d4b7694423a
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: fc8cd5289c014627fabcd4a5f8aa55279ebb4a90
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761441"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547117"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 
 O Active Directory do Azure (Azure AD) ajuda a centralizar o gerenciamento de identidade e acesso para permitir acesso seguro e produtivo entre aplicativos, dispositivos, serviços e infraestrutura. As organizações podem usar o Azure AD para gerenciar identidades e controlar o acesso em ambientes locais, híbridos e em nuvem.
 
-Você pode usar as APIs REST do Azure AD no Microsoft Graph para criar fluxos de trabalho exclusivos entre os [recursos](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0) do Azure AD e serviços de terceiros.
+Você pode usar as APIs REST do Azure AD no Microsoft Graph para criar fluxos de trabalho exclusivos entre os [recursos](/graph/api/resources/azure-ad-overview) do Azure AD e serviços de terceiros.
 
 ## <a name="why-use-the-azure-ad-apis"></a>Por que usar as APIs do Azure AD?
 
@@ -34,31 +34,31 @@ Você pode usar as APIs do Azure AD no Microsoft Graph para consultar o perfil d
 
 Você pode usar as APIs do Azure AD no Microsoft Graph para:
 
-- Pesquisar e gerenciar informações de [perfil de usuário](/graph/api/resources/user?view=graph-rest-1.0), como nome, foto, endereço de email, cargo, localização do escritório e muito mais de usuários na sua organização.
-- Criar [grupos](/graph/api/resources/groups-overview?view=graph-rest-1.0) para projetos e equipes na sua organização. Adicionar e remover membros do grupo para controlar o acesso aos recursos. (Os grupos dinâmicos podem alterar automaticamente a associação com base nos valores da propriedade do usuário).
-- Para controlar o acesso, você pode verificar a [associação transitiva](/graph/api/user-checkmembergroups?view=graph-rest-1.0) em uma lista de grupos ou obter todos os recursos de um tipo especificado (como um usuário ou grupo) de uma lista de [IDs de recursos genéricos](/graph/api/directoryobject-getbyids?view=graph-rest-1.0).
+- Pesquisar e gerenciar informações de [perfil de usuário](/graph/api/resources/user), como nome, foto, endereço de email, cargo, localização do escritório e muito mais de usuários na sua organização.
+- Criar [grupos](/graph/api/resources/groups-overview) para projetos e equipes na sua organização. Adicionar e remover membros do grupo para controlar o acesso aos recursos. (Os grupos dinâmicos podem alterar automaticamente a associação com base nos valores da propriedade do usuário).
+- Para controlar o acesso, você pode verificar a [associação transitiva](/graph/api/user-checkmembergroups) em uma lista de grupos ou obter todos os recursos de um tipo especificado (como um usuário ou grupo) de uma lista de [IDs de recursos genéricos](/graph/api/directoryobject-getbyids).
 
 ### <a name="manage-directory-roles"></a>Gerenciar funções de diretório
 
-Você pode atribuir usuários a [funções de diretório](/graph/api/resources/directoryrole?view=graph-rest-1.0) administrativas predefinidas do Azure AD, que concede permissão para executar tarefas específicas.
+Você pode atribuir usuários a [funções de diretório](/graph/api/resources/directoryrole) administrativas predefinidas do Azure AD, que concede permissão para executar tarefas específicas.
 
 ### <a name="manage-devices"></a>Gerenciar dispositivos
 
-[Gerencie os dispositivos](/azure/active-directory/device-management-introduction) registrados na organização. Os dispositivos são registrados a usuários e incluem itens como laptops, computadores desktop e celulares. Os dispositivos são em geral criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Microsoft Intune. Eles são utilizados por políticas de acesso condicional para a autenticação multifator.
+[Gerenciar os dispositivos](/azure/active-directory/device-management-introduction) registrados na organização. Os dispositivos são registrados aos usuários e incluem itens como laptops, desktops, tablets e telefones celulares. Os dispositivos são geralmente criados na nuvem usando o Serviço de Registro de Dispositivos ou pela Microsoft Intune. Eles são utilizados por políticas de acesso condicional para autenticação multifator.
 
 ### <a name="partner-tenant-management"></a>Gerenciamento de locatário do parceiro
 
-Os parceiros da Microsoft que revendem e gerenciam o Microsoft Online Services (como o Microsoft 365, o Microsoft Azure e o CRM Online) podem exibir os [locatários da organização](/graph/api/resources/contract?view=graph-rest-1.0) que gerenciam atualmente.
+Os parceiros da Microsoft que revendem e gerenciam o Microsoft Online Services (como o Microsoft 365, o Microsoft Azure e o CRM Online) podem exibir os [locatários da organização](/graph/api/resources/contract) que gerenciam atualmente.
 
-Você também pode [gerenciar domínios](/graph/api/resources/domain?view=graph-rest-1.0) associados a um locatário. As operações de domínio permitem que os parceiros da Microsoft automatizem o registro de domínio para serviços, como o Microsoft 365.
+Você também pode [gerenciar domínios](/graph/api/resources/domain) associados a um locatário. As operações de domínio permitem que os parceiros da Microsoft automatizem o registro de domínio para serviços, como o Microsoft 365.
 
 ### <a name="tenant-management"></a>Gerenciamento de locatários
 
 As APIs do Azure AD para o gerenciamento de locatários permitem:
 
-- Obter informações sobre uma [organização](/graph/api/resources/organization?view=graph-rest-1.0), como seu endereço comercial, contatos de notificação e técnicos, assinaturas de serviço ativas e os domínios associados a ela.
-- Obter informações sobre [SKUs do serviço](/graph/api/resources/subscribedsku?view=graph-rest-1.0) nos quais a empresa está inscrita.
-- [Convidar usuários externos](/graph/api/resources/invitation?view=graph-rest-1.0) (convidados) para uma organização.
+- Obter informações sobre uma [organização](/graph/api/resources/organization), como seu endereço comercial, contatos de notificação e técnicos, assinaturas de serviço ativas e os domínios associados a ela.
+- Obter informações sobre [SKUs do serviço](/graph/api/resources/subscribedsku) nos quais a empresa está inscrita.
+- [Convidar usuários externos](/graph/api/resources/invitation) (convidados) para uma organização.
 
 ### <a name="monitor-identity-risks-preview"></a>Monitorar os riscos de identidade (prévia)
 
@@ -66,26 +66,26 @@ A maioria das violações de segurança resulta de invasores que roubam a identi
 
 O Azure AD usa algoritmos de aprendizado de máquina adaptativos e heurística para detectar anomalias que indicam potencialmente contas comprometidas. Com esses dados, o Azure Active Directory Identity Protection protege os usuários com políticas de acesso condicional baseadas em risco e gera relatórios e alertas com base em suas detecções.
 
-Hoje, o Microsoft Graph oferece acesso fácil aos clientes do Azure AD Premium P2 para [consultar eventos de risco detectados pelo Identity Protection](/graph/api/resources/identityprotection-root?view=graph-rest-beta), incluindo o tipo do evento de risco, a gravidade, a data, a hora, o local, o usuário afetado e mais. Os clientes podem então usar esses eventos em sistemas SIEM e aplicativos de segurança.
+Hoje, o Microsoft Graph oferece acesso fácil aos clientes do Azure AD Premium P2 para [consultar eventos de risco detectados pelo Identity Protection](/graph/api/resources/identityprotection-root), incluindo o tipo do evento de risco, a gravidade, a data, a hora, o local, o usuário afetado e mais. Os clientes podem então usar esses eventos em sistemas SIEM e aplicativos de segurança.
 
 ### <a name="activate-users-into-privileged-roles-preview"></a>Ativar usuários em funções privilegiadas (prévia)
 
-Você pode garantir o acesso a recursos ativando privilégios administrativos sob demanda. O [Gerenciamento de Identidade Privilegiada](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) é oferecido no Azure AD Premium P2.
+Você pode garantir o acesso a recursos ativando privilégios administrativos sob demanda. O [Gerenciamento de Identidade Privilegiada](/graph/api/resources/privilegedidentitymanagement-root) é oferecido no Azure AD Premium P2.
 
 ### <a name="manage-user-access-reviews-preview"></a>Gerenciar as revisões de acesso do usuário (prévia)
 
-Você pode configurar revisões de acesso de associações a grupos e acesso a aplicativos. As [Revisões de Acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta) são apresentadas no Azure AD Premium P2.
+Você pode configurar revisões de acesso de associações a grupos e acesso a aplicativos. As [Revisões de Acesso](/graph/api/resources/accessreviews-root) são apresentadas no Azure AD Premium P2.
 
 ## <a name="api-reference"></a>Referência da API
 
 Está procurando a referência de API para esse serviço?
 
-- [API de gerenciamento de acesso e identidade do Azure AD no Microsoft Graph v1.0](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)
-- [API de gerenciamento de acesso e identidade do Azure AD no Microsoft Graph beta](/graph/api/resources/azure-ad-overview?view=graph-rest-beta)
+- [API de gerenciamento de acesso e identidade do Azure AD no Microsoft Graph v1.0](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0&preserve-view=true)
+- [API de gerenciamento de acesso e identidade do Azure AD no Microsoft Graph beta](/graph/api/resources/azure-ad-overview?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Saiba como [Usar as APIs REST do Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
+- Descubra como [Usar as APIs do Microsoft Azure Active Directory REST](/graph/api/resources/azure-ad-overview.
 - Use o Azure AD para se [autenticar](./auth/index.yml) no Microsoft Graph.
 - Integre o [logon do Azure AD](https://azure.microsoft.com/develop/identity/signin/) ao seu aplicativo ou website.
 - Confira o [Changelog](changelog.md) para obter informações sobre novidades nas APIs do Azure AD.

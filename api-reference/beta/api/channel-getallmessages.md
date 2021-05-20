@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9d8f4ed1db42b7d5f35d12f8f612bc544ef6e4c2
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 3174401b2d25bf2c7c00f0cffca2c048af7deca6
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51610970"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546116"
 ---
 # <a name="channel-getallmessages"></a>channel: getAllMessages
 
@@ -18,11 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as [mensagens](../resources/chatmessage.md) em todos os [canais](../resources/channel.md) de uma [equipe](../resources/team.md), incluindo conversas de texto, áudio e vídeo.
+Recupere as [mensagens](../resources/chatmessage.md) em todos os [canais](../resources/channel.md) de uma [equipe](../resources/team.md), incluindo texto, áudio, e conversas de vídeo. 
+
+Para saber mais sobre o uso das APIs de exportação do Microsoft Teams para exportar conteúdo, consulte [Exportar conteúdo com as APIs de exportação do Microsoft Teams](/microsoftteams/export-teams-content).
 
 ## <a name="permissions"></a>Permissões
 
-As permissões a seguir são necessárias para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+As seguintes permissões são obrigatórias para chamar esta API. Para saber mais, incluindo como escolher as permissões, consulte [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,7 +45,7 @@ GET /teams/{team-id}/channels/getAllMessages
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Você pode usar o parâmetro de consulta [$top](/graph/query-parameters#top-parameter) para controlar o número de itens por resposta.
-No momento, não há suporte para os outros [Parâmetros de consulta OData](/graph/query-parameters).
+Além disso, [$filter](/graph/query-parameters#filter-parameter) é suportado com **dateTime** intervalo de consulta em **lastModifiedDateTime**. No momento, não há suporte para os outros [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-body"></a>Corpo da solicitação
 

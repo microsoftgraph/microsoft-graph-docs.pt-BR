@@ -3,19 +3,53 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 4b71030b3a58b56b6a8e5a43272cabbafddc01e5
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 1c4629b8fcfca5168a1e752a984f3e77e1018dd0
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231424"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547666"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
 Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o que foi adicionado anteriormente](whats-new-earlier.md) e como você pode [compartilhar suas ideias](#want-to-stay-in-the-loop). Para obter uma lista detalhada de atualizações no nível da API, consulte o [registro de alterações da API](https://developer.microsoft.com/graph/changelog/). 
 
 > [!IMPORTANT]
-> Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status DG. Não use os recursos de visualização em aplicativos de produção.
+> Recursos, incluindo APIs e ferramentas, no status de _visualização_ podem mudar sem aviso prévio e alguns podem nunca ser promovidos ao status de disponibilidade geral (GA). Não utilize recursos de visualização em aplicativos de produção.
+
+## <a name="may-2021-new-and-generally-available"></a>Maio de 2021: Novo e disponível para o público geral
+
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+Descubra quando uma impressora interagiu pela última vez com a Impressão Universal, usando a propriedade **lastSeenDateTime** da [impressora](/graph/api/resources/printer).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
+Obtenha ou atualize a função de um usuário convidado usando a propriedade **guestUserRoleId** de [AuthorPolicy](/graph/api/resources/authorizationpolicy).
+
+### <a name="reports--azure-ad-activity-reports"></a>Relatórios | Relatórios de atividade do Microsoft Azure AD
+GA da API de relatório para [listar](/graph/api/provisioningobjectsummary-list) as ações realizadas pelo serviço de provisionamento do Microsoft Azure AD e suas propriedades associadas. Alinhou a versão beta anterior à versão v1.0 da API.
+
+## <a name="may-2021-new-in-preview-only"></a>Maio de 2021: Novo somente para visualização
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
+Solicite as permissões de aplicativos com menos privilégios, `CloudPC.Read.All` ou `CloudPC.ReadWrite.All`, para acessar os métodos dos seguintes recursos:
+  - Operações de leitura e gravação, e do método de [reprovision](/graph/api/cloudpc-reprovision?view=graph-rest-beta&preserve-view=true) de [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).
+  - Operações de leitura e gravação, e do método [getSourceImages](/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta&preserve-view=true) de [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true).
+  - Operações de leitura e gravação, e do método [updateAdDomainPassword](/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta&preserve-view=true) de [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true).
+  - Operações de leitura e gravação, e do método [assign](/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta&preserve-view=true) de [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
+
+### <a name="education"></a>Educação
+[Configure uma pasta de recursos do SharePoint](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) para a qual todos os recursos baseados em arquivo, como um arquivo Word ou Excel, de um [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) devem ser carregados.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+- Obtenha uma coleção de recursos de [accessPackageAssignment](/graph/api/resources/accessPackageAssignment?view=graph-rest-beta&preserve-view=true) ao [filtrar no usuário conectado](/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-beta&preserve-view=true).
+- Obtenha uma coleção de recursos de [accessPackageAssignmentRequest](/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta&preserve-view=true) ao [filtrar no usuário conectado](/graph/api/accesspackageassignmentrequest-filterbycurrentuser?view=graph-rest-beta&preserve-view=true).
+
+### <a name="use-sdks"></a>Usar SDKs
+Experimente a versão de visualização do [Microsoft Graph .NET SDK v4](https://www.nuget.org/packages/Microsoft.Graph/4.0.0-preview.4) e aproveite as seguintes melhorias:
+- Use uma única API para autenticação em clientes do Microsoft Graph e Azure .NET.
+- Novo suporte para serialização e desserialização JSON.
+- Fácil acesso às informações de resposta.
+- Melhor experiência de atualização de dependências.
 
 ## <a name="april-2021-new-and-generally-available"></a>Abril de 2021: novo e disponível para o público geral
 
@@ -34,7 +68,7 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 - Use as permissões do aplicativo para [receber um membro específico do chat](/graph/api/chat-get-members) ou [todos os membros do chat](/graph/api/chat-list-members) incluídos em um chat. Como os dados dos usuários como membros do chat são confidenciais, além de obter permissões do aplicativo, [solicite acesso adicional](teams-protected-apis.md) para essas operações.
 
 ### <a name="use-the-toolkit"></a>Usar o kit de ferramentas
-Novo no [Kit de ferramentas do Microsoft Graph](/graph/toolkit/overview)? Experimente o novo caminho de aprendizagem do [Kit de ferramentas](https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit/?WT.mc_id=m365-19989-cxa), use o conjunto de componentes Web e provedores de autenticação para conectar um aplicativo Web ao Microsoft Graph e carregar dados do Microsoft 365.
+Novo no [Kit de ferramentas do Microsoft Graph](/graph/toolkit/overview)? Experimente o novo [caminho de aprendizagem do Kit de ferramentas ](/learn/paths/m365-msgraph-toolkit/?WT.mc_id=m365-19989-cxa), utilize o conjunto de componentes da web e provedores de autenticação do Kit de ferramentas para conectar um aplicativo da web ao Microsoft Graph e carregar dados do Microsoft 365.
 
 ## <a name="april-2021-new-in-preview-only"></a>Abril de 2021: Novo somente para visualização
 
@@ -69,96 +103,9 @@ Os administradores podem [obter](/graph/api/accessreviewpolicy-get?view=graph-re
 - [Obter](/graph/api/teamsappicon-get?view=graph-rest-beta&preserve-view=true) as propriedades de um [ícone](/graph/api/resources/teamsAppIcon?view=graph-rest-beta&preserve-view=true) associado a um aplicativo do Teams. Para obter a imagem real do ícone, use [obter conteúdo hospedado](/graph/api/teamworkhostedcontent-get?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="use-sdks"></a>Usar SDKs
-- Experimente a [prévia de visualização da biblioteca de clientes do Microsoft Graph JavaScript, versão 3.0.0](https://www.npmjs.com/package/@microsoft/microsoft-graph-client/v/3.0.0-Preview.1). Essa versão habilita vários fluxos de autenticação, autenticação no servidor, Node.js Stream, carregamento de arquivos grandes e acompanhamento de progresso e muito mais. Consulte o [guia de atualização](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/changelogs/v3-upgrade-guide.md) para obter detalhes.
-- Experimente um novo caminho de aprendizagem para [explorar cenários do Microsoft Graph para o desenvolvimento do JavaScript](https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios/?WT.mc_id=m365-16105-cxa).
+- Experimente a [prévia da versão da biblioteca do cliente JavaScript do Microsoft Graph, versão 3.0.0](https://www.npmjs.com/package/@microsoft/microsoft-graph-client/v/3.0.0-Preview.1). Esta versão permite vários fluxos de autenticação, autenticação do lado do servidor, Stream Node.js de carregamento de arquivos grandes e acompanhamento de progresso e muito mais. Consulte o [guia de atualização](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/changelogs/v3-upgrade-guide.md) para obter detalhes.
+- Experimente um novo caminho de aprendizagem para [explorar os cenários do Microsoft Graph para desenvolvimento do JavaScript](/learn/paths/m365-msgraph-scenarios/?WT.mc_id=m365-16105-cxa).
 
-
-## <a name="march-2021-new-and-generally-available"></a>Março de 2021: novo e disponível para o público geral
-
-### <a name="applications"></a>Aplicativos
-- GA do recurso [applicationTemplate](/graph/api/resources/applicationtemplate) que suporta a [listagem](/graph/api/applicationtemplate-list) de aplicativos na galeria de aplicativos do Azure AD e a [adição](/graph/api/applicationtemplate-instantiate) de uma instância desse aplicativo a um diretório.
-- Use a permissão somente para aplicativo `Application.ReadWrite.OwnedBy`ao[adicionar](/graph/api/applicationtemplate-instantiate) tal instância.
-- Use a propriedade **signInAudience** do [servicePrincipal](/graph/api/resources/serviceprincipal) para obter as contas de usuário compatíveis com o aplicativo atual.
-
-### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
-- GA da [API de impressão em nuvem](universal-print-concept-overview.md) para Impressão Universal! Veja o [comunicado](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/universal-print-is-ready-for-business/ba-p/2176778) e confira como [começar com a Impressão Universal](/universal-print/fundamentals/universal-print-license).
-- [Inscreva-se para alterar as notificações](universal-print-webhook-notifications.md) em uma [definição de tarefa de impressão](/graph/api/resources/printtaskdefinition) ou recurso [impressora](/graph/api/resources/printer).
-
-### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
-- Use as [solicitações de consentimento](/graph/api/resources/consentrequests-root) do Azure Active Directory (Azure AD) para gerenciar o fluxo de trabalho da solicitação para usuários que tentam acessar aplicativos que exigem aprovação de administrador. A API usa os seguintes recursos:
-  - O recurso [adminConsentRequestPolicy](/graph/api/resources/adminconsentrequestpolicy) para criar e gerenciar solicitações de acesso ao aplicativo para a organização.
-  - O recurso [appConsentRequest](/graph/api/resources/appconsentrequest) para agregar e gerenciar solicitações de usuário para acessar um aplicativo específico.
-  - O recurso [userConsentRequest](/graph/api/resources/userConsentRequest) para usuários que solicitam acesso a um aplicativo que requer autorização de administrador. 
-  - O recurso [accessReviewReviewerScope](/graph/api/resources/accessReviewReviewerScope)define quem é indicado em **adminConsentRequestPolicy** para revisar os objetos **appConsentRequest** e **userConsentRequest**.
-  - O recurso de [aprovação](/graph/api/resources/approval) representa uma decisão de aprovação para uma solicitação.
-- GA da API de Termos de Uso que oferece suporte a um [contrato de Termos de Uso](/graph/api/resources/agreement) personalizável de um locatário no Azure AD.
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
-- GA dos [métodos de autenticação](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true), incluindo as [chaves de segurança FIDO2](/graph/api/resources/fido2authenticationmethod),o [aplicativo Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethod) e o [Windows Hello para Empresas](/graph/api/resources/windowshelloforbusinessauthenticationmethod).
-- GA das [políticas de método de autenticação](/graph/api/resources/authenticationmethodspolicies-overview) que definem os métodos de autenticação e os usuários que têm permissão para usá-los para se conectar e executar a autenticação multifator (MFA) no Azure AD. As políticas de métodos de autenticação que podem ser gerenciadas no Microsoft Graph incluem as [chaves de segurança FIDO2](/graph/api/resources/fido2authenticationmethodconfiguration), a Entrada por Telefone sem Senha com o [aplicativo Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration) e a [política de métodos de autenticação OTP de email](/graph/api/resources/emailauthenticationmethodconfiguration) do locatário.
-- GA da [política de distribuição de recursos](/graph/api/resources/featureRolloutPolicy) que ajuda os administradores de locatários a ter recursos piloto para grupos específicos antes de habilitá-los para toda a organização.
-- GA das [propriedades de identidade visual da organização](/graph/api/resources/organizationalbrandingproperties) que permite uma aparência personalizada das telas de entrada do Azure Active Directory. As organizações podem personalizar com base na localidade para usuários específicos.
-
-### <a name="tasks-and-plans"></a>Tarefas e planos
-- Use a permissão delegada de `Tasks.Read` para ler as operações de todos os recursos do Planner.
-- Use a permissão delegada de `Tasks.ReadWrite` para ler e gravar as operações de todos os recursos do Planner.
-
-### <a name="teamwork"></a>Trabalho em equipe
-- GA de operações de [chat](/graph/api/resources/chat), chat [conversationMember](/graph/api/resources/conversationmember), [aplicativo](/graph/api/resources/teamsappinstallation) de chat, [guia](/graph/api/resources/teamstab) de chat e os seus métodos.
-- GA de mais algumas propriedades de [teamsAppDefinition](/graph/api/resources/teamsAppDefinition), que representam detalhes de uma versão de um aplicativo no catálogo de aplicativos do Microsoft Teams, incluindo o seguinte:
-  - **createdBy**, **description**, **shortDescription**, **lastModifiedDateTime**
-  - **publishingState**, que pode ser `submitted` e em revisão, `published` ou `rejected` pelo administrador
-  - Relação de **bot** do tipo [teamworkBot](/graph/api/resources/teamworkbot), representando os detalhes do bot especificado no manifesto do aplicativo Teams.
-- Use a API de notificações de feed de atividades para envolver melhor os usuários em três contextos:
-  - [Enviar notificação ao usuário em um chat](/graph/api/chat-sendactivitynotification)
-  - [Enviar notificação ao usuário em uma equipe](/graph/api/team-sendactivitynotification)
-  - [Enviar notificação ao usuário](/graph/api/userteamwork-sendactivitynotification)
-- Migre o histórico de mensagens e dados dos usuários de um sistema externo para um canal do Teams, permitindo que os usuários continuem as suas comunicações facilmente. Use os seguintes métodos que suportam o cenário de migração:
-  - [Criar equipe](/graph/api/team-post)
-  - [Criar canal](/graph/api/channel-post)
-  - [Criar chatMessage em um canal](/graph/api/channel-post-messages)
-  - [Responder a uma mensagem em um canal](/graph/api/channel-post-messagereply)
-  - [Concluir a migração de mensagens em uma equipe](/graph/api/team-completemigration)
-  - [Concluir a migração de mensagens em um canal](/graph/api/channel-completemigration)
-- [Liste](/graph/api/chatmessage-list-chatmessagehostedcontents) ou [obtenha](/graph/api/chatmessagehostedcontent-get) conteúdo avançado hospedado em uma [chatMessage](/graph/api/resources/chatmessage), como imagens ou trechos de código.
-- Suporte de permissões delegadas de `ChannelMessage.Read.All` para subscrever notificações de mudança em recursos [chatMessage](/graph/api/resources/chatmessage).
-
-## <a name="march-2021-new-in-preview-only"></a>Março de 2021: Novo somente para visualização
-
-### <a name="applications"></a>Aplicativos
-[Crie e adicione certificados autoassinados](/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta&preserve-view=true) aos seus aplicativos SAML. Use isso para ajudar a habilitar o logon único para aplicativos da galeria do Azure AD em seu locatário, permitindo que o Azure AD assine as respostas com o SAML.
-
-### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
-Adicionados ao recurso [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) mais dois motivos para falha no upload de uma imagem de origem do dispositivo: sistema operacional não compatível (`osVersionNotSupported`) ou uma imagem de origem inválida para provisionar uma VM do Windows (`sourceImageInvalid`).
-
-### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
-Obtenha a data/hora mais recente (propriedade **lastSeenDateTime**) em que uma impressora interagiu com a Impressão Universal.
-
-### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
-As atualizações de [março](https://developer.microsoft.com/graph/changelog/?from=2021-03-01&to=2021-03-31&filterBy=Corporate%20management) do Intune para a versão beta.
-
-### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
-Aplique o novo modelo de [revisões de acesso](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) a associações de grupo e todos os outros tipos de recursos suportados. Substitua o [modelo legado de revisões de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true).
-
-### <a name="sites-and-lists"></a>Sites e listas
-- Suporta um tipo ou modelo de conteúdo específico para documentos ou conjuntos de documentos em conjuntos de sites específicos, por meio de um conjunto de novas propriedades e métodos na entidade [contentType](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true). Os métodos incluem o seguinte:
-  - [addCopy](/graph/api/contenttype-addcopy?view=graph-rest-beta&preserve-view=true)
-  - [associateWithHubSites](/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta&preserve-view=true)
-  - [copyToDefaultContentLocation](/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-beta&preserve-view=true)
-  - [isPublished](/graph/api/contenttype-ispublished?view=graph-rest-beta&preserve-view=true)
-  - [publish](/graph/api/contenttype-publish?view=graph-rest-beta&preserve-view=true)
-  - [unpublish](/graph/api/contenttype-unpublish?view=graph-rest-beta&preserve-view=true)
-- Personalize os tipos de conteúdo de acordo com as colunas. As colunas são representadas pela entidade [columnDefinition](/graph/api/resources/columndefinition?view=graph-rest-beta&preserve-view=true) e suportam o conjunto completo de operações CRUD.
-- [Obtenha os tipos de conteúdo de um site que podem ser aplicados a uma lista](/graph/api/site-getApplicableContentTypesForList?view=graph-rest-beta&preserve-view=true).
-- Diferencie os tipos de coluna pelas seguintes propriedades na entidade **columnDefinition**: booliana, calculada, escolha, moeda, dateTime, pesquisa, número, personOrGroup, texto. Essas categorias são mutuamente exclusivas.
-
-### <a name="sites-and-lists--taxonomy"></a>Sites e listas | Taxonomia
-- Navegue de um [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) para um [repositório de termos de taxonomia](/graph/api/resources/termstore-store?view=graph-rest-beta&preserve-view=true) usando a relação **termStore**.
-- Na direção inversa, obtenha a ID do site pai de um repositório de termos usando a propriedade **parentSiteId**.
-
-### <a name="users"></a>Usuários
-- [Obtenha](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta&preserve-view=true) ou [atualize](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta&preserve-view=true) as [preferências de um usuário para traduzir idiomas](/graph/api/resources/translationpreferences?view=graph-rest-beta&preserve-view=true). Por exemplo, se deve ou não traduzir, traduzir automaticamente ou solicitar antes de traduzir idiomas específicos em mensagens, chats e páginas da Web e qualquer [substituição de tradução](/graph/api/resources/translationlanguageoverride?view=graph-rest-beta&preserve-view=true).
-- [Ative um plano de serviço](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) para um usuário.
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?
 
@@ -167,7 +114,7 @@ Estas são algumas maneiras de se envolver:
 - Existem cenários em que você gostaria que o Microsoft Graph oferecesse suporte? Sugira e vote em novos recursos no [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
     Alguns novos recursos são originados como solicitações populares da comunidade de desenvolvedores. A equipe do Microsoft Graph avalia regularmente as necessidades dos clientes e lança novos recursos na seguinte ordem:
 
-    1. Estreia no status de visualização **_prévia_**. As atualizações da API REST relacionadas estão no ponto de extremidade beta (`https://graph.microsoft.com/beta`).  
+    1. Estreia no status de **_visualização_**. Todas as atualizações da API REST relacionadas estão no ponto de extremidade beta (`https://graph.microsoft.com/beta`).  
 
     2. Promovido para o status de **_disponibilidade geral_ (GA)**, se um feedback suficiente indicar a viabilidade. Todas as atualizações da API REST relacionadas serão adicionadas ao ponto de extremidade do v 1.0 (`https://graph.microsoft.com/v1.0`). 
 - Seja um membro ativo da comunidade do Microsoft Graph! [Participe](https://aka.ms/microsoftgraphcall) da chamada mensal à comunidade do Microsoft Graph.

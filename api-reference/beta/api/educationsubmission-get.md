@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6bd6ddbf839abcde4f5be928f9772e4456773954
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 3ffd2b1899165bbe05d347b55ee5ae5d8961b89f
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474803"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546900"
 ---
 # <a name="get-educationsubmission"></a>Obter educationSubmission
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
-|Application | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Aplicativo | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -83,7 +83,7 @@ Este é um exemplo de resposta.
 
 >**Observações:** O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. 
 >
->A **propriedade resourcesFolderUrl** será se `null` [educationSubmission: setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) ainda não tiver sido chamado neste [recurso educationSubmission.](../resources/educationsubmission.md)
+>Se [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) ainda não tiver sido chamado neste [recurso educationSubmission,](../resources/educationsubmission.md) a propriedade **resourcesFolderUrl** será `null` .
 
 <!-- {
   "blockType": "response",

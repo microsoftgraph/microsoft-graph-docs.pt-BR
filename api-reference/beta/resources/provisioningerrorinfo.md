@@ -3,14 +3,14 @@ title: Tipo de recurso provisioningErrorInfo
 description: Descreve o status do evento de provisionamento e os erros associados.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 839370e0dc15ee247997b6d934107e27f62cc87a
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: dddddfa793cf9aac7436fc85e0ce911df7b4ec3e
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232918"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546963"
 ---
 # <a name="provisioningerrorinfo-resource-type"></a>Tipo de recurso provisioningErrorInfo
 
@@ -26,7 +26,7 @@ Descreve o status do evento de provisionamento e os erros associados.
 |:-------------|:------------|:------------|
 |additionalDetails|String|Detalhes adicionais em caso de erro.|
 |errorCategory|String|Categoriza o código de erro. Os valores possíveis `failure` são `nonServiceFailure` , , `success` , `unknownFutureValue`|
-|errorCode|Cadeia de caracteres|Código de erro exclusivo se ocorrer algum. [Saiba Mais](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|errorCode|Cadeia de caracteres|Código de erro exclusivo se ocorrer algum. [Saiba mais](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
 |motivo|String|Resume o status e descreve por que o status aconteceu.|
 |recommendedAction|String|Fornece a resolução do erro correspondente.|
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso entity
-description: ''
+description: Representa uma entidade.
 localization_priority: Normal
-author: MSGraphDocsVteam
-ms.prod: keylimesoda
+author: keylimesoda
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: a0167bbbf38bbfcbed40554f02eeda198b8b7c6b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e4a42f3eec4edb001f3bcb0835d240e58b0e5b3
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018561"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547566"
 ---
 # <a name="entity-resource-type"></a>Tipo de recurso entity
 

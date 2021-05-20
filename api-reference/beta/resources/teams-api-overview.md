@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 7116f182da4822949ff9cdb6500e1b049f6bc68b
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: adaf070c491810ad2467985a3a50509b3b9f82c3
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582631"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547594"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -109,7 +109,7 @@ Se nenhum desses usuários estiver conectado ao aplicativo/site do Microsoft Tea
 
 ## <a name="polling-requirements"></a>Requisitos de sondagem
 
-Se seu aplicativo sonda para ver se um recurso foi alterado, você só poderá fazer isso uma vez por dia. ([teamsAsyncOperation](teamsasyncoperation.md) é uma exceção no sentido de que é foi desenvolvida para ser sondada frequentemente.) Se você precisar saber sobre mudanças com mais frequência que esta, você deve [criar uma assinatura](../api/subscription-post-subscriptions.md) para esse recurso e receber notificações de alteração (webhooks). Caso não encontre suporte para o tipo de assinatura necessária, recomendamos que você faça comentários por meio do [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
+Se seu aplicativo sonda para ver se um recurso foi alterado, você só poderá fazer isso uma vez por dia. ([teamsAsyncOperation](teamsasyncoperation.md) é uma exceção no sentido de que é foi desenvolvida para ser sondada frequentemente.) Se você precisar saber sobre mudanças com mais frequência que esta, você deve [criar uma assinatura](../api/subscription-post-subscriptions.md) para esse recurso e receber notificações de alteração (webhooks). Caso não encontre suporte para o tipo de assinatura necessária, recomendamos que você faça comentários por meio do [Fórum de ideias da Plataforma para Desenvolvedores do Microsoft 365 ](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). 
 
 Ao pesquisar novas mensagens, você deve especificar um intervalo de datas onde isso for possível.  Para obter detalhes, consulte [obter mensagens de canal delta](../api/chatmessage-delta.md).
 

@@ -4,22 +4,22 @@ description: Descreve os conjuntos de dados suportados e tipos de armazenamento 
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: dd339d15e9372440a2377d4c4182c482339e3ffa
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: fd4fbac34f4b03a3802de4834f0c02045d57c4ea
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289354"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547622"
 ---
 # <a name="datasets-regions-and-sinks-that-microsoft-graph-data-connect-supports"></a>Conjuntos de dados, regiões e coletores compatíveis com o Microsoft Graph Data Connect
 
 Microsoft Graph Data Connect dá suporte a vários conjuntos de dados, regiões de dados e locais de armazenamentos do Microsoft Azure. Este tópico descreve os conjuntos de dados suportados e como acessar os esquemas de conjunto de dados, regiões suportadas do Microsoft 365 e do Microsoft Azure, e os locais de armazenamento que a Conexão de Dados usa por meio do Azure Data Factory.
 
-Se quer solicitar suporte para conjuntos de dados, regiões e coletores adicionais, informe em [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581).
+Se desejar solicitar suporte para conjuntos de dados, regiões ou coletores adicionais, informe-nos no fórum de ideias da[Plataforma de Desenvolvedor do Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 ## <a name="datasets"></a>Conjuntos de dados
 
-Data Connect é compatível agora com os seguintes conjuntos de dados. Para exibir esquemas de cada conjunto de dados, crie um novo conjunto de dados no Azure Data Factory e use a guia Esquema para exibi-los. 
+A conexão de dados suporta hoje os seguintes conjuntos de dados. Para exibir esquemas de cada conjunto de dados, crie um novo conjunto de dados no Azure Data Factory e use a guia Esquema para exibi-los. 
 
 |Nome do conjunto de dados|Descrição|
 |-------------|-----------|
@@ -28,7 +28,7 @@ Data Connect é compatível agora com os seguintes conjuntos de dados. Para exib
 |BasicDataSet_v0.Message_v0|Contém a mensagem na caixa de correio de cada usuário. O esquema para essas entidades é semelhante ao [esquema de mensagens do Microsoft Graph](/graph/api/resources/message).| 
 |BasicDataSet_v0.SentItem_v0|Contém as mensagens enviadas da caixa de correio de cada usuário. O esquema para essas entidades é semelhante ao [esquema de mensagens do Microsoft Graph](/graph/api/resources/message).| 
 |BasicDataSet_v0.User_v0|Contém informações de usuário (NomeDeExibição, Nome UPN e assim por diante).| 
-|BasicDataSet_v0.MailboxSettings_v0|Contém as configurações da caixa de correio de cada usuário. O esquema para essas entidades corresponde ao [esquema de configuração da caixa de correio do Microsoft Graph](/graph/api/resources/mailboxsettings?view=graph-rest-1.0).| 
+|BasicDataSet_v0.MailboxSettings_v0|Contém as configurações da caixa de correio de cada usuário. O esquema para essas entidades corresponde ao [esquema de configuração da caixa de correio do Microsoft Graph](/graph/api/resources/mailboxsettings).| 
 |BasicDataSet_v0.MailFolder_v0|Contém as pastas de email da caixa de correio de cada usuário. O esquema para essas entidades corresponde ao [esquema das pastas de email do Microsoft Graph](/graph/api/resources/mailfolder).|
 |BasicDataSet_v0.Manager_v0|Contém as informações de usuário para o gerenciador de cada usuário. O esquema para essas entidades corresponde ao [esquema do usuário do Microsoft Graph](/graph/api/resources/user).|
 |BasicDataSet_v0.DirectReport_v0|Contém informações de usuário sobre funcionários que se reportam diretamente a cada usuário. O esquema para essas entidades corresponde ao [esquema do usuário do Microsoft Graph](/graph/api/resources/user).|

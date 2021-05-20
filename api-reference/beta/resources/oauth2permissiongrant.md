@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 944a96858bea7a1e46ea1f59ef6b67092e4b06a6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 27977a758e937312b2d0ea45c84902c275b035ab
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442927"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546879"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>Tipo de recurso oAuth2PermissionGrant
 
@@ -24,15 +24,16 @@ As concessões de permissões delegadas podem ser criadas como resultado de um u
 
 As permissões delegadas às vezes são conhecidas como "escopos OAuth 2.0" ou "escopos".
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 | [Listar oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection | Recupere uma lista de concessões de permissão delegadas. |
 | [Obter oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md)  | Leia uma única concessão de permissão delegada.|
 | [Criar oAuth2PermissionGrant](../api/oauth2permissiongrant-post.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) | Crie uma concessão de permissão delegada. |
-| [Atualizar oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | Nenhum(a) | Atualizar o objeto oAuth2PermissionGrant. |
-| [Excluir oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Nenhum(a)  | Exclua uma concessão de permissão delegada. |
+| [Atualizar oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | Nenhum | Atualizar o objeto oAuth2PermissionGrant. |
+| [Excluir oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Nenhum  | Exclua uma concessão de permissão delegada. |
+| [Delta](../api/oauth2permissiongrant-delta.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection |Obter objetos **oauth2permissiongrant** recém-criados, atualizados ou excluídos sem executar uma leitura completa de toda a coleção de recursos. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -46,34 +47,6 @@ As permissões delegadas às vezes são conhecidas como "escopos OAuth 2.0" ou "
 | escopo | String | Uma lista separada por espaço dos valores de declaração para permissões delegadas que devem ser incluídos em tokens de acesso para o aplicativo de recurso (a API). Por exemplo, `openid User.Read GroupMember.Read.All`. Cada valor de  declaração deve corresponder ao campo de valor de uma das permissões delegadas definidas pela API, listadas na propriedade **publishedPermissionScopes** da entidade de [serviço de recursos](serviceprincipal.md). |
 | startTime | DateTimeOffset | Atualmente, o valor da hora de início é ignorado, mas um valor é necessário ao criar **um oAuth2PermissionGrant**. Obrigatório. |
 | expiryTime | DateTimeOffset | Atualmente, o valor de hora de término é ignorado, mas um valor é necessário ao criar **um oAuth2PermissionGrant**. Obrigatório. |
-
-## <a name="relationships"></a>Relações
-
-Nenhum
-
-Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/oauth2permissiongrant-delta.md).
-
-## <a name="methods"></a>Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Listar oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection | Recupere uma lista de **objetos oauth2PermissionGrant.** |
-|[Obter oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Leia as propriedades e as relações de um **objeto oAuth2PermissionGrant.**|
-|[Atualizar oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Atualize **um objeto oAuth2PermissionGrant.** |
-|[Excluir oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Nenhum(a) |**Exclua um objeto oAuth2PermissionGrant.** |
-|[Obter delta](../api/oauth2permissiongrant-delta.md)|[oAuth2PermissionGrant](oauth2permissiongrant.md)|Obter objetos **oauth2permissiongrant** recém-criados, atualizados ou excluídos sem executar uma leitura completa de toda a coleção de recursos.|
-
-## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|clientId|Cadeia de caracteres| A id da entidade de serviço concedeu consentimento para representar o usuário ao acessar o recurso (representado pela propriedade resourceId). |
-|consentType|String| Indica se o consentimento foi fornecido pelo administrador (em nome da organização) ou por um indivíduo. Os valores possíveis *são AllPrincipals* ou *Principal*. |
-|expiryTime|DateTimeOffset| Atualmente, o valor de tempo de expiração é ignorado. |
-|id|String| Identificador exclusivo. Somente leitura.|
-|principalId|String| Se consentType for *AllPrincipals,* esse valor será nulo e o consentimento se aplicará a todos os usuários da organização. Se consentType for *Principal*, essa propriedade especificará a id do usuário que concedeu consentimento e se aplica somente a esse usuário. |
-|resourceId|Cadeia de caracteres| Especifica a id da entidade de serviço de recursos à qual o acesso foi concedido. |
-|escopo|String| Especifica o valor da declaração [de escopo](/graph/permissions-reference) que o aplicativo de recurso deve esperar no token de acesso OAuth 2.0. Por exemplo, *User.Read* |
-|startTime|DateTimeOffset| Atualmente, o valor da hora de início é ignorado. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

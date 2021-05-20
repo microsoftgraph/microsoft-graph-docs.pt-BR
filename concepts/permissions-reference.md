@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 114c877ddcf75bb483eda039ef9c5d77d02d74f5
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 100e911aba625540dc8d421b365fdd547f2edd45
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266875"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546991"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1511,6 +1511,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.ReadWrite.PermissionGrant_ | Gerenciar as políticas de concessão de consentimento e permissão | Permite que o aplicativo gerencie as políticas relacionadas a concessões de consentimento e permissão para aplicativos, em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas TrustFramework (Estrutura de Confiança) da sua organização | Permite que o aplicativo leia e grave todas as políticas de TrustFramework da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.AuthenticationMethod_ | Ler e gravar as políticas de método de autenticação da sua organização | Permite que o aplicativo leia e grave as políticas do método de autenticação, em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.MobilityManagement_ | Ler e gravar as políticas de gerenciamento de mobilidade da sua organização. | Permite ao aplicativo ler e gravar as políticas de gerenciamento de mobilidade da sua organização em nome do usuário conectado. Controlam as configurações para MDM (gerenciamento de dispositivo móvel) e aplicativos de gerenciamento de aplicativo móvel (MAM). | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 

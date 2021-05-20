@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso suspiciousIpRiskEvent
-description: Um evento de risco detectado pela Proteção de Identidade do Azure Active Directory em que uma conta de login é tentada de um endereço IP suspeito. Informações completas sobre eventos de risco podem ser encontradas na documentação da Proteção de Identidade do Azure AD.
+description: Um evento de risco detectado pelo Azure Active Directory Identity Protection em que uma conta de login é tentada a partir de um endereço IP suspeito. Informações completas sobre eventos de risco podem ser encontradas na documentação da Proteção de Identidade do Azure AD.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: identity-and-sign-in
 author: cloudhandler
-ms.openlocfilehash: 676752deb0742a4bea705f96a1fd0fd54a1c49e8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 954f2e4f985371e8e19d97b880b7eaeef9c755cb
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442779"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547573"
 ---
 # <a name="suspiciousipriskevent-resource-type-deprecated"></a>Tipo de recurso suspiciousIpRiskEvent (preterido)
 
@@ -21,10 +21,10 @@ Namespace: microsoft.graph
 >[!CAUTION]
 >A **API identityRiskEvents** está preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, [consulte Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Um evento de risco detectado pela Proteção de Identidade do [Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection) em que uma conta de login é tentada de um endereço IP suspeito. Informações completas sobre eventos de risco podem ser encontradas na documentação da Proteção de Identidade do [Azure AD.](/azure/active-directory/identity-protection/overview-identity-protection)
+Um evento de risco detectado pelo [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) em que uma conta de login é tentada a partir de um endereço IP suspeito. Informações completas sobre eventos de risco podem ser encontradas na documentação da Proteção de Identidade do [Azure AD.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -35,14 +35,14 @@ Um evento de risco detectado pela Proteção de Identidade do [Azure Active Dire
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior ou igual ao tempo de data do evento de risco em si. Essa é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
-|id|string| Somente leitura|
-|ipAddress|string| O endereço IP da assinatura|
+|id|cadeia de caracteres| Somente leitura|
+|ipAddress|cadeia de caracteres| O endereço IP da assinatura|
 |location|cadeia de caracteres| O local anexado ao endereço IP da login|
 |riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
-|riskEventStatus|string| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|riskEventStatus|cadeia de caracteres| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
-|riskEventType|string| O tipo de risco|
-|userDisplayName|string| O nome do usuário em risco|
+|riskEventType|cadeia de caracteres| O tipo de risco|
+|userDisplayName|cadeia de caracteres| O nome do usuário em risco|
 |userId|cadeia de caracteres| A id do usuário em risco|
 |userPrincipalName|string| O nome principal do usuário em risco|
 

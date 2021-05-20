@@ -5,14 +5,14 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: dcdfc94b3605b701f09f559c19e8975acf73a63d
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f8be8cb35add43d85b12bb3d466821ed8fd579a3
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51474079"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579736"
 ---
-# <a name="azure-ad-access-reviews-legacy"></a>Avaliações de acesso do Azure AD (herdada)
+# <a name="azure-ad-access-reviews-deprecated"></a>Avaliações de acesso do Azure AD (preteridas)
 
 Namespace: microsoft.graph
 
@@ -32,7 +32,7 @@ Cenários de cliente típicos para análises de acesso de associações de grupo
 
 Há também um recurso relacionado para que os clientes revisem e certifiquem as atribuições de função de usuários administrativos que são atribuídas a funções do Azure AD, como Administrador Global ou funções de assinatura do Azure.  Esse recurso está incluído no [Azure AD Privileged Identity Management](privilegedidentitymanagement-root.md).
 
-Observe que o recurso de críticas de acesso, incluindo a API, está incluído no Azure AD Premium P2.  O locatário em que uma revisão de acesso está sendo criada deve ter uma assinatura válida comprada ou avaliação do Azure AD Premium P2 ou EMS E5.
+Observe que o recurso de análises de acesso, incluindo a API, está incluído no Azure AD Premium P2.  O locatário em que uma revisão de acesso está sendo criada deve ter uma assinatura válida comprada ou de avaliação do Azure AD Premium assinatura P2 ou EMS E5.
 Antes de criar uma revisão de acesso, programa ou controle de programa, um administrador deve ter feito a integração anterior para preparar os recursos [programControlType](programcontroltype.md) e [businessFlowTemplate.](businessflowtemplate.md) A organização pode entrar em análises de acesso ao Azure AD ou, no caso de avaliações de acesso de funções do Azure AD ou funções de assinatura do Azure, PIM do Azure AD.
 
 
@@ -71,7 +71,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 
 As seguintes funções de diretório são necessárias para que um usuário de chamada gerencie avaliações, programas e controles de acesso.
 
-| Recurso Target | Operação | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
+| Recurso Target | Operation | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |[accessReview](accessreview.md) de uma função do Azure AD | Ler | AccessReview.Read.All ou AccessReview.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Segurança, Leitor de Segurança ou Administrador de Função Privilegiada |
 |[accessReview](accessreview.md) de uma função do Azure AD | Criar, atualizar ou excluir | AccessReview.ReadWrite.All | Administrador Global ou Administrador de Função Privilegiada |

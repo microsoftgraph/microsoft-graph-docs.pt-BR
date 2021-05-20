@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 31c803ccc82deaacddd81a70691e6570a044b5a1
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: add460d4f88d80c6d318a5c8c8c6d1171fa9cf31
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298535"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547215"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -72,7 +72,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|String|
 |Inteiro|
 |Referência|
 |Binário|
@@ -92,7 +92,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum(a)|
+|Nenhum|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -882,7 +882,7 @@ Namespace: microsoft.graph
 |globe|
 |cup|
 |phone|
-|clima|
+|weather|
 |umbrella|
 |piggyBank|
 |dog|
@@ -1908,7 +1908,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -2167,6 +2167,14 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |other|
 |unknownFutureValue|
 
+### <a name="policyscope-values"></a>Valores policyScope
+
+|Member|
+|:---|
+|nenhuma|
+|all|
+|selected|
+
 ### <a name="teamsappinstallationscope-values"></a>Valores teamsAppInstallationScope
 
 |Membro    |Valor    |Descrição |
@@ -2220,4 +2228,3 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |:---|
 |principal|
 |unknownFutureValue|
-

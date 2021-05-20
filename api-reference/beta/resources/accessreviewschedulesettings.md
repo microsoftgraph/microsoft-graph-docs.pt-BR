@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 77ea7d8601df36525aad7a3448aa3b6f031d98d3
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b354ebfc2b5e6c8093f65c8712516421f0b1d332
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469315"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579729"
 ---
 # <a name="accessreviewschedulesettings-resource-type"></a>Tipo de recurso accessReviewScheduleSettings
 
@@ -25,16 +25,16 @@ O **accessReviewScheduleSettings** define as configurações de [um accessReview
 ## <a name="properties"></a>Propriedades
 | Propriedade    | Tipo   | Descrição |
 | :---------------| :---------- | :---------- |
-| mailNotificationsEnabled|Booliano | Sinalizador para indicar se os emails estão habilitados/desabilitados.                |
-| reminderNotificationsEnabled|Booliano  | Sinalizador para indicar se os lembretes estão habilitados/desabilitados.   |
-| justificationRequiredOnApproval|Booliano | Sinalizador para indicar se os revisadores são necessários para fornecer justificativa com sua decisão. |
-| defaultDecisionEnabled|Booliano | Sinalizador para indicar se a decisão padrão está habilitada/desabilitada quando os revisadores não respondem. |
-| defaultDecision|String | Decisão escolhida se `defaultDecisionEnabled` estiver habilitada. Pode ser um de "Aprovar", "Negar" ou "Recomendação". |
+| mailNotificationsEnabled|Booliano | Indica se os emails estão habilitados ou desabilitados. O valor padrão é `false`.               |
+| reminderNotificationsEnabled|Booliano  | Indica se os lembretes estão habilitados ou desabilitados. O valor padrão é `false`.  |
+| justificationRequiredOnApproval|Booliano | Indica se os revisadores são necessários para fornecer justificativa com sua decisão. O valor padrão é `false`. |
+| defaultDecisionEnabled|Booliano | Indica se a decisão padrão está habilitada ou desabilitada quando os revisadores não respondem. O valor padrão é `false`. |
+| defaultDecision|String | Decisão escolhida se `defaultDecisionEnabled` estiver habilitada. Pode ser um `Approve` dos `Deny` , ou `Recommendation` . |
 | instanceDurationInDays|Int32 | Duração de cada recorrência de revisão ( `accessReviewInstance` ) em número de dias. |
-| recorrência|[patternedRecurrence](../resources/patternedrecurrence.md) | Configurações detalhadas para recorrência. Usando o objeto de recorrência padrão do Outlook. Observe que dayOfMonth não tem suporte - use a propriedade startDate em recurrenceRange para determinar o dia em que a revisão será iniciada. |
-| autoApplyDecisionsEnabled|Booliano | Sinalizador para indicar se o recurso de aplicação automática está habilitado. |
+| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Configurações detalhadas para recorrência usando o objeto Outlook de recorrência padrão. Somente `weekly` e `absoluteMonthly` em **recorrênciaPattern** são suportados. Use a propriedade **startDate** em **recurrenceRange** para determinar o dia em que a revisão é iniciada. |
+| autoApplyDecisionsEnabled|Booliano | Indica se as decisões são aplicadas automaticamente. Quando definido como , um usuário deve aplicar as decisões manualmente depois que o `false` revistor concluir a revisão de acesso. Quando definido como , as decisões são aplicadas automaticamente após o fim da duração da instância de revisão de acesso, se os `true` revisadores responderam ou não. O valor padrão é `false`. |
 | applyActions|[Coleção accessReviewApplyAction](../resources/accessreviewapplyaction.md) | Campo opcional. Descreve as ações a ser realizadas depois que uma revisão é concluída. Há dois tipos com suporte no momento: `removeAccessApplyAction` (padrão) e `disableAndDeleteUserApplyAction` . O campo só precisa ser especificado no caso de `disableAndDeleteUserApplyAction` . Consulte [accessReviewApplyAction](accessreviewapplyaction.md). |
-| recommendationsEnabled|Booliano | Sinalizador para indicar se as recomendações de decisão estão habilitadas/desabilitadas. |
+| recommendationsEnabled|Booliano | Indica se as recomendações de decisão estão habilitadas/desabilitadas. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

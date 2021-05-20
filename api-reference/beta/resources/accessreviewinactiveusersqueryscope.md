@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 51fc61ce186b0346bc065ddc5dfea40158758223
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 80d415125679ddbb44a08fe75f33b115e4ba1f04
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469732"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579743"
 ---
 # <a name="accessreviewinactiveusersqueryscope-resource-type"></a>Tipo de recurso accessReviewInactiveUsersQueryScope
 
@@ -19,27 +19,19 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Um tipo de [accessReviewQueryScope](../resources/accessreviewqueryscope.md) que permite que apenas usuários inativos sejam selecionados no escopo de uma revisão de acesso.
+Um tipo de [accessReviewQueryScope](../resources/accessreviewqueryscope.md) que permite que apenas usuários inativos sejam selecionados no escopo de uma revisão de acesso. A duração da inatividade é calculada com base na última data de entrada do usuário em relação à data de início da instância de revisão de acesso, conforme definido na propriedade **settings** [de accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
 
 Herda de [accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|inactiveDuration|Duration|Define o comprimento do período de duração da inatividade. A inatividade é baseada na última data de login do usuário.|
+|inactiveDuration|Duration|Define a duração da inatividade. A inatividade é baseada na última data de entrada do usuário em comparação com a data de início da instância de revisão de acesso. Se essa propriedade não for especificada, ela será atribuída ao valor padrão `PT0S` .|
 |consulta|String|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 |queryRoot|String|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 |queryType|String|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 
-### <a name="supported-queries-for-accessreviewinactiveuserqueryscope-as-scope"></a>Consultas com suporte para accessReviewInactiveUserQueryScope como escopo
-As mesmas consultas com suporte no [accessReviewScope](../resources/accessreviewscope.md) também são suportadas no accessReviewInactiveUserQueryScope. A seguir estão as consultas. Eles são suportados como a `scope` propriedade em [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md).
-
-|Cenário| Consulta |
-|--|--|
-| Revisar todos os usuários convidados inativos atribuídos a um grupo | /groups/{group ID}/transitiveMembers/microsoft.graph.user/? \$ count=true&$filter=(userType eq 'Guest') |
-| Revisar todos os usuários inativos atribuídos a um grupo | /groups/{group ID}/transitiveMembers |
-| Revisar todos os usuários convidados inativos atribuídos a todos os grupos | ./members/microsoft.graph.user/? \$ count=true&$filter=(userType eq 'Guest') |
-
+Você também deve especificar a **propriedade @odata.type com** o valor `#microsoft.graph.accessReviewInactiveUsersQueryScope` . Para obter mais  informações sobre opções de configuração para escopo usando **accessReviewInactiveUsersQueryScope**, consulte Configure the scope of your [access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).
 
 ## <a name="relationships"></a>Relações
 Nenhum

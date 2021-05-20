@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: fc14425ed08795f00ac7a92a348c84f9bcbe537d
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ad9baa66d82437d53fc500a99205cf9f4d03280c
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515566"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547278"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -28,7 +28,7 @@ As extensões abertas têm suporte nos recursos a seguir nas versões correspond
 
 |Recurso |Versão |
 |:---------------|:-------|
-| [Unidade administrativa](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | GA |
+| [Unidade administrativa](/graph/api/resources/administrativeunit)  | GA |
 | [Evento de calendário](event.md) | GA |
 | [Evento de calendário](event.md) do grupo | GA |
 | [Postagem](post.md) de thread de conversa do grupo | GA |
@@ -52,7 +52,7 @@ Aplique as seguintes diretrizes quando você criar extensões abertas em recurso
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Use extensões abertas (para recursos do Outlook) ou propriedades estendidas
 
-Extensões abertas são a solução recomendada para a maioria dos cenários que envolvem armazenar e acessar dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](../index.md), você pode usar [as propriedades estendidas e sua API REST](extended-properties-overview.md). Você pode verificar quais propriedades os metadados expõem na [ https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
+Extensões abertas são a solução recomendada para a maioria dos cenários que envolvem armazenar e acessar dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](/graph/traverse-the-graph#microsoft-graph-api-metadata), você pode usar [as propriedades estendidas e sua API REST](extended-properties-overview.md). Você pode confirmar quais propriedades os metadados expõem em https://graph.microsoft.com/v1.0/$ metadados.
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,18 +1,18 @@
 ---
-title: Carregar arquivos grandes usando os SDKs do Microsoft Graph
-description: Fornece orientações para carregar arquivos grandes usando os SDKs do Microsoft Graph.
+title: Upload arquivos grandes usando os SDKs da Microsoft Graph
+description: Fornece orientação para o upload de arquivos grandes usando os SDKs Graph da Microsoft.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 54ff14071a81ac286cebbd785216c02dc9cf6c23
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b1a87c142f70f81b9e726727c6570f2cbce0f357
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948634"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579701"
 ---
-# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Carregar arquivos grandes usando os SDKs do Microsoft Graph
+# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Upload arquivos grandes usando os SDKs da Microsoft Graph
 
-Várias entidades no Microsoft Graph suportam carregamentos de arquivos [resumáveis](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) para facilitar o carregamento de arquivos grandes. Em vez de tentar carregar todo o arquivo em uma única solicitação, o arquivo é fatiado em partes menores e uma solicitação é usada para carregar uma única fatia. Para simplificar esse processo, os SDKs do Microsoft Graph implementam uma tarefa de carregamento de arquivo grande que gerencia o carregamento das fatias.
+Várias entidades da Microsoft Graph [suportam uploads de arquivos resumivelsos](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) para facilitar o upload de arquivos grandes. Em vez de tentar carregar todo o arquivo em uma única solicitação, o arquivo é fatiado em pedaços menores e uma solicitação é usada para carregar uma única fatia. Para simplificar esse processo, os SDKs de Graph da Microsoft implementam uma grande tarefa de upload de arquivos que gerencia o upload das fatias.
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -106,7 +106,7 @@ InputStream fileStream = new FileInputStream(file);
 long streamSize = file.length();
 
 // Create a callback used by the upload provider
-IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
+IProgressCallback callback = new IProgressCallback() {
     @Override
     // Called after each slice of the file is uploaded
     public void progress(final long current, final long max) {
@@ -116,6 +116,10 @@ IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
     }
 };
 
+DriveItemCreateUploadSessionParameterSet uploadParams =
+    DriveItemCreateUploadSessionParameterSet.newBuilder()
+        .withItem(new DriveItemUploadableProperties()).build();
+
 // Create an upload session
 UploadSession uploadSession = graphClient
     .me()
@@ -124,7 +128,7 @@ UploadSession uploadSession = graphClient
     // itemPath like "/Folder/file.txt"
     // does not need to be a path to an existing item
     .itemWithPath(itemPath)
-    .createUploadSession(new DriveItemUploadableProperties())
+    .createUploadSession(uploadParams)
     .buildRequest()
     .post();
 
@@ -132,20 +136,15 @@ LargeFileUploadTask<DriveItem> largeFileUploadTask =
     new LargeFileUploadTask<DriveItem>
         (uploadSession, graphClient, fileStream, streamSize, DriveItem.class);
 
-// Config parameter is an array of integers
-// customConfig[0] indicates the max slice size
-// Max slice size must be a multiple of 320 KiB
-int[] customConfig = { 320 * 1024 };
-
 // Do the upload
-largeFileUploadTask.upload(callback, customConfig);
+largeFileUploadTask.upload(0, null, callback);
 ```
 
 ---
 
-## <a name="resuming-a-file-upload"></a>Retomar um carregamento de arquivo
+## <a name="resuming-a-file-upload"></a>Retomando um upload de arquivo
 
-Os SDKs do Microsoft Graph [suportam a retomada de carregamentos em andamento.](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload) Se o aplicativo encontrar uma interrupção de conexão ou um status HTTP 5.x.x durante o carregamento, você poderá retomar o carregamento.
+Os SDKs de Graph microsoft [suportam a retomada de uploads em andamento](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload). Se o aplicativo encontrar uma interrupção de conexão ou um status HTTP de 5.x.x.x durante o upload, você poderá retomar o upload.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)
@@ -163,7 +162,7 @@ const resumedFile: DriveItem = await uploadTask.resume();
 ### <a name="java"></a>[Java](#tab/java)
 
 > [!NOTE]
-> O Java SDK atualmente não dá suporte à retomada de downloads em andamento.
+> O Java SDK atualmente não suporta a retomada de downloads em andamento.
 
 ---
 <!-- markdownlint-enable MD024 -->

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso leakedCredentialsRiskEvent
-description: Um evento de risco detectado pela Proteção de Identidade do Azure Active Directory onde as credenciais de uma conta foram detectadas na natureza. Informações completas sobre eventos de risco podem ser encontradas na documentação da Proteção de Identidade do Azure AD.
+description: Um evento de risco detectado pela Azure Active Directory Identity Protection em que as credenciais de uma conta foram detectadas na natureza. Informações completas sobre eventos de risco podem ser encontradas na documentação da Proteção de Identidade do Azure AD.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: identity-and-sign-in
 author: cloudhandler
-ms.openlocfilehash: ac8e9dc0c2adb685513c74658464f4a79af5cb45
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7d5cd0ab0c6869a5be04d1c227517c848540b480
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442975"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547082"
 ---
 # <a name="leakedcredentialsriskevent-resource-type-deprecated"></a>Tipo de recurso leakedCredentialsRiskEvent (preterido)
 
@@ -21,10 +21,10 @@ Namespace: microsoft.graph
 >[!CAUTION]
 >A **API identityRiskEvents** está preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, [consulte Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Um evento de risco detectado pela Proteção de Identidade do [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) onde as credenciais de uma conta foram detectadas na natureza. Informações completas sobre eventos de risco podem ser encontradas na documentação da Proteção de Identidade do [Azure AD.](/azure/active-directory/identity-protection/overview-identity-protection)
+Um evento de risco detectado pelo [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) em que as credenciais de uma conta foram detectadas na natureza. Informações completas sobre eventos de risco podem ser encontradas na documentação da Proteção de Identidade do [Azure AD.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -35,12 +35,12 @@ Um evento de risco detectado pela Proteção de Identidade do [Azure Active Dire
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior ou igual ao tempo de data do evento de risco em si. Essa é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
-|id|string| Somente leitura|
+|id|cadeia de caracteres| Somente leitura|
 |riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
-|riskEventStatus|string| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|riskEventStatus|cadeia de caracteres| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
-|riskEventType|string| O tipo de risco|
-|userDisplayName|string| O nome do usuário em risco|
+|riskEventType|cadeia de caracteres| O tipo de risco|
+|userDisplayName|cadeia de caracteres| O nome do usuário em risco|
 |userId|cadeia de caracteres| A id do usuário em risco|
 |userPrincipalName|string| O nome principal do usuário em risco|
 

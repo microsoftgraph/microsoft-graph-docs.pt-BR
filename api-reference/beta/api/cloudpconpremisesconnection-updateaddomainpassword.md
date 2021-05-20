@@ -1,16 +1,16 @@
 ---
 title: 'cloudPcOnPremisesConnection: updateAdDomainPassword'
-description: Atualize a senha do domínio do AD para um onPremisesConnection bem-sucedido.
+description: Atualize a senha de domínio do AD para um onPremisesConnection bem-sucedido.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b43179d906d8fa14e961cd097b21a43605576893
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 6a7420574c8dc1a4231f9854a10b76b7291b3ad4
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092308"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546830"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection: updateAdDomainPassword
 Namespace: microsoft.graph
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|adDomainPassword|Cadeia de caracteres|A senha associada a adDomainUsername|
+|adDomainPassword|String|A senha associada a adDomainUsername|
 
 
 

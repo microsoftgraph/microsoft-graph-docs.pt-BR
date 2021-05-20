@@ -3,14 +3,14 @@ title: Escolha um provedor de autenticação Graph microsoft
 description: Saiba como escolher provedores de autenticação específicos de cenário para seu aplicativo.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 0cdc407187ea0b5befc3704f877b1df11aeda545
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 45fc7cf4c142b6fe3fc3bd97cc7556e09cd51a44
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475532"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547138"
 ---
-# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Escolha um provedor Graph de autenticação da Microsoft com base no cenário
+# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Escolher um provedor de autenticação do Microsoft Graph com base no cenário
 
 Os provedores de autenticação implementam o código necessário para adquirir um token usando a Biblioteca de Autenticação da Microsoft (MSAL); lidar com vários erros potenciais para casos como consentimento incremental, senhas expiradas e acesso condicional; e, em seguida, de definir o cabeçalho de autorização de solicitação HTTP. A tabela a seguir lista o conjunto de provedores que combinam com os cenários de diferentes tipos [de aplicativo.](/azure/active-directory/develop/v2-app-types)
 
@@ -87,11 +87,11 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 ---
 
@@ -145,11 +145,11 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 ---
 
@@ -175,7 +175,7 @@ O código de autorização, a credencial do cliente e os fluxos em nome do OAuth
 
 # <a name="java"></a>[Java](#tab/Java)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 # <a name="android"></a>[Android](#tab/Android)
 
@@ -187,11 +187,11 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 ---
 
@@ -265,7 +265,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -298,11 +298,11 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 ---
 
@@ -363,7 +363,7 @@ InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationPr
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -449,7 +449,7 @@ User me = await graphClient.Me.Request()
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -481,11 +481,11 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) se isso for importante para você.
 
 ---
 

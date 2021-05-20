@@ -1,30 +1,30 @@
 ---
-title: Visão geral dos SDKs do Microsoft Graph
-description: Descreve os SDKs que estão disponíveis, as plataformas que eles dão suporte e o valor que eles fornecem aos desenvolvedores.
+title: Visão geral Graph SDKs da Microsoft
+description: Descreve os SDKs que estão disponíveis, as plataformas que eles suportam e o valor que eles fornecem aos desenvolvedores.
 localization_priority: Normal
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 88d5cc0515ef71ffa12e09fac7a6875dfb305bb2
-ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
+ms.openlocfilehash: 764bfe113c0bd66170eec1e21c2a1abddaf8b28e
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819680"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546914"
 ---
-# <a name="microsoft-graph-sdks-overview"></a>Visão geral dos SDKs do Microsoft Graph
+# <a name="microsoft-graph-sdks-overview"></a>Visão geral Graph SDKs da Microsoft
 
-Os SDKs do Microsoft Graph foram projetados para simplificar a criação de aplicativos de alta qualidade, eficientes e resistentes que acessam o Microsoft Graph. Os SDKs incluem dois componentes: uma biblioteca de serviços e uma biblioteca principal.
+Os SDKs Graph Microsoft foram projetados para simplificar a criação de aplicativos de alta qualidade, eficientes e resilientes que acessam o Microsoft Graph. Os SDKs incluem dois componentes: uma biblioteca de serviços e uma biblioteca principal.
 
-A biblioteca de serviços contém modelos e criadores de solicitação que são gerados a partir de metadados do Microsoft Graph para fornecer uma experiência avançada, fortemente tipada e detectável, ao trabalhar com os vários conjuntos de valores disponíveis no Microsoft Graph.
+A biblioteca de serviços contém modelos e construtores de solicitação que são gerados a partir dos metadados do Microsoft Graph para fornecer uma experiência rica, fortemente digitada e descobrivel ao trabalhar com os muitos conjuntos de dados disponíveis no Microsoft Graph.
 
-A biblioteca principal fornece um conjunto de recursos que melhoram o trabalho com todos os serviços do Microsoft Graph. Suporte incorporado para tratamento de repetição, redirecionamentos de segurança, autenticação transparente e compactação de carga, melhore a qualidade das interações de seu aplicativo com o Microsoft Graph, sem complexidade adicional, enquanto deixa você totalmente no controle. A biblioteca principal também fornece suporte para tarefas comuns, como paginação através de coleções e criação de solicitações em lote.
+A biblioteca principal fornece um conjunto de recursos que aprimoram o trabalho com todos os serviços Graph Microsoft. O suporte incorporado para tratamento de nova tentativa, redirecionamentos seguros, autenticação transparente e compactação de carga, melhora a qualidade das interações do aplicativo com o Microsoft Graph, sem nenhuma complexidade adicionada, deixando você completamente no controle. A biblioteca principal também oferece suporte para tarefas comuns, como pajamento por meio de coleções e criação de solicitações em lotes.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/hDnsd2nJf88]
 
 
 ## <a name="supported-platforms"></a>Plataformas compatíveis
 
-Os SDKs estão disponíveis atualmente para os seguintes idiomas e plataformas:
+Atualmente, os SDKs estão disponíveis para os seguintes idiomas e plataformas:
 
 - [Android](https://developer.microsoft.com/en-us/graph/get-started/android)
 - [Angular](https://developer.microsoft.com/en-us/graph/get-started/angular)
@@ -37,10 +37,10 @@ Os SDKs estão disponíveis atualmente para os seguintes idiomas e plataformas:
 - [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
 - [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
 
-## <a name="microsoft-365-developer-subscription"></a>Assinatura do desenvolvedor do Microsoft 365
+## <a name="microsoft-365-developer-subscription"></a>Microsoft 365 de desenvolvedor
 
-Ao criar aplicativos usando o Microsoft Graph, recomendamos que você obtenha uma assinatura gratuita do desenvolvedor do Microsoft 365 inscrevendo-se no [programa de desenvolvedor do microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program).
+Ao criar aplicativos usando o Microsoft Graph, recomendamos que você receba uma assinatura de desenvolvedor gratuita Microsoft 365 se inscrever no programa Microsoft 365 [Desenvolvedor.](https://developer.microsoft.com/microsoft-365/dev-program)
 
 ## <a name="see-also"></a>Confira também
 
-A [documentação de requisitos de design](https://github.com/microsoftgraph/msgraph-sdk-design) do SDK fornece mais detalhes sobre os recursos e recursos do SDK. Solicitar ou votar em recursos adicionais no site do [Microsoft Graph UserVoice](https://microsoftgraph.uservoice.com) . Para obter uma lista de SDKs e exemplos do Microsoft Graph, consulte a [página recursos do Microsoft Graph](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs).
+A documentação de [requisitos de design](https://github.com/microsoftgraph/msgraph-sdk-design) do SDK fornece mais detalhes sobre os recursos e os recursos do SDK. Solicite ou vote em recursos adicionais no fórum Microsoft 365 de ideias da Plataforma de [Desenvolvedores.](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) Para ver uma lista de SDKs e exemplos para o Microsoft Graph, consulte a página recursos do [Microsoft Graph.](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs)

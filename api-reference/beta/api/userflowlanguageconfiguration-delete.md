@@ -5,20 +5,22 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d148db0712ffbfb9ca41ba1c62e13c90c852cbc6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d750145561adefd7532e23ab6cbfc9bff8efe59
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444746"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546949"
 ---
 # <a name="delete-userflowlanguageconfiguration"></a>Excluir userFlowLanguageConfiguration
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Exclui um [objeto userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) de um fluxo de [usuário do Azure AD B2C.](../resources/b2cidentityuserflow.md)
 
-**Observação:** Não é possível excluir idiomas de um fluxo de usuário do [Azure Active Directory.](../resources/b2xidentityuserflow.md)
+**Observação:** Não é possível excluir idiomas de um [fluxo Azure Active Directory usuário](../resources/b2xidentityuserflow.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de Fluxo de Usuário de Identidade Externa
+* Administrador de identidade externa Flow usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 

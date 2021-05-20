@@ -1,16 +1,16 @@
 ---
 title: Criar cloudPcDeviceImage
-description: Carregue uma imagem do sistema operacional personalizada que você poderá provisioná-la posteriormente em PCs na nuvem.
+description: Upload uma imagem personalizada do sistema operacional que você pode provisioná-la posteriormente em PCs de nuvem.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: aa0d7ba5a15acacf22cce43e4a4989dabb131118
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: e7da8717b9dcbf34d40de5bbcb08247d80d04514
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873945"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547089"
 ---
 # <a name="create-cloudpcdeviceimage"></a>Criar cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md) Carregue uma imagem do sistema operacional personalizada que você poderá provisioná-la posteriormente em PCs na nuvem.
+Crie um novo [objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md) Upload uma imagem personalizada do sistema operacional que você pode provisioná-la posteriormente em PCs de nuvem.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,21 +52,21 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do objeto [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o cloudPcDeviceImage](../resources/cloudpcdeviceimage.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição da imagem.|
-|sourceImageResourceId|Cadeia de caracteres|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|displayName|String|O nome de exibição da imagem.|
+|sourceImageResourceId|String|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|O sistema operacional da imagem. Por exemplo: Windows 10 Enterprise.|
-|osBuildNumber|Cadeia de caracteres|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
+|osBuildNumber|String|A versão de com build do sistema operacional da imagem. Por exemplo: 1909.|
 |versão|String|A versão da imagem. Por exemplo: 0.0.1, 1.5.13.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

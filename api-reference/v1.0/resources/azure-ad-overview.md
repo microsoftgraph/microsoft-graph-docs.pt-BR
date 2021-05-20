@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: identity-and-access
 doc_type: conceptualPageType
-ms.openlocfilehash: 769f3125c28a230e97f60155c8ee55bdbb97bbf2
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: d78ca9cbc154d88d804685ce47f9aa507ac21164
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468993"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547061"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
@@ -47,7 +47,7 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | Obter informações sobre uma organização, como seu endereço comercial, contatos de notificação e técnicos, os planos de serviço em que está inscrita em e os domínios associados a ela. | [organization](../resources/organization.md) | N/D |
 | Obter informações sobre SKUs do serviço nos quais a empresa está inscrita. | [subscribedSku](../resources/subscribedsku.md) | N/D |
 | Convidar usuários externos (convidado) para uma organização. | [invitation](../resources/invitation.md) | [O que é a colaboração B2B do Azure AD?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
-| Gerenciar a identidade visual da experiência de entrada de uma organização. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Adicionar identidade visual à página de entrada do Azure Active Directory da sua organização](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
+| Gerenciar a identidade visual da experiência de entrada de uma organização. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Adicionar identidade visual à página de entrada do Azure Active Directory da sua organização](/azure/active-directory/fundamentals/customize-branding)|
 | **Solicitações de consentimento** | | |
 | Gerenciar o fluxo de trabalho da solicitação de consentimento para usuários que tentam acessar aplicativos que requerem autorização do administrador.  | [API de solicitações de consentimento](../resources/consentrequests-root.md) |[Configure o fluxo de trabalho de consentimento do administrador](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 

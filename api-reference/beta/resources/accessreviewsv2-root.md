@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 528b5d42024793846b047ddc16f7e464b6d995c1
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: facc1cd9f51d9e638b01fa0bcf5efce5f846e727
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080621"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579715"
 ---
 # <a name="azure-ad-access-reviews"></a>Revisões de acesso ao Azure AD
 
@@ -44,7 +44,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 |:---------------|:--------|:----------|
 |[Listar accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [Coleção accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Lista cada `accessReviewScheduleDefinition` . Não inclui `accessReviewInstance` instâncias associadas em listagem. |
 |[Obter accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Obter um `accessReviewScheduleDefinition` com uma id especificada. |
-|[Criar accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Criar uma página `accessReviewScheduleDefinition`. |
+|[Criar accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-post.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Criar uma página `accessReviewScheduleDefinition`. |
 |[Excluir accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Nenhum. | `accessReviewScheduleDefinition`Exclua um com uma ID especificada. |
 |[Atualizar accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Nenhum. | Atualizar propriedades de `accessReviewScheduleDefinition` um com uma ID especificada. |
 |[Listar accessReviewInstance](../api/accessreviewinstance-list.md) | [Coleção accessReviewInstance](accessreviewinstance.md) | Lista cada `accessReviewInstance` um para um específico `accessReviewScheduleDefinition` . Não inclui s associados `accessReviewInstanceDecisionItem` em listagem. |

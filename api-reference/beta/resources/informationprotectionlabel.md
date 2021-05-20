@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 4937d428fd480c0f31a5368a76c4eede9efef851
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ee8865b4fa898a91ca79cfba29c928ed00e21ae2
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953751"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579666"
 ---
 # <a name="informationprotectionlabel-resource-type"></a>Tipo de recurso informationProtectionLabel
 
@@ -36,12 +36,13 @@ Descreve o rótulo de proteção de informações que detalha como aplicar corre
 | Propriedade    | Tipo    | Descrição                                                                                     |
 | :---------- | :------ | :---------------------------------------------------------------------------------------------- |
 | color       | String  | A cor que a interface do usuário deve exibir para o rótulo, se configurada.                              |
-| description | Cadeia de caracteres  | A descrição definida pelo administrador para o rótulo.                                                    |
-| id          | Cadeia de caracteres  | A ID do rótulo é um identificador global exclusivo (GUID)                                             |
+| descrição | String  | A descrição definida pelo administrador para o rótulo.                                                    |
+| id          | String  | A ID do rótulo é um identificador global exclusivo (GUID)                                             |
 | isActive    | Booliano | Indica se o rótulo está ativo ou não. Os rótulos ativos devem ser ocultos ou desabilitados na interface do usuário. |
-| nome        | Cadeia de caracteres  | O nome do texto sem formatção do rótulo.                                                                |
-| sensibilidade | Int32   | O valor de sensibilidade do rótulo, onde menor é menos sensível.                              |
-| tooltip     | Cadeia de caracteres  | A dica de ferramenta que deve ser exibida para o rótulo em uma interface do usuário.                                     |
+| nome        | String  | O nome do texto sem formatção do rótulo.                                                                |
+| sensitivity | Int32   | O valor de sensibilidade do rótulo, onde menor é menos sensível.                              |
+| tooltip     | String  | A dica de ferramenta que deve ser exibida para o rótulo em uma interface do usuário.                                     |
+| primário      | labelDetails   | O rótulo pai associado a um rótulo filho. Nulo se o rótulo não tiver pai.
 
 ## <a name="relationships"></a>Relações
 
@@ -68,7 +69,8 @@ Veja a seguir uma representação JSON do recurso.
   "isActive": true,
   "name": "String",
   "sensitivity": 1024,
-  "tooltip": "String"
+  "tooltip": "String",
+  "parent": {"@odata.type": "microsoft.graph.labelDetails" }
 }
 ```
 

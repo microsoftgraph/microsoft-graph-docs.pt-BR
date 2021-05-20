@@ -3,14 +3,14 @@ title: Tipo de recurso recurrencePattern
 description: 'Descreve a frequência com que um event recorrente se repete. '
 localization_priority: Normal
 author: harini84
-ms.prod: ''
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fe233f99d80a210ab395e6fa2d1e53454cd8cd91
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: b60abaad3c1558021927a61a01921cb27d7f2761
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50291927"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547264"
 ---
 # <a name="recurrencepattern-resource-type"></a>Tipo de recurso recurrencePattern
 
@@ -38,12 +38,12 @@ Use a propriedade **type** para especificar os diferentes tipos de **recurrenceP
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|O dia do mês em que ocorre o evento. Obrigatório se **type** for `absoluteMonthly` ou `absoluteYearly`. |
-|daysOfWeek|Coleção dayOfWeek|Uma coleção dos dias da semana em que o evento ocorre. Os valores possíveis são `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. <br>Se **type** for `relativeMonthly` ou `relativeYearly` e **daysOfWeek** especificar mais de um dia, o evento cairá no primeiro dia que satisfizer o padrão. <br> Obrigatório se **type** for `weekly`, `relativeMonthly` ou `relativeYearly`.|
+|daysOfWeek|coleção dayOfWeek|Uma coleção dos dias da semana em que o evento ocorre. Os valores possíveis são `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. <br>Se **type** for `relativeMonthly` ou `relativeYearly` e **daysOfWeek** especificar mais de um dia, o evento cairá no primeiro dia que satisfizer o padrão. <br> Obrigatório se **type** for `weekly`, `relativeMonthly` ou `relativeYearly`.|
 |firstDayOfWeek|dayOfWeek|O primeiro dia da semana. Os valores possíveis são `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. O padrão é `sunday`. Obrigatório se **type** for `weekly`. |
-|index|weekIndex|Especifica em qual instância dos dias permitidos especificados em **daysOfWeek** o evento ocorre, contados a partir da primeira instância do mês. Os valores possíveis são: `first`, `second`, `third`, `fourth`, `last`. O padrão é `first`. Opcional e usado se **type** for `relativeMonthly` ou `relativeYearly`. |
+|index|semanaIndex|Especifica em qual instância dos dias permitidos especificados no **daysOfWeek** o evento ocorre, contados a partir da primeira instância no mês. Os valores possíveis são: `first`, `second`, `third`, `fourth`, `last`. O padrão é `first`. Opcional e usado se **type** for `relativeMonthly` ou `relativeYearly`. |
 |interval|Int32|O número de unidades entre ocorrências, onde as unidades podem ser em dias, semanas, meses ou anos, dependendo de **type**. Obrigatório. |
 |month|Int32|O mês em que o evento ocorre.  É um número entre 1 e 12.|
-|type|recurrencePatternType|O tipo de padrão da recorrência: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly` e `relativeYearly`. Obrigatório.|
+|type|recorrênciaPatternType|O tipo de padrão da recorrência: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly` e `relativeYearly`. Obrigatório.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7eee91460c623be982cb316edae1c3c2f0734b07
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 89f990ab4692ec7fd4d6ce3b94ee4c4d4846c6c4
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442989"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547208"
 ---
 # <a name="invokeuserflowlistener-resource-type"></a>Tipo de recurso invokeUserFlowListener
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode criar [um invokeUserFlowListener](../resources/invokeuserflowlistener.md) para o evento onSignUpStart. Isso associa um aplicativo a um fluxo de usuário, que permite que identidades externas [se inscrevam](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) no aplicativo. Depois que um aplicativo é associado a um fluxo de usuários, os usuários que vão para esse aplicativo poderão iniciar um fluxo de inscrição que provisiona uma conta de convidado.
+Você pode criar [um invokeUserFlowListener](../resources/invokeuserflowlistener.md) para o evento onSignUpStart. Isso associa um aplicativo a um fluxo de usuário, que permite que identidades externas [se inscrevam](/azure/active-directory/external-identities/self-service-sign-up-overview) no aplicativo. Depois que um aplicativo é associado a um fluxo de usuários, os usuários que vão para esse aplicativo poderão iniciar um fluxo de inscrição que provisiona uma conta de convidado.
 
 Herda da autenticação de tipo base [abstrataListener](../resources/authenticationlistener.md).
 

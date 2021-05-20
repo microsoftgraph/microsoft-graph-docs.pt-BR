@@ -1,16 +1,16 @@
 ---
 title: Obter cloudPcDeviceImages
-description: Leia as propriedades e os relacionamentos de um objeto cloudPcDeviceImage.
+description: Leia as propriedades e as relações de um objeto cloudPcDeviceImage.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: dbc5849a368e4dc8601dd84b79237db3fe37f7ee
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1db3504d2915723d950ab6f52706429cedbd4765
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872783"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546851"
 ---
 # <a name="get-cloudpcdeviceimage"></a>Obter cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e os relacionamentos de um objeto [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) específico.
+Leia as propriedades e as relações de um objeto [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) específico.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Permissões
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,7 +44,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte `$select` ao parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte `$select` ao parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

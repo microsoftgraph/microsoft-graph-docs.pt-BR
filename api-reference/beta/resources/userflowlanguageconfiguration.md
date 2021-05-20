@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7945e31f699f22f25929e85b52e3990816d1c0b7
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: aa83d85725cbef54229cdc92246fb83888697166
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474355"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547145"
 ---
 # <a name="userflowlanguageconfiguration-resource-type"></a>Tipo de recurso userFlowLanguageConfiguration
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 A personalização do idioma de fluxo do usuário é um recurso que permite que um determinado fluxo de usuários suporte à personalização de vários idiomas, de todos os idiomas integrados a um idioma personalizado.
 
-Para Azure Active Directory fluxos de usuários [B2C,](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-language-customization#supported-languages)você pode aproveitar os idiomas integrados ou fornecer as personalizações de idioma para um idioma que não está integrado no momento por padrão. Para [Azure Active Directory fluxos de usuário](https://docs.microsoft.com/azure/active-directory/external-identities/user-flow-customize-language), você só pode aproveitar os idiomas integrados fornecidos pela Microsoft. Os fluxos de usuários para Azure Active Directory B2C e Azure Active Directory suportam personalizar o idioma e as cadeias de caracteres mostradas aos usuários à medida que passam pelas jornadas que você configura com seus fluxos de usuário.
+Para Azure Active Directory fluxos de usuários [B2C,](/azure/active-directory-b2c/user-flow-language-customization#supported-languages)você pode aproveitar os idiomas integrados ou fornecer as personalizações de idioma para um idioma que não está integrado no momento por padrão. Para [Azure Active Directory fluxos de usuário](/azure/active-directory/external-identities/user-flow-customize-language), você só pode aproveitar os idiomas integrados fornecidos pela Microsoft. Os fluxos de usuários para Azure Active Directory B2C e Azure Active Directory suportam personalizar o idioma e as cadeias de caracteres mostradas aos usuários à medida que passam pelas jornadas que você configura com seus fluxos de usuário.
 
 ## <a name="methods"></a>Métodos
 

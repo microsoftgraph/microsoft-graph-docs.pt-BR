@@ -4,12 +4,12 @@ description: Veja dicas de como aproveitar o Microsoft Graph Data Connect.
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 7a4672d90b43a983efb6e1d327e184e51e8f0f39
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: d9a87c629a80bc94c57e77bd0f2c0b1e7438c935
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289236"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547601"
 ---
 # <a name="tips-for-using-microsoft-graph-data-connect"></a>Dicas para uso do Microsoft Graph Data Connect
 
@@ -62,4 +62,4 @@ O campo `puser` também é útil para conjuntos de dados, como o conjunto de dad
 
 ## <a name="next-steps"></a>Próximos passos
 
-Consulte [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) para solicitações de recursos.
+Entre em contato no [fórum de ideias de Plataforma de Desenvolvedor Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) para solicitações de recursos.

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso servicePrincipal
-description: Representa uma instância de um aplicativo em um diretório. Herda do directoryObject.
+description: Representa uma instância de um aplicativo em um diretório. Herda de directoryObject.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 476c8ebe807a097c1d78c03a9df81319dee8c7bf
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 8ddcf2554dd090c8fc173fa8209d5be5ef3b2af6
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231295"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547194"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -43,7 +43,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Remover appRoleAssignedTo](../api/serviceprincipal-delete-approleassignedto.md) | Nenhum(a) | Remova uma atribuição de função de aplicativo dessa entidade de serviço de um usuário, grupo ou entidade de serviço.|
 |**Certificados e segredos**| | |
 |[Adicionar senha](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|Adicione uma senha forte a uma servicePrincipal.|
-|[Adicionar tokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)| Adicione um certificado autoassinado ao principal de serviço. Usado principalmente para configurar aplicativos SSO baseados em SAML na [galeria do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list).
+|[Adicionar tokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)| Adicione um certificado autoassinado ao principal de serviço. Usado principalmente para configurar aplicativos SSO baseados em SAML na [galeria do Azure Active Directory](/azure/active-directory/saas-apps/tutorial-list).
 |[Remover senha](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Remova uma senha de uma servicePrincipal.|
 |[Adicionar chave](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|Adicione uma credencial de chave a uma servicePrincipal.|
 |[Remover chave](../api/serviceprincipal-removekey.md)|Nenhum(a)|Remova uma credencial de chave de uma servicePrincipal.|
@@ -93,7 +93,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |appDescription|String|A descrição exposta pelo aplicativo associado.|
 |appDisplayName|String|O nome de exibição exposto pelo aplicativo associado.|
 |appId|String|O identificador exclusivo do aplicativo associado (sua propriedade **appId**).|
-|applicationTemplateId|String|Identificador exclusivo de applicationTemplate a partir do qual a servicePrincipal foi criado. Somente leitura.|
+|applicationTemplateId|String|Identificador exclusivo do applicationTemplate do qual o servicePrincipal foi criado. Somente leitura.|
 |appOwnerOrganizationId|Cadeia de caracteres|Contém a ID de locatário onde o aplicativo está registrado. Isso é aplicável apenas a entidades de serviço respaldadas por aplicativos.|
 |appRoleAssignmentRequired|Booliano|Especifica se os usuários ou outras entidade de serviço precisam receber uma atribuição de função de aplicativo para essa entidade de serviço antes que os usuários possam entrar ou os aplicativos possam obter tokens. O valor padrão é **falso**. Não anulável. |
 |appRoles|Coleção [appRole](approle.md)|As funções expostas pelo aplicativo que essa entidade de serviço representa. Para obter mais informações, confira definição da propriedade **appRoles** na entidade [aplicativo](application.md). Não anulável. |
@@ -120,8 +120,8 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|A coleção das configurações relacionadas ao logon único do SAML.|
 |servicePrincipalNames|Coleção de cadeias de caracteres|Contém a lista de **identificadoresUris**, copiados do [aplicativo](application.md) associado. É possível adicionar valores adicionais aos aplicativos híbridos. Esses valores podem ser usados ​​para identificar as permissões apresentadas por esse aplicativo no Azure AD. Por exemplo,<ul><li>Os aplicativos cliente podem especificar um URI de recurso com base nos valores dessa propriedade para adquirir um token de acesso, que é o URI retornado na declaração "aud".</li></ul><br>O operador é necessário para filtrar expressões nas propriedades multivalorizadas. Não pode ser anulado.|
 |servicePrincipalType|Cadeia de caracteres|Identifica se a entidade de serviço representa um aplicativo ou uma identidade gerenciada. Isso é definido pelo Azure AD internamente. Para uma entidade de serviço que representa um [aplicativo](./application.md), isso é definido como __Aplicativo__. Para obter uma entidade de serviço que represente uma [identidade gerenciada](/azure/active-directory/managed-identities-azure-resources/overview), essa configuração é definida como __ManagedIdentity__.|
-| signInAudience | String | Especifica as contas da Microsoft que são suportadas para o aplicativo atual. Somente leitura. <br><br>Os valores com suporte são:<ul><li>`AzureADMyOrg`: Usuários com uma conta Microsoft corporativa ou de estudante no locatário do Azure AD da minha organização (locatário único)</li><li>`AzureADMultipleOrgs`: Usuários com uma conta Microsoft corporativa ou de estudante em locatário Azure AD de qualquer organização (multi locatário)</li><li>`AzureADandPersonalMicrosoftAccount`: Usuários com uma conta Microsoft pessoal, corporativa ou de estudante no locatário do Azure AD de qualquer organização.</li><li>`PersonalMicrosoftAccount`: Somente os usuários com uma conta Microsoft pessoal.</li></ul> |
-|tags|Coleção de cadeias de caracteres| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar a entidade do serviço. Não anulável. |
+| signInAudience | String | Especifique as contas da Microsoft que têm suporte para o aplicativo atual. Somente leitura.<br><br>Os valores com suporte são:<ul><li>`AzureADMyOrg`: Usuários com uma conta Microsoft corporativa ou de estudante no locatário do Azure AD da minha organização (locatário único)</li><li>`AzureADMultipleOrgs`: Usuários com uma conta Microsoft corporativa ou de estudante em locatário Azure AD de qualquer organização (multi locatário)</li><li>`AzureADandPersonalMicrosoftAccount`: Usuários com uma conta Microsoft pessoal, corporativa ou de estudante no locatário do Azure AD de qualquer organização.</li><li>`PersonalMicrosoftAccount`: Somente os usuários com uma conta Microsoft pessoal.</li></ul> |
+|tags|Coleção de cadeias de caracteres| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar a entidade de serviço. Não anulável. |
 |tokenEncryptionKeyId|Cadeia de caracteres|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD emite tokens para este aplicativo criptografado usando a chave especificada por essa propriedade. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Especifica o distribuidor verificado do aplicativo que essa entidade de serviço representa.|
 
@@ -136,9 +136,9 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |delegatedPermissionClassifications|Conjunto de [delegatedPermissionClassification](delegatedpermissionclassification.md)|As classificações de permissão para permissões delegadas expostas pelo aplicativo que essa entidade de serviço representa.|
 |pontos de extremidade|coleção [ponto de extremidade](endpoint.md) |Pontos de extremidade disponíveis para descoberta. Serviços como o Sharepoint preenchem essa propriedade com pontos de extremidade do SharePoint específicos de locatário que outros aplicativos podem descobrir e usar em suas experiências.|
 |homeRealmDiscoveryPolicies|Conjunto [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)|O homeRealmDiscoveryPolicies atribuído a essa entidade de serviço.|
-|memberOf|Coleção [directoryObject](directoryobject.md)|Funções das quais esta entidade de serviços é um membro. Métodos HTTP: Somente leitura. Anulável.|
-|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) collection|A concessão de permissão delegada autoriza esta entidade de serviço a acessar a uma API em nome de um usuário conectado. Somente leitura. Anulável.|
-|ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são de propriedade desta entidade de serviços. Somente leitura. Anulável.|
+|memberOf|Coleção [directoryObject](directoryobject.md)|Funções das quais essa entidade de serviço é membro. Métodos HTTP: OBTER somente leitura. Anulável.|
+|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) collection|Concessões de permissão delegadas que autorizam essa entidade de serviço a acessar uma API em nome de um usuário conectado. Somente leitura. Anulável.|
+|ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que pertencem a essa entidade de serviço. Somente leitura. Anulável.|
 |owners|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são proprietários dessa servicePrincipal. Os proprietários são um conjunto de usuários não administradores ou servicePrincipal que têm permissão para modificar esse objeto. Somente leitura. Anulável.|
 |tokenIssuancePolicies|coleção [tokenIssuancePolicy](tokenissuancepolicy.md)|As tokenIssuancePolicies atribuídas a essa entidade de serviço.|
 |tokenLifetimePolicies|Conjunto [tokenLifetimePolicy](tokenlifetimepolicy.md)|O tokenLifetimePolicies atribuído a essa entidade de serviço.|

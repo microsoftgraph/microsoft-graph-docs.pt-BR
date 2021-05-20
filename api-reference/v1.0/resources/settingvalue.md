@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso SettingValue
+title: configuraçãoEvase tipo de
 description: Uma configuração representada por um par de nome/valor.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: ''
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4f565f598db7e69a48a924279a3ed228f2651755
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 171b08d4542af6900dcb6549527e956c4395c947
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009215"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547040"
 ---
-# <a name="settingvalue-resource-type"></a>tipo de recurso SettingValue
+# <a name="settingvalue-resource-type"></a>configuraçãoEvase tipo de
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Uma configuração representada por um par de nome/valor.
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|nome|String| Nome da configuração (conforme definido pelo [groupSettingTemplate](groupsettingtemplate.md)). |
+|nome|Cadeia de caracteres| Nome da configuração (definida pelo [grupoSettingTemplate](groupsettingtemplate.md)). |
 |value|Cadeia de caracteres| Valor da configuração. |
 
 ### <a name="json-representation"></a>Representação JSON

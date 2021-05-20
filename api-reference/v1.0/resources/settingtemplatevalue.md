@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso settingTemplateValue
-description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instanciada.
+title: configuraçãoSplateValue tipo de recurso
+description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão da configuração, se a configuração não for instantânea.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: ''
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c39762290577c6279a4ecb52bd832ac9c961dbdb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e53a8f07f325b023deea32e01fe217feeb35f49d
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009195"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547047"
 ---
-# <a name="settingtemplatevalue-resource-type"></a>tipo de recurso settingTemplateValue
+# <a name="settingtemplatevalue-resource-type"></a>configuraçãoSplateValue tipo de recurso
 
 Namespace: microsoft.graph
 
-Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instanciada.
+Representa uma definição de configuração de modelo individual, incluindo o valor padrão da configuração, se a configuração não for instantânea.
 
 ### <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|defaultValue|String| Valor padrão para a configuração. |
-|description|String| Descrição da configuração. |
-|nome|String| Nome da configuração. |
-|tipo|String| Tipo da configuração. |
+|defaultValue|Cadeia de caracteres| Valor padrão para a configuração. |
+|descrição|Cadeia de caracteres| Descrição da configuração. |
+|nome|Cadeia de caracteres| Nome da configuração. |
+|tipo|Cadeia de caracteres| Tipo de configuração. |
 
 ### <a name="json-representation"></a>Representação JSON
 

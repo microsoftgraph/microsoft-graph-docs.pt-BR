@@ -4,12 +4,12 @@ description: O Microsoft Graph usa um mecanismo de webhook para fornecer notific
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 12bbbc30d3735a7af487d6266b48e736769e994b
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 4da690a646c47ef857de860d36bde17a4ee26761
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387798"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547180"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Configurar notificações de alteração que incluam dados de recurso
 
@@ -17,7 +17,7 @@ O Microsoft Graph permite que os aplicativos inscrevam-se para alterar as notifi
 
 A inclusão de dados de recursos como parte das notificações de alteração exige que, para atender aos requisitos de acesso e segurança de dados, você implemente a seguinte lógica adicional : 
 
-- [Lide com](webhooks-outlook-authz.md#responding-to-reauthorizationrequired-notifications) as notificações especiais sobre o ciclo de vida da assinatura (visualização) para manter um fluxo ininterrupto de dados. O Microsoft Graph envia notificações sobre o ciclo de vida de tempos em tempos para exigir que um aplicativo seja autorizado novamente e para garantir que os problemas de acesso não ocorram inesperadamente, incluindo dados de recursos nas notificações de alterações.
+- [Lide com](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications)) as notificações especiais sobre o ciclo de vida da assinatura (visualização) para manter um fluxo ininterrupto de dados. O Microsoft Graph envia notificações sobre o ciclo de vida de tempos em tempos para exigir que um aplicativo seja autorizado novamente e para garantir que os problemas de acesso não ocorram inesperadamente, incluindo dados de recursos nas notificações de alterações.
 - [Confirme](#validating-the-authenticity-of-notifications) a autenticidade das notificações de alteração como originárias do Microsoft Graph.
 - [Forneça](#decrypting-resource-data-from-change-notifications) uma chave de criptografia pública e utilize uma chave privada para decriptar os dados de recursos recebidos por meio das notificações de alteração.
 
@@ -32,7 +32,7 @@ Geralmente, esse tipo de notificação de alteração inclui os seguintes dados 
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
-Atualmente, o Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) assim como os recursos de [presença](/graph/api/resources/presence?view=graph-rest-beta) (visualização) do Microsoft Teams oferecem suporte a notificações de alterações que incluem dados de recursos. Especificamente, você pode configurar uma assinatura que se aplique a uma das seguintes opções:
+Atualmente, o Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) assim como os recursos de [presença](/graph/api/resources/presence) (visualização) do Microsoft Teams oferecem suporte a notificações de alterações que incluem dados de recursos. Especificamente, você pode configurar uma assinatura que se aplique a uma das seguintes opções:
 
 - Mensagens novas ou alteradas em um canal específico do Teams: `/teams/{id}/channels/{id}/messages`
 - Mensagens novas ou alteradas em todos os canais do Teams em toda a organização (locatário): `/teams/getAllMessages`
@@ -42,7 +42,7 @@ Atualmente, o Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?vie
 
 Os recursos **chatMessage** e **presence** (visualização) suportam, incluindo todas as propriedades de uma instância modificada em uma notificação de alteração. Eles não suportam o retorno de apenas propriedades seletivas da instância. 
 
-Este artigo mostra um exemplo de assinatura para alterar as notificações de mensagens em um canal do Teams, com cada notificação de alteração incluindo todos os dados do recurso da instância **chatMessage** alterada. Para obter mais detalhes sobre assinaturas baseadas em **chatMessage**, confira [Obter notificações de alteração para mensagens de chat e canal](teams-changenotifications-chatmessage).
+Este artigo mostra um exemplo de assinatura para alterar as notificações de mensagens em um canal do Teams, com cada notificação de alteração incluindo todos os dados do recurso da instância **chatMessage** alterada. Para obter mais detalhes sobre assinaturas baseadas em **chatMessage**, confira [Obter notificações de alteração para mensagens de chat e canal](teams-changenotifications-chatmessage.md).
 
 ## <a name="creating-a-subscription"></a>Criar uma assinatura
 
@@ -350,7 +350,7 @@ Nesta seção:
     - Forneça o certificado na propriedade **encryptionCertificate** usando o conteúdo base64-encoded no qual o certificado foi exportado.
     - Forneça seu próprio identificador na propriedade **encryptionCertificateId**. 
   
-        Esse identificador permite corresponder seus certificados às notificações de alterações recebidas e recuperar certificados do seu repositório de certificados. O identificador pode ter no máximo 128 caracteres.
+        Esse identificador permite corresponder seus certificados às notificações de alterações recebidas e recuperar certificados do seu repositório de certificados. O identificador pode ter até 128 caracteres.
 
 4. Gerencie com segurança a chave privada com para que seu código de processamento de notificação de alteração acesse a chave privada para decriptar os dados do recurso.
 
@@ -363,7 +363,7 @@ Para minimizar o risco de uma chave privada ser comprometida, altere periodicame
 2. Atualize as assinaturas existentes com a nova chave de certificado.
 
     - Faça isso como parte da renovação da assinatura regular. 
-    - Ou enumere todas as assinaturas e forneça a chave. Use a [operação PATCH na assinatura](/graph/api/subscription-update?view=graph-rest-1.0) e atualize as propriedades **encryptionCertificate** e **encryptionCertificateId**.
+    - Ou enumere todas as assinaturas e forneça a chave. Use a [operação PATCH na assinatura](/graph/api/subscription-update) e atualize as propriedades **encryptionCertificate** e **encryptionCertificateId**.
 
 3. Lembre-se do seguinte:
     - Por um período de tempo, o certificado antigo ainda pode ser usado para criptografia. Seu aplicativo deve ter acesso a certificados novos e antigos para poder descriptografar o conteúdo.
@@ -580,7 +580,7 @@ decryptedPayload += decipher.final('utf8');
 ## <a name="see-also"></a>Confira também
 
 - [Configurar notificações para alterações nos dados de usuário](webhooks.md)
-- [Tipo de recurso de assinatura](/graph/api/resources/subscription?view=graph-rest-beta)
-- [Obter assinatura](/graph/api/subscription-get?view=graph-rest-1.0)
-- [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [Atualizar assinatura](/graph/api/subscription-update?view=graph-rest-1.0)
+- [Tipo de recurso de assinatura](/graph/api/resources/subscription)
+- [Obter assinatura](/graph/api/subscription-get)
+- [Criar assinatura](/graph/api/subscription-post-subscriptions)
+- [Atualizar assinatura](/graph/api/subscription-update)

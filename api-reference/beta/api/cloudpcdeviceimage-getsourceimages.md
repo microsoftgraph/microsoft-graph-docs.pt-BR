@@ -1,16 +1,16 @@
 ---
 title: 'cloudPcDeviceImage: getSourceImages'
-description: Exibir uma lista de todos os recursos de imagem gerenciada de suas assinaturas do Azure. Essas imagens de origem podem ser carregadas e usadas em PCs na nuvem.
+description: Exibir uma lista de todos os recursos de imagem gerenciados de você assinaturas do Azure. Essas imagens de origem podem ser carregadas e usadas em PCs de nuvem.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 1ddd7fdef827328f6f72b52af5a992e9f0d69653
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 338f05f7ae2645c76b9ddb34a0d1af6f29beb35f
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872776"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546844"
 ---
 # <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage: getSourceImages
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter [objetos cloudPcSourceDeviceImage.](../resources/cloudpcsourcedeviceimage.md) Exibir uma lista de todos os recursos de imagem gerenciada de suas assinaturas do Azure Active Directory.
+Obter [objetos cloudPcSourceDeviceImage.](../resources/cloudpcsourcedeviceimage.md) Exibir uma lista de todos os recursos de imagem gerenciados de suas Azure Active Directory assinaturas.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Permissões
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedida, esta função retorna um código de resposta e uma coleção `200 OK` [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um código de resposta e uma coleção `200 OK` [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

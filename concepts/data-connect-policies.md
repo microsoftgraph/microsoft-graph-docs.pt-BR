@@ -4,12 +4,12 @@ description: Descreve quais políticas são compatíveis e como atribuir acesso 
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: c6689a6a5d359dc03b7d68862cb889c2a7ba2b9a
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: c9529c500ff2e086a3a1185a56b9db397f0ace49
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796588"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547615"
 ---
 # <a name="microsoft-graph-data-connect-policies-and-licensing"></a>Políticas e licença do Microsoft Graph Data Connect
 
@@ -23,7 +23,7 @@ As seguintes políticas do Azure são compatíveis com um desenvolvedor de aplic
 
 Ao selecionar qualquer uma das políticas durante a publicação do Azure Marketplace, o status de conformidade da política será marcado e aplicado a todas as instalações do seu aplicativo. Todas as políticas selecionadas compatíveis serão exibidas para os aprovadores de dados como parte da solicitação de dados. Qualquer violação de conformidade da política causaria falha no pipeline e interrupção da extração de dados.
 
-Se deseja solicitar suporte para outras políticas, informe em [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581).
+Se você deseja solicitar suporte para políticas adicionais, informe-nos no fórum de idéias da [Plataforma de Desenvolvedor do Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 ## <a name="licensing"></a>Licenças
 
@@ -36,4 +36,4 @@ Enquanto esse novo recurso de faturamento está versão prévia, a taxa é de US
 Os objetos para diretório de objetos de não serão carregados, incluindo: BasicDataSet_v0.User, BasicDataSet_v0.MailboxSettings, BasicDataSet_v0.Manager, e BasicDataSet_v0.DirectReport.
 
 ## <a name="next-steps"></a>Próximas Etapas
-Se você quiser solicitar suporte para políticas adicionais ou conjuntos de dados, avise-nos no [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581). Para saber mais sobre Workplace Analytics, inclusive sobre como comprar, visite a [página de produto do Workplace Analytics](https://products.office.com/business/workplace-analytics).
+Se você deseja solicitar suporte para políticas ou conjuntos de dados adicionais, informe-nos no fórum de idéias da [Plataforma de Desenvolvedor do Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). Para saber mais sobre Workplace Analytics, inclusive sobre como comprar, visite a [página de produto do Workplace Analytics](https://products.office.com/business/workplace-analytics).

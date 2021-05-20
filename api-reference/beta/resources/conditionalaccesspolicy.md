@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso conditionalAccessPolicy
-description: Representa uma política de acesso condicional do Azure Active Directory. As políticas de acesso condicional são regras personalizadas que definem um cenário de acesso.
+description: Representa uma Azure Active Directory de acesso condicional. As políticas de acesso condicional são regras personalizadas que definem um cenário de acesso.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 578d7cfcab984922d0c98f7cc8971daf9b10a2fa
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2c64d0dc0c531437f000e9c2e36d1af51ddf204d
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958812"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547173"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>Tipo de recurso conditionalAccessPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma política de acesso condicional do Azure Active Directory. As políticas de acesso condicional são regras personalizadas que definem um cenário de acesso. Para obter mais informações, consulte [a documentação de acesso condicional](/azure/active-directory/conditional-access/).
+Representa uma Azure Active Directory de acesso condicional. As políticas de acesso condicional são regras personalizadas que definem um cenário de acesso. Para obter mais informações, consulte [a documentação de acesso condicional](/azure/active-directory/conditional-access/).
 
 ## <a name="methods"></a>Métodos
 
@@ -36,13 +36,13 @@ Representa uma política de acesso condicional do Azure Active Directory. As pol
 |:-------------|:------------|:------------|
 |conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Especifica as regras que devem ser atendidas para que a política seja aplicada. Obrigatório. |
 |createdDateTime|DateTimeOffset| O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Readonly. |
-|description|Cadeia de caracteres| Não usado. |
-|displayName|Cadeia de caracteres| Especifica um nome de exibição para o objeto conditionalAccessPolicy. |
+|descrição|String| Não usado. |
+|displayName|String| Especifica um nome de exibição para o objeto conditionalAccessPolicy. |
 |grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| Especifica os controles de concessão que devem ser cumpridos para passar a política. |
-|id|Cadeia de caracteres| Especifica o identificador de um objeto conditionalAccessPolicy. Somente leitura.|
+|id|String| Especifica o identificador de um objeto conditionalAccessPolicy. Somente leitura.|
 |modifiedDateTime| DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Readonly. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Especifica os controles de sessão que são imposto após a assinatura. |
-|estado|conditionalAccessPolicyState| Especifica o estado do objeto conditionalAccessPolicy. Os valores possíveis são: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Obrigatório. |
+|state|conditionalAccessPolicyState| Especifica o estado do objeto conditionalAccessPolicy. Os valores possíveis são: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 
@@ -61,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
     "grantControls"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessPolicy",
+  "baseType":"microsoft.graph.entity",
   "keyProperty": "id"
 }-->
 

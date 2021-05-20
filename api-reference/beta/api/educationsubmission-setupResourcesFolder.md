@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f4b8e78355323f0d0ffd988a3ead68de29eae0df
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: d290f47ccc1dcbfaa5aeae85ed28071e0a15399e
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475405"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546886"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission: setUpResourcesFolder
 
@@ -19,6 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Acionar a criação da pasta de recursos SharePoint onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados para um determinado envio.
+
 Observe que os arquivos devem estar localizados nesta pasta para serem adicionados como recursos. Somente um aluno na classe pode determinar quais arquivos carregar em uma determinada pasta de recursos de nível de envio. 
 
 ## <a name="permissions"></a>Permissões
@@ -26,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP

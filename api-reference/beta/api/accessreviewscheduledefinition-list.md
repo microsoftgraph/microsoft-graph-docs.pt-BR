@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f3624cb364513f9015ac0dad3f3bbb978718e930
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 702f793a01d68d1a71d786c62de35a0e24c12b80
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048348"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579624"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>Listar accessReviewScheduleDefinition
 
@@ -18,32 +18,56 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os [objetos accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Uma lista de zero ou mais objetos accessReviewScheduleDefinition são retornados, incluindo todas as suas propriedades aninhadas, para cada série de revisão de acesso criada. Isso não inclui accessReviewInstances associado.
+Recupere os [objetos accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Uma lista de zero ou mais objetos accessReviewScheduleDefinition são retornados, incluindo todas as suas propriedades aninhadas, para cada série de revisão de acesso criada. Isso não inclui os objetos accessReviewInstance associados.
 
 >[!NOTE]
->Se muitos **accessReviewScheduleDefinitions** são retornados, para melhorar a eficiência e evitar tempos-extra, recupere o conjunto de resultados em páginas, incluindo o parâmetro de consulta $top com um tamanho de página de no máximo 100 e o parâmetro $skip=0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata.nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata.nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito na pa paja do Microsoft Graph dados em seu aplicativo.
->
->Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph paginará automaticamente os resultados em 100 resultados por página.
-
+>O tamanho padrão da página para essa API é de 100 objetos accessReviewScheduleDefinition. Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- O usuário interno também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
+ O usuário interno também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso. Consulte access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks).
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Para listar todos os seus accessReviewScheduleDefinitions:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/accessReviews/definitions
 ```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte `$select` aos `$top` parâmetros de consulta , , e OData para ajudar a `$skip` personalizar a `$filter` resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+### <a name="use-the-filter-query-parameter"></a>Usar o parâmetro $filter de consulta
+O parâmetro de consulta com o operador é suportado na propriedade `$filter` `contains` **scope** accessReviewScheduleDefinition. Use o seguinte formato para a solicitação:
+
+```http
+GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
+```
+
+O valor de `{object}` pode ser um dos seguintes:
+
+|Valor|Descrição|
+|:---     |:---       |
+|`/groups`  |Listar todos os accessReviewScheduleDefinition em grupos individuais (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
+|`/groups/{group id}`  |Listar todos os accessReviewScheduleDefinition em um grupo específico (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
+|`./members`  |Listar todos os accessReviewScheduleDefinition com escopo para todos os grupos Microsoft 365 com usuários convidados.|
+|`accessPackageAssignments`  |Listar todos os accessReviewScheduleDefinition em um pacote de acesso.|
+|`roleAssignmentScheduleInstances`  |Listar todos os accessReviewScheduleDefinition para entidades de serviço atribuídas a uma função privilegiada.|
+
+O parâmetro de consulta não é suportado `$filter` em **accessReviewInactiveUserQueryScope** ou **principalResourceMembershipScope**.
+
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-Nenhum
+Nenhum.
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não fornecer um corpo de solicitação.
@@ -52,9 +76,10 @@ Não fornecer um corpo de solicitação.
 Se tiver êxito, este método retornará um código de resposta e uma `200 OK` matriz [de objetos accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão de acesso em um locatário.
 
+### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a>Exemplo 1: listar as primeiras 100 definições de revisão de acesso
+
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -82,9 +107,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ---
 
----
-
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -97,21 +120,12 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions",
     "@odata.count": 1,
     "value": [
         {
             "id": "98dcebed-c7f6-46f4-bcf3-4a3fccdb3e2a",
             "displayName": "Access Review",
-            "createdDateTime": "2020-09-09T14:27:59Z",
-            "lastModifiedDateTime": "2020-09-11T12:02:50Z",
-            "status": "InProgress",
-            "descriptionForAdmins": "",
-            "descriptionForReviewers": "",
-            "createdBy": {
-                "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@contoso.com"
-            },
             "scope": {
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",
                 "queryType": "MicrosoftGraph"
@@ -159,6 +173,99 @@ Content-type: application/json
     ]
 }
 ```
+
+
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Exemplo 2: Recuperar todas as definições de revisão de acesso com escopo para todos os grupos Microsoft 365 em um locatário
+
+#### <a name="request"></a>Solicitação
+O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão de acesso com escopo para todos os grupos Microsoft 365 em um locatário.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_accessReviewScheduleDefinition_allgroups"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com//beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
+```
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition",
+  "isCollection": "true"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions",
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "cc701697-762c-439a-81f5-f58d680fde76",
+            "displayName": "Review guest access across Microsoft 365 groups",
+            "status": "InProgress",
+            "scope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+                "queryType": "MicrosoftGraph"
+            },
+            "instanceEnumerationScope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true",
+                "queryType": "MicrosoftGraph"
+            },
+            "reviewers": [
+                {
+                    "query": "./manager",
+                    "queryType": "MicrosoftGraph",
+                    "queryRoot": "decisions"
+                }
+            ],
+            "settings": {
+                "mailNotificationsEnabled": true,
+                "reminderNotificationsEnabled": true,
+                "justificationRequiredOnApproval": true,
+                "defaultDecisionEnabled": true,
+                "defaultDecision": "Recommendation",
+                "instanceDurationInDays": 25,
+                "autoApplyDecisionsEnabled": true,
+                "recommendationsEnabled": true,
+                "recurrence": {
+                    "pattern": {
+                        "type": "absoluteMonthly",
+                        "interval": 3,
+                        "month": 0,
+                        "dayOfMonth": 0,
+                        "daysOfWeek": [],
+                        "firstDayOfWeek": "sunday",
+                        "index": "first"
+                    },
+                    "range": {
+                        "type": "numbered",
+                        "numberOfOccurrences": 0,
+                        "recurrenceTimeZone": null,
+                        "startDate": "2021-04-27",
+                        "endDate": "9999-12-31"
+                    }
+                },
+                "applyActions": [
+                    {
+                        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
+                    }
+                ]
+            },
+            "instances@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('cc701697-762c-439a-81f5-f58d680fde76')/instances",
+            "instances": []
+        }
+    ]
+}
+
+```
+
 
 ## <a name="see-also"></a>Confira também
 

@@ -1,38 +1,38 @@
 ---
-title: Tipo de recurso licenseDetails
+title: licenciamentoDeseto de recurso
 description: Contém informações sobre uma licença atribuída a um usuário.
 localization_priority: Normal
 author: jpettere
-ms.prod: ''
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 64bc8532e399be729c85200ca66b2f6e99b95084
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 4e23dfcd15dc2b05a9d1c7356a532e6faf487662
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722227"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547187"
 ---
-# <a name="licensedetails-resource-type"></a>Tipo de recurso licenseDetails
+# <a name="licensedetails-resource-type"></a>licenciamentoDeseto de recurso
 
 Namespace: microsoft.graph
 
 Contém informações sobre uma licença atribuída a um usuário.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar licenseDetails](../api/user-list-licensedetails.md) | Coleção licenseDetails |Recupere uma lista de objetos licenseDetails para um usuário.|
+|[Listar licenseDetails](../api/user-list-licensedetails.md) | Coleção licenseDetails |Recuperar uma lista de objetos de licençade detalhes para um usuário.|
 
 <!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres| O identificador exclusivo do objeto de detalhes da licença. Somente leitura, Chave, Não anulada |
-|servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos de serviço atribuídos à licença. Somente leitura, Não anulada |
-|skuId|Guid| Identificador exclusivo (GUID) para a SKU de serviço. Igual à propriedade skuId no objeto [SubscribedSku](subscribedsku.md) relacionado. Somente leitura |
-|skuPartNumber|Cadeia de caracteres| Nome de exibição SKU exclusivo. Igual ao skuPartNumber no objeto [SubscribedSku](subscribedsku.md) relacionado; por exemplo: "AAD_Premium". Somente leitura |
+|id|Cadeia de caracteres| O identificador exclusivo para o objeto de detalhe de licença. Somente leitura, chave, não é nulo |
+|planos de serviço|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos de serviço atribuídos à licença. Somente leitura, não é nulo |
+|skuId|Guid| Identificador exclusivo (GUID) para o serviço SKU. Igual à propriedade skuId no objeto [AssinadSku](subscribedsku.md) relacionado. Somente leitura |
+|skuPartNumber|Cadeia de caracteres| Nome de exibição SKU exclusivo. Igual ao skuPartNumber no objeto [AssinadSku](subscribedsku.md) relacionado; por exemplo: "AAD_Premium". Somente leitura |
 
 ## <a name="relationships"></a>Relações
 Nenhum
