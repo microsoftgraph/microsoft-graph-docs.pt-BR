@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: a460f64a75b7326cd6a3e4b7e5445129592111e5
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: 4ceb5a98fd330efa3b5e9b8b62d32598b5972984
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51030985"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547580"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -25,7 +25,7 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário.
 - Uma [list][] em um [site][] do SharePoint.
 - Uma [message][], [event][] ou [contact][] no Outlook.
-- Uma [printer][] (quando um trabalho de impressão para a impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [PrintTaskDefinition][] em Impressão Universal. Para saber mais, confira [Inscrever-se para alterar notificações de APIs de impressão na nuvem](https://docs.microsoft.com/pt-BR/graph/universal-print-webhook-notifications).
+- Uma [printer][] (quando um trabalho de impressão para a impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [PrintTaskDefinition][] em Impressão Universal. Para saber mais, confira [Inscrever-se para alterar notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
 - Um [user][] ou [group][] no Azure Active Directory.
 
 Consulte [usar o Microsoft Graph API para obter notificações de alteração](webhooks.md) dos possíveis valores de caminho de recurso de cada recurso suportado.
@@ -51,14 +51,14 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Obrigatório. Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. | Todos |
 | clientState | string | Opcional. Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação de alteração. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço pela comparação do valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida contendo cada notificação de alteração. | Todos |
 | id | string | Identificador exclusivo da assinatura. Somente leitura. | Todos |
-| ApplicationId | cadeia de caracteres | Identificador do aplicativo usado para criar a assinatura. Somente leitura. | Todos |
+| ApplicationId | cadeia de caracteres | Identificador do aplicativo utilizado para criar a assinatura. Somente leitura. | Todos |
 | creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Somente leitura. | Todos |
 | includeResourceData | Booleano | Quando definido como `true`, alterar as notificações [inclui dados de recurso](/graph/webhooks-with-resource-data) (como o conteúdo de uma mensagem de bate-papo). Opcional. | Todos |
 | encryptionCertificate | cadeia de caracteres | Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar os dados de recursos nas notificações de alteração. Opcional. Obrigatório quando **includeResourceData** é verdadeiro. | Todos |
-| encryptionCertificateId | cadeia de caracteres | Um identificador personalizado fornecido pelo aplicativo para ajudar a identificar o certificado necessário para descriptografar os dados do recurso. Opcional.| Todos |
+| encryptionCertificateId | cadeia de caracteres | Um aplicativo personalizado forneceu um identificador para ajudar a identificar o certificado necessário para decodificar os dados dos recursos. Opcional.| Todos |
 | latestSupportedTlsVersion | Cadeia de caracteres | Especifica a versão mais recente do protocolo TLS que o ponto de extremidade, especificado por **notificationUrl**, é compatível. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Para os assinantes cujo ponto de extremidade de notificação suporta uma versão menor que a versão recomendada atualmente (TLS 1.2), especificar essa propriedade por uma [linha do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) definida, permite o uso temporário da versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade pela linha do tempo resultaria em uma falha nas operações da assinatura. </br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. | Todos |
 | notificationContentType | cadeia de caracteres | Tipo de conteúdo desejado para as notificações de alteração do MS Graph para os tipos de recursos com suporte. O tipo de conteúdo padrão é o tipo de conteúdo "aplicativo/json". | Todos |
-| notificationQueryOptions | cadeia de caracteres | Opções de Consulta OData para especificar o valor do recurso de destino. Os clientes recebem notificações quando o recurso atinge ao estado correspondente às opções de consulta aqui fornecidas. Com essa nova propriedade na carga de criação de assinatura, juntamente com todas as propriedades existentes, os Webhooks enviarão notificações sempre que um recurso atingir o estado desejado mencionado na propriedade notificationQueryOptions. Por exemplo, quando o trabalho de impressão for concluído, quando o valor de uma propriedade `isFetchable` do recurso de impressão se tornar verdadeiro etc. | [Serviço de Impressão Universal](https://docs.microsoft.com/pt-BR/graph/universal-print-webhook-notifications) |
+| notificationQueryOptions | cadeia de caracteres | Opções de Consulta OData para especificar o valor do recurso de destino. Os clientes recebem notificações quando o recurso atinge ao estado correspondente às opções de consulta aqui fornecidas. Com essa nova propriedade na carga de criação de assinatura, juntamente com todas as propriedades existentes, os Webhooks enviarão notificações sempre que um recurso atingir o estado desejado mencionado na propriedade notificationQueryOptions. Por exemplo, quando o trabalho de impressão for concluído, quando o valor de uma propriedade `isFetchable` do recurso de impressão se tornar verdadeiro etc. | [Serviço de Impressão Universal](/graph/universal-print-webhook-notifications) |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>Tamanho máximo da assinatura por tipo de recurso
 
@@ -149,6 +149,6 @@ Veja a seguir uma representação JSON do recurso.
   "description": "subscription resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath&quot;: &quot;"
 }-->
 
