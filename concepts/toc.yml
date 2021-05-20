@@ -534,6 +534,8 @@ items:
           - name: Azure AD Graph.
             displayName: 'Migration, Azure AD Graph'
             items:
+              - name: Visão geral
+                href: migrate-azure-ad-graph-overview.md
               - name: Lista de verificação para migração de aplicativos
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: '1: Examinar as diferenças'
@@ -604,6 +606,8 @@ items:
                 href: toolkit/get-started/overview.md
               - name: Kit de ferramentas para o React
                 href: toolkit/get-started/mgt-react.md
+              - name: Kit de ferramentas para SPFx
+                href: toolkit/get-started/mgt-spfx.md
           - name: Desenvolver seu primeiro aplicativo
             items:
               - name: Registrar um aplicativo no Azure Active Directory
@@ -626,6 +630,8 @@ items:
                 href: toolkit/providers/providers.md
               - name: Provedor MSAL
                 href: toolkit/providers/msal.md
+              - name: Provedor MSAL 2
+                href: toolkit/providers/msal2.md
               - name: Provedor do SharePoint
                 href: toolkit/providers/sharepoint.md
               - name: Provedor do Microsoft Teams
@@ -658,6 +664,10 @@ items:
                 href: toolkit/components/tasks.md
               - name: Tarefas pendentes
                 href: toolkit/components/todo.md
+              - name: Arquivo
+                href: toolkit/components/file.md
+              - name: Lista de arquivos
+                href: toolkit/components/file-list.md
           - name: Personalizar componentes
             items:
               - name: Componentes de estilização

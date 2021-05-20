@@ -1,6 +1,6 @@
 ---
-title: Upload arquivos grandes usando os SDKs da Microsoft Graph
-description: Fornece orientação para o upload de arquivos grandes usando os SDKs Graph da Microsoft.
+title: Upload arquivos grandes usando o Microsoft Graph SDKs
+description: Fornece diretrizes para carregar arquivos grandes usando o Microsoft Graph SDKs.
 localization_priority: Normal
 author: DarrelMiller
 ms.openlocfilehash: b1a87c142f70f81b9e726727c6570f2cbce0f357
@@ -10,11 +10,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 05/20/2021
 ms.locfileid: "52579701"
 ---
-# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a><span data-ttu-id="7f037-103">Upload arquivos grandes usando os SDKs da Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="7f037-103">Upload large files using the Microsoft Graph SDKs</span></span>
+# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a><span data-ttu-id="e46ff-103">Upload arquivos grandes usando o Microsoft Graph SDKs</span><span class="sxs-lookup"><span data-stu-id="e46ff-103">Upload large files using the Microsoft Graph SDKs</span></span>
 
-<span data-ttu-id="7f037-104">Várias entidades da Microsoft Graph [suportam uploads de arquivos resumivelsos](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) para facilitar o upload de arquivos grandes.</span><span class="sxs-lookup"><span data-stu-id="7f037-104">A number of entities in Microsoft Graph support [resumable file uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) to make it easier to upload large files.</span></span> <span data-ttu-id="7f037-105">Em vez de tentar carregar todo o arquivo em uma única solicitação, o arquivo é fatiado em pedaços menores e uma solicitação é usada para carregar uma única fatia.</span><span class="sxs-lookup"><span data-stu-id="7f037-105">Instead of trying to upload the entire file in a single request, the file is sliced into smaller pieces and a request is used to upload a single slice.</span></span> <span data-ttu-id="7f037-106">Para simplificar esse processo, os SDKs de Graph da Microsoft implementam uma grande tarefa de upload de arquivos que gerencia o upload das fatias.</span><span class="sxs-lookup"><span data-stu-id="7f037-106">In order to simplify this process, the Microsoft Graph SDKs implement a large file upload task that manages the uploading of the slices.</span></span>
+<span data-ttu-id="e46ff-104">Várias entidades na Microsoft Graph suportam carregamentos de arquivo [resumáveis](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) para facilitar o carregamento de arquivos grandes.</span><span class="sxs-lookup"><span data-stu-id="e46ff-104">A number of entities in Microsoft Graph support [resumable file uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) to make it easier to upload large files.</span></span> <span data-ttu-id="e46ff-105">Em vez de tentar carregar todo o arquivo em uma única solicitação, o arquivo é fatiado em partes menores e uma solicitação é usada para carregar uma única fatia.</span><span class="sxs-lookup"><span data-stu-id="e46ff-105">Instead of trying to upload the entire file in a single request, the file is sliced into smaller pieces and a request is used to upload a single slice.</span></span> <span data-ttu-id="e46ff-106">Para simplificar esse processo, os SDKs do Microsoft Graph implementam uma tarefa de carregamento de arquivo grande que gerencia o carregamento das fatias.</span><span class="sxs-lookup"><span data-stu-id="e46ff-106">In order to simplify this process, the Microsoft Graph SDKs implement a large file upload task that manages the uploading of the slices.</span></span>
 
-## <a name="c"></a>[<span data-ttu-id="7f037-107">C#</span><span class="sxs-lookup"><span data-stu-id="7f037-107">C#</span></span>](#tab/csharp)
+## <a name="c"></a>[<span data-ttu-id="e46ff-107">C#</span><span class="sxs-lookup"><span data-stu-id="e46ff-107">C#</span></span>](#tab/csharp)
 
 ```csharp
 using (var fileStream = System.IO.File.OpenRead(filePath))
@@ -71,7 +71,7 @@ using (var fileStream = System.IO.File.OpenRead(filePath))
 }
 ```
 
-## <a name="typescript"></a>[<span data-ttu-id="7f037-108">TypeScript</span><span class="sxs-lookup"><span data-stu-id="7f037-108">TypeScript</span></span>](#tab/typescript)
+## <a name="typescript"></a>[<span data-ttu-id="e46ff-108">TypeScript</span><span class="sxs-lookup"><span data-stu-id="e46ff-108">TypeScript</span></span>](#tab/typescript)
 
 ```typescript
 const options: any = {
@@ -97,7 +97,7 @@ const options: any = {
 }
 ```
 
-## <a name="java"></a>[<span data-ttu-id="7f037-109">Java</span><span class="sxs-lookup"><span data-stu-id="7f037-109">Java</span></span>](#tab/java)
+## <a name="java"></a>[<span data-ttu-id="e46ff-109">Java</span><span class="sxs-lookup"><span data-stu-id="e46ff-109">Java</span></span>](#tab/java)
 
 ```java
 // Get an input stream for the file
@@ -142,27 +142,27 @@ largeFileUploadTask.upload(0, null, callback);
 
 ---
 
-## <a name="resuming-a-file-upload"></a><span data-ttu-id="7f037-110">Retomando um upload de arquivo</span><span class="sxs-lookup"><span data-stu-id="7f037-110">Resuming a file upload</span></span>
+## <a name="resuming-a-file-upload"></a><span data-ttu-id="e46ff-110">Retomar um carregamento de arquivo</span><span class="sxs-lookup"><span data-stu-id="e46ff-110">Resuming a file upload</span></span>
 
-<span data-ttu-id="7f037-111">Os SDKs de Graph microsoft [suportam a retomada de uploads em andamento](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload).</span><span class="sxs-lookup"><span data-stu-id="7f037-111">The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload).</span></span> <span data-ttu-id="7f037-112">Se o aplicativo encontrar uma interrupção de conexão ou um status HTTP de 5.x.x.x durante o upload, você poderá retomar o upload.</span><span class="sxs-lookup"><span data-stu-id="7f037-112">If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload.</span></span>
+<span data-ttu-id="e46ff-111">Os SDKs Graph Microsoft suportam [a retomada de carregamentos em andamento.](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload)</span><span class="sxs-lookup"><span data-stu-id="e46ff-111">The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload).</span></span> <span data-ttu-id="e46ff-112">Se o aplicativo encontrar uma interrupção de conexão ou um status HTTP 5.x.x durante o carregamento, você poderá retomar o carregamento.</span><span class="sxs-lookup"><span data-stu-id="e46ff-112">If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload.</span></span>
 
 <!-- markdownlint-disable MD024 -->
-### <a name="c"></a>[<span data-ttu-id="7f037-113">C#</span><span class="sxs-lookup"><span data-stu-id="7f037-113">C#</span></span>](#tab/csharp)
+### <a name="c"></a>[<span data-ttu-id="e46ff-113">C#</span><span class="sxs-lookup"><span data-stu-id="e46ff-113">C#</span></span>](#tab/csharp)
 
 ```csharp
 fileUploadTask.ResumeAsync(progress);
 ```
 
-### <a name="typescript"></a>[<span data-ttu-id="7f037-114">TypeScript</span><span class="sxs-lookup"><span data-stu-id="7f037-114">TypeScript</span></span>](#tab/typescript)
+### <a name="typescript"></a>[<span data-ttu-id="e46ff-114">TypeScript</span><span class="sxs-lookup"><span data-stu-id="e46ff-114">TypeScript</span></span>](#tab/typescript)
 
 ```typescript
 const resumedFile: DriveItem = await uploadTask.resume();
 ```
 
-### <a name="java"></a>[<span data-ttu-id="7f037-115">Java</span><span class="sxs-lookup"><span data-stu-id="7f037-115">Java</span></span>](#tab/java)
+### <a name="java"></a>[<span data-ttu-id="e46ff-115">Java</span><span class="sxs-lookup"><span data-stu-id="e46ff-115">Java</span></span>](#tab/java)
 
 > [!NOTE]
-> <span data-ttu-id="7f037-116">O Java SDK atualmente não suporta a retomada de downloads em andamento.</span><span class="sxs-lookup"><span data-stu-id="7f037-116">The Java SDK does not currently support resuming in-progress downloads.</span></span>
+> <span data-ttu-id="e46ff-116">O Java SDK atualmente não dá suporte à retomada de downloads em andamento.</span><span class="sxs-lookup"><span data-stu-id="e46ff-116">The Java SDK does not currently support resuming in-progress downloads.</span></span>
 
 ---
 <!-- markdownlint-enable MD024 -->
