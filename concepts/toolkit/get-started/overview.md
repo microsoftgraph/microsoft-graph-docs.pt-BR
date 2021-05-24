@@ -3,12 +3,12 @@ title: Iniciando o microsoft Graph Toolkit
 description: Começar a usar o microsoft Graph Toolkit em seu aplicativo.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: e84350a7835cac7914f5238110f74b3383047e13
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 68260cf83f0e9bec34d2c3b23911d04c53143e76
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579589"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629151"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Iniciando o microsoft Graph Toolkit
 
@@ -104,12 +104,6 @@ O pacote contém todos os componentes de React gerados automaticamente e tem [`@
 <b>@microsoft/mgt-spfx</b>
 
 O pacote contém uma Estrutura do SharePoint que é necessária para usar o [`@microsoft/mgt-spfx`](./mgt-spfx.md) Microsoft Graph Toolkit em Estrutura do SharePoint soluções.
-
-## <a name="polyfills"></a>Polyfills
-
-Se você estiver usando os módulos ES6 do pacote npm e estiver direcionando um navegador, como [o IE11,](https://caniuse.com/#search=components) que não dá suporte a componentes web de forma nativa, você precisará incluir polyfills em seu projeto, pois eles não são incluídos automaticamente. Polyfills ajudam a preencher os recursos ausentes do navegador em navegadores que ainda estão em processo de atualização para dar suporte aos padrões do Componente Web. Para obter instruções e saber mais, consulte [polyfills documentation](https://www.webcomponents.org/polyfills). 
-
-Os polyfills já estão incluídos se você estiver usando o Toolkit por meio do script mgt-loader.
 
 ## <a name="next-steps"></a>Próximas etapas
 Agora você está pronto para começar a desenvolver com o microsoft Graph Toolkit! Os guias a seguir estão disponíveis para ajudá-lo a começar:

@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3c0a1309ae67a2f4aa3f066deb5fe8adeec84119
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: f266276fae151bd8cc31455c4fd69eab193dd440
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474103"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629218"
 ---
 # <a name="create-accessreviewhistorydefinition"></a>Criar accessReviewHistoryDefinition
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|AccessReview.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|AccessReview.ReadWrite.All|
 
 O usuário de entrada também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso para recuperar todos os dados.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-root.md)
 
@@ -57,23 +57,28 @@ A tabela a seguir mostra as propriedades necessárias usadas para criar [um acce
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName | String  | Nome da coleção de dados do histórico de revisão de acesso. Obrigatório. |
+|displayName | Cadeia de caracteres  | Nome da coleção de dados do histórico de revisão de acesso. Obrigatório. |
 |reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, as avaliações que começam em ou após essa data serão incluídas nos dados de histórico buscados. Obrigatório.  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, as avaliações que começam em ou antes dessa data serão incluídas nos dados de histórico buscados. Obrigatório.  |
-|escopos|coleção microsoft.graph.accessReviewQueryScope| Usado para filtrar quais avaliações estão incluídas nos dados de histórico buscados. Busca avaliações cujo escopo corresponde a esse escopo fornecido. Obrigatório.  |
+|escopos|[Coleção accessReviewQueryScope](../resources/accessreviewqueryscope.md)| Usado para filtrar quais avaliações estão incluídas nos dados de histórico buscados. Busca avaliações cujo escopo corresponde a esse escopo fornecido. Obrigatório. <br> Para obter mais, consulte Consultas de escopo com [suporte para accessReviewHistoryDefinition](#supported-scope-queries-for-accessreviewhistorydefinition). |
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>Consultas de escopo com suporte para accessReviewHistoryDefinition
 
-A seguir, há consultas com suporte em [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) com base no [accessreviewqueryscope](../resources/accessreviewqueryscope.md). Esses escopos ditam que tipo de dados de histórico de revisão são incluídos no arquivo CSV baixável gerado quando a definição é criada.
+A **propriedade scopes** [de accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) baseia-se no **accessReviewQueryScope**, um recurso que permite configurar diferentes recursos em sua propriedade de **consulta.** Esses recursos representam o escopo da definição de histórico e ditam o tipo de dados de histórico de revisão incluídos no arquivo CSV baixável que é gerado quando a definição de histórico é criada.
 
-|Cenário| Consulta |
-|--|--|
-| Incluir cada resultado de revisão em grupos individuais (exclui definições com escopo para todos os grupos Microsoft 365 `accessReviewScheduleDefinition` com usuários convidados) | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')" |
-| Incluir todos os resultados de revisão em um grupo específico (exclui definições com escopo para todos os grupos Microsoft 365 `accessReviewScheduleDefinition` com usuários convidados) | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups/{group id}') |
-| Incluir todos `accessReviewScheduleDefinition` os resultados de revisão com escopo para todos os grupos Microsoft 365 com usuários convidados | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, './members') |
-| Incluir todos `accessReviewScheduleDefinition` os resultados de revisão em um pacote de acesso | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments') |
-| Incluir todos `accessReviewScheduleDefinition` os resultados de revisão para entidades de serviço atribuídas à função privilegiada | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'roleAssignmentScheduleInstances') |
-| Incluir cada `accessReviewScheduleDefinition` resultado de revisão para reivews de um grupo específico | /identityGovernance/accessReviews/definitions?$filter=scope/query eq '/groups/a1382a9b-8320-4e9c-8f73-dfead37d7723/members' |
+Use o seguinte formato para **a propriedade de** consulta:
+
+```http
+/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
+```
+
+O valor `{object}` de é um dos recursos que podem ser configurados em um **accessReviewScheduleDefinition**. Por exemplo, o seguinte inclui todos os resultados de revisão accessReviewScheduleDefinition em grupos individuais (e exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).
+
+```http
+/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
+```
+
+Para obter valores mais suportados, consulte Use o parâmetro $filter de consulta [no accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md#use-the-filter-query-parameter).
 
 ## <a name="response"></a>Resposta
 

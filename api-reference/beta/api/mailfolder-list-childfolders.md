@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9cf1f5cd48a07cb6e240002b8715fc546b56136d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 59d5fe5bfc52f20e38188f597616947a75b7c000
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049272"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629529"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 
@@ -20,7 +20,9 @@ Namespace: microsoft.graph
 
 Obtenha a coleção de pastas sob a pasta especificada. Você pode usar o atalho `.../me/mailFolders` para obter a coleção de pastas de nível superior e navegar até outra pasta.
 
-## <a name="permissions"></a>Permissões
+Por padrão, essa operação não retorna pastas ocultas. Use um parâmetro de consulta _includeHiddenFolders_ para incluí-los na resposta.
+
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -32,6 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
+Para obter todas as pastas filho na pasta especificada, excluindo as que estão ocultas:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -39,7 +42,15 @@ GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
+Para incluir _pastas_ filho ocultas na resposta:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/{id}/childFolders?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders?includeHiddenFolders=true
+```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Para retornar uma lista de todas as childFolders, incluindo aquelas ocultas (sua propriedade **isHidden** é true), na URL de solicitação, especifique o parâmetro de consulta como , conforme mostrado na seção `includeHiddenFolders` `true` [solicitação HTTP.](#http-request)
 
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
@@ -122,7 +133,8 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 2,
       "totalItemCount": 2,
-      "wellKnownName": null
+      "wellKnownName": null,
+      "isHidden": false
     },
     {
       "id": "AAMkAGVmMDEzB",
@@ -131,7 +143,8 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 5,
       "totalItemCount": 5,
-      "wellKnownName": null
+      "wellKnownName": null,
+      "isHidden": false
     },
     {
       "id": "AAMkAGVmMDEzMA",
@@ -140,7 +153,8 @@ Content-type: application/json
       "childFolderCount": 4,
       "unreadItemCount": 0,
       "totalItemCount": 0,
-      "wellKnownName": "searchfolders"
+      "wellKnownName": "searchfolders",
+      "isHidden": false
     }
   ]
 }
@@ -208,6 +222,7 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 6,
       "totalItemCount": 6,
+      "isHidden": false,
       "wellKnownName": null,
       "isSupported": true,
       "filterQuery": "contains(subject, 'MyAnalytics')"
@@ -220,9 +235,81 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 2,
       "totalItemCount": 4,
+      "isHidden": false,
       "wellKnownName": null,
       "isSupported": true,
       "filterQuery": "contains(subject, 'ACTION REQUIRED')"
+    }
+  ]
+}
+```
+
+### <a name="example-3-include-hidden-child-folders-under-a-specified-mail-folder"></a>Exemplo 3: Incluir pastas filho ocultas em uma pasta de email especificada
+
+O próximo exemplo usa o parâmetro de consulta para obter uma lista de pastas filho em uma pasta de email especificada, incluindo `includeHiddenFolders` pastas de email ocultas. A resposta inclui a pasta "Clutters" que tem **o isHidden** definido como true.
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "mailfolder_get_hiddenchildfolders"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders?includeHiddenFolders=true
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "AAMkAGVmMDEzA",
+      "displayName": "Internal Screens",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 2,
+      "totalItemCount": 2,
+      "wellKnownName": null,
+      "isHidden": false
+    },
+    {
+      "id": "AAMkAGVmMDEzB",
+      "displayName": "Clutters",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 5,
+      "totalItemCount": 5,
+      "wellKnownName": null,
+      "isHidden": true
+    },
+    {
+      "id": "AAMkAGVmMDEzMA",
+      "displayName": "Finder",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 4,
+      "unreadItemCount": 0,
+      "totalItemCount": 0,
+      "wellKnownName": "searchfolders",
+      "isHidden": false
     }
   ]
 }

@@ -3,12 +3,12 @@ title: 'Microsoft Graph Toolkit: Componentes da interface do usuário e provedor
 description: O Microsoft Graph Toolkit é uma coleção de provedores de autenticação e componentes web reutilizáveis e agnósticos da estrutura para acessar e trabalhar com o Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: e39eba8c79d2aae3d1ce048a21d2d0a911aed089
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 3b9dd368f9fe565164f3025c1f3de81645ad22df
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579764"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629158"
 ---
 # <a name="microsoft-graph-toolkit-ui-components-and-authentication-providers-for-microsoft-graph"></a>Microsoft Graph Toolkit: Componentes da interface do usuário e provedores de autenticação para o Microsoft Graph 
 
@@ -34,12 +34,14 @@ Os componentes também estão disponíveis como [React componentes](./get-starte
 |[Pessoa](./components/person.md)|Exibe uma pessoa ou contato por sua foto, nome e/ou endereço de email.|
 |[Pessoas](./components/people.md)|Exibe um grupo de pessoas ou contatos por suas fotos ou iniciais.|
 |[Agenda](./components/agenda.md)|Exibe eventos no calendário de um usuário ou grupo.|
-|[Tarefas](./components/tasks.md)|Exibe e habilita a adição, remoção, conclusão ou edição de tarefas do Microsoft Planner ou Microsoft To Do.|
 |[Seletor de pessoas](./components/people-picker.md)|Fornece a capacidade de pesquisar por pessoas e renderiza a lista de resultados.|
 |[Cartão pessoal](./components/person-card.md)|Um flyout usado no componente da pessoa para exibir mais informações de perfil sobre um usuário.|
+|[Arquivo](./components/file.md)|Representa um arquivo ou pasta com ícone, nome do arquivo, autor e muito mais.|
+|[Lista de arquivos](./components/file-list.md)|Exibe uma lista de vários arquivos ou pastas.|
 |[Get](./components/get.md)|Faça uma consulta GET para qualquer API Graph Microsoft diretamente em seu HTML.|
 |[Se picker de canal](./components/teams-channel-picker.md)|Fornece a capacidade de pesquisar Microsoft Teams canais para selecionar um canal em uma lista renderizada de resultados.|
 |[To Do](./components/todo.md)|Exibe e habilita a adição, remoção, conclusão ou edição de tarefas de Microsoft To Do.|
+|[Tarefas](./components/tasks.md)|Exibe e habilita a adição, remoção, conclusão ou edição de tarefas do Microsoft Planner ou Microsoft To Do.|
 
 ### <a name="providers"></a>Provedores
 

@@ -1,16 +1,16 @@
 ---
-title: Person-Card componente no microsoft graph Toolkit
+title: Person-Card componente no microsoft Graph Toolkit
 description: Um Person-Card é um componente para exibir mais informações relacionadas a uma pessoa.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 9c12c9e76f6c0b332a70bfbc429bc7b7845056cb
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: de09e9156cd084bdffbe5578e90605e0cf723403
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266805"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629340"
 ---
-# <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card componente no microsoft graph Toolkit
+# <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card componente no microsoft Graph Toolkit
 
 Um Person-Card é um componente responsivo para exibir mais informações relacionadas a uma pessoa. Geralmente, ele é usado como um sobrevoo no `mgt-person` componente.
 
@@ -20,9 +20,9 @@ Para obter mais informações sobre o `mgt-person` componente, consulte [mgt-per
 
 O exemplo a seguir mostra o uso do `mgt-person-card` componente com um `mgt-person` componente. Passe o mouse sobre a pessoa para ver o [](#properties) Cartão de Pessoa e use o editor de código para ver como as propriedades alteram o comportamento do componente.
   
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card&source=docs" height="400"></iframe>
 
-[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
+[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card&source=docs)
 
 
 ## <a name="global-component-configuration"></a>Configuração de componente global
@@ -42,7 +42,7 @@ As propriedades a seguir estão disponíveis no objeto config.
 
 | Propriedade | Descrição |
 | ------------ | ------------- |
-| useContactApis | `boolean` - Indica se o componente de cartão de pessoa pode usar a API de Contato do Microsoft Graph para pesquisar detalhes de contato e fotos. O valor padrão é `true`.  |
+| useContactApis | `boolean`- Indica se o componente de cartão de pessoa pode usar a API de contato do Microsoft Graph para pesquisar detalhes e fotos de contato. O valor padrão é `true`.  |
 | seções | `object` - Configura quais seções são mostradas no cartão de pessoa.  |
 
 ### <a name="person-card-sections"></a>Seções de cartão de pessoa
@@ -70,11 +70,11 @@ import { MgtPersonCard } from `@microsoft/mgt`;
 MgtPersonCard.config.sections.profile = false;
 ```
 
-## <a name="setup-for-teams-integrations"></a>Configuração para integrações do Teams
+## <a name="setup-for-teams-integrations"></a>Instalação para Teams integrações
 
-O Person-Card componente permite que o usuário entre em contato com a pessoa de destino, incluindo por meio do chat do Teams. Se usar o componente dentro de um aplicativo de guia do Teams, você pode garantir que o componente se vincula diretamente a um chat em vez de abrir uma janela do navegador definindo `microsoftTeamsLib` o em `TeamsProvider` .
+O Person-Card componente permite que o usuário entre em contato com a pessoa de destino, incluindo Teams chat. Se usar o componente dentro de um aplicativo de guia Teams, você pode garantir que o componente se vincula diretamente a um chat em vez de abrir uma janela do navegador definindo o `microsoftTeamsLib` em `TeamsProvider` .
 
-Se o Person-Card não conseguir detectar a versão livre do Teams, o componente tentará abrir o cliente Web do Teams.
+Se o Person-Card não puder detectar a Teams, o componente tentará abrir o cliente Teams Web.
 
 ```ts
 import * as microsoftTeams from "@microsoft/teams-js";
@@ -83,7 +83,7 @@ import {TeamsHelper} from '@microsoft/mgt';
 TeamsHelper.microsoftTeamsLib = microsoftTeams;
 ```
 
-Para obter mais informações sobre o `TeamsProvider` provedor, consulte [Provedor do Microsoft Teams](../providers/teams.md).
+Para obter mais informações sobre o `TeamsProvider` provedor, [consulte Microsoft Teams provedor](../providers/teams.md).
 
 ## <a name="properties"></a>Propriedades
 
@@ -129,6 +129,14 @@ Por exemplo, você pode usar um modelo para personalizar o componente anexado ao
 
 ```
 
+## <a name="events"></a>Eventos
+
+Os eventos a seguir são disparados do componente.
+
+| Evento | Descrição |
+| --- | --- |
+| `expanded` | O usuário abriu a seção detalhes expandidos do cartão. |
+
 ## <a name="css-custom-properties"></a>Propriedades personalizadas CSS
 
 O `mgt-person-card` componente define as seguintes propriedades personalizadas CSS. 
@@ -151,11 +159,11 @@ mgt-person {
 
 Para saber mais, confira [componentes de estilo](../customize-components/style.md).
 
-## <a name="microsoft-graph-apis-and-permissions"></a>APIs e permissões do Microsoft Graph
+## <a name="microsoft-graph-apis-and-permissions"></a>ApIs Graph Microsoft e permissões
 
-O Person-Card usa as seguintes APIs e permissões do Microsoft Graph.
+O controle Person-Card usa as seguintes APIs Graph Microsoft e permissões.
 
-| Recurso | Permissão | Section |
+| Resource | Permissão | Section |
 | - | - | - |
 | [/me](/graph/api/user-get) | User.Read | Padrão |
 | [/me/photo/$value](/graph/api/profilephoto-get) | User.Read | Padrão |
@@ -196,4 +204,4 @@ O Person-Card usa o provedor de autenticação global descrito na [documentaçã
 |`presence`|Presença da pessoa|Usado, quando `showPresence` está definido como `true`|
 |`users`|Informações do usuário da pessoa|Usado quando `userId` especificado ou `personQuery` definido como `me`|
 
-Consulte [Cache para](../customize-components/cache.md) obter mais detalhes sobre como configurar o cache.
+Consulte [Caching](../customize-components/cache.md) para obter mais detalhes sobre como configurar o cache.

@@ -3,12 +3,12 @@ title: Componente de lista de arquivos no microsoft Graph Toolkit
 description: O componente de lista de arquivos é usado para exibir uma lista de arquivos mostrando seu ícone e nome
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: 77eb93bc17d9c684ac61fc6a7dc2f263e406bba8
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: bde548e843170de6cd1234f14096339859d4b99b
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579789"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629165"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Componente de lista de arquivos no microsoft Graph Toolkit
 
@@ -71,6 +71,11 @@ O exemplo a seguir altera o comportamento do componente para buscar a lista de a
 <mgt-file-list insight-type="shared"></mgt-file-list>
 ```
 
+## <a name="methods"></a>Métodos
+| Método | Descrição |
+| --- | --- |
+| reload(clearCache = false) | Chame o método para recarregar o componente com novos dados potenciais com base em suas propriedades. Passe `true` para limpar o cache antes de recarregar. |
+
 ## <a name="css-custom-properties"></a>Propriedades personalizadas CSS
 
 O `mgt-file-list` componente define as seguintes propriedades personalizadas CSS.
@@ -109,7 +114,7 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>ApIs Graph Microsoft e permissões
 
-| Configuração | Permissões | API |
+| Configuração | Permissions | API |
 | ------------- | ----------------- | --- |
 | Padrão (nenhum identificador ou consulta fornecida) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children`   |
 | Fornecer `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |

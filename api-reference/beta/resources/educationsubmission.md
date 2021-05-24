@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9450770a78b8effd1ad11717297a7e1ad7e6e874
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: f468e0715a07320233db1224c3fcee62e0c8fe63
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547673"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629438"
 ---
 # <a name="educationsubmission-resource-type"></a>Tipo de recurso educationSubmission
 
@@ -35,7 +35,7 @@ Se [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) n�
 |[Listar submittedResources](../api/educationsubmission-list-submittedresources.md) |[Coleção educationSubmissionResource](educationsubmissionresource.md)| Obter uma **coleção de objetos educationSubmissionResource.**|
 |[Listar resultados](../api/educationsubmission-list-outcomes.md) |[Coleção educationOutcome](educationoutcome.md)| Obter uma **coleção de objetos educationOutcome.**|
 |[return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Um professor usa o retorno para indicar que as notas/comentários podem ser mostradas ao aluno.|
-|[setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Acionar a criação da pasta de recursos SharePoint onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados para um determinado envio. |
+|[Configurar pasta de recursos específicos do envio](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Crie uma SharePoint (em local pré-definido) para carregar arquivos como recursos de envio. |
 |[Enviar](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa enviar para entregar a atribuição. Isso copiará os recursos para a **pasta submittedResources** para a classificação e atualiza o status.|
 |[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa o cancelamento para mover o estado do envio do envio de volta ao trabalho. Isso copiará os recursos para a **pasta workingResources** para a classificação e atualiza o status.|
 
@@ -43,11 +43,9 @@ Se [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) n�
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |destinatário|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who esse envio é atribuído.|
-|releasedBy (preterido)|[identitySet](identityset.md)|Usuário que moveu o status desse envio para liberado.|
-|releasedDateTime (preterido)|DateTimeOffset|Momento no tempo em que o envio foi lançado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |returnedBy|[identitySet](identityset.md)|Usuário que moveu o status desse envio para retornado.|
 |returnedDateTime|DateTimeOffset|Momento no tempo em que o envio foi retornado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|resourcesFolderUrl|String|Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.|
+|resourcesFolderUrl|Cadeia de caracteres|Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.|
 |status|cadeia de caracteres| Somente Leitura. Os valores possíveis são: `working`, `submitted`, `released`, `returned`.|
 |submittedBy|[identitySet](identityset.md)|Usuário que moveu o recurso para o estado enviado.|
 |submittedDateTime|DateTimeOffset|Momento no tempo em que o envio foi movido para o estado enviado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|

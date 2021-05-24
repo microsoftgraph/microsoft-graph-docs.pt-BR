@@ -3,12 +3,12 @@ title: Criar uma web part SharePoint com o microsoft Graph Toolkit
 description: Começar a usar o microsoft Graph Toolkit para criar uma web part SharePoint web part.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 4c5443e05a57aade5c09d04f337c6a8bb67584c6
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: c1f4be864c9e762e164980bc20abb4195df5c9f7
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579911"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629130"
 ---
 # <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>Criar uma web part SharePoint com o microsoft Graph Toolkit
 
@@ -70,6 +70,9 @@ public render(): void {
     `;
 }
 ```
+
+>[!NOTE]
+> Se você estiver criando uma Web Part usando React, consulte os documentos [@microsoft/mgt-spfx](./mgt-spfx.md#react) para saber como usar `@microsoft/mgt-react` .
 
 ## <a name="configure-permissions"></a>Configurar permissões
 

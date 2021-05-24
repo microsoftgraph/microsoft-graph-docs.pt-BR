@@ -3,12 +3,12 @@ title: Estrutura do SharePoint biblioteca do Microsoft Graph Toolkit
 description: Use a Estrutura do SharePoint do Microsoft Graph Toolkit para usar o Microsoft Graph Toolkit em Estrutura do SharePoint soluções.
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 17a6e899003dec34a6dac41daaeba7e2c0e3fba1
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 5868f9fd523055d50f985f2fc8c8840563d56b28
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579796"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629487"
 ---
 # <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>Estrutura do SharePoint biblioteca do Microsoft Graph Toolkit
 
@@ -67,15 +67,8 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 
   public render(): void {
     this.domElement.innerHTML = `
-      <div class="${styles.mgtNoFramework}">
-        <div class="${styles.container}">
-          <div class="${styles.row}">
-            <div class="${styles.column}">
-              <span class="${styles.title}">No framework webpart</span>
-              <mgt-person person-query="me" show-name show-email></mgt-person>
-            </div>
-          </div>
-        </div>
+      <div>
+        <mgt-person person-query="me"></mgt-person>
       </div>`;
   }
 
@@ -83,10 +76,13 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 }
 ```
 
-Se você criar uma Web Part usando React, carregue componentes do `@microsoft/mgt-react` pacote:
+### <a name="react"></a>React
+
+Se você estiver criando uma Web Part usando React, poderá usar o `@microsoft/mgt-react` pacote. No entanto, certifique-se de importar todos os React do `@microsoft/mgt-react/dist/es6/spfx` caminho. Isso garantirá que sua solução use apenas componentes do Microsoft Graph Toolkit que já estão registrados na página, em vez de instalar seus próprios componentes.
 
 ```tsx
-import { Person } from '@microsoft/mgt-react';
+import { Person } from '@microsoft/mgt-react/dist/es6/spfx';
+import { ViewType } from '@microsoft/mgt-spfx';
 
 // [...] trimmed for brevity
 
@@ -94,12 +90,19 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
   public render(): React.ReactElement<IMgtReactProps> {
     return (
       <div className={ styles.mgtReact }>
-        <Person personQuery="me" />
+        <Person personQuery="me" view={ViewType.image}></Person>
       </div>
     );
   }
 }
 ```
+
+>[!IMPORTANT]
+> Certifique-se de que todas as Graph Toolkit da Microsoft em sua solução sejam de:
+> * `@microsoft/mgt-spfx` ou 
+> * `@microsoft/mgt-react/dist/es6/spfx`
+> 
+> Não importe de nenhum outro pacote do Microsoft Graph Toolkit ( ) para evitar empacotar sua própria cópia do kit de ferramentas e colidir `@microsoft/mgt-*` com a biblioteca compartilhada.
 
 ## <a name="see-also"></a>Confira também
 

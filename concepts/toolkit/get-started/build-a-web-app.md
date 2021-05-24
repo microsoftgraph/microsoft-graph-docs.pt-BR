@@ -3,12 +3,12 @@ title: Criar um aplicativo Web com o microsoft Graph Toolkit
 description: Começar a criar um aplicativo Web usando o microsoft Graph Toolkit.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 5eed45974428a2c6daf47d02144741d937e12c91
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: eef2bb9644fdd7da95ccce5da2b6802f4e893573
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579897"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629494"
 ---
 # <a name="build-a-web-application-with-the-microsoft-graph-toolkit"></a>Criar um aplicativo Web com o microsoft Graph Toolkit
 
@@ -37,9 +37,6 @@ npm install @microsoft/mgt
 ```
 
 ---
-
-
-> **Observação**: se você estiver direcionando um navegador como o IE11 que não dá suporte a componentes web na verdade, talvez seja necessário incluir [polífilos](./overview.md#polyfills).
 
 ## <a name="initialize-the-msal-20-provider"></a>Inicializar o Provedor MSAL 2.0
 Os provedores Graph Toolkit Microsoft habilitam a autenticação e o acesso ao Microsoft Graph para os componentes. Para saber mais, confira [Usando os provedores](../providers/providers.md). O [Provedor MSAL 2.0](../providers/msal2.md) usa o msal-browser para entrar nos usuários e adquirir tokens. Você pode inicializar esse provedor em seu HTML ou JavaScript.
