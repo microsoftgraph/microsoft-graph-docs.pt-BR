@@ -12,21 +12,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52547566"
 ---
-# <a name="entity-resource-type"></a><span data-ttu-id="ef222-103">Tipo de recurso entity</span><span class="sxs-lookup"><span data-stu-id="ef222-103">entity resource type</span></span>
+# <a name="entity-resource-type"></a><span data-ttu-id="2d474-103">Tipo de recurso entity</span><span class="sxs-lookup"><span data-stu-id="2d474-103">entity resource type</span></span>
 
-<span data-ttu-id="ef222-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ef222-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2d474-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2d474-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ef222-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ef222-105">Properties</span></span>
-| <span data-ttu-id="ef222-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ef222-106">Property</span></span>     | <span data-ttu-id="ef222-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="ef222-107">Type</span></span>   |<span data-ttu-id="ef222-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="ef222-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2d474-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="2d474-105">Properties</span></span>
+| <span data-ttu-id="2d474-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2d474-106">Property</span></span>     | <span data-ttu-id="2d474-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="2d474-107">Type</span></span>   |<span data-ttu-id="2d474-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d474-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ef222-109">id</span><span class="sxs-lookup"><span data-stu-id="ef222-109">id</span></span>|<span data-ttu-id="ef222-110">String</span><span class="sxs-lookup"><span data-stu-id="ef222-110">String</span></span>| <span data-ttu-id="ef222-111">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="ef222-111">Read-only.</span></span>|
+|<span data-ttu-id="2d474-109">id</span><span class="sxs-lookup"><span data-stu-id="2d474-109">id</span></span>|<span data-ttu-id="2d474-110">String</span><span class="sxs-lookup"><span data-stu-id="2d474-110">String</span></span>| <span data-ttu-id="2d474-111">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="2d474-111">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ef222-112">Relações</span><span class="sxs-lookup"><span data-stu-id="ef222-112">Relationships</span></span>
-<span data-ttu-id="ef222-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="ef222-113">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="2d474-112">Relações</span><span class="sxs-lookup"><span data-stu-id="2d474-112">Relationships</span></span>
+<span data-ttu-id="2d474-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="2d474-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ef222-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ef222-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2d474-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="2d474-114">JSON representation</span></span>
 
-<span data-ttu-id="ef222-115">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="ef222-115">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="2d474-115">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="2d474-115">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
