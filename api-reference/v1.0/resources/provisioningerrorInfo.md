@@ -1,5 +1,5 @@
 ---
-title: provisionamentoErrorInfo tipo de recurso
+title: Tipo de recurso provisioningErrorInfo
 description: Descreve o status do evento de provisionamento e os erros associados.
 localization_priority: Normal
 author: ArvindHarinder1
@@ -12,7 +12,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52547152"
 ---
-# <a name="provisioningerrorinfo-resource-type"></a>provisionamentoErrorInfo tipo de recurso
+# <a name="provisioningerrorinfo-resource-type"></a>Tipo de recurso provisioningErrorInfo
 
 Namespace: microsoft.graph
 
@@ -24,10 +24,10 @@ Descreve o status do evento de provisionamento e os erros associados.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |additionalDetails|Cadeia de caracteres|Detalhes adicionais em caso de erro.|
-|erroCategoria|provisionamentoStatusErrorCategory|Categoriza o código de erro. Os valores possíveis `failure` `nonServiceFailure` são, `success` , , `unknownFutureValue`|
-|errorCode|Cadeia de caracteres|Código de erro único, se ocorreu algum. [Saiba mais](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|errorCategory|provisioningStatusErrorCategory|Categoriza o código de erro. Os valores possíveis `failure` são `nonServiceFailure` , , `success` , `unknownFutureValue`|
+|errorCode|Cadeia de caracteres|Código de erro exclusivo se ocorrer algum. [Saiba Mais](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
 |motivo|Cadeia de caracteres|Resume o status e descreve por que o status aconteceu.|
-|recomendaçãoAction|Cadeia de caracteres|Fornece a resolução para o erro correspondente.|
+|recommendedAction|Cadeia de caracteres|Fornece a resolução do erro correspondente.|
 
 ## <a name="json-representation"></a>Representação JSON
 

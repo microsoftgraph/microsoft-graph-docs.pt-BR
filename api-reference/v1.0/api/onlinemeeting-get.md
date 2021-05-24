@@ -5,18 +5,18 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 02871c1769f545af938b24b54c2a4aaea8dffc5a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0d4f28f950145905a06f060773e7393b3cae0cdf
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054536"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579243"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e as relações de um [objeto onlineMeeting.](../resources/onlinemeeting.md) Você pode obter detalhes de um onlineMeeting usando [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) ou [iD de reunião.](#example-2-retrieve-an-online-meeting-by-meeting-id)
+Recupere as propriedades e as relações de um [objeto onlineMeeting.](../resources/onlinemeeting.md) Você pode obter detalhes de um onlineMeeting usando [VideoTeleconferenceId,](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) [ID](#example-2-retrieve-an-online-meeting-by-meeting-id) de reunião [ou JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
 
 
 ## <a name="permissions"></a>Permissões
@@ -25,30 +25,32 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
+| Delegada (conta corporativa ou de estudante)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                        |
 | Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
 > \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para recuperar uma reunião online em nome desse usuário (ID do usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para obter o onlineMeeting especificado usando a ID da reunião com o token delegado:
+Para obter uma onlineMeeting usando a ID de reunião com permissão delegada e de aplicativo:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
-```
-
-Para obter o onlineMeeting especificado usando a ID da reunião com o token de aplicativo:
-<!-- { "blockType": "ignored" } -->
-```http
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-Para obter o onlineMeeting especificado usando **videoTeleconferenceId***:
+Para obter uma onlineMeeting usando **videoTeleconferenceId** com permissão de aplicativo*:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+```
+
+Para obter uma onlineMeeting usando **joinWebUrl** com permissão delegada e de aplicativo:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
+GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
 > [!NOTE]
@@ -56,6 +58,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 > - `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 > - **videoTeleconferenceId** é gerado para usuários licenciados do Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting.](../resources/onlinemeeting.md) Consulte a [ID da conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) para obter mais detalhes.
 > - \* Esse cenário só dá suporte ao token de aplicativo e não dá suporte à política de acesso a aplicativos.
+> - `joinWebUrl` deve ser codificada por URL.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -76,11 +79,13 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto
 
 ## <a name="examples"></a>Exemplos
 
+> [!NOTE]
+> Os objetos de resposta dos exemplos a seguir foram reduzidos para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
+
 ### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Exemplo 1: Recuperar uma reunião online por VideoTeleconferenceId
 
 #### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -118,8 +123,6 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
 ```
 
 #### <a name="response"></a>Resposta
-
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -196,7 +199,7 @@ Você pode recuperar informações de reunião por meio da ID de reunião com um
 > **Observação:** A ID da reunião foi truncada para capacidade de leitura.
 
 A solicitação a seguir usa um token de usuário.
-<!-- { "blockType": "ignored" } -->
+<!-- {"blockType": "request", "name": "get-onlinemeeting-user-token"} -->
 ```http
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
@@ -208,10 +211,15 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```
 
 #### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-> **Observação:** O objeto de resposta mostrado aqui foi reduzido para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
-
-```json
 {
     "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
@@ -244,6 +252,72 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
         "scope": "organization",
         "isDialInBypassEnabled": false
     }
+}
+```
+
+### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>Exemplo 3: Recuperar uma reunião online por JoinWebUrl
+Você pode recuperar informações de reunião por meio do JoinWebUrl usando um token de usuário ou aplicativo. Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião não é conhecida, mas o JoinWebUrl é, como quando um usuário cria uma reunião (por exemplo, no cliente Microsoft Teams) e um aplicativo separado precisa recuperar detalhes da reunião como uma ação de acompanhamento.
+
+#### <a name="request"></a>Solicitação
+
+A solicitação a seguir usa um token de usuário.
+<!-- {"blockType": "request", "name": "get-onlinemeeting-joinurl-user-token"} -->
+```http
+GET https://graph.microsoft.com/v1/me/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
+```
+
+A solicitação a seguir usa um token de aplicativo.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "value": [
+        {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+            "creationDateTime": "2020-09-29T22:35:33.1594516Z",
+            "startDateTime": "2020-09-29T22:35:31.389759Z",
+            "endDateTime": "2020-09-29T23:35:31.389759Z",
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+            "subject": null,
+            "isEntryExitAnnounced": true,
+            "allowedPresenters": "everyone",
+            "videoTeleconferenceId": "(redacted)",
+            "participants": {
+                "organizer": {
+                    "upn": "(redacted)",
+                    "role": "presenter",
+                    "identity": {
+                        "user": {
+                            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                            "displayName": null,
+                            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                            "identityProvider": "AAD"
+                        }
+                    }
+                },
+                "attendees": [],
+                "producers": [],
+                "contributors": []
+            },
+            "lobbyBypassSettings": {
+                "scope": "organization",
+                "isDialInBypassEnabled": false
+            }
+        }
+    ]
 }
 ```
 

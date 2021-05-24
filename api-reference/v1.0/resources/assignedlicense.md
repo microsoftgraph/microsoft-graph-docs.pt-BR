@@ -21,7 +21,7 @@ Representa uma licença atribuída a um usuário. A propriedade **assignedLicens
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Planos desativados|Coleção de GUIDs|Uma coleção dos identificadores exclusivos de planos que foram desabilitados.|
+|disabledPlans|Coleção de GUIDs|Uma coleção dos identificadores exclusivos de planos que foram desabilitados.|
 |skuId|Guid|O identificador exclusivo da SKU.|
 
 ## <a name="json-representation"></a>Representação JSON

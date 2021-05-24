@@ -1,6 +1,6 @@
 ---
-title: configuraçãoEvase tipo de
-description: Uma configuração representada por um par de nome/valor.
+title: tipo de recurso settingValue
+description: Uma configuração representada por um par de nomes/valores.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
@@ -12,17 +12,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52547040"
 ---
-# <a name="settingvalue-resource-type"></a>configuraçãoEvase tipo de
+# <a name="settingvalue-resource-type"></a>tipo de recurso settingValue
 
 Namespace: microsoft.graph
 
-Uma configuração representada por um par de nome/valor.
+Uma configuração representada por um par de nomes/valores.
 
 ### <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|nome|Cadeia de caracteres| Nome da configuração (definida pelo [grupoSettingTemplate](groupsettingtemplate.md)). |
+|nome|Cadeia de caracteres| Nome da configuração (conforme definido pelo [groupSettingTemplate](groupsettingtemplate.md)). |
 |value|Cadeia de caracteres| Valor da configuração. |
 
 ### <a name="json-representation"></a>Representação JSON

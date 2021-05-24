@@ -1,6 +1,6 @@
 ---
-title: configuraçãoSplateValue tipo de recurso
-description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão da configuração, se a configuração não for instantânea.
+title: tipo de recurso settingTemplateValue
+description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instautada.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
@@ -12,11 +12,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52547047"
 ---
-# <a name="settingtemplatevalue-resource-type"></a>configuraçãoSplateValue tipo de recurso
+# <a name="settingtemplatevalue-resource-type"></a>tipo de recurso settingTemplateValue
 
 Namespace: microsoft.graph
 
-Representa uma definição de configuração de modelo individual, incluindo o valor padrão da configuração, se a configuração não for instantânea.
+Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instautada.
 
 ### <a name="properties"></a>Propriedades
 
@@ -25,7 +25,7 @@ Representa uma definição de configuração de modelo individual, incluindo o v
 |defaultValue|Cadeia de caracteres| Valor padrão para a configuração. |
 |descrição|Cadeia de caracteres| Descrição da configuração. |
 |nome|Cadeia de caracteres| Nome da configuração. |
-|tipo|Cadeia de caracteres| Tipo de configuração. |
+|tipo|Cadeia de caracteres| Tipo da configuração. |
 
 ### <a name="json-representation"></a>Representação JSON
 

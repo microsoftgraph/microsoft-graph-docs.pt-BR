@@ -16,7 +16,7 @@ ms.locfileid: "52547629"
 
 Namespace: microsoft.graph
 
-Apenas para uso interno. Este tipo complexo será preterido no futuro.
+Apenas para uso interno. Esse tipo complexo será preterido no futuro.
 
 ## <a name="json-representation"></a>Representação JSON
 
