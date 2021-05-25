@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d2363f2bc25ddf3356215910e14b3451fccf6fcf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a1ab83dfa3e3da64935a8c3976f12ffd1faf2e3c
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130771"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629382"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
@@ -55,9 +55,11 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 
 | Método | Tipo de retorno | Descrição |
 |:-------|:------------|:------------|
+|[Listar mailFolders](../api/user-list-mailfolders.md) | Coleção [mailFolder](mailfolder.md)|Obtenha todas as pastas de email na caixa de correio do usuário especificado, incluindo quaisquer pastas de pesquisa de email.|
 |[Obter mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |Leia as propriedades e os relacionamentos do objeto mailFolder.|
-|[Criar MailFolder](../api/mailfolder-post-childfolders.md) |[MailFolder](mailfolder.md)| Crie uma nova mailFolder na atual postando na coleção childFolders.|
+|[Criar MailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| Crie uma nova pasta de email na pasta raiz da caixa de correio do usuário.|
 |[Listar childFolders](../api/mailfolder-list-childfolders.md) |Coleção [MailFolder](mailfolder.md)| Obtenha a coleção de pastas sob a pasta especificada. Você pode usar o atalho `.../me/MailFolders` para obter a coleção de pastas de nível superior e navegar até outra pasta.|
+|[Criar childFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Criar uma nova mailFolder na atual postando na coleção childFolders.|
 |[Criar Mensagem](../api/mailfolder-post-messages.md) |[Mensagem](message.md)| Crie uma nova mensagem na mailFolder atual postando na coleção de mensagens.|
 |[Listar mensagens](../api/mailfolder-list-messages.md) |Coleção [Message](message.md)| Obtenha todas as mensagens na caixa de correio do usuário conectado, ou em uma pasta especificada na caixa de correio.|
 |[Update](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Atualize o objeto mailFolder especificado. |
@@ -78,6 +80,7 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 |childFolderCount|Int32|O número de mailFolders filho imediatas na mailFolder atual.|
 |displayName|String|O nome de exibição da mailFolder.|
 |id|String|Identificador exclusivo de mailFolder.|
+|IsHidden|Booleano|Indica se a mailFolder está oculta. Esta propriedade pode ser definida apenas ao criar a pasta. Encontre mais informações em [Pastas de email ocultas](#hidden-mail-folders).|
 |parentFolderId|String|O identificador exclusivo de mailFolder do mailFolder pai.|
 |totalItemCount|Int32|O número de itens na mailFolder.|
 |unreadItemCount|Int32|O número de itens na mailFolder marcados como não lidos.|
@@ -92,6 +95,13 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 ```
 
 As pastas de email no Outlook podem conter mais de um tipo de item, por exemplo, a caixa de entrada pode conter itens que são diferentes de itens de email da solicitação de reunião. `TotalItemCount` e `UnreadItemCount` incluem itens em uma pasta de email independentemente seus tipos de item.
+
+### <a name="hidden-mail-folders"></a>Pastas de email ocultas
+O valor padrão da propriedade `isHidden` é `false`. Você pode definir a **isHidden** apenas uma vez ao [criar a mailFolder ](../api/user-post-mailfolders.md). Você não pode atualizar a propriedade usando uma operação PATCH. Para alterar a propriedade **isHidden** de uma pasta, exclua a pasta existente e crie uma nova com o valor desejado.
+
+As pastas de email ocultas oferecem suporte a todas as operações suportadas por uma pasta de email normal.
+
+Por padrão, [listar as mailFolders](../api/user-list-mailfolders.md) retornará apenas as pastas de email que não estão ocultas. Para incluir pastas de email ocultas na resposta, use o parâmetro de consulta `includeHiddenFolders=true`. Em seguida, use a propriedade **isHidden** para identificar se uma pasta de email está oculta. 
 
 ## <a name="relationships"></a>Relações
 
@@ -154,6 +164,7 @@ Veja a seguir uma representação JSON do recurso
   "parentFolderId": "string",
   "totalItemCount": 1024,
   "unreadItemCount": 1024,
+  "isHidden": false,
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
