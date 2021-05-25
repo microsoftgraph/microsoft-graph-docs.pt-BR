@@ -1,0 +1,50 @@
+### YamlMime:Tutorial
+title: Criar seu primeiro aplicativo microsoft Graph dados Conexão dados
+metadata:
+  title: Criar seu primeiro aplicativo microsoft Graph dados Conexão dados
+  description: Neste tutorial, você criará seu primeiro aplicativo microsoft Graph data Conexão para métricas de email.
+  audience: Developer
+  level: Beginner
+  displayType: one-column
+  ms.date: 04/30/2021
+  author: fercobo-msft
+  ms.topic: tutorial
+  ms.custom: scenarios:getting-started, languages:ASP.NET
+  ms.openlocfilehash: 98127ccff39380f0d299a953b9b5abed61eedf75
+  ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 05/25/2021
+  ms.locfileid: "52645661"
+items:
+- title: Criar seu primeiro aplicativo microsoft Graph dados Conexão dados
+  durationInMinutes: 10
+  content: >
+    [!INCLUDE [](data-connect-quickstart-01.md)]
+- title: Configurar seu locatário Microsoft 365 e habilitar o Microsoft Graph Data Conexão
+  durationInMinutes: 5
+  content: >
+    [!INCLUDE [](data-connect-quickstart-02.md)]
+- title: Configurar seu registro Azure Active Directory aplicativo
+  durationInMinutes: 10
+  content: >
+    [!INCLUDE [](data-connect-quickstart-03.md)]
+- title: Configurar seu recurso de Armazenamento Azure
+  durationInMinutes: 10
+  content: >
+    [!INCLUDE [](data-connect-quickstart-04.md)]
+- title: Configurar seu recurso de Fábrica de Dados do Azure
+  durationInMinutes: 15
+  content: >
+    [!INCLUDE [](data-connect-quickstart-05.md)]
+- title: Monitorar solicitações de consentimento de dados com Microsoft 365 Admin Center e PowerShell
+  durationInMinutes: 5
+  content: >
+    [!INCLUDE [](data-connect-quickstart-06.md)]
+- title: Criar seu ASP.NET web para processar os dados exportados
+  durationInMinutes: 25
+  content: >
+    [!INCLUDE [](data-connect-quickstart-07.md)]
+- title: Parabéns!
+  durationInMinutes: 0
+  content: '[!INCLUDE [](data-connect-quickstart-08.md)]'

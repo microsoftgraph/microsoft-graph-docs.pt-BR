@@ -1,0 +1,91 @@
+---
+title: Criar, atualizar e excluir conexões no Microsoft Graph
+description: Aprenda a usar o Microsoft Graph para criar e gerenciar conexões
+localization_priority: Priority
+author: mecampos
+doc_type: conceptualPageType
+ms.prod: search
+ms.openlocfilehash: 5020a8b56e6746e7c154af229113029c3f7731c0
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645679"
+---
+<!---<author of this doc: rsamai>--->
+
+# <a name="create-update-and-delete-connections-in-the-microsoft-graph"></a><span data-ttu-id="8f293-103">Criar, atualizar e excluir conexões no Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="8f293-103">Create, update, and delete connections in the Microsoft Graph</span></span>
+
+<span data-ttu-id="8f293-104">As conexões de serviços externos com o serviço da Pesquisa da Microsoft são representadas pelo recurso [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) no Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="8f293-104">Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.</span></span>
+
+<span data-ttu-id="8f293-105">A plataforma de conectores do Microsoft Graph oferece uma maneira simples de adicionar seus dados externos ao Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="8f293-105">The Microsoft Graph connectors platform offers a simple way to add your external data into the Microsoft Graph.</span></span> <span data-ttu-id="8f293-106">Uma conexão é um contêiner lógico de dados externos que um administrador pode gerenciar como uma única unidade.</span><span class="sxs-lookup"><span data-stu-id="8f293-106">A connection is a logical container for your external data that an administrator can manage as a single unit.</span></span>
+
+<span data-ttu-id="8f293-107">Depois de criar uma conexão, você pode adicionar seu conteúdo de qualquer fonte de dados externa, como uma fonte de conteúdo local ou um serviço SaaS externo.</span><span class="sxs-lookup"><span data-stu-id="8f293-107">Once a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service.</span></span> <span data-ttu-id="8f293-108">Só é possível exibir e gerenciar as conexões que você criou ou que foram explicitamente [autorizadas](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) para gerenciamento.</span><span class="sxs-lookup"><span data-stu-id="8f293-108">You can only view and manage the connections you created or were explicitly [authorized](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) to manage.</span></span> <span data-ttu-id="8f293-109">Um administrador de pesquisa pode exibir e gerenciar todas as conexões no locatário no Centro de Administração Moderna.</span><span class="sxs-lookup"><span data-stu-id="8f293-109">A search admin can view and manage all the connections in the tenant from the Modern Admin Center.</span></span>
+
+<!-- markdownlint-disable MD036 -->
+<span data-ttu-id="8f293-110">![Exemplo de um sistema helpdesk personalizado da estrutura de conector de tíquetes](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)</span><span class="sxs-lookup"><span data-stu-id="8f293-110">![Sample custom helpdesk system Tickets Connector Structure](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)</span></span>
+
+<span data-ttu-id="8f293-111">*Exemplo de um sistema helpdesk personalizado da estrutura de conector de tíquetes*</span><span class="sxs-lookup"><span data-stu-id="8f293-111">*Sample custom helpdesk system Tickets Connector Structure*</span></span>
+
+![Modo de exibição de administrador das conexões, incluindo o conector de tíquetes personalizado](./images/connectors-images/connecting-external-content-manage-connections-admin-view.svg)
+
+<span data-ttu-id="8f293-113">*Modo de exibição de administrador das conexões, incluindo o conector de tíquetes personalizado*</span><span class="sxs-lookup"><span data-stu-id="8f293-113">*Admin View of Connections including the custom Tickets Connector*</span></span>
+
+<!-- markdownlint-enable MD036 -->
+
+<span data-ttu-id="8f293-114">Você pode modelar uma conexão assim que desejar, mas criar uma conexão para cada instância do seu conector é o modelo mais comum.</span><span class="sxs-lookup"><span data-stu-id="8f293-114">You can model a connection anyway you want, but creating one connection for every instance of your connector is the most common model.</span></span> <span data-ttu-id="8f293-115">Por exemplo, todas as vezes que você [configurar o conector de compartilhamento de arquivos do Microsoft Windows](/microsoftsearch/configure-connector), uma nova conexão será criada.</span><span class="sxs-lookup"><span data-stu-id="8f293-115">For example, each time you [set up the Microsoft Windows file share connector](/microsoftsearch/configure-connector), a new connection is created.</span></span> <span data-ttu-id="8f293-116">Você também pode criar uma única conexão para adicionar todos os itens da fonte de dados.</span><span class="sxs-lookup"><span data-stu-id="8f293-116">You can also create a single connection to add all items from your data source.</span></span> <span data-ttu-id="8f293-117">Por exemplo, criar uma única conexão para adicionar todos os tíquetes e incidentes por várias equipes do seu sistema de assistência técnica.</span><span class="sxs-lookup"><span data-stu-id="8f293-117">For example, creating a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.</span></span>
+
+## <a name="states-and-operations"></a><span data-ttu-id="8f293-118">Estados e operações</span><span class="sxs-lookup"><span data-stu-id="8f293-118">States and operations</span></span>
+
+<span data-ttu-id="8f293-119">A conexão pode existir em um dos seguintes estados.</span><span class="sxs-lookup"><span data-stu-id="8f293-119">Your connection can exist in one of the following states.</span></span>
+
+| <span data-ttu-id="8f293-120">Estado</span><span class="sxs-lookup"><span data-stu-id="8f293-120">State</span></span>             | <span data-ttu-id="8f293-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="8f293-121">Description</span></span>                                                                                                                                               |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="8f293-122">**Rascunho**</span><span class="sxs-lookup"><span data-stu-id="8f293-122">**Draft**</span></span>         | <span data-ttu-id="8f293-p104">Uma conexão vazia está provisionada. A fonte de dados, esquema ou quaisquer configurações ainda não foram configuradas.</span><span class="sxs-lookup"><span data-stu-id="8f293-p104">An empty connection is provisioned. The data source, schema, or any settings have not been configured yet.</span></span>                                                |
+| <span data-ttu-id="8f293-125">**Pronto**</span><span class="sxs-lookup"><span data-stu-id="8f293-125">**Ready**</span></span>         | <span data-ttu-id="8f293-126">A conexão é fornecida com o esquema registrado e está pronta para inclusão.</span><span class="sxs-lookup"><span data-stu-id="8f293-126">The connection is provisioned with registered schema and is ready for ingestion.</span></span>                                                                          |
+| <span data-ttu-id="8f293-127">**Obsoleto**</span><span class="sxs-lookup"><span data-stu-id="8f293-127">**Obsolete**</span></span>      | <span data-ttu-id="8f293-128">Isso ocorre quando um recurso dependente, como uma API, foi preterido.</span><span class="sxs-lookup"><span data-stu-id="8f293-128">This occurs when a dependent feature, such as an API, has been deprecated.</span></span> <span data-ttu-id="8f293-129">A exclusão da conexão é a única operação válida.</span><span class="sxs-lookup"><span data-stu-id="8f293-129">Deleting the connection is the only valid operation.</span></span>                           |
+| <span data-ttu-id="8f293-130">**LimitExceeded**</span><span class="sxs-lookup"><span data-stu-id="8f293-130">**LimitExceeded**</span></span> | <span data-ttu-id="8f293-131">Se você alcançar o limite máximo de uma única conexão ou cota de nível de locatário em todas as conexões, não será possível adicionar mais itens até sair do estado.</span><span class="sxs-lookup"><span data-stu-id="8f293-131">If you hit the maximum limit of a single connection or the tenant level quota across all connections, you cannot add more items until you exit the state.</span></span> |
+
+<span data-ttu-id="8f293-132">A tabela a seguir especifica quais operações estão disponíveis em cada Estado.</span><span class="sxs-lookup"><span data-stu-id="8f293-132">The following table specifies which operations are available in each state.</span></span>
+
+| <span data-ttu-id="8f293-133">Operação</span><span class="sxs-lookup"><span data-stu-id="8f293-133">Operation</span></span>         | <span data-ttu-id="8f293-134">Rascunho</span><span class="sxs-lookup"><span data-stu-id="8f293-134">Draft</span></span>              | <span data-ttu-id="8f293-135">Pronto</span><span class="sxs-lookup"><span data-stu-id="8f293-135">Ready</span></span>              | <span data-ttu-id="8f293-136">Obsoleto</span><span class="sxs-lookup"><span data-stu-id="8f293-136">Obsolete</span></span>           | <span data-ttu-id="8f293-137">LimitExceeded</span><span class="sxs-lookup"><span data-stu-id="8f293-137">LimitExceeded</span></span>      |
+|-------------------|--------------------|--------------------|--------------------|--------------------|
+| <span data-ttu-id="8f293-138">Criar conexão</span><span class="sxs-lookup"><span data-stu-id="8f293-138">Create connection</span></span> | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+| <span data-ttu-id="8f293-143">Ler conexão</span><span class="sxs-lookup"><span data-stu-id="8f293-143">Read connection</span></span>   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| <span data-ttu-id="8f293-148">Atualizar conexão</span><span class="sxs-lookup"><span data-stu-id="8f293-148">Update connection</span></span> | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+| <span data-ttu-id="8f293-153">Excluir conexão</span><span class="sxs-lookup"><span data-stu-id="8f293-153">Delete connection</span></span> | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| <span data-ttu-id="8f293-158">Criar esquema</span><span class="sxs-lookup"><span data-stu-id="8f293-158">Create schema</span></span>     | :heavy_check_mark: | :x:                | :x:                | :x:                |
+| <span data-ttu-id="8f293-163">Ler esquema</span><span class="sxs-lookup"><span data-stu-id="8f293-163">Read schema</span></span>       | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| <span data-ttu-id="8f293-168">Atualizar esquema</span><span class="sxs-lookup"><span data-stu-id="8f293-168">Update schema</span></span>     | :x:                | :x:                | :x:                | :x:                |
+| <span data-ttu-id="8f293-173">Excluir esquema</span><span class="sxs-lookup"><span data-stu-id="8f293-173">Delete schema</span></span>     | :x:                | :x:                | :x:                | :x:                |
+| <span data-ttu-id="8f293-178">Criar item</span><span class="sxs-lookup"><span data-stu-id="8f293-178">Create item</span></span>       | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| <span data-ttu-id="8f293-183">Ler item</span><span class="sxs-lookup"><span data-stu-id="8f293-183">Read item</span></span>         | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| <span data-ttu-id="8f293-188">Atualizar item</span><span class="sxs-lookup"><span data-stu-id="8f293-188">Update item</span></span>       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+| <span data-ttu-id="8f293-193">Excluir item</span><span class="sxs-lookup"><span data-stu-id="8f293-193">Delete item</span></span>       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+
+<span data-ttu-id="8f293-198">Uma conexão permite que seu aplicativo [defina um esquema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) para os itens que serão indexados e forneça um ponto de extremidade para o seu serviço adicionar, atualizar ou excluir itens do índice.</span><span class="sxs-lookup"><span data-stu-id="8f293-198">A connection allows your application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) for items that will be indexed, and provides an endpoint for your service to add, update, or delete items from the index.</span></span> <span data-ttu-id="8f293-199">[Criar uma conexão](#create-a-connection) é a primeira etapa para um aplicativo para adicionar itens ao índice de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="8f293-199">[Creating a connection](#create-a-connection) is the first step for an application to add items to the search index.</span></span>
+
+## <a name="create-a-connection"></a><span data-ttu-id="8f293-200">Criar uma conexão</span><span class="sxs-lookup"><span data-stu-id="8f293-200">Create a connection</span></span>
+
+<span data-ttu-id="8f293-201">Antes que um aplicativo possa adicionar itens ao índice de pesquisa, ele deve criar e configurar uma conexão usando as etapas a seguir.</span><span class="sxs-lookup"><span data-stu-id="8f293-201">Before an application can add items to the search index, it must create and configure a connection using the following steps.</span></span>
+
+- <span data-ttu-id="8f293-202">[Criar uma conexão](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) com ID exclusiva, nome de exibição e descrição.</span><span class="sxs-lookup"><span data-stu-id="8f293-202">[Create a connection](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) with a unique ID, display name, and description.</span></span>
+- <span data-ttu-id="8f293-203">[Registre um esquema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) para definir os campos que serão incluídos no índice.</span><span class="sxs-lookup"><span data-stu-id="8f293-203">[Register a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) to define the fields that will be included in the index.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="8f293-204">Depois que um esquema é registrado, ele não pode ser alterado para uma conexão existente.</span><span class="sxs-lookup"><span data-stu-id="8f293-204">After a schema has been registered, it cannot be changed for an existing connection.</span></span>
+
+## <a name="update-a-connection"></a><span data-ttu-id="8f293-205">Atualizar uma conexão</span><span class="sxs-lookup"><span data-stu-id="8f293-205">Update a connection</span></span>
+
+<span data-ttu-id="8f293-206">Você pode alterar o nome de exibição ou a descrição de uma conexão existente [atualizando a conexão](/graph/api/externalconnection-update?view=graph-rest-beta&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="8f293-206">You can change the display name or description of an existing connection by [updating the connection](/graph/api/externalconnection-update?view=graph-rest-beta&preserve-view=true).</span></span>
+
+## <a name="delete-a-connection"></a><span data-ttu-id="8f293-207">Excluir uma conexão</span><span class="sxs-lookup"><span data-stu-id="8f293-207">Delete a connection</span></span>
+
+<span data-ttu-id="8f293-208">Você pode [excluir uma conexão](/graph/api/externalconnection-delete?view=graph-rest-beta&preserve-view=true) e remover todos os itens que foram indexados por meio da conexão.</span><span class="sxs-lookup"><span data-stu-id="8f293-208">You can [delete a connection](/graph/api/externalconnection-delete?view=graph-rest-beta&preserve-view=true), and remove all items that were indexed via that connection.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="8f293-209">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="8f293-209">Next steps</span></span>
+
+- [<span data-ttu-id="8f293-210">Registrar o esquema de conexão</span><span class="sxs-lookup"><span data-stu-id="8f293-210">Register the connection schema</span></span>](./connecting-external-content-manage-schema.md)
+- [<span data-ttu-id="8f293-211">Revisar a referência da API do conectores do Graph</span><span class="sxs-lookup"><span data-stu-id="8f293-211">Review the Graph Connectors API reference</span></span>](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
+- [<span data-ttu-id="8f293-212">Visão geral dos conectores do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="8f293-212">Overview for Microsoft Graph Connectors</span></span>](/microsoftsearch/connectors-overview)
+- <span data-ttu-id="8f293-213">Baixe o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub</span><span class="sxs-lookup"><span data-stu-id="8f293-213">Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub</span></span>
