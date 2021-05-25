@@ -1,32 +1,48 @@
 ---
-title: Visão geral do Microsoft Graph Data Connect
-description: A conexão de dados do Microsoft Graph traz informações do Microsoft 365 para o Microsoft Azure, que oferece acesso às melhores ferramentas de desenvolvimento e hospedagem para trabalhar com esses dados.
-author: ajacks-msft
+title: Visão geral da A Conexão de Dados do Microsoft Graph
+description: A Conexão de Dados do Microsoft Graph traz informações do Microsoft 365 para o Microsoft Azure, que oferece acesso às melhores ferramentas de desenvolvimento e hospedagem para trabalhar com esses dados.
+author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9f93d895213c37858cf19db2b36c1f467e92fda5
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 1a257949e0de5537ccbea863ab99b1097feb4ae0
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897299"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629424"
 ---
-# <a name="overview-of-microsoft-graph-data-connect"></a>Visão geral do Microsoft Graph Data Connect
-O Microsoft Graph contém dados avançados sobre funcionários e o seu local de trabalho, incluindo informações sobre como as pessoas trabalham e como elas se comunicam, colaboram e gerenciam seu tempo. O Microsoft Graph Data Connect oferece um conjunto de ferramentas para simplificar a entrega desses dados para o Microsoft Azure, que lhe oferece acesso às melhores ferramentas de desenvolvimento e hospedagem para trabalhar com esses dados. Isso permite que os clientes, enquanto mantêm total controle sobre seus dados do Microsoft Graph, se beneficiem de aplicativos inovadores ou específicos do setor que melhoram sua produtividade. A Microsoft está trazendo o controle mais seguro os clientes esperam.
+# <a name="overview-of-microsoft-graph-data-connect"></a>Visão geral da A Conexão de Dados do Microsoft Graph
 
-## <a name="why-use-microsoft-graph-data-connect"></a>Por que usar o Microsoft Graph Data Connect?
-Os administradores do Microsoft 365 devem considerar cuidadosamente os desafios inerentes à movimentação e gerenciamento de quantidades significativas de seus dados organizacionais. O Microsoft Graph Data Connect é projetado para proporcionar aos administradores novos controles sobre seus dados. Você pode usar esses dados para criar aplicativos que criam insights controlados por dados. 
+A Conexão de Dados do Microsoft Graph aumenta o modelo transacional do Microsoft Graph com uma maneira inteligente de acessar dados avançados em escala. Os dados abordam como os trabalhadores se comunicam, colaboram e gerenciam seu tempo em todos os aplicativos e serviços no Microsoft 365. Ideal para big data e aprendizado de máquina, A Conexão de Dados permite que você desenvolva aplicativos para análise, inteligência e otimização de processos de negócios, estendendo dados do Microsoft 365 para o Azure. Ao integrar desta forma, você poderá aproveitar o vasto conjunto de computação, armazenamento no Azure, mantendo a conformidade com os padrões do setor e mantendo seus dados seguros.
 
-### <a name="enable-granular-consent"></a>Habilitar o consentimento granular
+![Uma imagem que mostra os controles de dados aplicados entre os dados do Microsoft 365 na nuvem do Azure, bem como os dados de saída.](images/data-connect-mgdc-capabilities.png)
 
-No modelo de autorização do Microsoft Graph, um administrador ou usuário pode apenas conceder ou recusar uma solicitação de aplicativo para acessar conjuntos de entidades específicos e predefinidos. Por exemplo, uma solicitação de Mail.Read inclui acesso de leitura a um conjunto de entidades fixo que dá suporte ao Email do Outlook, incluindo instâncias de [mensagem](/graph/api/resources/message?view=graph-rest-1.0) inteiras com todas as suas propriedades. Por outro lado, o Microsoft Graph Data Connect permite consentimento mais preciso, permitindo que os aplicativos solicitem acesso a propriedades específicas em uma entidade ou que filtrem os dados nessas propriedades. Os administradores precisam fornecer aprovação explícita para acessar dados do Microsoft Graph antes que o acesso seja permitido. A solicitação precisa especificar o nível de acesso solicitado e descrever a imposição da política de dados, o motivo da solicitação e o esquema dos dados solicitados. Como resultado, os aplicativos podem usar apenas os dados essenciais para a função desempenhada por eles, enquanto o conteúdo não relacionado é excluído. Por exemplo, um aplicativo pode consumir metadados de email, mas excluir o conteúdo do corpo e de anexos. 
+A Conexão de Dados do Microsoft Graph usa o Azure Data Factory para copiar dados do Microsoft 365 para o armazenamento do seu aplicativo em intervalos configuráveis. Ele também fornece um conjunto de ferramentas para simplificar a entrega desses dados para o Microsoft Azure, permitindo que você acesse as ferramentas de desenvolvimento e hospedagem mais aplicáveis disponíveis. A Conexão de Dados também concede um modelo de controle e consentimento mais granular: você pode gerenciar dados, ver quem está acessando e solicitar propriedades específicas de uma entidade. Isso aprimora o modelo do Microsoft Graph, que concede ou nega acesso a aplicativos a entidades inteiras.
 
-### <a name="provide-data-governance"></a>Fornecer governança de dados
-A Microsoft está facilitando comunicação avançada e conectada entre o Microsoft Graph e o Azure, com relação ao status dos dados dos clientes. Quando cria aplicativos por meio de dados do Microsoft Graph Data Connect, você pode especificar um conjunto de políticas detalhadas com as quais pretende manter a conformidade. Os administradores do Microsoft 365 podem então revisar e consentir com essas políticas. Essa prática minimiza sobrecarga de gerenciamento de conformidade. Quando o consentimento é fornecido, a Microsoft monitora a adesão do aplicativo à política. Se um aplicativo viola (ou tenta violar) uma política estabelecida pela organização, a Microsoft interrompe o fluxo de dados para esse aplicativo. 
+Você pode usar a Conexão de Dados para habilitar cenários de aprendizado de máquina para sua organização. Nesses cenários, você pode criar aplicações que forneçam informações valiosas aos seus participantes, treinar modelos de aprendizado de máquina e até mesmo realizar previsões com base em grandes quantidades de dados adquiridos.
 
-### <a name="get-access-to-data-at-scale"></a>Obter acesso a dados em escala
-Aplicativos avançados precisam de acesso a grandes quantidades de dados, geralmente de vários usuários em sua organização ao mesmo tempo. Com o modelo de dados transacionais tradicional, você precisa criar uma infraestrutura complexa e fazer milhares de chamadas à API para coordenar essa entrega de dados. A conexão de dados do Microsoft Graph usa o poder do Azure Data Factory para fornecer dados do Microsoft 365 da sua organização para o seu aplicativo, em uma programação repetível, com apenas algumas etapas simples.
+<iframe class="video-iframe" style="width: 960px; height: 540px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false"> </iframe>
 
-## <a name="next-steps"></a>Próximas etapas
-Para começar, veja [Introdução ao Microsoft Graph Data Connect](data-connect-get-started.md).
+Você pode aproveitar a Conexão de Dados do Microsoft Graph se concordar com os [Termos de Uso de APIs da Microsoft](/legal/microsoft-apis/terms-of-use?context=/graph/context) e com a [Declaração de Privacidade da Microsoft ](https://go.microsoft.com/fwlink/p/?LinkId=123161) e são:
+
+- Um ISV criando aplicativos inteligentes para todos os clientes do Microsoft 365.
+- Um desenvolvedor corporativo criando aplicativos inteligentes para todos dentro da organização que acessam os dados do Microsoft 365.
+
+## <a name="access-to-data-at-scale"></a>Acesso aos dados em escala
+
+Aplicativos avançados precisam de acesso a grandes quantidades de dados, geralmente de vários usuários em sua organização ao mesmo tempo. Por esse motivo, o modelo de dados transacional padrão do Microsoft Graph tem uma tendência a limitar grandes conjuntos de dados. A entrega de dados requer uma infraestrutura complexa e milhares de chamadas de API, qualquer uma das quais pode ser limitada devido a limitações de recursos. A Conexão de Dados do Microsoft Graph resolve este desafio acessando dados em massa e copiando repetidamente dados do Microsoft 365 para o seu aplicativo com o Azure Data Factory. A Conexão de Dados também permite que você escolha entre acessar dados de todos em sua organização ou apenas grupos específicos de pessoas.
+
+## <a name="granular-data-consent"></a>Consentimento granular de dados
+
+No modelo de consentimento tradicional do Microsoft Graph, um administrador ou usuário só pode conceder ou negar a solicitação de um aplicativo para acessar conjuntos específicos e predefinidos de entidades. Por exemplo, uma solicitação de Mail.Read inclui acesso de leitura a um conjunto fixo de entidades que suportam emails do Outlook, incluindo [mensagens](/graph/api/resources/message?view=graph-rest-1.0) instâncias inteiras com todas as propriedades relevantes. A Conexão de Dados do Microsoft Graph permite um consentimento mais granular, permitindo que os aplicativos solicitem acesso a propriedades específicas em uma entidade ou filtre os dados nessas propriedades. Os administradores devem aprovar explicitamente antes que os dados do Microsoft Graph possam ser acessados. A solicitação deve especificar o nível de acesso solicitado, a aplicação da política de dados, o motivo da solicitação e o esquema dos dados solicitados. Como resultado, os aplicativos só podem utilizar dados essenciais para sua função, e qualquer conteúdo não relacionado será excluído. Por exemplo, um aplicativo pode consumir metadados de email, mas excluir o conteúdo do corpo e dos anexos.
+
+## <a name="data-security-and-governance"></a>Segurança e governança de dados
+
+A Microsoft está facilitando uma comunicação avançada e conectada entre a Conexão de Dados do Microsoft Graph e o Azure que respeita os dados do cliente. A Conexão de Dados do Microsoft Graph oferece suporte a todos os recursos de serviço nativos do Azure, como criptografia, delimitação geográfica, auditoria e aplicação de políticas. A fim de minimizar a sobrecarga de gerenciamento de conformidade para aplicativos construídos com a Conexão de Dados, você pode especificar um conjunto de políticas detalhadas que pretende cumprir, que os administradores do Microsoft 365 poderão então analisar. Depois que o consentimento for dado para essas políticas, a Microsoft monitorará a adesão do aplicativo à política. Se um aplicativo violar (ou tentar violar) uma política estabelecida pela organização, a Microsoft interromperá o fluxo de dados para esse aplicativo.
+
+## <a name="see-also"></a>Confira também
+
+- [Crie seu primeiro tutorial de aplicativo de Conexão de Dados do Microsoft Graph](data-connect-quickstart.yml).
+- [Perguntas frequentes sobre a Conexão de Dados](data-connect-faq.md)
+- [Conjuntos de dados, regiões e coletores](data-connect-datasets.md)

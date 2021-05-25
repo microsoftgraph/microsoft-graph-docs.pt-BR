@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 942461cde194d187b88bdeb4b246bf42355dba81
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 6104775b7e5f73785f013c55f3bbc07352ec02b0
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629452"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645329"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -25,14 +25,24 @@ Descubra quando uma impressora interagiu pela última vez com a Impressão Unive
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
 Obtenha ou atualize a função de um usuário convidado usando a propriedade **guestUserRoleId** de [AuthorPolicy](/graph/api/resources/authorizationpolicy).
 
+### <a name="mail"></a>Email
+- [Crie rascunhos e envie mensagens do Outlook no formato MIME](outlook-send-mime-message.md), anexe assinaturas digitais S/MIME e criptografe o conteúdo da mensagem em S/MIME.
+- Criar um [mailFolder](/graph/api/resources/mailfolder) como uma [pasta oculta](/graph/api/resources/mailfolder#hidden-mail-folders) ao [configurar a propriedade isHidden](/graph/api/user-post-mailfolders#example).
+
+### <a name="microsoft-graph-toolkit"></a>Kit de ferramentas do Microsoft Graph
+Experimente os seguintes novos recursos do Kit de Ferramentas do Microsoft Graph 2.2:
+- Componentes de[arquivos](/graph/toolkit/components/file) e [lista de arquivos](/graph/toolkit/components/file-list)
+- [Provedor de autenticação MSAL 2.0](/graph/toolkit/providers/msal2)
+- [Biblioteca da Estrutura do SharePoint](/graph/toolkit/get-started/mgt-spfx)
+
 ### <a name="reports--azure-ad-activity-reports"></a>Relatórios | Relatórios de atividade do Microsoft Azure AD
 GA da API de relatório para [listar](/graph/api/provisioningobjectsummary-list) as ações realizadas pelo serviço de provisionamento do Microsoft Azure AD e suas propriedades associadas. Alinhou a versão beta anterior à versão v1.0 da API.
 
 ## <a name="may-2021-new-in-preview-only"></a>Maio de 2021: Novo somente para visualização
 
-### <a name="education"></a>Educação
-- [Crie uma pasta de recursos de tarefas](/graph/api/resources/educationAssignment-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true) para carregar arquivos como recursos [EducationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). A propriedade **resourcesFolderUrl** no [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) aponta para o mesmo local de pasta.
-- [Crie uma pasta de envio de tarefas](/graph/api/resources/educationSubmission-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true) para carregar arquivos como envio[EducationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true). A propriedade **resourcesFolderUrl** no [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true) aponta para o mesmo local de pasta.
+### <a name="connecting-external-content"></a>Conectando conteúdo externo
+- Esteja ciente dos [limites operacionais e à implementação](connecting-external-content-api-limits.md) durante a criação de conectores.
+- Experimente a [API de conectores com o Postman](connecting-external-content-connectors-api-postman.md).
 
 ### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
 Solicite as permissões de aplicativos com menos privilégios, `CloudPC.Read.All` ou `CloudPC.ReadWrite.All`, para acessar os métodos dos seguintes recursos:
@@ -42,7 +52,8 @@ Solicite as permissões de aplicativos com menos privilégios, `CloudPC.Read.All
   - Operações de leitura e gravação, e do método [assign](/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta&preserve-view=true) de [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="education"></a>Educação
-[Configure uma pasta de recursos do SharePoint](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) para a qual todos os recursos baseados em arquivo, como um arquivo Word ou Excel, de um [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) devem ser carregados.
+- [Configurar uma pasta de recursos do SharePoint](/graph/api/educationAssignment-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) carregar e armazenar todos os recursos baseados em arquivo no mesmo local para um [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
+- [Configurar uma pasta de recursos do SharePoint](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) para carregar e armazenar todos os recursos baseados em arquivo como um arquivo Word e Excel no mesmo local para um [educationAssignment](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
 - Obtenha uma coleção de recursos de [accessPackageAssignment](/graph/api/resources/accessPackageAssignment?view=graph-rest-beta&preserve-view=true) ao [filtrar no usuário conectado](/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-beta&preserve-view=true).

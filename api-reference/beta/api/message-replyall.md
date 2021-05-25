@@ -1,16 +1,16 @@
 ---
 title: 'message: replyAll'
-description: 'Responder a todos os destinatários de uma mensagem especificando um comentário e modificando quaisquer propriedades atualizáveis '
+description: Responder a todos os destinatários de uma mensagem usando o formato JSON ou MIME.
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5c2651d56b65d73548f30cc442f1a66500d5e956
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 723aa43863e7da80b7be87c92b6f553463f28e86
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131135"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645357"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -18,19 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Responda a todos os destinatários de uma mensagem especificando um comentário e modificando quaisquer propriedades atualizáveis para a resposta, tudo isso usando o **método replyAll.** A mensagem é então salva na pasta Itens Enviados.
+Responder a todos os destinatários de uma [mensagem usando](../resources/message.md) o formato JSON ou MIME.
 
-Como alternativa, você pode primeiro [criar um rascunho](../api/message-createreplyall.md) de mensagem de resposta a todos para incluir um comentário ou atualizar as propriedades da mensagem e, em seguida, [enviar](../api/message-send.md) a resposta.
+Ao usar o formato JSON:
+- Especifique um comentário ou **a propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
+- Se a mensagem original especificar um destinatário na propriedade **replyTo,** por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), envie a resposta aos destinatários em **replyTo** e não ao destinatário na propriedade **from.**
 
-**Observação**
+Ao usar o formato MIME:
+- Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.
+- Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
 
-- Você pode especificar um comentário ou a **propriedade do** corpo do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Se a **propriedade replyTo** for especificada na mensagem original, por Formato de Mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta aos destinatários no  
-**Propriedades replyTo** **e toRecipients,** e não os destinatários nas propriedades **from** **e toRecipients.** 
+Este método salva a mensagem na pasta **Itens** Enviados.
 
+Como alternativa, [crie um rascunho para responder tudo a uma mensagem](../api/message-createreplyall.md)e [envie-a](../api/message-send.md) mais tarde.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -49,22 +52,27 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
+| Autorização  | string  | Portador {token}. Obrigatório|
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório <br/> Usar `application/json` para um objeto JSON e para conteúdo `text/plain` MIME |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
+Ao usar o formato JSON, forneça um objeto JSON com os seguintes parâmetros.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
 |message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 
+Ao especificar o corpo no formato MIME, forneça o conteúdo MIME com os headers de mensagem da Internet aplicáveis, todos codificados no **formato base64** no corpo da solicitação. Este método carrega o remetente e todos os destinatários da mensagem original como destinatários da nova mensagem.
+
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".
+
+## <a name="examples"></a>Exemplos
+### <a name="example-1-reply-all-to-a-message-in-json-format"></a>Exemplo 1: Responder tudo a uma mensagem no formato JSON
 O exemplo a seguir inclui um comentário e adiciona um anexo à mensagem de resposta a todos.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -109,16 +117,63 @@ Content-Type: application/json
 
 ---
 
-
-
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
+```
+
+### <a name="example-2-reply-all-to-a-message-in-mime-format"></a>Exemplo 2: Responder-tudo a uma mensagem no formato MIME
+##### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "message_replyAll_mime_beta"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/replyAll
+Content-Type: text/plain
+
+RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQGNvbnRvc28uY29tPgpUbzogTWVnYW4gQm93ZW4gPE1l
+Z2FuQkBjb250b3NvLmNvbT4KU3ViamVjdDogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNh
+bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM...
+
+```
+
+##### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```
+
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará a seguinte mensagem de erro.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

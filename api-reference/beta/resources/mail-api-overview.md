@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: b72f7997d6c60910f60b96a47792b7f6be0e35d8
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 67251a9d2121ca8d9f569051649c79f9fd71ec74
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472780"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645315"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Usar a API REST de Email do Outlook
 
@@ -53,6 +53,7 @@ A API do Microsoft Graph também fornece métodos e ações que ofereçam suport
 | Permitir que o usuário visualize as mensagens mais importantes primeiro | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Caixa de Entrada Prioritária](../resources/manage-focused-inbox.md) |
 | Consular mensagens e obtê-las em uma pasta de pesquisa  | [mailSearchFolder](../resources/mailsearchfolder.md) | [Métodos de mailSearchFolder](../resources/mailsearchfolder.md#methods) |
 | Obter o conteúdo MIME de uma mensagem ou de um anexo de mensagem | [Mensagem](../resources/message.md) | [Obter conteúdo de MIME](/graph/outlook-get-mime-message) |
+| Enviar mensagens com conteúdo MIME | [mensagem](../resources/message.md) | [Enviar conteúdo de MIME](/graph/outlook-send-mime-message) |
 | Adicionar, obter ou excluir anexos de uma mensagem | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Métodos de anexo](../resources/attachment.md#methods) |
 | Acessar as opções de idioma e fuso horário para um usuário | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | Obter ou atualizar resposta automática, localidade, fuso horário ou horário de trabalho de um usuário | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Obter configurações da caixa de correio do usuário](../api/user-get-mailboxsettings.md), <br> [Atualizar configurações da caixa de correio do usuários](../api/user-update-mailboxsettings.md) |
@@ -71,6 +72,7 @@ A API do Microsoft Graph também fornece métodos e ações que ofereçam suport
 | Adicionar dados de aplicativos personalizados como cabeçalhos de mensagens da Internet de uma mensagem | [message](../resources/message.md) | Adicionar dados personalizados à coleção **internetMessageHeaders** da mensagem. |
 | Adicionar dados personalizados de aplicativo a uma mensagem usando extensões | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview) |
 | Acessar dados personalizados para propriedades subexpostas de MAPI do Outlook | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md) |
+
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

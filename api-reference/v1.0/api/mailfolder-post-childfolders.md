@@ -1,22 +1,24 @@
 ---
-title: Criar MailFolder
+title: Criar pasta filho
 description: Use essa API para criar uma nova mailfolder filha.
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7746fb03f6f47f81f0807cdc42e1b7af8a982cfe
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4d8d43e4bb3840fa248ab6b1f1109dc2061ff695
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055929"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629137"
 ---
-# <a name="create-mailfolder"></a>Criar MailFolder
+# <a name="create-child-folder"></a>Criar pasta filho
 
 Namespace: microsoft.graph
 
-Use essa API para criar uma nova mailfolder filha.
+Use essa API para criar um novo [mailFolder filho.](../resources/mailfolder.md)
+
+Se você pretende que uma nova pasta seja oculta, você deve definir a **propriedade isHidden** como `true` na criação.
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,11 +50,12 @@ Especifique a pasta pai na URL de consulta como uma ID de pasta ou um nome de pa
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. **displayName** é a única propriedade writable para um [objeto mailFolder.](../resources/mailfolder.md)
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. **displayName** e **isHidden** são a única propriedade writable para um [objeto mailFolder.](../resources/mailfolder.md)
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
 |displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
+|isHidden|Booliano|Indica se a nova pasta está oculta. O valor padrão é `false`. A configuração da propriedade é opcional. Depois de definido, você não pode atualizar essa propriedade. Confira mais informações em [Pastas de email ocultas](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>Resposta
 
@@ -77,6 +80,7 @@ Content-length: 159
 
 {
   "displayName": "displayName-value",
+  "isHidden": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -119,7 +123,8 @@ Content-length: 179
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "id-value"
+  "id": "id-value",
+  "isHidden": true
 }
 ```
 

@@ -1,16 +1,16 @@
 ---
 title: 'message: forward'
-description: 'Encaminhar uma mensagem, adicionar um comentário ou modificar quaisquer propriedades atualizáveis  '
+description: Encaminhar uma mensagem usando o formato JSON ou MIME
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fb90daf582c1697dbab8f8d50e68885c91af28d3
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1d652e9df5ce89c232d65b46bd8e1a60151bc704
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130337"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645644"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -18,18 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Encaminhar uma mensagem, adicionar um comentário ou modificar quaisquer propriedades atualizáveis  
-tudo em uma **chamada** de encaminhamento. A mensagem é salva na pasta Itens Enviados.
+Encaminhar uma mensagem usando o formato JSON ou MIME.
 
-Outra opção é primeiro [criar um rascunho de mensagem de encaminhamento](../api/message-createforward.md) para incluir um comentário ou atualizar quaisquer propriedades da mensagem e, em seguida, [enviar](../api/message-send.md) o rascunho da mensagem.
+Ao usar o formato JSON, você pode:
+- Especifique um comentário ou **a propriedade body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
+- Especifique `toRecipients` o parâmetro ou a propriedade **toRecipients** do `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
 
-**Observação**
+Ao usar o formato MIME:
+- Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.
+- Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
 
-- Você pode especificar um comentário ou a **propriedade do** corpo do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Você deve especificar o `toRecipients` parâmetro ou a propriedade **toRecipients** do `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
+Este método salva a mensagem na pasta **Itens** Enviados.
+
+Como alternativa, [crie um rascunho para encaminhar uma mensagem](../api/message-createforward.md)e [enviá-la](../api/message-send.md) posteriormente.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -49,10 +53,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório.<br/> Use `application/json` para um objeto JSON e para conteúdo `text/plain` MIME. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
+Ao usar o formato JSON, forneça um objeto JSON com os seguintes parâmetros.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
@@ -60,11 +64,16 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |toRecipients|Coleção [recipient](../resources/recipient.md)|A lista de destinatários.|
 |message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 
+Ao especificar o corpo no formato MIME, forneça o conteúdo MIME com os headers de mensagem da Internet aplicáveis ("To", "CC", "BCC", "Subject"), todos codificados no formato **base64** no corpo da solicitação.
+
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".
+
+## <a name="examples"></a>Exemplos
+### <a name="example-1-forward-a-message-using-json-format"></a>Exemplo 1: encaminhar uma mensagem usando o formato JSON
 O exemplo a seguir define a **propriedade isDeliveryReceiptRequested** como true, adiciona um comentário e encaminha a mensagem.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -114,12 +123,57 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
+```
+
+### <a name="example-2-forward-a-message-using-mime-format"></a>Exemplo 2: encaminhar uma mensagem usando o formato MIME
+
+<!-- {
+  "blockType": "request",
+  "name": "message_forward_mime_beta"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/forward
+Content-Type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
+
+```
+
+##### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+
+```
+
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará a seguinte mensagem de erro.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -135,5 +189,3 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
-
-

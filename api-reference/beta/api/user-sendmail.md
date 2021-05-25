@@ -1,16 +1,16 @@
 ---
 title: Enviar email
-description: Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.
+description: Envie a mensagem especificada no corpo da solicitação usando o formato JSON ou MIME.
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1d3c8592007b98a5f5e225447a7fe163c95275c6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5ee3bc0682f6611a06cb5e24e66b2c665a0be123
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134971"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645637"
 ---
 # <a name="send-mail"></a>Enviar email
 
@@ -18,16 +18,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.
+Envie a mensagem especificada no corpo da solicitação usando o formato JSON ou MIME.
 
-Na mesma chamada **de ação sendMail,** você pode:
+Ao usar o formato JSON, você [](../resources/mention.md) pode incluir um [anexo](../resources/attachment.md) e usar uma menção para chamar outro usuário na nova mensagem.
 
-- Incluir um [anexo](../resources/attachment.md)
-- Use uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem
+Ao usar o formato MIME:
+- Forneça os [headers](https://tools.ietf.org/html/rfc2076) de mensagens da Internet aplicáveis e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045), todos codificados no **formato base64** no corpo da solicitação.
+- Adicione quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
+
+Este método salva a mensagem na pasta **Itens** Enviados.
+
+Como alternativa, [crie uma mensagem de rascunho](../api/user-post-messages.md) para enviar mais tarde.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
-
+Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,32 +45,37 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
+| Nome       | Tipo | Descrição| 
+|:---------------|:--------|:----------
+| Autorização  | string  | {token} de portador. Obrigatório.|
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório.<br/> Use `application/json` para um objeto JSON e para conteúdo `text/plain` MIME.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
+Ao usar o formato JSON, forneça um objeto JSON com os seguintes parâmetros.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |Message|[Message](../resources/message.md)|A mensagem a enviar. Obrigatório.|
 |SaveToSentItems|Boolean|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional.|
 
-Se você quiser usar a **menção** para chamar outro usuário na nova mensagem:
+Para usar **a menção** para chamar outro usuário na nova mensagem:
+- Inclua a propriedade **required toRecipients,** a propriedade **mentions** e quaisquer propriedades de mensagem writable no corpo da solicitação.
+- Para cada menção na **propriedade mentions,** você deve especificar a **propriedade** mencionada.
 
-- Inclua a propriedade **required toRecipients,** a propriedade mentions e quaisquer propriedades de mensagem que podem ser **escritas** no corpo da solicitação.
-- Para cada menção na **propriedade menções,** você deve especificar a **propriedade mencionada.**
+Ao especificar o corpo no formato MIME, forneça o conteúdo MIME como uma cadeia de caracteres codificada com **base64** no corpo da solicitação. Não inclua parâmetros.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará e a seguinte mensagem de erro: "Cadeia de caracteres `400 Bad request` base64 inválida para conteúdo MIME".
+
+## <a name="examples"></a>Exemplos
+### <a name="example-1-send-a-new-email-using-json-format"></a>Exemplo 1: Enviar um novo email usando o formato JSON
 Eis um exemplo de como chamar esta API.
-##### <a name="request-1"></a>Solicitação 1
+#### <a name="request"></a>Solicitação
 Aqui está um exemplo da solicitação para criar e enviar uma mensagem em tempo real.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -122,8 +131,7 @@ Content-length: 512
 
 ---
 
-
-##### <a name="response-1"></a>Resposta 1
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
@@ -133,9 +141,9 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accepted
 ```
 
-
-##### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir mostra uma mensagem do usuário que está londo para Sam auto-in. A mensagem também inclui uma menção de outro usuário, Dana Swope.
+### <a name="example-2-send-a-message-that-includes-an--mention"></a>Exemplo 2: Enviar uma mensagem que inclui uma @-mention
+#### <a name="request"></a>Solicitação
+O próximo exemplo mostra uma mensagem do usuário in-lo como Samantha Booth. A mensagem também inclui uma menção de outra usuário, Dana Swope.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -169,6 +177,7 @@ Content-length: 344
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-mentions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -187,8 +196,7 @@ Content-length: 344
 
 ---
 
-
-##### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
@@ -198,14 +206,16 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="request-3"></a>Solicitação 3
-O exemplo a seguir cria uma mensagem com cabeçalhos personalizados de mensagem da Internet e envia a mensagem.
+### <a name="example-3-send-a-message-that-includes-custom-internet-message-headers"></a>Exemplo 3: Enviar uma mensagem que inclua os headers de mensagens da Internet personalizados 
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
@@ -237,6 +247,7 @@ Content-type: application/json
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -255,8 +266,7 @@ Content-type: application/json
 
 ---
 
-
-##### <a name="response-3"></a>Resposta 3
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
@@ -266,10 +276,8 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="request-4"></a>Solicitação 4
-
-O exemplo a seguir cria uma mensagem com cabeçalhos personalizados de mensagem da Internet e envia a mensagem.
-
+### <a name="example-4-sends-a-message-with-a-file-attachment"></a>Exemplo 4: envia uma mensagem com um anexo de arquivo
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -325,9 +333,10 @@ Content-type: application/json
 ---
 
 
-##### <a name="response-4"></a>Resposta 4
+#### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -335,6 +344,54 @@ Veja a seguir um exemplo da resposta.
 
 ```http
 HTTP/1.1 202 Accepted
+```
+### <a name="example-5-send-a-new-message-using-mime-format"></a>Exemplo 5: Enviar uma nova mensagem usando o formato MIME
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "message_send_mime_beta"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/sendMail
+Content-type: text/plain
+
+RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQGNvbnRvc28uY29tPgpUbzogTWVnYW4gQm93ZW4gPE1l
+Z2FuQkBjb250b3NvLmNvbT4KU3ViamVjdDogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNh
+bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM6IEludGVybmFsIFJlc3VtZSBTdWJtaXNzaW9uOiBT
+YWxlcyBBc3NvY2lhdGUKVGhyZWFkLUluZGV4OiBjb2RlY29kZWNvZGVoZXJlaGVyZWhlcmUKRGF0
+ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCArMDAwMApNZXNzYWdlLUlEOgoJPE1XSFBSMTMw
+MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
+cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
+OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
+```
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```
+
+Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará a seguinte mensagem de erro.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -350,5 +407,3 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
-
-

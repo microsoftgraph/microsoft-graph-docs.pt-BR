@@ -3,12 +3,12 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: c17145d50528effae6e847a9da64c7f80687cf97
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: a74a4cabd593cfa26488a80399d6958d09cf9b6c
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547026"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645350"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
 
@@ -456,9 +456,9 @@ As organizações podem [obter](/graph/api/continuousaccessevaluationpolicy-get?
   - [Refine os resultados usando agregações](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) para o OneDrive e o Microsoft Office SharePoint Online.
 - Consultar dados externos ingeridos pelos conectores do Microsoft Graph em [mais de um de conexão](./search-concept-custom-types.md).
 - Aproveite o conteúdo aprimorado para os conectores do Microsoft Graph para saber mais sobre:
-  - [Gerenciando Conectores](search-index-manage-connections.md)
-  - [Gerenciar esquema](search-index-manage-schema.md)
-  - [Gerenciar itens](search-index-manage-items.md)
+  - [Gerenciando Conectores](connecting-external-content-manage-connections.md)
+  - [Gerenciar esquema](connecting-external-content-manage-schema.md)
+  - [Gerenciar itens](connecting-external-content-manage-items.md)
 - Acompanhe o estado de uma[conexão](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true)do Microsoft Graph.
 - Defina um [grupo externo](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) a fim de definir permissões em objetos de [item externo](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) adicionados a uma [conexão](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) do Microsoft Graph. Os grupos externos podem representar os grupos do Active Directory que não sejam do Azure ou construções similares, como unidades de negócios, que determinam permissões sobre o conteúdo na fonte de dados externa.
 

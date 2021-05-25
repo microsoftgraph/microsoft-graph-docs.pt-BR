@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 85ee877646569c33ba07b623fd3f246a5444c21e
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: fd3c48ca0f00d2c3c47ee2a0799d72129a5a0d4b
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579285"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645560"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -195,7 +195,7 @@ Esse recurso permite:
 | lastPasswordChangeDateTime | DateTimeOffset | A hora em que o usuário do Azure AD alterou a senha dele pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z` <br><br>Retornado apenas em `$select`. Somente leitura. |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
 | licenseAssignmentStates | Coleção [licenseAssignmentState](licenseassignmentstate.md) | Estado das atribuições de licenças para esse usuário. <br><br>Retornado apenas em `$select`. Somente leitura. |
-| email | String | O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com".<br>OBSERVAÇÃO: embora essa propriedade possa conter caracteres acentuados, eles podem causar problemas de acesso aos aplicativos primários do usuário.<br><br>Retornado por padrão. Oferece suporte para `$filter` e `endsWith`. |
+| email | String | O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP. Embora essa propriedade possa conter caracteres acentuados, eles podem causar problemas de acesso aos outros aplicativos Microsoft do usuário.<br><br> Oferece suporte para `$filter` e `endsWith`. |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Configurações da caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada.<br><br>Retornado apenas em `$select`. Com suporte apenas para Obter API de usuário (`GET /users/{id}` ou `GET /me`). |
 | mailNickname | String | O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. O comprimento máximo é de 64 caracteres.<br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
 | mobilePhone | String | O número de celular principal do usuário. <br><br>Retornado por padrão. Somente leitura para usuários sincronizados de diretório local. |

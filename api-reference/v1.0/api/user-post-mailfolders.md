@@ -5,18 +5,21 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d858db1fb120a29a6ebbffe1d4138498abe43e7c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a60f7166337933a3ee8897f9817c6adb148bd05c
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053766"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629396"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
 Namespace: microsoft.graph
 
 Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
+
+Se você pretende que uma nova pasta seja oculta, você deve definir a **propriedade isHidden** como `true` na criação.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -39,18 +42,19 @@ POST /users/{id | userPrincipalName}/mailFolders
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça um objeto JSON com os parâmetros a seguir. **displayName** é a única propriedade gravável para um objeto [MailFolder](../resources/mailfolder.md).
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. **displayName** e **isHidden** são a única propriedade writable para um [objeto mailFolder.](../resources/mailfolder.md)
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
+|isHidden|Booliano|Indica se a nova pasta está oculta. O valor padrão é `false`. A configuração da propriedade é opcional. Depois de definido, você não pode atualizar essa propriedade. Confira mais informações em [Pastas de email ocultas](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [MailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um objeto [mailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -64,7 +68,8 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "Clutter"
+  "displayName": "Clutter",
+  "isHidden": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -86,8 +91,10 @@ Content-length: 159
 ---
 
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +111,8 @@ Content-length: 179
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1"
+  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1",
+  "isHidden": true
 }
 ```
 

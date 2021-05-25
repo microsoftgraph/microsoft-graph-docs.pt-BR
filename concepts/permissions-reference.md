@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 100e911aba625540dc8d421b365fdd547f2edd45
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 508ccb2add627da88656577b54618ec0fd91f097
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546991"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629480"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -261,6 +261,22 @@ A permissão _Application.ReadWrite.OwnedBy_ admite as mesmas operações que _A
 * _Application.ReadWrite.OwnedBy_: Listar todos os aplicativos pertencentes ao aplicativo da chamada (`GET /beta/servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_: adicionar outro proprietário a um aplicativo próprio (`POST /applications/{id}/owners/$ref`).
     > OBSERVAÇÃO: isso pode exigir permissões adicionais.
+
+---
+
+## <a name="audit-log-permissions"></a>Permissões de log de auditoria
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _AuditLog.Read.All_ | Ler dados de log de auditoria | Permite que o aplicativo leia e consulte suas atividades de log de auditoria, em nome do usuário conectado. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_AuditLog.Read.All_ |Ler todos os dados do log de auditoria |Permite que o aplicativo leia e consulte suas atividades de log de auditoria, sem um usuário conectado. |Sim |
 
 ---
 
@@ -1501,7 +1517,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Policy.Read.All_ | Ler as políticas da sua organização | Permite ao aplicativo ler as políticas da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.Read.PermissionGrant_ | Ler políticas de concessão de consentimento e permissão | Permite que o aplicativo leia políticas relacionadas a concessões de consentimento e permissão para aplicativos, em nome do usuário conectado. | Sim | Não |
-| _Policy.ReadWrite.AccessReview_ |   Ler e gravar a política de autorização da sua organização  | Permite ao aplicativo ler e gravar a política de revisão de acesso da sua organização em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.AccessReview_ |   Ler e gravar a política de autorização da sua organização  | Permite ao aplicativo ler e gravar a política de revisão de acesso da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave as políticas de fluxo de autenticação, em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
@@ -1520,7 +1536,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.Read.All_ | Leia as políticas da sua organização | Permite que o aplicativo leia todas as políticas da sua organização sem um usuário conectado. | Sim |
 | _Policy.Read.PermissionGrant_ | Ler políticas de concessão de consentimento e permissão | Permite que o aplicativo leia políticas relacionadas a concessões de consentimento e permissão para aplicativos, sem um usuário conectado. | Sim |
 | _Policy.Read.ApplicationConfiguration_ | Leia as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia todas as políticas de configuração dos aplicativos da sua organização sem um usuário conectado. | Sim |
-| _Policy.ReadWrite.AccessReview_ | Ler e gravar a política de autorização da sua organização | Permite ao aplicativo ler e gravar a política de revisão de acesso da sua organização, sem um usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.AccessReview_ | Ler e gravar a política de autorização da sua organização | Permite ao aplicativo ler e gravar a política de revisão de acesso da sua organização, sem um usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização, sem um usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave todas as políticas de fluxo de autenticação do locatário, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
