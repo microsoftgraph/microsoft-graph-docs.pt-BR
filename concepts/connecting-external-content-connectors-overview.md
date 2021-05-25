@@ -1,0 +1,44 @@
+---
+title: Visão geral dos conectores do Microsoft Graph
+description: Visão geral dos conectores do Microsoft Graph
+author: mecampos
+localization_priority: Priority
+doc_type: conceptualPageType
+ms.prod: search
+ms.openlocfilehash: 3c4e358ed8d0d769aa88aa7100acb113fe2caa9a
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645653"
+---
+# <a name="microsoft-graph-connectors-overview"></a><span data-ttu-id="7af2b-103">Visão geral dos conectores do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="7af2b-103">Microsoft Graph connectors overview</span></span>
+
+<span data-ttu-id="7af2b-104">O[Microsoft 365](https://www.microsoft.com/microsoft-365) é uma solução completa e inteligente que capacita usuários e organizações com experiências inovadoras de produtividade e abordagens enriquecedoras para aumentar a eficiência e gerar o crescimento dos negócios.</span><span class="sxs-lookup"><span data-stu-id="7af2b-104">[Microsoft 365](https://www.microsoft.com/microsoft-365) is a complete, intelligent solution that empowers users and organizations with innovative productivity experiences and rich insights to increase efficiency and drive business growth.</span></span> <span data-ttu-id="7af2b-105">O Microsoft Graph é o núcleo de dados que permite essas experiências inteligentes, e a API do Microsoft Graph fornece acesso a esses dados e inteligência.</span><span class="sxs-lookup"><span data-stu-id="7af2b-105">Microsoft Graph is the data fabric that powers these intelligent experiences, and the Microsoft Graph API provides access to this data and intelligence.</span></span>
+
+<span data-ttu-id="7af2b-106">Embora a maioria dos profissionais de informação gaste grande parte do seu tempo de trabalho em aplicativos de produtividade, como o [Microsoft 365](https://www.microsoft.com/microsoft-365), eles também precisam de uma maneira de integrar esse ambiente com os aplicativos corporativos e outros softwares e serviços de nuvem SaaS locais utilizados.</span><span class="sxs-lookup"><span data-stu-id="7af2b-106">Although most information workers spend much of their work time within productivity applications such as [Microsoft 365](https://www.microsoft.com/microsoft-365), they also need a way to integrate that environment with the enterprise applications and other on-premises and SaaS cloud software and services they use.</span></span> <span data-ttu-id="7af2b-107">Por exemplo, aplicativos de ERP (planejamento de recursos empresariais), CRM (gerenciamento de recursos do cliente), aplicativos de intranet, wikis, blogs e sites de redes sociais.</span><span class="sxs-lookup"><span data-stu-id="7af2b-107">For example, enterprise resource planning (ERP) applications, customer resource management (CRM) applications, intranet applications, wikis, blogs, and social networking sites.</span></span>
+
+<span data-ttu-id="7af2b-108">Os conectores do Microsoft Graph oferecem uma maneira simples e intuitiva de trazer conteúdo de serviços externos para o Microsoft Graph, habilitando dados externos para experiências inteligentes do Microsoft 365 como a Pesquisa da Microsoft (atualmente GA) e muitos outros em breve como Viva Topics.</span><span class="sxs-lookup"><span data-stu-id="7af2b-108">Microsoft Graph connectors offer a simple and intuitive way to bring content from external services into Microsoft Graph, enabling external data to power Microsoft 365 intelligent experiences like Microsoft Search (currently GA) and many more coming soon like Viva Topics.</span></span>
+
+<span data-ttu-id="7af2b-109">Hoje, com os conectores do Microsoft Graph, os dados obtidos de sua organização podem aparecer nos resultados da Pesquisa da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="7af2b-109">Today, with Microsoft Graph connectors, the data you bring in from your organization can appear in Microsoft Search results.</span></span> <span data-ttu-id="7af2b-110">Esse recurso expande os tipos de fontes de conteúdo que podem ser pesquisadas nos aplicativos de produtividade do Microsoft 365 e no ecossistema da Microsoft mais amplo.</span><span class="sxs-lookup"><span data-stu-id="7af2b-110">This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem.</span></span> <span data-ttu-id="7af2b-111">Em breve, os conectores terão muitas outras experiências inteligentes do Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="7af2b-111">Soon, connectors will power many other Microsoft 365 intelligent experiences.</span></span>
+<span data-ttu-id="7af2b-112">O diagrama a seguir fornece uma visão geral de alto nível dos conectores do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="7af2b-112">The following diagram provides a high-level overview of Microsoft Graph connectors.</span></span>
+
+<!---Insert image reference here --->
+<!---       ![Select the Microsoft Graph permissions](./images/application-saml-sso-configure-api/set-permissions.png) --->
+<span data-ttu-id="7af2b-113">![Imagem mostrando conectores sendo usados para trazer dados para o Microsoft Graph](./images/connectors-images/overview.png)</span><span class="sxs-lookup"><span data-stu-id="7af2b-113">![Image showing connectors being used to bring data into Microsoft Graph](./images/connectors-images/overview.png)</span></span>
+
+## <a name="build-your-own-custom-connector"></a><span data-ttu-id="7af2b-114">Criar seu próprio conector personalizado</span><span class="sxs-lookup"><span data-stu-id="7af2b-114">Build your own custom connector</span></span>
+
+<span data-ttu-id="7af2b-115">Os mais de 100 conectores atualmente disponíveis na Microsoft e nos parceiros permitem que você se conecte aos serviços Microsoft e não-Microsoft populares.</span><span class="sxs-lookup"><span data-stu-id="7af2b-115">The 100+ connectors currently available from Microsoft and partners enable you to connect to popular Microsoft and non-Microsoft services.</span></span> <span data-ttu-id="7af2b-116">Exemplos de conectores existentes incluem os serviços do Azure, Box, ServiceNow, SalesForce, serviços do Google, MediaWiki e muito mais.</span><span class="sxs-lookup"><span data-stu-id="7af2b-116">Examples of existing connectors include Azure services, Box, ServiceNow, SalesForce, Google services, MediaWiki, and more.</span></span>
+
+<span data-ttu-id="7af2b-117">Para saber mais sobre os conectores existentes do Microsoft Graph, visite a [galeria de conectores do Microsoft Graph](/microsoftsearch/connectors-gallery).</span><span class="sxs-lookup"><span data-stu-id="7af2b-117">To learn more about the existing Microsoft Graph connectors, visit the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery).</span></span>
+
+<span data-ttu-id="7af2b-118">Embora esses conectores ajudem a se conectar aos serviços populares, talvez você queira integrar com serviços que não estão disponíveis na [galeria de conectores](/microsoftsearch/connectors-gallery) existente.</span><span class="sxs-lookup"><span data-stu-id="7af2b-118">While these connectors help connect to popular services, you may want to integrate with services that aren't available in the existing [connectors gallery](/microsoftsearch/connectors-gallery).</span></span> <span data-ttu-id="7af2b-119">Você pode usar a API de conectores do Microsoft Graph para criar conectores personalizados para trazer seus dados externos para experiências do Microsoft 365, incluindo a Pesquisa da Microsoft, Viva Topics e muito mais (em breve), dentro de sua organização.</span><span class="sxs-lookup"><span data-stu-id="7af2b-119">You can use the Microsoft Graph connectors API to build custom connectors to bring your external data into Microsoft 365 experiences, including Microsoft Search, Viva Topics and more (coming soon), within your organization.</span></span>
+
+## <a name="get-started-with-custom-graph-connectors"></a><span data-ttu-id="7af2b-120">Começar a trabalhar com conectores Graph personalizados:</span><span class="sxs-lookup"><span data-stu-id="7af2b-120">Get started with custom Graph connectors:</span></span>
+* [<span data-ttu-id="7af2b-121">Trabalhando com a API de conectores</span><span class="sxs-lookup"><span data-stu-id="7af2b-121">Working with the connectors API</span></span>](connecting-external-content-connectors-api-overview.md)
+* [<span data-ttu-id="7af2b-122">Use o Postman com a API de conectores do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="7af2b-122">Use Postman with the Microsoft Graph connectors API</span></span>](connecting-external-content-connectors-api-postman.md)
+<!---**(Articles coming next)**
+* [Build your first custom connector with Microsoft Graph]()
+--->
+
