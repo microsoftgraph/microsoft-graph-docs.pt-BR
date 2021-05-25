@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 1c4629b8fcfca5168a1e752a984f3e77e1018dd0
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 942461cde194d187b88bdeb4b246bf42355dba81
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547666"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629452"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -29,6 +29,10 @@ Obtenha ou atualize a função de um usuário convidado usando a propriedade **g
 GA da API de relatório para [listar](/graph/api/provisioningobjectsummary-list) as ações realizadas pelo serviço de provisionamento do Microsoft Azure AD e suas propriedades associadas. Alinhou a versão beta anterior à versão v1.0 da API.
 
 ## <a name="may-2021-new-in-preview-only"></a>Maio de 2021: Novo somente para visualização
+
+### <a name="education"></a>Educação
+- [Crie uma pasta de recursos de tarefas](/graph/api/resources/educationAssignment-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true) para carregar arquivos como recursos [EducationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). A propriedade **resourcesFolderUrl** no [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) aponta para o mesmo local de pasta.
+- [Crie uma pasta de envio de tarefas](/graph/api/resources/educationSubmission-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true) para carregar arquivos como envio[EducationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true). A propriedade **resourcesFolderUrl** no [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true) aponta para o mesmo local de pasta.
 
 ### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
 Solicite as permissões de aplicativos com menos privilégios, `CloudPC.Read.All` ou `CloudPC.ReadWrite.All`, para acessar os métodos dos seguintes recursos:
