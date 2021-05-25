@@ -26,8 +26,6 @@ items:
             href: deployments.md
           - name: Implantações híbridas (visualização)
             href: hybrid-rest-support.md
-      - name: Microsoft Graph Data Connect
-        href: data-connect-overview.md
       - name: Tutoriais
         items:
           - name: Visão Geral
@@ -101,6 +99,23 @@ items:
             href: application-proxy-configure-api.md
           - name: Configurar provisionamento
             href: application-provisioning-configure-api.md
+      - name: Acessando dados em escala
+        displayName: Microsoft Graph Data Connect
+        items:
+          - name: Visão Geral da Conexão de Dados
+            href: data-connect-concept-overview.md
+          - name: Criar seu primeiro aplicativo de Conexão de Dados
+            href: data-connect-quickstart.yml
+          - name: 'Conjuntos de dados, regiões e coletores'
+            href: data-connect-datasets.md
+          - name: Políticas e cobrança
+            href: data-connect-policies.md
+          - name: Seleção de usuário e filtragem
+            href: data-connect-filtering.md
+          - name: Integração com PAM
+            href: data-connect-pam.md
+          - name: Perguntas frequentes
+            href: data-connect-faq.md
       - name: Calendário
         displayName: Outlook
         items:
@@ -150,6 +165,23 @@ items:
             href: cloud-communications-phone-number.md
       - name: Conformidade (pré-visualização)
         href: compliance-concept-overview.md
+      - name: Conectando conteúdo externo (prévia)
+        displayName: connectors
+        items:
+          - name: Visão geral dos conectores do Microsoft Graph
+            href: connecting-external-content-connectors-overview.md
+          - name: API de conectores
+            href: connecting-external-content-connectors-api-overview.md
+          - name: Usar o Postman
+            href: connecting-external-content-connectors-api-postman.md
+          - name: Gerenciar conexões
+            href: connecting-external-content-manage-connections.md
+          - name: Gerenciar esquema
+            href: connecting-external-content-manage-schema.md
+          - name: Gerenciar itens
+            href: connecting-external-content-manage-items.md
+          - name: Limites da API
+            href: connecting-external-content-api-limits.md
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
@@ -164,23 +196,6 @@ items:
       - name: Reserva de clientes (visualização)
         href: booking-concept-overview.md
         displayName: 'Bookings, Microsoft Bookings'
-      - name: Acesso aos dados
-        displayName: Microsoft Graph data connect
-        items:
-          - name: Visão geral do Data Connect
-            href: data-connect-concept-overview.md
-          - name: Introdução
-            href: data-connect-get-started.md
-          - name: 'Conjuntos de dados, regiões e coletores'
-            href: data-connect-datasets.md
-          - name: Políticas e licenças
-            href: data-connect-policies.md
-          - name: Seleção de usuário e filtragem
-            href: data-connect-filtering.md
-          - name: Integração com PAM
-            href: data-connect-pam.md
-          - name: 'Dicas '
-            href: data-connect-tips.md
       - name: Dispositivos e aplicativos
         expanded: true
         items:
@@ -263,6 +278,8 @@ items:
             href: outlook-organize-messages.md
           - name: Obter conteúdo MIME
             href: outlook-get-mime-message.md
+          - name: Enviar mensagem MIME
+            href: outlook-send-mime-message.md
           - name: Anexar arquivos grandes
             href: outlook-large-attachments.md
           - name: Receber mensagens compartilhadas
@@ -370,14 +387,6 @@ items:
                 href: search-concept-aggregation.md
               - name: Solicitar correção ortográfica (prévia)
                 href: search-concept-speller.md
-          - name: Índice (visualização)
-            items:
-              - name: Gerenciar conexões
-                href: search-index-manage-connections.md
-              - name: Gerenciar esquema
-                href: search-index-manage-schema.md
-              - name: Gerenciar itens
-                href: search-index-manage-items.md
       - name: Segurança
         items:
           - name: Visão Geral
