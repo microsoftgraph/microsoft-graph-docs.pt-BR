@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 71b07f52b25f32d9110471c166b1b728394fc62a
+ms.openlocfilehash: ed91a62b54ec573fe3effd212889e53acd24d1a2
 ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664582"
+ms.locfileid: "52664581"
 ---
 ```objc
 
@@ -17,37 +17,50 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAccessReviewScheduleDefinition *accessReviewScheduleDefinition = [[MSGraphAccessReviewScheduleDefinition alloc] init];
-[accessReviewScheduleDefinition setDisplayName:@"Test create"];
-[accessReviewScheduleDefinition setDescriptionForAdmins:@"New scheduled access review"];
-[accessReviewScheduleDefinition setDescriptionForReviewers:@"If you have any questions, contact jerry@contoso.com"];
+[accessReviewScheduleDefinition setDisplayName:@"Review inactive guests on teams"];
+[accessReviewScheduleDefinition setDescriptionForAdmins:@"Control guest user access to our teams."];
+[accessReviewScheduleDefinition setDescriptionForReviewers:@"Information security is everyone's responsibility. Review our access policy for more."];
+MSGraphAccessReviewScope *instanceEnumerationScope = [[MSGraphAccessReviewScope alloc] init];
+[instanceEnumerationScope setQuery:@"/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"];
+[instanceEnumerationScope setQueryType:@"MicrosoftGraph"];
+[accessReviewScheduleDefinition setInstanceEnumerationScope:instanceEnumerationScope];
 MSGraphAccessReviewScope *scope = [[MSGraphAccessReviewScope alloc] init];
-[scope setQuery:@"/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"];
+[scope setQuery:@"./members/microsoft.graph.user/?$filter=(userType eq 'Guest')"];
 [scope setQueryType:@"MicrosoftGraph"];
+[scope setInactiveDuration:@"P30D"];
 [accessReviewScheduleDefinition setScope:scope];
 NSMutableArray *reviewersList = [[NSMutableArray alloc] init];
 MSGraphAccessReviewReviewerScope *reviewers = [[MSGraphAccessReviewReviewerScope alloc] init];
-[reviewers setQuery:@"/users/398164b1-5196-49dd-ada2-364b49f99b27"];
+[reviewers setQuery:@"./owners"];
 [reviewers setQueryType:@"MicrosoftGraph"];
 [reviewersList addObject: reviewers];
 [accessReviewScheduleDefinition setReviewers:reviewersList];
+NSMutableArray *fallbackReviewersList = [[NSMutableArray alloc] init];
+MSGraphAccessReviewReviewerScope *fallbackReviewers = [[MSGraphAccessReviewReviewerScope alloc] init];
+[fallbackReviewers setQuery:@"/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"];
+[fallbackReviewers setQueryType:@"MicrosoftGraph"];
+[fallbackReviewersList addObject: fallbackReviewers];
+[accessReviewScheduleDefinition setFallbackReviewers:fallbackReviewersList];
 MSGraphAccessReviewScheduleSettings *settings = [[MSGraphAccessReviewScheduleSettings alloc] init];
 [settings setMailNotificationsEnabled: true];
 [settings setReminderNotificationsEnabled: true];
 [settings setJustificationRequiredOnApproval: true];
-[settings setDefaultDecisionEnabled: false];
-[settings setDefaultDecision:@"None"];
-[settings setInstanceDurationInDays: 1];
 [settings setRecommendationsEnabled: true];
+[settings setInstanceDurationInDays: 3];
 MSGraphPatternedRecurrence *recurrence = [[MSGraphPatternedRecurrence alloc] init];
 MSGraphRecurrencePattern *pattern = [[MSGraphRecurrencePattern alloc] init];
-[pattern setType: [MSGraphRecurrencePatternType weekly]];
-[pattern setInterval: 1];
+[pattern setType: [MSGraphRecurrencePatternType absoluteMonthly]];
+[pattern setDayOfMonth:@"5"];
+[pattern setInterval: 3];
 [recurrence setPattern:pattern];
 MSGraphRecurrenceRange *range = [[MSGraphRecurrenceRange alloc] init];
 [range setType: [MSGraphRecurrenceRangeType noEnd]];
-[range setStartDate: "2020-09-08T12:02:30.667Z"];
+[range setStartDate: "2020-05-04T00:00:00Z"];
 [recurrence setRange:range];
 [settings setRecurrence:recurrence];
+[settings setDefaultDecisionEnabled: true];
+[settings setDefaultDecision:@"Deny"];
+[settings setAutoApplyDecisionsEnabled: true];
 [accessReviewScheduleDefinition setSettings:settings];
 
 NSError *error;
